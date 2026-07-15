@@ -40,6 +40,7 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | ⚡ **Utilities** | XLU | [Utilities Wiki](wiki/utilities.md) | Saturdays 11:29 AM |
 | 🏠 **Real Estate** | XLRE | [Real Estate Wiki](wiki/real-estate.md) | Saturdays 11:39 AM |
 | 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 11:49 AM |
+| 💻 **Semiconductors** | SMH | [Semiconductors Wiki](wiki/semiconductors.md) | Saturdays 11:59 AM |
 
 ## How to Get Notifications on Your Phone
 
