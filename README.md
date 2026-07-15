@@ -11,6 +11,18 @@ Every **Monday at 9:17 AM** (America/Indianapolis), the Council convenes:
 3. **Ophelia** (Macroeconomist) tracks sector rotation, market regime, and risk-adjusted returns
 4. **Consensus** weights each agent by historical accuracy, converges on a Top 5 portfolio
 
+## The Council — Living Journals
+
+Each agent maintains a **living harness** — a journal of beliefs, scars, operating principles, and weekly entries. They evolve as the market teaches them.
+
+| Agent | Archetype | Journal |
+|-------|-----------|---------|
+| 🌱 **Cecil** | The Fundamentalist | [The Quiet Library](journals/cecil.md) |
+| 🎸 **Marky** | The Technician | [The Tape Reader](journals/marky.md) |
+| 🔮 **Ophelia** | The Macro Oracle | [The Tide Watcher](journals/ophelia.md) |
+
+📊 **[Scoreboard & Audit](scoreboard.md)** — Grades, standings, escalation rules, and the conscience of the Orchestra.
+
 ## How to Get Notifications on Your Phone
 
 1. Install **GitHub Mobile** app (iOS/Android)
