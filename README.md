@@ -4,7 +4,7 @@
 
 ## How It Works
 
-Every **Monday at 9:17 AM**, the Council convenes:
+Every **Monday at 9:17 AM** (America/Indianapolis), the Council convenes:
 
 1. **Cecil** (Fundamentalist) scores stocks on P/E ratios, earnings quality, and safety
 2. **Marky** (Technician) reads momentum, moving averages, and volatility
@@ -14,16 +14,17 @@ Every **Monday at 9:17 AM**, the Council convenes:
 ## How to Get Notifications on Your Phone
 
 1. Install **GitHub Mobile** app (iOS/Android)
-2. Go to this repo → **Watch** → **All Activity**
+2. Go to [this repo](https://github.com/GrandMastaShake/weekly-council-scan) → **Watch** → **All Activity**
 3. Enable push notifications for GitHub in your phone settings
-4. Every Monday morning when a new report lands, you'll get a push notification
+4. Every Monday morning when a new report lands, you'll get a push notification with the commit message
 
 ## Reports
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-07-15 | [View](reports/2026-07-15-report.md) | 16.5 | +0.83% | FTNT (Marky) |
 
-<!-- Reports auto-inserted below by cron job -->
+<!-- Reports auto-inserted above by cron job -->
 
 ---
 
