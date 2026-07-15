@@ -36,6 +36,7 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | 🛍️ **Consumer Discretionary** | XLY | [Consumer Discretionary Wiki](wiki/consumer-discretionary.md) | Saturdays 10:49 AM |
 | 🍞 **Consumer Staples** | XLP | [Consumer Staples Wiki](wiki/consumer-staples.md) | Saturdays 10:59 AM |
 | ⚙️ **Industrials** | XLI | [Industrials Wiki](wiki/industrials.md) | Saturdays 11:09 AM |
+| ⛏️ **Materials** | XLB | [Materials Wiki](wiki/materials.md) | Saturdays 11:19 AM |
 
 <!-- More sector wikis added as they are built -->
 
