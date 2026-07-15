@@ -33,6 +33,7 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | ⛽ **Energy** | XLE | [Energy Wiki](wiki/energy.md) | Saturdays 10:19 AM |
 | 🏦 **Financials** | XLF | [Financials Wiki](wiki/financials.md) | Saturdays 10:29 AM |
 | 🏥 **Healthcare** | XLV | [Healthcare Wiki](wiki/healthcare.md) | Saturdays 10:39 AM |
+| 🛍️ **Consumer Discretionary** | XLY | [Consumer Discretionary Wiki](wiki/consumer-discretionary.md) | Saturdays 10:49 AM |
 
 <!-- More sector wikis added as they are built -->
 
