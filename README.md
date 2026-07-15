@@ -18,10 +18,21 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 | Agent | Archetype | Journal |
 |-------|-----------|---------|
 | 🌱 **Cecil** | The Fundamentalist | [The Quiet Library](journals/cecil.md) |
-| 🎸 **Marky** | The Technician | [The Tape Reader](journals/marky.md) |
-| 🔮 **Ophelia** | The Macro Oracle | [The Tide Watcher](journals/ophelia.md) |
+| 🎸 **Marky** | The Technician | [The Tape Reader](journals/marky-harness.md) |
+| 🔮 **Ophelia** | The Macro Oracle | [The Tide Watcher](journals/ophelia-journal.md) |
 
 📊 **[Scoreboard & Audit](scoreboard.md)** — Grades, standings, escalation rules, and the conscience of the Orchestra.
+
+## Saturday Research Crew — Sector Wikis
+
+Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs. These feed into Monday's Council session.
+
+| Sector | ETF | Wiki | Update Time |
+|---|---|---|---|
+| 🖥️ **Technology** | XLK | [Tech Wiki](wiki/tech.md) | Saturdays 10:09 AM |
+| ⛽ **Energy** | XLE | [Energy Wiki](wiki/energy.md) | Saturdays 10:19 AM |
+
+<!-- More sector wikis added as they are built -->
 
 ## How to Get Notifications on Your Phone
 
