@@ -31,6 +31,7 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 |---|---|---|---|
 | 🖥️ **Technology** | XLK | [Tech Wiki](wiki/tech.md) | Saturdays 10:09 AM |
 | ⛽ **Energy** | XLE | [Energy Wiki](wiki/energy.md) | Saturdays 10:19 AM |
+| 🏦 **Financials** | XLF | [Financials Wiki](wiki/financials.md) | Saturdays 10:29 AM |
 
 <!-- More sector wikis added as they are built -->
 
