@@ -38,6 +38,7 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | ⚙️ **Industrials** | XLI | [Industrials Wiki](wiki/industrials.md) | Saturdays 11:09 AM |
 | ⛏️ **Materials** | XLB | [Materials Wiki](wiki/materials.md) | Saturdays 11:19 AM |
 | ⚡ **Utilities** | XLU | [Utilities Wiki](wiki/utilities.md) | Saturdays 11:29 AM |
+| 🏠 **Real Estate** | XLRE | [Real Estate Wiki](wiki/real-estate.md) | Saturdays 11:39 AM |
 
 <!-- More sector wikis added as they are built -->
 
