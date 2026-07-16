@@ -18,8 +18,8 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 | Agent | Archetype | Journal |
 |-------|-----------|---------|
 | 🌱 **Cecil** | The Fundamentalist | [The Quiet Library](journals/cecil.md) |
-| 🎸 **Marky** | The Technician | [The Tape Reader](journals/marky-harness.md) |
-| 🔮 **Ophelia** | The Macro Oracle | [The Tide Watcher](journals/ophelia-journal.md) |
+| 🎸 **Marky** | The Technician | [The Tape Reader](journals/marky.md) |
+| 🔮 **Ophelia** | The Macro Oracle | [The Tide Watcher](journals/ophelia.md) |
 
 📊 **[Scoreboard & Audit](scoreboard.md)** — Grades, standings, escalation rules, and the conscience of the Orchestra.
 
