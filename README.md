@@ -42,6 +42,15 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 11:49 AM |
 | 💻 **Semiconductors** | SMH | [Semiconductors Wiki](wiki/semiconductors.md) | Saturdays 11:59 AM |
 
+## Saturday Research Crew — Cross-Cutting Dashboards
+
+These dashboards synthesize intelligence across all sectors and feed the Canary Watch system.
+
+| Dashboard | Wiki | Update Time |
+|---|---|---|
+| 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 12:09 PM |
+| 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | *Coming soon* |
+
 ## How to Get Notifications on Your Phone
 
 1. Install **GitHub Mobile** app (iOS/Android)
