@@ -51,6 +51,14 @@ These dashboards synthesize intelligence across all sectors and feed the Canary 
 | 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 12:09 PM |
 | 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | Saturdays 12:19 PM |
 
+## Saturday Research Crew — Synthesis Agent
+
+The Synthesis Agent reads all 14 wikis and produces the Council's weekly cross-sector intelligence brief.
+
+| Report | Wiki | Update Time |
+|---|---|---|
+| 🧠 **Weekly Synthesis** | [Synthesis](wiki/synthesis.md) | Saturdays 2:56 PM |
+
 ## How to Get Notifications on Your Phone
 
 1. Install **GitHub Mobile** app (iOS/Android)
