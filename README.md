@@ -49,7 +49,7 @@ These dashboards synthesize intelligence across all sectors and feed the Canary 
 | Dashboard | Wiki | Update Time |
 |---|---|---|
 | 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 12:09 PM |
-| 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | *Coming soon* |
+| 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | Saturdays 12:19 PM |
 
 ## How to Get Notifications on Your Phone
 
