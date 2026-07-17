@@ -1,0 +1,12 @@
+{
+  "total_weeks": 0,
+  "avg_weekly_return": 0,
+  "avg_spy_return": 0,
+  "avg_alpha": 0,
+  "hit_rate": 0,
+  "sharpe_4w": null,
+  "max_drawdown": 0,
+  "agent_summary": {},
+  "last_updated": "2026-07-16 01:00:00",
+  "note": "No trades recorded yet. Metrics will populate after the first weekly cycle."
+}
