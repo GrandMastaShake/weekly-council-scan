@@ -23,6 +23,8 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 📊 **[Scoreboard & Audit](scoreboard.md)** — Grades, standings, escalation rules, and the conscience of the Orchestra.
 
+💼 **[Paper Portfolio Tracker](portfolio/README.md)** — Tracks the Council's weekly picks as real trades with entry prices, stop losses, and real P&L.
+
 ## Saturday Research Crew — Sector Wikis
 
 Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs. These feed into Monday's Council session.
@@ -36,10 +38,9 @@ Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates
 | 🛍️ **Consumer Discretionary** | XLY | [Consumer Discretionary Wiki](wiki/consumer-discretionary.md) | Saturdays 10:49 AM |
 | 🍞 **Consumer Staples** | XLP | [Consumer Staples Wiki](wiki/consumer-staples.md) | Saturdays 10:59 AM |
 | ⚙️ **Industrials** | XLI | [Industrials Wiki](wiki/industrials.md) | Saturdays 11:09 AM |
-| ⛏️ **Materials** | XLB | [Materials Wiki](wiki/materials.md) | Saturdays 11:19 AM |
+| ⛏️ **Materials + Real Estate** | XLB / XLRE | [Materials Wiki](wiki/materials.md) / [Real Estate Wiki](wiki/real-estate.md) | Saturdays 11:19 AM |
 | ⚡ **Utilities** | XLU | [Utilities Wiki](wiki/utilities.md) | Saturdays 11:29 AM |
-| 🏠 **Real Estate** | XLRE | [Real Estate Wiki](wiki/real-estate.md) | Saturdays 11:39 AM |
-| 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 11:49 AM |
+| 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 11:39 AM |
 | 💻 **Semiconductors** | SMH | [Semiconductors Wiki](wiki/semiconductors.md) | Saturdays 11:59 AM |
 
 ## Saturday Research Crew — Cross-Cutting Dashboards
@@ -50,10 +51,11 @@ These dashboards synthesize intelligence across all sectors and feed the Canary 
 |---|---|---|
 | 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 12:09 PM |
 | 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | Saturdays 12:19 PM |
+| 📅 **Economic Calendar** | [Economic Calendar](wiki/economic-calendar.md) | Saturdays 11:59 AM |
 
 ## Saturday Research Crew — Synthesis Agent
 
-The Synthesis Agent reads all 14 wikis and produces the Council's weekly cross-sector intelligence brief.
+The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-sector intelligence brief.
 
 | Report | Wiki | Update Time |
 |---|---|---|
