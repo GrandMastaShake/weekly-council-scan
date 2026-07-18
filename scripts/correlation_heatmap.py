@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Sector Correlation Heatmap Generator
+Sector Correlation Heatmap Generator (Compact PIL Version)
 Fetches 30-day price history for all sector ETFs, computes a correlation matrix,
-and generates a PNG heatmap saved to assets/ with a dated filename.
+and generates a compact PNG heatmap saved to assets/ with a dated filename.
 """
 
 import os
@@ -12,18 +12,18 @@ from datetime import datetime, timedelta
 # --- Configuration ---
 SECTORS = {
     "SPY": "S&P 500",
-    "XLK": "Technology",
-    "SMH": "Semiconductors",
-    "XLY": "Consumer Discretionary",
+    "XLK": "Tech",
+    "SMH": "Semis",
+    "XLY": "Cons Disc",
     "XLI": "Industrials",
     "XLB": "Materials",
-    "XLC": "Communication Services",
+    "XLC": "Comm Svcs",
     "XLF": "Financials",
     "XLV": "Healthcare",
     "XLU": "Utilities",
     "XLRE": "Real Estate",
     "XLE": "Energy",
-    "XLP": "Consumer Staples",
+    "XLP": "Cons Staples",
 }
 
 ASSETS_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
@@ -35,11 +35,10 @@ def fetch_close_prices(ticker: str, days: int = PERIOD_DAYS):
     import yfinance as yf
 
     end = datetime.now()
-    start = end - timedelta(days=days + 5)  # buffer for weekends/holidays
+    start = end - timedelta(days=days + 5)
     df = yf.download(ticker, start=start.strftime("%Y-%m-%d"), end=end.strftime("%Y-%m-%d"), progress=False)
     if df.empty:
         return None
-    # yfinance returns MultiIndex columns in recent versions
     if isinstance(df.columns, pd.MultiIndex):
         closes = df["Close"][ticker]
     else:
@@ -47,46 +46,75 @@ def fetch_close_prices(ticker: str, days: int = PERIOD_DAYS):
     return closes.dropna()
 
 
-def generate_heatmap(correlation_matrix, labels, output_path):
-    """Generate and save a seaborn heatmap."""
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    import seaborn as sns
+def corr_to_color(val: float) -> tuple:
+    """Map correlation (-1 to 1) to RGB color. Blue = negative, White = 0, Red = positive."""
+    if val >= 0:
+        r = 255
+        g = int(255 * (1 - val))
+        b = int(255 * (1 - val))
+    else:
+        r = int(255 * (1 + val))
+        g = int(255 * (1 + val))
+        b = 255
+    return (r, g, b)
 
-    plt.figure(figsize=(14, 12))
-    mask = np.triu(np.ones_like(correlation_matrix, dtype=bool), k=1)
-    cmap = sns.diverging_palette(250, 15, s=75, l=40, n=9, center="light", as_cmap=True)
 
-    sns.heatmap(
-        correlation_matrix,
-        mask=mask,
-        annot=True,
-        fmt=".2f",
-        cmap=cmap,
-        vmin=-1,
-        vmax=1,
-        center=0,
-        square=True,
-        linewidths=0.5,
-        cbar_kws={"shrink": 0.75, "label": "Correlation"},
-        xticklabels=labels,
-        yticklabels=labels,
-        annot_kws={"size": 9},
-    )
+def generate_heatmap_pil(corr_matrix, labels, output_path):
+    """Generate a compact heatmap using PIL."""
+    from PIL import Image, ImageDraw, ImageFont
 
-    plt.title(
-        f"Sector ETF Correlation Matrix ({PERIOD_DAYS}-Day Rolling)\n"
-        f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')} ET",
-        fontsize=14,
-        fontweight="bold",
-        pad=20,
-    )
-    plt.xticks(rotation=45, ha="right", fontsize=9)
-    plt.yticks(rotation=0, fontsize=9)
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=150, bbox_inches="tight")
-    plt.close()
+    n = len(labels)
+    cell_size = 42
+    label_width = 90
+    label_height = 70
+    margin = 10
+
+    img_width = label_width + n * cell_size + margin
+    img_height = label_height + n * cell_size + margin + 30
+
+    img = Image.new("RGB", (img_width, img_height), (255, 255, 255))
+    draw = ImageDraw.Draw(img)
+
+    try:
+        font = ImageFont.truetype("arial.ttf", 10)
+        small_font = ImageFont.truetype("arial.ttf", 8)
+    except OSError:
+        font = ImageFont.load_default()
+        small_font = ImageFont.load_default()
+
+    title = f"Sector Correlation ({PERIOD_DAYS}D) — {datetime.now().strftime('%Y-%m-%d')}"
+    draw.text((margin, 5), title, fill=(0, 0, 0), font=font)
+
+    for i in range(n):
+        for j in range(n):
+            if j > i:
+                continue
+            val = corr_matrix[i][j]
+            color = corr_to_color(val)
+            x = label_width + j * cell_size
+            y = label_height + i * cell_size
+            draw.rectangle([x, y, x + cell_size - 1, y + cell_size - 1], fill=color, outline=(200, 200, 200))
+            text = f"{val:.2f}"
+            bbox = draw.textbbox((0, 0), text, font=small_font)
+            tw = bbox[2] - bbox[0]
+            th = bbox[3] - bbox[1]
+            tx = x + (cell_size - tw) // 2
+            ty = y + (cell_size - th) // 2
+            brightness = (color[0] * 299 + color[1] * 587 + color[2] * 114) / 1000
+            text_color = (0, 0, 0) if brightness > 128 else (255, 255, 255)
+            draw.text((tx, ty), text, fill=text_color, font=small_font)
+
+    for i, label in enumerate(labels):
+        y = label_height + i * cell_size + cell_size // 2
+        draw.text((margin, y - 5), label, fill=(0, 0, 0), font=small_font)
+        x = label_width + i * cell_size + cell_size // 2
+        txt_img = Image.new("RGBA", (60, 12), (255, 255, 255, 0))
+        txt_draw = ImageDraw.Draw(txt_img)
+        txt_draw.text((0, 0), label, fill=(0, 0, 0), font=small_font)
+        txt_img = txt_img.rotate(45, expand=True)
+        img.paste(txt_img, (x - 10, margin), txt_img)
+
+    img.save(output_path, optimize=True)
     return output_path
 
 
@@ -110,31 +138,23 @@ def main():
         print("ERROR: Not enough data to compute correlation matrix.")
         sys.exit(1)
 
-    # Align and compute returns
     df = pd.DataFrame(price_data)
     df = df.dropna()
     returns = df.pct_change().dropna()
-
-    # Use last PERIOD_DAYS of returns
     if len(returns) > PERIOD_DAYS:
         returns = returns.iloc[-PERIOD_DAYS:]
-
     corr = returns.corr()
 
-    # Order: SPY first, then sectors alphabetically by ticker
     ordered = ["SPY"] + sorted([t for t in corr.columns if t != "SPY"])
     corr = corr.reindex(index=ordered, columns=ordered)
-
-    labels = [f"{t}\n({SECTORS[t]})" for t in ordered]
+    labels = ordered
 
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     filename = f"correlation-heatmap-{date_stamp}.png"
     output_path = os.path.join(ASSETS_DIR, filename)
 
-    generate_heatmap(corr.values, labels, output_path)
+    generate_heatmap_pil(corr.values, labels, output_path)
     print(f"Saved heatmap to: {output_path}")
-
-    # Also print the markdown reference for easy copy-paste
     print(f"\nMarkdown reference:")
     print(f"![Sector Correlation Heatmap — {date_stamp}](../assets/{filename})")
 
