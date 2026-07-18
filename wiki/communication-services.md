@@ -10,39 +10,41 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $113.38 | — | — |
+| Price | $110.65 | — | **-2.4% w/w** (vs. $113.38 on 7/15) |
 | 52W Range | $104.33 – $119.71 | — | — |
 | AUM | ~$22.3B | — | — |
-| YTD Return | **-2.45%** | — | — |
-| 1Y Return | ~+8.7% | — | — |
+| YTD Return | **-4.8%** | — | -2.35 pts w/w |
+| 1Y Return | ~+6.1% | — | — |
 | P/E Ratio | ~16.5 | — | — |
 | Dividend Yield | ~1.33% | — | — |
 | Beta | ~1.05 | — | — |
 | Total Holdings | ~25 | — | — |
 | Avg Daily Volume | ~6.0M shares | — | — |
 
-**Marky Tape Read:** XLC is up 1.73% today — a strong session driven by META (+3.07%) and GOOGL (+3.17%). The sector is down YTD (-2.45%) but has rallied hard from the $104 lows. The 52W high of $119.71 is $6.33 away — a meaningful gap. The 50D MA is likely around $111–$112. XLC is currently above it. The 200D MA is around $108–$109. The trend is turning bullish. Volume on today's rally is elevated (~6M vs. typical ~4M) — either accumulation or short-covering. The key level: recapture $115 for bulls. A break below $110 would target the 200D MA.
+**Marky Tape Read:** XLC closed the week at $110.65 — down 2.4% since Wednesday's snapshot and back **below the 50-day MA (~$111.50–$112)** after holding it for about a week. The recovery pattern is wounded but not dead: price still sits above the 200D (~$108.50), and Friday's close held the $110 breakout shelf by a fingernail. The damage came in two waves — Thursday/Friday's broad risk-off (hawkish Warsh testimony + fresh US strikes on Iran) and Friday's NFLX earnings trap door (-7.4% to a 52-week low). META (-5.2% w/w) and GOOGL (-6.5% w/w) did the heavy lifting on the way down — that is what happens when 38% of your fund is two names. The $110 level is now the line in the sand: lose it on volume and the 200D at ~$108.50 is the next stop; reclaim $112 and the recovery is back on track.
 
-**Ophelia Macro Read:** Communication Services is a **tale of two sectors** trapped in one ETF. The digital platforms (META, GOOGL, NFLX) are growth stocks driven by ad revenue, AI investment, and subscriber growth. The legacy telecoms (T, VZ, TMUS) are yield plays driven by subscriber counts, ARPU, and 5G capex. The digital platforms are 55%+ of the fund. The telecoms are 15%. The rest is media/gaming (DIS, EA, TTWO, WBD). The sector's fate is tied to the **ad cycle** — when corporate ad budgets expand, META and GOOGL print money. When ad budgets contract, the sector bleeds. The 10Y yield at 4.54% is less relevant here than for utilities or REITs — these are growth stocks, not bond proxies. DXY at 100.80 is a tailwind for international ad revenue (META, GOOGL earn ~50% overseas).
+**Ophelia Macro Read:** The macro regime shifted this week. The Fed's June dot plot revealed a genuinely divided committee — nine of eighteen officials favor at least one rate **hike** before year-end — and Chair Warsh's Thursday testimony kept that door open. The 10Y pushed to a two-month high of 4.62% before settling near 4.56%. Fresh US strikes on Iranian targets sent oil sharply higher, reviving the energy-inflation channel just as June CPI/PPI came in soft (September move odds trimmed to ~44%). For Communication Services this is a pincer: higher-for-longer rates compress growth multiples (META, GOOGL), and an oil-driven squeeze on consumer wallets is exactly the kind of force that makes CFOs trim ad budgets in H2. The counterweight: global ad spend forecasts still point up (~$1.0–1.1T, +6.7–7.7% for 2026) and the digital share keeps climbing (82.7% of US media spend). The tide is choppy; the current underneath still flows toward digital.
 
 ---
 
 ## TOP HOLDINGS & MOMENTUM
 
-| Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
+| Rank | Ticker | Name | Weight | Price | Change † | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | META | Meta Platforms | ~22% | $681.31 | +3.07% | $793.65 | $519.78 | 0.32% | 24.8 | 🔥 |
-| 2 | GOOGL | Alphabet (Class A) | ~12% | $370.92 | +3.17% | $408.37 | $179.97 | 0.24% | 28.3 | 🔥 |
-| 3 | GOOG | Alphabet (Class C) | ~4% | $370.21 | +3.60% | $404.23 | $180.98 | 0.25% | 28.2 | 🔥 |
-| 4 | NFLX | Netflix | ~6% | $73.68 | +0.20% | $127.75 | $70.86 | 0.00% | 23.8 | ⚠️ |
-| 5 | T | AT&T | ~5% | $21.43 | +0.70% | $28.75 | $19.63 | 5.22% | 7.2 | ⚡ |
-| 6 | VZ | Verizon | ~5% | $42.83 | +0.85% | $50.06 | $36.55 | 6.66% | 10.4 | ⚡ |
-| 7 | TMUS | T-Mobile US | ~5% | $187.62 | +0.26% | $256.72 | $165.66 | 2.18% | 19.9 | ⚡ |
-| 8 | DIS | Walt Disney | ~4% | $97.15 | +1.34% | $121.64 | $91.49 | 1.56% | 15.5 | ⚡ |
-| 9 | CHTR | Charter Communications | ~3% | $131.24 | +2.60% | $402.15 | $124.05 | 0.00% | 3.5 | 🔴 |
-| 10 | EA | Electronic Arts | ~2% | $207.27 | +0.30% | $207.76 | $146.39 | 0.37% | 59.1 | 🔥 |
+| 1 | META | Meta Platforms | ~22% | $646.01 | -5.2% | $793.65 | $519.78 | 0.32% | ~23.5 | ⚠️ |
+| 2 | GOOGL | Alphabet (Class A) | ~12% | $346.82 | -6.5% | $408.37 | $179.97 | 0.24% | ~26.5 | ⚠️ |
+| 3 | GOOG | Alphabet (Class C) | ~4% | ~$346.16* | -6.5%* | $404.23 | $180.98 | 0.25% | ~26.4* | ⚠️ |
+| 4 | NFLX | Netflix | ~6% | $68.86 | -6.5% | $127.75 | **$68.86** | 0.00% | ~22 | 🔴 |
+| 5 | T | AT&T | ~5% | $21.43* | n/a | $28.75 | $19.63 | 5.22%* | 7.2* | ⚡ |
+| 6 | VZ | Verizon | ~5% | $42.83* | n/a | $50.06 | $36.55 | 6.66%* | 10.4* | ⚡ |
+| 7 | TMUS | T-Mobile US | ~5% | $192.53 | +2.6% | $256.72 | $165.66 | 2.18% | 19.9 | ⚡ |
+| 8 | DIS | Walt Disney | ~4% | $97.77 | +0.6% | $121.64 | $91.49 | 1.56% | 15.5 | ⚡ |
+| 9 | CHTR | Charter Communications | ~3% | $131.37 | +0.1% | $402.15 | $124.05 | 0.00% | 3.5 | 🔴 |
+| 10 | EA | Electronic Arts | ~2% | $207.27* | n/a | $207.76 | $146.39 | 0.37%* | 59.1* | 🔥 |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
+>
+> † Weekly change vs. 7/15 snapshot, Fri 7/17 close. *Stale quote (7/15) — data feed gap at the weekend close; GOOG estimated from GOOGL.
 
 **Sector Split:** XLC is dominated by two titans — META (~22%) and GOOGL (~16% combined Class A + C) = ~38% of the fund. The rest is a mix of:
 - **Digital Advertising:** META, GOOGL (the cash cows)
@@ -51,13 +53,13 @@
 - **Gaming:** EA, TTWO (the cyclicals)
 - **Cable:** CHTR (the cord-cutting victim)
 
-**The META Story:** Meta at $681.31, +3.07% today, **14% below its 52W high** ($793.65). META is the largest weight in XLC and the most consequential earnings report for the sector. The company has pivoted from the metaverse disaster to AI dominance — Llama models are open-source and widely adopted. Instagram Reels is stealing share from TikTok. WhatsApp monetization is accelerating. But the stock is expensive at 24.8x P/E and regulatory risk is elevated (EU Digital Markets Act, U.S. antitrust cases). The AI capex is massive — $60B+ in 2026. The market wants to see ad revenue growth above 15% and AI ROI.
+**The META Story:** Meta at $646.01, -5.2% on the week, **19% below its 52W high** ($793.65) — caught in the growth-stock downdraft even as the fundamental story improved. Two bullish data points landed this week: HSBC upgraded META to Buy as the company negotiates a potential **$10B deal to lease AI compute to Anthropic** — the first credible step toward monetizing its data-center buildout as a cloud business — and eMarketer confirmed the crossover: **Meta is projected to pass Alphabet in global net ad revenue in 2026 ($243.5B vs. $239.5B)** for the first time in history. Q1 revenue grew 33% YoY to $56.3B with net income up 61%. The bear case is unchanged: 2026 capex guidance was raised to $125–145B (the stock dropped 9% when that landed in April), and Q2 earnings land **Jul 29 AMC (confirmed)**. The market wants ad revenue growth in the mid-teens or better and evidence AI spend is turning into cloud/ad ROI — not just bigger checks to NVIDIA.
 
-**The GOOGL Story:** Alphabet at $370.92, +3.17% today, **9% below its 52W high** ($408.37). Google is fighting a war on three fronts: (1) OpenAI/Microsoft in search/AI, (2) the DOJ antitrust case (potential Chrome divestiture), (3) TikTok/Amazon in ads. But Google Search still generates $175B+ in annual revenue. YouTube is a $50B+ business. Cloud is growing 28%+. The stock at 28.3x P/E is not cheap, but the moats are deep. The risk: a Chrome divestiture would destroy the search monetization model.
+**The GOOGL Story:** Alphabet at $346.82, -6.5% on the week, **15% below its 52W high** ($408.37). The fundamental tape is strong — Q1 ad revenue of $66.9B still dwarfs Meta's $41.4B, Google Cloud grew 63% YoY in Q1, and 2026 capex of ~$175–185B is the largest buildout in the group. But the stock carries a double overhang: the eMarketer forecast that **Meta steals the global ad crown this year**, and the antitrust docket. On that front — a procedurally quiet week: the search-remedies fight sits at the D.C. Circuit (Google's 111-page brief filed May 22; DOJ and state AGs pressing to reinstate Chrome divestiture; oral arguments expected late 2026/early 2027), and the ad-tech case (Judge Brinkema, E.D. Va.) grinds through remedies with AdX/DFP divestiture still on the table. Q2 earnings land the week of Jul 27 (expected ~Jul 28). Watch Search growth, YouTube ads, Cloud momentum, FY27 capex guidance, and any remedies commentary.
 
-**The NFLX Story:** Netflix at $73.68, +0.20% today, **42% below its 52W high** ($127.75). NFLX is the streaming pioneer that became a value stock. The password-sharing crackdown added 20M+ subscribers. The ad-tier is growing fast. But competition (Disney+, Max, Amazon Prime, Apple TV+) is intense. Content costs are rising. The stock at 23.8x P/E is reasonable, but growth is slowing. The market is asking: is Netflix a growth stock or a mature media company?
+**The NFLX Story:** Netflix is the week's wound. Q2 reported Thursday night: revenue $12.56B (+13.4% YoY) — a hair under consensus — EPS $0.80 in line, operating margin 33.4%. The killer was the guide: **Q3 revenue of $12.86B (+11.7%), below the ~$13B Street**, with management acknowledging deceleration (blaming back-half-weighted comps). The stock fell ~7.4% Friday to $68.86 — a fresh 52-week low, ~46% below the June 2025 all-time high, and roughly a third below April levels, when the last guidance miss (and Reed Hastings' board exit) started the slide. Silver linings the bulls are clinging to: a record $4.7B buyback in Q2 ($27B left on the authorization), ad revenue on track to roughly double to ~$3B in 2026, and the industry's lowest churn. The detail that spooked veterans: Netflix is reducing the frequency of its view-hours disclosure — companies rarely narrow transparency when the numbers are flattering. At ~22x earnings the stock is no longer priced as a growth stock; the market is now explicitly asking whether Netflix is a maturing media utility.
 
-**Cecil Fundamental Read:** T at 7.2x P/E and 5.22% yield is the kind of deep value Cecil loves. AT&T has stabilized after the WarnerMedia spin-off. The wireless business is generating steady cash flow. The dividend is covered. But the debt load is still $120B+. Rule 2 applies: verify the cash flow. The cash flow is stable but not growing. VZ at 10.4x P/E and 6.66% yield is even more interesting — the highest yield in the sector. But Verizon's growth is flat. The 5G capex cycle is peaking. CHTR at 3.5x P/E is absurdly cheap, but the cable business is in structural decline — broadband subscriber growth has stalled. Is this deep value or a value trap? Cecil would be interested but skeptical. META at 24.8x P/E is a growth stock, not a value play. GOOGL at 28.3x P/E is a quality compounder but expensive. The telecoms are the only names that fit Cecil's garden.
+**Cecil Fundamental Read:** T at 7.2x P/E and 5.22% yield remains the kind of deep value Cecil loves — but note the squeeze: with the 10Y at 4.56%, T's yield spread is only ~65 bps. VZ's 6.66% yield (~210 bps over the 10Y) is the more interesting spread, and it reports Wednesday. The cash flows are stable, the debts are still massive ($120B+ at AT&T). Rule 2 applies: verify the cash flow — earnings week does exactly that. CHTR at 3.5x P/E is still a probable value trap in structural decline. The new name on the edge of Cecil's radar is, astonishingly, NFLX: a record $4.7B buyback at ~22x earnings with ~$12.5B of 2026 free cash flow targeted is a ~4%+ FCF yield — but the $20B content treadmill disqualifies it for now. META at ~23.5x is a growth stock. GOOGL at ~26.5x is a quality compounder at full price. The telecoms remain the only names that fit the garden.
 
 ---
 
@@ -65,18 +67,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $119.71 | Resistance — XLC tested this in May and failed |
-| Near Resistance | $115.00 | Recent consolidation ceiling |
-| 50-Day MA | ~$111.50 | **Key dynamic level** — XLC is holding above it |
-| Current Price | $113.38 | — |
-| 200-Day MA | ~$108.50 | Long-term trend support — bullish above |
-| Major Support | $110.00 | Previous breakout zone from June |
+| 52W High | $119.71 | Resistance — tested in May, failed |
+| Near Resistance | $115.00 | June consolidation ceiling |
+| 50-Day MA | ~$111.50–112 | **Broken Friday** — recovery pattern wounded |
+| Current Price | $110.65 | Sitting directly on support |
+| Major Support | $110.00 | June breakout zone — held Friday by a thread |
+| 200-Day MA | ~$108.50 | Long-term trend support — the real line |
 | Deep Support | $106.00 | Post-correction consolidation floor |
-| Structural Low | $104.33 | 52W bottom — March 2025 lows |
+| Structural Low | $104.33 | 52W bottom |
 
-**Marky Setup Assessment:** XLC is in a **recovery pattern**. The sector dropped from $119.71 to $104.33 (-12.8%) and is now bouncing. The 50D MA at ~$111.50 was recaptured this week. The RSI is likely around 55–58 — neutral, with room to run. Volume on the bounce is elevated, suggesting accumulation. The key question: is this a dead-cat bounce or the start of a new uptrend? If XLC recaptures $115 with volume >7M shares, the bull case is confirmed. If it fails at $115 and drops below $110, the 200D MA at $108.50 is the next target. The bias is cautiously bullish — META and GOOGL are leading, and the ad cycle may be turning.
+**Marky Setup Assessment:** The recovery is on probation. XLC gave back the 50D on Friday's NFLX-driven gap down, closing at $110.65 — directly on top of the $110 June breakout shelf. RSI has slid from the mid-50s to the mid-40s: no momentum edge either way. The setup is binary into the Jul 28–29 GOOGL/META double-header: hold $110 and the two reports decide the next $5; lose $110 on volume and the 200D at ~$108.50 gets tested fast. Below the 200D, the whole recovery thesis is cancelled and $106/$104.33 come into play. NFLX at a 52-week low below every major MA is the sector's broken wing; TMUS (+2.6% w/w) was the week's only meaningful gainer in the top 10.
 
-**The relative strength story:** XLC is -2.45% YTD vs. SPY at ~+15%. This is **massive underperformance**. The sector is being dragged down by NFLX (-42% from high), DIS (-20% from high), and CHTR (-67% from high). But META and GOOGL are strong. The sector is a **stock-picker's market** — own the winners (META, GOOGL, EA), avoid the losers (NFLX, DIS, CHTR). XLC as a passive ETF is a blunt instrument.
+**The relative strength story:** XLC is now **-4.8% YTD vs. SPY at ~+15%** — the underperformance gap widened to ~20 points. The sector is flat-to-down while the tape makes highs: classic late-cycle dispersion. Own the winners, avoid the ETF — XLC as a passive vehicle owns both the crown-taker (META) and the broken (NFLX, CHTR).
 
 ---
 
@@ -84,28 +86,24 @@
 
 | Factor | Level | Implication for XLC |
 |---|---|---|
-| 10Y Treasury | 4.54% | Less relevant for growth stocks. But high rates compress ad budgets. |
-| DXY | 100.80 | Below 101 = tailwind for international ad revenue (META, GOOGL earn ~50% overseas). |
-| Fed Funds | 3.50–3.75% (on hold) | Neutral. Cuts = lower discount rates = higher multiples for growth stocks. |
-| **Global Ad Spend 2026E** | **~$950B (+6% YoY)** | **The sector's oxygen.** When ad spend grows, META and GOOGL rally. |
-| Digital Ad Share | ~65% of total | Digital ads (META, GOOGL, AMZN) keep taking share from TV/print. |
-| **AI Capex (Hyperscalers)** | **~$775B (+78% YoY)** | GOOGL and META are spending massively on AI. Short-term margin drag. Long-term moat. |
-| Streaming Competition | Intense | 8+ major platforms. Subscriber growth is slowing. Price wars emerging. |
-| Cord-Cutting Rate | ~5% annually | Cable/satellite subscribers declining. Hurts CHTR, DIS (ESPN). |
-| 5G Subscribers | ~2.5B globally | 5G adoption is mature. Capex is peaking. Telecom growth is slowing. |
-| Wireless ARPU | ~$50–55/month | Flat. Price wars (T-Mobile vs. Verizon vs. AT&T) limit pricing power. |
-| Regulatory Risk | Elevated | DOJ antitrust (GOOGL Chrome), EU DMA (META, GOOGL), Section 230 debates. |
-| Gaming Industry Growth | ~+4–6% YoY | Cyclical. EA and TTWO depend on hit releases. |
+| 10Y Treasury | ~4.56% (2-mo high 4.62% Thu) | Rising yields compress platform multiples; narrows telecom yield spreads (T's 5.2% yield now only ~65 bps over the 10Y). |
+| DXY | ~100.8 (7/15 reading) | Below 101 = tailwind for international ad revenue (META, GOOGL earn ~50% overseas). |
+| Fed Funds | 3.50–3.75% (on hold, hawkish dots) | Regime shift: 9/18 officials pencil in a 2026 **hike**. Sept move odds ~44%. Cut hopes deferred — multiple expansion on ice. |
+| June CPI/PPI | Soft (PPI first drop in ~a year) | The dovish counterweight — if disinflation resumes, hike risk fades and platforms re-rate. |
+| Oil / Iran | US strikes this week; crude surged | Energy-inflation risk — the exact scenario that gets ad budgets trimmed. The sector's nightmare input. |
+| **Global Ad Spend 2026E** | **~$1.0–1.1T (+6.7–7.7%)** | Still growing (GroupM ~$1.1T, +7.7%; MAGNA ~$1.02T, +6.7%). The oxygen has not been cut off. |
+| Digital Ad Share | 82.7% of US media spend (~$298B) | Structural shift continues — linear TV -1.7% while social +14.6%, retail media +14–21%, CTV +13.8%. |
+| **Platform Ad Crown** | **META > GOOGL in 2026E** | eMarketer: Meta $243.5B vs. Google $239.5B — first-ever flip. AI-driven social/video ads taking share from search. |
+| **AI Capex (Big 4)** | **~$725B (+77% YoY)** | GOOGL ~$175–185B; META $125–145B (raised). Margin drag now, moat later — the market's patience is thinning. |
+| Streaming | Ad tiers scaling | NFLX ~$3B 2026 ad revenue (doubling); US CTV ad spend ~$33.4B (+13.8%). But subscriber growth is maturing — see NFLX's guide. |
+| Cord-Cutting | ~5% annually | Unchanged structural bleed on CHTR, DIS (ESPN). |
+| 5G / Wireless ARPU | ~$50–55/mo, flat | No pricing power; TMUS still taking share. Telecom earnings Jul 22–25 are the next read. |
+| Regulatory Risk | Appeals phase | Search remedies at D.C. Circuit (arguments late '26/early '27); ad-tech remedies (AdX/DFP divestiture risk) ongoing. Nothing resolved. |
+| Gaming Growth | ~+4–6% YoY | GTA VI (2026) remains the cycle's big event; EA sits at highs into its Aug 6 print. |
 
-**Ophelia Verdict:** Communication Services is a **barbell sector** — digital platforms (META, GOOGL) on one side, legacy telecoms (T, VZ) on the other. The digital platforms are driven by the ad cycle and AI investment. The telecoms are driven by subscriber counts and dividend yields. The sector's fate is tied to **corporate ad budgets** — when the economy slows, the first thing companies cut is advertising. When the economy accelerates, ad budgets expand.
+**Ophelia Verdict:** The sector's weather changed this week even though its climate did not. The ad market is still growing ~7%, the digital transition is still compounding, and the AI buildout is still accelerating. But three storm cells moved in at once: a hawkish Fed dot plot (hikes, not cuts, now on the table), an oil shock brewing over Iran (the classic ad-budget killer), and Netflix's second guidance air pocket of the year (proof that even the streaming winner's growth has a ceiling). Add the eMarketer coronation — Meta passing Google in global ad revenue — and you have a sector whose internal hierarchy is being rewritten while its macro tailwinds fray. The barbell still stands: platforms on one side, telecom yield on the other. But the platform side now trades on two binary dates (Jul 28–29), and the telecom side reports into the highest-rate backdrop of the year.
 
-The **AI investment cycle** is the wild card. META and GOOGL are spending $100B+ combined on AI infrastructure in 2026. This is crushing near-term margins but building long-term moats. The market is pricing in a winner-take-all AI future. If Llama and Gemini dominate, the spending was worth it. If OpenAI/Microsoft win, the spending was a waste.
-
-The **regulatory risk** is the sleeper threat. The DOJ wants Google to divest Chrome. The EU wants to break up Meta's ad targeting. A Chrome divestiture would destroy Google's search monetization model. An ad-targeting ban would crush Meta's ROAS (return on ad spend). These are existential risks that the market is underpricing.
-
-The **streaming wars** are entering a consolidation phase. Netflix won. Disney+ is losing $1B+/year. Max is shrinking. Apple TV+ is a hobby. The market is pricing Netflix as the winner and the rest as losers. But Netflix at 23.8x P/E is not a growth stock — it is a mature media company.
-
-**The Bottom Line:** XLC is a **stock-picker's sector**. The ETF is dragged down by legacy media and cable. The winners are META and GOOGL. The telecoms provide yield but no growth. Cecil would buy T and VZ for income. Marky would trade META on momentum. Ophelia would watch the ad cycle and regulatory developments.
+**The Bottom Line:** XLC is a **stock-picker's sector** with a binary fortnight ahead. The ETF is dragged by broken media (NFLX -46% from ATH, CHTR -67%) and carried by two titans reporting back-to-back. Cecil buys T and VZ for income and verifies the cash flow next week. Marky stays flat into the prints and trades the confirmed direction after. Ophelia raises the weather alert from "fair" to "unsettled" until the ad data and the Fed's next move resolve.
 
 ---
 
@@ -113,37 +111,21 @@ The **streaming wars** are entering a consolidation phase. Netflix won. Disney+ 
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Ad-Cycle Bounce
+### This Week's Story: The Trap Door Under the Recovery
 
-Communication Services had a strong session today (+1.73%) — driven by META (+3.07%) and GOOGL (+3.17%). The sector is bouncing from oversold levels. But the bounce is narrow — only the digital platforms are participating.
+Last update, this page called XLC "cautiously bullish — a recovery pattern holding above the 50-day." The market spent three sessions dismantling that sentence. XLC closed Friday at $110.65, down 2.4% on the week, back below the 50D, and clinging to the $110 shelf. Three forces did the damage.
 
-**The META/GOOGL Rally.**
+**1. Netflix's second air pocket.** Thursday night, NFLX reported Q2 revenue of $12.56B (+13.4%) — essentially in line — but guided Q3 to $12.86B (+11.7%) versus the ~$13B consensus, confirming growth is decelerating into H2. The stock dropped ~7.4% Friday to $68.86, a fresh 52-week low, ~46% below last June's all-time high and roughly a third below April levels — when the previous guidance miss (plus Reed Hastings' board exit) started the slide. Management blamed comps and pointed to the full-year plan ($51.0–51.4B revenue, 31.5% margin — both reaffirmed), and the bulls have real ammunition: a record $4.7B Q2 buyback with $27B remaining, ad revenue doubling toward ~$3B, the industry's lowest churn. But the market heard something else in the fine print: Netflix is reducing the frequency of its view-hours disclosure. When the engagement emperor narrows the transparency window, traders assume the view is not improving. At ~22x earnings, Netflix has completed its transformation from growth stock to show-me story.
 
-Meta and Alphabet are up 3%+ today. Why? Because the market is pricing in a **turn in the ad cycle**. Corporate ad budgets were cut in Q1–Q2 as companies worried about recession. Now, with the economy proving resilient, ad budgets are expanding. META's ad revenue growth is tracking +18% YoY. GOOGL's Search revenue is tracking +12% YoY. YouTube ad revenue is recovering. The digital ad duopoly is back.
+**2. The Fed's hawkish turn.** Chair Warsh's Thursday testimony landed on a market still digesting June's dot plot — nine of eighteen officials favor at least one 2026 rate **hike**. The 10Y hit a two-month high of 4.62% Thursday. Soft June CPI/PPI trimmed September odds to ~44% and kept the doves alive, but "higher for longer" is now the base case — and multiple expansion for 23–28x platform stocks is on ice.
 
-But the rally is also driven by **AI optimism**. Meta's Llama 4 is gaining traction in the enterprise market. Google's Gemini is integrated into Search, Maps, and Gmail. The market is pricing in an AI monetization wave that has not arrived yet. The risk: if AI does not monetize as fast as expected, these stocks give back gains.
+**3. Iran.** Fresh US strikes on Iranian targets pushed oil sharply higher into the weekend. For most sectors that is an input-cost story; for this one it is worse — energy-driven inflation squeezing consumer wallets and corporate confidence is precisely the scenario in which H2 ad budgets get trimmed. The sector's single most important macro variable (global ad spend, still forecast +6.7–7.7% for 2026) now has a visible threat vector.
 
-**The Streaming Stagnation.**
+**Meanwhile, the hierarchy flips.** Lost in the selloff: eMarketer's projection that Meta passes Alphabet in global net ad revenue in 2026 ($243.5B vs. $239.5B) — the first time Google has ever lost the digital ad crown — and HSBC's upgrade of META on a potential $10B Anthropic compute deal, Meta's first credible step toward selling its AI infrastructure as a cloud service. The two titans report Jul 28–29 into exactly this crosscurrent: strong fundamentals, hostile macro, and a market with zero patience for capex without ROI.
 
-Netflix is flat (+0.20%) at $73.68 — 42% below its 52W high. The streaming pioneer is no longer a growth stock. Subscriber growth has stalled in mature markets (U.S., Europe). The password-sharing crackdown added users but also created churn. The ad-tier is growing but at lower ARPU. The market is pricing Netflix as a mature media company — not a tech stock.
+**The telecom quiet before the print.** TMUS (+2.6%) was the only top-10 name with a meaningful gain — share-taking still works even in a risk-off week. VZ (Jul 22), T (Jul 23), TMUS (Jul 24), and CHTR (~Jul 24) report into a 4.56% 10Y — the highest-rate backdrop any of them has faced this cycle. Watch whether wireless adds and ARPU hold, and whether VZ's 6.66% yield stays covered.
 
-Disney is up 1.34% at $97.15 — 20% below its high. Disney+ is losing money. ESPN is losing subscribers. The parks business is strong but priced in. Bob Iger's turnaround is taking longer than expected. The market is losing patience.
-
-Warner Bros Discovery is down 0.76% at $27.27 — the weakest name in the sector. WBD is drowning in $40B+ of debt. The Max streaming service is shrinking. The studio business is volatile. The stock at 852x P/E is a joke — the company barely earns money.
-
-**The Telecom Treadmill.**
-
-AT&T is up 0.70% at $21.43. Verizon is up 0.85% at $42.83. T-Mobile is up 0.26% at $187.62. These are the dividend plays — T at 5.22% yield, VZ at 6.66% yield, TMUS at 2.18% yield. But there is no growth. Wireless subscriber counts are flat. ARPU is flat. 5G capex is peaking. The telecoms are bond proxies in a sector that wants growth.
-
-T-Mobile is the exception — the magenta carrier continues to take share from Verizon and AT&T. But the stock is 27% below its high. The market is pricing in a price war that will crush margins.
-
-**The Gaming Wait.**
-
-Electronic Arts is up 0.30% at $207.27 — just below its 52W high. EA is waiting for its next hit. The sports franchises (FIFA, Madden, NHL) are cash cows. But growth requires new IP. The stock at 59x P/E is expensive for a company with single-digit revenue growth.
-
-Take-Two Interactive (TTWO) is up 2.85% today. GTA VI is the most anticipated game in history. The release in 2026 will be a massive revenue event. But the stock has already run up in anticipation. The risk: GTA VI delays or disappoints.
-
-**The Bottom Line:** Communication Services is experiencing a **tale of two sectors**. The digital platforms (META, GOOGL) are rallying on ad-cycle optimism and AI hope. The legacy media (NFLX, DIS, WBD) and telecoms (T, VZ) are stagnant. XLC as an ETF is a blunt instrument — it owns both the winners and the losers. This is a sector to trade actively, not own passively.
+**The Bottom Line:** The recovery isn't dead — XLC held $110 and the 200D at ~$108.50 is untouched — but it is on probation, and the judges report earnings the week after next. Everything between now and Jul 28 is positioning.
 
 ---
 
@@ -151,65 +133,63 @@ Take-Two Interactive (TTWO) is up 2.85% today. GTA VI is the most anticipated ga
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **Netflix** | NFLX | **Jul 17, 2026** | Q2 2026 | Subscriber net adds; ad-tier growth; ARPU; content spend guidance |
-| **Meta Platforms** | META | **Jul 30, 2026** | Q2 2026 | Ad revenue growth; Reels monetization; AI capex; Llama adoption |
-| **Alphabet** | GOOGL | **Jul 29, 2026** | Q2 2026 | Search revenue; YouTube ads; Cloud growth; AI monetization; antitrust updates |
-| **AT&T** | T | **Jul 23, 2026** | Q2 2026 | Wireless subscriber adds; ARPU; fiber growth; debt reduction |
-| **Verizon** | VZ | **Jul 22, 2026** | Q2 2026 | Wireless subscriber adds; ARPU; 5G capex; dividend coverage |
-| **T-Mobile** | TMUS | **Jul 24, 2026** | Q2 2026 | Subscriber adds; ARPU; Sprint integration completion; share buybacks |
-| **Disney** | DIS | **Aug 7, 2026** | Q3 FY2026 | Streaming subscriber growth; parks revenue; ESPN strategy; guidance |
-| **Charter Communications** | CHTR | **Jul 25, 2026** | Q2 2026 | Broadband subscriber net adds; mobile growth; cable revenue trends |
-| **Electronic Arts** | EA | **Aug 6, 2026** | Q1 FY2027 | Live services revenue; sports franchise performance; pipeline |
-| **Take-Two Interactive** | TTWO | **Aug 13, 2026** | Q1 FY2027 | GTA VI pre-orders; Zynga performance; guidance |
+| ~~Netflix~~ | NFLX | **Reported Jul 16** | Q2 2026 | Rev $12.56B (+13.4%, in line); **Q3 guide $12.86B vs. ~$13B — MISS**; stock -7.4% to 52W low; record $4.7B buyback; ads → ~$3B in 2026 |
+| **Verizon** | VZ | **Jul 22, 2026** | Q2 2026 | Wireless adds; ARPU; 5G capex; dividend coverage — yield now ~210 bps over the 10Y |
+| **AT&T** | T | **Jul 23, 2026** | Q2 2026 | Wireless adds; ARPU; fiber growth; debt paydown |
+| **T-Mobile** | TMUS | **Jul 24, 2026** | Q2 2026 | Subscriber adds; ARPU; buybacks — only green top-10 name this week |
+| **Charter** | CHTR | **~Jul 24, 2026** | Q2 2026 | Broadband net adds; mobile growth; cord-cutting pace |
+| **Alphabet** | GOOGL | **Week of Jul 27 (exp. ~Jul 28)** | Q2 2026 | Search growth; YouTube ads; Cloud (Q1: +63%); FY27 capex guide; antitrust/remedies commentary |
+| **Meta Platforms** | META | **Jul 29, 2026 AMC (confirmed)** | Q2 2026 | Ad revenue (Q1: +33%); ad pricing; capex guide ($125–145B); Anthropic/cloud deal; Llama/Muse monetization |
+| **Electronic Arts** | EA | **Aug 6, 2026** | Q1 FY2027 | Live services; sports franchises; pipeline — stock at highs |
+| **Disney** | DIS | **Aug 7, 2026** | Q3 FY2026 | Streaming subs; parks; ESPN strategy; any NFLX-read-across |
+| **Take-Two** | TTWO | **Aug 13, 2026** | Q1 FY2027 | GTA VI pre-orders/timing; Zynga |
 
-**Marky's Binary Event Read:** GOOGL (Jul 29) is the most consequential report for the sector. The market wants to see: (1) Search revenue growth above 12%, (2) YouTube ad recovery, (3) Cloud growth above 28%, (4) AI monetization metrics, (5) no bad news on the antitrust front. If GOOGL delivers, the stock breaks above $408 and carries XLC with it. If Search growth slows, the stock drops 10%+. META (Jul 30) is the AI test — the market wants to see ad revenue above $40B and AI ROI evidence. If META's AI investments are not paying off, the stock drops 15%+. NFLX (Jul 17) is the streaming test — subscriber adds above 3M would confirm the turnaround. If subscriber growth stalls, the stock drops 10%+.
+**Marky's Binary Event Read:** The double-header is the quarter. GOOGL (~Jul 28) and META (Jul 29 AMC) arrive back-to-back with the sector sitting on $110 support and both stocks 15–19% off their highs — coiled. For GOOGL: Search growth >+12%, Cloud >+30%, and no new remedies bombshells; miss any and $320 opens up. For META: ad growth >+15% and capex discipline; the Anthropic deal rumor needs confirmation — a signed $10B cloud contract reframes the whole capex debate and sends the stock back toward $700+. Asymmetric risk both ways, which is why I want no broad XLC exposure into the prints — only defined-risk trades after the dust settles. Telecom week (VZ/T/TMUS/CHTR, Jul 22–25) is the appetizer: watch whether wireless adds confirm TMUS is still eating the incumbents' lunch.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Ad cycle turns up → META and GOOGL revenue beats → stocks rally 20%+
-- AI monetizes faster than expected → GOOGL Gemini/META Llama generate billions → sector re-rates
-- Fed cuts 50–75 bps → lower discount rates = higher multiples for growth stocks
-- GTA VI is the biggest game launch ever → TTWO rallies → gaming sector gets a lift
-- T-Mobile continues taking share → wireless price war ends → telecom margins expand
+- GOOGL/META both beat Jul 28–29 → sector re-rates, XLC retakes $115 → then $119.71
+- Soft CPI/PPI streak continues → September cut odds revive → 23–28x multiples expand
+- Meta signs the Anthropic compute deal → capex narrative flips from cost to revenue → META back toward $700+
+- Ad spend forecasts hold ~+7% → Q3 platform revenue confirms the cycle
+- Telecom prints stable adds and covered dividends → yield bid returns with the 10Y stalled
 
 ### 🔴 Bear Case
-- Recession → corporate ad budgets cut 20% → META and GOOGL revenue miss → sector drops 15%+
-- DOJ forces Google to divest Chrome → search monetization collapses → GOOGL drops 30%+
-- EU bans Meta's ad targeting → ROAS collapses → META ad revenue drops → stock drops 25%+
-- Streaming price wars intensify → Disney+, Max, Paramount+ cut prices → no one makes money
-- Wireless price war escalates → ARPU drops → T, VZ, TMUS margins compress
+- Iran escalation → oil spike → H2 ad budgets trimmed → the sector's core thesis breaks
+- The Fed actually hikes (9/18 already want one) → 10Y >4.75% → platform P/Es compress 20%+
+- GOOGL or META misses → XLC loses $110 → 200D ($108.50) → $106 → $104.33
+- NFLX contagion: DIS (Aug 7) confirms the streaming growth ceiling → whole media complex reprices lower
+- D.C. Circuit or E.D. Va. drops a structural remedy (Chrome / AdX divestiture) → GOOGL -20%-type event
 
 ### ⚠️ The Wild Card
-The **AI search displacement** is the wild card. If AI chatbots (ChatGPT, Gemini, Claude) replace traditional search, Google's $175B Search business is at risk. The market is pricing Google as if Search is a permanent monopoly. But if users start asking AI instead of Googling, the ad model breaks. This is a 5–10 year risk, not a 2026 risk. But it is existential. If AI search reaches 20% market share, Google's P/E compresses from 28x to 15x. That is a 45% drop.
+**The ad-crown flip accelerates.** eMarketer now projects Meta over Google in 2026 global net ad revenue ($243.5B vs. $239.5B). If the Q2 prints confirm the crossover is happening *ahead of schedule* — Meta compounding at 25–33% while Search grinds at ~12% — the market will start pricing a structural reallocation away from search-intent advertising toward AI-driven social/video ads. That repricing cuts both ways inside XLC: it lifts the sector's largest weight (META, ~22%) while pressuring its second (~16%). The ETF could stay flat while its internal hierarchy inverts — the ultimate stock-picker's tape. The Jul 28–29 window is when we find out.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Communication Services is a barbell sector. The digital platforms are growth stocks driven by the ad cycle and AI investment. The telecoms are yield plays with no growth. The sector is down 2.45% YTD while SPY is up 15% — massive underperformance. But META and GOOGL are strong. The ad cycle may be turning. The AI investment cycle is massive but uncertain. The regulatory risk is the sleeper threat — a Chrome divestiture or ad-targeting ban would be existential. I am not making a broad sector bet on XLC. I am making a bet on the ad cycle and AI monetization. But I am cautious. The regulatory clouds are darkening."*
+**Ophelia:** *"The regime shifted this week — mark it. The Fed's dots now show nine of eighteen officials wanting a HIKE, Warsh kept the door open Thursday, the 10Y touched 4.62%, and the US is striking Iranian targets while oil climbs. My ad-cycle thesis had one core assumption: corporate confidence stays intact. An oil shock plus a hawkish Fed is exactly how that assumption dies. I am not abandoning the platforms — the ad market is still growing ~7% and Meta is about to take Google's crown — but I am holding cash and waiting for Jul 28–29. If both titans deliver, this week was a buying dip. If either stumbles on ad revenue, the H2 ad-budget-cut narrative becomes consensus, and XLC visits $104. The tide just went choppy. Swim accordingly."*
 
-**Marky:** *"The tape is painting a recovery pattern. XLC is up 1.73% today. META and GOOGL are leading — both up 3%+. The 50D MA at $111.50 is holding. The RSI is around 55 — not overbought. Volume is elevated. This looks like accumulation, not distribution. But the sector is still 2.45% down YTD. The relative strength is terrible. I will not buy XLC as an ETF — it owns too many losers (NFLX, DIS, CHTR). I might buy META on a pullback to $650 or GOOGL on a pullback to $350. But the broad sector? No. The breadth is rotten. Three stocks carry the fund. The rest are dead weight. I am hunting individual setups, not sector exposure."*
+**Marky:** *"The recovery pattern is on probation. We lost the 50D Friday on the NFLX gap — $110.65, sitting right on the $110 shelf. My levels are clean: above $112 the recovery resumes and $115 is the target; below $110 on volume, the 200D at $108.50 gets tested — and if that goes, I am wrong about the whole bounce and it is $106–$104.33. NFLX at a 52-week low below every moving average is untouchable until it bases — do not catch that knife; let the $27B buyback find the floor. The trade I actually like: wait for Jul 28–29, let GOOGL and META gap wherever they gap, and trade the confirmed direction. Into a binary double-header with the Fed and Iran in the background, flat is a position."*
 
-**Cecil:** *"T at 7.2x P/E and 5.22% yield is interesting. VZ at 10.4x P/E and 6.66% yield is even more interesting. These are the only names in the sector that fit my garden. But the debt loads are massive — AT&T has $120B+ in debt. The cash flow is stable but not growing. Rule 2 applies: verify the cash flow. The cash flow is there, but it is pledged to debt service. CHTR at 3.5x P/E is absurdly cheap. But the cable business is in structural decline. Is this deep value or a value trap? I am leaning toward value trap. META at 24.8x P/E is a growth stock. GOOGL at 28.3x P/E is a quality compounder but expensive. The telecoms are the only dividend plays. I will watch from a safe distance. The garden does not grow social media likes."*
+**Cecil:** *"Everyone is staring at the platforms; I am watching the boring part of the garden. Verizon yields 6.66% — 210 basis points over the 10Y — and reports Wednesday. AT&T yields 5.22% with the dividend covered and reports Thursday. If the Fed stays hawkish, those yields stay competitive against a market priced for perfection; if the economy rolls over, dividend payers are where capital hides. As for Netflix — a record $4.7B buyback at 22x earnings with $12.5B of free cash flow targeted this year is the first time that name has ever appeared at the edge of my radar. Not yet: the content treadmill spends $20B a year, and I do not buy businesses that must outspend their rivals forever just to stand still. But if it visits the low $60s, even an old gardener reads the filings. T and VZ remain the only names that fit the garden today — next week's earnings will verify the cash flow. Rule 2, always."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLC, META, GOOGL, GOOG, NFLX, T, VZ, TMUS, DIS, CHTR, EA, TTWO, WBD live data
-- MAGNA Global: Global ad spend forecasts, digital ad share data
-- eMarketer/Insider Intelligence: Ad revenue estimates, platform market share
-- Federal Communications Commission (FCC): Wireless spectrum data, subscriber counts
-- Department of Justice (DOJ): Antitrust case filings, trial updates
-- European Commission: Digital Markets Act enforcement updates
-- NPD/Circana: Gaming industry sales data, hardware/software trends
-- Streaming Wars Database: Subscriber counts, ARPU, content spend by platform
+- Yahoo Finance / market data feeds: XLC, META, GOOGL, NFLX, TMUS, DIS, CHTR, TTWO (Fri 7/17 close); T, VZ, EA quotes carried from 7/15 (feed gap)
+- Netflix Q2 2026 shareholder letter (Jul 16, 2026); Fortune CFO Daily (Jul 17, 2026); Investopedia markets wrap (Jul 17, 2026); IBD NFLX earnings coverage
+- eMarketer global ad revenue forecast — Meta > Google 2026 crossover (Apr 2026); GroupM TYNY (~$1.1T, +7.7%); MAGNA global ad forecast (~$1.02T, +6.7%)
+- Federal Reserve June 2026 dot plot; Chair Warsh congressional testimony (Jul 16, 2026); June CPI/PPI prints
+- DOJ v. Google search remedies — D.C. Circuit appeal docket; E.D. Va. ad-tech remedies proceedings (Judge Brinkema)
+- Company IR: Meta Q2 2026 earnings date confirmation (Jul 29 AMC); HSBC META upgrade note (Anthropic compute deal)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-07-15*
-*Next update: Every Saturday 11:49 AM ET*
-*Data sources: Yahoo Finance, MAGNA, eMarketer, FCC, market data feeds*
+*Last updated by Saturday Research Crew: 2026-07-18*
+*Next update: Every Saturday 11:39 AM ET*
+*Data sources: Yahoo Finance, MAGNA, GroupM, eMarketer, company filings, market data feeds*
