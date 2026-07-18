@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $56.95 | — | — |
+| Price | $57.68 | — | — |
 | 52W Range | $42.05 – $63.46 | — | — |
-| AUM | ~$18–20B | — | — |
-| YTD Return | ~+8–12% | — | — |
-| 1Y Return | ~+15–20% | — | — |
-| P/E Ratio | ~21.2 | — | — |
+| AUM | ~$35.7B | — | — |
+| YTD Return | ~+30% | — | — |
+| 1Y Return | ~+36–38% | — | — |
+| P/E Ratio | ~21.4 | — | — |
 | Dividend Yield | ~2.85% | — | — |
-| Beta | ~0.9–1.1 | — | — |
+| Beta | ~0.0 (3Y, Yahoo — energy has decoupled from SPY) | — | — |
 | Total Holdings | 23 | — | — |
-| Avg Daily Volume | ~32.6M shares | — | — |
+| Avg Daily Volume | ~36.0M shares (Fri: 31.4M) | — | — |
 
-**Marky Tape Read:** XLE has been consolidating in a $55–$60 range after the March rally. The 52W high of $63.46 is the key level to watch. Relative to SPY, energy has been outperforming since the Iran escalation began. But volume on the recent rally is declining — a classic exhaustion signal. The sector is a geopolitical trade, not a technical one. When the war headline fades, the bid fades.
+**Marky Tape Read:** XLE closed the week at $57.68, up **+5.2% on the week** — the biggest weekly gain since the March rally. The ETF reclaimed its 50D MA (~$56.52) on Monday and never looked back. RSI-14 is now ~62 — momentum is strong but not yet overbought. Friday's volume (31.4M) came in below the 36M average on an up day, which is the one yellow flag: the rally is headline-driven, not accumulation-driven. Next test: the 20-day high at $58.12, then the $59.50–$60.00 ceiling. Above $60, the 52W high of $63.46 comes into play.
 
-**Ophelia Macro Read:** DXY has broken below 101 to **100.80** — this removes the dollar headwind for commodities. The Iran escalation and Strait of Hormuz tensions are providing a **geopolitical bid** on oil. WTI at $79.62 is a step-function premium, not a gradual supply-demand rebalancing. The Fed is trapped by oil — if crude breaks $90, the hiking narrative returns. This is the tightrope energy investors are walking.
+**Ophelia Macro Read:** The macro picture flipped violently this week. WTI settled at **$82.49** — up roughly **$8.80/bbl (+12%) on the week** — after U.S.–Iran hostilities intensified for a sixth consecutive night and Iran floated closing the Bab el-Mandeb Strait. DXY is pinned near **100.8–101**, so the dollar is neither helping nor hurting. The 10Y pushed to a two-month high of **4.62%** as the oil spike fed inflation expectations — and the Fed, already on hold at 3.50–3.75% with a hawkish dot plot, now has >60% odds of a September hike priced in. Oil is now the Fed's problem. That is the tightrope.
 
 ---
 
@@ -31,22 +31,24 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | XOM | ExxonMobil | ~22% | $145.09 | +0.40% | $176.41 | $105.53 | 2.85% | 24.3 | ⚡ |
-| 2 | CVX | Chevron | ~18% | $181.76 | -0.24% | $214.71 | $146.49 | 3.91% | 31.7 | ⚡ |
-| 3 | COP | ConocoPhillips | ~7% | $111.87 | -0.87% | $135.87 | $85.57 | 2.98% | 19.1 | ⚠️ |
-| 4 | EOG | EOG Resources | ~5% | $138.01 | -1.15% | $151.87 | $101.59 | 2.92% | 13.7 | ⚠️ |
-| 5 | OXY | Occidental Petroleum | ~5% | $54.57 | -0.44% | $67.45 | $38.80 | 1.90% | 73.7 | ⚠️ |
-| 6 | SLB | SLB | ~4% | $47.54 | +0.38% | $58.82 | $31.64 | 2.49% | 20.9 | ⚡ |
-| 7 | MPC | Marathon Petroleum | ~3% | $303.40 | +2.20% | $303.69 | $158.00 | 1.32% | 19.5 | 🔥 |
-| 8 | VLO | Valero Energy | ~3% | $301.43 | +1.91% | $301.43 | $130.78 | 1.62% | 21.6 | 🔥 |
-| 9 | PSX | Phillips 66 | ~2% | $201.45 | +1.59% | $201.66 | $118.07 | 2.56% | 19.6 | 🔥 |
+| 1 | XOM | ExxonMobil | ~22% | $147.36 | +0.97% | $176.41 | $105.53 | 2.80% | 24.8 | ⚡ |
+| 2 | CVX | Chevron | ~18% | $187.38 | +1.91% | $214.71 | $146.49 | 3.80% | 32.7 | ⚡ |
+| 3 | COP | ConocoPhillips | ~7% | $114.71 | +1.66% | $135.87 | $85.57 | 2.93% | 19.4 | ⚡ |
+| 4 | EOG | EOG Resources | ~5% | $139.89 | +1.78% | $151.87 | $101.59 | 2.92% | 13.8 | ⚡ |
+| 5 | OXY | Occidental Petroleum | ~5% | $54.86 | +2.26% | $67.45 | $38.80 | 1.90% | 74.1 | ⚡ |
+| 6 | SLB | SLB | ~4% | $46.99 | -0.19% | $58.82 | $31.64 | 2.51% | 20.7 | ⚠️ |
+| 7 | MPC | Marathon Petroleum | ~3% | $312.60 | +2.21% | $313.15 | $158.00 | 1.25% | 20.6 | 🔥 |
+| 8 | VLO | Valero Energy | ~3% | $309.65 | +3.13% | $309.90 | $130.78 | 1.55% | 22.6 | 🔥 |
+| 9 | PSX | Phillips 66 | ~2% | $206.86 | +2.75% | $207.14 | $118.07 | 2.46% | 19.9 | 🔥 |
 | 10 | WMB | Williams Cos | ~2% | — | — | — | — | — | — | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution
 
-**Sector Split:** XLE is dominated by two giants — XOM (~22%) and CVX (~18%) = ~40% of the fund. The rest is a mix of E&P (COP, EOG, OXY), services (SLB), and refiners (MPC, VLO, PSX). The **refiners are ripping** — MPC hit a new 52W high today, VLO did too. This is a **crack spread** story: high crude prices + strong demand = fat refining margins. The E&P names are lagging — profit taking after the March rally, or concern that $80 oil is not sustainable.
+**Sector Split:** This week the rally broadened. The refiners are still the leaders — **MPC ($313.15), VLO ($309.90), and PSX ($207.14) all printed fresh 52-week highs on Friday** — but unlike last week, the E&P names and the integrateds came along: OXY +2.26%, CVX +1.91%, EOG +1.78%, COP +1.66%, XOM +0.97%. When crude jumps $8.80 in a week, even the pumpers can't sulk. The only laggard was SLB (-0.19%), which reports Q2 next Friday — the market is waiting for the print before paying for the services recovery.
 
-**Cecil Fundamental Read:** CVX at 3.91% yield with a 31.7x P/E is expensive for an oil major. XOM at 24.3x P/E is not cheap either. The refiners (MPC, VLO, PSX) have run so hard that their P/Es are now in the 19–21x range — not the deep value they were 12 months ago. EOG at 13.7x P/E with a 2.92% yield is the only name that looks remotely like value. But EOG is a pure E&P play — cyclical, commodity-exposed, and DXY is at 100.80 (a tailwind for now, but a snapback above 101 would hurt). I don't plant in cyclicals. Oil is a commodity, not a compounder.
+**Analyst Targets (mean, Yahoo):** XOM $166.90 | CVX $214.00 | COP $140.64 | EOG $157.33 | OXY $64.52 | SLB $60.97 | MPC $290.65 | VLO $276.33 | PSX $198.44. **Note:** all three refiners now trade *above* their mean analyst targets — the sell-side is chasing the crack-spread rally, not leading it. Noteworthy housekeeping: Exxon Mobil Corporation officially became **ExxonMobil Holdings Corporation** on Jul 17 — ticker unchanged, thesis unchanged.
+
+**Cecil Fundamental Read:** CVX at 32.7x trailing earnings is priced like a growth stock, not an oil major — the 3.80% yield is the only thing keeping it honest. XOM at 24.8x with a 2.80% yield is full. The refiners (MPC 20.6x, VLO 22.6x, PSX 19.9x) now trade *above* their own analyst targets — when the sell-side is behind the price, the easy money has been made. EOG at 13.8x with a 2.92% yield remains the only name approaching value, and it just went ex-dividend ($1.02) on Jul 17. But EOG is a pure commodity call. I do not plant in cyclicals — especially not after a +12% weekly spike in the underlying commodity. Spikes are for selling, not sowing.
 
 ---
 
@@ -54,18 +56,19 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $63.46 | Prior bull peak — needs geopolitical escalation or oil >$90 to breach |
+| 52W High | $63.46 | Prior bull peak — needs Hormuz closure or oil >$95 to breach |
 | Near Resistance | $59.50–$60.00 | Consolidation ceiling from April–May |
-| 50-Day MA | ~$57.80 | **Key dynamic level** — XLE is currently below it |
-| Current Price | $56.95 | — |
-| 200-Day MA | ~$54.20 | Long-term trend support — bullish above |
+| Immediate Resistance | $58.12 | 20-day high — Friday's rally stopped just short ($58.115 intraday) |
+| Current Price | $57.68 | — |
+| 50-Day MA | ~$56.52 | **Reclaimed Monday** — now first dynamic support |
 | Major Support | $55.00 | Previous breakout zone from March |
+| 200-Day MA | ~$51.88 | Long-term trend support — firmly bullish above |
 | Deep Support | $50.00 | Post-escalation consolidation floor |
-| Structural Low | $42.05 | March 2025 lows — 52W bottom |
+| Structural Low | $42.05 | 52W bottom |
 
-**Marky Setup Assessment:** XLE is below its 50D MA (~$57.80) but well above its 200D MA (~$54.20). The RSI is likely in the 45–50 range — neutral, not oversold. The declining volume on the rally from $42 to $63 is a **distribution pattern** — smart money is selling into geopolitical headlines. The refiners (MPC, VLO, PSX) are making new highs on their own momentum, but the broad sector is not confirming. This is a **stock-picker's market within the sector**, not a broad energy rally.
+**Marky Setup Assessment:** XLE is back above the 50D MA (~$56.52) and comfortably above the 200D (~$51.88). RSI-14 ~62 — bullish, with room before overbought. The weekly candle is a near-marubozu: opened ~$55, closed $57.68, four green days out of five. The concern is volume: Friday's 31.4M was below the 36M average. Geopolitical gaps fade; accumulation trends persist. Right now this is a gap, not yet a trend. **Confirmation trigger:** a daily close above $58.12 on expanding volume opens $60, then $63.46. **Failure trigger:** lose the 50D at $56.52 and the whole week's gain is a war-premium rental.
 
-**Key divergence:** Refiners are breaking out (MPC new 52W high). E&P is pulling back (EOG -1.15%, COP -0.87%). Services (SLB) is flat. This is not a unified sector move — it's a **refining margin** story. The crack spread is the trade, not the oil price.
+**Key divergence:** Last week's divergence resolved *upward*. Refiners kept making new highs (MPC, VLO, PSX all Friday), but this time E&P and integrateds joined the move. The only holdout is services — SLB was the sole red name on Friday ahead of its Jul 24 earnings. If SLB beats and guides up, the last piece of the sector confirms.
 
 ---
 
@@ -73,18 +76,19 @@
 
 | Factor | Level | Implication for XLE |
 |---|---|---|
-| WTI Crude | $79.62 (+0.35%) | Geopolitical bid, not supply-demand. Below $80 = not a panic. |
-| Brent Crude | ~$83.50 | Iran premium priced in ~$5–$8/bbl. If Hormuz closes, add $20+. |
-| Natural Gas | $2.92 (+0.65%) | Weak. Oversupply in U.S. LNG market. Not a driver. |
-| DXY | 100.80 (-0.12%) | **Below 101!** Commodity headwind removed. Tailwind for oil. |
-| 10Y Treasury | 4.58% (-0.52 bps) | Restrictive. Rate-sensitive sectors (utilities, REITs) feel it. Energy less so. |
-| Fed Funds | 3.50–3.75% (on hold) | If oil breaks $90, Fed hiking narrative returns. Bad for all risk assets. |
-| OPEC+ | Production cuts extended | Saudi/Russia holding ~2.2M bpd offline. Floor under oil. |
-| U.S. SPR | ~360M barrels (lowest since 1983) | Limited ability to release reserves. Less buffer against supply shock. |
-| Iran / Hormuz | Escalation ongoing | Step-function risk. Any closure = immediate oil spike. |
-| Global Demand | IEA: 103.2M bpd 2026E | Softening but not collapsing. China demand is the swing factor. |
+| WTI Crude | $82.49 (+~12% wk) | War premium compounding. Settled at the week's high — no fade yet. |
+| Brent Crude | ~$85.28 (+~12% wk) | Third straight weekly gain. Hormuz/Bab el-Mandeb premium building. |
+| Natural Gas | $2.91 (~flat wk) | Oversupplied U.S. market ignores the war. Not a driver. |
+| DXY | ~100.8–101 | Sideways. Oil is rallying *without* dollar help — pure risk premium. |
+| 10Y Treasury | ~4.55–4.62% (2-mo high) | Oil spike feeding inflation expectations. Headwind building for all equities. |
+| Fed Funds | 3.50–3.75% (hawkish hold) | Sept hike odds >60%. Jul 29 FOMC + Chair Warsh. $90 oil = hiking narrative returns. |
+| OPEC+ | +188k bpd approved for Aug (Jul 5 mtg) | 4th+ straight monthly unwind of voluntary cuts. Rystad: physical impact ~zero while Hormuz is disrupted — paper barrels. Next mtg Aug 2. |
+| Russia Supply | ~600k bpd below quota | Drone attacks on infrastructure are quietly tightening supply. |
+| U.S. SPR | ~360M barrels (lowest since 1983) | Refill cycle expected to add ~506k bpd of demand in Q4 2026 — a stealth price floor. No buffer if Hormuz fully closes. |
+| Iran / Hormuz | **Escalating** | U.S. strikes on Iran's southern coast for a 6th straight night; Iran retaliating on U.S. bases (Jordan); Houthis told to prepare Bab el-Mandeb closure. Two chokepoints now in play. |
+| Global Demand | IEA: ~103M bpd 2026E | IEA's Birol warns oil security could worsen if tensions persist. China still the swing factor. |
 
-**Ophelia Verdict:** Energy is a **short-term beneficiary of geopolitical overlay**. The DXY breaking below 101 removes the dollar headwind. The Iran escalation provides the oil bid. OPEC+ cuts provide the floor. But the U.S. SPR is at 40-year lows — there is no safety net if Hormuz closes. The risk is asymmetric: if the conflict de-escalates, oil could drop $10–$15 quickly. If it escalates, $100+ is not unrealistic. I do not chase energy into geopolitical headlines. I will scale in on whispers, scale out on consensus. The headline is the exit signal, not the entry.
+**Ophelia Verdict:** This is no longer a whisper — it is a headline, and the headline is screaming. WTI +12% in a week, two chokepoints threatened (Hormuz *and* Bab el-Mandeb), OPEC+ adding paper barrels that cannot reach the market, Russia underproducing its quota, and the SPR too empty to matter. The asymmetry has sharpened: escalation path → $95–$100+; de-escalation path → $68–$72, fast. The Fed angle is the sleeper risk — every dollar on crude is a basis point on rate-hike odds. I said the headline is the exit signal. We are now living in the headline. I am not chasing; I am tightening stops on anything energy-adjacent and keeping my 45% cash. The tide is strong, but tides turn.
 
 ---
 
@@ -92,19 +96,17 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Refiner Rally vs. The E&P Stall
+### This Week's Story: The War Premium Goes Vertical
 
-Energy is not moving as a unified sector. The headline is "Iran escalation = oil bid = energy rally." But the tape is telling a more nuanced story.
+Last week the energy story was a two-speed sector: refiners ripping, everything else waiting. This week the waiting ended. WTI crude settled at **$82.49**, up roughly **$8.80 a barrel (+12%)** — its biggest weekly gain of the year — and XLE followed with a **+5.2%** week, reclaiming its 50-day moving average and closing at $57.68, a whisper below the 20-day high.
 
-**The Refiner Complex (MPC, VLO, PSX) is on fire.** Marathon Petroleum hit a new 52-week high today. Valero did too. Phillips 66 is within inches of its high. This is not an oil price story — it's a **crack spread** story. Refining margins are fat because crude is elevated but gasoline/diesel demand is holding. The U.S. refinery utilization rate is ~93% — near capacity. When refiners can't produce more, margins expand. The trade is: demand is sticky, supply is constrained, and the middleman is printing money.
+The catalyst was kinetic. U.S. strikes on military targets near Iran's southern coast ran for a sixth consecutive night; Iran answered with missiles and drones aimed at U.S. bases in Jordan. Then came the escalation that matters for markets: reports that Tehran instructed the Houthis to prepare a possible closure of the **Bab el-Mandeb Strait** — the Red Sea's southern gate. With the Strait of Hormuz already disrupted, traders are now pricing the nightmare scenario of *both* chokepoints compromised at once. Nearly a fifth of global oil consumption transits Hormuz; Bab el-Mandeb is the shortcut around Africa nobody wants to lose.
 
-**The E&P Complex (COP, EOG, OXY) is stalling.** ConocoPhillips down 0.87%. EOG down 1.15%. Occidental down 0.44%. These are the companies that actually pump the oil. Their stocks are not responding to the geopolitical bid because investors are asking: *what happens to oil if the Iran situation resolves?* The answer is $65–$70 WTI. At that level, E&P margins compress. The market is pricing the fade before the fade happens.
+**Every sub-sector caught the bid this time.** The refiners kept leading — MPC, VLO, and PSX all printed fresh 52-week highs on Friday as crack spreads fattened on the crude spike — but the E&P names (OXY +2.3%, EOG +1.8%) and the integrateds (CVX +1.9%, XOM +1.0%) finally joined. The only red name was SLB, which reports Q2 on Jul 24 and is being judged, not bought, ahead of the print.
 
-**The Giants (XOM, CVX) are treading water.** Exxon up 0.40%, Chevron down 0.24%. These are integrated — they pump, refine, and sell. The integrated model smooths volatility. But neither stock is breaking out. XOM at $145 is 18% below its 52W high. CVX at $182 is 15% below its high. The market is saying: *these are safe, but they are not exciting.*
+**The supply side offered no relief.** OPEC+ approved another +188k bpd for August, but with Hormuz flows impaired those are paper barrels. Russia is already ~600k bpd below its quota thanks to drone attacks on its infrastructure. And the SPR — 360M barrels, a 40-year low — is a buyer of oil (refill demand ~506k bpd by Q4), not a seller.
 
-**The Services (SLB) is flat.** At $47.54, SLB is 19% below its 52W high. The services companies need E&P capex to recover. E&P is not spending because they are uncertain about the oil price. This is a lagging indicator — when SLB breaks above $55, it means E&P is spending again. That hasn't happened yet.
-
-**The Bottom Line:** Energy is a **two-speed sector** right now. Refiners are in a cyclical sweet spot. E&P is in a geopolitical holding pattern. The integrateds are boring. The services are waiting. The headline says "energy is rallying." The tape says "refiners are rallying; everything else is waiting for clarity."
+**The Bottom Line:** The market is no longer asking "is there a war premium?" — it's asking "how much?" The answer this week was twelve percent. What the war giveth in a week, peace can taketh away in a session.
 
 ---
 
@@ -112,16 +114,17 @@ Energy is not moving as a unified sector. The headline is "Iran escalation = oil
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **ExxonMobil** | XOM | **Jul 30, 2026** | Q2 2026 | Production growth; Permian output; capital return plan |
-| **Chevron** | CVX | **Aug 1, 2026** | Q2 2026 | Tengiz expansion update; Permian capex; dividend raise? |
-| **Marathon Petroleum** | MPC | **Jul 29, 2026** | Q2 2026 | Refining margins; crack spread; buyback pace |
-| **Valero Energy** | VLO | **Jul 25, 2026** | Q2 2026 | Renewable diesel margins; refining throughput |
-| **EOG Resources** | EOG | **Aug 5, 2026** | Q2 2026 | Permian well productivity; free cash flow; dividend hike? |
-| **Occidental Petroleum** | OXY | **Aug 6, 2026** | Q2 2026 | Permian production; debt reduction; Buffett buying? |
-| **ConocoPhillips** | COP | **Aug 3, 2026** | Q2 2026 | Alaska/Montney production; buyback execution |
-| **SLB** | SLB | **Jul 18, 2026** | Q2 2026 | International revenue; digital sales; margin expansion |
+| **SLB** | SLB | **Jul 24, 2026** | Q2 2026 | International revenue; E&P capex signals; margin expansion |
+| **Valero Energy** | VLO | **Jul 30, 2026** | Q2 2026 | Crack spread capture; throughput; renewable diesel margins |
+| **ExxonMobil** | XOM | **Jul 31, 2026** | Q2 2026 | Production growth; Permian output; capital return plan |
+| **Chevron** | CVX | **Jul 31, 2026** | Q2 2026 | Tengiz expansion update; Permian capex; dividend raise? |
+| **Marathon Petroleum** | MPC | **Aug 4, 2026** | Q2 2026 | Refining margins; buyback pace; stock trades above target — beat needed |
+| **EOG Resources** | EOG | **Aug 4, 2026** | Q2 2026 | Permian well productivity; free cash flow; dividend hike? |
+| **Phillips 66** | PSX | **Aug 5, 2026** | Q2 2026 | Refining + midstream mix; chemicals drag |
+| **Occidental Petroleum** | OXY | **Aug 5, 2026** | Q2 2026 | Permian production; debt reduction; Buffett buying? |
+| **ConocoPhillips** | COP | **Aug 6, 2026** | Q2 2026 | Alaska/Montney production; buyback execution |
 
-**Marky's Binary Event Read:** SLB (Jul 18) is the canary. If SLB beats and guides up, it means E&P is spending again — the whole sector gets a lift. If SLB misses, the E&P recovery is delayed. XOM (Jul 30) and CVX (Aug 1) are the heavyweights. The market wants to see production growth in the Permian and capital return discipline. MPC (Jul 29) is the refiner — the market already expects blowout margins. The risk is if margins have peaked and the guidance is cautious. EOG (Aug 5) is the pure-play E&P test — if EOG can't beat at $80 oil, no E&P name can.
+**Marky's Binary Event Read:** The calendar just got a lot more dangerous. SLB (Jul 24) is the opener — after lagging all week, a beat on international activity could ignite the last unconfirmed sub-sector. Then the refiner gauntlet: VLO (Jul 30) and MPC (Aug 4) report with their stocks trading **above mean analyst targets** — anything short of blowout margins and the air comes out fast. XOM and CVX (both Jul 31) land the same morning: two integrated giants, one tape, maximum gap risk. The E&P trio (EOG, OXY, COP, Aug 4–6) reports into an $82-oil tape — the market will forgive nothing less than raised FCF guidance. Note for the calendar: all dates refreshed against Yahoo earnings timestamps this week — VLO moved up to Jul 30, MPC to Aug 4, PSX to Aug 5.
 
 ---
 
@@ -166,6 +169,6 @@ The U.S. Strategic Petroleum Reserve is at **360M barrels — the lowest since 1
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-07-15*
+*Last updated by Saturday Research Crew: 2026-07-18*
 *Next update: Every Saturday 10:19 AM ET*
 *Data sources: Yahoo Finance, EIA, IEA, OPEC+, market data feeds*
