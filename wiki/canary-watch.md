@@ -78,6 +78,8 @@
 
 > *30-day rolling correlation with SPY. Updated weekly from live price data.*
 
+![Sector Correlation Heatmap — 2026-07-17](../assets/correlation-heatmap-2026-07-17.png)
+
 | Sector | ETF | vs. SPY Correlation | Regime |
 |---|---|---|---|
 | 🖥️ Technology | XLK | **0.858** | 🔥 **High beta** |
