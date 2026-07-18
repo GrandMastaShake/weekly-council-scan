@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $115.90 | — | — |
+| Price | $115.44 | $115.49 | -0.04% |
 | 52W Range | $105.19 – $125.01 | — | — |
 | AUM | ~$18–22B | — | — |
-| YTD Return | **-1.36%** | — | — |
-| 1Y Return | ~+6–8% | — | — |
-| P/E Ratio | ~29.6 | — | — |
+| YTD Return | **≈ -2.9%** (est.) | -1.36% | -1.5 pp |
+| 1Y Return | ~+7% (est.) | — | — |
+| P/E Ratio | 25.9 (FY1, SSGA) | — | — |
 | Dividend Yield | ~0.77% | — | — |
 | Beta | ~1.0–1.1 | — | — |
-| Total Holdings | 54 | — | — |
-| Avg Daily Volume | ~6.7M shares | — | — |
+| Total Holdings | 47 | 54 | — |
+| Avg Daily Volume | ~6.3M shares | — | — |
 
-**Marky Tape Read:** XLY is flat YTD (-1.36%) — the consumer is not spending, and the market knows it. The 52W high of $125.01 is $9.11 away — a meaningful gap. The 50D MA is likely around $116–$117. XLY is currently below it. The 200D MA is around $112. The trend is sideways to slightly down. Volume on today's flat session is normal (~6.7M). The sector is in a **consolidation range** — $112–$117 — waiting for a catalyst. A break above $118 with volume would be the bull signal. A break below $112 targets $108.
+**Marky Tape Read:** XLY closed the week at $115.44, down **-1.54% on the week** ($117.24 → $115.44) and -1.62% on Friday alone — roughly in line with the S&P (-1.6% WTD) and better than the Nasdaq (-2.9%). Friday was a broad risk-off flush: 14 of our 15 tracked holdings closed red. XLY is now below its 50D MA (~$117.00) and sitting on the 200D zone (~$114–115). The consolidation range is intact but the price is pressed against the floor. A weekly close below $113 opens $108. Reclaiming $117.25 (last Friday's close) is step one for the bulls.
 
-**Ophelia Macro Read:** The consumer is the **most important macro variable** right now. Credit card delinquencies are rising (above pre-COVID levels). The personal savings rate is ~3.5% — near historic lows. Real wage growth is slowing. Mortgage rates at ~7% are crushing housing turnover (hurts HD, LOW). Auto loan rates at ~7–8% are crushing vehicle sales (hurts F, TSLA). The 10Y at 4.58% is making everything more expensive. DXY below 101 helps multinationals (AMZN, NKE earn overseas). But the domestic consumer is tapped out. This is the sector most vulnerable to a recession.
+**Ophelia Macro Read:** The data finally stopped deteriorating — and the tape didn't care. June retail sales rose for a fifth straight month (+0.2% MoM, control group +0.5%), UMich sentiment rebounded to 54.4 (highest since February, off May's record-low 44.8), credit card delinquencies are stabilizing (2.80–2.95%), and June housing starts surged +19%. But June CPI stayed hot (~4% YoY), the Fed (now Warsh-led) is stuck at 5.25–5.50% with no 2026 cuts priced, and the U.S.–Iran escalation pushed WTI +4% to $82.15 — the strongest weekly oil gain in months. The consumer was stabilizing. Then the gas pump got expensive again.
 
 ---
 
@@ -31,41 +31,43 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | AMZN | Amazon | ~22% | $247.49 | +0.07% | $278.56 | $196.00 | — | 29.6 | ⚡ |
-| 2 | TSLA | Tesla | ~13% | $396.18 | +0.36% | $498.83 | $297.82 | — | 356.9 | ⚠️ |
-| 3 | HD | Home Depot | ~6% | $337.74 | +0.19% | $426.75 | $289.10 | 2.76% | 23.9 | ⚡ |
-| 4 | MCD | McDonald's | ~4% | $268.94 | -1.35% | $341.75 | $264.53 | 2.73% | 22.5 | ⚡ |
-| 5 | BKNG | Booking Holdings | ~4% | $174.85 | -0.54% | $231.80 | $150.14 | 0.91% | 23.2 | ⚠️ |
-| 6 | LOW | Lowe's | ~3% | $207.68 | 0.00% | $293.06 | $203.40 | 2.41% | 17.5 | ⚡ |
-| 7 | TJX | TJX Companies | ~4% | $150.34 | -0.13% | $170.00 | $119.84 | 1.28% | 29.3 | ⚡ |
-| 8 | NKE | Nike | ~3% | $42.86 | -2.06% | $80.17 | $40.00 | 3.75% | 20.8 | 🔴 |
-| 9 | SBUX | Starbucks | ~3% | $106.17 | -1.09% | $108.88 | $77.99 | 2.31% | 81.7 | ⚠️ |
-| 10 | F | Ford Motor | ~2% | $13.94 | +0.65% | $17.78 | $10.68 | 4.33% | 7.6 | ⚡ |
-| 11 | CMCSA | Comcast | ~3% | $23.19 | -3.25% | $33.76 | $22.13 | **5.51%** | 4.7 | 🔴 |
-| 12 | DIS | Walt Disney | ~3% | $95.87 | -0.14% | $123.40 | $92.19 | 1.56% | 15.4 | ⚡ |
-| 13 | MAR | Marriott | ~2% | $363.19 | +0.09% | $410.98 | $253.76 | 0.80% | 38.0 | ⚡ |
-| 14 | LULU | Lululemon | ~1% | $117.32 | -2.48% | $233.75 | $104.44 | — | 9.7 | 🔴 |
-| 15 | DG | Dollar General | ~1% | $120.14 | -2.67% | $158.23 | $95.11 | 1.91% | 17.5 | 🔴 |
+| 1 | AMZN | Amazon | ~22% | $247.23 | -1.06% | $278.56 | $196.00 | — | ~30 | ⚡ |
+| 2 | TSLA | Tesla | ~13% | $380.84 | -2.61% | $498.83 | $297.82 | — | ~357 | ⚠️ |
+| 3 | HD | Home Depot | ~6% | $338.87 | -2.63% | $426.75 | $289.10 | 2.7% | ~23.5 | ⚠️ |
+| 4 | MCD | McDonald's | ~4% | $267.71 | -2.10% | $341.75 | $264.53 | 2.7% | 22.5 | ⚠️ |
+| 5 | BKNG | Booking Holdings | ~4% | $181.68 | -1.59% | $231.80 | $150.14 | 0.9% | 23.2 | ⚡ |
+| 6 | LOW | Lowe's | ~3% | $208.73 | -3.44% | $293.06 | $203.40 | 2.2% | 17.5 | ⚠️ |
+| 7 | TJX | TJX Companies | ~4% | $154.46 | -0.21% | $170.00 | $119.84 | 1.3% | 29.3 | 🔥 |
+| 8 | NKE | Nike | ~3% | $43.76 | -1.82% | $80.17 | $40.00 | 3.7% | 20.8 | 🔴 |
+| 9 | SBUX | Starbucks | ~3% | $105.49 | -2.66% | **$109.23** | $77.99 | 2.3% | 81.7 | ⚠️ |
+| 10 | F | Ford Motor | ~2% | $14.23 | +0.28% | $17.78 | $10.68 | 4.2% | 7.6 | ⚡ |
+| 11 | CMCSA | Comcast | ~3% | $23.79 | -1.29% | $33.76 | $22.13 | **5.4%** | 4.7 | 🔴 |
+| 12 | DIS | Walt Disney | ~3% | $97.67 | -2.05% | $123.40 | $92.19 | 1.5% | 15.4 | ⚡ |
+| 13 | MAR | Marriott | ~2% | $366.24 | -1.32% | $410.98 | $253.76 | 0.7% | 38.0 | ⚠️ |
+| 14 | LULU | Lululemon | ~1% | $116.33 | -2.07% | $233.75 | $104.44 | — | 9.7 | 🔴 |
+| 15 | DG | Dollar General | ~1% | $125.75 | -1.11% | $158.23 | $95.11 | 1.9% | 17.5 | 🔥 |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 
+**Weekly moves behind the daily table:** DG **+5.7%**, DIS +2.1%, TJX +2.1%, BKNG +1.8%, F +1.6% led. TSLA **-6.6%**, MAR -2.6%, MCD -2.5%, LULU -2.5% lagged. Friday's flush hit everything — only Ford closed green.
+
 **Sector Split:** XLY is dominated by two titans — AMZN (~22%) and TSLA (~13%) = ~35% of the fund. The rest is a **bifurcated mess**:
-- **E-commerce:** AMZN (stable, dominant)
+- **E-commerce:** AMZN (stable, dominant; reports Jul 30)
 - **Home Improvement:** HD, LOW (housing-dependent, rate-sensitive)
-- **Restaurants:** MCD, SBUX (consumer staple in discretionary clothing)
-- **Travel:** BKNG, MAR (post-COVID normalization, business travel recovery)
-- **Apparel:** NKE, LULU, TJX (the consumer is not buying)
-- **Autos:** TSLA, F (EV transition, cyclical)
-- **Media:** CMCSA, DIS (cord-cutting, streaming wars)
-- **Discount Retail:** DG, TJX (trade-down narrative)
+- **Restaurants:** MCD, SBUX (splitting — SBUX made a new 52W high Friday, MCD is 1.2% above its 52W low)
+- **Travel:** BKNG, MAR (holding up; MAR -2.6% this week on profit-taking)
+- **Apparel:** NKE, LULU, TJX (TJX is the exception — value-hunting consumer)
+- **Autos:** TSLA, F (TSLA reports Wednesday; GM reports Tuesday)
+- **Media:** CMCSA, DIS (NFLX -7.5% to a 2-year low on slowing Q3 guidance is a sector warning)
+- **Discount Retail:** DG, TJX (the trade-down bid is real — DG +5.7% this week)
 
-**The Nike Story:** NKE at $42.86, down **47% from its 52W high** ($80.17). The sneaker giant is broken. Revenue growth has stalled. Inventory is bloated. The DTC (direct-to-consumer) pivot is not working. China sales are weak. The 3.75% yield is a consolation prize for a stock that has been cut in half. The market is asking: *is NKE a value stock or a value trap?* At 20.8x P/E, it is not cheap enough to be a value stock. The brand is strong, but the business is broken.
+**The Trade-Down Story (updated):** The consumer is spending — but hunting value. Dollar General ripped +5.7% this week with no single headline catalyst; the bid looks like trade-down rotation plus turnaround momentum, confirmed by the June retail data (general merchandise +0.29% MoM, and NRF card data shows core retail +0.36% MoM with record early back-to-school demand). TJX at +2.1% held green through Friday's flush. The old story — "DG's low-income customer is too stressed to spend" — is being challenged by five straight monthly retail gains. The affluent are still traveling; everyone else is bargain-hunting. Both ends are working. The middle (department stores, full-price apparel) is what's dying.
 
-**The Lululemon Story:** LULU at $117.32, down **50% from its 52W high** ($233.75). The athleisure boom is over. The market is saturated. Competition from Alo Yoga, Vuori, and fast fashion (Zara, H&M) is eating market share. The men's expansion is not working. The 9.7x P/E looks cheap, but earnings are declining. This is a **falling knife** — and Marky does not catch falling knives without a bounce.
+**The Tesla Story:** TSLA fell -6.6% this week to $380.84 — now -13% YTD and -24% below its 52W high. The whole Musk complex is under pressure: SpaceX slipped below its IPO price and dropped another -5% Friday after an aborted Starship test, and merger speculation between the two is swirling. Earnings are **Wednesday, July 22 after the close**, and options price a ±7% move ($365–$416 range). Morgan Stanley lifted its PT to $417 but framed the real debate: *can Robotaxi and Optimus progress fast enough to justify the AI capex cycle?* At ~13% of XLY, Wednesday is the sector's biggest single binary event of the quarter.
 
-**The Comcast Story:** CMCSA at $23.19, down 3.25% today, **31% below 52W high** ($33.76). The yield is **5.51%** and the P/E is **4.7x** — absurdly cheap. But the cable business is in structural decline. Broadband subscriber growth has stalled. Peacock is losing money. The 5.51% yield is a siren song. The business is deteriorating. Is this deep value or a value trap? The market is voting: value trap.
+**The Restaurant Split:** SBUX hit a **new 52W high intraday Friday ($109.23)** before reversing -2.66% to $105.49 — the turnaround (new CEO, menu simplification, labor investment) is being bought, even at 81.7x P/E. MCD went the other way: $267.71 is now just **1.2% above its 52W low** ($264.53). The value-menu war is squeezing McDonald's from both sides — stressed low-income traffic and investors rotating into the SBUX recovery story. Watch MCD's Q2 print (expected late July/early August) for traffic trends.
 
-**Cecil Fundamental Read:** The consumer discretionary sector is a **minefield** for a fundamentalist. TSLA at 356.9x P/E is not an investment — it is a cult. NKE at 20.8x P/E with declining earnings is a value trap. LULU at 9.7x P/E with declining earnings is a falling knife. SBUX at 81.7x P/E is absurd. But there are exceptions: LOW at 17.5x P/E and 2.41% yield is reasonable. F at 7.6x P/E and 4.33% yield is a cyclical — cheap at the bottom, expensive at the top. CMCSA at 4.7x P/E and 5.51% yield is the most interesting. But Rule 2 applies: verify the cash flow. The cash flow is deteriorating as cable subscribers churn. I am not planting in this sector. The consumer is the canary, and the canary is coughing.
+**Cecil Fundamental Read:** The data improved this week, so let me be precise about what changed and what didn't. What changed: retail sales are growing (five straight months), credit card delinquencies are *falling* (2.80–2.95% and charge-offs easing to 3.67–4.01%), and housing starts jumped 19%. What didn't: valuations. TSLA at ~357x trailing earnings is still a cult. SBUX at 81.7x is still hope over arithmetic. NKE and LULU are still falling knives with declining earnings. The honest value pocket is trade-down retail and cyclicals: DG at 17.5x with momentum, TJX at 29.3x (full price, but the best operator), F at 7.6x with a 4.2% yield, LOW at 17.5x with a 2.2% yield. CMCSA at 4.7x and 5.4% yield is still the siren song — cable cash flow is structurally eroding, and Rule 2 says verify the cash flow. I did. It fails.
 
 ---
 
@@ -73,18 +75,20 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $125.01 | Resistance — tested in June, rejected |
-| Near Resistance | $118.00 | Recent consolidation ceiling |
-| 50-Day MA | ~$116.50 | **Key dynamic level** — XLY is hovering just below it |
-| Current Price | $115.90 | — |
-| 200-Day MA | ~$112.00 | Long-term trend support — bullish above |
-| Major Support | $112.00 | Previous breakout zone from March |
+| 52W High | $125.01 | Resistance — untested since spring |
+| Supply Zone | $120.00–$122.20 | Late-May distribution shelf |
+| Near Resistance | $117.25–$118.20 | Last Friday's close + Thursday's high ($118.21) |
+| 50-Day MA | ~$117.00 | **Key dynamic level** — XLY closed below it Friday |
+| Current Price | $115.44 | — |
+| 200-Day MA | ~$114–115 | Long-term trend — XLY is sitting on it |
+| Near Support | $113.35 | June 25 swing low |
+| Major Support | $112.00 | March breakout zone / round number |
 | Deep Support | $108.00 | Post-escalation consolidation floor |
 | Structural Low | $105.19 | 52W bottom — March 2025 lows |
 
-**Marky Setup Assessment:** XLY is in a **tight consolidation range** — $112–$117. The 50D MA at ~$116.50 is the line in the sand. XLY is currently just below it. The RSI is likely around 48–50 — neutral, not oversold. Volume is normal. This is a **wait-and-see** pattern. The sector is waiting for a catalyst: consumer confidence data, retail sales, earnings from AMZN/TSLA/HD. A break above $118 with volume >8M shares would be the bull signal. A break below $112 would target $108. The bias is slightly bearish — the consumer is weak, and the tape knows it.
+**Marky Setup Assessment:** The character of the tape changed this week. XLY ground sideways Monday–Thursday (117.24 → 117.34), then got flushed -1.62% Friday in the broad Iran-driven risk-off. We closed at $115.44 — below the 50D (~$117), right on the 200D (~$114–115), RSI ~43 and falling. This is the third test of the lower half of the range since June. The bulls need to reclaim $117.25 quickly or the path of least resistance is $113.35, then $112. The one constructive detail: Friday's leaders were the defensives inside the sector (DG, TJX, F) — that's rotation, not capitulation. TSLA earnings Wednesday after the close is a ±7% implied coin flip sitting on 13% of the fund. Nobody should be sizing up into that.
 
-**The relative strength story:** XLY is -1.36% YTD vs. SPY at ~+15%. This is the second-worst relative performance of any major sector (only utilities is worse). The market is saying: *the consumer is the weak link.* When the economy slows, discretionary spending is the first to get cut. The market is pricing a consumer recession even if the broader economy is not in recession.
+**The relative strength story:** XLY ≈ -2.9% YTD (est.) vs. SPY up mid-single-to-double digits — still one of the worst relative performers, but the gap stopped widening this week: XLY (-1.54%) beat the Nasdaq (-2.9%) and matched the S&P (-1.6%) during a risk-off week. When the weak sector stops underperforming on red weeks, accumulation is usually happening underneath. One more week of that and the relative-strength trend flips.
 
 ---
 
@@ -92,23 +96,25 @@
 
 | Factor | Level | Implication for XLY |
 |---|---|---|
-| Consumer Confidence | ~95–100 (weak) | Below 100 = consumer is cautious. Discretionary spending contracts. |
-| Personal Savings Rate | ~3.5% | Near historic lows. Consumers have no buffer. |
-| Credit Card Delinquencies | ~3.0% (rising) | Above pre-COVID levels. Consumers are struggling to pay bills. |
-| Real Wage Growth | ~+1.5% YoY | Slowing. Inflation > wage growth = squeezed purchasing power. |
-| Mortgage Rate (30Y) | ~7.0% | Housing turnover crushed. Hurts HD, LOW, home-related spending. |
-| Auto Loan Rate | ~7–8% | Vehicle sales down. Hurts F, TSLA, auto suppliers. |
-| 10Y Treasury | 4.58% | Restrictive. Consumer financing (credit cards, auto, personal loans) expensive. |
-| DXY | 100.80 | Below 101 = tailwind for multinationals (AMZN, NKE, DIS). |
-| Unemployment | ~4.1% | Low but rising. Job losses = discretionary spending cuts. |
-| Retail Sales (ex-auto) | ~+2.0% YoY | Weak. Below inflation = real spending is negative. |
-| Travel Demand | Strong post-COVID | BKNG, MAR benefiting. But business travel lagging. |
+| UMich Sentiment (Jul prelim) | **54.4** (vs 49.5 Jun, 44.8 May record low) | Second straight monthly rebound — highest since Feb. But still ~12% below a year ago, and 70%+ of surveys predated the July 7 Iran escalation. |
+| Retail Sales (June) | **+0.2% MoM** (5th straight gain); control group +0.5%; autos +1.9%; nonstore +1.9% | The consumer is still spending. Smallest gain in 5 months, but May was revised up to +1.0%. |
+| CPI (June) | ~4% YoY area, still elevated | Hot print briefly pushed 10Y to 4.62% Wednesday. No Fed relief coming. |
+| 10Y Treasury | **4.52%** (from 4.58%) | Soft PPI + Warsh testimony unwound the CPI spike; July hike odds cut. Still restrictive. |
+| Fed Funds | 5.25–5.50% | Warsh-led Fed holding; no 2026 cuts priced. Consumer credit stays expensive. |
+| Mortgage Rate (30Y) | **6.55%** (Freddie Mac weekly) | Down from the ~7% peak — housing pressure easing at the margin. |
+| Housing Starts (June) | **+19% to 1.427M annualized** | Surprise surge — builders buying down rates is working. Watch HD/LOW read-throughs. |
+| Credit Card Delinquency | 2.80–2.95% (Q1, **declining**); charge-offs 3.67–4.01% easing | Stabilizing, not deteriorating. Still above pre-COVID — stress is concentrated in low-income/subprime. |
+| Auto Credit | 60+ DPD ~1.54% (5th straight annual rise); loan rates ~7–8% | The one credit pocket still worsening — directly hits F, TSLA, GM demand. |
+| Personal Savings Rate | ~3.5% | Near historic lows. No buffer if the oil shock feeds through. |
+| Unemployment | ~4.2% | Low but drifting up; TransUnion projects ~4.5% by late 2026. |
+| DXY | ~99 (mixed) | Dovish repricing vs. safe-haven bid. Neutral for multinationals. |
+| Oil (WTI) | **$82.15, +4% Friday** — strongest weekly gain in months | **The new wild card.** Iran escalation → gas prices → the sentiment rebound dies at the pump. |
 
-**Ophelia Verdict:** The consumer is the **most vulnerable link** in the economy. Credit card delinquencies are rising above pre-COVID levels. The savings rate is near historic lows. Real wage growth is slowing. Mortgage rates at 7% have frozen housing turnover — Home Depot and Lowe's are feeling it. Auto loan rates at 7–8% have crushed vehicle demand — Ford and Tesla are feeling it. The only bright spots are travel (BKNG, MAR) and e-commerce (AMZN). The market is pricing a **consumer recession** even if the broader economy avoids one. I am not overweight discretionary. I am underweight the consumer. Cash is a position.
+**Ophelia Verdict:** I spent the spring calling the consumer the canary in the coal mine. This week the canary stood up: fifth straight retail sales gain, sentiment at a five-month high, delinquencies falling, housing starts +19%. If I don't update when the data updates, I'm a dogmatist, not an analyst — so: **the consumer is stabilizing, not collapsing.** But the reprieve has an asterisk the size of the Strait of Hormuz. WTI at $82 with its best week in months means the July sentiment rebound — built mostly before the July 7 strikes — is about to be stress-tested at the gas pump. Inflation near 4% keeps the Warsh Fed frozen at 5.25–5.50%. Net: I've moved from *underweight-and-bearish* to *neutral-and-nervous*. The next 3–4 weeks of gas prices decide whether this was a bottom or a bounce.
 
-**The Housing Story:** Home Depot and Lowe's are the canaries for the housing market. HD is 21% below its 52W high. LOW is 29% below its high. Mortgage rates at 7% have frozen the housing market. Existing home sales are at 30-year lows. New home sales are propped up by builders buying down rates. When housing turnover is this low, home improvement spending dries up. The DIY boom of 2020–2022 is over. The pro contractor business is holding up better, but it is not enough to offset the DIY decline. HD and LOW are not value stocks yet — they are cyclicals at the wrong point in the cycle.
+**The Housing Story (updated):** Something genuinely shifted. Mortgage rates at 6.55% (not 7%) plus builder rate buy-downs produced a +19% housing starts print — and yet HD fell -2.6% and LOW -3.4% on Friday. The market isn't buying the read-through yet. That's the setup: if D.R. Horton (reports Tuesday) confirms order strength, home improvement becomes the sector's cheapest recovery trade. LOW at 17.5x with a 2.2% yield is the pick — HD's multiple already prices the turn.
 
-**The Trade-Down Story:** The consumer is trading down. Dollar General is supposed to benefit from this — but DG is down 2.67% today and 24% from its high. Why? Because DG's core customer is the lowest-income consumer, and that consumer is the most stressed. Inflation at the grocery store is hitting DG's customers hardest. They are not trading down to DG — they are cutting spending altogether. TJX (Marshalls, TJ Maxx) is the better trade-down play — middle-income consumers trading down from department stores. TJX is holding up better.
+**The Credit Story (updated):** Retire the "delinquencies are rising" line — it's stale. Q1 data shows credit card delinquency falling to 2.80–2.95%, charge-offs easing to 3.67–4.01%, and total household delinquency steady at 4.8%. The stress is now narrowly concentrated: subprime, low-income zip codes (90+ DPD ~20% in the poorest decile), and auto loans (60+ DPD up for a fifth straight year). Capital One reports Tuesday — that's the cleanest real-time read on the low-end consumer we'll get before the retailers print.
 
 ---
 
@@ -116,35 +122,17 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Consumer Is Coughing
+### This Week's Story: Good Data, Bad Tape
 
-Consumer discretionary is not moving as a unified sector. The headline says "the consumer is resilient." The tape says **the consumer is bifurcated — some are spending, most are not.**
+The consumer data had its best week in months. The consumer stocks had a red one. That gap is the story.
 
-**The Winners: E-Commerce + Travel.**
+Monday through Thursday, the evidence stacked up for the bulls. June retail sales rose +0.2% — the fifth consecutive monthly gain — with May revised up to a full +1.0%. The control group that feeds GDP rose +0.5%. Autos jumped +1.9%. Friday morning brought the July preliminary UMich sentiment print: **54.4, beating the 51 consensus**, up from 49.5 and miles off May's record-low 44.8. Buying conditions for durables surged 20%. Year-ahead inflation expectations fell to 4.2% from 4.6%. June housing starts exploded +19%. Credit data confirmed delinquencies are falling, not rising.
 
-Amazon is flat (+0.07%) at $247.49. This is the **default winner** — when consumers are stressed, they trade down to Amazon for lower prices. AMZN is not a discretionary play; it is a **consumer staple** in a discretionary wrapper. The AWS business is the real driver, but the retail business is the consumer proxy. The market is buying AMZN as a defensive within a discretionary sector.
+And the market's verdict? XLY fell -1.54% on the week, with Friday's -1.62% flush doing the damage — because while the consumer was healing, the geopolitics was burning. U.S. strikes hit dozens of Iranian military targets; Iran struck a Kuwaiti power and water plant. WTI ripped +4% to $82.15 — its best week in months. Every index posted its first weekly loss since early June. The cruel detail: over 70% of the UMich surveys were collected *before* the July 7 escalation. The sentiment rebound the market just celebrated was measured at cheaper gas prices than the ones consumers are paying right now.
 
-Marriott is flat (+0.09%) at $363.19. Travel demand is strong — post-COMD revenge travel, international tourism, and business travel recovery. But the market is asking: *is this the peak?* Hotel ADRs (average daily rates) are at record highs. If the consumer rolls over, travel is the first discretionary cut. MAR at 38x P/E is pricing in continued strength. The risk is asymmetric.
+Inside the sector, the split was clean. **The trade-down consumer won the week:** Dollar General +5.7%, TJX +2.1% — no single catalyst, just institutions rotating into the value-consumer theme the retail data keeps confirming. Ford (+1.6%) was the only green name on Friday. Disney (+2.1%) held up despite Netflix's -7.5% guidance crash to a two-year low — a warning for the whole streaming complex. **The pre-earnings complex lost:** Tesla -6.6% ahead of Wednesday's report, with options pricing a ±7% move and the whole Musk complex (SpaceX below its IPO price, aborted Starship test) leaking risk appetite. Marriott gave back -2.6% as travel took profits. McDonald's slid to within 1.2% of its 52W low while Starbucks printed a fresh 52W high intraday Friday — the restaurant trade is now a stock-picker's market, not a sector trade.
 
-**The Losers: Apparel + Media + Discount Retail.**
-
-Nike is down 2.06% at $42.86 — **47% below its 52W high**. The sneaker giant is broken. Revenue growth has stalled. Inventory is bloated. The DTC pivot is not working. China sales are weak. The brand is still strong, but the business is not. At 20.8x P/E, it is not cheap enough to be a value stock. The market is pricing a multi-year turnaround.
-
-Lululemon is down 2.48% at $117.32 — **50% below its 52W high**. The athleisure boom is over. The market is saturated. Competition from Alo Yoga, Vuori, and fast fashion is eating market share. The men's expansion is not working. The 9.7x P/E looks cheap, but earnings are declining. This is a falling knife.
-
-Comcast is down 3.25% at $23.19 — **31% below its high**. The cable business is in structural decline. Broadband subscriber growth has stalled. Peacock is losing money. The 5.51% yield and 4.7x P/E are screaming value, but the business is deteriorating. The market is pricing the death of cable.
-
-Dollar General is down 2.67% at $120.14 — **24% below its high**. DG is supposed to be the recession winner — the trade-down play. But DG's core customer is the lowest-income consumer, and that consumer is the most stressed. Inflation at the grocery store is hitting DG's customers hardest. They are not trading down to DG — they are cutting spending altogether.
-
-**The Sidelines: Home Improvement + Restaurants.**
-
-Home Depot and Lowe's are flat to slightly up. The housing market is frozen — mortgage rates at 7% have crushed turnover. But the pro contractor business is holding up. The market is asking: *is this the bottom for housing?* If the Fed cuts and mortgage rates drop to 6%, housing could re-accelerate. But until then, HD and LOW are stuck in a range.
-
-McDonald's is down 1.35% at $268.94 — 21% below its high. MCD is the **consumer staple in a discretionary wrapper** — people eat at McDonald's when they are stressed. But the E. coli scare from late 2024 is still weighing on traffic. The turnaround plan (new menu, digital ordering, value meals) is working slowly. At 22.5x P/E and 2.73% yield, MCD is reasonable but not exciting.
-
-Starbucks is down 1.09% at $106.17 — near its 52W high ($108.88). SBUX is the outlier — the consumer is still buying $6 lattes. But at 81.7x P/E, the stock is absurdly expensive. The market is pricing in a turnaround (new CEO, menu innovation, labor cost cuts) that has not happened yet. This is hope, not fundamentals.
-
-**The Bottom Line:** Consumer discretionary is a **stock-picker's graveyard** right now. The broad sector is flat YTD (-1.36%). The winners are few and narrow (AMZN, MAR, TSLA on meme energy). The losers are many and deep (NKE, LULU, CMCSA, DG). The consumer is bifurcated — the affluent are still spending on travel and experiences. The middle and lower classes are cutting back on apparel, media, and home improvement. The sector is not broken, but it is bruised.
+**The Bottom Line:** The fundamental floor under the consumer is firmer than it's been all year. The macro ceiling — 4% inflation, a frozen Fed, $82 oil — is lower than the data deserves. XLY at $115.44 sits exactly between them, on the 200-day line, waiting for Tesla on Wednesday and Amazon on July 30 to break the tie.
 
 ---
 
@@ -152,64 +140,69 @@ Starbucks is down 1.09% at $106.17 — near its 52W high ($108.88). SBUX is the 
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **Amazon** | AMZN | **Jul 30, 2026** | Q2 2026 | AWS growth; retail margins; advertising revenue; guidance |
-| **Tesla** | TSLA | **Jul 23, 2026** | Q2 2026 | Vehicle deliveries; FSD progress; energy storage; margins |
-| **Home Depot** | HD | **Aug 13, 2026** | Q2 2026 | Same-store sales; pro vs. DIY mix; guidance |
-| **McDonald's** | MCD | **Jul 25, 2026** | Q2 2026 | Same-store sales; traffic recovery; digital/order growth |
-| **Booking Holdings** | BKNG | **Aug 1, 2026** | Q2 2026 | Room nights; ADR trends; alternative accommodation growth |
-| **Lowe's** | LOW | **Aug 20, 2026** | Q2 2026 | Same-store sales; pro vs. DIY; guidance |
-| **Nike** | NKE | **Sep 25, 2026** | Q1 FY2027 | Revenue growth; DTC progress; China sales; inventory |
-| **Starbucks** | SBUX | **Jul 30, 2026** | Q3 FY2026 | Same-store sales; traffic; labor cost trends; China |
-| **Comcast** | CMCSA | **Jul 24, 2026** | Q2 2026 | Broadband subscriber net adds; Peacock losses; cable revenue |
-| **Disney** | DIS | **Aug 7, 2026** | Q3 FY2026 | Streaming subscriber growth; parks revenue; ESPN strategy |
+| **Capital One** | COF | **Jul 21, 2026** (Tue) | Q2 2026 | Credit card charge-offs & delinquency — the low-end consumer read |
+| **General Motors** | GM | **Jul 21, 2026** (Tue) | Q2 2026 | Vehicle demand, pricing, EV losses — auto credit stress read-through |
+| **D.R. Horton** | DHI | **Jul 21, 2026** (Tue) | Q3 FY2026 | Orders + buy-downs — confirms or kills the housing-starts surge |
+| **Tesla** | TSLA | **Jul 22, 2026** (Wed AMC) | Q2 2026 | Deliveries, margins, Robotaxi/Optimus progress; options imply ±7% |
+| **Comcast** | CMCSA | ~Jul 23–24, 2026 (expected) | Q2 2026 | Broadband net adds; Peacock losses; cable revenue |
+| **McDonald's** | MCD | ~late Jul/early Aug (expected) | Q2 2026 | Traffic vs. value-menu mix; low-income consumer health |
+| **Amazon** | AMZN | **Jul 30, 2026** (confirmed, 5:00 PM ET) | Q2 2026 | AWS growth; retail margins; advertising; guidance |
+| **Starbucks** | SBUX | ~Jul 29–30, 2026 (expected) | Q3 FY2026 | Same-store sales; turnaround traction; China |
+| **Booking Holdings** | BKNG | ~early Aug, 2026 (expected) | Q2 2026 | Room nights; ADR trends; summer travel demand |
+| **Disney** | DIS | ~early Aug, 2026 (expected) | Q3 FY2026 | Streaming subs (post-NFLX warning); parks; ESPN strategy |
+| **Home Depot** | HD | ~mid-Aug, 2026 (expected) | Q2 2026 | Same-store sales; pro vs. DIY; housing read-through |
+| **Lowe's** | LOW | ~Aug 19–20, 2026 (expected) | Q2 2026 | Same-store sales; pro vs. DIY; guidance |
+| **Nike** | NKE | ~late Sep, 2026 (expected) | Q1 FY2027 | Revenue growth; DTC progress; China; inventory |
 
-**Marky's Binary Event Read:** TSLA (Jul 23) is the first major test. The market wants to see 400K+ vehicle deliveries and progress on FSD/robotaxi. If TSLA misses on deliveries, the stock drops 10%+ and drags XLY with it (TSLA is 13% of the fund). AMZN (Jul 30) is the heavyweight. AWS growth above 20% and advertising revenue acceleration would confirm the e-commerce/ cloud bull case. If retail margins compress, the stock could drop despite AWS strength. HD (Aug 13) and LOW (Aug 20) are the housing market tests. Same-store sales guidance will tell us if the home improvement downturn is bottoming.
+**Marky's Binary Event Read:** Tuesday is the macro-tell day: COF (credit), GM (autos), DHI (housing) all report before the bell — by 10 AM Tuesday we'll know if the stabilization story is real at the company level. Wednesday after the close is the volatility event: TSLA with a ±7% implied move on 13% of the fund — that's ~±0.9% on XLY by itself. Then AMZN on Jul 30 (22% of the fund) closes the gauntlet. The sector's next 3% is hiding in those three prints.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Fed cuts 50–75 bps in September → mortgage rates drop to 6% → housing re-accelerates → HD, LOW rally
-- Consumer confidence rebounds above 110 → discretionary spending surges → XLY breaks above $125
-- TSLA delivers 500K+ vehicles + FSD breakthrough → stock rallies → XLY gets a lift
-- AMZN AWS growth re-accelerates to 25%+ → stock breaks above $278 → carries the sector
-- Travel demand sustains → BKNG, MAR continue outperforming
+- The stabilization confirms: COF/GM/DHI all beat Tuesday → consumer narrative flips from "rolling over" to "bottoming"
+- TSLA delivers solid Q2 + credible Robotaxi timeline → +7% implied move resolves up → drags XLY over $117.25
+- Iran de-escalates → WTI back under $75 → gas prices fall → August sentiment confirms the July rebound
+- Housing thaw: DHI orders surge + mortgage rates drift toward 6.25% → HD/LOW become the recovery trade
+- AMZN (Jul 30): AWS >20% growth + accelerating ads → breaks toward $278 high → carries the sector
 
 ### 🔴 Bear Case
-- Unemployment rises above 4.5% → job losses → discretionary spending collapses
-- Credit card delinquencies spike above 4% → banks tighten lending → consumer credit contracts
-- Housing market stays frozen → HD, LOW earnings miss → sector selloff
-- TSLA misses deliveries → stock drops 15% → drags XLY down
-- Recession → consumer cuts everything except groceries → XLY drops 20%+
+- **The oil shock feeds through:** WTI >$90 on Hormuz escalation → gas prices spike → the sentiment rebound reverses (interviews predated the strikes) → discretionary gets repriced as a recession sector
+- Hot June CPI (~4%) proves sticky in July → Warsh Fed hints at a *hike* → 10Y through 4.75% → consumer credit tightens further
+- TSLA misses → -7% (or worse on Musk-complex contagion) → XLY loses $113.35 → $112 → $108
+- NFLX's guidance warning proves sector-wide → DIS/streaming derates → media sleeve drags
+- Auto credit (5th year of rising delinquencies) finally bites → GM/F guide down
 
 ### ⚠️ The Wild Card
-The **BNPL (Buy Now Pay Later)** bubble is the wild card. Companies like Affirm, Klarna, and Afterpay have exploded in popularity. Consumers are financing everything — sneakers, travel, home improvement — with 0% interest loans. But the delinquency rates on BNPL loans are rising fast. If the BNPL bubble bursts, it could trigger a wave of forced consumer deleveraging that hits discretionary spending harder than the 2008 financial crisis. The BNPL lenders are not in XLY, but their customers are. This is a **shadow risk** that the market is not pricing.
+The **BNPL (Buy Now Pay Later)** bubble is the wild card. Companies like Affirm, Klarna, and Afterpay have exploded in popularity. Consumers are financing everything — sneakers, travel, home improvement — with 0% interest loans. But the delinquency rates on BNPL loans are rising fast. If the BNPL bubble bursts, it could trigger a wave of forced consumer deleveraging that hits discretionary spending harder than the 2008 financial crisis. The BNPL lenders are not in XLY, but their customers are. This is a **shadow risk** that the market is not pricing. *New twist this week:* the official credit data is improving while BNPL delinquencies rise — the stress may simply be migrating off the bureau's radar.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The consumer is the canary in the coal mine, and the canary is coughing. Credit card delinquencies are rising. The savings rate is near historic lows. Real wage growth is slowing. Mortgage rates at 7% have frozen housing. Auto loan rates at 7–8% have crushed vehicle demand. The consumer is bifurcated — the affluent are still spending on travel, but the middle and lower classes are cutting back. I am not overweight discretionary. I am underweight the consumer. Cash is a position. The consumer recession is coming. It may already be here."*
+**Ophelia:** *"I called the consumer the canary all spring. This week the canary stood up: five straight retail gains, sentiment at a five-month high, delinquencies falling, housing starts +19%. I update when the data updates — the consumer is stabilizing, not collapsing. But the asterisk is the size of the Strait of Hormuz: WTI at $82 with its best week in months, and the sentiment survey was mostly taken before the July 7 strikes. The rebound was measured at yesterday's gas prices. I'm moving from underweight-and-bearish to neutral-and-nervous. The pump decides the next month."*
 
-**Marky:** *"The tape is telling a distribution story. XLY is flat YTD (-1.36%) while SPY is up double digits. That is massive relative underperformance. The 50D MA is at $116.50. XLY is below it. The sector is in a tight range — $112–$117. A break below $112 targets $108. The only green names are AMZN (stable), TSLA (meme energy), and MAR (travel). The losers are many: NKE (-47% from high), LULU (-50% from high), CMCSA (-31% from high). I am not buying XLY here. The consumer is rolling over. The trend is tired. I am waiting for a break — either above $118 or below $112. Until then, I am in cash."*
+**Marky:** *"Good data, bad tape — I trade the tape. XLY -1.54% on the week, closed at $115.44, below the 50D (~$117), sitting on the 200D. RSI ~43. But here's what I like: on a risk-off Friday, the sector matched the S&P and beat the Nasdaq — the weak hands aren't in this sector anymore. The leaders were DG, TJX, F — rotation, not liquidation. The plan is simple: above $117.25 the range holds and I trade the bounce to $120. Below $113.35, I'm gone and $112/$108 are the targets. And I am not sizing anything into TSLA Wednesday — a ±7% implied coin flip on 13% of the fund is a gamble, not a trade."*
 
-**Cecil:** *"The consumer discretionary sector is a minefield. TSLA at 356.9x P/E is a cult, not an investment. NKE at 20.8x P/E with declining earnings is a value trap. LULU at 9.7x P/E with declining earnings is a falling knife. SBUX at 81.7x P/E is absurd. But there are exceptions: LOW at 17.5x P/E and 2.41% yield is reasonable. F at 7.6x P/E and 4.33% yield is a cyclical — cheap at the bottom. CMCSA at 4.7x P/E and 5.51% yield is the most interesting. But Rule 2 applies: verify the cash flow. The cash flow is deteriorating as cable subscribers churn. Rule 3 applies: a great company at the wrong point in the cycle is still a bad investment. The consumer is at the wrong point. I am not planting in this garden."*
+**Cecil:** *"The data improved; the valuations didn't. TSLA at ~357x is still a cult, SBUX at 81.7x is still hope, NKE and LULU are still falling knives. But I'll give the bull its due: DG at 17.5x with the trade-down wind at its back earned its +5.7% week, TJX is the best-run retailer in America, F at 7.6x with a 4.2% yield pays me to wait, and LOW at 17.5x is the cheapest way to own a housing thaw that Friday's starts print says may have begun. CMCSA at 4.7x still fails Rule 2 — the cash flow is melting with the cable bundle. Plant in the trade-down garden. Keep out of the cult garden."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLY, AMZN, TSLA, HD, MCD, BKNG, LOW, TJX, NKE, SBUX, F, CMCSA, DIS, MAR, LULU, DG live data
-- U.S. Census Bureau: Retail Sales data
-- Conference Board: Consumer Confidence Index
-- Federal Reserve: Household Debt and Credit Report (credit card delinquencies)
-- Bureau of Labor Statistics: Employment, wage growth data
-- Freddie Mac: Mortgage rates, housing turnover data
-- AutoData: Vehicle sales data
+- iFind / Yahoo Finance: XLY, AMZN, TSLA, HD, MCD, BKNG, LOW, TJX, NKE, SBUX, F, CMCSA, DIS, MAR, LULU, DG daily data (Jul 6–17, 2026)
+- State Street Global Advisors (SSGA): XLY fund characteristics (P/E FY1 25.86, 47 holdings, 0.77% yield, Jul 16 close $117.34)
+- U.S. Census Bureau: June 2026 Advance Retail Sales (+0.2% MoM, released Jul 16)
+- University of Michigan: July 2026 preliminary Consumer Sentiment (54.4, released Jul 17)
+- U.S. Census Bureau / HUD: June 2026 Housing Starts (+19% to 1.427M, released Jul 17)
+- Freddie Mac: 30Y mortgage rate 6.55% (week of Jul 17)
+- Federal Reserve / NY Fed Household Debt & Credit: Q1 2026 credit card delinquency & charge-off data
+- Investopedia / Schwab market wraps: weekly index performance, TSLA earnings (Jul 22 AMC), oil move
+- aboutamazon.com: AMZN Q2 2026 earnings confirmed for Jul 30
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-07-15*
+*Last updated by Saturday Research Crew: 2026-07-18*
 *Next update: Every Saturday 10:49 AM ET*
-*Data sources: Yahoo Finance, Census Bureau, Federal Reserve, market data feeds*
+*Data sources: iFind, Yahoo Finance, SSGA, Census Bureau, University of Michigan, Federal Reserve, Freddie Mac, market data feeds*
