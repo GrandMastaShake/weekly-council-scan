@@ -1,0 +1,380 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="704" height="744" font-family="Arial,Helvetica,sans-serif">
+<rect width="704" height="744" fill="#ffffff"/>
+<text x="352" y="30" font-size="17" font-weight="bold" text-anchor="middle" fill="#111">Sector Correlation Matrix — 30D daily returns</text>
+<text x="352" y="52" font-size="12" text-anchor="middle" fill="#555">Sector ETFs vs each other · data through 2026-07-17 close</text>
+<text x="155" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 155 88)" fill="#222">XLK</text>
+<text x="201" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 201 88)" fill="#222">SMH</text>
+<text x="247" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 247 88)" fill="#222">XLY</text>
+<text x="293" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 293 88)" fill="#222">XLI</text>
+<text x="339" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 339 88)" fill="#222">XLB</text>
+<text x="385" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 385 88)" fill="#222">XLC</text>
+<text x="431" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 431 88)" fill="#222">XLF</text>
+<text x="477" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 477 88)" fill="#222">XLV</text>
+<text x="523" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 523 88)" fill="#222">XLU</text>
+<text x="569" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 569 88)" fill="#222">XLRE</text>
+<text x="615" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 615 88)" fill="#222">XLE</text>
+<text x="661" y="88" font-size="11.5" font-weight="bold" text-anchor="end" transform="rotate(-45 661 88)" fill="#222">XLP</text>
+<text x="124" y="123" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLK</text>
+<rect x="132" y="96" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="123" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="178" y="96" width="46" height="46" fill="#d8352d" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="123" font-size="11" text-anchor="middle" fill="#ffffff">0.97</text>
+<rect x="224" y="96" width="46" height="46" fill="#ea938e" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="123" font-size="11" text-anchor="middle" fill="#222222">0.52</text>
+<rect x="270" y="96" width="46" height="46" fill="#e7837d" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="123" font-size="11" text-anchor="middle" fill="#ffffff">0.60</text>
+<rect x="316" y="96" width="46" height="46" fill="#f5cbc9" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="123" font-size="11" text-anchor="middle" fill="#222222">0.25</text>
+<rect x="362" y="96" width="46" height="46" fill="#fcf1f1" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="123" font-size="11" text-anchor="middle" fill="#222222">0.07</text>
+<rect x="408" y="96" width="46" height="46" fill="#d2deed" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="123" font-size="11" text-anchor="middle" fill="#222222">-0.24</text>
+<rect x="454" y="96" width="46" height="46" fill="#aac0dd" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="123" font-size="11" text-anchor="middle" fill="#222222">-0.46</text>
+<rect x="500" y="96" width="46" height="46" fill="#b6c9e2" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="123" font-size="11" text-anchor="middle" fill="#222222">-0.39</text>
+<rect x="546" y="96" width="46" height="46" fill="#97b2d5" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="123" font-size="11" text-anchor="middle" fill="#ffffff">-0.56</text>
+<rect x="592" y="96" width="46" height="46" fill="#cad8ea" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="123" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="638" y="96" width="46" height="46" fill="#83a3cd" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="123" font-size="11" text-anchor="middle" fill="#ffffff">-0.67</text>
+<text x="124" y="169" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">SMH</text>
+<rect x="132" y="142" width="46" height="46" fill="#d8352d" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="169" font-size="11" text-anchor="middle" fill="#ffffff">0.97</text>
+<rect x="178" y="142" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="169" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="224" y="142" width="46" height="46" fill="#eda39f" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="169" font-size="11" text-anchor="middle" fill="#222222">0.45</text>
+<rect x="270" y="142" width="46" height="46" fill="#e67b76" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="169" font-size="11" text-anchor="middle" fill="#ffffff">0.64</text>
+<rect x="316" y="142" width="46" height="46" fill="#f5cbc9" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="169" font-size="11" text-anchor="middle" fill="#222222">0.25</text>
+<rect x="362" y="142" width="46" height="46" fill="#f9fafd" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="169" font-size="11" text-anchor="middle" fill="#222222">-0.03</text>
+<rect x="408" y="142" width="46" height="46" fill="#c9d7e9" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="169" font-size="11" text-anchor="middle" fill="#222222">-0.29</text>
+<rect x="454" y="142" width="46" height="46" fill="#abc0dd" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="169" font-size="11" text-anchor="middle" fill="#222222">-0.45</text>
+<rect x="500" y="142" width="46" height="46" fill="#bacce3" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="169" font-size="11" text-anchor="middle" fill="#222222">-0.37</text>
+<rect x="546" y="142" width="46" height="46" fill="#97b2d5" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="169" font-size="11" text-anchor="middle" fill="#ffffff">-0.56</text>
+<rect x="592" y="142" width="46" height="46" fill="#ccd9ea" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="169" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="638" y="142" width="46" height="46" fill="#82a2cd" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="169" font-size="11" text-anchor="middle" fill="#ffffff">-0.67</text>
+<text x="124" y="215" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLY</text>
+<rect x="132" y="188" width="46" height="46" fill="#ea938e" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="215" font-size="11" text-anchor="middle" fill="#222222">0.52</text>
+<rect x="178" y="188" width="46" height="46" fill="#eda39f" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="215" font-size="11" text-anchor="middle" fill="#222222">0.45</text>
+<rect x="224" y="188" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="215" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="270" y="188" width="46" height="46" fill="#eb9692" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="215" font-size="11" text-anchor="middle" fill="#222222">0.51</text>
+<rect x="316" y="188" width="46" height="46" fill="#eea6a2" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="215" font-size="11" text-anchor="middle" fill="#222222">0.43</text>
+<rect x="362" y="188" width="46" height="46" fill="#e26963" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="215" font-size="11" text-anchor="middle" fill="#ffffff">0.72</text>
+<rect x="408" y="188" width="46" height="46" fill="#f2bbb8" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="215" font-size="11" text-anchor="middle" fill="#222222">0.33</text>
+<rect x="454" y="188" width="46" height="46" fill="#fbebea" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="215" font-size="11" text-anchor="middle" fill="#222222">0.10</text>
+<rect x="500" y="188" width="46" height="46" fill="#f5f8fb" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="215" font-size="11" text-anchor="middle" fill="#222222">-0.05</text>
+<rect x="546" y="188" width="46" height="46" fill="#fefbfa" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="215" font-size="11" text-anchor="middle" fill="#222222">0.02</text>
+<rect x="592" y="188" width="46" height="46" fill="#9eb7d8" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="215" font-size="11" text-anchor="middle" fill="#222222">-0.52</text>
+<rect x="638" y="188" width="46" height="46" fill="#f0f4f9" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="215" font-size="11" text-anchor="middle" fill="#222222">-0.08</text>
+<text x="124" y="261" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLI</text>
+<rect x="132" y="234" width="46" height="46" fill="#e7837d" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="261" font-size="11" text-anchor="middle" fill="#ffffff">0.60</text>
+<rect x="178" y="234" width="46" height="46" fill="#e67b76" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="261" font-size="11" text-anchor="middle" fill="#ffffff">0.64</text>
+<rect x="224" y="234" width="46" height="46" fill="#eb9692" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="261" font-size="11" text-anchor="middle" fill="#222222">0.51</text>
+<rect x="270" y="234" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="261" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="316" y="234" width="46" height="46" fill="#e36c65" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="261" font-size="11" text-anchor="middle" fill="#ffffff">0.71</text>
+<rect x="362" y="234" width="46" height="46" fill="#fcf2f1" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="261" font-size="11" text-anchor="middle" fill="#222222">0.06</text>
+<rect x="408" y="234" width="46" height="46" fill="#f6d1cf" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="261" font-size="11" text-anchor="middle" fill="#222222">0.22</text>
+<rect x="454" y="234" width="46" height="46" fill="#fef9f8" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="261" font-size="11" text-anchor="middle" fill="#222222">0.03</text>
+<rect x="500" y="234" width="46" height="46" fill="#fdf5f4" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="261" font-size="11" text-anchor="middle" fill="#222222">0.05</text>
+<rect x="546" y="234" width="46" height="46" fill="#e7edf5" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="261" font-size="11" text-anchor="middle" fill="#222222">-0.13</text>
+<rect x="592" y="234" width="46" height="46" fill="#a6bddb" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="261" font-size="11" text-anchor="middle" fill="#222222">-0.48</text>
+<rect x="638" y="234" width="46" height="46" fill="#b8cae2" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="261" font-size="11" text-anchor="middle" fill="#222222">-0.38</text>
+<text x="124" y="307" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLB</text>
+<rect x="132" y="280" width="46" height="46" fill="#f5cbc9" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="307" font-size="11" text-anchor="middle" fill="#222222">0.25</text>
+<rect x="178" y="280" width="46" height="46" fill="#f5cbc9" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="307" font-size="11" text-anchor="middle" fill="#222222">0.25</text>
+<rect x="224" y="280" width="46" height="46" fill="#eea6a2" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="307" font-size="11" text-anchor="middle" fill="#222222">0.43</text>
+<rect x="270" y="280" width="46" height="46" fill="#e36c65" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="307" font-size="11" text-anchor="middle" fill="#ffffff">0.71</text>
+<rect x="316" y="280" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="307" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="362" y="280" width="46" height="46" fill="#f5cdcb" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="307" font-size="11" text-anchor="middle" fill="#222222">0.24</text>
+<rect x="408" y="280" width="46" height="46" fill="#eb9994" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="307" font-size="11" text-anchor="middle" fill="#222222">0.49</text>
+<rect x="454" y="280" width="46" height="46" fill="#f4c6c4" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="307" font-size="11" text-anchor="middle" fill="#222222">0.28</text>
+<rect x="500" y="280" width="46" height="46" fill="#f0b3b0" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="307" font-size="11" text-anchor="middle" fill="#222222">0.37</text>
+<rect x="546" y="280" width="46" height="46" fill="#f3c0be" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="307" font-size="11" text-anchor="middle" fill="#222222">0.30</text>
+<rect x="592" y="280" width="46" height="46" fill="#cbd9ea" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="307" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="638" y="280" width="46" height="46" fill="#fceeed" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="307" font-size="11" text-anchor="middle" fill="#222222">0.08</text>
+<text x="124" y="353" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLC</text>
+<rect x="132" y="326" width="46" height="46" fill="#fcf1f1" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="353" font-size="11" text-anchor="middle" fill="#222222">0.07</text>
+<rect x="178" y="326" width="46" height="46" fill="#f9fafd" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="353" font-size="11" text-anchor="middle" fill="#222222">-0.03</text>
+<rect x="224" y="326" width="46" height="46" fill="#e26963" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="353" font-size="11" text-anchor="middle" fill="#ffffff">0.72</text>
+<rect x="270" y="326" width="46" height="46" fill="#fcf2f1" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="353" font-size="11" text-anchor="middle" fill="#222222">0.06</text>
+<rect x="316" y="326" width="46" height="46" fill="#f5cdcb" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="353" font-size="11" text-anchor="middle" fill="#222222">0.24</text>
+<rect x="362" y="326" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="353" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="408" y="326" width="46" height="46" fill="#e98e89" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="353" font-size="11" text-anchor="middle" fill="#222222">0.55</text>
+<rect x="454" y="326" width="46" height="46" fill="#f6d3d1" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="353" font-size="11" text-anchor="middle" fill="#222222">0.21</text>
+<rect x="500" y="326" width="46" height="46" fill="#fffefe" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="353" font-size="11" text-anchor="middle" fill="#222222">0.00</text>
+<rect x="546" y="326" width="46" height="46" fill="#f4c5c3" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="353" font-size="11" text-anchor="middle" fill="#222222">0.28</text>
+<rect x="592" y="326" width="46" height="46" fill="#dae4f0" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="353" font-size="11" text-anchor="middle" fill="#222222">-0.20</text>
+<rect x="638" y="326" width="46" height="46" fill="#f8dbd9" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="353" font-size="11" text-anchor="middle" fill="#222222">0.17</text>
+<text x="124" y="399" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLF</text>
+<rect x="132" y="372" width="46" height="46" fill="#d2deed" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="399" font-size="11" text-anchor="middle" fill="#222222">-0.24</text>
+<rect x="178" y="372" width="46" height="46" fill="#c9d7e9" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="399" font-size="11" text-anchor="middle" fill="#222222">-0.29</text>
+<rect x="224" y="372" width="46" height="46" fill="#f2bbb8" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="399" font-size="11" text-anchor="middle" fill="#222222">0.33</text>
+<rect x="270" y="372" width="46" height="46" fill="#f6d1cf" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="399" font-size="11" text-anchor="middle" fill="#222222">0.22</text>
+<rect x="316" y="372" width="46" height="46" fill="#eb9994" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="399" font-size="11" text-anchor="middle" fill="#222222">0.49</text>
+<rect x="362" y="372" width="46" height="46" fill="#e98e89" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="399" font-size="11" text-anchor="middle" fill="#222222">0.55</text>
+<rect x="408" y="372" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="399" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="454" y="372" width="46" height="46" fill="#eda29e" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="399" font-size="11" text-anchor="middle" fill="#222222">0.45</text>
+<rect x="500" y="372" width="46" height="46" fill="#f5cac8" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="399" font-size="11" text-anchor="middle" fill="#222222">0.26</text>
+<rect x="546" y="372" width="46" height="46" fill="#ea918c" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="399" font-size="11" text-anchor="middle" fill="#222222">0.53</text>
+<rect x="592" y="372" width="46" height="46" fill="#e0e8f3" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="399" font-size="11" text-anchor="middle" fill="#222222">-0.16</text>
+<rect x="638" y="372" width="46" height="46" fill="#f7d7d5" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="399" font-size="11" text-anchor="middle" fill="#222222">0.19</text>
+<text x="124" y="445" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLV</text>
+<rect x="132" y="418" width="46" height="46" fill="#aac0dd" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="445" font-size="11" text-anchor="middle" fill="#222222">-0.46</text>
+<rect x="178" y="418" width="46" height="46" fill="#abc0dd" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="445" font-size="11" text-anchor="middle" fill="#222222">-0.45</text>
+<rect x="224" y="418" width="46" height="46" fill="#fbebea" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="445" font-size="11" text-anchor="middle" fill="#222222">0.10</text>
+<rect x="270" y="418" width="46" height="46" fill="#fef9f8" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="445" font-size="11" text-anchor="middle" fill="#222222">0.03</text>
+<rect x="316" y="418" width="46" height="46" fill="#f4c6c4" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="445" font-size="11" text-anchor="middle" fill="#222222">0.28</text>
+<rect x="362" y="418" width="46" height="46" fill="#f6d3d1" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="445" font-size="11" text-anchor="middle" fill="#222222">0.21</text>
+<rect x="408" y="418" width="46" height="46" fill="#eda29e" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="445" font-size="11" text-anchor="middle" fill="#222222">0.45</text>
+<rect x="454" y="418" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="445" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="500" y="418" width="46" height="46" fill="#e88a84" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="445" font-size="11" text-anchor="middle" fill="#ffffff">0.57</text>
+<rect x="546" y="418" width="46" height="46" fill="#e05f58" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="445" font-size="11" text-anchor="middle" fill="#ffffff">0.77</text>
+<rect x="592" y="418" width="46" height="46" fill="#fae8e7" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="445" font-size="11" text-anchor="middle" fill="#222222">0.11</text>
+<rect x="638" y="418" width="46" height="46" fill="#e88984" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="445" font-size="11" text-anchor="middle" fill="#ffffff">0.57</text>
+<text x="124" y="491" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLU</text>
+<rect x="132" y="464" width="46" height="46" fill="#b6c9e2" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="491" font-size="11" text-anchor="middle" fill="#222222">-0.39</text>
+<rect x="178" y="464" width="46" height="46" fill="#bacce3" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="491" font-size="11" text-anchor="middle" fill="#222222">-0.37</text>
+<rect x="224" y="464" width="46" height="46" fill="#f5f8fb" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="491" font-size="11" text-anchor="middle" fill="#222222">-0.05</text>
+<rect x="270" y="464" width="46" height="46" fill="#fdf5f4" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="491" font-size="11" text-anchor="middle" fill="#222222">0.05</text>
+<rect x="316" y="464" width="46" height="46" fill="#f0b3b0" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="491" font-size="11" text-anchor="middle" fill="#222222">0.37</text>
+<rect x="362" y="464" width="46" height="46" fill="#fffefe" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="491" font-size="11" text-anchor="middle" fill="#222222">0.00</text>
+<rect x="408" y="464" width="46" height="46" fill="#f5cac8" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="491" font-size="11" text-anchor="middle" fill="#222222">0.26</text>
+<rect x="454" y="464" width="46" height="46" fill="#e88a84" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="491" font-size="11" text-anchor="middle" fill="#ffffff">0.57</text>
+<rect x="500" y="464" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="491" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="546" y="464" width="46" height="46" fill="#e36e67" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="491" font-size="11" text-anchor="middle" fill="#ffffff">0.70</text>
+<rect x="592" y="464" width="46" height="46" fill="#fcf2f1" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="491" font-size="11" text-anchor="middle" fill="#222222">0.06</text>
+<rect x="638" y="464" width="46" height="46" fill="#e57974" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="491" font-size="11" text-anchor="middle" fill="#ffffff">0.65</text>
+<text x="124" y="537" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLRE</text>
+<rect x="132" y="510" width="46" height="46" fill="#97b2d5" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="537" font-size="11" text-anchor="middle" fill="#ffffff">-0.56</text>
+<rect x="178" y="510" width="46" height="46" fill="#97b2d5" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="537" font-size="11" text-anchor="middle" fill="#ffffff">-0.56</text>
+<rect x="224" y="510" width="46" height="46" fill="#fefbfa" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="537" font-size="11" text-anchor="middle" fill="#222222">0.02</text>
+<rect x="270" y="510" width="46" height="46" fill="#e7edf5" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="537" font-size="11" text-anchor="middle" fill="#222222">-0.13</text>
+<rect x="316" y="510" width="46" height="46" fill="#f3c0be" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="537" font-size="11" text-anchor="middle" fill="#222222">0.30</text>
+<rect x="362" y="510" width="46" height="46" fill="#f4c5c3" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="537" font-size="11" text-anchor="middle" fill="#222222">0.28</text>
+<rect x="408" y="510" width="46" height="46" fill="#ea918c" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="537" font-size="11" text-anchor="middle" fill="#222222">0.53</text>
+<rect x="454" y="510" width="46" height="46" fill="#e05f58" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="537" font-size="11" text-anchor="middle" fill="#ffffff">0.77</text>
+<rect x="500" y="510" width="46" height="46" fill="#e36e67" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="537" font-size="11" text-anchor="middle" fill="#ffffff">0.70</text>
+<rect x="546" y="510" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="537" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="592" y="510" width="46" height="46" fill="#f6d3d1" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="537" font-size="11" text-anchor="middle" fill="#222222">0.21</text>
+<rect x="638" y="510" width="46" height="46" fill="#e36d67" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="537" font-size="11" text-anchor="middle" fill="#ffffff">0.70</text>
+<text x="124" y="583" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLE</text>
+<rect x="132" y="556" width="46" height="46" fill="#cad8ea" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="178" y="556" width="46" height="46" fill="#ccd9ea" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="224" y="556" width="46" height="46" fill="#9eb7d8" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.52</text>
+<rect x="270" y="556" width="46" height="46" fill="#a6bddb" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.48</text>
+<rect x="316" y="556" width="46" height="46" fill="#cbd9ea" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.28</text>
+<rect x="362" y="556" width="46" height="46" fill="#dae4f0" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.20</text>
+<rect x="408" y="556" width="46" height="46" fill="#e0e8f3" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="583" font-size="11" text-anchor="middle" fill="#222222">-0.16</text>
+<rect x="454" y="556" width="46" height="46" fill="#fae8e7" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="583" font-size="11" text-anchor="middle" fill="#222222">0.11</text>
+<rect x="500" y="556" width="46" height="46" fill="#fcf2f1" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="583" font-size="11" text-anchor="middle" fill="#222222">0.06</text>
+<rect x="546" y="556" width="46" height="46" fill="#f6d3d1" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="583" font-size="11" text-anchor="middle" fill="#222222">0.21</text>
+<rect x="592" y="556" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="583" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="638" y="556" width="46" height="46" fill="#f6d2d0" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="583" font-size="11" text-anchor="middle" fill="#222222">0.22</text>
+<text x="124" y="629" font-size="11.5" font-weight="bold" text-anchor="end" fill="#222">XLP</text>
+<rect x="132" y="602" width="46" height="46" fill="#83a3cd" stroke="#ffffff" stroke-width="1"/>
+<text x="155" y="629" font-size="11" text-anchor="middle" fill="#ffffff">-0.67</text>
+<rect x="178" y="602" width="46" height="46" fill="#82a2cd" stroke="#ffffff" stroke-width="1"/>
+<text x="201" y="629" font-size="11" text-anchor="middle" fill="#ffffff">-0.67</text>
+<rect x="224" y="602" width="46" height="46" fill="#f0f4f9" stroke="#ffffff" stroke-width="1"/>
+<text x="247" y="629" font-size="11" text-anchor="middle" fill="#222222">-0.08</text>
+<rect x="270" y="602" width="46" height="46" fill="#b8cae2" stroke="#ffffff" stroke-width="1"/>
+<text x="293" y="629" font-size="11" text-anchor="middle" fill="#222222">-0.38</text>
+<rect x="316" y="602" width="46" height="46" fill="#fceeed" stroke="#ffffff" stroke-width="1"/>
+<text x="339" y="629" font-size="11" text-anchor="middle" fill="#222222">0.08</text>
+<rect x="362" y="602" width="46" height="46" fill="#f8dbd9" stroke="#ffffff" stroke-width="1"/>
+<text x="385" y="629" font-size="11" text-anchor="middle" fill="#222222">0.17</text>
+<rect x="408" y="602" width="46" height="46" fill="#f7d7d5" stroke="#ffffff" stroke-width="1"/>
+<text x="431" y="629" font-size="11" text-anchor="middle" fill="#222222">0.19</text>
+<rect x="454" y="602" width="46" height="46" fill="#e88984" stroke="#ffffff" stroke-width="1"/>
+<text x="477" y="629" font-size="11" text-anchor="middle" fill="#ffffff">0.57</text>
+<rect x="500" y="602" width="46" height="46" fill="#e57974" stroke="#ffffff" stroke-width="1"/>
+<text x="523" y="629" font-size="11" text-anchor="middle" fill="#ffffff">0.65</text>
+<rect x="546" y="602" width="46" height="46" fill="#e36d67" stroke="#ffffff" stroke-width="1"/>
+<text x="569" y="629" font-size="11" text-anchor="middle" fill="#ffffff">0.70</text>
+<rect x="592" y="602" width="46" height="46" fill="#f6d2d0" stroke="#ffffff" stroke-width="1"/>
+<text x="615" y="629" font-size="11" text-anchor="middle" fill="#222222">0.22</text>
+<rect x="638" y="602" width="46" height="46" fill="#d73027" stroke="#ffffff" stroke-width="1"/>
+<text x="661" y="629" font-size="11" text-anchor="middle" fill="#ffffff">1.00</text>
+<rect x="132.0" y="682" width="4.9" height="14" fill="#4575b4"/>
+<rect x="136.3" y="682" width="4.9" height="14" fill="#4b7ab7"/>
+<rect x="140.7" y="682" width="4.9" height="14" fill="#527eb9"/>
+<rect x="145.0" y="682" width="4.9" height="14" fill="#5883bc"/>
+<rect x="149.3" y="682" width="4.9" height="14" fill="#5e88be"/>
+<rect x="153.7" y="682" width="4.9" height="14" fill="#658cc1"/>
+<rect x="158.0" y="682" width="4.9" height="14" fill="#6b91c3"/>
+<rect x="162.3" y="682" width="4.9" height="14" fill="#7196c6"/>
+<rect x="166.7" y="682" width="4.9" height="14" fill="#779ac8"/>
+<rect x="171.0" y="682" width="4.9" height="14" fill="#7e9fcb"/>
+<rect x="175.3" y="682" width="4.9" height="14" fill="#84a4cd"/>
+<rect x="179.7" y="682" width="4.9" height="14" fill="#8aa8d0"/>
+<rect x="184.0" y="682" width="4.9" height="14" fill="#91add3"/>
+<rect x="188.3" y="682" width="4.9" height="14" fill="#97b2d5"/>
+<rect x="192.7" y="682" width="4.9" height="14" fill="#9db6d8"/>
+<rect x="197.0" y="682" width="4.9" height="14" fill="#a4bbda"/>
+<rect x="201.3" y="682" width="4.9" height="14" fill="#aac0dd"/>
+<rect x="205.7" y="682" width="4.9" height="14" fill="#b0c5df"/>
+<rect x="210.0" y="682" width="4.9" height="14" fill="#b6c9e2"/>
+<rect x="214.3" y="682" width="4.9" height="14" fill="#bdcee4"/>
+<rect x="218.7" y="682" width="4.9" height="14" fill="#c3d3e7"/>
+<rect x="223.0" y="682" width="4.9" height="14" fill="#c9d7e9"/>
+<rect x="227.3" y="682" width="4.9" height="14" fill="#d0dcec"/>
+<rect x="231.7" y="682" width="4.9" height="14" fill="#d6e1ee"/>
+<rect x="236.0" y="682" width="4.9" height="14" fill="#dce5f1"/>
+<rect x="240.3" y="682" width="4.9" height="14" fill="#e3eaf4"/>
+<rect x="244.7" y="682" width="4.9" height="14" fill="#e9eff6"/>
+<rect x="249.0" y="682" width="4.9" height="14" fill="#eff3f9"/>
+<rect x="253.3" y="682" width="4.9" height="14" fill="#f6f8fb"/>
+<rect x="257.7" y="682" width="4.9" height="14" fill="#fcfdfe"/>
+<rect x="262.0" y="682" width="4.9" height="14" fill="#fefbfb"/>
+<rect x="266.3" y="682" width="4.9" height="14" fill="#fdf4f4"/>
+<rect x="270.7" y="682" width="4.9" height="14" fill="#fceded"/>
+<rect x="275.0" y="682" width="4.9" height="14" fill="#fae6e5"/>
+<rect x="279.3" y="682" width="4.9" height="14" fill="#f9dfde"/>
+<rect x="283.7" y="682" width="4.9" height="14" fill="#f8d8d7"/>
+<rect x="288.0" y="682" width="4.9" height="14" fill="#f6d1cf"/>
+<rect x="292.3" y="682" width="4.9" height="14" fill="#f5cac8"/>
+<rect x="296.7" y="682" width="4.9" height="14" fill="#f3c3c1"/>
+<rect x="301.0" y="682" width="4.9" height="14" fill="#f2bcb9"/>
+<rect x="305.3" y="682" width="4.9" height="14" fill="#f1b5b2"/>
+<rect x="309.7" y="682" width="4.9" height="14" fill="#efaeab"/>
+<rect x="314.0" y="682" width="4.9" height="14" fill="#eea7a3"/>
+<rect x="318.3" y="682" width="4.9" height="14" fill="#eda09c"/>
+<rect x="322.7" y="682" width="4.9" height="14" fill="#eb9995"/>
+<rect x="327.0" y="682" width="4.9" height="14" fill="#ea928e"/>
+<rect x="331.3" y="682" width="4.9" height="14" fill="#e98b86"/>
+<rect x="335.7" y="682" width="4.9" height="14" fill="#e7847f"/>
+<rect x="340.0" y="682" width="4.9" height="14" fill="#e67d78"/>
+<rect x="344.3" y="682" width="4.9" height="14" fill="#e57670"/>
+<rect x="348.7" y="682" width="4.9" height="14" fill="#e36f69"/>
+<rect x="353.0" y="682" width="4.9" height="14" fill="#e26862"/>
+<rect x="357.3" y="682" width="4.9" height="14" fill="#e0615a"/>
+<rect x="361.7" y="682" width="4.9" height="14" fill="#df5a53"/>
+<rect x="366.0" y="682" width="4.9" height="14" fill="#de534c"/>
+<rect x="370.3" y="682" width="4.9" height="14" fill="#dc4c44"/>
+<rect x="374.7" y="682" width="4.9" height="14" fill="#db453d"/>
+<rect x="379.0" y="682" width="4.9" height="14" fill="#da3e36"/>
+<rect x="383.3" y="682" width="4.9" height="14" fill="#d8372e"/>
+<rect x="387.7" y="682" width="4.9" height="14" fill="#d73027"/>
+<text x="132" y="712" font-size="11" text-anchor="start" fill="#333">-1.0 (inverse)</text>
+<text x="262" y="712" font-size="11" text-anchor="middle" fill="#333">0</text>
+<text x="392" y="712" font-size="11" text-anchor="end" fill="#333">+1.0 (lockstep)</text>
+</svg>
