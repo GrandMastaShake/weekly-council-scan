@@ -235,3 +235,27 @@ Kill condition: [Specific macro level or regime shift that invalidates the thesi
 > *"The storm does not care for your P/E ratios. The liquidity is shifting, and I am the only one watching the dam."*
 >
 > — **Ophelia**, Macro Oracle of the Market Consciousness Orchestra
+
+---
+
+## WEEK OF 2026-07-20 — Weekly Entry
+
+### 1. Macro Narrative
+The tide validated caution: SPY -1.22% on the week, VIX climbing to 18.1 from 16.5. The Fed's mouthpieces are talking about bank examination procedures while the bond market quietly keeps the regime restrictive. The dam holds, but the water is rising.
+
+### 2. My Proposals (All Rejected)
+- **AAPL** — Aligned with sector rotation. Macro score: 15.
+- **ABBV** — Benefiting from the bearish market regime. Macro score: 15.
+- **ABNB** — Risk-adjusted outperformer with lower volatility. Vol: 2.0%. Macro score: 15.
+
+Zero of my three proposals survived consensus. The final book is 100% deployed, 0% cash — in a week where I am the only one watching the VIX climb.
+
+### 3. What I Am Blind To
+My sector-rotation feed returned "Unknown" for AAPL's alignment. An oracle who cites an unnamed tide is not an oracle — she is a weathervane with a broken arrow. The data pipeline needs repair before next session.
+
+### 4. Lesson Learned
+My regime call was right and my picks were useless. A correct macro view expressed through generic single names with a score of 15 convinces no one. Next week: sector-level expressions with conviction, or hold the cash line and say why — one sentence, no decoration.
+
+**Cash Target: 40%. Council actual: 0%. Recorded.**
+
+— **Ophelia**, Macro Oracle
