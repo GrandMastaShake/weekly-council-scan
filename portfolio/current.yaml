@@ -1,0 +1,78 @@
+week: "2026-07-20"
+status: "open"
+positions:
+  - ticker: "ACN"
+    weight: 0.302
+    sponsor: "Marky"
+    thesis: "Strong momentum breaking above the 4-week MA. 4W return: 12.7%. (confidence: 100)"
+    entry_price: 140.75
+    entry_date: "2026-07-20"
+    stop_loss: null
+    target: null
+    direction: "long"
+    status: "open"
+    exit_price: null
+    exit_date: null
+    exit_reason: null
+    pnl_pct: null
+  - ticker: "AMAT"
+    weight: 0.233
+    sponsor: "Cecil"
+    thesis: "Deep value at 10.1x earnings with solid fundamentals. Score: 75. (confidence: 75)"
+    entry_price: 550.5800170898438
+    entry_date: "2026-07-20"
+    stop_loss: null
+    target: null
+    direction: "long"
+    status: "open"
+    exit_price: null
+    exit_date: null
+    exit_reason: null
+    pnl_pct: null
+  - ticker: "ADBE"
+    weight: 0.207
+    sponsor: "Marky"
+    thesis: "Low volatility uptrend with clean price action. Vol: 1.0%. Score: 100. (confidence: 100)"
+    entry_price: 230.23500061035156
+    entry_date: "2026-07-20"
+    stop_loss: null
+    target: null
+    direction: "long"
+    status: "open"
+    exit_price: null
+    exit_date: null
+    exit_reason: null
+    pnl_pct: null
+  - ticker: "AMGN"
+    weight: 0.155
+    sponsor: "Cecil"
+    thesis: "Quality business trading at a discount. P/E: 11.9. Score: 75. (confidence: 75)"
+    entry_price: 368.3900146484375
+    entry_date: "2026-07-20"
+    stop_loss: null
+    target: null
+    direction: "long"
+    status: "open"
+    exit_price: null
+    exit_date: null
+    exit_reason: null
+    pnl_pct: null
+  - ticker: "ADSK"
+    weight: 0.10300000000000001
+    sponsor: "Marky"
+    thesis: "Technical breakout confirmed by volume. Score: 100. (confidence: 100)"
+    entry_price: 214.07000732421875
+    entry_date: "2026-07-20"
+    stop_loss: null
+    target: null
+    direction: "long"
+    status: "open"
+    exit_price: null
+    exit_date: null
+    exit_reason: null
+    pnl_pct: null
+spy_entry: 748.219970703125
+vix_at_entry: 18.1
+fed_stance: "Agencies issue joint statement on handling of highly sensitive information during bank examinations"
+total_weight: 1.0
+cash_weight: 0.0
