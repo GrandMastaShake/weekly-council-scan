@@ -52,6 +52,9 @@ def fetch_yf_price(ticker: str, date: datetime) -> Optional[float]:
         data = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=True)
         if data.empty:
             return None
+        # yfinance >= 1.x can return MultiIndex (Price, Ticker) columns even for one ticker
+        if getattr(data.columns, "nlevels", 1) > 1:
+            data.columns = data.columns.get_level_values(0)
         # Find closest date
         date_str = date.strftime("%Y-%m-%d")
         if date_str in data.index.strftime("%Y-%m-%d"):
@@ -82,6 +85,9 @@ def fetch_week_prices(tickers: List[str], start_date: datetime, end_date: dateti
                     auto_adjust=True
                 )
                 if not data.empty:
+                    # yfinance >= 1.x can return MultiIndex (Price, Ticker) columns
+                    if getattr(data.columns, "nlevels", 1) > 1:
+                        data.columns = data.columns.get_level_values(0)
                     all_prices[t] = {
                         idx.strftime("%Y-%m-%d"): float(row["Close"])
                         for idx, row in data.iterrows()
@@ -132,7 +138,7 @@ def parse_report(report_path: Path) -> Dict:
 
     # Extract picks table
     picks_section = re.search(
-        r"## Top 5 Portfolio Picks\n\|.*?\n\|.*?\n((?:\|.*?\n)+",
+        r"## Top 5 Portfolio Picks\n\|.*?\n\|.*?\n((?:\|.*?\n)+)",
         content,
         re.DOTALL,
     )
