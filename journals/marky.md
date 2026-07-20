@@ -358,3 +358,30 @@ When geopolitical energy rallies, you will wait for clarity. Don't. Clarity is t
 ---
 
 *Harness version: v2 | Last updated: [AUTO-STAMPED] | Next review: When accuracy drops below 50% for 2 consecutive weeks.*
+
+---
+
+## WEEK OF 2026-07-20
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY Weekly | -1.22% | Pullback, not breakdown |
+| VIX | 18.1 | Fear waking up — good for setups |
+
+**Verdict:** The tape corrected last week but momentum leaders held their 4-week MAs. This is a stock-picker's tape, not a crash. I came to the Council loaded.
+
+### This Week's Picks (Council Book — 3 of 5 slots, 61.2% of the book)
+1. **ACN** — 30.2% weight — entry $140.75. Strong momentum breaking above the 4-week MA. 4W return: 12.7%. Score: 100.
+2. **ADBE** — 20.7% weight — entry $230.24. Low volatility uptrend with clean price action. Vol: 1.0%. Score: 100.
+3. **ADSK** — 10.3% weight — entry $214.07. Technical breakout confirmed by volume. Score: 100.
+
+**Cash Position:** 0% of my allocated book (Council fully deployed).
+
+### Debate Note
+Cecil says ACN lacks cash flow. Maybe. But the chart is a scream — 12.7% over 4 weeks in a down week for SPY is relative strength you can bottle. Ophelia pushed AAPL with a macro score of 15. Fifteen. The tape doesn't trade macro scores, it trades momentum.
+
+### Lesson Learned
+I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a breakout without volume confirmation is a trap — that rule applies to EVERY call, not just the ones I remember to check. Next week: volume numbers in every thesis, no exceptions.
+
+---
