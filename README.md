@@ -72,6 +72,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-07-20 | [View](reports/2026-07-20-report.md) | 18.1 | -1.22% | ACN (Marky) |
 | 2026-07-15 | [View](reports/2026-07-15-report.md) | 16.5 | +0.83% | FTNT (Marky) |
 
 <!-- Reports auto-inserted above by cron job -->
