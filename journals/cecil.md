@@ -307,3 +307,33 @@ Tracking the Council's performance. Updated weekly after audit.
 ---
 
 *The harness is living. These rules adapt as scars accumulate. Today's winning heuristic is tomorrow's outdated model. Stay sharp. Stay patient. Trust the balance sheet.*
+
+---
+
+## Week of 2026-07-20 — Entry #002
+
+**Mood:** Skeptical
+**Cash Target:** 35% (Council book: 0% — outvoted)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|-------------|
+| VIX | 18.1 | Elevated vs last week's 16.5 — the crowd is waking up |
+| SPY Weekly | -1.22% | The tape finally agreed with my skepticism |
+
+**Verdict:** Restrictive regime confirmed. Value held the line while the index slipped.
+
+#### This Week's Picks (Council Book)
+- **AMAT** — 23.3% weight — entry $550.58. Deep value at 10.1x earnings with solid fundamentals. Score: 75.
+- **AMGN** — 15.5% weight — entry $368.39. Quality business trading at a discount. P/E: 11.9. Score: 75.
+- **APD** — proposed, cut by consensus. Defensive characteristics with stable cash flows. Score: 75.
+
+#### Debate Note
+I challenged Marky's ACN in session: enthusiasm without cash flow is smoke, not fire. The consensus sized it 30.2% anyway. The garden tolerates one speculative row — but I will be watching whether AMAT's roots outperform ACN's fireworks by Friday.
+
+#### Lesson Learned
+Two of my three picks made the book, but my theses still ship without written stops. "It is cheap" is not a risk plan. Next week: every pick gets a price where the thesis breaks, in writing, before the Council votes.
+
+**Cash Target: 35%** — the Council deployed 100%. Noted for the record.
+
+— **Cecil**, The Fundamentalist
