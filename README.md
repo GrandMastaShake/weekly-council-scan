@@ -25,6 +25,8 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 💼 **[Paper Portfolio Tracker](portfolio/README.md)** — Tracks the Council's weekly picks as real trades with entry prices, stop losses, and real P&L.
 
+🌒 **[Shadow Book](shadow-book.md)** — Counterfactual log: what the engine *would* have booked when the official book diverges (engine fixes, data outages, overrides). The official book is never rewritten.
+
 ## Saturday Research Crew — Sector Wikis
 
 Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs. These feed into Monday's Council session.
