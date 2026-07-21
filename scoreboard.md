@@ -233,7 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
-| — | — | — | — | — | — | — | — |
+| 2026-07-24 | B (3.0 — analysis quality) | TBD (week open) | Marky (3.1) | Ophelia (0 picks advanced) | ACN (B+) | ADSK (B−) | 0% |
 
 > *Append a new row every week. Do not delete history. The scars live here.*
 
@@ -245,7 +245,10 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 | Ticker | Original Agent | Rejection Reason |
 |--------|---------------|------------------|
-| — | — | — |
+| APD | Cecil | Cut by consensus — defensive staples bid lost to momentum/value convergence (2026-07-20) |
+| AAPL | Ophelia | Macro score 15 — below conviction threshold; sector rotation data "Unknown" (2026-07-20) |
+| ABBV | Ophelia | Macro score 15 — below conviction threshold (2026-07-20) |
+| ABNB | Ophelia | Macro score 15 — below conviction threshold (2026-07-20) |
 
 > *A rejected pick that rallies 20% is a lesson. A rejected pick that crashes is a validation. Track both.*
 
@@ -255,9 +258,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** _[AUTO: session date]_  
-**Next Audit:** _[AUTO: following Monday 6:00 AM ET]_  
-**Current Regime:** _[AUTO: pulled from Ophelia's latest assessment]_
+**Last Updated:** 2026-07-20  
+**Next Audit:** 2026-07-27 (Tracker close + narrative grades)  
+**Current Regime:** Restrictive — VIX 18.1, SPY -1.22% wk, defensive bias (Ophelia, 2026-07-20)
 
 ---
 
