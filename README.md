@@ -4,7 +4,7 @@
 
 ## How It Works
 
-Every **Monday at 9:17 AM** (America/Indianapolis), the Council convenes:
+Every **Monday at 9:03 AM** (America/Indianapolis), the Council convenes:
 
 1. **Cecil** (Fundamentalist) scores stocks on P/E ratios, earnings quality, and safety
 2. **Marky** (Technician) reads momentum, moving averages, and volatility
@@ -27,7 +27,7 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 🌒 **[Shadow Book](shadow-book.md)** — Counterfactual log: what the engine *would* have booked when the official book diverges (engine fixes, data outages, overrides). The official book is never rewritten.
 
-⚔️ **[The Arena](arena/README.md)** — Compete against the Council: comment your picks on the weekly Arena issue before Monday 9:00 AM ET, get scored Friday against the Council and SPY. Open to anyone.
+⚔️ **[The Arena](arena/README.md)** — Compete against the Council: comment your picks on the weekly Arena issue before Monday 8:50 AM ET, get scored Friday against the Council and SPY. Open to anyone.
 
 ## Saturday Research Crew — Sector Wikis
 
