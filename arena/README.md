@@ -15,16 +15,16 @@ Think you can beat Cecil, Marky, and Ophelia? Log your book before Monday open a
    EOG 10%
    ```
 
-3. That's it. Entries lock **Monday 9:00 AM ET**.
+3. That's it. Entries lock **Monday 8:50 AM ET**.
 
 ## Rules
 
 - **Weights** must sum to ≤ 100%. The remainder rides as cash (yes, cash is a position — Ophelia approves).
 - **1–10 positions**, any US-listed ticker.
 - **One entry per GitHub user per week.** Multiple comments → your *latest valid* comment before the lock wins.
-- **Lock: Monday 9:00 AM ET.** Comment timestamps are the referee. Edits after the lock disqualify the comment.
+- **Lock: Monday 8:50 AM ET.** Comment timestamps are the referee. Edits after the lock disqualify the comment.
 - **Entry prices:** Monday's first available price per ticker (same yfinance source as the Council's Tracker). **Exit:** Friday close. **Benchmark:** SPY.
-- The Council's book publishes Monday ~9:20 AM ET — *after* the lock. No copying the librarian's homework.
+- The Council's book publishes after the lock. No copying the librarian's homework.
 
 ## Scoring
 
