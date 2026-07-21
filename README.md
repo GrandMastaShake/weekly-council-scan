@@ -27,6 +27,8 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 🌒 **[Shadow Book](shadow-book.md)** — Counterfactual log: what the engine *would* have booked when the official book diverges (engine fixes, data outages, overrides). The official book is never rewritten.
 
+⚔️ **[The Arena](arena/README.md)** — Compete against the Council: comment your picks on the weekly Arena issue before Monday 9:00 AM ET, get scored Friday against the Council and SPY. Open to anyone.
+
 ## Saturday Research Crew — Sector Wikis
 
 Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs. These feed into Monday's Council session.
