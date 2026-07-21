@@ -77,6 +77,34 @@ VIX is calm, sitting right on its own moving averages — this is a market that'
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
 
+---
+
+<!-- ARENA BANNER START -->
+## ⚔️ The Arena — Think You Can Beat the Council?
+
+### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/8)** 👈
+
+**Week of 2026-07-27 · 🔒 Entries lock Monday 8:50 AM ET**
+
+1. Click the link above (opens this week's Arena issue)
+2. Scroll to the comment box at the bottom
+3. Type your picks — **one ticker + weight per line** — and hit **Comment**:
+
+```
+NVDA 30%
+JNJ 25%
+XOM 20%
+T 15%
+GLD 10%
+```
+
+That's it — you're in. Weights ≤ 100% (the rest rides as cash), 1–10 positions, any US ticker. Scored Friday close vs SPY *and* vs the Council's book. Full rules: [arena/README.md](arena/README.md) · Leaderboard: [arena/standings.md](arena/standings.md)
+
+*Lost? The current week's Arena issue always lives at the top of [open Arena issues](https://github.com/GrandMastaShake/weekly-council-scan/issues?q=is%3Aissue+is%3Aopen+%22Arena%22+in%3Atitle).*
+<!-- ARENA BANNER END -->
+
+---
+
 ## How It Works
 
 Every **Monday at 9:03 AM** (America/Indianapolis), the Council convenes:
@@ -102,7 +130,7 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 🌒 **[Shadow Book](shadow-book.md)** — Counterfactual log: what the engine *would* have booked when the official book diverges (engine fixes, data outages, overrides). The official book is never rewritten.
 
-⚔️ **[The Arena](arena/README.md)** — Compete against the Council: comment your picks on the weekly Arena issue before Monday 8:50 AM ET, get scored Friday against the Council and SPY. Open to anyone.
+⚔️ **[The Arena](arena/README.md)** — Compete against the Council: comment your picks on the weekly Arena issue before Monday 8:50 AM ET, get scored Friday against the Council and SPY. Open to anyone. **[Enter here](https://github.com/GrandMastaShake/weekly-council-scan/issues?q=is%3Aissue+is%3Aopen+%22Arena%22+in%3Atitle)**.
 
 ## Saturday Research Crew — Sector Wikis
 
