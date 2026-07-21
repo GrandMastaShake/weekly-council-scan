@@ -16,7 +16,9 @@
 | Implied SPY Move (30D) | ~±5.4% | — | — | — |
 | VVIX (VIX of VIX) | ~85–90 (stale) | — | — | ⚠️ **External feed required** |
 
-**Marky Interpretation:** VIX at 18.77 has **escaped the complacency zone**. A week ago it was 15.03 — a +25% spike in five sessions, the sharpest weekly jump this quarter (3-month high: 22.22). The market is finally pricing risk again: an oil shock, a firmer dollar, and a growth leadership break all landed in the same week. But 18.77 is still below the 20 regime-shift line — this is a warning shot, not panic. The 20D MA at 17.01 is now rising, and the trend has flipped from falling to spiking. If VIX closes above 20, the regime flips red and de-risking begins. Watch: oil headlines, USDJPY intervention risk, and whether SMH can hold support.
+> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. The 18.77 close is cross-confirmed (FRED VIXCLS, CBOE, Investing.com). The 1W/1M comparisons are Yahoo ^VIX prints and may read ~1–3 pts off other vendors — the WoW direction and magnitude (~+20–25%) hold across sources.*
+
+**Marky Interpretation:** VIX at 18.77 has **escaped the complacency zone**. CBOE confirms +12.2% on Friday alone (16.73 → 18.77) after a 15.67 mid-week print — roughly +20–25% on the week depending on vendor, the sharpest jump this quarter (3-month high: 22.22). The market is finally pricing risk again: an oil shock, a firmer dollar, and a growth leadership break all landed in the same week. But 18.77 is still below the 20 regime-shift line — this is a warning shot, not panic. The 20D MA at 17.01 is now rising, and the trend has flipped from falling to spiking. If VIX closes above 20, the regime flips red and de-risking begins. Watch: oil headlines, USDJPY intervention risk, and whether SMH can hold support.
 
 ---
 
