@@ -3,21 +3,78 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-07-18
+## 🌡️ Market Brief — Week of 2026-07-21
 
 > *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
 
-**Regime:** Rotation, not correction. Tech posted its worst week of 2026 while 8 of 11 sectors rose and the S&P held within 1% of its record. The market is paying for cash flow over narrative: value beat growth, equal-weight beat cap-weight.
+### The Headline
 
-**The setup:** A collision fortnight. FOMC (Jul 28–29) lands *inside* the mega-cap earnings window — MSFT/META (Jul 29), AAPL/AMZN (Jul 30). June CPI came in soft (-0.4% m/m) but WTI spiked +12% to ~$82 on Iran strikes, re-arming inflation before the disinflation print was 72 hours old. The 10Y (~4.52%) is the master variable; financials are the only sector it helps.
+Iran broke the ceasefire — again. A ninth wave of U.S. strikes over the weekend, Tehran walked away from the interim peace deal, and Iran is threatening to choke shipping through the Strait of Hormuz. WTI popped toward $88 intraday before fading back to $82.11 by the close. Stocks shrugged it off — the S&P finished basically flat at 7,498.25 while small caps hit a fresh record and materials/energy outperformed. The real story of the week wasn't Iran, it was tech: semis got hit hard, and money rotated into healthcare, financials, energy, and real estate instead. VIX is calm — closing at ~18.5, sitting almost exactly on its 10-day, 50-day, and 200-day moving averages: a market in equilibrium, not a fear spike. Also: Apple's Tim Cook officially steps down as CEO on September 1st, handing the reins to John Ternus after 15 years.
 
-**Council posture:** Maximum caution — 45% cash, no size into binary events. Guidance matters, beats don't (TSM beat +10.9% and fell; ABT beat +2.6% and ripped +10.7%).
+### Index Check
 
-- 🔴 **Biggest risk:** The oil→Fed→multiple chain detonating inside the mega-cap gauntlet (WTI > $90 → September hike → 10Y > 4.75% → broad repricing).
-- 🟢 **Biggest opportunity:** The AI valuation reset (NVDA ~16x forward, MSFT 23.5x) if Jul 29–30 guidance confirms the ~$725B capex supercycle.
-- 👁️ **Watch:** FOMC decision Wed 2:00 PM ET · XLK $171.35 line in the sand · VIX 20/25 regime lines.
+| Index | Level | Today | The Story |
+|---|---|---|---|
+| S&P 500 | 7,498.25 | ~flat | Small caps hit records while tech wobbled underneath |
+| Nasdaq 100 | 28,901.00 | Soft | Semis still the weak link after last week's rout |
+| Dow Jones | 52,131.00 | +0.1% | Industrials and financials the steady hand |
+| Russell 2000 | 2,963.10 | Record territory | Small caps leading the tape again |
+| VIX | ~18.5 | ~flat, on its MAs | Calm — sitting right on its own averages |
 
-*[Full synthesis →](wiki/synthesis.md)*
+> **Dad Translation:** The index barely moved, and the volatility gauge is sitting right on its own averages — a market that's alert but not scared. The rotation story underneath (tech cooling, value/defensives getting bid) is real, but it's happening at a calm pace, not a panic pace.
+
+### What's Moving Markets — The Big Stories
+
+| Story | What Happened | Why It Matters | Dad Translation |
+|---|---|---|---|
+| 🔥 **Iran Breaks the Truce** | Ceasefire collapsed, ninth wave of U.S. strikes, Iran threatens Hormuz + Bab el-Mandeb; WTI popped toward $88 intraday, settled at $82.11 | Oil headline risk right as the Fed weighs policy | Gas prices could tick up, but the market isn't panicking about it yet |
+| 💻 **Semis Still Cooling** | Semiconductor sector was the market's weakest group over the past month after a sharp selloff | Leadership shift away from the group that carried the market all year | If you're holding chip names, tight stops still matter here |
+| 🔄 **Rotation Continues** | Healthcare, energy, financials, and real estate led sector performance over the past month while tech lagged | Value and defensives are finally getting paid | The "boring" names in the portfolio are doing the heavy lifting |
+| 👔 **Apple's New Boss** | John Ternus officially takes over as Apple CEO Sept. 1; Cook becomes executive chairman after a 15-year run | End of an era for the world's most valuable company | Watch AAPL's July 30 earnings as the first real test under the transition |
+
+### Sector Scorecard (1-Year Trend + Today)
+
+| Sector | 1Y Return | Today | Signal |
+|---|---|---|---|
+| 🔥 Basic Materials | +26.31% | -0.73% | Strong trend, pulling back today |
+| 🔥 Communication Services | +31.58% | +0.92% | Leading group, still grinding higher |
+| 🔥 Energy | +33.63% | +0.16% | Oil-shock beneficiary, best performer of the group |
+| 🟡 Technology | +26.40% | +0.05% | Big 1Y gain but stalling short-term |
+| 🟡 Healthcare | +20.57% | -1.42% | Strong 1Y trend, softer today |
+| 🟡 Financials | +13.00% | -0.74% | Steady climber, minor pullback |
+| 🟡 Industrials | +14.49% | -1.15% | Choppy — winners and losers diverging inside the group |
+| 🟡 Utilities | +11.87% | -0.51% | Defensive bid cooling slightly |
+| ❄️ Consumer Cyclical | +2.45% | -0.26% | Weakest major group over the past year |
+| ❄️ Real Estate | +10.06% | -0.65% | Modest gainer, pulling back today |
+
+> **Dad Translation:** Energy, materials, and communication services have been the strongest year-long trends. Consumer cyclical is the laggard. Today was a mild pullback day across almost every sector — nothing dramatic.
+
+### Market Breadth Snapshot
+
+| Metric | Reading | Signal |
+|---|---|---|
+| Advancing / Declining | 51.6% / 44.5% | 🟢 Slightly positive — more winners than losers |
+| New Highs vs. New Lows | 86.0% vs. 14.0% | 🟢 Strong — most of the move is toward highs, not lows |
+| Above 50-Day MA | 64.9% | 🟢 Healthy majority of stocks in uptrends |
+| Above 200-Day MA | 52.6% | 🟢 Modestly positive, longer-term trend intact |
+
+> **Dad Translation:** Breadth is genuinely fine right now — this isn't a market where a few big names are propping up everything else while the rest quietly fall apart.
+
+### What to Watch This Week
+
+| Date | Event | What to Do |
+|---|---|---|
+| This week | Oil/Hormuz headlines | Watch for a sustained close above $90 WTI — that would be the real danger signal, not today's intraday spike |
+| Jul 23 | QCOM earnings | Smartphone/auto chip read — sector bellwether after the semi pullback |
+| Jul 28–29 | FOMC meeting (decision Wed 2:00 PM ET) | Balancing decent growth data against oil-driven inflation risk — hold 3.50–3.75% expected |
+| Jul 30 | Q2 GDP advance + June PCE (8:30 AM) | The Fed's preferred inflation gauge lands the morning after the decision — core PCE > 0.3% MoM = hawkish re-acceleration |
+| Jul 30 | AAPL earnings | First full quarter under the Cook-to-Ternus transition |
+
+### The Bottom Line
+
+VIX is calm, sitting right on its own moving averages — this is a market that's alert, not scared. The real story is a slow, orderly rotation out of semis/tech and into energy, healthcare, financials, and real estate, with breadth still healthy underneath the surface. Iran/Hormuz headlines are worth watching for a sustained oil breakout above $90, but the tape itself isn't showing fear right now. Next week is the quarter's biggest collision: the FOMC decision lands inside the mega-cap earnings window, with GDP and PCE the morning after. The Council is holding 45% cash into it.
+
+*[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
 
 ## How It Works
