@@ -2,6 +2,24 @@
 
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
+<!-- MARKET BRIEF START -->
+## 🌡️ Market Brief — Week of 2026-07-18
+
+> *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
+
+**Regime:** Rotation, not correction. Tech posted its worst week of 2026 while 8 of 11 sectors rose and the S&P held within 1% of its record. The market is paying for cash flow over narrative: value beat growth, equal-weight beat cap-weight.
+
+**The setup:** A collision fortnight. FOMC (Jul 28–29) lands *inside* the mega-cap earnings window — MSFT/META (Jul 29), AAPL/AMZN (Jul 30). June CPI came in soft (-0.4% m/m) but WTI spiked +12% to ~$82 on Iran strikes, re-arming inflation before the disinflation print was 72 hours old. The 10Y (~4.52%) is the master variable; financials are the only sector it helps.
+
+**Council posture:** Maximum caution — 45% cash, no size into binary events. Guidance matters, beats don't (TSM beat +10.9% and fell; ABT beat +2.6% and ripped +10.7%).
+
+- 🔴 **Biggest risk:** The oil→Fed→multiple chain detonating inside the mega-cap gauntlet (WTI > $90 → September hike → 10Y > 4.75% → broad repricing).
+- 🟢 **Biggest opportunity:** The AI valuation reset (NVDA ~16x forward, MSFT 23.5x) if Jul 29–30 guidance confirms the ~$725B capex supercycle.
+- 👁️ **Watch:** FOMC decision Wed 2:00 PM ET · XLK $171.35 line in the sand · VIX 20/25 regime lines.
+
+*[Full synthesis →](wiki/synthesis.md)*
+<!-- MARKET BRIEF END -->
+
 ## How It Works
 
 Every **Monday at 9:03 AM** (America/Indianapolis), the Council convenes:
