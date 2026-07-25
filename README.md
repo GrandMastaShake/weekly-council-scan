@@ -3,76 +3,82 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-07-21
+## 🌡️ Market Brief — Week of 2026-07-25
 
 > *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
 
 ### The Headline
 
-Iran broke the ceasefire — again. A ninth wave of U.S. strikes over the weekend, Tehran walked away from the interim peace deal, and Iran is threatening to choke shipping through the Strait of Hormuz. WTI popped toward $88 intraday before fading back to $82.11 by the close. Stocks shrugged it off — the S&P finished basically flat at 7,498.25 while small caps hit a fresh record and materials/energy outperformed. The real story of the week wasn't Iran, it was tech: semis got hit hard, and money rotated into healthcare, financials, energy, and real estate instead. VIX is calm — closing at ~18.5, sitting almost exactly on its 10-day, 50-day, and 200-day moving averages: a market in equilibrium, not a fear spike. Also: Apple's Tim Cook officially steps down as CEO on September 1st, handing the reins to John Ternus after 15 years.
+The growth unwind deepened and the oil shock intensified in the same week. WTI crude surged +8.3% to $89.31 — Brent briefly breached $100 on Friday — as Iran's ceasefire collapsed and Hormuz traffic remained throttled. Meanwhile, jobless claims plunged to 187K, the lowest reading since 1969, proving the labor market is bulletproof even as June NFP printed a miserable +57K. The 10-year Treasury punched to 4.70%, a multi-month high, and the market finally stopped ignoring it: tech multiples compressed violently, SMH fell deeper into correction territory, and the S&P dropped -1.2% to 7,408.30. The counter-story was the defensive rotation — energy (+3.4%), utilities (+1.6%), and industrials (+1.0%) caught the bid while healthcare's earnings trifecta (UNH/JNJ/ABT) held the line. VIX climbed to 18.70, elevated but not panicked — the canary is awake. The corporate bombshell: Netflix crashed -7.3% on a guidance miss and Tesla imploded -17.8% on a 40% EPS miss, proving that in this market, the beat is the appetizer and guidance is the executioner.
 
 ### Index Check
 
 | Index | Level | Today | The Story |
 |---|---|---|---|
-| S&P 500 | 7,498.25 | ~flat | Small caps hit records while tech wobbled underneath |
-| Nasdaq 100 | 28,901.00 | Soft | Semis still the weak link after last week's rout |
-| Dow Jones | 52,131.00 | +0.1% | Industrials and financials the steady hand |
-| Russell 2000 | 2,963.10 | Record territory | Small caps leading the tape again |
-| VIX | ~18.5 | ~flat, on its MAs | Calm — sitting right on its own averages |
+| S&P 500 | 7,408.30 | -1.2% | Tech cracked, energy caught the bid, but the unwind is no longer hiding in the index |
+| Nasdaq 100 | 28,454.81 | -1.5% | Semis led the decline; growth multiples compressed on 4.70% 10Y |
+| Dow Jones | 51,711.65 | -0.8% | Industrials and financials held until Thursday's oil spike |
+| Russell 2000 | 2,940.16 | -0.8% | Small-cap rally paused as rates surged to multi-month highs |
+| VIX | 18.70 | +11.8% | Elevated but stable — the canary is awake, not dead |
 
-> **Dad Translation:** The index barely moved, and the volatility gauge is sitting right on its own averages — a market that's alert but not scared. The rotation story underneath (tech cooling, value/defensives getting bid) is real, but it's happening at a calm pace, not a panic pace.
+> **Dad Translation:** The stock market had a rough week — the main indexes all fell around 1% — because two things happened at once: oil prices jumped toward $90 (which makes the Fed nervous about inflation) and the interest rate on government bonds hit its highest level in months. That combo is kryptonite for expensive tech stocks. The good news: this wasn't a panic — the fear gauge went up, but not to scary levels. It was more like a deliberate rotation out of the year's winners and into safer, cash-flow-heavy names.
 
 ### What's Moving Markets — The Big Stories
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |---|---|---|---|
-| 🔥 **Iran Breaks the Truce** | Ceasefire collapsed, ninth wave of U.S. strikes, Iran threatens Hormuz + Bab el-Mandeb; WTI popped toward $88 intraday, settled at $82.11 | Oil headline risk right as the Fed weighs policy | Gas prices could tick up, but the market isn't panicking about it yet |
-| 💻 **Semis Still Cooling** | Semiconductor sector was the market's weakest group over the past month after a sharp selloff | Leadership shift away from the group that carried the market all year | If you're holding chip names, tight stops still matter here |
-| 🔄 **Rotation Continues** | Healthcare, energy, financials, and real estate led sector performance over the past month while tech lagged | Value and defensives are finally getting paid | The "boring" names in the portfolio are doing the heavy lifting |
-| 👔 **Apple's New Boss** | John Ternus officially takes over as Apple CEO Sept. 1; Cook becomes executive chairman after a 15-year run | End of an era for the world's most valuable company | Watch AAPL's July 30 earnings as the first real test under the transition |
+| 🔥 **Oil Shock Intensifies** | WTI +8.3% to $89.31; Brent briefly >$100 on Friday; Iran ceasefire collapsed; Hormuz + Bab el-Mandeb threatened | Inflation re-armed just as June CPI went soft; the Fed's policy box is locked | Gas prices are climbing again, and that makes everything the Fed wants to do harder — they can't cut rates if oil is spiking |
+| 💻 **Tech's Worst Week of 2026** | XLK -5.5% (prior week) then stabilized; SMH correction deepening; P/E compressed 40x → 33x | The AI multiple died; the supercycle did not — TSMC raised capex | The companies building AI are still spending like crazy, but investors stopped paying crazy prices for their stocks |
+| 🏥 **Healthcare's Earnings Trifecta** | UNH +29.8% EPS beat, ABT +10.7% on +2.6% beat, JNJ beat and raised — all on the same morning | Expensive defensives earned their multiples for once | The doctors and drugmakers proved they can grow profits even when the economy is shaky — the market rewarded them |
+| 📉 **NFLX and TSLA Earnings Implosions** | NFLX crashed -7.3% on soft Q3 guidance; TSLA -17.8% on 33c EPS vs 55c expected | "Beat the number, crash on guidance" is the new earnings regime | Even when companies technically beat expectations, if they hint the future looks softer, their stocks get hammered |
+| 📊 **Labor Market Paradox** | Claims 187K (lowest since 1969) vs June NFP +57K (weakest in years) | The bond market chose claims; the Fed's calculus just got harder | The job market looks incredibly strong by one measure and worryingly weak by another — the Fed has to pick which one to believe |
 
-### Sector Scorecard (1-Year Trend + Today)
+### Sector Scorecard (1-Year Trend + Week)
 
-| Sector | 1Y Return | Today | Signal |
+| Sector | 1Y Return | Week | Signal |
 |---|---|---|---|
-| 🔥 Basic Materials | +26.31% | -0.73% | Strong trend, pulling back today |
-| 🔥 Communication Services | +31.58% | +0.92% | Leading group, still grinding higher |
-| 🔥 Energy | +33.63% | +0.16% | Oil-shock beneficiary, best performer of the group |
-| 🟡 Technology | +26.40% | +0.05% | Big 1Y gain but stalling short-term |
-| 🟡 Healthcare | +20.57% | -1.42% | Strong 1Y trend, softer today |
-| 🟡 Financials | +13.00% | -0.74% | Steady climber, minor pullback |
-| 🟡 Industrials | +14.49% | -1.15% | Choppy — winners and losers diverging inside the group |
-| 🟡 Utilities | +11.87% | -0.51% | Defensive bid cooling slightly |
-| ❄️ Consumer Cyclical | +2.45% | -0.26% | Weakest major group over the past year |
-| ❄️ Real Estate | +10.06% | -0.65% | Modest gainer, pulling back today |
+| 🔥 Semiconductors | +127% | +2.0% | 1Y monster, week bounced off correction lows — still fragile |
+| 🔥 Energy | +35.4% | +3.4% | Oil-shock beneficiary; RSI 86 says overbought, not sustainable |
+| 🔥 Technology | +35.3% | +0.5% | 1Y leader stalling; multiple compression the story |
+| 🟡 Healthcare | +20% | -0.3% | Earnings trifecta held the line; breakout watch above $164 |
+| 🟡 Industrials | +20.0% | +1.0% | Violent rotation inside: rails up, AI-infrastructure down |
+| 🟡 Consumer Staples | +13.5% | -3.1% | Profit-taking in the year's best defensive; real staples (GIS/CPB) hold |
+| 🟡 Materials | +11.5% | -0.5% | Dollar > 101 = Ophelia's embargo back; FCX beat, SHW missed |
+| 🟡 Financials | +11.0% | -1.7% | Coil tightens near $56.80; curve steepening is the oxygen |
+| 🟡 Utilities | +11.0% | +1.6% | Bond-proxy selloff in traditional names; CEG/VST the green shoots |
+| 🟡 Real Estate | +10.5% | -1.0% | Tower REITs broke (CCI -5.8%); DLR/WELL the resilience |
+| ❄️ Communication Services | +6.1% | -6.5% | NFLX broke the recovery; META/GOOGL report Jul 29 |
+| ❄️ Consumer Discretionary | +2.0% | -5.2% | TSLA -17.8% dragged the sector; AMZN Jul 30 is the entire game |
 
-> **Dad Translation:** Energy, materials, and communication services have been the strongest year-long trends. Consumer cyclical is the laggard. Today was a mild pullback day across almost every sector — nothing dramatic.
+> **Dad Translation:** The year's biggest winners — chips, tech, and energy — are still up huge over 12 months, but this week showed they're not bulletproof. The real action was underneath: money moved out of risky growth stocks and into companies that make actual cash you can count on. Healthcare, industrials, and utilities got bought while streaming, EVs, and discretionary retail got sold hard.
 
 ### Market Breadth Snapshot
 
 | Metric | Reading | Signal |
 |---|---|---|
-| Advancing / Declining | 51.6% / 44.5% | 🟢 Slightly positive — more winners than losers |
-| New Highs vs. New Lows | 86.0% vs. 14.0% | 🟢 Strong — most of the move is toward highs, not lows |
-| Above 50-Day MA | 64.9% | 🟢 Healthy majority of stocks in uptrends |
-| Above 200-Day MA | 52.6% | 🟢 Modestly positive, longer-term trend intact |
+| Advancing / Declining | — | 🟡 Stale data — needs refresh before Monday |
+| New Highs vs New Lows | — | 🟡 Stale data — needs refresh before Monday |
+| % Above 50-Day MA | — | 🟡 Stale data — likely deteriorating after two down weeks |
+| % Above 200-Day MA | — | 🟡 Stale data — long-term trend intact but weakening |
 
-> **Dad Translation:** Breadth is genuinely fine right now — this isn't a market where a few big names are propping up everything else while the rest quietly fall apart.
+> **Dad Translation:** The honest truth is we don't have fresh breadth data this week — the numbers we have are ten days old and predate the recent selling. What we do know is that the market's leaders have been cracking while the index itself only fell modestly, which usually means the breadth underneath is getting worse even if the headline looks okay. Think of it like a sports team where the star players are injured but the scoreboard still looks close.
 
 ### What to Watch This Week
 
 | Date | Event | What to Do |
 |---|---|---|
-| This week | Oil/Hormuz headlines | Watch for a sustained close above $90 WTI — that would be the real danger signal, not today's intraday spike |
-| Jul 23 | QCOM earnings | Smartphone/auto chip read — sector bellwether after the semi pullback |
-| Jul 28–29 | FOMC meeting (decision Wed 2:00 PM ET) | Balancing decent growth data against oil-driven inflation risk — hold 3.50–3.75% expected |
-| Jul 30 | Q2 GDP advance + June PCE (8:30 AM) | The Fed's preferred inflation gauge lands the morning after the decision — core PCE > 0.3% MoM = hawkish re-acceleration |
-| Jul 30 | AAPL earnings | First full quarter under the Cook-to-Ternus transition |
+| Mon Jul 27, 8:30 AM | Durable Goods Orders (June) | Capex check: core capital goods < 0% = business investment rolling over |
+| Wed Jul 29, 2:00 PM | **FOMC Decision** | Hold at 3.50–3.75% is ~70% priced. The language is the risk. Any hike = full regime shift. |
+| Wed Jul 29, 2:30 PM | Warsh Press Conference | Listen for whether he updates his "inflation too high" Sintra stance now that oil is >$100 |
+| Wed Jul 29, AMC | **MSFT / META earnings** | Azure >39–40%; META ad growth >+15% + Anthropic deal confirmation. The Super Bowl. |
+| Thu Jul 30, 8:30 AM | **GDP Q2 Advance + June PCE** | Growth + inflation in one minute. Core PCE ≤ 0.2% = disinflation confirmed. > 0.3% = hawkish nightmare. |
+| Thu Jul 30, AMC | **AAPL / AMZN earnings** | AAPL trades above its mean target — hedge or trim into the print. AMZN is 22% of XLY. |
+| Fri Jul 31, 8:30 AM | Employment Cost Index (Q2) | Wage check: > 3.6% = wage re-acceleration; < 3.2% = labor slack confirmed |
+| Fri Jul 31 | XOM / CVX / DLR earnings | War-premium read for energy; AI-landlord read for REITs |
 
 ### The Bottom Line
 
-VIX is calm, sitting right on its own moving averages — this is a market that's alert, not scared. The real story is a slow, orderly rotation out of semis/tech and into energy, healthcare, financials, and real estate, with breadth still healthy underneath the surface. Iran/Hormuz headlines are worth watching for a sustained oil breakout above $90, but the tape itself isn't showing fear right now. Next week is the quarter's biggest collision: the FOMC decision lands inside the mega-cap earnings window, with GDP and PCE the morning after. The Council is holding 45% cash into it.
+The regime shifted this week from "soft landing with rotation" to **stagflation-lite confirmed**: growth is sluggish (PMI composite 51.8, services 51.5), inflation is falling on core but re-energized by oil ($89 WTI, Brent >$100), and the labor market is simultaneously bulletproof (claims 187K) and fragile (NFP +57K). The Fed is trapped — it meets Wednesday with no good options. The rotation from growth to value/defensives/energy is entrenched, but now the index itself is rolling over too. Credit showed its first crack: HYG broke its month-long range with a -0.71% week. The Council is holding **45% cash** into the FOMC + mega-cap earnings collision, with deployment triggers gated by: (1) a dovish FOMC hold with oil under $80, (2) MSFT/META/AAPL/AMZN guidance confirming the AI chain, and (3) XLK recapturing its 50D at $182.80. Until then, the umbrella is cash.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
