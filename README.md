@@ -140,21 +140,21 @@ Each agent maintains a **living harness** — a journal of beliefs, scars, opera
 
 ## Saturday Research Crew — Sector Wikis
 
-Every **Saturday at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs. These feed into Monday's Council session.
+Every **Saturday starting at 10:09 AM** (America/Indianapolis), the Research Crew updates sector-specific intelligence briefs in staggered 30-minute slots. These feed into Monday's Council session.
 
 | Sector | ETF | Wiki | Update Time |
 |---|---|---|---|
 | 🖥️ **Technology** | XLK | [Tech Wiki](wiki/tech.md) | Saturdays 10:09 AM |
-| ⛽ **Energy** | XLE | [Energy Wiki](wiki/energy.md) | Saturdays 10:19 AM |
-| 🏦 **Financials** | XLF | [Financials Wiki](wiki/financials.md) | Saturdays 10:29 AM |
-| 🏥 **Healthcare** | XLV | [Healthcare Wiki](wiki/healthcare.md) | Saturdays 10:39 AM |
-| 🛍️ **Consumer Discretionary** | XLY | [Consumer Discretionary Wiki](wiki/consumer-discretionary.md) | Saturdays 10:49 AM |
-| 🍞 **Consumer Staples** | XLP | [Consumer Staples Wiki](wiki/consumer-staples.md) | Saturdays 10:59 AM |
-| ⚙️ **Industrials** | XLI | [Industrials Wiki](wiki/industrials.md) | Saturdays 11:09 AM |
-| ⛏️ **Materials + Real Estate** | XLB / XLRE | [Materials Wiki](wiki/materials.md) / [Real Estate Wiki](wiki/real-estate.md) | Saturdays 11:19 AM |
-| ⚡ **Utilities** | XLU | [Utilities Wiki](wiki/utilities.md) | Saturdays 11:29 AM |
-| 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 11:39 AM |
-| 💻 **Semiconductors** | SMH | [Semiconductors Wiki](wiki/semiconductors.md) | Saturdays 11:59 AM |
+| ⛽ **Energy** | XLE | [Energy Wiki](wiki/energy.md) | Saturdays 10:39 AM |
+| 🏦 **Financials** | XLF | [Financials Wiki](wiki/financials.md) | Saturdays 11:09 AM |
+| 🏥 **Healthcare** | XLV | [Healthcare Wiki](wiki/healthcare.md) | Saturdays 11:39 AM |
+| 🛍️ **Consumer Discretionary** | XLY | [Consumer Discretionary Wiki](wiki/consumer-discretionary.md) | Saturdays 12:09 PM |
+| 🍞 **Consumer Staples** | XLP | [Consumer Staples Wiki](wiki/consumer-staples.md) | Saturdays 12:39 PM |
+| ⚙️ **Industrials** | XLI | [Industrials Wiki](wiki/industrials.md) | Saturdays 1:09 PM |
+| ⛏️ **Materials + Real Estate** | XLB / XLRE | [Materials Wiki](wiki/materials.md) / [Real Estate Wiki](wiki/real-estate.md) | Saturdays 1:39 PM |
+| ⚡ **Utilities** | XLU | [Utilities Wiki](wiki/utilities.md) | Saturdays 2:09 PM |
+| 📡 **Communication Services** | XLC | [Communication Services Wiki](wiki/communication-services.md) | Saturdays 2:39 PM |
+| 💻 **Semiconductors** | SMH | [Semiconductors Wiki](wiki/semiconductors.md) | Saturdays 3:09 PM |
 
 ## Saturday Research Crew — Cross-Cutting Dashboards
 
@@ -162,9 +162,9 @@ These dashboards synthesize intelligence across all sectors and feed the Canary 
 
 | Dashboard | Wiki | Update Time |
 |---|---|---|
-| 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 12:09 PM |
-| 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | Saturdays 12:19 PM |
-| 📅 **Economic Calendar** | [Economic Calendar](wiki/economic-calendar.md) | Saturdays 11:59 AM |
+| 🐤 **Canary Watch** | [Canary Watch](wiki/canary-watch.md) | Saturdays 3:39 PM |
+| 📋 **Earnings Surveillance** | [Earnings Surveillance](wiki/earnings-surveillance.md) | Saturdays 4:09 PM |
+| 📅 **Economic Calendar** | [Economic Calendar](wiki/economic-calendar.md) | Saturdays 3:09 PM |
 
 ## Saturday Research Crew — Synthesis Agent
 
@@ -172,7 +172,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Report | Wiki | Update Time |
 |---|---|---|
-| 🧠 **Weekly Synthesis** | [Synthesis](wiki/synthesis.md) | Saturdays 2:56 PM |
+| 🧠 **Weekly Synthesis** | [Synthesis](wiki/synthesis.md) | Saturdays 4:56 PM |
 
 ## How to Get Notifications on Your Phone
 
