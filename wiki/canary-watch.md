@@ -79,9 +79,7 @@
 
 ## SECTOR CORRELATION MATRIX
 
-> *30-day rolling correlation with SPY. Updated weekly from live price data.*
-
-![Sector Correlation Heatmap — 2026-07-25](../assets/correlation-heatmap-2026-07-25.png)
+> *30-day rolling correlation with SPY. Updated weekly from live price data. Text-only dashboard — no generated images.*
 
 | Sector | ETF | vs. SPY Correlation | Regime |
 |---|---|---|---|
@@ -162,7 +160,7 @@
 | Sector Rotation | 🟡 Rotation | Growth → Defense/Energy | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
 | DXY | 🟡 Firming | Rising above 101 | 🟡 >102 | 🔴 >105 |
 | Geopolitics | 🟡 Elevated | Oil spike / Iran | 🟡 Oil >$90 | 🔴 Oil >$100 |
-| Credit Risk | 🟡 Low-Moderate | HYG -0.71% | 🟡 CDS widening | 🔴 Bank stress |
+| Credit Risk | 🟡 Low-Moderate | HYG weakening | 🟡 CDS widening | 🔴 Bank stress |
 | Overall Risk | 🟡 **CAUTION** | — | — | — |
 
 **Weekly Narrative — Overall Assessment:** This was the week the canary **stayed awake**. The key developments: (1) VIX stabilized at 18.70 — no further panic, but no relief either; the elevated regime that began last week is holding; (2) WTI crude surged another +8.3% to $89.31, now +22% on the month and within a dollar of the $90 systematic trigger; (3) Treasury yields spiked — the 10Y jumped +16 bps to 4.70% and the 5Y +19 bps to 4.46%, as the bond market finally prices oil-driven inflation risk; (4) the growth unwind deepened — SMH is now -12.44% vs. SPY on the month (well past the -10% Risk Register trigger), XLK at -6.30% vs. SPY, and XLY at -4.55% vs. SPY; (5) credit showed its first crack — HYG fell -0.71% to $79.23, breaking a month-long range; (6) DXY firmed to 101.43 and USDJPY pushed to 163.79, deeper into the intervention zone. The stabilizers: the yield curve remains positive (no inversion), copper is recovering (+2.9% MoM), and gold bounced +1.4% from its lows. The fragilities: oil at $89.31 is a hair from triggering systematic repositioning, the 10Y at 4.70% is restrictive and rising, credit and breadth data are stale, and the growth leadership unwind is now showing in the headline index (SPY -1.7% this week, -0.8% on the month).
@@ -196,5 +194,5 @@
 ---
 
 *Last updated by Saturday Research Crew: 2026-07-25*
-*Next update: Every Saturday 12:09 PM ET*
+*Next update: Every Saturday 3:39 PM ET*
 *Data sources: Yahoo Finance, CBOE, Federal Reserve, ICE, FRED, market data feeds*
