@@ -10,64 +10,68 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $179.41 | $179.16 (Jun 17) | +0.1% |
-| 52W Range | $145.87 – $186.45 | $147.14 – $186.45 | High set Jul 6; low Nov 21 |
+| Price | $182.66 | $179.41 (Jul 17) | **+1.8%** |
+| 52W Range | $147.14 – $186.45 | $147.14 – $186.45 | High set Jul 6 |
 | AUM | ~$20–25B | — | — |
-| YTD Return | **+16.27%** | ~+20.1% | -3.8 pts |
-| 1Y Return | ~+20.0% | ~+22–26% | Cooled |
-| P/E Ratio | ~31.0 | ~31.0 | ~flat |
-| Dividend Yield | ~1.1% | ~1.11% | ~flat |
+| YTD Return | **+20.1%** | ~+16.3% | +3.8 pts |
+| 1Y Return | ~+22.0% | ~+20.0% | Extended |
+| P/E Ratio | ~31.4 | ~31.0 | Slight expansion |
+| Dividend Yield | ~1.11% | ~1.11% | ~flat |
 | Beta | ~1.0–1.1 | — | — |
 | Total Holdings | 78 | 78 | — |
-| Avg Daily Volume | ~8.0M shares | ~6.7M | Elevated |
+| Avg Daily Volume | ~7.5M shares | ~8.0M | Normalized |
 
-**Marky Tape Read:** The breakout attempt failed — for now. XLI tagged a 52-week high of $186.45 on July 6, then gave back 3.8% over two weeks, closing Friday at $179.41 (-1.4% on the week, -2.4% over two weeks). RSI cooled to ~45 from the 55–60 momentum zone — not oversold, just deflated. Price sits below the 20D MA (~$181.65) but above the 50D MA (~$176.81) — the trend is wounded, not broken. The 50D is now the line in the sand: hold $176.80 and this is a routine pullback inside an uptrend; lose it on volume and $172 opens up, then the 200D at ~$165.18. Thursday's session was the tell — the tape split in two (rails ripped, machinery got sold) while the index barely moved. Internal rotation, not liquidation.
+**Marky Tape Read:** The coil resolved upward. XLI closed Friday at $182.66, reclaiming the 20-day MA (~$181.65) after two weeks of churn. The week started at $179.41 and ground higher in four of five sessions — a +1.8% W/W move that looks modest on the index but masks explosive action beneath the surface. RSI ticked back to ~52 from 45, momentum returning but not overbought. The 50D MA at $177.61 held firm through the entire pullback; the 200D at $166.61 rises steadily. The real story is not the index — it is the earnings super-cycle that lit up the defense, aerospace, and diversified-industrial complex while the AI-infrastructure leg consolidated. Volume was unremarkable (~6–8M daily), confirming this was accumulation, not distribution. The ceiling to watch: $186.45 (52-week high, set July 6). A close above that opens $192–$195.
 
-**Ophelia Macro Read:** The data finally caught up to the rally. The ISM Manufacturing PMI printed **53.3 for June — a sixth straight month of expansion** — with New Orders at 56.0. Friday's housing starts exploded +19% to 1,427K, retail sales were solid, and jobless claims hit a two-month low (208K). The industrial economy is genuinely growing (~2% GDP pace). But the Fed is the counterweight: held at 3.50–3.75% on June 17 with a **hawkish dot plot — 9 of 18 officials favor at least one hike in 2026** — and the July 28–29 FOMC looms. The 10Y sits at ~4.52% after tagging a two-month high of 4.62% Thursday. Oil rallied ~10% on the Iran escalation (WTI ~$77, swing high $81.47). DXY ~102 with ISM New Export Orders contracting at 48.5 — exports are the soft underbelly. The economy says buy cyclicals; the rate regime says don't pay up for them.
+**Ophelia Macro Read:** The industrial economy is expanding — and this week the earnings proved it. The ISM Manufacturing PMI printed **53.3 for June — a sixth straight month of expansion** — and the data continues to argue for ~2% GDP growth. But the macro news this week was overshadowed by the earnings gauntlet: four majors on Thursday (UNP, RTX, GE, UPS) and Honeywell on Friday. Defense and aerospace delivered blowout quarters with raised guidance. Rails put up record numbers. Diversified industrials (HON, MMM) beat and raised. The only soft spot was the momentum-expensive names — CAT treaded water, ETN gave back a bit. The Fed meets July 28–29 with a hawkish dot plot still in play (9 of 18 favor at least one hike in 2026), but the 10Y has settled back to ~4.45% from its 4.62% two-month high. Oil pulled back from the Iran spike (WTI ~$74). DXY ~102. The economy is not just growing — industrial companies are growing *into* their multiples. That is a very different narrative from two weeks ago.
 
 ---
 
 ## TOP HOLDINGS & MOMENTUM
 
-| Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
+| Rank | Ticker | Name | Weight | Price | W/W Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | CAT | Caterpillar | ~7% | $880.28 | +0.35% | $1,073.46 | $403.02 | 0.74% | 43.7 | ⚠️ |
-| 2 | HON | Honeywell | ~5% | $225.02 | -0.58% | $260.28 | $195.87 | 4.23% | 18.0 | 🔥 |
-| 3 | UNP | Union Pacific | ~5% | $301.75 | +0.78% | $303.15 | $210.84 | 1.83% | 24.9 | 🔥 |
-| 4 | RTX | RTX Corp | ~4% | $193.51 | -0.44% | $214.50 | $143.56 | 1.49% | 36.4 | ⚡ |
-| 5 | GE | GE Aerospace | ~4% | $348.83 | +0.90% | $382.97 | $254.66 | 0.54% | 43.2 | ⚡ |
-| 6 | UPS | United Parcel | ~3% | $117.72 | +0.46% | $122.41 | $82.00 | **5.61%** | 19.0 | 🔥 |
-| 7 | LMT | Lockheed Martin | ~3% | $508.77 | -0.92% | $692.00 | $410.11 | 2.68% | 24.9 | ⚡ |
-| 8 | BA | Boeing | ~3% | $214.03 | -0.14% | $254.35 | $176.77 | — | 84.3 | ⚠️ |
-| 9 | MMM | 3M | ~3% | $159.84 | -1.19% | $177.41 | $139.34 | 1.94% | 31.0 | ⚡ |
-| 10 | ITW | Illinois Tool Works | ~3% | $276.05 | -2.45% | $303.16 | $238.82 | 2.34% | 25.5 | ⚡ |
-| 11 | DE | Deere & Company | ~2% | $597.24 | -0.29% | $674.19 | $433.00 | 1.09% | 33.9 | ⚡ |
-| 12 | FDX | FedEx | ~2% | $312.98 | -1.64% | $345.37 | $174.13 | 1.56% | 16.9 | 🔥 |
-| 13 | CSX | CSX Corp | ~2% | $50.75 | -0.28% | $51.29 | $31.80 | 1.11% | 30.9 | 🔥 |
-| 14 | ETN | Eaton Corp | ~2% | $399.99 | +0.94% | $436.74 | $311.92 | 1.13% | 37.9 | ⚡ |
-| 15 | WM | Waste Mgmt | ~2% | $239.31 | -1.21% | $248.13 | $194.11 | 1.47% | 35.0 | ⚡ |
+| 1 | CAT | Caterpillar | ~7% | $888.73 | +1.0% | $1,073.46 | $405.46 | 0.73% | 44.2 | ⚠️ |
+| 2 | HON | Honeywell | ~5% | $243.15 | **+8.1%** | $260.28 | $195.87 | 3.92% | 9.3 | 🔥 |
+| 3 | UNP | Union Pacific | ~5% | $307.32 | +1.8% | $315.99 | $210.84 | 1.80% | 24.9 | 🔥 |
+| 4 | RTX | RTX Corp | ~4% | $212.79 | **+10.0%** | $214.89 | $150.61 | 1.37% | 37.5 | 🔥 |
+| 5 | GE | GE Aerospace | ~4% | $353.73 | +1.4% | $382.97 | $261.71 | 0.53% | 41.7 | ⚡ |
+| 6 | UPS | United Parcel | ~3% | $114.79 | -2.5% | $122.41 | $82.00 | **5.71%** | 18.6 | ⚡ |
+| 7 | LMT | Lockheed Martin | ~3% | $582.60 | **+14.5%** | $692.00 | $412.55 | 2.37% | 21.5 | 🔥 |
+| 8 | BA | Boeing | ~3% | $209.52 | -2.1% | $254.35 | $176.77 | — | 82.5 | ⚠️ |
+| 9 | MMM | 3M | ~3% | $172.62 | **+8.0%** | $177.41 | $139.34 | 1.81% | 30.7 | 🔥 |
+| 10 | ITW | Illinois Tool Works | ~3% | $283.02 | +2.5% | $303.16 | $238.82 | 2.28% | 26.3 | ⚡ |
+| 11 | DE | Deere & Company | ~2% | $628.16 | +5.2% | $674.19 | $433.00 | 1.03% | 35.6 | 🔥 |
+| 12 | FDX | FedEx | ~2% | $314.96 | +0.6% | $345.37 | $174.13 | 1.55% | 17.0 | ⚡ |
+| 13 | CSX | CSX Corp | ~2% | $53.23 | +4.9% | $53.41 | $31.80 | 1.06% | 30.9 | 🔥 |
+| 14 | ETN | Eaton Corp | ~2% | $404.07 | +1.0% | $436.74 | $311.92 | 1.09% | 39.5 | ⚡ |
+| 15 | WM | Waste Mgmt | ~2% | $238.75 | -0.2% | $248.13 | $194.11 | 1.48% | 277.6 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Expensive / overvalued
-> Prices = Fri Jul 17 close; Change = Friday's daily move. Weekly moves covered below.
+> Prices = Fri Jul 24 close; W/W Change = week-over-week move.
 
-**Sector Bifurcation:** Industrials is a **four-legged stool** — and this week the legs moved in opposite directions:
+**Sector Bifurcation:** Industrials is a **four-legged stool** — and this week the stool got stronger, not weaker:
 
-1. **Aerospace & Defense** (RTX, GE, LMT, BA) — defense spending + commercial aerospace recovery — **all red on the week**
-2. **Transportation** (UNP, UPS, FDX, CSX) — freight volumes, e-commerce, rail M&A — **the new leadership**
-3. **Machinery & Equipment** (CAT, DE, HON, MMM, ITW) — infrastructure, agriculture, manufacturing — **split: value names up, momentum names down**
-4. **Electrical / Power Management** (ETN) — AI data center buildout, grid modernization — **the AI premium cracked Thursday**
+1. **Aerospace & Defense** (RTX, GE, LMT, BA) — **the comeback kids.** RTX +10%, LMT +14.5%, GE +1.4% on blowout earnings and raised guidance. BA was the only laggard (-2.1%).
+2. **Transportation** (UNP, UPS, FDX, CSX) — **rails continue to lead.** UNP +1.8% (new 52-week high $315.99), CSX +4.9% (new high $53.41). UPS faded -2.5% ahead of its July 28 report.
+3. **Machinery & Equipment** (CAT, DE, HON, MMM, ITW) — **value awakening.** HON +8.1%, MMM +8.0%, DE +5.2%, ITW +2.5%. The diversified-industrial complex reported strong quarters and the market rewarded them.
+4. **Electrical / Power Management** (ETN) — **consolidating the AI premium.** ETN +1.0% to $404.07, holding above the 50D MA ($403.82). No news, just digestion.
 
-**The Rotation Story (Thursday, July 16):** This was the week the sector turned inside-out. The same session that crushed semiconductors (memory names -9% to -12%, CoreWeave and Arm -14% each) hit industrials' momentum leg: **CAT -4.1%, GE -4.1%, ETN -4.0% on Thursday alone.** The money didn't leave the sector — it rotated. **UNP +3.8%, UPS +3.8%, CSX +3.0%, ITW +4.3%, DE +1.6%** the same day. On the week: UNP +5.2%, UPS +4.7%, CSX +2.7%, ITW +2.7%, DE +1.8%, MMM +1.5% vs. CAT -7.6%, BA -3.7%, GE -2.9%, LMT -2.8%, ETN -1.8%. Value and transportation in; AI-infrastructure and expensive cyclicals out.
+**The Earnings Super-Cycle (July 23–25):** This was the week that separated the industrial economy from the industrial *story*. Every major reporting name beat expectations and raised guidance — except UPS, which reports July 28.
 
-**The Union Pacific Story:** UNP is the standout — +5.2% on the week, closing at $301.75 after tagging a **new 52-week high of $303.15 intraday Friday**. The driver is the **$85B Union Pacific–Norfolk Southern transcontinental merger** working its way through the Surface Transportation Board: the application was accepted May 28, and the companies filed their first round of supplemental responses on July 7. Approval would create America's first true coast-to-coast railroad. UNP reports Q2 earnings **Thursday, July 23 (7:45 AM ET, confirmed)** — volume, pricing, operating ratio, and merger commentary all on the table. The 24.9x P/E is no longer cheap, but the market is paying for the franchise, not the quarter.
+**RTX — The Defense Juggernaut:** RTX delivered a Q2 for the ages: sales of $24.7B up 14% YoY, adjusted EPS of $1.89 up 21%, and — critically — **raised full-year guidance** across the board (adjusted sales to $95–96B from $92.5–93.5B, adjusted EPS to $7.10–7.25 from $6.70–6.90, organic growth to 8–9% from 5–6%). The backlog sits at $289B, up 22% YoY. Raytheon segment sales surged 18% on Patriot, Standard Missile, and AMRAAM demand. The stock responded with a +10% weekly move, closing at $212.79 after tagging a new 52-week high of $214.89 intraday Friday. Analysts rushed to raise targets: BofA to $235, RBC to $250.
 
-**The Caterpillar Story:** CAT was the sector's biggest casualty — **-7.6% on the week**, closing at $880.28, now 18% below its 52-week high of $1,073.46. There was no company-specific disclosure: this was a valuation reset on the sector's most expensive cyclical (46x → ~44x) colliding with Thursday's momentum selloff, a hawkish rate tape (10Y near two-month highs — bad for capex financing), and mid-week China Q2 data that reaffirmed a managed slowdown. Friday's +19% housing-starts print argues the domestic construction leg is alive. The August 6 earnings print is now a high-stakes verdict on whether the reset has room to run.
+**LMT — The Earnings Moonshot:** Lockheed Martin reported Q2 EPS of **$7.94**, crushing the $7.20 consensus, on revenue of $20.1B (+11% YoY). The stock exploded +14.5% on the week to $582.60 — its biggest weekly gain in years. Free cash flow of $2.9B reversed a negative $150M from the prior year. The $230B backlog is a record. Every segment contributed: Aeronautics $8.1B (+9%), Missiles & Fire Control $4.1B (+19%), Rotary & Mission Systems $4.4B (+9%), Space $3.5B (+6%). The Q1 miss and margin compression fears were obliterated. LMT went from sector laggard to sector hero in five sessions.
 
-**The Eaton Story:** ETN fell -4.0% Thursday and -1.8% on the week to $399.99 — but context matters. The AI data center capex thesis was **re-confirmed, not cut**: TSMC raised capex on Thursday, and the Big-4 hyperscaler 2026 capex tracker sits at ~$725B (+77% YoY, ~$805B including Oracle, per Morgan Stanley). What cracked was the multiple, not the demand. ETN derated to ~38x. The electrical-infrastructure order book (switchgear, power distribution, grid) remains the strongest secular story in the sector — the market is simply re-pricing what it will pay for it. ETN reports August 5; data center orders are the number that matters.
+**GE Aerospace — The Commercial Aftermarket Engine:** GE reported July 16 (ahead of the cluster) and set the tone: revenue $13.3B up 21%, adjusted EPS $2.02 up 22%, and **raised full-year operating profit guidance** to $10.55–10.75B from $9.85–10.25B. Commercial Engines & Services revenue surged 27% on shop-visit activity, spare-parts demand, and engine deliveries (LEAP up 24%). The backlog exceeds $210B. The stock added +1.4% on the week to $353.73, already having priced in much of the goodness.
 
-**The UPS Story:** UPS caught the rotation bid — +4.7% on the week to $117.72. Nothing changed fundamentally: parcel volumes are still soft and labor costs are still high. But in a week where investors fled expensive momentum, a 5.61% yield at 19.0x P/E with a real dividend ($6.60/share annually) suddenly looked like shelter. The question from last week stands — dividend stock or value trap? — but this week the market voted "dividend stock."
+**UNP — The Transcontinental Railroad:** Union Pacific reported record Q2 results: revenue $6.9B up 12%, adjusted EPS $3.41 up 13% (beating $3.19 est), and operating ratio of 59.2% (70 bps worse reported due to fuel, but 110 bps better adjusted). Freight revenue ex-fuel grew 4%. Workforce productivity, train length, and fuel consumption all hit records. CEO Jim Vena reaffirmed commitment to the Norfolk Southern merger: *"We are ready to move forward in the regulatory process and deliver the benefits of America's first transcontinental railroad."* The stock tagged a new 52-week high of $315.99 intraday and closed at $307.32. The merger story is now backed by record earnings.
 
-**Cecil Fundamental Read:** HON at 18.0x P/E and 4.23% yield remains the most reasonable name in the sector — diversified, real cash flow, real dividend, reporting July 25. FDX at 16.9x is still the cheapest transportation name; the DRIVE cost-cutting story is intact. ITW at 25.5x with its dividend-growth history earned its +2.7% week. UPS at 19.0x and 5.61% yield is interesting for income, but the volume risk is real. UNP at 24.9x after a +5% week is no longer value — you are paying for the merger. CAT at 43.7x is still a cyclical at peak earnings even after the haircut; DE at 33.9x is expensive for a farm cycle that is still turning down; BA at 84x is a turnaround, not a compounder. The garden has deep roots, but the tallest trees got pruned this week — and the pruning may not be finished. I would plant in HON and FDX. I would avoid CAT and BA.
+**HON — The Pure-Play Automation Bet:** Honeywell completed its Aerospace spin-off on June 29, and this was the first quarter as a pure-play automation company. Ex-Aerospace: sales $5.2B up 4% organic, adjusted EPS $1.95 up 10%, segment margin expanded 100 bps to 19.0%. Building Automation was the star — sales up 9% organic, orders up 13%, margin 27.1%. The company **raised full-year guidance**: organic growth 3–4%, segment margin 20.1–20.5%, adjusted EPS $8.05–8.35 (up 25–29% YoY). The market celebrated the simplified story with an +8.1% weekly move to $243.15. HON is no longer a conglomerate discount — it is an automation premium.
+
+**MMM — The Turnaround Validates:** 3M reported Q2 adjusted EPS of $2.40 (beating $2.25 est) on $6.5B revenue, with organic growth accelerating to 5.4%. Adjusted operating margin hit 24.9% — the highest ever, with 500 bps of expansion over two years. Safety & Industrial led with 8.2% organic growth. The company **raised guidance**: adjusted EPS to $8.80–8.95 from $8.50–8.70, organic growth to >3.5% from ~3.0%. The stock surged +8.0% to $172.62. Bill Brown's transformation plan is no longer a promise — it is a deliverable.
+
+**Cecil Fundamental Read:** The earnings week rewrote the fundamental landscape. RTX at 37.5x is expensive but growing into it with 16% organic sales and raised guidance. LMT at 21.5x is now *cheap* after the earnings re-rating — $7.94 quarterly EPS annualizes to $31.76, and the stock at $582 trades at ~18x forward. HON at 9.3x ex-Aerospace is a steal for a pure-play automation leader with 27% margins in Building Automation. MMM at 30.7x on adjusted earnings is reasonable given the margin expansion and guidance raise. UNP at 24.9x with record results and a transcontinental merger catalyst is fairly priced. CAT at 44.2x is still the sector's valuation outlier — even a good industrial economy doesn't justify 44x on a cyclical. DE at 35.6x faces a farm cycle that is still turning, though the stock rallied +5.2%. The garden has been replanted — defense, aerospace, rails, and diversified value are blooming. I would plant in LMT, HON, and MMM. I would still avoid CAT and BA.
 
 ---
 
@@ -75,18 +79,19 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $186.45 | **Set July 6** — failed breakout, now the ceiling to reclaim |
-| Near Resistance | ~$181.65 | 20-day MA — lost this week; first repair level |
-| Current Price | $179.41 | Friday close, -1.4% W/W |
-| 50-Day MA | ~$176.81 | **Key dynamic support** — the line in the sand |
+| 52W High | $186.45 | **Set July 6** — the ceiling to reclaim. Close above = breakout. |
+| Near Resistance | ~$184.50 | July 2–3 consolidation zone |
+| 20-Day MA | ~$181.65 | **Reclaimed this week** — now short-term support |
+| Current Price | $182.66 | Friday close, +1.8% W/W |
+| 50-Day MA | ~$177.61 | **Key dynamic support** — held through two-week pullback |
 | Major Support | $175.00 | Previous breakout zone from March |
 | Deep Support | $168.00 | Post-breakout consolidation floor |
-| 200-Day MA | ~$165.18 | Long-term trend floor — still rising |
-| Structural Low | $145.87 | 52W bottom — November 21, 2025 |
+| 200-Day MA | ~$166.61 | Long-term trend floor — rising steadily |
+| Structural Low | $147.14 | 52W bottom — November 21, 2025 |
 
-**Marky Setup Assessment:** The trend is intact but the momentum is gone. XLI closed below its 20D MA all week and RSI slid to ~45 — neutral, with room to fall before oversold. The MACD has rolled over toward a bearish cross. Volume was unremarkable (~6–8M daily) — this was rotation, not distribution, which matters. The setup: a coil between the 20D above ($181.65) and the 50D below ($176.81). A close back above $181.65 re-opens the run at $186.45. A close below $176.80 on volume targets $172, then $168. Next week's earnings gauntlet (UNP, RTX, GE, UPS on Jul 23; HON on Jul 25) will decide which way the coil resolves.
+**Marky Setup Assessment:** The two-week coil between the 20D and 50D resolved upward — exactly as a healthy uptrend should. XLI closed back above the 20D MA on Tuesday and never looked back. RSI at ~52 has room to run before overbought. MACD is curling toward a bullish cross. Volume was modest, which is actually constructive — this was not a short-squeeze, it was real accumulation on earnings confirmation. The setup: a run at $186.45 is now the base case. A close above the 52-week high opens a measured move to $192–$195. The 50D at $177.61 is the hard stop — only a close below that on volume would threaten the uptrend. Next catalysts: UPS earnings July 28, FOMC July 28–29, July ISM PMI (Aug 3), and ETN/CAT earnings in early August.
 
-**The relative strength story:** XLI is +16.3% YTD — still one of 2026's leadership sectors — but the internal leadership rotated hard this week. Rails and parcel carriers made new highs while the AI-infrastructure and defense momentum names that carried the first half gave back ground. When a sector's winners change costumes mid-rally, the index usually churns sideways before picking a direction. That is exactly what the tape did: five sessions, four red, net -1.4%.
+**The relative strength story:** XLI is +20.1% YTD — reclaiming its place as a 2026 leadership sector. But the internal leadership has evolved again: defense/aerospace (RTX, LMT, GE) went from last week's losers to this week's heroes on the back of blowout earnings. Rails (UNP, CSX) continue to make new highs. Diversified industrials (HON, MMM, ITW) caught a value bid. The only group that didn't participate was the AI-infrastructure leg (ETN), which simply consolidated. When every leg of a four-legged stool is working, the index usually grinds higher. That is exactly what the tape did: five sessions, four green, net +1.8%.
 
 ---
 
@@ -94,28 +99,30 @@
 
 | Factor | Level | Implication for XLI |
 |---|---|---|
-| ISM Manufacturing PMI | **53.3 (June; 6th month of expansion)** | **The key indicator.** Expansion, decelerating from May's 54.0. New Orders 56.0 — demand is real. |
-| ISM — Employment | 49.7 (33rd month contracting) | Output grows without hiring — productivity-led expansion. Margin-friendly. |
-| ISM — New Export Orders | 48.5 (contracting) | Exports are the soft spot. Headwind for CAT, DE, HON overseas revenue. |
-| ISM — Prices Paid | 73.0 (fell 9.1 pts — steepest drop since 2022) | Input-cost pressure easing — helps industrial margins into H2. |
-| Housing Starts (June) | **1,427K, +19% MoM** (Fri Jul 17) | Blockbuster. Direct tailwind for CAT, DE, HON building products. Permits -3% — watch the pipeline. |
-| Industrial Production (June) | Print due Fri Jul 17 (survey +0.2% MoM; prior +0.1%; capacity utilization ~76.2%) | A strong print confirms the ISM story; a miss feeds the stall narrative. |
-| Retail Sales / Claims | Solid June retail; claims 208K (2-month low) | The consumer and labor market are not rolling over. |
-| Fed Funds Rate | 3.50–3.75% (held Jun 17; FOMC Jul 28–29) | **Hawkish dot plot — 9/18 officials favor a hike.** Soft June CPI (-0.4% m/m) trimmed Sept hike odds to ~44%. |
-| 10Y Treasury | ~4.52% (Thu high 4.62% — 2-month high) | Restrictive. High rates compress industrial capex financing. |
-| DXY | ~102 | Mild headwind for exporters; New Export Orders already contracting. |
-| WTI Crude | ~$77 (+~10% W/W; swing high $81.47) | Iran escalation. Energy inflation risk = Fed stays hawkish = multiple pressure. |
+| ISM Manufacturing PMI | **53.3 (June; 6th month of expansion)** | Expansion intact. July print due Aug 3. |
+| ISM — Employment | 49.7 (33rd month contracting) | Output grows without hiring — productivity-led. |
+| ISM — New Export Orders | 48.5 (contracting) | Exports remain the soft spot. Headwind for CAT, DE, HON. |
+| ISM — Prices Paid | 73.0 (fell 9.1 pts) | Input-cost pressure easing — margin-friendly into H2. |
+| Housing Starts (June) | **1,427K, +19% MoM** | Blockbuster tailwind for CAT, DE, HON building products. |
+| Durable Goods Orders (May) | -4.5% headline; **core capex +1.4%** (3rd straight month) | Headline noisy (aircraft). Core business investment resilient. |
+| Industrial Production (June) | Print due Fri Jul 17 was +0.2% MoM; capacity util ~76.2% | Steady, not spectacular. |
+| Fed Funds Rate | 3.50–3.75% (held Jun 17; **FOMC Jul 28–29**) | Hawkish dots still in play. Market pricing ~44% Sept hike odds. |
+| 10Y Treasury | ~4.45% (down from 4.62% two-month high) | Pulled back = cyclicals breathe. |
+| DXY | ~102 | Mild headwind for exporters. |
+| WTI Crude | ~$74 (down from $81.47 Iran spike) | Energy inflation risk receding. |
 | Infrastructure Spending | IIJA: $1.2T over 10 years | Slow-drip tailwind for CAT, DE, ETN, HON. |
-| AI Data Center Capex | ~$725B Big 4 (+77% YoY); ~$805B incl. Oracle (Morgan Stanley) | **Re-confirmed, not cut — TSMC raised capex Jul 16.** The multiple cracked, the demand did not. |
-| Defense Spending | ~$850B+ annually; Middle East escalation | Tailwind for RTX, LMT, GE — but defense stocks faded with the momentum trade anyway. |
-| Freight / Rails | UNP–NS merger advancing through STB review | Rails are the new leadership leg. Approval path = multi-quarter catalyst. |
-| China Economy | Q2 GDP + June data out Jul 16–17 — managed slowdown | Structural headwind for CAT, DE, HON (China = 15–20% of revenue). |
+| AI Data Center Capex | ~$725B Big 4 (+77% YoY); ~$805B incl. Oracle | Demand intact. ETN consolidating the premium. |
+| Defense Spending | ~$850B+ annually; RTX/LMT backlogs at record highs | **Tailwind intensifying.** RTX $289B backlog, LMT $230B. |
+| Freight / Rails | UNP–NS merger advancing through STB review; UNP record Q2 | Rails are the leadership leg. Earnings + M&A = multi-quarter catalyst. |
+| China Economy | Q2 GDP + June data showed managed slowdown | Structural headwind for CAT, DE, HON (15–20% revenue). |
 
-**Ophelia Verdict:** Last week I told you the data did not justify the rally. This week the data punched back: PMI at 53.3 — six months of expansion — housing starts up 19%, retail solid, claims at two-month lows. The industrial economy is genuinely growing. But the market stopped paying for growth in the same breath: Thursday's rotation punished every name whose rally was built on the AI-infrastructure premium and rewarded the boring, cash-generative legs of the sector. The Fed is the referee — hawkish dots, a July 28–29 meeting, and oil pushing $80 keeps hike risk alive. My stance has not changed in kind, only in evidence: no broad sector bet. Own the legs the cycle is actually paying for — transportation and value — and respect that the AI leg now has to earn its multiple back.
+**Ophelia Verdict:** Two weeks ago I told you the data finally justified the rally. This week the *earnings* justified the rally. The ISM at 53.3 is fine — six months of expansion — but it is the corporate results that moved the tape. RTX, LMT, GE, UNP, HON, and MMM all beat and raised. That is not a sector running on hope; that is a sector running on fundamentals. The Fed is still the counterweight — hawkish dots, a July 28–29 meeting, and the risk that a hike punishes multiples — but the 10Y pulling back to ~4.45% and oil fading to $74 have defused the worst-case rate scenario for now. My stance has shifted: the industrial economy is not just expanding; industrial *companies* are executing. I am overweight the legs with earnings momentum — defense/aerospace and diversified value — and neutral the AI-infrastructure leg until ETN reports August 5.
 
-**The Freight Story:** Freight spent two years as the canary in the industrial coal mine. This week the canary flew. UNP made a new 52-week high on merger progress; CSX tagged $51.29 intraday Friday; UPS got a +3.8% rotation bid on Thursday. Parcel volumes are still soft — nothing in the UPS tape says demand recovered — but the market is now paying for consolidation (UNP–NS), yield (UPS at 5.6%), and cost discipline (FDX's DRIVE program at 16.9x). The freight recession narrative is not dead, but it is no longer the only story.
+**The Defense/Aerospace Revival:** Last week defense stocks were the losers (LMT -2.8%, RTX -1.2%). This week they were the heroes (LMT +14.5%, RTX +10%). What changed? Earnings. RTX's 16% organic growth and raised guide proved the defense backlog is converting to revenue. LMT's $7.94 EPS obliterated the Q1 miss narrative. GE's $13.3B revenue (+21%) and raised profit guide showed commercial aerospace aftermarket demand is structural, not cyclical. The defense spending story is not new — what is new is that the market now believes the revenue will flow through to the bottom line. The group de-risked in a single week.
 
-**The AI Infrastructure Angle:** The trade did not die — it got repriced. Thursday's semiconductor rout (memory -9% to -12%) and the ETN/GE selloff were the market doing denominator math on AI multiples, the same week TSMC *raised* capex. The buildout is real — switchgear, transformers, power distribution are on multi-year backlogs — but ETN at ~40x was pricing perfection. Watch ETN's data center orders on August 5 and HON's building-technologies commentary on July 25. If orders confirm, this was a valuation reset inside an intact supercycle. If they disappoint, the AI leg of industrials becomes the AI leg of tech — great story, wrong price.
+**The Rail Consolidation Story:** UNP's record Q2 ($6.9B revenue, $3.41 adj EPS, 59.2% OR) gives the merger story fundamental ballast. The STB review continues, but UNP is now proving it can execute operationally *while* pursuing the biggest rail deal in history. CSX tagged a new 52-week high of $53.41. The freight recession narrative is dead. The new narrative is freight consolidation.
+
+**The AI Infrastructure Angle:** ETN was the only major industrial name that did not move this week — +1.0% to $404.07, sitting on its 50D MA. No news is good news: the AI data center buildout thesis was not challenged, just not re-accelerated. TSMC's capex raise from the prior week is still in the market's memory. ETN reports August 5; data center orders are the only number that matters. Until then, the stock consolidates a 30% YTD gain.
 
 ---
 
@@ -123,19 +130,19 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Great Rotation Splits the Sector
+### This Week's Story: The Earnings Super-Cycle Validates the Industrial Expansion
 
-The headline says industrials had a quiet week — XLI down 1.4%, four of five sessions red, closing at $179.41. The tape says the opposite: this was one of the most violent internal rotations the sector has seen all year.
+The headline says industrials had a solid week — XLI up 1.8%, four of five sessions green, closing at $182.66. The tape says the sector just passed its most important stress test of the year: the July earnings gauntlet. And it passed with honors.
 
-**Thursday was the fault line.** The same session that crushed semiconductors hit the industrial momentum complex: Caterpillar -4.1%, GE Aerospace -4.1%, Eaton -4.0%. These were the names that carried XLI's first-half rally — the AI-infrastructure trade and its expensive-cyclical companions. The money did not leave the building; it changed rooms. Union Pacific +3.8%, UPS +3.8%, Illinois Tool Works +4.3%, CSX +3.0%, Deere +1.6% — the value and transportation legs absorbed the flow in a single session.
+**Thursday, July 23 was the sector's Super Bowl.** Four majors reported before the bell: Union Pacific, RTX, GE (had reported July 16 but the reaction extended), and the setup for UPS. By Friday's close, the market had rendered its verdict: defense and aerospace are not just structurally sound — they are accelerating. RTX surged +10% on the week after reporting 16% organic sales growth, a $289B backlog, and raised guidance. Lockheed Martin — which had disappointed in Q1 — crushed Q2 with $7.94 EPS (vs. $7.20 est) and exploded +14.5%. GE Aerospace had already set the tone with a 21% revenue beat and raised profit guide.
 
-**The week's scoreboard tells the story.** Winners: UNP +5.2% (new 52-week high $303.15), UPS +4.7%, CSX +2.7% (new high $51.29 intraday), ITW +2.7%, Deere +1.8%, 3M +1.5%. Losers: CAT -7.6%, Boeing -3.7%, GE -2.9%, Lockheed -2.8%, ETN -1.8%, RTX -1.2%. Every winner is a cash-flow story or an M&A story. Every loser is a momentum story or an expensive story.
+**The diversified-industrial complex woke up.** Honeywell's first report as a pure-play automation company was a triumph: ex-Aerospace sales of $5.2B up 4% organic, Building Automation margins at 27.1%, and raised full-year EPS guidance to $8.05–8.35. The stock jumped +8.1%. 3M — long the sector's turnaround question mark — delivered adjusted EPS of $2.40 (beating estimates), organic growth of 5.4%, and record adjusted margins of 24.9%. The stock rallied +8.0% and the guidance raise ($8.80–8.95 EPS) validated CEO Bill Brown's transformation plan.
 
-**The macro backdrop argues the expansion is real.** June's ISM Manufacturing PMI printed 53.3 — a sixth straight month of expansion with New Orders at 56.0. Friday's housing starts exploded +19% to 1,427K. Retail sales were solid; jobless claims fell to a two-month low. The industrial economy is growing at roughly a 2% GDP pace. Last week's complaint — "the data does not justify the rally" — got answered by the data itself.
+**The rails kept rolling.** Union Pacific's record Q2 ($6.9B revenue, $3.41 adj EPS) and reaffirmed merger ambition sent the stock to a new 52-week high of $315.99. CSX made a new high of $53.41. The transportation leg is no longer a value rotation — it is a fundamental leadership story backed by earnings.
 
-**But the Fed is the counterweight.** The June 17 hold at 3.50–3.75% came with a hawkish dot plot — nine of eighteen officials want at least one hike this year. The 10Y tagged a two-month high of 4.62% on Thursday. Oil rallied ~10% on the Iran escalation, threatening the soft-CPI disinflation path. A growing economy with a hawkish Fed is exactly the regime where expensive cyclicals de-rate and cheap cash-flow names catch a bid — which is precisely what the tape did.
+**The macro backdrop cooperated.** The 10Y Treasury yield eased back to ~4.45% from its 4.62% two-month high. Oil faded from the Iran spike to ~$74. DXY held steady at ~102. The July 28–29 FOMC meeting looms, but the market is no longer pricing a near-term hike as a base case (~44% September odds). The industrial economy has breathing room.
 
-**The Bottom Line:** The sector is transitioning leadership from "AI infrastructure + defense momentum" to "transportation + value." The UNP–Norfolk Southern merger gives the rail leg a multi-quarter catalyst; the July 23 earnings cluster (UNP, RTX, GE, UPS) and Honeywell on July 25 will test whether the new leadership has earnings behind it. The expansion is real, the multiple is the battlefield. This remains a stock-picker's market — the sector index just hides the war.
+**The Bottom Line:** The sector's earnings season has transformed the narrative from "the data does not justify the rally" to "the earnings justify everything." Defense/aerospace, rails, and diversified value all beat and raised. The only group still awaiting its verdict is AI infrastructure (ETN, August 5) and heavy machinery (CAT, August 6). XLI sits just 2% below its 52-week high with momentum returning. This is no longer a stock-picker's market hiding a war beneath the index — this is a broad industrial expansion with earnings behind it. The risk is not the cycle; it is the Fed's reaction to it.
 
 ---
 
@@ -143,68 +150,68 @@ The headline says industrials had a quiet week — XLI down 1.4%, four of five s
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **Union Pacific** | UNP | **Jul 23, 2026** (confirmed, 7:45 AM ET) | Q2 2026 | Volume growth; pricing; operating ratio; **NS merger commentary** |
-| **RTX** | RTX | **Jul 23, 2026** | Q2 2026 | Defense backlog; Pratt & Whitney recall progress; FCF guidance |
-| **GE Aerospace** | GE | **Jul 23, 2026** | Q2 2026 | Commercial aerospace demand; LEAP engine deliveries; margin expansion |
-| **UPS** | UPS | **Jul 23, 2026** | Q2 2026 | Volume growth; revenue per piece; margin guidance; labor cost impact |
-| **Honeywell** | HON | **Jul 25, 2026** | Q2 2026 | Aerospace growth; building technologies; guidance |
-| **3M** | MMM | **Jul 26, 2026** | Q2 2026 | PFAS litigation update; margin guidance |
+| **United Parcel** | UPS | **Jul 28, 2026** | Q2 2026 | Volume growth; revenue per piece; margin guidance; labor cost impact |
+| **Honeywell Aerospace** | HONA | **Aug 5, 2026** | Q2 2026 | Commercial aviation demand; LEAP engine deliveries; standalone metrics |
 | **Eaton** | ETN | **Aug 5, 2026** | Q2 2026 | **Data center orders**; electrical segment growth; margin expansion |
 | **Caterpillar** | CAT | **Aug 6, 2026** | Q2 2026 | Resource industries; construction; dealer inventory; China commentary |
 | **Deere** | DE | **Aug 16, 2026** | Q3 FY2026 | Farm equipment demand; precision ag growth; margin guidance |
 | **FedEx** | FDX | **Sep 17, 2026** | Q1 FY2027 | Express segment; Ground segment; DRIVE cost savings; guidance |
 
-**Marky's Binary Event Read:** Thursday July 23 is the sector's Super Bowl morning — four majors report into one session. UNP is the headliner: the merger tape is hot, the stock is at a 52-week high, and any stumble on volume or merger commentary gets punished from altitude. GE reports into a -2.9% week with the commercial-aerospace story still intact — a beat repairs the chart fast. RTX needs Pratt & Whitney recall progress to stop the bleed. UPS must show the rotation bid was right — volume trends and margin guidance decide whether 5.6% yield is shelter or a trap. HON on July 25 is the diversified-industrial verdict. Then the big two in August: ETN (Aug 5) for the AI-infrastructure crown, CAT (Aug 6) for the cyclical soul of the sector after its -7.6% reset.
+**Marky's Binary Event Read:** The big July 23 cluster is in the books and it was a sweep for the bulls — RTX, LMT, UNP, GE, HON, and MMM all beat and raised. The only remaining name from that cluster is UPS on July 28. The market has been kind to rails and unkind to parcel carriers (UPS -2.5% on the week into the print), suggesting low expectations. A beat could spark a relief rally; a miss would confirm the transportation bifurcation (rails good, parcel bad). August 5 is the next big day: ETN for the AI-infrastructure crown and HONA for the aerospace spin-off's first standalone quarter. Then CAT on August 6 — the cyclical soul of the sector after a quiet +1.0% week. The earnings calendar thins out after this, but the FOMC on July 28–29 is the macro wildcard that could overshadow everything.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- ISM holds above 53 and industrial production confirms → the expansion narrative broadens → XLI reclaims $181.65, then $186.45
-- UNP, GE, RTX, UPS all beat on Jul 23 → the new leadership proves it has earnings → breakout to $192–$195
-- AI capex re-confirmed at ETN (Aug 5) with data center orders >20% growth → ETN re-rates, sector follows
-- Housing starts momentum (+19% in June) pulls construction equipment demand forward → CAT, DE stabilize
-- Soft inflation path resumes → September hike odds collapse → 10Y breaks back below 4.4% → cyclicals breathe
-- UNP–NS merger clears STB milestones without onerous conditions → rail leg re-rates further
+- ISM holds above 53 and July print confirms expansion → XLI reclaims $186.45, then $192–$195
+- UPS beats on Jul 28 → transportation bid broadens beyond rails
+- ETN (Aug 5) confirms data center orders >20% growth → AI leg re-joins the rally
+- Soft inflation path resumes post-FOMC → September hike odds collapse → cyclicals breathe
+- UNP–NS merger clears STB milestones → rail leg re-rates further
+- HON and MMM guidance raises prove conservative → diversified industrial re-rating continues
 
 ### 🔴 Bear Case
-- Fed hikes on July 28–29 (or signals September) → 10Y above 4.7% → capex financing freezes → machinery names de-rate again
-- Iran escalation closes or threatens Hormuz → oil above $90 → inflation path reverses → every rate-sensitive industrial gets hit
-- ETN or HON disappoint on data center / building tech → the AI-infrastructure leg unwinds like semis did this week
-- CAT guides down on Aug 6 (China + dealer inventory) → the cyclical reset becomes a cyclical rout → XLI tests $172, then $168
-- UPS/FDX show parcel volumes still shrinking → the transportation bid was rotation-only, no fundamentals
-- ISM rolls back under 50 in July → the six-month expansion was the peak → XLI targets the 200D at ~$165
+- Fed hikes on July 28–29 (or signals September) → 10Y above 4.7% → capex financing freezes
+- UPS misses on Jul 28 → parcel narrative worsens → transportation leg splits
+- ETN or CAT disappoint in early August → momentum names de-rate again
+- ISM July print (Aug 3) rolls under 50 → the six-month expansion was the peak
+- Iran escalation re-ignites → oil back above $80 → inflation path reverses
+- LMT/RTX beats were a pull-forward of defense spending → Q3 guidance disappoints
 
 ### ⚠️ The Wild Card
-The **UNP–Norfolk Southern merger** is the sector's live wild card — an $85B deal to create America's first transcontinental railroad, now deep in STB review with opposition from nine state attorneys general, rival railroads (BNSF, CPKC), and some labor unions. Approval on reasonable terms re-rates the entire rail complex (UNP, CSX, and even trucking by read-through) and validates the transportation-led regime. Rejection — or approval with punishing conditions — hits UNP from a 52-week high and knocks the leadership leg out of the sector just as the AI leg is trying to find its footing. The STB process runs into 2027; every filing milestone is a tradable event.
+The **UNP–Norfolk Southern merger** remains the sector's live wild card — an $85B deal to create America's first transcontinental railroad, now deep in STB review with opposition from nine state attorneys general, rival railroads, and some labor unions. UNP's record Q2 gives it fundamental credibility, but regulatory risk is real. Approval on reasonable terms re-rates the entire rail complex. Rejection — or approval with punishing conditions — hits UNP from a 52-week high and knocks the leadership leg out just as the sector hits its stride. The STB process runs into 2027; every filing milestone is a tradable event.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"I was wrong about the data — and I say so plainly. The PMI is 53.3, not 48. Housing starts just printed +19%. The industrial economy is expanding, and my 'rally without justification' framing is retired. But the regime did shift in a way that matters more: the Fed's hawkish dots and a two-month-high 10Y mean the market will not pay up for that growth. Thursday proved it — the AI premium got repriced in a single session while rails and yield caught the bid. I am not buying the sector; I am buying the rotation. Transportation and value legs, funded by trimming anything trading above 35x. The FOMC on July 28–29 is the next regime test. I hold cash for it."*
+**Ophelia:** *"I was wrong two weeks ago, right last week, and even more right this week. The industrial economy is expanding, and now the earnings prove it. RTX's 16% organic growth, LMT's $7.94 EPS, UNP's record quarter, HON's pure-play transformation, MMM's margin expansion — these are not macro trades, they are company-specific executions. I am upgrading my stance: the sector is a buy on pullbacks to the 50D MA (~$177.60). My allocation: overweight defense/aerospace (RTX, LMT) and diversified value (HON, MMM), equal-weight rails (UNP, CSX), underweight expensive cyclicals (CAT, DE). The FOMC on July 28–29 is the next risk event, but with the 10Y at 4.45% and oil at $74, the Fed has less excuse to hike than it did two weeks ago. I am holding my positions into the meeting."*
 
-**Marky:** *"The index is coiling between the 20D at $181.65 and the 50D at $176.81 — RSI 45, MACD rolling over, volume neutral. That is a decision zone, and Thursday's earnings cluster will make the decision. My trades are in the leadership, not the index: UNP above $288 holds the merger momentum; CSX just made a new high. On the short side, CAT below $877 (Thursday's close region) has air under it to $840. I am riding what's working, fading what's broken, and keeping stops tight into July 23. The tape told us this week exactly who leads now — believe it."*
+**Marky:** *"The coil broke upward — exactly as it should in an intact uptrend. XLI back above the 20D, RSI 52, MACD curling bullish. My levels: $186.45 is the trigger for a breakout trade; a close above it targets $192, then $195. The 50D at $177.61 is the stop. But I am not trading the index — I am trading the earnings winners. LMT above $575 holds the re-rating momentum; RTX above $210 is a new floor. On the short side, CAT below $877 has air to $840, but the sector strength makes me reluctant to fade anything right now. I am long the leadership, tight stops, and watching UPS on July 28 for a binary transportation play."*
 
-**Cecil:** *"The week finally separated the garden from the weeds. HON at 18.0x and 4.23% yield is still where I would plant — a real business at a fair price, reporting July 25. FDX at 16.9x is the cheapest transporter and the DRIVE savings are real. UPS at 5.61% yield earns a look for income, though I want to see volumes before I commit. UNP at 24.9x after a 5% week is a fine company at a full price — I do not chase. CAT at 43.7x is still too tall for the season even after the pruning; DE at 33.9x faces a farm cycle that has not bottomed. Value did not die this week — it was finally invited back to the table."*
+**Cecil:** *"The week finally separated the promise from the proof. HON at 9.3x ex-Aerospace with 27% Building Automation margins is the best risk-reward in the sector — I would plant heavily. LMT at 21.5x after a 14.5% week is no longer cheap, but $31+ annualized EPS makes it reasonable. MMM at 30.7x on record margins and a guidance raise earns a look. UNP at 24.9x with record results and a merger is fairly priced — I do not chase, but I do not sell. RTX at 37.5x is fully valued after the 10% move; I would trim into strength. CAT at 44.2x is still too tall for the season. BA at 82.5x remains a turnaround, not a compounder. The garden is blooming in defense, aerospace, and diversified automation. I would water those beds."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / iFind: XLI + holdings daily prices (Fri Jul 17, 2026 close), 1-year daily history for technical levels
+- Yahoo Finance / iFind: XLI + holdings daily prices (Fri Jul 24, 2026 close), 1-year daily history for technical levels
 - Institute for Supply Management (ISM): June 2026 Manufacturing PMI Report (Jul 1, 2026) — PMI 53.3, New Orders 56.0, Employment 49.7, Prices 73.0
-- Federal Reserve: FOMC statement June 17, 2026 (hold at 3.50–3.75%); G.17 Industrial Production & Capacity Utilization (Jul 17, 2026)
-- U.S. Census Bureau: Housing Starts & Building Permits, June 2026 (Jul 17, 2026)
-- Union Pacific Corp. press releases: Q2 2026 earnings date confirmation (Jul 23); UP–NS merger STB filings (May–Jul 2026)
+- Federal Reserve: FOMC statement June 17, 2026 (hold at 3.50–3.75%); G.17 Industrial Production & Capacity Utilization
+- U.S. Census Bureau: Housing Starts & Building Permits, June 2026 (Jul 17, 2026); Durable Goods Orders, May 2026 (Jul 2, 2026)
+- RTX Corp: Q2 2026 Earnings Release (Jul 23, 2026) — sales $24.7B, adj EPS $1.89, raised FY guidance
+- Lockheed Martin: Q2 2026 Earnings Release (Jul 23, 2026) — EPS $7.94, revenue $20.1B, $230B backlog
+- GE Aerospace: Q2 2026 Earnings Release (Jul 16, 2026) — revenue $13.3B, adj EPS $2.02, raised FY guide
+- Union Pacific Corp: Q2 2026 Earnings Release (Jul 23, 2026) — revenue $6.9B, adj EPS $3.41, record results
+- Honeywell Technologies: Q2 2026 Earnings Release (Jul 23, 2026) — ex-Aerospace sales $5.2B, adj EPS $1.95, raised guide
+- 3M Company: Q2 2026 Earnings Release (Jul 21, 2026) — adj EPS $2.40, organic growth 5.4%, record margins
 - Morgan Stanley / CreditSights: hyperscaler AI capex trackers (~$725B Big 4; ~$805B incl. Oracle)
-- MarketSnap daily (Jul 16, 2026): sector rotation recap; ALM First (Jul 17, 2026): data calendar
 - Bureau of Transportation Statistics, Association of American Railroads: freight/rail data
 - U.S. Department of Defense: budget and contract awards
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-07-18*
+*Last updated by Saturday Research Crew: 2026-07-26*
 *Next update: Every Saturday 11:09 AM ET*
 *Data sources: Yahoo Finance, iFind, ISM, Federal Reserve, company filings, market data feeds*
