@@ -3,13 +3,13 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-07-25
+## 🌡️ Market Brief — Week of 2026-07-26
 
 > *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
 
 ### The Headline
 
-The growth unwind deepened and the oil shock intensified in the same week. WTI crude surged +8.3% to $89.31 — Brent briefly breached $100 on Friday — as Iran's ceasefire collapsed and Hormuz traffic remained throttled. Meanwhile, jobless claims plunged to 187K, the lowest reading since 1969, proving the labor market is bulletproof even as June NFP printed a miserable +57K. The 10-year Treasury punched to 4.70%, a multi-month high, and the market finally stopped ignoring it: tech multiples compressed violently, SMH fell deeper into correction territory, and the S&P dropped -1.2% to 7,408.30. The counter-story was the defensive rotation — energy (+3.4%), utilities (+1.6%), and industrials (+1.0%) caught the bid while healthcare's earnings trifecta (UNH/JNJ/ABT) held the line. VIX climbed to 18.70, elevated but not panicked — the canary is awake. The corporate bombshell: Netflix crashed -7.3% on a guidance miss and Tesla imploded -17.8% on a 40% EPS miss, proving that in this market, the beat is the appetizer and guidance is the executioner.
+The growth unwind deepened and the oil shock intensified in the same week. WTI crude surged +8.3% to $89.31 — Brent briefly breached $100 on Friday — as Iran's ceasefire collapsed and Hormuz traffic remained throttled. Meanwhile, jobless claims plunged to 187K, the lowest reading since 1969, proving the labor market is bulletproof even as June NFP printed a miserable +57K. The 10-year Treasury punched to 4.70%, a multi-month high, and the market finally stopped ignoring it: tech multiples compressed violently, SMH fell deeper into correction territory, and the S&P dropped -1.2% to 7,408.30. The counter-story was the defensive rotation — energy (+3.4%), utilities (+1.6%), and industrials (+1.8%) caught the bid while healthcare's earnings breadth (TMO +6.7%, JNJ +4.1%) held the line. VIX climbed to 18.70, elevated but not panicked — the canary is awake. The corporate bombshell: Intel doubled earnings expectations — then crashed -7.9% in 48 hours, proving that in this market, the beat is the appetizer and guidance is the executioner.
 
 ### Index Check
 
@@ -28,27 +28,27 @@ The growth unwind deepened and the oil shock intensified in the same week. WTI c
 | Story | What Happened | Why It Matters | Dad Translation |
 |---|---|---|---|
 | 🔥 **Oil Shock Intensifies** | WTI +8.3% to $89.31; Brent briefly >$100 on Friday; Iran ceasefire collapsed; Hormuz + Bab el-Mandeb threatened | Inflation re-armed just as June CPI went soft; the Fed's policy box is locked | Gas prices are climbing again, and that makes everything the Fed wants to do harder — they can't cut rates if oil is spiking |
-| 💻 **Tech's Worst Week of 2026** | XLK -5.5% (prior week) then stabilized; SMH correction deepening; P/E compressed 40x → 33x | The AI multiple died; the supercycle did not — TSMC raised capex | The companies building AI are still spending like crazy, but investors stopped paying crazy prices for their stocks |
-| 🏥 **Healthcare's Earnings Trifecta** | UNH +29.8% EPS beat, ABT +10.7% on +2.6% beat, JNJ beat and raised — all on the same morning | Expensive defensives earned their multiples for once | The doctors and drugmakers proved they can grow profits even when the economy is shaky — the market rewarded them |
-| 📉 **NFLX and TSLA Earnings Implosions** | NFLX crashed -7.3% on soft Q3 guidance; TSLA -17.8% on 33c EPS vs 55c expected | "Beat the number, crash on guidance" is the new earnings regime | Even when companies technically beat expectations, if they hint the future looks softer, their stocks get hammered |
-| 📊 **Labor Market Paradox** | Claims 187K (lowest since 1969) vs June NFP +57K (weakest in years) | The bond market chose claims; the Fed's calculus just got harder | The job market looks incredibly strong by one measure and worryingly weak by another — the Fed has to pick which one to believe |
+| 💻 **Tech's Multiple Compression** | XLK +0.2% on surface but semis crashed -7% Friday; P/E compressed 40x → 33x; INTC beat +100% then fell -7.9% | The AI multiple died; the supercycle did not — TSMC raised capex to $60–64B | The companies building AI are still spending like crazy, but investors stopped paying crazy prices for their stocks. Even doubling earnings wasn't enough to keep Intel up |
+| 🏥 **Healthcare's Earnings Breadth** | TMO +6.7% on beat, JNJ +4.1% follow-through, MRK/BMY near 52W highs; DHR -6.1% the outlier | Expensive defensives earned their multiples for once; bifurcation is violent | The doctors and drugmakers proved they can grow profits even when the economy is shaky — but even within healthcare, the market is separating winners from losers |
+| 📉 **INTC Beat-and-Fade / TSLA Implosion** | INTC beat EPS by 100% ($0.42 vs $0.21) then crashed -7.9%; TSLA -17.8% on 33c EPS vs 55c expected | "Beat the number, crash on guidance" is the new earnings regime | Even when companies technically crush expectations, if the market thinks the future looks softer or the valuation was too high, their stocks get hammered |
+| 📊 **Labor Market Paradox** | Claims 187K (lowest since 1969) vs June NFP +57K (weakest in years, -74K revisions) | The bond market chose claims; the Fed's calculus just got harder | The job market looks incredibly strong by one measure and worryingly weak by another — the Fed has to pick which one to believe |
 
 ### Sector Scorecard (1-Year Trend + Week)
 
 | Sector | 1Y Return | Week | Signal |
 |---|---|---|---|
-| 🔥 Semiconductors | +127% | +2.0% | 1Y monster, week bounced off correction lows — still fragile |
+| 🔥 Semiconductors | +127% | — | 1Y monster, correction deepening — SMH -14.4% over 4 weeks |
 | 🔥 Energy | +35.4% | +3.4% | Oil-shock beneficiary; RSI 86 says overbought, not sustainable |
-| 🔥 Technology | +35.3% | +0.5% | 1Y leader stalling; multiple compression the story |
-| 🟡 Healthcare | +20% | -0.3% | Earnings trifecta held the line; breakout watch above $164 |
-| 🟡 Industrials | +20.0% | +1.0% | Violent rotation inside: rails up, AI-infrastructure down |
-| 🟡 Consumer Staples | +13.5% | -3.1% | Profit-taking in the year's best defensive; real staples (GIS/CPB) hold |
+| 🔥 Technology | +35.3% | +0.2% | 1Y leader stalling; multiple compression the story |
+| 🟡 Healthcare | +21% | +0.9% | Earnings breadth held; TMO +6.7%, DHR -6.1% — bifurcation |
+| 🟡 Industrials | +22.0% | +1.8% | Earnings supercycle validated — RTX +10%, LMT +14.5%, HON +8.1% |
+| 🟡 Consumer Staples | +8–12% | -1.2% | Real staples (GIS/CPB) hold; expensive ones (COST/WMT) bleed |
 | 🟡 Materials | +11.5% | -0.5% | Dollar > 101 = Ophelia's embargo back; FCX beat, SHW missed |
-| 🟡 Financials | +11.0% | -1.7% | Coil tightens near $56.80; curve steepening is the oxygen |
-| 🟡 Utilities | +11.0% | +1.6% | Bond-proxy selloff in traditional names; CEG/VST the green shoots |
+| 🟡 Financials | +18% | — | Coil tightens near $56.94 breakout; curve steepening is the oxygen |
+| 🟡 Utilities | +10–12% | +1.6% | Bond-proxy selloff in traditional names; CEG/VST the green shoots |
 | 🟡 Real Estate | +10.5% | -1.0% | Tower REITs broke (CCI -5.8%); DLR/WELL the resilience |
-| ❄️ Communication Services | +6.1% | -6.5% | NFLX broke the recovery; META/GOOGL report Jul 29 |
-| ❄️ Consumer Discretionary | +2.0% | -5.2% | TSLA -17.8% dragged the sector; AMZN Jul 30 is the entire game |
+| ❄️ Communication Services | +4.5% | -4.8% | META/GOOGL -8% on rate pressure; T/VZ telecom heroes |
+| ❄️ Consumer Discretionary | +2% | -5.2% | TSLA -17.8% dragged the sector; AMZN Jul 30 is the entire game |
 
 > **Dad Translation:** The year's biggest winners — chips, tech, and energy — are still up huge over 12 months, but this week showed they're not bulletproof. The real action was underneath: money moved out of risky growth stocks and into companies that make actual cash you can count on. Healthcare, industrials, and utilities got bought while streaming, EVs, and discretionary retail got sold hard.
 
@@ -78,7 +78,7 @@ The growth unwind deepened and the oil shock intensified in the same week. WTI c
 
 ### The Bottom Line
 
-The regime shifted this week from "soft landing with rotation" to **stagflation-lite confirmed**: growth is sluggish (PMI composite 51.8, services 51.5), inflation is falling on core but re-energized by oil ($89 WTI, Brent >$100), and the labor market is simultaneously bulletproof (claims 187K) and fragile (NFP +57K). The Fed is trapped — it meets Wednesday with no good options. The rotation from growth to value/defensives/energy is entrenched, but now the index itself is rolling over too. Credit showed its first crack: HYG broke its month-long range with a -0.71% week. The Council is holding **45% cash** into the FOMC + mega-cap earnings collision, with deployment triggers gated by: (1) a dovish FOMC hold with oil under $80, (2) MSFT/META/AAPL/AMZN guidance confirming the AI chain, and (3) XLK recapturing its 50D at $182.80. Until then, the umbrella is cash.
+The regime shifted this week from "soft landing with rotation" to **stagflation-lite confirmed**: growth is sluggish (PMI composite 51.8, services 51.5), inflation is falling on core but re-energized by oil ($89 WTI, Brent >$100), and the labor market is simultaneously bulletproof (claims 187K) and fragile (NFP +57K). The Fed is trapped — it meets Wednesday with no good options. The rotation from growth to value/defensives/energy is entrenched, but now the index itself is rolling over too. Credit showed its first crack: HYG broke its month-long range with a -0.71% week. The Council is holding **45% cash** into the FOMC + mega-cap earnings collision, with deployment triggers gated by: (1) a dovish FOMC hold with oil under $80, (2) MSFT/META/AAPL/AMZN guidance confirming the AI chain, and (3) XLK recapturing its 50D at $183.30. Until then, the umbrella is cash.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
