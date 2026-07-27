@@ -1,0 +1,14 @@
+python -c "
+import yfinance as yf
+import json
+
+tickers = ['BANF','WAFD','ATRO','LEU','AMPH','SPY']
+prices = {}
+for t in tickers:
+    try:
+        data = yf.Ticker(t).history(period='1d')
+        prices[t] = round(float(data['Close'].iloc[-1]), 4)
+    except Exception as e:
+        prices[t] = str(e)
+print(json.dumps(prices))
+"
