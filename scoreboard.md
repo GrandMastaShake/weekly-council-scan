@@ -84,7 +84,7 @@ All three agents converged on the same sector. The Synthesizer weighted it heavi
 3. **Every pick gets a letter grade.** Direction AND magnitude matter. Direction alone is a B at best.
 4. **Every F triggers a post-mortem.** What signal was missed? What was overweighted? What changed between prediction and outcome?
 5. **3+ consecutive D or F grades from one agent = mandatory harness revision.** The agent's beliefs, scars, and operating principles are reviewed and updated. Previous version is archived.
-6. **Overall Council Grade below C+ (2.5 avg) triggers a Council Review.** No new picks until every agent defends their methodology.
+6. **Overall Council Grade below C+ (2.5 avg) triggers a Council Review.** No new picks until Review is complete.
 7. **Narrative grades are separate from pick grades.** Macro narrative, sector rotation, and micro alpha each get a Yes / Partial / No. They do not affect the composite but feed into Lessons Learned.
 8. **Unanimous picks are flagged.** The Scoreboard demands: where is the hedge? Where is the contrarian call? Consensus without dissent is groupthink.
 9. **Cash target is reported every week.** What % was in cash? The Scoreboard tracks deployment discipline, not just pick performance.
@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-07-20 | -1.83% (Tracker P&L) | 40% | TBD | TBD | AMAT (2.22%) | ADBE (-7.85%) | 0.0% |
 | 2026-07-24 | B (3.0 — analysis quality) | TBD (week open) | Marky (3.1) | Ophelia (0 picks advanced) | ACN (B+) | ADSK (B−) | 0% |
 
 > *Append a new row every week. Do not delete history. The scars live here.*
@@ -258,8 +259,8 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-07-20  
-**Next Audit:** 2026-07-27 (Tracker close + narrative grades)  
+**Last Updated:** 2026-07-27
+**Next Audit:** 2026-08-03 (Tracker close + narrative grades)
 **Current Regime:** Restrictive — VIX 18.1, SPY -1.22% wk, defensive bias (Ophelia, 2026-07-20)
 
 ---
