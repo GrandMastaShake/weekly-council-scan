@@ -1,7 +1,7 @@
 # Scorecard — Week of 2026-07-20
 
 **Council Grade:** -1.83% | **SPY:** -1.34% | **Alpha:** -0.49%
-**Hit Rate:** 0.4 | **VIX at Entry:** 18.1 | **Fed:** Agencies issue joint statement on handling of highly sensitive information during bank examinations
+**Hit Rate:** 0.4 | **VIX at Entry:** 18.1 | **Fed:** Hold. Rates 3.50-3.75%; oil re-acceleration limits easing room.
 
 ## Positions
 
