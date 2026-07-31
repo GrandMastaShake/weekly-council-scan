@@ -50,6 +50,8 @@
 
 **Links:** [Report](reports/2026-07-27-report.md) · [Council Scorecard](scorecards/2026-07-27-council-scorecard.md)
 
+**Data repair (2026-07-30):** Trigger: data pollution — the fed_stance field carried a scraped Fed press-release headline ("Agencies issue joint statement...") in four locations. Fields repaired: fed_stance x4 (reports/2026-07-20-report.md, reports/2026-07-27-report.md, portfolio/history/2026-07-20.yaml, portfolio/current.yaml); current.yaml carries the post-FOMC read (Hold at 3.50-3.75%, 9-3 vote, three dissents for a hike). No book change — picks, weights, prices, and P&L untouched. Defense in depth: tracker.py now validates that the stance line leads with a recognized stance word; a scraped headline lands as null with a WARN instead of poisoning the book.
+
 ---
 
 ### Week of 2026-07-20 — Engine Audit Fixes
