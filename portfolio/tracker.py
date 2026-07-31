@@ -131,10 +131,19 @@ def parse_report(report_path: Path) -> Dict:
     if spy_match:
         result["spy_return"] = float(spy_match.group(1))
 
-    # Extract Fed stance
+    # Extract Fed stance -- must lead with a recognized stance word.
+    ALLOWED_STANCES = {"hawkish", "dovish", "neutral", "hold",
+                       "easing", "tightening", "unknown"}
     fed_match = re.search(r"\*\*Fed Stance:\*\*\s*(.+)", content)
     if fed_match:
-        result["fed_stance"] = fed_match.group(1).strip()
+        raw = fed_match.group(1).strip()
+        lead = re.split(r"[.,:;]", raw, maxsplit=1)[0].strip().lower()
+        if lead in ALLOWED_STANCES:
+            result["fed_stance"] = raw
+        else:
+            print("WARN: Fed Stance line is not a stance "
+                  "('%s...'). Setting fed_stance to None." % raw[:60])
+            result["fed_stance"] = None
 
     # Extract picks table
     picks_section = re.search(
@@ -226,7 +235,7 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
     }
 
     with open(CURRENT_PATH, "w", encoding="utf-8") as f:
-        yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
 
     return current
 
@@ -330,7 +339,7 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
     # Archive to history
     history_file = HISTORY_DIR / f"{current['week']}.yaml"
     with open(history_file, "w", encoding="utf-8") as f:
-        yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
 
     # Clear current
     CURRENT_PATH.unlink()
