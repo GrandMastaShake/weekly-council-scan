@@ -1,14 +1,35 @@
-python -c "
-import yfinance as yf
-import json
-
-tickers = ['BANF','WAFD','ATRO','LEU','AMPH','SPY']
-prices = {}
-for t in tickers:
-    try:
-        data = yf.Ticker(t).history(period='1d')
-        prices[t] = round(float(data['Close'].iloc[-1]), 4)
-    except Exception as e:
-        prices[t] = str(e)
-print(json.dumps(prices))
-"
+week: '2026-07-27'
+lock: 2026-07-27 08:50 ET
+entry_date: '2026-07-27'
+exit_date: '2026-07-31'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 744.91
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: BANF
+    weight: 0.3
+    entry_price: 117.18
+    entry_price_source: open
+  - ticker: WAFD
+    weight: 0.15
+    entry_price: 36.88
+    entry_price_source: open
+  - ticker: ATRO
+    weight: 0.25
+    entry_price: 69.85
+    entry_price_source: open
+  - ticker: LEU
+    weight: 0.2
+    entry_price: 165.45
+    entry_price_source: open
+  - ticker: AMPH
+    weight: 0.1
+    entry_price: 18.97
+    entry_price_source: open
