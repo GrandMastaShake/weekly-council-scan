@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $561.19 | $655.89 | −14.4% |
+| Price | $540.53 | $655.89 | −17.6% |
 | 52W Range | $278.55 – $671.83 | — | — |
-| AUM | ~$68.9B | — | — |
-| YTD Return | **+58.2%** | — | — |
-| 1Y Return | ~+127% | — | — |
-| P/E Ratio | ~41.5 | — | — |
-| Dividend Yield | ~0.18% | — | — |
+| AUM | ~$64.5B | — | — |
+| YTD Return | **+54.1%** | — | — |
+| 1Y Return | ~+118% | — | — |
+| P/E Ratio | ~39.2 | — | — |
+| Dividend Yield | ~0.19% | — | — |
 | Beta | ~1.54 | — | — |
 | Total Holdings | ~25 | — | — |
-| Avg Daily Volume | ~11.6M shares | — | — |
+| Avg Daily Volume | ~9.8M shares | — | — |
 
-**Marky Tape Read:** SMH is down sharply from June highs — the PHLX Semiconductor Index (SOX) has slid nearly 20% from its peak. Friday's session was another bruiser: SOX −3%, MU −6%, INTC −4%+, and memory stocks leading the decliners. SMH at $561 is now below its 50D MA (~$597), a bearish short-term signal. The 200D MA sits around $439 — still well below, so the long-term trend is technically intact, but the correction is deepening. Volume has been elevated on the way down, suggesting distribution, not just profit-taking. The key level: hold $540 for bulls. A break below $520 opens the door to $480.
+**Marky Tape Read:** SMH is down sharply from June highs — the PHLX Semiconductor Index (SOX) has slid more than 20% from its peak. Friday's session saw SMH close at $540.53, down from $561.19 last Friday, extending the correction that began in mid-June. The 50D MA (~$585) was breached decisively two weeks ago and now acts as resistance. The 200D MA sits around $445 — still well below, so the long-term trend is technically intact, but the correction is deepening and broadening. Volume has been elevated on the way down, suggesting distribution, not just profit-taking. The key level: hold $520 for bulls. A break below $500 opens the door to $460. Software stocks are outperforming chips for the first time in years — a rotation that bears watching.
 
-**Ophelia Macro Read:** Semiconductors remain the **most cyclical sector in the market** — and the most important. The AI infrastructure supercycle is the dominant narrative: hyperscalers are spending **~$800B+ on AI capex in 2026**. NVIDIA still commands the GPU throne, but the market is no longer giving the sector a free pass. The 10Y yield at 4.69% is less relevant for growth stocks than for REITs, but elevated rates do compress valuation multiples. DXY at ~101.5 is a moderate tailwind for international revenue (TSM, ASML). The real risks now: **demand-question fatigue** (Meta renting spare compute, returns doubts), **memory cycle bifurcation** (HBM booming, legacy DRAM/NAND wobbling), and the persistent **geopolitical overhang** (Taiwan/China, export controls).
+**Ophelia Macro Read:** Semiconductors remain the **most cyclical sector in the market** — and the most important. The AI infrastructure supercycle is the dominant narrative: hyperscalers are spending **~$800B+ on AI capex in 2026**. NVIDIA still commands the GPU throne, but the market is no longer giving the sector a free pass. The 10Y yield at 4.74% is less relevant for growth stocks than for REITs, but elevated rates do compress valuation multiples. DXY at ~99.8 is a moderate tailwind for international revenue (TSM, ASML) — the dollar broke below 100 for the first time in months. The real risks now: **demand-question fatigue** (Meta renting spare compute, returns doubts), **memory cycle bifurcation** (HBM booming, legacy DRAM/NAND wobbling), **software rotation** (IGV outperforming SMH for the first time in years), and the persistent **geopolitical overhang** (Taiwan/China, export controls).
 
 ---
 
@@ -31,16 +31,16 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA | ~19% | $206.84 | −2.5% | $236.54 | $157.34 | 0.14% | 33.0 | ⚡ |
-| 2 | TSM | Taiwan Semiconductor | ~12% | $175.00 | −2.0% | $200.00 | $130.00 | 1.40% | 36.4 | ⚠️ |
-| 3 | AVGO | Broadcom | ~8% | $388.00 | −2.0% | $420.00 | $310.00 | 1.30% | 62.0 | ⚡ |
-| 4 | ASML | ASML Holding | ~5% | $1,803.00 | +0.1% | $1,999.96 | $683.48 | 0.49% | 62.0 | ⚡ |
-| 5 | AMD | AMD | ~5% | $155.00 | −3.0% | $180.00 | $140.00 | 0.00% | 175.8 | ⚠️ |
-| 6 | INTC | Intel | ~4% | $24.00 | −4.5% | $35.00 | $18.00 | 0.00% | 64.7 | 🔴 |
-| 7 | QCOM | Qualcomm | ~4% | $215.00 | −1.0% | $260.00 | $160.00 | 2.10% | 19.1 | ⚡ |
-| 8 | MU | Micron Technology | ~3% | $920.95 | −6.0% | $967.14 | $75.00 | 0.50% | 45.0 | ⚠️ |
-| 9 | LRCX | Lam Research | ~3% | $75.00 | −3.0% | $95.00 | $65.00 | 0.90% | 63.3 | ⚠️ |
-| 10 | AMAT | Applied Materials | ~3% | $175.00 | −2.5% | $220.00 | $140.00 | 0.70% | 54.7 | ⚡ |
+| 1 | NVDA | NVIDIA | ~19% | $198.50 | −3.8% | $236.54 | $157.34 | 0.14% | 31.5 | ⚠️ |
+| 2 | TSM | Taiwan Semiconductor | ~12% | $168.20 | −3.2% | $200.00 | $130.00 | 1.40% | 35.1 | ⚠️ |
+| 3 | AVGO | Broadcom | ~8% | $389.28 | +0.4% | $495.00 | $281.61 | 0.67% | 64.9 | ⚡ |
+| 4 | ASML | ASML Holding | ~5% | $1,725.00 | −1.5% | $1,999.96 | $683.48 | 0.49% | 59.0 | ⚠️ |
+| 5 | AMD | AMD | ~5% | $476.15 | −1.9% | $584.73 | $149.22 | 0.00% | 156.1 | ⚠️ |
+| 6 | INTC | Intel | ~4% | $22.80 | −5.0% | $35.00 | $18.00 | 0.00% | 61.5 | 🔴 |
+| 7 | QCOM | Qualcomm | ~4% | $208.50 | −2.5% | $260.00 | $160.00 | 2.10% | 18.5 | ⚡ |
+| 8 | MU | Micron Technology | ~3% | $845.00 | −8.2% | $967.14 | $75.00 | 0.50% | 42.0 | 🔴 |
+| 9 | LRCX | Lam Research | ~3% | $68.50 | −4.5% | $95.00 | $65.00 | 0.90% | 60.0 | ⚠️ |
+| 10 | AMAT | Applied Materials | ~3% | $168.00 | −3.0% | $220.00 | $140.00 | 0.70% | 52.5 | ⚠️ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 
@@ -54,17 +54,34 @@
 - **Legacy x86:** INTC (the turnaround story that isn't turning)
 - **Mobile:** QCOM (the 5G/modem leader)
 
-**The NVDA Story:** NVIDIA at $206.84, down ~2.5% on the week. NVDA is **~12% below its 52W high** ($236.54). The company remains the most important stock in the market, with $1 trillion+ in confirmed purchase commitments through 2027. The H100/H200 chips are sold out. The Blackwell architecture (B100/B200) is the next growth wave. But the stock at 33x P/E is not cheap, and the custom silicon risk is growing — Google's TPU v6, Amazon's Trainium 3, and Meta's MTIA are all gaining traction. The market is pricing in 30%+ revenue growth for years. Any disappointment in the August 26 earnings report will be punished. NVDA's resilience relative to the sector is notable — it's holding better than memory or equipment names.
+**The NVDA Story:** NVIDIA at ~$198.50, down ~3.8% on the week. NVDA is **~16% below its 52W high** ($236.54). The company remains the most important stock in the market, with $1 trillion+ in confirmed purchase commitments through 2027. The H100/H200 chips are sold out. The Blackwell architecture (B100/B200) is the next growth wave. But the stock at 31.5x P/E is not cheap, and the custom silicon risk is growing — Google's TPU v6, Amazon's Trainium 3, and Meta's MTIA are all gaining traction. The market is pricing in 30%+ revenue growth for years. Any disappointment in the August 26 earnings report will be punished. NVDA's relative weakness this week — underperforming even the battered sector — is a yellow flag.
 
-**The TSM Story:** Taiwan Semiconductor at ~$175, down 2% Friday. TSM reported blowout Q2 earnings this week — record profit up ~77% YoY — and **raised its 2026 capex guidance to $60–64 billion**. The market's reaction? The stock dropped. This is the "records everywhere, stocks nowhere" dynamic that now defines the sector. TSM is the foundry monopoly — it manufactures ~90% of the world's advanced chips. The company is building fabs in Arizona, Japan, and Germany to diversify from Taiwan. But the geopolitical risk is existential. At 36x P/E, TSM is not cheap, but it is the most indispensable company in the sector.
+**The TSM Story:** Taiwan Semiconductor at ~$168.20, down 3.2% Friday. TSM reported blowout Q2 earnings two weeks ago — record profit up ~77% YoY — and **raised its 2026 capex guidance to $60–64 billion**. The market's reaction? The stock dropped. This is the "records everywhere, stocks nowhere" dynamic that now defines the sector. TSM is the foundry monopoly — it manufactures ~90% of the world's advanced chips. The company is building fabs in Arizona, Japan, and Germany to diversify from Taiwan. But the geopolitical risk is existential. At 35x P/E, TSM is not cheap, but it is the most indispensable company in the sector.
 
-**The ASML Story:** ASML at $1,803.00, essentially flat Friday. ASML reported this week and said it's adding **30% more capacity in both 2027 and 2028** to meet insatiable demand for EUV lithography. Like TSM, the stock fell on record results. ASML's monopoly on advanced lithography means every leading-edge chip — NVIDIA's, AMD's, Apple's — requires ASML machines. The backlog extends to 2027+. At 62x P/E, ASML is expensive, but it is the most defensible monopoly in the sector.
+**The ASML Story:** ASML at ~$1,725.00, down 1.5% Friday. ASML reported two weeks ago and said it's adding **30% more capacity in both 2027 and 2028** to meet insatiable demand for EUV lithography. Like TSM, the stock fell on record results. ASML's monopoly on advanced lithography means every leading-edge chip — NVIDIA's, AMD's, Apple's — requires ASML machines. The backlog extends to 2027+. At 59x P/E, ASML is expensive, but it is the most defensible monopoly in the sector.
 
-**The INTC Story:** Intel at ~$24.00, down 4.5% Friday **despite reporting quarterly results that blew past expectations on surging AI-related demand**. This is the tragedy of Intel — even when it beats, the market sells. The company's turnaround under Pat Gelsinger is bleeding cash. The foundry business is losing $3B+ per quarter. The stock at 64.7x P/E is expensive for a company in decline. Is this a value trap or a deep-value turnaround? The market is voting: value trap.
+**The INTC Story:** Intel at ~$22.80, down 5.0% Friday **despite reporting quarterly results that beat expectations on surging AI-related demand**. This is the tragedy of Intel — even when it beats, the market sells. The company's turnaround under Pat Gelsinger is bleeding cash. The foundry business is losing $3B+ per quarter. The stock at 61.5x P/E is expensive for a company in decline. Is this a value trap or a deep-value turnaround? The market is voting: value trap.
 
-**The MU Story:** Micron at $920.95, down 6% Friday. MU is the memory cycle in stock form, and that cycle has gone parabolic. HBM (high-bandwidth memory) prices have doubled, then doubled again. Samsung just became the most profitable company on earth — Q2 profit of $58.5B, edging past NVIDIA's $53B — with 94–96% of that coming from AI memory. SK Hynix has sold out its entire 2026 HBM output. Micron is caught between the AI memory super-boom and legacy DRAM/NAND pricing pressure. At ~45x P/E, the valuation is stretched, but the earnings momentum is extraordinary. The Roundhill Memory ETF (DRAM) plunged 7% Friday — memory is the most volatile slice of the most volatile sector.
+**The MU Story:** Micron at ~$845.00, down 8.2% Friday. MU is the memory cycle in stock form, and that cycle has gone parabolic. HBM (high-bandwidth memory) prices have doubled, then doubled again. Samsung just became the most profitable company on earth — Q2 profit of $58.5B, edging past NVIDIA's $53B — with 94–96% of that coming from AI memory. SK Hynix has sold out its entire 2026 HBM output. Micron is caught between the AI memory super-boom and legacy DRAM/NAND pricing pressure. At ~42x P/E, the valuation is stretched, but the earnings momentum is extraordinary. Friday's 8.2% drop shows that even the hottest sub-sector is not immune to profit-taking in a risk-off tape.
 
-**Cecil Fundamental Read:** QCOM at 19.1x P/E and 2.10% yield is still the only name that fits Cecil's criteria. Qualcomm is a cash machine — 5G modem royalties, smartphone chip sales, automotive/IoT diversification. The dividend is covered. The balance sheet is fortress-like. But growth is slowing — smartphone sales are flat. NVDA at 33x P/E is a growth stock, not a value play. TSM at 36x P/E is a monopoly with geopolitical risk. MU at ~45x P/E is a commodity cyclical at the peak — dangerous. INTC at 64.7x P/E is a disaster. The semiconductor sector is Marky's turf, not Cecil's.
+**Cecil Fundamental Read:** QCOM at 18.5x P/E and 2.10% yield is still the only name that fits Cecil's criteria. Qualcomm is a cash machine — 5G modem royalties, smartphone chip sales, automotive/IoT diversification. The dividend is covered. The balance sheet is fortress-like. But growth is slowing — smartphone sales are flat. NVDA at 31.5x P/E is a growth stock, not a value play. TSM at 35x P/E is a monopoly with geopolitical risk. MU at ~42x P/E is a commodity cyclical at the peak — dangerous. INTC at 61.5x P/E is a disaster. The semiconductor sector is Marky's turf, not Cecil's.
+
+---
+
+## SMALL/MID-CAP WATCH
+
+> *The Council tracks mega-caps obsessively — but the real torque lives below $5B. These are the names that can double on a design win or halve on a capex cut. High risk, high reward, high relevance.*
+
+| Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
+|---|---|---|---|---|---|---|
+| **AOSL** | Alpha & Omega Semiconductor | ~$0.95B | ~$32.15 | −4.2% | Price target cut to $60 from $70 (Jul 10); power semi exposure to computing/industrial end markets. | Power discretes are a cyclical grind — AOSL is a recovery play, not a momentum play. Needs industrial demand to bottom. |
+| **DIOD** | Diodes Incorporated | $3.78B | ~$84.50 | −3.8% | 52W range $42–$126 shows high volatility; analog/discrete supplier with auto/industrial exposure. | DIOD is a barometer for non-AI semi demand. The wide 52W range tells the story — this stock swings with the cycle. |
+| **POWI** | Power Integrations | $3.39B | ~$88.00 | −2.5% | Stifel raised price target to $95 (Jul 25); leader in high-voltage power conversion for EVs and renewables. | POWI's GaN and gate-driver portfolio is the clean-energy angle on semis. The EV slowdown is the headwind; the grid buildout is the tailwind. |
+| **ACMR** | ACM Research | ~$1.5B | $78.47 | −1.2% | Q1 revenue $231M (+34% YoY); backlog $1.27B (+34% YoY); Strong Buy consensus; shipped first PECVD SiCN system. | **The clean-up hitter.** ACMR is a China-exposed equipment name with real technology differentiation. The backlog gives visibility. The geopolitical discount is the tax. |
+
+> **Note:** SLAB (Silicon Laboratories) was rotated out of this watch — the stock has graduated above the $5B threshold (market cap now ~$7.5B following acquisition interest and re-rating). Starting next week, we will evaluate MTSI or ALGM as a replacement.
+
+**Marky Small-Cap Read:** The small-cap semi complex is holding up *relatively* better than the mega-caps this week — ACMR is down only 1.2% vs. MU down 8.2%. This is unusual. Typically, small-caps lead the sector down in corrections. The relative resilience suggests that the selling is concentrated in the AI/memory names that had run the farthest, while the beaten-down analog/discrete names are finding a floor. That said, if the correction deepens, small-caps will not be spared. AOSL under $1B is a coin-toss — it either doubles on an industrial recovery or gets acquired for parts. POWI is the highest-quality name in this table — fortress balance sheet, duopoly markets, dividend. ACMR is the growth story, but the China exposure is the wildcard.
 
 ---
 
@@ -73,17 +90,17 @@
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $671.83 | Prior bull peak — tested in June, rejected |
-| Near Resistance | $600.00 | 50D MA cluster / prior consolidation zone |
-| 50-Day MA | ~$597.00 | **Key dynamic level** — SMH closed below it Friday |
-| Current Price | $561.19 | — |
-| 200-Day MA | ~$439.00 | Long-term trend support — bullish above |
-| Major Support | $540.00 | Previous breakout zone from April |
+| Near Resistance | $585.00 | 50D MA cluster / breakdown point from two weeks ago |
+| 50-Day MA | ~$585.00 | **Key dynamic level** — SMH closed well below it |
+| Current Price | $540.53 | — |
+| 200-Day MA | ~$445.00 | Long-term trend support — bullish above |
+| Major Support | $520.00 | Previous breakout zone from April |
 | Deep Support | $480.00 | Post-correction demand shelf |
 | Structural Low | $278.55 | 52W bottom — March 2025 lows |
 
-**Marky Setup Assessment:** SMH is in a **correction from resistance**. The 52W high of $671.83 was tested in June and rejected. The sector has dropped ~16% from the peak. The 50D MA at ~$597 was broken on Friday — a short-term bearish signal. The RSI is likely around 45–50 — approaching oversold but not there yet. Volume on the drop is elevated, suggesting distribution after the 58% YTD rally. The key question: is this a healthy correction in a bull trend, or the start of a larger decline? If SMH holds $540, the bulls can stabilize. If it breaks $520, the correction deepens to $480. The bias is **cautiously bearish short-term, structurally bullish medium-term** — the AI supercycle is intact, but the sector is digesting a massive H1 run amid demand-question fatigue.
+**Marky Setup Assessment:** SMH is in a **correction from resistance**. The 52W high of $671.83 was tested in June and rejected. The sector has dropped ~19.5% from the peak. The 50D MA at ~$585 was broken decisively two weeks ago — a short-term bearish signal. The RSI is likely around 40–45 — approaching oversold but not there yet. Volume on the drop is elevated, suggesting distribution after the 54% YTD rally. The key question: is this a healthy correction in a bull trend, or the start of a larger decline? If SMH holds $520, the bulls can stabilize. If it breaks $500, the correction deepens to $480. The bias is **cautiously bearish short-term, structurally bullish medium-term** — the AI supercycle is intact, but the sector is digesting a massive H1 run amid demand-question fatigue and a rotation into software.
 
-**The relative strength story:** SMH is +58.2% YTD vs. SPY at ~+10%. This is still **massive outperformance**, even after the correction. Semiconductors are the market's leadership sector. When SMH leads, the market follows. When SMH lags, the market stalls. The sector's 1.54 beta means it moves 1.54x the market — up and down. The risk is asymmetric: the sector has run so far that a 20% correction would still leave it +26% YTD. But a 20% correction feels like a crash when you're in it.
+**The relative strength story:** SMH is +54.1% YTD vs. SPY at ~+8%. This is still **massive outperformance**, even after the correction. Semiconductors are the market's leadership sector. When SMH leads, the market follows. When SMH lags, the market stalls. The sector's 1.54 beta means it moves 1.54x the market — up and down. The risk is asymmetric: the sector has run so far that a 20% correction would still leave it +23% YTD. But a 20% correction feels like a crash when you're in it.
 
 ---
 
@@ -91,11 +108,11 @@
 
 | Factor | Level | Implication for SMH |
 |---|---|---|
-| 10Y Treasury | 4.69% | Less relevant for growth stocks. But high rates compress valuation multiples. |
-| DXY | ~101.5 | Above 100 = neutral for international revenue (TSM, ASML). |
-| Fed Funds | 3.50–3.75% (on hold) | Neutral. Cuts = lower discount rates = higher multiples for growth. |
+| 10Y Treasury | 4.74% | Less relevant for growth stocks. But high rates compress valuation multiples. Yields rose on the week. |
+| DXY | ~99.80 | **Below 100** = tailwind for international revenue (TSM, ASML). The dollar's break below 100 is a macro relief valve. |
+| Fed Funds | 3.50–3.75% (on hold) | Neutral. Cuts = lower discount rates = higher multiples for growth. Three dissenters wanted a hike — hawkish undertone. |
 | **Hyperscaler AI Capex 2026E** | **~$800B+** | **The bull thesis.** Committed capital = locked revenue for NVDA, TSM, AVGO. |
-| HBM Memory Prices | ~Up 90% in Q1, +50–60% in Q2, +~20% teed up for Q3 | AI demand surge. Benefits MU, Hynix, Samsung. But prices could crash if supply catches up. |
+| HBM Memory Prices | ~Up 90% in Q1, +50–60% in Q2, +~15% teed up for Q3 | AI demand surge. Benefits MU, Hynix, Samsung. But prices could crash if supply catches up. |
 | **TSMC 3nm/2nm Utilization** | **95%+** | **Supply constrained.** TSM cannot make chips fast enough. Pricing power is extreme. |
 | ASML EUV Backlog | Extends to 2027+ | Monopoly on advanced lithography. Every advanced chip requires ASML machines. |
 | China/Taiwan Tensions | Elevated | **Existential risk.** A blockade or conflict would freeze the global chip supply chain. |
@@ -105,17 +122,20 @@
 | PC/Smartphone Demand | Recovering | Post-COVID inventory correction ending. Benefits QCOM, MU, AVGO. |
 | Automotive Chip Demand | Slowing | EV sales slowing. Hurts automotive chip suppliers. |
 | Memory Cycle | AI boom + commodity bifurcation | HBM prices soaring. Legacy DRAM/NAND prices weak. Mixed for MU. |
+| **Software Rotation** | **IGV outperforming SMH** | **New risk.** For the first time in years, software stocks are beating chips. Capital is rotating out of hardware. |
 | **Short Interest** | **15-year high** | **Contrarian signal.** If hyperscalers reaffirm capex, trapped shorts could squeeze. |
 
-**Ophelia Verdict:** Semiconductors are in an **AI supercycle** that may be the strongest earnings driver the sector has ever seen. But the market is no longer blindly buying the narrative. TSMC and ASML both posted record results this week — and both stocks fell. That is the definition of a market that is "priced for perfection." The demand questions are real: Meta is renting out spare AI compute, Palantir's CEO warned that big companies increasingly doubt AI returns, and short interest is at a 15-year high. The memory cycle has gone parabolic — Samsung's $58.5B quarterly profit is extraordinary — but parabolic moves end badly.
+**Ophelia Verdict:** Semiconductors are in an **AI supercycle** that may be the strongest earnings driver the sector has ever seen. But the market is no longer blindly buying the narrative. TSMC and ASML both posted record results two weeks ago — and both stocks fell. That is the definition of a market that is "priced for perfection." The demand questions are real: Meta is renting out spare AI compute, Palantir's CEO warned that big companies increasingly doubt AI returns, and short interest is at a 15-year high. The memory cycle has gone parabolic — Samsung's $58.5B quarterly profit is extraordinary — but parabolic moves end badly.
 
-The **valuation risk is real**. SMH at 41.5x P/E after a 58% YTD rally is priced for perfection. Any disappointment in the AI capex cycle — a slowdown in hyperscaler spending, a delay in Blackwell ramp, a memory price crash — would trigger a violent correction.
+The **new variable this week** is the software rotation. The iShares Expanded Tech-Software Sector ETF (IGV) outperformed SMH for the first time in years. Investors are asking: what if the AI capex cycle peaks in 2026 and the returns accrue to software, not hardware? This is the bear case that has SMH in a correction.
+
+The **valuation risk is real**. SMH at 39.2x P/E after a 54% YTD rally is priced for perfection. Any disappointment in the AI capex cycle — a slowdown in hyperscaler spending, a delay in Blackwell ramp, a memory price crash — would trigger a violent correction.
 
 The **geopolitical risk** is the sleeper threat. Taiwan produces ~90% of the world's advanced chips. TSMC's fabs are concentrated in Taiwan. A Chinese blockade or invasion would freeze the global technology industry.
 
 The **custom silicon displacement** is the long-term threat. Google, Amazon, and Meta are developing their own AI chips. If custom silicon captures 30% of the AI training market, NVIDIA's growth rate drops.
 
-**The Bottom Line:** Semiconductors are experiencing a **tale of two cycles**. The AI cycle is booming — NVIDIA, TSM, ASML are the beneficiaries. The memory/commodity cycle is hyper-volatile — MU and the memory stocks are swinging 6–7% in a day. SMH as an ETF owns both. The sector is expensive and correcting. But the AI supercycle is not over — it may just be entering its stress-test phase.
+**The Bottom Line:** Semiconductors are experiencing a **tale of two cycles**. The AI cycle is booming — NVIDIA, TSM, ASML are the beneficiaries. The memory/commodity cycle is hyper-volatile — MU and the memory stocks are swinging 6–8% in a day. SMH as an ETF owns both. The sector is expensive and correcting. But the AI supercycle is not over — it may just be entering its stress-test phase. The software rotation is the new wildcard.
 
 ---
 
@@ -123,25 +143,29 @@ The **custom silicon displacement** is the long-term threat. Google, Amazon, and
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: Records Everywhere, Stocks Nowhere
+### This Week's Story: The Software Rotation Bites
 
-Semiconductors had another rough week. The SOX index is now **nearly 20% below its June highs**. Friday's session saw the PHLX Semiconductor Index drop 3%, with memory stocks leading the bloodletting. MU fell 6%. SanDisk fell 7%. The Roundhill Memory ETF (DRAM) plunged 7%. Even the AI blue chips — AVGO and TSM — fell 2% each. Intel reported earnings that "blew past expectations on surging AI-related demand" and the stock still tumbled more than 4%.
+Semiconductors had another rough week. The SOX index is now **more than 20% below its June highs**. SMH fell from $561.19 to $540.53 — a 3.7% weekly drop that capped off a 19.5% drawdown from the peak. Friday's session saw the PHLX Semiconductor Index drop again, with memory stocks leading the bloodletting. MU fell 8.2%. SNDK fell sharply. Even the AI blue chips — NVDA and TSM — fell 3.8% and 3.2% respectively. Intel, despite beating earnings expectations, tumbled 5%.
 
-**The TSMC Paradox.**
+**The Software Rotation.**
 
-Taiwan Semiconductor reported record Q2 profit — up roughly 77% year-over-year. The company raised its 2026 capex guidance to $60–64 billion. It beat on revenue, margins, and AI-related revenue. The stock dropped. As Deutsche Bank's Ozan Tarman put it, "TSMC delivered. Price action didn't." This is the paradox of the sector: the fundamentals have never been better, but the valuations were pricing in perfection. When perfection is the baseline, "great" becomes a disappointment.
+For the first time in years, software stocks are outperforming chip stocks. The iShares Expanded Tech-Software Sector ETF (IGV) rose while SMH fell. Workday, Autodesk, Palantir, and ServiceNow were among the biggest S&P 500 gainers Monday, logging price increases of 7% or greater. They helped power IGV to a 3.3% gain on a day when SMH declined 2.3%. This is not a blip — it is a rotation. The market is asking: what if the AI returns accrue to software layers, not hardware layers? If Microsoft, Salesforce, and ServiceNow capture the productivity gains from AI, while NVIDIA and TSM are left with commodity-like margins on inference chips, the semiconductor narrative cracks. This is the bear case that the bulls must answer.
 
-**The ASML Paradox.**
+**The Fed's Hawkish Hold.**
 
-ASML — the monopoly that makes the machines that make chips — said it's adding 30% more capacity in 2027 and 2028. EUV backlog extends to 2027+. Record orders. Record revenue. The stock dropped. Same story: priced for perfection.
+The FOMC held rates at 3.50–3.75% on Wednesday, but three dissenters — Hammack, Kashkari, and Logan — voted for a 25bp hike. This is the most hawkish FOMC since the Volcker era. Chair Warsh said the Fed "will deliver price stability" and called inflation "elevated." The bond market listened — the 10-year yield surged to 4.74%, a fresh 19-year high. For growth stocks, rising long-term rates are kryptonite. The discount rate on future earnings rises, and multiples compress. SMH felt it.
+
+**The GDP Miss.**
+
+Thursday's Q2 GDP print came in at 1.5% SAAR, well below the 2.0% consensus. The economy is slowing. Consumer spending held up, but business investment and government spending dragged. For semiconductors, the GDP miss is a double-edged sword: it suggests the Fed may not hike (dovish), but it also confirms that the economy is decelerating (bearish for cyclicals). The market chose to focus on the cyclical risk.
 
 **The Memory Euphoria and Hangover.**
 
-Micron at $920.95 is down 6% Friday — after a parabolic run. The memory cycle has gone vertical. HBM prices are up 90% in Q1, another 50–60% in Q2, and a further ~20% is teed up for Q3. Samsung just became the most profitable company on earth with Q2 profit of $58.5B, edging past NVIDIA's $53B. SK Hynix has sold out its entire 2026 HBM output. But Friday's selloff in memory — MU −6%, SNDK −7%, DRAM ETF −7% — shows that even the hottest sub-sector is not immune to profit-taking.
+Micron at ~$845.00 is down 8.2% Friday — after a parabolic run. The memory cycle has gone vertical. HBM prices are up 90% in Q1, another 50–60% in Q2, and a further ~15% is teed up for Q3. Samsung just became the most profitable company on earth with Q2 profit of $58.5B, edging past NVIDIA's $53B. SK Hynix has sold out its entire 2026 HBM output. But Friday's selloff in memory — MU −8.2%, SNDK down sharply — shows that even the hottest sub-sector is not immune to profit-taking in a risk-off tape.
 
 **The China "Kimi K3" Scare (and Reversal).**
 
-A new Chinese AI model, Kimi K3, caused a panic last week that knocked chips into a bear market. But the panic is already being walked back. Unlike last year's DeepSeek, Kimi K3 is a *huge* model that needs roughly 1.4 terabytes of memory just to run — which is bullish, not bearish, for Micron and SK Hynix. Macro strategist Andreas Steno's verdict: "I basically think the market got this wrong." The memory-heavy nature of the model is a demand tailwind, not a displacement threat.
+A new Chinese AI model, Kimi K3, caused a panic two weeks ago that knocked chips into a bear market. But the panic is already being walked back. Unlike last year's DeepSeek, Kimi K3 is a *huge* model that needs roughly 1.4 terabytes of memory just to run — which is bullish, not bearish, for Micron and SK Hynix. Macro strategist Andreas Steno's verdict: "I basically think the market got this wrong." The memory-heavy nature of the model is a demand tailwind, not a displacement threat.
 
 **The Meta Compute-Glut Signal.**
 
@@ -149,9 +173,9 @@ Meta's announcement that it will build a cloud business to rent out its spare AI
 
 **The Short Squeeze Setup.**
 
-Short interest against US stocks just hit its **highest level since 2010**. If the hyperscalers — Google (reported this week), Microsoft, Meta, Amazon, Apple (all reporting next week) — reaffirm their ~$800B+ spending plans, trapped short-sellers could be forced to buy back in and spark a squeeze. If even one guides spending flat, the bears win the argument. The next ten days of earnings are the binary event.
+Short interest against US stocks just hit its **highest level since 2010**. If the hyperscalers — Google (reported two weeks ago), Microsoft, Meta, Amazon, Apple (all reporting next week) — reaffirm their ~$800B+ spending plans, trapped short-sellers could be forced to buy back in and spark a squeeze. If even one guides spending flat, the bears win the argument. The next two weeks of earnings are the binary event.
 
-**The Bottom Line:** Semiconductors are experiencing a **fundamental disconnect**. The companies that make the AI boom possible are posting the best numbers in their history. Their stocks are falling. The market is asking: "What if this is as good as it gets?" The answer will come from the hyperscaler earnings calendar over the next two weeks.
+**The Bottom Line:** Semiconductors are experiencing a **fundamental disconnect**. The companies that make the AI boom possible are posting the best numbers in their history. Their stocks are falling. The market is asking: "What if this is as good as it gets?" The answer will come from the hyperscaler earnings calendar over the next two weeks — and from whether the software rotation is a trade or a regime change.
 
 ---
 
@@ -159,8 +183,8 @@ Short interest against US stocks just hit its **highest level since 2010**. If t
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **NVIDIA** | NVDA | **Aug 26, 2026** | Q2 FY2027 | Data center revenue; Blackwell ramp; H200 shipments; guidance |
 | **AMD** | AMD | **Aug 4, 2026** | Q2 2026 | Data center revenue; MI300 sales; client CPU share; guidance |
+| **NVIDIA** | NVDA | **Aug 26, 2026** | Q2 FY2027 | Data center revenue; Blackwell ramp; H200 shipments; guidance |
 | **Applied Materials** | AMAT | **Aug 14, 2026** | Q3 FY2026 | Deposition equipment demand; China revenue; services growth; guidance |
 | **Broadcom** | AVGO | **Sep 5, 2026** | Q3 FY2026 | AI networking revenue; VMware integration; dividend; guidance |
 | **Lam Research** | LRCX | **Jul 30, 2026** | Q4 FY2026 | Etch equipment demand; China revenue; memory vs. logic split; guidance |
@@ -170,7 +194,7 @@ Short interest against US stocks just hit its **highest level since 2010**. If t
 | **Samsung** | 005930.KS | **Jul 30, 2026** | Q2 2026 | HBM revenue; DRAM/NAND pricing; memory capex; guidance |
 | **SK Hynix** | 000660.KS | **Jul 24, 2026** | Q2 2026 | HBM shipments; AI memory demand; pricing; guidance |
 
-**Marky's Binary Event Read:** The hyperscaler earnings gauntlet is here. Google (Alphabet) reported this week — the market is parsing whether AI capex is still accelerating. Microsoft, Meta, Amazon, and Apple report next week. These five companies account for the majority of AI infrastructure spend. If they reaffirm ~$800B+ in 2026 capex, the semiconductor correction ends. If even one guides flat or down, SMH drops another 10%+. NVDA (Aug 26) is still the Super Bowl — Q2 FY2027 consensus wants to see Blackwell ramp guidance and data center revenue momentum. The memory stocks (MU, Samsung, SK Hynix) are the most volatile — HBM demand is insatiable, but legacy memory pricing is wobbling.
+**Marky's Binary Event Read:** AMD reports Tuesday, August 4 — the first major semiconductor earnings of the season. The market wants to see MI300 traction and data center revenue momentum. If AMD guides down on data center, SMH drops another 5%+. NVDA (Aug 26) is still the Super Bowl — Q2 FY2027 consensus wants to see Blackwell ramp guidance and data center revenue momentum. The memory stocks (MU, Samsung, SK Hynix) are the most volatile — HBM demand is insatiable, but legacy memory pricing is wobbling. The hyperscaler earnings (Microsoft, Meta, Amazon, Apple) over the next two weeks are the real macro catalyst — they account for the majority of AI infrastructure spend. If they reaffirm ~$800B+ in 2026 capex, the semiconductor correction ends. If even one guides flat or down, SMH drops another 10%+.
 
 ---
 
@@ -189,27 +213,27 @@ Short interest against US stocks just hit its **highest level since 2010**. If t
 - Memory cycle crashes → HBM prices drop 40% → MU earnings collapse → sector contagion
 - China blockades Taiwan → TSM production halts → global chip shortage → SMH drops 50%+
 - Custom silicon captures 30% of AI training market → NVDA growth drops to 15% → multiple compresses
+- Software rotation becomes a regime change → capital flees hardware for software → SMH underperforms for years
 - Recession → PC/smartphone/auto demand collapses → QCOM, MU, INTC miss → sector-wide selloff
-- Hyperscaler earnings disappoint → one major capex cut → AI demand narrative cracks
 
 ### ⚠️ The Wild Card
-The **China/Taiwan geopolitical risk** is the wild card that no model can price. Taiwan produces ~90% of the world's advanced chips. TSMC's fabs are concentrated in Taiwan. A Chinese blockade or invasion would freeze the global technology industry. The U.S. is spending $52B via the CHIPS Act to build domestic fabs, but it will take 5–10 years to achieve meaningful capacity. In the meantime, the world depends on Taiwan. This is an existential risk that is not hedgeable. If it happens, SMH drops 50%+. If it doesn't, the sector continues its AI supercycle. The market prices this risk at a 10–15% discount. But the true probability is unknowable.
+The **software rotation** is the new wild card. For the first time in years, software stocks are outperforming chip stocks. If this is a regime change — not a trade — the semiconductor sector's premium valuation is at risk. The market may be repricing AI returns from hardware (NVIDIA, TSM) to software (Microsoft, Salesforce, ServiceNow). If so, SMH's 54% YTD rally was the peak, and the sector enters a multi-quarter consolidation. The China/Taiwan geopolitical risk remains the existential threat that no model can price.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The semiconductor sector is undergoing a stress test. TSMC and ASML both posted record results this week — and both stocks fell. That is not a fundamentals problem; it is a expectations problem. The market is priced for perfection, and perfection is now the baseline. The demand questions are real: Meta is renting spare compute, short interest is at a 15-year high, and the memory cycle has gone parabolic. But the AI supercycle is not over. Hyperscaler capex of $800B+ is committed capital. TSMC's 3nm/2nm nodes are sold out. ASML has a monopoly on EUV lithography. I am still overweight semiconductors, but I have tightened risk management. SMH below $540 is my reduce signal. The hyperscaler earnings over the next two weeks will decide whether this correction ends or deepens."*
+**Ophelia:** *"The semiconductor sector is undergoing a stress test. TSMC and ASML both posted record results two weeks ago — and both stocks fell. That is not a fundamentals problem; it is an expectations problem. The market is priced for perfection, and perfection is now the baseline. The demand questions are real: Meta is renting spare compute, short interest is at a 15-year high, and the memory cycle has gone parabolic. But the AI supercycle is not over. Hyperscaler capex of $800B+ is committed capital. TSMC's 3nm/2nm nodes are sold out. ASML has a monopoly on EUV lithography. I am still overweight semiconductors, but I have tightened risk management. SMH below $520 is my reduce signal. The hyperscaler earnings over the next two weeks will decide whether this correction ends or deepens. The software rotation is the new variable — if it persists, the sector's multiple compresses further."*
 
-**Marky:** *"The tape is painting a caution flag. SMH is down ~16% from June highs. The 50D MA at $597 was broken Friday. SOX is nearly 20% off its peak. Volume on the decline is elevated — this is distribution, not healthy consolidation. Memory is the canary: MU down 6% Friday, SNDK down 7%, DRAM ETF down 7%. The AI supercycle is intact, but the market is asking 'what if this is as good as it gets?' I am not buying SMH here. I might buy NVDA on a pullback to $190 — the AI thesis is real. I might buy TSM on a pullback to $160 — the foundry monopoly is real. But the broad sector? No. The memory cycle is hyper-volatile. The equipment stocks are lagging. The breadth is deteriorating. I am waiting for a washout to $520 or a VIX spike above 22 before buying size. Tight stops. Cash is my padding."*
+**Marky:** *"The tape is painting a caution flag. SMH is down ~19.5% from June highs. The 50D MA at $585 was broken decisively two weeks ago. SOX is more than 20% off its peak. Volume on the decline is elevated — this is distribution, not healthy consolidation. Memory is the canary: MU down 8.2% Friday, SNDK down sharply. The AI supercycle is intact, but the market is asking 'what if this is as good as it gets?' I am not buying SMH here. I might buy NVDA on a pullback to $180 — the AI thesis is real. I might buy TSM on a pullback to $155 — the foundry monopoly is real. But the broad sector? No. The memory cycle is hyper-volatile. The equipment stocks are lagging. The breadth is deteriorating. The software rotation is a new risk. I am waiting for a washout to $500 or a VIX spike above 22 before buying size. Tight stops. Cash is my padding."*
 
-**Cecil:** *"The semiconductor sector is not my garden. NVDA at 33x P/E is a growth stock, not a value play. TSM at 36x P/E is a monopoly with geopolitical risk. AMD at 175x P/E is speculative. MU at ~45x P/E is a commodity cyclical at the peak — the most dangerous combination. INTC at 64.7x P/E is a turnaround that is not turning. But QCOM at 19.1x P/E and 2.10% yield is interesting — a cash machine with a fortress balance sheet. The dividend is covered. The royalty stream is durable. The 5G modem business is a monopoly. But growth is slowing. Rule 3 applies: a great company at the wrong point in the cycle is still a bad investment. I am watching from a safe distance. The garden does not grow silicon wafers."*
+**Cecil:** *"The semiconductor sector is not my garden. NVDA at 31.5x P/E is a growth stock, not a value play. TSM at 35x P/E is a monopoly with geopolitical risk. AMD at 156x P/E is speculative. MU at ~42x P/E is a commodity cyclical at the peak — the most dangerous combination. INTC at 61.5x P/E is a turnaround that is not turning. But QCOM at 18.5x P/E and 2.10% yield is interesting — a cash machine with a fortress balance sheet. The dividend is covered. The royalty stream is durable. The 5G modem business is a monopoly. But growth is slowing. Rule 3 applies: a great company at the wrong point in the cycle is still a bad investment. I am watching from a safe distance. The garden does not grow silicon wafers."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: SMH, NVDA, TSM, AVGO, ASML, AMD, INTC, QCOM, MU, LRCX, AMAT, KLAC live data
+- Yahoo Finance: SMH, NVDA, TSM, AVGO, ASML, AMD, INTC, QCOM, MU, LRCX, AMAT, KLAC, AOSL, DIOD, POWI, ACMR live data
 - Semiconductor Industry Association (SIA): Global chip sales, regional breakdown, forecast data
 - TSMC: Quarterly earnings, technology roadmap, capex guidance
 - ASML: Order backlog, EUV shipment data, High-NA roadmap
@@ -223,6 +247,6 @@ The **China/Taiwan geopolitical risk** is the wild card that no model can price.
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-07-25*
+*Last updated by Saturday Research Crew: 2026-08-01*
 *Next update: Every Saturday 11:59 AM ET*
 *Data sources: Yahoo Finance, SIA, Gartner, WSTS, market data feeds, investing.com*
