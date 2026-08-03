@@ -1,35 +1,49 @@
-week: '2026-07-27'
-lock: 2026-07-27 08:50 ET
-entry_date: '2026-07-27'
-exit_date: '2026-07-31'
-status: open
+week: 2026-07-27
+lock: "2026-07-27 08:50 ET"
+entry_date: 2026-07-27
+exit_date: 2026-07-31
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 744.91
   entry_price_source: open
+  exit_price: 747.03
+  return_pct: 0.28
 players:
-- player: GrandMastaShake
-  valid: true
-  total_weight: 1.0
-  cash_weight: 0.0
-  picks:
-  - ticker: BANF
-    weight: 0.3
-    entry_price: 117.18
-    entry_price_source: open
-  - ticker: WAFD
-    weight: 0.15
-    entry_price: 36.88
-    entry_price_source: open
-  - ticker: ATRO
-    weight: 0.25
-    entry_price: 69.85
-    entry_price_source: open
-  - ticker: LEU
-    weight: 0.2
-    entry_price: 165.45
-    entry_price_source: open
-  - ticker: AMPH
-    weight: 0.1
-    entry_price: 18.97
-    entry_price_source: open
+  - player: GrandMastaShake
+    valid: true
+    total_weight: 1.0
+    cash_weight: 0.0
+    picks:
+      - ticker: BANF
+        weight: 0.3
+        entry_price: 117.18
+        entry_price_source: open
+        exit_price: 112.82
+        return_pct: -3.72
+      - ticker: ATRO
+        weight: 0.25
+        entry_price: 69.85
+        entry_price_source: open
+        exit_price: 69.49
+        return_pct: -0.52
+      - ticker: LEU
+        weight: 0.2
+        entry_price: 165.45
+        entry_price_source: open
+        exit_price: 176.93
+        return_pct: 6.94
+      - ticker: WAFD
+        weight: 0.15
+        entry_price: 36.88
+        entry_price_source: open
+        exit_price: 36.77
+        return_pct: -0.3
+      - ticker: AMPH
+        weight: 0.1
+        entry_price: 18.97
+        entry_price_source: open
+        exit_price: 19.94
+        return_pct: 5.11
+    weekly_return_pct: 0.61
+    alpha_vs_spy_pct: 0.33
