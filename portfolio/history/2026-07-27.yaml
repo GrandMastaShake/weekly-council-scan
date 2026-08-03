@@ -1,0 +1,89 @@
+week: '2026-07-27'
+status: closed
+positions:
+- ticker: HON
+  weight: 0.233
+  sponsor: Cecil
+  thesis: 'Deep value at 9.3x earnings with solid fundamentals. Score: 106. (confidence:
+    95)'
+  entry_price: 245.64999389648438
+  entry_date: '2026-07-27'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 243.0500030517578
+  exit_date: '2026-07-31'
+  exit_reason: week_end
+  pnl_pct: -1.06
+- ticker: MMM
+  weight: 0.233
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 4-week MA. 4W return: 11.9%. (confidence:
+    95)'
+  entry_price: 178.11000061035156
+  entry_date: '2026-07-27'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 176.27999877929688
+  exit_date: '2026-07-31'
+  exit_reason: week_end
+  pnl_pct: -1.03
+- ticker: NRG
+  weight: 0.223
+  sponsor: Ophelia
+  thesis: 'Aligned with Utilities sector rotation. Macro score: 91. (confidence: 91)'
+  entry_price: 138.0800018310547
+  entry_date: '2026-07-27'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 134.2899932861328
+  exit_date: '2026-07-31'
+  exit_reason: week_end
+  pnl_pct: -2.74
+- ticker: DOW
+  weight: 0.155
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 13.7. Score: 103. (confidence:
+    95)'
+  entry_price: 29.040000915527344
+  entry_date: '2026-07-27'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 30.290000915527344
+  exit_date: '2026-07-31'
+  exit_reason: week_end
+  pnl_pct: 4.3
+- ticker: VTR
+  weight: 0.155
+  sponsor: Marky
+  thesis: 'Low volatility uptrend with clean price action. Vol: 2.8%. Score: 105.
+    (confidence: 95)'
+  entry_price: 100.58999633789062
+  entry_date: '2026-07-27'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 93.51000213623047
+  exit_date: '2026-07-31'
+  exit_reason: week_end
+  pnl_pct: -7.04
+spy_entry: 741.7700805664062
+vix_at_entry: 17.8
+fed_stance: Agencies issue joint statement on handling of highly sensitive information
+  during bank examinations
+total_weight: 0.999
+cash_weight: 0.0010000000000000009
+weighted_return: -1.52
+spy_return: 0.71
+alpha: -2.23
+spy_exit: 747.030029296875
+close_date: '2026-07-31'
+hit_rate: 0.2
