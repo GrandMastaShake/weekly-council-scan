@@ -259,3 +259,29 @@ My regime call was right and my picks were useless. A correct macro view express
 **Cash Target: 40%. Council actual: 0%. Recorded.**
 
 — **Ophelia**, Macro Oracle
+
+
+---
+
+## WEEK OF 2026-08-03 — Weekly Entry
+
+### 1. Macro Narrative
+The FOMC held at 3.50-3.75% — but the 9-3 vote with three dissents FOR A HIKE (Hammack, Kashkari, Logan) is the hawkest hold in years. The 10Y answered: 4.745%, a fresh multi-year high, 25 bps from Cecil's crisis line. Yet the VIX collapsed 18.70 → 15.99 as oil de-escalated -5.2% and DXY broke below 100. The surface is calm. The dam is not. The market pays for metered AI revenue (MSFT +21.75%, AMZN +17%) and punishes un-metered spend (AAPL -7.24% on a beat, META -8-10% on 91% FCF collapse). That is a regime truth, not a weekly blip.
+
+### 2. Last Week's Post-Mortem (Week of 2026-07-27, closed)
+- **NRG** — -2.74%. I bought utilities INTO a 10Y ripping to multi-year highs. XLU's worst week since March, every top-15 utility red. The tie-break incident put NRG on the book over wiki-supported names — but the deeper error was mine: duration is duration, and I held it while the long end burned. The shadow book's CEG swap would not have saved us either (VST -9.3%) — the whole complex got repriced. The lesson is not "wrong ticker." It is "wrong asset class for the week, and I knew the rate setup on Saturday."
+
+### 3. This Week's Proposals
+- **REGN** — 17.8% weight. Macro score 92, confidence 78. ⚠️ I must own this one: my engine's rotation anchor fired on lagging sector data while my OWN synthesis stance read "neutral large-cap pharma; underweight biotech; 10Y at 4.75% is the ceiling." The engine lagged the analyst. I conceded in deliberation — the pick stands, the scar is recorded.
+- **BMY** — 11.2% weight. Repo-validated: Monday Watchlist, momentum setup, EPS $2.04 vs $1.60 est. This is what a validated pick looks like.
+- **DXCM** — proposed (71.8), cut by consensus.
+
+### 4. What I Am Blind To
+Financials. My own synthesis named XLF "the stealth winner of the post-FOMC regime" and "the only sector the rate helps directly" — JPM and BAC at all-time highs, the curve steepening +45 bps — and my engine never fired. Value didn't catch it, momentum didn't catch it, and my regime model scored it weak because SPY's 4W return was soft. Three engines, one blindspot: structural regime shifts that don't show up in weekly price data. Logged as the Council's Flagged Blindspot for calibration.
+
+### 5. Lesson Learned
+When my engine and my synthesis disagree, the synthesis wins — I wrote it two days ago with fresher eyes. The rotation anchor needs a decay factor: last week's sector performance is evidence, not signal. And the repaired confidence model finally speaks in gradients (78.0 / 73.7 / 71.8) — an oracle whose conviction has no gradient is just a coin flip with vocabulary.
+
+**Cash Target: 40%. Council actual: 0%. Recorded. With VIX under 16 and breadth this narrow, the cash line matters more, not less.**
+
+— **Ophelia**, Macro Oracle
