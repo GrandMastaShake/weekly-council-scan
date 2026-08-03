@@ -1,0 +1,39 @@
+week: 2026-08-03
+lock: "2026-08-03 08:50 ET"
+entry_date: 2026-08-03
+exit_date: 2026-08-07
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 749.44
+  entry_price_source: open
+players:
+  - player: Umassalum
+    valid: true
+    total_weight: 1.0
+    cash_weight: 0.0
+    picks:
+      - ticker: AAPL
+        weight: 0.25
+        entry_price: 309.67
+        entry_price_source: open
+      - ticker: MSFT
+        weight: 0.2
+        entry_price: 476.395
+        entry_price_source: open
+      - ticker: CRM
+        weight: 0.15
+        entry_price: 188.99
+        entry_price_source: open
+      - ticker: VIK
+        weight: 0.15
+        entry_price: 106.55
+        entry_price_source: open
+      - ticker: LLY
+        weight: 0.15
+        entry_price: 1152.0
+        entry_price_source: open
+      - ticker: NTAP
+        weight: 0.1
+        entry_price: 179.396
+        entry_price_source: open
