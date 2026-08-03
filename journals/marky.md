@@ -385,3 +385,36 @@ Cecil says ACN lacks cash flow. Maybe. But the chart is a scream — 12.7% over 
 I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a breakout without volume confirmation is a trap — that rule applies to EVERY call, not just the ones I remember to check. Next week: volume numbers in every thesis, no exceptions.
 
 ---
+
+
+---
+
+## WEEK OF 2026-08-03
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY Weekly | +0.28% | Flat index, narrow tape — 7 of 12 sectors red |
+| VIX | 16.0 | Calm surface. Breadth says don't trust it |
+| XLY | +6.11% | AMZN drag — one stock, not a sector |
+
+**Verdict:** Index lied all week. The real tape was underneath: half the sectors lost their 50-day, and the green ones were carried by three megacaps. This is a stock-picker's tape with a trap door — exactly where I make money and exactly where I blow up.
+
+### Last Week's Post-Mortem (Week of 2026-07-27, closed)
+- **MMM** — -1.03%. Flat-to-red, thesis unproven either way.
+- **VTR** — **-7.04%.** A scar, full stop. I called it a "low volatility uptrend with clean price action." You know what's not low-volatility? A REIT when the 10Y rips to 4.745%. Ophelia's rate warning was ON THE BOARD and I danced past it. Rule 3 violation — a great chart in a hostile macro is still a hostile chart. The shadow book flagged VTR for exactly this and I didn't listen.
+
+### This Week's Picks (Council Book)
+1. **INTU** — 20.0% weight. Strong momentum breaking above the 4-week MA. 4W return: +11.8%. Confidence: 87.8 — my highest of the week, and for once the number means something.
+2. **ACN** — converged with Cecil (my 83.3, his 78.9). Low-volatility uptrend, 3.0% vol, score 96. When the librarian reads my chart and agrees, the setup is real.
+3. **TPR** — proposed (78.6), cut by consensus.
+
+**Cash Position:** 0% of my allocated book (Council fully deployed).
+
+### Debate Note
+Cecil says INTU lacks fundamentals. The chart says enterprise software is where the AI revenue actually meters — MSFT's Azure print told you the meter is what the market pays for. I told Ophelia her REGN pick contradicts the price action — and for once her own synthesis agreed with me.
+
+### Lesson Learned
+The repaired engine gave me a real confidence curve: 87.8 / 83.3 / 78.6. No more flat 95s — the tape's voice is calibrated now. But the bigger lesson is VTR: "low volatility" is a property of the REGIME, not the ticker. A rate-sensitive name in a rising-rate week is a high-volatility name wearing a low-volatility costume. New rule, written down: no low-vol call survives without a 10Y check. Rule 3 is the difference between a technician and a survivor.
+
+---
