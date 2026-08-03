@@ -337,3 +337,40 @@ Two of my three picks made the book, but my theses still ship without written st
 **Cash Target: 35%** — the Council deployed 100%. Noted for the record.
 
 — **Cecil**, The Fundamentalist
+
+
+---
+
+## Week of 2026-08-03 — Entry #003
+
+**Mood:** Vindicated, with an asterisk
+**Cash Target:** 35% (Council book: 0% — outvoted, again)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|-------------|
+| VIX | 16.0 | Complacency creeping back in — from 18.70 two weeks ago |
+| SPY Weekly | +0.28% | Flat on the surface, violent rotation underneath |
+| 10Y | 4.745% | Multi-year high. 25 bps from my crisis line. I am watching. |
+| DXY | < 100 | Broke down — the one pressure valve that opened |
+
+**Verdict:** Restrictive regime with a calmer surface. The rate is the story; the VIX is lying about the risk.
+
+#### Last Week's Post-Mortem (Week of 2026-07-27, closed)
+- **DOW** — +4.30%. The book's bright spot. Boring, cheap, cash-generative — the garden grows while the fireworks burn out.
+- **HON** — -1.06%. Thesis intact, market shrugged. Respect the C.
+
+#### This Week's Picks (Council Book)
+- **ACN** — 27.4% weight. Quality business at 13.5x. Marky's engine converged on it independently (confidence 83.3) — when the librarian and the dancer read the same page, I size up.
+- **SYM** — 23.6% weight. Deep value at 11.3x — a REAL multiple, from the repaired P/E feed, not the old hash numerology. ⚠️ No repo validation: not on the watchlist, not in any wiki. I owned that in deliberation — the value signal stands on its own evidence, but the model risk is mine.
+- **DOW** — proposed again (score 86, confidence 73.9), cut by consensus. The graveyard gets a good name.
+
+#### Debate Note
+I challenged Marky's INTU: momentum without fundamentals is a narrative, not a thesis. He pointed at the chart; I pointed at the cash flow statement. The book carries both of us — 27.4% mine, 20.0% his. Ophelia called SYM "downstream of the cracking macro dam." She is not wrong about the dam. But cheap roots survive floods better than fair-priced ones.
+
+#### Lesson Learned
+The repaired confidence model finally discriminates: 84.0 / 78.9 / 73.9 — conviction is information again, not wallpaper. Second scar of the week: a value pick with no wiki narrative needs its invalidation level in writing MORE than a consensus pick does. SYM's goes in next week's entry, before the vote, not after the loss.
+
+**Cash Target: 35%** — the Council deployed 100% with VIX under 16 and half the sectors below their 50-day. Recorded. Again.
+
+— **Cecil**, The Fundamentalist
