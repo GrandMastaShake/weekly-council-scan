@@ -52,16 +52,16 @@ The Super Bowl delivered a split verdict that rewrote the AI narrative. Microsof
 
 > **Dad Translation:** The year's biggest winners — chips and tech — are still up huge over 12 months, but they're not bulletproof anymore. The real action this week was underneath: money moved into companies that can prove their AI spending is making real money (Microsoft, Amazon) and out of companies that are spending big without clear proof it's working yet (Apple, Meta). Financials, healthcare, and staples held up while utilities got crushed by rising interest rates.
 
-### Market Breadth Snapshot
+### Market Breadth — The Grid's Own Tape
 
 | Metric | Reading | Signal |
 |---|---|---|
-| Advancing / Declining | — | 🟡 Stale data — needs refresh before Monday |
-| New Highs vs New Lows | — | 🟡 Stale data — needs refresh before Monday |
-| % Above 50-Day MA | ~58% (stale) | 🟡 Likely deteriorating as growth leadership bleeds |
-| % Above 200-Day MA | ~72% (stale) | 🟢 Long-term trend intact but weakening |
+| Sector ETFs up on the week | 4 of 12 up, 1 flat, 7 down | 🔴 Sellers had the week |
+| Sectors above their 50-day MA | 6 of 12 (XLY reclaimed, sitting right on it) | 🟡 Short-term trend split down the middle |
+| Sectors above their 200-day MA | 10 of 12 (XLY and XLC below) | 🟢 Long-term trend intact |
+| Leadership concentration | XLY +6.1% on AMZN's 22% weight; XLC +1.8% on GOOGL +11.4% | 🟡 Index strength is a few megacaps wide |
 
-> **Dad Translation:** The honest truth is we don't have fresh breadth data this week — the numbers we have are 17 days old and predate the recent selling. What we do know is that the market's internal correlations have shattered: tech and semiconductors are no longer moving with the broad market the way they used to. That usually means the market is getting more unpredictable — some sectors can go up while others crash, even on the same day.
+> **Dad Translation:** Most of the market actually fell this week — seven of the twelve big sectors lost ground. The indexes looked fine because a handful of giants (Amazon, Google, Microsoft) did all the heavy lifting. Half the sectors have now lost their short-term uptrend, but nearly all still hold their long-term one. Picture a hiking group still on the trail: more than half are walking downhill now, and the three strongest are carrying the group's average.
 
 ### What to Watch This Week
 
