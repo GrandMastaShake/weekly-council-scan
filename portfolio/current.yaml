@@ -1,0 +1,83 @@
+week: '2026-08-03'
+status: open
+positions:
+- ticker: ACN
+  weight: 0.27399999999999997
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 13.5. Score: 91. (confidence:
+    78.9)'
+  entry_price: 169.83999633789062
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: SYM
+  weight: 0.23600000000000002
+  sponsor: Cecil
+  thesis: 'Deep value at 11.3x earnings with solid fundamentals. Score: 95. (confidence:
+    84)'
+  entry_price: 44.400001525878906
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: INTU
+  weight: 0.2
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 4-week MA. 4W return: 11.8%. (confidence:
+    87.8)'
+  entry_price: 329.239990234375
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: REGN
+  weight: 0.17800000000000002
+  sponsor: Ophelia
+  thesis: 'Aligned with Healthcare sector rotation. Macro score: 92. (confidence:
+    78)'
+  entry_price: 762.3250122070312
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: BMY
+  weight: 0.11199999999999999
+  sponsor: Ophelia
+  thesis: 'Benefiting from the bearish market regime. Score: 91. (confidence: 73.7)'
+  entry_price: 64.76010131835938
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 752.77001953125
+vix_at_entry: 16.0
+fed_stance: Hold. 3.50-3.75% held Jul 29 (9-3; three dissents for a hike); hawkish
+  tilt, no forward guidance.
+total_weight: 1.0
+cash_weight: 0.0
