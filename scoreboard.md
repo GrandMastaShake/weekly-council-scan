@@ -237,6 +237,7 @@ If any rule triggers, note it in the scorecard header.
 | 2026-07-27 | -1.52% | 20% | TBD | TBD | DOW (4.30%) | VTR (-7.04%) | 0.1% |
 | 2026-07-20 | -1.83% (Tracker P&L) | 40% | TBD | TBD | AMAT (2.22%) | ADBE (-7.85%) | 0.0% |
 | 2026-07-24 | B (3.0 -- analysis quality) | TBD (week open) | Marky (3.1) | Ophelia (0 picks advanced) | ACN (B+) | ADSK (B-) | 0% |
+| 2026-08-03 | B+ (3.4 -- analysis quality) | TBD (week open) | Marky (3.55) | Ophelia (1.50) | ACN (A) | REGN (C) | 0% |
 
 > *Append a new row every week. Do not delete history. The scars live here.*
 
