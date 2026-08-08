@@ -3,82 +3,82 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-08-02
+## 🌡️ Market Brief — Week of 2026-08-08
 
 > *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
 
 ### The Headline
 
-The Super Bowl delivered a split verdict that rewrote the AI narrative. Microsoft detonated one of the greatest quarters in its history — Azure at 43%, FY27 capex guided to $255-260B, and a commercial backlog of $678B — sending the stock up +21.75% in a week. Amazon followed with a biblical beat: AWS reaccelerated to 37% growth, its fastest pace in 18 quarters, and the stock surged +17%. But the counter-story was equally brutal: Apple beat EPS by +6.9% and crashed -7.24% because the iPhone AI cycle is not yet visible. Meta grew revenue +28% — its fastest in five years — and fell ~8-10% because free cash flow collapsed 91% on $31B of quarterly capex. The market's verdict is crystallized: it pays for metered AI revenue (Azure, AWS) and punishes AI spend without a meter attached. Meanwhile, the Federal Reserve held rates but three dissenters (Hammack, Kashkari, Logan) voted to hike, pushing the 10-year Treasury to 4.745% — a fresh multi-year high. The VIX, however, collapsed from 18.70 to 15.99 as oil de-escalated -5.2% to $84.67 and the dollar broke below 100 for the first time in weeks. The canary is singing again — but the cage door is open.
+The July jobs report detonated like a macro grenade: **-23K nonfarm payrolls** — the first negative print since 2020, with **-103K of revisions** — and the market rallied on it. SPY surged +3.5% to $773.26 as September hike odds collapsed from ~55% to ~44%, the 10-year yield dropped to 4.66%, and growth stocks screamed higher. SMH ripped +7.8% and XLK +7.2% as the NFP shock repriced the Fed path dovishly. But the counter-story was equally loud: Monday's ISM Manufacturing PMI printed **55.6%** — the strongest factory reading since May 2022 — suggesting the industrial economy is accelerating even as the labor market cracks. Meanwhile, VIX collapsed to **14.90** (-6.8%), fully normalizing and breaking below the 20D MA. The canary is doing cartwheels — but complacency is the new risk.
 
 ### Index Check
 
 | Index | Level | Today | The Story |
 |---|---|---|---|
-| S&P 500 | 7,489.72 | +1.1% | Recovered last week's losses on GDP/PCE relief; flat on surface, violent underneath |
-| Nasdaq 100 | 28,274.20 | -0.6% | MSFT saved the index; semis bled beneath it — SMH now -19.5% from June highs |
-| Dow Jones | 52,485.03 | +1.5% | Financials and industrials led; the cyclical value trade is working |
-| Russell 2000 | 2,931.34 | -0.3% | Small-cap rally paused as rates surged to multi-month highs |
-| VIX | 15.99 | -14.5% | Elevated regime broke; panic threshold never breached — but complacency is the new risk |
+| S&P 500 | $773.26 | +3.5% | NFP shock repriced Fed path; growth rallied on bad news |
+| Nasdaq 100 | — | — | MSFT/GOOGL surged but exact level unverifiable from wikis |
+| Dow Jones | — | — | — |
+| Russell 2000 | — | — | — |
+| VIX | 14.90 | -6.8% | Elevated regime fully broken; complacency is the new risk |
 
-> **Dad Translation:** The stock market had a pretty good week overall — the main indexes mostly rose around 1% — but the real story was underneath the hood. Two giant tech companies (Microsoft and Amazon) absolutely crushed earnings and soared 15-20%, while two others (Apple and Meta) also had decent numbers but got hammered because investors didn't like their future outlook. Meanwhile, interest rates hit their highest level in months after some Fed officials hinted at possible rate hikes. It was a week that proved the market is getting picky — it rewards real cash flow and punishes vague promises.
+> **Dad Translation:** The stock market had a very good week — the main index rose 3.5% — but the real story was a shocking jobs report that said the economy lost jobs for the first time since 2020. The market actually celebrated this bad news because it means the Fed probably won't raise interest rates. Meanwhile, a separate report said factories are humming at their strongest pace in years. It's a confusing time.
 
 ### What's Moving Markets — The Big Stories
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |---|---|---|---|
-| 💻 **MSFT's Historic Earnings Detonation** | Azure +43% YoY, FY27 capex $255-260B, commercial backlog $678B (+84% seq); stock +21.75% | Proved metered AI revenue can command any multiple; the "capex cannibalizes cloud" narrative was killed | Microsoft proved that all the billions spent on AI are actually turning into real sales — its cloud business is growing faster than ever, and the market loved it |
-| 📉 **AAPL Beat-and-Crash / META Miss** | AAPL EPS beat +6.9% but crashed -7.24% on soft guidance; META revenue +28% but fell ~8-10% on 91% FCF collapse | "Beat the number, crash on guidance" is the new earnings regime; the AI consumer cycle thesis is premature | Even when Apple technically did well, the market punished it because the new AI iPhone features aren't selling phones yet. Meta's ad business is booming, but it's spending so much on AI that investors got nervous |
-| ☁️ **AMZN's Biblical Beat** | AWS +37% (fastest in 18 quarters), $496B backlog, operating income +43%; stock +17% | Restored confidence in cloud growth after GOOGL's prior-week disappointment; retail margin inflection is real | Amazon showed that its cloud business is accelerating, not slowing down, and its retail business is finally making real money — the stock had its biggest post-earnings move of the quarter |
-| 🏦 **Fed's Three Dissenters** | FOMC held 3.50-3.75% but 9-3 vote with Hammack, Kashkari, Logan wanted +25bp; 10Y surged to 4.745% | September hike odds jumped to ~63%; the Fed is divided at the exact moment the economy is softening | The Federal Reserve kept interest rates steady, but three members wanted to raise them — that's a warning shot that investors didn't ignore, and it pushed bond yields to their highest level in a long time |
-| ⛽ **Oil De-escalation / DXY Breaks 100** | WTI -5.2% to $84.67 as US-Iran talks replaced missiles; DXY fell to 99.80 | Inflation fears eased; emerging markets and multinationals got a tailwind; the canary started singing again | Oil prices dropped as tensions between the US and Iran cooled slightly, and the dollar fell below a key level — both gave the market some breathing room after a stressful few weeks |
+| 💼 **The NFP Earthquake (-23K)** | July NFP -23K vs +85K consensus; -103K revisions; first negative print since 2020 | Repriced the entire Fed path; September hike odds collapsed; growth stocks soared on "bad news = no hikes" | The jobs report was terrible — the economy actually lost jobs — but investors were happy because it makes rate hikes less likely |
+| 🏭 **ISM Manufacturing at 55.6%** | Strongest factory print since May 2022; employment returned to expansion at 52.8 | Direct contradiction to the NFP narrative; cyclicals caught a bid; CAT record Q2 | Factories are booming, which is the opposite of what the jobs report suggested. The economy is sending mixed signals |
+| ⛽ **Oil Collapses Below $80** | WTI crashed -7.7% to ~$78 on US-Iran negotiation headlines | Removed the inflation scare; bullish for growth multiples; bearish for energy stocks | Oil prices dropped sharply as tensions cooled slightly, giving the market breathing room on inflation |
+| 📈 **Growth Stocks Recouple** | XLK correlation to SPY surged from 0.329 to 0.814; SMH from 0.144 to 0.766 | The growth unwind is dead; tech is a beta proxy again; capital flowing back to mega-cap platforms | Tech stocks are moving with the broad market again after a period of confusion — that's a sign of renewed confidence |
+| 🏰 **Disney's Streaming Proof** | DIS Q3: segment OI +21%, streaming profitable, parks record; stock +9.1% | Proved the turnaround narrative; SHOP +19.6% on narrative-driven rally | Disney showed it can make money from streaming, and the market loved it. Some stocks are rallying on story, not just numbers |
 
 ### Sector Scorecard (1-Year Trend + Week)
 
 | Sector | 1Y Return | Week | Signal |
 |---|---|---|---|
-| 🔥 Semiconductors | +118% | -3.7% | 1Y monster, correction deepening — software rotation biting |
-| 🔥 Technology | +33.7% | -0.3% | MSFT saved the sector; semis bled beneath the surface |
-| 🔥 Energy | +35.4% | -0.1% | Oil pulled back -5.2%; war premium fading, not accelerating |
-| 🟡 Financials | +20% | +1.1% | Curve steepening to +45 bps; JPM/BAC near all-time highs |
-| 🟡 Healthcare | +20% | 0.0% | BMY +5.19% blowout; REGN +16.25%; 10Y at 4.745% crushing biotech |
-| 🟡 Communication Services | +7.4% | +1.8% | GOOGL +11.4% saved the sector; META -6.5% dragged it |
-| 🟡 Consumer Discretionary | +6.2% | +6.11% | AMZN +17% dragged the sector up by its 22% weight |
-| 🟡 Consumer Staples | +10-14% | +1.09% | KO +6.5% on earnings; MO -8.9% on cigarette decline — bifurcated |
-| 🟡 Industrials | +17.4% | -1.5% | ETN +7.3% on data-center demand; CAT -7.8%, UPS -9.2% |
-| 🟡 Real Estate | +12.9% | -1.9% | AMT beat +4.0%; DLR beat sold off -5.3%; 10Y pressure |
-| 🟡 Materials | +18.4% | -1.6% | NUE +3.9% juggernaut; LIN -6.6%, CTVA -11.8% — split tape |
-| ❄️ Utilities | +5-8% | -4.19% | Worst week since March; every top-15 holding red; 10Y at 4.745% |
+| 🔥 Semiconductors | +100.8% | +7.8% | AI supercycle intact; NFP shock created dovish tailwind |
+| 🔥 Technology | +33.7% | +7.2% | Growth recoupled to SPY; MSFT/GOOGL surged |
+| 🔥 Materials | +23.2% | +4.8% | Gold explosion + DXY < 101 = commodity tailwind |
+| 🟡 Industrials | +23.2% | +3.0% | ISM 55.6% strongest since May 2022; CAT record Q2 |
+| 🟡 Consumer Discretionary | +9.5% | +3.2% | Housing recovery (HD, LOW) + travel boom (BKNG, DIS) |
+| 🟡 Communication Services | +9.8% | +2.8% | DIS +9% on earnings; macro relief lifting platforms |
+| 🟡 Healthcare | +22% | +1.9% | LLY Super Bowl + AMGN resurrection; biotech catching bid |
+| 🟡 Financials | +20% | +1.2% | Curve steepening + NFP shock; JPM/BAC near highs |
+| 🟡 Consumer Staples | +10–14% | +0.1% | Quiet week; GIS/CPB yield hunters rotating in |
+| 🟡 Real Estate | +12.7% | -0.2% | Flat despite 10Y drop; earnings dispersion inside sector |
+| ❄️ Utilities | +5–8% | -1.7% | Bond-proxy playbook broke; XLU below 50D and 200D |
+| ❄️ Energy | +35.4% | -3.5% | Oil collapsed -7.7%; war premium fading |
 
-> **Dad Translation:** The year's biggest winners — chips and tech — are still up huge over 12 months, but they're not bulletproof anymore. The real action this week was underneath: money moved into companies that can prove their AI spending is making real money (Microsoft, Amazon) and out of companies that are spending big without clear proof it's working yet (Apple, Meta). Financials, healthcare, and staples held up while utilities got crushed by rising interest rates.
+> **Dad Translation:** This week was all about growth and commodities. The year's biggest winners in tech and chips bounced back hard, while materials joined the party thanks to gold and a weaker dollar. Utilities and energy were the losers — one because falling yields didn't help, the other because oil prices dropped. Financials and healthcare held their own. It's a market rewarding companies that can prove their growth stories.
 
 ### Market Breadth — The Grid's Own Tape
 
 | Metric | Reading | Signal |
 |---|---|---|
-| Sector ETFs up on the week | 4 of 12 up, 1 flat, 7 down | 🔴 Sellers had the week |
-| Sectors above their 50-day MA | 6 of 12 (XLY reclaimed, sitting right on it) | 🟡 Short-term trend split down the middle |
-| Sectors above their 200-day MA | 10 of 12 (XLY and XLC below) | 🟢 Long-term trend intact |
-| Leadership concentration | XLY +6.1% on AMZN's 22% weight; XLC +1.8% on GOOGL +11.4% | 🟡 Index strength is a few megacaps wide |
+| Sector ETFs up on the week | 9 of 12 up, 3 down | 🟢 Buyers had the week |
+| Sectors above their 50-day MA | 8 of 12 | 🟡 Short-term trend split down the middle |
+| Sectors above their 200-day MA | 9 of 12 | 🟢 Long-term trend intact |
+| Leadership concentration | SMH led on NVDA/QCOM/INTC; XLK on MSFT/GOOGL; XLB on NEM/FCX/ALB; DIS +9% in XLY/XLC | 🟡 Index strength is sector-leader driven |
 
-> **Dad Translation:** Most of the market actually fell this week — seven of the twelve big sectors lost ground. The indexes looked fine because a handful of giants (Amazon, Google, Microsoft) did all the heavy lifting. Half the sectors have now lost their short-term uptrend, but nearly all still hold their long-term one. Picture a hiking group still on the trail: more than half are walking downhill now, and the three strongest are carrying the group's average.
+> **Dad Translation:** Most of the market went up this week — nine of the twelve big sectors finished green. The growth and commodity sectors led while utilities and energy lagged. Half the sectors have now regained their short-term uptrend, and nearly all still hold their long-term ones. Picture a hiking group where most are walking uphill again, but a few stragglers are still catching their breath.
 
 ### What to Watch This Week
 
 | Date | Event | What to Do |
 |---|---|---|
-| Mon Aug 3, 10:00 AM | **ISM Manufacturing (July)** | Expansion vs contraction: < 50 = manufacturing shrinking; prices index > 60 = inflation re-accelerating |
-| Tue Aug 4, 10:00 AM | **JOLTS Job Openings (June)** | < 7.0M = labor market loosening fast; quits rate is the real tell |
-| Tue Aug 4, AMC | **AMD Q2 earnings** | Data center revenue and MI300 ramp — the first major semi read after the Super Bowl; implied move ±7.5% but realized could be ±15% |
-| Wed Aug 5, 8:15 AM | **ADP Employment (July)** | < 50K = Friday's NFP could be ugly; > 100K = calms nerves |
-| Wed Aug 5, 10:00 AM | **ISM Services (July)** | < 50 = services backbone cracks; this would be a genuine shock |
-| Wed Aug 5, AMC | **Disney / Electronic Arts earnings** | DIS streaming subs and parks; EA live services — media and gaming checks |
-| Fri Aug 7, 8:30 AM | **NFP (July) — THE MAIN EVENT** | < 50K = recession signal hardens, 10Y tests 4.3%; > 150K = hawks validated, Fed holds firm into 2027. The single most important print of the month. |
-| Fri Aug 7, 8:30 AM | **Unemployment Rate + Hourly Earnings** | > 4.5% = Sahm rule watch; > 0.4% earnings = wage re-acceleration |
+| Tue Aug 12, 8:30 AM | **CPI (July)** | THE binary event. Core >+0.3% = hawkish reversal, growth rally crushed. Core <+0.1% = dovish confirmation, SPY rallies to new highs. |
+| Thu Aug 13, 8:30 AM | **PPI (July) + Initial Claims** | Pipeline inflation signal. Claims >240K = NFP <150K flag confirmed, defensive rotation accelerates. |
+| Fri Aug 14, 8:30 AM | **Retail Sales (July)** | Consumer is the final domino. Miss + NFP negative = recession narrative hardens. Beat = "soft landing with cracked labor" gets stranger. |
+| Fri Aug 14, 10:00 AM | **UMich Sentiment Prelim (August)** | 1-year inflation expectations sub-index is the Fed's secret weapon. >4.0% = Committee gets nervous. |
+| Tue Aug 18 | **Home Depot (HD) Q2** | Housing/consumer proxy. Comps and guidance will tell us if housing starts are translating to home-improvement demand. |
+| Wed Aug 19 | **Target (TGT) Q2** | Retail sentiment proxy. Margin recovery and inventory levels are the key reads. |
+| Thu Aug 20 | **Walmart (WMT) + Deere (DE) Q2** | WMT = broad consumer read. DE = rural economy and ag equipment demand. |
+| Tue Aug 26 | **NVIDIA (NVDA) Q2 FY2027** | THE final boss. Data center revenue growth and Blackwell ramp guidance will move the entire AI chain. |
 
 ### The Bottom Line
 
-The regime shifted from "growth unwind with rotation" to **a bifurcated AI market where cash flow is king and narrative is the executioner.** The Super Bowl proved that metered AI revenue (MSFT Azure, AMZN AWS, GOOGL Cloud) commands any multiple, while unmonetized AI capex (META, semis supply chain) gets punished. The Fed is divided — three dissenters at the July meeting showed the Committee is not unified, and the 10Y at 4.745% is the bond market's warning. But the cross-asset relief is real: DXY broke below 100, oil de-escalated to $84.67, VIX normalized to 15.99, and credit stabilized (HYG +0.32%). The Council reduced cash from 45% to 35% on the DXY relief but is holding elevated cash through the August 7 NFP — the single most important print of the month. The rotation from growth to value/defensives/energy has paused but not reversed. The correlation fragmentation (XLK 0.329, SMH 0.144 vs. SPY) means sector selection matters more than beta. Until the 10Y retreats below 4.5% and XLK recaptures its 50D at $182.97, the umbrella is cash — but it's a smaller umbrella than last week.
+The regime shifted from "growth unwind with rotation" to **a bifurcated market where the NFP shock created a dovish window for growth, but the ISM manufacturing surprise complicated the recession narrative.** The 10Y at 4.66% is the master variable — it dropped -9 bps but remains restrictive. Growth has recoupled to SPY (XLK 0.814, SMH 0.766), energy is the inverse hedge, and defensives are bleeding. The Council holds ~30% cash through CPI week. The single most important thing: the August 12 CPI print. A cool core (<+0.2%) extends the rally. A hot core (>+0.3%) reverses it. Stay nimble.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
