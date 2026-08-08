@@ -338,39 +338,36 @@ Two of my three picks made the book, but my theses still ship without written st
 
 — **Cecil**, The Fundamentalist
 
-
 ---
 
-## Week of 2026-08-03 — Entry #003
+### Week of 2026-08-03 — Entry #003
 
-**Mood:** Vindicated, with an asterisk
-**Cash Target:** 35% (Council book: 0% — outvoted, again)
+**Mood:** Cautious
+**Cash Target:** 35% (Council book: 0% — outvoted again)
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
 |--------|---------|-------------|
-| VIX | 16.0 | Complacency creeping back in — from 18.70 two weeks ago |
-| SPY Weekly | +0.28% | Flat on the surface, violent rotation underneath |
-| 10Y | 4.745% | Multi-year high. 25 bps from my crisis line. I am watching. |
-| DXY | < 100 | Broke down — the one pressure valve that opened |
+| DXY | 99.80 | Below 100 — commodity headwind easing; Rule 1 watch lifted |
+| 10Y Yield | 4.745% | Still restrictive; no relief until below 4.5% |
+| VIX | 16.0 | Complacency zone — but the foundation is cracking |
+| SPY Weekly | +0.28% | Flat on surface, violent underneath |
 
-**Verdict:** Restrictive regime with a calmer surface. The rate is the story; the VIX is lying about the risk.
-
-#### Last Week's Post-Mortem (Week of 2026-07-27, closed)
-- **DOW** — +4.30%. The book's bright spot. Boring, cheap, cash-generative — the garden grows while the fireworks burn out.
-- **HON** — -1.06%. Thesis intact, market shrugged. Respect the C.
+**Verdict:** Restrictive regime with DXY relief. Value still breathing, but the 10Y is screaming.
 
 #### This Week's Picks (Council Book)
-- **ACN** — 27.4% weight. Quality business at 13.5x. Marky's engine converged on it independently (confidence 83.3) — when the librarian and the dancer read the same page, I size up.
-- **SYM** — 23.6% weight. Deep value at 11.3x — a REAL multiple, from the repaired P/E feed, not the old hash numerology. ⚠️ No repo validation: not on the watchlist, not in any wiki. I owned that in deliberation — the value signal stands on its own evidence, but the model risk is mine.
-- **DOW** — proposed again (score 86, confidence 73.9), cut by consensus. The graveyard gets a good name.
+- **ACN** — 27.4% weight — entry $169.84. Quality business trading at a discount. P/E: 13.5. Score: 91.
+- **SYM** — 23.6% weight — entry $44.40. Deep value at 11.3x earnings with solid fundamentals. Score: 95.
+- **DOW** — proposed, cut by consensus. Defensive characteristics with stable cash flows. Score: 86.
 
 #### Debate Note
-I challenged Marky's INTU: momentum without fundamentals is a narrative, not a thesis. He pointed at the chart; I pointed at the cash flow statement. The book carries both of us — 27.4% mine, 20.0% his. Ophelia called SYM "downstream of the cracking macro dam." She is not wrong about the dam. But cheap roots survive floods better than fair-priced ones.
+The Council Deliberation flagged SYM with a ⚠️ no-repo-validation marker. I concede: the engine found genuine value at 11.3x P/E, but the pick has zero Council narrative support — no watchlist presence, no sector wiki mention, no AI supply chain wire. The value signal is its own evidence, but the model risk is higher than a repo-validated pick. I will not override the engine, but I will own the scar.
+
+Ophelia's REGN was also flagged as an engine lag — her own synthesis says neutral on pharma, yet her sector-rotation anchor fired Healthcare anyway. I watch from the library. The balance sheet never lies, but the macro tide can drown even the best balance sheet.
 
 #### Lesson Learned
-The repaired confidence model finally discriminates: 84.0 / 78.9 / 73.9 — conviction is information again, not wallpaper. Second scar of the week: a value pick with no wiki narrative needs its invalidation level in writing MORE than a consensus pick does. SYM's goes in next week's entry, before the vote, not after the loss.
+SYM taught me that a pure value signal without narrative guardrails is a half-thesis. Next week: before championing an engine pick, check the wiki watchlist first. If the name isn't there, the thesis needs extra scrutiny — not rejection, but scrutiny.
 
-**Cash Target: 35%** — the Council deployed 100% with VIX under 16 and half the sectors below their 50-day. Recorded. Again.
+**Cash Target: 35%** — the Council deployed 100%. Noted for the record. Again.
 
 — **Cecil**, The Fundamentalist

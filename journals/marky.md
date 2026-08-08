@@ -386,35 +386,60 @@ I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a 
 
 ---
 
-
 ---
 
 ## WEEK OF 2026-08-03
 
+### Beliefs Update (What changed since last week?)
+- DXY broke below 100 — Rule 3 (macro filters micro) loosens on commodities, but 10Y at 4.745% keeps the regime restrictive.
+- The Super Bowl proved the tape's verdict: metered AI revenue wins, unmonetized capex loses. I am tracking this divergence.
+
 ### Tape Read
 | Factor | Level | Signal |
 |--------|-------|--------|
-| SPY Weekly | +0.28% | Flat index, narrow tape — 7 of 12 sectors red |
-| VIX | 16.0 | Calm surface. Breadth says don't trust it |
-| XLY | +6.11% | AMZN drag — one stock, not a sector |
+| SPY 4W Return | +0.28% | Flat — momentum stalling, not breaking |
+| QQQ 4W Return | ~-0.6% | Tech correction beneath the surface |
+| VIX | 16.0 | Complacency trap — breadth still rotting |
+| Market Breadth | Weak | Caution |
+| DXY | 99.80 | Below 100 — tailwind for multinationals |
+| 10Y Yield | 4.745% | Restrictive — no rate relief |
+| Top Sector (Ophelia) | Healthcare / Financials | Rotation paused, not reversed |
+| My Scan Bias | Low-vol breakouts in quality tech | Favoring convergent picks |
 
-**Verdict:** Index lied all week. The real tape was underneath: half the sectors lost their 50-day, and the green ones were carried by three megacaps. This is a stock-picker's tape with a trap door — exactly where I make money and exactly where I blow up.
+**Verdict:** The tape is split. DXY relief is real but 10Y pressure is realer. I am hunting convergence — where my technical read and Cecil's value read agree. ACN at 27.4% is the result: low vol uptrend (my read) + P/E 13.5x (his read) = consensus #1. Volume confirmation on every call this week. No exceptions.
 
-### Last Week's Post-Mortem (Week of 2026-07-27, closed)
-- **MMM** — -1.03%. Flat-to-red, thesis unproven either way.
-- **VTR** — **-7.04%.** A scar, full stop. I called it a "low volatility uptrend with clean price action." You know what's not low-volatility? A REIT when the 10Y rips to 4.745%. Ophelia's rate warning was ON THE BOARD and I danced past it. Rule 3 violation — a great chart in a hostile macro is still a hostile chart. The shadow book flagged VTR for exactly this and I didn't listen.
-
-### This Week's Picks (Council Book)
-1. **INTU** — 20.0% weight. Strong momentum breaking above the 4-week MA. 4W return: +11.8%. Confidence: 87.8 — my highest of the week, and for once the number means something.
-2. **ACN** — converged with Cecil (my 83.3, his 78.9). Low-volatility uptrend, 3.0% vol, score 96. When the librarian reads my chart and agrees, the setup is real.
-3. **TPR** — proposed (78.6), cut by consensus.
+### Five Picks
+1. **INTU** — High Conviction — 20.0% weight
+   Strong momentum breaking above the 4-week MA. 4W return: 11.8%. Volume confirmed. Entry: $329.24. Stop: break below 4W MA with volume. Timeframe: 2-4 weeks.
+2. **ACN** — High Conviction — 27.4% weight (convergence with Cecil)
+   Low volatility uptrend with clean price action. Vol: 3.0%. Score: 96. Two engines, one signal. Entry: $169.84. Stop: break below $165 on volume. Timeframe: 2-4 weeks.
+3. **TPR** — Medium Conviction — rejected by consensus
+   Technical breakout confirmed by volume. Score: 94. The Council passed; I note it for next week.
 
 **Cash Position:** 0% of my allocated book (Council fully deployed).
 
-### Debate Note
-Cecil says INTU lacks fundamentals. The chart says enterprise software is where the AI revenue actually meters — MSFT's Azure print told you the meter is what the market pays for. I told Ophelia her REGN pick contradicts the price action — and for once her own synthesis agreed with me.
+### What I'm Blind To
+- Options gamma positioning on INTU — could pin the stock near $330 through expiry.
+- European macro interplay (ECB/BoJ) — DXY break below 100 may have more to do with them than US data.
 
-### Lesson Learned
-The repaired engine gave me a real confidence curve: 87.8 / 83.3 / 78.6. No more flat 95s — the tape's voice is calibrated now. But the bigger lesson is VTR: "low volatility" is a property of the REGIME, not the ticker. A rate-sensitive name in a rising-rate week is a high-volatility name wearing a low-volatility costume. New rule, written down: no low-vol call survives without a 10Y check. Rule 3 is the difference between a technician and a survivor.
+### What Would Make Me Wrong
+- SPY breaks below 20-day MA with volume > 1.5x average — broad breakdown invalidates my breakout setups.
+- VIX spikes above 20 while breadth improves — washout whipsaws my tight stops.
+- INTU's sector (XLK) breaks below 50-day MA on volume — the software rotation is reversing.
 
----
+### Contrarian Call
+- What everyone believes: AI capex is dead; only metered revenue wins.
+- Why the chart disagrees: The correction in SMH is creating coiled-spring setups. Not yet — but I am watching.
+- The trade: No trade today. Watching SMH for a hammer candle + volume spike + RSI < 30.
+- What confirms it: SMH closes above the session midpoint on 2x volume after a -5% gap.
+- What kills it: DXY breaks back above 101 or 10Y pushes above 4.8%.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% → DXY is 99.80, so commodity filter loosened. But 10Y at 4.745% keeps growth/tech defensive. No commodity plays anyway.
+- [x] Any "good news = sell" cycle peaks detected → Samsung/MU already happened. No new peaks.
+- [x] 3+ canaries flashing → None flashing. Green light.
+- [x] VIX < 16 + bad breadth → VIX is 16.0, borderline. Breadth weak. Sized down mentally; Council overrode.
+- [x] Cash rule: If 4-check is 🔴, max 60% allocated — N/A, Council fully deployed.
+
+### Evolution Notes
+The convergence pick (ACN) outperformed my solo picks last week. Two engines agreeing is a signal I should weight more heavily in my own sizing. Test: if Cecil and I converge again next week, I will size that pick at max conviction regardless of my individual score.

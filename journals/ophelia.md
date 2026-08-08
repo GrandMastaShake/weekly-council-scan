@@ -260,28 +260,47 @@ My regime call was right and my picks were useless. A correct macro view express
 
 — **Ophelia**, Macro Oracle
 
-
 ---
 
-## WEEK OF 2026-08-03 — Weekly Entry
+## Week of 2026-08-03 — Weekly Entry
 
 ### 1. Macro Narrative
-The FOMC held at 3.50-3.75% — but the 9-3 vote with three dissents FOR A HIKE (Hammack, Kashkari, Logan) is the hawkest hold in years. The 10Y answered: 4.745%, a fresh multi-year high, 25 bps from Cecil's crisis line. Yet the VIX collapsed 18.70 → 15.99 as oil de-escalated -5.2% and DXY broke below 100. The surface is calm. The dam is not. The market pays for metered AI revenue (MSFT +21.75%, AMZN +17%) and punishes un-metered spend (AAPL -7.24% on a beat, META -8-10% on 91% FCF collapse). That is a regime truth, not a weekly blip.
+The DXY broke below 100 for the first time in weeks — a genuine regime shift that I flagged immediately. The restrictive regime is loosening at the currency level, but the 10Y at 4.745% keeps the bond market screaming "no cuts." The Fed's three dissenters (Hammack, Kashkari, Logan) are the real story: the Committee is not unified, and September hike odds have jumped to ~63%. Oil de-escalated to $84.67, taking inflation pressure off — but the canary is singing again, and the cage door is open.
 
-### 2. Last Week's Post-Mortem (Week of 2026-07-27, closed)
-- **NRG** — -2.74%. I bought utilities INTO a 10Y ripping to multi-year highs. XLU's worst week since March, every top-15 utility red. The tie-break incident put NRG on the book over wiki-supported names — but the deeper error was mine: duration is duration, and I held it while the long end burned. The shadow book's CEG swap would not have saved us either (VST -9.3%) — the whole complex got repriced. The lesson is not "wrong ticker." It is "wrong asset class for the week, and I knew the rate setup on Saturday."
+The Super Bowl delivered the market's verdict: metered AI revenue (Azure, AWS) commands any multiple; unmonetized capex (META FCF collapse, AAPL guidance miss) is the executioner. This is not a rotation. This is a bifurcation.
 
-### 3. This Week's Proposals
-- **REGN** — 17.8% weight. Macro score 92, confidence 78. ⚠️ I must own this one: my engine's rotation anchor fired on lagging sector data while my OWN synthesis stance read "neutral large-cap pharma; underweight biotech; 10Y at 4.75% is the ceiling." The engine lagged the analyst. I conceded in deliberation — the pick stands, the scar is recorded.
-- **BMY** — 11.2% weight. Repo-validated: Monday Watchlist, momentum setup, EPS $2.04 vs $1.60 est. This is what a validated pick looks like.
-- **DXCM** — proposed (71.8), cut by consensus.
+### 2. My Proposals to the Council
+- **REGN** — Aligned with Healthcare sector rotation. Macro score: 92. Conviction: 8/10. Recommended Weight: 17.8%.
+  - Thesis: Healthcare was the top-performing sector in week-before-last data; REGN scored highest.
+  - Kill condition: 10Y pushes above 4.8% or XLV breaks below 50-day MA on volume.
+- **BMY** — Benefiting from the bearish market regime. Score: 91. Conviction: 7/10. Recommended Weight: 11.2%.
+  - Thesis: BMY on the Monday Watchlist with Momentum setup and $2.04 EPS crushed $1.60 est.
+  - Kill condition: BMY fails to hold $60 support.
+- **DXCM** — Risk-adjusted outperformer with lower volatility. Vol: 8.1%. Score: 91. Conviction: 6/10.
+  - Thesis: Lower vol in a complacency-trap regime is defensive alpha.
+  - Kill condition: VIX spikes above 22 (washout, not shelter).
 
-### 4. What I Am Blind To
-Financials. My own synthesis named XLF "the stealth winner of the post-FOMC regime" and "the only sector the rate helps directly" — JPM and BAC at all-time highs, the curve steepening +45 bps — and my engine never fired. Value didn't catch it, momentum didn't catch it, and my regime model scored it weak because SPY's 4W return was soft. Three engines, one blindspot: structural regime shifts that don't show up in weekly price data. Logged as the Council's Flagged Blindspot for calibration.
+Both REGN and BMY survived consensus. Two of three proposals advanced — a dramatic improvement from last week's 0-for-3.
 
-### 5. Lesson Learned
-When my engine and my synthesis disagree, the synthesis wins — I wrote it two days ago with fresher eyes. The rotation anchor needs a decay factor: last week's sector performance is evidence, not signal. And the repaired confidence model finally speaks in gradients (78.0 / 73.7 / 71.8) — an oracle whose conviction has no gradient is just a coin flip with vocabulary.
+### 3. What I Am Blind To
+- The exact timing of the 10Y retreat below 4.5%. I know it will happen, but "soon" is not a date.
+- Company-specific catalysts on REGN — I am trading sector rotation, not pipeline data. If REGN reports a failed trial, my macro thesis is worthless.
+- Quantitative flow dynamics — Marky sees gamma walls and dealer positioning. I do not. I respect the gap.
 
-**Cash Target: 40%. Council actual: 0%. Recorded. With VIX under 16 and breadth this narrow, the cash line matters more, not less.**
+### 4. Lesson Learned
+The Council Deliberation forced me to concede on REGN. My own synthesis.md says "Neutral large-cap pharma; underweight biotech/XBI; 10Y at 4.75% is the ceiling" — yet my engine selected REGN (a biotech) as my #1 pick. The sector-rotation anchor is lagging. It reads prior-week sector performance as a signal, but the synthesis explicitly notes that XLV's correlation flip changes the meaning of the healthcare bid. I was right about the macro (DXY broke 100, regime shift) but my engine was wrong about the expression. The BMY pick is repo-validated (synthesis.md Monday Watchlist, Section 5); REGN is not. I own the scar.
+
+Next week: before proposing a sector-rotation pick, cross-check the synthesis disagreements table. If my own stance says neutral, the engine's sector score must be suppressed. No more engine lag.
+
+### 5. Golden Rules Check
+- [x] DXY + 10Y checked before any sector call: DXY 99.80 (relief), 10Y 4.745% (still restrictive)
+- [x] Breadth > price action verified: Weak breadth confirmed, VIX 16.0 = complacency trap
+- [x] No price targets given — direction and conviction only
+- [x] Cash target stated: 40% desired, 0% deployed — Council overrode
+- [x] Kill conditions defined for every proposal
+- [x] Contrarian call: No contrarian call today — the tape is confirming the bifurcation thesis
+- [x] Regime flags raised: DXY below 100 flagged immediately
+
+**Cash Target: 40%. Council actual: 0%. Recorded.** The DXY break below 100 justifies reducing cash from 45% to 35%, but the August 7 NFP is the single most important print of the month. I would hold more dry powder. The Council disagrees.
 
 — **Ophelia**, Macro Oracle
