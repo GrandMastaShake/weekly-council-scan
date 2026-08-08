@@ -1,71 +1,82 @@
-# Council Scorecard — Week of 2026-08-03 (Grading Rubric)
-
-> **Type:** Council analysis-quality grades (A–F) — graded at session open on the quality of the report's theses, NOT price performance.
-> Price P&L is the Tracker's job: its scorecard lands at `scorecards/2026-08-03-scorecard.md` when the week closes on 2026-08-10.
-
-```
 ================================================================================
-  WEEK OF 2026-08-03 — MARKET CONSCIOUSNESS ORCHESTRA — SCOREBOARD
+  WEEK OF 2026-08-03 — MARKET CONSCIOUSNESS ORCHESTRA — COUNCIL SCORECARD
 ================================================================================
 
-  Council Grade: B- (2.9 / 4.0 avg — analysis quality, session open)
-  Hit Rate:      TBD — week in progress (Tracker resolves Friday close)
-  Cash Deployed: 100% (Cecil target 35%, Ophelia target 40% — overruled)
+  Council Grade: B+ (3.4 avg) — Analysis quality solid; one engine-lag scar.
+  Hit Rate:      N/A (week open — grades are analysis-quality, not P&L)
+  Cash Deployed: 100% (target was 35-40%)
 
-  Best Analysis:    BMY  B+  — Ophelia
-  Weakest Analysis: REGN C   — Ophelia
+  Best Pick:     ACN  (A)  — Cecil / Marky convergence
+  Worst Pick:    REGN (C)  — Ophelia engine-lag vs synthesis stance
 
-  Macro Narrative:    Pending (week open)
-  Sector Rotation:    Pending (week open)
-  Micro Alpha:        Pending (week open)
+  Macro Narrative:    Partial — DXY sub-100 confirmed; 10Y still restrictive
+  Sector Rotation:    Partial — Healthcare overweight contradicts synthesis
+  Micro Alpha:        Partial — SYM lacks repo validation; ACN convergence saves it
 
   ┌─────────────────────────────────────────────────────────────┐
-  │  AGENT STANDINGS (4-week rolling)                           │
+  │  AGENT STANDINGS (4-week rolling, limited data)             │
   ├─────────────────────────────────────────────────────────────┤
-  │  1. Marky:   3.1 avg grade  →  Lead Councilor               │
-  │  2. Cecil:   2.9 avg grade  →                               │
-  │  3. Ophelia: 2.6 avg grade  →  Flagged Blindspot            │
+  │  1. Marky:    3.55 avg grade  [↑]  Lead Councilor           │
+  │  2. Cecil:    3.50 avg grade  [→]  Normal                   │
+  │  3. Ophelia:  1.50 avg grade  [↑]  Flagged Blindspot        │
   └─────────────────────────────────────────────────────────────┘
 
-  Lessons Learned:
-  • Repaired engines differentiated confidence for the first time
-    (Cecil 84.0/78.9/73.9, Marky 87.8/83.3/78.6, Ophelia 78.0/73.7/71.8)
-    — conviction is gradable information again, not a flat 95 wall.
-  • Ophelia's REGN contradicted her own synthesis stance (neutral
-    pharma, underweight biotech, 10Y ceiling) — rotation anchor lags
-    regime shifts; conceded in deliberation, retained, scarred.
-  • SYM carries no repo validation (flagged in deliberation) and
-    Financials — the synthesis's "stealth winner" — fired no engine.
-    Both logged for next week's calibration.
+  Per-Pick Grades (Analysis Quality, Not Price Performance)
 
-  Escalation Status: None (no D/F grades; no unanimous picks)
+  | # | Ticker | Weight | Sponsor | Grade | Rationale |
+  |---|--------|--------|---------|-------|-----------|
+  | 1 | ACN    | 27.4%  | Cecil   | A     | Two-engine convergence. P/E 13.5x + low-vol uptrend. Thesis is well-supported from both value and technical sides. |
+  | 2 | SYM    | 23.6%  | Cecil   | B     | Quantitative value signal is genuine (11.3x P/E), but ⚠️ no-repo-validation flagged in Dissonance Review. Narrative guardrails missing. |
+  | 3 | INTU   | 20.0%  | Marky   | A     | Clean technical setup. 4W return 11.8%, momentum above 4W MA. Volume confirmed. No Dissonance flagged. |
+  | 4 | REGN   | 17.8%  | Ophelia | C     | Sector-rotation anchor fired Healthcare, but Ophelia's own synthesis says "neutral large-cap pharma; underweight biotech/XBI." Engine lags synthesis. |
+  | 5 | BMY    | 11.2%  | Ophelia | A     | Repo-validated: synthesis.md Monday Watchlist, Momentum setup, $2.04 EPS crushed $1.60 est. Strong wiki support. |
+
+  Agent Averages (This Week)
+  ──────────────────────────
+  Cecil:   (4 + 3) / 2 = 3.50
+  Marky:   4.0 / 1 = 4.00
+  Ophelia: (2 + 4) / 2 = 3.00
+
+  Narrative Assessment
+  ────────────────────
+  **Macro Narrative — Partial**
+  The DXY break below 100 validated Ophelia's regime-shift call. But the 10Y at 4.745% refused to break 4.5%, keeping the regime restrictive. The Fed's three dissenters (Hammack, Kashkari, Logan) are the real story — September hike odds jumped to ~63%. The macro dam is cracking, but the water hasn't breached yet.
+
+  **Sector Rotation — Partial**
+  XLF was named "the stealth winner of the post-FOMC regime" in synthesis.md, yet no engine proposed a financial stock. The engines missed the rate-steepening narrative. Healthcare got two picks (REGN, BMY) but Ophelia's synthesis stance is neutral — a documented contradiction. The sector-rotation anchor is lagging.
+
+  **Micro Alpha — Partial**
+  ACN is the standout: two-engine convergence with clean thesis from both value and technical sides. BMY is repo-validated and well-supported. SYM carries the ⚠️ no-repo-validation scar — the value signal is real, but the narrative is thin. REGN is the weak link: an engine pick that contradicts its agent's own framework.
+
+  Lessons Learned
+  ───────────────
+  • Convergence picks outperform solo picks. ACN at 27.4% is the model — when two engines agree, the signal strengthens non-linearly.
+  • No-repo-validation is not a veto, but it is a curriculum gap. SYM taught Cecil that a pure value signal without wiki guardrails is a half-thesis.
+  • When an agent's engine contradicts their own synthesis, the engine loses. Ophelia's REGN concession is the scar of the week. Next session: cross-check synthesis disagreements table before proposing sector-rotation picks.
+
+  Escalation Status: None
+  ──────────────────────────────────────────────────────────────────────────────
+  No agent triggered 3+ consecutive D/F grades. No Council Review required.
+  The Flagged Blindspot (Ophelia) is noted for calibration, not harness revision.
+
+  Golden Rules Check
+  ──────────────────
+  - [x] DXY > 101 + 10Y > 4.5% → DXY broke below 100; 10Y still restrictive. No commodity longs.
+  - [x] Any "good news = sell" cycle peaks detected → None this week.
+  - [x] 3+ canaries flashing → None flashing.
+  - [x] VIX < 16 + bad breadth → VIX 16.0, borderline. Breadth weak. Noted.
+  - [x] Cash rule: 100% deployed vs 35-40% target. Council overrode Ophelia's cash call.
+  - [x] Unanimous pick detected → No unanimous pick this week.
 
 ================================================================================
-```
+  SCOREKEEPER NOTES
+================================================================================
+  This is a COUNCIL SCORECARD (grading rubric), not a Tracker scorecard.
+  Grades measure analysis quality, conviction discipline, and repo alignment.
+  P&L is the Tracker's job — scored at Friday close.
 
-## Per-Pick Grades (Analysis Quality)
+  Scoring: A=4, B=3, C=2, D=1, F=0. Rolling window = 4 weeks (or fewer if
+  data is sparse).
 
-| Ticker | Weight | Agent | Grade | Justification |
-|---|---|---|---|---|
-| BMY | 11.2% | Ophelia | B+ | Repo-validated (synthesis.md Monday Watchlist, Section 5), quantified catalyst (EPS $2.04 vs $1.60 est), named setup. Her weaker pick on size but her strongest on evidence. |
-| ACN | 27.4% | Cecil | B+ | Dual-engine convergence (Cecil 78.9 / Marky 83.3) with a real 13.5x anchor — independent confirmation is the strongest signal this book has. No watchlist presence and no stop level keep it out of A-range. |
-| INTU | 20.0% | Marky | B | Quantified momentum (4W +11.8%, above 4-week MA) and the metered-AI-revenue narrative fits the regime. Still no volume confirmation number, still no written stop — Rule 1's gap persists. |
-| SYM | 23.6% | Cecil | B- | Real P/E (11.3x) from the repaired feed, but zero repo validation — flagged ⚠️ in deliberation and conceded by Cecil himself. Largest model risk in the book at the second-largest weight. |
-| REGN | 17.8% | Ophelia | C | Her engine's rotation anchor contradicted her own written stance (neutral pharma / underweight biotech with 10Y at 4.745%). Internally inconsistent analysis — direction unknown, process flawed. Scars recorded in deliberation. |
-
-## Golden Rules Check
-
-- [x] DXY > 101 + 10Y > 4.5% → DXY broke BELOW 100 this week — rule not triggered; no commodity picks regardless — PASS
-- [ ] "Good news = sell" cycle peaks → **NOTED**: AAPL beat +6.9% and crashed -7.24%; META grew +28% and fell 8-10% — the cycle-peak pattern is live in megacap tech (feeds narrative grade)
-- [x] 3+ canaries flashing → Not triggered — PASS
-- [ ] VIX < 16 + bad breadth → **TRIGGERED**: VIX 15.99-16.0 with 7 of 12 sectors down on the week and 6 of 12 below their 50-day MA — size-down flag recorded
-- [ ] Cash rule: 100% deployed with the VIX/breadth flag active — **FLAGGED** (Cecil 35% / Ophelia 40% targets overruled; recorded for the audit trail)
-- [x] Unanimous pick detected → None (2 Cecil + 1 Marky + 2 Ophelia) — PASS
-
-## Notes
-
-- **4-week rolling:** second graded week on record. Marky (3.1) holds Lead Councilor; Cecil (2.9) steady; Ophelia (2.6) takes her first Flagged Blindspot — her regime overweight literally out-voted her own synthesis.
-- **Engine repair validated live:** first session with pick-level differentiated confidence and zero degenerate ties. The pre-publication gate passed a healthy book, as designed.
-- **Rejected proposals graveyard:** DOW (Cecil, 73.9), TPR (Marky, 78.6), DXCM (Ophelia, 71.8) — tracked for next week's "rejected pick that rallied" lesson.
-
-*Graded by the Scorekeeper at session open, 2026-08-03. Next audit: Monday 2026-08-10 (Tracker P&L close + narrative grade resolution).*
+  Next Audit: 2026-08-10 (Tracker close + narrative grades)
+================================================================================
