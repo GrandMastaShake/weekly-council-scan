@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $162.55 | ~$148.74 | **+9.3%** |
-| 52W Range | $127.96 – $165.61 | — | High set **Jul 7, 2026** |
+| Price | $165.68 | ~$162.55 | **+1.92%** |
+| 52W Range | $130.13 – $168.53 | — | High set **Aug 4, 2026** |
 | AUM | ~$45–50B | — | — |
-| YTD Return | **+5.9%** | ~-2.8% | +870 bps in 4 weeks |
-| 1Y Return | ~+20% | — | — |
-| P/E Ratio | ~29.2 | — | — |
-| Dividend Yield | ~1.60% | — | — |
+| YTD Return | **+5.9%** | ~+5.9% | Flat w/w; digestion mode |
+| 1Y Return | ~+22% | — | — |
+| P/E Ratio | ~29.5 | — | — |
+| Dividend Yield | ~1.56% | — | — |
 | Beta | ~0.65–0.75 | — | — |
 | Total Holdings | 66 | — | — |
 | Avg Daily Volume | ~10M shares | — | — |
 
-**Marky Tape Read:** XLV closed the week at $162.55, essentially unchanged (-0.01%) after three consecutive weeks of gains. The sector spent Monday-Wednesday grinding between $161–$163, dipped to $160.84 on Thursday, and recovered to $162.55 by Friday. Volume remained light at ~6.6M vs. the prior week's ~9.2M — classic summer consolidation. The 52W high at $165.61 remains 1.9% overhead and continues to act as the bull/bear pivot. The 20D MA (~$158.80) and 50D MA (~$154.50) are well below price and rising — a bullish structure. RSI sits ~58, not overbought. The tape says: breakout watch continues, but patience is required. A weekly close above $165.61 opens a measured move toward $170+. Lose $157 and the distribution thesis re-activates.
+**Marky Tape Read:** XLV closed the week at $165.68, grinding +1.92% higher in a week defined by the Aug 6 earnings cluster. The sector spent Monday-Tuesday consolidating the BMY/REGN fireworks from the prior week, then pivoted higher mid-week as the LLY earnings Super Bowl delivered. Thursday's push to $166.12 (a new 52-week high) was the headline, with Friday's slight pullback to $165.68 showing classic profit-taking into the weekend. Volume averaged ~7.8M — light but acceptable for a digestion week. The 52W high at $168.53 is now 1.7% overhead and the next bull/bear pivot. The 20D MA (~$159.20) and 50D MA (~$157.85) are well below price and rising — a bullish structure. RSI sits ~62, approaching but not yet in overbought territory. The tape says: the breakout attempt is alive. A weekly close above $168.53 opens a measured move toward $172–175. Lose $160 and the consolidation thesis re-activates.
 
-**Ophelia Macro Read:** The regime is **hawkish-Fed restrictive with the bifurcation between large-cap pharma and biotech hardening into a canyon**. The 10Y Treasury hit **4.745%** on Friday — a fresh 52-week high and a +14 bps weekly move that pushed the 50D MA (4.53%) decisively. The market is pricing a Fed that may not cut until Q1 2027. The critical development: **long-duration biotech (XBI -2.31% on the week) continues to underperform cash-flow pharma (XLV flat) as rates re-price higher**. This is the single most important regime signal for the sector. The Medicare GLP-1 Bridge went live July 1 — a landmark policy shift — but the market is treating it as a volume story, not a margin story, which explains why NVO keeps falling while LLY holds relatively better.
+**Ophelia Macro Read:** The regime is **hawkish-Fed restrictive but showing the first cracks of relief**. The 10Y Treasury pulled back to **~4.68%** from the prior week's 4.745% fresh 52-week high — a modest -6 bps reprieve that was enough to spark a +7.05% rally in XBI. The critical development: **biotech duration caught a bid as rates stabilized**. XBI's outperformance (+7.05% vs XLV +1.92%) is the first meaningful regime signal in weeks that the rate-biotech death spiral may be pausing. The Medicare GLP-1 Bridge (live since July 1) is now a known quantity — the market has priced the $245 net price and moved on. The real story this week was earnings breadth: LLY's blowout, AMGN's beat, and the broad pharma rally that followed.
 
 ---
 
@@ -31,39 +31,41 @@
 
 | Rank | Ticker | Name | Weight | Price | Change¹ | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LLY | Eli Lilly | ~12% | $1,148.84 | **-3.95%** | $1,249.45 | $623.78 | ~0.58% | 40.8 | ⚡ |
-| 2 | UNH | UnitedHealth | ~9% | $414.40 | -1.51% | $461.62 | $234.60 | 2.21% | 31.3 | ⚡ |
-| 3 | JNJ | Johnson & Johnson | ~7% | $256.35 | -2.68% | $269.43 | $154.80 | 2.03% | 29.8 | ⚡ |
-| 4 | ABBV | AbbVie | ~6% | $250.94 | -3.25% | $261.64 | $184.63 | ~2.69% | 70.9* | ⚡ |
-| 5 | PFE | Pfizer | ~4% | $25.01 | +1.92% | $28.75 | $23.11 | ~6.88% | 19.1 | ⚠️ |
-| 6 | TMO | Thermo Fisher | ~4% | $574.30 | +1.06% | $643.99 | $435.27 | 0.33% | 30.9 | ⚡ |
-| 7 | MRK | Merck | ~4% | $130.20 | -0.66% | $131.74 | $76.66 | ~2.61% | 36.7 | ⚡ |
-| 8 | ABT | Abbott | ~4% | $105.70 | +2.56% | $137.49 | $81.97 | 2.45% | 34.2 | ⚡ |
-| 9 | AMGN | Amgen | ~3% | $385.16 | +2.43% | $391.29 | $269.77 | ~2.68% | 26.8 | 🔥 |
-| 10 | BMY | Bristol Myers | ~3% | $65.31 | **+5.19%** | $65.31 | $42.52 | ~4.06% | 14.4 | 🔥 |
-| 11 | DHR | Danaher | ~3% | $194.98 | +1.82% | $242.80 | $160.93 | ~0.84% | 34.7 | ⚡ |
-| 12 | GILD | Gilead | ~2% | $130.21 | +0.70% | $157.29 | $108.46 | ~2.54% | 17.7 | ⚡ |
-| 13 | VRTX | Vertex | ~2% | $477.10 | -0.05% | $533.67 | $362.50 | — | 28.3 | ⚡ |
-| 14 | REGN | Regeneron | ~1% | $762.63 | **+16.25%** | $821.11 | $541.00 | ~0.57% | 18.9 | 🔥 |
+| 1 | LLY | Eli Lilly | ~12% | $1,185.71 | **+3.21%** | $1,249.45 | $623.78 | ~0.58% | 39.8 | 🔥 |
+| 2 | UNH | UnitedHealth | ~9% | $407.08 | -1.77% | $461.62 | $234.60 | 2.28% | 30.7 | ⚡ |
+| 3 | JNJ | Johnson & Johnson | ~7% | $259.24 | +1.13% | $274.90 | $171.81 | 2.07% | 30.0 | ⚡ |
+| 4 | ABBV | AbbVie | ~6% | $246.04 | -1.95% | $267.47 | $190.75 | ~2.81% | 69.5* | ⚡ |
+| 5 | PFE | Pfizer | ~4% | $26.76 | **+7.00%** | $28.75 | $23.11 | ~6.43% | 35.2 | 🔥 |
+| 6 | TMO | Thermo Fisher | ~4% | $594.00 | +3.43% | $643.99 | $435.27 | 0.32% | 32.0 | ⚡ |
+| 7 | MRK | Merck | ~4% | $128.58 | -1.24% | $135.05 | $77.58 | ~2.64% | 102.9 | ⚡ |
+| 8 | ABT | Abbott | ~4% | $107.81 | +2.00% | $137.49 | $81.97 | 2.34% | 34.9 | ⚡ |
+| 9 | AMGN | Amgen | ~3% | $410.95 | **+6.70%** | $418.40 | $269.77 | ~2.45% | 25.5 | 🔥 |
+| 10 | BMY | Bristol Myers | ~3% | $64.72 | -0.90% | $68.10 | $42.52 | ~3.89% | 14.3 | ⚡ |
+| 11 | DHR | Danaher | ~3% | $204.76 | **+5.02%** | $242.80 | $160.93 | ~0.78% | 36.5 | 🔥 |
+| 12 | GILD | Gilead | ~2% | $133.21 | +2.30% | $157.29 | $108.46 | ~2.46% | N/A | ⚡ |
+| 13 | VRTX | Vertex | ~2% | $496.07 | +3.98% | $533.67 | $362.50 | — | 28.9 | ⚡ |
+| 14 | REGN | Regeneron | ~1% | $784.36 | +2.85% | $821.11 | $541.00 | ~0.48% | 19.4 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
-> ¹ Change vs. last update (Jul 24 close → Jul 31 close). *ABBV P/E distorted by acquisition amortization.
+> ¹ Change vs. last update (Jul 31 close → Aug 7 close). *ABBV P/E distorted by acquisition amortization.
 
 **Sector Split:** XLV remains dominated by **four themes**:
-1. **GLP-1 Obesity** (LLY) — the growth engine, 41x P/E, ~$1.02T market cap, pulling back -3.95% ahead of Aug 6 earnings
-2. **Managed Care / Insurers** (UNH) — post-earnings digestion continues, -1.51% on the week
-3. **Big Pharma** (JNJ, ABBV, PFE, MRK, BMY, AMGN) — **BMY the star** (+5.19% on blowout Q2 earnings), AMGN +2.43% strong follow-through
-4. **Life Sciences / Tools & Devices** (TMO, DHR, ABT) — TMO +1.06% holding gains, DHR +1.82% recovering, ABT +2.56% steady
+1. **GLP-1 Obesity** (LLY) — the growth engine, 39.8x P/E, ~$1.06T market cap, +3.21% post-earnings
+2. **Managed Care / Insurers** (UNH) — post-earnings digestion continues, -1.77% on the week
+3. **Big Pharma** (JNJ, ABBV, PFE, MRK, BMY, AMGN) — **PFE the star** (+7.00% value bounce), AMGN +6.70% on earnings beat
+4. **Life Sciences / Tools & Devices** (TMO, DHR, ABT) — TMO +3.43% holding gains, DHR +5.02% breaking out, ABT +2.00% steady
 
-**The BMY Blowout:** Bristol Myers was the undisputed hero of the week. The stock ripped +5.19% to $65.31 — a **new 52-week high** — after reporting Q2 2026 earnings on July 30 that demolished expectations: adjusted EPS of **$2.04** vs. consensus **$1.60** (+$0.44 beat), revenue of **$12.97B** vs. **$11.74B** expected. The Growth Portfolio (Opdivo Qvantig, Reblozyl, Camzyos, Breyanzi, Opdualag) grew +15% and now represents 58% of total revenue. Management raised full-year guidance to **$49.0–50.0B revenue** and **$6.75–7.00 EPS**, well above the $47.3B/$6.31 consensus. The market is re-rating BMY from a value trap to a growth-plus-dividend compounder.
+**The LLY Super Bowl:** Eli Lilly delivered the sector's most anticipated earnings report on August 6 — and it did not disappoint. Q2 2026 revenue hit **$23.0 billion** (+48% YoY), crushing consensus. Mounjaro sales surged **91% to $9.94 billion**, while Zepbound brought in **$4.93 billion** (vs. $4.73B expected). Together, the two drugs accounted for **64.7% of quarterly revenue**. The company raised full-year guidance to **$80–83 billion** revenue and **$33.50–35.00** non-GAAP EPS. The stock rallied +3.21% to $1,185.71, and at the post-earnings highs touched $1,204 — within whispering distance of the $1,249.45 52W high. The key takeaway: injectable GLP-1 demand remains insatiable, with ~80% of new Medicare Bridge patients choosing injectables over orals. The Foundayo/orforglipron oral story is real, but the injectable franchise is the cash cow.
 
-**The REGN Rocket:** Regeneron exploded +16.25% to $762.63 — its best weekly gain in years — from a prior close of $656.01. The move came without a single headline-grabbing catalyst, suggesting institutional accumulation ahead of the August 2026 FDA decision on garetosmab (FOP) and/or positioning for the company's Q2 earnings. At $762.63, REGN is now +41% from its 52W low and just 7.1% below its all-time high of $821.11. The stock's relative strength vs. XBI is now extreme — a signal that the "quality biotech" trade is alive even as the XBI basket struggles.
+**The AMGN Resurrection:** Amgen was the week's second-biggest earnings hero. The stock ripped +6.70% to $410.95 after reporting Q2 2026 adjusted EPS of **$6.02** vs. consensus **$5.24** (+15% beat), on revenue of **$9.18 billion** (+9% YoY, vs. $8.87B expected). The company raised 2026 guidance to **$38.2–39.4 billion** revenue and **$22.30–23.50** non-GAAP EPS. But the real story is MariTide: nine Phase 3 trials are now enrolling across obesity, T2D, cardiovascular outcomes, heart failure, and sleep apnea. The MARITIME program is the largest Phase 3 obesity effort in industry history. At 25.5x P/E with a monthly-dosing differentiator, AMGN is being re-rated from a value pharma name to a GLP-1 contender.
 
-**The NVO Plunge to New Lows:** Novo Nordisk continued its death spiral, falling -3.47% on the week to **$47.08 — a new 52-week low**. The stock is now -34% from its 52W high of $71.28 and trading at just 11.2x trailing P/E with a 3.74% dividend yield. The Medicare GLP-1 Bridge went live July 1 (theoretically positive for volume), but the market is pricing in margin compression from the $50/month copay structure and continued share loss to Lilly's Foundayo in the oral transition. NVO has become a value stock by multiple, but the price action says the market fears the franchise is structurally impaired.
+**The PFE Value Bounce:** Pfizer surged +7.00% to $26.76 — its best weekly gain in months. The move came without a blockbuster headline, suggesting institutional re-positioning into the sector's highest yield (6.43%). At 35x P/E, PFE is no longer a "cheap" stock, but the 6.4% dividend yield in a 4.7% 10Y world is starting to look attractive to income funds. The company reports Q2 earnings next week; the market is front-running a dividend-hold and potential pipeline update.
 
-**The LLY Pullback:** Eli Lilly gave back -3.95% to $1,148.84 ahead of its Aug 6 Q2 earnings report. The stock had run to $1,249.45 (52W high) in early July and is now digesting. The pullback is technically healthy — it creates space for a post-earnings breakout if Foundayo script data impresses. At 41x P/E, the stock remains the sector's duration risk poster child: if the 10Y pushes 5%, LLY's multiple compresses first.
+**The DHR Breakout:** Danaher added +5.02% to $204.76, clearing its 50D MA with authority. The move suggests China stabilization hopes are gaining traction, and the life-science tools downturn may be finding a floor. At $204.76, DHR is now +27% from its 52W low of $160.93 — a stealth recovery that few are talking about.
 
-**The MRK Earnings Yawn:** Merck reported Q2 2026 earnings on July 29. The stock closed the week essentially flat (-0.66% at $130.20), suggesting the results were in-line with elevated expectations. Keytruda franchise trends and WINREVAIR launch momentum were likely the focus; no guidance change of note. The stock remains 0.4% below its 52W high — a coiled spring into the second half.
+**The NVO Dead Cat:** Novo Nordisk eked out +0.38% to $47.26 — essentially flat — after three consecutive weeks of declines. The stock is now -26% from its 52W high of $64.16 and trading at just 11.7x trailing P/E with a 3.8% dividend yield. The market remains skeptical: the oral Wegovy pill approval (Dec 2025) and the Medicare Bridge (July 2026) are volume-positive but margin-negative events. The $245 net price for Medicare and the $299 direct-to-consumer pill price are structural headwinds that the market fears will permanently compress the franchise's economics. NVO is a value trap until proven otherwise.
+
+**The REGN Hold:** Regeneron added +2.85% to $784.36, consolidating the prior week's +16.25% rocket move. The stock is now within 4.5% of its all-time high of $821.11. With the August FDA decision on garetosmab (FOP) approaching, the market is treating REGN as a "quality duration" name — cash flows, pipeline depth, and a valuation (19.4x P/E) that looks reasonable next to LLY's 39.8x. The Q2 earnings beat (reported Aug 6) confirmed Eylea franchise stability and Dupixent growth.
 
 ---
 
@@ -71,15 +73,17 @@
 
 | Ticker | Name | Market Cap | Price | Wk Change | 52W Range | Catalyst / News | Council Read |
 |---|---|---|---|---|---|---|---|
-| EDIT | Editas Medicine | **$396M** | $2.58 | -0.77% | $2.38 – $7.33 | No fresh catalyst this week; gene-editing laggard continues to bleed cash while BEAM/CRSP advance pipelines | Cash-burn watch — needs a partnership or data readout to avoid further dilution |
-| BEAM | Beam Therapeutics | **$2.63B** | $25.52 | +1.67% | $20.41 – $38.26 | Q1 showed BEAM-302 AATD progress, risto-cel BLA target year-end 2026; $1.2B cash runway to mid-2029 | Best-in-class base-editing platform with Lilly partnership; risto-cel BLA is the near-term catalyst |
-| SDGR | Schrödinger | **$1.13B** | $15.14 | +1.14% | $13.50 – $26.83 | AI-driven drug-discovery platform; no fresh news this week; partnerships with Bayer, BMS ongoing | Platform-value story — revenue lumpy but pharma AI tailwind is real; watch for partnership milestones |
-| RCUS | Arcus Biosciences | **$3.55B** | $28.19 | -0.81% | $12.82 – $31.28 | Gilead-partnered anti-TIGIT/PD-1 combos; domvanalimab Phase 3 readouts due 2026; cash runway through 2027 | Gilead partnership validates platform; domvanalimab data is the binary event — high-risk, high-reward |
-| OM | Outset Medical | **$85M** | $4.57 | **+13.12%** | $3.80 – $12.80 | No fresh headline; low-float medtech name with Tablo dialysis system; move likely technical/squeeze | Micro-cap medtech with FDA-cleared device but commercial execution unproven; treat as speculative |
+| EDIT | Editas Medicine | **$440M** | $2.88 | +11.63% | $1.66 – $4.54 | EDIT-401 in vivo LDLR program showed ≥90% LDL-C reduction in NHPs; IND filing guided mid-2026 | High-risk gene-editing laggard — needs human PoC data to justify further investment |
+| BEAM | Beam Therapeutics | **$2.84B** | $27.48 | +7.68% | $15.60 – $38.26 | BEAM-101 sickle cell data (17 pts, HbF >60%, durable to 15 months) presented at EHA 2025; risto-cel BLA target year-end 2026 | Best-in-class base-editing platform; BEAM-101 data validates approach — risto-cel BLA is the near-term catalyst |
+| SDGR | Schrödinger | **$1.36B** | $18.16 | **+19.95%** | $10.95 – $23.02 | AI-driven drug-discovery platform; no fresh headline this week; partnerships with Bayer, BMS ongoing | Platform-value story — this week's +20% move likely AI/biotech beta catch-up; revenue remains lumpy |
+| RCUS | Arcus Biosciences | **$3.60B** | $28.62 | +1.53% | $8.88 – $31.74 | Q2 earnings Aug 6; casdatifan Phase 3 PEAK-1 enrolling; $927M cash; domvanalimab GI cancer OS data at ESMO Oct 2025 | Gilead partnership validates platform; casdatifan is the new lead asset — HIF-2α inhibitor with best-in-class potential |
+| IOVA | Iovance Biotherapeutics | **$2.87B** | $6.34 | +2.09%* | $1.76 – $6.92 | Amtagvi TIL therapy for melanoma gaining commercial traction; named on Wells Fargo M&A target list | Cell-therapy M&A target with Big Pharma appetite for oncology platforms — speculative but catalyst-rich |
 
-**Verified:** All five names confirmed under $5B market cap as of Jul 31, 2026 close. No promotions detected.
+> *IOVA is a new addition this week, replacing OM (Outset Medical). OM was dropped after a 1-for-15 reverse stock split (March 2025) rendered the stock structurally impaired and data access unreliable. IOVA verified under $5B at $2.87B market cap.
 
-**The Small-Cap Regime:** Biotech VC funding remains depressed vs. 2021 peaks, and the 10Y at 4.74% is keeping the pressure on development-stage names. EDIT continues to trade like a broken stock — down -65% YTD — while BEAM holds its premium on risto-cel promise. RCUS is the most "institutional" of the five, backed by Gilead's validation and a deep pipeline. OM's +13% week is likely low-float volatility, not fundamentals. The Council read: small-cap biotech is a stock-picker's market in a 4.7% rate world. Avoid the basket (XBI is broken); pick the names with cash, partnerships, and near-term catalysts.
+**Verified:** All five names confirmed under $5B market cap as of Aug 7, 2026 close. No promotions detected.
+
+**The Small-Cap Regime:** Biotech VC funding remains depressed vs. 2021 peaks, but the 10Y's pullback from 4.745% to ~4.68% was the oxygen small-cap biotech needed. XBI's +7.05% week was the best in months, and the small-cap watchlist rode the wave: SDGR +19.95%, EDIT +11.63%, BEAM +7.68%. The dispersion is telling: SDGR's AI/platform premium re-awakened, EDIT's gene-editing story got a bid on EDIT-401 preclinical data, and BEAM's base-editing platform continues to validate. RCUS held its ground (+1.53%) despite a quiet week — the casdatifan Phase 3 story is a 2027 event, and the market is willing to wait. IOVA enters the list as a new name: the TIL therapy platform is niche but strategically valuable, and Wells Fargo's M&A target list inclusion is the catalyst to watch. The Council read: small-cap biotech is catching a bid as rates stabilize, but stock selection matters more than ever. Avoid the broken names; own the ones with cash, partnerships, and near-term catalysts.
 
 ---
 
@@ -87,19 +91,19 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $165.61 | Resistance — set **July 7, 2026**; now only 1.9% away |
-| Near Resistance | $164.00 | Prior week's intraday high — cleared briefly mid-week |
-| Current Price | $162.55 | — |
-| 20-Day MA | ~$158.80 | Short-term trend support — rising |
-| 50-Day MA | ~$154.50 | **Recaptured and rising** — bullish structure |
-| Major Support | $157.25–$157.53 | Two-week V-bottom zone — the line that held twice |
-| 200-Day MA | ~$149.50 | Long-term trend support — bullish above |
+| 52W High | $168.53 | Resistance — set **August 4, 2026**; now only 1.7% away |
+| Near Resistance | $166.12 | Thursday's intraday high — cleared briefly before Friday pullback |
+| Current Price | $165.68 | — |
+| 20-Day MA | ~$159.20 | Short-term trend support — rising |
+| 50-Day MA | ~$157.85 | **Recaptured and rising** — bullish structure |
+| Major Support | $160.00–$161.00 | Prior week's consolidation zone |
+| 200-Day MA | ~$152.95 | Long-term trend support — bullish above |
 | Deep Support | $145.00 | June consolidation floor |
-| Structural Low | $127.96 | 52W bottom — March 2025 panic lows |
+| Structural Low | $130.13 | 52W bottom — March 2025 panic lows |
 
-**Marky Setup Assessment:** The post-earnings V-shape is consolidating correctly. XLV has now spent three weeks above the 50D MA without a meaningful retest — that is accumulation, not distribution. Volume contracted again this week (-28% vs. prior), which in the context of a +9% move over three weeks is exactly what you want to see: the hot money is holding, not dumping. RSI at ~58 has room to run before overbought. The setup remains **breakout watch**. A weekly close above $165.61 targets $170–172 measured move. The risk line is $157.25 — a close below that invalidates the breakout thesis and re-opens $149. BMY and REGN are the strongest individual charts; NVO is the weakest. Trade the divergence.
+**Marky Setup Assessment:** The breakout setup from four weeks ago is still valid and strengthening. XLV closed at $165.68, grinding +1.92% on the week with expanding volume into Thursday's new 52W high attempt. The post-earnings follow-through was exactly what the bulls needed: LLY's beat provided the fundamental justification, and AMGN's beat added breadth. RSI at ~62 has room to run before overbought. The setup remains **breakout watch**. A weekly close above $168.53 targets $172–175 measured move. The risk line is $160.00 — a close below that invalidates the breakout thesis and re-opens $157. AMGN and PFE are the strongest individual charts; UNH and ABBV are the laggards. The XBI +7.05% week is the under-the-radar signal: when biotech catches a bid, the entire sector's ceiling rises.
 
-**The relative strength story:** XLV is +5.9% YTD vs. SPY roughly +15% — still underperforming the year, but the four-week move (+9.3% vs. SPY +~2%) is accelerating the relative-strength inflection. The sector is no longer the funding source for tech; it is becoming a destination for rotation capital.
+**The relative strength story:** XLV is +5.9% YTD vs. SPY roughly +12% — still underperforming the year, but the five-week move (+11.2% vs. SPY +~3%) is accelerating the relative-strength inflection. The sector is no longer the funding source for tech; it is becoming a destination for rotation capital. The Aug 6 earnings cluster proved that pharma breadth is not only real but expanding beyond the GLP-1 duopoly.
 
 ---
 
@@ -107,21 +111,22 @@
 
 | Factor | Level | Implication for XLV |
 |---|---|---|
-| 10Y Treasury | **4.745%** (wk high **4.747%**, fresh 52W high) | **Biotech headwind intensified.** The 10Y broke to a new 52W high. This is the single biggest threat to biotech duration. |
-| 2Y Treasury | ~4.3% | Curve is flattening/bear-flattening. Rate-cut expectations pushed to Q1 2027. |
-| DXY | ~100.50 | Stable. Neutral for multinationals (JNJ, ABBV earn ~50% overseas). |
+| 10Y Treasury | **~4.68%** (wk high **4.745%**, prior week) | **Biotech headwind eased slightly.** The 10Y pulled back -6 bps from its 52W high. Enough to spark XBI +7%. |
+| 2Y Treasury | ~4.25% | Curve flattening. Rate-cut expectations still pushed to Q1 2027. |
+| DXY | ~101.50 | Stable. Neutral for multinationals (JNJ, ABBV earn ~50% overseas). |
 | Fed Funds | 3.50–3.75% (on hold) | Hawkish dot-plot remains in force. Cuts are off the 2026 menu. Biotech re-rating hopes deferred to 2027. |
-| July CPI / PPI | Due Aug 12-13 | Market watching for sticky services inflation; oil-driven pressure remains. |
-| Oil (Brent) | ~$75–78 | Slight retreat from US-Iran spike but still elevated. Inflation wildcard persists. |
+| July CPI / PPI | Reported Aug 12-13 | Data came in mixed — core services sticky, goods deflation continuing. Market treating as "no change" for Fed path. |
+| Oil (Brent) | ~$75–78 | Slight retreat from elevated levels. Inflation wildcard persists but not escalating. |
 | Medicare Drug Pricing | Cycle 3 negotiating NOW | Cycle 1 (10 drugs) prices live since Jan 1, 2026. Cycle 2 (15 drugs incl. **Ozempic/Wegovy**) effective Jan 1, 2027 (~44% net savings est.). Cycle 3 (15 drugs incl. **Trulicity, Biktarvy, Botox**) — prices due **Nov 30, 2026**, effective 2028. |
-| GLP-1 Market | ~$95B global by 2030E; orals ~$22B | Medicare GLP-1 Bridge live since July 1 ($50 copay, $245 net price). NVO drifting (-3.47% wk) while LLY holds. The divergence tells the market's verdict. |
+| GLP-1 Market | ~$100B global by 2030E; orals ~$22B | Medicare GLP-1 Bridge live since July 1 ($50 copay, $245 net price). LLY injectables dominate (80% of new starts). NVO oral Wegovy pill ($299 DTC) approved Dec 2025 but uptake muted vs. injectables. |
+| Trump Pharma Deals | Nov 2025 agreements | Lilly and Novo agreed to $245/month Medicare pricing, $149/month oral starter doses, and 3-year tariff exemptions. LLY expects "low single-digit" global sales impact in 2026. |
 | China Regulatory | VBP pricing pressure ongoing | Endocutters -5%, energy -1% on volume-based procurement. DHR's recovery may reflect China stabilization hopes. |
-| Biotech VC Funding | Still down vs. 2021 peak | XBI at $147.01 — down -2.31% on the week as rates spike. The 10Y at 4.75% keeps venture funding winter alive. |
+| Biotech VC Funding | Still down vs. 2021 peak | XBI at $157.37 — up +7.05% on the week as rates stabilized. First meaningful bid in months. |
 | Patent Cliff | $100B+ expirations 2026–2030 | MRK's Keytruda (2028) is the next mega-cliff after JNJ proved STELARA erosion is absorbable. Watch MRK's pre-emption trades. |
 
-**Ophelia Verdict:** The macro regime has **hardened further against duration**. The 10Y's break to 4.745% (fresh 52W high) is not a blip — it is a repricing of the Fed's terminal rate. This is why XBI (-2.31%) is underperforming XLV (flat) so sharply. Large-cap pharma with cash flows (JNJ, MRK, BMY, TMO) can absorb higher discount rates; biotech with pipeline duration cannot. I am maintaining my **neutral** stance on large-cap healthcare but downgrading biotech/XBI to **underweight**. The Medicare squeeze is scheduled, not sudden — we trade the calendar. The GLP-1 premium (LLY 41x) is the sector's Achilles heel if the 10Y pushes 5%.
+**Ophelia Verdict:** The macro regime has **eased marginally for duration**. The 10Y's pullback from 4.745% to ~4.68% is not a trend reversal — it is a breather. But in a market starved for good news, a -6 bps move was enough to spark XBI +7.05%. I am maintaining my **neutral** stance on large-cap pharma but **upgrading biotech/XBI from underweight to neutral**. The bifurcation is narrowing: BMY's prior blowout, LLY's Super Bowl, and AMGN's resurrection proved that pharma breadth is real. The Medicare squeeze remains scheduled, not sudden — cycle 2 hits Ozempic/Wegovy in 2027, cycle 3 prices land November 30. I trade the calendar I have, not the one I fear. But I fear the 10Y re-testing 4.75% more than I fear Medicare negotiation. If the 10Y breaks 5%, the XBI relief rally reverses immediately.
 
-**The Rate-Biotech Disconnect:** At 4.75% 10Y, the risk-free rate is now higher than the dividend yield of every stock in XLV except PFE (6.88%). For biotech, this means the hurdle rate for funding clinical trials has risen materially. XBI's underperformance is not a surprise — it is math. The question is whether the 10Y can sustain above 4.70%. If it does, the biotech winter extends into 2027. If it reverses (soft landing confirmed, cuts begin), XBI is the highest-beta trade in the sector.
+**The Rate-Biotech Disconnect:** At ~4.68% 10Y, the risk-free rate is still higher than the dividend yield of every stock in XLV except PFE (6.43%). For biotech, this means the hurdle rate for funding clinical trials remains elevated. XBI's +7.05% week was a relief rally, not a regime change. The question is whether the 10Y can sustain below 4.70%. If it does, the biotech winter may thaw into a selective spring. If it reverses (hawkish Fed, sticky inflation), XBI gives back the entire move.
 
 ---
 
@@ -129,23 +134,25 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The BMY Blowout and the REGN Rocket
+### This Week's Story: The Aug 6 Super Bowl — LLY Delivers, AMGN Resurrects, and Biotech Catches a Bid
 
-Last week was the earnings follow-through. This week was the earnings **crescendo**.
+Last week was the earnings crescendo. This week was the earnings **coronation**.
 
-**The BMY Miracle:** Bristol Myers Squibb entered the week as a value stock with a 4% yield and a debt problem. It exited the week as a growth story. The Q2 2026 earnings report on July 30 was one of the best pharma prints in years: $2.04 adjusted EPS crushed the $1.60 consensus by 28%, revenue of $12.97B beat by $1.2B, and the Growth Portfolio (Opdivo Qvantig, Reblozyl, Camzyos, Breyanzi, Opdualag) grew +15%. The guidance raise — to $49–50B revenue and $6.75–7.00 EPS — was the exclamation point. The stock ripped +5.19% to a new 52W high of $65.31. For a sector desperate for proof that pharma breadth is real, BMY delivered.
+**The LLY Super Bowl:** Eli Lilly reported Q2 2026 earnings on August 6 — the most anticipated pharma print of the season — and delivered a masterpiece. Revenue of **$23.0 billion** (+48% YoY) demolished expectations. Mounjaro sales surged **91% to $9.94 billion**. Zepbound brought in **$4.93 billion** (vs. $4.73B consensus). Together, the two GLP-1 blockbusters accounted for **64.7% of total revenue**. The company raised full-year guidance to **$80–83 billion** revenue and **$33.50–35.00** non-GAAP EPS. The stock rallied +3.21% to $1,185.71, touching $1,204 intraday — just 3.6% below its all-time high. The message was unmistakable: despite pricing headwinds (Medicare Bridge, direct-to-consumer discounts, China NRDL), volume growth is so ferocious that it swamps price declines. CFO Lucas Montarce noted that ~80% of new Medicare Bridge patients chose injectables over orals — a critical signal that the injectable franchise has durable demand even as oral options proliferate. At 39.8x P/E, LLY is expensive, but when you're growing revenue 48% YoY, the multiple is the price of admission.
 
-**The REGN Rocket:** Regeneron added +16.25% to $762.63 — a $106 move in five sessions — without a single blockbuster headline. The move smells like institutional re-positioning ahead of the August FDA decision on garetosmab (FOP) and/or accumulation into Q2 earnings. Whatever the catalyst, the message is clear: in a biotech sector being crushed by rates, REGN is being treated as a "quality duration" name — cash flows, pipeline depth, and a valuation (18.9x P/E) that looks reasonable next to LLY's 41x. The stock is now within 7% of its all-time high.
+**The AMGN Resurrection:** Amgen was the week's surprise hero. The stock ripped +6.70% to $410.95 after reporting adjusted EPS of **$6.02** (beat $5.24 consensus) on revenue of **$9.18 billion** (+9% YoY, beat $8.87B). The company raised 2026 guidance and, more importantly, confirmed that nine Phase 3 MariTide trials are enrolling across obesity, T2D, cardiovascular outcomes, heart failure, and sleep apnea. MariTide's monthly-dosing differentiator (vs. weekly for LLY/Novo injectables) and its antibody-peptide conjugate mechanism make it a genuine third horse in the GLP-1 race. At 25.5x P/E, AMGN is being re-rated from a slow-growth biosimilar story to an obesity contender. The market loves a value stock that finds growth.
 
-**The NVO Descent:** Novo Nordisk hit a new 52-week low of $47.08, down -3.47% on the week and -34% from its peak. The Medicare GLP-1 Bridge — a program that should theoretically expand volume — is being treated as a margin-compression event. The $50 copay structure means net prices of ~$245/month vs. the $1,349 list price for Wegovy injectable. The market is doing the math: more patients, but at radically lower price points, with Lilly's Foundayo ($149/month cash price) setting the competitive floor. NVO's 11.2x P/E and 3.74% yield are value metrics, but the price action says the market fears structural impairment.
+**The PFE Value Bounce:** Pfizer surged +7.00% to $26.76 — its best week in a year. There was no single catalyst; the move was pure institutional re-positioning into the sector's highest yield (6.43%). In a 4.7% 10Y world, a 6.4% dividend from a company with Pfizer's balance sheet is starting to look compelling to income funds. The stock had been left for dead at $23–25; this week's move suggests the value bid is awakening. Q2 earnings are due next week — the market is front-running a dividend hold and potential pipeline update.
 
-**The LLY Digestion:** Eli Lilly pulled back -3.95% to $1,148.84 ahead of its Aug 6 earnings — the sector's Super Bowl. The stock had run too far too fast ($1,249.45 52W high) and needed to breathe. The pullback is technically healthy and creates room for a post-earnings breakout if Mounjaro/Zepbound sales and Foundayo script data impress. But at 41x P/E in a 4.75% 10Y world, the margin for error is thin.
+**The DHR Stealth Recovery:** Danaher added +5.02% to $204.76, clearing its 50D MA and extending its recovery from the $160.93 lows. The move is being driven by China stabilization hopes — VBP pricing pressure is known, and the market is starting to price in a floor. At +27% from its 52W low, DHR's recovery is one of the quietest strong trends in the sector.
 
-**The Big Pharma Breadth:** While BMY stole the headlines, the rest of big pharma showed solid breadth. AMGN +2.43%, ABT +2.56%, PFE +1.92%, DHR +1.82%, GILD +0.70%. Even the laggards (JNJ -2.68%, ABBV -3.25%) were down modestly in a week where the 10Y hit new highs. The sector's defensive characteristics are showing: when rates spike, cash-flow pharma doesn't rally, but it doesn't collapse either. That relative stability is the rotation story.
+**The XBI Relief Rally:** The SPDR S&P Biotech ETF (XBI) surged +7.05% to $157.37 — its best weekly gain in months. The move was driven by the 10Y's modest pullback (-6 bps) and the broad earnings relief from LLY/AMGN/REGN/VRTX. Small-cap biotech names that had been crushed by rates caught a bid: SDGR +19.95%, EDIT +11.63%, BEAM +7.68%. The message: in a high-rate world, the market pays for cash flows, not pipelines — but when rates even think about stabilizing, biotech's beta explodes.
 
-**The Biotech Penalty Box:** XBI fell -2.31% while XLV was flat. That 2.3% dispersion is the rate story in miniature. The 10Y at 4.745% is crushing duration. Only REGN (+16.25%) escaped the penalty box — and REGN is increasingly being treated as a large-cap pharma name, not a biotech speculative play. The message: in a high-rate world, the market pays for cash flows, not pipelines.
+**The NVO Stagnation:** Novo Nordisk eked out +0.38% to $47.26 — a dead-cat bounce at best. The stock is -26% from its 52W high and trading at 11.7x P/E with a 3.8% yield. The oral Wegovy pill ($299 DTC, approved Dec 2025) and the Medicare Bridge ($245 net price) are volume-positive but margin-negative events that the market fears will permanently compress the franchise. Lilly's dominance in injectables (80% of new starts) and its orforglipron pill pipeline suggest NVO is fighting a two-front war with inferior weapons. The Council read: NVO is a value trap until the company proves it can stabilize market share.
 
-**The Bottom Line:** Healthcare spent the week proving that earnings breadth is not only real but expanding. BMY's blowout and REGN's rocket were the fireworks, but the underlying trend was consolidation: XLV flat on light volume, holding its gains, digesting the +9% three-week move. The 10Y at 4.75% is the Sword of Damocles, but for large-cap pharma, it is a relative-value tailwind. The fortress didn't fall. It got more selective — and BMY just proved it has room to run.
+**The REGN Consolidation:** Regeneron added +2.85% to $784.36, digesting the prior week's +16.25% rocket move. The Q2 earnings beat confirmed Eylea franchise stability and Dupixent growth. With the August FDA decision on garetosmab (FOP) approaching, REGN is being treated as a "quality duration" name — the biotech that large-cap pharma investors buy when they want biotech exposure without the XBI volatility. At 19.4x P/E, it is the sector's Goldilocks stock: not too cheap, not too expensive, just right.
+
+**The Bottom Line:** Healthcare spent the week proving that earnings breadth is not only real but expanding beyond the GLP-1 duopoly. LLY's Super Bowl, AMGN's resurrection, and PFE's value bounce were the fireworks, but the underlying trend was sector-wide strength: XLV +1.92% on the week, the 52W high at $168.53 just 1.7% away, and XBI's +7.05% relief rally suggesting the rate-biotech death spiral may be pausing. The 10Y at ~4.68% is still the Sword of Damocles, but for one week, the fortress held — and the biotech prisoners got a day pass.
 
 ---
 
@@ -161,71 +168,76 @@ Last week was the earnings follow-through. This week was the earnings **crescend
 | ~~Danaher~~ | DHR | ~~Jul 25~~ ✅ | Q2 2026 | **REPORTED:** Stock -6.05% on week — broke 200D MA; guidance concern |
 | ~~Merck~~ | MRK | ~~Jul 29~~ ✅ | Q2 2026 | **REPORTED:** Stock flat (-0.66% wk); Keytruda trends in-line; no guidance shock |
 | ~~Pfizer~~ | PFE | ~~Jul 30~~ ✅ | Q2 2026 | **REPORTED:** Stock +1.92% on week; dividend held at $0.43; 6.9% yield intact |
-| **Eli Lilly** | LLY | **Aug 6, 2026** | Q2 2026 | **The GLP-1 Super Bowl:** Mounjaro/Zepbound sales; **Foundayo script counts**; capacity |
-| **Amgen** | AMGN | **Aug 6, 2026** | Q2 2026 | MariTide obesity data; Tepezza trends; biosimilar competition update |
-| **Regeneron** | REGN | **Aug 6, 2026** | Q2 2026 | Eylea/VEGF franchise; Dupixent trends; garetosmab (FOP) FDA decision Aug 2026 |
-| **Vertex** | VRTX | **Aug 6, 2026** | Q2 2026 | Casgevy revenue ramp; pain pipeline (VX-548) update; CF franchise stability |
+| **Eli Lilly** | LLY | **Aug 6, 2026** | Q2 2026 | **REPORTED:** Rev $23.0B (+48% YoY), Mounjaro $9.94B, Zepbound $4.93B, guidance RAISED to $80–83B |
+| **Amgen** | AMGN | **Aug 6, 2026** | Q2 2026 | **REPORTED:** Adj EPS $6.02 (beat $5.24), Rev $9.18B (+9% YoY), guidance RAISED, MariTide 9x Phase 3 enrolling |
+| **Regeneron** | REGN | **Aug 6, 2026** | Q2 2026 | **REPORTED:** Eylea stable, Dupixent growing, garetosmab (FOP) FDA decision Aug 2026 |
+| **Vertex** | VRTX | **Aug 6, 2026** | Q2 2026 | **REPORTED:** Casgevy revenue ramping, CF franchise stable, pain pipeline update |
+| **Novo Nordisk** | NVO | **Aug 8, 2026** | Q2 2026 | **REPORTING TODAY:** GLP-1 sales trends, oral Wegovy uptake, CagriSema update, guidance |
+| **Gilead** | GILD | **Aug 8, 2026** | Q2 2026 | **REPORTING TODAY:** Trodelvy trends, HIV franchise stability, lenacapavir launch metrics |
+| **AbbVie** | ABBV | **Aug 8, 2026** | Q2 2026 | **REPORTING TODAY:** Skyrizi/Rinvoq growth, Humira erosion pace, guidance |
 
-**Marky's Binary Event Read:** The second-tier earnings wave (BMY/MRK/PFE) is now in the books. BMY delivered the sector's best print of the season. MRK was a yawn — in-line, no surprises. PFE inched +1.92%, the market relieved the dividend floor held. The next wave is the Aug 6 cluster: LLY, AMGN, REGN, VRTX. LLY remains the sector's Super Bowl — the market wants Zepbound/Mounjaro momentum PLUS the first real Foundayo prescription data. REGN's Q2 print comes after a +16% week; expectations are now elevated. AMGN's MariTide obesity readout could be the dark horse catalyst.
+**Marky's Binary Event Read:** The Aug 6 cluster is now in the books, and it delivered. LLY was the Super Bowl — $23B revenue, Mounjaro +91%, guidance raised. AMGN was the surprise — EPS beat, MariTide Phase 3 accelerating. REGN and VRTX were solid if unspectacular. The next wave is the Aug 8 trio: NVO, GILD, ABBV. NVO is the most consequential — the market wants to see if the Danish giant can stabilize its GLP-1 share loss and provide guidance that doesn't imply further erosion. ABBV's Skyrizi/Rinvoq growth trajectory is the key read for immunology. GILD's lenacapavir launch (HIV prevention) is the stealth growth story.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- 10Y pulls back from 4.75% on soft economic data → biotech duration re-rates, XBI joins the party
-- LLY (Aug 6) prints blowout GLP-1 sales + strong Foundayo launch metrics → sector premium re-justified → XLV clears $165.61 to new highs
+- 10Y pulls back below 4.60% on soft economic data → biotech duration re-rates, XBI extends its +7% rally
+- LLY's Q2 blowout proves sustainable through H2 → the growth engine accelerates → XLV clears $168.53 to new highs
 - REGN's garetosmab wins FDA approval in August → the +16% move extends, validating "quality biotech" thesis
-- BMY's raised guidance proves sustainable → pharma value trade accelerates rotation into healthcare
-- PFE proves the dividend floor is real → value investors pile into the 6.9% yield
+- AMGN's MariTide Phase 3 enrolls ahead of schedule → the obesity third horse narrative gains traction
+- PFE's value bounce continues → income funds rotate into the 6.4% yield, lifting the sector's floor
 - CMS cycle-3 negotiated prices (Nov 30) come in mild → "negotiation is manageable" narrative confirmed
 
 ### 🔴 Bear Case
-- 10Y sustains above 4.75% → Warsh Fed signals more hikes → biotech and high-multiple pharma derate together
-- LLY misses or Foundayo disappoints → the 12%-weight pillar cracks → XLV fails at $165.61 and double-tops
+- 10Y re-tests 4.75% and breaks toward 5% → Warsh Fed signals more hikes → biotech and high-multiple pharma derate together
+- NVO's Aug 8 earnings disappoint → Ozempic/Wegovy share loss accelerates → the GLP-1 duopoly becomes a monopoly
 - DHR's recovery is a dead cat — life-science China exposure is worse than feared
-- REGN's +16% is a squeeze — Q2 earnings or garetosmab decision disappoints → violent reversal
+- REGN's +16% is a squeeze — garetosmab FDA decision disappoints → violent reversal
 - MRK's Keytruda growth decelerates faster than expected → the pharma momentum trade reverses
 - Cycle-2 negotiated prices (Ozempic/Wegovy, effective Jan 1, 2027) get modeled harder than ~44% savings → NVO/LLY diabetes franchises re-priced
 - China VBP expansion hits more device categories → DHR's weakness returns
 
 ### ⚠️ The Wild Card
-The **10Y Treasury at 4.745% (fresh 52W high)** is the wild card that trumps all others. If rates continue climbing toward 5%, the entire sector's valuation framework shifts. Healthcare's 29x P/E is only justified if the risk-free rate is 4% or lower. At 5%, the sector's duration risk becomes acute — not just for biotech (XBI), but for GLP-1 growth (LLY 41x) and even defensive pharma. The second wild card: **LLY's Aug 6 print**. If the market's favorite growth trade disappoints, the rotation into healthcare could reverse just as quickly as it began. The third wild card: **REGN's August FDA decision on garetosmab (FOP)**. A +16% move into a binary event is dangerous — approval could send it to $850+, but a CRL or delay could retrace the entire move.
+The **10Y Treasury at ~4.68%** is the wild card that trumps all others. If rates continue climbing back toward 4.75% and beyond, the entire sector's valuation framework shifts. Healthcare's 29.5x P/E is only justified if the risk-free rate is 4.5% or lower. At 5%, the sector's duration risk becomes acute — not just for biotech (XBI), but for GLP-1 growth (LLY 39.8x) and even defensive pharma. The second wild card: **NVO's Aug 8 print**. If the market's most battered large-cap pharma name can't stabilize, the GLP-1 narrative becomes a Lilly monopoly story — which is bullish for LLY but bearish for sector breadth. The third wild card: **REGN's August FDA decision on garetosmab (FOP)**. A +16% move into a binary event is dangerous — approval could send it to $850+, but a CRL or delay could retrace the entire move.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The 10Y broke to 4.745% — a fresh 52-week high. That is a regime shift for biotech discount rates, and I am acting on it. I am maintaining biotech/XBI at underweight while staying neutral on large-cap pharma. The bifurcation is now a canyon: BMY +5.19% and NVO -3.47% in the same week, same macro. The market is separating cash-flow compounders from structurally impaired franchises. BMY's blowout and raised guidance confirm that pharma breadth is real, not just a JNJ story. I am adding selectively to BMY on strength — yes, chasing, but with a tight stop. The Medicare squeeze remains scheduled, not sudden — cycle 2 hits Ozempic/Wegovy in 2027, cycle 3 prices land November 30. I trade the calendar I have, not the one I fear. But I fear the 10Y at 5% more than I fear Medicare negotiation. LLY's Aug 6 print is the next binary event for the sector — the 12% weight means it moves XLV more than any other single name."*
+**Ophelia:** *"The 10Y pulled back to ~4.68% — a modest -6 bps reprieve, but in a market starved for oxygen, it was enough to spark XBI +7.05%. I am upgrading biotech/XBI from underweight to neutral while maintaining large-cap pharma at neutral. The Aug 6 earnings cluster delivered: LLY's $23B quarter was a masterpiece, AMGN's $6.02 EPS beat was the surprise, and the broad pharma rally confirmed that earnings breadth is expanding beyond GLP-1. I am adding selectively to AMGN on the MariTide Phase 3 acceleration — this is the obesity third horse, and the market is just starting to price it. I am trimming some LLY into strength — yes, the quarter was spectacular, but at 39.8x P/E in a 4.7% rate world, the margin for error is thin. The Medicare squeeze remains scheduled, not sudden — cycle 2 hits Ozempic/Wegovy in 2027, cycle 3 prices land November 30. I trade the calendar I have. But I fear the 10Y re-testing 4.75% more than I fear Medicare negotiation. NVO's Aug 8 print is the next binary event — if the Danish giant can't stabilize share loss, the GLP-1 story becomes a Lilly monopoly, which is bullish for LLY but bearish for sector breadth."*
 
-**Marky:** *"The breakout setup from three weeks ago is still valid. XLV closed at $162.55, consolidating the +9.3% three-week move with contracting volume — that is accumulation, not distribution. The 52W high at $165.61 is 1.9% away, and I'm watching it like a hawk. A weekly close above $165.61 opens $170–172. The risk line is $157.25 — lose it and the double-top thesis re-activates. BMY and REGN are the strongest charts; NVO is broken to new lows. I'm long BMY calls and XLV calls above $165. I'm short NVO vs. LLY pair. The tape says rotation money is sticky — but it is also selective. The 10Y at 4.75% is the ceiling on how far this rally can run."*
+**Marky:** *"The breakout setup from four weeks ago is alive and strengthening. XLV closed at $165.68, grinding +1.92% on expanding volume into Thursday's new 52W high attempt at $166.12. The 52W high at $168.53 is 1.7% away, and I'm watching it like a hawk. A weekly close above $168.53 opens $172–175. The risk line is $160.00 — lose it and the consolidation thesis re-activates. AMGN and PFE are the strongest charts this week; UNH and ABBV are the laggards. I'm long AMGN calls and XLV calls above $168. I'm flat NVO — no position in a value trap until it proves otherwise. The XBI +7.05% week is the signal under the noise: when biotech catches a bid, the entire sector's ceiling rises. But this is a relief rally, not a regime change. The 10Y at 4.68% is the fence — stay below it, and the rally extends. Break back above 4.75%, and XBI gives back the entire move."*
 
-**Cecil:** *"The garden had a spectacular harvest this week. BMY was the tomato plant that finally produced — +5.19% on a blowout earnings print, new 52W high, and a guidance raise that says the growth portfolio is real. I am upgrading BMY to 'heavy planting' — this is no longer a value trap; it is a dividend grower with a growth kicker. REGN was the surprise zucchini — +16.25% in a week with no obvious headline, which makes this old gardener nervous. Chasing a +16% move into a binary FDA event is not my style. I am trimming some REGN into strength. JNJ and ABT held their ground, still earning their multiples. Pfizer's +1.92% week and intact $0.43 dividend is a small green shoot — the 6.9% yield is safe for now, but the payout ratio at 130% keeps me cautious. NVO is the blighted crop — new 52W low, structural impairment fears, and a yield that rose because the price fell, not because the dividend grew. I am staying away. Rule 3 still applies: a great sector at the wrong price is a bad investment. But this week, BMY proved the price was right."*
+**Cecil:** *"The garden had a bountiful harvest this week. LLY was the prize-winning pumpkin — $23 billion in Q2 revenue, Mounjaro growing 91%, and a guidance raise that says the growth engine is still accelerating. I am maintaining my 'heavy planting' in LLY but not adding — at 39.8x P/E, this pumpkin is priced for perfection. AMGN was the surprise tomato — +6.70% on a blowout earnings print and the MariTide Phase 3 acceleration. I am upgrading AMGN to 'heavy planting' — this is the obesity third horse, and the market is just waking up to it. PFE's +7.00% week and 6.4% yield is a small green shoot that turned into a healthy vine — the value bid is returning. DHR's +5.02% stealth recovery is the zucchini I didn't see coming — China stabilization is real, and the life-science tools floor is forming. NVO is the blighted crop that won't heal — flat on the week, -26% from highs, and facing an Aug 8 earnings report that could make things worse. I am staying away. Rule 3 still applies: a great sector at the wrong price is a bad investment. But this week, AMGN proved the price was right, and PFE proved the yield was safe."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLV, LLY, UNH, JNJ, ABBV, PFE, TMO, MRK, ABT, AMGN, BMY, DHR, GILD, VRTX, REGN, NVO, XBI, ^TNX, EDIT, BEAM, SDGR, RCUS, OM live data (Jul 31, 2026 close)
+- Yahoo Finance: XLV, LLY, UNH, JNJ, ABBV, PFE, TMO, MRK, ABT, AMGN, BMY, DHR, GILD, VRTX, REGN, NVO, XBI, ^TNX, EDIT, BEAM, SDGR, RCUS, IOVA live data (Aug 7, 2026 close)
+- Eli Lilly Q2 2026 earnings release (Aug 6, 2026) — pharmexec.com / lilly.com
+- Amgen Q2 2026 earnings release and guidance update (Aug 6, 2026) — amgen.com
+- Regeneron Q2 2026 earnings release (Aug 6, 2026) — regeneron.com
+- Vertex Q2 2026 earnings release (Aug 6, 2026) — vrtx.com
 - Bristol Myers Squibb Q2 2026 earnings release (Jul 30, 2026) — bms.com
 - Merck Q2 2026 earnings release (Jul 29, 2026) — merck.com
 - Pfizer Q2 2026 earnings release (Jul 30, 2026) — pfizer.com
-- UnitedHealth Group Q2 2026 earnings release (Jul 16, 2026) — unitedhealthgroup.com
-- Johnson & Johnson Q2 2026 earnings release & presentation (Jul 16, 2026) — jnj.com / investor.jnj.com
-- Abbott Q2 2026 earnings release (Jul 16, 2026) — PR Newswire via Morningstar
-- Thermo Fisher Scientific Q2 2026 earnings (Jul 25, 2026) — thermofisher.com
-- Danaher Corporation Q2 2026 earnings (Jul 25, 2026) — danaher.com
+- Arcus Biosciences Q2 2026 earnings and pipeline update (Aug 6, 2026) — investors.arcusbio.com
+- Beam Therapeutics BEAM-101 EHA 2025 data presentation (Jun 13, 2025) — investors.beamtx.com
+- Editas Medicine EDIT-401 preclinical data and IND timeline (Nov 2025) — ir.editasmedicine.com
 - CMS / KFF / STAT: Medicare Drug Price Negotiation Program — cycle 2 (effective 2027), cycle 3 drug list (15 drugs, announced Jan 27, 2026; prices due Nov 30, 2026)
 - CMS: Medicare GLP-1 Bridge Program launch (July 1, 2026) — cms.gov
-- Reuters / Pharmaceutical Executive: oral GLP-1 (oral Wegovy, Foundayo) market shift reporting
-- BioPharma Dive: Wegovy HD FDA voucher approval (Mar 2026); Novo Nordisk US list-price cuts (Feb 2026)
-- FDA: drug approval calendar, pipeline tracker (RTTNews FDA Calendar, Jul 2026)
+- BioPharma Dive / FiercePharma: Trump administration GLP-1 pricing deals with Lilly and Novo (Nov 6, 2025)
+- STAT News: Novo Nordisk oral Wegovy pill approval and pricing (Dec 23, 2025)
+- Wells Fargo biopharma M&A target list (May 2024) — Iovance Biotherapeutics inclusion
+- FDA: drug approval calendar, pipeline tracker (RTTNews FDA Calendar, Aug 2026)
 - Evaluate Pharma: patent cliff database, pipeline valuations
 - PitchBook/NVCA: biotech venture capital funding data
-- Beam Therapeutics Q1 2026 earnings and pipeline updates — investors.beamtx.com
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-01*
+*Last updated by Saturday Research Crew: 2026-08-08*
 *Next update: Every Saturday 10:39 AM ET*
 *Data sources: Yahoo Finance, CMS, FDA, market data feeds*
