@@ -10,20 +10,22 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $50.43 | ~$51.26 | **-1.6%** |
+| Price | $52.86 | ~$50.43 | **+4.8%** |
 | 52W Range | $42.03 – $54.14 | — | — |
 | AUM | ~$8.2B | — | — |
-| YTD Return | **+10.2%** | — | — |
-| 1Y Return | ~+18.4% | — | — |
-| P/E Ratio | ~26.0 | — | — |
-| Dividend Yield | ~1.67% | — | — |
+| YTD Return | **+15.5%** | — | — |
+| 1Y Return | ~+23.2% | — | — |
+| P/E Ratio | ~25.9 | — | — |
+| Dividend Yield | ~1.68% | — | — |
 | Beta | ~1.0–1.1 | — | — |
 | Total Holdings | 27 | — | — |
 | Avg Daily Volume | ~11.0M shares | — | — |
 
-**Marky Tape Read:** XLB closed Friday at $50.43 — down -1.6% on the week, slipping further below the 50D MA ($50.99) for the third consecutive week. The ETF remains above its 200D MA ($48.62), but the structure is deteriorating: RSI at 48.9 is neutral-to-soft, volume is running ~11M, and the 52W high of $54.14 (set in late February) is now $3.71 away. The week carved a roughly $49.85–$51.10 range. The 200D MA at $48.62 is the last major structural support before a test of the June lows near $47. Reclaiming $51.00 with volume >12M would repair the damage, but internals are split — steel and select chemicals are working, while construction materials and ag chemicals are breaking down. This is not a monolithic sector; it is a stock-picker's tape inside a DXY-regime-change week.
+**Marky Tape Read:** XLB closed Friday at $52.86 — up +4.8% on the week, reclaiming the 50D MA ($51.20) with authority and carving its best weekly gain since the spring. The ETF is now just $1.28 below its 52W high of $54.14 (set in late February), and the structure has flipped from deteriorating to constructive. RSI at 58.2 is neutral-to-firm — not overbought, with room to run. Volume ran ~11M, consistent with the norm. The week carved a roughly $51.00–$53.15 range. Reclaiming $53.15 with volume >12M opens a test of the 52W high. The internals were broad and green: 14 of 16 tracked names finished positive, with only DOW (-1.8%) in the red. Gold miners, copper plays, steel, and chemicals all worked. This was a risk-on, DXY-tailwind, rate-relief rally across the entire sector complex.
 
-**Ophelia Macro Read:** The restriction is **LIFTED.** DXY closed Friday at **99.80**, decisively below the sacred 101 line for the first time in two weeks. After snapping above 101 last week on hawkish Fed repricing and Iran safe-haven bids, the dollar has retreated on softer July economic data and fading geopolitical premium as Hormuz traffic shows signs of normalization. The embargo on commodity longs is lifted immediately — no vote, no debate. This is the single most important development for the sector this week. Two additional tailwinds: (1) WTI cooled **-5.2%** to ~$84.67/bbl — the $90 psychological crisis line has not been tested, and the inflation-rearming scare is fading; (2) copper firmed +1.9% to $6.44/lb as the DXY headwind reversed. The 10Y yield punched to **4.74%**, a fresh multi-month high, which is the one cloud on the horizon — restrictive rates still compress industrial capex. But for commodity sentiment, DXY < 101 is the trump card. Above 101 = headwind. Below 101 = tailwind. We are now in tailwind territory.
+**Ophelia Macro Read:** The restriction remains **LIFTED** — and the tailwind is strengthening. DXY closed Friday at **99.60**, down from 99.80 last week and now a full 1.4 points below the sacred 101 line. The driver was the disastrous July jobs report: nonfarm payrolls **unexpectedly fell by 23,000**, with prior months revised down by a combined 103,000. The unemployment rate ticked down to 4.1% — but for the wrong reasons (labor force participation dropped). September Fed hike odds collapsed from ~58% to ~42%, and the market repriced the entire rate curve lower. For Materials, this is a three-part gift: (1) DXY < 101 = commodity tailwind intensifies; (2) 10Y yield dropped **-9 bps to 4.65%** = rate-sensitive construction materials and housing chemicals breathe; (3) oil crashed another **-9.1% to ~$77.08/bbl** = chemical feedstock costs collapse. The only cloud: the jobs data is so bad that recession fears are percolating. But for now, the market is trading "bad news = no hikes = buy commodities" — and XLB is the beneficiary.
+
+**The Gold Explosion:** Gold broke out violently this week, surging **+$297/oz (+7.3%)** to close at **$4,346/oz** — the biggest weekly gain in months. The driver was the weak jobs report crushing real yields, the DXY staying down, and safe-haven bids returning as recession chatter builds. For NEM, this is not a gentle tailwind — it is a hurricane. The stock exploded **+18.5%** to $112.98, now just 16% below its 52W high. At ~14x P/E with $4,300+ gold, the value case is undeniable.
 
 ---
 
@@ -31,62 +33,64 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LIN | Linde | ~17% | $478.38 | **-6.62%** | $548.20 | $387.78 | 1.26% | 30.9 | 🔴 |
-| 2 | SHW | Sherwin-Williams | ~6% | $340.85 | **+7.35%** | $379.65 | $289.86 | 0.94% | 31.4 | 🔥 |
-| 3 | FCX | Freeport-McMoRan | ~5% | $62.63 | +0.05% | $72.28 | $35.15 | 0.96% | 30.7 | ⚡ |
-| 4 | APD | Air Products | ~5% | $294.89 | -1.00% | $314.87 | $229.11 | 2.46% | 20.5 | ⚡ |
-| 5 | NEM | Newmont | ~4% | $93.71 | +0.56% | $134.88 | $63.13 | 1.11% | 11.8 | ⚡ |
-| 6 | ECL | Ecolab | ~4% | $277.63 | +3.30% | $309.27 | $243.15 | 1.05% | 37.3 | 🔥 |
-| 7 | NUE | Nucor | ~3% | $257.29 | **+3.93%** | $270.90 | $131.32 | 0.87% | 20.5 | 🔥 |
-| 8 | DD | DuPont | ~3% | $137.00 | -0.51% | $157.98 | $87.26 | 1.75% | 120.2* | ⚡ |
-| 9 | VMC | Vulcan Materials | ~3% | $268.57 | -3.98% | $331.09 | $252.35 | 0.77% | 31.6 | 🔴 |
-| 10 | DOW | Dow Inc | ~2% | $30.29 | +1.51% | $42.74 | $20.40 | **4.62%** | 16.4 | 🔥 |
-| 11 | PPG | PPG Industries | ~2% | $110.52 | -4.72% | $133.43 | $93.39 | 2.68% | 15.9 | 🔴 |
-| 12 | CTVA | Corteva | ~2% | $78.71 | **-11.81%** | $90.97 | $60.53 | 0.91% | 47.7 | 🔴 |
-| 13 | ALB | Albemarle | ~1% | $117.64 | +2.43% | $221.00 | $66.67 | 1.39% | 9.4 | ⚡ |
-| 14 | MLM | Martin Marietta | ~1% | $525.14 | **-6.16%** | $710.97 | $523.48 | 0.63% | 34.1 | 🔴 |
-| 15 | IFF | Int'l Flavors | ~1% | $79.22 | +4.32% | $84.45 | $59.14 | 2.02% | 24.5 | 🔥 |
-| 16 | CLF | Cleveland-Cliffs | ~1% | $11.52 | -3.44% | $16.70 | $7.73 | — | 22.7 | ⚡ |
+| 1 | LIN | Linde | ~17% | $489.98 | **+1.98%** | $548.20 | $387.78 | 1.31% | 31.7 | ⚡ |
+| 2 | SHW | Sherwin-Williams | ~6% | $369.73 | **+4.38%** | $379.65 | $289.86 | 0.87% | 34.1 | 🔥 |
+| 3 | FCX | Freeport-McMoRan | ~5% | $69.62 | **+9.40%** | $72.28 | $35.15 | 0.86% | 34.1 | 🔥 |
+| 4 | APD | Air Products | ~5% | $303.44 | **+3.58%** | $314.87 | $229.11 | 2.39% | N/M | 🔥 |
+| 5 | NEM | Newmont | ~4% | $112.98 | **+18.46%** | $134.88 | $67.11 | 0.92% | 14.2 | 🔥 |
+| 6 | ECL | Ecolab | ~4% | $285.17 | **+2.05%** | $309.27 | $243.15 | 1.02% | 38.3 | ⚡ |
+| 7 | NUE | Nucor | ~3% | $272.63 | **+4.34%** | $280.11 | $131.32 | 0.82% | 21.7 | 🔥 |
+| 8 | DD | DuPont | ~3% | $142.47 | +0.84% | $157.98 | $87.26 | 1.68% | 61.7* | ⚡ |
+| 9 | VMC | Vulcan Materials | ~3% | $284.69 | +0.39% | $331.09 | $252.35 | 0.73% | 33.6 | ⚡ |
+| 10 | DOW | Dow Inc | ~2% | $29.34 | **-1.84%** | $42.74 | $20.40 | **4.77%** | N/M | ⚡ |
+| 11 | PPG | PPG Industries | ~2% | $119.72 | **+5.01%** | $133.43 | $93.39 | 2.47% | 17.2 | 🔥 |
+| 12 | CTVA | Corteva | ~2% | $76.83 | +1.04% | $90.97 | $60.53 | 0.94% | 46.6 | ⚡ |
+| 13 | ALB | Albemarle | ~1% | $131.11 | **+10.45%** | $221.00 | $71.25 | 1.25% | 468.3* | 🔥 |
+| 14 | MLM | Martin Marietta | ~1% | $548.57 | +1.16% | $710.97 | $523.48 | 0.61% | 35.7 | ⚡ |
+| 15 | IFF | Int'l Flavors | ~1% | $85.89 | **+6.59%** | $89.32 | $59.14 | 1.86% | N/M | 🔥 |
+| 16 | CLF | Cleveland-Cliffs | ~1% | $12.26 | **+9.27%** | $16.70 | $7.73 | — | N/M | 🔥 |
 
 > 🔥 = Strong momentum / earnings beat | ⚡ = Neutral / stable | 🔴 = Crash / broken / earnings miss
 
-**Sector Bifurcation:** Materials is a **three-headed beast** — and each head is telling a different story:
+**Sector Bifurcation:** Materials is a **three-headed beast** — and this week, all three heads were eating:
 
-1. **Chemicals & Gases** (LIN, APD, DOW, PPG, SHW, ECL, CTVA, IFF, DD) — the largest group, driven by industrial demand, agriculture, and specialty chemicals
-2. **Mining & Metals** (FCX, NEM, NUE, CLF, ALB) — copper, gold, steel, lithium — the commodity cycle
-3. **Construction Materials** (VMC, MLM) — aggregates for infrastructure and housing
+1. **Chemicals & Gases** (LIN, APD, DOW, PPG, SHW, ECL, CTVA, IFF, DD) — industrial demand steady, feedstock costs falling with oil, DXY tailwind on global pricing
+2. **Mining & Metals** (FCX, NEM, NUE, CLF, ALB) — copper firming, gold exploding, steel grinding higher, lithium rebounding
+3. **Construction Materials** (VMC, MLM) — rate relief from the 10Y drop helps, but housing starts remain sluggish
 
-**The LIN Mystery:** Linde delivered the week's most puzzling move: -6.6% to $478.38, crashing through its 50D MA ($514) and sitting just 1.4% above its 200D MA ($471.90). RSI at 23.6 is deeply oversold — the most technically stretched name in the sector. There was no obvious catalyst (earnings are not until next week), which makes the drop smell like institutional rotation out of industrial gases or concern about European hydrogen project delays. At 30.9x P/E, LIN had become a crowded long; this week the crowd rushed for the exits. The stock is now 13% below its $548.20 high — a full-blown correction inside three months. The only silver lining: oversold bounces from RSI < 25 are historically reliable, and DXY below 101 removes a key headwind for the global industrial gas pricing story.
+**The NEM Gold Rush:** Newmont delivered the week's most explosive move: **+18.5% to $112.98**, a $17.27 weekly gain that added ~$20B in market cap. The catalyst was the gold spike to $4,346/oz — the highest level in the dataset and a +7.3% weekly surge. At ~14x P/E, NEM is no longer just the sector's cheapest large-cap — it is a levered play on a gold bull market reawakening. The stock is now just 16% below its $134.88 high, and RSI at 62.5 has room before overbought. With real yields dropping on weak jobs data and the DXY pinned below 101, the gold thesis has reasserted itself with force.
 
-**The CTVA Collapse:** Corteva cratered -11.8% to $78.71 — the sector's worst performer. The stock broke its 50D MA ($81.97) decisively and is now testing the $78 support zone. The driver appears to be a Q2 earnings miss or guidance cut tied to weak North American planting conditions and fertilizer pricing pressure. At 47.7x P/E, the market was pricing a growth story; when that story cracked, the multiple compressed violently. The 200D MA at $74.99 is the next test. For a sector heavyweight, this is a damage-limitation exercise, not a buying opportunity yet.
+**The ALB Lithium Resurrection:** Albemarle reported Q2 on Thursday (Aug 6) and delivered a **massive beat**. Net income of $480M vs. $22.9M prior year. Adjusted EPS of **$3.75** vs. $0.11 prior year. Sales of $1.74B up **31% YoY**. Adjusted EBITDA of $858M up **155%**. Energy Storage segment sales surged **78%** to $1.28B on higher lithium pricing ($19.53/kg LCE vs. $12.17 prior year). The stock responded with a **+10.5%** weekly gain to $131.11 — now just 41% below its 52W high, a dramatic recovery from the 68% drawdown. At forward PE ~11x, ALB is no longer a deep-value trap — it is a coiled spring that is beginning to uncoil.
 
-**The NUE Grind:** Nucor continues to be the sector's unstoppable force: +3.9% this week to $257.29, now +52.8% YTD and +88% over 1Y. The stock is riding a wave of tariff-shielded steel pricing, infrastructure demand, and reshoring momentum. RSI at 71.1 is technically overbought, but overbought can stay overbought in a secular uptrend. At 20.5x P/E, the valuation is no longer cheap — but it is not egregious for a cyclical compounder in a structural bull market. The Q2 beat and raised Q3 guidance (reported last week) continue to pay dividends in price action.
+**The LIN Recovery:** Linde reported Q2 on Aug 1 (last week) and delivered a **solid beat**: EPS of $3.73 (up 8% YoY), adjusted EPS of $4.09 (up 6%), sales of $8.5B up 3%, and adjusted operating margin of **30.1%** (up 80 bps). Full-year guidance was maintained at $16.30–$16.50. The stock recovered **+2.0%** this week to $489.98, bouncing off the deeply oversold levels from the prior week's -6.6% crash. RSI has rebounded to 38.5 — still not overbought, with room to recover toward the $500 psychological level. The $7.1B sale-of-gas backlog remains the structural bull case.
 
-**The SHW Rebound:** Sherwin-Williams rebounded +7.4% to $340.85 — a sharp recovery from last week's -6.3% post-earnings shellacking. The stock reclaimed its 200D MA ($331.49) and is now back above the $340 psychological level. This looks like a relief rally: the bad news (weak paint demand, oil-linked costs) was priced in, and the DXY drop below 101 helped repricing. RSI at 56 is neutral. The stock remains 10% below its $379.65 high — the recovery is partial, not complete.
+**The FCX Copper Grind:** Freeport-McMoRan added **+9.4%** to $69.62, now just 3.7% below its 52W high of $72.28. The driver: copper firmed to ~$6.51/lb on DXY tailwinds, and the structural EV/data center demand case continues to build. FCX is now +56% over 1Y and is the single best large-cap proxy for the electrification of everything. RSI at 64.5 is warm but not flashing overbought in a secular uptrend.
 
-**The Construction Materials Breakdown:** VMC (-4.0%) and MLM (-6.2%) had their worst week in months. Both stocks are now below their 200D MAs — a structural warning sign. MLM at $525.14 is 26% below its $710.97 high, with RSI at 35.1 approaching oversold. VMC at $268.57 is 19% below its $331.09 high. The driver: rising mortgage rates (30Y at ~6.6%) are freezing housing starts, and the 10Y at 4.74% is raising the discount rate on every infrastructure project's NPV. These are late-cycle, rate-sensitive stocks being repriced for a higher-for-longer rate environment.
+**The NUE Juggernaut Continues:** Nucor added another **+4.3%** to $272.63, now **+57.2% YTD** and just 2.7% below its fresh 52W high of $280.11 (set this week). The stock printed a new high on Wednesday before pulling back slightly. Tariff-shielded steel pricing, infrastructure demand, and reshoring momentum remain the structural drivers. RSI at 68.5 is approaching overbought, but momentum is a force of nature in secular uptrends. At ~22x P/E, valuation is full but not egregious for a cyclical compounder.
 
-**The Copper & Gold Tape:** FCX was flat (+0.1%) at $62.63, digesting the prior week's +8.8% earnings spike. The stock holds above its 200D MA ($56.86) and the structural demand case (EVs, data centers, grid electrification) remains intact. Copper at $6.44/lb, +1.9% on the week, got a DXY tailwind. NEM eked out +0.6% to $93.71 — gold at $4,049 is soft but the safe-haven bid has not fully evaporated. At 11.8x P/E, NEM remains the sector's cheapest large-cap on traditional metrics.
+**The Chemicals Rally:** SHW (+4.4% to $369.73) continued its rebound from the post-earnings shellacking two weeks ago, now just 2.6% below its 52W high. PPG (+5.0% to $119.72) joined the party as oil's crash to $77 reduces coatings input costs. IFF (+6.6% to $85.89) broke out to new 52W highs — the flavor/fragrance recovery is real. APD (+3.6% to $303.44) reported alongside LIN on Aug 1 and held gains. The only chemicals laggard: DOW (-1.8% to $29.34), which continues to trade like a bond proxy with its 4.77% yield.
 
-**The Lithium & Chemicals Story:** ALB at $117.64, +2.4% on the week, is trying to bottom after a brutal two-month slide from $170+. The DXY drop below 101 is a genuine tailwind for lithium sentiment, though the stock remains 47% below its 52W high. DOW at $30.29, +1.5%, continues to trade like a bond proxy — the 4.62% yield is the floor. PPG at $110.52, -4.7%, is caught in the coatings downdraft alongside SHW's earlier weakness. IFF at $79.22, +4.3%, is the chemicals outlier — possibly benefiting from flavor/fragrance demand recovery.
+**The Construction Materials Breathe:** VMC (+0.4% to $284.69) and MLM (+1.2% to $548.57) finally stopped bleeding as the 10Y yield's -9 bps drop to 4.65% provided rate relief. Both stocks remain below their 200D MAs technically (VMC 200D ~$288, MLM 200D ~$570), but the downward momentum has stalled. Housing starts remain sluggish at 6.5%+ mortgages, but the discount rate pressure has eased. These are still late-cycle, rate-sensitive stocks — but the worst of the rate spike appears behind them for now.
 
-**Cecil Fundamental Read:** NEM at ~12x with $4,000+ gold is still the most interesting number in this table — but gold is not compounding, it is resting. DOW at ~16x and a 4.62% yield remains the most honest income story. NUE at ~20x after a +53% YTD run is no longer cheap, but momentum is a force of nature. ALB at 9.4x is the classic deep-value trap or spring-loaded coiled spring — the DXY drop below 101 makes the spring a little tighter. LIN at 30.9x after a -6.6% week proves that even quality industrial gas stories are not immune to rotation. CTVA at 47.7x just proved that ag-chemical growth stories can break when planting conditions disappoint. I added nothing this week, but I am watching LIN into the $470–480 zone for a potential oversold entry.
+**Cecil Fundamental Read:** NEM at ~14x with $4,300+ gold is now the most interesting number in this table — and the gold move this week vindicated the patience. ALB's Q2 beat ($3.75 adjusted EPS vs. $0.11 prior year) transforms the lithium story from "value trap" to "earnings recovery." At forward ~11x, ALB is no longer a speculation — it is a calculation. NUE at ~22x after a +57% YTD run is full, but momentum is not my enemy. DOW's 4.77% yield remains the most honest income story in the sector. LIN at ~32x after a solid Q2 beat proves that quality industrial gas stories recover fast from oversold conditions. I added ALB this week on the earnings evidence — the lithium spring is uncoiling. Caution on the jobs data: recession is not a friend of industrial volumes, but for now, the "no hike" trade is dominating the tape.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *The Captains flagged that our briefs track mega-caps only. This section sources live sub-$5B names in the sector — no mega-caps repackaged. Caps are verified via Yahoo Finance; if a candidate graduates above $5B, it is swapped and noted.*
+> *The Captains flagged that our briefs track mega-caps only. This section sources live sub-$5B names in the sector — no mega-caps repackaged. Caps are verified via Yahoo Finance; if a candidate graduated above $5B, it is swapped and noted.*
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | P/E | Signal | Council Read |
 |---|---|---|---|---|---|---|---|
-| KALU | Kaiser Aluminum | $2.61B | $159.68 | -2.14% | 11.8 | ⚡ | Aerospace/alumina rollup story; DXY below 101 helps export pricing. Still 18% below 52W high — value play if aerospace cycle holds. |
-| CENX | Century Aluminum | $4.43B | $44.77 | -3.12% | 13.3 | ⚡ | Primary aluminum producer leveraged to LME prices; -36% from 52W high but DXY tailwind + China stimulus rumors could spark a rally. High beta commodity proxy. |
-| KRO | Kronos Worldwide | $0.69B | $6.02 | -8.93% | 15.8 | 🔴 | Titanium dioxide pigment producer; caught in industrial demand slowdown. Weak quarterly guidance likely the driver. Cheap at 15.8x but trend is hostile. |
-| MERC | Mercer International | $0.04B | $0.63 | -5.97% | N/M | 🔴 | Pulp/paper micro-cap in distress; down 68% YTD. Balance sheet risk rising. Avoid until recapitalization clarity. |
-| SXC | SunCoke Energy | $0.72B | $8.48 | -4.93% | N/M | ⚡ | Coke producer for steel blast furnaces; tied to CLF/NUE steel cycle. High yield (~5.7%) but commodity-cyclical risk. |
+| KALU | Kaiser Aluminum | $3.02B | $184.75 | **+12.73%** | 13.7 | 🔥 | Aerospace/alumina rollup; DXY below 101 + rate relief sparked a breakout. Now just 6% below 52W high. Momentum play if aerospace cycle holds. |
+| HCC | Warrior Met Coal | $4.86B | $91.97 | **+14.25%** | 22.1 | 🔥 | **NEW ENTRY** — metallurgical coal producer leveraged to global steel/NUE cycle. Sub-$5B verified. Rate relief + steel demand = coiled spring uncoiling. |
+| KRO | Kronos Worldwide | $0.99B | $8.59 | **+39.67%** | N/M | 🔥 | Titanium dioxide pigment producer; massive short-covering rally on no obvious headline. Likely margin recovery speculation. Thin, volatile — not for size. |
+| MERC | Mercer International | $0.04B | $0.59 | -11.94% | N/M | 🔴 | Pulp/paper micro-cap in distress; down 68% YTD. Balance sheet risk rising. Avoid until recapitalization clarity. |
+| SXC | SunCoke Energy | $0.80B | $9.39 | **+11.65%** | N/M | 🔥 | Coke producer for steel blast furnaces; tied to CLF/NUE steel cycle. High yield (~5.1%) but commodity-cyclical risk. |
 
-**Small-Cap Sector Read:** The sub-$5B materials complex had a rough week — every name except none finished green. KALU and CENX, the two aluminum plays, both sold off despite the DXY drop, suggesting industrial demand concerns are outweighing currency tailwinds. KRO's -8.9% drop on no obvious headline smells like a guidance leak or margin compression fear. MERC at $0.63 is approaching penny-stock territory and is effectively uninvestable until it raises capital. SXC's correlation to the steel cycle makes it a leveraged play on NUE/CLF — when steel works, SXC works; when steel pauses, SXC falls harder. The only real opportunity here is CENX if the DXY-stimulus combo ignites aluminum, but patience is required.
+**Rotation Note:** CENX ($5.07B mcap) has been **promoted out** of this table as it graduated above the $5B threshold on the +13.3% weekly rally. It is replaced by HCC (Warrior Met Coal), verified sub-$5B at $4.86B.
+
+**Small-Cap Sector Read:** The sub-$5B materials complex had its best week in months. KALU and HCC, the two aluminum/metallurgical plays, both surged double-digits on the DXY tailwind and steel cycle strength. KRO's +39.7% explosion smells like a short squeeze on margin recovery hopes — thin float, dangerous to chase. MERC continues its death spiral toward penny-stock territory. SXC's correlation to the steel cycle makes it a leveraged play on NUE/CLF — the +11.7% move tracks the steel tape. The real opportunity here is HCC: at 22x and tied to the met-coal export market, it is a direct derivative of NUE's steel pricing power with a fraction of the market cap.
 
 ---
 
@@ -94,18 +98,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $54.14 | Resistance — set late Feb 2026, untested since |
-| Near Resistance | $51.45 | July 17 high — first hurdle |
-| 50-Day MA | $50.99 | **Lost three weeks ago** — now ceiling, not floor |
-| Current Price | $50.43 | — |
-| Week Low | ~$49.85 | First support — Friday's floor |
-| 200-Day MA | $48.62 | Long-term trend support — bullish above |
-| Major Support | $46.00 | Psychological + prior consolidation |
+| 52W High | $54.14 | Resistance — set late Feb 2026, now just $1.28 away |
+| Near Resistance | $53.15 | Friday's high — first hurdle |
+| 50-Day MA | $51.20 | **Reclaimed this week** — now floor, not ceiling |
+| Current Price | $52.86 | — |
+| Week Low | ~$51.00 | First support — Monday's floor |
+| 200-Day MA | $48.82 | Long-term trend support — firmly bullish above |
+| Major Support | $47.00 | Psychological + prior consolidation |
 | Structural Low | $42.03 | 52W bottom |
 
-**Marky Setup Assessment:** XLB closed at $50.43, under the 50D MA for the third consecutive week. RSI at 48.9 is neutral-to-soft — not oversold enough to trigger a reliable bounce, not strong enough to call a reversal. The week carved a roughly $49.85–$51.10 range; a break of the low opens a run at the 200D MA near $48.62, roughly -3.5% below. A reclaim of $51.00 with volume >12M would repair the damage. The internals tell a split story: NUE (+3.9%), SHW (+7.4%), ECL (+3.3%), and IFF (+4.3%) worked, while LIN (-6.6%), CTVA (-11.8%), MLM (-6.2%), and PPG (-4.7%) broke. This is a stock-picker's tape, not a sector-wide move. The DXY drop below 101 is a macro tailwind, but the 10Y at 4.74% is a headwind — and for now, the headwind is winning inside the ETF.
+**Marky Setup Assessment:** XLB closed at $52.86, decisively back above the 50D MA for the first time in four weeks. RSI at 58.2 is neutral-to-firm — not oversold enough to trigger a bounce, but strong enough to call a reversal. The week carved a roughly $51.00–$53.15 range; a break above $53.15 opens a run at the 52W high of $54.14, roughly +2.4% above. A hold above $51.20 keeps the structure constructive. The internals tell a broad story: 14 of 16 names were green, with NEM (+18.5%), FCX (+9.4%), ALB (+10.5%), and CLF (+9.3%) leading. This is not a stock-picker's tape — it is a sector-wide move driven by macro tailwinds (DXY < 101, gold spike, rate relief).
 
-**The relative strength story:** XLB +10.2% YTD vs. SPY ~+13% — the underperformance gap remains. Materials are no longer keeping pace with the broad market; the sector is being carried by idiosyncratic stories (NUE steel, SHW rebound, DOW dividend) while the broad commodity complex digests the DXY regime change.
+**The relative strength story:** XLB +15.5% YTD vs. SPY ~+14% — the sector has now caught up to the broad market after lagging for months. Materials are no longer underperforming; the DXY tailwind and commodity rally have put the sector back in the race.
 
 ---
 
@@ -113,30 +117,33 @@
 
 | Factor | Level | Implication for XLB |
 |---|---|---|
-| DXY | **99.80** | **BELOW 101 — RESTRICTION LIFTED.** Ophelia's embargo on commodity longs is revoked. Tailwind for commodity prices and emerging-market demand. |
-| 10Y Treasury | **4.74%** | Multi-month high. +6 bps WoW. Restrictive — compresses industrial capex and raises discount rates on cyclicals. |
-| Fed Policy | 3.50–3.75% | **Hawkish hold.** September hike odds have softened with DXY retreat and oil cooling. Dot plot still shows 9 of 18 officials favoring ≥1 hike. |
-| Copper | $6.44/lb | +1.9% WoW. DXY tailwind restored; structural EV/DC demand intact. |
-| Gold | $4,049.10/oz | -0.5% WoW. Softening as Iran safe-haven bid fades; DXY drop not enough to rekindle rally. |
-| Silver | ~$56.00/oz | Following gold lower. |
-| Lithium | CNY ~152,000/t | Recovery intact but sentiment fragile. ALB still 47% below 52W high. |
-| Steel (US) | Tariff-shielded | NUE +52.8% YTD; domestic pricing power remains strong. |
+| DXY | **99.60** | **BELOW 101 — RESTRICTION STAYS LIFTED.** Ophelia's embargo on commodity longs remains revoked. Tailwind intensifying. |
+| 10Y Treasury | **4.65%** | Down -9 bps WoW. Rate relief for construction materials and housing-exposed chemicals. |
+| Fed Policy | 3.50–3.75% | **Hawkish hold, but hike odds collapsing.** July jobs disaster (-23K) pushed September hike odds from 58% to 42%. |
+| Copper | $6.51/lb | +1.1% WoW. DXY tailwind + structural EV/DC demand intact. |
+| Gold | **$4,346/oz** | **+7.3% WoW.** Biggest weekly gain in months. Weak jobs → lower real yields → gold rush. |
+| Silver | ~$58.00/oz | Following gold higher. |
+| Lithium | ~$19.53/kg LCE (ALB realized) | ALB's realized price up 60.5% YoY. Recovery intact, sentiment improving. |
+| Steel (US) | Tariff-shielded | NUE +57.2% YTD; domestic pricing power remains strong. |
 | Steel (China) | CNY ~3,100/t rebar | Mill losses widening. Overcapacity unresolved. |
-| Iron Ore | ~$100/t | Hovering near $100. China property weakness continues. |
-| Crude Oil | ~$84.67/bbl | **-5.2% this week.** Cooling from Iran highs; $90 crisis line avoided. Inflation pressure easing. |
+| Iron Ore | ~$98/t | Softening on China property weakness. |
+| Crude Oil | **~$77.08/bbl** | **-9.1% this week.** Chemical feedstock costs collapsing. Inflation pressure evaporating. |
 | China GDP | 4.3% Q2 y/y | Below target. Stimulus rumors persist but no concrete package announced. |
 | China Property | In crisis | Still dragging bulk demand. No rescue package yet. |
 | EV/Storage Demand | Structural | Supports lithium floor; copper's long-term demand case. |
 | AI Data Centers | Meta-scale demand | Copper + electrical infrastructure demand keeps building. |
-| Infrastructure/Reshoring | Accelerating | Supports NUE, VMC, MLM domestic volumes — but rate pressure now biting. |
+| Infrastructure/Reshoring | Accelerating | Supports NUE, VMC, MLM domestic volumes — rate relief helps now. |
+| July Jobs Report | **-23K NFP** | Disaster. Recession fears rising, but "bad news = no hikes" trade dominating. |
 
-**Ophelia Verdict:** My rulebook has been vindicated again. Last week I reinstated the restriction when DXY snapped above 101. This week DXY retreated to 99.80 — decisively below the line — and the embargo is lifted. The driver was softer U.S. economic data (July PMIs, consumer sentiment) and a partial normalization of Hormuz shipping flows that reduced the safe-haven USD bid. For Materials, this is not a gentle breeze — it is a tailwind. Every commodity price, every emerging-market demand forecast, and every mining margin model just got repriced higher.
+**Ophelia Verdict:** My rulebook has been vindicated for a third consecutive week. DXY at 99.60 is not just below 101 — it is grinding lower, and the commodity tailwind is strengthening. The July jobs report was a genuine macro shock: -23,000 payrolls, massive downward revisions, and labor force participation dropping. The market's reaction? Buy commodities, buy gold, buy rate-sensitive cyclicals. The logic is twisted but consistent: bad jobs data → no Fed hikes → lower real yields → weaker dollar → higher commodity prices. I do not argue with the market's logic; I trade it.
 
-But I add a note of caution: the 10Y at 4.74% is a genuine headwind. Rate-sensitive construction materials (VMC, MLM) are breaking down because higher discount rates crush infrastructure project NPVs. The sector now faces a crosswind: DXY tailwind vs. 10Y headwind. The winners will be commodity-exposed names with pricing power (NUE, FCX) and global industrials with DXY-translated earnings (LIN, APD). The losers will be rate-sensitive domestic cyclicals (VMC, MLM) and housing-exposed chemicals (SHW, PPG).
+The three-part gift for Materials this week: (1) DXY down = commodity prices up; (2) 10Y down = discount rates down = construction materials breathe; (3) oil down = chemical feedstock costs collapse = margin expansion for coatings and plastics. The only risk is that the jobs data is *so* bad that recession fears override the "no hike" trade. But for now, the market is buying the dip in industrial activity because the Fed's put is being repriced closer.
 
-**The China Question:** Still the single biggest wildcard. Q2 GDP at 4.3% is below the target floor, property is still deflating, and Beijing's answer remains "weighing stimulus options." Until an actual package lands, treat every China-demand rally as a rental. But with DXY now below 101, a China stimulus announcement would hit commodity markets like a thunderbolt — iron ore, copper, and XLB would gap up overnight.
+**The Gold Question:** Gold at $4,346 is not just a safe-haven bid — it is a real-yield collapse trade. With the 10Y down 9 bps and inflation expectations sticky, real yields dropped, and gold responded with a +7.3% weekly surge. For NEM, this is the difference between a value stock and a momentum stock. I own NEM on the gold thesis, and this week paid dividends.
 
-**The Oil Question:** Oil's -5.2% retreat to $84.67 removes the stagflation scare that was building at $89. The September hike odds have softened accordingly. If oil holds below $85, the Fed has room to pause — and that is bullish for long-duration cyclicals. But if Hormuz tensions re-escalate, the spike could return quickly. The $90 line remains the crisis threshold.
+**The China Question:** Still the single biggest wildcard. Q2 GDP at 4.3% is below the target floor, property is still deflating, and Beijing's answer remains "weighing stimulus options." But with DXY now at 99.60, a China stimulus announcement would hit commodity markets like a thunderbolt. The setup is there; the catalyst is not. Until it lands, treat every China-demand rally as a rental — but size your rentals bigger when DXY is below 101.
+
+**The Oil Question:** Oil's -9.1% crash to $77 removes any remaining stagflation scare. The September hike odds have collapsed accordingly. If oil holds below $80, the Fed has genuine room to pause — and that is bullish for long-duration cyclicals. The $90 crisis line is now a distant memory.
 
 ---
 
@@ -144,89 +151,99 @@ But I add a note of caution: the 10Y at 4.74% is a genuine headwind. Rate-sensit
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Dollar Embargo Lifts — But Rates Bite Back
+### This Week's Story: The Everything Rally — Gold, Commodities, and Rate Relief
 
-XLB drifted -1.6% to close Friday at $50.43, but the flat headline hides the most consequential macro development of the month: **DXY dropped below 101**, lifting Ophelia's restriction on commodity longs after just one week of enforcement.
+XLB surged **+4.8%** to close Friday at $52.86 — its best weekly gain in months and a decisive reclaim of the 50D MA. The flat headline from last week (-1.6%) has been completely reversed, and the sector is now just $1.28 from its 52W high. The story of the week is not a single catalyst but a **three-part macro convergence** that hit Materials like a tailwind from three directions at once.
 
-**The Dollar Regime Change (Part II).** DXY closed at 99.80 on Friday — the first decisive break below 101 since the prior week's spike. The driver was a three-part cocktail in reverse: softer U.S. economic data (July manufacturing PMIs disappointed, consumer confidence slipped), partial normalization of Hormuz shipping flows (Chevron's bypass pipeline plans reduced the worst-case scenario premium), and profit-taking in the decade-high speculative USD longs that had built up. For Materials, this is a genuine tailwind. Every commodity contract priced in dollars just became cheaper for foreign buyers, and every emerging-market demand forecast just got a currency upgrade.
+**The DXY Tailwind Intensifies.** DXY closed at 99.60 on Friday — down another 20 bps from last week and now a full 1.4 points below the sacred 101 line. The driver was the disastrous July jobs report: nonfarm payrolls unexpectedly declined by 23,000, with May and June revised down by a combined 103,000. The unemployment rate ticked down to 4.1%, but only because labor force participation dropped. The market's instant reaction: sell the dollar, buy commodities. For Materials, this is not a gentle breeze — it is a strengthening tailwind. Every commodity contract priced in dollars just became cheaper for foreign buyers, and every emerging-market demand forecast just got a currency upgrade.
 
-**The Rate Spike.** The 10Y Treasury punched to 4.74% — a fresh multi-month high, up from 4.68% last week. The driver: the Fed's hawkish hold at the July meeting (no hike, but no dovish pivot either) plus persistent inflation anxiety from services-sector stickiness. For Materials, this is the offsetting headwind. Rate-sensitive construction materials (VMC, MLM) broke down this week because 4.74% raises the discount rate on every infrastructure project's NPV. Housing-exposed chemicals (SHW, PPG) remain under pressure because 6.6% mortgages freeze home turnover. The sector is now in a tug-of-war: DXY tailwind vs. 10Y headwind.
+**The Rate Relief.** The 10Y Treasury yield dropped **-9 bps to 4.65%** — its first meaningful decline in weeks. The driver: the jobs disaster crushed September hike odds from ~58% to ~42%, and the entire rate curve repriced lower. For Materials, this is genuine relief. Rate-sensitive construction materials (VMC, MLM) stopped bleeding as discount rate pressure eased. Housing-exposed chemicals (SHW, PPG) rallied as mortgage rates ticked down. And the 10Y at 4.65% is a far cry from the 4.75% 52W high that was threatening to break the sector two weeks ago.
 
-**The LIN Collapse.** Linde's -6.6% drop to $478.38 was the week's most puzzling move. There was no earnings report, no guidance cut, no obvious catalyst. The drop appears to be institutional rotation out of crowded industrial gas positions, possibly tied to concerns about European hydrogen project delays or margin compression in the European industrial complex. At RSI 23.6, LIN is now the most oversold name in the sector — historically, bounces from this level have been reliable within 1–2 weeks. But catching falling knives is Marky's game, not mine. The stock sits 1.4% above its 200D MA ($471.90) — a break below that level would open a much deeper correction.
+**The Gold Explosion.** Gold surged **+$297/oz (+7.3%)** to $4,346 — the biggest weekly gain in months and a level that reawakens the gold bull narrative. The driver: lower real yields (10Y down, inflation expectations sticky), continued DXY weakness, and safe-haven buying as recession chatter builds. Newmont (NEM) responded with an **+18.5%** weekly explosion to $112.98 — a $17+ move that added roughly $20B in market cap. At ~14x P/E with gold at $4,300+, NEM is no longer just a value play — it is a levered momentum trade on precious metals.
 
-**The CTVA Crash.** Corteva's -11.8% collapse to $78.71 was the sector's worst performer and a stark reminder that high-multiple ag-chemical stories are fragile. The driver appears to be a Q2 miss or guidance cut tied to weak North American planting conditions and fertilizer pricing pressure. The stock broke its 50D MA decisively and is now approaching the 200D MA at $74.99. At 47.7x P/E, CTVA was priced for perfection; when the growth story cracked, the multiple compressed violently.
+**The ALB Resurrection.** Albemarle reported Q2 on Thursday and delivered what may be the earnings beat of the season in Materials. Adjusted EPS of **$3.75** vs. $0.11 in the prior year. Sales of $1.74B up **31%**. Adjusted EBITDA of $858M up **155%**. Energy Storage segment sales surged **78%** on higher lithium pricing ($19.53/kg LCE, up 60.5% YoY). Management highlighted "resilient demand fundamentals across energy storage, electric vehicles, and semiconductors." The stock responded with a **+10.5%** weekly gain to $131.11. The lithium bear market that crushed ALB from $221 to $71 is officially over — the spring is uncoiling.
 
-**The NUE Juggernaut.** Nucor added another +3.9% to $257.29, now +52.8% YTD and just 5% below its 52W high. The stock is riding a structural wave: tariff-shielded steel pricing, infrastructure reshoring, and manufacturing onshoring. RSI at 71.1 is overbought, but overbought can stay overbought in a secular uptrend. The Q2 beat and raised Q3 guidance (reported two weeks ago) continue to pay dividends in price action. NUE is the single best proxy for the "America builds stuff" trade.
+**The LIN Recovery.** Linde reported Q2 on Aug 1 and delivered a clean beat: EPS $3.73 (up 8%), adjusted EPS $4.09 (up 6%), sales $8.5B up 3%, and adjusted operating margin of **30.1%** (up 80 bps). Full-year guidance was maintained at $16.30–$16.50. After the prior week's mystifying -6.6% crash, the stock recovered **+2.0%** to $489.98. The deeply oversold RSI (23.6) has rebounded to 38.5 — still not overbought, with room to recover toward $500. The $7.1B sale-of-gas backlog remains the structural bull case, and the DXY tailwind helps global pricing.
 
-**The SHW Rebound.** Sherwin-Williams bounced +7.4% to $340.85 — a sharp recovery from last week's -6.3% post-earnings shellacking. The move looks like a relief rally: bad news priced in, DXY tailwind helping, and short-covering on oversold conditions. The stock reclaimed its 200D MA but remains 10% below its 52W high. The housing market at 6.6% mortgages is still a headwind for paint demand, but the DXY drop and oil cooling remove two of the three negatives.
+**The FCX Copper Grind.** Freeport-McMoRan added **+9.4%** to $69.62, now just 3.7% below its 52W high. Copper firmed to ~$6.51/lb on DXY tailwinds, and the structural EV/data center demand case continues to compound. FCX is now +56% over 1Y and is the best large-cap proxy for the electrification trade. The stock is riding a wave that has nothing to do with this week's jobs report and everything to do with the decade-long buildout of EVs, data centers, and grid infrastructure.
 
-**The Construction Materials Breakdown.** VMC (-4.0%) and MLM (-6.2%) had their worst week in months. Both are now below their 200D MAs — a structural warning. The 10Y at 4.74% is raising financing costs for infrastructure projects, and housing starts remain sluggish. These are late-cycle, rate-sensitive stocks being repriced for a higher-for-longer environment. Until the 10Y retreats below 4.5%, construction materials are likely to underperform.
+**The NUE Juggernaut.** Nucor printed a fresh 52W high of $280.11 on Wednesday before settling at $272.63 for a **+4.3%** weekly gain. The stock is now **+57.2% YTD** and shows no signs of slowing. Tariff-shielded steel pricing, infrastructure reshoring, and manufacturing onshoring remain the structural drivers. RSI at 68.5 is warm but not overbought in a secular uptrend. The Q2 beat-and-raise from three weeks ago continues to pay dividends in price action.
 
-**The Bottom Line:** XLB is +10.2% YTD but below its 50D MA with mixed momentum. The DXY drop below 101 is a genuine tailwind, but the 10Y at 4.74% is an equally genuine headwind. The sector is splitting into two camps: commodity-exposed names with pricing power (NUE, FCX, NEM) and global industrials with DXY-translated earnings (APD, DOW) are working. Rate-sensitive domestic cyclicals (VMC, MLM) and housing-exposed chemicals (SHW, PPG) are not. Ophelia's rule is now active in reverse: DXY < 101 = commodity longs are permitted. But discipline still applies — own the winners, avoid the rate-sensitive losers, and watch the 10Y like a hawk.
+**The Chemicals Rally.** SHW (+4.4% to $369.73) continued its rebound and is now just 2.6% below its 52W high. PPG (+5.0% to $119.72) rallied as oil's crash to $77 reduces coatings input costs. IFF (+6.6% to $85.89) broke out to new 52W highs on flavor/fragrance demand recovery. APD (+3.6% to $303.44) held its post-earnings gains. The only laggard: DOW (-1.8% to $29.34), which continues to trade like a bond proxy with its 4.77% yield — defensive, not offensive.
+
+**The Construction Materials Breathe.** VMC (+0.4%) and MLM (+1.2%) finally stopped their bleeding as the 10Y drop provided rate relief. Both remain technically below their 200D MAs, but the downward momentum has stalled. Housing starts remain sluggish at ~6.5% mortgages, but the worst of the discount-rate spike appears behind them. These are still late-cycle, rate-sensitive stocks — but they are no longer in freefall.
+
+**The Bottom Line:** XLB is +15.5% YTD, back above its 50D MA, and just $1.28 from its 52W high. The DXY below 101 is a genuine tailwind, the 10Y drop to 4.65% is genuine relief, and gold's +7.3% explosion is a genuine catalyst for mining stocks. The sector is no longer splitting into winners and losers — it is rallying broadly, with only DOW (-1.8%) in the red among tracked names. Ophelia's rule remains active: DXY < 101 = commodity longs are permitted. But I add a note of caution: the jobs data was genuinely bad, and if recession fears escalate, industrial volumes will suffer. For now, trade the tape you have, not the tape you fear.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-| Company | Ticker | Date | Quarter | Key Metric to Watch |
+| Company | Ticker | Date | Quarter | Result / Key Metric to Watch |
 |---|---|---|---|---|
 | **Freeport-McMoRan** | FCX | **Jul 23, 2026 — REPORTED ✔** | Q2 2026 | **BEAT:** Copper volumes strong; Grasberg humming; stock +8.8% on week |
 | **Sherwin-Williams** | SHW | **Jul 23, 2026 — REPORTED ✔** | Q2 2026 | **MISS:** Paint demand weak; oil-linked costs rising; stock -6.3% on week |
 | **Newmont** | NEM | **Jul 24, 2026 — REPORTED ✔** | Q2 2026 | Gold production steady; AISC discipline; realized gold price ~$4,030 |
 | **Dow Inc** | DOW | **~Jul 25, 2026 — REPORTED ✔** | Q2 2026 | Feedstock cost pass-through; volume; margin guidance |
-| **Nucor** | NUE | **Jul 27, 2026 — REPORTED ✔** | Q2 2026 | **BEAT & RAISED:** EPS $4.85 vs. $4.75 guide; steel pricing strong; stock +3.9% on week |
+| **Nucor** | NUE | **Jul 27, 2026 — REPORTED ✔** | Q2 2026 | **BEAT & RAISED:** EPS $4.85 vs. $4.75 guide; steel pricing strong |
 | **PPG Industries** | PPG | **Jul 28, 2026 — REPORTED ✔** | Q2 2026 | Coatings pricing power vs. oil-linked inputs; industrial demand |
 | **Cleveland-Cliffs** | CLF | **Jul 28, 2026 — REPORTED ✔** | Q2 2026 | Automotive steel exposure; stock -3.4% after prior week's +18% spike |
-| **Linde** | LIN | **Aug 1, 2026 — REPORTED** | Q2 2026 | Pricing; volume growth; hydrogen project updates; guidance |
-| **Air Products** | APD | **Aug 1, 2026 — REPORTED** | Q2 2026 | Industrial gases volume; hydrogen projects; momentum check |
-| **Albemarle** | ALB | **Aug 7, 2026** | Q2 2026 | Lithium restart economics; storage demand vs. supply response; guidance |
+| **Linde** | LIN | **Aug 1, 2026 — REPORTED ✔** | Q2 2026 | **BEAT:** EPS $3.73 (up 8%); margin 30.1% (up 80 bps); guidance maintained $16.30–$16.50 |
+| **Air Products** | APD | **Aug 1, 2026 — REPORTED ✔** | Q2 2026 | Industrial gases volume; hydrogen projects; stock +3.6% post-report |
+| **Albemarle** | ALB | **Aug 6, 2026 — REPORTED ✔** | Q2 2026 | **MASSIVE BEAT:** Adj. EPS $3.75 vs. $0.11 prior year; EBITDA +155%; Energy Storage sales +78% |
+| **Corteva** | CTVA | **Aug 7, 2026 — REPORTED ✔** | Q2 2026 | Q2 earnings call transcript published; stock +1.0% on week |
 
-**Marky's Binary Event Read:** NUE's beat-and-raise two weeks ago continues to pay in price action — the stock is now +7.5% since reporting and just 5% from 52W highs. LIN's Aug 1 report is the next major catalyst — after a -6.6% week and RSI at 23.6, the bar is low. A clean beat and the oversold bounce could be violent; a miss and the $470 200D MA test is likely. APD reports the same day — the industrial gas complex needs a win after LIN's collapse. ALB on Aug 7 is the lithium question: can they restore confidence in the supply-demand balance, or does DXY-below-101 tailwind get wasted on excess supply fears?
+**Marky's Binary Event Read:** ALB's Aug 6 beat was the single most important earnings event of the week for Materials. Adj. EPS of $3.75 vs. $0.11 prior year, EBITDA up 155%, and Energy Storage sales up 78% — this transforms ALB from a deep-value trap into an earnings recovery story. The stock's +10.5% response is justified, and forward PE ~11x leaves room. LIN's Aug 1 beat ($3.73 EPS, 30.1% margin) repaired the prior week's -6.6% damage, and the stock is grinding back toward $500. NEM did not report this week, but gold's +7.3% move to $4,346 was the only catalyst that mattered — the stock exploded +18.5%. Looking ahead, the earnings season is largely complete for Materials. The next catalysts are macro: August CPI (Aug 13), China stimulus rumors, and DXY direction.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- China announces a real stimulus package → iron ore, copper, steel gap up overnight → XLB reclaims $53 and targets $55
-- DXY holds below 101 → commodity tailwind persists, restriction stays lifted
-- 10Y retreats below 4.5% on soft data → rate-sensitive stocks (VMC, MLM, SHW) bounce
-- Oil holds below $85 → inflation risk fades, Fed pause extends → cyclicals re-rate
-- LIN/APD beat on Aug 1 → industrial gas complex repairs, oversold bounce lifts sector
+- DXY continues grinding lower toward 98 → commodity tailwind strengthens
+- 10Y retreats below 4.5% on soft data → rate-sensitive stocks (VMC, MLM, SHW) bounce harder
+- Gold holds $4,300+ → NEM re-rates toward $130–140
+- China announces a real stimulus package → iron ore, copper, steel gap up overnight → XLB breaks $54.14
+- Oil holds below $80 → inflation risk fades, Fed pause extends → cyclicals re-rate
+- ALB's lithium recovery continues → stock reclaims $150+ → sector sentiment lifts
 
 ### 🔴 Bear Case
 - **DXY snaps back above 101** → Ophelia's embargo returns → commodity sentiment crushed
-- **10Y breaks 4.80%** → discount rate spike hits every rate-sensitive cyclical → XLB tests 200D MA at $48.62
+- Jobs disaster was the first domino → recession confirmed → industrial volumes collapse
+- 10Y breaks back above 4.75% on sticky CPI (Aug 13) → discount rate spike hits cyclicals
 - China property deteriorates further with no stimulus → iron ore under $95, copper under $6.00
-- Gold breaks $3,900 on hawkish Fed → NEM's value floor gives way
-- Lithium restarts accelerate + supply glut fears → ALB breaks $100 → sentiment poison spreads
+- Gold's +7.3% weekly surge is a blow-off top → NEM gives back $15+ in a week
+- Lithium restarts accelerate + supply glut fears → ALB breaks $110 → sentiment poison spreads
 
 ### ⚠️ The Wild Card
-The **DXY-below-101 regime** is now active — but it is fragile. The dollar's retreat was driven by softer U.S. data and fading Iran premium, not by a fundamental Fed dovish pivot. If the August jobs report is strong (Aug 8) or August CPI re-accelerates (Aug 13), DXY could snap back above 101 instantly — and the embargo would return just as quickly. The 10Y at 4.74% is only 6 bps from its 52W high of 4.75%. A break above 4.75% would make the 5% crisis line the next target, and every long-duration and rate-sensitive cyclical would get repriced lower. The offset: no major earnings disaster this week (NUE beat, FCX held gains, DOW stable), and the DXY tailwind is real. Watch DXY 100.00 as the first warning line — a close back above 100.50 would start the countdown to embargo reinstatement.
+The **DXY-below-101 regime** is now in its third week and strengthening. But the dollar's retreat was driven by genuinely bad U.S. economic data, not by a fundamental Fed dovish pivot. If the August jobs report (Sep 4) or August CPI (Aug 13) shows strength, DXY could snap back above 101 instantly — and the embargo would return. The 10Y at 4.65% is 10 bps below last week's 4.74% but still 90 bps above the 2024 lows. A break back above 4.75% (the 52W high) would reassert rate pressure on every long-duration cyclical. The offset: no major earnings disaster this week (LIN beat, ALB crushed, APD held gains), and the macro tailwinds are real. Watch DXY 100.00 as the first warning line — a close back above 100.50 would start the countdown to embargo reinstatement.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The restriction is lifted. DXY at 99.80 is below 101 — decisively, not fractionally. One week of enforcement is over. The dollar retreated on softer U.S. data and partial Hormuz normalization, not on a Fed dovish pivot, so this regime is fragile. My rulebook is clear: DXY < 101 = commodity longs are permitted. I own the commodity-exposed names with pricing power (NUE, FCX) and the global industrials with DXY-translated earnings (APD, DOW). I avoid the rate-sensitive domestic cyclicals (VMC, MLM) until the 10Y retreats below 4.5%. And I say this plainly: the moment DXY closes back above 101, the embargo returns. Until then, tailwinds are tailwinds."*
+**Ophelia:** *"The restriction stays lifted. DXY at 99.60 is not just below 101 — it is grinding lower, and the tailwind is strengthening. The July jobs report was a genuine macro shock: -23,000 payrolls, massive revisions down, and participation dropping. The market's reaction? Buy commodities, buy gold, buy rate-sensitive cyclicals. My rulebook is clear: DXY < 101 = commodity longs are permitted. I own the commodity-exposed names with pricing power (NUE, FCX, NEM) and the global industrials with DXY-translated earnings (LIN, APD). I added ALB this week on the crushing Q2 beat — the lithium spring is uncoiling. I hold DOW for its 4.77% yield. And I say this plainly: the moment DXY closes back above 101, the embargo returns. Until then, tailwinds are tailwinds — but watch the recession chatter. Bad jobs data is bullish for rates until it is bearish for volumes."*
 
-**Marky:** *"Down week with violent rotation inside the sector. NUE (+3.9%) and SHW (+7.4%) worked; LIN (-6.6%), CTVA (-11.8%), and MLM (-6.2%) broke. XLB lost the 50D three weeks ago and has not reclaimed it; RSI at 48.9 says we are not oversold enough for a reliable bounce. My levels: $49.85 is the week low, lose it and we visit the 200D at $48.62. Reclaim $51.00 on 12M+ volume and the damage repairs. Trades I am stalking: LIN into the $475–480 zone with a tight stop under $470 if the Aug 1 report delivers — RSI 23.6 is historically bouncy. NUE is too extended to chase here; let it pull back to $245. SHW at $340 is a relief-rally rental, not a new position — the housing market is still frozen. And respect the DXY: below 101 is green, but 100.50 is the first warning line."*
+**Marky:** *"Strong week with broad participation. XLB +4.8% reclaims the 50D MA and is now just $1.28 from the 52W high. RSI at 58.2 says we have room to run. My levels: $53.15 is the week high — break it and we test $54.14. $51.20 is the 50D MA — hold it and the structure stays constructive. Trades I am stalking: FCX into the $70–72 zone — the stock is just 3.7% from its high and the copper/DXY setup is textbook. NEM after an +18.5% week is too extended to chase here; let it pull back to $105. ALB at $131 after a +10.5% earnings move is a hold, not a new entry — the easy money was before the print. LIN at $490 is a recovery rental with a stop under $480. And respect the DXY: 99.60 is green, but 100.50 is the first warning line."*
 
-**Cecil:** *"The garden has both flowers and weeds this week. NUE at ~20x with +53% YTD momentum is no longer cheap, but momentum is not a value investor's enemy — it is a force to be respected. NEM at ~12x with $4,000+ gold remains interesting, though gold's softness concerns me. DOW's 4.62% yield is honest and rate-agnostic. ALB at 9.4x is the coiled spring — DXY below 101 makes the spring tighter, but lithium supply fears are the counterweight. LIN at 30.9x after a -6.6% week proves that even the highest-quality industrial gas story is not immune to rotation. CTVA's -11.8% crash is a reminder that 47x P/E and planting-condition risk are a dangerous cocktail. I added nothing this week, but I am watching LIN into the $470–480 zone for a potential oversold entry. Patience is the position."*
+**Cecil:** *"The garden is blooming this week. NEM at ~14x with $4,300+ gold is the rose that finally opened — the +18.5% move vindicated months of patience. ALB's Q2 beat ($3.75 adj. EPS vs. $0.11 prior year) transforms the lithium story from speculation to calculation. At forward ~11x, ALB is the best value in the sector. NUE at ~22x after a +57% YTD run is full, but momentum is not my enemy — I tipped my hat and held. DOW's 4.77% yield remains the most honest income story. LIN at ~32x after a solid Q2 proved that quality recovers fast from oversold conditions. I added ALB this week on the earnings evidence. Caution on the jobs data: recession is not a friend of industrial volumes. But for now, the 'no hike' trade is the trade — and I am positioned for it."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / stock data feeds: XLB + 16 holdings daily OHLCV through Fri Jul 31, 2026 close
-- Commodity price data: WTI crude, COMEX gold/silver, LME copper, China lithium carbonate (CNY/t), iron ore, China rebar
-- Federal Reserve: July FOMC statement (rates held; hawkish hold posture)
-- Market coverage: U.S.–Iran conflict / Strait of Hormuz shipping normalization; DXY positioning data
-- Company disclosures: NUE Q2 2026 results (Jul 27); CLF Q2 2026 results (Jul 28)
+- Yahoo Finance / stock data feeds: XLB + 16 holdings + 5 small/mid-caps daily OHLCV through Fri Aug 7, 2026 close
+- Commodity price data: WTI crude, COMEX gold/silver, LME copper, China lithium carbonate (CNY/t), iron ore
+- Federal Reserve: July FOMC statement (rates held; hawkish hold posture); July jobs report (Aug 8)
+- Market coverage: DXY positioning data; rate-hike probability shifts
+- Company disclosures: LIN Q2 2026 results (Aug 1); APD Q2 2026 results (Aug 1); ALB Q2 2026 results (Aug 6)
+- Trading Economics: DXY 99.60 (Aug 7); 10Y Treasury 4.65% (Aug 7)
+- Kitco: Gold $4,346/oz (Aug 7); Copper ~$6.51/lb (Aug 7)
+- MarketWatch: WTI $77.08/bbl (Aug 7)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-01*
+*Last updated by Saturday Research Crew: 2026-08-08*
 *Next update: Every Saturday 11:19 AM ET*
 *Data sources: Yahoo Finance, LME, COMEX, Fastmarkets, market data feeds*
-*Note: Equity data through Friday Jul 31 close. Commodity data through Friday Jul 31.*
+*Note: Equity data through Friday Aug 7 close. Commodity data through Friday Aug 7.*
