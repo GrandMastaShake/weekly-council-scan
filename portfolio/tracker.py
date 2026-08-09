@@ -3,7 +3,8 @@
 Paper Portfolio Tracker — Market Consciousness Orchestra
 
 Tracks the Council's weekly picks as if they were actually traded.
-- Records entry prices on Monday (from scan report context)
+- Records entry prices at the date-pinned Monday open (canonical basis,
+  shared with the Arena so both books are measured against the same ruler)
 - Tracks through Friday close
 - Checks stop losses during the week
 - Calculates P&L, Sharpe, max drawdown, alpha vs SPY
@@ -42,6 +43,41 @@ for d in [PORTFOLIO_DIR, HISTORY_DIR, SCORECARDS_DIR]:
 
 
 # --- Price Fetching ---
+
+def fetch_yf_open(ticker: str, date: datetime) -> Optional[float]:
+    """Fetch the date-pinned OPEN price for a ticker on the given date.
+
+    Canonical entry basis: the Monday open (Arena convention), so Council and
+    Arena entries are measured against the same ruler. If the date is not a
+    trading day (e.g. a holiday Monday), the first trading day AFTER it within
+    the window is used and a note is printed. Never silently falls back to a
+    PRIOR day -- an entry before the week starts is not an entry. Returns None
+    on failure.
+    """
+    try:
+        import yfinance as yf
+        start = date.strftime("%Y-%m-%d")
+        end = (date + timedelta(days=7)).strftime("%Y-%m-%d")
+        data = yf.download(ticker, start=start, end=end, progress=False, auto_adjust=True)
+        if data.empty:
+            return None
+        # yfinance >= 1.x can return MultiIndex (Price, Ticker) columns even for one ticker
+        if getattr(data.columns, "nlevels", 1) > 1:
+            data.columns = data.columns.get_level_values(0)
+        dates = list(data.index.strftime("%Y-%m-%d"))
+        target = date.strftime("%Y-%m-%d")
+        if target in dates:
+            return float(data.loc[data.index.strftime("%Y-%m-%d") == target]["Open"].iloc[0])
+        # Non-trading day: first trading day after the target
+        later = [d for d in dates if d > target]
+        if later:
+            print(f"Note: {ticker} entry pinned to {later[0]} open (no bar on {target}).")
+            return float(data.loc[data.index.strftime("%Y-%m-%d") == later[0]]["Open"].iloc[0])
+        return None
+    except Exception as e:
+        print(f"Warning: Could not fetch open for {ticker} on {date}: {e}")
+        return None
+
 
 def fetch_yf_price(ticker: str, date: datetime) -> Optional[float]:
     """Fetch closing price for a ticker on a given date using yfinance."""
@@ -193,15 +229,22 @@ def parse_report(report_path: Path) -> Dict:
 
 def open_positions(week_date_str: str, report_data: Dict) -> Dict:
     """Record new positions for the week."""
-    # Fetch Monday prices for entry
+    # Fetch Monday OPEN prices for entry -- canonical basis is the date-pinned
+    # Monday open (Arena convention) so both books share the same ruler.
     monday = datetime.strptime(week_date_str, "%Y-%m-%d")
     tickers = [p["ticker"] for p in report_data["picks"]]
     prices = {}
     for t in tickers:
-        prices[t] = fetch_yf_price(t, monday)
+        prices[t] = fetch_yf_open(t, monday)
+        if prices[t] is None:
+            print(f"Warning: {t} Monday open unavailable; falling back to close-based entry.")
+            prices[t] = fetch_yf_price(t, monday)
 
-    # Fetch SPY entry price
-    spy_price = fetch_yf_price("SPY", monday)
+    # Fetch SPY entry price (same date-pinned Monday-open basis)
+    spy_price = fetch_yf_open("SPY", monday)
+    if spy_price is None:
+        print("Warning: SPY Monday open unavailable; falling back to close-based entry.")
+        spy_price = fetch_yf_price("SPY", monday)
 
     positions = []
     for pick in report_data["picks"]:
