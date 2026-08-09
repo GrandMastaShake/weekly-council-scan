@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | **$56.94** | $53.45 | **+6.53%** |
-| 52W Range | $47.67 – $57.60 | — | — |
+| Price | **$57.60** | $55.71 | **+3.39%** |
+| 52W Range | $47.81 – $58.00 | — | — |
 | AUM | ~$57.9B | — | — |
-| YTD Return | **~+5.5%** | — | — |
-| 1Y Return | ~+20% | — | — |
+| YTD Return | **~+5.2%** | — | — |
+| 1Y Return | ~+12.1% | — | — |
 | P/E Ratio | ~18.0 | — | — |
-| Dividend Yield | ~1.51% | — | — |
+| Dividend Yield | ~1.5% | — | — |
 | Beta | ~1.0 | — | — |
 | Total Holdings | 76 | — | — |
 | Avg Daily Volume | ~35.8M shares | — | — |
 
-**Marky Tape Read:** XLF is knocking on the door of its 52-week high. The 4W rally of +6.53% is the strongest monthly move for the sector in 2026. The 52W high of $57.60 is just $0.66 away — and this time, the sector has both earnings firepower and a steepening yield curve behind it. JPM and BAC remain within striking distance of all-time highs. Volume has normalized (~32M vs. the earnings-week spike of 49M), suggesting the move is holding. The 50D MA at $54.19 is now well below price, and the 200D MA at $52.84 is even further. The trend is no longer "tired" — it is accelerating. A confirmed break above $57.60 would open a new leg higher.
+**Marky Tape Read:** This is the week XLF stopped knocking and **put its hand on the doorknob**. Friday's intraday print of **$58.00** is a new 52-week high, and the close of $57.60 sits exactly on the old breakout level the tape has been circling for three weeks. The weekly gain of +1.16% understates it — SPY rallied +3.5% and financials deliberately lagged the growth stampede (XLF −2.35% vs. SPY on the week), which is fine: this sector is consolidating at altitude, not chasing. The 50D MA at $54.79 and 200D at $52.97 are both rising below price. A confirmed weekly close above $58.00 is the trigger. The setup is now binary and clean.
 
-**Ophelia Macro Read:** The 10Y yield at **4.74%** and 2Y at **4.29%** gives a **+45 bps spread** — up from +34 bps two weeks ago. The curve is steepening, and steepening fast. This is NIM expansion in real time. The Fed remains on hold at 3.50–3.75% (EFFR ~3.65%). The key shift: the July 29 FOMC meeting produced three dissents (Hammack, Kashkari, Logan) who wanted to hike 25 bps. The market is no longer pricing imminent hikes — the "easing bias" survives, but barely. The first fully priced-in hike has been pushed to December 2026. Banks are the beneficiaries of this gridlock.
+**Ophelia Macro Read:** The oil collapse changed everything. WTI crashed −7.7% to $78.18, breaking below $80 — and with it went the one scenario that could have forced the Fed's hand (an oil-driven hike into a steepening curve). The 10Y pulled back −8.5 bps to **4.66%**, and the front end fell harder: the 10Y–2Y spread is now **~+66 bps** (stale external proxy on the 2Y ~4.00% — refresh before Monday). The curve is steepening from the *dovish* side for the first time this cycle: short rates falling on receding hike odds, long rates holding. That is the single best configuration for bank NIMs. VIX at 14.90 is complacent, and Jackson Hole (Aug 21–23) is the next macro gate — Warsh's first.
 
 ---
 
@@ -31,31 +31,31 @@
 
 | Rank | Ticker | Name | Weight | Price | Weekly Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | JPM | JPMorgan Chase | ~14% | **$351.79** | −0.40% | $359.30 | $279.10 | 1.71% | 15.1 | 🔥 |
-| 2 | BAC | Bank of America | ~8% | **$61.95** | −0.16% | $62.99 | $44.75 | 2.07% | 14.3 | 🔥 |
-| 3 | WFC | Wells Fargo | ~5% | $86.45 | +0.16% | $97.76 | $72.78 | 2.31% | 12.6 | ⚡ |
-| 4 | GS | Goldman Sachs | ~4% | $1,018.38 | −4.04% | $1,153.99 | $705.55 | 1.96% | 15.7 | ⚠️ |
-| 5 | MS | Morgan Stanley | ~4% | $210.42 | −1.89% | $232.25 | $139.41 | 2.19% | 17.0 | ⚡ |
-| 6 | C | Citigroup | ~4% | $132.45 | +0.20% | $147.96 | $89.68 | 2.02% | 14.3 | ⚡ |
-| 7 | PNC | PNC Financial | ~2% | $249.87 | −0.45% | $256.49 | $176.88 | 3.20% | 13.8 | 🔥 |
+| 1 | JPM | JPMorgan Chase | ~14% | **$357.52** | +1.63% | $359.30 | $279.10 | 1.71% | 15.1 | 🔥 |
+| 2 | BAC | Bank of America | ~8% | **$63.17** | +1.97% | **$63.25** | $44.75 | 2.07% | 14.3 | 🔥 |
+| 3 | WFC | Wells Fargo | ~5% | $87.25 | +0.93% | $97.76 | $72.78 | 2.31% | 12.6 | ⚡ |
+| 4 | GS | Goldman Sachs | ~4% | $1,039.61 | +2.08% | $1,153.99 | $705.55 | 1.96% | 15.7 | ⚡ |
+| 5 | MS | Morgan Stanley | ~4% | $216.33 | +2.81% | $232.25 | $139.41 | 2.19% | 17.0 | ⚡ |
+| 6 | C | Citigroup | ~4% | $135.00 | +1.93% | $147.96 | $89.68 | 2.02% | 14.3 | ⚡ |
+| 7 | PNC | PNC Financial | ~2% | $252.56 | +1.08% | $255.37 | $176.88 | 3.20% | 13.8 | 🔥 |
 | 8 | BK | BNY Mellon | ~2% | ~$137.00* | — | $141.65 | $87.41 | 1.53% | 17.0 | ⚡ |
-| 9 | USB | U.S. Bancorp | ~2% | $63.01 | −1.50% | $64.84 | $43.83 | 3.30% | 12.6 | ⚡ |
-| 10 | TFC | Truist Financial | ~2% | $51.84 | +0.15% | $56.20 | $40.78 | 4.01% | 11.9 | ⚡ |
+| 9 | USB | U.S. Bancorp | ~2% | $63.94 | +1.48% | $64.47 | $43.83 | 3.30% | 12.6 | 🔥 |
+| 10 | TFC | Truist Financial | ~2% | $52.35 | +0.98% | $56.20 | $40.78 | 4.01% | 11.9 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / major decline
-> \* BK price stale due to data fetch issue; approximate.
+> \* BK price stale due to data fetch issue; approximate. (Data fetch failed again 8/08 — flagged for the holdings linter.)
 
-**Sector Bifurcation:** The three-speed sector remains intact.
+**Sector Bifurcation:** The three-speed sector is still intact — but this week every speed pointed up.
 
-- **Speed 1 — The Money Centers (JPM, BAC):** JPM pulled back modestly (−0.40%) but remains within $8 of its 52W high ($359.30). BAC is just $1.04 below its 52W high of $62.99. These are not breakouts — they are consolidations at altitude. The market is saying: the money center banks are the safest way to play higher-for-longer rates + steepening curve + capital markets boom.
+- **Speed 1 — The Money Centers (JPM, BAC):** BAC printed a **new 52-week high at $63.25** on Friday and closed at $63.17 — the first of the majors to take out its high outright. JPM at $357.52 is now within $2 of its $359.30 high. These are no longer consolidations — they are the early stages of the next leg, powered by the dovish-side curve steepening.
 
-- **Speed 2 — The Capital Markets Complex (GS, MS):** Goldman took another leg down this week (−4.04%), bringing its total pullback from the $1,154 spike to −11.8%. The market is still digesting the best quarter in Goldman's 157-year history. MS is similarly digesting gains (−1.89%). This is healthy consolidation, not breakdown — both remain well above their 50D MAs. The buy-the-dip opportunity is forming.
+- **Speed 2 — The Capital Markets Complex (GS, MS):** The digestion appears complete. GS bounced +2.08% back above $1,000 (now −9.9% off the $1,154 spike, recovering), and MS led the complex at +2.81%. Both reclaimed their 50D neighborhoods. The buy-the-dip window the tape offered for two weeks is closing.
 
-- **Speed 3 — The Regionals (PNC, USB, TFC):** The quiet winners hit some noise. USB gave back −1.50% this week. PNC dipped −0.45%. TFC managed a +0.15% gain. These stocks don't make headlines, but they are steadily re-rating as the CRE panic fades and the yield curve steepens. TFC at 4.01% yield and 11.9x P/E remains the deep-value income play. PNC at $249.87 is just $7 below its 52W high.
+- **Speed 3 — The Regionals (PNC, USB, TFC):** The quiet winners got quieter and higher. USB at $63.94 is $0.53 below its 52W high ($64.47). PNC at $252.56 is $2.81 below its high ($255.37). TFC ground out +0.98% with its 4.01% yield. As the front end of the curve falls, deposit-cost relief flows straight to these balance sheets.
 
-- **The Citi Recovery:** Citigroup at $132.45 has stabilized. The stock is no longer the worst performer. Jane Fraser's turnaround is showing signs of life — the Q2 beat helped, and the stock has clawed back from its post-earnings lows. At 14.3x P/E and 2.02% yield, it is no longer obviously cheap, but it is no longer a trap either.
+- **The Citi Recovery:** Citi at $135.00 (+1.93%) is participating again. Still below its 50D (~$136.14) — the only major that is — but the gap is one good day wide.
 
-**Cecil Fundamental Read:** JPM at 15.1x P/E with a fortress balance sheet is the gold standard. BAC at 14.3x P/E is not cheap by historical standards, but it is cheap relative to its earnings power in a steepening curve. The regionals are where Cecil's eyes light up: USB at 12.6x P/E and 3.30% yield. TFC at 11.9x P/E and 4.01% yield. PNC at 13.8x P/E and 3.20% yield. These are the compounders of the cycle — if the CRE overhang continues to fade. Rule 2 applies: the yields are real, the P/Es are real, and the balance sheets are healing.
+**Cecil Fundamental Read:** Nothing about this week's prices changes the math, and that is the point. JPM 15.1x, BAC 14.3x, WFC 12.6x, USB 12.6x with a 3.30% yield, TFC 11.9x with a 4.01% yield. The curve is now steepening because short rates are *falling* — deposit costs drop first, loan yields reprice slowly. That is the friendliest NIM sequence a bank can get, and it is arriving with a regulatory tailwind (Basel reversal) still unpriced. Rule 2 holds: the yields are real, the P/Es are real, and the balance sheets are healing.
 
 ---
 
@@ -65,14 +65,12 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst / Signal | Council Read |
 |---|---|---|---|---|---|---|
-| HOPE | Hope Bancorp | ~$1.79B | $14.01 | +4.16% | Q2 EPS $0.26 (+12% QoQ), NIM expanded 6 bps to 2.96%; pending MANUBANK acquisition adds ~$2.3B loans | Korean-American regional with NIM momentum and an accretive M&A catalyst — a sub-$2B play on deposit beta improvement |
-| CUBI | Customers Bancorp | ~$2.66B | $78.68 | +2.82% | Q2 EPS $2.05 beat by $0.05, revenue +10.2% YoY; $100M buyback; DA Davidson raised PT to $100 | Fintech-forward regional trading at 9.5x P/E with a $100M buyback — the market is re-rating this as a growth bank, not a community bank |
-| BANR | Banner Corporation | ~$2.39B | $70.41 | ~+0.8%* | Q2 NII $153.74M, net income $48.89M; DA Davidson raised PT to $76 (Neutral) | Pacific Northwest regional with steady dividend and improving efficiency — a boring bank in the best sense, but not a breakout story |
-| WAFD | WaFd, Inc. | ~$2.72B | $36.77 | ~+0.9%* | Q3 EPS $0.81 narrowly missed est, but revenue $205.52M beat; strong loan growth; $145M buyback blitz | Seattle-based thrift-turned-bank with aggressive capital returns — the buyback is the story, but deposit outflows need watching |
+| HOPE | Hope Bancorp | ~$1.79B | $13.99 | −0.14% | Flat week after the prior +4.16% pop; MANUBANK acquisition still pending | Holding its NIM-expansion gains — consolidation, not rejection |
+| CUBI | Customers Bancorp | ~$2.66B | $82.07 | **+4.31%** | Second strong week; DA Davidson's $100 PT re-rating is working; new 52W high $83.65 | The market is now fully treating CUBI as a growth bank — momentum leader of the watch list |
+| BANR | Banner Corporation | ~$2.39B | $70.67 | +0.37% | Quiet grind higher; DA Davidson PT $76 (Neutral) still the ceiling call | Steady-Eddie doing exactly what steady-Eddies do |
+| WAFD | WaFd, Inc. | ~$2.72B | $37.16 | +1.06% | Buyback blitz continues to put a floor under the post-miss price | Capital return is winning the argument against the deposit-outflow worry |
 
-> *Weekly changes for BANR and WAFD are approximate due to data resolution timing; confirmed via intraday tape.*
-
-**Rotation Note:** All four names remain verified sub-$5B as of August 1, 2026. HOPE has the most torque (NIM expansion + M&A). CUBI has the best earnings momentum and analyst re-rating. BANR is the steady-Eddie dividend play. WAFD is the capital-return story with a slight earnings miss.
+**Rotation Note:** CUBI is the standout — back-to-back strong weeks (+2.82%, then +4.31%) with a fresh 52W high. The sub-$5B financials lane is following the large-cap regionals higher as the curve steepens from the front end. Falling short rates are *more* beneficial to small banks' deposit franchises than to the money centers — watch this group if the 2Y keeps sliding.
 
 ---
 
@@ -80,18 +78,17 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $57.60 | **Key resistance** — XLF is within $0.66 of breaking out |
-| Near Resistance | $57.00 | Intraday ceiling from July 29–30 FOMC week |
-| 50-Day MA | $54.19 | Dynamic support — now $2.75 below price |
-| Current Price | $56.94 | — |
-| 200-Day MA | $52.84 | Long-term trend support — firmly bullish |
+| 52W High (intraday) | **$58.00** | **Printed Friday 8/07** — the breakout attempt is live |
+| 52W High (close) | $57.60 | **Friday's close — sitting exactly on the level** |
+| 50-Day MA | $54.79 | Dynamic support — rising, $2.81 below price |
+| 200-Day MA | $52.97 | Long-term trend support — rising, firmly bullish |
 | Major Support | $55.00 | Previous breakout zone / post-FOMC consolidation floor |
 | Deep Support | $50.00 | Post-inversion panic floor |
-| Structural Low | $47.67 | 52W bottom — March 2025 regional bank scare |
+| Structural Low | $47.81 | 52W bottom |
 
-**Marky Setup Assessment:** XLF has transformed from a **coiled spring** into a **breakout in progress** that is taking a breather. The 4W rally of +6.53% on expanding volume (earnings week hit 49M shares) is textbook accumulation. The 50D MA is rising and the 200D MA is flattening — a bullish crossover is forming. The only question: can XLF take out $57.60? A close above that level with volume >40M would confirm a new bull leg. Failure here would see a pullback to $55.00 (the post-FOMC consolidation zone), but the downside is limited with both MAs trending higher.
+**Marky Setup Assessment:** Last week: "a breakout in progress taking a breather." This week: **the breather is over.** Friday printed $58.00 intraday and closed at $57.60 — the first weekly close at the 52W high. The pattern is now a three-week tight consolidation directly under/at resistance, which is how big breakouts are built. Trigger: a weekly close above $58.00 with volume. Fakeout risk: VIX at 14.90 is complacent, and Jackson Hole (Aug 21–23) is a volatility event sitting between here and confirmation. If the breakout fails, $55.00 is the floor; both MAs are rising beneath it.
 
-**The relative strength story:** XLF's YTD underperformance has **flipped to slight outperformance** vs. SPY. Financials were the best-performing sector in the first half of July (+8% per Cboe data). If the yield curve continues to steepen, this outperformance could accelerate within weeks.
+**The relative strength story:** XLF lagged SPY this week (−2.35% relative) — but that is *growth's* stampede (XLK +7.2%, SMH +7.8%), not financials' weakness. XLF still closed at a 52W high while being ignored. When the growth trade pauses to digest, the rotation bid looks for exactly this: a sector at its high that hasn't run.
 
 ---
 
@@ -99,27 +96,26 @@
 
 | Factor | Level | Implication for XLF |
 |---|---|---|
-| Fed Funds Rate | 3.50–3.75% (on hold) | **Neutral for NIM.** Three dissents at July 29 FOMC wanted to hike. Market pricing first hike pushed to Dec 2026. |
-| 2Y Treasury | **4.29%** | Short-term funding cost. Fell −8 bps in two weeks as Fed held. |
-| 10Y Treasury | **4.74%** | Long-term lending rate. Rose +3 bps in two weeks. |
-| 30Y Treasury | ~5.28% | Mortgage and long-duration loan pricing — term premium rebuilding |
-| **Yield Curve (10Y–2Y)** | **+45 bps** | **Steepening accelerated!** +11 bps in two weeks. NIM tailwind intensifying. |
-| DXY | ~101.25 | Stable. No FX headwind for international lending. |
-| VIX | **~17–18** | Normalized from ~18.70. Post-FOMC calm. |
-| Credit Spreads (IG) | Tight | No stress priced. Loan losses remain low. |
-| Credit Spreads (HY) | Moderate | Some widening in lower tiers. No contagion. |
-| CRE Prices | Stabilizing | CMBS delinquency fell to 7.35% in June. Office in "resolution, not recovery." |
-| Deposit Beta | ~50–60% | Banks have repriced deposits. Funding costs plateaued. |
+| Fed Funds Rate | 3.50–3.75% (on hold) | **Neutral for NIM.** July 29 hold with 3 hawkish dissents. Oil's collapse undercuts the hike case. |
+| 2Y Treasury | **~4.00%** (stale proxy) | Short-term funding cost — falling as hike odds recede. **Refresh before Monday.** |
+| 10Y Treasury | **4.66%** | Long-term lending rate. Pulled back −8.5 bps on the week as the inflation scare deflated. |
+| 30Y Treasury | ~5.2% (est.) | Term premium intact — long-loan pricing still rich |
+| **Yield Curve (10Y–2Y)** | **~+66 bps** (stale proxy) | **Steepening from the dovish side** — front end falling faster than the long end. The best NIM configuration of the cycle. |
+| DXY | ~99.60 | Below 100 and softening — no FX headwind; helps the whole risk complex |
+| VIX | **14.90** | Normalized, bordering complacent. Watch 16.50 as the first-crack level. |
+| WTI Crude | **$78.18** | **Collapsed −7.7% below $80** — the oil-driven hike scenario is off the table for now |
+| Credit Spreads (IG) | Tight (stale) | HYG proxy at $79.61, one-month high — loan-loss pricing calm |
+| Credit Spreads (HY) | Moderate (stale) | HYG +0.65% on the week — no stress |
+| CRE Prices | Stabilizing | CMBS delinquency 7.35% (June). "Resolution, not recovery." |
+| Deposit Beta | ~50–60% | **Falling front end = deposit-cost relief begins** |
 | Loan Growth | ~+2–3% YoY | Sluggish but stable. C&I lending is the bright spot. |
-| Regulatory Risk | **ELEVATED — but direction reversed** | March 2026 re-proposal would MODESTLY REDUCE capital requirements. Final rules expected Q3/Q4 2026. |
+| Regulatory Risk | **TAILWIND** | March 2026 Basel III re-proposal would modestly REDUCE capital. Final rules expected Q3/Q4 2026. |
 
-**Ophelia Verdict:** The yield curve steepening is accelerating. In two weeks, the 10Y–2Y spread widened from +34 bps to +45 bps. The 10Y rose 3 bps; the 2Y *fell* 8 bps. Short rates are dropping while long rates hold — this is the market pricing a "no hike, no cut" Goldilocks for banks. The Fed held on July 29 with three dissents, but the statement kept the easing bias alive. The market read it as dovish relative to the 30% hike probability priced in. For banks, this is the sweet spot: short-term funding costs stable-to-lower, long-term lending rates rising, NIM expanding. Credit spreads are calm. The macro backdrop for financials has not been this constructive in two years.
+**Ophelia Verdict:** The macro board flipped from "constructive" to "nearly ideal" in one week. The hawkish wild card — oil forcing the Fed — collapsed with crude below $80. The 10Y stopped climbing. The 2Y is falling as the market reprices the September meeting dovish-ward. The curve is steepening the *good* way. The dollar is soft. Credit is calm. The only yellow flag is complacency itself: VIX 14.90 with gold breaking out +7.2% says the market is simultaneously risk-on and hedged — someone is buying insurance, and at Jackson Hole we find out why.
 
-**The July 29 FOMC Meeting — A Hawkish Hold:** The Fed held rates at 3.50–3.75% but three members (Hammack, Kashkari, Logan) dissented, preferring a 25 bps hike. This is Kevin Warsh's first meeting as Chair. The statement emphasized inflation "remains elevated relative to the Committee's 2 percent goal, in part reflecting supply shocks that have driven price increases in certain sectors, including energy." The market had priced ~30% odds of a hike. The hold was a relief. The yield curve steepened on the news — the 2Y fell as hike expectations receded. For banks, a hawkish hold is better than a hawkish hike.
+**Jackson Hole (Aug 21–23) — The Next Gate:** Warsh's first Jackson Hole as Chair. The July 29 hold with three dissents left the committee visibly split. If Warsh uses the podium to cement the "hold with easing bias" path, the front end falls further, the curve steepens more, and XLF's breakout confirms. If he tilts hawkish on "elevated inflation," the 2Y snaps back and the breakout probably fails back into the $55–58 range. Binary-ish event; calendar-marked.
 
-**The Regulatory Reversal (Major Catalyst):** On March 19, 2026, the Fed, FDIC, and OCC jointly re-proposed Basel III endgame rules. The headline: **capital requirements for large banks would be modestly REDUCED**, not increased. This is a 180-degree reversal from the July 2023 proposal (which aimed for a 16% CET1 increase). The new framework introduces ERBA (Expanded Risk-Based Approach), LTV-tiered CRE risk weights, and simplified standardized approaches. Comments closed June 18, 2026. Final rules are expected Q3/Q4 2026. For JPM, BAC, WFC, C — this is a potential 100–200 bps ROE tailwind. The market is only beginning to price this in.
-
-**The CRE overhang:** The slow-motion crisis is... slowing further. The Fed's May 2026 Financial Stability Report characterized the system as "generally resilient, with concentrated vulnerabilities." CMBS delinquency fell 20 bps to 7.35% in June. The office cycle is in "resolution, not recovery" — banks are not adding new office exposure, they are working out legacy credits. Multifamily and industrial are the demand anchors. CRE spreads remain tight, which is competitive pressure for banks but also a signal that distress is not metastasizing.
+**The Regulatory Reversal (Still the Silent Catalyst):** Nothing new this week — and that is fine. The March 2026 Basel III re-proposal (modestly REDUCED capital requirements, ERBA, LTV-tiered CRE risk weights) is in final-rule drafting for Q3/Q4 2026. A 100–200 bps ROE tailwind for the money centers remains largely unpriced. The market will not pay for it until the rule is final; we get to hold the option for free.
 
 ---
 
@@ -127,93 +123,81 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The FOMC Blinks, the Curve Steepens, and the Banks Win
+### This Week's Story: The Oil Collapse De-Fanged the Wild Card — and XLF Touched $58
 
-Two weeks ago, the five biggest U.S. banks dropped Q2 2026 earnings — and the numbers were not subtle. Last week, the sector digested. This week, the story has been one of **macro confirmation, FOMC relief, and a stealth repricing.**
+For three weeks, this wiki has carried the same warning in the Wild Card slot: if oil breaks above $90, the Fed's three dissenters get their hike, the curve flattens, and the bank thesis stalls. This week, the market didn't just dodge that bullet — it threw the gun away. WTI crashed −7.7% to $78.18, slicing through $80 like it wasn't there.
 
-**The FOMC Meeting — The Hawkish Hold That Wasn't.**
+**The repricing was instant and specific.** The 10Y fell −8.5 bps to 4.66% — its first real pullback of this climb. More importantly, the front end fell faster: the curve steepened to ~+66 bps, but this time from the *dovish* side. Every prior steepening this cycle came from long rates rising (inflation fear, term premium). This one is coming from short rates falling (hike odds dying). For a bank, that is the difference between a headwind and a gift: deposit costs reprice down immediately, loan yields stay where they are.
 
-The July 29 FOMC meeting was the most anticipated central bank event of the summer. The market had priced ~30% odds of a 25 bps hike. Three FOMC members (Hammack, Kashkari, Logan) wanted to hike. But the majority held. The statement kept the easing bias language — "the extent and timing of additional adjustments" — alive. Kevin Warsh, in his first meeting as Chair, navigated a divided committee and delivered a hold.
+**The tape noticed, quietly.** While the spotlight went to the growth stampede (XLK +7.2%, SMH +7.8%), XLF did something more interesting than rallying: it printed **$58.00 intraday Friday** — a new 52-week high — and closed at $57.60, exactly on the breakout level, for the highest weekly close in the fund's history. BAC took out its 52W high outright ($63.25). USB and PNC closed within striking distance of theirs. GS and MS ended their two-week digestion with bounces. Nobody is talking about banks, and banks are at their highs. That is usually what the early innings of leadership look like.
 
-The market's reaction: the 2Y Treasury yield fell, the 10Y rose modestly, and the curve steepened to +45 bps. Bank stocks rallied on the relief. The fear had been that Warsh — appointed by President Trump — would surprise hawkish to prove his independence. He didn't. The bank thesis lives.
+**What didn't happen matters too.** No CRE horror headline. No regulatory surprise. No earnings landmines — Q2 is in the books, and the sector's report card (NIM up, reserves stable, IB fees booming) is still warm. The Basel III reversal continues its quiet march toward a Q3/Q4 final rule.
 
-**The Earnings Supercycle — Still Digesting.**
+**The honest caveats.** VIX at 14.90 is complacency-adjacent, and gold's +7.2% breakout says someone big is hedging this relief. XLF's −2.35% relative week vs. SPY means the sector has *not* confirmed leadership — it confirmed resilience. And Jackson Hole (Aug 21–23) is a live mic in front of a divided Fed chair. The breakout attempt is real; the confirmation is still ahead of us.
 
-Goldman Sachs delivered the best quarterly performance in its 157-year history two weeks ago: diluted EPS of $20.98 (nearly double YoY), net revenues of $20.34 billion (+39%). And yet the stock has now pulled back −11.8% from its $1,154 spike. The market bought the rumor for months and sold the news over two weeks. This is not bearish — it is classic digestion. The money center banks (JPM, BAC) held their gains. The investment banks (GS, MS) are consolidating. The market is rotating from "rate-sensitive beta" to "quality earnings certainty."
-
-**The Regulatory Reversal — The Silent Catalyst.**
-
-The biggest story in financials right now is not on the front page. It is buried in a 500-page Fed proposal. The March 2026 Basel III re-proposal would **reduce** capital requirements for large banks. The agencies explicitly stated: "the amount of overall capital in the banking system would modestly decrease." This is the opposite of the 2023 proposal, which would have hiked capital by 16% and triggered a bank lobbying war.
-
-What changed? The Agencies listened. The revised framework is more risk-sensitive, allows LTV-based CRE risk weights, and simplifies the standardized approach. For JPM and BAC, this could mean billions in freed-up capital. For regional banks, the option to opt into ERBA or stay in the revised SA gives flexibility. The market has not fully priced this in because the rules are not yet final. But the direction is clear: **regulatory headwinds are becoming tailwinds.**
-
-**The Yield Curve — Speaking Loudly.**
-
-The 10Y–2Y spread at +45 bps is the widest it has been in over a year. The curve is steepening as the market prices a "pause forever" Fed — no hikes, no cuts, just gridlock. For banks, this is the sweet spot. Short-term funding costs are stable-to-falling. Long-term lending rates are rising. NIM expands. Loan growth is sluggish but not collapsing. Credit quality is stable. This is not the boom phase of the cycle; it is the **Goldilocks phase** — and it is bank-friendly.
-
-**The Bottom Line:** Financials is no longer a coiled spring. It is a **breakout in progress** that is taking a breather. The earnings supercycle confirmed the fundamentals. The regulatory reversal confirmed the policy outlook. The yield curve confirmed the macro tailwind. The FOMC hold confirmed the rate path. The only missing ingredient is a confirmed break above $57.60 on XLF. When that happens, the sector's outperformance accelerates.
+**The Bottom Line:** Last week's narrative was "the banks win if nothing breaks." Nothing broke — and the one thing that could have broken the thesis (oil) collapsed instead. XLF goes into next week sitting on $57.60 with a dovish-steepening curve at its back, a regulatory tailwind in front of it, and a volatility event (Jackson Hole) in between. The sector has earned the benefit of the doubt, but not the all-in.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Q2 2026 earnings are **complete.** The sector's next major catalysts shift to macro and regulatory events:
+Q2 2026 earnings are **complete.** The sector's next major catalysts are macro and regulatory events:
 
 | Catalyst | Date | What to Watch |
 |---|---|---|
-| **FOMC Meeting** | **July 29, 2026 (HELD)** | Rates held 3.50–3.75%; 3 dissents wanted hike. Statement kept easing bias. |
-| **FOMC Meeting** | **September 16, 2026** | Next decision. Will the dissents grow? Dot plot shifts? |
+| **Jackson Hole Symposium** | **August 21–23, 2026** | Warsh's first as Chair. Dovish cement or hawkish tilt? The 2Y decides the breakout. |
+| **FOMC Meeting** | **September 16, 2026** | Do the 3 dissents grow now that oil broke below $80? Dot plot shifts? |
 | **Basel III Final Rule (Expected)** | Q3/Q4 2026 | Capital requirement math, ERBA opt-in details, effective dates |
-| **Q3 2026 Bank Earnings** | October 2026 | NIM sustainability, loan growth, CRE reserve trends, IB pipeline |
-| **Jackson Hole** | August 21–23, 2026 | Warsh's first Jackson Hole — guidance on the path forward; inflation vs. oil risk |
+| **Q3 2026 Bank Earnings** | October 2026 | NIM trajectory with deposit costs falling, loan growth, IB pipeline |
 
-**Marky's Binary Event Read:** The July 29 FOMC meeting is in the books. The Fed held, the curve steepened, and banks rallied. The September 16 meeting is the next major catalyst. The market will want to know: will the three dissents become four or five? Will the statement finally remove the "extent and timing of additional adjustments" language? If the Fed sounds hawkish on oil-driven inflation, the curve could flatten and banks would face a headwind. If Warsh stays balanced, XLF breaks $57.60. Watch the 2Y–10Y spread during the September press conference.
+**Marky's Binary Event Read:** The next gate is Jackson Hole, not the FOMC. A dovish Warsh sends the 2Y lower, steepens the curve further, and XLF closes above $58.00 — momentum flows do the rest. A hawkish Warsh snaps the 2Y back and the breakout fails into $55–58. The oil collapse made the hawkish case harder to argue, but "elevated inflation" language is still in the statement. Position for the range, trade the break.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Fed holds through year-end → curve steepens → NIM expands → bank earnings beat
-- Basel III final rule confirms capital reduction → ROE tailwind for money centers
-- M&A and IPO boom continues through H2 2026 → IB fees sustain at elevated levels
-- CRE stabilization continues → regional banks re-rate higher
-- XLF breaks above $57.60 → technical breakout attracts momentum flows
+- Warsh cements the hold at Jackson Hole → 2Y slides → dovish steepening accelerates → deposit-cost relief
+- XLF confirms above $58.00 → momentum flows rotate into the un-owned sector at its highs
+- Basel III final rule confirms capital reduction → ROE tailwind repricing begins
+- M&A/IPO boom sustains IB fees into H2 → GS/MS re-attack their highs
+- Oil stays below $80 → the hike scenario stays dead
 
 ### 🔴 Bear Case
-- Fed hikes in September (dissents grow) → curve flattens → NIM compresses
-- CRE prices roll over → regional bank failures → contagion fear returns
-- Credit spreads widen → recession trades activate → financials lead down
-- Basel III final rule is stricter than the re-proposal → capital relief disappoints
-- Consumer defaults rise (credit cards, auto loans) → reserve build → earnings hit
+- Hawkish Jackson Hole surprise → 2Y snaps back → breakout fails → $55.00 retest
+- VIX complacency (14.90) snaps — any risk-off event hits high-beta financials first
+- Oil rebounds above $82 → the inflation scare (and the hike wild card) returns
+- CRE deterioration resumes → regional bank reserves rebuild
+- Basel final rule lands stricter than the re-proposal → capital relief disappoints
 
 ### ⚠️ The Wild Card
-The **September 16 FOMC meeting.** The Fed is gridlocked: domestic data says pause, oil/Iran says risk of hike. Three members already want to hike. If WTI crude breaks above $90 sustainably, the Fed may be forced to hike into a steepening curve — a bizarre outcome that would flatten the curve and crush the bank NIM thesis. Alternatively, if the Iran conflict de-escalates and oil falls, the Fed can stay on hold and banks win either way. The wild card is not the banks — it is the geopolitics driving the Fed.
+**Complacency itself.** VIX 14.90 with SPY at $773 and gold breaking out +7.2% simultaneously is a strange tape — full risk-on *and* heavy hedging. The market is one headline away from a volatility snap-back, and the calendar offers candidates: Jackson Hole, any geopolitical re-escalation (oil is still +9.5% on the month despite the crash), or a left-field credit event. The old wild card (oil forcing a hike) is dormant, not dead. The new one is that everyone stops hedging at the same time — or starts.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The yield curve is steepening, the Fed held with three dissents, and the regulatory wind has reversed. This is the most constructive macro backdrop for banks I have seen in two years. The 10Y at 4.74% and 2Y at 4.29% gives a +45 bps spread — NIM expansion in real time. But I am watching the September 16 FOMC meeting like a hawk. If Warsh loses control of the committee and the dissents grow, the curve flattens and the bank thesis stalls. If he holds the line, XLF breaks $57.60. I am 40% cash. I want to buy the breakout, not chase it. JPM above $355 is the confirmation signal."*
+**Ophelia:** *"I told you the curve would speak, and this week it changed languages. For the first time this cycle, the steepening is coming from the front end falling — dovish steepening, the kindest kind for banks. Oil below $80 removes the one scenario that scared me. I was 40% cash on this sector waiting for the breakout; I am now inclined to buy the first dip rather than wait for $58.00 to confirm, because the macro configuration — falling short rates, stable long rates, calm credit, soft dollar — is the best I have seen for financials in two years. But Jackson Hole is a live mic, and VIX 14.90 is cheap insurance weather. Respect the calendar."*
 
-**Marky:** *"The tape has spoken. JPM and BAC are consolidating at all-time-high altitude. That is not a sector in trouble — that is a sector in leadership rotation. XLF's +6.53% in four weeks is the tell. The volume pattern on the breakout was strong (49M on earnings day). The pullback since is on declining volume — classic bullish consolidation. I am watching $57.60. A close above that with volume >40M and I am buying XLF with both hands. On the individual names: JPM is the flagship. BAC is the beta play. PNC is the stealth breakout. GS is a buy on any pullback to $980."*
+**Marky:** *"Friday printed $58.00 and closed at $57.60 — the highest weekly close in XLF's history, and it happened while everyone was staring at semis. That is stealth strength. Three weeks of tight consolidation under resistance, both MAs rising, BAC already through its high. I want the weekly close above $58.00 for confirmation, but I am not waiting for an invitation if the week opens soft — a pullback to $56.50–57.00 that holds is a buy. On the names: BAC is the breakout leader, JPM is $2 from its high, USB and PNC are coiled. GS above $1,040 ends the digestion."*
 
-**Cecil:** *"The fundamentals have never been better. JPM at 15x P/E with a 41% profit jump is not expensive — it is fairly priced for excellence. The regional banks are where the value lives: TFC at 11.9x P/E and 4.01% yield. USB at 12.6x and 3.30% yield. PNC at 13.8x and 3.20% yield. These are compounders in a steepening curve. But I must apply Rule 2: verify the cash flow. The Q2 earnings showed NIM expanding and reserve builds stable. The CRE overhang is fading, not growing. The Basel III reversal is the cherry on top — lower capital requirements mean higher ROE, which means higher fair value. I am incrementally bullish."*
+**Cecil:** *"The fundamentals did not move this week — the discount rate did, and in our favor. Falling short rates mean deposit costs fall; steep curves mean loan margins hold; calm credit means reserves stay put. TFC at 11.9x with a 4.01% yield, USB at 12.6x with a 3.30% yield, WFC at 12.6x — the value lane is intact and now has a macro tailwind instead of a macro question mark. Rule 2 is satisfied. My only caution is the same as the technicians': do not pay breakout prices before the breakout confirms. Quality is patient."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLF, JPM, BAC, WFC, C, GS, MS, PNC, USB, TFC, HOPE, CUBI, BANR, WAFD live data (August 1, 2026)
-- FRED: DGS10 (4.74%, Jul 31), DGS2 (4.29%, Jul 31), T10Y2Y (+45 bps), FEDFUNDS (3.65% Jul)
+- Yahoo Finance: XLF, JPM, BAC, WFC, C, GS, MS, PNC, USB, TFC, HOPE, CUBI, BANR, WAFD live data (August 7, 2026 closes)
+- FRED: DGS10 (4.66%, Aug 7), DGS2 (~4.00% stale proxy), T10Y2Y (~+66 bps stale proxy), FEDFUNDS (3.65%)
 - Federal Reserve: FOMC Statement (July 29, 2026), Implementation Note (July 29, 2026)
-- Cboe: VIX spot, VIX term structure
+- Cboe: VIX spot (14.90, Aug 7), VIX term structure
+- wiki/canary-watch.md (2026-08-08): cross-asset board, rotation flows, correlation matrix
 - Federal Reserve / FDIC / OCC: Basel III endgame re-proposal (Mar 19, 2026)
 - Trepp: CMBS delinquency data, CRE price indices
-- MarketBeat / Simply Wall St / TipRanks: HOPE, CUBI, BANR, WAFD Q2 2026 earnings summaries
+- MarketBeat / Simply Wall St / TipRanks: HOPE, CUBI, BANR, WAFD earnings summaries
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-08-02***
+*Last updated by Saturday Research Crew: **2026-08-08** (completed by the main session after the scheduled job hit two provider-stream interruptions and a 60-minute timeout — flagged for the cron-ops review)*
 *Next update: Every Saturday 10:29 AM ET*
 *Data sources: Yahoo Finance, FRED, Cboe, Federal Reserve, FDIC, OCC, Trepp*
