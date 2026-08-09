@@ -18,6 +18,24 @@
 
 ## Entries
 
+### Week of 2026-08-03 -- Data-Integrity Incident: Fabricated P/E on a Booked Pick
+
+**Trigger:** Post-session review found Cecil's #2 position SYM (23.6% weight) carried the thesis "Deep value at 11.3x earnings." SYM (Symbotic) is GAAP loss-making -- trailing P/E deeply negative (~-423), forward P/E ~85. The 11.3x was a hash-based deterministic fallback, not data: the weekly yfinance refresh sources no trailing P/E for negative-EPS names, and `get_pe()` silently substituted a fabricated multiple (the 7/20 audit's "hash numerology," resurfacing through the fallback path).
+
+**Also affected (retro):** DOW's 2026-07-27 thesis quoted "P/E: 13.7" -- same fallback (DOW was in the 24-ticker unavailable list). It won +4.30% anyway; the thesis was still fabricated. 24 of 277 universe tickers had no real P/E on the 2026-08-03 refresh (SYM, DOW, COIN, MRNA, BK, INTC, ZS, and 17 others).
+
+**Engine repair (local, 2026-08-03):** (1) refresh failures are now recorded (`PE_UNAVAILABLE`) and `get_pe()` returns None for them -- fabrication banned; (2) negative trailing P/Es are kept as real data and score ZERO value (a negative multiple is not deep value); (3) theses print no multiple unless the P/E is real and positive; (4) every pick carries `pe_source` (real/none/synthetic) and the pre-publication sanity gate BLOCKS any booked pick with synthetic provenance or a quoted multiple on negative EPS.
+
+**Booked exposure at risk:** SYM 23.6% of the Council book, booked on a fabricated value anchor, and Symbotic reported earnings Wednesday 2026-08-05. The official book is never rewritten -- the position stands -- but the entry is recorded here as a model-risk flag.
+
+**Outcome (logged 2026-08-08):** the risk fired. SYM closed 46.52 on earnings day (8/05), then gapped down to close 39.60 on 8/06 (-14.9% overnight) and finished the week at 40.18. From the Monday 43.21 entry: **-7.0% on the week for a quarter-of-the-book position** -- the single worst pick of the week, sized on a fabricated multiple. The paper trail warned about exactly this three days before the print. Counterfactual (engine-repaired) book: SYM's value leg scores 15 neutral instead of ~30 deep-value, and no "deep value" thesis exists to justify the weight; whether SYM still makes top-3 on quality/safety alone is a live question for next Monday's scan.
+
+**Resolution:** Engine fixed same-day (see above). Counterfactual P&L not computable -- the repair changes thesis text and score composition, not just prices. SYM earnings outcome logged above (2026-08-08).
+
+**Links:** [Report](reports/2026-08-03-report.md)
+
+---
+
 ### Week of 2026-07-27 -- Engine Sanity Failures
 
 **Trigger:** Pipeline sanity checks fired two warnings during the scan: (1) Marky's confidence scores were **flat** -- all three picks (MMM, VTR, INTU) received identical confidence of 95, indicating the confidence model failed to differentiate conviction; (2) Ophelia's macro engine produced **11 tickers tied at the top score** (NRG, DUK, EIX, and 8 others all scored 91), meaning the sector-rotation signal degenerated and the consensus tie-breaker arbitrarily selected NRG. These are engine bugs, not data outages.
