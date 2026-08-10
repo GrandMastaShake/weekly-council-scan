@@ -18,6 +18,36 @@
 
 ## Entries
 
+### Week of 2026-08-10 -- ENGINE ABORT: Sanity Gate Blocked the Book (4-Way Tie at 108.00)
+
+**Trigger:** The pre-publication sanity gate (hard block, 2026-07-30 doctrine) fired during the 9:03 AM scan: Ophelia's engine produced **4 tickers tied at exactly 108.00** (MSFT, NOW, ORCL, AVGO -- identical base scores plus identical +6 wiki nudges), exceeding the 3-tie limit. Root causes, found same-session: (1) **SPY alias bug** -- `resolve_ticker_alias` maps SPY -> 'S&P 500' but the live price cache keys 'SPY', so every SPY history lookup silently returned []; Ophelia's market-regime term was flat-15 for all names, her volatility discount was zeroed, and her regime theses mislabeled a +3.2% SPY week 'bearish'. (2) **Clamp saturation** -- with Technology up +7.3% on the week, rotation 40 + flow 12 + regime 30 + momentum 12 + rel 8 all pinned at their ceilings for every strong Tech name, making exact ties arithmetically certain.
+
+**Engine repairs shipped same-session (local scan_pipeline):** (1) `get_price_history` now falls back to the raw ticker when the alias resolves to an uncached key; (2) Ophelia Fix 5 de-saturation -- vol band widened 1x -> 4x SPY vol, weekly-momentum clamp +5% -> +12%, relative-momentum clamp +5pp -> +15pp. The repaired engine differentiates cleanly (Ophelia: VSAT 86.9 / ZS 79.0 / HPE 75.6; Marky: AXON 88.4 / VRTX 83.9 / VSAT 81.7; Cecil: PPG 77.0 / ACN 76.1 / SMCI 70.7) and passes the gate.
+
+**Booked (official, Tracker-measured):** NOTHING. The hard rule is explicit -- a failed gate means no book, and a mid-session repair does not un-fire the gate. Cash is a position. This is the first abort in the Council's history.
+
+**Shadow (what the repaired engine would have booked):**
+
+| Ticker | Weight | Sponsor | Rationale |
+|---|---|---|---|
+| VSAT | 26.0% | Ophelia | Technology rotation anchor; macro score 111; also Marky's #3 (breakout, score 99) |
+| AXON | 25.0% | Marky | Strongest tape: +16.0% 4W return, breakout above 4-week MA |
+| PPG | 20.0% | Cecil | Deep value at a REAL 16.9x (pe_source: real); score 87 |
+| VRTX | 15.8% | Marky | Low-vol uptrend, 2.3% weekly vol, score 99 |
+| ACN | 13.2% | Cecil | Quality at a real 14.0x; booked last week at 27.4% and returned +3.46% |
+
+**Overlap:** n/a (no official book).
+
+**Notes:** The shadow book would have run 100% allocated into a week with 3+ regime flags raised (NFP -23K broken threshold, DXY <100 second week, VIX 14.90 complacency) and the July CPI binary on Tuesday 8/12 -- the 10% cash floor (2026-08-09 doctrine) would have forced a trim of ACN or VRTX to ~90% had this book been eligible. Also note the abort killed a genuinely differentiated Cecil/Marky signal to punish an Ophelia engine defect; the repair, not the abort, is the fix. Second Ophelia tie in three weeks (11-way 2026-07-27, 4-way today) -- her harness revision is now on the table per scoreboard escalation rule 5.
+
+**Counterfactual P&L:** to be computed (next Monday close: VSAT/AXON/PPG/VRTX/ACN Monday 2026-08-10 closes -> Friday 2026-08-14 closes, weights above; vs official book = cash = 0.00%).
+
+**Resolution:** Abort honored. Repairs shipped local-only (scan_pipeline is not in the repo). Next Monday's gate is the test of Fix 5. Logged 2026-08-10.
+
+**Links:** [Report](reports/2026-08-10-report.md)
+
+---
+
 ### Week of 2026-08-03 -- Data-Integrity Incident: Fabricated P/E on a Booked Pick
 
 **Trigger:** Post-session review found Cecil's #2 position SYM (23.6% weight) carried the thesis "Deep value at 11.3x earnings." SYM (Symbotic) is GAAP loss-making -- trailing P/E deeply negative (~-423), forward P/E ~85. The 11.3x was a hash-based deterministic fallback, not data: the weekly yfinance refresh sources no trailing P/E for negative-EPS names, and `get_pe()` silently substituted a fabricated multiple (the 7/20 audit's "hash numerology," resurfacing through the fallback path).
