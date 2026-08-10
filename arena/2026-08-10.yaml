@@ -1,0 +1,60 @@
+week: '2026-08-10'
+lock: 2026-08-10 08:50 ET
+entry_date: '2026-08-10'
+exit_date: '2026-08-14'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 772.6
+  entry_price_source: open
+players:
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: BTC
+    weight: 0.2
+    entry_price: 28.69
+    entry_price_source: open
+  - ticker: VIK
+    weight: 0.15
+    entry_price: 104.89
+    entry_price_source: open
+  - ticker: NVDA
+    weight: 0.25
+    entry_price: 223.45
+    entry_price_source: open
+  - ticker: LPG
+    weight: 0.2
+    entry_price: 45.35
+    entry_price_source: open
+  - ticker: FRO
+    weight: 0.2
+    entry_price: 39.85
+    entry_price_source: open
+- player: GrandMastaShake
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: ALB
+    weight: 0.25
+    entry_price: 131.38
+    entry_price_source: open
+  - ticker: NEM
+    weight: 0.15
+    entry_price: 115.0
+    entry_price_source: open
+  - ticker: ETN
+    weight: 0.15
+    entry_price: 453.9
+    entry_price_source: open
+  - ticker: COIN
+    weight: 0.15
+    entry_price: 153.49
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.3
+    entry_price: 134.965
+    entry_price_source: open

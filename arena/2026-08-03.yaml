@@ -1,39 +1,55 @@
-week: 2026-08-03
-lock: "2026-08-03 08:50 ET"
-entry_date: 2026-08-03
-exit_date: 2026-08-07
-status: open
+week: '2026-08-03'
+lock: 2026-08-03 08:50 ET
+entry_date: '2026-08-03'
+exit_date: '2026-08-07'
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 749.44
   entry_price_source: open
+  exit_price: 773.26
+  return_pct: 3.18
 players:
-  - player: Umassalum
-    valid: true
-    total_weight: 1.0
-    cash_weight: 0.0
-    picks:
-      - ticker: AAPL
-        weight: 0.25
-        entry_price: 309.67
-        entry_price_source: open
-      - ticker: MSFT
-        weight: 0.2
-        entry_price: 476.395
-        entry_price_source: open
-      - ticker: CRM
-        weight: 0.15
-        entry_price: 188.99
-        entry_price_source: open
-      - ticker: VIK
-        weight: 0.15
-        entry_price: 106.55
-        entry_price_source: open
-      - ticker: LLY
-        weight: 0.15
-        entry_price: 1152.0
-        entry_price_source: open
-      - ticker: NTAP
-        weight: 0.1
-        entry_price: 179.396
-        entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: AAPL
+    weight: 0.25
+    entry_price: 309.58
+    entry_price_source: open
+    exit_price: 313.33
+    return_pct: 1.21
+  - ticker: MSFT
+    weight: 0.2
+    entry_price: 476.13
+    entry_price_source: open
+    exit_price: 499.99
+    return_pct: 5.01
+  - ticker: CRM
+    weight: 0.15
+    entry_price: 188.99
+    entry_price_source: open
+    exit_price: 192.74
+    return_pct: 1.98
+  - ticker: VIK
+    weight: 0.15
+    entry_price: 106.55
+    entry_price_source: open
+    exit_price: 105.79
+    return_pct: -0.71
+  - ticker: LLY
+    weight: 0.15
+    entry_price: 1152.0
+    entry_price_source: open
+    exit_price: 1185.71
+    return_pct: 2.93
+  - ticker: NTAP
+    weight: 0.1
+    entry_price: 179.06
+    entry_price_source: open
+    exit_price: 189.52
+    return_pct: 5.84
+  weekly_return_pct: 2.52
+  alpha_vs_spy_pct: -0.66
