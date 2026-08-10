@@ -12,7 +12,10 @@ Modes:
                 file's own generated date (< 8 days old).
   --lint        Holdings linter: extract (TICKER, $price) pairs from wiki
                 tables and compare against live closes (WARN >3%, FAIL >15%);
-                WoW arithmetic lint on rows carrying a weekly-change column.
+                WoW arithmetic lint on rows carrying a weekly-change column;
+                column-aware YTD arithmetic lint on rows carrying a YTD
+                column; weight-column sum check (any table whose weights sum
+                past 100% is internally impossible).
                 Skips estimate/target/market-cap rows and earnings-calendar
                 sections (their $ figures are not current prices).
   --quarantine  Phantom-anomaly bans from macro/quarantine.json (ticker +
@@ -228,7 +231,7 @@ TICKER_RE = re.compile(r"(?<![A-Za-z0-9/])([A-Z][A-Z0-9.]{0,4})(?![A-Za-z0-9/])"
 # B/M/K suffix after a $ amount = market cap / revenue / volume, not a price.
 PRICE_RE = re.compile(
     r"\*\*\$([\d,]+\.\d{2})\*\*(?!\s*[BMK]\b)|\$([\d,]+\.\d{2})(?!\s*[BMK]\b)")
-WOW_RE = re.compile(r"([+\-\u2212]\s?\d+(?:\.\d+)?)\s?%")
+WOW_RE = re.compile(r"([+\-−]\s?\d+(?:\.\d+)?)\s?%")
 
 # Sections whose $ figures are estimates/targets, never current prices.
 SKIP_SECTION_RE = re.compile(r"earnings|calendar|analyst|target", re.I)
@@ -240,17 +243,54 @@ SKIP_LINE_RE = re.compile(
 # Phantom-EPS detector: "$X EPS" claims inside table rows (post-quarantine net).
 EPS_CLAIM_RE = re.compile(r"\$([\d,]+(?:\.\d+)?)\s*(?:EPS|per share)", re.I)
 
+# --- table-structure helpers (column-aware YTD / weight-sum lint) ------------
+TABLE_SEP_RE = re.compile(r"^\s*\|[\s:|-]+\|\s*$")
+YTD_HDR_RE = re.compile(r"\bytd\b|year.to.date", re.I)
+WOW_HDR_RE = re.compile(r"\bw/w\b|\bwow\b|weekly|1\s?w\b|\bweek\b", re.I)
+WEIGHT_HDR_RE = re.compile(r"\bweight\b|\bwt\b|allocation", re.I)
+PCT_CELL_RE = re.compile(r"([+\-−]?\s?\d+(?:\.\d+)?)\s*%")
+
+
+def split_cells(line):
+    return [c.strip() for c in line.strip().strip("|").split("|")]
+
+
+def parse_pct(cell):
+    m = PCT_CELL_RE.search(cell or "")
+    if not m:
+        return None
+    try:
+        return float(m.group(1).replace("−", "-").replace(" ", ""))
+    except ValueError:
+        return None
+
 
 def extract_price_rows(text):
-    """Yield (ticker, price, wow_pct_or_None, line_snippet) per candidate row."""
+    """Yield (ticker, price, wow_pct, ytd_pct, line_snippet) per row."""
     section = ""
+    pending = None   # candidate header row, confirmed by the --- separator
+    cols = None
     for line in text.splitlines():
         hm = HEADER_RE.match(line)
         if hm:
             section = hm.group(1)
+            pending = None
+            cols = None
             continue
-        if not line.strip().startswith("|"):
+        s = line.strip()
+        if not s.startswith("|"):
+            pending = None
+            cols = None
             continue
+        if TABLE_SEP_RE.match(s):
+            if pending is not None:
+                cols = split_cells(pending)
+            pending = None
+            continue
+        if cols is None:
+            pending = s
+            continue
+        # data row inside a parsed table
         if SKIP_SECTION_RE.search(section) or SKIP_LINE_RE.search(line):
             continue  # estimates / targets / caps are not current prices
         pm = PRICE_RE.search(line)
@@ -269,13 +309,22 @@ def extract_price_rows(text):
         if not ticker:
             continue
         wow = None
-        wm = WOW_RE.search(line, pm.end())
-        if wm:
-            try:
-                wow = float(wm.group(1).replace("\u2212", "-").replace(" ", ""))
-            except ValueError:
-                pass
-        yield ticker, price, wow, line.strip()[:80]
+        ytd = None
+        cells = split_cells(s)
+        if len(cells) == len(cols):
+            for i, h in enumerate(cols):
+                if YTD_HDR_RE.search(h):
+                    ytd = parse_pct(cells[i])
+                elif WOW_HDR_RE.search(h):
+                    wow = parse_pct(cells[i])
+        if wow is None:
+            wm = WOW_RE.search(line, pm.end())
+            if wm:
+                try:
+                    wow = float(wm.group(1).replace("−", "-").replace(" ", ""))
+                except ValueError:
+                    pass
+        yield ticker, price, wow, ytd, s[:80]
 
 
 def check_lint(repo, rep, max_fetch):
@@ -287,7 +336,7 @@ def check_lint(repo, rep, max_fetch):
     checked = 0
     for f in sorted(wiki.glob("*.md")):
         text = f.read_text(encoding="utf-8", errors="replace")
-        for ticker, price, wow, snip in extract_price_rows(text):
+        for ticker, price, wow, ytd, snip in extract_price_rows(text):
             if fetches >= max_fetch:
                 rep.add("SKIP", f"lint: fetch cap {max_fetch} reached; "
                                 f"remaining rows unchecked")
@@ -317,11 +366,94 @@ def check_lint(repo, rep, max_fetch):
                         rep.add("WARN", f"lint: {f.name} {ticker} WoW row "
                                         f"{wow:+.2f}% vs computed {real_wow:+.2f}% "
                                         f":: {snip}")
+            if ytd is not None:
+                ref = yahoo_close_on_or_before(ticker, _year_start(live_date))
+                if ref:
+                    real_ytd = (live - ref) / ref * 100
+                    if (ytd > 0) != (real_ytd > 0) and abs(real_ytd) > 1.0:
+                        rep.add("WARN", f"lint: {f.name} {ticker} YTD sign "
+                                        f"mismatch: row {ytd:+.2f}% vs computed "
+                                        f"{real_ytd:+.2f}% :: {snip}")
+                    elif abs(real_ytd - ytd) > 3.0:
+                        rep.add("WARN", f"lint: {f.name} {ticker} YTD row "
+                                        f"{ytd:+.2f}% vs computed {real_ytd:+.2f}% "
+                                        f":: {snip}")
     rep.add("OK", f"lint: {checked} priced rows verified against live closes")
+    check_weight_sums(repo, rep)
 
 
 def _week_ago(live_date_str):
     return (dt.date.fromisoformat(live_date_str) - dt.timedelta(days=7)).isoformat()
+
+
+def _year_start(live_date_str):
+    """Prior year's final trading day -- the YTD performance basis."""
+    y = dt.date.fromisoformat(live_date_str).year
+    return f"{y - 1}-12-31"
+
+
+def iter_tables(lines):
+    """Yield (columns, [data_row, ...]) for each well-formed markdown table."""
+    pending = None
+    cols = None
+    rows = []
+    for line in lines:
+        s = line.strip()
+        if s.startswith("|"):
+            if TABLE_SEP_RE.match(s):
+                if pending is not None:
+                    if cols is not None and rows:
+                        yield cols, rows
+                    cols = split_cells(pending)
+                    rows = []
+                pending = None
+            elif cols is None:
+                pending = s
+            else:
+                rows.append(s)
+        else:
+            if cols is not None and rows:
+                yield cols, rows
+            pending = None
+            cols = None
+            rows = []
+    if cols is not None and rows:
+        yield cols, rows
+
+
+def check_weight_sums(repo, rep):
+    """Weight-column arithmetic: top-holdings excerpts correctly sum below
+    100%; any table whose Weight column sums PAST 100% is internally
+    impossible (double-counted row, duplicated holding, or bad carry)."""
+    wiki = repo / "wiki"
+    if not wiki.is_dir():
+        return
+    tables_checked = 0
+    for f in sorted(wiki.glob("*.md")):
+        lines = f.read_text(encoding="utf-8", errors="replace").splitlines()
+        for cols, rows in iter_tables(lines):
+            widx = [i for i, h in enumerate(cols) if WEIGHT_HDR_RE.search(h)]
+            if not widx:
+                continue
+            i = widx[0]
+            total = 0.0
+            n = 0
+            for r in rows:
+                cells = split_cells(r)
+                if len(cells) != len(cols):
+                    continue
+                v = parse_pct(cells[i])
+                if v is not None:
+                    total += v
+                    n += 1
+            if n >= 3:
+                tables_checked += 1
+                if total > 100.5:
+                    rep.add("FAIL", f"lint: {f.name} '{cols[i]}' column sums to "
+                                    f"{total:.1f}% across {n} rows (>100%) -- "
+                                    f"impossible table")
+    rep.add("OK", f"lint: {tables_checked} weight table(s) sum-checked "
+                  f"(failures reported above)")
 
 
 # ------------------------------------------------------------------ quarantine
