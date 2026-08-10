@@ -24,6 +24,19 @@ moved since Saturday), the wiki says so explicitly — it never silently diverge
   `stale: true` and are treated as directional only.
 - Computed fields (`curve_10y_3m_bps` etc.) must recompute from their inputs.
 
+## quarantine.json (phantom-anomaly bans)
+
+- A ban list for **known-fabricated values** from past data outages — numbers that
+  were never real and must never reappear in any wiki or report.
+- Schema: `[{"ticker": "GOOGL", "banned": "9.11", "reason": "...", "added": "..."}]`.
+  A wiki line containing BOTH the ticker and the banned string = FAIL.
+- Seed entry: the GOOGL `$9.11` ghost EPS from the 2026-07-21 data outage.
+- Any agent that confirms a fabricated number ADDs a ban entry here (with reason
+  and date) instead of just fixing the row — fixing without banning leaves the
+  ghost free to re-enter next week.
+- `truth_check.py --quarantine` also runs a generic net: a `$X EPS` claim inside a
+  table row is flagged when X exceeds 20% of the share price in the same row.
+
 ## truth_check.py (scripts/)
 
 Stdlib-only validators. The cron jobs download repo files to a local temp dir and
@@ -31,7 +44,7 @@ run it there — the workspace is NOT a repo clone (never run it against a check
 
 ```
 python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
-       [--warn-days 7] [--fail-days 14] [--max-fetch 60]
+       [--quarantine] [--warn-days 7] [--fail-days 14] [--max-fetch 60]
 ```
 
 (no mode flag = run everything; exit 1 on any FAIL)
@@ -44,6 +57,11 @@ python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
 | **Spread arithmetic** — computed curve spreads recompute | — | off by > 3 bps |
 | **Holdings lint** — (TICKER, $price) rows in wiki tables vs live closes | dev > 3% | dev > 15% = impossible row |
 | **WoW arithmetic** — weekly-change columns recomputed | sign flip or off by > 2 pts | — |
+| **Quarantine** — banned (ticker, value) pairs from quarantine.json; phantom-EPS net | quarantine.json missing | any ban hit; EPS claim > 20% of same-row price |
+
+Lint scope note (v2, 2026-08-09): the linter skips estimate / price-target /
+market-cap rows and earnings-calendar / analyst sections — their $ figures are
+not current prices. Tickers glued to slashes (`W/W`, `P/E`) are not matches.
 
 ## Who runs what, when (folded into EXISTING jobs — cron grid is full)
 
@@ -60,6 +78,8 @@ python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
 - **Weekly lint:** Monday job also runs `--lint` when time permits; impossible rows
   get flagged in the report and repaired in place (with a note) or queued for the
   next Saturday crew prompt.
+- **Quarantine:** Monday job runs `--quarantine` alongside `--lint`. Confirmed
+  fabrications get a ban entry added to `macro/quarantine.json` the same session.
 
 ## Canonical earnings calendar
 
@@ -77,3 +97,5 @@ catalysts, but the date column defers to surveillance.
 - Silent Saturday failures (2026-08-08: three wikis missed their runs and nobody
   knew until a human diffed commit history — the TTL check makes that automatic)
 - Arithmetic that doesn't survive a calculator (T carry +52 vs −10 bps)
+- Phantom values with no tombstone (GOOGL $9.11 ghost EPS — now banned, and the
+  ban itself is machine-checked every Monday)
