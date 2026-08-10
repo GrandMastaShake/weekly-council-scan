@@ -267,7 +267,7 @@ Two weeks ago we wrote: *"the size of the beat matters less than the story behin
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
 | **Tesla** | **TSLA** | Jul 22 | $0.54 | **$0.33** | **-38.9%** 💥 | **-15.63%** 💥 | **THE CRASH OF THE SEASON — a catastrophic miss on every metric. The meme-stock wildcard detonated.** |
-| **Alphabet** | **GOOGL** | Jul 22 | $2.90 | *anomalous* | *N/A* | **-8.49%** 💥 | **THE NARRATIVE COLLAPSE — corrupted Yahoo Finance EPS print ($9.11), but the stock crashed -8.5%. Search/Cloud weakness and AI monetization doubts are real.** |
+| **Alphabet** | **GOOGL** | Jul 22 | $2.90 | *anomalous* | *N/A* | **-8.49%** 💥 | **THE NARRATIVE COLLAPSE — corrupted Yahoo Finance EPS print (phantom value, quarantined 2026-08-09), but the stock crashed -8.5%. Search/Cloud weakness and AI monetization doubts are real.** |
 | **Lockheed Martin** | **LMT** | Jul 23 | $7.20 | **$7.94** | **+10.3%** | **+13.27%** 🚀 | **THE SURPRISE OF THE SEASON — beat and rallied hard. Defense backlog is real, F-35 deliveries are accelerating.** |
 | **Intel** | **INTC** | Jul 23 | $0.22 | **$0.42** | **+90.9%** 🔥 | **-10.04%** 💥 | **The mother of all beats — and the stock STILL crashed. The market doesn't trust the turnaround.** |
 | **ServiceNow** | **NOW** | Jul 22 | $0.86 | **$0.90** | **+4.7%** | **-9.92%** 💥 | **Beat and crashed — enterprise software spend is slowing, and the AI monetization lag is hurting.** |
