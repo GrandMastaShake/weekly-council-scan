@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-03 | -1.03% (Tracker P&L) | 40% | TBD | TBD | ACN (3.46%) | SYM (-9.50%) | 0.0% |
 | 2026-08-03 | B- (2.9 -- analysis quality) | TBD (week open) | Marky (3.1) | Ophelia (2.6 -- REGN vs own stance) | BMY (B+) | REGN (C) | 0% |
 | 2026-07-27 | -1.52% | 20% | TBD | TBD | DOW (4.30%) | VTR (-7.04%) | 0.1% |
 | 2026-07-20 | -1.83% (Tracker P&L) | 40% | TBD | TBD | AMAT (2.22%) | ADBE (-7.85%) | 0.0% |
@@ -265,8 +266,8 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-03
-**Next Audit:** 2026-08-10 (Tracker close + narrative grades)
+**Last Updated:** 2026-08-10
+**Next Audit:** 2026-08-17 (Tracker close + narrative grades)
 **Current Regime:** Restrictive — VIX 15.99, SPY +1.1% wk, post-Super Bowl dispersion
 
 ---

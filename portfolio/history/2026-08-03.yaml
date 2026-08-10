@@ -1,0 +1,89 @@
+week: '2026-08-03'
+status: closed
+positions:
+- ticker: ACN
+  weight: 0.27399999999999997
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 13.5. Score: 91. (confidence:
+    78.9)'
+  entry_price: 169.83999633789062
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 175.72000122070312
+  exit_date: '2026-08-07'
+  exit_reason: week_end
+  pnl_pct: 3.46
+- ticker: SYM
+  weight: 0.23600000000000002
+  sponsor: Cecil
+  thesis: 'Deep value at 11.3x earnings with solid fundamentals. Score: 95. (confidence:
+    84)'
+  entry_price: 44.400001525878906
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 40.18000030517578
+  exit_date: '2026-08-07'
+  exit_reason: week_end
+  pnl_pct: -9.5
+- ticker: INTU
+  weight: 0.2
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 4-week MA. 4W return: 11.8%. (confidence:
+    87.8)'
+  entry_price: 329.239990234375
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 325.25
+  exit_date: '2026-08-07'
+  exit_reason: week_end
+  pnl_pct: -1.21
+- ticker: REGN
+  weight: 0.17800000000000002
+  sponsor: Ophelia
+  thesis: 'Aligned with Healthcare sector rotation. Macro score: 92. (confidence:
+    78)'
+  entry_price: 762.3250122070312
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 784.3599853515625
+  exit_date: '2026-08-07'
+  exit_reason: week_end
+  pnl_pct: 2.89
+- ticker: BMY
+  weight: 0.11199999999999999
+  sponsor: Ophelia
+  thesis: 'Benefiting from the bearish market regime. Score: 91. (confidence: 73.7)'
+  entry_price: 64.76010131835938
+  entry_date: '2026-08-03'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 64.72000122070312
+  exit_date: '2026-08-07'
+  exit_reason: week_end
+  pnl_pct: -0.06
+spy_entry: 752.77001953125
+vix_at_entry: 16.0
+fed_stance: Hold. 3.50-3.75% held Jul 29 (9-3; three dissents for a hike); hawkish
+  tilt, no forward guidance.
+total_weight: 1.0
+cash_weight: 0.0
+weighted_return: -1.03
+spy_return: 2.72
+alpha: -3.75
+spy_exit: 773.260009765625
+close_date: '2026-08-07'
+hit_rate: 0.4
