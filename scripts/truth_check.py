@@ -13,13 +13,19 @@ Modes:
   --lint        Holdings linter: extract (TICKER, $price) pairs from wiki
                 tables and compare against live closes (WARN >3%, FAIL >15%);
                 WoW arithmetic lint on rows carrying a weekly-change column.
+                Skips estimate/target/market-cap rows and earnings-calendar
+                sections (their $ figures are not current prices).
+  --quarantine  Phantom-anomaly bans from macro/quarantine.json (ticker +
+                banned value co-occurring = FAIL) plus a generic phantom-EPS
+                net (EPS claim > 20% of same-row share price = FAIL).
   --all         Everything (default when no mode flag is given).
 
 Exit code 1 if any FAIL, else 0. Every line is prefixed OK/WARN/FAIL/SKIP.
 
 Usage:
   python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
-         [--warn-days 7] [--fail-days 14] [--today YYYY-MM-DD] [--max-fetch 60]
+         [--quarantine] [--warn-days 7] [--fail-days 14] [--today YYYY-MM-DD]
+         [--max-fetch 60]
 """
 
 import argparse
@@ -214,17 +220,39 @@ STOPWORDS = {
     "USD", "WTI", "DXY", "VIX", "VVIX", "CDS", "IPO", "PPP", "SEC", "FDA",
     "CURRENT", "PRICE", "RANK", "TICKER", "NAME", "WEIGHT", "HIGH", "LOW",
     "VS", "EST", "AVG", "MAX", "MIN", "NIL", "TLT", "US", "UK", "EU", "BoJ",
+    "A", "I",
 }
-TICKER_RE = re.compile(r"\b([A-Z][A-Z0-9.]{0,4})\b")
-PRICE_RE = re.compile(r"\*\*\$([\d,]+\.\d{2})\*\*|\$([\d,]+\.\d{2})")
+# Lookarounds: a ticker must not be glued to letters/digits/slashes on either
+# side -- kills "W/W" (WTI weekly), "P/E", "10Y" fragments, "Q3/Q4".
+TICKER_RE = re.compile(r"(?<![A-Za-z0-9/])([A-Z][A-Z0-9.]{0,4})(?![A-Za-z0-9/])")
+# B/M/K suffix after a $ amount = market cap / revenue / volume, not a price.
+PRICE_RE = re.compile(
+    r"\*\*\$([\d,]+\.\d{2})\*\*(?!\s*[BMK]\b)|\$([\d,]+\.\d{2})(?!\s*[BMK]\b)")
 WOW_RE = re.compile(r"([+\-\u2212]\s?\d+(?:\.\d+)?)\s?%")
+
+# Sections whose $ figures are estimates/targets, never current prices.
+SKIP_SECTION_RE = re.compile(r"earnings|calendar|analyst|target", re.I)
+HEADER_RE = re.compile(r"^\s{0,3}#{1,4}\s+(.*)$")
+# Rows whose $ figure is an EPS estimate, price target, or market cap even
+# outside a skippable section header.
+SKIP_LINE_RE = re.compile(
+    r"\bEPS\b|price target|\bPT\s|estimate|market cap", re.I)
+# Phantom-EPS detector: "$X EPS" claims inside table rows (post-quarantine net).
+EPS_CLAIM_RE = re.compile(r"\$([\d,]+(?:\.\d+)?)\s*(?:EPS|per share)", re.I)
 
 
 def extract_price_rows(text):
     """Yield (ticker, price, wow_pct_or_None, line_snippet) per candidate row."""
+    section = ""
     for line in text.splitlines():
+        hm = HEADER_RE.match(line)
+        if hm:
+            section = hm.group(1)
+            continue
         if not line.strip().startswith("|"):
             continue
+        if SKIP_SECTION_RE.search(section) or SKIP_LINE_RE.search(line):
+            continue  # estimates / targets / caps are not current prices
         pm = PRICE_RE.search(line)
         if not pm:
             continue
@@ -296,6 +324,60 @@ def _week_ago(live_date_str):
     return (dt.date.fromisoformat(live_date_str) - dt.timedelta(days=7)).isoformat()
 
 
+# ------------------------------------------------------------------ quarantine
+
+def check_quarantine(repo, rep):
+    """Phantom-anomaly quarantine: banned values from past data outages must
+    never reappear in any wiki. List lives in macro/quarantine.json:
+      [{"ticker": "GOOGL", "banned": "9.11", "reason": "...", "added": "..."}]
+    A line containing BOTH the ticker and the banned string = FAIL.
+    Also runs a generic phantom-EPS net: a $X EPS claim inside a table row is
+    absurd when X exceeds 20% of the share price shown in the same row."""
+    qpath = repo / "macro" / "quarantine.json"
+    entries = []
+    if qpath.exists():
+        try:
+            entries = json.loads(qpath.read_text(encoding="utf-8"))
+        except Exception as e:
+            rep.add("FAIL", f"quarantine: macro/quarantine.json unreadable ({e})")
+            return
+    else:
+        rep.add("WARN", "quarantine: macro/quarantine.json not found -- "
+                        "no phantom bans active")
+    wiki = repo / "wiki"
+    if not wiki.is_dir():
+        rep.add("FAIL", f"quarantine: {wiki} not found")
+        return
+    hits = 0
+    for f in sorted(wiki.glob("*.md")):
+        for n, line in enumerate(f.read_text(
+                encoding="utf-8", errors="replace").splitlines(), 1):
+            for e in entries:
+                tick, banned = e.get("ticker", ""), e.get("banned", "")
+                if tick and banned and tick in line and banned in line:
+                    hits += 1
+                    rep.add("FAIL", f"quarantine: {f.name}:{n} contains banned "
+                                    f"{tick} value '{banned}' "
+                                    f"({e.get('reason', 'no reason recorded')}) "
+                                    f":: {line.strip()[:80]}")
+            # generic phantom-EPS net (table rows only)
+            if line.strip().startswith("|"):
+                em = EPS_CLAIM_RE.search(line)
+                pm = PRICE_RE.search(line)
+                if em and pm:
+                    eps = float(em.group(1).replace(",", ""))
+                    price = float((pm.group(1) or pm.group(2)).replace(",", ""))
+                    if price > 0 and eps > price * 0.20:
+                        hits += 1
+                        rep.add("FAIL", f"quarantine: {f.name}:{n} phantom-EPS "
+                                        f"candidate: ${eps} EPS vs ${price} price "
+                                        f"-- quarantine or correct this row "
+                                        f":: {line.strip()[:80]}")
+    if hits == 0:
+        rep.add("OK", f"quarantine: {len(entries)} ban(s) active, no hits; "
+                      f"phantom-EPS net clean")
+
+
 # ----------------------------------------------------------------------- main
 
 def main():
@@ -304,6 +386,7 @@ def main():
     ap.add_argument("--staleness", action="store_true")
     ap.add_argument("--facts", action="store_true")
     ap.add_argument("--lint", action="store_true")
+    ap.add_argument("--quarantine", action="store_true")
     ap.add_argument("--warn-days", type=int, default=7)
     ap.add_argument("--fail-days", type=int, default=14)
     ap.add_argument("--today", default=None, help="YYYY-MM-DD override (testing)")
@@ -312,7 +395,7 @@ def main():
 
     repo = Path(args.repo)
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
-    run_all = not (args.staleness or args.facts or args.lint)
+    run_all = not (args.staleness or args.facts or args.lint or args.quarantine)
     rep = Report()
 
     if run_all or args.staleness:
@@ -321,6 +404,8 @@ def main():
         check_facts(repo, today, rep, args.max_fetch)
     if run_all or args.lint:
         check_lint(repo, rep, args.max_fetch)
+    if run_all or args.quarantine:
+        check_quarantine(repo, rep)
 
     print(rep.render())
     sys.exit(1 if rep.counts["FAIL"] else 0)
