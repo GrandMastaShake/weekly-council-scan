@@ -1,0 +1,8 @@
+[
+  {
+    "ticker": "GOOGL",
+    "banned": "9.11",
+    "reason": "Phantom EPS print from the 2026-07-21 data outage -- never a real GOOGL EPS. Surfaced in wiki rows and was never quarantined (2026-07-28 swarm audit finding).",
+    "added": "2026-08-09"
+  }
+]
