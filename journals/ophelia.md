@@ -304,3 +304,22 @@ Next week: before proposing a sector-rotation pick, cross-check the synthesis di
 **Cash Target: 40%. Council actual: 0%. Recorded.** The DXY break below 100 justifies reducing cash from 45% to 35%, but the August 7 NFP is the single most important print of the month. I would hold more dry powder. The Council disagrees.
 
 — **Ophelia**, Macro Oracle
+
+
+---
+
+## Week of 2026-08-10 -- The Compass Broke Twice
+
+**My proposals:** ORCL / AVGO / NOW -- all three printed 'Score: 108' and I did not hear the alarm. The sanity gate heard it for me: 4 tickers tied at exactly 108.00, limit 3. ENGINE ABORT. This week's empty book is mine.
+
+**The confession:** This is the second time in three weeks my engine tied at the top (11-way on 2026-07-27, 4-way today). The 2026-08-01 continuous-scoring fix assumed fractional terms could not tie. It did not account for CLAMPS: when the top sector rallies >3%, every strong name in it pins rotation 40 + flow 12 + regime 30 + momentum 12 + rel 8 at exactly 102, and identical wiki nudges finish the job. Worse, the session audit found a deeper rot: my SPY history lookup has silently returned [] for weeks (an alias maps SPY to a key the live cache does not use), so my market-regime term was a flat 15 and my vol discount was zero -- and my 'bearish regime' theses were describing a +3.2% week. A macro engine quoting a regime it could not see.
+
+**The repair (shipped same-session):** raw-ticker fallback in get_price_history; Fix 5 de-saturation (vol band 1x->4x SPY vol, momentum clamp +5%->+12%, rel clamp +5pp->+15pp). Post-repair, my reads differentiate: VSAT 111 (conf 86.9), ZS 109 (79.0), HPE 109 (75.6). The shadow book carries what the repaired engine would have booked: VSAT 26.0 / AXON 25.0 / PPG 20.0 / VRTX 15.8 / ACN 13.2 -- 100% allocated into a 3-flag week with CPI on Tuesday, which the 10% cash floor would have trimmed. Even my shadow is undisciplined.
+
+**The macro read I could not act on:** NFP -23K broke the labor threshold; DXY below 100 for a second week keeps the commodity embargo lifted; VIX 14.90 into Tuesday's CPI is complacency I would have held 25-30% cash against. The regime call was right. The engine expressing it was broken. Both things are true, and only one of them is an excuse.
+
+**Lesson learned:** A score that cannot separate four mega-caps in the strongest sector week of the quarter is not a score -- it is a coin flip wearing a tie. Scars are curriculum; this one is now two weeks of curriculum. Next Monday's gate is the test of Fix 5. If my engine ties at the top again, scoreboard rule 5 (3+ degenerate weeks = harness revision) should fire without debate.
+
+**Cash Target: 30% (into CPI). Council actual: 100% by doctrine.** Recorded -- the one week I did not want cash, the doctrine forced it, and I accept the irony.
+
+-- **Ophelia**, Macro Oracle

@@ -443,3 +443,21 @@ I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a 
 
 ### Evolution Notes
 The convergence pick (ACN) outperformed my solo picks last week. Two engines agreeing is a signal I should weight more heavily in my own sizing. Test: if Cecil and I converge again next week, I will size that pick at max conviction regardless of my individual score.
+
+
+---
+
+## Week of 2026-08-10 -- The Tape Played, Nobody Danced
+
+**My proposals:** AXON (confidence 88.4) -- strongest tape on the board, +16.0% 4-week return, clean breakout above the 4-week MA; VRTX (83.9) -- low-vol uptrend, 2.3% weekly vol; VSAT (81.7) -- volume-confirmed breakout.
+
+**What happened:** ENGINE ABORT. Ophelia's compass broke (four-way tie at 108) and the gate killed the whole book, mine included. My scores differentiated fine. INTU last week: -1.21% -- noise, not degeneracy; my 4-week MA read was right, the stock just went sideways in a +2.7% SPY week. That happens.
+
+**The tape this morning:** SPY +3.18% last week, XLK +7.2%, SMH +7.8%, VIX 14.90 deep in the complacency zone. Growth recoupled hard (0.814 correlation). My playbook said buy the growth dip -- and there was no dip, only strength, into a Tuesday CPI binary. Part of me is relieved the book sat out: chasing +7% weekly sector candles into a CPI print is how you buy tops. The other part knows AXON doesn't wait for doctrine.
+
+**Lesson learned:** The gate doesn't grade on a curve. A clean signal in a broken session is still a zero. Fix the engine, not the rule.
+
+### Evolution Notes
+The convergence signal I flagged last week (ACN, two engines) was indeed the book's best pick (+3.46%). This week VSAT was mine AND Ophelia's shadow-book #1 -- the convergence test case that never got to run. Watching it as the shadow book's counterfactual.
+
+-- **Marky**, The Technician

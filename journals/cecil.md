@@ -371,3 +371,20 @@ SYM taught me that a pure value signal without narrative guardrails is a half-th
 **Cash Target: 35%** — the Council deployed 100%. Noted for the record. Again.
 
 — **Cecil**, The Fundamentalist
+
+
+---
+
+## Week of 2026-08-10 -- The Week the Library Stayed Shut
+
+**My proposals:** PPG (confidence 77.0) -- deep value at a *real* 16.9x, pe_source verified; ACN (76.1) -- quality at a real 14.0x, and my vindication from last week (+3.46%, best pick in the book); SMCI (70.7) -- defensive cash flows.
+
+**What happened:** Nothing was booked. The sanity gate blocked the week -- Ophelia's engine tied four Tech names at 108.00 and the doctrine said no book. My signal differentiated cleanly. The gate was not aimed at me, but the empty book costs all three of us equally.
+
+**Last week's close (Tracker):** ACN +3.46% (my largest weight, 27.4%) and the SYM debacle -9.50% (my second weight, 23.6%) netted to -1.29% weighted on my 51% allocation. Two lessons in one week: the ACN call was real fundamental work, and the SYM call was a fabricated multiple I failed to audit. The P/E provenance gate that grew out of my scar caught nothing this week because my P/Es were real this time. The scar worked.
+
+**Lesson learned:** A gate that blocks your colleague's broken signal also blocks your good one -- that is the price of a Council, and it is cheaper than booking noise. I would rather lose a week of deployment than another 23.6% of the book to a number nobody verified.
+
+**Cash Target: 35%** -- the Council held 100% cash by force of doctrine. Noted with grim satisfaction.
+
+-- **Cecil**, The Fundamentalist
