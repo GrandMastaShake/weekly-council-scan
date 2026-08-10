@@ -57,11 +57,15 @@ python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
 | **Spread arithmetic** — computed curve spreads recompute | — | off by > 3 bps |
 | **Holdings lint** — (TICKER, $price) rows in wiki tables vs live closes | dev > 3% | dev > 15% = impossible row |
 | **WoW arithmetic** — weekly-change columns recomputed | sign flip or off by > 2 pts | — |
+| **YTD arithmetic** — YTD columns located by table header, recomputed from the prior-year final close | sign flip or off by > 3 pts | — |
+| **Weight sums** — any table whose Weight column totals past 100% (bad carry / double-counted row) | — | sum > 100.5% = impossible table |
 | **Quarantine** — banned (ticker, value) pairs from quarantine.json; phantom-EPS net | quarantine.json missing | any ban hit; EPS claim > 20% of same-row price |
 
-Lint scope note (v2, 2026-08-09): the linter skips estimate / price-target /
-market-cap rows and earnings-calendar / analyst sections — their $ figures are
-not current prices. Tickers glued to slashes (`W/W`, `P/E`) are not matches.
+Lint scope note (v3, 2026-08-10): the linter parses markdown table structure
+(header + separator) so WoW/YTD/Weight values are matched to their columns by
+header name, not position. It skips estimate / price-target / market-cap rows and
+earnings-calendar / analyst sections — their $ figures are not current prices.
+Tickers glued to slashes (`W/W`, `P/E`) are not matches.
 
 ## Who runs what, when (folded into EXISTING jobs — cron grid is full)
 
