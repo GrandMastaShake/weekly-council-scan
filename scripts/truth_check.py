@@ -11,7 +11,8 @@ Modes:
                 field's tolerance_pct; verify computed spreads; check the
                 file's own generated date (< 8 days old).
   --lint        Holdings linter: extract (TICKER, $price) pairs from wiki
-                tables and compare against live closes (WARN >3%, FAIL >15%);
+                tables and compare against live closes (WARN >3%; FAIL >15%
+                for prices >= $10, >35% for micro-cap prices < $10);
                 WoW arithmetic lint on rows carrying a weekly-change column;
                 column-aware YTD arithmetic lint on rows carrying a YTD
                 column; weight-column sum check (any table whose weights sum
@@ -221,6 +222,7 @@ STOPWORDS = {
     "LTV", "ATH", "AUM", "YTD", "WOW", "IG", "HY", "EM", "SA", "PT", "DA",
     "EPS", "NII", "PPA", "MW", "QoQ", "YoY", "FDIC", "OCC", "FRED", "CBOE",
     "USD", "WTI", "DXY", "VIX", "VVIX", "CDS", "IPO", "PPP", "SEC", "FDA",
+    "VC",
     "CURRENT", "PRICE", "RANK", "TICKER", "NAME", "WEIGHT", "HIGH", "LOW",
     "VS", "EST", "AVG", "MAX", "MIN", "NIL", "TLT", "US", "UK", "EU", "BoJ",
     "A", "I",
@@ -234,8 +236,12 @@ PRICE_RE = re.compile(
 WOW_RE = re.compile(r"([+\-−]\s?\d+(?:\.\d+)?)\s?%")
 
 # Sections whose $ figures are estimates/targets, never current prices.
-SKIP_SECTION_RE = re.compile(r"earnings|calendar|analyst|target", re.I)
-HEADER_RE = re.compile(r"^\s{0,3}#{1,4}\s+(.*)$")
+# surprise/gauntlet/preview/whisper/implied: earnings-surveillance tables
+# carry EPS estimates, surprise %s, and implied moves, not prices.
+SKIP_SECTION_RE = re.compile(
+    r"earnings|calendar|analyst|target|surprise|gauntlet|preview|whisper"
+    r"|implied", re.I)
+HEADER_RE = re.compile(r"^\s{0,3}(#{1,4})\s+(.*)$")
 # Rows whose $ figure is an EPS estimate, price target, or market cap even
 # outside a skippable section header.
 SKIP_LINE_RE = re.compile(
@@ -245,6 +251,8 @@ EPS_CLAIM_RE = re.compile(r"\$([\d,]+(?:\.\d+)?)\s*(?:EPS|per share)", re.I)
 
 # --- table-structure helpers (column-aware YTD / weight-sum lint) ------------
 TABLE_SEP_RE = re.compile(r"^\s*\|[\s:|-]+\|\s*$")
+TICKER_COL_RE = re.compile(r"^\s*(ticker|symbol)\s*$", re.I)
+PRICE_HDR_RE = re.compile(r"\bprice\b|\bclose\b|\blast\b", re.I)
 YTD_HDR_RE = re.compile(r"\bytd\b|year.to.date", re.I)
 WOW_HDR_RE = re.compile(r"\bw/w\b|\bwow\b|weekly|1\s?w\b|\bweek\b", re.I)
 WEIGHT_HDR_RE = re.compile(r"\bweight\b|\bwt\b|allocation", re.I)
@@ -268,12 +276,15 @@ def parse_pct(cell):
 def extract_price_rows(text):
     """Yield (ticker, price, wow_pct, ytd_pct, line_snippet) per row."""
     section = ""
+    section_l2 = ""  # stickiest ## parent -- ### day headers don't reset it
     pending = None   # candidate header row, confirmed by the --- separator
     cols = None
     for line in text.splitlines():
         hm = HEADER_RE.match(line)
         if hm:
-            section = hm.group(1)
+            if len(hm.group(1)) <= 2:
+                section_l2 = hm.group(2)
+            section = hm.group(2)
             pending = None
             cols = None
             continue
@@ -291,34 +302,55 @@ def extract_price_rows(text):
             pending = s
             continue
         # data row inside a parsed table
-        if SKIP_SECTION_RE.search(section) or SKIP_LINE_RE.search(line):
+        if SKIP_SECTION_RE.search(section) or \
+                SKIP_SECTION_RE.search(section_l2) or \
+                SKIP_LINE_RE.search(line):
             continue  # estimates / targets / caps are not current prices
-        pm = PRICE_RE.search(line)
+        cells = split_cells(s)
+        if len(cells) != len(cols):
+            continue
+        # Price-column authority: a table with no Price/Close/Last column is
+        # a narrative table (debate rows, watchlists, event calendars) -- its
+        # $ figures are levels, targets, and estimates, not current prices.
+        pidx = None
+        for i, h in enumerate(cols):
+            if PRICE_HDR_RE.search(h):
+                pidx = i
+                break
+        if pidx is None:
+            continue
+        pm = PRICE_RE.search(cells[pidx])
         if not pm:
             continue
         price = float((pm.group(1) or pm.group(2)).replace(",", ""))
         ticker = None
-        for tm in TICKER_RE.finditer(line):
-            cand = tm.group(1).rstrip(".")
-            if cand in STOPWORDS or len(cand) > 5 or cand[0].isdigit():
-                continue
-            if any(ch.isdigit() for ch in cand) and cand not in ("CL",):
-                continue
-            ticker = cand
-            break
+        # Column-1 authority: when the table's first header is "Ticker"/"Symbol",
+        # that cell IS the ticker -- it may even be a STOPWORD collision (WTI).
+        if TICKER_COL_RE.match(cols[0] or ""):
+            cand = cells[0].replace("*", "").strip().upper()
+            if re.fullmatch(r"[A-Z][A-Z0-9.]{0,4}", cand) and \
+                    not cand[0].isdigit():
+                ticker = cand
+        if ticker is None:
+            for tm in TICKER_RE.finditer(line):
+                cand = tm.group(1).rstrip(".")
+                if cand in STOPWORDS or len(cand) > 5 or cand[0].isdigit():
+                    continue
+                if any(ch.isdigit() for ch in cand) and cand not in ("CL",):
+                    continue
+                ticker = cand
+                break
         if not ticker:
             continue
         wow = None
         ytd = None
-        cells = split_cells(s)
-        if len(cells) == len(cols):
-            for i, h in enumerate(cols):
-                if YTD_HDR_RE.search(h):
-                    ytd = parse_pct(cells[i])
-                elif WOW_HDR_RE.search(h):
-                    wow = parse_pct(cells[i])
+        for i, h in enumerate(cols):
+            if YTD_HDR_RE.search(h):
+                ytd = parse_pct(cells[i])
+            elif WOW_HDR_RE.search(h):
+                wow = parse_pct(cells[i])
         if wow is None:
-            wm = WOW_RE.search(line, pm.end())
+            wm = WOW_RE.search(line)
             if wm:
                 try:
                     wow = float(wm.group(1).replace("−", "-").replace(" ", ""))
@@ -347,10 +379,13 @@ def check_lint(repo, rep, max_fetch):
                 continue  # not a real ticker or no data -- ignore quietly
             checked += 1
             dev = abs(live - price) / price * 100
-            if dev > 15:
+            # Micro-caps move 20-30% in a weekend; scale the impossible-row
+            # threshold so the small/mid-cap lane doesn't false-positive.
+            fail_thresh = 15.0 if price >= 10 else 35.0
+            if dev > fail_thresh:
                 rep.add("FAIL", f"lint: {f.name} {ticker} ${price} vs live "
-                                f"${live} ({live_date}, dev {dev:.1f}%) -- "
-                                f"impossible row :: {snip}")
+                                f"${live} ({live_date}, dev {dev:.1f}% > "
+                                f"{fail_thresh:.0f}%) -- impossible row :: {snip}")
             elif dev > 3:
                 rep.add("WARN", f"lint: {f.name} {ticker} ${price} vs live "
                                 f"${live} ({live_date}, dev {dev:.1f}%) :: {snip}")
