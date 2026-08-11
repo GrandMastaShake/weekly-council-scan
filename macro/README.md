@@ -51,21 +51,25 @@ python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
 
 | Check | WARN | FAIL |
 |---|---|---|
-| **Staleness TTL** — every `wiki/*.md` "Last updated" stamp | > 7 days old | > 14 days old |
+| **Staleness TTL** — every `wiki/*.md` "Last updated" stamp | > 7 days old; stamp missing | > 14 days old |
 | **Facts freshness** — facts.json `generated` date | — | > 8 days old |
 | **Facts accuracy** — each yahoo-sourced field vs live close | fetch failed | deviation > `tolerance_pct` |
 | **Spread arithmetic** — computed curve spreads recompute | — | off by > 3 bps |
-| **Holdings lint** — (TICKER, $price) rows in wiki tables vs live closes | dev > 3% | dev > 15% = impossible row |
+| **Holdings lint** — (TICKER, $price) rows in wiki tables vs live closes | dev > 3% | dev > 15% (price ≥ $10) or > 35% (micro-cap < $10) = impossible row |
 | **WoW arithmetic** — weekly-change columns recomputed | sign flip or off by > 2 pts | — |
 | **YTD arithmetic** — YTD columns located by table header, recomputed from the prior-year final close | sign flip or off by > 3 pts | — |
 | **Weight sums** — any table whose Weight column totals past 100% (bad carry / double-counted row) | — | sum > 100.5% = impossible table |
 | **Quarantine** — banned (ticker, value) pairs from quarantine.json; phantom-EPS net | quarantine.json missing | any ban hit; EPS claim > 20% of same-row price |
 
-Lint scope note (v3, 2026-08-10): the linter parses markdown table structure
-(header + separator) so WoW/YTD/Weight values are matched to their columns by
-header name, not position. It skips estimate / price-target / market-cap rows and
-earnings-calendar / analyst sections — their $ figures are not current prices.
-Tickers glued to slashes (`W/W`, `P/E`) are not matches.
+Lint scope note (v4, 2026-08-11): the linter is fully table-structure aware.
+Prices come ONLY from tables with a Price/Close/Last column — narrative tables
+(debate rows, watchlists, event calendars) are never price sources. A leading
+Ticker/Symbol header cell is the ticker even when it collides with a macro
+stopword (WTI the stock vs WTI the oil benchmark). WoW/YTD/Weight values are
+matched to their columns by header name. Sections are tracked by sticky `##`
+parent so `###` day-headers inside skippable sections (earnings, surprises,
+implied moves, analyst targets) stay skipped. First full-grid sweep: 48 raw
+FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
 
 ## Who runs what, when (folded into EXISTING jobs — cron grid is full)
 
