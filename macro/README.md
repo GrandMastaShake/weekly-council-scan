@@ -79,15 +79,14 @@ FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
   synthesis.md and the README Market Brief must match it. Runs
   `truth_check.py --staleness` and names any stale wiki in the synthesis.
 - **Monday Council Scan (9:03 AM):** STEP 0c Truth Gate — runs
-  `truth_check.py --staleness --facts` before the pipeline. WARN = note it in the
+  `truth_check.py --staleness --facts --lint --quarantine` every week before the
+  pipeline (mandatory, not time-permitting). Staleness/facts WARN = note it in the
   report and prefer fresh fetches over the stale page. FAIL (any wiki > 14d, or
   facts.json missing/stale/contradicted by market data) = ENGINE ABORT path:
   publish the report with the abort banner, book no positions, log to shadow-book.
-- **Weekly lint:** Monday job also runs `--lint` when time permits; impossible rows
-  get flagged in the report and repaired in place (with a note) or queued for the
-  next Saturday crew prompt.
-- **Quarantine:** Monday job runs `--quarantine` alongside `--lint`. Confirmed
-  fabrications get a ban entry added to `macro/quarantine.json` the same session.
+  Lint/quarantine hits are repaired in place (with a note) or queued for the next
+  Saturday crew prompt; confirmed fabrications get a ban entry added to
+  `macro/quarantine.json` the same session.
 
 ## Canonical earnings calendar
 
