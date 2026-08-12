@@ -1,0 +1,235 @@
+{
+  "as_of": "2026-08-07",
+  "commodities": {
+    "GOLD": {
+      "d13w": -8.0,
+      "d1w": 7.2,
+      "d4w": 5.8,
+      "d52w": 26.2,
+      "pctile_2y": 77,
+      "px": 4340.7
+    },
+    "SILVER": {
+      "d13w": -21.2,
+      "d1w": 10.0,
+      "d4w": 5.9,
+      "d52w": 64.9,
+      "pctile_2y": 73,
+      "px": 63.33
+    },
+    "WTI": {
+      "d13w": -18.1,
+      "d1w": -7.7,
+      "d4w": 9.5,
+      "d52w": 22.4,
+      "pctile_2y": 82,
+      "px": 78.18
+    }
+  },
+  "fx": {
+    "DXY": {
+      "d13w": 1.8,
+      "d1w": -0.2,
+      "d4w": -1.4,
+      "d52w": 1.4,
+      "pctile_2y": 47,
+      "px": 99.6
+    }
+  },
+  "index": {
+    "DIA": {
+      "d13w": 9.2,
+      "d1w": 2.9,
+      "d4w": 2.7,
+      "d52w": 23.9,
+      "pctile_2y": 99,
+      "px": 539.62
+    },
+    "IWM": {
+      "d13w": 6.4,
+      "d1w": 3.6,
+      "d4w": 1.9,
+      "d52w": 38.3,
+      "pctile_2y": 99,
+      "px": 301.56
+    },
+    "QQQ": {
+      "d13w": 1.8,
+      "d1w": 5.1,
+      "d4w": -0.3,
+      "d52w": 26.4,
+      "pctile_2y": 96,
+      "px": 723.03
+    },
+    "SPY": {
+      "d13w": 5.1,
+      "d1w": 3.5,
+      "d4w": 2.4,
+      "d52w": 22.7,
+      "pctile_2y": 99,
+      "px": 773.26
+    }
+  },
+  "macro": null,
+  "macro_reason": "facts.json has no macro_prints block (schema macro-facts/v1)",
+  "policy": {
+    "fed_funds_range": "3.50-3.75",
+    "fed_funds_range_as_of": "2026-07-29",
+    "fed_stance": "Hold",
+    "fed_stance_as_of": "2026-07-29",
+    "next_macro_gate": "Jackson Hole (Warsh's first as Chair)",
+    "next_macro_gate_as_of": "2026-08-21"
+  },
+  "rates": {
+    "US10Y": {
+      "d1w_bps": -8,
+      "lvl": 4.66,
+      "pctile_2y": 96
+    },
+    "US2Y": {
+      "d1w_bps": -12,
+      "lvl": 4.17,
+      "pctile_2y": 84
+    },
+    "curve_2s10s_bps": 49
+  },
+  "regime": "risk-on / curve-positive / policy-hold",
+  "schema": "market-state/v1",
+  "sectors": {
+    "SMH": {
+      "corr_prev": 0.644,
+      "corr_spy_4w": 0.83,
+      "d13w": 2.9,
+      "d1w": 7.8,
+      "d4w": -4.6,
+      "d52w": 99.1,
+      "pctile_2y": 93,
+      "px": 582.7
+    },
+    "XLB": {
+      "corr_prev": -0.64,
+      "corr_spy_4w": 0.681,
+      "d13w": 2.8,
+      "d1w": 4.8,
+      "d4w": 3.9,
+      "d52w": 21.8,
+      "pctile_2y": 97,
+      "px": 52.86
+    },
+    "XLC": {
+      "corr_prev": 0.726,
+      "corr_spy_4w": 0.777,
+      "d13w": -4.6,
+      "d1w": 2.8,
+      "d4w": -0.3,
+      "d52w": 4.7,
+      "pctile_2y": 62,
+      "px": 111.25
+    },
+    "XLE": {
+      "corr_prev": -0.643,
+      "corr_spy_4w": -0.996,
+      "d13w": 4.0,
+      "d1w": -3.4,
+      "d4w": 4.4,
+      "d52w": 39.6,
+      "pctile_2y": 90,
+      "px": 57.5
+    },
+    "XLF": {
+      "corr_prev": -0.145,
+      "corr_spy_4w": 0.489,
+      "d13w": 12.8,
+      "d1w": 1.2,
+      "d4w": 3.4,
+      "d52w": 12.8,
+      "pctile_2y": 99,
+      "px": 57.6
+    },
+    "XLI": {
+      "corr_prev": -0.291,
+      "corr_spy_4w": 0.572,
+      "d13w": 7.2,
+      "d1w": 3.0,
+      "d4w": 1.8,
+      "d52w": 24.4,
+      "pctile_2y": 99,
+      "px": 185.18
+    },
+    "XLK": {
+      "corr_prev": 0.84,
+      "corr_spy_4w": 0.934,
+      "d13w": 7.2,
+      "d1w": 7.2,
+      "d4w": 1.2,
+      "d52w": 42.1,
+      "pctile_2y": 97,
+      "px": 187.97
+    },
+    "XLP": {
+      "corr_prev": -0.258,
+      "corr_spy_4w": -0.064,
+      "d13w": 1.8,
+      "d1w": 0.1,
+      "d4w": 1.2,
+      "d52w": 6.1,
+      "pctile_2y": 93,
+      "px": 85.12
+    },
+    "XLRE": {
+      "corr_prev": -0.92,
+      "corr_spy_4w": -0.646,
+      "d13w": 2.2,
+      "d1w": -0.2,
+      "d4w": 1.2,
+      "d52w": 12.8,
+      "pctile_2y": 95,
+      "px": 44.98
+    },
+    "XLU": {
+      "corr_prev": -0.531,
+      "corr_spy_4w": -0.472,
+      "d13w": -1.9,
+      "d1w": -1.7,
+      "d4w": -4.0,
+      "d52w": 4.0,
+      "pctile_2y": 70,
+      "px": 43.61
+    },
+    "XLV": {
+      "corr_prev": -0.666,
+      "corr_spy_4w": 0.701,
+      "d13w": 16.0,
+      "d1w": 1.9,
+      "d4w": 3.0,
+      "d52w": 29.5,
+      "pctile_2y": 99,
+      "px": 165.68
+    },
+    "XLY": {
+      "corr_prev": 0.627,
+      "corr_spy_4w": 0.656,
+      "d13w": -0.1,
+      "d1w": 3.2,
+      "d4w": 2.2,
+      "d52w": 8.0,
+      "pctile_2y": 89,
+      "px": 119.86
+    }
+  },
+  "upcoming": [
+    {
+      "binary": null,
+      "event": "Jackson Hole (Warsh's first as Chair)",
+      "when": "2026-08-21"
+    }
+  ],
+  "vol": {
+    "VIX": {
+      "d1w": -6.8,
+      "lvl": 14.9,
+      "pctile_2y": 11
+    }
+  },
+  "weekly_files_read": 104
+}
