@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""truth_check.py v5 -- Truth Layer validators for weekly-council-scan.
+"""truth_check.py v6 -- Truth Layer validators for weekly-council-scan.
 
 Stdlib only (no yfinance, no pyyaml): urllib -> Yahoo chart API + regex parsing.
 Runs against a LOCAL directory tree containing wiki/ and macro/ (the cron jobs
@@ -33,13 +33,35 @@ Modes:
                 the nearest ISO date / 'Week of <date>' / M-D week label on
                 the same or nearby lines; a marker whose week is more than
                 7 days older than today was never backfilled = FAIL.
+  --feed        Weekly data-feed validation (NEW in v6, no network):
+                validates every data/weekly/*.json against DATA_FEED.md
+                sec.1 -- required keys (as_of, source, fetched_at, session
+                "close", series, missing; a missing 'missing' key is a
+                FAIL -- a silently absent ticker is the failure mode this
+                file exists to prevent), as_of must be a Friday, filename
+                must equal as_of (a <date>.corrected.json variant must
+                carry 'corrects' pointing at an existing original plus a
+                'reason'), every series/special-instrument entry numeric
+                close > 0 with volume null or >= 0, file pure ASCII and
+                valid JSON. Absent data/weekly/ = SKIP (the feed has not
+                launched yet) so the Monday gate keeps passing pre-launch.
+  --derive      Derivation purity check (NEW in v6): calls
+                scan_pipeline.snapshot.rederive_and_compare() from the
+                pipeline checkout (--pipeline) against the repo's
+                data/weekly/ + macro/facts.json and the committed
+                data/market_state.json. Absent market_state.json = SKIP;
+                pipeline import failure = WARN (the linter may run where
+                the pipeline is not checked out); a False result = FAIL
+                with the first-differing JSON path; a deriver exception =
+                FAIL with the exception text, never a traceback crash.
   --all         Everything (default when no mode flag is given).
 
 Exit code 1 if any FAIL, else 0. Every line is prefixed OK/WARN/FAIL/SKIP.
 
 Usage:
   python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
-         [--quarantine] [--counterfactuals] [--warn-days 7] [--fail-days 14]
+         [--quarantine] [--counterfactuals] [--feed] [--derive]
+         [--pipeline <dir>] [--warn-days 7] [--fail-days 14]
          [--today YYYY-MM-DD] [--max-fetch 60]
 """
 
@@ -51,7 +73,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-VERSION = "v5"
+VERSION = "v6"
 
 # ---------------------------------------------------------------- Yahoo fetch
 
@@ -672,6 +694,164 @@ def check_counterfactuals(repo, today, rep):
                       f"scanned, no pending markers")
 
 
+# ----------------------------------------------------------------------- feed
+
+FEED_REQUIRED_KEYS = ("as_of", "source", "fetched_at", "session",
+                      "series", "missing")
+# Optional special-instrument blocks share the {close, volume} shape
+# (Job V contract supersedes the bare-number sketch in DATA_FEED.md sec.1).
+FEED_EXTRA_BLOCKS = ("rates", "vol", "commodities", "fx")
+
+
+def _feed_entry_check(fname, section, ticker, entry, rep):
+    """Type/range lint on one {close, volume} observation."""
+    where = f"{fname} {section}.{ticker}"
+    if not isinstance(entry, dict):
+        rep.add("FAIL", f"feed: {where} is not an object")
+        return
+    close = entry.get("close")
+    if isinstance(close, bool) or not isinstance(close, (int, float)):
+        rep.add("FAIL", f"feed: {where} close is not numeric: {close!r}")
+    elif close <= 0:
+        rep.add("FAIL", f"feed: {where} close {close} <= 0")
+    vol = entry.get("volume")
+    if vol is not None:
+        if isinstance(vol, bool) or not isinstance(vol, (int, float)):
+            rep.add("FAIL", f"feed: {where} volume is not numeric: {vol!r}")
+        elif vol < 0:
+            rep.add("FAIL", f"feed: {where} volume {vol} < 0")
+
+
+def check_feed(repo, rep):
+    """Weekly data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no
+    network. 'missing' is required and never empty-by-omission: a silently
+    absent ticker is indistinguishable from one that never existed, and
+    that ambiguity is what the agents fill in from priors."""
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        rep.add("SKIP", f"feed: {weekly} not found -- data feed has not "
+                        f"launched yet")
+        return
+    files = sorted(weekly.glob("*.json"))
+    if not files:
+        rep.add("SKIP", f"feed: {weekly} holds no *.json files yet")
+        return
+    for f in files:
+        try:
+            text = f.read_bytes().decode("ascii")
+        except UnicodeDecodeError as e:
+            rep.add("FAIL", f"feed: {f.name} is not pure ASCII ({e})")
+            continue
+        try:
+            doc = json.loads(text)
+        except json.JSONDecodeError as e:
+            rep.add("FAIL", f"feed: {f.name} does not parse as JSON ({e})")
+            continue
+        if not isinstance(doc, dict):
+            rep.add("FAIL", f"feed: {f.name} top level is not an object")
+            continue
+        for key in FEED_REQUIRED_KEYS:
+            if key not in doc:
+                note = (" -- a silently absent ticker is the failure mode "
+                        "this file exists to prevent" if key == "missing"
+                        else "")
+                rep.add("FAIL", f"feed: {f.name} lacks required key "
+                                f"'{key}'{note}")
+        if doc.get("session") != "close":
+            rep.add("FAIL", f"feed: {f.name} session is "
+                            f"{doc.get('session')!r}, must be 'close'")
+        as_of = doc.get("as_of")
+        as_of_date = None
+        if isinstance(as_of, str):
+            try:
+                as_of_date = dt.date.fromisoformat(as_of)
+            except ValueError:
+                rep.add("FAIL", f"feed: {f.name} as_of {as_of!r} is not an "
+                                f"ISO date")
+        else:
+            rep.add("FAIL", f"feed: {f.name} as_of is not a string: "
+                            f"{as_of!r}")
+        if as_of_date is not None:
+            if as_of_date.weekday() != 4:
+                rep.add("FAIL", f"feed: {f.name} as_of {as_of} is not a "
+                                f"Friday (weekday {as_of_date.weekday()})")
+            if f.name == f"{as_of}.json":
+                pass
+            elif f.name == f"{as_of}.corrected.json":
+                corrects = doc.get("corrects")
+                if not isinstance(corrects, str) or \
+                        not (weekly / corrects).exists():
+                    rep.add("FAIL", f"feed: {f.name} correction lacks "
+                                    f"'corrects' pointing at an existing "
+                                    f"original (got {corrects!r})")
+                if not doc.get("reason"):
+                    rep.add("FAIL", f"feed: {f.name} correction lacks "
+                                    f"'reason'")
+            else:
+                rep.add("FAIL", f"feed: filename {f.name} does not match "
+                                f"as_of {as_of}")
+        series = doc.get("series")
+        if "series" in doc and not isinstance(series, dict):
+            rep.add("FAIL", f"feed: {f.name} 'series' is not an object")
+        elif isinstance(series, dict):
+            for ticker, entry in series.items():
+                _feed_entry_check(f.name, "series", ticker, entry, rep)
+        for block in FEED_EXTRA_BLOCKS:
+            blk = doc.get(block)
+            if blk is None:
+                continue
+            if not isinstance(blk, dict):
+                rep.add("FAIL", f"feed: {f.name} '{block}' is not an object")
+                continue
+            for ticker, entry in blk.items():
+                _feed_entry_check(f.name, block, ticker, entry, rep)
+    rep.add("OK", f"feed: {len(files)} weekly file(s) validated against "
+                  f"DATA_FEED.md sec.1 (failures reported above)")
+
+
+# --------------------------------------------------------------------- derive
+
+DEFAULT_PIPELINE = ("C:/Users/alexa/Desktop/Death_Star/Ember/Professional/"
+                    "BookApp/MarketStockPicker")
+
+
+def check_derive(repo, pipeline, rep):
+    """Derivation purity check (DATA_FEED.md sec.2: 'Derivation is pure').
+    Re-derives market_state.json from the weekly files via the scan
+    pipeline and compares against the committed file. Pipeline import
+    failure is a WARN, not a FAIL -- the linter may run where the pipeline
+    is not checked out."""
+    ms = repo / "data" / "market_state.json"
+    if not ms.exists():
+        rep.add("SKIP", f"derive: {ms} not found -- nothing committed to "
+                        f"re-derive yet")
+        return
+    if str(pipeline) not in sys.path:
+        sys.path.insert(0, str(pipeline))
+    try:
+        from scan_pipeline import snapshot
+    except Exception as e:
+        rep.add("WARN", f"derive: scan_pipeline.snapshot not importable "
+                        f"from {pipeline} ({type(e).__name__}: {e}) -- "
+                        f"purity check deferred")
+        return
+    try:
+        match, diff = snapshot.rederive_and_compare(
+            weekly_dir=str(repo / "data" / "weekly"),
+            facts_path=str(repo / "macro" / "facts.json"),
+            market_state_path=str(ms))
+    except Exception as e:
+        rep.add("FAIL", f"derive: rederive_and_compare raised "
+                        f"{type(e).__name__}: {e}")
+        return
+    if match:
+        rep.add("OK", "derive: market_state.json re-derives byte-identical "
+                      "from data/weekly/ -- derivation is pure")
+    else:
+        rep.add("FAIL", f"derive: market_state.json does not re-derive "
+                        f"from data/weekly/ -- first difference at {diff}")
+
+
 # ----------------------------------------------------------------------- main
 
 def main():
@@ -684,6 +864,10 @@ def main():
     ap.add_argument("--lint", action="store_true")
     ap.add_argument("--quarantine", action="store_true")
     ap.add_argument("--counterfactuals", action="store_true")
+    ap.add_argument("--feed", action="store_true")
+    ap.add_argument("--derive", action="store_true")
+    ap.add_argument("--pipeline", default=DEFAULT_PIPELINE,
+                    help="scan_pipeline checkout root for --derive")
     ap.add_argument("--warn-days", type=int, default=7)
     ap.add_argument("--fail-days", type=int, default=14)
     ap.add_argument("--today", default=None, help="YYYY-MM-DD override (testing)")
@@ -693,7 +877,8 @@ def main():
     repo = Path(args.repo)
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
     run_all = not (args.staleness or args.facts or args.lint
-                   or args.quarantine or args.counterfactuals)
+                   or args.quarantine or args.counterfactuals
+                   or args.feed or args.derive)
     rep = Report()
 
     if run_all or args.staleness:
@@ -706,6 +891,10 @@ def main():
         check_quarantine(repo, rep)
     if run_all or args.counterfactuals:
         check_counterfactuals(repo, today, rep)
+    if run_all or args.feed:
+        check_feed(repo, rep)
+    if run_all or args.derive:
+        check_derive(repo, args.pipeline, rep)
 
     print(rep.render())
     sys.exit(1 if rep.counts["FAIL"] else 0)
