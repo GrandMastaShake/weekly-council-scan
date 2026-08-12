@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""truth_check.py -- Truth Layer validators for weekly-council-scan.
+"""truth_check.py v5 -- Truth Layer validators for weekly-council-scan.
 
 Stdlib only (no yfinance, no pyyaml): urllib -> Yahoo chart API + regex parsing.
 Runs against a LOCAL directory tree containing wiki/ and macro/ (the cron jobs
@@ -22,14 +22,25 @@ Modes:
   --quarantine  Phantom-anomaly bans from macro/quarantine.json (ticker +
                 banned value co-occurring = FAIL) plus a generic phantom-EPS
                 net (EPS claim > 20% of same-row share price = FAIL).
+  --counterfactuals
+                Counterfactual-ledger staleness (NEW in v5, no network):
+                scans shadow-book.md, rejections.md, exit-shadow.md,
+                reports/*.md and scorecards/*.md for pending markers
+                ('to be computed' / 'to be backfilled' / 'pending
+                computation'; bare 'TBD' only counts when glued to
+                counterfactual vocabulary on the same line, so future-tense
+                plans like 'July TBD' are ignored). Each hit is dated from
+                the nearest ISO date / 'Week of <date>' / M-D week label on
+                the same or nearby lines; a marker whose week is more than
+                7 days older than today was never backfilled = FAIL.
   --all         Everything (default when no mode flag is given).
 
 Exit code 1 if any FAIL, else 0. Every line is prefixed OK/WARN/FAIL/SKIP.
 
 Usage:
   python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
-         [--quarantine] [--warn-days 7] [--fail-days 14] [--today YYYY-MM-DD]
-         [--max-fetch 60]
+         [--quarantine] [--counterfactuals] [--warn-days 7] [--fail-days 14]
+         [--today YYYY-MM-DD] [--max-fetch 60]
 """
 
 import argparse
@@ -39,6 +50,8 @@ import re
 import sys
 import urllib.request
 from pathlib import Path
+
+VERSION = "v5"
 
 # ---------------------------------------------------------------- Yahoo fetch
 
@@ -545,15 +558,132 @@ def check_quarantine(repo, rep):
                       f"phantom-EPS net clean")
 
 
+# ------------------------------------------------------------ counterfactuals
+
+CF_FILES = ("shadow-book.md", "rejections.md", "exit-shadow.md")
+CF_DIRS = ("reports", "scorecards")
+CF_STALE_DAYS = 7
+# Primary pending markers; "to be computed" is the canonical ledger phrase.
+# Bare "TBD" is deliberately NOT a marker on its own -- it false-positives on
+# future-tense prose ("July TBD", "week in progress"). TBD counts only when
+# glued to counterfactual vocabulary on the same line (CF_TBD_CONTEXT_RE).
+CF_MARKER_RE = re.compile(
+    r"to be computed|to be backfilled|pending computation", re.I)
+CF_TBD_RE = re.compile(r"\bTBD\b")
+CF_TBD_CONTEXT_RE = re.compile(
+    r"backfill|counterfactual|shadow|realized|p&l|basket", re.I)
+ISO_RE = re.compile(r"\b(\d{4})-(\d{2})-(\d{2})\b")
+WEEK_OF_RE = re.compile(r"week of[^\d]*(\d{4}-\d{2}-\d{2})", re.I)
+MD_LABEL_RE = re.compile(r"\b(\d{1,2})/(\d{1,2})\b")
+
+
+def _cf_dates_on(line):
+    out = []
+    for m in ISO_RE.finditer(line):
+        try:
+            out.append((m.start(), dt.date(int(m.group(1)), int(m.group(2)),
+                                           int(m.group(3)))))
+        except ValueError:
+            pass
+    return out
+
+
+def _cf_marker_date(lines, idx, today):
+    """Best-effort week/date for a pending marker on lines[idx]."""
+    line = lines[idx]
+    mm = CF_MARKER_RE.search(line) or CF_TBD_RE.search(line)
+    pos = mm.start() if mm else 0
+    dated = _cf_dates_on(line)
+    if dated:
+        # nearest ISO date to the marker; ties prefer the later date
+        dated.sort(key=lambda t: (abs(t[0] - pos), -t[1].toordinal()))
+        return dated[0][1]
+    # 'Week of <date>' headers within 5 lines above
+    for back in range(idx, max(idx - 6, -1), -1):
+        wm = WEEK_OF_RE.search(lines[back])
+        if wm:
+            return dt.date.fromisoformat(wm.group(1))
+    # any ISO date within +/-3 lines, nearest line first
+    for off in range(1, 4):
+        for j in (idx + off, idx - off):
+            if 0 <= j < len(lines):
+                dated = _cf_dates_on(lines[j])
+                if dated:
+                    return dated[0][1]
+    # last resort: M/D week label on the marker line (year = today's,
+    # rolled back one year if that lands in the future)
+    mdl = MD_LABEL_RE.search(line)
+    if mdl:
+        mo, dy = int(mdl.group(1)), int(mdl.group(2))
+        if 1 <= mo <= 12 and 1 <= dy <= 31:
+            try:
+                d = dt.date(today.year, mo, dy)
+                if d > today:
+                    d = dt.date(today.year - 1, mo, dy)
+                return d
+            except ValueError:
+                pass
+    return None
+
+
+def check_counterfactuals(repo, today, rep):
+    """Counterfactual-ledger staleness. The shadow book, rejection log, exit
+    shadow, weekly reports and scorecards log entries as 'to be computed'
+    and backfill them after the week's Friday/Monday closes. A pending
+    marker whose week is more than 7 days older than today was never
+    backfilled = FAIL. Pure text scan -- no network needed."""
+    targets = [repo / name for name in CF_FILES if (repo / name).exists()]
+    for d in CF_DIRS:
+        sub = repo / d
+        if sub.is_dir():
+            targets.extend(sorted(sub.glob("*.md")))
+    if not targets:
+        rep.add("WARN", "counterfactuals: no ledger files found "
+                        "(shadow-book.md / rejections.md / exit-shadow.md / "
+                        "reports/*.md / scorecards/*.md)")
+        return
+    hits = 0
+    for f in targets:
+        lines = f.read_text(encoding="utf-8", errors="replace").splitlines()
+        for i, line in enumerate(lines):
+            if CF_MARKER_RE.search(line) or (
+                    CF_TBD_RE.search(line) and CF_TBD_CONTEXT_RE.search(line)):
+                hits += 1
+                rel = f.relative_to(repo)
+                d = _cf_marker_date(lines, i, today)
+                snip = line.strip()[:80]
+                if d is None:
+                    rep.add("WARN", f"counterfactuals: {rel}:{i + 1} pending "
+                                    f"marker with no week/date context "
+                                    f":: {snip}")
+                    continue
+                age = (today - d).days
+                if age > CF_STALE_DAYS:
+                    rep.add("FAIL", f"counterfactuals: {rel}:{i + 1} stale "
+                                    f"pending marker -- week {d.isoformat()} "
+                                    f"is {age}d old (limit {CF_STALE_DAYS}d), "
+                                    f"never backfilled :: {snip}")
+                else:
+                    rep.add("OK", f"counterfactuals: {rel}:{i + 1} pending "
+                                  f"marker week {d.isoformat()}, age {age}d "
+                                  f"(within {CF_STALE_DAYS}d grace) :: {snip}")
+    if hits == 0:
+        rep.add("OK", f"counterfactuals: {len(targets)} ledger file(s) "
+                      f"scanned, no pending markers")
+
+
 # ----------------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser(description="Truth Layer validators")
+    ap.add_argument("--version", action="version",
+                    version=f"%(prog)s {VERSION}")
     ap.add_argument("--repo", required=True, help="local dir containing wiki/ and macro/")
     ap.add_argument("--staleness", action="store_true")
     ap.add_argument("--facts", action="store_true")
     ap.add_argument("--lint", action="store_true")
     ap.add_argument("--quarantine", action="store_true")
+    ap.add_argument("--counterfactuals", action="store_true")
     ap.add_argument("--warn-days", type=int, default=7)
     ap.add_argument("--fail-days", type=int, default=14)
     ap.add_argument("--today", default=None, help="YYYY-MM-DD override (testing)")
@@ -562,7 +692,8 @@ def main():
 
     repo = Path(args.repo)
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
-    run_all = not (args.staleness or args.facts or args.lint or args.quarantine)
+    run_all = not (args.staleness or args.facts or args.lint
+                   or args.quarantine or args.counterfactuals)
     rep = Report()
 
     if run_all or args.staleness:
@@ -573,6 +704,8 @@ def main():
         check_lint(repo, rep, args.max_fetch)
     if run_all or args.quarantine:
         check_quarantine(repo, rep)
+    if run_all or args.counterfactuals:
+        check_counterfactuals(repo, today, rep)
 
     print(rep.render())
     sys.exit(1 if rep.counts["FAIL"] else 0)
