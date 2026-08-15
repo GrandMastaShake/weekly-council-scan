@@ -10,15 +10,15 @@
 
 | Metric | Current | 1W Ago | 1M Ago | Regime |
 |---|---|---|---|---|
-| VIX | 14.90 | 15.99 | 15.03 | 🟢 **Normal** |
-| VIX 20-Day MA | ~17.16 | — | — | — |
-| VIX Trend | Down (-6.8% WoW) | — | — | — |
-| Implied SPY Move (30D) | ~±4.3% | — | — | — |
+| VIX | 14.25 | 14.90 | 16.73 | 🟢 **Normal** |
+| VIX 20-Day MA | ~16.63 | — | — | — |
+| VIX Trend | Down (-4.4% WoW) | — | — | — |
+| Implied SPY Move (30D) | ~±4.1% | — | — | — |
 | VVIX (VIX of VIX) | ~85–90 (stale) | — | — | ⚠️ **External feed required** |
 
-> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. The 14.90 close is via Yahoo Finance ^VIX. The 1W/1M comparisons are trading-day offsets and may read ~1–3 pts off other vendors — the WoW direction and magnitude hold across sources.*
+> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. The 14.25 close is via Yahoo Finance ^VIX. The 1W/1M comparisons are trading-day offsets and may read ~1–3 pts off other vendors — the WoW direction and magnitude hold across sources.*
 
-**Marky Interpretation:** VIX has **dropped further into the normal zone** at 14.90, down another -6.8% from last week's 15.99. The 20D MA at 17.16 is now well above spot, confirming the short-term trend is downward and volatility sellers are firmly in control. The market is pricing a ±4.3% implied move over 30 days — even tighter than last week's ±4.6%. This is a **full complacency reset**: VIX is now ~5 points below the 20 regime-shift line and has normalized completely from the brief scare that pushed it to 18.70 two weeks ago. The risk is not panic — it is **complacency**. Watch if VIX snaps back above 16.50, which would signal the first crack in the calm.
+**Marky Interpretation:** VIX ground **lower again to 14.25**, down -4.4% from last week's 14.90 — and that is a **six-month closing low**. The 20D MA at 16.63 is falling but still sits ~2.4 points above spot, so every rally in vol keeps getting sold. The market is pricing a ±4.1% implied move over 30 days — the tightest read since this dashboard launched. Let me be clear about what a 6-month-low VIX on a week where oil ripped +5.4% and consumer data broke actually means: **the options market does not believe the headlines**. That is either wisdom or the deepest complacency we have recorded here. Watch the same line: a snap back above 16.50 is the first crack. Below 13.50, we start talking about hedges being *too* cheap to ignore.
 
 ---
 
@@ -26,17 +26,17 @@
 
 | Maturity | Yield | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
-| 13-Week (T-Bill) | 3.710% | +0.028% | +0.015% | Short-term funding stable |
-| 2-Year (proxy) | ~4.10% (stale — external feed) | — | — | Fed expectations |
-| 5-Year | 4.362% | -0.098% | +0.054% | Medium-term rates easing |
-| **10-Year** | **4.660%** | **-0.085%** | **+0.091%** | **Long-term anchor pulling back** |
+| 13-Week (T-Bill) | 3.697% | -0.013% | +0.000% | Short-term funding stable |
+| 2-Year (proxy) | ~4.00% (stale — external feed) | — | — | Fed expectations |
+| 5-Year | 4.362% | +0.000% | +0.080% | Medium-term rates holding |
+| **10-Year** | **4.696%** | **+0.036%** | **+0.127%** | **Long-end re-firming** |
 | **10Y–2Y Spread** | **~+66 bps** (stale proxy) | — | — | **Positive** |
-| **10Y–5Y Spread** | **~+29.8 bps** | — | — | **Positive / steepening** |
-| **10Y–3M Spread** | **~+95.0 bps** | — | — | **Positive / healthy** |
+| **10Y–5Y Spread** | **~+33.4 bps** | — | — | **Positive / steepening** |
+| **10Y–3M Spread** | **~+100 bps** | — | — | **Positive / healthy** |
 
-**Ophelia Interpretation:** The yield curve **pulled back this week** — the 10Y dropped -8.5 bps to 4.660%, and the 5Y fell -9.8 bps to 4.362%. This is a notable reversal from the relentless climb that pushed the 10Y to 4.745% last week. The bond market is pricing **easing inflation fears** as crude collapsed -7.7% to $78.18 and the dollar softened further. The 10Y–5Y spread widened slightly to ~29.8 bps from ~28.5 bps — mild steepening, not flattening. The 10Y–3M spread at +95 bps is healthy and far from inversion territory. The key dynamic: the *speed* of the long-end rise has stalled, and with oil breaking below $80, the bond market may be near a local peak. Watch: if crude holds below $80, the 10Y may settle into a 4.55–4.75% range.
+**Ophelia Interpretation:** Last week's pullback **reversed**: the 10Y climbed back +3.6 bps to 4.696%, and the week was a round trip — Tuesday probed ~4.74%, Friday morning dipped to ~4.64% on the July retail sales miss (-0.6% MoM), and the close landed back near the top of the recent range. The 5Y was dead flat at 4.362% while the 3M bill eased a touch to 3.697%, so the 10Y–3M spread widened to **+100 bps** — the widest read of the year and miles from inversion. Two honesty notes on the 2Y: our proxy is stale (4.00%, dated 2026-07-15), so the canonical 10Y–2Y stays at ~+66 bps stale; the financials desk's external feed read the 2Y at ~4.17% this morning, which implies ~+53 bps — directionally consistent, but the external refresh is owed before Monday. The key dynamic: **the bond market has stopped rallying on the oil relief and started re-pricing the oil reversal**. With WTI back at $82.40 and the 10Y pressing 4.70%, the 4.55–4.75% range is the battlefield, and Jackson Hole (Aug 21) is the next macro gate.
 
-**Yield Curve Regime:** 🟢 **Positive** — steepening slightly at the long end, no inversion signal. The level (4.660% 10Y) is still restrictive but the trajectory has softened.
+**Yield Curve Regime:** 🟢 **Positive** — no inversion anywhere on the curve, and the long end is steepening. The level (4.696% 10Y) remains restrictive; the trajectory has turned back upward.
 
 ---
 
@@ -51,11 +51,11 @@
 | HY–IG Spread | ~+220 bps (stale) | — | — | 🟢 **Contained** |
 | EM Sovereign | ~+380 bps (stale) | — | — | 🟡 **Elevated but stable** |
 | Investment Grade CDS | ~+55 bps (stale) | — | — | 🟢 **Tight** |
-| **HYG Price** | **$79.61** | **$79.10** | **$79.32** | **🟢 Recovery continuing** |
+| **HYG Price** | **$79.71** | **$79.61** | **$79.42** | **🟢 Grind higher continues** |
 
-**Ophelia Interpretation:** Credit has **continued to improve**: HYG rose +0.65% this week to $79.61, building on last week's +0.32% bounce. The HY–IG spread at last external read was ~220 bps — still well below the 250 bps caution trigger — and the real-time proxy (HYG) is now at its highest level in a month. With the 10Y yield *falling* (-8.5 bps) and oil de-escalating sharply (-7.7%), credit is breathing much easier. The HYG range has broken to the upside out of the $79.20–79.60 congestion. **Verifying external spread data before Monday is still recommended**, but the real-time proxy suggests spreads are stable or tightening.
+**Ophelia Interpretation:** Credit **held its recovery**: HYG added +0.13% to $79.71, a third straight weekly gain, and it did so *while the 10Y backed up* — last month's headwind (falling rates helping IG, hurting nothing in HY) has flipped, and HYG simply did not care. That is what a healthy credit tape looks like. The HY–IG spread at last external read was ~220 bps, still comfortably below the 250 bps caution trigger. The caveat is getting louder: **the external spread snapshot is now 31 days old**, and we are managing credit risk off a price proxy. Verify the external feed before Monday — if HY–IG has drifted toward 250 bps while we watched the proxy grind, the register changes color fast.
 
-**Credit Regime:** 🟢 **Healthy** (stale) — HYG recovery and easing yield pressure suggest spreads are stable or tightening.
+**Credit Regime:** 🟢 **Healthy** (stale) — HYG's third weekly gain and a 10Y back-up absorbed without damage suggest spreads remain tight.
 
 ---
 
@@ -72,9 +72,9 @@
 | S&P 500 % Above 200D MA | ~72% (stale) | — | — | 🟢 **Positive** |
 | Equal-Weight SPY vs. Cap-Weight SPY | -0.3% (stale) | — | — | 🟡 **Neutral** |
 
-**Marky Interpretation:** The last external breadth read was **neutral to slightly positive**, but that snapshot is now 24 days old and predates the recent VIX normalization, SPY rally (+3.5% this week), and the dramatic growth recovery. With SPY surging to $773.26 and the growth unwind fully reversing (XLK +7.2% this week, SMH +7.8%), breadth has almost certainly improved sharply. The two-tier market structure that worried us two weeks ago has **healed**: growth is leading again, and the defensive bid has collapsed (XLU -1.67% this week, XLE -3.44%). A refreshed external feed is needed before Monday to confirm whether % above 50D MA has rebounded above 65%, but the price action strongly suggests it has.
+**Marky Interpretation:** Still flying on a **31-day-old snapshot** — that caveat now does more work than the table. What the live tape says: SPY added +0.40% to $776.34 (within a half percent of its cycle closing high at $777.88), and the week's participation was **broader than the index print** — ten of twelve sectors beat SPY on the week, with leadership rotating *out* of mega-cap growth (XLK +0.69% vs. SPY) and *into* energy (+7.27% vs. SPY), utilities, and telecom. That is late-cycle breadth behavior, not breakdown behavior: the rally is rotating, not narrowing. But Friday's consumer shock (retail -0.6%, UMich 51.0) hit discretionary and staples on the same tape, and one ugly day can bend A/D lines fast. External refresh before Monday is mandatory — I want the % above 50D read before we trust the rotation.
 
-**Breadth Regime:** 🟡 **Neutral** (stale) — likely improving sharply after SPY rally and growth recovery, but external confirmation needed.
+**Breadth Regime:** 🟡 **Neutral** (stale) — live price action implies broad participation, but confirmation is a month overdue.
 
 ---
 
@@ -84,26 +84,24 @@
 
 | Sector | ETF | vs. SPY Correlation | Regime |
 |---|---|---|---|
-| 🖥️ Technology | XLK | **0.814** | 🔥 **High beta** |
-| 💻 Semiconductors | SMH | **0.766** | 🔥 **High beta** |
-| 🛍️ Consumer Discretionary | XLY | **0.631** | 🟢 **Pro-cyclical** |
-| ⚙️ Industrials | XLI | **0.677** | 🟢 **Pro-cyclical** |
-| ⛏️ Materials | XLB | **0.231** | 🟡 **Moderate** |
-| 📡 Communication Services | XLC | **0.335** | 🟡 **Moderate** |
-| 🏦 Financials | XLF | **0.390** | 🟡 **Moderate** |
-| 🏥 Healthcare | XLV | **-0.332** | 🟡 **Defensive** |
-| ⚡ Utilities | XLU | **-0.179** | 🟡 **Defensive** |
-| 🏠 Real Estate | XLRE | **-0.318** | 🟡 **Defensive** |
-| ⛽ Energy | XLE | **-0.435** | 🔴 **Inverse** |
-| 🍞 Consumer Staples | XLP | **-0.308** | 🟡 **Defensive** |
+| 🖥️ Technology | XLK | **0.815** | 🔥 **High beta** |
+| 💻 Semiconductors | SMH | **0.752** | 🔥 **High beta** |
+| 🛍️ Consumer Discretionary | XLY | **0.635** | 🟢 **Pro-cyclical** |
+| ⚙️ Industrials | XLI | **0.619** | 🟢 **Pro-cyclical** |
+| 🏦 Financials | XLF | **0.580** | 🟢 **Pro-cyclical** |
+| 📡 Communication Services | XLC | **0.373** | 🟡 **Moderate** |
+| ⛏️ Materials | XLB | **0.342** | 🟡 **Moderate** |
+| ⚡ Utilities | XLU | **-0.112** | 🟡 **Defensive** |
+| 🏠 Real Estate | XLRE | **-0.142** | 🟡 **Defensive** |
+| 🍞 Consumer Staples | XLP | **-0.203** | 🟡 **Defensive** |
+| 🏥 Healthcare | XLV | **-0.252** | 🟡 **Defensive** |
+| ⛽ Energy | XLE | **-0.425** | 🔴 **Inverse** |
 
-**Ophelia Interpretation:** The correlation structure has **healed dramatically this week** — the fragmentation that fractured the market last week has reversed. The two sectors that had decoupled most severely — **XLK and SMH — have recoupled to SPY with correlations of 0.814 and 0.766**, up from 0.329 and 0.144 respectively. This is a **full return to the high-beta growth regime**. The growth leadership is back: XLK, SMH, XLI, and XLY form a tight positive bloc again.
+**Ophelia Interpretation:** **No sign flips this week** — the first stable correlation structure in three weeks. The growth bloc stayed welded to SPY: XLK 0.815, SMH 0.752. The notable moves were *within* signs: **XLF strengthened from 0.390 to 0.580** and graduates from the Moderate bloc into the pro-cyclical bloc — banks are trading like a growth sector as the curve steepens toward +100 bps and the breakout in financials holds. The defensive complex **converged toward zero** (XLU -0.179 → -0.112, XLRE -0.318 → -0.142, XLP -0.308 → -0.203): defensives are no longer trading *against* the market, they are simply *ignoring* it — classic late-cycle decorrelation rather than risk-off positioning. XLE stayed pinned at -0.425 despite ripping +7.67% on the week: energy is moving big, but on its own oil-driven axis, orthogonal to the equity tape.
 
-Two sectors **flipped sign** this week: **XLB (Materials) flipped from negative (-0.337) to positive (+0.231)**, and **XLV (Healthcare) flipped from positive (+0.054) to negative (-0.332)**. The inverse bloc is now led by XLE (-0.435), which deepened from near-neutral (-0.037) as oil's collapse pulled energy stocks down. The defensive trio (XLU, XLP, XLRE) remains negative but shallow — none below -0.33 — suggesting the defensive bid has softened materially.
+**The key insight:** The structure is **growth-led and internally calm** — high-beta coupled tight, defensives flat-lined near zero, energy the lone true hedge. Two weeks after the fragmentation scare and one week after the violent recoupling, this is the first week the matrix *didn't* lurch. Stability in the correlation fabric lowers single-sector drawdown risk.
 
-**The key insight:** The market has **re-coupled around a growth-led, risk-on narrative**. The two-bloc "growth vs. energy/defensive" regime that defined the past month has **reversed**: growth is now tightly coupled to SPY, energy is the inverse hedge, and defensives are mildly negative. This is the *opposite* of last week's fragmentation and significantly reduces single-sector drawdown risk.
-
-**Alert:** XLB flipped negative→positive. XLV flipped positive→negative. XLK and SMH recoupled sharply. Watch for XLE deepening further if oil holds below $80.
+**Alert:** None — no correlation sign flips this week. Watch XLF: if it keeps firming past 0.65, the "value leads" narrative gets real teeth.
 
 ---
 
@@ -113,24 +111,24 @@ Two sectors **flipped sign** this week: **XLB (Materials) flipped from negative 
 
 | Sector | ETF | 1D vs. SPY | 1W vs. SPY | 1M vs. SPY | Rotation Signal |
 |---|---|---|---|---|---|
-| ⛽ Energy | XLE | -1.75% | -6.95% | +1.97% | 🔴 **Outflow** |
-| 🏥 Healthcare | XLV | +0.14% | -1.59% | +0.58% | 🟡 **Neutral** |
-| 🏦 Financials | XLF | -0.97% | -2.35% | +0.97% | 🟡 **Neutral** |
-| ⚡ Utilities | XLU | -0.08% | -5.18% | -6.39% | 🔴 **Outflow** |
-| 🏠 Real Estate | XLRE | -0.23% | -3.71% | -1.23% | 🔴 **Outflow** |
-| 🍞 Consumer Staples | XLP | -0.60% | -3.43% | -1.24% | 🔴 **Outflow** |
-| ⚙️ Industrials | XLI | -0.38% | -0.54% | -0.63% | 🟡 **Neutral** |
-| 📡 Communication Services | XLC | -0.55% | -0.73% | -2.77% | 🟡 **Neutral** |
-| ⛏️ Materials | XLB | +0.71% | +1.31% | +1.45% | 🟢 **Inflow** |
-| 🛍️ Consumer Discretionary | XLY | +0.88% | -0.26% | -0.19% | 🟡 **Neutral** |
-| 🖥️ Technology | XLK | +0.81% | +3.69% | -1.25% | 🟢 **Inflow** |
-| 💻 Semiconductors | SMH | +1.35% | +4.29% | -7.06% | 🟢 **Inflow** |
+| 🛍️ Consumer Discretionary | XLY | -0.21% | -1.78% | -2.68% | 🟡 **Neutral** |
+| ⛏️ Materials | XLB | +0.44% | -1.00% | -0.17% | 🟡 **Neutral** |
+| 🏠 Real Estate | XLRE | +0.33% | +0.25% | -1.82% | 🟡 **Neutral** |
+| ⚙️ Industrials | XLI | +0.39% | +0.32% | +0.12% | 🟡 **Neutral** |
+| 💻 Semiconductors | SMH | -0.22% | +0.48% | -0.09% | 🟡 **Neutral** |
+| 🏦 Financials | XLF | -0.17% | +0.57% | -0.93% | 🟡 **Neutral** |
+| 🏥 Healthcare | XLV | -0.60% | +0.62% | +0.03% | 🟡 **Neutral** |
+| 🖥️ Technology | XLK | -0.40% | +0.69% | +3.63% | 🟡 **Neutral** |
+| 🍞 Consumer Staples | XLP | +0.10% | +0.74% | -3.08% | 🟡 **Neutral** |
+| 📡 Communication Services | XLC | +0.36% | +1.13% | -3.79% | 🟢 **Inflow** |
+| ⚡ Utilities | XLU | +0.61% | +1.21% | -5.96% | 🟢 **Inflow** |
+| ⛽ Energy | XLE | +1.39% | +7.27% | +5.17% | 🟢 **Inflow** |
 
-**Ophelia Interpretation:** The rotation has **flipped completely from defensive/energy to growth/tech**. Last week's leadership — energy and defensives — has collapsed. XLE underperformed SPY by -6.95% this week as WTI crude crashed -7.7%. XLU cratered -5.18% vs. SPY, XLRE -3.71%, and XLP -3.43% — the entire defensive complex is bleeding as VIX normalizes and rates ease. The "fear trade" is unwinding fast.
+**Ophelia Interpretation:** Last week's violent "defensive/energy → growth" rotation **did not extend** — it *re-rotated*. The week's only true inflow leader was **energy: XLE beat SPY by +7.27%** as WTI reversed +5.4% back to $82.40 on the Iran/Hormuz escalation (see issues #43/#44/#49). Utilities (+1.21% vs. SPY) and communication services (+1.13%) filled out the leadership — a strange barbell of *oil* and *bond proxies* leading together, which only makes sense in a week where the long bond sold off (10Y +3.6 bps) and rate-sensitive yield plays were bought *against* rising yields on Friday's growth scare.
 
-The growth recovery is the mirror image: **SMH outperformed SPY by +4.29% this week**, XLK by +3.69%, and XLB by +1.31%. This is a dramatic reversal from last week when SMH was -4.78% vs. SPY and XLK was -1.40%. The 1M picture still shows scars — SMH is -7.06% vs. SPY on the month and XLC is -2.77% — but the trajectory has turned sharply positive.
+Meanwhile last week's heroes **consolidated instead of extending**: XLK +0.69% vs. SPY, SMH +0.48% — healthy digestion after +7% weekly moves, with the 1M column still favoring tech (XLK +3.63% vs. SPY on the month, the best 1M relative on the board). The week's loser was **discretionary (-1.78% vs. SPY)**, and that is the tape voting on Friday's consumer data: retail -0.6% MoM and UMich 51.0 are a direct hit on the XLY complex (AMZN -4.3%, five straight red closes — issue #46).
 
-**The risk:** The growth recovery is sharp but may be **overdone in the very short term**. SMH +7.8% in one week and XLK +7.2% are large moves. If SPY stalls at $773, these sectors are vulnerable to profit-taking. The rotation is no longer "growth → energy/defensive"; it is now "energy/defensive → growth/tech/materials." XLB's outperformance (+1.31% WoW) is notable — materials are catching a bid as the dollar softens and copper rallies.
+**The risk:** The rotation board has no outflow signals for the first time in weeks, which sounds calm — but the leadership mix (energy + utilities + telecom) is a *defensive-inflation* barbell, not a growth confirmation. If WTI holds above $82, energy's inverse correlation means SPY's path of least resistance narrows. Watch whether XLK/SMH reassert leadership next week or whether the barbell hardens.
 
 ---
 
@@ -139,23 +137,23 @@ The growth recovery is the mirror image: **SMH outperformed SPY by +4.29% this w
 | Asset | Level | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
 | DXY (US Dollar Index) | ~99.60 (stale — external feed) | — | — | 🟢 **Softening below 100** |
-| EUR/USD | 1.1562 | +0.33% | +1.12% | 🟢 **Euro strengthening** |
-| USD/JPY | 157.75 | -1.52% | -2.84% | 🟢 **Yen continuing to firm** |
-| WTI Crude | $78.18 | -7.67% | +9.48% | 🟡 **Collapsed below $80** |
-| Gold | $4,340.70 | +7.20% | +5.76% | 🔥 **Breaking out above $4,300** |
-| Copper | $6.57/lb | +2.09% | +5.41% | 🟢 **Growth signal firming** |
-| Bitcoin | $65,013 | +2.45% | +0.50% | 🟢 **Risk appetite returning** |
-| HY Bonds (HYG) | $79.61 | +0.65% | +0.36% | 🟢 **Credit proxy recovering** |
-| IG Bonds (LQD) | $112.18 (est.) | +0.72% | -0.42% | 🟢 **Rates rally helping IG** |
+| EUR/USD | 1.1573 | +0.42% | +1.12% | 🟢 **Euro firming** |
+| USD/JPY | 159.31 | +0.57% | -1.89% | 🟡 **Yen weakening resuming** |
+| WTI Crude | $82.40 | +5.40% | +4.37% | 🟡 **Reversed back above $80** |
+| Gold | $4,380.40 | +0.91% | +9.91% | 🟢 **Consolidating above $4,300** |
+| Copper | $6.60/lb | +0.44% | +4.82% | 🟢 **Growth signal intact** |
+| Bitcoin | $62,976 | -2.94% | -1.75% | 🟡 **Diverging from equity risk** |
+| HY Bonds (HYG) | $79.71 | +0.13% | +0.37% | 🟢 **Credit proxy steady** |
+| IG Bonds (LQD) | $106.12 | -0.40% | -0.86% | 🟡 **Rates pressure returning** |
 | TIPS Breakeven (10Y) | ~2.45% (stale — external feed) | — | — | 🟡 **Inflation expectations stable (stale)** |
 
 > *DXY index not available via Yahoo Finance; EUR/USD, GBP/USD, and USD/JPY used as cross-asset proxies. DXY last known ~99.60 (est.) based on FX composites.*
 
-**Ophelia Interpretation:** The cross-asset board has **rotated from relief to full risk-on**. The dominant force this week is the **oil collapse**: WTI crashed -7.7% from $84.67 to $78.18, breaking below the psychologically important $80 level and removing the inflation threat that haunted the bond market. The second force is the **dollar continuing to weaken**: EUR/USD pushed to 1.1562 and USD/JPY fell to 157.75, extending last week's yen rally. A weaker dollar is bullish for risk assets, commodities, and EM — it explains SPY's +3.5% rally and copper's +2.1% pop.
+**Ophelia Interpretation:** The cross-asset board **reversed last week's relief trade almost point for point**. Force one: **oil**. WTI's +5.4% rip to $82.40 erased the entire -7.7% collapse we celebrated last Saturday and re-activates the inflation tail — the 10Y noticed (+3.6 bps), LQD noticed (-0.40%), and the sector board noticed (XLE +7.67%). Force two: **the dollar stayed soft** — EUR/USD firmed to 1.1573 and DXY's stale composite sits under 100 — but the yen leg flipped: USD/JPY rose +0.57% to 159.31, resuming the yen-weakening trend and quietly re-raising the BoJ intervention temperature toward the 160 line. Force three: **gold kept its throne**, +0.9% to $4,380.40 and +9.9% on the month — at these levels gold is trading as a debasement/geopolitical asset, not a rates asset, so Friday's growth scare barely dented it.
 
-The third force is the **gold breakout**: gold surged +7.2% to $4,340.70, a massive move that reflects both dollar weakness and safe-haven demand as geopolitical risks persist despite the macro relief. This is not just a dollar story — gold is breaking out in real terms. Bitcoin at $65K is up +2.5% and confirming that speculative appetite is returning alongside the growth rally.
+The honest worry is **Bitcoin**: -2.94% to $62,976 while SPY closed the week green. For three weeks BTC tracked the risk-on recovery; this week it decoupled *down*. One week is not a regime — but when the highest-beta risk asset stops following equities up, it occasionally knows something. Copper at $6.60 (+0.44%) at least confirms the industrial-growth bid survived the oil reversal.
 
-**The risk:** Oil at $78 is still +9.5% on the month — the base effect remains, and a rebound above $82 would reverse the relief trade. Gold's violent +7.2% weekly move may be overdone short-term. And while the yen firmed, USDJPY at 157.75 is still historically weak for the yen — BoJ intervention risk has not fully dissipated.
+**The risk:** Oil above $82 with Hormuz rhetoric active is the single biggest swing factor into Monday — a move to $85+ re-ignites the inflation trade and pressures the 4.70% 10Y pivot. USD/JPY at 159.31 is one bad week from the intervention zone. And if BTC's divergence extends, treat it as an early risk-appetite crack, not noise.
 
 ---
 
@@ -165,31 +163,31 @@ The third force is the **gold breakout**: gold surged +7.2% to $4,340.70, a mass
 
 | Signal | Status | Trend | Trigger Level |
 |---|---|---|---|
-| VIX Regime | 🟢 Normal | Down (-6.8% WoW) | 🟡 >20 | 🔴 >25 |
-| Yield Curve | 🟢 Positive | Steepening slightly | 🟡 <0 (inverted) | 🔴 <-50 bps |
-| Credit Spreads | 🟢 Tight (stale) | HYG recovering | 🟡 HY–IG >250 bps | 🔴 >350 bps |
-| Market Breadth | 🟡 Neutral (stale) | Likely improving sharply | 🟡 <50% above 50D MA | 🔴 <40% |
-| Sector Rotation | 🟢 Growth-led | Correlations recoupling | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
-| DXY | 🟢 Softening | Below 100 | 🟡 >102 | 🔴 >105 |
-| Geopolitics | 🟡 Elevated | Oil collapsed below $80 | 🟡 Oil >$90 | 🔴 Oil >$100 |
-| Credit Risk | 🟢 Low | HYG stable, yields easing | 🟡 CDS widening | 🔴 Bank stress |
+| VIX Regime | 🟢 Normal (6-mo low) | Down (-4.4% WoW) | 🟡 >20 | 🔴 >25 |
+| Yield Curve | 🟢 Positive | Steepening (10Y–3M +100) | 🟡 <0 (inverted) | 🔴 <-50 bps |
+| Credit Spreads | 🟢 Tight (stale) | HYG 3rd weekly gain | 🟡 HY–IG >250 bps | 🔴 >350 bps |
+| Market Breadth | 🟡 Neutral (stale) | Rotating, not narrowing | 🟡 <50% above 50D MA | 🔴 <40% |
+| Sector Rotation | 🟢 Energy-led week | No outflow signals | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
+| DXY | 🟢 Softening | Below 100 (stale) | 🟡 >102 | 🔴 >105 |
+| Geopolitics | 🟡 Elevated | Oil back above $80 (+5.4%) | 🟡 Oil >$90 | 🔴 Oil >$100 |
+| Credit Risk | 🟢 Low | HYG steady vs. rising yields | 🟡 CDS widening | 🔴 Bank stress |
 | Overall Risk | 🟢 **NORMAL WITH CAUTION** | — | — | — |
 
-**Weekly Narrative — Overall Assessment:** This was the week the canary **started singing loudly**. The key developments: (1) VIX dropped -6.8% to 14.90, fully normalizing and breaking below the 20D MA for the first time in weeks; (2) WTI crude crashed -7.7% to $78.18, breaking below $80 and collapsing the inflation scare; (3) the 10Y yield pulled back -8.5 bps to 4.660%, reversing the relentless climb; (4) SPY rallied +3.5% to $773.26, surging past last month's highs; (5) the growth unwind **fully reversed** — XLK soared +7.2%, SMH +7.8%, and both recoupled to SPY with correlations above 0.75; (6) HYG rose +0.65% to $79.61, continuing its recovery; (7) gold broke out +7.2% to $4,340.70 on dollar weakness; (8) copper firmed +2.1% to $6.57, signaling growth optimism; (9) Bitcoin rallied +2.5% to $65,013, confirming returning risk appetite.
+**Weekly Narrative — Overall Assessment:** This was the week the canary **stopped singing opera and started watching the door**. The key developments: (1) VIX fell to a **six-month closing low of 14.25** — complacency is now the extreme, not the norm; (2) WTI crude **reversed violently**, +5.4% to $82.40 on the Iran/Hormuz escalation, erasing all of last week's -7.7% collapse and re-activating the inflation tail; (3) the 10Y yield **re-firmed +3.6 bps to 4.696%** and the 10Y–3M spread widened to +100 bps; (4) SPY ground out +0.40% to $776.34, a half-percent from its cycle closing high; (5) **energy led everything** — XLE +7.67% on the week while last week's leaders (XLK, SMH) consolidated; (6) **Friday delivered a consumer shock**: July retail sales -0.6% MoM and UMich August prelim 51.0 — the first demand-side crack of the quarter (issue #46); (7) the correlation matrix went **quiet — zero sign flips**, with XLF strengthening to 0.580 and defensives converging toward zero; (8) gold held the $4,300 shelf at $4,380.40; (9) **Bitcoin diverged -2.9%** in a green equity week; (10) USD/JPY pushed back to 159.31, one week from the BoJ intervention zone.
 
-But the fragilities remain: (1) the sector correlation matrix **recoupled sharply but two sectors still flipped** — XLB flipped from negative to positive (+0.231) and XLV flipped from positive to negative (-0.332); (2) SMH is still -7.06% vs. SPY on the month — the 1M damage has not fully healed despite the weekly surge; (3) oil at $78 is a sharp drop but still +9.5% on the month — a rebound above $82 would reverse the relief; (4) gold's +7.2% weekly surge may be overdone and vulnerable to profit-taking; (5) credit and breadth data are now 24 days stale and need refreshing before Monday; (6) VIX at 14.90 is approaching complacency territory — a snap-back above 16.50 would be the first warning.
+But the fragilities: (1) the oil reversal re-prices inflation risk exactly as the bond market sits at 4.70% — a WTI push to $85+ tightens the vise; (2) Friday's consumer data is one print away from a trend, and WMT reports Thursday; (3) credit and breadth external reads are now **31 days stale** — refresh before Monday is mandatory; (4) VIX at a 6-month low means hedges are cheap and the market is unprotected if a headline lands; (5) BTC's divergence and the yen's slide are small cracks in the risk-on façade; (6) the 2Y proxy (4.00%) is stale against the financials desk's external 4.17% read — curve arithmetic needs the external refresh.
 
-**The Canary Watch verdict:** 🟢 **Normal with caution.** The canary is alive, singing, and doing cartwheels. The elevated regime broke decisively on all fronts: VIX normalized, oil collapsed, yields pulled back, the dollar softened, growth recoupled, and SPY surged to new monthly highs. But the market structure is still shifting — two correlation flips this week show sector dynamics are volatile, and the sharpness of the moves (XLK +7.2%, gold +7.2%, crude -7.7%) suggests positioning-driven reversals that can snap back just as fast. Watch for: (1) VIX snapping back above 16.50, (2) oil rebounding above $82, (3) DXY breaking back above 101, (4) XLK correlation staying above 0.70, (5) SMH continuing to recover vs. SPY, (6) external credit/breadth feed refresh. The risk register is green, but the market is one headline away from reversing these sharp moves.
+**The Canary Watch verdict:** 🟢 **Normal with caution.** The canary is alive and alert, but it stopped singing. Last week's three pillars of relief — oil collapse, yield pullback, growth leadership — two of them reversed this week, and the third merely consolidated. Yet nothing broke: the curve is +100 bps, credit ground higher *against* rising yields, correlations stabilized, and SPY sits near its high. The regime is not risk-off; it is **risk-on with a fresh inflation tail and a consumer question mark**. Watch for: (1) WTI above $85 (inflation trade re-ignites) or back below $78 (false alarm), (2) the 10Y at 4.75% — the year's ceiling, (3) WMT Thursday as the consumer tie-breaker, (4) VIX snapping back above 16.50 from a complacency extreme, (5) USD/JPY 160 and BoJ risk, (6) whether BTC re-couples or keeps diverging, (7) the external credit/breadth refresh. The register stays green, but the margin for a bad headline is thinner than it was seven days ago.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The macro picture brightened materially this week — perhaps too materially. VIX dropped to 14.90, oil collapsed to $78.18, the 10Y pulled back to 4.660%, and SPY surged to $773.26. The growth recovery is the headline: XLK +7.2% and SMH +7.8% this week, with correlations recoupling to 0.814 and 0.766. This is not a pause in the unwind — it is a full reversal. I am redeploying cash from 35% to 25% and adding to XLK, SMH, and XLB. But I am wary of the speed: SMH +7.8% in one week is a lot, and gold +7.2% feels frothy. I am keeping tight stops. The canary is singing opera — but I am watching for the high note that cracks the glass."*
+**Ophelia:** *"Two of my three pillars from last week reversed: oil came back (+5.4% to $82.40) and the 10Y re-firmed to 4.696%. The third — growth leadership — held but consolidated. Net-net, my macro read is unchanged in stance but weaker in conviction: I am holding cash at 25%, not cutting it further. Friday's consumer print (retail -0.6%, UMich 51.0) is the first demand-side data point that genuinely worries me, and WMT Thursday will adjudicate it. I am adding a small XLE sleeve as an inflation hedge rather than chasing XLK — with the curve at +100 bps and financials correlating 0.580, XLF is my preferred cyclical add. Stops stay tight. The canary is quiet; I find quiet canaries harder to read than dead ones."*
 
-**Marky:** *"The tape's growth unwind is dead. XLK +7.2% and SMH +7.8% this week — that is not a bounce, that is a regime reversal. The correlations tell the story: XLK went from 0.329 to 0.814 and SMH from 0.144 to 0.766. The money is flowing back into tech and semis. My playbook: add to XLK and SMH on any dip, trim energy (XLE -6.95% vs. SPY this week), trim utilities and REITs (XLU -5.18%, XLRE -3.71%), and ride the growth recovery. But I am not chasing at these levels — a +7.8% week in SMH usually sees some giveback. I want to buy weakness, not strength. Watch: VIX above 16.50 or oil above $82 are my re-hedge signals."*
+**Marky:** *"The tape gave back the easy trade and kept the hard one. XLK and SMH consolidated +7% weeks with barely a scratch — that is strength, not topping. But the leadership board flipped to energy (+7.67%!) and utilities, and that barbell — oil plus bond proxies — is not how growth rallies extend. My playbook: hold the tech adds from last week, do not add at these levels; buy XLY if the consumer panic overshoots (it held its 200D by a dollar); keep the energy trade on while WTI holds $80. My re-hedge triggers are unchanged and closer: VIX 16.50 from a 6-month low, 10Y 4.75%, WTI $85. If two of the three trip, I cut beta fast."*
 
-**Cecil:** *"I note that credit — the market's honest accountant — has continued to stabilize: HYG recovered to $79.61 and the 10Y yield actually fell. But I also note the correlation flips with concern. XLV flipped from positive to negative (-0.332) and XLB flipped from negative to positive (+0.231). These are not random moves — they reflect a reshuffling of the market's internal narrative. Healthcare is being sold as a defensive as rates ease, and materials are catching a bid on the weaker dollar and copper rally. The market is not just risk-on; it is *repositioning* aggressively. Value is still working on the 1M basis — XLF +0.97% vs. SPY — but growth is dominating the weekly flow. I am not selling quality into this relief, but I am watching gold at $4,340. That +7.2% weekly move is a signal that some investors are hedging the relief trade. If HY–IG widens past 250 bps on the refresh, cash goes back up. The canary sings; I am checking the sheet music."*
+**Cecil:** *"Three facts interest the accountant in me. First, credit ignored the rate back-up entirely — HYG gained a third week with the 10Y up; that is genuine health, not positioning. Second, the correlation matrix had its first quiet week in a month — no flips — and financials are now trading like a cyclical at 0.580, which is what a steepening curve *should* produce. Third, the negatives are all in the stale columns: our credit spreads and breadth reads are 31 days old, and the 2Y we publish (4.00%) disagrees with the financials desk's external tape (4.17%). We are flying two instruments on month-old gauges. The consumer print matters, but one print is weather, not climate. Value posture unchanged: quality financials and staples over froth; no selling into strength; cash is a position. The canary is watching the door. So am I."*
 
 ---
 
@@ -207,6 +205,6 @@ But the fragilities remain: (1) the sector correlation matrix **recoupled sharpl
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-08*
+*Last updated by Saturday Research Crew: 2026-08-15*
 *Next update: Every Saturday 3:39 PM ET*
 *Data sources: Yahoo Finance, CBOE, Federal Reserve, ICE, FRED, market data feeds*
