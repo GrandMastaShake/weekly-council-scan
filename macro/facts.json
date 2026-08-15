@@ -28,7 +28,7 @@
     "gold": {"value": 4380.40, "as_of": "2026-08-14", "source": "yahoo:GC=F", "tolerance_pct": 2},
     "copper": {"value": 6.60, "as_of": "2026-08-14", "source": "yahoo:HG=F", "tolerance_pct": 2},
     "btc": {"value": 62976, "as_of": "2026-08-14", "source": "yahoo:BTC-USD", "tolerance_pct": 5},
-    "hyg": {"value": "79.71", "as_of": "2026-08-14", "source": "yahoo:HYG", "tolerance_pct": 1.5},
+    "hyg": {"value": 79.71, "as_of": "2026-08-14", "source": "yahoo:HYG", "tolerance_pct": 1.5},
     "lqd": {"value": 106.12, "as_of": "2026-08-14", "source": "yahoo:LQD", "tolerance_pct": 1.5}
   },
   "sector_etf": {
