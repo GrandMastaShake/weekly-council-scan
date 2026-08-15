@@ -10,26 +10,26 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | **$43.61** | $44.35 | **-1.67%** |
+| Price | **$44.31** | $43.61 | **+1.61%** |
 | 52W Range | $41.15 – $47.80 | — | — |
 | AUM | ~$12–15B | — | — |
 | YTD Return | **+5.23%** | — | — |
-| 1Y Return | ~+5–8% | — | — |
-| P/E Ratio | ~20.5 | — | — |
-| Dividend Yield | ~2.70% | — | — |
-| Beta | ~0.49 | — | — |
+| 1Y Return | +3.95% | — | — |
+| P/E Ratio | 20.2 | — | — |
+| Dividend Yield | 2.70% | — | — |
+| Beta | 0.49 (3Y) | — | — |
 | Total Holdings | 30 | — | — |
-| Avg Daily Volume | ~20M shares | — | — |
+| Avg Daily Volume | ~20.3M shares (Fri: 17.0M) | — | — |
 
-**Marky Tape Read:** XLU dipped **-1.67%** this week to $43.61, closing below both its 50-day MA ($44.86) and 200-day MA ($44.81) for the first time since early 2025. The 10Y yield *fell* 8.5 bps to **4.66%** — a tailwind that should have lifted utilities, yet the sector sold off anyway. This is a correlation break worth watching. Volume remained elevated (~26M shares on Aug 5–6) as the sector tested the $43.00 support zone. XLU is now $4.19 below its 52W high of $47.80. Key support: $43.00 (February gap-fill) and then the 52W low of $41.15. Resistance is the 200D MA at $44.81, followed by the 50D MA at $44.86.
+**Marky Tape Read:** XLU snapped its two-week losing streak, rising **+1.61%** to **$44.31**. Monday's dip to $43.13 was bought aggressively — the $43.00 support zone held for the second straight week — and the ETF ground higher every session through Friday. The close sits just **$0.46 below the 200D MA ($44.77)** and **$0.54 below the 50D MA ($44.85)**: the damage from the early-August breakdown is nearly repaired, but not yet. RSI-14 recovered to **~48** from the high-30s. Friday's volume (17.0M) ran below the 20.3M average — a quiet, steady bid rather than a stampede. Resistance: $44.77–$44.85 (the broken MAs), then $47.80. Support: $43.00, then the 52W low at $41.15.
 
-**Ophelia Macro Read:** The bond-proxy playbook **broke** this week. The 10Y yield fell from 4.745% to 4.66%, and by all historical rules, utilities should have rallied. They did not. XLU fell -1.67%. What happened? Two things: (1) earnings season created idiosyncratic dispersion — CEG rallied +2.72% on a strong Q2 beat and raised guidance, while VST fell -5.13% and EIX cratered -6.47% on wildfire liability fears; (2) the market is still digesting the prior week's -4.19% drop, and dip-buyers remained on the sidelines.
+**Ophelia Macro Read:** The bond-proxy playbook stayed inverted for a **second consecutive week** — but this time in the favorable direction. The 10Y yield *rose* ~4 bps to **4.70%**, and XLU rallied +1.61% anyway. Last week: yields fell, utilities fell. This week: yields rose, utilities rose. The correlation is not broken so much as **overridden by idiosyncratic news flow**: Vistra's Q2 validation of the data-center growth story and Edison's tentative Eaton Fire liability win mattered more than 4 basis points of duration.
 
-The **10Y yield at 4.66%** is now 85 bps below the early-July highs. The utility yield spread (XLU's ~2.70% dividend vs. the 10Y) is still **-196 bps** — deeply negative — but less bad than last week's -195 bps. The macro backdrop is mixed: yields falling = bullish for duration, but the Fed remains on hold at 3.50–3.75% and the market is pricing fewer 2026 cuts. The DXY at ~99.60 is stable.
+The **utility yield spread** (XLU's 2.70% dividend vs. the 10Y at 4.70%) remains **-200 bps** — deeply negative, unchanged in substance. The Fed is on hold at 3.50–3.75%; the DXY is pinned at **99.64**; VIX at **14.25** says the broad market is calm. The macro tape gave utilities nothing this week — the sector earned its gains on company-specific catalysts.
 
-The **data center electricity demand** narrative got a major boost from CEG's Q2 report. Constellation raised full-year guidance to $11.50–$12.50/share, signed **920 MW of new long-term nuclear PPAs** with investment-grade customers (including Walmart), and secured FERC approval for the Crane Clean Energy Center restart. This is the strongest data-center-linked utility news in months. Yet VST — the other nuclear/growth play — fell -5.13% ahead of its own Q2 report (Aug 8), suggesting the market is discriminating between execution (CEG) and expectations (VST).
+The **data center demand** narrative kept compounding. Vistra's Q2 print (Aug 7) confirmed 2026 guidance, revealed the **Helix Digital Infrastructure venture with KKR and NVIDIA** (up to $1B committed), and quantified the Cogentrix + Meta PJM PPA upside (~$700M of potential 2027 EBITDA not yet in guidance). PJM capacity auction prices at **$333/MW-day** (vs. $29 two years ago) continue to re-rate every merchant power asset. The White House-backed **Reliability Backstop Auction** proposal — data centers funding 6–10 GW of new generation via 15-year contracts, ~$15B — is targeted for September 2026 implementation. That is a structural tailwind for CEG, VST, and every merchant generator.
 
-The **wildfire liability risk** for EIX deepened this week. The stock fell -6.47% to $68.62, now **14% below its July 24 close** of $79.75. Q2 earnings showed strong EPS growth, but the market is focused on the Eaton fire claims process, which remains in early stages. California's inverse condemnation law is the unhedgeable risk. EIX now trades at a ~6.5x P/E and 5.5%+ yield — deep value, but for good reason.
+The **wildfire file** produced the week's biggest single-stock relief: on Aug 11–12 a judge **tentatively ruled SCE not liable** for the Eaton Fire, rejecting the insurers' subrogation bid. EIX rallied +4.07% on the week to $71.41. The ruling is tentative and the compensation program continues (2,405+ claims, ~$1B recorded to date, Jefferies' worst-case estimate $13.5B), but the market's binary-risk pricing loosened for the first time in three weeks.
 
 ---
 
@@ -37,67 +37,67 @@ The **wildfire liability risk** for EIX deepened this week. The stock fell -6.47
 
 | Rank | Ticker | Name | Weight | Price | 1W Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NEE | NextEra Energy | ~14% | $84.65 | -2.61% | $98.75 | $69.24 | 2.87% | 19.5 | ⚡ |
-| 2 | SO | Southern Company | ~8% | $92.69 | -1.96% | $100.84 | $83.80 | 3.22% | 22.8 | ⚡ |
-| 3 | DUK | Duke Energy | ~8% | $124.85 | -0.46% | $134.49 | $113.90 | 3.46% | 19.3 | ⚡ |
-| 4 | D | Dominion Energy | ~5% | $67.39 | -2.57% | $72.99 | $55.85 | 3.86% | 23.9 | ⚡ |
-| 5 | AEP | American Electric | ~5% | $125.73 | -1.66% | $140.58 | $105.70 | 2.97% | 22.2 | ⚡ |
-| 6 | CEG | Constellation Energy | ~5% | $269.89 | +2.72% | $412.70 | $228.63 | 0.65% | 22.8 | ⚡ |
-| 7 | SRE | Sempra Energy | ~4% | $83.88 | — | $101.04 | $78.97 | 2.97% | 30.1 | ⚡ |
-| 8 | EXC | Exelon | ~3% | $45.61 | -0.46% | $50.65 | $42.58 | 3.67% | 16.8 | ⚡ |
-| 9 | XEL | Xcel Energy | ~3% | $78.07 | -0.17% | $84.23 | $69.16 | 3.03% | 21.4 | ⚡ |
-| 10 | EIX | Edison Int'l | ~2% | $68.62 | -6.47% | $80.90 | $51.01 | 5.54% | 6.5 | 🔥 |
-| 11 | PPL | PPL Corp | ~2% | $35.46 | — | $40.11 | $33.17 | 3.24% | 21.6 | ⚡ |
-| 12 | ED | ConEd | ~2% | $107.98 | -0.80% | $116.23 | $94.96 | 3.23% | 18.4 | ⚡ |
-| 13 | WEC | WEC Energy | ~2% | $107.63 | -1.64% | $119.91 | $102.95 | 3.48% | 21.2 | ⚡ |
-| 14 | ES | Eversource Energy | ~2% | $72.33 | +1.03% | $76.41 | $61.53 | 4.40% | 15.3 | 🔥 |
-| 15 | DTE | DTE Energy | ~2% | $141.87 | — | $155.75 | $126.23 | 3.28% | 22.5 | ⚡ |
-| 16 | VST | Vistra Corp | ~2% | $140.59 | -5.13% | $219.82 | $132.66 | 0.62% | 24.7 | ⚠️ |
+| 1 | NEE | NextEra Energy | ~14% | $86.19 | +1.82% | $98.75 | $69.24 | 2.89% | 19.4 | ⚡ |
+| 2 | SO | Southern Company | ~8% | $92.80 | +0.12% | $100.84 | $83.80 | 3.28% | 22.4 | ⚡ |
+| 3 | DUK | Duke Energy | ~8% | $123.92 | +0.13% | $134.49 | $113.90 | 3.50% | 18.7 | ⚡ |
+| 4 | D | Dominion Energy | ~5% | $68.77 | +2.05% | $72.99 | $55.85 | 3.88% | 23.8 | ⚡ |
+| 5 | AEP | American Electric | ~5% | $125.60 | +0.66% | $140.58 | $105.70 | 3.03% | 18.3* | ⚡ |
+| 6 | CEG | Constellation Energy | ~5% | $282.50 | +4.67% | $412.70 | $228.63 | 0.60% | 27.6 | 🔥 |
+| 7 | SRE | Sempra Energy | ~4% | $86.41 | +3.02% | $101.04 | $78.97 | 3.04% | 25.0 | ⚡ |
+| 8 | EXC | Exelon | ~3% | $45.86 | +0.55% | $50.65 | $42.58 | 3.68% | 16.9 | ⚡ |
+| 9 | XEL | Xcel Energy | ~3% | $79.17 | +1.41% | $84.23 | $71.29 | 2.99% | 21.7 | ⚡ |
+| 10 | EIX | Edison Int'l | ~2% | $71.41 | +4.07% | $81.62 | $52.00 | 4.92% | 7.4 | 🔥 |
+| 11 | PPL | PPL Corp | ~2% | $36.02 | +1.58% | $40.11 | $33.17 | 3.20% | 21.3 | ⚡ |
+| 12 | ED | ConEd | ~2% | $108.80 | +0.76% | $116.23 | $94.96 | 3.23% | 17.9 | ⚡ |
+| 13 | WEC | WEC Energy | ~2% | $110.52 | +3.58% | $119.91 | $102.95 | 3.45% | 21.5 | ⚡ |
+| 14 | ES | Eversource Energy | ~2% | $72.36 | +0.04% | $76.57 | $61.53 | 4.35% | 15.5 | ⚡ |
+| 15 | DTE | DTE Energy | ~2% | $140.84 | +0.69% | $155.75 | $126.23 | 3.31% | 22.3 | ⚡ |
+| 16 | VST | Vistra Corp | ~2% | $148.13 | +5.36% | $219.82 | $132.66 | 0.63% | 25.0 | 🔥 |
 
-> 🔥 = Deep value / high yield | ⚡ = Neutral / stable | ⚠️ = Volatile / narrative-driven
+> 🔥 = Catalyst-driven momentum | ⚡ = Neutral / stable | ⚠️ = Volatile / narrative-driven
+> *AEP shown on forward P/E (18.3x); trailing P/E of ~108x is distorted by one-time charges.
 
-**Sector Bifurcation:** The traditional regulated utilities (the bond proxies) were mostly down modestly (-0.2% to -2.6%), while the growth utilities saw extreme dispersion: CEG +2.72% on earnings, VST -5.13% ahead of earnings. EIX was the outlier to the downside at -6.47%.
+**Sector Bifurcation — resolved upward this week:** Every name in the table finished green. The growth pair led — **VST +5.36%** on its Q2 print and **CEG +4.67%** on follow-through — and the week's other big mover was **EIX +4.07%** on the tentative Eaton Fire ruling. The regulated bond proxies were uniformly positive but quieter: WEC +3.58% and SRE +3.02% led that group, while SO (+0.12%), DUK (+0.13%), and ES (+0.04%) were essentially flat.
 
 **The Traditional Regulated Utilities (The Bond Proxies):**
 - NEE, SO, DUK, D, AEP, SRE, EXC, XEL, PPL, ED, WEC, ES, DTE
-- The group was uniformly down 0.2% to 2.6%. NEE (-2.61%) and D (-2.57%) led the downside among large-caps.
-- The modest declines came *despite* falling yields, which is unusual. The market is treating utilities as still under duration pressure even with yields lower — likely due to earnings-season risk-off and profit-taking after the prior week's massacre.
-- ES (+1.03%) was the only regulated name in positive territory, bouncing after a rough prior week.
+- The group rose 0.0% to 3.6%. Notably, they rose *with* the 10Y yield climbing to 4.70% — the second week the rate correlation failed to explain sector price action.
+- D (+2.05%) continued its quiet recovery toward its $72.99 52W high. EXC (16.9x, 3.68% yield) and ES (15.5x, 4.35% yield) remain the value anchors.
 
 **The Nuclear / Data Center Utilities (The Growth Stories):**
-- CEG (+2.72%) and VST (-5.13%) moved in opposite directions. CEG's Q2 beat and raised guidance, plus 920 MW of new data center PPAs, gave the nuclear growth narrative a shot of adrenaline. The stock is still 35% below its 52W high but found buyers this week.
-- VST's -5.13% drop came ahead of its Q2 report (Aug 8). The market was pricing in anxiety — despite record summer heat and strong Texas power prices, investors wanted to see the numbers before believing. VST is now 36% below its 52W high.
-- The divergence between CEG and VST shows the market is no longer treating all "nuclear/data center" utilities as a monolith. Execution matters.
+- **VST (+5.36%)** delivered the proof the market demanded: Q2 ongoing Adjusted EBITDA of **$1.767B, +31% YoY**, with generation-segment EBITDA up ~68%. Guidance reaffirmed ($6.8–7.6B 2026 Adj EBITDA), the 2027 midpoint opportunity ($7.4–7.8B) maintained, and Cogentrix + the Meta PJM PPA remain *excluded* from that range — roughly $700M of potential 2027 upside still off the books. The **Helix Digital Infrastructure** venture (KKR + NVIDIA, up to $1B) plants Vistra directly in the data-center buildout. GAAP EPS missed on a $472M unrealized hedge loss; the market correctly looked through it.
+- **CEG (+4.67%)** rode Vistra's validation to $282.50 — still 32% below its $412.70 52W high, but the post-earnings bid is now two weeks old and sticking.
+- The CEG/VST divergence trade is over for now: both are being bought as execution stories.
 
-**The EIX Story:** Edison International got hammered **-6.47%** this week to $68.62, bringing its two-week drop to roughly **-14%**. Q2 EPS was strong, but the Eaton fire claims process is in early stages and the liability ceiling is unknown. California's inverse condemnation law remains the existential risk. At 6.5x P/E and 5.5%+ yield, EIX is the cheapest large-cap utility by far — but the market is pricing in a binary outcome.
+**The EIX Story — the overhang cracked:** Edison rallied +4.07% to $71.41 after a judge's **tentative ruling that SCE is not liable for the Eaton Fire** (insurers' subrogation claim rejected, Aug 11–12). This does not end the story — the Wildfire Recovery Compensation Program keeps processing claims (593 offers, $183M+ extended as of February; ~$1B recorded), and Jefferies' $13.5B worst-case estimate still hangs overhead — but the ruling attacks the inverse-condemnation worst case directly. At **7.4x trailing P/E and a 4.92% yield**, EIX remains the sector's deep-value outlier; the mean analyst target is $76.04.
 
-**Cecil Fundamental Read:** EIX at 6.5x P/E and 5.5% yield is the sector's deep-value outlier, but the wildfire risk is real and unhedgeable. EXC at 16.8x P/E and 3.67% yield is the best value among large-cap regulated names. DUK at 19.3x P/E remains the gold standard. CEG's Q2 was a statement — the nuclear/data center narrative is not dead, but it requires proof. VST at 24.7x P/E needs to deliver on Aug 8 or the stock could test $130. I want utilities that pay dividends and keep the lights on. CEG proved it can do both; VST still needs to show its work.
+**Cecil Fundamental Read:** VST proved itself — +31% EBITDA growth, guidance reaffirmed, and the 2027 upside isn't even fully priced. At 25.0x trailing but only **14.3x forward**, VST is cheaper than it looks. CEG at 27.6x trailing / 21.2x forward carries the premium, but the PPA machine keeps signing. EIX at 7.4x with a 4.92% yield is a lawsuit-priced stock; the tentative ruling is the first good news in months, and I am not too proud to admit the risk/reward has improved. EXC at 16.9x and ES at 15.5x remain the prudent buys. The garden got its steady rain this week.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *Tracking sub-$5B market-cap names the mega-cap briefs ignore. ALE and PNM could not be resolved via live data feeds; rotated out. NWE and UTL verified as sub-$5B substitutes.*
+> *Tracking sub-$5B market-cap names the mega-cap briefs ignore. ALE and PNM are now confirmed **delisted via M&A** — ALE was acquired by GIP/CPP Investments (Dec 2025, $67/share) and PNM (TXNM) by Blackstone Infrastructure ($61.25/share) — which is why live feeds no longer resolve them. NWE and UTL remain as the verified sub-$5B substitutes. All five names below verified under $5B as of Aug 14 close.*
 
 | Ticker | Name | Price | 1W Change | Market Cap | P/E | Yield | Signal |
 |---|---|---|---|---|---|---|---|
-| MGEE | MGE Energy | $81.54 | — | **$3.08B** | 20.0x | 2.33% | ⚡ |
-| OTTR | Otter Tail | $93.79 | +6.07% | **$3.94B** | 20.3x | 2.41% | ⚡ |
-| AVA | Avista Corp | $38.73 | -4.25% | **$3.24B** | 14.0x | 5.08% | 🔥 |
-| NWE | NorthWestern Energy | $72.09 | +4.87% | **$4.43B** | 26.0x | 3.72% | ⚡ |
-| UTL | Unitil Corp | $53.73 | -0.39% | **$0.98B** | 17.1x | 3.54% | ⚡ |
+| MGEE | MGE Energy | $81.73 | +0.23% | **$3.09B** ✓ | 20.1x | 2.35% | ⚡ |
+| OTTR | Otter Tail | $92.87 | -0.36% | **$3.90B** ✓ | 20.1x | 2.43% | ⚡ |
+| AVA | Avista Corp | $39.15 | +1.08% | **$3.28B** ✓ | 14.1x | 5.03% | 🔥 |
+| NWE | NorthWestern Energy | $71.81 | -0.39% | **$4.42B** ✓ | 25.9x | 3.73% | ⚡ |
+| UTL | Unitil Corp | $54.56 | +1.54% | **$0.995B** ✓ | 17.4x | 3.48% | ⚡ |
 
-**MGEE — Madison, WI Regulated Utility ($3.08B cap):** MGEE operates regulated electric and gas utilities in Wisconsin with a 45+ year dividend growth streak. Weekly price data was unavailable, but the stock's 2.33% yield and 20.0x P/E reflect a premium small-cap bond proxy. No fresh catalyst this week. Council read: A dividend-growth safe harbor within the sector; too small to move XLU but a steady compounder.
+**MGEE — Madison, WI Regulated Utility ($3.09B cap):** A quiet week (+0.23%) for the Wisconsin dividend grower. Analyst stance is Hold with a $78.25 mean target — just below the current price, so the market has already paid for the safety. No fresh company catalyst. Council read: a fully-valued safe harbor; own it for the 45+ year dividend streak, not for upside.
 
-**OTTR — Minnesota/North Dakota Diversified Utility ($3.94B cap):** Otter Tail was the **best-performing utility** in our coverage universe this week at +6.07%. The regulated-utility-plus-manufacturing hybrid model continues to attract buyers. At 20.3x P/E and 2.41% yield, it trades at a modest premium to pure-plays but the manufacturing segment (PVC pipe, plastics) adds cyclical upside. Council read: The manufacturing mix is a feature when industrials are strong; this week's +6% move proves small-caps can outperform when the narrative fits.
+**OTTR — Minnesota/North Dakota Diversified Utility ($3.90B cap):** Gave back a sliver (-0.36%) after last week's +6.07% surge — healthy consolidation. Hold ratings, $90.50 mean target sits just under price. Council read: the manufacturing-plus-utility hybrid keeps its premium; watch the industrial segment for the next leg.
 
-**AVA — Pacific Northwest Electric/Gas Utility ($3.24B cap):** Avista fell -4.25% this week to $38.73, now 11% below its 52W high of $43.50. The 5.08% yield is the highest among our small-cap watchlist, and the 14.0x P/E is the cheapest. The stock is exposed to Pacific Northwest hydroelectric generation — low-cost, low-carbon — but regulatory risk in Washington and Idaho rate cases is an overhang. Council read: A high-yield, low-P/E small-cap with rate-case resolution as the next catalyst; the 5%+ yield provides a floor.
+**AVA — Pacific Northwest Electric/Gas ($3.28B cap):** Rose +1.08% to $39.15. Fresh catalysts: goes **ex-dividend Aug 18** ($0.4925/quarter), and its 2026 rate-case haul is locked in — Washington (+$68.9M electric, 9.8% ROE), Idaho, Oregon, and Alaska (11.45% ROE) approvals all in hand, with $45M of wildfire-mitigation capex deferred for recovery. Council read: the highest yield (5.03%) and lowest P/E (14.1x) on this list, with regulatory clarity through the year — the value pick of the small-cap sleeve.
 
-**NWE — Montana/South Dakota Regulated Utility ($4.43B cap):** NorthWestern Energy rose +4.87% this week, bucking the sector downtrend. The Montana-based utility serves 740K customers across Montana, South Dakota, and Nebraska. At 26.0x P/E and 3.72% yield, it's not cheap, but the stock's outperformance reflects flight-to-quality within the small-cap space. Council read: A regional defensive play that held up when mega-caps sold off; the +4.9% week shows there's alpha in small-cap utilities when rates stabilize.
+**NWE — Montana/South Dakota Regulated Utility ($4.42B cap):** Flat (-0.39%) as the **Black Hills Corp merger of equals** (announced Aug 2025, 0.98x exchange) works through approvals — expected close late 2026, doubling rate base to ~$11.4B. Analyst stance has shifted to Buy with a $74.25 target. Council read: a merger-arb-flavored regulated utility; the combined 5–7% EPS growth target is the prize, regulatory approval is the risk.
 
-**UTL — New Hampshire/Maine Regulated Utility ($0.98B cap):** Unitil was essentially flat (-0.39%) this week at $53.73. The sub-$1B market cap makes it a true micro-utility, but the 17.1x P/E and 3.54% yield are reasonable. UTL serves 190K customers in New Hampshire, Maine, and Massachusetts — a stable, regulated footprint with limited growth but consistent cash flows. Council read: The smallest cap on our watchlist and the most bond-proxy-like; a cash-flow machine for yield hunters who can stomach the liquidity risk.
+**UTL — New Hampshire/Maine Regulated Utility ($0.995B cap):** The week's small-cap leader at +1.54%. Hold ratings, $55.33 mean target — just above price. Sub-$1B micro-utility with a stable 190K-customer footprint. Council read: a pure bond-proxy micro-cap; fine for yield hunters who accept the liquidity risk.
 
-> **Note:** ALE and PNM were flagged as starting candidates but could not be resolved via live data feeds (ticker resolution failed). NWE and UTL are rotated in as verified sub-$5B substitutes. All five names above remain under the $5B cap threshold. MGEE weekly change is unavailable due to data feed limitations.
+> **Note:** No cap graduations this week — all five remain under $5B. NWE ($4.42B) is closest to the threshold and will be promoted out if the BKH merger re-rates it above $5B before closing.
 
 ---
 
@@ -105,18 +105,18 @@ The **wildfire liability risk** for EIX deepened this week. The stock fell -6.47
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $47.80 | Resistance — now $4.19 away, feels distant |
-| Near Resistance | $44.86 | 50D MA — broken, now overhead resistance |
-| Current Price | $43.61 | — |
-| 200-Day MA | **$44.81** | **Broken this week — former support now resistance** |
-| Major Support | $43.00 | February gap-fill zone — XLU tested it intraweek |
+| 52W High | $47.80 | Resistance — now $3.49 away after two-week recovery |
+| Near Resistance | $44.85 | 50D MA — still overhead, gap narrowing |
+| 200-Day MA | **$44.77** | **Reclaim watch — Friday close $44.31 sits $0.46 below** |
+| Current Price | $44.31 | — |
+| Major Support | $43.00 | Held for the second straight week (Mon low $43.13) |
 | Deep Support | $41.15 | 52W low / March 2025 bottom |
 
-**Marky Setup Assessment:** XLU is in a **deteriorating technical configuration**. The ETF closed the week at $43.61 — **below both the 50D MA ($44.86) and 200D MA ($44.81)**. The 50D is still barely above the 200D (by 5 cents), but a sustained close below $44.80 risks a death cross that would trigger systematic selling. Volume was elevated on the Aug 5–6 breakdown (~26M shares), confirming institutional distribution.
+**Marky Setup Assessment:** The technical picture improved from "deteriorating" to **"repairing."** XLU closed at $44.31 — still below both moving averages, but the 50D ($44.85) and 200D ($44.77) are now within 1.2%. RSI-14 recovered to ~48 (neutral). The $43.00 support has been tested twice in two weeks and held both times — that is a real floor. The 50D remains only 8 cents above the 200D; the death-cross risk has not disappeared, but the two-week recovery makes it a coin flip instead of a near-certainty.
 
-The RSI is likely around 38–40 — not oversold yet. The MACD is rolling over. The sector is underperforming the S&P 500 again this week. The key question: does $43.00 hold? It was tested intraday on Aug 7 (low $42.95) and held. A close below $43.00 opens the door to $41.15. A reclaim of $44.80 (the 200D MA) is needed to repair the technical damage. My bias is **cautiously bearish short-term** until XLU reclaims $44.80.
+**Triggers:** A close above **$44.85** (both MAs reclaimed) repairs the chart fully and opens $47.80. A close below **$43.00** breaks the double-tested floor and opens $41.15. Volume was light all week (Fri 17.0M vs 20.3M avg) — conviction is moderate on both sides. My bias flips from cautiously bearish to **neutral** until one of those levels breaks.
 
-**The correlation story:** This week broke the utilities-yields correlation. The 10Y fell 8.5 bps, and XLU fell 1.67%. That's the wrong sign. Either the correlation is temporarily broken by earnings dispersion, or the market is pricing a deeper macro concern (recession fear, credit stress, or Fed policy error) that overwhelms the yield tailwind. I am watching next week's price action closely — if yields keep falling and utilities keep falling, the playbook changes.
+**The correlation story — week two of the inversion:** 10Y +4 bps, XLU +1.61%. Last week: 10Y -8.5 bps, XLU -1.67%. Two weeks, two wrong-sign moves. The lesson is not that rates don't matter — it is that during earnings season plus a live wildfire docket, stock-specific news swamps the 4–8 bps of weekly rate noise. The bond-proxy linkage reasserts on bigger rate moves; watch a 10Y break above 5% or below 4.5% as the real test.
 
 ---
 
@@ -124,25 +124,22 @@ The RSI is likely around 38–40 — not oversold yet. The MACD is rolling over.
 
 | Factor | Level | Implication for XLU |
 |---|---|---|
-| 10Y Treasury | **4.66%** | **Down 8.5 bps this week.** Bullish for duration, but XLU did not rally. Correlation break = watch closely. |
-| 2Y Treasury | ~4.50% | Short-term rates stable. Fed on hold = neutral for financing costs. |
-| Utility Yield - 10Y Spread | **-196 bps** | **Deeply negative.** Utility dividends (~2.70%) still trail the 10Y by nearly 200 bps. |
-| Fed Funds | 3.50–3.75% (on hold) | Neutral. Cuts = utilities rally. Hikes = utilities get crushed. |
-| DXY | ~99.60 | Stable. No FX-driven commodity cost shocks. |
-| Electricity Demand | Growing ~+2% annually | Baseline growth. Population + GDP driven. |
-| Data Center Demand | ~+15% annually | **CEG's 920 MW PPA announcement this week re-energized the narrative.** |
-| Nuclear Fleet | ~95 GW in U.S. | CEG's Crane restart and NY license renewals = positive fleet momentum. |
-| SMR Development | Early stage | Small modular reactors = 5–10 years to commercialization. CEG, VST positioned. |
-| Heat Waves | Elevated | Summer demand spikes. Helps unregulated generators (VST) — but stock fell anyway. |
-| Wildfire Risk | Elevated (CA, TX, PNW) | EIX -6.47% this week. Eaton fire claims in early stages. Inverse condemnation remains. |
-| Regulatory Environment | Generally supportive | Rate cases being approved. ROE targets ~9–10%. |
-| Natural Gas Prices | ~$2.90/MMBtu | Low gas prices = low generation costs. Marginal positive for gas utilities. |
+| 10Y Treasury | **4.70%** | **Up ~4 bps this week.** XLU rallied anyway — correlation inverted for week two. |
+| 2Y Treasury | ~4.50% | Curve stable. Fed on hold = neutral financing backdrop. |
+| Utility Yield - 10Y Spread | **-200 bps** | Still deeply negative (2.70% vs 4.70%). Caps the bond-proxy bid until yields fall. |
+| Fed Funds | 3.50–3.75% (on hold) | No meeting this week. Oil's rebound (WTI +5.4%) is a mild hawkish input for September. |
+| DXY | **99.64** | Flat (-0.03% Fri). No FX impulse either way. |
+| VIX | **14.25** | -4.4% on the week. Broad complacency — defensive bid comes from stock-specific value, not fear. |
+| Electricity Demand | Growing ~+2% annually | Baseline intact. |
+| Data Center Demand | ~+15% annually | **VST Helix venture (KKR/NVIDIA, up to $1B) + PJM capacity at $333/MW-day + White House RBA proposal (~$15B, 6–10 GW, Sept 2026 target) keep the narrative hot.** |
+| Nuclear Fleet | ~95 GW in U.S. | CEG Crane restart on track; relicensing momentum continues. |
+| SMR Development | Early stage | TerraPower Natrium construction permit (2026) is the clearest timeline; commercialization still ~2030+. |
+| Heat Waves | Elevated | VST reported >97% fleet availability through summer peaks — reliability monetized. |
+| Wildfire Risk | **Improving for EIX** | **Tentative ruling: SCE not liable for Eaton Fire (Aug 11–12).** CA 2026 fire season quiet so far (~4,400 fires, below average). Inverse condemnation law unchanged. |
+| Regulatory Environment | Supportive | AVA rate cases approved across WA/ID/OR/AK; NWE-BKH merger pending. |
+| Natural Gas Prices | $2.73/MMBtu (+2.7% wk) | Still cheap generation fuel; marginal tailwind for gas utilities. |
 
-**Ophelia Verdict:** The macro backdrop for utilities is **mixed and confusing**. The 10Y yield at 4.66% is down from 4.745% — a tailwind that should have produced a +2% week for XLU. Instead, XLU fell -1.67%. I see three explanations: (1) earnings season is creating idiosyncratic dispersion that overwhelms the beta-driven yield trade; (2) the market is still digesting the prior week's -4.19% drop and dip-buyers are absent; (3) there is a deeper macro fear (recession? credit stress?) that makes falling yields *bad* for utilities because it signals falling power demand.
-
-The **data center electricity demand** narrative got its biggest boost in months from CEG's Q2 report. The 920 MW of new PPAs, the Crane restart approval, and the raised guidance show that the nuclear growth story is not just hype — it is translating into revenue and earnings. But VST's -5.13% drop ahead of its own earnings shows the market is no longer giving growth utilities the benefit of the doubt. They need to prove it every quarter.
-
-The **wildfire risk** for EIX is the other major overhang. The stock's two-week drop is now ~14%. Q2 EPS was fine, but the market does not care about quarterly earnings when the existential risk is a multi-billion-dollar wildfire liability. California's inverse condemnation law makes utilities strictly liable. Until that law changes or the Eaton fire claims resolve, EIX will trade at a distressed multiple.
+**Ophelia Verdict:** Two weeks of wrong-sign correlation moves tell me the sector is trading on its own book, not on the 10Y. The real macro driver this week was **the data-center power stack**: PJM capacity at $333/MW-day, the proposed Reliability Backstop Auction that would make hyperscalers fund 6–10 GW of new build, and Vistra's Helix venture with KKR and NVIDIA. That is a structural revenue story for merchant power, independent of where the 10Y sits at 4.66% or 4.70%. The rates picture is unchanged — Fed on hold, curve flat, DXY quiet. Oil's +5.4% week (Hormuz risk repriced) is the one new hawkish input for the September Fed meeting; if crude keeps climbing, rate-cut hopes fade and the -200 bps spread stays the sector's ceiling. I remain defensive on the group but the growth names have earned their premium two weeks running.
 
 ---
 
@@ -150,17 +147,17 @@ The **wildfire risk** for EIX is the other major overhang. The stock's two-week 
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### Week of August 3–7, 2026: The Correlation Break
+### Week of August 10–14, 2026: Vistra Delivers, Edison Exhales
 
-Utilities had a **strange week**. The 10Y yield fell 8.5 bps to 4.66%, and XLU fell -1.67%. By every historical playbook, that is the wrong sign. When yields fall, bond proxies rally. Not this time. The market sent a message: something else is driving utility prices, and that something is **earnings dispersion + idiosyncratic risk**.
+Utilities posted their **first green week in three** — XLU +1.61% to $44.31 — and they did it with the 10Y yield *rising* to 4.70%. Two forces did the lifting: a growth-utility earnings validation and a wildfire-liability reprieve.
 
-**The CEG Earnings Beat:** Constellation Energy reported Q2 on Aug 6 and delivered the goods — adjusted EPS of $2.55, and more importantly, **raised full-year guidance** to $11.50–$12.50/share. The market had been skeptical of CEG's premium after the March guidance disappointment; this quarter restored credibility. The 920 MW of new nuclear PPAs (including a 176 MW deal with Walmart) and the FERC approval for Crane restart were the cherry on top. CEG rallied +2.72% and carried the nuclear narrative with it. The stock is still 35% below its 52W high, but the downtrend paused.
+**Vistra answered the bell.** Last week the market sold VST down -5.13% ahead of its Q2 report, demanding proof that Texas heat and data-center demand were translating into cash. The Aug 7 report delivered: ongoing Adjusted EBITDA of **$1.767B, up 31% year-over-year**, generation-segment EBITDA up ~68%, >97% fleet availability through the summer peaks, and 2026 guidance reaffirmed at $6.8–7.6B. The headline GAAP EPS "miss" was a $472M unrealized hedge loss — accounting noise the market correctly ignored. The strategic bombshell was the **Helix Digital Infrastructure venture with KKR and NVIDIA** (up to $1B committed), plus management's confirmation that the Cogentrix acquisition and the Meta PJM nuclear PPA — together worth roughly **$700M of 2027 EBITDA** — are still *excluded* from the $7.4–7.8B 2027 opportunity range. VST rallied +5.36% on the week to $148.13, and the buy-the-dip case in nuclear/data-center power got its second wind. CEG rode along, +4.67% to $282.50, as its own raised-guidance quarter from last week kept finding buyers.
 
-**VST's Pre-Earnings Anxiety:** Vistra Corp fell -5.13% this week ahead of its Aug 8 Q2 report. The market wanted to see proof that record summer heat in Texas translated into generation margins. The Meta PPA deal was old news. VST's stock is now 36% below its 52W high, and every earnings report is a make-or-break event. The good news: if VST delivers record EBITDA (as early reports suggest), the stock could snap back hard. The bad news: if margins disappointed, $130 is the next support.
+**Edison caught its first break in months.** On Aug 11–12, a judge **tentatively ruled that Southern California Edison is not liable for the Eaton Fire**, rejecting the insurance industry's subrogation bid to pin the losses on the utility. The ruling is tentative, the compensation program rolls on (~$1B recorded; Jefferies' worst case $13.5B), and California's inverse-condemnation statute still stands — but the market had priced EIX as a distressed credit at 6.5x earnings, and the ruling directly undercuts that worst case. EIX bounced +4.07% to $71.41.
 
-**EIX's Wildfire Spiral:** Edison International was the worst performer in the sector at -6.47%. Two weeks ago, EIX was $79.75. Today it is $68.62 — a **14% collapse** driven entirely by wildfire liability fear. Q2 EPS was actually strong, but the Eaton fire claims process is in early stages and the ceiling is unknown. The market is pricing EIX like a distressed credit. At 6.5x P/E and 5.5% yield, it is either a generational value trap or a value play for risk-tolerant accounts.
+**The quiet majority ground higher.** Every regulated name finished green: WEC +3.58%, SRE +3.02%, D +2.05%, NEE +1.82%. Light volume all week says this was seller exhaustion, not aggressive accumulation.
 
-**The Bottom Line:** This week proved that utilities are not *just* bond proxies. Earnings season can override the yield narrative. CEG proved that execution matters. VST proved that expectations can get too high. EIX proved that regulatory/liability risk is unhedgeable. The 10Y yield fell, but XLU fell too — because the sector's internal dynamics (earnings, wildfires, power prices) were more important than the macro rate move. For traders, this means stock-picking within utilities is now more profitable than betting the sector ETF. For investors, it means the bond-proxy trade is on pause until earnings season ends.
+**The Bottom Line:** The sector's two open questions from last week both resolved favorably — VST proved the growth story, and EIX's worst-case wildfire path weakened. The rate correlation stayed inverted (yields up, utilities up), confirming that company-level news is dominating duration math this month. The next real macro test is a 10Y move big enough to matter: above 5% or below 4.5%.
 
 ---
 
@@ -169,7 +166,7 @@ Utilities had a **strange week**. The 10Y yield fell 8.5 bps to 4.66%, and XLU f
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
 | **NextEra Energy** | NEE | **Jul 24, 2026** | Q2 2026 | **REPORTED:** Adj EPS beat; FPL raised large-load forecast 6→8 GW |
-| **American Electric** | AEP | **Jul 24, 2026** | Q2 2026 | **REPORTED:** Watch rate base growth and transmission investment |
+| **American Electric** | AEP | **Jul 24, 2026** | Q2 2026 | **REPORTED:** Rate base growth and transmission investment |
 | **Eversource Energy** | ES | **Jul 29, 2026** | Q2 2026 | **REPORTED:** Rate case progress; offshore wind investments |
 | **Southern Company** | SO | **Jul 31, 2026** | Q2 2026 | **REPORTED:** Vogtle nuclear performance; rate case progress |
 | **Xcel Energy** | XEL | **Jul 31, 2026** | Q2 2026 | **REPORTED:** Rate case progress; renewable additions |
@@ -177,62 +174,61 @@ Utilities had a **strange week**. The 10Y yield fell 8.5 bps to 4.66%, and XLU f
 | **Sempra Energy** | SRE | **Aug 6, 2026** | Q2 2026 | **REPORTED:** LNG export volumes; Texas utility growth |
 | **Duke Energy** | DUK | **Aug 7, 2026** | Q2 2026 | **REPORTED:** Rate base growth; storm cost recovery; guidance |
 | **Constellation Energy** | CEG | **Aug 8, 2026** | Q2 2026 | **REPORTED:** Adj EPS $2.55; raised guidance; 920 MW new PPAs; Crane restart approved |
-| **Vistra** | VST | **Aug 8, 2026** | Q2 2026 | **REPORTING:** Texas power prices; generation margin; data center deals; guidance |
+| **Vistra** | VST | **Aug 7, 2026** | Q2 2026 | **REPORTED:** Adj EBITDA $1.767B (+31% YoY); guidance reaffirmed $6.8–7.6B; Helix venture (KKR/NVIDIA) up to $1B; Cogentrix + Meta PJM PPA ≈ $700M 2027 upside excluded from range |
 
-**Marky's Binary Event Read:** CEG's Q2 report was the sector's most consequential event this week. The beat, the raised guidance, and the 920 MW PPA announcement restored credibility to the nuclear/data center growth narrative. The stock's +2.72% move was modest relative to the news — suggesting the market is still skeptical of premium multiples but willing to reward execution.
-
-**VST's Aug 8 report is now the make-or-break event.** The stock is down -5.13% this week and -36% from its 52W high. Early reports suggest record EBITDA, but the market wants to see: (1) Texas generation margin expansion in the summer heat, (2) incremental data center PPAs beyond Meta, (3) guidance that shows the growth story is intact. If VST misses, $130 is the next support. If it beats, a snapback to $160+ is possible.
+**Marky's Binary Event Read:** The Q2 gauntlet is complete and the sector survived it. The two highest-beta reports — CEG and VST — both landed as net positives, and both stocks closed the week near their post-print highs. That clears the calendar until **Q3 season opens in late October** (NEE/SO/DUK late Oct; VST's next report is estimated for **Nov 5, 2026**). Between now and then, the catalysts are regulatory and structural: the **September-targeted Reliability Backstop Auction** proposal, the NWE–BKH merger approvals, the EIX tentative ruling becoming final (or not), and PJM's next capacity signals. Watch Monday's tape for follow-through: VST needs to hold $145+ to confirm the post-earnings bid is institutional, and EIX needs to hold $70.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Fed cuts 50–75 bps in September → 10Y yield drops to 4.2% → utilities re-rate → XLU rallies to $48
-- CEG's Q2 momentum continues → more data center PPAs → nuclear utilities re-rate → CEG reclaims $300
-- VST beats on Q2 → Texas margins explode → stock snaps back to $160+ → growth narrative restored
-- SMR development accelerates → regulatory approval fast-tracked → CEG becomes the nuclear Amazon
-- Summer heat waves drive power price spikes → unregulated generators (VST, NRG) earnings explode
-- California reforms inverse condemnation → EIX wildfire risk disappears → stock re-rates to 12x P/E
+- 10Y yield breaks below 4.50% → bond-proxy trade reactivates → XLU reclaims both MAs and runs to $47.80
+- Reliability Backstop Auction lands in September → hyperscalers sign 15-year contracts → CEG/VST re-rate again
+- EIX tentative ruling becomes final → inverse-condemnation worst case fades → EIX re-rates toward 10x P/E ($80+)
+- VST incorporates Cogentrix + Meta PJM PPA into guidance → 2027 EBITDA midpoint jumps ~$700M → $170+ snapback
+- More nuclear PPAs (CEG follow-on, NEE Duane Arnold ramp) → data-center narrative compounds
+- California passes wildfire-reform legislation in 2026 → sector-wide CA overhang lifts
 
 ### 🔴 Bear Case
-- Fed delays cuts to December → 10Y yield rises above 5.00% → utilities get crushed → XLU drops to $40
-- VST misses on Q2 → Texas margins disappoint → growth narrative cracks → stock drops to $130
-- Wildfire liability spikes → EIX faces multi-billion-dollar charge → sector contagion fear
-- Recession → electricity demand drops → utility earnings miss → broad sector selloff
-- Nuclear relicensing delays → CEG fleet downtime rises → earnings miss → stock drops 15%+
+- Oil's rebound (WTI +5.4% wk) re-ignites inflation fear → Fed stays hawkish → 10Y breaks 5.00% → XLU tests $41.15
+- EIX tentative ruling reversed or final judgment goes against SCE → wildfire worst case returns → EIX back to $60s
+- ERCOT forward prices keep softening → VST's 2027 "opportunity" shrinks → growth premium compresses
+- Recession → electricity demand drops → rate-base growth can't offset volume decline → broad selloff
+- Nuclear outage or relicensing delay at a major CEG/VST plant → growth narrative dents
 
 ### ⚠️ The Wild Card
-The **utilities-yields correlation** broke this week. If this persists, the entire sector framework changes. Utilities have traded as bond proxies for decades. If they start trading as cyclicals (rising yields = rising growth = rising power demand = utilities rally), the playbook inverts. The next 2–3 weeks will tell us if this was an earnings-season aberration or a regime shift. Watch the 10Y yield and XLU price action together. If yields fall and utilities keep falling, the bond-proxy trade is broken — and the sector needs a new narrative.
+The **utilities-yields correlation has now failed two weeks in a row** — in opposite directions (yields down/XLU down, then yields up/XLU up). If earnings season's end restores the bond-proxy linkage, fine. But if the sector keeps trading on the data-center power stack (PJM capacity at $333/MW-day, RBA auctions, nuclear PPAs) instead of the 10Y, then utilities are quietly being re-classified from "bond proxy" to "AI infrastructure." That re-classification would be the biggest sector regime shift in decades. Watch whether XLU's weekly returns keep ignoring the 10Y now that earnings are done.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The bond-proxy playbook broke this week. The 10Y yield fell 8.5 bps to 4.66%, and XLU fell -1.67%. That is not supposed to happen. I see three explanations: earnings dispersion overwhelmed the macro signal, dip-buyers were absent after last week's massacre, or the market is pricing a deeper fear (recession? credit stress?) that makes falling yields bad for power demand. CEG's Q2 was a masterpiece — $2.55 adj EPS, raised guidance, 920 MW of new PPAs, Crane restart approved. The nuclear/data center narrative is alive. But VST fell -5.13% ahead of its own report, proving the market no longer gives growth utilities a free pass. EIX is in freefall — down 14% in two weeks on wildfire liability fear. The 200D MA at $44.81 is now resistance. XLU closed below both moving averages. I am watching two things: (1) does XLU reclaim $44.80, and (2) does the yields-utilities correlation repair itself. If both answers are no, the playbook changes."*
+**Ophelia:** *"The 10Y rose to 4.70% and utilities rallied anyway. Two weeks of wrong-sign moves — last week down with yields down, this week up with yields up. The bond proxy is being overridden by its own fundamentals: PJM capacity at $333/MW-day, a White House-backed plan to make data centers fund 6–10 GW of new generation, and Vistra signing up with KKR and NVIDIA. That is infrastructure re-rating, not duration trading. My caution flags: oil rebounded 5.4% this week, which pushes the Fed away from cuts, and the -200 bps yield spread still caps how far the regulated names can run. I am watching the 10Y at 4.75% — a push through there with oil climbing would turn the macro hostile again."*
 
-**Marky:** *"The tape is telling a breakdown story. XLU is down -1.67% this week and -6.5% over two weeks. The 50D MA ($44.86) and 200D MA ($44.81) were both broken. The 50D is barely above the 200D — a death cross is one bad session away. Volume spiked on the Aug 5–6 breakdown (~26M shares). The RSI is around 38–40, not oversold. Support at $43.00 was tested intraday on Aug 7 ($42.95 low) and held — that is the line in the sand for Monday. My bias is bearish short-term until XLU reclaims $44.80. I like EIX as a deep-value contrarian play below $70, but only for risk-tolerant accounts. I like DUK on any dip to $120. But I am not chasing utilities until the technical damage is repaired."*
+**Marky:** *"The repair job is 90% done. XLU closed at $44.31, barely under the 200D at $44.77 and the 50D at $44.85. RSI is 48, neutral. The $43.00 floor held twice — that's a real level now. The play for Monday: a close above $44.85 confirms the repair and opens $47.80; a loss of $43.00 breaks the double-tested floor and opens $41.15. Volume was light, so wait for the break with confirmation rather than front-running. In the names: VST held its earnings pop all week — institutional bid, watch $145. EIX needs to hold $70 to confirm the ruling rally. CEG at $282.50 is grinding toward $300."*
 
-**Cecil:** *"CEG's Q2 was exactly what the nuclear growth narrative needed. $2.55 adj EPS, raised guidance, 920 MW of new PPAs, Crane restart moving forward. The stock rallied +2.72% but is still 35% below its peak. At 22.8x P/E and 0.65% yield, CEG is not a bond proxy — it is a growth stock getting a second look. VST at 24.7x P/E needs to prove itself on Aug 8. EIX at 6.5x P/E and 5.5% yield is the cheapest utility in America, but the wildfire risk is real. EXC at 16.8x P/E and 3.67% yield is the best value among regulated large-caps. The garden needs steady rain, not a thunderstorm. Last week was a thunderstorm. This week was a confused drizzle. I am waiting for the clouds to clear."*
+**Cecil:** *"Vistra did exactly what I asked — it showed its work. +31% EBITDA growth, guidance reaffirmed, and they are keeping $700M of 2027 upside off the books until the ink dries. At 14.3x forward earnings, VST is not expensive. CEG at 21x forward carries more premium but keeps signing PPAs. EIX at 7.4x with a 4.92% yield finally caught a break with the tentative ruling — I am not buying a lawsuit, but I am no longer ignoring the stock. EXC at 16.9x and ES at 15.5x with a 4.35% yield remain the prudent income buys. The garden got steady rain this week. I planted nothing new, but I stopped weeding."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLU, NEE, SO, DUK, D, AEP, CEG, SRE, EXC, XEL, EIX, PPL, ED, WEC, ES, DTE, VST, MGEE, OTTR, AVA, NWE, UTL, ^TNX, ^FVX, DX-Y.NYB live data
-- Constellation Energy Q2 2026 Earnings Release (Aug 6, 2026): https://www.constellationenergy.com/news/2026/08/constellation-reports-second-quarter-2026-results.html
-- Vistra Corp Q2 2026 Earnings Call Highlights (Aug 8, 2026): Record EBITDA surge, Helix strategic update
-- Edison International Q2 2026 Earnings Call Highlights (Jul 30, 2026): Strong EPS growth, wildfire liability uncertainty
+- Yahoo Finance: XLU, NEE, SO, DUK, D, AEP, CEG, SRE, EXC, XEL, EIX, PPL, ED, WEC, ES, DTE, VST, MGEE, OTTR, AVA, NWE, UTL, ^TNX, ^FVX, DX-Y.NYB, ^VIX, NG=F live data (Aug 14, 2026 close)
+- Vistra Corp Q2 2026 Earnings Release (Aug 7, 2026): Adj EBITDA $1.767B (+31% YoY), guidance reaffirmed, Helix Digital Infrastructure venture
+- MarketScreener / Carrier Management (Aug 11–12, 2026): SCE tentatively not held liable for Eaton Fire; insurer subrogation bid rejected
+- Constellation Energy Q2 2026 Earnings Release (Aug 6–8, 2026): Adj EPS $2.55; raised guidance; 920 MW new PPAs; Crane restart approved
+- Edison International Q2 2026 Earnings Call (Jul 30, 2026): core EPS $1.54; guidance reaffirmed $5.90–$6.20
+- Gabelli Utilities U.S. Outlook (2026): PJM capacity auction $333/MW-day; Reliability Backstop Auction proposal; ALE/TXNM(BKH)/AES M&A roundup
+- Avista 2026 Investor Presentation: rate-case approvals WA/ID/OR/AK; $45M wildfire mitigation capex
 - U.S. Energy Information Administration (EIA): Electricity demand, generation mix, power prices
-- Federal Energy Regulatory Commission (FERC): Rate case data, transmission approvals, Crane CIR transfer
-- PJM Interconnection: Power price data, capacity market results
-- ERCOT (Texas): Power price data, demand records
-- Nuclear Regulatory Commission (NRC): Reactor status, relicensing data (Ginna, Nine Mile Point)
+- Federal Energy Regulatory Commission (FERC): Rate case data, transmission approvals
+- PJM Interconnection / ERCOT: Power price data, capacity market results
 - California Public Utilities Commission (CPUC): Wildfire liability, rate case data
 - MarketWatch / Investing.com / Morningstar: Sector performance, earnings calendar
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-08*
+*Last updated by Saturday Research Crew: 2026-08-15*
 *Next update: Every Saturday 11:29 AM ET*
 *Data sources: Yahoo Finance, EIA, FERC, market data feeds, company earnings releases*
