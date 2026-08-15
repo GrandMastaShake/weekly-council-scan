@@ -3,82 +3,82 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-08-08
+## 🌡️ Market Brief — Week of 2026-08-15
 
 > *Auto-updated every Saturday by the [Synthesis Agent](wiki/synthesis.md) — the tl;dr of the full weekly brief.*
 
 ### The Headline
 
-The July jobs report detonated like a macro grenade: **-23K nonfarm payrolls** — the first negative print since 2020, with **-103K of revisions** — and the market rallied on it. SPY surged +3.5% to $773.26 as September hike odds collapsed from ~55% to ~44%, the 10-year yield dropped to 4.66%, and growth stocks screamed higher. SMH ripped +7.8% and XLK +7.2% as the NFP shock repriced the Fed path dovishly. But the counter-story was equally loud: Monday's ISM Manufacturing PMI printed **55.6%** — the strongest factory reading since May 2022 — suggesting the industrial economy is accelerating even as the labor market cracks. Meanwhile, VIX collapsed to **14.90** (-6.8%), fully normalizing and breaking below the 20D MA. The canary is doing cartwheels — but complacency is the new risk.
+Oil snapped back like a mousetrap: **WTI surged +5.4% to $82.40** as the Hormuz risk premium re-ignited, and energy led everything — **XLE ripped +7.67%** with refiners MPC (+19%), VLO (+14.5%) and PSX (+14.6%) printing 52-week highs. The counter-story was disinflation: July core CPI cooled to **2.5% YoY** — the coolest since the energy shock — and PPI came in flat, collapsing September hike odds from ~54% to ~30–35% by Friday. Then Friday's consumer data cracked the tape: retail sales fell **-0.6% MoM** and UMich sentiment printed **51.0 vs 55 expected**, splitting the market defensive — staples and utilities green, discretionary red. VIX sank to **14.25**, a six-month closing low, which reads as either confidence or complacency. The week's corporate bombshell: NVDA's **$500B in hyperscaler-financing MOUs**, which rewired the AI supply chain from data-center landlords (EQIX +5.7%) to power producers (VST's Helix deal with KKR/NVIDIA).
 
 ### Index Check
 
 | Index | Level | Today | The Story |
 |---|---|---|---|
-| S&P 500 | $773.26 | +3.5% | NFP shock repriced Fed path; growth rallied on bad news |
-| Nasdaq 100 | — | — | MSFT/GOOGL surged but exact level unverifiable from wikis |
-| Dow Jones | — | — | — |
-| Russell 2000 | — | — | — |
-| VIX | 14.90 | -6.8% | Elevated regime fully broken; complacency is the new risk |
+| S&P 500 | $776.34 | +0.4% | Third straight weekly gain; record intraweek (SPY high $777.88) |
+| Nasdaq 100 | — | +0.1% | Level unverifiable from wikis; weekly move per comm-services desk |
+| Dow Jones | — | -0.6% | Level unverifiable from wikis; weekly move per comm-services desk |
+| Russell 2000 | — | — | Unverifiable from wikis this week |
+| VIX | 14.25 | -4.4% | Six-month closing low; complacency is now the tail risk |
 
-> **Dad Translation:** The stock market had a very good week — the main index rose 3.5% — but the real story was a shocking jobs report that said the economy lost jobs for the first time since 2020. The market actually celebrated this bad news because it means the Fed probably won't raise interest rates. Meanwhile, a separate report said factories are humming at their strongest pace in years. It's a confusing time.
+> **Dad Translation:** The stock market had a quiet-but-good week — the main index rose for the third week in a row and touched a record on Thursday. Under the surface, energy stocks exploded higher on rising oil prices while shoppers showed real signs of strain on Friday. And the "fear gauge" fell to its lowest in six months — which sounds nice, but it can also mean people stopped worrying right before they should.
 
 ### What's Moving Markets — The Big Stories
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |---|---|---|---|
-| 💼 **The NFP Earthquake (-23K)** | July NFP -23K vs +85K consensus; -103K revisions; first negative print since 2020 | Repriced the entire Fed path; September hike odds collapsed; growth stocks soared on "bad news = no hikes" | The jobs report was terrible — the economy actually lost jobs — but investors were happy because it makes rate hikes less likely |
-| 🏭 **ISM Manufacturing at 55.6%** | Strongest factory print since May 2022; employment returned to expansion at 52.8 | Direct contradiction to the NFP narrative; cyclicals caught a bid; CAT record Q2 | Factories are booming, which is the opposite of what the jobs report suggested. The economy is sending mixed signals |
-| ⛽ **Oil Collapses Below $80** | WTI crashed -7.7% to ~$78 on US-Iran negotiation headlines | Removed the inflation scare; bullish for growth multiples; bearish for energy stocks | Oil prices dropped sharply as tensions cooled slightly, giving the market breathing room on inflation |
-| 📈 **Growth Stocks Recouple** | XLK correlation to SPY surged from 0.329 to 0.814; SMH from 0.144 to 0.766 | The growth unwind is dead; tech is a beta proxy again; capital flowing back to mega-cap platforms | Tech stocks are moving with the broad market again after a period of confusion — that's a sign of renewed confidence |
-| 🏰 **Disney's Streaming Proof** | DIS Q3: segment OI +21%, streaming profitable, parks record; stock +9.1% | Proved the turnaround narrative; SHOP +19.6% on narrative-driven rally | Disney showed it can make money from streaming, and the market loved it. Some stocks are rallying on story, not just numbers |
+| ⛽ **Oil's Revenge** | WTI +5.4% to $82.40, Brent $88.52; Hormuz premium re-ignited; XLE +7.67% led all sectors | Refiners MPC (+19%), VLO (+14.5%), PSX (+14.6%) at 52-week highs; the inflation tail is back even as core CPI cools | Oil jumped on Middle East supply fears and the companies that refine it had their best week of the year — great for their stocks, not so great for your wallet |
+| 📉 **Cool Inflation, Dovish Fed** | July core CPI 2.5% YoY (coolest since the energy shock); PPI flat; claims 209K | September hike odds collapsed ~54% → ~30–35%; XLF broke out to $58.16, its highest weekly close ever | Prices aren't rising as fast as feared, so the Fed is less likely to raise rates again. Banks loved it |
+| 🛍️ **The Friday Consumer Crack** | Retail sales -0.6% MoM (worst since the spring shock); UMich sentiment 51.0 vs 55 expected | The tape split defensive: staples (+1.14%) and utilities (+1.61%) green, discretionary (-1.38%) red; WMT Thursday is the tie-breaker | Shoppers pulled back last month and feel gloomier than economists expected. Investors started hiding in companies that sell necessities |
+| 🤖 **The AI Money Chain** | NVDA revealed $500B in hyperscaler-financing MOUs; the Helix deal pairs KKR/NVIDIA on data-center power | Money flows from chips to landlords to electricity: EQIX +5.7%, DLR +3.3%, VST +5.4%; NVDA earnings Aug 26 is the final boss | NVIDIA isn't just selling chips — it's helping finance entire AI data centers, lifting the companies that own the buildings and make the power too |
 
 ### Sector Scorecard (1-Year Trend + Week)
 
 | Sector | 1Y Return | Week | Signal |
 |---|---|---|---|
-| 🔥 Semiconductors | +100.8% | +7.8% | AI supercycle intact; NFP shock created dovish tailwind |
-| 🔥 Technology | +33.7% | +7.2% | Growth recoupled to SPY; MSFT/GOOGL surged |
-| 🔥 Materials | +23.2% | +4.8% | Gold explosion + DXY < 101 = commodity tailwind |
-| 🟡 Industrials | +23.2% | +3.0% | ISM 55.6% strongest since May 2022; CAT record Q2 |
-| 🟡 Consumer Discretionary | +9.5% | +3.2% | Housing recovery (HD, LOW) + travel boom (BKNG, DIS) |
-| 🟡 Communication Services | +9.8% | +2.8% | DIS +9% on earnings; macro relief lifting platforms |
-| 🟡 Healthcare | +22% | +1.9% | LLY Super Bowl + AMGN resurrection; biotech catching bid |
-| 🟡 Financials | +20% | +1.2% | Curve steepening + NFP shock; JPM/BAC near highs |
-| 🟡 Consumer Staples | +10–14% | +0.1% | Quiet week; GIS/CPB yield hunters rotating in |
-| 🟡 Real Estate | +12.7% | -0.2% | Flat despite 10Y drop; earnings dispersion inside sector |
-| ❄️ Utilities | +5–8% | -1.7% | Bond-proxy playbook broke; XLU below 50D and 200D |
-| ❄️ Energy | +35.4% | -3.5% | Oil collapsed -7.7%; war premium fading |
+| 🔥 Energy | +45.6% | +7.67% | Hormuz premium back; refiners at 52-week highs |
+| 🔥 Utilities | +4.0% | +1.61% | AI-power trade (VST, CEG) overrides bond-proxy drag |
+| 🔥 Communication Services | +1.3% | +1.53% | Telecom dividend rotation (T +4.6%) plus NFLX +5.4% |
+| 🟡 Technology | +43.8% | +1.09% | Memory leads: MU +10.7%, AMD +6.4%; NVDA consolidates pre-print |
+| 🟡 Healthcare | +23.2% | +1.02% | Steady defensive bid; BMY PDUFA Monday |
+| 🟡 Consumer Staples | +7.9% | +1.14% | Friday's defensive rotation; WMT reports Thursday |
+| 🟡 Financials | +12.6% | +0.97% | Highest weekly close ever ($58.16); steeper curve helps |
+| 🟡 Semiconductors | +100.8% | +0.88% | Coiling under ~$594; NVDA Aug 26 decides the next leg (wiki stale — handle with care) |
+| 🟡 Industrials | +24.1% | +0.72% | Quiet consolidation; DE reports Thursday |
+| 🟡 Real Estate | +13.3% | +0.64% | Data-center REITs (EQIX +5.7%) vs rate-sensitive laggards |
+| ❄️ Materials | +18.8% | -0.61% | Gold held $4,380 but miners digested NEM's $1.95B windfall; copper flat |
+| ❄️ Consumer Discretionary | +4.0% | -1.38% | Retail -0.6% + UMich 51.0 hit the sector; HD -4.7% into Tuesday's print |
 
-> **Dad Translation:** This week was all about growth and commodities. The year's biggest winners in tech and chips bounced back hard, while materials joined the party thanks to gold and a weaker dollar. Utilities and energy were the losers — one because falling yields didn't help, the other because oil prices dropped. Financials and healthcare held their own. It's a market rewarding companies that can prove their growth stories.
+> **Dad Translation:** Twelve big baskets of stocks, and ten of them went up this week. The runaway winner was energy, because oil got expensive again. The losers were stores that sell fun stuff, because shoppers are tightening their belts. The one-year column reminds you chip makers are still the kings of this market — they've roughly doubled in a year — but right now everyone's waiting for NVIDIA's report card on August 26.
 
 ### Market Breadth — The Grid's Own Tape
 
 | Metric | Reading | Signal |
 |---|---|---|
-| Sector ETFs up on the week | 9 of 12 up, 3 down | 🟢 Buyers had the week |
-| Sectors above their 50-day MA | 8 of 12 | 🟡 Short-term trend split down the middle |
-| Sectors above their 200-day MA | 9 of 12 | 🟢 Long-term trend intact |
-| Leadership concentration | SMH led on NVDA/QCOM/INTC; XLK on MSFT/GOOGL; XLB on NEM/FCX/ALB; DIS +9% in XLY/XLC | 🟡 Index strength is sector-leader driven |
+| Sector ETFs up on the week | 10 of 12 up, 2 down (XLY, XLB) | 🟢 Buyers had the week |
+| Sectors above their 50-day MA | 10 of 12 (below: XLU; SMH*) | 🟢 Short-term trend broadening |
+| Sectors above their 200-day MA | 10 of 12 (below: XLU, XLC) | 🟢 Long-term trend intact |
+| Leadership concentration | XLE carried by refiners MPC/VLO/PSX; XLC by T/VZ/TMUS + NFLX; XLU by VST/CEG/EIX; XLK by MU/AMD/LRCX | 🟡 Green sectors ride single-name leadership |
 
-> **Dad Translation:** Most of the market went up this week — nine of the twelve big sectors finished green. The growth and commodity sectors led while utilities and energy lagged. Half the sectors have now regained their short-term uptrend, and nearly all still hold their long-term ones. Picture a hiking group where most are walking uphill again, but a few stragglers are still catching their breath.
+*SMH closed $587.82, a hair under its ~$594–595 50-day zone (semis wiki is stale at 2026-08-08; price from facts.json).
+
+> **Dad Translation:** Ten of the twelve big sectors rose — a broad win. But look closer and each win came from just a handful of companies: three refiners in energy, three utilities riding the AI-power wave, three phone companies in telecom. Picture a rowing team where a few strong rowers do most of the work — fine while they're strong, fragile if they tire.
 
 ### What to Watch This Week
 
 | Date | Event | What to Do |
 |---|---|---|
-| Tue Aug 12, 8:30 AM | **CPI (July)** | THE binary event. Core >+0.3% = hawkish reversal, growth rally crushed. Core <+0.1% = dovish confirmation, SPY rallies to new highs. |
-| Thu Aug 13, 8:30 AM | **PPI (July) + Initial Claims** | Pipeline inflation signal. Claims >240K = NFP <150K flag confirmed, defensive rotation accelerates. |
-| Fri Aug 14, 8:30 AM | **Retail Sales (July)** | Consumer is the final domino. Miss + NFP negative = recession narrative hardens. Beat = "soft landing with cracked labor" gets stranger. |
-| Fri Aug 14, 10:00 AM | **UMich Sentiment Prelim (August)** | 1-year inflation expectations sub-index is the Fed's secret weapon. >4.0% = Committee gets nervous. |
-| Tue Aug 18 | **Home Depot (HD) Q2** | Housing/consumer proxy. Comps and guidance will tell us if housing starts are translating to home-improvement demand. |
-| Wed Aug 19 | **Target (TGT) Q2** | Retail sentiment proxy. Margin recovery and inventory levels are the key reads. |
-| Thu Aug 20 | **Walmart (WMT) + Deere (DE) Q2** | WMT = broad consumer read. DE = rural economy and ag equipment demand. |
-| Tue Aug 26 | **NVIDIA (NVDA) Q2 FY2027** | THE final boss. Data center revenue growth and Blackwell ramp guidance will move the entire AI chain. |
+| Mon Aug 17 | **BMY iberdomide PDUFA + CMS MDPNP comments** | Biotech catalyst day; healthcare's quiet strength gets tested |
+| Tue Aug 18, pre-mkt | **Home Depot (HD) Q2** — consensus $4.73 EPS | Stock is -4.7% into the print; a comp miss plus soft guidance confirms the consumer crack and XLY breaks lower |
+| Tue Aug 18 | **Keysight (KEYS)** — consensus $2.48 | Semi-test read-through into NVDA next week |
+| Wed Aug 19 | **FOMC Minutes + LOW ($4.23) / TGT ($2.30, revised +13.3%) / TJX ($1.19) / EL ($0.32)** | Retail pile-up day; also Section 338: 50% Canada tariffs take effect — watch materials and consumer cost commentary |
+| Thu Aug 20, 7:00 AM | **Walmart (WMT)** — consensus ~$0.74 | THE consumer tie-breaker; WMT historically moves ±7% on earnings day. Beat = Friday was noise; miss = defensive rotation hardens |
+| Thu Aug 20 | **Deere (DE) $4.67 + ROST / AAP** | Rural economy and discount-apparel reads |
+| Fri Aug 21 | **Jackson Hole — Warsh's first speech as Fed Chair** | Dovish = 2Y slides from 4.17% and breakouts extend. Oil-citing hawkish = XLF $58.00 retest and 10Y back toward 4.75% |
 
 ### The Bottom Line
 
-The regime shifted from "growth unwind with rotation" to **a bifurcated market where the NFP shock created a dovish window for growth, but the ISM manufacturing surprise complicated the recession narrative.** The 10Y at 4.66% is the master variable — it dropped -9 bps but remains restrictive. Growth has recoupled to SPY (XLK 0.814, SMH 0.766), energy is the inverse hedge, and defensives are bleeding. The Council holds ~30% cash through CPI week. The single most important thing: the August 12 CPI print. A cool core (<+0.2%) extends the rally. A hot core (>+0.3%) reverses it. Stay nimble.
+The regime is **risk-on with a fresh inflation tail and a brand-new consumer question mark**. Cool core CPI and a flat PPI pulled the Fed toward the exit, but oil's +5.4% reversal and Friday's retail/UMich miss say the all-clear hasn't been called. The rotation story is a defensive-inflation barbell — energy, utilities, telecom and staples led while growth consolidated into its biggest catalyst. The single most important thing: **Walmart, Thursday 7 AM** — it decides whether Friday's consumer crack was noise or signal — with **NVDA on August 26** (Street ~$93.5B parked above the $91B±2% guide) right behind it. The Council holds ~25% cash and adds nothing before those two prints.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
