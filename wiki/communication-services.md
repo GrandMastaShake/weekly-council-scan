@@ -10,20 +10,20 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $111.25 | — | **+2.78% w/w** (vs. $108.24 on 7/31) |
+| Price | $112.95 | — | **+1.53% w/w** (vs. $111.25 on 8/7) |
 | 52W Range | $105.03 – $120.41 | — | — |
 | AUM | ~$21.7B | — | — |
-| YTD Return | **-7.5%** | — | — |
-| 1Y Return | ~+9.8% | — | — |
-| P/E Ratio | ~16.1 | — | — |
-| Dividend Yield | ~1.32% | — | — |
+| YTD Return | **-3.4%** | — | — |
+| 1Y Return | ~+1.3% | — | — |
+| P/E Ratio | ~16.3 | — | — |
+| Dividend Yield | ~1.31% | — | — |
 | Beta | ~0.84 | — | — |
 | Total Holdings | ~25 | — | — |
 | Avg Daily Volume | ~6.4M shares | — | — |
 
-**Marky Tape Read:** XLC closed Friday at $111.25 — up 2.78% on the week, a follow-through bounce after the prior week's +1.8% relief rally. The key development: the ETF **reclaimed the $110 psychological level** and is now just ~$1 below the 50-day MA (~$110.37). The bounce came in two phases: Monday-Wednesday's quiet grind higher as the 10Y yield drifted down to 4.66% (from ~4.74%), and Thursday-Friday's acceleration as DIS delivered a blowout Q3 earnings print (+9.1% for the week). Volume was moderate — no institutional panic, no euphoria. The $105 trap door from two weeks ago feels increasingly distant. The next test is the 50D MA at ~$110.37 (already being tested), followed by the 200D MA at ~$114.25. A sustained close above $112 opens the door to a retest of the June ceiling near $115. The technical picture has improved materially from two weeks ago but remains in repair mode.
+**Marky Tape Read:** XLC closed Friday at $112.95 — up 1.53% on the week, a third consecutive weekly gain since the $105.03 trap door slammed shut in late July. The key development: the ETF **held the reclaimed 50-day MA (~$110.09) all week**. Monday opened at $111.83, Wednesday's CPI-day dip to $110.27 was bought within hours, and Thursday-Friday pushed through $112.55 to close at the week's high. The leadership rotated: last week it was DIS (+9.1%) and META (+6.4%); this week it was the telecoms (T +4.6%, VZ +3.0%, TMUS +3.1%) and NFLX (+5.4% on the Ackman stake), while the platforms (META -0.4%, GOOGL -2.4%) consolidated. RSI(14) has climbed to ~68 — hot after a +7.3% three-week rebound, approaching overbought but not exhausted. The next wall is the 200-day MA at ~$114.17, then the June ceiling at $115. A weekly close above $114.20 would fully repair the July breakdown. Support sits at $110 (50D + round number) and then $105.03.
 
-**Ophelia Macro Read:** The macro pincer eased meaningfully this week. The 10Y Treasury yield ticked **down** to ~4.66% (from ~4.74%), and WTI crude collapsed to ~$78 (from ~$92) — a 15% drop in oil prices that removes the energy-inflation channel threatening ad budgets. The bond market is no longer doing the Fed's work; it's doing the sector's work. For Communication Services this is a double tailwind: lower rates directly expand platform multiples (META, GOOGL), and cheaper oil keeps the H2 ad budget outlook intact. The good news: DIS proved the non-platform side of the sector can deliver too — parks and streaming are firing on all cylinders. The bad news: CCOI's wavelength fraud allegations and dividend slash are a reminder that small-cap telecom remains a minefield. But the mega-cap platform fundamentals are intact — META's +6.4% bounce this week shows the market is forgiving the capex overhang, and GOOGL's consolidation after the prior week's +11% surge is healthy. XLC below the 200D is still a trend change, but the path to reclaiming it is now visible.
+**Ophelia Macro Read:** The weather turned mixed this week — and the regime script needs a correction. This market is debating **hikes, not cuts**: the Fed held at 3.50–3.75% on Jul 29 with three dissenters voting FOR a hike, and July NFP printed -23K. This week's inflation data (CPI 3.4% headline / 2.5% core Wed; PPI flat Thu) plus Friday's consumer shock pushed September hike odds down from ~54% to ~30–35% — rates drifted to 4.696% on the 10Y (+3bps w/w; Tuesday's 4.74% probe rejected; Friday morning dipped to 4.64% on the retail miss). Two new headwinds appeared: **oil reversed violently** (WTI +5.4% to $82.40 on the Iran reversal — last week's $78 tailwind is gone, and the energy-inflation channel that threatens ad budgets is back on watch) and **the consumer cracked**: July retail sales -0.6% MoM and UMich August prelim sentiment 51.0 (vs. 55 est). Consumer cracks are exactly what precedes ad-budget cuts — the sector's most direct macro threat. The offset: DXY at 99.67 (third straight week below 101) helps the ~50% of META/GOOGL revenue earned overseas, and lower hike odds support 20x+ platform multiples. Net: rates neutral-friendly, oil unfriendly, consumer worrying. The ad cycle has not rolled over — but the first yellow flag is flying.
 
 ---
 
@@ -31,40 +31,42 @@
 
 | Rank | Ticker | Name | Weight | Price | Change † | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | META | Meta Platforms | ~22% | $592.10 | +6.36% | $796.25 | $520.26 | 0.35% | ~22.3 | ⚡ |
-| 2 | GOOGL | Alphabet (Class A) | ~12% | $354.30 | -0.51% | $408.61 | $196.60 | 0.25% | ~17.8 | ⚡ |
-| 3 | GOOG | Alphabet (Class C) | ~4% | $354.82 | -0.48%* | $404.47 | $196.60 | 0.25% | ~17.8 | ⚡ |
-| 4 | NFLX | Netflix | ~6% | $74.14 | +3.39% | $126.71 | $65.08 | 0.00% | ~23.3 | ⚡ |
-| 5 | T | AT&T | ~5% | $23.79 | +2.32% | $29.79 | $19.89 | 4.67% | 7.9 | ⚡ |
-| 6 | VZ | Verizon | ~5% | $47.06 | +0.53% | $51.68 | $38.39 | 6.01% | 12.3 | ⚡ |
-| 7 | TMUS | T-Mobile US | ~5% | $172.71 | — | $261.56 | $165.66 | 2.36% | 18.0 | 🔴 |
-| 8 | DIS | Walt Disney | ~4% | $104.91 | +9.07% | $119.78 | $92.19 | 1.43% | 21.6 | 🔥 |
-| 9 | CHTR | Charter Communications | ~3% | $152.57 | — | $309.40 | $111.55 | 0.00% | 3.2 | 🔴 |
-| 10 | EA | Electronic Arts | ~2% | $209.70 | +0.38% | $210.20 | $164.50 | 0.36% | 59.7 | ⚡ |
-| 11 | TTWO | Take-Two Interactive | ~2% | $231.65 | — | $265.94 | $187.63 | 0.00% | — | ⚡ |
+| 1 | META | Meta Platforms | ~22% | $589.85 | -0.38% | $796.25 | $520.26 | 0.35% | ~22.2 | ⚡ |
+| 2 | GOOGL | Alphabet (Class A) | ~12% | $345.90 | -2.37% | $408.61 | $196.60 | 0.25% | ~17.4 | ⚡ |
+| 3 | GOOG | Alphabet (Class C) | ~4% | $343.54 | -2.81%* | $404.47 | $196.60 | 0.25% | ~17.4 | ⚡ |
+| 4 | NFLX | Netflix | ~6% | $78.16 | +5.42% | $126.71 | $65.08 | 0.00% | ~24.6 | 🔥 |
+| 5 | T | AT&T | ~5% | $24.89 | +4.62% | $29.79 | $19.89 | 4.46% | 8.3 | 🔥 |
+| 6 | VZ | Verizon | ~5% | $48.48 | +3.02% | $51.68 | $38.39 | 5.83% | 12.7 | ⚡ |
+| 7 | TMUS | T-Mobile US | ~5% | $182.61 | +3.06% | $261.56 | $165.66 | 2.23% | 19.0 | ⚡ |
+| 8 | DIS | Walt Disney | ~4% | $106.85 | +1.85% | $119.78 | $92.19 | 1.40% | 22.0 | ⚡ |
+| 9 | CHTR | Charter Communications | ~3% | $154.27 | +1.11% | $309.40 | $111.55 | 0.00% | 3.2 | ⚠️ |
+| 10 | EA | Electronic Arts | ~2% | $209.70 | 0.00% | $210.20 | $164.50 | 0.36% | 59.7 | ⚡ |
+| 11 | TTWO | Take-Two Interactive | ~2% | $246.95 | +0.18% | $265.94 | $187.63 | 0.00% | — | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 >
-> † Weekly change vs. 7/31 snapshot, Fri 8/7 close. *GOOG estimated from GOOGL.
+> † Weekly change vs. 8/7 snapshot, Fri 8/14 close. *GOOG estimated from GOOGL.
 
 **Sector Split:** XLC is dominated by two titans — META (~22%) and GOOGL (~16% combined Class A + C) = ~38% of the fund. The rest is a mix of:
 - **Digital Advertising:** META, GOOGL (the cash cows)
-- **Streaming:** NFLX, DIS, WBD (the subscriber wars)
+- **Streaming:** NFLX, DIS, WBD (the subscriber wars — now an M&A battlefield)
 - **Telecom:** T, VZ, TMUS (the dividend plays)
 - **Gaming:** EA, TTWO (the cyclicals)
 - **Cable:** CHTR (the cord-cutting victim)
 
-**The META Story:** Meta at $592.10, +6.36% on the week, is staging a recovery from the prior week's -6.5% post-earnings drubbing. The stock is now 25% below its 52W high ($796.25) — still in correction territory, but no longer falling. The bounce was not driven by new news; it was driven by the macro relief (10Y down, oil down) and short-covering after the indiscriminate selling post-Jul 29 earnings. The capex narrative hasn't changed — $130–145B full-year guidance remains. But at ~22x trailing P/E and with revenue growth at +28% (fastest in five years), the market is re-accepting that META is a growth stock with a capex overhang, not a capex story with no growth. The path to $600+ reopens if Q3 guidance in October confirms ad revenue holding. The Anthropic compute-deal rumor ($10B over two years) remains unconfirmed but continues to percolate as a potential cloud revenue catalyst.
+**The META Story:** Meta at $589.85, -0.38% on the week, went quiet after two volatile weeks (-6.5% post-earnings, then +6.4% relief). No new fundamental news: the $130–145B capex guidance stands, the Anthropic compute-deal rumor remains unconfirmed, and Pershing Square's Q1 13F shows Ackman holding his META position steady (11.1% of the portfolio). The stock sits 26% below its 52W high ($796.25) at ~22.2x trailing P/E with Q2 revenue growth of +28% — the market has stopped punishing the capex and started waiting for proof of ROI. The next hard catalyst is Q3 earnings in late October: ad revenue holding + capex discipline = the re-rating case. Until then, META trades as a 22x grower with an unpriced AI option.
 
-**The GOOGL Story:** Alphabet at $354.30, -0.51% on the week, is consolidating last week's +11.4% earnings rocket. This is textbook post-breakout behavior: the stock reclaimed the 50D and is now digesting gains. At ~17.8x trailing P/E, GOOGL remains statistically cheap for a quality compounder growing revenue at +24% with Cloud at +82%. The antitrust overhang remains unchanged: search remedies at the D.C. Circuit (oral arguments expected late 2026/early 2027), ad-tech remedies (Judge Brinkema, E.D. Va.) grinding through with a remedies hearing scheduled for September. No new rulings this week.
+**The GOOGL Story:** Alphabet at $345.90, -2.37% on the week, extended its consolidation after the +11.4% earnings rocket two weeks ago. The selling is regulatory-calendar positioning, not fundamental deterioration: **September is the enforcement month** for the search remedies — the ban on exclusive default deals took effect in June (choice screens live), and Tier-2 requirements (search-index licensing to rivals at fair rates, Android distribution APIs, self-preferencing limits) plus the technical compliance monitor start in September. Meanwhile Judge Brinkema's ad-tech remedies ruling (AdX divestiture / DFP open-sourcing risk) is still pending and could land any week — the DOJ asked for structural separation, and trial watchers put hard conduct remedies as the floor. The search appeal at the D.C. Circuit has no oral-argument date yet (expected late 2026/early 2027). At ~17.4x trailing P/E with Cloud at +82%, the fundamental case is intact; the legal overhang is the multiple.
 
-**The DIS Story:** Disney at $104.91, +9.07% on the week, was the star of the sector. The Aug 7 Q3 FY2026 earnings print delivered everything the bulls wanted: total segment operating income up 21%, revenue growth of 7%, Disney Experiences record Q3 revenue and OI, Disney+ 13% SVOD operating margin, and forward bookings at Walt Disney World and Cruise Line described as "healthy." The upfront advertising volume commitments were up double digits YoY, and the Super Bowl inventory is sold out. "Toy Story 5" surpassed $1B globally. The stock had been 19% below its 52W high; this print gave it a credible path back to $110+. The streaming narrative is no longer about subscriber growth at any cost — it's about profitability, and DIS is delivering.
+**The NFLX Story:** Netflix at $78.16, +5.42% on the week, got its catalyst: **Pershing Square disclosed a ~3-million-share stake on Thursday, Aug 13**. Ackman is back in a name he famously lost ~$400M on in 2022 — this time the thesis writes itself: the stock at a post-earnings 52W-low zone ($65.08 low), a record $4.7B buyback, the ad tier scaling toward ~$3B in 2026 revenue, and optionality on the WBD Streaming & Studios acquisition (see below). The stock is still 38% below its 52W high ($126.71), so this is a smart-money bottom-fishing print, not an all-clear. Morningstar pegs normalized P/E at ~29x. Watch whether Ackman goes activist on the WBD deal path.
 
-**The Telecom Story:** T and VZ took a breather after their explosive earnings weeks. AT&T added +2.32% to $23.79, building on prior gains. Verizon edged up +0.53% to $47.06. The dividend story remains intact: VZ's 6.01% yield is now ~135 bps over the 10Y, and T's 4.67% yield is covered by cash flow. Cecil's garden is still blooming — just at a more sustainable pace. The major news on the telecom front was SpaceX's Starlink mobile network expansion announcement, which sent T, VZ, TMUS shares lower intraday mid-week. But the sell-off proved temporary as analysts and telecom CEOs dismissed satellite as a near-term competitive threat.
+**The DIS Story:** Disney at $106.85, +1.85% on the week, followed through on last week's +9.1% blowout with a quiet grind higher. No new news — parks demand, Disney+ margin (13% SVOD), and the sold-out Super Bowl inventory remain the story. At 22.0x it's no longer cheap, but the earnings acceleration justifies the multiple while the consumer holds. Friday's retail-sales miss is the risk to watch: Experiences is the most economically sensitive segment.
 
-**The CCOI Disaster (Small-Cap Watch):** Cogent Communications crashed -26.52% to $9.92 after its Aug 6 Q2 earnings. Service revenue of $235.6M missed expectations, declining 1.5% QoQ and 4.3% YoY. The company slashed its quarterly dividend from ~$0.90+ to $0.02 per share — a 98% cut. Multiple securities fraud class actions are ongoing, alleging that CCOI overstated demand for its optical wavelength business and misrepresented backlog conversion rates. Net leverage remains elevated at 6.23x. KeyBanc cut its price target to $15 from $25. At $0.51B market cap, CCOI is no longer a yield play — it's a restructuring speculation. See Small/Mid-Cap Watch for full details.
+**The Telecom Story:** The Starlink scare trade fully reversed. T +4.62% to $24.89, VZ +3.02% to $48.48, TMUS +3.06% to $182.61. Two drivers: (1) the Aug 4 selloff on SpaceX COO Gwynne Shotwell's "we'll take their customers" comments faded as the Street concluded satellite mobile is a 2027+ threat (Barron's: "the drop isn't warranted") — and the carriers' own direct-to-device satellite JV (announced May 14) hedges the risk; (2) soft CPI/PPI and the Friday retail miss knocked September hike odds down to ~30–35%, re-igniting the bond-proxy dividend bid. VZ's 5.83% yield is ~113 bps over the 10Y; T's 4.46% is covered by cash flow with net debt/EBITDA heading toward ~3x. Cecil's garden caught a second wind.
 
-**Cecil Fundamental Read:** T at 7.9x P/E and 4.7% yield remains in the garden — the earnings verified the cash flow and this week's continued grind higher confirms the trend. VZ at 12.3x and 6.0% yield is even more interesting with the dividend covered and fiber/wireless strategy showing progress. GOOGL at ~17.8x is cheap for a quality compounder growing revenue at +24% with Cloud at +82%. DIS at 21.6x is no longer cheap after the +9% pop, but the earnings acceleration justifies a higher multiple. META at ~22x is getting interesting again — the capex overhang hasn't disappeared, but the stock is no longer in free fall. The telecoms remain the only names that fit the garden today — and this week they proved why. Rule 2, always.
+**The WBD M&A Saga:** Warner Bros. Discovery at $27.99, +4.52% on the week, is now a three-way corporate drama that overshadows its fundamentals. Q2 (Aug 6) was a split print: EPS +$0.06 vs. -$0.10 expected (a beat), but revenue $8.72B vs. $9.21B expected (-11.3% YoY as the NBA loss hit linear networks). Streaming crossed **$3B in quarterly revenue for the first time** with streaming adj. EBITDA +63% ex-FX to $512M. The deal math: the WBD board backs the **Netflix acquisition of Streaming & Studios** (split now expected Q3 2026 ahead of that close), while **Paramount Skydance's ~$110B bid for the whole company won UK approval on Aug 6** (with editorial-independence assurances for CNN) — but 12 US state attorneys general are suing to block it, and the merger is on hold until legal proceedings end or June 1, 2027. Lionsgate's CEO publicly endorsed the Paramount bid. M&A, not fundamentals, is setting WBD's price — and the outcome reshapes the streaming weight inside XLC either way.
+
+**Cecil Fundamental Read:** T at 8.3x P/E and 4.5% yield, VZ at 12.7x and 5.8% — the garden bloomed again, and this time the macro helped: falling hike odds are fertilizer for covered dividends. GOOGL at ~17.4x remains the cheapest quality compounder in the sector. DIS at 22.0x is fairly priced after the pop. META at ~22.2x is a wait-for-October hold. NFLX at ~24.6x trailing (29x normalized) with no dividend is Ackman's money, not mine. And CCOI's 0.71% "yield" after the 98% cut is the Rule 2 monument: if the yield looks too good to be true, it probably is. Rule 2, always.
 
 ---
 
@@ -72,24 +74,24 @@
 
 > *The Captains flagged that our briefs track mega-caps only. This section sources live sub-$5B communication services names — ad-tech, small media, gaming, alt-telecom — with verified market caps, prices, weekly moves, and one-line Council reads.*
 
-| Ticker | Name | Price | Cap | Weekly | Sector Niche | Signal |
+| Ticker | Name | Price | Cap (verified) | Weekly | Sector Niche | Signal |
 |---|---|---|---|---|---|---|
-| CARG | CarGurus | $38.99 | $3.47B | **+7.57%** | Auto marketplace / ad-tech | 🔥 |
-| ZD | Ziff Davis | $53.87 | $1.98B | **+1.49%** | Digital media (PCMag, CNET, IGN, RetailMeNot) | ⚡ |
-| PPLI | People Inc (fka IAC) | $41.58 | $3.10B | **+0.02%** | Digital media rollup (Dotdash Meredith, Angi) | ⚡ |
-| CCOI | Cogent Communications | $9.92 | $0.51B | **-26.52%** | Fiber ISP / alt-telecom | 🔴 |
+| CARG | CarGurus | $37.44 | $3.33B | **-3.96%** | Auto marketplace / ad-tech | ⚠️ |
+| PPLI | People Inc (fka IAC) | $40.40 | $3.01B | **-2.84%** | Digital media rollup (Dotdash Meredith, Angi) | ⚡ |
+| ZD | Ziff Davis | $55.38 | $1.90B | **+2.80%** | Digital media (PCMag, CNET, IGN, RetailMeNot) | ⚡ |
+| CCOI | Cogent Communications | $11.31 | $0.54B | **+14.01%** | Fiber ISP / alt-telecom | ⚠️ |
 
 > 🔥 = Strong weekly move / momentum | ⚡ = Stable / range-bound | ⚠️ = Caution | 🔴 = Breakdown / avoid
+>
+> **Cap verification (Fri 8/14):** all four names confirmed UNDER $5B — CARG $3.33B, PPLI $3.01B, ZD $1.90B, CCOI $0.54B. No graduations, no rotation this week. IAC remains People Inc (PPLI) since the June 4, 2026 ticker change.
 
-**CARG (+7.57% w/w, $3.47B cap):** CarGurus reported Q2 2026 earnings on Aug 6 — a beat. Revenue grew 13% YoY, driven by strong dealer ad spend and AI-powered marketplace tools. The company launched "Guru," a consumer-facing AI layer, and repurchased shares aggressively. Q2 EPS of $0.66 beat the $0.61 consensus. Forward EV/EBITDA of ~10.9x and gross margins near 88% make this a quality small-cap compounder. The stock cleared its 50-day MA and is approaching its 52W high of $41.22. **Council Read:** Auto ad-tech is a leveraged play on consumer spending — when dealers have inventory, they advertise. CARG is a microcosm of the ad cycle, and this week's earnings prove the cycle is still turning.
+**CARG (-3.96% w/w, $3.33B cap):** Post-earnings fade. After the Aug 6 Q2 beat (revenue +13% to $251M, EPS $0.66 vs. $0.61 est), six price-target raises landed — RBC $35→$42, B. Riley $42→$46, Needham $43→$44, Barclays $40→$41, UBS $37→$40, BTIG $40→$41 (consensus ~$41.50, Buy; fwd P/E 13.4x). The stock ran to $38.99 last Friday, then gave back ~4% this week as Friday's retail-sales miss (-0.6% MoM) hit everything consumer-adjacent — autos are the most cyclical ad vertical. **Council Read:** The beat is real, the fade is macro. Auto ad-tech is the first place a consumer slowdown shows up — if retail deteriorates again next month, dealer ad budgets are where it prints first. Q3 guide: revenue $253.5–258.5M, EPS $0.63–0.69.
 
-**ZD (+1.49% w/w, $1.98B cap):** Ziff Davis reported Q2 2026 on Aug 6 — EPS of $1.03 beat the $0.84 consensus, though revenue was light vs. some expectations. The portfolio spans tech reviews (PCMag, CNET), gaming (IGN, Humble Bundle), deals (RetailMeNot), and health (Everyday Health). The stock has nearly doubled from its 52W low of $22.45, riding the ad-market recovery and AI content tailwinds. **Council Read:** ZD is a barometer for mid-market digital ad spend — when small brands open wallets, ZD's coupon and review sites see the flow first. The Q2 beat confirms the ad cycle is inflecting for the mid-market.
+**PPLI (-2.84% w/w, $3.01B cap):** The Diller optionality play. A quiet, range-bound week at $40.40 (below the 50D at $43.48, RSI ~40) while the market digests the WSJ report (Jul 23) that MGM Resorts has been in deal talks with Barry Diller's People Inc following his ~$18B June offer for the rest of MGM. Q1 (Aug 3) was an EPS beat with light revenue. Analyst target $57.30 (+42%, 11 analysts, Buy) — the Street is not paying for the MGM option. **Council Read:** Asset-rich and catalyst-driven: if the MGM bid advances, PPLI re-rates; if it dies, you still own a 6.9x trailing P/E media rollup. Position sizing is the whole game here.
 
-**PPLI (+0.02% w/w, $3.10B cap):** People Inc (formerly IAC Inc.) changed its ticker from IAC to PPLI on June 4, 2026. The company is a digital media rollup with segments spanning Dotdash Meredith (publishing), Angi (home services), and emerging bets. Q1 2026 earnings (reported Aug 3) showed an EPS beat (-$0.05 vs. -$0.19 est.) but revenue light. The stock has been range-bound since the ticker change. At $41.58, it trades at ~7x trailing P/E with a 52W range of $29.56–$48.32. **Council Read:** PPLI is a post-restructuring value play — the Angi/Dotdash separation is still settling, and the market hasn't awarded a multiple yet. Watch for Q2 earnings and any portfolio rationalization.
+**ZD (+2.80% w/w, $1.90B cap):** The balance-sheet story. Q2 (Aug 6): revenue -2.7% and adj. EBITDA -3.7%, but adj. EPS +13% on aggressive buybacks — and the **$1.2B sale of the Connectivity business closed**, leaving ZD with $1.61B cash vs. $895M debt (net cash $711M, ~$20.75/share). The stock is above both the 50D ($51.02) and 200D ($41.33), RSI ~59, target $64.40 (+16%, Buy). **Council Read:** ZD is now a net-cash media rollup retiring ~10% of its shares a year — the mid-market ad barometer, now with a fortress balance sheet. The cleanest small-cap story in the sector.
 
-**CCOI (-26.52% w/w, $0.51B cap):** Cogent Communications is the small-cap disaster of the week. Q2 2026 earnings (Aug 6) revealed service revenue of $235.6M, down 1.5% QoQ and 4.3% YoY — a miss. The company slashed its quarterly dividend from ~$0.90+ to $0.02 per share, a 98% cut. Multiple securities fraud class actions allege that CCOI overstated optical wavelength demand and misrepresented backlog conversion. KeyBanc cut its price target to $15 from $25. Net leverage remains at 6.23x. The stock is down 78% from its 52W high of $45.69. **Council Read:** CCOI is a cautionary tale for telecom yield traps — when the dividend is the only thesis, a cut destroys the shareholder base. Avoid until the restructuring playbook becomes clear. The wavelength fraud allegations add legal overhang that could take quarters to resolve.
-
-> **Note:** IAC was not retrievable under its old ticker (delisted/renamed to PPLI on June 4, 2026). Verified PPLI market cap at $3.10B — confirmed sub-$5B and eligible for this section.
+**CCOI (+14.01% w/w, $0.54B cap):** Zombie bounce or restructuring turn? After last week's -26.5% crash (revenue miss, dividend slashed 98% to $0.02/qtr, securities-fraud class actions), the stock ripped +14% — including +9.3% on Friday alone. The bull case from the print: sold ten data centers for $224.2M net proceeds ($130.7M gain), repurchased $138.8M of 2032 notes at a discount, net leverage down to 6.23x from 6.79x, wavelength revenue +63.8% YoY, and Q2 swung to +$1.39 EPS (asset-sale driven). The bear case: service revenue still shrinking (-4.3% YoY), 14.5% short interest makes this a squeeze candidate, the fraud suits are unresolved, Altman Z-Score is 0.03, and ex-dividend for the shrunken payout is Aug 21. Analyst consensus: Hold, $16.45 target. **Council Read:** A +14% week on a $542M cap changes nothing about the thesis — this is a distressed restructuring with legal overhang, not an investment. Admire the trade; don't own the stock.
 
 ---
 
@@ -99,16 +101,16 @@
 |---|---|---|
 | 52W High | $120.41 | Resistance — tested in May, failed |
 | Near Resistance | $115.00 | June consolidation ceiling |
-| 200-Day MA | ~$114.25 | **Broken since 7/23** — long-term trend still negative |
-| 50-Day MA | ~$110.37 | **Being tested now** — short-term trend improving |
-| Current Price | $111.25 | Reclaimed $110; above 50D if it holds |
-| Major Support | $105.03 | 52-week low — held two weeks ago, now distant |
-| Psychological Support | $100.00 | Round number; unlikely to be tested near-term |
+| 200-Day MA | ~$114.17 | **The wall** — broken since 7/23; reclaim = full repair |
+| Current Price | $112.95 | Above 50D all week; closed at the week's high |
+| 50-Day MA | ~$110.09 | **Reclaimed** — held Mon–Fri, now first support |
+| Psychological Support | $110.00 | Held all week; Wednesday's CPI dip ($110.27) was bought |
+| Major Support | $105.03 | 52-week low — three green weeks removed from it |
 | Structural Low | $95.00 | Pre-rally base from early 2026 |
 
-**Marky Setup Assessment:** The breakdown from two weeks ago is being repaired. XLC lost the 50D on 7/20, sliced through the 200D on 7/23, but closed this week at $111.25 — back above $110 and challenging the 50D MA. The two-week bounce from $105.03 to $111.25 is +5.9% — a meaningful recovery. RSI has climbed from the low-30s to the high-40s — no longer oversold, approaching neutral. Volume was moderate this week; the DIS gap on Thursday produced a volume lift but nothing extraordinary. The setup is improving: if XLC holds above $110 into next week, the relief rally extends to $112–$114 (the 200D). The path of least resistance has shifted from sideways-to-down to sideways-to-up — but only if $110 holds. A failure to hold $110 reopens $105.
+**Marky Setup Assessment:** The repair job is nearly complete. Three consecutive weekly gains off the $105.03 low (+7.3% total) have reclaimed the 50D MA (~$110.09) and the $110 round number, and Friday's close at $112.95 puts the 200D MA (~$114.17) in striking distance. RSI(14) at ~68 is hot — the easy money off the bottom has been made. The bull path: a weekly close above $114.20 opens $115 (June ceiling), then the 52W high at $120.41. The bear path: a weekly close back below $110 would mark a failed reclaim and re-expose $105.03. Leadership rotation this week (telecoms + NFLX carrying while META/GOOGL rest) is what healthy advances look like — but Friday's consumer data is the first fundamental gut-check of the rally.
 
-**The relative strength story:** XLC is now **-7.5% YTD vs. SPY at ~+12%** — the underperformance gap remains ~19.5 points but has narrowed from ~20 points two weeks ago. The sector is still in a relative downtrend, but the rate of deterioration has slowed. DIS (+9.1% this week) and META (+6.4%) provided the leadership. GOOGL consolidating after its prior-week surge is healthy, not bearish. The key question: can the non-platform names (DIS, EA, T, VZ) continue to carry the ETF while META and GOOGL digest?
+**The relative strength story:** XLC is now **-3.4% YTD vs. SPY at ~+13.6%** — the underperformance gap is ~17 points, narrowed from ~19.5 two weeks ago and ~20 at the July lows. The sector is closing the gap, but the 1Y return (~+1.3%) vs. the index shows how much ground remains. This week's leadership (T, VZ, TMUS, NFLX, WBD) came from the non-platform side — the ETF no longer needs META and GOOGL to rise in lockstep, which is structurally healthier than July's one-engine profile.
 
 ---
 
@@ -116,23 +118,25 @@
 
 | Factor | Level | Implication for XLC |
 |---|---|---|
-| 10Y Treasury | ~4.66% (Fri 8/7 close) | **Down from 4.74%** — easing pressure on platform multiples; sub-4.70% is relief for 20x+ P/E stocks. |
-| DXY | ~99.60 | Mild headwind for international ad revenue (META, GOOGL earn ~50% overseas). |
-| Fed Funds | 3.50–3.75% (on hold; no new hawkish rhetoric this week) | Bond market doing the easing for the Fed. September cut odds rising. |
-| Oil / Middle East | WTI ~$78 (down from ~$92) | **Major tailwind** — 15% crude drop removes the energy-inflation channel that threatens ad budgets. |
-| **Global Ad Spend 2026E** | **~$1.0–1.1T (+6.3–7.7%)** | WARC: +6.3%. GOOGL Search +17% and META revenue +28% suggest platforms still outpacing macro. |
-| Digital Ad Share | 82.7% of US media spend (~$298B) | Structural shift continues — linear TV -1.7% while social +14.6%, retail media +14–21%, CTV +13.8%. |
-| **Platform Ad Crown** | **META > GOOGL in 2026E** | eMarketer: Meta $243.5B vs. Google $239.5B — first-ever flip. But GOOGL's Q2 Cloud +82% rebalances the narrative. |
-| **AI Capex (Big 4)** | **~$725B (+77% YoY)** | GOOGL ~$175–185B; META $130–145B (narrowed). GOOGL proved ROI; META still needs to. |
-| Streaming | Ad tiers scaling | NFLX ~$3B 2026 ad revenue (doubling); US CTV ad spend ~$33.4B (+13.8%). DIS Q3 showed streaming profitability momentum. |
-| Cord-Cutting | ~5% annually | Unchanged structural bleed on CHTR, DIS (ESPN). CHTR lost -172K internet subs in Q2 — worse than feared. |
-| 5G / Wireless ARPU | ~$50–55/mo, flat | TMUS still taking share but adds slowing; T/VZ showing fiber/wireless stability. Starlink mobile expansion announced but dismissed by telco CEOs as near-term non-threat. |
-| Regulatory Risk | Appeals phase | Search remedies at D.C. Circuit (arguments late '26/early '27); ad-tech remedies (AdX/DFP divestiture risk) hearing scheduled for September. No new rulings this week. |
-| Gaming Growth | ~+4–6% YoY | EA Q1 FY2027 beat ($1.3B net bookings, +3% YoY) but Q2 guide weak (-9–13%). GTA VI (2026) remains the cycle's big event; TTWO steady near $232. |
+| 10Y Treasury | ~4.696% (Fri 8/14 close) | Net +3bps w/w — Tuesday's 4.74% probe rejected; Friday dipped to 4.64% on the retail miss. Neutral-friendly for multiples. |
+| DXY | ~99.67 | Third straight week below 101 — tailwind for the ~50% of META/GOOGL ad revenue earned overseas. |
+| Fed Funds | 3.50–3.75% (on hold) | **Regime correction: the debate is HIKES, not cuts** — three dissenters voted to hike on Jul 29. Soft CPI (3.4%/2.5% core), flat PPI, and the -23K July NFP knocked September hike odds from ~54% to ~30–35%. |
+| **Consumer Pulse** | **Retail sales -0.6% MoM (Jul); UMich Aug prelim 51.0 vs. 55 est** | **NEW YELLOW FLAG** — consumer cracks are the leading indicator of ad-budget cuts. One print is a warning; two is a trend. |
+| Oil / Middle East | WTI ~$82.40 (+5.4% w/w) | **Tailwind revoked** — the Iran reversal reopens the energy-inflation channel. Sub-$85 is tolerable; >$90 Brent is the ad-budget danger zone. |
+| **Global Ad Spend 2026E** | **~$1.0–1.1T (+6.3–7.7%)** | Forecasts unchanged this week — but watch for WARC/MAGNA downgrades if consumer data worsens. Platforms (META +28%, GOOGL Search +17%) still outpacing macro. |
+| Digital Ad Share | 82.7% of US media spend (~$298B) | Structural shift intact — social +14.6%, retail media +14–21%, CTV +13.8%, linear TV -1.7%. Walmart's Aug 20 print (Walmart Connect commentary) is next week's retail-media datapoint. |
+| **Platform Ad Crown** | **META > GOOGL in 2026E** | eMarketer: Meta $243.5B vs. Google $239.5B — first-ever flip. GOOGL's Cloud +82% rebalances the narrative. |
+| **AI Capex (Big 4)** | **~$725B (+77% YoY)** | GOOGL ~$175–185B; META $130–145B. This week's AI-infra earnings (CRWV, SMCI, CSCO, COHR, AMAT) confirmed hyperscaler demand is holding — the capex supercycle continues, ROI question still META-specific. |
+| Streaming | Milestone week | **WBD streaming crossed $3B quarterly revenue for the first time** (adj. EBITDA +63% ex-FX to $512M); NFLX ad tier tracking ~$3B 2026; DIS SVOD margin 13%. Streaming profitability era confirmed across three names. |
+| Cord-Cutting | ~5% annually | WBD's -11.3% revenue decline (NBA loss hitting linear) and CHTR's -172K Q2 internet subs show the bleed continues. |
+| 5G / Wireless ARPU | ~$50–55/mo, flat | Starlink scare faded — Street verdict: satellite mobile is a 2027+ threat; carriers' own direct-to-device satellite JV (May 14) hedges it. T/VZ/TMUS rebounded +3.0–4.6%. |
+| Regulatory Risk | Enforcement phase | **September is search-remedy month:** Tier-2 (search-index licensing at fair rates, Android APIs, self-preferencing limits) + technical compliance monitor begin. Ad-tech remedies ruling (Judge Brinkema; AdX divestiture / DFP open-sourcing risk) **still pending — could land any week**. Search appeal (D.C. Circuit): no argument date, expected late '26/early '27. |
+| Media M&A | Three-way saga | WBD board backs NFLX deal for Streaming & Studios (split expected Q3 2026); Paramount Skydance's ~$110B rival bid won UK approval (Aug 6) but faces a 12-state AG lawsuit; on hold until litigation ends or June 1, 2027. |
+| Gaming Growth | ~+4–6% YoY | TTWO Q1 FY27 (Aug 7): bookings $1.386B (above guide), GTA VI locked for Nov 19, FY27 bookings $8.0–8.2B reiterated; Q2 bookings guide soft ($1.62–1.67B). EA's weak Q2 guide (-9–13%) still the caution tape. |
 
-**Ophelia Verdict:** The sector's weather improved materially this week. The 10Y at 4.66% is down from multi-year highs. Oil near $78 is a gift to ad budgets. And the earnings calendar delivered: DIS proved the streaming+parks flywheel works, EA held the line on sports franchises, and CARG/ZD showed the small-cap ad-tech ecosystem is alive. The macro headwinds that compressed XLC into July are reversing: lower rates, lower oil, and a Fed that looks increasingly likely to cut in September. XLC below the 200D is still technically a trend change, but the $105 floor held, the 50D is being reclaimed, and the path to $115 is visible. The safer trade: own DIS for the parks+streaming recovery, own GOOGL for the Cloud story, own VZ for the dividend spread, and wait for META to prove capex ROI before adding size.
+**Ophelia Verdict:** The sector's weather turned two-sided this week. The friendly forces: hike odds collapsing (4.696% 10Y, DXY < 100), the Starlink threat fading, three streaming names proving profitability, and smart money (Ackman) buying NFLX at the lows. The unfriendly forces: oil back at $82.40 with Middle East escalation risk, and Friday's consumer double-miss (retail -0.6%, UMich 51.0) — the exact leading indicator that precedes ad-budget cuts. The ad cycle itself has NOT rolled: CARG's +13% revenue and ZD's buyback-powered EPS growth say mid-market spend is alive. But this is the first week since the rally began where the demand side of the ad market, not the rate side, is the thing to watch. September stacks the calendar: Fed meeting (9/16), Google Tier-2 remedies go live, and Brinkema's ad-tech ruling looms.
 
-**The Bottom Line:** XLC is a **damaged sector in a healing macro environment.** The GOOGL earnings miracle two weeks ago stopped the bleeding. This week's DIS blowout and macro relief (lower yields, lower oil) bought the sector time. META's capex narrative remains a drag but the stock bounced. The telecoms are the safe harbor. The path forward: watch the 10Y (below 4.50% = real relief; above 4.80% = panic), watch META's Q3 guidance for capex discipline, and watch whether GOOGL's Cloud momentum sustains. Own the winners (GOOGL, DIS, VZ, CARG), avoid the ETF until it reclaims the 200D.
+**The Bottom Line:** XLC is a **repairing sector facing its first demand-side test.** The technicals are nearly healed (50D reclaimed, 200D at $114.17 is the final wall), the telecoms are back, and the streaming business model just posted its best proof-of-profitability week ever. But the consumer cracked on Friday, and oil reversed — if either worsens, the H2 ad-budget narrative flips from "intact" to "at risk." Own the dividend telecoms (T, VZ) as the hedge, GOOGL for the Cloud story at 17.4x, and watch the 200D. A weekly close above $114.20 confirms the repair; a close below $110 on worsening consumer data reopens the July wound.
 
 ---
 
@@ -140,21 +144,21 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Macro Relief Rally
+### This Week's Story: The Telecoms Fight Back — and the Consumer Blinks
 
-Two weeks ago, this page called XLC "on probation" after losing the 50D and 200D. Last week, GOOGL delivered the miracle that stopped the bleeding. This week, the sector built on that foundation — not with another earnings thunderbolt, but with a broad-based macro relief rally that lifted everything from mega-cap platforms to small-cap ad-tech.
+Last week this page called it "the macro relief rally." This week the sector added a third leg — but the composition changed, and Friday delivered the first genuine warning shot for the ad cycle.
 
-**1. The macro tailwinds arrived.** The 10Y Treasury yield drifted down to 4.66% from 4.74% — a modest 8 bps drop, but directionally significant for a sector priced on discount rates. More importantly, WTI crude collapsed from ~$92 to ~$78 — a 15% drop that removes the single biggest threat to H2 ad budgets. When oil spikes, CMOs cut discretionary spend. When oil crashes, the ad cycle breathes. This week, it breathed.
+**1. The Starlink scare died, and the dividend trade came back.** Ten days after SpaceX's Gwynne Shotwell vowed to take the carriers' customers, the Street rendered its verdict (Barron's: "the drop isn't warranted"): satellite mobile is a 2027+ threat, and the carriers' own direct-to-device satellite JV hedges it anyway. T ripped +4.6%, TMUS +3.1%, VZ +3.0%. The second engine: soft CPI (3.4%/2.5% core) and flat PPI knocked September hike odds from ~54% to ~30–35% — falling rate-fear is pure oxygen for covered 4.5–5.8% yields. The barbell's boring half carried the ETF this week.
 
-**2. META: The dead-cat bounce that might be real.** Meta at $592, +6.4% for the week, proved that the Jul 29 earnings drubbing was overdone. There was no new fundamental catalyst — no analyst upgrade, no product launch, no capex guidance cut. The bounce was pure macro relief and short-covering. But in a sector where sentiment had turned uniformly bearish, even a sentiment shift matters. The stock is still 25% below its 52W high and the $130–145B capex plan is still a question mark. But the selling exhaustion is visible. At ~22x trailing P/E for a 28% grower, the market is no longer pricing META as if AI spend will destroy the company.
+**2. Ackman bought the NFLX dip.** Pershing Square disclosed a ~3M-share Netflix stake on Thursday — the fund's first return to the name since the ~$400M 2022 loss. The setup is textbook Ackman: a quality franchise at a post-earnings 52W-low zone, a record $4.7B buyback, an ad tier scaling toward ~$3B, and a live M&A option (the WBD Streaming & Studios deal). NFLX +5.4% on the week. Whether he goes activist on the WBD path is the next chapter.
 
-**3. DIS: The blowout that proved streaming can print money.** Disney's Aug 7 Q3 print was everything the bulls wanted. Total segment OI up 21%. Revenue growth of 7%. Experiences at record Q3 levels. Disney+ SVOD margin at 13%. Upfront volume up double digits. Super Bowl sold out. "Toy Story 5" at $1B+. The stock ripped +9.1% for the week, reclaiming $100 and closing at $104.91. For a stock that had been 19% below its 52W high and trapped in a streaming-skeptic narrative, this was regime-changing within the name. DIS is no longer a value trap — it's a reopening+parks+streaming compounder with a real path to double-digit margins.
+**3. The WBD three-way went global.** WBD (+4.5%) posted a split Q2 on Aug 6 — EPS +$0.06 vs. -$0.10 expected, but revenue -11.3% as the NBA loss gutted linear — while its streaming arm crossed $3B in quarterly revenue for the first time (EBITDA +63%). The same week, Paramount Skydance's ~$110B rival bid won UK approval with CNN editorial-independence assurances, even as 12 US state AGs sue to block it. The board still backs the Netflix path. This is the largest media M&A fight in years, and it sits inside the ETF.
 
-**4. The small-cap ad-tech beat parade.** CarGurus (+7.6%) and Ziff Davis (+1.5%) both delivered Q2 beats on Aug 6. CARG's 13% revenue growth and AI dealer tools showed the auto marketplace is recovering. ZD's $1.03 EPS vs. $0.84 consensus proved the digital media rollup model still works. These are not household names, but they are the canaries in the ad-cycle coal mine — when small dealers and mid-market brands are spending, the macro ad cycle is intact.
+**4. The platforms consolidated into September's regulatory gauntlet.** GOOGL -2.4% and META -0.4% — no fundamental news, just positioning. September brings Tier-2 search remedies (index licensing, Android APIs) and the compliance monitor, with Judge Brinkema's ad-tech ruling (AdX divestiture risk) pending any week. The market is pricing legal risk, not earnings risk.
 
-**5. The CCOI disaster.** Not everything worked. Cogent Communications crashed -26.5% after Q2 earnings revealed a 4.3% YoY revenue decline and a 98% dividend slash (from ~$0.90/quarter to $0.02). Multiple securities fraud class actions are now pending, alleging wavelength demand was overstated. At $0.51B market cap, CCOI is a restructuring speculation, not an income play. The lesson: in a rate-rising world, yield traps get exposed.
+**5. Friday: the consumer blinked.** July retail sales -0.6% MoM and UMich sentiment 51.0 (vs. 55 est) — the first direct hit to the ad-cycle thesis. Ad budgets are the first line item CMOs cut when the consumer wobbles. One print is a warning; the sector now needs the August data to prove this was noise, not the turn.
 
-**The Bottom Line:** The sector's narrative shifted from "platforms in peril" to "macro relief lifting all boats." XLC is no longer in free fall. The 10Y yield and oil prices are moving in the sector's favor. DIS proved the non-platform side can deliver. META proved the selling was overdone. And the small-cap ad-tech beats confirmed the ad cycle is still turning. The 200D at $114 is the next test. If XLC reclaims it, the sector re-rates. If it fails at $112–$114, the bear flag resolves lower. But for the first time in a month, the path of least resistance is up.
+**The Bottom Line:** The rally broadened — telecoms, NFLX, and WBD carried while the mega-platforms rested — which is what durable advances look like. But the sector's single most important macro factor (corporate ad budgets) just got its first yellow flag. XLC at $112.95 sits $1.20 below the 200-day wall. What happens at $114.17, against the backdrop of September's Fed meeting and Google's remedy enforcement, decides whether this repair becomes a recovery.
 
 ---
 
@@ -162,79 +166,82 @@ Two weeks ago, this page called XLC "on probation" after losing the 50D and 200D
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| ~~Netflix~~ | NFLX | **Reported Jul 16** | Q2 2026 | Rev $12.56B (+13.4%, in line); **Q3 guide $12.86B vs. ~$13B — MISS**; stock -7.4% to 52W low; record $4.7B buyback; ads → ~$3B in 2026 |
-| ~~Verizon~~ | VZ | **Reported Jul 22** | Q2 2026 | Adj EPS $1.30 vs. $1.28 est — BEAT; revenue $34.3B (slight miss); broadband +348K; **raised guidance**; stock +8.3% |
-| ~~AT&T~~ | T | **Reported Jul 23** | Q2 2026 | Adj EPS $0.65 vs. $0.59 est — BEAT (+10.2%); revenue $31.6B (slight miss); **best-ever Q2 fiber adds**; wireless service rev +3%; stock +12.6% |
-| ~~T-Mobile~~ | TMUS | **Reported Jul 23** | Q2 2026 | EPS $2.85 vs. ~$2.50 est — BEAT; revenue $22.79B; **postpaid adds ~250K — light**; stock -6.5% on subscriber miss |
-| ~~Charter~~ | CHTR | **Reported Jul 24** | Q2 2026 | EPS $10.76 vs. ~$10.00 est — BEAT; revenue $13.5B (-1.7%); **internet -172K — worse than expected**; EBITDA -4.3%; stock -6.1% |
-| ~~Alphabet~~ | GOOGL | **Reported Jul 22** | Q2 2026 | Revenue $119.8B (+24%) — BEAT; Search +17%; YouTube Ads +13%; **Cloud +82%**; backlog $514B; stock +11.4% |
-| ~~Meta Platforms~~ | META | **Jul 29, 2026 AMC** | Q2 2026 | Revenue $60.8B (+28%) — BEAT; ad impressions +19%; avg price per ad +12%; capex $130–145B maintained; stock -6.5% post-print, +6.4% this week |
-| ~~Electronic Arts~~ | EA | **Aug 6, 2026** | Q1 FY2027 | Net bookings $1.3B (+3% YoY) — BEAT; EPS $0.79; Q2 guide weak (-9–13% net bookings); stock +0.4% |
-| ~~Disney~~ | DIS | **Aug 7, 2026** | Q3 FY2026 | Segment OI +21%; revenue +7%; Experiences record; Disney+ 13% SVOD margin; upfront +DD%; stock +9.1% |
-| ~~CarGurus~~ | CARG | **Aug 6, 2026** | Q2 2026 | Revenue +13% YoY; EPS $0.66 vs. $0.61 est — BEAT; AI dealer tools launched; stock +7.6% |
-| ~~Ziff Davis~~ | ZD | **Aug 6, 2026** | Q2 2026 | EPS $1.03 vs. $0.84 est — BEAT; stock +1.5% |
-| ~~Cogent Communications~~ | CCOI | **Aug 6, 2026** | Q2 2026 | Revenue $235.6M (-4.3% YoY) — MISS; **dividend slashed 98% to $0.02/share**; securities fraud class actions; stock -26.5% |
-| **Take-Two** | TTWO | **Aug 13, 2026** | Q1 FY2027 | GTA VI pre-orders/timing; Zynga |
+| ~~Netflix~~ | NFLX | **Reported Jul 16** | Q2 2026 | Rev $12.56B (+13.4%, in line); Q3 guide light; record $4.7B buyback; **Aug 13: Pershing Square disclosed ~3M-share stake**; stock +5.4% this week |
+| ~~Verizon~~ | VZ | **Reported Jul 22** | Q2 2026 | Adj EPS $1.30 vs. $1.28 est — BEAT; broadband +348K; raised guidance |
+| ~~AT&T~~ | T | **Reported Jul 23** | Q2 2026 | Adj EPS $0.65 vs. $0.59 est — BEAT; best-ever Q2 fiber adds; stock +4.6% this week on Starlink-fade + dividend bid |
+| ~~T-Mobile~~ | TMUS | **Reported Jul 23** | Q2 2026 | EPS $2.85 — BEAT; postpaid adds ~250K light; stock +3.1% this week |
+| ~~Charter~~ | CHTR | **Reported Jul 24** | Q2 2026 | EPS $10.76 — BEAT; internet -172K worse than expected |
+| ~~Alphabet~~ | GOOGL | **Reported Jul 22** | Q2 2026 | Revenue $119.8B (+24%); Cloud +82%; **Sept: Tier-2 search remedies + compliance monitor go live; Brinkema ad-tech ruling pending** |
+| ~~Meta Platforms~~ | META | **Reported Jul 29** | Q2 2026 | Revenue $60.8B (+28%); capex $130–145B maintained; next catalyst: Q3 late Oct |
+| ~~People Inc~~ | PPLI | **Reported Aug 3** | Q1 2026 | EPS beat (-$0.05 vs. -$0.19), revenue light; **MGM/Barry Diller deal talks (WSJ, Jul 23) — the live option** |
+| ~~Warner Bros. Discovery~~ | WBD | **Reported Aug 6** | Q2 2026 | EPS +$0.06 vs. -$0.10 est — BEAT; revenue $8.72B (-11.3%) — MISS; streaming >$3B/qtr first time, EBITDA +63% ex-FX; UK approved Paramount ~$110B bid; 12-state AG suit pending |
+| ~~Electronic Arts~~ | EA | **Reported Aug 6** | Q1 FY2027 | Net bookings $1.3B (+3%) — BEAT; Q2 guide weak (-9–13%) |
+| ~~Disney~~ | DIS | **Reported Aug 7** | Q3 FY2026 | Segment OI +21%; Experiences record; Disney+ 13% SVOD margin |
+| ~~Take-Two~~ | TTWO | **Reported Aug 7** *(date corrected — was listed Aug 13)* | Q1 FY2027 | Net bookings $1.386B (above guide); revenue $1.53B (+2%); loss -$0.18 vs. -$0.21 est — BEAT; $43M cancelled-title impairment; **GTA VI Nov 19 confirmed; FY27 bookings $8.0–8.2B reiterated; Q2 bookings guide $1.62–1.67B (soft)**; stock +6% post-print, faded to +0.2% w/w |
+| ~~CarGurus~~ | CARG | **Reported Aug 6** | Q2 2026 | Revenue +13% to $251M; EPS $0.66 vs. $0.61 — BEAT; six analyst PT raises; Q3 guide $253.5–258.5M |
+| ~~Ziff Davis~~ | ZD | **Reported Aug 6** | Q2 2026 | Adj EPS +13% on buybacks; **Connectivity sold for $1.2B — net cash $711M** |
+| ~~Cogent Communications~~ | CCOI | **Reported Aug 6** | Q2 2026 | Revenue $235.6M (-4.3%) — MISS; dividend slashed 98%; data-center sale $224.2M; net leverage 6.23x; ex-div Aug 21 |
+| **Walmart** | WMT | **Thu Aug 20, 7AM ET** | Q2 FY2027 | Not an XLC name — but Walmart Connect commentary is next week's best retail-media datapoint for the digital-ad-share thesis |
+| **NFLX / META / GOOGL / T / VZ / TMUS** | — | **Mid-to-late October** | Q3 2026 | The sector's next full earnings gauntlet: ad revenue growth, AI capex updates, wireless adds |
 
-**Marky's Binary Event Read:** The August earnings calendar delivered a split verdict. DIS delivered the blowout the sector needed — proof that streaming profitability and parks strength can coexist. EA beat Q1 but guided Q2 down, keeping the stock flat. CARG and ZD proved small-cap ad-tech is working. And CCOI detonated, reminding investors that small-cap telecom yield traps can implode. The next binary event is TTWO on Aug 13 — GTA VI timing is the gaming sub-sector's biggest catalyst. For XLC, the path forward is now macro-driven: the 10Y yield, oil prices, and whether the DIS/META momentum can sustain into September.
+**Marky's Binary Event Read:** The August earnings calendar is now fully spent — every sector name has printed, and the scoreboard reads: beats for GOOGL, META (revenue), T, VZ, TMUS, CHTR, DIS, EA, CARG, ZD, WBD (EPS), TTWO; misses for NFLX (guide), META (stock reaction), CCOI (thesis). September's catalysts are regulatory and macro, not corporate: Brinkema's ad-tech ruling, Tier-2 search-remedy enforcement, the Sept 16 Fed meeting, and the August consumer data. The tape's next binary event is XLC vs. the 200D at $114.17.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- GOOGL Cloud momentum sustains → sector re-rates on AI monetization proof
-- 10Y yield breaks below 4.50% on soft economic data → growth multiples re-expand
-- META signs compute-deal monetization (Anthropic rumor) → capex narrative flips
-- Ad spend forecasts hold ~+6–7% → Q3 platform revenue confirms the cycle
-- Telecom yields stay covered → dividend bid returns with rates stalled
-- Oil stays sub-$80 → energy-inflation channel closed, ad budgets safe
+- XLC closes a week above $114.20 (200D) → July breakdown fully repaired, momentum funds re-engage toward $120
+- September hike odds go to zero on more soft data → platform multiples re-expand; dividend telecoms extend
+- Brinkema rules conduct-only remedies (no AdX divestiture) → GOOGL relief rally, regulatory overhang lifts
+- August consumer data proves Friday was noise → ad-budget narrative stays intact into Q4 upfront season
+- WBD deal resolution (either path) unlocks streaming value; Ackman activism accelerates NFLX buybacks
+- Oil fades back below $78 → energy-inflation channel closes again
 
 ### 🔴 Bear Case
-- 10Y reverses back to 4.75%+ → platform P/Es compress another 5–10%
-- META's Q3 guide confirms capex discipline absent → stock revisits $550
-- WARC/global ad forecast downgrades continue → H2 ad budget cuts materialize
-- CCOI wavelength fraud allegations spread to other alt-telecoms → sector reputation hit
-- D.C. Circuit or E.D. Va. drops a structural remedy (Chrome / AdX divestiture) → GOOGL -20%-type event
-- TTWO delays GTA VI → gaming sub-sector selloff
+- August retail/consumer data confirms a downtrend → **H2 ad budgets get cut** — the sector's core thesis breaks; META/GOOGL guide down in October
+- Brinkema orders AdX divestiture / DFP open-sourcing → GOOGL structural-remedy shock (-15–20% type event)
+- Oil spikes above $90 Brent on Iran escalation → stagflation scare, ad budgets and multiples hit together
+- September hike odds re-spike above 50% → the telecom dividend bid evaporates; 10Y back over 4.75%
+- XLC loses $110 on volume → failed 50D reclaim reopens $105.03
+- Friday-type consumer prints stack up → CARG/ZD (mid-market ad barometers) roll over first
 
 ### ⚠️ The Wild Card
-**The small-cap telecom implosion.** CCOI's -26.5% crash, dividend slash, and securities fraud allegations are a stark reminder that the "yield" in alt-telecom is often a trap. If other small-cap fiber/ISP names (e.g., LUMN, which also carries heavy debt and yields) face similar scrutiny, the income-investor bid that supports the sector's lower-volatility names could evaporate. The mega-cap platforms (META, GOOGL) are insulated from this. The dividend-focused telecoms (T, VZ) are less so — if yield investors start questioning coverage ratios across the space, even the garden names could see multiple compression.
+**The WBD endgame.** Three outcomes, three very different sector maps: (1) Netflix closes the Streaming & Studios acquisition → NFLX becomes a content colossus and its ~6% XLC weight grows; (2) Paramount Skydance's ~$110B bid survives the 12-state AG lawsuit (now UK-approved) → a new mega-media conglomerate forms with CNN under Ellison stewardship; (3) litigation runs to the June 1, 2027 deadline and both deals wobble → WBD de-rates on deal fatigue with a -11.3% revenue decline underneath. Layer on Ackman's new NFLX stake — if he pushes for or against the WBD path, the streaming weight inside XLC reprices before any deal closes. Meanwhile Brinkema could drop the ad-tech ruling any week with zero warning. This sector now carries two unscheduled binary events at once.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The regime did not shift this week — it healed. The 10Y at 4.66% and oil at $78 are the best macro backdrop the sector has had in a month. DIS proved that streaming+parks is a real compounder. META proved the selling was overdone. GOOGL consolidated its gains like a winner should. And the small-cap ad-tech beats (CARG, ZD) confirmed the ad cycle is still turning. I am not abandoning the platforms. I am adding to DIS for the recovery story and holding GOOGL for the Cloud story. XLC challenging the 50D is a positive sign, but I need to see a close above $112 before calling the trend repaired. Cautiously constructive into August."*
+**Ophelia:** *"The regime didn't shift this week — it bifurcated. Rates are friendly (hike odds ~54% → ~30–35%, DXY sub-100), but the two things this sector cannot survive both twitched at once: oil reversed to $82.40, and the consumer cracked on Friday (retail -0.6%, UMich 51.0). Ad budgets die by a thousand cuts, and Friday was cut number one. I am NOT changing positioning on one print — the ad cycle evidence (CARG +13%, ZD buybacks, DIS upfronts +DD, WBD streaming EBITDA +63%) still says intact. But I am promoting the consumer data to the top of my watch list, above the 10Y. September is a gauntlet: Fed on the 16th, Google's Tier-2 remedies go live, Brinkema could rule any day. Hold the telecoms as the hedge, hold GOOGL, add nothing until August's retail data confirms or denies the crack."*
 
-**Marky:** *"The breakdown is being repaired. We are back at the 50D MA (~$110.37) after two weeks of bounce. The levels are clean: above $112 we can talk about a relief rally to $114–$115 (the 200D); below $105.03 on volume, the trap door opens. But $105 feels distant now. DIS at $105, +9% on earnings, is the healthiest chart among the non-platform names. GOOGL at $354, holding above its 50D, is the only mega-cap with a fully repaired chart. META at $592 is still 25% below its 52W high — a bounce, not a trend change. The trade I like: long DIS / short CHTR pair — the divergence between the streaming winner and the cable loser is the sector's biggest non-platform theme. Flat XLC until the macro resolves."*
+**Marky:** *"Three green weeks off $105.03, the 50D reclaimed and held all week, Friday's close at the high — this is a textbook repair job. But RSI ~68 says the easy money is made, and $114.17 (the 200D) is the wall that decides everything. A weekly close above $114.20 and I'll call the July breakdown officially dead — target $115, then $120.41. A weekly close below $110 and the reclaim has failed. Note the rotation: this week's points came from T, VZ, TMUS, NFLX, and WBD while META and GOOGL rested — healthy. My levels: long bias above $110, flat between $112–$114.20, add above $114.20 on a weekly close. And watch CARG — the consumer-shock canary gave back 4% this week; if it breaks $35, the small-cap ad barometer is telling you Friday's retail print was a trend, not noise."*
 
-**Cecil:** *"The garden bloomed last week and kept blooming this week. AT&T at 7.9x P/E and 4.7% yield is still firmly in the garden — this week's +2.3% grind higher confirms the trend. Verizon at 12.3x and 6.0% yield is even more interesting, with the dividend covered and the fiber/wireless strategy showing progress. DIS at 21.6x is no longer cheap after the +9% pop, but the earnings acceleration is the kind of fundamental improvement that makes me pay attention. GOOGL at 17.8x remains cheap for a quality compounder. CCOI at $9.92 is a yield trap that sprang — a reminder that Rule 2 applies to dividends too: if the yield looks too good to be true, it probably is. I will stick with T, VZ, and GOOGL. The garden is still blooming."*
+**Cecil:** *"The garden caught a second wind — and for once, the macro helped. Falling hike odds are fertilizer for covered dividends: T at 8.3x and 4.5%, VZ at 12.7x and 5.8% (113 bps over the 10Y) remain the only names that fit the garden, and this week's +4.6%/+3.0% proves the income bid is alive when rate fear recedes. GOOGL at 17.4x is still the cheapest quality compounder in the sector — but September's remedy enforcement is a real event, so size accordingly. DIS at 22x is fairly priced now. NFLX at 29x normalized with no dividend is Ackman's garden, not mine. And CCOI's +14% bounce changes nothing — a 0.71% yield after a 98% cut, unresolved fraud suits, and a 0.03 Altman Z-Score is a monument to Rule 2. The garden is blooming. Water T and VZ, watch the consumer data, and let the lawyers finish with GOOGL."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / market data feeds: XLC, META, GOOGL, GOOG, NFLX, TMUS, DIS, CHTR, TTWO, EA, T, VZ, CARG, ZD, PPLI, CCOI (Fri 8/7 close)
-- Meta Platforms Q2 2026 earnings release (Jul 30, 2026); revenue $60.8B (+28% YoY)
-- Alphabet Inc. Q2 2026 earnings release and CEO remarks (Jul 22, 2026); revenue $119.8B (+24% YoY), Cloud +82%, backlog $514B
-- Netflix Q2 2026 shareholder letter (Jul 16, 2026)
-- AT&T Q2 2026 earnings release and call transcript (Jul 23, 2026)
-- Verizon Q2 2026 earnings release and call transcript (Jul 22, 2026)
-- T-Mobile Q2 2026 earnings release and call transcript (Jul 23, 2026)
-- Charter Communications Q2 2026 earnings release (Jul 24, 2026) — PRNewswire
-- Walt Disney Company Q3 FY2026 earnings call transcript (Aug 7, 2026) — StockAnalysis
-- Electronic Arts Q1 FY2027 earnings release (Aug 6, 2026) — TipRanks
-- CarGurus Q2 2026 earnings release (Aug 6, 2026) — TheStreet Pro
-- Ziff Davis Q2 2026 earnings release (Aug 6, 2026) — Briefing.com
-- Cogent Communications Q2 2026 earnings release (Aug 6, 2026) — PRNewswire; class action filings (Jul–Aug 2026)
-- eMarketer global ad revenue forecast — Meta > Google 2026 crossover (Apr 2026); GroupM TYNY (~$1.1T, +7.7%); MAGNA global ad forecast (~$1.02T, +6.7%); WARC 2026 downgrade (+6.3%)
-- U.S. 10Y Treasury yield data (^TNX, Fri 8/7 close ~4.66%); DXY (~99.60); WTI crude (~$78.18)
-- DOJ v. Google search remedies — D.C. Circuit appeal docket; E.D. Va. ad-tech remedies proceedings (Judge Brinkema), remedies hearing scheduled September 2026
-- IAC Inc. ticker change to People Inc. (PPLI) effective June 4, 2026 — MIAX Options Alert
+- Yahoo Finance chart API (Fri 8/14 closes, weekly changes, XLC 50D/200D/RSI/YTD/1Y computed): XLC, META, GOOGL, GOOG, NFLX, T, VZ, TMUS, DIS, CHTR, EA, TTWO, WBD, CARG, ZD, PPLI, CCOI, ^TNX, DX-Y.NYB, CL=F, SPY
+- StockAnalysis.com statistics pages (8/15): CARG market cap $3.33B / fwd P/E 13.4x / PT $41.50; ZD $1.90B / net cash $711.57M / PT $64.40; PPLI $3.01B / PT $57.30; CCOI $542.05M / short interest 14.5% / Altman Z 0.03 / PT $16.45
+- MarketWatch CCOI quote page (8/14, cap cross-check $579M); Morningstar NFLX quote page (8/14, market cap $325.45B, normalized P/E 29.42, Pershing headline)
+- 247wallst.com (Aug 14, 2026): Pershing Square disclosed ~3M-share NFLX stake on Thu Aug 13; Ackman's 2022 NFLX loss ~$400M
+- Take-Two Interactive Q1 FY2027 earnings release (Aug 7, 2026 — Business Wire): bookings $1.3859B, revenue $1.5339B (+2.0%), net loss $34.1M (-$0.18), GTA VI Nov 19, FY27 bookings $8.0–8.2B reiterated
+- Warner Bros. Discovery Q2 2026 coverage (Aug 6–7): EPS +$0.06 vs. -$0.10 est; revenue $8.72B (-11.3%); streaming >$3B/qtr, adj. EBITDA +63% ex-FX to $512M; Paramount merger on hold until litigation ends or June 1, 2027 — 247wallst, MarketBeat, Seeking Alpha
+- Forbes (Aug 6, 2026): UK backs Paramount's ~$110B WBD deal with CNN editorial-independence assurances; Deadline (Aug 6–7): 12-state AG lawsuit "powerful credibility" after UK concessions; Lionsgate CEO endorsement
+- WBD/Netflix deal framework: PRNewswire (Mar 20, 2026) — WBD board recommends Netflix merger, split expected Q3 2026 ahead of close
+- Morningstar/Dow Jones (Aug 4, 2026): SpaceX Shotwell Starlink mobile comments; Barron's rebuttal ("the drop isn't warranted"); AT&T/TMUS/VZ satellite JV (May 14, 2026, PRNewswire)
+- Cogent Communications Q2 2026: PRNewswire release + earnings call transcript — ten data centers sold ($224.2M net, $130.7M gain), wavelength revenue +63.8% YoY, $138.8M discounted 2032-note repurchase, net leverage 6.23x from 6.79x; simplywall.st analysis (Aug 9)
+- CarGurus Q2 2026 (Aug 6): GlobeNewsWire release, TheFly PT raises (RBC, B. Riley, Needham, Barclays, UBS, BTIG)
+- Ziff Davis Q2 2026 (Aug 6): revenue -2.7%, adj. EPS +13%, $1.2B Connectivity sale — earnings call transcript, Business Wire
+- WSJ (Jul 23, 2026): MGM Resorts in deal talks with Barry Diller's People Inc; PRNewswire (Jun 4, 2026): IAC → People Inc (PPLI) ticker change
+- Macro: CPI 3.4% headline / 2.5% core (Wed 8/12); PPI flat (Tue 8/11); July retail sales -0.6% MoM and UMich Aug prelim 51.0 vs. 55 est (Fri 8/14); September hike odds ~54% → ~30–35%; July NFP -23K (Aug 7); 10Y 4.696% Fri close; DXY 99.67; WTI $82.40 (+5.4% w/w, Iran reversal); SPX +0.4% / Nasdaq +0.1% / Dow -0.6% w/w
+- Antitrust status: Google search remedies Tier 2 + compliance monitor effective September 2026 (Tier 1 default-deal ban live since June 2026); ad-tech remedies ruling (Judge Brinkema, E.D. Va.) pending; search appeal D.C. Circuit — no argument date (expected late 2026/early 2027) — lawfold.com (Jul 2026), Mondaq 1H 2026 antitrust update (Jul 16, 2026), Open Markets Institute
+- eMarketer global ad revenue forecast — Meta > Google 2026 crossover; GroupM TYNY (~$1.1T, +7.7%); MAGNA (~$1.02T, +6.7%); WARC (+6.3%)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-08*
+*Last updated by Saturday Research Crew: 2026-08-15*
 *Next update: Every Saturday 11:39 AM ET*
-*Data sources: Yahoo Finance, MAGNA, GroupM, eMarketer, WARC, company filings, market data feeds*
+*Data sources: Yahoo Finance, StockAnalysis, Morningstar, MarketWatch, MAGNA, GroupM, eMarketer, WARC, company filings, market data feeds*
