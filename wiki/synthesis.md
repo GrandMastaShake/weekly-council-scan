@@ -6,120 +6,95 @@
 
 ---
 
-*Last updated by Saturday Research Crew — Synthesis Agent: 2026-08-08, 4:56 PM ET*
+*Last updated by Saturday Research Crew — Synthesis Agent: 2026-08-15, 4:56 PM ET*
 *Next update: Every Saturday 3:00 PM ET*
 *Method: Read all 15 wikis → Cecil/Marky/Ophelia syntheses → Consensus → Monday Watchlist → Contradictions → Calendar Impact*
 
 ---
 
+## ⚠️ DATA INTEGRITY — READ FIRST
+
+**Truth Layer:** `macro/facts.json` regenerated **2026-08-15** (today, same fetch as Canary Watch) — FRESH. Every macro number in this report (10Y 4.696%, 5Y 4.362%, 3M 3.697%, VIX 14.25, SPY $776.34, DXY 99.60 stale-composite, WTI $82.40, gold $4,380.40, copper $6.60, HYG $79.71, LQD $106.12, BTC $62,976, sector ETF closes/WoW, fed funds 3.50–3.75% Hold) is the canonical facts.json value. Where a wiki disagrees, facts.json wins and the disagreement is logged in Section 7.
+
+**STALE WIKIS — two Saturday runs did not fire today:**
+
+| Wiki | Last Updated | Status |
+|---|---|---|
+| `wiki/semiconductors.md` | **2026-08-08** | 🟥 **STALE** — the 3:09 PM Saturday slot never ran (no cron.log entry). Its numbers are last week's: SMH $582.70/+7.8% vs. canonical **$587.82/+0.88%**; NVDA $223.96 vs. fresh $225.16; MU $877.57 vs. fresh $971.66. Its levels are UNRELIABLE for the Monday Watchlist — SMH setups below use XLK (fresh tech wiki) instead. |
+| `wiki/economic-calendar.md` | **2026-08-08** | 🟥 **STALE** — the 11:49 AM slot never ran. Its "Next Week's Gauntlet" is the CPI/PPI/retail week that has already happened. This week's actual prints (CPI 3.4%/core 2.5%, PPI flat, claims 209K, retail -0.6%, UMich 51.0) and next week's gates (FOMC minutes 8/19, Jackson Hole 8/21) are assembled from the 12 fresh sector wikis and Canary Watch. |
+
+The other 13 wikis are fresh (2026-08-15). The 2Y yield remains a known stale-proxy (facts.json: 4.00%, dated 2026-07-15; financials desk external read: 4.17%) — external refresh is owed before Monday.
+
+---
+
 ## 1) CECIL'S SYNTHESIS — The Fundamentalist Lens
 
-> *"The garden had a bountiful harvest this week. Gold finally opened its rose. Lithium sprang from the dirt. And the dividend aristocrats proved their yields were not just numbers — they were promises kept."*
+> *"This week the market paid me twice: once for patience (the refiners I refused to chase proved me right about peak earnings — then ran 19% without me), and once for planting (the banks, the staples, and Merck all flowered). The garden ledger is honest about both."*
 
 ### What Valuations Stood Out
 
-This week the market's bifurcation sharpened into a three-way split: **growth names recovering on rate relief, commodity names surging on dollar weakness, and bond proxies bleeding despite falling yields.** The NFP earthquake (-23K, first negative print since 2020) did what no earnings report could — it repriced the Fed path, collapsed the 10Y from 4.745% to 4.66%, and gave every duration-sensitive asset a second look. Cecil's ledger is full of interesting numbers.
-
-**Where I see VALUE:**
+The week sorted the market by arithmetic rather than narrative. **Where I see VALUE:**
 
 | Name | Number | Why |
 |---|---|---|
-| NEM | ~14.2x P/E | Gold at $4,346/oz — the +18.5% weekly move vindicated months of patience; levered play on real-yield collapse |
-| ALB | Forward ~11x P/E | Q2 adjusted EPS $3.75 vs $0.11 prior year; EBITDA +155%; the lithium spring is uncoiling, not speculating |
-| QCOM | 19.2x / 2.19% yield | The only mega-cap semiconductor that fits the garden; fortress balance sheet, covered dividend, 5G modem monopoly |
-| DIS | 21.6x P/E | Streaming profitability proven (13% SVOD margin), parks at record Q3, "Toy Story 5" at $1B+ — the turnaround is real |
-| JPM | 15.1x P/E | Money-center gold standard; curve steepening is NIM oxygen; within $8 of all-time high |
-| TFC | 11.9x / 4.01% yield | Deep-value regional; CRE panic fading, yield curve steepening; the compounder of the cycle |
-| VZ | 12.3x / 6.01% yield | Dividend covered, fiber strategy working, 135 bps OVER the 10Y — rare positive carry in a 4.66% world |
-| CPB | 11.3x / 7.14% yield | My garden, ignored and compounding; the crowd wants Costco, I want soup |
-| GIS | Forward ~11.5x / 6.61% yield | Same story as CPB — real staples at real prices |
-| EXC | 16.8x / 3.67% yield | Best value among regulated large-cap utilities; the honest income story in a sector of traps |
-| EOG | 14.6x / 2.74% yield | The only energy major with a value veneer; pure commodity call at a reasonable price |
+| MRK | ~14.2x fwd / 2.5% yield | New 52W high $135.97 (+5.65%); FY guidance raised; the Keytruda-cliff "bridge" is being priced, not the fall |
+| MU | ~22x trailing, $1,502 mean target | Memory supercycle's widest value gap — +55% implied upside with HBM sold out through 2026 |
+| CSCO | ~24x fwd | Beat-and-raised (rev +18%, FY27 guide above Street) and fell -8.0% — the cheapest AI-networking exposure now |
+| NEM | 14.8x / net cash + $1.95B | Barrick settlement windfall lands on gold at $4,380; hold, don't chase (RSI 70.9) |
+| ALB | fwd ~11x | Post-beat follow-through (+3.8%); Morningstar $200 FV, UBS deficit thesis institutionalized |
+| DOW | 16.8x / 4.51% yield | Reaffirmed $0.35 dividend; deep-value buyers finally arrived (+5.9%) |
+| TFC / USB | 12.2x / 3.93% — 13.1x / 3.19% | Regional-bank re-rating with fresh 52W highs; deposit-cost relief is real even at a 4.17% 2Y |
+| EIX | 7.4x / 4.92% yield | Tentative Eaton Fire ruling cracked the worst case; lawsuit-priced stock with improving math |
+| VST | 14.3x fwd | +31% EBITDA, guidance reaffirmed, ~$700M of 2027 upside still OFF the books |
+| GIS / CPB | 12.2x fwd / 6.22% — 11.4x / 6.70% | The defensive rotation paid the cheap staples first (GIS +6.3%) |
+| F / CMCSA / T / VZ | 7.5x / 4.2% — 8.4x / 5.0% — 8.3x / 4.46% — 12.7x / 5.83% | The tape finally graded on valuation; these held or rose while crowded trades bled |
 
-**Where I see TRAPS:** WELL at 106x P/E after a +1.6% week — the demographic wave is real but the price is an ocean I do not swim. CEG at 22.8x / 0.65% yield proved execution this week ($2.55 EPS, raised guidance, 920 MW new PPAs) but it is still a growth stock masquerading as a utility. TSLA at ~285x P/E with revenue down 26% remains quarantined — the +5.7% week is a dead-cat bounce, not a trend change. NVO at 11.7x / 3.8% yield looks cheap but the GLP-1 share-loss narrative to Lilly is structural, not cyclical. VST at 24.7x / 0.62% yield ahead of its Aug 8 report is a binary I do not touch. MU at ~19.8x P/E is a commodity cyclical at peak memory pricing — the most dangerous combination at the wrong point in the cycle, even after a +6.6% week.
+**Where I see TRAPS:** WMT at 40.6x pre-bought a beat into Thursday — at that multiple it NEEDS one. COST at 48.3x remains a growth stock in staples clothing. SBUX at 62x — one bounce doesn't fix a same-store-sales miss. NVO at 11.3x is cheap for a reason: ZEUS missed, DKK 6.3B impaired, Lilly owns 60.9% of US incretins. MPC/VLO/PSX now trade ABOVE mean analyst targets — the sell-side is behind the refining rally. EYE beat +47% and crashed -14% on traffic -4.9% — the season's signature trap. UVV's 7.42% yield after a Q1 loss is a value-trap exam question. MERC at $0.47 with negative EBITDA is a restructuring, not a stock. CCOI's +14% bounce changes nothing (Altman Z 0.03).
 
 ### The Dividend Yield Spreads That Matter
 
-With the 10Y at 4.66%, the spread argument has marginally improved for bond proxies — but do not be fooled. **XLU's ~2.70% yield is still -196 bps to the Treasury.** XLRE's 3.12% yield is -154 bps. These sectors must *earn* their keep through growth, not just collect rent. CEG proved it can grow into the multiple. VST has not.
+With the 10Y at **4.696%**: XLU's 2.70% yield is **-200 bps**; XLRE's 3.12% is **-158 bps** — still negative carry, still requiring growth to earn keep. Positive carry that matters: **VZ +113 bps, O +48 bps, CPB +200 bps, GIS +152 bps, MO +182 bps** — and MO's -3.9% week proves the bond-proxy tax: the dividend didn't shrink, the discount rate grew. **The lesson holds: in a 4.70% world, you need yield AND a pulse.**
 
-**Positive carry names that matter this week:** VZ +135 bps over 10Y, T +1 bps (essentially flat), CPB +248 bps, GIS +195 bps, EXC -99 bps (still negative but improving), O +54 bps (one of the few REITs whose payout clears the Treasury). The 10Y's -9 bps drop gave bond proxies a lifeline, but XLU fell -1.67% anyway — because earnings dispersion and the death-cross threat overwhelmed the macro signal. **The lesson: in a 4.66% world, you need yield AND growth. Yield alone is not enough.**
-
-**Cecil's week:** I added ALB on the crushing Q2 beat — the lithium story transformed from speculation to calculation. I tipped my hat to NEM as gold vindicated patience. I held DIS through the +9.1% week because the parks+streaming flywheel is now printing money. I held VZ and T because their dividends cleared the 10Y before the drop and now clear it by even more. I am watching JPM above $355, SPG on any dip to $220, and HON above $243 for incremental planting. The garden is blooming again — this time with gold, lithium, and dividend roses.
+**Cecil's week:** I rebuilt DOW, watered the financials (USB/PNC/TFC), held NEM and ALB without chasing, congratulated MRK, and kept NVO, SBUX, and the refiners-above-target quarantined. The garden outperformed — because the market finally graded on price.
 
 ---
 
 ## 2) MARKY'S SYNTHESIS — The Technician Lens
 
-> *"The tape repaired itself this week — but repairs are not trends. The 50-day moving average is the fence between a bounce and a breakout. Most sectors are still on the wrong side."*
+> *"Two breakouts confirmed, one breakout knocked and nobody answered, one floor held by a single dollar, and the VIX just printed a six-month low while oil ripped. The tape is calm on top and arguing underneath."*
 
 ### The Tape Patterns That Matter
 
-**SMH — the correction snapped back hard.** SMH surged +7.8% from $540.53 to $582.70 — its best week in months and a powerful reversal off the August 1 lows. Volume on the bounce was elevated, suggesting institutional accumulation, not just short-covering. The 50D MA at ~$595 is now just 2% overhead — the line in the sand between a dead-cat bounce and a sustainable reversal. RSI at ~55.9 is neutral-to-bullish, no longer oversold. MACD is curling toward a bullish cross. Hold $560 for bulls. Break above $595 opens $620. NVDA at $223.96 (+11.6%) is within 5% of its 52W high — the AI supercycle's poster child is reasserting itself.
-
-**XLK — the V-shaped washout reversed.** After thirteen straight closes below the 50D MA, XLK ripped +7.2% this week as the NFP shock repriced Fed expectations and sent growth stocks screaming higher. The correlation to SPY recoupled sharply from 0.329 to 0.814 — tech is a beta proxy again. But price is still below the 50D MA at ~$182.97. A close above that level repairs the chart; until then, this is a relief rally, not a trend change. Volume on the bounce was healthy but not euphoric.
-
-**XLI — breakout confirmed, uptrend resumed.** XLI surged +2.97% to close at $185.18 after printing a new 52-week high at $188.19 intraday Friday. The ISM Manufacturing shock (55.6%, strongest since May 2022) ignited the move. RSI at ~58 is trending upward, not overbought. MACD curling toward a bullish cross. All four legs of the industrial stool — aerospace/defense, transportation, machinery, electrical/power — held or strengthened. Close above $188.19 on volume >8M opens $192–$195.
-
-**XLB — decisive reclaim of the 50D MA.** XLB surged +4.8% to $52.86, reclaiming the 50D MA ($51.20) with authority and carving its best weekly gain since spring. RSI at 58.2 has room to run. The internals were broad: 14 of 16 tracked names finished green. NEM (+18.5%), FCX (+9.4%), ALB (+10.5%), and CLF (+9.3%) led. This is a sector-wide macro move driven by DXY tailwinds and gold explosion, not stock-picking.
-
-**XLU — the bond-proxy playbook broke.** XLU dipped -1.67% to $43.61, closing below both its 50D MA ($44.86) and 200D MA ($44.81) for the first time since early 2025. The 10Y *fell* 8.5 bps — a tailwind that should have lifted utilities, yet the sector sold off anyway. This is a correlation break worth watching. Volume was elevated (~26M shares on Aug 5–6) as the sector tested the $43.00 support zone. A death cross (50D below 200D) is one bad session away. Support at $43.00 (February gap-fill) and then the 52W low of $41.15.
+**XLF — breakout CONFIRMED.** Friday's $58.16 close is the highest weekly close in the fund's history, sealing three weeks of consolidation above the $58.00 trigger — and it led SPY (+0.97% vs +0.40%) while tech cooled. The playbook inverts: $58.00 is now support to defend; clear the $58.41 intraday high and it's blue sky. Only blemish: light Friday volume (~28M vs 34M avg). **XLE — five straight green days, +7.67% to $61.91,** 1.5% under the $63.46 52W high — but every session ran BELOW average volume. A weekly close above $63.46 on expanding volume opens $70+; a rejection followed by a loss of Monday's $60.18 gap close prints island-reversal risk. The refiners (MPC/VLO/PSX) made fresh 52W highs with RSI in the mid-70s — extended leadership. **XLV — the knock nobody answered:** all-time intraday high $169.71 Thursday, but five straight closes stalled under the $168.53 line and Friday faded to $167.37. Rejection wick at altitude: unresolved, not broken. Weekly close above $169.71 targets $172–175; lose the 20D ($164.26) and the range thesis reactivates. **XLY — held the 200D ($117.10) by $1.10** on feather volume (3.8M vs 7.9M avg): distribution-lite, on probation into HD/LOW/TJX. **XLC — third straight green week,** 50D ($110.09) held all week, closed at the high $112.95, with the 200D wall at $114.17 now in range; RSI ~68 says the easy money is made. **XLRE — textbook 50D test-and-reclaim:** lost $44.67 Mon–Wed (Tuesday flush $44.01 on the 4.74% probe), CPI reclaim Thursday, follow-through Friday. **XLU — the repair is 90% done:** $44.31 sits $0.46 under the 200D ($44.77) and $0.54 under the 50D ($44.85); the $43.00 floor has held twice. **XLK — four higher lows in five sessions** to $191.74 Thursday before Friday's retail wobble; RSI ~60, MACD constructive, but TWO consecutive sub-5M-share Fridays — nobody is chasing. **XLI** consolidated the breakout in a 1.6% band ($184.37–$187.41) directly atop old resistance; **XLB** held its 50D ($51.34) every day while internals rotated from beta to catalysts. **SMH — STALE WIKI:** canonical close is $587.82 (+0.88%); last week's wiki levels ($595 50D / $560 support) are a week old — treat as unreliable; use XLK as the tech tape proxy into Monday.
 
 ### The Correlations That Are Breaking and Repairing
 
-1. **XLK recoupled from 0.329 to 0.814 correlation with SPY.** The growth unwind is dead — tech is a beta proxy again. Capital is flowing back into the mega-cap platforms.
-2. **SMH recoupled from 0.144 to 0.766.** Semiconductors have recoupled to the broad market after the software rotation panic. The software-chip correlation inversion that dominated last week has paused.
-3. **XLB flipped from negative (-0.337) to positive (+0.231).** Materials are now a pro-cyclical play again as the DXY regime change takes hold.
-4. **XLV flipped from positive (+0.054) to negative (-0.332).** Healthcare left the risk-on bloc and returned to the defensive camp as rates stabilized and biotech caught a bid on the 10Y pullback.
-5. **XLE deepened to -0.435 correlation with SPY.** Energy is now the definitive inverse hedge — as oil collapsed -7.7%, the sector became the market's short.
-6. **Utilities-yields correlation broke.** The 10Y fell 8.5 bps and XLU fell -1.67%. Either this is an earnings-season aberration, or the bond-proxy playbook is changing.
-
-**The vol tell:** VIX collapsed -6.8% to 14.90 — fully normalizing and breaking below the 20D MA. Realized moves during the Aug 4–7 follow-through wave massively exceeded implied once again: SHOP's realized +19.6% dwarfed any implied estimate; DDOG's -17.4% crash on a +12% beat proved the options market cannot price narrative risk. Treat every implied move as a floor, not a ceiling.
+**Zero sign flips — the first stable correlation structure in three weeks.** The moves were within signs: **XLF strengthened 0.390 → 0.580**, graduating into the pro-cyclical bloc — banks trading like a growth sector as the 10Y–3M curve hit +100 bps. The defensive complex **converged toward zero** (XLU -0.112, XLRE -0.142, XLP -0.203, XLV -0.252): defensives no longer trade against the market; they ignore it — late-cycle decorrelation, not risk-off. **XLE stayed pinned at -0.425** despite ripping +7.67% — energy moves big on its own oil-driven axis, the lone true hedge. **The utilities-rates inversion completed week two:** 10Y UP +3.6 bps, XLU UP +1.61% — the mirror of last week's wrong-sign move; the bond-proxy linkage is being overridden by the data-center power stack (VST Helix, PJM $333/MW-day). **Bitcoin diverged DOWN -2.9%** in a green equity week — the highest-beta risk asset stopped following; occasionally it knows something. **The vol tell:** VIX 14.25 is a six-month closing low, pricing a ±4.1% 30-day move — the options market does not believe the oil/consumer headlines. Either wisdom, or the deepest complacency we have recorded. A snap above 16.50 is the first crack; below 13.50 hedges are too cheap to ignore.
 
 ---
 
 ## 3) OPHELIA'S SYNTHESIS — The Macro Lens
 
-> *"The macro dam cracked this week — but not in the way anyone expected. The labor market fell off a cliff while manufacturing hit its strongest print in four years. The market rallied on the bad news because bad news meant no Fed hikes. I do not argue with the market's logic. I trade it. But I do not trust it."*
+> *"Last week I celebrated three pillars of relief: oil's collapse, the yield pullback, and growth leadership. This week two of them reversed and the third merely consolidated. The canary stopped singing opera and started watching the door."*
 
 ### The Sector Rotation Story
 
-The rotation has **flipped completely from defensive/energy to growth/tech/materials.** Last week's leadership — energy and defensives — collapsed. XLE underperformed SPY by -6.95% as WTI crude crashed -7.7%. XLU cratered -5.18% vs. SPY, XLRE -3.71%, and XLP -3.43% — the entire defensive complex bled as VIX normalized and rates eased. The "fear trade" unwound fast.
-
-The growth recovery is the mirror image: **SMH outperformed SPY by +4.29%, XLK by +3.69%, and XLB by +1.31%.** This is a dramatic reversal from the prior week when SMH was -4.78% vs. SPY and XLK was -1.40%. The 1M picture still shows scars — SMH is -7.06% vs. SPY on the month — but the trajectory has turned sharply positive. The newly emerging leadership is broadening: industrials (XLI) printed a new 52-week high. Materials (XLB) surged +4.8%. Even consumer discretionary (XLY) rallied +3.25% with real breadth — housing (HD, LOW), travel (BKNG, DIS), and apparel (LULU) all participated.
-
-The flow map tells the story: capital is fleeing the inflation/energy hedge and piling into the "no Fed hikes" trade. The DXY at 99.60 (second week below 100) is the macro relief valve. A weaker dollar lifts EM, commodities, and multinational earnings. It is the counterweight to the 10Y at 4.66%.
+The rotation **re-rotated**. Last week's violent defensive-to-growth swing did not extend — instead the leadership board flipped to a strange barbell: **energy (XLE beat SPY by +7.27%) on one end, utilities (+1.21% vs SPY) and communication services (+1.13%) on the other.** Oil AND bond proxies leading together only makes sense in a week where the long bond sold off (10Y +3.6 bps) and Friday's growth scare sent buyers hunting yield anyway. Meanwhile last week's heroes consolidated rather than extended: XLK +0.69% vs SPY, SMH +0.48% — healthy digestion after +7% weeks, and the 1-month column STILL favors tech (XLK +3.63% vs SPY, best on the board). The week's loser was **discretionary (-1.78% vs SPY)** — the tape voting on Friday's consumer data. Breadth note: ten of twelve sectors beat SPY — participation rotated; it did not narrow. That is late-cycle behavior, not breakdown behavior.
 
 ### The Macro Cross-Currents
 
-The week handed me **three signals in violent collision** — and the market chose to celebrate the most dangerous one.
-
-**Signal one — the NFP earthquake:** Friday's July jobs report was one of the most shocking prints in years. **-23K nonfarm payrolls** versus +85K consensus. Prior two months revised down by a combined **-103K**. Government payrolls fell by 53K. Leisure and hospitality shed 40K. Private payrolls rose only 30K. The unemployment rate ticked down to 4.1% — but only because the participation rate fell to 61.4%. Average hourly earnings rose just 0.1% MoM, dragging the annual rate down to 3.2% YoY.
-
-The market's reaction? **SPY rallied 1.7%.** The 10-year yield dropped 8 bps to 4.66%. September hike odds collapsed from ~55% to ~44%. The Fed's three dissenters — Hammack, Kashkari, and Logan — were suddenly isolated. For growth stocks, this was oxygen.
-
-**Signal two — the ISM manufacturing shock:** Monday's ISM Manufacturing PMI printed **55.6%** — a 2.3-point acceleration from June and the strongest reading since May 2022. New Orders held at 56.7. Employment returned to expansion at 52.8 for the first time since January 2025. The industrial economy is not just expanding — it is accelerating.
-
-**Signal three — the cross-asset relief:** DXY at 99.60. WTI crude collapsed to ~$78 (-7.7%). Gold surged +7.2% to $4,340.70. Copper firmed +2.1% to $6.57. Bitcoin rallied +2.5% to $65,013. HYG rose +0.65%. The canary is singing opera.
+Four forces collided. **Force one — the cool core:** July CPI delivered headline +0.1% MoM / 3.4% YoY with **core 2.5% YoY — the coolest core since the 2026 energy shock** — and PPI was flat. September hike odds collapsed from ~54% to ~30–35%. **Force two — the oil reversal:** WTI ripped +5.4% to $82.40 (Brent $88.52) on the Iran pressure campaign, Russian terminal strikes, and renewed tanker attacks — erasing all of last week's -7.7% gift and re-activating the inflation tail exactly as the 10Y pressed 4.70%. **Force three — the consumer crack:** July retail sales -0.6% MoM (first negative print of the summer) and UMich August prelim sentiment 51.0 vs 55 expected (-7.6% MoM) — consumers cited the war, bond yields, and geopolitics. Stacked on July's -23K NFP, the slowdown now has a labor leg AND a consumption leg. **Force four — the dollar stayed soft:** DXY pinned ~99.6 (third week sub-100/101), EUR/USD 1.1573 — but USD/JPY pushed to 159.31, one bad week from the BoJ intervention zone.
 
 ### The Contradictions I Am Sitting With
 
-- **The labor market is both bulletproof and fragile.** Claims at 199K (4-week MA at 198,750, a cycle low) say bulletproof. NFP at -23K says cracked. Both cannot be true. My working hypothesis: employers have stopped hiring (NFP) but are not yet firing (claims). This is the **"freeze before the fire"** phase — the most dangerous phase of a labor cycle, because it can persist for months before claims rise, and then the deterioration accelerates rapidly.
-- **Manufacturing is re-accelerating while the labor market cracks.** ISM 55.6% is not a blip; it is the strongest factory print in over four years. Typically, manufacturing leads the labor market down. This time, the labor market may be leading manufacturing. Watch the August ISM employment sub-index for confirmation.
-- **The market rallied on the worst NFP print since 2020.** "Bad news = good news" because it means no Fed hikes. But if the labor market is truly cracking, H2 2026 earnings estimates are at risk. Be careful what you wish for.
-- **DXY below 100 is bullish for risk assets, but the 10Y at 4.66% is still restrictive.** The dollar's retreat lifts EM, commodities, and multinational earnings. But rates at multi-year highs cap valuation expansion. The tug-of-war continues.
-- **Utilities fell despite falling yields.** The 10Y dropped 8.5 bps and XLU fell -1.67%. Either the correlation is temporarily broken by earnings dispersion, or the market is pricing a deeper macro concern (recession fear, credit stress) that overwhelms the yield tailwind.
+- **Stagflation-lite's tail got fatter.** Energy rising (+5.4%) while the consumer fades (-0.6% retail) is the ONE combination the market cannot outrun — and it is the exact input mix that re-armed the Fed's three hawk dissenters. Yet VIX sits at a 6-month low. One of them is wrong.
+- **The bond market stopped rallying on good news.** Cool CPI and a retail miss should have pulled the 10Y down; it closed UP at 4.696% because oil re-priced the inflation pipe first. The 4.55–4.75% range is the battlefield; Jackson Hole is the referee.
+- **Gold rose on a week when yields rose and the dollar was flat.** $4,380 (+9.9% on the month) is trading as a debasement/geopolitical asset, not a rates asset — the bid is deeper than rate math.
+- **BTC fell while SPY closed green near its cycle high.** Risk appetite has a small crack in the façade.
 
 ### What the Economic Calendar Revealed
 
-The calendar delivered a **three-act play with a plot twist in every act.**
-
-**Act I — The Manufacturing Surprise:** Monday opened with ISM Manufacturing at **55.6%**, a blowout beat. Cyclicals caught a bid. The narrative: "The economy is not in recession. Manufacturing is re-accelerating."
-
-**Act II — The Labor Market Cracks:** Wednesday's ADP at **+44K** versus +75K consensus was the warning shot. The ISM Services miss (54.1% vs 54.5%) added to the soft-patch narrative.
-
-**Act III — The NFP Earthquake:** Friday's -23K NFP with -103K revisions was the regime event. SPY rallied 1.7%. The 10Y dropped. Growth stocks soared. The market repriced the entire Fed path.
-
-**Next week's gauntlet:** CPI (Aug 12) is the binary event of the month. Consensus: headline +0.1% MoM, core +0.2% MoM. A core print > +0.3% validates the hawks and reverses the NFP-driven rally. A core print < +0.1% cements the "no hike, maybe cut" narrative. PPI (Aug 13), Retail Sales (Aug 14), and UMich Sentiment (Aug 14) follow. The Council's regime call hinges here.
+Two things — one from the data, one from the calendar itself. **The data:** the week's five prints resolved the post-NFP question in the most awkward way possible — inflation is genuinely cooling at the core (2.5%), the pipeline is quiet (flat PPI), labor's high-frequency leg twitched (claims 209K), but the CONSUMER is now the weakest link. The regime flag count effectively grew: DXY < 100, NFP negative, and now a consumer shock. **The calendar itself:** `wiki/economic-calendar.md` did not refresh today — it still points at last week's CPI gauntlet. The Council therefore reads next week's gates from the sector desks: **FOMC minutes Wednesday 8/19** (the three hawk dissents, explained) and **Jackson Hole Friday 8/21 — Warsh's first address as Chair** — the biggest macro gate before the September 15–16 FOMC, arriving with oil at $82 and hike odds freshly repriced. The gate is now two-sided: dovish cement sends the 2Y down from 4.17% and extends the breakouts; an oil-citing hawkish tilt retests $58.00 XLF and 4.75% on the 10Y within days.
 
 ---
 
@@ -127,152 +102,140 @@ The calendar delivered a **three-act play with a plot twist in every act.**
 
 ### Where All Three Agree
 
-1. **The NFP earthquake (-23K, -103K revisions) was a regime event.** First negative payroll print since 2020. September hike odds collapsed. The Fed's three dissenters are now isolated. This is not a soft-landing data point — it is a hard-landing warning, even if the market rallied on it.
-2. **The 10Y at 4.66% is the master variable.** Every wiki names it. It dropped -9 bps this week, giving bond proxies a lifeline — but XLU still fell. The level is still restrictive. Above 4.75% = stress returns. Below 4.5% = genuine relief. We are in between.
-3. **Growth has recoupled to SPY.** XLK correlation surged from 0.329 to 0.814. SMH from 0.144 to 0.766. The two-bloc "growth vs. energy/defensive" regime that fractured the market has **reversed**: growth is now tightly coupled to SPY, energy is the inverse hedge, and defensives are mildly negative. This reduces single-sector drawdown risk but also means growth is the only game in town again.
-4. **The AI supercycle is intact; the narrative is what matters.** Alphabet's +82% Cloud growth and +26% QoQ capex reaffirmed the infrastructure thesis. Samsung's 4nm lines are fully booked through 2027 on Nvidia orders. TSMC raised Arizona investment to $265 billion. The demand is real. But the market pays for narrative, guidance, and positioning — not EPS deltas. SHOP's +19.6% rally on a +5% beat proved it. DDOG's -17.4% crash on a +12% beat proved it again.
-5. **The Aug 4–7 earnings wave confirmed the new regime: beat rate × guidance delta × narrative conviction = stock move.** UBER beat +41% and dropped -2.1% because narrative acceleration was absent. DIS beat +11.4% and rallied +6.6% because the turnaround story is coherent. The whisper framework is dead; the narrative framework is king.
-6. **The oil collapse removed the inflation scare.** WTI at ~$78 (-7.7% week, -9.1% from some reads) broke below $80 and crushed the energy-inflation channel. This is bullish for growth multiples, bearish for energy stocks, and neutral-to-bullish for the Fed's flexibility.
-7. **CPI on August 12 is the next binary event.** The Council agrees: hold elevated cash into CPI week. A hot print (>+0.3% core MoM) validates the hawks, sends the 10Y back toward 4.80%, and crushes the growth rally. A cool print (<+0.1% core) cements the "no hike, maybe cut" narrative and extends the SPY rally toward new highs.
+1. **The oil reversal re-activated the inflation tail.** WTI $82.40 (+5.4%) with Hormuz risk re-bid is a hawkish Fed input, a chemicals-margin headwind, an energy-equity tailwind, and a sentiment killer — simultaneously. Every wiki priced it.
+2. **Friday's consumer shock is the top watch item.** Retail -0.6% and UMich 51.0 are one print, not a trend — but every desk (XLY, XLP, XLC, XLRE, XLB, canary) promoted the consumer to the top of the risk board. **WMT Thursday 7 AM ET is the tie-breaker.**
+3. **Core disinflation is real and the September hike is fading.** Core 2.5% (coolest since the energy shock), flat PPI, hike odds ~54% → ~30–35%. The Fed's three dissenters are isolated — unless oil rescues them.
+4. **The XLF breakout is legitimate.** Confirmed on a weekly closing basis ($58.16 > $58.00) with relative-strength leadership, regionals at 52W highs, the curve at +100 bps (10Y–3M), and Basel's ~$87.7B capital relief still an unpriced free option for Q4.
+5. **VIX at 14.25 (6-month low) is the most dangerous number on the board.** The market is unprotected into FOMC minutes, Jackson Hole, WMT, and NVDA (Aug 26). Realized moves keep exceeding implied by 2–3.5x.
+6. **Earnings law of 2026, confirmed again:** narrative > EPS. SE missed -18.6% and rallied +14.6%; AMAT beat-and-raised and fell -5.1%; EYE beat +37.4% and crashed -11.6%. The estimate is not the bar — the story is.
 
 ### Where We Disagree
 
 | Question | Cecil | Marky | Ophelia |
 |---|---|---|---|
-| AI reset = opportunity? | Yes — NVDA 34x fwd, GOOGL 17.8x, DIS 21.6x with proven streaming profits | Not a short, not a chase until SMH clears $595 and XLK recaptures $182.97 | Only after CPI (Aug 12) clears; 30% cash until then; the NFP rally may be a head fake |
-| Energy | Avoid — oil at $78, war premium fading; EOG only if DXY holds below 100 | Tighten stops; XLE below 50D at $56.67 = war premium fully faded | Not chasing; not adding; the headline was negotiations, not missiles |
-| Healthcare | Overweight AMGN on MariTide; hold LLY but do not add at 39.8x | Breakout watch above $168.53; XBI +7.05% is relief, not regime change | Upgraded biotech/XBI to neutral; 10Y at 4.68% is the fence — stay below it |
-| Materials | Added ALB on Q2; NEM is the gold play; NUE holds momentum | XLB above $53.15 opens 52W high at $54.14; DXY 99.60 is green | Commodity longs permitted with DXY < 101; embargo reinstatement at DXY > 101 |
-| Utilities | EXC at 16.8x / 3.67% is best regulated value; EIX is binary | Bearish short-term until XLU reclaims $44.80; death cross one session away | Bond-proxy playbook broke this week; watching if correlation repairs |
+| Energy after +7.67% | Won't chase refiners above targets; EOG/CVX on pullbacks only | Respects momentum but demands volume; $63.46 close or $60.18 fail | Small XLE sleeve as inflation hedge; corridor trade, don't marry it |
+| Consumer sectors | Own cheap compounders (F, CMCSA, DIS); rent recovery trades | XLY on probation; wait for Tuesday's prints, no Monday heroics | Neutral downgrade; XLY/XLP ratio just ticked defensive |
+| Tech into NVDA | Not his garden at 36x; MU/CSCO the value exceptions | Holds last week's adds; no chase above $191.74 XLK | Holding XLK adds, not adding above $190 while oil rises and volume thins |
+| Healthcare | MRK re-rating earned; NVO out at any price | Long calls above $168.53; flat REGN into the ~8/19 binary | Holds XBI upgrade; fears 4.75% more than CMS |
+| Utilities | VST cheap at 14.3x fwd; EIX improved | Neutral until $44.85 or $43.00 breaks | Growth names earned premium; watching 4.75% with oil climbing |
+| Cash | Quality financials/staples over froth | Tight stops; re-hedge if 2 of 3 trip (VIX 16.5 / 10Y 4.75 / WTI $85) | **Holds 25% cash; no adds before WMT Thursday and NVDA Aug 26** |
 
 ### The Single Biggest Risk
 
-**The "freeze before fire" labor cycle accelerates into a recession before the Fed can cut.** If the August NFP (Sep 4) confirms the deterioration — sub-50K again, claims finally rising above 240K, participation falling further — the recession narrative hardens. Earnings estimates for H2 2026 get cut. The "bad news = good news" trade reverses into "bad news = bad news." The 10Y could drop to 4.3% on recession fears, but equities would fall faster because earnings are the denominator. The runner-up: a hot CPI print on Aug 12 (core >+0.3%) validates the Fed's three dissenters, sends the 10Y back toward 4.85%, and crushes the growth-stock rally that the NFP shock created. The third runner-up: the AI capex ROI divergence hardens — if NVIDIA's Aug 26 print guides down on data center demand, the SMH rally reverses and drags XLK with it.
+**The stagflation tail: oil keeps climbing while the consumer cracks, trapping the Fed.** WTI through $85–$90 re-ignites headline inflation (already +14.7% YoY energy in CPI) exactly as retail sales and sentiment roll over — the Fed cannot hike into a consumer recession and cannot cut with $90 crude. That combination flattens the curve the wrong way, kills the XLF breakout, compresses the 36x XLK multiple, and turns the XLE-led week into a tax on everyone else — all while VIX at 14.25 means nobody owns hedges. Jackson Hole (Warsh, Aug 21) is where this risk gets a voice. Runner-up: **NVDA's bar is set above its own guide** (Street ~$93.5B vs. $91B ±2%) — the exact setup that burned CSCO and AMAT longs; a meet-and-sell on the most crowded print of the year drags SMH, XLK, and the index multiple together.
 
 ### The Single Biggest Opportunity
 
-**The valuation reset inside an intact AI supercycle, plus the commodity bid from DXY weakness.** NVDA at ~34x forward P/E after an +11.6% week is not cheap, but it is the cheapest it has been relative to its growth in years. GOOGL at ~17.8x trailing for a 24% grower with Cloud at +82% is statistically cheap. DIS at 21.6x with streaming profitability proven is a genuine compounder. On the commodity side, NEM at ~14x P/E with gold at $4,300+ is a levered momentum trade on precious metals. ALB at forward ~11x after a $3.75 EPS quarter vs. $0.11 prior year is the best value in materials. The trade is gated by CPI (Aug 12); the door opens wider on a cool print. The second opportunity: deep-value income in a 4.66% world. VZ at 6.01% yield with a 135 bps spread over the 10Y. CPB at 11.3x / 7.14% yield. These are the numbers that compound while you wait for the growth storm to pass.
+**The steepening-curve financials breakout, with the value-staple rotation as the hedge.** XLF confirmed its highest weekly close ever with the 10Y–3M curve at +100 bps, regionals (USB/PNC/BANR/HOPE) at 52W highs, Citi's catch-up incomplete toward $147.96, and the Basel Q4 capital relief (~$87.7B system CET1) still unpriced. If Jackson Hole is dovish, the 2Y falls from 4.17% and deposit relief accelerates into that breakout. The second opportunity: **the AI power/landlord/financing chain now has signatures** — NVDA's $500B hyperscaler-financing MOUs, EQIX's Texas expansion and 20-year power deal, VST's Helix venture with KKR/NVIDIA, PJM capacity at $333/MW-day. EQIX on a pullback toward $1,050, VST holding $145, and ETN consolidating above $440 are the picks-and-shovels entries if NVDA confirms on Aug 26.
 
 ---
 
 ## 5) MONDAY WATCHLIST — Levels, Triggers, Stops
 
-> *Enter on triggers. Exit on stops. The fortnight is binary — size accordingly.*
+> *Enter on triggers. Exit on stops. The week is stacked: FOMC minutes Wednesday, WMT Thursday, Jackson Hole Friday. Note: SMH setups omitted — semiconductors wiki is STALE (2026-08-08); XLK carries the tech tape.*
 
 ### 🎯 Primary Setups
 
 | Ticker | Setup | Trigger | Target | Stop | Rationale |
 |---|---|---|---|---|---|
-| **SMH** | Correction recovery | Close > $595 (50D MA) | $620 → $650 | $560 | NFP shock created dovish macro tailwind; AI supercycle intact; Alphabet capex confirmation |
-| **XLK** | Relief rally continuation | Close > $182.97 (50D MA) | $190 → $198 | $171 | Growth recoupled to SPY (0.814); MSFT Azure 43% and $678B backlog |
-| **XLI** | Breakout continuation | Close > $188.19 on vol >8M | $192 → $195 | $179.73 | ISM 55.6% strongest since May 2022; CAT record Q2; BA FAA certification |
-| **XLB** | 50D reclaim | Close > $53.15 | $54.14 (52W high) | $51.20 | DXY < 101 = commodity tailwind; gold +7.3%; ALB/NEM/FCX leading |
-| **DIS** | Earnings momentum | Hold > $100 | $110 → $119.78 | $95 | Q3 blowout: segment OI +21%, streaming profitable, parks record |
-| **NEM** | Gold breakout | Hold > $105 | $120 → $134.88 | $95 | Gold at $4,346; real-yield collapse; +18.5% weekly momentum |
-| **ALB** | Earnings coiled spring | Hold > $125 | $150 → $170 | $115 | Q2 adj EPS $3.75 vs $0.11 YoY; EBITDA +155%; lithium bear over |
-| **QCOM** | Defensive semi value | Hold > $160 | $180 → $200 | $145 | 19.2x P/E, 2.19% yield, fortress balance sheet; 5G monopoly |
-| **VZ** | Income spread | Yield 135 bps over 10Y | $51 → $53 | $44 | Dividend covered; 6.01% yield in 4.66% world; fiber working |
-| **HON** | Diversified value | Hold > $243 | $260 | $230 | Ex-Aerospace at 27% margins; ISM tailwind; raised guidance |
-| **AMGN** | GLP-1 third horse | Hold > $400 | $450 → $500 | $370 | MariTide 9x Phase 3 enrolling; monthly-dosing differentiator; 25.5x P/E |
-| **GOOGL** | Cloud compounding | Hold > $350 | $380 → $408 | $335 | Cloud +82%, backlog $514B; AI monetization proof; 17.8x P/E |
+| **XLF** | Confirmed breakout | Hold $58.00 on any retest | $58.41 → price discovery | Weekly close < $58.00 ($55.00 opens) | Highest weekly close ever; regionals at 52W highs; curve +100 bps; Basel Q4 free option |
+| **XLE** | 52W-high break | Weekly close > $63.46 on expanding volume | $70 | $60.18 (island-reversal risk below) | Hormuz premium + refiner records; light volume = respect the fade |
+| **XLK** | Advance continuation | Daily close > $191.74 | $198.73 (52W high) | $182.80 (50D) | Cool core CPI fed the multiple; memory complex leading; NVDA Aug 26 decides |
+| **XLV** | ATH breakout watch | Weekly close > $169.71 | $172–175 | $164.26 (20D); $160 invalidates | First-ever ATH print; MRK 52W high; three PDUFAs in 11 days |
+| **XLC** | 200D reclaim | Weekly close > $114.20 | $115 → $120.41 | $110 (failed reclaim → $105.03) | Third green week; telecoms + NFLX carried; RSI 68 = no chase |
+| **XLP / WMT** | Binary event | WMT Thu 7AM beat + XLP holds $86.00 | $87.50 → $90.14 | WMT miss losing $84.57 (50D) | Defensive leadership confirmed Friday; WMT pre-bought at 40.6x |
+| **XLY** | Probation | Weekly close > $120.00 to re-engage | $122.20 → $125.01 | $117.10 (200D, held by $1.10) → $116.09/$115.44 fast | HD Tue / LOW + TJX + tariffs Wed decide the consumer verdict |
+| **XLU** | Repair completion | Close > $44.85 (both MAs) | $47.80 | $43.00 (double-tested floor) → $41.15 | VST/CEG execution bid + EIX ruling; correlation inverted 2 weeks |
+| **XLRE** | 50D test-and-reclaim | Reclaim $46.46 on vol > 5.5M | $48–50 | $44.67 (50D) → $44.01/$43.00 | NVDA $500B MOUs back the AI landlords; EQIX entry only ~$1,050 pullback |
+| **XLB** | Bull consolidation | Close > $53.60 | $54.14 (52W high) | $51.34 (50D, held all week) | DXY sub-100 regime + NEM windfall + ALB deficit thesis |
+| **C (Citi)** | Catch-up trade | Hold above 50D ~$137 | $147.96 (52W high) | $134 | Top major last week (+3.21%); re-rating, not momentum accident |
+| **FCX** | Pullback entry | $63–65 zone | $72+ (52W $72.28) | $61 | Copper never broke — the multiple did; median PT $75 |
+| **MRK** | Momentum + value | Hold > $130 | $140+ | $128 | Fresh 52W high; ~14x fwd; guidance raised; Keytruda bridge priced |
+| **VZ / T** | Income spread | VZ yield +113 bps over 10Y | VZ $51.68 / T $25+ | VZ $46 | Starlink scare faded; hike odds falling = oxygen for covered yields |
 
 ### ⚠️ Binary Calendar — No Size Into These
 
 | Event | Date | Note |
 |---|---|---|
-| **CPI (July)** | Tue Aug 12, 8:30 AM | THE binary event. Core >+0.3% = hawkish reversal; <+0.1% = dovish confirmation. The range of outcomes is unusually wide. |
-| **PPI (July)** | Thu Aug 13, 8:30 AM | Pipeline inflation signal. If PPI runs hot while CPI cools, the story is goods-price pass-through lag. |
-| **Retail Sales (July)** | Fri Aug 14, 8:30 AM | Consumer is the final domino. Miss + NFP negative = recession narrative hardens. Beat = "soft landing with cracked labor" gets stranger. |
-| **UMich Sentiment** | Fri Aug 14, 10:00 AM | 1-year inflation expectations sub-index is the Fed's secret weapon. >4.0% = Committee gets nervous. |
-| **Initial Claims** | Thu Aug 13, 8:30 AM | >240K = NFP <150K flag confirmed, defensive rotation accelerates. |
+| CMS permanent MDPNP rule comments due | Mon Aug 17 | Medicare negotiation becomes standing law; pharma terminal-multiple debate |
+| Iberdomide PDUFA (BMY) | Mon Aug 17 | Post-Revlimid bridge; BMY at 14x with 3.95% yield |
+| **HD Q2** | Tue Aug 18 pre-mkt | Cons $4.73. The housing-recovery verdict; HD -4.7% into the print |
+| **FOMC July minutes** | Wed Aug 19 | The 3 hawk dissents explained — Jackson Hole preview |
+| **LOW / TGT / TJX / EL + Section 338 tariffs effective** | Wed Aug 19 | TGT cons revised UP +13.3% to $2.30 — bar raised over a trap door; 50% Canada duties hit apparel/furniture/cosmetics |
+| Garetosmab decision (REGN) | ~Wed Aug 19 | REGN 2.2% under ATH into a coin flip — Marky flat, gamblers only |
+| **WMT Q2** | Thu Aug 20, 7:00 AM ET | Cons ~$0.74. THE consumer tie-breaker. History: -7.3%/+6.5% earnings-day violence |
+| **DE Q3** | Thu Aug 20 | Cons $4.67. Rural economy + China commentary |
+| **Jackson Hole — Warsh's first as Chair** | Fri Aug 21 | The two-sided gate: dovish cement vs. oil-citing hawkish tilt |
 
 ### 🟡 The Lines in the Sand
 
 | Level | Meaning if broken |
 |---|---|
-| **SMH $595** | 50D reclaim = correction is over; below $560 = retest $520 |
-| **XLK $182.97** | 50D recapture = bull repair; below $171 = $166.57 Wednesday low opens |
-| **XLI $188.19** | New high confirmation on volume = measured move to $192–$195 |
-| **XLU $43.00** | February gap-fill breaks; death cross confirms; $41.15 opens |
-| **DXY 100.50** | Ophelia's commodity embargo countdown begins; EM and commodities feel it |
-| **DXY 101** | Embargo reinstated; commodity longs closed |
-| **10Y 4.75%** | 52W high break; all-asset stress line — refi wall watch |
-| **10Y 5.00%** | Crisis line; duration trades get massacred |
-| **VIX 16.50 / 22** | Elevated regime re-ignites / washout — Council buys panic at 22 |
-| **WTI $82** | Oil rebound above $80 reverses relief trade; inflation scare returns |
-| **Gold $4,200** | Break below = profit-taking in miners; hold above = bull market reawakened |
+| **10Y 4.75%** | Year's ceiling / stress line — all rate-sensitives reprice |
+| **10Y 5.00%** | Crisis line; duration trades massacred |
+| **WTI $85 / $90 / $100** | Inflation trade re-ignites / chemicals margin math flips / regime line |
+| **VIX 16.50** | First crack from a 6-month-low complacency extreme |
+| **DXY 99.00 / 100.50 / 101** | Early-warning rails / Ophelia's commodity embargo countdown / embargo reinstated |
+| **USD/JPY 160** | BoJ intervention zone — cross-asset shock absorber removed |
+| **SPY $777.88** | Cycle closing high — breakout or rejection at the top |
+| **XLF $58.00** | Breakout fakeout if lost on a weekly close |
+| **XLE $63.46 / $60.18** | New bull leg / island reversal |
+| **XLY $117.10** | The consumer's line — held by one dollar |
+| **NVDA $210** | Pre-earnings setup breaks below it (Aug 26 print) |
 
 ---
 
 ## 6) CROSS-SECTOR CONNECTIONS — The Hidden Wires
 
-### Wire #1: The NFP Shock Chain (Labor → Fed → Rates → Growth → Everything)
+### Wire #1: The Geopolitical Energy Loop (Hormuz → WTI → XLE → 10Y → XLB/XLU/XLRE → Fed → XLK)
 
-Friday's -23K NFP with -103K revisions was the single most consequential macro event of the week — and it transmitted through every sector within hours. The chain: negative payrolls → September hike odds collapse from ~55% to ~44% → 10Y drops -8 bps to 4.66% → growth multiples expand → SMH +7.8%, XLK +7.2% → DXY falls to 99.60 → commodities rally → XLB +4.8%, gold +7.2% → financials breathe as curve steepens → XLF stable → bond proxies confused: yields fell but XLU still dropped because earnings dispersion overwhelmed the macro signal. **One number, twelve sectors, one trade: the NFP shock was the macro relief valve the market had been waiting for.** The risk: if the labor market is truly cracking, this relief is temporary — H2 earnings estimates are at risk, and the "bad news = good news" trade reverses violently.
+One headline machine, six sectors. The Iran pressure campaign + Russian terminal strikes + renewed tanker attacks re-inflated the Hormuz premium: WTI +5.4% to $82.40 → XLE +7.67% with refiners at record crack spreads (3-2-1 near $70, diesel >$90) → the 10Y re-firmed +3.6 bps to 4.696% as the bond market priced the inflation pipe BEFORE the disinflation data → chemicals feedstock math flipped (SHW -2.9%, PPG -4.1%, ECL -3.2%) while gold/lithium metals rallied → bond proxies absorbed a double hit (rates up AND their growth stories had to carry the day — XLU/XLRE rallied only on VST/EQIX idiosyncratics) → and the whole loop lands on Jackson Hole's podium: one more +5% oil week and "elevated inflation" language returns to the statement. **The kicker: the physical market disagrees — a 17.4M-barrel EIA build, the largest since January 2023, says demand is softer than the war price implies. Equities priced a supply crisis; inventories printed a glut. One is wrong.**
 
-### Wire #2: The AI Supply Chain (Capex → SMH → XLK → XLRE → XLI → XLU)
+### Wire #2: The AI Supply Chain Grew a Financing Link (NVDA MOUs → XLRE → XLU → XLI → XLB → XLK/SMH)
 
-One chain, six sectors, a single point of failure. Hyperscaler capex (~$800B+ in 2026) flows to NVDA/TSM/AVGO (SMH); the buyers are MSFT/GOOGL/AMZN/META (XLK/XLC); the workloads live in EQIX/DLR shells (XLRE — DLR's $1.9B backlog is record); the power runs through ETN switchgear (XLI — data-center electrical demand growing 30%+) and CEG/VST generation (XLU); the copper comes from FCX (XLB). This week the chain strengthened at every link: Alphabet reported +82% Cloud growth and +26% QoQ capex, confirming demand. Samsung's 4nm lines are fully booked through 2027 on Nvidia orders. TSMC raised Arizona investment to $265 billion. CEG signed 920 MW of new nuclear PPAs. ETN surged +8.3%. The chain is not hypothetical — it is in the numbers. **If NVIDIA's Aug 26 print confirms the demand trajectory, the entire chain re-rates together. If it guides down, there is no diversified way to hide — the chain IS the market.**
+The chain added its missing link this week: **capital.** NVIDIA signed MOUs with six asset managers for up to **$500B in hyperscaler AI data-center financing** (Aug 10–11) — the largest capital-commitment signal the trade has produced. Within days: EQIX announced a Texas expansion and a 20-year take-or-pay power deal in Hampton, GA (XLRE: EQIX +5.7%, DLR +3.3%, $1.9B backlog now financed); VST's Helix venture with KKR/NVIDIA (up to $1B) plus PJM capacity at $333/MW-day re-rated merchant power (XLU: VST +5.4%, CEG +4.7%); ETN printed an all-time high $478 on the 307 GW data-center backlog (XLI); copper held $6.60 and the White House Reliability Backstop Auction (~$15B, 6–10 GW, September target) formalized the demand (XLB); and the memory complex ripped on sold-out HBM (XLK: MU +10.7%, AMD +6.4%, LRCX +6.8%). **The constraint is no longer demand — it is power and labor, and this week power got a balance sheet. If NVDA merely meets on Aug 26, the whole chain de-rates together; there is no diversified hiding place inside it.**
 
-### Wire #3: The Dollar-Commodity-Rate Triangle (DXY → XLB → XLU → XLF)
+### Wire #3: The Consumer Stress Triangle (XLY ↔ XLP ↔ XLRE-malls ↔ XLC ads)
 
-DXY broke below 100 for the second consecutive week, closing at 99.60 — a major regime shift. For materials (XLB), this lifted Ophelia's restriction: commodity longs are permitted. Gold surged +7.2% to $4,340. Copper firmed +2.1%. NEM exploded +18.5%. FCX added +9.4%. But the 10Y at 4.66% is the offsetting headwind — rate-sensitive construction materials (VMC, MLM) stopped bleeding but remain below their 200D MAs. For utilities (XLU), DXY below 100 meant nothing: the sector was crushed by idiosyncratic earnings dispersion (EIX -6.47% on wildfire liability, VST -5.13% pre-earnings) even as yields fell. For financials (XLF), DXY stable at ~99.60 is fine — the curve steepening (+45 bps 10Y-2Y) is the only macro story that matters. **The triangle: DXY < 100 helps commodities and multinationals. 10Y > 4.6% hurts duration and rate-sensitive cyclicals. The intersection is the stock-picker's sweet spot: global industrials with DXY-translated earnings (APD, DOW) and commodity-exposed names with pricing power (NUE, FCX, NEM).**
+Friday's double miss (retail -0.6%, UMich 51.0) transmitted through four sectors in one session. Discretionary closed red, staples closed green — the widest XLP-over-XLY weekly split since spring (+1.14% vs -1.38%), with GIS +6.3% the trade-down poster child. In real estate, SPG fell -1.5% (mall cash flows are only as good as the shopper) while grocery-anchored UE and Sun-Belt CTO held. In communication services, the ad-cycle yellow flag went up: CARG faded -4.0% (auto ads are the most cyclical vertical) as desks gamed out H2 budget cuts — one print is a warning, two is a trend. And the triangle's apex is **Walmart Thursday 7 AM ET**: a trade-down confirmation extends staples leadership, keeps off-price (TJX/ROST) bid, and saves the ad tape; a margin miss at 40.6x unwinds the expensive defensives AND confirms the crack — which ironically pulls the 10Y down and helps the AI landlords. **Every path runs through Bentonville.**
 
-### Wire #4: The Consumer Resilience Paradox (Jobs → Retail Sales → XLY/XLP Bifurcation)
+### Wire #4: The Rate Sensitivity Chain — One Curve, Winners and Losers (10Y–3M +100 bps → XLF ↑ vs XLU/XLRE/MO carry math)
 
-NFP at -23K says the consumer's income source is cracking. Yet retail sales have risen five straight months. UMich sentiment is 55.2. Housing starts surged +19%. The macro data says the consumer is resilient, but the labor market says the consumer is fragile. This paradox transmits into the sector tape as a bifurcation: XLY (+3.25%) rallied on housing recovery (HD +6.9%, LOW +7.5%) and travel boom (BKNG +10.5%, DIS +9.1%), while XLP (+0.08%) barely budged despite yield-hunter rotation into GIS/CPB. The real read is in the August earnings gauntlet: HD (Aug 18), TGT (Aug 19), and WMT (Aug 20) will tell us whether the consumer is spending from strength or drawing down savings. **The wire: if WMT beats, the consumer is fine and the NFP scare is overblown. If WMT misses, the XLY rally is a head fake and XLP's defensive bid returns.**
+The 10Y–3M spread hit **+100 bps — the widest read of the year** — and the curve sorted the market into two columns. Winners: XLF's highest weekly close ever, with the deposit-beta math flowing furthest into the smallest balance sheets (USB/PNC 52W highs; SMIDs BANR +4.7%, HOPE +3.3%); Citi +3.2% completing its catch-up. Losers: every negative-carry bond proxy — XLU's 2.70% yield sits -200 bps to the Treasury, XLRE's 3.12% sits -158 bps, and MO fell -3.9% in a week when staples LED, because its 6.52% yield couldn't outrun a 4.70% discount rate. The 2Y dispute (stale 4.00% proxy vs. 4.17% external) matters precisely here: deposit relief arrives slower at 4.17%, which tempers — but does not reverse — the steepening trade. **One number, two columns: long the curve's beneficiaries (banks), short the curve's victims (pure bond proxies), and let the AI-power growers (VST/CEG/EQIX) opt out of the rate debate entirely.**
 
-### Wire #5: The Rate Sensitivity Chain (10Y → XLF Steepening vs XLU/XLRE Destruction)
+### Wire #5: The Defensive-Inflation Barbell (XLE + XLU + telecom leading at a VIX 6-month low)
 
-The 10Y at 4.66% runs five directions at once. It makes XLU (-196 bps carry) and XLRE (-154 bps) negative-carry assets that must earn their keep through growth — which is why CEG rallied on earnings while regulated utilities sagged. It steepens the curve (+45 bps 10Y-2Y), which is XLF's NIM oxygen — the only sector the rate helps directly. It compresses XLK/SMH multiples when it rises, but this week's -9 bps drop gave growth a reprieve. It raises the discount rate on every REIT refinancing — the $1.5T wall was underwritten at 3-4%; 4.75%+ is where accidents happen. And it is oil's transmission channel: every dollar on crude is a basis point on hike odds. **One number, five sectors, one trade: long XLF as the rate beneficiary, long commodities as the dollar-weakness beneficiary, short duration everywhere else until the 10Y breaks below 4.5%.**
-
-### Wire #6: The Earnings Narrative Grid (SHOP/ABNB/DIS vs DDOG/UBER)
-
-The Aug 4–7 earnings wave proved the Super Bowl lesson with even more violence: **EPS deltas do not drive stock moves — guidance and narrative do.** SHOP beat +5% and rallied +19.6% because GMV growth and take rate expansion told a story of operating inflection. ABNB beat +9.6% and rallied +16.8% because travel demand is resilient and the narrative is intact. DIS beat +11.4% and rallied +6.6% because parks, streaming profitability, and ESPN stability told a coherent turnaround story. But DDOG beat +12.1% and crashed -17.4% because cloud observability spend is slowing and the guidance narrative collapsed. UBER beat +41% and dropped -2.1% because a massive EPS beat was irrelevant without narrative acceleration. This grid transmits across sectors: when enterprise software (DDOG) breaks, it hurts XLK's SaaS names. When e-commerce (SHOP) works, it lifts XLY's retail appetite. When travel (ABNB, DIS) works, it lifts XLY's leisure sleeve. **The wire: own the names with coherent forward narratives; avoid the names where the story is questioned — regardless of the EPS beat.**
+The week's leadership mix — energy (+7.27% vs SPY), utilities (+1.21%), communication services/telecom (+1.13%, carried by T +4.6%/VZ +3.0%) — is a **defensive-inflation barbell**, not a growth confirmation. It says: smart money is buying the inflation hedge (oil equities) AND the yield hedge (covered dividends, regulated utilities) simultaneously, while gold holds $4,380 as the debasement leg and BTC's -2.9% divergence whispers that speculative risk appetite is thinning. The canary's correlation matrix confirms the regime: XLE pinned at -0.425 (the lone true hedge), defensives converged toward zero (ignoring the market rather than fighting it), and XLF firming toward 0.65 (the "value leads" narrative growing teeth). **When the leaders are oil, utilities, and phone companies at a 6-month-low VIX, the tape is paying for insurance while prices are still near highs. That is either the top of the cycle learning to hedge itself — or the setup for a violent re-pricing if Jackson Hole hands the hawks a microphone.**
 
 ---
 
 ## 7) SECTOR CONTRADICTIONS — Where the Wikis Disagree
 
-### Contradiction #1: The Labor Market — ISM Manufacturing vs. NFP ⚠️
+### Contradiction #1: Retail Sales — Financials vs. Reality ⚠️ (the week's loudest)
 
-**Industrials (XLI) says:** ISM Manufacturing PMI printed **55.6%** — the strongest reading since May 2022. New Orders at 56.7. Employment returned to expansion at 52.8 for the first time since January 2025. The industrial economy is not just expanding — it is accelerating. CAT reported a record quarter ($20.54B revenue, +24% YoY). Boeing got FAA MAX-7 certification. The cyclical renaissance is here.
+**Financials (XLF) says:** "strong retail sales Friday tempered the September cut repricing" — cited twice, in the macro read and the narrative, as evidence the consumer is "still spending."
 
-**The Economic Calendar says:** NFP was **-23K** — the first negative payroll print since 2020, with -103K of revisions. The labor market has cracked. Private payrolls rose only 30K. Leisure and hospitality shed 40K.
+**Everyone else — and the data — say:** July retail sales printed **-0.6% MoM** (Census, Aug 14; consumer-discretionary, staples, materials, real-estate, comm-services, canary, and tech wikis all concur). The financials wiki's macro ledger is built on a sign error: the consumer didn't spend, it cracked. This matters because it flatters the XLF breakout's "goldilocks" framing. Resolution: facts stand — retail was NEGATIVE; the XLF breakout rests on the curve and capital math, not the consumer. **Flagged in a GitHub issue.**
 
-These are mutually exclusive descriptions of the same economy. Manufacturing says "expansion accelerating." Labor says "recession warning." Typically, manufacturing leads the labor market down. This time, the labor market may be leading manufacturing. The resolution: watch the August ISM employment sub-index and the August NFP (Sep 4). If manufacturing employment stays above 50 while payrolls stay negative, the economy is in an unprecedented divergence. If ISM employment drops below 50, manufacturing confirms the labor market's warning.
+### Contradiction #2: The 2-Year Yield — Three Numbers for One Rate
 
-### Contradiction #2: The Labor Market — Claims vs. NFP
+**facts.json / canary (canonical):** 2Y = 4.00%, stale proxy dated 2026-07-15; curve +66 bps (stale). **Financials:** fresh external read **4.17%** → curve ~+52 bps. **Utilities:** macro table shows 2Y **~4.50%** — which would imply a curve of only ~+20 bps, nearly flat. Three wikis, three curves. Facts.json wins on protocol (4.00%, marked stale), the financials desk is directionally confirmed by FRED (DGS2 4.15% Aug 13), and utilities' 4.50% is simply wrong. **External refresh before Monday is mandatory — the curve arithmetic every rate thesis leans on is currently unverifiable.**
 
-**The Economic Calendar says:** Initial jobless claims at **199K** (4-week MA at 198,750, a cycle low) — the labor market is "bulletproof."
+### Contradiction #3: DXY — Healthcare vs. The Truth Layer
 
-**The same Economic Calendar notes:** July NFP was **-23K** with -103K revisions — the labor market is "fragile."
+**Healthcare (XLV) says:** DXY "~101–102 (stable)" — neutral for multinationals. **facts.json and eleven other wikis say:** DXY **99.60** (stale composite; sector desks printed 99.64–99.67 Friday) — third straight week below 100/101, an active multinational tailwind and the reason Ophelia's commodity embargo stays lifted. Healthcare's FX read is two points high and mis-classifies the regime. Facts.json wins; the disagreement is logged.
 
-These are mutually exclusive descriptions of the same economy. Claims are a leading indicator; NFP is a lagging one. If claims are right, the Fed has no cover to cut and may hike. If NFP is right, the Fed is one bad print away from panic. The Council's working hypothesis: employers have stopped hiring (NFP) but are not yet firing (claims). This is the "freeze before the fire" phase. One more sub-50K NFP confirms the labor leg of the regime call.
+### Contradiction #4: Semiconductors vs. The Truth Layer (staleness, not opinion)
 
-### Contradiction #3: Utilities vs. The 10Y Yield
+**Semiconductors (SMH, STALE 2026-08-08) says:** SMH $582.70 (+7.8%), NVDA $223.96, MU $877.57, AVGO $427.76, "NFP shock" as the week's driver. **facts.json says:** SMH **$587.82 (+0.88%)**. **Fresh tech wiki / earnings-surveillance say:** NVDA **$225.16**, MU **$971.66** (a $94 gap on the same stock), AVGO **$392.99** (-8.1% on the VMware exploit the stale wiki never saw). The stale wiki's entire narrative — the NFP-driven +7.8% reversal — describes LAST week. Its 50D/support levels are unusable Monday.
 
-**Macro theory says:** When the 10Y yield falls, bond proxies (utilities, REITs) rally.
+### Contradiction #5: NVDA's Revenue Bar — $92B vs. $93.5B
 
-**Utilities (XLU) says:** The 10Y fell -8.5 bps to 4.66%, and XLU fell -1.67%. The sector closed below both its 50D and 200D MAs. CEG rallied +2.72% on earnings, but VST fell -5.13% and EIX cratered -6.47% on wildfire liability.
+**Earnings-surveillance:** NVDA consensus revenue ~$92.0B, EPS $2.08. **Tech wiki:** consensus ~$93.5B — *above* management's $91B ±2% guide. A $1.5B difference in the bar changes the beat/miss calculus on the quarter's most important print. Both agree on the operative point — the Street is parked at or above the guided band, the exact setup that burned CSCO and AMAT — but Monday's engine should carry ONE number. Recommend adopting the tech wiki's $93.5B (fresher, sourced to Street aggregation) and logging the discrepancy.
 
-The correlation broke this week. Either the relationship is temporarily broken by earnings-season dispersion, or the market is pricing a deeper macro concern (recession fear, credit stress) that overwhelms the yield tailwind. If yields keep falling and utilities keep falling, the bond-proxy playbook changes.
+### Contradiction #6: Oil's Macro Sign — Hawkish Input or Growth-Scare Relief?
 
-### Contradiction #4: The Consumer — Macro Data vs. Discretionary Tape
-
-**Macro data says:** Retail sales +0.2% (fifth straight gain), UMich sentiment 55.2, housing starts +19%, claims 199K. The consumer is resilient.
-
-**Consumer Discretionary (XLY) says:** The sector rallied +3.25% this week, but SBUX collapsed -7.5% on a "beat" because same-store sales missed. NKE is flat at $41.72, -48% from its 52W high. TSLA is still a cult stock at 285x P/E.
-
-The resolution: the consumer is fine at the macro level, but stock-specific risk (SBUX's 77x P/E, NKE's China/DTC struggles) is overwhelming macro stabilization. For the real consumer read, watch WMT on Aug 20 — not XLY's headline.
-
-### Contradiction #5: The AI Capex Divergence — Resolved For Now
-
-**Technology (XLK) says:** The AI supercycle is accelerating. MSFT guided FY27 capex to $255-260B. Azure hit $100B annualized, growing 43%. AMZN AWS reaccelerated to 37%.
-
-**Semiconductors (SMH) says:** The sector just had its best week in months (+7.8%) as the NFP shock repriced Fed expectations dovishly. NVDA +11.6%, AVGO +9.9%, QCOM +13.7%. Alphabet's +82% Cloud growth and +26% QoQ capex reaffirmed demand.
-
-This contradiction — which was severe last week (SMH -19.5% from highs while XLK touted AI spend) — has partially resolved. Both sectors rallied this week. But the resolution is macro-driven (lower rates), not fundamental. If NVIDIA's Aug 26 print disappoints, the divergence returns.
+**Energy + materials + financials + canary read oil as a HAWKISH input:** $82 crude re-arms the Fed's dissenters, flattens the curve the wrong way, threatens September. **Real estate reads the same tape as ultimately DOVISH for duration:** "a growth scare brings rate relief, and rate relief is this sector's oxygen." Both can be true across different horizons (oil first, growth second) — but they imply opposite trades on the same asset (long-duration REITs). The Council's synthesis: **sequence matters — oil re-prices inflation first (hawkish 10Y pressure), the consumer crack re-prices growth second (dovish pressure). This week oil won the close (10Y +3.6 bps). Jackson Hole decides which force owns September.**
 
 ---
 
@@ -280,44 +243,40 @@ This contradiction — which was severe last week (SMH -19.5% from highs while X
 
 ### What This Week's Data Did to the Council's Posture
 
-The calendar delivered a **tale of two labor markets** — and a manufacturing surprise that complicated everything.
+The calendar delivered a **three-act play where the hero and the villain swapped costumes.**
 
-**Act I — The Manufacturing Surprise:** Monday opened with ISM Manufacturing at **55.6%** — a blowout beat versus 54.0% consensus. New Orders held at 56.7. Employment returned to expansion at 52.8. Prices Paid eased to 71.1. Cyclical stocks caught a bid. The narrative: "The economy is not in recession. Manufacturing is re-accelerating."
+**Act I — The Oil Reversal (Mon–Fri):** WTI's +5.4% rip to $82.40 unwound last week's entire disinflation gift. Monday's +5.1% spike re-priced the Hormuz premium before lunch; Thursday's **17.4M-barrel EIA build — the largest since January 2023** — was the fundamental counter-argument the market ignored by Friday's tanker-attack recovery. The 10Y probed ~4.74% Tuesday: the bond market pricing energy-led inflation.
 
-**Act II — The Labor Market Cracks:** Wednesday's ADP at **+44K** versus +75K consensus was the warning shot. The ISM Services miss (54.1% vs 54.5%) added to the soft-patch narrative.
+**Act II — The Disinflation Confirmation (Wed–Thu):** July CPI printed **headline +0.1% MoM / 3.4% YoY, core 2.5% YoY — the coolest core since the 2026 energy shock** — and PPI came in flat. September hike odds ground down from ~54% toward ~30–35%. SPY printed a record Thursday (S&P 7,798.99; XLRE reclaimed its 50D; XLK hit its weekly high). Claims ticked up to 209K — a twitch, not a break.
 
-**Act III — The NFP Earthquake:** Friday's July jobs report was one of the most shocking prints in years. **-23K nonfarm payrolls** versus +85K consensus. Prior two months revised down by **-103K**. The market's reaction? SPY rallied 1.7%. The 10Y dropped 8 bps to 4.66%. September hike odds collapsed from ~55% to ~44%. The Fed's three dissenters were isolated.
+**Act III — The Consumer Shock (Fri):** July retail sales **-0.6% MoM** and UMich August prelim **51.0 vs 55 expected** (-7.6% MoM) landed at 8:30/10:00 AM and split the tape along defensive lines: XLP green, XLY red, SPG hit, CARG hit, yields faded off the morning lows only to close at 4.696%. The slowdown story now has a labor leg (-23K NFP) and a consumption leg.
 
-**The cross-asset picture shifted materially.** DXY at 99.60 (second week below 100). WTI crude collapsed to ~$78 (-7.7%). Gold surged +7.2% to $4,340.70. VIX collapsed to 14.90. HYG rose +0.65%. The canary is doing cartwheels.
-
-**But the Council is not celebrating.** A -23K NFP with falling participation is not "soft landing." It is "hard landing warning." The labor market is deteriorating at the hiring end, not the firing end — initial claims remain low because employers are not laying off, but they are not hiring either. This is the most dangerous phase of a labor cycle.
-
-**Net posture change:** Ophelia holds cash at ~30% — reduced slightly on the DXY relief but not deploying aggressively. The NFP shock created a dovish window, but the "freeze before fire" labor dynamic is dangerous. Cecil is selectively adding to ALB, NEM, and DIS on the fundamental evidence. Marky is cautiously adding SMH and XLK exposure but will not chase — the 50D MAs are the confirmation levels. The data validated the growth recovery (lower rates = higher multiples) but also raised recession risk (cracking labor = lower earnings). The tape is in a tug-of-war: disinflation (bullish) vs. labor weakening (bearish) vs. manufacturing acceleration (bullish).
+**Net posture change:** Ophelia **holds 25% cash** — conviction weakened, stance unchanged; adds a small XLE inflation-hedge sleeve and prefers XLF as the cyclical add. Marky holds last week's tech adds, refuses to chase at a 6-month-low VIX, and keeps re-hedge triggers armed (VIX 16.50 / 10Y 4.75% / WTI $85 — two of three trips = cut beta). Cecil bought the curve (regionals, Citi catch-up) and the cheap staples, and declined to chase refiners above their targets. **The meta-impact: the economic-calendar wiki itself went stale today**, so the Council's regime-flag ledger (DXY < 100, NFP negative, consumer shock) is being carried by the sector desks and Canary Watch until it refreshes — noted for the Captains.
 
 ### Next Week's Gauntlet
 
 | Date | Event | Council Read |
 |---|---|---|
-| Tue Aug 12, 8:30 AM | **CPI (July)** | THE binary event. Consensus: headline +0.1% MoM, core +0.2% MoM. Core >+0.3% = hawkish re-acceleration, 10Y back to 4.80%, growth rally crushed. Core <+0.1% = dovish confirmation, "no hike, maybe cut" narrative cemented. Pantheon warns core goods could rise 0.18% on Apple price hikes. |
-| Thu Aug 13, 8:30 AM | **PPI (July)** | Consensus +0.2% MoM. Pipeline inflation signal. If PPI runs hot while CPI cools, the story is pass-through lag — not clean disinflation. |
-| Thu Aug 13, 8:30 AM | **Initial Jobless Claims** | >240K = NFP <150K flag confirmed, defensive rotation accelerates. The 4-week MA at 198,750 is the line to watch. |
-| Fri Aug 14, 8:30 AM | **Retail Sales (July)** | Consensus +0.2% MoM. The consumer is the final domino. Miss + negative NFP = recession narrative hardens. Beat = "soft landing with cracked labor" gets stranger. |
-| Fri Aug 14, 10:00 AM | **UMich Sentiment Prelim (August)** | Consensus 55.0. The 1-year inflation expectations sub-index is the Fed's secret weapon. >4.0% = Committee gets nervous regardless of headline CPI. |
+| Mon Aug 17 | CMS MDPNP comments due; iberdomide PDUFA (BMY) | Medicare negotiation becomes standing law; pharma shrugs — priced as climate, not weather |
+| Tue Aug 18, pre-mkt | **HD Q2 (cons $4.73)** + KEYS ($2.48) | Housing-recovery verdict; KEYS is the AI-test-and-measurement read |
+| Wed Aug 19 | **FOMC July minutes** + LOW ($4.23) / TGT ($2.30, revised +13.3%) / TJX ($1.19) / EL ($0.32); **Section 338 tariffs effective**; ~REGN garetosmab | The densest consumer-policy cluster of the summer: the 3 dissents explained + three retail prints + 50% Canada duties in one session |
+| Thu Aug 20, 7 AM | **WMT Q2 (cons ~$0.74)** + DE ($4.67) + ROST ($1.93) / AAP ($0.80) | THE consumer tie-breaker; DE = rural economy. A WMT miss re-prices the whole defensive complex |
+| Fri Aug 21 | **Jackson Hole — Warsh's first address as Chair** + BJ ($1.16) | The two-sided gate. Dovish cement → 2Y down from 4.17% → breakouts extend. Oil-citing hawkish tilt → $58.00 XLF and 4.75% 10Y retested within days |
 
 **Regime triggers the Council watches:**
 
 | Trigger | Threshold | If it fires |
 |---|---|---|
-| CPI Core MoM | > +0.3% | Hawks validated; 10Y tests 4.80%; growth stocks selloff; Council raises cash |
-| CPI Core MoM | < +0.1% | Dovish confirmation; SPY rallies to new highs; Council deploys cash into XLK/SMH |
-| Retail Sales | < -0.1% | Consumer recession signal; defensive rotation; XLP/XLU bid returns |
-| Claims 4W MA | > 220K | Labor "freeze" becoming "fire"; recession signal hardens |
-| 10Y | > 4.75% / 5.00% | 52W high break / all-asset crisis line — refi wall watch |
-| VIX | > 16.50 / > 22 | Elevated regime re-ignites / washout — Council buys panic at 22 |
-| DXY | > 101 | Ophelia's commodity embargo returns; EM and commodities feel it |
-| WTI | > $82 sustained | Oil rebound reverses relief trade; inflation scare returns |
+| Jackson Hole tone | Oil/inflation cited as "elevated" | Hawks re-armed; hike odds re-spike; XLF breakout stress test |
+| WMT EPS/comps | Miss on margin | Trade-down narrative inverts; expensive defensives (40.6x/48.3x) unwind; XLP to 50D $84.57 |
+| Retail gauntlet | HD/LOW/TGT beats vs. misses | Tuesday–Wednesday decide if Friday's consumer shock was noise or trend |
+| 10Y | > 4.75% / 5.00% | Year's ceiling break / crisis line — refi wall watch |
+| WTI | > $85 / $90 | Inflation trade re-ignites / chemicals margins flip negative |
+| VIX | > 16.50 | First crack from 6-month-low complacency |
+| USD/JPY | 160 | BoJ intervention zone |
+| Claims 4W MA | > 220K | Labor "freeze" becoming "fire" |
 
-**Cash implications:** Hold elevated cash at ~30% baseline through CPI week. The NFP shock created a dovish window that could extend if CPI cooperates, but do not go all-in. The labor market is cracking, and a true recession would make the current rally a head fake. The playbook: add exposure on a CPI cool print (core < +0.2%), but keep defensive hedges (utilities, staples, Treasuries) in case CPI runs hot. The panic-threshold playbook (buy VIX > 22 washouts) remains armed, but VIX at 14.90 says the market is pricing calm — which means any surprise will move the tape violently. The week after CPI is when you spend the powder. Until then, stay nimble.
+**Cash implications:** Hold ~25% cash through the WMT/Jackson Hole double-gate; deploy only on confirmed triggers (XLF $58.00 hold, XLE $63.46 close, XLP post-WMT strength). The week AFTER is the true spend-the-powder window: **NVDA (Aug 26) — the Final Boss, Street parked above the guide — then PCE (Aug 28), China PMIs (Aug 31), and the August NFP (Sep 4)** that either confirms or kills the labor-crack narrative. The panic playbook (buy VIX > 22 washouts) stays armed; at 14.25, the more likely trade is selling overpriced calm.
 
 ---
 
@@ -325,27 +284,29 @@ The calendar delivered a **tale of two labor markets** — and a manufacturing s
 
 ### For Monday's 9:17 AM Session
 
-1. **Each agent reads this synthesis before the session.** The ISM-vs-NFP contradiction and labor market "freeze before fire" dynamic must be acknowledged before any pick is made.
-2. **The Consensus Synthesis is the starting point.** Agreement on the NFP regime event, the 10Y as master variable, the growth recoupling, and the CPI binary event sets the week's risk budget.
-3. **The disagreements are the debate.** Cecil wants selective planting in ALB/NEM/DIS/VZ. Marky wants confirmation above 50D MAs before chasing. Ophelia holds 30% cash through CPI. The Council weights and converges.
-4. **The Monday Watchlist is the action plan.** Triggers are hit. Stops are honored. No size into the Aug 12 CPI print.
+1. **Each agent reads this synthesis before the session.** The retail-sales contradiction (financials vs. facts), the 2Y three-way dispute, and the TWO stale wikis (semiconductors, economic-calendar) must be acknowledged before any pick is made.
+2. **The Consensus Synthesis is the starting point.** Agreement on the oil-reversal inflation tail, the consumer crack as top watch item, core disinflation, the XLF breakout's legitimacy, and VIX-complacency risk sets the week's risk budget.
+3. **The disagreements are the debate.** Cecil bought the curve and cheap staples; Marky holds tech adds with tight stops and demands volume confirmation on energy; Ophelia holds 25% cash through WMT and Jackson Hole. The Council weights and converges.
+4. **The Monday Watchlist is the action plan.** Triggers are hit. Stops are honored. No size into Wednesday's FOMC minutes, Thursday's WMT, or Friday's Warsh.
 
 ### For the Research Crew
 
-1. **Verify the ISM-vs-NFP contradiction before Monday.** Manufacturing at 55.6% with employment at 52.8 suggests factories are hiring. NFP at -23K suggests the economy is not. One of these is wrong — or the divergence is real and unprecedented.
-2. **Refresh credit spread data before Monday.** HYG recovered +0.65% but the HY-IG spread needs an external feed refresh. If it has widened past 250 bps, the Risk Register flips to yellow.
-3. **Track the sector correlation matrix explicitly** — the recoupling (XLK 0.814, SMH 0.766) is the biggest structural shift in weeks. Watch if it holds through CPI.
-4. **The CPI whisper framework** needs refreshing before Aug 12. The June core CPI at 0.0% MoM was a massive cool miss. July could revert. Apple hardware price hikes (+15-30% from June 25) are a known goods-price distortion.
+1. **Re-run the stale desks before Monday:** semiconductors.md (3:09 PM slot) and economic-calendar.md (11:49 AM slot) never fired today — backfill both. The SMH tape and the regime-flag ledger are currently a week old.
+2. **Refresh the external feeds before Monday — now 31 days stale:** credit spreads (HY–IG ~220 vs. the 250 trigger), market breadth (% above 50D/200D), the 2Y (4.00% proxy vs. 4.17% external vs. utilities' erroneous 4.50%), DXY composite, and whisper/implied moves into NVDA week.
+3. **Fix the financials wiki's retail-sales sign error** ("strong" → -0.6% MoM) and the healthcare wiki's DXY print (~101–102 → 99.60).
+4. **Adopt one NVDA revenue bar** ($92.0B vs $93.5B) across tech.md and earnings-surveillance.md before Aug 26.
 
 ---
 
 ## SOURCES & REFERENCES
 
-- All 15 wikis: wiki/tech.md, wiki/energy.md, wiki/financials.md, wiki/healthcare.md, wiki/consumer-discretionary.md, wiki/consumer-staples.md, wiki/industrials.md, wiki/materials.md, wiki/utilities.md, wiki/real-estate.md, wiki/communication-services.md, wiki/semiconductors.md, wiki/canary-watch.md, wiki/earnings-surveillance.md, wiki/economic-calendar.md
-- Fresh (2026-08-08): All 15 wikis updated through Saturday Research Crew cycle
-- Yahoo Finance: prices and consensus as of Aug 7, 2026 close; index levels refreshed Aug 8
-- Federal Reserve: July FOMC statement (hold at 3.50-3.75%; 3 dissenters)
-- U.S. Bureau of Labor Statistics: July NFP (-23K), Unemployment Rate (4.1%), Hourly Earnings (+0.1% MoM), Jobless Claims (199K)
-- Institute for Supply Management: July ISM Manufacturing (55.6%), ISM Services (54.1%)
-- CBOE: VIX official close (14.90)
-- FRED: 10Y Treasury yield (4.660%)
+- All 15 wikis: wiki/tech.md, wiki/energy.md, wiki/financials.md, wiki/healthcare.md, wiki/consumer-discretionary.md, wiki/consumer-staples.md, wiki/industrials.md, wiki/materials.md, wiki/utilities.md, wiki/real-estate.md, wiki/communication-services.md, wiki/semiconductors.md (STALE 8/8), wiki/canary-watch.md, wiki/earnings-surveillance.md, wiki/economic-calendar.md (STALE 8/8)
+- Truth Layer: macro/facts.json (generated 2026-08-15, Canary Watch same-fetch)
+- Fresh (2026-08-15): 13 of 15 wikis updated through Saturday Research Crew cycle
+- Yahoo Finance: prices and consensus as of Aug 14, 2026 close
+- Federal Reserve: July FOMC statement (hold at 3.50–3.75%; 3 dissenters); FOMC minutes due Aug 19; Jackson Hole Aug 21 (Warsh's first as Chair)
+- U.S. Bureau of Labor Statistics: July CPI (+0.1% MoM / 3.4% YoY; core +0.2% / 2.5%); July PPI (flat MoM); Jobless Claims (209K)
+- U.S. Census Bureau: July Advance Retail Sales (-0.6% MoM, $763.6B)
+- University of Michigan: August prelim Consumer Sentiment (51.0, from 55.2)
+- U.S. Energy Information Administration: weekly crude inventories (+17.4M bbl, largest build since Jan 2023)
+- CBOE / Yahoo: VIX official close (14.25, six-month closing low)
