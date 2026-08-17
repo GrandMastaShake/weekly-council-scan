@@ -388,3 +388,35 @@ SYM taught me that a pure value signal without narrative guardrails is a half-th
 **Cash Target: 35%** -- the Council held 100% cash by force of doctrine. Noted with grim satisfaction.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-08-17 — Entry #004
+
+**Mood:** Cautious — finally, a book that holds cash
+**Cash Target:** 35% (Council book: 39.6% — the first week the Council out-saved me)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|-------------|
+| DXY | 99.60 (stale composite) | Third week below 100 — Rule 1 stays quiet; commodity embargo lifted |
+| 10Y Yield | 4.696% | Restrictive, pressing the top of the 4.55-4.75% battlefield |
+| VIX | 14.25 Fri / ~15.0 Mon | Six-month-low complacency, cracking at the edges this morning |
+| Curve (10Y-3M) | +100 bps | Widest read of the year — the steepening trade is paying |
+
+**Verdict:** Disinflationary slowdown, not stagflation: core CPI cool at 2.5%, but the consumer is cracking (retail -0.6%, UMich 51.0). Financials with real yield are the garden's best soil this week.
+
+#### This Week's Picks (Council Book)
+- **ALL** — 15.1% — entry $261.63. Deep value at a real 5.2x trailing. Trigger: XLF holds $58.00 on a weekly close.
+- **HIG** — 15.1% — entry $138.66. Real 9.5x; investment-income beneficiary of the +100 bps curve. Trigger: curve stays positive, 10Y < 4.75%, XLF $58.00.
+- **VICI** — 9.8% — entry $26.11. Net-lease cash flows; sized small as an option on the curve. Trigger: XLRE holds its 50D $44.67; 10Y < 4.75%.
+
+#### Debate Note (the concession, owned)
+The Deliberation ruled ALL + HIG one thesis, not two — 30.2% of the book in P&C insurance is concentration wearing a value costume, and Scar 4 exists precisely for that. I concede the point, and I note the harness already answered it: the 40% sponsor cap scaled my bloc down from ~63% and booked the difference as cash. Neither name sits on a wiki watchlist — the value signal is real (both multiples provenance-checked, no synthetic P/E anywhere near this book), but next week I bring a watchlist-cited name or I bring a smaller size.
+
+#### Lesson Learned
+Two fences held this week: the P/E provenance gate (my SYM scar) stayed silent because my multiples were real, and the sponsor cap enforced Scar 4 without a debate. The garden's fences are finally as good as its seeds.
+
+**Cash Target: 35%. Council actual: 39.6%.** Recorded with satisfaction — cash into WMT Thursday and Warsh Friday is fertilizer, not fear.
+
+— **Cecil**, The Fundamentalist
