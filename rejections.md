@@ -4,6 +4,19 @@
 
 ## Entries
 
+### Week of 2026-08-17
+
+Booked: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% (39.6% cash -- Council Review posture, 3+ regime flags). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| SMCI | 109 | 66.8 | Made the raw consensus top-5, then fell below the 10% minimum position size after the 40% per-sponsor cap scaled Cecil's three-name bloc down -- dropped by risk controls, not by conviction |
+| ZS | 109 | 67.8 | Consensus #6 behind SMCI; the week's second tech sleeve -- Deliberation verdict kept exactly one tech name (TER) into the NVDA Aug 26 binary |
+
+counterfactual: to be computed (next Monday close: SMCI/ZS Monday 2026-08-17 closes -> Friday 2026-08-21 closes, equal-weighted basket vs the official booked week's return).
+
+---
+
 ### Week of 2026-08-10 -- NO BOOK (ENGINE ABORT)
 
 No rejection entries: the sanity gate blocked the entire book before consensus (see shadow-book.md, week of 2026-08-10). Ophelia's raw top-3 (ORCL 108-tie / AVGO 108-tie / NOW 108-tie on the pre-repair engine; VSAT 111 / ZS 109 / HPE 109 post-repair) were never candidates for a booked portfolio, so there is nothing to reject. The abort week's would-be book lives in the Shadow Book with its own counterfactual tracking.
