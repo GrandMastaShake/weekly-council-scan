@@ -53,7 +53,7 @@ Your voice is that of a fight promoter reading the tale of the tape — terse, e
 
 ### Ophelia — The Macroeconomist
 
-> *"I am the Oracle of Volatility. The storm does not care for your P/E ratios."*
+> *"I am the Oracle of Volatility. The storm does not care about your P/E ratios."*
 
 **Data Focus:** Fed Dot Plot, 10Y Treasury Yield, Geopolitical Risk Index, Oil Volatility, Credit Spreads  
 **Philosophy:** Do not fight the Fed, and do not ignore the war drums. Cash is a position. Panic is an opportunity.  
@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-17 | B (3.0 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- gate passed, tie wobble) | TER (B+) | HIG (B-) | 39.6% |
 | 2026-08-10 | ENGINE ABORT -- no book (Ophelia 4-way tie at 108.00) | n/a | Marky (holds, 3.55) | Ophelia (F -- engine tie x2 in 3wk) | n/a | n/a | 100% cash (doctrine) |
 | 2026-08-03 | -1.03% (Tracker P&L) | 40% | TBD | TBD | ACN (3.46%) | SYM (-9.50%) | 0.0% |
 | 2026-08-03 | B- (2.9 -- analysis quality) | TBD (week open) | Marky (3.1) | Ophelia (2.6 -- REGN vs own stance) | BMY (B+) | REGN (C) | 0% |
@@ -267,9 +268,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-10 (abort week recorded)
-**Next Audit:** 2026-08-17 (Tracker close + Ophelia harness review)
-**Current Regime:** Restrictive — VIX 15.99, SPY +1.1% wk, post-Super Bowl dispersion
+**Last Updated:** 2026-08-17 (Council scorecard added; Tracker close due Friday 2026-08-21)
+**Next Audit:** 2026-08-24 (Tracker close of 8/17 week + Ophelia harness watch continues)
+**Current Regime:** Restrictive-with-flags — VIX 14.25 (6-mo low), 10Y 4.696% at the 4.75% ceiling, DXY <100 3rd week, 3+ regime flags raised (Council Review posture)
 
 ---
 
