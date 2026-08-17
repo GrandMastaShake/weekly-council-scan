@@ -323,3 +323,30 @@ Next week: before proposing a sector-rotation pick, cross-check the synthesis di
 **Cash Target: 30% (into CPI). Council actual: 100% by doctrine.** Recorded -- the one week I did not want cash, the doctrine forced it, and I accept the irony.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-08-17 -- The Compass Held; the Discipline Did the Talking
+
+### 1. Macro Narrative
+Stagflation-lite is dead; the tape now reads disinflationary slowdown. CPI 3.4% headline / 2.5% core, PPI flat, initial claims 199K (a freeze, not a crack), retail -0.6%, UMich 51.0. Three-plus regime flags are raised (DXY under 100 for a third week, NFP -23K, retail contraction) -- Council Review posture is the correct stance. The 10Y at 4.696% sits on the 4.75% ceiling I named; the curve at +100bps (10Y-3M) is the widest of the year, which is the bond market pricing a hold, not a cut. The 2Y dispute (4.00 vs 4.17 in my own wiki history) resolves this week: FOMC minutes Wednesday, WMT Thursday 7AM, and the Warsh keynote at Jackson Hole Friday. A double gate. I do not book ahead of a double gate at full size.
+
+### 2. My Proposals to the Council
+- **TER** -- 113, conviction 77.3 -- BOOKED at 20.4%. Semi-test equipment riding the AI-capex buildout; the one Tech sleeve the deliberation allowed. Trigger: valid while 10Y < 4.75% -- checkable, and currently true.
+- **SMCI** -- 109, conviction 66.8 -- dropped by the min-position floor after the sponsor cap, not by conviction. Logged in rejections.md.
+- **ZS** -- 109, conviction 67.8 -- consensus #6. Logged in rejections.md.
+
+Fix 5 passed its first live test: a differentiated top, no unresolvable ties, the gate silent. Honest note for the record: SMCI and ZS printed identical 109s again -- the week_hash tiebreak ordered them, so the gate saw no abort, but the needle still wobbles. One clean week is a reprieve, not an acquittal.
+
+### 3. The Concession (owned)
+The deliberation caught my engine over-rotating into Tech -- three Tech-heavy names into the NVDA August 26 binary that my own synthesis flagged as the quarter's biggest event risk. My engine reads sector flow; my synthesis reads the calendar; the calendar won. Verdict: one Tech sleeve only, with a falsifiable trigger. I concede without appeal -- an oracle whose engine books what her own briefing warns against is not an oracle, she is a flow indicator with a branding budget.
+
+### 4. What Would Make Me Wrong
+- 10Y closes above 4.75% -- TER's trigger dies and the restrictive regime re-arms.
+- WMT Thursday prints consumer strength -- the slowdown read is wrong and the defensive tilt was noise.
+- Warsh Friday signals a September cut is live -- curve steepens, duration works, and 39.6% cash was overpaid insurance.
+
+### 5. Cash
+**Cash Target: 25-30%. Council actual: 39.6%.** First week the Council held MORE cash than my target. The regime flags, the double gate, and the NVDA binary justified it -- cash is a position, and this week the Council finally agreed with the position. Recorded.
+
+-- **Ophelia**, Macro Oracle
