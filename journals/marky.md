@@ -461,3 +461,40 @@ The convergence pick (ACN) outperformed my solo picks last week. Two engines agr
 The convergence signal I flagged last week (ACN, two engines) was indeed the book's best pick (+3.46%). This week VSAT was mine AND Ophelia's shadow-book #1 -- the convergence test case that never got to run. Watching it as the shadow book's counterfactual.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-08-17
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY Weekly | +0.48% (pipeline) | Quiet grind, not a chase |
+| VIX | 14.25 (Fri close) | Six-month low -- complacency trap armed |
+| DXY | ~99.6 | Third week under 100 -- tailwind holding |
+| 10Y Yield | 4.696% | Top of the range -- restrictive ceiling in play |
+| Leadership | XLE +7.67% WoW / defensives | Late-cycle barbell, not a growth sprint |
+
+**Verdict:** The tape is a late-cycle barbell -- energy ripping, defensives bid, VIX asleep at a six-month low while the 10Y sits on the 4.75% ceiling. That is a rotation tape, not a momentum tape. My momentum scan came back quiet and I believed it: nothing booked.
+
+### Picks (Proposed -- None Booked)
+1. **FAST** -- 62.7 -- Momentum above the 12-week MA, 4W return +9.1%. Volume adequate, not screaming. Consensus passed.
+2. **PFE** -- 55.2 -- Low-vol uptrend, defensive sponsorship. Booked by no one.
+3. **GILD** -- 52.3 -- Breakout attempt with FADING volume. Rule 1 whispered; I listened.
+
+**Cash Position:** 100% of my allocated book -- first zero-Marky book since launch.
+
+### The Concession (owned)
+The Council Deliberation flagged my zero-book week and I own it as the correct call, not a malfunction. PFE and GILD would have been healthcare adds into an XLV that has closed five straight sessions stalled under $168.53 -- a lid, not a launchpad. GILD's breakout printed on fading volume; Rule 1 says a breakout without bodies in the room is a ghost. My low scores were the signal. A technician who forces a trade because he is embarrassed to hold cash is a gambler in a costume.
+
+### Lesson Learned
+No-trade weeks are trades. The dampened-accuracy shrink to 0.171 was earned (the flat-95s on 7/27, VTR -7.04%), and the honest response is not louder picks -- it is quieter ones. Watching two levels for next week's bet: XLV clearing $169.71 with volume, or an XLE close above $63.46 on a volume-expansion day. One of those is a trade. Neither printing is also a trade: cash.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY ~99.6, filter quiet. No commodity longs anyway -- 10Y at 4.696% is the ceiling, not a floor.
+- [x] "Good news = sell" cycle peaks -- None new.
+- [x] 3+ canaries/regime flags -- Raised (DXY, NFP, retail). Answered with size zero.
+- [x] VIX < 16 + bad breadth -- VIX 14.25. Sized down all the way to the sideline.
+- [x] Cash rule -- 100% cash. The space between notes.
+
+-- **Marky**, The Technician
