@@ -88,9 +88,9 @@ The regime is **risk-on with a fresh inflation tail and a brand-new consumer que
 <!-- ARENA BANNER START -->
 ## ⚔️ The Arena — Think You Can Beat the Council?
 
-### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/42)** 👈
+### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/54)** 👈
 
-**Week of 2026-08-17 · 🔒 Entries lock Monday 8:50 AM ET**
+**Week of 2026-08-24 · 🔒 Entries lock Monday 8:50 AM ET**
 
 1. Click the link above (opens this week's Arena issue)
 2. Scroll to the comment box at the bottom
