@@ -40,9 +40,22 @@
 
 **Notes:** The shadow book would have run 100% allocated into a week with 3+ regime flags raised (NFP -23K broken threshold, DXY <100 second week, VIX 14.90 complacency) and the July CPI binary on Tuesday 8/12 -- the 10% cash floor (2026-08-09 doctrine) would have forced a trim of ACN or VRTX to ~90% had this book been eligible. Also note the abort killed a genuinely differentiated Cecil/Marky signal to punish an Ophelia engine defect; the repair, not the abort, is the fix. Second Ophelia tie in three weeks (11-way 2026-07-27, 4-way today) -- her harness revision is now on the table per scoreboard escalation rule 5.
 
-**Counterfactual P&L:** to be computed (next Monday close: VSAT/AXON/PPG/VRTX/ACN Monday 2026-08-10 closes -> Friday 2026-08-14 closes, weights above; vs official book = cash = 0.00%).
+**Counterfactual P&L (computed 2026-08-17, date-pinned Mon 2026-08-10 close -> Fri 2026-08-14 close):**
 
-**Resolution:** Abort honored. Repairs shipped local-only (scan_pipeline is not in the repo). Next Monday's gate is the test of Fix 5. Logged 2026-08-10.
+| Ticker | Mon Close | Fri Close | Return | Weight | Weighted |
+|---|---|---|---|---|---|
+| VSAT | $84.83 | $82.87 | -2.31% | 26.0% | -0.60% |
+| AXON | $596.33 | $612.83 | +2.77% | 25.0% | +0.69% |
+| PPG | $115.48 | $114.11 | -1.19% | 20.0% | -0.24% |
+| VRTX | $523.91 | $505.75 | -3.47% | 15.8% | -0.55% |
+| ACN | $178.25 | $176.89 | -0.76% | 13.2% | -0.10% |
+| **Shadow Total** | | | **-0.79%** | | |
+| **Official Total** | | | **+0.00% (cash)** | | |
+| **Delta** | | | **-0.79%** | | |
+
+The abort SAVED the book 79 bps: the repaired engine's would-be picks lost -0.79% on the week while the official book sat in cash (SPY +0.43% over the same Mon-close -> Fri-close window; shadow alpha vs SPY -1.22%). VRTX (-3.47%) and VSAT (-2.31%) did the damage; only AXON (+2.77%) worked. The gate's first abort is net-positive in hindsight -- process discipline 1, engine 0.
+
+**Resolution:** Abort honored. Repairs shipped local-only (scan_pipeline is not in the repo). Next Monday's gate is the test of Fix 5. Logged 2026-08-10; counterfactual computed 2026-08-17.
 
 **Links:** [Report](reports/2026-08-10-report.md)
 
@@ -133,8 +146,8 @@ The shadow book underperformed the official book by 30 bps. The tie-breaker arbi
 
 **Shadow (fixed engine, same 2026-07-20 data):**
 
-| Ticker | Weight | Sponsor |
-|---|---|---|
+| Ticker | Weight | Sponsor | Rationale |
+|---|---|---|---|
 | MPC | 30.0% | Ophelia |
 | TRV | 21.6% | Cecil |
 | ADBE | 21.6% | Marky |
