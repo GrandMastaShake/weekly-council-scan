@@ -2,11 +2,13 @@ week: '2026-08-10'
 lock: 2026-08-10 08:50 ET
 entry_date: '2026-08-10'
 exit_date: '2026-08-14'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 772.6
   entry_price_source: open
+  exit_price: 776.34
+  return_pct: 0.48
 players:
 - player: Umassalum
   valid: true
@@ -17,22 +19,34 @@ players:
     weight: 0.2
     entry_price: 28.69
     entry_price_source: open
+    exit_price: 27.81
+    return_pct: -3.07
   - ticker: VIK
     weight: 0.15
     entry_price: 104.89
     entry_price_source: open
+    exit_price: 97.99
+    return_pct: -6.58
   - ticker: NVDA
     weight: 0.25
-    entry_price: 223.45
+    entry_price: 223.4
     entry_price_source: open
+    exit_price: 225.16
+    return_pct: 0.79
   - ticker: LPG
     weight: 0.2
     entry_price: 45.35
     entry_price_source: open
+    exit_price: 47.37
+    return_pct: 4.45
   - ticker: FRO
     weight: 0.2
     entry_price: 39.85
     entry_price_source: open
+    exit_price: 41.21
+    return_pct: 3.41
+  weekly_return_pct: 0.17
+  alpha_vs_spy_pct: -0.31
 - player: GrandMastaShake
   valid: true
   total_weight: 1.0
@@ -42,19 +56,31 @@ players:
     weight: 0.25
     entry_price: 131.38
     entry_price_source: open
+    exit_price: 136.15
+    return_pct: 3.63
   - ticker: NEM
     weight: 0.15
     entry_price: 115.0
     entry_price_source: open
+    exit_price: 117.76
+    return_pct: 2.4
   - ticker: ETN
     weight: 0.15
     entry_price: 453.9
     entry_price_source: open
+    exit_price: 451.51
+    return_pct: -0.53
   - ticker: COIN
     weight: 0.15
-    entry_price: 153.49
+    entry_price: 153.35
     entry_price_source: open
+    exit_price: 148.47
+    return_pct: -3.18
   - ticker: SPCX
     weight: 0.3
-    entry_price: 134.965
+    entry_price: 134.95
     entry_price_source: open
+    exit_price: 140.0
+    return_pct: 3.74
+  weekly_return_pct: 1.83
+  alpha_vs_spy_pct: 1.35
