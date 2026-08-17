@@ -4,6 +4,23 @@
 
 ## Entries
 
+### Week of 2026-08-17
+
+Book: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% / cash 39.6%. Entry prices = Monday 2026-08-17 (tracker, portfolio/current.yaml).
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| TER @ $432.26 (Ophelia) | **SPEC** -- NVDA-chain semi-test name, catalyst-gated by the Aug 26 print | -8% = $397.68 | XLK loses its 50D $182.80, or NVDA < $210 pre-print, or 10Y closes > 4.75% | Named catalyst overrides the clock: NVDA reports Wed Aug 26 AMC -- reassess the morning after; no carry into September without a confirmed beat | Trim 1/3 at +15% ($497.10); remainder trails -15% from high-water mark |
+| ALL @ $261.63 (Cecil) | **CORE** -- mega-cap P&C insurer, liquid, broad institutional sponsorship | -5% = $248.55 | XLF weekly close < $58.00 (breakout fakeout) | 6 weeks (Sep 28) | Trim 1/3 at +15% ($300.87); remainder trails -15% from HWM |
+| HIG @ $138.66 (Cecil) | **CORE** -- large-cap P&C insurer, same steepening-curve thesis as ALL | -5% = $131.73 | 10Y-3M curve inverts, or 10Y >= 4.75%, or XLF weekly close < $58.00 | 6 weeks (Sep 28) | Trim 1/3 at +15% ($159.46); remainder trails -15% from HWM |
+| VICI @ $26.11 (Cecil) | **CORE** -- net-lease REIT, bond-proxy equity | -5% = $24.80 | XLRE loses its 50D $44.67, or 10Y closes > 4.75% | 6 weeks (Sep 28) | Trim 1/3 at +15% ($30.02); remainder trails -15% from HWM |
+
+outcome: to be computed (scored at the 2026-08-24 close against date-pinned daily bars -- stop touches, +15% trim reaches, and the would-have return vs the actual booked return).
+
+Scored cycles to date: 0 of 4 (first scoring cycle arrives 2026-08-24). The stop-calibration summary block appears after 4 scored cycles.
+
+---
+
 ### Week of 2026-08-10 -- NO BOOK (ENGINE ABORT)
 
 No exit templates: the sanity gate blocked the book (see shadow-book.md, week of 2026-08-10). The shadow book's five would-be picks (VSAT/AXON/PPG/VRTX/ACN) are tracked for counterfactual P&L in the Shadow Book only -- they were never booked, so no stops/trims attach. Scored cycles to date: 0 of 4; the stop-calibration summary block appears after 4 scored cycles.
