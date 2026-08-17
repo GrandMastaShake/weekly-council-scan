@@ -1,0 +1,64 @@
+week: '2026-08-17'
+lock: 2026-08-17 08:50 ET
+entry_date: '2026-08-17'
+exit_date: '2026-08-21'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 776.18
+  entry_price_source: open
+players:
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: AMD
+    weight: 0.2
+    entry_price: 513.805
+    entry_price_source: open
+  - ticker: CDE
+    weight: 0.15
+    entry_price: 19.3
+    entry_price_source: open
+  - ticker: DDOG
+    weight: 0.2
+    entry_price: 250.6
+    entry_price_source: open
+  - ticker: IGIC
+    weight: 0.2
+    entry_price: 27.18
+    entry_price_source: open
+  - ticker: PAAS
+    weight: 0.15
+    entry_price: 47.78
+    entry_price_source: open
+  - ticker: VIK
+    weight: 0.1
+    entry_price: 97.61
+    entry_price_source: open
+- player: GrandMastaShake
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: C
+    weight: 0.25
+    entry_price: 139.25
+    entry_price_source: open
+  - ticker: NEM
+    weight: 0.26
+    entry_price: 119.39
+    entry_price_source: open
+  - ticker: MRK
+    weight: 0.2
+    entry_price: 134.95
+    entry_price_source: open
+  - ticker: VST
+    weight: 0.18
+    entry_price: 149.37
+    entry_price_source: open
+  - ticker: SIDU
+    weight: 0.11
+    entry_price: 2.4
+    entry_price_source: open
