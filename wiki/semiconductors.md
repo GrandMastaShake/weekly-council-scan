@@ -152,7 +152,7 @@ After last week's NFP-shock rocket (+7.8%), semiconductors spent five sessions d
 
 **The Macro Held Its Breath.**
 
-Tuesday's CPI came in-line — 3.4% headline, 2.5% core — and Wednesday's PPI was flat. The 10Y barely moved (4.696%, +4bps W/W). DXY logged a third straight week near/below 100. September hike odds stayed suppressed at ~30-35%. For two weeks running, the macro has been a tailwind. But Friday delivered the cycle's first demand-side yellow flag: July retail sales -0.6% MoM and UMich August prelim sentiment at 51.0 — a 7.6% miss versus the 55 estimate. One print is noise; two is a trend. The consumer wobble matters for the legacy half of the chip cycle (PC, smartphone, auto) even if the AI half is immune.
+Wednesday's CPI came in-line — 3.4% headline, 2.5% core — and Thursday's PPI was flat. The 10Y barely moved (4.696%, +4bps W/W). DXY logged a third straight week near/below 100. September hike odds stayed suppressed at ~30-35%. For two weeks running, the macro has been a tailwind. But Friday delivered the cycle's first demand-side yellow flag: July retail sales -0.6% MoM and UMich August prelim sentiment at 51.0 — a 7.6% miss versus the 55 estimate. One print is noise; two is a trend. The consumer wobble matters for the legacy half of the chip cycle (PC, smartphone, auto) even if the AI half is immune.
 
 **The Broadcom Wreck.**
 
