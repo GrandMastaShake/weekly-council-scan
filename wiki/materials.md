@@ -10,22 +10,24 @@
 
 | Metric | Current | 4W Ago | Change |
 |---|---|---|---|
-| Price | $52.54 | ~$50.53 | **+4.0%** |
+| Price | $53.54 | ~$51.26 | **+4.5%** |
 | 52W Range | $42.03 – $54.14 | — | — |
 | AUM | ~$8.2B | — | — |
-| YTD Return | **+16.8%** | — | — |
-| 1Y Return | ~+18.8% | — | — |
-| P/E Ratio | ~25.7 | — | — |
+| YTD Return | **+17.0%** | — | — |
+| 1Y Return | ~+18.3% | — | — |
+| P/E Ratio | ~26.2 | — | — |
 | Dividend Yield | ~1.68% | — | — |
 | Beta | ~1.0–1.1 | — | — |
 | Total Holdings | 27 | — | — |
-| Avg Daily Volume | ~11.5M shares | — | — |
+| Avg Daily Volume | ~10.0M shares | — | — |
 
-**Marky Tape Read:** XLB closed Friday at $52.54 — down **-0.6%** on the week, a textbook consolidation after last week's +4.8% explosion. The week told a two-act story: Monday-Tuesday strength carried the ETF to a **week high of $53.60** on Tuesday (just 1% below the 52W high of $54.14), then Wednesday-through-Friday fade on the consumer data shock and the oil reversal. Crucially, the ETF **held above its 50D MA ($51.34) every single day** — the week low of $52.22 (Thursday) never came close. RSI at 55.8 is neutral-to-firm. Volume averaged ~11.5M, with Friday's fade coming on a feather-light 7.5M — no distribution, just exhaustion. The internals flipped from broad-and-green to narrow: only **5 of 16 tracked names finished positive** (DOW +5.9%, NEM +4.2%, ALB +3.8%, DD +2.7%, APD +1.8%), while last week's leaders took profits (FCX -4.5%, PPG -4.1%, ECL -3.2%, CLF -2.9%, SHW -2.9%). This is what a healthy exhale looks like after a vertical week — the trend is intact, the leadership rotated from beta to catalysts.
+**Marky Tape Read:** XLB closed Friday at $53.54 — up **+1.9%** on the week and the **highest close since the February peak**, finishing just 1.1% below the raw 52W high of $54.14 (on a dividend-adjusted basis Friday was a 52-week-high close). The week was a textbook V: Monday-Tuesday the tariff-deal scare and China data dump dragged the ETF to a **week low of $51.78 Tuesday — which held the 50D MA ($51.56) by $0.22** — then the Wednesday Treasury buyback intervention flipped the tape, and Friday's +2.1% breakout close did the rest. RSI at 67.9 is firm, approaching but not at overbought. Volume averaged ~10.0M, with Friday's breakout the heaviest up-day of the week — real sponsorship, not drift. The internals were violently split — the most bifurcated week of the year: **FCX +15.3%** and **NEM +11.7%** led a metals melt-up (CTVA +6.7%, ALB +5.2%, DOW +4.1%), while the tariff-exposed complex cratered (**NUE -9.4%**, CLF -5.3%, DD -5.4%, SHW -3.3%, and small-cap KALU -15.2%). This was not a beta week — it was two separate sector stories trading in opposite directions under one ticker.
 
-**Ophelia Macro Read:** The restriction remains **LIFTED** — third consecutive week. DXY closed Friday at **99.67**, essentially flat on the week (+0.07) and still 1.33 points below the sacred 101 line and 0.67 above the 99 reinstatement line. But the *path* of macro this week was a round trip with a plot twist: Tuesday's 10Y spike toward 4.74% on Iran-oil inflation fears gave way to Wednesday's **in-line July CPI (3.4% headline, 2.5% core — core the lowest since February)** and Thursday's flat PPI, which crushed September hike odds from ~54% to **~30-35%**. Then Friday's consumer crack — **retail sales -0.6% MoM** (vs. +0.2% expected) and **UMich August prelim sentiment 51.0** (vs. ~54.5 expected, near historic lows) — flipped the narrative from "no hikes" to "is the consumer breaking?" The 10Y closed at **4.70%**, up +4 bps W/W — rate relief paused. And the oil reversal is the new complication: WTI ripped **+5.4% to $82.40/bbl** on escalating Iran/Hormuz isolation measures, partially reversing last week's feedstock gift for chemicals. For Materials: the DXY tailwind persists, but the oil tailwind just became a headwind, and the consumer data is a volume warning.
+**Ophelia Macro Read:** The restriction remains **LIFTED — fourth consecutive week — and the add rail was touched.** DXY closed Friday at **98.80**, down **-0.87%** on the week, and spent Wednesday through Friday **below 99 for the first time in this regime** — 2.20 points under the 101 embargo line, through the 99.00 early-warning rail to the *downside*. The driver was fiscal, not monetary: Wednesday's **Treasury intervention — Bessent doubling long-end buybacks to ≥$4B/operation (Sept 9–Nov 4)** after the 30Y hit ~5.24-5.27% (highest since 2007) and the national debt crossed **$40 trillion** — revived the debasement trade in full. Gold ripped **+5.6% to $4,624** (silver +6.9% to $69.47), the dollar sagged, and metals miners went vertical. The counterweight: the **10Y closed at 4.74% — a 52-week-high close**, +4 bps W/W, one basis point under the 4.75% stress line, after hawkish **July FOMC minutes (9-3, "many participants" open to hikes)**. September pricing settled at ~70% hold / ~30% hike. And oil kept climbing: **WTI +5.7% to $87.06**, a second straight +5% week on the Hormuz blockade — the $90 chemicals-margin line is now in sight. For Materials: the dollar tailwind just strengthened, the metals complex has a sovereign-fiscal bid behind it, but the rate and oil headwinds are intensifying in parallel. My rails: DXY below 99 = add zone (touched); 10Y 4.75% = stress (1 bp away); WTI $90 = chemicals margin flip (approaching). Two of three rails are live.
 
-**The NEM Settlement Windfall:** Newmont delivered the week's biggest single-stock story: on Monday (Aug 10), **Barrick Mining settled the longstanding Nevada Gold Mines dispute, securing a $1.95 billion cash payout for Newmont** and paving the way for Barrick's North American gold-asset spinoff. NEM gapped to $117.26 on Monday, touched **$120.19 intraday Wednesday**, and closed the week at $117.76 — **+4.2%**, now up ~24% in a month. Layer in gold holding near seven-week highs at **$4,380/oz** (peak $4,425 Tuesday) and NEM at ~14.8x P/E remains the sector's cheapest large-cap with a fresh $1.95B cash infusion. RSI at 70.9 is the only caution flag — officially overbought.
+**The Canada Tariff Whipsaw — Resolved Saturday:** The week's defining sector event played out in five acts. **Mon-Tue:** with 50% Section 338 duties on ~$20B of Canadian goods due 12:01 AM Wednesday, Trump posted a **3-day pause** late Tuesday — "subject to the finalization of documents, [we] have a DEAL!" — and aluminum/steel names cratered instantly: **KALU -12.8% Tuesday**, NUE -3.1%. **Wed:** Bloomberg reported the preliminary deal would cut tariffs on **some Canadian steel and aluminum from 50% to 25%** — NUE **-5.85%**, CENX **-11%** (Canada supplies ~half of U.S. aluminum imports; cheaper Canadian metal directly compresses the domestic premium that tariff protection built). **Thu-Fri:** steel clawed back modestly into the deadline. **Saturday 12:01 AM ET: talks collapsed** — Carney suspended negotiations ("they asked too much and offered too little"), the **50% duties took effect as scheduled**, and Canada announced **dollar-for-dollar retaliation starting Sept 8**, including targeted protection for steel products. Section 338 excludes energy, potash, critical minerals, and goods already under Section 232 (steel/aluminum/copper stay at their existing 232 rates — the 338 layer stacks on *other* goods). Net-net: the tariff shield that built the NUE/CLF/KALU/CENX trade **survives intact**, the mid-week drawdown was a deal-fear air pocket, and IBD's Saturday headline says it plainly: "U.S. Steel Stocks Nucor, Steel Dynamics: Big Winners As Canada Trade Talks Collapse." Expect a Monday relief bid in the complex.
+
+**The Gold Breakout:** Gold's **+5.6% to $4,624** (Friday close, accelerating: $4,380 → $4,489 Wed → $4,516 Thu → $4,624 Fri) is the biggest weekly move since the January mania, and it is still ~13% below the ~$5,318 January record. The catalyst stack: the Treasury buyback doubling (yield-curve-management optics), the **$40T debt crossing**, central-bank accumulation, and the Hormuz war premium — a sovereign-debasement bid, not a rate-cut bid, which is why it rallied *into* a 52-week-high 10Y print. NEM rode it **+11.7% to $131.58** (+38% in 30 days), now at 16.6x trailing / 12.4x forward with the $1.95B Barrick windfall still inbound — but RSI at **84.6** is deep into chase-at-your-own-risk territory.
 
 ---
 
@@ -33,47 +35,51 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LIN | Linde | ~17% | $482.74 | -1.48% | $548.20 | $387.78 | 1.33% | 31.1 | ⚡ |
-| 2 | SHW | Sherwin-Williams | ~6% | $359.10 | -2.88% | $379.65 | $289.86 | 0.89% | 33.1 | ⚠️ |
-| 3 | FCX | Freeport-McMoRan | ~5% | $66.49 | **-4.50%** | $72.28 | $35.15 | 0.90% | 32.6 | ⚠️ |
-| 4 | APD | Air Products | ~5% | $308.97 | **+1.82%** | $314.87 | $229.11 | 2.37% | 21.4 | ⚡ |
-| 5 | NEM | Newmont | ~4% | $117.76 | **+4.23%** | $134.88 | $67.20 | 0.88% | 14.8 | 🔥 |
-| 6 | ECL | Ecolab | ~4% | $276.11 | -3.18% | $309.27 | $243.15 | 1.06% | 37.1 | ⚠️ |
-| 7 | NUE | Nucor | ~3% | $268.91 | -1.36% | $280.11 | $131.32 | 0.83% | 21.5 | ⚡ |
-| 8 | DD | DuPont | ~3% | $146.26 | +2.66% | $157.98 | $91.38 | 1.64% | 62.8* | ⚡ |
-| 9 | VMC | Vulcan Materials | ~3% | $282.00 | -0.76% | $331.09 | $252.35 | 0.74% | 33.2 | ⚡ |
-| 10 | DOW | Dow Inc | ~2% | $31.07 | **+5.90%** | $42.74 | $20.65 | **4.51%** | 16.8 | 🔥 |
-| 11 | PPG | PPG Industries | ~2% | $114.11 | **-4.09%** | $133.43 | $93.39 | 2.59% | 16.4 | ⚠️ |
-| 12 | CTVA | Corteva | ~2% | $76.68 | -0.20% | $90.97 | $60.54 | 0.95% | 46.5 | ⚡ |
-| 13 | ALB | Albemarle | ~1% | $136.15 | **+3.84%** | $221.00 | $71.25 | 1.20% | 504.3* | 🔥 |
-| 14 | MLM | Martin Marietta | ~1% | $547.93 | -0.12% | $710.97 | $523.48 | 0.61% | 35.6 | ⚡ |
-| 15 | IFF | Int'l Flavors | ~1% | $84.18 | -1.99% | $89.32 | $59.14 | 1.90% | 21.3 | ⚡ |
-| 16 | CLF | Cleveland-Cliffs | ~1% | $11.90 | -2.94% | $16.70 | $7.73 | — | 23.3 | ⚠️ |
+| 1 | LIN | Linde | ~17% | $487.57 | +0.98% | $548.20 | $387.78 | 1.31% | 31.5 | ⚡ |
+| 2 | SHW | Sherwin-Williams | ~6% | $346.59 | -3.26% | $379.65 | $289.86 | 0.92% | 31.9 | ⚠️ |
+| 3 | FCX | Freeport-McMoRan | ~5% | $76.66 | **+15.32%** | **$76.66** | $35.15 | 0.78% | 37.6 | 🔥 |
+| 4 | APD | Air Products | ~5% | $305.10 | -1.25% | $314.87 | $229.11 | 2.37% | 21.1* | ⚡ |
+| 5 | NEM | Newmont | ~4% | $131.58 | **+11.74%** | $134.88 | $67.20 | 0.79% | 16.6 | 🔥 |
+| 6 | ECL | Ecolab | ~4% | $281.63 | +2.00% | $309.27 | $243.15 | 1.04% | 37.8 | ⚡ |
+| 7 | NUE | Nucor | ~3% | $243.63 | **-9.40%** | $280.11 | $131.32 | 0.92% | 19.5 | ⚠️ |
+| 8 | DD | DuPont | ~3% | $138.33 | -5.42% | $157.98 | $91.38 | 1.73% | 59.6* | ⚠️ |
+| 9 | VMC | Vulcan Materials | ~3% | $276.04 | -2.11% | $331.09 | $252.35 | 0.75% | 31.9 | ⚡ |
+| 10 | DOW | Dow Inc | ~2% | $32.35 | **+4.12%** | $42.74 | $20.65 | **4.33%** | 17.8* | 🔥 |
+| 11 | PPG | PPG Industries | ~2% | $113.63 | -0.42% | $133.43 | $93.39 | 2.60% | 16.1 | ⚡ |
+| 12 | CTVA | Corteva | ~2% | $81.79 | **+6.66%** | $90.97 | $60.54 | 0.88% | 49.6* | 🔥 |
+| 13 | ALB | Albemarle | ~1% | $143.25 | **+5.21%** | $221.00 | $71.25 | 1.14% | 530.6* | 🔥 |
+| 14 | MLM | Martin Marietta | ~1% | $534.92 | -2.37% | $710.97 | $523.48 | 0.63% | 34.1 | ⚡ |
+| 15 | IFF | Int'l Flavors | ~1% | $84.28 | +0.12% | $89.32 | $59.14 | 1.90% | 21.3* | ⚡ |
+| 16 | CLF | Cleveland-Cliffs | ~1% | $11.27 | -5.29% | $16.70 | $7.73 | — | 19.9* | ⚠️ |
 
 > 🔥 = Strong momentum / catalyst | ⚡ = Neutral / stable | ⚠️ = Pullback / profit-taking | 🔴 = Crash / broken
-> *P/E distorted by TTM accounting (ALB lithium writedowns rolling through; DD restructuring items)
+> *Forward P/E where trailing is distorted by TTM accounting (ALB lithium writedowns; DD restructuring items; CTVA/CLF trough earnings; DOW/APD/IFF Yahoo trailing unavailable this week)
 
-**Sector Bifurcation:** Materials remains a **three-headed beast** — and this week the heads diverged:
+**Sector Bifurcation:** Materials was a **three-headed beast fighting itself** this week:
 
-1. **Chemicals & Gases** (LIN, APD, DOW, PPG, SHW, ECL, CTVA, IFF, DD) — the oil reversal (+5.4% WTI) flipped the feedstock narrative from tailwind to headwind mid-week; coatings names (SHW, PPG) took profits
-2. **Mining & Metals** (FCX, NEM, NUE, CLF, ALB) — gold settlement windfall (NEM) and lithium momentum (ALB) beat copper profit-taking (FCX) and steel consolidation (NUE, CLF)
-3. **Construction Materials** (VMC, MLM) — flat as the 10Y round-tripped to 4.70% (+4 bps); no rate relief this week
+1. **Chemicals & Gases** (LIN, APD, DOW, PPG, SHW, ECL, CTVA, IFF, DD) — split internally: oil-headwind coatings (SHW, PPG) and DD faded, while DOW's value bid and CTVA's ag-cycle-bottom rally (DE's Friday print) led
+2. **Mining & Metals** (FCX, NEM, NUE, CLF, ALB) — the debasement bid (FCX, NEM, ALB) vs. the tariff-deal air pocket (NUE, CLF): a 25-point spread between FCX and NUE inside one subsector
+3. **Construction Materials** (VMC, MLM) — faded ~-2% as the 10Y closed at a 52-week high and housing starts dropped -12.4%
 
-**The NEM Windfall:** Newmont's week was a two-engine move: (1) Monday's **Barrick settlement — $1.95B cash to Newmont**, resolving the Nevada Gold Mines JV dispute that had hung over both names for years; and (2) gold's hold near **$4,380/oz**, a seven-week high, as real yields stayed soft post-CPI. The stock's +4.2% to $117.76 caps a ~24% one-month run. Zacks flagged the tension this week: gold-price leverage is working, but 2026 production guidance (~5.2-5.3Moz, down ~10% YoY) and rising AISC temper the operating story. At 14.8x with a fortress balance sheet (net cash ~$3.2B at Q1) plus $1.95B incoming, the windfall narrative wins this week. RSI 70.9 says do not chase Monday.
+**The FCX Melt-Up:** Freeport was the week's large-cap story: **+15.3% to $76.66**, a **new 52-week high** (Friday +7.6% alone), now +79% over 1Y. Four engines: (1) **Grasberg Block Cave ramp confirmed on schedule** — ~65% of full capacity in H2 2026, with the new Indonesian smelter starting up *ahead of schedule* (full capacity by year-end → fully integrated producer, lower costs, less export-duty exposure); (2) the **International Copper Study Group flipped its 2026 outlook from surplus to deficit**, keeping COMEX copper near all-time highs (~$6.58/lb); (3) Q2's volume-decline narrative got reframed — management guides copper sales **3.1B lbs (2026) → 4.1B lbs (2028)** and gold volumes **0.65M → 1.2M oz**, with ~$8.3B expected FY26 operating cash flow self-funding the growth; and (4) an analyst pile-on: **Wells Fargo upgraded to Overweight ($70), Raymond James $76, Argus $78** — targets the stock has now run *through*. RSI 73.0 says extended; the $70-72 zone is the pullback entry the late money will get.
 
-**The ALB Continuation:** Albemarle followed through on its Aug 6 earnings demolition with **+3.8% to $136.15** — the post-beat drift higher that separates real re-ratings from one-day wonders. Morningstar kept its **$200 fair value** (narrow moat) post-print, noting shares trade ~40% below fair value with lithium spot averaging ~$20,000/t YTD 2026 — right at their long-term marginal-cost forecast. UBS's Buy upgrade ($185 PT) on a projected H2 2026 lithium deficit is the bull spine. The bear counter: CATL restart supply fears. At $136.15, ALB is +91% off its $71.25 low and still 38% below the $221 high.
+**The NEM Vertical:** Newmont **+11.7% to $131.58** — +38% in 30 days, 2.5% below the $134.88 52W high. Wednesday's +7.9% (to $125.08) was the Treasury-buyback candle; Friday's close at $131.58 rode gold's $4,624 print. Fundamentals keep pace: Q2 adj. EPS $2.10 beat, **record $2.2B quarterly FCF**, realized gold $4,414/oz (+33% YoY), AISC $1,621 — every $100/oz in gold is pure margin expansion at that cost base, plus >$1.7B of buybacks executed under a $6B authorization and the $1.95B Barrick settlement inbound. The only flag is the tape itself: **RSI 84.6** — the most overbought print in the sector's tracked history. The metal can keep rising while the stock consolidates; do not chase Monday.
 
-**The DOW Bounce:** Dow Inc was the week's surprise leader: **+5.9% to $31.07**. The catalysts: a declared **$0.35 quarterly dividend** (Aug 13, payable Sept 11) reaffirming the 4.51% yield, and a classic oversold bounce off the $20.65 52W-low zone after months of bond-proxy decay. Notably, DOW now screens at 16.8x trailing earnings — the polyethylene margin story is stabilizing as oil-linked cost volatility cuts both ways. This was value buying, not momentum.
+**The NUE Tariff Air Pocket:** Nucor **-9.4% to $243.63** — -5.85% Wednesday alone, closing the week below its 50D MA ($248.00) after kissing $272.68 Monday. The driver was pure policy fear: Tuesday's pause/"DEAL" post and Wednesday's Bloomberg report of a **50%→25% cut on some Canadian steel/aluminum** threatened the import wall that rebuilt domestic steel economics. What did *not* change: the fundamentals — **HRC at $1,181/ton (highest since April 2023)**, Nucor's CSP at **$1,170/ton (Aug 17)**, weekly hikes intact, capacity utilization 78.8%, lead times extended. And Saturday's resolution — **talks collapsed, 50% Section 338 duties in effect, Canada retaliates Sept 8** — means the shield holds. This week's -9.4% is a policy air pocket over a firm price deck. Watch Monday's relief rally; the $240-244 zone was defended Friday (+1.3%).
 
-**The FCX Digestion:** Freeport gave back **-4.5% to $66.49** after last week's +9.4% run — the week's biggest large-cap drag. The narrative catch-up: Zacks (Aug 13) highlighted that **Q2 copper volumes fell 30% YoY** on lower operating rates (Grasberg ramp), a story the market glossed over during the earnings pop; a disclosed $334K insider sale by the chief accounting officer at $70.00 added optical pressure. Copper itself was flat (+0.4% to ~$6.60/lb), so this was stock-specific profit-taking, not a commodity signal. Analysts remain constructive (median PT $75; 19 of 23 Buy-rated). FCX is still +56% over 1Y; a pullback toward the $63-65 breakout zone is normal hygiene.
+**The Aluminum Casualty (SMID desk):** KALU **-15.2% to $154.16** and CENX **-6.0% to $43.92** took the tariff report hardest — Canada supplies ~half of U.S. aluminum imports, so a 25% rate would have been a direct premium-killer for domestic smelters. KALU's week was a three-hit combo: a **CEO transition (Fred Stephan named CEO and President, Aug 17)**, Tuesday's -12.8% tariff candle, and a Seeking Alpha note Friday (PT raised to $120 on an H2 outlook — but a Hold on valuation) that framed the debate. CENX added in-line Q3 guidance ($325–345M adj. EBITDA — no step-up) and insider sales to its own pile. With the deal dead, both get a Monday relief bid — the question is how much of the week they reclaim.
 
-**The Steel Consolidation:** NUE (-1.4% to $268.91) and CLF (-2.9% to $11.90) cooled after multi-week runs. Under the hood, the steel story stayed firm: Nucor's CSP HRC price hikes have run weekly since late January (last print ~$1,115/ton in June, CSI $1,165), lead times ~6.4 weeks are the longest since March, and 50% Section 232 tariffs keep imports boxed out. This week's dip is position-trimming near highs (NUE RSI 66.2), not a crack in the tariff-shielded pricing regime.
+**The Gold/Silver Complex:** Gold **+5.6% to $4,624**, silver **+6.9% to $69.47** — the debasement trade in full flower: Treasury buyback doubling + $40T debt + central-bank buying + Hormuz premium. The miners followed: NEM +11.7%, and the whole GDX complex spiked on Wednesday's announcement. Bank targets are chasing: JPMorgan Q4 ~$4,500 (already exceeded), Goldman year-end ~$4,900, Citi floating a $5,000 6-12M base case. Gold RSI at 87.3 is extreme — expect consolidation, but the *bid source* (fiscal, not monetary) is the sticky kind.
 
-**The Chemicals Fade:** SHW (-2.9% to $359.10), PPG (-4.1% to $114.11), ECL (-3.2% to $276.11), and IFF (-2.0% to $84.18) all faded as WTI's +5.4% reversal to $82.40 revived feedstock-cost math just as Friday's consumer shock (retail -0.6%, UMich 51.0) raised volume questions. LIN (-1.5% to $482.74, RSI 36.2) is quietly the weakest of the gases — approaching oversold again despite the clean Q2 beat; APD (+1.8% to $308.97) was the divergence winner, now just 1.9% below its 52W high. CTVA (-0.2%) and DD (+2.7% to $146.26) rounded out a mixed crop/specialty complex.
+**The CTVA Ag Bottom Call:** Corteva **+6.7% to $81.79** rode Friday's Deere print: Q3 beat-and-raise, FY26 net income guidance $4.75–5.0B, tariff costs cut ~$1.1B, and — the line that mattered — **"2026 = ag-cycle bottom."** Stacked on the Pro Farmer crop tour running Mon-Thu, the ag-input complex caught its first real bid in months. CTVA at RSI 71.5 is hot but the narrative flip is fresh. This is the chemicals name with its own micro engine again.
 
-**The Construction Materials Tread Water:** VMC (-0.8% to $282.00) and MLM (-0.1% to $547.93) went nowhere as the 10Y ended *up* 4 bps at 4.70% — no fresh discount-rate relief, no fresh damage. Both remain below 200D MAs; both remain hostage to the next big rate move. Friday's consumer data is a slow-burn negative for housing-adjacent volumes.
+**The ALB Grind Higher:** Albemarle **+5.2% to $143.25** — a third straight green week post-earnings, now +100% off the $71.25 low. Peer SQM reported Wednesday (lithium complex sentiment stayed firm), the UBS H2-deficit thesis is now consensus-adjacent, and Simply Wall St's $187 fair-value narrative frames the remaining upside. RSI 79.7 is the caveat — the easy re-rating is done; from here it needs lithium spot to confirm.
 
-**Cecil Fundamental Read:** NEM at 14.8x with a $1.95B settlement windfall and $4,380 gold is still the value anchor of this table — but after +24% in a month, my add window has closed; I hold, I do not chase. DOW's reaffirmed $0.35 dividend (4.51% yield) at 16.8x is the income story finally attracting buyers off the mat — I am revisiting my position. ALB's follow-through week confirms the earnings recovery is being institutionalized (Morningstar $200 FV, UBS Buy); forward ~11x remains the best growth-value hybrid here. FCX's volume-decline reality check is healthy — the copper price didn't fall, the multiple did. SHW at 33x into an oil reversal is where I trim, not add. Nothing in this week's tape changed a thesis; it changed entry prices.
+**The Chemicals Fade Continues:** SHW **-3.3% to $346.59**, DD **-5.4% to $138.33**, PPG -0.4%, ECL +2.0%. WTI's second straight +5% week ($87.06, Thursday peak $87.83) keeps the feedstock-margin math under pressure — $90 is the line where the story flips from headwind to margin-cut warnings. LIN (+1.0% to $487.57, RSI 56.5) finally stabilized after weeks of drift; APD (-1.3% to $305.10) consolidated just off its high. DOW (+4.1% to $32.35, 4.33% yield) extended its value bid — a second straight strong week for the sector's cheapest income name.
+
+**The Construction Materials Fade:** VMC **-2.1% to $276.04**, MLM **-2.4% to $534.92**. Tuesday's housing data was the gut punch: **July starts 1,239K, -12.4%** (permits +5.0% — the one green shoot), and the 10Y's 52-week-high close Friday is no friend to aggregates multiples. Both remain below their 200D MAs. This subsector needs the rate shoe to drop the other way.
+
+**Cecil Fundamental Read:** NEM at 16.6x trailing / 12.4x forward, with record FCF, a $1.95B windfall inbound, and $4,624 gold, has graduated from "value anchor" to "the stock I wish I owned more of" — but RSI 84.6 is where discipline outranks conviction; I hold, I do not add. NUE at 19.5x after a policy air pocket, with HRC at $1,181 and the tariff shield *surviving* Saturday, is the week's genuine gift — I am revisiting my position Monday. DOW at ~17.8x forward with a 4.33% yield has now confirmed two straight weeks of institutional buying; my rebuild continues. FCX at 37.6x trailing (18.6x forward) is no longer value — it is a growth story priced on 2028 volumes; justified, but not my lane at RSI 73. CENX at 7.6x trailing / 3.6x forward on the small-cap board remains the speculation I allow — the tariff outcome removed the week's fear. SHW at 31.9x into $87 oil stays a trim, not an add. Nothing this week broke a thesis; the tariff resolution *strengthened* two of them.
 
 ---
 
@@ -83,15 +89,17 @@
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | P/E | Signal | Council Read |
 |---|---|---|---|---|---|---|---|
-| KALU | Kaiser Aluminum | $2.97B | $181.73 | -1.63% | 13.5 | ⚡ | Record Q2 (Jul 22: sales $1.3B, adj. EBITDA $166M, FY outlook raised, leverage down to 2.1x) now being digested; one valuation narrative flags ~$169 fair value vs. ~$181 close — the debate is the pause, not a breakdown. |
-| CENX | Century Aluminum | $4.62B | $46.72 | **-8.80%** | 8.1 | ⚠️ | **RE-ENTRY** — dropped back below $5B on an alumina profit-taking slide after the prior week's +13.3%. Still Buy-rated consensus (PT ~$62); at 8x earnings this is the deep-value aluminum call option. Watch $44 support. |
-| KRO | Kronos Worldwide | $0.97B | $8.47 | -1.40% | 13.7 | ⚡ | TiO2 squeeze aftermath: consolidating just under the $8.90 52W high after the +39.7% short-covering explosion. Volume normalized. Margin-recovery speculation intact but unproven. |
-| MERC | Mercer International | $0.03B | $0.47 | **-20.34%** | N/M | 🔴 | **DISTRESS WATCH.** Q2 (Aug 6) printed *negative* $21M operating EBITDA; the stock bled every single day to a $0.465 52W low. Market cap now ~$30M. Retained for tracking, but this is a going-concern conversation, not an investment. Do not catch. |
-| SXC | SunCoke Energy | $0.79B | $9.36 | -0.32% | 32.3 | ⚡ | Flat week; 5.17% dividend holding. Leveraged to the CLF/NUE blast-furnace cycle — steel's consolidation week meant SXC's quiet week. |
+| KALU | Kaiser Aluminum | $2.52B | $154.16 | **-15.17%** | 11.4 | 🔴 | **Week's casualty.** CEO transition (Fred Stephan named CEO Aug 17) + Tuesday's -12.8% candle on the Canada tariff-cut report; Friday's SA note raised PT to $120 but held at Hold on valuation. Deal collapsed Saturday — relief bid likely Monday; $150 is the hold line. |
+| CENX | Century Aluminum | $4.35B | $43.92 | -5.99% | 7.6 | ⚠️ | -11% Wednesday on the 25% tariff report; in-line Q3 guide ($325-345M adj. EBITDA) + insider sales added pressure. At 7.6x trailing / 3.6x forward with the tariff shield intact post-Saturday, the deep-value call option re-loads. Watch $42-44. |
+| KRO | Kronos Worldwide | $0.94B | $8.20 | -3.19% | 13.2* | ⚡ | Post-squeeze consolidation continues just under the $8.65 52W high; +86% YTD. TiO2 margin-recovery speculation intact, unproven, and now hostage to $87 oil feedstock math. |
+| MERC | Mercer International | $0.03B | $0.43 | **-8.51%** | N/M | 🔴 | **DISTRESS WATCH.** Third straight weekly bleed to another 52W low ($0.43); RSI 20 and still falling. Cap ~$29M. Tracking only — restructuring-or-delisting conversation, not an investment. Do not catch. |
+| SXC | SunCoke Energy | $0.79B | $9.69 | **+4.87%** | 33.4* | 🔥 | **New 52W high.** The week's SMID winner: blast-furnace coke leverage worked in reverse-sympathy — as the tariff-deal fear faded Thu-Fri, the steel chain's SMIDs ripped (HCC +8.7%). 4.95% yield. RSI 71 — hot; Monday's tariff-collapse relief could extend it. |
 
-**Rotation Note:** HCC (Warrior Met Coal) has been **promoted out** of this table — a +6.9% week to $98.20 lifted its market cap to **$5.19B**, above the $5B threshold. It is replaced by **CENX**, which re-qualifies at $4.62B after its own -8.8% slide. The cap border remains a revolving door between these two names; we track whichever is sub-$5B. All five tabled names verified sub-$5B via Yahoo Finance as of Friday Aug 14 close.
+> *\*Forward P/E — trailing distorted (KRO trough EPS; SXC one-time items).*
 
-**Small-Cap Sector Read:** The sub-$5B materials complex split violently this week. The aluminum pair told the story: KALU's record-quarter digestion (-1.6%) vs. CENX's profit-taking slide (-8.8%) — both healthy, both still uptrends. KRO held its squeeze gains. SXC treaded water with steel. And MERC is no longer a stock — it is a restructuring watch item; a -20% week on negative-EBITDA earnings with a $30M cap is how names leave the board entirely. The actionable takeaway: CENX at 8x earnings with a Buy consensus and a ~$62 PT is the best risk/reward in this group *if* $44 holds; KALU remains the quality compounder on any further pullback toward $170.
+**Rotation Note:** No rotation this week — all five tabled names **verified sub-$5B via Yahoo Finance as of Friday Aug 21 close**. **HCC (Warrior Met Coal) stays graduated**: +8.7% to $106.73 lifted its cap to **$5.64B**, further above the $5B line (met-coal names caught the same steel-chain bid as SXC). The HCC/CENX border war resolved decisively this week in opposite directions.
+
+**Small-Cap Sector Read:** The sub-$5B materials complex was the tariff whipsaw's ground zero. KALU's -15.2% and CENX's -6.0% were pure policy fear — and with talks collapsing Saturday, both enter Monday with a relief bid and the fundamental shield intact. SXC's new 52W high shows where the smart small-cap money already positioned: with the steel chain, not against it. KRO consolidated; MERC continues its slow-motion exit from investability. The actionable takeaway: **CENX at 7.6x/3.6x forward with the tariff question resolved is the best risk/reward on this board** — the fear that knocked it down is gone; KALU's Monday bounce will test whether the CEO transition adds a discount beyond the tariff noise. MERC remains a case study in why we verify caps weekly.
 
 ---
 
@@ -99,18 +107,17 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $54.14 | Resistance — set late Feb 2026; Tuesday's probe of $53.60 got within 1% |
-| Near Resistance | $53.60 | Tuesday's week high — first hurdle on any re-attack |
-| Current Price | $52.54 | — |
-| Week Low | $52.22 | Thursday's floor — held easily |
-| 50-Day MA | $51.34 | **Held all week** — floor confirmed, not tested hard |
-| 200-Day MA | $49.06 | Long-term trend support — firmly bullish above |
+| 52W High | $54.14 | Resistance — raw high set late Feb 2026; Friday's $53.54 close is within 1.1% (adjusted basis: new 52W-high close) |
+| Current Price | $53.54 | Highest close since February |
+| Near Support | $52.42 | Thursday's close / Friday's launch point |
+| 50-Day MA | $51.56 | **Held Tuesday by $0.22** (week low $51.78) — second consecutive weekly defense |
+| 200-Day MA | $49.30 | Long-term trend support — firmly bullish above |
 | Major Support | $47.00 | Psychological + prior consolidation |
 | Structural Low | $42.03 | 52W bottom |
 
-**Marky Setup Assessment:** XLB at $52.54 is in a bullish consolidation: above a rising 50D MA ($51.34), RSI 55.8 with headroom, and a Tuesday probe to $53.60 that mapped the final supply zone before the 52W high at $54.14. The Wed-Fri fade came on declining volume (9.8M → 10.4M → 7.5M) — sellers lacked conviction; Friday's consumer shock produced a -0.4% day, not a rout. The setup: hold $51.34 and the next catalyst (PCE Aug 28, China PMIs Aug 31) gets a run at $54.14. Lose $51.34 on volume and we revisit $50.00. The internals narrowed this week — 5 up, 11 down — which after a +4.8% week reads as rotation, not distribution: money moved from copper/coatings profit-taking into gold/lithium/value-chemicals.
+**Marky Setup Assessment:** XLB at $53.54 is knocking on the big door. The week printed a clean V: tariff-scare flush to $51.78 Tuesday (50D MA $51.56 defended by two dimes), then three straight higher closes culminating in Friday's +2.1% breakout on the week's best up-volume. RSI 67.9 — firm, not yet overbought. The map: **$54.14 is the only supply left**; a weekly close above it opens genuine price discovery with the debasement trade at its back. Lose $51.56 on volume and the V fails back to $50. The internals argue for the bull case: when an ETF closes at a 5-month high while its third-largest subsector (steel) is down -9%, that's not weakness — that's rotation with sponsorship. Monday brings a built-in catalyst: the tariff-collapse relief bid in NUE/CLF/KALU/CENX re-joins the metals melt-up. The last time both heads of this beast ran in the same direction was the +4.8% week two weeks ago.
 
-**The relative strength story:** XLB **+16.8% YTD vs. SPY +14.5%** — Materials has now moved into *outperformance* against the broad market for the first time this cycle. The DXY-below-101 regime plus the commodity complex's resilience is doing the work. This flips the framing from "catch-up trade" to "leadership claim" — leadership gets tested on down weeks, and this -0.6% week passed the test by holding the 50D.
+**The relative strength story:** XLB **+17.0% YTD vs. SPY +12.7%** — the outperformance gap widened again this week (+1.9% vs. SPY -1.37%). On a week when the 10Y closed at a 52-week high, oil ripped +5.7%, and SPY had its worst week of the month, Materials *gained* — that's what a leadership claim looks like under stress. The DXY-below-99 regime plus the fiscal-debasement bid is doing the work. Leadership now gets its ultimate test: the $54.14 line.
 
 ---
 
@@ -118,38 +125,35 @@
 
 | Factor | Level | Implication for XLB |
 |---|---|---|
-| DXY | **99.67** | **BELOW 101 — RESTRICTION STAYS LIFTED (3rd straight week).** Flat W/W (+0.07). 0.67 above the 99 watch line; 1.33 below the 101 embargo line. |
-| 10Y Treasury | **4.70%** | **Up +4 bps W/W.** Round trip: 4.71% Mon → ~4.74% Tue scare (Iran oil) → 4.64% Fri morning (consumer shock) → 4.70% close. Rate relief paused. |
-| Fed Policy | 3.50–3.75% | **Hike odds collapsing.** September odds ~54% → ~30-35% on in-line CPI + retail/UMich misses. The hawks are isolated. |
-| July CPI (Aug 12) | **3.4% / core 2.5%** | In line; core lowest since February. Disinflation intact at the core — but headline held up by energy, which is now reversing. |
-| July PPI (Aug 13) | ~flat | Pipeline pressure quiet. |
-| July Retail Sales (Aug 14) | **-0.6% MoM** | Consumer crack warning (gas/auto drag, but broad softness). Volume headwind for chemicals if it persists. |
-| UMich Sentiment (Aug prelim) | **51.0** | Near historic lows. Demand-side caution flag. |
-| ISM Mfg (July, Aug 3) | **55.6%** | Manufacturing re-accelerating — the industrial demand counterweight to the consumer scare. |
-| Copper | ~$6.60/lb | +0.4% W/W. Holding gains; structural EV/DC demand intact; FCX volumes story is company-specific. |
-| Gold | **$4,380/oz** | +0.9% W/W, seven-week high territory ($4,425 Tuesday peak). Real yields soft post-CPI. Record remains $5,589 (late Jan). |
-| Silver | ~$64.99/oz | +2.6% W/W. Outrunning gold this week. |
-| Lithium | ~$20–25K/t LCE spot zone | Morningstar: 2026 average ~$20K/t = marginal-cost midcycle. UBS projects H2 2026 deficit. ALB realized $19.53/kg in Q2. |
-| Steel (US) | HRC CSP ~$1,115/t (Nucor, June) | Weekly hikes since late Jan; lead times ~6.4 wks, longest since March; 50% Section 232 shield holds. |
-| Steel (China) | CNY ~3,100/t rebar | Mill losses, overcapacity — unresolved. |
-| Iron Ore | ~$98/t | Soft; China property drag persists. |
-| Crude Oil | **~$82.40/bbl** | **+5.4% W/W — REVERSAL.** Iran/Hormuz isolation escalation. Feedstock tailwind for chemicals is now a headwind. $90 = near-term line; $100 = regime line. |
-| China GDP | 4.3% Q2 y/y | Late-July Politburo: supportive tone, precision-guided support, **no bazooka**. Property bust spilling across borders (PIIE). |
-| China Property | In crisis | Vanke repayment-delay shock earlier in the year; destocking mandate in place; still the bulk-demand drag. |
-| EV/Storage Demand | Structural | Storage growing >50%/yr (BESS for AI data centers); lithium deficit narrative building for H2. |
-| AI Data Centers | Meta-scale demand | Copper + electrical infra buildout; NVDA's $500B hyperscaler-financing MOUs (Aug 10-11) extend the visibility runway. |
-| Infrastructure/Reshoring | Accelerating | Nucor project pipeline ($6.7B tracked); supports NUE/VMC/MLM volumes. |
-| July Jobs Report | **-23K NFP (Aug 7)** | Last week's shock; this week's retail/UMich added a consumer leg to the slowdown story. |
+| DXY | **98.80** | **BELOW 99 — FIRST TIME THIS REGIME.** -0.87% W/W; sub-99 Wed–Fri on the Treasury buyback doubling. Restriction stays LIFTED (4th straight week); Ophelia's add rail touched. 2.20 below the 101 embargo line. |
+| 10Y Treasury | **4.74%** | **52-WEEK-HIGH CLOSE, +4 bps W/W.** Round trip: 4.72% Mon → 4.65% Wed (buyback intervention) → 4.74% Fri. One bp below the 4.75% stress line. |
+| 30Y Treasury | ~5.24–5.27% peak | Highest since 2007 mid-week; Treasury's buyback doubling (≥$4B/op, Sept 9–Nov 4) was the response. Debt crossed $40T. |
+| Fed Policy | 3.50–3.75% | **Hawkish July minutes (9-3)** — "many participants" open to hikes; Sept ~70% hold / ~30% hike. Warsh keynote Fri Aug 28 is next gate. |
+| Flash PMIs (Aug 21) | **Composite 56.0 / Mfg 53.2** | Composite = 52-month high; manufacturing = 5-month low. Services carrying the economy; factory sector cooling — mixed read for materials demand. |
+| Housing Starts (July, Aug 18) | **1,239K, -12.4%** | Deep miss; permits +5.0% the only green shoot. Volume headwind for construction materials. |
+| Copper | ~$6.58/lb | -0.3% W/W but pinned near all-time highs; **ICSG flipped 2026 to deficit**; FCX volume guide 3.1B→4.1B lbs by 2028. |
+| Gold | **$4,624/oz** | **+5.6% W/W**, accelerating into Friday. Debasement bid (buybacks, $40T debt, central banks, Hormuz). Record ~$5,318 (Jan). JPM Q4 $4,500 already exceeded; GS year-end ~$4,900. |
+| Silver | **$69.47/oz** | **+6.9% W/W.** Outrunning gold again; refining-crisis scarcity premium intact. |
+| Lithium | ~$20–25K/t LCE spot zone | SQM printed Wednesday; complex sentiment firm. UBS H2-2026 deficit thesis now consensus-adjacent. |
+| Steel (US) | **HRC $1,181/t; Nucor CSP $1,170/t (Aug 17)** | Highest since April 2023; weekly hikes intact; utilization 78.8%; tariff shield SURVIVED Saturday's collapse. |
+| Steel (Canada) | Section 338 live | 50% duties in effect Sat 12:01 AM (excl. Section 232 goods); Canada retaliation Sept 8 incl. targeted steel protection. |
+| Aluminum | LME stocks lowest since 1990 | 50%→25% cut report killed with the deal; domestic premium survives. Canada = ~half of U.S. aluminum imports. |
+| Crude Oil | **$87.06/bbl** | **+5.7% W/W — second straight +5% week.** Hormuz blockade, no talks. $90 = chemicals margin-flip line; $100 = regime line. |
+| China Data (July, Aug 17) | **Retail +0.6%, IP +4.5%, FAI -6.7% YTD** | Broad miss; **new bank loans negative — first time on record**. Slowdown confirmed; still no bazooka. |
+| BHP FY Results (Aug 18) | Record iron ore 265Mt | Supply side healthy; demand side (China property) still the drag. Iron ore soft ~$98/t. |
+| EV/Storage Demand | Structural | BESS/AI buildout intact; Anthropic's >$60B AI debt financing (Fri) extends the power-demand runway. |
+| Ag Complex | **"2026 = ag-cycle bottom"** | Deere's Friday beat-and-raise (FY26 NI $4.75–5.0B) flipped the ag narrative; CTVA +6.7%. Pro Farmer tour ran Mon–Thu. |
+| August Jobs Report | Due Sept 4 | After July's -23K, the next labor print decides the Sept FOMC. |
 
-**Ophelia Verdict:** Third week below 101 on the DXY — the regime holds, and the restriction stays lifted. But do not confuse a flat week with a quiet week. The macro tectonics shifted in two places: (1) **the inflation scare moved from wages to oil** — in-line CPI/core and flat PPI killed the September hike narrative (odds 54% → ~30-35%), while WTI's +5.4% Iran-driven reversal re-opens the energy-inflation channel that made the Fed hawkish in the first place; and (2) **the slowdown story gained a consumer leg** — retail -0.6% and UMich 51.0 joined the -23K payroll print. For Materials this cuts both ways: no-hike pricing supports multiples and the dollar stays soft (good), but consumer volume softness plus pricier feedstock crude squeezes the chemicals chain (bad), while metals keep their own micro catalysts (NEM settlement, ALB deficit thesis).
+**Ophelia Verdict:** Fourth week below 101 — and the first week **below 99**. The regime not only holds, it deepened: the dollar's slide this week was driven by the Treasury itself intervening in the long end, which is as close to fiscal dominance as market mechanics get. My mechanical rules: DXY under 99 is my add rail — touched. But I pair that with the honest counterweight: the **10Y closed at a 52-week high 4.74%** the same week. A falling dollar and rising yields together is the debasement signature — it is *metals-bullish and multiples-bearish* at the same time, which is exactly how the sector traded: FCX/NEM/ALB vertical, VMC/MLM/SHW heavy.
 
-My posture: stay long the DXY-beneficiaries with their own catalysts — NEM (gold + windfall), ALB (lithium deficit), FCX on the pullback toward $63-65 (copper price never broke). Keep the steel tariff compounders (NUE). Underweight the oil-sensitive coatings trade (SHW, PPG) until WTI stops making higher highs. And mark the lines: **DXY 99.00 below / 100.50 above** are the early-warning rails; **WTI $90** is where chemicals margin math flips negative again; **10Y 4.75%** remains the sector stress test. None triggered this week. The embargo stays lifted — but I am watching the tape, not the calendar.
+My posture: stay long the metals with the fiscal bid — NEM (hold, do not chase RSI 84.6), FCX (buy the $70-72 pullback, not the $76.66 print), ALB (hold the re-rating). **Upgrade the steel complex Monday**: the tariff shield survived; NUE at $243 with HRC at $1,181 is a policy air pocket, not a thesis break. Keep DOW's income bid. Stay underweight oil-sensitive coatings (SHW, PPG) — WTI $87.06 is two dollars from my $90 line. The rails: **DXY 98.00 below** (new downside rail — a break means the debasement trade is running too hot and something else is wrong), **100.50 above** (embargo re-watch), **10Y 4.75%** (stress — one bp away), **WTI $90**. Two rails live. The embargo stays lifted; the add rail is touched; the rate alarm is armed. I have never managed all three at once. That is this regime.
 
-**The Gold Question:** Gold's +0.9% to $4,380 on a week when the dollar was flat and yields rose 4 bps is quiet strength — the bid is coming from somewhere deeper than rate math (central-bank accumulation, Iran hedging). NEM's $1.95B settlement is a company-specific accelerant on top. My caution: NEM RSI 70.9 after a +24% month is where momentum accounts get disciplined. The metal can be right while the stock rests.
+**The Gold Question — Answered:** Two weeks ago I asked where gold's bid was coming from. This week answered: the Treasury itself. Doubling long-end buybacks hours after the 30Y touched a 2007-high, with the debt crossing $40T, told the market exactly who stands behind the long bond — and gold read it as yield-curve management by another name. Gold +5.6% *into* a 52-week-high 10Y print is the tell: this is a fiscal-credibility bid, and those do not mean-revert on a single data print. NEM's RSI 84.6 is a timing problem, not a direction problem.
 
-**The China Question:** The late-July Politburo confirmed the pattern: supportive language, precision-guided support, no bazooka. Q2 GDP 4.3% is below target, property is still deflating and now *spilling across borders* (PIIE's framing this month), and Beijing is choosing destocking over reflation. For copper and iron ore, that means the demand-side story stays EV/grid/data-center-led, not China-property-led. If a real package ever lands with DXY under 100, the commodity gap-up will be violent. It did not land this week.
+**The China Question:** July's data dump (Monday) confirmed the grind: retail +0.6% y/y, IP +4.5%, FAI **-6.7%** YTD, and new bank loans **negative for the first time on record**. Beijing's precision-support posture has not changed the trajectory. For copper and iron ore, the demand story stays EV/grid/data-center-led. The violent gap-up scenario still requires a real package; it did not land this week, and July's numbers say the pressure for one is building.
 
-**The Oil Question:** The -9.1% crash to $77 lasted exactly one week. WTI's +5.4% reversal to $82.40 on Iran isolation measures rewrites the chemicals margin paragraph: feedstock relief is paused, and if Hormuz risk premia build toward $90, the coatings/plastics margin expansion story inverts. The stagflation tail (energy up, consumer down) is the one combination this sector cannot outrun. Not there yet — but the tail got fatter this week.
+**The Oil Question:** Two straight +5% weeks takes WTI to $87.06 with the Hormuz blockade in effect and talks dead. The $90 line — where chemicals margin math flips negative — is now a when, not an if, unless the Strait reopens. The stagflation tail (energy up, factory PMI down, consumer soft) is fatter than it was two weeks ago. The offset remains the same: a Fed priced at 70% hold and a dollar under 99. Watch August PCE (Wed Aug 26) and the Warsh keynote (Fri Aug 28) — one hot print with $90 oil and the 70/30 hold pricing inverts.
 
 ---
 
@@ -157,91 +161,88 @@ My posture: stay long the DXY-beneficiaries with their own catalysts — NEM (go
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Exhale — Rotation Week After the Everything Rally
+### This Week's Story: Two Metals Tapes — The Debasement Bid and the Tariff Scare
 
-XLB slipped **-0.6%** to close Friday at $52.54 — a deliberate exhale after last week's +4.8% everything-rally, and by any technical measure a successful one. The ETF probed **$53.60 on Tuesday** — within 1% of the $54.14 52W high — before the week's macro plot twists (oil reversal, consumer shock) took the momentum bid away. It never once tested the 50D MA at $51.34. This was not distribution; it was rotation, and the rotation map tells the real story of the week.
+XLB gained **+1.9%** to close Friday at **$53.54** — the highest close since February, 1.1% under the $54.14 52W high — on a week when the S&P fell -1.4% and the 10Y closed at a 52-week high. That relative strength headline hides the most violently bifurcated week this sector has printed all year: a 25-point spread between its winner (FCX +15.3%) and its big-cap loser (NUE -9.4%). Two stories ran in opposite directions. Both matter.
 
-**Act I — CPI Week Opens Strong.** Monday and Tuesday carried last week's momentum forward: DOW began its climb, NEM gapped on the Barrick news, and XLB pressed the highs. The market was pricing a benign CPI, and got it: Wednesday's July CPI printed **3.4% headline / 2.5% core**, in line, with core at its lowest since February. September hike odds, ~54% a week ago, ground down toward **~30-35%** by Friday. Under normal circumstances, that is rocket fuel for a commodity sector. It wasn't — because of what else was happening.
+**Act I — The Tariff Scare (Mon–Wed).** The week opened with a deadline: 50% Section 338 duties on ~$20B of Canadian goods were set for 12:01 AM Wednesday. Late Tuesday, Trump paused them three days — "we have a DEAL!" — and Wednesday Bloomberg reported the outline: **some Canadian steel and aluminum tariffs cut from 50% to 25%**. The market did the math instantly: Canada supplies roughly half of U.S. aluminum imports, and the domestic price premium that rebuilt steel and aluminum economics is a tariff artifact. The complex cratered: **KALU -12.8% Tuesday**, **NUE -5.85% Wednesday** (week: -9.4%, through its 50D), **CENX -11% Wednesday**, CLF -5.3% on the week. Algoma Steel jumped +24% in Toronto. XLB itself flushed to $51.78 Tuesday — and held its 50D MA ($51.56) by two dimes.
 
-**Act II — The Oil Reversal.** WTI crude ripped **+5.4% to $82.40/bbl**, retracing most of last week's -9.1% crash, as the U.S. escalated Iran isolation measures and Hormuz transit risk crept back into the price. Tuesday's 10Y spike toward 4.74% was the bond market pricing exactly that inflation channel. For Materials, oil is a double agent: it flatters energy-adjacent demand narratives but directly attacks chemicals feedstock margins. The market chose to price the attack: SHW -2.9%, PPG -4.1%, ECL -3.2%, IFF -2.0% — last week's coatings winners became this week's funding source.
+**Act II — The Debasement Bid (Wed–Fri).** Wednesday afternoon delivered the week's second bomb, this one bullish: with the 30Y Treasury at ~5.24-5.27% (highest since 2007) and the national debt crossing **$40 trillion**, Secretary Bessent **doubled long-end buybacks to at least $4B per operation** (Sept 9–Nov 4). The 10Y dipped to 4.65% — then the market read the deeper signal: fiscal dominance, yield-curve management, currency debasement. Gold went vertical: +3% Wednesday, and it never stopped — **$4,380 → $4,489 → $4,516 → $4,624 by Friday (+5.6%)**, with silver +6.9% to $69.47. The dollar broke: **DXY closed under 99 Wednesday through Friday, finishing at 98.80** — the first sub-99 closes of this regime. NEM ripped +7.9% Wednesday and +11.7% on the week to $131.58.
 
-**Act III — The Consumer Crack.** Friday delivered the week's most important data: **July retail sales -0.6% MoM** (vs. +0.2% expected) and **UMich August prelim sentiment at 51.0** (vs. ~54.5 expected, near record lows). Stacked on the -23K July payroll print, the slowdown story now has a labor leg *and* a consumer leg. XLB's Friday fade (-0.4% on 7.5M shares, lightest volume of the week) was orderly — but construction materials and housing-linked chemicals cannot ignore a consumer rolling over at 6.67% mortgage rates.
+**Act III — The Copper Melt-Up (Fri).** Freeport closed the week with a **+7.6% Friday to $76.66 — a new 52-week high** and +15.3% on the week. The fuel: Grasberg's Block Cave ramp confirmed on schedule (~65% of capacity in H2), the new Indonesian smelter *ahead of schedule*, the **ICSG flipping its 2026 copper outlook from surplus to deficit**, a volume guide of 3.1B→4.1B lbs by 2028, and an analyst pile-on (Wells Fargo OW $70, Raymond James $76, Argus $78) that price simply ran through. Copper near all-time highs at ~$6.58/lb; the "new oil of the AI boom" framing went mainstream this week.
 
-**The Rotation Winners.** The week's green names all had their own engines. **NEM (+4.2% to $117.76)**: Monday's Barrick settlement delivers **$1.95B cash** to Newmont and closes the Nevada dispute; gold at seven-week highs ($4,380, peaking $4,425 Tuesday) did the rest. The stock touched $120.19 Wednesday before RSI discipline (70.9) kicked in. **ALB (+3.8% to $136.15)**: clean post-earnings follow-through as Morningstar's $200 fair value and UBS's deficit-thesis Buy upgrade institutionalized the lithium re-rating. **DOW (+5.9% to $31.07)**: the week's surprise leader — a reaffirmed $0.35 dividend (4.51% yield) plus deep-value buying at 16.8x off the mat. **DD (+2.7%)** and **APD (+1.8%)**: quiet strength in specialty/industrial gas; APD closed 1.9% from its 52W high.
+**Act IV — The Saturday Resolution.** After Friday's close, the Canada talks **collapsed**: Carney suspended negotiations, the 50% Section 338 duties took effect at 12:01 AM Saturday, and Canada announced dollar-for-dollar retaliation beginning **Sept 8** (with targeted steel protection). The tariff shield that the steel/aluminum complex spent all week fearing for **survives fully intact**. Monday's open should hand back a chunk of NUE/KALU/CENX/CLF's week. The mid-week drawdown was a policy air pocket — violent, and temporary.
 
-**The Rotation Losers.** **FCX (-4.5% to $66.49)** took the week's heaviest large-cap profit-taking: the Zacks reminder that Q2 copper volumes fell 30% YoY (Grasberg ramp) finally collided with a +9.4% prior week, and a small insider sale at $70.00 gave sellers cover. Copper the commodity was flat — this was multiple compression, not signal. **NUE (-1.4%)** and **CLF (-2.9%)** consolidated near highs while the underlying steel tape (weekly CSP hikes, 6.4-week lead times, tariff shield) stayed firm. **LIN (-1.5%, RSI 36.2)** keeps quietly sliding toward oversold despite a clean Q2 — the gas giant is the sector's sleeper divergence to watch.
+**The Supporting Cast.** **CTVA +6.7%** rode Deere's Friday beat-and-raise and its "2026 = ag-cycle bottom" call. **ALB +5.2%** ground out a third straight post-earnings green week (SQM printed Wednesday; lithium sentiment firm). **DOW +4.1%** extended its 4.33%-yield value bid. On the other side: **SHW -3.3%** and **DD -5.4%** as WTI's second straight +5% week ($87.06) tightened the feedstock vise, and **VMC/MLM ~-2%** absorbed a -12.4% housing-starts print plus the 52-week-high 10Y close. China's July data dump Monday (retail +0.6%, FAI -6.7%, loans negative for the first time ever) passed without a stimulus answer.
 
-**The Small-Cap Border War.** HCC's +6.9% week pushed its market cap to $5.19B — graduated, promoted out of the watch table. CENX's -8.8% slide pulled it back below $5B ($4.62B) — re-admitted. MERC's negative-EBITDA quarter (Aug 6) sent it into a -20% slide at $0.47; it stays on the board as a distress case study, not an investable idea.
-
-**The Bottom Line:** XLB is +16.8% YTD — now *ahead* of SPY (+14.5%) — holding above its 50D MA, with the DXY regime (99.67, third week sub-100/101) still lifting all commodity boats. The week subtracted momentum and added information: the consumer is cracking, oil is back, and the Fed is cornered into pausing. That mix favors metals with micro catalysts (gold, lithium) over macro-beta chemicals until WTI stops rising or the consumer data stops falling. Next catalysts: PCE (Aug 28), China August PMIs (Aug 31), and the September 4 jobs report that will either confirm or kill the labor-crack narrative.
+**The Bottom Line:** XLB is +17.0% YTD — stretching its lead on SPY (+12.7%) on a week the market fell — holding a perfect 50D defense and closing at five-month highs with a Monday relief bid already scheduled. The regime deepened: DXY under 99 for the first time (Ophelia's add rail), gold's fiscal bid confirmed, and the tariff shield intact. The counterweights are real and rising: 10Y at a 52-week-high 4.74% (one bp from stress), WTI two dollars from the $90 margin-flip line, and factory PMI at a five-month low. Next gates: **July core PCE (Wed Aug 26)**, **Warsh's Jackson Hole keynote (Fri Aug 28)**, China August PMIs (Aug 31), ISM (Sep 1), and the August jobs report (Sep 4).
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-**Q2 2026 earnings season for XLB holdings is COMPLETE.** Final scorecard below; the calendar now turns to macro catalysts until Q3 season opens in mid-October.
+**Q2 2026 earnings season for XLB holdings is COMPLETE.** The calendar now turns to macro catalysts until Q3 season opens in mid-October. This week's adjacent prints that moved the sector:
 
-| Company | Ticker | Date | Quarter | Result / Key Metric to Watch |
+| Company | Ticker | Date | Quarter | Result / Sector Read-Through |
 |---|---|---|---|---|
-| **Freeport-McMoRan** | FCX | Jul 23 — REPORTED ✔ | Q2 2026 | Beat on prices; **copper volumes -30% YoY** (Grasberg ramp) — the digestion theme of this week |
-| **Newmont** | NEM | Jul 23 — REPORTED ✔ | Q2 2026 | Robust Q2; then **Aug 10: Barrick settlement — $1.95B cash in**, Nevada dispute closed |
-| **Nucor** | NUE | Jul 27 — REPORTED ✔ | Q2 2026 | Beat & raised; EPS $4.85; steel pricing strong, CSP hikes continuing weekly |
-| **Linde** | LIN | Aug 1 — REPORTED ✔ | Q2 2026 | Beat: EPS $3.73, margin 30.1%; guidance held $16.30–$16.50; stock grinding lower post-print (RSI 36) |
-| **Air Products** | APD | Aug 1 — REPORTED ✔ | Q2 2026 | Solid; stock +1.8% this week, 1.9% below 52W high |
-| **Albemarle** | ALB | Aug 6 — REPORTED ✔ | Q2 2026 | **Crushed:** adj. EPS $3.75, EBITDA +155%, Energy Storage +78%; follow-through week +3.8% |
-| **Mercer (SMID watch)** | MERC | Aug 6 — REPORTED ✔ | Q2 2026 | **Distress:** operating EBITDA **negative $21M**; stock -20% this week to $0.47 |
-| **Kaiser Aluminum (SMID watch)** | KALU | Jul 22 — REPORTED ✔ | Q2 2026 | **Record:** sales $1.3B, adj. EBITDA $166M (38.1% margin), FY outlook raised, leverage 2.1x |
+| **BHP Group** | BHP | Aug 18 — REPORTED ✔ | FY 2026 | Record iron ore production (265Mt) — supply healthy; China demand still the drag |
+| **SQM** | SQM | Aug 19 — REPORTED ✔ | Q2 2026 | Lithium peer print kept the complex bid; ALB +5.2% on the week |
+| **Deere & Co.** | DE | Aug 21 — REPORTED ✔ | Q3 2026 | **Beat-and-raise:** EPS $5.10, FY26 NI guide $4.75–5.0B, "2026 = ag-cycle bottom" → CTVA +6.7% |
+| **Kaiser Aluminum (SMID watch)** | KALU | Aug 17 — NEWS | — | **Fred Stephan named CEO and President** — leadership transition mid-tariff-storm |
+| **Freeport-McMoRan** | FCX | This week — NEWS | — | Grasberg ramp on schedule; Indonesian smelter ahead of schedule; WFC OW $70 / RJ $76 / Argus $78 |
 
-**Macro catalysts between now and Q3 season:** PCE deflator (Aug 28) — the Fed's preferred gauge after the in-line CPI; **China August PMIs (Aug 31)** — the first hard read on whether late-July Politburo support is reaching factories; **August NFP (Sep 4)** — confirmation or denial of the -23K labor crack; September FOMC (mid-month) — hike odds currently ~30-35%. **Marky's Binary Event Read:** with the earnings board cleared, Materials trades as a pure macro tape for the next month. That means DXY and WTI are the two dials that matter daily: DXY under 100 keeps the wind at the sector's back; WTI over $90 takes the chemicals bid away. Position accordingly.
+**Macro catalysts between now and Q3 season:** **July core PCE (Wed Aug 26)** — the Fed's preferred gauge, core PCE last ~3.3%; **Warsh keynote at Jackson Hole (Fri Aug 28, 10 AM ET)** — first as Fed Chair, into a 52-week-high 10Y; **China August PMIs (Aug 31)** — do July's grim numbers force the support package?; **ISM Mfg (Sep 1)** — does the flash mfg PMI's 5-month low confirm?; **August NFP (Sep 4)**; **Canada retaliation effective Sept 8** — targeted steel protection details; September FOMC (mid-month, ~70/30 hold). **Marky's Binary Event Read:** XLB sits 1.1% below its 52W high with a Monday tariff-relief bid scheduled and a PCE/Warsh double gate mid-week. Over $54.14 on volume, price discovery with a debasement tailwind. The failure case runs through $51.56. Trade the level, respect the gate.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- DXY breaks below 99 → fresh commodity leg; XLB clears $54.14 and price-discovers
-- PCE (Aug 28) confirms disinflation → hike odds die → 10Y slides under 4.5% → VMC/MLM finally re-rate
-- Gold pushes through $4,425 → $4,500+ → NEM's windfall-funded buybacks meet a rising metal
-- China Politburo support shows up in Aug PMIs (Aug 31) → copper/iron ore catch a real demand bid
-- ALB's H2 lithium deficit narrative (UBS) starts printing in spot prices → $150+ reclaims
-- WTI stalls under $85 → chemicals margin math stabilizes → SHW/PPG resume the uptrend
+- **Monday's tariff-collapse relief** re-joins steel/aluminum to the metals melt-up → XLB clears $54.14 → price discovery with DXY under 99
+- Gold's fiscal bid extends toward GS's $4,900 → NEM's windfall-funded buybacks meet a rising metal (post-consolidation)
+- Soft PCE (Aug 26) + dovish Warsh (Aug 28) → 10Y backs off 4.74% → construction materials (VMC/MLM) finally catch a rate bid
+- ICSG deficit call starts printing in copper price → FCX's $70-72 pullback gets bought instantly
+- China answers July's data (negative loans!) with a real package → the violent commodity gap-up scenario activates with DXY under 99
+- WTI stalls under $90 → chemicals margin fear fades → SHW/PPG rejoin
 
 ### 🔴 Bear Case
-- **WTI spikes through $90 on Hormuz escalation** → headline CPI re-accelerates → hike odds roar back → DXY snaps over 100.50/101 → **embargo reinstated**
-- Consumer crack hardens: another month of negative retail + sub-52 UMich → volume recession for chemicals and construction materials
-- 10Y re-takes 4.75% on energy-led inflation → the entire rate-sensitive third of the sector reprices
-- NEM gives back the settlement pop (RSI 70.9) and drags the metals complex with it
-- FCX's volume decline becomes the story (Grasberg slips again) → copper miners de-rate even with flat copper
-- China property spillover (PIIE) hits EM demand channels → iron ore under $95, copper under $6.20
+- **10Y breaks 4.75% on a hot PCE (Aug 26) or a hawkish Warsh (Aug 28)** → the debasement trade's dark twin: multiples compress sector-wide even as metals hold
+- WTI through $90 on Hormuz escalation → chemicals margin-cut warnings begin → SHW/PPG/DD re-rate lower
+- Canada's Sept 8 retaliation escalates beyond steel → North American supply-chain friction tax on the whole sector
+- China August PMIs (Aug 31) confirm factory contraction with no package → copper/iron ore lose the demand narrative
+- NEM's RSI 84.6 resolves violently → gold miners drag the complex off the highs
+- Factory PMI's 5-month low is the real economy catching up to the consumer crack → volume recession for chemicals
 
 ### ⚠️ The Wild Card
-**The stagflation tail got fatter this week.** Energy reversing higher (+5.4% WTI) at the exact moment the consumer cracks (retail -0.6%, UMich 51.0) is the one macro combination that hits Materials from both sides: input costs up, volumes down. The offset today is the Fed — hike odds at ~30-35% and falling mean the rate shock absorber is deployed, and DXY under 100 keeps the commodity translation gift alive. The setup to watch into month-end: if PCE (Aug 28) runs hot *because of energy* while the August jobs report (Sep 4) confirms labor cracks, the market stops pricing "no hike" and starts pricing "can't hike into a recession with 4% headline inflation" — that is a genuinely regime-changing thought, and it would put DXY back over 101 within days. Rails: DXY 99.00 / 100.50; WTI $90; 10Y 4.75%; NEM $105 hold on any pullback. None broken. All live.
+**Fiscal dominance is no longer a theory — it is a policy.** The Treasury intervening in the long end hours after a 2007-high 30Y print, with debt past $40T, is the regime this wiki has been circling for months. The market's verdict was instantaneous: gold +5.6%, silver +6.9%, DXY under 99 — *while the 10Y closed at a 52-week high*. That combination (falling dollar, rising yields, ripping metals) is the debasement signature, and it is structurally bullish for the metals third of this sector and structurally hostile to the rate-sensitive third. The wild card is the path: if buybacks fail to cap the long end (Sept 9 start), the 10Y walks through 4.75% → 5.0% and the entire equity multiple structure reprices — metals included, eventually. If they succeed, the dollar slides further and the commodity bid accelerates. Either way, Materials is the sector positioned at the exact center of the experiment. Rails: DXY 98.00 / 100.50; 10Y 4.75%; WTI $90; NEM $120 hold on any consolidation. Two were touched this week. All four are live.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"No regime change this week — and that is the headline. DXY at 99.67 keeps the restriction lifted for a third straight week; my commodity longs stay on. But the week rearranged the furniture: oil's +5.4% reversal means the chemicals feedstock gift is paused, and Friday's consumer data (retail -0.6%, UMich 51.0) means the slowdown now has two legs — labor and consumption. My positioning logic is unchanged but sharpened: own the metals with their own catalysts — NEM (gold + $1.95B windfall), ALB (H2 lithium deficit), FCX on the dip toward $63-65. Hold the tariff compounder NUE. Downgrade the oil-sensitive coatings pair (SHW, PPG) until WTI stops making higher highs. The embargo rule is mechanical: DXY closes above 101, it returns; below 99, I add. Between those rails, I trade the catalysts, not the noise."*
+**Ophelia:** *"The regime deepened this week — that is the headline. DXY at 98.80, sub-99 for three straight closes: my restriction stays lifted for a fourth week, and my add rail — the mechanical one, below 99 — was touched. I add to the fiscal-bid metals: FCX on the $70-72 pullback after its +15% vertical, NEM held not chased at RSI 84.6, ALB held through the re-rating. And I am upgrading the steel complex for Monday: the tariff shield survived its only real test of the year — NUE at $243.63 with HRC at $1,181 and the deal dead is a policy air pocket, and I buy air pockets with shields. My counterweights are armed and I say them plainly: the 10Y closed at 4.74%, one basis point from my stress line, on the same week the dollar broke — falling currency plus rising yields is the debasement signature, metals-bullish and multiples-bearish at once. WTI at $87.06 is two dollars from the chemicals margin-flip. Rails: DXY 98.00/100.50, 10Y 4.75%, WTI $90. PCE Wednesday and Warsh Friday decide which rail breaks next."*
 
-**Marky:** *"A -0.6% week after +4.8% is a gift — the ETF held the 50D MA ($51.34) every day and the Friday fade came on the lightest volume of the week. That's a bull consolidation. My map: $53.60 (Tuesday's high) is the gate, $54.14 is the prize, $51.34 is the line. RSI 55.8 has room both ways. Trades I am stalking: FCX pullback entry $63-65 with a stop under $61 — the commodity never broke, only the multiple did. NEM is hands-off above $115 with RSI 70.9; I revisit at $105-108. ALB holds above $130 and I add on a dip to $125. LIN at RSI 36 is the sleeper — a stabilization above $480 sets up a mean-reversion rental toward $500. And DOW's breakout over $31 with a 4.5% yield is the kind of value-momentum hybrid I don't fight."*
+**Marky:** *"XLB closed at a five-month high, held its 50D by two dimes on the scare day, and finished with a +2.1% Friday breakout on the week's best up-volume — while its steel subsector was down nine percent. That is rotation with sponsorship, and it resolves upward. My map: $54.14 is the only supply left; a weekly close above it is price discovery. Support: $52.42, then the 50D at $51.56. Trades I am stalking: FCX only on the $70-72 pullback — I don't chase +15% weeks at RSI 73, but the deficit story is real. NEM is hands-off at RSI 84.6; I revisit at $120-125. The Monday trade is the steel complex: NUE reclaiming its 50D ($248) on the tariff collapse is a momentum long with a $235 stop; CENX over $46 joins it. ALB holds above $135 and I add on $130. And SHW/PPG stay on the avoid list while WTI has an $87 handle."*
 
-**Cecil:** *"The garden gave me a settlement this week — literally. NEM's $1.95B Barrick windfall lands on a 14.8x stock with net cash; I hold and let the buyback math work. DOW is my reconsideration of the week: the reaffirmed $0.35 dividend at 4.51% yield and 16.8x earnings is honest value, and buyers finally noticed — I am rebuilding a position. ALB's follow-through week, with Morningstar at $200 fair value, tells me institutions are underwriting the lithium recovery now; forward ~11x is still cheap. I am trimming nothing, but I am done *adding* to anything oil-sensitive until crude stops climbing — SHW at 33x with $82.40 WTI is a margin equation I don't need to solve this month. CENX at 8x on the small-cap board is the speculation I allow myself: one position, sized like a speculation, because 8x with a Buy consensus is a number, not a hope."*
+**Cecil:** *"The garden survived a frost scare this week — and the frost never came. The tariff shield over my steel and aluminum names was tested Tuesday and Wednesday and stands intact this morning; NUE at 19.5x with HRC at $1,181 is the value entry the fear built, and I will revisit my position Monday. NEM at 16.6x trailing — 12.4x forward — with record free cash flow, a $1.95 billion settlement inbound, and $4,624 gold is the finest fundamental story in this sector; I hold every share and add only when the RSI cools below 70. DOW's second straight strong week at a 4.33% yield confirms the rebuild. CENX at 3.6x forward earnings with the tariff question resolved is my sanctioned speculation — sized like one. I am buying nothing oil-sensitive: $87 crude is a margin tax on SHW at 31.9x that I do not need to pay. And KALU — new CEO, record quarter, -15% on a fear that expired at midnight — goes on the watch list for Monday's open."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / stock data feeds: XLB + 16 holdings + 6 small/mid-caps daily OHLCV through Fri Aug 14, 2026 close
-- Commodity price data: COMEX gold/silver/copper, WTI crude (CL=F), lithium spot commentary (Morningstar/UBS), Nucor CSP HRC (GMK Center)
-- U.S. macro: July CPI 3.4%/core 2.5% (Aug 12); July PPI ~flat (Aug 13); July retail sales -0.6% (Aug 14); UMich Aug prelim 51.0 (Aug 14); ISM Mfg 55.6% (Aug 3); July NFP -23K (Aug 7)
-- Rates/currency: 10Y Treasury 4.70% (+4 bps W/W); DXY 99.67; 30Y FRM 6.67% (Freddie Mac PMMS, week ending Aug 13)
-- Company disclosures: Newmont/Barrick Nevada settlement — $1.95B to NEM (Aug 10, WSJ/Newmont IR); Dow Inc $0.35 quarterly dividend declared (Aug 13, Dow IR); Kaiser Aluminum record Q2 (Jul 22, KALU IR); Mercer Q2 negative $21M operating EBITDA (Aug 6, Mercer IR); Albemarle Q2 (Aug 6) + Morningstar $200 FV note + UBS Buy/deficit thesis
-- Freeport-McMoRan: Zacks Q2 volumes analysis (Aug 13); insider transaction disclosure (Aug 13)
-- China: late-July Politburo read-throughs (supportive tone, no bazooka); PIIE "China's property bust is spilling across its borders" (Aug 7)
+- Yahoo Finance / yfinance: XLB + 16 holdings + 6 small/mid-caps daily OHLCV through Fri Aug 21, 2026 close (weekly changes on dividend-adjusted closes)
+- Commodity data: COMEX gold $4,624 / silver $69.47 / copper ~$6.58 (GC=F, SI=F, HG=F), WTI $87.06 (CL=F); Nucor CSP HRC $1,170/t (Aug 17); HRC $1,181/t (Ryerson, Aug 17); Midwest HRC avg $59.83/cwt (8/19)
+- Trade policy: Section 338 pause (Trump Truth Social, Aug 18); Bloomberg preliminary-deal report — 50%→25% on some Canadian steel/aluminum (Aug 19); **talks collapsed — 50% duties effective 12:01 AM Aug 22; Canada retaliation from Sept 8 incl. targeted steel protection** (AP/WJCL, USTR Greer statements, PM Carney); Tax Foundation tariff tracker; Section 338 exclusions: energy, potash, critical minerals, Section 232 goods
+- Treasury/Fed: long-end buybacks doubled to ≥$4B/op, Sept 9–Nov 4 (Bessent, Aug 19); 30Y ~5.24-5.27% peak (highest since 2007); debt >$40T; hawkish July FOMC minutes 9-3 (Aug 19); Sept ~70% hold / ~30% hike
+- U.S. macro: flash composite PMI 56.0 (52-mo high) / mfg 53.2 (5-mo low) (Aug 21); July housing starts 1,239K -12.4%, permits +5.0% (Aug 18); July retail -0.6% + UMich 51.0 (prior Friday)
+- Rates/currency: 10Y 4.74% close (52W-high close, +4 bps W/W); 2Y ~4.23%; DXY 98.80 (-0.87%, sub-99 Wed–Fri); 30Y FRM 6.65% (Freddie Mac PMMS, wk ending Aug 20)
+- Company news: FCX Grasberg on schedule + Indonesian smelter ahead of schedule + ICSG 2026 deficit flip (Aug 20-22; StocksToTrade/Trefis/SimplyWallSt); NEM +38% 30-day gold rally recap (Tickeron, Aug 21); gold +3% on buyback doubling (Canadian Mining Report, Aug 21); KALU CEO Fred Stephan named (Aug 17); KALU -12.8% Aug 18 (Kalkine); KALU PT raise $120/Hold (Seeking Alpha, Aug 21); CENX Q3 guide $325-345M + insider sales (Tickeron, Aug 20); NUE -5.85% Wed / -9.4% wk (IBD, Aug 22); DE Q3 beat-and-raise "ag-cycle bottom" (Aug 21); BHP FY record iron ore 265Mt (Aug 18); SQM Q2 (Aug 19)
+- China July data (Aug 17): retail +0.6% y/y, IP +4.5%, FAI -6.7% YTD, new bank loans negative first time on record
+- LME aluminum inventories lowest since 1990 (Bloomberg, Aug 19)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-15*
+*Last updated by Saturday Research Crew: 2026-08-22*
 *Next update: Every Saturday 11:19 AM ET*
 *Data sources: Yahoo Finance, COMEX, Freddie Mac PMMS, company IR, market data feeds*
-*Note: Equity data through Friday Aug 14 close. Commodity/macro data through Friday Aug 14.*
+*Note: Equity data through Friday Aug 21 close. Commodity/macro data through Friday Aug 21. Section 338 tariff resolution as of Saturday Aug 22, 12:01 AM ET.*
