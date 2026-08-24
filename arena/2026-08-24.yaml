@@ -1,0 +1,35 @@
+week: '2026-08-24'
+lock: 2026-08-24 08:50 ET
+entry_date: '2026-08-24'
+exit_date: '2026-08-28'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 766.05
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: MRK
+    weight: 0.2
+    entry_price: 149.12
+    entry_price_source: open
+  - ticker: GILD
+    weight: 0.2
+    entry_price: 146.24
+    entry_price_source: open
+  - ticker: LMT
+    weight: 0.2
+    entry_price: 571.48
+    entry_price_source: open
+  - ticker: COIN
+    weight: 0.2
+    entry_price: 188.7
+    entry_price_source: open
+  - ticker: NVDA
+    weight: 0.2
+    entry_price: 215.38
+    entry_price_source: open
