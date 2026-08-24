@@ -1,0 +1,76 @@
+week: '2026-08-17'
+status: closed
+positions:
+- ticker: TER
+  weight: 0.204
+  sponsor: Ophelia
+  thesis: 'Aligned with Technology sector rotation. Macro score: 113. (confidence:
+    77.3)'
+  entry_price: 432.2550048828125
+  entry_date: '2026-08-17'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 375.739990234375
+  exit_date: '2026-08-21'
+  exit_reason: week_end
+  pnl_pct: -13.07
+- ticker: ALL
+  weight: 0.151
+  sponsor: Cecil
+  thesis: 'Deep value at 5.2x earnings with solid fundamentals. Score: 98. (confidence:
+    89)'
+  entry_price: 261.6300048828125
+  entry_date: '2026-08-17'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 253.8300018310547
+  exit_date: '2026-08-21'
+  exit_reason: week_end
+  pnl_pct: -2.98
+- ticker: HIG
+  weight: 0.151
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 9.5. Score: 93. (confidence:
+    80.3)'
+  entry_price: 138.66000366210938
+  entry_date: '2026-08-17'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 136.10000610351562
+  exit_date: '2026-08-21'
+  exit_reason: week_end
+  pnl_pct: -1.85
+- ticker: VICI
+  weight: 0.098
+  sponsor: Cecil
+  thesis: 'Defensive characteristics with stable cash flows. Score: 92. (confidence:
+    76.6)'
+  entry_price: 26.104999542236328
+  entry_date: '2026-08-17'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 26.510000228881836
+  exit_date: '2026-08-21'
+  exit_reason: week_end
+  pnl_pct: 1.55
+spy_entry: 775.7609252929688
+vix_at_entry: 15.0
+fed_stance: Hold. Rates 3.50-3.75% (Jul 29 FOMC, 9-3, three hike dissents); cool core
+  CPI 2.5% cut Sep hike odds to ~30-35%; FOMC minutes Wed 8/19 and Warsh's first Jackson
+  Hole keynote Fri 8/21 are the week's policy gates.
+total_weight: 0.604
+cash_weight: 0.396
+weighted_return: -3.24
+spy_return: -1.29
+alpha: -1.95
+spy_exit: 765.719970703125
+close_date: '2026-08-21'
+hit_rate: 0.25
