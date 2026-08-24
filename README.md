@@ -185,6 +185,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-08-24 | [View](reports/2026-08-24-report.md) | 15.9 | -1.35% | ALL (Cecil) |
 | 2026-08-17 | [View](reports/2026-08-17-report.md) | 15.0 | +0.48% | TER (Ophelia) |
 | 2026-08-10 | [View](reports/2026-08-10-report.md) | 15.2 | +3.18% | ENGINE ABORT (no book) |
 | 2026-08-03 | [View](reports/2026-08-03-report.md) | 16.0 | +0.28% | ACN (Cecil) |
