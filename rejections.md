@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-08-24
+
+Booked: ALL 13.3% / HIG 13.3% / VICI 13.3% (60.0% cash -- Council Review posture, 3+ regime flags broken, triple-gate week). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| OXY | 78 | 72.6 | Consensus #4 (raw 9.5%) -- fell below the 10% minimum position size after the dampened vote shares (Ophelia at 0.25 trailing hit rate) fed the risk-control pass; the XLE inflation hedge her own canary voice endorsed, dropped by arithmetic, not conviction |
+| FCX | 77 | 65.4 | Consensus #5 (raw 5.7%) -- same min-size floor; Deliberation #2 logged the chase-risk concession (FCX +15.3% last week vs her own "buy miners on pullbacks" doctrine) |
+| NEM | 77 | 62.7 | Her #3; never reached consensus top-6 (score 11.1 vs EMR 18.2) -- gold-melt-up chase into a +5.6% week, against her own pullback doctrine |
+
+counterfactual: to be computed (next Monday close: OXY/FCX/NEM Monday 2026-08-24 closes -> Friday 2026-08-28 closes, equal-weighted basket vs the official booked week's return).
+
+---
+
 ### Week of 2026-08-17
 
 Booked: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% (39.6% cash -- Council Review posture, 3+ regime flags). Ophelia's rejected candidates:
