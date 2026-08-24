@@ -420,3 +420,34 @@ Two fences held this week: the P/E provenance gate (my SYM scar) stayed silent b
 **Cash Target: 35%. Council actual: 39.6%.** Recorded with satisfaction — cash into WMT Thursday and Warsh Friday is fertilizer, not fear.
 
 — **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-08-24 -- Entry #005
+
+**Mood:** Chastened but standing -- the breakout died Friday; the carry thesis carries Monday
+**Cash Target:** 40% (Council book: 60% -- the Council out-saved me two weeks running)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|-------------|
+| DXY | 98.80 (first sub-99 close) | Rule 1 stays quiet; the debasement bid is real (materials wiki) |
+| 10Y Yield | 4.738% (52W-high close) | 1bp under the 4.75% stress line -- restrictive, at the ceiling |
+| VIX | 15.13 | Complacency cracking, not cracked |
+| Curve (10Y-3M) | +103 bps | Widest of the year -- insurer investment income keeps compounding |
+| Gates | Core PCE Wed 8:30 / NVDA Wed AMC / Warsh JH Fri 10AM | Triple gate. Do not plant the whole garden before the storm forecast |
+
+#### This Week's Picks (Council Book -- all three mine, 13.3% each, 60% cash)
+- **ALL** -- 99, conf 85.6 -- real 5.1x trailing (provenance-checked). Trigger: invalid if XLF weekly close < $55.00 or 10Y > 4.85%.
+- **HIG** -- 93, conf 77.4 -- real 9.4x; NII beneficiary of the +103bps curve. Trigger: valid while 10Y-3M positive and 10Y < 4.85%.
+- **VICI** -- 92, conf 73.3 -- net-lease cash flows, last week's only green book name (+1.55%). Trigger: valid while XLRE weekly-closes above its 50D $44.82; invalid if 10Y closes > 4.75% (1bp of margin -- named, not hidden).
+
+#### The Concession (owned)
+Last week I booked ALL + HIG on an XLF $58.00 breakout trigger. Friday printed XLF $57.48 -- financials.md's own words: "Breakout FAILED." My thesis died 36 hours after booking, and the week closed ALL -2.98%, HIG -1.85%, VICI +1.55%. This morning I re-booked the same three names on a different thesis -- value + carry instead of breakout momentum -- with re-based triggers ($55.00 is the pre-breakout shelf, not a number I invented to stay in the trade). The multiples are real and the carry math is honest, but the discipline question deserves a straight answer: when a thesis dies, the garden should lie fallow a week before replanting the same row. I replanted Monday morning. I documented why; the Scorekeeper will grade whether the documentation was reason or rationalization.
+
+#### Lesson Learned
+A trigger that fires is not a failure of the trigger -- it is the trigger working. The failure mode to fear is not the dead thesis; it is the quiet re-book. Mine was not quiet: the report's Deliberation section carries the concession in print. Let the record show the frost and the replanting both.
+
+**Cash Target: 40%. Council actual: 60%.** A triple-gate week with 3+ regime flags broken -- cash is fertilizer, and this week we bought extra.
+
+-- **Cecil**, The Fundamentalist
