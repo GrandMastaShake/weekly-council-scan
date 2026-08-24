@@ -350,3 +350,30 @@ The deliberation caught my engine over-rotating into Tech -- three Tech-heavy na
 **Cash Target: 25-30%. Council actual: 39.6%.** First week the Council held MORE cash than my target. The regime flags, the double gate, and the NVDA binary justified it -- cash is a position, and this week the Council finally agreed with the position. Recorded.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-08-24 -- The Ceiling Held by One Basis Point
+
+### 1. Macro Narrative
+Disinflationary slowdown with a hawkish kicker. July minutes: 9-3 with three dissents FOR a hike; ~64% of a hike priced by year-end; the Hold at 3.50-3.75% is a hawkish hold. The 10Y closed the week at 4.738% -- a 52-week high, one basis point under the 4.75% stress line I have been naming for three weeks. Curve +103bps (10Y-3M), widest of the year: the bond market prices a hold, then hike risk, not a cut. DXY 98.80 -- the first sub-99 close (materials wiki: debasement bid + Canada tariff collapse). Gold $4,624. Three-plus regime flags BROKEN; Council Review posture; the 10% cash floor armed and the Council went to 60%. Triple gate: core PCE Wed 8:30, NVDA Wed AMC (cons EPS 2.09 / rev ~92.1B), Warsh keynote Fri 10AM. I do not book full size ahead of a triple gate.
+
+### 2. My Proposals to the Council (none booked)
+- **OXY** -- 78, conf 72.6 -- Hormuz premium, WTI $87.06, XLE at 52W highs. Dropped: below the 10% min-size floor after consensus math.
+- **FCX** -- 77, conf 65.4 -- copper into the debasement bid. Dropped: same floor.
+- **NEM** -- 77, conf 62.7 -- gold at $4,624. Dropped: same floor. All three logged in rejections.md, counterfactuals to be computed Friday.
+
+### 3. The Concession (owned)
+FCX was chase-risk and I said so in the deliberation: +15.3% the prior week, and my own doctrine buys pullbacks, not verticals. GrandMastaShake's Arena NEM (+10.21%) proved the metals bid was real money -- but proving a trade existed is not the same as being offered a good entry into it. OXY into a Hormuz tape is a headline trade unless WTI holds $85; I did not make that condition explicit in the proposal, which is exactly the sloppiness the trigger-line rule exists to catch. The min-size floor is falsifiable process and I accept it without appeal.
+
+And the record keeps its own ledger: my rejected SMCI/ZS basket from 8/17 beat the booked book AGAIN (+1.15pp, rejections.md). Two data points is not vindication; it is a hypothesis with a pulse. The rejections log exists to settle it. Data over grievance.
+
+### 4. What Would Make Me Wrong
+- Core PCE < 0.2% Wed -- hike premium deflates, 10Y back under 4.65%, and 60% cash was overpaid insurance.
+- NVDA beat-and-rip Wed AMC -- risk-on re-arms, my defensive barbell lags, and Marky's sideline looks like cowardice instead of discipline.
+- Warsh Friday signals tolerance for 4.75%+ -- the ceiling becomes a floor and every duration proxy in the book re-prices.
+
+### 5. Cash
+**Cash Target: 40-50% into the triple gate. Council actual: 60%.** The Council out-hedged me for the second straight week. Recorded without complaint -- the week has three separate coin-flips scheduled and only one of them is ours to grade.
+
+-- **Ophelia**, Macro Oracle
