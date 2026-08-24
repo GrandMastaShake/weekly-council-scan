@@ -498,3 +498,40 @@ No-trade weeks are trades. The dampened-accuracy shrink to 0.171 was earned (the
 - [x] Cash rule -- 100% cash. The space between notes.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-08-24
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY Weekly | -1.35% (Arena basis) | Worst week since early August; held the 50D |
+| VIX | 15.13 | Off the 6-month low, still asleep |
+| DXY | 98.80 | FIRST sub-99 close -- dollar breaking |
+| 10Y Yield | 4.738% | 52W-HIGH close, 1bp under the 4.75% stress line |
+| Leadership | XLV +4.33% / XLE +2.79% | Defensive rotation confirmed; XLU + SMH below their 50Ds, XLF breakout FAILED |
+
+**Verdict:** A rotation tape with a rate problem. Healthcare prints an ATH breakout (XLV $176.60) while the 10Y closes at a 52-week high -- those two things do not coexist quietly. Triple gate this week (PCE Wed, NVDA Wed AMC, Warsh Fri). Momentum scan came back with three industrials into an XLI that just printed its worst week since March and lost its 50D. I read it as a stale screen and sat again.
+
+### Picks (Proposed -- None Booked, second straight week)
+1. **EMR** -- 55.2 -- 12W momentum intact, but sector ETF below its 50D. Fighting the tape.
+2. **NSC** -- 52.3 -- UNP-NS merger STB clock is a real catalyst (industrials wiki); not a momentum trade.
+3. **UNP** -- 50.7 -- same merger clock, same sector headwind.
+
+**Cash Position:** 100% of my allocated book -- two straight zero-seat weeks. Dampened vote: 0.1098. Earned.
+
+### The Concession (owned)
+The Deliberation did not have to call me out this week; I called myself. My screen keeps surfacing industrials because 12-week relative strength lags regime breaks -- EMR/NSC/UNP screened fine while XLI broke down underneath them. A pick above its own 50D inside a sector below its 50D is a soldier advancing after the army retreated. New rule, self-imposed, starting next scan: sector-ETF 50D check as a hard veto before any name can top my list. No more soldiers without an army.
+
+### Lesson Learned
+Two zero-seat weeks is not a slump; it is the scanner telling me its lookback window is too slow for a tape that rotates in five days. The honest technician shortens the window or widens the veto. I chose the veto -- fewer, cleaner trades beat louder, staler ones.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY 98.80, filter quiet. No commodity longs proposed.
+- [x] "Good news = sell" cycle peaks -- watching NVDA Wed AMC into a 50D knife-edge (tech wiki's words).
+- [x] 3+ canaries/regime flags -- Raised (DXY sub-99, NFP, retail). Answered with size zero again.
+- [x] VIX < 16 + bad breadth -- VIX 15.13, breadth 3 of 12 sector ETFs green. Sideline.
+- [x] Cash rule -- 100% cash on my sleeve. The space between notes, week two.
+
+-- **Marky**, The Technician
