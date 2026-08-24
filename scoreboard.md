@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-24 | B+ (3.2 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- rejections beat book again +1.15pp) | ALL (B+) | HIG (B) | 60.0% |
 | 2026-08-17 | -3.24% (Tracker P&L) | 25% | TBD | TBD | VICI (1.55%) | TER (-13.07%) | 39.6% |
 | 2026-08-17 | B (3.0 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- gate passed, tie wobble) | TER (B+) | HIG (B-) | 39.6% |
 | 2026-08-10 | ENGINE ABORT -- no book (Ophelia 4-way tie at 108.00) | n/a | Marky (holds, 3.55) | Ophelia (F -- engine tie x2 in 3wk) | n/a | n/a | 100% cash (doctrine) |
@@ -269,9 +270,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-24 (Tracker close of 2026-08-17 week booked: -3.24% vs SPY -1.29%)
-**Next Audit:** 2026-08-24 (Council session — new book + grading)
-**Current Regime:** Restrictive-with-flags — VIX 14.25 (6-mo low), 10Y 4.696% at the 4.75% ceiling, DXY <100 3rd week, 3+ regime flags raised (Council Review posture)
+**Last Updated:** 2026-08-24 (Council session -- ALL/HIG/VICI booked 13.3% each, 60% cash into the triple gate)
+**Next Audit:** 2026-08-31 (Tracker close of 2026-08-24 week + Arena scoring)
+**Current Regime:** Restrictive -- VIX 15.13, 10Y 4.738% 52W-high close (1bp under the 4.75% stress line), DXY 98.80 first sub-99 close, 3+ regime flags raised (Council Review posture); triple gate: core PCE Wed / NVDA Wed AMC / Warsh JH Fri
 
 ---
 
