@@ -101,9 +101,17 @@ def yahoo_close(symbol, end=None, window_days=12):
         tz_off = res.get("meta", {}).get("gmtoffset", 0)
         ts = res.get("timestamp", [])
         closes = res.get("indicators", {}).get("quote", [{}])[0].get("close", [])
+        today_utc = dt.datetime.now(tz=dt.timezone.utc).date()
         for t, c in zip(reversed(ts), reversed(closes)):
             if c is not None:
                 day = dt.datetime.fromtimestamp(t + tz_off, tz=dt.timezone.utc).date()
+                # Skip TODAY's bar on weekdays: before the 4pm ET close it is a
+                # forming bar, and comparing a Friday close against a Monday
+                # overnight futures gap produces false FAILs (gold 8/24, VIX
+                # 8/17). Weekend/holiday runs are unaffected -- their latest
+                # bar is already the last completed session.
+                if day == today_utc and today_utc.weekday() < 5:
+                    continue
                 _fetch_cache[symbol] = (float(c), day.isoformat())
                 return _fetch_cache[symbol]
     except Exception:
