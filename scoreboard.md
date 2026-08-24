@@ -83,7 +83,7 @@ All three agents converged on the same sector. The Synthesizer weighted it heavi
 2. **4-week rolling average is the only standing that matters.** A single A means nothing. Three A's mean something. Three F's mean revision.
 3. **Every pick gets a letter grade.** Direction AND magnitude matter. Direction alone is a B at best.
 4. **Every F triggers a post-mortem.** What signal was missed? What was overweighted? What changed between prediction and outcome?
-5. **3+ consecutive D or F grades from one agent = mandatory harness revision.** The agent's beliefs, scars, and operating principles are reviewed and updated. Previous version is archived.
+5. **3+ consecutive D or F grades** from one agent = mandatory harness revision. The agent's beliefs, scars, and operating principles are reviewed and updated. Previous version is archived.
 6. **Overall Council Grade below C+** (2.5 avg) triggers a **Council Review.** No new picks until Review is complete.
 7. **Narrative grades are separate from pick grades.** Macro narrative, sector rotation, and micro alpha each get a Yes / Partial / No. They do not affect the composite but feed into Lessons Learned.
 8. **Unanimous picks are flagged.** The Scoreboard demands: where is the hedge? Where is the contrarian call? Consensus without dissent is groupthink.
@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-17 | -3.24% (Tracker P&L) | 25% | TBD | TBD | VICI (1.55%) | TER (-13.07%) | 39.6% |
 | 2026-08-17 | B (3.0 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- gate passed, tie wobble) | TER (B+) | HIG (B-) | 39.6% |
 | 2026-08-10 | ENGINE ABORT -- no book (Ophelia 4-way tie at 108.00) | n/a | Marky (holds, 3.55) | Ophelia (F -- engine tie x2 in 3wk) | n/a | n/a | 100% cash (doctrine) |
 | 2026-08-03 | -1.03% (Tracker P&L) | 40% | TBD | TBD | ACN (3.46%) | SYM (-9.50%) | 0.0% |
@@ -268,8 +269,8 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-17 (Council scorecard added; Tracker close due Friday 2026-08-21)
-**Next Audit:** 2026-08-24 (Tracker close of 8/17 week + Ophelia harness watch continues)
+**Last Updated:** 2026-08-24 (Tracker close of 2026-08-17 week booked: -3.24% vs SPY -1.29%)
+**Next Audit:** 2026-08-24 (Council session — new book + grading)
 **Current Regime:** Restrictive-with-flags — VIX 14.25 (6-mo low), 10Y 4.696% at the 4.75% ceiling, DXY <100 3rd week, 3+ regime flags raised (Council Review posture)
 
 ---
