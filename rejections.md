@@ -13,7 +13,17 @@ Booked: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% (39.6% cash -- Council Rev
 | SMCI | 109 | 66.8 | Made the raw consensus top-5, then fell below the 10% minimum position size after the 40% per-sponsor cap scaled Cecil's three-name bloc down -- dropped by risk controls, not by conviction |
 | ZS | 109 | 67.8 | Consensus #6 behind SMCI; the week's second tech sleeve -- Deliberation verdict kept exactly one tech name (TER) into the NVDA Aug 26 binary |
 
-counterfactual: to be computed (next Monday close: SMCI/ZS Monday 2026-08-17 closes -> Friday 2026-08-21 closes, equal-weighted basket vs the official booked week's return).
+counterfactual (computed 2026-08-24, date-pinned Mon 2026-08-17 close -> Fri 2026-08-21 close):
+
+| Ticker | Mon Close | Fri Close | Return |
+|---|---|---|---|
+| SMCI | $38.28 | $37.24 | -2.72% |
+| ZS | $184.44 | $181.74 | -1.46% |
+| **Equal-weighted basket** | | | **-2.09%** |
+| **Official booked week (2026-08-17)** | | | **-3.24%** |
+| **Delta (rejected - booked)** | | | **+1.15%** |
+
+Ophelia's rejected pair beat the booked portfolio by 115 bps -- SMCI (-2.72%) and ZS (-1.46%) both lost less than the book's TER anchor (-13.07%). The suspicion ledger tilts her way again.
 
 ---
 

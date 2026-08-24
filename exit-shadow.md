@@ -15,9 +15,18 @@ Book: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% / cash 39.6%. Entry prices =
 | HIG @ $138.66 (Cecil) | **CORE** -- large-cap P&C insurer, same steepening-curve thesis as ALL | -5% = $131.73 | 10Y-3M curve inverts, or 10Y >= 4.75%, or XLF weekly close < $58.00 | 6 weeks (Sep 28) | Trim 1/3 at +15% ($159.46); remainder trails -15% from HWM |
 | VICI @ $26.11 (Cecil) | **CORE** -- net-lease REIT, bond-proxy equity | -5% = $24.80 | XLRE loses its 50D $44.67, or 10Y closes > 4.75% | 6 weeks (Sep 28) | Trim 1/3 at +15% ($30.02); remainder trails -15% from HWM |
 
-outcome: to be computed (scored at the 2026-08-24 close against date-pinned daily bars -- stop touches, +15% trim reaches, and the would-have return vs the actual booked return).
+outcome (scored 2026-08-24, date-pinned daily bars 2026-08-17 -> 2026-08-21):
 
-Scored cycles to date: 0 of 4 (first scoring cycle arrives 2026-08-24). The stop-calibration summary block appears after 4 scored cycles.
+| Pick | Stop Touched? | +15% Trim Reached? | Would-Have Return | Actual Booked Return | Verdict |
+|---|---|---|---|---|---|
+| TER @ $432.26 (stop $397.68) | **YES -- Tue 2026-08-18 low $392.18** | No (week high $444.17) | -8.00% (stopped Tue) | -13.07% | **STOP SAVED ~5.1pp** -- the week's worst pick would have been cut Tuesday |
+| ALL @ $261.63 (stop $248.55) | No (week low $252.83) | No | -2.98% (held) | -2.98% | no difference |
+| HIG @ $138.66 (stop $131.73) | No (week low $136.00) | No | -1.85% (held) | -1.85% | no difference |
+| VICI @ $26.11 (stop $24.80) | No (week low $25.81) | No (week high $26.83) | +1.55% (held) | +1.55% | no difference |
+
+Cycle tally: stops helped 1 (TER, +5.1pp vs actual), hurt 0, untouched 3. The -8% SPEC stop would have cut the book's worst pick two days early.
+
+Scored cycles to date: 1 of 4. The stop-calibration summary block appears after 4 scored cycles.
 
 ---
 
