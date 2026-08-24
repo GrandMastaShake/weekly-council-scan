@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-08-24
+
+Book: ALL 13.3% / HIG 13.3% / VICI 13.3% / cash 60.1%. Entry prices = Monday 2026-08-24 opens (tracker, portfolio/current.yaml).
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| ALL @ $254.13 (Cecil) | **CORE** -- mega-cap P&C insurer, liquid, broad institutional sponsorship | -5% = $241.42 | XLF weekly close < $55.00, or 10Y > 4.85% | 6 weeks (Oct 5) | Trim 1/3 at +15% ($292.25); remainder trails -15% from HWM |
+| HIG @ $137.36 (Cecil) | **CORE** -- large-cap P&C insurer, same carry thesis as ALL | -5% = $130.49 | 10Y-3M curve inverts, or 10Y >= 4.85% | 6 weeks (Oct 5) | Trim 1/3 at +15% ($157.96); remainder trails -15% from HWM |
+| VICI @ $26.67 (Cecil) | **CORE** -- net-lease REIT, bond-proxy equity | -5% = $25.34 | XLRE weekly-closes below its 50D $44.82, or 10Y closes > 4.75% | 6 weeks (Oct 5) | Trim 1/3 at +15% ($30.67); remainder trails -15% from HWM |
+
+outcome: to be computed (score Monday 2026-08-31 against date-pinned daily bars 2026-08-24 -> 2026-08-28).
+
+---
+
 ### Week of 2026-08-17
 
 Book: TER 20.4% / ALL 15.1% / HIG 15.1% / VICI 9.8% / cash 39.6%. Entry prices = Monday 2026-08-17 (tracker, portfolio/current.yaml).
