@@ -2,11 +2,13 @@ week: '2026-08-17'
 lock: 2026-08-17 08:50 ET
 entry_date: '2026-08-17'
 exit_date: '2026-08-21'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 776.18
   entry_price_source: open
+  exit_price: 765.72
+  return_pct: -1.35
 players:
 - player: Umassalum
   valid: true
@@ -15,28 +17,42 @@ players:
   picks:
   - ticker: AMD
     weight: 0.2
-    entry_price: 513.805
+    entry_price: 514.16
     entry_price_source: open
+    exit_price: 473.25
+    return_pct: -7.96
   - ticker: CDE
     weight: 0.15
     entry_price: 19.3
     entry_price_source: open
+    exit_price: 20.97
+    return_pct: 8.65
   - ticker: DDOG
     weight: 0.2
-    entry_price: 250.6
+    entry_price: 250.62
     entry_price_source: open
+    exit_price: 235.62
+    return_pct: -5.99
   - ticker: IGIC
     weight: 0.2
-    entry_price: 27.18
+    entry_price: 27.1023
     entry_price_source: open
+    exit_price: 26.63
+    return_pct: -1.74
   - ticker: PAAS
     weight: 0.15
     entry_price: 47.78
     entry_price_source: open
+    exit_price: 53.07
+    return_pct: 11.07
   - ticker: VIK
     weight: 0.1
     entry_price: 97.61
     entry_price_source: open
+    exit_price: 92.79
+    return_pct: -4.94
+  weekly_return_pct: -0.67
+  alpha_vs_spy_pct: 0.68
 - player: GrandMastaShake
   valid: true
   total_weight: 1.0
@@ -46,19 +62,31 @@ players:
     weight: 0.25
     entry_price: 139.25
     entry_price_source: open
+    exit_price: 131.65
+    return_pct: -5.46
   - ticker: NEM
     weight: 0.26
     entry_price: 119.39
     entry_price_source: open
+    exit_price: 131.58
+    return_pct: 10.21
   - ticker: MRK
     weight: 0.2
     entry_price: 134.95
     entry_price_source: open
+    exit_price: 152.55
+    return_pct: 13.04
   - ticker: VST
     weight: 0.18
     entry_price: 149.37
     entry_price_source: open
+    exit_price: 136.21
+    return_pct: -8.81
   - ticker: SIDU
     weight: 0.11
     entry_price: 2.4
     entry_price_source: open
+    exit_price: 2.37
+    return_pct: -1.25
+  weekly_return_pct: 2.17
+  alpha_vs_spy_pct: 3.52
