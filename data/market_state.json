@@ -77,8 +77,8 @@
     "fed_funds_range_as_of": "2026-07-29",
     "fed_stance": "Hold",
     "fed_stance_as_of": "2026-07-29",
-    "next_macro_gate": "Jackson Hole (Warsh's first as Chair)",
-    "next_macro_gate_as_of": "2026-08-21"
+    "next_macro_gate": "Jackson Hole Aug 27-29 (Warsh keynote Fri 8/28) + July core PCE Wed 8/26",
+    "next_macro_gate_as_of": "2026-08-22"
   },
   "rates": {
     "US10Y": {
@@ -220,8 +220,8 @@
   "upcoming": [
     {
       "binary": null,
-      "event": "Jackson Hole (Warsh's first as Chair)",
-      "when": "2026-08-21"
+      "event": "Jackson Hole Aug 27-29 (Warsh keynote Fri 8/28) + July core PCE Wed 8/26",
+      "when": "2026-08-22"
     }
   ],
   "vol": {
