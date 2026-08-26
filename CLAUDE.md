@@ -20,6 +20,18 @@ The README heatmap chart is aligned by padding, so everything inside its fenced
 block must be single-width. Emoji are double-width and shear the bars; they
 belong in the markdown table.
 
+## Before anything
+
+    pip install -r requirements-dev.txt
+    python -m pytest -q                          # the whole suite, green
+    python scripts/truth_check.py --repo . --feed
+
+CI runs all three on every push and PR, plus a panel-regression check that
+fails if any weekly file lost series against the previous commit. The suite
+needs no network: `tests/conftest.py` stubs the market-data provider, because
+a test suite that needs a provider to run is a test suite that does not get
+run.
+
 ## The data contract
 
 `DATA_FEED.md` governs `data/weekly/`. Read it before touching anything there.
@@ -69,6 +81,12 @@ positions scored against it.
 
 ## Known data defects
 
+- **The mirror backfill script.** `scan_pipeline/scripts/backfill_weekly.py`
+  is a faithful copy of Kimi's runner and has diverged from
+  `scripts/backfill_weekly.py`: it has no `--merge`, so the only way it can add
+  tickers to an existing week is the `--only ... --force` combination that
+  emptied the panel. Nothing invokes it and a test fails if anything starts to.
+  Use `scripts/backfill_weekly.py`. The real fix is upstream in the runner.
 - **AVB 2026-08-21**: close 65.9005 behind volume 0, corrected. It was in
   `series` and not in `missing`, so it flowed through as real. Three
   independent sources agree it is junk. `metric_definitions.md` already

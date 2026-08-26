@@ -1,0 +1,67 @@
+name: CI
+
+# The panel is committed data, so CI checks the data as well as the code:
+# a bad commit to data/weekly fails here rather than downstream in the
+# heatmap, or silently.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # HEAD^ must exist for the panel-regression check below; the default
+          # shallow clone has no parent, which would skip the check silently.
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r requirements-dev.txt
+
+      - name: Tests
+        run: python -m pytest -q
+
+      - name: Feed gate on the committed panel
+        run: python scripts/truth_check.py --repo . --feed
+
+      - name: Panel is intact against the previous commit
+        run: |
+          # A weekly file that LOST series is the 2026-08-26 failure returning.
+          # Compare HEAD against its parent rather than trusting the diff to
+          # look obviously wrong.
+          git rev-parse HEAD^ >/dev/null 2>&1 || { echo "No parent commit; skipping."; exit 0; }
+          python - <<'PY'
+          import json, subprocess, sys
+          from pathlib import Path
+
+          def at(commit, path):
+              r = subprocess.run(["git", "show", commit + ":" + path],
+                                 capture_output=True, text=True)
+              if r.returncode != 0:
+                  return None
+              return len(json.loads(r.stdout).get("series", {}))
+
+          lost = []
+          for p in sorted(Path("data/weekly").glob("*.json")):
+              path = p.as_posix()
+              before = at("HEAD^", path)
+              if before is None:
+                  continue          # new file, nothing to lose
+              after = len(json.loads(p.read_text(encoding="utf-8")).get("series", {}))
+              if after < before:
+                  lost.append((path, before, after))
+
+          if lost:
+              print("PANEL REGRESSION -- series were removed:")
+              for path, before, after in lost:
+                  print("  %-38s %4d -> %4d" % (path, before, after))
+              sys.exit(1)
+          print("panel intact: no weekly file lost series")
+          PY
