@@ -116,26 +116,40 @@ def test_no_provenance_block_when_nothing_merged(tmp_path):
 
 
 # --- The command line, where the incident actually happened.
-def cli(*args):
-    return subprocess.run([sys.executable, str(BACKFILL), *args],
-                          capture_output=True, text=True)
+#     These run main() in-process rather than shelling out: a subprocess gets
+#     a fresh interpreter without conftest's provider stub, so it would need
+#     yfinance installed to reach the argument check. The guard is what is
+#     under test, not the import.
+def guard(monkeypatch, *args):
+    monkeypatch.setattr(sys, "argv", ["backfill_weekly.py", *args])
+    with pytest.raises(SystemExit) as excinfo:
+        bf.main()
+    return excinfo
 
 
-def test_only_with_force_is_refused_outright():
-    r = cli("--out", "data", "--only", "PLTR", "--force")
-    assert r.returncode != 0
-    assert "deleting every other series" in r.stderr
-    assert "2026-08-26" in r.stderr
+def test_only_with_force_is_refused_outright(monkeypatch, capsys):
+    guard(monkeypatch, "--out", "data", "--only", "PLTR", "--force")
+    err = capsys.readouterr().err
+    assert "deleting every other series" in err
+    assert "2026-08-26" in err
 
 
-def test_merge_without_only_is_refused():
-    r = cli("--out", "data", "--merge")
-    assert r.returncode != 0
-    assert "pass --only" in r.stderr
+def test_merge_without_only_is_refused(monkeypatch, capsys):
+    guard(monkeypatch, "--out", "data", "--merge")
+    assert "pass --only" in capsys.readouterr().err
 
 
-def test_full_universe_force_is_still_allowed():
-    """--force is correct for its actual purpose: a whole-file rewrite."""
-    r = cli("--out", "data", "--force", "--dry-run",
-            "--start", "2026-08-21", "--end", "2026-08-21")
-    assert "deleting every other series" not in r.stderr
+def test_full_universe_force_reaches_the_plan(monkeypatch, capsys):
+    """--force is correct for its actual purpose: a whole-file rewrite, so it
+    must get past the guard rather than being refused with it."""
+    monkeypatch.setattr(sys, "argv",
+                        ["backfill_weekly.py", "--out", "data", "--force",
+                         "--dry-run", "--start", "2026-08-21",
+                         "--end", "2026-08-21"])
+    try:
+        bf.main()
+    except SystemExit as e:      # argparse refusal would exit 2 here
+        assert "deleting every other series" not in capsys.readouterr().err
+        assert e.code != 2, "a full-universe --force must not hit the guard"
+    out = capsys.readouterr().out
+    assert "deleting every other series" not in out
