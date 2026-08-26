@@ -14,6 +14,7 @@ what every existing correction does.
 """
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -50,6 +51,13 @@ def rebuild(corrected: Path) -> bool:
                     "restated. Review by hand.")
             return False
         fresh["series"].pop(ticker)
+        # A per-series anchor for a series that is no longer there describes
+        # nothing, and truth_check --feed refuses it. Drop it with the bar.
+        prov = fresh.get("provenance")
+        if isinstance(prov, dict) and isinstance(prov.get("series"), dict):
+            prov["series"].pop(ticker, None)
+            if not prov["series"]:
+                fresh.pop("provenance", None)
         fresh.setdefault("missing", []).append(entry)
 
     fresh["missing"].sort(key=lambda m: m["ticker"])
@@ -64,7 +72,21 @@ def rebuild(corrected: Path) -> bool:
 
 
 def main() -> int:
-    files = sorted(WEEKLY.glob("*.corrected.json"))
+    # This took no arguments and read WEEKLY unconditionally, so a command
+    # naming another directory was accepted in silence and rebuilt the live
+    # panel instead. Parsing rejects that rather than quietly ignoring it.
+    ap = argparse.ArgumentParser(
+        description="Re-derive correction files from their current bases.")
+    ap.add_argument("--dir", default=str(WEEKLY),
+                    help="weekly file directory (default: this repo's "
+                         "data/weekly)")
+    args = ap.parse_args()
+
+    weekly = Path(args.dir)
+    if not weekly.is_dir():
+        print("No such directory: " + str(weekly))
+        return 1
+    files = sorted(weekly.glob("*.corrected.json"))
     if not files:
         print("No correction files found.")
         return 0
