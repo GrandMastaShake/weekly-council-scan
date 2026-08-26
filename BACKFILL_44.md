@@ -42,6 +42,24 @@ Windows, from the repo root. Needs network; the run takes a few minutes.
 adds the new names to `series` in each. Dry-run first without `--force` to see
 the plan.
 
+## Rebuild corrections -- REQUIRED, do not skip
+
+    python scripts\rebuild_corrections.py
+
+A correction file is a full copy of its base plus `corrects` and `reason`, so
+it is a snapshot and goes stale the moment the base changes. `2026-08-21` has
+one. The backfill writes the 44 new names into `2026-08-21.json`, but readers
+prefer `2026-08-21.corrected.json`, which would still hold the old 286-name
+series -- the new tickers would be silently invisible for that week and every
+sector's coverage would stay short forever.
+
+This was caught by running the pipeline against a simulated backfill, not by
+reading the code. Run it after every backfill that touches a corrected week.
+
+It aborts rather than guessing if a dropped ticker no longer has volume 0 in
+the base, since that would mean the provider restated and the correction needs
+a human.
+
 ## Verify afterwards
 
     python scripts\truth_check.py
@@ -54,6 +72,8 @@ Expected:
   2026-06-12, which corroborates it.
 - The other 43 should be present in every week from 2024-08-09 unless they
   were also not yet trading.
+- `data/weekly/2026-08-21.corrected.json` should carry roughly 330 series
+  entries, not 286. If it still says 286, `rebuild_corrections.py` did not run.
 - Spot-check any dividend payer among the 44 (PM, STZ, TMUS) against the
   spreadsheet: the backfilled value should be BELOW the spreadsheet's for
   older weeks, by roughly the accumulated yield. If it matches exactly, the
