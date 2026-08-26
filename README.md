@@ -15,10 +15,10 @@ This week was a story of rotation, not revolution. While the S&P 500 closed at $
 
 | Index | Level | Move | Story |
 |-------|-------|------|-------|
-| S&P 500 | $765.72 (SPY) | -1.37% | Worst week since early August; held above 50D MA |
-| Nasdaq 100 | — | — | Growth concentration under pressure; level unverifiable |
-| Dow Jones | — | — | Industrials mixed, breadth uneven; level unverifiable |
-| Russell 2000 | — | — | Small-cap data unverifiable this week |
+| S&P 500 | $765.72 (SPY) | -1.4% | Worst week since early August; held above 50D MA |
+| Nasdaq 100 | $713.44 (QQQ) | -2.4% | Growth concentration under pressure; pre-NVDA de-risking |
+| Dow Jones | $532.22 (DIA) | -0.9% | Most resilient major index; value/defensive tilt paid |
+| Russell 2000 | $299.96 (IWM) | -1.7% | Small caps fell with rates but held the 2-year uptrend |
 | VIX | 15.13 | +6.2% | Rose off 6-month low but still below 16; complacent |
 
 > **Dad Translation:** The stock market's main scoreboard fell this week — not a crash, but the first meaningful drop in a while. Underneath the surface there was a lot of shuffling: tech stocks took a breather while healthcare and energy stepped up. The "fear index" ticked higher but stayed pretty calm, which means people aren't panicking — they're just moving their money to different neighborhoods.
