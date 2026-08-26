@@ -1,4 +1,26 @@
 """
+DO NOT RUN THIS COPY. (Repo-side annotation, 2026-08-26. Everything below
+this block is the runner's file, unchanged.)
+
+This is the mirror of Kimi's external runner, kept so the public repo shows
+what the runner does. It has DIVERGED from scripts/backfill_weekly.py, which
+is the copy this repository actually uses and the only one that is safe here.
+
+The difference is not cosmetic. This copy has no `--merge`, so the only way it
+can add tickers to an existing week is `--only ... --force`, and that writes a
+WHOLE file from the ticker set it was given -- deleting every series outside
+it. On 2026-08-26 that turned 287 series into 44 across 107 weekly files while
+reporting success. scripts/backfill_weekly.py refuses the combination outright
+and adds names with `--merge` instead.
+
+Its root-resolution also assumes it lives at scan_pipeline/scripts/, which is
+true here and is why this copy still imports while the other one had to be
+fixed.
+
+Nothing in this repository invokes this file, and a test
+(tests/test_corrections_and_feed.py) fails if anything starts to. The real fix
+is upstream in the runner; until that lands, use scripts/backfill_weekly.py.
+
 backfill_weekly.py -- one-time 104-week price backfill for weekly-council-scan.
 
 Job B (Wave 2). Reads NO live per-week equity calls: one ranged daily-bar

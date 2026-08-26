@@ -1,0 +1,4 @@
+# Test harness only. The scripts under test are pure stdlib; the market-data
+# provider is stubbed in tests/conftest.py so the suite needs no network and
+# no yfinance install.
+pytest==8.3.3
