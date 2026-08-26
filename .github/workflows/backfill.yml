@@ -59,13 +59,8 @@ jobs:
               || { echo "tickers must be comma-separated symbols"; exit 1; }
           fi
 
-      - name: Record the panel state before
-        run: |
-          echo "series counts before:" > /tmp/before.txt
-          for f in data/weekly/2026-08-*.json; do
-            python -c "import json,sys;d=json.load(open('$f'));print('$f',len(d['series']))" >> /tmp/before.txt
-          done
-          cat /tmp/before.txt
+      - name: Snapshot the panel before
+        run: python scripts/panel_guard.py --snapshot /tmp/panel_before.json
 
       - name: Backfill
         run: |
@@ -81,20 +76,22 @@ jobs:
         if: inputs.dry_run == false
         run: python scripts/rebuild_corrections.py
 
+      # Fails the job if any week lost series. A targeted backfill on
+      # 2026-08-26 replaced every file with its 44 --only tickers (287 -> 44
+      # across 107 files) and this job reported success: the counts were
+      # printed with nothing to compare them against. Growth passes; loss
+      # stops the run before the commit step.
+      - name: Guard against series loss
+        if: inputs.dry_run == false
+        run: python scripts/panel_guard.py --compare /tmp/panel_before.json
+
+      # --repo is required and --feed is the data-feed gate (DATA_FEED.md
+      # sec.1, pure stdlib, no network). This previously ran with no
+      # arguments, exited on an argparse usage error, and had its exit code
+      # swallowed by `|| echo` -- so it reported issues it had never run.
       - name: Truth check
         if: inputs.dry_run == false
-        run: python scripts/truth_check.py || echo "truth_check reported issues; review the diff before merging"
-
-      - name: Report the panel state after
-        if: inputs.dry_run == false
-        run: |
-          echo "series counts after:"
-          for f in data/weekly/2026-08-*.json; do
-            python -c "import json,sys;d=json.load(open('$f'));print('$f',len(d['series']))"
-          done
-          echo
-          echo "A corrected file should now match its base's ticker count."
-          echo "If 2026-08-21.corrected.json is still smaller, rebuild_corrections did not run."
+        run: python scripts/truth_check.py --repo . --feed
 
       - name: Commit
         if: inputs.dry_run == false
