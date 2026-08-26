@@ -1,5 +1,12 @@
 # Backfilling the 44 new universe names
 
+> **Status: done.** Run 2026-08-26 via the Actions workflow with `--merge`.
+> The panel went from 30,915 to 35,571 series -- every week 289 -> 332 (43 new
+> plus SPCX, correctly absent pre-IPO) -- and `2026-08-21.corrected.json`
+> reached 330. `panel_guard` reported 107 files grew and none lost series.
+> This document is kept for the rationale and for the next universe expansion;
+> the commands below are the corrected ones.
+
 The universe went from 277 to 321 on 2026-08-25. The 44 added names have no
 history in `data/weekly/`. This fills it.
 
@@ -36,6 +43,8 @@ Actions -> "Backfill weekly panel" -> Run workflow:
     end      2026-08-21
     dry_run  true   (then re-run with false)
 
+Named tickers are merged in; the workflow passes `--merge` for you.
+
 The runner has the network access that agent sandboxes do not, and the workflow
 rebuilds corrections and runs truth_check before committing. It prints the
 per-file series counts before and after so the correction-shadowing failure is
@@ -50,11 +59,22 @@ Windows, from the repo root. Needs network; the run takes a few minutes.
       --start 2024-08-09 ^
       --end 2026-08-21 ^
       --only ALB,BKNG,BLFS,CALM,CCJ,CEG,COP,CRSP,CRWD,CVNA,DDOG,DIS,FIVE,FIZZ,FSLR,HIMS,IMAX,INOD,LNG,LYV,MLM,MOD,MP,MTCH,OKLO,ORA,PLTR,PM,RDDT,RKLB,SCHW,SM,SOFI,SOUN,SPCX,SPOT,SSD,STZ,TMUS,TSM,TTWO,ULTA,UMH,VST ^
-      --force
+      --merge
 
-`--force` is required because the target weekly files already exist; the run
-adds the new names to `series` in each. Dry-run first without `--force` to see
-the plan.
+`--merge` adds the named tickers to each existing week and leaves every other
+series, the special blocks and the file-level adjustment anchor alone. Add
+`--dry-run` first to see the plan.
+
+**This document said `--force` until 2026-08-26, on the reasoning that "the
+target weekly files already exist; the run adds the new names to `series` in
+each". That was wrong, and it is the sentence that emptied the panel.**
+`--force` writes a WHOLE file from the ticker set it was given, so with
+`--only` it deletes every name outside that set -- 287 series became 44 across
+107 files, and the workflow reported success. `backfill_weekly.py` now refuses
+`--only` with `--force` outright and names this incident when it does.
+
+`--force` is still correct for its actual purpose: a full-universe rewrite with
+no `--only`, where writing each whole file is the operation you want.
 
 ## Rebuild corrections -- REQUIRED, do not skip
 
