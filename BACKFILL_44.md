@@ -27,7 +27,21 @@ Staples and Energy. It would look like a signal.
 
 So the 44 go through the same code path as the other 277.
 
-## Run it
+## Run it -- easiest path: GitHub Actions
+
+Actions -> "Backfill weekly panel" -> Run workflow:
+
+    tickers  ALB,BKNG,BLFS,CALM,CCJ,CEG,COP,CRSP,CRWD,CVNA,DDOG,DIS,FIVE,FIZZ,FSLR,HIMS,IMAX,INOD,LNG,LYV,MLM,MOD,MP,MTCH,OKLO,ORA,PLTR,PM,RDDT,RKLB,SCHW,SM,SOFI,SOUN,SPCX,SPOT,SSD,STZ,TMUS,TSM,TTWO,ULTA,UMH,VST
+    start    2024-08-09
+    end      2026-08-21
+    dry_run  true   (then re-run with false)
+
+The runner has the network access that agent sandboxes do not, and the workflow
+rebuilds corrections and runs truth_check before committing. It prints the
+per-file series counts before and after so the correction-shadowing failure is
+visible rather than silent.
+
+## Or run it locally
 
 Windows, from the repo root. Needs network; the run takes a few minutes.
 

@@ -1,0 +1,112 @@
+name: Backfill weekly panel
+
+# Fills history for tickers added to the universe. Runs on a GitHub runner,
+# which has the network access that local sandboxes and some agents do not.
+#
+# Manual only. It rewrites committed weekly files (--force), so it is never
+# scheduled and always names what it touched in the commit message.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: Comma-separated tickers to backfill (blank = whole universe)
+        required: false
+        type: string
+      start:
+        description: First Friday to fill (YYYY-MM-DD)
+        required: true
+        default: '2024-08-09'
+        type: string
+      end:
+        description: Last Friday to fill (YYYY-MM-DD)
+        required: true
+        type: string
+      dry_run:
+        description: Show the plan without writing or committing
+        required: false
+        default: true
+        type: boolean
+
+concurrency:
+  group: backfill-weekly
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install yfinance pandas
+
+      - name: Validate inputs
+        run: |
+          for d in "${{ inputs.start }}" "${{ inputs.end }}"; do
+            echo "$d" | grep -Eq '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' \
+              || { echo "Dates must be YYYY-MM-DD, got $d"; exit 1; }
+          done
+          if [ -n "${{ inputs.tickers }}" ]; then
+            echo "${{ inputs.tickers }}" | grep -Eq '^[A-Z0-9.,^=-]+$' \
+              || { echo "tickers must be comma-separated symbols"; exit 1; }
+          fi
+
+      - name: Record the panel state before
+        run: |
+          echo "series counts before:" > /tmp/before.txt
+          for f in data/weekly/2026-08-*.json; do
+            python -c "import json,sys;d=json.load(open('$f'));print('$f',len(d['series']))" >> /tmp/before.txt
+          done
+          cat /tmp/before.txt
+
+      - name: Backfill
+        run: |
+          ARGS="--out data --start ${{ inputs.start }} --end ${{ inputs.end }}"
+          if [ -n "${{ inputs.tickers }}" ]; then ARGS="$ARGS --only ${{ inputs.tickers }}"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/backfill_weekly.py $ARGS --dry-run
+          else
+            python scripts/backfill_weekly.py $ARGS --force
+          fi
+
+      - name: Rebuild corrections
+        if: inputs.dry_run == false
+        run: python scripts/rebuild_corrections.py
+
+      - name: Truth check
+        if: inputs.dry_run == false
+        run: python scripts/truth_check.py || echo "truth_check reported issues; review the diff before merging"
+
+      - name: Report the panel state after
+        if: inputs.dry_run == false
+        run: |
+          echo "series counts after:"
+          for f in data/weekly/2026-08-*.json; do
+            python -c "import json,sys;d=json.load(open('$f'));print('$f',len(d['series']))"
+          done
+          echo
+          echo "A corrected file should now match its base's ticker count."
+          echo "If 2026-08-21.corrected.json is still smaller, rebuild_corrections did not run."
+
+      - name: Commit
+        if: inputs.dry_run == false
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/weekly
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "Backfill weekly panel ${{ inputs.start }} to ${{ inputs.end }}" \
+            -m "Tickers: ${{ inputs.tickers || 'entire universe' }}. Corrections rebuilt."
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            sleep 5
+          done
+          exit 1
