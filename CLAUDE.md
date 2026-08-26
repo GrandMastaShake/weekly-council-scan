@@ -86,7 +86,8 @@ positions scored against it.
   `scripts/backfill_weekly.py`: it has no `--merge`, so the only way it can add
   tickers to an existing week is the `--only ... --force` combination that
   emptied the panel. Nothing invokes it and a test fails if anything starts to.
-  Use `scripts/backfill_weekly.py`. The real fix is upstream in the runner.
+  Use `scripts/backfill_weekly.py`. The real fix is upstream in the runner --
+  `RUNNER_BACKFILL_FIX.md` is the write-up to send them.
 - **AVB 2026-08-21**: close 65.9005 behind volume 0, corrected. It was in
   `series` and not in `missing`, so it flowed through as real. Three
   independent sources agree it is junk. `metric_definitions.md` already
