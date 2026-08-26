@@ -67,14 +67,23 @@ jobs:
           done
           cat /tmp/before.txt
 
+      # Named tickers are ADDED to each week (--merge). The old path passed
+      # --only with --force, which writes a whole file from just those names
+      # and deleted 243 series from 107 weeks on 2026-08-26; the script now
+      # refuses that combination outright. --force is reserved for a
+      # full-universe rewrite, where writing the whole file is correct.
       - name: Backfill
         run: |
           ARGS="--out data --start ${{ inputs.start }} --end ${{ inputs.end }}"
-          if [ -n "${{ inputs.tickers }}" ]; then ARGS="$ARGS --only ${{ inputs.tickers }}"; fi
+          if [ -n "${{ inputs.tickers }}" ]; then
+            ARGS="$ARGS --only ${{ inputs.tickers }} --merge"
+          else
+            ARGS="$ARGS --force"
+          fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             python scripts/backfill_weekly.py $ARGS --dry-run
           else
-            python scripts/backfill_weekly.py $ARGS --force
+            python scripts/backfill_weekly.py $ARGS
           fi
 
       - name: Rebuild corrections

@@ -293,6 +293,83 @@ def build_and_write(friday: date, tickers: list, history: dict,
 
 
 # ---------------------------------------------------------------------------
+def merge_into_existing(friday: date, tickers: list, history: dict,
+                        path: str) -> dict:
+    """Add tickers to an existing week without disturbing what is there.
+
+    A weekly file is an observation log. On 2026-08-26 a targeted backfill
+    called write_weekly() with only the --only set, which writes a WHOLE
+    file: 287 series became 44 across 107 weeks. Merging is the operation
+    that was actually wanted.
+
+    Existing series, the special-instrument blocks, and the file-level
+    source / fetched_at are left exactly as they were. Only the named
+    tickers are written, and each one is stamped in `provenance.series`
+    because it was fetched now and is therefore back-adjusted to a
+    different date than the rest of the file. The file-level anchor still
+    describes the majority of the series; the overrides describe the rest.
+    Restamping the file-level anchor would relabel every untouched series
+    with a fetch that never happened to it.
+    """
+    with open(path, "r", encoding="utf-8") as f:
+        doc = json.load(f)
+
+    if doc.get("as_of") != friday.isoformat():
+        raise SystemExit(
+            "backfill: %s has as_of %r, expected %s -- refusing to merge "
+            "into a file that is not the week it claims to be"
+            % (path, doc.get("as_of"), friday.isoformat()))
+
+    series = doc.setdefault("series", {})
+    prov_block = doc.setdefault("provenance", {})
+    prov = prov_block.setdefault("series", {})
+
+    monday = friday - timedelta(days=4)
+    added: list = []
+    replaced: list = []
+    absent: list = []
+    fresh: dict = {}
+    for t in tickers:
+        bar, _actual = slice_week(history.get(t, ([], [], [])),
+                                  monday, friday)
+        if bar is None:
+            absent.append(t)
+            continue
+        fresh[t] = bar
+
+    # Route through the same normalizer write_weekly uses, so a merged bar is
+    # indistinguishable in shape and rounding from a scanned one. Writing the
+    # raw slice instead lands full float precision (179.94000244140625) beside
+    # the panel's rounded closes.
+    for t, bar in snapshot._normalize_block(fresh).items():
+        (replaced if t in series else added).append(t)
+        series[t] = bar
+        prov[t] = {"source": BACKFILL_SOURCE, "fetched_at": RUN_TS}
+
+    # `missing` stays honest in both directions: a ticker we just filled is
+    # no longer missing, and one we could not fetch is listed with a reason
+    # rather than silently absent.
+    filled = set(added) | set(replaced)
+    missing = [m for m in doc.get("missing", [])
+               if m.get("ticker") not in filled]
+    listed = {m.get("ticker") for m in missing}
+    for t in absent:
+        if t not in listed:
+            missing.append({"ticker": t,
+                            "reason": MISSING_REASON % friday.isoformat()})
+    doc["missing"] = sorted(missing, key=lambda m: m.get("ticker") or "")
+
+    if not prov:
+        doc.pop("provenance", None)
+
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        f.write(snapshot.canonical_json(doc))
+
+    return {"path": path, "doc": doc, "added": added,
+            "replaced": replaced, "absent": absent}
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main() -> int:
@@ -310,8 +387,26 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true",
                     help="print the plan; no network, no writes")
     ap.add_argument("--force", action="store_true",
-                    help="allow overwriting existing weekly files")
+                    help="allow overwriting existing weekly files WHOLE "
+                         "(full-universe runs only; see --merge)")
+    ap.add_argument("--merge", action="store_true",
+                    help="add --only tickers into existing weekly files, "
+                         "preserving every other series and the file-level "
+                         "adjustment anchor")
     args = ap.parse_args()
+
+    # The combination that emptied the panel on 2026-08-26. --force writes a
+    # whole file from the ticker set it was given, so with --only it deletes
+    # every name outside that set. Adding names to an existing week is
+    # --merge; --force is for a full-universe rewrite and nothing else.
+    if args.only and args.force and not args.merge:
+        ap.error("--only with --force replaces each week with just those "
+                 "tickers, deleting every other series (this emptied 107 "
+                 "files on 2026-08-26). Use --merge to add them, or drop "
+                 "--only for a full-universe rewrite.")
+    if args.merge and not args.only:
+        ap.error("--merge adds specific tickers to existing weeks; pass "
+                 "--only with the tickers to add.")
 
     fridays = fridays_in_range(args.start, args.end)
     universe = snapshot.equity_universe()
@@ -335,9 +430,14 @@ def main() -> int:
         % (len(fridays), fridays[0], fridays[-1], len(tickers), weekly_dir))
     log("run timestamp (fetched_at for every file): %s" % RUN_TS)
     if existing:
-        log("%d files already exist (%s)"
-            % (len(existing),
-               "will OVERWRITE (--force)" if args.force else "will SKIP"))
+        if args.merge:
+            mode = ("will MERGE %d ticker(s) in (--merge); every other "
+                    "series is preserved" % len(tickers))
+        elif args.force:
+            mode = "will OVERWRITE WHOLE (--force)"
+        else:
+            mode = "will SKIP"
+        log("%d files already exist (%s)" % (len(existing), mode))
     if args.dry_run:
         log("dry-run: no downloads, no writes. First 3 Fridays: %s; "
             "last 3: %s"
@@ -356,6 +456,21 @@ def main() -> int:
     notes: list = []
     for n, friday in enumerate(fridays, 1):
         path = os.path.join(weekly_dir, friday.isoformat() + ".json")
+        if os.path.exists(path) and args.merge:
+            rec = merge_into_existing(friday, tickers, history, path)
+            doc = rec["doc"]
+            n_missing = len(doc.get("missing", []))
+            for m in doc.get("missing", []):
+                if m.get("ticker") in ticker_missing:
+                    ticker_missing[m["ticker"]] += 1
+            missing_counts.append(n_missing)
+            written += 1
+            log("  (%3d/%d) %s merged +%d new, %d refreshed, %d absent "
+                "-> series=%d"
+                % (n, len(fridays), friday, len(rec["added"]),
+                   len(rec["replaced"]), len(rec["absent"]),
+                   len(doc.get("series", {}))))
+            continue
         if os.path.exists(path) and not args.force:
             skipped += 1
             with open(path, "r", encoding="utf-8") as f:
