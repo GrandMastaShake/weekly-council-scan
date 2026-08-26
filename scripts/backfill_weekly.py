@@ -53,9 +53,19 @@ import time
 from bisect import bisect_right
 from datetime import date, datetime, timedelta, timezone
 
-# Repo root = MarketStockPicker/ (this file lives in scan_pipeline/scripts/).
-_PIPELINE_ROOT = os.path.abspath(
-    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+# Repo root = the nearest ancestor directory holding the scan_pipeline package.
+# This file exists at two paths -- scripts/ and scan_pipeline/scripts/ -- so a
+# fixed number of parent hops is correct for only one of them. Two hops from
+# scripts/ lands ABOVE the repo, and the import below dies with
+# ModuleNotFoundError; that is why the backfill workflow could never start.
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+_PIPELINE_ROOT = _SCRIPT_DIR
+while not os.path.isdir(os.path.join(_PIPELINE_ROOT, "scan_pipeline")):
+    _parent = os.path.dirname(_PIPELINE_ROOT)
+    if _parent == _PIPELINE_ROOT:
+        raise RuntimeError(
+            "cannot locate the scan_pipeline package above " + _SCRIPT_DIR)
+    _PIPELINE_ROOT = _parent
 if _PIPELINE_ROOT not in sys.path:
     sys.path.insert(0, _PIPELINE_ROOT)
 
