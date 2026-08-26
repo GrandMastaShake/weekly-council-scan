@@ -730,6 +730,56 @@ def _feed_entry_check(fname, section, ticker, entry, rep):
             rep.add("FAIL", f"feed: {where} volume {vol} < 0")
 
 
+def _feed_provenance_check(fname, doc, rep):
+    """Per-series anchors (DATA_FEED.md sec.1, `provenance`).
+
+    A merged week carries series fetched at two different times, so its
+    adjusted closes sit on two anchors. The block naming them is optional;
+    when present it must be exact, because a consumer that trusts it and is
+    wrong reports one anchor for two.
+    """
+    prov = doc.get("provenance")
+    if prov is None:
+        return
+    if not isinstance(prov, dict):
+        rep.add("FAIL", f"feed: {fname} 'provenance' is not an object")
+        return
+    unknown = sorted(set(prov) - {"series"})
+    if unknown:
+        rep.add("FAIL", f"feed: {fname} 'provenance' has unknown key(s) "
+                        f"{unknown}; only 'series' is defined")
+    entries = prov.get("series")
+    if not isinstance(entries, dict):
+        rep.add("FAIL", f"feed: {fname} 'provenance.series' is not an object")
+        return
+    series = doc.get("series")
+    series_keys = set(series) if isinstance(series, dict) else set()
+    for ticker, rec in sorted(entries.items()):
+        if ticker not in series_keys:
+            rep.add("FAIL", f"feed: {fname} provenance names {ticker!r}, "
+                            f"which is not in 'series' -- an anchor for a "
+                            f"series that is not there describes nothing")
+        if not isinstance(rec, dict):
+            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] is not "
+                            f"an object")
+            continue
+        src_ = rec.get("source")
+        if not isinstance(src_, str) or not src_:
+            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] lacks a "
+                            f"non-empty 'source'")
+        got = rec.get("fetched_at")
+        if not isinstance(got, str) or not got.endswith("Z"):
+            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] "
+                            f"fetched_at {got!r} is not a UTC ...Z timestamp")
+            continue
+        try:
+            dt.datetime.strptime(got, "%Y-%m-%dT%H:%M:%SZ")
+        except ValueError:
+            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] "
+                            f"fetched_at {got!r} is not "
+                            f"YYYY-MM-DDTHH:MM:SSZ")
+
+
 def check_feed(repo, rep):
     """Weekly data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no
     network. 'missing' is required and never empty-by-omission: a silently
@@ -813,6 +863,7 @@ def check_feed(repo, rep):
                 continue
             for ticker, entry in blk.items():
                 _feed_entry_check(f.name, block, ticker, entry, rep)
+        _feed_provenance_check(f.name, doc, rep)
     rep.add("OK", f"feed: {len(files)} weekly file(s) validated against "
                   f"DATA_FEED.md sec.1 (failures reported above)")
 

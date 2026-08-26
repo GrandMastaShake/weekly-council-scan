@@ -48,6 +48,20 @@ One file per scan, named for the **Friday close** the scan reads. Append-only. N
 - **`missing` is required and never empty-by-omission.** A ticker that could not be fetched is listed with a reason. A silently absent ticker is indistinguishable from a ticker that didn't exist, and that ambiguity is what the agents fill in from priors.
 - **`fetched_at` is UTC and real.** It is how you detect a scan that ran against a stale cache.
 - **Never edit.** If a provider restates, write `<date>.corrected.json` with the same shape plus `"corrects": "2026-08-08.json"` and `"reason": "..."`. Readers prefer the correction; the original stays.
+- **`provenance` is optional and records per-series anchors.** Adding a ticker to a past week (a targeted backfill) fetches it *now*, so its adjusted closes are back-adjusted to a different date than the rest of the file. The file-level `source` / `fetched_at` still describe the majority of the series and are never restamped by a merge -- restamping would relabel every untouched series with a fetch that never happened to it. The added names are listed individually instead:
+
+```json
+"provenance": {
+  "series": {
+    "PLTR": { "source": "yahoo-backfill", "fetched_at": "2026-08-26T04:08:06Z" },
+    "VST":  { "source": "yahoo-backfill", "fetched_at": "2026-08-26T04:08:06Z" }
+  }
+}
+```
+
+  A series absent from `provenance.series` carries the file-level `source` and `fetched_at`. Every key in `provenance.series` must exist in `series`. Consumers that care about the adjustment anchor -- `sector-regime-heatmap` refuses a window whose anchors span more than 180 days -- must resolve the anchor **per ticker**, not per file, or a merged week silently reports one anchor for two.
+
+  This block exists because the alternative is writing two adjustment bases under one timestamp and calling it a fact. `--merge` in `scripts/backfill_weekly.py` is the only writer.
 
 **Size.** ~300 series entries + 7 instruments ≈ 15–18KB per file. 104 files per two years ≈ 1.7MB. No pruning, no rotation, ever.
 
