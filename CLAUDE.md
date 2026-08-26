@@ -81,11 +81,22 @@ positions scored against it.
 ## The backfill
 
 Actions -> "Backfill weekly panel". Manual dispatch, defaults to `dry_run`
-because it rewrites committed files with `--force`. It chains
-`rebuild_corrections.py` and `truth_check.py` and prints series counts before
-and after.
+because it writes committed files. It chains `rebuild_corrections.py`,
+`panel_guard.py --compare` and `truth_check.py --repo . --feed`, and any of the
+three failing stops the run before the commit step.
 
-The 44 names added 2026-08-25 still need filling. Command and rationale in
+**Named tickers are ADDED with `--merge`, never `--force`.** `--force` writes a
+whole file from the ticker set it was given, so with `--only` it deletes every
+other series: on 2026-08-26 that emptied 107 files, 287 series down to 44, and
+the job reported success. The script refuses that combination now. `--force` is
+for a full-universe rewrite and nothing else.
+
+A merged week carries two adjustment anchors -- the names added later were
+fetched later -- so it records them per series in `provenance.series` rather
+than restamping one timestamp over two bases. See `DATA_FEED.md` sec.1.
+
+The 44 names were backfilled 2026-08-26: the panel is 35,571 series, 332 a
+week, corrections at 330. Rationale and the corrected commands are in
 `BACKFILL_44.md`.
 
 ## Do not
