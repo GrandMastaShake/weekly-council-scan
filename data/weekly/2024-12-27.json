@@ -14,7 +14,7 @@
       "volume": 172641
     }
   },
-  "fetched_at": "2026-08-12T03:09:14Z",
+  "fetched_at": "2026-08-26T03:53:43Z",
   "fx": {
     "DXY": {
       "close": 108.0,
@@ -24,19 +24,7 @@
   "missing": [
     {
       "reason": "no bar for week of 2024-12-27 (likely pre-IPO or not trading)",
-      "ticker": "BK"
-    },
-    {
-      "reason": "no bar for week of 2024-12-27 (likely pre-IPO or not trading)",
-      "ticker": "HES"
-    },
-    {
-      "reason": "no bar for week of 2024-12-27 (likely pre-IPO or not trading)",
-      "ticker": "MMC"
-    },
-    {
-      "reason": "no bar for week of 2024-12-27 (likely pre-IPO or not trading)",
-      "ticker": "PEAK"
+      "ticker": "SPCX"
     }
   ],
   "rates": {
@@ -50,1161 +38,177 @@
     }
   },
   "series": {
-    "AAPL": {
-      "close": 253.7485,
-      "volume": 42355300
+    "ALB": {
+      "close": 86.0618,
+      "volume": 1397000
     },
-    "ABBV": {
-      "close": 168.0234,
-      "volume": 2745400
+    "BKNG": {
+      "close": 199.0538,
+      "volume": 2912500
     },
-    "ABNB": {
-      "close": 133.385,
-      "volume": 2650100
+    "BLFS": {
+      "close": 26.59,
+      "volume": 201300
     },
-    "ACN": {
-      "close": 344.0761,
-      "volume": 1195700
+    "CALM": {
+      "close": 91.4419,
+      "volume": 413100
     },
-    "ADBE": {
-      "close": 446.48,
-      "volume": 2947200
+    "CCJ": {
+      "close": 52.388,
+      "volume": 1921500
     },
-    "ADSK": {
-      "close": 297.59,
-      "volume": 1041600
+    "CEG": {
+      "close": 224.2826,
+      "volume": 1466000
     },
-    "AEP": {
-      "close": 87.3885,
-      "volume": 1722700
+    "COP": {
+      "close": 91.6589,
+      "volume": 5889700
     },
-    "AES": {
-      "close": 11.5881,
-      "volume": 9280700
+    "CRSP": {
+      "close": 40.02,
+      "volume": 1665900
     },
-    "AFL": {
-      "close": 100.1049,
-      "volume": 1104800
+    "CRWD": {
+      "close": 88.7475,
+      "volume": 13381600
     },
-    "AIG": {
-      "close": 70.5828,
-      "volume": 2488700
+    "CVNA": {
+      "close": 43.018,
+      "volume": 11324500
     },
-    "AJG": {
-      "close": 282.2478,
-      "volume": 7622800
-    },
-    "AKAM": {
-      "close": 96.97,
-      "volume": 724900
-    },
-    "ALL": {
-      "close": 188.1213,
-      "volume": 1094400
-    },
-    "AMAT": {
-      "close": 164.766,
-      "volume": 3599600
-    },
-    "AMD": {
-      "close": 125.19,
-      "volume": 32924000
-    },
-    "AMGN": {
-      "close": 250.7264,
-      "volume": 2157400
-    },
-    "AMP": {
-      "close": 524.055,
-      "volume": 308300
-    },
-    "AMT": {
-      "close": 172.3205,
-      "volume": 1640900
-    },
-    "AMZN": {
-      "close": 223.75,
-      "volume": 27367100
-    },
-    "ANET": {
-      "close": 113.03,
-      "volume": 3178100
-    },
-    "AON": {
-      "close": 356.4618,
-      "volume": 485500
-    },
-    "APD": {
-      "close": 279.9601,
-      "volume": 457000
-    },
-    "APH": {
-      "close": 69.9557,
-      "volume": 4072300
-    },
-    "APO": {
-      "close": 166.5316,
-      "volume": 2859000
-    },
-    "ARE": {
-      "close": 88.5663,
-      "volume": 1305500
-    },
-    "ATO": {
-      "close": 134.776,
-      "volume": 387200
-    },
-    "AVB": {
-      "close": 207.5634,
-      "volume": 362500
-    },
-    "AVGO": {
-      "close": 238.7057,
-      "volume": 29282200
-    },
-    "AWK": {
-      "close": 119.8008,
-      "volume": 703800
-    },
-    "AXON": {
-      "close": 610.98,
-      "volume": 392100
-    },
-    "AXP": {
-      "close": 295.4361,
-      "volume": 1676000
-    },
-    "AZO": {
-      "close": 3241.6201,
-      "volume": 78600
-    },
-    "BA": {
-      "close": 180.72,
-      "volume": 6806900
-    },
-    "BAC": {
-      "close": 42.8699,
-      "volume": 17972500
-    },
-    "BAX": {
-      "close": 28.6522,
-      "volume": 2773300
-    },
-    "BDX": {
-      "close": 173.4878,
-      "volume": 1807385
-    },
-    "BFLY": {
-      "close": 3.46,
-      "volume": 2795700
-    },
-    "BIIB": {
-      "close": 151.31,
-      "volume": 1128500
-    },
-    "BKR": {
-      "close": 39.5179,
-      "volume": 3282500
-    },
-    "BLK": {
-      "close": 1011.8387,
-      "volume": 337100
-    },
-    "BMY": {
-      "close": 53.1526,
-      "volume": 6607700
-    },
-    "BSX": {
-      "close": 90.66,
-      "volume": 3177600
-    },
-    "BX": {
-      "close": 163.6563,
-      "volume": 3124200
-    },
-    "BXP": {
-      "close": 68.4716,
-      "volume": 593300
-    },
-    "C": {
-      "close": 68.0556,
-      "volume": 7743100
-    },
-    "CARR": {
-      "close": 67.439,
-      "volume": 2812200
-    },
-    "CAT": {
-      "close": 357.249,
-      "volume": 1245800
-    },
-    "CB": {
-      "close": 274.2086,
-      "volume": 1088600
-    },
-    "CBRE": {
-      "close": 130.63,
-      "volume": 975800
-    },
-    "CCI": {
-      "close": 84.0784,
-      "volume": 2915300
-    },
-    "CDNS": {
-      "close": 305.03,
-      "volume": 988300
-    },
-    "CI": {
-      "close": 270.0354,
-      "volume": 977000
-    },
-    "CME": {
-      "close": 222.6306,
-      "volume": 1384000
-    },
-    "CMG": {
-      "close": 60.78,
-      "volume": 4438000
-    },
-    "CMS": {
-      "close": 63.5735,
-      "volume": 889100
-    },
-    "CNP": {
-      "close": 31.1093,
-      "volume": 2716800
-    },
-    "COIN": {
-      "close": 265.71,
-      "volume": 5554000
-    },
-    "COLD": {
-      "close": 19.2605,
-      "volume": 1820000
-    },
-    "COR": {
-      "close": 224.2908,
-      "volume": 909200
-    },
-    "COST": {
-      "close": 930.7142,
+    "DDOG": {
+      "close": 145.99,
       "volume": 1943400
     },
-    "CPAY": {
-      "close": 341.23,
-      "volume": 427000
-    },
-    "CPRT": {
-      "close": 58.46,
-      "volume": 2290700
-    },
-    "CPT": {
-      "close": 108.7559,
-      "volume": 301600
-    },
-    "CRM": {
-      "close": 334.5525,
-      "volume": 3220400
-    },
-    "CSCO": {
-      "close": 57.2763,
-      "volume": 13021400
-    },
-    "CSX": {
-      "close": 31.746,
-      "volume": 10431500
-    },
-    "CTAS": {
-      "close": 180.9722,
-      "volume": 1572600
-    },
-    "CVS": {
-      "close": 41.691,
-      "volume": 10563800
-    },
-    "CVX": {
-      "close": 135.0502,
-      "volume": 5296500
-    },
-    "D": {
-      "close": 50.4279,
-      "volume": 2932200
-    },
-    "DD": {
-      "close": 93.4078,
-      "volume": 1107207
-    },
-    "DE": {
-      "close": 420.3154,
-      "volume": 735300
-    },
-    "DHR": {
-      "close": 228.6944,
-      "volume": 2130400
-    },
-    "DIA": {
-      "close": 420.1222,
-      "volume": 2429100
-    },
-    "DLR": {
-      "close": 170.5076,
-      "volume": 822900
-    },
-    "DOW": {
-      "close": 36.4392,
-      "volume": 4855000
-    },
-    "DPZ": {
-      "close": 418.1632,
-      "volume": 291000
-    },
-    "DUK": {
-      "close": 102.7871,
-      "volume": 2127200
-    },
-    "DXCM": {
-      "close": 80.24,
-      "volume": 1797800
-    },
-    "EA": {
-      "close": 147.1357,
-      "volume": 1023480
-    },
-    "ECL": {
-      "close": 234.0723,
-      "volume": 517400
-    },
-    "ED": {
-      "close": 85.184,
-      "volume": 1319600
-    },
-    "EIX": {
-      "close": 72.5315,
-      "volume": 985500
-    },
-    "ELV": {
-      "close": 360.3293,
-      "volume": 812100
-    },
-    "EMR": {
-      "close": 122.6358,
-      "volume": 1653500
-    },
-    "EOG": {
-      "close": 113.5458,
-      "volume": 2048400
-    },
-    "EQIX": {
-      "close": 912.0198,
-      "volume": 289700
-    },
-    "EQR": {
-      "close": 66.5135,
-      "volume": 946100
-    },
-    "ES": {
-      "close": 53.4905,
-      "volume": 1083300
-    },
-    "ESS": {
-      "close": 266.4785,
-      "volume": 298700
-    },
-    "ETN": {
-      "close": 327.6342,
-      "volume": 1601700
-    },
-    "ETR": {
-      "close": 72.8037,
-      "volume": 1429300
-    },
-    "EVRG": {
-      "close": 58.3631,
-      "volume": 945300
-    },
-    "EW": {
-      "close": 75.65,
-      "volume": 6102800
-    },
-    "EXC": {
-      "close": 35.4768,
-      "volume": 3669400
-    },
-    "EXR": {
-      "close": 138.3972,
-      "volume": 594000
-    },
-    "FAST": {
-      "close": 35.1723,
-      "volume": 5252600
-    },
-    "FCX": {
-      "close": 38.0051,
-      "volume": 7892500
-    },
-    "FDX": {
-      "close": 218.9796,
-      "volume": 1927521
-    },
-    "FE": {
-      "close": 36.9624,
-      "volume": 1864000
-    },
-    "FRT": {
-      "close": 103.3563,
-      "volume": 383300
-    },
-    "FTNT": {
-      "close": 96.08,
-      "volume": 2774700
-    },
-    "GD": {
-      "close": 257.3889,
-      "volume": 1001400
-    },
-    "GE": {
-      "close": 168.6601,
-      "volume": 3188400
-    },
-    "GEHC": {
-      "close": 79.2489,
-      "volume": 1533000
-    },
-    "GEV": {
-      "close": 332.6452,
-      "volume": 1506600
-    },
-    "GILD": {
-      "close": 90.4392,
-      "volume": 3349300
-    },
-    "GLPI": {
-      "close": 43.2844,
-      "volume": 875100
-    },
-    "GOOG": {
-      "close": 193.0353,
-      "volume": 14693000
-    },
-    "GOOGL": {
-      "close": 191.7584,
-      "volume": 18891400
-    },
-    "GS": {
-      "close": 559.2357,
-      "volume": 1486000
-    },
-    "GWW": {
-      "close": 1053.3033,
-      "volume": 173500
-    },
-    "HAL": {
-      "close": 25.7819,
-      "volume": 5379400
-    },
-    "HCA": {
-      "close": 299.2223,
-      "volume": 1238700
-    },
-    "HD": {
-      "close": 377.9235,
-      "volume": 1942700
-    },
-    "HIG": {
-      "close": 107.3113,
-      "volume": 856000
-    },
-    "HLT": {
-      "close": 249.1374,
-      "volume": 1288200
-    },
-    "HON": {
-      "close": 219.7124,
-      "volume": 3089317
-    },
-    "HPE": {
-      "close": 20.8856,
-      "volume": 6571000
-    },
-    "HST": {
-      "close": 15.8993,
-      "volume": 7022200
-    },
-    "HUM": {
-      "close": 249.3812,
-      "volume": 1049900
-    },
-    "IDXX": {
-      "close": 414.93,
-      "volume": 375000
-    },
-    "ILMN": {
-      "close": 135.27,
-      "volume": 1290600
-    },
-    "INTC": {
-      "close": 20.3,
-      "volume": 48260800
-    },
-    "INTU": {
-      "close": 628.4774,
-      "volume": 966400
-    },
-    "INVH": {
-      "close": 30.2119,
-      "volume": 1578100
-    },
-    "IONQ": {
-      "close": 45.48,
-      "volume": 22491400
-    },
-    "IQV": {
-      "close": 199.39,
-      "volume": 503100
-    },
-    "IRM": {
-      "close": 99.5763,
-      "volume": 954200
-    },
-    "ISRG": {
-      "close": 534.88,
-      "volume": 1013200
-    },
-    "ITW": {
-      "close": 245.7439,
-      "volume": 489000
-    },
-    "IWM": {
-      "close": 219.0055,
-      "volume": 26956000
-    },
-    "JCI": {
-      "close": 78.7143,
-      "volume": 1651800
-    },
-    "JKHY": {
-      "close": 173.118,
-      "volume": 303200
-    },
-    "JNJ": {
-      "close": 139.197,
-      "volume": 5588300
-    },
-    "JPM": {
-      "close": 232.8639,
-      "volume": 5730200
-    },
-    "KDP": {
-      "close": 30.5706,
-      "volume": 6018400
-    },
-    "KEY": {
-      "close": 16.0893,
-      "volume": 6597100
-    },
-    "KIM": {
-      "close": 21.7969,
-      "volume": 2023500
-    },
-    "KKR": {
-      "close": 148.1694,
-      "volume": 1571900
-    },
-    "KLAC": {
-      "close": 63.7702,
-      "volume": 7295000
-    },
-    "KMB": {
-      "close": 123.3767,
-      "volume": 1525000
-    },
-    "KMI": {
-      "close": 25.3098,
-      "volume": 6755600
-    },
-    "KO": {
-      "close": 59.8596,
-      "volume": 8542800
-    },
-    "KVUE": {
-      "close": 20.195,
-      "volume": 9833600
-    },
-    "LIN": {
-      "close": 414.6519,
-      "volume": 1444900
-    },
-    "LLY": {
-      "close": 774.7427,
-      "volume": 2096500
-    },
-    "LMT": {
-      "close": 469.406,
-      "volume": 820600
-    },
-    "LNT": {
-      "close": 56.3369,
-      "volume": 728900
-    },
-    "LOW": {
-      "close": 239.7354,
-      "volume": 1581100
-    },
-    "LRCX": {
-      "close": 72.5957,
-      "volume": 5444100
-    },
-    "LYB": {
-      "close": 65.9922,
-      "volume": 1654900
-    },
-    "MA": {
-      "close": 526.577,
-      "volume": 1541800
-    },
-    "MAA": {
-      "close": 142.4821,
-      "volume": 421800
-    },
-    "MAR": {
-      "close": 279.8237,
-      "volume": 717600
-    },
-    "MCD": {
-      "close": 283.4115,
-      "volume": 1617200
-    },
-    "MCK": {
-      "close": 573.0995,
-      "volume": 361800
-    },
-    "MCO": {
-      "close": 471.0077,
-      "volume": 305000
-    },
-    "MDLZ": {
-      "close": 56.9313,
-      "volume": 7608200
-    },
-    "MDT": {
-      "close": 76.9431,
-      "volume": 3880700
-    },
-    "META": {
-      "close": 596.8598,
-      "volume": 8084200
-    },
-    "MMM": {
-      "close": 126.5425,
-      "volume": 1842600
-    },
-    "MNST": {
-      "close": 52.55,
-      "volume": 3231200
-    },
-    "MO": {
-      "close": 47.3631,
-      "volume": 6425500
-    },
-    "MPC": {
-      "close": 131.559,
-      "volume": 1770100
-    },
-    "MRK": {
-      "close": 94.7002,
-      "volume": 6173600
-    },
-    "MRNA": {
-      "close": 40.13,
-      "volume": 4825100
-    },
-    "MS": {
-      "close": 121.308,
-      "volume": 3088100
-    },
-    "MSFT": {
-      "close": 425.4825,
-      "volume": 18117700
-    },
-    "MSI": {
-      "close": 459.6833,
-      "volume": 364800
-    },
-    "MU": {
-      "close": 88.1752,
-      "volume": 19422600
-    },
-    "NDSN": {
-      "close": 206.2234,
-      "volume": 275100
-    },
-    "NEE": {
-      "close": 68.9501,
-      "volume": 5458100
-    },
-    "NEM": {
-      "close": 37.0475,
-      "volume": 5456100
-    },
-    "NFLX": {
-      "close": 90.755,
-      "volume": 32262000
-    },
-    "NI": {
-      "close": 35.0493,
-      "volume": 1929300
-    },
-    "NKE": {
-      "close": 73.5158,
-      "volume": 6334400
-    },
-    "NOC": {
-      "close": 459.8021,
-      "volume": 376000
-    },
-    "NOW": {
-      "close": 216.292,
-      "volume": 5082500
-    },
-    "NRG": {
-      "close": 89.8373,
-      "volume": 6117900
-    },
-    "NSC": {
-      "close": 227.4249,
-      "volume": 526200
-    },
-    "NTLA": {
-      "close": 11.97,
-      "volume": 2254800
-    },
-    "NUE": {
-      "close": 114.1805,
-      "volume": 1330800
-    },
-    "NVDA": {
-      "close": 136.8057,
-      "volume": 170582600
-    },
-    "NXPI": {
-      "close": 208.0288,
-      "volume": 1162100
-    },
-    "O": {
-      "close": 48.0588,
-      "volume": 5373900
-    },
-    "ODFL": {
-      "close": 178.4664,
-      "volume": 1080500
-    },
-    "OKE": {
-      "close": 92.275,
-      "volume": 1928300
-    },
-    "ORCL": {
-      "close": 165.6978,
-      "volume": 4344300
-    },
-    "ORLY": {
-      "close": 79.8233,
-      "volume": 3256500
-    },
-    "OTIS": {
-      "close": 90.9038,
-      "volume": 789700
-    },
-    "OXY": {
-      "close": 47.0717,
-      "volume": 11712100
-    },
-    "PANW": {
-      "close": 186.18,
-      "volume": 2911300
-    },
-    "PAYX": {
-      "close": 132.4642,
-      "volume": 2032100
-    },
-    "PCAR": {
-      "close": 101.323,
-      "volume": 1640100
-    },
-    "PEG": {
-      "close": 80.9169,
-      "volume": 1356000
-    },
-    "PEP": {
-      "close": 144.1961,
-      "volume": 4287000
-    },
-    "PFE": {
-      "close": 23.6055,
-      "volume": 35218300
-    },
-    "PG": {
-      "close": 161.57,
-      "volume": 4367900
-    },
-    "PGR": {
-      "close": 221.8772,
-      "volume": 1410400
-    },
-    "PH": {
-      "close": 634.972,
-      "volume": 392500
-    },
-    "PLD": {
-      "close": 100.0826,
-      "volume": 3655100
-    },
-    "PNR": {
-      "close": 99.1359,
-      "volume": 642200
-    },
-    "PPG": {
-      "close": 115.1392,
-      "volume": 993100
-    },
-    "PPL": {
-      "close": 31.0152,
-      "volume": 2271200
-    },
-    "PRU": {
-      "close": 110.1662,
-      "volume": 736300
-    },
-    "PSA": {
-      "close": 280.5601,
-      "volume": 388300
-    },
-    "PSX": {
-      "close": 106.8565,
-      "volume": 2615000
-    },
-    "PWR": {
-      "close": 322.5556,
-      "volume": 582000
-    },
-    "PYPL": {
-      "close": 86.1142,
-      "volume": 5125000
-    },
-    "QBTS": {
-      "close": 9.91,
-      "volume": 118973800
-    },
-    "QCOM": {
-      "close": 152.2538,
-      "volume": 7232500
-    },
-    "QQQ": {
-      "close": 518.6984,
-      "volume": 33839600
-    },
-    "QUBT": {
-      "close": 18.35,
-      "volume": 46438300
-    },
-    "RBLX": {
-      "close": 59.45,
-      "volume": 3353400
-    },
-    "REG": {
-      "close": 69.6784,
-      "volume": 808500
-    },
-    "REGN": {
-      "close": 706.5642,
-      "volume": 795600
-    },
-    "RGTI": {
-      "close": 17.08,
-      "volume": 305773000
-    },
-    "ROKU": {
-      "close": 77.03,
-      "volume": 2286500
-    },
-    "ROP": {
-      "close": 517.0159,
-      "volume": 422400
-    },
-    "ROST": {
-      "close": 150.6651,
-      "volume": 1341500
-    },
-    "RSG": {
-      "close": 199.0414,
-      "volume": 559600
-    },
-    "RTX": {
-      "close": 113.7209,
-      "volume": 3847500
-    },
-    "SBAC": {
-      "close": 196.555,
-      "volume": 653500
-    },
-    "SBUX": {
-      "close": 88.7681,
-      "volume": 8200400
-    },
-    "SHW": {
-      "close": 338.6302,
-      "volume": 881700
-    },
-    "SIDU": {
-      "close": 5.02,
-      "volume": 5198200
-    },
-    "SJM": {
-      "close": 104.0847,
-      "volume": 513700
-    },
-    "SLB": {
-      "close": 36.2352,
-      "volume": 9493700
-    },
-    "SMCI": {
-      "close": 31.98,
-      "volume": 32070600
-    },
-    "SMH": {
-      "close": 247.6295,
-      "volume": 3812300
-    },
-    "SNPS": {
-      "close": 490.91,
-      "volume": 654800
-    },
-    "SO": {
-      "close": 79.1654,
-      "volume": 2603000
-    },
-    "SOLV": {
-      "close": 66.74,
-      "volume": 460200
-    },
-    "SPG": {
-      "close": 160.0849,
-      "volume": 734400
-    },
-    "SPGI": {
-      "close": 469.0705,
-      "volume": 710198
-    },
-    "SPY": {
-      "close": 584.9949,
-      "volume": 64969300
-    },
-    "SRE": {
-      "close": 83.8006,
-      "volume": 1791200
-    },
-    "SYK": {
-      "close": 360.9596,
-      "volume": 705500
-    },
-    "SYM": {
-      "close": 24.08,
-      "volume": 1047100
-    },
-    "TDG": {
-      "close": 1207.8472,
-      "volume": 154000
-    },
-    "TEL": {
-      "close": 142.2488,
-      "volume": 692800
-    },
-    "TER": {
-      "close": 127.8808,
-      "volume": 1640200
-    },
-    "TGT": {
-      "close": 127.2657,
-      "volume": 3089000
-    },
-    "TMO": {
-      "close": 523.1741,
-      "volume": 943200
-    },
-    "TPR": {
-      "close": 64.4662,
-      "volume": 2054900
-    },
-    "TROW": {
-      "close": 106.9478,
-      "volume": 731300
-    },
-    "TRV": {
-      "close": 235.6891,
-      "volume": 631700
-    },
-    "TSLA": {
-      "close": 431.66,
-      "volume": 82666800
-    },
-    "TXT": {
-      "close": 77.0989,
-      "volume": 736500
-    },
-    "UDR": {
-      "close": 40.4255,
-      "volume": 929200
-    },
-    "UNH": {
-      "close": 491.088,
-      "volume": 3471800
-    },
-    "UNP": {
-      "close": 222.2491,
-      "volume": 1455900
-    },
-    "UPS": {
-      "close": 114.4474,
-      "volume": 2904000
-    },
-    "UPST": {
-      "close": 67.98,
-      "volume": 3995400
-    },
-    "URI": {
-      "close": 707.1257,
-      "volume": 280500
-    },
-    "V": {
-      "close": 314.524,
-      "volume": 3489200
-    },
-    "VEEV": {
-      "close": 214.01,
-      "volume": 670800
-    },
-    "VICI": {
-      "close": 26.4576,
-      "volume": 3356200
-    },
-    "VLO": {
-      "close": 114.2378,
-      "volume": 1697800
-    },
-    "VMI": {
-      "close": 303.167,
-      "volume": 89600
-    },
-    "VRTX": {
-      "close": 408.76,
-      "volume": 1373400
-    },
-    "VSAT": {
-      "close": 8.94,
-      "volume": 2363600
-    },
-    "VTR": {
-      "close": 56.1476,
-      "volume": 3226400
-    },
-    "WEC": {
-      "close": 90.1591,
-      "volume": 823100
-    },
-    "WELL": {
-      "close": 121.9941,
-      "volume": 2612200
-    },
-    "WFC": {
-      "close": 68.4704,
-      "volume": 7219500
-    },
-    "WM": {
-      "close": 199.3679,
-      "volume": 878700
-    },
-    "WMB": {
-      "close": 51.385,
-      "volume": 3677300
-    },
-    "WMT": {
-      "close": 90.4324,
-      "volume": 11384400
-    },
-    "WRB": {
-      "close": 56.8497,
-      "volume": 824500
-    },
-    "WY": {
-      "close": 26.6292,
-      "volume": 2320500
-    },
-    "XEL": {
-      "close": 64.478,
-      "volume": 2015000
-    },
-    "XLB": {
-      "close": 41.3019,
-      "volume": 8568000
-    },
-    "XLC": {
-      "close": 96.4208,
-      "volume": 4100400
-    },
-    "XLE": {
-      "close": 40.3568,
-      "volume": 20369800
-    },
-    "XLF": {
-      "close": 47.6679,
-      "volume": 33852400
-    },
-    "XLI": {
-      "close": 130.7635,
-      "volume": 6060000
-    },
-    "XLK": {
-      "close": 117.7229,
-      "volume": 8726400
-    },
-    "XLP": {
-      "close": 76.2305,
-      "volume": 6601700
-    },
-    "XLRE": {
-      "close": 38.5905,
-      "volume": 4588800
-    },
-    "XLU": {
-      "close": 36.4938,
-      "volume": 13805400
-    },
-    "XLV": {
-      "close": 135.3921,
-      "volume": 5948000
-    },
-    "XLY": {
-      "close": 113.4303,
-      "volume": 6097200
-    },
-    "XOM": {
-      "close": 101.3425,
-      "volume": 11943900
-    },
-    "XYL": {
-      "close": 115.2976,
-      "volume": 552400
-    },
-    "YUM": {
-      "close": 131.41,
-      "volume": 1146300
-    },
-    "ZS": {
-      "close": 184.56,
-      "volume": 1256100
-    },
-    "ZTS": {
-      "close": 159.9352,
-      "volume": 1800100
+    "DIS": {
+      "close": 109.4909,
+      "volume": 4523800
+    },
+    "FIVE": {
+      "close": 109.17,
+      "volume": 1102900
+    },
+    "FIZZ": {
+      "close": 38.7955,
+      "volume": 134700
+    },
+    "FSLR": {
+      "close": 182.63,
+      "volume": 1034100
+    },
+    "HIMS": {
+      "close": 26.56,
+      "volume": 8871100
+    },
+    "IMAX": {
+      "close": 25.09,
+      "volume": 492400
+    },
+    "INOD": {
+      "close": 45.36,
+      "volume": 1136600
+    },
+    "LNG": {
+      "close": 207.0727,
+      "volume": 686500
+    },
+    "LYV": {
+      "close": 131.85,
+      "volume": 785200
+    },
+    "MLM": {
+      "close": 524.4081,
+      "volume": 249300
+    },
+    "MOD": {
+      "close": 118.65,
+      "volume": 662600
+    },
+    "MP": {
+      "close": 16.46,
+      "volume": 1529400
+    },
+    "MTCH": {
+      "close": 31.8478,
+      "volume": 1872800
+    },
+    "OKLO": {
+      "close": 22.78,
+      "volume": 10185700
+    },
+    "ORA": {
+      "close": 67.3136,
+      "volume": 1152800
+    },
+    "PLTR": {
+      "close": 79.08,
+      "volume": 66975900
+    },
+    "PM": {
+      "close": 115.3116,
+      "volume": 3923500
+    },
+    "RDDT": {
+      "close": 173.54,
+      "volume": 2606100
+    },
+    "RKLB": {
+      "close": 27.22,
+      "volume": 15559200
+    },
+    "SCHW": {
+      "close": 73.1109,
+      "volume": 3967500
+    },
+    "SM": {
+      "close": 35.7386,
+      "volume": 1068500
+    },
+    "SOFI": {
+      "close": 15.98,
+      "volume": 31003000
+    },
+    "SOUN": {
+      "close": 23.95,
+      "volume": 75697900
+    },
+    "SPOT": {
+      "close": 456.48,
+      "volume": 963700
+    },
+    "SSD": {
+      "close": 164.8033,
+      "volume": 118500
+    },
+    "STZ": {
+      "close": 212.686,
+      "volume": 1190100
+    },
+    "TMUS": {
+      "close": 217.3637,
+      "volume": 2150000
+    },
+    "TSM": {
+      "close": 197.9268,
+      "volume": 10664400
+    },
+    "TTWO": {
+      "close": 186.43,
+      "volume": 1010700
+    },
+    "ULTA": {
+      "close": 442.15,
+      "volume": 490300
+    },
+    "UMH": {
+      "close": 17.0057,
+      "volume": 251700
+    },
+    "VST": {
+      "close": 138.5358,
+      "volume": 3214700
     }
   },
   "session": "close",

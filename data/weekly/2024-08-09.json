@@ -1,0 +1,222 @@
+{
+  "as_of": "2024-08-09",
+  "commodities": {
+    "GOLD": {
+      "close": 2432.1001,
+      "volume": 611
+    },
+    "SILVER": {
+      "close": 27.487,
+      "volume": 2
+    },
+    "WTI": {
+      "close": 76.84,
+      "volume": 263007
+    }
+  },
+  "fetched_at": "2026-08-26T03:53:43Z",
+  "fx": {
+    "DXY": {
+      "close": 103.14,
+      "volume": null
+    }
+  },
+  "missing": [
+    {
+      "reason": "no bar for week of 2024-08-09 (likely pre-IPO or not trading)",
+      "ticker": "SPCX"
+    }
+  ],
+  "rates": {
+    "US10Y": {
+      "close": 3.942,
+      "volume": null
+    },
+    "US2Y": {
+      "close": 3.983,
+      "volume": 61
+    }
+  },
+  "series": {
+    "ALB": {
+      "close": 78.9145,
+      "volume": 2165700
+    },
+    "BKNG": {
+      "close": 135.5137,
+      "volume": 6295000
+    },
+    "BLFS": {
+      "close": 25.25,
+      "volume": 1004600
+    },
+    "CALM": {
+      "close": 62.859,
+      "volume": 321400
+    },
+    "CCJ": {
+      "close": 39.3964,
+      "volume": 2884200
+    },
+    "CEG": {
+      "close": 187.3347,
+      "volume": 3204000
+    },
+    "COP": {
+      "close": 101.269,
+      "volume": 5776200
+    },
+    "CRSP": {
+      "close": 47.01,
+      "volume": 998700
+    },
+    "CRWD": {
+      "close": 60.225,
+      "volume": 23755600
+    },
+    "CVNA": {
+      "close": 27.184,
+      "volume": 12365500
+    },
+    "DDOG": {
+      "close": 112.28,
+      "volume": 4515400
+    },
+    "DIS": {
+      "close": 84.2453,
+      "volume": 16008400
+    },
+    "FIVE": {
+      "close": 66.74,
+      "volume": 1349500
+    },
+    "FIZZ": {
+      "close": 42.3207,
+      "volume": 166400
+    },
+    "FSLR": {
+      "close": 211.8,
+      "volume": 815000
+    },
+    "HIMS": {
+      "close": 15.96,
+      "volume": 8244500
+    },
+    "IMAX": {
+      "close": 19.96,
+      "volume": 481100
+    },
+    "INOD": {
+      "close": 18.55,
+      "volume": 1720100
+    },
+    "LNG": {
+      "close": 179.7587,
+      "volume": 1645200
+    },
+    "LYV": {
+      "close": 92.18,
+      "volume": 1072200
+    },
+    "MLM": {
+      "close": 527.6005,
+      "volume": 666000
+    },
+    "MOD": {
+      "close": 100.31,
+      "volume": 618500
+    },
+    "MP": {
+      "close": 11.14,
+      "volume": 2872100
+    },
+    "MTCH": {
+      "close": 33.4608,
+      "volume": 3680800
+    },
+    "OKLO": {
+      "close": 7.49,
+      "volume": 1581000
+    },
+    "ORA": {
+      "close": 71.6486,
+      "volume": 319100
+    },
+    "PLTR": {
+      "close": 30.01,
+      "volume": 88131100
+    },
+    "PM": {
+      "close": 107.7282,
+      "volume": 3814600
+    },
+    "RDDT": {
+      "close": 52.91,
+      "volume": 14509800
+    },
+    "RKLB": {
+      "close": 5.37,
+      "volume": 17827800
+    },
+    "SCHW": {
+      "close": 60.8411,
+      "volume": 4255100
+    },
+    "SM": {
+      "close": 40.5467,
+      "volume": 1979800
+    },
+    "SOFI": {
+      "close": 6.64,
+      "volume": 19048600
+    },
+    "SOUN": {
+      "close": 4.87,
+      "volume": 38585900
+    },
+    "SPOT": {
+      "close": 339.9,
+      "volume": 1212900
+    },
+    "SSD": {
+      "close": 172.4857,
+      "volume": 217400
+    },
+    "STZ": {
+      "close": 228.6073,
+      "volume": 890600
+    },
+    "TMUS": {
+      "close": 187.9819,
+      "volume": 2802200
+    },
+    "TSM": {
+      "close": 162.9299,
+      "volume": 20519400
+    },
+    "TTWO": {
+      "close": 144.82,
+      "volume": 3996300
+    },
+    "ULTA": {
+      "close": 322.17,
+      "volume": 919600
+    },
+    "UMH": {
+      "close": 17.0243,
+      "volume": 414800
+    },
+    "VST": {
+      "close": 77.6849,
+      "volume": 5586300
+    }
+  },
+  "session": "close",
+  "source": "yahoo-backfill",
+  "vol": {
+    "VIX": {
+      "close": 20.37,
+      "volume": null
+    }
+  }
+}
