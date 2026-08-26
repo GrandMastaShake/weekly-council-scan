@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-08-25",
+  "as_of": "2026-08-26",
   "next_review": "2026-10-01",
   "source": "yahoo",
   "tickers": [
@@ -21,8 +21,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -42,8 +41,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -62,8 +60,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -81,8 +78,7 @@
       "t": "ACN",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -100,8 +96,7 @@
       "t": "ADBE",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -121,8 +116,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -142,8 +136,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -162,8 +155,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -181,8 +173,7 @@
       "t": "AFL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -200,8 +191,7 @@
       "t": "AIG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -219,8 +209,7 @@
       "t": "AJG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -238,11 +227,10 @@
       "t": "AKAM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -250,16 +238,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Materials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ALB",
       "wiki_refs": [
-        "wiki/materials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/materials.md"
+      ]
     },
     {
       "added": null,
@@ -278,8 +264,7 @@
       "wiki_refs": [
         "wiki/communication-services.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -300,8 +285,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -322,8 +306,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -342,8 +325,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -361,8 +343,7 @@
       "t": "AMP",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -382,8 +363,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -405,8 +385,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -424,8 +403,7 @@
       "t": "ANET",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -443,8 +421,7 @@
       "t": "AON",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -463,8 +440,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -482,8 +458,7 @@
       "t": "APH",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -501,8 +476,7 @@
       "t": "APO",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -520,8 +494,7 @@
       "t": "ARE",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -539,8 +512,7 @@
       "t": "ATO",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -558,8 +530,7 @@
       "t": "AVB",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -580,8 +551,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -599,8 +569,7 @@
       "t": "AWK",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -618,8 +587,7 @@
       "t": "AXON",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -637,8 +605,7 @@
       "t": "AXP",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -656,8 +623,7 @@
       "t": "AZO",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -677,8 +643,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -697,8 +662,7 @@
       "wiki_refs": [
         "wiki/financials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -716,8 +680,7 @@
       "t": "BAX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -735,8 +698,7 @@
       "t": "BDX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -754,8 +716,7 @@
       "t": "BFLY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -773,8 +734,7 @@
       "t": "BIIB",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -794,11 +754,10 @@
         "wiki/communication-services.md",
         "wiki/financials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -806,16 +765,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Discretionary",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BKNG",
       "wiki_refs": [
-        "wiki/consumer-discretionary.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/consumer-discretionary.md"
+      ]
     },
     {
       "added": null,
@@ -833,11 +790,10 @@
       "t": "BKR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -845,16 +801,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Healthcare",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BLFS",
-      "wiki_refs": [
-        "wiki/healthcare.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -872,8 +824,7 @@
       "t": "BLK",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -893,8 +844,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -912,8 +862,7 @@
       "t": "BSX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -931,8 +880,7 @@
       "t": "BX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -950,8 +898,7 @@
       "t": "BXP",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -974,11 +921,10 @@
         "wiki/industrials.md",
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -986,16 +932,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Staples",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CALM",
-      "wiki_refs": [
-        "wiki/consumer-staples.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -1013,8 +955,7 @@
       "t": "CARR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1033,8 +974,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1052,8 +992,7 @@
       "t": "CB",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1072,8 +1011,7 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1092,11 +1030,10 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1104,16 +1041,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Energy",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CCJ",
-      "wiki_refs": [
-        "wiki/energy.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -1131,11 +1064,10 @@
       "t": "CDNS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1143,16 +1075,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Utilities",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CEG",
       "wiki_refs": [
-        "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1171,8 +1101,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1192,8 +1121,7 @@
         "wiki/financials.md",
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1211,8 +1139,7 @@
       "t": "CMG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1231,8 +1158,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1250,8 +1176,7 @@
       "t": "CNP",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1269,8 +1194,7 @@
       "t": "COIN",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1288,11 +1212,10 @@
       "t": "COLD",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1300,16 +1223,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Energy",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "COP",
       "wiki_refs": [
-        "wiki/energy.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/energy.md"
+      ]
     },
     {
       "added": null,
@@ -1327,8 +1248,7 @@
       "t": "COR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1347,8 +1267,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1366,8 +1285,7 @@
       "t": "CPAY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1385,8 +1303,7 @@
       "t": "CPRT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1404,8 +1321,7 @@
       "t": "CPT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1424,11 +1340,10 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1436,19 +1351,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Healthcare",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CRSP",
-      "wiki_refs": [
-        "wiki/healthcare.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1456,16 +1367,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CRWD",
       "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md",
+        "wiki/tech.md"
+      ]
     },
     {
       "added": null,
@@ -1485,8 +1395,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1505,8 +1414,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1524,11 +1432,10 @@
       "t": "CTAS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1536,16 +1443,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Discretionary",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CVNA",
-      "wiki_refs": [
-        "wiki/consumer-discretionary.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -1564,8 +1467,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1585,8 +1487,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1608,8 +1509,7 @@
         "wiki/healthcare.md",
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1628,11 +1528,10 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1640,16 +1539,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "DDOG",
       "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md"
+      ]
     },
     {
       "added": null,
@@ -1670,8 +1567,7 @@
         "wiki/industrials.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1690,11 +1586,10 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -1702,16 +1597,16 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "DIS",
       "wiki_refs": [
         "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/consumer-discretionary.md",
+        "wiki/earnings-surveillance.md"
+      ]
     },
     {
       "added": null,
@@ -1730,8 +1625,7 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1750,8 +1644,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1769,8 +1662,7 @@
       "t": "DPZ",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1789,8 +1681,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1808,8 +1699,7 @@
       "t": "DXCM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1828,8 +1718,7 @@
       "wiki_refs": [
         "wiki/communication-services.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1848,8 +1737,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1868,8 +1756,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1888,8 +1775,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1908,8 +1794,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1927,8 +1812,7 @@
       "t": "EMR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1947,8 +1831,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -1967,8 +1850,7 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -1986,8 +1868,7 @@
       "t": "EQR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2006,8 +1887,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2025,8 +1905,7 @@
       "t": "ESS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2045,8 +1924,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2064,8 +1942,7 @@
       "t": "ETR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2083,8 +1960,7 @@
       "t": "EVRG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2103,8 +1979,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2123,8 +1998,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2142,8 +2016,7 @@
       "t": "EXR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2161,8 +2034,7 @@
       "t": "FAST",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2182,8 +2054,7 @@
         "wiki/canary-watch.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2202,8 +2073,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2221,11 +2091,10 @@
       "t": "FE",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2233,19 +2102,17 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Discretionary",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "FIVE",
       "wiki_refs": [
-        "wiki/consumer-discretionary.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md"
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2253,16 +2120,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Staples",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "FIZZ",
-      "wiki_refs": [
-        "wiki/consumer-staples.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -2280,11 +2143,10 @@
       "t": "FRT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2292,16 +2154,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Energy",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "FSLR",
-      "wiki_refs": [
-        "wiki/energy.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -2319,8 +2177,7 @@
       "t": "FTNT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2338,8 +2195,7 @@
       "t": "GD",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2358,8 +2214,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2377,8 +2232,7 @@
       "t": "GEHC",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2396,8 +2250,7 @@
       "t": "GEV",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2416,8 +2269,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2435,8 +2287,7 @@
       "t": "GLPI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2455,8 +2306,7 @@
       "wiki_refs": [
         "wiki/communication-services.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2476,8 +2326,7 @@
         "wiki/communication-services.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2497,8 +2346,7 @@
         "wiki/financials.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2516,8 +2364,7 @@
       "t": "GWW",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2535,8 +2382,7 @@
       "t": "HAL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2554,8 +2400,7 @@
       "t": "HCA",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2575,8 +2420,7 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2594,8 +2438,7 @@
       "t": "HES",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2613,11 +2456,10 @@
       "t": "HIG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2625,16 +2467,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Healthcare",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "HIMS",
-      "wiki_refs": [
-        "wiki/healthcare.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -2652,8 +2490,7 @@
       "t": "HLT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2672,8 +2509,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2692,8 +2528,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2711,8 +2546,7 @@
       "t": "HST",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2730,8 +2564,7 @@
       "t": "HUM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2749,8 +2582,7 @@
       "t": "IDXX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2768,11 +2600,10 @@
       "t": "ILMN",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2780,19 +2611,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "IMAX",
-      "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -2800,16 +2627,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "INOD",
-      "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -2830,8 +2653,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2849,8 +2671,7 @@
       "t": "INTU",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2868,8 +2689,7 @@
       "t": "INVH",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2887,8 +2707,7 @@
       "t": "IONQ",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2906,8 +2725,7 @@
       "t": "IQV",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2925,8 +2743,7 @@
       "t": "IRM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2944,8 +2761,7 @@
       "t": "ISRG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -2964,8 +2780,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -2983,8 +2798,7 @@
       "t": "JCI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3002,8 +2816,7 @@
       "t": "JKHY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3023,8 +2836,7 @@
         "wiki/healthcare.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3046,8 +2858,7 @@
         "wiki/materials.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3066,8 +2877,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3085,8 +2895,7 @@
       "t": "KEY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3104,8 +2913,7 @@
       "t": "KIM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3124,8 +2932,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3144,8 +2951,7 @@
       "wiki_refs": [
         "wiki/semiconductors.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3164,8 +2970,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3184,8 +2989,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3205,8 +3009,7 @@
         "wiki/consumer-staples.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3224,8 +3027,7 @@
       "t": "KVUE",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3245,8 +3047,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3266,8 +3067,7 @@
         "wiki/healthcare.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3286,11 +3086,10 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3298,16 +3097,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Energy",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "LNG",
       "wiki_refs": [
-        "wiki/energy.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/utilities.md"
+      ]
     },
     {
       "added": null,
@@ -3325,8 +3122,7 @@
       "t": "LNT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3346,8 +3142,7 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3368,8 +3163,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3387,11 +3181,10 @@
       "t": "LYB",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3399,16 +3192,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "LYV",
-      "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -3441,8 +3230,7 @@
         "wiki/tech.md",
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3460,8 +3248,7 @@
       "t": "MAA",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3480,8 +3267,7 @@
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3500,8 +3286,7 @@
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3519,8 +3304,7 @@
       "t": "MCK",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3538,8 +3322,7 @@
       "t": "MCO",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3558,8 +3341,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3577,8 +3359,7 @@
       "t": "MDT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3599,11 +3380,10 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3611,16 +3391,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Materials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MLM",
       "wiki_refs": [
-        "wiki/materials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md",
+        "wiki/materials.md"
+      ]
     },
     {
       "added": null,
@@ -3638,8 +3417,7 @@
       "t": "MMC",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3658,8 +3436,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3677,8 +3454,7 @@
       "t": "MNST",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3697,11 +3473,10 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3709,19 +3484,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Industrials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MOD",
-      "wiki_refs": [
-        "wiki/industrials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3729,16 +3500,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Materials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MP",
-      "wiki_refs": [
-        "wiki/materials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -3757,8 +3524,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3778,8 +3544,7 @@
         "wiki/canary-watch.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3799,8 +3564,7 @@
         "wiki/canary-watch.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3820,8 +3584,7 @@
         "wiki/communication-services.md",
         "wiki/financials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3842,8 +3605,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3861,11 +3623,10 @@
       "t": "MSI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -3873,16 +3634,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MTCH",
-      "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -3902,8 +3659,7 @@
         "wiki/semiconductors.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3921,8 +3677,7 @@
       "t": "NDSN",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -3941,8 +3696,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3961,8 +3715,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -3982,8 +3735,7 @@
         "wiki/communication-services.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4004,8 +3756,7 @@
         "wiki/industrials.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4024,8 +3775,7 @@
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4043,8 +3793,7 @@
       "t": "NOC",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4063,8 +3812,7 @@
       "wiki_refs": [
         "wiki/semiconductors.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4082,8 +3830,7 @@
       "t": "NRG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4101,8 +3848,7 @@
       "t": "NSC",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4120,8 +3866,7 @@
       "t": "NTLA",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4141,8 +3886,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4170,8 +3914,7 @@
         "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4189,8 +3932,7 @@
       "t": "NXPI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4210,8 +3952,7 @@
         "wiki/healthcare.md",
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4229,8 +3970,7 @@
       "t": "ODFL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4248,11 +3988,10 @@
       "t": "OKE",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4260,19 +3999,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Utilities",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "OKLO",
-      "wiki_refs": [
-        "wiki/universe.md",
-        "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4280,16 +4015,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Utilities",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ORA",
-      "wiki_refs": [
-        "wiki/universe.md",
-        "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -4308,8 +4039,7 @@
       "wiki_refs": [
         "wiki/tech.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4327,8 +4057,7 @@
       "t": "ORLY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4346,8 +4075,7 @@
       "t": "OTIS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4366,8 +4094,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4385,8 +4112,7 @@
       "t": "PANW",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4404,8 +4130,7 @@
       "t": "PAYX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4423,8 +4148,7 @@
       "t": "PCAR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4443,8 +4167,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4462,8 +4185,7 @@
       "t": "PEG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4482,8 +4204,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4502,8 +4223,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4523,8 +4243,7 @@
         "wiki/consumer-staples.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4542,8 +4261,7 @@
       "t": "PGR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4561,8 +4279,7 @@
       "t": "PH",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4581,11 +4298,10 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4593,19 +4309,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "PLTR",
-      "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4613,16 +4325,21 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Staples",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "PM",
       "wiki_refs": [
+        "wiki/canary-watch.md",
+        "wiki/consumer-discretionary.md",
         "wiki/consumer-staples.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md",
+        "wiki/economic-calendar.md",
+        "wiki/materials.md",
+        "wiki/semiconductors.md",
+        "wiki/tech.md"
+      ]
     },
     {
       "added": null,
@@ -4640,8 +4357,7 @@
       "t": "PNR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4660,8 +4376,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4680,8 +4395,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4699,8 +4413,7 @@
       "t": "PRU",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4720,8 +4433,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4740,8 +4452,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4759,8 +4470,7 @@
       "t": "PWR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4778,8 +4488,7 @@
       "t": "PYPL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4797,8 +4506,7 @@
       "t": "QBTS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4818,8 +4526,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/semiconductors.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4837,8 +4544,7 @@
       "t": "QUBT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4856,11 +4562,10 @@
       "t": "RBLX",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4868,16 +4573,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "RDDT",
-      "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -4895,8 +4596,7 @@
       "t": "REG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4915,8 +4615,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -4934,11 +4633,10 @@
       "t": "RGTI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -4946,16 +4644,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Industrials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "RKLB",
-      "wiki_refs": [
-        "wiki/industrials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -4973,8 +4667,7 @@
       "t": "ROKU",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -4992,8 +4685,7 @@
       "t": "ROP",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5013,8 +4705,7 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5032,8 +4723,7 @@
       "t": "RSG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5052,8 +4742,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5072,8 +4761,7 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5093,11 +4781,10 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5105,16 +4792,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Financials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SCHW",
-      "wiki_refs": [
-        "wiki/financials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -5133,8 +4816,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -5152,8 +4834,7 @@
       "t": "SIDU",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5172,8 +4853,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5192,11 +4872,10 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5204,16 +4883,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Energy",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SM",
       "wiki_refs": [
-        "wiki/energy.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/energy.md"
+      ]
     },
     {
       "added": null,
@@ -5232,8 +4909,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5251,8 +4927,7 @@
       "t": "SNPS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5272,11 +4947,10 @@
         "wiki/earnings-surveillance.md",
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5284,16 +4958,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Financials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SOFI",
-      "wiki_refs": [
-        "wiki/financials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -5311,11 +4981,10 @@
       "t": "SOLV",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5323,19 +4992,17 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SOUN",
       "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/tech.md"
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5343,16 +5010,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Industrials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SPCX",
-      "wiki_refs": [
-        "wiki/industrials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -5371,8 +5034,7 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -5390,11 +5052,10 @@
       "t": "SPGI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5402,16 +5063,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SPOT",
-      "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -5430,11 +5087,10 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5442,19 +5098,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Materials",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SSD",
-      "wiki_refs": [
-        "wiki/materials.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5462,16 +5114,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Staples",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "STZ",
       "wiki_refs": [
-        "wiki/consumer-staples.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/consumer-staples.md"
+      ]
     },
     {
       "added": null,
@@ -5489,8 +5139,7 @@
       "t": "SYK",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5508,8 +5157,7 @@
       "t": "SYM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5527,8 +5175,7 @@
       "t": "TDG",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5546,8 +5193,7 @@
       "t": "TEL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5565,8 +5211,7 @@
       "t": "TER",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5586,8 +5231,7 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5606,11 +5250,10 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5618,16 +5261,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TMUS",
       "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/communication-services.md"
+      ]
     },
     {
       "added": null,
@@ -5645,8 +5286,7 @@
       "t": "TPR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5664,8 +5304,7 @@
       "t": "TROW",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5683,8 +5322,7 @@
       "t": "TRV",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5704,11 +5342,10 @@
         "wiki/consumer-discretionary.md",
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5716,19 +5353,18 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Technology",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TSM",
       "wiki_refs": [
-        "wiki/tech.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/earnings-surveillance.md",
+        "wiki/semiconductors.md"
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5736,16 +5372,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Communication Services",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TTWO",
       "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+        "wiki/communication-services.md"
+      ]
     },
     {
       "added": null,
@@ -5763,8 +5397,7 @@
       "t": "TXT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5782,11 +5415,10 @@
       "t": "UDR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5794,19 +5426,15 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Consumer Discretionary",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ULTA",
-      "wiki_refs": [
-        "wiki/consumer-discretionary.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -5814,16 +5442,12 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Real Estate",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "UMH",
-      "wiki_refs": [
-        "wiki/real-estate.md",
-        "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -5842,8 +5466,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -5862,8 +5485,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5883,8 +5505,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5902,8 +5523,7 @@
       "t": "UPST",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -5921,8 +5541,7 @@
       "t": "URI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5941,8 +5560,7 @@
       "wiki_refs": [
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -5960,8 +5578,7 @@
       "t": "VEEV",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -5979,8 +5596,7 @@
       "t": "VICI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6000,8 +5616,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6019,8 +5634,7 @@
       "t": "VMI",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6039,8 +5653,7 @@
       "wiki_refs": [
         "wiki/healthcare.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6058,11 +5671,10 @@
       "t": "VSAT",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
-      "added": "2026-08-25",
+      "added": null,
       "adv_usd": null,
       "adv_usd_reason": "enrichment disabled (enrich=False)",
       "cap": null,
@@ -6070,16 +5682,14 @@
       "name": null,
       "name_reason": "enrichment disabled (enrich=False)",
       "removed": null,
-      "sector": "Utilities",
-      "sector_reason": "Seven Orbs watchlist (config/watchlist_110.csv)",
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "VST",
       "wiki_refs": [
-        "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6097,8 +5707,7 @@
       "t": "VTR",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6117,8 +5726,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6138,8 +5746,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/real-estate.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6159,8 +5766,7 @@
         "wiki/financials.md",
         "wiki/materials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6179,8 +5785,7 @@
       "wiki_refs": [
         "wiki/industrials.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6199,8 +5804,7 @@
       "wiki_refs": [
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6227,8 +5831,7 @@
         "wiki/real-estate.md",
         "wiki/semiconductors.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6246,8 +5849,7 @@
       "t": "WRB",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6265,8 +5867,7 @@
       "t": "WY",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6285,8 +5886,7 @@
       "wiki_refs": [
         "wiki/universe.md",
         "wiki/utilities.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6306,8 +5906,7 @@
         "wiki/earnings-surveillance.md",
         "wiki/energy.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": true
+      ]
     },
     {
       "added": null,
@@ -6325,8 +5924,7 @@
       "t": "XYL",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6344,8 +5942,7 @@
       "t": "YUM",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6364,8 +5961,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     },
     {
       "added": null,
@@ -6383,11 +5979,7 @@
       "t": "ZTS",
       "wiki_refs": [
         "wiki/universe.md"
-      ],
-      "sector_focus_110": false
+      ]
     }
-  ],
-  "universe_size": 321,
-  "sector_focus_size": 110,
-  "note": "Price feed is 321 names. sector_focus_110 marks the Seven Orbs analysis watchlist used for sector breadth and relative momentum; the feed is deliberately wider so Arena and portfolio names never lose coverage."
+  ]
 }

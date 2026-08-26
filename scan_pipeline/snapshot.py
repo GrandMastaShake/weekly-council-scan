@@ -60,9 +60,9 @@ from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Tuple
 
 try:
-    from scan_pipeline.config.tickers import STOCK_UNIVERSE
+    from scan_pipeline.config.tickers import STOCK_UNIVERSE, BACKFILL_44_TICKERS
 except ImportError:  # same-dir import when repo root is not on sys.path
-    from config.tickers import STOCK_UNIVERSE
+    from config.tickers import STOCK_UNIVERSE, BACKFILL_44_TICKERS
 
 
 # ---------------------------------------------------------------------------
@@ -141,8 +141,12 @@ def _vol_int(v) -> Optional[int]:
 def equity_universe() -> List[str]:
     """Full committed equity set: STOCK_UNIVERSE + index/sector ETFs, deduped.
 
-    Per the owner amendment, weekly files commit this entire set."""
-    return sorted(set(STOCK_UNIVERSE) | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
+    Per the owner amendment, weekly files commit this entire set.
+    BACKFILL_44_TICKERS included since 2026-08-26: the weekly panel carries
+    them, so a full-file rewrite that omits them would silently delete them
+    (the 8/26 incident through the front door)."""
+    return sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
+                  | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
 
 
 # ---------------------------------------------------------------------------
@@ -889,7 +893,8 @@ def build_universe(wiki_dir: str, out_path: str, enrich: bool = True,
     sibling (never invented). as_of/next_review use the real build clock:
     universe.json is a build artifact, not a pure derivation.
     """
-    tickers = sorted(set(tickers)) if tickers else sorted(STOCK_UNIVERSE)
+    tickers = sorted(set(tickers)) if tickers else sorted(
+        set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS))
     refs = _grep_wiki_refs(wiki_dir, tickers)
 
     info_map: Dict[str, dict] = {}
