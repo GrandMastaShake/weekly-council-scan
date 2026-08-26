@@ -14,8 +14,9 @@ page is worse than an empty one, because it looks authoritative.
     python scripts/render_heatmap_dashboard.py --heatmap ../sector-regime-heatmap
     python scripts/render_heatmap_dashboard.py --check    # fails if stale
 
-ASCII only, per CLAUDE.md. The chart then renders the same in a terminal, a
-diff and a browser.
+The fenced chart uses block characters only -- they are single-width, so the
+columns stay aligned. Emoji are double-width and would shear the bars, so they
+live in the markdown table instead, where nothing has to line up.
 """
 from __future__ import annotations
 
@@ -34,17 +35,26 @@ DEFAULT_HEATMAP = ROOT.parent / "sector-regime-heatmap"
 REPO_URL = "https://github.com/GrandMastaShake/sector-regime-heatmap"
 
 BAR_CELLS = 10
+FULL = "█"      # full block
+EMPTY = "░"     # light shade
+MISSING = "·"   # middle dot -- a horizon that was not offered
+
 SHORT_RATING = {"favorable": "fav", "constructive": "con", "neutral": "neu",
                 "unfavorable": "unf", "defensive": "def",
                 "unavailable": "n/a"}
+BADGE = {"favorable": "🟢", "constructive": "🔵",
+         "neutral": "⚪", "unfavorable": "🟠",
+         "defensive": "🔴", "unavailable": "⬛"}
+DOTS = {"high": "●●●", "medium": "●●○",
+        "low": "●○○", "none": "○○○"}
 
 
 def bar(score) -> str:
     """A 10-cell gauge. A horizon that was not offered is dots, never zero."""
     if score is None:
-        return "[" + "." * BAR_CELLS + "]"
+        return MISSING * BAR_CELLS
     filled = int(round(max(0.0, min(100.0, float(score))) / 100 * BAR_CELLS))
-    return "[" + "#" * filled + "-" * (BAR_CELLS - filled) + "]"
+    return FULL * filled + EMPTY * (BAR_CELLS - filled)
 
 
 def latest_forecast(heatmap_root: Path):
@@ -73,8 +83,8 @@ def render_chart(scores: dict) -> list:
     rows = sorted(scores.items(), key=sort_key, reverse=True)
     width = max(len(s) for s, _ in rows)
     lines = ["```",
-             "sector".ljust(width) + "   week                    month",
-             "-" * (width + 48)]
+             "SECTOR".ljust(width) + "   WEEK                     MONTH",
+             "─" * (width + 50)]
     for sector, row in rows:
         parts = []
         for horizon in ("week", "month"):
@@ -82,13 +92,28 @@ def render_chart(scores: dict) -> list:
             shown = "  n/a" if score is None else ("%5.1f" % score)
             rating = SHORT_RATING.get(row[horizon]["rating"], "?")
             parts.append(shown + " " + rating + " " + bar(score))
-        lines.append(sector.ljust(width) + "   " + "   ".join(parts))
+        lines.append(sector.ljust(width) + "   " + "    ".join(parts))
     lines.append("```")
     return lines
 
 
+def render_table(scores: dict) -> list:
+    rows = sorted(scores.items(), key=sort_key, reverse=True)
+    lines = ["| | Sector | Week | Month | Confidence |",
+             "|---|---|---:|---:|:---:|"]
+    for sector, row in rows:
+        def cell(h):
+            s = row[h]["score"]
+            return "n/a" if s is None else str(s) + " " + row[h]["rating"]
+        conf = row["week"]["confidence"]
+        lines.append("| " + BADGE.get(row["week"]["rating"], "") + " | **"
+                     + sector + "** | " + cell("week") + " | " + cell("month")
+                     + " | " + DOTS.get(conf, "") + " " + conf + " |")
+    return lines
+
+
 def build(heatmap_root: Path) -> str:
-    lines = [START, "", "## Sector Regime Heatmap", ""]
+    lines = [START, "", "## 🔥 Sector Regime Heatmap", ""]
     doc, detail = latest_forecast(heatmap_root)
 
     if doc is None:
@@ -108,14 +133,19 @@ def build(heatmap_root: Path) -> str:
         "Scored from the weekly price panel in this repo by",
         "[sector-regime-heatmap](" + REPO_URL + ").",
         "",
-        "**As of " + doc["as_of_date"] + "** -- " + doc["run_type"] + " run  ",
-        "**Regime:** " + regime["label"] + "  ",
-        "**Confidence:** " + regime["confidence"] + " -- "
-        + str(len(regime.get("evidence") or [])) + " supporting, "
-        + str(len(against)) + " disconfirming",
+        "**As of " + doc["as_of_date"] + "** -- " + doc["run_type"] + " run",
+        "",
+        "> 🧭 &nbsp;**Regime** &nbsp; " + regime["label"],
+        "> ",
+        "> **Confidence** &nbsp; " + DOTS.get(regime["confidence"], "") + " "
+        + regime["confidence"] + " &nbsp;&nbsp;•&nbsp;&nbsp; ✅ "
+        + str(len(regime.get("evidence") or [])) + " supporting "
+        + "&nbsp;&nbsp;•&nbsp;&nbsp; ⚠️ " + str(len(against))
+        + " disconfirming",
         "",
     ]
     lines += render_chart(doc["scores"])
+    lines += [""] + render_table(doc["scores"])
     lines += [
         "",
         "`fav` 70+, `con` 55+, `neu` 45+, `unf` 30+, `def` below 30. `n/a` is a",

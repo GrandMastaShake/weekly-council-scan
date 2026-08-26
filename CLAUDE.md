@@ -6,8 +6,19 @@ cron execution.
 
 ## Environment
 
-Windows. ASCII in anything new. Scheduling is external (Kimi's cron), not
-GitHub Actions -- the only workflow is the manual backfill added 2026-08-25.
+Windows. Scheduling is external (Kimi's cron), not GitHub Actions -- the only
+workflow is the manual backfill added 2026-08-25.
+
+**ASCII in anything new, with one exception: human-facing markdown.** The
+README may use symbols; `scripts/render_heatmap_dashboard.py` emits them. Data
+under `data/weekly/` stays strictly ASCII -- `truth_check.py --feed` decodes
+every weekly file as ASCII and fails otherwise, because a content hash has to
+be byte-identical on Windows and in CI. All file I/O stays explicit
+`encoding="utf-8"`.
+
+The README heatmap chart is aligned by padding, so everything inside its fenced
+block must be single-width. Emoji are double-width and shear the bars; they
+belong in the markdown table.
 
 ## The data contract
 
