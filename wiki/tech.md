@@ -2,30 +2,30 @@
 
 > **Sector:** Information Technology | **ETF:** Technology Select Sector SPDR (XLK) | **Expense Ratio:** 0.08%
 >
-> *"The bond market, not the chip market, ran this week. XLK fell -3.5% to $183.31 as the 30-year Treasury hit its highest yield since 2007 (~5.27%), July FOMC minutes revealed three hawks ready to hike, and Secretary Bessent doubled Treasury's long-end buybacks to $4B per operation — a rescue that worked for one session. Underneath, Intel broke below its own $95 offering price after a $20B equity raise (-12.1%), Google handed Marvell a custom-chip win that knocked AVGO down another leg (-6.2%), and MU touched $1,011 Monday — the first $1,000 print in memory — before fading. WTI climbed another +5.7% to $87.06 as the Iran war stalled out with 'no talks.' NVDA reports Wednesday into a 50D MA that is now two dimes from being lost."*
+> *"The triple gate is behind us, and tech survived it — barely. XLK broke its 50D MA Monday and tagged $178.82, the bottom of the August repair zone, before Wednesday's double gate cleared: July core PCE printed 3.3% in line, and NVDA delivered a clean beat-and-raise ($96.2B revenue, +106% YoY; $2.22 EPS vs ~$2.10; Q3 guide ~89% YoY vs Street's ~82%) with compute commitments nearly doubling to $279B in one quarter. Thursday's +3.2% on 8.1M shares was the week's verdict. Friday was the reminder: Warsh's first Jackson Hole keynote put a September hike above a coin flip (56–62%), Marvell's record quarter faded into its own +189% YTD expectations, and XLK gave back -1.5% to close at $185.69 (+1.3% W/W). The 50D is recaptured; the Fed is the new overhang."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 1W Ago (Aug 14) | Change |
+| Metric | Current | 1W Ago (Aug 21) | Change |
 |---|---|---|---|
-| Price | $183.31 | $190.01 | -3.5% |
+| Price | $185.69 | $183.31 | +1.3% |
 | 52W Range | $126.68 – $198.73 | $126.68 – $198.73 | Range intact |
 | AUM | ~$115.4B | ~$115.4B | — |
-| YTD Return | +27.6% (price basis*) | +32.3% (price basis) | -4.7 pts |
-| 1Y Return | +40.4% | +43.8% | -3.4 pts |
-| P/E Ratio | ~35.2 (Yahoo trailing) | ~36.5 | Compressed |
+| YTD Return | +29.3% (price basis*) | +27.6% (price basis) | +1.7 pts |
+| 1Y Return | +45.2% | +40.4% | +4.8 pts |
+| P/E Ratio | ~35.7 (Yahoo trailing) | ~35.2 | Stable |
 | Dividend Yield | ~0.45% | ~0.45% | Unchanged |
 | Beta | 1.47 (3Y) | 1.47 | Unchanged |
 | Total Holdings | 75 | 75 | — |
-| Avg Daily Volume | ~10.9M (3M) / ~8.0M (20D) | ~11.5M (3M) / ~8.1M (20D) | Trending lower |
+| Avg Daily Volume | ~10.5M (3M) / ~6.8M (20D) | ~10.9M (3M) / ~8.0M (20D) | Trending lower |
 
-\* YTD shown on a strict price basis (XLK close 12/31/25 = $143.62). Friday's volume: 5.8M shares — third consecutive sub-6M Friday, though Tuesday's selloff printed the week's heaviest tape (8.4M).
+\* YTD shown on a strict price basis (XLK close 12/31/25 = $143.62). Friday's volume: 6.3M shares. The week's heaviest tape was Thursday's 8.1M-share post-NVDA rally — an accumulation day, reversing the prior week's distribution pattern.
 
-**Marky Tape Read:** The advance stalled exactly where it was supposed to — Monday's $191.75 intraday high matched last week's $191.74 breakout trigger to the penny, and the rejection was immediate: four straight down days followed, closing Friday at $183.31. Price ended the week a whisker above the 50D MA (~$183.0) after spending Wednesday through Friday testing it — that line has now been probed three sessions in a row without a decisive break. RSI slid to ~49.5 (Wilder 14D) from ~60.3 — momentum fully neutralized. The golden cross (50D ~$183.0 vs 200D ~$158.2) is intact but the spread stopped widening. Tuesday was the tell: heaviest volume of the week (8.4M) on the worst day — distribution, not drift. The $181.90–$182.41 zone (Wed/Fri lows) is the last stand before the $175–$178 major shelf; lose the 50D on a closing basis next week and the repair thesis that started three weeks ago is void. Resistance is now $187.50 (Tuesday's lower high), then $190–$191.75.
+**Marky Tape Read:** The 50D survived its hardest test of the summer. Monday sliced through the $183.0 line and the $181.90–$182.41 last-stand zone, tagging $178.82 — inside the $175–$178 major shelf — and that was the low. Four straight higher closes followed: $180.05 → $181.74 → $182.84 → $188.61, with Thursday's +3.2% the biggest single-day gain of August, printed on the week's heaviest volume (8.1M). Friday's -1.55% fade on Warsh came on 6.3M shares — sellers, but not committed ones. RSI recovered to ~53.0 (Wilder 14D) from ~49.5 — neutral with a positive tilt. Friday's close ($185.69) sits a dime above the 20D (~$185.56) and comfortably above the 50D (~$182.77); the golden cross (50D vs 200D ~$159.09) was never in danger. Resistance is now Thursday's $188.61–$188.74, then the $190–$191.75 double top. Lose $182.77 on a closing basis and Monday's washout needs retesting.
 
-**Ophelia Macro Read:** The regime cracked at the long end. July FOMC minutes (Wed) showed the three dissenters — Hammack, Logan, Kashkari — arguing hikes may be needed soon if inflation doesn't cool, and the 30-year Treasury punched to ~5.27%, its highest since 2007, forcing Bessent to more than double long-end buybacks (to ≥$4B per operation) the same day the national debt crossed $40T. The 10Y closed 4.738% (+4.2bps W/W) — testing the old 4.75% pain threshold intraweek (high ~4.747%) before the buyback bid stabilized it. Money markets now price a 25bp hike by December almost fully; J.P. Morgan has September as base case. WTI climbed +5.7% to $87.06 — the second straight weekly gain — after Trump declared "no talks or conversations" with Iran. DXY eased to 98.84. Hyperscaler AI capex — **>$700B for 2026 (Reuters); ~$725B Big 4, ~$805B incl. ORCL (Morgan Stanley)** — stands, and the private side is still accelerating: Broadcom is reportedly raising >$60B in debt to finance AI chips for Anthropic and others, and Anthropic itself put 2028 revenue projections of $190–200B into the market Monday. The double gate is set: **NVDA Wednesday AMC (Aug 26) + July PCE Wednesday morning, then Warsh's first Jackson Hole keynote Friday Aug 28 (~10 AM ET)**.
+**Ophelia Macro Read:** Two gates cleared, one gate swung back. July core PCE (Wed) printed 3.3% YoY, in line with consensus (headline 3.7%; core MoM ~0.2%) — benign enough to let the 10Y dip to ~4.62% intraweek. NVDA's print did the rest. Then Friday: Warsh's first keynote as Chair — "the Fed's predominant focus right now should be on prices," forward guidance formally disowned ("a hall-of-mirrors problem"), and September hike odds jumped from ~35% to 56–62% on CME (Kalshi still prices ~98% hold — a rare futures/prediction-market split). The 10Y closed ~4.72% (+5bps Friday, ~-2bps W/W); the 30Y held steady post-speech — Bessent's ≥$4B/op buybacks plus hawkish credibility bought the long end a quiet afternoon. DXY firmed +0.9% to ~99.68 on Warsh hedges. WTI broke its two-week +5% streak, falling -4.2% to $83.40 (intraweek low $79.62) as part of the Hormuz war premium unwound — even with EIA's August STEO assuming transit constraints persist through August. The capex engine is undisputed: NVDA's compute commitments jumped $119B → $279B in a single quarter, AWS expanded its NVDA partnership (2M additional GPUs through Q2 FY29 plus 100K-GPU government regions), and the >$700B 2026 hyperscaler estimates (Reuters; ~$805B incl. ORCL per Morgan Stanley) stand. New this week: Politico reports the administration is weighing sweeping semiconductor tariffs extending to laptops, consoles, and AI data-center servers, with Lutnick favoring relief tied to foreign investment in U.S. fabs. Next gates: AVGO Sep 3, August CPI Sep 11, FOMC Sep 15–16.
 
 ---
 
@@ -33,23 +33,23 @@
 
 | Rank | Ticker | Name | Weight | Price | Avg Target | Upside | Bullish % | Conviction |
 |---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA Corp | 12.64% | $214.72 (-4.64%) | $304.73 | +41.9% | ~94% | 🔥 |
-| 2 | AAPL | Apple Inc | 11.09% | $309.35 (+1.12%) | $326.34 | +5.5% | ~75% | ⚡ |
-| 3 | MSFT | Microsoft Corp | 7.23% | $483.24 (-2.27%) | $569.45 | +17.8% | ~93% | 🔥 |
-| 4 | AMD | Advanced Micro Devices | 4.71% | $473.25 (-8.00%) | $613.09 | +29.5% | ~88% | 🔥 |
-| 5 | MU | Micron Technology | 4.68% | $966.78 (-0.50%) | $1,515.11 | +56.7% | ~90% | 🔥 |
-| 6 | AVGO | Broadcom Inc | 4.67% | $368.45 (-6.24%) | $527.88 | +43.3% | ~93% | 🔥 |
-| 7 | INTC | Intel Corp | 4.20% | $90.07 (-12.13%) | $114.88 | +27.5% | ~58% | ⚠️ |
-| 8 | AMAT | Applied Materials | 3.66% | $492.32 (-2.83%) | $641.03 | +30.2% | ~88% | 🔥 |
-| 9 | LRCX | Lam Research | 3.45% | $314.00 (-5.52%) | $371.35 | +18.3% | ~88% | 🔥 |
-| 10 | CSCO | Cisco Systems | 2.96% | $111.04 (-0.57%) | $136.05 | +22.5% | ~80% | ⚡ |
+| 1 | NVDA | NVIDIA Corp | 12.64% | $217.55 (+1.32%) | $305.79 | +40.6% | ~94% | 🔥 |
+| 2 | AAPL | Apple Inc | 11.09% | $319.70 (+3.34%) | $324.45 | +1.5% | ~75% | ⚡ |
+| 3 | MSFT | Microsoft Corp | 7.23% | $513.53 (+6.27%) | $569.45 | +10.9% | ~93% | 🔥 |
+| 4 | AMD | Advanced Micro Devices | 4.71% | $465.58 (-1.62%) | $613.84 | +31.8% | ~88% | 🔥 |
+| 5 | MU | Micron Technology | 4.68% | $932.86 (-3.51%) | $1,513.41 | +62.2% | ~90% | 🔥 |
+| 6 | AVGO | Broadcom Inc | 4.67% | $368.79 (+0.09%) | $525.97 | +42.6% | ~93% | 🔥 |
+| 7 | INTC | Intel Corp | 4.20% | $89.47 (-0.67%) | $114.88 | +28.4% | ~58% | ⚠️ |
+| 8 | AMAT | Applied Materials | 3.66% | $461.67 (-6.23%) | $640.31 | +38.7% | ~88% | 🔥 |
+| 9 | LRCX | Lam Research | 3.45% | $301.90 (-3.85%) | $371.19 | +22.9% | ~88% | 🔥 |
+| 10 | CSCO | Cisco Systems | 2.96% | $109.93 (-1.00%) | $137.74 | +25.3% | ~80% | ⚡ |
 
 > 🔥 = Strong Buy consensus | ⚡ = Buy / Mixed | ⚠️ = Caution / Under pressure
-> Prices = Fri Aug 21 close with weekly change in parentheses. Targets = Yahoo Finance mean analyst target. Bullish % estimated from Yahoo recommendation mean (1–5 scale), 22–59 analysts per name. Notable analyst actions: Stifel reaffirmed NVDA Buy with a $282 target expecting a beat-and-raise (Aug 20); BofA argued NVDA trades at a 34–50% EV/FCF discount to AI-compute peers; BofA downgraded AVGO during the VMware/Google-Marvell week; JPMorgan raised KD's target to $14 (Underweight kept).
+> Prices = Fri Aug 28 close with weekly change in parentheses. Targets = Yahoo Finance mean analyst target. Bullish % estimated from Yahoo recommendation mean (1–5 scale), 23–58 analysts per name. Notable analyst actions: NVDA's mean target ticked up to $305.79 (from $304.73) after Wednesday's beat-and-raise; MSFT's $569.45 mean held through its August re-rate (Bernstein went to $660 earlier in the month); JPMorgan's KD $14 target / Underweight stands. Post-NVDA target revisions still settling into Yahoo's mean — expect upward drift through next week.
 
-**Concentration Risk:** Top 3 names = 31.0% of the fund. Top 10 = 59.3%. This week the mega-caps provided no shelter: NVDA -4.6% and MSFT -2.3% de-rated into Wednesday's print, and only AAPL (+1.1%) finished green — a defensive rotation inside the growth sleeve. The real damage was idiosyncratic: INTC -12.1% on its $20B dilution, AVGO -6.2% on Google-Marvell + VMware + a BofA downgrade, AMD -8.0% as the Street's most crowded AI-long took profit after a 138% six-month run. MU was the tell on sentiment: it printed $1,011.75 Monday — the first-ever $1,000 cross — and still closed the week red. The MU-to-INTC weekly spread compressed to ~11.6 points from ~19 last week; this week the whole complex fell together, with the highest-beta names hit hardest. Classic pre-binary de-risking, amplified by the long end of the curve.
+**Concentration Risk:** Top 3 names = 31.0% of the fund. Top 10 = 59.3%. This week the mega-caps did their job: MSFT +6.3% led the fund — the continuation of a 28%-in-a-month post-earnings re-rate (Azure >$100B annualized, $678B commercial backlog) with no fresh company catalyst required; AAPL +3.3% extended its defensive bid; NVDA +1.3% digested its own beat-and-raise (Thursday +6.9%, Friday -4.6%). The damage rotated down-beta: AMAT -6.2% and LRCX -3.9% were the week's worst top-10 names as MRVL's record-but-priced-in print hit the equipment/interconnect complex Friday (AMAT -4.3%, LRCX -5.2% on the day), and MU -3.5% gave back a piece of the HBM run. INTC -0.7% stabilized below its broken $95 offer price — and caught a Thursday bid (+2.4%) as the domestic-fab beneficiary of the reported semiconductor-tariff package. NVDA remains the tell: it closed the week above its pre-print price. The binary resolved bullishly; the stock just isn't allowed to rest.
 
-**Cecil Fundamental Read:** Nothing about this week changed a single earnings model — and that is the point. INTC's -12% is arithmetic, not thesis: management sold ~210M new shares at $95, and the stock is doing exactly what stocks do when you print supply 8% above the market during a rate scare. The raise funds the foundry build; the dilution is real; the demand story (DCAI +59% YoY, Q3 guide above Street) is unchanged. AVGO at $368 trades at ~19x forward with $30B of quarterly AI bookings, a stated >$100B AI-sales goal for 2027, and a reported >$60B debt facility financing Anthropic's chip build — the Google-Marvell headline costs them share at the margin, not the franchise. NVDA at 16.5x forward with a $304.73 mean target is cheaper on growth-adjusted math than CSCO. The group de-rated because the 30-year hit 5.27%, and at ~35x trailing the fund is a duration asset whether we like it or not. Wednesday's NVDA print decides whether estimates or yields win the argument.
+**Cecil Fundamental Read:** Last week I asked whether estimates or yields would win the argument. Estimates won — decisively. NVDA printed $96.22B against a $92.4B consensus and a $91B ±2% guide: revenue +106% YoY, Data Center $89.0B (+116.6%), Q3 guided to ~89% YoY growth versus the Street's ~82%, China data-center compute still zero — every dollar of China is pure upside. Compute commitments nearly doubled in one quarter to $279B; Vera Rubin is in full production. The only quibble is the 74.0% gross-margin guide, a hair light on early memory-cost inflation. At $217.55 that is 28.8x trailing and 14.2x forward earnings with a $305.79 mean target — still cheaper growth-adjusted than most of this table. MSFT at 28.2x trailing is the quality re-rate; the equipment complex is where valuation discipline is being enforced (AMAT ~39.9x trailing after its -6.2% week). The fund at ~35.7x trailing with a 0.45% yield remains a duration asset — Friday proved the Fed, not earnings, now sets the multiple. I am not chasing $188, but the earnings denominator is growing faster than the rate headwind. That is a sentence I could not write last week.
 
 ---
 
@@ -57,14 +57,13 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| BBAI | BigBear.ai | ~$1.54B | $3.22 | -1.5% (+4.9% Friday) | Quiet week; AFCEA TechNet Augusta (Aug 17–20) ran without a contract headline; FY26 guide $135–165M stands | ⚡ Still holding the post-Q2 range ($3.07–$3.34). Needs an award announcement to break $3.40; defense-AI bid intact. |
-| SOUN | SoundHound AI | ~$3.25B | $7.32 | -1.5% (+5.0% Friday) | No company-specific news; stabilized after prior week's -7.4% post-earnings digestion; FY26 outlook $230–260M | 🔥 Record quarter, raised guide, and the bleeding stopped at $6.97. $7.00 support held twice; ATM dilution overhang is the ceiling. |
-| AI | C3.ai | ~$1.43B* | $10.30 | +3.7% | Only green name on the board — rode Monday's Anthropic-driven AI-infrastructure bid; no company news found | ⚠️ Still the only watch-list name trading ABOVE its mean analyst target ($8.82, 11 analysts). Rallies without catalysts fade; needs a contract print. |
-| KD | Kyndryl | ~$2.73B | $12.55 | -4.7% | JPMorgan raised PT $13 → $14 but kept Underweight (Aug 10); new CFO/GC inducement equity grants disclosed Aug 14; slipped with the rate tape | ⚠️ Down -48% YTD with a Hold/Reduce consensus. Consult signings +50% is the bull case; FCF -$401M is the bear case. Governance rebuild is priced for failure — asymmetric if controls clear. |
-| VERI | Veritone | ~$86.3M | $0.86 | -25.3% | Q2 fallout deepened: EPS -$0.24 vs -$0.11 est (miss), rev $24.26M vs $28.29M est (miss), FY26 guide cut to $100–115M vs ~$135M consensus; company disclosed "substantial doubt" about its ability to continue as a going concern; securities-fraud class action + ASC 606 restatements pending | ⚠️ Distressed, full stop. 52W low $0.803 printed this week; cash ~$12M vs current debt ~$45M. This is a restructuring situation — avoid; not a trade. |
+| BBAI | BigBear.ai | ~$1.46B | $3.19 | -0.9% | Quiet week; Ask Sage acquisition still pending close; FY26 guide $135–165M stands | ⚡ Still boxed in the post-Q2 range (~$3.07–$3.40). Needs an award or the Ask Sage close to break out; defense-AI bid intact, patience required. |
+| SOUN | SoundHound AI | ~$3.16B | $7.22 | -1.4% | No company-specific news; LivePerson (~$100M) close expected H2 2026 with a $350–400M 2027 combined-revenue target; FY26 outlook ~$225–260M | 🔥 $7.00 support held for a third straight week. Record Q2 + raised guide are in the price; the LivePerson integration is the next proof point. |
+| AI | C3.ai | ~$1.64B | $10.33 | +0.3% | **FQ1 FY27 earnings confirmed for Wednesday, Sep 2** (announced Aug 20); named a Leader in AI Platforms (Aug 10) | ⚠️ The Sep 2 print is the reckoning for the Siebel-return rebuild — stock still trades ABOVE its $8.82 mean target (11 analysts). No cushion if the quarter misses. |
+| KD | Kyndryl | ~$2.88B | $13.25 | +5.6% | No company headline found; rode Thursday's post-NVDA / CRM (+13% post-earnings) enterprise-software bid; JPMorgan $14 PT / Underweight (Aug 10) stands | ⚡ Best week on the board. Consult signings +50% is doing the work; the cash-management / internal-controls review overhang has not cleared. Asymmetric — in both directions. |
+| VERI | Veritone | ~$0.08B | $0.82 | -4.5% | No fresh news; going-concern "substantial doubt" and class action from the Q2 miss remain the story; 52W low $0.78 within reach | ⚠️ Distressed, full stop. Cash ~$12M vs ~$45M current debt. Restructuring situation — avoid. A replacement-name decision from the Captains is now overdue. |
 
-> **Promotion Watch:** All five names re-verified under $5B as of the Aug 21 close (BBAI ~$1.54B, SOUN ~$3.25B, AI ~$1.43B*, KD ~$2.73B, VERI ~$0.09B). No graduations, no rotations. VERI remains on the board solely because the mandate is cap-based, not quality-based — it is now a distress watch, and the Captains may want to pre-approve a replacement name in case of delisting.
-> \* AI market cap computed from Yahoo float shares (138.9M) × close — Yahoo's marketCap field returned empty for a second straight week; figure is approximate but comfortably below $5B.
+> **Promotion Watch:** All five names re-verified under $5B as of the Aug 28 close (BBAI ~$1.46B, SOUN ~$3.16B, AI ~$1.64B, KD ~$2.88B, VERI ~$0.08B). No graduations, no rotations. Note: Yahoo's marketCap field for AI populated again this week ($1.64B) after two blank weeks — the cap is now field-verified rather than float-implied. VERI remains on the board solely because the mandate is cap-based, not quality-based.
 
 ---
 
@@ -72,18 +71,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $198.73 | June 2 peak — price now -7.8% below it |
-| Near Resistance | $190.00–$191.75 | Monday's $191.75 matched the prior week's breakout trigger to the penny — double-top rejection |
-| Minor Resistance | $187.50 | Tuesday's lower high — first supply on any bounce |
-| Current Price | $183.31 | Friday close; worst week since early August (-3.5%) |
-| 50-Day MA | ~$183.01 | Tested Wed–Fri, held by ~$0.30 — the line that matters, now on a knife edge |
-| 20-Day MA | ~$182.76 | Effectively merged with the 50D — one close below both flips the short trend |
-| Near Support | $181.90–$182.41 | Wednesday/Friday intraday lows — last stand before the major shelf |
-| Major Support | ~$175.00–$178.00 | Late-July congestion + Aug 3 pivot low ($178.04) |
-| 200-Day MA | ~$158.20 | Long-term trend floor — still rising |
-| Deep Support | $126.68–$127.35 | 52-week structural floor |
+| 52W High | $198.73 | June 2 peak — price now -6.6% below it |
+| Near Resistance | $190.00–$191.75 | The double top — untouched this week |
+| Minor Resistance | $188.61–$188.74 | Thursday's post-NVDA high — first supply on any push |
+| Current Price | $185.69 | Friday close; +1.3% W/W; sitting directly on the 20D |
+| 20-Day MA | ~$185.56 | Friday closed a dime above it — the short trend line |
+| 50-Day MA | ~$182.77 | LOST Monday (low $178.82), RECAPTURED Thursday, held Friday — the line survived its hardest test of the summer |
+| Near Support | $180.05–$182.84 | Monday–Wednesday closes — reclaimed zone, now a demand shelf |
+| Major Support | ~$175.00–$178.82 | The shelf that held Monday at $178.82; Aug 3 pivot low ($178.04) just below |
+| 200-Day MA | ~$159.09 | Long-term trend floor — still rising |
+| Deep Support | $126.53–$127.35 | 52-week structural floor |
 
-**Marky Setup Assessment:** The breakout failed at $191.75 and the tape spent four days giving it all back. RSI at ~49.5 is dead neutral — neither oversold nor protected. MACD rolled over toward the signal line. The concerning part is volume shape: Tuesday's 8.4M-share distribution day was the week's heaviest, and Friday's 5.8M bounce volume was the week's lightest — sellers more committed than buyers. Three straight sessions pinned against the 50D (~$183.0) means the market is waiting for exactly two numbers: NVDA's quarter and July PCE, both Wednesday. A close below ~$182 opens $178; a close back above $187.50 re-opens $191.75. There is no middle ground left on this chart — it resolves next week, one way or the other.
+**Marky Setup Assessment:** Monday was the washout — a clean break of the 50D and the $181.90–$182.41 zone on 6.5M shares, a tag of $178.82, and no downside follow-through. That is what seller exhaustion looks like. The recovery was built on Wednesday's two prints (in-line core PCE at 8:30 AM, NVDA after the close) and confirmed by Thursday's 8.1M-share +3.2% — the best accumulation day in a month. Friday's -1.55% on Warsh came on lighter volume (6.3M): profit-taking into a hawkish headline, not distribution. RSI at ~53.0 is neutral-positive; MACD is curling back toward a bullish cross. The chart is repaired but not extended: above $188.74 re-opens the $190–$191.75 double top; a close back below the 50D (~$182.77) forces a retest of $178.82 — and a second visit to that shelf rarely holds. The binary calendar is now AVGO (Sep 3), August CPI (Sep 11), and the FOMC (Sep 15–16), with C3.ai (Sep 2) as the small-cap sideshow.
 
 ---
 
@@ -91,20 +90,20 @@
 
 | Factor | Level | Implication for XLK |
 |---|---|---|
-| Fed Funds Rate | 3.50–3.75% (on hold) | July minutes (Wed) revealed three dissenters arguing hikes may be needed "soon" if inflation doesn't cool. Markets now price ~25bp by December; J.P. Morgan has September as base case. |
-| FOMC July Minutes (Aug 19) | Hawkish (9–3 hold) | The catalyst for the week's de-rating. The hiking cycle is paused, not finished — and the committee said so in writing. |
-| 10Y Treasury | ~4.738% (Fri close, +4.2bps W/W) | Tested the old 4.75% pain threshold intraweek (high ~4.747%) before stabilizing. Every 10bps above 4.70% costs the fund roughly a point of multiple. |
-| 30Y Treasury / Treasury Buybacks | ~5.27% — highest since 2007; Bessent doubled long-end buybacks to ≥$4B/operation (Aug 19) | **The week's real story.** Debt crossed $40T the same day. Buybacks bought one session of relief (30Y dipped to 5.19%) before yields re-took the high — a buyers' strike papered over, not solved. |
-| DXY | ~98.84 (-0.8% W/W) | Dollar softening even as yields rise — the market is pricing fiscal risk, not growth. Mild tailwind for multinationals. |
-| WTI Crude | ~$87.06 (+5.7% W/W) | Second straight weekly gain; ~30% above pre-war levels. Trump: "no talks or conversations" with Iran. Energy is back in the inflation pipeline. |
-| Hyperscaler AI Capex 2026E | >$700B (Reuters); ~$725B Big 4, ~$805B incl. ORCL (Morgan Stanley) | **The bull thesis, still funded.** New this week: Broadcom reportedly raising >$60B in debt to finance AI chips for Anthropic and others; Anthropic projecting $190–200B revenue by 2028. |
-| Next Week's Double Gate | NVDA Q2 FY27 Wed Aug 26 AMC (call 5 PM ET) + July PCE Wed 8:30 AM | The most crowded print of the year lands the same morning as the Fed's preferred inflation gauge. Whichever disappoints sets the September tape. |
-| Jackson Hole | Aug 27–29; Warsh keynote Fri Aug 28, ~10 AM ET | First keynote as Chair. 69% of fund managers expect neutral — neutral is priced, hawkish is the tail. His AI-disinflation thesis vs. three dissenting hawks is the fight to watch. |
-| Geopolitics | Iran war: no negotiations underway (Trump, Aug 18); oil terminal strikes continue | Hormuz risk premium entrenched. The transmission channel runs oil → PCE → hike odds → XLK multiple. |
-| VIX | ~14–15 (complacent) | No protection priced into a week with a $5.2T company's earnings, PCE, and a first-time Fed Chair keynote. |
-| Insider Selling Signal | Druckenmiller's Duquesne exited MU, INTC, AVGO in Q2 (13F, Aug 14) | One legendary allocator took chips off the AI-infrastructure table before the bond market wobbled. Noticed. |
+| Fed Funds Rate | 3.50–3.75% (on hold) | Warsh's first keynote (Fri): "the Fed's predominant focus right now should be on prices." Forward guidance formally disowned. September hike odds jumped ~35% → 56–62% (CME FedWatch); Kalshi still prices ~98% hold — a rare split between futures and prediction markets. |
+| July PCE (Aug 26) | Core 3.3% YoY (in line); headline 3.7%; core MoM ~0.2% | The first gate cleared clean. Warsh acknowledged summer PCE/CPI were "better than expected" but said underlying trends haven't "meaningfully improved." |
+| 10Y Treasury | ~4.72% (Fri close, ~-2bps W/W) | Dipped to ~4.62% intraweek on PCE + NVDA relief, then +5bps Friday on Warsh. The 4.738% 52W-high close (Aug 21) remains the pain line; 4.75% above it. |
+| 30Y Treasury / Treasury Buybacks | 30Y held steady post-speech; buybacks ≥$4B/operation stand | Warsh's hawkish credibility plus Bessent's bid gave the long end a quiet Friday — "a sign of some success" (Investopedia). The buyers' strike is paused, not resolved; debt >$40T. |
+| DXY | ~99.68 (+0.9% W/W) | Dollar recouped half its post-buyback losses as traders hedged a hawkish Warsh. Mild headwind for multinationals after three soft weeks. |
+| WTI Crude | ~$83.40 (-4.2% W/W; intraweek low $79.62) | **First weekly decline in three weeks** — part of the Hormuz war premium unwound mid-week before prices stabilized. EIA's August STEO assumes transit constraints persist through August (Brent ~$85 Q3). A cooler oil tape loosens the oil → PCE → hike-odds → XLK transmission channel. |
+| Hyperscaler AI Capex 2026E | >$700B (Reuters); ~$725B Big 4, ~$805B incl. ORCL (Morgan Stanley) | **Accelerating, confirmed at the source:** NVDA's compute commitments jumped $119B → $279B in one quarter; AWS expanded its NVDA partnership (2M additional GPUs through Q2 FY29 + 100K-GPU secure government regions); MRVL raised FY27 AND FY28 revenue outlooks with custom-silicon acceleration in H2. |
+| Semiconductor Tariffs | Politico (Aug 27): administration weighing sweeping chip tariffs extending to laptops, consoles, AI data-center servers; Lutnick favors relief tied to foreign investment in U.S. fabs | **New regulatory catalyst.** INTC +2.4% Thursday as the domestic-fab beneficiary; industry warns on costs and supply. Design details will reshuffle winners and losers across the complex. |
+| AI at the Fed | Warsh: AI "could turbocharge the economy"; Fed task force tracking LLMs/tokens; Rogoff (sidelines): crash possible within two years | The Fed now treats AI capex as a macro variable — growth-positive in the speech, which is the friendliest possible hawkish framing for this sector. |
+| Next Gates | AVGO Q3 Sep 3; August CPI Sep 11; FOMC Sep 15–16; MRVL Investor Day Oct 6 | The calendar thins, then tightens fast. AVGO is the last mega-print before the Fed decides. |
+| VIX | ~15–16 (calm, off the 15.13 print of Aug 21) | Vol never stressed through the triple gate. Complacency returning into a live-September Fed is its own risk. |
+| Insider/Positioning Signal | Post-NVDA target revisions still settling; MU/AMAT profit-taking after extended runs | Positioning was cleaned by the pre-binary flush; the chase now runs the other way — bears forced to cover into strength. |
 
-**Ophelia Verdict:** Last week I said oil's reversal put energy back in the inflation pipeline while the consumer faded. This week the bond market agreed — violently. A 5.27% 30-year is not a tech-stock problem until it is, and "until it is" arrived Tuesday. I am not adding above the 50D; I am not selling into the 50D either, because the private capex data (Anthropic's projections, AVGO's $60B raise) says the AI build-out is still accelerating while the public tape panics about duration. NVDA Wednesday is the arbiter. If it clears ~$93.5B with 75% margins and the 10Y is still under 4.75% on Thursday, this week reads as a pre-binary flush. If NVDA merely meets the guide while the Street sits above the band, last week's CSCO/AMAT pattern repeats on the biggest stage there is — and 35x trailing will not survive it.
+**Ophelia Verdict:** I asked for three things last week: a cool PCE, an NVDA clear, and a 10Y under 4.75% by Thursday. I got all three — and then Warsh handed back half the relief on Friday morning. Let me be precise about what changed: the earnings gate is gone as a risk (NVDA beat-and-raised; the private capex data — $279B of commitments — says the build-out accelerated into the panic), and the inflation gate is open (core 3.3% is not 2%, and the new Chair said so at length). What remains is a September meeting that is now a live coin flip with a Fed that has promised not to tell us the answer in advance. I am holding the semis I bought on the 50D recapture, and I am not adding above $188.74. The 10Y at 4.72% with WTI fading is tolerable; the 10Y at 4.75%+ with September fully priced is not. Watch the dollar — three soft weeks ended with a firm one, and a rising DXY into a hawkish Fed is the combination that eventually tightens the AI trade's global funding.
 
 ---
 
@@ -112,21 +111,21 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Long End Bit Back
+### This Week's Story: The Triple Gate, Cleared — Then Repriced
 
-XLK fell -3.5% to $183.31 — its worst week since early August — and for the first time in this rally, the damage came from the bond market rather than the chip market. Monday teased a breakout ($191.75, matching the prior week's high to the penny); Tuesday through Friday were four consecutive lower closes.
+XLK rose +1.3% to $185.69 in the most event-dense week of the summer, and the path mattered more than the number: Monday's capitulation probe to $178.82 — through the 50D, into the major shelf — found the buyers; Wednesday's double gate cleared; Thursday's +3.2% was the verdict; Friday's -1.5% was Warsh's invoice.
 
-**Catalyst 1 — The 30-Year Broke (Tue–Thu):** July FOMC minutes revealed three dissenters arguing hikes may be needed soon; the 30-year hit ~5.27%, highest since 2007; and Bessent answered by doubling long-end buybacks to ≥$4B per operation the day the debt crossed $40T. Yields re-took the high within a session. Long-duration assets de-rated accordingly — XLK's Tuesday was its heaviest-volume day of the week.
+**Catalyst 1 — NVDA Beat-and-Raised the Bar Everyone Feared (Wed AMC):** Revenue $96.22B (+106% YoY) versus ~$92.4B consensus and the $91B ±2% guide; adjusted EPS $2.22 versus ~$2.10; Data Center $89.0B (+116.6%); Q3 guided to ~89% YoY growth versus the Street's ~82% ($103.9B). Compute commitments nearly doubled quarter-over-quarter to $279B; Vera Rubin is in full production; China data-center compute remains zero — pure optionality. The stock dipped -1.3% after hours, then swung to a +6.9% Thursday. The CSCO/AMAT sell-the-news pattern did NOT repeat on the biggest stage.
 
-**Catalyst 2 — Intel's Dilution Reckoning (All week):** INTC fell -12.1% to $90.07, slicing through the $95 price of its own $20B equity offering (~210M new shares). Druckenmiller's Q2 13F exit from INTC/MU/AVGO added a name-brand seller to the tape.
+**Catalyst 2 — July PCE Cleared the Morning Gate (Wed):** Core 3.3% YoY, in line; headline 3.7%; core MoM ~0.2%. Benign enough for the 10Y to dip to ~4.62% intraweek.
 
-**Catalyst 3 — Google-Marvell and the AVGO Pile-On (Wed):** Alphabet expanded its custom-silicon partnership with Marvell, hitting AVGO's AI-ASIC franchise narrative on top of the VMware exploitation headlines and a BofA downgrade. AVGO fell -6.2% on the week before Friday's rebound (+1.2%) on reports it is raising >$60B to finance AI chips for Anthropic.
+**Catalyst 3 — Marvell's Record Wasn't Enough (Thu AMC → Fri):** Record revenue $2.739B (+37% YoY), EPS $0.94 beat, FY27 AND FY28 outlooks raised, Q3 guided to $3.15B — and the stock faded anyway, because +189% YTD had already priced it. Friday's MRVL drag took the equipment complex down with it: AMAT -4.3%, LRCX -5.2% on the day.
 
-**Catalyst 4 — Oil's Second Leg (Tue):** Trump declared "no talks" with Iran; WTI climbed +5.7% to $87.06 — ~30% above pre-war levels — refilling the inflation pipe ahead of Wednesday's PCE.
+**Catalyst 4 — Warsh's Hawkish Debut (Fri 10 AM ET):** "The Fed's predominant focus right now should be on prices." Forward guidance disowned; September hike odds 35% → 56–62%; bear flattener; XLK -1.55%. He also called AI potentially turbocharging for growth — the friendliest possible hawkish framing.
 
-**Catalyst 5 — Pre-Binary De-Risking (Mon–Fri):** NVDA slid -4.6% into Wednesday's print; AMD gave back -8.0% after its 138% run; MU printed $1,011.75 Monday — the first $1,000 cross — and still closed red. The only green mega-cap was AAPL (+1.1%), the lowest-beta name in the top three.
+**Catalyst 5 — The Tariff Package Surfaces (Thu):** Politico reported the administration is weighing sweeping semiconductor tariffs extending to laptops, consoles, and AI servers, with relief tied to U.S. fab investment. INTC +2.4% as the domestic-fab beneficiary.
 
-**The Bottom Line:** Positioning is now clean, expectations are not. NVDA (Wednesday AMC) against a ~$93.5B whisper-zone consensus — above management's $91B ±2% band — decides whether this was a flush or a warning.
+**The Bottom Line:** The earnings question is answered — the AI build-out is accelerating. The rate question is not. September 15–16 is now the trade.
 
 ---
 
@@ -134,44 +133,46 @@ XLK fell -3.5% to $183.31 — its worst week since early August — and for the 
 
 | Company | Ticker | Date | Quarter | EPS Estimate | Key Metric to Watch |
 |---|---|---|---|---|---|
-| **Intel** | INTC | **Jul 23, 2026** (REPORTED) | Q2 2026 | ~$0.21 | **Actual: Rev $16.1B (+25% YoY), Non-GAAP EPS $0.42 (beat by ~100%). DCAI +59% YoY. 7th consecutive guidance beat. Post-print: $20B equity offering at $95 — stock now $90.07, below the offer price.** |
-| **Lam Research** | LRCX | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $1.68 | **Actual: EPS $1.82 (+8.3% beat). Revenue and guidance in line.** |
-| **Microsoft** | MSFT | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $4.24 | **Actual: Rev $90.0B, adj. EPS $4.74 (+11.8% beat). Azure +43% YoY. Cloud backlog $678B (+84% seq.). FY27 capex guide $255–260B.** |
-| **Apple** | AAPL | **Jul 30, 2026** (REPORTED) | Q3 FY2026 | $1.89 | **Actual: EPS $2.02 (+6.9% beat), Rev $109.4B. iPhone $54.3B (+22% YoY). Sept-Q guide ~$113B missed $114.9B consensus.** |
-| **Meta Platforms** | META | **Jul 30, 2026** (REPORTED) | Q2 2026 | ~$7.22 | **Actual: Rev $60.8B (+28% YoY), Ad rev $59.4B (+27%). EPS $6.18 missed by ~14%. FCF collapsed 91% YoY to $784M on $31.1B capex. FY26 capex narrowed to $130–145B.** |
-| **Amazon** | AMZN | **Jul 30, 2026** (REPORTED) | Q2 2026 | ~$1.82 | **Actual: Rev $200.6B (+20% YoY), Op income $27.5B (+43%). AWS $42.2B (+37% YoY) — fastest growth in 18 quarters.** |
-| **AMD** | AMD | **Aug 4, 2026** (REPORTED) | Q2 FY2026 | $1.55 | **Actual: Rev $11.54B (+50.1% YoY, beat), non-GAAP EPS $1.66 (+3.1% beat). Data Center more than doubled to $6.72B. Post-print: -8.0% this week on profit-taking after a 138% six-month run + $4.75B bond raise.** |
-| **SoundHound AI** | SOUN | **Aug 5, 2026** (REPORTED) | Q2 2026 | ~-$0.06 | **Actual: Record rev $61.9M (+45% YoY); EPS -$0.02 (beat). FY26 outlook raised to $230–260M.** |
-| **Kyndryl** | KD | **Aug 5, 2026** (REPORTED) | Q1 FY2027 | — | **Actual: Rev $3.62B (-3.3% YoY); net loss $55M; FCF -$401M. Consult signings +50%; hyperscaler rev +48% YoY. New CFO/GC in seat (grants disclosed Aug 14).** |
-| **Cisco** | CSCO | **Aug 12, 2026** (REPORTED) | Q4 FY2026 | $1.17 | **Actual: Rev $17.3B (+18% YoY), non-GAAP EPS $1.22 (+4.3% beat). Product orders +35%; AI infra orders $4B Q4 / $9.3B FY26; FY27 guide above Street. Stock -0.6% this week — stabilized after the prior week's -8% sell-the-news.** |
-| **Applied Materials** | AMAT | **Aug 13, 2026** (REPORTED) | Q3 FY2026 | $3.39 | **Actual: Rev $9.12B (+24.8% YoY), non-GAAP EPS $3.50 (+3.2% beat; 5th straight). Q4 guide rev $10.25B. Stock -2.8% this week.** |
-| **Veritone** | VERI | **Aug 13, 2026** (REPORTED) | Q2 2026 | ~-$0.11 | **CORRECTED: Actual EPS -$0.24 vs -$0.11 est (MISS, not a beat), rev $24.26M vs $28.29M est (miss), FY26 guide cut to $100–115M vs ~$135M consensus. Going-concern "substantial doubt" disclosed; fraud class action + restatements pending. Stock -25.3% this week to $0.86.** |
-| **NVIDIA** | NVDA | **Aug 26, 2026** (CONFIRMED, AMC; call 5 PM ET) | Q2 FY2027 | ~$2.07–2.13 | **Guide: rev $91B ±2%, non-GAAP GM 75.0%, China DC compute assumed $0. Consensus rev ~$92–93.6B — at or above the top of the guided band. Stifel $282 PT expecting beat-and-raise; BofA: 34–50% EV/FCF discount to AI-compute peers. Watch: Blackwell/Rubin ramp, GM ≥75%, China export policy, possible H200 China shipments, Q3 guide.** |
-| **CrowdStrike / Okta / Workday / Autodesk / Zoom / HP** | CRWD, OKTA, WDAY, ADSK, ZM, HPQ | **Aug 25–27, 2026** | Q2 2026/27 | various | Software's turn: enterprise-budget check after the hardware run. Watch WDAY/ADSK guidance language on AI-seat monetization. |
-| **Broadcom** | AVGO | **Sep 3, 2026** (NEW) | Q3 FY2026 | — | **Guide: rev ~$29.4B. Watch: AI semi revenue trajectory (last qtr +143% YoY, 68% of segment), VMware integration vs. security overhang, Google-Marvell share question, $30B quarterly AI bookings, Anthropic financing.** |
+| **Intel** | INTC | **Jul 23, 2026** (REPORTED) | Q2 2026 | ~$0.21 | **Actual: Rev $16.1B (+25% YoY), Non-GAAP EPS $0.42 (beat by ~100%). DCAI +59% YoY. Post-print: $20B equity offering at $95 — stock $89.47, still below the offer price but stabilized (-0.7% W/W); tariff-package beneficiary bid emerged Thursday.** |
+| **Lam Research** | LRCX | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $1.68 | **Actual: EPS $1.82 (+8.3% beat). Revenue and guidance in line. Stock -3.9% this week on Friday's equipment-complex fade.** |
+| **Microsoft** | MSFT | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $4.24 | **Actual: Rev $90.0B, adj. EPS $4.74 (+11.8% beat). Azure +43% YoY (> $100B annualized). Backlog $678B. Stock +6.3% this week — the August re-rate (28% in a month) continued on no fresh catalyst.** |
+| **Apple** | AAPL | **Jul 30, 2026** (REPORTED) | Q3 FY2026 | $1.89 | **Actual: EPS $2.02 (+6.9% beat), Rev $109.4B. Stock +3.3% this week — the defensive mega-cap bid persists; mean target $324.45 now only +1.5% away.** |
+| **Meta Platforms** | META | **Jul 30, 2026** (REPORTED) | Q2 2026 | ~$7.22 | **Actual: Rev $60.8B (+28% YoY). EPS $6.18 missed by ~14%. FCF collapsed 91% YoY on $31.1B capex.** |
+| **Amazon** | AMZN | **Jul 30, 2026** (REPORTED) | Q2 2026 | ~$1.82 | **Actual: Rev $200.6B (+20% YoY). AWS $42.2B (+37% YoY). This week: AWS expanded its NVDA partnership — 2M additional GPUs through Q2 FY29 plus 100K-GPU secure government regions.** |
+| **AMD** | AMD | **Aug 4, 2026** (REPORTED) | Q2 FY2026 | $1.55 | **Actual: Rev $11.54B (+50.1% YoY), non-GAAP EPS $1.66 (+3.1% beat). Stock -1.6% this week; consolidation after the 138% six-month run continues.** |
+| **SoundHound AI** | SOUN | **Aug 5, 2026** (REPORTED) | Q2 2026 | ~-$0.06 | **Actual: Record rev $61.9M (+45% YoY); EPS -$0.02 (beat). FY26 outlook ~$225–260M. Stock -1.4% this week; $7.00 support held a third week.** |
+| **Kyndryl** | KD | **Aug 5, 2026** (REPORTED) | Q1 FY2027 | — | **Actual: Rev $3.62B (-3.3% YoY); FCF -$401M. Consult signings +50%. Stock +5.6% this week — best on the small-cap board — riding the enterprise-software bid.** |
+| **Cisco** | CSCO | **Aug 12, 2026** (REPORTED) | Q4 FY2026 | $1.17 | **Actual: Rev $17.3B (+18% YoY), non-GAAP EPS $1.22 (+4.3% beat). AI infra orders $4B Q4 / $9.3B FY26. Stock -1.0% this week — steady.** |
+| **Applied Materials** | AMAT | **Aug 13, 2026** (REPORTED) | Q3 FY2026 | $3.39 | **Actual: Rev $9.12B (+24.8% YoY), non-GAAP EPS $3.50 (+3.2% beat; 5th straight). Stock -6.2% this week — worst top-10 name — on Friday's MRVL-sparked equipment fade.** |
+| **Veritone** | VERI | **Aug 13, 2026** (REPORTED) | Q2 2026 | ~-$0.11 | **Actual: EPS -$0.24 vs -$0.11 est (MISS), rev $24.26M vs $28.29M est (miss), FY26 guide cut to $100–115M. Going-concern "substantial doubt" disclosed; class action pending. Stock -4.5% this week to $0.82.** |
+| **NVIDIA** | NVDA | **Aug 26, 2026** (REPORTED, AMC) | Q2 FY2027 | ~$2.10 | **Actual: Rev $96.22B (+106% YoY, vs ~$92.4B cons), adj. EPS $2.22 (+5.7% beat). Data Center $89.0B (+116.6% YoY). Q3 FY27 guide ~89% YoY growth vs Street ~82% ($103.9B); non-GAAP GM guide 74.0% (hair light on memory costs); China DC compute still $0. Compute commitments $119B → $279B QoQ. Vera Rubin in full production. Stock: -1.3% AH → +6.9% Thursday → -4.6% Friday; +1.3% W/W, closed above pre-print price.** |
+| **Salesforce / CrowdStrike / Okta / Workday / Autodesk / Zoom / HP** | CRM, CRWD, OKTA, WDAY, ADSK, ZM, HPQ | **Aug 25–27, 2026** (REPORTED) | Q2 2026/27 | various | **Software's week: CRM surged ~+13% after hours Wednesday on a solid beat/raise (still ~20% below December highs). HPQ gapped -10.9% Thursday despite a beat-and-raise (rev $15.7B vs $14.4B est; FCF $1.6B, 2x estimates; FY guide hiked) — the market's tolerance bar is now "beat, raise, AND re-accelerate."** |
+| **Marvell** | MRVL | **Aug 27, 2026** (REPORTED, AMC) | Q2 FY2027 | ~$0.93 | **Actual: Record rev $2.739B (+37% YoY, +1.2% beat), non-GAAP EPS $0.94 (+1.2% beat). Data Center +46% YoY. Q3 guide $3.15B ±5% (above the $3B bar); FY27 AND FY28 outlooks raised; custom-silicon acceleration in H2. Stock faded post-print — +189% YTD had priced it in — and dragged semis Friday. Investor Day Oct 6.** |
+| **C3.ai** | AI | **Sep 2, 2026** (NEW, CONFIRMED) | Q1 FY2027 | — | **First print since the Siebel return and the Q1 FY26 "completely unacceptable" miss. Stock at $10.33 trades ABOVE its $8.82 mean target — zero cushion. Watch: revenue vs the $70M preliminary disaster, federal bookings, cash burn.** |
+| **Broadcom** | AVGO | **Sep 3, 2026** (CONFIRMED) | Q3 FY2026 | — | **The last mega-print before the Fed. Guide: rev ~$29.4B. Watch: AI semi revenue trajectory (last qtr +143% YoY), the Google-Marvell custom-silicon share question after MRVL's "significant custom acceleration" commentary, $30B quarterly AI bookings, Anthropic financing execution, VMware.** |
 
-**Marky's Binary Event Read:** This is the week the whole season has pointed at. NVDA reports Wednesday after the close into a consensus (~$92–93.6B) parked above management's own $91B ±2% band — the identical setup that burned CSCO and AMAT longs the last two weeks. The stock enters at $214.72, down -4.6% on the week and -9.2% below its $236.54 high: the froth is out, the bar is not. Layer July PCE on Wednesday morning and Warsh's first Jackson Hole keynote Friday, and you have three separate events that each could move XLK 2%+. The 50D (~$183.0) is the tripwire underneath; $191.75 is the ceiling above. After this week, the calendar thins to AVGO (Sep 3), then the September CPI (Sep 11) and FOMC (Sep 15–16).
+**Marky's Binary Event Read:** The year's biggest binary resolved bullishly — NVDA closed the week ABOVE its pre-print price, and the 50D was recaptured on an accumulation day. That clears the runway into a two-step September: AVGO on Sep 3 is the last earnings check on the AI-capex complex (MRVL's raised FY28 outlook and NVDA's $279B commitments say the number should be fine — the market's reaction function to "fine" is what MRVL just taught us to respect), and then it's pure macro: August CPI on Sep 11 and the FOMC on Sep 15–16, with a Chair who has explicitly refused to pre-commit. Levels: above $188.74 opens $191.75; below $182.77 retests $178.82. The repair is intact; the margin for error is not.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- NVDA Aug 26 prints ≥$94B with GM ≥75% and a Rubin-on-schedule guide → the pre-binary flush reverses → XLK re-takes $187.50, then $191.75
-- July PCE (Wed a.m.) comes in cool → December-hike pricing fades → 10Y back under 4.65%
-- Warsh's first keynote (Aug 28) develops his AI-disinflation thesis → the three hawks look isolated → long end rallies
-- Treasury buybacks + soft PCE push the 30Y back under 5.10% → duration bid returns to mega-cap tech
-- AVGO's >$60B Anthropic financing + $30B quarterly AI bookings re-assert the private capex boom over the Google-Marvell headline
+- AVGO (Sep 3) confirms the complex: AI semi revenue re-accelerates, bookings hold ~$30B/quarter → the NVDA/MRVL prints read as a trilogy, not a peak
+- August CPI (Sep 11) prints cool → September hike pricing (56–62%) collapses back toward Kalshi's ~2% → 10Y slides under 4.65% → XLK takes out $188.74, then the $191.75 double top
+- WTI keeps fading toward $79–80 → the oil → PCE → hike-odds transmission channel goes dormant into the FOMC
+- The tariff package lands with Lutnick's investment-for-relief design → domestic-fab names (INTC, MU, TXN) re-rate as policy winners
+- Post-NVDA target revisions drift the mean toward $320+ → the chase trade forces under-positioned bears to cover above $190
 
 ### 🔴 Bear Case
-- NVDA merely meets the $91B guide while the Street sits at ~$93.5B → the CSCO/AMAT sell-the-news pattern on a $5.2T stock → XLK loses the 50D (~$183.0), then $178
-- PCE runs hot (core PPI's portfolio-fee spike feeds through) → September hike goes from JPM's base case to the market's → 10Y through 4.80%
-- The 30Y buyers' strike overwhelms the $4B buybacks → 5.27% becomes 5.50% → mechanical de-rating of every 35x asset
-- Oil keeps climbing (WTI >$90) on an Iran escalation → CPI re-accelerates into the Sep 15–16 FOMC
-- INTC's broken $95 offer price invites more insider/institutional exits; Druckenmiller's 13F becomes the template
+- September hike becomes base case: hot August CPI (Sep 11) + Warsh's no-guidance regime = a Fed the market must price alone → 10Y through 4.75% → 35.7x trailing re-rates lower
+- AVGO misses the moment: Google-Marvell share loss shows up in AI semi revenue while MRVL's "custom acceleration in H2" proves where the dollars went → AVGO's +0.1% week becomes the tell
+- The MRVL pattern generalizes: beats fade across the high-multiple complex (AMAT -6.2% and LRCX -3.9% already leading) → "priced for perfection" becomes the September tape
+- The 30Y buyers' strike resumes through the $4B buybacks → 5.27% becomes 5.50% → mechanical de-rating
+- Oil's -4.2% week reverses on any Hormuz re-escalation → the inflation pipe refills into CPI week
 
 ### ⚠️ The Wild Card
-Warsh has withheld his dot, halved his statement length, and told markets guidance is over — and now he gets 20 minutes at Jackson Hole with a 5.27% 30-year behind him and three hawkish dissenters beside him. 69% of fund managers expect a neutral speech, which means neutral is the only outcome that doesn't move markets. If he validates the hawks — or unveils a framework markets read as soft on 2% — Friday's close could gap the whole week's careful positioning in either direction, with NVDA's print less than 48 hours digested.
+The semiconductor tariff package. If the reported design — sweeping duties extending past chips to laptops, consoles, and AI data-center servers, with relief purchasable via U.S. fab investment — lands as actual policy, it reshuffles the entire complex in one announcement: domestic-capacity names (INTC, MU) become policy winners while fabless and import-dependent names absorb a cost shock that no amount of AI demand fully offsets, and the industry warning — that higher costs and tighter supply could undermine U.S. AI leadership — becomes an earnings-season variable for Q4 guides. Layered on a Fed that won't guide and a Kalshi/futures market that can't agree on September, the policy tail is as live as the macro one.
 
 ---
 
@@ -187,25 +188,26 @@ Warsh has withheld his dot, halved his statement length, and told markets guidan
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLK + top-10 holdings + small-cap quotes, analyst targets, fund metrics (Aug 21, 2026 close)
-- Federal Reserve: FOMC July 2026 Meeting Minutes (Aug 19, 2026); Jackson Hole symposium schedule (Aug 27–29, 2026)
-- U.S. Treasury: expanded long-end buyback operations announcement (Aug 19, 2026); national debt crossing $40T
-- Motley Fool: INTC selloff analysis — $20B equity offering at $95, Iran escalation (Aug 18–19, 2026)
-- TipRanks: AMD/INTC analyst roundup; AMD $4.75B bond offering; Intel offering digestion (Aug 19–20, 2026)
-- 24/7 Wall St / TIKR: Druckenmiller 13F exits (MU/INTC/AVGO, filed Aug 14, 2026); INTC sum-of-parts valuation debate
-- Bloomberg Technology: Broadcom in talks to raise >$60B in AI chip debt financing benefiting Anthropic (Aug 21, 2026)
-- Seeking Alpha / 24/7 Wall St: Google–Marvell custom AI chip partnership and AVGO competitive read-through; Marvell warrant-dilution slide (Aug 20–21, 2026)
-- Investing.com / InsiderFinance / ChartMill / MarketBeat: NVDA Q2 FY27 preview — consensus EPS ~$2.07–2.13, revenue ~$92–93.6B; Stifel $282 PT; BofA EV/FCF thesis (Aug 17–22, 2026)
-- MarketBeat / TimothySykes / Pluang: Veritone Q2 miss, FY26 guide cut to $100–115M, going-concern disclosure, class-action coverage (Aug 16–21, 2026)
-- Anthropic revenue projections ($190–200B by 2028) via Investing.com (Aug 17, 2026)
-- Kyndryl: inducement equity grants to new CFO/GC (Aug 14, 2026); JPMorgan PT $14 / Underweight (Aug 10, 2026)
-- Dow Jones Newswires / Morningstar: Jackson Hole week-ahead — Warsh keynote Fri Aug 28, July PCE Wed Aug 26 (Aug 21, 2026)
+- Yahoo Finance: XLK + top-10 holdings + small-cap quotes, analyst targets, fund metrics (Aug 28, 2026 close)
+- Investopedia: NVIDIA earnings live blog — Q2 FY27 actuals ($96.22B rev, $2.22 adj. EPS), analyst reactions (Aug 26, 2026); Markets News Aug 28 — indexes higher for week, Marvell weighs on tech, bond yields rise after Warsh
+- Kiplinger: NVIDIA earnings live coverage — Data Center $89.02B (+116.6% YoY), hyperscale $48.71B, ACIE $40.31B, Q3 guide ~89% YoY, GM guide 74.0%, Vera Rubin full production (Aug 26–28, 2026)
+- Motley Fool: NVDA earnings history/setup — consensus $92.18B / $2.09, Q3 consensus $103.9B / $2.37 (Aug 25–26, 2026)
+- Yahoo Finance: Jackson Hole live blog — Warsh keynote: "predominant focus on prices," forward-guidance critique, AI growth comments; September hike odds 35% → 56% (CME); Rogoff AI-crash warning (Aug 28–29, 2026)
+- US News / Investopedia: Warsh provides little guidance; September hike odds to 62% post-speech; Krugman: "utterly conventional… tight money until we see a lot better data" (Aug 28, 2026)
+- Business Wire via Yahoo Finance: Marvell Q2 FY2027 results — record rev $2.739B (+37% YoY), non-GAAP EPS $0.94, Q3 guide $3.15B ±5%, FY27/FY28 outlooks raised, custom acceleration H2, Investor Day Oct 6 (Aug 27, 2026)
+- 24/7 Wall St: MRVL pre/post-earnings positioning (+188.85% YTD into print; fade on in-line beat); MSFT re-rate analysis (28% in a month, Azure >$100B, $678B backlog) (Aug 24–27, 2026)
+- TraderTV / Politico: Trump administration weighing sweeping semiconductor tariffs extending to laptops, consoles, AI data-center servers; Lutnick relief-for-fab-investment design; INTC +2.4% reaction (Aug 27, 2026)
+- TraderTV: AWS–NVIDIA expanded partnership — 2M additional GPUs through Q2 FY29, 100K-GPU secure government regions (Aug 27, 2026)
+- Intellectia / CNBC: CRM +13% after hours on beat/raise; HPQ -10.85% gap despite beat-and-raise (Aug 27–28, 2026)
+- C3.ai Investor Relations: FQ1 FY2027 results confirmed for September 2, 2026; "Leader in AI Platforms" recognition (Aug 10–20, 2026)
+- EIA Short-Term Energy Outlook (Aug 11, 2026): Hormuz transit constraints assumed through August; Brent ~$85/b 3Q26 forecast
+- Oak Harvest / Krilogy weekly recaps: prior-week tape context, rate-shock framing, VIX 15.13 (Aug 24–25, 2026)
 - State Street Global Advisors: XLK Fund Profile
 - Morningstar: XLK concentration analysis
-- CNBC, TechTimes, Invezz: catalyst and market reporting
+- CME FedWatch / Kalshi: September FOMC pricing divergence post-Warsh
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-22*
+*Last updated by Saturday Research Crew: 2026-08-29*
 *Next update: Every Saturday 10:00 AM ET*
 *Data sources: Yahoo Finance, Federal Reserve, U.S. Treasury, company IR, Bloomberg, Dow Jones Newswires, market data feeds*
