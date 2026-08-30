@@ -1,48 +1,219 @@
 {
   "schema": "macro-facts/v1",
-  "generated": "2026-08-22",
+  "generated": "2026-08-29",
   "generated_by": "Saturday Research Crew -- Canary Watch (seed: main session)",
   "notes": "Canonical macro fact table. Wikis and reports CITE these values; they never restate their own macro numbers. Fields marked stale=true are last-known external-feed values -- treat as directional only. Canary Watch regenerates this file every Saturday from the same fetch that writes wiki/canary-watch.md.",
   "policy": {
-    "fed_funds_range": {"value": "3.50-3.75", "as_of": "2026-07-29", "source": "FOMC statement 2026-07-29"},
-    "fed_stance": {"value": "Hold", "as_of": "2026-07-29", "source": "FOMC 2026-07-29 (9-3 vote, 3 dissents for a hike)"},
-    "next_macro_gate": {"value": "Jackson Hole Aug 27-29 (Warsh keynote Fri 8/28) + July core PCE Wed 8/26", "as_of": "2026-08-22", "source": "wiki/economic-calendar.md + 2026-08-22 Saturday desk logs (JH date corrected; issue #57)"}
+    "fed_funds_range": {
+      "value": "3.50-3.75",
+      "as_of": "2026-07-29",
+      "source": "FOMC statement 2026-07-29"
+    },
+    "fed_stance": {
+      "value": "Hold",
+      "as_of": "2026-07-29",
+      "source": "FOMC 2026-07-29 (9-3 vote, 3 dissents for a hike)"
+    },
+    "next_macro_gate": {
+      "value": "September FOMC Sep 15-16 (Sept hike odds ~55-58% post-Warsh JH keynote 8/28) + August CPI Thu Sep 11 + AVGO Sep 3 + BOJ Sep 17-18 (hike odds ~84-87%)",
+      "as_of": "2026-08-29",
+      "source": "Yahoo Finance Jackson Hole live blog 2026-08-28 (CME ~56% post-keynote) + Saturday desk logs 2026-08-29 (CPI 9/11, AVGO 9/3, FOMC 9/15-16, BOJ 9/17-18)"
+    }
   },
   "rates": {
-    "ust_3m": {"value": 3.71, "as_of": "2026-08-21", "source": "yahoo:^IRX", "tolerance_pct": 3},
-    "ust_2y": {"value": 4.19, "as_of": "2026-08-20", "source": "fred:DGS2", "tolerance_pct": 4},
-    "ust_5y": {"value": 4.424, "as_of": "2026-08-21", "source": "yahoo:^FVX", "tolerance_pct": 2},
-    "ust_10y": {"value": 4.738, "as_of": "2026-08-21", "source": "yahoo:^TNX", "tolerance_pct": 2},
-    "curve_10y_2y_bps": {"value": 55, "computed_from": ["ust_10y", "ust_2y"]},
-    "curve_10y_3m_bps": {"value": 103, "computed_from": ["ust_10y", "ust_3m"]}
+    "ust_3m": {
+      "value": 3.73,
+      "as_of": "2026-08-28",
+      "source": "yahoo:^IRX",
+      "tolerance_pct": 3
+    },
+    "ust_2y": {
+      "value": 4.2,
+      "as_of": "2026-08-27",
+      "source": "fred:DGS2",
+      "tolerance_pct": 4
+    },
+    "ust_5y": {
+      "value": 4.481,
+      "as_of": "2026-08-28",
+      "source": "yahoo:^FVX",
+      "tolerance_pct": 2
+    },
+    "ust_10y": {
+      "value": 4.72,
+      "as_of": "2026-08-28",
+      "source": "yahoo:^TNX",
+      "tolerance_pct": 2
+    },
+    "curve_10y_2y_bps": {
+      "value": 52,
+      "computed_from": [
+        "ust_10y",
+        "ust_2y"
+      ]
+    },
+    "curve_10y_3m_bps": {
+      "value": 99,
+      "computed_from": [
+        "ust_10y",
+        "ust_3m"
+      ]
+    }
   },
   "volatility": {
-    "vix": {"value": 15.13, "as_of": "2026-08-21", "source": "yahoo:^VIX", "tolerance_pct": 5}
+    "vix": {
+      "value": 14.43,
+      "as_of": "2026-08-28",
+      "source": "yahoo:^VIX",
+      "tolerance_pct": 5
+    }
   },
   "cross_asset": {
-    "spy": {"value": 765.72, "as_of": "2026-08-21", "source": "yahoo:SPY", "tolerance_pct": 1.5},
-    "dxy": {"value": 99.60, "as_of": "2026-07-15", "source": "external:fx-composite", "stale": true},
-    "eurusd": {"value": 1.1678, "as_of": "2026-08-21", "source": "yahoo:EURUSD=X", "tolerance_pct": 1},
-    "usdjpy": {"value": 158.94, "as_of": "2026-08-21", "source": "yahoo:JPY=X", "tolerance_pct": 1},
-    "wti": {"value": 87.06, "as_of": "2026-08-21", "source": "yahoo:CL=F", "tolerance_pct": 3},
-    "gold": {"value": 4624.10, "as_of": "2026-08-21", "source": "yahoo:GC=F", "tolerance_pct": 2},
-    "copper": {"value": 6.58, "as_of": "2026-08-21", "source": "yahoo:HG=F", "tolerance_pct": 2},
-    "btc": {"value": 78335, "as_of": "2026-08-21", "source": "yahoo:BTC-USD", "tolerance_pct": 5},
-    "hyg": {"value": 79.61, "as_of": "2026-08-21", "source": "yahoo:HYG", "tolerance_pct": 1.5},
-    "lqd": {"value": 105.92, "as_of": "2026-08-21", "source": "yahoo:LQD", "tolerance_pct": 1.5}
+    "spy": {
+      "value": 769.35,
+      "as_of": "2026-08-28",
+      "source": "yahoo:SPY",
+      "tolerance_pct": 1.5
+    },
+    "dxy": {
+      "value": 99.6,
+      "as_of": "2026-07-15",
+      "source": "external:fx-composite",
+      "stale": true
+    },
+    "eurusd": {
+      "value": 1.1587,
+      "as_of": "2026-08-28",
+      "source": "yahoo:EURUSD=X",
+      "tolerance_pct": 1
+    },
+    "usdjpy": {
+      "value": 160.04,
+      "as_of": "2026-08-28",
+      "source": "yahoo:JPY=X",
+      "tolerance_pct": 1
+    },
+    "wti": {
+      "value": 83.4,
+      "as_of": "2026-08-28",
+      "source": "yahoo:CL=F",
+      "tolerance_pct": 3
+    },
+    "gold": {
+      "value": 4529.9,
+      "as_of": "2026-08-28",
+      "source": "yahoo:GC=F",
+      "tolerance_pct": 2
+    },
+    "copper": {
+      "value": 6.659,
+      "as_of": "2026-08-28",
+      "source": "yahoo:HG=F",
+      "tolerance_pct": 2
+    },
+    "btc": {
+      "value": 78252,
+      "as_of": "2026-08-29",
+      "source": "yahoo:BTC-USD",
+      "tolerance_pct": 5
+    },
+    "hyg": {
+      "value": 79.74,
+      "as_of": "2026-08-28",
+      "source": "yahoo:HYG",
+      "tolerance_pct": 1.5
+    },
+    "lqd": {
+      "value": 106.35,
+      "as_of": "2026-08-28",
+      "source": "yahoo:LQD",
+      "tolerance_pct": 1.5
+    }
   },
   "sector_etf": {
-    "XLK": {"close": 183.31, "wow_pct": -3.53, "as_of": "2026-08-21", "source": "yahoo:XLK", "tolerance_pct": 2},
-    "XLE": {"close": 63.64, "wow_pct": 2.79, "as_of": "2026-08-21", "source": "yahoo:XLE", "tolerance_pct": 2},
-    "XLF": {"close": 57.48, "wow_pct": -1.17, "as_of": "2026-08-21", "source": "yahoo:XLF", "tolerance_pct": 2},
-    "XLV": {"close": 174.62, "wow_pct": 4.33, "as_of": "2026-08-21", "source": "yahoo:XLV", "tolerance_pct": 2},
-    "XLY": {"close": 118.02, "wow_pct": -0.15, "as_of": "2026-08-21", "source": "yahoo:XLY", "tolerance_pct": 2},
-    "XLP": {"close": 85.99, "wow_pct": -0.12, "as_of": "2026-08-21", "source": "yahoo:XLP", "tolerance_pct": 2},
-    "XLI": {"close": 180.25, "wow_pct": -3.36, "as_of": "2026-08-21", "source": "yahoo:XLI", "tolerance_pct": 2},
-    "XLB": {"close": 53.54, "wow_pct": 1.90, "as_of": "2026-08-21", "source": "yahoo:XLB", "tolerance_pct": 2},
-    "XLU": {"close": 42.77, "wow_pct": -3.48, "as_of": "2026-08-21", "source": "yahoo:XLU", "tolerance_pct": 2},
-    "XLRE": {"close": 45.08, "wow_pct": -0.42, "as_of": "2026-08-21", "source": "yahoo:XLRE", "tolerance_pct": 2},
-    "XLC": {"close": 111.40, "wow_pct": -1.37, "as_of": "2026-08-21", "source": "yahoo:XLC", "tolerance_pct": 2},
-    "SMH": {"close": 560.42, "wow_pct": -4.66, "as_of": "2026-08-21", "source": "yahoo:SMH", "tolerance_pct": 2}
+    "XLK": {
+      "close": 185.69,
+      "wow_pct": 1.3,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLK",
+      "tolerance_pct": 2
+    },
+    "XLE": {
+      "close": 62.68,
+      "wow_pct": -1.51,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLE",
+      "tolerance_pct": 2
+    },
+    "XLF": {
+      "close": 58.1,
+      "wow_pct": 1.08,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLF",
+      "tolerance_pct": 2
+    },
+    "XLV": {
+      "close": 171.16,
+      "wow_pct": -1.98,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLV",
+      "tolerance_pct": 2
+    },
+    "XLY": {
+      "close": 117.21,
+      "wow_pct": -0.69,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLY",
+      "tolerance_pct": 2
+    },
+    "XLP": {
+      "close": 85.45,
+      "wow_pct": -0.63,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLP",
+      "tolerance_pct": 2
+    },
+    "XLI": {
+      "close": 177.14,
+      "wow_pct": -1.73,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLI",
+      "tolerance_pct": 2
+    },
+    "XLB": {
+      "close": 53.18,
+      "wow_pct": -0.67,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLB",
+      "tolerance_pct": 2
+    },
+    "XLU": {
+      "close": 42.73,
+      "wow_pct": -0.09,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLU",
+      "tolerance_pct": 2
+    },
+    "XLRE": {
+      "close": 44.48,
+      "wow_pct": -1.33,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLRE",
+      "tolerance_pct": 2
+    },
+    "XLC": {
+      "close": 112.99,
+      "wow_pct": 1.43,
+      "as_of": "2026-08-28",
+      "source": "yahoo:XLC",
+      "tolerance_pct": 2
+    },
+    "SMH": {
+      "close": 553.11,
+      "wow_pct": -1.3,
+      "as_of": "2026-08-28",
+      "source": "yahoo:SMH",
+      "tolerance_pct": 2
+    }
   }
 }
