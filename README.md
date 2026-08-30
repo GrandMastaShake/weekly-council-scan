@@ -3,81 +3,85 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-08-23
+## 🌡️ Market Brief — Week of 2026-08-30
 
-> *Auto-updated by the Synthesis Agent every Saturday. Data as of Friday Aug 21 close.*
+> *Auto-updated by the Synthesis Agent every Saturday. Data as of Friday Aug 28 close.*
 
 ### The Headline
 
-This week was a story of rotation, not revolution. While the S&P 500 closed at $765.72 (-1.37% W/W), the internal market was anything but quiet — tech and semiconductors sold off sharply (XLK -3.53%, SMH -4.66%) as the 10-year Treasury yield pressed against 4.74%, while healthcare (XLV +4.33%) and energy (XLE +2.79%) surged on defensive reallocations and geopolitical supply fears. The VIX remained surprisingly tame at 15.13, suggesting institutional repositioning rather than panic selling. The biggest corporate bombshell came from the healthcare complex, where Merck and Moderna's intismeran Ph3 win in melanoma sent MRNA up triple digits and MRK to a 52-week high. Meanwhile, utilities (XLU -3.48%) experienced a technical breakdown as rate-sensitive duration plays faced their toughest week in months.
+This week was a story of macro whiplash, not trend. The S&P 500 eked out a +0.47% gain to close at $769.35, but the path was a rollercoaster: Monday's washout, Wednesday's NVDA-fueled euphoria after core PCE printed in-line at 3.3%, and Friday's hawkish Warsh keynote at Jackson Hole that erased nearly all of it. NVDA delivered the beat-and-raise of the cycle ($96.22 billion revenue, +106% YoY), yet the stock sold off -4.6% Friday because the Fed, not Jensen Huang, now owns the multiple. The VIX yawned at 14.43, but VVIX rose +4.5% — smart money bought insurance while retail slept. Only three sectors beat SPY: communication services (XLC +1.43%), technology (XLK +1.30%), and financials (XLF +1.08%). Last week's defensive leaders — healthcare and energy — round-tripped into the red.
 
 ### Index Check
 
 | Index | Level | Move | Story |
 |-------|-------|------|-------|
-| S&P 500 | $765.72 (SPY) | -1.4% | Worst week since early August; held above 50D MA |
-| Nasdaq 100 | $713.44 (QQQ) | -2.4% | Growth concentration under pressure; pre-NVDA de-risking |
-| Dow Jones | $532.22 (DIA) | -0.9% | Most resilient major index; value/defensive tilt paid |
-| Russell 2000 | $299.96 (IWM) | -1.7% | Small caps fell with rates but held the 2-year uptrend |
-| VIX | 15.13 | +6.2% | Rose off 6-month low but still below 16; complacent |
+| S&P 500 | $769.35 (SPY) | +0.5% | Held above 20-day EMA; 1.1% under cycle high |
+| Nasdaq 100 | $716.43 (QQQ) | +0.4% | NVDA beat-and-fade masked underlying fragility |
+| Dow Jones | $535.06 (DIA) | +0.5% | Most resilient on value/defensive tilt |
+| Russell 2000 | $295.75 (IWM) | -1.4% | Small-caps lagged as front-end rates repriced |
+| VIX | 14.51 | -4.1% | Fell below 20-day MA despite hawkish Fed; complacent |
 
-> **Dad Translation:** The stock market's main scoreboard fell this week — not a crash, but the first meaningful drop in a while. Underneath the surface there was a lot of shuffling: tech stocks took a breather while healthcare and energy stepped up. The "fear index" ticked higher but stayed pretty calm, which means people aren't panicking — they're just moving their money to different neighborhoods.
+> **Dad Translation:** The stock market's main scoreboard barely moved this week, but it was a wild ride underneath. Tech stocks surged on a monster earnings report from NVIDIA, then gave it all back when the Fed Chairman hinted he might raise interest rates. The "fear index" actually fell, which is odd — like seeing calm faces in a burning building. Small companies had a tougher time than big ones.
 
 ### What's Moving Markets — The Big Stories
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |-------|---------------|----------------|-----------------|
-| 🏥 **Healthcare Surge** | XLV +4.33%, MRK +13%, MRNA +140%+ on intismeran Ph3 win | Defensive rotation + first-ever personalized mRNA cancer vaccine Phase 3 success | Drug companies had a massive week because investors got nervous AND because scientists made a huge breakthrough in cancer vaccines. Merck and Moderna proved a new kind of medicine works. |
-| ⛽ **Energy Rally** | XLE +2.79%, WTI $87.06 (+5.66%) | Hormuz blockade physical; 2nd straight +5% week for oil | Oil prices jumped again because of real supply disruptions in the Middle East. That's good for oil stocks but raises gas prices for everyone. |
-| 📉 **Tech Unwind** | XLK -3.53%, SMH -4.66% | Rising 10-year yields (4.738%) hurt growth valuations; INTC -12.1%, AMD -8.0% | The big tech stocks that have been carrying the market finally took a hit because higher interest rates make their future profits worth less today. Even mighty NVIDIA fell before its big report. |
-| ⚡ **Utility Breakdown** | XLU -3.48%, below 200-day MA | 10Y at 52-week high crushed long-duration dividend plays | Power company stocks got hammered because they act like bonds, and bonds do badly when interest rates rise. Investors who bought utilities for safety learned there's no such thing as a free lunch. |
-| 🏦 **Fed Hawks Emerge** | FOMC Minutes 9-3 split; 3 dissents favored hikes | September hold ~70%, but the doves lost ground; curve steepened | The Federal Reserve revealed three members actually wanted to RAISE rates. That scared the market and kept bond yields elevated. |
+| 🏦 **Warsh's Hawkish Debut** | Fed Chair Warsh at Jackson Hole: "inflation is running above our 2% target... we have work to do" — zero forward guidance | September hike odds repriced from ~35% to ~55–58% on CME; bear flattener crushed rate-sensitives | The new Fed boss basically said "we're not done fighting inflation." That scared investors and made stocks that depend on low interest rates — like tech and real estate — very nervous. |
+| 🤖 **NVDA Beat-and-Fade** | Q2 FY27: $96.22B rev (+106% YoY), Q3 guide $108B; stock +6.9% Thu, -4.6% Fri | Best earnings print of the cycle sold on a Fed speech — classic late-cycle tell; AI trade now answers to rates | NVIDIA had the best quarter imaginable, and the stock still fell the next day. That tells you investors are more worried about interest rates than they are excited about artificial intelligence. |
+| 🏥 **Healthcare Retest** | XLV -1.98% W/W but old ceiling $169.71 never tested; MRK/AMGN fresh 52W highs | Breakout retest held on thinnest volume of the advance; Monday White House drug pricing announcement is next gate | Healthcare stocks gave back some gains but held key support levels. Two big drug companies hit record highs on good news. But a government announcement Monday about drug prices could change everything. |
+| ⛽ **Oil De-escalation** | WTI -4.2% to $83.40 on US–Iran ceasefire leak; snapped two-week +11% run | Removed inflation tail that was threatening the Fed; also removed energy's geopolitical premium | Oil prices dropped because of peace talks in the Middle East. That's good for gas prices and inflation, but bad for oil stocks that had been riding the crisis. |
+| 🏗️ **Treasury Buyback Paradox** | Treasury doubled long-end buybacks to ≥$4B/op starting Sept 9; 10Y still closed at 4.72% | Fiscal duration support failed to cap yields despite intervention; raises questions about backstop efficacy | The government is buying back its own bonds to keep interest rates down — but rates keep rising anyway. That's like bailing water with a bucket that has a hole in it. |
 
 ### Sector Scorecard (1-Year Trend + Week)
 
 | Sector | Trend | 1Y Return | Week Return | Signal |
 |--------|-------|-----------|-------------|--------|
-| 🔥 Healthcare | Leading | — | +4.33% | Breakout confirmed; new defensive leadership on trial success |
-| 🔥 Energy | Leading | — | +2.79% | Breakout to new 52-week highs; geopolitical premium fragile |
-| 🟡 Materials | Middling | — | +1.90% | Gold +5.6% to $4,624; copper/steel mixed |
-| 🟡 Consumer Discretionary | Middling | — | -0.15% | Flat; consumer stress triangle emerging |
-| 🟡 Consumer Staples | Middling | — | -0.12% | Defensive bid but WMT -9.8% shook the complex |
-| 🟡 Real Estate | Middling | — | -0.42% | Holding up better than utilities on rate moves |
-| 🟡 Financials | Middling | — | -1.17% | Breakout failed back below $58; NIM compression |
-| 🟡 Communication Services | Middling | — | -1.37% | META -6.8% on capex revolt; telecoms held green |
-| ❄️ Technology | Lagging | — | -3.53% | Distribution underway; 4 straight lower closes |
-| ❄️ Industrials | Lagging | — | -3.36% | PMI strong (56.0) but stocks weak; confusing signal |
-| ❄️ Utilities | Lagging | — | -3.48% | Trend broken; dividend trap warning |
-| ❄️ Semiconductors | Lagging | — | -4.66% | AI unwind risk; canary for growth trade |
+| 🔥 Communication Services | Leading | — | +1.43% | Post-NVDA re-coupling; telecoms provided defensive ballast |
+| 🔥 Technology | Leading | — | +1.30% | MSFT +6.3% carried the tape; NVDA fade is warning sign |
+| 🔥 Financials | Leading | — | +1.08% | Beat SPY for third straight week; carry improves if Warsh means it |
+| 🟡 Materials | Middling | — | -0.67% | NUE tariff-shield complex promoted to core; 52W high tested and rejected |
+| 🟡 Consumer Staples | Middling | — | -0.63% | Absorbed -9.8% WMT shock and finished nearly flat; "real staples" rotation intact |
+| 🟡 Consumer Discretionary | Middling | — | -0.69% | TGT blowout +7.1% vs WMT crash -9.8%; consumer bifurcation deepening |
+| 🟡 Utilities | Middling | — | -0.09% | Flat week but yield spread worst on record (-204 bps); technically broken |
+| ❄️ Semiconductors | Lagging | — | -1.30% | Post-NVDA fade unresolved; distribution under headline rally |
+| ❄️ Real Estate | Lagging | — | -1.33% | Lost 50D MA on weekly close; towers (SBAC) only refuge |
+| ❄️ Industrials | Lagging | — | -1.73% | Failed 50D defense; Canada tariff cost shock looms |
+| ❄️ Healthcare | Lagging | — | -1.98% | Breakout retest held but policy risk from Monday pricing announcement |
+| ❄️ Energy | Lagging | — | -1.51% | Prior week's breakout failed; ceasefire removed geopolitical premium |
 
-> **Dad Translation:** This week, the doctors and oil companies won, while the chip makers and power companies lost. The tech stocks that have been the market's heroes for months finally took a break. It's like a relay race where the baton got passed to a slower but steadier runner — but only a couple of runners are still moving forward.
+> **Dad Translation:** This week, the phone companies, tech giants, and banks won, while the drug companies and oil companies — last week's winners — gave back their gains. It's like a game of musical chairs where nobody wants to sit down for long. The market can't decide whether it wants growth stocks or safe stocks, so it's ping-ponging between them.
 
 ### Market Breadth — The Grid's Own Tape
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Sector ETFs UP on the week | 3 | XLE (+2.79%), XLV (+4.33%), XLB (+1.90%) |
-| Sector ETFs FLAT on the week | 2 | XLY (-0.15%), XLP (-0.12%) |
-| Sector ETFs DOWN on the week | 7 | XLK (-3.53%), XLF (-1.17%), XLI (-3.36%), XLU (-3.48%), XLRE (-0.42%), XLC (-1.37%), SMH (-4.66%) |
-| Sectors above 50-day MA | 9 | All except XLI, XLU, SMH |
-| Sectors above 200-day MA | 10 | All except XLU, XLC |
-| Leadership concentration | Healthcare + Energy | Two sectors carried the green tape; healthcare breadth was widest |
+| Sector ETFs UP on the week | 3 | XLC (+1.43%), XLK (+1.30%), XLF (+1.08%) |
+| Sector ETFs FLAT on the week | 0 | — |
+| Sector ETFs DOWN on the week | 9 | XLE (-1.51%), XLV (-1.98%), XLY (-0.69%), XLP (-0.63%), XLI (-1.73%), XLB (-0.67%), XLU (-0.09%), XLRE (-1.33%), SMH (-1.30%) |
+| Sectors above 50-day MA | 8 | XLK, XLC, XLF, XLB, XLE, XLV, XLP, XLY |
+| Sectors below 50-day MA | 4 | SMH, XLI, XLU, XLRE |
+| Sectors above 200-day MA | 10 | XLK, SMH, XLF, XLI, XLB, XLE, XLV, XLP, XLY, XLRE |
+| Sectors below 200-day MA | 2 | XLC, XLU |
+| Leadership concentration | MSFT +6.3% | Single-name carried XLK; XLF leadership diffuse across carry beneficiaries; XLC supported by post-NVDA re-coupling |
 
-> **Dad Translation:** Most sectors went down this week, but the few that went up did so with conviction. Healthcare and energy were the only bright spots. When only three out of twelve neighborhoods are doing well, it's a sign the overall market is getting tired and people are getting picky about where they put their money.
+> **Dad Translation:** Most sectors went down this week, and the few that went up did so because of one or two big companies. When only three out of twelve neighborhoods are thriving — and two of them needed a single stock to carry them — it's a sign the overall market is confused and tired. The fact that utilities and communication services are below their long-term averages is a warning that not everything is healthy under the hood.
 
 ### What to Watch This Week
 
 | Date | Event | What to Do |
 |------|-------|------------|
-| Mon Aug 25 | Jackson Hole Symposium begins | **High alert.** Watch Powell's tone. Hawkish = yields spike, growth sells off. |
-| Tue Aug 26 | Durable Goods Orders + NVDA earnings AMC | Strong durable goods = industrials bounce, but yields stay elevated. NVDA ~$93.5B cons vs $91B guide is the market's biggest catalyst. |
-| Wed Aug 27 | Pending Home Sales + Core PCE 8:30am | Miss on home sales confirms consumer stress. PCE is THE inflation number the Fed watches — >0.3% MoM changes everything. |
-| Thu Aug 28 | Initial Jobless Claims | Only >250k changes narrative. Baseline watch. |
-| Fri Aug 29 | Warsh keynote at Jackson Hole 10am ET | The Fed Chair's speech could set the tone for the rest of the year. |
+| Mon Aug 31 | White House MFN Medicaid drug pricing announcement | **🔴 CRITICAL.** GLP-1 cuts explicitly in scope. LLY proxy. Watch XLV reaction. |
+| Mon Aug 31 | China August PMIs | **🟡 Moderate.** No bazooka expected. Watch materials/commodity reaction. |
+| Tue Sep 2 | AI (company) earnings | **🟡 Moderate.** Small-cap AI sentiment read. |
+| Wed Sep 3 | AVGO earnings | **🔴 CRITICAL.** Semis confirmation post-NVDA; Google-Marvell warrant threat. |
+| Thu Sep 11 | August CPI | **🔴 CRITICAL.** First CPI post-Warsh. >0.3% m/m = hawkish re-acceleration. |
+| Sep 15–16 | September FOMC + SEP/dot plot | **🔴 CRITICAL.** Live meeting. Entire Council posture hinges here. |
+| Sep 17–18 | BOJ meeting | **🟡 Moderate.** Hike odds 84–87%. USD/JPY at 160.04 = intervention risk. |
 
 ### The Bottom Line
 
-The market regime is shifting from "AI-led growth at any price" toward "defensive cash flow in a higher-rate world." The Council's posture is **cautious-neutral** with a defensive tilt: overweight healthcare, zero utilities, reduced tech/semis, and 15-20% cash. The rotation story is intact, but breadth is deteriorating — only three sectors closed green this week, and two of them (XLE, XLB) are commodity-beta plays vulnerable to geopolitical headline risk. The single most important thing to watch is the 10-year Treasury yield at 4.738%; a sustained break above 5.00% would force a wholesale repricing of risk assets. Until the Jackson Hole dust settles, the Council is keeping powder dry and letting others fight over tech's corpse.
+The market regime has shifted from "long-end rates matter" to **"front-end Fed policy matters."** Chair Warsh's hawkish Jackson Hole debut repriced September hike odds to ~55–58%, flipped the curve into a bear flattener, and proved that even the best earnings print of the cycle (NVDA) cannot withstand a Fed that is not done. The rotation story is no longer growth vs. value — it is "what survives a live front-end hike." The Council's posture is **defensive-aggressive**: 15–20% cash, overweight healthcare (on retest) and towers (SBAC/CCI), zero utilities, reduced tech/semis. The single most important thing to watch is the 2-year Treasury yield (~4.34% Friday desks); a sustained break above 4.40% would force a wholesale repricing of risk assets. Until the September FOMC dust settles, the Council is keeping powder dry and letting others fight over the Fed's intentions.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 
@@ -127,6 +131,7 @@ Utilities                 10.8 def █░░░░░░░░░     18.8 def �
 | 🟠 | **Technology** | 40.6 unfavorable | 72.3 favorable | ●○○ low |
 | 🔴 | **Industrials** | 27.7 defensive | 45.7 neutral | ●○○ low |
 | 🔴 | **Utilities** | 10.8 defensive | 18.8 defensive | ●●○ medium |
+```
 
 `fav` 70+, `con` 55+, `neu` 45+, `unf` 30+, `def` below 30. `n/a` is a
 horizon that was not offered -- the day horizon needs daily bars and this
