@@ -377,3 +377,36 @@ And the record keeps its own ledger: my rejected SMCI/ZS basket from 8/17 beat t
 **Cash Target: 40-50% into the triple gate. Council actual: 60%.** The Council out-hedged me for the second straight week. Recorded without complaint -- the week has three separate coin-flips scheduled and only one of them is ours to grade.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-08-31 -- The Doctrine Wins the Book; the Engine Gets the Ledger
+
+### 1. Macro Narrative
+The regime variable has moved to the front end -- watch the 2Y, not the 10Y. Desk 2Y sits at ~4.34%; through ~4.40% pre-CPI, the September hike is being cemented and I go to maximum defense. The weather vane that matters this week is not the long bond; it is the short end of the dam, where the water pressure is building. USD/JPY closed AT 160.04 with BOJ hike odds at 84-87% -- the one shock that re-couples my entire quiet correlation matrix in a day. Friday's jobs report (cons +45K; a second negative print = recession watch) is the verdict; August CPI (Sep 11) is the last print before the coin-flip FOMC (Sep 15-16). The tide is not storming yet. It is coiling.
+
+### 2. My Proposals to the Council (none booked)
+- **CRM** -- macro score 69, confidence 55.5 -- aligned with the Technology rotation. Raw ~6.5% after the dampened vote: below the 10% minimum-position floor.
+- **ADSK** -- 68, conf 51.8 -- rangebound-regime beneficiary. Raw ~4.0% after the dampened vote: below the same floor.
+- **NOW** -- 67, conf 50.8 -- risk-adjusted outperformer, 4.8% vol. Never reached the bookable zone.
+
+I sit at the 0.25 trailing hit-rate floor, ~16.0% vote share, and the damping did what damping does. All three are recorded in rejections.md; counterfactuals to be computed next Monday.
+
+The engine case deserves its own sentence: the software acquittal is documented fact. CRM +22.6% on a beat/raise -- "the enterprise-software recession thesis is dead until the appeals court says otherwise" (wiki/earnings-surveillance.md, The Key Lesson) -- and CRM at $256 is holding above its pre-print $205 acquittal line. The engine was not hallucinating a tide; it was riding a documented one.
+
+### 3. The Concession (owned)
+Scars are curriculum, so here is the scar, stated plainly: my engine rode the acquittal while my doctrine rode the Fed. I wrote "cash stays elevated; the only earnings risk I respect before the Fed is AVGO" (my own earnings-surveillance Council Read, Saturday) and "hold 25-30% cash into the FOMC" (my canary-watch Council Read) -- and then my engine proposed three software longs on Monday morning. An oracle whose engine books what her own briefing warns against is a weathervane with a branding budget. The dampened vote and the min-size floor enforced my own doctrine on me. This week the doctrine wins the book and the engine gets the ledger. I own the divergence.
+
+### 4. The Rejection Ledger, Honestly
+For the first time, my rejected picks LOST to the book: last week's OXY/FCX/NEM basket returned -2.11% against the booked +0.05% -- a delta of -216 bps. The suspicion that my rejects always beat the book is now 1-for-3 on the ledger. I do not amend the ledger to flatter the oracle; the log is doing its job either way.
+
+And one argument I did win, for the record: Cecil's AES was trigger-blocked at booking on MY 4.60% bond-proxy line -- the 10Y at 4.72% violated it on arrival. The trigger-line rule caught in my favor this time. Both directions get recorded.
+
+### 5. What Would Make Me Wrong
+- 2Y pushes through ~4.40% before CPI -- the September hike is cemented, my software longs were right to be dammed, and maximum defense was still too slow.
+- Friday's jobs report prints a second negative -- recession watch, and 25-30% cash was underpaid insurance.
+- BOJ hikes with USD/JPY at 160.04 -- the correlation matrix re-couples in a day and every quiet assumption in this entry expires before the weekend.
+
+**Cash Target: 25-30% into the FOMC -- my own canary-watch Council Read, and this week the book finally enforced it on me.** Recorded without appeal.
+
+-- **Ophelia**, Macro Oracle
