@@ -125,7 +125,7 @@ Utilities                 10.8 def █░░░░░░░░░     18.8 def �
 | 🔵 | **Energy** | 61.9 constructive | 52.2 neutral | ●○○ low |
 | 🔵 | **Materials** | 56.5 constructive | 54.1 neutral | ●○○ low |
 | ⚪ | **Consumer Discretionary** | 49.8 neutral | 60.4 constructive | ●●○ medium |
-| ⚪ | **Communication Services** | 49.3 neutral | 56.9 constructive | ●●○ medium |
+| ⚪ | **Communication Services** | 49.3 neutral | 56.9 constructive | ●○○ low |
 | ⚪ | **Real Estate** | 47.7 neutral | 28.2 defensive | ●○○ low |
 | 🟠 | **Consumer Staples** | 41.3 unfavorable | 37.1 unfavorable | ●●○ medium |
 | 🟠 | **Technology** | 40.6 unfavorable | 72.3 favorable | ●○○ low |
@@ -146,9 +146,9 @@ the heatmap's own README and in `data/forecasts/2026-08-21_manual.json` there.
 <!-- ARENA BANNER START -->
 ## ⚔️ The Arena — Think You Can Beat the Council?
 
-### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/66)** 👈
+### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/83)** 👈
 
-**Week of 2026-08-31 · 🔒 Entries lock Monday 8:50 AM ET**
+**Week of 2026-09-07 · 🔒 Entries lock Monday 8:50 AM ET**
 
 1. Click the link above (opens this week's Arena issue)
 2. Scroll to the comment box at the bottom
@@ -243,6 +243,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-08-31 | [View](reports/2026-08-31-report.md) | 14.4 | +0.47% | ALL (Cecil) |
 | 2026-08-24 | [View](reports/2026-08-24-report.md) | 15.9 | -1.35% | ALL (Cecil) |
 | 2026-08-17 | [View](reports/2026-08-17-report.md) | 15.0 | +0.48% | TER (Ophelia) |
 | 2026-08-10 | [View](reports/2026-08-10-report.md) | 15.2 | +3.18% | ENGINE ABORT (no book) |
