@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-08-31
+
+Booked: ALL 13.3% / HIG 13.3% (73.4% cash -- Council Review posture, 3+ regime flags broken, jobs-report Friday; AES trigger-blocked at booking per the DOW rule). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| CRM | 69 | 55.5 | Consensus #4 (raw ~6.5%) -- fell below the 10% minimum position size after the dampened vote shares (Ophelia at the 0.25 trailing hit-rate floor) fed the risk-control pass; the software-acquittal long, dropped by arithmetic against her own "cash stays elevated" doctrine |
+| ADSK | 68 | 51.8 | Consensus #5 (raw ~4.0%) -- same min-size floor; 13th straight beat and the stock fell -3.67% anyway ("no credit" -- wiki/earnings-surveillance.md) |
+| NOW | 67 | 50.8 | Her #3; never reached the bookable zone on the dampened vote (consensus #8) -- low-vol software into a hawkish front-end repricing |
+
+counterfactual: to be computed (date-pinned Mon 2026-08-31 close -> Fri 2026-09-04 close at the next weekly run; note Monday 2026-09-07 is Labor Day).
+
+---
+
 ### Week of 2026-08-24
 
 Booked: ALL 13.3% / HIG 13.3% / VICI 13.3% (60.0% cash -- Council Review posture, 3+ regime flags broken, triple-gate week). Ophelia's rejected candidates:
@@ -14,7 +28,18 @@ Booked: ALL 13.3% / HIG 13.3% / VICI 13.3% (60.0% cash -- Council Review posture
 | FCX | 77 | 65.4 | Consensus #5 (raw 5.7%) -- same min-size floor; Deliberation #2 logged the chase-risk concession (FCX +15.3% last week vs her own "buy miners on pullbacks" doctrine) |
 | NEM | 77 | 62.7 | Her #3; never reached consensus top-6 (score 11.1 vs EMR 18.2) -- gold-melt-up chase into a +5.6% week, against her own pullback doctrine |
 
-counterfactual: to be computed (next Monday close: OXY/FCX/NEM Monday 2026-08-24 closes -> Friday 2026-08-28 closes, equal-weighted basket vs the official booked week's return).
+counterfactual (computed 2026-08-31, date-pinned Mon 2026-08-24 close -> Fri 2026-08-28 close):
+
+| Ticker | Mon Close | Fri Close | Return |
+|---|---|---|---|
+| OXY | $60.11 | $59.10 | -1.68% |
+| FCX | $77.80 | $76.45 | -1.74% |
+| NEM | $131.84 | $127.98 | -2.93% |
+| **Equal-weighted basket** | | | **-2.11%** |
+| **Official booked week (2026-08-24)** | | | **+0.05%** |
+| **Delta (rejected - booked)** | | | **-2.16%** |
+
+Ophelia's rejected trio LOST to the booked portfolio by 216 bps -- OXY (-1.68%), FCX (-1.74%), and NEM (-2.93%) all finished red while the booked ALL (+2.54%) and HIG (+0.87%) carried a +0.05% week. The min-size floor that dropped them did its job this time; the suspicion ledger tilts away from her this week.
 
 ---
 

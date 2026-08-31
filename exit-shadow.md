@@ -4,6 +4,21 @@
 
 ## Entries
 
+### Week of 2026-08-31
+
+Book: ALL 13.3% / HIG 13.3% / cash 73.4%. Entry prices = Monday 2026-08-31 live morning prints at booking (tracker, portfolio/current.yaml).
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| ALL @ $260.12 (Cecil) | **CORE** -- mega-cap P&C insurer, liquid, broad institutional sponsorship | -5% = $247.11 | XLF weekly close < $55.00, or 10Y close > 4.85% | 6 weeks (Oct 12); named gates inside the window: jobs report Fri Sep 4 and FOMC Sep 15-16 | Trim 1/3 at +15% ($299.14); remainder trails -15% from HWM |
+| HIG @ $138.48 (Cecil) | **CORE** -- large-cap P&C insurer, same carry thesis as ALL | -5% = $131.56 | 10Y-3M curve inverts, or 10Y close > 4.85%, or XLF weekly close < $55.00 | 6 weeks (Oct 12); named gates inside the window: jobs report Fri Sep 4 and FOMC Sep 15-16 | Trim 1/3 at +15% ($159.25); remainder trails -15% from HWM |
+
+Note: AES (Cecil, engine #3) was TRIGGER-BLOCKED at booking (DOW rule -- 10Y 4.72% vs the 4.60% bond-proxy line; see the 2026-08-31 report, Council Deliberation #1) and is not booked; no exit template attaches. Its counterfactual is tracked through the shadow-book.md entry instead.
+
+outcome: to be computed (scores at the next weekly close run; note Monday 2026-09-07 is Labor Day -- markets closed -- so scoring lands on the following session's run).
+
+---
+
 ### Week of 2026-08-24
 
 Book: ALL 13.3% / HIG 13.3% / VICI 13.3% / cash 60.1%. Entry prices = Monday 2026-08-24 opens (tracker, portfolio/current.yaml).
@@ -14,7 +29,17 @@ Book: ALL 13.3% / HIG 13.3% / VICI 13.3% / cash 60.1%. Entry prices = Monday 202
 | HIG @ $137.36 (Cecil) | **CORE** -- large-cap P&C insurer, same carry thesis as ALL | -5% = $130.49 | 10Y-3M curve inverts, or 10Y >= 4.85% | 6 weeks (Oct 5) | Trim 1/3 at +15% ($157.96); remainder trails -15% from HWM |
 | VICI @ $26.67 (Cecil) | **CORE** -- net-lease REIT, bond-proxy equity | -5% = $25.34 | XLRE weekly-closes below its 50D $44.82, or 10Y closes > 4.75% | 6 weeks (Oct 5) | Trim 1/3 at +15% ($30.67); remainder trails -15% from HWM |
 
-outcome: to be computed (score Monday 2026-08-31 against date-pinned daily bars 2026-08-24 -> 2026-08-28).
+outcome (scored 2026-08-31, date-pinned daily bars 2026-08-24 -> 2026-08-28):
+
+| Pick | Stop Touched? | +15% Trim Reached? | Would-Have Return | Actual Booked Return | Verdict |
+|---|---|---|---|---|---|
+| ALL @ $254.13 (stop $241.42) | No (week low $255.41, Mon 2026-08-24) | No (week high $262.19) | +2.54% (held) | +2.54% | no difference |
+| HIG @ $137.36 (stop $130.49) | No (week low $136.49, Thu 2026-08-27) | No (week high $140.31) | +0.87% (held) | +0.87% | no difference |
+| VICI @ $26.67 (stop $25.34) | No (week low $25.75, Thu 2026-08-27 -- $0.41 above the stop) | No (week high $27.15) | -3.00% (held) | -3.00% | no difference -- the -5% CORE stop stayed clear of a losing but orderly grind-down |
+
+Cycle tally: stops helped 0, hurt 0, untouched 3. VICI lost -3.00% on the week but never traded closer than $0.41 (1.6%) to its $25.34 stop; the template rides unchanged.
+
+Scored cycles to date: 2 of 4. The stop-calibration summary block appears after 4 scored cycles.
 
 ---
 
