@@ -131,7 +131,6 @@ Utilities                 10.8 def █░░░░░░░░░     18.8 def �
 | 🟠 | **Technology** | 40.6 unfavorable | 72.3 favorable | ●○○ low |
 | 🔴 | **Industrials** | 27.7 defensive | 45.7 neutral | ●○○ low |
 | 🔴 | **Utilities** | 10.8 defensive | 18.8 defensive | ●●○ medium |
-```
 
 `fav` 70+, `con` 55+, `neu` 45+, `unf` 30+, `def` below 30. `n/a` is a
 horizon that was not offered -- the day horizon needs daily bars and this
