@@ -6,301 +6,328 @@
 
 ---
 
-## THIS WEEK'S EARNINGS GAUNTLET (Aug 23 – Aug 29)
+## THIS WEEK'S EARNINGS GAUNTLET (Aug 31 – Sep 4)
 
-> *THE FINAL BOSS WEEK IS HERE. NVIDIA reports Wednesday Aug 26 after the close — the single most important print of the quarter, with the AI infrastructure trade, the semiconductor complex, and arguably the entire index multiple riding on it. And it does not report alone: Salesforce prints the same evening, an enterprise software/security cluster (CRWD, OKTA, WDAY, ADSK) runs the "enterprise software recession" gauntlet that detonated DDOG, and the retail tail (BBY, DG, DLTR, BURL) cross-examines the bifurcated consumer verdict the Aug 17–21 gauntlet just delivered. Macro triple-gate on top: core PCE Wednesday 8:30 AM ET (cons 3.3% YoY), NVDA AMC, Warsh Jackson Hole keynote Friday 10 AM ET.*
+> *THE ECHO WEEK. The Final Boss PAID: NVDA beat +6.2% ($2.22 vs $2.09) and detonated +8.7% on the reaction day before Friday's hawkish-Warsh tape taxed it -4.6%. Enterprise software was acquitted in the same session — CRM +22.6% on an +80.4% beat, OKTA +28.6%, CRWD +20.5%. Now Broadcom reports Wednesday Sep 2: the custom-silicon corroboration (or contradiction) of the NVDA verdict, with MRVL's -10.3% in-line-and-crushed print as the warning. Around it: DELL (AI servers), HPE, and CIEN as the AI-hardware echo chamber; ZS/MDB/DOCU extend the software cross-exam; LULU/PVH/FIVE run the mall-consumer gauntlet under the live Section 338 tariff regime. Jobs report Friday Sep 4, then the FOMC Sep 15–16 window opens.*
 
-**Week at a Glance:** 20 reporters on the board — NVDA + CRM headline Wednesday; enterprise software and low-income retail flank Thursday.
-
-### Tuesday, August 25
-
-| Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
-|---|---|---|---|---|---|
-| **Zoom** | **ZM** | **Technology** | **1.48** | **Enterprise revenue; AI Companion monetization (rev est ~$1.27B)** | **Software demand probe** |
-| **Box** | **BOX** | **Technology** | **0.40** | **Content Cloud suites; billings growth** | **Mid-cap software read** |
-
-### Wednesday, August 26
-
-| Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
-|---|---|---|---|---|---|
-| **NVIDIA** | **NVDA** | **Semiconductors** | **2.09** | **Data center revenue (rev est ~$92.1B vs $91B±2% guide); Blackwell ramp; China/H20 (zero assumed); gross margin ~75%; guidance** | 🔥 **THE FINAL BOSS — the print of the quarter** |
-| **Salesforce** | **CRM** | **Technology** | **3.27** | **Agentforce ARR; cRPO growth; margin (rev est ~$11.3B)** | **Enterprise software verdict — same night as NVDA** |
-| **CrowdStrike** | **CRWD** | **Technology** | **0.29** | **ARR growth; Falcon Flex adoption; module expansion** | **Security spend read** |
-| **Okta** | **OKTA** | **Technology** | **0.96** | **Identity ARR; enterprise budgets** | **Software budgets read** |
-| **HP Inc** | **HPQ** | **Technology** | **0.66** | **PC cycle; AI-PC mix; print drag** | **Hardware cycle read** |
-| **Williams-Sonoma** | **WSM** | **Consumer Discretionary** | **2.07** | **Home furnishings comps; margin** | **High-end home consumer** |
-| **J.M. Smucker** | **SJM** | **Consumer Staples** | **2.22** | **Coffee pricing; pet food volume** | **Staples pricing power** |
-| **Urban Outfitters** | **URBN** | **Consumer Discretionary** | **1.73** | **Anthropologie/Free People momentum; Nuuly** | **Specialty apparel read** |
-| **Abercrombie & Fitch** | **ANF** | **Consumer Discretionary** | **1.96** | **Hollister/A&F comps; tariff mitigation — Section 338 50% duties now LIVE** | **Mall apparel tariff read** |
-
-### Thursday, August 27
-
-| Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
-|---|---|---|---|---|---|
-| **Autodesk** | **ADSK** | **Technology** | **3.12** | **AEC demand; billings; margin** | **Design-software read** |
-| **Workday** | **WDAY** | **Technology** | **2.61** | **Subscription backlog; HR/FIN suite demand** | **Enterprise software read** |
-| **Marvell** | **MRVL** | **Semiconductors** | **0.93** | **Custom silicon (XPU) ramp; datacenter rev (est ~$2.71B); the Google deal read-through** | **Second semis voice of the week — post-NVDA confirmation** |
-| **Best Buy** | **BBY** | **Consumer Discretionary** | **1.37** | **Electronics comps; AI-device attach** | **Electronics consumer read** |
-| **Dollar General** | **DG** | **Consumer Discretionary** | **2.01** | **Trade-down traffic; consumables mix** | **Low-income consumer proxy — WMT cross-exam** |
-| **Dollar Tree** | **DLTR** | **Consumer Discretionary** | **1.13** | **Multi-price rollout; discretionary drag** | **Low-income consumer proxy** |
-| **Burlington** | **BURL** | **Consumer Discretionary** | **2.19** | **Off-price comps; reserve-pack inventory** | **Off-price confirmation post-TJX/ROST** |
-| **PagerDuty** | **PD** | **Technology** | **0.31** | **Ops-platform ARR; enterprise retention** | **Small-cap software probe** |
-| **SentinelOne** | **S** | **Technology** | **0.07** | **Endpoint ARR; CRWD competitive read** | **Security second opinion** |
-
-**Board changes since the 2026-08-15 update (Yahoo Finance consensus):** NVDA **2.08 -> 2.09** (rev est ~$92.0B -> ~$92.1B — consensus is drifting ABOVE the $91B±2% guide band); **CRM added to Wednesday** (3.27, ~$11.3B rev — the co-headliner nobody priced); **MRVL, BURL, PD, S, BOX added to Thursday/Tuesday**; **PVH moved out of this week (now Sep 2)**. TGT's final pre-print consensus settled at 2.34 (from the 2.30 flagged last week) — then printed 4.11.
-
-**The Density Verdict:** 🔴 **High — the densest single week of the season.** NVDA alone would make it red; add CRM the same night, the four-name enterprise-software recession test, MRVL as Thursday's semis confirmation, and DG/DLTR/BURL as the low-income consumer cross-exam of the WMT print — then stack core PCE Wednesday morning and the Warsh keynote Friday on top. Peer setups still lean hot into NVDA (CRWV doubled, SMCI guided miles above, TSMC raised capex), but NVDA itself faded -4.6% this week into the print. Fully priced is fully priced.
-
----
-
-## NEXT WEEK'S EARNINGS PREVIEW (Aug 30 – Sep 5)
-
-> *THE ECHO WEEK. Whatever NVDA detonates or confirms on Aug 26 gets its second semis verdict from Broadcom on Wednesday Sep 2 — custom-silicon demand, networking, and the AI-capex echo. Around it: DELL (AI servers), HPE, and the security cluster (ZS, DOCU, MDB), plus the mall-consumer tail (LULU, PVH, AEO, FIVE) and Campbell's as the staples pricing check. The Fed's September 16 window opens the following week.*
+**Week at a Glance:** 18 reporters on the board — AVGO is the second boss Wednesday; DELL/MDB/GTLB/NIO Tuesday; LULU and the security/optical cluster Thursday.
 
 ### Tuesday, September 1
 
 | Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
 |---|---|---|---|---|---|
-| **Dell** | **DELL** | **Technology** | **4.90** | **AI-server backlog; ISG margins (rev est ~$44.4B)** | **AI hardware echo of NVDA** |
-| **MongoDB** | **MDB** | **Technology** | **1.61** | **Atlas growth; consumption trends** | **Database demand read** |
-| **GitLab** | **GTLB** | **Technology** | **0.18** | **Duo AI attach; enterprise seats** | **DevOps software probe** |
-| **NIO** | **NIO** | **Consumer Discretionary** | **-0.14** | **Deliveries; margin path; Onvo/L90 ramp** | **China EV read** |
+| **Dell** | **DELL** | **Technology** | **4.92** | **AI-server backlog; ISG margins (rev est ~$44.5B)** | **AI hardware echo of NVDA** |
+| **MongoDB** | **MDB** | **Technology** | **1.61** | **Atlas growth; consumption trends (rev est ~$0.7B)** | **Database demand read — into the post-acquittal software tape** |
+| **GitLab** | **GTLB** | **Technology** | **0.18** | **Duo AI attach; enterprise seats (rev est ~$0.3B)** | **DevOps software probe** |
+| **NIO** | **NIO** | **Consumer Discretionary** | **-0.14** | **Deliveries; margin path; Onvo/L90 ramp (rev est ~$33.3B)** | **China EV read** |
 
 ### Wednesday, September 2
 
 | Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
 |---|---|---|---|---|---|
-| **Broadcom** | **AVGO** | **Semiconductors** | **3.24** | **Custom XPU demand; AI networking; VMware (rev est ~$29.4B)** | 🔥 **THE SECOND BOSS — semis echo verdict** |
-| **HPE** | **HPE** | **Technology** | **0.93** | **AI systems; Juniper integration; networking** | **Enterprise hardware read** |
-| **PVH Corp** | **PVH** | **Consumer Discretionary** | **3.08** | **Calvin Klein / Tommy demand; Section 338 tariff math** | **Apparel tariff read** |
-| **American Eagle** | **AEO** | **Consumer Discretionary** | **0.21** | **Aerie momentum; tariff mitigation** | **Mall teen consumer** |
-| **Five Below** | **FIVE** | **Consumer Discretionary** | **1.38** | **Value-tween traffic; tariff exposure** | **Low-income discretionary echo** |
-| **C3.ai** | **AI** | **Technology** | **-0.25** | **Enterprise AI bookings; leadership transition** | **AI-monetization smell test** |
+| **Broadcom** | **AVGO** | **Semiconductors** | **3.24** | **Custom XPU demand; AI networking; VMware (rev est ~$29.4B)** | 🔥 **THE SECOND BOSS — semis echo verdict post-NVDA** |
+| **HPE** | **HPE** | **Technology** | **0.93** | **AI systems; Juniper integration; networking (rev est ~$11.9B)** | **Enterprise hardware read** |
+| **PVH Corp** | **PVH** | **Consumer Discretionary** | **2.00** | **Calvin Klein / Tommy demand; Section 338 tariff math (rev est ~$2.1B)** | **Apparel tariff read — consensus SLASHED 3.08 -> 2.00** |
+| **Five Below** | **FIVE** | **Consumer Discretionary** | **0.63** | **Value-tween traffic; tariff exposure (rev est ~$1.2B)** | **Low-income discretionary echo — consensus SLASHED 1.38 -> 0.63** |
+| **C3.ai** | **AI** | **Technology** | **-0.25** | **Enterprise AI bookings; leadership transition (rev est ~$0.1B)** | **AI-monetization smell test** |
 
 ### Thursday, September 3
 
 | Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
 |---|---|---|---|---|---|
-| **Lululemon** | **LULU** | **Consumer Discretionary** | **1.80** | **Americas comps; China growth; margin vs tariffs** | **Athleisure consumer verdict** |
-| **Zscaler** | **ZS** | **Technology** | **1.09** | **Zero-trust ARR; large-deal cadence** | **Security budgets read** |
-| **Ciena** | **CIEN** | **Technology** | **1.72** | **Optical demand; hyperscaler orders** | **AI-networking echo** |
-| **DocuSign** | **DOCU** | **Technology** | **1.09** | **IAM platform attach; billings** | **Software budgets read** |
-| **Campbell's** | **CPB** | **Consumer Staples** | **0.39** | **Soup/snacks volume; pricing power** | **Staples demand check** |
-| **UiPath** | **PATH** | **Technology** | **0.15** | **Automation ARR; agentic pivot** | **AI-automation probe** |
-| **Samsara** | **IOT** | **Technology** | **0.16** | **Connected-ops ARR; large customers** | **Industrial software read** |
-| **Toro** | **TTC** | **Industrials** | **1.30** | **Pro segment demand; residential drag** | **Outdoor-equipment read** |
+| **Lululemon** | **LULU** | **Consumer Discretionary** | **2.85** | **Americas comps; China growth; margin vs tariffs (rev est ~$2.5B)** | **Athleisure consumer verdict — consensus RE-BASED 1.80 -> 2.85** |
+| **Zscaler** | **ZS** | **Technology** | **1.09** | **Zero-trust ARR; large-deal cadence (rev est ~$0.9B)** | **Security budgets read — after the CRWD/OKTA/S split verdict** |
+| **Ciena** | **CIEN** | **Technology** | **1.73** | **Optical demand; hyperscaler orders (rev est ~$1.6B)** | **AI-networking echo** |
+| **DocuSign** | **DOCU** | **Technology** | **1.09** | **IAM platform attach; billings (rev est ~$0.9B)** | **Software budgets read** |
+| **Campbell's** | **CPB** | **Consumer Staples** | **0.39** | **Soup/snacks volume; pricing power (rev est ~$2.1B)** | **Staples demand check — post-SJM blowout** |
+| **UiPath** | **PATH** | **Technology** | **0.15** | **Automation ARR; agentic pivot (rev est ~$0.4B)** | **AI-automation probe** |
+| **Samsara** | **IOT** | **Technology** | **0.16** | **Connected-ops ARR; large customers (rev est ~$0.5B)** | **Industrial software read** |
+| **Toro** | **TTC** | **Industrials** | **1.31** | **Pro segment demand; residential drag (rev est ~$1.2B)** | **Outdoor-equipment read** |
 
-**The Density Verdict:** 🔴 **High**. AVGO is a genuine second boss — the custom-silicon corroboration (or contradiction) of whatever NVDA prints — with DELL/HPE/CIEN as the AI-hardware echo chamber and ZS/MDB/DOCU extending the enterprise-software cross-exam. LULU anchors the mall-consumer tail into a live 50% Section 338 tariff regime. If NVDA beats-and-raises, this week decides whether the AI trade broadens; if NVDA merely meets, this week decides how far the rot spreads.
+**Board changes since the 2026-08-22 update (Yahoo Finance consensus, refreshed 2026-08-30):** **PVH 3.08 -> 2.00** and **FIVE 1.38 -> 0.63** — the tariff-regime estimate cuts arrived BEFORE the prints; **LULU 1.80 -> 2.85** (large re-base — verify Monday whether this is a genuine raise or a Yahoo quarter-roll); DELL 4.90 -> 4.92; CIEN 1.72 -> 1.73; TTC 1.30 -> 1.31; **AEO moved out of this week (Sep 2 -> Sep 9)**.
+
+**The Density Verdict:** 🔴 **High — the echo week of the season.** AVGO is a genuine second boss — the custom-silicon corroboration (or contradiction) of the NVDA print — and it runs one session after NVDA's +8.7% pop got taxed -4.6% by the hawkish-Warsh Friday tape, with MRVL's -10.3% in-line-and-crushed print as the live warning that the semis echo is fragile. DELL/HPE/CIEN form the AI-hardware echo chamber; ZS/MDB/DOCU test whether the software acquittal (CRM +22.6%, OKTA +28.6%, CRWD +20.5%) extends; LULU/PVH/FIVE run the mall-consumer gauntlet with tariff-cut estimates already in the numbers. Jobs report Friday Sep 4 closes the week.
+
+---
+
+## NEXT WEEK'S EARNINGS PREVIEW (Sep 6 – Sep 12)
+
+> *THE POST-LABOR-DAY LULL — WITH A CPI CROSSFIRE. Markets closed Monday Sep 7 (Labor Day). The earnings tape thins to three board names: AEO Wednesday, then ADBE + ORCL Thursday — landing in the CPI window (~Sep 10–11) with FOMC Sep 15–16 the following week. ORCL is the last major enterprise voice before the Fed; ADBE tests whether the software acquittal extends to creative suites.*
+
+### Wednesday, September 9
+
+| Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
+|---|---|---|---|---|---|
+| **American Eagle** | **AEO** | **Consumer Discretionary** | **0.21** | **Aerie momentum; tariff mitigation (rev est ~$1.4B)** | **Mall teen consumer — the ANF read-through after the +35.7% rocket** |
+
+### Thursday, September 10
+
+| Company | Ticker | Sector | EPS Est | Key Metric | Council Stake |
+|---|---|---|---|---|---|
+| **Adobe** | **ADBE** | **Technology** | **6.08** | **Firefly AI monetization; Creative Cloud seats (rev est ~$6.7B)** | **Software-acquittal extension test — into the CPI morning** |
+| **Oracle** | **ORCL** | **Technology** | **1.74** | **OCI growth; AI-infrastructure backlog (rev est ~$19.1B)** | **Last enterprise voice before FOMC** |
+
+**The Density Verdict:** 🟡 **Medium-Low.** Only three board names, but two are mega-cap software printing into a CPI morning one week before the Fed. The lull is the point: after the densest fortnight of the season, the market gets five sessions to decide whether the NVDA verdict and the software acquittal hold without an earnings crutch — with the hawkish-Warsh rates shock (2Y ~4.34%, Sept hike odds ~54–60% per the cross-cutting wikis) as the live counterweight.
 
 ---
 
 ## THE BIG 7: STATUS AND FORWARD LOOK
 
-> *Prices as of the Friday Aug 21 close. Consensus via Yahoo Finance (refreshed 2026-08-22). NVDA is now 4 days out — everything else is October.*
+> *Prices as of the Friday Aug 28 close. Consensus via Yahoo Finance (refreshed 2026-08-30). NVDA has reported — the rest of the board is October.*
 
 | Company | Ticker | Current Price | Next Earnings | Consensus EPS | Council Read |
 |---|---|---|---|---|---|
-| **Microsoft** | **MSFT** | **$483.24** | **Oct 28** | **$4.72** | *The clean winner of the Super Bowl. Azure + AI ARR acceleration. -2.5% W/W, drifting with a risk-off tape — no thesis change.* |
-| **Apple** | **AAPL** | **$309.35** | **Oct 29** | **$1.98** | *+1.1% W/W — the only green mega-cap in tech's top 10 on the worst tech week since early Aug. Defensive bid returning; iPhone AI cycle still unproven.* |
-| **Alphabet** | **GOOGL** | **$344.82** | **Oct 28** | **$3.00** | *-0.3% W/W — quiet consolidation into the September Tier-2 remedy enforcement with Brinkema ad-tech ruling still pending.* |
-| **Amazon** | **AMZN** | **$258.63** | **Oct 29** | **$1.95** | *-1.5% W/W — closed BELOW the $260 line we flagged. Post-biblical-beat digestion continues; retail-sales miss weighs on the commerce half.* |
-| **Meta** | **META** | **$549.90** | **Oct 28** | **$6.97** | *-6.8% W/W — the capex revolt arrived (FCF -91% to $784M on $130–145B capex guide). Consensus EPS steady at 6.97, but the multiple is now on trial.* |
-| **Tesla** | **TSLA** | **$362.86** | **Oct 21** | **$0.45** | *+6.0% W/W — Nevada 5,000-vehicle paid robotaxi permit; Friday +5.1% was the best mega-cap print of the day. Meme bid fully re-inflated; fundamentals still broken.* |
-| **NVIDIA** | **NVDA** | **$214.72** | **Aug 26** | **$2.09** | 🔥 **THE FINAL BOSS — 4 days.** Faded -4.6% pre-print but held $210. Cons EPS 2.08 -> 2.09, rev est ~$92.1B — ABOVE the $91B±2% guide. Peer chain still leans hot (CRWV, SMCI, TSMC capex). |
+| **Microsoft** | **MSFT** | **$513.53** | **Oct 28** | **$4.72** | *+6.3% W/W — the week's mega-cap leader and back at all-time-high altitude. The clean Super Bowl winner keeps compounding; no thesis change.* |
+| **Apple** | **AAPL** | **$319.70** | **Oct 29** | **$1.98** | *+3.4% W/W — second straight week as the defensive mega-cap bid. iPhone AI cycle still unproven, but the tape trusts the fortress.* |
+| **Alphabet** | **GOOGL** | **$346.59** | **Oct 28** | **$3.01** | *+0.5% W/W — quiet consolidation continues into the September Tier-2 remedy enforcement; Brinkema ad-tech ruling still pending.* |
+| **Amazon** | **AMZN** | **$266.43** | **Oct 29** | **$1.95** | *+3.0% W/W — RECLAIMED the $260 line (+3.0% Friday alone). Post-biblical-beat digestion complete; the earnings-power repricing resumes.* |
+| **Meta** | **META** | **$578.02** | **Oct 28** | **$6.53** | *+5.1% W/W — the capex revolt is being forgiven, but note the consensus CUT: 6.97 -> 6.53. The multiple is off trial; the estimates are now doing the discounting.* |
+| **Tesla** | **TSLA** | **$348.75** | **Oct 21** | **$0.45** | *-3.9% W/W — the robotaxi meme bid deflated again; worst Big 7 print of the week. Fundamentals still broken; only NVDA's halo kept the complex bid.* |
+| **NVIDIA** | **NVDA** | **$217.55** | **Nov 17** | **$2.47** | ✅ **FINAL BOSS CLEARED — beat $2.22 vs $2.09 (+6.2%), +8.7% reaction day, then -4.6% Friday on the Warsh tape to close +1.3% W/W. Next: Nov 17, cons $2.47, rev est ~$109.0B. 15 straight beats (full Yahoo window).** |
 
-**Note:** Whisper numbers and implied moves for the Big 7 are not available via Yahoo Finance. Last-known whisper values (stale as of 2026-07-15) and implied move estimates require external feed refresh from **CBOE, Bloomberg, and Earnings Whispers**. The Council should treat stale implied moves as **floors, not ceilings**, based on the Super Bowl realized-vol regime (2–3.5x implied).
+**Note:** Whisper numbers and implied moves for the Big 7 are not available via Yahoo Finance. Last-known whisper values (stale as of 2026-07-15) and implied move estimates require external feed refresh from **CBOE, Bloomberg, and Earnings Whispers**. The Council should treat stale implied moves as **floors, not ceilings** — the Aug 24–28 realized-vol regime confirmed it again (CRM realized 3.3x its norm, CRWD 3.2x, OKTA 1.9x).
 
 ---
 
 ## SECTOR EARNINGS DENSITY
 
-> *Which sectors are under the microscope this fortnight? (Windows: Aug 23–Aug 29 and Aug 30–Sep 5)*
+> *Which sectors are under the microscope this fortnight? (Windows: Aug 31–Sep 4 and Sep 6–Sep 12)*
 
 | Sector | Earnings This Week | Earnings Next Week | Density Score |
 |---|---|---|---|
 | Financials | — | — | 🟢 **Low** |
 | Healthcare | — | — | 🟢 **Low** |
-| Consumer Discretionary | URBN, ANF, WSM, BBY, DG, DLTR, BURL | LULU, PVH, AEO, FIVE, NIO | 🟡 **Medium** |
-| Consumer Staples | SJM | CPB | 🟢 **Low** |
-| Industrials | — | TTC | 🟢 **Low** |
+| Consumer Discretionary | PVH, FIVE, LULU, NIO | AEO | 🟡 **Medium** |
+| Consumer Staples | CPB | — | 🟢 **Low** |
+| Industrials | TTC | — | 🟢 **Low** |
 | Materials | — | — | 🟢 **Low** |
 | Utilities | — | — | 🟢 **Low** |
 | Real Estate | — | — | 🟢 **Low** |
 | Communication Services | — | — | 🟢 **Low** |
-| Semiconductors | **NVDA**, MRVL | **AVGO** | 🔴 **High (back-to-back boss weeks)** |
-| Technology | ZM, BOX, CRM, CRWD, OKTA, HPQ, ADSK, WDAY, PD, S | DELL, HPE, MDB, GTLB, ZS, CIEN, DOCU, PATH, IOT, AI | 🔴 **High** |
+| Semiconductors | **AVGO** | — | 🔴 **High (the second boss, solo)** |
+| Technology | DELL, MDB, GTLB, HPE, AI, ZS, CIEN, DOCU, PATH, IOT | ADBE, ORCL | 🔴 **High** |
 | Energy | — | — | 🟢 **Low** |
 
-**The Sector Density Verdict:** The fortnight is one continuous technology examination with two apex events: **NVDA (Aug 26) and AVGO (Sep 2)**, with the enterprise-software recession thesis on trial every day in between (CRM, CRWD, OKTA, WDAY, ADSK, then ZS, MDB, DOCU). The consumer question moves to the low-income and mall flank (DG, DLTR, BURL this week; LULU, PVH, AEO, FIVE next) after the Aug 17–21 gauntlet delivered a bifurcated verdict: value/club/beauty/off-price strong (TGT, BJ, EL, ROST), WMT comps light, AAP detonated. Every macro gate (core PCE Wed, Warsh Fri) lands inside the NVDA window.
+**The Sector Density Verdict:** The fortnight remains one continuous technology examination, but the apex has passed: NVDA is in the books (beat, paid, then macro-taxed), and AVGO (Sep 2) is the final apex event of the season's second half. The enterprise-software recession thesis was acquitted on Aug 26 (CRM/OKTA/CRWD) — Sep 1–3 (MDB, GTLB, ZS, DOCU) and Sep 10 (ADBE, ORCL) are the appeals process. The consumer question shifts back to the mall (PVH, FIVE, LULU, AEO) with tariff-cut estimates now pre-loaded — the market is forcing apparel to beat a lowered bar, which is its own tell.
 
 ---
 
-## CONSENSUS VS WHISPER — THE RETAIL GAUNTLET PRINTS (Aug 17–21)
+## CONSENSUS VS WHISPER — THE FINAL BOSS WEEK PRINTS (Aug 24–28)
 
-> *The late-cycle retail and industrial wave reported into a consumer that had just flinched (retail sales -0.6%, UMich 51.0). The verdict came back bifurcated — and the season's law (EPS direction vs. stock direction decoupled) claimed its two most violent victims yet. Whisper numbers remain unavailable via Yahoo Finance — external feed refresh required (Earnings Whispers, Bloomberg). Stock reactions are close-to-close on the true reaction day (next session for after-close reporters KEYS/ROST).*
+> *The densest week of the season delivered its verdict: NVDA beat and was paid, enterprise software was acquitted in a single session, and the mall-retail tail split into rockets and traps. Whisper numbers remain unavailable via Yahoo Finance — external feed refresh required (Earnings Whispers, Bloomberg). Stock reactions are close-to-close on the true reaction day (next session for AMC reporters).*
 
 | Company | Ticker | Report Date | Consensus EPS | Whisper EPS | Actual EPS | Surprise vs Consensus | Stock Move | Verdict |
 |---|---|---|---|---|---|---|---|---|
-| Home Depot | HD | Aug 18 (BMO) | $4.73 | *N/A* | **$4.92** | **+4.0%** | **-0.12%** | 🟢 **Beat, dead-calm tape** — comps +1.7%, FY26 reaffirmed; the print was fully priced (±2.1% norm) |
-| Keysight | KEYS | Aug 18 (AMC) | $2.48 | *N/A* | **$3.07** | **+23.8%** 🔥 | **-6.32%** 💥 | 🔴 **THE KEYS TRAP — 8 straight beats, +23.8% blowout, and the stock detonated two sessions running (-5.6% then -6.3% = -11.6% two-day). Fully priced is fully priced — even in test & measurement** |
-| Lowe's | LOW | Aug 19 (BMO) | $4.22 | *N/A* | **$4.40** | **+4.3%** | **+2.02%** | 🟡 **Beat with an asterisk — popped on the print, but FY26 comps guide was CUT to flat. The beat was backward-looking** |
-| Target | TGT | Aug 19 (BMO) | $2.34 | *N/A* | **$4.11** | **+75.8%** 🚀 | **+4.28%** | 🟢 **THE BLOWOUT OF THE SEASON — the +13% pre-print consensus revision was RIGHT. Beat by three-quarters, rallied +4.3% on the day and +8.5% by Friday. A rare 2026 print where the beat was NOT priced** |
-| TJX | TJX | Aug 19 (BMO) | $1.19 | *N/A* | **$1.36** | **+14.5%** | **-4.21%** 💥 | 🔴 **Beat-and-sold — 8th straight beat, comps +4% above plan, stock dumped 1.8x its ±2.3% norm and finished the week -7.6%. The bar was the raise, not the beat** |
-| Estee Lauder | EL | Aug 19 (BMO) | $0.32 | *N/A* | **$0.39** | **+22.1%** 🔥 | **+16.30%** 🚀 | 🟢 **THE CLEANEST PRINT OF THE WEEK — beat, FY27 margin guide RAISED, stock +16.3% (1.6x its ±10.2% hyper-vol norm). Guidance is the currency** |
-| Walmart | WMT | Aug 20 (BMO) | $0.74 | *N/A* | **$0.81** | **+9.5%** | **-9.15%** 💥 | 🔴 **THE WMT VERDICT — refund-aided EPS beat, but US comps +2.6% vs ~3.8% expected, Q3 guide light ($0.62–0.64), CFO said "softer consumer." Crushed 1.9x its ±4.8% norm; 14 PT cuts Friday. Issue #55** |
-| Deere | DE | Aug 20 (BMO) | $4.71 | *N/A* | **$5.10** | **+8.3%** | **+6.94%** 🚀 | 🟢 **Clean beat-and-rally — the ag-cycle bottom call held (CTVA +6.7% corroborated). In line with its ±6.3% norm; direction is the story** |
-| Ross Stores | ROST | Aug 20 (AMC) | $1.95 | *N/A* | **$2.66** | **+36.7%** 🔥 | **+4.39%** | 🟢 **Big beat, modest rally — off-price inventory win confirmed the TJX demand signal even as TJX was sold. Value-channel consumer is real** |
-| Advance Auto Parts | AAP | Aug 20 (BMO) | $0.80 | *N/A* | **$1.03** | **+28.7%** 🔥 | **-24.55%** 💥 | 🔥 **THE AAP DETONATION — paradox of the week and the most violent beat-and-crash of the season. +28.7% beat met a -24.6% collapse (1.5x even its ±16.4% hyper-vol norm). The turnaround narrative died on the print** |
-| BJ's Wholesale | BJ | Aug 21 (BMO) | $1.17 | *N/A* | **$1.36** | **+16.5%** 🔥 | **+5.61%** 🚀 | 🟢 **Clean beat-and-rally — membership income and club traffic strong. The club-channel consumer read directly contradicts the WMT crack thesis** |
+| Zoom | ZM | Aug 25 (AMC) | $1.48 | *N/A* | **$1.55** | **+5.0%** | **-7.03%** 💥 | 🔴 **Beat-and-sold — even a clean beat couldn't pay a no-moat narrative in this tape** |
+| Box | BOX | Aug 25 (AMC) | $0.40 | *N/A* | **$0.40** | **+0.5%** | **+1.18%** | 🟢 **In-line, orderly — mid-cap software shrugs through** |
+| Williams-Sonoma | WSM | Aug 26 (BMO) | $2.06 | *N/A* | **$2.84** | **+37.9%** 🔥 | **+1.15%** | 🟡 **Big beat, dead-calm tape — the high-end home print was fully priced** |
+| J.M. Smucker | SJM | Aug 26 (BMO) | $2.22 | *N/A* | **$3.24** | **+46.2%** 🔥 | **+4.34%** | 🟢 **Staples pricing power confirmed — coffee/pet beat paid modestly** |
+| Abercrombie & Fitch | ANF | Aug 26 (BMO) | $1.97 | *N/A* | **$4.17** | **+111.9%** 🚀 | **+35.67%** 🚀 | 🟢 **THE ANF ROCKET — the biggest beat of the season and it was PAID. Tariff mitigation credible; mall apparel's first clean win under Section 338** |
+| **NVIDIA** | **NVDA** | **Aug 26 (AMC)** | **$2.09** | ***N/A*** | **$2.22** | **+6.16%** | **+8.74%** 🚀 | ✅ **THE FINAL BOSS PAID — 15th straight beat, +8.7% reaction, then -4.6% Friday on the hawkish-Warsh tape (two-day +3.8%). The AI trade survives its moment of truth** |
+| Salesforce | CRM | Aug 26 (AMC) | $3.27 | *N/A* | **$5.90** | **+80.4%** 🚀 | **+22.58%** 🚀 | 🟢 **THE SOFTWARE ACQUITTAL — Agentforce ARR verdict delivered; the enterprise-software recession thesis detonated in one session, and it HELD Friday (+1.6%)** |
+| CrowdStrike | CRWD | Aug 26 (AMC) | $0.29 | *N/A* | **$0.31** | **+6.4%** | **+20.50%** 🚀 | 🟢 **Monster repricing on a modest beat — security spend verdict: ALIVE. Gave back -4.2% Friday with the tape** |
+| Okta | OKTA | Aug 26 (AMC) | $0.96 | *N/A* | **$1.05** | **+8.9%** | **+28.63%** 🚀 | 🟢 **BIGGEST MOVE OF THE WEEK — identity budgets acquitted; -3.9% Friday with the tape** |
+| HP Inc | HPQ | Aug 26 (AMC) | $0.69 | *N/A* | **$0.83** | **+20.0%** 🔥 | **-2.92%** | 🔴 **Beat-and-sold — the PC/AI-PC cycle print couldn't pay; hardware stays the weak tech flank** |
+| Urban Outfitters | URBN | Aug 26 (AMC) | $1.70 | *N/A* | **$2.78** | **+63.2%** 🔥 | **-5.02%** 💥 | 🔥 **Paradox — huge beat, sold anyway. Specialty apparel wanted the guide, not the quarter** |
+| Best Buy | BBY | Aug 27 (BMO) | $1.38 | *N/A* | **$1.47** | **+6.5%** | **-4.44%** 💥 | 🔴 **Beat-and-sold — electronics consumer read stays soft despite the AI-device attach story** |
+| Dollar General | DG | Aug 27 (BMO) | $2.01 | *N/A* | **$2.48** | **+23.5%** 🔥 | **+2.53%** | 🟢 **Trade-down traffic confirmed — the low-income consumer proxy REBUTS the WMT crack thesis again** |
+| Dollar Tree | DLTR | Aug 27 (BMO) | $1.14 | *N/A* | **$2.70** | **+136.1%** 🚀 | **-3.92%** 💥 | 🔥 **THE DLTR PARADOX — biggest beat of the week, sold -3.9%. Multi-price rollout skepticism; a +136% beat that nobody believed** |
+| Burlington | BURL | Aug 27 (BMO) | $2.19 | *N/A* | **$2.96** | **+35.4%** 🔥 | **-7.64%** 💥 | 🔥 **THE BURL TRAP — off-price beat-and-sold, second verse of the TJX song. The raise bar strikes again** |
+| Autodesk | ADSK | Aug 27 (AMC) | $3.12 | *N/A* | **$3.30** | **+5.6%** | **-3.67%** | 🔴 **Beat-and-sold into the Friday tape — 13th straight beat, no credit** |
+| Workday | WDAY | Aug 27 (AMC) | $2.61 | *N/A* | **$2.75** | **+5.3%** | **+5.76%** | 🟢 **Clean beat-and-rally — HR/FIN suite demand intact even on the Warsh Friday** |
+| Marvell | MRVL | Aug 27 (AMC) | $0.93 | *N/A* | **$0.94** | **+1.0%** | **-10.28%** 💥 | 🔴 **THE MRVL WARNING — in-line and CRUSHED into the Friday tape. The semis echo is fragile: post-NVDA, merely meeting is a sin** |
+| PagerDuty | PD | Aug 27 (AMC) | $0.31 | *N/A* | **$0.32** | **+4.4%** | **+9.50%** | 🟢 **Small-cap software probe: acquitted** |
+| SentinelOne | S | Aug 27 (AMC) | -$0.23 | *N/A* | **-$0.27** | **-16.5%** 💥 | **-5.15%** 💥 | 🔴 **THE WEEK'S ONLY CLEAN MISS — the security second opinion: spend is NOT uniform. CRWD's win is share, not tide** |
 
 > 🟢 **Sandbag confirmed** = consensus beat + stock rally
 > 🔴 **Trap confirmed** = beat/miss didn't matter — narrative and positioning drove the move
 > 🔥 **Paradox** = EPS direction and stock direction violently opposed
 
-**Marky's Post-Gauntlet Interpretation:** Eleven prints, and the season's law got its two most extreme exhibits: AAP beat by +28.7% and lost a quarter of its market cap; KEYS beat by +23.8% and fell two straight sessions. But the week also broke the pattern in the other direction — TGT beat by +75.8% and actually rallied, EL beat AND raised and went +16.3%. The difference is the guide: every clean rally (EL, DE, BJ, TGT) came with a forward-looking confirmation; every trap (KEYS, TJX, WMT, AAP) came with a stale beat, a cut guide, or a narrative break. Into NVDA: **the beat is assumed. The guide band, the China line, and the gross margin are the trade.**
+**Marky's Post-Gauntlet Interpretation:** Twenty prints, and the season's law found its extreme form in both directions on the same day. Wednesday Aug 26 was the biggest single-session repricing of the season: CRM +22.6%, OKTA +28.6%, CRWD +20.5%, NVDA +8.7% — four narrative acquittals in one evening, all on beats, all PAID because the guide and the narrative pointed forward. Then Thursday night MRVL met the number and lost -10.3% into the Friday Warsh tape: in 2026, in-line is a miss for any name trading on the AI echo. The mall tail split on credibility, not magnitude: ANF (+111.9% beat, +35.7%) was believed; DLTR (+136.1% beat, -3.9%), BURL (+35.4%, -7.6%), URBN (+63.2%, -5.0%) were not. Into AVGO Wednesday: **NVDA cleared the AI trade; AVGO decides whether the custom-silicon echo confirms it. The bar is not $3.24 — it is networking growth, XPU backlog, and a guide that points forward.**
 
 ---
 
 ## HISTORICAL BEAT RATES
 
-> *How often does each company beat consensus? What is the average surprise? (8-quarter window via Yahoo Finance earnings_dates; updated with the Aug 17–21 prints.)*
+> *How often does each company beat consensus? What is the average surprise? (8-quarter window via Yahoo Finance earnings_dates; refreshed 2026-08-30 with the Aug 24–28 prints. "n.m." = average not meaningful on a small/negative EPS base.)*
 
-| Company | Ticker | Beat Rate (8Q) | Avg Surprise | Streak |
+| Company | Ticker | Beat Rate (8Q) | Avg Surprise | Streak / Latest Print |
 |---|---|---|---|---|
-| Microsoft | MSFT | **100.0%** | +5.8% | 8 beats in a row 🔥 |
-| **NVIDIA** | **NVDA** | **100.0%** | **+5.7%** | **8 beats in a row into the Aug 26 FINAL BOSS** 🔥 |
-| **Broadcom** | **AVGO** | **100.0%** | **+9.9%** | **8 beats in a row into Sep 2** 🔥 |
-| Cisco | CSCO | **100.0%** | +2.9% | 8 beats in a row — Aug 12 beat +4.4% 🔥 |
-| Applied Materials | AMAT | **100.0%** | +4.9% | 9 beats in a row — Aug 13 actual $3.50 vs $3.39 (+3.2%) confirmed 🔥 |
-| **Lowe's** | **LOW** | **100.0%** | **+2.9%** | **8 beats in a row — Aug 19 beat +4.3%** 🔥 |
-| **TJX** | **TJX** | **100.0%** | **+8.8%** | **8 beats in a row — Aug 19 beat +14.5%, stock -4.2%** 🔥 |
-| **Keysight** | **KEYS** | **100.0%** | **+9.7%** | **8 beats in a row — Aug 18 beat +23.8%, stock -6.3%** 🔥 |
-| **BJ's Wholesale** | **BJ** | **100.0%** | **+11.9%** | **8 beats in a row — Aug 21 beat +16.5%, stock +5.6%** 🔥 |
-| Apple | AAPL | **75.0%** | +3.1% | 4 beats in a row |
-| Meta | META | **62.5%** | +4.8% | *Streak broken — Jul 29 miss* |
-| Amazon | AMZN | **62.5%** | +12.3% | 2 beats in a row |
-| Alphabet | GOOGL | **62.5%** | +3.2% | *Streak broken — Jul 22 miss* |
-| Tesla | TSLA | **50.0%** | +8.1% | *Missed — Jul 22* |
-| Netflix | NFLX | **87.5%** | +10.2% | 5 beats in a row |
-| Taiwan Semi | TSM | **100.0%** | +5.8% | 9 beats in a row |
-| Intel | INTC | **37.5%** | -3.5% | *Jul 23 beat +90.9%, stock fell* |
-| AMD | AMD | **62.5%** | +2.1% | *Aug 4 beat +3.1%* |
-| Qualcomm | QCOM | **50.0%** | +1.2% | *Jul 29 in-line, stock crashed* |
-| Boeing | BA | **37.5%** | -5.2% | *Jul 28 miss* |
-| Shopify | SHOP | **75.0%** | +8.4% | Aug 5 beat +5.0%, stock +19.6% |
-| Uber | UBER | **75.0%** | +12.2% | Aug 5 beat +41.0%, stock -2.1% |
-| Airbnb | ABNB | **87.5%** | +11.3% | Aug 6 beat +9.6%, stock +16.8% |
-| Datadog | DDOG | **75.0%** | +9.1% | Aug 6 beat +12.1%, stock -17.4% |
-| Disney | DIS | **62.5%** | +4.5% | Aug 5 beat +11.4%, stock +6.6% |
-| JD.com | JD | **87.5%** | +25.3% | Aug 13 beat +11.7%, stock -7.3% |
-| National Vision | EYE | **87.5%** | +44.0% | Aug 12 beat +37.4%, stock -11.6% — 3 beats in a row, all punished |
-| Sea Ltd | SE | **25.0%** | -4.9% | Aug 11 miss -18.6%, stock +14.6% — a chronic EPS-misser with massive revenue beats |
-| Dole | DOLE | **37.5%** | +8.9% | Aug 10 in-line +1.6%, stock -6.2% |
-| **Home Depot** | **HD** | **50.0%** | **-10.0%** | **3 beats in a row — Aug 18 beat +4.0%, flat tape; the 8Q window still carries the 2025 housing-freeze misses** |
-| **Target** | **TGT** | **75.0%** | **+19.8%** | **5 beats in a row — Aug 19 blowout +75.8%** |
-| **Walmart** | **WMT** | **75.0%** | **+5.2%** | **Aug 20 beat +9.5%, stock -9.2% on comps** |
-| **Deere** | **DE** | **87.5%** | **+9.4%** | **6 beats in a row — Aug 20 beat +8.3%, stock +6.9%** |
-| **Ross Stores** | **ROST** | **87.5%** | **+5.1%** | **6 beats in a row — Aug 20 beat +36.7%** |
-| **Advance Auto** | **AAP** | **87.5%** | **+27.3%** | **7 beats in a row — Aug 20 beat +28.7%, stock -24.6%: the streak that didn't matter** |
-| **Estee Lauder** | **EL** | **87.5%** | **+50.2%** | **4 beats in a row — Aug 19 beat +22.1%, stock +16.3%** |
-| **Salesforce** | **CRM** | **87.5%** | **+10.3%** | **6 beats in a row into Aug 26** |
-| **Marvell** | **MRVL** | **87.5%** | **+3.4%** | **3 beats in a row into Aug 27** |
-| **Workday** | **WDAY** | **100.0%** | **+7.0%** | **8 beats in a row into Aug 27** 🔥 |
-| **Autodesk** | **ADSK** | **100.0%** | **+6.3%** | **8 beats in a row into Aug 27** 🔥 |
-| **Dell** | **DELL** | **87.5%** | **+11.6%** | **4 beats in a row into Sep 1** |
-| **Lululemon** | **LULU** | **100.0%** | **+15.5%** | **8 beats in a row into Sep 3** 🔥 |
-| **Zscaler** | **ZS** | **100.0%** | **+14.4%** | **8 beats in a row into Sep 3** 🔥 |
+| Apple | AAPL | **100.0%** | +4.6% | 14 straight 🔥 |
+| Autodesk | ADSK | **100.0%** | +6.1% | 13 straight — Aug 27 beat +5.6%, stock -3.7% 🔥 |
+| Applied Materials | AMAT | **100.0%** | +4.9% | 17 straight — Aug 13 beat +3.2%, stock -5.1% 🔥 |
+| Amazon | AMZN | **100.0%** | +50.5% | 14 straight — Jul 30 biblical beat inflates the average 🔥 |
+| Broadcom | AVGO | **100.0%** | +2.6% | 24 straight (full Yahoo window) into the Sep 2 SECOND BOSS 🔥 |
+| BJ's Wholesale | BJ | **100.0%** | +11.9% | 24 straight (full window) — Aug 21 beat +16.5%, stock +5.6% 🔥 |
+| CrowdStrike | CRWD | **100.0%** | +8.8% | 24 straight (full window) — Aug 26 beat +6.4%, stock +20.5% 🚀 |
+| Cisco | CSCO | **100.0%** | +3.0% | 24 straight (full window) — Aug 12 beat +4.4% 🔥 |
+| Datadog | DDOG | **100.0%** | +13.4% | 24 straight (full window) — Aug 6 beat +12.1%, stock -17.4% 🔥 |
+| Disney | DIS | **100.0%** | +10.6% | 13 straight — Aug 5 beat +11.4%, stock +6.6% 🔥 |
+| Dollar Tree | DLTR | **100.0%** | +32.8% | 8 straight — Aug 27 beat +136.1%, stock -3.9% 🔥 |
+| Estee Lauder | EL | **100.0%** | +50.2% | 13 straight — Aug 19 beat +22.1%, stock +16.3% 🔥 |
+| National Vision | EYE | **100.0%** | +41.3% | 14 straight — Aug 12 beat +37.4%, stock -11.6% 🔥 |
+| Alphabet | GOOGL | **100.0%** | +50.5% | 14 straight per current Yahoo window 🔥 |
+| Keysight | KEYS | **100.0%** | +9.7% | 24 straight (full window) — Aug 18 beat +23.8%, stock -6.3% 🔥 |
+| Lowe's | LOW | **100.0%** | +2.9% | 24 straight (full window) — Aug 19 beat +4.3% 🔥 |
+| Lululemon | LULU | **100.0%** | +6.1% | 24 straight (full window) into Sep 3 🔥 |
+| Microsoft | MSFT | **100.0%** | +7.5% | 16 straight — the clean winner of the Super Bowl 🔥 |
+| NVIDIA | NVDA | **100.0%** | +5.8% | 15 straight — Aug 26 FINAL BOSS beat +6.2%, stock +8.7% 🔥 |
+| Okta | OKTA | **100.0%** | +8.7% | 23 straight — Aug 26 beat +8.9%, stock +28.6% 🚀 |
+| PagerDuty | PD | **100.0%** | +32.2% | 24 straight (full window) — Aug 27 beat +4.4%, stock +9.5% 🔥 |
+| TJX | TJX | **100.0%** | +8.8% | 18 straight — Aug 19 beat +14.5%, stock -4.2% 🔥 |
+| Taiwan Semi | TSM | **100.0%** | +6.4% | 24 straight (full window) 🔥 |
+| Workday | WDAY | **100.0%** | +6.9% | 17 straight — Aug 27 beat +5.3%, stock +5.8% 🔥 |
+| Williams-Sonoma | WSM | **100.0%** | +11.8% | 13 straight — Aug 26 beat +37.9%, stock +1.2% 🔥 |
+| Zscaler | ZS | **100.0%** | +14.4% | 24 straight (full window) into Sep 3 🔥 |
+| Advance Auto | AAP | **87.5%** | +27.3% | 7 straight — Aug 20 beat +28.7%, stock -24.6%: the streak that didn't matter |
+| AMD | AMD | **87.5%** | +3.8% | 4 straight — Aug 4 beat +3.1% |
+| Abercrombie & Fitch | ANF | **87.5%** | +20.6% | 6 straight — Aug 26 beat +111.9%, stock +35.7% 🚀 |
+| Best Buy | BBY | **87.5%** | +4.7% | 7 straight — Aug 27 beat +6.5%, stock -4.4% |
+| Burlington | BURL | **87.5%** | +8.4% | 5 straight — Aug 27 beat +35.4%, stock -7.6% |
+| Salesforce | CRM | **87.5%** | +19.2% | 7 straight — Aug 26 beat +80.4%, stock +22.6% 🚀 |
+| Deere | DE | **87.5%** | +9.4% | 6 straight — Aug 20 beat +8.3%, stock +6.9% |
+| Dell | DELL | **87.5%** | +11.6% | 4 straight into Sep 1 |
+| Dollar General | DG | **87.5%** | +16.3% | 7 straight — Aug 27 beat +23.5%, stock +2.5% |
+| JD.com | JD | **87.5%** | +20.5% | Aug 13 beat +11.7%, stock -7.3% |
+| Meta | META | **87.5%** | +11.0% | *Streak broken — Jul 29 miss; consensus since cut 6.97 -> 6.53* |
+| Marvell | MRVL | **87.5%** | +1.7% | 4 straight — Aug 27 in-line +1.0%, stock -10.3% into the Warsh tape |
+| Qualcomm | QCOM | **87.5%** | +4.0% | *Jul 29 in-line, stock crashed* |
+| Ross Stores | ROST | **87.5%** | +9.9% | 6 straight — Aug 20 beat +36.7% |
+| Urban Outfitters | URBN | **87.5%** | +22.2% | 2 straight — Aug 26 beat +63.2%, stock -5.0% |
+| Walmart | WMT | **87.5%** | +2.9% | 4 straight — Aug 20 beat +9.5%, stock -9.2% on comps |
+| Zoom | ZM | **87.5%** | +6.4% | 2 straight — Aug 25 beat +5.0%, stock -7.0% |
+| Box | BOX | **75.0%** | +9.6% | 3 straight — Aug 25 in-line +0.5%, stock +1.2% |
+| Intel | INTC | **75.0%** | n.m. | 4 straight — avg n.m. (small-base distortion) |
+| Netflix | NFLX | **75.0%** | +0.7% | 1 beat in a row |
+| Shopify | SHOP | **75.0%** | +35.4% | Aug 5 beat +5.0%, stock +19.6% |
+| J.M. Smucker | SJM | **75.0%** | +9.8% | 3 straight — Aug 26 beat +46.2%, stock +4.3% |
+| Target | TGT | **75.0%** | +9.7% | 5 straight — Aug 19 blowout +75.8% |
+| SentinelOne | S | **62.5%** | n.m. | *Aug 27 MISS -16.5%, stock -5.2% — avg n.m.* |
+| Uber | UBER | **62.5%** | n.m. | Aug 5 beat +41.0%, stock -2.1% — avg n.m. |
+| Boeing | BA | **50.0%** | n.m. | *Jul 28 miss — avg n.m. (negative-EPS base)* |
+| Home Depot | HD | **50.0%** | +1.1% | 3 straight — Aug 18 beat +4.0%, flat tape |
+| HP Inc | HPQ | **50.0%** | +4.3% | 4 straight — Aug 26 beat +20.0%, stock -2.9% |
+| Airbnb | ABNB | **42.9%** | +1.3% | Aug 6 beat +9.6%, stock +16.8% |
+| Dole | DOLE | **37.5%** | +10.2% | Aug 10 in-line +1.6%, stock -6.2% |
+| Tesla | TSLA | **37.5%** | +-5.3% | *Missed — Jul 22; 3-of-8 beats* |
+| Sea Ltd | SE | **25.0%** | +-1.8% | *Chronic EPS-misser with massive revenue beats* |
 
-**Cecil's Interpretation:** The perfect-streak club is now the largest it has been all season — and the least predictive. KEYS (100%, 8 straight), TJX (100%, 8 straight), and AAP (87.5%, 7 straight) all beat and were all punished, while TGT's 75% beat rate produced the season's biggest positive surprise. The 2026 lesson is now written three times in three weeks: **beat rates measure accounting vs. consensus; stock moves measure guidance vs. positioning.** What earns my trust: DE's sixth straight beat with an ag-cycle bottom confirmed, LOW's eighth straight with an honest (cut) guide, and BJ's eighth straight with membership income compounding. Into the Final Boss: NVDA's own 8-for-8 streak and +5.7% average surprise are real — but AMAT taught us what happens to perfect streaks that merely meet the narrative.
+**Cecil's Interpretation:** The perfect-streak club survived its hardest exam: NVDA (15 straight), CRWD (24 straight), OKTA (23 straight), WDAY (17 straight), ADSK (13 straight), DLTR (8 straight) all extended — but the extensions were worth radically different prices. CRM's +80.4% beat and +22.6% rally is the print of the season for the trust ledger: a forward-looking acquittal the market had priced as a recession. MRVL's 4th straight "beat" (+1.0%) was worthless — in-line is not a beat where the AI echo is concerned. The week's only dishonest print was SentinelOne's outright miss. My ledger into September: NVDA, CRM, DE, BJ, LOW, MSFT, AMZN earn trust through the Fed window; every apparel name now trades against a pre-lowered bar (PVH 2.00, FIVE 0.63) — beats there will be discounted before they print.
 
 ---
 
 ## IMPLIED MOVES
 
-> *Realized moves from the Aug 17–21 retail gauntlet are in. Live implied moves require external options feeds (CBOE, Bloomberg, OPRA) — flagged for manual refresh. Historical avg moves computed from Yahoo Finance price history over the last 8 earnings reactions (true reaction day convention).*
+> *Realized moves from the Aug 24–28 Final Boss week are in. Live implied moves require external options feeds (CBOE, Bloomberg, OPRA) — flagged for manual refresh. Historical avg moves computed from Yahoo Finance price history over the last 8 earnings reactions (true reaction day convention).*
 
 | Company | Ticker | Report Date | Stale Implied Move | Realized Move | Historical Avg Move | Signal |
 |---|---|---|---|---|---|---|
-| Advance Auto Parts | AAP | Aug 20 | *N/A* | **-24.55%** | ±16.4% | 🔥 1.5x even its hyper-vol norm — on a +28.7% BEAT |
-| Estee Lauder | EL | Aug 19 | *N/A* | **+16.30%** | ±10.2% | 🔥 1.6x norm — guidance raise earned the overshoot |
-| Walmart | WMT | Aug 20 | *N/A* | **-9.15%** | ±4.8% | 🔥 1.9x norm — the consumer verdict repriced in one session |
-| Keysight | KEYS | Aug 18 | *N/A* | **-6.32%** | ±7.4% | 🟡 Inside its norm — but the direction on a +23.8% beat is the season's signature |
-| Deere | DE | Aug 20 | *N/A* | **+6.94%** | ±6.3% | 🟢 In line — healthy confirmation move |
-| BJ's Wholesale | BJ | Aug 21 | *N/A* | **+5.61%** | ±5.9% | 🟢 In line — clean |
-| Ross Stores | ROST | Aug 20 | *N/A* | **+4.39%** | ±5.5% | 🟢 In line — orderly repricing |
-| Target | TGT | Aug 19 | *N/A* | **+4.28%** | ±6.8% | 🟢 BELOW its own norm on a +75.8% beat — the blowout was genuinely unexpected AND under-reacted; drift continued +8.5% by Friday |
-| TJX | TJX | Aug 19 | *N/A* | **-4.21%** | ±2.3% | 🔥 1.8x norm — beat-and-sold violence on a sleepy name |
-| Lowe's | LOW | Aug 19 | *N/A* | **+2.02%** | ±2.7% | 🟢 In line — guide cut capped the pop |
-| Home Depot | HD | Aug 18 | *N/A* | **-0.12%** | ±2.1% | 🟢 Dead calm — the most fully priced print of the week |
-| Sea Ltd | SE | Aug 11 | *N/A* | **+14.56%** | ±12.2% | 🔥 Above even SE's own violent norm — on an EPS MISS |
-| Applied Materials | AMAT | Aug 13 | *N/A* | **-5.12%** | ±2.2% | 🔥 2.3x its historical avg — beat-and-raise still punished |
-| JD.com | JD | Aug 13 | *N/A* | **-7.31%** | ±3.3% | 🔥 2.2x historical avg |
-| National Vision | EYE | Aug 12 | *N/A* | **-11.56%** | ±11.1% | 🟡 In line with its hyper-volatile norm — direction is the story |
-| Cisco | CSCO | Aug 12 | *N/A* | **+2.60%** | ±1.4% | 🟢 Modest overshoot of a sleepy norm |
-| Tesla | TSLA | Jul 22 | ~±8.5% | **-15.63%** | ±7.2% | 🔥 Realized exceeded implied by 2x |
-| Alphabet | GOOGL | Jul 22 | ~±5.5% | **-8.49%** | ±4.2% | 🔥 Realized exceeded implied |
-| Intel | INTC | Jul 23 | ~±7.0% | **-10.04%** | ±5.5% | 🔥 Realized exceeded implied |
-| Meta | META | Jul 29 | ~±6.0% | **-9.16%** | ±5.1% | 🔥 Realized exceeded implied |
-| Microsoft | MSFT | Jul 29 | ~±4.5% | **+14.68%** | ±3.8% | 🔥 Realized 3x implied |
-| Apple | AAPL | Jul 30 | ~±4.0% | **-8.66%** | ±3.5% | 🔥 Realized 2x implied |
-| Amazon | AMZN | Jul 30 | ~±5.5% | **+19.82%** | ±4.8% | 🔥 Realized 3.5x implied |
-| NVIDIA | NVDA | **Aug 26** | ~±8.0% (stale) | *Pending* | ±7.5% | 🔴 **THE FINAL BOSS — 4 days. Stale implied is a floor, not a ceiling** |
+| Abercrombie & Fitch | ANF | Aug 26 | *N/A* | **+35.67%** | ±14.5% | 🔥 2.5x even its hyper-vol norm — the season's biggest beat AND its biggest pay |
+| Okta | OKTA | Aug 26 | *N/A* | **+28.63%** | ±15.3% | 🔥 1.9x norm — identity budgets acquitted |
+| Salesforce | CRM | Aug 26 | *N/A* | **+22.58%** | ±6.8% | 🔥 3.3x norm — the acquittal repriced a recession thesis in one session |
+| CrowdStrike | CRWD | Aug 26 | *N/A* | **+20.50%** | ±6.4% | 🔥 3.2x norm — security verdict: alive |
+| Marvell | MRVL | Aug 27 | *N/A* | **-10.28%** | ±13.3% | 🟡 Inside its hyper-vol norm — but -10% on an IN-LINE print is the semis-echo warning |
+| PagerDuty | PD | Aug 27 | *N/A* | **+9.50%** | ±13.2% | 🟢 Inside norm — small-cap software acquitted |
+| NVIDIA | NVDA | Aug 26 | ~±8.0% (stale) | **+8.74%** | ±4.0% (fresh 8-reaction) | 🔥 **Realized 1.1x the stale implied and 2.2x its fresh norm — the Final Boss paid, then Friday's macro taxed -4.6%** |
+| Burlington | BURL | Aug 27 | *N/A* | **-7.64%** | ±6.9% | 🟡 ~1.1x norm — the off-price trap, second verse |
+| Zoom | ZM | Aug 25 | *N/A* | **-7.03%** | ±8.2% | 🟡 Inside norm — wrong direction on a beat |
+| Workday | WDAY | Aug 27 | *N/A* | **+5.76%** | ±6.1% | 🟢 In line — clean |
+| Urban Outfitters | URBN | Aug 26 | *N/A* | **-5.02%** | ±10.8% | 🟡 Inside its hyper-vol norm — direction is the story |
+| SentinelOne | S | Aug 27 | *N/A* | **-5.15%** | ±7.3% | 🟡 Inside norm — a miss priced as a miss, for once |
+| Best Buy | BBY | Aug 27 | *N/A* | **-4.44%** | ±7.7% | 🟢 Inside norm — beat-and-sold, orderly |
+| Dollar Tree | DLTR | Aug 27 | *N/A* | **-3.92%** | ±6.7% | 🟢 Calm — a +136% beat that nobody believed |
+| Autodesk | ADSK | Aug 27 | *N/A* | **-3.67%** | ±4.5% | 🟢 Inside norm |
+| J.M. Smucker | SJM | Aug 26 | *N/A* | **+4.34%** | ±6.6% | 🟢 Calm — staples stay sleepy |
+| HP Inc | HPQ | Aug 26 | *N/A* | **-2.92%** | ±4.7% | 🟢 Calm — hardware stays the weak flank |
+| Dollar General | DG | Aug 27 | *N/A* | **+2.53%** | ±6.2% | 🟢 Dead calm on a +23.5% beat |
+| Box | BOX | Aug 25 | *N/A* | **+1.18%** | ±6.8% | 🟢 Dead calm |
+| Williams-Sonoma | WSM | Aug 26 | *N/A* | **+1.15%** | ±6.3% | 🟢 Dead calm on a +37.9% beat |
+| **Broadcom** | **AVGO** | **Sep 2** | *N/A — external feed required* | *Pending* | **±10.8%** | 🔴 **THE SECOND BOSS — Wednesday. Post-MRVL, in-line is a sin; the bar is XPU backlog + networking + a forward guide** |
+| Dell | DELL | Sep 1 | *N/A* | *Pending* | ±11.6% | 🟡 AI-server echo of NVDA — backlog and ISG margin are the trade |
+| Lululemon | LULU | Sep 3 | *N/A* | *Pending* | ±11.3% | 🟡 Consensus re-based 1.80 -> 2.85; tariff math vs Americas comps |
+| Zscaler | ZS | Sep 3 | *N/A* | *Pending* | ±11.8% | 🟡 Security budgets third verdict — CRWD says alive, S says not uniform |
+| Adobe | ADBE | Sep 10 | *N/A* | *Pending* | ±7.3% | 🟡 Into the CPI morning |
+| Oracle | ORCL | Sep 10 | *N/A* | *Pending* | ±12.4% | 🟡 Last enterprise voice before FOMC |
 
-**Marky's Interpretation:** The gauntlet week split the realized-vol regime in two. Mega-caps and narrative names still overshoot (WMT 1.9x, EL 1.6x, AAP 1.5x, TJX 1.8x), but the routine prints came in dead calm (HD -0.12%, LOW +2.0%) — the market is learning to price the ordinary and only detonate on the extraordinary. That is NOT a calmer regime; it is a more binary one. Into NVDA with a stale ~±8.0% implied and a ±7.5% historical norm: the 2026 season says realized runs 2–3.5x implied on apex prints, and Wednesday carries a macro stack (core PCE that morning) no prior print had. Price the tails accordingly — both of them.
+**Marky's Interpretation:** The binary regime is now the law of the tape: routine prints came in dead calm (WSM +1.2% on a +37.9% beat, DG +2.5% on +23.5%, BOX +1.2%), while narrative verdicts detonated in clusters — Wednesday Aug 26 produced four double-digit repricings in one session (CRM, OKTA, CRWD, ANF) and Friday delivered the counter-lesson (MRVL -10.3% on in-line). Realized vol ran 2–3.3x norms on every narrative name and ~0.3–0.7x on the routine ones. Into AVGO with a fresh ±10.8% norm and no live implied feed: price both tails — a corroborating guide extends the broadening trade, an MRVL-style meet-the-number print opens the post-NVDA air pocket.
 
 ---
 
-## NOTABLE SURPRISES — THE RETAIL GAUNTLET (Aug 17–21)
+## NOTABLE SURPRISES — THE FINAL BOSS WEEK (Aug 24–28)
 
-> *What happened when the late-cycle retail wave met a consumer that had just flinched? EPS data via Yahoo Finance (2026-08-22); stock reactions are close-to-close on the true reaction day (next session for AMC reporters KEYS/ROST).*
+> *What happened when the densest week of the season met a market already braced for a hawkish Fed pivot? EPS data via Yahoo Finance (2026-08-30); stock reactions are close-to-close on the true reaction day (next session for AMC reporters).*
 
-### Tuesday, August 18 — The Calm and the Trap
-
-| Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
-|---|---|---|---|---|---|---|---|
-| **Home Depot** | **HD** | Aug 18 | $4.73 | **$4.92** | **+4.0%** | **-0.12%** | **The most fully priced print of the week — comps +1.7%, FY26 reaffirmed, and the tape shrugged. In 2026, a clean in-line beat is a non-event.** |
-| **Keysight** | **KEYS** | Aug 18 | $2.48 | **$3.07** | **+23.8%** 🔥 | **-6.32%** 💥 | **THE KEYS TRAP — 8 straight beats and a +23.8% blowout met two straight down sessions (-5.6%, -6.3% = -11.6%). Even the AI-datacenter test-equipment read-through couldn't save a fully priced multiple.** |
-
-### Wednesday, August 19 — The Blowout and the Split Verdict
+### Tuesday, August 25 — The Appetizer
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Target** | **TGT** | Aug 19 | $2.34 | **$4.11** | **+75.8%** 🚀 | **+4.28%** | **THE BLOWOUT OF THE SEASON — last week's +13.3% consensus revision was the tell. Biggest beat of 2026, and it STILL under-reacted vs its ±6.8% norm on day one (+8.5% by Friday). Proof the market can still be surprised.** |
-| **Estee Lauder** | **EL** | Aug 19 | $0.32 | **$0.39** | **+22.1%** 🔥 | **+16.30%** 🚀 | **The cleanest print of the week — beat, FY27 margin guide RAISED, Puig overhang dead. Guidance is the currency; a raise buys a +16% day even in this regime.** |
-| **Lowe's** | **LOW** | Aug 19 | $4.22 | **$4.40** | **+4.3%** | **+2.02%** | **Beat with an asterisk — 8th straight beat, but the FY26 comps guide was cut to flat. The pop faded within two sessions.** |
-| **TJX** | **TJX** | Aug 19 | $1.19 | **$1.36** | **+14.5%** | **-4.21%** 💥 | **Beat-and-sold — comps +4% above plan, Marmaxx +1%, and the stock dumped 1.8x its norm to RSI ~21. Off-price demand confirmed; the raise wasn't big enough.** |
+| **Zoom** | **ZM** | Aug 25 | $1.48 | **$1.55** | **+5.0%** | **-7.03%** 💥 | **Beat-and-sold — enterprise revenue and AI Companion monetization didn't matter; no-moat software gets no credit in this tape.** |
+| **Box** | **BOX** | Aug 25 | $0.40 | **$0.40** | **+0.5%** | **+1.18%** | **In-line and calm — the mid-cap software read stayed neutral ahead of Wednesday's verdicts.** |
 
-### Thursday, August 20 — The Verdict and the Detonation
+### Wednesday, August 26 — The Final Boss and the Software Acquittal
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Walmart** | **WMT** | Aug 20 | $0.74 | **$0.81** | **+9.5%** | **-9.15%** 💥 | **THE WMT VERDICT — refund-aided EPS beat, but US comps +2.6% vs ~3.8% expected, Q3 guide light ($0.62–0.64), >$2B fuel costs, and the CFO said "softer consumer" out loud. 14 PT cuts Friday. The macro consumer question stays OPEN. (Issue #55)** |
-| **Advance Auto Parts** | **AAP** | Aug 20 | $0.80 | **$1.03** | **+28.7%** 🔥 | **-24.55%** 💥 | **THE AAP DETONATION — the season's most violent paradox. +28.7% beat, -24.6% stock. Turnaround narratives do not survive on backward-looking beats; the market wanted proof of 2027, not 2026.** |
-| **Deere** | **DE** | Aug 20 | $4.71 | **$5.10** | **+8.3%** | **+6.94%** 🚀 | **Clean beat-and-rally — the ag-cycle bottom call held, and the rural-economy read turned constructive for the first time in 2026.** |
-| **Ross Stores** | **ROST** | Aug 20 | $1.95 | **$2.66** | **+36.7%** 🔥 | **+4.39%** | **Big beat, orderly rally — off-price inventory win. Combined with TGT and BJ, the value-channel consumer is confirmed STRONG even as WMT says softer.** |
+| **Abercrombie & Fitch** | **ANF** | Aug 26 | $1.97 | **$4.17** | **+111.9%** 🚀 | **+35.67%** 🚀 | **THE ANF ROCKET — the season's biggest beat and it was PAID in full. Hollister/A&F comps plus credible Section 338 tariff mitigation. Mall apparel's first clean win of the tariff regime.** |
+| **Williams-Sonoma** | **WSM** | Aug 26 | $2.06 | **$2.84** | **+37.9%** 🔥 | **+1.15%** | **Big beat, dead-calm tape — the high-end home consumer print was fully priced.** |
+| **J.M. Smucker** | **SJM** | Aug 26 | $2.22 | **$3.24** | **+46.2%** 🔥 | **+4.34%** | **Staples pricing power confirmed — coffee pricing and pet volume both delivered.** |
+| **NVIDIA** | **NVDA** | Aug 26 | $2.09 | **$2.22** | **+6.16%** | **+8.74%** 🚀 | **THE FINAL BOSS PAID — 15th straight beat; data center and Blackwell carried, the China/H20 line did not worsen. +8.7% reaction day, -4.6% Friday on the Warsh tape (two-day +3.8%). The AI trade survived its moment of truth.** |
+| **Salesforce** | **CRM** | Aug 26 | $3.27 | **$5.90** | **+80.4%** 🚀 | **+22.58%** 🚀 | **THE SOFTWARE ACQUITTAL — Agentforce ARR and cRPO detonated the enterprise-software recession thesis in one session, and the rally HELD Friday (+1.6%) when the macro turned. The print of the season for the trust ledger.** |
+| **CrowdStrike** | **CRWD** | Aug 26 | $0.29 | **$0.31** | **+6.4%** | **+20.50%** 🚀 | **Monster repricing on a modest beat — Falcon Flex and module expansion say security spend is ALIVE. -4.2% Friday with the tape.** |
+| **Okta** | **OKTA** | Aug 26 | $0.96 | **$1.05** | **+8.9%** | **+28.63%** 🚀 | **Biggest move of the week — identity budgets acquitted. -3.9% Friday with the tape.** |
+| **HP Inc** | **HPQ** | Aug 26 | $0.69 | **$0.83** | **+20.0%** 🔥 | **-2.92%** | **Beat-and-sold — AI-PC mix couldn't pay; hardware remains the weak tech flank.** |
+| **Urban Outfitters** | **URBN** | Aug 26 | $1.70 | **$2.78** | **+63.2%** 🔥 | **-5.02%** 💥 | **Paradox — huge beat, sold anyway. The market wanted the holiday guide, not the quarter.** |
 
-### Friday, August 21 — The Club-Channel Rebuttal
+### Thursday, August 27 — The Low-Income Cross-Exam and the Semis Warning
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **BJ's Wholesale** | **BJ** | Aug 21 | $1.17 | **$1.36** | **+16.5%** 🔥 | **+5.61%** 🚀 | **Clean beat-and-rally — membership income compounding, club traffic strong. A direct rebuttal to the WMT crack thesis: the consumer is bifurcating, not collapsing.** |
+| **Dollar General** | **DG** | Aug 27 | $2.01 | **$2.48** | **+23.5%** 🔥 | **+2.53%** | **Trade-down traffic confirmed — the low-income consumer proxy REBUTS the WMT crack thesis a second time. Bifurcation, not crack — now with a second week of evidence.** |
+| **Dollar Tree** | **DLTR** | Aug 27 | $1.14 | **$2.70** | **+136.1%** 🚀 | **-3.92%** 💥 | **THE DLTR PARADOX — the week's biggest beat, sold -3.9%. The market does not believe the multi-price rollout math. A beat nobody believes is a positioning statement, not an earnings statement.** |
+| **Burlington** | **BURL** | Aug 27 | $2.19 | **$2.96** | **+35.4%** 🔥 | **-7.64%** 💥 | **THE BURL TRAP — off-price beat-and-sold, the TJX song's second verse. The raise bar, not the beat bar, is the off-price trade now.** |
+| **Best Buy** | **BBY** | Aug 27 | $1.38 | **$1.47** | **+6.5%** | **-4.44%** 💥 | **Beat-and-sold — the electronics consumer stays soft; AI-device attach is not yet a cycle.** |
+| **Autodesk** | **ADSK** | Aug 27 | $3.12 | **$3.30** | **+5.6%** | **-3.67%** | **13th straight beat, no credit — sold into the Friday tape with the rest of the no-guide names.** |
+| **Workday** | **WDAY** | Aug 27 | $2.61 | **$2.75** | **+5.3%** | **+5.76%** | **Clean beat-and-rally — subscription backlog intact; the software acquittal's second confirmation, and it rallied even on Warsh Friday.** |
+| **Marvell** | **MRVL** | Aug 27 | $0.93 | **$0.94** | **+1.0%** | **-10.28%** 💥 | **THE MRVL WARNING — in-line and crushed into the Friday macro tape. Post-NVDA, merely meeting is a sin for the AI echo. This is the exact risk AVGO carries Wednesday.** |
+| **PagerDuty** | **PD** | Aug 27 | $0.31 | **$0.32** | **+4.4%** | **+9.50%** | **Small-cap software probe: acquitted.** |
+| **SentinelOne** | **S** | Aug 27 | -$0.23 | **-$0.27** | **-16.5%** 💥 | **-5.15%** 💥 | **THE WEEK'S ONLY CLEAN MISS — the security second opinion says spend is NOT uniform: CRWD's win is share, not tide.** |
 
-### The Key Lesson (post-Retail-Gauntlet):
+### The Key Lesson (post-Final-Boss):
 
-The consumer verdict is **bifurcation, not crack**: TGT (+75.8% beat), ROST (+36.7%), BJ (+16.5%), and EL (+22.1% with a raise) all confirm value/club/beauty/off-price strength — while WMT's comp miss and AAP's detonation show zero tolerance for stale narratives. The season's law now has a corollary: **backward-looking beats are worthless (KEYS, AAP, TJX); forward-looking confirmation is everything (EL, DE, TGT, BJ).** Into NVDA Wednesday: the $2.09 consensus is not the bar. The bar is guidance above $91B+2%, gross margin holding ~75%, and a China line that doesn't worsen.
+The season's law completed itself: **forward-looking acquittals get paid at any multiple (NVDA, CRM, CRWD, OKTA, ANF); backward-looking or in-line prints get executed at any multiple (MRVL, DLTR, BURL, URBN, ZM).** The consumer question is now settled as bifurcation with a tariff twist — value/trade-down confirmed (DG, and TGT/ROST/BJ before it), mall apparel split on tariff-mitigation credibility (ANF believed; DLTR/BURL/URBN not). The enterprise-software recession thesis is dead until the appeals court (MDB, ZS, DOCU, ADBE, ORCL) says otherwise. Into AVGO Wednesday: **the $3.24 consensus is not the bar. The bar is XPU backlog, AI networking growth, and a guide that corroborates NVDA — because MRVL just showed what happens to the echo when it merely meets.**
+
+---
+
+## NOTABLE SURPRISES — PRIOR WEEKS (Aug 17–21)
+
+> *The retail gauntlet week: bifurcation confirmed. EPS data via Yahoo Finance (2026-08-22); stock reactions are close-to-close on the true reaction day.*
+
+| Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
+|---|---|---|---|---|---|---|---|
+| **Home Depot** | **HD** | Aug 18 | $4.73 | **$4.92** | **+4.0%** | **-0.12%** | **The most fully priced print of the week — comps +1.7%, FY26 reaffirmed, tape shrugged.** |
+| **Keysight** | **KEYS** | Aug 18 | $2.48 | **$3.07** | **+23.8%** 🔥 | **-6.32%** 💥 | **THE KEYS TRAP — 8 straight beats, +23.8% blowout, two straight down sessions. Fully priced is fully priced.** |
+| **Target** | **TGT** | Aug 19 | $2.34 | **$4.11** | **+75.8%** 🚀 | **+4.28%** | **THE BLOWOUT OF THE SEASON (then) — pre-print consensus revision was the tell; drift continued +8.5% by Friday.** |
+| **Estee Lauder** | **EL** | Aug 19 | $0.32 | **$0.39** | **+22.1%** 🔥 | **+16.30%** 🚀 | **Beat + FY27 margin guide RAISED — guidance is the currency.** |
+| **Lowe's** | **LOW** | Aug 19 | $4.22 | **$4.40** | **+4.3%** | **+2.02%** | **Beat with an asterisk — FY26 comps guide cut to flat.** |
+| **TJX** | **TJX** | Aug 19 | $1.19 | **$1.36** | **+14.5%** | **-4.21%** 💥 | **Beat-and-sold — the raise wasn't big enough.** |
+| **Walmart** | **WMT** | Aug 20 | $0.74 | **$0.81** | **+9.5%** | **-9.15%** 💥 | **THE WMT VERDICT — comps +2.6% vs ~3.8% expected; "softer consumer." (Issue #55)** |
+| **Advance Auto Parts** | **AAP** | Aug 20 | $0.80 | **$1.03** | **+28.7%** 🔥 | **-24.55%** 💥 | **THE AAP DETONATION — the turnaround narrative died on the print.** |
+| **Deere** | **DE** | Aug 20 | $4.71 | **$5.10** | **+8.3%** | **+6.94%** 🚀 | **Clean beat-and-rally — ag-cycle bottom confirmed.** |
+| **Ross Stores** | **ROST** | Aug 20 | $1.95 | **$2.66** | **+36.7%** 🔥 | **+4.39%** | **Off-price inventory win — value-channel consumer confirmed strong.** |
+| **BJ's Wholesale** | **BJ** | Aug 21 | $1.17 | **$1.36** | **+16.5%** 🔥 | **+5.61%** 🚀 | **Club-channel rebuttal to the WMT crack thesis.** |
 
 ---
 
 ## NOTABLE SURPRISES — PRIOR WEEKS (Aug 10–14)
 
-> *The quiet week that wasn't. AMAT's actual is now in via yfinance: $3.50 vs $3.39 consensus (+3.2% beat) — the beat-and-raise-and-fade stands. Stock reactions are close-to-close on the true reaction day.*
+> *The quiet week that wasn't. Stock reactions are close-to-close on the true reaction day.*
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Sea Ltd** | **SE** | Aug 11 | ~$0.86 | **$0.70** | **-18.6%** 💥 | **+14.56%** 🚀 | **THE SE PARADOX — big EPS miss, MASSIVE rally. Revenue +48.1% to $7.8B; the market bought compounding growth and ignored the tax-driven bottom-line miss.** |
-| **Cisco** | **CSCO** | Aug 12 | $1.17 | **$1.22** | **+4.4%** | **+2.60%** | **The week's ONLY clean print — 8th straight beat, modest rally.** |
+| **Sea Ltd** | **SE** | Aug 11 | ~$0.86 | **$0.70** | **-18.6%** 💥 | **+14.56%** 🚀 | **THE SE PARADOX — big EPS miss, massive rally on revenue +48.1%.** |
+| **Cisco** | **CSCO** | Aug 12 | $1.17 | **$1.22** | **+4.4%** | **+2.60%** | **The week's only clean print — 8th straight beat.** |
 | **National Vision** | **EYE** | Aug 12 | $0.18 | **$0.25** | **+37.4%** 🔥 | **-11.56%** 💥 | **Small-cap beat-and-crash — crowded positioning made the beat the exit liquidity.** |
-| **Applied Materials** | **AMAT** | Aug 13 | $3.39 | **$3.50** | **+3.2%** | **-5.12%** 💥 | **Beat-and-raise (actual now confirmed), still sold 2.3x its historical average move. Priced for perfection is its own risk.** |
+| **Applied Materials** | **AMAT** | Aug 13 | $3.39 | **$3.50** | **+3.2%** | **-5.12%** 💥 | **Beat-and-raise, still sold 2.3x its historical average move.** |
 | **JD.com** | **JD** | Aug 13 | RMB5.63 | **RMB6.29** (non-GAAP) | **+11.7%** | **-7.31%** 💥 | **Beat and dropped — revenue -2.9% YoY. No EPS beat survives a shrinking top line.** |
 | **Dole** | **DOLE** | Aug 10 | $0.45 | **$0.46** | **+1.6%** | **-6.15%** | **In-line and sold — produce margins under pressure.** |
 
@@ -308,81 +335,81 @@ The consumer verdict is **bifurcation, not crack**: TGT (+75.8% beat), ROST (+36
 
 ## NOTABLE SURPRISES — PRIOR WEEKS (Aug 4–7)
 
-> *The post-Super Bowl follow-through wave. See the 2026-08-08 Earnings Surveillance for full commentary. Stock reactions are close-to-close moves.*
+> *The post-Super Bowl follow-through wave. Stock reactions are close-to-close moves.*
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **AMD** | **AMD** | Aug 4 | $1.61 | **$1.66** | **+3.1%** | **+1.24%** | **In-line beat, in-line rally — MI300 read stable, market waiting for NVDA confirmation.** |
-| **Disney** | **DIS** | Aug 5 | $1.85 | **$2.06** | **+11.4%** | **+6.62%** 🚀 | **Clean beat and rally — parks strong, streaming profitable, ESPN stable.** |
-| **Shopify** | **SHOP** | Aug 5 | $0.40 | **$0.42** | **+5.0%** | **+19.58%** 🚀 | **THE SHOP SURGE — modest beat, biblical rally on GMV + take rate inflection.** |
-| **Uber** | **UBER** | Aug 5 | $0.83 | **$1.17** | **+41.0%** 🔥 | **-2.11%** 💥 | **THE UBER PARADOX — massive beat, stock dropped on guidance/narrative disappointment.** |
+| **AMD** | **AMD** | Aug 4 | $1.61 | **$1.66** | **+3.1%** | **+1.24%** | **In-line beat, in-line rally — MI300 read stable.** |
+| **Disney** | **DIS** | Aug 5 | $1.85 | **$2.06** | **+11.4%** | **+6.62%** 🚀 | **Clean beat and rally — parks strong, streaming profitable.** |
+| **Shopify** | **SHOP** | Aug 5 | $0.40 | **$0.42** | **+5.0%** | **+19.58%** 🚀 | **THE SHOP SURGE — GMV + take rate inflection.** |
+| **Uber** | **UBER** | Aug 5 | $0.83 | **$1.17** | **+41.0%** 🔥 | **-2.11%** 💥 | **THE UBER PARADOX — massive beat, guidance disappointment.** |
 | **Airbnb** | **ABNB** | Aug 6 | $1.25 | **$1.37** | **+9.6%** | **+16.77%** 🚀 | **Clean beat and rally — travel demand resilient.** |
-| **Datadog** | **DDOG** | Aug 6 | $0.58 | **$0.65** | **+12.1%** | **-17.39%** 💥 | **THE DDOG DISASTER — beat and crashed; enterprise software recession signal. Post-mortem: largest customer (believed OpenAI) flagged Q3 usage reduction; FCF margin 29% -> 25%.** |
+| **Datadog** | **DDOG** | Aug 6 | $0.58 | **$0.65** | **+12.1%** | **-17.39%** 💥 | **THE DDOG DISASTER — enterprise software recession signal (acquitted by CRM/OKTA/CRWD on Aug 26).** |
 
 ---
 
 ## NOTABLE SURPRISES — EARLIER (Jul 27 – Aug 3)
 
-> *For completeness, the Jul 27–Aug 3 prints (the Super Bowl) are retained below; the Jul 21–25 lead-up prints are archived in the 2026-08-08 and 2026-08-15 updates. See the 2026-08-02 Earnings Surveillance for full commentary.*
+> *For completeness, the Jul 27–Aug 3 prints (the Super Bowl) are retained below; see the 2026-08-02 Earnings Surveillance for full commentary.*
 
 ### The Mega-Cap Gauntlet (Jul 29–30)
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Microsoft** | **MSFT** | Jul 29 | $4.24 | **$4.74** | **+11.8%** | **+14.68%** 🚀 | **THE CLEAN WINNER — Azure growth, AI ARR acceleration, and strong guidance. The only mega-cap where beat + guidance + narrative all aligned.** |
-| **Meta Platforms** | **META** | Jul 29 | $7.22 | **$6.18** | **-14.4%** 💥 | **-9.16%** 💥 | **THE NARRATIVE COLLAPSE — ad revenue decelerated, AI capex is a money pit, and the stock was punished.** |
-| **Lam Research** | **LRCX** | Jul 29 | $1.68 | **$1.82** | **+8.3%** | **+10.43%** 🚀 | **Clean beat and rally — etch demand is strong, memory is recovering, and the semi equipment cycle is intact.** |
-| **Qualcomm** | **QCOM** | Jul 29 | $2.22 | **$2.21** | **-0.5%** | **-6.93%** 💥 | **In-line and crashed — smartphone chip demand is soft, automotive is not yet material, and guidance disappointed.** |
-| **Starbucks** | **SBUX** | Jul 29 | $0.65 | **$0.85** | **+30.8%** 🔥 | **+2.67%** | **Massive beat, modest rally — same-store sales surprised to the upside, but the market is skeptical about sustainability.** |
-| **Vulcan Materials** | **VMC** | Jul 29 | $2.47 | **$2.59** | **+4.9%** | **-5.96%** 💥 | **Beat and crashed — aggregate pricing is under pressure and infrastructure spending is not translating to volume.** |
-| **Procter & Gamble** | **PG** | Jul 29 | $1.41 | **$1.43** | **+1.4%** | **-3.30%** | **In-line and sold — volume is soft, pricing power is fading, and the staples safe-haven trade is overcrowded.** |
-| **Public Storage** | **PSA** | Jul 29 | $2.53 | **$2.45** | **-3.2%** | **-3.94%** | **Missed on EPS — self-storage demand is cooling, and rate growth is slowing.** |
-| **Apple** | **AAPL** | Jul 30 | $1.89 | **$2.02** | **+6.9%** | **-8.66%** 💥 | **THE BEAT-THAT-DIDN'T-MATTER — Apple beat EPS but the stock crashed. iPhone AI cycle is not yet visible, China is weak, and the "AI consumer upgrade" thesis is premature.** |
-| **Amazon** | **AMZN** | Jul 30 | $1.83 | **$5.75** | **+214%** 🚀 | **+19.82%** 🚀 | **THE BIBLICAL BEAT — EPS of $5.75 demolished the $1.83 consensus. AWS margins expanded, retail finally showed leverage, and the market repriced Amazon's earnings power.** |
-| **Valero Energy** | **VLO** | Jul 30 | $10.13 | **$12.54** | **+23.8%** 🔥 | **+4.24%** | **Big beat, modest rally — refining margins are strong but the market is pricing in peak cycle.** |
-| **Bristol Myers** | **BMY** | Jul 30 | $1.60 | **$2.04** | **+27.5%** 🔥 | **+3.50%** | **Beat and rallied modestly — Karuna integration is tracking, Opdivo/Revlimid are stable.** |
-| **Martin Marietta** | **MLM** | Jul 30 | $4.76 | **$5.00** | **+5.0%** | **-7.82%** 💥 | **Beat and crashed — same story as VMC. Infrastructure spending is not flowing to aggregates.** |
-| **Southern Company** | **SO** | Jul 30 | $1.01 | **$1.13** | **+11.9%** | **-1.57%** | **Beat and sold — utility earnings are stable but the market wants growth.** |
-| **American Electric** | **AEP** | Jul 30 | $1.48 | **$1.36** | **-8.1%** | **-1.20%** | **Missed modestly — rate base growth is slowing, and transmission investment is not yet translating to earnings.** |
+| **Microsoft** | **MSFT** | Jul 29 | $4.24 | **$4.74** | **+11.8%** | **+14.68%** 🚀 | **THE CLEAN WINNER — Azure growth, AI ARR acceleration.** |
+| **Meta Platforms** | **META** | Jul 29 | $7.22 | **$6.18** | **-14.4%** 💥 | **-9.16%** 💥 | **THE NARRATIVE COLLAPSE — AI capex on trial (consensus since cut to $6.53).** |
+| **Lam Research** | **LRCX** | Jul 29 | $1.68 | **$1.82** | **+8.3%** | **+10.43%** 🚀 | **Clean beat and rally — semi equipment cycle intact.** |
+| **Qualcomm** | **QCOM** | Jul 29 | $2.22 | **$2.21** | **-0.5%** | **-6.93%** 💥 | **In-line and crashed — smartphone chip demand soft.** |
+| **Starbucks** | **SBUX** | Jul 29 | $0.65 | **$0.85** | **+30.8%** 🔥 | **+2.67%** | **Massive beat, modest rally.** |
+| **Vulcan Materials** | **VMC** | Jul 29 | $2.47 | **$2.59** | **+4.9%** | **-5.96%** 💥 | **Beat and crashed — aggregates pricing under pressure.** |
+| **Procter & Gamble** | **PG** | Jul 29 | $1.41 | **$1.43** | **+1.4%** | **-3.30%** | **In-line and sold — staples safe-haven overcrowded.** |
+| **Public Storage** | **PSA** | Jul 29 | $2.53 | **$2.45** | **-3.2%** | **-3.94%** | **Missed — self-storage cooling.** |
+| **Apple** | **AAPL** | Jul 30 | $1.89 | **$2.02** | **+6.9%** | **-8.66%** 💥 | **THE BEAT-THAT-DIDN'T-MATTER — iPhone AI cycle not yet visible.** |
+| **Amazon** | **AMZN** | Jul 30 | $1.83 | **$5.75** | **+214%** 🚀 | **+19.82%** 🚀 | **THE BIBLICAL BEAT — earnings power repriced (stock has since reclaimed $260).** |
+| **Valero Energy** | **VLO** | Jul 30 | $10.13 | **$12.54** | **+23.8%** 🔥 | **+4.24%** | **Big beat, modest rally — peak-cycle pricing.** |
+| **Bristol Myers** | **BMY** | Jul 30 | $1.60 | **$2.04** | **+27.5%** 🔥 | **+3.50%** | **Beat — Karuna integration tracking.** |
+| **Martin Marietta** | **MLM** | Jul 30 | $4.76 | **$5.00** | **+5.0%** | **-7.82%** 💥 | **Beat and crashed — infrastructure not flowing to aggregates.** |
+| **Southern Company** | **SO** | Jul 30 | $1.01 | **$1.13** | **+11.9%** | **-1.57%** | **Beat and sold — market wants growth.** |
+| **American Electric** | **AEP** | Jul 30 | $1.48 | **$1.36** | **-8.1%** | **-1.20%** | **Missed modestly — rate base growth slowing.** |
 
 ### Energy Heavyweights (Jul 31)
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **ExxonMobil** | **XOM** | Jul 31 | $3.63 | **$4.11** | **+13.2%** | *See prior update* | **Strong beat on production and Permian volumes. Energy is delivering but the market is pricing in peak cycle.** |
-| **Chevron** | **CVX** | Jul 31 | $5.58 | **$6.06** | **+8.6%** | *See prior update* | **Beat on Tengiz ramp and Permian growth. Dividend safety is confirmed.** |
-| **AbbVie** | **ABBV** | Jul 31 | $3.61 | **$3.65** | **+1.1%** | *See prior update* | **In-line — Humira erosion continues, but Skyrizi/Rinvoq are tracking.** |
-| **Colgate-Palmolive** | **CL** | Jul 31 | $0.95 | **$0.99** | **+4.2%** | *See prior update* | **Modest beat — pricing power in staples is fading, but volume is stable.** |
-| **Linde** | **LIN** | Jul 31 | $4.12 | **$4.15** | **+0.7%** | *See prior update* | **In-line — industrial gas pricing is stable, hydrogen is a 2027 story.** |
+| **ExxonMobil** | **XOM** | Jul 31 | $3.63 | **$4.11** | **+13.2%** | *See prior update* | **Strong beat on production and Permian volumes.** |
+| **Chevron** | **CVX** | Jul 31 | $5.58 | **$6.06** | **+8.6%** | *See prior update* | **Beat on Tengiz ramp and Permian growth.** |
+| **AbbVie** | **ABBV** | Jul 31 | $3.61 | **$3.65** | **+1.1%** | *See prior update* | **In-line — Skyrizi/Rinvoq tracking.** |
+| **Colgate-Palmolive** | **CL** | Jul 31 | $0.95 | **$0.99** | **+4.2%** | *See prior update* | **Modest beat — staples pricing fading.** |
+| **Linde** | **LIN** | Jul 31 | $4.12 | **$4.15** | **+0.7%** | *See prior update* | **In-line — hydrogen is a 2027 story.** |
 
 ### The Lead-Up (Jul 27–28)
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Nucor** | **NUE** | Jul 27 | $4.53 | **$4.84** | **+6.8%** | **+7.30%** 🚀 | **Beat and rallied — steel cycle is still strong, scrap costs are manageable, and the infrastructure tailwind is real.** |
-| **Welltower** | **WELL** | Jul 27 | $0.65 | **$0.54** | **-16.9%** 💥 | **-3.37%** | **Missed on EPS — senior housing occupancy is stabilizing but not accelerating.** |
-| **Ford** | **F** | Jul 28 | $0.35 | **$0.42** | **+20.0%** 🔥 | **+4.09%** | **Beat on vehicle sales and ICE margins. EV losses are still a drag, but the turnaround is tracking.** |
-| **Coca-Cola** | **KO** | Jul 28 | $0.93 | **$0.97** | **+4.3%** | **+5.96%** | **Beat and rallied — volume and pricing both held. Emerging markets are the growth engine.** |
-| **UPS** | **UPS** | Jul 28 | $1.66 | **$1.76** | **+6.0%** | **-7.43%** 💥 | **Beat and crashed — package volume is soft, freight is weakening, and the e-commerce slowdown is real.** |
-| **Boeing** | **BA** | Jul 28 | -$0.31 | **-$0.76** | **-145%** 💥 | **+1.19%** | **Missed but stock barely moved — the market is pricing in the turnaround, not the quarterly print.** |
-| **American Tower** | **AMT** | Jul 28 | $1.55 | **$1.87** | **+20.6%** 🔥 | **+7.51%** 🚀 | **Massive beat and rally — tenant leasing is accelerating, international growth is strong, and the tower REIT story is intact.** |
+| **Nucor** | **NUE** | Jul 27 | $4.53 | **$4.84** | **+6.8%** | **+7.30%** 🚀 | **Beat and rallied — steel cycle strong.** |
+| **Welltower** | **WELL** | Jul 27 | $0.65 | **$0.54** | **-16.9%** 💥 | **-3.37%** | **Missed — senior housing stabilizing, not accelerating.** |
+| **Ford** | **F** | Jul 28 | $0.35 | **$0.42** | **+20.0%** 🔥 | **+4.09%** | **Beat on ICE margins; EV losses still a drag.** |
+| **Coca-Cola** | **KO** | Jul 28 | $0.93 | **$0.97** | **+4.3%** | **+5.96%** | **Beat and rallied — volume and pricing held.** |
+| **UPS** | **UPS** | Jul 28 | $1.66 | **$1.76** | **+6.0%** | **-7.43%** 💥 | **Beat and crashed — freight weakening.** |
+| **Boeing** | **BA** | Jul 28 | -$0.31 | **-$0.76** | **-145%** 💥 | **+1.19%** | **Missed, barely moved — turnaround priced, not the print.** |
+| **American Tower** | **AMT** | Jul 28 | $1.55 | **$1.87** | **+20.6%** 🔥 | **+7.51%** 🚀 | **Massive beat and rally — tower REIT story intact.** |
 
 ---
 
-## COUNCIL READ — The Verdict Is Bifurcation
+## COUNCIL READ — The Software Acquittal
 
-**Ophelia:** *"The gauntlet answered the wrong question beautifully and the right question ambiguously. Wrong question: 'is the consumer cracking?' — no uniform crack exists; TGT beat by three-quarters, BJ's club traffic compounded, EL raised, ROST confirmed off-price strength. Right question: 'is the consumer bifurcating?' — emphatically yes, and WMT's CFO said 'softer consumer' out loud while comps printed +2.6% against +3.8% expected. A bifurcated consumer is a late-cycle consumer, and it meets a market holding three broken regime flags, a 10Y at a 52-week-high close of 4.738%, and a CAUTION register. Now the tides stack: core PCE Wednesday morning (cons 3.3% YoY), NVDA Wednesday night, Warsh Friday at 10 AM. My cash stays elevated. I add nothing before the triple gate clears — a hot PCE with a merely-in-line NVDA is the September storm scenario, and no single print this week pays me to front-run it."*
+**Ophelia:** *"The Final Boss cleared and the tide turned hawkish in the same week — that is the whole tape. NVDA beat, the AI trade survived, enterprise software was acquitted by CRM/OKTA/CRWD in a single session, and yet SPY managed only +0.5% on the week because Friday's Warsh shock (2Y ~4.34%, September hike odds ~54–60% per the canary and financials wikis) taxed every acquittal rally except CRM's. My regime flags stand: a market that can only rally on earnings acquittals and fades on macro is a market renting its conviction. The gates now stack cleanly: jobs Friday Sep 4, AVGO Wednesday, CPI ~Sep 10–11, FOMC Sep 15–16. Cash stays elevated; the only earnings risk I respect before the Fed is AVGO, because MRVL just demonstrated that the echo trade has no floor on a meet."*
 
-**Marky:** *"Four days. NVDA closed $214.72 — down -4.6% on the week, bruised but above my $210 line, with consensus drifting UP to $2.09 and ~$92.1B, above the $91B±2% guide band. The whole complex de-risked into the print: SMH -4.7% W/W, four straight lower closes, and not one semis name made a stand. That's either the healthiest pre-earnings setup of 2026 — fear into a catalyst — or the smart money leaving early. The week's tape taught two lessons. One: the market only pays for the forward — EL raised and went +16.3%, DE confirmed a bottom and went +6.9%, while KEYS beat +23.8% backward and lost -11.6% in two sessions. Two: realized vol is binary now — routine prints come in dead calm (HD -0.12%) and narrative prints detonate (AAP -24.6% on a BEAT, WMT -9.2% at 1.9x its norm). Wednesday's reaction day also has to digest a core PCE print. The stale implied ~±8.0% is the floor; the season says 2–3.5x is the regime. The implied move is the tax — and this week the narrative is still the executioner."*
+**Marky:** *"Wednesday Aug 26 was the biggest single-session repricing of the season — CRM +22.6%, OKTA +28.6%, CRWD +20.5%, NVDA +8.7% — and Friday took back the beta everywhere except where the beat was biblical (CRM held, ANF held). The law of the tape is complete: forward acquittals paid at any multiple, in-line executed at any multiple. NVDA $217.55 closed the week +1.3% — above my $210 line, bruised by Friday but unbroken; the print is now behind us and the Nov 17 bar is already $2.47. AVGO Wednesday carries a ±10.8% historical norm into a market with no live implied feed: MRVL's -10.3% on a meet is the downside map, NVDA's +8.7% is the upside map. Price both tails. Below AVGO, the tape's real tell is whether CRM $256 holds above its pre-print $205 — the acquittal line for the whole software complex."*
 
-**Cecil:** *"I have watched eleven companies report this week, and I keep the three that paid their owners honestly: Deere, sixth straight beat, ag-cycle bottom confirmed, +6.9% — that is what a trustworthy print looks like. BJ's, eighth straight beat, membership income compounding, +5.6%. And Lowe's, eighth straight beat with a guide cut they did not hide — I grade candor as highly as growth. The rest was a casino: KEYS beat by 23.8% and fell two days running; AAP beat by 28.7% and lost a quarter of its value; WMT beat and confessed weakness in the same breath. My counsel is unchanged and sharpened: MSFT and AMZN remain the only mega-caps I trust through year-end — though AMZN closed below the $260 line, so even trust keeps its stop. Wednesday is not about whether NVDA beats $2.09; eight straight beats says it will. It is about whether the guide, the margin, and the China line justify the most important multiple in the market. I will read the print Thursday morning, with cash, and without regret."*
+**Cecil:** *"I grade the week by what owners were paid to hold. NVIDIA: 15 straight beats, and the dividend of trust was a +8.7% repricing — earned. Salesforce: an +80.4% beat with Agentforce ARR behind it, and the first software print all season that looked forward instead of back — my recession call on enterprise software is hereby rescinded until MDB, ZS, DOCU, ADBE, or ORCL presents contrary evidence. The mall remains a casino of lowered bars: ANF's +111.9% beat was believed because tariff mitigation was credible; DLTR's +136.1% was not, because the math was not. SentinelOne delivered the week's only dishonest print. My ledger into the Fed window is unchanged in kind and sharpened in degree: MSFT ($513.53, new high ground) and AMZN ($266.43, the $260 line reclaimed) are the holds; NVDA graduates from the trial docket to the trust ledger. Everything else reports into a lowered bar or a hawkish tape — and I will read AVGO Thursday morning, with cash, and without regret."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance (yfinance earnings_dates + calendar + price history): earnings dates, EPS estimates, revenue estimates, actuals, surprise data, realized/historical moves — refreshed 2026-08-22
-- Intra-Council cross-checks (2026-08-22): consumer-discretionary/staples wikis (WMT comp detail, TGT/LOW/TJX guide detail, Section 338), semiconductors wiki (NVDA guide band/GM/China), economic-calendar (core PCE cons 3.3%, Warsh keynote Fri 8/28)
+- Yahoo Finance (yfinance earnings_dates + calendar + price history): earnings dates, EPS estimates, revenue estimates, actuals, surprise data, realized/historical moves — refreshed 2026-08-30
+- Intra-Council cross-checks (2026-08-30): financials/industrials wikis (hawkish-Warsh rates shock, 2Y ~4.34%, Sept hike odds ~54–60%), consumer wikis (Section 338 tariff regime, DKS miss issue #79), economic-calendar (jobs Sep 4, CPI ~Sep 10–11, FOMC Sep 15–16)
 - CBOE: Options implied volatility, straddle pricing, implied moves — ⚠️ stale, needs external feed refresh
 - Bloomberg: Whisper numbers, analyst consensus, guidance tracking — ⚠️ stale, needs external feed refresh
 - FactSet: Earnings surprise data, beat rates, historical averages
@@ -393,6 +420,6 @@ The consumer verdict is **bifurcation, not crack**: TGT (+75.8% beat), ROST (+36
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-22*
+*Last updated by Saturday Research Crew: 2026-08-30*
 *Next update: Every Saturday 12:19 PM ET*
 *Data sources: Yahoo Finance (fresh), CBOE / Earnings Whispers / Bloomberg (stale — flagged for external feed refresh)*
