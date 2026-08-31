@@ -10,20 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | **$63.64** | $61.91 | **+2.79%** |
+| Price | **$62.68** | $63.64 | **-1.51%** |
 | 52W Range | $42.35 – $64.70 | — | — |
 | AUM | ~$35.7B | — | — |
-| YTD Return | **+42.3%** | — | — |
-| 1Y Return | ~+47.4% | — | — |
+| YTD Return | **+40.2%** | — | — |
+| 1Y Return | ~+38.7% | — | — |
 | P/E Ratio | ~21.5 | — | — |
 | Dividend Yield | ~2.55% | — | — |
 | Beta | ~-0.08 (3Y, Yahoo — energy has decoupled from SPY) | — | — |
 | Total Holdings | 23 | — | — |
-| Avg Daily Volume | ~31.3M shares (Fri: 27.8M) | — | — |
+| Avg Daily Volume | ~31.3M shares (Fri: 20.6M) | — | — |
 
-**Marky Tape Read:** The breakout we flagged last week **confirmed**: XLE closed **$63.64 (+2.79%)**, clearing the old 52W high of **$63.46 on Tuesday's close ($63.68)** and printing a **new intraday 52W high of $64.70 on Thursday**. The level held all week — Wednesday's dip to a $63.58 close never violated the breakout line, and Friday's $63.64 sits above it. RSI-14 pushed from 67.6 to **71.7** — officially overbought. Volume remains the nagging detail: Friday's 27.8M ran below the 31.3M average for a second straight week, so the breakout is confirmed on price but not yet on participation. Context that matters: SPY fell **-1.37%** this week — energy's ~4-point outperformance is genuine relative strength, not beta drift.
+**Marky Tape Read:** The breakout **failed**. XLE lost the **$63.46** breakout line on **Tuesday's close ($62.06)** — the first close below it since the 8/18 breakout — printed the week's low at **$61.31 intraday Wednesday**, churned at $62.29–$62.43, and reclaimed only to **$62.68 on Friday**, still **below the line on a closing basis**. Failed breakout confirmed. RSI-14 cooled from 71.7 to **62.1** — no longer overbought, which is the one constructive detail. Volume stayed light for a **third straight week** (Friday 20.6M vs the ~31.3M average) — distribution, not capitulation. The 50D keeps rising ($58.15) and price still sits ~8% above it, so this is a failed breakout inside an intact uptrend, not a trend break. Context: the S&P trod water (~+0.2%) — energy's -1.51% is giving back a slice of last week's ~4-point relative win.
 
-**Ophelia Macro Read:** The premium is now **physical, not rhetorical**. WTI settled **$87.06 (+5.7%, +$4.66)** — a second straight +5% week — and Brent **$94.39 (+6.6%)**, stretching the spread to **$7.33**. Tanker tracking (Kpler) showed Hormuz transits collapsing to **five on Saturday and zero on Sunday** (vs 31 the prior weekend) as the U.S. naval blockade took hold; the White House ruled out Iran talks. Meanwhile the bear case shrank: EIA printed a **+4.4M-barrel build — a quarter of the prior week's 17.4M shock**. DXY fell -0.87% to **98.80**, a genuine tailwind. But the 10Y closed at a **52-week high of 4.738%** after FOMC minutes showed **three dissents in favor of a hike** — with crude at $87, oil has officially flipped from disinflationary gift to inflation input.
+**Ophelia Macro Read:** The premium **sprang a leak**. WTI settled **$83.40 (-4.2%)** — Monday's $87.57 top became a trendline break, with a Wednesday flush to **$79.62** — and Brent fell **-6.7% to $88.10**, collapsing the spread from $7.33 to **$4.70**. The driver was **de-escalation math, not headlines**: the U.S. moved ahead with the June MOU including **Iranian oil-sale waivers**, Hormuz transits recovered to **13 Saturday / 4 Sunday** (vs 5/0 the prior weekend; Lloyd's weekly transits +30%), Iran and Oman kept talking about a **temporary corridor**, Saudi Aramco offered **September loadings outside the strait**, and Iran's hidden Supreme Leader **Mojtaba Khamenei resurfaced** on video after six months. UBS responded by cutting its Q3 Brent forecast **$25 to $80**. The counter-flow is real: Thursday brought "toughest sanctions" and a flat U.S. denial that negotiations exist, and Iran still demands recognized control of Hormuz transit fees "even by force." The quiet bombshell: the **SPR fell -3.7M to 289.7M barrels — below 300M, lowest since 1983** — the buffer is being spent to hold this price down. Meanwhile the **2Y jumped +11 bps to ~4.34%** on Warsh's hawkish debut (Sept hike odds ~56–62%) while the 10Y sat at **4.720% (-2 bps)** — the curve flattened to ~+38 bps, and DXY firmed +0.9% to **99.68**.
 
 ---
 
@@ -31,41 +31,41 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | XOM | ExxonMobil | ~22% | $165.11 | +3.13% | $176.41 | $107.96 | 2.50% | 21.2 | ⚡ |
-| 2 | CVX | Chevron | ~18% | $205.27 | +2.64% | $214.71 | $146.49 | 3.47% | 19.8 | ⚡ |
-| 3 | COP | ConocoPhillips | ~7% | $134.87 | +6.38% | $135.88 | $85.57 | 2.49% | 17.8 | 🔥 |
-| 4 | EOG | EOG Resources | ~5% | $153.05 | +7.32% | $153.67 | $101.59 | 2.67% | 11.9 | 🔥 |
-| 5 | OXY | Occidental Petroleum | ~5% | $61.30 | +5.04% | $67.45 | $38.80 | 1.83% | 18.1 | ⚡ |
-| 6 | SLB | SLB | ~4% | $53.87 | +0.19% | $58.82 | $31.64 | 2.19% | 26.3 | ⚡ |
-| 7 | MPC | Marathon Petroleum | ~3% | $360.72 | +1.49% | $367.60 | $161.93 | 1.11% | 12.5 | 🔥 |
-| 8 | VLO | Valero Energy | ~3% | $348.86 | +2.10% | $352.70 | $137.88 | 1.38% | 14.6 | 🔥 |
-| 9 | PSX | Phillips 66 | ~2% | $242.87 | +3.96% | $246.95 | $122.25 | 2.09% | 11.4† | 🔥 |
-| 10 | WMB | Williams Cos | ~2% | $70.49 | -6.26% | $80.08 | $56.09 | 2.98% | 28.1 | ⚠️ |
+| 1 | XOM | ExxonMobil | ~22% | $156.71 | -5.09% | $176.41 | $108.35 | 2.63% | 20.2 | ⚠️ |
+| 2 | CVX | Chevron | ~18% | $201.86 | -1.66% | $214.71 | $146.49 | 3.53% | 19.4 | ⚡ |
+| 3 | COP | ConocoPhillips | ~7% | $130.35 | -3.35% | $135.88 | $85.57 | 2.58% | 17.3 | ⚡ |
+| 4 | EOG | EOG Resources | ~5% | $143.35 | -6.34% | $153.67 | $101.59 | 2.85% | 11.2 | ⚠️ |
+| 5 | OXY | Occidental Petroleum | ~5% | $59.10 | -3.59% | $67.45 | $38.80 | 1.90% | 17.4 | ⚠️ |
+| 6 | SLB | SLB | ~4% | $57.33 | **+6.42%** | $58.82 | $31.64 | 2.06% | 27.8 | 🔥 |
+| 7 | MPC | Marathon Petroleum | ~3% | $368.83 | **+2.25%** | $369.12 | $161.93 | 1.09% | 12.8 | 🔥 |
+| 8 | VLO | Valero Energy | ~3% | $352.36 | +1.00% | $353.00 | $149.52 | 1.36% | 14.7 | 🔥 |
+| 9 | PSX | Phillips 66 | ~2% | $244.01 | +0.47% | $246.95 | $126.74 | 2.08% | 13.9† | ⚡ |
+| 10 | WMB | Williams Cos | ~2% | $73.73 | **+4.60%** | $80.08 | $56.09 | 2.98% | 29.4 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution
-> † PSX trailing P/E (110.9) is distorted by one-off items; forward P/E shown.
+> † PSX P/E shown on forward basis; trailing remains distorted by one-off items.
 
-**Sector Split:** **Leadership flipped from refiners to E&P.** The crude-torque names took the baton: **COP +6.38%** closed Friday at a fresh 52W high ($135.88), **EOG +7.32%** printed its own new high ($153.67 Thursday), and beyond the top-10 **FANG +4.07%** (new 52W high $216.90) and **DVN +7.09%** confirmed the rotation. The refiners printed fresh highs Thursday — **MPC $367.60, VLO $352.70, PSX $246.95** — then consolidated: **MPC +1.49%, VLO +2.10%, PSX +3.96%**. All three still trade **above their mean analyst targets**. The integrateds ground higher: **XOM +3.13%**, **CVX +2.64%** (reclaimed $205). **SLB +0.19%** went flat after weeks of relative strength. The casualty was midstream: **WMB -6.26%** and **KMI -5.61%** got the utilities treatment as the 10Y closed at a 52W-high 4.738% — rate-sensitive pipes traded like bond proxies, not energy.
+**Sector Split:** **Leadership flipped straight back to refiners and services.** The products market refused to follow crude down: with **diesel cracks above $100/bbl** (a record, per Columbia SIPA) and distillate stocks ~13% below average, **MPC +2.25%** printed a **fresh 52W high at $369.12 on Friday**, **VLO +1.00%** set its own new high at **$353.00 Monday**, and **PSX +0.47%** held its breakout shelf. **SLB +6.42%** was the top-10's best week — services is now knocking on its May high of $58.82 as international/Gulf work holds up regardless of the headline crude price. The **crude-torque names gave back last week's spike**: **EOG -6.34%** (worst in the top-10, round-tripping its +7.3% breakout week), **XOM -5.09%**, **OXY -3.59%**, **COP -3.35%**, **CVX -1.66%**. **Midstream bounced**: **WMB +4.60%** recovered most of last week's -6.26% rate-scare selloff as the 10Y eased off its 52W-high close.
 
-**Analyst Targets (mean, Yahoo):** XOM $169.68 | CVX $217.88 | COP $144.29 | EOG $158.93 | OXY $66.48 | SLB $61.93 | MPC $324.56 | VLO $312.53 | PSX $221.68 | WMB $85.10. **The refiner inversion persists:** MPC, VLO, and PSX remain **above** their mean targets even after consolidating — the sell-side still hasn't caught up to the crack-spread plateau. The new anomaly: **WMB now trades ~21% below its target** with a **strong-buy** consensus after the rate selloff — the one top-10 name where analysts see deep value *created* this week.
+**Analyst Targets (mean, StockAnalysis):** XOM $169.68 | CVX $218.29 | COP $145.33 | EOG $159.96 | OXY $66.83 | SLB $61.93 | MPC $324.56 | VLO $317.89 | PSX $222.00 | WMB $85.25. **The refiner inversion persists into a second month:** MPC, VLO, and PSX all closed the week **above** their mean targets — MPC by 13.6% — and the sell-side still hasn't caught up to a $100 diesel crack. Note the shift from last week: targets are now the *floor* debate, not the ceiling.
 
-**Cecil Fundamental Read:** The rotation makes fundamental sense — when the blockade traps crude, the barrel-owners out-earn the barrel-processors, and EOG at 11.9x with a fresh 52W high is still the cheapest quality in the group. COP at 17.8x is re-rating toward XOM's multiple. I remain unmoved on refiners above their targets: MPC at 12.5x and VLO at 14.6x are priced for cracks to plateau near $66, which is a war assumption. The genuinely interesting number this week is WMB: -6.26% on a bond-yield scare, 28.1x earnings, 2.98% yield, strong-buy consensus, and 21% headroom to target. Midstream cash flows don't move with the 10Y — only the multiple does. That is where I'd shop if the rate panic deepens.
+**Cecil Fundamental Read:** Follow the cash, not the crude. A refiner earns the crack, and the crack is at a **record** — MPC at 12.8x and VLO at 14.7x are priced for normalization that the distillate market (13% below average stocks, 97% utilization) is not delivering. EOG at **11.2x** remains the cheapest quality barrel-owner even after its -6.3% round trip. And last week's WMB thesis — midstream cash flows don't move with the 10Y, only the multiple does — was validated in five sessions: +4.60% while 29.4x earnings and a 2.98% yield grind back toward the $85.25 target. I am not buying crude at $83 with a de-escalation bid; I am very interested in who gets paid regardless.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *Live sub-$5B energy names — no mega-caps repackaged. All five names below verified sub-$5B as of the Aug 21 close. **PBF remains promoted out** ($8.72B cap, +2.3% wk, fresh 52W high $75.68 Monday — the refining supercycle keeps it far above the $5B line). **BRY is now delisted/unresolvable** via Yahoo Finance and has been struck from the backup list; **CRK ($4.18B cap)** is the verified next-in-line backup. MTDR ($7.2B) and SM ($8.8B) have graduated for good.*
+> *Live sub-$5B energy names — no mega-caps repackaged. All five names below re-verified sub-$5B as of the Aug 28 close (caps via StockAnalysis statistics pages). **PBF remains promoted out** ($8.51B cap, -3.1% wk consolidating off its $75.68 high — the record-crack trade keeps it far above the $5B line). **BRY remains delisted/struck** from backups; **CRK ($4.20B cap, Hold)** is the verified next-in-line backup. MTDR and SM graduated for good.*
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst / Signal | Council Read |
 |---|---|---|---|---|---|---|
-| AMPY | Amplify Energy | **$200M** ✓ | $4.82 | +0.8% | **$15M buyback (~10% of shares)** in execution since Aug 11; strong-buy (2 analysts), target $7.75; Beta wells ramping | The board is still buying back a tenth of the company into the rally — the sleeve's most aggressive insider bet |
-| GPRK | GeoPark | **$635M** ✓ | $9.79 | +3.4% | Target $10.85 (4 analysts); 6.9x trailing P/E; Vaca Muerta ramp + Colombia production growth | LatAm value finally catching the crude bid — the laggard trade works if Brent holds $90+ |
-| GTE | Gran Tierra Energy | **$351M** ✓ | $9.91 | **+7.8%** | Post-Q2 re-rating continues: Q2 EBITDA $85M + **agreed to sell Colombia/Ecuador assets for $1.33B** (Aug 5) — ~3.8x its own market cap | A micro-cap divesting assets worth nearly 4x itself — the market is still repricing the transformation |
-| TUSK | Mammoth Energy | **$147M** ✓ | $3.06 | **-7.8%** | No fresh company news; capital rotated from services to E&P; no analyst coverage | The week's worst — frac-utilization optionality has no bid while crude hogs the spotlight |
-| WTI | W&T Offshore | **$592M** ✓ | $3.92 | +6.8% | Q3 dividend declared (Aug 5); target $4.15 (3 analysts); high realized-price torque; GoM lease sale (~$82.7M) keeps acreage flowing | GoM shelf cash-harvester with a dividend — quiet institutional rotation continues underneath |
+| AMPY | Amplify Energy | **$197M** ✓ | $4.76 | -1.2% | **$15M buyback (~10% of shares)** still in execution; target $7.75 (+63%); Beta wells ramping | Buying back a tenth of itself into every dip — the insider bet hasn't blinked |
+| GPRK | GeoPark | **$645M** ✓ | $9.83 | +0.4% | Target $10.80 (+9.9%); 0.94% dividend initiated; Vaca Muerta ramp + Colombia growth | Held flat through a -4.2% crude week — LatAm value proving stickier than the commodity |
+| GTE | Gran Tierra Energy | **$349M** ✓ | $9.87 | -0.4% | Post-$1.33B-divestment re-rating consolidating; target $21.60 (+119%); +140% vs 52W low | A two-week pause after a 3.8x-of-market-cap transformation — digestion, not doubt |
+| TUSK | Mammoth Energy | **$149M** ✓ | $3.09 | +1.0% | TTM revenue +79%; still zero analyst coverage; frac-utilization optionality | Quietly green while crude fell — services micro-cap catching the SLB draft |
+| WTI | W&T Offshore | **$539M** ✓ | $3.57 | **-8.9%** | Offshore realized-price torque cuts both ways (crude -4.2%); target $4.15 (+16%); 1.12% dividend | The week's SMID casualty — GoM torque amplifies the de-escalation fade exactly as advertised |
 
-**Rotation Note:** No new rotations this week. PBF stays promoted out ($8.72B). BRY delisted — removed from backups; CRK ($4.18B, hold-rated, -38.7% YTD gas laggard) stands by as the next verified sub-$5B candidate. Standouts: GTE's +7.8% post-divestment re-rating; TUSK's -7.8% services fade.
+**Rotation Note:** No rotations — all five verified under $5B at Friday's close. PBF stays promoted out ($8.51B). CRK ($4.20B, +0.5% wk, target $14.88) stands by as the verified backup. Standouts: W&T's -8.9% torque fade; TUSK's quiet green week against the tape.
 
 ---
 
@@ -73,18 +73,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High (new) | $64.70 | **Printed Thursday 8/20 — the new ceiling; a weekly close above opens $70** |
-| Breakout Line | $63.46 | Old 52W high — **now first support; held on every close this week** |
-| Current Price | $63.64 | — |
-| Immediate Support | $62.58 | Monday's close / week's low shelf |
-| 50-Day MA | ~$57.51 | Rising dynamic support — pullback floor #2 |
+| 52W High | $64.70 | Printed 8/20 — the ceiling; a weekly close above opens $70 |
+| Breakout Line | $63.46 | **FAILED Tuesday 8/25** (62.06 close) — now first resistance; the shakeout/rejection line |
+| Current Price | $62.68 | Below the breakout line, above the week's churn shelf |
+| Immediate Support | $62.06 – $61.31 | Tuesday's close / Wednesday's intraday low — the line that decides the 50D test |
+| 50-Day MA | ~$58.15 | Rising dynamic support — pullback floor #2 |
 | Major Support | $55.00 | Previous breakout zone from May |
-| 200-Day MA | ~$53.90 | Long-term trend support — bullish above |
+| 200-Day MA | ~$54.35 | Long-term trend support — bullish above |
 | Structural Low | $42.35 | 52W bottom |
 
-**Marky Setup Assessment:** The breakout confirmed exactly as scripted: Tuesday's close at $63.68 cleared $63.46, Wednesday's $63.58 successfully tested it from above, Thursday printed the new 52W high at **$64.70**, and Friday's $63.64 held the line. RSI-14 is now **71.7** — overbought — and price sits ~10.7% above the 50D MA ($57.51). PSX's RSI is **76.9**, the most extended name in the top-10. Volume remains the single caution flag: Friday's 27.8M vs the 31.3M average makes a second straight light week. **Confirmation trigger:** a weekly close above **$64.70** on expanding volume opens $70. **Failure trigger:** a close back below **$63.46** marks a failed breakout; below $62.58 (week's low) the bull trap is confirmed and the 50D at $57.51 becomes the line that matters.
+**Marky Setup Assessment:** The breakout failed on a closing basis — three of four post-failure sessions printed between $62.06 and $62.43, and Friday's $62.68 reclaim attempt closed **below** $63.46. RSI-14 cooled to **62.1** from 71.7, so the overbought excuse is spent; price sits ~8% above the 50D ($58.15), which keeps the intermediate uptrend intact. Volume is the tell to watch: three straight light weeks (Fri 20.6M vs ~31.3M avg) means neither side has committed. **Reclaim trigger:** a close back above **$63.46** turns the failure into a shakeout and re-opens $64.70/$70. **Breakdown trigger:** a close below **$61.31** (Wednesday's low) confirms the bull trap and puts the 50D at $58.15 in play — a level last touched in late July.
 
-**Key divergence — the physical bear case is shrinking:** Last week's contradiction (hot equities vs a 17.4M-barrel build) partially resolved in the bulls' favor: this week's build was just **+4.4M barrels**, and the tape broke out anyway. The new internal divergence is **XLE-at-breakout vs midstream-puking**: WMB -6.26% and KMI -5.61% on the 10Y's 52W-high close means energy now trades as two sectors — crude torque vs rate-sensitive pipes. Breadth is otherwise a confirmation: five of ten top holdings printed fresh 52W highs this week (COP, EOG, MPC, VLO, PSX).
+**Key divergence — crude fell, the complex didn't:** WTI lost -4.2% and Brent -6.7%, yet XLE gave back only -1.51% because the *products* market never got the memo: **diesel cracks above $100/bbl** (record), distillate stocks ~13% below average, refinery utilization ~97%. MPC and VLO printed fresh 52W highs *in a down-crude week*, SLB was the top-10's best name, and midstream bounced. Last week's internal split (crude torque vs rate-sensitive pipes) has inverted: the market now pays for **molecules processed and services rendered**, not barrels in the ground. Breadth check: two of ten top holdings at fresh 52W highs (MPC, VLO) vs zero last-week-leaders holding theirs (EOG -6.3%, COP -3.4%).
 
 ---
 
@@ -92,20 +92,21 @@
 
 | Factor | Level | Implication for XLE |
 |---|---|---|
-| WTI Crude | **$87.06 (+5.7% wk)** | Second straight +5% week; week high $87.83. Blockade premium compounding on measured flow disruption, not headlines. |
-| Brent Crude | **$94.39 (+6.6% wk)** | Brent-WTI spread ~$7.33 — seaborne scarcity widening. $95 is the next psychological lid. |
-| Natural Gas | $2.77 (+1.5% wk) | Still oversupplied; not a driver. |
-| DXY | ~98.80 (-0.9% wk) | Dollar weakening (RSI ~30) — a genuine tailwind for crude, unlike last week's flat read. |
-| 10Y Treasury | **4.738% (52W-high close)** | Hawkish FOMC minutes + $87 oil = yields grinding up with crude. Midstream already voting. |
-| Fed Funds | 3.50–3.75% (on hold) | **July minutes: 9–3 hold with three dissents FOR A HIKE** (Hammack, Kashkari, Logan); ~64% hike-by-YE priced. Warsh keynote Fri 8/28; core PCE Wed 8/26. |
-| U.S. Inventories | **+4.4M bbl to 428.8M** | Build shrank to a quarter of the prior week's 17.4M shock — the bear case weakened; one more small print makes it a blip. |
-| OPEC+ | Cut 2026 demand growth to 580k bpd (4th straight cut) | Demand caution vs the IEA's **1.27M bpd 2026 deficit** call — the forecast gap is the volatility engine. Supply unwinds continue. |
-| Russia Supply | ~600k bpd below quota | Drone-attack shortfall quietly persists — compounds the blockade premium. |
-| U.S. SPR | ~360M barrels (lowest since 1983) | At $87 crude, refill is dead — no buffer against a real Hormuz closure. |
-| Iran / Hormuz | **BLOCKADE** | **U.S. naval blockade in effect; Kpler counted 5 transits Saturday and ZERO Sunday (vs 31 the prior weekend); White House: no Iran talks. This is the entire premium — and it is physical.** |
-| Global Demand | OPEC: 580k bpd 2026 growth vs IEA: 1.27M bpd deficit | EIA STEO sees Brent ~$85 in Q3 fading to ~$69 in 2027 — officialdom still prices normalization. |
+| WTI Crude | **$83.40 (-4.2% wk)** | Trendline break: Monday top $87.57, Wednesday flush $79.62, Friday settle $83.40. De-escalation repricing, not demand collapse. |
+| Brent Crude | **$88.10 (-6.7% wk)** | Brent-WTI spread collapsed $7.33 → **$4.70** — the seaborne-scarcity premium is leaking fastest, exactly as flow normalization predicts. |
+| Natural Gas | $2.888 (+4.2% wk) | Firmed off oversold levels; still not a sector driver. |
+| DXY | 99.68 (+0.9% wk) | Dollar firmed back toward 100 — last week's tailwind flipped to a mild headwind. |
+| 10Y Treasury | 4.720% (-2 bps wk) | Long end quiet after the 52W-high close; the action moved to the **2Y: +11 bps to ~4.34%** on Warsh — curve flattened to ~+38 bps. Midstream noticed the relief. |
+| Fed Funds | 3.50–3.75% (on hold) | **Warsh's debut keynote was hawkish**: 2% target "firm, fixed," "work to do" — September hike odds repriced to ~56–62%. Core PCE 3.3% landed in line Wednesday. FOMC Sept 15–16. |
+| U.S. Inventories | **+0.1M bbl to 428.9M** | Wed 8/26 EIA: a rounding-error build vs +1.6M expected — the 17.4M shock is officially a blip. Gasoline -2.5M. Production 13.84M bpd. |
+| U.S. SPR | **289.7M barrels (-3.7M wk)** | **Below 300M — lowest since 1983.** Releases are still flowing into the crisis; refill is dead at $83 crude. The buffer is being spent, not saved. |
+| OPEC+ | No policy change | Next ministerial **Sept 6** (October quotas); demand-growth cut streak (580k bpd, 4 cuts) stands. UAE-exit chatter is a medium-term overhang, not this week's trade. |
+| Russia Supply | ~600k bpd below quota | Drone-attack shortfall persists (stale read — no fresh print this week). |
+| Iran / Hormuz | **BLOCKADE — but de-escalating at the edges** | Transits recovering: **13 Sat / 4 Sun vs 5/0 the prior weekend** (Lloyd's weekly +30%); U.S. advancing the June MOU with **Iranian oil-sale waivers**; Iran-Oman **temporary corridor** talks live; Mojtaba Khamenei resurfaced after 6 months hidden. Counter-flow: Thursday's "toughest sanctions" + "no negotiations" denial; Iran demands recognized Hormuz transit fees "even by force." |
+| Products Market | **Diesel crack >$100/bbl (record)** | Distillate stocks ~13% below avg, utilization ~97% — the physical tightness migrated from crude to products. This is why refiners made new highs in a down-crude week. |
+| Global Demand | OPEC: 580k bpd 2026 growth vs IEA: 1.27M bpd deficit | **UBS cut Q3 Brent forecast $25 to $80** (Q4 -$10 to $80) on the US-Iran pact and rising transits — officialdom is now pricing normalization *faster* than the tape. |
 
-**Ophelia Verdict:** This is the third regime in three weeks: de-escalation fade → re-escalation spike → **blockade breakout**. The difference this time is that the premium is backed by transit counts, not missiles-on-TV: zero Sunday transits is a measured fact, and the shrinking EIA build removed the demand-side counter-argument. But my rule stands — scale in on whispers, scale out on consensus, and the consensus is now long: five of ten top holdings at fresh 52W highs, RSI 71.7, and a Fed whose own minutes show three members who wanted to hike *before* oil added another $4.66. The official forecasts (EIA: Brent ~$69 by 2027) still assume normalization, which tells you how violent the repricing would be in either direction. I respect the breakout. I do not marry it. Cash position unchanged.
+**Ophelia Verdict:** The third regime flip in four weeks: de-escalation fade → re-escalation spike → blockade breakout → **normalization leak**. My rule worked: scale out on consensus — the consensus was long at $87 with five 52W highs and RSI 71.7, and the leak started the following Monday. But watch what *didn't* fade: the products market. A $100 diesel crack with distillates 13% below average says the physical system is still broken — it's the crude *headline* premium that's deflating while the *molecule* shortage persists. And the SPR below 300M means Washington is spending the emergency buffer to keep it that way. The next two gates are discrete: **OPEC+ on Sept 6** and the **September FOMC** with a 58% coin-flip hike. I respect the fade. I do not marry it either. Cash position unchanged.
 
 ---
 
@@ -113,15 +114,17 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: Breakout on the Blockade
+### This Week's Story: The Premium Sprang a Leak
 
-The breakout we flagged last week arrived on schedule. XLE closed **$63.64 (+2.79%)**, clearing the old $63.46 ceiling on Tuesday and printing a fresh 52-week high of **$64.70** on Thursday — while the S&P 500 *lost* 1.37%. WTI settled **$87.06 (+5.7%)**, a second consecutive +5% week, and Brent reached **$94.39 (+6.6%)** with the spread out to $7.33.
+Last week's blockade breakout met the de-escalation bid, and the breakout failed. XLE closed **$62.68 (-1.51%)**, losing the **$63.46** breakout line on Tuesday's close and never reclaiming it — while WTI fell **-4.2% to $83.40** and Brent **-6.7% to $88.10**, snapping two straight +5% weeks for crude.
 
-**The driver was physical, not rhetorical.** Tanker-tracking data (Kpler) showed Hormuz transits collapsing to five on Saturday and **zero on Sunday** — versus 31 the prior weekend — as the U.S. naval blockade took hold and the White House ruled out Iran talks. This is no longer a headline premium; it is measured flow disruption. The bear case weakened simultaneously: Wednesday's EIA report showed a **+4.4M-barrel build, a quarter of the prior week's 17.4M shock** — "demand destruction" started looking like a blip.
+**The leak was measured in tankers, not tweets.** Hormuz transits recovered to **13 on Saturday and 4 on Sunday — versus 5 and zero the prior weekend** — as the U.S. moved ahead with the June MOU including **Iranian oil-sale waivers**, Iran and Oman negotiated a **temporary corridor**, and Saudi Aramco began offering September cargoes loaded *outside* the strait. Even Iran's invisible Supreme Leader resurfaced: **Mojtaba Khamenei**, unseen for six months amid "brain-dead" rumors, appeared in a rare video. The market did the math — UBS cut its Q3 Brent forecast **$25 to $80** — and last week's crude-torque heroes round-tripped: **EOG -6.3%, XOM -5.1%, OXY -3.6%**.
 
-**Leadership flipped from refiners to E&P.** COP (+6.4%) and EOG (+7.3%) printed fresh 52-week highs, with FANG and DVN confirming behind them. Refiners consolidated at their own new highs (MPC +1.5%, VLO +2.1%, PSX +4.0%) as the 3-2-1 crack held a rich-but-off-peak **$66**. The casualty was midstream: **WMB -6.3% and KMI -5.6%** got the utilities treatment as the 10-year Treasury closed at a 52-week high of **4.738%** on FOMC minutes showing three dissents *in favor of a hike*. Oil at $87 is no longer a disinflation story — it is the inflation input.
+**But the physical system refused to normalize.** Wednesday's EIA print was a **+0.1M-barrel rounding error** (vs +1.6M expected), and the **diesel crack held above $100/bbl — a record** — with distillate stocks 13% below average and refiners at 97% utilization. That's why the leadership board inverted: **MPC closed at a fresh 52W high $369.12**, VLO printed its own new high Monday, and **SLB +6.4%** led the top-10. Refiners and services get paid on *molecules moved* — and the molecule shortage is real even as the crude headline fades. Midstream agreed: **WMB +4.6%** erased last week's rate-scare selloff.
 
-**The Bottom Line:** A confirmed breakout on a physical blockade, a shrinking inventory scare, and a falling dollar — against RSI 71.7, light volume, and a Fed with three hike dissents on record and Warsh keynoting Friday. Next week's tells: Wednesday's core PCE, Warsh's Friday speech, Sunday's Hormuz transit count, and whether XLE holds $63.46 on its first pullback. Trade the breakout; respect the bond market.
+**Two quiet bombshells closed the week.** The **SPR fell to 289.7M barrels — below 300 million for the first time since 1983** — the emergency buffer is actively being spent to suppress this exact premium. And **Fed Chair Warsh's hawkish debut** ("firm, fixed" 2% target) sent the 2Y up +11 bps and September hike odds to ~58% — oil at $83 is still an inflation input, not a gift.
+
+**The Bottom Line:** A failed breakout on real de-escalation steps, against a products market at record tightness and an emptying strategic reserve. Next gates: **OPEC+ Sept 6**, **FOMC Sept 15–16** (58% hike coin-flip), Trump's refiner/retailer gasoline meeting, and Sunday's transit count. Trade the range — $61.31 to $63.46 — until one side commits volume.
 
 ---
 
@@ -129,41 +132,41 @@ The breakout we flagged last week arrived on schedule. XLE closed **$63.64 (+2.7
 
 | Company | Ticker | Date | Quarter | Result / Key Metric to Watch |
 |---|---|---|---|---|
-| **Valero Energy** | VLO | **Jul 30, 2026** | Q2 2026 | **BEAT** — EPS $12.54 vs $10.11 est; +2.10% wk; new 52W high $352.70 (8/20) |
-| **ExxonMobil** | XOM | **Jul 31, 2026** | Q2 2026 | **MISS** — EPS $3.52 vs $3.56 est; +3.13% wk to $165.11 |
-| **Chevron** | CVX | **Jul 31, 2026** | Q2 2026 | **BEAT** — EPS $6.06 vs $5.55 est; +2.64% wk; reclaimed $205 |
-| **Marathon Petroleum** | MPC | **Aug 4, 2026** | Q2 2026 | **REPORTED** — +1.49% wk consolidating; new 52W high $367.60 (8/20); cracks ~$66 |
-| **EOG Resources** | EOG | **Aug 4, 2026** | Q2 2026 | **REPORTED** — **+7.32% wk; new 52W high $153.67 (8/20)**; E&P leadership |
-| **GeoPark** | GPRK | **Aug 4, 2026** | Q2 2026 | **REPORTED** — +3.38% wk; Vaca Muerta ramp; target $10.85 |
-| **Gran Tierra Energy** | GTE | **Aug 5, 2026** | Q2 2026 | **REPORTED** — Q2 EBITDA $85M; **agreed to sell Colombia/Ecuador assets for $1.33B (~3.8x market cap)**; +7.83% wk |
-| **Phillips 66** | PSX | **Aug 5, 2026** | Q2 2026 | **REPORTED** — +3.96% wk; new 52W high $246.95 (8/20); RSI 76.9 (most extended in top-10) |
-| **Occidental Petroleum** | OXY | **Aug 5, 2026** | Q2 2026 | **REPORTED** — +5.04% wk; Permian torque to $87 crude |
-| **W&T Offshore** | WTI | **Aug 5, 2026** | Q2 2026 | **REPORTED** — Q3 dividend declared; +6.81% wk |
-| **ConocoPhillips** | COP | **Aug 6, 2026** | Q2 2026 | **REPORTED** — **+6.38% wk; closed Friday at new 52W high $135.88** |
-| **Amplify Energy** | AMPY | **Aug 10, 2026** | Q2 2026 | **REPORTED** — $15M buyback in execution; +0.84% wk |
+| **Valero Energy** | VLO | **Jul 30, 2026** | Q2 2026 | **BEAT** — EPS $12.54 vs $10.11 est; +1.00% wk; new 52W high $353.00 (8/24) |
+| **ExxonMobil** | XOM | **Jul 31, 2026** | Q2 2026 | **MISS** — EPS $3.52 vs $3.56 est; -5.09% wk on de-escalation fade |
+| **Chevron** | CVX | **Jul 31, 2026** | Q2 2026 | **BEAT** — EPS $6.06 vs $5.55 est; -1.66% wk; held $200 |
+| **Marathon Petroleum** | MPC | **Aug 4, 2026** | Q2 2026 | **REPORTED** — +2.25% wk; **new 52W high $369.12 (8/28)**; record diesel crack |
+| **EOG Resources** | EOG | **Aug 4, 2026** | Q2 2026 | **REPORTED** — **-6.34% wk**; breakout week round-tripped |
+| **GeoPark** | GPRK | **Aug 4, 2026** | Q2 2026 | **REPORTED** — +0.41% wk; dividend initiated; target $10.80 |
+| **Gran Tierra Energy** | GTE | **Aug 5, 2026** | Q2 2026 | **REPORTED** — -0.40% wk; $1.33B divestment re-rating consolidating |
+| **Phillips 66** | PSX | **Aug 5, 2026** | Q2 2026 | **REPORTED** — +0.47% wk; held breakout shelf $244.01 |
+| **Occidental Petroleum** | OXY | **Aug 5, 2026** | Q2 2026 | **REPORTED** — -3.59% wk; Permian torque unwinds with crude |
+| **W&T Offshore** | WTI | **Aug 5, 2026** | Q2 2026 | **REPORTED** — **-8.93% wk**; offshore torque cuts both ways |
+| **ConocoPhillips** | COP | **Aug 6, 2026** | Q2 2026 | **REPORTED** — -3.35% wk; off the $135.88 high |
+| **Amplify Energy** | AMPY | **Aug 10, 2026** | Q2 2026 | **REPORTED** — -1.24% wk; $15M buyback still executing |
 
-**Marky's Binary Event Read:** Q2 season is fully closed and the calendar stays dark until **Q3 reports open in late October**. The catalyst stack is now pure macro: **core PCE Wednesday 8/26, Warsh's keynote Friday 8/28**, the weekly EIA print (does the build stay small?), Sunday Hormuz transit counts, and the September Fed meeting where $87 oil meets three recorded hike dissents. The most important "event" on the board remains technical: whether XLE's breakout above **$63.46** holds on its first real test.
+**Marky's Binary Event Read:** Q2 season is closed and the tape is now purely macro-driven until Q3 reports open in late October. The discrete gates: **OPEC+ ministerial Sunday Sept 6** (October quotas — any supply response to the de-escalation?), **EIA STEO Sept 9**, **FOMC Sept 15–16** (September hike odds ~58% post-Warsh), **Trump's refiner/retailer gasoline-price meeting** (week of Aug 31), and the weekly tells — Wednesday EIA prints, Sunday Hormuz transit counts, and whether the Iran-Oman corridor gets announced. The most important "event" remains technical: **$61.31 down / $63.46 up** — the range that decides whether this was a shakeout or a trap.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Blockade persists / Sunday transit counts stay near zero → WTI $95+ → XLE closes above $64.70 and runs to $70
-- E&P re-rating continues: EOG at 11.9x and COP at 17.8x still cheap vs integrateds if crude holds $85+
-- Cracks hold in the $60s → refiners earn a plateau → MPC/VLO/PSX targets finally ratchet up to price
-- IEA's 1.27M bpd 2026 deficit call proves out → OPEC's demand cuts look like sandbagging
-- Russia's ~600k bpd shortfall deepens → physical tightness compounds the blockade
+- Corridor talks collapse or fresh strikes hit tankers → the leak re-seals → WTI back through $87.57 toward $95 → XLE reclaims $63.46 and runs at $64.70/$70
+- **Record diesel cracks persist** (distillates 13% below avg, utilization ~97%) → refiner earnings upgrades force targets up to price → MPC/VLO/PSX lead again
+- OPEC+ Sept 6 holds the line / signals discipline → supply normalization narrative dies
+- E&P washout completes: EOG at 11.2x and COP at 17.3x re-attract the quality bid once crude stabilizes
+- Mojtaba's return accelerates a *settlement* (not just a leak) — a signed deal with verification paradoxically removes the tail risk and lets the physical tightness reprice
 
 ### 🔴 Bear Case
-- Blockade lifts or talks resume → premium collapses (EIA STEO: Brent ~$69 by 2027) → XLE back to the 50D at $57.51
-- **Failed breakout:** a close back below $63.46 traps two weeks of breakout buyers → fast air pocket
-- Core PCE hot (8/26) + Warsh validates the hike dissents (8/28) → 10Y through 5% → recession math meets an overbought sector (RSI 71.7)
-- Inventory builds resume → the "blip" becomes a trend → demand-destruction narrative returns
-- Refiner downgrades into strength (all three still above mean targets) → leadership cracks at the highs
+- MOU finalized + corridor opens → stranded volumes clear → **UBS $80 / EIA $69-by-2027 path activates** → WTI to the $70s → XLE through $61.31 to the 50D at $58.15
+- **Failed breakout accelerates:** a close below $61.31 traps three weeks of breakout buyers → fast air pocket to $58
+- **September FOMC hikes** (58% priced) with crude still $83 → 10Y toward 5% → recession math meets a failed breakout
+- Refiner mean-reversion: all three still trade *above* mean targets — one downgrade cycle cracks leadership at the highs
+- SPR releases end abruptly (289.7M and falling) → the suppressed premium resurfaces as volatility, not price support
 
 ### ⚠️ The Wild Card
-**The Fed.** Oil has flipped from disinflationary gift to inflation input, and the July minutes already show three dissents in favor of a hike — recorded *before* crude added another $4.66. If Warsh's Friday keynote validates that camp while WTI sits at $87, the bond market does the tightening for them: the 10Y is already at a 52W-high 4.738%, and 5% is the line the whole market fears. Midstream (WMB -6.26%, KMI -5.61%) voted this week. The question is whether the rest of the sector — and then the index — follows.
+**The products crunch meets an empty reserve.** Diesel cracks above $100/bbl — a record — with distillate stocks 13% below average, refiners pinned at ~97% utilization, and the **SPR below 300 million barrels for the first time since 1983**. The system has no slack: if *any* new supply shock lands — a Hormuz re-escalation, a Gulf hurricane in peak season, a Russia diesel-export extension — there is no buffer left to release and no spare refining capacity to call on. In that world the crisis doesn't show up in crude first; it shows up at the diesel pump, in September, nine days before a coin-flip FOMC.
 
 ---
 
@@ -175,26 +178,23 @@ The breakout we flagged last week arrived on schedule. XLE closed **$63.64 (+2.7
 
 **Cecil:** *"Oil is a commodity. Commodities do not compound. CVX at 18.0x P/E with a 3.82% yield is not a dividend aristocrat — it is a cyclical masquerading as an income stock. VLO earned $12.54 in a quarter — extraordinary, but that is peak cyclical earnings, and the stock is down 4.66% this week because the market knows it. EOG at 10.5x P/E and 3.05% yield looks cheap, but it is a commodity trap — the P/E is low because earnings are about to fall. SLB gave back its pop last week but bounced this week — momentum trades die fast in energy. I do not plant in cyclicals when oil is fading. The winter garden does not grow oil wells. I am looking elsewhere."*
 
-> **Crew note (2026-08-22):** The Council Read above is preserved verbatim per the brief's rule — it reflects the Aug 14 de-escalation tape and is now two regimes old. The two weeks since (re-escalation, then this week's blockade breakout: XLE +2.79% to a new 52W high $64.70, WTI $87.06) are captured in the Narrative, Macro Overlay, and Technicals; the Council will re-read the sector in Saturday Synthesis.
+> **Crew note (2026-08-29):** The Council Read above is preserved verbatim per the brief's rule — it reflects the Aug 14 de-escalation tape and is now three regime flips old (re-escalation → blockade breakout → this week's normalization leak: XLE -1.51% with the breakout failed below $63.46, WTI -4.2% to $83.40, record diesel cracks, SPR below 300M). The fresh reads live in the Narrative, Macro Overlay, and Technicals; the Council re-reads the sector in Saturday Synthesis.
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: XLE, XOM, CVX, COP, EOG, OXY, SLB, MPC, VLO, PSX, WMB, KMI, FANG, DVN, CL=F, BZ=F, NG=F, ^TNX, DX-Y.NYB, AMPY, GPRK, GTE, TUSK, WTI, PBF, CRK live data (Aug 21, 2026 close)
-- Kpler tanker-tracking data (via press reports): Hormuz transits — 5 Saturday, 0 Sunday, vs 31 the prior weekend
-- U.S. EIA Weekly Petroleum Status Report (Aug 19, 2026): crude +4.4M bbl to 428.8M
-- EIA Short-Term Energy Outlook: Brent ~$85 in Q3 2026 fading to ~$69 in 2027; Hormuz constraints through August
-- RBN Energy (Aug 21, 2026): 3-2-1 crack spread ~$66.26/bbl
-- OPEC Monthly Oil Market Report: 2026 demand growth cut to 580k bpd (4th consecutive cut)
-- International Energy Agency (IEA): 2026 market deficit ~1.27M bpd
-- FOMC July meeting minutes: 9–3 hold with three dissents in favor of a hike (Hammack, Kashkari, Logan)
-- Gran Tierra Energy Q2 2026 release (Aug 5, 2026): EBITDA $85M; agreement to sell Colombia/Ecuador assets for $1.33B
-- U.S. Gulf of Mexico lease sale results (~$82.7M in high bids)
-- Federal Reserve: fed funds rate, meeting minutes; Warsh keynote scheduled Fri 8/28
+- Yahoo Finance: XLE, XOM, CVX, COP, EOG, OXY, SLB, MPC, VLO, PSX, WMB, CL=F, BZ=F, NG=F, ^TNX, DX-Y.NYB, AMPY, GPRK, GTE, TUSK, WTI, PBF, CRK live data (Aug 28, 2026 close); StockAnalysis statistics pages (caps, targets, yields)
+- Kpler / Lloyd's List Intelligence tanker tracking (via USNI News, Aug 28, 2026): weekly Hormuz transits +30%; Kpler weekend count 13 Saturday / 4 Sunday vs 5/0 prior weekend
+- U.S. EIA Weekly Petroleum Status Report (Aug 26, 2026): crude +0.1M bbl to 428.9M; gasoline -2.5M; production 13.84M bpd; **SPR -3.7M to 289.7M**
+- Columbia SIPA Center on Global Energy Policy (Aug 2026): U.S. diesel cracks >$100/bbl, record; distillate inventories ~13% below average
+- UBS forecast revision (Aug 2026): Q3 2026 Brent cut $25 to $80; Q4 cut $10 to $80
+- Federal Reserve / Jackson Hole (Aug 28, 2026): Chair Warsh keynote — 2% target "firm, fixed"; September hike odds ~56–62%; core PCE 3.3% YoY (Aug 26)
+- OPEC: ministerial meeting scheduled Sept 6, 2026; 2026 demand growth forecast 580k bpd (4 consecutive cuts); IEA 2026 deficit ~1.27M bpd
+- Hindustan Times / Reuters (Aug 26-29, 2026): Supreme Leader Mojtaba Khamenei resurfaces in rare video after six months; Iran-Oman temporary-corridor talks; U.S. "toughest sanctions" and no-negotiations denial (Aug 27-28)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-08-22*
+*Last updated by Saturday Research Crew: 2026-08-29*
 *Next update: Every Saturday 10:19 AM ET*
 *Data sources: Yahoo Finance, EIA, IEA, OPEC+, market data feeds*
