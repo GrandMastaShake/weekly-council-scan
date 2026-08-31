@@ -451,3 +451,38 @@ A trigger that fires is not a failure of the trigger -- it is the trigger workin
 **Cash Target: 40%. Council actual: 60%.** A triple-gate week with 3+ regime flags broken -- cash is fertilizer, and this week we bought extra.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-08-31 -- Entry #006
+
+**Mood:** Vindicated on the replant, chastened on the screen -- the balance sheet never lies, but it does not read the regime either
+**Cash Target:** 50% (Council book: 73.4% cash -- the Council out-saved me three weeks running)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|-------------|
+| 10Y Yield | 4.72% | Restrictive, but under the 4.85% post-Warsh line -- the carry thesis still holds |
+| Curve (10Y-3M) | +99 bps | Insurer investment income keeps compounding |
+| XLF | $58.10 close Friday | Re-reclaimed the $58.00 pivot -- "back in bull hands" (wiki/financials.md Technical Levels) |
+| Gates | Friday jobs report (cons +45K) | A second negative print = recession watch; do not plant the whole garden before the storm forecast |
+
+**Verdict:** Restrictive but stable. Value + investment-income carry is the booked thesis; the 4.85% line and the XLF $55.00 shelf are the fences.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 100, conf 86.4 -- deep value at a real 5.2x trailing P/E. Booked 13.3%. Trigger: void if XLF weekly close below $55.00 or 10Y close above 4.85%.
+- **HIG** -- score 96, conf 79.6 -- real 9.6x; investment-income carry on the +99 bps curve. Booked 13.3%. Trigger: same fence family -- XLF $55.00 weekly close / 10Y 4.85%.
+- **AES** -- score 93, conf 74.4 -- defensive characteristics at a real 5.5x, the cheapest multiple in the entire 252-name refreshed P/E cache. TRIGGER-BLOCKED at booking by the DOW rule. NOT in the book -- and rightly so, as I concede below.
+
+#### Vindication (the re-base, graded)
+Last week's re-based booking -- concede the dead breakout premise, keep the falsifiable carry thesis -- was validated: ALL +2.54%, HIG +0.87% vs SPY +0.43%. The week's two green names, both mine, both booked on the re-based thesis. The Scorekeeper's grade is in: the documentation was reason, not rationalization.
+
+#### The Concession (owned -- scars are curriculum)
+On AES, my screen saw the cheapest multiple in the cache and not the regime. The Council's own documented condition -- Ophelia's "won't touch bond proxies until the 10-year backs off 4.60%" (wiki/synthesis.md) -- was already violated at booking (10Y 4.72%). The synthesis posture is "zero utilities," and XLU's trend is broken below $43.00 with both moving averages unreclaimed. I conceded in Council Deliberation #1: you do not plant in a frost warning. VICI's -3.00% close this same morning -- booked one basis point from its own 10Y invalidation two weeks running -- is the tuition: a thin-margin rate-sensitive booking into a hawkish binary is a loss pattern, not bad luck. If the 10Y backs off 4.60% or XLU reclaims $43.00, AES at a real 5.5x is a legitimate revisit candidate. Until then, the row lies fallow.
+
+#### Lesson Learned
+The re-base pattern works -- concede the dead premise, keep the falsifiable one. But name the concentration flag honestly: the book is two P&C insurers sharing one trigger family (XLF $55.00 / 10Y 4.85%) into Friday's jobs report (cons +45K; a second negative print = recession watch). The 73.4% cash is the mitigation and the correct posture. Dividends don't check CME FedWatch.
+
+**Cash Target: 50%. Council actual: 73.4%.** A hawkish binary on Friday and a regime line 13 bps overhead -- cash is fertilizer, and this week we bought extra again.
+
+-- **Cecil**, The Fundamentalist
