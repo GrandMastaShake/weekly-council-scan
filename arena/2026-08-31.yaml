@@ -1,0 +1,72 @@
+week: '2026-08-31'
+lock: 2026-08-31 08:50 ET
+entry_date: '2026-08-31'
+exit_date: '2026-09-04'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 767.33
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.95
+  cash_weight: 0.05
+  picks:
+  - ticker: JPM
+    weight: 0.25
+    entry_price: 355.9
+    entry_price_source: open
+  - ticker: CRWD
+    weight: 0.22
+    entry_price: 221.42
+    entry_price_source: open
+  - ticker: FCX
+    weight: 0.2
+    entry_price: 76.95
+    entry_price_source: open
+  - ticker: GS
+    weight: 0.18
+    entry_price: 1032.6
+    entry_price_source: open
+  - ticker: MP
+    weight: 0.1
+    entry_price: 56.13
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: SLV
+    weight: 0.3
+    entry_price: 60.39
+    entry_price_source: open
+  - ticker: LNG
+    weight: 0.15
+    entry_price: 286.68
+    entry_price_source: open
+  - ticker: JPM
+    weight: 0.1
+    entry_price: 355.9
+    entry_price_source: open
+  - ticker: GILD
+    weight: 0.15
+    entry_price: 144.23
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.1
+    entry_price: 140.03
+    entry_price_source: open
+  - ticker: AAPL
+    weight: 0.1
+    entry_price: 319.56
+    entry_price_source: open
+  - ticker: LLY
+    weight: 0.05
+    entry_price: 1168.47
+    entry_price_source: open
+  - ticker: DDOG
+    weight: 0.05
+    entry_price: 233.32
+    entry_price_source: open
