@@ -1,0 +1,61 @@
+week: '2026-08-24'
+status: closed
+positions:
+- ticker: ALL
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Deep value at 5.1x earnings with solid fundamentals. Score: 99. (confidence:
+    85.6)'
+  entry_price: 254.1300048828125
+  entry_date: '2026-08-24'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 260.5799865722656
+  exit_date: '2026-08-28'
+  exit_reason: week_end
+  pnl_pct: 2.54
+- ticker: HIG
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 9.4. Score: 93. (confidence:
+    77.4)'
+  entry_price: 137.36000061035156
+  entry_date: '2026-08-24'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 138.5500030517578
+  exit_date: '2026-08-28'
+  exit_reason: week_end
+  pnl_pct: 0.87
+- ticker: VICI
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Defensive characteristics with stable cash flows. Score: 92. (confidence:
+    73.3)'
+  entry_price: 26.670000076293945
+  entry_date: '2026-08-24'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 25.8700008392334
+  exit_date: '2026-08-28'
+  exit_reason: week_end
+  pnl_pct: -3.0
+spy_entry: 766.0499877929688
+vix_at_entry: 15.9
+fed_stance: Hold. Rates 3.50-3.75%; July minutes hawkish (9-3, three dissents FOR
+  a hike, ~64% of a hike priced by year-end); core PCE Wed 8/26 and Chair Warsh's
+  Jackson Hole keynote Fri 8/28 are the week's policy gates.
+total_weight: 0.399
+cash_weight: 0.601
+weighted_return: 0.05
+spy_return: 0.43
+alpha: -0.38
+spy_exit: 769.3499755859375
+close_date: '2026-08-28'
+hit_rate: 0.67
