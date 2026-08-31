@@ -18,6 +18,24 @@
 
 ## Entries
 
+### Week of 2026-08-31 -- TRIGGER BLOCK: AES Dropped at Booking (DOW Rule)
+
+**Trigger:** The pre-publication booking trigger check (2026-08-10 doctrine -- the DOW rule) fired on Cecil's engine #3. AES's thesis as documentable from repo evidence is the defensive-yield / bond-proxy framing, and the Council's own condition for that trade -- Ophelia's "won't touch bond proxies until the 10-year backs off 4.60%" (wiki/synthesis.md, Consensus Synthesis) -- is VIOLATED as of booking: 10Y 4.72% (macro/facts.json, 2026-08-29). Reinforced by the synthesis "zero utilities" posture, the XLU "Short/avoid; trend broken" watchlist line, and XLU's technicals (below the $43.00 broken floor; 50D $44.69 / 200D $44.71 unreclaimed -- wiki/utilities.md Technical Levels). VICI's -3.00% close this same morning (booked 1bp from its own 10Y invalidation) is the second thin-margin rate-sensitive loss in three weeks.
+
+**Booked (official, Tracker-measured):** ALL 13.3% / HIG 13.3% / cash 73.4%.
+
+**Shadow (what the unconstrained engine book would have been):** ALL 13.3% / HIG 13.3% / AES 13.3% / cash 60.1% -- the pipeline's post-risk-control book with no booking trigger check.
+
+**Overlap:** ALL, HIG.
+
+**Counterfactual P&L:** to be computed next Monday (AES Mon 2026-08-31 close -> Fri 2026-09-04 close, date-pinned; delta vs the official book's weekly return).
+
+**Resolution:** Block honored; the 13.3% rides as cash per doctrine ("promote the next consensus candidate and run the same check on it, or leave the weight as cash" -- CRM, the next candidate, failed the 10% min-position floor at raw ~6.5% and was not promoted). Cecil's concession is logged in the report's Council Deliberation #1 and his journal. If the 10Y backs off 4.60% or XLU reclaims $43.00, AES at a real 5.5x trailing P/E is a legitimate revisit candidate.
+
+**Links:** [Report](reports/2026-08-31-report.md)
+
+---
+
 ### Week of 2026-08-10 -- ENGINE ABORT: Sanity Gate Blocked the Book (4-Way Tie at 108.00)
 
 **Trigger:** The pre-publication sanity gate (hard block, 2026-07-30 doctrine) fired during the 9:03 AM scan: Ophelia's engine produced **4 tickers tied at exactly 108.00** (MSFT, NOW, ORCL, AVGO -- identical base scores plus identical +6 wiki nudges), exceeding the 3-tie limit. Root causes, found same-session: (1) **SPY alias bug** -- `resolve_ticker_alias` maps SPY -> 'S&P 500' but the live price cache keys 'SPY', so every SPY history lookup silently returned []; Ophelia's market-regime term was flat-15 for all names, her volatility discount was zeroed, and her regime theses mislabeled a +3.2% SPY week 'bearish'. (2) **Clamp saturation** -- with Technology up +7.3% on the week, rotation 40 + flow 12 + regime 30 + momentum 12 + rel 8 all pinned at their ceilings for every strong Tech name, making exact ties arithmetically certain.
