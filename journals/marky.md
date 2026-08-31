@@ -535,3 +535,43 @@ Two zero-seat weeks is not a slump; it is the scanner telling me its lookback wi
 - [x] Cash rule -- 100% cash on my sleeve. The space between notes, week two.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-08-31
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | 769 held on the hawk | Real bid -- cycle-high ceiling 777.88, shelf 765, month-ago base 741 |
+| VIX | 16.50 | The first crack |
+| 2Y Yield | ~4.34% on desks | 4.40% is my cement line for the September hike |
+| USD/JPY | 160 watch | Tape trigger -- intervention headlines gap things |
+| Calendar | Jobs Fri (cons +45K) / Aug CPI Sep 11 / FOMC Sep 15-16 | Friday's jobs report is the week's verdict |
+
+**Verdict:** The tape held 769 on a hawk -- that is a real bid, not a short squeeze. But VIX 16.50 is the first crack in the floor and the 2Y is leaning on my cement line. Three weekly candles into a jobs print, a CPI, and a coin-flip FOMC is not a stage for heroics. Trade the dispersion, not the index.
+
+### Picks (Proposed -- None Booked, third straight week)
+1. **V** -- 54.6 -- Strong momentum above the 12-week MA, 4W return +4.6%. And this time the tape backed it: record closes Monday ($382.41), +2.85% on the week, payments leadership inside XLF's third straight week beating SPY (wiki/financials.md, Sector Bifurcation Lane 2).
+2. **NDSN** -- 52.0 -- Low-volatility uptrend, 2.9% vol. Score: 89.
+3. **FTNT** -- 49.7 -- Technical breakout with volume fading. Score: 88. Rule 1 cleared its throat.
+
+**Cash Position:** 100% of my allocated book -- third consecutive week without a seat at the table.
+
+### The Concession (owned)
+V had REAL repo tape support this week and it still did not matter. My trailing realized hit rate is 0.0%, which puts my vote at the 0.25 floor (~9.9% share) -- V scored #6 overall, one slot below ADSK, and the risk-control pass has no backfill rule. Council Deliberation #4 named the tension explicitly and kept the dampener anyway. The chart sang in tune this week; the seat went to someone with a cleaner record. That is the rule working, not failing.
+
+### Lesson Learned
+The tape was right about V and my record still benched me. The dampener is the price of going 0-for -- the only way back to the table is booked winners, not louder charts. Overriding the dampener because the tape "looks right" is exactly the failure mode the rule exists to prevent, and I know it. Price never lies -- but neither does an 0-for ledger.
+
+### The Plan (my lines, for the record)
+Trade the dispersion, not the index. Size down into August CPI (Sep 11). The coin-flip FOMC (Sep 15-16) is not a market to be heroic in front of. Friday's jobs report (cons +45K) is the week's verdict.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- Filter quiet on commodities; 2Y ~4.34% is the rate risk to watch, not 10Y this time.
+- [x] "Good news = sell" cycle peaks -- V printed record closes Monday. Watched, not chased.
+- [x] 3+ canaries/regime flags -- VIX 16.50 first crack, USD/JPY 160 armed. Answered with size zero.
+- [x] VIX < 16 + bad breadth -- VIX 16.50, off the floor. Sideline held anyway.
+- [x] Cash rule -- 100% cash, week three. The space between notes is becoming the song.
+
+-- **Marky**, The Technician
