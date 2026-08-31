@@ -233,6 +233,8 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-31 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x3) | Ophelia (engine rode the acquittal, doctrine rode the Fed; rejects lost 216bps) | ALL (A-) | HIG (B) | 73.4% |
+| 2026-08-24 | +0.05% (Tracker P&L) | 67% | TBD | TBD | ALL (2.54%) | VICI (-3.00%) | 60.1% |
 | 2026-08-24 | B+ (3.2 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- rejections beat book again +1.15pp) | ALL (B+) | HIG (B) | 60.0% |
 | 2026-08-17 | -3.24% (Tracker P&L) | 25% | TBD | TBD | VICI (1.55%) | TER (-13.07%) | 39.6% |
 | 2026-08-17 | B (3.0 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- gate passed, tie wobble) | TER (B+) | HIG (B-) | 39.6% |
@@ -270,9 +272,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-24 (Council session -- ALL/HIG/VICI booked 13.3% each, 60% cash into the triple gate)
-**Next Audit:** 2026-08-31 (Tracker close of 2026-08-24 week + Arena scoring)
-**Current Regime:** Restrictive -- VIX 15.13, 10Y 4.738% 52W-high close (1bp under the 4.75% stress line), DXY 98.80 first sub-99 close, 3+ regime flags raised (Council Review posture); triple gate: core PCE Wed / NVDA Wed AMC / Warsh JH Fri
+**Last Updated:** 2026-08-31 (Council session -- ALL/HIG booked 13.3% each, 73.4% cash; AES trigger-blocked at booking per the DOW rule)
+**Next Audit:** 2026-09-07 (Tracker close of 2026-08-31 week + Arena scoring; note: US markets CLOSED for Labor Day -- price-dependent steps shift to the next session)
+**Current Regime:** Restrictive -- VIX 14.43 (intraday 14.13 = 2026 low), 10Y 4.72% (4.75% stress line survives a 3rd weekly test by 3bps), bear flattener (2Y ~4.34% desks), DXY 99.68 +0.9% flipping hawkish, 3+ regime flags raised (Council Review posture); week gates: jobs report Fri 9/4 (cons +45K), AVGO Thu 9/3, MFN Medicaid pricing today; September FOMC 9/15-16 with a hike ~55-58% priced
 
 ---
 
