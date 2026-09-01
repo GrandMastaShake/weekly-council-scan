@@ -27,7 +27,7 @@ This week was a story of macro whiplash, not trend. The S&P 500 eked out a +0.47
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |-------|---------------|----------------|-----------------|
-| 🏦 **Warsh's Hawkish Debut** | Fed Chair Warsh at Jackson Hole: "inflation is running above our 2% target... we have work to do" — zero forward guidance | September hike odds repriced from ~35% to ~55–58% on CME; bear flattener crushed rate-sensitives | The new Fed boss basically said "we're not done fighting inflation." That scared investors and made stocks that depend on low interest rates — like tech and real estate — very nervous. |
+| 🏦 **Warsh's Hawkish Debut** | Fed Chair Warsh at Jackson Hole: "inflation is running above our 2% target... we have work to do" — zero forward guidance | September hike odds repriced from ~35% to ~55–62% on CME; bear flattener crushed rate-sensitives | The new Fed boss basically said "we're not done fighting inflation." That scared investors and made stocks that depend on low interest rates — like tech and real estate — very nervous. |
 | 🤖 **NVDA Beat-and-Fade** | Q2 FY27: $96.22B rev (+106% YoY), Q3 guide $108B; stock +6.9% Thu, -4.6% Fri | Best earnings print of the cycle sold on a Fed speech — classic late-cycle tell; AI trade now answers to rates | NVIDIA had the best quarter imaginable, and the stock still fell the next day. That tells you investors are more worried about interest rates than they are excited about artificial intelligence. |
 | 🏥 **Healthcare Retest** | XLV -1.98% W/W but old ceiling $169.71 never tested; MRK/AMGN fresh 52W highs | Breakout retest held on thinnest volume of the advance; Monday White House drug pricing announcement is next gate | Healthcare stocks gave back some gains but held key support levels. Two big drug companies hit record highs on good news. But a government announcement Monday about drug prices could change everything. |
 | ⛽ **Oil De-escalation** | WTI -4.2% to $83.40 on US–Iran ceasefire leak; snapped two-week +11% run | Removed inflation tail that was threatening the Fed; also removed energy's geopolitical premium | Oil prices dropped because of peace talks in the Middle East. That's good for gas prices and inflation, but bad for oil stocks that had been riding the crisis. |
@@ -37,18 +37,18 @@ This week was a story of macro whiplash, not trend. The S&P 500 eked out a +0.47
 
 | Sector | Trend | 1Y Return | Week Return | Signal |
 |--------|-------|-----------|-------------|--------|
-| 🔥 Communication Services | Leading | — | +1.43% | Post-NVDA re-coupling; telecoms provided defensive ballast |
+| 🔥 Communication Services | Leading | — | +1.43% | Passed stress test; META legal peace + telecom shelter |
 | 🔥 Technology | Leading | — | +1.30% | MSFT +6.3% carried the tape; NVDA fade is warning sign |
 | 🔥 Financials | Leading | — | +1.08% | Beat SPY for third straight week; carry improves if Warsh means it |
 | 🟡 Materials | Middling | — | -0.67% | NUE tariff-shield complex promoted to core; 52W high tested and rejected |
-| 🟡 Consumer Staples | Middling | — | -0.63% | Absorbed -9.8% WMT shock and finished nearly flat; "real staples" rotation intact |
-| 🟡 Consumer Discretionary | Middling | — | -0.69% | TGT blowout +7.1% vs WMT crash -9.8%; consumer bifurcation deepening |
+| 🟡 Consumer Staples | Middling | — | -0.63% | Rejection week, not breakdown; tobacco rallied ON hawkish Friday |
+| 🟡 Consumer Discretionary | Middling | — | -0.69% | DKS -30.7% shock vs mid-tier raises; consumer bifurcation deepening |
 | 🟡 Utilities | Middling | — | -0.09% | Flat week but yield spread worst on record (-204 bps); technically broken |
-| ❄️ Semiconductors | Lagging | — | -1.30% | Post-NVDA fade unresolved; distribution under headline rally |
+| ❄️ Semiconductors | Lagging | — | -1.30% | Post-NVDA fade unresolved; MRVL -10.3% on beat = distribution confirmed |
 | ❄️ Real Estate | Lagging | — | -1.33% | Lost 50D MA on weekly close; towers (SBAC) only refuge |
-| ❄️ Industrials | Lagging | — | -1.73% | Failed 50D defense; Canada tariff cost shock looms |
+| ❄️ Industrials | Lagging | — | -1.73% | RSI 27.1 = first oversold of 2026; Canada tariff cost shock looms |
 | ❄️ Healthcare | Lagging | — | -1.98% | Breakout retest held but policy risk from Monday pricing announcement |
-| ❄️ Energy | Lagging | — | -1.51% | Prior week's breakout failed; ceasefire removed geopolitical premium |
+| ❄️ Energy | Lagging | — | -1.51% | Breakout failed at $63.46; refiners up, E&P down = leadership inversion |
 
 > **Dad Translation:** This week, the phone companies, tech giants, and banks won, while the drug companies and oil companies — last week's winners — gave back their gains. It's like a game of musical chairs where nobody wants to sit down for long. The market can't decide whether it wants growth stocks or safe stocks, so it's ping-ponging between them.
 
@@ -63,7 +63,7 @@ This week was a story of macro whiplash, not trend. The S&P 500 eked out a +0.47
 | Sectors below 50-day MA | 4 | SMH, XLI, XLU, XLRE |
 | Sectors above 200-day MA | 10 | XLK, SMH, XLF, XLI, XLB, XLE, XLV, XLP, XLY, XLRE |
 | Sectors below 200-day MA | 2 | XLC, XLU |
-| Leadership concentration | MSFT +6.3% | Single-name carried XLK; XLF leadership diffuse across carry beneficiaries; XLC supported by post-NVDA re-coupling |
+| Leadership concentration | MSFT +6.3% | Single-name carried XLK; XLF leadership diffuse across carry beneficiaries; XLC supported by META legal peace + telecom shelter |
 
 > **Dad Translation:** Most sectors went down this week, and the few that went up did so because of one or two big companies. When only three out of twelve neighborhoods are thriving — and two of them needed a single stock to carry them — it's a sign the overall market is confused and tired. The fact that utilities and communication services are below their long-term averages is a warning that not everything is healthy under the hood.
 
@@ -73,18 +73,18 @@ This week was a story of macro whiplash, not trend. The S&P 500 eked out a +0.47
 |------|-------|------------|
 | Mon Aug 31 | White House MFN Medicaid drug pricing announcement | **🔴 CRITICAL.** GLP-1 cuts explicitly in scope. LLY proxy. Watch XLV reaction. |
 | Mon Aug 31 | China August PMIs | **🟡 Moderate.** No bazooka expected. Watch materials/commodity reaction. |
-| Tue Sep 2 | AI (company) earnings | **🟡 Moderate.** Small-cap AI sentiment read. |
-| Wed Sep 3 | AVGO earnings | **🔴 CRITICAL.** Semis confirmation post-NVDA; Google-Marvell warrant threat. |
-| Thu Sep 11 | August CPI | **🔴 CRITICAL.** First CPI post-Warsh. >0.3% m/m = hawkish re-acceleration. |
+| Tue Sep 1 | ISM Manufacturing (August) + JOLTS (July) | **🟡 Moderate.** Manufacturing verdict print; <53 = growth bias dies. |
+| Wed Sep 2 | ADP Employment + AVGO earnings AMC | **🔴 CRITICAL.** AVGO is second AI boss after MRVL -10.3% warning. |
+| Thu Sep 3 | ISM Services (August) + Fed speakers | **🟡 Moderate.** Services labor sub-index <47 = cracking. |
+| Fri Sep 4 | August Jobs Report | **🔴 REGIME EVENT.** NFP < 0 for 2nd month = labor crack confirmed. |
 | Sep 15–16 | September FOMC + SEP/dot plot | **🔴 CRITICAL.** Live meeting. Entire Council posture hinges here. |
 | Sep 17–18 | BOJ meeting | **🟡 Moderate.** Hike odds 84–87%. USD/JPY at 160.04 = intervention risk. |
 
 ### The Bottom Line
 
-The market regime has shifted from "long-end rates matter" to **"front-end Fed policy matters."** Chair Warsh's hawkish Jackson Hole debut repriced September hike odds to ~55–58%, flipped the curve into a bear flattener, and proved that even the best earnings print of the cycle (NVDA) cannot withstand a Fed that is not done. The rotation story is no longer growth vs. value — it is "what survives a live front-end hike." The Council's posture is **defensive-aggressive**: 15–20% cash, overweight healthcare (on retest) and towers (SBAC/CCI), zero utilities, reduced tech/semis. The single most important thing to watch is the 2-year Treasury yield (~4.34% Friday desks); a sustained break above 4.40% would force a wholesale repricing of risk assets. Until the September FOMC dust settles, the Council is keeping powder dry and letting others fight over the Fed's intentions.
+The market regime has shifted from "long-end rates matter" to **"front-end Fed policy matters."** Chair Warsh's hawkish Jackson Hole debut repriced September hike odds to ~55–62%, flipped the curve into a bear flattener, and proved that even the best earnings print of the cycle (NVDA) cannot withstand a Fed that is not done. The rotation story is no longer growth vs. value — it is "what survives a live front-end hike." The Council's posture is **defensive-aggressive**: ~60% cash, overweight healthcare (on retest) and towers (SBAC/CCI), zero utilities, reduced tech/semis. The single most important thing to watch is the 2-year Treasury yield (~4.34% Friday desks); a sustained break above 4.40% would force a wholesale repricing of risk assets. Until the September FOMC dust settles, the Council is keeping powder dry and letting others fight over the Fed's intentions.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
-
 <!-- MARKET BRIEF END -->
 
 ---
