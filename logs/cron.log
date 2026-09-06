@@ -1,3 +1,109 @@
 2026-08-03T09:03:47-0400 -- Weekly Council Scan FULL COUNCIL SESSION started
-[... full 108-line reconstructed log ...]
-2026-09-06T19:47:01-04:00 -- SEMICONDUCTORS + ECONOMIC CALENDAR WIKI UPDATE START entry with notes
+2026-08-03T09:08:00-0400 -- STEP 0: Closed week 2026-07-27 portfolio (weighted_return: -1.52%, alpha: -2.23%)
+2026-08-03T09:08:00-0400 -- STEP 0b: Shadow book counterfactuals computed (2026-07-20: shadow -0.06% vs official -1.83%, delta +1.77%; 2026-07-27: shadow -1.82% vs official -1.52%, delta -0.30%)
+2026-08-08T17:00:42Z -- cron.log: Full Council Session 2026-08-03 [reconstructed]
+2026-08-10T16:40:28Z -- cron log 2026-08-10: session complete (engine abort, arena scored+locked, all ledgers current) [reconstructed]
+2026-08-15T13:41:32Z -- cron log: Data Feed Builder start (2026-08-14) [reconstructed]
+2026-08-15T14:14:20Z -- cron.log: Tech wiki update START (Sat 2026-08-15) [reconstructed]
+2026-08-15T14:40:47Z -- cron.log: Tech wiki update COMPLETE (Sat 2026-08-15) - SUCCESS [reconstructed]
+2026-08-15T15:11:43Z -- cron.log - Financials wiki update START (2026-08-15) [reconstructed]
+2026-08-15T15:35:01Z -- cron.log - Financials wiki update COMPLETE (2026-08-15) [reconstructed]
+2026-08-15T15:41:35Z -- cron.log - Healthcare wiki job START (2026-08-15) [reconstructed]
+2026-08-15T16:12:24Z -- cron.log - Consumer Sectors wiki update START (2026-08-15) [reconstructed]
+2026-08-15T16:15:54Z -- cron.log - Healthcare wiki job COMPLETE (2026-08-15) [reconstructed]
+2026-08-15T17:01:33Z -- cron.log - Consumer Sectors wiki update COMPLETE (2026-08-15) [reconstructed]
+2026-08-15T17:11:49Z -- cron.log - Industrials wiki update START (2026-08-15) [reconstructed]
+2026-08-15T17:36:34Z -- cron.log - Industrials wiki update COMPLETE (2026-08-15) [reconstructed]
+2026-08-15T17:42:52Z -- cron.log: Materials + Real Estate wiki update START [reconstructed]
+2026-08-15T18:32:05Z -- cron log: utilities+energy wiki start [reconstructed]
+2026-08-15T18:36:16Z -- cron.log - Materials + Real Estate combined wiki job COMPLETE (issue #47) [reconstructed]
+2026-08-15T18:46:41Z -- cron.log - Communication Services wiki update START (Sat 2026-08-15) [reconstructed]
+2026-08-15T19:22:05Z -- cron.log - Communication Services wiki update COMPLETE (Sat 2026-08-15) [reconstructed]
+2026-08-15T19:27:13Z -- cron log: utilities+energy wiki end [reconstructed]
+2026-08-15T19:42:57Z -- cron.log - Canary Watch START 2026-08-15 [reconstructed]
+2026-08-15T20:06:05Z -- cron.log - Canary Watch COMPLETE 2026-08-15 [reconstructed]
+2026-08-15T20:13:04Z -- cron.log - Earnings Surveillance START entry (2026-08-15) [reconstructed]
+2026-08-15T20:31:10Z -- cron.log - Earnings Surveillance COMPLETE entry (2026-08-15) [reconstructed]
+2026-08-15T20:59:28Z -- cron.log - Synthesis Agent run start 2026-08-15 [reconstructed]
+2026-08-15T21:20:19Z -- cron.log - Synthesis Agent complete 2026-08-15 [reconstructed]
+2026-08-15T23:26:27Z -- cron.log: Crew Auditor START 2026-08-15 19:23 ET [reconstructed]
+2026-08-15T23:51:06Z -- cron.log: Crew Auditor END 2026-08-15 19:49 ET - 10 PASS / 1 MISSING / 1 STALE, issues #52 #53 [reconstructed]
+2026-08-16T06:34:08Z -- cron.log: data feed recovery entry for issue #52 (owner-directed) [reconstructed]
+2026-08-17T00:59:44Z -- cron.log: semiconductors + economic calendar recovery (issue #53) END [reconstructed]
+2026-08-17T14:42:32Z -- cron.log: FULL COUNCIL SESSION 2026-08-17 -- SUCCESS [reconstructed]
+2026-08-22T14:15:11Z -- cron.log: Tech wiki update START (2026-08-22) [reconstructed]
+2026-08-22T15:59:07Z -- DATA FEED BUILDER START (Friday 2026-08-21) [reconstructed]
+2026-08-22T16:13:56Z -- cron.log - Consumer Sectors wiki update START (2026-08-22) [reconstructed]
+2026-08-22T16:28:33Z -- cron.log: tech wiki update start 2026-08-22 [reconstructed]
+2026-08-22T16:42:16Z -- cron.log - Consumer Sectors wiki update COMPLETE (2026-08-22): issue #55 [reconstructed]
+2026-08-22T16:57:24Z -- logs: financials wiki update START (2026-08-22) [reconstructed]
+2026-08-22T17:02:28Z -- cron.log: tech wiki update complete 2026-08-22 [reconstructed]
+2026-08-22T17:22:26Z -- logs: financials wiki update COMPLETE (2026-08-22) [reconstructed]
+2026-08-22T17:23:01Z -- cron.log: Industrials wiki update START (2026-08-22) [reconstructed]
+2026-08-22T17:28:40Z -- cron.log - Healthcare wiki update START (2026-08-22) [reconstructed]
+2026-08-22T17:38:58Z -- cron.log: Industrials wiki update COMPLETE (2026-08-22) [reconstructed]
+2026-08-22T17:46:49Z -- Materials + Real Estate wiki update START (2026-08-22) [reconstructed]
+2026-08-22T17:52:47Z -- cron.log - Healthcare wiki update COMPLETE (2026-08-22) [reconstructed]
+2026-08-22T18:00:53Z -- logs: data feed recovery entry for 2026-08-21 [reconstructed]
+2026-08-22T18:13:10Z -- cron.log - Materials + Real Estate wiki update COMPLETE (2026-08-22) [reconstructed]
+2026-08-22T18:23:45Z -- cron.log: Utilities + Energy wiki update START (2026-08-22) [reconstructed]
+2026-08-22T18:43:36Z -- Comm Services wiki update START (2026-08-22) [reconstructed]
+2026-08-22T18:54:08Z -- Comm Services wiki update COMPLETE - issue #61 - 2026-08-22 [reconstructed]
+2026-08-22T19:15:43Z -- cron.log - Utilities + Energy END entry (2026-08-22) [reconstructed]
+2026-08-22T19:37:34Z -- chore(log): Semiconductors + Economic Calendar job START 2026-08-22 [reconstructed]
+2026-08-22T19:46:22Z -- cron.log - Canary Watch START 2026-08-22 [reconstructed]
+2026-08-22T20:03:59Z -- ops(cron): SEMICONDUCTORS + ECONOMIC CALENDAR END entry 2026-08-22 [reconstructed]
+2026-08-22T20:08:02Z -- cron.log - Canary Watch COMPLETE 2026-08-22 [reconstructed]
+2026-08-22T20:18:12Z -- Earnings Surveillance START 2026-08-22 [reconstructed]
+2026-08-23T07:34:09Z -- Earnings Surveillance END - issue #63 [reconstructed]
+2026-08-23T07:56:57Z -- logs/cron.log - Synthesis Agent entry 2026-08-23 [reconstructed]
+2026-08-23T13:40:41Z -- cron.log: Saturday Research Crew Auditor START 2026-08-23 [reconstructed]
+2026-08-23T14:38:51Z -- cron.log: Saturday Research Crew Auditor END 2026-08-23 - 13 PASS / 0 FAIL / 0 MISSING [reconstructed]
+2026-08-24T14:56:20Z -- cron.log: Full Council Session 2026-08-24 run - all SUCCESS [reconstructed]
+2026-08-24T15:06:26Z -- Fix cron.log transcription (JBSS Q4, comm-services line) + current.yaml CRLF round-trip [reconstructed]
+2026-08-29T13:53:00Z -- cron.log: DATA FEED BUILDER START (Friday 2026-08-28) [reconstructed]
+2026-08-29T15:01:19Z -- cron.log - Tech wiki update START 2026-08-29 [reconstructed]
+2026-08-29T15:24:31Z -- cron.log - Financials wiki update START (2026-08-29) [reconstructed]
+2026-08-29T16:01:58Z -- cron.log - Healthcare wiki update START (2026-08-29) [reconstructed]
+2026-08-29T17:13:28Z -- cron.log - Tech wiki update COMPLETE 2026-08-29 [reconstructed]
+2026-08-29T13:40:21-04:00 -- MATERIALS + REAL ESTATE WIKI UPDATE (wiki/materials.md + wiki/real-estate.md) START -- Saturday Research Crew (combined job, parallel sub-agent tracks)
+2026-08-29T13:44:38-04:00 -- DATA FEED BUILDER END (Friday 2026-08-28) -- STATUS: SUCCESS; weekly/2026-08-28.json (331 series) pushed; feed+derive gates 2 ok/0 warn/0 fail
+2026-08-29T13:58:00-04:00 -- HEALTHCARE SECTOR WIKI UPDATE (wiki/healthcare.md) COMPLETE -- STATUS: SUCCESS; XLV $171.16 (-1.98% W/W); healthcare.md pushed (626b557); issue #76 opened
+2026-08-29T14:12:00-04:00 -- SATURDAY RESEARCH CREW: UTILITIES + ENERGY -- START (parallel sub-agent tracks: wiki/utilities.md + wiki/energy.md)
+2026-08-29T14:38:21-04:00 -- MATERIALS + REAL ESTATE WIKI UPDATE COMPLETE -- STATUS: SUCCESS; materials.md pushed (161fbb3): XLB $53.18 (-0.67% W/W); real-estate.md pushed (ac0634f): XLRE $44.46 (-1.38% W/W); NO issue opened
+2026-08-29T18:57:39Z -- cron.log - Materials + Real Estate combined crew COMPLETE (2026-08-29) [reconstructed]
+2026-08-29T19:14:21Z -- cron.log - Healthcare wiki update COMPLETE (2026-08-29): issue #76 [reconstructed]
+2026-08-29T15:38:10-04:00 -- SEMICONDUCTORS + ECONOMIC CALENDAR WIKI UPDATE (wiki/semiconductors.md + wiki/economic-calendar.md) START -- Saturday Research Crew (combined job, parallel sub-agent tracks)
+2026-08-29T15:39:35-04:00 -- CANARY WATCH START (Saturday Research Crew)
+2026-08-29T20:02:37Z -- cron.log - CANARY WATCH START 2026-08-29 [reconstructed]
+2026-08-30T07:36:10Z -- cron.log - CANARY WATCH COMPLETE 2026-08-29 [reconstructed]
+2026-08-30T13:26:07Z -- cron: Saturday Research Crew semiconductors + economic-calendar END 2026-08-30 [reconstructed]
+2026-08-30T13:46:11Z -- logs: synthesis agent start entry 2026-08-30 [reconstructed]
+2026-08-30T13:51:12Z -- logs: synthesis agent end entry 2026-08-30 [reconstructed]
+2026-08-30T21:48:30Z -- cron.log - recovery entries 2026-08-30: Financials/Industrials END, Utilities+Energy PARTIAL END, restored clobbered Semis+Econ END line [reconstructed]
+2026-08-30T18:52:00-04:00 -- CONSUMER SECTORS WIKI UPDATE (wiki/consumer-discretionary.md + wiki/consumer-staples.md) START -- Saturday Research Crew
+2026-08-30T20:31:55-04:00 -- CONSUMER SECTORS WIKI UPDATE COMPLETE -- STATUS: SUCCESS; consumer-discretionary.md pushed (e2d3bd4) + consumer-staples.md pushed (34171f1); issues #79 + #80 opened
+2026-08-30T22:01:00-04:00 -- EARNINGS SURVEILLANCE UPDATE (wiki/earnings-surveillance.md) START -- Saturday Research Crew
+2026-08-31T02:57:49Z -- cron.log: Earnings Surveillance run START (2026-08-30 22:01 ET) [reconstructed]
+2026-08-30T23:40:00-04:00 -- EARNINGS SURVEILLANCE UPDATE (wiki/earnings-surveillance.md) COMPLETE -- STATUS: SUCCESS; earnings-surveillance.md pushed (610d238); issue #81 opened
+2026-08-31T01:28:00-04:00 -- COMMUNICATION SERVICES WIKI UPDATE (wiki/communication-services.md) START -- Saturday Research Crew (delayed fire)
+2026-08-31T02:31:00-04:00 -- COMMUNICATION SERVICES WIKI UPDATE (wiki/communication-services.md) COMPLETE -- STATUS: SUCCESS; XLC $112.99 (+1.43% W/W); communication-services.md pushed (d64a876b); NO issue opened
+2026-08-31T08:35:00-04:00 -- WEEKLY COUNCIL SCAN (FULL COUNCIL SESSION) START -- week of 2026-08-31 -- Monday Council cron
+2026-08-31T18:17:16Z -- cron.log: FULL COUNCIL SESSION 2026-08-31 complete [reconstructed]
+2026-09-01T00:07:36Z -- SYNTHESIS AGENT REWRITE END -- STATUS: SUCCESS; wiki/synthesis.md (37925448) + README.md (a49fb42c) pushed via MCP; all 15 wikis verified fresh (Aug 29-30)
+2026-09-01T00:23:02Z -- cron.log - Synthesis Agent rewrite start+end entries [reconstructed]
+2026-09-05T09:47:00-04:00 -- DATA FEED BUILDER START (Friday 2026-09-04)
+2026-09-05T10:10:00-04:00 -- TECH SECTOR WIKI UPDATE (wiki/tech.md) START -- Saturday Research Crew
+2026-09-05T11:43:00-04:00 -- HEALTHCARE SECTOR WIKI UPDATE (wiki/healthcare.md) START -- Saturday Research Crew (single-agent, sequential tracks)
+2026-09-05T15:54:07Z -- cron.log - Healthcare wiki update START (2026-09-05) [reconstructed]
+2026-09-05T12:31:03-04:00 -- HEALTHCARE SECTOR WIKI UPDATE (wiki/healthcare.md) COMPLETE -- STATUS: SUCCESS; XLV $171.45 (+0.17% W/W); healthcare.md pushed (7072d53); issue #84 opened
+2026-09-05T16:43:53Z -- cron.log: HEALTHCARE SECTOR WIKI UPDATE COMPLETE (2026-09-05) - issue #84 [reconstructed]
+2026-09-05T13:18:00-04:00 -- INDUSTRIALS SECTOR WIKI UPDATE (wiki/industrials.md) START -- Saturday Research Crew
+2026-09-05T17:32:43Z -- cron.log: Industrials wiki update START (2026-09-05) [reconstructed]
+2026-09-05T13:42:56-04:00 -- MATERIALS + REAL ESTATE WIKI UPDATE (wiki/materials.md + wiki/real-estate.md) START -- Saturday Research Crew (single-agent sequential tracks)
+2026-09-05T14:10:13-04:00 -- SATURDAY RESEARCH CREW: UTILITIES + ENERGY -- START (single-agent sequential tracks; week ending 2026-09-04)
+2026-09-05T14:10:13-04:00 -- SATURDAY RESEARCH CREW: UTILITIES + ENERGY -- START (single-agent sequential tracks) [DUPLICATE START LINE -- superseded by 15:10 END entry; kept for audit trail]
+2026-09-05T14:45:15-04:00 -- MATERIALS + REAL ESTATE WIKI UPDATE COMPLETE -- STATUS: SUCCESS; materials.md pushed (91f95c5): XLB $52.44 (-1.39% W/W); real-estate.md pushed (febcedd): XLRE $43.93 (-1.24% W/W); 10Y 4.784% STRESS LINE TRIPPED; NO issue
+2026-09-05T15:10:00-04:00 -- SATURDAY RESEARCH CREW: UTILITIES + ENERGY -- END -- STATUS: SUCCESS; utilities.md pushed (763033e); energy.md pushed (e83e23c); issues #85 + #86 opened
+2026-09-05T15:35:00-04:00 -- SEMICONDUCTORS + ECONOMIC CALENDAR WIKI UPDATE (wiki/semiconductors.md + wiki/economic-calendar.md) START -- Saturday Research Crew (single-agent sequential tracks per 2026-09-04 SINGLE-AGENT RULE)
+2026-09-06T19:55:09-04:00 -- SEMICONDUCTORS + ECONOMIC CALENDAR WIKI UPDATE (wiki/semiconductors.md + wiki/economic-calendar.md) START -- Saturday Research Crew (single-agent run 2026-09-06, week ending 2026-09-05; prior 2026-09-05T19:38:34Z START never completed; log reconstructed via commit-patch chaining since get_file_contents returned no text in this session; older entries flagged [reconstructed] where exact wording unrecoverable; two prior write attempts on this file accidentally pushed placeholder text -- this is the corrected restore)
