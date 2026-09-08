@@ -150,13 +150,13 @@ Narrative grades do not affect the composite letter grade but feed into the "Les
   Sector Rotation:    [Hit / Partial / Miss]
   Micro Alpha:        [Hit / Partial / Miss]
 
-  ┌─────────────────────────────────────────────────────────────┐
+  ┌─────────────────────────────────────────────────────────┐
   │  AGENT STANDINGS (4-week rolling)                           │
-  ├─────────────────────────────────────────────────────────────┤
+  ├────────────────────────────────────────────────────────────────┤
   │  1. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
   │  2. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
   │  3. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
-  └─────────────────────────────────────────────────────────────┘
+  └─────────────────────────────────────────────────────────┘
 
   Lessons Learned:
   • [What worked]
@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-08-31 | -0.04% (Tracker P&L) | 0% | TBD | TBD | ALL (-0.21%) | HIG (-0.08%) | 73.4% |
 | 2026-08-31 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x3) | Ophelia (engine rode the acquittal, doctrine rode the Fed; rejects lost 216bps) | ALL (A-) | HIG (B) | 73.4% |
 | 2026-08-24 | +0.05% (Tracker P&L) | 67% | TBD | TBD | ALL (2.54%) | VICI (-3.00%) | 60.1% |
 | 2026-08-24 | B+ (3.2 -- analysis quality) | TBD (week open) | Marky (3.55 holds) | Ophelia (1.50 -- rejections beat book again +1.15pp) | ALL (B+) | HIG (B) | 60.0% |
