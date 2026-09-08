@@ -1,0 +1,43 @@
+week: '2026-09-08'
+status: open
+positions:
+- ticker: LMT
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Real Q2 beat plus a Citigroup target hike to $691; down over 15% from its
+    August close on pure duration and multiple compression, not a fundamentals problem.
+    Score: 96. (confidence: 82.5)'
+  entry_price: 526.23
+  entry_date: '2026-09-08'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: ETN
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Quality at 26x forward, backed by real 65% YoY data-center revenue growth
+    in Electrical Americas and a fresh $242M Arkansas capacity expansion. Score: 88.
+    (confidence: 74.0)'
+  entry_price: 421.11
+  entry_date: '2026-09-08'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 769.55
+vix_at_entry: 15.3
+fed_stance: Hold. Rates 3.50-3.75%; August NFP +162K blew through consensus, pushing
+  September hike odds from ~49% to over 60%; 10Y closed above the 4.75% stress line
+  for a second straight week (4.79%), with August CPI (Sep 11) the decisive gate before
+  the FOMC (Sep 15-16).
+total_weight: 0.266
+cash_weight: 0.734

@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-09-08
+
+Booked: LMT 13.3% / ETN 13.3% (73.4% cash -- Council Review posture, 3 regime flags broken, CPI Sep 11 the decisive gate). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| CEG | 80 | 62.0 | Consensus candidate -- fell below the 10% minimum position size after the dampened vote shares (Ophelia at the 0.25 trailing hit-rate floor); the nuclear/data-center scarcity thesis is real but she herself doubts the rate-decoupling is durable |
+| VST | 78 | 60.0 | Same scarcity thesis as CEG, same min-size floor; her own doctrine this week ("hold reduced exposure into CPI") argues against chasing a decoupling trade she doesn't trust will survive the next rate move |
+| MO | 71 | 55.5 | Real-yield basket name, screens cheap against a 4.8% 10-year -- dropped by the same min-size floor, not by conviction |
+
+counterfactual: to be computed (date-pinned Mon 2026-09-08 close -> Fri 2026-09-11 close at the next weekly run).
+
+---
+
 ### Week of 2026-08-31
 
 Booked: ALL 13.3% / HIG 13.3% (73.4% cash -- Council Review posture, 3+ regime flags broken, jobs-report Friday; AES trigger-blocked at booking per the DOW rule). Ophelia's rejected candidates:

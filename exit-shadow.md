@@ -4,6 +4,19 @@
 
 ## Entries
 
+### Week of 2026-09-08
+
+Book: LMT 13.3% / ETN 13.3% / cash 73.4%. Entry prices = Tuesday 2026-09-08 live morning prints at booking (week open shifted from Monday 9/7 -- Labor Day; tracker, portfolio/current.yaml).
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| LMT @ $526.23 (Cecil) | **CORE** -- large-cap defense prime, real beat + target hike, pure multiple compression | -5% = $499.92 | XLI weekly close below its 200D (~$170-171, hard floor $168.00), or 10Y close > 4.85% | 6 weeks (Oct 20); named gates inside the window: CPI Sep 11, FOMC Sep 15-16, BOJ Sep 17-18 | Trim 1/3 at +15% ($605.16); remainder trails -15% from HWM |
+| ETN @ $421.11 (Cecil) | **CORE** -- AI data-center power buildout, real 65% YoY growth, but 26x forward | -5% = $400.05 | Same XLI 200D backstop, or a hyperscaler capex cut materially undercutting the AI-power thesis | 6 weeks (Oct 20); same named gates | Trim 1/3 at +15% ($484.28); remainder trails -15% from HWM |
+
+outcome: to be computed (score Monday 2026-09-14 against date-pinned daily bars 2026-09-08 -> 2026-09-11).
+
+---
+
 ### Week of 2026-08-31
 
 Book: ALL 13.3% / HIG 13.3% / cash 73.4%. Entry prices = Monday 2026-08-31 live morning prints at booking (tracker, portfolio/current.yaml).
