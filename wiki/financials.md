@@ -8,9 +8,9 @@
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 4W Ago | Change |
+| Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | **$58.10** | $56.94 | **+2.04%** |
+| Price | **$58.10** | $58.05 (close) | **+0.09%** |
 | 52W Range | $47.67 – $58.41 | — | — |
 | AUM | ~$57.9B | — | — |
 | YTD Return | **~+6.0%** | — | — |
@@ -19,59 +19,61 @@
 | Dividend Yield | ~1.4% (carried) | — | — |
 | Beta | ~0.7 (3Y, carried) | — | — |
 | Total Holdings | 76 | — | — |
-| Avg Daily Volume | ~25.3M shares (Mon–Thu this week) | — | — |
 
-**Marky Tape Read:** **Fakeout → re-reclaim.** Last week's failed breakout got its second attempt and stuck — for now. XLF opened Monday at $58.22, printed the week's closing high Tuesday ($58.31) as V and MA tagged record closes, then bled into the keynote: Thursday's $57.88 was the week's closing low as the Street de-risked Warsh. Friday delivered the answer — hawkish Warsh (September hike odds ~35% → ~62%), the 2Y up ~14 bps to 4.34%, and XLF *rallied into the bell*: +0.38% Friday to a **$58.10 weekly close, back above the $58.00 pivot**, $0.06 under the record weekly close ($58.16, 8/14). Higher-for-longer is NII for the money centers, and the tape said so. RSI ~56 (from ~51), the 50D MA ($56.36, rising) was never in play, 200D $53.33. Third straight week beating SPY (+1.08% vs. +0.47%) — and this week was offense again, not "losing less." Caveat: the reclaim came *on* a rates shock with the 2Y leading. If September actually hikes, $58.41 (8/05 intraday high) is the line that matters next.
+**Marky Tape Read:** A quiet, holiday-shortened week (Labor Day Monday closed) that ended on a jobs-report jolt. XLF opened the week near $58.05 and closed Friday at **$58.10, effectively flat (+0.09%) w/w** — but the flatness masks a violent internal rotation. The August jobs report (Friday AM) blew past consensus (+162K vs. ~53-56K expected), unemployment held at 4.1%, and September hike odds jumped from ~49% to ~60-62% intraday. SPY sold off modestly on the print (-0.38% Friday) while the front end of the curve repriced. XLF absorbed the shock better than the broad tape — a hawkish jobs report is a mixed bag for banks (higher-for-longer NII vs. deposit-cost drag), and the sector essentially shrugged. RSI likely mid-50s; XLF remains inside its $57.48-$58.41 range from two weeks ago, still shy of the $58.16 record weekly close.
 
-**Ophelia Macro Read:** The gate fired, and it fired hawkish. Warsh's debut keynote killed forward guidance as a practice ("overstayed its welcome"), said the quiet part — "we have work to do" on inflation, 54% of the PCE basket running >3% y/y, financial conditions "not at present restrictive" — and refused to pre-commit: "a discipline, not a decision." CME FedWatch repriced September from ~35% hike to ~60–62%. The curve did the talking: **2Y 4.24% → 4.34% (Friday alone +14 bps), 10Y 4.738% → 4.73%, 30Y 5.28% → ~5.21% — the 10Y–2Y spread bear-FLATTENED ~+50 → ~+39 bps**, the sharpest weekly flattening of this regime. Long-end relief (30Y backing off the 19-year-high stress zone, doubled buybacks working) plus a repricing front end is textbook higher-for-longer flattening. The wild card unwound: a **US–Iran ceasefire was reported late Tuesday** — WTI −4.2% on the week to $83.40, Brent back under $86 — even as fresh secondary sanctions landed across five Iranian sectors (the deal is reported, not signed). Core PCE printed in line (+3.3% YoY, unchanged from June). VIX fell to 14.43. DXY firmed +0.9% to 99.68. Net: the rate tailwind the regionals needed — a *falling* front end — is officially off the table until August CPI (~Sept 10–11). What the sector got instead is NII optics, and on Friday it took them.
+**Ophelia Macro Read:** The single dominant story of the week was Friday's NFP beat: **+162,000 jobs vs. a consensus of roughly 53-56K**, nearly triple expectations, with unemployment steady at 4.1% and labor force participation ticking up to 61.6%[cite:311]. This resolves — hawkishly — the "broken jobs market" narrative that had been alive since July's revised -23K/+21K prints. Citigroup's economists immediately pushed their Fed rate-cut forecast out to June 2027[cite:312][cite:314]. CME FedWatch odds for a September 15-16 hike jumped from ~49% to ~60-62%[cite:311][cite:320]. The 2Y Treasury, already elevated after Fed Chair Warsh's hawkish Jackson Hole keynote the prior week, extended its climb — the 2Y hit its highest level since January 2025 on September 4, at 4.34-4.37%, while the 10Y reached its highest level since November 2023 near 4.78-4.79%[cite:266][cite:274]. **The 2Y-10Y spread narrowed further to roughly 41 basis points (from ~43bp the day before and ~72bp at the start of 2026)** — a continuation of the bear-flattening regime that has now persisted for multiple weeks[cite:266][cite:268][cite:272]. Bear flattening this late into a hiking scare is the textbook signal this wiki has been tracking: it helps asset-sensitive money centers reprice loans faster than deposits, and it taxes deposit-heavy regionals precisely when they need curve relief most.
 
 ---
 
 ## TOP HOLDINGS & MOMENTUM
 
-| Rank | Ticker | Name | Weight | Price | Weekly Change | 52W High | 52W Low | Yield | P/E | Signal |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | JPM | JPMorgan Chase | ~11.6% | $357.62 | +1.72% | $366.50 | $279.10 | 1.68% | ~15.4 | ⚡ |
-| 2 | BAC | Bank of America | ~4.9% | $62.32 | +1.02% | $65.23 | $46.12 | 2.05% | ~14.4 | ⚡ |
-| 3 | WFC | Wells Fargo | ~3.2% | $86.69 | **+3.40%** | $97.76 | $72.78 | 2.31% | ~12.6 | 🔥 |
-| 4 | GS | Goldman Sachs | ~3.8% | $1,033.99 | −0.51% | $1,153.99 | $721.16 | 1.93% | ~16.0 | ⚡ |
-| 5 | MS | Morgan Stanley | ~3.2% | $214.77 | +0.27% | $232.25 | $145.66 | 2.14% | ~17.4 | ⚡ |
-| 6 | C | Citigroup | ~2.8% | $132.90 | +0.95% | $147.96 | $92.96 | 2.02% | ~14.5 | ⚡ |
-| 7 | PNC | PNC Financial | ~1.5% | $242.22 | −0.37% | $258.96 | $176.88 | 3.30% | ~13.3 | ⚠️ |
-| 8 | BNY | BNY Mellon (was BK) | ~1.5% | $162.50 | **+2.53%** | $165.69 | $102.63 | 1.31% | ~19.0 | ⚡ |
-| 9 | USB | U.S. Bancorp | ~1.3% | $62.47 | +0.68% | $66.08 | $45.02 | 3.33% | ~12.5 | ⚡ |
-| 10 | TFC | Truist Financial | ~1.0% | $50.43 | +0.02% | $56.20 | $40.78 | 4.13% | ~11.6 | ⚡ |
+| Rank | Ticker | Name | Price | Weekly Change | 52W High | 52W Low | Signal |
+|---|---|---|---|---|---|---|---|
+| 1 | JPM | JPMorgan Chase | $358.64 | +0.80% | $366.50 | $279.10 | ⚡ |
+| 2 | BAC | Bank of America | $62.68 | +1.70% | $65.23 | $46.12 | ⚡ |
+| 3 | WFC | Wells Fargo | $89.96 | **+5.72%** | — | — | 🔥 |
+| 4 | C | Citigroup | $137.72 | +3.68% | — | — | 🔥 |
+| 5 | USB | U.S. Bancorp | $63.37 | +0.83% | — | — | ⚡ |
+| 6 | PNC | PNC Financial | $245.60 | +0.54% | — | — | ⚡ |
+| 7 | GS | Goldman Sachs | $1,038.61 | -0.43% | — | — | ⚡ |
+| 8 | MS | Morgan Stanley | $217.70 | +0.84% | — | — | ⚡ |
+| 9 | SCHW | Charles Schwab | $109.29 | +0.59% | — | — | ⚡ |
+| 10 | V | Visa | $375.07 | -1.38% | — | — | ⚠️ |
+| 11 | MA | Mastercard | $579.21 | -2.48% | — | — | ⚠️ |
+| 12 | AXP | American Express | $326.16 | -2.64% | — | — | ⚠️ |
+| 13 | PGR | Progressive | $218.95 | +0.50% | — | — | ⚡ |
+| 14 | CB | Chubb | $341.59 | +0.93% | — | — | ⚡ |
+| 15 | TRV | Travelers | $369.35 | +0.46% | — | — | ⚡ |
+| 16 | BLK | BlackRock | $1,122.29 | **-4.44%** | — | — | 🔴 |
+| — | BRK.B | Berkshire Hathaway | $506.03 | +0.39% | — | — | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / major decline
-> **Weights refreshed** to SSGA official fund holdings as of 8/27/2026: JPM 11.60%, BRK.B 11.29%, V 7.70%, MA 5.84%, BAC 4.88%, GS 3.75%, WFC 3.18%, MS 3.15%, C 2.77%, AXP 2.17%. BRK.B, V, MA and AXP sit in the fund's *actual* top 10 — they are covered in the bifurcation and narrative below; this table tracks the bank complex per page convention.
-> **Ticker migration — BK → BNY:** the four-week Yahoo 404 streak is explained — the NYSE ticker migrated from BK to BNY. Last week's stale "~$137.00" was ~13% stale: the actual 8/21 close was $158.49, Friday 8/28 closed $162.50 (+2.53% W/W). Row rebased and flagged for the holdings linter; the old BK baseline is retired.
 
-**Sector Bifurcation — The NII Trade vs. The Curve-Shape Trade:** Last week's three-speed giveback resolved into a clean two-lane split — rate *level* winners vs. curve *shape* losers:
+**Sector Bifurcation — The Rate-Beneficiary Lane vs. The Payments/Asset-Management Slump:** This was a rate-level week, and the split ran cleanly along that fault line.
 
-- **Lane 1 — Money Centers + the Trust Bank (higher-for-longer NII):** WFC +3.40% led the complex (uncapped balance sheet, 2026 NII guide ~$50B now looking conservative), BNY +2.53% to $162.50 (hawkish Fed lifts trust-bank NII on client cash; 19% dividend hike to $0.63 took effect in Q3), JPM +1.72% to $357.62 (2.4% off its high), BAC +1.02%. A hawkish Fed is gravy when your assets reprice faster than your deposits.
+- **Lane 1 — Money Centers riding the hawkish repricing:** WFC **+5.72%** led the entire complex — undervalued after last quarter's beat, and the market's read is that a higher-for-longer Fed extends the bank's NII tailwind[cite:319]. C **+3.68%** despite a mid-week SEC subpoena headline (Goldman, JPMorgan, Citi and BofA subpoenaed over margin lending to a hedge fund that suffered a 67% drawdown) — the stock shrugged it off, instead trading on a "record revenue quarter, 31% undervalued" narrative and progress on a China brokerage license[cite:317][cite:315]. BAC +1.70%, MS +0.84%, USB +0.83%, PNC +0.54% all posted modest gains consistent with the NII-tailwind read.
 
-- **Lane 2 — The Actual Engine (BRK.B + V + MA ≈ 25% of the fund):** V +2.85% and MA +2.53% — both printed **record closes Monday** ($382.41 / $599.86) on resilient volume narratives, then held most of it through the hawk shock. BRK.B +1.85% to $505.00 — the 11.29% weight with the cash pile that higher-for-longer keeps fattening. This trio, not the banks, is why XLF closed +1.08%.
+- **Lane 2 — Payments and asset management took the hit:** BLK **-4.44%** was the week's biggest laggard among large financials — the stock snapped a six-session losing streak mid-week but still closed down sharply, even as analysts nudged fair-value estimates higher (to ~$1,320) after the Q2 beat[cite:281][cite:282][cite:283]; the drag looks more macro (rate-driven multiple compression on a long-duration asset manager) than company-specific. AXP -2.64%, MA -2.48% and V -1.38% all gave back ground — AXP remains the sector's weakest 2026 performer among payments names, down roughly 9% YTD against Visa's +9%, after a Q2 revenue miss versus Visa, Mastercard, Synchrony and Bread Financial[cite:287][cite:291].
 
-- **Lane 3 — Regionals & SMIDs (curve-shape casualties):** KRE −0.75% while XLF rose — the split is the story. PNC −0.37% (the group's lone money-center-complex decliner), TFC +0.02% dead flat into Tuesday's CEO handoff, USB +0.68%. Bear flattening (2Y +10 bps W/W while the 30Y *fell* 7 bps) taxes deposit funding without delivering the asset-yield offset these names need. NIM relief for this lane is about curve shape, not rate level — and the shape went the wrong way.
+- **GS -0.43%:** traded flat-to-down despite headline-grabbing news that Goldman is a frontrunner for the stabilization-agent role in Anthropic's rumored ~$2 trillion IPO (Morgan Stanley reportedly gets the lead-left mandate)[cite:271] — a longer-dated catalyst that the market isn't pricing yet, and offset by the same SEC margin-lending subpoena affecting GS, JPM, C, and BAC[cite:317].
 
-- **The Odd Laggards:** SCHW −1.90% (flattening + profit-taking Mon→Thu, Friday +2% bounce; announced SOL/AVAX/LINK crypto trading 8/27 — the retail flywheel keeps spinning 4% under its high), AXP −0.83% (the consumer-credit tell: retail −0.6%, confidence 89.4, Walmart's "softer consumer" — network names get a pass on consumer cracks, lenders don't), GS −0.51% (traded as a regulatory proxy into the GSIB fight — see below).
-
-**Cecil Fundamental Read:** The week's price action improved; the week's value marginally thinned — that is the honest ledger. JPM at 15.4x, WFC 12.6x with a conservative NII guide, TFC 11.6x with a 4.13% yield into a CEO change, USB 12.5x yielding 3.33%: the value lane is not as cheap as it was at Friday's close a week ago, but nothing fundamental deteriorated. The two genuine fundamental developments: (1) deposit-cost relief is deferred *again* — with the 2Y at 4.34% and September a live hike, 2027 NIM math now assumes higher-for-longer, which *helps* asset-sensitive money centers and *taxes* deposit-heavy regionals; (2) the capital endgame went public — Reuters (8/27) reports the big banks are openly clashing over the GSIB surcharge as the Basel rule finalizes. A capital-neutral resolution is the buyback unlock; the ~$87.7B system CET1 relief (final rule Q4) remains on schedule and unpriced. Rule 2 applies in reverse this week: quality on *strength* is for holders, not chasers.
+**Cecil Fundamental Read:** The regulatory backdrop remains the multi-quarter tailwind this wiki has tracked: Basel III Endgame re-proposal work continues to point toward a "modest decrease" in aggregate CET1 requirements for large banks once finalized, expected around Q4 2026[cite:286][cite:290]. The GSIB surcharge fight among the largest banks is unresolved and is the swing factor on how much of that relief the biggest names actually capture versus smaller Category III/IV institutions, which stand to see proportionally larger relief[cite:286][cite:289]. Separately, a five-bank consortium including Goldman Sachs, Bank of America, Citi and Deutsche Bank disclosed plans to jointly issue a dollar-pegged stablecoin starting in 2027 — a incremental payments-infrastructure story worth tracking but not yet a 2026 earnings driver[cite:313]. The SEC subpoena of GS, JPM, C and BAC over margin lending to a hedge fund (Situational Awareness) that suffered a 67% AI-stock-selloff drawdown is a reminder that concentrated prime-brokerage/margin exposure to the AI trade is a live tail risk for the biggest balance sheets, even if immaterial in isolation[cite:317].
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *The Captains flagged that our briefs track mega-caps only. This section sources live sub-$5B financials names — no mega-caps repackaged. All four names re-verified under $5B market cap as of August 28, 2026 closes (live StockAnalysis caps cross-checked as price × shares outstanding). No promotions — no rotation required.*
+> *Direct sourcing of sub-$5B financials names — no mega-caps repackaged. All four candidates re-verified under $5B market cap using live Yahoo Finance/MarketBeat/MarketWatch quotes as of the week ending September 4, 2026. No promotions this week — all four remain comfortably under the $5B line.*
 
-| Ticker | Name | Market Cap | Price | Weekly Change | Catalyst / Signal | Council Read |
-|---|---|---|---|---|---|---|
-| HOPE | Hope Bancorp | **$1.78B** ✓ | $13.92 | −0.36% | No fresh company headline — sector beta (KRE); MANUBANK CBU acquisition (~$2.5B loans / $2.7B deposits, all-cash) still tracking 2H 2026 close per the Q2 call; $0.14 dividend paid Aug 20 | Beat KRE by ~40 bps despite ~63% real-estate-linked loans — MANUBANK's close is the 2H re-rating trigger, and HOPE is among the biggest Basel endgame percentage winners (~7.8% CET1 relief) |
-| CUBI | Customers Bancorp | **$2.65B** ✓ | $78.58 | −1.52% | No fresh headline — worst of the lane on pure rate tape (last real analyst action: KBW +$1 PT Aug 3; the circulating "Chairman sold $4.6M" snippet is STALE — dated May 27, ignore it) | The hawkish-Warsh bear-flattening is precisely the setup that stresses the Q3 NIM-rebound thesis (Q2 NIM 3.17% = 2026 low) — late-October earnings are the verdict |
-| BANR | Banner Corporation | **$2.40B** ✓ | $70.50 | −0.90% | No fresh headline; new buyback (Aug 3, up to 1.7M shares ≈ 5% of shares out) is the floor; $0.52 dividend paid Aug 14; DA Davidson's $76 PT remains the Street ceiling | Traded on top of KRE (−0.90% vs −0.75%) — a ~5% buyback authorization under the stock and a $76 cap above it: the debate is range, not direction |
-| WAFD | WaFd, Inc. | **$2.67B** ✓ | $36.09 | −0.80% | No fresh headline; $0.27 dividend (declared Aug 11, ex-date Aug 21), 10M-share repurchase active; management's own "intense deposit competition" warning gains teeth each week the 2Y sits at 4.34% | In line with KRE; capital return (buyback + ~2.9% yield) cushions, but the deposit-competition flag on their own transcript is the honest hedge |
+| Ticker | Name | Market Cap | Price | Weekly Change | Council Read |
+|---|---|---|---|---|---|
+| CUBI | Customers Bancorp | **$2.73B–$2.74B** ✓ | $81.07 | **+3.39%** | Best performer of the four this week — KBW's earlier $1 PT bump and NIM-rebound narrative into late-October earnings finally caught a rate-tailwind bid; still the group's highest-beta name on the Q3 NIM verdict[cite:251][cite:252][cite:253] |
+| HOPE | Hope Bancorp | **$1.74B–$1.79B** ✓ | $14.13 | +2.17% | Steady gainer with no fresh company headline — sector beta (KRE +1.5% w/w) plus the still-pending MANUBANK CBU acquisition (2H 2026 close) keep this a 2H re-rating candidate[cite:259][cite:248] |
+| WAFD | WaFd, Inc. | **$2.66B–$2.69B** ✓ | $36.30 | +0.72% | Modest gain, in line with the group; Hold-rated consensus ($37 PT) with a ~3% dividend yield and 74M shares outstanding cushion the stock in a choppy rate tape[cite:260][cite:257] |
+| BANR | Banner Corporation | **$2.42B–$2.61B** ✓ | $71.15 | +0.92% | Up modestly; trading near its $72.75 average analyst price target with a Hold consensus — up 13.5% since the start of 2026, tracking the regional-bank complex rather than any single catalyst this week[cite:261][cite:258] |
 
-**Rotation Note:** All four verified sub-$5B — caps $1.78B–$2.67B are miles from the line, no promotion risk this month. The lane tracked KRE (−0.75%) almost tick for tick while XLF rallied +1.08% — the sharpest mega-cap/SMID split since this section launched. That is the tell, again: sub-$5B financials are a *curve-shape* trade, not a rate-level trade, and the curve bear-flattened ~11 bps this week. None of the four printed a company-specific headline — pure macro beta. Watch items unchanged: HOPE's MANUBANK close (2H 2026), CUBI's NIM test (late Oct), and whether the front end stays pinned at 4.34% into the September 15–16 FOMC.
+**Rotation Note:** All four names remain sub-$5B with meaningful headroom (caps ranging roughly $1.7B-$2.7B), so no swaps were required this week. Every name in the lane posted a positive week, and CUBI's +3.39% outpaced KRE's own ~+1.5% weekly advance — a reversal from prior weeks when the SMID lane lagged the mega-cap complex. This is the first week in the tracked history of this section where all four sub-$5B names moved in the same direction as the mega-cap money centers (WFC +5.72%, C +3.68%) rather than diverging on curve-shape stress — likely because the hawkish jobs print, while curve-flattening at the margin, landed alongside a broadly "labor market is fine" signal that regional-bank investors read as credit-quality reassurance rather than pure NIM pain.
 
 ---
 
@@ -79,22 +81,16 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High (intraday) | **$58.41** | Printed 8/05 — still the ceiling; the line that confirms the second attempt |
-| Record Weekly Close | $58.16 | Printed 8/14 — Friday's $58.10 is the **second-highest weekly close ever**, $0.06 under |
-| Week Closing High | $58.31 | Tuesday 8/25 — payments-record day |
-| Breakout Pivot | **$58.00** | **RE-RECLAIMED Friday ($58.10 close)** after the prior week's fakeout — back in bull hands |
-| Week Closing Low | $57.88 | Thursday 8/27 — pre-keynote de-risking low; first support |
-| Pivot Support | $57.48 | 8/21 close — held all week; losing it voids the reclaim |
-| 50-Day MA | $56.36 | Dynamic support — rising; untested since the rally began |
-| 200-Day MA | ~$53.33 | Long-term trend support — rising, firmly bullish |
+| 52W High (intraday) | **$58.41** | Still the ceiling on this multi-week range |
+| Record Weekly Close | $58.16 | XLF's Friday close ($58.10) remains just under this all-time weekly closing high |
+| Breakout Pivot | **$58.00** | Held all week — XLF closed above it every session |
+| Pivot Support | $57.48 | Prior week's low-water mark; untested this week |
+| 50-Day MA | ~$56.36 (carried, rising) | Dynamic support, not tested |
+| 200-Day MA | ~$53.33 (carried, rising) | Long-term trend support, firmly bullish |
 | Major Support | $55.00 | Consolidation floor |
-| Deep Support | $50.00 | Post-inversion panic floor |
 | Structural Low | $47.67 | 52W bottom |
-| RSI (14) | ~56 | Reset complete, re-accelerating — room to run before overbought |
 
-**Marky Setup Assessment:** The fakeout did what fakeouts do when the underlying bid is real — it flushed the weak hands at $56.95 and came right back. Friday's close is the tell: a hawkish Fed chair, a +14 bps 2Y, and the sector ETF *rallied* to close back over the pivot. That is acceptance, not a squeeze. The structure now: $58.00 reclaimed = support on any back-test; a weekly close over **$58.16** (record) and then **$58.41** (intraday) is the confirmation sequence; lose **$57.48** and the reclaim was a bull trap — back to the $55–$58 box. Volume ran light-to-average (~25.3M Mon–Thu; Friday's print pending in the feed) — the one blemish on the reclaim, same as the original breakout.
-
-**Relative strength, week three:** XLF +1.08% vs. SPY +0.47% — a third straight week of leadership (+0.61 pts), and the character improved again: week one was offense, week two was defense, week three was offense *through* a hawkish shock. The rotation bid into the "un-owned sector at its highs" is now a pattern, not an event. Internal rotation is the nuance: money centers, payments and Berkshire led; regionals (KRE −0.75%) and the SMID lane did not participate.
+**Marky Setup Assessment:** XLF spent a Labor-Day-shortened week consolidating just under its all-time weekly closing high, absorbing a hawkish jobs report on Friday without giving up the $58.00 pivot. The range is now well-defined: $58.16 then $58.41 are the confirmation levels on the upside; $57.48 is the line that would void the multi-week reclaim. Internally, leadership rotated hard into the money centers (WFC, C) and away from payments/asset management (BLK, AXP, MA, V) — a pattern consistent with a market pricing higher-for-longer as an NII story rather than a broad financials re-rating.
 
 ---
 
@@ -102,28 +98,18 @@
 
 | Factor | Level | Implication for XLF |
 |---|---|---|
-| Fed Funds Rate | 3.50–3.75% (on hold; effective 3.63%) | Warsh keynote (8/28): no forward guidance, "we have work to do," conditions "not restrictive" — hawkish regime confirmed |
-| September Odds | **~38% hold / ~62% hike** (CME FedWatch, post-speech) | Repriced from ~70/30 the other way in one morning — the week's core event. (Kalshi disagreement noted: 98% hold — futures vs. prediction-market split is unusually wide) |
-| 2Y Treasury | **4.34%** (8/28) | +10 bps W/W, +14 bps on Friday alone (H.15 Thu 4.20% → etfdb Fri print 4.34%) — front-end relief is dead until August CPI |
-| 10Y Treasury | **4.73%** (8/28) | −1 bp W/W (4.738% → 4.73%); intraweek low 4.64% Tue — long end *eased* while the front end jumped |
-| 30Y Treasury | **~5.21%** | −7 bps W/W — backing off the 19-year-high stress zone; doubled buybacks (≥$4B/op) are working |
-| **Yield Curve (10Y–2Y)** | **~+39 bps** | **Bear-FLATTENED from ~+50** — sharpest weekly flattening of the regime; good for NII optics at money centers, bad for deposit-heavy NIM math |
-| Treasury Buybacks | ≥$4B per op (10–30Y), doubled 8/19 | No fresh operations news; the intervention is holding the long end under ~5.25% |
-| DXY | 99.68 | +0.9% W/W — hawkish Warsh bid the dollar back over 99 after sub-99 closes |
-| VIX | 14.43 | −4.6% W/W — back near 6-month lows (52W low 13.38); the hawk shock produced no fear bid |
-| WTI Crude | **$83.40** | **−4.2% W/W — the two-week +11% spike unwound.** US–Iran ceasefire reported late Tue 8/25 ("announcement in coming days"); fresh secondary sanctions landed simultaneously — reported, not signed |
-| Key Data This Week | Core PCE +3.3% YoY (in line, unchanged); Q2 GDP 2nd est ~1.5%; Conf. Board confidence 89.4 (miss); new home sales 607K (miss) | Inflation steady, consumer still cracking — Warsh chose to look through the consumer; the market is not so sure |
-| Credit Spreads (IG/HY) | Tight / calm (external read aging) | No loan-loss repricing pressure |
-| CRE Prices | Stable-to-improving at the margin | No fresh prints. Standing reads: MBA Q2 CMBS 30+ day 4.82% (improving); bank CRE delinquency 1.89% Q1 (drifting up); office CMBS ~12%+ (record, Jan) — office remains the wound |
-| Deposit Beta | ~50–60% | Higher-for-longer cuts both ways: asset yields reprice up (money-center NII) but deposit costs stay elevated (regional NIM) — Friday's tape priced the first half |
-| Loan Growth | ~+2–3% YoY | Stable; C&I the bright spot |
-| Regulatory Risk | **TAILWIND — now with a public fight** | Reuters (8/27): big banks clashing over the **GSIB surcharge** as the Basel endgame finalizes. March re-proposal (~$87.7B system CET1 relief) still targeted for **final rule Q4 2026** |
+| Fed Funds Rate | 3.50-3.75% (on hold; effective ~3.63%) | Unchanged; September 15-16 FOMC is the next live decision |
+| September Hike Odds | **~60-62%** (CME FedWatch, post-NFP) | Up from ~49% mid-week — the August jobs beat (+162K vs. ~53-56K cons.) is the catalyst[cite:311][cite:320] |
+| 2Y Treasury | **~4.34-4.37%** | Highest since January 2025 — front end pricing in a live hike[cite:266][cite:274] |
+| 10Y Treasury | **~4.78-4.79%** | Highest since November 2023 — long end also climbing on inflation/debt concerns[cite:266][cite:274] |
+| **2Y-10Y Spread** | **~41 bps** | Continued bear-flattening from ~72bp at the start of 2026 — the single most important line item for NIM math this sector; good for asset-sensitive money centers, a headwind for deposit-heavy regionals[cite:266][cite:268] |
+| August Jobs Report | +162K (vs. ~53-56K cons.); unemployment 4.1% | MAJOR beat — resolves the "broken labor market" scare, pushes Citi's own rate-cut forecast to June 2027, and is the dominant driver of this week's curve move[cite:311][cite:312][cite:314] |
+| Key Data Ahead | August PPI (Thu) and CPI (Fri) next week | THE swing data into the September 15-16 FOMC — a soft print reopens hike-odds downside; a firm one locks in the hike |
+| CRE Exposure | Lingering risk, no fresh weekly print | Standing concern; office CMBS delinquencies remain the structural wound across the regional book |
+| Regulatory Risk (Basel III Endgame) | Re-proposal pending; **modest aggregate CET1 relief expected**, final rule targeted ~Q4 2026 | Tailwind, with the GSIB surcharge allocation among the largest banks still the contested wildcard[cite:286][cite:289][cite:290] |
+| Deposit Beta / NIM Trends | Elevated, curve-shape dependent | Continued bear flattening keeps deposit-cost pressure alive for regionals even as money centers benefit from faster asset repricing |
 
-**Ophelia Verdict:** I spent two weeks waiting for the gate; it fired, and the answer is "hawkish with no transcript." Warsh dismantled forward guidance as an institution — which means September 15–16 is a genuine coin-flip with no dot plot and no telegraphing to lean on, and August CPI (~Sept 10–11) is now the single most important print of the year. The market's verdict on financials was clear and, I'll admit, more constructive than mine: a hawkish Fed is *good* for the sector's biggest weights — money-center NII, trust-bank float income, Berkshire's cash hoard — and the oil tail risk that forced my caution unwound in one Tuesday headline. What keeps me from upgrading: the curve flattened the wrong way for the regionals, the consumer crack keeps widening (confidence 89.4, retail −0.6%), and a 62%-priced hike that fails to materialize is its own repricing risk in reverse. Posture: neutral-bullish — leash moved up from the 50D to $57.48.
-
-**Jackson Hole Post-Mortem (Aug 27–29) — The Gate, Fired:** Last week's wiki framed the keynote as a two-sided gate; it resolved hawkish. Warsh's debut: forward guidance "has overstayed its welcome"; inflation "running above our 2 percent target" with 54% of the PCE basket >3%; summer's soft prints "do not tell me that underlying trends have meaningfully improved"; financial conditions "not at present restrictive"; task forces "no bearing on" near-term policy; "a discipline, not a decision." Street reads: Hatzius (GS) — hike possible if August CPI/PPI firm, base case still hold; Bhave (BofA) — "onus is on him to deliver a hike in September"; Clarida (PIMCO) — August CPI "crucial," days before the meeting. September odds settled ~60–62% hike. The bond market believed him at the front end (2Y +14 bps) and thanked him at the long end (30Y steady-to-lower) — credibility purchased with flattening.
-
-**The Regulatory Endgame Goes Public (New This Week):** Reuters (8/27) reports the largest banks are now openly fighting each other over the **GSIB surcharge** as the capital rule reaches finalization — the endgame's endgame. Stakes unchanged and unpriced: ~$87.7B system-wide CET1 relief (−4.8% G-SIBs / −5.2% large regionals / −7.8% smaller institutions), ERBA single-approach, MSR deduction removed, final rule targeted Q4 2026 with 2027 implementation. The irony noted here before still holds: the smaller the bank, the *larger* the relief — the SMID lane's Q4 catalyst is regulatory, not macro.
+**Ophelia Verdict:** The August jobs report was this week's whole story — a +162K beat against a ~53-56K consensus doesn't just beat expectations, it nearly triples them, and it landed exactly as the market was still digesting Fed Chair Warsh's hawkish, no-forward-guidance Jackson Hole posture from the prior week. September hike odds at ~60-62% heading into next week's CPI/PPI prints means the Fed has real optionality, and the 2Y-10Y spread at ~41bp is now flatter than at almost any point this year. That is unambiguously good news for the money centers' NII and unambiguously uncomfortable for deposit-heavy regionals and for long-duration financials like BlackRock, whose -4.44% week is the cleanest read of how a hawkish repricing hits rate-sensitive multiples. Posture: neutral, leaning toward the rate-beneficiary lane (money centers) over payments/asset management until CPI clarifies the September decision.
 
 ---
 
@@ -131,85 +117,79 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Hawk Rang the Bell — and the Banks Bought It
+### This Week's Story: A Quiet Week, Then a Jobs-Report Jolt
 
-Five days, three acts. **Act one (Mon–Tue): the soft-landing tape.** Visa and Mastercard printed record closes Monday ($382.41 / $599.86) on resilient spend narratives, XLF touched its week-high close Tuesday ($58.31), and then the week's sleeper headline landed late Tuesday: a **US–Iran ceasefire**, reportedly to be announced in coming days. Oil began its unwind — WTI −4.2% on the week to $83.40, erasing most of the two-week +11% spike that had been the sector's inflation wild card. The fly in the ointment: Conference Board confidence fell to 89.4 and new home sales missed — the consumer crack kept widening underneath the rally.
+Labor Day closed markets Monday, compressing the week to four sessions. Through midweek, the tape was mostly noise: Citigroup dipped modestly, BlackRock kept sliding on no single catalyst (Fair-value work nudged its target up even as the stock fell), and the sector traded in a tight band around $58. The one mid-week jolt was regulatory rather than macro — reports surfaced that the SEC had subpoenaed Goldman Sachs, JPMorgan, Citigroup and Bank of America over margin lending to a hedge fund, Situational Awareness, that suffered a 67% drawdown in the AI-stock selloff[cite:317]. The market shrugged; none of the four names moved meaningfully on the news alone.
 
-**Act two (Wednesday): the data behaved.** July core PCE printed +3.3% YoY, in line and unchanged from June — hot enough to keep "work to do" alive, cool enough to avoid panic. Q2 GDP's second estimate held near 1.5%. And after the close, NVDA's blowout beat and above-consensus guidance set up Thursday's risk-on session (S&P +0.72%, Nasdaq +1.57%) — though XLF actually dipped Thursday to its week-low close ($57.88) as the Street de-risked the keynote and Reuters broke the GSIB-surcharge infight.
+Friday changed the calculus. The August jobs report landed at +162,000 versus a consensus of roughly 53,000-56,000 — nearly triple the expected number — while unemployment held at 4.1%[cite:311][cite:320]. This is the mirror image of July's shock -23K print that had spooked markets a month earlier, and it flipped the "labor market is breaking" narrative on its head. Citigroup's own economists immediately pushed their first expected Fed rate cut all the way out to June 2027[cite:312][cite:314]. Treasury yields jumped: the 2Y hit its highest level since January 2025, the 10Y its highest since November 2023, and September hike odds surged from roughly 49% to 60-62% intraday[cite:266][cite:274][cite:311]. Equities broadly sold off Friday (SPY -0.38%), but the financials complex was more discriminating — WFC (+5.72% on the week) and C (+3.68%) rallied on the rate-tailwind logic even as BLK (-4.44%), AXP (-2.64%) and MA (-2.48%) fell on rate-sensitive multiple compression.
 
-**Act three (Friday): Warsh.** The first Jackson Hole keynote of the Warsh era was unambiguously hawkish — forward guidance dead, 54% of the PCE basket running above 3%, conditions "not restrictive," "we have work to do." September hike odds went from ~35% to ~60–62% in a morning; the 2Y jumped ~14 bps to 4.34%; the curve bear-flattened to ~+39 bps. And the financials tape did the thing that matters: it **rallied into the close**, +0.38% Friday, sealing a $58.10 weekly close back above the $58.00 pivot — the second-highest weekly close in XLF's history. The market's logic is the regime shift: higher-for-longer is a NII story for the money centers (WFC +3.40%, BNY +2.53%, JPM +1.72%), a float-income story for Berkshire (+1.85%), and a deposit-cost story the regionals lost (KRE −0.75%, PNC red, the entire SMID lane down 0.4–1.5%).
-
-**The Bottom Line:** XLF goes into September with the breakout back on the board, leadership narrowed to rate-*level* winners, and the two-sided risk now concentrated in one print — August CPI, ~Sept 10–11, days before the September 15–16 FOMC. A soft CPI defuses the hike and reopens the deposit-relief trade for regionals; a firm one delivers the first hike of the Warsh era and tests whether NII optics can carry the whole sector at 4.34% and rising. The oil tail is unwound, the regulatory endgame is on schedule (and now publicly contested), and the consumer crack is the slow-burn that October's reserve builds will answer for. The sector didn't just survive its hawkish stress test — it closed the week $0.06 under its all-time weekly closing high.
+**The Bottom Line:** XLF closed essentially flat on the week (+0.09%) but the flatness hides a decisive rotation into money-center NII beneficiaries and away from payments/asset-management names more exposed to duration and consumer-spend anxiety. The 2Y-10Y spread's continued bear-flattening (~41bp, down from ~72bp at the start of the year) is now the single dominant technical for anyone modeling bank NIMs into Q3 earnings. Everything now funnels into next week: August PPI (Thursday) and CPI (Friday) are the last data points before the September 15-16 FOMC, and given how far hike odds have already moved on one payrolls print, a hot inflation read could push the Fed toward its first hike of this cycle.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Q2 2026 earnings are **complete.** No sector earnings until mid-October. The catalysts are macro, personnel, and regulatory:
+Q2 2026 earnings are **complete.** No sector earnings until mid-October. The catalysts remain macro, personnel, and regulatory:
 
 | Catalyst | Date | What to Watch |
 |---|---|---|
-| **TFC CEO Handoff** | **September 1, 2026** | Mike Lyons succeeds Bill Rogers — first strategic signals from the new regime; stock dead flat (+0.02%) into it |
-| **August Jobs Report** | **September 4, 2026** | After July's −23K: a second negative print stresses Warsh's "labor markets stable" framing |
-| **Visa CEO at Investor Conference** | September 8, 2026 | First post-Jackson Hole read on September card spend and cross-border volume |
-| **August CPI** | **~September 10–11, 2026** | THE print — Clarida: "crucial," days before the FOMC. Firm → September hike delivered; soft → 62% reprices out |
-| **FOMC Meeting** | **September 15–16, 2026** | Hike ~62% priced. No forward guidance era: statement + presser tone are the only tells. First live decision of the Warsh regime |
-| **Basel III Final Rule (Expected)** | Q4 2026 | ~$87.7B system CET1 relief, ERBA details, GSIB surcharge resolution — now a public food fight (Reuters 8/27) |
-| **Q3 2026 Bank Earnings** | Mid-October 2026 | Deposit costs with a hike possibly delivered, NIM slope, **loan-loss reserve builds vs. the consumer crack**, CRE reserves, IB pipelines (Anthropic IPO syndicate chatter). Small-caps: CUBI's NIM-rebound test (late Oct); HOPE's MANUBANK integration update |
+| **August PPI** | Thursday, September 10, 2026 | First of the two-print inflation gate into the FOMC |
+| **August CPI** | Friday, September 11, 2026 | THE print — with hike odds already at ~60-62% off one jobs report, a firm CPI could lock in the September hike |
+| **FOMC Meeting** | September 15-16, 2026 | Live, genuinely uncertain decision — first real test of Warsh's no-forward-guidance regime |
+| **Basel III Final Rule (Expected)** | Q4 2026 | GSIB surcharge allocation among largest banks remains the contested variable |
+| **CUBI Q3 Earnings** | Late October 2026 | NIM-rebound verdict for the SMID lane's highest-beta name |
+| **HOPE MANUBANK Close** | 2H 2026 | Pending acquisition integration update |
+| **Q3 2026 Bank Earnings** | Mid-October 2026 | Deposit costs, NIM trends, loan-loss reserve builds, CRE reserve levels, IB pipeline health (Anthropic IPO syndicate roles for MS/GS) |
 
-**Marky's Binary Event Read:** The calendar is now a two-gate September: CPI (~9/10–11) then FOMC (9/15–16), with the jobs report (9/4) as the preview. Playbook: above **$58.00** the reclaim holds and $58.16/$58.41 is the confirmation ladder; a weekly close back under **$57.48** voids it; the 50D ($56.36) is the line that turns "reclaim" into "correction" if a hike actually lands. Internal tell to watch: whether WFC/BNY leadership broadens to the regionals on a soft CPI — if it doesn't, this is a mega-cap rally wearing a sector costume.
+**Marky's Binary Event Read:** The calendar compresses into a two-print, one-decision sequence over the next two weeks: PPI (9/10) and CPI (9/11) set up the FOMC (9/15-16). XLF's range is intact ($57.48-$58.41); a soft CPI likely reopens upside toward the record close, while a hot one tests whether the money-center rally can carry the sector through an actual hike.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Soft August CPI (~Sept 10–11) → September hike odds collapse from ~62% → 2Y back under 4.20% → deposit relief re-priced *in* → regionals and the SMID lane finally join the rally; XLF clears $58.16, then $58.41
-- Iran ceasefire formalized ("announcement in coming days") → oil tail risk fully unwinds → term premium keeps easing at the long end (30Y already off the 19-year-high zone)
-- Basel final rule (Q4) lands capital-neutral-to-positive with the GSIB fight resolved → buyback capacity re-rates ROE, largest percentage relief to the SMID lane
-- WFC's $50B NII guide proves conservative; Q3 reserve builds come in clean despite the consumer crack
-- Consumer stabilizes (confidence 89.4 was the floor) → AXP/payments re-accelerate from record levels
+- Soft August CPI (9/11) → September hike odds retreat from ~60-62% → curve steepens modestly → deposit-cost relief reprices in for regionals and the SMID lane
+- Basel final rule (Q4) lands capital-neutral-to-positive with the GSIB surcharge fight resolved favorably → buyback capacity re-rates ROE across the complex
+- WFC's rate-tailwind thesis extends into Q3 print; money-center leadership broadens to regionals
+- BLK and payments names find a valuation floor as rate-sensitivity fears stabilize
 
 ### 🔴 Bear Case
-- Firm August CPI → **the first hike of the Warsh era lands Sept 16** → 2Y through 4.50% → bear flattening accelerates → XLF loses $57.48, tests the 50D ($56.36), then $55.00
-- The consumer crack reaches credit: Q3 pre-announcements of reserve builds turn a rate story into a credit story (AXP's red week is the early tell)
-- Ceasefire collapses — secondary sanctions still landing, deal unsigned → oil re-spikes through $89 → the inflation wild card reactivates with hike odds already at 62%
-- The GSIB infight produces a worse-than-re-proposal final rule → the ~$87.7B relief narrative reprices
-- Fakeout-redux mechanics: Friday's reclaim was light-volume; a hot CPI traps this week's breakout buyers one pivot higher
+- Firm August CPI/PPI → the first hike of the Warsh era lands September 16 → 2Y pushes higher, curve flattens further, deposit-heavy regionals and the SMID lane underperform
+- SEC margin-lending subpoena (GS/JPM/C/BAC) widens into a broader prime-brokerage/AI-leverage story
+- AXP/consumer-credit weakness (already the sector's worst 2026 payments performer) spreads to other card issuers
+- CRE-linked reserve builds resurface as a Q3 earnings theme, reviving the regional-bank credit-quality narrative
 
 ### ⚠️ The Wild Card
-**The Warsh doctrine itself.** A Fed chair who abolished forward guidance heading into a live, coin-flip hike decision means September 15–16 is the first genuinely unscripted FOMC in years — no dot plot, no telegraph, and a chair who says he watches "the prices and trading volumes of Treasury securities" for signals. Layer on the other two unsigned binaries — the Iran ceasefire (reported, not signed) and the GSIB surcharge fight (public, unresolved) — and the sector carries three live binaries into one meeting, with the 2Y at 4.34% and the curve already flattened to +39 bps. The last time the curve flattened this fast with a hike this priced, the regionals were the tell. They are again: KRE −0.75% in a week XLF rose +1.08%.
+**The two-print inflation gate.** With September hike odds already at ~60-62% off a single jobs report, next week's PPI and CPI prints carry outsized weight — and with Fed Chair Warsh's Jackson Hole posture explicitly abandoning forward guidance, there is no dot-plot cushion to lean on heading into September 15-16. The 2Y-10Y spread at ~41bp is flatter than it has been most of 2026; a further flattening from here would be the clearest signal yet that the market expects a hike with limited long-end inflation-premium relief.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The gate fired hawkish and I own the correction: I framed Jackson Hole as two-sided, and Warsh closed one side. 'A discipline, not a decision' with 54% of the basket above 3% and conditions 'not restrictive' is a hike-warning, full stop — the market now prices ~62% for September 16. But watch what the curve did: the front end jumped 14 bps while the long end* fell *— he bought credibility at the 30Y and paid for it at the 2Y. That is the best-case hawkish outcome for this sector's giants and the worst-case shape for its regionals. With the oil tail unwound and VIX at 14.43, I am staying neutral-bullish — but the leash is now $57.48, and August CPI is the only print that matters between here and the sixteenth."*
+**Ophelia:** *"One jobs report undid a month of 'the labor market is breaking' narrative — +162K against a consensus near 53-56K is not a marginal beat, it's a regime tell. Citi moved its own rate-cut call out to June 2027 on the spot. The 2Y-10Y spread at ~41bp says the market believes a hike is coming, and the sector's own price action — money centers up, payments and asset managers down — is pricing exactly that split. I'm not moving off neutral until CPI and PPI print next week, but the risk skew has shifted hawkish for the second week running."*
 
-**Marky:** *"I flagged the fakeout clause two weeks ago and it fired; I flag the reclaim now with the same volume caveat. Friday's close — $58.10, back over the pivot, on a hawkish shock — is acceptance, and the third straight week of beating SPY makes this leadership a pattern. The ladder: $58.00 is support on any back-test, $58.16 then $58.41 is confirmation, and $57.48 voids the whole thing. Inside the sector, follow the leadership that actually worked: WFC +3.4% and BNY +2.5% through a rates shock is where the momentum lives; the regionals are still under their 50Ds and KRE fell while XLF rose — that is rotation within the sector, not a sector bid. I trade the money-center lane until KRE proves otherwise."*
+**Marky:** *"XLF closed flat on the week but don't read that as boring — WFC ripped +5.72% and BLK cratered -4.44% inside the same tape. That's a rotation, not a range-bound sector. The technical picture is unchanged: $58.00 held, $58.16/$58.41 remain the upside confirmation levels, $57.48 is still the line that matters on the downside. I want to see whether the money-center leadership broadens into the regionals on a soft CPI print — that's the tell for whether this is a real sector move or a mega-cap trade wearing a sector's clothes."*
 
-**Cecil:** *"Prices rose about a percent and the value thinned by the same — the arithmetic is honest. What actually changed this week is two-fold: the capital endgame went public (the GSIB fight means the rule is in its final mile, and the ~$87.7B relief remains scheduled and unpriced — the smaller the bank, the bigger the benefit), and the consumer evidence darkened again (confidence 89.4, AXP red in a green week). Higher-for-longer is now the base case, which flatters money-center NII and taxes deposit-heavy NIM — my value lane is the taxed half, which is why it is cheap: TFC at 11.6x with a 4.13% yield and a new CEO Tuesday, USB 12.5x yielding 3.33%. I am not chasing Friday's strength. I am a buyer of the value lane on any CPI-driven flush toward $56–57, and October's reserve-build disclosures are now my sector's real earnings story."*
+**Cecil:** *"The fundamental story didn't change much this week — the news that mattered was regulatory and macro, not earnings. The SEC subpoena on margin lending to a distressed AI-exposed hedge fund is a small headline today but worth tracking: it's exactly the kind of concentrated counterparty risk that turns into a real story if the AI trade unwinds further. On valuation, WFC's rally and BLK's selloff both look like rate-repricing moves rather than anything fundamental — I'm not chasing WFC here, and I'd start nibbling at quality asset managers like BLK if the selloff continues without a change in the underlying flows story."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance (v8 chart API): XLF, SPY, KRE, JPM, BAC, WFC, C, USB, PNC, TFC, **BNY**, GS, MS, SCHW, V, MA, AXP, BRK-B, PGR, CB, TRV, BLK, HOPE, CUBI, BANR, WAFD, ^TNX, ^TYX, ^IRX, ^VIX, DX-Y.NYB, CL=F, GC=F — daily bars through Aug 27; **Friday Aug 28 closes via meta.regularMarketPrice** (regularMarketTime 2026-08-28 20:00 UTC), cross-verified to the penny against StockAnalysis "At close" prints (PNC independently confirmed via PNC IR page)
-- **Ticker migration:** BK → BNY (NYSE) — explains the 4-week Yahoo 404 streak on BK; BNY data via Yahoo `BNY` endpoint + StockAnalysis `/stocks/bny/`
-- StockAnalysis.com: market caps (HOPE $1.78B / CUBI $2.65B / BANR $2.40B / WAFD $2.67B — all ✓ sub-$5B as of Aug 28 closes, cross-checked price × shares), trailing P/Es, dividend yields
-- SSGA (statestreet.com): official XLF holdings weights as of 8/27/2026 (JPM 11.60%, BRK.B 11.29%, V 7.70%, MA 5.84%, BAC 4.88%, GS 3.75%, WFC 3.18%, MS 3.15%, C 2.77%, AXP 2.17%)
-- Federal Reserve H.15 (released Aug 28, data through Aug 27): 2Y 4.20% / 10Y 4.67% / 30Y 5.19% (Thu); fed funds effective 3.63%; Friday 8/28 closes via etfdb/ETF Trends Treasury snapshot (2Y 4.34%, 10Y 4.73%) and Yahoo ^TNX/^TYX meta (4.72% / 5.206%)
-- Federal Reserve: Chair Warsh keynote text, Jackson Hole, Aug 28, 2026 (federalreserve.gov); market reaction via Investopedia (CME FedWatch ~35% → ~62% September hike) and Morningstar economist roundup (Hatzius/GS, Bhave/BofA, Clarida/PIMCO, Hodge/Natixis, Siluk/Janus Henderson), Aug 28–29
-- BEA: July core PCE +3.3% YoY (released Aug 26, 2026); consensus tracking via Morningstar/FactSet previews; Q2 GDP 2nd estimate ~1.5% (Aug 26)
-- NVDA earnings beat + guidance (Aug 26 AMC) — Thursday risk-on read via session coverage (S&P +0.72%, Nasdaq +1.57%)
-- US–Iran ceasefire reports (late Aug 25, "announcement in coming days") + fresh secondary sanctions (five sectors) — session/wire coverage; WTI $83.40 (−4.2% W/W)
-- Reuters (Aug 27, 2026): "Wall St banks turn on each other as capital fight nears endgame" — GSIB surcharge clash
-- Company IR / wires: TFC CEO handoff Sept 1 (Mike Lyons); C $0.67 dividend payable Aug 28; BNY $0.63 dividend (Q3, +19%); SCHW SOL/AVAX/LINK crypto trading (Aug 27); AXP/Bread Financial NFL card program (Aug 27); V CEO Sept 8 conference (Business Wire 8/25); BANR buyback authorization (Aug 3); WAFD $0.27 dividend (declared Aug 11); HOPE MANUBANK CBU agreement tracking 2H 2026
-- FRED unreachable this session (timeouts) — H.15 + etfdb Treasury snapshot substituted; VIX 14.43 via Yahoo ^VIX meta (FRED VIXCLS cross-check deferred to Canary Watch)
-- wiki/canary-watch.md: cross-asset board; prior financials issues #44/#51/#57 incorporated
+- Perplexity Finance market data (quotes, OHLCV price histories): JPM, BAC, WFC, C, USB, PNC, GS, MS, SCHW, V, MA, AXP, PGR, CB, TRV, BLK, XLF, BRK-B, HOPE, CUBI, BANR, WAFD — week of August 28-September 4, 2026 closes
+- Reuters: August NFP report (+162K vs. ~53-56K cons., unemployment 4.1%), September 4, 2026[cite:311]
+- Reuters: Citigroup delays Fed rate-cut forecast to 2027 after jobs report, September 4, 2026[cite:312][cite:314]
+- Reuters/MarketBeat: SEC subpoenas of Goldman Sachs, JPMorgan, Citigroup, Bank of America over margin lending (Situational Awareness hedge fund, 67% drawdown), late August 2026[cite:317]
+- Reuters: Goldman Sachs, BofA and others plan joint dollar stablecoin issuance in 2027, September 2, 2026[cite:313]
+- Yahoo Finance/CNBC/Schaeffer's/FRED/ycharts: 2Y and 10Y Treasury yield levels and the 2Y-10Y spread (~41bp), week of September 4, 2026[cite:266][cite:268][cite:272][cite:274]
+- MarketBeat/MarketWatch/Robinhood/companiesmarketcap.com/Seeking Alpha: HOPE, CUBI, BANR, WAFD market caps and quotes, verified sub-$5B, week ending September 4, 2026[cite:248][cite:249][cite:250][cite:251][cite:252][cite:253][cite:255][cite:256][cite:257][cite:258][cite:259][cite:260][cite:261]
+- MarketBeat/Yahoo Finance: BlackRock news and analyst commentary, week of September 1-6, 2026[cite:280][cite:281][cite:282][cite:283]
+- Yahoo Finance: American Express Q2 revenue miss versus payments peers, September 4, 2026[cite:287]; Visa/Mastercard/AXP 2026 YTD performance divergence[cite:291]
+- Freshfields/BPI/ABA Banking Journal: Basel III Endgame re-proposal details and GSIB surcharge status, March 2026 (standing reference)[cite:286][cite:289][cite:290]
+- Anthropic IPO banking-syndicate reporting (Financial Times via Yahoo Finance), September 3-4, 2026[cite:271]
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-08-29** (scheduled run — Yahoo Finance chart API + Fed H.15 + etfdb Treasury snapshot + SSGA holdings + live news verification)*
-*Next update: Every Saturday 10:29 AM ET*
-*Data sources: Yahoo Finance, Federal Reserve, BEA, U.S. Treasury, SSGA, StockAnalysis, Reuters, CME FedWatch*
+*Last updated by Saturday Research Crew: **2026-09-07** (backfilling the missed 2026-09-05 Saturday run per user request; week ending Friday, September 4, 2026 closes; single-agent sequential run per the 2026-09-04 SINGLE-AGENT RULE)*
+*Next update: Every Saturday, 10:29 AM ET*
+*Data sources: Perplexity Finance, Reuters, CNBC, Yahoo Finance, FRED, MarketBeat, MarketWatch, Seeking Alpha, companiesmarketcap.com*
