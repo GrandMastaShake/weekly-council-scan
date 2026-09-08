@@ -15,7 +15,16 @@ Book: ALL 13.3% / HIG 13.3% / cash 73.4%. Entry prices = Monday 2026-08-31 live 
 
 Note: AES (Cecil, engine #3) was TRIGGER-BLOCKED at booking (DOW rule -- 10Y 4.72% vs the 4.60% bond-proxy line; see the 2026-08-31 report, Council Deliberation #1) and is not booked; no exit template attaches. Its counterfactual is tracked through the shadow-book.md entry instead.
 
-outcome: to be computed (scores at the next weekly close run; note Monday 2026-09-07 is Labor Day -- markets closed -- so scoring lands on the following session's run).
+outcome (scored 2026-09-08, date-pinned daily bars 2026-08-31 -> 2026-09-04):
+
+| Pick | Stop Touched? | +15% Trim Reached? | Would-Have Return | Actual Booked Return | Verdict |
+|---|---|---|---|---|---|
+| ALL @ $260.12 (stop $247.11) | No (week low $257.37, Tue 2026-09-01) | No (week high $266.45, Thu 2026-09-03) | -0.21% (held) | -0.21% | no difference |
+| HIG @ $138.48 (stop $131.56) | No (week low $136.28, Tue 2026-09-01) | No (week high $140.41, Thu 2026-09-03) | -0.08% (held) | -0.08% | no difference |
+
+Cycle tally: stops helped 0, hurt 0, untouched 2. Neither position traded within 4% of its -5% CORE stop, and neither reached the +15% trim -- a quiet week for the template, consistent with the book's own -0.04% weighted return.
+
+Scored cycles to date: 3 of 4. The stop-calibration summary block appears after 4 scored cycles (one more cycle to go).
 
 ---
 

@@ -14,7 +14,18 @@ Booked: ALL 13.3% / HIG 13.3% (73.4% cash -- Council Review posture, 3+ regime f
 | ADSK | 68 | 51.8 | Consensus #5 (raw ~4.0%) -- same min-size floor; 13th straight beat and the stock fell -3.67% anyway ("no credit" -- wiki/earnings-surveillance.md) |
 | NOW | 67 | 50.8 | Her #3; never reached the bookable zone on the dampened vote (consensus #8) -- low-vol software into a hawkish front-end repricing |
 
-counterfactual: to be computed (date-pinned Mon 2026-08-31 close -> Fri 2026-09-04 close at the next weekly run; note Monday 2026-09-07 is Labor Day).
+counterfactual (computed 2026-09-08, date-pinned Mon 2026-08-31 close -> Fri 2026-09-04 close):
+
+| Ticker | Mon Close | Fri Close | Return |
+|---|---|---|---|
+| CRM | $257.54 | $259.23 | +0.66% |
+| ADSK | $258.53 | $217.90 | -15.72% |
+| NOW | $147.99 | $141.26 | -4.55% |
+| **Equal-weighted basket** | | | **-6.54%** |
+| **Official booked week (2026-08-31)** | | | **-0.04%** |
+| **Delta (rejected - booked)** | | | **-6.50%** |
+
+Ophelia's rejected trio lost badly to the booked portfolio this week -- 650 bps worse. ADSK cratered -15.72% (a post-earnings gap-down after its Sept 3-4 print, per multiple market-data sources), dragging the equal-weighted basket to -6.54% against the officially booked -0.04%. NOW also fell hard (-4.55%); only CRM finished green (+0.66%). The min-size floor that dropped all three from the book saved real money this time -- a strong data point against the "rejections beat the book" suspicion this log exists to test.
 
 ---
 
