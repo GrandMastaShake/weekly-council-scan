@@ -152,7 +152,7 @@ Narrative grades do not affect the composite letter grade but feed into the "Les
 
   ┌─────────────────────────────────────────────────────────┐
   │  AGENT STANDINGS (4-week rolling)                           │
-  ├────────────────────────────────────────────────────────────────┤
+  ├─────────────────────────────────────────────────────────────┤
   │  1. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
   │  2. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
   │  3. [Agent]: [X.X] avg grade  [↑↓→]  [Lead / Flagged]       │
@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-08 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x4) | Ophelia (CEG/VST proposed at unchanged conviction despite stated durability doubt) | LMT (A-) | ETN (B) | 73.4% |
 | 2026-08-31 | -0.04% (Tracker P&L) | 0% | TBD | TBD | ALL (-0.21%) | HIG (-0.08%) | 73.4% |
 | 2026-08-31 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x3) | Ophelia (engine rode the acquittal, doctrine rode the Fed; rejects lost 216bps) | ALL (A-) | HIG (B) | 73.4% |
 | 2026-08-24 | +0.05% (Tracker P&L) | 67% | TBD | TBD | ALL (2.54%) | VICI (-3.00%) | 60.1% |
@@ -273,9 +274,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-08-31 (Council session -- ALL/HIG booked 13.3% each, 73.4% cash; AES trigger-blocked at booking per the DOW rule)
-**Next Audit:** 2026-09-07 (Tracker close of 2026-08-31 week + Arena scoring; note: US markets CLOSED for Labor Day -- price-dependent steps shift to the next session)
-**Current Regime:** Restrictive -- VIX 14.43 (intraday 14.13 = 2026 low), 10Y 4.72% (4.75% stress line survives a 3rd weekly test by 3bps), bear flattener (2Y ~4.34% desks), DXY 99.68 +0.9% flipping hawkish, 3+ regime flags raised (Council Review posture); week gates: jobs report Fri 9/4 (cons +45K), AVGO Thu 9/3, MFN Medicaid pricing today; September FOMC 9/15-16 with a hike ~55-58% priced
+**Last Updated:** 2026-09-08 (Council session -- LMT/ETN booked 13.3% each, 73.4% cash into the CPI/FOMC gauntlet)
+**Next Audit:** 2026-09-14 (Tracker close of the 2026-09-08 week + Arena scoring)
+**Current Regime:** Restrictive -- VIX 15.30 (tested and failed 16.34, the "first crack" line), 10Y 4.79% (broke the 4.75% stress line for a 2nd straight week, 6bps from the 4.85% next line), DXY ~99.15 (broken 6th week, hawkish-rebuild thesis stalled), 3+ regime flags raised (Council Review posture); week gates: PPI Wed 9/10 (preview), August CPI Thu 9/11 (THE GATE), FOMC 9/15-16, BOJ 9/17-18 (hike odds 84-87%)
 
 ---
 
