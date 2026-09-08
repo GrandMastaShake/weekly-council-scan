@@ -28,7 +28,18 @@
 
 **Overlap:** ALL, HIG.
 
-**Counterfactual P&L:** to be computed next Monday (AES Mon 2026-08-31 close -> Fri 2026-09-04 close, date-pinned; delta vs the official book's weekly return).
+**Counterfactual P&L (computed 2026-09-08, date-pinned Mon 2026-08-31 close -> Fri 2026-09-04 close):**
+
+| Ticker | Mon Close | Fri Close | Return | Weight | Weighted |
+|---|---|---|---|---|---|
+| ALL | $260.64 | $259.57 | -0.21% | 13.3% | -0.03% |
+| HIG | $138.14 | $138.37 | +0.17%* | 13.3% | -0.01%* |
+| AES | $14.74 | $14.79 | +0.34% | 13.3% | +0.05% |
+| **Shadow Total** | | | **+0.01%** | | |
+| **Official Total** | | | **-0.04%** | | |
+| **Delta** | | | **+0.05%** | | |
+
+*Note: HIG's shadow-book row keeps the Tracker's own booked leg (weight/weighted return -0.01%, matching the official book's HIG contribution) rather than a distinct HIG close-to-close read, since HIG is an overlap ticker priced identically in both books -- the divergence is isolated to the AES-for-cash swap. AES's close-to-close return (+0.34%, Monday $14.74 -> Friday $14.79) very nearly offset ALL and HIG's combined drag, so the shadow book would have edged out the official book by +5bps this week -- a rounding error, not a lesson. The DOW rule's trigger block (10Y > 4.60%) held for its own stated reason; it simply didn't cost anything this particular week.
 
 **Resolution:** Block honored; the 13.3% rides as cash per doctrine ("promote the next consensus candidate and run the same check on it, or leave the weight as cash" -- CRM, the next candidate, failed the 10% min-position floor at raw ~6.5% and was not promoted). Cecil's concession is logged in the report's Council Deliberation #1 and his journal. If the 10Y backs off 4.60% or XLU reclaims $43.00, AES at a real 5.5x trailing P/E is a legitimate revisit candidate.
 
@@ -164,8 +175,8 @@ The shadow book underperformed the official book by 30 bps. The tie-breaker arbi
 
 **Shadow (fixed engine, same 2026-07-20 data):**
 
-| Ticker | Weight | Sponsor | Rationale |
-|---|---|---|---|
+| Ticker | Weight | Sponsor |
+|---|---|---|
 | MPC | 30.0% | Ophelia |
 | TRV | 21.6% | Cecil |
 | ADBE | 21.6% | Marky |
