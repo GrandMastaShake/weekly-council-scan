@@ -73,7 +73,7 @@ Marky called it momentum. Ophelia warned of the cycle. I looked at the book-to-b
 ## CURRENT REGIME ASSESSMENT
 
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | DXY | 102.2 | Headwind for commodities, tailwind for domestic earners |
 | 10Y Yield | 4.585% | Restrictive. Growth is expensive. Value is breathing room |
 | VIX | 15.8 | Complacency trap. But I don't trade VIX. I use it to shop |
@@ -136,20 +136,6 @@ Current bias: favor dividend aristocrats trading below 10-year average P/E with 
 ---
 
 *To be filled weekly. See the Weekly Entry Template below.*
-
----
-
-## CONTRARIAN CALL
-
-**Consensus:** Dividend stocks are boring. Growth is where the alpha is. AI is the only story that matters.
-
-**Why they're wrong:** The growth trade is crowded. NVDA at 60x P/E is priced for a future that may arrive, but may not arrive fast enough. Meanwhile, the dividend aristocrats are trading at 15-year low relative valuations, and their cash flows are *happening now*. The crowd is paying for dreams while ignoring dividends that compound while you sleep.
-
-**The trade:** Find the highest-quality dividend compounder with a 4%+ yield, a 50-year payment history, and a P/E below 18. Hold it for three years. Collect the checks. Let the market come back to you.
-
-**What confirms it:** Dividend aristocrats start outperforming the Nasdaq on a 30-day rolling basis. Money flows into value ETFs. The narrative shifts from "boring" to "safe haven."
-
-**What kills it:** A genuine productivity boom from AI that collapses P/E ratios across the board by 40%. If the denominator explodes, even value looks expensive. Then I pivot to cash and wait.
 
 ---
 
@@ -235,7 +221,7 @@ The garden is quiet. The weeds are loud. I am weeding.
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | DXY | XXX.X | |
 | 10Y Yield | X.XXX% | |
 | VIX | XX.X | |
@@ -289,7 +275,7 @@ Weekly adjustments to the harness. What changed, why, and what resulted.
 Tracking the Council's performance. Updated weekly after audit.
 
 | Week Ending | Cecil (Fundamentalist) | Marky (Sector Rotator) | Ophelia (Macro Strategist) | Lead Councilor | Flagged Blindspot |
-|-------------|------------------------|------------------------|---------------------------|----------------|-------------------|
+|-------------|------------------------|------------------------|---------------------------|----------------|--------------------|
 | YYYY-MM-DD | X.X | X.X | X.X | [Agent] | [Agent] |
 
 **Scoring:** Average grade of picks over last 4 weeks (rolling window). A = 4, B = 3, C = 2, D = 1, F = 0.
@@ -301,7 +287,7 @@ Tracking the Council's performance. Updated weekly after audit.
 **Cecil's Personal Log:**
 
 | Week Ending | My Picks Avg | 4-Week Rolling | Status | Notes |
-|-------------|--------------|----------------|--------|-------|
+|-------------|--------------|-----------------|--------|-------|
 | YYYY-MM-DD | X.X | X.X | [Lead / Flagged / Normal] | |
 
 ---
@@ -317,7 +303,7 @@ Tracking the Council's performance. Updated weekly after audit.
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | VIX | 18.1 | Elevated vs last week's 16.5 — the crowd is waking up |
 | SPY Weekly | -1.22% | The tape finally agreed with my skepticism |
 
@@ -347,7 +333,7 @@ Two of my three picks made the book, but my theses still ship without written st
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | DXY | 99.80 | Below 100 — commodity headwind easing; Rule 1 watch lifted |
 | 10Y Yield | 4.745% | Still restrictive; no relief until below 4.5% |
 | VIX | 16.0 | Complacency zone — but the foundation is cracking |
@@ -371,7 +357,6 @@ SYM taught me that a pure value signal without narrative guardrails is a half-th
 **Cash Target: 35%** — the Council deployed 100%. Noted for the record. Again.
 
 — **Cecil**, The Fundamentalist
-
 
 ---
 
@@ -398,7 +383,7 @@ SYM taught me that a pure value signal without narrative guardrails is a half-th
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | DXY | 99.60 (stale composite) | Third week below 100 — Rule 1 stays quiet; commodity embargo lifted |
 | 10Y Yield | 4.696% | Restrictive, pressing the top of the 4.55-4.75% battlefield |
 | VIX | 14.25 Fri / ~15.0 Mon | Six-month-low complacency, cracking at the edges this morning |
@@ -430,7 +415,7 @@ Two fences held this week: the P/E provenance gate (my SYM scar) stayed silent b
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | DXY | 98.80 (first sub-99 close) | Rule 1 stays quiet; the debasement bid is real (materials wiki) |
 | 10Y Yield | 4.738% (52W-high close) | 1bp under the 4.75% stress line -- restrictive, at the ceiling |
 | VIX | 15.13 | Complacency cracking, not cracked |
@@ -461,7 +446,7 @@ A trigger that fires is not a failure of the trigger -- it is the trigger workin
 
 #### Regime Quick-Check
 | Factor | Reading | Implication |
-|--------|---------|-------------|
+|--------|---------|--------------|
 | 10Y Yield | 4.72% | Restrictive, but under the 4.85% post-Warsh line -- the carry thesis still holds |
 | Curve (10Y-3M) | +99 bps | Insurer investment income keeps compounding |
 | XLF | $58.10 close Friday | Re-reclaimed the $58.00 pivot -- "back in bull hands" (wiki/financials.md Technical Levels) |
@@ -484,5 +469,37 @@ On AES, my screen saw the cheapest multiple in the cache and not the regime. The
 The re-base pattern works -- concede the dead premise, keep the falsifiable one. But name the concentration flag honestly: the book is two P&C insurers sharing one trigger family (XLF $55.00 / 10Y 4.85%) into Friday's jobs report (cons +45K; a second negative print = recession watch). The 73.4% cash is the mitigation and the correct posture. Dividends don't check CME FedWatch.
 
 **Cash Target: 50%. Council actual: 73.4%.** A hawkish binary on Friday and a regime line 13 bps overhead -- cash is fertilizer, and this week we bought extra again.
+
+-- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-09-08 -- Entry #007
+
+**Mood:** Steady -- the garden holds the same two rows a third week running, and I am starting to worry about the monoculture more than the multiples
+**Cash Target:** 45% (Council book: 73.4% cash -- the Council has out-saved me four weeks running now)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| 10Y Yield | 4.79% | Broke the 4.75% stress line for a SECOND week -- 6bps from my 4.85% fence |
+| Curve (10Y-3M) | +103 bps | Still compounding for the insurer trade, but the ceiling is close |
+| XLI | $175.27, below its 200D | 45% of S&P industrials in bear-market territory -- worst breadth since the 2025 Liberation Day selloff |
+| Gates | August CPI Thu 9/11, FOMC 9/15-16 | The NFP flag closed bullish; the rate flag is now the whole fight |
+
+**Verdict:** Restrictive, and the industrials sector I am about to plant in is the single worst-breadth sector on the board. That is not a coincidence I get to ignore.
+
+#### This Week's Picks (Council Book)
+- **LMT** -- score 96, conf 82.5 -- real Q2 beat, Citigroup target hike to $691, down over 15% from its August close on pure multiple compression. Booked 13.3% @ $526.23. Trigger: void if XLI weekly-closes below its 200D (~$170-171) or 10Y closes above 4.85%.
+- **ETN** -- score 88, conf 74.0 -- 26x forward, but the data-center revenue growth (65% YoY, Electrical Americas) is real and got stronger this week, not weaker. Booked 13.3% @ $421.11. Same sector-level fence, plus a company-specific one: a hyperscaler capex cut kills it.
+- **DLR** -- score 79, conf 68.0 -- proposed, cut by consensus. Real estate, AI-lease demand. The garden's fourth candidate; conceded to keep the book at two names into a CPI-then-FOMC stretch.
+
+#### The Concession (owned)
+Both of my booked names sit inside a sector where 45% of constituents are in a bear market and the index itself is below its 200-day. My own rulebook says the story is unchanged for LMT and ETN specifically -- a real beat and target hike, real 65% YoY growth -- and that is true. But "the story didn't change, the stock did" is a defense that gets weaker the more names I plant in the same broken field, not stronger. I used the sector ETF (XLI 200D) as the trigger instead of a name-specific level precisely because I do not fully trust my own fundamentals-only lens to price the breadth risk. That is the honest version of "buying quality in a bad neighborhood," not a rationalization -- but I am writing it down before the trade works, not after.
+
+#### Lesson Learned
+Three weeks of two-name-Cecil books is not a strategy, it is a symptom: the dampened vote share keeps landing on me because Marky and Ophelia's raw shares fall below the 10% floor at this cash level, and the sponsor cap is the only thing stopping me from planting my whole 40% allocation in one sector. Next week, if my top two candidates are in the same sector again, I bring a name from a second sector even if the conviction gap is real -- concentration risk does not care whose fundamentals are correct.
+
+**Cash Target: 45%. Council actual: 73.4%.** CPI Thursday and FOMC the week after is a harder consecutive-gate stretch than any single jobs report -- the cash buys patience, not fear.
 
 -- **Cecil**, The Fundamentalist
