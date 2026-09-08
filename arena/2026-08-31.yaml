@@ -2,11 +2,13 @@ week: '2026-08-31'
 lock: 2026-08-31 08:50 ET
 entry_date: '2026-08-31'
 exit_date: '2026-09-04'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 767.33
   entry_price_source: open
+  exit_price: 770.19
+  return_pct: 0.37
 players:
 - player: GrandMastaShake
   valid: true
@@ -17,22 +19,34 @@ players:
     weight: 0.25
     entry_price: 355.9
     entry_price_source: open
+    exit_price: 358.21
+    return_pct: 0.65
   - ticker: CRWD
     weight: 0.22
     entry_price: 221.42
     entry_price_source: open
+    exit_price: 213.1
+    return_pct: -3.76
   - ticker: FCX
     weight: 0.2
     entry_price: 76.95
     entry_price_source: open
+    exit_price: 72.73
+    return_pct: -5.48
   - ticker: GS
     weight: 0.18
     entry_price: 1032.6
     entry_price_source: open
+    exit_price: 1038.61
+    return_pct: 0.58
   - ticker: MP
     weight: 0.1
     entry_price: 56.13
     entry_price_source: open
+    exit_price: 54.53
+    return_pct: -2.85
+  weekly_return_pct: -1.94
+  alpha_vs_spy_pct: -2.31
 - player: Umassalum
   valid: true
   total_weight: 1.0
@@ -42,31 +56,49 @@ players:
     weight: 0.3
     entry_price: 60.39
     entry_price_source: open
+    exit_price: 59.82
+    return_pct: -0.94
   - ticker: LNG
     weight: 0.15
     entry_price: 286.68
     entry_price_source: open
+    exit_price: 292.0
+    return_pct: 1.86
   - ticker: JPM
     weight: 0.1
     entry_price: 355.9
     entry_price_source: open
+    exit_price: 358.21
+    return_pct: 0.65
   - ticker: GILD
     weight: 0.15
     entry_price: 144.23
     entry_price_source: open
+    exit_price: 150.99
+    return_pct: 4.69
   - ticker: SPCX
     weight: 0.1
     entry_price: 140.03
     entry_price_source: open
+    exit_price: 147.95
+    return_pct: 5.66
   - ticker: AAPL
     weight: 0.1
     entry_price: 319.56
     entry_price_source: open
+    exit_price: 319.97
+    return_pct: 0.13
   - ticker: LLY
     weight: 0.05
     entry_price: 1168.47
     entry_price_source: open
+    exit_price: 1149.36
+    return_pct: -1.64
   - ticker: DDOG
     weight: 0.05
     entry_price: 233.32
     entry_price_source: open
+    exit_price: 212.93
+    return_pct: -8.74
+  weekly_return_pct: 0.82
+  alpha_vs_spy_pct: 0.45
