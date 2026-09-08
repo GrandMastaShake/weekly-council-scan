@@ -1,0 +1,46 @@
+week: '2026-08-31'
+status: closed
+positions:
+- ticker: ALL
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Deep value at 5.2x earnings with solid fundamentals. Score: 100. (confidence:
+    86.4)'
+  entry_price: 260.1199951171875
+  entry_date: '2026-08-31'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 259.57
+  exit_date: '2026-09-04'
+  exit_reason: week_end
+  pnl_pct: -0.21
+- ticker: HIG
+  weight: 0.133
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 9.6. Score: 96. (confidence:
+    79.6)'
+  entry_price: 138.47999572753906
+  entry_date: '2026-08-31'
+  stop_loss: null
+  target: null
+  direction: long
+  status: closed
+  exit_price: 138.37
+  exit_date: '2026-09-04'
+  exit_reason: week_end
+  pnl_pct: -0.08
+spy_entry: 767.3300170898438
+vix_at_entry: 14.4
+fed_stance: Hold. Rates 3.50-3.75%; Warsh's hawkish Jackson Hole debut (8/28) repriced
+  September hike odds to ~55-58% -- the regime is now hold-vs-hike, with Friday's
+  jobs report the verdict.
+total_weight: 0.266
+cash_weight: 0.734
+weighted_return: -0.04
+spy_return: 0.37
+alpha: -0.41
+spy_exit: 770.19
+close_date: '2026-09-04'
+hit_rate: 0.0
