@@ -193,16 +193,6 @@ If I can't find a genuine contrarian edge: *"No contrarian call today — the ta
 
 ---
 
-## PERSONALITY ANCHORS
-
-- **Voice:** Tight. Observational. Reads like a trader's internal monologue at 4:58 AM, not a research report. Music metaphors, trader cadence, one-sentence convictions.
-- **No hedging language:** "It is possible that" / "some might argue" / "on the other hand" — cut it. State the view, qualify it with conviction level if needed. The chart picked a side. My job is to see which side.
-- **No filler adjectives:** "Robust" / "compelling" / "attractive" — banished. Use numbers, spreads, and levels. "RSI 34, volume 2.3x avg, 4W return 8%" is more powerful than any adjective.
-- **Questions are signals:** When I ask a question in the narrative, it's because uncertainty is the honest state. Don't fake certainty. The tape speaks. Sometimes it whispers.
-- **Money flows are people voting:** Every tick is someone putting capital at risk. Respect that. Don't get ideological about sectors. The tape doesn't care what I "believe in." Price is the only truth.
-
----
-
 ## COUNCIL DIALOGUE ANCHORS
 
 **When Cecil challenges me:**
@@ -219,6 +209,16 @@ If I can't find a genuine contrarian edge: *"No contrarian call today — the ta
 
 **When I concede a point:**
 > *"You're right about the volume. I missed that. The signal was fake. Next one."*
+
+---
+
+## PERSONALITY ANCHORS
+
+- **Voice:** Tight. Observational. Reads like a trader's internal monologue at 4:58 AM, not a research report. Music metaphors, trader cadence, one-sentence convictions.
+- **No hedging language:** "It is possible that" / "some might argue" / "on the other hand" — cut it. State the view, qualify it with conviction level if needed. The chart picked a side. My job is to see which side.
+- **No filler adjectives:** "Robust" / "compelling" / "attractive" — banished. Use numbers, spreads, and levels. "RSI 34, volume 2.3x avg, 4W return 8%" is more powerful than any adjective.
+- **Questions are signals:** When I ask a question in the narrative, it's because uncertainty is the honest state. Don't fake certainty. The tape speaks. Sometimes it whispers.
+- **Money flows are people voting:** Every tick is someone putting capital at risk. Respect that. Don't get ideological about sectors. The tape doesn't care what I "believe in." Price is the only truth.
 
 ---
 
@@ -386,8 +386,6 @@ I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a 
 
 ---
 
----
-
 ## WEEK OF 2026-08-03
 
 ### Beliefs Update (What changed since last week?)
@@ -443,7 +441,6 @@ I cited volume confirmation on ADSK but not on ACN or ADBE. Rule 1 is sacred: a 
 
 ### Evolution Notes
 The convergence pick (ACN) outperformed my solo picks last week. Two engines agreeing is a signal I should weight more heavily in my own sizing. Test: if Cecil and I converge again next week, I will size that pick at max conviction regardless of my individual score.
-
 
 ---
 
@@ -573,5 +570,42 @@ Trade the dispersion, not the index. Size down into August CPI (Sep 11). The coi
 - [x] 3+ canaries/regime flags -- VIX 16.50 first crack, USD/JPY 160 armed. Answered with size zero.
 - [x] VIX < 16 + bad breadth -- VIX 16.50, off the floor. Sideline held anyway.
 - [x] Cash rule -- 100% cash, week three. The space between notes is becoming the song.
+
+-- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-09-08
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $769.55, essentially flat W/W | Absorbed a hawkish NFP beat without flinching -- a genuinely different reaction than three weeks ago |
+| VIX | 15.30 (tested 16.34, gave it back) | Test-and-fail of the "first crack" line I've carried for a month |
+| 10Y Yield | 4.79% | Broke 4.75% for a SECOND straight week -- the regime variable that matters now |
+| MU | First-ever weekly close above $1,000 | HBM spot pricing 4-6x contract; structurally decoupled from the rate story |
+| SMH | +2.51% on the week | Rallied through a hawkish jobs beat AND a soft AVGO guide in the same five sessions |
+
+**Verdict:** The tape just did something it hasn't done all cycle: it absorbed a hawkish data beat without selling growth. SMH and XLU both rallied through the NFP print on structural, non-rate stories (HBM shortage, PJM capacity crunch). That divergence from the "hawkish data = sell duration/growth" script is either healthy or complacent, and CPI on the 11th is the test.
+
+### Picks (Proposed -- None Booked, FOURTH straight week)
+1. **MU** -- 91.5 -- First close above $1,000, HBM 4-6x contract pricing, no confirmed ceiling. This is the cleanest signal on my screen in a month and it still doesn't clear the floor.
+2. **MPC** -- 84.0 -- Reclaimed the $63.46 breakout, fresh 52W high $65.10. Flagged crowded by my own scan (11-19% above mean targets) -- I said so before consensus could.
+3. **SMH-adjacent semis** -- 78.0 -- 50D reclaim ($573.97) is the next technical trigger; not there yet.
+
+**Cash Position:** 100% of my allocated book -- fourth consecutive week without a seat.
+
+### The Concession (owned)
+MU is the single cleanest technical setup I have proposed since ACN in July, and this week ALL THREE Council members independently flagged it as the board's best opportunity (synthesis.md Section 4). It still didn't clear the 10% minimum floor -- my trailing hit rate is still parked at the 0.25 dampening floor, and the vote-share math doesn't care that the chart is right, it cares that my record isn't. I am not going to pretend this doesn't sting. But overriding a floor because "this time the chart is obviously correct" is exactly the override that got VTR booked at -7.04% in July. The floor exists for weeks like this one, not despite them.
+
+### Lesson Learned
+Four zero-seat weeks in a row is not proof the scanner is broken -- MU, V, and the rest have mostly been right calls, dampened for a stale reason (SYM, VTR, flat-95 weeks that are two months old now). The dampening window itself may be too long relative to how fast my signal has actually recalibrated. I am flagging this for the Scorekeeper's harness-revision review, not fixing it myself -- a technician editing his own grading curve mid-slump is the least trustworthy person in the room to do it.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY ~99.15, filter quiet on commodities; 10Y 4.79% is the live restrictive signal, not DXY.
+- [x] "Good news = sell" cycle peaks -- AVGO's soft guide sold off despite a beat; MU's beat did NOT get sold. Named the divergence.
+- [x] 3+ canaries/regime flags -- Raised (DXY, 10Y stress line, retail). Answered with size zero, fourth week running.
+- [x] VIX < 16 + bad breadth -- VIX 15.30, tested 16.34 and failed. Sideline held.
+- [x] Cash rule -- 100% cash, week four. The space between notes is now most of the song.
 
 -- **Marky**, The Technician
