@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: Session date YYYY-MM-DD (default: latest weekday)
+        description: "Session date YYYY-MM-DD (default: latest weekday)"
         required: false
         type: string
       dry_run:
