@@ -28,8 +28,8 @@ jobs:
       - name: Tests
         run: python -m pytest -q
 
-      - name: Feed gate on the committed panel
-        run: python scripts/truth_check.py --repo . --feed
+      - name: Feed and config gates on the committed panel
+        run: python scripts/truth_check.py --repo . --feed --config
 
       - name: Panel is intact against the previous commit
         run: |

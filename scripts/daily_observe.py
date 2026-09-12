@@ -60,10 +60,7 @@ while not os.path.isdir(os.path.join(_PIPELINE_ROOT, "scan_pipeline")):
 if _PIPELINE_ROOT not in sys.path:
     sys.path.insert(0, _PIPELINE_ROOT)
 
-from scan_pipeline.config.tickers import (  # noqa: E402
-    BACKFILL_44_TICKERS,
-    STOCK_UNIVERSE,
-)
+from scan_pipeline.config.tickers import PRICE_FEED_UNIVERSE  # noqa: E402
 from scan_pipeline.snapshot import (  # noqa: E402
     INDEX_TICKERS,
     SECTOR_TICKERS,
@@ -101,16 +98,15 @@ def observation_universe(weekly_dir: str | None = None) -> list:
     adjustment anchor, which is the divergence sec.4 warns about.
 
     `STOCK_UNIVERSE` alone is NOT enough and the first build of this script
-    got it wrong: it holds 277 names and covers only 66 of the 110-name
-    watchlist, which left Communication Services with 2 usable constituents.
-    The live universe is `STOCK_UNIVERSE | BACKFILL_44_TICKERS` (321), the
-    number CLAUDE.md documents.
+    got it wrong: it is the ENGINE set, 277 names covering only 66 of the
+    110-name watchlist, and it left Communication Services with 2 usable
+    constituents. `PRICE_FEED_UNIVERSE` (321) is the feed.
 
     The union with the newest weekly file's series is the self-healing part:
     if the panel grows again, the daily feed follows automatically instead of
     silently staying narrow.
     """
-    universe = (set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
+    universe = (set(PRICE_FEED_UNIVERSE)
                 | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
     if weekly_dir and os.path.isdir(weekly_dir):
         newest = sorted(f for f in os.listdir(weekly_dir)

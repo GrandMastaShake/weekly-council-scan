@@ -65,9 +65,16 @@ jobs:
           fi
           exit $code
 
-      - name: Validate the feed
+      - name: Validate the feed and config
         if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
-        run: python scripts/truth_check.py --repo . --feed
+        run: python scripts/truth_check.py --repo . --feed --config
+
+      # Network-dependent, so it lives here rather than in CI, which stays
+      # deterministic and offline. A fetch failure degrades to an UNVERIFIED
+      # warning; only a FAIL stops the run, and this check emits none.
+      - name: Scan for corporate-action discontinuities
+        if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
+        run: python scripts/truth_check.py --repo . --splits
 
       - name: Tests
         if: steps.observe.outputs.refused != 'true' && !inputs.dry_run

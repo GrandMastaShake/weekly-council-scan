@@ -68,21 +68,27 @@ ticker no longer has volume 0, since that means the provider restated.
 
 `scan_pipeline/config/tickers.py`:
 
-- `STOCK_UNIVERSE` -- the **price feed**. Deliberately wide.
-- `SECTOR_FOCUS_110` -- the **analysis universe**, the Seven Orbs watchlist,
-  cap-descending. Authoritative copy lives in sector-regime-heatmap at
-  `config/watchlist_110.csv`; keep them in sync.
+- `PRICE_FEED_UNIVERSE` -- what `data/weekly` and `data/daily` commit.
+  `STOCK_UNIVERSE | BACKFILL_44_TICKERS`.
+- `STOCK_UNIVERSE` -- what the **engines scan**. Deliberately narrower than the
+  feed so Monday fetch time is unchanged; the backfilled names are fed and
+  stored but not scanned.
+- `SECTOR_FOCUS_110` / `FOCUS_TICKERS` -- the **analysis universe**, the Seven
+  Orbs watchlist, cap-descending. Authoritative copy lives in
+  sector-regime-heatmap at `config/watchlist_110.csv`; this copy is a
+  transcription and the CSV wins any disagreement.
 
-**This section describes intent, not the current file (2026-09-11).** Commit
-`009f7f6` added `SECTOR_FOCUS_110`, `FOCUS_TICKERS` and two asserts pinning
-the set at 110 names and as a subset of the feed; commit `7cf7025` ("runner
-convergence") deleted all four and left `STOCK_UNIVERSE` at 277, not 321.
-Nothing failed, because this repo has no equivalent of the heatmap's
-`preflight.py` config-drift gate -- the docs and the code simply disagreed for
-two weeks. The live feed does carry the names (330 series a week, 109 of the
-110 watchlist; AVB is correctly in `missing`), so the data is fine and the
-constant is not. Restore both, or correct this section -- but do not assume
-`FOCUS_TICKERS` exists because it is documented here.
+Counts are asserted in code and by `truth_check --config`, not written here.
+A number in prose is a third copy of a fact and it drifts.
+
+**Restored 2026-09-12 after a two-week drift.** `009f7f6` added the focus set
+and two asserts; `7cf7025` deleted both and left the feed at 277 while this
+file kept describing 321. The assert that broke was
+`FOCUS_TICKERS <= STOCK_UNIVERSE`, which cannot hold once the focus set is
+wider than the engine set -- so the block was deleted rather than the bound
+corrected. It is now bound against `PRICE_FEED_UNIVERSE`, which is the set it
+always meant. Nothing caught it at the time because this repo had no
+config-drift gate; `truth_check --config` is that gate now.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
@@ -125,14 +131,27 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   `series` and not in `missing`, so it flowed through as real. Three
   independent sources agree it is junk. `metric_definitions.md` already
   required flagging zero-volume records; this one got past.
-- **APH split 2:1 on 2026-09-03** and the weekly panel straddles it:
-  `2026-08-28.json` was fetched 08-29 (pre-split), `2026-09-04.json` was
-  fetched 09-05 (post-split). Any week-over-week read across those two files
-  sees a phantom -50% for APH. APH is not in the 110-name watchlist, so the
-  heatmap's sector scores are untouched, but `market_state` and anything else
-  deriving returns over the full universe are not. The heatmap's extreme-move
-  flag (>40%) is the net that catches this class; it fires as a warning, not a
-  refusal, and only for names inside a scored basket.
+- **Corporate actions the panel straddles.** Adjusted closes are anchored to
+  the FETCH date, so a split between two fetches lands in the panel as a step:
+  the earlier file is on the pre-split basis, the later one is not, and the
+  week-over-week return across them is the ratio rather than a market move.
+  Two are known: **APH** (2:1, 2026-09-03) and **MNST** (2:1, 2026-08-11).
+  Neither is in the 110-name analysis set, so heatmap sector scores are
+  untouched -- `market_state` and Arena, which derive over the full universe,
+  are not.
+
+  **The panel is not edited for these.** A weekly file is an observation and
+  `2026-08-28.json` correctly records APH as it stood that day; rewriting it
+  onto the post-split basis would falsify the log to flatter a consumer. Both
+  are recorded in `macro/known_corporate_actions.json` with that reasoning.
+
+  `truth_check --splits` finds them. It scans every consecutive pair in both
+  panels for moves matching a split ratio, then **verifies each against the
+  provider's split history** -- a ratio alone is not evidence, because a 3:2
+  split is -33.3% and so is an ordinary crash. The first draft flagged SOUN,
+  IONQ and QUBT for the same week of 2025-01-10, which was the quantum-stock
+  selloff, not three simultaneous splits. Of 12 ratio candidates in the live
+  panel, 2 are real. A failed fetch reports UNVERIFIED, never "no split".
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`

@@ -79,6 +79,7 @@ VERSION = "v6"
 
 _UA = {"User-Agent": "Mozilla/5.0"}
 _fetch_cache = {}
+_splits_cache = {}
 
 
 def yahoo_close(symbol, end=None, window_days=12):
@@ -141,6 +142,41 @@ def yahoo_close_on_or_before(symbol, date_str, window_days=14):
     except Exception:
         pass
     return None
+
+
+def yahoo_splits(symbol, start="2015-01-01"):
+    """Split history via the Yahoo chart API. [(iso_date, "n:d"), ...].
+
+    Returns None on any failure so a network problem is reported as
+    "unverified", never as "no split" -- the difference matters, because
+    "no split" dismisses a candidate.
+    """
+    if symbol in _splits_cache:
+        return _splits_cache[symbol]
+    d0 = dt.date.fromisoformat(start)
+    d1 = dt.date.today() + dt.timedelta(days=1)
+    p1 = int(dt.datetime(d0.year, d0.month, d0.day, tzinfo=dt.timezone.utc).timestamp())
+    p2 = int(dt.datetime(d1.year, d1.month, d1.day, tzinfo=dt.timezone.utc).timestamp())
+    url = ("https://query1.finance.yahoo.com/v8/finance/chart/"
+           f"{symbol}?period1={p1}&period2={p2}&interval=1d&events=split")
+    try:
+        raw = json.loads(urllib.request.urlopen(
+            urllib.request.Request(url, headers=_UA), timeout=30).read())
+        res = (raw.get("chart", {}).get("result") or [None])[0]
+        if res is None:
+            _splits_cache[symbol] = None
+            return None
+        ev = (res.get("events") or {}).get("splits") or {}
+        out = sorted(
+            (dt.datetime.fromtimestamp(v["date"],
+                                       tz=dt.timezone.utc).date().isoformat(),
+             f'{v.get("numerator")}:{v.get("denominator")}')
+            for v in ev.values())
+        _splits_cache[symbol] = out
+        return out
+    except Exception:
+        _splits_cache[symbol] = None
+        return None
 
 
 # ------------------------------------------------------------------ reporters
@@ -877,6 +913,239 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                   f"DATA_FEED.md sec.1 (failures reported above)")
 
 
+# --------------------------------------------------------------------- splits
+
+# Ratios a corporate action produces, as the percent change an UNADJUSTED
+# panel shows when it straddles one. A forward split divides the price.
+CORPORATE_ACTION_MOVES = {
+    -50.0:   "2:1 forward split",
+    -66.667: "3:1 forward split",
+    -33.333: "3:2 forward split",
+    -75.0:   "4:1 forward split",
+    -80.0:   "5:1 forward split",
+    -90.0:   "10:1 forward split",
+    -95.0:   "20:1 forward split",
+    100.0:   "1:2 reverse split",
+    200.0:   "1:3 reverse split",
+    400.0:   "1:5 reverse split",
+    900.0:   "1:10 reverse split",
+}
+
+# A split is exact arithmetic, so the observed move lands very close to the
+# ratio. The slack covers the genuine market move in the same window.
+SPLIT_TOLERANCE_PCT = 2.5
+
+# Below this nothing is examined. A real one-week move this large is rare and
+# worth a look regardless of whether it matches a ratio.
+LARGE_MOVE_PCT = 30.0
+
+ACK_PATH = ("macro", "known_corporate_actions.json")
+
+
+def _load_panel_docs(directory):
+    """Weekly/daily docs oldest first, corrections preferred (sec.1)."""
+    out = []
+    for f in sorted(directory.glob("*.json")):
+        if f.name.endswith(".corrected.json"):
+            continue
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        corrected = f.with_name(f.stem + ".corrected.json")
+        if corrected.is_file():
+            doc = json.loads(corrected.read_text(encoding="utf-8"))
+        out.append((f.name, doc))
+    out.sort(key=lambda kv: kv[1].get("as_of", kv[0]))
+    return out
+
+
+def _classify(pct):
+    for move, label in CORPORATE_ACTION_MOVES.items():
+        if abs(pct - move) <= SPLIT_TOLERANCE_PCT:
+            return label
+    return None
+
+
+def check_splits(repo, rep):
+    """Find panel discontinuities that look like unhandled corporate actions.
+
+    Adjusted closes are back-adjusted to the FETCH date. A split between two
+    fetches therefore lands in the panel as a step: the file fetched before it
+    is on the pre-split basis, the one after is on the post-split basis, and
+    the week-over-week return across them is the split ratio rather than a
+    market move.
+
+    APH is the worked example. It split 2:1 on 2026-09-03; 2026-08-28.json was
+    fetched 08-29 and 2026-09-04.json on 09-05, so the panel shows -50%.
+    Nothing caught it: the heatmap's extreme-move flag only covers names
+    inside a scored basket, and APH is not in the 110.
+
+    WARN, not FAIL, matching the extreme-move convention -- real crashes
+    happen and a detector that refuses the panel would be worse than one that
+    names the suspect. Acknowledge a reviewed action in
+    macro/known_corporate_actions.json and it goes quiet.
+    """
+    ack_file = repo.joinpath(*ACK_PATH)
+    ack = {}
+    if ack_file.is_file():
+        try:
+            ack = {(e["ticker"], e["between"]): e
+                   for e in json.loads(ack_file.read_text(encoding="utf-8"))
+                                  .get("actions", [])}
+        except (json.JSONDecodeError, KeyError, TypeError) as exc:
+            rep.add("FAIL", f"splits: {'/'.join(ACK_PATH)} does not parse "
+                            f"({exc})")
+            return
+
+    scanned = 0
+    candidates = []
+    for label, subdir in (("weekly", "weekly"), ("daily", "daily")):
+        d = repo / "data" / subdir
+        if not d.is_dir():
+            continue
+        docs = _load_panel_docs(d)
+        if len(docs) < 2:
+            continue
+        scanned += len(docs)
+        for (n0, a), (n1, b) in zip(docs, docs[1:]):
+            sa = a.get("series") or {}
+            sb = b.get("series") or {}
+            for ticker in sorted(set(sa) & set(sb)):
+                try:
+                    p0 = float(sa[ticker]["close"])
+                    p1 = float(sb[ticker]["close"])
+                except (TypeError, ValueError, KeyError):
+                    continue
+                if p0 <= 0:
+                    continue
+                pct = (p1 / p0 - 1.0) * 100.0
+                if abs(pct) < LARGE_MOVE_PCT:
+                    continue
+                span = f"{a.get('as_of')}..{b.get('as_of')}"
+                if _classify(pct) is None:
+                    continue
+                if (ticker, span) in ack:
+                    continue
+                candidates.append((ticker, span, pct, label,
+                                   a.get("as_of"), b.get("as_of")))
+    if not scanned:
+        rep.add("SKIP", "splits: no panel files to scan")
+        return
+
+    # Verify each candidate against the provider's split history. The ratio
+    # alone is not evidence: a 3:2 split is -33.3% and so is an ordinary
+    # crash. The first draft of this check flagged SOUN, IONQ and QUBT for the
+    # same week of 2025-01-10, which was the quantum-stock selloff, not three
+    # simultaneous splits. Only a real split date confirms one.
+    confirmed = unverified = 0
+    for ticker, span, pct, label, d0, d1 in candidates:
+        hist = yahoo_splits(ticker)
+        if hist is None:
+            unverified += 1
+            rep.add("WARN",
+                    f"splits: {ticker} moved {pct:+.1f}% across {span} "
+                    f"({label} panel) -- matches a split ratio but the split "
+                    f"history could not be fetched, so this is UNVERIFIED. "
+                    f"Re-run with network access before concluding anything.")
+            continue
+        hit = [(d, r) for d, r in hist if d0 < d <= d1]
+        if not hit:
+            continue        # a real market move; not this check's business
+        confirmed += 1
+        when, ratio = hit[0]
+        rep.add("WARN",
+                f"splits: {ticker} split {ratio} on {when}, and the {label} "
+                f"panel straddles it -- {span} shows {pct:+.1f}%, which is the "
+                f"ratio, not a market move. Adjusted closes are anchored to "
+                f"the fetch date, so the file fetched before the action is on "
+                f"the pre-split basis and the one after is not. Record it in "
+                f"{'/'.join(ACK_PATH)} once reviewed.")
+
+    dismissed = len(candidates) - confirmed - unverified
+    rep.add("OK", f"splits: scanned {scanned} panel file(s); "
+                  f"{len(candidates)} ratio candidate(s), {confirmed} "
+                  f"confirmed against provider split history, {dismissed} "
+                  f"dismissed as real market moves")
+
+
+# --------------------------------------------------------------------- config
+
+# Symbols the docs describe. If CLAUDE.md talks about one, it has to exist.
+#
+# This gate exists because the absence of it cost two weeks. Commit 009f7f6
+# added SECTOR_FOCUS_110 and FOCUS_TICKERS; 7cf7025 deleted them along with
+# their asserts; CLAUDE.md went on documenting both and nothing anywhere
+# noticed, because unlike sector-regime-heatmap this repo had no config-drift
+# check. The heatmap's preflight.py catches exactly this class -- three copies
+# of the same fact that disagree -- and the panel is too important to be the
+# one repo without it.
+DOCUMENTED_SYMBOLS = (
+    "STOCK_UNIVERSE",
+    "BACKFILL_44_TICKERS",
+    "PRICE_FEED_UNIVERSE",
+    "SECTOR_FOCUS_110",
+    "FOCUS_TICKERS",
+)
+
+
+def check_config(repo, rep):
+    """Config-drift gate: the docs, the constants and the panel must agree."""
+    before = rep.counts["FAIL"]
+    sys.path.insert(0, str(repo))
+    try:
+        from scan_pipeline.config import tickers as t
+    except Exception as exc:                        # noqa: BLE001
+        rep.add("FAIL", f"config: cannot import scan_pipeline.config.tickers "
+                        f"({exc}). The module-level asserts fire on import, so "
+                        f"this is how a broken focus set surfaces.")
+        return
+
+    claude = repo / "CLAUDE.md"
+    text = claude.read_text(encoding="utf-8") if claude.is_file() else ""
+    for sym in DOCUMENTED_SYMBOLS:
+        if f"`{sym}`" in text and not hasattr(t, sym):
+            rep.add("FAIL", f"config: CLAUDE.md documents `{sym}` but "
+                            f"scan_pipeline/config/tickers.py does not define "
+                            f"it -- the docs and the code disagree")
+
+    # Structural invariants. Counts are asserted here and deliberately NOT
+    # hardcoded in the docs: a number in prose is a third copy that drifts.
+    focus = getattr(t, "SECTOR_FOCUS_110", None)
+    if isinstance(focus, dict):
+        if len(focus) != 11:
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 has {len(focus)} "
+                            f"sectors, expected 11")
+        names = [x for xs in focus.values() for x in xs]
+        if len(names) != 110:
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 holds {len(names)} "
+                            f"names, expected 110")
+        if len(set(names)) != len(names):
+            dupes = sorted({n for n in names if names.count(n) > 1})
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 repeats {dupes}")
+        feed = set(getattr(t, "PRICE_FEED_UNIVERSE", ()))
+        outside = sorted(set(names) - feed)
+        if outside:
+            rep.add("FAIL", f"config: focus names outside the price feed "
+                            f"{outside} -- they would be scored without a bar")
+
+    # The feed must cover the panel it is supposed to have produced. This is
+    # the direction that actually broke: a feed narrower than the analysis set.
+    weekly = repo / "data" / "weekly"
+    files = sorted(weekly.glob("*.json")) if weekly.is_dir() else []
+    files = [f for f in files if "corrected" not in f.name]
+    if files and isinstance(focus, dict):
+        doc = json.loads(files[-1].read_text(encoding="utf-8"))
+        series = set(doc.get("series") or {})
+        declared_missing = {m.get("ticker") for m in (doc.get("missing") or [])}
+        names = {x for xs in focus.values() for x in xs}
+        absent = sorted(names - series - declared_missing)
+        if absent:
+            rep.add("FAIL", f"config: {files[-1].name} has no bar and no "
+                            f"`missing` entry for focus names {absent} -- a "
+                            f"silently absent ticker is the ambiguity the feed "
+                            f"contract exists to remove")
+    if rep.counts["FAIL"] == before:
+        rep.add("OK", "config: docs, constants and the latest panel agree")
+
+
 # --------------------------------------------------------------------- derive
 
 DEFAULT_PIPELINE = ("C:/Users/alexa/Desktop/Death_Star/Ember/Professional/"
@@ -933,6 +1202,8 @@ def main():
     ap.add_argument("--quarantine", action="store_true")
     ap.add_argument("--counterfactuals", action="store_true")
     ap.add_argument("--feed", action="store_true")
+    ap.add_argument("--config", action="store_true")
+    ap.add_argument("--splits", action="store_true")
     ap.add_argument("--derive", action="store_true")
     ap.add_argument("--pipeline", default=DEFAULT_PIPELINE,
                     help="scan_pipeline checkout root for --derive")
@@ -946,7 +1217,8 @@ def main():
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
     run_all = not (args.staleness or args.facts or args.lint
                    or args.quarantine or args.counterfactuals
-                   or args.feed or args.derive)
+                   or args.feed or args.derive or args.config
+                   or args.splits)
     rep = Report()
 
     if run_all or args.staleness:
@@ -963,6 +1235,10 @@ def main():
         check_feed(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")
+    if run_all or args.config:
+        check_config(repo, rep)
+    if run_all or args.splits:
+        check_splits(repo, rep)
     if run_all or args.derive:
         check_derive(repo, args.pipeline, rep)
 
