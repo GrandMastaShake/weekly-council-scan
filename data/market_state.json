@@ -1,73 +1,73 @@
 {
-  "as_of": "2026-09-04",
+  "as_of": "2026-09-11",
   "commodities": {
     "GOLD": {
-      "d13w": 2.1,
-      "d1w": -2.2,
-      "d4w": 2.1,
-      "d52w": 22.6,
-      "pctile_2y": 76,
-      "px": 4429.8
+      "d13w": 4.2,
+      "d1w": -0.9,
+      "d4w": 0.2,
+      "d52w": 20.3,
+      "pctile_2y": 75,
+      "px": 4390.0
     },
     "SILVER": {
       "d13w": -4.2,
-      "d1w": -2.6,
-      "d4w": 4.3,
-      "d52w": 60.8,
-      "pctile_2y": 71,
-      "px": 66.05
+      "d1w": -1.6,
+      "d4w": 0.0,
+      "d52w": 53.4,
+      "pctile_2y": 70,
+      "px": 65.02
     },
     "WTI": {
-      "d13w": 1.0,
-      "d1w": 9.7,
-      "d4w": 17.0,
-      "d52w": 47.9,
-      "pctile_2y": 89,
-      "px": 91.48
+      "d13w": 17.8,
+      "d1w": 9.3,
+      "d4w": 21.3,
+      "d52w": 59.5,
+      "pctile_2y": 96,
+      "px": 99.99
     }
   },
   "fx": {
     "DXY": {
-      "d13w": -0.9,
-      "d1w": 0.0,
-      "d4w": -0.4,
-      "d52w": 1.4,
-      "pctile_2y": 39,
-      "px": 99.16
+      "d13w": -0.7,
+      "d1w": -0.1,
+      "d4w": -0.6,
+      "d52w": 1.6,
+      "pctile_2y": 38,
+      "px": 99.09
     }
   },
   "index": {
     "DIA": {
-      "d13w": 5.1,
-      "d1w": -0.2,
-      "d4w": -1.0,
-      "d52w": 19.1,
-      "pctile_2y": 96,
-      "px": 534.08
+      "d13w": 2.8,
+      "d1w": -1.6,
+      "d4w": -2.1,
+      "d52w": 16.1,
+      "pctile_2y": 93,
+      "px": 525.79
     },
     "IWM": {
-      "d13w": 5.3,
-      "d1w": 0.1,
-      "d4w": -1.8,
-      "d52w": 25.8,
-      "pctile_2y": 94,
-      "px": 296.01
+      "d13w": -1.2,
+      "d1w": -2.4,
+      "d4w": -5.3,
+      "d52w": 22.5,
+      "pctile_2y": 86,
+      "px": 288.89
     },
     "QQQ": {
-      "d13w": 2.1,
-      "d1w": 0.4,
-      "d4w": -0.6,
-      "d52w": 25.4,
-      "pctile_2y": 93,
-      "px": 718.96
+      "d13w": -0.8,
+      "d1w": -0.6,
+      "d4w": -2.2,
+      "d52w": 22.4,
+      "pctile_2y": 90,
+      "px": 714.88
     },
     "SPY": {
-      "d13w": 4.7,
-      "d1w": 0.1,
-      "d4w": -0.4,
-      "d52w": 20.3,
-      "pctile_2y": 97,
-      "px": 770.19
+      "d13w": 3.3,
+      "d1w": -0.8,
+      "d4w": -1.6,
+      "d52w": 17.5,
+      "pctile_2y": 94,
+      "px": 764.29
     }
   },
   "macro": null,
@@ -77,159 +77,159 @@
     "fed_funds_range_as_of": "2026-07-29",
     "fed_stance": "Hold",
     "fed_stance_as_of": "2026-07-29",
-    "next_macro_gate": "September FOMC Sep 15-16 (Sept hike odds ~55-58% post-Warsh JH keynote 8/28) + August CPI Thu Sep 11 + AVGO Sep 3 + BOJ Sep 17-18 (hike odds ~84-87%)",
-    "next_macro_gate_as_of": "2026-08-29"
+    "next_macro_gate": "August CPI Thu Sep 11 (THE gate into FOMC) + FOMC Sep 15-16 (hike odds ~49%->60.4% post-NFP) + BOJ Sep 17-18 (hike odds ~84-87%)",
+    "next_macro_gate_as_of": "2026-09-05"
   },
   "rates": {
     "US10Y": {
-      "d1w_bps": 11,
-      "lvl": 4.78,
+      "d1w_bps": 19,
+      "lvl": 4.97,
       "pctile_2y": 99
     },
     "US2Y": {
-      "d1w_bps": 3,
-      "lvl": 4.2,
-      "pctile_2y": 87
+      "d1w_bps": 17,
+      "lvl": 4.38,
+      "pctile_2y": 98
     },
-    "curve_2s10s_bps": 58
+    "curve_2s10s_bps": 59
   },
   "regime": "risk-on / curve-positive / policy-hold",
   "schema": "market-state/v1",
   "sectors": {
     "SMH": {
-      "corr_prev": 0.983,
-      "corr_spy_4w": 0.765,
-      "d13w": -0.5,
-      "d1w": 2.5,
-      "d4w": -2.7,
-      "d52w": 93.9,
+      "corr_prev": 0.765,
+      "corr_spy_4w": 0.608,
+      "d13w": -8.3,
+      "d1w": 0.3,
+      "d4w": -3.3,
+      "d52w": 87.4,
       "pctile_2y": 89,
-      "px": 567.01
+      "px": 568.53
     },
     "XLB": {
-      "corr_prev": 0.611,
-      "corr_spy_4w": -0.909,
-      "d13w": 4.0,
-      "d1w": -1.4,
-      "d4w": -0.8,
-      "d52w": 16.1,
-      "pctile_2y": 92,
-      "px": 52.44
+      "corr_prev": -0.909,
+      "corr_spy_4w": -0.414,
+      "d13w": -2.0,
+      "d1w": -2.8,
+      "d4w": -3.0,
+      "d52w": 13.2,
+      "pctile_2y": 80,
+      "px": 50.95
     },
     "XLC": {
-      "corr_prev": 0.904,
-      "corr_spy_4w": 0.804,
-      "d13w": 0.6,
-      "d1w": -0.8,
-      "d4w": 0.7,
-      "d52w": -1.1,
+      "corr_prev": 0.804,
+      "corr_spy_4w": 0.613,
+      "d13w": 1.1,
+      "d1w": 0.5,
+      "d4w": -0.3,
+      "d52w": -2.8,
       "pctile_2y": 66,
-      "px": 112.03
+      "px": 112.6
     },
     "XLE": {
-      "corr_prev": -0.591,
-      "corr_spy_4w": -0.017,
-      "d13w": 11.9,
-      "d1w": 2.2,
-      "d4w": 11.4,
-      "d52w": 51.2,
+      "corr_prev": -0.017,
+      "corr_spy_4w": -0.744,
+      "d13w": 14.0,
+      "d1w": 1.7,
+      "d4w": 5.2,
+      "d52w": 51.6,
       "pctile_2y": 99,
-      "px": 64.06
+      "px": 65.14
     },
     "XLF": {
-      "corr_prev": 0.737,
-      "corr_spy_4w": 0.955,
-      "d13w": 11.5,
-      "d1w": 0.0,
-      "d4w": 0.9,
-      "d52w": 11.2,
-      "pctile_2y": 97,
-      "px": 58.1
+      "corr_prev": 0.955,
+      "corr_spy_4w": 0.901,
+      "d13w": 7.7,
+      "d1w": -1.5,
+      "d4w": -1.6,
+      "d52w": 8.1,
+      "pctile_2y": 94,
+      "px": 57.25
     },
     "XLI": {
-      "corr_prev": 0.922,
-      "corr_spy_4w": 0.784,
-      "d13w": 0.9,
-      "d1w": -1.1,
-      "d4w": -5.4,
-      "d52w": 17.6,
-      "pctile_2y": 86,
-      "px": 175.27
+      "corr_prev": 0.784,
+      "corr_spy_4w": 0.771,
+      "d13w": -1.9,
+      "d1w": -1.7,
+      "d4w": -7.6,
+      "d52w": 15.2,
+      "pctile_2y": 79,
+      "px": 172.37
     },
     "XLK": {
-      "corr_prev": 0.995,
-      "corr_spy_4w": 0.994,
-      "d13w": 4.0,
-      "d1w": 0.9,
-      "d4w": -0.4,
-      "d52w": 43.2,
+      "corr_prev": 0.994,
+      "corr_spy_4w": 0.892,
+      "d13w": 1.7,
+      "d1w": 0.2,
+      "d4w": -1.2,
+      "d52w": 39.3,
       "pctile_2y": 95,
-      "px": 187.28
+      "px": 187.67
     },
     "XLP": {
-      "corr_prev": 0.054,
-      "corr_spy_4w": 0.059,
-      "d13w": 2.1,
-      "d1w": -1.0,
-      "d4w": -0.6,
-      "d52w": 7.5,
-      "pctile_2y": 86,
-      "px": 84.58
+      "corr_prev": 0.059,
+      "corr_spy_4w": -0.284,
+      "d13w": -2.2,
+      "d1w": -1.4,
+      "d4w": -3.1,
+      "d52w": 6.7,
+      "pctile_2y": 78,
+      "px": 83.38
     },
     "XLRE": {
-      "corr_prev": 0.098,
-      "corr_spy_4w": -0.068,
-      "d13w": -0.9,
+      "corr_prev": -0.068,
+      "corr_spy_4w": -0.871,
+      "d13w": -3.4,
       "d1w": -1.2,
-      "d4w": -2.3,
-      "d52w": 7.7,
-      "pctile_2y": 84,
-      "px": 43.93
+      "d4w": -4.1,
+      "d52w": 6.1,
+      "pctile_2y": 80,
+      "px": 43.42
     },
     "XLU": {
-      "corr_prev": 0.169,
-      "corr_spy_4w": 0.921,
-      "d13w": -2.2,
-      "d1w": 0.8,
-      "d4w": -1.2,
-      "d52w": 6.1,
-      "pctile_2y": 64,
-      "px": 43.08
+      "corr_prev": 0.921,
+      "corr_spy_4w": 0.922,
+      "d13w": -4.2,
+      "d1w": -1.6,
+      "d4w": -4.3,
+      "d52w": 1.9,
+      "pctile_2y": 56,
+      "px": 42.39
     },
     "XLV": {
-      "corr_prev": -0.233,
-      "corr_spy_4w": -0.899,
-      "d13w": 12.5,
-      "d1w": 0.2,
-      "d4w": 3.5,
-      "d52w": 26.5,
-      "pctile_2y": 98,
-      "px": 171.45
+      "corr_prev": -0.899,
+      "corr_spy_4w": -0.528,
+      "d13w": 8.0,
+      "d1w": -3.6,
+      "d4w": -1.2,
+      "d52w": 21.8,
+      "pctile_2y": 94,
+      "px": 165.36
     },
     "XLY": {
-      "corr_prev": 0.797,
-      "corr_spy_4w": -0.628,
-      "d13w": 0.2,
-      "d1w": -2.0,
-      "d4w": -4.1,
-      "d52w": -1.5,
-      "pctile_2y": 58,
-      "px": 114.91
+      "corr_prev": -0.628,
+      "corr_spy_4w": -0.364,
+      "d13w": -2.9,
+      "d1w": -1.7,
+      "d4w": -4.4,
+      "d52w": -4.6,
+      "pctile_2y": 46,
+      "px": 112.96
     }
   },
   "upcoming": [
     {
       "binary": null,
-      "event": "September FOMC Sep 15-16 (Sept hike odds ~55-58% post-Warsh JH keynote 8/28) + August CPI Thu Sep 11 + AVGO Sep 3 + BOJ Sep 17-18 (hike odds ~84-87%)",
-      "when": "2026-08-29"
+      "event": "August CPI Thu Sep 11 (THE gate into FOMC) + FOMC Sep 15-16 (hike odds ~49%->60.4% post-NFP) + BOJ Sep 17-18 (hike odds ~84-87%)",
+      "when": "2026-09-05"
     }
   ],
   "vol": {
     "VIX": {
-      "d1w": 0.1,
-      "lvl": 14.53,
-      "pctile_2y": 9
+      "d1w": 9.0,
+      "lvl": 15.84,
+      "pctile_2y": 28
     }
   },
-  "weekly_files_read": 109
+  "weekly_files_read": 110
 }
