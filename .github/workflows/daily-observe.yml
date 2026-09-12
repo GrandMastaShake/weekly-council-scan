@@ -65,9 +65,9 @@ jobs:
           fi
           exit $code
 
-      - name: Validate the feed
+      - name: Validate the feed and config
         if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
-        run: python scripts/truth_check.py --repo . --feed
+        run: python scripts/truth_check.py --repo . --feed --config
 
       - name: Tests
         if: steps.observe.outputs.refused != 'true' && !inputs.dry_run

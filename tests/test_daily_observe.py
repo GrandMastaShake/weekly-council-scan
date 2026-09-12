@@ -170,6 +170,15 @@ def test_observation_universe_includes_the_backfilled_names():
         "makes the daily feed narrower than the weekly one")
 
 
+def test_observation_universe_covers_the_whole_analysis_set():
+    """Every scored name must have a daily bar, or a basket computes over
+    survivors -- the denominator-honesty failure, one layer up."""
+    from scan_pipeline.config.tickers import FOCUS_TICKERS
+    u = set(do.observation_universe())
+    missing = sorted(set(FOCUS_TICKERS) - u)
+    assert not missing, "focus names absent from the daily feed: " + str(missing)
+
+
 def test_observation_universe_follows_a_wider_weekly_panel(tmp_path):
     """Self-healing: a panel that grows drags the daily feed with it."""
     weekly = tmp_path / "weekly"

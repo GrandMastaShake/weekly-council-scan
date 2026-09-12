@@ -57,6 +57,65 @@ BACKFILL_44_TICKERS = [
     "TTWO", "ULTA", "UMH", "VST",
 ]
 
+# ---------------------------------------------------------------------------
+# The price feed, and the analysis universe inside it
+# ---------------------------------------------------------------------------
+# PRICE_FEED_UNIVERSE is what data/weekly and data/daily commit: every name the
+# scan fetches. STOCK_UNIVERSE is what the ENGINES scan and is deliberately
+# narrower, so Monday fetch time is unchanged; the 44 backfilled names are fed
+# and stored but not scanned.
+#
+# This constant exists because its absence was a live defect. Commit 009f7f6
+# added SECTOR_FOCUS_110, FOCUS_TICKERS and two asserts; 7cf7025 deleted all
+# four and left AVAILABLE_TICKERS at 277. The assert that broke was
+# `FOCUS_TICKERS <= STOCK_UNIVERSE`, which cannot hold at 277 -- only 66 of the
+# 110 are in it -- so the block was removed rather than the bound corrected.
+# CLAUDE.md went on documenting all of it for two weeks and nothing failed,
+# because this repo has no config-drift gate.
+#
+# The correct bound is the FEED, not the engine set. 277 | 44 = 321, which is
+# the number the docs claimed all along.
+PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS))
+
+
+# ---------------------------------------------------------------------------
+# Sector-focus set
+# ---------------------------------------------------------------------------
+# The 110-name Seven Orbs watchlist: 11 GICS sectors x 10 names, equal-weighted
+# into sector baskets for breadth, relative momentum and volume confirmation.
+# This is the ANALYSIS universe. The price feed above is deliberately wider --
+# dropping to 110 would strip coverage from 22 names Arena and the portfolio
+# actively hold (C, MRK and SIDU among them).
+#
+# Authoritative copy lives in the sector-regime-heatmap repo at
+# config/watchlist_110.csv, cap-descending. Keep them in sync: this copy is a
+# transcription and the CSV wins any disagreement.
+SECTOR_FOCUS_110 = {
+    "Communication Services": ["META", "NFLX", "TMUS", "DIS", "SPOT", "TTWO", "LYV", "RDDT", "MTCH", "IMAX"],
+    "Consumer Discretionary": ["AMZN", "TSLA", "HD", "MCD", "BKNG", "ABNB", "CVNA", "NKE", "ULTA", "FIVE"],
+    "Consumer Staples": ["WMT", "COST", "KO", "PG", "PM", "PEP", "MDLZ", "STZ", "CALM", "FIZZ"],
+    "Energy": ["XOM", "CVX", "COP", "VLO", "WMB", "SLB", "LNG", "CCJ", "FSLR", "SM"],
+    "Financials": ["JPM", "V", "MA", "GS", "SCHW", "BLK", "PGR", "COIN", "SOFI", "UPST"],
+    "Healthcare": ["LLY", "JNJ", "UNH", "TMO", "VRTX", "ISRG", "REGN", "HIMS", "CRSP", "BLFS"],
+    "Industrials": ["SPCX", "CAT", "GE", "DE", "ETN", "LMT", "CSX", "HON", "RKLB", "MOD"],
+    "Materials": ["LIN", "NEM", "FCX", "SHW", "ECL", "NUE", "MLM", "ALB", "MP", "SSD"],
+    "Real Estate": ["WELL", "PLD", "EQIX", "AMT", "SPG", "PSA", "O", "VICI", "AVB", "UMH"],
+    "Technology": ["NVDA", "GOOGL", "TSM", "AMD", "PLTR", "CRWD", "DDOG", "RGTI", "SOUN", "INOD"],
+    "Utilities": ["NEE", "CEG", "D", "SRE", "XEL", "VST", "ATO", "AWK", "OKLO", "ORA"],
+}
+
+FOCUS_TICKERS = sorted(t for ts in SECTOR_FOCUS_110.values() for t in ts)
+
+assert len(SECTOR_FOCUS_110) == 11, "sector focus set must hold all 11 GICS sectors"
+assert len(FOCUS_TICKERS) == 110, "sector focus set must hold exactly 110 names"
+assert len(set(FOCUS_TICKERS)) == 110, "sector focus set must not repeat a name"
+# Bound against the FEED, not the engine set. This is the assert that was
+# wrong before and took the whole block down with it.
+assert set(FOCUS_TICKERS) <= set(PRICE_FEED_UNIVERSE), (
+    "focus set must be a subset of the price feed; missing: "
+    + ", ".join(sorted(set(FOCUS_TICKERS) - set(PRICE_FEED_UNIVERSE))))
+
+
 # Engine configuration constants (ported from constants.ts ENGINE_CONFIG)
 ENGINE_CONFIG = {
     "max_position_size": 0.30,

@@ -877,6 +877,86 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                   f"DATA_FEED.md sec.1 (failures reported above)")
 
 
+# --------------------------------------------------------------------- config
+
+# Symbols the docs describe. If CLAUDE.md talks about one, it has to exist.
+#
+# This gate exists because the absence of it cost two weeks. Commit 009f7f6
+# added SECTOR_FOCUS_110 and FOCUS_TICKERS; 7cf7025 deleted them along with
+# their asserts; CLAUDE.md went on documenting both and nothing anywhere
+# noticed, because unlike sector-regime-heatmap this repo had no config-drift
+# check. The heatmap's preflight.py catches exactly this class -- three copies
+# of the same fact that disagree -- and the panel is too important to be the
+# one repo without it.
+DOCUMENTED_SYMBOLS = (
+    "STOCK_UNIVERSE",
+    "BACKFILL_44_TICKERS",
+    "PRICE_FEED_UNIVERSE",
+    "SECTOR_FOCUS_110",
+    "FOCUS_TICKERS",
+)
+
+
+def check_config(repo, rep):
+    """Config-drift gate: the docs, the constants and the panel must agree."""
+    before = rep.counts["FAIL"]
+    sys.path.insert(0, str(repo))
+    try:
+        from scan_pipeline.config import tickers as t
+    except Exception as exc:                        # noqa: BLE001
+        rep.add("FAIL", f"config: cannot import scan_pipeline.config.tickers "
+                        f"({exc}). The module-level asserts fire on import, so "
+                        f"this is how a broken focus set surfaces.")
+        return
+
+    claude = repo / "CLAUDE.md"
+    text = claude.read_text(encoding="utf-8") if claude.is_file() else ""
+    for sym in DOCUMENTED_SYMBOLS:
+        if f"`{sym}`" in text and not hasattr(t, sym):
+            rep.add("FAIL", f"config: CLAUDE.md documents `{sym}` but "
+                            f"scan_pipeline/config/tickers.py does not define "
+                            f"it -- the docs and the code disagree")
+
+    # Structural invariants. Counts are asserted here and deliberately NOT
+    # hardcoded in the docs: a number in prose is a third copy that drifts.
+    focus = getattr(t, "SECTOR_FOCUS_110", None)
+    if isinstance(focus, dict):
+        if len(focus) != 11:
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 has {len(focus)} "
+                            f"sectors, expected 11")
+        names = [x for xs in focus.values() for x in xs]
+        if len(names) != 110:
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 holds {len(names)} "
+                            f"names, expected 110")
+        if len(set(names)) != len(names):
+            dupes = sorted({n for n in names if names.count(n) > 1})
+            rep.add("FAIL", f"config: SECTOR_FOCUS_110 repeats {dupes}")
+        feed = set(getattr(t, "PRICE_FEED_UNIVERSE", ()))
+        outside = sorted(set(names) - feed)
+        if outside:
+            rep.add("FAIL", f"config: focus names outside the price feed "
+                            f"{outside} -- they would be scored without a bar")
+
+    # The feed must cover the panel it is supposed to have produced. This is
+    # the direction that actually broke: a feed narrower than the analysis set.
+    weekly = repo / "data" / "weekly"
+    files = sorted(weekly.glob("*.json")) if weekly.is_dir() else []
+    files = [f for f in files if "corrected" not in f.name]
+    if files and isinstance(focus, dict):
+        doc = json.loads(files[-1].read_text(encoding="utf-8"))
+        series = set(doc.get("series") or {})
+        declared_missing = {m.get("ticker") for m in (doc.get("missing") or [])}
+        names = {x for xs in focus.values() for x in xs}
+        absent = sorted(names - series - declared_missing)
+        if absent:
+            rep.add("FAIL", f"config: {files[-1].name} has no bar and no "
+                            f"`missing` entry for focus names {absent} -- a "
+                            f"silently absent ticker is the ambiguity the feed "
+                            f"contract exists to remove")
+    if rep.counts["FAIL"] == before:
+        rep.add("OK", "config: docs, constants and the latest panel agree")
+
+
 # --------------------------------------------------------------------- derive
 
 DEFAULT_PIPELINE = ("C:/Users/alexa/Desktop/Death_Star/Ember/Professional/"
@@ -933,6 +1013,7 @@ def main():
     ap.add_argument("--quarantine", action="store_true")
     ap.add_argument("--counterfactuals", action="store_true")
     ap.add_argument("--feed", action="store_true")
+    ap.add_argument("--config", action="store_true")
     ap.add_argument("--derive", action="store_true")
     ap.add_argument("--pipeline", default=DEFAULT_PIPELINE,
                     help="scan_pipeline checkout root for --derive")
@@ -946,7 +1027,7 @@ def main():
     today = dt.date.fromisoformat(args.today) if args.today else dt.date.today()
     run_all = not (args.staleness or args.facts or args.lint
                    or args.quarantine or args.counterfactuals
-                   or args.feed or args.derive)
+                   or args.feed or args.derive or args.config)
     rep = Report()
 
     if run_all or args.staleness:
@@ -963,6 +1044,8 @@ def main():
         check_feed(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")
+    if run_all or args.config:
+        check_config(repo, rep)
     if run_all or args.derive:
         check_derive(repo, args.pipeline, rep)
 

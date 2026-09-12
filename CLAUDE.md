@@ -68,21 +68,27 @@ ticker no longer has volume 0, since that means the provider restated.
 
 `scan_pipeline/config/tickers.py`:
 
-- `STOCK_UNIVERSE` -- the **price feed**. Deliberately wide.
-- `SECTOR_FOCUS_110` -- the **analysis universe**, the Seven Orbs watchlist,
-  cap-descending. Authoritative copy lives in sector-regime-heatmap at
-  `config/watchlist_110.csv`; keep them in sync.
+- `PRICE_FEED_UNIVERSE` -- what `data/weekly` and `data/daily` commit.
+  `STOCK_UNIVERSE | BACKFILL_44_TICKERS`.
+- `STOCK_UNIVERSE` -- what the **engines scan**. Deliberately narrower than the
+  feed so Monday fetch time is unchanged; the backfilled names are fed and
+  stored but not scanned.
+- `SECTOR_FOCUS_110` / `FOCUS_TICKERS` -- the **analysis universe**, the Seven
+  Orbs watchlist, cap-descending. Authoritative copy lives in
+  sector-regime-heatmap at `config/watchlist_110.csv`; this copy is a
+  transcription and the CSV wins any disagreement.
 
-**This section describes intent, not the current file (2026-09-11).** Commit
-`009f7f6` added `SECTOR_FOCUS_110`, `FOCUS_TICKERS` and two asserts pinning
-the set at 110 names and as a subset of the feed; commit `7cf7025` ("runner
-convergence") deleted all four and left `STOCK_UNIVERSE` at 277, not 321.
-Nothing failed, because this repo has no equivalent of the heatmap's
-`preflight.py` config-drift gate -- the docs and the code simply disagreed for
-two weeks. The live feed does carry the names (330 series a week, 109 of the
-110 watchlist; AVB is correctly in `missing`), so the data is fine and the
-constant is not. Restore both, or correct this section -- but do not assume
-`FOCUS_TICKERS` exists because it is documented here.
+Counts are asserted in code and by `truth_check --config`, not written here.
+A number in prose is a third copy of a fact and it drifts.
+
+**Restored 2026-09-12 after a two-week drift.** `009f7f6` added the focus set
+and two asserts; `7cf7025` deleted both and left the feed at 277 while this
+file kept describing 321. The assert that broke was
+`FOCUS_TICKERS <= STOCK_UNIVERSE`, which cannot hold once the focus set is
+wider than the engine set -- so the block was deleted rather than the bound
+corrected. It is now bound against `PRICE_FEED_UNIVERSE`, which is the set it
+always meant. Nothing caught it at the time because this repo had no
+config-drift gate; `truth_check --config` is that gate now.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
