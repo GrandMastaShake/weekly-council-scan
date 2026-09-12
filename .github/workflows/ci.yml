@@ -33,7 +33,8 @@ jobs:
 
       - name: Panel is intact against the previous commit
         run: |
-          # A weekly file that LOST series is the 2026-08-26 failure returning.
+          # A panel file that LOST series is the 2026-08-26 failure returning.
+          # Covers data/daily as well: same append-only contract, same hazard.
           # Compare HEAD against its parent rather than trusting the diff to
           # look obviously wrong.
           git rev-parse HEAD^ >/dev/null 2>&1 || { echo "No parent commit; skipping."; exit 0; }
@@ -49,7 +50,9 @@ jobs:
               return len(json.loads(r.stdout).get("series", {}))
 
           lost = []
-          for p in sorted(Path("data/weekly").glob("*.json")):
+          panel = (sorted(Path("data/weekly").glob("*.json"))
+                   + sorted(Path("data/daily").glob("*.json")))
+          for p in panel:
               path = p.as_posix()
               before = at("HEAD^", path)
               if before is None:
@@ -63,5 +66,5 @@ jobs:
               for path, before, after in lost:
                   print("  %-38s %4d -> %4d" % (path, before, after))
               sys.exit(1)
-          print("panel intact: no weekly file lost series")
+          print("panel intact: no weekly or daily file lost series")
           PY

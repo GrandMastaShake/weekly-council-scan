@@ -1,0 +1,9 @@
+# The market-data provider. Needed ONLY by jobs that actually fetch --
+# scripts/daily_observe.py and scripts/backfill_weekly.py.
+#
+# Deliberately separate from requirements-dev.txt: the test suite stubs the
+# provider (tests/conftest.py) so it runs with no network and no yfinance
+# install, and that property is worth keeping. A test suite that needs a
+# provider to run is a test suite that does not get run.
+yfinance==1.6.0
+pandas==2.3.3

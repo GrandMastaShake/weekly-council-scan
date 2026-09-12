@@ -780,14 +780,19 @@ def _feed_provenance_check(fname, doc, rep):
                             f"YYYY-MM-DDTHH:MM:SSZ")
 
 
-def check_feed(repo, rep):
-    """Weekly data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no
-    network. 'missing' is required and never empty-by-omission: a silently
-    absent ticker is indistinguishable from one that never existed, and
-    that ambiguity is what the agents fill in from priors."""
-    weekly = repo / "data" / "weekly"
+def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
+    """Data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no network.
+    'missing' is required and never empty-by-omission: a silently absent
+    ticker is indistinguishable from one that never existed, and that
+    ambiguity is what the agents fill in from priors.
+
+    One contract governs data/weekly/ and data/daily/ alike -- ASCII bytes,
+    required keys, entry shape, correction pointers, per-series provenance.
+    Only the Friday rule differs: a daily file is named for whatever session
+    settled (DATA_FEED.md sec.4)."""
+    weekly = repo / "data" / subdir
     if not weekly.is_dir():
-        rep.add("SKIP", f"feed: {weekly} not found -- data feed has not "
+        rep.add("SKIP", f"feed: {weekly} not found -- {label} feed has not "
                         f"launched yet")
         return
     files = sorted(weekly.glob("*.json"))
@@ -830,9 +835,13 @@ def check_feed(repo, rep):
             rep.add("FAIL", f"feed: {f.name} as_of is not a string: "
                             f"{as_of!r}")
         if as_of_date is not None:
-            if as_of_date.weekday() != 4:
+            if require_friday and as_of_date.weekday() != 4:
                 rep.add("FAIL", f"feed: {f.name} as_of {as_of} is not a "
                                 f"Friday (weekday {as_of_date.weekday()})")
+            if not require_friday and as_of_date.weekday() >= 5:
+                rep.add("FAIL", f"feed: {f.name} as_of {as_of} falls on a "
+                                f"weekend (weekday {as_of_date.weekday()}); "
+                                f"no US session settled that day")
             if f.name == f"{as_of}.json":
                 pass
             elif f.name == f"{as_of}.corrected.json":
@@ -864,7 +873,7 @@ def check_feed(repo, rep):
             for ticker, entry in blk.items():
                 _feed_entry_check(f.name, block, ticker, entry, rep)
         _feed_provenance_check(f.name, doc, rep)
-    rep.add("OK", f"feed: {len(files)} weekly file(s) validated against "
+    rep.add("OK", f"feed: {len(files)} {label} file(s) validated against "
                   f"DATA_FEED.md sec.1 (failures reported above)")
 
 
@@ -952,6 +961,8 @@ def main():
         check_counterfactuals(repo, today, rep)
     if run_all or args.feed:
         check_feed(repo, rep)
+        check_feed(repo, rep, subdir="daily", require_friday=False,
+                   label="daily")
     if run_all or args.derive:
         check_derive(repo, args.pipeline, rep)
 

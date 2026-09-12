@@ -1,0 +1,93 @@
+name: Daily observation
+
+# Commits one completed US session to data/daily/ (DATA_FEED.md sec.4).
+#
+# This is an OBSERVATION job, not a forecast job. It records what traded. It
+# scores nothing, and nothing downstream may read its output as a forecast --
+# the two judgment components in sector-regime-heatmap have no daily source
+# and a daily file carrying them would be inventing them.
+#
+# 21:45 UTC is ~17:45 ET, about 1h45m after the close, which leaves room for
+# the provider to settle the session. The witness gate refuses the run if it
+# has not, so an early fire is safe: it exits 2 and writes nothing.
+
+on:
+  schedule:
+    - cron: '45 21 * * 1-5'    # weekdays, after the US close
+  workflow_dispatch:
+    inputs:
+      date:
+        description: Session date YYYY-MM-DD (default: latest weekday)
+        required: false
+        type: string
+      dry_run:
+        description: Fetch and report, write nothing
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-observe
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r requirements-dev.txt -r requirements-fetch.txt
+
+      - name: Observe the session
+        id: observe
+        run: |
+          set +e
+          python scripts/daily_observe.py \
+            ${{ inputs.date && format('--date {0}', inputs.date) || '' }} \
+            ${{ inputs.dry_run && '--dry-run' || '' }} \
+            --out data
+          code=$?
+          set -e
+          # 2 is the witness gate refusing an unsettled or non-session date.
+          # That is the correct outcome on a holiday, not a failure.
+          if [ "$code" = "2" ]; then
+            echo "refused=true" >> "$GITHUB_OUTPUT"
+            echo "No settled session to record. Exiting clean."
+            exit 0
+          fi
+          exit $code
+
+      - name: Validate the feed
+        if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
+        run: python scripts/truth_check.py --repo . --feed
+
+      - name: Tests
+        if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
+        run: python -m pytest -q
+
+      - name: Commit the session
+        if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily
+          if git diff --cached --quiet; then
+            echo "No new session file to commit."
+            exit 0
+          fi
+          git commit -m "data: daily observation $(ls -1 data/daily | tail -1 | sed 's/\.json$//')"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "Push attempt $i failed; retrying."
+            sleep 5
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
