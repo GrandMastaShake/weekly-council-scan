@@ -151,7 +151,45 @@ def test_lands_under_daily_not_weekly(tmp_path):
 # -- universe ----------------------------------------------------------------
 
 def test_observation_universe_is_not_shrunk_to_a_focus_set():
+    """STOCK_UNIVERSE alone is 277 and covers 66 of the 110-name watchlist.
+    The first build of this script used it and left Communication Services
+    with 2 usable constituents, so the floor is pinned at the documented 321."""
     u = do.observation_universe()
-    assert len(u) > 250, "the daily feed must not be narrower than the weekly one"
+    assert len(u) >= 321, (
+        "daily feed is narrower than the live weekly panel: "
+        + str(len(u)) + " tickers")
     assert "SPY" in u and "XLK" in u
     assert u == sorted(set(u)), "universe must be sorted and deduped"
+
+
+def test_observation_universe_includes_the_backfilled_names():
+    from scan_pipeline.config.tickers import BACKFILL_44_TICKERS
+    u = set(do.observation_universe())
+    assert set(BACKFILL_44_TICKERS) <= u, (
+        "the 44 backfilled names are in the weekly panel; omitting them here "
+        "makes the daily feed narrower than the weekly one")
+
+
+def test_observation_universe_follows_a_wider_weekly_panel(tmp_path):
+    """Self-healing: a panel that grows drags the daily feed with it."""
+    weekly = tmp_path / "weekly"
+    weekly.mkdir()
+    (weekly / "2026-09-04.json").write_text(
+        json.dumps({"series": {"BRAND_NEW_TICKER": {"close": 1.0,
+                                                    "volume": 1}}}),
+        encoding="utf-8", newline="\n")
+    assert "BRAND_NEW_TICKER" in do.observation_universe(str(weekly))
+
+
+def test_observation_universe_ignores_corrections_when_picking_newest(tmp_path):
+    weekly = tmp_path / "weekly"
+    weekly.mkdir()
+    (weekly / "2026-09-04.json").write_text(
+        json.dumps({"series": {"FROM_BASE": {"close": 1.0, "volume": 1}}}),
+        encoding="utf-8", newline="\n")
+    (weekly / "2026-09-04.corrected.json").write_text(
+        json.dumps({"series": {"FROM_CORRECTION": {"close": 1.0,
+                                                   "volume": 1}}}),
+        encoding="utf-8", newline="\n")
+    u = do.observation_universe(str(weekly))
+    assert "FROM_BASE" in u

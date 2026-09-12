@@ -60,7 +60,10 @@ while not os.path.isdir(os.path.join(_PIPELINE_ROOT, "scan_pipeline")):
 if _PIPELINE_ROOT not in sys.path:
     sys.path.insert(0, _PIPELINE_ROOT)
 
-from scan_pipeline.config.tickers import STOCK_UNIVERSE  # noqa: E402
+from scan_pipeline.config.tickers import (  # noqa: E402
+    BACKFILL_44_TICKERS,
+    STOCK_UNIVERSE,
+)
 from scan_pipeline.snapshot import (  # noqa: E402
     INDEX_TICKERS,
     SECTOR_TICKERS,
@@ -88,16 +91,35 @@ class SessionNotSettled(RuntimeError):
     """The requested date is not a completed, settled US trading session."""
 
 
-def observation_universe() -> list:
-    """Every ticker the weekly feed commits.
+def observation_universe(weekly_dir: str | None = None) -> list:
+    """Every ticker the weekly feed commits, and never fewer.
 
-    Deliberately the full universe, not the 110-name analysis focus. The
-    rule in CLAUDE.md -- do not shrink the feed to the focus set -- applies
-    with more force here, not less: a daily file is the finest-grained record
-    this repo keeps, and re-fetching a name later means fetching it against a
-    different adjustment anchor.
+    Deliberately the full universe, not the 110-name analysis focus. The rule
+    in CLAUDE.md -- do not shrink the feed to the focus set -- applies with
+    more force here: a daily file is the finest-grained record this repo
+    keeps, and re-fetching a name later means fetching it against a different
+    adjustment anchor, which is the divergence sec.4 warns about.
+
+    `STOCK_UNIVERSE` alone is NOT enough and the first build of this script
+    got it wrong: it holds 277 names and covers only 66 of the 110-name
+    watchlist, which left Communication Services with 2 usable constituents.
+    The live universe is `STOCK_UNIVERSE | BACKFILL_44_TICKERS` (321), the
+    number CLAUDE.md documents.
+
+    The union with the newest weekly file's series is the self-healing part:
+    if the panel grows again, the daily feed follows automatically instead of
+    silently staying narrow.
     """
-    return sorted(set(STOCK_UNIVERSE) | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
+    universe = (set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
+                | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
+    if weekly_dir and os.path.isdir(weekly_dir):
+        newest = sorted(f for f in os.listdir(weekly_dir)
+                        if f.endswith(".json") and "corrected" not in f)
+        if newest:
+            path = os.path.join(weekly_dir, newest[-1])
+            with open(path, encoding="utf-8") as f:
+                universe |= set(json.load(f).get("series") or {})
+    return sorted(universe)
 
 
 def default_date(today: date | None = None) -> str:
@@ -292,7 +314,7 @@ def main(argv: list | None = None) -> int:
     a = p.parse_args(argv)
 
     as_of = a.date or default_date()
-    tickers = observation_universe()
+    tickers = observation_universe(os.path.join(a.out, "weekly"))
 
     if a.since:
         return _run_backfill(a, as_of, tickers)
