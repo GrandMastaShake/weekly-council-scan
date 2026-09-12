@@ -131,14 +131,27 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   `series` and not in `missing`, so it flowed through as real. Three
   independent sources agree it is junk. `metric_definitions.md` already
   required flagging zero-volume records; this one got past.
-- **APH split 2:1 on 2026-09-03** and the weekly panel straddles it:
-  `2026-08-28.json` was fetched 08-29 (pre-split), `2026-09-04.json` was
-  fetched 09-05 (post-split). Any week-over-week read across those two files
-  sees a phantom -50% for APH. APH is not in the 110-name watchlist, so the
-  heatmap's sector scores are untouched, but `market_state` and anything else
-  deriving returns over the full universe are not. The heatmap's extreme-move
-  flag (>40%) is the net that catches this class; it fires as a warning, not a
-  refusal, and only for names inside a scored basket.
+- **Corporate actions the panel straddles.** Adjusted closes are anchored to
+  the FETCH date, so a split between two fetches lands in the panel as a step:
+  the earlier file is on the pre-split basis, the later one is not, and the
+  week-over-week return across them is the ratio rather than a market move.
+  Two are known: **APH** (2:1, 2026-09-03) and **MNST** (2:1, 2026-08-11).
+  Neither is in the 110-name analysis set, so heatmap sector scores are
+  untouched -- `market_state` and Arena, which derive over the full universe,
+  are not.
+
+  **The panel is not edited for these.** A weekly file is an observation and
+  `2026-08-28.json` correctly records APH as it stood that day; rewriting it
+  onto the post-split basis would falsify the log to flatter a consumer. Both
+  are recorded in `macro/known_corporate_actions.json` with that reasoning.
+
+  `truth_check --splits` finds them. It scans every consecutive pair in both
+  panels for moves matching a split ratio, then **verifies each against the
+  provider's split history** -- a ratio alone is not evidence, because a 3:2
+  split is -33.3% and so is an ordinary crash. The first draft flagged SOUN,
+  IONQ and QUBT for the same week of 2025-01-10, which was the quantum-stock
+  selloff, not three simultaneous splits. Of 12 ratio candidates in the live
+  panel, 2 are real. A failed fetch reports UNVERIFIED, never "no split".
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`

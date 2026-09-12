@@ -1,0 +1,29 @@
+{
+  "_purpose": "Reviewed corporate actions the panel straddles. truth_check --splits warns about an unacknowledged one and goes quiet once it is recorded here. An entry is a statement that a human looked at it, not that it was fixed.",
+  "_why_the_panel_is_not_edited": "DATA_FEED.md sec.1: a weekly file is an OBSERVATION -- the closes the council saw that week -- and is never edited. The 2026-08-28 file correctly records APH as it stood on 2026-08-28, before the split. Rewriting it onto the post-split basis would falsify the observation log to flatter a consumer. The panel is right; what is wrong is any consumer that differences across a fetch-anchor boundary without knowing an action sits in between. The correction mechanism does not help either: a correction is a full copy of its base and goes stale the moment the base changes.",
+  "_who_is_affected": "Consumers that compute returns across the boundary over the FULL universe: data/market_state.json (d1w/d4w/d13w/d52w, pctile_2y, corr_spy_4w) and Arena entry/exit scoring. NOT affected: sector-regime-heatmap sector scores, because both names below sit outside the 110-name analysis set and no basket reads them.",
+  "actions": [
+    {
+      "ticker": "APH",
+      "between": "2026-08-28..2026-09-04",
+      "split": "2:1",
+      "effective": "2026-09-03",
+      "observed_move_pct": -47.5,
+      "in_focus_110": false,
+      "reviewed": "2026-09-12",
+      "resolution": "Panel left as written. Both files are correct observations on their own fetch basis; the discontinuity is real and belongs to the reader, not the file.",
+      "note": "Found while building the daily feed: the 2026-08-28 weekly file was fetched 2026-08-29 (pre-split) and 2026-09-04 was fetched 2026-09-05 (post-split). The heatmap's extreme-move flag did not catch it because that flag only covers names inside a scored basket."
+    },
+    {
+      "ticker": "MNST",
+      "between": "2026-08-07..2026-08-14",
+      "split": "2:1",
+      "effective": "2026-08-11",
+      "observed_move_pct": -48.2,
+      "in_focus_110": false,
+      "reviewed": "2026-09-12",
+      "resolution": "Panel left as written, same reasoning as APH.",
+      "note": "Found by the first run of truth_check --splits, three weeks after it happened and unnoticed until then. This is the case for the detector existing: APH was caught by hand, MNST was not."
+    }
+  ]
+}
