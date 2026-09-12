@@ -56,11 +56,15 @@ jobs:
             --out data
           code=$?
           set -e
-          # 2 is the witness gate refusing an unsettled or non-session date.
-          # That is the correct outcome on a holiday, not a failure.
+          # 2 means the script declined to write, and it has two causes: the
+          # witness gate refusing an unsettled or non-session date, or the
+          # append-only guard finding the file already there. Both are correct
+          # outcomes, not failures -- but do not name one of them here. The
+          # script already printed which, and asserting "no settled session"
+          # over an append-only refusal puts a confident wrong line in the log.
           if [ "$code" = "2" ]; then
             echo "refused=true" >> "$GITHUB_OUTPUT"
-            echo "No settled session to record. Exiting clean."
+            echo "Declined to write (reason above). Exiting clean."
             exit 0
           fi
           exit $code
