@@ -68,16 +68,50 @@ ticker no longer has volume 0, since that means the provider restated.
 
 `scan_pipeline/config/tickers.py`:
 
-- `STOCK_UNIVERSE` (321) -- the **price feed**. Deliberately wide.
+- `STOCK_UNIVERSE` -- the **price feed**. Deliberately wide.
 - `SECTOR_FOCUS_110` -- the **analysis universe**, the Seven Orbs watchlist,
   cap-descending. Authoritative copy lives in sector-regime-heatmap at
   `config/watchlist_110.csv`; keep them in sync.
+
+**This section describes intent, not the current file (2026-09-11).** Commit
+`009f7f6` added `SECTOR_FOCUS_110`, `FOCUS_TICKERS` and two asserts pinning
+the set at 110 names and as a subset of the feed; commit `7cf7025` ("runner
+convergence") deleted all four and left `STOCK_UNIVERSE` at 277, not 321.
+Nothing failed, because this repo has no equivalent of the heatmap's
+`preflight.py` config-drift gate -- the docs and the code simply disagreed for
+two weeks. The live feed does carry the names (330 series a week, 109 of the
+110 watchlist; AVB is correctly in `missing`), so the data is fine and the
+constant is not. Restore both, or correct this section -- but do not assume
+`FOCUS_TICKERS` exists because it is documented here.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
 book at 56% of it by weight, and Arena scores entry and exit against these
 prices. A feed costs one call per name and must never be narrower than the
 positions scored against it.
+
+## The daily observation feed
+
+`data/daily/<session>.json`, DATA_FEED.md sec.4. Written by
+`scripts/daily_observe.py`, scheduled weekdays 21:45 UTC.
+
+The weekly files commit Friday closes because that is the cadence the council
+reads. The bars behind them were never weekly -- `fetch_weekly_bars` pulls
+daily bars over a ranged window and keeps one. This feed keeps the rest.
+
+- **It is an observation, not a forecast.** It scores nothing. The heatmap's
+  two judgment components have no daily source; a daily file carrying them
+  would be inventing them.
+- **SPY is the session witness.** No SPY bar dated exactly `as_of` and the run
+  refuses with exit 2 -- the date was not a session, or it has not settled. A
+  half-formed session is indistinguishable from a settled one once committed.
+  Holidays produce no file; 2026-09-07 is absent by design.
+- **Never splice daily and weekly files into one calculation.** They carry
+  different adjustment anchors and the gap is real: on 2026-08-28 the two
+  agree on SPY to the penny and disagree ~1% across 57 dividend payers, and
+  50% on APH. Treat `data/daily/` as its own panel.
+- Bootstrap a range with `--since`: one ranged download, so every session in
+  it shares one anchor. Per-date runs would give each file its own.
 
 ## Known data defects
 
@@ -91,6 +125,14 @@ positions scored against it.
   `series` and not in `missing`, so it flowed through as real. Three
   independent sources agree it is junk. `metric_definitions.md` already
   required flagging zero-volume records; this one got past.
+- **APH split 2:1 on 2026-09-03** and the weekly panel straddles it:
+  `2026-08-28.json` was fetched 08-29 (pre-split), `2026-09-04.json` was
+  fetched 09-05 (post-split). Any week-over-week read across those two files
+  sees a phantom -50% for APH. APH is not in the 110-name watchlist, so the
+  heatmap's sector scores are untouched, but `market_state` and anything else
+  deriving returns over the full universe are not. The heatmap's extreme-move
+  flag (>40%) is the net that catches this class; it fires as a warning, not a
+  refusal, and only for names inside a scored basket.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`

@@ -115,7 +115,60 @@ Removed tickers stay in the array with a `removed` date and a `removed_reason`. 
 
 ---
 
-## 4. Not committed
+## 4. `data/daily/<YYYY-MM-DD>.json`
+
+One file per **completed US trading session**, same shape as sec.1 plus a
+`cadence` discriminator. Append-only, never edited, same correction rule.
+
+```json
+{
+  "as_of": "2026-09-10",
+  "cadence": "daily",
+  "source": "yahoo-daily",
+  "fetched_at": "2026-09-12T01:44:10Z",
+  "session": "close",
+  "series": { "SPY": { "close": 771.02, "volume": 41233100 } },
+  "rates": {}, "vol": {}, "commodities": {}, "fx": {},
+  "missing": [ { "ticker": "AVB", "reason": "no bar dated 2026-09-10 ..." } ]
+}
+```
+
+**Why this exists.** The weekly files commit Friday closes because that is the
+cadence the council reads. The bars behind them were never weekly --
+`snapshot.fetch_weekly_bars` downloads daily bars over a ranged window and
+keeps one. This file keeps the other four sessions instead of discarding them.
+
+**Rules.** Everything in sec.1 applies unchanged: closes only, `missing`
+required and never empty-by-omission, `fetched_at` real UTC and the adjustment
+anchor, never edit, corrections as `<date>.corrected.json`. Two differences:
+
+- **`cadence` is required and is `"daily"`.** It is the discriminator that
+  stops a consumer treating this file as the weekly feed.
+- **`source` is `"yahoo-daily"`.** Same provider and same basis as the weekly
+  feed (yfinance `auto_adjust=True`, total-return); the distinct label records
+  provenance so a downstream basis check cannot silently conflate the two.
+
+**The session-witness gate.** `scripts/daily_observe.py` refuses to write a
+file unless **SPY has a bar dated exactly `as_of`**. No witness bar means the
+date was not a session, or the session has not settled with the provider. A
+half-formed session is indistinguishable from a settled one once committed,
+so the gate is up front rather than a later lint. Holidays simply produce no
+file -- 2026-09-07 (Labor Day) is absent by design, not missing.
+
+**Never splice daily and weekly files into one calculation.** They carry
+different adjustment anchors and the divergence is real, not theoretical: on
+2026-08-28 the weekly file (anchor 2026-08-29) and the daily file (anchor
+2026-09-12) agree on SPY to the penny but disagree by ~1% on 57 dividend
+payers, and by 50% on APH, which split 2:1 on 2026-09-03. A consumer reading
+both is reading two bases. `sector-regime-heatmap` treats `data/daily/` as its
+own panel for exactly this reason.
+
+**Size.** ~20KB per session, ~252 sessions per year, ~5MB/year. Same rule as
+sec.1: no pruning, no rotation, ever.
+
+---
+
+## 5. Not committed
 
 | Data | Where it lives | Lifetime |
 | --- | --- | --- |
