@@ -97,48 +97,48 @@ The regime is **stagflationary at the margin and single-factor at the core**: $1
 Scored from the weekly price panel in this repo by
 [sector-regime-heatmap](https://github.com/GrandMastaShake/sector-regime-heatmap).
 
-**As of 2026-08-21** -- manual run
+**As of 2026-09-11** -- manual run
 
-> 🧭 &nbsp;**Regime** &nbsp; AI-capex recovery -- archetype 1, steady mid-cycle expansion (day ~154)
+> 🧭 &nbsp;**Regime** &nbsp; AI-capex recovery -- archetype 1, steady mid-cycle expansion (day ~168), rate and energy stress rising
 > 
-> **Confidence** &nbsp; ●●○ medium &nbsp;&nbsp;•&nbsp;&nbsp; ✅ 4 supporting &nbsp;&nbsp;•&nbsp;&nbsp; ⚠️ 7 disconfirming
+> **Confidence** &nbsp; ●○○ low &nbsp;&nbsp;•&nbsp;&nbsp; ✅ 4 supporting &nbsp;&nbsp;•&nbsp;&nbsp; ⚠️ 9 disconfirming
 
 ```
 SECTOR                   WEEK                     MONTH
 ────────────────────────────────────────────────────────────────────────
-Financials                70.7 fav ███████░░░     66.7 con ███████░░░
-Healthcare                67.0 con ███████░░░     62.5 con ██████░░░░
-Energy                    61.9 con ██████░░░░     52.2 neu █████░░░░░
-Materials                 56.5 con ██████░░░░     54.1 neu █████░░░░░
-Consumer Discretionary    49.8 neu █████░░░░░     60.4 con ██████░░░░
-Communication Services    49.3 neu █████░░░░░     56.9 con ██████░░░░
-Real Estate               47.7 neu █████░░░░░     28.2 def ███░░░░░░░
-Consumer Staples          41.3 unf ████░░░░░░     37.1 unf ████░░░░░░
-Technology                40.6 unf ████░░░░░░     72.3 fav ███████░░░
-Industrials               27.7 def ███░░░░░░░     45.7 neu █████░░░░░
-Utilities                 10.8 def █░░░░░░░░░     18.8 def ██░░░░░░░░
+Energy                    78.5 fav ████████░░     73.7 fav ███████░░░
+Communication Services    70.6 fav ███████░░░     52.1 neu █████░░░░░
+Consumer Staples          57.8 con ██████░░░░     49.4 neu █████░░░░░
+Industrials               52.2 neu █████░░░░░     34.1 unf ███░░░░░░░
+Technology                51.2 neu █████░░░░░     28.5 def ███░░░░░░░
+Financials                33.8 unf ███░░░░░░░     62.4 con ██████░░░░
+Healthcare                29.5 def ███░░░░░░░     51.8 neu █████░░░░░
+Real Estate               25.4 def ███░░░░░░░     25.1 def ███░░░░░░░
+Materials                 22.2 def ██░░░░░░░░     40.3 unf ████░░░░░░
+Consumer Discretionary    21.8 def ██░░░░░░░░     28.7 def ███░░░░░░░
+Utilities                  7.8 def █░░░░░░░░░     21.4 def ██░░░░░░░░
 ```
 
 | | Sector | Week | Month | Confidence |
 |---|---|---:|---:|:---:|
-| 🟢 | **Financials** | 70.7 favorable | 66.7 constructive | ●●○ medium |
-| 🔵 | **Healthcare** | 67.0 constructive | 62.5 constructive | ●○○ low |
-| 🔵 | **Energy** | 61.9 constructive | 52.2 neutral | ●○○ low |
-| 🔵 | **Materials** | 56.5 constructive | 54.1 neutral | ●○○ low |
-| ⚪ | **Consumer Discretionary** | 49.8 neutral | 60.4 constructive | ●●○ medium |
-| ⚪ | **Communication Services** | 49.3 neutral | 56.9 constructive | ●○○ low |
-| ⚪ | **Real Estate** | 47.7 neutral | 28.2 defensive | ●○○ low |
-| 🟠 | **Consumer Staples** | 41.3 unfavorable | 37.1 unfavorable | ●●○ medium |
-| 🟠 | **Technology** | 40.6 unfavorable | 72.3 favorable | ●○○ low |
-| 🔴 | **Industrials** | 27.7 defensive | 45.7 neutral | ●○○ low |
-| 🔴 | **Utilities** | 10.8 defensive | 18.8 defensive | ●●○ medium |
+| 🟢 | **Energy** | 78.5 favorable | 73.7 favorable | ●○○ low |
+| 🟢 | **Communication Services** | 70.6 favorable | 52.1 neutral | ●●○ medium |
+| 🔵 | **Consumer Staples** | 57.8 constructive | 49.4 neutral | ●○○ low |
+| ⚪ | **Industrials** | 52.2 neutral | 34.1 unfavorable | ●○○ low |
+| ⚪ | **Technology** | 51.2 neutral | 28.5 defensive | ●●○ medium |
+| 🟠 | **Financials** | 33.8 unfavorable | 62.4 constructive | ●○○ low |
+| 🔴 | **Healthcare** | 29.5 defensive | 51.8 neutral | ●○○ low |
+| 🔴 | **Real Estate** | 25.4 defensive | 25.1 defensive | ●○○ low |
+| 🔴 | **Materials** | 22.2 defensive | 40.3 unfavorable | ●○○ low |
+| 🔴 | **Consumer Discretionary** | 21.8 defensive | 28.7 defensive | ●○○ low |
+| 🔴 | **Utilities** | 7.8 defensive | 21.4 defensive | ●●○ medium |
 
 `fav` 70+, `con` 55+, `neu` 45+, `unf` 30+, `def` below 30. `n/a` is a
 horizon that was not offered -- the day horizon needs daily bars and this
 feed commits Friday closes only -- never a zero.
 
 Full rationale, per-sector sourcing and the disconfirming evidence are in
-the heatmap's own README and in `data/forecasts/2026-08-21_manual.json` there.
+the heatmap's own README and in `data/forecasts/2026-09-11_manual.json` there.
 
 <!-- HEATMAP:END -->
 
