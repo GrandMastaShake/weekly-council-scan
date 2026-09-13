@@ -212,19 +212,47 @@ def _enforce_risk_controls(portfolio: Dict[str, float],
     # redistributed: the book may sum to < 1 and tracker.py books the
     # residual as cash. At most 3 sponsors, so 3 passes always converge.
     if attribution:
+        # ADAPTIVE SPONSOR CAP (2026-09-13). A fixed 0.40 with no
+        # redistribution is a cash mandate, not a diversification rule: the
+        # weight freed by the cap is never reallocated, so a book whose top 5
+        # all carry one sponsor could never exceed 40% invested however good
+        # the picks were. Observed consequence -- as the hit-rate dampener
+        # progressively silenced Marky and Ophelia, sponsor diversity
+        # collapsed and the book went 100% invested (2026-07-20, three
+        # sponsors) -> 39.9% (2026-08-24, one sponsor) -> 26.6% (2026-08-31,
+        # one sponsor). That is a feedback loop, not a risk control.
+        #
+        # 1/n_sponsors is the smallest cap that leaves the book
+        # mathematically investable; the 0.40 floor preserves the original
+        # intent once all three sponsors are actually contributing.
+        sponsors = {attribution.get(t) for t in adjusted if attribution.get(t)}
+        agent_cap = max(MAX_AGENT_EXPOSURE, 1.0 / max(len(sponsors), 1))
         for _ in range(3):
             sponsor_totals: Dict[str, float] = {}
             for ticker, weight in adjusted.items():
                 sponsor = attribution.get(ticker)
                 if sponsor:
                     sponsor_totals[sponsor] = sponsor_totals.get(sponsor, 0.0) + weight
-            over = {s: t for s, t in sponsor_totals.items() if t > MAX_AGENT_EXPOSURE + 1e-9}
+            over = {s: t for s, t in sponsor_totals.items() if t > agent_cap + 1e-9}
             if not over:
                 break
             for sponsor, sponsor_total in over.items():
-                scale = MAX_AGENT_EXPOSURE / sponsor_total
+                scale = agent_cap / sponsor_total
                 for ticker in adjusted:
                     if attribution.get(ticker) == sponsor:
                         adjusted[ticker] *= scale
+
+        # ORDERING FIX (2026-09-13). The normalize -> cap -> drop loop above
+        # enforced MIN_ALLOCATION, but the sponsor scaling runs AFTER it and
+        # never re-checked, so a capped book could hold positions below the
+        # floor it had just enforced (five equal one-sponsor names landed at
+        # 8.0% against a 10% floor). Drop without renormalising: the freed
+        # weight becomes cash, consistent with how the cap already behaves,
+        # and the pass terminates because nothing is scaled back up.
+        if MIN_ALLOCATION > 0:
+            small = [k for k, v in adjusted.items() if v < MIN_ALLOCATION - 1e-9]
+            if small and len(adjusted) - len(small) >= 1:
+                for k in small:
+                    del adjusted[k]
 
     return adjusted

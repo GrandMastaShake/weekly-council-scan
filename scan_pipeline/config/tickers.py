@@ -119,7 +119,9 @@ assert set(FOCUS_TICKERS) <= set(PRICE_FEED_UNIVERSE), (
 # Engine configuration constants (ported from constants.ts ENGINE_CONFIG)
 ENGINE_CONFIG = {
     "max_position_size": 0.30,
-    "min_position_size": 0.10,
+    "min_position_size": 0.05,   # was 0.10 (2026-09-13): the floor DELETES
+    # rather than floors, so a 9% conviction became 0%. Combined with the
+    # vote-weight skew that is how broadly-supported names were lost.
     "consensus_alpha": 0.3,
     "big_win_threshold": 0.03,
     "big_loss_threshold": -0.03,

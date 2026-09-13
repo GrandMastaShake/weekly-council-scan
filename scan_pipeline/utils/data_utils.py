@@ -428,8 +428,19 @@ def pick_confidence(
         - vix_confidence_penalty(vix)
         - vix_complacency_penalty(vix)
     )
-    if persona:
-        raw *= hit_rate_multiplier(persona_hit_rate(persona, history_dir))
+    # DOUBLE-DAMPENER FIX (2026-09-13). The persona hit-rate multiplier used
+    # to be applied here AND again in consensus._dampened_accuracy, which
+    # compounded: Cecil's effective advantage over Marky was 3.01x, not the
+    # 2.33x visible in consensus.py. Two fixes added independently (this one
+    # 2026-08-01, the consensus dampener later) were never reconciled.
+    #
+    # Track record is an AGGREGATION concern and belongs in consensus, where
+    # it is expressed once as a vote weight. This function's own contract says
+    # confidence is "a continuous function of the pick's OWN signal inputs" --
+    # folding a persona's history into it corrupts the number the report
+    # publishes as that pick's confidence. The parameters are retained so
+    # callers and tests keep working.
+    _ = (persona, history_dir)
     published = round(clamp(raw, 5.0, 97.0), 1)
     return raw, published
 
