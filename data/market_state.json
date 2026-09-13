@@ -77,8 +77,8 @@
     "fed_funds_range_as_of": "2026-07-29",
     "fed_stance": "Hold",
     "fed_stance_as_of": "2026-07-29",
-    "next_macro_gate": "August CPI Thu Sep 11 (THE gate into FOMC) + FOMC Sep 15-16 (hike odds ~49%->60.4% post-NFP) + BOJ Sep 17-18 (hike odds ~84-87%)",
-    "next_macro_gate_as_of": "2026-09-05"
+    "next_macro_gate": "FOMC Sep 15-16 (hike odds ~87-90% after hot August core CPI +0.3% vs +0.2% cons, reported Sep 11) + BOJ Sep 17-18 (hike odds ~84-87%)",
+    "next_macro_gate_as_of": "2026-09-12"
   },
   "rates": {
     "US10Y": {
@@ -220,8 +220,8 @@
   "upcoming": [
     {
       "binary": null,
-      "event": "August CPI Thu Sep 11 (THE gate into FOMC) + FOMC Sep 15-16 (hike odds ~49%->60.4% post-NFP) + BOJ Sep 17-18 (hike odds ~84-87%)",
-      "when": "2026-09-05"
+      "event": "FOMC Sep 15-16 (hike odds ~87-90% after hot August core CPI +0.3% vs +0.2% cons, reported Sep 11) + BOJ Sep 17-18 (hike odds ~84-87%)",
+      "when": "2026-09-12"
     }
   ],
   "vol": {
