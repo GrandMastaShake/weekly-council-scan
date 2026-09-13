@@ -10,20 +10,20 @@
 
 | Metric | Current | Last Week | Change |
 |---|---|---|---|
-| Price | $567.01 | $553.11 | +2.51% |
-| 52W Range | $294.80 – $671.83 | — | — |
+| Price | $568.53 | $567.01 | +0.27% |
+| 52W Range | $300.44 – $671.83 | — | — |
 | AUM | ~$71.5B | — | — |
-| YTD Return | **+57.5%** | — | — |
-| 1Y Return | ~+95.6% | — | — |
-| P/E Ratio | ~29-45x (mega-cap blend) | — | — |
-| Dividend Yield | ~0.10% | — | — |
+| YTD Return | **+52.3%** | — | — |
+| 1Y Return | ~+87.4% | — | — |
+| P/E Ratio | ~38.8x (mega-cap blend) | — | — |
+| Dividend Yield | ~0.20% | — | — |
 | Beta | ~2.3-2.4 | — | — |
 | Total Holdings | ~27 | — | — |
-| Friday Volume | 9.46M shares | — | — |
+| Friday Volume | 5.20M shares | — | — |
 
-**Marky Tape Read:** SMH ripped back +2.51% to $567.01 in a week that had every reason to sell off and instead bought the dip twice. Monday opened soft into Labor-Day-shortened trading, Tuesday printed the week's low at **$545.22** on rate jitters, then Wednesday's AVGO print landed after the close — a beat on revenue and AI growth (+221% YoY) but a soft Q4 guide ($34.8B vs $35.03B consensus) and margin compression (73% vs 78% a year ago) sent AVGO down as much as 6% in the after-market. The complex shrugged it off by Thursday ($552.60) and then Friday's hot NFP print (payrolls +162K vs ~53-56K expected) — normally a "sell growth" signal on hawkish Fed repricing — instead triggered a **squeeze**: SMH ripped +2.61% on the day alone to close at $567.01 on the week's heaviest volume (9.46M shares), with MU (+6.1% Friday, +8.98% week), INTC (+4.5% Friday, +7.07% week) and KLAC (+7.3% Friday, +5.73% week) leading. The 50D MA at **$573.97** capped the week; SMH never closed above it. RSI cooled to **39.9** — momentum reset, not oversold. Key level: **$545.22, Tuesday's low**. Lose it and $520 reopens. Reclaim $574 (the 50D) and the range trade resumes higher.
+**Marky Tape Read:** SMH ground out a fractional +0.27% week, but the tape underneath was anything but quiet. Tuesday and Wednesday saw the complex push to a fresh multi-week high — $573.73, then $574.29 Wednesday, brushing right up against the 50D — before Thursday's PPI print (diesel fuel +24.1% MoM, energy +4.2%) sent the 10Y surging to 4.944% and knocked SMH down 2.4% to $560.28, the week's low. Friday's hot core CPI (+0.3% MoM vs +0.2% consensus) should have extended the selling — instead SMH rallied 1.47% back to $568.53, essentially flat on the week and parked right on top of its 50-day moving average ($569.10) for a second straight week. RSI cooled further to a healthy **53.2**, well off overbought and with real room to run either direction. The story inside the index was a sharp rotation: AMD ripped **+8.07%** on Helios-rack enthusiasm while NVDA fell **-5.13%** and MU gave back **-4.07%** of its prior week's surge — the "AI compute" trade splintered into winners and losers for the first time in months rather than moving as a bloc. Key level: **$560.28, Thursday's low**. Lose it and the 50D fails cleanly; hold it and reclaim $574 (the week's high) to resume the uptrend.
 
-**Ophelia Macro Read:** The macro tape flipped hawkish and risk assets rallied anyway — that divergence is this week's real story. **August nonfarm payrolls smashed expectations: +162,000 vs ~53-56,000 consensus**, with unemployment steady at 4.1% and labor-force participation rebounding to 61.6%. That is the "good news is bad news" print the market feared: **CME FedWatch odds of a September 25bp hike jumped from ~49% to ~60.4%** on the release, and the **10Y closed the week at 4.78-4.79%**, its highest level since November 2023 (Wed intraday touched 4.818%). Offsetting that: Fed Governor Waller told CNBC Thursday he's "inclined to support" holding rates steady absent inflation surprises, which pulled the 10Y back from its Wednesday peak before Friday's payrolls print pushed it back up. **DXY sits at 99.13-99.15**, still inside the 99-101 band and roughly 2.3% off its late-July high — a modest translation tailwind for TSM/ASML that hasn't reversed. **VIX closed 14.32 Thursday**, still historically cheap heading into a two-week window that ends with the **FOMC decision September 15-16** — now a genuine coin-flip. The next data gate is **CPI**, expected next week, which the Fed itself flagged as the "final determinant" before the meeting.
+**Ophelia Macro Read:** The Fed's "final determinant" arrived, and it broke hawkish. **August core CPI rose 0.3% month-over-month, a tenth hotter than the 0.2% consensus**, even as the annual core rate matched expectations at 2.4% — the lowest since March 2021 — and headline CPI held at 3.4% YoY on a gas-price-driven 0.4% monthly gain. Layered on top of Thursday's PPI shock (final demand +0.4% MoM, driven by a 24.1% monthly jump in diesel prices as the oil-shock second front from the energy desk fed straight into producer costs), the **10-year Treasury closed the week at 4.975%**, a fresh 52-week high and now just **2.5 basis points from the 5.00% crisis line** the Council has been watching. **CME FedWatch odds of a September 16 hike vaulted from ~60% a week ago to roughly 85-90%** — a hike is now close to a foregone conclusion rather than a coin flip. **DXY held flat at 99.12**, still range-bound and not yet reflecting the hawkish repricing. **VIX closed 15.84**, up 9% on the week and having tested 17.84 intraday Thursday, but still comfortably below the 20 stress threshold. The next binary gate is the **FOMC decision itself, September 15-16**, with the Summary of Economic Projections and dot plot in tow — a decision the market now treats as effectively pre-announced, which shifts the real risk to what Chair Powell signals about the pace of hikes into year-end.
 
 ---
 
@@ -31,42 +31,41 @@
 
 | Rank | Ticker | Name | Weight | Price | Weekly Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA | ~23.8% | $230.36 | +5.89% | $236.54 | $164.27 | 0.00% | 29.1 | 🔥 |
-| 2 | TSM | Taiwan Semiconductor | ~9.7% | $428.91 | +2.73% | $479.00 | $241.62 | 0.01% | 27.9 | ⚡ |
-| 3 | AVGO | Broadcom | ~5.9% | $357.90 | -2.95% | $495.00 | $289.96 | 0.01% | 45.7 | ⚠️ |
-| 4 | MU | Micron Technology | ~5.6% | $1,016.59 | +8.98% | $1,255.00 | $128.40 | 0.00% | 23.0 | 🔥 |
-| 5 | AMD | AMD | ~5.3% | $477.57 | +2.58% | $584.73 | $149.22 | 0.00% | 122.5 | ⚡ |
-| 6 | ASML | ASML Holding | ~5.0% | $1,714.88 | +1.10% | $1,999.96 | $786.75 | 0.01% | 53.3 | ⚡ |
-| 7 | LRCX | Lam Research | ~4.3% | $307.65 | +1.90% | $438.50 | $104.46 | 0.00% | 53.4 | ⚡ |
-| 8 | ADI | Analog Devices | ~4.3% | $362.25 | +0.13% | $445.91 | $223.47 | 0.01% | 43.0 | ⚡ |
-| 9 | TXN | Texas Instruments | ~4.2% | $258.44 | -0.08% | $334.03 | $152.73 | 0.02% | 39.3 | ⚡ |
-| 10 | AMAT | Applied Materials | ~4.1% | $454.71 | -1.51% | $739.67 | $161.75 | 0.00% | 39.2 | ⚠️ |
+| 1 | NVDA | NVIDIA | ~22.5% | $218.29 | -5.13% | $236.00 | $163.90 | 0.46% | 27.6 | ⚠️ |
+| 2 | TSM | Taiwan Semiconductor | ~9.8% | $433.24 | +1.01% | $479.00 | $255.55 | 0.94% | 31.9 | ⚡ |
+| 3 | AVGO | Broadcom | ~6.0% | $361.99 | +1.14% | $494.22 | $289.50 | 0.72% | 46.1 | ⚡ |
+| 4 | AMD | AMD | ~5.6% | $516.13 | +8.07% | $584.73 | $149.85 | 0.00% | 131.7 | 🔥 |
+| 5 | MU | Micron Technology | ~5.2% | $975.26 | -4.07% | $1,254.81 | $152.96 | 0.05% | 22.0 | ⚠️ |
+| 6 | ASML | ASML Holding | ~4.9% | $1,698.30 | -0.97% | $1,997.38 | $801.02 | 0.53% | 57.5 | ⚡ |
+| 7 | ADI | Analog Devices | ~4.4% | $378.78 | +4.56% | $444.56 | $220.71 | 1.16% | 45.0 | ⚡ |
+| 8 | TXN | Texas Instruments | ~4.2% | $268.70 | +3.97% | $332.33 | $150.20 | 2.11% | 40.8 | ⚡ |
+| 9 | LRCX | Lam Research | ~4.1% | $298.22 | -3.07% | $438.50 | $115.24 | 0.44% | 51.8 | ⚠️ |
+| 10 | AMAT | Applied Materials | ~4.0% | $456.49 | +0.39% | $738.88 | $166.26 | 0.46% | 39.4 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 
-**Sector Split:** SMH remains dominated by the AI duo — NVDA (~23.8%, up from ~19% two weeks ago as the stock rallied) and TSM (~9.7%) — with AVGO now the #3 weight. The rest is a mix of:
-- **AI/GPU:** NVDA, AMD (the compute engines)
-- **Foundry:** TSM (the manufacturer everyone depends on)
-- **Networking/Custom Silicon:** AVGO, MRVL (the connective tissue)
-- **Memory:** MU (the volatile commodity player — now supercharged by HBM and a full melt-up in spot pricing)
-- **Lithography:** ASML (the monopoly no one can replicate — back in the top 10 this week)
-- **Equipment:** LRCX, AMAT, KLAC (the picks and shovels)
-- **Analog:** ADI, TXN (the legacy-cycle barometers)
-- **Mobile:** QCOM (just outside the top 10 this week, +2.77%)
+**Sector Split:** NVDA (~22.5%) and TSM (~9.8%) remain the two anchor weights, with AVGO holding the #3 spot. AMD's surge lifts it past MU into the #4 slot this week — the first time the ordering inside the top five has shifted in over a month. The rest of the stack:
+- **AI/GPU:** NVDA, AMD (now genuinely competing for the "who owns the AI-compute narrative" trade, not just riding it together)
+- **Foundry:** TSM (the manufacturer everyone still depends on, regardless of which GPU wins)
+- **Networking/Custom Silicon:** AVGO
+- **Memory:** MU (still the cleanest shortage play, now also facing a fresh legal overhang)
+- **Lithography:** ASML (EUV monopoly, unaffected by the AI-compute rotation below it)
+- **Equipment:** LRCX, AMAT (the picks-and-shovels complex, both taking profit-taking hits this week)
+- **Analog:** ADI, TXN (the boring, real-margin businesses — again the week's quiet outperformers)
 
-**The NVDA Story:** NVIDIA at $230.36, up 5.89% on the week and printing fresh strength (+1.32% Friday alone) with no incremental company news — this was pure macro-relief buying plus continued digestion of the blowout Q2 FY27 print two weeks ago ($96.22B revenue, +106% YoY). At ~29x trailing earnings against ~89% guided Q3 growth, the stock is being re-rated as "cheap growth" even as the 10Y sits at a multi-year high, which is itself a signal that investors are choosing to look through the rate cycle for the AI compute leader.
+**The AMD Story:** AMD at $516.13, up **8.07%** — the standout of the entire sector. The catalyst is concrete: AMD's Helios rack-scale AI system, unveiled in August as the company's direct answer to Nvidia's Vera Rubin NVL72, pairs 72 of AMD's new MI455X accelerators with sixth-generation EPYC CPUs and began shipping in September. At the Goldman Sachs Communacopia + Technology Conference this week, CFO Jean Hu told investors AMD's total addressable market could reach **$2 trillion by 2030** as AI infrastructure spend broadens beyond a single-vendor race. For the first time in this cycle, the market is pricing AMD as a genuine second source for frontier AI compute rather than a discount alternative to NVDA.
 
-**The AVGO Story:** Broadcom at $357.90, down 2.95% on the week — the week's most important single print. Wednesday's Q3 FY26 results were genuinely strong: **revenue $29.6B (+86% YoY), AI semiconductor revenue $16.7B (+221% YoY, +54% QoQ)**, non-GAAP EPS $3.32 (beat ~$3.16-3.24 consensus). But the stock fell as much as 6% after hours because the **Q4 guide of $34.8B missed the $35.03B consensus**, and consolidated gross margin is guided to compress to **73% from 78% a year ago** as custom XPUs — a lower-margin mix — become a larger share of revenue. Management raised the FY26 AI-revenue guide to **$58B** and, notably, gave multi-year visibility: **$115B in AI revenue for FY27 and $230B for FY28** — a doubling each year, with CEO Hock Tan stating supply is secured to support it. The stock partially recovered into Friday's close. Watch whether the margin story or the growth story wins the next leg.
+**The NVDA Story:** NVIDIA at $218.29, down **5.13%** — the week's biggest mega-cap laggard, and the mirror image of the AMD move. No single catalyst broke this week; instead it was a grind lower across four sessions as rising real rates pressured the highest-multiple names and the market rotated into AMD/Intel's competing AI-silicon roadmaps. The structural overhang has not changed: NVIDIA's share of the Chinese AI-chip market has fallen from a peak of roughly 95% to an estimated ~8% as Beijing pushes domestic alternatives (Huawei, Cambricon) whose prices have risen as much as 50% on grey-market HBM scarcity, and June's closure of the offshore-subsidiary loophole further narrowed Nvidia's path to that market. None of that is new this week, but it is the backdrop against which any NVDA-specific weakness now gets read.
 
-**The MU Story:** Micron at $1,016.59, up **8.98%** on the week — a full second cross above $1,000 and the strongest name in the top 10. The memory supercycle keeps intensifying: **spot HBM3E prices are trading around $2,100 versus $365-510 contract prices**, a four-to-six-times premium that signals AI demand has fully overwhelmed available supply, with **no relief expected before 2027**. Commodity PC DRAM (128Gb MLC) also hit a record $25/unit in August, up 4.17% — HBM production is crowding out legacy memory capacity even as laptop demand stays weak. MU is now the cleanest, most direct way to own the memory shortage.
+**The MU Story:** Micron at $975.26, down **4.07%** — giving back some of last week's run above $1,000. The pullback has two layers: ordinary profit-taking after a nearly 9% prior-week surge, and a fresh legal overhang as Netlist has filed new ITC and federal-court patent actions against Micron seeking exclusion orders that could block key DDR5 products. The underlying memory-shortage thesis is untouched — DRAM ASPs are approaching $1.20-1.30 per gigabit and converging with HBM3E 12-Hi pricing, 2026 HBM output is reported sold out, and DRAM pricing overall is tracking a 275-300% increase from 2025 through 2027 — but the litigation risk is now a real line item heading into Micron's September 30 fiscal Q4 print.
 
-**The TSM Story:** Taiwan Semiconductor at $428.91, up 2.73% — resilient as always, with 3nm and CoWoS lines still reported sold out into 2026 and nothing company-specific breaking this week. The modest DXY pullback from its late-July high remains a translation tailwind for the Taiwan-dollar revenue line.
+**The TSM Story:** Taiwan Semiconductor at $433.24, up 1.01% — steady as always. TSMC's global foundry share hit a record 72.5% in Q2, and the company raised full-year 2026 capex guidance to $60-64 billion (from $52-56 billion in January) to fund 25 new fabrication and packaging facilities worldwide, 13 of them in Taiwan. Arizona's Fab 21 Phase 2 now targets equipment installation in Q3 2026 with mass production pulled forward to H2 2027. Foundry-wide utilization is reported near 90% with no pricing relief expected before 2027 — TSM remains the least contested name in the sector.
 
-**The ASML Story:** ASML back in the top 10 at $1,714.88 (+1.10%), displacing MRVL as MU's weight growth reshuffled the table. EUV monopoly and 2027+ backlog intact.
+**The LRCX Story:** Lam Research at $298.22, down 3.07% — the week's clearest profit-taking casualty. UBS trimmed its price target to $425 from $435 (while maintaining Buy) on Wednesday, an SEC filing showed the company's Chief Legal Officer sold 5,000 shares in late August, and rising Treasury yields hit the equipment complex's richest multiple (LRCX trades near 55x trailing earnings) hardest. Fundamentals are unchanged — Lam's June quarter posted record revenue and margins with an upbeat guide — this was a valuation reset, not a demand problem.
 
-**The Rest of the Stack:** AMD at $477.57 (+2.58%) rode the broader rally with no fresh company news. LRCX (+1.90%), ADI (+0.13% — essentially flat), and TXN (-0.08% — essentially flat) tracked the equipment/analog complex, while AMAT (-1.51%) lagged, still digesting the prior quarter's order-book commentary. QCOM (+2.77%) and INTC (+7.07%, the week's biggest mega-cap mover outside MU) both benefited from the Friday risk-on squeeze — INTC in particular continues to stabilize well above its post-raise lows near $90.
+**The Rest of the Stack:** ADI (+4.56%) and TXN (+3.97%) were the week's quiet analog outperformers, tracking the "boring, real-margin businesses get bid when growth gets volatile" pattern that showed up two weeks ago too. ASML (-0.97%) and AMAT (+0.39%) were roughly flat, unaffected by either the AI-compute rotation or the equipment-sector profit-taking that hit LRCX specifically.
 
-**Cecil Fundamental Read:** MU at ~23x trailing with an $2,100 spot-vs-$400ish-contract HBM price gap is the closest thing to a genuine commodity shortage story in this table — that gap does not close without either massive capacity additions (which take years) or demand destruction (which nobody is forecasting). NVDA at ~29x trailing on 89%+ guided growth remains a name I can rationalize even if I don't love the multiple. AVGO's margin compression to 73% is the tell that custom silicon, while high-growth, is structurally lower-margin than the merchant-silicon business it is displacing — a real economic fact management is not hiding, buried inside a "raise the AI guide" headline. TXN and ADI are the honest, boring, real-margin businesses in this table, and this week they were the market's least interesting story — which is usually when they are cheapest relative to quality. The garden does not grow silicon wafers.
+**Cecil Fundamental Read:** This week's real story is that the AI-compute trade stopped moving as a single block. NVDA and AMD used to rise and fall together as proxies for the same thesis; this week they diverged by more than 13 percentage points as the market began pricing AMD's Helios/MI455X platform as a legitimate second source rather than a discount tail on Nvidia's Rubin cycle. That is a healthier market structure — genuine competition compresses nobody's margin overnight, but it does mean the "just own NVDA" trade is no longer a free pass. Micron's Netlist litigation is a name-specific legal risk layered on top of an unimpaired shortage thesis; it is worth tracking into the September 30 print but does not change the HBM/DRAM arithmetic. The garden does not grow silicon wafers, and this week it did not grow consensus either — that is not a bad thing.
 
 ---
 
@@ -74,15 +73,15 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| **AOSL** | Alpha & Omega Semiconductor | ~$0.75B | $25.20 | +2.31% | No fresh company news since the mid-August print; PT cuts (B. Riley $34, Needham $45) remain the Street's verdict; next print ~Nov 9. | Drifting with the tape, not on it — the show-me discount from the PT cuts hasn't lifted. Still the riskiest name in this table. |
-| **DIOD** | Diodes Incorporated | ~$4.22B | $91.79 | +4.31% | No fresh company news — rallied with the broader risk-on squeeze into Friday. | Best fundamentals in this table, and it showed — outperformed every peer this week on beta alone. Analog/discrete recovery thesis intact. |
-| **POWI** | Power Integrations | ~$2.81B | $50.45 | -2.06% | No fresh company news; continues to trade below the 200D it lost two weeks ago. | The level that broke hasn't been reclaimed. Highest-quality balance sheet in the table, but the technical burden of proof is still on the bulls. |
-| **CEVA** | CEVA, Inc. | ~$0.75B | $26.95 | -0.63% | No fresh company news — a fourth straight week of muted, directionless trading after the prior repricing. | The multi-week purge has fully decelerated; this is now a base-building pattern, not a fresh leg down. IP licensing pipeline unchanged. |
-| **ACLS** | Axcelis Technologies | ~$3.54B | $115.08 | -0.42% | Announced participation in the Citi 2026 Global TMT Conference and B. Riley Consumer & TMT Conference; Street debate continues over valuation (SimplyWall.st fair value cut to $161 from $169.67) vs. the pending Veeco merger. | Conference season is putting the name back on investor radars, but the valuation argument (rich vs. cheap) is genuinely split on the Street. Cheapest semi-equipment name in the group. |
+| **AOSL** | Alpha & Omega Semiconductor | ~$0.78B | $25.78 | +2.30% | No fresh company-specific news this week; continues showcasing AI core-power and data-center MOSFET products (AOPL66801, PCIM 2026) from prior weeks. | Drifting with the tape on beta alone — no new catalyst to break the pattern. Still the riskiest name in the table. |
+| **DIOD** | Diodes Incorporated | ~$4.38B | $95.01 | +3.51% | No fresh company-specific news — moved with the broader analog/discrete complex (ADI +4.56%, TXN +3.97% this week). | Best fundamentals in the table continuing to track the sector's quiet outperformers. No red flags. |
+| **POWI** | Power Integrations | ~$2.92B | $52.28 | +3.63% | No fresh company-specific news; price remains below its 200D moving average (~$56.38). | A genuine bounce off a beaten-down base, but the technical burden of proof (reclaim the 200D) is still unmet. |
+| **CEVA** | CEVA, Inc. | ~$0.82B | $29.01 | +7.64% | Corporate/investor event in New York (Sept 10) plus a company press release (Sept 9) — the week's best mover in the table, though full release details were not yet indexed by search at publication. | The standout of the group this week — worth a follow-up next week once the announcement's substance is confirmed. IP-licensing pipeline read improving on the price action alone. |
+| **ACLS** | Axcelis Technologies | ~$3.50B | $113.43 | -1.43% | Presented at the Citi 2026 Global TMT Conference (Sept 8) and B. Riley Consumer & TMT Conference (Sept 10); an analyst raised the price target sharply to $156 from $90 on a re-rated 2030 addressable-market estimate of $2.7B in memory/data-center/auto/industrial end markets; Purion XEmax implanter completed evaluation at a leading foundry for PMIC production. | Down on the week despite the best fundamental news in the table — a $66 price-target hike on TAM re-rating didn't move the stock, which says more about macro (rates, CPI) than about Axcelis. Cheapest semi-equipment name in the group, now with a stronger analyst case behind it. |
 
-> **Note:** All five names re-verified below the $5B threshold this week via live Yahoo/Perplexity Finance market caps (AOSL ~$0.75B, DIOD ~$4.22B, POWI ~$2.81B, CEVA ~$0.75B, ACLS ~$3.54B) — **no rotation**. SLAB (~$7.28B) remains graduated out. ACMR now screens at ~$4.77B (back under $5B on the week's rally) but is not swapped in since none of the current five graduated above the threshold — flagging for next week's re-verification pass.
+> **Note:** All five names re-verified below the $5B threshold this week via live yfinance market caps (AOSL ~$0.78B, DIOD ~$4.38B, POWI ~$2.92B, CEVA ~$0.82B, ACLS ~$3.50B) — **no rotation**. SLAB (~$7.35B) remains graduated out. ACMR, which sat at ~$4.77B last week, has now crossed to **~$5.01B** on its own price action — graduated out for the first time, but not swapped in since none of the current five crossed above $5B this week.
 
-**Marky Small-Cap Read:** A quiet week by this table's recent standards — no earnings, no analyst-day bombs, just beta. DIOD's +4.31% was the standout, riding the same risk-on Friday squeeze that lifted MU and INTC, and it remains the best-run business in the group. POWI's continued underperformance (-2.06%, still below its 200D) is the one technical flag worth carrying into next week — a name with the best balance sheet in the table shouldn't be the laggard in a rally tape. ACLS's conference appearances are a signal to watch, not act on, until the Veeco deal terms are fully digested by the sell side.
+**Marky Small-Cap Read:** CEVA's +7.64% pop on an investor event this week is the story worth chasing into next week once the substance is confirmed — that kind of one-day-driven move on real news is exactly what this table is built to catch before it shows up in the mega-cap briefs. ACLS is the more interesting long-term signal: a sell-side analyst just raised the target by 73% on a structurally larger TAM case, and the stock still went down on the week — a reminder that even genuinely good news doesn't overcome a 10Y grinding toward 5%. POWI's bounce is a bounce, not yet a reclaim.
 
 ---
 
@@ -91,17 +90,17 @@
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $671.83 | Prior bull peak — tested in June, rejected |
-| 50-Day MA | ~$573.97 | **Key dynamic resistance** — price closed below it every session this week |
-| Near Resistance | $573.00 | Late-August rejection shelf, just below the 50D |
-| Current Price | $567.01 | — |
-| Near Support | $545.22 | **Tuesday's low / the week's low — the line that must hold** |
-| Major Support | $520.00 | Post-correction demand shelf |
-| 200-Day MA | ~$474 (est.) | Long-term trend support — bullish above, extrapolated from last week's $472.22 |
-| Structural Low | $294.80 | 52W bottom |
+| 50-Day MA | $569.10 | **Key dynamic level** — SMH closed within $0.60 of it for a second straight week |
+| Near Resistance | $574.29 | This week's high (Wednesday) — the line to reclaim |
+| Current Price | $568.53 | — |
+| Near Support | $560.28 | **Thursday's low / the week's low** — the PPI-day flush |
+| Major Support | $545.22 | Prior week's low — the deeper line if $560 breaks |
+| 200-Day MA | $482.06 | Long-term trend support — bullish above |
+| Structural Low | $300.44 | 52W bottom |
 
-**Marky Setup Assessment:** SMH spent the whole week below its 50-day moving average and still managed a +2.51% gain — a tape that wants to go higher even without a clean technical breakout. The close at $567.01 leaves the 50D ($573.97) as the very next test; a weekly close above it reopens the June highs. RSI at 39.9 says there's room to run before overbought conditions become a concern. The map: **$545.22 is the line** — Tuesday's low. Lose it on a weekly closing basis and $520 is next. Reclaim $574 and the August-September range trade resolves upward. Bias: **cautiously constructive — the tape absorbed a hawkish jobs report and a disappointing mega-cap guide in the same week and still finished green.**
+**Marky Setup Assessment:** SMH spent the entire week pinned within a tight band around its 50-day moving average — pushing to a fresh multi-week high Wednesday, getting flushed to the week's low Thursday on the PPI-driven bond selloff, then recovering almost the entire move Friday despite a hotter-than-expected core CPI print. That is a market absorbing genuinely hawkish data without breaking down, which is itself informative. RSI at 53.2 is squarely neutral — there's room to run in either direction with no overbought or oversold bias forcing the next move. The map: **$560.28 is the line** — Thursday's low. Lose it on a weekly closing basis and $545.22 reopens. Reclaim $574.29 and the range resolves upward into a test of the June highs. Bias: **neutral-to-constructive — the tape held its ground through the week's two biggest macro prints, but the FOMC decision Tuesday-Wednesday is the real test.**
 
-**The relative strength story:** SMH is **+57.5% YTD** and **~+95.6% over 52 weeks** — leadership intact on every timeframe. The sector's ability to rally on a hot jobs report that pushed hike odds to 60% is a genuine tell that the AI capex thesis is, for now, overriding the rate-sensitivity discount that dominated late August.
+**The relative strength story:** SMH is **+52.3% YTD** and **~+87.4% over 52 weeks** — leadership intact, even after this week's internal rotation. The fact that the sector held flat while its two largest AI-compute names moved in opposite directions by 5-8 points each is a sign of a maturing, more differentiated trade rather than a weakening one.
 
 ---
 
@@ -109,21 +108,21 @@
 
 | Factor | Level | Implication for SMH |
 |---|---|---|
-| 10Y Treasury | **4.78-4.79% (multi-year high, touched 4.818% intraday Wed)** | Rate pressure intensified on the hot jobs report; a move through 4.85% would resume multiple compression. |
-| Fed Funds | 3.50–3.75% (on hold) | **September hike odds jumped from ~49% to ~60.4%** after the NFP beat. FOMC meets Sept 15-16. |
-| **August NFP** | **+162,000 vs ~53-56,000 cons; unemployment 4.1%** | The "good news is bad news" print of the year — hawkish for the Fed, but SMH rallied through it. |
-| DXY | **~99.13-99.15** | Still inside the 99-101 band, ~2.3% off the late-July high — a continuing translation tailwind for TSM/ASML. |
-| VIX | 14.32 (Thu close) | Still historically cheap heading into the FOMC decision and next week's CPI print. |
-| **Next Catalyst** | **CPI (next week) → FOMC Sept 15-16** | The Fed itself has flagged CPI as the final determinant before the meeting — the next binary gate for the whole market, semis included. |
-| **AVGO Q3 FY26 (REPORTED 9/2)** | **Rev $29.6B +86% YoY; AI semi $16.7B +221% YoY; Q4 guide $34.8B (miss ~$35.03B cons); GM guide 73% vs 78% YoY; FY26 AI rev raised to $58B; FY27/FY28 AI rev guide $115B/$230B** | Growth validated, margin questioned — the custom-silicon mix shift is a real structural story, not noise. |
-| **Memory / HBM Spot Pricing** | **HBM3E spot ~$2,100 vs $365-510 contract; PC DRAM record $25/unit (+4.17% Aug)** | The clearest shortage signal in the sector — MU is the direct beneficiary; no relief seen before 2027. |
-| **Nexperia / Wingtech Dispute** | **Chinese court froze ~$300M of Nexperia assets in dispute with Wingtech** | A live reminder that China-Netherlands chip supply-chain tension (export controls, ownership disputes) remains an open wound, not resolved. |
-| **TSMC 3nm / CoWoS** | Reported sold out through 2026 | Supply-constrained, pricing power intact. |
-| China/Taiwan Tensions | Elevated, ongoing | Structural tail risk, unchanged week over week. |
+| 10Y Treasury | **4.975% (fresh 52-week high, 2.5bp from the 5.00% crisis line)** | Up ~19bp on the week; a close above 5.00% would be the most consequential rate move of the cycle for a 2.3-beta sector. |
+| Fed Funds | 3.50–3.75% (on hold) | **September hike odds jumped from ~60% to ~85-90%** after the hot core CPI. FOMC decides Sept 15-16 with SEP/dot plot. |
+| **August Core CPI** | **+0.3% MoM (vs +0.2% cons); +2.4% YoY (in line, lowest since March 2021); headline +0.4% MoM / +3.4% YoY** | THE GATE resolved hawkish on the monthly reading even as the annual core rate kept improving — a genuinely mixed signal the Fed still has to parse. |
+| **August PPI** | **Final demand +0.4% MoM (in line); core +0.2% (slightly soft); diesel fuel +24.1% MoM** | The overnight preview for CPI landed hot on energy pass-through, driving the week's single largest bond-market move (10Y +10.7bp Thursday). |
+| DXY | **~99.12** | Flat on the week, still range-bound 99-101 — hasn't yet caught up to the hawkish repricing in rates. |
+| VIX | 15.84 (+9.0% W/W, tested 17.84 Thu) | Still below the 20 stress threshold, but no longer as historically cheap as two weeks ago. |
+| **Next Catalyst** | **FOMC Sept 15-16 (SEP/dot plot)** | Now the decisive binary event of the month — the hike itself is close to priced; Powell's forward guidance is the real risk. |
+| **Memory / HBM / DRAM Pricing** | **DRAM ASPs approaching $1.20-1.30/Gb, converging with HBM3E 12-Hi; 2026 HBM sold out; DRAM pricing tracking +275-300% 2025→2027** | The shortage thesis is unchanged and intensifying — MU remains the direct beneficiary despite this week's litigation-driven pullback. |
+| **TSMC Foundry Capacity** | **Record 72.5% global foundry share (Q2); FY26 capex raised to $60-64B; utilization ~90%, no price relief before 2027** | Supply-constrained, pricing power intact — unaffected by the week's AI-compute-stock rotation. |
+| **China Export Controls / AI-Chip Competition** | **NVDA's China AI-chip share down from ~95% peak to ~8%; domestic Chinese chips >55% share; AMD's Helios (MI455X) and Intel's Crescent Island now shipping as direct answers to Nvidia's Vera Rubin** | The competitive-landscape story, not the export-control story per se, is what moved NVDA vs. AMD this week. |
+| **MU Litigation** | **Netlist ITC + federal-court patent actions targeting MU's DDR5 products, seeking exclusion orders** | A fresh, name-specific legal risk layered on an otherwise unimpaired shortage thesis — watch into the Sept 30 print. |
 
-**Ophelia Verdict:** This week's real lesson is that the semiconductor complex has decoupled — at least temporarily — from the rate-sensitivity script that governed late August. A payrolls beat that pushed September hike odds through 60% and sent the 10Y to a multi-year high would, by the summer's playbook, have been a clean sell signal for a 2.3-beta, 40x-multiple sector. Instead SMH rallied 2.61% on the day. Part of that is mechanical (positioning had already de-risked into the print), and part of it is genuine: the memory shortage (HBM spot at 4-6x contract pricing) and AVGO's raised multi-year AI guide ($115B FY27, $230B FY28) are fundamentals strong enough that the market is choosing to look past the discount-rate story, at least for now. That divergence will be tested again next week by CPI and then decisively by the September 15-16 FOMC.
+**Ophelia Verdict:** The Fed got its "final determinant" this week, and it came in hotter than hoped on the monthly reading even as the annual core rate kept cooling — a genuinely split verdict that the market resolved by pricing a hike as all but certain (85-90% CME odds, up from a coin flip a week ago) while simultaneously refusing to sell semiconductors into it. That combination — a hawkish rate path priced with high confidence, and risk assets absorbing it calmly — is the same "climbing a wall of hawkish data" pattern that has defined this sector since the August jobs report. The 10Y sitting 2.5bp from 5.00% is the number that matters most into next week: a decisive close above that line, especially if paired with a hawkish dot plot Wednesday, would be the first genuine test of whether this pattern holds.
 
-**The Bottom Line:** SMH closed the week at $567.01, up 2.51%, still below its 50-day moving average but showing real resilience against a hawkish jobs report and a disappointing mega-cap guide in the same five sessions. Own the structural memory and AI-compute story, respect $545.22, and watch the CPI print next week — it is the last data point before the Fed decides whether this rally gets a tailwind or a headwind.
+**The Bottom Line:** SMH closed the week at $568.53, essentially flat (+0.27%), having absorbed a hot PPI print, a hot core CPI print, and a 10-year Treasury pushing toward 5% without breaking its 50-day moving average. Underneath the flat headline, the AI-compute trade genuinely bifurcated — AMD's Helios platform earned real credibility while NVDA and MU both gave back ground — the first sign in months that this sector's rally is broadening past a single mega-cap narrative. The FOMC decision September 15-16 is now the whole ballgame.
 
 ---
 
@@ -131,19 +130,19 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Tape That Wouldn't Sell Off
+### This Week's Story: The Trade Splits in Two
 
-Every ingredient for a down week was on the table, and SMH gained 2.51% anyway.
+For months, "own semiconductors" and "own NVIDIA" were nearly the same trade. This week they stopped being the same trade.
 
-**Act I — The Quiet Start.** Labor Day kept volumes light into Tuesday, which printed the week's low at $545.22 on generic rate-anxiety selling — nothing company-specific, just positioning ahead of the week's two big events.
+**Act I — The Quiet Climb.** Coming off Labor Day, SMH pushed higher through Tuesday and Wednesday, printing a fresh multi-week high of $574.29 — brushing the 50-day moving average that had capped it for two straight weeks. Nothing dramatic happened; positioning simply drifted constructive ahead of the week's two macro gates.
 
-**Act II — The Broadcom Verdict.** Wednesday after the close, Broadcom delivered the week's most consequential print: AI semiconductor revenue up 221% year over year to $16.7 billion, beating the company's own prior target of roughly $16.0 billion, with management raising the full-year AI revenue guide to $58 billion and — remarkably — giving two years of forward visibility: $115 billion in fiscal 2027 and $230 billion in fiscal 2028. That should have been an unambiguous win. Instead the stock fell as much as 6% in after-hours trading because the Q4 total-revenue guide of $34.8 billion missed the $35.03 billion Street consensus, and gross margin is compressing to 73% from 78% a year ago as lower-margin custom silicon becomes a bigger share of the mix. The market's message: growth without margin discipline gets a haircut, even from the sector's most important non-NVDA name.
+**Act II — The Diesel Shock.** Thursday's Producer Price Index landed with an outsized energy component — diesel fuel prices jumped 24.1% for the month alone, dragging final demand goods up 1.1% and pulling the whole PPI reading to a 0.4% monthly gain. Bond markets reacted immediately: the 10-year Treasury spiked more than 10 basis points in a single session to 4.944%, its sharpest daily move of the month, and SMH fell 2.4% to $560.28, the week's low.
 
-**Act III — The Jobs Report Paradox.** Friday delivered the week's second binary event: August nonfarm payrolls smashed expectations, up 162,000 against a consensus near 53,000-56,000, with unemployment steady at 4.1%. By every rule that governed late August, this should have been bad news for a high-multiple, high-beta sector — it pushed September rate-hike odds from roughly 49% to over 60% and drove the 10-year Treasury to its highest close since November 2023. Instead SMH rallied 2.61% on the day, its best single session of the week, on the heaviest volume of the week. Micron (+6.1%), Intel (+4.5%), and KLA (+7.3%) led.
+**Act III — The Split Verdict.** Friday delivered August CPI: core inflation rose 0.3% month-over-month, a tenth hotter than consensus, even as the year-over-year core rate matched expectations at 2.4% — the lowest annual core reading since March 2021. That is a genuinely mixed print — hot on the margin the Fed watches most closely, cooling on the trend the Fed cares about most. The market's answer was to push September hike odds to roughly 85-90% and simultaneously rally SMH back to $568.53, essentially erasing Thursday's flush.
 
-**The Memory Supercycle Keeps Escalating.** Running underneath both binary events is a story that never stopped: HBM3E memory is now trading at roughly $2,100 on the spot market against $365-510 contract prices — a four-to-six-times premium — and commodity PC DRAM hit a record $25 per unit in August. No relief is expected before 2027. Micron, up nearly 9% on the week to a fresh high above $1,016, is the market's cleanest way to own that shortage.
+**The Real Story, Underneath.** While the index ground out a flat week, its two largest AI-compute names moved in opposite directions by more than 13 percentage points combined. AMD surged 8.07% as its Helios rack-scale system — built around the new MI455X accelerator and pitched as a direct, system-level answer to Nvidia's Vera Rubin platform — began shipping in September, and AMD's CFO told a Goldman Sachs conference the company's addressable market could reach $2 trillion by 2030. NVIDIA fell 5.13% on no single catalyst, caught in a broader rotation as investors began treating AMD (and Intel's competing Crescent Island inference chip) as legitimate alternatives rather than also-rans. Micron gave back 4.07% of its prior week's surge on ordinary profit-taking plus a fresh Netlist patent-litigation overhang targeting its DDR5 lineup.
 
-**The Bottom Line.** This was a week where the macro tape turned more hawkish and the sector's most important earnings print disappointed on the metric that matters most to margin-conscious investors — and semiconductors still finished green. Either the market is choosing to look through the discount-rate story toward the memory shortage and the AI-compute buildout, or positioning had already priced in enough bad news that any resolution, even a mixed one, was a relief. Next week's CPI print, and then the September 15-16 FOMC decision, will tell us which explanation is right.
+**The Bottom Line.** This was the week the AI-compute trade grew a second leg. That's a healthier market structure than a single-name melt-up, even if it meant a rough week for anyone concentrated in NVDA or MU specifically. The FOMC decision on September 15-16 — now a near-certain hike, with the real question being the pace of the path ahead — is the next test of whether the broader sector rally survives its most consequential rate decision of the year.
 
 ---
 
@@ -151,63 +150,61 @@ Every ingredient for a down week was on the table, and SMH gained 2.51% anyway.
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **Broadcom** ✅ | AVGO | Reported Sep 2, 2026 AMC | Q3 FY2026 | **BEAT/MISS SPLIT:** rev $29.6B +86% YoY (beat), AI semi $16.7B +221% YoY (beat); Q4 guide $34.8B (missed ~$35.03B cons); GM guide 73% vs 78% YoY (miss); FY26 AI rev raised to $58B; stock fell as much as -6% AH, week -2.95% |
-| **Micron** | MU | Late Sep 2026 | FQ4 2026 | HBM allocation and spot-vs-contract pricing gap ($2,100 vs $365-510); NAND price-hike pass-through; DRAM capex; guidance |
-| **Oracle** | ORCL | ~Sep 10, 2026 | FQ1 2027 | Cloud/AI infrastructure capex commentary — a read-through for hyperscaler chip demand |
-| **Adobe** | ADBE | ~Sep 10, 2026 | FQ3 2026 | Not a semis name directly, but a software-spend signal into the CPI window |
-| **CPI (macro)** | — | Next week | August CPI | **THE GATE.** The Fed has flagged this as the final data point before the September 15-16 FOMC decision. |
-| **FOMC Decision** | — | Sep 15-16, 2026 | — | September hike odds now ~60% — a live, consequential meeting for a 2.3-beta sector. |
+| **Micron** | MU | Sep 30, 2026 | FQ4 2026 | HBM allocation and spot-vs-contract pricing gap; NAND price-hike pass-through; DRAM capex; guidance; the Netlist ITC/patent-litigation overhang first surfaced this week |
+| **FOMC Decision** | — | Sep 15-16, 2026 | — | THE GATE. CME odds of a 25bp hike now ~85-90%, up from a coin flip a week ago; the SEP/dot plot and Powell's forward guidance are the real risk, not the hike itself |
+| **Retail Sales (macro)** | — | Sep 16, 2026 | August | Last confirmed print (July) was -0.6% MoM — a genuine miss; the August read lands the same day as the FOMC decision |
+| **Housing Starts (macro)** | — | Sep 17, 2026 | August | July starts fell 12.4% MoM to a 1.239M annualized rate — watch for confirmation or reversal |
 
-**Marky's Binary Event Read:** AVGO's mixed reaction is the template for what a "good but not perfect" print gets in this tape — a real haircut on the after-hours print, followed by partial recovery once the dust settled and the multi-year AI guide ($115B FY27, $230B FY28) sank in. The next gate that matters is macro, not earnings: CPI next week, then the FOMC on September 15-16. A hot CPI print stacked on top of the hot NFP would make a September hike close to a lock and test whether this week's rally-through-hawkishness pattern holds or breaks.
+**Marky's Binary Event Read:** With no mega-cap semiconductor earnings due until Micron on September 30, next week is a pure macro week for this sector — the FOMC decision dwarfs everything else on the calendar. A hawkish dot plot stacked on an already-near-certain hike would be the first real test of whether SMH's calm response to this week's hot inflation data holds, or whether the 10-year finally breaking 5.00% forces a genuine derating of the sector's richest multiples (LRCX at 55x, AMD at 132x trailing).
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- CPI next week prints cool, taking September hike odds back down from ~60% → 10Y retreats from 4.78% → SMH reclaims the 50D at $573.97 and retests the June highs
-- The HBM/memory shortage keeps broadening (NAND, DRAM) → MU takes another leg higher, pulling the equipment complex (LRCX, AMAT, KLAC) with it on capex read-through
-- AVGO's multi-year AI guide ($115B FY27, $230B FY28) gets fully digested by the Street as a margin-mix story, not a demand problem → the stock repairs above $368
-- The Fed holds in September despite the odds → the sector gets a genuine rate-relief rally
+- The FOMC hikes as expected but signals a slower pace ahead → 10Y retreats from 4.975% → SMH clears $574.29 and retests the June highs
+- AMD's Helios ramp continues to validate the "credible second source" thesis → the broader AI-compute trade re-rates higher on reduced single-vendor concentration risk
+- The HBM/DRAM shortage keeps intensifying without a demand-destruction signal → MU's litigation overhang gets priced as noise once the Sept 30 print clarifies exposure
+- TSMC's capacity buildout (Arizona Fab 21 ahead of schedule) reinforces confidence in 2027+ supply, supporting the equipment complex (LRCX, AMAT) despite this week's profit-taking
 
 ### 🔴 Bear Case
-- CPI prints hot next week, stacking on the hot NFP → September hike odds push toward 70-80% → 10Y through 4.85% → SMH loses $545.22 and $520 comes into play
-- The FOMC delivers the hike on September 15-16 → duration-sensitive, 40x-multiple semis get sold hardest in the market
-- AVGO's margin compression (73% vs 78%) is read by the Street as evidence custom silicon structurally caps sector-wide margins → the multiple derates across the custom-silicon cohort (AVGO, MRVL)
-- The Nexperia/Wingtech dispute escalates into a broader China-Netherlands export-control flashpoint → supply-chain risk repriced
+- The FOMC hikes AND delivers a hawkish dot plot (more hikes signaled for Q4/2027) → 10Y breaks decisively through 5.00% → SMH loses $560.28 and $545.22 comes into play fast
+- MU's Netlist litigation escalates toward an actual exclusion-order risk on DDR5 products ahead of the Sept 30 print → memory-sector sentiment sours independent of the pricing shortage story
+- The NVDA-vs-AMD rotation becomes a genuine share-loss story rather than a TAM-expansion story → the market re-prices NVDA's premium multiple down
+- LRCX/AMAT-style profit-taking spreads across the richest-multiple names in the sector as real rates keep climbing
 
 ### ⚠️ The Wild Card
-**CPI next week into a live FOMC.** The August jobs report already pushed September hike odds from ~49% to ~60% — CPI is the data point the Fed itself has called the final determinant. A hot core print stacked on a hot NFP would make a hike close to a lock; a cool print would flip the narrative back toward a hold. Either way, semiconductors — at ~2.3 beta and rich multiples — will feel the resolution first and hardest.
+**The FOMC decision, September 15-16.** A hike itself is now priced at ~85-90% odds — it is not the risk. The dot plot and Chair Powell's press conference are: a signal for a slower, one-and-done path would likely extend this week's "absorb the hawkish data and rally anyway" pattern, while a signal for two or more additional hikes into year-end would be the first genuine catalyst to break the 2.3-beta sector's remarkable resilience since the August jobs report.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The jobs report should have been the story that broke this rally, and it wasn't. September hike odds at 60%, a 10Y at its highest close since November 2023, and the sector's second-most-important earnings print landing with a soft guide — any one of those would normally be enough to derate a 2.3-beta sector. Instead SMH gained 2.51% on the week. I read that as the market pricing the memory shortage and the AI-capex buildout as structurally stronger than the rate cycle is bad — for now. My discipline doesn't change: I add on strength above the 50D at $573.97, I reduce below $545.22, and I am not fighting a tape that rallies through hawkish data. CPI next week decides whether this was resilience or complacency."*
+**Ophelia:** *"The CPI print gave me exactly the split verdict I didn't want — hot on the monthly reading the market trades off of, cooling on the annual reading I actually care about for the regime call. The market resolved that ambiguity by pricing a hike as close to certain and buying semiconductors anyway, which tells me positioning, not conviction, is doing a lot of the work right now. My discipline doesn't change: the 10Y at 4.975%, 2.5bp from 5.00%, is the number I'm watching hardest into the FOMC. A close above 5.00% changes my regime call regardless of what the dot plot says."*
 
-**Marky:** *"Every level I care about held except the one that matters most — the 50D. SMH spent five sessions below $573.97 and still closed the week up 2.5%. That's a market that wants higher prices and hasn't gotten the technical confirmation yet. The map: $545.22 is the line, $574 is the all-clear, $520 is what happens if the line goes. AVGO's after-hours flush and recovery is the pattern to watch — good-but-not-perfect prints are getting bought on the dip in this tape, which is a meaningfully different regime than three weeks ago when good prints were getting sold. I want to see a weekly close above $574 before I get aggressive; until then, I'm constructive but not chasing."*
+**Marky:** *"SMH spent the whole week failing to break its 50-day meaningfully in either direction, and that's actually useful information — it absorbed the worst PPI print in months and the hottest CPI surprise since July and still closed basically flat. The map: $560.28 is the line, $574.29 is the all-clear. What I care about more than the index level is that AMD and NVDA moved in completely opposite directions this week for the first time in a long time — that's not noise, that's the market repricing who wins the AI-compute build-out. I want to see whether that rotation persists or reverses before I read too much into it."*
 
-**Cecil:** *"Two observations from the library. First: the gap between HBM spot pricing ($2,100) and contract pricing ($365-510) is not a valuation debate, it's an arithmetic fact, and Micron is the cleanest way to own the arithmetic. Second: Broadcom's gross margin compression from 78% to 73% is management telling you, in the same breath as a raised revenue guide, that the mix of business it is winning is structurally less profitable than the business it is replacing. That is not a red flag — custom silicon at 73% margins is still an extraordinary business — but it is a fact analysts should stop being surprised by every quarter. The garden does not grow silicon wafers, and it doesn't grow margin either; both have to be earned quarter by quarter."*
+**Cecil:** *"Two things from the library this week. First: a $66 price-target hike on Axcelis — from $90 to $156, on a re-rated $2.7 billion 2030 TAM — moved the stock down on the week. That's not a comment on Axcelis; it's a comment on how little bandwidth the market has for company-specific good news when the 10-year is grinding toward 5%. Second: AMD's Helios platform is the first credible evidence in this cycle that Nvidia's AI-compute monopoly is becoming a duopoly rather than staying a monopoly with a discount shadow. A $2 trillion TAM claim from a CFO is marketing until proven otherwise, but shipping product that draws a direct comparison to Vera Rubin is not marketing — it's a fact. The garden does not grow silicon wafers, and this week it grew a second row of them."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Perplexity Finance / Realtime Finance Data (finance_quotes, finance_ohlcv_histories, finance_etf_holdings): SMH, NVDA, TSM, AVGO, AMD, MU, INTC, QCOM, TXN, ADI, ASML, LRCX, AMAT, MRVL, KLAC, AOSL, DIOD, POWI, CEVA, ACLS, SLAB, ACMR — Friday 2026-09-04 closes, W/W changes, 50D MA, RSI, market caps, SMH holdings weights
-- Broadcom Inc. Q3 FY2026 earnings release, earnings call transcript, and CNBC/Yahoo Finance/TradingKey/Motley Fool coverage (Sept 2-5, 2026): revenue $29.591B, AI semi revenue $16.7B, Q4 guide $34.8B, GM guide 73%, FY26 AI revenue guide $58B, FY27/FY28 AI revenue guides $115B/$230B
-- Reuters, CNBC, Fox Business, Kiplinger (Sept 2-4, 2026): August nonfarm payrolls +162,000, unemployment 4.1%, CME FedWatch September hike odds ~60.4%, 10Y Treasury 4.78-4.79%
-- Federal Reserve H.15 Selected Interest Rates release (Sept 4, 2026): daily Fed funds and 10Y/30Y yield series
-- Sedaily / TrendForce-style coverage (Sept 1, 2026): commodity PC DRAM record $25/unit contract price, HBM crowding out legacy memory
-- Cryptobriefing / spot memory market coverage (Sept 5, 2026): HBM3E spot pricing ~$2,100 vs $365-510 contract, no relief before 2027
-- Economic Times / telecom coverage (Sept 1, 2026): Chinese court freezes ~$300M Nexperia assets in Wingtech dispute
-- MarketWatch, streetstats.finance, Sigmanomics (Sept 2026): DXY ~99.13-99.15, VIX 14.32 close
-- MarketBeat, SimplyWall.st, Financhill (Sept 1-5, 2026): Axcelis Technologies (ACLS) investor conference participation, analyst price-target revisions ($161 consensus), Veeco merger status; Alpha & Omega Semiconductor (AOSL) analyst ratings
+- yfinance (1y daily OHLCV, dividend yield, trailing P/E, market cap, beta): SMH, NVDA, TSM, AVGO, MU, AMD, ASML, LRCX, ADI, TXN, AMAT, AOSL, DIOD, POWI, CEVA, ACLS, SLAB, ACMR, ^TNX, ^VIX, DX-Y.NYB, SPY — Friday 2026-09-11 closes, Friday 2026-09-04 prior-week closes (date-matched to account for the Labor Day-shortened week), 50D/200D MAs, 14-period RSI, 52W high/low, market caps
+- CNBC, Kiplinger, Fox Business, Babypips (Sept 10-11, 2026): August PPI (final demand +0.4% MoM, core +0.2%, diesel +24.1% MoM) and August CPI (headline +0.4% MoM/3.4% YoY, core +0.3% MoM vs 0.2% cons, core YoY 2.4%) releases
+- Yahoo Finance (FOMC September 2026 Odds article, Sept 10-12, 2026): CME FedWatch September hike probability progression from ~62-66% to ~85.5%
+- Benzinga, Investing.com, 24/7 Wall St. (Sept 10-11, 2026): AMD Goldman Sachs Communacopia + Technology Conference commentary, $2T 2030 TAM guidance, Helios/MI455X shipment timeline
+- tech-insider.org, gtoai.substack.com, digitimes.com (Sept 2026): AMD Helios vs. Nvidia Vera Rubin vs. Microsoft Maia 300 platform comparison; TSMC foundry share/capex/utilization data; DRAM/HBM pricing trend data
+- Yahoo Finance, IndMoney, TradingKey (2026): NVIDIA China AI-chip market share erosion (~95% peak to ~8%), Huawei/Cambricon grey-market pricing, offshore-subsidiary loophole closure
+- timothysykes.com, Motley Fool (Sept 10-11, 2026): Micron Netlist ITC/patent litigation on DDR5 products; Sept 30 FQ4 earnings date
+- Benzinga, BingX, TikR (Sept 9-10, 2026): Lam Research UBS price-target cut, insider sale, profit-taking narrative
+- StockTitan, PR Newswire, SEC 8-K filings (Sept 2026): Axcelis Technologies investor-conference participation, analyst price-target revision to $156, Purion XEmax foundry evaluation milestone
+- Yahoo Finance, CEVA press release page (Sept 9-10, 2026): CEVA investor event and press release (detail pending fuller indexing)
 - Semiconductor Industry Association (SIA): Global chip sales, regional breakdown, forecast data
-- TSMC: Quarterly earnings, technology roadmap, capex guidance
-- ASML: Order backlog, EUV shipment data, High-NA roadmap
+- TSMC, ASML: Quarterly earnings, technology roadmap, capex guidance (background/carryforward)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-06*
+*Last updated by Saturday Research Crew: 2026-09-13*
 *Next update: Every Saturday 11:59 AM ET*
-*Data sources: Perplexity Finance, SIA, market data feeds, company filings, web search*
+*Data sources: yfinance, SIA, market data feeds, company filings, web search*
