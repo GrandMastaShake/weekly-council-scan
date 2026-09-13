@@ -10,15 +10,15 @@
 
 | Metric | Current | 1W Ago | 1M Ago | Regime |
 |---|---|---|---|---|
-| VIX | 14.53 | 14.43 | 16.50 | 🟢 **Normal** |
-| VIX 20-Day MA | ~15.10 | — | — | — |
-| VIX Trend | Up (+0.7% WoW) | — | — | — |
-| Implied SPY Move (30D) | ~±4.2% | — | — | — |
-| VVIX (VIX of VIX) | 84.42 | 86.63 | 92.57 | 🟢 **Yahoo ^VVIX live** |
+| VIX | 15.84 | 14.53 | 15.28 | 🟢 **Normal** |
+| VIX 20-Day MA | ~15.45 | — | — | — |
+| VIX Trend | Up (+9.0% WoW) | — | — | — |
+| Implied SPY Move (30D) | ~±4.5% | — | — | — |
+| VVIX (VIX of VIX) | 91.28 | 84.42 | 90.90 | 🟡 **Yahoo ^VVIX live** |
 
-> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. The 14.53 close is via Yahoo Finance ^VIX (Fri 2026-09-04). The 1W/1M comparisons are trading-day offsets and may read ~1–3 pts off other vendors — the WoW direction and magnitude hold across sources.*
+> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. FRED's most recently posted print at fetch time was 2026-09-10 (17.84), which matches the Yahoo ^VIX 2026-09-10 close (17.84) exactly — the two vendors are in lockstep through Thursday. FRED had not yet posted the Friday 2026-09-11 official close at fetch time (its usual one-business-day publish lag); the 15.84 close used throughout this dashboard is Yahoo Finance ^VIX (Fri 2026-09-11), and the Thu/Fri vendor agreement gives high confidence in the read.*
 
-**Marky Interpretation:** Vol round-tripped a week that had every reason to break higher and didn't. VIX opened the week at 14.92, spiked to **16.34 Tuesday** on the NFP setup, then bled the whole spike back out — 15.20, 14.32, and a **14.53 close Friday, +0.7% on the week**. That's a genuine test-and-fail of the 16.50 first-crack line I've had on this dashboard for a month, and spot is still sitting below the ~15.10 20-day MA. The signal underneath is louder than the headline number: August NFP printed **+162K against a ~53–56K consensus** — a blowout beat that should have repriced the soft-landing thesis violently — and vol shrugged it off in three sessions. VVIX confirms: **84.42, down 2.6% on the week and down 8.8% on the month** — nobody is bidding tail risk into a print that flipped the labor-market narrative on its head. Implied 30-day SPY move: **~±4.2%**, essentially unchanged. My lines are unchanged: above 16.50 is the first crack (tagged and rejected this week), above 20 the regime question. The vol market's message is unambiguous — it thinks the Fed, not the labor market, is now driving the bus, and the Fed hasn't blinked yet.
+**Marky Interpretation:** Vol actually did something this week instead of round-tripping. VIX opened at 15.30, ground higher through the week's data flow, and **spiked to 17.84 on Wednesday** — a genuine breach of the 16.50 first-crack line I've had on this board for over a month, and the highest print since early August. Then it did what it's done all summer: gave most of it back, closing Friday at **15.84, +9.0% on the week** but well off the highs. VVIX told the same story louder — **91.28, +8.1% on the week**, with an intraweek spike to **102.66 Wednesday** that's the highest vol-of-vol reading on this dashboard in months. The driver is legible: hot core CPI (Thursday, September 11, +0.3% vs. +0.2% consensus) sealed September hike odds at **~87–90%**, the 10Y is sitting 2.5 bps under its own 5.00% psychological line, and WTI just printed its first-ever $100+ settle. That's three genuine macro stress inputs converging in one week, and vol still only spent one session above its own first-crack line before retreating. Implied 30-day SPY move ticked up to **~±4.5%** from ~±4.2%. My lines are unchanged: 16.50 was tagged and breached intraweek for the first time this cycle (still closed back under it), 20 is the regime question, 25 is the alarm. This is the closest the vol market has come to confirming the stress building everywhere else on this board — it's not there yet, but it flinched.
 
 ---
 
@@ -26,53 +26,53 @@
 
 | Maturity | Yield | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
-| 13-Week (T-Bill) | 3.760% | +0.030% | +0.030% | Front end pricing in a live hike |
-| 2-Year | 4.20% (FRED DGS2, Wed 8/27 — **stale, 9 days**; desk composites reading meaningfully higher post-NFP) | — (stale) | — | Hike repricing accelerating, proxy lagging |
-| 5-Year | 4.550% | +0.070% | +0.220% | Medium-term rates breaking higher |
-| **10-Year** | **4.790%** | **+0.070%** | **+0.160%** | **Decisive close above the year's 4.75% stress line** |
-| **10Y–2Y Spread** | **~+59 bps** (stale 2Y — treat as a floor, real spread is narrower) | — | — | **Positive, likely narrower live** |
-| **10Y–5Y Spread** | **~+24.0 bps** | — | — | **Positive, roughly stable** |
-| **10Y–3M Spread** | **~+103 bps** | — | — | **Positive / widened from +99** |
+| 13-Week (T-Bill) | 3.913% | +0.153% | +0.183% | Front end pricing in a near-certain hike |
+| 2-Year | 4.20% (FRED DGS2, Thu 8/27 — **stale, 15 days**; desk composites reading meaningfully higher post-CPI) | — (stale) | — | Hike repricing far ahead of the stale proxy |
+| 5-Year | 4.791% | +0.241% | +0.406% | Medium-term rates at a fresh cycle high |
+| **10-Year** | **4.975%** | **+0.185%** | **+0.291%** | **Fresh 52-week high, 2.5 bps from the 5.00% psychological line** |
+| **10Y–2Y Spread** | **~+78 bps** (stale 2Y — treat as a ceiling, real spread is almost certainly narrower) | — | — | **Positive, likely much narrower live** |
+| **10Y–5Y Spread** | **~+18.4 bps** | — | — | **Positive, narrowing (was +24.0 bps)** |
+| **10Y–3M Spread** | **~+106 bps** | — | — | **Positive / widened from +103** |
 
-**Ophelia Interpretation:** The stress line this dashboard has carried all year **finally broke, and it did not bounce back.** The 10Y closed at **4.790% Friday** — its fourth straight session above 4.75% (4.76% Mon, 4.80% Tue, 4.80% Wed, 4.76% Thu, 4.79% Fri) — confirming the trip our own materials/real-estate desk flagged intraday Friday. The driver is now explicit, not speculative: **August nonfarm payrolls printed +162K against a ~53–56K consensus**, a beat wide enough to retire the broken-labor-market thesis this dashboard has carried since July's -23K print. That single number did more to the front end than a month of Fed-speak — September hike odds jumped from **~49% to ~60.4%** in the same session, per the economic-calendar desk. ISM Manufacturing (54.6) missed, ISM Services (55.4) beat but with a still-contracting employment sub-index, and ADP (+38K) was the slowest since January — a genuinely split data picture that the bond market resolved in the hawkish direction anyway. The 2Y proxy (FRED DGS2, 4.20%) is now **nine days stale** and almost certainly lagging a much larger front-end repricing; treat the 10Y–2Y spread of ~59 bps as a ceiling, not a read. The shape is still healthy — no inversion anywhere, 10Y–3M widened to +103 bps — but the level conversation has changed for good: 4.75% was the line, and the market just closed a full week on the other side of it.
+**Ophelia Interpretation:** The stress line this dashboard flagged breaking last week didn't just hold — it kept climbing. The 10Y closed **4.975% Friday**, a fresh 52-week high and now sitting **just 2.5 bps under the 5.00% level** our own real-estate desk called "the crisis line" in Saturday's real-estate.md update. The proximate cause is the same one driving vol and oil: **August core CPI printed +0.3% against a +0.2% consensus** — hot enough to push September FOMC hike odds to **~87–90%** (up from ~60% just last week) and keep BOJ odds pinned at **~84–87%** into their own meeting three days later. That's the fastest back-to-back repricing this dashboard has tracked all year: NFP moved the market from ~49% to ~60% two weeks ago, and CPI just moved it another ~27–30 points in a single session. The curve shape is still healthy — no inversion anywhere, 10Y–3M widened again to +106 bps — but the 10Y–5Y spread compressed to +18.4 bps from +24.0, a genuine bear-flattening signal at the long end even as the front end races to catch up. The 2Y proxy (FRED DGS2, 4.20%) is now **fifteen days stale** and increasingly detached from reality; treat the 10Y–2Y spread of ~78 bps as a hard ceiling, not a usable read — it is almost certainly overstating curve steepness by a wide margin at this point.
 
-**Yield Curve Regime:** 🟢 **Positive** — shape healthy, but the level regime flipped this week. The 10Y is now trading *above* its year-long ceiling, not testing it, and August CPI (Thursday, September 11) is the next data point that decides whether this becomes a sustained repricing into the September 15–16 FOMC.
+**Yield Curve Regime:** 🟡 **Positive but stressed** — shape intact, but the level conversation this dashboard opened last week just escalated. The 10Y is one ordinary session away from a round number with real psychological weight, and the September 15–16 FOMC is now the decision point, not a distant gate.
 
 ---
 
 ## CREDIT SPREADS
 
-> *Credit spread data is sourced from external market data feeds (Bloomberg, ICE, FRED). Live spreads are not available via Yahoo Finance. Values below are last known (as of 2026-07-15 — now **52 days old**) and require external feed updates. HYG price action provides a real-time proxy.*
+> *Credit spread data is sourced from external market data feeds (Bloomberg, ICE, FRED). Live spreads are not available via Yahoo Finance. Values below are last known (as of 2026-07-15 — now **58 days old**) and require external feed updates. HYG/LQD price action provides a real-time proxy.*
 
 | Spread | Current | 1W Ago | 1M Ago | Regime |
 |---|---|---|---|---|
-| HY–IG Spread | ~+220 bps (stale) | — | — | 🟢 **Contained (per stale gauge)** |
-| EM Sovereign | ~+380 bps (stale) | — | — | 🟡 **Elevated but stable** |
-| Investment Grade CDS | ~+55 bps (stale) | — | — | 🟢 **Tight (per stale gauge)** |
-| **HYG Price** | **$79.16** | **$79.74** | **$79.55** | **🔴 First red week since the 10Y broke 4.75%** |
+| HY–IG Spread | ~+220 bps (stale) | — | — | 🟡 **Unconfirmed — cannot verify vs. the 250 bps trigger** |
+| EM Sovereign | ~+380 bps (stale) | — | — | 🟡 **Elevated but stable (stale)** |
+| Investment Grade CDS | ~+55 bps (stale) | — | — | 🟡 **Last known tight (stale)** |
+| **HYG Price** | **$78.60** | **$79.16** | **$79.51** | **🔴 Second straight red week** |
 
-**Cecil Interpretation:** Credit finally felt something. HYG closed **-0.73% to $79.16** and LQD closed **-0.82% to $105.48** — the first genuinely red week for both proxies in a month, and it arrived in the same week the 10Y decisively cleared 4.75% and the NFP beat repriced September hike odds toward 60%. That is cause and effect, not coincidence: a sustained close above the stress line raises the discount rate on every duration-sensitive instrument, corporate credit included. Context matters — a sub-1% pullback against the sharpest rate move of the cycle is a scratch, not a crack, and neither ETF is anywhere near a stress print. But the caveat that has been shouting for two months is now in a different register: **the external HY–IG snapshot is 52 days old**. We have now managed a 4.75% stress-line breakout, a live September hike repricing, and a blowout NFP surprise entirely on a gauge from mid-July. If HY–IG has moved even a fraction of what the proxy just moved, this row's color changes the moment the feed refreshes. That refresh is no longer overdue — it is the single biggest blind spot on this dashboard.
+**Cecil Interpretation:** Credit kept moving in the direction it started last week, and the pace didn't accelerate — which is itself informative. HYG closed **-0.71% to $78.60** and LQD closed **-1.10% to $104.32**, both **second straight red weeks**, arriving in the same week the 10Y closed within spitting distance of 5.00% and hike odds jumped another ~27–30 points on hot CPI. A cumulative ~1.4% pullback in HYG and ~1.9% in LQD across two weeks of the sharpest rate repricing this cycle is still a scratch by any historical standard — nothing here resembles spread widening that would confirm the 250 bps trigger. But I can no longer make that call with a straight face: **the external HY–IG snapshot is now 58 days old**. In that window we have watched the 10Y break 4.75%, then close in on 5.00%; oil clear $90, then print its first $100+ settle; a yen carry unwind; and now a hawkish CPI surprise on top of a hawkish NFP surprise. Two consecutive proxy-implied red weeks in exactly the conditions that should widen spreads is the closest thing to a real signal this dashboard has had in two months, and we are reading it through a two-month-old lens.
 
-**Credit Regime:** 🟡 **Watch** (downgraded from Healthy) — the proxy cracked, mildly, exactly when the macro backdrop gave it a reason to. The gauge behind it is 52 days stale.
+**Credit Regime:** 🟡 **Watch, unconfirmed** — the proxy has now cracked for two straight weeks in a rate-stress environment. The external gauge behind it is 58 days stale and is the single largest blind spot left on this board.
 
 ---
 
 ## MARKET BREADTH
 
-> *Breadth data (advance/decline, new highs/lows) is sourced from external market data feeds (NYSE, NASDAQ). Live breadth is not available via Yahoo Finance. Values below are last known (as of 2026-07-15 — now **52 days old**) and require external feed updates.*
+> *Breadth data (advance/decline, new highs/lows) is sourced from external market data feeds (NYSE, NASDAQ). Live breadth is not available via Yahoo Finance. Values below are last known (as of 2026-07-15 — now **58 days old**) and require external feed updates.*
 
 | Metric | Current | 5D Avg | 20D Avg | Regime |
 |---|---|---|---|---|
-| Advance/Decline Ratio | ~1.15 (stale) | — | — | 🟢 **Positive (stale)** |
-| New 52-Week Highs | ~185 (stale) | — | — | 🟢 **Healthy (stale)** |
-| New 52-Week Lows | ~42 (stale) | — | — | 🟢 **Low (stale)** |
-| S&P 500 % Above 50D MA | ~68% (stale) | — | — | 🟢 **Positive (stale)** |
-| S&P 500 % Above 200D MA | ~72% (stale) | — | — | 🟢 **Positive (stale)** |
+| Advance/Decline Ratio | ~1.15 (stale) | — | — | 🟡 **Unconfirmed (stale)** |
+| New 52-Week Highs | ~185 (stale) | — | — | 🟡 **Unconfirmed (stale)** |
+| New 52-Week Lows | ~42 (stale) | — | — | 🟡 **Unconfirmed (stale)** |
+| S&P 500 % Above 50D MA | ~68% (stale) | — | — | 🟡 **Unconfirmed (stale)** |
+| S&P 500 % Above 200D MA | ~72% (stale) | — | — | 🟡 **Unconfirmed (stale)** |
 | Equal-Weight SPY vs. Cap-Weight SPY | -0.3% (stale) | — | — | 🟡 **Neutral (stale)** |
 
-**Marky Interpretation:** Flying on a **52-day-old snapshot** into the biggest data week of the quarter. Live price action: SPY was essentially flat, **+0.11% to $770.19**, but the internals were anything but calm — Tuesday's NFP shock triggered violent intraday chop across every sector, and only **five of twelve sectors beat the index on the week** (SMH +2.40, XLE +2.09, XLK +0.75, XLU +0.71, XLV +0.06). That's narrower participation than a flat index tape should produce, and it lines up with a market digesting a genuine regime signal rather than drifting. The rate-sensitive trio — XLY, XLB, XLRE — all lagged by more than a point, exactly what a 10Y break above 4.75% should do to duration-sensitive equities. I want the real % above 50D print before I call this healthy or fragile; a flat index with narrow leadership and a fresh rate shock underneath it is precisely the setup where breadth data stops being a formality and starts being the tell.
+**Marky Interpretation:** Still flying on a **58-day-old snapshot**, and the live tape is giving fewer reasons for comfort than last week's. SPY closed **-0.77% to $764.29**, its second straight down week, and participation narrowed further: only **four of twelve sectors beat the index** this week (XLE +2.45 vs. SPY, XLC +1.27, SMH +1.03, XLK +0.97) versus five last week. Healthcare's reversal is the tell — XLV was flat-to-positive vs. SPY last week and is this week's **worst relative performer** (-2.79% vs. SPY) on a genuine fundamentals shock (drug-trial failure cluster, our own issue #98 today), while the rate-sensitive complex (XLI, XLB, XLY, XLU) all stayed in outflow for a second week running. That is a narrowing-leadership tape with real fundamental and rate-driven casualties on both sides, sitting on top of a bond market within 2.5 bps of a round-number ceiling. I do not need the real breadth print to tell you this doesn't look like a healthy-breadth week; I need it to tell me whether "narrow" has become "fragile."
 
-**Breadth Regime:** 🟡 **Neutral** (stale) — flat index, narrow live leadership, rate-sensitive laggards. Confirmation is now 52 days overdue and increasingly load-bearing.
+**Breadth Regime:** 🟡 **Neutral, deteriorating bias** (stale) — second red index week, narrower live leadership than last week, and the two sectors that flipped (healthcare into outflow, energy staying inflow on the commodity not the equity) both carry real catalysts. Confirmation is now 58 days overdue.
 
 ---
 
@@ -80,26 +80,26 @@
 
 *30-day rolling correlation of daily returns vs. SPY*
 
-| Sector | ETF | vs. SPY Correlation | Regime |
-|---|---|---|---|
-| 🖥️ Technology | XLK | **0.795** | 🔥 **High beta** |
-| ⚙️ Industrials | XLI | **0.777** | 🔥 **High beta (re-coupled)** |
-| 💻 Semiconductors | SMH | **0.682** | 🔥 **High beta** |
-| 🏦 Financials | XLF | **0.571** | 🟢 **Pro-cyclical** |
-| 🛍️ Consumer Discretionary | XLY | **0.526** | 🟢 **Pro-cyclical** |
-| ⛏️ Materials | XLB | **0.331** | 🟡 **Moderate** |
-| 📡 Communication Services | XLC | **0.261** | 🟡 **Moderate** |
-| 🏠 Real Estate | XLRE | **0.121** | 🟡 **Weakly coupled** |
-| ⚡ Utilities | XLU | **0.076** | 🟡 **Weakly coupled** |
-| 🏥 Healthcare | XLV | **-0.028** | 🟡 **Defensive** |
-| 🍞 Consumer Staples | XLP | **-0.109** | 🟡 **Defensive** |
-| ⛽ Energy | XLE | **-0.353** | 🔴 **Inverse (deepening)** |
+| Sector | ETF | vs. SPY Correlation | 1W Ago | Regime |
+|---|---|---|---|---|
+| 🛍️ Consumer Discretionary | XLY | **0.637** | 0.526 | 🔥 **High beta (rising)** |
+| 🖥️ Technology | XLK | **0.646** | 0.795 | 🔥 **High beta (falling)** |
+| ⚙️ Industrials | XLI | **0.611** | 0.777 | 🔥 **High beta (falling)** |
+| 🏦 Financials | XLF | **0.602** | 0.571 | 🔥 **High beta** |
+| 📡 Communication Services | XLC | **0.522** | 0.261 | 🟢 **Pro-cyclical (re-coupling fast)** |
+| 🏠 Real Estate | XLRE | **0.503** | 0.121 | 🟢 **Pro-cyclical (re-coupling fast)** |
+| ⛏️ Materials | XLB | **0.422** | 0.331 | 🟡 **Moderate** |
+| 💻 Semiconductors | SMH | **0.422** | 0.682 | 🟡 **Moderate (decoupling)** |
+| 🏥 Healthcare | XLV | **0.250** | -0.028 | 🟡 **Sign flip: defensive → pro-cyclical** |
+| 🍞 Consumer Staples | XLP | **0.173** | -0.109 | 🟡 **Sign flip: defensive → pro-cyclical** |
+| ⚡ Utilities | XLU | **0.070** | 0.076 | 🟡 **Weakly coupled (flat)** |
+| ⛽ Energy | XLE | **-0.426** | -0.353 | 🔴 **Inverse (deepening)** |
 
-**Ophelia Interpretation:** **Fourth straight week with zero positive-to-negative sign flips** — the correlation fabric stayed intact through a genuine macro shock, which is itself the finding. Three moves worth flagging. (1) **Industrials re-coupled hard to the index**: XLI's correlation jumped from 0.575 to **0.777**, the single largest move on the board — a sector that spent August trading its own tariff-and-rates story is now moving with the tape again, consistent with a market where one macro variable (rates) is dominating cross-sector dispersion. (2) **XLRE and XLU both drifted further from zero into modestly positive territory** (0.022→0.121 and -0.035→0.076) — real estate and utilities, the most rate-sensitive sectors, are starting to trade *with* the index instead of against it, which is what happens when a rate shock becomes the market's single organizing principle rather than a sector-specific headwind. (3) **XLE deepened its inverse** to **-0.353** (from -0.297) — energy equities diverged further from the tape even as WTI ripped +9.7% on the week, meaning the oil rally is not an equity-index story yet.
+**Ophelia Interpretation:** Two sectors crossed zero this week — **Healthcare (-0.028 → 0.250)** and **Consumer Staples (-0.109 → 0.173)** — both moving from negative to positive correlation with the index. That is the *opposite* direction of this dashboard's formal alert criterion (a flip from positive to negative), so it does not trigger a new issue, but it is the more interesting story: **the two classic defensive sectors both lost their diversification benefit in the same week**, for two different reasons. Healthcare's flip is fundamentals-driven — the drug-trial-failure and medtech-execution cluster (issue #98) hit XLV hard enough that it started moving with the broad tape's stress rather than against it. Staples' flip is more likely a rates story — a defensive sector with long-duration-like valuation characteristics re-coupling to a market where one variable (the front end) is increasingly setting the tone for everyone. Meanwhile the **high-beta trio that led correlation last week — XLK, XLI, SMH — all fell** (0.795→0.646, 0.777→0.611, 0.682→0.422): mega-cap tech and industrials didn't decouple from the market's direction so much as decouple from each other's magnitude, consistent with the idiosyncratic name-level dispersion inside tech and semis this week (AMD/INTC up double digits, NVDA/MU down) even as the sector-level story stayed intact. **XLE remains the board's sole clean inverse** and deepened further to -0.426 — oil's equities still are not trading the commodity's move.
 
-**The key insight:** **dispersion is compressing, not widening.** Last month's story was idiosyncratic sectors trading their own catalysts; this week, industrials and the rate-sensitive trio all moved toward the market's center of gravity. That is the correlation matrix's way of confirming what the yield curve already said: one macro variable (the front end) is starting to dominate cross-sector behavior. If that continues, the "healthy dispersion" regime this dashboard has tracked for two months is closer to its end than its middle.
+**The key insight:** correlation dispersion is not narrowing uniformly anymore — it's **redistributing**. Defensive sectors are gaining beta (bad for diversification) while some high-beta names are losing correlation to each other (idiosyncratic stock-picking opportunity inside a macro-dominated tape). Both can be true at once, and both point toward a market where rates are the organizing variable but stock selection inside sectors still matters.
 
-**Alert:** None on the strict flip criterion — no correlation crossed from positive to negative this week. Watch item: XLI's jump to 0.777 and XLRE/XLU's drift toward positive are both early re-coupling signals worth tracking into the September FOMC.
+**Alert:** None on the strict flip criterion — no sector crossed from positive to negative this week (Energy's more-negative move doesn't count; it was already negative). Watch item: Healthcare's and Staples' flips from negative to positive correlation both reduce the number of true diversifiers left on this board to effectively one (XLU, barely) plus Energy's inverse.
 
 ---
 
@@ -109,22 +109,22 @@
 
 | Sector | ETF | 1D vs. SPY | 1W vs. SPY | 1M vs. SPY | Rotation Signal |
 |---|---|---|---|---|---|
-| 💻 Semiconductors | SMH | +2.99% | +2.40% | -1.36% | 🟢 **Inflow** |
-| ⛽ Energy | XLE | -0.48% | +2.09% | +9.61% | 🟢 **Inflow** |
-| 🖥️ Technology | XLK | +1.09% | +0.75% | +0.35% | 🟢 **Inflow** |
-| ⚡ Utilities | XLU | +0.50% | +0.71% | -2.19% | 🟡 **Neutral** |
-| 🏥 Healthcare | XLV | -0.66% | +0.06% | +5.92% | 🟡 **Neutral** |
-| ⛏️ Materials | XLB | +0.04% | -1.50% | +0.99% | 🟡 **Neutral** |
-| 🏦 Financials | XLF | -0.40% | -0.11% | +0.53% | 🟡 **Neutral** |
-| 📡 Communication Services | XLC | -0.81% | -0.96% | +0.14% | 🟡 **Neutral** |
-| ⚙️ Industrials | XLI | +0.79% | -1.16% | -5.82% | 🔴 **Outflow** |
-| 🏠 Real Estate | XLRE | -0.34% | -1.35% | -2.60% | 🔴 **Outflow** |
-| 🍞 Consumer Staples | XLP | -0.41% | -1.13% | -0.78% | 🔴 **Outflow** |
-| 🛍️ Consumer Discretionary | XLY | -0.95% | -2.07% | -2.71% | 🔴 **Outflow** |
+| ⛽ Energy | XLE | -0.53% | +2.45% | +7.72% | 🟢 **Inflow** |
+| 📡 Communication Services | XLC | +0.13% | +1.27% | +2.01% | 🟢 **Inflow** |
+| 💻 Semiconductors | SMH | +0.62% | +1.03% | +0.05% | 🟢 **Inflow** |
+| 🖥️ Technology | XLK | +0.47% | +0.97% | +1.66% | 🟢 **Inflow** |
+| 🏦 Financials | XLF | -0.18% | -0.70% | -0.14% | 🟡 **Neutral** |
+| 🍞 Consumer Staples | XLP | -0.50% | -0.65% | -0.73% | 🟡 **Neutral** |
+| 🏠 Real Estate | XLRE | +0.01% | -0.39% | -0.68% | 🟡 **Neutral** |
+| ⚡ Utilities | XLU | -1.16% | -0.84% | -2.03% | 🔴 **Outflow** |
+| 🛍️ Consumer Discretionary | XLY | +0.04% | -0.93% | -4.45% | 🔴 **Outflow** |
+| ⚙️ Industrials | XLI | +0.21% | -0.89% | -6.36% | 🔴 **Outflow** |
+| ⛏️ Materials | XLB | -0.48% | -2.08% | -3.49% | 🔴 **Outflow** |
+| 🏥 Healthcare | XLV | -1.03% | -2.79% | -0.76% | 🔴 **Outflow** |
 
-**Ophelia Interpretation:** The flow board this week is a clean map of the 10Y breaking 4.75%. **Semiconductors led everything** (+2.99 1D vs. SPY) on Friday's session alone, with MU printing a fresh high above $1,000 (+8.98% this week per the semis desk) and NVDA +5.89% — an AI-infrastructure bid that shrugged off the rate shock entirely, consistent with a growth-at-any-rate trade that still believes in its own earnings power more than it fears the discount rate. **Energy inflowed on the oil spike** (+2.09 1W, +9.61 1M) even as XLE's correlation to SPY went *more* inverse — the sector is being bought for the commodity, not for beta. On the other side, **consumer discretionary was the week's clearest outflow** (-2.07 1W, -2.71 1M), exactly what a market repricing a live September hike should do to the most rate- and consumer-sensitive cyclical, and real estate (-1.35 1W) and staples (-1.13 1W) round out the rate-sensitive casualties. Industrials' -1.16% weekly underperformance sits oddly next to its correlation jump to 0.777 — the sector is trading *with* the market's direction but still losing to it, the fingerprint of a genuine rate-driven de-rating rather than a sector-specific story.
+**Ophelia Interpretation:** The flow board reshuffled its worst performer without changing its overall shape. **Healthcare is this week's clearest outflow** (-2.79% 1W), a sharp reversal from last week's neutral read, driven entirely by the drug-trial-failure/medtech cluster rather than by rates — a genuine fundamentals story sitting inside a macro-dominated tape. **Energy remains the clearest inflow** (+2.45% 1W, +7.72% 1M) on WTI's move to a first-ever $100+ settle, even as its correlation to SPY deepens further negative — the sector is still being bought for the commodity, not for beta, exactly as it has been for a month. **Communication Services, Semiconductors, and Technology all posted mild inflows**, consistent with growth's continued resilience into a hawkish rate backdrop. The rate-sensitive trio that has been in outflow for weeks — **Industrials (-6.36% 1M), Consumer Discretionary (-4.45% 1M), Materials (-3.49% 1M)** — stayed there, joined this week by **Utilities (-2.03% 1M)**, which lost its reclaimed floor and posted a mini death-cross per today's utilities.md update.
 
-**The risk:** the 1M column shows the trend is accelerating, not just a one-week blip — XLI -5.82, XLRE -2.60, XLY -2.71 are three of the four worst month-long relative performers, and all three are precisely the sectors a sustained 10Y move above 4.75% should punish first. If August CPI (Thursday, September 11) comes in hot and confirms the hike repricing, this rotation has real room to run further; if it comes in soft, growth's Friday resilience (SMH, XLK) becomes the tell that the market never really believed the hawkish read in the first place.
+**The risk:** the 1M column is now showing five sectors with clearly negative multi-week trends (XLI, XLY, XLB, XLU, and now XLV) against only four with clearly positive ones (XLE, XLC, XLK, and marginally SMH) — a rotation board that has stopped being "growth vs. rate-sensitives" and started including a fundamentals-driven defensive-sector casualty as well. If the September 15–16 FOMC delivers the hike now priced at ~87–90%, the rate-sensitive outflow has every reason to extend; if healthcare's binary risk (the Olpasiran OCEAN(a)-Outcomes readout flagged by today's healthcare.md) resolves negatively too, this board could see its first six-sector outflow cluster of the cycle.
 
 ---
 
@@ -132,22 +132,22 @@
 
 | Asset | Level | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
-| DXY (US Dollar Index) | ~99.60 (stale — external feed; desk composites likely lower given the USD/JPY move below) | — | — | 🟡 **Directionally mixed — needs refresh** |
-| EUR/USD | 1.16 | +0.0% | +0.9% | 🟡 **Flat, holding the range** |
-| USD/JPY | 156.19 | -2.43% | -0.96% | 🔴 **Broke decisively below 160 — carry unwind live** |
-| WTI Crude | $91.48 | +9.69% | +20.73% | 🔴 **Cleared the $90 trigger line** |
-| Gold | $4,476.60 | -1.18% | +7.80% | 🟡 **Debasement bid paused by the hawkish repricing** |
-| Copper | $6.68/lb | +0.30% | +0.60% | 🟢 **Growth signal intact, flat** |
-| Bitcoin | $79,675 (Fri close) | +2.36% | +24.39% | 🟢 **Consolidating after the August melt-up** |
-| HY Bonds (HYG) | $79.16 | -0.73% | -0.49% | 🔴 **First red week since the rate breakout began** |
-| IG Bonds (LQD) | $105.48 | -0.82% | -1.20% | 🟡 **Duration pain from the 10Y move** |
+| DXY (US Dollar Index) | ~99.60 (stale — external feed, 58 days; other desks reading ~99.12 informally this week) | — | — | 🟡 **Needs refresh — likely lower than the stale print** |
+| EUR/USD | 1.1601 | -0.24% | +0.47% | 🟡 **Flat, holding the range** |
+| USD/JPY | 153.554 | -1.35% | -3.52% | 🔴 **Extending below 160 — carry unwind continuing** |
+| WTI Crude | $100.05 | +9.37% | +20.25% | 🔴 **First-ever $100+ settle — RED trigger crossed** |
+| Gold | $4,408.90 | -0.47% | +0.59% | 🟡 **Flat, debasement bid still paused** |
+| Copper | $6.548/lb | -0.74% | -0.97% | 🟡 **Growth signal softening slightly** |
+| Bitcoin | $77,174 (Fri close) | -3.14% | +21.43% | 🟡 **Extending the pullback from the August melt-up** |
+| HY Bonds (HYG) | $78.60 | -0.71% | -1.14% | 🔴 **Second straight red week** |
+| IG Bonds (LQD) | $104.32 | -1.10% | -1.58% | 🔴 **Second straight red week, duration pain building** |
 | TIPS Breakeven (10Y) | ~2.45% (stale — external feed) | — | — | 🟡 **Inflation expectations stable (stale)** |
 
-> *DXY index not available via Yahoo Finance; EUR/USD and USD/JPY used as cross-asset proxies. DXY last known ~99.60 (est., 2026-07-15); external refresh owed and increasingly stale given this week's FX moves. Bitcoin row uses the Friday 2026-09-04 close ($79,675) for the Friday-to-Friday convention; crypto continued trading into the weekend as usual.*
+> *DXY index not available via Yahoo Finance; EUR/USD and USD/JPY used as cross-asset proxies. DXY last known ~99.60 (est., 2026-07-15, now 58 days stale); this week's sector desks (materials.md) informally cited ~99.12 from their own sourcing — that figure is NOT yahoo-verified and is not carried into macro/facts.json, but it is directionally consistent with continued dollar softness. Bitcoin row uses the Friday 2026-09-11 close ($77,174) for the Friday-to-Friday convention.*
 
-**Ophelia Interpretation:** Two levels broke this week, and they tell the same story from opposite sides of the balance sheet. **USD/JPY closed at 156.19**, down **2.43% on the week** and decisively clear of the 160 intervention line this dashboard flagged as "the most explosive level on the board" two weeks ago — the pair fell from 160.17 Tuesday to 155.80 by Wednesday, a two-day, ~2.7% move that has the fingerprints of either a BOJ hike delivered ahead of schedule or a coordinated intervention, and either reading confirms the yen side of the carry trade is unwinding. **WTI cleared $90**, closing at **$91.48, +9.69% on the week and +20.73% on the month** — this dashboard's own $90 trigger line, carried for a month as the "one headline away" threshold, has now been crossed outright. Gold gave back 1.2% as the hawkish rate repricing taxed the debasement trade, and Bitcoin consolidated (+2.4%) after August's +24% detonation rather than extending it — both consistent with a week where "the Fed is live" replaced "the dollar is dying" as the dominant cross-asset narrative.
+**Ophelia Interpretation:** The board's most dangerous line finally crossed. **WTI closed at $100.05, +9.37% on the week** — this dashboard's own $90 trigger, cleared a week ago, is now a memory; the **$100 RED trigger line** is crossed outright, on the back of Houthi advances toward a second Bab el-Mandeb chokepoint position and no OPEC+ supply response (they held October policy unchanged on schedule September 6). **USD/JPY extended its break** to **153.554, -1.35% on the week and -3.52% on the month**, continuing the carry-unwind move this dashboard flagged two weeks ago rather than stabilizing — the pair is now nearly 6.5 points below the 160 intervention line it held for months. Credit confirmed its own trend: **HYG and LQD both posted second straight red weeks**, now down a cumulative ~1.4%/1.9% since the rate breakout began. Gold and copper both went flat-to-slightly-down — neither the debasement trade nor the growth-commodity trade is adding conviction into a week that gave the hawks a CPI beat, an oil shock, and a fresh 52-week high in the 10Y simultaneously. Bitcoin's pullback (-3.1% on the week) continues to look like digestion of the August melt-up rather than a new signal.
 
-**The risk:** the board is now stacking two genuinely dangerous inputs at once — a yen carry unwind and an oil re-acceleration — against a bond market that just broke its own ceiling. A yen unwind that accelerates (USD/JPY through 150) would force unwinds in leveraged carry positions globally, and oil above $90 with a hot August CPI print (Thursday, September 11) would hand the hawks the single cleanest argument they've had all cycle. Credit already flinched this week (HYG/LQD both red); if oil, yen, and CPI all confirm in the same direction before the September 15–16 FOMC, the "late-cycle dispersion" regime this dashboard has tracked for two months runs out of room fast.
+**The risk:** this board is now stacking **three** genuinely dangerous inputs at once instead of two — a yen carry unwind that has not found a floor, an oil shock that just cleared its red trigger, and a bond market camped 2.5 bps under a round-number ceiling — against a credit market now confirmed red for two straight weeks. The September 15–16 FOMC arrives with hike odds at ~87–90%, already close to fully priced; the actual risk into that meeting is less "will they hike" and more "what happens to oil, the yen, and the 10Y if they hike AND signal more to come."
 
 ---
 
@@ -155,49 +155,48 @@
 
 | Signal | Status | Trend | Trigger Level |
 |---|---|---|---|
-| VIX Regime | 🟢 Normal (test-and-fail of 16.50) | Up (+0.7% WoW) | 🟡 >20 | 🔴 >25 |
-| Yield Curve | 🟡 Positive but level-stressed | 10Y cleared 4.75% for a full week (10Y–3M +103) | 🟡 <0 (inverted) | 🔴 <-50 bps |
-| Credit Spreads | 🟡 Watch (stale, 52d) | HYG/LQD first red week since the breakout began | 🟡 HY–IG >250 bps | 🔴 >350 bps |
-| Market Breadth | 🟡 Neutral (stale, 52d) | Flat index, narrow 5/12 sector leadership | 🟡 <50% above 50D MA | 🔴 <40% |
-| Sector Rotation | 🟡 Rate-sensitives in outflow | XLI/XLRE/XLY lagging on the month | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
-| DXY | 🟡 Needs refresh | USD/JPY broke 160; desk read stale | 🟡 >102 | 🔴 >105 |
-| Geopolitics | 🔴 Oil >$90 trigger tripped | WTI $91.48 (+9.7% WoW); BOJ/carry unwind live | 🟡 Oil >$90 | 🔴 Oil >$100 |
-| Credit Risk | 🟡 Softening | HYG/LQD both red on the rate breakout | 🟡 CDS widening | 🔴 Bank stress |
-| Overall Risk | 🟡 **CAUTION** | — | — | — |
+| VIX Regime | 🟢 Normal (breached 16.50 intraweek, closed back under) | Up (+9.0% WoW), 17.84 intraweek high | 🟡 >20 | 🔴 >25 |
+| Yield Curve | 🟡 Positive but level-stressed | 10Y 4.975%, 2.5 bps from 5.00% (10Y–3M +106) | 🟡 <0 (inverted) | 🔴 <-50 bps |
+| Credit Spreads | 🟡 Watch, unconfirmed (stale, 58d) | HYG/LQD 2nd straight red week | 🟡 HY–IG >250 bps | 🔴 >350 bps |
+| Market Breadth | 🟡 Neutral, deteriorating bias (stale, 58d) | 2nd red index week, narrower 4/12 leadership | 🟡 <50% above 50D MA | 🔴 <40% |
+| Sector Rotation | 🟡 Rate-sensitives + healthcare in outflow | XLI/XLY/XLB/XLU/XLV all negative 1M vs. SPY | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
+| DXY | 🟡 Needs refresh | USD/JPY extending below 160; desk read stale | 🟡 >102 | 🔴 >105 |
+| Geopolitics | 🔴 **Oil >$100 RED trigger crossed** | WTI $100.05 (+9.4% WoW); Bab el-Mandeb 2nd chokepoint, carry unwind live | 🟡 Oil >$90 | 🔴 Oil >$100 |
+| Credit Risk | 🟡 Softening, 2nd week | HYG/LQD both red again | 🟡 CDS widening | 🔴 Bank stress |
+| Overall Risk | 🟡 **CAUTION (escalating)** | — | — | — |
 
-**Weekly Narrative — Overall Assessment:** This was the week two of this dashboard's longest-standing tripwires both fired. The ledger: (1) **August nonfarm payrolls printed +162K against a ~53–56K consensus** — a beat wide enough to close the broken-labor-market flag this desk has carried since July's -23K print, and it landed with enough force to move September hike odds from **~49% to ~60.4%** in a single session; (2) the **10Y decisively broke above the 4.75% stress line**, closing every session of the week on the wrong side of a ceiling that had held all year, finishing Friday at **4.79%**; (3) **WTI cleared its own $90 trigger**, closing **+9.69% on the week to $91.48** on what the price action alone implies was a fresh supply-side escalation; (4) **USD/JPY broke decisively below 160**, falling **2.43% to 156.19** in a move consistent with either a surprise BOJ hike or direct intervention — the carry-trade stress point this dashboard has flagged for a month is now resolving, not building; (5) **credit cracked, mildly** — HYG and LQD both posted their first red week since the rate breakout began, a scratch rather than a wound but a change in direction worth tracking; (6) **VIX tested and failed its own 16.50 first-crack line** (Tuesday's 16.34 high on the NFP shock, closing the week at 14.53) — vol is telling a calmer story than rates or credit; (7) **the correlation matrix held for a fourth straight week with zero sign flips**, but industrials' jump to 0.777 and the drift of XLRE/XLU toward positive correlation both point toward compressing, not widening, dispersion; (8) sector rotation punished the rate-sensitive trio (XLI, XLRE, XLY) on both the week and the month while growth (SMH, XLK) and energy (XLE) inflowed; (9) semiconductors kept running (MU fresh high above $1,000, NVDA +5.89%, SMH +2.51% WoW) even as AVGO's Q4 guide missed on the same day; (10) the credit and breadth external gauges are now **52 days stale**, a governance gap that has now persisted through two genuine regime shifts.
+**Weekly Narrative — Overall Assessment:** This was the week the board's dashboard-native trigger lines started crossing outright, even as the formal alert criteria for a new GitHub issue stayed unmet. The ledger: (1) **WTI printed its first-ever $100+ settle**, closing +9.37% on the week to $100.05 — the board's own $100 RED geopolitics trigger, carried as "the next stop" for a month, is now crossed (already covered by today's issue #100 from the energy desk); (2) the **10Y closed at 4.975%, a fresh 52-week high just 2.5 bps under the 5.00% psychological line**, on the back of hot August core CPI (+0.3% vs. +0.2% consensus) that pushed September hike odds to ~87–90%; (3) **VIX breached its own 16.50 first-crack line intraweek for the first time this cycle** (17.84 Wednesday) before closing back under it at 15.84, +9.0% on the week; (4) **credit confirmed a trend rather than a one-off** — HYG and LQD both posted second straight red weeks; (5) **USD/JPY extended its carry-unwind break**, falling another 1.35% to 153.554, now nearly 6.5 points clear of the old 160 line; (6) **two defensive sectors flipped from negative to positive correlation with SPY** — Healthcare and Consumer Staples both lost their diversification benefit, for different reasons (a fundamentals shock in healthcare's case, likely a rates story in staples'); (7) **healthcare became the week's clearest sector outflow** (-2.79% vs. SPY) after a drug-trial-failure and medtech-execution cluster, a genuinely idiosyncratic addition to what has otherwise been a rates-driven rotation story; (8) growth held up — Technology, Semiconductors, and Communication Services all posted mild inflows, and the correlation-matrix dispersion inside tech (AMD/INTC sharply up, NVDA/MU down) suggests stock-picking is still alive underneath the macro trade; (9) market breadth narrowed further (4 of 12 sectors beat SPY vs. 5 last week) on a second straight red index week; (10) the credit and breadth external gauges are now **58 days stale**, a governance gap that has now persisted through three consecutive weeks of genuine regime escalation.
 
-The fragilities: (1) the market has now confirmed, not tested, a rate regime above 4.75% — the next question is whether August CPI (Thursday, September 11) cements or reverses it before the September 15–16 FOMC; (2) a yen carry unwind that accelerates past this week's move would be a global deleveraging event, not a regional one; (3) oil above $90 with a hot CPI print is the cleanest hawkish argument the Fed has had all cycle, and it would arrive with the labor market already looking stronger than expected; (4) credit's first red week could be noise or could be the beginning of the market pricing the rate move into spreads — the 52-day-stale external gauge means nobody actually knows; (5) VIX's failure to confirm the stress building in rates, credit, and FX is either healthy skepticism or complacency, and there is no way to tell which from vol alone; (6) the correlation compression (XLI re-coupling, XLRE/XLU drifting positive) is an early signal that the market's dispersion regime — healthy for stock-picking — may be narrowing into a single-factor (rates) trade.
+The fragilities: (1) the 10Y is one ordinary up-day away from testing 5.00% outright, and the September 15–16 FOMC is the next scheduled catalyst with hike odds already near-fully priced — the tail risk is a hike *plus* hawkish forward guidance, not the hike itself; (2) a yen carry unwind that has now extended for three straight weeks without finding a floor raises the odds of a disorderly move, not an orderly one; (3) oil above $100 with the 10Y near 5.00% simultaneously removes two of the market's few remaining "this isn't that bad yet" arguments; (4) credit's second consecutive red week is still small in absolute terms, but the trend, not the level, is now the story, and the stale external gauge means the market is flying blind on the one number that would confirm or deny a real credit event; (5) VIX's continued failure to sustainably confirm the stress building in rates, credit, oil, and FX — despite an intraweek breach of its own first-crack line — is either a genuinely calm equity options market or a market that has not yet been forced to price the full CPI-plus-oil-plus-FOMC combination; (6) two defensive-sector correlation flips in one week reduce the diversification value of this book at almost the same moment cross-asset stress is rising, a bad combination for anyone using sector rotation as a hedge.
 
-**The Canary Watch verdict:** 🟡 **CAUTION** — held, but two of the board's longest-tracked trigger lines both fired this week for the first time. Nothing crossed into the red trigger band on the formal criteria (VIX under 20, curve still positive-sloped, no confirmed credit widening above 250 bps, no correlation sign flips), so no new GitHub issue was opened this run. But the level of the board changed meaningfully: the 10Y is now living above its year-long ceiling instead of testing it, oil cleared its own trigger outright, and a yen carry unwind is resolving in real time. Watch: (1) August CPI Thursday, September 11 — the single most important print between here and the FOMC; (2) September FOMC September 15–16, hike odds now above 60%; (3) BOJ September 17–18, hike odds 84–87%; (4) whether the 10Y holds above 4.75% through CPI or reverts; (5) USD/JPY — does the carry unwind stabilize or accelerate toward 150; (6) WTI above $100, the next geopolitical trigger; (7) the credit and breadth external refresh, now 52 days overdue and increasingly load-bearing; (8) whether industrials' correlation jump to 0.777 is a one-week artifact or the start of a broader re-coupling.
+**The Canary Watch verdict:** 🟡 **CAUTION, escalating** — held for a third straight week, but the internal trigger board just logged its first RED cross (Oil >$100) since this dashboard began tracking it, and two of the three yellow lines (10Y near 5.00%, VIX's 16.50 breach) both moved closer to their own red thresholds. None of the four strict criteria for a new Canary Watch issue were met this run (VIX stayed under 20, the curve remains positive-sloped, credit widening above 250 bps cannot be confirmed on stale data, and no sector correlation flipped from positive to negative — Healthcare and Staples flipped the other direction). The oil, CPI, and consumer-confidence catalysts behind this week's moves are already tracked under issues #97, #98, #99, and #100 opened by today's sector desks; this run adds no new issue to avoid duplicating that coverage. Watch: (1) September FOMC September 15–16 — hike odds ~87–90%, the highest conviction level this dashboard has recorded all year; (2) BOJ September 17–18, hike odds 84–87%, directly relevant to the ongoing yen unwind; (3) whether the 10Y tests or breaks 5.00% before or immediately after the FOMC; (4) WTI — does $100 hold as support or does the next leg test $105+; (5) USD/JPY — does the carry unwind stabilize near 150 or accelerate through it; (6) the credit and breadth external refresh, now 58 days overdue and the single largest remaining blind spot on this board; (7) whether Healthcare's correlation flip and outflow reverse once the binary trial-readout risk (Olpasiran OCEAN(a)-Outcomes) resolves.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Two lines I've watched all year both broke in the same week: the 10Y cleared 4.75% for good, and USD/JPY snapped below 160. Both moves point the same direction — the world is repricing for a Fed and a BOJ that mean it. My stance moves from 'defensive with conviction' to 'defensive and confirmed': the cash allocation stays at 25–30%, and I am not adding rate-sensitive exposure (REITs, utilities, discretionary) into a live CPI print. The 2Y proxy is now nine days stale and almost certainly understates the front-end repricing — I want that refreshed before I trust the curve shape again. Credit's first red week is a scratch, not a wound, but it is the first time in a month the bond market's stress has shown up in spreads instead of staying contained to yields. Watch the 52-day-stale credit gauge — if it refreshes anywhere near 250 bps on HY–IG, this whole board's tone changes in one session."*
+**Ophelia:** *"Three lines moved against us in the same week: the 10Y closed within 2.5 bps of 5.00%, oil crossed its own $100 red trigger, and the yen carry unwind extended for a third straight week without stabilizing. My stance holds at 'defensive and confirmed' — cash allocation stays at 25–30%, and I am not adding rate-sensitive exposure into a live FOMC where hike odds are already north of 87%. The new wrinkle is healthcare: it flipped from a defensive, negatively-correlated sector to a positively-correlated one in a single week, on a genuine fundamentals shock rather than a rates story. That reduces the number of true portfolio diversifiers left on this board to effectively Utilities (barely) and Energy's inverse — everything else is now moving with the tape to varying degrees. The 2Y proxy is fifteen days stale and increasingly useless for reading the real curve shape; I want that refreshed before I trust any 10Y–2Y number on this dashboard again. Credit's second red week is still small, but it is now a trend, and the 58-day-stale gauge behind it is no longer a caveat, it's a liability heading into FOMC week."*
 
-**Marky:** *"The tape did exactly what it should when a stress line breaks and the labor market beats: it got choppy and then it picked a lane. VIX kissed 16.34 on the NFP shock and gave it all back — that's a market that tested the fear trade and rejected it, which usually means either genuine confidence or short-lived complacency, and I can't tell you which yet. What I can tell you: semis didn't blink. SMH +2.99% Friday alone, MU through $1,000, NVDA +5.89% — growth is trading like it doesn't believe the hawkish read, or like it believes its own earnings can outrun any discount rate. My triggers: VIX 16.50 (tagged and held this week, watching for a second test), 10Y 4.75% (broken, now a floor not a ceiling — I want to see if it holds on a pullback), oil $90 (cleared — next stop is my $100 line). Plan: trade the growth/energy inflow, fade the rate-sensitive outflow, and size down hard ahead of CPI on the 11th."*
+**Marky:** *"The tape gave vol every reason to break and it took the bait for exactly one session. VIX tagged 17.84 Wednesday — a real breach of my 16.50 line for the first time this cycle — then handed almost all of it back to close at 15.84. That's either genuine conviction that the Fed has this handled, or a market that hasn't yet processed CPI-plus-oil-plus-FOMC as one combined story. What I trust more than the VIX print: growth kept working. XLK, SMH, and XLC all posted inflows this week even as the rate-sensitive complex extended its outflow and healthcare joined it on a totally separate catalyst. Inside tech, the dispersion is wide — AMD and INTC ripping, NVDA and MU fading — which tells me stock-picking still matters underneath the macro trade. My triggers: VIX 16.50 (breached intraweek, held on a closing basis — watching for a second, sustained test), 10Y 5.00% (the next real line, 2.5 bps away), oil $100 (cleared — next stop is a genuine supply-shock read above $105). Plan: keep the growth/energy inflow trade on, size down further ahead of the FOMC, and treat any 10Y close above 5.00% as the signal to de-risk hard."*
 
-**Cecil:** *"The accountant's ledger: credit finally moved, and it moved the right way to take seriously — down, on the same week the 10Y broke its ceiling and NFP came in hot. HYG -0.73%, LQD -0.82%, both first red weeks in a month. That's not a crisis, it's balance sheets doing arithmetic on a higher discount rate, exactly as they should. The governance note is no longer a caveat, it's a liability: our credit and breadth gauges are **52 days stale**, and in that window we have now lived through an oil trigger, a yield-curve stress-line break, a yen carry unwind, and a labor-market regime flip. Flying two instruments dark through four regime events is no longer defensible — the refresh happens before next Saturday or we say so explicitly in the dashboard header. Own quality, demand a margin of safety, and don't mistake a calm VIX for a calm bond market — they disagreed with each other all week, and bonds are usually right first."*
+**Cecil:** *"The accountant's ledger: credit did exactly what it should when the discount rate keeps climbing and oil adds a second inflation input — it went red for a second straight week. HYG -0.71%, LQD -1.10%, cumulative moves of roughly -1.4% and -1.9% since the rate breakout began seven weeks ago. Still not a crisis. Still directionally correct. What's changed is my patience with the 58-day-stale external gauge: we have now lived through an oil trigger crossing from yellow to red, a yield-curve level stress deepening toward a round number, a persistent carry unwind, and two consecutive hawkish macro surprises (NFP, then CPI) — all on a credit read from before any of it happened. This is no longer a footnote for the dashboard header; it's the single biggest open item on this desk heading into the busiest macro week of the quarter. Own quality, keep the margin of safety, and remember that bonds moved first on the way into this stress and credit is historically the last market to admit what the others already know."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance: VIX, VVIX, SPY, sector ETFs, Treasury yields, FX, crude, gold, copper, Bitcoin, bond ETFs
-- FRED (St. Louis Fed): Treasury yields (DGS2 2-Year cross-check, 9 days stale), VIX cross-check (VIXCLS), breakeven inflation, credit spreads
+- Yahoo Finance (yfinance): VIX, VVIX, SPY, sector ETFs, Treasury yield proxies (^IRX/^FVX/^TNX), FX (EURUSD=X, JPY=X), crude (CL=F), gold (GC=F), copper (HG=F), Bitcoin (BTC-USD), bond ETFs (HYG, LQD)
+- FRED (St. Louis Fed): VIXCLS (VIX cross-check, confirmed matching Yahoo through Thu 2026-09-10; Fri 2026-09-11 not yet posted at fetch time), DGS2 (2-Year cross-check, 15 days stale)
 - CBOE: VIX methodology, VIX futures term structure
 - Federal Reserve: Yield curve data, Fed funds rate, FOMC statements and minutes
-- CME FedWatch: September FOMC hike pricing (~49% -> ~60.4% post-NFP)
-- ICE/BofA: Credit spread indices (ICE BofA US Corporate, High Yield) — 52 days stale, refresh overdue
-- NYSE/NASDAQ: Advance/decline data, new highs/lows — 52 days stale, refresh overdue
-- Bloomberg: Cross-asset data, copper, Bitcoin, FX
-- Internal desk cross-references: wiki/semiconductors.md and wiki/economic-calendar.md (2026-09-06 update) for NVDA/MU/AVGO prints and August NFP/ISM/ADP detail
-- wiki/materials.md and wiki/real-estate.md (2026-09-05 update) for the initial 10Y 4.75% stress-line trip flag
+- CME FedWatch: September FOMC hike pricing (~60% last week -> ~87–90% post-CPI)
+- ICE/BofA: Credit spread indices (ICE BofA US Corporate, High Yield) — 58 days stale, refresh overdue
+- NYSE/NASDAQ: Advance/decline data, new highs/lows — 58 days stale, refresh overdue
+- Internal desk cross-references: wiki/tech.md, wiki/industrials.md, wiki/real-estate.md, wiki/energy.md, wiki/healthcare.md, wiki/consumer-discretionary.md, wiki/materials.md, wiki/utilities.md (all 2026-09-12 Grid A/B/C updates) for CPI/FOMC framing, the 5.00% "crisis line" flag, the WTI $100 print, and the healthcare trial-failure cluster
+- GitHub issues cross-referenced this run: #97 (hot core CPI / macro catalyst), #98 (drug trial failure + medtech cluster), #99 (UMich consumer-confidence shock), #100 (WTI $100.05 first-ever settle) — no new issue opened by this run to avoid duplicating coverage
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-05 (run completed 2026-09-06/07 after a delayed session start; all market data as of Fri 2026-09-04 closes from the Saturday fetch)*
-*Next update: Every Saturday 3:39 PM ET*
-*Data sources: Yahoo Finance, CBOE, Federal Reserve, ICE, FRED, market data feeds*
+*Last updated by Saturday Research Crew: 2026-09-12 (single-agent run; all market data as of Fri 2026-09-11 closes)*
+*Next update: Every Saturday 7:39 PM ET*
+*Data sources: Yahoo Finance (yfinance), CBOE, Federal Reserve, FRED, market data feeds*
