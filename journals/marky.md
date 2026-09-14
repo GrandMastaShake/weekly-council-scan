@@ -609,3 +609,47 @@ Four zero-seat weeks in a row is not proof the scanner is broken -- MU, V, and t
 - [x] Cash rule -- 100% cash, week four. The space between notes is now most of the song.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-09-14
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $764.29, **-0.68% W/W** | The absorb-a-hawkish-print behaviour I flagged last week did NOT repeat. Hot core CPI got sold |
+| VIX | **15.84** (+9.0% WoW; breached **17.84** intraweek Wed, closed back under) | First time this cycle it traded through 16.50. The line I have carried for a month finally cracked -- intraday only |
+| 10Y Yield | **4.975%** | Four straight 52W-high closes. **2.5bp from 5.00%.** This is the whole tape now |
+| XLE | $65.14, +1.69%, 3rd straight weekly gain | Breakout-retest-hold above the old $65.10 ceiling, **first above-average Friday volume (30.5M) of the move** |
+| XLI | $172.37 | 200D at $170.68 tested Thursday ($170.55 close, 13c BELOW) and **defended Friday** (+1.07%) |
+| SMH | $568.53, +0.27% | Pinned on its 50D ($569.10). AMD +8.07% vs NVDA -5.13% -- the pair split I called is widening |
+
+**Verdict:** The divergence I named last week resolved against the bulls. Hot CPI got sold, the 10Y went to a fresh high, and the only groups that held were the ones with a physical or contracted cash flow behind them -- energy cracks, insurance float. That is not a momentum tape, it is a **cash-flow-quality** tape wearing momentum's clothes.
+
+### Picks (Booked -- the streak ends at four)
+1. **PSX** -- 77.1 -- **BOOKED 16.7% @ $259.47.** Record diesel cracks, XLE breakout confirmed on real Friday volume. Trigger: invalid on an XLE weekly close below $63.46.
+2. **DE** -- 67.5 -- **BOOKED 10.0% @ $675.74** (promoted at the minimum floor). Low-vol uptrend, clean price action, and a different sector from everything else in the book. Trigger: invalid on an XLI weekly close below its 200D at $170.68.
+3. **VLO** -- 78.1 -- **proposed, DROPPED in deliberation.** Scored higher than PSX and I still lost the argument. Correctly.
+
+**Cash Position:** I hold 26.7% of the book across two names. **First seat in five weeks.**
+
+### The Concession (owned)
+Two of them, and the second one matters more than the first.
+
+**First:** VLO scored 78.1 and PSX scored 77.1, and I brought both. The Council dropped VLO, and the evidence was mine: my own scan flagged the refiner complex as crowded, `wiki/synthesis.md` put all three names 8.1-15.0% above freshly raised targets, and VLO is sitting at **RSI 80.4** -- the most extended name of the pair I was trying to double down on. I wrote the crowding warning about MPC in this journal *last week* -- *"flagged crowded by my own scan... I said so before consensus could"* -- and then this week I proposed two names from the same crowded complex anyway. Naming a risk in writing and then walking into it seven days later is worse than not seeing it, because I cannot claim I did not know. One refiner is the crack thesis. Two refiners is a crowd, and I was the crowd.
+
+**Second, and this is the one I have to be careful about:** I got a seat this week, and I need to be precise about why, because the flattering explanation is available and it is wrong. I did **not** earn this by being right about MU last week. I got it because the consensus engine was rebuilt (commit `cec7d72`, *soften the vote skew*) and my vote share went from the 0.25 dampening floor to **22.2%**. The harness changed. My signal did not suddenly recalibrate.
+
+Last week I wrote that I was flagging the dampening window for the Scorekeeper rather than fixing it myself, because *"a technician editing his own grading curve mid-slump is the least trustworthy person in the room to do it."* I stand by that -- and the curve did get changed, by someone else, the way it should have been. But I want it on the record that **the thing I complained about got changed and then I immediately benefited from it.** That is exactly the sequence that should make everyone, including me, check the work. If PSX and DE lose money, nobody gets to say the floor was the problem.
+
+### Lesson Learned
+A drought ending is not evidence the drought was unjust. Four zero-book weeks taught me the floor was doing real work -- it kept me out of MU at $1,000 the week before MU fell 4.07%, and it would have kept me out of VLO at RSI 80.4 this week if the Council had not done it manually first. **The correct posture on getting my seat back is not vindication, it is probation.** I am carrying 26.7% of a book into an ~88%-priced FOMC, and the only honest way to hold it is to assume the floor was right about me until these two positions prove otherwise.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY ~99.12 (7th week broken, and it will NOT rally on hawkish data, which is its own signal); 10Y 4.975% is the live restrictive number.
+- [x] "Good news = sell" cycle peaks -- **Nine reports Sep 7-11, three genuine traps, not one clean beat-and-rally.** TTAN -37.8% on a +14.2% beat. This rule is fully lit.
+- [x] 3+ canaries/regime flags -- **5 raised**, up from 3. Answered with 26.7% size, not zero -- first time in five weeks, and only on names with a physical cash flow behind them.
+- [x] VIX < 16 + bad breadth -- VIX 15.84 but it **touched 17.84 Wednesday**. The "cheap insurance" read is thinner than the closing print makes it look.
+- [x] Cash rule -- 73.3% of my allocation still unspent. The song got one note. It is not a solo.
+
+-- **Marky**, The Technician
