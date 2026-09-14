@@ -2,6 +2,47 @@
 
 > **Living Document (created 2026-08-10). SHADOW ONLY -- no enforcement for ~4 cycles.** For each booked pick, log the exit template it WOULD trade under: stop (default -8% SPEC / -5% CORE from entry), thesis invalidation (the pick's Trigger line), time stop (default 6 weeks, or a named catalyst with a date window), trim plan (default: trim 1/3 at +15%, remainder rides a hard trailing stop at -15% from the high-water mark). The template never alters the book; it exists to generate the evidence base that tunes the numbers before enforcement. Newest entries on top, tagged with the week's Monday date, marked `outcome: to be computed` until scored at the following Monday close.
 
+## Stop-Calibration Summary (4 scored cycles, 2026-08-17 -> 2026-09-08)
+
+> **This block is the evidence base the log was built to produce.** It appears after 4 scored cycles, per the STEP 3b doctrine. Read it as evidence, not yet as enforcement.
+
+**Sample:** 11 position-weeks across 4 booked cycles (2026-08-10 was an ENGINE ABORT -- no book, no templates). 10 CORE (-5%), 1 SPEC (-8%).
+
+| Metric | CORE (-5%) | SPEC (-8%) | All |
+|---|---|---|---|
+| Position-weeks scored | 10 | 1 | 11 |
+| Stops fired | 0 | 1 | 1 |
+| Stop helped (saved money) | 0 | 1 (TER, +5.1pp) | 1 |
+| Stop hurt (cut a winner) | 0 | 0 | 0 |
+| Untouched | 10 | 0 | 10 |
+| +15% trim reached | 0 | 0 | 0 |
+
+**Deepest intraweek drawdown from entry, CORE names (the number that decides the stop):**
+
+| Rank | Position | Week | Low vs Entry | Headroom Left Above Stop | Week Finished |
+|---|---|---|---|---|---|
+| 1 | ETN | 2026-09-08 | -3.66% | 1.41% | **+1.01% (green)** |
+| 2 | VICI | 2026-08-24 | -3.45% | 1.62% | -3.00% |
+| 3 | ALL | 2026-08-17 | -3.36% | 1.72% | -2.98% |
+| 4 | HIG | 2026-08-17 | -1.92% | 3.24% | -1.85% |
+| 5 | HIG | 2026-08-31 | -1.59% | 3.59% | -0.08% |
+| 6 | VICI | 2026-08-17 | -1.15% | 4.07% | +1.55% |
+| 7 | ALL | 2026-08-31 | -1.06% | 4.15% | -0.21% |
+| 8 | LMT | 2026-09-08 | -0.83% | 4.39% | -0.39% |
+| 9 | HIG | 2026-08-24 | -0.63% | 4.60% | +0.87% |
+| 10 | ALL | 2026-08-24 | never below entry | 5.79% | +2.54% |
+
+**What the data says, stated against the hypothesis it could have supported:**
+
+1. **The -8% SPEC stop is the only one with a firing, and it earned its keep.** TER (2026-08-17) hit it Tuesday and saved 5.1pp against a -13.07% actual. One observation is not a mandate, but it is the only direct evidence in the file and it points one way: keep -8% on SPEC.
+2. **The -5% CORE stop has never fired in 10 position-weeks, and tightening it would have COST money, not saved it.** The deepest CORE drawdown on record is ETN's -3.66% -- and ETN closed the week GREEN at +1.01%. A -3.5% CORE stop would have fired on ETN and VICI: ETN would have turned +1.01% into roughly -4% (a ~5pp self-inflicted loss), VICI would have turned -3.00% into -3.5% (another small loss). **Every tightening this sample permits makes the book worse.** The naive read of "the CORE stop never fires, so it must be too loose" is exactly backwards.
+3. **Implied best stop from the data: leave both numbers where they are.** CORE -5% sits in a genuine dead zone -- far enough below the -3.66% worst observed drawdown to avoid whipsaw, and no CORE position has come near a loss deep enough to need it. There is no number in this sample that improves on -5% CORE / -8% SPEC.
+4. **The trim plan is completely untested.** Zero of 11 position-weeks reached +15%; the best week on record is ALL's +2.54%. The trim leg of the template has produced no evidence at all and should not be promoted on the strength of the stop leg.
+
+**Promotion recommendation: NOT YET -- stay in shadow.** The sample is 11 position-weeks with exactly one firing, drawn almost entirely from a book carrying 60-73% cash, and it is CORE-dominated 10:1. The one number with real support (-8% SPEC) has a single observation. The honest reading is that the template has not yet been tested by a losing week deep enough to matter -- the book's worst pick since the log opened was cut by the one stop that fired. Continue shadow logging; revisit at 8 scored cycles or after the first week a CORE position closes below -5%, whichever comes first.
+
+---
+
 ## Entries
 
 ### Week of 2026-09-08
@@ -13,7 +54,16 @@ Book: LMT 13.3% / ETN 13.3% / cash 73.4%. Entry prices = Tuesday 2026-09-08 live
 | LMT @ $526.23 (Cecil) | **CORE** -- large-cap defense prime, real beat + target hike, pure multiple compression | -5% = $499.92 | XLI weekly close below its 200D (~$170-171, hard floor $168.00), or 10Y close > 4.85% | 6 weeks (Oct 20); named gates inside the window: CPI Sep 11, FOMC Sep 15-16, BOJ Sep 17-18 | Trim 1/3 at +15% ($605.16); remainder trails -15% from HWM |
 | ETN @ $421.11 (Cecil) | **CORE** -- AI data-center power buildout, real 65% YoY growth, but 26x forward | -5% = $400.05 | Same XLI 200D backstop, or a hyperscaler capex cut materially undercutting the AI-power thesis | 6 weeks (Oct 20); same named gates | Trim 1/3 at +15% ($484.28); remainder trails -15% from HWM |
 
-outcome: to be computed (score Monday 2026-09-14 against date-pinned daily bars 2026-09-08 -> 2026-09-11).
+outcome (scored 2026-09-14, date-pinned daily bars 2026-09-08 -> 2026-09-11):
+
+| Pick | Stop Touched? | +15% Trim Reached? | Would-Have Return | Actual Booked Return | Verdict |
+|---|---|---|---|---|---|
+| LMT @ $526.23 (stop $499.92) | No (week low $521.87, Fri 2026-09-11 -- 4.39% above the stop) | No (week high $543.59, Wed 2026-09-09) | -0.39% (held) | -0.39% | no difference |
+| ETN @ $421.11 (stop $400.05) | No (week low $405.70, Thu 2026-09-10 -- **1.41% above the stop, the closest call in the log's history**) | No (week high $430.25, Tue 2026-09-08) | +1.01% (held) | +1.01% | no difference -- **but the near-miss is the finding** |
+
+Cycle tally: stops helped 0, hurt 0, untouched 2. The entry worth reading twice is ETN: it drew down -3.66% from entry on Thursday, came within $5.65 of its -5% CORE stop, and then closed the week at +1.01%. Any stop tighter than -3.66% would have converted the book's only winner into a roughly -4% loss. That is the first hard evidence in this log that the CORE stop can be too tight, and it arrives in the same week the stop was never actually hit.
+
+Scored cycles to date: **4 of 4 -- the stop-calibration summary block is now live at the top of this file.**
 
 ---
 
