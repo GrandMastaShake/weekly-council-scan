@@ -148,7 +148,24 @@ def scan_universe(as_of=None):
         from scan_pipeline import panel_source
     except Exception:
         return STOCK_UNIVERSE
-    if not panel_source.enabled():
-        return STOCK_UNIVERSE
-    names = panel_source.universe(as_of=as_of)
-    return names or STOCK_UNIVERSE
+    base = STOCK_UNIVERSE
+    if panel_source.enabled():
+        names = panel_source.universe(as_of=as_of)
+        base = names or STOCK_UNIVERSE
+
+    # Wiki wildcard lane (2026-09-13, opt-in via COUNCIL_WIKI_WILDCARDS=1).
+    # The sector wikis publish a SMALL/MID-CAP WATCH table every Saturday with
+    # live-verified sub-$5B names, and none of them could ever be picked: the
+    # engines iterate a fixed universe and wiki_signals only nudges names
+    # already in it. Measured 2026-09-13, 0 of 21 such names were reachable.
+    # Admitting them here is the only path by which that section affects a
+    # book. Graduated names drop out on their own via the cap re-check.
+    try:
+        from scan_pipeline import wiki_wildcards
+        if wiki_wildcards.enabled():
+            extra = wiki_wildcards.tickers(base_universe=base)
+            if extra:
+                return sorted(set(base) | set(extra))
+    except Exception as exc:
+        print("[wildcards] lane unavailable (non-fatal): %s" % exc)
+    return base
