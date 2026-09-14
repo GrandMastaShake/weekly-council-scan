@@ -432,3 +432,45 @@ I need to be honest about CEG and VST specifically, because they are NOT the sam
 **Cash Target: 25-30% into CPI -- hold reduced exposure, this is not the week to chase the jobs-beat rally (my own economic-calendar Council Read).** Council actual: 73.4%, well above even my own defensive target. Four straight weeks the Council has now held more cash than my stated number. I am not complaining -- CPI Thursday and FOMC the week after is a harder consecutive-gate stretch than any single print this cycle -- but I am naming the pattern: my own cash target keeps getting overridden to the conservative side, and the overrides keep being right more often than wrong. Worth the Scorekeeper's attention when the harness review comes.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-09-14 -- My Doubt Was Right and My Tickers Were Wrong, Which Is Not the Same as Being Right
+
+### 1. Macro Narrative
+August core CPI printed **+0.3% MoM against +0.2% consensus** -- the first hot monthly core print since the disinflation trend began -- while core YoY came in at **2.4%**, in line and the lowest since March 2021. That split is the whole macro story and I want to be careful not to collapse it into whichever half suits me. The monthly gauge the Fed watches most closely broke a streak; the annual trend did not. The market resolved the ambiguity hawkishly and immediately: September hike odds went from ~60% to **~87-90%**, the 10Y closed at **4.975%** on four straight 52-week-high closes, and it now sits **2.5 basis points** from the 5.00% line.
+
+Two of my thresholds broke this week, taking the board from three raised flags to **five**: CPI MoM > 0.3% and Oil > $100 sustained (WTI settled **$100.05**, the first $100+ settle of this conflict regime, with diesel +24.1% MoM driving the PPI surprise). DXY stays broken for a seventh week and -- this is the anomaly I keep circling -- **the dollar still will not rally even with hike odds near 90%.** That is not how this is supposed to work, and I do not have a clean explanation. I am flagging it as unexplained rather than inventing a story for it.
+
+The tie-break I said CPI would deliver between no-landing-hawkish-Fed and consumer-crack did not arrive cleanly either. CPI ran hot **and** UMich sentiment collapsed to **47.8**, the second-lowest reading on record. Those are supposed to be opposing signals. Getting both in one week means the consumer is being squeezed by the very print that guarantees the Fed keeps squeezing. Wednesday is now a triple gate: FOMC decision, August Retail Sales and Industrial Production, all on September 16.
+
+### 2. My Proposals to the Council (none booked -- all four blocked)
+- **EVRG** -- macro score 60, confidence **55.7** -- regulated utility, defensive rotation. Consensus #2 at 17.8%. **TRIGGER-BLOCKED.**
+- **NI** -- 59, conf **53.3** -- same sleeve. **TRIGGER-BLOCKED** as a promotion candidate.
+- **AEP** -- 53, conf **44.4** -- same sleeve, lowest conviction. **TRIGGER-BLOCKED** as a promotion candidate.
+
+All three are logged in `rejections.md`, tagged 2026-09-14, counterfactual to be computed next Monday. The block was not the minimum-position floor this time -- EVRG cleared the floor comfortably at 17.8%. It was the DOW rule: `wiki/utilities.md` states the sector's own bias as **"bearish below $43.00, full-stop"** and XLU closed **$42.39**.
+
+### 3. The Concession (owned) -- and the vindication I am refusing
+Last Monday's counterfactual came back this morning and it went my way: **CEG -4.78%, VST -2.20%, MO +1.19%, basket -1.93% against the booked +0.08%.** My rejected trio lost for a second straight week. The specific doubt I wrote down -- that I did not trust the scarcity/rate-decoupling would survive the next rate move -- was *exactly* what happened. The rate move came, and the decoupling did not survive it.
+
+I could take that as vindication. I am not going to, because it would teach me the wrong lesson.
+
+Here is what I actually got right and what I actually got wrong. **Right:** the scoring discipline. Last week I confessed that scoring CEG at 62.0 and VST at 60.0 did not reflect my own stated doubt, and that my confidence numbers should have been lower. This week my numbers came in at **44.4 to 55.7** -- genuinely lower, on a genuinely weaker setup. The confidence model finally moved when my conviction moved. That is a real repair and I am claiming it.
+
+**Wrong, and this is the harder one:** I brought the wrong half of the sector. The thesis I cited -- "contracts beat yield", the scarcity bid, the data-center power buildout -- attaches to **CEG and VST**, which are merchant/scarcity names. What I actually proposed this week was **EVRG, NI and AEP: three regulated utilities.** Those are the duration half. They are, in my own synthesis's words, the part of the sector that "bled in a straight line with the 10Y." I wrote a scarcity thesis and then bought bond proxies with it.
+
+So last week I had the right names and the wrong confidence. This week I had the right confidence and the wrong names. **I have now made both halves of the same mistake in consecutive weeks, and fixing one did not protect me from the other.** The gate caught it; my own process did not. If XLU had closed 61 cents higher I would have booked 17.8% of the Council's money into a rate-sensitive regulated utility the night before an 88%-priced hike, with a thesis that describes different companies.
+
+I also want to record what I did *not* do, because it was available. XLU's next level down is **$42.23** and it closed **$42.39** -- sixteen cents above. A trigger written against $42.23 instead of the wiki's stated $43.00 would have let EVRG through. Nobody would have caught it. I did not ask for it and the Council did not offer it, and I am writing that down so that the week I *am* tempted to ask, this entry is sitting here.
+
+### 4. What Would Make Me Wrong
+- **A dovish frame Wednesday** -- a hike delivered as the *end* of something -- and the proxies are, in my own utilities desk's words, "the fastest money on the board." XLU reclaims $43.00, then $43.45-43.51, then the MAs at $44.22-44.28, and my blocked sleeve is the best-performing thing on the board while the Council sits in 40% cash. This is the live cost of the block and I am naming it before the fact, not after.
+- **The 10Y takes out 5.00% on hawkish dots** and XLU loses $42.23 into $41.15-41.31, a full round-trip of the 2026 range -- the block saved the book real money and the regulated sleeve was exactly the wrong place to be.
+- **The dollar finally rallies** on a hawkish frame, resolving the seventh-week anomaly I cannot currently explain -- and I learn that my DXY threshold has been measuring something that stopped being the thing I thought it measured.
+- **BOJ hikes Sep 17-18** (84-87% priced) with USD/JPY at 153.554 and the carry unwind accelerates through 150 -- the correlation re-coupling I have flagged for four weeks arrives and drags everything down together regardless of sector.
+
+### 5. Cash
+**Cash Target: 40% into the FOMC -- and for the first time this cycle the Council booked exactly my number (40.2%).** Four straight weeks I noted that the Council overrode my cash target to the conservative side and kept being right. This week it did not need to override me; I had already moved to where it was. I am not sure yet whether that means my calibration improved or whether I simply learned to anticipate the override, and those are very different things. The honest test is a week when I want *less* cash than the Council does -- that has not happened since I started keeping this number, and until it does I cannot tell my judgment apart from my anticipation.
+
+-- **Ophelia**, Macro Oracle
