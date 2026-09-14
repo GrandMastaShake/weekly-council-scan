@@ -1,0 +1,53 @@
+week: '2026-09-14'
+lock: 2026-09-14 08:50 ET
+entry_date: '2026-09-14'
+exit_date: '2026-09-18'
+status: open
+entry_basis_note: 'Monday open unavailable at lock time: the provider''s 2026-09-14
+  daily bar carried a stale Open field (a verbatim copy of Friday 2026-09-11''s open)
+  that fell outside the same day''s high/low range for 5 of 7 tickers checked. Entries
+  marked ''live_intraday_open_unavailable'' use the live Monday price read at ~09:42
+  ET instead of an impossible open. Entry SET was pinned at 08:37 ET, before the 08:50
+  lock.'
+benchmark:
+  ticker: SPY
+  entry_price: 759.015
+  entry_price_source: live_intraday_open_unavailable
+  exit_price: null
+  return_pct: null
+players:
+- player: GrandMastaShake
+  picks:
+  - ticker: XOM
+    weight: 0.2
+    entry_price: 168.88
+    entry_price_source: live_intraday_open_unavailable
+    exit_price: null
+    return_pct: null
+  - ticker: MO
+    weight: 0.2
+    entry_price: 71.03
+    entry_price_source: live_intraday_open_unavailable
+    exit_price: null
+    return_pct: null
+  - ticker: TSM
+    weight: 0.15
+    entry_price: 418.75
+    entry_price_source: live_intraday_open_unavailable
+    exit_price: null
+    return_pct: null
+  - ticker: CBOE
+    weight: 0.15
+    entry_price: 284.93
+    entry_price_source: live_intraday_open_unavailable
+    exit_price: null
+    return_pct: null
+  - ticker: DDOG
+    weight: 0.1
+    entry_price: 224.955
+    entry_price_source: open
+    exit_price: null
+    return_pct: null
+  total_weight: 0.8
+  cash_weight: 0.2
+  valid: true
