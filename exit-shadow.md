@@ -45,6 +45,25 @@
 
 ## Entries
 
+### Week of 2026-09-14
+
+Book: ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% / cash 40.2%. **Entry prices = Friday 2026-09-11 closes**, not Monday opens: yfinance had not yet published the 2026-09-14 daily bar when the tracker ran at 09:53 ET, and tracker.py took its documented close-based fallback (warning emitted for all five symbols including SPY). Recorded here because the entry basis changes every level below it.
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| ALL @ $253.71 (Cecil) | **CORE** -- mega-cap P&C insurer, liquid, broad institutional sponsorship | -5% = $241.02 | XLF weekly close below its 50D at $57.11 (wiki/financials.md: "THE line -- Friday closed 14 cents above it") | 6 weeks (Oct 26); named gates inside the window: FOMC Sep 15-16, BOJ Sep 17-18 | Trim 1/3 at +15% ($291.77); remainder trails -15% from HWM |
+| PSX @ $259.47 (Marky) | **CORE** -- mega-cap refiner, liquid; flagged crowded (complex trades 8.1-15.0% above freshly raised targets) | -5% = $246.50 | XLE weekly close below $63.46 (failed-breakout-#2 line, wiki/synthesis.md Section 5) | Named catalyst overrides the clock: refiner Q3 prints late October are the verdict on record diesel cracks; 6-week backstop (Oct 26) | Trim 1/3 at +15% ($298.39); remainder trails -15% from HWM |
+| HIG @ $136.36 (Cecil) | **CORE** -- large-cap P&C insurer, same carry thesis as ALL | -5% = $129.54 | 10Y-3M curve inverts (macro/facts.json rates.curve_10y_3m_bps = +106 at booking) | 6 weeks (Oct 26); same named gates | Trim 1/3 at +15% ($156.81); remainder trails -15% from HWM |
+| DE @ $675.74 (Marky) | **CORE** -- mega-cap industrial, liquid | -5% = $641.95 | XLI weekly close below its 200D at $170.68 (wiki/synthesis.md Section 5; XLI $172.37 at booking) | Named catalyst: FDX prints Thu Sep 17, the first live report from the oil front; 6-week backstop (Oct 26) | Trim 1/3 at +15% ($777.10); remainder trails -15% from HWM |
+
+Note: EVRG (Ophelia) and AES (Cecil) were TRIGGER-BLOCKED at booking under the DOW rule (XLU $42.39 inside wiki/utilities.md's own "bearish below $43.00, full-stop" zone) and are not booked; no exit template attaches. Their counterfactuals are tracked through shadow-book.md instead.
+
+**Template stress note for the calibration record:** ALL's stop ($241.02) and DE's stop ($641.95) both sit further from entry than any drawdown in the 11-position-week sample above, but ALL's *trigger* (XLF 50D, 0.24% headroom) is by far the tightest invalidation this log has ever carried. This is the first week where the thesis-invalidation leg is overwhelmingly more likely to fire than the stop leg -- exactly the asymmetry the summary block says is untested.
+
+outcome: to be computed (score Monday 2026-09-21 against date-pinned daily bars 2026-09-14 -> 2026-09-18).
+
+---
+
 ### Week of 2026-09-08
 
 Book: LMT 13.3% / ETN 13.3% / cash 73.4%. Entry prices = Tuesday 2026-09-08 live morning prints at booking (week open shifted from Monday 9/7 -- Labor Day; tracker, portfolio/current.yaml).
