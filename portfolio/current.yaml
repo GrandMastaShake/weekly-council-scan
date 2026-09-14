@@ -6,7 +6,7 @@ positions:
   sponsor: Cecil
   thesis: 'Deep value at 5.1x earnings with solid fundamentals. Score: 100. (confidence:
     90.2)'
-  entry_price: 254.42999267578125
+  entry_price: 253.7100067138672
   entry_date: '2026-09-14'
   stop_loss: null
   target: null
@@ -21,7 +21,7 @@ positions:
   sponsor: Marky
   thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 6.8%. (confidence:
     77.1)'
-  entry_price: 258.6300048828125
+  entry_price: 259.4700012207031
   entry_date: '2026-09-14'
   stop_loss: null
   target: null
@@ -36,7 +36,7 @@ positions:
   sponsor: Cecil
   thesis: 'Quality business trading at a discount. P/E: 9.4. Score: 93. (confidence:
     82.1)'
-  entry_price: 138.19000244140625
+  entry_price: 136.36000061035156
   entry_date: '2026-09-14'
   stop_loss: null
   target: null
@@ -51,7 +51,7 @@ positions:
   sponsor: Marky
   thesis: 'Low volatility uptrend with clean price action. Vol: 4.3%. Score: 89. (confidence:
     67.5)'
-  entry_price: 685.9199829101562
+  entry_price: 675.739990234375
   entry_date: '2026-09-14'
   stop_loss: null
   target: null
@@ -61,7 +61,7 @@ positions:
   exit_date: null
   exit_reason: null
   pnl_pct: null
-spy_entry: 764.719970703125
+spy_entry: 764.2899780273438
 vix_at_entry: 15.84
 fed_stance: Hold. Rates 3.50-3.75% since the 2026-07-29 FOMC (9-3 vote, three dissents
   for a hike); the Sept 15-16 decision is ~87-90% priced for a hike after hot August
