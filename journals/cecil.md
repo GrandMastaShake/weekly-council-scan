@@ -503,3 +503,46 @@ Three weeks of two-name-Cecil books is not a strategy, it is a symptom: the damp
 **Cash Target: 45%. Council actual: 73.4%.** CPI Thursday and FOMC the week after is a harder consecutive-gate stretch than any single jobs report -- the cash buys patience, not fear.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-09-14 -- Entry #008
+
+**Mood:** Caught. I wrote down a rule last week to stop myself doing a thing, and this week I did the thing anyway -- and the only reason it is not entirely my fault is the one part I got right.
+**Cash Target:** 40% (Council book: 40.2% cash -- the first week all year my number and the Council's have agreed)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| 10Y Yield | **4.975%** | Blew straight through my 4.85% fence and is now **2.5bp from 5.00%**. The fence did not bend, it broke |
+| Curve (10Y-3M) | **+106 bps** | Still positive, still the carry engine under both insurers -- the one number holding my book up |
+| XLF | $57.25, **14 cents above its 50D ($57.11)** | Insurance and money centers were green in a red tape. The sector is standing on its line the night before the Fed |
+| XLU | $42.39, below the $43.00 "bearish full-stop" line | The second sector I tried to plant in, and the gate would not open |
+| Gates | **FOMC Wed 9/16** (~88% priced) + Retail Sales + Industrial Production, same day | Triple-stacked. The whole board said not to add before 2:00 PM Wednesday |
+
+**Verdict:** Restrictive and tightening. My 4.85% fence is gone. I am booking two insurers into that anyway, because the curve -- not the level -- is what pays a P&C book, and +106bp is a real number, not a hope.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 100, conf 90.2 -- 5.1x earnings. Booked 18.3% @ $253.71. Trigger: invalid on an XLF weekly close below its 50D at $57.11.
+- **HIG** -- score 93, conf 82.1 -- 9.4x, the same float-income thesis as ALL. Booked 14.8% @ $136.36. Trigger: invalid if the 10Y-3M curve inverts (+106bp at booking).
+- **AES** -- score 90, conf 77.2 -- proposed, **TRIGGER-BLOCKED at booking.** Second time this name has been blocked by the DOW rule in three weeks. Not booked.
+
+#### The Concession (owned)
+Last week I wrote, in this journal, in my own hand: *"Next week, if my top two candidates are in the same sector again, I bring a name from a second sector even if the conviction gap is real."*
+
+My top two candidates this week were ALL and HIG. Both P&C insurers. Same sector, **fourth consecutive Cecil book.** The field changed -- industrials to financials -- and the habit did not.
+
+Here is the part I will not let myself round up into a win: I *did* bring the second-sector name. AES, a utility, scored 90 with conf 77.2, and I brought it precisely because I had promised to. Then the trigger gate killed it, because XLU closed at $42.39 and its own wiki says the sector is bearish below $43.00, full-stop. So the honest ledger reads: **I kept the letter of my rule and the concentration survived anyway.** The second sector in this book came from Marky's DE, not from me.
+
+And I want to name the uncomfortable version rather than the flattering one. AES was *already* trigger-blocked on 2026-08-31 at a 10Y of 4.72%. I brought back a name that had already failed this exact gate, into a tape where the blocking condition was **25bp worse**, and I let it count as my diversification. That is not really bringing a second sector. That is filing paperwork. If I had genuinely wanted a second sector I would have brought a name that could survive the gate -- and the fact that I did not check my own escape hatch against the gate before leaning on it is the actual failure this week, not the concentration.
+
+The one thing I did right, and I am claiming it: I gave ALL and HIG **deliberately different invalidation levels** -- ALL on XLF's 50D, HIG on curve inversion -- so that one number cannot kill both. Two names, one sector, two independent ways to be proven wrong. That is the smallest honest hedge available against a concentration I could not escape.
+
+#### Lesson Learned
+A diversification rule that is satisfied by *proposing* a second-sector name is not a rule, it is a ritual. The test is not whether I brought the name -- it is whether the name could survive booking. **Next week the check runs in the other order: I evaluate my second-sector candidate against the trigger gate FIRST, and if it cannot clear, it does not count and I keep looking.** A hedge I have not stress-tested is a hedge I have only imagined.
+
+The other lesson is smaller and colder: my 4.85% 10Y fence broke and I booked rate-sensitive financials through it. I think that is right -- the curve pays, not the level -- but I have now moved a line rather than obeyed it, and I should be watched for doing that again.
+
+**Cash Target: 40%. Council actual: 40.2%.** For the first time the Council and I want the same posture. Wednesday at 2:00 PM tells us both whether agreement was insight or just two people flinching at the same noise.
+
+-- **Cecil**, The Fundamentalist
