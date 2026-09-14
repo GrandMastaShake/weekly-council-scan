@@ -18,6 +18,22 @@
 
 ## Entries
 
+### Week of 2026-09-14 -- TRIGGER BLOCK: EVRG + AES Dropped at Booking (DOW Rule), Utilities Sleeve Blocked Entire
+
+**Trigger:** The pre-publication booking trigger check (the DOW rule) fired on the engine's #2 consensus pick (EVRG, Ophelia, 17.8%) and #5 (AES, Cecil, 6.9%), plus both of Ophelia's promotion backups (NI, AEP). All four are utilities and all four fail the same falsifiable, repo-stated gate: `wiki/utilities.md` line 112 declares the sector's own bias verbatim -- **"Bias: bearish below $43.00, full-stop."** XLU closed **$42.39** (macro/facts.json sector_etf.XLU, 2026-09-11), 61 cents inside that zone, with the 50D ($44.22) crossed below the 200D (mini death-cross, utilities.md line 103), the 10Y at 4.975% (2.5bp from the 5.00% crisis line) and an ~87-90%-priced hike landing Wednesday Sep 16. AES was **already trigger-blocked once** under this rule on 2026-08-31 at a 10Y of 4.72%; the 10Y is now 25bp higher, so the blocking condition has worsened, not healed.
+
+**Booked (official, Tracker-measured):** ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% / cash 40.2%.
+
+**Shadow (what the unconstrained engine book would have been):** ALL 18.3% / EVRG 17.8% / PSX 16.7% / HIG 14.8% / AES 6.9% / cash 25.5% -- the pipeline's post-risk-control consensus book with no booking trigger check applied.
+
+**Overlap:** ALL, PSX, HIG.
+
+**Divergence detail:** The blocked weight (EVRG 17.8% + AES 6.9% = 24.7%) was **not** renormalized into the surviving picks. One promotion was made -- DE at the 10.0% minimum position floor, Marky's #3 and the next candidate that passes its own trigger -- and the remaining 14.7% was left as cash. Concentrating a book because two names were blocked would invert the purpose of the block. A deliberate second choice is recorded here: XLU's next level down is $42.23 and XLU closed $42.39, so a trigger written against $42.23 rather than the wiki's stated $43.00 would have let both utility picks through. That was refused as trigger-shopping.
+
+**Resolution:** Counterfactual to be computed next Monday (2026-09-21), date-pinned Mon 2026-09-14 close -> Fri 2026-09-18 close: the EVRG/AES shadow book (25.5% cash variant) against the official booked week. The specific question this entry exists to answer: **did blocking the utilities sleeve the day before an ~88%-priced hike protect the book, or did it cost the book the relief trade that wiki/utilities.md itself calls "the fastest money on the board" if the hike reads as finishing something?** Both directions are live and the entry is written before the answer is known.
+
+---
+
 ### Week of 2026-08-31 -- TRIGGER BLOCK: AES Dropped at Booking (DOW Rule)
 
 **Trigger:** The pre-publication booking trigger check (2026-08-10 doctrine -- the DOW rule) fired on Cecil's engine #3. AES's thesis as documentable from repo evidence is the defensive-yield / bond-proxy framing, and the Council's own condition for that trade -- Ophelia's "won't touch bond proxies until the 10-year backs off 4.60%" (wiki/synthesis.md, Consensus Synthesis) -- is VIOLATED as of booking: 10Y 4.72% (macro/facts.json, 2026-08-29). Reinforced by the synthesis "zero utilities" posture, the XLU "Short/avoid; trend broken" watchlist line, and XLU's technicals (below the $43.00 broken floor; 50D $44.69 / 200D $44.71 unreclaimed -- wiki/utilities.md Technical Levels). VICI's -3.00% close this same morning (booked 1bp from its own 10Y invalidation) is the second thin-margin rate-sensitive loss in three weeks.
