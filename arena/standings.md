@@ -36,6 +36,12 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 **Basis note (2026-07-27):** player alpha uses the Arena SPY basis (Mon open 744.91 -> Fri close 747.03, +0.28%). The Council's return/alpha come from the Tracker's own basis (SPY +0.71% that week). Both books are Monday-entry -> Friday-close.
 
-**Open week:** No new Arena entries locked yet for the week of 2026-09-08 -- both players' picks are pending submission (week-open shifted a day for Labor Day). The Council IS in this week: LMT 13.3% / ETN 13.3% + 73.4% cash (see `reports/2026-09-08-report.md`). This row will be filled in once both players lock their picks; do not fabricate entries in their names.
+**Open week (2026-09-14):** **GrandMastaShake is locked in** — XOM 20% / MO 20% / TSM 15% / CBOE 15% / DDOG 10%, 20% cash (comment posted 07:25 ET, before the 08:50 lock). See `arena/2026-09-14.yaml`; scored at Friday 2026-09-18's close.
+
+**Umassalum did NOT enter this week, and the reason is a process failure worth recording.** Her entry on the still-open Arena issue #83 (NVDA 30 / MSOS 30 / TMO 20 / GE 20) was posted 2026-09-07 at 07:50 ET — a valid, before-the-lock entry for the **week of 2026-09-07**. That week was Labor Day, no `arena/2026-09-07.yaml` was ever opened, and her picks were never scored or acknowledged. The 2026-09-08 session logged that "neither real player had submitted picks," which was **incorrect** — she had. Her entry was not carried forward into 2026-09-14, because booking a week-old submission as if it were this week's would fabricate an entry in her name (the standing rule on this line). She has been asked directly, in the issue thread, to re-enter on the week of 2026-09-21 issue.
+
+**Entry-basis note (2026-09-14):** the provider's Monday daily bar carried a stale Open field (a verbatim copy of Friday 2026-09-11's open) that fell outside the same day's high/low range for 5 of 7 tickers. Those opens were rejected as impossible rows; four of the five entries are recorded at the live Monday price read ~09:42 ET (`live_intraday_open_unavailable`), DDOG at a validated `open`. Exit basis is unchanged (Friday close). The Council's book is on the Tracker's own basis (Friday 2026-09-11 closes) for the same reason — so this week's Council-vs-player comparison carries a wider basis gap than usual and should be read with that caveat.
+
+**The Council IS in this week:** ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% + 40.2% cash (see `reports/2026-09-14-report.md`). No prior Arena week was scored this session: `arena/2026-08-31.yaml` was already closed by the 2026-09-08 run, and no yaml was ever opened for 2026-09-07 or 2026-09-08.
 
 *May the best thesis win.* 🏛️
