@@ -202,9 +202,25 @@ def _enforce_risk_controls(portfolio: Dict[str, float],
         if not changed:
             break
 
+    # MAX-CAP ORDERING FIX (2026-09-13). This used to be a plain
+    # `v / total` renormalisation to sum 1.0, which pushed every position back
+    # over MAX_ALLOCATION -- the loop above caps, this undid the cap. With
+    # fewer than ceil(1/MAX_ALLOCATION) names the two constraints cannot both
+    # hold and the renormalise won silently (a two-name book came out at 50%
+    # per position against a 30% cap). The fixed 0.40 sponsor cap below used
+    # to mask it by scaling a one-sponsor bloc down first; the adaptive cap
+    # lifts that mask, so the latent bug would have become a live one.
+    #
+    # A position limit means the book holds at most n * MAX_ALLOCATION. Scale
+    # toward fully invested, but stop when the largest position reaches the
+    # cap. The remainder is cash.
     total = sum(adjusted.values())
     if total > 0:
-        adjusted = {k: v / total for k, v in adjusted.items()}
+        largest = max(adjusted.values())
+        scale = 1.0 / total
+        if largest > 0:
+            scale = min(scale, MAX_ALLOCATION / largest)
+        adjusted = {k: v * scale for k, v in adjusted.items()}
 
     # Per-sponsor exposure cap: no agent may hold more than 40% of the book.
     # Offending sponsors are scaled down pro-rata (their picks keep their
