@@ -4,33 +4,73 @@ Ported from lib/engine/consensus.ts
 """
 
 from typing import Dict, List, Any, Optional
+import os
+
 from scan_pipeline.engines.personality import (
     AIPersonality,
+    realized_hit_counts,
     generate_opening_statement,
     generate_rebuttal,
     ConversationTurn,
-    realized_hit_rates,
 )
 from scan_pipeline.config.tickers import ENGINE_CONFIG
 
-# Rolling-accuracy dampener floor: a persona at 0% trailing realized hit rate
-# keeps 25% of its raw vote — cold streaks discount a vote, never zero it.
-HIT_RATE_FLOOR = 0.25
+# Merit weighting (rewritten 2026-09-13).
+#
+# The vote used to be picksAccuracy * max(HIT_RATE_FLOOR, realized_hit_rate).
+# Those are two measures of the SAME quantity -- picksAccuracy is an EMA of
+# realized weekly hit rates, realized_hit_rate is the pooled fraction -- so
+# multiplying them squared the signal. Third instance of the same
+# double-counting bug (pick_confidence x consensus dampener was the first).
+# It produced a 4.50x Cecil:Marky vote ratio out of 24 closed positions whose
+# Wilson intervals -- [0.27,0.73], [0.00,0.39], [0.05,0.70] -- overlap almost
+# entirely. The data cannot tell these three agents apart; the weighting said
+# otherwise with great confidence.
+#
+# One measure now, shrunk toward the pooled hit rate in proportion to how
+# little evidence the agent actually has:
+#
+#     weight_i  proportional to  (hits_i + K * pooled) / (total_i + K)
+#
+# K is the prior's strength in pseudo-observations. K=0 is the raw rate and
+# silences a 0-for-6 agent outright; K=10 gives Cecil:Marky 2.07x; K=24 (prior
+# worth as much as the whole record) gives 1.48x. An agent with no closed
+# history lands exactly on the prior instead of an arbitrary floor -- which is
+# why the old hard floor is gone: shrinkage does that job continuously and
+# scales with evidence rather than ignoring it.
+MERIT_PRIOR_STRENGTH = float(os.environ.get("COUNCIL_MERIT_PRIOR", "10") or 10)
 
 # Per-sponsor exposure cap on the final book. Weight freed by the cap is NOT
 # redistributed; tracker.py books the residual as cash (weights may sum < 1).
 MAX_AGENT_EXPOSURE = 0.40
 
 
-def _dampened_accuracy(name: str, accuracy: float, hit_rates: Dict[str, float]) -> float:
-    """Dampener f(hit_rate) = max(0.25, hit_rate), applied pre-normalization.
+def merit_weights(names, counts=None, prior_strength: Optional[float] = None) -> Dict[str, float]:
+    """Normalized vote weights, empirical-Bayes shrunk toward the pooled rate.
 
-    Sponsors with no realized history yet are unpenalized (factor 1.0).
+    Equal weights when there is no closed history at all: with no evidence, no
+    agent has earned a bigger vote than another.
     """
-    hit_rate = hit_rates.get(name)
-    if hit_rate is None:
-        return accuracy
-    return accuracy * max(HIT_RATE_FLOOR, hit_rate)
+    names = list(names)
+    if not names:
+        return {}
+    K = MERIT_PRIOR_STRENGTH if prior_strength is None else prior_strength
+    counts = realized_hit_counts() if counts is None else counts
+
+    hits = sum(h for h, _ in counts.values())
+    total = sum(n for _, n in counts.values())
+    if total <= 0:
+        return {n: 1.0 / len(names) for n in names}
+    pooled = hits / total
+
+    raw = {}
+    for name in names:
+        h, n = counts.get(name, (0, 0))
+        raw[name] = (h + K * pooled) / (n + K) if (n + K) > 0 else pooled
+    s = sum(raw.values())
+    if s <= 0:
+        return {n: 1.0 / len(names) for n in names}
+    return {n: v / s for n, v in raw.items()}
 
 
 class ConsensusResult:
@@ -71,22 +111,15 @@ def aggregate(
     marky = personas.get("Marky")
     ophelia = personas.get("Ophelia")
 
-    cecil_accuracy = cecil.stats.picksAccuracy if cecil else 0.33
-    marky_accuracy = marky.stats.picksAccuracy if marky else 0.33
-    ophelia_accuracy = ophelia.stats.picksAccuracy if ophelia else 0.33
-
-    # Dampen raw accuracies by trailing realized hit rate BEFORE normalization.
-    hit_rates = realized_hit_rates()
-    cecil_accuracy = _dampened_accuracy("Cecil", cecil_accuracy, hit_rates)
-    marky_accuracy = _dampened_accuracy("Marky", marky_accuracy, hit_rates)
-    ophelia_accuracy = _dampened_accuracy("Ophelia", ophelia_accuracy, hit_rates)
-
-    total_accuracy = cecil_accuracy + marky_accuracy + ophelia_accuracy
-    if total_accuracy == 0:
-        total_accuracy = 1.0
-    cecil_weight = cecil_accuracy / total_accuracy
-    marky_weight = marky_accuracy / total_accuracy
-    ophelia_weight = ophelia_accuracy / total_accuracy
+    # Single shrunk merit measure. picksAccuracy is still maintained on the
+    # persona and still reported; it is simply no longer multiplied by a second
+    # estimate of the same thing. See MERIT_PRIOR_STRENGTH above.
+    _w = merit_weights(["Cecil", "Marky", "Ophelia"])
+    cecil_weight = _w["Cecil"]
+    marky_weight = _w["Marky"]
+    ophelia_weight = _w["Ophelia"]
+    print("[consensus] vote weights (prior K=%g): Cecil %.1f%% / Ophelia %.1f%% / Marky %.1f%%"
+          % (MERIT_PRIOR_STRENGTH, cecil_weight * 100, ophelia_weight * 100, marky_weight * 100))
 
     scores: Dict[str, Dict[str, Any]] = {}
 

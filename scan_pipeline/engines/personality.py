@@ -396,6 +396,25 @@ def load_closed_weeks(history_dir: str = DEFAULT_HISTORY_DIR) -> Dict[str, Dict[
     return weeks
 
 
+def realized_hit_counts(history_dir: str = DEFAULT_HISTORY_DIR) -> Dict[str, tuple]:
+    """{sponsor: (hits, total)} across all closed history weeks.
+
+    A rate alone discards the sample size, and the sample sizes here are tiny:
+    as of 2026-09-13 the whole record is 24 closed positions -- Cecil 7/14,
+    Marky 0/6, Ophelia 1/4. The Wilson intervals are [0.27, 0.73], [0.00, 0.39]
+    and [0.05, 0.70]: they overlap almost completely, so the data cannot in
+    fact tell these three agents apart. Callers that weight by merit need the
+    counts to know how much to trust the rate.
+    """
+    totals: Dict[str, List[int]] = {}
+    for sponsors in load_closed_weeks(history_dir).values():
+        for sponsor, entry in sponsors.items():
+            agg = totals.setdefault(sponsor, [0, 0])
+            agg[0] += entry["hits"]
+            agg[1] += entry["total"]
+    return {s: (h, n) for s, (h, n) in totals.items()}
+
+
 def realized_hit_rates(history_dir: str = DEFAULT_HISTORY_DIR) -> Dict[str, float]:
     """Trailing realized hit rate per sponsor across all closed history weeks.
 
