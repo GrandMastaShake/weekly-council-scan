@@ -56,10 +56,21 @@ class AgentStats:
 
 @dataclasses.dataclass
 class Journal:
-    latestEntry: str = ""
+    """Realized win/loss memory for one persona.
+
+    `latestEntry` and `beliefs` were removed 2026-09-13. They were hardcoded
+    strings, identical to the class defaults in every persona, never updated
+    and never read by any scoring path -- state that looked like evolving
+    agent memory and was not. The prose journals in journals/*.md are the real
+    learning artifact, and STEP 1a of the Monday Council now loads them.
+
+    What remains is genuine: bigWins/bigLosses are the rolling last five
+    realized outcomes, and lastBigWin/lastBigLoss are surfaced in the report
+    beside each agent's proposals so the scar is visible where the picks are.
+    """
+
     bigWins: List[WeeklyResult] = dataclasses.field(default_factory=list)
     bigLosses: List[WeeklyResult] = dataclasses.field(default_factory=list)
-    beliefs: List[str] = dataclasses.field(default_factory=list)
     lastBigWin: Optional[WeeklyResult] = None
     lastBigLoss: Optional[WeeklyResult] = None
 
@@ -100,7 +111,6 @@ class AIPersonality:
         traits = Traits(**d.get("traits", {}))
         journal_d = d.get("journal", {})
         journal = Journal(
-            latestEntry=journal_d.get("latestEntry", ""),
             bigWins=[WeeklyResult(**w) for w in journal_d.get("bigWins", [])],
             bigLosses=[WeeklyResult(**w) for w in journal_d.get("bigLosses", [])],
             beliefs=journal_d.get("beliefs", []),
@@ -192,11 +202,6 @@ CECIL_PERSONALITY = AIPersonality(
     riskPreference="conservative",
     traits=Traits(confidence=65, skepticism=90, adaptability=30, collaboration=60),
     journal=Journal(
-        latestEntry="The market is a noisy cocktail party. I prefer the quiet library of compounding returns.",
-        beliefs=[
-            "If you can't pay a dividend, you're just a concept art project.",
-            "Time in the market beats timing the market, but value beats everything.",
-        ]
     ),
     stats=AgentStats(picksAccuracy=0.5, portfolioContribution=0.0, confidenceCalibration=0.5, consensusInfluence=0.33, learningTrajectory="stable"),
     evolution=Evolution(strategySince=_TODAY, recentAdjustments=[], nextWeekPriority="Find the 'Aristocrats' that everyone else has abandoned for shiny toys.")
@@ -211,11 +216,6 @@ MARKY_PERSONALITY = AIPersonality(
     riskPreference="aggressive",
     traits=Traits(confidence=85, skepticism=20, adaptability=95, collaboration=50),
     journal=Journal(
-        latestEntry="I feel the electricity in the order book. Something big is about to break.",
-        beliefs=[
-            "Catch the falling knife if it bounces hard enough.",
-            "Trend is friend until the bend at the end.",
-        ]
     ),
     stats=AgentStats(picksAccuracy=0.5, portfolioContribution=0.0, confidenceCalibration=0.5, consensusInfluence=0.33, learningTrajectory="stable"),
     evolution=Evolution(strategySince=_TODAY, recentAdjustments=[], nextWeekPriority="Hunt for the 'Golden Cross'. Ride the lightning.")
@@ -230,11 +230,6 @@ OPHELIA_PERSONALITY = AIPersonality(
     riskPreference="moderate",
     traits=Traits(confidence=95, skepticism=85, adaptability=70, collaboration=40),
     journal=Journal(
-        latestEntry="The storm does not care for your P/E ratios. The liquidity is shifting, and I am the only one watching the dam.",
-        beliefs=[
-            "Don't fight the Fed, and don't ignore the war drums.",
-            "Cash is a position. Panic is an opportunity.",
-        ]
     ),
     stats=AgentStats(picksAccuracy=0.5, portfolioContribution=0.0, confidenceCalibration=0.5, consensusInfluence=0.33, learningTrajectory="stable"),
     evolution=Evolution(strategySince=_TODAY, recentAdjustments=[], nextWeekPriority="Identify sectors that survive stagflation. Hedge the risk.")

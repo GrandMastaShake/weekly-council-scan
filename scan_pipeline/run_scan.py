@@ -66,14 +66,43 @@ def init_personas(state: Dict[str, Any]) -> Dict[str, Any]:
             "Ophelia": OPHELIA_PERSONALITY,
         }
     else:
-        from scan_pipeline.engines.personality import AIPersonality, Traits, Journal, AgentStats, Evolution
+        from scan_pipeline.engines.personality import AIPersonality, Traits, Journal, AgentStats, Evolution, WeeklyResult
+        import dataclasses as _dc
+
+        def _only_known(cls, d):
+            """Drop keys the dataclass no longer declares.
+
+            These were plain ``Cls(**d)`` splats, so removing or renaming any
+            field in Traits/Journal/AgentStats/Evolution made every previously
+            saved personas.json raise TypeError on load -- a state file written
+            last week could brick this week's scan. Journal.latestEntry and
+            Journal.beliefs were removed 2026-09-13 and did exactly that.
+            Filtering to declared fields makes old state forward-compatible;
+            the stale keys drop out on the next save.
+            """
+            known = {f.name for f in _dc.fields(cls)}
+            return {k: v for k, v in (d or {}).items() if k in known}
+
         def rebuild(p):
             if isinstance(p, AIPersonality):
                 return p
-            t = Traits(**p.get("traits", {}))
-            j = Journal(**p.get("journal", {}))
-            s = AgentStats(**p.get("stats", {}))
-            ev = Evolution(**p.get("evolution", {})) if p.get("evolution") else None
+            t = Traits(**_only_known(Traits, p.get("traits", {})))
+            _jd = _only_known(Journal, p.get("journal", {}))
+            # Coerce nested records. from_dict() builds WeeklyResult objects
+            # here; this path used to leave raw dicts, so the two deserializers
+            # produced different types for the same field and anything reading
+            # .date/.result off a rebuilt persona got nothing.
+            for _k in ("bigWins", "bigLosses"):
+                _jd[_k] = [w if isinstance(w, WeeklyResult) else WeeklyResult(**w)
+                           for w in (_jd.get(_k) or [])]
+            for _k in ("lastBigWin", "lastBigLoss"):
+                _v = _jd.get(_k)
+                if _v is not None and not isinstance(_v, WeeklyResult):
+                    _jd[_k] = WeeklyResult(**_v)
+            j = Journal(**_jd)
+            s = AgentStats(**_only_known(AgentStats, p.get("stats", {})))
+            ev = (Evolution(**_only_known(Evolution, p.get("evolution", {})))
+                  if p.get("evolution") else None)
             return AIPersonality(
                 name=p["name"],
                 archetype=p["archetype"],
@@ -389,6 +418,26 @@ def generate_report(
     for proposal in (cecil_proposal, marky_proposal, ophelia_proposal):
         agent = proposal.get("agent", "Unknown")
         lines.append(f"### {agent} ({archetypes.get(agent, 'Analyst')})")
+        # Realized memory, surfaced 2026-09-13. bigWins/bigLosses were written
+        # every week and read by nothing. Showing the last big win and last big
+        # loss here puts each agent's own scar directly beside the picks they
+        # are making this week.
+        _p = personas.get(agent) if isinstance(personas, dict) else None
+        _j = getattr(_p, "journal", None)
+        if _j is not None:
+            _shown = False
+            for _label, _rec in (("Last big win", getattr(_j, "lastBigWin", None)),
+                                 ("Last big loss", getattr(_j, "lastBigLoss", None))):
+                if _rec is not None:
+                    _shown = True
+                    lines.append(
+                        f"*{_label}: {getattr(_rec, 'date', '?')} — "
+                        f"{getattr(_rec, 'thesis', '?')} "
+                        f"({getattr(_rec, 'result', 0.0) * 100:+.2f}%)*"
+                    )
+            if not _shown:
+                lines.append("*No big win or big loss on record yet.*")
+            lines.append("")
         for stock in proposal.get("stocks", []):
             thesis = stock.get("thesis", "")
             confidence = stock.get("confidence", 0)
