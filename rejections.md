@@ -14,7 +14,20 @@ Booked: LMT 13.3% / ETN 13.3% (73.4% cash -- Council Review posture, 3 regime fl
 | VST | 78 | 60.0 | Same scarcity thesis as CEG, same min-size floor; her own doctrine this week ("hold reduced exposure into CPI") argues against chasing a decoupling trade she doesn't trust will survive the next rate move |
 | MO | 71 | 55.5 | Real-yield basket name, screens cheap against a 4.8% 10-year -- dropped by the same min-size floor, not by conviction |
 
-counterfactual: to be computed (date-pinned Mon 2026-09-08 close -> Fri 2026-09-11 close at the next weekly run).
+counterfactual (computed 2026-09-14, date-pinned Mon 2026-09-08 close -> Fri 2026-09-11 close):
+
+| Ticker | Mon Close | Fri Close | Return |
+|---|---|---|---|
+| CEG | $299.05 | $284.75 | -4.78% |
+| VST | $151.72 | $148.38 | -2.20% |
+| MO | $68.17 | $68.98 | +1.19% |
+| **Equal-weighted basket** | | | **-1.93%** |
+| **Official booked week (2026-09-08)** | | | **+0.08%** |
+| **Delta (rejected - booked)** | | | **-2.01%** |
+
+Second straight week the rejected basket lost to the book, and the second straight week the loss came from the thesis Ophelia herself distrusted. CEG -4.78% and VST -2.20% are the scarcity/rate-decoupling pair she scored 80 and 78 while writing in the same breath that she doubted the decoupling would survive the next rate move -- and the week delivered exactly that rate move (10Y 4.975%, four straight 52W-high closes, per wiki/canary-watch.md 2026-09-13). Only MO, the real-yield basket name, finished green (+1.19%). The min-size floor that dropped all three has now saved the book 650bp and 201bp on consecutive weeks.
+
+Running note on this log's founding suspicion: after two scored weeks against it, "Ophelia's rejections beat the book" is not holding. Her scores are picking up real theses; her own stated doubts are the better predictor of which ones fail.
 
 ---
 
