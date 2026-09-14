@@ -31,7 +31,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Tuple
 
-from scan_pipeline.config.tickers import STOCK_UNIVERSE
+from scan_pipeline.config.tickers import STOCK_UNIVERSE, scan_universe
 from scan_pipeline.utils.data_utils import (
     PE_MAP,
     PriceHistory,
@@ -452,7 +452,7 @@ class MarketDataFetcher:
         # ------------------------------------------------------------------
         # 3. Fetch universe + batch parallel
         # ------------------------------------------------------------------
-        all_tickers = list(STOCK_UNIVERSE) + ["SPY"]
+        all_tickers = list(scan_universe(scan_date)) + ["SPY"]
         # dedupe just in case
         all_tickers = list(dict.fromkeys(all_tickers))
         batch = self._fetch_batch(all_tickers)
@@ -476,14 +476,14 @@ class MarketDataFetcher:
         # ------------------------------------------------------------------
         # 4b. Refresh real P/E map (weekly-cached, yfinance trailing P/E)
         # ------------------------------------------------------------------
-        pe_ok, pe_failed = refresh_pe_map(STOCK_UNIVERSE, friday_str, self.max_workers)
+        pe_ok, pe_failed = refresh_pe_map(scan_universe(scan_date), friday_str, self.max_workers)
         print(f"[fetch_market_data] P/E refresh: {pe_ok} real P/Es, {pe_failed} unavailable (deterministic fallback)")
 
         # ------------------------------------------------------------------
         # 5. Build stockData (PE, sector, context, real fundamentals, risk)
         # ------------------------------------------------------------------
         stock_data: Dict[str, dict] = {}
-        for t in STOCK_UNIVERSE:
+        for t in scan_universe(scan_date):
             ret = weekly_returns.get(t, 0.0)
             pe = get_pe(t, friday_str)
             sector = get_sector(t)

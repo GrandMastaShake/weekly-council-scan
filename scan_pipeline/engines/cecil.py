@@ -4,7 +4,7 @@ Ported from lib/engine/fundamental.ts
 """
 
 from typing import Dict, List, Optional, Any
-from scan_pipeline.config.tickers import STOCK_UNIVERSE
+from scan_pipeline.config.tickers import STOCK_UNIVERSE, scan_universe
 from scan_pipeline.utils.data_utils import (
     PE_MAP,
     get_pe,
@@ -27,7 +27,7 @@ def analyze(market_data: Dict[str, Any], date: Optional[str] = None) -> Dict[str
     signals = wiki_signals.get_signals()
 
     scores = []
-    for ticker in STOCK_UNIVERSE:
+    for ticker in scan_universe(date):
         pe = get_pe(ticker, date)
         weekly_return = weekly_returns.get(ticker, 0.0)
         stock = stock_data.get(ticker, {})

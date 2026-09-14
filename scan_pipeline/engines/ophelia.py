@@ -5,7 +5,7 @@ Ported from lib/engine/macro.ts
 
 import math
 from typing import Dict, List, Any, Optional
-from scan_pipeline.config.tickers import STOCK_UNIVERSE
+from scan_pipeline.config.tickers import STOCK_UNIVERSE, scan_universe
 from scan_pipeline.utils.data_utils import (
     get_sector,
     get_price_history,
@@ -41,7 +41,7 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     # on (the old exact-date lookup missed whenever the scan date wasn't a
     # Friday and left every sector "Unknown").
     sector_returns: Dict[str, List[float]] = {}
-    for ticker in STOCK_UNIVERSE:
+    for ticker in scan_universe(date):
         sector = get_sector(ticker)
         history = get_price_history(ticker, date, 2, price_cache)
         if len(history) >= 2:
@@ -84,7 +84,7 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
         market_regime = "bearish"
 
     scores = []
-    for ticker in STOCK_UNIVERSE:
+    for ticker in scan_universe(date):
         sector = get_sector(ticker)
         weekly_return = weekly_returns.get(ticker, 0.0)
         history = get_price_history(ticker, date, 4, price_cache)

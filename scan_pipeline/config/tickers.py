@@ -126,3 +126,29 @@ ENGINE_CONFIG = {
     "big_win_threshold": 0.03,
     "big_loss_threshold": -0.03,
 }
+
+
+# ---------------------------------------------------------------------------
+# Scan universe resolution (2026-09-13)
+# ---------------------------------------------------------------------------
+def scan_universe(as_of=None):
+    """The tickers the engines actually score.
+
+    Defaults to STOCK_UNIVERSE. With COUNCIL_SCAN_SOURCE=panel it resolves to
+    whatever the committed weekly panel can support, which is wider and far
+    less large-cap-skewed: measured against the 110-name curated watchlist,
+    STOCK_UNIVERSE reaches 89/74/59/10 percent of Mega/Large/Mid/Micro names,
+    and the panel reaches 100 percent of every tier. Delisted names drop out on
+    their own because the feed records them in missing[] and never writes a bar.
+
+    Imported lazily: panel_source imports data_utils, which imports this
+    module, so a top-level import would be circular.
+    """
+    try:
+        from scan_pipeline import panel_source
+    except Exception:
+        return STOCK_UNIVERSE
+    if not panel_source.enabled():
+        return STOCK_UNIVERSE
+    names = panel_source.universe(as_of=as_of)
+    return names or STOCK_UNIVERSE

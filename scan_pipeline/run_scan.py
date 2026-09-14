@@ -471,6 +471,21 @@ def main() -> None:
     # Fetch data
     market_data, price_cache, pe_cache = fetch_all_data(STOCK_UNIVERSE, date)
 
+    # PANEL SOURCE (2026-09-13, opt-in via COUNCIL_SCAN_SOURCE=panel). Prefer
+    # the committed weekly panel for price history: it is already fetched,
+    # gate-verified and pushed by Friday's feed job, and it covers every cap
+    # tier rather than skewing 5x toward mega caps. Live bars are kept for any
+    # name the panel cannot support, so this only ever widens coverage.
+    from scan_pipeline import panel_source as _panel
+    if _panel.enabled():
+        _pc = _panel.load_price_cache(as_of=date)
+        if _pc:
+            _merged = dict(price_cache or {})
+            _merged.update(_pc)
+            price_cache = _merged
+            print("[panel] price history from committed panel: %d tickers "
+                  "(live cache had %d)" % (len(_pc), len(pe_cache or {}) or 0))
+
     # Update date to latest available if not explicitly provided
     if not args.date:
         spy_histories = price_cache.get("SPY", [])

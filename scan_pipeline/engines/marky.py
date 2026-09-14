@@ -6,7 +6,7 @@ Ported from lib/engine/technical.ts
 import json
 import os
 from typing import Dict, List, Any, Optional
-from scan_pipeline.config.tickers import STOCK_UNIVERSE
+from scan_pipeline.config.tickers import STOCK_UNIVERSE, scan_universe
 from scan_pipeline.utils.data_utils import (
     get_sector,
     get_price_history,
@@ -63,7 +63,7 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     ten_y = load_10y_yield()
 
     scores = []
-    for ticker in STOCK_UNIVERSE:
+    for ticker in scan_universe(date):
         sector = get_sector(ticker)
         # (d) Vol/trend windows lengthened 4 -> 12 weeks. data_utils returns
         # whatever history exists, so short tapes degrade to what is there.
