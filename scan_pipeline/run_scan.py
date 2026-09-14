@@ -354,7 +354,25 @@ def generate_report(
     lines.append("")
 
     # Council Debate
+    #
+    # NOTE (2026-09-13): these turns are TEMPLATE-GENERATED persona flavour, not
+    # deliberation. personality.generate_rebuttal picks one of three canned lines
+    # per archetype by template_hash(ticker, ...) and substitutes {ticker} and
+    # {target}; it receives the other agent's proposal and reads only its ticker,
+    # never its thesis. Nine distinct lines exist in total. They sat under a
+    # heading one word away from "## Council Deliberation" -- which IS real,
+    # agent-written reasoning appended at the end of the report -- so a reader
+    # could not tell them apart. The disclaimer below makes that unmissable.
+    # The heading itself is retained because build_report.py anchors on it.
     lines.append("## Council Debate")
+    lines.append("")
+    lines.append("*Generated persona flavour, not deliberation: each line is drawn "
+                 "from a fixed nine-line template set selected by ticker hash, and "
+                 "does not read the other agent's thesis. The Council's actual "
+                 "reasoning -- dissonance, evidence cited per side, verdicts and "
+                 "concessions -- is in **Council Deliberation** at the end of this "
+                 "report.*")
+    lines.append("")
     for turn in consensus_result.get("conversation", []):
         lines.append(f"**{turn['persona']}:** *{turn['thought']}*")
         lines.append(f"> {turn['dialogue']}")
