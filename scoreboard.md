@@ -232,7 +232,8 @@ If any rule triggers, note it in the scorecard header.
 ## HISTORICAL SCOREBOARD (Living Archive)
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
-|-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+|-------------|
+| 2026-09-08 | 0.08% | 50% | TBD | TBD | ETN (1.01%) | LMT (-0.39%) | 73.4% |---------------|----------|----------------|-------------------|-----------|------------|--------|
 | 2026-09-08 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x4) | Ophelia (CEG/VST proposed at unchanged conviction despite stated durability doubt) | LMT (A-) | ETN (B) | 73.4% |
 | 2026-08-31 | -0.04% (Tracker P&L) | 0% | TBD | TBD | ALL (-0.21%) | HIG (-0.08%) | 73.4% |
 | 2026-08-31 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x3) | Ophelia (engine rode the acquittal, doctrine rode the Fed; rejects lost 216bps) | ALL (A-) | HIG (B) | 73.4% |
