@@ -232,8 +232,9 @@ If any rule triggers, note it in the scorecard header.
 ## HISTORICAL SCOREBOARD (Living Archive)
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
-|-------------|
-| 2026-09-08 | 0.08% | 50% | TBD | TBD | ETN (1.01%) | LMT (-0.39%) | 73.4% |---------------|----------|----------------|-------------------|-----------|------------|--------|
+|-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-14 | B (3.13 -- analysis quality) | TBD (week open) | Cecil (3.42 -- LEAD, only agent to build independent invalidations) | Ophelia (REVISED: thesis/ticker mismatch -- scarcity thesis, regulated utilities; prior confidence-calibration flag RESOLVED) | ALL (A-) | DE (C+) | 40.2% |
+| 2026-09-08 | +0.08% (Tracker P&L) | 50% | TBD | TBD | ETN (+1.01%) | LMT (-0.39%) | 73.4% |
 | 2026-09-08 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x4) | Ophelia (CEG/VST proposed at unchanged conviction despite stated durability doubt) | LMT (A-) | ETN (B) | 73.4% |
 | 2026-08-31 | -0.04% (Tracker P&L) | 0% | TBD | TBD | ALL (-0.21%) | HIG (-0.08%) | 73.4% |
 | 2026-08-31 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x3) | Ophelia (engine rode the acquittal, doctrine rode the Fed; rejects lost 216bps) | ALL (A-) | HIG (B) | 73.4% |
@@ -275,9 +276,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-09-08 (Council session -- LMT/ETN booked 13.3% each, 73.4% cash into the CPI/FOMC gauntlet)
-**Next Audit:** 2026-09-14 (Tracker close of the 2026-09-08 week + Arena scoring)
-**Current Regime:** Restrictive -- VIX 15.30 (tested and failed 16.34, the "first crack" line), 10Y 4.79% (broke the 4.75% stress line for a 2nd straight week, 6bps from the 4.85% next line), DXY ~99.15 (broken 6th week, hawkish-rebuild thesis stalled), 3+ regime flags raised (Council Review posture); week gates: PPI Wed 9/10 (preview), August CPI Thu 9/11 (THE GATE), FOMC 9/15-16, BOJ 9/17-18 (hike odds 84-87%)
+**Last Updated:** 2026-09-14 (Council session -- ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0%, 40.2% cash; EVRG + AES trigger-blocked on the utilities gate)
+**Next Audit:** 2026-09-21 (Tracker close of the 2026-09-14 week + Arena scoring of arena/2026-09-14.yaml)
+**Current Regime:** Restrictive and tightening -- VIX 15.84 (+9.0% WoW; breached 16.50 intraweek to 17.84 Wed for the first time this cycle, closed back under), 10Y **4.975%** (four straight 52W-high closes, third week above the 4.75% stress line, **2.5bp from the 5.00% crisis line**), DXY ~99.12 (broken 7th week -- and still will not rally on ~88% hike odds, an unexplained anomaly), WTI **$100.05** (first $100+ settle of the conflict regime), **5 regime flags raised** (up from 3: CPI MoM >0.3% and Oil >$100 newly broken; DXY and 10Y intensified) -- Council Review posture intensifying, not resolving. Week gates: **FOMC Wed 9/16 (~87-90% priced) stacked with August Retail Sales + Industrial Production the same day**, BOJ 9/17-18 (84-87%), FDX prints Thu 9/17 (first live read from the oil front). Board-wide rule this week, written independently by every sector desk: **nothing gets added before 2:00 PM ET Wednesday.**
 
 ---
 
