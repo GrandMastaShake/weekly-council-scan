@@ -8,6 +8,8 @@
 
 *None.*
 
+**2026-09-14 review:** No active resting limits to re-bless -- the ledger is empty for a fifth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped, because "nothing to do" and "nobody looked" are indistinguishable in an empty file. Regime context for the absence: with the 10Y 2.5bp from the 5.00% crisis line and an ~88%-priced FOMC on Wednesday, the Council's own unanimous rule this week is *nothing gets added before 2:00 PM ET Wednesday* (wiki/synthesis.md Section 5) -- a resting below-market bid placed today would be a way of adding before Wednesday while telling yourself you had not. The empty ledger is the correct state this week, not an oversight.
+
 ## Filled / Cancelled
 
 *None.*
