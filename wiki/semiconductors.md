@@ -153,11 +153,11 @@ Two opposing stories hit the chip sector this week, and the supply-side one won.
 |---|---|---|---|---|
 | **IIT 2026 (Ion Implantation Tech.)** | ACLS | Sep 20-24, 2026 | — | Axcelis platinum-sponsor showcase. Any Purion product or customer disclosures |
 | **Xi Jinping White House visit (reported)** | — | Sep 24, 2026 | — | Export-control headline risk either way: remote-access/Chip Security Act tightening vs. a trade thaw |
-| **Q2 GDP (final) + Durable Goods (macro)** | — | Sep 25, 2026 | Q2 / August | Durable-goods orders are the closest monthly read on business capex |
-| **August PCE (macro)** | — | Sep 26, 2026 | August | The Fed's preferred gauge after a hot August core CPI (+0.3% MoM). A hot core PCE makes October-hike pricing the base case |
+| **Durable Goods (macro) + 2/5/7-yr Treasury auctions** | — | Sep 22-25, 2026 | August | Durable goods (Sep 25, cons -0.3%) is the closest monthly read on business capex, and the first data test of whether the AI-slowdown scare reached real orders. $192B of 2/5/7-yr supply lands with the 10Y at 5.00% |
+| **August PCE + Q2 GDP third estimate (macro)** | — | Sep 30, 2026 (8:30 AM) | August / Q2 | The Fed's preferred gauge after a hot August core CPI (+0.3% MoM), landing the same day as Micron. A hot core PCE makes October-hike pricing the base case |
 | **Micron** | MU | Sep 30, 2026 (after close) | FQ4 2026 | HBM allocation and 2027 sold-out commentary; DRAM/NAND pricing trajectory; capex; the Netlist ITC overhang; any read on whether the "pace the frontier" calls changed customer ordering |
 
-**Marky's Binary Event Read:** Next week is macro plus geopolitics. PCE on Friday is the inflation print the Fed says it watches most, and after this week's hike and dot plot a hot number would make October live. The Xi visit is the wildcard for export controls. Then the first real fundamental test of the slowdown narrative comes September 30 from Micron: if HBM and DRAM order books look unchanged, Monday's selloff gets filed as noise.
+**Marky's Binary Event Read:** Next week is Treasury supply plus geopolitics: $192B of 2/5/7-year auctions test the 10Y at 5.00%, durable goods (Fri) gives the first capex-orders read since the slowdown scare, and the Xi visit is the wildcard for export controls. Then September 30 stacks everything: August PCE, the inflation print the Fed says it watches most, lands at 8:30 AM, and after this week's hike and dot plot a hot number would make October live. The first real fundamental test of the slowdown narrative comes after the close that same day from Micron: if HBM and DRAM order books look unchanged, Monday's selloff gets filed as noise.
 
 ---
 
@@ -182,7 +182,7 @@ Two opposing stories hit the chip sector this week, and the supply-side one won.
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"My trigger fired. I said a 10Y close above 5.00% changes the regime call, and Wednesday it closed at 5.006%, the highest since July 2007, on the same day the Fed hiked and the dot plot promised more. Friday's 4.998% close keeps it technically a line crossed and retested, not a line broken on a weekly basis. But the dollar broke out too, and the BOJ is tightening. I am treating this as a hiking-cycle regime now. Semiconductors got through it this week because of scarcity, and I respect that, but I will size any semis exposure as if the 10Y stays at or above 5%. PCE on Friday decides October."*
+**Ophelia:** *"My trigger fired. I said a 10Y close above 5.00% changes the regime call, and Wednesday it closed at 5.006%, the highest since July 2007, on the same day the Fed hiked and the dot plot promised more. Friday's 4.998% close keeps it technically a line crossed and retested, not a line broken on a weekly basis. But the dollar broke out too, and the BOJ is tightening. I am treating this as a hiking-cycle regime now. Semiconductors got through it this week because of scarcity, and I respect that, but I will size any semis exposure as if the 10Y stays at or above 5%. PCE on September 30 decides October."*
 
 **Marky:** *"The chart did what charts do when a scary headline meets strong demand: gap down, base for two days, reclaim. SMH $568 to $541 to $573. The 50-day is back, Monday's $537.73 is the line in the sand, and Friday's fade from $580.81 says there's still supply up there. The rotation tell is equipment: LRCX and AMAT led the decline and led Friday's bounce, while the small caps sat it out. I want to see $581 taken out on a close before I call this more than a recovered range."*
 
