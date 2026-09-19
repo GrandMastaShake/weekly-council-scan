@@ -2,30 +2,30 @@
 
 > **Sector:** Information Technology | **ETF:** Technology Select Sector SPDR (XLK) | **Expense Ratio:** 0.08%
 >
-> *"The CPI that was supposed to settle September did both jobs at once: core ran hot at +0.3% M/M versus +0.2% expected, September hike odds finished Friday at ~87–90%, and the 10Y closed at 4.97% — yet stocks rallied because the worst case never showed. The sector's real action was idiosyncratic: AAPL +3.8% on John Ternus's debut keynote (iPhone 18 Pro +$100, the $2,000+ iPhone Duo foldable, pre-orders live Sep 12), ORCL's blowout Q1 (OCI +121%, RPO $664B, FY27 raised to >=$90B / $8.10 EPS) that gapped +7–8% and still closed red — sell-the-news on a beat-and-raise — while AMD +8.1% and INTC +7.4% answered NVDA's Vera CPU shot across the server-CPU bow and NVDA itself -5.1%, MU -4.1% gave back pieces of the memory trade into a near-5% 10Y. XLK finished $187.67 (+0.2% W/W): a flat tape stretched over the year's biggest Fed repricing."*
+> *"The hike everyone priced landed 12-0, the 10Y closed its first full week at 5.00% — and tech rallied anyway, because oil broke and the memory shortage got physical. Monday's AI-slowdown scare (SOX -5.9%) was fully reversed by Thursday's semis rip: INTC +7.7% on SK Hynix memory-JV reports, ARM +8.6%, AMD +6.4%, MU +5.5%. Friday's quad-witching follow-through put MU back over $1,000 and equipment (AMAT +6.5%, LRCX +7.0%) on the bid. XLK $189.60 (+1.0% W/W): the sector absorbed the year's biggest central-bank week and finished near the top of its range."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 1W Ago (Sep 4) | Change |
+| Metric | Current | 1W Ago (Sep 11) | Change |
 |---|---|---|---|
-| Price | $187.67 | $187.28 | +0.2% |
-| 52W Range | $126.68 – $198.73 | $126.68 – $198.73 | Range intact |
-| AUM | ~$115.4B | ~$115.4B | — |
-| YTD Return | +30.7% (price basis*) | +30.4% (price basis) | +0.3 pts |
-| 1Y Return | +39.3% | +43.2% | -3.9 pts |
-| P/E Ratio | ~33.2 (Yahoo trailing) | ~33.2 | Unchanged |
-| Dividend Yield | ~0.43% | ~0.43% | Unchanged |
-| Beta | 1.47 (3Y) | 1.47 | Unchanged |
+| Price | $189.60 | $187.67 | **+1.03% W/W** — second straight weekly gain |
+| 52W Range | $126.68 – $198.73 | $126.68 – $198.73 | Price now -4.6% below the June 2 peak |
+| AUM | ~$121.4B | ~$115.4B | +$6B on price + flows |
+| YTD Return | +32.0% (price basis*) | +30.7% | +1.3 pts |
+| 1Y Return | +36.7% | +39.3% | Base effects as the Sep 2025 leg rolls off |
+| P/E Ratio | ~33.6 (Yahoo trailing) | ~33.2 | Crept up with price |
+| Dividend Yield | ~0.43% | ~0.43% | — |
+| Beta | 1.47 (3Y) | 1.47 | — |
 | Total Holdings | 75 | 75 | — |
-| Avg Daily Volume | ~9.5M (3M) / ~6.1M (20D) | ~9.6M (3M) / ~6.0M (20D) | ~Flat |
+| Avg Daily Volume | ~7.4M this week | ~6.5M Friday prior | Quad-witching Friday was the heaviest tape |
 
-\* YTD strict price basis (XLK close 12/31/25 = $143.62). Friday's volume: 6.5M shares — heavier than last Friday's 5.1M but still below the 3M average; the week's heaviest tape was Thursday's PPI session (close $185.22). The 1Y return stepped down on base effects as the Sep 2025 recovery leg rolls off; Yahoo's trailing P/E held ~33.2.
+\* YTD strict price basis (XLK close 12/31/25 = $143.62). Week path: Mon $184.28, Tue $183.74 (week low), Wed $183.93, Thu $188.06, Fri $189.60.
 
-**Marky Tape Read:** A four-day week (Labor Day Sep 7) that went nowhere until it did. Tuesday and Wednesday printed IDENTICAL $187.87 closes — the tape literally froze ahead of the PPI/CPI double gate. Thursday's hot PPI (+0.4% M/M, 5.4% Y/Y) drove the week's only real down-leg to $185.22, which still stopped a full 1.4% above the 50D (~$182.73). Friday's CPI opened with a hot core (+0.3% vs +0.2% cons) and the tape rallied anyway: +1.3% to $187.67 on 6.5M shares as oil broke -2.4% and the hike repricing (~87–90%) was absorbed as "no worse than feared." RSI ~57.8 (14D), up from ~55.3 — neutral-positive, no divergence. Price sits above the 20D (~$185.53) and 50D (~$182.73); the golden cross vs the 200D (~$161.1) is untouched. Resistance: $187.87 (the Tue/Wed double close), then $188.61–$188.74, then the $190–$191.75 double top. Support: $185.22 (week low), the 50D, then $178.82–$180. Volume remains the yellow flag — sub-average rally days into a 90%-priced hike means nobody is fighting this tape in either direction.
+**Marky Tape Read:** A five-act week that tested everything and passed. **Monday** -1.8% to $184.28 — the AI-slowdown selloff (Amodei essay; SOX -5.9%, per the semis desk): NVDA -3.4%, MU -5.3%, INTC -5.6% on the day. **Tuesday** $183.74 — the week's low close, and THE tell: it held **above the 50D ($183.12) by 62 cents** on the same session the 10Y printed its first 5.00% close and WTI peaked at $105.83. **Wednesday** $183.93 — the 12-0 hike to 3.75–4.00% landed (Retail Sales +1.2% beat in the morning) and the tape yawned upward; post-decision yields dipped intraday. **Thursday** +2.2% to $188.06 — the verdict day: semis ripped (INTC +7.7% on SK Hynix Ohio memory-JV reports and foundry optimism, ARM +8.6%, AMD +6.4%, MU +5.5%) as Brent collapsed -5.7% to $98.87 on Saudi East-West pipeline restart hopes; S&P +1.1% / Nasdaq +1.7%, best day in six weeks. **Friday** +0.82% to $189.60 on quad witching — equipment finally joined (AMAT +6.51%, LRCX +6.98%) and MU reclaimed $1,000 ($1,015.80). RSI 58.2 with headroom; price sits above the 20D/50D/200D stack. The $190–$191.75 double top is the only door between here and the June high ($198.73). Volume is no longer the yellow flag it was — Thursday/Friday came with real participation.
 
-**Ophelia Macro Read:** The September hike is now the base case — the market priced it alone, in blackout. CPI (Fri Sep 11): headline +0.4% M/M / 3.4% Y/Y in line; CORE +0.3% M/M versus +0.2% consensus (a record +5.9% wireless-services spike did outsized damage), while core Y/Y eased to 2.4% — lowest since March 2021. PPI (Thu Sep 10): +0.4% M/M, 5.4% Y/Y headline, but core +0.2% a tenth UNDER consensus — an energy report (final demand energy +4.2%, diesel +24.1%). The market traded the headlines both days: hike odds went ~50% (a week ago) to ~66–72% post-PPI to ~87–90% post-CPI (CME FedWatch). The 10Y closed 4.97% (+19bp W/W from 4.784%), highest since 2023, kissing the 5.00% line; the 2Y sat ~4.56% post-PPI. DXY 99.12 — flat W/W again; the repricing still is not buying the dollar, which reads as policy-error pricing, not strength. WTI $100.05 (+9.4% W/W): Brent topped $108 Thursday on Strait of Hormuz / Red Sea shipping attacks, the seizure of Yemen's Mocha port, and hits on Saudi energy infrastructure; diesel printed a record ~$6/gal; Friday gave back -2.4%. FOMC Sep 15–16 (decision Wed) lands inside a communications blackout that began Sep 5. The capex engine still accelerates at the source: ORCL guided FY27 capex to $90–95B (net cash <=$70B), delivered 850MW in one quarter, and disclosed 4-year-old GPUs renewing at a +20% premium; the >$700B 2026 hyperscaler estimate (~$805B incl. ORCL, Morgan Stanley) stands. Next gates: FOMC Wed Sep 16, BOJ Sep 17–18, MU FQ4 ~Sep 22.
+**Ophelia Macro Read:** The hike arrived and the world did not end. **FOMC Wed Sep 16: +25bp to 3.75–4.00%, 12-0** — the market, which had priced it, was right; the curve's answer was hard bear-flattening: 2Y ~4.74%, 10Y **closed the week AT 5.00%** (path 4.96 / 5.00 / 5.01 / 4.95 / 5.00 — first weekly close at the line, highest since 2007), 30Y 5.35%, 2s10s ~+26bp (from +41bp). The bond market reads restrictive-longer, not one-and-done. It is a **synchronized global sovereign selloff**: gilts 4.99%, JGBs 2.94% (highest since 2011), Bunds 3.18%; ECB held at 2.5% hawkish (euro CPI 3.7%); BOJ hiked to 1.25% on a dovish 7-2 split (USD/JPY 157.93). Mortgage 6.95% (cycle high); HY OAS 270bp; housing starts 1.275M with permits falling to 1.394M. The week's mercy was oil: **WTI -4.6% W/W to $95.47** — Tuesday's $105.83 peak broke on Saudi East-West pipeline restart hopes (up to 2.5M bpd bypassing Hormuz; shut since the Sept 10 Houthi strikes), and Friday fell another -6.3%. **DXY 100.21 (+1.1% W/W)** — the dollar finally rallied after six weeks of refusing; read it as policy-acceptance, helped by the dovish BOJ split. VIX 14.81 (-6.5%). Data: Retail Sales +1.2% (beat), claims 196K (tight), Philly Fed 37.8 (re-acceleration), Empire 7.6. Crypto regulation detour: the CLARITY Act failed its Senate vote Wednesday (BTC under $76K) and the SEC answered Thursday with a five-year "Innovation Exemption" for tokenized stocks (Coinbase +5.8%). Next gates: **MU FQ4 Tue Sep 22**, core PCE Sep 30, jobs Oct 2, FOMC Oct 28.
 
 ---
 
@@ -33,23 +33,23 @@
 
 | Rank | Ticker | Name | Weight | Price | Avg Target | Upside | Bullish % | Conviction |
 |---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA Corp | 12.64% | $218.29 (-5.13%) | $327.65 | +50.1% | ~94% | 🔥 |
-| 2 | AAPL | Apple Inc | 11.09% | $332.27 (+3.84%) | $324.40 | -2.4% | ~75% | ⚡ |
-| 3 | MSFT | Microsoft Corp | 7.23% | $495.63 (-0.81%) | $572.92 | +15.6% | ~93% | 🔥 |
-| 4 | AMD | Advanced Micro Devices | 4.71% | $516.13 (+8.07%) | $615.38 | +19.2% | ~88% | 🔥 |
-| 5 | MU | Micron Technology | 4.68% | $975.26 (-4.07%) | $1,513.11 | +55.1% | ~90% | 🔥 |
-| 6 | AVGO | Broadcom Inc | 4.67% | $361.99 (+1.14%) | $531.85 | +46.9% | ~93% | 🔥 |
-| 7 | INTC | Intel Corp | 4.20% | $102.94 (+7.45%) | $115.74 | +12.4% | ~58% | ⚠️ |
-| 8 | AMAT | Applied Materials | 3.66% | $456.49 (+0.39%) | $640.89 | +40.4% | ~88% | 🔥 |
-| 9 | LRCX | Lam Research | 3.45% | $298.22 (-3.07%) | $373.13 | +25.1% | ~88% | 🔥 |
-| 10 | CSCO | Cisco Systems | 2.96% | $112.13 (+2.68%) | $137.63 | +22.7% | ~80% | ⚡ |
+| 1 | NVDA | NVIDIA Corp | 12.64% | $222.27 (+1.82%) | $328.49 | +47.8% | ~94% | 🔥 |
+| 2 | AAPL | Apple Inc | 11.09% | $336.13 (+1.16%) | $327.84 | -2.5% | ~75% | ⚡ |
+| 3 | MSFT | Microsoft Corp | 7.23% | $493.78 (-0.37%) | $572.92 | +16.0% | ~93% | 🔥 |
+| 4 | AMD | Advanced Micro Devices | 4.71% | $559.82 (+8.46%) | $616.51 | +10.1% | ~88% | 🔥 |
+| 5 | MU | Micron Technology | 4.68% | $1,015.80 (+4.16%) | $1,513.11 | +48.9% | ~90% | 🔥 |
+| 6 | AVGO | Broadcom Inc | 4.67% | $357.61 (-1.21%) | $531.85 | +48.7% | ~93% | 🔥 |
+| 7 | INTC | Intel Corp | 4.20% | $108.60 (+5.50%) | $116.37 | +7.2% | ~58% | ⚠️ |
+| 8 | AMAT | Applied Materials | 3.66% | $444.57 (-2.61%) | $640.89 | +44.2% | ~88% | 🔥 |
+| 9 | LRCX | Lam Research | 3.45% | $288.11 (-3.39%) | $373.13 | +29.5% | ~88% | 🔥 |
+| 10 | CSCO | Cisco Systems | 2.96% | $109.51 (-2.34%) | $137.63 | +25.7% | ~80% | ⚡ |
 
 > 🔥 = Strong Buy consensus | ⚡ = Buy / Mixed | ⚠️ = Caution / Under pressure
-> Prices = Fri Sep 11 close with weekly change in parentheses. Targets = Yahoo Finance mean analyst target. Weights = last verified (Sep 4) — refreshed weights pending. Notable: AAPL's close ($332.27) is now ABOVE its mean target ($324.40) — the Street is fully harvested on the post-event mega-cap; NVDA's mean kept climbing ($327.13 → $327.65) through a -5.1% week.
+> Prices = Fri Sep 18 close; weekly change vs Fri Sep 11 close. Targets = Yahoo Finance mean analyst target (fresh pull Sep 18). Weights = last verified (Sep 4) — refresh pending. Notables: AAPL still trades ABOVE its mean target ($336.13 vs $327.84) even as the target chased up ~$3.40 this week; MU's mean ($1,513.11) sits +49% above a stock already at $1,015.80 into Tuesday's print — the Street is fully committed to the shortage trade.
 
-**Concentration Risk:** Top 3 names = 31.0% of the fund. Top 10 = 59.3%. This week inverted last week's leadership: the memory/momentum cohort paid the rate bill (NVDA -5.1%, MU -4.1%, LRCX -3.1%) while the CPU franchise names answered NVDA's Vera warning with their best week in months — AMD +8.1% and INTC +7.5% (INTC reclaimed $100 for the first time since the offer era; +179% YTD) — and AAPL +3.8% ground higher all week into and out of the September 9 "Surprise and Shine" keynote. AVGO +1.1% stabilized after its beat-and-sold print; the mean target rose through the selloff again ($533.41 → $531.85 is a rounding-level dip — the Street is not capitulating). MSFT -0.8% remains the purest duration casualty among mega-caps. CSCO +2.7% (+4.4% Friday) caught the ORCL read-through bid — Friday's AI-infra sympathy tape (Dell +12% record, HPE ~+12%, HPQ +8.4%) lifted every networking/hardware name with a server-adjacent story. AMAT +0.4% is the quiet laggard — RSI ~35, still digesting the August equipment fade even as HBM4 packaging ramps.
+**Concentration Risk:** Top 3 names = 31.0% of the fund. Top 10 = 59.3% (carried weights). The week belonged to the memory/CPU complex, full stop: **AMD +8.5%** — a second straight giant week (MI300X inference traction, EPYC server share gains; +161% YTD) — **INTC +5.5%** (Thursday +7.7% on reports of joint memory-chip production talks with SK Hynix at its idle Ohio fab plus foundry optimism; +12.5% on the month, +194% YTD), and **MU +4.2%** (reclaimed $1,000 into Tuesday's FQ4; guided ~$50B revenue at 86% gross margin with HBM4 ramping twice as fast as HBM3). **NVDA +1.8%** recovered from Monday's scare but lagged the complex — the Vera CPU competition narrative plus a 5% 10Y keeps the multiple honest even with a $328 mean target. **AMAT -2.6% / LRCX -3.4%** were down weeks rescued by violent Friday rallies (+6.5% / +7.0%) — equipment caught the memory-capex read-through late; both scars from Monday remain visible. **AAPL +1.2%** ground through Friday's iPhone 18 / Duo availability day. **MSFT -0.4%, AVGO -1.2%, CSCO -2.3%** — the non-memory complex still pays the 5% tax. ORCL (outside the top-10) bounced +5.2% Thursday to ~$150.59 on its Stargate role, stabilizing after last week's beat-and-sold verdict.
 
-**Cecil Fundamental Read:** ORCL is the week's fundamental event even though it sits outside the top-10 table: Q1 FY27 revenue $19.35B (+30% YoY, beat), adj. EPS $1.92 vs $1.74 consensus (+10.3%), OCI +121% to $7.4B, RPO $664B (+$26B in one quarter), FY27 revenue guided to >=$90B and EPS to $8.10 — and the stock gapped +7–8% then CLOSED RED (~-1.7%, ~$150.28). When a 10% EPS beat with a raised year gets sold the same morning, the denominator is running the tape: a 10Y at 4.97% taxes every long-duration cash flow, and ORCL's own FY27 capex guide of $90–95B (negative FCF again in Q1) is exactly the kind of duration the market is re-pricing. Contrast AMD/INTC: neither printed anything this week — they rallied because NVDA's Vera CPU launch ($20B server-CPU TAM claim, AWS deployments underway) forced the question of who else holds the x86 franchise, and the answer bid both. AAPL is the caution: a good keynote (Ternus's debut, foldable iPhone Duo at $2,000+, $100 Pro price hikes, C2 modem) with the stock now above its mean target — I own the franchise, I do not add above the Street's own mark. The fund at ~33.2x trailing with a 0.43% yield into a ~90%-priced hike remains a multiple arguing with a discount rate. I keep positions; I add nothing into FOMC week.
+**Cecil Fundamental Read:** The denominator got worse — a full weekly close at 5.00% — and the sector went UP. That deserves respect and suspicion in equal parts. What actually changed this week is physical: SK Hynix reportedly discussing joint memory production at Intel's idle Ohio facility, HBM4 ramping at twice HBM3's pace, MU guiding to 86% gross margins. Shortage economics are real earnings, not narratives, and Tuesday's MU print is the first hard receipt of the fall. But note the tell: AMAT trades at a supposed 44% upside-to-mean-target while falling on a +6.5% Friday — the Street's targets are chasing a moving cycle, and I do not pay for targets, I pay for cash flows. ORCL at ~$150 with $664B of contracted RPO remains the cheapest way to own the buildout for anyone who can stomach the capex line. AAPL above its own mean target is harvested. NVDA at +48% implied upside with a 12.6% fund weight and no new high since August is the Street's most unanimous long — and consensus is not a catalyst. I keep the memory complex, I add nothing before Tuesday.
 
 ---
 
@@ -57,13 +57,13 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| BBAI | BigBear.ai | ~$1.38B | $2.87 | -1.7% | No fresh company news found this week; Ask Sage acquisition close still pending; FY26 guide $135–165M stands | ⚠️ Drifting below $3 again on no news — trades as a proxy for small-cap risk appetite into a 5% 10Y. Needs an award or the Ask Sage close. |
-| SOUN | SoundHound AI | ~$2.78B | $6.26 | -7.1% | No fresh company-specific news found; LivePerson (~$100M) close expected H2 2026 with a $350–400M 2027 combined-revenue target | ⚠️ Worst of the watch — the unprofitable-AI cohort de-rated hard into the hot core CPI. $6.00 is the line that must hold; LivePerson close is the next proof point. |
-| AI | C3.ai | ~$1.69B | $10.54 | +0.8% | Quiet week after the FQ1 turnaround print (first positive FCF, bookings +73% QoQ); FQ2 guide $51–55M stands | ⚡ Held the post-earnings range while peers bled — the bookings-to-revenue conversion story is being given a chance. |
-| KD | Kyndryl | ~$2.86B | $13.15 | 0.0% | No company headline found; Hold consensus (~$14–16 targets; JPMorgan $14 / Underweight stands) | ⚡ Perfectly flat week — consolidation continues above prior resistance. Internal-controls overhang still uncleared; asymmetric both ways. |
-| VERI | Veritone | ~$0.10B | $1.04 | +14.7% | Mid-week product showcase (Veritone Video Intelligence + expanded digital-media licensing demos, per OC Business Journal) — then +18.2% Friday alone on no filing | ⚠️ Two straight double-digit weeks on showcase news and squeeze dynamics in a ~$100M going-concern name. Entertaining, not investable. Replacement-name decision now overdue. |
+| BBAI | BigBear.ai | ~$1.34B | $2.80 | -2.4% | No fresh company news found this week; Ask Sage acquisition close still pending; FY26 guide $135–165M stands | ⚠️ Third straight drift lower — still a proxy for small-cap risk appetite. Needs the Ask Sage close or an award. |
+| SOUN | SoundHound AI | ~$2.63B | $5.93 | -5.3% | No fresh company-specific news found; LivePerson close expected H2 2026 ($350–400M combined 2027 revenue target) | ⚠️ Worst of the watch — broke the $6.00 line. The unprofitable-AI cohort de-rated again in Monday's scare; LivePerson close is the next proof point. |
+| AI | C3.ai | ~$1.68B | $10.48 | -0.6% | Quiet week after the FQ1 turnaround print; FQ2 guide $51–55M stands | ⚡ Held the post-earnings range while peers slipped — the bookings-conversion story keeps its chance. |
+| KD | Kyndryl | ~$2.63B | $12.07 | -8.2% | No company headline found; worst mover on the watch | ⚠️ Gave back two weeks of consolidation on no news — Hold-consensus name de-rating with the cohort; internal-controls overhang still uncleared. |
+| VERI | Veritone | ~$0.11B | $1.10 | +5.8% | No filing found — squeeze dynamics continue in a ~$110M going-concern name | ⚠️ Entertaining, not investable. Replacement-name decision still overdue. |
 
-> **Promotion Watch:** All five names re-verified under $5B as of the Sep 11 close (BBAI ~$1.38B, SOUN ~$2.78B, AI ~$1.69B, KD ~$2.86B, VERI ~$0.10B). No graduations, no rotations. VERI remains on replacement watch; candidates under review for the slot.
+> **Promotion Watch:** All five names re-verified under $5B as of the Sep 18 close (BBAI ~$1.34B, SOUN ~$2.63B, AI ~$1.68B, KD ~$2.63B, VERI ~$0.11B). No graduations, no rotations. VERI remains on replacement watch; candidates under review for the slot.
 
 ---
 
@@ -71,19 +71,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $198.73 | June 2 peak — price now -5.6% below it |
-| Near Resistance | $190.00–$191.75 | The double top — untouched for a third week |
-| Minor Resistance | $188.61–$188.74 | Post-NVDA supply zone — still the ceiling |
-| Week's High | $187.87 | Tue/Wed Sep 8–9 identical closes — first door |
-| Current Price | $187.67 | Friday close; +0.2% W/W; above the 20D and 50D |
-| 20-Day MA | ~$185.53 | Friday reclaimed it after Thursday's PPI dip |
-| 50-Day MA | ~$182.73 | Never threatened — Thursday's $185.22 low stopped 1.4% above it |
-| Near Support | $185.22 | The week's PPI low — the demand line that held the hot print |
+| 52W High | $198.73 | June 2 peak — price now -4.6% below it |
+| Near Resistance | $190.00–$191.75 | The double top — the only door left before the June high |
+| Minor Resistance | $188.61–$188.74 | Post-NVDA supply zone — cleared intraday Friday, unconfirmed |
+| Current Price | $189.60 | Friday close; +1.0% W/W; above the 20D/50D/200D stack |
+| 20-Day MA | ~$186 (est.) | Rising; price reclaimed it Thursday |
+| 50-Day MA | $183.12 | **Tuesday's $183.74 close held above it by 62 cents — the tell of the week** |
+| Near Support | $185.22 | Last week's PPI low — now first support |
 | Major Support | ~$178.82–$180.00 | The Aug 24 washout low and reclaimed zone |
-| 200-Day MA | ~$161.1 | Long-term trend floor — still rising |
+| 200-Day MA | $162.24 | Long-term trend floor — still rising |
 | Deep Support | $126.53–$127.35 | 52-week structural floor |
 
-**Marky Setup Assessment:** Respect the tape this week: it absorbed a 5.4% PPI headline and a hot core CPI inside four sessions and finished 21 cents HIGHER than last Friday. That is not weakness. But it is not strength either — the $187.87 double close Tuesday/Wednesday is a strange, honest tell: the market refused to move before the data, dipped 1.4% on PPI, and bought the CPI relief back to the same shelf. RSI ~57.8 with headroom; the 20D/50D/200D stack is fully bullish. Levels are unchanged and clean: through $187.87 and $188.61–$188.74, the $190–$191.75 double top is the trade; lose $185.22 and the 50D (~$182.73) finally gets tested; below that, $178.82–$180.00 cannot fail. The calendar is now a single binary: FOMC Wednesday Sep 16 with a ~90%-priced hike — the decision is not the risk, the framing is. MU's FQ4 (~Sep 22) is the next fundamental gate.
+**Marky Setup Assessment:** The week tested everything and passed: Monday's AI-slowdown scare, Tuesday's first 5.00% 10Y close, Wednesday's 12-0 hike — and the 50D never broke. RSI 58.2 with headroom, the MA stack fully bullish, and quad-witching Friday brought volume without distribution. The map is simple now: through **$190–$191.75** on MU's Tuesday print and the June high ($198.73) is the trade; lose the **50D ($183.12)** on a bad MU print and **$178.82–$180.00** gets its first real test since August. I respect Tuesday's hold above the 50D more than Thursday's rip — scared tape that holds its line is stronger than happy tape that extends.
 
 ---
 
@@ -91,18 +90,21 @@
 
 | Factor | Level | Implication for XLK |
 |---|---|---|
-| Fed Funds Rate | 3.50–3.75% (on hold) | September hike now BASE CASE: ~87–90% post-CPI (CME), from ~72% Thursday and ~50% a week ago. FOMC Sep 15–16 inside a full blackout (since Sep 5) — Warsh's no-guidance regime means Wednesday's statement + presser carry the entire burden. A 25bp hike takes the range to 3.75–4.00%. |
-| August CPI (Sep 11) | Headline +0.4% M/M, 3.4% Y/Y (in line); CORE +0.3% M/M vs +0.2% cons, 2.4% Y/Y (lowest since Mar 2021) | Mixed-but-hawkish: the core monthly miss did the damage; a record +5.9% wireless-services print (BLS methodology catch-up) was an outsized driver — real but noisy. Annual core easing to 2.4% is the dove's only paragraph. |
-| August PPI (Sep 10) | +0.4% M/M, 5.4% Y/Y; core +0.2% (a tenth UNDER cons); energy +4.2%, diesel +24.1% | An energy report wearing an inflation costume. The market traded the 5.4% headline, not the cool core — Thursday's XLK -1.4% leg was the receipt. |
-| 10Y Treasury | 4.97% (Fri close), +19bp W/W; highest since 2023 | Knocking on 5.00%. Every prior foray above ~4.75% this summer compressed the XLK multiple; the fund is trading through it on CPI-relief oxygen. 5.00% is the line; 4.81% already broke. |
-| DXY | ~99.12 (flat W/W) | Third week the dollar refuses to rally on hawkish repricing — policy-error pricing, not strength. Mild mercy for multinational revenue translation. |
-| WTI Crude | $100.05 (+9.4% W/W; Brent topped $108 Thu; diesel record ~$6/gal) | **Oil is now an inflation input, not a scare.** Hormuz/Red Sea shipping attacks, Mocha port seized, Saudi infrastructure hit; Friday's -2.4% breather enabled the equity relief rally. A re-acceleration into FOMC week is the macro tail. |
-| Hyperscaler AI Capex | ORCL FY27 capex guided $90–95B (net cash <=$70B); >$700B 2026E complex-wide (~$805B incl. ORCL, Morgan Stanley) | **Still accelerating at the source:** ORCL delivered 850MW in one quarter, 97.9% GPU utilization, 4-year-old GPUs renewing at +20% premiums, RPO $664B. The private build-out data and the public equity multiple remain two different stories. |
-| Memory Cycle | MU -4.1% consolidation after the first $1,000 weekly close; HBM/DRAM shortage anecdotes intact | No fundamental break — profit-taking into the rate spike ahead of MU FQ4 (~Sep 22). The Rubin Ultra HBM-content question (HBM4 8-Hi) remains the bear wrinkle. |
-| Next Gates | FOMC Wed Sep 16 (decision + Warsh presser); BOJ Sep 17–18; MU FQ4 ~Sep 22 | One-binary week: the hike is priced; the framing is not. A hawkish-framed hike with oil >$100 is the stagflation path; any dovish surprise reopens $190. |
-| VIX | 15.84 (+9.0% W/W, but -11.2% Friday) | Elevated all week into CPI, crushed Friday on relief. Still cheap insurance against a Warsh surprise. |
+| Fed Funds Rate | **3.75–4.00%** — hiked +25bp **12-0** on Sep 16 | The ~90%-priced hike landed clean; the curve's answer was bear-flattening (2s10s ~+26bp from +41bp) — the bond market reads **restrictive-longer**, not one-and-done. Next FOMC Oct 28; PCE Sep 30 and jobs Oct 2 are the two gates between. |
+| August Retail Sales (Sep 16) | **+1.2% M/M** (vs ~+0.8% cons) | Consumer re-accelerated into the hike — soft-landing ammunition for bulls, "more work to do" ammunition for Warsh. |
+| Labor / Claims (Sep 17) | Initial claims **196K**, ~4% wage growth | Tight labor anchors sticky services inflation — the bond market's argument against the equity market's Goldilocks read. |
+| Regional Manufacturing | Philly Fed **37.8** (big beat); Empire 7.6 | The goods economy is re-accelerating into 5% rates — cyclical fuel, inflation risk, both. |
+| 10Y Treasury | **5.00% Friday close** (path 4.96 / 5.00 / 5.01 / 4.95 / 5.00); 30Y 5.35% | First weekly close AT the line — highest since 2007. The 5.00% foray is now an address. Every prior visit compressed the multiple; this week the multiple ignored it because oil broke. |
+| Global Duration | Gilts 4.99%, JGBs 2.94% (highest since 2011), Bunds 3.18%; ECB held 2.5% hawkish (euro CPI 3.7%); BOJ +25bp to 1.25% (7-2 dovish split) | A synchronized sovereign selloff — term premium, not just Fed policy. The dovish BOJ split sent USD/JPY to ~157.9 and took the yen-carry tail off the table for now. |
+| Housing / Credit | Mortgage **6.95%** (cycle high); starts 1.275M, permits falling to 1.394M; HY OAS ~270bp | The long end is tightening conditions where the Fed cannot see it. HY >300bp is the credit tripwire to watch. |
+| WTI Crude | **$95.47 (-4.6% W/W)**; Tuesday peak $105.83; Friday -6.3% | **The stagflation tail broke.** Saudi East-West pipeline restart hopes (up to 2.5M bpd bypassing Hormuz; shut since the Sept 10 Houthi strikes) unwound the oil → CPI → hike-odds channel in three sessions. Brent $98.87 Thursday. |
+| DXY | **100.21 (+1.1% W/W)** | The dollar finally rallied after six weeks of refusing — policy-acceptance pricing, aided by the dovish BOJ. First real translation headwind for multinational tech revenue in weeks. |
+| Hyperscaler AI Capex | ORCL FY27 capex $90–95B (carried); >$700B 2026E complex-wide | New this week: the shortage is spawning **capacity JVs** — SK Hynix reportedly in talks for joint memory production at Intel's idle Ohio fab. The buildout is now pulling memory supply into the U.S. — bullish for equipment, neutral for margins. |
+| Memory Cycle | MU FQ4 **Tue Sep 22**; guide ~$50B rev / 86% GM; HBM4 ramping 2x HBM3 | The week's real verdict lands four days after FOMC. Beat-and-confirm resumes leadership; a whisper miss with the 10Y at 5% de-rates the cheapest cohort in the fund. |
+| Crypto Regulation | CLARITY Act failed Senate vote Wed; SEC answered with a 5-year "Innovation Exemption" for tokenized stocks Thu | Not an XLK driver, but a template: with legislation stalled, agency rulemaking writes the rules — watch for the same pattern in AI policy. |
+| VIX | 14.81 (-6.5% W/W) | Crushed from 17.7 Wednesday to 14.81 — Goldilocks pricing into a 5% 10Y. Cheap insurance again. |
 
-**Ophelia Verdict:** Three weeks ago I set the line at 4.75%; it has now closed above it three straight weeks and sits at 4.97%. The hike I called a coin flip is priced at ~90%. I am not fighting any of it — I am holding the semis, adding nothing, and noting two honest counterweights: core CPI Y/Y still FELL to 2.4%, and the dollar still will not rally. If Warsh hikes and frames it as one-and-done insurance, this tape squeezes through $190; if he frames it as the start of a path with oil at $100, the 50D gets its first real test. Wednesday is the whole week.
+**Ophelia Verdict:** My redrawn 5.00% line was tagged four times and closed on twice — the line is now an address, not a ceiling. I redraw the break level at **5.10%**. Two honest mercies arrived: oil broke (the $105 Brent stagflation tail is $95.47 WTI on pipeline-restart hopes) and the hike landed without a tantrum. But the curve bear-flattened to +26bp, the dollar finally rallied, and the bond market is pricing restrictive-longer while equities price Goldilocks — one of them is wrong, and Tuesday's MU print is the first arbiter. Posture unchanged: hold the complex, add nothing at ~33.6x trailing into the print, and keep the 5.10% / HY-300bp tripwires where they are.
 
 ---
 
@@ -110,21 +112,19 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Market Priced the Hike Alone — and Bought It Anyway
+### This Week's Story: The Hike Landed — and Tech Rallied Anyway
 
-XLK edged +0.2% to $187.67 in a four-day week whose flat print hides the year's biggest Fed repricing.
+XLK gained **+1.0% to $189.60** in the heaviest macro week of the year — a week that opened with an AI-slowdown scare and closed with the sector near the top of its range.
 
-**Catalyst 1 — The CPI/PPI Double Gate (Thu–Fri):** Thursday's PPI printed 5.4% Y/Y (energy-driven; core actually cool at +0.2%) and knocked XLK to its $185.22 week low. Friday's CPI delivered the mixed verdict: headline in line at +0.4% / 3.4%, but core +0.3% M/M versus +0.2% expected — with a record +5.9% wireless-services spike doing outsized damage — while core Y/Y eased to 2.4%, the lowest since March 2021. September hike odds went ~50% → ~72% → ~87–90% across five sessions; the 10Y closed 4.97%. Stocks rallied Friday anyway — the worst case (a true shock print) never showed, and oil broke -2.4%.
+**Catalyst 1 — Monday's Amodei-Essay Selloff (Sep 14):** The week opened with the AI-slowdown trade: SOX -5.9% on the day (per the semis desk), NVDA -3.4%, MU -5.3%, INTC -5.6%, XLK -1.8% to $184.28. One essay questioning AI capex durability was all it took to test the 50D — and the 50D ($183.12) held Tuesday by 62 cents even as the 10Y printed its first 5.00% close and WTI peaked at $105.83. That hold was the week's hinge.
 
-**Catalyst 2 — Apple's Ternus Era Opens (Wed Sep 9):** The "Surprise and Shine" keynote was John Ternus's first as CEO: iPhone 18 Pro/Max ($1,199/$1,299 — $100 hikes absorbed), the first foldable iPhone ("iPhone Duo", expected $2,000+; Citi estimates ~5M units in H2), C2 modem, 45-hour Pro Max battery. Pre-orders opened Sep 12. AAPL +3.8% W/W — a rare case of the stock rallying THROUGH the event instead of selling it.
+**Catalyst 2 — The 12-0 Hike (Wed Sep 16):** The FOMC delivered the ~90%-priced 25bp to 3.75–4.00% unanimously, hours after August Retail Sales beat at +1.2%. Post-decision, yields dipped and equities firmed — the decision itself carried no surprise; the framing read "restrictive-longer," and the curve bear-flattened to ~+26bp. The 10Y closed Wednesday at 5.01% — its first close above 5.00% — and nobody ran.
 
-**Catalyst 3 — ORCL's Blowout That Closed Red (Thu AMC):** Q1 FY27: revenue $19.35B (+30%), adj. EPS $1.92 vs $1.74 consensus (+10.3%), OCI +121% to $7.4B, RPO $664B (+$26B in a quarter), FY27 raised to >=$90B revenue / $8.10 EPS — and FY27 capex guided to $90–95B. The stock gapped +7–8% Friday morning and faded to close ~-1.7% at ~$150.28: beat, raise, and STILL sold — the AVGO pattern, now with a capex-duration twist. But the read-through lifted the AI-infra hardware tape: Dell +12% (record), HPE ~+12%, HPQ +8.4%, CSCO +4.4% Friday.
+**Catalyst 3 — Thursday's Semis Rip + Oil Break (Sep 17):** The verdict day. Intel +7.7% on reports of joint memory-chip production talks with SK Hynix at its idle Ohio fab plus foundry optimism; ARM +8.6%; AMD +6.4% (MI300X inference traction, EPYC share); MU +5.5%; ORCL +5.2%. Simultaneously Brent collapsed -5.7% to $98.87 on hopes the Saudi East-West pipeline (shut since the Sept 10 Houthi strikes) restarts within days, restoring up to 2.5M bpd that bypasses Hormuz. S&P +1.1% / Nasdaq +1.7% — the best day in six weeks — while financials fell 3.7–4% on credit-cycle worries. Claims printed 196K; Philly Fed 37.8.
 
-**Catalyst 4 — The CPU Franchise Fights Back (all week):** NVDA's Vera server-CPU push ($20B TAM claim, AWS deployments underway, "every major hyperscaler") was framed as a warning to AMD/INTC — the market answered by bidding the incumbents: AMD +8.1%, INTC +7.5% (reclaimed $100; +179% YTD). NVDA itself fell -5.1% on no company news — pure rate de-rating plus the first credible competition narrative of the year.
+**Catalyst 4 — Friday's Follow-Through (Sep 18):** Quad witching, BOJ +25bp to 1.25% on a dovish 7-2 split (USD/JPY ~157.9), and WTI's -6.3% collapse to $95.47. Equipment finally joined: AMAT +6.51%, LRCX +6.98%. MU closed $1,015.80 — back over $1,000 into Tuesday's FQ4 print (~$50B guide, 86% GM, HBM4 ramping 2x).
 
-**Catalyst 5 — Memory Takes a Breather:** MU -4.1% after its first $1,000 weekly close; the shortage story (sold-out HBM, parabolic DDR spot) is unchanged into the Sep 22 print.
-
-**The Bottom Line:** Fundamentals kept delivering (ORCL, Apple, AI-infra demand) and macro kept taxing (4.97% 10Y, $100 oil, ~90% hike). Wednesday's FOMC framing decides which force owns the next two weeks.
+**The Bottom Line:** The sector absorbed a hike, a 5.00% 10Y, and an AI-doubt scare in five sessions and finished +1%. What carried it was physical: memory shortage economics (JV capacity talks, 86% margins, HBM4 ramps) plus the oil tail breaking. Tuesday's MU print decides whether this was positioning or conviction.
 
 ---
 
@@ -132,69 +132,64 @@ XLK edged +0.2% to $187.67 in a four-day week whose flat print hides the year's 
 
 | Company | Ticker | Date | Quarter | EPS Estimate | Key Metric to Watch |
 |---|---|---|---|---|---|
-| **Microsoft** | MSFT | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $4.24 | **Actual: Rev $90.0B, adj. EPS $4.74 (+11.8% beat). Azure +43% YoY. Stock -0.8% this week — duration casualty; no company catalyst.** |
-| **Apple** | AAPL | **Jul 30, 2026** (REPORTED) | Q3 FY2026 | $1.89 | **Actual: EPS $2.02 (+6.9% beat), Rev $109.4B. This week: +3.8% through the Sep 9 keynote — iPhone 18 Pro/Max (+$100), foldable iPhone Duo, C2 modem; pre-orders Sep 12, availability Sep 18. Close $332.27 is now ABOVE the $324.40 mean target.** |
-| **AMD** | AMD | **Aug 4, 2026** (REPORTED) | Q2 FY2026 | $1.55 | **Actual: Rev $11.54B (+50.1% YoY), EPS $1.66. Stock +8.1% this week — the Vera CPU warning bid the x86 incumbents; consolidation of the giant 2026 run resolving upward again.** |
-| **Cisco** | CSCO | **Aug 12, 2026** (REPORTED) | Q4 FY2026 | $1.17 | **Actual: Rev $17.3B (+18% YoY), EPS $1.22. Stock +2.7% this week (+4.4% Friday) — ORCL read-through lifted every networking/hardware name.** |
-| **Applied Materials** | AMAT | **Aug 13, 2026** (REPORTED) | Q3 FY2026 | $3.39 | **Actual: Rev $9.12B (+24.8% YoY), EPS $3.50. Stock +0.4% — RSI ~35, the complex's quiet laggard; HBM4 packaging ramps are the forward driver.** |
-| **NVIDIA** | NVDA | **Aug 26, 2026** (REPORTED, AMC) | Q2 FY2027 | ~$2.10 | **Actual: Rev $96.22B (+106% YoY), adj. EPS $2.22. This week: -5.1% on no company news — rate de-rating + the Vera CPU competition narrative ($20B server-CPU TAM, AWS deploying). Mean target up to $327.65 anyway.** |
-| **Broadcom** | AVGO | **Sep 2, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$3.22 | **Actual: Record rev $29.59B (+86% YoY), EPS $3.32; FY27 AI ~$115B / FY28 ~$230B. Stock +1.1% this week — stabilized after the beat-and-sold verdict; target steady ~$532.** |
-| **Adobe** | ADBE | **Sep 10, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$6.08 | **Actual: Record rev $6.76B (+12.9% YoY, ~beat), double-digit EPS growth, AI-first ARR +150% YoY, 1B MAU milestone; FY26 revenue/EPS targets RAISED. Narayen flagged "Anil" (Chakravarthy) for the next chapter — leadership transition signal. Stock reaction muted/mixed vs ORCL — the AI-monetization debate (Morgan Stanley UW $240 vs RBC $315) is unresolved.** |
-| **Oracle** | ORCL | **Sep 10, 2026** (REPORTED, AMC) | Q1 FY2027 | $1.74 | **Actual: Rev $19.35B (+30% YoY, beat $19.14B), adj. EPS $1.92 (+10.3% beat). OCI +121% to $7.4B; RPO $664B (+$26B Q/Q); 850MW delivered; 97.9% GPU utilization. FY27 raised: >=$90B rev / $8.10 EPS; capex $90–95B (net <=$70B). Q2 guide: rev +30–34%. Stock gapped +7–8% premarket, CLOSED -1.7% at ~$150.28 — sell-the-news on duration/capex; Michael Burry short disclosed. Bear/bull split defined.** |
-| **Micron** | MU | **~Sep 22, 2026** (UNCONFIRMED) | Q4 FY2026 | ~$31 | **The memory cycle's main event, six days after FOMC. Guided rev ~$50B, EPS ~$31. Watch: first FY27 full-year outlook, 16 strategic customer agreements (~$100B take-or-pay, $22B deposits), HBM4 ramp — and any response to the Rubin Ultra HBM-content question.** |
+| **Microsoft** | MSFT | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $4.24 | **Actual: Rev $90.0B, adj. EPS $4.74 (+11.8% beat). Azure +43% YoY. This week: -0.4% — the mega-cap duration casualty again; no company catalyst.** |
+| **Apple** | AAPL | **Jul 30, 2026** (REPORTED) | Q3 FY2026 | $1.89 | **Actual: EPS $2.02 (+6.9% beat), Rev $109.4B. This week: +1.2% through Friday's iPhone 18 / Duo availability day (Sep 18) — launch-weekend sell-through chatter is the next data point. Still above the $327.84 mean target.** |
+| **AMD** | AMD | **Aug 4, 2026** (REPORTED) | Q2 FY2026 | $1.55 | **Actual: Rev $11.54B (+50.1% YoY), EPS $1.66. Stock +8.5% this week — MI300X inference traction + EPYC share gains; second straight giant week (+161% YTD).** |
+| **Cisco** | CSCO | **Aug 12, 2026** (REPORTED) | Q4 FY2026 | $1.17 | **Actual: Rev $17.3B (+18% YoY), EPS $1.22. Stock -2.3% this week — the non-memory hardware names paid the 5% rate tax.** |
+| **Applied Materials** | AMAT | **Aug 13, 2026** (REPORTED) | Q3 FY2026 | $3.39 | **Actual: Rev $9.12B (+24.8% YoY), EPS $3.50. Stock -2.6% W/W but +6.5% Friday — equipment caught the memory-capex read-through late.** |
+| **NVIDIA** | NVDA | **Aug 26, 2026** (REPORTED, AMC) | Q2 FY2027 | ~$2.10 | **Actual: Rev $96.22B (+106% YoY), adj. EPS $2.22. This week: +1.8% — recovered from Monday's scare, lagged the complex; Vera CPU competition narrative persists. Mean target up to $328.49.** |
+| **Broadcom** | AVGO | **Sep 2, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$3.22 | **Actual: Record rev $29.59B (+86% YoY), EPS $3.32. Stock -1.2% this week — still digesting; target steady $531.85.** |
+| **Adobe** | ADBE | **Sep 10, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$6.08 | **Actual: Record rev $6.76B (+12.9% YoY), AI-first ARR +150%, FY26 targets raised. No fresh developments this week — the AI-monetization debate (MS UW $240 vs RBC $315) unresolved.** |
+| **Oracle** | ORCL | **Sep 10, 2026** (REPORTED, AMC) | Q1 FY2027 | $1.74 | **Actual: Rev $19.35B (+30%), adj. EPS $1.92 (+10.3% beat), RPO $664B, FY27 >=$90B / $8.10. This week: +5.2% Thursday to ~$150.59 on its Stargate role — stabilized after the beat-and-sold fade.** |
+| **Micron** | MU | **~Sep 22, 2026** (TUESDAY) | Q4 FY2026 | ~$31 | **THE PRINT OF THE FALL.** Guided rev ~$50B at 86% gross margin; HBM4 ramping 2x HBM3's pace. Watch: first FY27 outlook, the ~$100B take-or-pay SCA book (~$22B deposits), HBM4 detail, and any read on new U.S. memory capacity (SK Hynix–Intel Ohio talks). Whisper is high — the stock just reclaimed $1,000.** |
 
-**Marky's Binary Event Read:** The calendar compressed further: FOMC Wednesday Sep 16 is now the only macro gate that matters (the hike is ~90% priced — the STATEMENT and Warsh's presser are the risk), then MU's FQ4 ~Sep 22 as the sector's next fundamental verdict. Tape levels: through $187.87 / $188.61–$188.74 on a dovish-framed hike and $190–$191.75 opens; a hawkish path with oil back above $105 Brent retests $185.22 then the 50D. Four sessions this week proved the dip buyers are still paid — but they were paid by relief, not by news.
+**Marky's Binary Event Read:** The calendar compressed to one gate: **MU Tuesday**. The macro board is set — hike delivered, 10Y parked at 5.00%, oil broken, VIX crushed to 14.81. Through $190–$191.75 on a MU beat and the June high ($198.73) is the trade; a whisper miss with rates here opens the 50D ($183.12), then $178.82–$180. The only scheduled macro between here and there: PCE Sep 30, jobs Oct 2.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- FOMC (Sep 16) delivers the ~90%-priced 25bp hike with "insurance move / one-and-done" framing → 10Y retreats under ~4.80% → XLK clears $187.87 / $188.74 and finally attacks the $190–$191.75 double top
-- Gulf de-escalation: Brent back under $100, WTI toward $90 → the oil → CPI → hike-odds channel drains before the October CPI (Oct 14)
-- iPhone 18 / Duo pre-order chatter (Sep 12+) reads strong → AAPL's above-target price gets target chases, pulling the fund's #2 weight up
-- MU FQ4 (~Sep 22) delivers ~$50B / ~$31 with named hyperscaler SCAs → the memory trade resumes leadership with receipts
-- ORCL's fade marks peak capex-fear; the $664B RPO converts the narrative back to revenue visibility
+- **MU (Tue Sep 22) prints the guide** — ~$50B revenue, 86% GM, HBM4 detail, fresh SCA conversions → the memory complex resumes leadership with receipts → XLK clears $190–$191.75 and attacks the June high ($198.73)
+- The Saudi East-West restart confirms and extends: WTI toward $90, Brent under $100 → the oil → CPI → hike-odds channel drains before PCE (Sep 30)
+- SK Hynix–Intel Ohio talks formalize → U.S. memory capacity becomes a capex story, not just a shortage story → equipment (AMAT/LRCX) re-rates to catch the memory names
+- PCE (Sep 30) prints cool after the oil break → the "restrictive-longer" read softens → 10Y drifts back under ~4.85% → the multiple breathes
+- AAPL's launch weekend reads strong → the fund's #2 weight gets target chases from a harvested Street
 
 ### 🔴 Bear Case
-- Warsh hikes AND frames it as a path (Warsh's Jackson Hole line: "underlying trends have not meaningfully improved") → 10Y through 5.00% → mechanical de-rating of a ~33x trailing fund; $185.22 breaks, 50D (~$182.73) tested for the first time in three weeks
-- Oil re-accelerates (Brent >$108 Thursday high becomes the floor) → October CPI pre-pricing turns stagflationary with the Fed already hiking
-- The ORCL fade generalizes: beat-and-raise gets sold across the complex (AVGO, now ORCL) because capex duration is being re-priced at 5% — leadership narrows to event trades
-- NVDA's -5.1% no-news week was the first crack: Vera competition narrative + Rubin HBM-content questions + 50% hike-priced Fed = the fund's #1 weight unwinds momentum
-- MU FQ4 misses the whisper (~$31+) and the one cohort with a cheap multiple re-rates DOWN instead
+- **MU misses the whisper** — the most unanimous long in the fund (mean target +49% above price) re-rates DOWN into a 5% 10Y → 50D ($183.12) breaks → $178.82–$180 gets its first test since August
+- The bond market wins the argument: restrictive-longer + tight labor + sticky services → 10Y through **5.10%** → mechanical de-rating of a ~33.6x trailing fund; the oil relief was just positioning
+- The credit channel cracks first: HY OAS through 300bp with mortgages at 6.95% → the same credit-cycle fear that hit financials (-4% Thursday) reaches the AI buildout's financing math
+- Pipeline restart fails or Hormuz re-escalates → Brent back over $105 with the Fed already hiking → full stagflation pricing returns
+- The dollar's rally regime-persists (DXY >101) → multinational revenue translation becomes a Q3 earnings headwind across mega-cap tech
 
 ### ⚠️ The Wild Card
-The FOMC press conference itself. A ~90%-priced hike under a no-guidance Chair means the market owns the decision but not the framing: "one-and-done insurance hike" and "first of several" are the same 25bp with opposite tapes. Layered on top: BOJ Sep 17–18 (the yen carry tail, USD/JPY already broken below 160), and the semiconductor tariff package still in design. The strangest honest signal of the week: the dollar will not rally on any of it — if DXY finally does, the policy-error regime flips to something harder.
+The memory capacity race. If SK Hynix–Intel Ohio is real — and Samsung/SK commentary keeps extending the shortage "through 2028" — the market has to price two opposite truths at once: scarcity economics today (MU's 86% GM) and a capacity glut tomorrow (every fab idle becomes a memory fab). That is how commodity cycles end — but "tomorrow" in memory has been two years away for two years. Layered on top: the SEC's tokenized-stock exemption opened a regulatory side-door two days after the Senate slammed the legislative one — agency rulemaking is now the path for crypto, and possibly for AI policy next.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Three weeks above my 4.75% line and now 4.97% — the line is gone, so I redraw it at 5.00% on the 10Y. The hike is priced (~90%); what is not priced is the framing. Core CPI Y/Y still fell to 2.4% and the dollar still refuses to rally — those are my two threads of doubt about the hawkish consensus. I hold what I have, I add nothing before Wednesday, and I keep cash at 40%. If Warsh frames the hike as a path with Brent at $105+, I go to 50% cash and buy back the 50D test that follows. If he frames it as insurance, I was wrong for a week and I'll pay the $190 chase."*
+**Ophelia:** *"My 5.00% line is now an address, so I redraw the break at 5.10% and note what actually happened: the hike landed 12-0, the curve bear-flattened to +26bp, the dollar finally rallied — and the tape didn't care, because oil broke. One of the two markets is wrong: bonds price restrictive-longer stagflation risk, equities price Goldilocks. Tuesday's MU print is the first arbiter; PCE on the 30th is the second. Posture: hold, add nothing at 33.6x trailing, keep the HY-300bp tripwire armed. If MU beats and 5.00% holds as a ceiling, I was wrong about the ceiling and I'll say so."*
 
-**Marky:** *"The tape earned my respect this week — it ate a 5.4% PPI and a hot core CPI and closed 21 cents higher. But identical $187.87 closes before the data and a 6.5M-share relief rally after it is not accumulation; it is positioning ping-pong. Plan: long above $185.22 with a tight stop; add ONLY through $188.74 on FOMC relief volume; if the 50D at ~$182.73 breaks on a hawkish presser, I am flat and waiting for $178.82–$180. RSI 57.8 gives room both ways. MU on Sep 22 is the next fundamental trade, not before."*
+**Marky:** *"Five acts, all bullish at the margin: Monday's scare held the 50D by 62 cents, Tuesday's 5.00% tag didn't break it, Wednesday's hike didn't either, Thursday ripped, Friday followed through on volume. RSI 58.2, stack fully bullish, one door left — $190–$191.75. Plan: long above the 50D ($183.12); add through $191.75 only on MU-beat volume; a close back under the 50D after the print and I'm flat to $178.82–$180. The trade is Tuesday. Everything before it is positioning."*
 
-**Cecil:** *"Nothing for me here at 33x trailing into a hiking Fed. The tell of the week is AAPL closing ABOVE its own mean analyst target — when the Street is harvested, the easy money is made. The two names where the multiple still does the work remain MU (~6x forward into the Sep 22 print) and, stretching the sector label, ORCL at ~19x forward with $664B of contracted revenue — the market just told you it fears the capex more than it loves the backlog. I watch Wednesday from 30% cash. If the hike lands and the 50D holds, I may finally buy the fear in the memory names."*
+**Cecil:** *"Physical won this week: JV talks for memory capacity, 86% gross margins, HBM4 at double speed — shortage economics are the only earnings in this fund trading at a defensible multiple. But I buy prints, not targets: MU's mean target sits +49% above price, which tells you everything about Street positioning and nothing about Tuesday. ORCL at ~$150 with $664B contracted remains the cheapest buildout exposure for those who can hold their nose on capex. AAPL above its target — harvested. NVDA at max unanimity with no new high since August — consensus is not a catalyst. I watch Tuesday from 30% cash; a beat-and-confirm with the 50D intact, and I finally add to the memory complex rather than just holding it."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance: XLK + top-10 holdings + small-cap quotes, analyst targets, fund metrics (Sep 11, 2026 close)
-- U.S. BLS: August CPI — headline +0.4% M/M / 3.4% Y/Y; core +0.3% M/M / 2.4% Y/Y; wireless services +5.9% record (Sep 11, 2026); August PPI +0.4% M/M / 5.4% Y/Y, core +0.2%, energy +4.2%, diesel +24.1% (Sep 10, 2026)
-- CME FedWatch via Yahoo Finance / FinanceFeeds / CNBC: September hike odds ~50% (Sep 5) → ~66–72% (post-PPI) → ~87–90% (post-CPI); FOMC Sep 15–16, blackout since Sep 5
-- Charles Schwab market update (Sep 11): post-CPI open snapshot — 10Y 4.92%, DXY 99.10, WTI $99.19, VIX 16.58
-- STL.News / Yahoo Finance live (Sep 11): Friday wrap — Dow +509, S&P +0.86%, Nasdaq +0.96%, Russell +0.45%; Dell ~+12% record, HPE ~+12%, HPQ +8.4%; ORCL closed ~-1.8%; ACV Auctions +44% on ~$1.9B Copart deal; WTI $100.05 after Brent $108 Thursday; Hormuz/Red Sea attacks, Mocha port seizure, Saudi infrastructure hits; diesel record ~$6/gal
-- Oracle IR / TrendSpider / Tickeron / futunn (Sep 10–11): Q1 FY27 — rev $19.35B (+30%), adj. EPS $1.92 vs $1.74 cons, OCI +121% $7.4B, RPO $664B (+$26B Q/Q), 850MW delivered, 97.9% GPU utilization, FY27 >=$90B rev / $8.10 EPS, capex $90–95B, Q2 guide +30–34%; Burry short disclosure
-- Adobe IR (Sep 10, 2026): Q3 FY26 — record rev $6.76B (+12.9% YoY), AI-first ARR +150% YoY, 1B MAU, FY26 revenue/EPS targets raised; Narayen next-chapter comments
-- Mashable / Depor / Yahoo Finance (Sep 9–10): Apple "Surprise and Shine" — Ternus debut, iPhone 18 Pro/Max $1,199/$1,299 (+$100), foldable iPhone Duo (~$2,000+; Citi ~5M H2 units), C2 modem, pre-orders Sep 12, availability Sep 18; BofA Mohan post-event study
-- Motley Fool (Sep 3): NVDA Vera server-CPU push — ~$20B TAM, deployments to OCI/SpaceXAI/AWS underway
-- Orange County Business Journal (Sep 12): Veritone product showcase (Veritone Video Intelligence, expanded digital-media licensing); VERI ~$95–104M cap
-- Zacks / Tickeron / MarketBeat: ADBE pre-print estimates ($6.07–6.08 / ~$6.7B); Morgan Stanley UW $240 vs RBC $315 split
+- Yahoo Finance / yfinance: XLK + top-10 holdings + small-cap quotes, analyst targets (fresh Sep 18 pull), fund metrics (Sep 18, 2026 close); weekly changes vs Fri Sep 11 close
+- FOMC (Sep 16, 2026): +25bp to 3.75–4.00%, 12-0 vote — via Yahoo Finance live coverage / MortgageDaily; Retail Sales +1.2% (Aug) same morning
+- Fair Value newsletter (Sep 18, 2026): Thursday reversal detail — S&P +1.1% / Nasdaq +1.7% (best in six weeks); INTC +7.7% (SK Hynix Ohio memory-JV reports + foundry optimism), ARM +8.6%, AMD +6.4% ($545.09), MU +5.5% ($977.50), ORCL +5.2% ($150.59); Brent -5.7% to $98.87 on Saudi East-West pipeline restart hopes (shut since Sept 10 Houthi strikes, up to 2.5M bpd bypassing Hormuz); claims 196K; housing starts 1.275M / permits 1.394M; mortgage 6.95%; HY OAS 270bp; 2s10s ~+27bp; global yields (gilts 4.99%, JGBs 2.94%, Bunds 3.18%); BOJ +25bp to 1.25% on 7-2 dovish split (USD/JPY 157.93); CLARITY Act Senate failure + SEC five-year tokenized-stock "Innovation Exemption" (Coinbase +5.8%); euro CPI 3.7% / ECB 2.5% hold
+- Philly Fed 37.8 / Empire 7.6 / Retail Sales +1.2% / claims 196K: via this week's economic-calendar.md update (Saturday Research Crew, Sep 18)
+- Repo cross-checks: wiki/semiconductors.md + wiki/economic-calendar.md (Sep 18 updates — Monday Amodei-essay AI-slowdown selloff, SOX -5.9%; 10Y first close above 5.00% on 9/16; issue #106)
+- Micron guidance context (rev ~$50B, 86% GM, HBM4 2x ramp): Fair Value (Sep 18); FQ4 date ~Sep 22 per prior calendar tracking
 - State Street Global Advisors: XLK Fund Profile
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-12*
+*Last updated by Saturday Research Crew: **2026-09-18** (11 PM ET run; covering week ended Fri Sep 18, 2026)*
 *Next update: Every Saturday 10:00 AM ET*
 *Data sources: Yahoo Finance, Federal Reserve, U.S. Treasury, company IR, Bloomberg, Dow Jones Newswires, market data feeds*
