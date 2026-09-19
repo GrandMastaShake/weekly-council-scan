@@ -2,7 +2,7 @@
 
 > **Sector:** Industrials | **ETF:** Industrials Select Sector SPDR (XLI) | **Expense Ratio:** 0.08%
 >
-> *"Industrials are the pulse of the economy. When the factories hum, the market sings. When they go silent, everything else follows."* — Ophelia
+> *"The line broke. XLI closed the week at $169.75 — below the 200-day ($171.14) on a WEEKLY close, the exact tripwire this page has carried for weeks — as the Fed hiked 12-0 and the 10Y parked at 5.00%. Fifth straight down week. And yet the week's two biggest industrial stories were demand stories: Generac +30% on a $2.4B Amazon backup-power deal, and Crusoe raising $3.9B for factory-built data centers. The economy's pulse is splitting in two — the AI/power buildout accelerates while the old-economy cyclicals pay the rate bill. Boeing -5.8% was the worst of the majors; oil's collapse to $95.47 arrived too late in the week to save the transports. The trend line didn't hold this time. The correction became a break."*
 
 ---
 
@@ -10,20 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $172.37 | $175.27 (Sep 4) | **-1.65% W/W** — fourth straight down week |
-| 52W Range | $147.14 – $188.19 | $147.14 – $188.19 | High set Aug 5; unchanged |
-| AUM | ~$31.9B | ~$32B | — |
-| YTD Return | **~+11.7%** | ~+12.9% | Still a hair ahead of SPY (+10.9%) — the gap keeps narrowing |
-| 1Y Return | ~+15.2% | ~+14.0% | — |
-| P/E Ratio | ~28.0* | ~29.5* | *Fund-page P/E |
-| Dividend Yield | ~1.18% | ~1.17% | Stable |
+| Price | $169.75 | $172.37 (Sep 11) | **-1.52% W/W** — fifth straight down week |
+| 52W Range | $147.14 – $188.19 | $147.14 – $188.19 | High set Aug 5; price now -9.8% below it |
+| AUM | ~$31.9B | ~$31.9B | — |
+| YTD Return | **~+8.0%** | ~+11.7% | Now BEHIND SPY (~+12%) — the RS edge is gone |
+| 1Y Return | ~+12.3% | ~+15.2% | — |
+| P/E Ratio | ~27.6* | ~28.0* | *Fund-page P/E |
+| Dividend Yield | ~1.18% | ~1.18% | Stable |
 | Beta | ~1.0–1.1 | — | — |
 | Total Holdings | 78 | 78 | — |
-| Avg Daily Volume | ~6.5M this week | Elevated | Thursday's 200D test was the heaviest session (7.8M) |
+| Avg Daily Volume | ~7.3M (20D); Friday 8.6M | ~6.5M | Quad-witching elevated |
 
-**Marky Tape Read:** Fourth straight down week — but the 200-day just survived its first real test. The path: Tuesday $174.42, Wednesday $171.79, **Thursday $170.55 — the first daily close *below* the rising 200-day ($170.68), by thirteen cents** — then Friday's relief rally (+1.07%, Dow +509) pulled the index back to $172.37. Unlike healthcare, industrials got invited to Friday's party. RSI sits at **30.8**; the 20D ($177.58) and 50D ($180.32) are overhead and falling, so the supply stack above is heavy. But the line that matters held: tested Thursday, defended Friday. My structure call: below $180 the index trades in a downtrend channel — but as long as weekly closes hold ~$170, this is a correction *at* the trend line, not a break *of* it. Lose $170.68 on a weekly close and $168.00, then the low $160s, open up. The two charts that actually worked this week: **ETN (+3.53%, back above its 50D at $415.27, +3.96% Friday)** and **CAT (+0.57%)**. The deepest oversold names on the board: UNP (RSI **14.0**) and MMM (RSI 19.4).
+**Marky Tape Read:** The tripwire I wrote fired. The week: Monday $169.93 — the 200-day ($171.14) lost on the FIRST session, no fight; Tuesday $168.85; Wednesday $168.71 (hike day — nobody bought the decision); Thursday $169.01; Friday $169.75 on quad witching. Five sessions below the line, weekly close below it: **the correction-at-the-trend-line is now a break-of-it.** My rulebook says I'm gone below $170.68 on a weekly close — I got $169.75. RSI 34.4; the falling 20D (~$173.99) and 50D (~$178.98) are heavy overhead supply. Downside map: $167.49 (week low), then the low $160s; the 52W floor at $147.14 is the deep shelf. What worked: ETN +3.74% Friday (Generac's AI-power deal read-through), CAT +1.30% Friday, DE +1.22% W/W. What's broken: BA (RSI 33.5, -5.8% W/W), CSX (RSI 30.5), RTX (RSI 31.0), UNP (RSI 32.5). The rebound candidates list is long; the trend is not your friend until $171+ is reclaimed on a weekly close.
 
-**Ophelia Macro Read:** Two prints, one direction — hawkish at the core. **Thursday's PPI:** headline +0.4% m/m / 5.4% y/y (diesel +24.1%) but core cool at +0.2%. **Friday's CPI:** headline in line (+0.4% / 3.4% y/y) but **core +0.3% vs +0.2% consensus**, record +5.9% wireless spike. September 16 hike odds finished **~87–90% (CME)**; the 10Y closed **4.97% (+19bp W/W)** with fresh 52-week-high closes; 2s10s held ~+41bp in a parallel bear shift. For industrials the rate channel bites twice — multiple compression on the 25–40x names and dearer capex financing. The second front is oil: **WTI $100.05 (+9.4% W/W)**, Brent topped $108 Thursday, diesel at a record ~$6/gal on Hormuz/Red Sea attacks — a direct margin tax on transports three sessions before FDX's print. Canada's counter-tariffs completed their first live week with zero supply-chain headlines on our tape; the invoice impact arrives with October's Q3 commentary. The UP-NS merger passed its **Sept 4 notices-of-intent milestone** on the published STB schedule — comments due Nov 18, final briefs May 28, 2027, close targeted mid-2027. No ISM print this week (next: Oct 1); August durable goods land ~Sept 24–25.
+**Ophelia Macro Read:** The hike landed (3.75–4.00%, 12-0) and this sector — the most cycle-pure board in the market — voted no all five days. The 10Y closed the week AT 5.00% (first weekly close at the line since 2007); the curve bear-flattened to ~+26bp; DXY 100.21 (+1.1%) added an export-translation headwind for CAT/DE. But read the splits: oil's collapse (WTI $95.47, -4.6%) is margin RELIEF for transports — diesel's record spike is deflating — and the regional manufacturing prints were hot (Philly Fed 37.8, Empire 7.6), while housing rolled (starts 1.275M, permits falling, mortgage 6.95%, Lennar cut deliveries to 80–81K). The goods economy is re-accelerating AND housing is cracking AND the AI/power buildout is accelerating — three cycles at three speeds inside one ETF. Fair Value's frame applies here too: oil's fall as demand-scare, not just supply relief. Durable goods (~Sep 24–25) and ISM (Oct 1) are the next hard reads. The UP-NS merger clock runs (comments Nov 18). Stance move: I am no longer equal-weight — the 200D weekly-close break plus a flat curve at 5% moves me to **underweight the cyclical core, overweight the power/grid pocket**.
 
 ---
 
@@ -31,41 +31,41 @@
 
 | Rank | Ticker | Name | Weight | Price | W/W Change | 52W High | 52W Low | Signal |
 |---|---|---|---|---|---|---|---|---|
-| 1 | CAT | Caterpillar | ~7% | $818.57 | **+0.57%** | $1,073.46 | $427.75 | ⚡ |
-| 2 | HON | Honeywell | ~5% | $202.36 | **-3.46%** | $260.28 | $195.87 | ⚠️ |
-| 3 | UNP | Union Pacific | ~5% | $284.40 | **-1.80%** | $315.99 | $213.89 | ⚠️ |
-| 4 | RTX | RTX Corp | ~4% | $197.68 | **-1.55%** | $226.88 | $155.64 | ⚠️ |
-| 5 | GE | GE Aerospace | ~4% | $323.66 | **-3.99%** | $388.84 | $268.91 | ⚠️ |
-| 6 | UPS | United Parcel | ~3% | $100.28 | **-1.97%** | $122.41 | $82.00 | ⚡ |
-| 7 | LMT | Lockheed Martin | ~3% | $524.19 | **-0.21%** | $692.00 | $437.25 | ⚡ |
-| 8 | BA | Boeing | ~3% | $210.45 | **-0.85%** | $254.35 | $176.77 | ⚡ |
-| 9 | MMM | 3M | ~3% | $164.97 | **-2.13%** | $184.90 | $139.34 | ⚠️ |
-| 10 | ITW | Illinois Tool Works | ~3% | $268.16 | **-0.73%** | $303.16 | $238.82 | ⚡ |
-| 11 | DE | Deere & Company | ~2% | $675.74 | **-2.57%** | $705.88 (ATH) | $433.00 | ⚡ |
-| 12 | FDX | FedEx | ~2% | $311.99 | **-3.26%** | $345.37 | $180.80 | ⚠️ |
-| 13 | CSX | CSX Corp | ~2% | $48.95 | **-0.93%** | $53.60 | $32.18 | ⚡ |
-| 14 | ETN | Eaton Corp | ~2% | $425.37 | **+3.53%** | $478.00 | $311.92 | 🔥 |
-| 15 | WM | Waste Mgmt | ~2% | $213.46 | **-2.09%** | $248.13 | $194.11 | ⚡ |
+| 1 | CAT | Caterpillar | ~7% | $808.99 | **-1.17%** | $1,073.46 | $427.75 | ⚡ |
+| 2 | HON | Honeywell | ~5% | $206.46 | **+2.03%** | $260.28 | $195.87 | ⚡ |
+| 3 | UNP | Union Pacific | ~5% | $279.37 | **-1.77%** | $315.99 | $213.89 | ⚠️ |
+| 4 | RTX | RTX Corp | ~4% | $194.00 | **-1.86%** | $226.88 | $155.64 | ⚠️ |
+| 5 | GE | GE Aerospace | ~4% | $314.27 | **-2.90%** | $388.84 | $268.91 | ⚠️ |
+| 6 | UPS | United Parcel | ~3% | $99.06 | **-1.22%** | $122.41 | $82.00 | ⚡ |
+| 7 | LMT | Lockheed Martin | ~3% | $533.38 | **+1.75%** | $692.00 | $437.25 | ⚡ |
+| 8 | BA | Boeing | ~3% | $198.20 | **-5.82%** | $254.35 | $176.77 | 🔴 |
+| 9 | MMM | 3M | ~3% | $165.89 | **+0.56%** | $184.90 | $139.34 | ⚡ |
+| 10 | ITW | Illinois Tool Works | ~3% | $269.42 | **+0.47%** | $303.16 | $238.82 | ⚡ |
+| 11 | DE | Deere & Company | ~2% | $683.99 | **+1.22%** | $705.88 (ATH) | $433.00 | ⚡ |
+| 12 | FDX | FedEx | ~2% | $303.65 | **-2.29%** | $345.37 | $180.80 | ⚠️ |
+| 13 | CSX | CSX Corp | ~2% | $47.10 | **-3.78%** | $53.60 | $32.18 | ⚠️ |
+| 14 | ETN | Eaton Corp | ~2% | $424.77 | **-0.14%** | $478.00 | $311.92 | ⚡ |
+| 15 | WM | Waste Mgmt | ~2% | — | — | $248.13 | $194.11 | — |
 
-> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Under pressure
-> Prices = Fri Sep 11 close; W/W Change vs Fri Sep 4 close.
+> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Under pressure | 🔴 = Breakdown
+> Prices = Fri Sep 18 close; W/W Change vs Fri Sep 11 close. WM quote not in this week's pull — row carried. 52W ranges carried from prior pull.
 
-**Sector Bifurcation:** Two green names against the tape again — and they're the same kind of green: order-book stories.
+**Sector Bifurcation:** The split widened into three speeds — power-cycle up, defensives flat, old-cyclicals down:
 
-1. **Aerospace & Defense** (RTX, GE, LMT, BA) — **the bleeding stopped, the healing didn't start.** LMT **-0.21% to $524.19** — stabilization, full stop, after the prior week's -6.83% purge; the valuation gap from last week is intact (Citigroup's $691 target carried, Q2 beat carried). RTX -1.55% (RSI 21.9). GE **-3.99%** gave back its relative-strength crown. BA -0.85%, quiet — the SPEEA overhang stayed dormant. No fresh major contract awards *or cancellations* hit our tape this week; the carried backdrop (RTX's $745M SM-3 IIA award and seven-year Tomahawk contract, August) stands.
-2. **Transportation** (UNP, UPS, FDX, CSX) — **oil is the story now.** WTI's +9.4% week to $100.05 (record ~$6 diesel) is a direct margin tax: FDX **-3.26% to $311.99** into its **Sept 17 print** (Zacks consensus ~$4.21 EPS, +9.9% YoY; first report under the new December fiscal year-end; CY26 guide: ~+11% revenue, adj EPS $16.90–18.10); UPS -1.97% (yield now 6.56% — the market is pricing the payout's risk, not its generosity); UNP -1.80% with RSI at **14.0**, the most oversold name on the board; CSX -0.93%. The merger clock kept time: the Sept 4 notices-of-intent milestone passed on the STB's published schedule (comments Nov 18; final briefs May 28, 2027; close targeted mid-2027).
-3. **Machinery & Equipment** (CAT, DE, HON, MMM, ITW) — **CAT stays bid, DE digests, HON sinks.** CAT **+0.57%** — a second straight relative-strength week at $818.57. DE -2.57% to $675.74 — orderly post-ATH digestion after the +10% breakout (RSI still 60.5; nothing wrong with this chart). HON **-3.46% to $202.36**, now within 3% of its 52-week low ($195.87) — the conglomerate discount is compounding. MMM -2.13% (RSI 19.4), ITW -0.73%.
-4. **Electrical / Power Management** (ETN) — **the AI-infrastructure complex got re-bid, and ETN is still its cleanest expression.** +3.53% to $425.37 (+3.96% Friday, back above the 50D at $415.27). The week's proof point came from outside the sector: ORCL's Sept 9 print guided FY27 capex to **$90–95B** with RPO at **$664B** — hyperscaler capex is still accelerating, and Eaton's grid-to-chip order book (65% data-center revenue growth last quarter, carried) is the industrial world's direct read-through. RBC's $512 target carried. Council book note: ETN was opened at $421.11 in the Sept 8 portfolio — $425.37 now.
+1. **Aerospace & Defense** (RTX, GE, LMT, BA) — **the heal-and-hurt week.** LMT **+1.75% to $533.38** — the stabilization became a bid; the valuation gap (Citi $691 carried) keeps working. RTX -1.86% (RSI 31.0) and GE -2.90% paid the duration tax. **BA -5.82% to $198.20** — the week's worst major, no fresh company headline found on our tape; RSI 33.5, sitting $1 above its 3-month support ($197.00). No contract cancellations found; this reads as rate-and-beta de-rating of the sector's weakest balance sheet.
+2. **Transportation** (UNP, UPS, FDX, CSX) — **the oil relief arrived too late.** WTI's collapse to $95.47 unwinds the diesel margin-tax going forward, but the week was already spent: **FDX -2.29% to $303.65** — reported Thursday Sep 17 (first print under the December fiscal year-end; CY26 guide stood at ~+11% revenue / adj EPS $16.90–18.10 from the June print); the Friday reaction was muted (-0.73%) — no blow-up, no relief rally either. AI/data-center logistics remains management's growth refrain (double-digit revenue gains from the build-out, per the June call). UPS -1.22% (yield ~6.6% — still pricing payout risk); UNP -1.77% (RSI 32.5, off last week's 14.0 extreme); CSX **-3.78%** — the rail bid faded hardest.
+3. **Machinery & Equipment** (CAT, DE, HON, MMM, ITW) — **the quiet repair.** HON **+2.03%** — the conglomerate discount finally caught a bid off the 52-week-low zone ($195.87). DE **+1.22%** (RSI 60.6 — the best chart in the complex, ag-cycle thesis intact). MMM +0.56%, ITW +0.47% — the oversold pair stopped bleeding. CAT -1.17% — gave back a little relative strength Friday +1.30%.
+4. **Electrical / Power Management** (ETN + the Generac shock) — **the sector's center of gravity.** ETN was flat on the week (-0.14%) but ripped +3.74% Friday — because **Generac (+30% Wednesday, Sep 16) landed a $2.4B Amazon backup-power deal for AI data centers**, the largest single proof yet that the buildout is now bidding for electrons and resiliency, not just GPUs. Crusoe's $3.9B raise at a $31B valuation for factory-built data centers (Founders Fund, NVDA, Ontario Teachers') is the same signal from private markets. The power/grid pocket is now the sector's structural leader, full stop. Council book note: ETN opened at $421.11 in the Sept 8 portfolio — $424.77 now.
 
 **The Week's Three Stories:**
 
-**The 200-Day Held by Thirteen Cents:** Thursday's $170.55 close sat thirteen cents below the rising 200-day ($170.68) — the first daily close under the line since this advance began. Friday's +1.07% relief rally (Dow +509, VIX -11.2%) pulled XLI back to $172.37, so the weekly close held the line, and unlike healthcare (which fell Friday), industrials participated. One save is not an all-clear: the index remains below its falling 20D/50D, and Wednesday's FOMC decides whether Thursday was the low or a rehearsal.
+**The 200-Day Line Actually Broke:** Last week it held by thirteen cents; this week it was lost on Monday and never reclaimed — five closes below ($169.93 → $168.85 → $168.71 → $169.01 → $169.75 vs the $171.14 line). The framework this page has carried for weeks is unambiguous: a weekly close below the 200-day converts the correction into a break. Fifth straight down week, YTD now behind SPY. The bear case is no longer hypothetical — it's the base case until $171+ is reclaimed on a weekly close.
 
-**Oil at $100 Opened a Second Front:** The sector's macro problem set doubled this week. Rates did the first four weeks of damage (10Y now 4.97%); crude's +9.4% sprint to $100.05 — with diesel at a record ~$6/gal on Hormuz/Red Sea attacks — now taxes the transport leg directly and feeds the CPI-gate tail risk that keeps the hike priced. FDX's Sept 17 print lands one day after the FOMC with both fronts live.
+**Generac's $2.4B Amazon Deal — the Buildout Bids for Electrons:** Wednesday's +30% explosion (GNRC) on an initial $2.4B backup-power contract for Amazon's AI data centers is the week's most important industrial fact: power availability has become the binding constraint on the AI buildout, and the industrial supply chain (generators, switchgear, grid equipment) is where that constraint prices. ETN's Friday +3.74% is the read-through. Combined with Microsoft's >38GW Azure plan and Alphabet's nuclear-backed Finland build, the power leg of the AI trade is now bigger than the chip leg's weekly newsflow.
 
-**Order Books Beat Multiples — Again:** For a second week, the only green names were the ones with company-specific order momentum: ETN (+3.53%) on the ORCL capex read-through, CAT (+0.57%) on quiet relative strength, DE holding most of its ATH breakout. Everything trading on multiple alone (HON, MMM, GE, the rails) sagged. The market will pay for verified demand; it will not pay for duration.
+**The Three-Speed Economy in One ETF:** Manufacturing re-accelerating (Philly 37.8, Empire 7.6), housing cracking (starts 1.275M, permits falling, Lennar's delivery cut, mortgage 6.95%), and the AI/power buildout accelerating (Generac, Crusoe, MSFT/GOOGL capex). XLI holds all three — and the market paid the power cycle, forgave the defensives, and taxed everything else at 5% money.
 
-**Cecil Fundamental Read:** The garden held its value this week. Lockheed at $524 — flat after a 7% purge, with a $691 Citi target and an intact beat behind it — remains the widest price-to-story gap on this board. Union Pacific at RSI 14 with a $329 consensus target and a 2% yield is exactly where patience gets paid, merger or no merger. Honeywell near 52-week lows interests me; at a distorted trailing multiple the earnings quality needs checking, but franchises like this don't stay on sale forever. Eaton I still won't chase at ~42x trailing — the story is real and the price reflects it; I own it in the Council book at $421 and that is enough. Deere's pullback after a 10% week is healthy; the ag-cycle thesis didn't move.
+**Cecil Fundamental Read:** I am a buyer of exactly one thing in this tape: proven franchises at panic prices with dividend cover. Lockheed at $533 (+1.75% in a down-everything week) with Citi's $691 target remains the widest price-to-story gap on the board. Honeywell's +2% off its 52-week-low zone is the conglomerate discount starting to mean-revert — the earnings quality check I demanded last week survives. Union Pacific's RSI-14 extreme has repaired to 32; the merger clock runs on schedule; patience is being paid slowly. What I will NOT do: catch Boeing (-5.8%, no headline, weakest balance sheet in the complex) or chase Generac's +30% (a real deal, a full price). The 200-day break means the market is repricing the cycle — I let it finish before I add cyclical exposure. Eaton in the Council book at $421 stays.
 
 ---
 
@@ -73,13 +73,31 @@
 
 | Ticker | Name | Market Cap | Price | W/W Change | Catalyst / Note | Council Read |
 |---|---|---|---|---|---|---|
-| MATV | Mativ Holdings | **$0.66B** | $11.94 | **-5.69%** | No fresh catalyst — worst mover on the watch again; the tape keeps de-rating the turnaround story | Marky: broken below support, no bid; Cecil: cheap is not a catalyst |
-| AZZ | AZZ Inc | **$4.12B** | $137.07 | **-2.11%** | Quiet week; Q1 FY27 lands **Oct 7** (consensus ~$1.83 EPS, carried) | Cecil: infrastructure + galvanizing demand intact; Marky: consolidating above the 50D |
-| GBX | Greenbrier | **$1.33B** | $43.09 | **-0.39%** | Quiet consolidation; still riding the UNP-NS rail consolidation theme (STB NOI milestone passed Sept 4) | Marky: holding above rising 200D; Ophelia: rail M&A read-through is real but slow |
-| TRN | Trinity Industries | **$2.27B** | $28.50 | **+0.64%** | Only green name on the watch; railcar leasing fundamentals steady | Cecil: lease fleet economics keep compounding quietly |
-| BLBD | Blue Bird | **$1.96B** | $61.84 | **-2.81%** | Gave back part of last week's +7.43% pop; still **no signed-terms update** on the American Securities take-private chatter | Ophelia: until terms are signed, treat the premium as borrowed |
+| PRIM | Primoris Services | **$4.18B** ✓ | $77.13 | **+2.46%** | **RE-ADMITTED TO WATCH** — the securities-class-action lead-plaintiff deadline (Sept 21) is now 3 days out and the tape is pre-emptively bidding it (+2.5% in a down tape); power/utilities E&C exposure is the right theme (Generac-adjacent) | Ophelia: the deadline passes Monday — the overhang either clears or prices; Marky: RSI 49, holding above the 50D zone |
+| MATV | Mativ Holdings | **$0.66B** ✓ | $11.99 | **+0.42%** | First green week in a month — the turnaround de-rating paused at $12; still no fresh catalyst | Cecil: cheap is still not a catalyst, but the bleeding stopped; Marky: above the 50D ($10.70) for once |
+| AZZ | AZZ Inc | **$3.99B** ✓ | $132.72 | **-3.17%** | Quiet slide into the Q1 FY27 print **Oct 7** (consensus ~$1.83 EPS, carried); galvanizing/infrastructure demand story intact | Cecil: the print is the proof point; Marky: broke the 50D ($144.14) — cautioned |
+| TRN | Trinity Industries | **$2.23B** ✓ | $28.00 | **-1.75%** | Gave back last week's green; railcar leasing fundamentals steady | Cecil: lease economics compound quietly; Marky: below the 50D/200D cluster ($31.3) |
+| BLBD | Blue Bird | **$1.91B** ✓ | $60.43 | **-2.28%** | Second down week; still **no signed-terms update** on the American Securities take-private chatter — the borrowed premium keeps deflating | Ophelia: until terms are signed, the premium is borrowed — and borrowing costs 5% now |
 
-*Caps re-verified via Yahoo Finance info, Sept 11 close — all five names remain sub-$5B; no rotation this week. **PRIM stays out** ($4.08B cap, +1.14% this week): the securities-class-action overhang stands with the lead-plaintiff deadline **Sept 21 — ~10 days out**; we revisit after it passes. **GVA stays graduated** ($5.28B cap, -0.32%) — promoted above the $5B line and holding.*
+*Caps re-verified via Yahoo Finance info, Sept 18 close — all five names remain sub-$5B. **GBX benched this week** (-2.95% to $41.82, $1.29B cap — quiet rail consolidation, no read-through bid; replaced by PRIM's re-admission to keep the watch at five active names). **GVA stays graduated** ($5.15B cap, -2.48% W/W to $115.97) — holding above the $5B line for a second straight check.*
+
+---
+
+## TECHNICAL LEVELS
+
+| Level | Price | Significance |
+|---|---|---|
+| 52W High | $188.19 | Aug 5 peak — now -9.8% overhead |
+| 50-Day MA | ~$178.98 | Falling — heavy supply |
+| 20-Day MA | ~$173.99 | Falling — first reclaim target |
+| **200-Day MA** | **~$171.14** | **LOST all week — weekly close below → tripwire fired** |
+| Current Price | $169.75 | Friday close; -1.52% W/W; five straight down weeks |
+| Week's Low | $167.49 | Wednesday's hike-day low — first support |
+| Old Tripwire | $170.68 | Last week's 200D print — now inside the resistance band |
+| Deep Support | low $160s | Next demand zone |
+| 52W Low | $147.14 | Structural floor |
+
+**Marky Setup Assessment:** I wrote the rule and I follow it: a weekly close below the 200-day means I'm flat the index. $169.75 vs the $171.14 line is not a fake-out — it's five consecutive daily closes below, with RSI 34.4 and a falling 20D/50D stack overhead. The burden of proof is fully on the bulls now: reclaim $171–$172 on a weekly close or this is a downtrend channel targeting $167.49, then the low $160s. What I'd trade inside it: the power pocket (ETN above $415, Generac's deal as the theme's anchor) and DE's intact chart (RSI 60.6, above all MAs). What I won't touch: BA $1 above its 3-month support with no bid, and the rails until CSX stops making new lows. The one honest counterpoint: Philly Fed at 37.8 says the goods economy is re-accelerating under the price damage — if durable goods (~Sep 24–25) and ISM (Oct 1) confirm, this break could become a bear trap. But the tape must prove it. Trust closes, not hopes.
 
 ---
 
@@ -87,94 +105,99 @@
 
 | Factor | Latest Reading | Trend | Impact on Industrials |
 |---|---|---|---|
-| 10Y Treasury Yield | **4.97%** (+19bp W/W) | ▲ Fresh 52W-high closes; long-end buybacks (Sep 9 – Nov 4) didn't cap it | 🔴 Multiple compression + dearer capex financing |
-| 2s10s Spread | ~**+41bp** | ◀▶ Steepening held; parallel bear shift this week | 🟡 Curve no longer the signal — the level is |
-| CPI (Sep 11) | Headline +0.4% / 3.4% y/y in line; **core +0.3% vs +0.2% cons** | ▲ Core re-accelerated; record +5.9% wireless | 🔴 Sealed the Sept-16 hike (~87–90% CME) |
-| PPI (Sep 10) | Headline +0.4% / 5.4% y/y; **diesel +24.1%**; core +0.2% | ▲ Goods pipeline heating | 🔴 Input-cost pressure on machinery + freight |
-| Fed Posture | Blackout since Sep 5; Chair Warsh no-guidance era | ▲ Hike ~90% priced for Sep 16 | 🔴 Wednesday is the decider for the 200D test |
-| WTI Crude | **$100.05 (+9.4% W/W)**; Brent >$108 Thu; Fri -2.4% fade | ▲ Hormuz/Red Sea attacks; record ~$6 diesel | 🔴 Direct margin tax on transports into FDX print |
-| Canada Counter-Tariffs | First full live week complete | ◀▶ Zero supply-chain headlines on our tape | 🟡 Invoice impact shifts to October Q3 commentary |
-| ISM Manufacturing PMI | None this week (next print **Oct 1**) | — | ⚪ |
-| Durable Goods Orders | August report lands ~**Sept 24–25** | — | ⚪ Next hard demand read |
-| UP-NS Merger (STB) | **Sept 4 notices-of-intent milestone passed** | ▶ Comments due Nov 18; final briefs May 28, 2027; close targeted mid-2027 | 🟢 Clock is running on the published schedule |
-| AI Data Center Capex | ORCL FY27 capex guided **$90–95B**; RPO **$664B** (Sep 9) | ▲ Hyperscaler buildout still accelerating | 🟢 ETN/CAT order-book read-through |
-| Defense Spending | Quiet — no fresh major awards or cancellations | ◀▶ Carried: RTX $745M SM-3 IIA + 7-yr Tomahawk (Aug) | ⚪ |
-| Market Breadth | ~45% of S&P industrials in bear territory (carried) | ▲ Narrow leadership persists | 🔴 Rally is ETN/CAT; the median stock is weak |
-| China Economy | No fresh prints on our tape this week | ◀▶ | 🟡 Still the swing factor for CAT/DE |
-| DXY | **99.12**, flat W/W | ◀▶ | ⚪ No export headwind added this week |
+| 10Y Treasury Yield | **5.00% Friday close** (first weekly close at the line since 2007) | ▲ Bear-flattening (2s10s ~+26bp) | 🔴 Capex financing at cycle-worst levels; multiple compression on 25–40x names |
+| Fed Posture | **Hiked +25bp to 3.75–4.00% (Sep 16, 12-0)**; dots 4.1–4.4%; ~47% odds of one more by Dec | ▲ First hike since July 2023 | 🔴 The sector voted no all five days |
+| WTI Crude | **$95.47 (-4.6% W/W)**; Brent -23% from the Sep 9 spike | ▼ Hormuz diplomacy + Saudi pipeline restart hopes | 🟢 Margin relief for transports arrives NEXT week — diesel's record tax deflates; but read Fair Value's warning: oil's fall may be demand-scare, not just relief |
+| Regional Manufacturing | **Philly Fed 37.8 (big beat); Empire 7.6** | ▲ Goods economy re-accelerating | 🟢 The cycle-under-the-price is alive — durable goods (~Sep 24–25) and ISM (Oct 1) are the confirmations |
+| Housing / Construction | Starts 1.275M, permits falling to 1.394M; mortgage ~6.95%; **Lennar cut FY deliveries to 80–81K** | ▼ Housing cracking at 5% money | 🔴 Building-products and residential-adjacent demand rolling |
+| AI / Power Buildout | **Generac +30% on $2.4B Amazon backup-power deal (Sep 16)**; Crusoe $3.9B raise at $31B for factory-built data centers; MSFT >38GW Azure plan; GOOGL $15.1B Finland + nuclear PPA | ▲ The buildout is bidding for electrons, not just GPUs | 🟢 ETN/power-grid pocket is the sector's structural leader |
+| Logistics Labor | Amazon raised US warehouse minimum pay to $20/hr (~$3B annualized, ~1.5M workers) | ▲ Wage pressure persists in logistics | 🟡 Cost headwind for the parcel/freight chain |
+| UP-NS Merger (STB) | Comments due Nov 18; final briefs May 28, 2027; close targeted mid-2027 | ▶ On schedule | 🟢 Clock running |
+| FDX Q1 print (Sep 17) | Reported Thursday AMC; muted Friday reaction (-0.73%) | ◀▶ No blow-up, no relief rally | 🟡 CY26 guide (~+11% rev, adj EPS $16.90–18.10) stands from June; AI/data-center logistics demand cited as double-digit growth engine |
+| Canada Counter-Tariffs | Second live week; zero supply-chain headlines on our tape | ◀▶ | 🟡 Invoice impact lands with October Q3 commentary |
+| ISM Manufacturing PMI | None this week (next print **Oct 1**) | — | ⚪ The sector's most important print |
+| Durable Goods Orders | August report lands ~**Sep 24–25** | — | ⚪ Next hard demand read |
+| Defense Spending | Quiet — no fresh major awards or cancellations found | ◀▶ Carried: RTX $745M SM-3 IIA + 7-yr Tomahawk (Aug) | ⚪ LMT's bid is valuation repair, not new awards |
+| DXY | **100.21 (+1.1% W/W)** | ▲ Dollar accepted the hike | 🔴 Fresh export-translation headwind for CAT/DE |
 
-**Ophelia Verdict:** Stance **HELD at equal-weight**. The regime facts that matter: the 200-day was tested Thursday and defended Friday — one save, not an all-clear. The hike is ~90% priced, which makes Wednesday's *framing* the risk, not the hike itself. And oil has opened a second front at exactly the wrong time for transports. The trigger lines from last week all fired benign or dormant: the 200D held, Canada week one was silent, the STB milestone passed on schedule. I keep my hand on the gate: a weekly close below $170.68 after Wednesday, or Brent sustaining above $108, flips this board to underweight.
+**Ophelia Verdict:** Stance moved to **underweight the cyclical core** — the first downgrade this page has carried. Three facts forced it: the 200D lost on a weekly close, the curve flat at 5% money, and the dollar's rally adding an export tax. The counterweights are real and I name them: Philly 37.8, oil's margin relief landing for transports next week, and a power-buildout cycle that just printed its biggest single proof ($2.4B Generac–Amazon). My resolution: the cycle is splitting, so the stance splits — underweight the old cyclicals (rails, aerospace ex-LMT, machinery ex-DE), overweight the power/grid pocket (ETN and the Generac theme), and let durable goods + ISM decide whether this 200D break is a regime change or a bear trap. If ISM prints above 52 with the 10Y still at 5%, I'll own the trap call and re-upgrade.
 
 ---
 
-## WEEKLY NARRATIVE — The Week the Trend Line Held
+## WEEKLY NARRATIVE — The Week the Trend Line Actually Broke
 
-Four down weeks in a row, and this one came within thirteen cents of being the one that broke the chart. XLI lost **1.65%** to $172.37, but the shape of the week matters more than the number: Tuesday through Thursday was a slow bleed — $174.42, $171.79, then **$170.55 — the first daily close below the rising 200-day moving average ($170.68), by thirteen cents** — the first real test of the line since this advance began. Friday's relief rally (+1.07%, Dow +509, VIX -11.2%) pulled the index back above it. Industrials, unlike healthcare, got invited to Friday's party. One save is not an all-clear — the falling 20D and 50D sit overhead at $177.58 and $180.32 — but the line that defines the trend held when it was tested.
+The save didn't come. After last week's thirteen-cent defense of the 200-day, XLI lost the line on Monday's first session — $169.93 against the $171.14 average — and never got it back: $168.85 Tuesday, $168.71 on hike day, $169.01 Thursday, $169.75 Friday. Fifth straight down week, **-1.52%**, and the first weekly close below the 200-day since this advance began. The correction this page tracked for a month became a break.
 
-The macro problem set doubled. The rate front did what it's done for four weeks: core CPI ran hot (+0.3% vs +0.2% consensus), sealing a **~90%-priced September 16 hike** and pushing the 10Y to **4.97%**. The new front is oil: **WTI +9.4% to $100.05**, Brent through $108 intraday Thursday, diesel at a record ~$6/gal on Hormuz/Red Sea attacks — a direct margin tax on the transport leg three sessions before **FedEx prints on September 17**, one day after the FOMC. FDX fell 3.26% on the week; UPS's yield hit 6.56%; UNP is the most oversold name on the board (RSI 14.0).
+The macro gave no cover. Wednesday's 12-0 hike to 3.75–4.00% put the 10Y at a 5.00% weekly close — the first since 2007 — and the curve bear-flattened to ~+26bp, the worst shape for a sector whose customers finance capex. The dollar rallied (+1.1% to 100.21), taxing the exporters. And oil's collapse to $95.47, which should have been the transports' salvation, arrived too late to matter — and carries Fair Value's darker reading besides: demand expectations are collapsing, not just supply fears fading.
 
-Against that tape, the only green was order-book green. **Eaton +3.53%** — back above its 50D on ORCL's $90–95B FY27 capex guide and $664B RPO, proof the hyperscaler buildout is still accelerating. **CAT +0.57%**, a second straight week of quiet relative strength. Deere digested its ATH breakout in orderly fashion. Lockheed **stabilized** (-0.21%) after the prior week's purge. Everything trading on multiple alone — HON (-3.46%, within 3% of its 52-week low), GE (-3.99%), MMM, the rails — sagged. The market will pay for verified demand; it will not pay for duration.
+But the week's two biggest industrial stories were DEMAND stories. **Generac exploded +30% Wednesday** on a **$2.4B Amazon backup-power deal for AI data centers** — the largest single proof that the buildout's binding constraint is now electricity, and that the industrial supply chain is where that constraint prices. **Crusoe raised $3.9B at a $31B valuation** for factory-built data centers the same week. ETN ripped +3.74% Friday on the read-through. The power/grid pocket is no longer a theme inside the sector — it IS the sector's leadership.
 
-Canada's counter-tariffs completed their first live week without a single supply-chain headline on our tape; the invoice impact arrives with October's Q3 commentary. The UP-NS merger passed its Sept 4 notices-of-intent milestone on the STB's published schedule — comments due November 18.
+The micro tape split three ways: defensives repaired (LMT +1.75%, HON +2.03%, DE +1.22%), the old cyclicals sagged (BA **-5.82%** on no headline, CSX -3.78%, GE -2.90%), and the transports treaded water into FDX's Thursday print (FDX -2.29% W/W, muted -0.73% Friday reaction — no blow-up, no relief). Underneath the price damage, the real economy printed hot: Philly Fed 37.8, Empire 7.6 — the goods cycle is re-accelerating into 5% money.
 
-**Bottom line:** the trend line held, and that's the week's only bull fact. Wednesday's FOMC decides whether Thursday was the low or a rehearsal; Thursday's FDX print reports on the oil front in real time. Stance: equal-weight, hand on the gate.
+**Bottom line:** the trend line broke, the framework says correction-becomes-break, and the burden of proof flipped to the bulls. But the cycle underneath is splitting, not dying — and durable goods (~Sep 24–25) plus ISM (Oct 1) will decide whether this break is a regime change or a bear trap. Own the power pocket, respect the break, demand the data.
 
 ---
 
 ## EARNINGS CALENDAR & EVENT WATCH
 
 **Resolved this week:**
-- **PPI (Sep 10) + CPI (Sep 11)** — both printed; core CPI hot (+0.3% vs +0.2% cons) → Sept-16 hike ~87–90% priced
-- **Canada counter-tariffs, week 1** — complete; zero supply-chain headlines on our tape; invoice watch shifts to October Q3 commentary
-- **UP-NS STB notices-of-intent milestone (Sept 4)** — passed on the published schedule
+- **FOMC (Sep 16)** — hiked +25bp to 3.75–4.00% (12-0); dots 4.1–4.4%; the 10Y's weekly close at 5.00% followed
+- **FDX Q1 print (Sep 17 AMC)** — first report under the December fiscal year-end; muted Friday reaction (-0.73%); CY26 guide (~+11% rev / adj EPS $16.90–18.10) carried from June; AI/data-center logistics flagged as double-digit growth engine
+- **Generac–Amazon (Sep 16)** — $2.4B backup-power deal for AI data centers; GNRC +30% — the power-constraint trade's biggest proof
+- **Philly Fed 37.8 / Empire 7.6 (Sep 17)** — goods-economy re-acceleration confirmed at the regional level
 
 **Next up:**
-- **Sep 15–16 — FOMC** — hike ~90% priced; Chair Warsh's framing is the risk
-- **Sep 17 — FDX Q1 FY26** (first report under new December fiscal year-end; Zacks consensus ~$4.21 EPS, +9.9% YoY; CY26 guide: ~+11% revenue, adj EPS $16.90–18.10)
-- **Sep 17–18 — BOJ** — ~85% hike risk; yen-strength read-through on export names
-- **~Sep 24–25 — August durable goods orders** — next hard demand read
-- **Oct 1 — ISM Manufacturing PMI** — the cycle print that matters most for this sector
+- **Sep 21 — PRIM lead-plaintiff deadline** — the class-action overhang clears or prices; watch-name gate
+- **~Sep 24–25 — August durable goods orders** — the hard demand read on the Philly/Empire re-acceleration
+- **Sep 30 — core PCE** — December hike math
+- **Oct 1 — ISM Manufacturing PMI** — the sector's most important print; >52 with a 5% 10Y = bear-trap case
 - **Oct 7 — AZZ Q1 FY27** (watch name; consensus ~$1.83 EPS, carried)
-- **Early Oct — GBX earnings** (watch name)
+- **Early Oct — GBX earnings** (benched watch name)
 - **Oct 20 — LMT Q3** (consensus ~$6.72 EPS, carried)
 - **Late Oct — RTX, GE Q3 prints**
+- **Oct 28 — next FOMC**
 - **Oct 29 — CAT Q3** (carried)
 - **Nov 18 — UP-NS merger comments due** at the STB
 - **Late Nov — DE Q4** (carried)
+
+**Marky's Binary Event Read:** The regime gate is ISM on Oct 1, with durable goods (~Sep 24–25) as the warm-up. The tape's rule is simpler: weekly close back above $171–$172 (the 200D zone) and the break becomes a bear trap worth buying; failure at $167.49 opens the low $160s. Positioning: the power pocket (ETN >$415) is the only long I'd press; the rest of the board is a watchlist, not a portfolio, until the line is reclaimed.
 
 ---
 
 ## RISK SCENARIOS
 
-- **Bull Case:** The Sept-16 hike lands with dovish framing — Warsh talks peaks, not paths — and the 200D defense turns into a base. The de-rated complex (UNP at RSI 14, MMM at RSI 19, HON near 52-week lows) snaps back hard; FDX beats on pricing power and guides through the oil spike; crude fades below $95. XLI reclaims the 20D ($177.58), then the 50D ($180.32), and the bifurcation closes from the bottom up.
-- **Bear Case:** The hike lands with hawkish dots and no guidance — the 10Y punches through 5%, and XLI loses **$170.68 on a weekly close**, opening $168.00 and then the low $160s. Brent sustains above $108 through the quarter, transport margins get cut into FDX's print, and FDX disappoints — the oil front and the rate front reinforce each other through the CPI-gate channel. The narrow ETN/CAT leadership finally cracks under multiple compression, and the ~45% of the sector already in bear territory becomes the majority.
-- **Wild Card:** Warsh's no-guidance era means the market writes the dot plot itself — any framing surprise moves the long end violently in either direction. On oil, the tail runs both ways: escalation in the Hormuz/Red Sea corridor takes Brent toward $120 and diesel's record higher (stagflation shock — transports and machinery both de-rate), while a de-escalation unwinds the whole +9.4% week in days and hands the sector its best relief setup since August.
+- **Bull Case:** Durable goods (~Sep 24–25) and ISM (Oct 1) confirm the Philly/Empire re-acceleration → the 200D break flips to a bear trap → XLI reclaims $171–$172 on a weekly close → the de-rated complex (BA, the rails, UNP) snaps back. Oil's sub-$96 regime deflates diesel costs into Q3 prints → transport margins beat. The power buildout keeps printing deals (Generac's $2.4B is the template) → ETN/grid names carry the index. PCE (Sep 30) cools → December hike odds collapse → the 10Y's 5.00% address becomes a visit, not a residence.
+- **Bear Case:** The 200D loss sticks and the low $160s open. ISM disappoints → the demand-scare reading of oil's collapse (Fair Value) becomes the consensus → cyclicals de-rate again at 5% money. Housing's crack (Lennar's cut, 6.95% mortgages) spreads to building-products and machinery orders. BA breaks its $197 support on any program/delivery headline. The credit-cycle fear that hit banks Thursday reaches industrial financing and channel inventories. DXY >101 compounds the export tax on CAT/DE into Q3 prints.
+- **Wild Card:** The power-constraint trade is moving faster than the grid can physically respond — Generac's +30% says backup generation is the bridge, Crusoe's raise says factory-built capacity is the answer, and neither scales in quarters. If a hyperscaler capex pause headline (another Amodei-essay Monday, but for power) lands while the sector is below its 200D, the leadership pocket and the laggards de-rate TOGETHER — the one scenario where there's no relative winner inside XLI.
 
 ---
 
 ## COUNCIL READ
 
-**Regime check:** Two regime facts changed this week — the Sept-16 hike went from likely to ~90% priced, and the 200-day moving average was tested for the first time. Both resolve Wednesday.
+**Regime check:** The 200-day moving average — tested and defended by thirteen cents last week — was lost on a weekly close this week ($169.75 vs $171.14), the same week the Fed hiked 12-0 and the 10Y closed at 5.00%. The framework's tripwire fired; the stance moved.
 
-- **Cecil (Value):** *"The garden held its value. Lockheed flat after a purge, Union Pacific at RSI 14 with a $329 consensus, Honeywell near 52-week lows — this is where patience gets paid. I own Eaton in the Council book at $421 and that is enough at ~42x trailing. Deere's pullback is healthy; the ag-cycle thesis didn't move."*
-- **Marky (Momentum):** *"Tested Thursday, defended Friday — the 200D held by thirteen cents and that's the only fact that matters this week. Below $180 this is a downtrend channel, but a correction *at* the trend line, not a break *of* it. ETN and CAT are the two charts that actually worked. Lose $170.68 on a weekly close and I'm gone; hold it through Wednesday and the squeeze setup is real."*
-- **Ophelia (Risk/Regime):** *"Stance HELD at equal-weight. One save is not an all-clear, and the macro problem set doubled — rates did the first four weeks of damage, oil opened the second front. The hike is ~90% priced, so Wednesday's *framing* is the risk, not the hike. Trigger lines: a weekly close below $170.68 after Wednesday, or Brent sustaining above $108, flips this board to underweight."*
+- **Cecil (Value):** *"I buy franchises at panic prices, not falling knives at broken lines. Lockheed at $533 with a $691 target is the widest gap on the board and the market finally agreed (+1.75% in a red week). Honeywell's +2% off its lows is the conglomerate discount mean-reverting. Boeing at $198 with no headline and a weak balance sheet — I watch, I don't catch. Generac's deal is real and its +30% price is full; Eaton at $421 in the Council book stays, and that is enough. The 200-day break means the market is repricing the cycle — I let it finish."*
+- **Marky (Momentum):** *"I wrote the rule, the rule fired, I'm flat the index. Five closes below the 200-day, RSI 34, falling 20D/50D overhead — this is a downtrend channel until $171–$172 is reclaimed on a weekly close. Inside it: ETN above $415 is the only long I'd press, DE's chart is intact, and BA $1 above support with no bid is how accounts die. Durable goods and ISM are the trap-or-break arbiters. Trust closes, not hopes."*
+- **Ophelia (Risk/Regime):** *"First downgrade this page has carried: underweight the cyclical core. The 200D break plus a flat curve at 5% money plus a rallying dollar is three strikes. But the cycle is splitting, not dying — Philly 37.8, the power buildout printing $2.4B deals, oil's margin relief landing next week. So the stance splits too: underweight rails/aerospace-ex-LMT/machinery-ex-DE, overweight the power/grid pocket. ISM above 52 with the 10Y at 5% and I'll own the bear-trap call and re-upgrade. Until then, the line is the line."*
 
-**Consensus:** Equal-weight the sector. The 200-day held its first test; the FOMC decides whether that was the low or a rehearsal. Order-book stories (ETN, CAT) keep working; the de-rated complex (UNP, HON, MMM) is coiled but needs the rate headwind to break. Watch FDX Thursday as the first live report from the oil front.
+**Consensus:** Underweight the cyclical core; overweight the power/grid pocket. The 200-day broke on a weekly close — the correction became a break. Order-book stories (ETN, the Generac theme, DE) keep working; the de-rated complex (BA, rails, UNP) needs the rate headwind to break AND the cycle data to confirm. Durable goods (~Sep 24–25) and ISM (Oct 1) decide whether this is a regime change or a bear trap.
 
 ---
 
 ## SOURCES
 
-- Price, volume, moving-average and RSI data: **yfinance** pull of 23 tickers (XLI + 15 holdings + 5 watch names + PRIM/GVA checks), week through **Fri Sep 11, 2026 close**; weekly changes recomputed vs the Fri Sep 4 close
-- Market caps: Yahoo Finance info fields, verified Sept 11 close
-- FDX earnings date, consensus and guidance: **Zacks** earnings calendar
-- UP-NS merger STB schedule (NOI milestone Sept 4; comments Nov 18; final briefs May 28, 2027; close targeted mid-2027): **up-nstranscontinental.com**
-- ORCL FY27 capex / RPO print (Sep 9): company earnings coverage (see this week's tech.md update)
-- CPI / PPI prints: **BLS** releases (Sep 10–11); hike odds: **CME FedWatch**
-- WTI/Brent/diesel moves: **CNBC** markets coverage
-- Market-breadth stat (~45% of S&P industrials in bear territory): carried from last week's update; no fresh read this week
+- Price, volume, moving-average and RSI data: **yfinance** pull of 23 tickers (XLI + 15 holdings + 7 watch names), week through **Fri Sep 18, 2026 close**; weekly changes recomputed vs the Fri Sep 11 close
+- Market caps: Yahoo Finance info fields, verified Sept 18 close (PRIM $4.18B, AZZ $3.99B, TRN $2.23B, BLBD $1.91B, GBX $1.29B, MATV $0.66B, GVA $5.15B graduated)
+- Generac $2.4B Amazon backup-power deal (+30%, Sep 16): **Trading Strategy Guides** market recap
+- Crusoe $3.9B raise at $31B (factory-built data centers; Founders Fund/NVDA/OTPP): **Fair Value** (Sep 17, 2026)
+- FOMC hike (3.75–4.00%, 12-0, Sep 16) + dots 4.1–4.4%: **WSJ / Business Insider / Seeking Alpha** live coverage; 10Y 5.00% / 2Y 4.741% Friday closes: **Barron's** (Sep 18)
+- Philly Fed 37.8 / Empire 7.6 / claims 196K / housing starts 1.275M / permits 1.394M / mortgage ~6.95%: repo cross-checks (wiki/economic-calendar.md + wiki/tech.md, Sep 18) + **Fair Value**
+- Lennar FY deliveries cut to 80–81K; Amazon $20/hr warehouse minimum (~$3B annualized): **Fair Value** (Sep 17)
+- FDX Sep 17 print: **FedEx IR / Zacks calendar**; CY26 guide and AI/data-center logistics commentary carried from the June Q4 call (company release)
+- UP-NS merger STB schedule: **up-nstranscontinental.com** (carried)
+- WTI $95.47 (-4.6% W/W) / Brent -23% from Sep 9 spike / demand-scare framing: **Fair Value** (Sep 17)
+- MSFT >38GW Azure by 2032 / GOOGL $15.1B Finland + nuclear PPA: **Investing News Network** (Sep 11, carried)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-09-12** (covering week ended Fri Sep 11, 2026)*
+*Last updated by Saturday Research Crew: **2026-09-18** (11 PM ET run; covering week ended Fri Sep 18, 2026)*
