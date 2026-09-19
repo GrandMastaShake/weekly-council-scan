@@ -10,20 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $112.96 | $114.91 | **-1.70%** |
-| 52W Range | $105.45 – $124.02 (closing basis) | — | — |
+| Price | $111.03 | $112.96 | **-1.71%** |
+| 52W Range | $105.45 – $124.02 (closing basis; intraday extremes $104.98 / $124.51) | — | — |
 | AUM | ~$18–22B | — | — |
-| YTD Return | ~-4.17% | -3.60% | -0.6 pp |
-| 1Y Return | ~-4.59% | — | — |
-| P/E Ratio | ~24.7 (trailing) | ~30 (carried) | refreshed |
+| YTD Return | ~-6.65% | -4.17% | -2.5 pp |
+| 1Y Return | ~-2.71% | — | — |
+| P/E Ratio | ~24.3 (trailing) | ~24.7 | refreshed |
 | Dividend Yield | ~0.77% | — | — |
 | Beta | ~1.22 (carried) | — | — |
 | Total Holdings | 47 | — | — |
 | Avg Daily Volume | ~5.3M shares (carried) | — | — |
 
-**Marky Tape Read:** XLY closed the holiday-shortened week at **$112.96, down -1.70%** ($114.91 → $112.96 across four sessions, Labor Day Monday dark) — a fourth straight losing week, and the structure got worse: last week's break below the 50D/200D cluster ($115.94 / $116.70) was not reclaimed; instead the ETF drifted further away from it. RSI sits at 40.9 — weak, not yet washed out. The week's damage profile was different from the last: no single LULU-style implosion, but a broad, grinding multiple compression as the 10Y ground to a fresh 52-week high at **4.97%** after Thursday's hot core CPI. The two largest weights split the difference — AMZN (-0.67%) held its 50D ($255.25) by a whisker, TSLA (+3.21%) bounced off its own 50D ($354.50) — while everything rate- or fuel-sensitive (BKNG -9.8%, DG -6.5%, SBUX -5.5%, CMCSA -4.9%, F -4.5%) bled. Friday's Dow +509 relief rally lifted XLY off its lows but couldn't close the week green.
+**Marky Tape Read:** XLY closed FOMC week at **$111.03, down -1.71%** across five sessions — a **fifth straight losing week** — and the shape mattered more than the size: Monday drifted to $112.85 (week high $113.28), Tuesday slid to $110.88 as the 10Y kissed 5.016% intraday, Wednesday the Fed hiked 12-0 with dots pointing at 4.1% and XLY printed the **week low $109.63 intraday** before closing $110.18; Thursday's **retail sales +1.2% beat** produced the week's only real bounce ($111.39); Friday's quad-witching/BOJ session faded it to $111.03. RSI fell to **28.5 — the ETF itself is now statistically oversold** for the first time in this losing streak, but the broken 50D/200D cluster ($115.37 / $116.58) sits far overhead and untouched since the break. The top two weights split again: **AMZN -1.20% lost its 50D ($255.84) by two dollars**, while **TSLA -0.32% held above its own ($350.25), RSI 56.8** — the strongest posture on the board for a second week. Everything rate- or fuel-sensitive bled again, led by **CMCSA -9.76%** (worst major, broadband bleed), **F -5.44%**, DIS -3.64%, NKE -3.51%, BKNG -3.46%. The only greens of size: **MAR +1.26%** and **TJX +0.97%** — the latter a bounce off RSI 18.
 
-**Ophelia Macro Read:** The consumer canary is now audibly wheezing. Friday's **preliminary September UMich sentiment printed 47.8 vs. 51.7 final August (-7.5% M/M, ~51 consensus)** — a fresh lurch back toward May's record-low 44.8, driven by gasoline anxiety from the Iran/Hormuz conflict (WTI ~$100, record ~$6 diesel) and deteriorating business-condition expectations. One-year inflation expectations are stuck near 4%. Meanwhile Thursday's **core CPI came in hot (+0.3% M/M vs. +0.2% consensus)**, taking September 15-16 FOMC **hike** odds to ~87-90% on CME FedWatch — a hike is now the base case, not the tail risk. For a beta-1.22 sector, that is the worst macro pairing imaginable: the discount rate is going UP precisely while the consumer's confidence is going DOWN. The lone constructive data point remains August payrolls (+162K) — jobs are holding even as confidence cracks.
+**Ophelia Macro Read:** The wrong-way pairing resolved exactly as feared — the Fed hiked **+25bp to 3.75–4.00% (12-0, first since July 2023, first of the Warsh chairmanship)** into a consumer whose confidence sits at 47.8, and the dots said it is not done: **median end-2026 at 4.1% — one more hike penciled in — 16 of 18 participants see at least one more, 4 see two**; Warsh submitted no dot and offered no forward guidance ("timelier return" is the whole sentence). The 10Y printed its **first close above 5.00% Wednesday (5.01%)** — the crisis line I drew is now a price, not a line — and closed the week at 4.998%. And yet the week's hardest data point cut the other way: **August retail sales beat at +1.2%** with claims at 196K. The consumer is three different people right now: surveys say despair (47.8), spending data says resilience (+1.2%), and housing says deterioration (Lennar, below). The dollar rallied +1.11% to **100.22** on the hike — import-cost relief fading. For a beta-1.22 sector, the only new fact that matters: the hiking cycle is now open, and the next meeting (~Oct) is priced ~57% for another.
 
 ---
 
@@ -31,37 +31,39 @@
 
 | Rank | Ticker | Name | Weight | Price | Wk Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | AMZN | Amazon | ~22% | $256.78 | -0.67% | $284.02 | $198.79 | — | 20.7 | ⚡ |
-| 2 | TSLA | Tesla | ~13% | $365.44 | **+3.21%** | $489.88 | $298.32 | — | ~332 | ⚡ |
-| 3 | HD | Home Depot | ~6% | $308.74 | -3.83% | $411.07 | $293.13 | 3.0% | 21.6 | ⚠️ |
-| 4 | MCD | McDonald's | ~4% | $252.53 | -1.24% | $334.50 | $252.53 | 3.0% | 20.6 | ⚠️ |
-| 5 | BKNG | Booking Holdings | ~4% | $173.92 | **-9.80%** | $221.01 | $153.37 | 1.0% | 19.3 | 🔴 |
-| 6 | LOW | Lowe's | ~3% | $196.82 | -3.73% | $284.26 | $196.59 | 2.5% | 16.6 | ⚠️ |
-| 7 | TJX | TJX Companies | ~4% | $126.02 | -4.59% | $167.88 | $126.02 | 1.5% | 23.3 | 🔴 |
-| 8 | NKE | Nike | ~3% | $36.80 | -4.17% | $72.19 | $36.62 | 4.5% | 17.5 | ⚠️ |
-| 9 | SBUX | Starbucks | ~3% | $98.74 | -5.48% | $108.49 | $76.51 | 2.5% | ~57 | ⚠️ |
-| 10 | F | Ford Motor | ~2% | $13.97 | -4.45% | $17.25 | $10.90 | 4.0% | ~7.9 (fwd, carried) | ⚠️ |
-| 11 | CMCSA | Comcast | ~3% | $25.20 | -4.87% | $31.68 | $21.92 | 5.0% | ~8.6 (carried) | ⚠️ |
-| 12 | DIS | Walt Disney | ~3% | $106.55 | **+1.18%** | $115.00 | $91.72 | 1.4% | 22.0 | ⚡ |
-| 13 | MAR | Marriott | ~2% | $334.69 | -0.54% | $401.72 | $256.90 | 0.9% | ~34.8 (carried) | ⚡ |
-| 14 | LULU | Lululemon | ~1% | $98.97 | -1.63% | $215.88 | $96.88 | — | ~8.1 | ⚠️ |
-| 15 | DG | Dollar General | ~1% | $124.58 | **-6.48%** | $154.71 | $94.60 | 1.7% | ~17.3 (carried) | ⚠️ |
+| 1 | AMZN | Amazon | ~22% | $253.71 | -1.20% | $284.02 | $198.79 | — | 20.2 | ⚠️ |
+| 2 | TSLA | Tesla | ~13% | $364.27 | -0.32% | $489.88 | $298.32 | — | ~344 | ⚡ |
+| 3 | HD | Home Depot | ~6% | $299.98 | -2.84% | $411.07 | $293.13 | 3.1% | 21.2 | 🔴 |
+| 4 | MCD | McDonald's | ~4% | $248.24 | -1.70% | $334.50 | $248.24 | 3.0% | 20.2 | 🔴 |
+| 5 | BKNG | Booking Holdings | ~4% | $167.90 | -3.46% | $221.01 | $153.37 | 1.0% | 18.9 | 🔴 |
+| 6 | LOW | Lowe's | ~3% | $192.49 | -2.20% | $284.26 | $192.49 | 2.6% | 16.4 | 🔴 |
+| 7 | TJX | TJX Companies | ~4% | $127.24 | **+0.97%** | $167.88 | $126.02 | 1.5% | 23.4 | ⚠️ |
+| 8 | NKE | Nike | ~3% | $35.51 | -3.51% | $72.19 | $35.51 | 4.5% | 17.3 | 🔴 |
+| 9 | SBUX | Starbucks | ~3% | $95.83 | -2.95% | $108.49 | $76.51 | 2.6% | ~56 | 🔴 |
+| 10 | F | Ford Motor | ~2% | $13.21 | -5.44% | $17.25 | $10.90 | 4.4% | ~6.8 (fwd) | ⚠️ |
+| 11 | CMCSA | Comcast | ~3% | $22.74 | **-9.76%** | $31.68 | $21.92 | 5.8% | ~7.3 | 🔴 |
+| 12 | DIS | Walt Disney | ~3% | $102.67 | -3.64% | $115.00 | $91.72 | 1.4% | 21.8 | ⚠️ |
+| 13 | MAR | Marriott | ~2% | $338.92 | **+1.26%** | $401.72 | $256.90 | 0.9% | ~35.1 | ⚡ |
+| 14 | LULU | Lululemon | ~1% | $98.06 | -0.92% | $215.88 | $96.88 | — | ~8.1 | ⚠️ |
+| 15 | DG | Dollar General | ~1% | $122.41 | -1.74% | $154.71 | $94.60 | 1.9% | ~16.2 | ⚡ |
 
-All 15 holdings refreshed to Fri 9/11 closes (dividend-adjusted basis) this cycle; weekly changes date-pinned Fri 9/4 → Fri 9/11. 52W ranges are closing-basis.
+All 15 holdings refreshed to Fri 9/18 closes (dividend-adjusted basis) this cycle; weekly changes date-pinned Fri 9/11 → Fri 9/18. 52W ranges are closing-basis.
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 
-**Weekly winners:** TSLA (+3.2%), DIS (+1.2%), MAR (-0.5%, best of the red). The losers: BKNG (-9.8%), DG (-6.5%), SBUX (-5.5%), CMCSA (-4.9%), TJX (-4.6%), F (-4.5%), NKE (-4.2%), HD (-3.8%), LOW (-3.7%). Last week's barbell (value-end up, premium down) inverted: DG gave back most of its post-earnings +8.1% pop, while the travel complex took the oil shock squarely on the chin. TJX closed at a fresh 52-week low with RSI 18.2 — statistically the most oversold name on this board — and MCD ($252.53) and LOW ($196.82) also printed fresh 52-week closing lows. That is three fresh lows in one week inside the top 10: the sector's internal breadth is deteriorating, not stabilizing.
+**Weekly winners:** MAR (+1.3%), TJX (+1.0%). The losers: CMCSA (-9.8%), F (-5.4%), DIS (-3.6%), NKE (-3.5%), BKNG (-3.5%), SBUX (-3.0%), HD (-2.8%). Fresh 52-week closing lows this week: **MCD ($248.24), LOW ($192.49), NKE ($35.51)** — three more, a week after HD/MCD/LOW/TJX printed theirs; the lows club keeps growing. The oversold readings are now extreme across the consumer cyclicals: **SBUX RSI 10.8, BKNG 12.7, CMCSA 17.1, MCD 20.3, HD 21.0, LOW 22.3, NKE 23.7** — seven of fifteen holdings at or near capitulation territory while the ETF itself prints 28.5.
 
-**The Oil Shock Hits Travel (new):** WTI's grind to ~$100 (record ~$6 diesel per Grid A's industrials desk) finally broke the travel trade's resilience. BKNG fell **-9.8%** to $173.92 — worst week since the spring Hormuz escalation — closing back below its 200D ($184.67) after holding above it all summer. The mechanics are straightforward: jet fuel and gas prices tax both the consumer's travel budget and airline capacity, and Booking's own Q2 call flagged Middle East exposure as the live drag on room-night growth. MAR held up far better (-0.5%), but the pair trade within travel (asset-light hotels over OTAs) is now the tape's verdict on who absorbs the fuel tax.
+**The Hike Landed (new):** Wednesday's FOMC delivered the cycle's first hike — +25bp to 3.75–4.00%, unanimous 12-0 — with a dot plot that pointed *higher*: median end-2026 4.1% (one more hike), end-2027 raised to 4.1% from 3.6%, 2026 core PCE up to 3.4%. Chair Warsh submitted no projection and gave no guidance. The 10Y closed above 5.00% for the first time that day (5.01%); XLY printed its week low within the hour. Thursday answered with the week's genuine surprise — **August retail sales +1.2%, a beat**, plus 196K claims — the strongest hard-data read of the month landing 20 hours after the hike. The sector bounced +1.1% that session. The divergence is now the story: the consumer says misery (47.8) and spends anyway (+1.2%).
 
-**AEO: The Beat That Sold Off (new):** The SMID sleeve's biggest scheduled catalyst landed Wednesday AMC — and it was a blowout: **Q2 EPS $0.79 vs. ~$0.27 consensus**, record revenue $1.4B (+8%), comps +6%, Aerie +25%. The stock's answer: **-14.3% on Thursday**. The tell was in the guidance quality: FY26 operating-income guidance of $540-550M explicitly *includes* the net tariff-refund benefit, so the underlying guide was flattered by the same one-time IEEPA money that padded LULU's print the week before. In a market this hostile to anything tariff-assisted, a beat built on refunds gets sold, not chased. AEO finished the week -13.6% at $15.02.
+**Lennar Confirms the Housing Leg (new):** Wednesday AMC, Lennar reported Q3: EPS **$1.19 vs. $2.29 a year ago — "below expectations"** by the CEO's own words, **new orders -9%** to 20,879, deliveries -3%, gross margin 15.8%, and the quote of the week: the environment **"has deteriorated since our last earnings call… mortgage rates at approximately 6.8% at quarter end and even higher since."** That is the housing-turnover channel — HD (-2.8%) and LOW (-2.2%) — confirmed by the builder with the best operations in the business. Q4 guide holds deliveries at 22-23K on margin 15.5-16.0%: managed decline, not collapse.
 
-**Lululemon: After the Crash (updated):** One week removed from the -17% guidance-cut implosion, LULU did the most constructive thing a broken stock can do — nothing. It closed the week at $98.97 (-1.63%), holding the $96.88 fresh 52-week low set during the crash and never seriously retesting it. Heidi O'Neill officially started as CEO on Monday Sept 8, four business days after the collapse, and inherits FY26 guidance that has now been cut twice (EPS midpoint $12.20 → ~$8.74 ex-refunds since March). At ~8x trailing earnings the market is finally pricing the Americas comps streak (ten consecutive negative-or-flat quarters) instead of denying it. Stabilization is not a bottom — but the selling pressure has clearly exhausted for now.
+**The Comcast Bleed (new):** CMCSA **-9.76% to $22.74** — the week's worst major by nearly double — extending the prior week's CFO shock ("no improvement" in broadband user losses, Sep 9-10) into a full repricing: RSI 17.1, P/E ~7.3x, yield 5.8%, sitting $0.82 above its $21.92 52-week low. No new headline this week; this is the market marking a structural broadband decline against a hiking Fed. The cheapest stock on the board keeps getting cheaper.
 
-**The Rates/Oil/Sentiment Vise (updated):** Three macro forces squeezed the sector simultaneously this week. (1) Thursday's hot core CPI (+0.3% vs +0.2%) pushed the 10Y to a fresh 52-week high of **4.97%** and September hike odds to ~87-90%. (2) WTI at ~$100 with record diesel prices taxes every mile-driven and package-shipped business model in the sector. (3) Friday's UMich preliminary September sentiment of **47.8** (from 51.7) confirms the consumer is flinching — near the May record low of 44.8, with gasoline anxiety from the Iran conflict the stated driver. Even DG, last week's winner, couldn't hold its gains in this tape (-6.5%).
+**The Travel Split, Week Three (updated):** MAR **+1.26%** against BKNG **-3.46%** — the asset-light-hotels-over-OTAs pair trade ran for a third straight week. BKNG at RSI 12.7 is now the most oversold mega-cap in the sector, $15 below its broken 200D, with the Middle East room-night drag unfixable while WTI holds ~$100. Marriott's franchise-fee model simply doesn't pay the fuel tax the same way.
 
-**Cecil Fundamental Read:** The value shelf is quietly restocking. NKE at 17.5x with a 4.5% yield and LOW at 16.6x are at multiples I haven't seen on quality franchises in years — both at fresh 52-week lows this week, which tells you the market is pricing a consumer recession, not a slowdown. MCD at 20.6x yielding 3.0% closed at its own 52-week low ($252.53) — for a business with MCD's franchise durability, that's a watch-list price, not a panic price. HD at 21.6x yielding 3.0% with a $377 consensus target is the housing-turnover coiled spring if mortgage rates ever break. I am not buying the falling knives yet — LULU at 8x needs one clean quarter, and AEO's tariff-refund-flattered beat is exactly the kind of earnings quality I won't pay for — but the gap between price and intrinsic value in this sector is the widest it's been all year. F at ~8x forward with a 4% yield remains the honest value hold, tariffs and all.
+**Ford's Tariff Tax (new):** F **-5.44% to $13.21** — no company headline; the Canada trade escalation did the talking (U.S. ban on Canadian motorcycles/dairy/alcohol effective Sep 29, after Ottawa's 15/25/50% retaliation went live Sep 8). Integrated North American supply chains price that as margin risk; at ~6.8x forward with a 4.4% yield, Ford is the sector's purest tariff-policy proxy. Q3 print Oct 22.
+
+**Cecil Fundamental Read:** The shopping list got longer and cheaper, and I still have not bought — because Wednesday answered the question I was waiting on: the Fed is hiking, the dots promise more, and cheap-against-history is not cheap-against-a-5% ten-year. But note what the week proved: retail sales +1.2% says the consumer's wallet is NOT closed — this is a confidence recession in the surveys and a margin recession in the multiples, not (yet) a spending recession in the data. CMCSA at 7.3x with a 5.8% yield is priced for a broadband death spiral; if the losses merely stabilize, that is the deepest value on this board. LOW at 16.4x, MCD at 20.2x at a fresh 52-week low, NKE at 17.3x with a 4.5% yield into its Oct 1 print — the shelf is full. Lennar's "deteriorated" is the honest counterweight: the housing channel is cracking in fact, not in survey. I wait for NKE's print and the final September sentiment (Sep 25). Then we will see.
 
 ---
 
@@ -71,13 +73,13 @@ All 15 holdings refreshed to Fri 9/11 closes (dividend-adjusted basis) this cycl
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| SHAK | Shake Shack | **$2.72B** ✅ | $63.65 | **-8.3%** | No fresh print; sold off with the high-multiple consumer complex all four sessions | Cap re-verified sub-$5B. Premium fast-casual multiple + a flinching consumer + $100 oil is a bad cocktail — wait for the next traffic data point |
-| AEO | American Eagle | **$2.52B** ✅ | $15.02 | **-13.6%** | **Q2 FY26 reported Wed 9/9 AMC: massive beat — EPS $0.79 vs ~$0.27 cons, record $1.4B revenue, comps +6%, Aerie +25% — but stock -14.3% next day** on tariff-refund-flattered FY op-income guide ($540-550M incl. net refund benefit) | Classic 2026 sell-the-news: the beat was real, the earnings quality was questioned, and this tape punishes anything tariff-assisted. Oversold bounce candidate, not a fundamentals short |
-| RVLV | Revolve Group | **$1.50B** ✅ | $21.13 | **-1.0%** | No fresh print; quiet week after the prior week's drift lower | Held up best in the sleeve on a relative basis — the Q2 beat (EPS +86% YoY, record ~23% international mix) is still the most recent real data point, and it's good |
-| BJRI | BJ's Restaurants | **$1.29B** ✅ | $60.78 | **+1.5%** | No fresh print; rode out the week near $60-61 after the prior week's Barclays conference appearance | The only green name in the sleeve — +48% YTD, +97% 1Y, and insider buying earlier this month keeps validating the move. Momentum with receipts |
-| EYE | National Vision | **$1.37B** ✅ | $17.29 | **+3.3%** | No fresh print; bounced off the mid-$16s | Snapped its multi-week bleed with the sleeve's best week — value optical retail is exactly where a trade-down consumer shows up; watch for traffic commentary |
+| SHAK | Shake Shack | **$2.35B** ✅ | $54.88 | **-13.78%** | No fresh print; RBC's Sep 8 Outperform initiation ($89 PT) drowned in the tape — beef-cost margin pressure (peak beef inflation flagged on the Q2 call) repriced against a hiking Fed | RSI 16.6 — the sleeve's capitulation poster this week. The fall is a multiple story, not a demand story (comps +6% last print). Est. Oct 29 is the next hard data point; until then every tick of the 10Y is the catalyst |
+| AEO | American Eagle | **$2.52B** ✅ | $15.06 | **+0.27%** | No fresh print; stabilized after the prior week's -13.6% sell-the-news crash | The refund-flattered beat found its floor — flat week on the post-crash base, RSI 34.2. Earnings-quality scar tissue is priced; watch for any tariff-refund audit headlines |
+| RVLV | Revolve Group | **$1.47B** ✅ | $20.66 | -2.22% | No fresh print; drifted with the sector | Quiet bleed, no damage — the Q2 beat (EPS +86% YoY, record ~23% international mix) remains the last real data point and it's good |
+| BJRI | BJ's Restaurants | **$1.27B** ✅ | $59.54 | -2.04% | No fresh print; gave back a little of its 2026 run (+48% YTD) | Momentum-with-receipts name consolidating, not breaking — still the best 1Y chart in the sleeve (+97%) |
+| EYE | National Vision | **$1.33B** ✅ | $16.88 | -2.40% | No fresh print; gave back the prior week's +3.3% bounce | Value optical retail round-tripped its bounce — trade-down logic intact, tape hostile. RSI 44.3, healthiest posture in the sleeve |
 
-**Council Note:** All five names re-verified below the $5B threshold this cycle — SHAK ($2.72B), AEO ($2.52B), RVLV ($1.50B), BJRI ($1.29B), EYE ($1.37B). No promotions or rotations. The week's lesson was AEO: in a tape this hostile, even a +192% EPS surprise gets sold if the guidance carries one-time money. The bifurcation inside the sleeve is the same one as the mega-caps — value-adjacent names (EYE, BJRI, RVLV) held up while premium multiple names (SHAK) and tariff-story names (AEO) got hit.
+**Council Note:** All five names re-verified below the $5B threshold this cycle — SHAK ($2.35B), AEO ($2.52B), RVLV ($1.47B), BJRI ($1.27B), EYE ($1.33B). No promotions or rotations. The sleeve's story inverted again: last week's winners (BJRI, EYE) gave back their greens while last week's casualties (AEO flat, SHAK's crash accelerating) dominated the tape. SHAK at -13.8% with no fresh catalyst is what a premium consumer multiple looks like when the risk-free rate closes a week at 5.00%.
 
 ---
 
@@ -86,18 +88,19 @@ All 15 holdings refreshed to Fri 9/11 closes (dividend-adjusted basis) this cycl
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $124.02 | Resistance (closing basis) |
-| Supply Zone | $114.90–$116.70 | The broken 50D/200D cluster plus last Friday's close — now heavy overhead resistance |
-| Current Price | $112.96 | — |
-| 200-Day MA | $116.70 | **Lost two weeks ago, not reclaimed** — second consecutive weekly close below |
-| 50-Day MA | $115.94 | **Lost alongside the 200D** — gap to price widening |
-| Week's Low | ~$111.80 (Thu intraday, est.) | Thursday's post-CPI flush low before Friday's bounce |
-| Gap Support | $109.41 | Jul 24 close — the prior breakdown point |
+| Supply Zone | $114.90–$116.70 | The broken 50D/200D cluster plus the Sep 4 close — heavy overhead resistance, untouched for three weeks |
+| 200-Day MA | $116.58 | **Lost three weeks ago — third consecutive weekly close below** |
+| 50-Day MA | $115.37 | **Lost alongside the 200D** — gap to price widening |
+| Current Price | $111.03 | — |
+| Week High | $113.28 | Monday's drift high — first overhead hurdle |
+| Week Low | $109.63 | Wednesday (FOMC day) intraday — held above gap support by 22 cents |
+| Gap Support | $109.41 | Jul 24 close — the prior breakdown point; Wednesday's low stopped 22 cents above it |
 | Structural Support | $105.45–$105.66 | 52W low zone (closing basis) — March 2026 bottom |
-| RSI(14) | 40.9 | Weak, not washed out — room to fall before a true oversold reading |
+| RSI(14) | 28.5 | **Oversold at the ETF level for the first time in the streak** |
 
-**Marky Setup Assessment:** Fourth straight red week, and the broken $115-117 zone is now confirmed resistance — Friday's relief rally (Dow +509) couldn't even get XLY back to Thursday's open, let alone the MAs. RSI 40.9 says this is a grind, not a capitulation — which paradoxically means there's no high-conviction bounce setup at the ETF level yet. The more interesting tape is inside the sector: TJX printed RSI 18.2 at a fresh 52-week low (capitulation territory), while TSLA held its 50D and DIS quietly made a higher low. Watch $109.41 below — a weekly close under it opens the $105.45-105.66 52W-low zone, and with a near-certain Fed hike landing Wednesday, that test is live.
+**Marky Setup Assessment:** Fifth straight red week, and the character changed: for four weeks this was a grind (RSI 41), this week the ETF itself went oversold (28.5) while the week low ($109.63) respected the $109.41 gap support by 22 cents — on FOMC day, with the 10Y closing over 5%. That is what a level under accumulation looks like. Thursday's retail-sales bounce (+1.1%) proved there is a bid for this tape on any hard-data excuse. The setup into next week is the cleanest in a month: **hold $109.41 and the oversold rip toward $113-114 is live; lose it on a weekly close and $105.45-105.66 (the March lows) is the only floor left.** Seven of fifteen holdings already read capitulation (SBUX 10.8, BKNG 12.7, CMCSA 17.1, MCD 20.3, HD 21.0, LOW 22.3, NKE 23.7) — springs everywhere, no triggers yet.
 
-**The relative strength story:** XLY **-1.70% vs. SPY -0.77%** — a fifth consecutive week of underperformance, and YTD the sector sits at -4.2% against SPY's +12.5%. Only energy's oil-shock winners and the defensive complex are holding up better on a relative basis; discretionary remains the market's pressure valve for rate anxiety.
+**The relative strength story:** XLY **-1.71% vs. SPY -0.09%** — a sixth consecutive week of underperformance, and the widest gap of the streak. YTD: **XLY -6.7% vs. SPY +12.5%** — nearly 19 points of separation. In a week when the Fed hiked and the S&P finished flat, discretionary absorbed the blow almost alone. That is what being the market's pressure valve looks like.
 
 ---
 
@@ -105,16 +108,20 @@ All 15 holdings refreshed to Fri 9/11 closes (dividend-adjusted basis) this cycl
 
 | Factor | Level | Implication for XLY |
 |---|---|---|
-| **Core CPI (Thu Sep 10)** | **+0.3% M/M vs. +0.2% consensus** | The print that sealed the September hike — rate relief is off the table into year-end positioning |
-| **10Y Treasury** | **4.97%** — fresh 52-week high, +19bp W/W, RSI 73.7 | Direct multiple compression on every long-duration name; mortgage rates stay pinned, freezing housing turnover (HD/LOW both at fresh 52W lows) |
-| **September FOMC hike odds** | **~87-90%** on CME FedWatch (Sep 15-16 meeting) | A hike is now the base case — the asymmetric-risk setup Warsh framed at Jackson Hole has resolved hawkish |
-| **UMich Sentiment (prelim Sep, Fri 9/11)** | **47.8 vs. 51.7 final Aug (-7.5% M/M)** — near May's record-low 44.8 | The consumer confidence shock is now confirmed in the data, not just the tape; 1-yr inflation expectations stuck ~4%, gas-price anxiety from the Iran conflict the stated driver |
-| **WTI / diesel** | WTI ~$100, record ~$6 diesel | Fuel tax on the consumer and on every logistics-intensive retailer; travel complex repricing (BKNG -9.8%) |
-| **Canada retaliatory tariffs** | Live since Sept 8 (15/25/50% on $27.6B) | Slow-burn cost pressure on F/GM and housing-adjacent names; showing up in guidance footnotes (AEO's refund-flattered guide) rather than headlines |
-| **August payrolls (prior week)** | +162K vs. ~53-56K cons, unemployment 4.1% | The one genuinely strong consumer pillar — jobs are holding even as confidence cracks |
-| SPY (context) | $764.29, **-0.77% W/W** | Broad market down less than half XLY's loss — sector-specific pressure, not a general selloff |
+| **FOMC (Wed Sep 16)** | **Hiked +25bp to 3.75–4.00%, 12-0** — first hike since Jul 2023, first of Warsh chairmanship | The base case became fact. Statement: "inflation remains elevated," "timelier return" to 2%; supply-shock attribution language dropped. No forward guidance — Warsh submitted no dot |
+| **SEP dots** | End-2026 median **4.1%** (one more hike); end-2027 4.1% (from 3.6%); 2026 core PCE 3.4% (from 3.3%); 16/18 see ≥1 more hike, 4 see two | The path, not the quarter point, is the repricing engine for every long-duration consumer multiple. Next meeting (~Oct) priced ~57% for another |
+| **10Y Treasury** | **4.998%** Friday close; **first close above 5.00% Wednesday (5.01%)**; 2Y ~4.74% | The crisis line is now a price. Mortgage-channel turnover (HD/LOW) stays frozen; Lennar confirmed it |
+| **August Retail Sales (Wed Sep 16)** | **+1.2% — beat** | The week's counter-narrative: hard spending data resilient while surveys sit near record lows. Gasoline prices flatter the nominal read; composition unverified — but the beat is the beat |
+| **Lennar Q3 (Wed AMC)** | EPS $1.19 vs $2.29 YoY; **orders -9%**; "deteriorated since our last earnings call"; 30Y mortgage ~6.8% at quarter end, "even higher since" | Housing-turnover channel confirmed cracking in fact, not survey — the HD/LOW leg has its receipts |
+| **UMich Sentiment** | Prelim Sep 47.8 (prior week); **final Sep due Fri Sep 25** | The 47.8 shock gets its confirmation test next Friday; May's 44.8 marked a capitulation low — watch for the rhyme |
+| **DXY** | **100.22, +1.11% W/W** — post-hike dollar bid, back above its 50D | Import-cost relief fading for retail margins; multinational revenue translation turns headwind again |
+| **WTI** | ~$100.30, +0.25% W/W (Tue spike to $105.83) | The fuel tax held at the century mark all week — travel (BKNG) and logistics-intensive retail keep paying it |
+| **Canada trade escalation** | U.S. ban on Canadian motorcycles/dairy/alcohol effective **Sep 29**; Ottawa's 15/25/50% retaliation live since Sep 8 | Direct margin risk to integrated auto supply chains — F -5.4% is the tape's answer |
+| **Claims / Philly / Empire** | 196K / 37.8 / 7.6 (Thu) | Labor and regional manufacturing both firm — the "strong data, miserable mood" divergence widens |
+| **BOJ** | **Hiked to 1.25% (Fri)** | Carry-unwind pressure on global risk appetite into quad witching; USD/JPY already ~6.5pts below the old 160 line |
+| SPY (context) | $761.69, **-0.09% W/W** | The index took the first hike of the cycle flat — XLY's -1.71% was sector-specific absorption |
 
-**Ophelia Verdict:** Bearish — and this is now a data-confirmed bearish, not a vibes bearish. The consumer is telling us in surveys (47.8, near record lows) what the tape has been saying for five weeks: the wallet is closing at the margin that matters for discretionary. A near-certain Fed hike Wednesday into that confidence print is the exact wrong-way pairing for a beta-1.22 sector. I stay underweight, and I'm watching two things for a turn: a post-FOMC "sell the hike, buy the news" reaction, and whether the 47.8 sentiment print marks a capitulation low (May's 44.8 did). Until then, every rally toward $115-117 is a sale.
+**Ophelia Verdict:** Bearish, upgraded from "data-confirmed" to "cycle-confirmed." The first hike of the cycle is in, the dots promise a second, and the ten-year now lives at 5.00% — while the consumer's confidence sits within three points of its all-time record low. The one honest counterweight is Thursday's retail sales beat: spending has not cracked, and I do not fight a +1.2% hard print with a 47.8 survey. My read: this is a margin-and-multiple recession running ahead of a demand recession that may never arrive — which makes the sector untouchable at the index level and increasingly interesting at the single-name level. Stay underweight the ETF. The turn requires one of two things: oil breaking $90 (removes the fuel tax and the inflation impulse at once) or the dots blinking in October. Neither has happened.
 
 ---
 
@@ -122,19 +129,17 @@ All 15 holdings refreshed to Fri 9/11 closes (dividend-adjusted basis) this cycl
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Consumer Flinches — Hot CPI, a Sentiment Shock, and the Beat That Sold Off
+### This Week's Story: The Week the Fed Hiked Into the Flinch
 
-Four sessions, three body blows. The holiday-shortened week opened quietly enough, with Lululemon doing something it hadn't managed in months — holding still — as new CEO Heidi O'Neill took the keys Monday. But the calm didn't survive the data.
+Five sessions, one verdict. The week began in a waiting room — XLY drifted to $112.85 Monday and sagged to $110.88 Tuesday as the 10-year kissed 5.016% intraday, everyone holding breath for Wednesday.
 
-Thursday delivered the macro hammer: core CPI printed +0.3% against +0.2% consensus, and by the close the 10-year Treasury sat at 4.97%, a fresh 52-week high, with CME FedWatch putting a September 16 **hike** at 87-90%. For a sector trading on borrowed multiples, that's a direct tax. Home Depot, Lowe's, TJX, and McDonald's all printed fresh 52-week closing lows during the week — not on company news, but on the discount rate.
+**Wednesday was the day.** At 2:00 PM the FOMC hiked +25bp to 3.75–4.00% — unanimous, 12-0, the first hike since July 2023 and the first of the Warsh chairmanship. The statement was three short paragraphs with no forward guidance; the projections did the talking instead: median end-2026 at 4.1%, 16 of 18 officials penciling at least one more hike, four penciling two. Warsh submitted no dot at all. The 10-year closed above 5.00% for the first time. XLY printed its week low ($109.63) within the hour — and stopped, 22 cents above the $109.41 gap support. Then, after the close, Lennar said the quiet part: the housing environment **"has deteriorated,"** orders down 9%, mortgage rates "even higher since" quarter-end. The housing leg of this sector now has its receipts.
 
-Wednesday night gave the week its cruelest micro story. American Eagle reported a genuine blowout — EPS of $0.79 against a ~$0.27 consensus, record revenue, Aerie comps up 19% — and the stock fell 14.3% the next day anyway. The guidance leaned on one-time tariff refunds, and in the 2026 tape, that's unforgivable. The market isn't rewarding beats anymore; it's auditing them.
+**Thursday was the counterpunch.** August retail sales printed **+1.2% — a beat** — with claims at 196K. Twenty hours after the first hike of the cycle, the hard data said the consumer is still spending. XLY bounced +1.1% — its only real green session — on exactly that excuse. The vibecession divergence is now the sector's defining tension: surveys at 47.8 say despair; the register says +1.2%.
 
-Friday brought the confirmation that this is bigger than any single stock: preliminary September UMich sentiment crashed to 47.8 from 51.7, back within sight of May's all-time record low of 44.8, with gasoline anxiety from the Iran conflict — WTI at ~$100, diesel at records — doing the damage. Booking.com's parent fell 9.8% on the week as the oil shock finally broke the travel trade.
+**Friday** brought the BOJ's hike to 1.25% and quad-witching flows; XLY faded to $111.03. The week's casualties told the rate story by name: **CMCSA -9.8%** (the broadband bleed's second week, RSI 17), **F -5.4%** (the Canada tariff escalation priced into the supply chain), **SBUX RSI 10.8**, **BKNG RSI 12.7**. The only greens of size were **MAR +1.3%** — the asset-light travel hedge — and **TJX +1.0%**, bouncing off RSI 18. In the small-caps, **SHAK fell -13.8% on no news at all** — a premium multiple discovering what 5% risk-free money means.
 
-The bright spots were thin: Tesla bounced 3.2% off its 50-day as the Cybercab hangover faded, Disney ground out a quiet +1.2%, and Friday's Dow +509 rally kept the week from being a rout.
-
-**The Bottom Line:** XLY fell -1.70% to $112.96, a fourth straight down week, closing further below its broken 50D/200D cluster. The sector now faces a near-certain Fed hike into the weakest consumer-confidence print of the cycle. Wednesday's FOMC is the only event that matters next week.
+**The Bottom Line:** XLY fell -1.71% to $111.03, a fifth straight red week, and went oversold at the ETF level (RSI 28.5) for the first time in the streak — while holding the $109.41 gap support on the week’s hardest day. The hiking cycle is open, the consumer is three different people (miserable in surveys, resilient at the register, cracked in housing), and the next test is NKE on October 1.
 
 ---
 
@@ -142,67 +147,74 @@ The bright spots were thin: Tesla bounced 3.2% off its 50-day as the Cybercab ha
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **American Eagle** | AEO | **Sep 9, 2026 (Wed AMC)** | Q2 FY2026 | ✅ **REPORTED** — EPS $0.79 vs ~$0.27 cons (beat), record revenue $1.4B, comps +6%, Aerie +25%; but FY op-income guide $540-550M includes net tariff-refund benefit → stock **-14.3%** next day |
-| **UMich Sentiment (prelim Sep)** | — | **Sep 11, 2026 (Fri)** | — | ✅ **REPORTED** — **47.8 vs. 51.7 final Aug**, near the May record low of 44.8; gasoline/Iran-conflict anxiety the driver |
-| **Core CPI (Aug)** | — | **Sep 10, 2026 (Thu)** | — | ✅ **REPORTED** — +0.3% M/M vs. +0.2% cons; sealed Sept hike odds at ~87-90% |
-| **FOMC Meeting** | — | **Sep 15-16, 2026 (Tue-Wed)** | — | A hike is now the base case (~87-90%); the statement's consumer/inflation language matters as much as the rate |
-| **August Retail Sales** | — | ~Sep 16, 2026 (expected) | — | First hard spending read since the sentiment crack; watch ex-auto/gas |
-| **UMich Sentiment (final Sep)** | — | **Sep 25, 2026 (Fri)** | — | Confirms or revises the 47.8 shock |
-| **Nike** | NKE | **Oct 1, 2026 (expected)** | Q1 FY2027 | The sector's highest-stakes print — athletic-apparel demand after DKS/LULU misses; NKE already -40% YTD |
-| **Tesla** | TSLA | **Oct 21, 2026 (expected)** | Q3 2026 | Deliveries, robotaxi/NHTSA audit progress, auto gross margin |
-| **Booking Holdings** | BKNG | **Oct 27, 2026 (expected)** | Q3 2026 | Room nights vs. Middle East drag; fuel-cost commentary |
-| **Starbucks** | SBUX | **Oct 28, 2026 (expected)** | Q4 FY2026 | US comps (guided ≥6.5%), margin trajectory, China JV integration |
-| **Amazon** | AMZN | **Oct 29, 2026 (expected)** | Q3 2026 | AWS growth, retail margin, capex |
-| **McDonald's** | MCD | **Nov 5, 2026 (expected)** | Q3 2026 | Value-menu traffic — the trade-down consumer's purest read |
+| **FOMC** | — | **Sep 16, 2026 — REPORTED ✔** | — | **Hiked +25bp to 3.75–4.00% (12-0)**; dots: end-2026 median 4.1% (one more), 16/18 see ≥1 more; Warsh no dot, no guidance |
+| **August Retail Sales** | — | **Sep 16, 2026 — REPORTED ✔** | — | **+1.2% beat** — hard-data resilience vs. 47.8 sentiment |
+| **Lennar** | LEN | **Sep 16, 2026 (AMC) — REPORTED ✔** | Q3 2026 | EPS $1.19 vs $2.29 YoY ("below expectations"); orders -9%; "deteriorated"; Q4 guide: deliveries 22-23K, GM 15.5-16.0% |
+| **UMich Sentiment (final Sep)** | — | **Sep 25, 2026 (Fri)** | — | Confirms or revises the 47.8 prelim shock; May's 44.8 marked the cycle's capitulation low |
+| **Nike** | NKE | **Oct 1, 2026** | Q1 FY2027 | The sector's highest-stakes print — athletic-apparel demand after LULU's cut and AEO's sell-the-news; NKE at fresh 52W lows ($35.51) into it |
+| **Tesla** | TSLA | **Oct 21, 2026 (confirmed)** | Q3 2026 | Deliveries, robotaxi/NHTSA audit progress, auto gross margin |
+| **Ford** | F | **Oct 22, 2026** | Q3 2026 | Tariff math on the Canada escalation; credit arm loss trends |
+| **Comcast** | CMCSA | **Oct 22, 2026** | Q3 2026 | Broadband sub losses — the only number that matters at RSI 17 |
+| **Booking Holdings** | BKNG | **Oct 27, 2026** | Q3 2026 | Room nights vs. Middle East drag; RSI 12.7 says the market expects damage |
+| **Starbucks** | SBUX | **Oct 28, 2026** | Q4 FY2026 | US comps (guided ≥6.5%), margin trajectory; RSI 10.8 is the board's most extreme reading |
+| **Amazon** | AMZN | **Oct 29, 2026** | Q3 2026 | AWS growth, retail margin, capex; lost its 50D this week |
+| **Shake Shack** | SHAK | **Oct 29, 2026** | Q3 2026 | Beef-cost margin math after a -13.8% no-news week |
+| **BJ's Restaurants** | BJRI | **Oct 29, 2026** | Q3 2026 | Traffic momentum behind the sleeve's best 1Y chart |
+| **McDonald's** | MCD | **Nov 5, 2026** | Q3 2026 | Value-menu traffic — the trade-down consumer's purest read, from a fresh 52W low |
 
-**Marky's Binary Event Read:** Everything is subordinate to Wednesday's FOMC. A 25bp hike with hawkish language extends the grind toward $109.41; a hike with any hint of "one and done" could spark the oversold rip this tape has been building for five weeks (TJX at RSI 18 is the poster child). NKE on Oct 1 is the next sector-specific binary — after LULU's collapse and AEO's sell-the-news, the market will treat any guidance wobble as confirmation of an athletic-apparel recession.
+**Marky's Binary Event Read:** NKE on October 1 is the next sector binary — after LULU's collapse and AEO's sell-the-news, the market will treat any guidance wobble as confirmation of an athletic-apparel recession, and NKE enters at a fresh 52-week low. Before that, Friday's final UMich print (Sep 25) either confirms 47.8 or walks it back. On the tape: **$109.41 is the line** — Wednesday's FOMC-day low stopped 22 cents above it; hold and the oversold rip toward $113-114 is live, lose it on a weekly close and the March lows at $105.45-105.66 are the only floor left. The broken cluster at $115.37/$116.58 is the ceiling until proven otherwise.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- The Fed hikes but signals a pause — "sell the rumor, buy the news" triggers the oversold rally the tape has been building; XLY reclaims $115-117 quickly
-- The 47.8 UMich print marks a capitulation low in sentiment, as May's 44.8 did, and final September revises higher on the 25th
+- **The dots blink in October:** soft September data (PCE Sep 30, CPI Oct 14) takes the second hike off the table → 10Y back under 4.85% → the oversold complex (SBUX 10.8, BKNG 12.7, CMCSA 17.1, HD 21.0) uncoils at once
+- **Final UMich (Sep 25) revises 47.8 higher**, confirming a capitulation low like May's 44.8
+- **Retail sales' +1.2% is the truth and sentiment is the noise** — the vibecession resolves upward; XLY reclaims $113-114, then the $115-117 cluster
+- NKE beats Oct 1 and stabilizes the athletic-apparel narrative, lifting the whole retail sleeve from 52-week lows
 - Oil breaks back below $90 on any Hormuz de-escalation, removing the fuel tax on travel and logistics names at once
-- NKE's Oct 1 print stabilizes the athletic-apparel narrative, lifting the whole beaten-down retail sleeve
-- TSLA holds its 50D through FOMC and the robotaxi regulatory questions resolve constructively
+- CMCSA's broadband losses merely stabilize — at 7.3x with a 5.8% yield, stabilization alone is a re-rating
 
 ### 🔴 Bear Case
-- The Fed hikes AND guides for more — 10Y breaks 5.00%, and the sector's fresh-52W-low club (HD, LOW, MCD, TJX) expands
-- Final September sentiment confirms ~48 or worse, and August retail sales (Sep 16) shows the confidence crack reaching actual spending
+- **The second hike gets priced hard** (Oct odds ~57% rising) → 10Y holds >5% → XLY loses $109.41 and accelerates toward $105.45-105.66
+- Final September sentiment confirms ~48 or worse AND the next retail sales print shows the confidence crack reaching actual spending — the vibecession becomes the recession
+- Lennar's "deteriorated" spreads: KBH (Sep 23) confirms, and the housing-turnover freeze deepens into Q4 (HD/LOW make fresh lows weekly)
 - WTI holds ~$100+ through October, forcing travel (BKNG, MAR) and restaurants (SHAK, SBUX) to start cutting Q4 guidance
-- NKE misses Oct 1, confirming the athletic-apparel recession and dragging the sector's remaining premium multiples down
-- XLY closes a week under $109.41 and accelerates toward the $105.45-105.66 52W-low zone
+- NKE misses Oct 1 — the last premium athletic multiple breaks
+- The Canada tariff escalation (Sep 29 effective) hits auto margins in fact; F's ~7x forward proves not cheap enough
 
 ### ⚠️ The Wild Card
-**A stagflationary tape with a hiking Fed.** The 2026 playbook has been "strong jobs = good consumer." This week flipped it: jobs strong, sentiment near record lows, inflation hot, oil at $100, and the Fed hiking into all of it. If that pairing persists — full employment but a furious, fuel-squeezed consumer — the historical analogs (1970s, 2008) say discretionary underperforms for quarters, not weeks. The alternative wild card runs the other way: a Hormuz ceasefire would take $10-15 off oil, deflate the inflation-expectations spike, and turn this sector's five-week losing streak into the year's best mean-reversion trade.
+**The consumer is three different people.** Sentiment at 47.8 (near record low), spending at +1.2% (beat), housing orders -9% (deteriorating) — all true, all this week. One of them is lying about the future, and which one resolves first decides this sector's next quarter. If the hard data wins, XLY at RSI 28.5 with seven holdings at capitulation readings is the year's best mean-reversion trade. If the survey wins, the +1.2% was the last good print and the March lows get tested. The 2026 tape has punished anyone who guessed early — the discipline is to trade the resolution, not the prediction.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The consumer canary is now in the data, not just the tape. A 47.8 sentiment print — within three points of the all-time record — landing four days before a near-certain Fed hike is the exact wrong-way pairing for this sector. I flagged the rates-tariff-consumer triangle two cycles ago; this week it closed. Stay underweight discretionary. If Hormuz de-escalates, this becomes the best mean-reversion trade on the board — but you trade that when oil breaks, not before."*
+**Ophelia:** *"The wrong-way pairing I flagged is now policy: the Fed is hiking into a 47.8 consumer, and the dots promise more. But I will not pretend Thursday didn't happen — retail sales beat at +1.2%, and I do not fight hard data with survey despair. My position is unchanged because my reasoning is: the multiple compression is a fact, the demand recession is a maybe. Stay underweight the index. The turn needs oil under $90 or the dots blinking in October — neither has happened. Watch Friday's final sentiment print; if 47.8 stands, the canary is confirmed."*
 
-**Marky:** *"Four straight red weeks and the broken $115-117 zone is confirmed resistance. RSI 40.9 at the ETF level says grind, not capitulation — no bounce setup yet. The real capitulation readings are inside: TJX at RSI 18 at a fresh 52-week low, MCD and LOW at their own lows. After Wednesday's hike, watch for the 'sell the news in reverse' — a fast reclaim of $114.91 (last Friday's close) would be the first tradable signal. Below $109.41, the 52-week lows at $105.45 come into range."*
+**Marky:** *"Five red weeks and the ETF finally went oversold — 28.5. But look at Wednesday: the Fed hiked, the 10Y closed over 5%, and XLY's low stopped 22 cents above $109.41. Somebody bought that level on the worst possible afternoon. Thursday's retail-sales bounce proved there's a bid for any excuse. The setup is the cleanest in a month: hold $109.41 and we rip toward $113-114; lose it on a weekly close and the March lows are the only floor. Inside: SBUX 10.8, BKNG 12.7, CMCSA 17.1 — capitulation readings everywhere, triggers nowhere. NKE on the 1st is the binary. I trade the level, not the forecast."*
 
-**Cecil:** *"The value shelf is restocking: NKE 17.5x with a 4.5% yield, LOW 16.6x, MCD at its 52-week low yielding 3.0%, HD 21.6x with a $377 consensus target. I am not buying falling knives — LULU needs a clean quarter and AEO's refund-flattered beat is exactly the earnings quality I won't pay for — but for the first time this year, quality consumer franchises are being priced for a recession that the jobs data says hasn't arrived. Start the shopping list. Don't start the buying."*
+**Cecil:** *"The shelf is full and my wallet is still shut — that is discipline, not doubt. CMCSA at 7.3x yielding 5.8% is priced for a broadband death spiral; the Q3 print on Oct 22 will grade that price. LOW at 16.4x, MCD at 20.2x at its 52-week low, NKE at 17.3x into its print — quality at recession prices while the register rings at +1.2%. But Lennar's 'deteriorated' is not a survey, it is a fact, and the Fed just promised one more hike. I wait for NKE on the 1st and the final sentiment print on the 25th. If both hold, I start buying the shelf in October. Not before."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance daily OHLCV (week of Sep 8-11, 2026 closes, dividend-adjusted; weekly changes date-pinned Fri 9/4 → Fri 9/11): XLY, SPY, AMZN, TSLA, HD, MCD, BKNG, LOW, TJX, NKE, SBUX, F, CMCSA, DIS, MAR, LULU, DG, SHAK, AEO, RVLV, BJRI, EYE; 50D/200D MAs, Wilder RSI(14), and 52W closing ranges computed from 1Y daily bars
-- yfinance quote fundamentals (Sep 12, 2026): trailing/forward P/E, dividend yields, analyst mean targets for XLY top-10 holdings (AMZN tgt $328.17 / TSLA $390.09 / HD $377.19 / MCD $315.39 / BKNG $238.68 / LOW $252.30 / TJX $169.80 / NKE $49.35 / SBUX $112.23 / DIS $128.18); XLP-style ETF trailing P/E ~24.7, yield 0.77%
-- University of Michigan Surveys of Consumers (Sep 11, 2026, sca.isr.umich.edu): preliminary September sentiment **47.8** vs. 51.7 final August (-7.5% M/M); current conditions 50.9; May 2026 record low 44.8
-- Yahoo Finance / FinanceFeeds / lululemon IR (Sep 3-7, 2026): LULU Q2 FY26 recap — FY26 EPS guide midpoint $12.20→$9.61 ($8.74 ex-$0.86 refund) across three cuts; Americas comps -12%, tenth straight negative/flat quarter; CEO Heidi O'Neill started Sep 8
-- Yahoo Finance / MarketChameleon / AEO IR / Public.com (Sep 9-10, 2026): AEO Q2 FY26 — EPS $0.79 vs ~$0.27 cons, record revenue $1.4B (+8%), comps +6%, Aerie +25% (comps +19%), FY26 op-income guide $540-550M incl. net tariff-refund benefit; stock -14.3% on Sep 10
-- Benzinga / Quartr / Yahoo Finance (Apr-Sep 2026): BKNG — Q2 2026 beat (rev +8% to $7.4B, room nights +5%) but Middle East conflict drag; 25:1 split Apr 2026; street median target ~$240
-- Grid A / Canary Watch desk logs (2026-09-12): hot core CPI +0.3% vs +0.2% cons; Sept hike odds ~87-90% CME FedWatch; 10Y 4.97% fresh 52W-high closes; WTI ~$100, record ~$6 diesel; Friday Dow +509 / VIX -11.2% relief rally
-- yfinance market caps (Sep 12, 2026): SHAK $2.72B / AEO $2.52B / RVLV $1.50B / BJRI $1.29B / EYE $1.37B — all re-verified sub-$5B
+- yfinance daily OHLCV (week of Sep 14-18, 2026 closes, dividend-adjusted; weekly changes date-pinned Fri 9/11 → Fri 9/18): XLY, SPY, AMZN, TSLA, HD, MCD, BKNG, LOW, TJX, NKE, SBUX, F, CMCSA, DIS, MAR, LULU, DG, SHAK, AEO, RVLV, BJRI, EYE; 50D/200D MAs, Wilder RSI(14), and 52W closing ranges computed from 1Y daily bars
+- yfinance quote fundamentals (Sep 19, 2026): trailing/forward P/E, dividend yields, analyst mean targets (AMZN $328 / TSLA $397 / HD $377 / MCD $313 / BKNG $239 / LOW $252 / TJX $170 / NKE $48 / SBUX $112 / F $16 / CMCSA $30 / DIS $127 / MAR $381 / LULU $106 / DG $140); XLY ETF trailing P/E ~24.3, yield ~0.77%
+- Federal Reserve (Sep 16, 2026): FOMC statement — +25bp to 3.75–4.00%, 12-0 vote, first hike since Jul 2023; implementation note (IORB 3.90% eff. Sep 17); SEP: end-2026 median 4.1%, end-2027 4.1% (from 3.6%), end-2028 3.9%, 2026 core PCE 3.4%, unemployment 4.1%; 16/18 participants see ≥1 more 2026 hike, 4 see two; Chair Warsh submitted no projection
+- FinanceFeeds / CNBC / Reuters (Sep 16-17, 2026): market reaction — 2Y +13.4bp to 4.736%, 10Y closed 5.01% (first close >5%), DXY +0.55% on the day, SPX -0.45/-0.76%; Oct hike odds ~57%; Polymarket "another 2026 hike" 81%
+- Lennar Q3 2026 results (Sep 16 AMC, PR Newswire / Barron's): EPS $1.19 ($1.23 ex-items) vs $2.29 YoY; revenue $8.0B; new orders -9% to 20,879; deliveries -3% to 20,840; GM 15.8%; backlog 16,857 homes / $6.3B; CEO Miller: environment "has deteriorated since our last earnings call"; 30Y mortgage ~6.8% at quarter end, "even higher since"; Q4 guide: orders 19.5-20.5K, deliveries 22-23K, ASP $370-380K, GM 15.5-16.0%
+- U.S. Census/BLS via desk logs (Sep 16-17): August retail sales +1.2% beat; initial claims 196K; Philly Fed 37.8; Empire 7.6
+- MarketBeat / Quiver Quantitative (Sep 9-10, 2026): CMCSA CFO "no improvement in broadband user losses" — the bleed's origin; continued into this week with no fresh headline
+- Yahoo Finance / RBC (Sep 8, 2026): SHAK initiated Outperform, $89 PT; week -13.78% on no fresh catalyst (beef-cost margin narrative per Q2 call)
+- Trade/policy (Sep 14-16, 2026): U.S. ban on Canadian motorcycles/dairy/alcohol effective Sep 29; Treasury VTB sanctions; EU 21st Russia package; BOJ hiked to 1.25% (Sep 18)
+- yfinance market caps (Sep 19, 2026): SHAK $2.35B / AEO $2.52B / RVLV $1.47B / BJRI $1.27B / EYE $1.33B — all re-verified sub-$5B
+- University of Michigan (prior week, standing): prelim Sep sentiment 47.8 vs 51.7; final print due Sep 25
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-12 (data as of Fri 2026-09-11 close; Grid B Midday run)*
+*Last updated by Saturday Research Crew: 2026-09-19 (data as of Fri 2026-09-18 close; Grid B Midday run)*
 *Next update: Every Saturday*
-*Data sources: yfinance (Yahoo-sourced), Yahoo Finance, University of Michigan, company IR releases, BLS, CME FedWatch, Council desk logs*
+*Data sources: yfinance (Yahoo-sourced), Yahoo Finance, University of Michigan, company IR releases, Federal Reserve, BLS/Census, CME FedWatch, Council desk logs*
