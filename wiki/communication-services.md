@@ -10,20 +10,20 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | $112.60 | $112.03 (9/4) | **+0.51% w/w** |
+| Price | $110.81 | $112.60 (9/11) | **-1.59% w/w** |
 | 52W Range | $105.38 – $120.08 (closing basis) | — | — |
 | AUM | ~$21.6B | — | — |
-| YTD Return | ~-4.4% | — | — |
-| 1Y Return | ~-3.3% | — | — |
-| P/E Ratio | ~15.5 | — | — |
+| YTD Return | ~-5.9% | — | — |
+| 1Y Return | ~-6.8% | — | — |
+| P/E Ratio | ~15.3 | — | — |
 | Dividend Yield | ~1.28% | — | — |
 | Beta | ~0.84 | — | — |
 | Total Holdings | ~24 (EA removed post-delisting) | — | — |
-| Avg Daily Volume | ~5.9M shares | — | — |
+| Avg Daily Volume | ~5.6M shares | — | — |
 
-**Marky Tape Read:** XLC closed the week ending 9/11 at $112.60, up 0.51% in the four-session post-Labor-Day week — but the path was a V: the index slipped to $110.83 by Wednesday 9/9 on the mid-week broadband repricing shock (CMCSA -8%, CHTR -6%, TMUS -3% in a single session), then recovered Thursday and Friday as META's momentum carried the cap-weighted index back above the 50-day. Underneath, dispersion was again extreme: META +5.07% (RSI now 83.9 — officially overbought) vs. CMCSA -4.87% and CHTR -4.09%. The 200-day near $114 remains the wall; the index based above the 50-day (~$110.90) all week after Wednesday's test. The dominant macro overhang hardened: hot core CPI (+0.3% vs +0.2%) pushed September 16 FOMC *hike* odds to ~87-90%, and the 10-year closed at 4.975% — a fourth straight 52-week-high close, 2.5bp under the 5.00% line.
+**Marky Tape Read:** XLC closed the week ending 9/18 at $110.81, down 1.59% — and the path was a slow bleed after a false dawn. Monday popped to $115.07, a brief close *above* the 200-day (~$114.00) for the first time in weeks, then the index faded four straight sessions: 114.03 → 113.00 (FOMC day) → 112.35 → 110.81, closing Friday at the week's low (intraday 110.74) on the heaviest volume of the week (7.2M vs. 5.6M avg). The 50-day (~$111.19) was lost Friday; RSI slid to 43.0. Underneath, dispersion stayed violent: META +2.73% and GOOGL +3.26% on the benign Brinkema unsealing vs. CHTR **-12.07%**, CMCSA **-9.76%**, TMUS **-7.76%**, and NFLX **-7.25%** on a Friday downgrade. Monday's 200-day reclaim is now a confirmed bull trap unless $114 is retaken quickly.
 
-**Ophelia Macro Read:** The regime question is no longer "hawkish hold vs. cut" — it is "one hike vs. more." The hot core CPI print on 9/10 (+0.3% m/m vs +0.2% consensus) converted the prior week's jobs-driven hawkish repricing into near-certainty of a September 16 hike (~87-90% priced), with the 10-year at 4.975% knocking on 5.00%. Oil is now a second inflation front — WTI settled the week at $100.05 (+9.4%) after the Bab el-Mandeb escalation opened a second Gulf shipping front (see Grid C issue #100). For this sector the two-sided squeeze is back: platform multiples de-rate on the discount rate, while the telecom dividend sleeve's math worsens at 5% risk-free — though T (+1.48%) and VZ (+0.94%) still ground out gains as yield-seeking money rotated into the 4.3-5.6% payers. UMich sentiment at 47.8 (a shock print) is the fly in the ad-budget ointment: if the consumer rolls over, corporate ad budgets are the first line item cut.
+**Ophelia Macro Read:** The September 16 double gate resolved **both ways on the same day**. The Fed hiked +25bp to 3.75-4.00% (12-0 vote, Warsh) with dots showing 16/18 participants penciling in another 2026 hike and end-2027 at 4.1% — and the 10-year printed its **first close above 5.00%** (5.006% on 9/16; week closed 4.998%). Hours later, Judge Brinkema's 106-page remedies opinion unsealed *benign* for Google: no divestiture, a six-year behavioral term. The platform-relief bid and the rate squeeze fought all week; by Friday the rate squeeze won. The telecom dividend sleeve's math is now stressed at a 5% risk-free rate — T -2.53% and VZ -4.98% gave back last week's yield-rotation gains. Grid A issue #106 covers the post-FOMC rate regime; #108 covers the utilities leg of the same 10Y break.
 
 ---
 
@@ -31,42 +31,42 @@
 
 | Rank | Ticker | Name | Weight †† | Price | Change † | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | META | Meta Platforms | ~17.6% | $648.03 | **+5.07%** | $780.25 | $525.72 | 0.32% | ~24.4 | 🔥 |
-| 2 | GOOGL | Alphabet (Class A) | ~10.9% | $338.50 | +0.01% | $402.62 | $211.35 | 0.26% | ~17.0 | ⚡ |
-| 3 | GOOG | Alphabet (Class C) | ~8.8% | $335.45 | +0.04% | $399.04 | $211.99 | 0.26% | ~16.8 | ⚡ |
-| 4 | T | AT&T | ~4.9% | $26.06 | +1.48% | $29.62 | $20.48 | ~4.3% | ~8.6 | ⚡ |
-| 5 | VZ | Verizon | ~4.8% | $50.61 | +0.94% | $51.38 | $38.40 | ~5.6% | ~13.2 | ⚡ |
-| 6 | DIS | Walt Disney | ~4.8% | $106.55 | +1.18% | $118.84 | $92.42 | ~1.4% | ~22.0 | ⚡ |
-| 7 | CMCSA | Comcast | ~4.7% | $25.20 | **-4.87%** | $32.48 | $21.92 | ~5.2% | ~8.1 | 🔴 |
-| 8 | TMUS | T-Mobile US | ~4.6% | $182.33 | +0.45% | $255.89 | $167.73 | ~2.2% | ~19.1 | ⚡ |
-| 9 | NFLX | Netflix | ~4.5% | $77.40 | -1.09% | $126.32 | $67.60 | 0.00% | ~24.3 | ⚠️ |
-| 10 | CHTR | Charter Communications | ~3% | $145.77 | **-4.09%** | $282.74 | $123.31 | 0.00% | ~3.8 | 🔴 |
-| 11 | TTWO | Take-Two Interactive | ~2% | $215.47 | +0.36% | $262.29 | $189.69 | 0.00% | — | ⚡ |
-| — | WBD | Warner Bros. Discovery | ~1% | $28.04 | -0.74% | — | — | — | — | ⚡ |
+| 1 | META | Meta Platforms | ~17.6% | $665.75 | **+2.73%** | $780.25 | $525.72 | 0.32% | ~25.1 | 🔥 |
+| 2 | GOOGL | Alphabet (Class A) | ~10.9% | $349.54 | **+3.26%** | $402.62 | $236.57 | 0.25% | ~17.5 | 🔥 |
+| 3 | GOOG | Alphabet (Class C) | ~8.8% | $344.41 | +2.67% | $399.04 | $237.49 | 0.26% | ~17.3 | ⚡ |
+| 4 | T | AT&T | ~4.9% | $25.40 | -2.53% | $29.20 | $20.48 | ~4.4% | ~8.4 | ⚡ |
+| 5 | VZ | Verizon | ~4.8% | $48.09 | **-4.98%** | $51.45 | $38.40 | ~5.9% | ~12.5 | ⚠️ |
+| 6 | DIS | Walt Disney | ~4.8% | $102.67 | -3.64% | $116.65 | $92.42 | ~1.5% | ~21.2 | ⚠️ |
+| 7 | CMCSA | Comcast | ~4.7% | $22.74 | **-9.76%** | $32.48 | $21.92 | ~5.8% | ~7.3 | 🔴 |
+| 8 | TMUS | T-Mobile US | ~4.6% | $168.18 | **-7.76%** | $239.49 | $166.45 | ~2.4% | ~17.6 | 🔴 |
+| 9 | NFLX | Netflix | ~4.5% | $71.79 | **-7.25%** | $124.14 | $67.60 | 0.00% | ~22.6 | 🔴 |
+| 10 | CHTR | Charter Communications | ~3% | $128.17 | **-12.07%** | $282.74 | $123.31 | 0.00% | ~3.3 | 🔴 |
+| 11 | TTWO | Take-Two Interactive | ~2% | $205.45 | **-4.65%** | $262.29 | $189.69 | 0.00% | — | 🔴 |
+| — | WBD | Warner Bros. Discovery | ~1% | $27.80 | -0.86% | $29.98 | $17.10 | — | — | ⚡ |
 | ~~—~~ | ~~EA~~ | ~~Electronic Arts~~ | — | — | **DELISTED 8/4** | — | — | — | — | ⛔ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap | ⛔ = Delisted
 >
-> † Weekly change vs. prior Friday (9/4) close, this week's close Fri 9/11 (four-session week; Labor Day 9/7).
+> † Weekly change vs. prior Friday (9/11) close, this week's close Fri 9/18.
 > †† Weights per XLC holdings as of ~8/10/2026 (post-EA-removal rebalance); top 10 ≈ 70% of fund.
 
 **Sector Split:** META (~17.6%) and Alphabet (~19.7% combined A+C) still anchor the fund at ~37%, with the balance split across telecom (T, VZ, TMUS ~14.3%), streaming/entertainment (NFLX, DIS, WBD), cable/broadband (CMCSA, CHTR), and gaming (TTWO). **EA's $55B take-private by the PIF/Silver Lake/Affinity consortium closed August 4 ($210/share cash) — the stock is delisted and out of the index**; the gaming sleeve is now effectively TTWO alone.
 
-**The META Story:** Meta at $648.03, **+5.07% on the week** — the sector's engine for a second straight week. Follow-through from the Brinkema "no breakup" ruling kept the regulatory-relief bid alive, and Meta layered on a product catalyst Friday: the launch of **Muse**, a persistent personal AI agent (free / $20 / $100 tiers, no ads initially) running in a private cloud workspace inside WhatsApp and a standalone app. RSI at 83.9 is now deeply overbought — momentum is real, but the easy re-rating is done.
+**The GOOGL Story — the double gate's winner:** Alphabet rose **+3.26% to $349.54**, reclaiming its 50-day (~$345.58) and holding above the 200-day (~$337.50). Judge Brinkema's 106-page remedies opinion, unsealed 9/16, came in benign: **no divestiture of any kind** — instead a six-year behavioral term requiring Prebid API interoperability, bid-data sharing with publishers, and a bar on AdWords bidding into DFP. DV360 is untouched, a technical monitor will oversee compliance, the joint final judgment is due October 2 and takes effect 60 days after signing, and Google has said it will appeal. This is a take-rate friction, not a structural break — exactly the "narrow and workable" outcome the bull case needed. Consensus target $428 implies ~23% upside.
 
-**The GOOGL Story:** Alphabet went dead flat (+0.01%) at $338.50, still below its 50-day (~$347). The market is in wait-and-see mode on the behavioral remedies: the sealed opinion unseals around **September 16** (same day as the FOMC), and DOJ + Google must file their joint final judgment within ~30 days of the September 2 ruling. Ends of "first look / last look" and unified pricing rewrite the open-web auction economics — a take-rate compression question, not an existential one.
+**The META Story:** Meta added **+2.73% to $665.75** — a third straight winning week on regulatory-relief follow-through plus the Muse agent launch. RSI cooled from 83.9 to 77.9 — still overbought, but the froth is bleeding off sideways rather than by correction, which is the constructive path. Consensus target $755 implies ~13% upside; forward P/E ~19.
 
-**The Broadband Repricing — the week's real sector story:** Comcast fell 4.87% and Charter 4.09% after a **Wednesday 9/9 air-pocket** (CMCSA -8% and CHTR -6% intraday at their worst, TMUS -3%) with no fresh filings — the tape read it as a structural broadband repricing on wireless/FWA competition and steep cable customer losses (Spectrum rolled out a free offer to stem defections). Comcast's CFO at Goldman Communacopia talked up convergence ($85 converged ARPA vs. $150-170 wireless ARPU, only 7% wireless penetration of homes) — a roadmap, not a reversal. CHTR's P/E of ~3.8 tells you the market is pricing terminal decline, not a bad quarter.
+**The Broadband Collapse — accelerating, not stabilizing:** Last week's "air-pocket" became this week's rout. **CHTR -12.07% to $128.17** (P/E now ~3.3, $5 above its 52W low), **CMCSA -9.76% to $22.74** (RSI 17.1 — deeply oversold, sitting $0.82 above its 52W low), **TMUS -7.76% to $168.18** (within $2 of its 52W low at $166.45). The wireless/FWA substitution repricing is now a two-week, 15-20% markdown across the complex with no fresh filings — the market is front-running ugly Q3 subscriber prints in late October. CHTR's 3.3x P/E says terminal decline is the base case, not the tail.
 
-**The NFLX Story:** Netflix slipped 1.09% to $77.40, digesting the prior Friday's -5% UK-price-hike shock (ad tier +33% to £7.99 — churn fear on the tier that's supposed to be the growth engine). The counterweight: the ad business is guiding to roughly **double to ~$3B in 2026** with 4,000+ advertisers (+70% y/y), programmatic Pause Ads and live inventory expanding, and US upfront commitments closing. Q2 buyback was a record $4.7B. Consensus target $93.66 implies ~21% upside — the street is treating 2026's -35% 1Y slide as overdone.
+**The NFLX Story — downgraded into the hole:** Netflix fell **-7.25% to $71.79**, capped by a Friday **Wells Fargo downgrade (Cahall: Equal Weight → Underweight, PT $80 → $57)** on softening engagement trends and a weak H2-2026 content slate. The stock dropped 4.67% Friday on ~2.8x average volume (113.6M shares). RSI 27.8 is approaching oversold; the ad-business doubling story (~$3B in 2026) is intact but now has to fight an engagement-skeptic tape. Consensus target $93.88 still implies ~31% upside — the street is not following Wells Fargo yet.
 
-**The TTWO Story:** Take-Two stabilized (+0.36% to $215.47) after the prior week's -8.79% leak-scandal collapse; RSI at 21.7 remains washed-out. The Microsoft/Discord subpoena track is now procedural — no fresh escalation this week, and GTA VI's release timeline is unaffected.
+**The Telecom Story — the yield bid meets 5%:** T -2.53% to $25.40 and VZ **-4.98% to $48.09** gave back last week's gains as the 10-year closed a week at 4.998% with a 5.006% print mid-week. VZ's 5.88% yield still clears the risk-free bar, but the cushion is now 90bp, not 140bp — the dividend sleeve works arithmetically only while the 10-year stays *below* the yield. TMUS (-7.76%) got lumped into the broadband rout despite being the substitution *beneficiary* — the market is selling the whole complex indiscriminately.
 
-**The Telecom Story:** The dividend sleeve quietly won the week: T +1.48% (yield 4.3%), VZ +0.94% (yield 5.6%, near its 52W high), TMUS +0.45% despite getting caught in Wednesday's broadband downdraft. Yield-seeking rotation into 4-6% payers is real even with the 10-year at 4.975% — but if 5.00% breaks, the math gets harder.
+**The TTWO Story:** Take-Two fell **-4.65% to $205.45**, RSI 24.0 — a second straight leg down with no fresh subpoena-track escalation; the stock is being sold with the sector's high-beta sleeve. GTA VI timeline intact; consensus target $286 implies ~39% upside for anyone who believes the leak scandal is noise.
 
-**The WBD Story:** WBD slipped 0.74% to $28.04; the frozen-settlement / March 2027 trial framework is unchanged, and the ticking fee clock starts October 1.
+**The DIS/WBD Stories:** Disney -3.64% to $102.67 (RSI 35.6, sitting on its 50-day) — no fresh catalyst, dragged by the sector tape. WBD -0.86% to $27.80 was the sector's most resilient red name; the frozen-settlement framework holds and the ticking fee starts October 1.
 
-**Cecil Fundamental Read:** The broadband pair is where the genuine fundamental deterioration sits — CMCSA at 8x earnings with a 5.2% yield is cheap for a reason when the core product is being repriced by wireless substitution; CHTR at ~3.8x is a melting-ice-cube valuation that only works if FWA churn plateaus. META at 24x with RSI 84 is a hold-not-chase. NFLX at 24x forward with the ad business doubling is the most interesting risk/reward in the sector if you believe the UK churn fears are noise. GOOGL at 17x remains the cheapest megacap hedge against a benign unsealed opinion.
+**Cecil Fundamental Read:** The barbell is now lopsided: the platform half is *cheaper on the news* (GOOGL 17.5x with the divestiture tail removed is the cleanest megacap value in the sector) while the distribution half is *cheaper for a reason* (CMCSA 7.3x / CHTR 3.3x are decline pricing, not mispricing, until Q3 sub prints prove stabilization). VZ at 5.88% yield vs. a 5.00% 10-year is a 90bp equity-risk premium for a bond proxy — thin, but positive; T at 4.37% is now *below* the risk-free rate on a pure yield basis and needs the growth story to justify itself. NFLX at 22.6x trailing / ~18.8x forward with a doubling ad business is a buy-the-downgrade candidate if engagement data doesn't deteriorate further. META at 25x with RSI 78 remains hold-not-chase.
 
 ---
 
@@ -76,25 +76,25 @@
 
 | Ticker | Name | Price | Cap (verified) | Weekly | Sector Niche | Signal |
 |---|---|---|---|---|---|---|
-| MGNI | Magnite | $23.77 | $3.41B | -1.53% | Sell-side ad-tech / CTV programmatic | ⚡ |
-| CARG | CarGurus | $34.42 | $3.07B | +2.03% | Auto marketplace / ad-tech | ⚡ |
-| ZD | Ziff Davis | $56.22 | $1.93B | +0.93% | Digital media / net-cash cannibal | ⚡ |
-| CCOI | Cogent Communications | $9.33 | $0.48B | **-7.16%** | Fiber ISP / alt-telecom (distressed) | 🔴 |
-| PPLI | People Inc (fka IAC) | $37.51 | $2.79B | -3.80% | Digital media rollup / MGM option | ⚠️ |
+| MGNI | Magnite | $25.15 | $3.61B | **+5.81%** | Sell-side ad-tech / CTV programmatic | 🔥 |
+| CARG | CarGurus | $33.21 | $2.96B | -3.53% | Auto marketplace / ad-tech | ⚠️ |
+| ZD | Ziff Davis | $57.49 | $1.97B | +2.26% | Digital media / net-cash cannibal | ⚡ |
+| CCOI | Cogent Communications | $9.01 | $0.46B | -3.43% | Fiber ISP / alt-telecom (distressed) | 🔴 |
+| PPLI | People Inc (fka IAC) | $36.19 | $2.69B | -3.52% | Digital media rollup / MGM option | ⚠️ |
 
 > 🔥 = Strong weekly move / momentum | ⚡ = Stable / range-bound | ⚠️ = Caution | 🔴 = Breakdown / avoid
 >
-> **Cap verification (Fri 9/11 quotes):** all five names confirmed UNDER $5B — MGNI $3.41B, CARG $3.07B, ZD $1.93B, CCOI $0.48B, PPLI $2.79B. **MGNI kept per the 9/8 rotation rule** (cap verified at $3.41B, still sub-$5B). **The legacy IAC ticker is retired** (404/empty feed — the listing now trades as PPLI, People Inc); no fresh rotation needed. Backup candidates screened and set aside: NYT ($10.8B — too big), CABO ($0.12B but -88% 1Y post-spinoff — too messy).
+> **Cap verification (Fri 9/18 quotes):** all five names confirmed UNDER $5B — MGNI $3.61B, CARG $2.96B, ZD $1.97B, CCOI $0.46B, PPLI $2.69B. **MGNI kept per the 9/8 rotation rule** (cap re-verified at $3.61B, still sub-$5B) — and the rotation thesis paid: MGNI was the sheet's best performer as the direct ad-tech read-through on the benign Brinkema opinion. **The legacy IAC ticker remains retired** (listing trades as PPLI, People Inc); no rotation needed. Backup candidates unchanged: NYT (~$10.8B — too big), CABO (~$0.12B, still too messy post-spinoff).
 
-**MGNI (-1.53% w/w, $3.41B cap):** Drifted lower in the Brinkema wait-and-see window — the market still can't price whether mandated Google interoperability is a tap-in (more open-web supply for independent SSPs) or a squeeze (Google keeps the stack and the take). Sector stress marker: Trade Desk cut 15% of staff on 9/4. **Council Read:** Hold the position on the watch sheet; the Sept 16 opinion unsealing is the binary that decides the next 20%.
+**MGNI (+5.81% w/w, $3.61B cap):** The week's standout — closed at $25.15, just 3% under its 52W high ($25.92), RSI 60.4. The Brinkema opinion's mandated Prebid API interoperability and bid-data sharing are structurally *positive* for independent SSPs: more open-web supply becomes addressable outside Google's stack. **Council Read:** The 9/8 rotation call is validated; the binary resolved in the bull direction. Watch the October 2 final judgment for scope drift, and Google's appeal as the new overhang.
 
-**CARG (+2.03% w/w, $3.07B cap):** Reclaimed the prior week's macro-shock losses; no fresh filings, but auto-marketplace ad spend held up in the week's CTV/digital ad chatter. **Council Read:** Back to base-building near the 50-day; still the cleanest small-cap ad-demand proxy we track.
+**CARG (-3.53% w/w, $2.96B cap):** Slipped with the mid-cap tape; lost the 200-day (~$33.91) Friday, RSI 30.0 approaching oversold. No fresh filings. **Council Read:** Rate-week collateral damage, not thesis damage — still the cleanest small-cap ad-demand proxy; watch for a base near the 52W low zone ($26.96).
 
-**ZD (+0.93% w/w, $1.93B cap):** Quiet week, modest gain; the net-cash cannibal thesis keeps it insulated from rate-shock weeks. **Council Read:** Relative strength confirmed again — the sheet's low-beta ballast.
+**ZD (+2.26% w/w, $1.97B cap):** Quietly strong again — $57.49 is 3% under its 52W high ($59.21), RSI 58.3, +63.6% YTD. The net-cash cannibal keeps ignoring rate-shock weeks entirely. **Council Read:** The sheet's low-beta ballast confirmed for a third straight week; relative strength vs. XLC is now a multi-month trend.
 
-**CCOI (-7.16% w/w, $0.48B cap):** Gave back all of last week's +6% relief bounce and then some — the distressed-equity stub trades like an option on the 2027 refi, and the September 21 lead-plaintiff deadline is now one week out. **Council Read:** Binary legal/refi gates dominate; avoid until both clear.
+**CCOI (-3.43% w/w, $0.46B cap):** Continued the bleed toward its 52W low ($8.67); RSI 45.0. The September 21 lead-plaintiff deadline lands **Monday** — the legal gate is now days away, with the 2027 refi behind it. **Council Read:** Binary gates dominate; avoid until both clear.
 
-**PPLI (-3.80% w/w, $2.79B cap):** Slipped with no confirmed fresh MGM-bid development; event-driven optionality decaying slowly while rates rise. **Council Read:** The MGM option is still the whole thesis — keep on the sheet, but the carry cost of waiting is rising at a 5% risk-free rate.
+**PPLI (-3.52% w/w, $2.69B cap):** Slipped again with no confirmed MGM-bid development; RSI 29.8 approaching oversold, and the 5% risk-free rate keeps raising the carry cost of waiting for the event. **Council Read:** MGM optionality is still the whole thesis — but at 5% risk-free the market is pricing the wait, not the prize.
 
 ---
 
@@ -103,16 +103,16 @@
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $120.08 | Resistance — closing-basis high |
-| Near Resistance | $115.00 | June consolidation ceiling |
-| 200-Day MA | ~$114.03 | The wall — untested for a second straight week |
-| Current Price | $112.60 | Recovered into the close after Wednesday's dip |
-| 50-Day MA | ~$110.90 | Support — tested Wednesday ($110.83 low), held |
-| RSI (14) | 54.3 | Neutral — room in both directions |
-| Psychological Support | $110.00 | Overlaps the 50D zone |
+| Near Resistance | $115.00 | Monday's bull-trap close ($115.07) now marks supply |
+| 200-Day MA | ~$114.00 | Reclaimed Monday, lost by Wednesday — the wall again |
+| 50-Day MA | ~$111.19 | Lost Friday on the week's heaviest volume |
+| Current Price | $110.81 | Closed at the week's low (intraday 110.74) |
+| RSI (14) | 43.0 | Neutral-bearish, falling |
+| Psychological Support | $110.00 | Next line; overlaps late-August congestion |
 | Major Support | $105.38 | 52-week closing low |
 | Structural Low | $95.00 | Pre-rally base from early 2026 |
 
-**Marky Setup Assessment:** Textbook V-shaped week: 111.52 → 110.83 (Wednesday broadband air-pocket) → 111.50 → 112.60. The 50-day at ~$110.90 took the full weight of the CMCSA/CHTR collapse and held — that is a genuinely constructive signal given the macro tape. RSI 54 is neutral. The map is unchanged but tightening: a weekly close above ~$114 (200-day) completes the repair and opens $115-120; a close below $110 reopens $105.38. Watch META's RSI 84 as the internal risk — if the sector's engine mean-reverts, XLC needs the telecom/broadband side to stop bleeding to hold the 50-day.
+**Marky Setup Assessment:** The week was a textbook failed breakout: Monday's $115.07 close above the 200-day invited the repair-rally trade, and the next four sessions reversed it into a close at the week's low on rising volume — that's distribution, not digestion. The 50-day ($111.19) fell Friday; $110.00 psychological support and then the $105.38 52-week closing low are the map below. RSI 43 has room to fall before oversold. The internal structure is the problem: the sector's two engines (META RSI 78, GOOGL RSI 52) are fine, but five holdings (CHTR, CMCSA, TMUS, NFLX, TTWO) are simultaneously at or near oversold/breakdown — breadth this bad caps any index-level rally. Repair scenario: a fast reclaim of $111.20 (50-day). Damage scenario: a weekly close below $110 opens $105.38.
 
 ---
 
@@ -120,22 +120,22 @@
 
 | Factor | Level | Implication for XLC |
 |---|---|---|
-| 10Y Treasury | **4.975% — fourth straight 52W-high close, 2.5bp under 5.00%** | The dominant overhang; a 5.00% break squeezes platform multiples and telecom dividend math simultaneously |
-| 2Y Treasury | ~4.56% | Curve still inverted ~40bp; market pricing hikes, not cuts |
-| CPI (Sept 10) | **Core +0.3% m/m vs +0.2% consensus — hot** | Converted hawkish repricing into near-certain hike; Grid A issue #97 covers the cross-asset leg |
-| Fed Regime | **Sept 16 FOMC hike ~87-90% priced** | Next Wednesday is the binary; statement/SEP language on "one-and-done vs. more" matters as much as the hike itself |
-| Oil / Middle East | **WTI $100.05 (+9.4% w/w); Bab el-Mandeb second front** | Second inflation front; Grid C issue #100 opened. Sustained $100 crude hardens the Fed's hawkish case — bad for both halves of the barbell |
-| DXY | 99.12 — 7th straight week below 101 | Soft dollar is a quiet tailwind for platform international ad revenue (META/GOOGL/NFLX) |
-| Consumer | **UMich sentiment 47.8 — shock print** | The ad-budget early-warning indicator; corporates cut ad spend first when the consumer rolls (issue #99) |
-| Antitrust — Google Ad Tech | **Sealed opinion unseals ~Sept 16 (same day as FOMC); joint final judgment due ~Oct 2** | Behavioral remedies (end of first look/last look, unified pricing) rewrite open-web auction economics; read-through risk for MGNI and independent ad-tech |
-| Ad-Tech Stress Marker | **Trade Desk cut 15% of global workforce 9/4** | Independent ad-tech is tightening belts into the remedies rollout — a soft ad-demand tell, not yet an ad-budget-cut announcement |
-| Broadband Repricing | **CMCSA -8% / CHTR -6% / TMUS -3% single-session air-pocket 9/9; Spectrum free-offer on steep sub losses** | Structural wireless/FWA substitution repricing cable economics; watch Q3 sub prints in late Oct |
-| Gaming | **EA delisted 8/4 ($210/sh, $55B PIF take-private)** | Sector loses its #2 gaming pure-play; TTWO subpoena track procedural, GTA VI timeline intact |
-| Streaming Ads | NFLX guiding ad revenue to ~2x to ~$3B in 2026; 4,000+ advertisers (+70% y/y); US upfronts closing | The ad-cycle growth story is alive inside streaming even as linear erodes |
+| 10Y Treasury | **4.998% w/w close; FIRST close above 5.00% (5.006%) on 9/16** | The rate regime crossed the line this week — platform multiples de-rate and the telecom yield math (VZ 5.88% vs 5.00% risk-free) is down to a 90bp cushion |
+| 2Y Treasury | ~4.74% (9/16) | Curve dis-inverting from the front end — classic late-hiking-cycle shape |
+| Fed Regime | **FOMC 9/16: +25bp to 3.75-4.00% (12-0, Warsh); dots 16/18 for another 2026 hike, end-2027 4.1%** | "One-and-done" is dead; the hiking cycle is live into year-end. Grid A issue #106 covers the cross-asset leg |
+| Oil / Middle East | WTI ~$100.30 (+0.25% w/w after a $106.75 spike); Brent $103.87; **Aramco cancelled ALL October European allocations 9/18** | The second inflation front escalated again — Grid C issue #109 opened. Sustained $100+ crude hardens the hawkish Fed path |
+| DXY | 100.22 (+1.11% w/w) — first weekly close above 101-watch territory in 8 weeks | The soft-dollar tailwind for platform international ad revenue is fading |
+| VIX / SPY | VIX 14.81 (-6.5% w/w); SPY -0.34% w/w | Equity vol is *not* confirming the rate stress — the selloff is sector-specific, not systemic |
+| Antitrust — Google Ad Tech | **RESOLVED benign 9/16: 106-page opinion — NO divestiture; 6-yr behavioral term; Prebid API interoperability + bid-data sharing; AdWords barred from DFP; DV360 untouched; technical monitor; joint final judgment due Oct 2, effective 60 days after signing; Google to appeal** | The structural tail is removed; GOOGL +3.26%, MGNI +5.81% as the direct read-through. Residual risks: appeal outcome and Oct 2 judgment scope drift |
+| NFLX Downgrade | **Wells Fargo EW → UW, PT $80 → $57 (9/18)** on engagement trends + weak H2-2026 slate | An analyst action, not an earnings miss — but it hit on ~2.8x volume and puts the ad-doubling story on defense into the mid-October print |
+| Broadband Repricing | **Week 2 of the rout: CHTR -12.07% / CMCSA -9.76% / TMUS -7.76%; TMUS within $2 of its 52W low** | The substitution repricing is compounding; late-October Q3 sub prints are now a sector-level gate, not a single-stock event |
+| Consumer / Ad Budgets | UMich 47.8 shock print (prior week) still the standing early-warning; no fresh ad-budget-cut announcements | Ad-spend risk is dormant but armed — watch agency/upfront chatter into Q4 planning season |
+| Gaming | EA delisted 8/4 ($210/sh); TTWO -4.65% (RSI 24.0), GTA VI timeline intact | One-stock gaming sleeve keeps amplifying single-name risk |
+| Streaming Ads | NFLX guiding ad revenue ~2x to ~$3B in 2026; Wells Fargo engagement concerns now the counter-thesis | The mid-October NFLX print is the ad-cycle's next hard data point |
 
-**Ophelia Verdict:** This week's macro leg is the CPI → hike-pricing → 4.975% 10-year chain, and it is now joined to a $100 oil front. The sector survived the week (+0.51%) only because META's idiosyncratic strength outweighed the broadband collapse — that is a fragile balance with META's RSI at 84. September 16 is a double gate: the FOMC decision and the Brinkema opinion unsealing land the same day. If the Fed hikes *and* signals more, and the opinion reads onerous for Google, the sector's two biggest weights face simultaneous pressure into quarter-end.
+**Ophelia Verdict:** The double gate is behind us and it resolved asymmetrically: the legal tail risk (Google divestiture) is gone, but the rate regime got *worse* — a hike, hawkish dots, and the first 5.00% 10-year close of the cycle. For a barbell sector, that mix favors the platform half over the distribution half, and the tape agreed: GOOGL/META green, everything rate- or substitution-sensitive deep red. The new stress points are the 90bp VZ-yield cushion and the breadth collapse — five holdings near breakdown simultaneously is how sector indices lose their 50-day and keep going.
 
-**The Bottom Line:** A flat-to-slightly-up week that masks real damage in cable/broadband and real froth in META. The 50-day held; the 200-day looms; the 10-year is 2.5bp from 5.00%. Everything resolves on Wednesday 9/16.
+**The Bottom Line:** A -1.59% week that felt worse than the number because Monday's 200-day reclaim was a bull trap. The legal overhang is cleared; the rate overhang is intensifying; broadband is in freefall. $110 is the line that matters now.
 
 ---
 
@@ -143,19 +143,19 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Broadband Air-Pocket, Meta's Froth, and the September 16 Double Gate
+### This Week's Story: The Double Gate Resolved Both Ways — and the Rate Half Won
 
-**1. Cable had its worst single session of the year — with no news to blame.** On Wednesday 9/9, Comcast fell as much as 8%, Charter 6%, and even T-Mobile 3%, with no filings or downgrades to explain it. The tape was pricing a structural repricing of broadband economics: wireless and fixed-wireless substitution keeps eating the core product, and Spectrum's free-offer response to steep subscriber losses confirmed the defensive crouch. CMCSA closed the week -4.87% at an 8x P/E; CHTR -4.09% at ~3.8x. Cheap is not a catalyst when the market is pricing decline.
+**1. September 16 delivered both gates on schedule.** The Fed hiked +25bp to 3.75-4.00% with a unanimous vote and dots showing 16 of 18 participants expecting another 2026 hike — and the 10-year Treasury printed its first close above 5.00% (5.006%) the same day. Hours later, Judge Brinkema's 106-page remedies opinion unsealed *benign*: no divestiture, a six-year behavioral term built on Prebid API interoperability and publisher bid-data sharing, with AdWords barred from bidding into DFP. DV360 untouched. Google will appeal, and the joint final judgment is due October 2.
 
-**2. META carried the whole sector — again.** +5.07% to $648.03 on Brinkema follow-through plus Friday's launch of Muse, a persistent personal AI agent in WhatsApp with paid tiers. But RSI at 83.9 is officially overbought; the regulatory-relief re-rating is largely done, and XLC's +0.51% week is really just "META minus the broadband wreckage."
+**2. The platform half rallied on the news; the distribution half collapsed anyway.** GOOGL +3.26% (reclaiming its 50-day) and META +2.73% (RSI cooling to 77.9 sideways — the constructive path). MGNI, our ad-tech read-through rotation, was the sheet's best name at +5.81%, closing 3% under its 52-week high — interoperability is structurally positive for independent SSPs. But none of it could hold the index: XLC faded from Monday's $115.07 bull-trap close above the 200-day to Friday's $110.81 close at the week's low on the heaviest volume of the week.
 
-**3. The macro chain hardened: hot CPI → hike priced → 10Y at 4.975%.** Core CPI's +0.3% vs +0.2% on Thursday pushed September 16 hike odds to ~87-90%, and the 10-year logged a fourth straight 52-week-high close, 2.5bp under 5.00%. WTI at $100.05 after the Bab el-Mandeb escalation adds a second inflation front. Yet the dividend telecoms still ground out gains (T +1.48%, VZ +0.94%) — yield-seeking rotation into 4.3-5.6% payers persists even at 5%-ish risk-free.
+**3. The broadband rout went from air-pocket to freefall.** CHTR -12.07%, CMCSA -9.76%, TMUS -7.76% — a second consecutive week of massive losses with no new filings, as the market front-runs Q3 subscriber prints it expects to be ugly. TMUS is now within $2 of its 52-week low despite being the substitution *beneficiary* — indiscriminate selling is a hallmark of late-stage repricing, but "late-stage" is a guess, not a signal.
 
-**4. The Brinkema wait-and-see window is almost over.** The sealed remedies opinion unseals around September 16 — the same day as the FOMC — with the joint final judgment due ~October 2. GOOGL went dead flat (+0.01%) all week; nobody wants to add before the details. Trade Desk's 15% layoffs on 9/4 are the independent-ad-tech stress marker to watch alongside MGNI (-1.53%).
+**4. NFLX took a downgrade into the hole.** Wells Fargo cut Netflix to Underweight Friday (PT $80 → $57) on engagement trends and a weak H2-2026 slate; the stock fell 4.67% on ~2.8x average volume, closing the week -7.25% at RSI 27.8. The ad-doubling story now has to prove itself at the mid-October print against an engagement-skeptic tape.
 
-**5. The sector's composition quietly changed.** EA's $55B take-private closed August 4 — the index's #2 gaming pure-play is gone, leaving TTWO (+0.36%, stabilizing, RSI 21.7) as the lone gaming weight. NFLX (-1.09%) kept digesting the UK price-hike churn scare while its ad business guides to doubling toward ~$3B.
+**5. The yield-bid math tightened to 90bp.** With the 10-year at 5.00%, VZ's 5.88% yield barely clears the risk-free bar — and VZ fell 4.98% anyway, while T's 4.37% yield is now *below* the 10-year on a pure basis. The dividend sleeve's rotation bid is arithmetic-dependent, and the arithmetic got worse.
 
-**The Bottom Line:** Wednesday's FOMC and the Brinkema unsealing land on the same day. The sector's three biggest weights — META (frothy), GOOGL (waiting), and the telecoms (yield-bid) — each face that gate differently. Position for resolution, not continuation.
+**The Bottom Line:** The legal tail is gone and the rate tail is growing. The sector's fate now runs through $110 support, the October 2 final judgment, and the late-October broadband sub prints.
 
 ---
 
@@ -163,18 +163,19 @@
 
 | Company | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **September 16 double gate** | — | **9/16: FOMC decision + Brinkema opinion unsealing (approx.)** | Macro/Legal | Hike vs. hold + "one-and-done" language; scope of Google's interoperability obligations |
-| Meta Platforms | META | Next print late Oct | Q3 2026 | AI capex ROI; ad revenue growth; Muse agent monetization path; +5.07% this week, RSI 84 |
-| Alphabet | GOOGL | Next print late Oct | Q3 2026 | First full read on remedies-compliance cost; joint final judgment due ~Oct 2; flat this week |
-| Netflix | NFLX | Next print mid-Oct | Q3 2026 | Ad revenue trajectory toward ~$3B 2026 target; UK churn evidence after +33% ad-tier hike |
-| AT&T | T | Next print ~late Oct | Q3 2026 | Subscriber adds vs. the broadband repricing; +1.48% this week on the yield bid |
-| Verizon | VZ | Next print ~Oct 20 | Q3 2026 | Churn recovery holding near 52W highs; $1.25B note redemption; 5.6% yield |
-| T-Mobile | TMUS | Next print ~late Oct | Q3 2026 | Caught in the 9/9 air-pocket (-3% session) but +0.45% on the week; convergence growth bets from Citi TMT conference |
-| Charter | CHTR | Next print late Oct | Q3 2026 | **Broadband sub losses and the free-offer response — the print that confirms or denies the repricing** |
-| Comcast | CMCSA | Next print late Oct | Q3 2026 | Same gate as CHTR; convergence ARPA ($85 vs $150-170 wireless) and the 7% wireless-penetration runway |
-| Take-Two | TTWO | Next print early Nov | Q2 FY2027 | GTA VI timeline reconfirmation; subpoena track now procedural; RSI 21.7 washed out |
-| Disney | DIS | Next print mid-Nov | Q4 FY2026 | +1.18% this week; streaming ad-tier expansion (157M ad-supported viewers) |
-| Warner Bros. Discovery | WBD | Next print ~early Nov | Q3 2026 | Frozen-settlement framework unchanged; **ticking fee starts October 1** |
+| **Google final judgment** | GOOGL | **~10/2: joint final judgment due (effective 60 days after signing); appeal running in parallel** | Legal | Scope drift vs. the 9/16 opinion — any expansion of interoperability obligations is the risk |
+| **CCOI lead-plaintiff deadline** | CCOI | **9/21 (Monday)** | Legal | Class-action gate; the distressed stub trades on this + the 2027 refi |
+| Netflix | NFLX | Next print mid-Oct | Q3 2026 | Engagement data vs. the Wells Fargo downgrade thesis; ad revenue trajectory toward ~$3B 2026; UK churn evidence |
+| Verizon | VZ | Next print ~Oct 20 | Q3 2026 | Churn and the yield-bid stress test: 5.88% yield vs. a 5.00% 10-year |
+| AT&T | T | Next print ~late Oct | Q3 2026 | Subscriber adds; 4.37% yield now below the 10-year — the growth story has to carry it |
+| Charter | CHTR | Next print late Oct | Q3 2026 | **The sector gate: broadband sub losses after two weeks of -20% repricing; P/E 3.3 says the market expects a catastrophe** |
+| Comcast | CMCSA | Next print late Oct | Q3 2026 | Same gate as CHTR; RSI 17.1 deep-oversold into the print; convergence ARPA runway |
+| T-Mobile | TMUS | Next print ~late Oct | Q3 2026 | Sub adds as the substitution beneficiary; stock at $168 vs. $166.45 52W low says the market no longer believes the beneficiary story |
+| Meta Platforms | META | Next print late Oct | Q3 2026 | AI capex ROI; ad revenue growth; Muse monetization path; RSI 77.9 still overbought |
+| Alphabet | GOOGL | Next print late Oct | Q3 2026 | First print post-remedies — compliance cost and any take-rate commentary; appeal status |
+| Take-Two | TTWO | Next print early Nov | Q2 FY2027 | GTA VI timeline reconfirmation; RSI 24.0 washed out |
+| Warner Bros. Discovery | WBD | Next print ~early Nov | Q3 2026 | Frozen-settlement framework; **ticking fee starts October 1** |
+| Disney | DIS | Next print mid-Nov | Q4 FY2026 | Streaming ad-tier expansion; sitting on its 50-day at $102.67 |
 | ~~Electronic Arts~~ | ~~EA~~ | — | — | **Delisted 8/4/2026 — $210/share cash, $55B PIF/Silver Lake/Affinity take-private; no further prints** |
 
 ---
@@ -182,48 +183,50 @@
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- FOMC hikes but signals one-and-done (or surprises with a hold) → 10-year retreats from 5.00% → platform multiples re-expand and the telecom yield bid strengthens
-- The unsealed Brinkema opinion proves narrow and workable → GOOGL relief rally; MGNI rerates as interoperability opens open-web supply
-- Broadband repricing proves overdone → CMCSA/CHTR bounce into Q3 prints showing stabilized subs
-- META digests its overbought reading sideways rather than by correction, keeping the index afloat
+- The benign Brinkema opinion holds through the Oct 2 final judgment without scope drift → GOOGL re-rates toward the $428 consensus; MGNI and independent ad-tech gain share as interoperability opens open-web supply
+- The 10-year fails to hold 5.00% and drifts back toward 4.75% → the VZ/T yield cushion re-widens and the dividend sleeve's rotation bid returns
+- The broadband rout proves to be capitulation: Q3 sub prints in late Oct show stabilization → CMCSA (RSI 17) and CHTR (3.3x) stage violent mean-reversion rallies
+- NFLX's mid-October print refutes the Wells Fargo engagement thesis → the stock re-rates from RSI 28 toward the $93.88 consensus
 
 ### 🔴 Bear Case
-- FOMC hikes **and** guides more → 10-year breaks 5.00% → both halves of the barbell squeeze at once; the 50-day ($110.90) fails and $105.38 reopens
-- The unsealed opinion is onerous → GOOGL de-rates from 17x; independent ad-tech (MGNI) gets squeezed rather than liberated
-- WTI holds >$100 into Q4 → second inflation front forces a harsher Fed path; ad budgets get the first cut as UMich 47.8 consumer stress feeds through
-- The broadband repricing is confirmed by ugly Q3 sub prints → CHTR's 3.8x P/E turns out to be a value trap, not a floor
+- The dots deliver: another hike by year-end and the 10-year establishes above 5.00% → VZ's 90bp yield cushion goes negative; the telecom sleeve de-rates to reflect negative spread
+- Breadth collapse completes: the five oversold holdings drag XLC through $110 and toward the $105.38 52-week closing low while META's RSI-78 froth finally mean-reverts
+- Q3 broadband sub prints confirm the repricing → CHTR/CMCSA lows give way; the sector loses ~9% of its weight to terminal-decline pricing
+- Google's appeal or an expanded Oct 2 judgment re-opens the structural question → GOOGL gives back the post-unsealing rally
+- WTI holds >$100 on the Aramco allocation cutoff → a second inflation front forces an even harsher Fed path; ad budgets get the first Q4 cut
 
 ### ⚠️ The Wild Card
-**September 16 is a double gate.** The FOMC decision and the Brinkema opinion unsealing land on the same day, and XLC's top weights sit on opposite sides of both: GOOGL is hostage to the opinion, META is hostage to its own RSI-84 froth, and the telecom sleeve is hostage to the 10-year. A hawkish Fed + an onerous opinion is the nightmare pairing for the index's ~37% platform concentration; a dovish-ish Fed + a narrow opinion is the squeeze setup. The market goes into Wednesday pricing the first leg (hike) at ~87-90% and the second leg (remedy scope) at essentially zero information — one of those two pricings is wrong.
+**The breadth bifurcation is the wildest live variable.** XLC's top two weights (META RSI 78, GOOGL post-relief-rally) are simultaneously fine-to-frothy while five of the next ten holdings sit at or near oversold breakdowns (CHTR, CMCSA, TMUS, NFLX, TTWO). Sector indices don't stay bifurcated: either the bottom half mean-reverts up (the bull case's path), or the top half mean-reverts down to meet it (the bear case's path). The October calendar — final judgment 10/2, NFLX mid-Oct, broadband prints late Oct — forces the resolution within six weeks. The direction of the 10-year decides which half wins.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-> *Rewritten this week: the rate regime shifted from "hawkish hold" to "hike priced at ~87-90%" — a genuine regime change that invalidates last week's cut/hold framing.*
+> *Updated this week: the September 16 double gate is resolved — benign remedies opinion + a live hiking cycle with the first 5.00% 10-year close. Last week's "position for resolution" framing is spent; this is a post-gate tape.*
 
-**Ophelia:** *"The hike is now the base case, not the tail risk, and the 10-year is 2.5bp from 5.00% with oil at $100 as a second inflation front. The consumer print at 47.8 is what actually worries me for this sector — ad budgets are the first corporate line item cut in a consumer rollover, and Trade Desk's layoffs are the first ad-tech canary. Wednesday is a double gate: the FOMC and the Brinkema unsealing on the same day. Reduce gross exposure into the gate; this is not the week to be a hero."*
+**Ophelia:** *"The legal tail risk I spent a month pricing is gone — Brinkema gave Google behavioral remedies, not a breakup, and the six-year term with a monitor is the workable outcome. But the rate regime crossed the line the same day: a hike, 16/18 dots for another, and the first 5.00% close of the cycle. For a barbell sector that's a mixed verdict that resolves bearish at the index level — the platform relief is idiosyncratic, the rate squeeze is systemic. Watch the VZ yield cushion: 90bp is the thinnest margin of this cycle. And Monday brings the CCOI lead-plaintiff deadline — small cap, but it's our distressed canary."*
 
-**Marky:** *"The 50-day took the full weight of the broadband collapse on Wednesday and held — that's the week's most important technical fact. META is the engine but RSI 84 says the engine is redlining; if it mean-reverts, the index needs CMCSA and CHTR to stop falling, and nothing in Friday's tape says they have. I'm a buyer of XLC only above the 200-day at $114, a seller below $110. Between those lines, the stock-picking matters more than the index."*
+**Marky:** *"Monday's 200-day reclaim was a bull trap, and Friday's close at the week low on the heaviest volume of the week is distribution, full stop. The 50-day at $111.19 is resistance now, not support. My map: below $110 opens $105.38; only a fast reclaim of $111.20 repairs the tape. Internally, five names are oversold at once — that usually produces a reflex bounce, but reflex bounces in downtrends are for selling, not chasing. GOOGL is the only name I'd add on strength; it has the catalyst, the reclaimed 50-day, and the target-distance to justify it."*
 
-**Cecil:** *"Three things I'd own through the gate: VZ at 5.6% yield near 52-week highs — the yield bid is real and the balance sheet is de-risking; GOOGL at 17x as a cheap hedge against a narrow opinion; and NFLX at 24x with the ad business doubling if you believe UK churn is noise. Two things I would not: CHTR at 3.8x — melting-ice-cube math until sub losses prove they've plateaued — and META at RSI 84, which is a hold, not a chase. And note the structural fact of the month: EA is gone. The sector's gaming sleeve is now one stock."*
+**Cecil:** *"Post-gate, the value hierarchy is clearer than it's been all quarter. GOOGL at 17.5x with the divestiture tail removed is the sector's best risk/reward — I'd own it through the appeal. NFLX at 18.8x forward with a doubling ad business is now officially a buy-the-downgrade candidate; I want one more week of engagement data before pulling the trigger, but Wells Fargo's PT cut to $57 looks like a capitulation marker, not a consensus view — the street is still at $93.88. VZ's 5.88% yield still clears 5.00% — barely — and the balance sheet is de-risking; hold. What I won't touch: CHTR and CMCSA until the late-October prints prove sub stabilization, and META at RSI 78, which remains a hold-not-chase. And the quiet winner on our own sheet: MGNI, +5.81% — the September 8 rotation call just paid for itself."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance market data (quotes, weekly changes computed vs. Fri 9/4 closes): XLC, META, GOOGL, GOOG, NFLX, T, VZ, TMUS, DIS, CHTR, CMCSA, TTWO, WBD, MGNI, CARG, ZD, CCOI, PPLI — Fri 9/11 closes
+- yfinance market data (quotes, weekly changes computed vs. Fri 9/11 closes): XLC, META, GOOGL, GOOG, NFLX, T, VZ, TMUS, DIS, CHTR, CMCSA, TTWO, WBD, MGNI, CARG, ZD, CCOI, PPLI — Fri 9/18 closes; XLC daily path 9/14-9/18 via yfinance history
 - XLC holdings weights: MarketXLS top-10 holdings as of 8/10/2026 (post-EA rebalance)
-- EA take-private completion ($210/share, $55B, delisted 8/4/2026): EA press release via Yahoo Finance (8/5), Game Informer (8/4), WSJ-sourced ownership split (PIF 93.4% / Silver Lake 5.5% / Affinity 1.1%)
-- Brinkema remedies follow-through (sealed opinion ~14 days from 9/2; joint final judgment ~30 days; end of first look/last look and unified pricing): Digiday (9/10), PPC Land (9/3-4), USA Today/Reuters (9/2)
-- Trade Desk 15% workforce cut: PPC Land (9/4)
-- Broadband repricing session (CMCSA -8% / CHTR -6% / TMUS -3% on 9/9; Spectrum free offer): Yahoo Finance / 24-7 Wall St (9/10); Comcast CFO at Goldman Communacopia transcript (StockAnalysis, 9/10)
-- Meta Muse agent launch: MarketingProfs AI Update (9/11), Heartlander News (9/11)
-- NFLX UK price hikes (+33% ad tier) and ad-business doubling to ~$3B: Media Play News (9/4), Motley Fool (9/6-7), Yahoo Finance (9/3)
-- Shared macro (hot core CPI +0.3% vs +0.2%, Sept 16 hike ~87-90% priced, 10Y 4.975%, 2Y 4.56%, WTI $100.05, DXY 99.12, UMich 47.8): Grid C shared pull, cross-refs issues #97 (CPI/hike), #99 (consumer), #100 (WTI/Bab el-Mandeb)
+- Brinkema remedies opinion unsealed 9/16 (106 pages; no divestiture; 6-yr behavioral term; Prebid API interoperability; publisher bid-data sharing; AdWords barred from bidding into DFP; DV360 untouched; technical monitor; joint final judgment due Oct 2, effective 60 days after signing; Google to appeal): court filing coverage via Reuters/AP/Digiday, week of 9/16-9/18
+- NFLX Wells Fargo downgrade (Cahall; Equal Weight → Underweight; PT $80 → $57; engagement trends + H2-2026 slate): Wells Fargo note via market coverage, 9/18
+- FOMC 9/16 (+25bp to 3.75-4.00%, 12-0 vote, Warsh; dots 16/18 for another 2026 hike, end-2027 4.1%): Federal Reserve statement/SEP, 9/16; cross-ref Grid A issue #106
+- 10Y Treasury daily closes (4.961% / 4.996% / 5.006% / 4.947% / 4.998%; first close above 5.00% on 9/16): market data, week of 9/14-9/18; cross-ref issue #108 (utilities leg)
+- Oil / geopolitics (WTI ~$100.30, Brent $103.87, Aramco October European allocation cutoff 9/18): market data + Grid C issue #109
+- Broadband repricing week 2 (CHTR -12.07% / CMCSA -9.76% / TMUS -7.76%, no fresh filings): yfinance weekly changes, 9/18
+- EA take-private completion ($210/share, $55B, delisted 8/4/2026): EA press release via Yahoo Finance (8/5)
+- Shared macro (DXY 100.22 +1.11%, VIX 14.81, SPY -0.34%): Grid C shared pull, 9/18
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-12 (run covers week ending 2026-09-11; four-session week, Labor Day 9/7)*
+*Last updated by Saturday Research Crew: 2026-09-19 (run covers week ending 2026-09-18)*
 *Next update: Every Saturday 11:39 AM ET*
 *Data sources: yfinance, Yahoo Finance, StockAnalysis, MarketXLS, Morningstar, MarketWatch, MAGNA, GroupM, eMarketer, WARC, company filings, market data feeds*
