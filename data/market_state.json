@@ -73,12 +73,12 @@
   "macro": null,
   "macro_reason": "facts.json has no macro_prints block (schema macro-facts/v1)",
   "policy": {
-    "fed_funds_range": "3.50-3.75",
-    "fed_funds_range_as_of": "2026-07-29",
-    "fed_stance": "Hold",
-    "fed_stance_as_of": "2026-07-29",
-    "next_macro_gate": "FOMC Sep 15-16 (hike odds ~87-90% after hot August core CPI +0.3% vs +0.2% cons, reported Sep 11) + BOJ Sep 17-18 (hike odds ~84-87%)",
-    "next_macro_gate_as_of": "2026-09-12"
+    "fed_funds_range": "3.75-4.00",
+    "fed_funds_range_as_of": "2026-09-16",
+    "fed_stance": "Hike",
+    "fed_stance_as_of": "2026-09-16",
+    "next_macro_gate": "August PCE Sep 30 (08:30 ET) + FOMC Oct 27-28 (16 of 18 dots see another 2026 hike); BOJ already hiked to 1.25% on Sep 18 (7-2 split)",
+    "next_macro_gate_as_of": "2026-09-19"
   },
   "rates": {
     "US10Y": {
@@ -93,7 +93,7 @@
     },
     "curve_2s10s_bps": 60
   },
-  "regime": "risk-on / curve-positive / policy-hold",
+  "regime": "risk-on / curve-positive / policy-hike",
   "schema": "market-state/v1",
   "sectors": {
     "SMH": {
@@ -220,8 +220,8 @@
   "upcoming": [
     {
       "binary": null,
-      "event": "FOMC Sep 15-16 (hike odds ~87-90% after hot August core CPI +0.3% vs +0.2% cons, reported Sep 11) + BOJ Sep 17-18 (hike odds ~84-87%)",
-      "when": "2026-09-12"
+      "event": "August PCE Sep 30 (08:30 ET) + FOMC Oct 27-28 (16 of 18 dots see another 2026 hike); BOJ already hiked to 1.25% on Sep 18 (7-2 split)",
+      "when": "2026-09-19"
     }
   ],
   "vol": {
