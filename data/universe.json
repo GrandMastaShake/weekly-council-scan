@@ -39,7 +39,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ABBV",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
       ]
@@ -77,6 +76,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ACN",
       "wiki_refs": [
+        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -115,7 +115,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ADSK",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -261,9 +260,9 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "ALL",
       "wiki_refs": [
-        "wiki/financials.md",
-        "wiki/universe.md",
-        "wiki/utilities.md"
+        "wiki/communication-services.md",
+        "wiki/energy.md",
+        "wiki/universe.md"
       ]
     },
     {
@@ -282,6 +281,7 @@
       "t": "AMAT",
       "wiki_refs": [
         "wiki/semiconductors.md",
+        "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -301,8 +301,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "AMD",
       "wiki_refs": [
-        "wiki/canary-watch.md",
-        "wiki/earnings-surveillance.md",
         "wiki/semiconductors.md",
         "wiki/synthesis.md",
         "wiki/tech.md",
@@ -325,7 +323,6 @@
       "t": "AMGN",
       "wiki_refs": [
         "wiki/healthcare.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -605,6 +602,7 @@
       "t": "AXP",
       "wiki_refs": [
         "wiki/financials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -643,8 +641,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BA",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -775,7 +773,6 @@
       "t": "BKNG",
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
-        "wiki/consumer-staples.md",
         "wiki/synthesis.md"
       ]
     },
@@ -794,6 +791,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BKR",
       "wiki_refs": [
+        "wiki/energy.md",
         "wiki/universe.md"
       ]
     },
@@ -868,7 +866,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BSX",
       "wiki_refs": [
-        "wiki/healthcare.md",
         "wiki/universe.md"
       ]
     },
@@ -925,9 +922,8 @@
       "wiki_refs": [
         "wiki/canary-watch.md",
         "wiki/communication-services.md",
-        "wiki/consumer-staples.md",
         "wiki/financials.md",
-        "wiki/synthesis.md",
+        "wiki/industrials.md",
         "wiki/universe.md"
       ]
     },
@@ -945,7 +941,9 @@
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CALM",
-      "wiki_refs": []
+      "wiki_refs": [
+        "wiki/earnings-surveillance.md"
+      ]
     },
     {
       "added": null,
@@ -980,7 +978,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CAT",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
@@ -1002,6 +999,7 @@
       "t": "CB",
       "wiki_refs": [
         "wiki/financials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -1131,19 +1129,12 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CME",
       "wiki_refs": [
-        "wiki/canary-watch.md",
         "wiki/consumer-discretionary.md",
-        "wiki/consumer-staples.md",
         "wiki/economic-calendar.md",
-        "wiki/energy.md",
         "wiki/financials.md",
         "wiki/healthcare.md",
-        "wiki/industrials.md",
-        "wiki/materials.md",
-        "wiki/semiconductors.md",
-        "wiki/tech.md",
-        "wiki/universe.md",
-        "wiki/utilities.md"
+        "wiki/synthesis.md",
+        "wiki/universe.md"
       ]
     },
     {
@@ -1252,7 +1243,9 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "COP",
       "wiki_refs": [
-        "wiki/energy.md"
+        "wiki/energy.md",
+        "wiki/financials.md",
+        "wiki/synthesis.md"
       ]
     },
     {
@@ -1290,6 +1283,7 @@
       "wiki_refs": [
         "wiki/consumer-staples.md",
         "wiki/earnings-surveillance.md",
+        "wiki/economic-calendar.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -1327,6 +1321,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CPRT",
       "wiki_refs": [
+        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -1363,7 +1358,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CRM",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -1397,9 +1391,7 @@
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CRWD",
-      "wiki_refs": [
-        "wiki/earnings-surveillance.md"
-      ]
+      "wiki_refs": []
     },
     {
       "added": null,
@@ -1416,7 +1408,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CSCO",
       "wiki_refs": [
-        "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -1455,6 +1446,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "CTAS",
       "wiki_refs": [
+        "wiki/earnings-surveillance.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -1490,6 +1483,7 @@
       "t": "CVS",
       "wiki_refs": [
         "wiki/healthcare.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -1528,7 +1522,9 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "D",
       "wiki_refs": [
+        "wiki/canary-watch.md",
         "wiki/healthcare.md",
+        "wiki/synthesis.md",
         "wiki/universe.md",
         "wiki/utilities.md"
       ]
@@ -1583,8 +1579,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "DE",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -1604,7 +1600,6 @@
       "t": "DHR",
       "wiki_refs": [
         "wiki/healthcare.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -1624,8 +1619,7 @@
       "t": "DIS",
       "wiki_refs": [
         "wiki/communication-services.md",
-        "wiki/consumer-discretionary.md",
-        "wiki/earnings-surveillance.md"
+        "wiki/consumer-discretionary.md"
       ]
     },
     {
@@ -2002,6 +1996,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "EW",
       "wiki_refs": [
+        "wiki/communication-services.md",
         "wiki/universe.md"
       ]
     },
@@ -2076,8 +2071,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "FCX",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/materials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -2096,6 +2091,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "FDX",
       "wiki_refs": [
+        "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
@@ -2292,6 +2288,7 @@
       "t": "GILD",
       "wiki_refs": [
         "wiki/healthcare.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -2349,6 +2346,7 @@
       "wiki_refs": [
         "wiki/communication-services.md",
         "wiki/earnings-surveillance.md",
+        "wiki/industrials.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -2370,6 +2368,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/financials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -2406,6 +2405,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "HAL",
       "wiki_refs": [
+        "wiki/energy.md",
         "wiki/universe.md"
       ]
     },
@@ -2443,7 +2443,6 @@
       "t": "HD",
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
-        "wiki/earnings-surveillance.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -2533,9 +2532,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "HON",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/industrials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -2554,8 +2551,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "HPE",
       "wiki_refs": [
-        "wiki/synthesis.md",
-        "wiki/tech.md",
         "wiki/universe.md"
       ]
     },
@@ -2678,8 +2673,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "INTC",
       "wiki_refs": [
-        "wiki/canary-watch.md",
-        "wiki/earnings-surveillance.md",
+        "wiki/semiconductors.md",
         "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
@@ -2978,6 +2972,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "KLAC",
       "wiki_refs": [
+        "wiki/semiconductors.md",
         "wiki/universe.md"
       ]
     },
@@ -3036,8 +3031,6 @@
       "t": "KO",
       "wiki_refs": [
         "wiki/consumer-staples.md",
-        "wiki/earnings-surveillance.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -3074,8 +3067,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "LIN",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/materials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -3094,7 +3087,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "LLY",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
@@ -3172,7 +3164,8 @@
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
         "wiki/synthesis.md",
-        "wiki/universe.md"
+        "wiki/universe.md",
+        "wiki/utilities.md"
       ]
     },
     {
@@ -3191,6 +3184,7 @@
       "t": "LRCX",
       "wiki_refs": [
         "wiki/semiconductors.md",
+        "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -3248,10 +3242,10 @@
         "wiki/communication-services.md",
         "wiki/consumer-discretionary.md",
         "wiki/consumer-staples.md",
-        "wiki/earnings-surveillance.md",
         "wiki/energy.md",
         "wiki/financials.md",
         "wiki/healthcare.md",
+        "wiki/industrials.md",
         "wiki/materials.md",
         "wiki/real-estate.md",
         "wiki/semiconductors.md",
@@ -3314,7 +3308,6 @@
       "t": "MCD",
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
-        "wiki/earnings-surveillance.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -3371,7 +3364,6 @@
       "t": "MDLZ",
       "wiki_refs": [
         "wiki/consumer-staples.md",
-        "wiki/earnings-surveillance.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -3431,7 +3423,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MLM",
       "wiki_refs": [
-        "wiki/materials.md"
+        "wiki/materials.md",
+        "wiki/synthesis.md"
       ]
     },
     {
@@ -3468,7 +3461,6 @@
       "t": "MMM",
       "wiki_refs": [
         "wiki/industrials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -3577,7 +3569,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MRK",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
       ]
@@ -3597,7 +3588,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MRNA",
       "wiki_refs": [
-        "wiki/healthcare.md",
         "wiki/universe.md"
       ]
     },
@@ -3618,6 +3608,7 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/financials.md",
+        "wiki/tech.md",
         "wiki/universe.md"
       ]
     },
@@ -3637,6 +3628,7 @@
       "t": "MSFT",
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
+        "wiki/industrials.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -3690,9 +3682,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MU",
       "wiki_refs": [
-        "wiki/canary-watch.md",
         "wiki/earnings-surveillance.md",
-        "wiki/economic-calendar.md",
         "wiki/semiconductors.md",
         "wiki/synthesis.md",
         "wiki/tech.md",
@@ -3752,7 +3742,6 @@
       "t": "NEM",
       "wiki_refs": [
         "wiki/materials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -3771,8 +3760,10 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "NFLX",
       "wiki_refs": [
+        "wiki/canary-watch.md",
         "wiki/communication-services.md",
         "wiki/earnings-surveillance.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -3939,11 +3930,9 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "NVDA",
       "wiki_refs": [
-        "wiki/canary-watch.md",
         "wiki/earnings-surveillance.md",
-        "wiki/financials.md",
+        "wiki/industrials.md",
         "wiki/semiconductors.md",
-        "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -3981,7 +3970,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "O",
       "wiki_refs": [
-        "wiki/consumer-discretionary.md",
         "wiki/real-estate.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
@@ -4071,9 +4059,7 @@
       "t": "ORCL",
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
-        "wiki/industrials.md",
         "wiki/real-estate.md",
-        "wiki/synthesis.md",
         "wiki/tech.md",
         "wiki/universe.md"
       ]
@@ -4130,6 +4116,8 @@
       "t": "OXY",
       "wiki_refs": [
         "wiki/energy.md",
+        "wiki/financials.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -4260,7 +4248,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "PFE",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
       ]
@@ -4281,7 +4268,6 @@
       "t": "PG",
       "wiki_refs": [
         "wiki/consumer-staples.md",
-        "wiki/synthesis.md",
         "wiki/universe.md",
         "wiki/utilities.md"
       ]
@@ -4339,7 +4325,6 @@
       "t": "PLD",
       "wiki_refs": [
         "wiki/real-estate.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -4375,11 +4360,16 @@
       "t": "PM",
       "wiki_refs": [
         "wiki/canary-watch.md",
+        "wiki/consumer-discretionary.md",
         "wiki/consumer-staples.md",
-        "wiki/earnings-surveillance.md",
         "wiki/economic-calendar.md",
+        "wiki/financials.md",
+        "wiki/healthcare.md",
+        "wiki/industrials.md",
         "wiki/real-estate.md",
-        "wiki/synthesis.md"
+        "wiki/semiconductors.md",
+        "wiki/synthesis.md",
+        "wiki/tech.md"
       ]
     },
     {
@@ -4473,6 +4463,7 @@
       "t": "PSA",
       "wiki_refs": [
         "wiki/real-estate.md",
+        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -4565,7 +4556,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "QCOM",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
+        "wiki/semiconductors.md",
         "wiki/universe.md"
       ]
     },
@@ -4780,7 +4771,6 @@
       "t": "RTX",
       "wiki_refs": [
         "wiki/industrials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -4819,7 +4809,6 @@
       "t": "SBUX",
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
-        "wiki/earnings-surveillance.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -4840,8 +4829,7 @@
       "t": "SCHW",
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
-        "wiki/financials.md",
-        "wiki/synthesis.md"
+        "wiki/financials.md"
       ]
     },
     {
@@ -4896,7 +4884,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "SJM",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -5185,7 +5172,6 @@
       "t": "SYK",
       "wiki_refs": [
         "wiki/healthcare.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -5276,7 +5262,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TGT",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/universe.md"
       ]
     },
@@ -5295,7 +5280,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TMO",
       "wiki_refs": [
-        "wiki/earnings-surveillance.md",
         "wiki/healthcare.md",
         "wiki/universe.md"
       ]
@@ -5409,7 +5393,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TSM",
       "wiki_refs": [
-        "wiki/semiconductors.md"
+        "wiki/semiconductors.md",
+        "wiki/synthesis.md"
       ]
     },
     {
@@ -5427,8 +5412,7 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "TTWO",
       "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/synthesis.md"
+        "wiki/communication-services.md"
       ]
     },
     {
@@ -5535,7 +5519,6 @@
       "t": "UNP",
       "wiki_refs": [
         "wiki/industrials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -5555,7 +5538,6 @@
       "t": "UPS",
       "wiki_refs": [
         "wiki/industrials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -5610,9 +5592,8 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "V",
       "wiki_refs": [
-        "wiki/communication-services.md",
-        "wiki/earnings-surveillance.md",
         "wiki/financials.md",
+        "wiki/semiconductors.md",
         "wiki/synthesis.md",
         "wiki/universe.md"
       ]
@@ -5820,7 +5801,6 @@
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
         "wiki/financials.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
@@ -5878,8 +5858,6 @@
       "t": "WMT",
       "wiki_refs": [
         "wiki/consumer-staples.md",
-        "wiki/earnings-surveillance.md",
-        "wiki/synthesis.md",
         "wiki/universe.md"
       ]
     },
