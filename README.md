@@ -145,9 +145,9 @@ the heatmap's own README and in `data/forecasts/2026-09-18_manual.json` there.
 <!-- ARENA BANNER START -->
 ## ⚔️ The Arena — Think You Can Beat the Council?
 
-### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/104)** 👈
+### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/111)** 👈
 
-**Week of 2026-09-21 · 🔒 Entries lock Monday 8:50 AM ET**
+**Week of 2026-09-28 · 🔒 Entries lock Monday 8:50 AM ET**
 
 1. Click the link above (opens this week's Arena issue)
 2. Scroll to the comment box at the bottom
