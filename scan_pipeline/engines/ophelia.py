@@ -17,6 +17,7 @@ from scan_pipeline.utils.data_utils import (
     clamp,
     parse_vix,
     week_hash,
+    tradeable_picks,
 )
 from scan_pipeline.utils import wiki_signals
 
@@ -24,6 +25,7 @@ from scan_pipeline.utils import wiki_signals
 # configured on 2026-09-21; the lab flips them to replay the variants.
 #   SECTOR_SIGNAL  "prior_week" -- each sector's average return in the week
 #                                  before the latest completed week
+#                  "last_week"  -- the latest completed week
 #                  "rs_12_1"    -- each sector's average weekly-equivalent
 #                                  return over the (up to) 12-week window,
 #                                  skipping the latest week
@@ -72,6 +74,11 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
             rs = _weekly_rs_12_1(get_price_history(ticker, date, 12, price_cache))
             if rs is not None:
                 sector_returns.setdefault(sector, []).append(rs)
+            continue
+        if SECTOR_SIGNAL == "last_week":
+            latest = get_price_history(ticker, date, 1, price_cache)
+            if latest:
+                sector_returns.setdefault(sector, []).append(latest[-1].return_)
             continue
         history = get_price_history(ticker, date, 2, price_cache)
         if len(history) >= 2:
@@ -228,11 +235,14 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     tie_logs = log_ties(scores, "Ophelia", signals.watchlist, signals.mentions)
     for line in tie_logs:
         print(line)
-    top3 = scores[:3]
+    # Earnings blackout: names reporting inside the holding week are passed
+    # over and the next-best name proposed (run_scan.py logs the skips).
+    tradeable, earnings_skipped = tradeable_picks(scores, market_data)
+    top3 = tradeable[:3]
 
     stocks = []
     for idx, s in enumerate(top3):
-        next_score = scores[idx + 1]["score"] if idx + 1 < len(scores) else None
+        next_score = tradeable[idx + 1]["score"] if idx + 1 < len(tradeable) else None
         # Pick-level conviction: sector flow, the pick's own week, its calm
         # vs SPY, and its momentum vs the sector — not a capped constant.
         strength = (
@@ -272,6 +282,7 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
         "data_degraded": data_degraded,
         "data_degraded_reasons": data_degraded_reasons,
         "market_regime": market_regime,
+        "earnings_skipped": earnings_skipped,
     }
 
 

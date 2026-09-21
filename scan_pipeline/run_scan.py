@@ -553,6 +553,27 @@ def main() -> None:
     marky_proposal = marky.analyze(market_data, date, price_cache)
     ophelia_proposal = ophelia.analyze(market_data, date, price_cache)
 
+    # Earnings blackout (all engines, 2026-09-21): each engine passed over any
+    # name reporting inside the holding week and proposed its next-best name.
+    # The passed-over names are logged like gate drops, so rejections.md
+    # carries them and their counterfactual week is backfilled.
+    blackout = []
+    for name, proposal in (("Cecil", cecil_proposal), ("Marky", marky_proposal),
+                           ("Ophelia", ophelia_proposal)):
+        for s in proposal.get("earnings_skipped") or []:
+            blackout.append({
+                "date": date,
+                "gate": "earnings-blackout",
+                "engine": name,
+                "ticker": s["ticker"],
+                "reason": (f"earnings_proximity (earnings {s['earnings_date']}, "
+                           f"{s['earnings_trading_days']} trading days out) -- "
+                           f"passed over at ranking; next-best name proposed"),
+            })
+    for d in blackout:
+        print(f"[sanity] DROP: {d['engine']} {d['ticker']} -- {d['reason']}")
+    append_rejection_log(state_dir, date, blackout)
+
     # ── Pre-publication sanity gate ──────────────────────────────────────
     # A fabricated P/E on a single pick: DROP the pick, log loudly, continue.
     # Full-week abort is reserved for degenerate signal: flat confidence,

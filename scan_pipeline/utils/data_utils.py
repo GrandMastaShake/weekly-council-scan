@@ -6,7 +6,7 @@ Ported from lib/data-utils.ts
 import glob
 import os
 import statistics
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 try:
     import yaml
@@ -451,6 +451,50 @@ def avg_dollar_volume(history: List[PriceHistory]) -> Optional[float]:
     if not dollars:
         return None
     return sum(dollars) / len(dollars)
+
+
+# ============================================================================
+# Earnings blackout -- all three engines
+# ============================================================================
+
+# No engine proposes a name that reports within this many trading days of the
+# Friday close the scan reads, i.e. anywhere inside the holding week. Began as
+# Cecil's rule after the 2026-08-03 SYM incident (booked two days before its
+# print); extended to Marky and Ophelia on 2026-09-21 after the Testing Room
+# found TPR, an Ophelia pick, held through its 8/13 print for -20%.
+EARNINGS_BLACKOUT_TRADING_DAYS = 5
+
+
+def earnings_blackout(market_data: Dict, ticker: str) -> Optional[Tuple[Optional[str], int]]:
+    """(earnings_date, trading_days_out) when the ticker reports inside the
+    blackout, else None. Unknown dates never exclude (logged at fetch)."""
+    stock = (market_data.get("stockData") or {}).get(ticker) or {}
+    etd = stock.get("earnings_trading_days")
+    if etd is None or not 0 <= etd <= EARNINGS_BLACKOUT_TRADING_DAYS:
+        return None
+    return stock.get("earnings_date"), etd
+
+
+def tradeable_picks(sorted_scores: List[dict], market_data: Dict, n: int = 3) -> Tuple[List[dict], List[dict]]:
+    """An engine's ranking with the earnings-blackout names passed over.
+
+    Returns (tradeable, skipped). tradeable is the ranking minus every
+    blackout name, order kept: its first n are the proposal and its
+    neighbours set each pick's margin. skipped lists the blackout names that
+    ranked above the n-th tradeable pick -- the names the engine would have
+    proposed -- for run_scan.py to log. With no earnings data, tradeable is
+    the ranking unchanged.
+    """
+    tradeable: List[dict] = []
+    skipped: List[dict] = []
+    for s in sorted_scores:
+        hit = earnings_blackout(market_data, s["ticker"])
+        if hit is None:
+            tradeable.append(s)
+        elif len(tradeable) < n:
+            skipped.append({"ticker": s["ticker"], "earnings_date": hit[0],
+                            "earnings_trading_days": hit[1]})
+    return tradeable, skipped
 
 
 def log_ties(sorted_scores: List[dict], agent_name: str, watchlist: set, mentions: Dict[str, int]) -> List[str]:

@@ -18,6 +18,7 @@ from scan_pipeline.utils.data_utils import (
     log_ties,
     clamp,
     parse_vix,
+    tradeable_picks,
 )
 from scan_pipeline.utils import wiki_signals
 
@@ -35,9 +36,16 @@ _TEN_Y_GATE_PCT = 4.5
 _ten_y_cache: Optional[float] = None
 _ten_y_loaded = False
 
-# Engine Lab knob (lab/README.md, Pass 2): the most points a calm tape can
-# earn. The default is the engine as configured on 2026-09-21.
+# Engine Lab knobs (lab/README.md). Defaults are the engine as configured on
+# 2026-09-21; the lab flips them to replay variants.
+#   LOW_VOL_POINTS   the most points a calm tape can earn (Pass 2)
+#   MOMENTUM_WINDOW  "last_3w" -- the momentum leg reads the latest three weekly
+#                                 steps
+#                    "skip_4w" -- it reads the (up to) 12-week window up to the
+#                                 close four weeks before the latest, skipping
+#                                 the most recent month (Pass 3)
 LOW_VOL_POINTS = 30.0
+MOMENTUM_WINDOW = "last_3w"
 
 
 def load_10y_yield() -> Optional[float]:
@@ -94,14 +102,17 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
         # rally; ramp-up below +5%; linear decay above +20% (zero at +40%);
         # minus an overextension penalty when price is stretched more than
         # +6% above its MA. A +25% vertical no longer banks a free 40.
-        if four_week_return <= 0.0:
+        momentum_return = four_week_return
+        if MOMENTUM_WINDOW == "skip_4w" and window_weeks >= 6:
+            momentum_return = compute_4_week_return(history[:-4])
+        if momentum_return <= 0.0:
             momentum_base = 0.0
-        elif four_week_return < 0.05:
-            momentum_base = 40.0 * (four_week_return / 0.05)
-        elif four_week_return <= 0.20:
+        elif momentum_return < 0.05:
+            momentum_base = 40.0 * (momentum_return / 0.05)
+        elif momentum_return <= 0.20:
             momentum_base = 40.0
         else:
-            momentum_base = 40.0 * max(0.0, 1.0 - (four_week_return - 0.20) / 0.20)
+            momentum_base = 40.0 * max(0.0, 1.0 - (momentum_return - 0.20) / 0.20)
         overext_penalty = 0.0
         if dist_ma is not None and dist_ma > 0.06:
             overext_penalty = 10.0 * clamp((dist_ma - 0.06) / 0.06, 0.0, 1.0)
@@ -165,6 +176,7 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
             "volatility_score": volatility_score,
             "volume_score": volume_score,
             "four_week_return": four_week_return,
+            "momentum_return": momentum_return,
             "dist_ma": dist_ma,
             "std_dev": std_dev,
             "avg_dollar_volume": adv,
@@ -195,11 +207,14 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     tie_logs = log_ties(scores, "Marky", signals.watchlist, signals.mentions)
     for line in tie_logs:
         print(line)
-    top3 = scores[:3]
+    # Earnings blackout: names reporting inside the holding week are passed
+    # over and the next-best name proposed (run_scan.py logs the skips).
+    tradeable, earnings_skipped = tradeable_picks(scores, market_data)
+    top3 = tradeable[:3]
 
     stocks = []
     for idx, s in enumerate(top3):
-        next_score = scores[idx + 1]["score"] if idx + 1 < len(scores) else None
+        next_score = tradeable[idx + 1]["score"] if idx + 1 < len(tradeable) else None
         # Pick-level conviction: the pick's own momentum, MA distance, and
         # realized volatility — not a constant, not a saturated bucket score.
         strength = (
@@ -222,7 +237,8 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     # do not cluster at that granularity; bucketed/broken ones do.
     top_key = round(top3[0]["score"], 2) if top3 else None
     tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_key) if top3 else 0
-    return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top}
+    return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top,
+            "earnings_skipped": earnings_skipped}
 
 
 def _generate_thesis(s: dict, idx: int) -> str:

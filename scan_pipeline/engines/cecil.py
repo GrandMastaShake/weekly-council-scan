@@ -13,6 +13,7 @@ from scan_pipeline.utils.data_utils import (
     pick_confidence,
     log_ties,
     parse_vix,
+    tradeable_picks,
 )
 from scan_pipeline.utils import wiki_signals
 
@@ -144,11 +145,17 @@ def analyze(market_data: Dict[str, Any], date: Optional[str] = None) -> Dict[str
     tie_logs = log_ties(scores, "Cecil", signals.watchlist, signals.mentions)
     for line in tie_logs:
         print(line)
-    top3 = scores[:3]
+    # Earnings blackout (2026-08-03 SYM incident -- booked 2 days before its
+    # print). Names reporting inside the holding week are passed over and the
+    # next-best name proposed; run_scan.py logs the skips. Until 2026-09-21
+    # this rule marked the pick and the gate dropped it, costing Cecil the
+    # slot; it now matches Marky and Ophelia.
+    tradeable, earnings_skipped = tradeable_picks(scores, market_data)
+    top3 = tradeable[:3]
 
     stocks = []
     for idx, s in enumerate(top3):
-        next_score = scores[idx + 1]["score"] if idx + 1 < len(scores) else None
+        next_score = tradeable[idx + 1]["score"] if idx + 1 < len(tradeable) else None
         margin = min(5.0, (s["score"] - next_score) * 0.25) if next_score is not None and s["score"] > next_score else 0.0
         # Pick-level strength from the pick's OWN signal inputs (Fix 3):
         # value conviction 50%, quality 30%, safety 20% — each 0..1.
@@ -166,18 +173,6 @@ def analyze(market_data: Dict[str, Any], date: Optional[str] = None) -> Dict[str
             pe_source = "none"
         else:
             pe_source = "synthetic"
-        # Earnings proximity exclusion (2026-08-03 SYM incident -- booked 2
-        # days before its print). No pick within 5 trading days of its
-        # earnings date. Unknown dates do NOT exclude (logged at fetch).
-        # The pick is MARKED here; run_scan.py's gate (Agent B) drops it.
-        etd = s.get("earnings_trading_days")
-        exclude_reason = None
-        if etd is not None and 0 <= etd <= 5:
-            exclude_reason = "earnings_proximity"
-            print(
-                f"[Cecil] EXCLUDE {s['ticker']}: earnings {s.get('earnings_date')} "
-                f"in {etd} trading day(s) -- exclude_reason=earnings_proximity"
-            )
         stocks.append({
             "ticker": s["ticker"],
             "confidence": conf_pub,
@@ -187,13 +182,13 @@ def analyze(market_data: Dict[str, Any], date: Optional[str] = None) -> Dict[str
             "thesis": _generate_thesis(s, idx),
             "quality_source": s.get("quality_source"),
             "earnings_date": s.get("earnings_date"),
-            "earnings_trading_days": etd,
-            "exclude_reason": exclude_reason,
+            "earnings_trading_days": s.get("earnings_trading_days"),
         })
 
     top_score = round(top3[0]["score"], 2) if top3 else None
     tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_score) if top3 else 0
-    return {"agent": "Cecil", "stocks": stocks, "tied_at_top": tied_at_top}
+    return {"agent": "Cecil", "stocks": stocks, "tied_at_top": tied_at_top,
+            "earnings_skipped": earnings_skipped}
 
 
 def _generate_thesis(s: dict, idx: int) -> str:
