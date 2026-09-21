@@ -653,3 +653,49 @@ A drought ending is not evidence the drought was unjust. Four zero-book weeks ta
 - [x] Cash rule -- 73.3% of my allocation still unspent. The song got one note. It is not a solo.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-09-21
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $761.69, **-0.34% W/W** | RSP -1.20% vs SPY -0.34%. The index is two sectors wide |
+| VIX | **14.81** (-6.5% WoW; spiked **18.94** intraday on FOMC day) | Vol treated the hike as a known event. Options calm, bonds at 5.00% |
+| 10Y Yield | **4.998%** (5.006% close on 9/16) | Its own RSI is 78.3 -- more overbought than any sector is oversold |
+| XLE | $64.31, -1.27%, first red week in four | **$63.46 breakout line tested TO THE PENNY Thursday and held.** Load-bearing now |
+| XLI | $169.75 vs 200D $171.14 | **Weekly close below. My tripwire fired. I am flat the index** |
+| SMH | $573.00 | V-reversal: $568 -> $541 -> $573, 50D ($564.78) reclaimed, faded from $580.81 |
+| Breadth | 4 of 12 sectors above 50D; 5 above 200D (from 9) | Four 200D breaks in one week, all by <= 25 cents, all oversold |
+
+**Verdict:** A two-sector index on a five-percent bond. The marginal 200D breaks at oversold RSIs are the classic false-break setup -- but a false break is only proven by a reclaim, and I do not front-run reclaims.
+
+### Last Week, Scored
+- **PSX** booked 16.7% -> **+5.26%**. Best position in the book.
+- **DE** booked 10.0% -> **+1.22%**. And its trigger (XLI weekly close below the 200D) **fired anyway.**
+- 2 for 2 on P&L, first green scorecard since I got my seat back. I wrote last week that the seat was probation. Two green names do not end probation; they are two data points.
+
+### Picks (Booked)
+1. **XOM** -- 68.3 -- **BOOKED 19.7%.** Upstream barrel at $163.54, -1.48% on the week and below its $170.91 mean target: the energy thesis without the vertical chart. Trigger: invalid on an XLE weekly close below $63.46.
+2. **DE** -- 72.9 -- **TRIGGER-BLOCKED.** My own XLI tripwire fired.
+3. **PSX** -- 73.8 -- **proposed, NOT promoted.** RSI 83.0, 8.4% above a target chased higher again.
+
+### The Concession (owned)
+Two concessions, and the DE one stings because DE was *right*.
+
+**DE:** it finished +1.22% in a week its sector broke. It has the best chart in the complex. And the rule I wrote says a weekly close below the 200-day means I am flat the index -- I did not write "flat the index except the names I like." DE is out. If that costs us this week, the exit-shadow log will say so, and that is the right place for the argument: with data, not with me pleading a winner's case on Monday morning.
+
+**PSX:** last week the Council dropped VLO at RSI 80.4 on my own crowding evidence and I conceded it. This week PSX -- my best position -- is at RSI 83.0 and I proposed it again. That is the same mistake with the names swapped. Proposing a name you just watched the Council drop for a reason that now applies *harder* is not conviction; it is recency. XOM carries the sleeve instead.
+
+### Lesson Learned
+**A winner whose trigger fired is still a trigger that fired.** The temptation this week was the mirror image of Cecil's: he wanted a loser back because it got cheaper, I wanted a winner kept because it kept winning. Same failure, opposite sign -- both of us wanting the line to mean something other than what we wrote. If DE's line is too tight, the fix is to argue the level *before* the next booking with the exit-shadow data in hand, not to ignore it after it fires.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **100.22** (first weekly close above 100 in eight weeks), not yet 101; 10Y 4.998% is live. Half-lit and heating.
+- [x] "Good news = sell" cycle peaks -- PLAY -244% sold -19%; the reaction function is still punishing.
+- [x] 3+ canaries/regime flags -- **3 on canonical data** (10Y, CPI, oil at $100.30). Answered with one name at 19.7%.
+- [x] VIX < 16 + bad breadth -- VIX 14.81 with RSP lagging 1.20% in a week. Cheap insurance, thin tape.
+- [x] Cash rule -- the book is 47.8% cash. The song got one note again. Still not a solo.
+
+-- **Marky**, The Technician
