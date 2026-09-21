@@ -825,3 +825,32 @@ beat his top two only if the paired gap has t >= 2. The Council-week numbers
 are a spot check, as above.
 
     python lab/whatif_check.py
+
+## Spot check 2 results
+
+Run after the registration commit (614ee92); `results/whatif_check.json`.
+Council weeks (07-27 to 09-14), edge over random books of the same size:
+
+| Picks | Per week | Weeks ahead of random |
+|---|---|---|
+| Ophelia: top two / bottom three | -0.73% / -0.44% | 2 / 3 of 8 |
+| Cecil: top two / bottom three | +0.29% / -0.02% | 4 / 4 of 8 |
+| Marky: top two / bottom three | +3.64% / +0.12% | 6 / 6 of 8 |
+| Ophelia a week late, all five | +0.36% | 5 of 8 |
+| The nine: her bottom three a week late, the others' bottom three | +0.52% (t +1.08) | 6 of 8 |
+| All fifteen | +0.34% (t +1.40) | 4 of 8 |
+
+**The one real test says the order means nothing.** Over Pass 5's 96 history
+weeks, Marky's #3-#5 minus his #1-#2 came to -0.11%/wk (t -0.31), with the
+bottom three ahead in 43 of 96 weeks. As predicted, where a name sits in his
+five carries no information, in either direction.
+
+**The nine post the best number any design has on these weeks, and have the
+least claim to it.** Half of the pool is Ophelia a week late, the very result
+the idea was read off. The bottom-three half does not hold on history, and on
+the Council weeks Cecil's and Marky's bottom three trailed their top two.
+Nothing here separates the nine from luck.
+
+**Ophelia a week late costs nothing to keep score of.** Her five exist every
+week, so holding last week's five is a book the forward record can score
+without running anything new. That is the only fair test it can get.
