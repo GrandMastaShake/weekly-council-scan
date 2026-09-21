@@ -30,7 +30,25 @@
 
 **Divergence detail:** The blocked weight (EVRG 17.8% + AES 6.9% = 24.7%) was **not** renormalized into the surviving picks. One promotion was made -- DE at the 10.0% minimum position floor, Marky's #3 and the next candidate that passes its own trigger -- and the remaining 14.7% was left as cash. Concentrating a book because two names were blocked would invert the purpose of the block. A deliberate second choice is recorded here: XLU's next level down is $42.23 and XLU closed $42.39, so a trigger written against $42.23 rather than the wiki's stated $43.00 would have let both utility picks through. That was refused as trigger-shopping.
 
-**Resolution:** Counterfactual to be computed next Monday (2026-09-21), date-pinned Mon 2026-09-14 close -> Fri 2026-09-18 close: the EVRG/AES shadow book (25.5% cash variant) against the official booked week. The specific question this entry exists to answer: **did blocking the utilities sleeve the day before an ~88%-priced hike protect the book, or did it cost the book the relief trade that wiki/utilities.md itself calls "the fastest money on the board" if the hike reads as finishing something?** Both directions are live and the entry is written before the answer is known.
+**Resolution:** Counterfactual computed 2026-09-21 (block below), date-pinned Mon 2026-09-14 close -> Fri 2026-09-18 close: the EVRG/AES shadow book (25.5% cash variant) against the official booked week. The specific question this entry exists to answer: **did blocking the utilities sleeve the day before an ~88%-priced hike protect the book, or did it cost the book the relief trade that wiki/utilities.md itself calls "the fastest money on the board" if the hike reads as finishing something?** Both directions are live and the entry is written before the answer is known.
+
+**Counterfactual (computed 2026-09-21, date-pinned Mon 2026-09-14 close -> Fri 2026-09-18 close, yfinance adjusted daily bars):**
+
+| Ticker | Shadow Wt | Official Wt | Mon 9/14 Close | Fri 9/18 Close | Return |
+|---|---|---|---|---|---|
+| ALL | 18.3% | 18.3% | $258.48 | $249.83 | -3.35% |
+| EVRG | 17.8% | -- (blocked) | $80.86 | $79.78 | -1.34% |
+| PSX | 16.7% | 16.7% | $257.06 | $273.13 | +6.25% |
+| HIG | 14.8% | 14.8% | $137.59 | $131.89 | -4.14% |
+| AES | 6.9% | -- (blocked) | $14.80 | $14.83 | +0.20% |
+| DE | -- | 10.0% (promoted) | $681.46 | $683.99 | +0.37% |
+| **Shadow book (25.5% cash)** | | | | | **-0.41%** |
+| **Official book, same Mon-close basis (40.2% cash)** | | | | | **-0.14%** |
+| **Delta (shadow - official)** | | | | | **-0.26%** |
+| Official book as TRACKED (Fri 9/11 close entry basis, see exit-shadow.md) | | | | | +0.23% |
+| SPY (Mon-close basis) | | | | | +0.36% |
+
+**Answer to the question this entry was written to settle: the block protected the book, modestly.** The hike landed (+25bp, 12-0, 3.75-4.00%) and the 10Y printed its first close above 5.00% the same day; it did NOT read as "finishing something" -- XLU went on to a 52-week closing low ($41.10, -3.04% W/W, wiki/utilities.md 2026-09-19). The blocked sleeve (EVRG -1.34%, AES +0.20% -- AES is pinned near $14.80 and barely moves) would have contributed -0.22pp; DE, the promotion, contributed +0.04pp. The relief-trade scenario did not arrive. Second trigger-block on record where the block was right (AES 2026-08-31 was the first). Note: both books lost to SPY on this basis -- the P&C pair (ALL -3.35%, HIG -4.14%) did the damage in BOTH, so this counterfactual isolates the utilities decision only.
 
 ---
 
