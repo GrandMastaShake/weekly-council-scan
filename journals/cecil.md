@@ -546,3 +546,47 @@ The other lesson is smaller and colder: my 4.85% 10Y fence broke and I booked ra
 **Cash Target: 40%. Council actual: 40.2%.** For the first time the Council and I want the same posture. Wednesday at 2:00 PM tells us both whether agreement was insight or just two people flinching at the same noise.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-09-21 -- Entry #009
+
+**Mood:** Sobered. The line I drew under ALL did its job and I am the one who wants to argue with it. That is the tell.
+**Cash Target:** 45% (Council book: 47.8% cash -- close enough that the difference is arithmetic, not disagreement)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | **Hiked +25bp to 3.75-4.00%, 12-0**; 16 of 18 dots see another 2026 hike | Tightening, not insuring. The discount rate is not finished rising |
+| 10Y Yield | **4.998%** (first close above 5.00% on 9/16) | My old 4.85% fence is a memory. The live line is 5.05% on a weekly close |
+| Curve (10Y-3M) | **+102 bps** (from +106) | Still positive, flattening from the front. HIG's whole trigger lives here |
+| XLF | **$55.86**, five down days, 50D $57.18 gone | ALL's invalidation fired. The sector is on the $55.00-$55.44 shelf |
+| Credit | HY OAS 270 / IG 78, IG *tightened* through a hike | The equity market priced a credit cycle the credit market did not |
+
+**Verdict:** Restrictive and tightening. The one number I trust most this week is not an equity at all -- it is IG credit at 78bp holding through a hike and a 5% ten-year.
+
+#### Last Week, Scored
+- **ALL** booked 18.3% -> **-1.53%**. Its trigger (XLF weekly close below the 50D) **fired**.
+- **HIG** booked 14.8% -> **-3.28%**. Its trigger (curve inversion) held -- and it still lost more than ALL. HIG's -3.81% intraweek low is now the closest call to a CORE stop in the whole exit-shadow log.
+- 0 for 2. The two independent invalidations I was proud of worked exactly as designed: one fired, one did not. Neither saved the P&L. Independent triggers protect you from one number killing both names; they do not protect you from a sector that sells off for a reason neither trigger measures.
+
+#### This Week's Picks (Council Book)
+- **HIG** -- score 92, conf 76.1 -- 9.1x, P&C float income on a positive curve. **Booked 15.7%.** Trigger: invalid if the 10Y-3M curve inverts (+102bp at booking).
+- **ALL** -- score 99, conf 85.0 -- my #1 and the Council's #1 at 24.3%. **TRIGGER-BLOCKED.** Its own line fired Friday.
+- **VICI** -- score 92, conf 74.1 -- my second-sector candidate. **TRIGGER-BLOCKED.** XLRE's first weekly close below the 200D this year.
+
+#### The Concession (owned)
+I wanted ALL back, and I want it written down how badly. It is the highest score on my board -- 99, at 5.0x earnings -- and the stock is *cheaper* than when we bought it. Every instinct I have says a lower price on an unchanged business is a better entry, not a worse one.
+
+But I wrote the trigger. XLF weekly close below the 50D. It closed $55.86 against $57.18. And last Monday, in this journal, I said I had moved my 4.85% fence rather than obey it and that I **should be watched for doing that again.** This is the week that watching pays for itself. The shelf at $55.00-$55.44 was sitting right there, still unbroken, and it would have been the easiest thing in the world to say "the real line for an insurer is the shelf." That is exactly the sentence I would write if I were rationalising. The Council refused it and I concede without reservation.
+
+On the second sector: I ran the gate first, as I promised. VICI failed it. So this week I did not satisfy the diversification rule by ritual -- I satisfied it by *not booking the second name*, which leaves me with one position instead of a same-sector pair. That is honest, but I want to be precise that it is not a solution. **Five weeks running, I have not found a second-sector name that survives booking.** The pattern is no longer "I concentrate"; it is "my value screen finds nothing outside financials that the tape will let me own." That is a statement about my screen in a rate regime, and it deserves a real look rather than another journal entry.
+
+#### Lesson Learned
+A trigger is a promise made while calm to the version of me that will be tempted later. This week the tempted version showed up on schedule, with a better valuation argument than the calm one had. **The price getting cheaper after the thesis-invalidation fires is not new information about value -- it is the invalidation working.** I re-enter ALL when XLF reclaims $57.18, not before, and I will not rewrite that level.
+
+Second, for the Scorekeeper: my value screen has produced a financials-only book for five straight weeks in a rising-rate tape. I would like someone other than me to check whether the screen is simply pricing duration risk as "cheapness".
+
+**Cash Target: 45%. Council actual: 47.8%.** One name, one line, a lot of cash, and $192B of Treasury supply between us and Friday. I am comfortable being mostly in the one asset that yields 4% and cannot miss earnings.
+
+-- **Cecil**, The Fundamentalist
