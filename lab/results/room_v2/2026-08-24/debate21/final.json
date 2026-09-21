@@ -1,0 +1,42 @@
+{
+ "week": "2026-08-24",
+ "book": [
+  {
+   "ticker": "REGN",
+   "weight": 0.3
+  },
+  {
+   "ticker": "D",
+   "weight": 0.2
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [
+  {
+   "out": "UNH",
+   "in": "D",
+   "objections": [
+    [
+     "Ophelia",
+     "UNH is labelled Healthcare but does not follow my Healthcare call: it fell 2.9% in the week XLV broke out to an all-time high and is down 7.3% over four weeks while REGN and LLY rose, and as an insurer it gets none of the FDA-approval and Phase 3 news the call rests on, so its 20% adds to the book's healthcare weight without the sector's momentum."
+    ],
+    [
+     "Cecil",
+     "At 20.9x trailing on EPS that fell 26.1%, UNH costs more than REGN, COP or PGR for earnings that are still shrinking, so there is no margin of safety and nothing in the value table supports the draft's purely technical case."
+    ]
+   ]
+  }
+ ],
+ "dissents": []
+}

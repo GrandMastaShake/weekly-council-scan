@@ -1,0 +1,59 @@
+{
+ "week": "2026-07-20",
+ "book": [
+  {
+   "ticker": "UNH",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "It is the only name two members picked, for different reasons: for Ophelia it is healthcare's clearest case of rising estimates (Q2 EPS beat by 31%, guide raised twice), for Cecil it is a middling 22.9x multiple on recovering earnings, and it has already reported and moves only 2.74% a week."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.25,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's cleanest cheap, sound business (15.7x trailing, EPS +13.4%, the lowest weekly volatility on the sheet at 2.12%, already reported), and because it sits at its 52-week high after results it is also the bank expression of Ophelia's Financials call, which a 4.52% 10Y and a steeper curve help."
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It passes Ophelia's test most clearly as the leader of her strongest sector (new 52-week high, +10.3% on the week, +31% over four weeks) and is the book's hedge against escalation, but it is held to 15% because a ceasefire or de-escalation headline could unwind that run fast: that headline is her own stated exit and the reason Cecil refused the war premium."
+  },
+  {
+   "ticker": "SPG",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's cheap, sound REIT (15.4x FFO and a 3.98% yield per the synthesis, with the sheet's 43.8x being the GAAP multiple that depreciation inflates), Ophelia cites it among the Real Estate names at highs, and it is weighted equal to VLO as the rates counterweight she built Real Estate to be."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.1,
+   "backers": [
+    "Marky"
+   ],
+   "why": "All five of Marky's names tie at 80, and CAT, his #2, is the cleanest pullback inside a rising channel: 1.9 widths below a line rising 131% a year, the only one of his five still up over 12 weeks (+6%, 88% of its high), no report until Aug 4, and kept at 10% because the weekly MACD turn he wants has not come."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "WELL",
+  "TSM"
+ ],
+ "rationale": "UNH is the only name two members chose, so it anchors the book at the 30% cap, and the next-largest weights go to Cecil's value picks that also sit inside Ophelia's sector calls: JPM in Financials and SPG in Real Estate, which she names among the names at highs. The one real disagreement is Energy, which Ophelia calls her strongest chart and Cecil skipped as a war premium; I keep VLO because it passes her test cleanly and hedges the escalation that would hurt the rest of the book, but I cap it at 15% and match it with SPG, the counterweight she designed for the case where the oil premium fades. Marky's slot goes to CAT rather than his #1 RKLB, whose 17.45% weekly volatility would make even a 5% position one of the book's largest risks, and it stays at 10% because none of his five has the MACD turn yet; the alternates are WELL (Ophelia's Real Estate leader) and TSM (Marky's pullback that has already reported). No name reports this week and 5% stays in cash; the sheet puts UNH at 99.6% of its 52-week high, not the 8% below that Ophelia wrote, but neither case rests on that, and I have no memory of how this week went and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

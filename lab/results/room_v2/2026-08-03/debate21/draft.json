@@ -1,0 +1,70 @@
+{
+ "week": "2026-08-03",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Two members chose it for different reasons: for Ophelia it is the most direct way to hold her strongest call, bank margins helped by the steeper curve and Basel III, and for Cecil it is a best-in-class bank at 16.2x trailing with EPS up 13.4%; it is also the steadiest name on the sheet (1.88% weekly) at 99.6% of its 52-week high, so it gets the 30% cap."
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The other name both members chose for different reasons, Ophelia because it is healthcare's strongest mover and does not track the market (+16.3% last week, 95.2% of its high) and Cecil because it is a net-cash biotech at 16.2x trailing; it sits below JPM because its 5.87% weekly volatility is the highest in the book."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "By Marky's own test this is his cleanest pullback: 1.3 channel widths below the line of his steepest rising channel (204% a year), still at 96.8% of its 52-week high, with the lowest volatility of his five (2.79% weekly), and it falls inside Ophelia's healthcare call; it stays at his 20% minimum because the weekly MACD histogram has not turned up yet."
+  },
+  {
+   "ticker": "PEP",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's marked-down staple at 16.7x trailing after an 8.8% fall over 12 weeks; it moves little (2.27% weekly), cushions the book against Friday's jobs report, and its foreign earnings gain from the dollar below 100, which Ophelia's staples case also relies on."
+  },
+  {
+   "ticker": "SCHW",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's steadiest financials uptrend (+3.2% on the week, +8.5% over 4 weeks, +18.8% over 12, at its 52-week high), a direct bet on a steeper curve with the Fed on hold; it is held to 10% because it carries the same jobs-report and credit risk as JPM."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  {
+   "ticker": "MA",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "PGR",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "EQIX",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "JPM and REGN are the strongest signal on the page because Ophelia and Cecil each picked them separately, one for her sector calls and one for cheapness, so together they hold 55% of the book; JPM takes the 30% cap because it is the steadiest name and the most direct way to hold Financials, Ophelia's strongest call. Marky's required 20% goes to UNH rather than his higher-scored names because by his own test it is the cleanest dip toward the bottom of a rising channel: MOD is 2.3 widths down, close to his 2.5-width trend break; RKLB swings 14% a week and reports the Monday after; TSM faces AMD's report on Tuesday; and EQIX, his alternate, sits at the ideal 1.5 widths but is a REIT with the 10-year yield one basis point off its 52-week high, which Cecil avoided outright and which Ophelia's read of last week backs up (XLRE lagged SPY by 3%). Where the two staples picks split, PEP beats KO because it passes Cecil's value test and fits Ophelia's weak-dollar staples case without doubling up on beverages, and it sits above SCHW because both members flagged Friday's jobs report and JPM already carries the bank-margin risk at the cap. The book is fully invested because no member argued for cash and no name reports this week; I have no memory of how this week went, used none, and relied only on logs.md and sheet.csv.",
+ "files_read": [
+  "debate21/logs.md",
+  "debate21/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

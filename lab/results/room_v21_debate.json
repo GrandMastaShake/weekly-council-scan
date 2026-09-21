@@ -1,0 +1,1272 @@
+{
+ "summary": {
+  "fair": {
+   "weeks": 9,
+   "mean_alpha": -0.005288026353944239,
+   "alpha_t": -0.7467424039362819,
+   "mean_vs_random": -0.0028782427296158482,
+   "vs_random_t": -0.456475429359172,
+   "mean_pctile": 0.4516666666666667,
+   "mean_invested": 0.9777777777777779,
+   "cumulative": -0.023772011852862485,
+   "max_drawdown": -0.04861873725348065
+  },
+  "draft": {
+   "weeks": 9,
+   "mean_alpha": -0.00656706752796422,
+   "alpha_t": -1.0750068082459912,
+   "mean_vs_random": -0.004271096639429741,
+   "vs_random_t": -0.6921487244497928,
+   "mean_pctile": 0.4444444444444444,
+   "mean_invested": 0.9500000000000001,
+   "cumulative": -0.034792512567387135,
+   "max_drawdown": -0.059631077470198135
+  },
+  "final": {
+   "weeks": 9,
+   "mean_alpha": -0.0052933674136772975,
+   "alpha_t": -0.7688096296490309,
+   "mean_vs_random": -0.003625405591757564,
+   "vs_random_t": -0.5274213890986391,
+   "mean_pctile": 0.47111111111111115,
+   "mean_invested": 0.9500000000000001,
+   "cumulative": -0.023828034048862023,
+   "max_drawdown": -0.05882538397603576
+  },
+  "shares": {
+   "v2_draft": {
+    "Ophelia": 0.6722222222222222,
+    "Cecil": 0.4555555555555555,
+    "Marky": 0.08888888888888889
+   },
+   "v2_final": {
+    "Ophelia": 0.6722222222222222,
+    "Cecil": 0.4666666666666667,
+    "Marky": 0.07777777777777778
+   },
+   "fair": {
+    "Ophelia": 0.5377777777777778,
+    "Cecil": 0.48777777777777775,
+    "Marky": 0.21888888888888888
+   },
+   "draft": {
+    "Ophelia": 0.5111111111111112,
+    "Cecil": 0.4722222222222222,
+    "Marky": 0.23333333333333334
+   },
+   "final": {
+    "Ophelia": 0.5111111111111112,
+    "Cecil": 0.4722222222222222,
+    "Marky": 0.23333333333333334
+   }
+  },
+  "weeks_all_at_floor": {
+   "v2_final": 2,
+   "fair": 4,
+   "draft": 9,
+   "final": 9
+  },
+  "final_vs_v2_final": {
+   "mean": 0.0061263181156974034,
+   "t": 1.8841281799533154,
+   "weeks_better": 7
+  },
+  "final_vs_council": {
+   "mean": -0.002503751740089744,
+   "t": -0.502663725639313,
+   "weeks_better": 3
+  },
+  "swaps": 3,
+  "swaps_blocked": 0,
+  "dissents": 16,
+  "weeks_with_breaks": {
+   "fair": 0,
+   "draft": 0
+  },
+  "registered": {
+   "v21_adopted": true,
+   "framing_alone_fixed_it": false
+  }
+ },
+ "weeks": [
+  {
+   "week": "2026-07-20",
+   "spy": -0.010882686821280796,
+   "fair": {
+    "book": [
+     [
+      "UNH",
+      0.3
+     ],
+     [
+      "JPM",
+      0.25
+     ],
+     [
+      "VLO",
+      0.15
+     ],
+     [
+      "SPG",
+      0.15
+     ],
+     [
+      "CAT",
+      0.1
+     ]
+    ],
+    "ret": 0.0008935417879815389,
+    "alpha": 0.011776228609262335,
+    "invested": 0.95,
+    "vs_random": 0.011656171253947795,
+    "pctile": 0.72
+   },
+   "draft": {
+    "book": [
+     [
+      "UNH",
+      0.3
+     ],
+     [
+      "JPM",
+      0.2
+     ],
+     [
+      "VLO",
+      0.15
+     ],
+     [
+      "CAT",
+      0.2
+     ],
+     [
+      "SPG",
+      0.1
+     ]
+    ],
+    "ret": -0.0010557298172822964,
+    "alpha": 0.0098269570039985,
+    "invested": 0.95,
+    "vs_random": 0.007540985618139088,
+    "pctile": 0.64
+   },
+   "final": {
+    "book": [
+     [
+      "UNH",
+      0.3
+     ],
+     [
+      "JPM",
+      0.2
+     ],
+     [
+      "VLO",
+      0.15
+     ],
+     [
+      "EQIX",
+      0.2
+     ],
+     [
+      "SPG",
+      0.1
+     ]
+    ],
+    "ret": 0.010493935903925873,
+    "alpha": 0.02137662272520667,
+    "invested": 0.95,
+    "vs_random": 0.02220254534159595,
+    "pctile": 0.88
+   },
+   "v2_final": 0.0019919813695209623,
+   "council": 0.0,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.55,
+     "Cecil": 0.7,
+     "Marky": 0
+    },
+    "v2_final": {
+     "Ophelia": 0.55,
+     "Cecil": 0.7,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.45,
+     "Cecil": 0.7,
+     "Marky": 0.1
+    },
+    "draft": {
+     "Ophelia": 0.45,
+     "Cecil": 0.6,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.45,
+     "Cecil": 0.6,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [
+    {
+     "out": "CAT",
+     "in": "EQIX",
+     "objections": [
+      [
+       "Ophelia",
+       "CAT sits in Industrials, the sector I rotated out of this week because the selling is concentrated in the heavy cap-weighted names the ETF holds, and at -7.6% on the week and -10.7% over four weeks CAT is one of those names being sold, so a 20% position runs directly against my call."
+      ],
+      [
+       "Cecil",
+       "At 43.2x trailing earnings that shrank 0.9%, a cyclical machinery maker is priced like a growth stock with no growth, the richest non-REIT multiple on the sheet, so even after the pullback a 20% position has no margin of safety if that multiple compresses."
+      ]
+     ]
+    }
+   ],
+   "dissents": 1
+  },
+  {
+   "week": "2026-07-27",
+   "spy": 0.0028460761470363583,
+   "fair": {
+    "book": [
+     [
+      "LMT",
+      0.3
+     ],
+     [
+      "JNJ",
+      0.2
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "COP",
+      0.15
+     ],
+     [
+      "CAT",
+      0.15
+     ]
+    ],
+    "ret": -0.01360643450926865,
+    "alpha": -0.016452510656305007,
+    "invested": 1.0,
+    "vs_random": -0.01064018154238159,
+    "pctile": 0.28
+   },
+   "draft": {
+    "book": [
+     [
+      "LMT",
+      0.3
+     ],
+     [
+      "CAT",
+      0.2
+     ],
+     [
+      "JNJ",
+      0.2
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "COP",
+      0.1
+     ]
+    ],
+    "ret": -0.019092195628632094,
+    "alpha": -0.021938271775668452,
+    "invested": 1.0,
+    "vs_random": -0.015117248434706493,
+    "pctile": 0.18
+   },
+   "final": {
+    "book": [
+     [
+      "LMT",
+      0.3
+     ],
+     [
+      "CAT",
+      0.2
+     ],
+     [
+      "JNJ",
+      0.2
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "COP",
+      0.1
+     ]
+    ],
+    "ret": -0.019092195628632094,
+    "alpha": -0.021938271775668452,
+    "invested": 1.0,
+    "vs_random": -0.016316480063669068,
+    "pctile": 0.185
+   },
+   "v2_final": -0.007467425941992484,
+   "council": -0.0013818016741104287,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.8,
+     "Cecil": 0.5,
+     "Marky": 0
+    },
+    "v2_final": {
+     "Ophelia": 0.8,
+     "Cecil": 0.5,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.65,
+     "Cecil": 0.5,
+     "Marky": 0.15
+    },
+    "draft": {
+     "Ophelia": 0.6,
+     "Cecil": 0.5,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.6,
+     "Cecil": 0.5,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 2
+  },
+  {
+   "week": "2026-08-03",
+   "spy": 0.03178371702279925,
+   "fair": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "REGN",
+      0.25
+     ],
+     [
+      "KO",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "UNH",
+      0.1
+     ]
+    ],
+    "ret": 0.005442566051169412,
+    "alpha": -0.02634115097162984,
+    "invested": 0.95,
+    "vs_random": -0.026365053389547068,
+    "pctile": 0.17
+   },
+   "draft": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "REGN",
+      0.25
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "PEP",
+      0.15
+     ],
+     [
+      "SCHW",
+      0.1
+     ]
+    ],
+    "ret": 0.0025062268842670097,
+    "alpha": -0.02927749013853224,
+    "invested": 1.0,
+    "vs_random": -0.026734592494090176,
+    "pctile": 0.145
+   },
+   "final": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "REGN",
+      0.25
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "PEP",
+      0.15
+     ],
+     [
+      "SCHW",
+      0.1
+     ]
+    ],
+    "ret": 0.0025062268842670097,
+    "alpha": -0.02927749013853224,
+    "invested": 1.0,
+    "vs_random": -0.032316185607062065,
+    "pctile": 0.125
+   },
+   "v2_final": 0.005784698384259678,
+   "council": 0.003427972321743678,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.9,
+     "Cecil": 0.55,
+     "Marky": 0.1
+    },
+    "v2_final": {
+     "Ophelia": 0.9,
+     "Cecil": 0.65,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.7,
+     "Cecil": 0.7,
+     "Marky": 0.1
+    },
+    "draft": {
+     "Ophelia": 0.65,
+     "Cecil": 0.7,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.65,
+     "Cecil": 0.7,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 3
+  },
+  {
+   "week": "2026-08-10",
+   "spy": 0.0048408903064867115,
+   "fair": {
+    "book": [
+     [
+      "GOOGL",
+      0.25
+     ],
+     [
+      "CAT",
+      0.2
+     ],
+     [
+      "NVDA",
+      0.2
+     ],
+     [
+      "UNH",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ]
+    ],
+    "ret": -0.008057266824185665,
+    "alpha": -0.012898157130672376,
+    "invested": 0.95,
+    "vs_random": -0.0218189614844066,
+    "pctile": 0.085
+   },
+   "draft": {
+    "book": [
+     [
+      "NVDA",
+      0.25
+     ],
+     [
+      "CAT",
+      0.25
+     ],
+     [
+      "GOOGL",
+      0.2
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "FCX",
+      0.1
+     ]
+    ],
+    "ret": -0.008051669373922805,
+    "alpha": -0.012892559680409517,
+    "invested": 0.95,
+    "vs_random": -0.02258666032139513,
+    "pctile": 0.12
+   },
+   "final": {
+    "book": [
+     [
+      "NVDA",
+      0.25
+     ],
+     [
+      "CAT",
+      0.25
+     ],
+     [
+      "GOOGL",
+      0.2
+     ],
+     [
+      "JPM",
+      0.15
+     ],
+     [
+      "FCX",
+      0.1
+     ]
+    ],
+    "ret": -0.003653973235713749,
+    "alpha": -0.00849486354220046,
+    "invested": 0.95,
+    "vs_random": -0.01801655616769612,
+    "pctile": 0.17
+   },
+   "v2_final": -0.011699135640859854,
+   "council": 0.0,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.75,
+     "Cecil": 0.2,
+     "Marky": 0
+    },
+    "v2_final": {
+     "Ophelia": 0.75,
+     "Cecil": 0.2,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.2,
+     "Cecil": 0.4,
+     "Marky": 0.35
+    },
+    "draft": {
+     "Ophelia": 0.35,
+     "Cecil": 0.35,
+     "Marky": 0.25
+    },
+    "final": {
+     "Ophelia": 0.35,
+     "Cecil": 0.35,
+     "Marky": 0.25
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [
+    {
+     "out": "PGR",
+     "in": "JPM",
+     "objections": [
+      [
+       "Ophelia",
+       "PGR is in Financials, the one sector I weighed and turned down this week, and the draft gives it the job of cushioning a hot CPI, which I judged Financials can't do and gave to Healthcare instead (XLF lagged SPY by 2.35% in last week's rally against XLV's 1.59%), so it works against my calls rather than expressing one and leaves my hedge sector with no name in the book."
+      ],
+      [
+       "Marky",
+       "It fails my qualification test because its 40-week average is not rising, and with its weekly MACD histogram falling the chart gives no rising-trend case for holding it this week."
+      ]
+     ]
+    }
+   ],
+   "dissents": 1
+  },
+  {
+   "week": "2026-08-17",
+   "spy": -0.013476288590551944,
+   "fair": {
+    "book": [
+     [
+      "VLO",
+      0.22
+     ],
+     [
+      "NVDA",
+      0.22
+     ],
+     [
+      "PGR",
+      0.22
+     ],
+     [
+      "MOD",
+      0.17
+     ],
+     [
+      "NEM",
+      0.17
+     ]
+    ],
+    "ret": 0.01021435200850692,
+    "alpha": 0.023690640599058864,
+    "invested": 1.0,
+    "vs_random": 0.005074353174021864,
+    "pctile": 0.635
+   },
+   "draft": {
+    "book": [
+     [
+      "VLO",
+      0.22
+     ],
+     [
+      "PGR",
+      0.22
+     ],
+     [
+      "MOD",
+      0.2
+     ],
+     [
+      "NVDA",
+      0.18
+     ],
+     [
+      "GS",
+      0.18
+     ]
+    ],
+    "ret": -0.007238204985043839,
+    "alpha": 0.006238083605508105,
+    "invested": 1.0,
+    "vs_random": -0.013307529554705374,
+    "pctile": 0.35
+   },
+   "final": {
+    "book": [
+     [
+      "VLO",
+      0.22
+     ],
+     [
+      "PGR",
+      0.22
+     ],
+     [
+      "MOD",
+      0.2
+     ],
+     [
+      "NVDA",
+      0.18
+     ],
+     [
+      "GS",
+      0.18
+     ]
+    ],
+    "ret": -0.007238204985043839,
+    "alpha": 0.006238083605508105,
+    "invested": 1.0,
+    "vs_random": -0.012865067506166838,
+    "pctile": 0.345
+   },
+   "v2_final": -0.02965007278645653,
+   "council": 0.001273210306390161,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.55,
+     "Cecil": 0.2,
+     "Marky": 0.2
+    },
+    "v2_final": {
+     "Ophelia": 0.55,
+     "Cecil": 0.2,
+     "Marky": 0.2
+    },
+    "fair": {
+     "Ophelia": 0.44,
+     "Cecil": 0.39,
+     "Marky": 0.17
+    },
+    "draft": {
+     "Ophelia": 0.4,
+     "Cecil": 0.4,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.4,
+     "Cecil": 0.4,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 2
+  },
+  {
+   "week": "2026-08-24",
+   "spy": 0.005975555154863921,
+   "fair": {
+    "book": [
+     [
+      "REGN",
+      0.3
+     ],
+     [
+      "LLY",
+      0.2
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "COP",
+      0.15
+     ],
+     [
+      "UNH",
+      0.15
+     ]
+    ],
+    "ret": -0.033413010022760564,
+    "alpha": -0.039388565177624485,
+    "invested": 1.0,
+    "vs_random": -0.02102573060078633,
+    "pctile": 0.06
+   },
+   "draft": {
+    "book": [
+     [
+      "REGN",
+      0.3
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "LLY",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "COP",
+      0.1
+     ]
+    ],
+    "ret": -0.027907410013371062,
+    "alpha": -0.03388296516823498,
+    "invested": 0.9,
+    "vs_random": -0.016583187716027466,
+    "pctile": 0.11
+   },
+   "final": {
+    "book": [
+     [
+      "REGN",
+      0.3
+     ],
+     [
+      "D",
+      0.2
+     ],
+     [
+      "LLY",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "COP",
+      0.1
+     ]
+    ],
+    "ret": -0.03239147084420599,
+    "alpha": -0.03836702599906991,
+    "invested": 0.9,
+    "vs_random": -0.02020590358867965,
+    "pctile": 0.07
+   },
+   "v2_final": -0.03911586985422026,
+   "council": -0.003989496350133848,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.7,
+     "Cecil": 0.6,
+     "Marky": 0
+    },
+    "v2_final": {
+     "Ophelia": 0.7,
+     "Cecil": 0.6,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.65,
+     "Cecil": 0.5,
+     "Marky": 0.15
+    },
+    "draft": {
+     "Ophelia": 0.55,
+     "Cecil": 0.45,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.55,
+     "Cecil": 0.45,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [
+    {
+     "out": "UNH",
+     "in": "D",
+     "objections": [
+      [
+       "Ophelia",
+       "UNH is labelled Healthcare but does not follow my Healthcare call: it fell 2.9% in the week XLV broke out to an all-time high and is down 7.3% over four weeks while REGN and LLY rose, and as an insurer it gets none of the FDA-approval and Phase 3 news the call rests on, so its 20% adds to the book's healthcare weight without the sector's momentum."
+      ],
+      [
+       "Cecil",
+       "At 20.9x trailing on EPS that fell 26.1%, UNH costs more than REGN, COP or PGR for earnings that are still shrinking, so there is no margin of safety and nothing in the value table supports the draft's purely technical case."
+      ]
+     ]
+    }
+   ],
+   "dissents": 0
+  },
+  {
+   "week": "2026-08-31",
+   "spy": 0.0037272254120594983,
+   "fair": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "PM",
+      0.2
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "V",
+      0.15
+     ]
+    ],
+    "ret": -0.0064469246395331805,
+    "alpha": -0.010174150051592678,
+    "invested": 1.0,
+    "vs_random": -0.004634598841819854,
+    "pctile": 0.405
+   },
+   "draft": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "META",
+      0.15
+     ],
+     [
+      "PM",
+      0.1
+     ]
+    ],
+    "ret": 0.01051154878064333,
+    "alpha": 0.006784323368583832,
+    "invested": 0.9,
+    "vs_random": 0.011520182939326174,
+    "pctile": 0.795
+   },
+   "final": {
+    "book": [
+     [
+      "JPM",
+      0.3
+     ],
+     [
+      "UNH",
+      0.2
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "META",
+      0.15
+     ],
+     [
+      "PM",
+      0.1
+     ]
+    ],
+    "ret": 0.01051154878064333,
+    "alpha": 0.006784323368583832,
+    "invested": 0.9,
+    "vs_random": 0.012645287733604325,
+    "pctile": 0.85
+   },
+   "v2_final": -0.0016423352039012134,
+   "council": 0.0,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.65,
+     "Cecil": 0.4,
+     "Marky": 0.15
+    },
+    "v2_final": {
+     "Ophelia": 0.65,
+     "Cecil": 0.4,
+     "Marky": 0.15
+    },
+    "fair": {
+     "Ophelia": 0.65,
+     "Cecil": 0.45,
+     "Marky": 0.2
+    },
+    "draft": {
+     "Ophelia": 0.55,
+     "Cecil": 0.45,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.55,
+     "Cecil": 0.45,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 3
+  },
+  {
+   "week": "2026-09-08",
+   "spy": -0.006215319343814807,
+   "fair": {
+    "book": [
+     [
+      "JNJ",
+      0.25
+     ],
+     [
+      "CAT",
+      0.2
+     ],
+     [
+      "CVX",
+      0.2
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "JPM",
+      0.15
+     ]
+    ],
+    "ret": -0.0031841288709892387,
+    "alpha": 0.003031190472825568,
+    "invested": 1.0,
+    "vs_random": 0.012212032801041762,
+    "pctile": 0.78
+   },
+   "draft": {
+    "book": [
+     [
+      "JNJ",
+      0.25
+     ],
+     [
+      "CVX",
+      0.15
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "LMT",
+      0.15
+     ],
+     [
+      "CAT",
+      0.2
+     ]
+    ],
+    "ret": -0.005685842235355637,
+    "alpha": 0.00052947710845917,
+    "invested": 0.95,
+    "vs_random": 0.010272366748647278,
+    "pctile": 0.75
+   },
+   "final": {
+    "book": [
+     [
+      "JNJ",
+      0.25
+     ],
+     [
+      "CVX",
+      0.15
+     ],
+     [
+      "PGR",
+      0.2
+     ],
+     [
+      "LMT",
+      0.15
+     ],
+     [
+      "CAT",
+      0.2
+     ]
+    ],
+    "ret": -0.005685842235355637,
+    "alpha": 0.00052947710845917,
+    "invested": 0.95,
+    "vs_random": 0.0077963767957481165,
+    "pctile": 0.745
+   },
+   "v2_final": -0.006968834034940603,
+   "council": -0.0014219802983704262,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.5,
+     "Cecil": 0.4,
+     "Marky": 0
+    },
+    "v2_final": {
+     "Ophelia": 0.5,
+     "Cecil": 0.4,
+     "Marky": 0
+    },
+    "fair": {
+     "Ophelia": 0.45,
+     "Cecil": 0.35,
+     "Marky": 0.2
+    },
+    "draft": {
+     "Ophelia": 0.4,
+     "Cecil": 0.35,
+     "Marky": 0.2
+    },
+    "final": {
+     "Ophelia": 0.4,
+     "Cecil": 0.35,
+     "Marky": 0.2
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 3
+  },
+  {
+   "week": "2026-09-14",
+   "spy": 0.006036178924970548,
+   "fair": {
+    "book": [
+     [
+      "XOM",
+      0.25
+     ],
+     [
+      "AMD",
+      0.2
+     ],
+     [
+      "LLY",
+      0.2
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "CAT",
+      0.15
+     ]
+    ],
+    "ret": 0.02520041604615002,
+    "alpha": 0.019164237121179473,
+    "invested": 0.95,
+    "vs_random": 0.029637784063387386,
+    "pctile": 0.93
+   },
+   "draft": {
+    "book": [
+     [
+      "XOM",
+      0.3
+     ],
+     [
+      "AMD",
+      0.2
+     ],
+     [
+      "LLY",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "CAT",
+      0.1
+     ]
+    ],
+    "ret": 0.02154501684958815,
+    "alpha": 0.015508837924617602,
+    "invested": 0.9,
+    "vs_random": 0.026555813459944427,
+    "pctile": 0.91
+   },
+   "final": {
+    "book": [
+     [
+      "XOM",
+      0.3
+     ],
+     [
+      "AMD",
+      0.2
+     ],
+     [
+      "LLY",
+      0.15
+     ],
+     [
+      "PGR",
+      0.15
+     ],
+     [
+      "CAT",
+      0.1
+     ]
+    ],
+    "ret": 0.02154501684958815,
+    "alpha": 0.015508837924617602,
+    "invested": 0.9,
+    "vs_random": 0.024447332736507274,
+    "pctile": 0.87
+   },
+   "v2_final": 0.010625172156786733,
+   "council": 0.001620902844761618,
+   "shares": {
+    "v2_draft": {
+     "Ophelia": 0.65,
+     "Cecil": 0.55,
+     "Marky": 0.35
+    },
+    "v2_final": {
+     "Ophelia": 0.65,
+     "Cecil": 0.55,
+     "Marky": 0.35
+    },
+    "fair": {
+     "Ophelia": 0.65,
+     "Cecil": 0.4,
+     "Marky": 0.55
+    },
+    "draft": {
+     "Ophelia": 0.65,
+     "Cecil": 0.45,
+     "Marky": 0.45
+    },
+    "final": {
+     "Ophelia": 0.65,
+     "Cecil": 0.45,
+     "Marky": 0.45
+    }
+   },
+   "breaks": {
+    "fair": [],
+    "draft": []
+   },
+   "swaps": [],
+   "dissents": 1
+  }
+ ]
+}

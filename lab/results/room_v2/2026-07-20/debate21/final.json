@@ -1,0 +1,48 @@
+{
+ "week": "2026-07-20",
+ "book": [
+  {
+   "ticker": "UNH",
+   "weight": 0.3
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.2
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.15
+  },
+  {
+   "ticker": "EQIX",
+   "weight": 0.2
+  },
+  {
+   "ticker": "SPG",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [
+  {
+   "out": "CAT",
+   "in": "EQIX",
+   "objections": [
+    [
+     "Ophelia",
+     "CAT sits in Industrials, the sector I rotated out of this week because the selling is concentrated in the heavy cap-weighted names the ETF holds, and at -7.6% on the week and -10.7% over four weeks CAT is one of those names being sold, so a 20% position runs directly against my call."
+    ],
+    [
+     "Cecil",
+     "At 43.2x trailing earnings that shrank 0.9%, a cyclical machinery maker is priced like a growth stock with no growth, the richest non-REIT multiple on the sheet, so even after the pullback a 20% position has no margin of safety if that multiple compresses."
+    ]
+   ]
+  }
+ ],
+ "dissents": [
+  {
+   "ticker": "VLO",
+   "member": "Cecil",
+   "reason": "A refiner at 22.1x trailing earnings that just jumped 159.9% on war-widened fuel margins, at a 52-week high after a 31.91% run over 12 weeks and with the sheet's highest weekly volatility (5.04%), is priced on peak-cycle profits with the war premium already in the price, so there is no margin of safety if a ceasefire headline narrows those margins."
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-27",
+ "votes": [
+  {
+   "ticker": "LMT",
+   "vote": "approve",
+   "reason": "LMT is the defense leg of my Industrials call and my thesis names it (+14.5% on a blowout quarter), with a direct bid from the Iran escalation, and a record backlog backs the move, so it does not depend only on the war premium."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "CAT is a core XLI capital-goods name that fits my Industrials cycle call, and although it is more exposed than LMT to two risks I named for the call (Monday's core capital goods orders and AI-infrastructure names following semis lower), neither has happened yet, so I note them without objecting."
+  },
+  {
+   "ticker": "JNJ",
+   "vote": "approve",
+   "reason": "My Healthcare thesis names JNJ as a cash-flow pharma leader (+4.1% last week), and because it does not report until October it avoids the risk I flagged of pharma earnings disappointing this week."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "PGR fits my Financials thesis that the value sector gains from the 4.70% 10-year, because its premiums get invested at higher yields, and as an insurer it avoids the risk I named of a hawkish-hold curve flattening, which hits banks."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "COP is an oil producer that expresses Energy, my top call, and reports Aug 6 so it avoids the XOM/CVX reports on Friday, while the 10% hedge sizing matches my own RSI-86 and ceasefire warning and Brent at $96.78 is still above my $90 exit."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

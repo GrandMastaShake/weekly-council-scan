@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-10",
+ "votes": [
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "It qualifies and sits 0.6 widths above a 26-week channel line rising 47% a year, with the weekly MACD histogram rising and the line above zero, so although it is not a pullback, its trend and momentum both point up and my chart reading gives no reason against it."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "It qualifies as a real pullback, 1.6 widths below the steepest channel in the book (82% a year) and 0.9 widths short of the 2.5-width break with the MACD line above zero, but the draft's word 'clean' goes too far because the weekly histogram is still falling, so the turn is not yet confirmed even though the channel is intact."
+  },
+  {
+   "ticker": "GOOGL",
+   "vote": "approve",
+   "reason": "This is the one draft name with my full setup: it qualifies and sits 0.6 widths below a channel line rising 50% a year, with the weekly MACD histogram turning up and the line above zero."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "It fails my qualification test because its 40-week average is not rising, and with its weekly MACD histogram falling the chart gives no rising-trend case for holding it this week."
+  },
+  {
+   "ticker": "FCX",
+   "vote": "approve",
+   "reason": "It qualifies and sits 1.1 widths above a channel line rising 12% a year, with the weekly MACD histogram rising and the line above zero, so it is above the line rather than pulled back but its trend and momentum both point up."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

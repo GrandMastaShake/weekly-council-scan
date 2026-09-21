@@ -1,0 +1,33 @@
+{
+ "week": "2026-09-14",
+ "book": [
+  {
+   "ticker": "XOM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.2
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "It fails my rule that the 40-week average must be rising, and its weekly MACD histogram is also falling, so the 0.4-width pullback has no rising trend under it and no MACD turn to buy on."
+  }
+ ]
+}

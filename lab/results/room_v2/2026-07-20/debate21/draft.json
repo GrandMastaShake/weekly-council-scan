@@ -1,0 +1,69 @@
+{
+ "week": "2026-07-20",
+ "book": [
+  {
+   "ticker": "UNH",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Two members picked it for different reasons: Ophelia for healthcare (a 31% EPS beat and a second guidance raise in a defensive sector) and Cecil for value (22.9x trailing on low earnings that are recovering); it has 2.74% weekly volatility and no report until October, and the sheet puts it at 99.6% of its 52-week high, not the ~8% below that Ophelia cited, so it is breaking out on rising estimates rather than catching up."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Passes Cecil's value test cleanly (15.7x trailing, EPS up 13.4%, the lowest weekly volatility on the sheet at 2.12%, already reported) and sits in the Financials call Ophelia also made, so one low-risk name holds a sector both members like."
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The best expression of Energy, Ophelia's strongest call: refiners lead the sector, and VLO closed at a 52-week high (+10.3% on the week, +31% over four weeks) with fuel margins widening while Hormuz is disrupted, so it gains if the war escalates, which would hurt the rest of the book."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's cleanest pullback: 1.9 channel widths below the line of a 26-week channel rising 131% a year, MACD line above zero, and the only one of his five still up over 12 weeks (+6.0%, 88% of its high), so its rising trend is the most intact."
+  },
+  {
+   "ticker": "SPG",
+   "weight": 0.1,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Passes Cecil's value test (the cheapest REIT at 15.4x FFO, ~4% yield, strong balance sheet, no report until Aug 10) and also covers Ophelia's Real Estate call, since she names SPG among the REITs at new highs."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  {
+   "ticker": "CVX",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "PEP",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "EQIX",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "UNH gets the 30% maximum because it is the only name two members picked for different reasons, and JPM and SPG add a low-volatility core of Cecil's value picks that also sit in two of Ophelia's sectors, Financials and Real Estate. Where the members disagree, Energy stays in through VLO because it best expresses Ophelia's call, but at 15% rather than the two picks she gave it, because Cecil deliberately passed on the war premium and she says herself that a ceasefire headline would prove her wrong. Marky's pullbacks sit in the Industrials Ophelia rotated out of and the AI-reset trade Cecil skipped, so they get exactly his 20% minimum, all in CAT: none of his five has yet shown the weekly MACD turn his method looks for, and his #1, RKLB, matches CAT's 1.9-width pullback but has 17% weekly volatility and sits at 47% of its 52-week high, the weakest trend on his list. No holding reports this week, the five names are in five different sectors, and I have no memory of how this week went and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-27",
+ "book": [
+  {
+   "ticker": "LMT",
+   "weight": 0.3
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2
+  },
+  {
+   "ticker": "JNJ",
+   "weight": 0.2
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "LMT",
+   "member": "Marky",
+   "reason": "Its 26-week channel falls 43% a year and it sits 2.4 widths above that line with the weekly MACD line still below zero, so this is a rally near the top of a steep downtrend rather than a pullback in an uptrend, and my channel reading points to a fall back toward the line rather than further gains."
+  },
+  {
+   "ticker": "CAT",
+   "member": "Cecil",
+   "reason": "At 43.6x trailing earnings with EPS down 0.9%, CAT is by far the most expensive name in the book (the next is JNJ at 24.3x): a cyclical machinery maker priced like a growth stock while its earnings shrink, which leaves no margin of safety."
+  }
+ ]
+}

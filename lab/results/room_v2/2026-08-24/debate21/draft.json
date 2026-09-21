@@ -1,0 +1,69 @@
+{
+ "week": "2026-08-24",
+ "book": [
+  {
+   "ticker": "REGN",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The only name two members chose, for different reasons: for Ophelia it leads the healthcare breakout on FDA approvals (a record close after the Aug 19 Pasatru approval, +27% in four weeks), and for Cecil it is the cheapest way into healthcare at 17.7x against roughly 25-40x for its peers, with plenty of cash, so it takes the 30% cap."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's top-ranked setup sits 1.9 channel widths below a 26-week channel rising 166% a year, with the MACD line above zero and weekly volatility of 2.8%, well below AMD, DDOG or CAT; it is held at exactly his 20% floor because the MACD histogram has not turned up and only 0.6 widths remain before his trend-break line."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The most direct way to own Ophelia's strongest call: about 12% of XLV, at a 52-week closing high after a +6.4% week in a breakout on 2026's heaviest volume, and the least volatile of her three healthcare names at 3.8% a week."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest sound business at 11.6x trailing with EPS up 10.1%, a disciplined insurer whose float earns more as yields rise, which partly hedges a hot PCE or a hawkish Warsh pushing the 10-year toward 5%."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The clearest way to own Ophelia's energy call, the largest producer on her sheet at a fresh 52-week high on a supply cut that tanker counts confirm, and the book's hedge against SPY (XLE correlation -0.38); it is kept to 10% because the war premium could drain fast if talks restart, with XLE's RSI at 71.7."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  {
+   "ticker": "VRTX",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "JPM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "D",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "REGN is the strongest signal on the page, picked by Ophelia for momentum in the leading sector and by Cecil for its low valuation, so it takes the 30% cap and meets both of their 20% floors on its own. With LLY, and UNH from Marky's screen, the book is about 65% healthcare, which is Ophelia's strongest call and the Council's consensus opportunity; PGR and COP offset that, since Cecil and Ophelia each framed them as hedges if a hot PCE or a hawkish Warsh lifts the 10-year, and 10% stays in cash through NVDA, PCE and Jackson Hole. Marky's five all scored 80 with no MACD turn yet, so his top-ranked UNH fills his floor exactly, and NUE was left out because the Saturday tariff relief it relies on should be priced in at Monday's open, before the book buys. I have no memory of how this week went and used none.",
+ "files_read": [
+  "debate21/logs.md",
+  "debate21/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

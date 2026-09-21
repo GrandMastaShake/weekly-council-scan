@@ -1,0 +1,68 @@
+{
+ "week": "2026-08-10",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "This is the purest expression of Ophelia's lead Technology call: it is 12.6% of XLK and about 19% of SMH, it rides the rate relief after the -23K payrolls print plus AI demand, and its Aug 26 report falls after the week ends."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.25,
+   "backers": [
+    "Marky"
+   ],
+   "why": "On Marky's test it is a clean pullback, 1.6 channel widths below the line of a 26-week channel rising 82% a year, with the MACD line above zero, well short of the 2.5-width break and the best bounce of his five last week (+3.4%); its record Q2 on AI power demand is also the evidence behind Ophelia's Industrials call, the sector she expects to hold up if CPI runs hot."
+  },
+  {
+   "ticker": "GOOGL",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "On Cecil's test it is cheap and sound, at 17.8x trailing for a cash-rich business whose Cloud unit grew 82%, after a 10.7% fall over 12 weeks, and Alphabet's cloud and capex numbers are what Ophelia's AI tech call rests on."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is the cheapest name on the sheet at 11.4x with EPS up 10%, from the best underwriter in auto insurance, and Cecil calls it the pick that depends least on CPI, so it steadies the book if core CPI comes in hot."
+  },
+  {
+   "ticker": "FCX",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It is Ophelia's cleanest lever on Materials, the only sector beating SPY over both the week and the month, riding firm copper and the dollar below 100 that also supports Cecil's gold case, and it is kept small because a hot CPI would hit it through a stronger dollar."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  {
+   "ticker": "ETN",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "JPM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "AMD",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "No name was picked by two members, so the strongest signals are the two names where one member's pick is the evidence for another member's call: CAT (Marky's pullback, whose record quarter on AI power demand backs Ophelia's Industrials call) and GOOGL (Cecil's value pick, whose cloud and capex numbers back her tech call), and they share the top of the book with NVDA, the purest name for her lead call. The book leans into last week's rate-relief, AI and weak-dollar leaders, with PGR and 5% cash as a cushion because the mid-week CPI report decides the week (Ophelia says Wednesday, Cecil says Tuesday; it lands inside the week either way). Cecil wants NEM at 12.2x and Ophelia calls it the stretched name; I take the weak-dollar trade through FCX and leave NEM out on Cecil's own terms, because its low multiple rests on gold-price earnings and he admits it swings more than the rest of his book. Within Marky's list I prefer CAT to his #1, MOD, which at 2.0 widths sits closest to the 2.5-width break in the flattest channel; ETN is an alternate rather than a holding only because it would double the AI power exposure CAT already carries; nothing from memory about this week was used, and the leaked line Ophelia reported (July CPI described as already out) was ignored.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-31",
+ "votes": [
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM qualifies, sitting in a shallow pullback 0.3 widths below a 26-week channel that rises 66% a year, with a rising 40-week average and 2.2 widths left before the break line; its weekly MACD has not turned up yet, but none of this week's setups has, so that is no reason against it."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "UNH is my own pick and qualifies: it is 1.6 widths below a 26-week channel rising 150% a year, deep enough for full pullback credit and still 0.9 widths short of the 2.5-width break, with the MACD line above zero even though the histogram has not turned yet."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "PGR fails my trend filter because its 40-week average is not rising, and it is not a pullback either, sitting 0.1 widths above its channel line with the weekly MACD histogram still falling."
+  },
+  {
+   "ticker": "META",
+   "vote": "object",
+   "reason": "META's 26-week channel falls 12% a year, so it fails my first test, and a rising MACD histogram with the MACD line still below zero is a bounce inside a downtrend, not a pullback in a rising channel."
+  },
+  {
+   "ticker": "PM",
+   "vote": "approve",
+   "reason": "PM qualifies, sitting 0.4 widths below a 26-week channel that rises 46% a year, well clear of the break line with the MACD line above zero; a histogram that has not turned yet is no reason to object on its own."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

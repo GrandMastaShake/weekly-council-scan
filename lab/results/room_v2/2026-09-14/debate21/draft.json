@@ -1,0 +1,71 @@
+{
+ "week": "2026-09-14",
+ "book": [
+  {
+   "ticker": "XOM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Two members reach it by different routes: it is XLE's largest holding in the only sector with a confirmed breakout, still at an RSI of 51, and it is a value pick whose 18.7x trailing multiple understates earnings at $100 WTI on a fortress balance sheet, which also makes it the book's hedge if the dot plot reads hawkish."
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "It is Ophelia's high-beta way to play her tech and AI-demand call and Marky's #2 setup, 0.9 channel widths below a rising line with the weekly MACD histogram already turning up, and it is held below XOM because of its 6.3% weekly volatility and the BOJ carry-unwind risk Ophelia names."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "It is Ophelia's biggest lever on the healthcare bounce (RSI 2.5, about 12% of XLV, still 5% above its 200-day) and Marky's pullback 2.1 widths below a channel rising 96% a year, held smaller because both cases bet on a rebound and Marky's MACD turn has not come yet."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's clearest cheap and sound name, a best-in-class underwriter at 11.5x with EPS up 10.1% whose short-duration float reinvests at a ten-year near 5%, and it gives him a name of his own beside the shared XOM."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.1,
+   "backers": [
+    "Marky"
+   ],
+   "why": "It is Marky's top-ranked setup (81 of 100) and the closest to his ideal, 1.0 widths below a channel rising 26% a year with the weekly MACD histogram turning up and the MACD line above zero, at a smaller weight because AMD and LLY already carry his screen."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  {
+   "ticker": "COP",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "JPM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "SPG",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "The three names that two members reached by different routes carry 65% of the book: XOM sits at the 30% cap because its two cases are the most independent (Ophelia's energy breakout, Cecil's under-earning value), and AMD outweighs LLY because Marky's MACD has turned on AMD while both LLY cases are rebound bets. PGR and CAT, the closest single-member fits to value and to a turning pullback, bring Cecil and Marky to 45% each, which I prefer to adding a second oil name beside XOM. The one disagreement is VLO, which Ophelia picks and Cecil passes on as crowded; it stays out on Ophelia's own terms, since she takes it only despite an RSI of 80 and XOM already carries her energy call. The members expect XOM and PGR to earn if Wednesday's dot plot reads hawkish and AMD and LLY to pay if the hike reads as insurance, so the book is split across that outcome with 10% cash for it and Friday's BOJ hike; no name reports this week, and I have no memory of how the week went.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

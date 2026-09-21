@@ -1,0 +1,43 @@
+{
+ "week": "2026-08-31",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15
+  },
+  {
+   "ticker": "META",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PM",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "UNH",
+   "member": "Cecil",
+   "reason": "UNH costs 21.1x trailing earnings that fell 26.1% against the prior four quarters, a richer multiple than JPM or PGR on the sharpest earnings decline on the sheet, so it fails both halves of my test and looks like a value trap rather than a bargain to hold at a 20% weight."
+  },
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "PGR fails my trend filter because its 40-week average is not rising, and it is not a pullback either, sitting 0.1 widths above its channel line with the weekly MACD histogram still falling."
+  },
+  {
+   "ticker": "META",
+   "member": "Marky",
+   "reason": "META's 26-week channel falls 12% a year, so it fails my first test, and a rising MACD histogram with the MACD line still below zero is a bounce inside a downtrend, not a pullback in a rising channel."
+  }
+ ]
+}

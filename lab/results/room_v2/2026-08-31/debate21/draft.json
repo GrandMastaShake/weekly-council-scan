@@ -1,0 +1,69 @@
+{
+ "week": "2026-08-31",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The only name two members picked, for different reasons: it is Ophelia's purest expression of her top Financials call (XLF's largest weight, up 1.72% through Friday's hawkish repricing, with the GSIB capital relief still unpriced) and Cecil's cheap, sound bank at 16.4x trailing with EPS up 13.4% and the lowest weekly volatility on the sheet (1.57%)."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "The cleanest of Marky's five, which all scored 80: it sits 1.6 channel widths below a 26-week channel rising 150% a year, gets full credit for depth and still has 0.9 widths before his 2.5-width break line, and it adds healthcare, the one sector all three members chose, through an insurer that rose 0.73% last week while the drug makers LLY and REGN fell 6.44% and 4.78%."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest sound business at 11.6x trailing with EPS still up 10.1%; its float earns more as short-term rates reprice higher, and it adds Financials exposure through underwriting rather than through a second bank."
+  },
+  {
+   "ticker": "META",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's pick for her second-ranked Communication Services call: XLC's ~21% anchor led last week's best sector ETF (+5.11%) after the settlement turned a jury-trial risk into a known cost, which gives the book growth exposure without XLK's rate risk, and it is held at 15% because of its 6.63% weekly volatility."
+  },
+  {
+   "ticker": "PM",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's Staples hedge for Friday's jobs report, which falls inside the window: tobacco led the sector through the hawkish Friday, PM sits at 99.4% of its 52-week high on 2.37% weekly volatility, and Cecil also backs the sector through PEP."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  {
+   "ticker": "V",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "PEP",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "CAT",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "JPM is the strongest signal on the page, picked by Ophelia as the purest expression of her top sector and by Cecil as a cheap, sound bank, so it takes the 30% cap; PGR (Cecil's cheapest sound name), META and PM (Ophelia's second call and her hedge for the jobs report) fill out the book, and Marky's required 20% goes to UNH. On Monday's drug-pricing (MFN) round Ophelia bets LLY rebounds and Cecil bets REGN is less exposed, and the Council takes neither: LLY is the sector's laggard and the failure case Ophelia herself named, not the low-beta breakout her Healthcare call describes, REGN's 3.0% EPS growth puts it below PGR on Cecil's own test, and healthcare, which all three members chose, comes in through UNH instead. Among Marky's five, all scored 80 and none with a weekly MACD turn yet, UNH keeps the most room above his 2.5-width break line in a channel that is steep but not near-vertical, while D and SPG sit only 0.5 widths from the break and AMD's channel rises 773% a year, so even a flat week pushes its pullback deeper. Cash is 10% because the week closes on the jobs report with the VIX at a 2026 low and none of the chart setups has confirmed; no name reports this week, and I have no memory of how this week went and used none.",
+ "files_read": [
+  "debate21/logs.md",
+  "debate21/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

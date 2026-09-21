@@ -1,0 +1,43 @@
+{
+ "week": "2026-08-03",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.25
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2
+  },
+  {
+   "ticker": "PEP",
+   "weight": 0.15
+  },
+  {
+   "ticker": "SCHW",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "REGN",
+   "member": "Marky",
+   "reason": "Fails my entry test because its 26-week channel falls 36% a year, and with the price 3.1 widths above that falling line after a 16% week and the MACD line still below zero, holding it means chasing a bounce in a downtrend rather than buying a pullback in an uptrend."
+  },
+  {
+   "ticker": "UNH",
+   "member": "Cecil",
+   "reason": "At 22.2x trailing it is the most expensive name in the draft while its EPS fell 26.1%, and after a 9.68% rise over 12 weeks to near its high there is no margin of safety, so the case rests on the chart and not on the business being cheap."
+  },
+  {
+   "ticker": "PEP",
+   "member": "Marky",
+   "reason": "Fails my entry test because its 26-week channel falls 35% a year and the MACD line is below zero, so sitting 1.0 widths above that falling line is a bounce inside a downtrend, not a pullback in a rising channel."
+  }
+ ]
+}

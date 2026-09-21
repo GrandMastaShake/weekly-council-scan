@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-20",
+ "votes": [
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "Healthcare is one of my four calls, and UNH is one of the three beat-and-raise names (with JNJ and ABT) that the thesis rests on: a defensive name with rising estimates, up 6.3% over four weeks and 20.7% over twelve."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "Financials is the cyclical I rotated into this week, and JPM has already reported and is up 1.4% on the week, so the bank-earnings selling that would prove my call wrong has not shown up in it."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "Energy is my strongest call, and VLO is a direct expression of the Hormuz-disruption hedge in that thesis: it is a refiner at a 52-week high, up 10.3% on the week and 31% over four weeks, and 15% is a sensible size since a ceasefire headline would prove me wrong."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "object",
+   "reason": "CAT sits in Industrials, the sector I rotated out of this week because the selling is concentrated in the heavy cap-weighted names the ETF holds, and at -7.6% on the week and -10.7% over four weeks CAT is one of those names being sold, so a 20% position runs directly against my call."
+  },
+  {
+   "ticker": "SPG",
+   "vote": "approve",
+   "reason": "Real Estate is one of my four calls and I named SPG among the REITs at new highs; as a retail REIT it avoids the semis drag on EQIX and DLR that my thesis flags, and it is up 4.5% on the week and 8.2% over four."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

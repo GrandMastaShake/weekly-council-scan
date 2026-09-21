@@ -1,0 +1,43 @@
+{
+ "week": "2026-09-08",
+ "book": [
+  {
+   "ticker": "JNJ",
+   "weight": 0.25
+  },
+  {
+   "ticker": "CVX",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2
+  },
+  {
+   "ticker": "LMT",
+   "weight": 0.15
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "PGR fails my test because its 40-week average is not rising, and although it sits right on the line (0.1 widths below) of a channel rising 27% a year, its weekly MACD histogram is falling, so momentum has not turned up."
+  },
+  {
+   "ticker": "LMT",
+   "member": "Marky",
+   "reason": "LMT's 26-week channel slopes down 15% a year and its weekly MACD histogram is still falling, so whatever caused the recent drop, the chart shows a falling trend with no turn in momentum rather than a pullback in a rising channel."
+  },
+  {
+   "ticker": "CAT",
+   "member": "Cecil",
+   "reason": "At 34.2x trailing, the draft's highest multiple by almost nine turns, CAT is priced like a growth stock on cyclical heavy-machinery earnings, so its 10.45% 12-week slide has bought no margin of safety, and a hot CPI on Friday would hit the book's richest valuation hardest."
+  }
+ ]
+}

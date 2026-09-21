@@ -1,0 +1,48 @@
+{
+ "week": "2026-08-10",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.25
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.25
+  },
+  {
+   "ticker": "GOOGL",
+   "weight": 0.2
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.15
+  },
+  {
+   "ticker": "FCX",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [
+  {
+   "out": "PGR",
+   "in": "JPM",
+   "objections": [
+    [
+     "Ophelia",
+     "PGR is in Financials, the one sector I weighed and turned down this week, and the draft gives it the job of cushioning a hot CPI, which I judged Financials can't do and gave to Healthcare instead (XLF lagged SPY by 2.35% in last week's rally against XLV's 1.59%), so it works against my calls rather than expressing one and leaves my hedge sector with no name in the book."
+    ],
+    [
+     "Marky",
+     "It fails my qualification test because its 40-week average is not rising, and with its weekly MACD histogram falling the chart gives no rising-trend case for holding it this week."
+    ]
+   ]
+  }
+ ],
+ "dissents": [
+  {
+   "ticker": "CAT",
+   "member": "Cecil",
+   "reason": "At 35.4x trailing against only 23.5% EPS growth, CAT has the highest multiple for its growth of any name on the sheet, and paying that much for a heavy-machinery cyclical on what the draft calls a record quarter leaves no margin of safety for a 25% position in a week when a hot CPI would hit high multiples first."
+  }
+ ]
+}

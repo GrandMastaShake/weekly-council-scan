@@ -1,0 +1,37 @@
+{
+ "week": "2026-09-14",
+ "votes": [
+  {
+   "ticker": "XOM",
+   "vote": "approve",
+   "reason": "It qualifies, since its 26-week channel still slopes up (if only 2% a year) and the weekly MACD histogram is rising with the MACD line above zero, so although at 1.3 widths above the line it is not a pullback I would have bought, my lens gives no concrete reason against it."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "It is the setup my lens looks for: 0.9 widths below a channel line rising 445% a year, with the weekly MACD histogram turning up and the MACD line above zero."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "It qualifies at 2.1 widths below a channel rising 96% a year, still inside the 2.5-width break, but the weekly MACD histogram is still falling, so the turn has not come and the smaller 15% weight is the right way to hold it."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "It fails my rule that the 40-week average must be rising, and its weekly MACD histogram is also falling, so the 0.4-width pullback has no rising trend under it and no MACD turn to buy on."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "It is my top-ranked setup: 1.0 widths below a channel rising 26% a year, with the weekly MACD histogram turning up and the MACD line above zero."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

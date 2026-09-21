@@ -1,0 +1,62 @@
+{
+ "week": "2026-09-14",
+ "book": [
+  {
+   "ticker": "XOM",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Ophelia backs it as the best way to play energy, the only sector with a confirmed breakout, since XOM only just joined the move at an RSI of 51 and has room left, and Cecil backs it as a strong-balance-sheet major whose 18.7x trailing P/E understates earnings with oil at $100, so it is the steadiest of the three two-member names and the book's hedge if Wednesday's dot plot reads hawkish."
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "Ophelia backs it as the high-beta way to play AI-led tech (it rose 8.07% when Helios began shipping while SMH was flat) and Marky backs it as a pullback 0.9 channel widths below a steep 26-week channel with the weekly MACD histogram already turning up, but it stays at 20% because it swings 6.3% a week and Ophelia warns that Friday's BOJ hike could hit crowded AI names."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "Ophelia backs it as the biggest lever on a healthcare bounce (RSI 2.5 yet still about 5% above its $1,062 200-day, sold down on rates and a rival's failed trial rather than trouble in its own obesity-drug sales) and Marky backs it as a pullback 2.1 widths below a channel rising 96% a year, but it stays at 20% because its weekly MACD has not turned and it sits close to the 2.5-width line where Marky counts the trend as broken."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's cheapest sound business with rising earnings (11.5x on EPS up 10.1%), and because its short-duration float reinvests near a 5% ten-year, it earns more if Wednesday reads hawkish and offsets the book's rate-sensitive names."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.15,
+   "backers": [
+    "Marky"
+   ],
+   "why": "It is Marky's top-ranked setup (81 of 100), 1.0 channel widths below a 26-week channel rising 26% a year with the weekly MACD histogram rising and the MACD line above zero, and it is the only one of his picks that no other member chose whose MACD turn has already come."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "COP",
+  "JPM"
+ ],
+ "rationale": "The core is the three names two members chose separately for different reasons (XOM, AMD and LLY) at 65% of the book, with XOM heaviest because it is the steadiest of the three and the hedge if the dot plot reads hawkish. PGR and CAT, the best picks by their own members' tests among the names only Cecil or only Marky chose, fill the last two slots, so the book balances names that earn more if the Fed turns hawkish (XOM, PGR) against names that pay if the hike reads as insurance (AMD, LLY, CAT); COP would replace an energy name and JPM a financial one. On the one open disagreement I leave VLO out, as Cecil did: XOM already carries the energy call and Ophelia herself says it has the most room of the leaders, while VLO at an RSI of 80 after rising 66% in 12 weeks is the crowded way to own the same call. The 5% cash is a small buffer for the Fed and BOJ decisions; I have no memory of how this week went and used only the two files.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ],
+ "repair": "the agent's reply closed the object after rationale with a stray brace; removed"
+}

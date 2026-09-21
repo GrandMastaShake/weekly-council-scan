@@ -1,0 +1,60 @@
+{
+ "week": "2026-08-03",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Both members chose it on their own: for Ophelia it is the most direct way to hold her strongest call (banks on a steepening +45 bp curve, with Basel III lowering capital requirements), and for Cecil it is a best-in-class bank at 16.2x trailing with EPS up 13.4% and the lowest volatility on the sheet (1.88% weekly), so it gets the full 30%."
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The other name both members chose for different reasons: for Ophelia it is the low-correlation healthcare leader after a +16.3% week, and for Cecil it is a net-cash biotech still at 16.2x trailing with no report until Oct 28; it sits below JPM because of its 5.87% weekly volatility and only 3% EPS growth."
+  },
+  {
+   "ticker": "KO",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Expresses Ophelia's staples call and is the book's hedge against a weak Friday payrolls print: a Q2 beat lifted it 6.5% to its 52-week high, and the dollar below 100 and cheaper inputs help a multinational."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest sound business on the sheet at 11.2x trailing with EPS still up 10.1%, a disciplined underwriter whose float earns more with the 10-year near 4.75% and whose week does not depend on payrolls or AMD."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.1,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Of Marky's five, the pullback with the least sign of trend damage: 1.3 channel widths below a 26-week channel rising 204% a year, MACD line above zero, 96.8% of its 52-week high and the lowest volatility of his five; held to 10% because the weekly MACD histogram has not turned up yet."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "EQIX",
+  "PEP"
+ ],
+ "rationale": "JPM and REGN are the only names two members reached separately (Ophelia for her Financials and Healthcare calls, Cecil as cheap, sound businesses at 16.2x trailing), so together they get 55% of the book, with JPM at the 30% cap because it is the stronger case on both members' tests and the least volatile name on the sheet. Each member then gets one more name, judged by their own job: KO as Ophelia's staples hedge against a weak payrolls print, PGR as Cecil's cheapest sound business, and UNH as Marky's chart pick, held smallest because none of his five has the weekly MACD turn he wants yet. On the disagreements: EQIX and TSM pass Marky's chart test, but this week I sided with Cecil, who avoided REITs with the 10-year near its 52-week high and semiconductors ahead of AMD's report on Tuesday; EQIX is the alternate for the chart slot and PEP for the staples or value slot, and I passed on MOD (2.3 widths down, nearer the 2.5 break than a pullback) and RKLB (45% of its 52-week high, 14% weekly volatility). No name in the book reports this week; the book is 95% invested because the members hedged Friday's jobs report through their picks rather than asking for cash; and I have no memory of how this week turned out and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

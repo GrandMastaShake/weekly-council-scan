@@ -1,0 +1,37 @@
+{
+ "week": "2026-07-27",
+ "votes": [
+  {
+   "ticker": "LMT",
+   "vote": "object",
+   "reason": "Its 26-week channel falls 43% a year and it sits 2.4 widths above that line with the weekly MACD line still below zero, so this is a rally near the top of a steep downtrend rather than a pullback in an uptrend, and my channel reading points to a fall back toward the line rather than further gains."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "It qualifies and sits 1.5 widths below a channel rising 113% a year, which is the pullback depth I buy with a full width of room above the 2.5-width break, though its weekly MACD histogram is still falling and hasn't turned up yet."
+  },
+  {
+   "ticker": "JNJ",
+   "vote": "approve",
+   "reason": "It qualifies, with its channel rising 11% a year and the weekly MACD histogram rising while the MACD line is above zero, so trend and momentum agree even though at 1.5 widths above the line it is not a pullback."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "It fails my 40-week-average test and its weekly MACD histogram is fading, but its 26-week channel still rises 12% a year with price only 0.3 widths above the line and the MACD line above zero, so it is a name I would not pick rather than a broken or reversing chart."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "Its channel slopes down only 4% a year, close to flat, and it sits just 0.7 widths above the line with the weekly MACD histogram rising and the MACD line above zero, so my chart gives no concrete reason against it this week."
+  }
+ ],
+ "files_read": [
+  "approve21/marky/draft.md",
+  "approve21/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

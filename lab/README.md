@@ -662,3 +662,67 @@ v2's final, paired by week.
     python lab/council_room_v2.py debate21 DIR
     python lab/council_room_v2.py approve21 DIR
     python lab/council_room_v2.py final21 DIR
+
+## Council Room v2.1 results -- every job holds a seat
+
+Run after the registration commit (2d9179d); `results/room_v21_debate.json`,
+with every v2.1 draft, vote and final book in `results/room_v2/`. By their own
+reports, all 117 agents in the room (v2's 72 and v2.1's 45) used only Read and
+opened nothing outside their folders. One draft (B, 09-14) came back with a
+stray closing brace; it was removed, and the file notes the repair.
+
+**Under the registered rule, v2.1 replaces v2's book step.** None of the 18
+drafts broke a rule, and the final book trails random picks with t -0.53, well
+clear of the -2 line.
+
+**The shares -- the clean measure.** Each member's picks as a share of the
+book. A name two members picked counts for both, so a row can add to more than
+100%.
+
+| Book | Ophelia | Cecil | Marky | All three at 20%+ |
+|---|---|---|---|---|
+| v2, final | 67% | 47% | 8% | 2 of 9 weeks |
+| B, fair framing only | 54% | 49% | 22% | 4 of 9 |
+| C, v2.1, final | 51% | 47% | 23% | 9 of 9 |
+
+**The framing alone did not fix it.** Fair logs and the backer's-job rule
+nearly tripled Marky's average share, but in 5 of the 9 weeks a member still
+held under 20%. The floor does real work; it is not just a backstop.
+
+**The vote now acts, and it cannot silence a job.** Of 135 votes, 22 were
+objections (Marky 10, Cecil 9, Ophelia 3). Three names drew two: CAT on 07-20
+(Ophelia, Cecil) went to Marky's alternate EQIX; PGR on 08-10 (Ophelia, Marky)
+to Cecil's alternate JPM; UNH on 08-24 (Ophelia, Cecil) to Marky's alternate
+D. The floor blocked none, and 16 objections stand as dissents. The swaps
+added +0.13%/wk on average. As in v2, the names objected to did not do worse
+than the names approved: -0.47%/wk against SPY, against -0.74%.
+
+| Week | v2.1 final book | Book | v2 book | SPY |
+|---|---|---|---|---|
+| 07-20 | UNH 30, JPM 20, EQIX 20 (for CAT), VLO 15, SPG 10 | +1.05% | +0.20% | -1.09% |
+| 07-27 | LMT 30, CAT 20, JNJ 20, PGR 20, COP 10 | -1.91% | -0.75% | +0.28% |
+| 08-03 | JPM 30, REGN 25, UNH 20, PEP 15, SCHW 10 | +0.25% | +0.58% | +3.18% |
+| 08-10 | NVDA 25, CAT 25, GOOGL 20, JPM 15 (for PGR), FCX 10 | -0.37% | -1.17% | +0.48% |
+| 08-17 | VLO 22, PGR 22, MOD 20, NVDA 18, GS 18 | -0.72% | -2.97% | -1.35% |
+| 08-24 | REGN 30, D 20 (for UNH), LLY 15, PGR 15, COP 10 | -3.24% | -3.91% | +0.60% |
+| 08-31 | JPM 30, UNH 20, PGR 15, META 15, PM 10 | +1.05% | -0.16% | +0.37% |
+| 09-08 | JNJ 25, PGR 20, CAT 20, CVX 15, LMT 15 | -0.57% | -0.70% | -0.62% |
+| 09-14 | XOM 30, AMD 20, LLY 15, PGR 15, CAT 10 | +2.15% | +1.06% | +0.60% |
+
+**Returns -- flattered, and reported only for completeness.**
+
+| | Alpha / wk | vs random (t; pctile) | Cumulative | Worst DD |
+|---|---|---|---|---|
+| v2, final | -1.14% (t -1.98) | -0.89% (t -1.40; 40%) | -7.6% | -8.8% |
+| B, draft | -0.53% (t -0.75) | -0.29% (t -0.46; 45%) | -2.4% | -4.9% |
+| C, v2.1 draft | -0.66% (t -1.08) | -0.43% (t -0.69; 44%) | -3.5% | -6.0% |
+| C, v2.1 final | -0.53% (t -0.77) | -0.36% (t -0.53; 47%) | -2.4% | -5.9% |
+
+v2.1's final book beat v2's in 7 of 9 weeks (+0.61%/wk, t +1.88). It trailed
+the real Council's book by 0.25%/wk (t -0.50), ahead in 3 of 9. The
+registration said this comparison decides nothing: v2.1 was designed after
+seeing Marky's five do best on these weeks, so moving weight toward him was
+bound to help here. What survives that caveat is narrower. v2.1 is no worse,
+it seats every job every week, and its book is still indistinguishable from
+random picks, as every design in this lab has been. The forward record
+decides whether it earns more.

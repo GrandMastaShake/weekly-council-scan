@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-24",
+ "votes": [
+  {
+   "ticker": "REGN",
+   "vote": "approve",
+   "reason": "Its 26-week channel slopes down 10% a year, so it fails my screen, but that only means I would not have picked it: the price is 2.0 widths above the line, the weekly MACD histogram is rising and the MACD line is above zero, so the chart gives no reason against it this week."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "It is my own top-ranked qualifier, a pullback 1.9 widths below a channel rising 166% a year with the MACD line above zero, and it has not reached the 2.5-width break line; the histogram has not turned up yet and only 0.6 widths of cushion remain, which the draft already handles by holding it at my 20% floor."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "It fits my lens best of the five names: it qualifies, it sits just 0.2 widths above a channel rising 92% a year, its weekly MACD histogram is rising and its MACD line is above zero."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "It fails my screen only because its 40-week average is not rising, but its 26-week channel rises 18% a year, it sits 0.4 widths above the line and its weekly MACD histogram is rising with the line above zero, so the chart gives no reason against it."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "Its 26-week channel slopes down 7% a year, so it fails my screen, but the price is 2.2 widths above the line, the weekly MACD histogram is rising and the MACD line is above zero, so momentum points up and the chart gives no reason to object."
+  }
+ ],
+ "files_read": [
+  "approve21/marky/draft.md",
+  "approve21/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

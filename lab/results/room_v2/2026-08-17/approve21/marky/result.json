@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-17",
+ "votes": [
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "It qualifies, with a 26-week channel rising 116% a year and the weekly MACD histogram rising above zero, and although at 1.9 widths above the line it is a stretched trend rather than my kind of pullback, nothing on the chart argues against it this week."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "It does not qualify because its 40-week average is not rising, so the 0.4-width dip is not a pullback inside a confirmed uptrend, and the weekly MACD histogram is still falling with no sign of a turn."
+  },
+  {
+   "ticker": "MOD",
+   "vote": "approve",
+   "reason": "This is the setup I look for: a pullback 1.2 widths below a 26-week channel rising 18% a year, well inside the 2.5-width break, with the weekly MACD histogram already turning up above zero."
+  },
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "It qualifies, sitting just 0.4 widths above a 26-week channel line rising 50% a year with the weekly MACD histogram rising above zero, so trend and momentum both back it."
+  },
+  {
+   "ticker": "GS",
+   "vote": "approve",
+   "reason": "It qualifies with a real 1.1-width pullback in a 26-week channel rising 80% a year, far from the 2.5-width break, and although the still-falling weekly MACD histogram makes this an early entry before the turn, that is a timing caveat, not a broken chart."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

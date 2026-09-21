@@ -1,0 +1,37 @@
+{
+ "week": "2026-07-20",
+ "votes": [
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "It qualifies and sits right at its 26-week channel line (0.2 widths below) in a channel rising 171% a year, with the MACD line above zero, which is the pullback-to-the-line spot my method looks for; the weekly histogram is still falling, so the MACD turn is not confirmed yet, but that is a missing signal, not a broken channel."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "It qualifies in a 26-week channel rising 25% a year and sits 1.2 widths above the line, with the weekly MACD histogram rising and the line above zero, so trend and momentum both point up and nothing on the chart argues against it, even though it is not a pullback I would have bought."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "It qualifies in a channel rising 112% a year, with the weekly MACD histogram rising and the line above zero; at 1.6 widths above the line it is stretched rather than pulled back, which is why I would not have picked it, but it is nowhere near a break and my lens gives no concrete reason to object."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "My own pick and the one real pullback in the book, 1.9 widths below the line of a channel rising 131% a year and still inside the 2.5-width break with the MACD line above zero, though the histogram has not turned up yet, so a further slip of 0.6 widths against the rising line would break the channel."
+  },
+  {
+   "ticker": "SPG",
+   "vote": "approve",
+   "reason": "It qualifies in a channel rising 42% a year and sits 0.9 widths above the line, with the weekly MACD histogram rising and the line above zero, a steady uptrend with no chart reason against it."
+  }
+ ],
+ "files_read": [
+  "approve21/marky/draft.md",
+  "approve21/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

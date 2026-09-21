@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-17",
+ "votes": [
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "VLO is the cleanest way to hold my lead Energy call, since energy is the only sector with inflow on both the week (+7.27% vs SPY) and the month while the Hormuz and Sheskharis supply shock keeps escalating, and it brings energy's -0.43 correlation to SPY as the book's hedge if the minutes or Warsh turn hawkish; its +14.5% week is a question about price, not about the sector."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "I dropped Financials this week because the 10Y-2Y is flatter at about +52 bps, which squeezes bank margins, and July's -0.6% retail drop hits payments companies and card lenders, but neither reason touches a P&amp;C auto insurer, and PGR gives the book low-beta ballast that consumer data barely moves now that it holds no healthcare name."
+  },
+  {
+   "ticker": "MOD",
+   "vote": "approve",
+   "reason": "MOD is in Industrials, the sector I moved into this week, and its data-center cooling business ties it to the AI-spending part of that call alongside ETN; its -19.6% over 12 weeks and its off-highway exposure to Deere's Aug 20 guidance are risks to watch, not signs that it doesn't fit the call."
+  },
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "NVDA drives my Technology call, since the Aug 26 report is behind XLK's +3.63% one-month lead over SPY (second only to energy), and because the report comes after Friday's close the book gets the run-up without the result; whether it sits at its 52-week high or 4.8% below doesn't change how well it fits."
+  },
+  {
+   "ticker": "GS",
+   "vote": "approve",
+   "reason": "Financials is not one of my four sectors this week, but my reasons for dropping it (a flatter curve for bank margins, and the retail drop hitting payments companies and card lenders) mostly miss a capital-markets firm with no earnings this week, so my preference for Industrials over the draft's 'financials breakout' argument is not a concrete objection to GS."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

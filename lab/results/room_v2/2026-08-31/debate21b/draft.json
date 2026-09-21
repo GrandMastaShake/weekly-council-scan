@@ -1,0 +1,59 @@
+{
+ "week": "2026-08-31",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The only name two members picked for different reasons: Ophelia's purest expression of her top Financials call (XLF's largest weight, a money-center bank that earns more under a hawkish Warsh, 98.6% of its 52-week high) and Cecil's cheap, sound fortress bank (16.4x trailing, EPS +13.4%, the lowest weekly volatility on the sheet at 1.57%)."
+  },
+  {
+   "ticker": "PM",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It passes Ophelia's sector test as the Staples leader that rose through Warsh's hawkish Friday (+1.94% on the week, 99.4% of its 52-week high, 2.37% weekly volatility), Cecil also chose a Staples name on his own (PEP), and it hedges the book's Financials names against a soft jobs print."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "It passes Marky's test at 1.6 channel widths below the line of a 26-week channel rising 150% a year, well short of the 2.5-width break, with the MACD line above zero, and it gives the book Healthcare, the only sector all three members chose, without depending on Monday's MFN drug-pricing round."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest sound business on the table at 11.6x trailing with EPS up 10.1%, a leading auto underwriter whose float earns more as the front end reprices, and it sits in Financials, the sector Ophelia ranks first."
+  },
+  {
+   "ticker": "V",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's second pick for her top Financials call, a record close held through the hawkish shock (+2.85% on the week, +18.2% over 12 weeks), chosen because card volume does not depend on the yield curve, so it offsets JPM's exposure to a soft jobs print."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "PEP",
+  "REGN"
+ ],
+ "rationale": "JPM is the only name two members picked for different reasons, so it gets the 30% maximum, and the other four slots follow the sectors the members chose independently: Financials (Ophelia's first call and Cecil's two cheap financials, through PGR and V), Staples (Ophelia's PM, with Cecil also in Staples through PEP) and Healthcare, the one sector all three chose, through Marky's UNH. On the direct disagreement, Ophelia's LLY against Cecil's explicit skip, I leave LLY out because it is a two-way bet on Monday's MFN round, the risk Ophelia's own wrong-if condition names; REGN is an alternate because it fell 4.8% the same week and it is unclear whether that round reaches it. Marky's five all scored 80 and none has a MACD turn yet, so I took UNH from a tied field because the other members also favor its sector, not because D, SPG, CAT or AMD failed anyone else's test. The book is fully invested because the members showed their caution about a hawkish, data-heavy week through low-volatility names rather than cash, and PM and UNH hedge the 60% in Financials against a soft jobs print; I have no memory of how this week went and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "week": "2026-08-17",
+ "book": [
+  {
+   "ticker": "VLO",
+   "weight": 0.22,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Cleanest expression of Ophelia's lead energy call, the only sector with inflow on both the week and the month: record cracks flow straight to Valero and its +38.9% 12-week trend is the strongest on the sheet, while Cecil's above-target objection is a valuation test, not the sector test (and at 14.1x trailing it isn't rich)."
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.22,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The direct play on Ophelia's tech call through the Aug 26 countdown (it reports after the window) and the leg she built to offset VLO if the oil premium drains; the sheet puts it at its 52-week high, not 4.8% below as she wrote."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.22,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "The cheapest sound business on the sheet at 11.1x trailing with EPS still growing 10.1%, a top-tier auto insurer whose earnings don't hinge on the oil call or this week's retail prints."
+  },
+  {
+   "ticker": "MOD",
+   "weight": 0.17,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's top score (83): a pullback 1.2 channel widths below the line of a 26-week channel rising 18% a year with the weekly MACD histogram turning up, and it sits in the industrials sector Ophelia favors."
+  },
+  {
+   "ticker": "NEM",
+   "weight": 0.17,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's second-cheapest sound name at 12.8x trailing with net cash, the book's stagflation hedge beside VLO; Ophelia's pass on GLD is a sector-timing view that doesn't test its value case, and it is sized down after a +31% month."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "GOOGL",
+  "GS"
+ ],
+ "rationale": "No name was picked twice, so the book takes the strongest pass on each member's own test: VLO for Ophelia's lead energy call with NVDA as the tech leg she built to offset it, Cecil's two cheapest sound names (PGR, NEM), and Marky's top-scored pullback MOD, which also sits in Ophelia's industrials call. Cecil's objections to refiners above target, energy after a big week and GOOGL's one-off-flattered P/E are value tests that don't bind a sector or chart pick, so VLO stays; GOOGL, a clean turned-up pullback, is first alternate only because NEM ranks higher on its own member's test and NVDA and MOD already cover the AI-growth side, and GS (16x on 43.9% EPS growth) is second. REGN is out because a binary PDUFA cuts against the defensive role Ophelia herself gave healthcare, COP and LMT would add more of the same Iran bet VLO already carries, and Marky's other names either lack the MACD turn (UNH, AMD) or, like INOD at 61% of its 52-week high, stretch the idea of a pullback. Weights are 22% on VLO, NVDA and PGR and 17% on MOD and NEM, the book's two most volatile names, fully invested because no member argued for cash; I have no memory of how this week went and used only logs.md and sheet.csv.",
+ "files_read": [
+  "debate21b/logs.md",
+  "debate21b/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

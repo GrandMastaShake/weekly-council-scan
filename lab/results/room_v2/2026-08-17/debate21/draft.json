@@ -1,0 +1,68 @@
+{
+ "week": "2026-08-17",
+ "book": [
+  {
+   "ticker": "VLO",
+   "weight": 0.22,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "This is Ophelia's cleanest expression of her lead energy call: it has record cracks, a ~$6 Brent-WTI spread from the Hormuz and Sheskharis supply shock and the strongest 12-week trend on the sheet (+38.9%), and energy's -0.43 correlation to SPY protects the book if the minutes or Warsh turn hawkish."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.22,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "This is Cecil's cleanest value pick, a top-tier insurer on the lowest trailing P/E on the sheet (11.1x) with EPS still growing 10.1%, bought after a -2.7% week and largely unaffected by this week's retail reports or consumer data."
+  },
+  {
+   "ticker": "MOD",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's top score (83/100) is the only one of his five with both a dip deeper than one channel width and a weekly MACD histogram already turning up; it sits 1.2 widths below the line of a 26-week channel rising 18% a year, well inside the 2.5-width break, and last week's +7.1% confirms the turn."
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.18,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "This is the direct expression of Ophelia's tech call ahead of the Aug 26 report, which comes after this week's close, and her own offset if the oil premium drains; the sheet puts it at 100% of its 52-week high rather than the 4.8% below she cites, so it is held for the run-up to earnings, not as a dip."
+  },
+  {
+   "ticker": "GS",
+   "weight": 0.18,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "GS is cheap for its growth at 16.0x trailing against 43.9% EPS growth and is a sound franchise; it is the laggard way into the financials breakout (+4.7% over 12 weeks against JPM's 19%) and the steadiest name in the book at 2.98% weekly volatility."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  {
+   "ticker": "COP",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "NEM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "GOOGL",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "No name was picked by two members, so there is no double-backed anchor; the book takes each member's strongest pick by their own test, balancing Ophelia's energy lead (VLO) against her own tech offset (NVDA) and Marky's top-ranked turn (MOD), with two of Cecil's cheap, sound financials (PGR, GS) as ballast. Where members disagree: energy stays because Cecil's objections (chasing a +7.7% week, refiners above target) are about price, not a verdict on the sector call, but only one energy name is held and COP is the alternate; REGN is out because a PDUFA decision around Wednesday is a coin flip, not an expression of the defensive, 0.5-beta healthcare call it was picked to carry. GS takes Cecil's second slot over NEM, whose case leans on record gold and a one-off Barrick windfall after a +31% month, and Cecil's objection to GOOGL is a value test that does not apply to a chart pick, so GOOGL stays as Marky's alternate behind his higher-scoring MOD. The book is fully invested because its hedges sit in the names (energy's -0.43 correlation to SPY, an 11x insurer) and no member argued for cash; I have no memory of how this week went and used only logs.md and sheet.csv.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

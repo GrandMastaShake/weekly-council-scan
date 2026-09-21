@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-17",
+ "book": [
+  {
+   "ticker": "VLO",
+   "weight": 0.22
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.22
+  },
+  {
+   "ticker": "MOD",
+   "weight": 0.2
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.18
+  },
+  {
+   "ticker": "GS",
+   "weight": 0.18
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "VLO",
+   "member": "Cecil",
+   "reason": "The 14.1x trailing multiple rests on EPS up 389.7% from record crack spreads driven by a supply shock, which is the top of the cycle where a refiner's low P/E is least reliable, and after a +38.9% 12-week run the price leaves no margin of safety if margins return to normal."
+  },
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "It does not qualify because its 40-week average is not rising, so the 0.4-width dip is not a pullback inside a confirmed uptrend, and the weekly MACD histogram is still falling with no sign of a turn."
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "week": "2026-08-24",
+ "book": [
+  {
+   "ticker": "REGN",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "It is the only name two members picked, each for a different reason: for Ophelia it is the FDA-approval leader of the healthcare breakout, within 1.6% of its record after the Aug 19 Pasatru approval and up 27% in four weeks, and for Cecil it is the cheapest sound way into healthcare at 17.7x earnings, against 29x for VRTX and 40x for LLY."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "LLY is about 12% of XLV and set a new 52-week high during the sector's breakout on the heaviest volume of 2026, which makes it the most direct way to act on Ophelia's strongest call in the sector where all three members' picks meet."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's clearest value case, the cheapest sound business on the sheet at 11.6x earnings with EPS up 10.1%, and its float earns more if a hot PCE or a hawkish Warsh pushes the 10-year up."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "COP is the direct way to own Ophelia's energy call, as the largest producer on her sheet at a fresh 52-week high on a physical Hormuz supply cut, and it is the book's hedge if the 10-year goes above 4.75%; it gets less than the healthcare names because she warns that XLE's RSI is 71.7 on light volume."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.15,
+   "backers": [
+    "Marky"
+   ],
+   "why": "UNH is Marky's #1 at 80 of 100, sitting 1.9 channel widths below the line of a 26-week channel that rises 166% a year with the MACD line above zero, and unlike AMD, DDOG and D it sits outside the AI and utility areas the other members avoided, in the healthcare sector they favor; it is held to 15% because the weekly MACD histogram has not turned up yet."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "JPM",
+  "VRTX"
+ ],
+ "rationale": "REGN gets the 30% maximum because Ophelia and Cecil reached it by different routes, and healthcare takes 65% of the book because all three members lean into it (Ophelia's strongest call, Cecil's REGN, Marky's #1 UNH), while PGR and COP carry the members' hedges against a hot PCE or a hawkish Warsh pushing the 10-year up. Where members disagreed I sided with Cecil and Ophelia against Marky's AMD, DDOG and D: all three pass his pullback test but none has the MACD turn he wants yet, AMD and DDOG swing about 7% a week going into Wednesday's NVDA report, in the AI group Cecil avoided and Ophelia's rotation bets against, and D sits in the utility breakdown Cecil pointed to, with the 10-year at a 52-week high. NUE, PEP, DIS and CAT rank below the chosen names by their own members' standards: NUE's case leans on a Monday opening bounce that nobody could see before the open and that the book would buy after, PEP and DIS cost more than PGR for slower growth, and CAT is last of Marky's five; so JPM and VRTX, the strongest names left by their members' tests, are the alternates. The book holds no cash because the defensive tilt is already in the names, and I have no memory of how this week went and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

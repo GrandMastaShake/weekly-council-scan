@@ -1,0 +1,38 @@
+{
+ "week": "2026-09-14",
+ "votes": [
+  {
+   "ticker": "XOM",
+   "vote": "approve",
+   "reason": "XOM is XLE's largest holding and the cleanest single-name way into my only confirmed-breakout sector, its tape agrees (+4.1% on the week, +21.2% over 12 weeks), and neither of my exit lines has been hit, since WTI is near $100 and XLE is above $63.46."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "AMD is a high-beta way into my Technology call on accelerating AI demand, and its +8.1% week fits a sector that held above its 50-day; the dot-plot and BOJ carry-unwind risks I named are a reason to size it below XOM, which the draft already does, not a reason to drop it."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "LLY is the centerpiece of my Healthcare bounce call (RSI 2.5, about 12% of XLV), its -2.9% week and -5.5% month are the oversold setup I described while it stays about 5% above its 200-day, and XLV has not lost my $164 exit line."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "Financials is outside my four but is my first-in-line swap candidate, not a sector I am calling down, and the weakness I flagged there (broken pivots, red credit proxies) hits lenders more than a short-duration P&amp;C underwriter whose own trend is still up (+3.8% over 4 weeks, +6.3% over 12), so my lens gives no concrete reason against it."
+  },
+  {
+   "ticker": "CAT",
+   "vote": "approve",
+   "reason": "Industrials is outside my four and I made no call against it, and CAT's engines and turbines sold into oilfield and data-center power fit my Energy and AI-demand calls rather than cutting against them, so I have no sector reason to object."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

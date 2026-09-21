@@ -1,0 +1,69 @@
+{
+ "week": "2026-07-27",
+ "book": [
+  {
+   "ticker": "LMT",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "It is the only name two members picked, for different reasons: it carries Ophelia's industrials call with a blowout quarter and a direct interceptor bid from the Iran strikes, and it passes Cecil's value test at 21.5x trailing (about 18x forward) on a record $230B backlog with free cash flow back to +$2.9B."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "It ties for Marky's top score of 80 and is the cleanest pullback by his own rule: it sits at the 1.5-width depth that earns full points in a channel rising 113% a year, a full width above the 2.5-width break, at 89% of its high after a 10.7% four-week dip, and it rose 1.2% last week."
+  },
+  {
+   "ticker": "JNJ",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It is the defensive leader of Ophelia's healthcare call: a low-beta pharma company with strong cash flow, up 4.1% last week and 16.6% over 12 weeks to the top of its 52-week range, with little exposure to oil, the FOMC or mega-cap tech and no report until October."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It is Cecil's cheapest high-quality business at 11.3x trailing with EPS still growing 10%, and the premiums it holds earn more with the 10-year at 4.70%, without needing the curve to steepen after the FOMC."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It expresses Ophelia's top call, energy, through the cleanest name outside the XOM/CVX earnings blackout (+13.5% in four weeks, reports Aug 6), and it is sized as a hedge because she herself names RSI 86 and a ceasefire as the way it fails."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  {
+   "ticker": "LNG",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "JPM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "TSM",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "LMT is the only name two members picked independently: Ophelia for the Iran interceptor bid behind her industrials call, and Cecil for a 21.5x multiple after a clean beat on a record backlog, so it gets the 30% cap. Ophelia and Cecil both want a hedge against the oil-and-Iran shock but disagree on what to use, and the sheet backs Ophelia: energy has rallied through the conflict (COP +13.5% in four weeks) while gold has not (NEM -3% in four weeks and -14% in 12, GLD -12% in 12), so COP is the hedge, held to 10% because of her own RSI-86 and ceasefire warning, and NEM sits out; on financials, PGR carries Cecil's value case without the yield-curve exposure that made Ophelia hold off on banks until after the FOMC, so JPM is his alternate. JNJ is Ophelia's defensive core, and Marky gets his 20% floor in CAT because none of his five has the weekly MACD turn yet and CAT is the cleanest pullback by his own rule, while RKLB sits 0.6 widths from his break line with 17.5% weekly volatility, INOD's 28% weekly volatility swamps its channel reading, and GOOGL fell another 7.8% last week. I have no memory of how this week turned out and used none; the book's main risk against SPY is holding no mega-cap tech into the Jul 29-30 reports, which comes from the members' picks, not from any view of mine.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

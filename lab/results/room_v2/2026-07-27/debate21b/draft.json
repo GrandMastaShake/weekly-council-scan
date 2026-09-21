@@ -1,0 +1,59 @@
+{
+ "week": "2026-07-27",
+ "book": [
+  {
+   "ticker": "LMT",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "LMT is the only name two members picked separately: Ophelia for the defense bid after a blowout quarter ($7.94 vs $7.20 EPS, a record $230B backlog), Cecil for a clean beat that is already reported at 21.5x trailing, so it gets the maximum weight."
+  },
+  {
+   "ticker": "JNJ",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "JNJ leads Ophelia's defensive healthcare call, sitting at 100% of its 52-week high after a +4.1% week, and as low-beta cash-flow pharma it wins on relative value with the 10-year at 4.7%, with no report until October."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "PGR is Cecil's strongest value case at 11.3x trailing with EPS still growing 10%, the 4.70% 10-year raises the income it earns on the premiums it holds, and it does not report until October."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "COP is the cleanest way to own Ophelia's top call, energy as the book's hedge against the oil-and-yields shock, outside the XOM/CVX blackout and with no report until Aug 6, but it is held to 15% because a ceasefire, the risk she names herself, could wipe out the war premium with RSI at 86."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.15,
+   "backers": [
+    "Marky"
+   ],
+   "why": "CAT is Marky's most textbook setup, exactly 1.5 channel widths below a channel rising 113% a year (the depth where his score is full), at 89% of its high after a +1.15% week with only 3.6% weekly volatility, sized at 15% because the weekly MACD turn has not come yet."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "LNG",
+  "JPM"
+ ],
+ "rationale": "LMT is the strongest signal on the page because two members reached it separately and for different reasons, so it takes the 30% cap, and the other four slots go to the cleanest pick by each member's own test: JNJ and COP for Ophelia's healthcare and energy calls, PGR for Cecil's value screen and CAT for Marky's channel pullback. Where the members disagree, I side with Ophelia over Cecil on gold, because NEM is down 14% in 12 weeks and at 72% of its high despite the war, and Cecil himself holds it only as a trade; on Financials I took Cecil's PGR, whose rate case holds up against the hawkish-FOMC curve risk Ophelia raised, and kept JPM, a bank more exposed to that risk, as an alternate alongside LNG, which has the same energy call as COP but long-term contracts that soften a ceasefire. Among Marky's names CAT sits exactly at the 1.5-width depth where his score is full and has low volatility, while RKLB and GOOGL sit deeper, nearer his 2.5-width break, and are still falling, INOD swings 28% a week, and TSM scored lower on his own screen. No name reports this week, the book is fully invested because no member argued for cash, and I have no memory of how this week turned out and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

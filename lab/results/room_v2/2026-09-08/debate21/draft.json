@@ -1,0 +1,68 @@
+{
+ "week": "2026-09-08",
+ "book": [
+  {
+   "ticker": "JNJ",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "JNJ is the steadiest leader in Ophelia's top call, Healthcare, which is +5.9% vs SPY over the month; it closed at a 52-week high, is +14.8% over 12 weeks, and is the book's low-beta anchor going into Friday's CPI."
+  },
+  {
+   "ticker": "CVX",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "CVX expresses her Energy call most directly: it is XLE's second-largest holding and hit a 52-week high on the Hormuz re-escalation, and it hedges a hot CPI or more fighting in the Gulf more steadily than VLO (4.3% vs 6.2% weekly volatility, +12.8% vs +24.3% over 4 weeks)."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "PGR is Cecil's cheapest sound business at 11.6x trailing with EPS still up 10.1%; it is the best underwriter on the sheet, a 10-year above 4.75% raises its bond income instead of compressing its multiple, and it does not report until Oct 14."
+  },
+  {
+   "ticker": "LMT",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "LMT is Cecil's clearest value case at 19.4x trailing on 52.8% EPS growth after a Q2 beat, down 10% in four weeks on yields rather than the business; it is sized below PGR because of its 6% weekly volatility."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "CAT is Marky's standout setup at 92/100, against 80 for the rest of his list: it sits 1.3 channel widths below the line of a 26-week channel rising 40% a year, and it is the only name on his list whose weekly MACD histogram has already turned up (+1.7% last week)."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  {
+   "ticker": "REGN",
+   "member": "Ophelia"
+  },
+  {
+   "ticker": "JPM",
+   "member": "Cecil"
+  },
+  {
+   "ticker": "CSX",
+   "member": "Marky"
+  }
+ ],
+ "rationale": "No name was picked by two members this week, so the book takes each member's strongest case by that member's own test: JNJ for Ophelia's Healthcare call and CVX for her Energy call (rather than adding REGN and doubling the Sep 8-9 drug-pricing risk), Cecil's two strongest value cases (PGR and LMT), and Marky's only pullback where the MACD has turned (CAT). Where members disagreed I decided by each one's job: Ophelia calling JPM flat does not rule out a value pick, but JPM repeats PGR's bet on higher rates at 16.5x against 11.6x and Cecil listed it last, so it is his alternate; Cecil passing on crude at $91 is an objection to price that does not apply to a sector pick, so CVX stays. The book is balanced around Friday's CPI: JNJ is the low-beta anchor, CVX and PGR gain if CPI runs hot or the Gulf escalates, and CAT and LMT gain if yields ease. Ophelia's picks hold 40% of the book, Cecil's 35% and Marky's 20%, with 5% in cash as a small buffer for the CPI print.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

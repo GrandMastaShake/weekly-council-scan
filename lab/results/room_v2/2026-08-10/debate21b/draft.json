@@ -1,0 +1,58 @@
+{
+ "week": "2026-08-10",
+ "book": [
+  {
+   "ticker": "GOOGL",
+   "weight": 0.25,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's strongest cheap-and-sound case (17.8x trailing, EPS up 112%, Cloud up 82%, shares down 10.7% over 12 weeks) also sits inside Ophelia's lead Technology call, which relies on Alphabet's cloud growth and capex, so two members' reasoning supports it even though only Cecil picked it."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "A pullback of 1.6 channel widths inside a channel rising 82% a year gets Marky's full depth marks with room left above his 2.5-width break line, and CAT is the company Ophelia cites for her Industrials call (record Q2 on AI data-center power, ISM at 55.6)."
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "At 12.6% of XLK and about 19% of SMH, NVDA is the purest expression of Ophelia's strongest call, last week's rate-relief-plus-AI tech rotation (XLK up 7.2%, SMH up 7.8%), and its Aug 26 report falls after the window."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.15,
+   "backers": [
+    "Marky"
+   ],
+   "why": "The most orderly of Marky's five pullbacks (1.6 widths below a channel rising 192% a year on only a 4.1% four-week dip, with the lowest weekly volatility of his five at 2.73%), UNH also gives the book the healthcare hedge Ophelia wants for CPI week."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "PGR has the lowest multiple on the sheet at 11.4x trailing with EPS up 10% at what Cecil calls the best auto underwriter, and by his reading it is the holding least exposed to how CPI prints."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "JPM",
+  "FCX"
+ ],
+ "rationale": "No ticker was picked by two members, so the largest weights go where one member's pick is backed by another member's reasoning: GOOGL (Cecil's value, inside Ophelia's lead tech call) and CAT (Marky's pullback, cited in Ophelia's Industrials case), with NVDA as Ophelia's purest tech expression, UNH carrying her healthcare hedge through a Marky pullback, and PGR as Cecil's cheapest and least CPI-exposed name. For the same sector calls I chose Marky's CAT and UNH over Ophelia's ETN and LLY because each has support from two members instead of one; among Marky's five, which all scored 80 and none of which has a weekly MACD turn yet, these are the most orderly pullbacks, while MOD's drop of 2.0 widths and 28% fall over 12 weeks leave it nearest his 2.5-width break. The one open disagreement is NEM: Cecil buys it at 12.2x, while Ophelia calls it the stretched name in her own Materials call. I sided with Ophelia because NEM looks cheap only on a gold price that just jumped 7% in a week, and Cecil concedes it swings more than anything else he owns (7.3% weekly volatility), so JPM and FCX are the alternates instead. Cash is 5% because none of Marky's setups has turned and this week's CPI decides the week; no name reports this week, and I used nothing remembered about these dates.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

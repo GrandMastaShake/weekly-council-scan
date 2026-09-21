@@ -1,0 +1,58 @@
+{
+ "week": "2026-09-08",
+ "book": [
+  {
+   "ticker": "JNJ",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's top call is Healthcare and JNJ is its steadiest leader: up 2.7% on the week and 14.8% over 12 weeks, closing at 100% of its 52-week high, with no report until 10-13 and the low beta she wants going into Friday's CPI."
+  },
+  {
+   "ticker": "CAT",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's only complete setup and the top score on the page (92/100): it has pulled back 1.3 channel widths below a line rising 40% a year, well short of the 2.5-width break, with the weekly MACD histogram turning up and the stock already up 1.7% on the week."
+  },
+  {
+   "ticker": "CVX",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The purest way to own Ophelia's Energy call: XLE's second-largest holding is at a 52-week high (up 12.8% over 4 weeks) with its own Venezuela catalyst, and it is the book's hedge if CPI runs hot or the Gulf fighting spreads."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cleanest cheap-and-sound case: the lowest multiple on the sheet (11.6x trailing) with earnings still up 10.1%, no report until 10-14, and a 10-year above 4.75% that raises its bond income instead of compressing its multiple."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "It passes Cecil's value test (16.5x trailing, earnings up 13.4%, the lowest volatility on the sheet at 1.52% a week) and sits in a sector Ophelia also favors because it works on either side of the CPI print; she passed on it for being flat, but that is a leadership test a value pick does not have to meet."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "REGN",
+  "LMT"
+ ],
+ "rationale": "No two members picked the same name, so the book takes the clearest pass of each member's own test: the purest names for Ophelia's top two sector calls (JNJ, CVX), Marky's only complete setup (CAT, his one 92 with MACD turning up; his four 80s have not turned and sit 2.1-2.3 widths down, close to the 2.5-width break), and Cecil's two cleanest cheap-and-sound names (PGR, JPM). The one disagreement is JPM: Ophelia likes Financials but passed on JPM because it is flat, and Cecil picked it; I kept it because it passes the value test it is judged by and her own sector call supports the exposure, and for the same reason Cecil's objection to crude and chase-priced AI names did not remove CVX, which is judged as a sector pick. Left out: NVDA, because Tech is Ophelia's lowest-ranked call and only pays on a cool CPI; VLO, the most stretched and most volatile name on the sheet; REGN (first alternate), because it would double the Sep 8-9 drug-pricing risk JNJ already carries; and LMT (second alternate), Cecil's clearest case, but the second most volatile name on the sheet and only about 5% above his own $500 stop going into Friday's CPI. The book is fully invested because its names already hedge the CPI print (low-beta JNJ, Energy's -0.35 correlation to SPY, PGR and JPM gaining from higher rates, with CAT as the leg that pays on a cool print), and I have no memory of how this week went and used none.",
+ "files_read": [
+  "debate21b/logs.md",
+  "debate21b/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

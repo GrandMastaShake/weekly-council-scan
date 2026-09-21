@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-31",
+ "votes": [
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM is the purest fit for my top-ranked Financials call: it was one of the money-center banks that led XLF into Friday's hawkish close (+1.72% on the week, +15.0% over 12 weeks), and as the largest GSIB it has the most direct claim on the still-unpriced capital relief, so its risk this week is my stated sector failure case (a soft ADP or NFP pulling the 2Y down) rather than anything specific to the name."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "It brings in my Healthcare call, the one sector all three members chose, through an insurer that sits outside Monday's MFN Medicaid drug-pricing round and is less exposed than the drug makers to my named failure case of harsh GLP-1 terms breaking LLY (it rose 0.73% last week while LLY and REGN fell), and although it is a pullback laggard (-5.18% over 4 weeks) rather than one of the MRK/AMGN breakout leaders, that makes it a different expression of the call, not a reason against it."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "It sits inside my top Financials call and carries the same higher-rates logic through float that earns more as short-term yields reprice, with less exposure than a second bank to my named failure case (consumer-credit fear on soft jobs data), and last week's -0.29% while XLF rallied is small next to +3.42% over 4 weeks and +7.21% over 12, so it does not break the thesis."
+  },
+  {
+   "ticker": "META",
+   "vote": "approve",
+   "reason": "My Communication Services call names META's recovery after its settlement as one of the sector's two working halves, and none of my failure triggers (bad Google legal news, the crowded telecoms giving back, XLC below $110) is aimed at it; one correction for the draft: the +5.11% is META's own week, while XLC itself rose 1.43%."
+  },
+  {
+   "ticker": "PM",
+   "vote": "approve",
+   "reason": "Tobacco is the leadership I cited in my Staples hedge (PM +1.94% in a week that ended with Warsh's hawkish Friday, +8.52% over 12 weeks), and it offsets the soft-jobs failure case of my Financials call, with one caveat from my lens: because most of its earnings come from outside the US, it is the staple most exposed to my failure line of DXY closing back above 100, which is a level to watch rather than a reason to object."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

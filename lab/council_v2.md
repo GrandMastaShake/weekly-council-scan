@@ -93,17 +93,20 @@ changes three things in them:
   name two members vote down is replaced by an alternate from a member who
   picked it. The vote can change a job's name but cannot silence the job.
 
-Registered and tested in `lab/README.md` (Council Room v2.1).
+Registered and tested in `lab/README.md` (Council Room v2.1). Adopted under its
+registered rule: every job held 20% or more in all nine weeks (against 2 of 9
+under v2), no draft broke a rule, and the final book sits near random picks,
+as every design in the lab has.
 
 ## Before it goes live
 
 | Piece | Where it is tested | Status |
 |---|---|---|
-| Marky v2 | Engine Lab, Pass 4: 96 pre-Council weeks on the frozen universe, plus the Council's weeks on the 111 | registered |
-| Cecil v2 | Council Room: one pass for each Council week, `synthesis.md` plus his value table. Fundamentals have no point-in-time history, so the table is rebuilt from what can be dated: P/E from the reported EPS of the four quarters before that Monday, and safety from prices. Quality stays out rather than being filled with today's numbers | to build |
-| Ophelia v2 | Council Room: three passes for each Council week, fresh agents confined to that Monday's snapshot | to build |
-| Marky v3, the pullback | Engine Lab, Pass 5: same samples as Pass 4, against classic and 52w | registered |
-| The debate: synthesis, approval, final | Council Room, once the members' fives are in: one synthesis agent and three approvers for each week | to build |
+| Marky v2 | Engine Lab, Pass 4: 96 pre-Council weeks on the frozen universe, plus the Council's weeks on the 111 | replaced: flagged on the Council weeks (t -2.90), then superseded by v3 |
+| Cecil v2 | Council Room: one pass for each Council week, `synthesis.md` plus his value table. Fundamentals have no point-in-time history, so the table is rebuilt from what can be dated: P/E from the reported EPS of the four quarters before that Monday, and safety from prices. Quality stays out rather than being filled with today's numbers | tested, not flagged (+0.41%/wk vs random) |
+| Ophelia v2 | Council Room: three passes for each Council week, fresh agents confined to that Monday's snapshot | tested, not flagged (-0.27%/wk vs random) |
+| Marky v3, the pullback | Engine Lab, Pass 5: same samples as Pass 4, against classic and 52w | adopted (Pass 5) |
+| The debate: synthesis, approval, final | Council Room, once the members' fives are in: one synthesis agent and three approvers for each week | tested; v2.1 adopted |
 
 Everything lands on the forward record once it is live.
 

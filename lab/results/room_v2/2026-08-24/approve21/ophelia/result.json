@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-24",
+ "votes": [
+  {
+   "ticker": "REGN",
+   "vote": "approve",
+   "reason": "REGN leads Healthcare, my strongest call: it rose 3.9% last week and 27.3% over four weeks on the FDA-approval news that lets the sector move apart from SPY, so it owns the breakout directly."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "object",
+   "reason": "UNH is labelled Healthcare but does not follow my Healthcare call: it fell 2.9% in the week XLV broke out to an all-time high and is down 7.3% over four weeks while REGN and LLY rose, and as an insurer it gets none of the FDA-approval and Phase 3 news the call rests on, so its 20% adds to the book's healthcare weight without the sector's momentum."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "At about 12% of XLV and up 6.4% in the breakout week, LLY is the most direct single stock for my Healthcare call."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "Financials is not one of my four sectors, but I made no call against it, and an insurer whose float earns more as yields rise hedges the same risk my Energy call hedges and my Staples call fears: a hot PCE or a hawkish Warsh pushing the 10-year up."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "COP fits my Energy call exactly as a large oil producer up 7.1% on the week and 12.9% over four weeks on the Hormuz supply cut, and holding it to 10% respects my warning that the war premium drains fast if tankers move or talks restart, with XLE's RSI at 71.7."
+  }
+ ],
+ "files_read": [
+  "approve21/ophelia/draft.md",
+  "approve21/ophelia/my_sectors.json",
+  "approve21/ophelia/facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}
