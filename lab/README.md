@@ -361,3 +361,68 @@ either its nearness-to-high IC is negative with t <= -2, or its top five trail
 classic's on the paired weekly comparison with t <= -2.
 
     python lab/pass4_marky.py
+
+## Pass 4 results -- Marky v2
+
+Run after the registration commit (6f10700); `results/pass4_marky.json`. Marky's
+own top five each week, equal-weighted.
+
+| | Weeks | classic: alpha / wk | vs random (pctile) | 52w: alpha / wk | vs random (pctile) | 52w minus classic |
+|---|---|---|---|---|---|---|
+| History, frozen universe | 96 | -0.37% | -0.42% (t -2.05; 42%) | +0.13% | +0.07% (t +0.21; 51%) | +0.50%/wk (t +1.43), 54/96, both halves positive |
+| Council weeks, the 111 | 9 | -0.82% | -0.57% (38%) | -1.96% | -1.70% (t -2.90; 23%) | -1.14%/wk (t -1.57), 2/9 |
+
+**Under the registered rule, Marky v2 goes into Council v2.** Neither harm
+condition is met: nearness to the high has an IC of -0.009 (t -0.42), not
+significantly negative, and v2's five beat classic's over the 96 weeks.
+
+**What this does and does not show.**
+
+- *Neither mode predicts next week.* Every input's IC is within noise of zero
+  in both samples. Classic's own five trailed random picks over 96 weeks (t
+  -2.05); v2's matched random.
+- *The history result is flattered.* v2's most-picked names over 2024-26 were
+  MU, AVGO, GEV and NVDA: stocks that sat near their highs and are in today's
+  universe because they kept running. A 52-week-high rule profits most from
+  that look-ahead.
+- *The Council's weeks point the other way.* On the owner's 111, v2's picks
+  were large caps near their highs (JPM, CRWD, VLO, KO, SCHW) that pulled back.
+  That is the same pattern that sank short-term momentum in Pass 2.
+- *v2 is more distinct but not fully.* Its link to the 3-week return halves
+  (+0.81 -> +0.43), so it chases short-term strength far less. It still leans
+  toward calmer stocks (-0.19, the same as classic's -0.17), because stocks near
+  their highs tend to be calmer.
+
+So the case for v2 is the job it gives Marky, not better picks. The forward
+record will keep scoring both.
+
+## Council Room v2 -- Ophelia's passes and Cecil's (registered before any agent ran)
+
+These are the Council v2 jobs that need reading ([council_v2.md](council_v2.md)),
+tested on the Council's closed weeks. Each pass is a fresh agent that sees only
+its own folder, which `council_room_v2.py` builds from the repo as it stood
+before that Monday's report. It gets the previous pass's answer in its prompt.
+The prompts are in `council_room_v2_prompts.md`; they are identical every week
+apart from dates, paths and that previous answer.
+
+- **Ophelia.** Pass 1 turns the Market Brief into 4 sectors. Pass 2 reads the
+  canary watch, the economic calendar and the light sector reads, and settles a
+  final 4. Pass 3 takes the 40 stocks plus BTC and GLD and picks 5.
+- **Cecil.** He reads `synthesis.md` and his value table and picks 5.
+- **Marky.** His five come from Pass 4 (52w).
+
+**What is scored.** Each member's five, equal-weighted, against random fives
+drawn from the 111's tradeable names. Ophelia's sector call on its own: her
+final four sectors' stocks against all the 111's stocks, the next week. And how
+often the members pick the same names.
+
+**What counts.** The jobs are the owner's design, so this is a check for
+breakage, not proof; nine weeks cannot prove skill. A member whose five trail
+random picks with t <= -2 is flagged to the owner, with its cause, before
+Council v2 goes live. By that standard Marky v2's Council weeks (t -2.90 in
+Pass 4) are already flagged. Everything else goes live as designed and onto the
+forward record.
+
+    python lab/council_room_v2.py build DIR     # the week folders
+    python lab/council_room_v2.py pass3 DIR     # after pass 2
+    python lab/council_room_v2.py score DIR
