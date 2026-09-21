@@ -60,7 +60,16 @@ Note: EVRG (Ophelia) and AES (Cecil) were TRIGGER-BLOCKED at booking under the D
 
 **Template stress note for the calibration record:** ALL's stop ($241.02) and DE's stop ($641.95) both sit further from entry than any drawdown in the 11-position-week sample above, but ALL's *trigger* (XLF 50D, 0.24% headroom) is by far the tightest invalidation this log has ever carried. This is the first week where the thesis-invalidation leg is overwhelmingly more likely to fire than the stop leg -- exactly the asymmetry the summary block says is untested.
 
-outcome: to be computed (score Monday 2026-09-21 against date-pinned daily bars 2026-09-14 -> 2026-09-18).
+outcome (scored 2026-09-21 against date-pinned daily bars 2026-09-14 -> 2026-09-18, entry = Fri 2026-09-11 close):
+
+| Pick | Week Low (day) | Low vs Entry | Headroom Above Stop | Stop Fired? | Week High (day) | High vs Entry | +15% Trim? | Fri Close | Actual | Trigger Status at Fri Close |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ALL | $247.78 (Fri) | -2.34% | 2.80% | No | $258.76 (Mon) | +1.99% | No | $249.83 | -1.53% | **FIRED** -- XLF closed $55.86, below the $57.11 50D line (first closed below it Mon 9/14 at $57.03) |
+| PSX | $253.41 (Mon) | -2.34% | 2.80% | No | $277.12 (Fri) | +6.80% | No | $273.13 | +5.26% | Intact -- XLE $64.31 vs $63.46 line (tested $63.46 to the penny Thu intraday, held) |
+| HIG | $131.16 (Fri) | -3.81% | 1.25% | No | $138.65 (Mon) | +1.68% | No | $131.89 | -3.28% | Intact -- 10Y-3M curve +102bp (macro/facts.json 2026-09-19), not inverted |
+| DE | $665.45 (Wed) | -1.52% | 3.66% | No | $689.37 (Tue) | +2.02% | No | $683.99 | +1.22% | **FIRED** -- XLI closed $169.75, below the $170.68 200D line (below it every session from Mon 9/14) |
+
+Verdict: stop leg -- 0 of 4 fired, 0 saved, 0 cost; HIG's -3.81% low (1.25% headroom, Fri) is the closest CORE call in the log history, beating ETN's -3.66% -- and unlike ETN it closed near its low (-3.28%). A tighter ~-3.5% CORE stop would have fired Friday and exited near -3.5% vs the actual -3.28% close: a small cost (~0.2pp), not a save. Tightening still has zero support in the data. Trim leg -- untested again; PSX's +6.80% is the best intraweek high on record, still less than half the +15% trim. Thesis-invalidation leg -- FIRED ON 2 OF 4 for the first time in the log: ALL (fired, lost -1.53%) and DE (fired, finished GREEN +1.22%). One right, one wrong; the invalidation leg is now the most active part of the template, as last week's stress note predicted. Running sample: 15 position-weeks, 1 stop firing (TER), 2 invalidation firings, 0 trims.
 
 ---
 
