@@ -1,0 +1,112 @@
+Ticker,Company,Sector,FinvizSector,Industry,MarketCapUSDm
+ABNB,Airbnb Inc,Consumer Discretionary,Consumer Cyclical,Travel Services,99683.26
+ALB,Albemarle Corp,Materials,Basic Materials,Specialty Chemicals,13276.75
+AMD,Advanced Micro Devices Inc,Technology,Technology,Semiconductors,998877.20
+AMT,American Tower Corp,Real Estate,Real Estate,REIT - Specialty,81462.26
+AMZN,Amazon.com Inc,Consumer Discretionary,Consumer Cyclical,Internet Retail,2782869.13
+ATO,Atmos Energy Corp,Utilities,Utilities,Utilities - Regulated Gas,26971.41
+AWK,American Water Works Co Inc,Utilities,Utilities,Utilities - Regulated Water,26812.81
+BKNG,Booking Holdings Inc,Consumer Discretionary,Consumer Cyclical,Travel Services,126201.87
+BLFS,Biolife Solutions Inc,Healthcare,Healthcare,Medical Instruments & Supplies,1814.25
+BLK,Blackrock Inc,Financials,Financial,Asset Management,176091.70
+BTC,Grayscale Bitcoin Mini Trust ETF,Macro Assets,Financial,Exchange Traded Fund,
+CALM,Cal-Maine Foods Inc,Consumer Staples,Consumer Defensive,Farm Products,3395.76
+CAT,Caterpillar Inc,Industrials,Industrials,Farm & Heavy Construction Machinery,377393.07
+CCJ,Cameco Corp,Energy,Energy,Uranium,40330.08
+CEG,Constellation Energy Corp,Utilities,Utilities,Utilities - Independent Power Producers,93895.56
+COIN,Coinbase Global Inc,Financials,Financial,Financial Data & Stock Exchanges,53590.02
+COP,Conoco Phillips,Energy,Energy,Oil & Gas E&P,153104.46
+COST,Costco Wholesale Corp,Consumer Staples,Consumer Defensive,Discount Stores,397434.62
+CRSP,CRISPR Therapeutics AG,Healthcare,Healthcare,Biotechnology,5673.93
+CRWD,Crowdstrike Holdings Inc,Technology,Technology,Software - Infrastructure,252778.78
+CSX,CSX Corp,Industrials,Industrials,Railroads,85370.01
+CVNA,Carvana Co,Consumer Discretionary,Consumer Cyclical,Auto & Truck Dealerships,74226.28
+CVX,Chevron Corp,Energy,Energy,Oil & Gas Integrated,404924.45
+D,Dominion Energy Inc,Utilities,Utilities,Utilities - Regulated Electric,55713.57
+DDOG,Datadog Inc,Technology,Technology,Software - Application,86499.38
+DE,Deere & Co,Industrials,Industrials,Farm & Heavy Construction Machinery,186475.61
+DIS,Walt Disney Co,Communication Services,Communication Services,Entertainment,180179.77
+ECL,Ecolab Inc,Materials,Basic Materials,Specialty Chemicals,75744.79
+EQIX,Equinix Inc,Real Estate,Real Estate,REIT - Specialty,103793.53
+ETN,Eaton Corp Plc,Industrials,Industrials,Specialty Industrial Machinery,170095.62
+FCX,Freeport-McMoRan Inc,Materials,Basic Materials,Copper,103493.78
+FIVE,Five Below Inc,Consumer Discretionary,Consumer Cyclical,Specialty Retail,13210.02
+FIZZ,National Beverage Corp,Consumer Staples,Consumer Defensive,Beverages - Non-Alcoholic,2935.30
+FSLR,First Solar Inc,Energy,Technology,Solar,21424.10
+GE,GE Aerospace,Industrials,Industrials,Aerospace & Defense,333405.68
+GLD,SPDR Gold Shares,Macro Assets,Financial,Exchange Traded Fund,
+GOOGL,Alphabet Inc,Technology,Communication Services,Internet Content & Information,4328464.93
+GS,Goldman Sachs Group Inc,Financials,Financial,Capital Markets,277224.30
+HD,Home Depot Inc,Consumer Discretionary,Consumer Cyclical,Home Improvement Retail,298214.33
+HIMS,Hims & Hers Health Inc,Healthcare,Healthcare,Drug Manufacturers - Specialty & Generic,6743.76
+HON,Honeywell International Inc,Industrials,Industrials,Conglomerates,65521.17
+IMAX,Imax Corp,Communication Services,Communication Services,Entertainment,2949.90
+INOD,Innodata Inc,Technology,Technology,Information Technology Services,2016.88
+ISRG,Intuitive Surgical Inc,Healthcare,Healthcare,Medical Instruments & Supplies,140791.90
+JNJ,Johnson & Johnson,Healthcare,Healthcare,Drug Manufacturers - General,654032.67
+JPM,JPMorgan Chase & Co,Financials,Financial,Banks - Diversified,933490.40
+KO,Coca-Cola Co,Consumer Staples,Consumer Defensive,Beverages - Non-Alcoholic,378000.44
+LIN,Linde Plc,Materials,Basic Materials,Specialty Chemicals,211409.92
+LLY,Lilly(Eli) & Co,Healthcare,Healthcare,Drug Manufacturers - General,1091964.76
+LMT,Lockheed Martin Corp,Industrials,Industrials,Aerospace & Defense,123964.64
+LNG,Cheniere Energy Inc,Energy,Energy,Oil & Gas Midstream,56311.58
+LYV,Live Nation Entertainment Inc,Communication Services,Communication Services,Entertainment,39949.36
+MA,Mastercard Incorporated,Financials,Financial,Credit Services,494709.08
+MCD,McDonald's Corp,Consumer Discretionary,Consumer Cyclical,Restaurants,175989.59
+MDLZ,Mondelez International Inc,Consumer Staples,Consumer Defensive,Confectioners,77357.03
+META,Meta Platforms Inc,Communication Services,Communication Services,Internet Content & Information,1858138.29
+MLM,Martin Marietta Materials Inc,Materials,Basic Materials,Building Materials,35407.18
+MOD,Modine Manufacturing Co,Industrials,Consumer Cyclical,Auto Parts,10466.92
+MP,MP Materials Corp,Materials,Basic Materials,Other Industrial Metals & Mining,8941.59
+MTCH,Match Group Inc,Communication Services,Communication Services,Internet Content & Information,9902.83
+NEE,NextEra Energy Inc,Utilities,Utilities,Utilities - Regulated Electric,167107.72
+NEM,Newmont Corp,Materials,Basic Materials,Gold,128694.92
+NFLX,Netflix Inc,Communication Services,Communication Services,Entertainment,306901.10
+NKE,Nike Inc,Consumer Discretionary,Consumer Cyclical,Footwear & Accessories,53858.42
+NUE,Nucor Corp,Materials,Basic Materials,Steel,55459.76
+NVDA,NVIDIA Corp,Technology,Technology,Semiconductors,5456481.09
+O,Realty Income Corp,Real Estate,Real Estate,REIT - Retail,54064.65
+OKLO,Oklo Inc,Utilities,Utilities,Utilities - Independent Power Producers,7490.00
+ORA,Ormat Technologies Inc,Utilities,Utilities,Utilities - Renewable,5966.44
+PEP,PepsiCo Inc,Consumer Staples,Consumer Defensive,Beverages - Non-Alcoholic,176627.88
+PG,Procter & Gamble Co,Consumer Staples,Consumer Defensive,Household & Personal Products,340568.57
+PGR,Progressive Corp,Financials,Financial,Insurance - Property & Casualty,124054.21
+PLD,Prologis Inc,Real Estate,Real Estate,REIT - Industrial,131201.08
+PLTR,Palantir Technologies Inc,Technology,Technology,Software - Infrastructure,439182.92
+PM,Philip Morris International Inc,Consumer Staples,Consumer Defensive,Tobacco,292731.01
+PSA,Public Storage,Real Estate,Real Estate,REIT - Industrial,55576.06
+RDDT,Reddit Inc,Communication Services,Communication Services,Internet Content & Information,30321.70
+REGN,Regeneron Pharmaceuticals Inc,Healthcare,Healthcare,Biotechnology,81811.12
+RGTI,Rigetti Computing Inc,Technology,Technology,Computer Hardware,5412.06
+RKLB,Rocket Lab Corp,Industrials,Industrials,Aerospace & Defense,41790.45
+SCHW,Charles Schwab Corp,Financials,Financial,Capital Markets,184807.01
+SHW,Sherwin-Williams Co,Materials,Basic Materials,Specialty Chemicals,78595.41
+SLB,SLB Ltd,Energy,Energy,Oil & Gas Equipment & Services,76172.61
+SM,SM Energy Co,Energy,Energy,Oil & Gas E&P,8298.73
+SOFI,SoFi Technologies Inc,Financials,Financial,Credit Services,21953.72
+SOUN,SoundHound AI Inc,Technology,Technology,Software - Application,2750.23
+SPCX,Space Exploration Technologies Corp,Industrials,Industrials,Aerospace & Defense,2097680.28
+SPG,Simon Property Group Inc,Real Estate,Real Estate,REIT - Retail,66330.35
+SPOT,Spotify Technology SA,Communication Services,Communication Services,Internet Content & Information,106680.24
+SRE,Sempra,Utilities,Utilities,Utilities - Diversified,53216.90
+SSD,Simpson Manufacturing Co Inc,Materials,Basic Materials,Lumber & Wood Production,7117.25
+STZ,Constellation Brands Inc,Consumer Staples,Consumer Defensive,Beverages - Brewers,20279.63
+TMO,Thermo Fisher Scientific Inc,Healthcare,Healthcare,Diagnostics & Research,242716.61
+TMUS,T-Mobile US Inc,Communication Services,Communication Services,Telecom Services,179372.25
+TSLA,Tesla Inc,Consumer Discretionary,Consumer Cyclical,Auto Manufacturers,1481732.06
+TSM,Taiwan Semiconductor Manufacturing ADR,Technology,Technology,Semiconductors,2294602.55
+TTWO,Take-Two Interactive Software Inc,Communication Services,Communication Services,Electronic Gaming & Multimedia,39145.27
+ULTA,Ulta Beauty Inc,Consumer Discretionary,Consumer Cyclical,Specialty Retail,23925.46
+UMH,UMH Properties Inc,Real Estate,Real Estate,REIT - Residential,1340.90
+UNH,Unitedhealth Group Inc,Healthcare,Healthcare,Healthcare Plans,336463.43
+UPST,Upstart Holdings Inc,Financials,Financial,Credit Services,2508.73
+V,Visa Inc,Financials,Financial,Credit Services,686798.23
+VICI,VICI Properties Inc,Real Estate,Real Estate,REIT - Diversified,26475.41
+VLO,Valero Energy Corp,Energy,Energy,Oil & Gas Refining & Marketing,116350.54
+VRTX,Vertex Pharmaceuticals Inc,Healthcare,Healthcare,Biotechnology,129960.38
+VST,Vistra Corp,Utilities,Utilities,Utilities - Independent Power Producers,47650.13
+WELL,Welltower Inc,Real Estate,Real Estate,REIT - Healthcare Facilities,167292.11
+WMB,Williams Cos Inc,Energy,Energy,Oil & Gas Midstream,88080.17
+WMT,Walmart Inc,Consumer Staples,Consumer Defensive,Discount Stores,853512.42
+XEL,Xcel Energy Inc,Utilities,Utilities,Utilities - Regulated Electric,45104.28
+XOM,ExxonMobil Holdings Corp,Energy,Energy,Oil & Gas Integrated,651326.85

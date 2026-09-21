@@ -57,16 +57,31 @@ def test_focus_tickers_is_exactly_110_unique_names():
     assert len(set(t.FOCUS_TICKERS)) == 110
 
 
-def test_price_feed_is_the_union_of_engine_set_backfill_and_feed_only():
-    """FEED_ONLY_TICKERS (2026-09-21) holds a name the 110-name watchlist still
-    lists after it stopped trading: fed, never scanned, and only ever there to
-    cover the watchlist -- so the focus-set bound keeps meaning something."""
+def test_price_feed_is_the_union_of_its_four_parts():
+    """Engine set, backfill, feed-only and the Council watchlist (2026-09-21).
+    FEED_ONLY_TICKERS holds a name the 110-name watchlist still lists after it
+    stopped trading: fed, never scanned, and only ever there to cover the
+    watchlist -- so the focus-set bound keeps meaning something."""
     assert set(t.PRICE_FEED_UNIVERSE) == (set(t.STOCK_UNIVERSE)
                                           | set(t.BACKFILL_44_TICKERS)
-                                          | set(t.FEED_ONLY_TICKERS))
+                                          | set(t.FEED_ONLY_TICKERS)
+                                          | set(t.COUNCIL_WATCHLIST))
     assert not set(t.FEED_ONLY_TICKERS) & set(t.STOCK_UNIVERSE), "a feed-only name is never scanned"
     assert set(t.FEED_ONLY_TICKERS) <= set(t.FOCUS_TICKERS), "feed-only exists only to cover the watchlist"
     assert t.PRICE_FEED_UNIVERSE == sorted(set(t.PRICE_FEED_UNIVERSE))
+
+
+def test_council_watchlist_is_the_owners_111():
+    """Council v2's universe: the owner's list, which is the heatmap's 110
+    without AVB plus two macro ETFs. Stocks keep their heatmap/wiki sector."""
+    assert len(t.COUNCIL_WATCHLIST) == 111
+    focus = {x: s for s, xs in t.SECTOR_FOCUS_110.items() for x in xs}
+    etfs = {x for x, s in t.COUNCIL_SECTORS.items() if s == "Macro Assets"}
+    assert etfs == {"BTC", "GLD"}
+    stocks = set(t.COUNCIL_WATCHLIST) - etfs
+    assert stocks == set(focus) - {"AVB"}
+    assert all(t.COUNCIL_SECTORS[x] == focus[x] for x in stocks)
+    assert set(t.COUNCIL_WATCHLIST) <= set(t.PRICE_FEED_UNIVERSE)
 
 
 def test_focus_is_bound_against_the_feed_not_the_engine_set():

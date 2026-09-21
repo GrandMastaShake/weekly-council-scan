@@ -89,8 +89,34 @@ BACKFILL_44_TICKERS = [
 # the focus-set bound below keeps meaning what it says.
 FEED_ONLY_TICKERS = ["AVB"]
 
-# 2026-09-21: 274 | 44 | 1 feed-only = 319 after the out-of-cycle review.
-PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS) | set(FEED_ONLY_TICKERS))
+# ---------------------------------------------------------------------------
+# The Council's universe (Council v2, decided with the owner 2026-09-21)
+# ---------------------------------------------------------------------------
+# The owner's own watchlist, 111 names (Finviz export 2026-09-21): the
+# heatmap's 110 below WITHOUT AVB -- which was never on the owner's list; it
+# was added to give Real Estate a tenth name and has since merged away -- plus
+# two macro ETFs, BTC (Grayscale Bitcoin Mini Trust) and GLD. The CSV carries
+# each name's sector: the heatmap/wiki sector for stocks, "Macro Assets" for
+# the ETFs. It is NOT yet what the engines scan: Council v2 moves all three
+# members onto it once the Testing Room has checked each new job
+# (lab/council_v2.md). Refresh it from a new export when the owner edits the list.
+def _load_council_watchlist():
+    import csv
+    import os
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "council_watchlist.csv")
+    with open(path, encoding="utf-8", newline="") as fh:
+        return list(csv.DictReader(fh))
+
+
+COUNCIL_WATCHLIST_ROWS = _load_council_watchlist()
+COUNCIL_WATCHLIST = sorted(r["Ticker"] for r in COUNCIL_WATCHLIST_ROWS)
+COUNCIL_SECTORS = {r["Ticker"]: r["Sector"] for r in COUNCIL_WATCHLIST_ROWS}
+assert len(COUNCIL_WATCHLIST) == len(set(COUNCIL_WATCHLIST)), "council watchlist repeats a name"
+
+# 2026-09-21: 274 | 44 | 1 feed-only = 319 after the out-of-cycle review; the
+# Council watchlist adds BTC and GLD, so the feed can carry v2 = 321.
+PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
+                             | set(FEED_ONLY_TICKERS) | set(COUNCIL_WATCHLIST))
 
 
 # ---------------------------------------------------------------------------
