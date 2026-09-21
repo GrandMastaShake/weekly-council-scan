@@ -100,7 +100,7 @@ def observation_universe(weekly_dir: str | None = None) -> list:
     `STOCK_UNIVERSE` alone is NOT enough and the first build of this script
     got it wrong: it is the ENGINE set, 277 names covering only 66 of the
     110-name watchlist, and it left Communication Services with 2 usable
-    constituents. `PRICE_FEED_UNIVERSE` (321) is the feed.
+    constituents. `PRICE_FEED_UNIVERSE` (320 since 2026-09-21) is the feed.
 
     The union with the newest weekly file's series is the self-healing part:
     if the panel grows again, the daily feed follows automatically instead of

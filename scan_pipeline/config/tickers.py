@@ -82,20 +82,13 @@ BACKFILL_44_TICKERS = [
 #
 # The correct bound is the FEED, not the engine set. 277 | 44 = 321, which is
 # the number the docs claimed all along.
-# Fed but not scanned: AVB stopped trading when it merged into VMRK, but the
-# 110-name watchlist below still lists it, and that list is a transcription of
-# the heatmap repo's config/watchlist_110.csv, which wins any disagreement.
-# Swapping AVB there is the heatmap's call; until then it stays in the feed so
-# the focus-set bound below keeps meaning what it says.
-FEED_ONLY_TICKERS = ["AVB"]
 
 # ---------------------------------------------------------------------------
 # The Council's universe (Council v2, decided with the owner 2026-09-21)
 # ---------------------------------------------------------------------------
-# The owner's own watchlist, 111 names (Finviz export 2026-09-21): the
-# heatmap's 110 below WITHOUT AVB -- which was never on the owner's list; it
-# was added to give Real Estate a tenth name and has since merged away -- plus
-# two macro ETFs, BTC (Grayscale Bitcoin Mini Trust) and GLD. The CSV carries
+# The owner's own watchlist, 111 names (Finviz export 2026-09-21): the 109
+# stocks of the sector-focus set below plus two macro ETFs, BTC (Grayscale
+# Bitcoin Mini Trust) and GLD. The CSV carries
 # each name's sector: the heatmap/wiki sector for stocks, "Macro Assets" for
 # the ETFs. It is NOT yet what the engines scan: Council v2 moves all three
 # members onto it once the Testing Room has checked each new job
@@ -113,17 +106,21 @@ COUNCIL_WATCHLIST = sorted(r["Ticker"] for r in COUNCIL_WATCHLIST_ROWS)
 COUNCIL_SECTORS = {r["Ticker"]: r["Sector"] for r in COUNCIL_WATCHLIST_ROWS}
 assert len(COUNCIL_WATCHLIST) == len(set(COUNCIL_WATCHLIST)), "council watchlist repeats a name"
 
-# 2026-09-21: 274 | 44 | 1 feed-only = 319 after the out-of-cycle review; the
-# Council watchlist adds BTC and GLD, so the feed can carry v2 = 321.
+# 2026-09-21: 274 | 44 = 318 after the out-of-cycle review; the Council
+# watchlist adds BTC and GLD, so the feed carries v2 = 320. (AVB was fed
+# without being scanned until the heatmap's watchlist dropped it, the same day.)
 PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
-                             | set(FEED_ONLY_TICKERS) | set(COUNCIL_WATCHLIST))
+                             | set(COUNCIL_WATCHLIST))
 
 
 # ---------------------------------------------------------------------------
 # Sector-focus set
 # ---------------------------------------------------------------------------
-# The 110-name Seven Orbs watchlist: 11 GICS sectors x 10 names, equal-weighted
-# into sector baskets for breadth, relative momentum and volume confirmation.
+# The Seven Orbs watchlist: 11 GICS sectors of ten names, equal-weighted into
+# sector baskets for breadth, relative momentum and volume confirmation. Real
+# Estate has held nine since 2026-09-21: AVB, never on the owner's list and
+# merged into VMRK, left when the heatmap adopted that list. The name keeps
+# its 110, like the heatmap's watchlist_110.csv; FOCUS_SIZE is the count.
 # This is the ANALYSIS universe. The price feed above is deliberately wider --
 # dropping to 110 would strip coverage from 22 names Arena and the portfolio
 # actively hold (C, MRK and SIDU among them).
@@ -140,16 +137,19 @@ SECTOR_FOCUS_110 = {
     "Healthcare": ["LLY", "JNJ", "UNH", "TMO", "VRTX", "ISRG", "REGN", "HIMS", "CRSP", "BLFS"],
     "Industrials": ["SPCX", "CAT", "GE", "DE", "ETN", "LMT", "CSX", "HON", "RKLB", "MOD"],
     "Materials": ["LIN", "NEM", "FCX", "SHW", "ECL", "NUE", "MLM", "ALB", "MP", "SSD"],
-    "Real Estate": ["WELL", "PLD", "EQIX", "AMT", "SPG", "PSA", "O", "VICI", "AVB", "UMH"],
+    "Real Estate": ["WELL", "PLD", "EQIX", "AMT", "SPG", "PSA", "O", "VICI", "UMH"],
     "Technology": ["NVDA", "GOOGL", "TSM", "AMD", "PLTR", "CRWD", "DDOG", "RGTI", "SOUN", "INOD"],
     "Utilities": ["NEE", "CEG", "D", "SRE", "XEL", "VST", "ATO", "AWK", "OKLO", "ORA"],
 }
 
 FOCUS_TICKERS = sorted(t for ts in SECTOR_FOCUS_110.values() for t in ts)
+# Declared, not derived, so a dropped row still fails; the heatmap's
+# config/watchlist.yaml declares the same number (universe_size).
+FOCUS_SIZE = 109
 
 assert len(SECTOR_FOCUS_110) == 11, "sector focus set must hold all 11 GICS sectors"
-assert len(FOCUS_TICKERS) == 110, "sector focus set must hold exactly 110 names"
-assert len(set(FOCUS_TICKERS)) == 110, "sector focus set must not repeat a name"
+assert len(FOCUS_TICKERS) == FOCUS_SIZE, f"sector focus set must hold exactly {FOCUS_SIZE} names"
+assert len(set(FOCUS_TICKERS)) == FOCUS_SIZE, "sector focus set must not repeat a name"
 # Bound against the FEED, not the engine set. This is the assert that was
 # wrong before and took the whole block down with it.
 assert set(FOCUS_TICKERS) <= set(PRICE_FEED_UNIVERSE), (

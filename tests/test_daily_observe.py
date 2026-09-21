@@ -153,9 +153,11 @@ def test_lands_under_daily_not_weekly(tmp_path):
 def test_observation_universe_is_not_shrunk_to_a_focus_set():
     """STOCK_UNIVERSE alone is 277 and covers 66 of the 110-name watchlist.
     The first build of this script used it and left Communication Services
-    with 2 usable constituents, so the floor is pinned at the documented 321."""
+    with 2 usable constituents, so the floor is pinned at the documented feed:
+    321 until 2026-09-21, then 320 (EA, HES, EQR and AVB out; VMRK, BTC and
+    GLD in)."""
     u = do.observation_universe()
-    assert len(u) >= 321, (
+    assert len(u) >= 320, (
         "daily feed is narrower than the live weekly panel: "
         + str(len(u)) + " tickers")
     assert "SPY" in u and "XLK" in u

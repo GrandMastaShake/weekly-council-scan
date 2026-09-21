@@ -15,7 +15,8 @@ printing. BK is now BNY (ticker change 2026-05-21), MMC is now MRSH
 AVB and EQR merged into Vivmark Residential, VMRK, trading from 2026-08-18.
 HES left (acquired by Chevron, 2025-07-18; CVX is already in the universe) and
 EA left (taken private, delisted 2026-08-04). Engine universe 277 -> 274. AVB
-stays in the price feed only while the heatmap's 110-name watchlist lists it.
+stayed in the price feed only while the heatmap's watchlist listed it; that
+list became the owner's the same day, without AVB, so the feed dropped it too.
 The four new rows carry live names and sectors; their Refs are 0 until the wikis
 cover them.
 

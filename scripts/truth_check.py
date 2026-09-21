@@ -1114,9 +1114,10 @@ def check_config(repo, rep):
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 has {len(focus)} "
                             f"sectors, expected 11")
         names = [x for xs in focus.values() for x in xs]
-        if len(names) != 110:
+        expected = getattr(t, "FOCUS_SIZE", 110)   # declared beside the set
+        if len(names) != expected:
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 holds {len(names)} "
-                            f"names, expected 110")
+                            f"names, expected {expected}")
         if len(set(names)) != len(names):
             dupes = sorted({n for n in names if names.count(n) > 1})
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 repeats {dupes}")

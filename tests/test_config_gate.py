@@ -46,40 +46,40 @@ def stub_tickers(monkeypatch, **attrs):
 
 # -- the constants themselves ------------------------------------------------
 
-def test_focus_set_is_eleven_sectors_of_ten():
+def test_focus_set_is_eleven_sectors_of_ten_but_real_estate():
+    """Real Estate holds nine since AVB left the owner's list (2026-09-21)."""
     assert len(t.SECTOR_FOCUS_110) == 11
     for sector, names in t.SECTOR_FOCUS_110.items():
-        assert len(names) == 10, sector + " has " + str(len(names))
+        want = 9 if sector == "Real Estate" else 10
+        assert len(names) == want, sector + " has " + str(len(names))
+    assert "AVB" not in t.FOCUS_TICKERS
 
 
-def test_focus_tickers_is_exactly_110_unique_names():
-    assert len(t.FOCUS_TICKERS) == 110
-    assert len(set(t.FOCUS_TICKERS)) == 110
+def test_focus_tickers_is_exactly_focus_size_unique_names():
+    assert t.FOCUS_SIZE == 109
+    assert len(t.FOCUS_TICKERS) == t.FOCUS_SIZE
+    assert len(set(t.FOCUS_TICKERS)) == t.FOCUS_SIZE
 
 
-def test_price_feed_is_the_union_of_its_four_parts():
-    """Engine set, backfill, feed-only and the Council watchlist (2026-09-21).
-    FEED_ONLY_TICKERS holds a name the 110-name watchlist still lists after it
-    stopped trading: fed, never scanned, and only ever there to cover the
-    watchlist -- so the focus-set bound keeps meaning something."""
+def test_price_feed_is_the_union_of_its_three_parts():
+    """Engine set, backfill and the Council watchlist (2026-09-21). The
+    feed-only slot that carried AVB for the old 110 is gone with it."""
     assert set(t.PRICE_FEED_UNIVERSE) == (set(t.STOCK_UNIVERSE)
                                           | set(t.BACKFILL_44_TICKERS)
-                                          | set(t.FEED_ONLY_TICKERS)
                                           | set(t.COUNCIL_WATCHLIST))
-    assert not set(t.FEED_ONLY_TICKERS) & set(t.STOCK_UNIVERSE), "a feed-only name is never scanned"
-    assert set(t.FEED_ONLY_TICKERS) <= set(t.FOCUS_TICKERS), "feed-only exists only to cover the watchlist"
+    assert not hasattr(t, "FEED_ONLY_TICKERS")
     assert t.PRICE_FEED_UNIVERSE == sorted(set(t.PRICE_FEED_UNIVERSE))
 
 
 def test_council_watchlist_is_the_owners_111():
-    """Council v2's universe: the owner's list, which is the heatmap's 110
-    without AVB plus two macro ETFs. Stocks keep their heatmap/wiki sector."""
+    """Council v2's universe: the owner's list, which is the focus set's 109
+    stocks plus two macro ETFs. Stocks keep their heatmap/wiki sector."""
     assert len(t.COUNCIL_WATCHLIST) == 111
     focus = {x: s for s, xs in t.SECTOR_FOCUS_110.items() for x in xs}
     etfs = {x for x, s in t.COUNCIL_SECTORS.items() if s == "Macro Assets"}
     assert etfs == {"BTC", "GLD"}
     stocks = set(t.COUNCIL_WATCHLIST) - etfs
-    assert stocks == set(focus) - {"AVB"}
+    assert stocks == set(focus)
     assert all(t.COUNCIL_SECTORS[x] == focus[x] for x in stocks)
     assert set(t.COUNCIL_WATCHLIST) <= set(t.PRICE_FEED_UNIVERSE)
 
@@ -176,7 +176,8 @@ def test_gate_fails_a_focus_name_absent_from_the_panel_without_a_reason(
 
 def test_gate_accepts_a_panel_absence_that_declares_a_reason(tmp_path,
                                                              monkeypatch):
-    """AVB is legitimately absent every week and says so. Not a failure."""
+    """A name absent with a declared reason, as AVB was after its merger, is
+    not a failure."""
     focus = {"S%d" % i: ["T%d_%d" % (i, j) for j in range(10)]
              for i in range(11)}
     names = [x for xs in focus.values() for x in xs]
