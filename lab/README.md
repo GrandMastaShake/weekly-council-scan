@@ -792,3 +792,36 @@ as well as the five-name v2.1 book (week 1 +0.57% against -0.32%, week 2 level,
 month -0.08%/wk against -0.38%/wk). Six to nine weeks prove nothing, but it
 points the same way as the noise measurement: cutting fifteen names to five has
 not earned its keep.
+
+## Spot check 2 -- Ophelia a week late, and the bottom three (registered before computing)
+
+Two what-ifs from the owner:
+
+- **Ophelia a week late.** Hold her five in the week after she picks them. On
+  the Council weeks this is her week-2 result, already seen above (+0.44%/wk
+  against random), so these weeks cannot test it; only the forward record can.
+  It is scored here only so that the combined book can be.
+- **The bottom three.** Each member's three lowest-ranked picks, nine in all,
+  become the candidates for the final five. Marky ranks by score. Ophelia and
+  Cecil were never asked to rank, so the order they listed their picks stands
+  in, a rough proxy. The nine are scored equal-weighted, which is what picking
+  five of them at random would earn on average.
+
+**Measured.** On the eight Council weeks that have a week before them (07-27
+to 09-14): each member's bottom three against its top two, and the nine-name
+pool (Ophelia's bottom three from the week before, Cecil's and Marky's from the
+week itself) against random nine-name books and against all fifteen. On
+history, the one part that can be tested properly: Marky's #3-#5 against his
+#1-#2 over Pass 5's 96 pre-Council weeks, paired by week, since his ranking is
+mechanical.
+
+**The prediction:** the ordering carries no information. Marky's score
+predicted nothing over 96 weeks (every IC within +/-0.01 in Pass 5), and the
+other two never ranked. The bottom three should do about as well as the top
+two, and the pool about as well as random.
+
+**What counts.** Only the 96-week Marky comparison is a test: his bottom three
+beat his top two only if the paired gap has t >= 2. The Council-week numbers
+are a spot check, as above.
+
+    python lab/whatif_check.py
