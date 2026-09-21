@@ -20,6 +20,31 @@ from scan_pipeline.utils.data_utils import (
 )
 from scan_pipeline.utils import wiki_signals
 
+# Engine Lab knobs (lab/README.md, Pass 2). The defaults are the engine as
+# configured on 2026-09-21; the lab flips them to replay the variants.
+#   SECTOR_SIGNAL  "prior_week" -- each sector's average return in the week
+#                                  before the latest completed week
+#                  "rs_12_1"    -- each sector's average weekly-equivalent
+#                                  return over the (up to) 12-week window,
+#                                  skipping the latest week
+#   STOCK_SIGNAL   "last_week"  -- the risk-adjusted leg reads the pick's
+#                                  latest weekly return
+#                  "rs_12_1"    -- it reads the pick's own 12-1 return
+SECTOR_SIGNAL = "prior_week"
+STOCK_SIGNAL = "last_week"
+
+
+def _weekly_rs_12_1(history) -> Optional[float]:
+    """Weekly-equivalent close-to-close return over the window, skipping the
+    latest week (the 12-1 construction, in weeks). Kept on a per-week scale
+    so every constant downstream reads it the way it read a single week."""
+    if len(history) < 3 or not history[0].close:
+        return None
+    growth = history[-2].close / history[0].close
+    if growth <= 0:
+        return None
+    return growth ** (1.0 / (len(history) - 2)) - 1.0
+
 
 def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[str, List]] = None) -> Dict[str, Any]:
     """
@@ -43,6 +68,11 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     sector_returns: Dict[str, List[float]] = {}
     for ticker in scan_universe(date):
         sector = get_sector(ticker)
+        if SECTOR_SIGNAL == "rs_12_1":
+            rs = _weekly_rs_12_1(get_price_history(ticker, date, 12, price_cache))
+            if rs is not None:
+                sector_returns.setdefault(sector, []).append(rs)
+            continue
         history = get_price_history(ticker, date, 2, price_cache)
         if len(history) >= 2:
             sector_returns.setdefault(sector, []).append(history[-2].return_)
@@ -87,6 +117,8 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     for ticker in scan_universe(date):
         sector = get_sector(ticker)
         weekly_return = weekly_returns.get(ticker, 0.0)
+        if STOCK_SIGNAL == "rs_12_1":
+            weekly_return = _weekly_rs_12_1(get_price_history(ticker, date, 12, price_cache)) or 0.0
         history = get_price_history(ticker, date, 4, price_cache)
         returns = [h.return_ for h in history]
         vol = compute_std_dev(returns)  # None when history < 2 weeks

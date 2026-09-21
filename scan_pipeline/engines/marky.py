@@ -35,6 +35,10 @@ _TEN_Y_GATE_PCT = 4.5
 _ten_y_cache: Optional[float] = None
 _ten_y_loaded = False
 
+# Engine Lab knob (lab/README.md, Pass 2): the most points a calm tape can
+# earn. The default is the engine as configured on 2026-09-21.
+LOW_VOL_POINTS = 30.0
+
 
 def load_10y_yield() -> Optional[float]:
     """10Y UST yield in percent from truth_gate/macro/facts.json.
@@ -107,9 +111,9 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
         # scores 0. None = insufficient history: neutral 10, no reward for
         # a blank tape.
         if std_dev is None:
-            volatility_score = 10.0
+            volatility_score = LOW_VOL_POINTS / 3.0
         else:
-            volatility_score = 30.0 * clamp((0.10 - std_dev) / 0.10, 0.0, 1.0)
+            volatility_score = LOW_VOL_POINTS * clamp((0.10 - std_dev) / 0.10, 0.0, 1.0)
 
         # (a) 10Y duration gate on the low-vol sleeve. Above the gate,
         # rate-sensitive sectors (REITs, Utilities) get zero low-vol

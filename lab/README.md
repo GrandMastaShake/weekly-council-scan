@@ -41,7 +41,8 @@ before anything changes in production.
 
 ## Run
 
-    python lab/engine_lab.py
+    python lab/engine_lab.py            # Pass 2: variants + diagnostics
+    python lab/engine_lab.py --pass 1   # Pass 1 baseline only
 
 Price data is cached in `lab/cache/` (gitignored). Results go to `lab/results/`.
 
@@ -60,3 +61,42 @@ winners into the reversal (MPC/VLO/PSX after energy led, EVRG/NI/AEP after
 utilities led, TPR/ABNB/ORLY after discretionary led); the 2026-08-10 book it
 drove lost 4.75%, worse than all 200 random draws. The real Council aborted that
 week and held cash.
+
+## Pass 2 -- registered before any variant was run
+
+**Question.** Do the two fixes proposed after Pass 1 stop the engines losing
+to random picks: Ophelia reading multi-week relative strength instead of a
+single week, and Marky putting less weight on a calm tape?
+
+| Variant | Change (knobs in the production engines; defaults unchanged) |
+|---|---|
+| baseline | engines as configured 2026-09-21 -- reproduces Pass 1 exactly |
+| O-rs | Ophelia's sector anchor and flow term read each sector's 12-1 relative strength (weekly-equivalent return over the up-to-12-week window, skipping the latest week) instead of one week's return |
+| O-rs+ | O-rs, and her risk-adjusted leg reads each name's own 12-1 return instead of last week's |
+| M-15 | Marky's low-volatility leg 30 -> 15 points |
+| M-0 | Marky's low-volatility leg off |
+| O-rs+M-15 | the two headline changes together |
+| no-Ophelia | Ophelia's proposal removed -- a reference point, not a candidate |
+
+Nothing is tuned to these weeks. The 12-1 window is the standard momentum
+construction, it is kept on a per-week scale so every existing constant reads
+it the way it read one week, and the low-vol ladder (30 / 15 / 0) is fixed in
+advance so the response to the dose is visible.
+
+**Diagnostics.** Every scoring input's rank IC with the following week's
+return, across the whole eligible universe (about 270 names a week, one IC per
+week), and the same test at the sector level (8 sectors a week). The IC is the
+bigger sample; the five-name book is the practical consequence.
+
+**Decision rule.** A variant replaces the configured engine only if all three
+hold:
+
+1. *Mechanism* -- the input it removes has a negative mean IC with next week's
+   return over the Council's weeks, and the input it adds does not.
+2. *Book* -- its replayed book beats the baseline's on the paired weekly
+   comparison and does no worse against random picks.
+3. *Not one week* -- the paired improvement stays positive with its single
+   best week removed.
+
+A variant that passes goes live as a forward test: the lab reruns each Monday
+as the set grows, and a variant that stops passing is reverted.

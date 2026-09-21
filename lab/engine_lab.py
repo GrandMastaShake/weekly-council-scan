@@ -37,7 +37,15 @@ engines see the same shape of data they see live.
 SCORING matches the fixed tracker: date-pinned Monday open (first session on
 or after Monday) -> Friday close, dividend-adjusted total return, cash = 0.
 
-    python lab/engine_lab.py
+Pass 2 replays the pre-registered VARIANTS below (knobs on the production
+engines, defaults unchanged) and measures every scoring input directly: its
+rank correlation (IC) with the following week's return across the whole
+eligible universe, week by week, plus the same test one level up for the
+sector signals. The IC is the larger sample -- about 270 names a week rather
+than a five-name book -- so it is where a mechanism shows up or fails to.
+
+    python lab/engine_lab.py            # Pass 2: variants + diagnostics
+    python lab/engine_lab.py --pass 1   # Pass 1 baseline only
 """
 from __future__ import annotations
 
@@ -71,6 +79,19 @@ MIN_WEEKS = 4
 RANDOM_DRAWS = 200
 SEED = 20260921
 EXTRA = ["SPY", "^VIX", "^TNX"]
+
+# Pass 2 variants, registered before any of them was run (see lab/README.md).
+# Keys are "module.ATTR" knobs on the production engines; "drop" replays the
+# week without that engine's proposal.
+VARIANTS = {
+    "baseline":   {},
+    "O-rs":       {"ophelia.SECTOR_SIGNAL": "rs_12_1"},
+    "O-rs+":      {"ophelia.SECTOR_SIGNAL": "rs_12_1", "ophelia.STOCK_SIGNAL": "rs_12_1"},
+    "M-15":       {"marky.LOW_VOL_POINTS": 15.0},
+    "M-0":        {"marky.LOW_VOL_POINTS": 0.0},
+    "O-rs+M-15":  {"ophelia.SECTOR_SIGNAL": "rs_12_1", "marky.LOW_VOL_POINTS": 15.0},
+    "no-Ophelia": {"drop": "Ophelia"},
+}
 
 
 def _d(s):
@@ -181,7 +202,49 @@ class Series:
 # --------------------------------------------------------------------------
 # replay
 # --------------------------------------------------------------------------
-def run(verbose=True):
+_DEFAULT_KNOBS = {}
+_TAP = {"capture": None, "week": None}
+
+
+def _set_knobs(engines, knobs):
+    """Every knob any variant touches goes back to its production default,
+    then this variant's settings go on top -- so replays never leak into each
+    other, whatever order they run in."""
+    keys = {k for v in VARIANTS.values() for k in v if k != "drop"}
+    keys |= {k for k in knobs if k != "drop"}
+    for key in sorted(keys):
+        mod, attr = key.split(".")
+        _DEFAULT_KNOBS.setdefault(key, getattr(engines[mod], attr))
+    for key in sorted(keys):
+        mod, attr = key.split(".")
+        setattr(engines[mod], attr, knobs.get(key, _DEFAULT_KNOBS[key]))
+
+
+def _install_taps(engines):
+    """Both engines hand their full, sorted score table to log_ties(); a tap
+    there records every ticker's inputs without touching the engine code."""
+    for name in ("marky", "ophelia"):
+        mod = engines[name]
+        if getattr(mod.log_ties, "lab_tap", False):
+            continue
+
+        def tap(scores, *a, _orig=mod.log_ties, _name=name, **k):
+            if _TAP["capture"] is not None:
+                _TAP["capture"].setdefault(_TAP["week"], {})[_name] = [dict(s) for s in scores]
+            return _orig(scores, *a, **k)
+        tap.lab_tap = True
+        mod.log_ties = tap
+
+
+def run(verbose=True, knobs=None, capture=None):
+    """Replay every Council week and score it.
+
+    knobs    {"module.ATTR": value} set on the engine modules for this replay
+             only (see VARIANTS); {"drop": "Ophelia"} replays without her
+    capture  a dict that receives, per week, every ticker's scoring inputs
+             from Ophelia and Marky, the sector signals, and each ticker's
+             realized return -- the raw material for diagnostics()
+    """
     from scan_pipeline.config.tickers import STOCK_UNIVERSE
     from scan_pipeline.engines import cecil, consensus, marky, ophelia
     from scan_pipeline.engines.personality import get_initial_personas
@@ -209,12 +272,20 @@ def run(verbose=True):
     marky.load_10y_yield = lambda: state["tnx"]
     consensus.realized_hit_counts = lambda *a, **k: {s: tuple(v) for s, v in state["counts"].items()}
 
+    engines = {"cecil": cecil, "marky": marky, "ophelia": ophelia}
+    knobs = dict(knobs or {})
+    drop = knobs.get("drop")
+    _set_knobs(engines, knobs)
+    _install_taps(engines)
+    _TAP["capture"] = capture
+
     personas = get_initial_personas()
     if not isinstance(personas, dict):
         personas = {p.name: p for p in personas}
 
     rows = []
     for label, W, council_book in weeks_to_run:
+        _TAP["week"] = W
         cache = {}
         for t in universe + ["SPY"]:
             s = raw.get(t)
@@ -249,13 +320,25 @@ def run(verbose=True):
             vote = consensus.merit_weights(["Cecil", "Marky", "Ophelia"])
             c = cecil.analyze(market_data, W)
             m = marky.analyze(market_data, W, cache)
-            o = ophelia.analyze(market_data, W, cache)
+            o = (ophelia.analyze(market_data, W, cache) if drop != "Ophelia"
+                 else {"agent": "Ophelia", "stocks": []})
             res = consensus.aggregate(c, m, o, personas)
 
         def ret(t):
             s = adj.get(t)
             r = s.week_return(W) if s else None
             return 0.0 if r is None else r      # untradeable -> flat, same rule everywhere
+
+        if capture is not None:
+            wk = capture.setdefault(W, {})
+            wk["label"] = label
+            wk["ret"] = {t: ret(t) for t in eligible}
+            wk["sector"] = {t: get_sector(t) for t in eligible}
+            # the three sector signals, per ticker, from the same weekly bars
+            wk["last_week"] = {t: cache[t][-1].return_ for t in eligible}
+            wk["prior_week"] = {t: cache[t][-2].return_ for t in eligible if len(cache[t]) >= 2}
+            wk["rs_12_1"] = {t: r for t in eligible
+                             if (r := ophelia._weekly_rs_12_1(cache[t][-12:])) is not None}
 
         book = [(t, w, res.attribution.get(t)) for t, w in res.portfolio.items()]
         spy = adj["SPY"].week_return(W) or 0.0
@@ -351,10 +434,161 @@ def summarize(rows):
     }
 
 
+def paired(rows, base_rows):
+    """Variant minus baseline, week by week, on book return."""
+    d = [r["book_ret"] - b["book_ret"] for r, b in zip(rows, base_rows)]
+    best = max(range(len(d)), key=lambda i: d[i])
+    rest = d[:best] + d[best + 1:]
+    return {"mean_diff": statistics.fmean(d), "diff_t": _tstat(d),
+            "weeks_better": sum(1 for x in d if x > 0), "weeks_same": sum(1 for x in d if x == 0),
+            "mean_diff_without_best_week": statistics.fmean(rest) if rest else 0.0,
+            "diff_by_week": d}
+
+
+# --------------------------------------------------------------------------
+# diagnostics: does each scoring input predict the next week at all?
+# --------------------------------------------------------------------------
+OPHELIA_FIELDS = ["score", "sector_rotation_score", "flow_term", "market_regime_score",
+                  "risk_adjusted_score", "rel_term", "weekly_return", "four_week_return", "vol"]
+MARKY_FIELDS = ["score", "momentum_score", "trend_score", "volatility_score", "volume_score",
+                "four_week_return", "dist_ma", "std_dev"]
+SECTOR_SIGNALS = ["last_week", "prior_week", "rs_12_1"]
+
+
+def _ranks(xs):
+    order = sorted(range(len(xs)), key=lambda i: xs[i])
+    out = [0.0] * len(xs)
+    i = 0
+    while i < len(order):
+        j = i
+        while j + 1 < len(order) and xs[order[j + 1]] == xs[order[i]]:
+            j += 1
+        for k in range(i, j + 1):
+            out[order[k]] = (i + j) / 2.0          # ties share their average rank
+        i = j + 1
+    return out
+
+
+def spearman(a, b):
+    ra, rb = _ranks(a), _ranks(b)
+    ma, mb = statistics.fmean(ra), statistics.fmean(rb)
+    num = sum((x - ma) * (y - mb) for x, y in zip(ra, rb))
+    den = math.sqrt(sum((x - ma) ** 2 for x in ra) * sum((y - mb) ** 2 for y in rb))
+    return num / den if den > 0 else 0.0
+
+
+def _ic_summary(ics):
+    return {"mean_ic": statistics.fmean(ics) if ics else None, "t": _tstat(ics),
+            "weeks_positive": sum(1 for x in ics if x > 0), "weeks": len(ics),
+            "ic_by_week": [round(x, 4) for x in ics]}
+
+
+def diagnostics(capture):
+    """Rank IC of every scoring input with the following week's return.
+
+    Stock level: each input vs the ticker's own next-week return, across every
+    eligible ticker, one IC per week. Sector level: each sector signal vs the
+    sector's next-week equal-weight return (8 sectors a week), plus how the
+    sector each signal ranks first did against the universe the next week.
+    """
+    weeks = sorted(capture)
+    out = {"stock": {}, "sector": {}}
+    for engine, fields in (("ophelia", OPHELIA_FIELDS), ("marky", MARKY_FIELDS)):
+        for f in fields:
+            ics = []
+            for W in weeks:
+                wk = capture[W]
+                pairs = [(s[f], wk["ret"][s["ticker"]]) for s in wk.get(engine, [])
+                         if s.get(f) is not None and s["ticker"] in wk["ret"]]
+                if len(pairs) >= 20:
+                    ics.append(spearman([p[0] for p in pairs], [p[1] for p in pairs]))
+            out["stock"][f"{engine}.{f}"] = _ic_summary(ics)
+    for sig in SECTOR_SIGNALS:
+        ics, top_excess, tops = [], [], []
+        for W in weeks:
+            wk = capture[W]
+            by = {}
+            for t, v in wk[sig].items():
+                by.setdefault(wk["sector"][t], []).append((v, wk["ret"][t]))
+            sectors = sorted(by)
+            signal = [statistics.fmean(v for v, _ in by[s]) for s in sectors]
+            nxt = [statistics.fmean(r for _, r in by[s]) for s in sectors]
+            universe = statistics.fmean(wk["ret"].values())
+            ics.append(spearman(signal, nxt))
+            top = sectors[max(range(len(sectors)), key=lambda i: signal[i])]
+            tops.append(top)
+            top_excess.append(nxt[sectors.index(top)] - universe)
+        out["sector"][sig] = dict(_ic_summary(ics), **{
+            "top_sector_by_week": tops,
+            "top_sector_excess_by_week": [round(x, 5) for x in top_excess],
+            "top_sector_mean_excess": statistics.fmean(top_excess),
+            "top_sector_weeks_beating_universe": sum(1 for x in top_excess if x > 0)})
+    return out
+
+
+def _print_pass2(summaries, diag):
+    print(f"\n  {'variant':<11} {'alpha/wk':>9} {'t':>6} {'>SPY':>5} {'vs rand':>8} {'pctile':>7} "
+          f"{'vs base':>8} {'t':>6} {'better':>7} {'w/o best':>9} {'cum':>7} {'maxDD':>7} {'inv':>5}")
+    for name, s in summaries.items():
+        r, p = s["replay"], s.get("vs_baseline")
+        pb = (f"{p['mean_diff']*100:+7.2f}% {p['diff_t']:+6.2f} "
+              f"{p['weeks_better']:>3}/{s['weeks']:<3} {p['mean_diff_without_best_week']*100:+8.2f}%"
+              if p else f"{'--':>8} {'':>6} {'':>7} {'':>9}")
+        print(f"  {name:<11} {r['mean_alpha']*100:+8.2f}% {r['alpha_t']:+6.2f} "
+              f"{round(r['weeks_beating_spy']*s['weeks']):>3}/{s['weeks']} "
+              f"{r['mean_vs_random']*100:+7.2f}% {r['mean_pctile_vs_random']:7.0%} {pb} "
+              f"{r['cumulative']*100:+6.1f}% {r['max_drawdown']*100:+6.1f}% {r['mean_invested']:5.0%}")
+    print("\n  stock-level rank IC with next week's return (mean over weeks, t, weeks > 0)")
+    for k, v in diag["stock"].items():
+        if v["mean_ic"] is not None:
+            print(f"    {k:<32} {v['mean_ic']:+.3f}  t {v['t']:+5.2f}  {v['weeks_positive']}/{v['weeks']}")
+    print("\n  sector signals (8 sectors): rank IC with next week, and the #1 sector's next week vs universe")
+    for k, v in diag["sector"].items():
+        print(f"    {k:<11} IC {v['mean_ic']:+.3f} (t {v['t']:+5.2f}, {v['weeks_positive']}/{v['weeks']})   "
+              f"#1 sector {v['top_sector_mean_excess']*100:+.2f}%/wk vs universe, "
+              f"beat it {v['top_sector_weeks_beating_universe']}/{v['weeks']}   "
+              f"{', '.join(v['top_sector_by_week'])}")
+
+
+def main_pass2(quiet=False):
+    runs, summaries, capture = {}, {}, {}
+    for name, knobs in VARIANTS.items():
+        rows = run(verbose=False, knobs=knobs, capture=capture if name == "baseline" else None)
+        runs[name] = rows
+        summaries[name] = summarize(rows)
+        if name != "baseline":
+            summaries[name]["vs_baseline"] = paired(rows, runs["baseline"])
+        if not quiet:
+            print(f"  {name:<11} replayed {len(rows)} weeks")
+    # the O-rs+ inputs, for the stock-level IC of the multi-week stock signal
+    cap_rs = {}
+    run(verbose=False, knobs=VARIANTS["O-rs+"], capture=cap_rs)
+    diag = diagnostics(capture)
+    rs_diag = diagnostics(cap_rs)
+    for f in ("score", "sector_rotation_score", "flow_term", "risk_adjusted_score", "weekly_return"):
+        diag["stock"][f"ophelia[O-rs+].{f}"] = rs_diag["stock"][f"ophelia.{f}"]
+    _print_pass2(summaries, diag)
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    with open(RESULTS / "pass2_variants.json", "w", encoding="ascii", newline="\n") as fh:
+        json.dump({"pass": 2, "variants": VARIANTS,
+                   "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                   "summaries": summaries, "diagnostics": diag,
+                   "books": {n: [{"week": r["week"], "book": r["book"], "book_ret": r["book_ret"],
+                                  "alpha": r["alpha"], "pctile_vs_random": r["pctile_vs_random"]}
+                                 for r in rows] for n, rows in runs.items()}},
+                  fh, indent=1, default=float)
+        fh.write("\n")
+    return runs, summaries, diag
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--pass", dest="pass_", type=int, choices=(1, 2), default=2)
     args = ap.parse_args(argv)
+    if args.pass_ == 2:
+        main_pass2(quiet=args.quiet)
+        return
     rows = run(verbose=not args.quiet)
     s = summarize(rows)
     RESULTS.mkdir(parents=True, exist_ok=True)
