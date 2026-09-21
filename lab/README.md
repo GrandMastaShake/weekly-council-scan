@@ -225,3 +225,48 @@ the single-name blowups) but cannot certify a winner. An edge worth having,
 +0.5%/wk, needs about 44 weeks to reach t = 2. Until then, what can be
 fixed with confidence is what does not need proof of skill: binary-event and
 concentration risk.
+
+## Pass 3 -- the leads on weeks the Council never ran (registered before the run)
+
+**Why these weeks.** The three Pass 2 leads came out of the Council's nine
+weeks, so those weeks cannot test them. The numeric engines read only prices,
+so they can be replayed on any week: here, the 96 weeks before the Council
+existed, 2024-09-09 .. 2026-07-06. The Council Room stays on Council weeks,
+because an LLM cannot be replayed on weeks it might remember.
+
+**The base is production as of 116300d**, which added the earnings blackout
+for all three engines. Every variant runs on top of it, fed the dates the
+companies actually reported (announced weeks ahead, so known on the Monday;
+BK and PEAK have no dates and, as in production, are never excluded). The
+usual caveats apply more strongly over two years: today's universe (names that
+left the index are missing), Cecil's value and quality legs neutral (no
+point-in-time P/E), wikis neutral.
+
+| Variant | Change |
+|---|---|
+| base | production as of 116300d, earnings blackout on |
+| no-screen | base with the earnings calendar withheld, so the blackout cannot fire (H3) |
+| O-last | Ophelia's sector anchor and flow term read the latest completed week instead of the week before it (H2) |
+| M-skip | Marky's momentum leg reads his 12-week window up to the close four weeks before the latest, skipping the most recent month, instead of the latest three weeks (H1) |
+| O-last+M-skip | both |
+
+**Tests**, computed by `pass3_tests()` rather than judged by eye:
+
+- *H1, short-horizon reversal:* the 3-week return's mean rank IC with the next
+  week's return is negative with t <= -2, and the skip-a-month return's IC is
+  not negative.
+- *H2, the stale anchor:* last week's top sector beats the universe the
+  following week on average with t >= 2, and by more than the week-before-last's
+  top sector does.
+- *H3, the earnings blackout:* reported, not gated -- it is a risk control
+  already in production. How often it changed the book, the mean effect, the
+  worst week and the drawdown, with and without it.
+
+**Decision rule.** A variant becomes production's default only if all three
+hold: its mechanism test passes; its book beats base on the paired weekly
+comparison and does no worse against random picks; and the paired improvement
+is positive in both halves of the window. Otherwise it stays in the lab.
+Everything registered here is also scored forward, each Monday, on weeks that
+did not exist when it was registered.
+
+    python lab/engine_lab.py --pass 3

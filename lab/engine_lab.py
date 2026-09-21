@@ -46,6 +46,11 @@ than a five-name book -- so it is where a mechanism shows up or fails to.
 
     python lab/engine_lab.py            # Pass 2: variants + diagnostics
     python lab/engine_lab.py --pass 1   # Pass 1 baseline only
+    python lab/engine_lab.py --pass 3   # Pass 3: the leads on pre-Council weeks
+
+Pass 3 replays the numeric engines on the 96 weeks before the Council
+existed (2024-09-09 .. 2026-07-06) with the earnings calendar fed in, to test
+the three Pass 2 leads on weeks that did not produce them.
 """
 from __future__ import annotations
 
@@ -93,6 +98,21 @@ VARIANTS = {
     "no-Ophelia": {"drop": "Ophelia"},
 }
 
+# Pass 3: the three Pass 2 leads, tested on weeks the Council never ran
+# (engine-only; see lab/README.md). "earnings": False withholds the earnings
+# calendar, so the blackout cannot fire.
+HISTORY_DATA_START = "2024-06-03"
+HISTORY_FIRST_MONDAY = "2024-09-09"
+HISTORY_LAST_MONDAY = "2026-07-06"     # the week before the Council's pilot week
+EARNINGS_CACHE = CACHE / "earnings_dates.json"
+VARIANTS3 = {
+    "base":          {},
+    "no-screen":     {"earnings": False},
+    "O-last":        {"ophelia.SECTOR_SIGNAL": "last_week"},
+    "M-skip":        {"marky.MOMENTUM_WINDOW": "skip_4w"},
+    "O-last+M-skip": {"ophelia.SECTOR_SIGNAL": "last_week", "marky.MOMENTUM_WINDOW": "skip_4w"},
+}
+
 
 def _d(s):
     return datetime.strptime(s, "%Y-%m-%d").date()
@@ -114,7 +134,9 @@ def council_weeks(last_closed_friday):
             week (the Council ran and held cash)
     """
     out = []
-    for rpt in sorted(REPORTS.glob("*-report.md")):
+    reports = sorted(REPORTS.glob("*-report.md"))
+    labels = [r.name[:10] for r in reports]
+    for rpt in reports:
         label = rpt.name[:10]
         dt = _d(label)
         if dt.weekday() > 1:          # Monday/Tuesday runs only; 07-15 was a Wednesday pilot
@@ -127,19 +149,71 @@ def council_weeks(last_closed_friday):
             with open(hist, encoding="utf-8") as fh:
                 doc = yaml.safe_load(fh)
             book = [(p["ticker"], float(p["weight"])) for p in (doc.get("positions") or [])]
+        elif any(later > label for later in labels):
+            book = None               # the next session's STEP 0 found no book: an abort week, cash
         else:
-            book = None
+            continue                  # not archived yet -- the next session's STEP 0 closes it
         out.append((label, monday, book))
     return out
+
+
+def history_weeks(first_monday, last_monday):
+    """[(label, monday, False)] for every Monday in the range. False marks a
+    week the Council never ran: there is no real book to compare against."""
+    out, d = [], _d(first_monday)
+    while d <= _d(last_monday):
+        w = d.strftime("%Y-%m-%d")
+        out.append((w, w, False))
+        d += timedelta(days=7)
+    return out
+
+
+def earnings_calendar(tickers):
+    """{ticker: sorted report dates} from yfinance, cached on disk.
+
+    These are the dates the companies actually reported. Dates are announced
+    weeks ahead, so on a Monday the coming week's reporters were known; a
+    rare moved date is the approximation. A ticker with no dates is treated
+    the way production treats an unknown date: never excluded."""
+    if EARNINGS_CACHE.exists():
+        with open(EARNINGS_CACHE, encoding="utf-8") as fh:
+            cached = json.load(fh)
+        if set(tickers) <= set(cached):
+            return cached
+    from concurrent.futures import ThreadPoolExecutor
+    import yfinance as yf
+
+    def one(t):
+        for _ in range(3):
+            try:
+                ed = yf.Ticker(t).get_earnings_dates(limit=24)
+                if ed is not None and len(ed):
+                    return t, sorted({x.strftime("%Y-%m-%d") for x in ed.index})
+            except Exception:
+                pass
+        return t, []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        cal = dict(pool.map(one, tickers))
+    CACHE.mkdir(parents=True, exist_ok=True)
+    with open(EARNINGS_CACHE, "w", encoding="ascii", newline="\n") as fh:
+        json.dump(cal, fh, indent=0, sort_keys=True)
+    return cal
+
+
+def _next_report(dates, on_or_after):
+    if not dates:
+        return None
+    i = bisect.bisect_left(dates, on_or_after)
+    return dates[i] if i < len(dates) else None
 
 
 # --------------------------------------------------------------------------
 # data
 # --------------------------------------------------------------------------
-def download(tickers, adjusted, end):
+def download(tickers, adjusted, end, start=DATA_START):
     """Daily bars for every ticker, cached on disk (lab/cache is gitignored)."""
     CACHE.mkdir(parents=True, exist_ok=True)
-    path = CACHE / f"daily_{'adj' if adjusted else 'raw'}_{DATA_START}_{end}_{len(tickers)}.pkl"
+    path = CACHE / f"daily_{'adj' if adjusted else 'raw'}_{start}_{end}_{len(tickers)}.pkl"
     if path.exists():
         with open(path, "rb") as fh:
             return pickle.load(fh)
@@ -148,7 +222,7 @@ def download(tickers, adjusted, end):
     frames = []
     for i in range(0, len(tickers), 60):
         chunk = tickers[i:i + 60]
-        df = yf.download(chunk, start=DATA_START, end=end, auto_adjust=adjusted,
+        df = yf.download(chunk, start=start, end=end, auto_adjust=adjusted,
                          progress=False, group_by="column", threads=True)
         if getattr(df.columns, "nlevels", 1) == 1:
             df.columns = pd.MultiIndex.from_product([df.columns, chunk])
@@ -210,8 +284,8 @@ def _set_knobs(engines, knobs):
     """Every knob any variant touches goes back to its production default,
     then this variant's settings go on top -- so replays never leak into each
     other, whatever order they run in."""
-    keys = {k for v in VARIANTS.values() for k in v if k != "drop"}
-    keys |= {k for k in knobs if k != "drop"}
+    keys = {k for table in (VARIANTS, VARIANTS3) for v in table.values() for k in v if "." in k}
+    keys |= {k for k in knobs if "." in k}
     for key in sorted(keys):
         mod, attr = key.split(".")
         _DEFAULT_KNOBS.setdefault(key, getattr(engines[mod], attr))
@@ -236,7 +310,7 @@ def _install_taps(engines):
         mod.log_ties = tap
 
 
-def run(verbose=True, knobs=None, capture=None):
+def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, earnings=None):
     """Replay every Council week and score it.
 
     knobs    {"module.ATTR": value} set on the engine modules for this replay
@@ -244,6 +318,11 @@ def run(verbose=True, knobs=None, capture=None):
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
+    weeks    [(label, monday, book)] to replay instead of the Council's weeks;
+             book False = the Council did not run that week
+    start    first day of price data to download
+    earnings {ticker: report dates} -- feeds the earnings blackout exactly as
+             production does; None (Pass 1 and 2) leaves it unfed
     """
     from scan_pipeline.config.tickers import STOCK_UNIVERSE
     from scan_pipeline.engines import cecil, consensus, marky, ophelia
@@ -253,13 +332,15 @@ def run(verbose=True, knobs=None, capture=None):
     from scan_pipeline.utils.data_utils import generate_deterministic_context, get_sector
 
     last_friday = date.today() - timedelta(days=(date.today().weekday() - 4) % 7 or 7)
-    weeks_to_run = council_weeks(last_friday.strftime("%Y-%m-%d"))
+    weeks_to_run = weeks if weeks is not None else council_weeks(last_friday.strftime("%Y-%m-%d"))
     universe = sorted(set(STOCK_UNIVERSE))
     council_names = sorted({t for _, _, b in weeks_to_run if b for t, _ in b})
     tickers = sorted(set(universe + council_names)) + EXTRA
-    end = _plus(last_friday.strftime("%Y-%m-%d"), 1)
-    raw = {t: Series(r) for t, r in bars_by_ticker(download(tickers, False, end)).items()}
-    adj = {t: Series(r) for t, r in bars_by_ticker(download(tickers, True, end)).items()}
+    end = (_plus(last_friday.strftime("%Y-%m-%d"), 1) if weeks is None
+           else _plus(weeks_to_run[-1][1], 5))
+    raw = {t: Series(r) for t, r in bars_by_ticker(download(tickers, False, end, start)).items()}
+    adj = {t: Series(r) for t, r in bars_by_ticker(download(tickers, True, end, start)).items()}
+    from scan_pipeline.fetch_market_data import _business_days_between
 
     # ---- point-in-time patches (see module docstring) ----
     state = {"eligible": [], "tnx": None, "counts": {}}
@@ -275,6 +356,7 @@ def run(verbose=True, knobs=None, capture=None):
     engines = {"cecil": cecil, "marky": marky, "ophelia": ophelia}
     knobs = dict(knobs or {})
     drop = knobs.get("drop")
+    feed = earnings if knobs.get("earnings", True) else None
     _set_knobs(engines, knobs)
     _install_taps(engines)
     _TAP["capture"] = capture
@@ -303,11 +385,13 @@ def run(verbose=True, knobs=None, capture=None):
         stock_data = {}
         for t in eligible:
             rv, mdd = _risk_stats(cache[t])
+            nxt = _next_report(feed.get(t), F) if feed else None
             stock_data[t] = {
                 "context": generate_deterministic_context(t, weekly_returns[t], F),
                 "pe": None, "sector": get_sector(t), "fundamentals": None,
                 "realized_vol": rv, "max_drawdown": mdd,
-                "earnings_date": None, "earnings_trading_days": None,
+                "earnings_date": nxt,
+                "earnings_trading_days": _business_days_between(F, nxt) if nxt else None,
             }
         market_data = {
             "date": W, "vix": str(vix), "weeklyReturns": weekly_returns,
@@ -343,7 +427,10 @@ def run(verbose=True, knobs=None, capture=None):
         book = [(t, w, res.attribution.get(t)) for t, w in res.portfolio.items()]
         spy = adj["SPY"].week_return(W) or 0.0
         book_ret = sum(w * ret(t) for t, w, _ in book)
-        council_ret = sum(w * ret(t) for t, w in council_book) if council_book else 0.0
+        if council_book is False:
+            council_ret = None                  # no Council that week
+        else:
+            council_ret = sum(w * ret(t) for t, w in council_book) if council_book else 0.0
         ew = statistics.fmean(ret(t) for t in eligible)
 
         weights = sorted((w for _, w, _ in book), reverse=True)
@@ -371,14 +458,18 @@ def run(verbose=True, knobs=None, capture=None):
             "invested": round(sum(w for _, w, _ in book), 4),
             "sponsors": sorted({s for _, _, s in book if s}),
             "council_book": ([{"ticker": t, "weight": round(w, 4), "ret": round(ret(t), 6)}
-                              for t, w in council_book] if council_book else "ABORT (cash)"),
+                              for t, w in council_book] if council_book
+                             else ("ABORT (cash)" if council_book is None else None)),
             "council_invested": round(sum(w for _, w in council_book), 4) if council_book else 0.0,
             "book_ret": book_ret, "council_ret": council_ret, "spy_ret": spy,
-            "alpha": book_ret - spy, "council_alpha": council_ret - spy,
+            "alpha": book_ret - spy,
+            "council_alpha": None if council_ret is None else council_ret - spy,
+            "earnings_skipped": {e: [x["ticker"] for x in p.get("earnings_skipped") or []]
+                                 for e, p in (("Cecil", c), ("Marky", m), ("Ophelia", o))},
             "ew_ret": ew, "rand_mean": rand_mean, "vs_random": book_ret - rand_mean,
             "pctile_vs_random": pctile,
         })
-        if verbose:
+        if verbose and council_ret is not None:
             print(f"  {label}  replay {book_ret*100:+6.2f}% (a {(book_ret-spy)*100:+5.2f}, "
                   f"inv {sum(w for _, w, _ in book):4.0%}, pctile {pctile:4.0%})  "
                   f"council {council_ret*100:+6.2f}% (a {(council_ret-spy)*100:+5.2f})  "
@@ -410,10 +501,11 @@ def _curve(xs):
 def summarize(rows):
     n = len(rows)
     al = [r["alpha"] for r in rows]
-    cal = [r["council_alpha"] for r in rows]
     vr = [r["vs_random"] for r in rows]
     b_cum, b_dd = _curve([r["book_ret"] for r in rows])
-    c_cum, c_dd = _curve([r["council_ret"] for r in rows])
+    has_council = all(r["council_ret"] is not None for r in rows)
+    cal = [r["council_alpha"] for r in rows] if has_council else [0.0, 0.0]
+    c_cum, c_dd = _curve([r["council_ret"] for r in rows]) if has_council else (0.0, 0.0)
     s_cum, s_dd = _curve([r["spy_ret"] for r in rows])
     e_cum, _ = _curve([r["ew_ret"] for r in rows])
     return {
@@ -425,10 +517,10 @@ def summarize(rows):
                    "mean_invested": statistics.fmean(r["invested"] for r in rows),
                    "mean_sponsors": statistics.fmean(len(r["sponsors"]) for r in rows),
                    "cumulative": b_cum, "max_drawdown": b_dd},
-        "council": {"mean_alpha": statistics.fmean(cal), "alpha_t": _tstat(cal),
-                    "weeks_beating_spy": sum(1 for x in cal if x > 0) / n,
-                    "mean_invested": statistics.fmean(r["council_invested"] for r in rows),
-                    "cumulative": c_cum, "max_drawdown": c_dd},
+        "council": ({"mean_alpha": statistics.fmean(cal), "alpha_t": _tstat(cal),
+                     "weeks_beating_spy": sum(1 for x in cal if x > 0) / n,
+                     "mean_invested": statistics.fmean(r["council_invested"] for r in rows),
+                     "cumulative": c_cum, "max_drawdown": c_dd} if has_council else None),
         "spy": {"cumulative": s_cum, "max_drawdown": s_dd},
         "equal_weight": {"cumulative": e_cum},
     }
@@ -451,7 +543,7 @@ def paired(rows, base_rows):
 OPHELIA_FIELDS = ["score", "sector_rotation_score", "flow_term", "market_regime_score",
                   "risk_adjusted_score", "rel_term", "weekly_return", "four_week_return", "vol"]
 MARKY_FIELDS = ["score", "momentum_score", "trend_score", "volatility_score", "volume_score",
-                "four_week_return", "dist_ma", "std_dev"]
+                "four_week_return", "momentum_return", "dist_ma", "std_dev"]
 SECTOR_SIGNALS = ["last_week", "prior_week", "rs_12_1"]
 
 
@@ -581,11 +673,137 @@ def main_pass2(quiet=False):
     return runs, summaries, diag
 
 
+def _halves(xs):
+    h = len(xs) // 2
+    return statistics.fmean(xs[:h]), statistics.fmean(xs[h:])
+
+
+def pass3_tests(summaries, diag, diag_new):
+    """The registered Pass 3 tests (lab/README.md), computed, not judged by eye."""
+    base = summaries["base"]["replay"]
+    ic3 = diag["stock"]["marky.four_week_return"]
+    ic_skip = diag_new["stock"]["marky.momentum_return"]
+    ex_last = diag["sector"]["last_week"]["top_sector_excess_by_week"]
+    ex_prior = diag["sector"]["prior_week"]["top_sector_excess_by_week"]
+    gap = [a - b for a, b in zip(ex_last, ex_prior)]
+    h1 = {"ic_3w": ic3["mean_ic"], "ic_3w_t": ic3["t"],
+          "ic_3w_halves": _halves(ic3["ic_by_week"]),
+          "ic_skip": ic_skip["mean_ic"], "ic_skip_t": ic_skip["t"],
+          "pass": ic3["t"] <= -2 and ic_skip["mean_ic"] >= 0}
+    h2 = {"last_week_top_excess": statistics.fmean(ex_last), "t": _tstat(ex_last),
+          "weeks_beating_universe": sum(1 for x in ex_last if x > 0),
+          "last_minus_prior": statistics.fmean(gap), "last_minus_prior_t": _tstat(gap),
+          "halves": _halves(ex_last),
+          "pass": statistics.fmean(ex_last) > 0 and _tstat(ex_last) >= 2 and statistics.fmean(gap) > 0}
+    verdicts = {}
+    for name, mech in (("O-last", h2["pass"]), ("M-skip", h1["pass"]),
+                       ("O-last+M-skip", h1["pass"] and h2["pass"])):
+        v = summaries[name]["vs_base"]
+        book = v["mean_diff"] > 0 and summaries[name]["replay"]["mean_vs_random"] >= base["mean_vs_random"]
+        stable = v["first_half_mean"] > 0 and v["second_half_mean"] > 0
+        verdicts[name] = {"mechanism": mech, "book": book, "stable": stable,
+                          "passes": mech and book and stable}
+    ns = summaries["no-screen"]
+    h3 = {"weeks_screen_changed_book": ns["vs_base"]["weeks_changed"],
+          "base_minus_no_screen": -ns["vs_base"]["mean_diff"], "t": -ns["vs_base"]["diff_t"],
+          "worst_week_base": summaries["base"]["worst_week"], "worst_week_no_screen": ns["worst_week"],
+          "max_dd_base": base["max_drawdown"], "max_dd_no_screen": ns["replay"]["max_drawdown"]}
+    return {"H1_short_horizon_reversal": h1, "H2_stale_anchor": h2,
+            "H3_earnings_screen": h3, "verdicts": verdicts}
+
+
+def main_pass3(quiet=False):
+    from scan_pipeline.config.tickers import STOCK_UNIVERSE
+    cal = earnings_calendar(sorted(set(STOCK_UNIVERSE)))
+    hweeks = history_weeks(HISTORY_FIRST_MONDAY, HISTORY_LAST_MONDAY)
+    runs, summaries, cap_base, cap_new = {}, {}, {}, {}
+    for name, knobs in VARIANTS3.items():
+        cap = cap_base if name == "base" else (cap_new if name == "O-last+M-skip" else None)
+        rows = run(verbose=False, knobs=knobs, capture=cap, weeks=hweeks,
+                   start=HISTORY_DATA_START, earnings=cal)
+        runs[name] = rows
+        summ = summarize(rows)
+        summ["worst_week"] = min(r["book_ret"] for r in rows)
+        if name != "base":
+            v = paired(rows, runs["base"])
+            v["first_half_mean"], v["second_half_mean"] = _halves(v["diff_by_week"])
+            v["weeks_changed"] = sum(1 for r, b in zip(rows, runs["base"])
+                                     if [x["ticker"] for x in r["book"]] != [x["ticker"] for x in b["book"]])
+            summ["vs_base"] = v
+        summaries[name] = summ
+        if not quiet:
+            print(f"  {name:<14} replayed {len(rows)} history weeks")
+    council = {n: run(verbose=False, knobs=k, earnings=cal) for n, k in VARIANTS3.items()}
+    council_summ = {}
+    for n, rows in council.items():
+        council_summ[n] = summarize(rows)
+        if n != "base":
+            council_summ[n]["vs_base"] = paired(rows, council["base"])
+    diag, diag_new = diagnostics(cap_base), diagnostics(cap_new)
+    tests = pass3_tests(summaries, diag, diag_new)
+
+    print(f"\n  {len(hweeks)} history weeks, {hweeks[0][0]} .. {hweeks[-1][0]} (the Council never ran them)")
+    print(f"  {'variant':<14} {'alpha/wk':>9} {'t':>6} {'>SPY':>7} {'vs rand':>8} {'pctile':>7} "
+          f"{'vs base':>8} {'t':>6} {'1st half':>9} {'2nd half':>9} {'cum':>8} {'maxDD':>7}")
+    for name, sm in summaries.items():
+        r, v = sm["replay"], sm.get("vs_base")
+        vb = (f"{v['mean_diff']*100:+7.2f}% {v['diff_t']:+6.2f} {v['first_half_mean']*100:+8.2f}% "
+              f"{v['second_half_mean']*100:+8.2f}%" if v else f"{'--':>8} {'':>6} {'':>9} {'':>9}")
+        print(f"  {name:<14} {r['mean_alpha']*100:+8.2f}% {r['alpha_t']:+6.2f} "
+              f"{round(r['weeks_beating_spy']*sm['weeks']):>3}/{sm['weeks']:<3} {r['mean_vs_random']*100:+7.2f}% "
+              f"{r['mean_pctile_vs_random']:7.0%} {vb} {r['cumulative']*100:+7.1f}% {r['max_drawdown']*100:+6.1f}%")
+    h1, h2, h3 = (tests["H1_short_horizon_reversal"], tests["H2_stale_anchor"],
+                  tests["H3_earnings_screen"])
+    print(f"\n  H1 3-week return IC {h1['ic_3w']:+.3f} (t {h1['ic_3w_t']:+.2f}; halves "
+          f"{h1['ic_3w_halves'][0]:+.3f} / {h1['ic_3w_halves'][1]:+.3f}); skip-a-month return IC "
+          f"{h1['ic_skip']:+.3f} (t {h1['ic_skip_t']:+.2f})  -> mechanism {'PASS' if h1['pass'] else 'fail'}")
+    print(f"  H2 last week's top sector vs universe next week {h2['last_week_top_excess']*100:+.2f}%/wk "
+          f"(t {h2['t']:+.2f}, beat it {h2['weeks_beating_universe']}/{len(hweeks)}; halves "
+          f"{h2['halves'][0]*100:+.2f} / {h2['halves'][1]*100:+.2f}); minus the week-before-last's "
+          f"{h2['last_minus_prior']*100:+.2f}%/wk (t {h2['last_minus_prior_t']:+.2f})  -> mechanism "
+          f"{'PASS' if h2['pass'] else 'fail'}")
+    print(f"  H3 screen changed the book in {h3['weeks_screen_changed_book']}/{len(hweeks)} weeks; "
+          f"base minus no-screen {h3['base_minus_no_screen']*100:+.2f}%/wk (t {h3['t']:+.2f}); worst week "
+          f"{h3['worst_week_base']*100:+.2f}% vs {h3['worst_week_no_screen']*100:+.2f}%; max DD "
+          f"{h3['max_dd_base']*100:.1f}% vs {h3['max_dd_no_screen']*100:.1f}%")
+    for name, v in tests["verdicts"].items():
+        print(f"  verdict {name:<14} mechanism {'yes' if v['mechanism'] else 'no ':<3}  book "
+              f"{'yes' if v['book'] else 'no ':<3}  stable {'yes' if v['stable'] else 'no ':<3}  -> "
+              f"{'PASSES' if v['passes'] else 'does not pass'}")
+    print("\n  in-sample reference, the Council's own weeks:")
+    for n, sm in council_summ.items():
+        v = sm.get("vs_base")
+        print(f"    {n:<14} alpha {sm['replay']['mean_alpha']*100:+.2f}%/wk, vs random "
+              f"{sm['replay']['mean_vs_random']*100:+.2f}%/wk, cum {sm['replay']['cumulative']*100:+.1f}%, "
+              f"max DD {sm['replay']['max_drawdown']*100:.1f}%"
+              + (f", vs base {v['mean_diff']*100:+.2f}%/wk ({v['weeks_better']}/{sm['weeks']} better)" if v else ""))
+
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    with open(RESULTS / "pass3_history.json", "w", encoding="ascii", newline="\n") as fh:
+        json.dump({"pass": 3, "variants": VARIANTS3, "window": [hweeks[0][0], hweeks[-1][0]],
+                   "generated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                   "tests": tests, "summaries": summaries, "council_weeks": council_summ,
+                   "diagnostics": diag,
+                   "diagnostics_new_inputs": {k: v for k, v in diag_new["stock"].items()
+                                              if k in ("marky.momentum_return", "ophelia.sector_rotation_score",
+                                                       "ophelia.flow_term", "ophelia.score", "marky.score")},
+                   "books": {n: [{"week": r["week"], "book": [(b["ticker"], b["weight"]) for b in r["book"]],
+                                  "book_ret": round(r["book_ret"], 6), "spy_ret": round(r["spy_ret"], 6),
+                                  "skipped": r["earnings_skipped"]} for r in rows]
+                             for n, rows in runs.items()}},
+                  fh, indent=1, default=float)
+        fh.write("\n")
+    return tests
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--quiet", action="store_true")
-    ap.add_argument("--pass", dest="pass_", type=int, choices=(1, 2), default=2)
+    ap.add_argument("--pass", dest="pass_", type=int, choices=(1, 2, 3), default=2)
     args = ap.parse_args(argv)
+    if args.pass_ == 3:
+        main_pass3(quiet=args.quiet)
+        return
     if args.pass_ == 2:
         main_pass2(quiet=args.quiet)
         return
