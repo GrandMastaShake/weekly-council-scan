@@ -18,6 +18,22 @@
 
 ## Entries
 
+### Week of 2026-09-21 -- TRIGGER BLOCK: ALL + DE Dropped at Booking (their own invalidations fired the week before), VICI Blocked as a Promotion
+
+**Trigger:** The booking trigger check (the DOW rule) fired on the engine's #1 consensus pick **ALL** (Cecil, 24.3%) and #5 **DE** (Marky, 14.0%). Both were booked 2026-09-14 with explicit invalidation lines, and both lines FIRED on Friday 2026-09-18 (exit-shadow.md, week of 2026-09-14): ALL's XLF weekly close below the 50D (XLF $55.86 vs the 50D now $57.18, wiki/financials.md), DE's XLI weekly close below the 200D (XLI $169.75 vs $171.14, wiki/industrials.md "tripwire fired"). Unchanged theses carry unchanged triggers, and both triggers are violated at booking. Cecil's promotion candidate **VICI** was run against the gate first (his Entry #008 commitment) and fails XLRE's first 2026 weekly close below its 200D ($42.53 vs $42.78, wiki/real-estate.md). PSX (Marky #3) passed its trigger but was declined as crowded (RSI 83.0, 8.4% above target) -- not a trigger block, recorded here because it also shaped the book.
+
+**Booked (official, Tracker-measured):** XOM 19.7% / AMD 16.8% / HIG 15.7% / cash 47.8%.
+
+**Shadow (what the unconstrained engine book would have been):** ALL 24.3% / XOM 19.7% / AMD 16.8% / HIG 15.7% / DE 14.0% / cash 9.5% -- the pipeline's post-risk-control consensus book with no booking trigger check applied (note: 90.5% invested would itself have failed the <= 90% cash floor by 0.5pp).
+
+**Overlap:** XOM, AMD, HIG.
+
+**Divergence detail:** The blocked 38.3% was not renormalized into the survivors and no promotion was booked -- every remaining candidate was either trigger-blocked (VICI), crowded (PSX), or correlated with an existing position's invalidation (INTC, QCOM on AMD's SMH line). A deliberate refusal is recorded: ALL could have been re-booked on the $55.00-$55.44 XLF shelf ("the shelf that held the credit scare", wiki/financials.md), which XLF still sits above. That is choosing the line that lets the trade live after the real line broke -- refused as trigger-shopping, the same ruling as the XLU $42.23 level on 2026-09-14.
+
+**Resolution:** Counterfactual to be computed next Monday (2026-09-28), date-pinned Mon 2026-09-21 close -> Fri 2026-09-25 close: the unconstrained shadow book against the official booked week. **The question this entry exists to answer: is a fired thesis-invalidation a reason not to re-enter?** Last week's invalidation leg split 1-1 (ALL fired and lost; DE fired and finished green). If ALL and DE both outperform the book this week, the rule is costing money on names whose theses were never wrong, and the invalidation lines are too tight. If they lag, the lines are doing their job. Written before the answer is known.
+
+---
+
 ### Week of 2026-09-14 -- TRIGGER BLOCK: EVRG + AES Dropped at Booking (DOW Rule), Utilities Sleeve Blocked Entire
 
 **Trigger:** The pre-publication booking trigger check (the DOW rule) fired on the engine's #2 consensus pick (EVRG, Ophelia, 17.8%) and #5 (AES, Cecil, 6.9%), plus both of Ophelia's promotion backups (NI, AEP). All four are utilities and all four fail the same falsifiable, repo-stated gate: `wiki/utilities.md` line 112 declares the sector's own bias verbatim -- **"Bias: bearish below $43.00, full-stop."** XLU closed **$42.39** (macro/facts.json sector_etf.XLU, 2026-09-11), 61 cents inside that zone, with the 50D ($44.22) crossed below the 200D (mini death-cross, utilities.md line 103), the 10Y at 4.975% (2.5bp from the 5.00% crisis line) and an ~87-90%-priced hike landing Wednesday Sep 16. AES was **already trigger-blocked once** under this rule on 2026-08-31 at a 10Y of 4.72%; the 10Y is now 25bp higher, so the blocking condition has worsened, not healed.
