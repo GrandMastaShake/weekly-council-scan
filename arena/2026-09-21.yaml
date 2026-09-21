@@ -1,0 +1,80 @@
+week: '2026-09-21'
+lock: 2026-09-21 08:50 ET
+entry_date: '2026-09-21'
+exit_date: '2026-09-25'
+status: open
+entry_basis_note: 'Entry SET pinned 08:49:06 ET and re-verified 08:57:57 ET (no comments
+  created or edited after the 08:50 lock; 2 valid entries). Prices fetched ~10:36
+  ET after the open had settled; every Monday bar (14 tickers + SPY) checked low <=
+  open <= high before acceptance (issue #105 guard; arena_ingest itself does not check).
+  AGNC''s open ($9.90) equals its Friday open but lies inside Monday''s range, so
+  it was accepted. GrandMastaShake''s ''CASH 10%'' line is read as the cash remainder,
+  never as a priced row. Umassalum''s weights carry no % sign, which the issue rules
+  explicitly allow.'
+benchmark:
+  ticker: SPY
+  entry_price: 766.251
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.9
+  cash_weight: 0.1
+  picks:
+  - ticker: NUE
+    weight: 0.2
+    entry_price: 248.39
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.2
+    entry_price: 154.77
+    entry_price_source: open
+  - ticker: DDOG
+    weight: 0.15
+    entry_price: 229.73
+    entry_price_source: open
+  - ticker: LLY
+    weight: 0.15
+    entry_price: 1144.495
+    entry_price_source: open
+  - ticker: AMAT
+    weight: 0.1
+    entry_price: 455.96
+    entry_price_source: open
+  - ticker: COIN
+    weight: 0.05
+    entry_price: 205.5
+    entry_price_source: open
+  - ticker: BFLY
+    weight: 0.05
+    entry_price: 8.0
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: UPST
+    weight: 0.1
+    entry_price: 25.6
+    entry_price_source: open
+  - ticker: HNGE
+    weight: 0.2
+    entry_price: 95.08
+    entry_price_source: open
+  - ticker: HQY
+    weight: 0.2
+    entry_price: 95.45
+    entry_price_source: open
+  - ticker: AGNC
+    weight: 0.1
+    entry_price: 9.9
+    entry_price_source: open
+  - ticker: PGR
+    weight: 0.2
+    entry_price: 214.11
+    entry_price_source: open
+  - ticker: GOOG
+    weight: 0.2
+    entry_price: 346.1
+    entry_price_source: open
