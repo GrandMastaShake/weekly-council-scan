@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-21 | B (3.00 -- analysis quality) | TBD (week open) | Ophelia (3.30 rolling, tie with Cecil broken by AMD B+; thesis/ticker match restored) | Cecil (value screen may be pricing duration as cheapness; HIG's intact trigger did not measure the risk that hurt it) | AMD (B+) | HIG (B-) | 47.8% |
 | 2026-09-14 | +0.23% (Tracker P&L) | 50% | TBD | TBD | PSX (+5.26%) | HIG (-3.28%) | 40.2% |
 | 2026-09-14 | B (3.13 -- analysis quality) | TBD (week open) | Cecil (3.42 -- LEAD, only agent to build independent invalidations) | Ophelia (REVISED: thesis/ticker mismatch -- scarcity thesis, regulated utilities; prior confidence-calibration flag RESOLVED) | ALL (A-) | DE (C+) | 40.2% |
 | 2026-09-08 | +0.08% (Tracker P&L) | 50% | TBD | TBD | ETN (+1.01%) | LMT (-0.39%) | 73.4% |
@@ -277,9 +278,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-09-14 (Council session -- ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0%, 40.2% cash; EVRG + AES trigger-blocked on the utilities gate)
-**Next Audit:** 2026-09-21 (Tracker close of the 2026-09-14 week + Arena scoring of arena/2026-09-14.yaml)
-**Current Regime:** Restrictive and tightening -- VIX 15.84 (+9.0% WoW; breached 16.50 intraweek to 17.84 Wed for the first time this cycle, closed back under), 10Y **4.975%** (four straight 52W-high closes, third week above the 4.75% stress line, **2.5bp from the 5.00% crisis line**), DXY ~99.12 (broken 7th week -- and still will not rally on ~88% hike odds, an unexplained anomaly), WTI **$100.05** (first $100+ settle of the conflict regime), **5 regime flags raised** (up from 3: CPI MoM >0.3% and Oil >$100 newly broken; DXY and 10Y intensified) -- Council Review posture intensifying, not resolving. Week gates: **FOMC Wed 9/16 (~87-90% priced) stacked with August Retail Sales + Industrial Production the same day**, BOJ 9/17-18 (84-87%), FDX prints Thu 9/17 (first live read from the oil front). Board-wide rule this week, written independently by every sector desk: **nothing gets added before 2:00 PM ET Wednesday.**
+**Last Updated:** 2026-09-21 (Council session -- XOM 19.7% / AMD 16.8% / HIG 15.7%, 47.8% cash; ALL + DE trigger-blocked after their own 9/18 invalidations fired, VICI blocked as a promotion, PSX declined as crowded)
+**Next Audit:** 2026-09-28 (Tracker close of the 2026-09-21 week + Arena scoring of arena/2026-09-21.yaml + shadow-book/rejections counterfactuals for 2026-09-21)
+**Current Regime:** Restrictive and TIGHTENING -- the FOMC hiked +25bp to 3.75-4.00% on 9/16 (12-0; 16 of 18 dots see another 2026 hike). 10Y **4.998%** (first daily close above 5.00% on 9/16 at 5.006%; weekly confirmation at 5.05% not yet), 10Y-3M +102bp / 10Y-2Y +33bp (bear-flattening), VIX 14.81 (-6.5% WoW after an 18.94 FOMC-day spike), DXY **100.22** (first weekly close above 100 in eight weeks), WTI **$100.30** (canonical; the $95.47 feed print does not reproduce, #110), HY OAS 270 / IG 78 (contained, live FRED). **3 regime flags raised on canonical data** (10Y crisis line, CPI MoM, Oil >$100). This week's gate: $192B of 2/5/7-year supply Tue-Thu. Council Review posture holds.
 
 ---
 
