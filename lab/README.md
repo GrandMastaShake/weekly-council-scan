@@ -1044,3 +1044,46 @@ nothing):
   applies.
 
     python lab/pass7_combos.py
+
+## Pass 7 results
+
+Run after the registration commit (345bfcd); `results/pass7_combos.json`. The
+recomputed Marky ranking matched Pass 5's picks in every week. History, 96
+weeks, clipped edge over random per week:
+
+| Book | Edge (t) | Weeks ahead | Weekly SD | Worst drawdown | Against its baseline |
+|---|---|---|---|---|---|
+| Dash alone | -0.10% (-0.29) | 45 of 96 | 4.54% | -30.1% | (random) |
+| Quality pullback | +0.13% (+0.65) | 55 | 2.83% | -23.9% | -0.08%/wk (t -0.33) |
+| Relay | +0.39% (+1.40) | 58 of 94 | 4.40% | -22.8% | -0.20%/wk (t -0.74) |
+| Four chairs | +0.23% (+1.31) | 44 | 3.06% | -18.3% | -0.10%/wk (t -1.19) |
+| The Warden | -0.07% (-0.58) | 40 | 1.58% | -8.7% | -0.30%/wk (t -1.67) |
+| *Marky alone* | +0.22% (+0.87) | 51 | 3.55% | -28.0% | |
+| *Three chairs* | +0.33% (+1.74) | 47 | 3.16% | -16.2% | |
+| *Marky + Ophelia, same week* | +0.61% (+2.21) | 50 | 4.49% | -24.0% | |
+
+- **Dash: no.** There is no drift to buy here; the edge is slightly negative.
+  My prediction (positive, short of t 2) had the wrong sign, within noise.
+- **Quality pullback: no by the edge rule, as predicted.** It matches Marky
+  alone, and it cuts his weekly SD by a fifth and his worst drawdown from -28%
+  to -24%. As a gatekeeper, Cecil lowers the risk but does not add return.
+- **Relay: no.** On history, holding Ophelia a week late cost 0.20%/wk against
+  holding both in the same week. The lag effect was a seen-week pattern.
+- **Four chairs: no.** Dash dilutes the book.
+- **The Warden: promising under its registered rule.** It halves the weekly
+  SD (1.58% against 3.06%) and cuts the worst drawdown from -18.3% to -8.7%,
+  while its paired edge, -0.30%/wk (t -1.67), stays inside the -2 line. That
+  is a real trade-off: a third of a point a week of edge, not significant,
+  for half the risk. It is a candidate for the next quarterly change and goes
+  to the forward record first.
+
+**The best number on history is a baseline, and it is not real.** "Marky +
+Ophelia, same week" posted +0.61%/wk (t +2.21), and 90% of its clipped edge
+comes from ten of the engine-era Ophelia's names, led by RGTI, IONQ and QBTS.
+Those are the hindsight names again, rising steadily enough to pass under the
+20% clip. Trimming any book's top contributors lowers its edge; the tell is who
+those ten are.
+
+On the Council weeks (seen, decide nothing), Relay posted +0.87%/wk (ahead in
+7 of 8) and Marky alone +1.40%, while the Warden had the calmest book (weekly
+SD 0.85%) at -0.24%/wk.
