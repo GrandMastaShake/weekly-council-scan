@@ -757,3 +757,38 @@ behind the first week, weekly re-picking is not the problem, and the 96-week
 history test should come before any change to how long the Council holds.
 
     python lab/hold_check.py
+
+## Spot check results -- the picks do not keep working
+
+Run after the registration commit (b4b215f); `results/hold_check.json`, with
+every pick's three returns. Edge over random picks of the same size and
+weights, averaged over the weeks each window has closed:
+
+| Picks | Week 1 | Week 2, still holding | Month, per week |
+|---|---|---|---|
+| Ophelia's five | -0.29% (5 of 9 ahead) | +0.44% (5 of 8) | -0.05% (1 of 6) |
+| Cecil's five | +0.36% (5 of 9) | +0.26% (5 of 8) | -0.05% (3 of 6) |
+| Marky's five | +1.56% (8 of 9) | -1.51% (3 of 8) | -0.40% (1 of 6) |
+| All fifteen | +0.57% (5 of 9) | -0.30% (4 of 8) | -0.08% (3 of 6) |
+| v2.1 book | -0.32% (4 of 9) | -0.30% (4 of 8) | -0.38% (1 of 6) |
+| Real Council | -0.02% (3 of 6) | -0.12% (2 of 5) | -0.33% (1 of 4) |
+
+**Under the registered reading, the idea is embarrassed.** The following
+week's edge is negative for four of the six sets, and the month's edge per week
+trails the first week's for five of the six. Weekly re-picking is not what
+holds the picks back, and nothing here says the Council should hold longer.
+
+**Marky's edge is a bounce, not a trend.** His five beat random by 1.56% in
+their week and gave back 1.51% the next. On 08-10, MOD, AMD and DDOG rose 6-11%
+and then fell 6-8%. If his screen works at all, it works for a week, and
+holding his picks longer would hurt.
+
+**The month's big winners belonged to the market, not the picks.** From 07-27,
+NEM (+38.7%) and COP (+15.8%) look like proof on their own. Random books from
+the same 111 rose too, and the picks as a whole ended the month behind them.
+
+**One pattern held in every window:** all fifteen names together did at least
+as well as the five-name v2.1 book (week 1 +0.57% against -0.32%, week 2 level,
+month -0.08%/wk against -0.38%/wk). Six to nine weeks prove nothing, but it
+points the same way as the noise measurement: cutting fifteen names to five has
+not earned its keep.
