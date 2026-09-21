@@ -10,6 +10,8 @@
 
 **2026-09-14 review:** No active resting limits to re-bless -- the ledger is empty for a fifth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped, because "nothing to do" and "nobody looked" are indistinguishable in an empty file. Regime context for the absence: with the 10Y 2.5bp from the 5.00% crisis line and an ~88%-priced FOMC on Wednesday, the Council's own unanimous rule this week is *nothing gets added before 2:00 PM ET Wednesday* (wiki/synthesis.md Section 5) -- a resting below-market bid placed today would be a way of adding before Wednesday while telling yourself you had not. The empty ledger is the correct state this week, not an oversight.
 
+**2026-09-21 review:** No active resting limits to re-bless -- the ledger is empty for a sixth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the one resting order the wikis came closest to describing this week is Marky's XLF 200D buy zone ($53.45, wiki/financials.md -- "where I'd actually buy") and Cecil's conditional PPG/FCX buys after XLB reclaims $50.17 (wiki/synthesis.md Section 1). Neither was entered as a limit: a conditional reclaim is a trigger, not a resting price, and the Council did not vote to place either. If the owner places one, it belongs here with its blessing counter.
+
 ## Filled / Cancelled
 
 *None.*
