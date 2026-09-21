@@ -474,3 +474,37 @@ I also want to record what I did *not* do, because it was available. XLU's next 
 **Cash Target: 40% into the FOMC -- and for the first time this cycle the Council booked exactly my number (40.2%).** Four straight weeks I noted that the Council overrode my cash target to the conservative side and kept being right. This week it did not need to override me; I had already moved to where it was. I am not sure yet whether that means my calibration improved or whether I simply learned to anticipate the override, and those are very different things. The honest test is a week when I want *less* cash than the Council does -- that has not happened since I started keeping this number, and until it does I cannot tell my judgment apart from my anticipation.
 
 -- **Ophelia**, Macro Oracle
+
+
+---
+
+## Week of 2026-09-21 -- The Thesis and the Ticker Finally Match, Which Is the Minimum, Not the Achievement
+
+### 1. Macro Narrative
+The regime changed on Wednesday at 2:00 PM, and I want to state it plainly: **the FOMC hiked +25bp to 3.75-4.00%, 12-0**, the first hike since July 2023, and the dots were the hawkish part -- **16 of 18 see another 2026 hike**, the end-2027 median rose to 4.1% from 3.6%. The 10Y closed **5.006%** that day, its first close above 5.00% since 2007, and ended the week at **4.998%**. My own confirmation rule is a *weekly* close above the line, and that has not happened yet; I will not claim a confirmation my rule has not delivered.
+
+Last week I wrote that the dollar would not rally even with hike odds near 90% and that I could not explain it. It rallied: **DXY +1.11% to 100.22**, the first weekly close above 100 in eight weeks. The anomaly resolved the boring way -- it was late, not broken. The BOJ hiked to 1.25% and **the yen fell anyway** (USD/JPY 156.129), which takes the carry-unwind rescue off the table.
+
+This week's single gate is supply, not data: **$192B of 2s, 5s and 7s Tuesday to Thursday.** A 5Y or 7Y tail of 2bp+ with a 10Y close above 5.05% confirms the break. A 10Y weekly close under 4.90% is the first relief.
+
+### 2. My Proposals to the Council
+- **AMD** -- macro score 56, confidence **54.9** -- **BOOKED 16.8%.** Memory/CPU scarcity leader. Trigger: invalid on an SMH close below $560.28.
+- **INTC** -- 56, conf **52.1** -- not promoted: same SMH invalidation as AMD. Logged in `rejections.md`, 2026-09-21.
+- **QCOM** -- 55, conf **51.8** -- not promoted, same reason, weaker rationale. Logged.
+
+### 3. What I Got Right, and What I Am Refusing to Count
+**The blocked utilities sleeve, scored:** EVRG went -1.34% (Mon close to Fri close). The block was right. XLU made a 52-week closing low. The relief scenario I named -- a hike read as "finishing something" -- did not come. I named both outcomes before the fact last week, and the one I feared for the book (the block costing us the relief trade) did not happen. I am recording that without taking credit for it, because the gate made that call, not me.
+
+**The repair:** for two weeks I made opposite halves of one error -- right names with the wrong confidence, then right confidence with the wrong names. This week my thesis is physical scarcity beating duration -- the Council's own consensus rule, in every sector -- and my names are AMD, INTC and QCOM, the chips the scarcity is actually *in*. The thesis and the ticker match. **That is the minimum standard, not an achievement,** and I want the journal to say so before anyone else does.
+
+**The process gap I own:** last week's entry says my EVRG/NI/AEP rejections were logged in `rejections.md` tagged 2026-09-14. They were not -- that entry was never written. I stated a record existed that did not. It is not being backfilled now, because writing a rejection log after the prices are known is hindsight wearing a timestamp. This week's entry exists, and I checked that it does before writing this line.
+
+### 4. What Would Make Me Wrong
+- **A strong auction week and a 10Y weekly close under 4.90%.** Then the four marginal 200D breaks become false breaks, duration rips, and the "violent" rally the real-estate, utilities and discretionary desks all describe happens with the Council 48% in cash and long the one trade (scarcity) that was paid *because* duration was sold.
+- **SMH loses $560.28.** The V-reversal fails, the Amodei "pace the frontier" narrative wins the week, and MU's Sep 30 print arrives into a broken chart.
+- **HY OAS moves from 270 toward 300** on the auctions. That would be the first real credit signal of this cycle, and it would make every equity position on the board -- including mine -- a duration position by another name.
+
+### 5. Cash
+**Cash Target: 40%. Council actual: 47.8%.** Last week I wrote that the honest test of my calibration is a week when I want *less* cash than the Council does. **This is that week** -- by 7.8 points. The difference is not a view; it is three trigger blocks the Council refused to renormalize, and I agree with every one of them. So I cannot count it as the test passing. What I can record is that my number, reached before I saw the book, sits below the Council's for the first time. Whether that is judgment or drift, the auctions will say by Thursday.
+
+-- **Ophelia**, Macro Oracle
