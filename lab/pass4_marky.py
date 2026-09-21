@@ -118,7 +118,10 @@ def replay(weeks, names, start, cal, modes=MODES):
                             if len(scored) >= 20 else None)
                 lean_3w = (lab.spearman([s["score"] for s in scored], [ret3w[s["ticker"]] for s in scored])
                            if len(scored) >= 20 else None)
+                by = {s["ticker"]: s for s in ranking}
                 row[mode] = {"picks": picks, "ret": book, "alpha": book - spy,
+                             "top": [{k: v for k, v in by[t].items() if isinstance(v, (int, float, str, bool))}
+                                     for t in picks],
                              "vs_random": book - statistics.fmean(draws),
                              "pctile": sum(1 for d in draws if d < book) / len(draws),
                              "ic": ics, "lean_vol": lean_vol, "lean_3w": lean_3w, "scored": len(ranking)}

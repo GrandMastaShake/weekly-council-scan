@@ -340,6 +340,49 @@ def _ema(values: List[float], span: int) -> List[float]:
     return out
 
 
+def channel_facts(closes: List[float]) -> Optional[Dict[str, Any]]:
+    """Marky's channel reading of one name from its weekly closes (at least
+    40; the last 52 are used). None when the history is too short. Otherwise
+    the channel's numbers, whether the name qualifies, why not if it does not,
+    and the three score legs -- the same math _analyze_channel ranks with, so
+    a debate can ask Marky about any name, not only his own five."""
+    closes = [c for c in closes if c and c > 0][-WEEKS_52:]
+    if len(closes) < MIN_WEEKS_52:
+        return None
+    window = closes[-CHANNEL_WEEKS:]
+    n = len(window)
+    ys = [math.log(c) for c in window]
+    xbar, ybar = (n - 1) / 2.0, sum(ys) / n
+    sxx = sum((x - xbar) ** 2 for x in range(n))
+    slope = sum((x - xbar) * (y - ybar) for x, y in zip(range(n), ys)) / sxx
+    resid = [y - (ybar + slope * (x - xbar)) for x, y in zip(range(n), ys)]
+    width = (sum(r * r for r in resid) / (n - 2)) ** 0.5
+    z = resid[-1] / width if width > 0 else 0.0
+    ma40 = sum(closes[-40:]) / 40.0
+    ma40_before = sum(closes[-50:-10]) / 40.0 if len(closes) >= 50 else None
+    rising = ma40_before is not None and ma40 > ma40_before
+    macd = [a - b for a, b in zip(_ema(closes, 12), _ema(closes, 26))]
+    hist = [m - g for m, g in zip(macd, _ema(macd, 9))]
+    hist_rising = hist[-1] > hist[-2]
+    slope_year = math.exp(52.0 * slope) - 1.0
+    if slope <= 0:
+        why_not = "channel slopes down"
+    elif not rising:
+        why_not = "40-week average not rising"
+    elif z < -2.5:
+        why_not = "broke below the channel"
+    else:
+        why_not = None
+    return {
+        "qualifies": why_not is None, "why_not": why_not,
+        "z": z, "slope_year": slope_year, "hist_rising": hist_rising, "macd_above_zero": macd[-1] > 0,
+        "position_score": 50.0 * clamp(-z / 1.5, 0.0, 1.0),
+        "trend_score": 20.0 * clamp(slope_year / 0.30, 0.0, 1.0),
+        "macd_score": (20.0 if hist_rising else 0.0) + (10.0 if macd[-1] > 0 else 0.0),
+        "weeks": len(closes),
+    }
+
+
 def _analyze_channel(market_data: Dict[str, Any], date: str,
                      price_cache: Optional[Dict[str, List]] = None) -> Dict[str, Any]:
     """Council v2 Marky, the owner's revision: buy the pullback in an uptrend.
@@ -366,37 +409,13 @@ def _analyze_channel(market_data: Dict[str, Any], date: str,
     scores = []
     for ticker in scan_universe(date):
         history = get_price_history(ticker, date, WEEKS_52, price_cache)
-        closes = [h.close for h in history if h.close and h.close > 0]
-        if len(closes) < MIN_WEEKS_52:
+        f = channel_facts([h.close for h in history if h.close and h.close > 0])
+        if f is None or not f["qualifies"]:
             continue
-        window = closes[-CHANNEL_WEEKS:]
-        n = len(window)
-        ys = [math.log(c) for c in window]
-        xbar, ybar = (n - 1) / 2.0, sum(ys) / n
-        sxx = sum((x - xbar) ** 2 for x in range(n))
-        slope = sum((x - xbar) * (y - ybar) for x, y in zip(range(n), ys)) / sxx
-        resid = [y - (ybar + slope * (x - xbar)) for x, y in zip(range(n), ys)]
-        width = (sum(r * r for r in resid) / (n - 2)) ** 0.5
-        z = resid[-1] / width if width > 0 else 0.0
-        ma40 = sum(closes[-40:]) / 40.0
-        ma40_before = sum(closes[-50:-10]) / 40.0 if len(closes) >= 50 else None
-        rising = ma40_before is not None and ma40 > ma40_before
-        if slope <= 0 or not rising or z < -2.5:
-            continue
-        macd = [a - b for a, b in zip(_ema(closes, 12), _ema(closes, 26))]
-        hist = [m - g for m, g in zip(macd, _ema(macd, 9))]
-        hist_rising = hist[-1] > hist[-2]
-        slope_year = math.exp(52.0 * slope) - 1.0
-        position_score = 50.0 * clamp(-z / 1.5, 0.0, 1.0)
-        trend_score = 20.0 * clamp(slope_year / 0.30, 0.0, 1.0)
-        macd_score = (20.0 if hist_rising else 0.0) + (10.0 if macd[-1] > 0 else 0.0)
-        total = wiki_signals.adjusted_score(ticker, position_score + trend_score + macd_score, signals)
-        scores.append({
-            "ticker": ticker, "score": total, "sector": get_sector(ticker),
-            "z": z, "slope_year": slope_year, "hist_rising": hist_rising, "macd_above_zero": macd[-1] > 0,
-            "position_score": position_score, "trend_score": trend_score, "macd_score": macd_score,
-            "weeks": len(closes), "avg_dollar_volume": avg_dollar_volume(history[-12:]),
-        })
+        total = wiki_signals.adjusted_score(ticker, f["position_score"] + f["trend_score"] + f["macd_score"],
+                                            signals)
+        scores.append(dict(f, ticker=ticker, score=total, sector=get_sector(ticker),
+                           avg_dollar_volume=avg_dollar_volume(history[-12:])))
 
     # Sort by score, then the deeper pullback, then liquidity; alphabetical
     # pre-sort keeps any surviving tie deterministic.

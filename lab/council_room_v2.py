@@ -25,11 +25,14 @@ leverage, cash flow) stays out rather than being filled with today's numbers.
 
 Scoring: each member's five, equal-weighted, Monday open -> Friday close,
 against random fives drawn from the same 111's tradeable names. Marky's five
-come from Pass 4 (results/pass4_marky.json).
+come from Pass 5 (results/pass5_marky.json), the channel mode.
 
     python lab/council_room_v2.py build DIR
     python lab/council_room_v2.py pass3 DIR     # after pass 2: each week's sheet
     python lab/council_room_v2.py score DIR
+    python lab/council_room_v2.py debate DIR    # the members' logs, for the synthesis agent
+    python lab/council_room_v2.py approve DIR   # after the draft: each member's approval folder
+    python lab/council_room_v2.py final DIR     # after the votes: the rule, then the scores
 """
 from __future__ import annotations
 
@@ -38,6 +41,7 @@ import csv
 import json
 import random
 import re
+import shutil
 import statistics
 import sys
 from datetime import date, timedelta
@@ -335,12 +339,224 @@ def score(out_dir):
         fh.write("\n")
 
 
+# ---------------------------------------------------------------------------
+# The debate: synthesis draft -> each member approves or objects -> final
+# ---------------------------------------------------------------------------
+LENS = {
+    "Ophelia": "the Council's sector strategist: you judge whether a name fits the sector calls you made for this week",
+    "Cecil": "the Council's value investor: you judge whether a business is cheap and sound",
+    "Marky": "the Council's chart reader: you buy pullbacks in rising channels, with weekly MACD turning up",
+}
+
+
+def _weekdirs(out_dir):
+    return sorted(p for p in Path(out_dir).iterdir() if p.is_dir() and p.name[:4].isdigit())
+
+
+def _marky_top():
+    p5 = json.loads((lab.RESULTS / "pass5_marky.json").read_text(encoding="utf-8"))
+    return {r["week"]: r["channel"]["top"] for r in p5["weeks"]["council"]}
+
+
+def _chart_line(t, f):
+    if f is None:
+        return f"- **{t}**: under 40 weeks of closes; no reading."
+    head = "qualifies" if f["qualifies"] else f"does not qualify ({f['why_not']})"
+    return (f"- **{t}**: {head}. {abs(f['z']):.1f} widths {'below' if f['z'] < 0 else 'above'} its 26-week "
+            f"channel line, which {'rises' if f['slope_year'] >= 0 else 'falls'} {abs(f['slope_year']) * 100:.0f}% "
+            f"a year; weekly MACD histogram {'rising' if f['hist_rising'] else 'falling'}, MACD line "
+            f"{'above' if f['macd_above_zero'] else 'below'} zero.")
+
+
+def debate(out_dir):
+    """Round 2 inputs: debate/logs.md (each member's five with its reasoning)
+    and debate/sheet.csv (the facts for every name in the union)."""
+    marky = _marky_top()
+    for d in _weekdirs(out_dir):
+        o, c = d / "ophelia/pass3/result.json", d / "cecil/result.json"
+        if not (o.exists() and c.exists() and marky.get(d.name)):
+            print(f"  {d.name}: a member's five is missing")
+            continue
+        od, cd = json.loads(o.read_text(encoding="utf-8")), json.loads(c.read_text(encoding="utf-8"))
+        sectors = json.loads((d / "ophelia/pass3/my_sectors.json").read_text(encoding="utf-8"))
+        lines = [f"# The Council's debate logs -- week of {d.name}", "",
+                 "Three members with three different jobs picked five names each, working apart and "
+                 "without seeing one another's picks.", "",
+                 "## Ophelia -- sector rotation", "", "Her four sectors this week:", ""]
+        lines += [f"- **{s['sector']}**: {s['thesis']}" for s in sectors["final4"]]
+        lines += ["", "Her five:", ""]
+        lines += [f"- **{p['ticker']}** ({p.get('sector', '')}): {p['why']}" for p in od["picks"]]
+        lines += ["", f"Her summary: {od.get('summary', '')}", "",
+                  "## Cecil -- value", "", "His five:", ""]
+        lines += [f"- **{p['ticker']}**: {p['why']}" for p in cd["picks"]]
+        lines += ["", f"His summary: {cd.get('summary', '')}", "",
+                  "## Marky -- the chart: pullbacks in rising channels", "",
+                  "His five, the top of his ranking (a numeric screen; he writes no prose):", ""]
+        lines += [_chart_line(t["ticker"], t) for t in marky[d.name]]
+        union = list(dict.fromkeys([p["ticker"].upper() for p in od["picks"]]
+                                   + [p["ticker"].upper() for p in cd["picks"]]
+                                   + [t["ticker"] for t in marky[d.name]]))
+        (d / "debate").mkdir(exist_ok=True)
+        with open(d / "debate/logs.md", "w", encoding="utf-8", newline="\n") as fh:
+            fh.write("\n".join(lines) + "\n")
+        with open(d / "sheet_all.csv", encoding="utf-8", newline="") as fh:
+            rows = [r for r in csv.DictReader(fh) if r["ticker"] in union]
+        _write_csv(d / "debate/sheet.csv", rows, list(rows[0]))
+        print(f"  {d.name}: {len(union)} names in the union")
+
+
+def approve(out_dir):
+    """Round 3 inputs, after the synthesis draft: one folder per member, each
+    with the draft and only that member's own lens on its names."""
+    weeks, names, raw, adj = _data()
+    from scan_pipeline.engines.marky import channel_facts
+    from scan_pipeline.fetch_market_data import _aggregate_weekly
+    mondays = {label: W for label, W, _ in weeks}
+    for d in _weekdirs(out_dir):
+        dr = d / "debate/draft.json"
+        if not dr.exists():
+            continue
+        draft = json.loads(dr.read_text(encoding="utf-8"))
+        book = [b["ticker"].upper() for b in draft["book"]]
+        md = [f"# The synthesis draft -- week of {d.name}", "",
+              f"Cash: {draft.get('cash', 0) * 100:.0f}%. Rationale: {draft.get('rationale', '')}", ""]
+        md += [f"- **{b['ticker']}** {b['weight'] * 100:.0f}% -- backed by {', '.join(b.get('backers', [])) or 'none'}: "
+               f"{b['why']}" for b in draft["book"]]
+        with open(d / "sheet_all.csv", encoding="utf-8", newline="") as fh:
+            sheet = {r["ticker"]: r for r in csv.DictReader(fh)}
+        W = mondays[d.name]
+        for who in ("Ophelia", "Cecil", "Marky"):
+            a = d / "approve" / who.lower()
+            a.mkdir(parents=True, exist_ok=True)
+            with open(a / "draft.md", "w", encoding="utf-8", newline="\n") as fh:
+                fh.write("\n".join(md) + "\n")
+            rows = [sheet[t] for t in book if t in sheet]
+            if who == "Ophelia":
+                shutil.copyfile(d / "ophelia/pass3/my_sectors.json", a / "my_sectors.json")
+                _write_csv(a / "facts.csv", rows, ["ticker", "company", "sector", "industry", "close",
+                                                   "ret_1w_pct", "ret_4w_pct", "ret_12w_pct"])
+            elif who == "Cecil":
+                _write_csv(a / "value.csv", rows, ["ticker", "company", "sector", "industry", "close", "pe_ttm",
+                                                   "eps_growth_pct", "weekly_vol_12w_pct", "ret_12w_pct",
+                                                   "cap_usd_bn_approx"])
+            else:
+                lines = [f"# Marky's chart reading of the draft -- week of {d.name}", ""]
+                for t in book:
+                    closes = [h.close for h in _aggregate_weekly(raw[t].before(W, 400))] if t in raw else []
+                    lines.append(_chart_line(t, channel_facts(closes)))
+                with open(a / "chart.md", "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write("\n".join(lines) + "\n")
+        print(f"  {d.name}: approval folders for {', '.join(book)}")
+
+
+def final(out_dir):
+    """Round 4, by rule: a name two of three members object to is swapped for
+    the first unused alternate (which inherits its weight); objections that
+    did not carry are kept as dissents. Then everything is scored."""
+    weeks, names, raw, adj = _data()
+    cal = lab.earnings_calendar(names)
+    from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
+    marky = {w: [t["ticker"] for t in top] for w, top in _marky_top().items()}
+    rows = []
+    for label, W, council_book in weeks:
+        d = Path(out_dir) / label
+        dr = d / "debate/draft.json"
+        votes = {who: d / "approve" / who.lower() / "result.json" for who in ("Ophelia", "Cecil", "Marky")}
+        if not dr.exists() or not all(v.exists() for v in votes.values()):
+            continue
+        draft = json.loads(dr.read_text(encoding="utf-8"))
+        objections = {}
+        for who, v in votes.items():
+            for x in json.loads(v.read_text(encoding="utf-8"))["votes"]:
+                if x["vote"] == "object":
+                    objections.setdefault(x["ticker"].upper(), []).append((who, x["reason"]))
+        alts = [a.upper() for a in draft.get("alternates", [])]
+        final_book, swaps, dissents = [], [], []
+        for b in draft["book"]:
+            t, w = b["ticker"].upper(), float(b["weight"])
+            obj = objections.get(t, [])
+            if len(obj) >= 2 and alts:
+                new = alts.pop(0)
+                swaps.append({"out": t, "in": new, "objections": obj})
+                final_book.append((new, w))
+            else:
+                final_book.append((t, w))
+                dissents += [{"ticker": t, "member": m, "reason": r} for m, r in obj]
+        with open(d / "debate/final.json", "w", encoding="utf-8", newline="\n") as fh:
+            json.dump({"week": label, "book": [{"ticker": t, "weight": w} for t, w in final_book],
+                       "swaps": swaps, "dissents": dissents}, fh, indent=1)
+            fh.write("\n")
+
+        def ret(t):
+            s = adj.get(t)
+            r = s.week_return(W) if s else None
+            return 0.0 if r is None else r
+        F = _aggregate_weekly(raw["SPY"].before(W, 92))[-1].date
+        tradeable = []
+        for t in names:
+            nxt = lab._next_report(cal.get(t), F) if t in raw else None
+            etd = _business_days_between(F, nxt) if nxt else None
+            if t in raw and not (etd is not None and 0 <= etd <= 5):
+                tradeable.append(t)
+        spy = adj["SPY"].week_return(W) or 0.0
+
+        def scored(book, tag):
+            ws = sorted((w for _, w in book), reverse=True)
+            r = sum(w * ret(t) for t, w in book)
+            rng = random.Random(f"{lab.SEED}-{W}-{tag}")
+            draws = [sum(w * ret(t) for t, w in zip(rng.sample(tradeable, len(ws)), ws))
+                     for _ in range(lab.RANDOM_DRAWS)] if ws else [0.0]
+            return {"book": [(t, round(w, 4)) for t, w in book], "ret": r, "alpha": r - spy,
+                    "invested": sum(ws), "vs_random": r - statistics.fmean(draws),
+                    "pctile": sum(1 for x in draws if x < r) / len(draws)}
+        draft_book = [(b["ticker"].upper(), float(b["weight"])) for b in draft["book"]]
+        row = {"week": label, "spy": spy, "draft": scored(draft_book, "draft"),
+               "final": scored(final_book, "final"),
+               "council": sum(w * ret(t) for t, w in council_book) if council_book else 0.0,
+               "swaps": len(swaps), "dissents": len(dissents)}
+        rows.append(row)
+        f = row["final"]
+        print(f"  {label}  final {f['ret']*100:+6.2f}% (a {f['alpha']*100:+5.2f}, inv {f['invested']:.0%}, "
+              f"pctile {f['pctile']:.0%})  draft {row['draft']['ret']*100:+6.2f}%  council {row['council']*100:+6.2f}%  "
+              f"SPY {spy*100:+5.2f}%  swaps {len(swaps)}  {', '.join(f'{t} {w:.0%}' for t, w in final_book)}")
+    if not rows:
+        return
+    summary = {}
+    for k in ("draft", "final"):
+        r = [x[k] for x in rows]
+        cum, dd = lab._curve([x["ret"] for x in r])
+        summary[k] = {"weeks": len(r), "mean_alpha": statistics.fmean(x["alpha"] for x in r),
+                      "alpha_t": lab._tstat([x["alpha"] for x in r]),
+                      "mean_vs_random": statistics.fmean(x["vs_random"] for x in r),
+                      "vs_random_t": lab._tstat([x["vs_random"] for x in r]),
+                      "mean_pctile": statistics.fmean(x["pctile"] for x in r),
+                      "mean_invested": statistics.fmean(x["invested"] for x in r),
+                      "cumulative": cum, "max_drawdown": dd}
+    vc = [x["final"]["ret"] - x["council"] for x in rows]
+    summary["final_vs_council"] = {"mean": statistics.fmean(vc), "t": lab._tstat(vc),
+                                   "weeks_better": sum(1 for v in vc if v > 0)}
+    summary["swaps"] = sum(x["swaps"] for x in rows)
+    summary["dissents"] = sum(x["dissents"] for x in rows)
+    for k in ("draft", "final"):
+        s = summary[k]
+        print(f"  {k:<6} alpha {s['mean_alpha']*100:+.2f}%/wk (t {s['alpha_t']:+.2f}), vs random "
+              f"{s['mean_vs_random']*100:+.2f}%/wk (t {s['vs_random_t']:+.2f}, pctile {s['mean_pctile']:.0%}), "
+              f"invested {s['mean_invested']:.0%}, cum {s['cumulative']*100:+.1f}%, max DD {s['max_drawdown']*100:.1f}%")
+    s = summary["final_vs_council"]
+    print(f"  final vs the real Council: {s['mean']*100:+.2f}%/wk (t {s['t']:+.2f}), better {s['weeks_better']}/{len(rows)}; "
+          f"swaps {summary['swaps']}, dissents kept {summary['dissents']}")
+    with open(lab.RESULTS / "room_v2_debate.json", "w", encoding="ascii", newline="\n") as fh:
+        json.dump({"summary": summary, "weeks": rows}, fh, indent=1, default=float)
+        fh.write("\n")
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("build", "pass3", "score"))
+    ap.add_argument("command", choices=("build", "pass3", "score", "debate", "approve", "final"))
     ap.add_argument("dir")
     a = ap.parse_args(argv)
-    {"build": build, "pass3": pass3, "score": score}[a.command](a.dir)
+    {"build": build, "pass3": pass3, "score": score, "debate": debate, "approve": approve,
+     "final": final}[a.command](a.dir)
 
 
 if __name__ == "__main__":

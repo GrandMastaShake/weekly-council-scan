@@ -494,3 +494,26 @@ first design in any pass to beat random picks on the Council's own weeks.
 It is genuinely a different job. Its ranking has no preference for a calm tape
 (+0.05, against classic's -0.17), and it leans away from short-term strength
 (-0.31, against classic's +0.81).
+
+## Council Room v2 -- the debate (registered before any debate agent ran)
+
+The owner's design for how three separate jobs become one book
+([council_v2.md](council_v2.md)): the members' fives and reasoning (the debate
+logs) go to a synthesis agent. It drafts the book: up to 5 names, 5-30% each,
+at least 80% invested, plus two alternates. Each member then approves or
+objects to each name in its own fresh pass, seeing only its own lens. A name
+two of the three object to is swapped for an alternate. Prompts are in
+`council_room_v2_prompts.md`.
+
+**What is scored.** The final book at its weights, against random books drawn
+at the same weights from the 111's tradeable names. Alongside it: the draft
+before approval (did the vote help?), the real Council's book, and SPY.
+
+**What counts.** The same breakage standard as the members: a final book that
+trails random picks with t <= -2 is flagged to the owner with its cause before
+Council v2 goes live. Nine weeks cannot prove the debate adds skill; the
+forward record will.
+
+    python lab/council_room_v2.py debate DIR
+    python lab/council_room_v2.py approve DIR
+    python lab/council_room_v2.py final DIR

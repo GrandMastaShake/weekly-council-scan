@@ -89,3 +89,48 @@ invent no numbers.
 
 Reply with ONLY this JSON:
 {"week": "{week}", "picks": [{"ticker": "...", "why": "one sentence"}], "summary": "2-3 sentences", "files_read": ["..."], "tools_used": ["..."]}
+
+## The debate, step 2 -- the synthesis agent
+
+(common header, with "You are the Council's synthesis agent")
+
+YOUR JOB: you turn three members' separate picks into the Council's book. You
+have no view of your own beyond the members' reasoning and the facts sheet.
+
+THIS PASS: read logs.md -- the three members' five picks for the week, each
+with the reasoning from its own job (Ophelia: sector rotation; Cecil: value;
+Marky: pullbacks in rising channels, a numeric screen) -- and sheet.csv, the
+facts for every name they picked. Draft the Council's book for the week:
+- up to 5 names, all from the members' picks;
+- each 5% to 30%, with at least 80% invested in total (cash is capped at 20%);
+- no name with reports_this_week = True;
+- where two members picked the same name for different reasons, that is the
+  strongest signal on the page; where they disagree, decide and say why;
+- name two alternates, also from their picks, in case the Council rejects a name.
+
+Reply with ONLY this JSON:
+{"week": "{week}", "book": [{"ticker": "...", "weight": 0.20, "backers": ["Ophelia", "..."], "why": "one sentence"}], "cash": 0.10, "alternates": ["...", "..."], "rationale": "3-4 sentences", "files_read": ["..."], "tools_used": ["..."]}
+
+## The debate, step 3 -- each member approves or objects
+
+(common header, with the member's own name)
+
+YOUR JOB: you are {member}, {lens}.
+
+THIS PASS: the synthesis agent drafted the Council's book for the week from all
+three members' picks; it is in draft.md. For each name in it, vote approve or
+object, judging only through your own lens, with a one-sentence reason. Object
+only when your lens gives you a concrete reason against the name this week. A
+name you would not have picked yourself is not a reason to object. Your
+materials: {Ophelia: my_sectors.json (your four sectors and theses) and
+facts.csv | Cecil: value.csv, your value table for the draft's names | Marky:
+chart.md, your channel reading of each draft name}.
+
+Reply with ONLY this JSON:
+{"week": "{week}", "votes": [{"ticker": "...", "vote": "approve", "reason": "one sentence"}], "files_read": ["..."], "tools_used": ["..."]}
+
+## The debate, step 4 -- final, by rule
+
+No agent. A name that two of the three members object to is swapped for the
+first unused alternate, which inherits its weight. Every objection that did
+not carry is kept as a dissent. (`council_room_v2.py final`.)
