@@ -56,11 +56,14 @@ Price data is cached in `lab/cache/` (gitignored). Results go to `lab/results/`.
 | Equal-weight universe | | | | | +0.9% |
 
 Contribution vs SPY by sponsor, replayed book: Ophelia -7.80%, Marky -2.34%,
-Cecil -1.56%. Ophelia's 40-point "last week's top sector" anchor chases one-week
-winners into the reversal (MPC/VLO/PSX after energy led, EVRG/NI/AEP after
-utilities led, TPR/ABNB/ORLY after discretionary led); the 2026-08-10 book it
-drove lost 4.75%, worse than all 200 random draws. The real Council aborted that
-week and held cash.
+Cecil -1.56%. Two names are 6.85 of Ophelia's 7.80 points: TPR (-20.1%, held
+through its 8/13 earnings) and TER (-11.6%). The 2026-08-10 book TPR sank lost
+4.75%, worse than all 200 random draws; the real Council aborted that week and
+held cash.
+
+*Corrected in Pass 2.* This paragraph first blamed a "last week's top sector"
+anchor chasing one-week winners into a reversal. The anchor actually reads the
+week before last, and the Pass 2 diagnostics do not support the reversal story.
 
 ## Pass 2 -- registered before any variant was run
 
@@ -100,6 +103,52 @@ hold:
 
 A variant that passes goes live as a forward test: the lab reruns each Monday
 as the set grows, and a variant that stops passing is reverted.
+
+## Pass 2 results -- Engine Lab
+
+Run after the registration commit (8a2ea49); `results/pass2_variants.json`.
+
+| Variant | Alpha / wk | vs random | Pctile | vs baseline, paired | Weeks better | Without best week | Cumulative | Max DD |
+|---|---|---|---|---|---|---|---|---|
+| baseline | -1.32% | -1.13% | 37% | -- | -- | -- | -9.2% | -10.3% |
+| O-rs | -0.20% | -0.01% | 50% | +1.12% (t 2.13) | 7/9 | +0.64% | +0.6% | -3.4% |
+| O-rs+ | -0.76% | -0.56% | 36% | +0.56% (t 1.02) | 6/9 | +0.08% | -4.4% | -6.5% |
+| M-15 | -1.27% | -1.07% | 36% | +0.06% (t 0.23) | 4/9 | -0.10% | -8.7% | -10.5% |
+| M-0 | -1.59% | -1.41% | 31% | -0.27% (t -0.92) | 2/9 | -0.47% | -11.3% | -11.4% |
+| O-rs+M-15 | -0.23% | -0.04% | 46% | +1.09% (t 1.75) | 6/9 | +0.60% | +0.3% | -4.6% |
+| no-Ophelia (reference) | -0.72% | -0.52% | 40% | +0.60% (t 1.18) | 6/9 | +0.12% | -4.0% | -6.0% |
+
+**Under the registered rule, nothing ships.**
+
+- **O-rs** passes the book tests (2, 3) and fails the mechanism test (1). The
+  input it removes is not negative: Ophelia's rotation score has a stock-level
+  IC of +0.005, and the week-before-last sector return a sector-level IC of
+  +0.063. The input it adds ranks sectors no better (sector-level IC -0.069).
+  The book improves because 12-1 strength parked Ophelia in Healthcare for 8 of
+  the 9 weeks, and its top sector beat the universe by 0.90%/wk: one sector
+  call that paid, not a better method. Its single best week (+4.98
+  points) is the week it happened to miss TPR's earnings collapse.
+- **O-rs+** adds nothing: the stock-level 12-1 return is itself negative (IC
+  -0.034).
+- **M-15 / M-0**: less weight on a calm tape does nothing, and none at all
+  hurts. Marky's low-vol leg is not his problem (IC -0.002).
+
+**What the diagnostics show instead.** These came out of the same nine weeks,
+so they are hypotheses to test forward, not findings:
+
+1. *Short-horizon stock momentum ran backwards.* A name's return over the prior
+   three weeks had a negative rank IC with its next week in 8 of 9 weeks (mean
+   -0.053, t -1.90), and more volatile names beat calmer ones (IC +0.08 to
+   +0.10). Both engines lean on that input: Marky's momentum leg (IC -0.040,
+   t -2.17) and Ophelia's relative-momentum leg (IC -0.055, t -1.80). It is the
+   textbook short-term reversal in single stocks, which is a reason to take it
+   seriously, not proof that it will persist.
+2. *Ophelia's anchor is a week stale.* It reads the week before last, a lag
+   inherited from the original app (`getPriorWeekDate`). Last week's top sector
+   beat the universe the following week in 8 of 9 weeks (+0.72%/wk); the
+   week-before-last's, which is what she uses, in 5 of 9 (-0.29%/wk).
+3. *Earnings screening covers one engine.* Only Cecil's picks are checked for
+   earnings proximity; TPR was Ophelia's, held through its print.
 
 ## Council Room V1 -- brief-first (registered before any agent ran)
 

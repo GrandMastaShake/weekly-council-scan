@@ -1,0 +1,3260 @@
+{
+ "pass": 2,
+ "variants": {
+  "baseline": {},
+  "O-rs": {
+   "ophelia.SECTOR_SIGNAL": "rs_12_1"
+  },
+  "O-rs+": {
+   "ophelia.SECTOR_SIGNAL": "rs_12_1",
+   "ophelia.STOCK_SIGNAL": "rs_12_1"
+  },
+  "M-15": {
+   "marky.LOW_VOL_POINTS": 15.0
+  },
+  "M-0": {
+   "marky.LOW_VOL_POINTS": 0.0
+  },
+  "O-rs+M-15": {
+   "ophelia.SECTOR_SIGNAL": "rs_12_1",
+   "marky.LOW_VOL_POINTS": 15.0
+  },
+  "no-Ophelia": {
+   "drop": "Ophelia"
+  }
+ },
+ "generated": "2026-09-21 11:29",
+ "summaries": {
+  "baseline": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.01322826273683792,
+    "alpha_t": -2.1127440209093833,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_vs_random": -0.011335207742481158,
+    "vs_random_t": -1.5957795480131247,
+    "mean_pctile_vs_random": 0.36777777777777776,
+    "mean_invested": 0.9708,
+    "mean_sponsors": 3.0,
+    "cumulative": -0.09163629373152549,
+    "max_drawdown": -0.10328180215239502
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   }
+  },
+  "O-rs": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.0020437750753850366,
+    "alpha_t": -0.4212119058618767,
+    "weeks_beating_spy": 0.4444444444444444,
+    "mean_vs_random": -5.790611428445591e-05,
+    "vs_random_t": -0.013402109856086438,
+    "mean_pctile_vs_random": 0.49833333333333335,
+    "mean_invested": 0.9773888888888889,
+    "mean_sponsors": 3.0,
+    "cumulative": 0.005836552065652256,
+    "max_drawdown": -0.03414928360464664
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": 0.011184487661452882,
+    "diff_t": 2.1259754713049217,
+    "weeks_better": 7,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": 0.006359275851595391,
+    "diff_by_week": [
+     0.003983964580494987,
+     0.0034009132473235186,
+     -0.0004776088732169198,
+     0.049786182140312815,
+     0.013428365154432062,
+     -0.0006062833392849985,
+     0.00619281112041013,
+     0.0060771299785971344,
+     0.018874914944007216
+    ]
+   }
+  },
+  "O-rs+": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.007637825306510296,
+    "alpha_t": -1.894514421700215,
+    "weeks_beating_spy": 0.3333333333333333,
+    "mean_vs_random": -0.005645871507763131,
+    "vs_random_t": -1.2733722778461154,
+    "mean_pctile_vs_random": 0.3611111111111111,
+    "mean_invested": 0.968488888888889,
+    "mean_sponsors": 3.0,
+    "cumulative": -0.043905719633674956,
+    "max_drawdown": -0.06464505602164139
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": 0.005590437430327623,
+    "diff_t": 1.0223803020048547,
+    "weeks_better": 6,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": 0.0008440709683698863,
+    "diff_by_week": [
+     -0.009958547394967422,
+     0.0014280124276925803,
+     0.00016539664511132975,
+     0.04356136912598951,
+     0.0023208245504781726,
+     0.004845023593718885,
+     -0.00043871270680566864,
+     -0.009423973807882215,
+     0.017814544439613427
+    ]
+   }
+  },
+  "M-15": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.01266104290626084,
+    "alpha_t": -1.8211546148581876,
+    "weeks_beating_spy": 0.3333333333333333,
+    "mean_vs_random": -0.010697236833212114,
+    "vs_random_t": -1.5051452038996689,
+    "mean_pctile_vs_random": 0.35888888888888887,
+    "mean_invested": 0.9723666666666667,
+    "mean_sponsors": 3.0,
+    "cumulative": -0.08702604395396063,
+    "max_drawdown": -0.10489211667135556
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": 0.0005672198305770791,
+    "diff_t": 0.2303875512068035,
+    "weeks_better": 4,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": -0.0010381473501466375,
+    "diff_by_week": [
+     -2.803283316744204e-07,
+     0.009274526924402237,
+     -0.0032567479649446836,
+     0.0028610967698807083,
+     0.013410157276366812,
+     -0.0062700936284091225,
+     -0.0015026936953629801,
+     -0.010571983167180506,
+     0.0011609962887729206
+    ]
+   }
+  },
+  "M-0": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.015886464015460976,
+    "alpha_t": -2.569528754596319,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_vs_random": -0.014142820558967836,
+    "vs_random_t": -2.2709278682328633,
+    "mean_pctile_vs_random": 0.31222222222222223,
+    "mean_invested": 0.9753666666666666,
+    "mean_sponsors": 3.0,
+    "cumulative": -0.11308001351875041,
+    "max_drawdown": -0.11418008578504002
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": -0.002658201278623056,
+    "diff_t": -0.9214403913115041,
+    "weeks_better": 2,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": -0.004730823544332438,
+    "diff_by_week": [
+     -0.0008329282396766654,
+     -0.012297647132025007,
+     -0.0004285179809423306,
+     0.0018793315479342168,
+     0.013922776847051996,
+     -0.005884577841510341,
+     -0.0013916506814327396,
+     -0.0024338960166849673,
+     -0.016456702010321667
+    ]
+   }
+  },
+  "O-rs+M-15": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.00234171283210088,
+    "alpha_t": -0.3801240132502578,
+    "weeks_beating_spy": 0.4444444444444444,
+    "mean_vs_random": -0.00037233891131058217,
+    "vs_random_t": -0.07589752916720965,
+    "mean_pctile_vs_random": 0.4566666666666667,
+    "mean_invested": 0.9762888888888889,
+    "mean_sponsors": 3.0,
+    "cumulative": 0.0027851264749683136,
+    "max_drawdown": -0.04571725132741844
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": 0.01088654990473704,
+    "diff_t": 1.7548725064886461,
+    "weeks_better": 6,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": 0.006022925666101337,
+    "diff_by_week": [
+     0.00398468023857288,
+     0.011718233087921241,
+     -0.003707260288189752,
+     0.04979554381382266,
+     0.026514332038563432,
+     -0.001190355602246805,
+     0.0018052500267553631,
+     -0.01034202826039397,
+     0.019400554087828304
+    ]
+   }
+  },
+  "no-Ophelia": {
+   "weeks": 9,
+   "replay": {
+    "mean_alpha": -0.007211769157862503,
+    "alpha_t": -1.5377696251755577,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_vs_random": -0.0052336655187395316,
+    "vs_random_t": -1.3554381033234968,
+    "mean_pctile_vs_random": 0.3977777777777778,
+    "mean_invested": 0.9290333333333334,
+    "mean_sponsors": 2.0,
+    "cumulative": -0.040015093545354374,
+    "max_drawdown": -0.060043001170067556
+   },
+   "council": {
+    "mean_alpha": -0.00919477449216304,
+    "alpha_t": -2.036195716331128,
+    "weeks_beating_spy": 0.2222222222222222,
+    "mean_invested": 0.5702222222222222,
+    "cumulative": -0.05698065123822604,
+    "max_drawdown": -0.05698065123822604
+   },
+   "spy": {
+    "cumulative": 0.024199617955219077,
+    "max_drawdown": -0.013476288590551833
+   },
+   "equal_weight": {
+    "cumulative": 0.008721561925684185
+   },
+   "vs_baseline": {
+    "mean_diff": 0.006016493578975416,
+    "diff_t": 1.1835187270140477,
+    "weeks_better": 6,
+    "weeks_same": 0,
+    "mean_diff_without_best_week": 0.0011818808692649627,
+    "diff_by_week": [
+     0.005838683476189047,
+     0.0012812339368738325,
+     -0.004017345451591023,
+     0.04469339525665904,
+     0.0035329603845431733,
+     0.0066741023781225605,
+     -0.0024641983435988463,
+     -0.00673746660242433,
+     0.005347077176005288
+    ]
+   }
+  }
+ },
+ "diagnostics": {
+  "stock": {
+   "ophelia.score": {
+    "mean_ic": -0.04735549292790444,
+    "t": -1.38768810923123,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.028,
+     -0.1778,
+     -0.1614,
+     -0.0344,
+     -0.1635,
+     0.0546,
+     -0.0379,
+     0.1148,
+     0.0074
+    ]
+   },
+   "ophelia.sector_rotation_score": {
+    "mean_ic": 0.004893832123984238,
+    "t": 0.1037395709796351,
+    "weeks_positive": 6,
+    "weeks": 9,
+    "ic_by_week": [
+     0.0873,
+     -0.0814,
+     0.0384,
+     0.0185,
+     -0.3,
+     0.1899,
+     0.0349,
+     0.1162,
+     -0.0598
+    ]
+   },
+   "ophelia.flow_term": {
+    "mean_ic": -0.010337550177932928,
+    "t": -0.23093599210749274,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0396,
+     -0.1582,
+     -0.1582,
+     0.1213,
+     -0.0893,
+     0.2423,
+     -0.0664,
+     0.0835,
+     -0.0285
+    ]
+   },
+   "ophelia.market_regime_score": {
+    "mean_ic": -0.05717066608295816,
+    "t": -1.2387369150304959,
+    "weeks_positive": 1,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.1584,
+     -0.0595,
+     -0.1207,
+     -0.0918,
+     -0.1861,
+     -0.0488,
+     0.2871,
+     -0.1032,
+     -0.0332
+    ]
+   },
+   "ophelia.risk_adjusted_score": {
+    "mean_ic": -0.041568021664631596,
+    "t": -1.1936473429466699,
+    "weeks_positive": 2,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0101,
+     -0.2133,
+     -0.0525,
+     -0.1269,
+     -0.0377,
+     -0.0938,
+     -0.0609,
+     0.1151,
+     0.106
+    ]
+   },
+   "ophelia.rel_term": {
+    "mean_ic": -0.054746625319043424,
+    "t": -1.7956265723289515,
+    "weeks_positive": 1,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0777,
+     -0.0474,
+     -0.2347,
+     -0.0411,
+     0.1146,
+     -0.1131,
+     -0.0356,
+     -0.0308,
+     -0.027
+    ]
+   },
+   "ophelia.weekly_return": {
+    "mean_ic": -0.031190953405960484,
+    "t": -0.944494496782617,
+    "weeks_positive": 4,
+    "weeks": 9,
+    "ic_by_week": [
+     0.022,
+     -0.2244,
+     -0.0377,
+     -0.0972,
+     -0.0276,
+     -0.0925,
+     0.0002,
+     0.106,
+     0.0706
+    ]
+   },
+   "ophelia.four_week_return": {
+    "mean_ic": -0.0533861004329406,
+    "t": -1.9004142670749777,
+    "weeks_positive": 1,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0657,
+     -0.0774,
+     -0.2426,
+     -0.0179,
+     0.0722,
+     -0.0665,
+     -0.0421,
+     -0.0009,
+     -0.0396
+    ]
+   },
+   "ophelia.vol": {
+    "mean_ic": 0.0806445805694543,
+    "t": 1.9441036243840009,
+    "weeks_positive": 6,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0017,
+     0.1117,
+     0.3158,
+     0.0597,
+     -0.0339,
+     -0.0743,
+     0.1555,
+     0.0039,
+     0.1891
+    ]
+   },
+   "marky.score": {
+    "mean_ic": -0.03199894842107341,
+    "t": -1.0012808891361786,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0496,
+     -0.0308,
+     -0.1261,
+     -0.0984,
+     0.1229,
+     0.0546,
+     -0.166,
+     -0.0608,
+     0.0663
+    ]
+   },
+   "marky.momentum_score": {
+    "mean_ic": -0.04025056341625424,
+    "t": -2.1681978441708027,
+    "weeks_positive": 2,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0856,
+     -0.0484,
+     -0.1464,
+     -0.0156,
+     0.0299,
+     -0.0098,
+     -0.0731,
+     -0.0352,
+     0.0219
+    ]
+   },
+   "marky.trend_score": {
+    "mean_ic": -0.04355443483520956,
+    "t": -1.1667276953241048,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0231,
+     -0.1571,
+     -0.1287,
+     -0.1135,
+     0.1562,
+     0.0441,
+     -0.1709,
+     -0.0594,
+     0.0605
+    ]
+   },
+   "marky.volatility_score": {
+    "mean_ic": -0.0016893893425259468,
+    "t": -0.04999055654572861,
+    "weeks_positive": 5,
+    "weeks": 9,
+    "ic_by_week": [
+     0.0114,
+     0.1555,
+     -0.0387,
+     -0.086,
+     0.0914,
+     0.0758,
+     -0.1669,
+     0.0232,
+     -0.081
+    ]
+   },
+   "marky.volume_score": {
+    "mean_ic": -0.008037800548268213,
+    "t": -0.4011884232103172,
+    "weeks_positive": 2,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.012,
+     -0.0441,
+     -0.0514,
+     -0.0239,
+     -0.0276,
+     -0.0341,
+     0.1241,
+     -0.0602,
+     0.0568
+    ]
+   },
+   "marky.four_week_return": {
+    "mean_ic": -0.0533861004329406,
+    "t": -1.9004142670749777,
+    "weeks_positive": 1,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0657,
+     -0.0774,
+     -0.2426,
+     -0.0179,
+     0.0722,
+     -0.0665,
+     -0.0421,
+     -0.0009,
+     -0.0396
+    ]
+   },
+   "marky.dist_ma": {
+    "mean_ic": -0.04603758995607738,
+    "t": -1.1781746438717227,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0101,
+     -0.148,
+     -0.1816,
+     -0.1138,
+     0.1639,
+     0.0396,
+     -0.1754,
+     -0.0247,
+     0.0358
+    ]
+   },
+   "marky.std_dev": {
+    "mean_ic": 0.10429822057293385,
+    "t": 1.6504451020979338,
+    "weeks_positive": 6,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.1743,
+     0.1803,
+     0.3916,
+     0.1737,
+     0.0538,
+     -0.0409,
+     0.0286,
+     -0.0379,
+     0.3636
+    ]
+   },
+   "ophelia[O-rs+].score": {
+    "mean_ic": -0.04848012327143459,
+    "t": -1.0701601250872284,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.2146,
+     -0.0609,
+     -0.2309,
+     -0.0841,
+     0.212,
+     0.0249,
+     -0.0074,
+     -0.1094,
+     0.0342
+    ]
+   },
+   "ophelia[O-rs+].sector_rotation_score": {
+    "mean_ic": 0.047898998053275375,
+    "t": 1.0124129277379952,
+    "weeks_positive": 7,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.1972,
+     0.1541,
+     0.0117,
+     0.0493,
+     0.2812,
+     0.0537,
+     0.1364,
+     -0.1138,
+     0.0557
+    ]
+   },
+   "ophelia[O-rs+].flow_term": {
+    "mean_ic": -0.0145020790776609,
+    "t": -0.27839787627360935,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.1996,
+     -0.0077,
+     -0.1361,
+     -0.0743,
+     0.3112,
+     0.0018,
+     -0.0211,
+     -0.1366,
+     0.1319
+    ]
+   },
+   "ophelia[O-rs+].risk_adjusted_score": {
+    "mean_ic": -0.07813787272145482,
+    "t": -1.6213153122795452,
+    "weeks_positive": 3,
+    "weeks": 9,
+    "ic_by_week": [
+     0.0432,
+     -0.2482,
+     -0.243,
+     -0.1583,
+     0.1419,
+     0.0811,
+     -0.1944,
+     -0.0296,
+     -0.0961
+    ]
+   },
+   "ophelia[O-rs+].weekly_return": {
+    "mean_ic": -0.03400963234464896,
+    "t": -0.8983126696719279,
+    "weeks_positive": 2,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.0197,
+     -0.115,
+     -0.1129,
+     -0.0858,
+     0.2011,
+     0.1072,
+     -0.1242,
+     -0.0682,
+     -0.0887
+    ]
+   }
+  },
+  "sector": {
+   "last_week": {
+    "mean_ic": 0.11904761904761904,
+    "t": 1.0350983390135313,
+    "weeks_positive": 5,
+    "weeks": 9,
+    "ic_by_week": [
+     0.5714,
+     -0.5238,
+     0.3333,
+     0.3333,
+     0.0476,
+     -0.1667,
+     0.4762,
+     0.0,
+     0.0
+    ],
+    "top_sector_by_week": [
+     "Real Estate",
+     "Energy",
+     "Healthcare",
+     "Technology",
+     "Energy",
+     "Healthcare",
+     "Technology",
+     "Utilities",
+     "Technology"
+    ],
+    "top_sector_excess_by_week": [
+     0.0036,
+     0.00921,
+     0.00082,
+     0.01091,
+     0.01016,
+     -0.00546,
+     0.00054,
+     0.00125,
+     0.03411
+    ],
+    "top_sector_mean_excess": 0.007239170517421846,
+    "top_sector_weeks_beating_universe": 8
+   },
+   "prior_week": {
+    "mean_ic": 0.0634920634920635,
+    "t": 0.6056089312835717,
+    "weeks_positive": 5,
+    "weeks": 9,
+    "ic_by_week": [
+     0.2857,
+     -0.4286,
+     -0.0952,
+     0.2381,
+     0.0714,
+     0.6429,
+     -0.119,
+     0.1667,
+     -0.1905
+    ],
+    "top_sector_by_week": [
+     "Energy",
+     "Real Estate",
+     "Energy",
+     "Healthcare",
+     "Technology",
+     "Energy",
+     "Healthcare",
+     "Technology",
+     "Utilities"
+    ],
+    "top_sector_excess_by_week": [
+     0.01737,
+     -0.00968,
+     -0.00606,
+     0.00114,
+     -0.02921,
+     0.00362,
+     0.00867,
+     0.008,
+     -0.01977
+    ],
+    "top_sector_mean_excess": -0.002880693356499507,
+    "top_sector_weeks_beating_universe": 5
+   },
+   "rs_12_1": {
+    "mean_ic": -0.06878306878306878,
+    "t": -0.4323287357523677,
+    "weeks_positive": 4,
+    "weeks": 9,
+    "ic_by_week": [
+     -0.5238,
+     -0.0476,
+     -0.0952,
+     -0.381,
+     0.7143,
+     0.0238,
+     0.0476,
+     -0.8333,
+     0.4762
+    ],
+    "top_sector_by_week": [
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Healthcare",
+     "Energy"
+    ],
+    "top_sector_excess_by_week": [
+     -0.00515,
+     0.02813,
+     0.00082,
+     0.00114,
+     0.0659,
+     -0.00546,
+     0.00867,
+     -0.00729,
+     -0.00538
+    ],
+    "top_sector_mean_excess": 0.00904344147665905,
+    "top_sector_weeks_beating_universe": 5
+   }
+  }
+ },
+ "books": {
+  "baseline": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "MPC",
+      "weight": 0.2472,
+      "sponsor": "Ophelia",
+      "ret": -0.011855
+     },
+     {
+      "ticker": "ROP",
+      "weight": 0.246,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1994,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "VLO",
+      "weight": 0.1528,
+      "sponsor": "Ophelia",
+      "ret": -0.021004
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1457,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     }
+    ],
+    "book_ret": 0.0020747972117290906,
+    "alpha": 0.012957484033009887,
+    "pctile_vs_random": 0.59
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "BMY",
+      "weight": 0.2478,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2231,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "COR",
+      "weight": 0.1821,
+      "sponsor": "Ophelia",
+      "ret": 0.008062
+     },
+     {
+      "ticker": "BX",
+      "weight": 0.1522,
+      "sponsor": "Marky",
+      "ret": -0.032197
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1411,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": 0.006107678682093933,
+    "alpha": 0.0032616025350575744,
+    "pctile_vs_random": 0.62
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2649,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "CVX",
+      "weight": 0.2171,
+      "sponsor": "Ophelia",
+      "ret": -0.045143
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1985,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "KO",
+      "weight": 0.1351,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "NUE",
+      "weight": 0.1313,
+      "sponsor": "Ophelia",
+      "ret": 0.064296
+     }
+    ],
+    "book_ret": 0.004752712242248619,
+    "alpha": -0.027031004780550632,
+    "pctile_vs_random": 0.29
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2662,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "TPR",
+      "weight": 0.2163,
+      "sponsor": "Ophelia",
+      "ret": -0.201461
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2041,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "PCAR",
+      "weight": 0.1338,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.1288,
+      "sponsor": "Cecil",
+      "ret": 0.021058
+     }
+    ],
+    "book_ret": -0.04746149870197806,
+    "alpha": -0.05230238900846477,
+    "pctile_vs_random": 0.005
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.2397,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2335,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "TER",
+      "weight": 0.2334,
+      "sponsor": "Ophelia",
+      "ret": -0.115906
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1476,
+      "sponsor": "Cecil",
+      "ret": 0.002035
+     },
+     {
+      "ticker": "INTU",
+      "weight": 0.1459,
+      "sponsor": "Ophelia",
+      "ret": 0.08234
+     }
+    ],
+    "book_ret": -0.02300732694664502,
+    "alpha": -0.009531038356093077,
+    "pctile_vs_random": 0.18
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "OXY",
+      "weight": 0.2323,
+      "sponsor": "Ophelia",
+      "ret": -0.031148
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2319,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "EMR",
+      "weight": 0.2307,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.1583,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "PAYX",
+      "weight": 0.1468,
+      "sponsor": "Cecil",
+      "ret": 0.018194
+     }
+    ],
+    "book_ret": -0.013258945750634495,
+    "alpha": -0.019234500905498414,
+    "pctile_vs_random": 0.255
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2445,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "VEEV",
+      "weight": 0.2357,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.2246,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1537,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1415,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     }
+    ],
+    "book_ret": -0.010853045754843036,
+    "alpha": -0.014580271166902534,
+    "pctile_vs_random": 0.255
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2451,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2154,
+      "sponsor": "Marky",
+      "ret": -0.01115
+     },
+     {
+      "ticker": "RBLX",
+      "weight": 0.2035,
+      "sponsor": "Ophelia",
+      "ret": 0.021095
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1549,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.1378,
+      "sponsor": "Marky",
+      "ret": -0.077158
+     }
+    ],
+    "book_ret": -0.01254361454475146,
+    "alpha": -0.006328295200936654,
+    "pctile_vs_random": 0.475
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2456,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.2074,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "EVRG",
+      "weight": 0.1929,
+      "sponsor": "Ophelia",
+      "ret": -0.027666
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1544,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1468,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     }
+    ],
+    "book_ret": -0.00022977285619210413,
+    "alpha": -0.0062659517811626516,
+    "pctile_vs_random": 0.64
+   }
+  ],
+  "O-rs": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "ROP",
+      "weight": 0.2512,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2357,
+      "sponsor": "Ophelia",
+      "ret": 0.006174
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2115,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1488,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     },
+     {
+      "ticker": "REGN",
+      "weight": 0.1373,
+      "sponsor": "Ophelia",
+      "ret": -0.02773
+     }
+    ],
+    "book_ret": 0.006058761792224077,
+    "alpha": 0.016941448613504873,
+    "pctile_vs_random": 0.7
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "BMY",
+      "weight": 0.2638,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "TMO",
+      "weight": 0.2093,
+      "sponsor": "Ophelia",
+      "ret": 0.01646
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2057,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "BX",
+      "weight": 0.1362,
+      "sponsor": "Marky",
+      "ret": -0.032197
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1302,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": 0.009508591929417451,
+    "alpha": 0.006662515782381093,
+    "pctile_vs_random": 0.66
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2655,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.2182,
+      "sponsor": "Ophelia",
+      "ret": -0.021174
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1995,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "KO",
+      "weight": 0.1345,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "BAX",
+      "weight": 0.1303,
+      "sponsor": "Ophelia",
+      "ret": 0.021127
+     }
+    ],
+    "book_ret": 0.004275103369031699,
+    "alpha": -0.02750861365376755,
+    "pctile_vs_random": 0.285
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2689,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.2181,
+      "sponsor": "Ophelia",
+      "ret": 0.016525
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1995,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "PCAR",
+      "weight": 0.1311,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "BDX",
+      "weight": 0.136,
+      "sponsor": "Ophelia",
+      "ret": 0.039152
+     }
+    ],
+    "book_ret": 0.0023246834383347553,
+    "alpha": -0.002516206868151956,
+    "pctile_vs_random": 0.21
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "BSX",
+      "weight": 0.2453,
+      "sponsor": "Ophelia",
+      "ret": -0.025914
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.2326,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2186,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1547,
+      "sponsor": "Ophelia",
+      "ret": 0.027066
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1382,
+      "sponsor": "Cecil",
+      "ret": 0.002035
+     }
+    ],
+    "book_ret": -0.009578961792212959,
+    "alpha": 0.0038973267983389848,
+    "pctile_vs_random": 0.415
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "BDX",
+      "weight": 0.248,
+      "sponsor": "Ophelia",
+      "ret": -0.011527
+     },
+     {
+      "ticker": "EMR",
+      "weight": 0.2201,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.214,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.152,
+      "sponsor": "Ophelia",
+      "ret": -0.017919
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.151,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     }
+    ],
+    "book_ret": -0.013865229089919493,
+    "alpha": -0.019840784244783416,
+    "pctile_vs_random": 0.23
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "VEEV",
+      "weight": 0.2535,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2253,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.2236,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1465,
+      "sponsor": "Ophelia",
+      "ret": 0.029592
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1416,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     }
+    ],
+    "book_ret": -0.004660234634432906,
+    "alpha": -0.008387460046492403,
+    "pctile_vs_random": 0.4
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2415,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "BIIB",
+      "weight": 0.2338,
+      "sponsor": "Ophelia",
+      "ret": 0.00789
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2139,
+      "sponsor": "Marky",
+      "ret": -0.01115
+     },
+     {
+      "ticker": "MRNA",
+      "weight": 0.1581,
+      "sponsor": "Ophelia",
+      "ret": -0.013769
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1526,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     }
+    ],
+    "book_ret": -0.006466484566154326,
+    "alpha": -0.00025116522233951943,
+    "pctile_vs_random": 0.7
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "VLO",
+      "weight": 0.3,
+      "sponsor": "Ophelia",
+      "ret": 0.04559
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2239,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.1964,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1408,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1389,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     }
+    ],
+    "book_ret": 0.018645142087815113,
+    "alpha": 0.012608963162844565,
+    "pctile_vs_random": 0.885
+   }
+  ],
+  "O-rs+": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "ROP",
+      "weight": 0.2512,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "FTNT",
+      "weight": 0.2386,
+      "sponsor": "Ophelia",
+      "ret": -0.051482
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2077,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1488,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     },
+     {
+      "ticker": "HUM",
+      "weight": 0.1456,
+      "sponsor": "Ophelia",
+      "ret": -0.027478
+     }
+    ],
+    "book_ret": -0.007883750183238331,
+    "alpha": 0.002998936638042465,
+    "pctile_vs_random": 0.315
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "BMY",
+      "weight": 0.2478,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2259,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "BX",
+      "weight": 0.1522,
+      "sponsor": "Marky",
+      "ret": -0.032197
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1717,
+      "sponsor": "Ophelia",
+      "ret": 0.01701
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1429,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": 0.007535691109786513,
+    "alpha": 0.004689614962750155,
+    "pctile_vs_random": 0.63
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2566,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2175,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1781,
+      "sponsor": "Ophelia",
+      "ret": 0.012847
+     },
+     {
+      "ticker": "KO",
+      "weight": 0.1434,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "D",
+      "weight": 0.1367,
+      "sponsor": "Cecil",
+      "ret": -0.023333
+     }
+    ],
+    "book_ret": 0.004918108887359949,
+    "alpha": -0.026865608135439305,
+    "pctile_vs_random": 0.3
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2589,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2066,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "TMO",
+      "weight": 0.1997,
+      "sponsor": "Ophelia",
+      "ret": -0.000408
+     },
+     {
+      "ticker": "PCAR",
+      "weight": 0.1411,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.1303,
+      "sponsor": "Cecil",
+      "ret": 0.021058
+     }
+    ],
+    "book_ret": -0.0039001295759885455,
+    "alpha": -0.008741019882475257,
+    "pctile_vs_random": 0.12
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.2536,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2432,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "BSX",
+      "weight": 0.1846,
+      "sponsor": "Ophelia",
+      "ret": -0.025914
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1537,
+      "sponsor": "Cecil",
+      "ret": 0.002035
+     },
+     {
+      "ticker": "DD",
+      "weight": 0.1464,
+      "sponsor": "Marky",
+      "ret": -0.05208
+     }
+    ],
+    "book_ret": -0.02068650239616685,
+    "alpha": -0.007210213805614905,
+    "pctile_vs_random": 0.205
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2427,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "EMR",
+      "weight": 0.2372,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "BDX",
+      "weight": 0.1965,
+      "sponsor": "Ophelia",
+      "ret": -0.011527
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.1628,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "PAYX",
+      "weight": 0.1537,
+      "sponsor": "Cecil",
+      "ret": 0.018194
+     }
+    ],
+    "book_ret": -0.00841392215691561,
+    "alpha": -0.01438947731177953,
+    "pctile_vs_random": 0.35
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2456,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.2317,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "VEEV",
+      "weight": 0.2104,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1544,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1459,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     }
+    ],
+    "book_ret": -0.011291758461648704,
+    "alpha": -0.015018983873708203,
+    "pctile_vs_random": 0.25
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2451,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2161,
+      "sponsor": "Marky",
+      "ret": -0.01115
+     },
+     {
+      "ticker": "BAX",
+      "weight": 0.1979,
+      "sponsor": "Ophelia",
+      "ret": -0.069949
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1549,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     },
+     {
+      "ticker": "MRNA",
+      "weight": 0.1386,
+      "sponsor": "Ophelia",
+      "ret": -0.013769
+     }
+    ],
+    "book_ret": -0.021967588352633675,
+    "alpha": -0.01575226900881887,
+    "pctile_vs_random": 0.205
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "VLO",
+      "weight": 0.2505,
+      "sponsor": "Ophelia",
+      "ret": 0.04559
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2371,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1821,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.1813,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.149,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     }
+    ],
+    "book_ret": 0.017584771583421324,
+    "alpha": 0.011548592658450776,
+    "pctile_vs_random": 0.875
+   }
+  ],
+  "M-15": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "MPC",
+      "weight": 0.2472,
+      "sponsor": "Ophelia",
+      "ret": -0.011855
+     },
+     {
+      "ticker": "ROP",
+      "weight": 0.2457,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1994,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "VLO",
+      "weight": 0.1528,
+      "sponsor": "Ophelia",
+      "ret": -0.021004
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1459,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     }
+    ],
+    "book_ret": 0.002074516883397416,
+    "alpha": 0.012957203704678212,
+    "pctile_vs_random": 0.59
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "DPZ",
+      "weight": 0.2422,
+      "sponsor": "Marky",
+      "ret": 0.035373
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2226,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "COR",
+      "weight": 0.1817,
+      "sponsor": "Ophelia",
+      "ret": 0.008062
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1578,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1408,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": 0.01538220560649617,
+    "alpha": 0.012536129459459812,
+    "pctile_vs_random": 0.74
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "KO",
+      "weight": 0.2086,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "ITW",
+      "weight": 0.1914,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "CVX",
+      "weight": 0.2095,
+      "sponsor": "Ophelia",
+      "ret": -0.045143
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1886,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "NUE",
+      "weight": 0.1268,
+      "sponsor": "Ophelia",
+      "ret": 0.064296
+     }
+    ],
+    "book_ret": 0.0014959642773039353,
+    "alpha": -0.030287752745495316,
+    "pctile_vs_random": 0.225
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "PCAR",
+      "weight": 0.2066,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "ITW",
+      "weight": 0.1934,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "TPR",
+      "weight": 0.2085,
+      "sponsor": "Ophelia",
+      "ret": -0.201461
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1951,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "ABNB",
+      "weight": 0.1238,
+      "sponsor": "Ophelia",
+      "ret": 0.030052
+     }
+    ],
+    "book_ret": -0.04460040193209735,
+    "alpha": -0.04944129223858406,
+    "pctile_vs_random": 0.0
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.2536,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "TER",
+      "weight": 0.2398,
+      "sponsor": "Ophelia",
+      "ret": -0.115906
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2158,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "INTU",
+      "weight": 0.1499,
+      "sponsor": "Ophelia",
+      "ret": 0.08234
+     },
+     {
+      "ticker": "DHR",
+      "weight": 0.1409,
+      "sponsor": "Marky",
+      "ret": 0.094305
+     }
+    ],
+    "book_ret": -0.009597169670278209,
+    "alpha": 0.003879118920273735,
+    "pctile_vs_random": 0.415
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "EMR",
+      "weight": 0.2367,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "OXY",
+      "weight": 0.2343,
+      "sponsor": "Ophelia",
+      "ret": -0.031148
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2059,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.1633,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "INTU",
+      "weight": 0.1449,
+      "sponsor": "Ophelia",
+      "ret": -0.022949
+     }
+    ],
+    "book_ret": -0.019529039379043617,
+    "alpha": -0.025504594533907538,
+    "pctile_vs_random": 0.13
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "UNP",
+      "weight": 0.2444,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "VEEV",
+      "weight": 0.2376,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2136,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1556,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1343,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     }
+    ],
+    "book_ret": -0.012355739450206016,
+    "alpha": -0.016082964862265514,
+    "pctile_vs_random": 0.245
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "AMGN",
+      "weight": 0.245,
+      "sponsor": "Marky",
+      "ret": -0.077158
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2449,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "RBLX",
+      "weight": 0.2029,
+      "sponsor": "Ophelia",
+      "ret": 0.021095
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1548,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1525,
+      "sponsor": "Marky",
+      "ret": -0.030765
+     }
+    ],
+    "book_ret": -0.023115597711931966,
+    "alpha": -0.01690027836811716,
+    "pctile_vs_random": 0.215
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2456,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.2348,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "EVRG",
+      "weight": 0.1923,
+      "sponsor": "Ophelia",
+      "ret": -0.027666
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1652,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1544,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     }
+    ],
+    "book_ret": 0.0009312234325808164,
+    "alpha": -0.005104955492389731,
+    "pctile_vs_random": 0.67
+   }
+  ],
+  "M-0": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "CPAY",
+      "weight": 0.2479,
+      "sponsor": "Marky",
+      "ret": 0.016457
+     },
+     {
+      "ticker": "MPC",
+      "weight": 0.2472,
+      "sponsor": "Ophelia",
+      "ret": -0.011855
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1951,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "ROP",
+      "weight": 0.1521,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "VLO",
+      "weight": 0.1528,
+      "sponsor": "Ophelia",
+      "ret": -0.021004
+     }
+    ],
+    "book_ret": 0.0012418689720524252,
+    "alpha": 0.01212455579333322,
+    "pctile_vs_random": 0.585
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "DLR",
+      "weight": 0.2135,
+      "sponsor": "Marky",
+      "ret": -0.057636
+     },
+     {
+      "ticker": "DPZ",
+      "weight": 0.1865,
+      "sponsor": "Marky",
+      "ret": 0.035373
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.196,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "COR",
+      "weight": 0.1599,
+      "sponsor": "Ophelia",
+      "ret": 0.008062
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.124,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": -0.006189968449931074,
+    "alpha": -0.009036044596967432,
+    "pctile_vs_random": 0.415
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "GEHC",
+      "weight": 0.241,
+      "sponsor": "Marky",
+      "ret": 0.03103
+     },
+     {
+      "ticker": "CVX",
+      "weight": 0.2331,
+      "sponsor": "Ophelia",
+      "ret": -0.045143
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2131,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "KO",
+      "weight": 0.159,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "NUE",
+      "weight": 0.141,
+      "sponsor": "Ophelia",
+      "ret": 0.064296
+     }
+    ],
+    "book_ret": 0.004324194261306288,
+    "alpha": -0.027459522761492963,
+    "pctile_vs_random": 0.275
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "PCAR",
+      "weight": 0.241,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "TPR",
+      "weight": 0.2302,
+      "sponsor": "Ophelia",
+      "ret": -0.201461
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2173,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "PFE",
+      "weight": 0.159,
+      "sponsor": "Marky",
+      "ret": 0.007522
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.137,
+      "sponsor": "Cecil",
+      "ret": 0.021058
+     }
+    ],
+    "book_ret": -0.04558216715404384,
+    "alpha": -0.05042305746053055,
+    "pctile_vs_random": 0.0
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.2563,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "TER",
+      "weight": 0.2297,
+      "sponsor": "Ophelia",
+      "ret": -0.115906
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2257,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "DHR",
+      "weight": 0.1437,
+      "sponsor": "Marky",
+      "ret": 0.094305
+     },
+     {
+      "ticker": "INTU",
+      "weight": 0.1436,
+      "sponsor": "Ophelia",
+      "ret": 0.08234
+     }
+    ],
+    "book_ret": -0.009084550099593025,
+    "alpha": 0.0043917384909589186,
+    "pctile_vs_random": 0.43
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "EMR",
+      "weight": 0.2362,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "OXY",
+      "weight": 0.2253,
+      "sponsor": "Ophelia",
+      "ret": -0.031148
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2158,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.1638,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "INTU",
+      "weight": 0.1394,
+      "sponsor": "Ophelia",
+      "ret": -0.022949
+     }
+    ],
+    "book_ret": -0.019143523592144836,
+    "alpha": -0.025119078747008756,
+    "pctile_vs_random": 0.145
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "UNP",
+      "weight": 0.2437,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2243,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "VEEV",
+      "weight": 0.2219,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1563,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.141,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     }
+    ],
+    "book_ret": -0.012244696436275775,
+    "alpha": -0.015971921848335274,
+    "pctile_vs_random": 0.235
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "CMG",
+      "weight": 0.2536,
+      "sponsor": "Marky",
+      "ret": -0.014966
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2451,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "RBLX",
+      "weight": 0.1857,
+      "sponsor": "Ophelia",
+      "ret": 0.021095
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1549,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.1464,
+      "sponsor": "Marky",
+      "ret": -0.077158
+     }
+    ],
+    "book_ret": -0.014977510561436428,
+    "alpha": -0.008762191217621621,
+    "pctile_vs_random": 0.425
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2456,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.2296,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "EVRG",
+      "weight": 0.1793,
+      "sponsor": "Ophelia",
+      "ret": -0.027666
+     },
+     {
+      "ticker": "CRM",
+      "weight": 0.1704,
+      "sponsor": "Marky",
+      "ret": -0.06808
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1544,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     }
+    ],
+    "book_ret": -0.01668647486651377,
+    "alpha": -0.022722653791484318,
+    "pctile_vs_random": 0.3
+   }
+  ],
+  "O-rs+M-15": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "ROP",
+      "weight": 0.251,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2358,
+      "sponsor": "Ophelia",
+      "ret": 0.006174
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2115,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.149,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     },
+     {
+      "ticker": "REGN",
+      "weight": 0.1373,
+      "sponsor": "Ophelia",
+      "ret": -0.02773
+     }
+    ],
+    "book_ret": 0.006059477450301971,
+    "alpha": 0.016942164271582766,
+    "pctile_vs_random": 0.7
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "DPZ",
+      "weight": 0.2132,
+      "sponsor": "Marky",
+      "ret": 0.035373
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1868,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "TMO",
+      "weight": 0.2073,
+      "sponsor": "Ophelia",
+      "ret": 0.01646
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2038,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.129,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     }
+    ],
+    "book_ret": 0.017825911770015173,
+    "alpha": 0.014979835622978815,
+    "pctile_vs_random": 0.75
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "KO",
+      "weight": 0.2082,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "ITW",
+      "weight": 0.1918,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.2093,
+      "sponsor": "Ophelia",
+      "ret": -0.021174
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1914,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "BAX",
+      "weight": 0.125,
+      "sponsor": "Ophelia",
+      "ret": 0.021127
+     }
+    ],
+    "book_ret": 0.0010454519540588668,
+    "alpha": -0.030738265068740386,
+    "pctile_vs_random": 0.22
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "PCAR",
+      "weight": 0.2063,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "ITW",
+      "weight": 0.1937,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.2113,
+      "sponsor": "Ophelia",
+      "ret": 0.016525
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1933,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "BDX",
+      "weight": 0.1318,
+      "sponsor": "Ophelia",
+      "ret": 0.039152
+     }
+    ],
+    "book_ret": 0.002334045111844603,
+    "alpha": -0.0025068451946421086,
+    "pctile_vs_random": 0.21
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.2488,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "BSX",
+      "weight": 0.2448,
+      "sponsor": "Ophelia",
+      "ret": -0.025914
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2135,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1545,
+      "sponsor": "Ophelia",
+      "ret": 0.027066
+     },
+     {
+      "ticker": "DHR",
+      "weight": 0.1383,
+      "sponsor": "Marky",
+      "ret": 0.094305
+     }
+    ],
+    "book_ret": 0.0035070050919184127,
+    "alpha": 0.016983293682470355,
+    "pctile_vs_random": 0.61
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "BDX",
+      "weight": 0.248,
+      "sponsor": "Ophelia",
+      "ret": -0.011527
+     },
+     {
+      "ticker": "EMR",
+      "weight": 0.2358,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2012,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.1627,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.152,
+      "sponsor": "Ophelia",
+      "ret": -0.017919
+     }
+    ],
+    "book_ret": -0.0144493013528813,
+    "alpha": -0.02042485650774522,
+    "pctile_vs_random": 0.225
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "VEEV",
+      "weight": 0.2495,
+      "sponsor": "Ophelia",
+      "ret": 0.001092
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.243,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2085,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1547,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1442,
+      "sponsor": "Ophelia",
+      "ret": 0.029592
+     }
+    ],
+    "book_ret": -0.009047795728087673,
+    "alpha": -0.012775021140147171,
+    "pctile_vs_random": 0.29
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "BIIB",
+      "weight": 0.2346,
+      "sponsor": "Ophelia",
+      "ret": 0.00789
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.2342,
+      "sponsor": "Marky",
+      "ret": -0.077158
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2269,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "MRNA",
+      "weight": 0.1587,
+      "sponsor": "Ophelia",
+      "ret": -0.013769
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.1457,
+      "sponsor": "Marky",
+      "ret": -0.030765
+     }
+    ],
+    "book_ret": -0.02288564280514543,
+    "alpha": -0.016670323461330624,
+    "pctile_vs_random": 0.215
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "VLO",
+      "weight": 0.3,
+      "sponsor": "Ophelia",
+      "ret": 0.04559
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2145,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.2059,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1448,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1348,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     }
+    ],
+    "book_ret": 0.0191707812316362,
+    "alpha": 0.013134602306665653,
+    "pctile_vs_random": 0.89
+   }
+  ],
+  "no-Ophelia": [
+   {
+    "week": "2026-07-20",
+    "book": [
+     {
+      "ticker": "ROP",
+      "weight": 0.2579,
+      "sponsor": "Marky",
+      "ret": 0.018239
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2564,
+      "sponsor": "Cecil",
+      "ret": 0.002703
+     },
+     {
+      "ticker": "BMY",
+      "weight": 0.161,
+      "sponsor": "Marky",
+      "ret": 0.021889
+     },
+     {
+      "ticker": "D",
+      "weight": 0.1619,
+      "sponsor": "Cecil",
+      "ret": 0.000141
+     },
+     {
+      "ticker": "TROW",
+      "weight": 0.0811,
+      "sponsor": "Marky",
+      "ret": -0.012712
+     }
+    ],
+    "book_ret": 0.007913480687918138,
+    "alpha": 0.018796167509198936,
+    "pctile_vs_random": 0.735
+   },
+   {
+    "week": "2026-07-27",
+    "book": [
+     {
+      "ticker": "BMY",
+      "weight": 0.261,
+      "sponsor": "Marky",
+      "ret": 0.046635
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.266,
+      "sponsor": "Cecil",
+      "ret": 0.001758
+     },
+     {
+      "ticker": "BX",
+      "weight": 0.1604,
+      "sponsor": "Marky",
+      "ret": -0.032197
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1683,
+      "sponsor": "Cecil",
+      "ret": -0.017044
+     },
+     {
+      "ticker": "DPZ",
+      "weight": 0.0786,
+      "sponsor": "Marky",
+      "ret": 0.035373
+     }
+    ],
+    "book_ret": 0.007388912618967765,
+    "alpha": 0.004542836471931407,
+    "pctile_vs_random": 0.63
+   },
+   {
+    "week": "2026-08-03",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.2609,
+      "sponsor": "Marky",
+      "ret": 0.028249
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.261,
+      "sponsor": "Cecil",
+      "ret": 0.00409
+     },
+     {
+      "ticker": "KO",
+      "weight": 0.1613,
+      "sponsor": "Marky",
+      "ret": -0.016162
+     },
+     {
+      "ticker": "D",
+      "weight": 0.1641,
+      "sponsor": "Cecil",
+      "ret": -0.023333
+     },
+     {
+      "ticker": "V",
+      "weight": 0.0778,
+      "sponsor": "Marky",
+      "ret": -0.016282
+     }
+    ],
+    "book_ret": 0.0007353667906575964,
+    "alpha": -0.031048350232141655,
+    "pctile_vs_random": 0.24
+   },
+   {
+    "week": "2026-08-10",
+    "book": [
+     {
+      "ticker": "ITW",
+      "weight": 0.261,
+      "sponsor": "Marky",
+      "ret": -0.018131
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2608,
+      "sponsor": "Cecil",
+      "ret": 0.000679
+     },
+     {
+      "ticker": "PCAR",
+      "weight": 0.1597,
+      "sponsor": "Marky",
+      "ret": -0.014235
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.1645,
+      "sponsor": "Cecil",
+      "ret": 0.021058
+     },
+     {
+      "ticker": "PFE",
+      "weight": 0.0793,
+      "sponsor": "Marky",
+      "ret": 0.007522
+     }
+    ],
+    "book_ret": -0.00276810344531902,
+    "alpha": -0.007608993751805732,
+    "pctile_vs_random": 0.135
+   },
+   {
+    "week": "2026-08-17",
+    "book": [
+     {
+      "ticker": "FAST",
+      "weight": 0.292,
+      "sponsor": "Marky",
+      "ret": 0.006479
+     },
+     {
+      "ticker": "BAC",
+      "weight": 0.2591,
+      "sponsor": "Cecil",
+      "ret": -0.042081
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.1637,
+      "sponsor": "Cecil",
+      "ret": 0.002035
+     },
+     {
+      "ticker": "DD",
+      "weight": 0.1686,
+      "sponsor": "Marky",
+      "ret": -0.05208
+     },
+     {
+      "ticker": "ITW",
+      "weight": 0.0772,
+      "sponsor": "Cecil",
+      "ret": -0.02615
+     }
+    ],
+    "book_ret": -0.019474366562101848,
+    "alpha": -0.005998077971549904,
+    "pctile_vs_random": 0.225
+   },
+   {
+    "week": "2026-08-24",
+    "book": [
+     {
+      "ticker": "EMR",
+      "weight": 0.2507,
+      "sponsor": "Marky",
+      "ret": -0.013916
+     },
+     {
+      "ticker": "AES",
+      "weight": 0.2748,
+      "sponsor": "Cecil",
+      "ret": -0.001356
+     },
+     {
+      "ticker": "FAST",
+      "weight": 0.172,
+      "sponsor": "Marky",
+      "ret": -0.032647
+     },
+     {
+      "ticker": "PAYX",
+      "weight": 0.1739,
+      "sponsor": "Cecil",
+      "ret": 0.018194
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.0773,
+      "sponsor": "Marky",
+      "ret": -0.003533
+     }
+    ],
+    "book_ret": -0.0065848433725119344,
+    "alpha": -0.012560398527375855,
+    "pctile_vs_random": 0.415
+   },
+   {
+    "week": "2026-08-31",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2596,
+      "sponsor": "Cecil",
+      "ret": 0.004755
+     },
+     {
+      "ticker": "UNP",
+      "weight": 0.267,
+      "sponsor": "Marky",
+      "ret": -0.051142
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.1632,
+      "sponsor": "Cecil",
+      "ret": 0.007699
+     },
+     {
+      "ticker": "KKR",
+      "weight": 0.1682,
+      "sponsor": "Marky",
+      "ret": -0.013913
+     },
+     {
+      "ticker": "OTIS",
+      "weight": 0.0772,
+      "sponsor": "Cecil",
+      "ret": 0.002393
+     }
+    ],
+    "book_ret": -0.013317244098441882,
+    "alpha": -0.01704446951050138,
+    "pctile_vs_random": 0.215
+   },
+   {
+    "week": "2026-09-08",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2522,
+      "sponsor": "Cecil",
+      "ret": 0.0
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.2472,
+      "sponsor": "Marky",
+      "ret": -0.01115
+     },
+     {
+      "ticker": "MDT",
+      "weight": 0.1684,
+      "sponsor": "Cecil",
+      "ret": -0.024558
+     },
+     {
+      "ticker": "AMGN",
+      "weight": 0.1581,
+      "sponsor": "Marky",
+      "ret": -0.077158
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.0794,
+      "sponsor": "Cecil",
+      "ret": -0.002436
+     }
+    ],
+    "book_ret": -0.01928108114717579,
+    "alpha": -0.013065761803360984,
+    "pctile_vs_random": 0.26
+   },
+   {
+    "week": "2026-09-14",
+    "book": [
+     {
+      "ticker": "AES",
+      "weight": 0.2536,
+      "sponsor": "Cecil",
+      "ret": 0.002027
+     },
+     {
+      "ticker": "DE",
+      "weight": 0.2393,
+      "sponsor": "Marky",
+      "ret": 0.016209
+     },
+     {
+      "ticker": "MCK",
+      "weight": 0.1672,
+      "sponsor": "Cecil",
+      "ret": -0.028167
+     },
+     {
+      "ticker": "PSX",
+      "weight": 0.1693,
+      "sponsor": "Marky",
+      "ret": 0.038122
+     },
+     {
+      "ticker": "JPM",
+      "weight": 0.0791,
+      "sponsor": "Cecil",
+      "ret": -0.012873
+     }
+    ],
+    "book_ret": 0.005117304319813184,
+    "alpha": -0.0009188746051573635,
+    "pctile_vs_random": 0.725
+   }
+  ]
+ }
+}
