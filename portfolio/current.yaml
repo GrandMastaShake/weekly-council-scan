@@ -1,0 +1,56 @@
+week: '2026-09-21'
+status: open
+positions:
+- ticker: XOM
+  weight: 0.19699999999999998
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 4.4%. (confidence:
+    68.3)'
+  entry_price: 160.9600067138672
+  entry_date: '2026-09-21'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AMD
+  weight: 0.168
+  sponsor: Ophelia
+  thesis: 'Aligned with Technology sector rotation; the memory/CPU physical-scarcity
+    leader (wiki/synthesis.md Section 5). Macro score: 56. (confidence: 54.9)'
+  entry_price: 583.9400024414062
+  entry_date: '2026-09-21'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: HIG
+  weight: 0.157
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 9.1. Score: 92. (confidence:
+    76.1)'
+  entry_price: 131.69000244140625
+  entry_date: '2026-09-21'
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 766.2509765625
+vix_at_entry: 14.81
+fed_stance: 'Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0, first
+  hike since Jul 2023, first of the Warsh chairmanship); SEP dots: 16 of 18 participants
+  see another 2026 hike, end-2026 median 4.1%, end-2027 median raised to 4.1% from
+  3.6% (macro/facts.json policy.fed_stance = "Hike").'
+total_weight: 0.522
+cash_weight: 0.478
