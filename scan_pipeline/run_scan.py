@@ -125,6 +125,11 @@ def compute_portfolio_return(portfolio: Dict[str, float], weekly_returns: Dict[s
 
 # ── Sanity-gate helpers ───────────────────────────────────────────────
 CASH_FLOOR_DEFAULT = 0.15
+# The owner's cash cap (2026-09-21): cash is an investment option, capped at
+# 20%. It sits above the floor, so a risk-off book lands between 80% and 85%
+# invested. An ENGINE or TRUTH GATE ABORT is not a market call and still books
+# the whole week in cash.
+CASH_CAP_DEFAULT = 0.20
 HAWKISH_STANCES = {"hawkish", "tightening"}
 
 
@@ -341,6 +346,62 @@ def apply_cash_floor(
     return note
 
 
+def apply_cash_cap(
+    consensus_result: Dict[str, Any],
+    cap: float = CASH_CAP_DEFAULT,
+    max_position: Optional[float] = None,
+    sponsor_cap: Optional[float] = None,
+) -> Optional[str]:
+    """The owner's cash cap: a book under (1 - cap) invested is scaled up to
+    it. Positions rise together; one that reaches the per-name maximum, or
+    whose sponsor reaches the consensus's per-sponsor cap, stops while the
+    rest keep rising. With too few names to get there, the book stays short
+    and the note says CASH CAP UNMET. Returns a log note or None."""
+    portfolio = consensus_result.get("portfolio", {})
+    if not portfolio:
+        return None
+    target = 1.0 - cap
+    before = sum(portfolio.values())
+    if before >= target - 1e-9:
+        return None
+    max_pos = consensus.ENGINE_CONFIG["max_position_size"] if max_position is None else max_position
+    attribution = consensus_result.get("attribution", {}) or {}
+    sponsors = {attribution.get(t) for t in portfolio if attribution.get(t)}
+    if sponsor_cap is None:
+        # Mirrors consensus.aggregate's adaptive cap.
+        sponsor_cap = max(consensus.MAX_AGENT_EXPOSURE, 1.0 / max(len(sponsors), 1))
+
+    def sponsor_total(s):
+        return sum(w for t, w in portfolio.items() if attribution.get(t) == s)
+
+    for _ in range(4 * len(portfolio) + 4):
+        need = target - sum(portfolio.values())
+        if need <= 1e-9:
+            break
+        free = [t for t, w in portfolio.items() if w < max_pos - 1e-9
+                and not (attribution.get(t) and sponsor_total(attribution.get(t)) >= sponsor_cap - 1e-9)]
+        if not free:
+            break
+        scale = 1.0 + need / sum(portfolio[t] for t in free)
+        for t in free:
+            portfolio[t] = min(max_pos, portfolio[t] * scale)
+        for s in sponsors:                     # pull any sponsor back to its cap
+            total = sponsor_total(s)
+            if total > sponsor_cap + 1e-9:
+                for t in portfolio:
+                    if attribution.get(t) == s:
+                        portfolio[t] *= sponsor_cap / total
+    for t in list(portfolio):
+        portfolio[t] = round(portfolio[t], 6)
+    after = sum(portfolio.values())
+    note = f"cash cap {cap:.0%} applied -- invested {before:.1%} -> {after:.1%}, cash~{1.0 - after:.1%}"
+    if after < target - 1e-6:
+        note += (f"; CASH CAP UNMET: {len(portfolio)} names, at most {max_pos:.0%} each and "
+                 f"{sponsor_cap:.0%} per sponsor, cannot reach {target:.0%}")
+    consensus_result["cash_cap"] = note
+    return note
+
+
 def generate_report(
     date: str,
     market_data: Dict[str, Any],
@@ -369,6 +430,8 @@ def generate_report(
     lines.append(f"- **Fed Stance:** {fed_stance}")
     if consensus_result.get("cash_floor"):
         lines.append(f"- **Cash Floor:** {consensus_result['cash_floor']}")
+    if consensus_result.get("cash_cap"):
+        lines.append(f"- **Cash Cap:** {consensus_result['cash_cap']}")
     lines.append("")
 
     # Portfolio Picks
@@ -663,6 +726,11 @@ def main() -> None:
     )
     if floor_note:
         print(f"[cash-floor] {floor_note}")
+    # Gate 3b: the owner's cash cap (2026-09-21), after the floor, so a
+    # risk-off book keeps its 15% and a short book is topped up to 80%.
+    cap_note = apply_cash_cap(consensus_result)
+    if cap_note:
+        print(f"[cash-cap] {cap_note}")
 
     # Performance report (evaluate previous decision if available).
     # NOTE (Agent A coordination): picksAccuracy updates are migrating to
