@@ -4,6 +4,21 @@
 
 ## Entries
 
+### Week of 2026-09-21
+
+Booked: XOM 19.7% / AMD 16.8% / HIG 15.7% (47.8% cash -- Council Review posture, 3 raised regime flags on canonical data, Tightening Fed, $192B 2/5/7-year supply week; ALL + DE trigger-blocked after their own invalidations fired, VICI trigger-blocked as a promotion). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| INTC | 56 | 52.1 | Her #2 -- the same memory/CPU scarcity thesis as the booked AMD ("Scarcity leaders", wiki/synthesis.md Section 5); not promoted because it would share AMD's SMH $560.28 invalidation, putting two positions on one number. Excluded on correlation, not conviction |
+| QCOM | 55 | 51.8 | Her #3 -- engine rationale ("risk-adjusted outperformer with lower volatility") is the weakest of the three; same SMH invalidation as AMD; not promoted for the same correlation reason |
+
+counterfactual: to be computed (Monday 2026-09-28, date-pinned Mon 2026-09-21 close -> Fri 2026-09-25 close; equal-weighted INTC/QCOM basket vs the official booked week).
+
+**Process gap recorded, not repaired:** Ophelia's 2026-09-14 journal states her EVRG / NI / AEP proposals were logged here tagged 2026-09-14 -- no such entry was ever written. Writing it now, after the week has closed and its prices are known, would be backfilling a log with hindsight, so it is left absent. The blocked sleeve's counterfactual was scored in shadow-book.md instead (EVRG -1.34%, Mon 9/14 close -> Fri 9/18 close).
+
+---
+
 ### Week of 2026-09-08
 
 Booked: LMT 13.3% / ETN 13.3% (73.4% cash -- Council Review posture, 3 regime flags broken, CPI Sep 11 the decisive gate). Ophelia's rejected candidates:
