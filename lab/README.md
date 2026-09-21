@@ -28,8 +28,10 @@ before anything changes in production.
 ## Rooms
 
 - **Engine Lab** -- `engine_lab.py`. The numeric engines, replayed as pure code.
-- **Council Room** -- (Pass 2) the LLM layer: brief-first, separate passes,
-  research-led, each fed the exact repo snapshot from Monday 08:50 of its week.
+- **Council Room** -- `council_room.py`. The LLM layer: one fresh agent per week,
+  fed only the repo as it stood before that Monday's Council report.
+- **Forward record** -- `forward.py` and [FORWARD.md](FORWARD.md). Every
+  registered design, scored each Monday on weeks it never saw.
 
 ## Faithfulness of the Engine Lab replay
 
@@ -270,3 +272,58 @@ Everything registered here is also scored forward, each Monday, on weeks that
 did not exist when it was registered.
 
     python lab/engine_lab.py --pass 3
+
+## Pass 3 results
+
+Run after the registration commit (cc501f2); `results/pass3_history.json`.
+96 weeks, 2024-09-09 .. 2026-07-06.
+
+| Variant | Alpha / wk | vs random | Pctile | vs base, paired | 1st half | 2nd half | Max DD |
+|---|---|---|---|---|---|---|---|
+| base | +0.62% | +0.59% | 52% | -- | -- | -- | -14.3% |
+| no-screen | +0.52% | +0.49% | 51% | -0.09% (t -0.83) | -0.07% | -0.11% | -15.2% |
+| O-last | +0.25% | +0.22% | 45% | -0.37% (t -0.77) | -0.16% | -0.59% | -11.5% |
+| M-skip | +0.72% | +0.68% | 52% | +0.10% (t +0.98) | +0.05% | +0.15% | -13.7% |
+| O-last+M-skip | +0.35% | +0.31% | 46% | -0.27% (t -0.57) | -0.13% | -0.42% | -9.4% |
+
+**Under the registered rule, no engine change ships.**
+
+- **H1 fails.** The 3-week return's rank IC is -0.013 (t -0.79), negative only in
+  the second half (+0.009 / -0.035); the skip-a-month return is flat (+0.002).
+  The reversal that ran 8 of 9 Council weeks is not a stable feature of these
+  names. M-skip's small, steady book edge (+0.10%/wk, both halves) has no
+  mechanism under it, so it stays in the lab and is scored forward.
+- **H2 fails.** Last week's top sector lagged the universe the following week
+  (-0.10%/wk; it beat the universe 44 of 96 times), and did no better than the
+  week-before-last's. The 8-of-9 run in the Council's weeks was chance. O-last
+  is worse than base in both halves.
+- **H3, the earnings blackout, holds up as the risk control it was shipped as.**
+  It changed the book in 53 of 96 weeks, added +0.09%/wk (t +0.83) and trimmed
+  the maximum drawdown from -15.2% to -14.3%. On the Council's own weeks it does
+  more: the replay's alpha goes from -1.32% to -0.94%/wk and its drawdown from
+  -10.3% to -6.2%, mostly by passing over TPR.
+
+**Read the absolute numbers with care.** base shows +0.62%/wk against SPY and
++0.59%/wk against random picks, but the median week is +0.15%, and the best
+week (+28.9%, 2024-11-18) came from QUBT and IONQ. Today's universe holds
+IONQ, QUBT and RGTI (RGTI is the replay's most-held name) because they ran; a
+universe built in 2024 would not have. That flatters any engine that chases
+strength, over any window before the universe was drawn up. The registered
+tests compare variants and inputs on the same universe, so they are far less
+exposed -- and the bias would, if anything, have helped the two momentum leads,
+which still failed. BK, MMC, PEAK, AVB, EQR and EA return no price history over
+the window and sit out.
+
+**Where this leaves the engines.** Nothing in three passes has found a numeric
+input that reliably predicts next week's winners in this universe; what has
+held up is risk control -- keeping binary events out of the book. The designs
+registered so far keep running forward (below).
+
+## Forward record
+
+`lab/forward.py` scores every registered design on each Council week that
+closes after it was registered, next to the real Council's book, and rewrites
+[FORWARD.md](FORWARD.md) from scratch. Scheduled task 8 runs it every Monday
+after the Council session and commits the result.
+
+    python lab/forward.py

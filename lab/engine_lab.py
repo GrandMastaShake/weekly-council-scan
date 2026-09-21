@@ -168,17 +168,19 @@ def history_weeks(first_monday, last_monday):
     return out
 
 
-def earnings_calendar(tickers):
+def earnings_calendar(tickers, max_age_days=None):
     """{ticker: sorted report dates} from yfinance, cached on disk.
 
     These are the dates the companies actually reported. Dates are announced
     weeks ahead, so on a Monday the coming week's reporters were known; a
     rare moved date is the approximation. A ticker with no dates is treated
-    the way production treats an unknown date: never excluded."""
+    the way production treats an unknown date: never excluded. max_age_days
+    refetches a cache older than that (the forward run needs new quarters)."""
     if EARNINGS_CACHE.exists():
         with open(EARNINGS_CACHE, encoding="utf-8") as fh:
             cached = json.load(fh)
-        if set(tickers) <= set(cached):
+        age_days = (datetime.now().timestamp() - EARNINGS_CACHE.stat().st_mtime) / 86400
+        if set(tickers) <= set(cached) and (max_age_days is None or age_days < max_age_days):
             return cached
     from concurrent.futures import ThreadPoolExecutor
     import yfinance as yf
