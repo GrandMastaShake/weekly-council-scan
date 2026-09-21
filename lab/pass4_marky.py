@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pass 4 -- Marky v2, the chart (lab/council_v2.md).
+"""Passes 4 and 5 -- Marky's chart jobs (lab/council_v2.md).
 
 Registered in lab/README.md before the run. Scores Marky's OWN top five under
 each mode -- his job, not the Council's book -- against random fives drawn from
@@ -15,10 +15,13 @@ a stock's 12-week volatility shows how much it prefers a calm tape, which is
 Cecil's job. Its correlation with the 3-week return shows how much it chases
 short-term strength, the input that ran backwards in Pass 2.
 
-    python lab/pass4_marky.py
+    python lab/pass4_marky.py                                  # Pass 4: classic vs 52w
+    python lab/pass4_marky.py --modes classic,52w,channel \
+        --target channel --signal position_score --out pass5_marky.json   # Pass 5
 """
 from __future__ import annotations
 
+import argparse
 import contextlib
 import io
 import json
@@ -37,11 +40,13 @@ SHORT_DAYS = lab.LOOKBACK_DAYS  # what production fetches today (range=3mo)
 LONG_DAYS = 400                # about 57 weekly bars; v2 reads the last 52
 TOP = 5
 MODES = ("classic", "52w")
+LONG_MODES = ("52w", "channel")      # read a year of weekly closes
 FIELDS = {"classic": ["score", "momentum_score", "trend_score", "volatility_score"],
-          "52w": ["score", "range_pos", "to_high", "trend_score"]}
+          "52w": ["score", "range_pos", "to_high", "trend_score"],
+          "channel": ["score", "position_score", "z", "slope_year", "macd_score"]}
 
 
-def replay(weeks, names, start, cal):
+def replay(weeks, names, start, cal, modes=MODES):
     from scan_pipeline.engines import marky
     from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
     from scan_pipeline.utils import wiki_signals
@@ -91,11 +96,11 @@ def replay(weeks, names, start, cal):
             ret3w = {t: compute_4_week_return(short[t][-4:]) for t in eligible}
             spy = adj["SPY"].week_return(W) or 0.0
             row = {"week": label, "spy": spy, "eligible": len(eligible)}
-            for mode in MODES:
+            for mode in modes:
                 marky.MARKY_MODE = mode
                 state["ranking"] = None
                 with contextlib.redirect_stdout(io.StringIO()):
-                    marky.analyze(md, W, long if mode == "52w" else short)
+                    marky.analyze(md, W, long if mode in LONG_MODES else short)
                 ranking = state["ranking"] or []
                 picks = [s["ticker"] for s in ranking if earnings_blackout(md, s["ticker"]) is None][:TOP]
                 book = statistics.fmean(nxt_ret[t] for t in picks) if picks else 0.0
@@ -124,9 +129,9 @@ def replay(weeks, names, start, cal):
     return rows
 
 
-def summarize(rows):
+def summarize(rows, modes=MODES):
     out = {"weeks": len(rows)}
-    for mode in MODES:
+    for mode in modes:
         r = [x[mode] for x in rows]
         cum, dd = lab._curve([x["ret"] for x in r])
         ic = {f: [x["ic"][f] for x in r if f in x["ic"]] for f in FIELDS[mode]}
@@ -144,29 +149,32 @@ def summarize(rows):
             "lean_3w": statistics.fmean(x["lean_3w"] for x in r if x["lean_3w"] is not None),
             "mean_scored": statistics.fmean(x["scored"] for x in r),
         }
-    diff = [x["52w"]["ret"] - x["classic"]["ret"] for x in rows]
-    h = len(diff) // 2
-    out["paired_52w_minus_classic"] = {
-        "mean": statistics.fmean(diff), "t": lab._tstat(diff),
-        "weeks_better": sum(1 for d in diff if d > 0),
-        "first_half": statistics.fmean(diff[:h]) if h else None,
-        "second_half": statistics.fmean(diff[h:]) if h else None}
+    for mode in modes:
+        if mode == "classic":
+            continue
+        diff = [x[mode]["ret"] - x["classic"]["ret"] for x in rows]
+        h = len(diff) // 2
+        out[f"paired_{mode}_minus_classic"] = {
+            "mean": statistics.fmean(diff), "t": lab._tstat(diff),
+            "weeks_better": sum(1 for d in diff if d > 0),
+            "first_half": statistics.fmean(diff[:h]) if h else None,
+            "second_half": statistics.fmean(diff[h:]) if h else None}
     return out
 
 
-def verdict(hist):
-    """The registered non-inferiority rule, computed (lab/README.md, Pass 4)."""
-    to_high = hist["52w"]["ic"]["to_high"]
-    p = hist["paired_52w_minus_classic"]
-    harmful_mechanism = to_high["mean"] is not None and to_high["mean"] < 0 and to_high["t"] <= -2
+def verdict(hist, target="52w", signal="to_high"):
+    """The registered non-inferiority rule, computed (lab/README.md, Passes 4-5)."""
+    sig = hist[target]["ic"][signal]
+    p = hist[f"paired_{target}_minus_classic"]
+    harmful_mechanism = sig["mean"] is not None and sig["mean"] < 0 and sig["t"] <= -2
     harmful_book = p["mean"] < 0 and p["t"] <= -2
     return {"mechanism_harmful": harmful_mechanism, "book_harmful": harmful_book,
             "v2_replaces_classic": not (harmful_mechanism or harmful_book)}
 
 
-def show(name, s):
+def show(name, s, modes=MODES):
     print(f"\n  {name}: {s['weeks']} weeks")
-    for mode in MODES:
+    for mode in modes:
         m = s[mode]
         ic = "  ".join(f"{f} {v['mean']:+.3f} (t {v['t']:+.2f})" for f, v in m["ic"].items() if v["mean"] is not None)
         print(f"    {mode:<8} top-{TOP} {m['mean_ret']*100:+.2f}%/wk, alpha {m['mean_alpha']*100:+.2f} "
@@ -175,30 +183,41 @@ def show(name, s):
         print(f"             IC: {ic}")
         print(f"             leans: calm tape {m['lean_vol']:+.2f} (vs 12-wk volatility), "
               f"3-week chase {m['lean_3w']:+.2f}; names scored {m['mean_scored']:.0f}")
-    p = s["paired_52w_minus_classic"]
-    print(f"    52w minus classic: {p['mean']*100:+.2f}%/wk (t {p['t']:+.2f}), better {p['weeks_better']}/{s['weeks']}, "
-          f"halves {p['first_half']*100:+.2f} / {p['second_half']*100:+.2f}")
+    for mode in modes:
+        if mode == "classic":
+            continue
+        p = s[f"paired_{mode}_minus_classic"]
+        print(f"    {mode} minus classic: {p['mean']*100:+.2f}%/wk (t {p['t']:+.2f}), better "
+              f"{p['weeks_better']}/{s['weeks']}, halves {p['first_half']*100:+.2f} / {p['second_half']*100:+.2f}")
 
 
-def main():
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--modes", default=",".join(MODES))
+    ap.add_argument("--target", default="52w")
+    ap.add_argument("--signal", default="to_high")
+    ap.add_argument("--out", default="pass4_marky.json")
+    a = ap.parse_args(argv)
+    modes = tuple(a.modes.split(","))
     from scan_pipeline.config.tickers import COUNCIL_WATCHLIST
     frozen = lab.frozen_universe()
     cal = lab.earnings_calendar(sorted(set(frozen) | set(COUNCIL_WATCHLIST)))
     hist_rows = replay(lab.history_weeks(lab.HISTORY_FIRST_MONDAY, lab.HISTORY_LAST_MONDAY),
-                       frozen, HIST_START, cal)
+                       frozen, HIST_START, cal, modes)
     today = date.today()
     last_friday = today - timedelta(days=(today.weekday() - 4) % 7 or 7)
     cw = lab.council_weeks(last_friday.strftime("%Y-%m-%d"))
-    council_rows = replay(cw, list(COUNCIL_WATCHLIST), COUNCIL_START, cal)
-    hist, council = summarize(hist_rows), summarize(council_rows)
-    v = verdict(hist)
-    show("history, frozen universe (mechanism)", hist)
-    show("Council weeks, the owner's 111", council)
-    print(f"\n  verdict: mechanism harmful {v['mechanism_harmful']}, book harmful {v['book_harmful']} -> "
-          f"{'Marky v2 replaces classic in Council v2' if v['v2_replaces_classic'] else 'classic stays'}")
+    council_rows = replay(cw, list(COUNCIL_WATCHLIST), COUNCIL_START, cal, modes)
+    hist, council = summarize(hist_rows, modes), summarize(council_rows, modes)
+    v = verdict(hist, a.target, a.signal)
+    show("history, frozen universe (mechanism)", hist, modes)
+    show("Council weeks, the owner's 111", council, modes)
+    print(f"\n  verdict ({a.target}): mechanism harmful {v['mechanism_harmful']}, book harmful "
+          f"{v['book_harmful']} -> {a.target + ' is non-inferior' if v['v2_replaces_classic'] else 'classic stays'}")
     lab.RESULTS.mkdir(parents=True, exist_ok=True)
-    with open(lab.RESULTS / "pass4_marky.json", "w", encoding="ascii", newline="\n") as fh:
-        json.dump({"pass": 4, "generated": datetime.now().strftime("%Y-%m-%d %H:%M"), "verdict": v,
+    with open(lab.RESULTS / a.out, "w", encoding="ascii", newline="\n") as fh:
+        json.dump({"pass": 5 if a.target == "channel" else 4, "modes": list(modes), "target": a.target,
+                   "generated": datetime.now().strftime("%Y-%m-%d %H:%M"), "verdict": v,
                    "history": hist, "council": council,
                    "weeks": {"history": hist_rows, "council": council_rows}}, fh, indent=1, default=float)
         fh.write("\n")

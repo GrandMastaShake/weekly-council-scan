@@ -236,8 +236,12 @@ def pass3(out_dir):
         if not p2.exists():
             print(f"  {d.name}: no pass-2 result yet")
             continue
-        final = json.loads(p2.read_text(encoding="utf-8"))["final4"]
+        doc = json.loads(p2.read_text(encoding="utf-8"))
+        final = doc["final4"]
         sectors = {x["sector"] if isinstance(x, dict) else x for x in final}
+        with open(d / "ophelia/pass3/my_sectors.json", "w", encoding="utf-8", newline="\n") as fh:
+            json.dump({"final4": final, "changes": doc.get("changes")}, fh, indent=1)
+            fh.write("\n")
         with open(d / "sheet_all.csv", encoding="utf-8", newline="") as fh:
             rows = list(csv.DictReader(fh))
         keep = [r for r in rows if r["sector"] in sectors or r["sector"] == "Macro Assets"]

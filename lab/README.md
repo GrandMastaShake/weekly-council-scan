@@ -426,3 +426,34 @@ forward record.
     python lab/council_room_v2.py build DIR     # the week folders
     python lab/council_room_v2.py pass3 DIR     # after pass 2
     python lab/council_room_v2.py score DIR
+
+## Pass 5 -- Marky v3, the pullback (registered before the run)
+
+The owner revised Marky's job: buy stocks near the bottom of a rising channel,
+with MACD insight (`marky.MARKY_MODE = "channel"`, specified in
+[council_v2.md](council_v2.md)). A 26-week least-squares channel through log
+closes; only names whose channel slopes up and whose 40-week average is rising
+qualify, and a close more than 2.5 widths below the line is a broken channel,
+not a pullback. Position below the line is worth 50 points (full at 1.5 widths
+down), slope 20 (full at +30% a year), weekly MACD(12, 26, 9) 30 (20 for a
+rising histogram, 10 for the MACD line above zero). The constants were set
+before the run and none was tuned.
+
+Scored exactly as Pass 4, on the same two samples, with classic and 52w
+alongside:
+
+    python lab/pass4_marky.py --modes classic,52w,channel --target channel \
+        --signal position_score --out pass5_marky.json
+
+**Decision rule: the same non-inferiority as Pass 4.** The channel mode is
+Council v2's Marky unless the history shows it is worse: either its position
+signal's IC is negative with t <= -2, or its top five trail classic's on the
+paired weekly comparison with t <= -2. Its Council weeks get the Council Room v2
+breakage check: trailing random picks with t <= -2 is flagged to the owner with
+its cause.
+
+Why it might work, stated before the run: it buys short-term weakness inside a
+longer uptrend, which is the shape of the one pattern the diagnostics kept
+finding -- recent winners falling back (Pass 2, 8 of 9 weeks) -- while
+refusing names whose trend has broken. Pass 3 found that reversal weak over 96
+weeks (IC -0.013), so a large effect is not expected.

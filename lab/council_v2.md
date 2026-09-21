@@ -33,13 +33,19 @@ with only its own inputs, so her context stays clean.
    strongest. The five need not span the sectors: if one sector looks
    overwhelmingly attractive she may take up to 4 from it.
 
-**Marky -- the chart.** He answers one question: is the stock in a confirmed
-uptrend near its highs? From the last 52 weekly closes he scores three things.
-Where it sits in its 52-week range is worth 40 points. How close it is to the
-52-week high is worth 30. Closing above its 40-week average earns 20, and 10
-more if that average is rising. He looks at nothing about sectors, valuation or
-how calm the tape is. `marky.MARKY_MODE = "52w"`; production must fetch a year
-of prices before it flips.
+**Marky -- the chart: the pullback in an uptrend** (the owner's revision). He
+looks for stocks near the bottom of a rising channel, with MACD turning up. The
+channel is fitted to the last 26 weekly closes: a least-squares line through the
+log prices, with the residuals' spread as its width. Only names whose channel
+slopes up and whose 40-week average is rising qualify, and a close more than 2.5
+widths below the line counts as a broken channel, not a pullback. Being below
+the line is worth up to 50 points, full at 1.5 widths down. The channel's slope
+is worth up to 20, full at +30% a year. Weekly MACD (12, 26, 9) is worth up to
+30: 20 when the histogram rose this week, 10 when the MACD line is above zero.
+He looks at nothing about sectors, valuation or how calm the tape is.
+`marky.MARKY_MODE = "channel"`; production must fetch a year of prices before
+it flips. The first chart job the lab tested, buying near 52-week highs
+(`"52w"`, Pass 4), was replaced by this one.
 
 **Cecil -- value, read against the synthesis.** His scoring is unchanged:
 valuation, quality and balance-sheet safety, computed for the 111's stocks. He
@@ -54,12 +60,23 @@ chart alone.
 
 Each member proposes 5. The earnings blackout applies to all three.
 
-## The book
+## The book: a debate, then a synthesis, then approval
 
-The book is drawn from the union of the three fives, up to 15 names. A name that
-two members reach for different reasons is the strongest signal on the page. The
-Council's debate books from the union under the existing rules: 5-30% per name,
-the earnings blackout, and cash allowed.
+1. **Each member's five, with its reasoning.** These are the debate logs. Each
+   member works alone, in its own passes and with its own inputs, so the
+   disagreements are real.
+2. **A synthesis agent drafts the book.** It reads the three logs and picks up
+   to 5 names from their union, 5-30% each, with the book at least 80% invested
+   (cash capped at 20%). A name that two members reach for different reasons is
+   the strongest signal it has. It also names two alternates.
+3. **The Council approves.** Each member, in a fresh pass that sees only its own
+   lens and the draft, approves or objects to each name, with a reason.
+4. **The synthesis agent finalizes.** A name that two of the three members
+   object to is swapped for the first alternate. Every objection that didn't
+   carry goes into the report as a dissent.
+
+The earnings blackout applies throughout. The 20% cash cap is for market calls:
+an ENGINE ABORT on broken data still holds the whole book in cash.
 
 ## Before it goes live
 
@@ -68,7 +85,8 @@ the earnings blackout, and cash allowed.
 | Marky v2 | Engine Lab, Pass 4: 96 pre-Council weeks on the frozen universe, plus the Council's weeks on the 111 | registered |
 | Cecil v2 | Council Room: one pass for each Council week, `synthesis.md` plus his value table. Fundamentals have no point-in-time history, so the table is rebuilt from what can be dated: P/E from the reported EPS of the four quarters before that Monday, and safety from prices. Quality stays out rather than being filled with today's numbers | to build |
 | Ophelia v2 | Council Room: three passes for each Council week, fresh agents confined to that Monday's snapshot | to build |
-| The union book | Council Room, once all three members exist | to build |
+| Marky v3, the pullback | Engine Lab, Pass 5: same samples as Pass 4, against classic and 52w | registered |
+| The debate: synthesis, approval, final | Council Room, once the members' fives are in: one synthesis agent and three approvers for each week | to build |
 
 Everything lands on the forward record once it is live.
 

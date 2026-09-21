@@ -4,6 +4,7 @@ Ported from lib/engine/technical.ts
 """
 
 import json
+import math
 import os
 from typing import Dict, List, Any, Optional
 from scan_pipeline.config.tickers import STOCK_UNIVERSE, scan_universe
@@ -50,11 +51,15 @@ _ten_y_loaded = False
 #                                 highs? Needs a year of weekly closes, so
 #                                 production must fetch range=1y before it
 #                                 flips; with 3 months it proposes nothing.
+#                    "channel" -- Council v2, the owner's revision: a pullback
+#                                 to the bottom of a rising channel with
+#                                 weekly MACD turning up. Same data needs.
 LOW_VOL_POINTS = 30.0
 MOMENTUM_WINDOW = "last_3w"
 MARKY_MODE = "classic"
 WEEKS_52 = 52
 MIN_WEEKS_52 = 40
+CHANNEL_WEEKS = 26
 
 
 def load_10y_yield() -> Optional[float]:
@@ -81,6 +86,8 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     """
     if MARKY_MODE == "52w":
         return _analyze_52w(market_data, date, price_cache)
+    if MARKY_MODE == "channel":
+        return _analyze_channel(market_data, date, price_cache)
     vix = parse_vix(market_data.get("vix"))
     signals = wiki_signals.get_signals()
     ten_y = load_10y_yield()
@@ -323,6 +330,105 @@ def _analyze_52w(market_data: Dict[str, Any], date: str,
     tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_key) if top3 else 0
     return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top,
             "earnings_skipped": earnings_skipped, "mode": "52w"}
+
+
+def _ema(values: List[float], span: int) -> List[float]:
+    k = 2.0 / (span + 1.0)
+    out: List[float] = []
+    for v in values:
+        out.append(v if not out else out[-1] + k * (v - out[-1]))
+    return out
+
+
+def _analyze_channel(market_data: Dict[str, Any], date: str,
+                     price_cache: Optional[Dict[str, List]] = None) -> Dict[str, Any]:
+    """Council v2 Marky, the owner's revision: buy the pullback in an uptrend.
+
+    From the last 52 weekly closes (at least 40), a channel is fitted to the
+    last 26: a least-squares line through the log closes, with the residuals'
+    standard deviation as its width.
+      gate      the channel slopes up and the 40-week average is rising. A
+                close more than 2.5 widths below the line has broken the
+                channel rather than pulled back in it. Names failing either
+                are not candidates.
+      position  50 pts  how far below the channel's centre line the close
+                        sits: none at or above the line, full at 1.5 widths
+                        below it
+      trend     20 pts  the channel's slope, full at +30% a year
+      MACD      30 pts  weekly MACD(12, 26, 9): 20 when the histogram rose this
+                        week (the pullback's momentum turning up), 10 when the
+                        MACD line is above zero
+    Nothing about sectors, valuation or how calm the tape is -- those are
+    Ophelia's and Cecil's jobs. The earnings blackout applies as everywhere.
+    """
+    vix = parse_vix(market_data.get("vix"))
+    signals = wiki_signals.get_signals()
+    scores = []
+    for ticker in scan_universe(date):
+        history = get_price_history(ticker, date, WEEKS_52, price_cache)
+        closes = [h.close for h in history if h.close and h.close > 0]
+        if len(closes) < MIN_WEEKS_52:
+            continue
+        window = closes[-CHANNEL_WEEKS:]
+        n = len(window)
+        ys = [math.log(c) for c in window]
+        xbar, ybar = (n - 1) / 2.0, sum(ys) / n
+        sxx = sum((x - xbar) ** 2 for x in range(n))
+        slope = sum((x - xbar) * (y - ybar) for x, y in zip(range(n), ys)) / sxx
+        resid = [y - (ybar + slope * (x - xbar)) for x, y in zip(range(n), ys)]
+        width = (sum(r * r for r in resid) / (n - 2)) ** 0.5
+        z = resid[-1] / width if width > 0 else 0.0
+        ma40 = sum(closes[-40:]) / 40.0
+        ma40_before = sum(closes[-50:-10]) / 40.0 if len(closes) >= 50 else None
+        rising = ma40_before is not None and ma40 > ma40_before
+        if slope <= 0 or not rising or z < -2.5:
+            continue
+        macd = [a - b for a, b in zip(_ema(closes, 12), _ema(closes, 26))]
+        hist = [m - g for m, g in zip(macd, _ema(macd, 9))]
+        hist_rising = hist[-1] > hist[-2]
+        slope_year = math.exp(52.0 * slope) - 1.0
+        position_score = 50.0 * clamp(-z / 1.5, 0.0, 1.0)
+        trend_score = 20.0 * clamp(slope_year / 0.30, 0.0, 1.0)
+        macd_score = (20.0 if hist_rising else 0.0) + (10.0 if macd[-1] > 0 else 0.0)
+        total = wiki_signals.adjusted_score(ticker, position_score + trend_score + macd_score, signals)
+        scores.append({
+            "ticker": ticker, "score": total, "sector": get_sector(ticker),
+            "z": z, "slope_year": slope_year, "hist_rising": hist_rising, "macd_above_zero": macd[-1] > 0,
+            "position_score": position_score, "trend_score": trend_score, "macd_score": macd_score,
+            "weeks": len(closes), "avg_dollar_volume": avg_dollar_volume(history[-12:]),
+        })
+
+    # Sort by score, then the deeper pullback, then liquidity; alphabetical
+    # pre-sort keeps any surviving tie deterministic.
+    scores.sort(key=lambda s: s["ticker"])
+    scores.sort(key=lambda s: (s["score"], -s["z"], s["avg_dollar_volume"] or 0.0), reverse=True)
+    for line in log_ties(scores, "Marky", signals.watchlist, signals.mentions):
+        print(line)
+    tradeable, earnings_skipped = tradeable_picks(scores, market_data)
+    top3 = tradeable[:3]
+
+    stocks = []
+    for idx, s in enumerate(top3):
+        next_score = tradeable[idx + 1]["score"] if idx + 1 < len(tradeable) else None
+        strength = (0.50 * clamp(-s["z"] / 1.5, 0.0, 1.0)
+                    + 0.20 * clamp(s["slope_year"] / 0.30, 0.0, 1.0)
+                    + 0.30 * s["macd_score"] / 30.0)
+        margin = 0.0
+        if next_score is not None and s["score"] > next_score:
+            margin = min(5.0, (s["score"] - next_score) * 0.25)
+        conf_raw, conf = pick_confidence(strength, idx, vix, margin, persona="Marky")
+        turn = "turning up" if s["hist_rising"] else "still falling"
+        stocks.append({
+            "ticker": s["ticker"], "confidence": conf, "confidence_raw": round(conf_raw, 2),
+            "thesis": (f"Pulling back in a rising channel: {abs(s['z']):.1f} widths "
+                       f"{'below' if s['z'] < 0 else 'above'} its 26-week trend line, which rises "
+                       f"{s['slope_year'] * 100:.0f}% a year; weekly MACD momentum {turn}. "
+                       f"Score: {s['score']:.0f}."),
+        })
+    top_key = round(top3[0]["score"], 2) if top3 else None
+    tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_key) if top3 else 0
+    return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top,
+            "earnings_skipped": earnings_skipped, "mode": "channel"}
 
 
 def _generate_thesis(s: dict, idx: int) -> str:
