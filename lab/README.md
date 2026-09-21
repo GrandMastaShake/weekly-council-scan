@@ -174,3 +174,54 @@ either.
 
     python lab/council_room.py snapshot DIR   # build the week folders
     python lab/council_room.py score DIR      # score each folder's book.json
+
+## Council Room V1 results
+
+Nine fresh agents, one per week. The audit is clean: every agent used only
+Read, Grep and Glob, and every file it lists is inside its own folder. Books,
+theses and risks are in `results/room_v1_books/`; the snapshot commits are in
+`results/room_v1_manifest.json`.
+
+| Week | V1 book | V1 | vs SPY | Pctile vs random | Real Council | Engine replay | SPY |
+|---|---|---|---|---|---|---|---|
+| 2026-07-20 | UNH 20, PLD 15, SPG 15, MSFT 15, BAC 15 | -0.60% | +0.49 | 32% | -0.36% | +0.21% | -1.09% |
+| 2026-07-27 | RTX 20, JNJ 20, JPM 18, NVDA 15, LMT 12 | -1.22% | -1.51 | 18% | -1.52% | +0.61% | +0.28% |
+| 2026-08-03 | JPM 16, BMY 16, GOOGL 14, MSFT 12, AMZN 12 | -0.16% | -3.34 | 17% | -0.63% | +0.48% | +3.18% |
+| 2026-08-10 | AMGN 20, JPM 20, NVDA 15, ETN 15, AMZN 15 | +0.02% | -0.46 | 20% | +0.00% | -4.75% | +0.48% |
+| 2026-08-17 | JPM 20, MRK 20, MSFT 20, LMT 10, CVX 10 | +1.41% | +2.76 | 73% | -2.81% | -2.30% | -1.35% |
+| 2026-08-24 | LLY 20, JNJ 20, XOM 15, MSFT 15, NVDA 10 | -1.04% | -1.63 | 24% | -0.05% | -1.33% | +0.60% |
+| 2026-08-31 | MSFT 25, JPM 20, MRK 20, AMZN 15, CRM 10 | -0.03% | -0.40 | 56% | +0.02% | -1.09% | +0.37% |
+| 2026-09-08 | GILD 16, MDT 14, CVX 14, NVDA 13, WFC 13 | -1.23% | -0.61 | 36% | -0.14% | -1.25% | -0.62% |
+| 2026-09-14 | XOM 20, LLY 17, JPM 15, MSFT 15, NVDA 13 | -0.07% | -0.67 | 72% | -0.31% | -0.02% | +0.60% |
+
+| | Mean alpha / wk | vs random | Avg pctile | vs real Council | vs engine replay | Invested | Cumulative | Max DD |
+|---|---|---|---|---|---|---|---|---|
+| V1 | -0.60% (t -1.08) | -0.44% (t -1.52) | 39% | +0.32%/wk (5/9) | +0.73%/wk (5/9) | 80% | -2.9% | -2.9% |
+
+**V1 fails the primary test**: it did not beat random picks at its own
+weights. By the registered rule it does not earn a forward shadow, and reading
+the research this way is not adding selection either.
+
+What it did differently from the engines and the real Council:
+
+- It stayed out of binary events. It held nothing through its own earnings
+  except one deliberate NVDA position sized near its SPY weight, and its worst
+  week was -1.23%. That, plus five-name diversification, is why its drawdown
+  (-2.9%) is a fraction of the replay's (-10.3%) and the
+  real Council's (-5.7%). It is risk control, not skill.
+- It lived in the megacaps. The median pick ranks 24th of about 270 by dollar
+  volume; MSFT and JPM are in 6 of 9 books and NVDA in 5. That is the big-name
+  habit the live Council has too.
+- *Exploratory, not registered:* against random books drawn only from the 60
+  most liquid names, V1 averages the 33rd percentile, so the shortfall is not
+  just the megacap style -- its picks within that style lagged as well.
+
+## What nine weeks can and cannot say
+
+V1's weekly alpha has a standard deviation of 1.7 points. With nine
+weeks, the standard error of a mean is about 0.6 points a week, so
+the room can catch a design that is broken (the replayed engines at -1.32%/wk,
+the single-name blowups) but cannot certify a winner. An edge worth having,
++0.5%/wk, needs about 44 weeks to reach t = 2. Until then, what can be
+fixed with confidence is what does not need proof of skill: binary-event and
+concentration risk.

@@ -1,0 +1,382 @@
+{
+ "variant": "V1",
+ "generated": "2026-09-21 11:49",
+ "summary": {
+  "weeks": 9,
+  "mean_alpha": -0.005970032721446348,
+  "alpha_t": -1.0818194726177484,
+  "weeks_beating_spy": 2,
+  "mean_vs_random": -0.004445964256862425,
+  "vs_random_t": -1.51997669750899,
+  "mean_pctile_vs_random": 0.3888888888888889,
+  "mean_vs_council": 0.003224741770716691,
+  "weeks_beating_council": 5,
+  "mean_vs_replay": 0.007258230015391571,
+  "weeks_beating_replay": 5,
+  "mean_invested": 0.8,
+  "cumulative": -0.02899109088073093,
+  "max_drawdown": -0.02899109088073093
+ },
+ "weeks": [
+  {
+   "week": "2026-07-20",
+   "book": [
+    {
+     "ticker": "UNH",
+     "weight": 0.2,
+     "ret": -0.015237
+    },
+    {
+     "ticker": "PLD",
+     "weight": 0.15,
+     "ret": -0.009195
+    },
+    {
+     "ticker": "SPG",
+     "weight": 0.15,
+     "ret": 0.002749
+    },
+    {
+     "ticker": "MSFT",
+     "weight": 0.15,
+     "ret": -0.024808
+    },
+    {
+     "ticker": "BAC",
+     "weight": 0.15,
+     "ret": 0.01141
+    }
+   ],
+   "invested": 0.8,
+   "problems": [],
+   "book_ret": -0.006023849442220075,
+   "spy_ret": -0.010882686821280796,
+   "alpha": 0.004858837379060721,
+   "rand_mean": -0.0008191594656842583,
+   "vs_random": -0.005204689976535817,
+   "pctile_vs_random": 0.325,
+   "council_ret": -0.003646607445649952,
+   "replay_ret": 0.0020747972117290906
+  },
+  {
+   "week": "2026-07-27",
+   "book": [
+    {
+     "ticker": "RTX",
+     "weight": 0.2,
+     "ret": 0.003731
+    },
+    {
+     "ticker": "JNJ",
+     "weight": 0.2,
+     "ret": -0.023615
+    },
+    {
+     "ticker": "JPM",
+     "weight": 0.18,
+     "ret": -0.017044
+    },
+    {
+     "ticker": "NVDA",
+     "weight": 0.15,
+     "ret": -0.035783
+    },
+    {
+     "ticker": "LMT",
+     "weight": 0.12,
+     "ret": 0.001478
+    }
+   ],
+   "invested": 0.85,
+   "problems": [],
+   "book_ret": -0.012234762915228665,
+   "spy_ret": 0.0028460761470363583,
+   "alpha": -0.015080839062265023,
+   "rand_mean": 0.001429111852594605,
+   "vs_random": -0.01366387476782327,
+   "pctile_vs_random": 0.185,
+   "council_ret": -0.015220368475998943,
+   "replay_ret": 0.006107678682093933
+  },
+  {
+   "week": "2026-08-03",
+   "book": [
+    {
+     "ticker": "JPM",
+     "weight": 0.16,
+     "ret": 0.010657
+    },
+    {
+     "ticker": "BMY",
+     "weight": 0.16,
+     "ret": -0.021174
+    },
+    {
+     "ticker": "GOOGL",
+     "weight": 0.14,
+     "ret": -0.03051
+    },
+    {
+     "ticker": "MSFT",
+     "weight": 0.12,
+     "ret": 0.050112
+    },
+    {
+     "ticker": "AMZN",
+     "weight": 0.12,
+     "ret": -0.013691
+    }
+   ],
+   "invested": 0.7,
+   "problems": [],
+   "book_ret": -0.0015834999010442142,
+   "spy_ret": 0.03178371702279925,
+   "alpha": -0.033367216923843465,
+   "rand_mean": 0.01466516072511723,
+   "vs_random": -0.016248660626161444,
+   "pctile_vs_random": 0.17,
+   "council_ret": -0.006333239995320234,
+   "replay_ret": 0.004752712242248619
+  },
+  {
+   "week": "2026-08-10",
+   "book": [
+    {
+     "ticker": "AMGN",
+     "weight": 0.2,
+     "ret": 0.016525
+    },
+    {
+     "ticker": "JPM",
+     "weight": 0.2,
+     "ret": 0.013633
+    },
+    {
+     "ticker": "NVDA",
+     "weight": 0.15,
+     "ret": 0.007878
+    },
+    {
+     "ticker": "ETN",
+     "weight": 0.15,
+     "ret": -0.005265
+    },
+    {
+     "ticker": "AMZN",
+     "weight": 0.15,
+     "ret": -0.041458
+    }
+   ],
+   "invested": 0.85,
+   "problems": [],
+   "book_ret": 0.0002048356769247142,
+   "spy_ret": 0.0048408903064867115,
+   "alpha": -0.004636054629561997,
+   "rand_mean": 0.011726079348004183,
+   "vs_random": -0.011521243671079468,
+   "pctile_vs_random": 0.2,
+   "council_ret": 0.0,
+   "replay_ret": -0.04746149870197806
+  },
+  {
+   "week": "2026-08-17",
+   "book": [
+    {
+     "ticker": "JPM",
+     "weight": 0.2,
+     "ret": -0.028624
+    },
+    {
+     "ticker": "MRK",
+     "weight": 0.2,
+     "ret": 0.130419
+    },
+    {
+     "ticker": "MSFT",
+     "weight": 0.2,
+     "ret": -0.012222
+    },
+    {
+     "ticker": "LMT",
+     "weight": 0.1,
+     "ret": -0.069249
+    },
+    {
+     "ticker": "CVX",
+     "weight": 0.1,
+     "ret": 0.031542
+    }
+   ],
+   "invested": 0.8,
+   "problems": [],
+   "book_ret": 0.014144057841019563,
+   "spy_ret": -0.013476288590551944,
+   "alpha": 0.027620346431571505,
+   "rand_mean": 0.004582018181935485,
+   "vs_random": 0.009562039659084077,
+   "pctile_vs_random": 0.73,
+   "council_ret": -0.028051509057203418,
+   "replay_ret": -0.02300732694664502
+  },
+  {
+   "week": "2026-08-24",
+   "book": [
+    {
+     "ticker": "LLY",
+     "weight": 0.2,
+     "ret": -0.06935
+    },
+    {
+     "ticker": "JNJ",
+     "weight": 0.2,
+     "ret": -0.001401
+    },
+    {
+     "ticker": "XOM",
+     "weight": 0.15,
+     "ret": -0.043693
+    },
+    {
+     "ticker": "MSFT",
+     "weight": 0.15,
+     "ret": 0.062747
+    },
+    {
+     "ticker": "NVDA",
+     "weight": 0.1,
+     "ret": 0.009372
+    }
+   ],
+   "invested": 0.8,
+   "problems": [],
+   "book_ret": -0.010355069269109993,
+   "spy_ret": 0.005975555154863921,
+   "alpha": -0.016330624423973913,
+   "rand_mean": -0.002849654877171352,
+   "vs_random": -0.007505414391938641,
+   "pctile_vs_random": 0.245,
+   "council_ret": -0.000509076910718779,
+   "replay_ret": -0.013258945750634495
+  },
+  {
+   "week": "2026-08-31",
+   "book": [
+    {
+     "ticker": "MSFT",
+     "weight": 0.25,
+     "ret": -0.020926
+    },
+    {
+     "ticker": "JPM",
+     "weight": 0.2,
+     "ret": 0.007699
+    },
+    {
+     "ticker": "MRK",
+     "weight": 0.2,
+     "ret": 0.022653
+    },
+    {
+     "ticker": "AMZN",
+     "weight": 0.15,
+     "ret": -0.020164
+    },
+    {
+     "ticker": "CRM",
+     "weight": 0.1,
+     "ret": 0.019026
+    }
+   ],
+   "invested": 0.9,
+   "problems": [],
+   "book_ret": -0.000283063978450354,
+   "spy_ret": 0.0037272254120594983,
+   "alpha": -0.004010289390509852,
+   "rand_mean": -0.0019910441501167766,
+   "vs_random": 0.0017079801716664226,
+   "pctile_vs_random": 0.555,
+   "council_ret": 0.00019610338952935017,
+   "replay_ret": -0.010853045754843036
+  },
+  {
+   "week": "2026-09-08",
+   "book": [
+    {
+     "ticker": "GILD",
+     "weight": 0.16,
+     "ret": -0.02218
+    },
+    {
+     "ticker": "MDT",
+     "weight": 0.14,
+     "ret": -0.024558
+    },
+    {
+     "ticker": "CVX",
+     "weight": 0.14,
+     "ret": 0.013302
+    },
+    {
+     "ticker": "NVDA",
+     "weight": 0.13,
+     "ret": -0.062527
+    },
+    {
+     "ticker": "WFC",
+     "weight": 0.13,
+     "ret": 0.007251
+    }
+   ],
+   "invested": 0.7000000000000001,
+   "problems": [],
+   "book_ret": -0.012310488041347994,
+   "spy_ret": -0.006215319343814807,
+   "alpha": -0.006095168697533187,
+   "rand_mean": -0.009959463563178998,
+   "vs_random": -0.002351024478168996,
+   "pctile_vs_random": 0.365,
+   "council_ret": -0.0014219802983704262,
+   "replay_ret": -0.01254361454475146
+  },
+  {
+   "week": "2026-09-14",
+   "book": [
+    {
+     "ticker": "XOM",
+     "weight": 0.2,
+     "ret": -0.030587
+    },
+    {
+     "ticker": "LLY",
+     "weight": 0.17,
+     "ret": 0.009394
+    },
+    {
+     "ticker": "JPM",
+     "weight": 0.15,
+     "ret": -0.012873
+    },
+    {
+     "ticker": "MSFT",
+     "weight": 0.15,
+     "ret": -0.006599
+    },
+    {
+     "ticker": "NVDA",
+     "weight": 0.13,
+     "ret": 0.052215
+    }
+   ],
+   "invested": 0.8,
+   "problems": [],
+   "book_ret": -0.0006531062509913706,
+   "spy_ret": 0.006036178924970548,
+   "alpha": -0.006689285175961918,
+   "rand_mean": -0.0058643160201866835,
+   "vs_random": 0.005211209769195313,
+   "pctile_vs_random": 0.725,
+   "council_ret": -0.00313094342316621,
+   "replay_ret": -0.00022977285619210413
+  }
+ ]
+}
