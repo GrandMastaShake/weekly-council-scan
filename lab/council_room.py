@@ -53,10 +53,9 @@ def snapshot_commit(label):
 
 
 def _weeks_and_data():
-    from scan_pipeline.config.tickers import STOCK_UNIVERSE
     last_friday = date.today() - timedelta(days=(date.today().weekday() - 4) % 7 or 7)
     weeks = lab.council_weeks(last_friday.strftime("%Y-%m-%d"))
-    universe = sorted(set(STOCK_UNIVERSE))
+    universe = sorted(set(lab.frozen_universe()))     # V1 ran on the 2026-09-21 universe
     council_names = sorted({t for _, _, b in weeks if b for t, _ in b})
     tickers = sorted(set(universe + council_names)) + lab.EXTRA
     end = lab._plus(last_friday.strftime("%Y-%m-%d"), 1)

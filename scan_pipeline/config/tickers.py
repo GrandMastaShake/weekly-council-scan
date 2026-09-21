@@ -3,7 +3,7 @@
 AVAILABLE_TICKERS = [
     # Tech & Comm Services
     "AAPL", "ACN", "ADBE", "ADSK", "AKAM", "AMAT", "AMD", "ANET", "APH", "AVGO",
-    "CDNS", "CRM", "CSCO", "EA", "FTNT", "GOOG", "GOOGL", "HPE", "INTC", "INTU",
+    "CDNS", "CRM", "CSCO", "FTNT", "GOOG", "GOOGL", "HPE", "INTC", "INTU",
     "IONQ", "KLAC", "LRCX", "META", "MSFT", "MSI", "MU", "NFLX", "NOW", "NTLA",
     "NVDA", "NXPI", "ORCL", "PANW", "QBTS", "QCOM", "QUBT", "RBLX", "RGTI", "ROKU",
     "SIDU", "SMCI", "SNPS", "SYM", "TEL", "TER", "VSAT", "ZS",
@@ -12,9 +12,9 @@ AVAILABLE_TICKERS = [
     "LOW", "MAR", "MCD", "MDLZ", "MNST", "MO", "NKE", "ORLY", "PEP", "PG", "ROST",
     "SBUX", "SJM", "TGT", "TPR", "TSLA", "WMT", "YUM",
     # Financials
-    "AFL", "AIG", "AJG", "ALL", "AMP", "AON", "APO", "AXP", "BAC", "BK", "BLK",
+    "AFL", "AIG", "AJG", "ALL", "AMP", "AON", "APO", "AXP", "BAC", "BNY", "BLK",
     "BX", "C", "CB", "CME", "COIN", "CPAY", "GS", "HIG", "JKHY", "JPM", "KEY",
-    "KKR", "MA", "MCO", "MMC", "MS", "PAYX", "PGR", "PRU", "PYPL", "SPGI", "TROW",
+    "KKR", "MA", "MCO", "MRSH", "MS", "PAYX", "PGR", "PRU", "PYPL", "SPGI", "TROW",
     "TRV", "UPST", "V", "WFC", "WRB",
     # Healthcare
     "ABBV", "AMGN", "BAX", "BDX", "BFLY", "BIIB", "BMY", "BSX", "CI", "CVS",
@@ -27,13 +27,13 @@ AVAILABLE_TICKERS = [
     "NDSN", "NOC", "NSC", "ODFL", "OTIS", "PCAR", "PH", "PNR", "PWR", "ROP",
     "RSG", "RTX", "TDG", "TXT", "UNP", "UPS", "URI", "VMI", "WM", "XYL",
     # Energy & Materials
-    "APD", "BKR", "CVX", "DD", "DOW", "ECL", "EOG", "FCX", "HAL", "HES", "KMI",
+    "APD", "BKR", "CVX", "DD", "DOW", "ECL", "EOG", "FCX", "HAL", "KMI",
     "LIN", "LYB", "MPC", "NEM", "NUE", "OKE", "OXY", "PPG", "PSX", "SHW", "SLB",
     "VLO", "WMB", "XOM",
     # Real Estate
-    "AMT", "ARE", "AVB", "BXP", "CBRE", "CCI", "COLD", "COR", "CPT", "DLR",
-    "EQIX", "EQR", "ESS", "EXR", "FRT", "GLPI", "HST", "INVH", "IRM", "KIM",
-    "MAA", "O", "PEAK", "PLD", "PSA", "REG", "SBAC", "SPG", "UDR", "VICI",
+    "AMT", "ARE", "VMRK", "BXP", "CBRE", "CCI", "COLD", "COR", "CPT", "DLR",
+    "EQIX", "ESS", "EXR", "FRT", "GLPI", "HST", "INVH", "IRM", "KIM",
+    "MAA", "O", "DOC", "PLD", "PSA", "REG", "SBAC", "SPG", "UDR", "VICI",
     "VTR", "WELL", "WY",
     # Utilities
     "AEP", "AES", "ATO", "AWK", "CMS", "CNP", "D", "DUK", "ED", "EIX", "ES",
@@ -41,6 +41,13 @@ AVAILABLE_TICKERS = [
     "SRE", "WEC", "XEL",
 ]
 
+# Out-of-cycle universe review, 2026-09-21 (owner-approved; wiki/universe.md).
+# Seven tickers had stopped printing. Renamed in place: BK -> BNY (2026-05-21),
+# MMC -> MRSH (2026-01-14), PEAK -> DOC (2024-03-04). AVB and EQR merged into
+# Vivmark Residential, VMRK, trading from 2026-08-18. Removed: HES (acquired by
+# CVX, 2025-07-18) and EA (taken private, delisted 2026-08-04). 277 -> 274.
+# data_utils.SECTOR_MAP keeps the old tickers so replays of old weeks still
+# resolve their sectors.
 STOCK_UNIVERSE = sorted(AVAILABLE_TICKERS)
 
 # 44 tickers added to the committed weekly panel on 2026-08-26 (BACKFILL_44,
@@ -75,7 +82,15 @@ BACKFILL_44_TICKERS = [
 #
 # The correct bound is the FEED, not the engine set. 277 | 44 = 321, which is
 # the number the docs claimed all along.
-PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS))
+# Fed but not scanned: AVB stopped trading when it merged into VMRK, but the
+# 110-name watchlist below still lists it, and that list is a transcription of
+# the heatmap repo's config/watchlist_110.csv, which wins any disagreement.
+# Swapping AVB there is the heatmap's call; until then it stays in the feed so
+# the focus-set bound below keeps meaning what it says.
+FEED_ONLY_TICKERS = ["AVB"]
+
+# 2026-09-21: 274 | 44 | 1 feed-only = 319 after the out-of-cycle review.
+PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS) | set(FEED_ONLY_TICKERS))
 
 
 # ---------------------------------------------------------------------------

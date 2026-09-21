@@ -105,6 +105,18 @@ HISTORY_DATA_START = "2024-06-03"
 HISTORY_FIRST_MONDAY = "2024-09-09"
 HISTORY_LAST_MONDAY = "2026-07-06"     # the week before the Council's pilot week
 EARNINGS_CACHE = CACHE / "earnings_dates.json"
+# The engine universe as it stood when Passes 1-3 and Council Room V1 ran. The
+# 2026-09-21 review renamed or removed seven dead tickers; replays of those
+# passes keep the universe they were registered on, so they still reproduce.
+# The forward record uses the live universe.
+FROZEN_UNIVERSE = LAB / "universe_2026-09-21.txt"
+
+
+def frozen_universe():
+    with open(FROZEN_UNIVERSE, encoding="ascii") as fh:
+        return [ln.strip() for ln in fh if ln.strip()]
+
+
 VARIANTS3 = {
     "base":          {},
     "no-screen":     {"earnings": False},
@@ -312,7 +324,8 @@ def _install_taps(engines):
         mod.log_ties = tap
 
 
-def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, earnings=None):
+def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, earnings=None,
+        names=None):
     """Replay every Council week and score it.
 
     knobs    {"module.ATTR": value} set on the engine modules for this replay
@@ -325,6 +338,7 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
     start    first day of price data to download
     earnings {ticker: report dates} -- feeds the earnings blackout exactly as
              production does; None (Pass 1 and 2) leaves it unfed
+    names    the universe to scan; None = the live STOCK_UNIVERSE
     """
     from scan_pipeline.config.tickers import STOCK_UNIVERSE
     from scan_pipeline.engines import cecil, consensus, marky, ophelia
@@ -335,7 +349,7 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
 
     last_friday = date.today() - timedelta(days=(date.today().weekday() - 4) % 7 or 7)
     weeks_to_run = weeks if weeks is not None else council_weeks(last_friday.strftime("%Y-%m-%d"))
-    universe = sorted(set(STOCK_UNIVERSE))
+    universe = sorted(set(names if names is not None else STOCK_UNIVERSE))
     council_names = sorted({t for _, _, b in weeks_to_run if b for t, _ in b})
     tickers = sorted(set(universe + council_names)) + EXTRA
     end = (_plus(last_friday.strftime("%Y-%m-%d"), 1) if weeks is None
@@ -647,7 +661,8 @@ def _print_pass2(summaries, diag):
 def main_pass2(quiet=False):
     runs, summaries, capture = {}, {}, {}
     for name, knobs in VARIANTS.items():
-        rows = run(verbose=False, knobs=knobs, capture=capture if name == "baseline" else None)
+        rows = run(verbose=False, knobs=knobs, capture=capture if name == "baseline" else None,
+                   names=frozen_universe())
         runs[name] = rows
         summaries[name] = summarize(rows)
         if name != "baseline":
@@ -656,7 +671,7 @@ def main_pass2(quiet=False):
             print(f"  {name:<11} replayed {len(rows)} weeks")
     # the O-rs+ inputs, for the stock-level IC of the multi-week stock signal
     cap_rs = {}
-    run(verbose=False, knobs=VARIANTS["O-rs+"], capture=cap_rs)
+    run(verbose=False, knobs=VARIANTS["O-rs+"], capture=cap_rs, names=frozen_universe())
     diag = diagnostics(capture)
     rs_diag = diagnostics(cap_rs)
     for f in ("score", "sector_rotation_score", "flow_term", "risk_adjusted_score", "weekly_return"):
@@ -716,13 +731,14 @@ def pass3_tests(summaries, diag, diag_new):
 
 def main_pass3(quiet=False):
     from scan_pipeline.config.tickers import STOCK_UNIVERSE
-    cal = earnings_calendar(sorted(set(STOCK_UNIVERSE)))
+    frozen = frozen_universe()
+    cal = earnings_calendar(frozen)
     hweeks = history_weeks(HISTORY_FIRST_MONDAY, HISTORY_LAST_MONDAY)
     runs, summaries, cap_base, cap_new = {}, {}, {}, {}
     for name, knobs in VARIANTS3.items():
         cap = cap_base if name == "base" else (cap_new if name == "O-last+M-skip" else None)
         rows = run(verbose=False, knobs=knobs, capture=cap, weeks=hweeks,
-                   start=HISTORY_DATA_START, earnings=cal)
+                   start=HISTORY_DATA_START, earnings=cal, names=frozen)
         runs[name] = rows
         summ = summarize(rows)
         summ["worst_week"] = min(r["book_ret"] for r in rows)
@@ -735,7 +751,7 @@ def main_pass3(quiet=False):
         summaries[name] = summ
         if not quiet:
             print(f"  {name:<14} replayed {len(rows)} history weeks")
-    council = {n: run(verbose=False, knobs=k, earnings=cal) for n, k in VARIANTS3.items()}
+    council = {n: run(verbose=False, knobs=k, earnings=cal, names=frozen) for n, k in VARIANTS3.items()}
     council_summ = {}
     for n, rows in council.items():
         council_summ[n] = summarize(rows)
@@ -809,7 +825,7 @@ def main(argv=None):
     if args.pass_ == 2:
         main_pass2(quiet=args.quiet)
         return
-    rows = run(verbose=not args.quiet)
+    rows = run(verbose=not args.quiet, names=frozen_universe())
     s = summarize(rows)
     RESULTS.mkdir(parents=True, exist_ok=True)
     with open(RESULTS / "pass1_baseline.json", "w", encoding="ascii", newline="\n") as fh:

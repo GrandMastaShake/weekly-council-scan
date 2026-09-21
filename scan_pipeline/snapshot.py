@@ -10,7 +10,7 @@ Wave 1 (Job S). Owns the committed data feed:
   * rederive_and_compare()  -- purity self-check for the Wave 2 truth gate
 
 Spec amendment (owner, supersedes DATA_FEED.md sec.1 "Ticker set"): weekly
-files commit the FULL universe -- STOCK_UNIVERSE (277) + 16 index/sector ETFs
+files commit the FULL universe -- STOCK_UNIVERSE (277; 274 after the 2026-09-21 review) + 16 index/sector ETFs
 = 293 series tickers -- plus the special-instrument blocks, not just the
 charted ~40. Size math adjusts to ~15KB/file.
 

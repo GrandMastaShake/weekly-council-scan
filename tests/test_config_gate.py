@@ -57,9 +57,15 @@ def test_focus_tickers_is_exactly_110_unique_names():
     assert len(set(t.FOCUS_TICKERS)) == 110
 
 
-def test_price_feed_is_the_union_of_engine_set_and_backfill():
+def test_price_feed_is_the_union_of_engine_set_backfill_and_feed_only():
+    """FEED_ONLY_TICKERS (2026-09-21) holds a name the 110-name watchlist still
+    lists after it stopped trading: fed, never scanned, and only ever there to
+    cover the watchlist -- so the focus-set bound keeps meaning something."""
     assert set(t.PRICE_FEED_UNIVERSE) == (set(t.STOCK_UNIVERSE)
-                                          | set(t.BACKFILL_44_TICKERS))
+                                          | set(t.BACKFILL_44_TICKERS)
+                                          | set(t.FEED_ONLY_TICKERS))
+    assert not set(t.FEED_ONLY_TICKERS) & set(t.STOCK_UNIVERSE), "a feed-only name is never scanned"
+    assert set(t.FEED_ONLY_TICKERS) <= set(t.FOCUS_TICKERS), "feed-only exists only to cover the watchlist"
     assert t.PRICE_FEED_UNIVERSE == sorted(set(t.PRICE_FEED_UNIVERSE))
 
 

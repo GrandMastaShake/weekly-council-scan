@@ -19,6 +19,9 @@ except Exception:  # PyYAML absent -- hit-rate history degrades to neutral
 # ============================================================================
 
 SECTOR_MAP: Dict[str, str] = {
+    # 2026-09-21 universe review: successors of BK, MMC, PEAK, AVB/EQR. The old
+    # tickers stay below so replays of weeks before the change still resolve.
+    "BNY": "Financials", "MRSH": "Financials", "DOC": "Real Estate", "VMRK": "Real Estate",
     "AAPL": "Technology", "ACN": "Technology", "ADBE": "Technology", "ADSK": "Technology",
     "AKAM": "Technology", "AMAT": "Technology", "AMD": "Technology", "ANET": "Technology",
     "APH": "Technology", "AVGO": "Technology", "CDNS": "Technology", "CRM": "Technology",

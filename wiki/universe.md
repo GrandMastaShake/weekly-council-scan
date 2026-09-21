@@ -9,6 +9,16 @@ universe only at a quarterly review, recorded with a dated note in this file.
 `refs = 0` is the **NAKED** flag -- the wikis never mention the ticker, so the
 council has no narrative coverage for it. NAKED is a state to fix, not an error.
 
+**Out-of-cycle review, 2026-09-21 (owner-approved).** Seven tickers had stopped
+printing. BK is now BNY (ticker change 2026-05-21), MMC is now MRSH
+(2026-01-14), PEAK is now DOC (2024-03-04, after the Physicians Realty merger).
+AVB and EQR merged into Vivmark Residential, VMRK, trading from 2026-08-18.
+HES left (acquired by Chevron, 2025-07-18; CVX is already in the universe) and
+EA left (taken private, delisted 2026-08-04). Engine universe 277 -> 274. AVB
+stays in the price feed only while the heatmap's 110-name watchlist lists it.
+The four new rows carry live names and sectors; their Refs are 0 until the wikis
+cover them.
+
 | Ticker | Name | Sector | Cap | Refs |
 | --- | --- | --- | --- | --- |
 | AAPL | Apple Inc. | Technology | MEGA | 2 |
@@ -37,7 +47,6 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | APO | Apollo Global Management, Inc. | Financial Services | LARGE | 0 |
 | ARE | Alexandria Real Estate Equities, Inc. | Real Estate | MID | 0 |
 | ATO | Atmos Energy Corporation | Utilities | LARGE | 0 |
-| AVB | AvalonBay Communities, Inc. | Real Estate | LARGE | 0 |
 | AVGO | Broadcom Inc. | Technology | MEGA | 3 |
 | AWK | American Water Works Company, Inc. | Utilities | LARGE | 0 |
 | AXON | Axon Enterprise, Inc. | Industrials | LARGE | 0 |
@@ -49,10 +58,10 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | BDX | Becton, Dickinson and Company | Healthcare | LARGE | 0 |
 | BFLY | Butterfly Network, Inc. | Healthcare | MID | 0 |
 | BIIB | Biogen Inc. | Healthcare | LARGE | 0 |
-| BK | - | - | - | 1 |
 | BKR | Baker Hughes Company | Energy | LARGE | 0 |
 | BLK | BlackRock, Inc. | Financial Services | LARGE | 0 |
 | BMY | Bristol-Myers Squibb Company | Healthcare | LARGE | 2 |
+| BNY | The Bank of New York Mellon Corporation | Financial Services | LARGE | 0 |
 | BSX | Boston Scientific Corporation | Healthcare | LARGE | 0 |
 | BX | Blackstone Inc. | Financial Services | LARGE | 0 |
 | BXP | BXP, Inc. | Real Estate | LARGE | 0 |
@@ -86,11 +95,11 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | DE | Deere & Company | Industrials | LARGE | 2 |
 | DHR | Danaher Corporation | Healthcare | LARGE | 1 |
 | DLR | Digital Realty Trust, Inc. | Real Estate | LARGE | 3 |
+| DOC | Healthpeak Properties, Inc. | Real Estate | LARGE | 0 |
 | DOW | Dow Inc. | Basic Materials | LARGE | 2 |
 | DPZ | Domino's Pizza, Inc. | Consumer Cyclical | LARGE | 0 |
 | DUK | Duke Energy Corporation | Utilities | LARGE | 1 |
 | DXCM | DexCom, Inc. | Healthcare | LARGE | 0 |
-| EA | Electronic Arts Inc. | Communication Services | LARGE | 2 |
 | ECL | Ecolab Inc. | Basic Materials | LARGE | 1 |
 | ED | Consolidated Edison, Inc. | Utilities | LARGE | 1 |
 | EIX | Edison International | Utilities | LARGE | 2 |
@@ -98,7 +107,6 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | EMR | Emerson Electric Co. | Industrials | LARGE | 0 |
 | EOG | EOG Resources, Inc. | Energy | LARGE | 2 |
 | EQIX | Equinix, Inc. | Real Estate | LARGE | 2 |
-| EQR | Equity Residential | Real Estate | LARGE | 0 |
 | ES | Eversource Energy | Utilities | LARGE | 1 |
 | ESS | Essex Property Trust, Inc. | Real Estate | LARGE | 0 |
 | ETN | Eaton Corporation plc | Industrials | LARGE | 2 |
@@ -126,7 +134,6 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | HAL | Halliburton Company | Energy | LARGE | 0 |
 | HCA | HCA Healthcare, Inc. | Healthcare | LARGE | 0 |
 | HD | The Home Depot, Inc. | Consumer Cyclical | MEGA | 3 |
-| HES | - | - | - | 0 |
 | HIG | The Hartford Insurance Group, Inc. | Financial Services | LARGE | 0 |
 | HLT | Hilton Worldwide Holdings Inc. | Consumer Cyclical | LARGE | 0 |
 | HON | Honeywell International Inc. | Industrials | LARGE | 2 |
@@ -172,13 +179,13 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | MDLZ | Mondelez International, Inc. | Consumer Defensive | LARGE | 1 |
 | MDT | Medtronic plc | Healthcare | LARGE | 0 |
 | META | Meta Platforms, Inc. | Communication Services | MEGA | 4 |
-| MMC | - | - | - | 0 |
 | MMM | 3M Company | Industrials | LARGE | 1 |
 | MNST | Monster Beverage Corporation | Consumer Defensive | LARGE | 0 |
 | MO | Altria Group, Inc. | Consumer Defensive | LARGE | 1 |
 | MPC | Marathon Petroleum Corporation | Energy | LARGE | 1 |
 | MRK | Merck & Co., Inc. | Healthcare | MEGA | 1 |
 | MRNA | Moderna, Inc. | Healthcare | LARGE | 0 |
+| MRSH | Marsh & McLennan Companies, Inc. | Financial Services | LARGE | 0 |
 | MS | Morgan Stanley | Financial Services | MEGA | 1 |
 | MSFT | Microsoft Corporation | Technology | MEGA | 3 |
 | MSI | Motorola Solutions, Inc. | Technology | LARGE | 0 |
@@ -207,7 +214,6 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | PANW | Palo Alto Networks, Inc. | Technology | MEGA | 0 |
 | PAYX | Paychex, Inc. | Technology | LARGE | 0 |
 | PCAR | PACCAR Inc | Industrials | LARGE | 0 |
-| PEAK | - | - | - | 1 |
 | PEG | Public Service Enterprise Group Incorporated | Utilities | LARGE | 0 |
 | PEP | PepsiCo, Inc. | Consumer Defensive | LARGE | 1 |
 | PFE | Pfizer Inc. | Healthcare | LARGE | 1 |
@@ -271,6 +277,7 @@ council has no narrative coverage for it. NAKED is a state to fix, not an error.
 | VICI | VICI Properties Inc. | Real Estate | LARGE | 0 |
 | VLO | Valero Energy Corporation | Energy | LARGE | 2 |
 | VMI | Valmont Industries, Inc. | Industrials | MID | 0 |
+| VMRK | Vivmark Residential (AvalonBay + Equity Residential) | Real Estate | LARGE | 0 |
 | VRTX | Vertex Pharmaceuticals Incorporated | Healthcare | LARGE | 1 |
 | VSAT | Viasat, Inc. | Technology | LARGE | 0 |
 | VTR | Ventas, Inc. | Real Estate | LARGE | 0 |
