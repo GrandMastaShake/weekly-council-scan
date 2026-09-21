@@ -188,11 +188,14 @@ def earnings_calendar(tickers, max_age_days=None):
     rare moved date is the approximation. A ticker with no dates is treated
     the way production treats an unknown date: never excluded. max_age_days
     refetches a cache older than that (the forward run needs new quarters)."""
+    cached, todo = {}, list(tickers)
     if EARNINGS_CACHE.exists():
         with open(EARNINGS_CACHE, encoding="utf-8") as fh:
             cached = json.load(fh)
         age_days = (datetime.now().timestamp() - EARNINGS_CACHE.stat().st_mtime) / 86400
-        if set(tickers) <= set(cached) and (max_age_days is None or age_days < max_age_days):
+        if max_age_days is None or age_days < max_age_days:
+            todo = [t for t in tickers if t not in cached]   # fresh: fetch only the missing
+        if not todo:
             return cached
     from concurrent.futures import ThreadPoolExecutor
     import yfinance as yf
@@ -207,11 +210,11 @@ def earnings_calendar(tickers, max_age_days=None):
                 pass
         return t, []
     with ThreadPoolExecutor(max_workers=6) as pool:
-        cal = dict(pool.map(one, tickers))
+        cached.update(dict(pool.map(one, todo)))     # merged: other passes' names are kept
     CACHE.mkdir(parents=True, exist_ok=True)
     with open(EARNINGS_CACHE, "w", encoding="ascii", newline="\n") as fh:
-        json.dump(cal, fh, indent=0, sort_keys=True)
-    return cal
+        json.dump(cached, fh, indent=0, sort_keys=True)
+    return cached
 
 
 def _next_report(dates, on_or_after):

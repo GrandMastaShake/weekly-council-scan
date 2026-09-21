@@ -44,8 +44,17 @@ _ten_y_loaded = False
 #                    "skip_4w" -- it reads the (up to) 12-week window up to the
 #                                 close four weeks before the latest, skipping
 #                                 the most recent month (Pass 3)
+#   MARKY_MODE       "classic" -- the momentum / trend / calm-tape scorer below
+#                    "52w"     -- Council v2 (lab/council_v2.md): one question,
+#                                 is the stock in a confirmed uptrend near its
+#                                 highs? Needs a year of weekly closes, so
+#                                 production must fetch range=1y before it
+#                                 flips; with 3 months it proposes nothing.
 LOW_VOL_POINTS = 30.0
 MOMENTUM_WINDOW = "last_3w"
+MARKY_MODE = "classic"
+WEEKS_52 = 52
+MIN_WEEKS_52 = 40
 
 
 def load_10y_yield() -> Optional[float]:
@@ -70,6 +79,8 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     """
     Analyze all tickers and return Marky's top-3 proposal.
     """
+    if MARKY_MODE == "52w":
+        return _analyze_52w(market_data, date, price_cache)
     vix = parse_vix(market_data.get("vix"))
     signals = wiki_signals.get_signals()
     ten_y = load_10y_yield()
@@ -239,6 +250,79 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
     tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_key) if top3 else 0
     return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top,
             "earnings_skipped": earnings_skipped}
+
+
+def _analyze_52w(market_data: Dict[str, Any], date: str,
+                 price_cache: Optional[Dict[str, List]] = None) -> Dict[str, Any]:
+    """Council v2 Marky: where each stock sits against its own year.
+
+    From the last 52 weekly closes (at least 40):
+      range   40 pts  position in the 52-week range, low -> high
+      high    30 pts  nearness to the 52-week high: none at 80% of it or
+                      below, full at the high
+      trend   30 pts  20 for closing above the 40-week average, 10 more when
+                      that average is higher than it was 10 weeks earlier
+    Nothing about sectors, valuation or how calm the tape is -- those are
+    Ophelia's and Cecil's jobs. The earnings blackout applies as everywhere.
+    """
+    vix = parse_vix(market_data.get("vix"))
+    signals = wiki_signals.get_signals()
+    scores = []
+    for ticker in scan_universe(date):
+        history = get_price_history(ticker, date, WEEKS_52, price_cache)
+        closes = [h.close for h in history if h.close]
+        if len(closes) < MIN_WEEKS_52:
+            continue
+        high, low, last = max(closes), min(closes), closes[-1]
+        range_pos = (last - low) / (high - low) if high > low else 0.5
+        to_high = last / high
+        ma40 = sum(closes[-40:]) / 40.0
+        ma40_before = sum(closes[-50:-10]) / 40.0 if len(closes) >= 50 else None
+        above = last > ma40
+        rising = ma40_before is not None and ma40 > ma40_before
+        range_score = 40.0 * range_pos
+        high_score = 30.0 * clamp((to_high - 0.80) / 0.20, 0.0, 1.0)
+        trend_score = (20.0 if above else 0.0) + (10.0 if rising else 0.0)
+        total = wiki_signals.adjusted_score(ticker, range_score + high_score + trend_score, signals)
+        scores.append({
+            "ticker": ticker, "score": total, "sector": get_sector(ticker),
+            "range_pos": range_pos, "to_high": to_high, "high_52w": high, "low_52w": low,
+            "above_ma40": above, "ma40_rising": rising,
+            "range_score": range_score, "high_score": high_score, "trend_score": trend_score,
+            "weeks": len(closes), "avg_dollar_volume": avg_dollar_volume(history[-12:]),
+        })
+
+    # Sort by score, then nearness to the high, then liquidity; alphabetical
+    # pre-sort keeps any surviving tie deterministic.
+    scores.sort(key=lambda s: s["ticker"])
+    scores.sort(key=lambda s: (s["score"], s["to_high"], s["avg_dollar_volume"] or 0.0), reverse=True)
+    for line in log_ties(scores, "Marky", signals.watchlist, signals.mentions):
+        print(line)
+    tradeable, earnings_skipped = tradeable_picks(scores, market_data)
+    top3 = tradeable[:3]
+
+    stocks = []
+    for idx, s in enumerate(top3):
+        next_score = tradeable[idx + 1]["score"] if idx + 1 < len(tradeable) else None
+        strength = (0.40 * s["range_pos"]
+                    + 0.30 * clamp((s["to_high"] - 0.80) / 0.20, 0.0, 1.0)
+                    + 0.30 * s["trend_score"] / 30.0)
+        margin = 0.0
+        if next_score is not None and s["score"] > next_score:
+            margin = min(5.0, (s["score"] - next_score) * 0.25)
+        conf_raw, conf = pick_confidence(strength, idx, vix, margin, persona="Marky")
+        trend = ("above its 40-week average" + (", which is rising" if s["ma40_rising"] else "")
+                 if s["above_ma40"] else "below its 40-week average")
+        stocks.append({
+            "ticker": s["ticker"], "confidence": conf, "confidence_raw": round(conf_raw, 2),
+            "thesis": (f"At {s['to_high'] * 100:.0f}% of its 52-week high and "
+                       f"{s['range_pos'] * 100:.0f}% of the way up its 52-week range, {trend}. "
+                       f"Score: {s['score']:.0f}."),
+        })
+    top_key = round(top3[0]["score"], 2) if top3 else None
+    tied_at_top = sum(1 for s in scores if round(s["score"], 2) == top_key) if top3 else 0
+    return {"agent": "Marky", "stocks": stocks, "tied_at_top": tied_at_top,
+            "earnings_skipped": earnings_skipped, "mode": "52w"}
 
 
 def _generate_thesis(s: dict, idx: int) -> str:

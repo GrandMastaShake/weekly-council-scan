@@ -330,3 +330,34 @@ closes after it was registered, next to the real Council's book, and rewrites
 after the Council session and commits the result.
 
     python lab/forward.py
+
+## Pass 4 -- Marky v2, the chart (registered before the run)
+
+Part of Council v2 ([council_v2.md](council_v2.md)): all three members work
+from the owner's 111, each with one job. This pass tests Marky's.
+
+**v2** (`marky.MARKY_MODE = "52w"`) reads the last 52 weekly closes (at least
+40) and scores three things. Position in the 52-week range is worth 40 points.
+Nearness to the 52-week high is worth 30, with none at 80% of the high or
+below. Closing above the 40-week average earns 20, plus 10 when that average
+is rising. **classic** is today's Marky.
+
+**What is scored.** Each week, Marky's own top five after the earnings
+blackout, equal-weighted, against 200 random fives drawn from the same
+tradeable names. Also each input's rank IC with the next week's return.
+
+- *history:* the 96 pre-Council weeks on the frozen universe -- the mechanism
+  test.
+- *council:* the Council's closed weeks on the owner's 111 -- the universe v2
+  will use. Informational only: nine weeks, and the list itself has look-ahead.
+- *leans:* each mode's rank correlation with a stock's 12-week volatility (a
+  preference for a calm tape is Cecil's job) and with its 3-week return (the
+  input that ran backwards in Pass 2).
+
+**Decision rule: non-inferiority.** v2 is a design choice -- distinct jobs --
+not a claim that it predicts better, and neither mode has shown selection skill.
+So v2 replaces classic in Council v2 unless the history shows it is worse:
+either its nearness-to-high IC is negative with t <= -2, or its top five trail
+classic's on the paired weekly comparison with t <= -2.
+
+    python lab/pass4_marky.py
