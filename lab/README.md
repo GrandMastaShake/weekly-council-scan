@@ -933,3 +933,50 @@ agent runs. `nuggets_a.py`.
    most of their names, so they are not independent.
 
     python lab/nuggets_a.py
+
+## Nuggets A results
+
+Run after the registration commit (7089a8d); `results/nuggets_a.json`.
+
+**1. Separate member books behave like all fifteen, as predicted.** Edge over
+random, per week (weeks ahead of random):
+
+| | Week 1 | Week 2 | Month, per week |
+|---|---|---|---|
+| Separate books | +0.58% (5 of 9) | -0.23% (4 of 8) | -0.18% (2 of 6) |
+| All fifteen | +0.53% (5 of 9) | -0.22% (4 of 8) | -0.10% (3 of 6) |
+| v2 book | -0.91% (3 of 9) | +0.25% (7 of 8) | -0.55% (1 of 6) |
+| v2.1 book | -0.37% (4 of 9) | -0.35% (4 of 8) | -0.34% (1 of 6) |
+| Real Council | +0.01% (3 of 6) | -0.14% (2 of 5) | -0.33% (1 of 4) |
+
+They beat both synthesis books at week 1 and over the month. These are the
+same nine seen weeks, so the design goes to the forward record, not live.
+
+**2. Shapley credit puts a number on the dilution.** At week 1, the full
+separate book's +0.53%/wk splits as Ophelia -0.37%, Cecil +0.02% and Marky
++0.89%: the member v2's synthesis gave 8% of the book produced more than all
+of the edge. Week 2 turns it around: Ophelia +0.42%, Cecil +0.36%, Marky
+-0.99%.
+
+**3. No member's edge carries over, so weighting by track record has nothing
+to work with.** Over the 96 weeks, each member's weekly edge has a lag-1
+autocorrelation between -0.16 and +0.02, and the trailing eight weeks predict
+the next week with r between -0.18 and -0.03. No t reaches +2. Hit rates, which
+the live consensus weights its votes by, are no better. The one significant
+correlation is negative: Cecil's trailing-8 hit rate against the next week,
+r -0.30 (t -2.94, overstated because the windows overlap), so a good stretch
+was followed by a worse week. Under the registered rule, the live consensus
+should weight the members equally.
+
+A number that looks like an edge and is not: the engine-era Ophelia averaged
++1.56%/wk against the equal-weighted universe (t +2.05). Ten names carry 110%
+of it, led by RGTI, QUBT, IONQ and QBTS, quantum names that exploded and sit
+on the frozen list because they did. Without those ten it is -0.21%/wk. This
+is the universe's hindsight, the caveat on every history result here, at full
+strength.
+
+**4. The strikes carry no signal either way.** Objected minus approved across
+35 member votes: +0.75% (t +0.96), with the objected names ahead in 19 of 35.
+By member: Marky +1.17% (t +1.15), Ophelia +0.66%, Cecil +0.36%. As in the
+earlier reads, the objections lean the wrong way for a veto, but none reaches
+the line.
