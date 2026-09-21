@@ -881,3 +881,16 @@ stocks crossed their weekly MACD signal line on 09-18 (RGTI, OKLO, TSLA), all
 inside falling channels. The variant therefore takes the qualifying names
 whose histogram turned up. For comparison, the real Council booked XOM, AMD
 and HIG with 47.8% cash.
+
+**The owner's picks**, added Monday evening: RGTI, OKLO and TSLA, the three
+crossovers. All three sit in falling channels (-16%, -67% and -23% a year), so
+they fail Marky's rising-channel test and would be a different job: buying the
+bounce in a downtrend. They were named after the session by someone who could
+have seen it, so they count only from Tuesday's open.
+
+**Does Ophelia weigh BTC, GLD and COIN?** BTC and GLD are on her pass-3 sheet
+every week, and she discussed both in all nine weeks and passed each time,
+always with a reason: both in 12-week downtrends, gold "stretched after a +7%
+week", a one-week +22.5% bitcoin jump "that none of my sectors explain", or a
+Fed hike ahead. COIN was on her sheet in the five weeks Financials made her
+four, and she never mentioned it.

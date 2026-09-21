@@ -179,6 +179,8 @@ def score(label):
     books = {m: v["picks"] for m, v in doc["members"].items()}
     books["all 15"] = [x["ticker"] for x in doc["all15"]]
     books.update({name: v["picks"] for name, v in doc.get("variants", {}).items()})
+    # A variant named after the session (the owner's picks) counts only from its window.
+    only = {name: v["only_from"] for name, v in doc.get("variants", {}).items() if v.get("only_from")}
     doc["score"] = {"scored": datetime.now().astimezone().isoformat(timespec="seconds")}
     for window, first_day in (("from Monday's open", W), ("from Tuesday's open", lab._plus(W, 1))):
         rets = {t: _span(adj[t], first_day, fri) for t in names if t in adj and t not in black}
@@ -187,6 +189,8 @@ def score(label):
         out = {}
         print(f"  {window}: SPY {spy*100:+.2f}%")
         for name, ts in books.items():
+            if name in only and only[name] not in window:
+                continue
             ts = [t for t in ts if t in rets]
             r = statistics.fmean(rets[t] for t in ts)
             rng = random.Random(f"{lab.SEED}-{W}-live-{window}-{name}")

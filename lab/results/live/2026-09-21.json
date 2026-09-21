@@ -243,6 +243,45 @@
      "macd_above_zero": true
     }
    ]
+  },
+  "Owner's picks (weekly MACD crossovers)": {
+   "picks": [
+    "RGTI",
+    "OKLO",
+    "TSLA"
+   ],
+   "chart": [
+    {
+     "ticker": "RGTI",
+     "qualifies": false,
+     "why_not": "channel slopes down",
+     "z": -0.33382221245494254,
+     "slope_year": -0.15873765133108886,
+     "macd_above_zero": false,
+     "crossed_signal_line_this_week": true
+    },
+    {
+     "ticker": "OKLO",
+     "qualifies": false,
+     "why_not": "channel slopes down",
+     "z": -0.20473808191438225,
+     "slope_year": -0.6723787997186631,
+     "macd_above_zero": false,
+     "crossed_signal_line_this_week": true
+    },
+    {
+     "ticker": "TSLA",
+     "qualifies": false,
+     "why_not": "channel slopes down",
+     "z": 0.39404701219206595,
+     "slope_year": -0.2330046495109932,
+     "macd_above_zero": false,
+     "crossed_signal_line_this_week": true
+    }
+   ],
+   "only_from": "Tuesday's open",
+   "added": "2026-09-21T19:13:52-04:00",
+   "note": "named by the owner Monday evening, after the session; the three names on the 111 whose weekly MACD crossed its signal line on 2026-09-18, all inside falling channels"
   }
  }
 }
