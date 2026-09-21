@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-14 | +0.23% (Tracker P&L) | 50% | TBD | TBD | PSX (+5.26%) | HIG (-3.28%) | 40.2% |
 | 2026-09-14 | B (3.13 -- analysis quality) | TBD (week open) | Cecil (3.42 -- LEAD, only agent to build independent invalidations) | Ophelia (REVISED: thesis/ticker mismatch -- scarcity thesis, regulated utilities; prior confidence-calibration flag RESOLVED) | ALL (A-) | DE (C+) | 40.2% |
 | 2026-09-08 | +0.08% (Tracker P&L) | 50% | TBD | TBD | ETN (+1.01%) | LMT (-0.39%) | 73.4% |
 | 2026-09-08 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x4) | Ophelia (CEG/VST proposed at unchanged conviction despite stated durability doubt) | LMT (A-) | ETN (B) | 73.4% |
