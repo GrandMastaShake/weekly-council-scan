@@ -980,3 +980,67 @@ strength.
 By member: Marky +1.17% (t +1.15), Ophelia +0.66%, Cecil +0.36%. As in the
 earlier reads, the objections lean the wrong way for a veto, but none reaches
 the line.
+
+## Pass 7 -- combos and a fourth chair (registered before any run)
+
+The owner asked for creative combinations, a fourth chair, or new jobs. Five
+designs follow, all mechanical so that the 96 pre-Council weeks can judge
+them, and each grounded in something the lab found today. `pass7_combos.py`
+has the exact rules.
+
+- **Dash, a fourth chair: post-earnings drift.** Dash buys names whose
+  market-adjusted earnings reaction (from the close before the report to the
+  close of the next session) was in the top fifth of the reactions in the six
+  weeks before the hold, largest first. It is the mirror image of the
+  earnings blackout, the one control that held up here, and the
+  best-documented short-horizon effect in the research. Tested alone, against
+  random.
+- **Quality pullback, Cecil as gatekeeper.** Marky's pullback ranking, keeping
+  only names that pass a value screen: positive and growing trailing EPS, and
+  P/E at or below the week's median. Two jobs combined rather than blended.
+  Against Marky alone.
+- **Relay.** Half the book is Marky's five in their own week, and half is
+  Ophelia's five from the week before, so each signal runs at the horizon
+  where it seemed to live (Marky's edge was a one-week bounce; Ophelia's picks
+  did better in the following week). Against the same two members held in the
+  same week.
+- **Four chairs.** Separate books with a quarter each for Ophelia, Cecil,
+  Marky and Dash. Against three chairs with a third each. Does a fourth,
+  unrelated job add anything?
+- **The Warden, a chair that sizes instead of picking.** It takes the four
+  chairs' names, weights them by inverse 12-week volatility, allows at most
+  two a sector, and books 80% invested (the cash cap's floor) when SPY closed
+  below its 40-week average. This is nuggets 6, 7 and 8 as one job. Against
+  four chairs.
+
+On history, Ophelia and Cecil are the engines as they ran (from a baseline
+replay), and Marky is the channel screen with its full ranking recomputed. On
+the Council weeks, Ophelia and Cecil are the Council Room v2 agents' fives,
+and the universe is the 111.
+
+**The guard against hindsight.** The frozen list holds names that are on it
+because they ran; ten of them carried the engine-era Ophelia's whole history
+edge. So the primary measure clips each name's weekly return to +/-20%, and
+the raw measure is reported beside it.
+
+**Predictions.** Dash: positive but short of t 2, since the drift has faded in
+large caps. Quality pullback: close to Marky alone, with a calmer book.
+Relay: close to its baseline, since the lag effect was read off seen weeks.
+Four chairs: close to three. The Warden: a lower weekly SD and a shallower
+drawdown by construction, with about the same edge.
+
+**What counts** (history only; the Council weeks are reported and decide
+nothing):
+- Dash, Quality pullback, Relay and Four chairs are *promising*, meaning
+  candidates for the next quarterly change, only if the clipped edge (over
+  random for Dash, over its baseline for the others, paired by week) is
+  positive with t >= 2 and both halves are positive.
+- The Warden is promising if it cuts the weekly SD of the book by at least 10%
+  and the worst drawdown against four chairs, while its paired edge stays
+  above t -2.
+- Deflation (nugget 11): with four designs at the t >= 2 line, a pass by luck
+  somewhere is about a one-in-ten chance. Anything promising goes to the
+  forward record before it touches the live book, and the change freeze
+  applies.
+
+    python lab/pass7_combos.py
