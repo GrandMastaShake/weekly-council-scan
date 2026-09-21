@@ -78,6 +78,23 @@ Each member proposes 5. The earnings blackout applies to all three.
 The earnings blackout applies throughout. The 20% cash cap is for market calls:
 an ENGINE ABORT on broken data still holds the whole book in cash.
 
+### v2.1: every job holds a seat (2026-09-21)
+
+In the Council Room, v2's synthesis gave Marky's five 8% of the book on
+average. The owner handed the fix to the lab. v2.1 keeps the four steps and
+changes three things in them:
+
+- The debate logs state every member's job, and Marky's five carry his case in
+  words from his own numbers instead of the label "a numeric screen".
+- The synthesis judges each name by the job of the member who picked it. A
+  name isn't dropped for failing another member's test.
+- Each member's picks hold at least 20% of the book, and a name two members
+  picked counts for both. The synthesis names one alternate per member, and a
+  name two members vote down is replaced by an alternate from a member who
+  picked it. The vote can change a job's name but cannot silence the job.
+
+Registered and tested in `lab/README.md` (Council Room v2.1).
+
 ## Before it goes live
 
 | Piece | Where it is tested | Status |

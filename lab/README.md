@@ -602,3 +602,63 @@ Cash ran 0-10% (5% on average), well inside the owner's 20% cap.
 **Open for the owner:** whether the synthesis step goes live as designed, or
 with a fixed share of the book for each member so every job counts. The forward
 record will score whichever goes live.
+
+## Council Room v2.1 -- every job holds a seat (registered before any agent ran)
+
+The owner handed this call to the lab. Three things in v2's book step leaned
+against Marky, and none of them needs the members to change:
+
+- *The logs.* Ophelia's and Cecil's fives came with their own reasoning;
+  Marky's were introduced as "a numeric screen" that "writes no prose".
+- *No rule about whose test applies.* The drafts dropped his pullbacks for
+  failing Ophelia's sectors or Cecil's prices.
+- *No rule that every job counts.* One job could be shut out entirely, and one
+  nearly was.
+
+v2.1 changes the book step only. The members' fives are v2's, unchanged.
+
+- **Fair logs.** Every member's section states its job. Marky's five carry his
+  case in words, from his own numbers: how far below the channel line, how
+  steep the channel, what weekly MACD is doing. His method is written out.
+- **Judge each name by its backer's job.** A value pick on whether it is cheap
+  and sound, a sector pick on whether it expresses the call, a chart pick on
+  whether it is a pullback in a rising channel. No name is dropped for failing
+  another member's test.
+- **Every job holds a seat** (variant C only). Each member's picks hold at least
+  20% of the book; a name two members picked counts for both. The synthesis
+  names one alternate per member. A name two members vote down is replaced by
+  an alternate from a member who picked it, so the vote can change a job's name
+  but not silence the job. If no alternate keeps every member at 20%, the name
+  stays and the objections become dissents.
+
+Two variants, each a fresh synthesis agent per week on the same logs, in
+separate folders so neither can see the other's answer:
+
+- **B, fair framing only** -- a draft, no vote. Does the framing alone give each
+  job a fair share?
+- **C, v2.1** -- a draft, the three members' votes (v2's approval prompt, word
+  for word), and the final book by rule. The design proposed for go-live.
+
+**What is scored.** Each member's share of every book: v2's, B's and C's. B's
+draft, C's draft and C's final book, as v2's were: against random books at the
+same weights, against SPY and against the real Council. And C's final against
+v2's final, paired by week.
+
+**What counts.**
+
+- *v2.1 replaces v2's book step* unless its final book trails random picks
+  with t <= -2, or more than one of its nine drafts breaks a rule: more than 5
+  names, a weight outside 5-30%, under 80% invested, a member under 20%, a name
+  reporting that week, or alternates that are not one per member.
+- *The framing alone fixed it* if under B every member holds 20% or more on
+  average, and all three do in at least 7 of the 9 weeks. Either way C goes
+  live, with the floor as a backstop.
+- *Returns decide nothing here.* The tweak was designed after seeing Marky's
+  five do best on these weeks, so B's and C's returns are flattered, and they
+  are reported only for completeness. The shares are a fair measurement: the
+  agents are fresh and cannot see outcomes. The forward record decides whether
+  v2.1 earns its place.
+
+    python lab/council_room_v2.py debate21 DIR
+    python lab/council_room_v2.py approve21 DIR
+    python lab/council_room_v2.py final21 DIR

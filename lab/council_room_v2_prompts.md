@@ -134,3 +134,65 @@ Reply with ONLY this JSON:
 No agent. A name that two of the three members object to is swapped for the
 first unused alternate, which inherits its weight. Every objection that did
 not carry is kept as a dissent. (`council_room_v2.py final`.)
+
+# v2.1 -- every job holds a seat
+
+The members' passes and the approval prompt are unchanged. The logs are
+rebuilt by `council_room_v2.py debate21`: each member's section states its
+job, and Marky's five carry his case in words from his own numbers, with his
+method written out. Both variants read the same logs from their own folder
+(C: debate21/, B: debate21b/).
+
+## v2.1 synthesis, variant B -- fair framing only
+
+(common header, with "You are the Council's synthesis agent")
+
+YOUR JOB: you turn three members' separate picks into the Council's book. You
+have no view of your own beyond the members' reasoning and the facts sheet.
+
+THIS PASS: read logs.md -- the three members' five picks for the week, each
+with the case from its own job (Ophelia: sector rotation; Cecil: value; Marky:
+pullbacks in rising trends) -- and sheet.csv, the facts for every name they
+picked. Draft the Council's book for the week:
+- up to 5 names, all from the members' picks;
+- each 5% to 30%, with at least 80% invested in total (cash is capped at 20%);
+- no name with reports_this_week = True;
+- judge each name by the job of the member who picked it: a value pick by
+  whether it is cheap and sound, a sector pick by whether it expresses the
+  sector call, a chart pick by whether it is a pullback inside a rising
+  channel. Don't drop a name for failing another member's test;
+- where two members picked the same name for different reasons, that is the
+  strongest signal on the page; where they disagree, decide and say why;
+- name two alternates, also from their picks, in case the Council rejects a name.
+
+Reply with ONLY this JSON:
+{"week": "{week}", "book": [{"ticker": "...", "weight": 0.20, "backers": ["Ophelia", "..."], "why": "one sentence"}], "cash": 0.10, "alternates": ["...", "..."], "rationale": "3-4 sentences", "files_read": ["..."], "tools_used": ["..."]}
+
+## v2.1 synthesis, variant C -- the design
+
+As B, with two changes to the rules, so the list reads:
+- up to 5 names, all from the members' picks;
+- each 5% to 30%, with at least 80% invested in total (cash is capped at 20%);
+- every member's picks together hold at least 20% of the book; a name two
+  members picked counts toward both;
+- no name with reports_this_week = True;
+- judge each name by the job of the member who picked it (as B);
+- where two members picked the same name for different reasons (as B);
+- name three alternates, one from each member's picks, in case the Council
+  rejects a name.
+
+Reply with ONLY this JSON:
+{"week": "{week}", "book": [{"ticker": "...", "weight": 0.20, "backers": ["Ophelia", "..."], "why": "one sentence"}], "cash": 0.10, "alternates": [{"ticker": "...", "member": "Ophelia"}, {"ticker": "...", "member": "Cecil"}, {"ticker": "...", "member": "Marky"}], "rationale": "3-4 sentences", "files_read": ["..."], "tools_used": ["..."]}
+
+## v2.1 approval
+
+C's draft only, with v2's approval prompt word for word (step 3 above),
+folders built by `council_room_v2.py approve21`.
+
+## v2.1 final, by rule
+
+No agent. A name that two of the three members object to is replaced by an
+alternate from a member who picked it, which inherits its weight; if that
+would leave any member under 20%, the next alternate that keeps every member
+there. If none does, the name stays and its objections are kept as dissents,
+as is every objection that did not carry. (`council_room_v2.py final21`.)
