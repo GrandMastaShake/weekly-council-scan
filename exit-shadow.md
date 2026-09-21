@@ -45,6 +45,24 @@
 
 ## Entries
 
+### Week of 2026-09-21
+
+Book: XOM 19.7% / AMD 16.8% / HIG 15.7% / cash 47.8%. **Entry prices = validated Monday 2026-09-21 opens** (each bar checked low <= open <= high before the tracker was run at ~10:36 ET; SPY $766.25). First week since the log opened that the Council and the Arena share the same entry basis. Note AMD gapped **+4.3%** at the open ($583.94 vs Friday's $559.82 close), so its levels below sit well above the Friday chart.
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| XOM @ $160.96 (Marky) | **CORE** -- mega-cap integrated major, deepest liquidity in the sector | -5% = $152.91 | XLE weekly close below $63.46 (breakout line, wiki/energy.md; wiki/synthesis.md Section 5) | Named catalysts: OPEC+ meets Oct 4; XOM Q3 print Oct 30 (wiki/earnings-surveillance.md); 6-week backstop Nov 2 | Trim 1/3 at +15% ($185.10); remainder trails -15% from HWM |
+| AMD @ $583.94 (Ophelia) | **CORE** -- mega-cap semis, broad sponsorship; flagged hot (RSI 65.4 at Friday close, then a +4.3% gap) | -5% = $554.74 | SMH close below $560.28 (wiki/semiconductors.md Near Support; wiki/synthesis.md Section 5 SMH row) | Named catalyst: MU FQ4 Wed Sep 30 AMC is the leadership trade's verdict; 6-week backstop Nov 2 | Trim 1/3 at +15% ($671.53); remainder trails -15% from HWM |
+| HIG @ $131.69 (Cecil) | **CORE** -- large-cap P&C insurer | -5% = $125.11 | 10Y-3M curve inverts (macro/facts.json rates.curve_10y_3m_bps = +102 at booking) | Named gates: $192B 2/5/7-year auctions Sep 22-24; P&C Q3 prints late October; 6-week backstop Nov 2 | Trim 1/3 at +15% ($151.44); remainder trails -15% from HWM |
+
+Note: ALL (Cecil) and DE (Marky) were TRIGGER-BLOCKED at booking -- their 2026-09-14 invalidations fired on 9/18 -- and VICI was blocked as a promotion; no exit template attaches. Their counterfactual lives in shadow-book.md.
+
+**Template stress note:** AMD's stop ($554.74) sits ABOVE SMH's $560.28 invalidation in price terms for AMD itself -- the gap means the stop leg may fire before the thesis leg for the first time in this log. HIG's -3.81% intraweek low last week (closest CORE call on record) is the reference for whether -5% is still dead-zone.
+
+outcome: to be computed (score Monday 2026-09-28 against date-pinned daily bars 2026-09-21 -> 2026-09-25).
+
+---
+
 ### Week of 2026-09-14
 
 Book: ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% / cash 40.2%. **Entry prices = Friday 2026-09-11 closes**, not Monday opens: yfinance had not yet published the 2026-09-14 daily bar when the tracker ran at 09:53 ET, and tracker.py took its documented close-based fallback (warning emitted for all five symbols including SPY). Recorded here because the entry basis changes every level below it.
