@@ -894,3 +894,42 @@ always with a reason: both in 12-week downtrends, gold "stretched after a +7%
 week", a one-week +22.5% bitcoin jump "that none of my sectors explain", or a
 Fed hike ahead. COIN was on her sheet in the five weeks Financials made her
 four, and she never mentioned it.
+
+## Nuggets A -- four cheap questions (registered before computing)
+
+From the owner's ranked review. All four use data already on hand, and no
+agent runs. `nuggets_a.py`.
+
+1. **Separate member books.** Each member keeps a third of the book, split
+   equally over its own five, and nothing is blended; a name two members picked
+   gets both slices. Scored like the spot check (week 1, week 2, month) against
+   random books of the same weights, beside the v2 and v2.1 books, all fifteen
+   and the real Council. *Prediction:* close to all fifteen, and ahead of the v2
+   and v2.1 books at week 1, as all fifteen was. That is the same nine seen
+   weeks, so it decides nothing here. It is a candidate for the forward record.
+2. **Shapley credit.** For each week, the value of a coalition of members is
+   its separate-books book's edge over random. With three members that is
+   seven books, and each member's Shapley value is its average marginal
+   contribution; the three values add up to the full book's edge. Reported at
+   week 1 and week 2. *Prediction:* Marky carries the largest share at week 1
+   and gives it back at week 2. This is credit assignment on seen weeks, a
+   description rather than a test.
+3. **Does a member's edge carry over?** On the 96 pre-Council weeks, the
+   engine-era members (Cecil, Marky and Ophelia as the engines ran them, from
+   a fresh baseline replay with capture) and Marky's channel mode (Pass 5):
+   each week's edge over the equal-weighted universe, its lag-1
+   autocorrelation, and whether the trailing 8 weeks' mean edge predicts the
+   next week's. The same two for each member's weekly hit rate, the share of
+   its picks that rose, which is what the live consensus weights its votes by.
+   *Prediction:* no persistence (every r within +/-0.2, every t within +/-2).
+   *What counts:* persistence is real for a member only if a correlation
+   reaches t >= 2. If none does, weighting members by their track record has
+   nothing to work with, and the live consensus should weight them equally.
+4. **The strikes, both ways.** Both vote rounds (v2 and v2.1, 270 votes): for
+   each member's objections, the week-1 return of the names it objected to
+   minus the names it approved in the same draft, per week, pooled and by
+   member. *Prediction:* no signal either way. *What counts:* a veto signal
+   needs the gap at t <= -2, a contrarian one at t >= 2. The two rounds share
+   most of their names, so they are not independent.
+
+    python lab/nuggets_a.py
