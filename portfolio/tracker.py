@@ -137,6 +137,68 @@ def fetch_week_prices(tickers: List[str], start_date: datetime, end_date: dateti
         return {t: {} for t in tickers}
 
 
+def _same_snapshot_prices(ticker: str, entry_date_str: str, entry_source: str,
+                          exit_date_str: str) -> Optional[Tuple[float, float]]:
+    """(entry, exit) read from ONE auto-adjusted download, or None.
+
+    TOTAL-RETURN FIX (2026-09-21 audit). Entry prices were fetched at open time
+    and exit prices a week later, each with auto_adjust=True. Yahoo applies
+    dividend adjustments retroactively, so when an ex-dividend date falls inside
+    the week the stored entry (adjusted as of Monday) and the exit (adjusted as
+    of Friday) come from DIFFERENT adjustment snapshots, and the dividend drops
+    out of the return. SPY went ex-dividend Fri 2026-09-18: the tracker scored
+    SPY -0.34% for the week of 2026-09-14 when its total return was -0.09%, a
+    0.25-point benchmark understatement credited to the Council as alpha.
+
+    Reading both ends from one download puts them on the same basis. This is
+    what arena_ingest.py --close already does for Arena players, so after this
+    change the Council and the players are measured with the same ruler.
+
+    The entry bar mirrors the rule that produced the stored entry: "open" means
+    the first trading day on or after entry_date (fetch_yf_open), "close" means
+    entry_date or the nearest prior trading day (fetch_yf_price).
+    """
+    try:
+        import yfinance as yf
+        e = datetime.strptime(entry_date_str, "%Y-%m-%d")
+        x = datetime.strptime(exit_date_str, "%Y-%m-%d")
+        data = yf.download(
+            ticker,
+            start=(e - timedelta(days=7)).strftime("%Y-%m-%d"),
+            end=(x + timedelta(days=1)).strftime("%Y-%m-%d"),
+            progress=False,
+            auto_adjust=True,
+        )
+        if data.empty:
+            return None
+        if getattr(data.columns, "nlevels", 1) > 1:
+            data.columns = data.columns.get_level_values(0)
+        days = list(data.index.strftime("%Y-%m-%d"))
+        if entry_source == "open":
+            cands = [d for d in days if d >= entry_date_str]
+            if not cands:
+                return None
+            e_day, e_field = cands[0], "Open"
+        else:
+            cands = [d for d in days if d <= entry_date_str]
+            if not cands:
+                return None
+            e_day, e_field = cands[-1], "Close"
+        exits = [d for d in days if d <= exit_date_str]
+        if not exits:
+            return None
+        x_day = exits[-1]
+        idx = data.index.strftime("%Y-%m-%d")
+        ep = float(data.loc[idx == e_day][e_field].iloc[0])
+        xp = float(data.loc[idx == x_day]["Close"].iloc[0])
+        if ep <= 0:
+            return None
+        return ep, xp
+    except Exception as exc:
+        print(f"Warning: same-snapshot refetch failed for {ticker}: {exc}; using stored entry.")
+        return None
+
+
 # --- Report Parsing ---
 
 def parse_report(report_path: Path) -> Dict:
@@ -234,17 +296,24 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
     monday = datetime.strptime(week_date_str, "%Y-%m-%d")
     tickers = [p["ticker"] for p in report_data["picks"]]
     prices = {}
+    # Which bar each entry came from, so --close can re-read the same bar on the
+    # same adjustment snapshot as the exit (see _same_snapshot_prices).
+    sources = {}
     for t in tickers:
         prices[t] = fetch_yf_open(t, monday)
+        sources[t] = "open"
         if prices[t] is None:
             print(f"Warning: {t} Monday open unavailable; falling back to close-based entry.")
             prices[t] = fetch_yf_price(t, monday)
+            sources[t] = "close"
 
     # Fetch SPY entry price (same date-pinned Monday-open basis)
     spy_price = fetch_yf_open("SPY", monday)
+    spy_source = "open"
     if spy_price is None:
         print("Warning: SPY Monday open unavailable; falling back to close-based entry.")
         spy_price = fetch_yf_price("SPY", monday)
+        spy_source = "close"
 
     positions = []
     for pick in report_data["picks"]:
@@ -256,6 +325,7 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
             "thesis": pick.get("thesis", ""),
             "entry_price": entry_price,
             "entry_date": week_date_str,
+            "entry_price_source": sources.get(pick["ticker"]),
             "stop_loss": None,  # Will be set from journal if available
             "target": None,
             "direction": "long",
@@ -271,13 +341,14 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
         "status": "open",
         "positions": positions,
         "spy_entry": spy_price,
+        "spy_entry_source": spy_source,
         "vix_at_entry": report_data.get("vix"),
         "fed_stance": report_data.get("fed_stance"),
         "total_weight": sum(p["weight"] for p in positions),
         "cash_weight": 1.0 - sum(p["weight"] for p in positions),
     }
 
-    with open(CURRENT_PATH, "w", encoding="utf-8") as f:
+    with open(CURRENT_PATH, "w", encoding="utf-8", newline="\n") as f:
         yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
 
     return current
@@ -346,9 +417,21 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
                     pos["exit_date"] = friday_str
                     pos["exit_reason"] = "no_data"
 
-        # Calculate P&L
-        if entry and pos["exit_price"]:
+        # Calculate P&L -- total return, both ends from one adjusted download
+        # when the entry basis was recorded at open. Weeks opened before
+        # 2026-09-21 carry no entry_price_source and keep the old arithmetic.
+        snap = None
+        if pos.get("entry_price_source") and pos.get("exit_reason") in ("week_end", "last_available"):
+            snap = _same_snapshot_prices(t, pos["entry_date"], pos["entry_price_source"], pos["exit_date"])
+        if snap:
+            e_adj, x_adj = snap
+            pos["entry_price_adjusted"] = e_adj
+            pos["exit_price"] = x_adj
+            pos["pnl_pct"] = round((x_adj - e_adj) / e_adj * 100, 2)
+            pos["return_basis"] = "total_return_same_snapshot"
+        elif entry and pos["exit_price"]:
             pos["pnl_pct"] = round((pos["exit_price"] - entry) / entry * 100, 2)
+            pos["return_basis"] = "stored_entry"
         else:
             pos["pnl_pct"] = 0.0
 
@@ -357,11 +440,22 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
     # Calculate weighted portfolio return
     weighted_return = sum(p["weight"] * (p["pnl_pct"] or 0) for p in current["positions"])
 
-    # Calculate SPY return for the week
+    # Calculate SPY return for the week -- same total-return basis as the book
     spy_entry = current.get("spy_entry")
     spy_return = None
-    if spy_entry and spy_exit:
+    spy_snap = None
+    if current.get("spy_entry_source"):
+        spy_snap = _same_snapshot_prices(
+            "SPY", current["week"], current["spy_entry_source"], friday.strftime("%Y-%m-%d"))
+    if spy_snap:
+        e_adj, x_adj = spy_snap
+        current["spy_entry_adjusted"] = e_adj
+        spy_exit = x_adj
+        spy_return = round((x_adj - e_adj) / e_adj * 100, 2)
+        current["spy_return_basis"] = "total_return_same_snapshot"
+    elif spy_entry and spy_exit:
         spy_return = round((spy_exit - spy_entry) / spy_entry * 100, 2)
+        current["spy_return_basis"] = "stored_entry"
 
     # Calculate alpha
     alpha = None
@@ -381,7 +475,7 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
 
     # Archive to history
     history_file = HISTORY_DIR / f"{current['week']}.yaml"
-    with open(history_file, "w", encoding="utf-8") as f:
+    with open(history_file, "w", encoding="utf-8", newline="\n") as f:
         yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
 
     # Clear current
@@ -471,7 +565,7 @@ def calculate_metrics() -> Dict:
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     }
 
-    with open(METRICS_PATH, "w", encoding="utf-8") as f:
+    with open(METRICS_PATH, "w", encoding="utf-8", newline="\n") as f:
         json.dump(metrics, f, indent=2)
 
     return metrics
@@ -562,15 +656,34 @@ def update_scoreboard(week_data: Dict) -> str:
 
     row = f"| {week} | {grade}% | {hit_rate:.0%} | {lead} | {flagged} | {best_str} | {worst_str} | {cash_pct}% |"
 
-    # Find the table and append row
-    table_pattern = r"(\| Week Ending \| Council Grade \| Hit Rate \| Lead Councilor \| Flagged Blindspot \| Best Pick \| Worst Pick \| Cash % \|)\n(\|.*?\|)"
+    # SEPARATOR FIX (#105, 2026-09-21 audit). The separator group used to be
+    # (\|.*?\|): the non-greedy .*? stops at the first "|" after the opening
+    # one, so it matched only the separator's FIRST CELL. The row was then
+    # inserted mid-line and the separator's tail was glued onto it, corrupting
+    # scoreboard.md on every week-close (repaired by hand 2026-09-14 and again
+    # 2026-09-21). Match the whole separator line, insert after its line
+    # ending, and refuse to write rather than corrupt the table.
+    table_pattern = (
+        r"(\| Week Ending \| Council Grade \| Hit Rate \| Lead Councilor \| "
+        r"Flagged Blindspot \| Best Pick \| Worst Pick \| Cash % \|)\r?\n"
+        r"(\|[^\r\n]*)(\r?\n|$)"
+    )
     match = re.search(table_pattern, content)
     if match:
-        # Insert after the header row (second match group is the separator)
-        insert_after = match.end(2)
-        content = content[:insert_after] + "\n" + row + content[insert_after:]
+        header, sep = match.group(1), match.group(2)
+        if not re.fullmatch(r"\|(\s*:?-+:?\s*\|)+", sep.strip()):
+            print("Warning: scoreboard separator row is malformed; refusing to insert. Repair it first.")
+            return content
+        if row.count("|") != header.count("|"):
+            print("Warning: new scoreboard row has the wrong column count; refusing to write.")
+            return content
+        if match.group(3):
+            at = match.end(3)
+            content = content[:at] + row + match.group(3) + content[at:]
+        else:
+            content = content[:match.end(2)] + "\n" + row + content[match.end(2):]
 
-        with open(SCOREBOARD_PATH, "w", encoding="utf-8") as f:
+        with open(SCOREBOARD_PATH, "w", encoding="utf-8", newline="\n") as f:
             f.write(content)
         print(f"Updated scoreboard.md with week {week}.")
     else:
@@ -588,7 +701,7 @@ def full_cycle(week_date_str: str, report_path: Optional[Path] = None):
     if closed:
         scorecard = generate_scorecard(closed)
         scorecard_path = SCORECARDS_DIR / f"{closed['week']}-scorecard.md"
-        with open(scorecard_path, "w", encoding="utf-8") as f:
+        with open(scorecard_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(scorecard)
         print(f"Scorecard written to {scorecard_path}")
 
@@ -628,7 +741,7 @@ def main():
         if closed:
             scorecard = generate_scorecard(closed)
             scorecard_path = SCORECARDS_DIR / f"{closed['week']}-scorecard.md"
-            with open(scorecard_path, "w", encoding="utf-8") as f:
+            with open(scorecard_path, "w", encoding="utf-8", newline="\n") as f:
                 f.write(scorecard)
             update_scoreboard(closed)
             calculate_metrics()
