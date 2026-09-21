@@ -854,3 +854,27 @@ Nothing here separates the nine from luck.
 **Ophelia a week late costs nothing to keep score of.** Her five exist every
 week, so holding last week's five is a book the forward record can score
 without running anything new. That is the only fair test it can get.
+
+## Live week 2026-09-21 -- the fifteen, recorded before the week closed
+
+The owner's first live run of Council v2's members, with Ophelia a week late.
+Every input ends at Friday 2026-09-18's close. Cecil read the repo as it
+stood before Monday's Council report, and Marky's screen ran on prices capped
+at that Friday. The picks were committed Monday afternoon, and `live_week.py
+score` scores them from Monday's open to Friday 09-25's close. The record is
+`results/live/2026-09-21.json`.
+
+| Member | This week's five |
+|---|---|
+| Ophelia (her 09-14 run, held a week late) | XOM, COP, VLO, AMD, LLY |
+| Cecil | GOOGL, PGR, GS, LNG, REGN |
+| Marky (channel, as registered) | GS, LYV, GE, JPM, WELL |
+| Marky with MACD turning up (the owner's reading, a variant) | CAT, CRWD, AMD, TSM, MTCH |
+
+GS was picked twice, so the fifteen are fourteen names. No name reports
+earnings this week. Marky's registered five are all deep pullbacks whose weekly
+MACD has not turned. The owner expected crossovers, but only three of 108
+stocks crossed their weekly MACD signal line on 09-18 (RGTI, OKLO, TSLA), all
+inside falling channels. The variant therefore takes the qualifying names
+whose histogram turned up. For comparison, the real Council booked XOM, AMD
+and HIG with 47.8% cash.
