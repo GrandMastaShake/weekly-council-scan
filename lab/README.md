@@ -100,3 +100,28 @@ hold:
 
 A variant that passes goes live as a forward test: the lab reruns each Monday
 as the set grows, and a variant that stops passing is reverted.
+
+## Council Room V1 -- brief-first (registered before any agent ran)
+
+One fresh agent per Council week, with no memory of the others, reads only
+that week's snapshot: the repo as it stood just before the real Council's
+report commit that Monday (README, scoreboard, wikis, journals), the previous
+report, and a price table that ends at the prior Friday's close. It starts
+from the brief (Market Brief, the journals' latest entries, earnings, canary
+watch, last week's run), goes deeper only if it wants to, and books 0-5 names
+from the universe at 5-30% each, the rest cash. No web, no code, no files
+outside its folder; the prompt is `council_room_v1_prompt.md`, identical
+every week apart from dates and paths. The agents run on a model whose
+training ends in May 2026, so none can recall how its week went -- and the
+person running the room, who has seen these weeks' returns, writes no picks.
+
+**What counts.** Primary: V1 beats random picks at its own weights (mean
+vs-random above zero, mean percentile above 50%). Secondary: the paired
+comparison with the engine replay and with the real Council. One draw per week
+cannot prove skill on its own. If V1 clears random, the next step is a forward
+shadow: the brief-first Council books every Monday alongside the real one and
+both are scored. If it does not, the research layer is not adding selection
+either.
+
+    python lab/council_room.py snapshot DIR   # build the week folders
+    python lab/council_room.py score DIR      # score each folder's book.json
