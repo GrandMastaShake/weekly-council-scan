@@ -210,7 +210,9 @@ def build_books(fives, prev_ophelia, dash, ranking, value_ok, raw, W):
     return books
 
 
-def history():
+def history(builder=build_books):
+    """builder(fives, lagged, dash, ranking, value_ok, raw, W) -> {name: book};
+    Pass 8 passes its own so the fives, blackouts and Dash are Pass 7's exactly."""
     from scan_pipeline.utils.data_utils import earnings_blackout
     from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
     frozen = lab.frozen_universe()
@@ -245,14 +247,14 @@ def history():
             agree.append(len(set(fives["Marky"]) & set(p5[label])) / max(1, len(p5[label])))
         dash = dash_five(reactions(adj, cal, eligible, W, F), tset)
         lagged = [t for t in (prev_o or []) if t in tset]     # last week's picks face this week's blackout
-        books = build_books(fives, lagged, dash, ranking, value_screen(eps, raw, eligible, W), raw, W)
+        books = builder(fives, lagged, dash, ranking, value_screen(eps, raw, eligible, W), raw, W)
         out.append({"week": label, "spy": adj["SPY"].week_return(W) or 0.0,
                     "books": score_week(books, adj, W, tradeable, "hist")})
         prev_o = fives["Ophelia"]
     return out, statistics.fmean(agree) if agree else None
 
 
-def council():
+def council(builder=build_books):
     from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
     weeks, names, raw, adj = v2._data()
     cal = lab.earnings_calendar(names)
@@ -278,7 +280,7 @@ def council():
                  "Marky": ranking[:TOP]}
         dash = dash_five(reactions(adj, cal, names, W, F), tset)
         lagged = [t for t in (prev_o or []) if t in tset]
-        books = build_books(fives, lagged, dash, ranking, value_screen(eps, raw, names, W), raw, W)
+        books = builder(fives, lagged, dash, ranking, value_screen(eps, raw, names, W), raw, W)
         out.append({"week": label, "spy": adj["SPY"].week_return(W) or 0.0,
                     "books": score_week(books, adj, W, tradeable, "council")})
         prev_o = fives["Ophelia"]

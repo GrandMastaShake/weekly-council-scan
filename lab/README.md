@@ -1087,3 +1087,62 @@ those ten are.
 On the Council weeks (seen, decide nothing), Relay posted +0.87%/wk (ahead in
 7 of 8) and Marky alone +1.40%, while the Warden had the calmest book (weekly
 SD 0.85%) at -0.24%/wk.
+
+*Erratum (found registering Pass 8):* the Warden's sector cap used the
+engines' `get_sector`, which has no entry for 46 of the 111 and calls them
+"Unknown", so on the Council weeks the cap treated those 46 as one sector.
+The history rows are unaffected (the frozen list is fully mapped); the Council
+rows above for the Warden are as computed, and decided nothing. Pass 8 looks
+names up in the owner's list's GICS sectors first.
+
+## Pass 8 -- the Warden taken apart (registered before any run)
+
+Pass 7's one keeper was a chair that sizes instead of picking. Before it goes
+anywhere near the live book, three questions, all mechanical, on the same 96
+history weeks with the nine Council weeks beside them. `pass8_warden.py` has
+the exact rules; the names, blackouts and members' fives come from Pass 7's
+code path unchanged, and Pass 7's Warden and Four chairs are rebuilt as a
+regression check that must reproduce Pass 7's history numbers exactly.
+
+1. **Which lever does the work?** Eight books on the three chairs' names
+   (Ophelia, Cecil, Marky; Dash flopped and is dismissed), one for every
+   subset of the Warden's three levers: *No lever* (the union, equal weights,
+   fully invested), *Sizing only*, *Cap only*, *Dial only*, *All but sizing*,
+   *All but cap*, *All but dial*, and *Warden, three chairs* (all three). The
+   cap keeps the two calmest names a sector; sizing is inverse 12-week
+   volatility; the dial books 80% when SPY closed below its 40-week average.
+   For each lever: its *alone share* of the Warden's weekly-SD cut (No lever
+   minus lever only, over No lever minus the Warden) and its *removed share*
+   (all-but-lever minus the Warden, over the same cut). A lever **carries**
+   the Warden if both shares are at least 50%, is **dead weight** if both are
+   at most 15%, and **helps** otherwise. The **cheapest rule** is the book
+   with the fewest levers whose SD is within 80% of the full cut, ties to the
+   higher paired edge over No lever.
+2. **Does the Warden hold over the three live chairs?** *Warden, three
+   chairs* against *Three chairs* (a third each), under Pass 7's rule: weekly
+   SD at least 10% lower, a shallower worst drawdown, paired edge above t -2.
+   This is the book the forward record would carry.
+3. **Does Cecil's gate stack with it?** *Warden, quality* is the Warden over
+   Ophelia, Cecil and Quality pullback (Cecil's value screen on Marky's
+   ranking). Against Warden, three chairs, same rule: SD at least 10% lower,
+   drawdown not deeper, paired edge above t -2.
+
+**Predictions.** Sizing carries the Warden (both shares above 50%); the cap is
+dead weight (fifteen names across ten sectors rarely reach a third in one);
+the dial helps but under 25%, since it only bites in the risk-off weeks. The
+cheapest rule is Sizing only. Warden, three chairs is promising, with about
+the same cut as Pass 7's (near half the SD) and an edge cost near -0.25%/wk.
+Warden, quality is not: the Warden already sizes, so the gate cuts less than
+10% more.
+
+**What counts.** The lever roles and the cheapest rule are computed by the
+thresholds above and reported as found. If Warden, three chairs is promising,
+`live_week.py warden` adds it to the live record for 2026-09-21 as a weighted
+variant scored from Tuesday's open (added on the week's Monday after the
+session, like the owner's picks; its weights use nothing after 2026-09-18),
+and each later live week carries it from Monday's open. The cheapest rule is
+a candidate for the next quarterly change, not a live change now (nugget 10).
+Seen Council weeks are reported and decide nothing.
+
+    python lab/pass8_warden.py
+    python lab/live_week.py warden 2026-09-21

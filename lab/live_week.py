@@ -14,12 +14,17 @@ before its Monday:
                      reporting inside the week is dropped. Written to
                      results/live/LABEL.json, which is committed before the week
                      closes.
-  score LABEL        after that Friday's close: each member's five and all
-                     fifteen, equal-weighted, Monday open to Friday close,
-                     against SPY and against random books from the 111.
+  warden LABEL       adds the Warden (Pass 8) over the recorded names as a
+                     weighted variant; on the week's Monday it is scored from
+                     Tuesday's open, and it refuses later in the week.
+  score LABEL        after that Friday's close: each member's five, all
+                     fifteen and every variant, Monday open to Friday close
+                     (and from Tuesday's open), against SPY and against random
+                     books of the same weights from the 111.
 
     python lab/live_week.py build 2026-09-21 DIR
     python lab/live_week.py record 2026-09-21 DIR
+    python lab/live_week.py warden 2026-09-21
     python lab/live_week.py score 2026-09-21
 """
 from __future__ import annotations
@@ -158,11 +163,50 @@ def record(label, out_dir):
     print(f"  variant, Marky with MACD turning up: {', '.join(t['ticker'] for t in turn)}")
 
 
+def warden(label):
+    """Add the Warden (Pass 8: three chairs, sized) to the week's record as a
+    weighted variant. Its weights use prices up to the Friday before the
+    Monday, so the book itself sees nothing of the week; but a variant added
+    on the week's Monday, after the session, is scored from Tuesday's open
+    like the owner's picks. Refuses later in the week."""
+    import pass7_combos as p7
+    import pass8_warden as p8
+    doc = json.loads((LIVE / f"{label}.json").read_text(encoding="utf-8"))
+    weeks, names, raw, adj = _live(label, v2._data)
+    W = weeks[0][1]
+    picks = [x["ticker"] for x in doc["all15"]]
+    below = p7.spy_below_40w(raw, W)
+    book = p8.warden_book(sorted(picks), raw, W, below)
+    added = datetime.now().astimezone()
+    if added.strftime("%Y-%m-%d") > W:
+        raise SystemExit(f"{label}: the week is under way ({added:%A}); a variant can only be added on its Monday")
+    v = {"book": [[t, round(w, 6)] for t, w in book], "invested": round(sum(w for _, w in book), 4),
+         "spy_below_40w": below, "added": added.isoformat(timespec="seconds"),
+         "rule": "Pass 8: the members' names, inverse 12-week-volatility weights, two a sector, 80% below SPY's 40-week average"}
+    if added.strftime("%Y-%m-%d") == W:
+        v["only_from"] = "Tuesday's open"
+    doc.setdefault("variants", {})[p8.FULL] = v
+    with open(LIVE / f"{label}.json", "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(doc, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    print(f"  {p8.FULL}: {len(book)} names, {v['invested']*100:.0f}% invested (SPY below 40-week: {below})"
+          + (f", scored from {v['only_from']}" if "only_from" in v else ""))
+    for t, w in sorted(book, key=lambda x: -x[1]):
+        print(f"    {t:<6} {w*100:5.1f}%")
+
+
 def _span(s, first_day, fri):
     """First open on or after first_day to the last close on or before fri."""
     lo = bisect.bisect_left(s.dates, first_day)
     hi = bisect.bisect_right(s.dates, fri)
     return s.rows[hi - 1]["close"] / s.rows[lo]["open"] - 1.0 if lo < hi else None
+
+
+def _book(v):
+    """A record entry as [(ticker, weight)]: 'book' if it carries weights, else its picks equally."""
+    if v.get("book"):
+        return [(t, float(w)) for t, w in v["book"]]
+    return [(t, 1.0 / len(v["picks"])) for t in v["picks"]]
 
 
 def score(label):
@@ -176,10 +220,10 @@ def score(label):
     if adj["SPY"].rows[-1]["date"] < fri:
         raise SystemExit(f"{label}: Friday {fri} has not closed in the price data yet")
     black = _blackout(label, names)
-    books = {m: v["picks"] for m, v in doc["members"].items()}
-    books["all 15"] = [x["ticker"] for x in doc["all15"]]
-    books.update({name: v["picks"] for name, v in doc.get("variants", {}).items()})
-    # A variant named after the session (the owner's picks) counts only from its window.
+    books = {m: _book(v) for m, v in doc["members"].items()}
+    books["all 15"] = _book({"picks": [x["ticker"] for x in doc["all15"]]})
+    books.update({name: _book(v) for name, v in doc.get("variants", {}).items()})
+    # A variant added after Monday's session (the owner's picks, the Warden) counts only from its window.
     only = {name: v["only_from"] for name, v in doc.get("variants", {}).items() if v.get("only_from")}
     doc["score"] = {"scored": datetime.now().astimezone().isoformat(timespec="seconds")}
     for window, first_day in (("from Monday's open", W), ("from Tuesday's open", lab._plus(W, 1))):
@@ -188,16 +232,22 @@ def score(label):
         pool, spy = sorted(rets), _span(adj["SPY"], first_day, fri)
         out = {}
         print(f"  {window}: SPY {spy*100:+.2f}%")
-        for name, ts in books.items():
+        for name, full in books.items():
             if name in only and only[name] not in window:
                 continue
-            ts = [t for t in ts if t in rets]
-            r = statistics.fmean(rets[t] for t in ts)
+            invested = sum(w for _, w in full)
+            book = [(t, w) for t, w in full if t in rets]
+            scale = invested / sum(w for _, w in book)      # a name without prices gives its weight to the rest
+            book = [(t, w * scale) for t, w in book]
+            ws = [w for _, w in book]
+            r = sum(w * rets[t] for t, w in book)
             rng = random.Random(f"{lab.SEED}-{W}-live-{window}-{name}")
-            draws = [statistics.fmean(rets[t] for t in rng.sample(pool, len(ts))) for _ in range(lab.RANDOM_DRAWS)]
+            draws = [sum(w * rets[t] for t, w in zip(rng.sample(pool, len(ws)), ws)) for _ in range(lab.RANDOM_DRAWS)]
             out[name] = {"ret": r, "vs_spy": r - spy, "vs_random": r - statistics.fmean(draws),
-                         "pctile": sum(1 for x in draws if x < r) / len(draws),
-                         "names": {t: rets[t] for t in ts}}
+                         "pctile": sum(1 for x in draws if x < r) / len(draws), "invested": invested,
+                         "names": {t: rets[t] for t, _ in book}}
+            if any(abs(w - ws[0]) > 1e-9 for w in ws):
+                out[name]["weights"] = {t: w for t, w in book}
             print(f"    {name:<24} {r*100:+6.2f}%  vs SPY {(r-spy)*100:+6.2f}%  vs random "
                   f"{out[name]['vs_random']*100:+6.2f}%  pctile {out[name]['pctile']:.0%}")
         doc["score"][window] = {"spy": spy, "books": out}
@@ -208,7 +258,7 @@ def score(label):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("build", "record", "score"))
+    ap.add_argument("command", choices=("build", "record", "warden", "score"))
     ap.add_argument("label")
     ap.add_argument("dir", nargs="?")
     a = ap.parse_args(argv)
@@ -216,6 +266,8 @@ def main(argv=None):
         build(a.label, a.dir)
     elif a.command == "record":
         record(a.label, a.dir)
+    elif a.command == "warden":
+        warden(a.label)
     else:
         score(a.label)
 
