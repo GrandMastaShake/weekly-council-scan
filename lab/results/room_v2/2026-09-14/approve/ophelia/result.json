@@ -1,0 +1,38 @@
+{
+ "week": "2026-09-14",
+ "votes": [
+  {
+   "ticker": "XOM",
+   "vote": "approve",
+   "reason": "XOM is the cleanest vehicle for my top call, Energy, the only sector with a confirmed breakout (XLE held its old $65.10 ceiling, WTI at $100 with no OPEC+ meeting until Oct 4), and its +4.09% week and +21.23% over 12 weeks put it with the leaders while carrying the sector's negative SPY correlation as the book's hedge against a hawkish dot plot."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "LLY is the exact name my Healthcare bounce call singles out (RSI 2.5 while XLV sits at 21 but above a rising 200-day), its -2.93% week and -5.46% month are the oversold pullback that thesis is buying, and my exit line (XLV losing $164) has not triggered."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "AMD is the most direct vehicle for the AI-demand acceleration behind my Technology call (Oracle's $664B backlog, Dell and HPE up 12%), its +8.07% week fits the leadership that held through hot PPI and core CPI, and its crowded-AI carry-unwind risk is one my thesis already accepts, with LLY as the offset and an XLK close under the 50-day as the exit."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "object",
+   "reason": "Financials is the sector I declined to swap in this week because it broke its pivots and its credit proxies are red, and a money-center bank is the most direct exposure to that credit signal going into Wednesday's hike, with JPM's -0.67% week and -1.82% month showing it sliding with the sector rather than resisting it."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "Financials is not one of my four, but the concrete negatives in my read of it (red credit proxies, broken pivots) bite lenders like JPM far more than a P&amp;C underwriter whose short-duration float reinvests near 5%, and PGR's +3.83% month shows it has not broken down with the sector."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "week": "2026-09-08",
+ "picks": [
+  {
+   "ticker": "JNJ",
+   "sector": "Healthcare",
+   "why": "Healthcare is my top call and JNJ is its steadiest leader on the sheet: +2.7% on the week, +14.8% over 12 weeks and about 2% under its 52-week high, with low beta to carry through Friday's CPI."
+  },
+  {
+   "ticker": "REGN",
+   "sector": "Healthcare",
+   "why": "It has the strongest pharma trend on the sheet (+4.2% on the week, +35% over 12 weeks, a new 52-week high set during the week) at under 20x earnings, and it is part of the pharma leadership that took over after the mild MFN round."
+  },
+  {
+   "ticker": "VLO",
+   "sector": "Energy",
+   "why": "It has the strongest chart on the board (a record close, +24% over 4 weeks), because refiners earn the record diesel crack on short distillate stocks and led energy in both the latest crude spike and the fade before it, so VLO does not need the war premium to hold."
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "why": "XLE's second-largest holding hit a 52-week high on the Hormuz re-escalation and has its own catalyst in the $7B plan to double its Venezuela output, which makes it a steadier way than the E&Ps to hedge a hot CPI or more fighting in the Gulf."
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Technology",
+   "why": "This is my cool-CPI leg: tech's biggest weight rose 5.9% straight through the hawkish jobs print, sits about 3% under its 52-week high, and gets an AI-spending read from ORCL's Sep 10 report."
+  }
+ ],
+ "summary": "I overweight my top two calls: JNJ and REGN are the low-beta Healthcare core, and VLO and CVX hedge a hot CPI or more trouble in the Gulf, while NVDA is the one growth leg that pays if CPI comes in cool. I left out Financials because the money centers actually leading (WFC, C) are not on the sheet and JPM and GS are flat; I passed on BTC and GLD.",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "healthcare.md",
+  "energy.md",
+  "financials.md",
+  "tech.md",
+  "semiconductors.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Grep"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-27",
+ "book": [
+  {
+   "ticker": "LMT",
+   "weight": 0.3
+  },
+  {
+   "ticker": "JNJ",
+   "weight": 0.25
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.2
+  },
+  {
+   "ticker": "LNG",
+   "weight": 0.15
+  },
+  {
+   "ticker": "TMO",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "LMT",
+   "member": "Marky",
+   "reason": "LMT fails my trend filter because its 26-week channel falls 43% a year and its weekly MACD line is still below zero, so sitting 2.4 widths above that falling line is a counter-trend rally in a downtrend, not a pullback in a rising channel."
+  },
+  {
+   "ticker": "TMO",
+   "member": "Marky",
+   "reason": "TMO does not qualify because its 26-week channel still slopes down (4% a year), and after a +6.7% week it sits 2.0 widths above that line, so even with a positive weekly MACD this is chasing a stretched bounce rather than buying a pullback in a rising channel."
+  }
+ ]
+}

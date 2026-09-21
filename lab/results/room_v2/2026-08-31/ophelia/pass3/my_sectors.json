@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Financials",
+   "thesis": "XLF is the one sector whose economics improve if Warsh means it. It beat SPY for a third straight week and rallied into Friday's hawkish close ($58.10, $0.06 under its record weekly close), led by the big money-center banks that earn more on higher rates (WFC +3.4%, BNY +2.5%, JPM +1.7%); credit proxies stayed green, and the ~$87.7B GSIB capital relief is still unpriced. I'm wrong if soft labor data (a negative ADP, a second negative NFP) pulls the 2Y down and revives recession and consumer-credit fear, or if XLF closes below $57.48."
+  },
+  {
+   "sector": "Communication Services",
+   "thesis": "It was the best sector ETF last week (+1.43%, and +2.28% vs SPY over the month), and it rallied on Warsh's hawkish Friday. Both halves are working: META is recovering after its legal settlement, and the dividend telecoms (T, VZ, TMUS, CHTR) held up the rest. At ~16x P/E and a 0.29 correlation to SPY it gives growth exposure without XLK's rate risk. I'm wrong if Google's legal news turns against it, if the crowded telecoms give back their gains, or if XLC closes below $110."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "The breakout retest passed: last week's -2.45% relative drop came on the thinnest volume of the whole advance, and the low ($170.59) never touched the $169.71 old ceiling. MRK and AMGN are at 52-week highs, and a ~0.51 beta suits a data-heavy week ahead of a live-hike FOMC. Monday's MFN Medicaid round is aimed at midsize biotechs and LLY already fell 6.4% on the leak, so I expect it to clear the overhang rather than add a new shock. I'm wrong if the GLP-1 terms are harsher than feared and LLY breaks lower, or if XLV closes below $169.71."
+  },
+  {
+   "sector": "Consumer Staples",
+   "thesis": "It held up when it mattered: XLP rose 0.43% on Warsh's hawkish Friday while SPY fell. Tobacco leads (MO +3.9%, PM +1.9%), WMT is oversold (RSI ~33) and the $84.87 50-day held. It should pay off whichever way Friday's NFP breaks, and a VIX at a 2026 low leaves the market no cushion. I'm wrong if the week turns into a risk-on, tech-led rally, if DXY closes back above 100, or if XLP loses $84.87."
+  }
+ ],
+ "changes": "No swaps; the same four, now ordered by conviction. Weighed Technology for the Staples slot and turned it down (most rate-exposed sector, SMH in a corrective phase, AVGO print and chip-tariff risk). Energy stays out after the ceasefire leak. Communication Services reframed as a low-correlation mix of META and dividend telecoms; Staples reframed as a hedge that pays whichever way the jobs report breaks."
+}

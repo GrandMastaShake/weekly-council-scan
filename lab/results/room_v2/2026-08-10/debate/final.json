@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-10",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.25
+  },
+  {
+   "ticker": "GOOGL",
+   "weight": 0.2
+  },
+  {
+   "ticker": "ETN",
+   "weight": 0.2
+  },
+  {
+   "ticker": "FCX",
+   "weight": 0.15
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "ETN",
+   "member": "Cecil",
+   "reason": "At 36.3x trailing for only 9.0% EPS growth, ETN is by far the draft's most expensive name relative to its earnings growth, and buying it at a 52-week high right after an 8.3% jump on raised guidance pays for the re-rating with no margin of safety."
+  },
+  {
+   "ticker": "LLY",
+   "member": "Marky",
+   "reason": "LLY sits right on the line of a steep channel rising 71% a year, but its weekly MACD histogram is still falling, so the turn-up my entry needs has not come and the pullback could go deeper this week, which is the same test the draft used to drop all five of my names."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "week": "2026-08-17",
+ "top4": [
+  {
+   "sector": "Energy",
+   "why": "Energy leads on both timeframes: up 7.67% last week and 45.6% over the year, with WTI at $82.40 as the Hormuz risk premium returned and refiners at 52-week highs. It also protects the book if Warsh cites oil in a hawkish Jackson Hole speech on Friday, though the risk premium could fade quickly."
+  },
+  {
+   "sector": "Technology",
+   "why": "Technology has the second-strongest 1-year trend (+43.8%), memory stocks are leading (MU +10.7%, AMD +6.4%), and NVDA reports on Aug 26, which tends to draw buyers the week before. Cooler core CPI and a six-month-low VIX favor growth stocks, and Keysight on Tuesday gives an early read."
+  },
+  {
+   "sector": "Financials",
+   "why": "XLF closed at $58.16, its highest weekly close ever, as September hike odds fell and the yield curve steepened, and breakouts to record highs in a risk-on market tend to keep going. The brief's downside case for Friday is only a retest of $58."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "Healthcare is the defensive pick with a real trend (+23.2% over the year, +1.02% last week) and little exposure to the consumer, oil and Canada-tariff risks that fill this week's calendar. BMY's PDUFA date on Monday is a modest possible boost."
+  }
+ ],
+ "next_two": [
+  "Consumer Staples",
+  "Industrials"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

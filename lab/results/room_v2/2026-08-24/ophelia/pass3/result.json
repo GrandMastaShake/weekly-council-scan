@@ -1,0 +1,43 @@
+{
+ "week": "2026-08-24",
+ "picks": [
+  {
+   "ticker": "LLY",
+   "sector": "Healthcare",
+   "why": "LLY is about 12% of XLV; it hit a new 52-week high ($1,292.65) during the breakout, which came on the heaviest volume of 2026, and closed only about 3% below it, so it is the most direct way to own more money moving into healthcare."
+  },
+  {
+   "ticker": "VRTX",
+   "sector": "Healthcare",
+   "why": "It rose 8.4% with the sector to within 1.3% of its $555.32 52-week high, giving a profitable large-cap way into a biotech rally that ignored a 52-week-high 10Y, with no dated drug decision to derail it."
+  },
+  {
+   "ticker": "REGN",
+   "sector": "Healthcare",
+   "why": "The Aug 19 approval of Pasatru sent it to a record $847 and it closed within 1.6% of that, with the strongest 4- and 12-week gains of the large caps (+27% and +36%) at under 20x earnings, which makes it the 'run of FDA approvals' part of my thesis."
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "why": "The largest oil producer on my sheet hit a fresh 52-week high Friday as leadership moved from refiners to producers, so it gains most from a blockade confirmed by tanker counts, and it is the book's hedge if PCE or Warsh pushes the 10Y above 4.75%."
+  },
+  {
+   "ticker": "NUE",
+   "sector": "Materials",
+   "why": "The Canada-deal scare that cost it 9.4% ended Saturday with the 50% duties in force and steel prices at $1,181 a ton, so the drop was a policy scare, not damage to the business, and it should keep recovering toward and past its 50-day average ($248) after Monday's opening bounce."
+  }
+ ],
+ "summary": "Healthcare is my strongest call: its breakout came on the year's heaviest volume with 13 of the 14 names we track up, and it moves on its own news rather than on PCE, NVDA or Warsh, so it gets three leaders sitting just below their highs. COP and NUE carry the Energy and Materials calls through the least-stretched catalysts I have. I passed on GLD, NEM and FCX (overbought going into Warsh), on BTC (a +22.5% jump in one week that none of my sectors explain), and on Staples, my weakest call.",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "healthcare.md",
+  "energy.md",
+  "materials.md",
+  "consumer-staples.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Glob"
+ ]
+}

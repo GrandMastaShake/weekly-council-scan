@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Healthcare",
+   "thesis": "Thursday's beat-and-raise from UNH, JNJ and ABT turned Wednesday's drop to $157.25 into a bear trap. That makes healthcare a defensive sector (-0.18 correlation to SPY, +3.1% vs SPY over the month) with rising estimates, in a market that is still selling semis, and a weekly close above $164-165.61 opens new highs. I'm wrong if XLV loses its 50-day near $157.50 or if a tech relief rally pulls money out of defensives."
+  },
+  {
+   "sector": "Energy",
+   "thesis": "It has the strongest chart I read: +5.2% for the week, the 50-day ($56.52) reclaimed Monday and held, and every sub-sector rose Friday as WTI climbed 12% to $82.49, with Hormuz already disrupted and Bab el-Mandeb threatened. At -0.35 correlation to SPY it hedges the escalation and inflation path that hurts everything else. I'm wrong on a ceasefire or de-escalation headline, a close below $56.52, or if Friday's light volume turns out to mean the rally is exhausted."
+  },
+  {
+   "sector": "Financials",
+   "thesis": "It replaces Industrials as my cyclical pick. XLF has the strongest inflow (+3.57% vs SPY over the month, +1.43% over the week) and only 0.16 correlation to SPY, and at 17.8x earnings it is the cheap cash-flow cyclical that a growing economy with a hawkish Fed rewards, helped by a positive yield curve and tight credit. A break above the $56.80 52-week high on volume confirms it. I'm wrong if the reaction to bank earnings turns into selling, if oil above $90 drives hike pricing that flattens the curve, or if XLF loses its ~$55.20-55.50 50-day."
+  },
+  {
+   "sector": "Real Estate",
+   "thesis": "XLRE made a new 52-week high ($45.96) on PLD's beat-and-raise, with WELL, SPG and O at highs too, so it is an earnings-driven defensive (-0.25 correlation to SPY) and the rates counterweight to Energy if the oil premium fades. I'm wrong if oil pushes the 10-year from ~4.52% toward 5%, if the semis selloff keeps dragging EQIX and DLR, or if it loses the $44.20-44.38 support."
+  }
+ ],
+ "changes": "One swap: Industrials out, Financials in -- the rotation inside Industrials runs against its cap-weighted ETF (heavy in the names being sold), the canary rates XLI neutral at 0.71 correlation, and at 31x it is the expensive cyclical a hawkish Fed marks down; Financials has the strongest inflow, moves apart from SPY and is cheaper. The economic calendar was a blank template that week, and the canary was partly stale."
+}

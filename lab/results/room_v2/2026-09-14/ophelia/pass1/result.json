@@ -1,0 +1,31 @@
+{
+ "week": "2026-09-14",
+ "top4": [
+  {
+   "sector": "Energy",
+   "why": "It is the only sector with real breadth: five of its ten largest holdings closed at 52-week highs, and its breakout came on real volume. WTI is at $100 with two shipping chokepoints threatened, OPEC+ declining to add supply and the emergency reserve at its lowest since 1983. XLE is not on the brief's list of lines that break if Wednesday's Fed reads hawkish, so it also hedges the stagflation case."
+  },
+  {
+   "sector": "Technology",
+   "why": "It is a leading sector (+39% over the year) and sits well above its 50-day ($187.67 vs $182.73). It stayed flat through the year's biggest Fed repricing, and Oracle's record $664B backlog shows AI demand still speeding up. XLK is not among the hawkish break lines, and it reclaims $188.74 if the hike is framed as one-and-done."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "This is the bounce pick. XLV is at an RSI of 21 and Eli Lilly at 2.5 after three company-specific blowups, but the sector is still above its 200-day with a +21.8% one-year trend. The brief names it the deepest oversold group that a hike framed as finishing would release, and it offsets the crowded momentum in the other three picks if a Bank of Japan carry unwind hits."
+  },
+  {
+   "sector": "Communication Services",
+   "why": "It is one of only four sectors above its 50-day and was green last week on Meta's strength. Wednesday's ad-tech remedies opinion is framed as upside for GOOGL at 17x if it comes out narrow. It is not on the list of lines that break on a hawkish Fed."
+  }
+ ],
+ "next_two": [
+  "Financials",
+  "Industrials"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

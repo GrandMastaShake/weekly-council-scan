@@ -1,0 +1,31 @@
+{
+ "week": "2026-08-03",
+ "top4": [
+  {
+   "sector": "Financials",
+   "why": "Financials was the one cyclical group that kept pace with SPY (+1.1%) in a week when 7 of 12 sectors fell. The curve has steepened to +45 bp, the Fed has turned hawkish and JPM/BAC are near highs, which should help bank margins and hold up if Friday's NFP backs the hawks."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "It is a low-beta defensive with strong recent earnings (BMY blowout, REGN +16%) and a +20% one-year trend. It was flat through the jump in the 10-year yield, and biotech gains if yields fall back from 4.745% on soft ISM, JOLTS or NFP data."
+  },
+  {
+   "sector": "Consumer Staples",
+   "why": "Staples rose 1.09% while rates surged and most sectors fell. The dollar index below 100 and oil down 5% help the big multinationals on currency and input costs, and the sector steadies the book in a data-heavy week that the Council is sitting out with 35% cash."
+  },
+  {
+   "sector": "Energy",
+   "why": "The brief says the move into value, defensives and energy paused but did not reverse, and energy's one-year leadership (+35%) held flat even as oil fell 5.2%. It protects the book if ISM prices or wages run hot or the US-Iran talks fail, which would hurt most of the market."
+  }
+ ],
+ "next_two": [
+  "Technology",
+  "Real Estate"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

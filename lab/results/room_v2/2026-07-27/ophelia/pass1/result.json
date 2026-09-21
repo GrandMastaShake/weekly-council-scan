@@ -1,0 +1,31 @@
+{
+ "week": "2026-07-27",
+ "top4": [
+  {
+   "sector": "Energy",
+   "why": "The oil shock is getting worse: Iran's ceasefire collapsed, Hormuz traffic is throttled and Brent touched $100, with XOM/CVX reporting Friday to show the war premium. RSI 86 makes it the most stretched pick, but it is the one sector that gains from the same shock that boxes in the Fed."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "The cleanest defensive that is not a bond proxy: earnings held up across the sector (TMO +6.7%, JNJ +4.1%, MRK/BMY near 52-week highs). It has little exposure to the FOMC, oil costs or the MSFT/META/AAPL/AMZN earnings risk that dominates SPY this week."
+  },
+  {
+   "sector": "Industrials",
+   "why": "Last week's earnings confirmed the supercycle (RTX +10%, LMT +14.5%, HON +8.1%), and the sector gained 1.8% while SPY fell 1.2%. Defense names get a geopolitical tailwind as Iran escalates, though Monday's durable goods capex number is the risk."
+  },
+  {
+   "sector": "Financials",
+   "why": "A 4.70% 10-year and a steepening curve are what the sector runs on, and it is coiled just under its $56.94 breakout. As a value sector it should hold up better than tech-heavy SPY while growth keeps unwinding; the risk is HYG breaking out of its range."
+  }
+ ],
+ "next_two": [
+  "Consumer Staples",
+  "Materials"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

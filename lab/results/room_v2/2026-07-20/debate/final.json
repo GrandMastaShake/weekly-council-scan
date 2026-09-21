@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-20",
+ "book": [
+  {
+   "ticker": "UNH",
+   "weight": 0.3
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.25
+  },
+  {
+   "ticker": "MA",
+   "weight": 0.15
+  },
+  {
+   "ticker": "SPG",
+   "weight": 0.15
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "MA",
+   "member": "Marky",
+   "reason": "It fails my first test because its 26-week channel slopes down (6% a year) and its MACD line is still below zero, so this is a bounce 2.2 widths above a falling line, not a pullback in a rising channel."
+  },
+  {
+   "ticker": "VLO",
+   "member": "Cecil",
+   "reason": "A cyclical refiner at 22.1x trailing earnings that just jumped 159.9% on what the draft calls a war premium, after a 31.91% twelve-week run and with the book's highest weekly volatility at 5.04%, is paying a full multiple for event-driven earnings and leaves no margin of safety if that premium fades during the week."
+  }
+ ]
+}

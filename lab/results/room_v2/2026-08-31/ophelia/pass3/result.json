@@ -1,0 +1,44 @@
+{
+ "week": "2026-08-31",
+ "picks": [
+  {
+   "ticker": "JPM",
+   "sector": "Financials",
+   "why": "It is the purest expression of my top call: XLF's largest weight (~11.6%) is a money-center bank that earns more under a hawkish Warsh, it rose 1.7% through Friday's hike repricing to sit 2.4% under its 52-week high, and the ~$87.7B GSIB capital relief is still not in the price."
+  },
+  {
+   "ticker": "V",
+   "sector": "Financials",
+   "why": "It is XLF's other engine: Visa set a record close last Monday and kept most of it through the hawkish shock (+2.85% on the week), and card volume does not depend on the yield curve, so it offsets JPM's exposure to a soft jobs print that pulls the 2Y down."
+  },
+  {
+   "ticker": "META",
+   "sector": "Communication Services",
+   "why": "META is XLC's ~21% anchor and led the best sector ETF of the week: the $17-18B teen-safety settlement turned a jury-trial risk into a known cost, and the news-driven +5.1% repair rally still has ~2.4% of room to its $592 50-day."
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Healthcare",
+   "why": "This is the direct bet on my Healthcare call: LLY lost 6.4% on the leak about Monday's MFN round, but that round targets midsize biotechs and LLY already gave up GLP-1 price cuts in earlier deals, so a clearing announcement should retrace it toward $1,250 while XLV holds above $169.71."
+  },
+  {
+   "ticker": "PM",
+   "sector": "Consumer Staples",
+   "why": "PM is the Staples hedge: tobacco led the sector through Warsh's hawkish Friday (PM +1.9%, MO +3.9% on the week) and the rate-sensitivity trade looks exhausted, so it is the defensive most likely to hold up whichever way Friday's jobs report breaks, with the VIX at a 2026 low."
+  }
+ ],
+ "summary": "My sector ranking stands (Financials, then Communication Services, Healthcare and Staples), so the picks split 2-1-1-1: JPM and V cover the two groups that carried XLF past SPY for a third week, META carries XLC's repair, LLY bets that Monday's MFN round clears the overhang, and PM hedges Friday's jobs report. I passed on GLD and BTC because both fell on Friday's hawkish repricing, on WMT because its post-earnings de-rating has only paused, and on the midsize biotechs that are Monday's actual MFN targets.",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "financials.md",
+  "communication-services.md",
+  "healthcare.md",
+  "consumer-staples.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Glob",
+  "Grep"
+ ]
+}

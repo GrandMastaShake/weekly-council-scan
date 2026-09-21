@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-31",
+ "votes": [
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "It qualifies: a shallow pullback 0.3 widths below a 26-week channel line rising 66% a year, with the weekly MACD line above zero, and although the histogram has not turned up yet, nothing on the chart argues against it."
+  },
+  {
+   "ticker": "PM",
+   "vote": "approve",
+   "reason": "It qualifies: 0.4 widths below a channel line rising 46% a year with the MACD line above zero, so the channel is intact even though the histogram has not turned up yet."
+  },
+  {
+   "ticker": "V",
+   "vote": "approve",
+   "reason": "It qualifies: its channel rises 61% a year and the weekly MACD histogram is turning up above zero, and sitting 0.9 widths above the line makes it no pullback but is not a break or a reason against it."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "It qualifies and was my pick: a pullback 1.6 widths below a channel line rising 150% a year, well short of the 2.5-width break, with the MACD line above zero even though the histogram has not turned up yet."
+  },
+  {
+   "ticker": "REGN",
+   "vote": "object",
+   "reason": "It fails my rule because its 26-week channel is flat to falling (0% a year), and it sits 1.2 widths above that line with a falling MACD histogram, so it is neither in a rising channel nor on a pullback."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

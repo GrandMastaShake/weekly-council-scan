@@ -1,0 +1,59 @@
+{
+ "week": "2026-07-27",
+ "book": [
+  {
+   "ticker": "LMT",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "LMT is the only name two members chose independently: Ophelia for the industrials and defense rotation (a direct interceptor bid from the Iran strikes at about 18x forward earnings) and Cecil on value (21.5x trailing after a $7.94 vs $7.20 beat on a record $230B backlog), and it has already reported."
+  },
+  {
+   "ticker": "JNJ",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's defensive leader is low-beta cash-flow pharma about 2% from its high after a +4.1% week, in a sector with a -0.29 correlation to SPY, and it does not report until Oct 13."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's value case (16.2x trailing, 13% EPS growth, at its 52-week high on 2.24% weekly vol) sits in financials, a sector Ophelia also rated a winner from higher yields but held back from because of the FOMC, so it gets 20% and no more."
+  },
+  {
+   "ticker": "LNG",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "LNG is Ophelia's energy hedge against the oil-and-yields shock, chosen over COP because its long-term contracts cushion the ceasefire risk she names as her main way to be wrong, and its 16.6x trailing with +62% EPS growth also passes Cecil's value test."
+  },
+  {
+   "ticker": "TMO",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "TMO is Ophelia's second healthcare defensive: earnings turned its trend up (+6.7% on the week, +21% over 12 weeks), and it has already reported, with nothing due until Oct 21."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "COP",
+  "PGR"
+ ],
+ "rationale": "LMT is the only name two members picked for different reasons, so it gets the 30% maximum; Ophelia's healthcare core (JNJ, TMO) and energy hedge (LNG) fill out the book, and JPM carries Cecil's value case in financials. The oil-and-Iran hedge goes through energy rather than NEM, and the defensive slot to JNJ rather than PEP. All five of Marky's picks are AI-linked or high-beta names both other members avoided ahead of the FOMC and the mega-cap reports, so none makes the book.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

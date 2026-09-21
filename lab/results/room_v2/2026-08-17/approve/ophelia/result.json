@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-17",
+ "votes": [
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "It fits my Technology call directly: the cool July CPI (core 2.5%) supports tech valuations, and the Aug 26 earnings date I named comes after Friday's close, so the book holds the run-up to the report without the report itself."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "It fits my Technology call, whose thesis names AMD's +6.4% week among the chip leaders keeping buyers engaged ahead of the NVDA report."
+  },
+  {
+   "ticker": "LMT",
+   "vote": "approve",
+   "reason": "It fits my Industrials call, which names defense (LMT +3.5%) as the part that gains from the Iran escalation, and it is largely clear of the ways that call goes wrong: a Deere guide-down on Aug 20, or oil above $85 hitting transports and borrowing for capex."
+  },
+  {
+   "ticker": "GS",
+   "vote": "object",
+   "reason": "GS is a 20% bet on a financials breakout, and I swapped financials out this week because the corrected 2Y leaves the curve flatter (10Y-2Y near +52 bps, not +66) and XLI has the stronger trend and held up better on Friday's consumer-shock day, while GS's own -2.42% over four weeks shows it lagging, not breaking out."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "It fits Energy, my lead call, as an oil producer that gains directly from the Hormuz/Iran supply premium, and it brings the energy sector's -0.43 correlation to SPY, which my thesis relies on as the book's hedge."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

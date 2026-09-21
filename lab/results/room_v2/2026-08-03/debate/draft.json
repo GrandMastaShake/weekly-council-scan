@@ -1,0 +1,60 @@
+{
+ "week": "2026-08-03",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "Ophelia picked it as the largest XLF bank on a steepening +45 bp curve with Basel III capital relief, and Cecil picked it as a money center at 16.2x trailing with EPS up 13.4%, which makes it the strongest signal on the page; at 1.88% weekly volatility and 99.6% of its 52-week high, it is also the steadiest name on the sheet."
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The only other name two members picked for different reasons (Ophelia's low-correlation healthcare leader after a +16.3% week, Cecil's net-cash biotech at 16.2x trailing tied to neither the rate trade nor the AI-chip trade), sized a notch below JPM because its 5.87% weekly volatility is about three times JPM's."
+  },
+  {
+   "ticker": "KO",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's hedge for Friday's jobs report, a staples and weak-dollar call Cecil also made through PEP; the Council takes KO because its Q2 beat put it at a 52-week closing high (+6.5% on the week), while PEP is still down 8.8% over 12 weeks and does not report until October."
+  },
+  {
+   "ticker": "SCHW",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's second financial on the steepening curve, with the steadiest uptrend on the sheet (+18.8% over 12 weeks, at its 52-week high, 2.93% weekly volatility) at 18.3x trailing on EPS up 45%, and it fits Cecil's higher-rates reasoning for banks too; held to 15% because JPM already carries the bank thesis."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.1,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's only pick that another member's view supports: it sits in Ophelia's healthcare sector, which Cecil notes is on breakout watch, and it is the cleanest pullback on his list (96.8% of its 52-week high, -2.6% over 4 weeks, 2.79% weekly volatility); it gets the smallest weight because EPS is down 26% and the screen gives no reasoning."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "PEP",
+  "LMT"
+ ],
+ "rationale": "JPM and REGN are the only names two members picked for different reasons (Ophelia's rotation into financials and low-correlation healthcare, Cecil's value), so together they take 55% of the book. The rest follows the sectors the members agree on: SCHW adds to the financials call Ophelia and Cecil share, KO holds the staples and weak-dollar hedge both of them made (chosen over PEP because of its earnings-backed momentum), and UNH brings Marky in through Ophelia's healthcare sector, so the 45% in financials that a weak payrolls print would hurt is balanced by 55% in low-correlation names. Marky's other names lose where the members disagree: EQIX conflicts with Cecil's avoidance of REITs with the 10Y near 4.75% and with XLRE's 3% lag, TSM conflicts with Cecil's caution on semis before AMD reports Tuesday, and MOD (-16.9% last week) and RKLB (45% of its high, 14% weekly volatility, reports Aug 10) look like breakdowns rather than pullbacks. No name in the book reports this week, the book is fully invested because no member asked for cash, and I have no memory of how this week went, so none was used.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

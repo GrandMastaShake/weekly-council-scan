@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-31",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "PM",
+   "weight": 0.2
+  },
+  {
+   "ticker": "V",
+   "weight": 0.15
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.15
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "UNH",
+   "member": "Cecil",
+   "reason": "Trailing EPS fell 26.1% yet the stock still trades at 21.1x, a higher multiple than JPM or REGN, so my table shows neither a cheap price nor sound earnings, and the case depends on a recovery the numbers do not yet show."
+  },
+  {
+   "ticker": "REGN",
+   "member": "Marky",
+   "reason": "It fails my rule because its 26-week channel is flat to falling (0% a year), and it sits 1.2 widths above that line with a falling MACD histogram, so it is neither in a rising channel nor on a pullback."
+  }
+ ]
+}

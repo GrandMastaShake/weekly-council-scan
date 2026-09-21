@@ -1,0 +1,43 @@
+{
+ "week": "2026-08-10",
+ "picks": [
+  {
+   "ticker": "NVDA",
+   "sector": "Technology",
+   "why": "The AI bellwether (12.6% of XLK, about 19% of SMH) sits roughly 5% under its $236.54 high with its Aug 26 report ahead, a ~$303 mean target and Alphabet's +26% QoQ capex behind demand, which makes it the purest expression of the rate-relief-plus-AI tech call."
+  },
+  {
+   "ticker": "CRWD",
+   "sector": "Technology",
+   "why": "Software has led semis over the past month, and CRWD has the cleanest trend on the tech list (+12.3% week, +14.6% month, +44.4% over 12 weeks) with its own Aug 26 report ahead, so the tech call gets a second leg outside semis."
+  },
+  {
+   "ticker": "ETN",
+   "sector": "Industrials",
+   "why": "XLI's strongest leader (+8.3% on the week, about 2% below its $457.78 high after a raised guide) links the ISM 55.6 and CAT factory upturn to AI data-center power demand, which makes it the industrial most likely to keep pace with SPY."
+  },
+  {
+   "ticker": "FCX",
+   "sector": "Materials",
+   "why": "It is the single cleanest lever on the Materials thesis (copper near $6.51/lb, gold at $4,346, DXY at 99.6), up 13.4% over the month and 3.7% below its $72.28 52-week high."
+  },
+  {
+   "ticker": "LLY",
+   "sector": "Healthcare",
+   "why": "This is my CPI-week hedge: a blowout Q2 (revenue +48%, guidance raised to $80-83B) drew only a +3.2% reaction, which leaves room for post-earnings drift, and healthcare's -0.33 correlation to SPY cushions a hot core print."
+  }
+ ],
+ "summary": "Wednesday's CPI decides the week, so I lean into last week's rate-relief and AI leadership (NVDA and CRWD, with ETN as the AI-power industrial) and the weak-dollar copper/gold rotation (FCX), and keep LLY as the one hedge in case core CPI prints +0.3% or hotter. I passed on GLD and BTC: gold is stretched after a +7% week and BTC is in an 18% 12-week downtrend. A line in healthcare.md describes July CPI as already reported (Aug 12-13), which nobody could have known on Aug 8, so I ignored it.",
+ "files_read": [
+  "sheet.csv",
+  "tech.md",
+  "semiconductors.md",
+  "materials.md",
+  "industrials.md",
+  "healthcare.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Glob"
+ ]
+}

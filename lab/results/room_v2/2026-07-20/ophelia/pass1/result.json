@@ -1,0 +1,31 @@
+{
+ "week": "2026-07-20",
+ "top4": [
+  {
+   "sector": "Healthcare",
+   "why": "Wednesday's flush to $157.25 turned out to be a bear trap: Thursday's +2.2% engulfing candle came on three mega-cap beats, and ABT and UNH raised guidance. This is quality defense with earnings behind it, and a weekly close above $164-165.61 opens new highs."
+  },
+  {
+   "sector": "Energy",
+   "why": "It has the strongest chart in the brief (+5.2% for the week, 50-day reclaimed Monday and held) and is the direct hedge on the war and oil shock driving the Fed officials' hawkish talk. Hold it with a stop at $56.52, because both lenses warn that geopolitical gaps can fade and Friday's volume was light."
+  },
+  {
+   "sector": "Industrials",
+   "why": "The index fell 1.4%, but underneath it cash-flow cyclicals took the lead from the AI-capex names: UNP and CSX made new highs, UPS rose 4.7% and ITW 4.3%. That is the broad rotation (equal-weight beating cap-weight) inside one sector, and Thursday's earnings cluster is the catalyst to break out of the range between the 20-day and 50-day averages."
+  },
+  {
+   "sector": "Real Estate",
+   "why": "It printed a new 52-week high in a risk-off week on PLD's beat-and-raise, with O, WELL and SPG also delivering, so it is a landing spot for money leaving semis and a rates counterweight to Energy. The risks are that its 3.19% yield sits 133 bps below the 4.52% 10-year and that the data-center REITs trade like the Nasdaq."
+  }
+ ],
+ "next_two": [
+  "Financials",
+  "Consumer Staples"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

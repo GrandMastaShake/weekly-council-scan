@@ -1,0 +1,37 @@
+{
+ "week": "2026-07-27",
+ "votes": [
+  {
+   "ticker": "LMT",
+   "vote": "object",
+   "reason": "LMT fails my trend filter because its 26-week channel falls 43% a year and its weekly MACD line is still below zero, so sitting 2.4 widths above that falling line is a counter-trend rally in a downtrend, not a pullback in a rising channel."
+  },
+  {
+   "ticker": "JNJ",
+   "vote": "approve",
+   "reason": "JNJ qualifies in a channel rising 11% a year with its weekly MACD histogram turning up and the line above zero; at 1.5 widths above the line it is not a pullback entry, but nothing on the chart argues against it."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM qualifies in a steep channel rising 30% a year with its weekly MACD histogram rising and the line above zero; 1.5 widths above the line is stretched but still inside an intact channel, so the chart gives no reason to object."
+  },
+  {
+   "ticker": "LNG",
+   "vote": "approve",
+   "reason": "LNG has the best chart in the draft: it qualifies in a channel rising 15% a year, sits only 0.6 widths above the line near where I buy pullbacks, and its weekly MACD histogram is turning up with the line above zero."
+  },
+  {
+   "ticker": "TMO",
+   "vote": "object",
+   "reason": "TMO does not qualify because its 26-week channel still slopes down (4% a year), and after a +6.7% week it sits 2.0 widths above that line, so even with a positive weekly MACD this is chasing a stretched bounce rather than buying a pullback in a rising channel."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

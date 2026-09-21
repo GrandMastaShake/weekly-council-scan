@@ -1,0 +1,61 @@
+{
+ "week": "2026-09-14",
+ "book": [
+  {
+   "ticker": "XOM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The page's strongest signal: Ophelia's breakout leader still has room to run (RSI 51, 98.4% of its high), Cecil argues 18.7x understates its earnings at $100 WTI, and both name its negative correlation to SPY as the book's hedge against a hawkish dot plot."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "Ophelia's healthcare bounce and Marky's screen (2.1 widths below a channel rising 96% a year) agree it is an oversold pullback in an uptrend on 95% EPS growth; its MACD histogram is still falling, so it sits below XOM."
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia",
+    "Marky"
+   ],
+   "why": "Ophelia's AI-demand catalyst meets Marky's shallow 0.9-width pullback with a rising MACD histogram, but its 6.32% weekly volatility is the sheet's highest, so it gets the smallest weight of the three names with two backers."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's money-center bank at 16.4x with 13.4% EPS growth and the sheet's lowest volatility earns more if rates hold near 5% and steadies the book against the rate risk in LLY and AMD."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.1,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's insurer is the sheet's cheapest name with rising EPS (11.5x, +10.1%) and its short-duration float reinvests near 5%, held to 10% because of its 4.45% weekly volatility."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  "COP",
+  "PEP"
+ ],
+ "rationale": "The core is the three names two members reached by different routes: XOM (Ophelia's breakout, Cecil's value) at the 30% cap, plus LLY and AMD (Ophelia's rotation, Marky's channel screen), sized by volatility. Around that core the book is split across Wednesday's Fed decision: XOM, JPM and PGR earn more if rates stay near 5%, LLY and AMD pay if the hike reads as insurance, and 10% cash absorbs the Fed, BOJ and retail-sales cluster. VLO, VICI, SPG, LYV and CAT are left out.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

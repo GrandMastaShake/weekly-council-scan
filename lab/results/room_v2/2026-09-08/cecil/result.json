@@ -1,0 +1,33 @@
+{
+ "week": "2026-09-08",
+ "picks": [
+  {
+   "ticker": "LMT",
+   "why": "The synthesis calls this my clearest case: it trades at 19.4x trailing earnings, which grew 52.8%, it beat Q2 and got a $691 target from Citi, yet it fell 6.83% to $525.28 on 10-year yields rather than anything in the business, which puts it at the watchlist's $520 add zone with a $500 stop."
+  },
+  {
+   "ticker": "PGR",
+   "why": "At 11.6x trailing with earnings still up 10.1% and no quarterly report until 10-14, the best underwriter on the sheet is priced like an average insurer, and a 10-year above 4.75% raises the income on its bond portfolio instead of compressing its multiple."
+  },
+  {
+   "ticker": "PEP",
+   "why": "At 16.5x trailing with earnings up 6.2% and 1.89% weekly volatility, it is in my real-yield basket and passes the Campbell test because earnings are still growing, unlike the costly defensives COST at 46.1x and WMT at 37.9x."
+  },
+  {
+   "ticker": "PM",
+   "why": "It is the one name from my MO/PM/KMB preference on the sheet: 22.5x trailing is backed by 14.7% earnings growth, it screened cheap against the rising 10-year, and it held up better than the bond-like staples in last week's selloff."
+  },
+  {
+   "ticker": "JPM",
+   "why": "At 16.5x trailing with earnings up 13.4% and almost the lowest volatility on the sheet (1.52% weekly), it is the sound big-bank way to own the interest-income boost that lifted WFC and C last week, and it partly hedges the hot-CPI risk."
+  }
+ ],
+ "summary": "With CPI due on 9-11 and the 10-year above 4.75%, I owned cheap, sound businesses whose earnings are still growing and don't depend on falling rates: one stock sold down on yields alone (LMT), two that gain from higher-for-longer rates (PGR, JPM) and two high-yield staples that pass the Campbell test (PEP, PM). I passed on names that are cheap but shrinking (STZ, CALM, HON, VICI), on crude at $91, on the momentum and AI names at chase prices, and on FIZZ, which reports this week. I have no memory of how this week went and used none.",
+ "files_read": [
+  "synthesis.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

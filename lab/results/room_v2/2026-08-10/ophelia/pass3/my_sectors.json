@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Technology",
+   "thesis": "The -23K payrolls print cut September hike odds to about 44% and pulled the 10Y down to 4.66%, and tech led the turn: XLK had its best week of 2026 (+7.2%, SMH +7.8%) and moved back in step with SPY (0.81 correlation). Alphabet's +82% cloud growth and the run-up to NVDA's Aug 26 report give the AI chain its own support on top of the rate relief. I'm wrong if Wednesday's core CPI prints +0.3% or more (Pantheon flags core goods, partly from Apple's price hikes) and sends the 10Y back toward 4.75-4.80%, or if the light-volume rally stalls at $188-190 and XLK loses its $183 50-day average."
+  },
+  {
+   "sector": "Materials",
+   "thesis": "It is the only sector beating SPY over both the week (+1.3%) and the month (+1.5%), and the rally is broad: the dollar index is below 100 for a second week (~99.6), gold broke out to ~$4,340, copper is firming, oil at $78 lowers chemical input costs, and 14 of 16 tracked names rose (ALB on a big Q2 beat), all with only a 0.23 correlation to SPY. I'm wrong if a hot CPI pushes the dollar back above 100.5-101 and gold gives back its +7% week (NEM, up 18.5%, is the stretched name), or if the retail-sales and claims data turn 'no hikes' into 'recession' and hit industrial volumes."
+  },
+  {
+   "sector": "Industrials",
+   "thesis": "The factory data is the strongest in four years: ISM manufacturing hit 55.6 (highest since May 2022) with its employment index back in expansion at 52.8, CAT posted a record Q2 on AI data-center power demand, and XLI set a new 52-week high of $188.19. As a roughly 1.0-beta cyclical it should keep up in a rally without tech's rate exposure if CPI runs hot. I'm wrong if it keeps trailing SPY as it did in the rally (-0.5% on the week, -0.6% on the month), or if Friday's Industrial Production comes in below zero and a retail-sales miss turns the payrolls shock into a recession trade."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "This is my hedge for CPI week. Among the classic defensives only healthcare is beating SPY over the month (+0.6%, versus -6.4% for utilities and about -1.2% for staples and REITs), it has a -0.33 correlation to SPY and less rate sensitivity if yields jump, and earnings breadth supports it (LLY raised guidance to $80-83B, AMGN beat, XBI +7%) with XLV 1.7% under its 52-week high. I'm wrong if a cool CPI keeps rotating money out of defensives (XLV lagged SPY by 1.6% in exactly that tape last week) or if it stalls at $168.53 and drops back below $160."
+  }
+ ],
+ "changes": "No change to the four. I read Financials as a possible swap because XLF hit a new 52-week high ($58.00) and its highest weekly close ever, but passed on it for three reasons. First, its 'dovish steepening' case rests on a stale 2-year yield, and the live curve actually narrowed (3-month bill +2.8 bp, 10Y -8.5 bp). Second, its own framework says a hawkish surprise flattens the curve against banks, so it can't do Healthcare's job as the hot-CPI hedge. Third, it lagged SPY more than XLV did in last week's dovish rally (-2.35% vs -1.59%). I also corrected a pass-1 detail: the dollar index is ~99.6, below 100 for a second week, not just below 101. I set aside the Industrials page's macro figures (DXY 103+, 10Y 4.55%, oil $76), which contradict every other file, and relied on its price levels and the calendar's ISM figures. Industrials' flat relative strength against SPY lowers my conviction there, but the alternatives are no stronger (XLY -0.3% on the week and -0.2% on the month, XLF -2.35% on the week). No outside or remembered information about this week was used."
+}

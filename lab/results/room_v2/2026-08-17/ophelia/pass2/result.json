@@ -1,0 +1,34 @@
+{
+ "week": "2026-08-17",
+ "final4": [
+  {
+   "sector": "Energy",
+   "thesis": "Energy is the only sector with inflow on both the week (+7.27% vs SPY) and the month (+5.17%), and the supply news is still escalating: Hormuz disrupted, Iran hitting tankers, U.S.-Iran talks stalled, a U.S. pressure campaign being readied, and Russia's Sheskharis terminal offline. With a -0.43 correlation to SPY, it is also the book's hedge if the FOMC minutes or Warsh turn hawkish on oil. Wrong if talks restart and the premium drains as fast as it did two weeks ago (WTI under $78), if another large crude build follows last week's 17.4M barrels, or if a patient Warsh sets off a growth rally that leaves energy behind."
+  },
+  {
+   "sector": "Technology",
+   "thesis": "A cool July CPI (core 2.5%) and a flat PPI support multiples, and XLK has the second-best 1-month relative on the board (+3.63% vs SPY, behind only energy), with higher lows every session and RSI near 60. Memory leadership (MU +10.7%, AMD +6.4%) and the NVDA Aug 26 countdown keep buyers engaged. Wrong if the minutes or Warsh push the 10Y through 4.75% and de-rate growth, or if the pattern of beats getting sold anyway (CSCO -8%, AMAT -5.9%) spreads; a close below the ~$182.8 50-day ends the call."
+  },
+  {
+   "sector": "Industrials",
+   "thesis": "XLI is 0.9% below its $188.19 all-time high after a confirmed breakout, its trend is stronger than financials' (1Y +24.1%, 1M +0.12% vs SPY), and it gained on Friday's consumer-shock day (+0.39% vs SPY). Its mix suits this week: defense (RTX at a 52-week high, LMT +3.5%) benefits from the Iran escalation, AI-electrical names (ETN at a record) benefit from the NVDA countdown, and a dollar under 100 plus a 55.6 ISM help machinery. Wrong if Deere guides down (Aug 20), if Empire State or the flash PMI undercut the ISM, or if oil above $85 and a hawkish Warsh hit transports and capex financing."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "This is the defensive leg with a real trend: an all-time intraday high of $169.71 on broad earnings strength (MRK, GILD, ABBV, AMGN), beta near 0.5, and little exposure to the retail earnings run, oil or the consumer crack. The PDUFA dates on Monday (iberdomide) and around Wednesday (garetosmab) are single-name upside. Wrong if five closes just under $168.53 and Friday's -0.60% fade against SPY turn into a double top that loses the $164 20-day, or if a patient Warsh sets off a high-beta rally that a 0.5-beta sector can't keep up with."
+  }
+ ],
+ "changes": "Swapped Financials for Industrials: the corrected 2Y puts 10Y-2Y near +52 bps rather than +66, July retail was actually -0.6% (a consumer crack against XLF's payments and card-lender weight in the HD/TGT/WMT earnings week), and XLI has the better 1Y and 1M trend, held up better on Friday, and adds a defense hedge and AI-power exposure. Confirmed Energy, Technology and Healthcare.",
+ "files_read": [
+  "canary-watch.md",
+  "economic-calendar.md",
+  "sectors/energy.md",
+  "sectors/technology.md",
+  "sectors/financials.md",
+  "sectors/healthcare.md",
+  "sectors/industrials.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

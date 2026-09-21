@@ -1,0 +1,31 @@
+{
+ "week": "2026-08-10",
+ "top4": [
+  {
+   "sector": "Technology",
+   "why": "The -23K payrolls print pushed Fed expectations dovish, tech moved back in step with SPY (correlation 0.33 to 0.81), and XLK rose 7.2% (SMH 7.8%) on the market's strongest 1-year trend. The AI chain tends to rally ahead of NVDA's Aug 26 report, but this is the high-beta pick that suffers most if Tuesday's core CPI is hot."
+  },
+  {
+   "sector": "Materials",
+   "why": "Gold's surge, the dollar index falling below 101 and a 55.6 ISM help it whether the market trades on rate cuts or on stronger growth. It gained 4.8% on the week, behind only tech, on a 23% 1-year trend led by NEM, FCX and ALB."
+  },
+  {
+   "sector": "Industrials",
+   "why": "ISM manufacturing at 55.6, the highest since May 2022, with its employment index back in expansion and CAT's record Q2 point to rising cyclical earnings. As a middle-beta cyclical it should hold up better than growth if CPI comes in hot."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "It is up 22% over the year, with LLY and AMGN strong and biotech catching a bid as the 10-year yield falls. It is my defensive pick for the CPI week, since utilities, staples and REITs are the defensive sectors actually losing ground."
+  }
+ ],
+ "next_two": [
+  "Financials",
+  "Consumer Discretionary"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

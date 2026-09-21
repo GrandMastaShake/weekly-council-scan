@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-17",
+ "votes": [
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "It qualifies, sitting only 0.4 widths above a 26-week channel line that rises 50% a year, with the weekly MACD histogram rising and the MACD line above zero, so trend and momentum agree; it is not a pullback entry, but nothing on the chart argues against it."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "It qualifies as a pullback 1.4 widths below a steep channel line rising 1155% a year, well short of the 2.5-width break, with the MACD line above zero; the histogram is still falling so the turn is not confirmed yet, and the draft's capped weight already allows for that."
+  },
+  {
+   "ticker": "LMT",
+   "vote": "object",
+   "reason": "It fails my screen because its 26-week channel slopes down 30% a year, and sitting 1.9 widths above that falling line makes it a stretched rally in a downtrend, the opposite of a pullback in a rising channel, even with MACD rising."
+  },
+  {
+   "ticker": "GS",
+   "vote": "approve",
+   "reason": "It qualifies as a clean pullback 1.1 widths below a channel line rising 80% a year, far from the 2.5-width break, with the MACD line above zero; the falling histogram makes it early rather than broken."
+  },
+  {
+   "ticker": "COP",
+   "vote": "object",
+   "reason": "It fails my screen because its 26-week channel slopes down 10% a year, and at 1.6 widths above the line it is an extended bounce in a downtrend, not a pullback in a rising channel."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

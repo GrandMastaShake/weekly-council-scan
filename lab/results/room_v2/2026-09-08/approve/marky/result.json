@@ -1,0 +1,37 @@
+{
+ "week": "2026-09-08",
+ "votes": [
+  {
+   "ticker": "JNJ",
+   "vote": "approve",
+   "reason": "It qualifies at 0.9 widths above a 26-week channel line that rises 40% a year, and its weekly MACD histogram is rising with the MACD line above zero, so trend and momentum both point up."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "It qualifies and sits 0.6 widths below a channel line rising 67% a year, a pullback well inside a channel that would need a 2.5-width drop to break, though its weekly MACD histogram is still falling so the turn up has not come yet."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "It qualifies with the steepest channel in the draft, rising 144% a year, and a rising weekly MACD histogram above zero; at 1.5 widths above the line it is stretched rather than a pullback, but nothing in the channel is broken."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "It fails my qualifying rule because its 40-week average is not rising, and its weekly MACD histogram is still falling, so the longer trend has stalled and there is no turn up to buy."
+  },
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "It qualifies and is close to the setup I buy, 0.5 widths above a channel line rising 49% a year, with the weekly MACD histogram rising and the MACD line above zero."
+  }
+ ],
+ "files_read": [
+  "approve/marky/draft.md",
+  "approve/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

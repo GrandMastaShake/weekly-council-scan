@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-24",
+ "votes": [
+  {
+   "ticker": "REGN",
+   "vote": "approve",
+   "reason": "Its 26-week channel slopes down (10% a year), so I would not have picked it, but that alone is no objection: price is 2.0 widths above the line, far from a break, and the weekly MACD histogram is rising with the line above zero."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "It is the only draft name that fully qualifies and it is my textbook setup: a pullback to 0.2 widths above a 26-week channel line rising 92% a year, with the weekly MACD histogram rising and the line above zero."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "Its channel drifts down (7% a year), so it fails my entry filter, but price is 2.2 widths above the line rather than below it and the weekly MACD histogram is rising above zero, so the chart has no break or rollover to object to."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "approve",
+   "reason": "It is nearly my own setup, a pullback to 0.4 widths above a channel line rising 18% a year with the weekly MACD histogram rising above zero, and the flat 40-week average that keeps it from qualifying is not a reason to object."
+  },
+  {
+   "ticker": "PEP",
+   "vote": "approve",
+   "reason": "It is the weakest chart in the draft (channel falling 30% a year, MACD line still below zero), but it sits 2.0 widths above the line rather than broken and its weekly MACD histogram is turning up, so my lens gives no concrete reason against it this week."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

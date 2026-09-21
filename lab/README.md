@@ -517,3 +517,88 @@ forward record will.
     python lab/council_room_v2.py debate DIR
     python lab/council_room_v2.py approve DIR
     python lab/council_room_v2.py final DIR
+
+## Council Room v2 results -- the members
+
+Run after the registration commit; `results/room_v2_members.json`. Every agent
+output is in `results/room_v2/`, one folder per week, with the `files_read`
+paths shortened to the week folder. By their own reports, all 72 agents in this
+room (36 member passes, 9 drafts, 27 votes) used only Read and opened nothing
+outside their own folder.
+
+One departure from the registration: Marky's five are the channel mode's
+(Pass 5), not Pass 4's 52w. The owner replaced the 52w job before this ran, and
+the channel mode passed its own registered rule.
+
+| Member | Weeks | Alpha / wk | vs random (t) | Pctile |
+|---|---|---|---|---|
+| Ophelia | 9 | -0.45% | -0.27% (t -0.41) | 45% |
+| Cecil | 9 | +0.10% | +0.41% (t +0.56) | 57% |
+| Marky (channel) | 9 | +1.35% | +1.61% (t +1.91) | 75% |
+
+Ophelia's four sectors, against all the 111's stocks the next week: -0.18%/wk
+(t -0.59), ahead in 3 of 9. No member trails random picks with t <= -2, so none
+is flagged.
+
+The jobs are distinct. Over the nine weeks Ophelia and Cecil picked the same
+name 7 times, Ophelia and Marky twice (both on 09-14), and Cecil and Marky
+never.
+
+## Council Room v2 results -- the debate
+
+Run after the registration commit; `results/room_v2_debate.json`, with each
+week's draft, votes and final book in `results/room_v2/`.
+
+| | Weeks | Alpha / wk | vs random (t; pctile) | Invested | Cumulative | Worst DD |
+|---|---|---|---|---|---|---|
+| Draft, before the vote | 9 | -1.15% (t -1.99) | -0.94% (t -1.43; 40%) | 95% | -7.7% | -8.9% |
+| Final, after the vote | 9 | -1.14% (t -1.98) | -0.89% (t -1.40; 40%) | 95% | -7.6% | -8.8% |
+
+Against the real Council's book, the final book returned -0.86%/wk (t -1.72)
+and did better in 3 of 9 weeks.
+
+| Week | Final book | Book | SPY | Council |
+|---|---|---|---|---|
+| 07-20 | UNH 30, JPM 25, MA 15, SPG 15, VLO 10 | +0.20% | -1.09% | 0.00% |
+| 07-27 | LMT 30, JNJ 25, JPM 20, LNG 15, TMO 10 | -0.75% | +0.28% | -0.14% |
+| 08-03 | JPM 30, REGN 25, KO 20, SCHW 15, PEP 10 (swapped in for UNH) | +0.58% | +3.18% | +0.34% |
+| 08-10 | NVDA 25, GOOGL 20, ETN 20, FCX 15, LLY 15 | -1.17% | +0.48% | 0.00% |
+| 08-17 | NVDA 20, AMD 20, LMT 20, GS 20, COP 15 | -2.97% | -1.35% | +0.13% |
+| 08-24 | REGN 30, LLY 20, COP 20, PGR 15, PEP 15 | -3.91% | +0.60% | -0.40% |
+| 08-31 | JPM 30, PM 20, V 15, UNH 15, REGN 10 | -0.16% | +0.37% | 0.00% |
+| 09-08 | JNJ 25, JPM 25, VLO 15, PGR 15, NVDA 10 | -0.70% | -0.62% | -0.14% |
+| 09-14 | XOM 30, LLY 20, AMD 15, JPM 15, PGR 10 | +1.06% | +0.60% | +0.16% |
+
+**Under the registered standard, the final book is not flagged**: it trails
+random picks with t -1.40, and the line is -2. It is negative on every
+measure, though, and on average it did worse than each member's five on their
+own.
+
+**The vote barely acts.** Of 135 votes, 21 were objections (Marky 11, Cecil 8,
+Ophelia 2). Two members objected to the same name only once: UNH on 08-03,
+by Cecil and Marky. It was swapped for PEP, which added +0.10% that week; the
+other 19 objections stand as dissents. Each member objects through its own
+lens, and the lenses rarely coincide, which is the other side of giving them
+distinct jobs.
+
+Cash ran 0-10% (5% on average), well inside the owner's 20% cap.
+
+**What went wrong -- post hoc, not a registered test.**
+
+- *The synthesis gave the best member here almost no say.* On average,
+  Ophelia's five made up 67% of the final book, Cecil's 47% and Marky's 8%
+  (a name two members picked counts for both). Each member's five returned, on
+  average, -0.17%/wk (Ophelia), +0.38% (Cecil) and +1.63% (Marky). The drafts
+  dropped Marky's names for failing the other members' tests ("not in
+  Ophelia's sectors", "not cheap by Cecil's measures"), and Marky writes no
+  prose to argue back.
+- *The objections did not pick losers.* Names a member objected to returned
+  +0.12%/wk against SPY; names it approved returned -1.27%. A stronger veto
+  would have hurt.
+- *None of this identifies a better way to combine them.* It is nine weeks, and
+  Marky's lead is partly in-sample (Pass 5's first caveat); over 96 weeks his
+  edge over random is +0.21%/wk (t +0.79).
+
+**Open for the owner:** whether the synthesis step goes live as designed, or
+with a fixed share of the book for each member so every job counts. The forward
+record will score whichever goes live.

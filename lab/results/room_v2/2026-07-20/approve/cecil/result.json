@@ -1,0 +1,37 @@
+{
+ "week": "2026-07-20",
+ "votes": [
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "At 22.9x trailing earnings that fell 26.1%, with a guide the draft says was raised twice, this $380.4bn franchise is priced on depressed rather than inflated earnings, has already reported and moves only 2.74% a week."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "A $910.6bn bank at 15.7x trailing earnings that grew 13.4%, already reported and with the book's lowest weekly volatility at 2.12%, is the cheap, sound holding my lens looks for."
+  },
+  {
+   "ticker": "MA",
+   "vote": "approve",
+   "reason": "30.4x is a premium price, not a bargain, but it buys 19.0% EPS growth in a capital-light payments network that moves only 2.64% a week and does not report until Jul 30, so my lens has no concrete reason against it this week."
+  },
+  {
+   "ticker": "SPG",
+   "vote": "approve",
+   "reason": "The 43.8x P/E and -15.9% EPS are GAAP figures that real-estate depreciation distorts, which is why I picked it as the cheapest REIT on FFO, and with 3.18% weekly volatility and no report until Aug 10 that case holds through Friday."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "object",
+   "reason": "A cyclical refiner at 22.1x trailing earnings that just jumped 159.9% on what the draft calls a war premium, after a 31.91% twelve-week run and with the book's highest weekly volatility at 5.04%, is paying a full multiple for event-driven earnings and leaves no margin of safety if that premium fades during the week."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

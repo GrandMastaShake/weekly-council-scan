@@ -1,0 +1,58 @@
+{
+ "week": "2026-08-17",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's direct bet on her tech call (cool July CPI, AI spending just re-confirmed, Aug 26 earnings after this week) sits in the one sector Marky's screen also favours; the sheet shows it at 100% of its 52-week high, so this is a bet on the run-up to earnings."
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.2,
+   "backers": [
+    "Marky"
+   ],
+   "why": "The nearest thing to a shared pick: Marky's screen qualifies it as a pullback in a steeply rising channel and Ophelia's tech call names its +6.4% week as the leadership keeping buyers in; it gets no more than NVDA's weight because its weekly MACD histogram is falling and its 7.35% weekly volatility is the book's highest."
+  },
+  {
+   "ticker": "LMT",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's defense pick ties her industrials breakout to the same Iran escalation behind her energy call, it has low beta in case Jackson Hole goes badly, and no member argued against it."
+  },
+  {
+   "ticker": "GS",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheaper way into the confirmed XLF breakout: 16.0x trailing on 43.9% EPS growth, up only 4.7% over 12 weeks against JPM's 19%, with Basel capital relief still not priced in."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Energy is Ophelia's lead call and its -0.43 correlation to SPY hedges the tech names; COP rather than VLO because its room to target answers Cecil's objection to refiners above target, at 15% because of his warning against chasing a +7.67% week."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "UNH",
+  "PGR"
+ ],
+ "rationale": "No member picked the same name as another, so the strongest signal is at the sector level: Ophelia's tech call and Marky's screen both land in technology (NVDA and AMD, 40%). Energy stays in as one smaller position. Cecil's objections keep out REGN (binary FDA decision), VLO (above target) and GOOGL (P/E flattered by one-off gains); GS gives Cecil's value view a seat in the financials breakout.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

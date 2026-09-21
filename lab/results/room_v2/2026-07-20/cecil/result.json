@@ -1,0 +1,33 @@
+{
+ "week": "2026-07-20",
+ "picks": [
+  {
+   "ticker": "JPM",
+   "why": "JPM trades at 15.7x trailing earnings with EPS up 13.4%, has among the lowest weekly volatility on the list (2.12%), has already reported, and is the cleanest way to own what the synthesis calls the only sector that a 4.52% 10Y and a steeper curve help."
+  },
+  {
+   "ticker": "PGR",
+   "why": "At 11.0x trailing with EPS still up 10.1%, this best-in-class auto underwriter is one of the cheapest sound businesses on the table, has already reported, and earns more on its float as yields rise."
+  },
+  {
+   "ticker": "PEP",
+   "why": "EPS rose 6.2% while the price fell 10.9% over twelve weeks, leaving this 52-year dividend grower at 16.4x trailing with a 4.27% yield per the synthesis, already reported and low in volatility, so the multiple fell and the business did not."
+  },
+  {
+   "ticker": "UNH",
+   "why": "UNH has already reported a beat and, per the synthesis, raised its FY26 guide twice, yet it trades at 22.9x trailing on trough earnings (trailing EPS still 26.1% below the prior four quarters) with 2.74% weekly volatility, a middling multiple on earnings that are recovering."
+  },
+  {
+   "ticker": "SPG",
+   "why": "The synthesis names SPG the cheapest REIT at 15.4x with a 3.98% yield (the table's 43.8x is a GAAP multiple that depreciation inflates for any REIT), and it is a strong-balance-sheet owner of domestic property cash flow that does not report until Aug 10."
+  }
+ ],
+ "summary": "This is a low-volatility book of cheap, sound businesses with no binary events this week, because each has already reported or reports weeks from now: two financials that the higher 10Y helps (JPM, PGR), a staple whose price fell while its earnings rose (PEP), a managed-care recovery with a twice-raised guide (UNH), and the synthesis's cheapest REIT (SPG). I skipped every name reporting this week, the energy war premium and the AI-reset trade, and NVDA stays on watch until the FOMC and mega-cap guidance clear the gate the synthesis describes. I have no memory of how this week went and used none.",
+ "files_read": [
+  "synthesis.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "week": "2026-09-14",
+ "picks": [
+  {
+   "ticker": "PGR",
+   "why": "A best-in-class auto underwriter at 11.5x with EPS up 10.1%, whose short-duration float reinvests at a ten-year near 5%, which is why insurers finished green in a red week while the duration financials paid."
+  },
+  {
+   "ticker": "JPM",
+   "why": "The only money-center bank on the sheet, at 16.4x on clean 13.4% EPS growth and with the table's second-lowest volatility (1.58% weekly); the financials desk reads a parallel bear shift as good for net interest income, and money centers held green last week."
+  },
+  {
+   "ticker": "XOM",
+   "why": "An 18.7x trailing multiple understates earnings with WTI at $100 and diesel cracks at records, and Exxon owns both the barrel and the refining margin on a fortress balance sheet, which gives the book energy's -0.426 inverse correlation to a tape driven by rates and oil."
+  },
+  {
+   "ticker": "VICI",
+   "why": "At 9.6x it is the cheapest sound business on the sheet: long triple-net master leases with CPI-linked escalators and a dividend yield that clears the 4.975% ten-year, so it is signed contracts rather than a REIT that merely yields."
+  },
+  {
+   "ticker": "PEP",
+   "why": "At 16.3x, with EPS still growing 6.2% and 1.87% weekly volatility, it is the cheapest of the big staples and sits on the Council's value shelf at a 4.3% yield, the cheap-carry profile that held up inside staples while expensive defensives like COST and CL bled."
+  }
+ ],
+ "summary": "Five cheap, sound businesses split across Wednesday's FOMC binary: PGR, JPM and XOM earn more in this regime, while VICI and PEP are the cheapest carry in their sectors and should lead if the hike reads as finishing something rather than starting a path. I passed on GOOGL and AMZN (trailing EPS likely includes investment gains), on VLO (crowded above freshly raised targets), on HON and STZ (cheap but with falling EPS), and on consumer names at 52-week lows ahead of Wednesday's retail sales. I have no memory of how this week turned out.",
+ "files_read": [
+  "synthesis.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

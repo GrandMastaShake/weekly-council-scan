@@ -1,0 +1,42 @@
+{
+ "week": "2026-07-20",
+ "picks": [
+  {
+   "ticker": "VLO",
+   "sector": "Energy",
+   "why": "VLO leads the refiners, which are the strongest group in Energy: it hit a new 52-week high on Friday and closed at $309.65 (+10.3% on the week, +31% over four weeks), and fuel margins keep widening while Hormuz is disrupted and Bab el-Mandeb is threatened."
+  },
+  {
+   "ticker": "CVX",
+   "sector": "Energy",
+   "why": "CVX is my oil-price pick in Energy: +6.2% on the week and the stronger of the two majors on Friday (+1.9%) as WTI closed at its weekly high of $82.49, and it is still about 14% below its $214 average analyst target."
+  },
+  {
+   "ticker": "UNH",
+   "sector": "Healthcare",
+   "why": "UNH is the clearest case of rising profit forecasts in healthcare: Q2 earnings per share beat by 31% and full-year guidance was raised a second time, to $19.50-20.00, yet the stock barely moved (+0.35% on the week, about 8% below its 52-week high), and as a defensive, US-focused name it should hold up if the war or the chip selloff pulls SPY lower."
+  },
+  {
+   "ticker": "MA",
+   "sector": "Financials",
+   "why": "MA has the strongest momentum in Financials (+3.2% on the week, +11.2% over four weeks) as money keeps flowing into the sector, it is less exposed than the banks if oil raises the odds of a Fed hike and squeezes lending margins, and higher fuel prices lift the dollar value of card spending."
+  },
+  {
+   "ticker": "WELL",
+   "sector": "Real Estate",
+   "why": "WELL is Real Estate's momentum leader (+5.0% on the week, +17.7% over four weeks, +32% this year) and closed just under its new $246.43 high even as the 10-year yield hit a two-month high, because its growth comes from demand for senior housing, not from its dividend."
+  }
+ ],
+ "summary": "Energy is my strongest chart, so it gets two picks: VLO for the refiners that are leading the sector and CVX for exposure to the war-driven oil price. UNH, MA and WELL are the strongest names in my other three sectors, driven by earnings or momentum, and all three rose during last week's tech selloff. I looked at BTC and GLD and passed, because both are down over 12 weeks and gold fell even during a war week.",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "energy.md",
+  "healthcare.md",
+  "financials.md",
+  "real-estate.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

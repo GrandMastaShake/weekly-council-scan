@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-27",
+ "votes": [
+  {
+   "ticker": "LMT",
+   "vote": "approve",
+   "reason": "LMT fits my Industrials call squarely: my thesis cites its +14.5% earnings reaction and the direct defense bid from the Iran escalation, and as a defense name it sits outside the transports, UPS and AI-infrastructure risks I flagged for the sector."
+  },
+  {
+   "ticker": "JNJ",
+   "vote": "approve",
+   "reason": "JNJ is the cash-flow pharma leader my Healthcare thesis names (+4.1% on the week, low-beta, in a sector with a -0.29 SPY correlation), and because it has already reported it avoids the pharma-earnings risk I flagged for this week."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "Financials is one of my four calls and my thesis names JPM (profits +41%, at all-time highs) as a winner from the higher 10-year; the chance that Warsh's hawkish hold bear-flattens the curve is a named way I could be wrong, not a trigger that has fired, so it argues for the 20% cap rather than against the name."
+  },
+  {
+   "ticker": "LNG",
+   "vote": "approve",
+   "reason": "LNG fits my Energy call as the book's hedge against the oil-and-yields shock, with impaired Hormuz flows supporting U.S. LNG and long-term contracts damping the ceasefire risk I named; the trade-off is that it hedges less than XLE if oil spikes further, and no exit level I set (Brent below $90, XLE below $56.75) has been hit."
+  },
+  {
+   "ticker": "TMO",
+   "vote": "approve",
+   "reason": "TMO fits my defensive Healthcare call: it has already reported and its trend turned up (+6.7% on the week, +21% over 12 weeks); as a tools name it is more exposed than pharma to the 10-year-and-biotech risk I named, and the 10% sizing already reflects that."
+  }
+ ],
+ "files_read": [
+  "approve/ophelia/draft.md",
+  "approve/ophelia/my_sectors.json",
+  "approve/ophelia/facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

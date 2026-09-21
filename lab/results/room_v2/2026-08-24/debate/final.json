@@ -1,0 +1,27 @@
+{
+ "week": "2026-08-24",
+ "book": [
+  {
+   "ticker": "REGN",
+   "weight": 0.3
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.2
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PEP",
+   "weight": 0.15
+  }
+ ],
+ "swaps": [],
+ "dissents": []
+}

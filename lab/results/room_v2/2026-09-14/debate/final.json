@@ -1,0 +1,43 @@
+{
+ "week": "2026-09-14",
+ "book": [
+  {
+   "ticker": "XOM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.15
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "AMD",
+   "member": "Cecil",
+   "reason": "At 89.6x trailing earnings, the richest multiple on the sheet and above its 67.0% EPS growth rate, AMD offers no margin of safety and is the name most exposed to a de-rating if Wednesday's Fed decision lifts discount rates."
+  },
+  {
+   "ticker": "JPM",
+   "member": "Ophelia",
+   "reason": "Financials is the sector I declined to swap in this week because it broke its pivots and its credit proxies are red, and a money-center bank is the most direct exposure to that credit signal going into Wednesday's hike, with JPM's -0.67% week and -1.82% month showing it sliding with the sector rather than resisting it."
+  },
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "PGR does not qualify because its 40-week average is not rising, so its 0.4-width dip is not a pullback in a confirmed uptrend, and its weekly MACD histogram is still falling."
+  }
+ ]
+}

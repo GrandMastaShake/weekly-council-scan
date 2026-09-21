@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Healthcare",
+   "thesis": "Healthcare has the strongest trend on the board outside commodities. It is +5.9% vs SPY over the month, and its $169.71 breakout held through both a mild second MFN round (nine mid-sized firms, no new GLP-1 terms) and the hot-NFP rate shock, with more names leading: PFE at a 52-week high, GILD and JNJ near highs, MRK grinding higher, MDT beating and raising. With a ~0.5 beta and roughly zero correlation to SPY, it is the cleanest defensive to carry into Friday's CPI; I'm wrong if LLY (the largest weight, already below both moving averages) keeps bleeding, if the Sep 8-9 policy items turn into a new pricing hit, or if a cool CPI starts a high-beta rally that leaves it behind."
+  },
+  {
+   "sector": "Energy",
+   "thesis": "Energy is the one sector that gains from this week's main shocks: tankers were struck in Hormuz, US-Iran strikes resumed and Iran fired at US targets in Kuwait on Friday, sending WTI up 9.7% to $91.48, past the canary's $90 trigger. XLE leads the board on both the week (+2.1% vs SPY) and the month (+9.6%), and with a -0.35 correlation to SPY it is the natural hedge if a hot CPI locks in a hike and drags everything else down. I'm wrong if a ceasefire unwinds the war premium as it did the week before, or if a cool CPI starts a growth rally that leaves an inversely correlated sector behind."
+  },
+  {
+   "sector": "Financials",
+   "thesis": "The jobs beat removed the main risk I flagged in pass 1, a labor crack turning into a credit scare, and pushed short-dated rates the way this sector wants: hike odds are ~60%, the 2Y is at its highest since January 2025, money centers are leading (WFC +5.7%, C +3.7%), and XLF held flat just under its $58.16 record weekly close. It works on either side of the CPI print. I'm wrong if weakness in payments and asset managers (MA, AXP, BLK) outweighs the banks, if XLF loses $57.48, or if the first down week for HYG/LQD turns into real credit-spread widening."
+  },
+  {
+   "sector": "Technology",
+   "thesis": "The tape answered the question I left open in pass 1: semis were bought, not sold, into the hawkish print. XLK beat SPY on the week (+0.75%) and held above its 20- and 50-day averages, powered by the memory squeeze (MU above $1,000) and AI spending that AVGO just guided higher through FY28; ORCL and ADBE report around Sep 10, so the sector has its own catalyst inside the window and is the one leg that wins if CPI comes in cool and yields fall back. I'm wrong if core CPI prints at 0.3% or more and the 10Y breaks 4.85%, or if ORCL and ADBE miss the 'beat, raise, and raise the raise' bar that already sank AVGO."
+  }
+ ],
+ "changes": "Two swaps: Technology replaces Communication Services and Energy replaces Consumer Staples; Financials and Healthcare stay, with Healthcare moved to the top. Both dropped sectors had their pass-1 reasons contradicted by the Sep 4 week (XLC lagged SPY by ~1% and is still below its 200-day; XLP fell every session after Monday and CPB cut its dividend). The new four cover both outcomes of Friday's CPI: a hot print favors Energy, Healthcare and Financials, and a cool one favors Technology and Financials."
+}

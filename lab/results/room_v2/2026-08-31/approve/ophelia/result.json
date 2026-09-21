@@ -1,0 +1,38 @@
+{
+ "week": "2026-08-31",
+ "votes": [
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM is one of the money-center banks leading my Financials call (+1.72% into Warsh's hawkish close, +15% over 12 weeks), so it is the most direct way to own the one sector whose earnings improve if he means it."
+  },
+  {
+   "ticker": "PM",
+   "vote": "approve",
+   "reason": "PM is one of the two tobacco names my Staples call cites as leading (+1.94% in the week that ended with Warsh's hawkish Friday), so it is the defensive I want whichever way the jobs report breaks, though as one of the most dollar-exposed staples it would be hit first by my DXY-above-100 failure case."
+  },
+  {
+   "ticker": "V",
+   "vote": "approve",
+   "reason": "Visa is one of the largest XLF holdings and sits at a record close (+2.85% on the week, +18% over 12 weeks), so it rides my Financials leadership call, though as a consumer-spending name it shares the soft-jobs risk I named rather than hedging it as the draft claims."
+  },
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "UNH gives my Healthcare call the low-volatility exposure I want for a data-heavy week (+0.73% in the week XLV lagged SPY by 2.45%) and has no stake in the biotech or GLP-1 risks of Monday's MFN round, even though it is a laggard (-5.18% over four weeks) rather than one of the breakout leaders."
+  },
+  {
+   "ticker": "REGN",
+   "vote": "approve",
+   "reason": "REGN led the Healthcare advance (+25% over 12 weeks), so its 4.78% pullback should recover if Monday's MFN round clears the overhang as I expect, and as a large-cap biotech with no GLP-1 franchise it is neither one of the midsize names that round targets nor tied to the LLY risk I named."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

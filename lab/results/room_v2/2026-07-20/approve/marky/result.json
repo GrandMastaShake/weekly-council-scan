@@ -1,0 +1,37 @@
+{
+ "week": "2026-07-20",
+ "votes": [
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "It qualifies and sits on its steep rising channel line (0.2 widths below, well short of the 2.5-width break), which is the pullback spot I buy; the weekly MACD histogram has not turned up yet, but the MACD line is above zero."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "It qualifies: its channel rises 25% a year, it is 1.2 widths above the line, and its weekly MACD histogram is rising with the MACD line above zero, so the chart gives no reason against it."
+  },
+  {
+   "ticker": "MA",
+   "vote": "object",
+   "reason": "It fails my first test because its 26-week channel slopes down (6% a year) and its MACD line is still below zero, so this is a bounce 2.2 widths above a falling line, not a pullback in a rising channel."
+  },
+  {
+   "ticker": "SPG",
+   "vote": "approve",
+   "reason": "It qualifies: its channel rises 42% a year, it is only 0.9 widths above the line, and its weekly MACD histogram is turning up with the MACD line above zero."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "It qualifies with its channel rising 112% a year and its weekly MACD histogram rising with the MACD line above zero; at 1.6 widths above the line it has run ahead rather than pulled back, but nothing in the chart argues against it."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

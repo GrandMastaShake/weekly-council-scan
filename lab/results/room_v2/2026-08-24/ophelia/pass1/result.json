@@ -1,0 +1,31 @@
+{
+ "week": "2026-08-24",
+ "top4": [
+  {
+   "sector": "Healthcare",
+   "why": "Healthcare broke out last week (+4.33%) and gained more broadly than any other sector, lifted by investors moving into defensive stocks and by the Phase 3 win for Merck and Moderna's intismeran. It is not very sensitive to interest rates, so it is the safest place to sit through a week with NVDA earnings, Core PCE and the Jackson Hole keynote."
+  },
+  {
+   "sector": "Energy",
+   "why": "WTI rose 5.66%, its second straight week up more than 5%, on a physical Hormuz blockade, and XLE hit new 52-week highs. It protects against a hot PCE or a hawkish Fed and does not depend on NVDA, but the war premium in oil could collapse if tensions ease."
+  },
+  {
+   "sector": "Materials",
+   "why": "Materials was one of only three sectors up last week (+1.90%), driven by gold jumping 5.6% to $4,624, and a strong PMI of 56.0 supports demand. It benefits from the same inflation and geopolitical buying as energy, while rising yields keep hurting growth stocks."
+  },
+  {
+   "sector": "Consumer Staples",
+   "why": "The sector finished flat even though WMT fell 9.8%, which means the other staples stocks rose as investors sought safety, and WMT's drop is already priced in. It offsets the headline risk in the two commodity picks, and it would hold up if NVDA disappoints and AI stocks fall further."
+  }
+ ],
+ "next_two": [
+  "Real Estate",
+  "Technology"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "week": "2026-07-27",
+ "picks": [
+  {
+   "ticker": "PGR",
+   "why": "Progressive trades at 11.3x trailing earnings with EPS still growing 10%, making it the cheapest high-quality business on the sheet, and a 4.70% 10-year raises the income it earns on premiums it holds rather than hurting it, with no report until October."
+  },
+  {
+   "ticker": "LMT",
+   "why": "Lockheed is at 21.5x trailing after a clean beat ($7.94 against $7.20) on a $230B backlog, has already reported, and the Iran escalation supports a defense cycle the synthesis calls underowned."
+  },
+  {
+   "ticker": "PEP",
+   "why": "PepsiCo is at 16.3x trailing after a 12% slide over 12 weeks, has raised its dividend 52 years running, is the least volatile name on my list, and its cash flow does not depend on this week's mega-cap guidance."
+  },
+  {
+   "ticker": "JPM",
+   "why": "At 16.2x trailing with 13% EPS growth and the strongest balance sheet in US banking, it is the soundest way to own the one sector the 4.70% 10-year and the steepening curve actually help, without overpaying."
+  },
+  {
+   "ticker": "NEM",
+   "why": "Newmont is at 10.1x trailing with gold above $4,000 and the shares down 14% in 12 weeks, so the margin of safety is real, and it hedges the oil and Iran part of the week's biggest risk; I hold it as a trade, not a long-term position."
+  }
+ ],
+ "summary": "All five are cheap, sound businesses that have already reported and sit outside the AI capex chain, so the FOMC and the Jul 29-30 mega-cap reports reach them only indirectly: two financials that higher rates help (PGR, JPM), a defense contractor coming off a beat (LMT), a discounted long-run dividend grower (PEP) and a cheap gold hedge (NEM). I passed on HON because its table figures do not match the company's known size and dividend, so I can't trust its 13.8x; I left SPG and O on the watchlist until the 10-year eases; and I skipped NVDA, which is not cheap at 35.4x trailing and whose week depends on other companies' capex guidance. I have no memory of how this week turned out and used none.",
+ "files_read": [
+  "synthesis.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

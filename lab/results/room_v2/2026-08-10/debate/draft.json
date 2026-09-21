@@ -1,0 +1,58 @@
+{
+ "week": "2026-08-10",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "NVDA is Ophelia's purest play on the rate-relief-plus-AI call that drove tech's best week of 2026: it rose 11.6% and sits at 99.5% of its 52-week high on the sheet, and the run-up to its Aug 26 report adds support."
+  },
+  {
+   "ticker": "GOOGL",
+   "weight": 0.2,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's value pick trades at 17.8x trailing after falling 10.7% over 12 weeks, and it is the only name another member's reasoning backs directly, because Ophelia's tech call cites Alphabet's +82% cloud growth; it is also less exposed to rates than CRWD at 208x."
+  },
+  {
+   "ticker": "ETN",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's AI-power industrial is at a 52-week high after raising guidance (+8.3% on the week) with only 3.7% weekly volatility, and it is the Council's pick for the data-center-power theme that Marky also chose through CAT and MOD."
+  },
+  {
+   "ticker": "FCX",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "FCX is Ophelia's cleanest play on Materials, the only sector beating SPY over both the week and the month, and it carries the weak-dollar metals trade that Cecil also backs through NEM, which is more stretched after a 20.6% week."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "LLY is Ophelia's hedge against a hot core CPI, in the healthcare sector Marky also picked through UNH; its raised $80-83B guidance drew only a 3.2% gain, and its EPS is growing 95% while UNH's is shrinking 26%."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "CAT",
+  "JPM"
+ ],
+ "rationale": "No member picked the same name as another this week, so the Council looked for agreement by sector: Technology got picks from all three members and takes 45% (NVDA, plus GOOGL), while Industrials, Materials and Healthcare each got picks from two members and take one name apiece, the one leading its sector. Marky's AMD, DDOG and MOD stay out because they lagged or broke down while their sectors rallied, and all five of his names still show a falling weekly MACD histogram. LLY and 5% cash soften a hot core CPI print.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

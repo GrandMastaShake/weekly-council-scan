@@ -1,0 +1,58 @@
+{
+ "week": "2026-09-08",
+ "book": [
+  {
+   "ticker": "JNJ",
+   "weight": 0.25,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's top call and the steadiest leader of her strongest non-commodity sector (+2.7% on the week, +14.8% over 12 weeks, at a 52-week high), carrying healthcare's ~0.5 beta and near-zero SPY correlation into Friday's CPI, with the Sep 8-9 drug-pricing items as the named risk."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.25,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheap bank with earnings still growing (16.5x trailing, earnings +13.4%) and the lowest weekly volatility on the sheet (1.52%); it sits in the Financials sector Ophelia says works on either side of the CPI print, which is the closest this page comes to two members backing one name."
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's energy hedge (XLE runs at -0.35 correlation to SPY and gains if a hot CPI or more Gulf fighting hits everything else), taken through the refiner whose diesel-crack earnings led in both the latest crude spike and the fade before it, which answers Cecil's pass on $91 crude better than CVX does; held to 15% because it is the most volatile name on the sheet after +24% in four weeks."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "The cheapest name on the sheet (11.6x trailing, earnings +10.1%, no report until Oct 14), whose bond income rises with a 10-year above 4.75%, giving Cecil's higher-for-longer case a second seat, in insurance rather than banking, inside the sector Ophelia rates."
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "The book's one leg that pays if CPI runs cool, held at 10%, roughly its weight in SPY, after it rose 5.9% straight through the hawkish jobs print; Cecil's objection to buying at chase prices keeps it from being larger, with ORCL's Sep 10 report and CPI both landing inside the hold."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  "REGN",
+  "CVX"
+ ],
+ "rationale": "No name was picked by two members; the nearest thing to a shared signal is Cecil's two Financials, JPM and PGR, in the sector Ophelia rates as working on either side of Friday's CPI, so JPM shares the top weight with Ophelia's top call JNJ. Ophelia and Cecil both read the week as a rate shock heading into a CPI print on the last day of the hold, so the book leans to names that hold up if it runs hot, sides with Ophelia over Cecil's pass on $91 crude but through VLO's refining margin rather than the crude-tied CVX, keeps NVDA near its SPY weight as the one leg that pays if CPI runs cool, and holds 10% cash as a buffer for the print. Left out: Cecil's LMT, which by his own account fell on yields that a hot print would push higher; his staples, which trail Ophelia's healthcare as the defensive (PM fell 4.88% last week rather than holding up as he says); and Marky's five, none of which sits in Ophelia's sectors or trades cheaply by Cecil's measures, with four of the five still showing falling MACD histograms. I have no memory of how this week went and used none.",
+ "files_read": [
+  "debate/logs.md",
+  "debate/sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

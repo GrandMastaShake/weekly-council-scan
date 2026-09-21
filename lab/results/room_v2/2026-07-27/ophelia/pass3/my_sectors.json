@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Energy",
+   "thesis": "Oil is this week's main macro driver, and energy is the only sector that gains from it. U.S.-Iran strikes are in their second week, Hormuz flows are impaired, Bab el-Mandeb is under threat, WTI is +8.3% to $89.31 and Brent touched $100.91; services have joined E&P and refiners (SLB +11%), XOM/CVX report Friday, and a -0.53 correlation to SPY makes XLE the book's hedge against the oil-and-yields shock behind SPY's two straight down weeks. I'm wrong on a ceasefire or Hormuz reopening: with RSI at 86 and Brent already off to $96.78, de-escalation could take out the war premium in a single session, so Brent back below $90 or XLE losing its 50-day ($56.75) is the exit."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "The cleanest defensive on the board. XLV is +8.4% vs SPY on the month and is consolidating 1.9% under its $165.61 high on falling volume, with RSI ~60 and rising moving averages; its SPY correlation deepened to -0.29, and its cash-flow pharma leaders (JNJ +4.1%, MRK/BMY within 1% of highs) win on relative value with a 4.7% 10-year while carrying little oil, FOMC or mega-cap-tech risk. I'm wrong if the 10-year runs toward 4.9-5% and drags the whole sector down with biotech, if this week's pharma earnings disappoint, or if a tech-led relief rally leaves defensives behind; XLV losing $157 breaks the setup."
+  },
+  {
+   "sector": "Industrials",
+   "thesis": "Earnings confirmed the cycle: RTX +10%, LMT +14.5%, HON +8.1%, MMM +8% and a record quarter from UNP. XLI beat SPY by ~2.7% on the week and reclaimed its 20-day with RSI only ~52 and room to its $186.45 high, and defense gets a direct bid as the Iran conflict escalates. Oil at $89 with a 4.70% 10-year is a real headwind for transports and a 31x multiple, so I'm wrong if Monday's core capital goods orders fall below zero, if Tuesday's UPS report drags transports, or if the AI-infrastructure names follow semis lower; a close below the 50-day at $177.61 is the stop."
+  },
+  {
+   "sector": "Financials",
+   "thesis": "Financials is the value sector that gains from the higher 10-year that is hurting growth. It has a record earnings season behind it (GS's best quarter ever, JPM profits +41%), JPM and BAC at or near all-time highs, capital relief from the Basel III re-proposal, and only a 0.18 correlation to SPY, with XLF $0.63 under its $56.94 breakout. I'm wrong if Warsh's hawkish hold bear-flattens the curve or if HYG keeps falling while Treasuries rally, which would be real credit stress; another rejection at $56.94 after the FOMC would confirm it."
+  }
+ ],
+ "changes": "None: keeping all four in the same order. Re-checked the HYG credit flag (treated as rates, not credit; exit tightened to real spread widening), rebased Industrials on earnings and defense rather than the sector file's stale macro, and rejected Consumer Staples as the swap (it lagged SPY in a risk-off week)."
+}

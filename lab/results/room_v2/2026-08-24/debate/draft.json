@@ -1,0 +1,59 @@
+{
+ "week": "2026-08-24",
+ "book": [
+  {
+   "ticker": "REGN",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "The only name two members picked, for different reasons: Ophelia for the FDA-approval part of the healthcare breakout and Cecil as the only cheap way into healthcare at 17.7x."
+  },
+  {
+   "ticker": "LLY",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's most direct way to own money moving into healthcare (about 12% of XLV, at a 52-week closing high, lowest volatility of her three healthcare leaders), and its 95% EPS growth weakens Cecil's objection to its 39.9x multiple."
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's energy call rests on a real supply cut, and XLE's -0.38 correlation to SPY makes it the book's hedge against the jump in the 10Y that both members fear from a hot PCE or a hawkish Warsh."
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest sound business (11.6x, EPS +10.1%) is his own hedge against that same rising-yield risk, because its float earns more as reinvestment yields climb."
+  },
+  {
+   "ticker": "PEP",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's low-volatility defensive (1.88% weekly, 17.2x) is also supported by Ophelia's staples read, so it cushions the book if NVDA disappoints on Wednesday."
+  }
+ ],
+ "cash": 0.0,
+ "alternates": [
+  "VRTX",
+  "JPM"
+ ],
+ "rationale": "REGN is the only name two members picked, so it gets the 30% cap; with LLY, half the book is in healthcare. Both members name the same main risk, a hot PCE or hawkish Warsh pushing the 10Y toward 4.75-5%, and each brings a different hedge, so the book holds both (COP, PGR) plus PEP, and it stays fully invested because the defense is already in the names. Marky's five are all left out: all five have weekly MACD histograms still falling and 12-week returns between -8.3% and +3.2%, which looks like broken channels rather than pullbacks.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

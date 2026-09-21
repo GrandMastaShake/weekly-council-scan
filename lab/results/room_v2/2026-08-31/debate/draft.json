@@ -1,0 +1,59 @@
+{
+ "week": "2026-08-31",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "It is the only name two members picked: Ophelia sees it as the purest play on Financials leading under a hawkish Warsh, Cecil as a fortress bank at 16.4x with EPS up 13.4%, and it sits at 98.6% of its 52-week high with the lowest weekly volatility on the sheet (1.57%)."
+  },
+  {
+   "ticker": "PM",
+   "weight": 0.2,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia and Cecil both want a staple, and PM is the one buyers are backing (+1.9% on the hawkish week, 99.4% of its 52-week high) while Cecil's PEP fell 1.7%, so it is the defensive most likely to hold up whichever way Friday's jobs report breaks."
+  },
+  {
+   "ticker": "V",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "It beats Cecil's PGR for the second financial slot because card volume does not depend on the yield curve, so it offsets JPM's risk from a soft jobs report instead of repeating PGR's rate bet, and it is less volatile (2.7% a week against 4.45%) while sitting at a record close."
+  },
+  {
+   "ticker": "UNH",
+   "weight": 0.15,
+   "backers": [
+    "Marky"
+   ],
+   "why": "Marky's pullback screen lands in the one sector all three members point to, and UNH, a low-volatility insurer (2.41%), rose 0.7% last week while LLY and REGN fell, so it gives the book healthcare that does not depend on Monday's MFN pricing round."
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.1,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest healthcare name (16.9x, net cash, +25% over 12 weeks) fell 4.8% in the same week as LLY's leak-driven drop, so it should share the rebound Ophelia expects if Monday's MFN round clears, without the GLP-1 exposure that made Cecil skip LLY and that Ophelia names as her own failure mode; it is the smallest position because of that Monday risk."
+  }
+ ],
+ "cash": 0.1,
+ "alternates": [
+  "LLY",
+  "PEP"
+ ],
+ "rationale": "JPM is the only name two members reached on their own (Ophelia through sector rotation, Cecil through value), so it takes the 30% cap. The rest of the book stays in Financials, Healthcare and Staples, where the members' views overlap, taking the name with the better one-week setup in each: V over PGR because it hedges JPM's jobs-report risk, PM over PEP because it is the staple buyers are backing, and UNH plus REGN over LLY to keep the healthcare exposure all three want without the GLP-1 terms in Monday's MFN round. Marky's D, SPG and AMD sit in groups Cecil explicitly skipped (utilities, rate-exposed REITs, semis), which the hawkish Warsh repricing hurts; CAT has no support from the other members after an 11% 12-week slide; and META and NUE are single-member picks with 5-7% weekly volatility. Cash is 10% because the week holds two all-or-nothing events, Monday's MFN round and Friday's jobs report ahead of an FOMC that could hike, and the VIX at a 2026 low leaves little cushion; I have no memory of how this week went and used none.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

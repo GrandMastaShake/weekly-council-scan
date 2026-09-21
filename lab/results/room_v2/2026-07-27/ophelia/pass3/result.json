@@ -1,0 +1,44 @@
+{
+ "week": "2026-07-27",
+ "picks": [
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "why": "COP is the cleanest oil pick outside the blackout: a top-3 XLE holding with WTI at $89 that is still about 11% below its $135.87 high and about 15% below its $140.84 mean target, and it doesn't report until Aug 6."
+  },
+  {
+   "ticker": "LNG",
+   "sector": "Energy",
+   "why": "Cheniere is a direct Hormuz winner, because impaired flows through the strait threaten Qatar's LNG exports while Cheniere's own feedgas stays cheap at a flat $2.89 US gas price, and its long-term contracts should soften a ceasefire better than an E&P's would."
+  },
+  {
+   "ticker": "JNJ",
+   "sector": "Healthcare",
+   "why": "JNJ is the defensive leader in my thesis: a +4.1% follow-through week put it 2.2% below its $269.43 high, and as low-beta cash-flow pharma it wins on relative value with the 10-year at 4.7%."
+  },
+  {
+   "ticker": "TMO",
+   "sector": "Healthcare",
+   "why": "Earnings flipped TMO's trend (+6.7% on the week, +21% over 12 weeks), and it is one of XLV's two strongest charts along with JNJ, still 12% below its $643.99 high with a $615 mean target."
+  },
+  {
+   "ticker": "LMT",
+   "sector": "Industrials",
+   "why": "LMT had a blowout quarter ($7.94 EPS vs $7.20 expected, a record $230B backlog, free cash flow back to +$2.9B) and gets a direct interceptor bid from Iran's missile and drone strikes, yet trades at about 18x forward earnings and well below its $692 high."
+  }
+ ],
+ "summary": "The picks lean on my top two calls: energy as the book's hedge against the oil-and-yields shock, through COP and LNG because XOM, CVX, SLB and VLO are in blackout, and cash-flow healthcare (JNJ, TMO) as the defensive core, with LMT carrying the industrials call on earnings plus defense. I left out Financials because its thesis depends on the sector getting through the FOMC and breaking $56.94, and I rejected GLD (-12% over 12 weeks) and BTC (-18%) because neither has drawn a war bid with the 10-year at a 52-week high.",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "energy.md",
+  "healthcare.md",
+  "industrials.md",
+  "financials.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Glob",
+  "Grep"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "week": "2026-08-17",
+ "picks": [
+  {
+   "ticker": "VLO",
+   "sector": "Energy",
+   "why": "Refiners are the cleanest expression of the Hormuz and Sheskharis supply shock: record cracks (3-2-1 near $70, diesel above $90) and a ~$6 Brent-WTI spread flow straight to Valero, whose +38.9% 12-week trend is the strongest on the sheet and whose estimates the sell-side is still chasing."
+  },
+  {
+   "ticker": "COP",
+   "sector": "Energy",
+   "why": "The highest-beta large-cap crude play on escalating supply news (tanker attacks, stalled U.S.-Iran talks, the pressure campaign being readied), up 7.8% on the week with positive 4- and 12-week trends and about 13% headroom to its mean target."
+  },
+  {
+   "ticker": "LMT",
+   "sector": "Industrials",
+   "why": "The defense leg of the industrials call: the Iran escalation plays directly to PAC-3 missile defense, a +19.6% four-week trend backed by the up-to-$53.9B PAC-3 MSE framework and a fresh MDA award, and low beta in case Jackson Hole goes badly."
+  },
+  {
+   "ticker": "NVDA",
+   "sector": "Technology",
+   "why": "The direct play on the tech call's Aug 26 countdown: flat on the week (+0.5%) while memory and AMD ran, 4.8% below its high, and SMCI, TSMC and CoreWeave just re-confirmed AI capex; it also offsets the book if the oil premium drains."
+  },
+  {
+   "ticker": "REGN",
+   "sector": "Healthcare",
+   "why": "The healthcare leg's single-name upside: +18.7% over four weeks and 2.2% below its all-time high going into the ~Aug 19 garetosmab decision, with little exposure to oil or the consumer."
+  }
+ ],
+ "summary": "Energy is the lead call, so it gets two picks split between product cracks (VLO) and crude beta (COP), and LMT adds a defense leg on the same Iran escalation. NVDA and REGN hedge the book against the oil premium draining or a patient Warsh sparking a growth rally; I passed on BTC (-17% over 12 weeks) and GLD (little edge over SPY into Jackson Hole).",
+ "files_read": [
+  "my_sectors.json",
+  "sheet.csv",
+  "energy.md",
+  "tech.md",
+  "semiconductors.md",
+  "industrials.md",
+  "healthcare.md"
+ ],
+ "tools_used": [
+  "Read",
+  "Glob"
+ ]
+}

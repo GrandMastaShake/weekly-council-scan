@@ -1,0 +1,43 @@
+{
+ "week": "2026-09-08",
+ "book": [
+  {
+   "ticker": "JNJ",
+   "weight": 0.25
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.25
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PGR",
+   "weight": 0.15
+  },
+  {
+   "ticker": "NVDA",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "JNJ",
+   "member": "Cecil",
+   "reason": "At 25.3x trailing for only 8.6% earnings growth it is the most expensive earnings for its growth on the sheet, bought at a 52-week high after a 14.83% 12-week run, and the Sep 8-9 drug-pricing items go straight at the pricing power that premium multiple is paying for."
+  },
+  {
+   "ticker": "VLO",
+   "member": "Cecil",
+   "reason": "Its 15.3x trailing multiple rests on earnings up 389.7% on a refining-margin spike, and after a 43.87% 12-week run with the sheet's highest weekly volatility (6.24%) the price already reflects that spike, leaving no margin of safety on the same energy shock I passed on at $91 crude."
+  },
+  {
+   "ticker": "PGR",
+   "member": "Marky",
+   "reason": "It fails my qualifying rule because its 40-week average is not rising, and its weekly MACD histogram is still falling, so the longer trend has stalled and there is no turn up to buy."
+  }
+ ]
+}

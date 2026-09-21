@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-17",
+ "votes": [
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "At 38.6x trailing, NVDA's price is backed by 83.1% EPS growth, the 4.69% gain over 12 weeks shows the price has not run ahead of earnings, and the Aug 26 report falls after the week, so no binary event sits inside the window."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "object",
+   "reason": "At 89.3x trailing, AMD costs more than twice NVDA's 38.6x while growing EPS more slowly (67.0% vs 83.1%) and has the book's highest weekly volatility (7.35%), so it is the expensive way to double the book's semiconductor bet and the name most exposed to a lower multiple if Jackson Hole goes badly."
+  },
+  {
+   "ticker": "LMT",
+   "vote": "approve",
+   "reason": "22.4x trailing is a fair price for a sound defense prime, and although much of the 52.8% EPS growth is likely a rebound from earlier charge-hit quarters rather than a rate it can repeat, nothing in the numbers makes it expensive or fragile this week."
+  },
+  {
+   "ticker": "GS",
+   "vote": "approve",
+   "reason": "GS has the book's cheapest multiple at 16.0x trailing on 43.9% EPS growth, its lowest weekly volatility (2.98%) and only a 4.74% gain over 12 weeks, so it is both cheap and sound."
+  },
+  {
+   "ticker": "COP",
+   "vote": "approve",
+   "reason": "16.3x trailing with EPS still growing (6.7%) is a reasonable price for a sound large producer, its 5.25% 12-week return shows it is not stretched, and the 15% weight already answers my warning about chasing last week's move."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "value.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

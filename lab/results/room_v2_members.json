@@ -1,0 +1,546 @@
+{
+ "summary": {
+  "Ophelia": {
+   "weeks": 9,
+   "mean_alpha": -0.004471947925022892,
+   "mean_vs_random": -0.0027060880028317866,
+   "vs_random_t": -0.4130923139973727,
+   "mean_pctile": 0.45222222222222225
+  },
+  "Cecil": {
+   "weeks": 9,
+   "mean_alpha": 0.001020359611916745,
+   "mean_vs_random": 0.0040929045810366325,
+   "vs_random_t": 0.5585051370350697,
+   "mean_pctile": 0.5677777777777778
+  },
+  "Marky": {
+   "weeks": 9,
+   "mean_alpha": 0.013518797433494295,
+   "mean_vs_random": 0.016099340938913697,
+   "vs_random_t": 1.9105218086660876,
+   "mean_pctile": 0.7544444444444445
+  },
+  "Ophelia_sectors": {
+   "weeks": 9,
+   "mean_edge": -0.0018240560033770546,
+   "t": -0.5932448756560197,
+   "weeks_positive": 3
+  }
+ },
+ "weeks": [
+  {
+   "week": "2026-07-20",
+   "spy": -0.010882686821280796,
+   "Ophelia": {
+    "picks": [
+     "VLO",
+     "CVX",
+     "UNH",
+     "MA",
+     "WELL"
+    ],
+    "ret": 0.00882448000880529,
+    "alpha": 0.01970716683008609,
+    "vs_random": 0.021380675150413704,
+    "pctile": 0.92
+   },
+   "Cecil": {
+    "picks": [
+     "JPM",
+     "PGR",
+     "PEP",
+     "UNH",
+     "SPG"
+    ],
+    "ret": 0.0094258782445108,
+    "alpha": 0.020308565065791595,
+    "vs_random": 0.020170661909541275,
+    "pctile": 0.85
+   },
+   "Marky": {
+    "picks": [
+     "RKLB",
+     "CAT",
+     "MOD",
+     "TSM",
+     "EQIX"
+    ],
+    "ret": 0.003875952068982258,
+    "alpha": 0.014758638890263054,
+    "vs_random": 0.01420467572285671,
+    "pctile": 0.765
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Energy",
+     "Financials",
+     "Healthcare",
+     "Real Estate"
+    ],
+    "edge": 0.013373292259362596
+   },
+   "overlap": {
+    "Ophelia-Cecil": 1,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-07-27",
+   "spy": 0.0028460761470363583,
+   "Ophelia": {
+    "picks": [
+     "COP",
+     "LNG",
+     "JNJ",
+     "TMO",
+     "LMT"
+    ],
+    "ret": 0.004101147345017675,
+    "alpha": 0.001255071197981317,
+    "vs_random": 0.004282016385859536,
+    "pctile": 0.55
+   },
+   "Cecil": {
+    "picks": [
+     "PGR",
+     "LMT",
+     "PEP",
+     "JPM",
+     "NEM"
+    ],
+    "ret": -0.003159316550901159,
+    "alpha": -0.006005392697937517,
+    "vs_random": 0.002422013343652082,
+    "pctile": 0.525
+   },
+   "Marky": {
+    "picks": [
+     "RKLB",
+     "GOOGL",
+     "CAT",
+     "TSM",
+     "INOD"
+    ],
+    "ret": 0.024128951739857473,
+    "alpha": 0.021282875592821115,
+    "vs_random": 0.02773746988281569,
+    "pctile": 0.945
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Energy",
+     "Financials",
+     "Healthcare",
+     "Industrials"
+    ],
+    "edge": -0.0022246699414084446
+   },
+   "overlap": {
+    "Ophelia-Cecil": 1,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-08-03",
+   "spy": 0.03178371702279925,
+   "Ophelia": {
+    "picks": [
+     "JPM",
+     "SCHW",
+     "MA",
+     "KO",
+     "REGN"
+    ],
+    "ret": 0.0001587627065820163,
+    "alpha": -0.03162495431621724,
+    "vs_random": -0.030537108273404848,
+    "pctile": 0.09
+   },
+   "Cecil": {
+    "picks": [
+     "JPM",
+     "PGR",
+     "PEP",
+     "REGN",
+     "LMT"
+    ],
+    "ret": 0.007700816050103332,
+    "alpha": -0.02408290097269592,
+    "vs_random": -0.022532359746436872,
+    "pctile": 0.21
+   },
+   "Marky": {
+    "picks": [
+     "MOD",
+     "RKLB",
+     "EQIX",
+     "UNH",
+     "TSM"
+    ],
+    "ret": 0.0721120595671321,
+    "alpha": 0.040328342544332846,
+    "vs_random": 0.04338769533310853,
+    "pctile": 0.93
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Communication Services",
+     "Consumer Staples",
+     "Financials",
+     "Healthcare"
+    ],
+    "edge": -0.018102924871462842
+   },
+   "overlap": {
+    "Ophelia-Cecil": 2,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-08-10",
+   "spy": 0.0048408903064867115,
+   "Ophelia": {
+    "picks": [
+     "NVDA",
+     "CRWD",
+     "ETN",
+     "FCX",
+     "LLY"
+    ],
+    "ret": -0.007805633755924024,
+    "alpha": -0.012646524062410736,
+    "vs_random": -0.024314266536429777,
+    "pctile": 0.075
+   },
+   "Cecil": {
+    "picks": [
+     "DIS",
+     "GOOGL",
+     "NEM",
+     "PGR",
+     "JPM"
+    ],
+    "ret": 0.0034465800868306085,
+    "alpha": -0.001394310219656103,
+    "vs_random": -0.01379047534595866,
+    "pctile": 0.225
+   },
+   "Marky": {
+    "picks": [
+     "MOD",
+     "AMD",
+     "CAT",
+     "UNH",
+     "DDOG"
+    ],
+    "ret": 0.04676750953719262,
+    "alpha": 0.04192661923070591,
+    "vs_random": 0.03070122564227497,
+    "pctile": 0.955
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Healthcare",
+     "Industrials",
+     "Materials",
+     "Technology"
+    ],
+    "edge": -0.009104767235151249
+   },
+   "overlap": {
+    "Ophelia-Cecil": 0,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-08-17",
+   "spy": -0.013476288590551944,
+   "Ophelia": {
+    "picks": [
+     "VLO",
+     "COP",
+     "LMT",
+     "NVDA",
+     "REGN"
+    ],
+    "ret": 0.0011304220744567718,
+    "alpha": 0.014606710665008715,
+    "vs_random": -0.004251908174205472,
+    "pctile": 0.445
+   },
+   "Cecil": {
+    "picks": [
+     "PGR",
+     "NEM",
+     "PEP",
+     "GS",
+     "DIS"
+    ],
+    "ret": 0.03831297710819137,
+    "alpha": 0.051789265698743314,
+    "vs_random": 0.03342565756389395,
+    "pctile": 0.88
+   },
+   "Marky": {
+    "picks": [
+     "MOD",
+     "UNH",
+     "INOD",
+     "GOOGL",
+     "AMD"
+    ],
+    "ret": -0.03242619301156913,
+    "alpha": -0.018949904421017183,
+    "vs_random": -0.04050199628596231,
+    "pctile": 0.055
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Energy",
+     "Healthcare",
+     "Industrials",
+     "Technology"
+    ],
+    "edge": -0.001287104099389552
+   },
+   "overlap": {
+    "Ophelia-Cecil": 0,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-08-24",
+   "spy": 0.005975555154863921,
+   "Ophelia": {
+    "picks": [
+     "LLY",
+     "VRTX",
+     "REGN",
+     "COP",
+     "NUE"
+    ],
+    "ret": -0.03066758697731762,
+    "alpha": -0.03664314213218154,
+    "vs_random": -0.017855580612934956,
+    "pctile": 0.09
+   },
+   "Cecil": {
+    "picks": [
+     "PGR",
+     "PEP",
+     "REGN",
+     "JPM",
+     "DIS"
+    ],
+    "ret": -0.01464968882419817,
+    "alpha": -0.02062524397906209,
+    "vs_random": -0.0007986661522720404,
+    "pctile": 0.455
+   },
+   "Marky": {
+    "picks": [
+     "UNH",
+     "D",
+     "AMD",
+     "DDOG",
+     "CAT"
+    ],
+    "ret": -0.007127261596997214,
+    "alpha": -0.013102816751861136,
+    "vs_random": 0.0069165724667619175,
+    "pctile": 0.665
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Consumer Staples",
+     "Energy",
+     "Healthcare",
+     "Materials"
+    ],
+    "edge": -0.005570628320438933
+   },
+   "overlap": {
+    "Ophelia-Cecil": 1,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-08-31",
+   "spy": 0.0037272254120594983,
+   "Ophelia": {
+    "picks": [
+     "JPM",
+     "V",
+     "META",
+     "LLY",
+     "PM"
+    ],
+    "ret": -0.00012150594241127078,
+    "alpha": -0.003848731354470769,
+    "vs_random": 0.00023512593272655299,
+    "pctile": 0.525
+   },
+   "Cecil": {
+    "picks": [
+     "JPM",
+     "PGR",
+     "PEP",
+     "REGN",
+     "NUE"
+    ],
+    "ret": 0.018044735065267537,
+    "alpha": 0.014317509653208039,
+    "vs_random": 0.021767998634873872,
+    "pctile": 0.925
+   },
+   "Marky": {
+    "picks": [
+     "D",
+     "SPG",
+     "CAT",
+     "UNH",
+     "AMD"
+    ],
+    "ret": 0.011301438666205343,
+    "alpha": 0.007574213254145845,
+    "vs_random": 0.011354234537829985,
+    "pctile": 0.77
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Communication Services",
+     "Consumer Staples",
+     "Financials",
+     "Healthcare"
+    ],
+    "edge": -0.0038524651327995476
+   },
+   "overlap": {
+    "Ophelia-Cecil": 1,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-09-08",
+   "spy": -0.006215319343814807,
+   "Ophelia": {
+    "picks": [
+     "JNJ",
+     "REGN",
+     "VLO",
+     "CVX",
+     "NVDA"
+    ],
+    "ret": -0.016191424695731694,
+    "alpha": -0.009976105351916887,
+    "vs_random": -0.0018605531749789975,
+    "pctile": 0.45
+   },
+   "Cecil": {
+    "picks": [
+     "LMT",
+     "PGR",
+     "PEP",
+     "PM",
+     "JPM"
+    ],
+    "ret": 0.007620874026594127,
+    "alpha": 0.013836193370408933,
+    "vs_random": 0.023656939263313484,
+    "pctile": 0.945
+   },
+   "Marky": {
+    "picks": [
+     "CAT",
+     "LYV",
+     "SPG",
+     "CSX",
+     "PSA"
+    ],
+    "ret": -0.008628583519705168,
+    "alpha": -0.0024132641758903613,
+    "vs_random": 0.009319681101603259,
+    "pctile": 0.715
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Energy",
+     "Financials",
+     "Healthcare",
+     "Technology"
+    ],
+    "edge": 0.0024291467396484624
+   },
+   "overlap": {
+    "Ophelia-Cecil": 0,
+    "Ophelia-Marky": 0,
+    "Cecil-Marky": 0
+   }
+  },
+  {
+   "week": "2026-09-14",
+   "spy": 0.006036178924970548,
+   "Ophelia": {
+    "picks": [
+     "XOM",
+     "COP",
+     "VLO",
+     "AMD",
+     "LLY"
+    ],
+    "ret": 0.02495915612388557,
+    "alpha": 0.018922977198915024,
+    "vs_random": 0.028566807277468177,
+    "pctile": 0.925
+   },
+   "Cecil": {
+    "picks": [
+     "PGR",
+     "JPM",
+     "XOM",
+     "VICI",
+     "PEP"
+    ],
+    "ret": -0.032924270486579,
+    "alpha": -0.038960449411549546,
+    "vs_random": -0.0274856282412774,
+    "pctile": 0.095
+   },
+   "Marky": {
+    "picks": [
+     "CAT",
+     "AMD",
+     "LYV",
+     "SPG",
+     "LLY"
+    ],
+    "ret": 0.03630065166291911,
+    "alpha": 0.030264472737948564,
+    "vs_random": 0.04177451004893451,
+    "pctile": 0.99
+   },
+   "ophelia_sectors": {
+    "final4": [
+     "Communication Services",
+     "Energy",
+     "Healthcare",
+     "Technology"
+    ],
+    "edge": 0.007923616571246017
+   },
+   "overlap": {
+    "Ophelia-Cecil": 1,
+    "Ophelia-Marky": 2,
+    "Cecil-Marky": 0
+   }
+  }
+ ]
+}

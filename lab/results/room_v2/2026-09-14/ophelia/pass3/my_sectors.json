@@ -1,0 +1,21 @@
+{
+ "final4": [
+  {
+   "sector": "Energy",
+   "thesis": "Energy is the only sector with a confirmed breakout. XLE retested and held its old $65.10 ceiling on the first above-average Friday volume of the move, and five of its top ten holdings closed at 52-week highs. WTI sits at $100 with no exit ramp in sight: OPEC+ does not meet again until Oct 4, the Houthis are at Bab el-Mandeb, and the White House has put peace after the midterms. XLE's -0.43 correlation to SPY makes it the book's hedge if Wednesday's dot plot reads hawkish. I am wrong if a de-escalation headline or a reserve release sends WTI back into the low $90s and XLE loses $63.46, which would be a failed breakout."
+  },
+  {
+   "sector": "Technology",
+   "thesis": "Tech's leadership held. XLK closed above its 50-day ($187.67 vs $182.73) after absorbing a hot PPI and a hot core CPI, and AI demand is still speeding up: Oracle has a $664B backlog and guided $90-95B of capex, and Dell and HPE rose 12%. The hike is about 90% priced, so if the Fed frames it as insurance the sector's 1.47 beta can carry it through $188.74. I am wrong if the dot plot signals more hikes and pushes the 10Y through 5.00%, or if the BOJ hike extends the yen carry unwind into crowded AI names; a close under the 50-day ends the thesis."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "This is the bounce pick. XLV is at an RSI of 21 and Eli Lilly at 2.5, yet the sector is still above a rising 200-day with a +21.8% one-year trend. The damage came from company blowups (AMGN, SYK, COO) plus the discount rate, and both can heal fast if Wednesday's hike reads as one-and-done. It is also the book's offset if the BOJ hike extends the carry unwind into the momentum names. I am wrong if a hawkish signal extends Friday's selling and it loses $164, which opens the 200-day at $154.86."
+  },
+  {
+   "sector": "Communication Services",
+   "thesis": "It is one of only four groups beating SPY over both the past week (+1.27%) and the past month (+2.01%). At about 15.5x it has the cheapest multiple of my candidates, and its 50-day held through Wednesday's cable crash. Wednesday's ad-tech remedies unsealing is upside for GOOGL at 17x if the remedy is narrow, and the dividend bid in T and VZ cushions a hawkish Fed. I am wrong if META (RSI 84) pulls back while cable keeps bleeding, if a weak retail sales print revives ad-budget fears, or if the opinion orders a sale of Google's AdX exchange; a close under $110 ends the thesis."
+  }
+ ],
+ "changes": "None; kept the same four with sharper exit lines. Read Financials as the swap candidate (broke its pivots, credit proxies red, desk neutral) and kept it first in line rather than swapping."
+}

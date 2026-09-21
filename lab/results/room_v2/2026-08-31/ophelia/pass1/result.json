@@ -1,0 +1,31 @@
+{
+ "week": "2026-08-31",
+ "top4": [
+  {
+   "sector": "Financials",
+   "why": "It beat SPY for a third straight week, and the gains came from many carry beneficiaries rather than one name. It also gains most directly from Warsh's front-end repricing (September hike odds ~55–58%), because higher short rates lift bank, broker and insurer carry while rate-sensitive sectors fall."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "It is low-beta and not very rate-sensitive, which suits a week with hawkish-Fed data risk. The XLV breakout retest held on the thinnest volume of the advance, MRK and AMGN made 52-week highs, and I think Monday's MFN Medicaid announcement is more likely to clear the overhang than to be a new shock (Medicaid is already heavily rebated), so I'll accept that risk."
+  },
+  {
+   "sector": "Consumer Staples",
+   "why": "The 'real staples' rotation absorbed a -9.8% WMT drop and still finished nearly flat, which shows real buying underneath. With VVIX rising, only 3 of 12 sectors up and WTI down 4% easing input costs, it is the defensive holding for a week priced for a live hike."
+  },
+  {
+   "sector": "Communication Services",
+   "why": "It led the week (+1.43%) with a balanced mix: megacap platforms trading with the AI names again after NVDA, plus telecoms holding it steady. It can gain if the market steadies without XLK's exposure to semis, rate-driven valuation cuts, NVDA's fade and the AVGO print."
+  }
+ ],
+ "next_two": [
+  "Technology",
+  "Energy"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

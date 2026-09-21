@@ -1,0 +1,59 @@
+{
+ "week": "2026-07-20",
+ "book": [
+  {
+   "ticker": "UNH",
+   "weight": 0.3,
+   "backers": [
+    "Ophelia",
+    "Cecil"
+   ],
+   "why": "It is the only name two members picked on their own, Ophelia for rising estimates in a defensive sector and Cecil for a twice-raised guide on recovering earnings at 22.9x, and the sheet shows it has already reported, sits at 99.6% of its 52-week high (not 8% below, as Ophelia wrote) and moves only 2.74% a week."
+  },
+  {
+   "ticker": "JPM",
+   "weight": 0.25,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheap, steady bank (15.7x, EPS +13.4%, the lowest weekly volatility on the sheet at 2.12%) is in the Financials sector Ophelia also rotated into, and after reporting it closed at a 52-week high, which passes her own test that the reaction to bank earnings must not turn into selling."
+  },
+  {
+   "ticker": "MA",
+   "weight": 0.15,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's momentum leader in Financials (+11.2% over four weeks, 2.64% weekly volatility, reports Jul 30) fits beside JPM because it is less exposed if oil-driven hike pricing flattens the curve."
+  },
+  {
+   "ticker": "SPG",
+   "weight": 0.15,
+   "backers": [
+    "Cecil"
+   ],
+   "why": "Cecil's cheapest REIT on FFO is also at a 52-week high (+14.9% over twelve weeks, 3.18% weekly volatility, reports Aug 10) and is one of the names Ophelia cites as proof of her Real Estate call, so it is the book's position that gains if yields fall."
+  },
+  {
+   "ticker": "VLO",
+   "weight": 0.1,
+   "backers": [
+    "Ophelia"
+   ],
+   "why": "Ophelia's strongest sector gets one name at the smallest weight because Cecil deliberately skipped the war premium: VLO is at a 52-week high with EPS up 159.9% at 22.1x, and it gains on the rising oil and yields that would hurt SPG and the wider market."
+  }
+ ],
+ "cash": 0.05,
+ "alternates": [
+  "WELL",
+  "CVX"
+ ],
+ "rationale": "UNH is the only name two members share and takes the 30% cap; the rest comes from the two sectors where Ophelia and Cecil agree without naming the same stock, Financials and Real Estate, so every name is steady and either has already reported or reports after Friday. Energy is the one open dispute: one name instead of Ophelia's two, at the smallest weight. Marky's five are all left out: all five of his weekly MACD histograms are still falling, RKLB and MOD have collapsed rather than pulled back, and Ophelia names EQIX as the drag inside her Real Estate call.",
+ "files_read": [
+  "logs.md",
+  "sheet.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "week": "2026-07-20",
+ "votes": [
+  {
+   "ticker": "UNH",
+   "vote": "approve",
+   "reason": "UNH is one of the three beat-and-raise names my Healthcare call rests on, it has already reported, and it is up 6.3% over four weeks and 20.7% over twelve, so it is the clearest expression of a defensive sector with rising estimates, and the draft's correction of my 52-week-high figure does not change that."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM is the bellwether of my Financials call and has already reported, and its +1.4% week and +5.4% over four weeks show the market did not sell off on bank earnings, which is what would break the thesis, while its exposure to a flatter curve if oil tops $90 is a risk to watch rather than a reason to object with WTI at $82.49."
+  },
+  {
+   "ticker": "MA",
+   "vote": "approve",
+   "reason": "MA is the momentum leader inside my Financials call (+3.2% on the week, +11.2% over four), it reports Jul 30 after the window, and as a payments network rather than a lender it is the Financials name least exposed to the oil-driven curve flattening I named as the call's main risk."
+  },
+  {
+   "ticker": "SPG",
+   "vote": "approve",
+   "reason": "SPG is one of the names my Real Estate thesis cites at a 52-week high (+4.5% on the week, +14.9% over twelve), it is a retail REIT rather than the EQIX and DLR data-center names I flagged as the semis drag, and it reports Aug 10, so it gives the book the call's rates counterweight to Energy without that drag."
+  },
+  {
+   "ticker": "VLO",
+   "vote": "approve",
+   "reason": "VLO fits my Energy call because refining rose with every other sub-sector on Friday's 12% WTI jump and VLO leads it (+10.3% on the week, +31.0% over four) as the escalation hedge, though the Council should confirm its Q2 date, since Valero usually reports on the fourth Thursday of July, which would be Jul 23, inside this window."
+  }
+ ],
+ "files_read": [
+  "draft.md",
+  "my_sectors.json",
+  "facts.csv"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

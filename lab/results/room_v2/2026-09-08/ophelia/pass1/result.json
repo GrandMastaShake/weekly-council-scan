@@ -1,0 +1,31 @@
+{
+ "week": "2026-09-08",
+ "top4": [
+  {
+   "sector": "Financials",
+   "why": "Financials is the only leading sector whose gains are spread across many names: it beat SPY three weeks running with no single stock carrying it. It also gains most directly from the brief's hawkish front-end regime, because live September hike odds improve carry and rate-volatility income; the main risk is that the Sep 4 jobs report, which this brief predates, turns a labor crack into a credit scare."
+  },
+  {
+   "sector": "Healthcare",
+   "why": "Healthcare has the best defensive setup in the brief: the breakout retest held, MRK and AMGN made fresh 52-week highs, and large pharma is not very sensitive to interest rates going into a pre-FOMC week with a live hike. The Aug 31 MFN drug-pricing announcement came after this brief's Aug 28 data, so I don't know how it landed, but by the Tuesday open it will already be priced in."
+  },
+  {
+   "sector": "Communication Services",
+   "why": "It was the top sector of the week and held up through Warsh's hawkish Friday, helped by META's legal peace and investors sheltering in telecom, so it is a less rate-sensitive way to own growth than semis, which are being sold into strength. It is still below its 200-day average, so I treat it as a recovery trade rather than an established trend."
+  },
+  {
+   "sector": "Consumer Staples",
+   "why": "The week was a rejection at resistance, not a breakdown, and tobacco rallied on Warsh's hawkish Friday, which shows buyers still want defensives even as rates rise. With the VIX complacent, VVIX rising, a live FOMC the following week and weak September seasonality, the rotation needs one low-beta hedge."
+  }
+ ],
+ "next_two": [
+  "Technology",
+  "Materials"
+ ],
+ "files_read": [
+  "brief.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "week": "2026-08-10",
+ "votes": [
+  {
+   "ticker": "NVDA",
+   "vote": "approve",
+   "reason": "NVDA qualifies: its 26-week channel rises 47% a year, it is only 0.6 widths above the line so it is not stretched, and its weekly MACD histogram is rising with the MACD line above zero."
+  },
+  {
+   "ticker": "GOOGL",
+   "vote": "approve",
+   "reason": "GOOGL is exactly my setup, a pullback to 0.6 widths below the line of a channel rising 50% a year, with the weekly MACD histogram turning up and the MACD line above zero."
+  },
+  {
+   "ticker": "ETN",
+   "vote": "approve",
+   "reason": "At 1.3 widths above the line ETN is not a pullback, but its channel rises 34% a year, it is nowhere near the 2.5-width break and its weekly MACD histogram is rising, so my lens gives no concrete reason against it."
+  },
+  {
+   "ticker": "FCX",
+   "vote": "approve",
+   "reason": "FCX qualifies but has the flattest channel in the book (12% a year) and sits 1.1 widths above the line rather than on a pullback, yet the channel is intact and its weekly MACD histogram is rising above zero, so there is no chart reason to object."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "object",
+   "reason": "LLY sits right on the line of a steep channel rising 71% a year, but its weekly MACD histogram is still falling, so the turn-up my entry needs has not come and the pullback could go deeper this week, which is the same test the draft used to drop all five of my names."
+  }
+ ],
+ "files_read": [
+  "approve/marky/draft.md",
+  "approve/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

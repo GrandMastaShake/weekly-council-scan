@@ -1,0 +1,34 @@
+{
+ "week": "2026-08-03",
+ "final4": [
+  {
+   "sector": "Financials",
+   "thesis": "XLF is 1% below its 52-week high ($57.60) after a +6.5% month, and the canary marks it as the only cyclical with inflows (+3.77% vs SPY over the month). The curve is +45 bp and steepening, the Fed is stuck on hold with three members wanting a hike, and the Basel III re-proposal lowers bank capital requirements, which together is the best backdrop for bank margins in two years. I'm wrong if Friday's NFP comes in under 50K and becomes a recession and credit scare, or if XLF is turned back at $57.60 again."
+  },
+  {
+   "sector": "Healthcare",
+   "thesis": "XLV is consolidating on light volume 1.9% below its 52-week high after a +9% run, earnings are strong across more names (BMY beat and raised guidance, REGN +16%), and its correlation to SPY of about 0.05 cushions the book if Friday's jobs number surprises. The swing factor is LLY's Aug 6 report (about 12% of the ETF). I'm wrong if LLY disappoints in a market that is punishing anything short of perfect, or if a relief rally leaves this low-beta sector behind; a break below $157 ends the setup."
+  },
+  {
+   "sector": "Consumer Staples",
+   "thesis": "XLP was the only defensive sector with inflows last week: it kept pace with SPY while XLU lost 5.3% and XLRE 3.0% against it. The dollar index below 100 and oil down 5% help the big multinationals on currency and input costs. It is the book's hedge for Friday: the calendar's jobs flag has already tripped and a weak print sets off the defensive rotation the calendar calls for. I'm wrong if the relief rally pulls money out of defensives, or if hot ISM or wage data pushes the 10-year toward 4.85%; a close below $83.50 is the exit."
+  },
+  {
+   "sector": "Communication Services",
+   "thesis": "XLC replaces Energy. The canary names XLF and XLC as the new leadership: XLC beat SPY by 0.73% last week and 0.84% on Friday, even though META dropped 8-10% after hours on its free-cash-flow collapse. It is the sector that moves most closely with SPY (0.72 correlation), so it catches the relief from VIX near 16, the dollar below 100 and falling oil without a bet on oil's direction. I'm wrong if META keeps sliding, or if a weak NFP turns the market risk-off; it is also still 1.5% behind SPY on the month, so the leadership isn't proven."
+  }
+ ],
+ "changes": "One swap: Energy out, Communication Services in. The oil war premium is unwinding (WTI -5.2%, Brent about -8% as US-Iran talks replaced strikes, OPEC+ adding barrels), XLE lagged SPY by 1.2% and its correlation to SPY moved from -0.53 to about 0, so it no longer hedges the book. Technology stays out (13 sessions below its 50-day, AAPL guidance miss, AMD reports Aug 4); Real Estate would be a third rate-sensitive defensive; Consumer Discretionary was the runner-up but stretched.",
+ "files_read": [
+  "canary-watch.md",
+  "economic-calendar.md",
+  "sectors/financials.md",
+  "sectors/healthcare.md",
+  "sectors/consumer-staples.md",
+  "sectors/energy.md",
+  "sectors/technology.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

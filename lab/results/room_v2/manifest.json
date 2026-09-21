@@ -1,0 +1,65 @@
+[
+ {
+  "label": "2026-07-20",
+  "monday": "2026-07-20",
+  "commit": "548b6954775baca094f47d1e1275c96559d7c842",
+  "names": 111,
+  "brief_from": "synthesis"
+ },
+ {
+  "label": "2026-07-27",
+  "monday": "2026-07-27",
+  "commit": "411ca5bae9d4dcafa15be8289d19cc01ad87afa8",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-08-03",
+  "monday": "2026-08-03",
+  "commit": "d208ae97845c310e1df7cb7444651394707a1992",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-08-10",
+  "monday": "2026-08-10",
+  "commit": "40f4fd123fd8a16aa07d53a85eebbb6ca9f3d2d6",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-08-17",
+  "monday": "2026-08-17",
+  "commit": "87493a658ad1fef55485ca1cf52ff5a860e46a79",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-08-24",
+  "monday": "2026-08-24",
+  "commit": "88542639eb123931ad5437d5816094271b53b441",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-08-31",
+  "monday": "2026-08-31",
+  "commit": "1e6f3dc164b9d449619d527322cb5a74192b6c73",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-09-08",
+  "monday": "2026-09-07",
+  "commit": "35dd8b3404003cd408735ece63a36ffcd047989f",
+  "names": 111,
+  "brief_from": "README"
+ },
+ {
+  "label": "2026-09-14",
+  "monday": "2026-09-14",
+  "commit": "91e58cdbfea8d7d1e1cec16dd11509dcdb226bf2",
+  "names": 111,
+  "brief_from": "README"
+ }
+]

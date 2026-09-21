@@ -1,0 +1,48 @@
+{
+ "week": "2026-08-03",
+ "book": [
+  {
+   "ticker": "JPM",
+   "weight": 0.3
+  },
+  {
+   "ticker": "REGN",
+   "weight": 0.25
+  },
+  {
+   "ticker": "KO",
+   "weight": 0.2
+  },
+  {
+   "ticker": "SCHW",
+   "weight": 0.15
+  },
+  {
+   "ticker": "PEP",
+   "weight": 0.1
+  }
+ ],
+ "swaps": [
+  {
+   "out": "UNH",
+   "in": "PEP",
+   "objections": [
+    [
+     "Cecil",
+     "At 22.2x trailing, the second-highest multiple on the sheet, with EPS down 26.1%, this is paying up for shrinking earnings: the price relies on a recovery the numbers do not yet show and leaves no margin of safety."
+    ],
+    [
+     "Marky",
+     "UNH qualifies and sits 1.3 widths below a steeply rising channel line, well short of a break, but the weekly MACD histogram is still falling, so the turn-up my rule needs before buying a pullback has not come this week."
+    ]
+   ]
+  }
+ ],
+ "dissents": [
+  {
+   "ticker": "REGN",
+   "member": "Marky",
+   "reason": "REGN does not qualify because its 26-week channel falls 36% a year, and last week's jump to 3.1 widths above that falling line, with the MACD line still below zero, is a bounce against the trend rather than a pullback in a rising channel."
+  }
+ ]
+}

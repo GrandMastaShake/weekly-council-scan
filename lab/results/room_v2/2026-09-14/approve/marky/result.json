@@ -1,0 +1,37 @@
+{
+ "week": "2026-09-14",
+ "votes": [
+  {
+   "ticker": "XOM",
+   "vote": "approve",
+   "reason": "XOM qualifies, and its weekly MACD histogram is rising with the MACD line above zero; at 1.3 widths above a channel that rises only 2% a year it is not the pullback entry I would choose, but nothing on its chart argues against it."
+  },
+  {
+   "ticker": "LLY",
+   "vote": "approve",
+   "reason": "LLY qualifies as the deep pullback my screen backed, 2.1 widths below a channel rising 96% a year and still short of the 2.5-width break, though its weekly histogram has not turned up yet, which fits the smaller weight the draft already gives it."
+  },
+  {
+   "ticker": "AMD",
+   "vote": "approve",
+   "reason": "AMD is exactly my setup: a shallow 0.9-width pullback in a channel rising 445% a year, with the weekly MACD histogram turning up and the line above zero."
+  },
+  {
+   "ticker": "JPM",
+   "vote": "approve",
+   "reason": "JPM qualifies with an ordinary 1.0-width pullback in a channel rising 65% a year and the MACD line above zero; its histogram has not turned up yet, but the channel is intact and well away from the 2.5-width break."
+  },
+  {
+   "ticker": "PGR",
+   "vote": "object",
+   "reason": "PGR does not qualify because its 40-week average is not rising, so its 0.4-width dip is not a pullback in a confirmed uptrend, and its weekly MACD histogram is still falling."
+  }
+ ],
+ "files_read": [
+  "approve/marky/draft.md",
+  "approve/marky/chart.md"
+ ],
+ "tools_used": [
+  "Read"
+ ]
+}

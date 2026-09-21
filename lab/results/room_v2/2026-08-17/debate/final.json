@@ -1,0 +1,48 @@
+{
+ "week": "2026-08-17",
+ "book": [
+  {
+   "ticker": "NVDA",
+   "weight": 0.2
+  },
+  {
+   "ticker": "AMD",
+   "weight": 0.2
+  },
+  {
+   "ticker": "LMT",
+   "weight": 0.2
+  },
+  {
+   "ticker": "GS",
+   "weight": 0.2
+  },
+  {
+   "ticker": "COP",
+   "weight": 0.15
+  }
+ ],
+ "swaps": [],
+ "dissents": [
+  {
+   "ticker": "AMD",
+   "member": "Cecil",
+   "reason": "At 89.3x trailing, AMD costs more than twice NVDA's 38.6x while growing EPS more slowly (67.0% vs 83.1%) and has the book's highest weekly volatility (7.35%), so it is the expensive way to double the book's semiconductor bet and the name most exposed to a lower multiple if Jackson Hole goes badly."
+  },
+  {
+   "ticker": "LMT",
+   "member": "Marky",
+   "reason": "It fails my screen because its 26-week channel slopes down 30% a year, and sitting 1.9 widths above that falling line makes it a stretched rally in a downtrend, the opposite of a pullback in a rising channel, even with MACD rising."
+  },
+  {
+   "ticker": "GS",
+   "member": "Ophelia",
+   "reason": "GS is a 20% bet on a financials breakout, and I swapped financials out this week because the corrected 2Y leaves the curve flatter (10Y-2Y near +52 bps, not +66) and XLI has the stronger trend and held up better on Friday's consumer-shock day, while GS's own -2.42% over four weeks shows it lagging, not breaking out."
+  },
+  {
+   "ticker": "COP",
+   "member": "Marky",
+   "reason": "It fails my screen because its 26-week channel slopes down 10% a year, and at 1.6 widths above the line it is an extended bounce in a downtrend, not a pullback in a rising channel."
+  }
+ ]
+}
