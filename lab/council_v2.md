@@ -41,10 +41,16 @@ more if that average is rising. He looks at nothing about sectors, valuation or
 how calm the tape is. `marky.MARKY_MODE = "52w"`; production must fetch a year
 of prices before it flips.
 
-**Cecil -- value.** His scoring is unchanged: valuation, quality and
-balance-sheet safety. He moves to the 111's stocks. He skips BTC and GLD
-because an ETF has no fundamentals to value. The 46 names that are new to him
-need P/E and fundamentals fetched.
+**Cecil -- value, read against the synthesis.** His scoring is unchanged:
+valuation, quality and balance-sheet safety, computed for the 111's stocks. He
+chooses his 5 by reading `wiki/synthesis.md` alongside that value table. The
+synthesis says where the week's risks and openings are; his numbers say what is
+cheap and sound. He skips BTC and GLD because an ETF has no fundamentals to
+value. The 46 names that are new to him need P/E and fundamentals fetched.
+
+The inputs do not overlap. Ophelia starts from the README brief and the sector
+wikis, Cecil from the full synthesis and his value table, and Marky from the
+chart alone.
 
 Each member proposes 5. The earnings blackout applies to all three.
 
@@ -60,7 +66,7 @@ the earnings blackout, and cash allowed.
 | Piece | Where it is tested | Status |
 |---|---|---|
 | Marky v2 | Engine Lab, Pass 4: 96 pre-Council weeks on the frozen universe, plus the Council's weeks on the 111 | registered |
-| Cecil on the 111 | No lab test is possible (no point-in-time P/E) and his scoring does not change, so he switches when the universe switches | -- |
+| Cecil v2 | Council Room: one pass for each Council week, `synthesis.md` plus his value table. Fundamentals have no point-in-time history, so the table is rebuilt from what can be dated: P/E from the reported EPS of the four quarters before that Monday, and safety from prices. Quality stays out rather than being filled with today's numbers | to build |
 | Ophelia v2 | Council Room: three passes for each Council week, fresh agents confined to that Monday's snapshot | to build |
 | The union book | Council Room, once all three members exist | to build |
 
