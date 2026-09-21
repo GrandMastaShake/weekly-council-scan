@@ -457,3 +457,40 @@ longer uptrend, which is the shape of the one pattern the diagnostics kept
 finding -- recent winners falling back (Pass 2, 8 of 9 weeks) -- while
 refusing names whose trend has broken. Pass 3 found that reversal weak over 96
 weeks (IC -0.013), so a large effect is not expected.
+
+## Pass 5 results -- Marky v3, the pullback
+
+Run after the registration commit (8c1241c); `results/pass5_marky.json`. Marky's
+own top five each week, equal-weighted.
+
+| | Weeks | classic | 52w | channel | channel minus classic |
+|---|---|---|---|---|---|
+| History, frozen universe: alpha / wk | 96 | -0.37% | +0.13% | +0.27% (t +1.07) | +0.64%/wk (t +1.69), 55/96, both halves positive |
+| History: vs random (pctile) | | -0.42% (42%) | +0.07% (51%) | +0.21% (t +0.79; 53%) | |
+| History: worst drawdown | | -13.7% | -19.8% | **-28.0%** | |
+| Council weeks, the 111: alpha / wk | 9 | -0.82% | -1.96% | +1.35% (t +1.83) | +2.18%/wk (t +1.77), 8/9 |
+| Council weeks: vs random (pctile) | | -0.57% (38%) | -1.70% (23%) | **+1.61% (t +2.10; 75%)** | |
+
+**Under the registered rule, the channel mode is Council v2's Marky.** Neither
+harm condition is met, and it leads classic in both samples. It is also the
+first design in any pass to beat random picks on the Council's own weeks.
+
+**Read it with four caveats.**
+
+- *The idea partly came from these weeks.* The pullback job buys the pattern the
+  Pass 2 diagnostics found in these same nine weeks: recent winners falling back.
+  Its Council-week result is flattered accordingly.
+- *Over 96 weeks its edge over random is small and not significant*
+  (+0.21%/wk, t +0.79), and no input predicts the next week (every IC within
+  +/-0.01).
+- *It is the most volatile of the three.* Its worst history drawdown is -28%,
+  against classic's -14%: pullbacks in steep uptrends are often in volatile
+  names.
+- *The MACD leg has not earned its 30 points.* On the Council weeks its score
+  ran against the next week's return (IC -0.119, t -2.37); the depth of the
+  pullback did the work. It stays as specified -- re-weighting it on these weeks
+  would be tuning to them -- and the forward record will show whether it helps.
+
+It is genuinely a different job. Its ranking has no preference for a calm tape
+(+0.05, against classic's -0.17), and it leans away from short-term strength
+(-0.31, against classic's +0.81).

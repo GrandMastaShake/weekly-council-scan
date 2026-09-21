@@ -253,8 +253,9 @@ def pass3(out_dir):
 
 def score(out_dir):
     weeks, names, raw, adj = _data()
-    p4 = json.loads((lab.RESULTS / "pass4_marky.json").read_text(encoding="utf-8"))
-    marky = {r["week"]: r["52w"]["picks"] for r in p4["weeks"]["council"]}
+    # Marky's five: the channel mode (Pass 5) is Council v2's Marky.
+    p5 = json.loads((lab.RESULTS / "pass5_marky.json").read_text(encoding="utf-8"))
+    marky = {r["week"]: r["channel"]["picks"] for r in p5["weeks"]["council"]}
     cal = lab.earnings_calendar(names)
     from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
     rows = []
