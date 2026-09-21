@@ -5,10 +5,13 @@ before anything changes in production.
 
 ## Rules
 
-1. **Only weeks the Council ran.** A week is in scope if it has a Monday/Tuesday
-   report and has closed. Every week therefore has a real Council book to compare
-   against (an abort week counts, scored as the cash the Council actually held).
-   The set grows by one each Monday.
+1. **Only weeks the Council ran -- except engine-only tests.** A week is in scope
+   if it has a Monday/Tuesday report and has closed. Every week therefore has a
+   real Council book to compare against (an abort week counts, scored as the
+   cash the Council actually held). The set grows by one each Monday. The
+   numeric engines read only prices, so a test of the engines alone may also use
+   the weeks before the Council existed (approved 2026-09-21; Pass 3), with one
+   caveat: today's universe holds names that are in it because they later ran.
 2. **Point-in-time.** For the week opening Monday W, nothing dated W or later may
    reach a variant. Anything production reads "as of today" is replaced with what
    was knowable then. See the docstring in `engine_lab.py` for the full table.
