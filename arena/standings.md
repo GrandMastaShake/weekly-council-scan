@@ -7,13 +7,14 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
 | Umassalum | 4 | +0.71% | +0.04% | 4-0 | +2.52% (2026-08-03) |
-| GrandMastaShake | 5 | +0.29% | +0.21% | 3-2 | +2.17% (2026-08-17) |
-| 🏛️ The Council | 6 | -0.96% | -1.53% | -- | -- |
+| GrandMastaShake | 6 | +0.22% | +0.05% | 3-3 | +2.17% (2026-08-17) |
+| 🏛️ The Council | 7 | -0.79% | -1.23% | -- | +0.23% (2026-09-14) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-09-14 | GrandMastaShake | -0.16% | -0.76% | +0.23% | 🏆 The Council |
 | 2026-08-31 | Umassalum | +0.82% | +0.45% | -0.04% | 🏆 Umassalum |
 | 2026-08-31 | GrandMastaShake | -1.94% | -2.31% | -0.04% | 🏆 The Council |
 | 2026-08-24 | GrandMastaShake | -1.22% | -1.82% | +0.05% | 🏆 The Council |
@@ -36,12 +37,12 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 **Basis note (2026-07-27):** player alpha uses the Arena SPY basis (Mon open 744.91 -> Fri close 747.03, +0.28%). The Council's return/alpha come from the Tracker's own basis (SPY +0.71% that week). Both books are Monday-entry -> Friday-close.
 
-**Open week (2026-09-14):** **GrandMastaShake is locked in** — XOM 20% / MO 20% / TSM 15% / CBOE 15% / DDOG 10%, 20% cash (comment posted 07:25 ET, before the 08:50 lock). See `arena/2026-09-14.yaml`; scored at Friday 2026-09-18's close.
+**Basis note (2026-09-14, closed 2026-09-21):** player alpha uses the Arena SPY basis (Mon open $757.12 -> Fri close $761.69, +0.60%, dividend-adjusted -- SPY went ex-div 9/18). GrandMastaShake -0.16% (XOM -3.06%, CBOE -4.27% did the damage; TSM +4.77% and DDOG +2.18% carried), alpha -0.76%. The Council's +0.23% / alpha +0.57% is on the Tracker's own basis (Fri 2026-09-11 close -> Fri 2026-09-18 close, SPY -0.34%), so the head-to-head carries the basis caveat below; on a same-window Mon-close basis the Council book was -0.14% (shadow-book.md), which still beats -0.16% by 2bp. **Second Council week win.** The close run re-fetched the settled Monday bars: every open passed low <= open <= high, so the closed yaml uses validated Monday opens in place of the ~09:42 ET live prices recorded at lock (locked-basis result -0.90% vs SPY +0.35%; both are recorded in arena/2026-09-14.yaml).
 
 **Umassalum did NOT enter this week, and the reason is a process failure worth recording.** Her entry on the still-open Arena issue #83 (NVDA 30 / MSOS 30 / TMO 20 / GE 20) was posted 2026-09-07 at 07:50 ET — a valid, before-the-lock entry for the **week of 2026-09-07**. That week was Labor Day, no `arena/2026-09-07.yaml` was ever opened, and her picks were never scored or acknowledged. The 2026-09-08 session logged that "neither real player had submitted picks," which was **incorrect** — she had. Her entry was not carried forward into 2026-09-14, because booking a week-old submission as if it were this week's would fabricate an entry in her name (the standing rule on this line). She has been asked directly, in the issue thread, to re-enter on the week of 2026-09-21 issue.
 
 **Entry-basis note (2026-09-14):** the provider's Monday daily bar carried a stale Open field (a verbatim copy of Friday 2026-09-11's open) that fell outside the same day's high/low range for 5 of 7 tickers. Those opens were rejected as impossible rows; four of the five entries are recorded at the live Monday price read ~09:42 ET (`live_intraday_open_unavailable`), DDOG at a validated `open`. Exit basis is unchanged (Friday close). The Council's book is on the Tracker's own basis (Friday 2026-09-11 closes) for the same reason — so this week's Council-vs-player comparison carries a wider basis gap than usual and should be read with that caveat.
 
-**The Council IS in this week:** ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% + 40.2% cash (see `reports/2026-09-14-report.md`). No prior Arena week was scored this session: `arena/2026-08-31.yaml` was already closed by the 2026-09-08 run, and no yaml was ever opened for 2026-09-07 or 2026-09-08.
+**The Council was in that week:** ALL 18.3% / PSX 16.7% / HIG 14.8% / DE 10.0% + 40.2% cash (see `reports/2026-09-14-report.md`). No prior Arena week was scored this session: `arena/2026-08-31.yaml` was already closed by the 2026-09-08 run, and no yaml was ever opened for 2026-09-07 or 2026-09-08.
 
 *May the best thesis win.* 🏛️
