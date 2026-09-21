@@ -2,52 +2,59 @@ week: '2026-09-14'
 lock: 2026-09-14 08:50 ET
 entry_date: '2026-09-14'
 exit_date: '2026-09-18'
-status: open
-entry_basis_note: 'Monday open unavailable at lock time: the provider''s 2026-09-14
-  daily bar carried a stale Open field (a verbatim copy of Friday 2026-09-11''s open)
-  that fell outside the same day''s high/low range for 5 of 7 tickers checked. Entries
-  marked ''live_intraday_open_unavailable'' use the live Monday price read at ~09:42
-  ET instead of an impossible open. Entry SET was pinned at 08:37 ET, before the 08:50
-  lock.'
+status: closed
+entry_basis_note: 'Closed 2026-09-21 by the Monday Council run via scripts/arena_ingest.py
+  --close. ENTRY BASIS: at lock time (2026-09-14) the provider''s Monday bar carried
+  a stale Open field (issue #105), so the open yaml recorded live ~09:42 ET prices
+  tagged live_intraday_open_unavailable. By close-out the settled 2026-09-14 bars
+  were re-fetched and every Open passed the low <= open <= high check, so this closed
+  file uses the canonical Arena basis: date-pinned Monday OPEN -> Friday close on
+  dividend-adjusted bars (total return; MO ex-div 9/15, TSM 9/16, SPY 9/18). Locked
+  live prices for the record: XOM 168.88, MO 71.03, TSM 418.75, CBOE 284.93, DDOG
+  224.955, SPY 759.015. On that locked basis the entry returns -0.90% vs SPY 0.35%
+  (alpha -1.25%, price-only). Entry SET unchanged: pinned 08:37 ET 2026-09-14, before
+  the 08:50 lock.'
 benchmark:
   ticker: SPY
-  entry_price: 759.015
-  entry_price_source: live_intraday_open_unavailable
-  exit_price: null
-  return_pct: null
+  entry_price: 757.1199
+  entry_price_source: open
+  exit_price: 761.69
+  return_pct: 0.6
 players:
 - player: GrandMastaShake
+  valid: true
+  total_weight: 0.8
+  cash_weight: 0.2
   picks:
   - ticker: XOM
     weight: 0.2
-    entry_price: 168.88
-    entry_price_source: live_intraday_open_unavailable
-    exit_price: null
-    return_pct: null
+    entry_price: 168.7
+    entry_price_source: open
+    exit_price: 163.54
+    return_pct: -3.06
   - ticker: MO
     weight: 0.2
-    entry_price: 71.03
-    entry_price_source: live_intraday_open_unavailable
-    exit_price: null
-    return_pct: null
+    entry_price: 68.9685
+    entry_price_source: open
+    exit_price: 69.52
+    return_pct: 0.8
   - ticker: TSM
     weight: 0.15
-    entry_price: 418.75
-    entry_price_source: live_intraday_open_unavailable
-    exit_price: null
-    return_pct: null
+    entry_price: 414.897
+    entry_price_source: open
+    exit_price: 434.67
+    return_pct: 4.77
   - ticker: CBOE
     weight: 0.15
-    entry_price: 284.93
-    entry_price_source: live_intraday_open_unavailable
-    exit_price: null
-    return_pct: null
+    entry_price: 285.04
+    entry_price_source: open
+    exit_price: 272.86
+    return_pct: -4.27
   - ticker: DDOG
     weight: 0.1
-    entry_price: 224.955
+    entry_price: 225.02
     entry_price_source: open
-    exit_price: null
-    return_pct: null
-  total_weight: 0.8
-  cash_weight: 0.2
-  valid: true
+    exit_price: 229.92
+    return_pct: 2.18
+  weekly_return_pct: -0.16
+  alpha_vs_spy_pct: -0.76
