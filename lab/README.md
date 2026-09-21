@@ -726,3 +726,34 @@ bound to help here. What survives that caveat is narrower. v2.1 is no worse,
 it seats every job every week, and its book is still indistinguishable from
 random picks, as every design in this lab has been. The forward record
 decides whether it earns more.
+
+## Spot check -- do the picks keep working after their week? (registered before computing)
+
+The owner's questions: how did a week's picks do a month later, and the
+following week? They test an idea from the lab's list: the members' jobs are
+slow signals (value over months, sector rotation over weeks to months, a
+pullback over several weeks), so judging and replacing them every week may
+measure mostly noise.
+
+`hold_check.py` scores every set of Council Room picks -- each member's five,
+all fifteen together, the v2.1 book and the real Council's book -- over three
+windows: the week it was picked for (Monday open to Friday close), the
+following week (still holding: Friday close to the next Friday close), and the
+month (Monday open to the fourth Friday's close). Each is measured against SPY
+and against random books of the same size and weights from the 111, as in the
+Room. The following week has closed for eight Council weeks (07-20 to 09-08),
+the month for six (07-20 to 08-24).
+
+**The prediction, if the jobs are slow signals:** holding on does not give the
+edge back. Across the sets, the following week's edge over random is not
+negative on average, and the month's edge per week is at least the first
+week's.
+
+**What counts.** This is a spot check, not a test. Eight start weeks, and six
+months that overlap by three weeks each -- about one and a half independent
+months -- cannot confirm anything. They can embarrass the idea: if the picks
+clearly give back their gains the following week, or the month runs well
+behind the first week, weekly re-picking is not the problem, and the 96-week
+history test should come before any change to how long the Council holds.
+
+    python lab/hold_check.py
