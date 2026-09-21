@@ -860,8 +860,11 @@ without running anything new. That is the only fair test it can get.
 The owner's first live run of Council v2's members, with Ophelia a week late.
 Every input ends at Friday 2026-09-18's close. Cecil read the repo as it
 stood before Monday's Council report, and Marky's screen ran on prices capped
-at that Friday. The picks were committed Monday afternoon, and `live_week.py
-score` scores them from Monday's open to Friday 09-25's close. The record is
+at that Friday. The picks were committed Monday at 19:08 ET, after that day's
+session had closed. Nothing that chose them could see Monday, but a clean
+forward test should start after the record. So `live_week.py score` scores
+two windows to Friday 09-25's close: from Monday's open, like every other
+score in the lab, and from Tuesday's open. The record is
 `results/live/2026-09-21.json`.
 
 | Member | This week's five |

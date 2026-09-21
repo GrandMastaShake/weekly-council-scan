@@ -25,6 +25,7 @@ before its Monday:
 from __future__ import annotations
 
 import argparse
+import bisect
 import json
 import random
 import statistics
@@ -157,7 +158,17 @@ def record(label, out_dir):
     print(f"  variant, Marky with MACD turning up: {', '.join(t['ticker'] for t in turn)}")
 
 
+def _span(s, first_day, fri):
+    """First open on or after first_day to the last close on or before fri."""
+    lo = bisect.bisect_left(s.dates, first_day)
+    hi = bisect.bisect_right(s.dates, fri)
+    return s.rows[hi - 1]["close"] / s.rows[lo]["open"] - 1.0 if lo < hi else None
+
+
 def score(label):
+    """Two windows: from Monday's open, like every other score in the lab, and
+    from Tuesday's open, which starts after the record was committed (the
+    2026-09-21 record went in Monday evening, after the session)."""
     doc = json.loads((LIVE / f"{label}.json").read_text(encoding="utf-8"))
     weeks, names, raw, adj = v2._data()
     W = doc["monday"]
@@ -165,24 +176,27 @@ def score(label):
     if adj["SPY"].rows[-1]["date"] < fri:
         raise SystemExit(f"{label}: Friday {fri} has not closed in the price data yet")
     black = _blackout(label, names)
-    rets = {t: adj[t].week_return(W) for t in names if t in adj and t not in black}
-    rets = {t: r for t, r in rets.items() if r is not None}
-    pool, spy = sorted(rets), adj["SPY"].week_return(W)
     books = {m: v["picks"] for m, v in doc["members"].items()}
     books["all 15"] = [x["ticker"] for x in doc["all15"]]
     books.update({name: v["picks"] for name, v in doc.get("variants", {}).items()})
-    out = {}
-    for name, ts in books.items():
-        ts = [t for t in ts if t in rets]
-        r = statistics.fmean(rets[t] for t in ts)
-        rng = random.Random(f"{lab.SEED}-{W}-live-{name}")
-        draws = [statistics.fmean(rets[t] for t in rng.sample(pool, len(ts))) for _ in range(lab.RANDOM_DRAWS)]
-        out[name] = {"ret": r, "vs_spy": r - spy, "vs_random": r - statistics.fmean(draws),
-                     "pctile": sum(1 for x in draws if x < r) / len(draws),
-                     "names": {t: rets[t] for t in ts}}
-        print(f"  {name:<8} {r*100:+6.2f}%  vs SPY {(r-spy)*100:+6.2f}%  vs random "
-              f"{out[name]['vs_random']*100:+6.2f}%  pctile {out[name]['pctile']:.0%}")
-    doc["score"] = {"spy": spy, "books": out, "scored": datetime.now().astimezone().isoformat(timespec="seconds")}
+    doc["score"] = {"scored": datetime.now().astimezone().isoformat(timespec="seconds")}
+    for window, first_day in (("from Monday's open", W), ("from Tuesday's open", lab._plus(W, 1))):
+        rets = {t: _span(adj[t], first_day, fri) for t in names if t in adj and t not in black}
+        rets = {t: r for t, r in rets.items() if r is not None}
+        pool, spy = sorted(rets), _span(adj["SPY"], first_day, fri)
+        out = {}
+        print(f"  {window}: SPY {spy*100:+.2f}%")
+        for name, ts in books.items():
+            ts = [t for t in ts if t in rets]
+            r = statistics.fmean(rets[t] for t in ts)
+            rng = random.Random(f"{lab.SEED}-{W}-live-{window}-{name}")
+            draws = [statistics.fmean(rets[t] for t in rng.sample(pool, len(ts))) for _ in range(lab.RANDOM_DRAWS)]
+            out[name] = {"ret": r, "vs_spy": r - spy, "vs_random": r - statistics.fmean(draws),
+                         "pctile": sum(1 for x in draws if x < r) / len(draws),
+                         "names": {t: rets[t] for t in ts}}
+            print(f"    {name:<24} {r*100:+6.2f}%  vs SPY {(r-spy)*100:+6.2f}%  vs random "
+                  f"{out[name]['vs_random']*100:+6.2f}%  pctile {out[name]['pctile']:.0%}")
+        doc["score"][window] = {"spy": spy, "books": out}
     with open(LIVE / f"{label}.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(doc, fh, indent=1, ensure_ascii=False, default=float)
         fh.write("\n")
