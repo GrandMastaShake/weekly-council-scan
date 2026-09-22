@@ -200,16 +200,16 @@ def replay(uname, scheme, names, weeks, start, cal, raw, adj, sector_map, offens
     return out
 
 
-def summarize(rows):
-    rs = [r["books"]["Ophelia"] for r in rows if "Ophelia" in r["books"]]
+def summarize(rows, book="Ophelia"):
+    rs = [r["books"][book] for r in rows if book in r["books"]]
     e = [x["clipped"]["edge"] for x in rs]
     ret = [x["raw"]["ret"] for x in rs]
     half = len(rs) // 2
     by_half_year = {}
     for r in rows:
-        if "Ophelia" in r["books"]:
+        if book in r["books"]:
             key = r["week"][:4] + ("H1" if r["week"][5:7] <= "06" else "H2")
-            by_half_year.setdefault(key, []).append(r["books"]["Ophelia"]["clipped"]["edge"])
+            by_half_year.setdefault(key, []).append(r["books"][book]["clipped"]["edge"])
     return {"weeks": len(rs), "edge": statistics.fmean(e), "t": lab._tstat(e),
             "ahead": sum(1 for x in e if x > 0),
             "halves": [statistics.fmean(e[:half]), statistics.fmean(e[half:])] if half else None,
@@ -219,10 +219,11 @@ def summarize(rows):
             "by_half_year": {k: statistics.fmean(v) for k, v in sorted(by_half_year.items())}}
 
 
-def paired(rows_a, rows_b):
-    by = {r["week"]: r["books"]["Ophelia"]["clipped"]["edge"] for r in rows_b if "Ophelia" in r["books"]}
-    diff = [r["books"]["Ophelia"]["clipped"]["edge"] - by[r["week"]] for r in rows_a
-            if "Ophelia" in r["books"] and r["week"] in by]
+def paired(rows_a, rows_b, book="Ophelia", book_b=None):
+    book_b = book_b or book
+    by = {r["week"]: r["books"][book_b]["clipped"]["edge"] for r in rows_b if book_b in r["books"]}
+    diff = [r["books"][book]["clipped"]["edge"] - by[r["week"]] for r in rows_a
+            if book in r["books"] and r["week"] in by]
     half = len(diff) // 2
     return {"mean": statistics.fmean(diff), "t": lab._tstat(diff),
             "halves": [statistics.fmean(diff[:half]), statistics.fmean(diff[half:])] if half else None,

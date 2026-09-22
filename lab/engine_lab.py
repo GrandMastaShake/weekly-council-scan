@@ -338,7 +338,10 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
              in place of the consensus (the forward record's Ophelia-solo);
              {"sector_map_builder": f} with f(names, adj, weeks) -> (a
              SECTOR_MAP stand-in, offensive labels, defensive labels) swaps
-             Ophelia's sector map for this replay only (Pass 10's clusters)
+             Ophelia's sector map for this replay only (Pass 10's clusters);
+             {"pe_builder": f} with f(names, raw, weeks) -> get_pe(ticker,
+             date) hands Cecil a point-in-time P/E for this replay only
+             (Pass 11); without it his multiple is unknown, value leg neutral
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
@@ -388,6 +391,9 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
         smap, off, dfn = builder(universe, adj, weeks_to_run)
         knobs.update({"data_utils.SECTOR_MAP": smap, "ophelia.OFFENSIVE_SECTORS": off,
                       "ophelia.DEFENSIVE_SECTORS": dfn})
+    pe_builder = knobs.get("pe_builder")           # (names, raw, weeks) -> get_pe(ticker, date), point in time
+    if pe_builder:
+        cecil.get_pe = pe_builder(universe, raw, weeks_to_run)     # the None lambda above is re-set every run
     _set_knobs(engines, knobs)
     _install_taps(engines)
     _TAP["capture"] = capture

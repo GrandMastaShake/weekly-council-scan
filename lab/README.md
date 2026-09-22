@@ -1516,3 +1516,61 @@ On the 111 (history), engine 8 +0.27% (t +0.62), engine 8+Semis +0.75%
 (+1.58), GICS 11 +0.85% (+1.68), GICS 11+Semis +0.92% (+1.68), our own 11
 +0.12% (+0.26); on its seen Council weeks every map beat engine 8's -1.71%,
 none significantly.
+
+## Pass 11 -- Cecil with a P/E, and the owner's themes (registered before any run)
+
+Two requests from the owner. `pass11_cecil_themes.py` has the exact rules.
+
+**A. Cecil, properly.** Every history pass so far replayed Cecil without a
+P/E (production reads today's multiple, which is not point in time), so his
+value leg sat at its neutral 15 and what got scored was his safety leg: a
+low-volatility screen, which is why he has been mildly negative on every
+universe. This pass hands him a point-in-time P/E, the last close before
+the Monday over the trailing four quarters' reported EPS as known by then
+(the EPS cache the Council Room's Cecil reads; prices and reported EPS are
+both split-adjusted by the source), through a `pe_builder` knob in
+`engine_lab.run` that lasts one replay. His quality leg stays neutral; there
+are no point-in-time fundamentals. Books, his five each week, on the 111
+and on the S&P 500 as of 2024-09 (the clean list, which decides):
+
+| Book | |
+|---|---|
+| Cecil, no P/E | the lab's Cecil of Passes 1-9 (baseline) |
+| Cecil, P/E | the same engine with the point-in-time multiple |
+| Cheapest five | the five lowest positive P/E among the week's tradeable names: the multiple alone, no engine |
+
+**B. The owner's themes.** Ophelia's rotation under `themes_111.csv`, twelve
+themes drawn by the owner's lights (semiconductors; AI power and data
+centers; AI software and data; frontier tech: space, defense, robotics,
+quantum; biotech and health; crypto and fintech; financials; energy; metals
+and industrial core; consumer and media; staples; real estate and regulated
+utilities), every one of the 109 in exactly one, on the 111 beside engine 8,
+GICS 11 and our own 11 replayed with Pass 10's seeds (they must reproduce
+Pass 10's 111 numbers). A theme is offensive or defensive by the majority
+engine bucket of its members. **Stated up front:** the map was drawn on
+2026-09-22 knowing what ran in 2025-26. The test is of the grouping (which
+theme led last week sets the anchor), not a discovery, and the 111 already
+carries that hindsight in its membership; a pass here would still have to
+earn its way on the forward record.
+
+**Predictions.** A: on the clean list, Cecil with a P/E lands between -0.2%
+and +0.2%/wk against random, t under 1 (value lagged in a growth market),
+and the paired difference against no-P/E is inside t 2 either way; the
+cheapest five is negative (t between -2 and 0); his book changes in most
+weeks (same five under half the time). B: the themes come in above engine 8
+on the 111, like every finer map did there, but under t 2; the three
+reruns reproduce Pass 10 exactly.
+
+**What counts** (history; the Council weeks are reported and decide
+nothing): *Cecil with a P/E beats random* on a universe if t >= 2, positive
+edge, both halves positive; *the P/E helps him* if the paired edge over
+no-P/E is positive with t >= 2 and both halves positive; *the cheapest five
+beats random* under the same rule; *the owner's themes help* if their paired
+edge over engine 8 on the 111 is positive with t >= 2 and both halves
+positive. Seven tests at the line: about one in four that one passes by
+luck. A Cecil that works with a P/E is the case for a point-in-time P/E in
+production, through the Testing Room and the freeze; a theme map that helps
+goes to the forward record as a solo variant.
+
+    python lab/pass11_cecil_themes.py
+    python lab/pass11_cecil_themes.py themes     # part B only, after editing themes_111.csv

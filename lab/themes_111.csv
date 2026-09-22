@@ -1,0 +1,115 @@
+# The owner's themes for Ophelia's rotation (Pass 11), drawn 2026-09-22 on the
+# 111's 109 stocks. A draft by the lab from the owner's list (semiconductors,
+# space, robotics, quantum, biotech ...); edit freely, every stock needs one
+# theme, and rerun `python lab/pass11_cecil_themes.py themes`. Drawn knowing
+# what ran in 2025-26, which the registration states.
+ticker,theme
+NVDA,Semiconductors
+AMD,Semiconductors
+TSM,Semiconductors
+EQIX,AI power & data centers
+MOD,AI power & data centers
+ETN,AI power & data centers
+VST,AI power & data centers
+CEG,AI power & data centers
+OKLO,AI power & data centers
+CCJ,AI power & data centers
+ORA,AI power & data centers
+NEE,AI power & data centers
+PLTR,AI software & data
+CRWD,AI software & data
+DDOG,AI software & data
+SOUN,AI software & data
+INOD,AI software & data
+GOOGL,AI software & data
+META,AI software & data
+RDDT,AI software & data
+RKLB,Frontier tech (space defense robotics quantum)
+SPCX,Frontier tech (space defense robotics quantum)
+LMT,Frontier tech (space defense robotics quantum)
+GE,Frontier tech (space defense robotics quantum)
+ISRG,Frontier tech (space defense robotics quantum)
+TSLA,Frontier tech (space defense robotics quantum)
+DE,Frontier tech (space defense robotics quantum)
+RGTI,Frontier tech (space defense robotics quantum)
+LLY,Biotech & health
+VRTX,Biotech & health
+REGN,Biotech & health
+CRSP,Biotech & health
+HIMS,Biotech & health
+BLFS,Biotech & health
+TMO,Biotech & health
+JNJ,Biotech & health
+UNH,Biotech & health
+COIN,Crypto & fintech
+SOFI,Crypto & fintech
+UPST,Crypto & fintech
+V,Crypto & fintech
+MA,Crypto & fintech
+JPM,Financials
+GS,Financials
+BLK,Financials
+PGR,Financials
+SCHW,Financials
+XOM,Energy
+CVX,Energy
+COP,Energy
+VLO,Energy
+WMB,Energy
+SLB,Energy
+LNG,Energy
+SM,Energy
+FSLR,Energy
+NEM,Metals & industrial core
+FCX,Metals & industrial core
+ALB,Metals & industrial core
+MP,Metals & industrial core
+NUE,Metals & industrial core
+LIN,Metals & industrial core
+MLM,Metals & industrial core
+SSD,Metals & industrial core
+SHW,Metals & industrial core
+ECL,Metals & industrial core
+CAT,Metals & industrial core
+CSX,Metals & industrial core
+HON,Metals & industrial core
+AMZN,Consumer & media
+HD,Consumer & media
+MCD,Consumer & media
+BKNG,Consumer & media
+ABNB,Consumer & media
+CVNA,Consumer & media
+NKE,Consumer & media
+ULTA,Consumer & media
+FIVE,Consumer & media
+DIS,Consumer & media
+LYV,Consumer & media
+IMAX,Consumer & media
+NFLX,Consumer & media
+SPOT,Consumer & media
+TTWO,Consumer & media
+TMUS,Consumer & media
+MTCH,Consumer & media
+WMT,Staples
+COST,Staples
+KO,Staples
+PG,Staples
+PM,Staples
+PEP,Staples
+MDLZ,Staples
+STZ,Staples
+CALM,Staples
+FIZZ,Staples
+WELL,Real estate & regulated utilities
+PLD,Real estate & regulated utilities
+AMT,Real estate & regulated utilities
+SPG,Real estate & regulated utilities
+PSA,Real estate & regulated utilities
+O,Real estate & regulated utilities
+VICI,Real estate & regulated utilities
+UMH,Real estate & regulated utilities
+D,Real estate & regulated utilities
+SRE,Real estate & regulated utilities
+XEL,Real estate & regulated utilities
+ATO,Real estate & regulated utilities
+AWK,Real estate & regulated utilities
