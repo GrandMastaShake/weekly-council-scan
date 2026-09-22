@@ -9,9 +9,11 @@ have been tuned on these weeks: they had not happened when the designs were
 written down.
 
 "production" is the engine code as it stands at run time, earnings blackout
-included; every other design is production with its knobs on top. The real
-Council's book is the official record -- the engines' picks after the LLM
-layer's vetoes and trims.
+included and, since 2026-09-22, Cecil's P/E point in time from the lab's EPS
+cache (production's Cecil reads a live multiple; a replay without one scored
+his safety leg alone); every other design is production with its knobs on
+top. The real Council's book is the official record -- the engines' picks
+after the LLM layer's vetoes and trims.
 
     python lab/forward.py
 """
@@ -33,6 +35,16 @@ def _own_map(names, adj, weeks):
     return p10.own_map(names, adj, weeks)
 
 
+def _pe_builder(names, raw, weeks):
+    """Pass 11's point-in-time P/E for Cecil (every design gets it, 2026-09-22:
+    production's Cecil reads a live multiple, so a replay without one is not
+    production). The EPS cache is refreshed weekly for new quarters."""
+    import council_room_v2 as v2
+    import pass11_cecil_themes as p11
+    v2.eps_history(sorted(names), max_age_days=6)
+    return p11.pe_builder(names, raw, weeks)
+
+
 # (name, knobs, registered Monday, where it came from)
 REGISTRY = [
     ("production",    lab.VARIANTS3["base"],          "2026-09-21", "engines as live"),
@@ -49,6 +61,7 @@ REGISTRY = [
     ("Ophelia-solo",  {"solo": "Ophelia"},            "2026-09-22", "Pass 9b, the engine alone"),
     ("Ophelia-solo-ownmap", {"solo": "Ophelia", "sector_map_builder": _own_map},
                                                       "2026-09-22", "Pass 10, the owner's map (weekly clusters)"),
+    ("Cecil-solo",    {"solo": "Cecil"},              "2026-09-22", "Pass 11, the engine alone with a point-in-time P/E"),
 ]
 PAGE = lab.LAB / "FORWARD.md"
 DATA = lab.RESULTS / "forward.json"
@@ -171,7 +184,8 @@ def main():
         for name, knobs, registered, _ in REGISTRY:
             wk = [w for w in weeks if w[1] >= registered]
             if wk:
-                results[name] = lab.run(verbose=False, knobs=knobs, weeks=wk, start=start, earnings=cal)
+                results[name] = lab.run(verbose=False, knobs=dict(knobs, pe_builder=_pe_builder),
+                                        weeks=wk, start=start, earnings=cal)
         page, data = build(weeks, results, generated)
         # Each Monday downloads one more week; drop this run's older downloads
         # (the Pass 1-3 caches have other start dates and are kept).

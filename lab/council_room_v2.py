@@ -50,7 +50,7 @@ import re
 import shutil
 import statistics
 import sys
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -94,13 +94,17 @@ def market_brief(readme, synthesis):
     return "".join(head[:4])        # no brief that week: the synthesis's opening sections
 
 
-def eps_history(tickers):
-    """{ticker: [(report date, reported EPS)]} from yfinance, cached and merged."""
+def eps_history(tickers, max_age_days=None):
+    """{ticker: [(report date, reported EPS)]} from yfinance, cached and merged.
+    max_age_days refetches every requested name when the cache is older than
+    that (the forward record needs new quarters as they report)."""
     cached = {}
     if EPS_CACHE.exists():
         with open(EPS_CACHE, encoding="utf-8") as fh:
             cached = json.load(fh)
-    todo = [t for t in tickers if t not in cached]
+    stale = (max_age_days is not None and EPS_CACHE.exists()
+             and (datetime.now().timestamp() - EPS_CACHE.stat().st_mtime) / 86400 >= max_age_days)
+    todo = list(tickers) if stale else [t for t in tickers if t not in cached]
     if todo:
         from concurrent.futures import ThreadPoolExecutor
         import yfinance as yf

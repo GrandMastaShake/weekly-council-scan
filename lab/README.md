@@ -1574,3 +1574,67 @@ goes to the forward record as a solo variant.
 
     python lab/pass11_cecil_themes.py
     python lab/pass11_cecil_themes.py themes     # part B only, after editing themes_111.csv
+
+## Pass 11 results -- the P/E turns Cecil around on the clean list; the themes are a wash
+
+Run after the registration commit (3af8a17); `results/pass11_cecil_themes.json`.
+The three Pass 10 reruns reproduced its 111 numbers exactly.
+
+**A. Cecil.** History, 96 weeks, his five, clipped edge over random; the
+P/E was known for 99 of 100 tradeable names a week on the 111 and 425 of
+427 on the S&P 500 as of 2024-09:
+
+| Universe | Book | Edge (t) | Weeks ahead | Weekly SD | Worst drawdown | Paired vs no P/E |
+|---|---|---|---|---|---|---|
+| the S&P 500 as of 2024-09 | Cecil, no P/E | -0.28% (-1.25) | 40 | 2.04% | -13.4% | |
+| | **Cecil, P/E** | **+0.30% (+1.35)** | 52 | 2.67% | -11.5% | **+0.58%/wk (t +1.91, 61 of 96)** |
+| | Cheapest five | +0.21% (+0.93) | 54 | 2.96% | -19.0% | +0.48%/wk (t +1.48, 63 of 96) |
+| the 111 | Cecil, no P/E | -0.29% (-1.20) | 40 | 2.08% | -11.0% | |
+| | Cecil, P/E | -0.23% (-0.95) | 42 | 2.54% | -20.7% | +0.05%/wk (t +0.21, 48 of 96) |
+| | Cheapest five | -0.01% (-0.04) | 53 | 2.32% | -18.5% | +0.28%/wk (t +1.03, 46 of 96) |
+
+By half-year on the clean list, Cecil with a P/E: 2024H2 -0.23, 2025H1
++0.34, 2025H2 +0.21, 2026H1 +0.67 (no P/E: -0.85, -0.08, -0.39, -0.02). The
+multiple changed his five in every single week (same five 0%).
+
+**Registered verdicts: none.** But the one that matters missed by a hair:
+*the P/E helps Cecil* on the clean list at t +1.91 against the line of 2,
+ahead in 61 of 96 weeks, positive in three of four half-years. What the
+multiple does is turn the lab's Cecil from a low-volatility screen (mildly
+negative on every list since Pass 1) into a value-and-safety screen that is
+mildly positive on a broad list, steadily rather than in one regime. The
+cheapest five alone carries about the same (+0.21%, t +0.93), so most of it
+is the multiple. On the 111 it does nothing: that list is growth names, and
+its cheap names are its laggards. Predictions: his edge came in above my
+range (+0.30 against -0.2..+0.2), the paired difference inside t 2 as
+predicted, the cheapest five positive rather than negative (wrong), and his
+book changed far more than "most weeks" (every week).
+
+**What this changes.** Nothing in production: the live Cecil already reads
+a live multiple, which for the live week *is* point in time. What was wrong
+was the lab: every history verdict on "Cecil" since Pass 1 was his safety
+leg alone, and so was the forward record's *production* replay. Fixed
+2026-09-22, before any forward week was scored: `forward.py` feeds every
+design the point-in-time P/E (`pe_builder`), refreshing the EPS cache
+weekly, and registers `Cecil-solo` from 2026-09-22. On the live record for
+2026-09-21, from Tuesday's open: the engine Cecil with a P/E holds AES, ALL,
+PRU on the 274 and VICI, MTCH, STZ on the 111 (`live_week.py cecil`).
+
+**B. The owner's themes**, Ophelia's five on the 111, history, 96 weeks:
+
+| Map | Edge (t) | Weeks ahead | Weekly SD | Worst drawdown | Paired vs engine 8 | Same five |
+|---|---|---|---|---|---|---|
+| engine 8 | +0.27% (+0.62) | 51 | 5.73% | -25.2% | | |
+| GICS 11 | +0.85% (+1.68) | 52 | 7.15% | -26.1% | +0.59%/wk (t +1.63) | 35% |
+| our own 11 | +0.12% (+0.26) | 51 | 7.20% | -43.2% | -0.14%/wk (t -0.32) | 0% |
+| the owner's themes | +0.63% (+1.18) | 47 | 7.00% | -33.7% | +0.37%/wk (t +0.78) | 7% |
+
+**Verdict: no**, as predicted (above engine 8, under t 2). The themes land
+between the eight buckets and plain GICS 11, and change her book in 93% of
+weeks. On the seen Council weeks they are the best of the four maps
+(+0.49%/wk, ahead 6 of 9, t +0.46), which decides nothing. The map is the
+owner's to edit (`themes_111.csv`, then `pass11_cecil_themes.py themes`);
+the lab's read is that on a 109-name list any twelve-way split runs into
+Pass 10's lesson, small groups chase, and that the data's own grouping (our
+own 11, on the forward record) treats quantum, space, nuclear, crypto and
+biotech as one risk-on basket rather than five themes.
