@@ -1275,3 +1275,98 @@ nothing):
 
     python lab/fetch_sp500.py
     python lab/pass9_universe.py
+
+## Pass 9 results -- the 111 is enough for this team
+
+Run after the registration commit (b31cf1a); `results/pass9_universe.json`.
+History, 96 weeks, clipped edge over random books from the same universe:
+
+| Universe | Book | Edge (t) | Weeks ahead | Return / wk | Weekly SD | Worst drawdown | vs the 111, paired |
+|---|---|---|---|---|---|---|---|
+| the 277 | Ophelia | **+1.04% (+2.01)** | 54 | +1.93% | 7.72% | -28.6% | +0.78%/wk (t +1.48) |
+| | Cecil | -0.22% (-0.96) | 45 | +0.11% | 2.06% | -9.3% | +0.10% (+0.55) |
+| | Marky | +0.20% (+0.81) | 50 | +0.60% | 3.55% | -28.0% | -0.07% (-0.31) |
+| | Three chairs | +0.33% (+1.75) | 46 | +0.88% | 3.16% | -16.2% | +0.27% (+1.26) |
+| the 111 | Ophelia | +0.26% (+0.61) | 50 | +0.97% | 5.73% | -25.2% | |
+| | Cecil | -0.32% (-1.35) | 41 | +0.18% | 2.08% | -11.0% | |
+| | Marky | +0.27% (+0.94) | 45 | +0.85% | 4.00% | -27.6% | |
+| | Three chairs | +0.06% (+0.31) | 44 | +0.67% | 2.87% | -18.2% | |
+| the feed | Ophelia | +0.99% (+1.99) | 57 | +1.83% | 7.14% | -23.0% | +0.72% (+1.53) |
+| | Cecil | -0.20% (-0.87) | 42 | +0.17% | 2.06% | -9.6% | +0.12% (+0.72) |
+| | Marky | +0.37% (+1.31) | 51 | +0.83% | 4.00% | -29.8% | +0.09% (+0.47) |
+| | Three chairs | **+0.40% (+2.08)** | 54 | +0.94% | 3.12% | -15.0% | +0.34% (+1.76) |
+| the S&P 500 | Ophelia | +0.69% (+1.86) | 56 | +1.14% | 4.57% | -13.8% | +0.42% (+0.83) |
+| | Cecil | -0.40% (-1.74) | 38 | -0.05% | 2.02% | -16.6% | -0.08% (-0.37) |
+| | Marky | -0.01% (-0.05) | 53 | +0.35% | 3.06% | -28.9% | -0.28% (-1.04) |
+| | Three chairs | +0.10% (+0.63) | 46 | +0.48% | 2.36% | -14.3% | +0.04% (+0.19) |
+
+| Universe | Tradeable names / wk | Equal-weight vs SPY, raw (t) | clipped (t) | Dispersion |
+|---|---|---|---|---|
+| the 277 | 249 | +0.05% (+0.44) | -0.00% (-0.05) | 4.01% |
+| the 111 | 100 | **+0.24% (+2.40)** | +0.14% (+1.50) | 4.73% |
+| the feed | 293 | +0.10% (+1.06) | +0.03% (+0.36) | 4.31% |
+| the S&P 500 | 461 | +0.01% (+0.13) | +0.00% (+0.01) | 3.74% |
+
+**Registered verdicts.** Wider feeds the team: *none*. The feed's three
+chairs beat the 111's by +0.34%/wk, t +1.76, short of the line; the S&P 500's
+by +0.04%. **The 111 is enough for this team**; widening waits for a better
+team. Beats random: *Ophelia on the 277* and *Three chairs on the feed*.
+Both are noted, not adopted, and the diagnostic below says why.
+
+**Where Ophelia's edge lives (unregistered diagnostic, from the results and
+the cached prices).** On every universe her ten biggest contributors are her
+whole edge; without them she is at or below zero:
+
+| Universe | Ophelia | Without her ten biggest | Their share | The ten |
+|---|---|---|---|---|
+| the 277 | +1.04%/wk | -0.05% (t -0.12) | 107% | RGTI, IONQ, QBTS, INTC, PANW, ZS, BFLY, QUBT, CVS, MU |
+| the 111 | +0.26% | -0.61% (t -1.44) | 301% | RGTI, CRWD, RKLB, OKLO, INOD, AMD, ORA, NUE, JNJ, AWK |
+| the feed | +0.99% | -0.18% (t -0.39) | 100% | RGTI, IONQ, QBTS, INTC, OKLO, PANW, BFLY, QUBT, EIX, CVS |
+| the S&P 500 | +0.69% | -0.03% (t -0.12) | 110% | INTC, SNDK, PANW, QCOM, MU, RDDT, BE, EIX, CIEN, ED |
+
+The 277 and the feed are the quantum names again (RGTI, IONQ, QBTS, QUBT),
+so those two passes are the hindsight file, as in Nuggets A and Pass 7. The
+S&P 500's ten hold four names that joined the index after the history began
+(SNDK, RDDT, BE, CIEN): today's constituents include 40 names added since
+2024-09-09 because they ran, which is the additions bias that flatters a
+momentum screen. Pass 9b below takes them out.
+
+**The rest.** The 111's base rate is what its hindsight predicts: +0.24%/wk
+over SPY (t +2.40), the only universe whose equal weight beats the index, and
+the widest dispersion (4.73%). On the seen Council weeks it is the *worst*:
+-0.26%/wk under SPY, and the engine Ophelia on it made -1.66%/wk with a
+-14.9% drawdown. The list's edge lives in its past. Marky's channel five is
+near zero on every universe (-0.01% to +0.37%), as predicted. Cecil is
+negative on all four (-0.20% to -0.40%/wk, 38 to 45 weeks ahead of 96); the
+lab's Cecil runs without point-in-time P/E, so this is his momentum-and-
+sector remainder, not the value job as designed. Predictions: 1 wrong (two
+passes, both Ophelia's ten names), 2 and 4 and 5 right, 3 right on t and
+wrong on size for the 277 and the feed.
+
+## Pass 9b -- the S&P 500 as it stood (registered after Pass 9's results, before this run)
+
+Ophelia's +0.69%/wk on today's S&P 500 (t +1.86) is the one Pass 9 number
+without quantum names in it, and four of her ten contributors there joined
+the index after the history began. `fetch_sp500.py dates` adds the index's
+"Date added" (`universe_sp500_added_2026-09-22.csv`); `pass9_universe.py
+asof` replays the team on today's constituents whose recorded date is before
+2024-09-09, 463 of the 503 (the 40 taken out: APO, APP, ARES, BE, CASY, CIEN,
+COHR, COIN, CRH, CVNA, DASH, DDOG, DELL, ECHO, EME, ERIE, EXE, FDXF, FERG,
+FIX, FLEX, HONA, HOOD, IBKR, ILMN, LII, LITE, MRVL, P, PLTR, Q, RDDT, SNDK,
+TKO, TPL, VEEV, VRT, WDAY, WSM, XYZ). Removals since then are still missing,
+which flatters the base rate but not a screen's edge over random names from
+the same list. Scored as in Pass 9, paired against Pass 9's 111 and against
+today's S&P 500.
+
+**Prediction.** Ophelia's edge on the as-of list falls under t 1, and the
+paired difference (today's list minus as-of) is positive: the additions carry
+her.
+
+**What counts.** If Ophelia beats random on the as-of list under the usual
+rule (t >= 2, positive edge, both halves positive), she is the first
+non-control signal in this lab with legs on a list that has no hindsight
+additions, and her own book goes to the forward record. Otherwise her S&P
+number joins the hindsight file with the rest.
+
+    python lab/fetch_sp500.py dates
+    python lab/pass9_universe.py asof

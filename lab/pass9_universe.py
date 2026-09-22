@@ -206,12 +206,23 @@ def main(smoke=False):
     end = lab._plus(cweeks[-1][1], 5)
     hist, cw = {}, {}
     for uname, names in U.items():
+        # A finished universe is checkpointed in the gitignored cache, so a run
+        # cut short (the pass takes the better part of an hour) resumes there.
+        ck = lab.CACHE / f"pass9_{uname.replace(' ', '_').replace('&', 'and')}{'_smoke' if smoke else ''}.json"
+        if ck.exists():
+            doc = json.loads(ck.read_text(encoding="ascii"))
+            hist[uname], cw[uname] = doc["hist"], doc["council"]
+            print(f"  {uname}: from checkpoint {ck.name}")
+            continue
         tickers = sorted(set(names)) + lab.EXTRA
         raw = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, False, end, p4.HIST_START)).items()}
         adj = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, True, end, p4.HIST_START)).items()}
-        print(f"  {uname}: {len(names)} names, {len([t for t in names if t in raw])} with prices")
+        print(f"  {uname}: {len(names)} names, {len([t for t in names if t in raw])} with prices", flush=True)
         hist[uname] = replay(uname, names, hweeks, lab.HISTORY_DATA_START, cal, raw, adj, "hist")
         cw[uname] = replay(uname, names, cweeks, lab.DATA_START, cal, raw, adj, "council")
+        lab.CACHE.mkdir(parents=True, exist_ok=True)
+        with open(ck, "w", encoding="ascii", newline="\n") as fh:
+            json.dump({"hist": hist[uname], "council": cw[uname]}, fh, default=float)
     hs = {u: summarize(rows) for u, rows in hist.items()}
     hp = {u: {n: paired(hist[u], hist[REFERENCE], n) for n in BOOKS} for u in hist if u != REFERENCE}
     show(f"History, {len(hweeks)} weeks", hs, hp)
@@ -234,5 +245,62 @@ def main(smoke=False):
         fh.write("\n")
 
 
+ASOF = lab.HISTORY_FIRST_MONDAY                       # 2024-09-09
+ASOF_NAME = "the S&P 500 as of 2024-09"
+SP500_ADDED_CSV = lab.LAB / "universe_sp500_added_2026-09-22.csv"
+
+
+def sp500_asof():
+    """Today's constituents that were already in the index when the history
+    began: 'Date added' before the first history Monday (a blank date is a
+    long-standing member). Removals since then are still missing, which
+    flatters the base rate but not a momentum screen's edge; additions,
+    which are names that rose into the index, are what this takes out."""
+    with open(SP500_ADDED_CSV, encoding="ascii") as fh:
+        rows = [r for r in csv.DictReader(ln for ln in fh if not ln.startswith("#"))]
+    return sorted(r["ticker"] for r in rows if not r["date_added"] or r["date_added"] < ASOF)
+
+
+def main_asof():
+    """Pass 9b (registered after Pass 9's results, before this run): the S&P
+    500 as it stood on 2024-09-09, scored like Pass 9's universes and paired
+    against Pass 9's file for the 111 and for today's S&P 500."""
+    universes()                                       # installs the sector fold
+    names = sp500_asof()
+    doc = json.loads((lab.RESULTS / "pass9_universe.json").read_text(encoding="utf-8"))
+    hweeks = lab.history_weeks(lab.HISTORY_FIRST_MONDAY, lab.HISTORY_LAST_MONDAY)
+    cweeks = lab.council_weeks(_last_friday())
+    cal = lab.earnings_calendar(names)
+    end = lab._plus(cweeks[-1][1], 5)
+    tickers = sorted(set(names)) + lab.EXTRA
+    raw = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, False, end, p4.HIST_START)).items()}
+    adj = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, True, end, p4.HIST_START)).items()}
+    print(f"  {ASOF_NAME}: {len(names)} of today's {len(sp500())} names", flush=True)
+    hist = replay(ASOF_NAME, names, hweeks, lab.HISTORY_DATA_START, cal, raw, adj, "hist")
+    cw = replay(ASOF_NAME, names, cweeks, lab.DATA_START, cal, raw, adj, "council")
+    out = {"universe": ASOF_NAME, "names": len(names), "asof": ASOF, "source": SP500_ADDED_CSV.name}
+    for section, rows, title in (("history", hist, f"History, {len(hweeks)} weeks"),
+                                 ("council", cw, f"Council weeks, {len(cweeks)} (seen weeks: reported, decide nothing)")):
+        ref = doc[section]["weeks"]
+        s = summarize(rows)
+        pairs = {other: {n: paired(rows, ref[other], n) for n in BOOKS} for other in (REFERENCE, "the S&P 500")}
+        show(title, {ASOF_NAME: s}, {ASOF_NAME: pairs[REFERENCE]})
+        print("  against today's S&P 500 (the additions' share):")
+        for n in BOOKS:
+            p = pairs["the S&P 500"][n]
+            print(f"    {n:<14}{p['mean']*100:+.2f}%/wk (t {p['t']:+.2f}, {p['weeks_better']}/{p['weeks']})")
+        out[section] = {"summary": s, "paired": pairs, "weeks": rows}
+    x = out["history"]["summary"]["Ophelia"]
+    out["verdicts"] = {"Ophelia beats random on the S&P 500 as of 2024-09":
+                       bool(x["t"] >= 2 and x["edge"] > 0 and all(h > 0 for h in x["halves"]))}
+    print("\n  registered verdict (history): " + "; ".join(f"{k}: {'YES' if v else 'no'}" for k, v in out["verdicts"].items()))
+    with open(lab.RESULTS / "pass9b_sp500_asof.json", "w", encoding="ascii", newline="\n") as fh:
+        json.dump(out, fh, indent=1, default=float)
+        fh.write("\n")
+
+
 if __name__ == "__main__":
-    main(smoke=sys.argv[1:] == ["smoke"])
+    if sys.argv[1:] == ["asof"]:
+        main_asof()
+    else:
+        main(smoke=sys.argv[1:] == ["smoke"])
