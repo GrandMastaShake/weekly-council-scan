@@ -395,6 +395,36 @@
    "rule": "the owner's own book for the week, as given; the rest is cash",
    "added": "2026-09-22T07:53:50-04:00",
    "only_from": "Tuesday's open"
+  },
+  "Ophelia engine, our own map": {
+   "picks": [
+    "AMD",
+    "CRWD",
+    "INOD"
+   ],
+   "universe": "the 111",
+   "clusters": {
+    "AMD": "C2",
+    "CRWD": "C2",
+    "INOD": "C2"
+   },
+   "cluster_sizes": {
+    "C1": 7,
+    "C10": 2,
+    "C11": 23,
+    "C2": 4,
+    "C3": 3,
+    "C4": 4,
+    "C5": 8,
+    "C6": 31,
+    "C7": 4,
+    "C8": 5,
+    "C9": 17,
+    "Other": 1
+   },
+   "rule": "Pass 10: the engine Ophelia's five with sectors replaced by weekly correlation clusters (k=11, 52 weeks)",
+   "added": "2026-09-22T08:16:51-04:00",
+   "only_from": "Tuesday's open"
   }
  }
 }
