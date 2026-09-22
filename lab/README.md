@@ -1684,3 +1684,54 @@ variant that helps is the case for changing Cecil's weights in production,
 through the freeze; it goes to the forward record first.
 
     python lab/pass12_cecil_legs.py
+
+## Pass 13 -- holding on, and managing the week (registered before any run)
+
+Two of the owner's questions, on the engine members' fives (Ophelia, Cecil
+with a point-in-time P/E, Marky's channel) and all fifteen together, on the
+S&P 500 as of 2024-09 (which decides) and the 111 (reported), 96 history
+weeks. `pass13_hold_manage.py` has the exact rules.
+
+**A. Holding on.** The nine-week hold check found that nothing accumulates,
+and the owner is not optimistic; this is the same question with 96 weeks
+and a cost. Each pick is held 1, 2, 4 and 8 weeks, Monday's open of the pick
+week to Friday's close of week k, against random books of the same size
+from the pick week's tradeable names held the same way. The edge is per
+week of holding, clipped per name at +/-20% a week of horizon, and reported
+net of a round-trip cost of 0.10% spread over the hold. The t for horizon k
+uses every k-th pick week so the windows do not overlap. Holding k weeks
+*helps* a book if its net per-week edge beats hold-1's, paired by pick
+week, with t >= 2.
+
+**B. Managing the week**, on daily bars. Entry at Monday's open; the
+decision at the second session's close ("Tuesday"); everything held to
+Friday's close. Five rules, each against the plain hold, paired by week:
+
+| Rule | What happens at Tuesday's close |
+|---|---|
+| stop | a name below its entry is sold; cash for the rest of the week |
+| stop vs SPY | a name trailing SPY since entry is sold |
+| rotate | the owner's rule: the worst two (worst 40% of a bigger book) are sold and the cash goes equally into the best three (best 60%) |
+| rotate Wed | the same, at the third session's close |
+| reverse | the mirror: the best two sold into the worst three |
+
+Costs: 0.05% a side on the weight moved (a stop pays one side, a rotation
+two). Each rule is also applied to the random books, so a rule that helps
+random picks as much as the members' is read as *mechanical* (an intra-week
+momentum or reversal effect anyone could harvest), not skill. Part B is
+scored raw and paired, since the same names sit on both sides. A rule
+*helps* a book if its net paired edge over the plain hold is positive with
+t >= 2 and both halves positive.
+
+**Predictions.** A: no horizon beats hold-1 for any book (the edges do not
+persist); Marky's per-week edge falls with the horizon (his bounce
+reverses); after cost, longer holds look *less* bad than hold-1 only
+because hold-1 pays the round trip every week. B: the stops hurt (selling
+Tuesday's losers forfeits the reversal the smoke weeks already showed on
+random picks, about a point a week); the owner's rotation is about zero
+gross and negative net, with most of whatever it shows also on random
+books; the reverse rule is a small positive gross, about zero net. Nothing
+passes. Twenty-eight tests at the line: two or three false passes would not
+be a surprise, so a lone pass is noted, not adopted.
+
+    python lab/pass13_hold_manage.py
