@@ -1778,3 +1778,76 @@ passes. Twenty-eight tests at the line: two or three false passes would not
 be a surprise, so a lone pass is noted, not adopted.
 
     python lab/pass13_hold_manage.py
+
+## Pass 13 results -- do nothing during the week; Cecil keeps
+
+Run after the registration commit (4a28376); `results/pass13_hold_manage.json`.
+The engine members' fives here are the engine's own proposals (three names
+for Ophelia and Cecil, five for Marky's channel), Cecil with the P/E.
+
+**A. Holding on**, the S&P 500 as of 2024-09, edge per week of holding
+(clipped, gross; net of a 0.10% round trip in the second column):
+
+| Book | hold 1 | hold 2 | hold 4 | hold 8 | net, hold 1 / 2 / 4 |
+|---|---|---|---|---|---|
+| Ophelia | +0.66% (1.82) | +0.51% (1.18) | -0.21% | -0.02% | +0.56 / +0.46 / -0.24 |
+| **Cecil** | +0.34% (1.52) | +0.30% (1.44) | +0.21% (0.94) | +0.25% (1.49) | +0.24 / +0.25 / +0.19 |
+| Marky | +0.02% | +0.10% | +0.08% | -0.07% | -0.08 / +0.05 / +0.06 |
+| all 15 | +0.27% (2.16) | +0.26% (1.67) | +0.04% | +0.05% | +0.17 / +0.21 / +0.02 |
+
+**Verdicts: no horizon beats hold-1 for any book** (paired, net; the
+closest is Cecil at four weeks, +0.51%/wk over hold-1, t 1.54). The owner's
+doubt was right and the nine-week check holds at 96: the members' edges do
+not accumulate. But they decay differently. Ophelia's is a one-to-two-week
+thing and is gone by four; Marky's never existed on history; **Cecil's
+keeps**: +0.34, +0.30, +0.21, +0.25 per week at one, two, four and eight
+weeks, so a Cecil held a month costs a quarter of the turnover for the same
+edge per week. That is what a value signal should look like, and it is the
+first member whose picks are worth holding past Friday.
+
+**B. Managing the week**, the S&P 500 as of 2024-09, net of 0.05% a side,
+paired against the plain hold; "on random" is the same rule on random
+books:
+
+| Book | stop | stop vs SPY | rotate (the owner's) | rotate Wed | reverse |
+|---|---|---|---|---|---|
+| Ophelia | -0.29%/wk (t -1.50) | -0.19% (-0.95) | -0.16% (-1.15) | -0.01% | +0.00% |
+| Cecil | -0.14% (-1.07) | -0.16% (-1.14) | **-0.21% (t -2.52)** | **-0.19% (t -2.96)** | +0.03% |
+| Marky | -0.03% | -0.03% | +0.01% | -0.12% (-1.35) | -0.07% |
+| all 15 | -0.13% (-1.38) | -0.11% (-1.01) | -0.04% | -0.04% | -0.02% |
+| on random books | -0.03 to -0.05% | -0.01 to -0.03% | +0.01 to +0.03% | -0.01 to -0.03% | -0.02 to -0.04% |
+
+**Verdicts: nothing helps; every rule that acts costs.** The stops cost
+every book, and more than they cost random books: the members' Tuesday
+losers recover more than random Tuesday losers do, so selling them
+forfeits the recovery. The owner's rotation is about zero on random books
+(no intra-week momentum to harvest) and significantly negative on Cecil's
+picks in both its forms, which is the same fact from the other side: his
+Tuesday laggards are the ones that come back. The reverse rule, the
+mirror, is a rounding error. On the 111 the picture is the same with wider
+numbers (stop vs SPY on all fifteen -0.35%/wk, t -2.39; the rotation
+-0.29%, t -2.18; Ophelia's reverse +0.55%, t 1.63, the one positive, on
+the list where she is weakest). On the seen Council weeks the stops helped
+Ophelia (+0.8%/wk, she was losing those weeks) and hurt Marky (-0.6%, t
+-2.67), which nine weeks cannot turn into a rule.
+
+**Predictions.** A: right that no horizon beats hold-1, right that Marky
+has nothing to hold, wrong in one respect that matters: I said no edge
+persists, and Cecil's does. B: all four right (the stops hurt, the rotation
+is zero gross and negative net, the reverse is a small gross positive,
+nothing passes), and one nuance the registration did not foresee: the
+rotation's harm is not mechanical (random books show none); it is specific
+to these picks.
+
+**An unregistered observation, handled as such.** The union of the three
+engines' picks, equal-weighted with Cecil's P/E in ("all 15", about eleven
+names), makes +0.27%/wk over random at the one-week hold on the clean list,
+t 2.16, both halves positive (+0.07, +0.47), ahead 53 of 96. That crosses
+the usual line, and Part A was not registered to judge it; 82% of the edge
+sits in 2026H1 (Ophelia's regime), and net of the round trip it is t 1.35.
+It is the three uncorrelated weak signals adding, as section 3 of the
+scorecard said they would. It goes to the forward record as `Union-equal`
+(a `union` knob in `engine_lab.run`: each engine's top five, equal weights
+over the union) from 2026-09-22, and to the live record for 2026-09-21 as
+"Union of engines, the 111" from Wednesday's open, and it decides nothing
+until the weeks say so.

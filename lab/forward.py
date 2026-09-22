@@ -62,6 +62,7 @@ REGISTRY = [
     ("Ophelia-solo-ownmap", {"solo": "Ophelia", "sector_map_builder": _own_map},
                                                       "2026-09-22", "Pass 10, the owner's map (weekly clusters)"),
     ("Cecil-solo",    {"solo": "Cecil"},              "2026-09-22", "Pass 11, the engine alone with a point-in-time P/E"),
+    ("Union-equal",   {"union": True},                "2026-09-22", "Pass 13, every engine's five, equal over the union"),
 ]
 PAGE = lab.LAB / "FORWARD.md"
 DATA = lab.RESULTS / "forward.json"

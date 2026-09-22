@@ -342,7 +342,9 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
              Ophelia's sector map for this replay only (Pass 10's clusters);
              {"pe_builder": f} with f(names, raw, weeks) -> get_pe(ticker,
              date) hands Cecil a point-in-time P/E for this replay only
-             (Pass 11); without it his multiple is unknown, value leg neutral
+             (Pass 11); without it his multiple is unknown, value leg neutral;
+             {"union": True} books every engine's top five, equal weights
+             over the union, no consensus (Pass 13's Union-equal)
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
@@ -466,6 +468,14 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
         if solo:
             picks = {"Cecil": c, "Marky": m, "Ophelia": o}[solo].get("stocks", [])[:5]
             book = [(x["ticker"], 1.0 / len(picks), solo) for x in picks]
+        elif knobs.get("union"):          # {"union": True}: every engine's top five, equal over the union (Pass 13)
+            names, sponsor = [], {}
+            for eng, res_ in (("Ophelia", o), ("Cecil", c), ("Marky", m)):
+                for x in res_.get("stocks", [])[:5]:
+                    if x["ticker"] not in sponsor:
+                        names.append(x["ticker"])
+                        sponsor[x["ticker"]] = eng
+            book = [(t, 1.0 / len(names), sponsor[t]) for t in names]
         else:
             book = [(t, w, res.attribution.get(t)) for t, w in res.portfolio.items()]
         spy = adj["SPY"].week_return(W) or 0.0
