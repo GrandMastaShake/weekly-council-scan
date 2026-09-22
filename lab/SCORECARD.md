@@ -35,6 +35,9 @@ registered rule (pass), failed it (no), a pass explained by hindsight (H).
 | | the 111 | the owner's themes +0.63 (1.18); +0.37 over engine 8 (0.78): no | no P/E -0.29; P/E -0.23; cheapest five -0.01 | | |
 | Nuggets A, does an edge persist (lag-1 r) | the 277 | +0.02 | -0.02 | -0.16 (channel -0.09) | no member's edge persists; weight them equally |
 | What-if, ranks 3-5 vs 1-2 | the 277 | | | -0.11%/wk (-0.31) | no |
+| Pass 12, Cecil's legs re-weighted | as of 2024-09 | | as is +0.25% (+1.34); value 60:40 +0.13; 70:30 +0.25; value only +0.26 (more volatile); safety only -0.26 (paired **-0.51, t -2.16**); + EPS growth -0.08 | | none helps; the value leg is the working part, the blend is what keeps him steady |
+| Pass 13 A, held 1 / 2 / 4 / 8 weeks (edge per week of holding) | as of 2024-09 | +0.66 / +0.51 / -0.21 / -0.02: gone by four | **+0.34 / +0.30 / +0.21 / +0.25: keeps** | +0.02 / +0.10 / +0.08 / -0.07 | all 15: +0.27 (2.16) / +0.26 / +0.04 / +0.05; no horizon beats hold-1 net of a 0.10% round trip |
+| Pass 13 B, managing the week (net vs the plain hold) | as of 2024-09 | stop -0.29; rotate -0.16; reverse +0.00 | stop -0.14; rotate **-0.21 (t -2.52)**; rotate Wed **-0.19 (t -2.96)** | all within +/-0.12 | all 15: stop -0.13, rotate -0.04; every rule that acts costs, and the stops cost the members more than random books |
 
 ## 2. On the Council's nine weeks (seen)
 
@@ -56,7 +59,8 @@ registered rule (pass), failed it (no), a pass explained by hindsight (H).
 | Pass 10 (Ophelia's map, the 111) | engine 8 -1.71; GICS 11 -0.02; our own 11 -0.16; the owner's themes +0.49 (6 of 9) | | | |
 | Pass 10 (as of 2024-09) | our own 11 **+2.51% (2.72)**, 7 of 9; engine 8 -0.99 | | | |
 | Pass 11 (Cecil, the 111) | | no P/E -0.91; P/E -0.38; cheapest five +1.09 (1.87), 7 of 9 | | |
-| Live week 2026-09-21 (twelve books, scored after 09-25) | | | | pending |
+| Pass 13 B, managing the week (net vs the plain hold) | stops +0.8%/wk (she was losing those weeks) | rotate Wed +0.25 | stop **-0.63 (t -2.67)**; stop vs SPY -0.74 | all 15: rotate +0.21; nine seen weeks decide nothing |
+| Live week 2026-09-21 (fourteen books, scored after 09-25) | | | | pending |
 
 ## 3. Do they look at different things?
 
@@ -94,7 +98,10 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   multiple, a value-and-safety screen: +0.30%/wk over random on the clean
   list, steady across half-years, ahead in 61 of 96 weeks against his old
   self; nothing on the 111, a growth list. The one member whose weak signal
-  is *steady* rather than a regime. **The agent** was the better of the two
+  is *steady* rather than a regime, and the one whose picks keep it: held
+  one, two, four or eight weeks his edge per week stays at +0.2 to +0.3
+  (Pass 13), while removing his value leg costs 0.51%/wk (Pass 12); his
+  legs resist tuning and are right as designed. **The agent** was the better of the two
   LLM members on the nine weeks (+0.41%/wk, 57th percentile), which is
   nothing yet.
 - **Marky.** The channel pullback (v3) is the only design that beat random
@@ -106,7 +113,12 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   separate books +0.58%); v2.1 fixed the seating, not the returns; the vote
   swapped one name in nine weeks and objected names beat approved ones; the
   Warden is a cash position with a fee; a wider universe, finer sector maps
-  and holding longer all failed. What held up on weeks nobody tuned: the
+  and holding longer all failed, and so did managing the week: every
+  Tuesday rule that acts (stops, the worst-two-into-best-three rotation)
+  costs, because the members' Tuesday losers recover more than random ones
+  (Pass 13). One thing added up: the union of the three engines' picks,
+  equal, Cecil's P/E in, +0.27%/wk over random (t 2.16) gross on the clean
+  list, 82% of it in 2026H1, on the forward record as Union-equal. What held up on weeks nobody tuned: the
   earnings blackout, and exposure.
 
 ## 5. The reading for the design question
@@ -119,5 +131,6 @@ None is significant; two are just under the line on a list with no
 hindsight. So the next question is not "different things" but "a job with a
 measurable signal, on the list where it exists, judged forward": Ophelia
 alone, Ophelia under the owner's clusters, and Cecil alone with a P/E are on
-the forward record from 2026-09-22 and 09-28, and twelve books sit on the
+the forward record from 2026-09-22 and 09-28, with the union of the three
+(Union-equal) beside them, and fourteen books sit on the
 live record for the week of 2026-09-21.
