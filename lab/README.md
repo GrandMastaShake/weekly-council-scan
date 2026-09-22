@@ -1370,3 +1370,41 @@ number joins the hindsight file with the rest.
 
     python lab/fetch_sp500.py dates
     python lab/pass9_universe.py asof
+
+## Pass 9b results -- not the additions, not momentum, one regime
+
+Run after the registration commit (b6c1bbd); `results/pass9b_sp500_asof.json`.
+On the 463 names already in the index on 2024-09-09 (427 tradeable a week),
+Ophelia's clipped edge over random is **+0.67%/wk (t +1.86)**, 55 of 96
+weeks ahead, halves +0.44 / +0.91, against +0.69% on today's list; the
+additions' share is -0.01%/wk (t -0.05). Marky +0.04%, Cecil -0.29%, three
+chairs +0.14% (t +0.90). The registered verdict is **no** (t under 2), and my
+prediction that the additions carried her was **wrong**: they carried
+nothing.
+
+**What she is** (unregistered diagnostics, from the results and the cached
+prices):
+- *One regime.* By half-year: 2024H2 -0.92%/wk (5 of 17 weeks ahead); 2025H1
+  +0.99% (18 of 26); 2025H2 +0.33% (15 of 26); 2026H1 **+2.05%** (17 of 26).
+  2026H1 is 83% of the two-year total, and two weeks of it (2026-04-27
+  +9.6%, 2026-05-04 +19.6%) are 45%. In those weeks she held three names,
+  all semiconductors (MCHP, INTC, ON; then INTC +26%, MU +33%, QCOM +24%
+  raw): the rotation anchor had her all in one sector during its melt-up.
+- *Not plain momentum.* A 12-1 relative-strength top five on the same names
+  each week makes +0.09%/wk (t +0.23, 49 of 96 ahead). The two share 3% of
+  their names a week and their weekly edges correlate +0.14; her engine is a
+  sector bet, not a stock screen.
+- *Not survivorship the other way either.* Removals since 2024-09 are absent
+  from the list, which if anything raises the random baseline she is scored
+  against.
+
+**Reading.** A concentrated sector-rotation bet that paid in one half-year on
+a broad list and lost in another, ahead in 57% of weeks. It is the strongest
+lead this lab has produced on a list with no hindsight additions, and it is
+still not an edge by the registered line. It stays in the file, and the
+forward record is its judge. The cheap next step, the owner's call: put the
+engine Ophelia *alone* on the forward record (a `solo` knob in
+`engine_lab.run` and one line in `forward.py`'s registry), so her weeks
+accrue from now on the live universe without another history run. Pass 9's
+verdict stands: the 111 is enough for this team, and the S&P 500 does not
+rescue it either.
