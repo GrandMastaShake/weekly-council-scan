@@ -313,9 +313,10 @@ def _set_knobs(engines, knobs):
 
 
 def _install_taps(engines):
-    """Both engines hand their full, sorted score table to log_ties(); a tap
-    there records every ticker's inputs without touching the engine code."""
-    for name in ("marky", "ophelia"):
+    """The engines hand their full, sorted score table to log_ties(); a tap
+    there records every ticker's inputs without touching the engine code
+    (Cecil's legs join the capture 2026-09-22, Pass 12)."""
+    for name in ("marky", "ophelia", "cecil"):
         mod = engines[name]
         if getattr(mod.log_ties, "lab_tap", False):
             continue

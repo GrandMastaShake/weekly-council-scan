@@ -1640,3 +1640,47 @@ the lab's read is that on a 109-name list any twelve-way split runs into
 Pass 10's lesson, small groups chase, and that the data's own grouping (our
 own 11, on the forward record) treats quantum, space, nuclear, crypto and
 biotech as one risk-on basket rather than five themes.
+
+## Pass 12 -- Cecil's legs (registered before any run)
+
+Pass 11's one live lead was Cecil with a point-in-time P/E: +0.30%/wk over
+random on the clean list, steady by half-year. His score is three legs,
+value (40; P/E 5 to 40 points, 25 to 8, above 25 or negative to 0, unknown
+to 15), quality (30; a neutral 15 in the lab, since there are no
+point-in-time fundamentals) and safety (30; 20 for low realized volatility,
+10 for a shallow drawdown). So the real dial is value against safety, and
+the one quality input that is point in time, EPS growth from the quarterly
+history we cache, is missing. `pass12_cecil_legs.py` captures his per-name
+legs once a week from the engine's own table (the lab's tap on `log_ties`,
+P/E in) and re-ranks them under other weights offline, with the engine's
+own tie-breaks; "as is" must reproduce Pass 11's Cecil, P/E five.
+
+| Variant | Value | Safety | Growth leg |
+|---|---|---|---|
+| as is | x1 | x1 | none (Pass 11's Cecil, P/E) |
+| value 60:40 | x1.5 | x1.333 | none |
+| value 70:30 | x1.75 | x1 | none |
+| value only | x1 | x0 | none |
+| safety only | x0 | x1 | none (the old lab Cecil) |
+| + growth 20 | x1 | x1 | 20 points |
+| + growth 30 | x1 | x1 | 30 points |
+
+Growth is the trailing four quarters' EPS against the four before, as known
+by the Monday: 0 at or below zero growth, full at +30%, neutral (half) when
+unknown. Quality stays at weight 1 throughout (the engine's tie-break).
+Scored as in Passes 9-11 on the S&P 500 as of 2024-09 (which decides) and
+the 111 (reported); 96 history weeks and the nine Council weeks.
+
+**Predictions.** More value weight raises his mean and his weekly SD (cheap
+names are the volatile ones on this list); value only lands near the
+cheapest five's +0.21%; safety only lands near the old Cecil's -0.28%. The
+growth leg is a small help, +0.1% to +0.3%/wk over as is, under t 2. Nothing
+passes.
+
+**What counts** (history, the clean list): a variant *helps* if its paired
+clipped edge over as is is positive with t >= 2 and both halves positive.
+Six variants at the line: about one in four that one passes by luck. A
+variant that helps is the case for changing Cecil's weights in production,
+through the freeze; it goes to the forward record first.
+
+    python lab/pass12_cecil_legs.py
