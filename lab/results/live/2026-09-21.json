@@ -425,6 +425,30 @@
    "rule": "Pass 10: the engine Ophelia's five with sectors replaced by weekly correlation clusters (k=11, 52 weeks)",
    "added": "2026-09-22T08:16:51-04:00",
    "only_from": "Tuesday's open"
+  },
+  "Cecil engine with P/E, live 274": {
+   "picks": [
+    "AES",
+    "ALL",
+    "PRU"
+   ],
+   "universe": "live 274",
+   "names": 274,
+   "rule": "Pass 11: the engine Cecil's five with a point-in-time P/E, equal weights",
+   "added": "2026-09-22T08:47:15-04:00",
+   "only_from": "Tuesday's open"
+  },
+  "Cecil engine with P/E, the 111": {
+   "picks": [
+    "VICI",
+    "MTCH",
+    "STZ"
+   ],
+   "universe": "the 111",
+   "names": 109,
+   "rule": "Pass 11: the engine Cecil's five with a point-in-time P/E, equal weights",
+   "added": "2026-09-22T08:47:16-04:00",
+   "only_from": "Tuesday's open"
   }
  }
 }

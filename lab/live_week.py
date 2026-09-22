@@ -270,6 +270,32 @@ def add(label, name, specs):
           + (f"  (scored from {window})" if window else ""))
 
 
+def cecil(label):
+    """Add the engine Cecil's five with a point-in-time P/E (Pass 11) as two
+    variants, on the live 274 and on the 111; prices capped at the week's
+    Monday, the multiple from the EPS cache as known by the Friday before."""
+    import pass9_universe as p9
+    import pass11_cecil_themes as p11
+    from scan_pipeline.config.tickers import STOCK_UNIVERSE
+    U = p9.universes()
+    W = _monday(label)
+    real = lab.download
+    lab.download = lambda tickers, adjusted, end, start: real(tickers, adjusted, min(end, W), start)
+    try:
+        for uname, names in (("live 274", sorted(STOCK_UNIVERSE)), ("the 111", U[p9.REFERENCE])):
+            cal = lab.earnings_calendar(names)
+            row = lab.run(verbose=False, knobs=dict(lab.VARIANTS3["base"], pe_builder=p11.pe_builder),
+                          weeks=[(label, W, None)], earnings=cal, names=names)[0]
+            black = _blackout(label, names)
+            five = [t for t in row["proposals"]["Cecil"] if t not in black][:5]
+            name = f"Cecil engine with P/E, {uname}"
+            window = _add_variant(label, name, {"picks": five, "universe": uname, "names": len(names),
+                                                "rule": "Pass 11: the engine Cecil's five with a point-in-time P/E, equal weights"})
+            print(f"  {name}: {', '.join(five)}" + (f"  (scored from {window})" if window else ""))
+    finally:
+        lab.download = real
+
+
 def score_pending():
     """Score every recorded week whose Friday has closed and that has no
     score yet (the Monday task runs this)."""
@@ -357,7 +383,7 @@ def score(label):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("build", "record", "warden", "engines", "add", "score", "score-pending"))
+    ap.add_argument("command", choices=("build", "record", "warden", "engines", "cecil", "add", "score", "score-pending"))
     ap.add_argument("label", nargs="?")
     ap.add_argument("rest", nargs="*", help="build/record: DIR; add: NAME TICKER=PERCENT ...")
     a = ap.parse_args(argv)
@@ -374,6 +400,8 @@ def main(argv=None):
         warden(a.label)
     elif a.command == "engines":
         engines(a.label)
+    elif a.command == "cecil":
+        cecil(a.label)
     elif a.command == "add":
         add(a.label, a.rest[0], a.rest[1:])
     else:
