@@ -1,0 +1,506 @@
+# source: https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
+# fetched: 2026-09-22T07:58:53-04:00
+ticker,gics_sector,gics_sub_industry,date_added
+A,Health Care,Life Sciences Tools & Services,2000-06-05
+AAPL,Information Technology,"Technology Hardware, Storage & Peripherals",1982-11-30
+ABBV,Health Care,Biotechnology,2012-12-31
+ABNB,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2023-09-18
+ABT,Health Care,Health Care Equipment,1957-03-04
+ACGL,Financials,Property & Casualty Insurance,2022-11-01
+ACN,Information Technology,IT Consulting & Other Services,2011-07-06
+ADBE,Information Technology,Application Software,1997-05-05
+ADI,Information Technology,Semiconductors,1999-10-12
+ADM,Consumer Staples,Agricultural Products & Services,1957-03-04
+ADP,Industrials,Human Resource & Employment Services,1981-03-31
+ADSK,Information Technology,Application Software,1989-12-01
+AEE,Utilities,Multi-Utilities,1991-09-19
+AEP,Utilities,Electric Utilities,1957-03-04
+AES,Utilities,Independent Power Producers & Energy Traders,1998-10-02
+AFL,Financials,Life & Health Insurance,1999-05-28
+AIG,Financials,Multi-line Insurance,1980-03-31
+AIZ,Financials,Multi-line Insurance,2007-04-10
+AJG,Financials,Insurance Brokers,2016-05-31
+AKAM,Information Technology,Internet Services & Infrastructure,2007-07-12
+ALB,Materials,Specialty Chemicals,2016-07-01
+ALGN,Health Care,Health Care Supplies,2017-06-19
+ALL,Financials,Property & Casualty Insurance,1995-07-13
+ALLE,Industrials,Building Products,2013-12-02
+AMAT,Information Technology,Semiconductor Materials & Equipment,1995-03-16
+AMCR,Materials,Paper & Plastic Packaging Products & Materials,2019-06-07
+AMD,Information Technology,Semiconductors,2017-03-20
+AME,Industrials,Electrical Components & Equipment,2013-09-23
+AMGN,Health Care,Biotechnology,1992-01-02
+AMP,Financials,Asset Management & Custody Banks,2005-10-03
+AMT,Real Estate,Telecom Tower REITs,2007-11-19
+AMZN,Consumer Discretionary,Broadline Retail,2005-11-18
+ANET,Information Technology,Communications Equipment,2018-08-28
+AON,Financials,Insurance Brokers,1996-04-23
+AOS,Industrials,Building Products,2017-07-26
+APA,Energy,Oil & Gas Exploration & Production,1997-07-28
+APD,Materials,Industrial Gases,1985-04-30
+APH,Information Technology,Electronic Components,2008-09-30
+APO,Financials,Asset Management & Custody Banks,2024-12-23
+APP,Communication Services,Advertising,2025-09-22
+APTV,Consumer Discretionary,Automotive Parts & Equipment,2012-12-24
+ARE,Real Estate,Office REITs,2017-03-20
+ARES,Financials,Asset Management & Custody Banks,2025-12-11
+ATO,Utilities,Gas Utilities,2019-02-15
+AVGO,Information Technology,Semiconductors,2014-05-08
+AVY,Materials,Paper & Plastic Packaging Products & Materials,1987-12-31
+AWK,Utilities,Water Utilities,2016-03-04
+AXON,Industrials,Aerospace & Defense,2023-05-04
+AXP,Financials,Consumer Finance,1976-06-30
+AZO,Consumer Discretionary,Automotive Retail,1997-01-02
+BA,Industrials,Aerospace & Defense,1957-03-04
+BAC,Financials,Diversified Banks,1976-06-30
+BALL,Materials,"Metal, Glass & Plastic Containers",1984-10-31
+BAX,Health Care,Health Care Equipment,1972-09-30
+BBY,Consumer Discretionary,Computer & Electronics Retail,1999-06-29
+BDX,Health Care,Health Care Equipment,1972-09-30
+BE,Industrials,Electrical Components & Equipment,2026-09-21
+BEN,Financials,Asset Management & Custody Banks,1998-04-30
+BF-B,Consumer Staples,Distillers & Vintners,1982-10-31
+BG,Consumer Staples,Agricultural Products & Services,2023-03-15
+BIIB,Health Care,Biotechnology,2003-11-13
+BKNG,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2009-11-06
+BKR,Energy,Oil & Gas Equipment & Services,2017-07-07
+BLK,Financials,Asset Management & Custody Banks,2011-04-04
+BMY,Health Care,Pharmaceuticals,1957-03-04
+BNY,Financials,Asset Management & Custody Banks,1995-03-31
+BR,Industrials,Data Processing & Outsourced Services,2018-06-18
+BRK-B,Financials,Multi-Sector Holdings,2010-02-16
+BRO,Financials,Insurance Brokers,2021-09-20
+BSX,Health Care,Health Care Equipment,1995-02-24
+BX,Financials,Asset Management & Custody Banks,2023-09-18
+BXP,Real Estate,Office REITs,2006-04-03
+C,Financials,Diversified Banks,1988-05-31
+CAH,Health Care,Health Care Distributors,1997-05-27
+CARR,Industrials,Building Products,2020-04-03
+CASY,Consumer Staples,Food Retail,2026-04-09
+CAT,Industrials,Construction Machinery & Heavy Transportation Equipment,1957-03-04
+CB,Financials,Property & Casualty Insurance,2010-07-15
+CBOE,Financials,Financial Exchanges & Data,2017-03-01
+CBRE,Real Estate,Real Estate Services,2006-11-10
+CCI,Real Estate,Telecom Tower REITs,2012-03-14
+CCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",1998-12-22
+CDNS,Information Technology,Application Software,2017-09-18
+CDW,Information Technology,Technology Distributors,2019-09-23
+CEG,Utilities,Electric Utilities,2022-02-02
+CF,Materials,Fertilizers & Agricultural Chemicals,2008-08-27
+CFG,Financials,Regional Banks,2016-01-29
+CHD,Consumer Staples,Household Products,2015-12-29
+CHRW,Industrials,Air Freight & Logistics,2007-03-02
+CHTR,Communication Services,Cable & Satellite,2016-09-08
+CI,Health Care,Health Care Services,1976-06-30
+CIEN,Information Technology,Communications Equipment,2026-02-09
+CINF,Financials,Property & Casualty Insurance,1997-12-18
+CL,Consumer Staples,Household Products,1957-03-04
+CLX,Consumer Staples,Household Products,1969-03-31
+CMCSA,Communication Services,Cable & Satellite,2002-11-19
+CME,Financials,Financial Exchanges & Data,2006-08-11
+CMG,Consumer Discretionary,Restaurants,2011-04-28
+CMI,Industrials,Construction Machinery & Heavy Transportation Equipment,1965-03-31
+CMS,Utilities,Multi-Utilities,1957-03-04
+CNC,Health Care,Managed Health Care,2016-03-30
+CNP,Utilities,Multi-Utilities,1985-07-31
+COF,Financials,Consumer Finance,1998-07-01
+COHR,Information Technology,Electronic Components,2026-03-23
+COIN,Financials,Financial Exchanges & Data,2025-05-19
+COO,Health Care,Health Care Supplies,2016-09-23
+COP,Energy,Oil & Gas Exploration & Production,1957-03-04
+COR,Health Care,Health Care Distributors,2001-08-30
+COST,Consumer Staples,Consumer Staples Merchandise Retail,1993-10-01
+CPAY,Financials,Transaction & Payment Processing Services,2018-06-20
+CPRT,Industrials,Diversified Support Services,2018-07-02
+CPT,Real Estate,Multi-Family Residential REITs,2022-04-04
+CRH,Materials,Construction Materials,2025-12-22
+CRL,Health Care,Life Sciences Tools & Services,2021-05-14
+CRM,Information Technology,Application Software,2008-09-15
+CRWD,Information Technology,Systems Software,2024-06-24
+CSCO,Information Technology,Communications Equipment,1993-12-01
+CSGP,Real Estate,Real Estate Services,2022-09-19
+CSX,Industrials,Rail Transportation,1957-03-04
+CTAS,Industrials,Diversified Support Services,2001-03-01
+CTSH,Information Technology,IT Consulting & Other Services,2006-11-17
+CTVA,Materials,Fertilizers & Agricultural Chemicals,2019-06-03
+CVNA,Consumer Discretionary,Automotive Retail,2025-12-22
+CVS,Health Care,Health Care Services,1957-03-04
+CVX,Energy,Integrated Oil & Gas,1957-03-04
+D,Utilities,Multi-Utilities,2016-11-30
+DAL,Industrials,Passenger Airlines,2013-09-11
+DASH,Consumer Discretionary,Specialized Consumer Services,2025-03-24
+DD,Industrials,Industrial Conglomerates,2019-06-03
+DDOG,Information Technology,Application Software,2025-07-09
+DE,Industrials,Agricultural & Farm Machinery,1957-03-04
+DECK,Consumer Discretionary,Footwear,2024-03-18
+DELL,Information Technology,"Technology Hardware, Storage & Peripherals",2024-09-23
+DG,Consumer Staples,Consumer Staples Merchandise Retail,2012-12-03
+DGX,Health Care,Health Care Services,2002-12-12
+DHI,Consumer Discretionary,Homebuilding,2005-06-22
+DHR,Health Care,Life Sciences Tools & Services,1998-11-18
+DIS,Communication Services,Movies & Entertainment,1976-06-30
+DLR,Real Estate,Data Center REITs,2016-05-18
+DLTR,Consumer Staples,Consumer Staples Merchandise Retail,2011-12-19
+DOC,Real Estate,Health Care REITs,2008-03-31
+DOV,Industrials,Industrial Machinery & Supplies & Components,1985-10-31
+DOW,Materials,Commodity Chemicals,2019-04-01
+DPZ,Consumer Discretionary,Restaurants,2020-05-12
+DRI,Consumer Discretionary,Restaurants,1995-05-31
+DTE,Utilities,Multi-Utilities,1957-03-04
+DUK,Utilities,Electric Utilities,1976-06-30
+DVA,Health Care,Health Care Services,2008-07-31
+DVN,Energy,Oil & Gas Exploration & Production,2000-08-30
+DXCM,Health Care,Health Care Equipment,2020-05-12
+EBAY,Consumer Discretionary,Broadline Retail,2002-07-22
+ECHO,Communication Services,Wireless Telecommunication Services,2026-03-23
+ECL,Materials,Specialty Chemicals,1989-01-31
+ED,Utilities,Multi-Utilities,1957-03-04
+EFX,Industrials,Research & Consulting Services,1997-06-19
+EG,Financials,Reinsurance,2017-06-19
+EIX,Utilities,Electric Utilities,1957-03-04
+EL,Consumer Staples,Personal Care Products,2006-01-05
+ELV,Health Care,Managed Health Care,2002-07-25
+EME,Industrials,Construction & Engineering,2025-09-22
+EMR,Industrials,Electrical Components & Equipment,1965-03-31
+EOG,Energy,Oil & Gas Exploration & Production,2000-11-02
+EQIX,Real Estate,Data Center REITs,2015-03-20
+EQT,Energy,Oil & Gas Exploration & Production,2022-10-03
+ERIE,Financials,Insurance Brokers,2024-09-23
+ES,Utilities,Electric Utilities,2009-07-24
+ESS,Real Estate,Multi-Family Residential REITs,2014-04-02
+ETN,Industrials,Electrical Components & Equipment,1957-03-04
+ETR,Utilities,Electric Utilities,1957-03-04
+EVRG,Utilities,Electric Utilities,2018-06-05
+EW,Health Care,Health Care Equipment,2011-04-01
+EXC,Utilities,Electric Utilities,1957-03-04
+EXE,Energy,Oil & Gas Exploration & Production,2025-03-24
+EXPD,Industrials,Air Freight & Logistics,2007-10-10
+EXPE,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2007-10-02
+EXR,Real Estate,Self-Storage REITs,2016-01-19
+F,Consumer Discretionary,Automobile Manufacturers,1957-03-04
+FANG,Energy,Oil & Gas Exploration & Production,2018-12-03
+FAST,Industrials,Trading Companies & Distributors,2008-09-15
+FCX,Materials,Copper,2011-07-01
+FDS,Financials,Financial Exchanges & Data,2021-12-20
+FDX,Industrials,Air Freight & Logistics,1980-12-31
+FDXF,Industrials,Cargo Ground Transportation,2026-06-01
+FE,Utilities,Electric Utilities,1997-11-28
+FERG,Industrials,Trading Companies & Distributors,2026-08-05
+FFIV,Information Technology,Communications Equipment,2010-12-20
+FICO,Information Technology,Application Software,2023-03-20
+FIS,Financials,Transaction & Payment Processing Services,2006-11-10
+FISV,Financials,Transaction & Payment Processing Services,2001-04-02
+FITB,Financials,Regional Banks,1996-03-29
+FIX,Industrials,Construction & Engineering,2025-12-22
+FLEX,Information Technology,Electronic Manufacturing Services,2026-06-22
+FOX,Communication Services,Broadcasting,2019-03-19
+FOXA,Communication Services,Broadcasting,2019-03-19
+FRT,Real Estate,Retail REITs,2016-02-01
+FSLR,Information Technology,Semiconductors,2022-12-19
+FTNT,Information Technology,Systems Software,2018-10-11
+FTV,Industrials,Industrial Machinery & Supplies & Components,2016-07-01
+GD,Industrials,Aerospace & Defense,1957-03-04
+GDDY,Information Technology,Internet Services & Infrastructure,2024-06-24
+GE,Industrials,Aerospace & Defense,1957-03-04
+GEHC,Health Care,Health Care Equipment,2023-01-04
+GEN,Information Technology,Systems Software,2003-03-25
+GEV,Industrials,Heavy Electrical Equipment,2024-04-02
+GILD,Health Care,Biotechnology,2004-07-01
+GIS,Consumer Staples,Packaged Foods & Meats,1957-03-04
+GL,Financials,Life & Health Insurance,1989-04-30
+GLW,Information Technology,Electronic Components,1995-02-27
+GM,Consumer Discretionary,Automobile Manufacturers,2013-06-06
+GNRC,Industrials,Heavy Electrical Equipment,2021-03-22
+GOOG,Communication Services,Interactive Media & Services,2014-04-03
+GOOGL,Communication Services,Interactive Media & Services,2006-04-03
+GPC,Consumer Discretionary,Distributors,1973-12-31
+GPN,Financials,Transaction & Payment Processing Services,2016-04-25
+GRMN,Consumer Discretionary,Consumer Electronics,2012-12-12
+GS,Financials,Investment Banking & Brokerage,2002-07-22
+GWW,Industrials,Industrial Machinery & Supplies & Components,1981-06-30
+HAL,Energy,Oil & Gas Equipment & Services,1957-03-04
+HAS,Consumer Discretionary,Leisure Products,1984-09-30
+HBAN,Financials,Regional Banks,1997-08-28
+HCA,Health Care,Health Care Facilities,2015-01-27
+HD,Consumer Discretionary,Home Improvement Retail,1988-03-31
+HIG,Financials,Property & Casualty Insurance,1957-03-04
+HII,Industrials,Aerospace & Defense,2018-01-03
+HLT,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2017-06-19
+HON,Industrials,Industrial Conglomerates,1957-03-04
+HONA,Industrials,Aerospace & Defense,2026-06-29
+HOOD,Financials,Investment Banking & Brokerage,2025-09-22
+HPE,Information Technology,"Technology Hardware, Storage & Peripherals",2015-11-02
+HPQ,Information Technology,"Technology Hardware, Storage & Peripherals",1974-12-31
+HRL,Consumer Staples,Packaged Foods & Meats,2009-03-04
+HSIC,Health Care,Health Care Distributors,2015-03-17
+HST,Real Estate,Hotel & Resort REITs,2007-03-20
+HSY,Consumer Staples,Packaged Foods & Meats,1957-03-04
+HUBB,Industrials,Industrial Machinery & Supplies & Components,2023-10-18
+HUM,Health Care,Managed Health Care,2012-12-10
+HWM,Industrials,Aerospace & Defense,2016-10-21
+IBKR,Financials,Investment Banking & Brokerage,2025-08-28
+IBM,Information Technology,IT Consulting & Other Services,1957-03-04
+ICE,Financials,Financial Exchanges & Data,2007-09-26
+IDXX,Health Care,Health Care Equipment,2017-01-05
+IEX,Industrials,Industrial Machinery & Supplies & Components,2019-08-09
+IFF,Materials,Specialty Chemicals,1976-03-31
+ILMN,Health Care,Life Sciences Tools & Services,2026-09-21
+INCY,Health Care,Biotechnology,2017-02-28
+INTC,Information Technology,Semiconductors,1976-12-31
+INTU,Information Technology,Application Software,2000-12-05
+INVH,Real Estate,Single-Family Residential REITs,2022-09-19
+IP,Materials,Paper & Plastic Packaging Products & Materials,1957-03-04
+IQV,Health Care,Life Sciences Tools & Services,2017-08-29
+IR,Industrials,Industrial Machinery & Supplies & Components,2020-03-03
+IRM,Real Estate,Other Specialized REITs,2009-01-06
+ISRG,Health Care,Health Care Equipment,2008-06-02
+IT,Information Technology,IT Consulting & Other Services,2017-04-05
+ITW,Industrials,Industrial Machinery & Supplies & Components,1986-02-28
+IVZ,Financials,Asset Management & Custody Banks,2008-08-21
+J,Industrials,Construction & Engineering,2007-10-26
+JBHT,Industrials,Cargo Ground Transportation,2015-07-01
+JBL,Information Technology,Electronic Manufacturing Services,2023-12-18
+JCI,Industrials,Building Products,2010-08-27
+JKHY,Financials,Transaction & Payment Processing Services,2018-11-13
+JNJ,Health Care,Pharmaceuticals,1973-06-30
+JPM,Financials,Diversified Banks,1975-06-30
+KDP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2022-06-21
+KEY,Financials,Regional Banks,1994-03-01
+KEYS,Information Technology,Electronic Equipment & Instruments,2018-11-06
+KHC,Consumer Staples,Packaged Foods & Meats,2015-07-06
+KIM,Real Estate,Retail REITs,2006-04-04
+KKR,Financials,Asset Management & Custody Banks,2024-06-24
+KLAC,Information Technology,Semiconductor Materials & Equipment,1997-09-30
+KMB,Consumer Staples,Household Products,1957-03-04
+KMI,Energy,Oil & Gas Storage & Transportation,2012-05-25
+KO,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,1957-03-04
+KR,Consumer Staples,Food Retail,1957-03-04
+KVUE,Consumer Staples,Personal Care Products,2023-08-25
+L,Financials,Multi-line Insurance,1995-05-31
+LDOS,Industrials,Diversified Support Services,2019-08-09
+LEN,Consumer Discretionary,Homebuilding,2005-10-04
+LH,Health Care,Health Care Services,2004-11-01
+LHX,Industrials,Aerospace & Defense,2008-09-22
+LII,Industrials,Building Products,2024-12-23
+LIN,Materials,Industrial Gases,1992-07-01
+LITE,Information Technology,Communications Equipment,2026-03-23
+LLY,Health Care,Pharmaceuticals,1970-12-31
+LMT,Industrials,Aerospace & Defense,1957-03-04
+LNT,Utilities,Electric Utilities,2016-07-01
+LOW,Consumer Discretionary,Home Improvement Retail,1984-02-29
+LRCX,Information Technology,Semiconductor Materials & Equipment,2012-06-29
+LULU,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2023-10-18
+LUV,Industrials,Passenger Airlines,1994-07-01
+LVS,Consumer Discretionary,Casinos & Gaming,2019-10-03
+LYB,Materials,Specialty Chemicals,2012-09-05
+LYV,Communication Services,Movies & Entertainment,2019-12-23
+MA,Financials,Transaction & Payment Processing Services,2008-07-18
+MAA,Real Estate,Multi-Family Residential REITs,2016-12-02
+MAR,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",1998-05-29
+MAS,Industrials,Building Products,1981-06-30
+MCD,Consumer Discretionary,Restaurants,1970-06-30
+MCHP,Information Technology,Semiconductors,2007-09-07
+MCK,Health Care,Health Care Distributors,1999-01-13
+MCO,Financials,Financial Exchanges & Data,1998-07-01
+MDLZ,Consumer Staples,Packaged Foods & Meats,2012-10-02
+MDT,Health Care,Health Care Equipment,1986-10-31
+MET,Financials,Life & Health Insurance,2000-12-11
+META,Communication Services,Interactive Media & Services,2013-12-23
+MGM,Consumer Discretionary,Casinos & Gaming,2017-07-26
+MKC,Consumer Staples,Packaged Foods & Meats,2003-03-20
+MLM,Materials,Construction Materials,2014-07-02
+MMM,Industrials,Industrial Conglomerates,1957-03-04
+MNST,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,2012-06-28
+MO,Consumer Staples,Tobacco,1957-03-04
+MOS,Materials,Fertilizers & Agricultural Chemicals,2011-09-26
+MPC,Energy,Oil & Gas Refining & Marketing,2011-07-01
+MPWR,Information Technology,Semiconductors,2021-02-12
+MRK,Health Care,Pharmaceuticals,1957-03-04
+MRNA,Health Care,Biotechnology,2021-07-21
+MRSH,Financials,Insurance Brokers,1987-08-31
+MRVL,Information Technology,Semiconductors,2026-06-22
+MS,Financials,Investment Banking & Brokerage,1993-07-29
+MSCI,Financials,Financial Exchanges & Data,2018-04-04
+MSFT,Information Technology,Systems Software,1994-06-01
+MSI,Information Technology,Communications Equipment,1957-03-04
+MTB,Financials,Regional Banks,2004-02-23
+MTD,Health Care,Life Sciences Tools & Services,2016-09-06
+MU,Information Technology,Semiconductors,1994-09-27
+NCLH,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2017-10-13
+NDAQ,Financials,Financial Exchanges & Data,2008-10-22
+NDSN,Industrials,Industrial Machinery & Supplies & Components,2022-02-15
+NEE,Utilities,Multi-Utilities,1976-06-30
+NEM,Materials,Gold,1969-06-30
+NFLX,Communication Services,Movies & Entertainment,2010-12-20
+NI,Utilities,Multi-Utilities,2000-11-02
+NKE,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",1988-11-30
+NOC,Industrials,Aerospace & Defense,1957-03-04
+NOW,Information Technology,Systems Software,2019-11-21
+NRG,Utilities,Independent Power Producers & Energy Traders,2010-01-29
+NSC,Industrials,Rail Transportation,1957-03-04
+NTAP,Information Technology,"Technology Hardware, Storage & Peripherals",1999-06-25
+NTRS,Financials,Asset Management & Custody Banks,1998-01-30
+NUE,Materials,Steel,1985-04-30
+NVDA,Information Technology,Semiconductors,2001-11-30
+NVR,Consumer Discretionary,Homebuilding,2019-09-26
+NWS,Communication Services,Publishing,2015-09-18
+NWSA,Communication Services,Publishing,2013-08-01
+NXPI,Information Technology,Semiconductors,2021-03-22
+O,Real Estate,Retail REITs,2015-04-07
+ODFL,Industrials,Cargo Ground Transportation,2019-12-09
+OKE,Energy,Oil & Gas Storage & Transportation,2010-03-15
+OMC,Communication Services,Advertising,1997-12-31
+ON,Information Technology,Semiconductors,2022-06-21
+ORCL,Information Technology,Application Software,1989-08-31
+ORLY,Consumer Discretionary,Automotive Retail,2009-03-27
+OTIS,Industrials,Industrial Machinery & Supplies & Components,2020-04-03
+OXY,Energy,Oil & Gas Exploration & Production,1957-03-04
+P,Information Technology,"Technology Hardware, Storage & Peripherals",2026-09-21
+PANW,Information Technology,Systems Software,2023-06-20
+PAYX,Industrials,Human Resource & Employment Services,1998-10-01
+PCAR,Industrials,Construction Machinery & Heavy Transportation Equipment,1980-12-31
+PCG,Utilities,Multi-Utilities,2022-10-03
+PEG,Utilities,Electric Utilities,1957-03-04
+PEP,Consumer Staples,Soft Drinks & Non-alcoholic Beverages,1957-03-04
+PFE,Health Care,Pharmaceuticals,1957-03-04
+PFG,Financials,Life & Health Insurance,2002-07-22
+PG,Consumer Staples,Personal Care Products,1957-03-04
+PGR,Financials,Property & Casualty Insurance,1997-08-04
+PH,Industrials,Industrial Machinery & Supplies & Components,1985-11-30
+PHM,Consumer Discretionary,Homebuilding,1984-04-30
+PKG,Materials,Paper & Plastic Packaging Products & Materials,2017-07-26
+PLD,Real Estate,Industrial REITs,2003-07-17
+PLTR,Information Technology,Application Software,2024-09-23
+PM,Consumer Staples,Tobacco,2008-03-31
+PNC,Financials,Diversified Banks,1988-04-30
+PNR,Industrials,Industrial Machinery & Supplies & Components,2012-10-01
+PNW,Utilities,Multi-Utilities,1999-10-04
+PODD,Health Care,Health Care Equipment,2023-03-15
+PPG,Materials,Specialty Chemicals,1957-03-04
+PPL,Utilities,Electric Utilities,2001-10-01
+PRU,Financials,Life & Health Insurance,2002-07-22
+PSA,Real Estate,Self-Storage REITs,2005-08-19
+PSKY,Communication Services,Movies & Entertainment,1994-09-30
+PSX,Energy,Oil & Gas Refining & Marketing,2012-05-01
+PTC,Information Technology,Application Software,2021-04-20
+PWR,Industrials,Construction & Engineering,2009-07-01
+PYPL,Financials,Transaction & Payment Processing Services,2015-07-20
+Q,Information Technology,Semiconductor Materials & Equipment,2025-11-03
+QCOM,Information Technology,Semiconductors,1999-07-22
+RCL,Consumer Discretionary,"Hotels, Resorts & Cruise Lines",2014-12-05
+RDDT,Communication Services,Interactive Media & Services,2026-08-18
+REG,Real Estate,Retail REITs,2017-03-02
+REGN,Health Care,Biotechnology,2013-05-01
+RF,Financials,Regional Banks,1998-08-28
+RJF,Financials,Investment Banking & Brokerage,2017-03-20
+RL,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2007-02-02
+RMD,Health Care,Health Care Equipment,2017-07-26
+ROK,Industrials,Electrical Components & Equipment,2000-03-12
+ROL,Industrials,Environmental & Facilities Services,2018-10-01
+ROP,Information Technology,Electronic Equipment & Instruments,2009-12-23
+ROST,Consumer Discretionary,Apparel Retail,2009-12-21
+RSG,Industrials,Environmental & Facilities Services,2008-12-05
+RTX,Industrials,Aerospace & Defense,1957-03-04
+RVTY,Health Care,Health Care Equipment,1985-05-31
+SBAC,Real Estate,Telecom Tower REITs,2017-09-01
+SBUX,Consumer Discretionary,Restaurants,2000-06-07
+SCHW,Financials,Investment Banking & Brokerage,1997-06-02
+SHW,Materials,Specialty Chemicals,1964-06-30
+SJM,Consumer Staples,Packaged Foods & Meats,2008-11-06
+SLB,Energy,Oil & Gas Equipment & Services,1957-03-04
+SMCI,Information Technology,"Technology Hardware, Storage & Peripherals",2024-03-18
+SNA,Industrials,Industrial Machinery & Supplies & Components,1982-09-30
+SNDK,Information Technology,"Technology Hardware, Storage & Peripherals",2025-11-28
+SNPS,Information Technology,Application Software,2017-03-16
+SO,Utilities,Electric Utilities,1957-03-04
+SOLV,Health Care,Health Care Technology,2024-04-01
+SPG,Real Estate,Retail REITs,2002-06-26
+SPGI,Financials,Financial Exchanges & Data,1957-03-04
+SRE,Utilities,Multi-Utilities,2017-03-17
+STE,Health Care,Health Care Equipment,2019-12-23
+STLD,Materials,Steel,2022-12-22
+STT,Financials,Asset Management & Custody Banks,2003-03-14
+STX,Information Technology,"Technology Hardware, Storage & Peripherals",2012-07-02
+STZ,Consumer Staples,Distillers & Vintners,2005-07-01
+SW,Materials,Paper & Plastic Packaging Products & Materials,2024-07-08
+SWK,Industrials,Industrial Machinery & Supplies & Components,1982-09-30
+SWKS,Information Technology,Semiconductors,2015-03-12
+SYF,Financials,Consumer Finance,2015-11-18
+SYK,Health Care,Health Care Equipment,2000-12-12
+SYY,Consumer Staples,Food Distributors,1986-12-31
+T,Communication Services,Integrated Telecommunication Services,1983-11-30
+TDG,Industrials,Aerospace & Defense,2016-06-03
+TDY,Information Technology,Electronic Equipment & Instruments,2020-06-22
+TECH,Health Care,Life Sciences Tools & Services,2021-08-30
+TEL,Information Technology,Electronic Manufacturing Services,2011-10-17
+TER,Information Technology,Semiconductor Materials & Equipment,2020-09-21
+TFC,Financials,Diversified Banks,1997-12-04
+TGT,Consumer Staples,Consumer Staples Merchandise Retail,1976-12-31
+TJX,Consumer Discretionary,Apparel Retail,1985-09-30
+TKO,Communication Services,Movies & Entertainment,2025-03-24
+TMO,Health Care,Life Sciences Tools & Services,2004-08-03
+TMUS,Communication Services,Wireless Telecommunication Services,2019-07-15
+TPL,Energy,Oil & Gas Exploration & Production,2024-11-26
+TPR,Consumer Discretionary,"Apparel, Accessories & Luxury Goods",2004-09-01
+TRGP,Energy,Oil & Gas Storage & Transportation,2022-10-12
+TRMB,Information Technology,Application Software,2021-01-21
+TROW,Financials,Asset Management & Custody Banks,2019-07-29
+TRV,Financials,Property & Casualty Insurance,2002-08-21
+TSCO,Consumer Discretionary,Other Specialty Retail,2014-01-24
+TSLA,Consumer Discretionary,Automobile Manufacturers,2020-12-21
+TSN,Consumer Staples,Packaged Foods & Meats,2005-08-10
+TT,Industrials,Building Products,2010-11-17
+TTWO,Communication Services,Interactive Home Entertainment,2018-03-19
+TXN,Information Technology,Semiconductors,2001-03-12
+TXT,Industrials,Aerospace & Defense,1978-12-31
+TYL,Information Technology,Application Software,2020-06-22
+UAL,Industrials,Passenger Airlines,2015-09-03
+UBER,Industrials,Passenger Ground Transportation,2023-12-18
+UDR,Real Estate,Multi-Family Residential REITs,2016-03-07
+UHS,Health Care,Health Care Facilities,2014-09-20
+ULTA,Consumer Discretionary,Other Specialty Retail,2016-04-18
+UNH,Health Care,Managed Health Care,1994-07-01
+UNP,Industrials,Rail Transportation,1957-03-04
+UPS,Industrials,Air Freight & Logistics,2002-07-22
+URI,Industrials,Trading Companies & Distributors,2014-09-20
+USB,Financials,Diversified Banks,1999-11-01
+V,Financials,Transaction & Payment Processing Services,2009-12-21
+VEEV,Health Care,Health Care Technology,2026-05-07
+VICI,Real Estate,Hotel & Resort REITs,2022-06-08
+VLO,Energy,Oil & Gas Refining & Marketing,2002-12-20
+VLTO,Industrials,Environmental & Facilities Services,2023-10-02
+VMC,Materials,Construction Materials,1999-06-30
+VMRK,Real Estate,Multi-Family Residential REITs,2001-12-03
+VRSK,Industrials,Research & Consulting Services,2015-10-08
+VRSN,Information Technology,Internet Services & Infrastructure,2006-02-01
+VRT,Industrials,Electrical Components & Equipment,2026-03-23
+VRTX,Health Care,Biotechnology,2013-09-23
+VST,Utilities,Electric Utilities,2024-05-08
+VTR,Real Estate,Health Care REITs,2009-03-04
+VTRS,Health Care,Pharmaceuticals,2004-04-23
+VZ,Communication Services,Integrated Telecommunication Services,1983-11-30
+WAB,Industrials,Construction Machinery & Heavy Transportation Equipment,2019-02-27
+WAT,Health Care,Life Sciences Tools & Services,2002-01-02
+WBD,Communication Services,Broadcasting,2022-04-11
+WDAY,Information Technology,Application Software,2024-12-23
+WDC,Information Technology,"Technology Hardware, Storage & Peripherals",2009-07-01
+WEC,Utilities,Electric Utilities,2008-10-31
+WELL,Real Estate,Health Care REITs,2009-01-30
+WFC,Financials,Diversified Banks,1976-06-30
+WM,Industrials,Environmental & Facilities Services,1998-08-31
+WMB,Energy,Oil & Gas Storage & Transportation,1975-03-31
+WMT,Consumer Staples,Consumer Staples Merchandise Retail,1982-08-31
+WRB,Financials,Property & Casualty Insurance,2019-12-05
+WSM,Consumer Discretionary,Homefurnishing Retail,2025-03-24
+WST,Health Care,Health Care Supplies,2020-05-22
+WTW,Financials,Insurance Brokers,2016-01-05
+WY,Real Estate,Timber REITs,1979-10-01
+WYNN,Consumer Discretionary,Casinos & Gaming,2008-11-14
+XEL,Utilities,Multi-Utilities,1957-03-04
+XOM,Energy,Integrated Oil & Gas,1957-03-04
+XYL,Industrials,Industrial Machinery & Supplies & Components,2011-11-01
+XYZ,Financials,Transaction & Payment Processing Services,2025-07-23
+YUM,Consumer Discretionary,Restaurants,1997-10-06
+ZBH,Health Care,Health Care Equipment,2001-08-07
+ZBRA,Information Technology,Electronic Equipment & Instruments,2019-12-23
+ZTS,Health Care,Pharmaceuticals,2013-06-21

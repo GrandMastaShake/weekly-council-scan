@@ -34,6 +34,11 @@ from scan_pipeline.utils import wiki_signals
 #                  "rs_12_1"    -- it reads the pick's own 12-1 return
 SECTOR_SIGNAL = "prior_week"
 STOCK_SIGNAL = "last_week"
+# The regime credit's sector lists (2026-09-22: module constants so the lab
+# can test other sector maps -- Pass 10 -- without losing the credit; the
+# values are what the function held as locals, behavior unchanged).
+OFFENSIVE_SECTORS = ["Technology", "Consumer", "Industrials"]
+DEFENSIVE_SECTORS = ["Utilities", "Healthcare"]
 
 
 def _weekly_rs_12_1(history) -> Optional[float]:
@@ -152,13 +157,11 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
         # goes only to sectors aligned with the trend direction; the ramp is
         # continuous across zero, so rangebound weeks no longer hand every
         # ticker an identical 15.
-        offensive_sectors = ["Technology", "Consumer", "Industrials"]
-        defensive_sectors = ["Utilities", "Healthcare"]
         regime_ramp = clamp(abs(spy_4w_return) / 0.04, 0.0, 1.0)
         if spy_4w_return > 0:
-            regime_aligned = sector in offensive_sectors
+            regime_aligned = sector in OFFENSIVE_SECTORS
         elif spy_4w_return < 0:
-            regime_aligned = sector in defensive_sectors
+            regime_aligned = sector in DEFENSIVE_SECTORS
         else:
             regime_aligned = False
         market_regime_score = 30.0 * regime_ramp if regime_aligned else 0.0

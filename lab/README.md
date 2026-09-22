@@ -1417,3 +1417,46 @@ Tuesday's open. The sector fallback shipped as proposal A: `GICS_FOLD` and
 the `get_sector` fallback in `scan_pipeline/utils/data_utils.py`, pinned by
 `tests/test_sectors.py`, a no-op on the live universe. The Monday task
 (crew-8) now also runs `live_week.py score-pending`.
+
+## Pass 10 -- Ophelia's map: whose sectors? (registered before any run)
+
+The owner asked whether Ophelia should treat semiconductors as a sector of
+their own, and whether the standard sectors are the problem ("would be
+interesting if we made our own"). Her rotation is the part of her that
+showed up in Pass 9b (a 40-point anchor for the top sector by prior-week
+average, 20 for the second, a flow term, up to 30 points of regime credit
+for offensive or defensive sectors), so the map it reads is a fair question.
+`pass10_sectors.py` replays the engine Ophelia's five under five maps on the
+S&P 500 as of 2024-09-09 (463 names, the clean list) with the 111 beside it,
+96 history weeks and the nine Council weeks, scored as in Pass 9:
+
+| Map | What it is |
+|---|---|
+| engine 8 | the eight engine buckets, Pass 9b's map (baseline) |
+| engine 8+Semis | the eight, with the GICS sub-industries "Semiconductors" and "Semiconductor Materials & Equipment" (20 of today's S&P; NVDA, AMD, TSM on the 111) as a ninth, offensive bucket |
+| GICS 11 | the index's eleven GICS sectors, each offensive or defensive by the bucket it folds onto |
+| GICS 11+Semis | GICS 11 with the semiconductor sub-industries as a twelfth, offensive sector |
+| our own 11 | point-in-time: each week, names with at least 40 of the trailing 52 weekly returns, average-linkage clustering on 1 - correlation, cut into eleven clusters; a cluster is offensive or defensive by the majority engine bucket of its members |
+
+The regime credit's sector lists became module constants of the engine on
+2026-09-22 (behavior-preserving; the smoke replay's books are identical), so
+every map keeps the credit. The sub-industries come from
+`universe_sp500_full_2026-09-22.csv` (Wikipedia, fetched 2026-09-22).
+
+**Predictions.** Semis as a ninth bucket: paired against engine 8 on the
+clean list, positive but short of t 2 (it concentrates her further into
+semiconductors in 2026H1 and costs elsewhere), with a higher weekly SD. GICS
+11: within 0.15%/wk of engine 8, t under 1. GICS 11+Semis: like the ninth
+bucket. Our own 11: below engine 8 (paired negative, t between -2 and 0):
+clusters that change weekly make noisy sector averages. On the 111 the
+semiconductor sector has three names and nothing is significant.
+
+**What counts** (history, the S&P 500 as of 2024-09; the 111 and the
+Council weeks are reported and decide nothing): a map *helps* if its paired
+clipped edge over engine 8 is positive with t >= 2 and both halves positive.
+Four maps at the line: about one in six that one passes by luck. A map that
+helps goes to the forward record as a solo variant before it touches the
+live engine; the change freeze applies.
+
+    python lab/fetch_sp500.py full
+    python lab/pass10_sectors.py
