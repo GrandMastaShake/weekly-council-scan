@@ -156,6 +156,13 @@ def cluster_maps(names, adj, weeks):
     return maps, off, dfn
 
 
+def own_map(names, adj, weeks):
+    """engine_lab.run's sector_map_builder for "our own 11": the forward
+    record's Ophelia-solo-ownmap and live_ownmap.py use it."""
+    cm, off, dfn = cluster_maps(names, adj, weeks)
+    return WeekMap(cm), WeekSet(off), WeekSet(dfn)
+
+
 def pool(names, raw, cal, W):
     from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
     from scan_pipeline.utils.data_utils import EARNINGS_BLACKOUT_TRADING_DAYS

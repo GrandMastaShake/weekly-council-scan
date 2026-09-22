@@ -26,6 +26,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import engine_lab as lab  # noqa: E402
 
+def _own_map(names, adj, weeks):
+    """Pass 10's "our own 11": weekly correlation clusters in place of sectors.
+    Imported lazily; pass10_sectors reads the S&P tables on import of pass9."""
+    import pass10_sectors as p10
+    return p10.own_map(names, adj, weeks)
+
+
 # (name, knobs, registered Monday, where it came from)
 REGISTRY = [
     ("production",    lab.VARIANTS3["base"],          "2026-09-21", "engines as live"),
@@ -40,6 +47,8 @@ REGISTRY = [
     ("O-rs+M-15",     lab.VARIANTS["O-rs+M-15"],      "2026-09-21", "Pass 2"),
     ("no-Ophelia",    lab.VARIANTS["no-Ophelia"],     "2026-09-21", "Pass 2, reference"),
     ("Ophelia-solo",  {"solo": "Ophelia"},            "2026-09-22", "Pass 9b, the engine alone"),
+    ("Ophelia-solo-ownmap", {"solo": "Ophelia", "sector_map_builder": _own_map},
+                                                      "2026-09-22", "Pass 10, the owner's map (weekly clusters)"),
 ]
 PAGE = lab.LAB / "FORWARD.md"
 DATA = lab.RESULTS / "forward.json"
@@ -83,7 +92,8 @@ def build(weeks, results, generated):
         rows = results.get(name)
         if not rows:
             continue
-        designs[name] = {"knobs": knobs, "registered": registered, "source": source,
+        designs[name] = {"knobs": {k: (v.__name__ if callable(v) else v) for k, v in knobs.items()},
+                         "registered": registered, "source": source,
                          "summary": _summary(rows, prod),
                          "weekly": [{"week": r["week"], "book_ret": r["book_ret"], "alpha": r["alpha"],
                                      "pctile_vs_random": r["pctile_vs_random"],

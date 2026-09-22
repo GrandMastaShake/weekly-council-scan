@@ -303,6 +303,7 @@ def _set_knobs(engines, knobs):
     other, whatever order they run in."""
     keys = {k for table in (VARIANTS, VARIANTS3) for v in table.values() for k in v if "." in k}
     keys |= {k for k in knobs if "." in k}
+    keys |= set(_DEFAULT_KNOBS)          # every knob any earlier replay set, back to default too
     for key in sorted(keys):
         mod, attr = key.split(".")
         _DEFAULT_KNOBS.setdefault(key, getattr(engines[mod], attr))
@@ -334,7 +335,10 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
     knobs    {"module.ATTR": value} set on the engine modules for this replay
              only (see VARIANTS); {"drop": "Ophelia"} replays without her;
              {"solo": "Ophelia"} books that engine's top five, equal weights,
-             in place of the consensus (the forward record's Ophelia-solo)
+             in place of the consensus (the forward record's Ophelia-solo);
+             {"sector_map_builder": f} with f(names, adj, weeks) -> (a
+             SECTOR_MAP stand-in, offensive labels, defensive labels) swaps
+             Ophelia's sector map for this replay only (Pass 10's clusters)
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
@@ -374,10 +378,16 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
     marky.load_10y_yield = lambda: state["tnx"]
     consensus.realized_hit_counts = lambda *a, **k: {s: tuple(v) for s, v in state["counts"].items()}
 
-    engines = {"cecil": cecil, "marky": marky, "ophelia": ophelia}
+    from scan_pipeline.utils import data_utils
+    engines = {"cecil": cecil, "marky": marky, "ophelia": ophelia, "data_utils": data_utils}
     knobs = dict(knobs or {})
     drop = knobs.get("drop")
     feed = earnings if knobs.get("earnings", True) else None
+    builder = knobs.get("sector_map_builder")      # (names, adj, weeks) -> (SECTOR_MAP stand-in, offensive, defensive)
+    if builder:
+        smap, off, dfn = builder(universe, adj, weeks_to_run)
+        knobs.update({"data_utils.SECTOR_MAP": smap, "ophelia.OFFENSIVE_SECTORS": off,
+                      "ophelia.DEFENSIVE_SECTORS": dfn})
     _set_knobs(engines, knobs)
     _install_taps(engines)
     _TAP["capture"] = capture

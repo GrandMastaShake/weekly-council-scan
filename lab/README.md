@@ -1460,3 +1460,59 @@ live engine; the change freeze applies.
 
     python lab/fetch_sp500.py full
     python lab/pass10_sectors.py
+
+## Pass 10 results -- the coarse map wins on the clean list; the owner's map is the steady one
+
+Run after the registration commit (4ecc389); `results/pass10_sectors.json`.
+The S&P 500 as of 2024-09 (463 names, 18 semiconductors), history, 96 weeks,
+the engine Ophelia's five under each map, clipped edge over random:
+
+| Map | Edge (t) | Weeks ahead | Weekly SD | Worst drawdown | Paired vs engine 8 | Same five |
+|---|---|---|---|---|---|---|
+| engine 8 | +0.68% (+1.87) | 54 | 4.30% | -14.0% | | |
+| engine 8+Semis | +0.26% (+0.57) | 51 | 5.26% | -35.0% | -0.42%/wk (t -1.14) | 60% |
+| GICS 11 | +0.19% (+0.46) | 48 | 4.65% | -19.2% | -0.49%/wk (t -1.85) | 42% |
+| GICS 11+Semis | -0.34% (-0.74) | 44 | 5.20% | -35.0% | **-1.02%/wk (t -2.49)** | 25% |
+| our own 11 | +0.08% (+0.21) | 53 | 4.28% | -27.7% | -0.60%/wk (t -1.34) | 0% |
+
+By half-year (clipped edge/wk): engine 8 goes -0.91, +1.00, +0.34, **+2.04**
+(2024H2 to 2026H1); engine 8+Semis -0.30, +0.48, +0.52, +0.44; GICS 11
+-0.49, +0.31, -0.59, +1.56; GICS 11+Semis +0.25, -0.54, -0.53, -0.07; our
+own 11 **+0.77**, -0.45, -0.56, +0.83.
+
+**Registered verdicts: no map helps.** Every finer map is worse than the
+eight coarse buckets on the clean list, and GICS 11+Semis is significantly
+worse. The mechanism is in the "same five" column and the half-years: the
+anchor reads *one week's* average return per sector, so a big bucket
+averages the noise out and holds the anchor on the leading group through a
+run (that is the 2026H1 +2.04), while a small bucket, semiconductors above
+all, flips in and out of the top spot week to week and drags her picks with
+it (drawdown -35% for both semiconductor maps). Splitting semiconductors out
+did not concentrate her further into the melt-up; it made her chase.
+
+**Predictions.** Semis and GICS 11+Semis: wrong sign (I said a small help,
+they hurt). GICS 11: wrong (I said a wash, it cost 0.49%/wk). Our own 11:
+right (below the base, t -1.34). The 111: right (nothing significant), but
+there the direction reversed, the finer maps all ahead of engine 8 by
++0.48% to +0.66%/wk (t 1.6 to 1.7) on a list whose semiconductor sector is
+three names. A map effect that flips sign between two universes is noise or
+regime, not a rule.
+
+**The owner's map is the one worth watching.** "Our own 11" (each week's
+correlation clusters, no human labels) has the lowest 96-week mean but the
+steadiest profile: the only map positive in 2024H2, no 2026H1 spike, weekly
+SD equal to the base, and on the nine seen Council weeks it is the best book
+in the pass, +2.51%/wk (t +2.72, ahead 7 of 9; +3.51%/wk paired against
+engine 8, t +2.46). Seen weeks decide nothing and nine of them prove less,
+but a design that fails on history and wins on the only weeks nobody could
+tune is exactly what the forward record exists for. Done, 2026-09-22:
+`Ophelia-solo-ownmap` in `forward.py`'s registry (a `sector_map_builder`
+knob in `engine_lab.run` swaps the map for that replay only) from
+2026-09-28, and on the live record for 2026-09-21 from Tuesday's open:
+under her cluster map on the 111 she holds AMD, CRWD, INOD, one four-name
+cluster (`live_ownmap.py`).
+
+On the 111 (history), engine 8 +0.27% (t +0.62), engine 8+Semis +0.75%
+(+1.58), GICS 11 +0.85% (+1.68), GICS 11+Semis +0.92% (+1.68), our own 11
++0.12% (+0.26); on its seen Council weeks every map beat engine 8's -1.71%,
+none significantly.
