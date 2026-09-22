@@ -1212,3 +1212,66 @@ neither is sizing on its own. It stays on the live record as registered
 invested with SPY above its 40-week average, scored from Tuesday's open), so
 the forward weeks judge it against "all 15" per unit of risk with no
 hindsight in the universe.
+
+## Pass 9 -- the universe: the 111, the feed, and the S&P 500 (registered before any run)
+
+The owner asked for the tests to run on the proper 111, and whether the team
+has enough to choose from ("maybe our 111 isn't enough for the team"). The
+live engines have never scored 44 of the 111 (`BACKFILL_44_TICKERS`; a
+deliberate split, per the 2026-09-21 proposal, with the Council v2 switch as
+the planned route), and every history pass so far ran on the frozen 277.
+`pass9_universe.py` replays the mechanical team (the Ophelia and Cecil
+engines from a baseline replay, Marky's channel five) on the 96 history weeks
+and the nine Council weeks over four universes:
+
+| Universe | Names | What it is |
+|---|---|---|
+| the 277 | 277 | the frozen engine list Passes 1-8 used (reference) |
+| the 111 | 109 | the owner's Council list; the engines do not score BTC or GLD |
+| the feed | 318 | the 274 the engines scan live plus the 44 they never see |
+| the S&P 500 | 503 | today's constituents (`universe_sp500_2026-09-22.csv`, Wikipedia, fetched 2026-09-22 06:48 ET) |
+
+Books per universe: each chair's five and three chairs (a third each), scored
+against random books of the same weights from the week's tradeable names in
+the *same* universe (production's earnings blackout), clipped +/-20% primary,
+raw beside. Per universe: the equal-weighted tradeable universe against SPY
+(the base rate) and the cross-sectional SD of clipped weekly returns (the
+dispersion a screen has to work in). Ophelia's rotation needs a sector for
+every name, so a name the engines' map lacks takes its GICS sector from the
+Council CSV or the S&P table, folded onto the engines' eight buckets
+(proposal A), in the lab only.
+
+**Hindsight, stated up front.** The 111 was drawn up in September 2026 with
+2025's winners on it; the 277 holds names because they ran; today's S&P 500
+holds names because they rose into it. Every base rate on history is
+flattered by this, the curated lists' most. Edges are within-universe (the
+picks against random names from the same list), which is fair; base rates
+are descriptive and decide nothing.
+
+**Predictions.**
+1. No chair on any universe beats random (t >= 2, both halves positive).
+   Sixteen tests make one false pass about a one-in-six chance; a lone pass
+   is noted, not adopted.
+2. Base rates: the 111 well above SPY, the 277 and the feed above, the S&P
+   500 near or below (equal weight has lagged cap weight in these years).
+3. Three chairs' edge stays within 0.2%/wk of its edge on the 111 on every
+   universe, paired t under 2: the team is not starved, the signals are weak.
+4. Dispersion: the 111 highest, the S&P 500 lowest.
+5. Marky's channel five near zero everywhere.
+
+**What counts** (history only; Council weeks are reported and decide
+nothing):
+- A wider universe *feeds the team* if Three chairs' clipped edge on it beats
+  the same book's edge on the 111, paired by week, with t >= 2, a positive
+  mean and both halves positive. If neither the feed nor the S&P 500 does,
+  **the 111 is enough for this team**: widening waits for a better team, not
+  the other way round.
+- A chair *beats random* on a universe under the usual rule (t >= 2, positive
+  edge, both halves positive), reported with the deflation note; anything
+  that passes goes to the forward record before it touches anything.
+- The LLM Council on a wider universe is not in this pass. If a wider
+  universe feeds the mechanical team, that is the next Room run; if not,
+  there is nothing for the agents to gain from more names either.
+
+    python lab/fetch_sp500.py
+    python lab/pass9_universe.py
