@@ -1685,6 +1685,49 @@ through the freeze; it goes to the forward record first.
 
     python lab/pass12_cecil_legs.py
 
+## Pass 12 results -- his legs are right as they are
+
+Run after the registration commit (690c8a1); `results/pass12_cecil_legs.json`.
+The regression check: the re-ranked "as is" order begins with the engine's
+own proposal in 100% of weeks on both lists; the file's "0% reproduced"
+line is book size (the engine proposes three names, this pass books five),
+not ranking. History, 96 weeks, five names, clipped edge over random:
+
+| Variant | S&P 500 as of 2024-09: edge (t) | paired vs as is | same five | the 111: edge (t) | paired |
+|---|---|---|---|---|---|
+| as is | +0.25% (+1.34) | | | -0.03% (-0.13) | |
+| value 60:40 | +0.13% (+0.71) | -0.12%/wk (t -1.87) | 57% | -0.10% | -0.07% (t -0.98) |
+| value 70:30 | +0.25% (+1.33) | +0.01%/wk (t +0.08) | 16% | -0.07% | -0.04% |
+| value only | +0.26% (+1.12); SD 3.06%, drawdown -17% | +0.01%/wk (t +0.05) | 0% | -0.06% | -0.04% |
+| safety only | -0.26% (-1.41) | **-0.51%/wk (t -2.16)** | 0% | -0.28% | -0.26% (t -1.19) |
+| + growth 20 | +0.16% (+0.94) | -0.08%/wk (t -0.55) | 0% | -0.06% | -0.03% |
+| + growth 30 | +0.16% (+0.98) | -0.08%/wk (t -0.55) | 0% | +0.01% | +0.04% |
+
+**Registered verdicts: none helps.** The one significant number runs the
+other way: take the value leg out and he loses 0.51%/wk (t -2.16), the
+mirror of Pass 11's +0.58 for putting the multiple in. Tilting further
+toward value adds nothing on the clean list (60:40 is worse, 70:30 flat,
+value only the same mean with a quarter more volatility and a deeper
+drawdown), and the EPS-growth leg costs a little. The half-years explain the
+blend: value only made its money in 2024-25 (+0.51, +0.28, +0.53) and lost
+in the 2026H1 growth melt-up (-0.13), while as is did the opposite (+0.07,
++0.26, +0.06, +0.51); the two legs offset, which is why as is was the
+steady one in Pass 11. On the 111 every variant is zero.
+
+**Predictions.** Value only near the cheapest five (right, +0.26 against
++0.21); safety only near the old Cecil (right, -0.26 against -0.28); more
+value weight raising the mean (wrong, it lowered or left it) and the SD
+(right); the growth leg a small help (wrong, a small cost). On the seen
+Council weeks of the 111, value only (+1.42%/wk) and + growth 20 (+1.33%,
+t 2.95, 7 of 9) were the best books, which nine seen weeks cannot make
+into anything.
+
+**What this changes.** Nothing. Cecil with a point-in-time P/E and his legs
+as designed (value 40, quality 30, safety 30) is the honed Cecil; the value
+leg is the part that works, the safety leg is the part that keeps him
+steady, and neither a heavier value tilt nor an earnings-growth leg improves
+him. He is on the forward record as Cecil-solo from 2026-09-22.
+
 ## Pass 13 -- holding on, and managing the week (registered before any run)
 
 Two of the owner's questions, on the engine members' fives (Ophelia, Cecil
