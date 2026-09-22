@@ -39,6 +39,7 @@ REGISTRY = [
     ("M-0",           lab.VARIANTS["M-0"],            "2026-09-21", "Pass 2"),
     ("O-rs+M-15",     lab.VARIANTS["O-rs+M-15"],      "2026-09-21", "Pass 2"),
     ("no-Ophelia",    lab.VARIANTS["no-Ophelia"],     "2026-09-21", "Pass 2, reference"),
+    ("Ophelia-solo",  {"solo": "Ophelia"},            "2026-09-22", "Pass 9b, the engine alone"),
 ]
 PAGE = lab.LAB / "FORWARD.md"
 DATA = lab.RESULTS / "forward.json"

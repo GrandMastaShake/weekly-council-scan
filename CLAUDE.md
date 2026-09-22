@@ -74,9 +74,17 @@ ticker no longer has volume 0, since that means the provider restated.
   feed so Monday fetch time is unchanged; the backfilled names are fed and
   stored but not scanned.
 - `SECTOR_FOCUS_110` / `FOCUS_TICKERS` -- the **analysis universe**, the Seven
-  Orbs watchlist, cap-descending. Authoritative copy lives in
+  Orbs watchlist, cap-descending, for the heatmap's sector baskets. The
+  engines do not scan it; Council v2 moves them onto the 111 once the Testing
+  Room has checked each job. Authoritative copy lives in
   sector-regime-heatmap at `config/watchlist_110.csv`; this copy is a
   transcription and the CSV wins any disagreement.
+- `get_sector` (`scan_pipeline/utils/data_utils.py`) reads `SECTOR_MAP`, which
+  covers `STOCK_UNIVERSE` in full, and for any other name folds the Council
+  CSV's GICS label onto the eight engine buckets via `GICS_FOLD`
+  (2026-09-22). A no-op on the live path; it exists so a widened universe
+  never lands 46 names in one "Unknown" bucket that can win Ophelia's
+  rotation and abort a Monday on sanity check 4. `tests/test_sectors.py` pins it.
 
 Counts are asserted in code and by `truth_check --config`, not written here.
 A number in prose is a third copy of a fact and it drifts.

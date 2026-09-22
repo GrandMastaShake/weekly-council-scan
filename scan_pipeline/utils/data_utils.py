@@ -191,8 +191,36 @@ def resolve_ticker_alias(ticker: str) -> str:
     return ticker
 
 
+# The Council watchlist CSV's GICS labels folded onto the eight engine buckets
+# every scoring constant was tuned on -- the same fold wiki_signals applies to
+# the sector wikis. 2026-09-22: get_sector falls back to it for a name outside
+# SECTOR_MAP (46 of the 111 Council names), so a widened universe never lands
+# them in one "Unknown" bucket that can win Ophelia's rotation and trip sanity
+# check 4. A no-op on STOCK_UNIVERSE, which SECTOR_MAP covers in full.
+GICS_FOLD: Dict[str, str] = {
+    "Communication Services": "Technology",
+    "Consumer Discretionary": "Consumer",
+    "Consumer Staples": "Consumer",
+    "Energy": "Energy",
+    "Financials": "Financials",
+    "Healthcare": "Healthcare",
+    "Industrials": "Industrials",
+    "Macro Assets": "Macro Assets",
+    "Materials": "Energy",
+    "Real Estate": "Real Estate",
+    "Technology": "Technology",
+    "Utilities": "Utilities",
+}
+
+
 def get_sector(ticker: str) -> str:
-    return SECTOR_MAP.get(ticker, "Unknown")
+    sector = SECTOR_MAP.get(ticker)
+    if sector is not None:
+        return sector
+    # Lazy: run_scan also loads the tickers module under the name config.tickers.
+    from scan_pipeline.config.tickers import COUNCIL_SECTORS
+    label = COUNCIL_SECTORS.get(ticker)
+    return GICS_FOLD.get(label, "Unknown") if label else "Unknown"
 
 
 def get_pe(ticker: str, date: Optional[str] = None) -> Optional[float]:

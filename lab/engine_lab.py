@@ -332,7 +332,9 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
     """Replay every Council week and score it.
 
     knobs    {"module.ATTR": value} set on the engine modules for this replay
-             only (see VARIANTS); {"drop": "Ophelia"} replays without her
+             only (see VARIANTS); {"drop": "Ophelia"} replays without her;
+             {"solo": "Ophelia"} books that engine's top five, equal weights,
+             in place of the consensus (the forward record's Ophelia-solo)
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
@@ -443,7 +445,12 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
             wk["rs_12_1"] = {t: r for t in eligible
                              if (r := ophelia._weekly_rs_12_1(cache[t][-12:])) is not None}
 
-        book = [(t, w, res.attribution.get(t)) for t, w in res.portfolio.items()]
+        solo = knobs.get("solo")          # {"solo": "Ophelia"}: that engine's five, equal, no consensus
+        if solo:
+            picks = {"Cecil": c, "Marky": m, "Ophelia": o}[solo].get("stocks", [])[:5]
+            book = [(x["ticker"], 1.0 / len(picks), solo) for x in picks]
+        else:
+            book = [(t, w, res.attribution.get(t)) for t, w in res.portfolio.items()]
         spy = adj["SPY"].week_return(W) or 0.0
         book_ret = sum(w * ret(t) for t, w, _ in book)
         if council_book is False:

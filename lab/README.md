@@ -1408,3 +1408,12 @@ engine Ophelia *alone* on the forward record (a `solo` knob in
 accrue from now on the live universe without another history run. Pass 9's
 verdict stands: the 111 is enough for this team, and the S&P 500 does not
 rescue it either.
+
+*Done 2026-09-22 (the owner delegated both):* `Ophelia-solo` is in
+`forward.py`'s registry (a `solo` knob in `engine_lab.run`; first forward
+week 2026-09-28), and her five for the live week of 2026-09-21 are on the
+live record on both the 274 and the 111, recorded and committed before
+Tuesday's open. The sector fallback shipped as proposal A: `GICS_FOLD` and
+the `get_sector` fallback in `scan_pipeline/utils/data_utils.py`, pinned by
+`tests/test_sectors.py`, a no-op on the live universe. The Monday task
+(crew-8) now also runs `live_week.py score-pending`.
