@@ -41,6 +41,8 @@ before anything changes in production.
   fed only the repo as it stood before that Monday's Council report.
 - **Forward record** -- `forward.py` and [FORWARD.md](FORWARD.md). Every
   registered design, scored each Monday on weeks it never saw.
+- **Scorecard** -- [SCORECARD.md](SCORECARD.md). Every test so far, and how
+  each member did in it, on one page (as of 2026-09-22).
 
 ## Faithfulness of the Engine Lab replay
 
