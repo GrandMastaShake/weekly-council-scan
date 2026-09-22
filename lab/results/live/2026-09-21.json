@@ -449,6 +449,54 @@
    "rule": "Pass 11: the engine Cecil's five with a point-in-time P/E, equal weights",
    "added": "2026-09-22T08:47:16-04:00",
    "only_from": "Tuesday's open"
+  },
+  "Union of engines, the 111": {
+   "book": [
+    [
+     "AMD",
+     0.1
+    ],
+    [
+     "MTCH",
+     0.1
+    ],
+    [
+     "CRWD",
+     0.1
+    ],
+    [
+     "VICI",
+     0.1
+    ],
+    [
+     "STZ",
+     0.1
+    ],
+    [
+     "GS",
+     0.1
+    ],
+    [
+     "LYV",
+     0.1
+    ],
+    [
+     "GE",
+     0.1
+    ],
+    [
+     "JPM",
+     0.1
+    ],
+    [
+     "WELL",
+     0.1
+    ]
+   ],
+   "invested": 1.0,
+   "rule": "the owner's own book for the week, as given; the rest is cash",
+   "added": "2026-09-22T09:29:37-04:00",
+   "only_from": "Tuesday's open"
   }
  }
 }
