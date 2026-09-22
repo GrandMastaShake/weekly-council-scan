@@ -359,6 +359,42 @@
    "rule": "Pass 9b: the engine Ophelia's five, equal weights, on this universe",
    "added": "2026-09-22T07:50:07-04:00",
    "only_from": "Tuesday's open"
+  },
+  "Owner's book": {
+   "book": [
+    [
+     "NUE",
+     0.2
+    ],
+    [
+     "SPCX",
+     0.2
+    ],
+    [
+     "DDOG",
+     0.15
+    ],
+    [
+     "LLY",
+     0.15
+    ],
+    [
+     "AMAT",
+     0.1
+    ],
+    [
+     "COIN",
+     0.05
+    ],
+    [
+     "BFLY",
+     0.05
+    ]
+   ],
+   "invested": 0.9,
+   "rule": "the owner's own book for the week, as given; the rest is cash",
+   "added": "2026-09-22T07:53:50-04:00",
+   "only_from": "Tuesday's open"
   }
  }
 }

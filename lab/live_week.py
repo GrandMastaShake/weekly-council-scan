@@ -254,6 +254,22 @@ def engines(label):
         lab.download = real
 
 
+def add(label, name, specs):
+    """Record a book the owner names, as TICKER=PERCENT pairs; the rest is
+    cash. `python lab/live_week.py add 2026-09-21 "Owner's book" NUE=20 SPCX=20 ...`"""
+    book = []
+    for spec in specs:
+        t, pct = spec.split("=")
+        book.append([t.upper(), round(float(pct) / 100.0, 6)])
+    invested = round(sum(w for _, w in book), 4)
+    if invested > 1.0 + 1e-9:
+        raise SystemExit(f"weights sum to {invested*100:.0f}%")
+    window = _add_variant(label, name, {"book": book, "invested": invested,
+                                        "rule": "the owner's own book for the week, as given; the rest is cash"})
+    print(f"  {name}: {', '.join(f'{t} {w*100:.0f}%' for t, w in book)}; cash {(1-invested)*100:.0f}%"
+          + (f"  (scored from {window})" if window else ""))
+
+
 def score_pending():
     """Score every recorded week whose Friday has closed and that has no
     score yet (the Monday task runs this)."""
@@ -296,6 +312,13 @@ def score(label):
     books = {m: _book(v) for m, v in doc["members"].items()}
     books["all 15"] = _book({"picks": [x["ticker"] for x in doc["all15"]]})
     books.update({name: _book(v) for name, v in doc.get("variants", {}).items()})
+    # A recorded book may hold names outside the 111 (the owner's); fetch
+    # their prices too. The random pool stays the 111, less its reporters.
+    extra = sorted({t for book in books.values() for t, _ in book if t not in adj})
+    if extra:
+        end = lab._plus(W, 5)
+        adj.update({t: lab.Series(r) for t, r in lab.bars_by_ticker(
+            lab.download(extra, True, end, v2.COUNCIL_START)).items()})
     # A variant recorded once the week was under way (the owner's picks, the
     # Warden, the engine books) counts only from its own open onward.
     starts = {name: OPENS.index(v["only_from"]) for name, v in doc.get("variants", {}).items() if v.get("only_from")}
@@ -303,9 +326,9 @@ def score(label):
     doc["score"] = {"scored": datetime.now().astimezone().isoformat(timespec="seconds")}
     for d in windows:
         window, first_day = f"from {OPENS[d]}", lab._plus(W, d)
-        rets = {t: _span(adj[t], first_day, fri) for t in names if t in adj and t not in black}
+        rets = {t: _span(adj[t], first_day, fri) for t in set(names) | set(extra) if t in adj}
         rets = {t: r for t, r in rets.items() if r is not None}
-        pool, spy = sorted(rets), _span(adj["SPY"], first_day, fri)
+        pool, spy = sorted(t for t in names if t in rets and t not in black), _span(adj["SPY"], first_day, fri)
         out = {}
         print(f"  {window}: SPY {spy*100:+.2f}%")
         for name, full in books.items():
@@ -334,9 +357,9 @@ def score(label):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("build", "record", "warden", "engines", "score", "score-pending"))
+    ap.add_argument("command", choices=("build", "record", "warden", "engines", "add", "score", "score-pending"))
     ap.add_argument("label", nargs="?")
-    ap.add_argument("dir", nargs="?")
+    ap.add_argument("rest", nargs="*", help="build/record: DIR; add: NAME TICKER=PERCENT ...")
     a = ap.parse_args(argv)
     if a.command == "score-pending":
         score_pending()
@@ -344,13 +367,15 @@ def main(argv=None):
     if not a.label:
         ap.error(f"{a.command} needs a week label")
     if a.command == "build":
-        build(a.label, a.dir)
+        build(a.label, a.rest[0])
     elif a.command == "record":
-        record(a.label, a.dir)
+        record(a.label, a.rest[0])
     elif a.command == "warden":
         warden(a.label)
     elif a.command == "engines":
         engines(a.label)
+    elif a.command == "add":
+        add(a.label, a.rest[0], a.rest[1:])
     else:
         score(a.label)
 
