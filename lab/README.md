@@ -27,6 +27,12 @@ before anything changes in production.
 6. **Nine weeks is small.** Look for large, consistent effects and for failures
    with a clear mechanism. Do not tune parameters to these weeks and then
    report the same weeks as proof.
+7. **A risk design is judged against cash.** Anything that lowers a book's
+   swings (sizing, caps, exposure dials) is compared with the plain book held
+   at the constant exposure that gives the same weekly SD: return per unit of
+   risk, which cash-scaling cannot change. Lower risk alone proves nothing;
+   cash does that for free (Pass 8, where the Warden's registered rule lacked
+   this and passed a design that plain exposure beats).
 
 ## Rooms
 
@@ -1146,3 +1152,63 @@ Seen Council weeks are reported and decide nothing.
 
     python lab/pass8_warden.py
     python lab/live_week.py warden 2026-09-21
+
+## Pass 8 results -- sizing is the Warden, and cash does it for free
+
+Run after the registration commit (0f6299e); `results/pass8_warden.json`. The
+rebuilt Pass 7 Warden and Four chairs reproduced Pass 7's history numbers
+exactly. History, 96 weeks, clipped edge over random; the paired column is
+against No lever:
+
+| Book | Edge (t) | Return / wk | Weekly SD | Return per unit of SD | Worst drawdown | Paired vs No lever |
+|---|---|---|---|---|---|---|
+| *Three chairs* (a third each) | +0.33% (+1.74) | +0.88% | 3.16% | 0.28 | -16.2% | |
+| No lever (the union, equal) | +0.29% (+1.69) | +0.82% | 3.02% | 0.27 | -18.4% | |
+| Sizing only | +0.01% (+0.09) | +0.38% | 1.76% | 0.21 | -10.5% | -0.28%/wk (t -2.06) |
+| Cap only | +0.30% (+1.96) | +0.77% | 2.95% | 0.26 | -16.6% | +0.01%/wk (t +0.12) |
+| Dial only | +0.28% (+1.66) | +0.79% | 2.91% | 0.27 | -17.0% | -0.01%/wk (t -0.48) |
+| All but sizing | +0.28% (+1.84) | +0.74% | 2.79% | 0.26 | -15.0% | -0.01%/wk (t -0.09) |
+| All but cap | +0.01% (+0.06) | +0.36% | 1.68% | 0.21 | -9.9% | -0.28%/wk (t -2.17) |
+| All but dial | +0.08% (+0.51) | +0.40% | 1.81% | 0.22 | -9.6% | -0.21%/wk (t -1.32) |
+| **Warden, three chairs** | +0.02% (+0.12) | +0.37% | 1.73% | 0.22 | -9.0% | -0.27%/wk (t -1.73) |
+| Warden, quality | +0.02% (+0.12) | +0.37% | 1.70% | 0.22 | -9.0% | +0.00%/wk vs the Warden (t +0.01) |
+
+**Which lever does the work: sizing, alone.** The Warden cuts No lever's
+weekly SD by 1.29 points (43%). Inverse-volatility sizing delivers 97% of
+that cut on its own and 83% of it is lost when sizing is removed: it
+*carries* the Warden. The sector cap (5% alone, -3% removed) and the regime
+dial (9%, 7%) are *dead weight* by the registered thresholds; SPY was below
+its 40-week average in only 12 of the 96 weeks. The cheapest rule is Sizing
+only. Sizing is also the whole edge cost: -0.28%/wk against No lever, t
+-2.06, at the significance line; the cap costs nothing, and the dial's
+-0.06%/wk (t -2.54, tiny but consistent) is the mechanical 20% haircut of a
+positive edge in the risk-off weeks.
+
+**Registered verdicts.** Warden, three chairs: *promising* under Pass 7's
+rule (SD 1.73% against 3.16%, drawdown -9.0% against -16.2%, paired edge
+-0.32%/wk at t -1.86 against Three chairs). Warden, quality: *no*; the gate
+cuts 2% more SD, not 10%. Both as predicted, as were the sizing and cap
+roles and the cheapest rule; the dial I called a small help, and it is dead
+weight.
+
+**The cash null, not registered, and the finding that matters.** The
+return-per-unit-of-SD column says the Warden makes the book worse, not
+safer: 0.22 against 0.28. Holding the plain three-chair book at a constant
+55% exposure gives the Warden's SD (1.73%) and its drawdown (-9.0%) exactly,
+with more return: +0.48%/wk against +0.37% (Warden minus the scaled book
+-0.11%/wk, t -0.71, ahead in 49 of 96). Clipped returns say the same (70%
+exposure; -0.12%/wk, t -0.90). On the Council weeks (seen, decide nothing)
+the gap is wider: Three chairs at 68% made +0.42%/wk to the Warden's -0.05%.
+So the Warden is a volatility dial, and a plain cash position is the same
+dial without the cost. `python lab/pass8_warden.py cash-null` reproduces
+this from the results file; it is now rule 7.
+
+**What this changes.** Pass 7's read of the Warden as "half the risk for a
+third of a point" was the wrong comparison; the right one is "half the risk
+for nothing", which cash already offers, and which the live pipeline's 20%
+cash cap already is. The Warden is not a candidate for the live book, and
+neither is sizing on its own. It stays on the live record as registered
+(`results/live/2026-09-21.json`, "Warden, three chairs": 11 names, fully
+invested with SPY above its 40-week average, scored from Tuesday's open), so
+the forward weeks judge it against "all 15" per unit of risk with no
+hindsight in the universe.

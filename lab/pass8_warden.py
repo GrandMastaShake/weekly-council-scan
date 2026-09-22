@@ -185,6 +185,51 @@ def verdicts(s, p):
     return v
 
 
+def cash_null(rows, kind="raw"):
+    """NOT REGISTERED; computed after the run (rule 7 came out of it). The
+    plain three-chair book held at the constant exposure that matches the
+    Warden's weekly SD: same risk from cash alone, so the return per unit of
+    risk is the comparison that cash-scaling cannot flatter."""
+    def series(name):
+        return [r["books"][name][kind]["ret"] for r in rows]
+    plain, full = series("Three chairs"), series(FULL)
+    k = statistics.pstdev(full) / statistics.pstdev(plain)
+    scaled = [k * x for x in plain]
+    out = {"exposure": k, "books": {}}
+    for name, s in (("Three chairs", plain), (f"Three chairs at {k:.0%}", scaled), (FULL, full),
+                    ("Sizing only", series("Sizing only"))):
+        m, sd = statistics.fmean(s), statistics.pstdev(s)
+        out["books"][name] = {"mean_ret": m, "sd": sd, "ret_over_sd": m / sd if sd else None,
+                              "max_dd": lab._curve(s)[1]}
+    diff = [w - x for w, x in zip(full, scaled)]
+    out["warden_minus_scaled"] = {"mean": statistics.fmean(diff), "t": lab._tstat(diff),
+                                  "weeks_better": sum(1 for d in diff if d > 0), "weeks": len(diff)}
+    return out
+
+
+def show_cash_null(title, c):
+    print(f"\n  {title}: the plain book at {c['exposure']:.0%} has the Warden's SD")
+    for name, x in c["books"].items():
+        print(f"    {name:<24} mean {x['mean_ret']*100:+.2f}%/wk  SD {x['sd']*100:.2f}%  "
+              f"ret/SD {x['ret_over_sd']:+.2f}  max DD {x['max_dd']*100:+.1f}%")
+    d = c["warden_minus_scaled"]
+    print(f"    Warden minus the scaled book: {d['mean']*100:+.2f}%/wk (t {d['t']:+.2f}, {d['weeks_better']}/{d['weeks']})")
+
+
+def add_cash_null():
+    """`python lab/pass8_warden.py cash-null`: add the cash null to the results file."""
+    path = lab.RESULTS / "pass8_warden.json"
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    for section in ("history", "council"):
+        doc[section]["cash_null"] = {kind: cash_null(doc[section]["weeks"], kind) for kind in ("raw", "clipped")}
+        for kind in ("raw", "clipped"):
+            show_cash_null(f"{section}, {kind}", doc[section]["cash_null"][kind])
+    doc["cash_null_note"] = "not registered; computed after the run, and the source of lab rule 7"
+    with open(path, "w", encoding="ascii", newline="\n") as fh:
+        json.dump(doc, fh, indent=1, default=float)
+        fh.write("\n")
+
+
 def reproduces_pass7(s):
     """Pass 7's Warden and Four chairs, rebuilt here, must match its results file."""
     doc = json.loads((lab.RESULTS / "pass7_combos.json").read_text(encoding="utf-8"))
@@ -247,4 +292,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    add_cash_null() if sys.argv[1:] == ["cash-null"] else main()

@@ -282,6 +282,59 @@
    "only_from": "Tuesday's open",
    "added": "2026-09-21T19:13:52-04:00",
    "note": "named by the owner Monday evening, after the session; the three names on the 111 whose weekly MACD crossed its signal line on 2026-09-18, all inside falling channels"
+  },
+  "Warden, three chairs": {
+   "book": [
+    [
+     "JPM",
+     0.166973
+    ],
+    [
+     "GS",
+     0.104272
+    ],
+    [
+     "GE",
+     0.114312
+    ],
+    [
+     "LNG",
+     0.102966
+    ],
+    [
+     "XOM",
+     0.087604
+    ],
+    [
+     "LYV",
+     0.10075
+    ],
+    [
+     "WELL",
+     0.086956
+    ],
+    [
+     "LLY",
+     0.081935
+    ],
+    [
+     "REGN",
+     0.05321
+    ],
+    [
+     "GOOGL",
+     0.061793
+    ],
+    [
+     "AMD",
+     0.039231
+    ]
+   ],
+   "invested": 1.0,
+   "spy_below_40w": false,
+   "added": "2026-09-21T20:02:19-04:00",
+   "rule": "Pass 8: the members' names, inverse 12-week-volatility weights, two a sector, 80% below SPY's 40-week average",
+   "only_from": "Tuesday's open"
   }
  }
 }
