@@ -15,17 +15,24 @@ before its Monday:
                      results/live/LABEL.json, which is committed before the week
                      closes.
   warden LABEL       adds the Warden (Pass 8) over the recorded names as a
-                     weighted variant; on the week's Monday it is scored from
-                     Tuesday's open, and it refuses later in the week.
+                     weighted variant.
+  engines LABEL      adds the engine Ophelia's five (Pass 9b's lead) on the
+                     live 274 and on the 111 as two variants.
   score LABEL        after that Friday's close: each member's five, all
-                     fifteen and every variant, Monday open to Friday close
-                     (and from Tuesday's open), against SPY and against random
-                     books of the same weights from the 111.
+                     fifteen and every variant, Monday open to Friday close,
+                     against SPY and against random books of the same weights
+                     from the 111. A variant recorded once the week was under
+                     way carries `only_from` (the first open after it was
+                     recorded) and is scored in that window and later ones.
+  score-pending      scores every recorded week that has closed unscored
+                     (the Monday task).
 
     python lab/live_week.py build 2026-09-21 DIR
     python lab/live_week.py record 2026-09-21 DIR
     python lab/live_week.py warden 2026-09-21
+    python lab/live_week.py engines 2026-09-21
     python lab/live_week.py score 2026-09-21
+    python lab/live_week.py score-pending
 """
 from __future__ import annotations
 
@@ -163,12 +170,45 @@ def record(label, out_dir):
     print(f"  variant, Marky with MACD turning up: {', '.join(t['ticker'] for t in turn)}")
 
 
+OPENS = ["Monday's open", "Tuesday's open", "Wednesday's open", "Thursday's open", "Friday's open"]
+
+
+def _window(added, W):
+    """The first session a variant added at `added` may be scored from. Its
+    picks use nothing after the Friday before W; but a variant recorded once
+    the week is under way starts at the next open after it was recorded:
+    before 9:30 ET on a weekday it is that day's open, after it the next
+    day's. None means Monday's open (recorded before the week)."""
+    day = added.strftime("%Y-%m-%d")
+    if day < W:
+        return None
+    d = (lab._d(day) - lab._d(W)).days
+    if added.hour > 9 or (added.hour == 9 and added.minute >= 30):
+        d += 1
+    if d > 4:
+        raise SystemExit(f"the week of {W} has no session left to score from ({added:%A %H:%M})")
+    return OPENS[d] if d else None
+
+
+def _add_variant(label, name, v):
+    doc = json.loads((LIVE / f"{label}.json").read_text(encoding="utf-8"))
+    added = datetime.now().astimezone()
+    v["added"] = added.isoformat(timespec="seconds")
+    window = _window(added, doc["monday"])
+    if window:
+        v["only_from"] = window
+    doc.setdefault("variants", {})[name] = v
+    with open(LIVE / f"{label}.json", "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(doc, fh, indent=1, ensure_ascii=False)
+        fh.write("\n")
+    return window
+
+
 def warden(label):
     """Add the Warden (Pass 8: three chairs, sized) to the week's record as a
     weighted variant. Its weights use prices up to the Friday before the
-    Monday, so the book itself sees nothing of the week; but a variant added
-    on the week's Monday, after the session, is scored from Tuesday's open
-    like the owner's picks. Refuses later in the week."""
+    Monday, so the book itself sees nothing of the week; it is scored from
+    the first open after it was recorded (see _window)."""
     import pass7_combos as p7
     import pass8_warden as p8
     doc = json.loads((LIVE / f"{label}.json").read_text(encoding="utf-8"))
@@ -177,22 +217,55 @@ def warden(label):
     picks = [x["ticker"] for x in doc["all15"]]
     below = p7.spy_below_40w(raw, W)
     book = p8.warden_book(sorted(picks), raw, W, below)
-    added = datetime.now().astimezone()
-    if added.strftime("%Y-%m-%d") > W:
-        raise SystemExit(f"{label}: the week is under way ({added:%A}); a variant can only be added on its Monday")
     v = {"book": [[t, round(w, 6)] for t, w in book], "invested": round(sum(w for _, w in book), 4),
-         "spy_below_40w": below, "added": added.isoformat(timespec="seconds"),
+         "spy_below_40w": below,
          "rule": "Pass 8: the members' names, inverse 12-week-volatility weights, two a sector, 80% below SPY's 40-week average"}
-    if added.strftime("%Y-%m-%d") == W:
-        v["only_from"] = "Tuesday's open"
-    doc.setdefault("variants", {})[p8.FULL] = v
-    with open(LIVE / f"{label}.json", "w", encoding="utf-8", newline="\n") as fh:
-        json.dump(doc, fh, indent=1, ensure_ascii=False)
-        fh.write("\n")
+    window = _add_variant(label, p8.FULL, v)
     print(f"  {p8.FULL}: {len(book)} names, {v['invested']*100:.0f}% invested (SPY below 40-week: {below})"
-          + (f", scored from {v['only_from']}" if "only_from" in v else ""))
+          + (f", scored from {window}" if window else ""))
     for t, w in sorted(book, key=lambda x: -x[1]):
         print(f"    {t:<6} {w*100:5.1f}%")
+
+
+def engines(label):
+    """Add the engine Ophelia's five for the live week (Pass 9b's lead) as
+    two variants: on the 274 the engines scan live, and on the 111's 109
+    stocks (the lab's sector fold for the names the engines' map lacks).
+    Prices are capped at the week's Monday, so nothing later than the Friday
+    before reaches the engine; the earnings blackout is the engines' own."""
+    import pass9_universe as p9
+    from scan_pipeline.config.tickers import STOCK_UNIVERSE
+    U = p9.universes()                                     # installs the sector fold
+    W = _monday(label)
+    real = lab.download
+    lab.download = lambda tickers, adjusted, end, start: real(tickers, adjusted, min(end, W), start)
+    try:
+        for uname, names in (("live 274", sorted(STOCK_UNIVERSE)), ("the 111", U[p9.REFERENCE])):
+            cal = lab.earnings_calendar(names)
+            row = lab.run(verbose=False, knobs=lab.VARIANTS3["base"], weeks=[(label, W, None)],
+                          earnings=cal, names=names)[0]
+            black = _blackout(label, names)
+            five = [t for t in row["proposals"]["Ophelia"] if t not in black][:5]
+            name = f"Ophelia engine, {uname}"
+            window = _add_variant(label, name, {"picks": five, "universe": uname, "names": len(names),
+                                                "rule": "Pass 9b: the engine Ophelia's five, equal weights, on this universe"})
+            print(f"  {name}: {', '.join(five)}" + (f"  (scored from {window})" if window else ""))
+    finally:
+        lab.download = real
+
+
+def score_pending():
+    """Score every recorded week whose Friday has closed and that has no
+    score yet (the Monday task runs this)."""
+    for path in sorted(LIVE.glob("*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        if "score" in doc:
+            continue
+        try:
+            print(f"{doc['week']}:")
+            score(doc["week"])
+        except SystemExit as e:
+            print(f"  skipped: {e}")
 
 
 def _span(s, first_day, fri):
@@ -223,17 +296,20 @@ def score(label):
     books = {m: _book(v) for m, v in doc["members"].items()}
     books["all 15"] = _book({"picks": [x["ticker"] for x in doc["all15"]]})
     books.update({name: _book(v) for name, v in doc.get("variants", {}).items()})
-    # A variant added after Monday's session (the owner's picks, the Warden) counts only from its window.
-    only = {name: v["only_from"] for name, v in doc.get("variants", {}).items() if v.get("only_from")}
+    # A variant recorded once the week was under way (the owner's picks, the
+    # Warden, the engine books) counts only from its own open onward.
+    starts = {name: OPENS.index(v["only_from"]) for name, v in doc.get("variants", {}).items() if v.get("only_from")}
+    windows = [0] + sorted(set(starts.values()) - {0})
     doc["score"] = {"scored": datetime.now().astimezone().isoformat(timespec="seconds")}
-    for window, first_day in (("from Monday's open", W), ("from Tuesday's open", lab._plus(W, 1))):
+    for d in windows:
+        window, first_day = f"from {OPENS[d]}", lab._plus(W, d)
         rets = {t: _span(adj[t], first_day, fri) for t in names if t in adj and t not in black}
         rets = {t: r for t, r in rets.items() if r is not None}
         pool, spy = sorted(rets), _span(adj["SPY"], first_day, fri)
         out = {}
         print(f"  {window}: SPY {spy*100:+.2f}%")
         for name, full in books.items():
-            if name in only and only[name] not in window:
+            if starts.get(name, 0) > d:
                 continue
             invested = sum(w for _, w in full)
             book = [(t, w) for t, w in full if t in rets]
@@ -258,16 +334,23 @@ def score(label):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("command", choices=("build", "record", "warden", "score"))
-    ap.add_argument("label")
+    ap.add_argument("command", choices=("build", "record", "warden", "engines", "score", "score-pending"))
+    ap.add_argument("label", nargs="?")
     ap.add_argument("dir", nargs="?")
     a = ap.parse_args(argv)
+    if a.command == "score-pending":
+        score_pending()
+        return
+    if not a.label:
+        ap.error(f"{a.command} needs a week label")
     if a.command == "build":
         build(a.label, a.dir)
     elif a.command == "record":
         record(a.label, a.dir)
     elif a.command == "warden":
         warden(a.label)
+    elif a.command == "engines":
+        engines(a.label)
     else:
         score(a.label)
 

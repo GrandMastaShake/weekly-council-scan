@@ -335,6 +335,30 @@
    "added": "2026-09-21T20:02:19-04:00",
    "rule": "Pass 8: the members' names, inverse 12-week-volatility weights, two a sector, 80% below SPY's 40-week average",
    "only_from": "Tuesday's open"
+  },
+  "Ophelia engine, live 274": {
+   "picks": [
+    "AMD",
+    "INTC",
+    "QCOM"
+   ],
+   "universe": "live 274",
+   "names": 274,
+   "rule": "Pass 9b: the engine Ophelia's five, equal weights, on this universe",
+   "added": "2026-09-22T07:50:00-04:00",
+   "only_from": "Tuesday's open"
+  },
+  "Ophelia engine, the 111": {
+   "picks": [
+    "AMD",
+    "MTCH",
+    "CRWD"
+   ],
+   "universe": "the 111",
+   "names": 109,
+   "rule": "Pass 9b: the engine Ophelia's five, equal weights, on this universe",
+   "added": "2026-09-22T07:50:07-04:00",
+   "only_from": "Tuesday's open"
   }
  }
 }
