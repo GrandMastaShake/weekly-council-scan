@@ -2357,3 +2357,62 @@ each Monday, since EDGAR publishes every filing the day it is filed.
 
     python lab/fetch_insiders.py
     python lab/pass17_insider.py
+
+## Pass 18 -- how much to sell at each level: overhead supply (registered before any run)
+
+The owner's question after Passes 15 and 16 (2026-09-23): the exit rules won
+more often without making more, so does the overhead above a stock tell us
+how much of it to sell at each level? The diagnosis behind it: a ladder
+sells the same share at every level, so it banks the stocks that stall there
+and cuts the ones about to run, and the lost tails pay for the extra small
+wins. If the supply sitting at a level predicts whether the stock stalls
+there, the share sold should follow it. The mechanism has support: holders
+who bought near a level and sit underwater sell as the price returns to
+break even (overhead supply; in the literature, the capital-gains overhang
+and its mirror, the 52-week-high effect). `pass18_overhead.py` has the
+rules. It reuses Pass 16's levels, fills and setup: a quarter per pick,
+with sold money waiting in SPY.
+
+**Supply at a level**, point in time: of the shares traded in the two years
+before the entry at closes between 4% and 50% above the entry (the overhead
+zone), the share traded within +/-3% of the level, each day assigned to its
+nearest level. A stock with no volume in the zone has no overhead.
+
+**Part A, the correlation.** Every first touch of one of the nearest three
+resistance levels during the quarter, with the return from the fill (1%
+under the level, or the open if it gapped above) to the quarter's end minus
+SPY's over the same days. The slope of that excess return on the level's
+supply share, with standard errors clustered by pick week. It is measured on
+random picks from each week's pool, which show how stocks behave at a level,
+with the members' picks reported beside.
+
+**Part B, two rules**, on the members' picks (the clean list decides) and the
+screen's picks (its own list decides):
+- *supply-weighted ladder*: at each level, sell that level's supply share of
+  the original position; clean air sells nothing; the rest is held to the
+  quarter's end.
+- *supply-shaped thirds*: sell the same total as Pass 16's resistance ladder
+  (a third per level found) but split it across the levels in proportion to
+  their supply (equal thirds when none has any).
+
+Supply-shaped thirds against Pass 16's resistance ladder isolate *where* to
+sell; the weighted ladder against the shaped thirds isolates *how much*.
+The 111 is not run this time.
+
+**Predictions.**
+1. The slope is negative on both lists (more supply, weaker continuation
+   after the touch): clustered t <= -2 on the screen's list, weaker on the
+   clean list (t between -2 and 0).
+2. Supply-shaped thirds beat equal thirds on most deciding books, by +0.1%
+   to +0.5% a quarter, under t 2.
+3. The supply-weighted ladder sells less than the thirds and lands between
+   them and the plain quarter; neither rule beats holding the quarter.
+
+**What counts.** The correlation is real on a list if the slope is negative
+with clustered t <= -2: two tests. A rule helps a book if it beats the plain
+quarter under Pass 15's rule (t >= 2, both halves and the median week
+positive), and supply-shaped thirds improve on the resistance ladder if
+their paired difference passes the same rule: two rules against the plain
+quarter and one pairing, on five deciding books, fifteen tests.
+
+    python lab/pass18_overhead.py
