@@ -2474,3 +2474,70 @@ their paired difference passes the same rule: two rules against the plain
 quarter and one pairing, on five deciding books, fifteen tests.
 
     python lab/pass18_overhead.py
+
+## Pass 18 results -- overhead predicts the stall; sizing the sale on it barely pays
+
+Run after the registration (42d2901) and the code commit (715f95b);
+`results/pass18_overhead.json`.
+
+**Part A: the correlation is real, on both lists (registered verdicts: yes,
+twice).** Every first touch of a level by random picks, with the stock's
+return over the rest of the quarter minus SPY's, by the level's supply share:
+
+| List | Touches | Low supply | Mid | High supply | Slope per 100% supply (clustered t) |
+|---|---|---|---|---|---|
+| S&P 500 as of 2024-09 | 25,633 in 94 weeks | 14%: **+0.77%** | 29%: +0.32% | 71%: **-0.80%** | -1.97 points (**t -3.38**) |
+| the screen's list | 30,293 in 94 weeks | 11%: **+2.20%** | 21%: +1.93% | 51%: **-0.15%** | -3.80 points (**t -3.78**) |
+
+A stock that reaches a level where little stock changed hands keeps beating
+SPY; one that reaches a level carrying most of its overhead volume stalls
+there. It is the owner's "clean air" seen from the exit side, and the
+capital-gains overhang in the literature. On the members' own picks the
+sample is small and it is not there on the clean list (1,229 touches, slope
++0.62, t +0.37); on the screen's list it has the same sign and more size
+(877 touches, -5.72, t -1.39).
+
+**Part B: the rules barely move (registered verdicts: no, fifteen times).**
+Per quarter, against the plain quarter:
+
+| Book | resistance ladder (thirds) | supply-weighted ladder | supply-shaped thirds | shaped minus thirds | weighted minus shaped |
+|---|---|---|---|---|---|
+| Ophelia | -0.44% | -1.12% (-1.80) | -0.45% | -0.01% | -0.67% (-1.60) |
+| Cecil | +0.29% | +0.67% (0.72) | +0.18% | -0.11% | +0.49% (1.66) |
+| Marky | -0.07% | -0.05% | +0.01% | +0.08% | -0.06% |
+| Union | -0.08% | -0.17% | -0.08% | +0.00% | -0.09% |
+| Screen A+B (its list) | -1.12% | -0.88% | -1.13% | -0.01% | +0.25% |
+| *random picks, clean list* | -0.05% | +0.10% | -0.03% | +0.01% | +0.13% |
+| *random picks, screen's list* | -0.58% | -0.25% | -0.60% | -0.02% | +0.35% |
+
+*Where* to sell does not matter once the total is fixed: splitting the thirds
+by supply changed nothing (within 0.11% on every book), because most
+positions reach only their first level, which usually holds most of the
+zone's volume. *How much* matters a little: selling each level's supply
+share, which sells more than the thirds (22% to 49% of the position against
+18% to 40%) and sells heavily only into heavy levels, beats the shaped
+thirds on random picks by +0.13% a quarter on the clean list and +0.35% on
+the screen's list, and on the books by amounts inside the noise in both
+directions. No rule beats holding the quarter.
+
+**Why the correlation does not pay more.** The stall at a heavy level is
+worth about a point and a half against a light one, spread over the rest of
+the quarter, and only the part of a position actually sold at a level can
+use it. Selling into a heavy level saves the -0.8%; the lost upside at light
+levels, where stocks keep running, is what every ladder pays for, and the
+supply-weighted ladder still sells a little there.
+
+**Predictions.** 1 half right: negative on both lists, but significant on
+the clean list too (t -3.38, not between -2 and 0). 2 wrong: shaped thirds
+equal thirds. 3 wrong in part: the supply-weighted ladder sells more than the
+thirds, not less, and does not land between them and the plain quarter on
+three books; right that nothing beats holding.
+
+**What this changes.** It answers the owner's question: yes, the overhead at
+a level tells you whether the stock will stall there, strongly enough to
+measure on 25,000 to 30,000 touches, and it points the same way as his
+screen's clean-air rule. As a selling rule it is worth a tenth to a third of
+a point a quarter on random stocks, and nothing measurable on the members'
+picks. For his own positions the rule of thumb has evidence behind it: sell
+into a level where most of the overhead volume sits, and hold through a
+level with little. For the Council, holding the quarter still wins.
