@@ -1,6 +1,6 @@
 # Scorecard: every test, every member
 
-As of 2026-09-22, eleven passes and five side checks (`lab/README.md` has each
+As of 2026-09-23, sixteen passes and five side checks (`lab/README.md` has each
 one's registration, rule and result; `lab/results/` the numbers). This page
 is the matrix the owner asked for: what was tested, and how each Council
 member did in it.
@@ -14,6 +14,9 @@ to 2026-09-14; they have been seen, so they are reported and decide nothing.
 A member appears in two forms: the **engine** (its code, replayable) and the
 **agent** (the Council Room's LLM member, nine weeks only). Marks: passed its
 registered rule (pass), failed it (no), a pass explained by hindsight (H).
+The exit passes (15 and 16) are the one exception to the per-week scale:
+their cells are per quarter, the rule's value over holding the pick the
+whole quarter.
 
 ## 1. The engines on history (96 weeks)
 
@@ -39,6 +42,8 @@ registered rule (pass), failed it (no), a pass explained by hindsight (H).
 | Pass 13 A, held 1 / 2 / 4 / 8 weeks (edge per week of holding) | as of 2024-09 | +0.66 / +0.51 / -0.21 / -0.02: gone by four | **+0.34 / +0.30 / +0.21 / +0.25: keeps** | +0.02 / +0.10 / +0.08 / -0.07 | all 15: +0.27 (2.16) / +0.26 / +0.04 / +0.05; no horizon beats hold-1 net of a 0.10% round trip |
 | Pass 13 B, managing the week (net vs the plain hold) | as of 2024-09 | stop -0.29; rotate -0.16; reverse +0.00 | stop -0.14; rotate **-0.21 (t -2.52)**; rotate Wed **-0.19 (t -2.96)** | all within +/-0.12 | all 15: stop -0.13, rotate -0.04; every rule that acts costs, and the stops cost the members more than random books |
 | Pass 14, the owner's screen as Marky, weekly | the 111 / as of 2024-09 / the screen's 2,195-name small/mid list | | | Screen A+B +0.31 / -0.23 / -0.11; channel +0.40 / +0.04 / +0.18; paired screen minus channel -0.24 / -0.25 / -0.29 (all n.s.); the screen's list minus the 111 **-0.56%/wk (t -1.26)**; its 40-day-low exit loses to random names with the same exit everywhere (52-68% stopped out) | four verdicts, four no: not a better Marky, and the bigger universe is 14x the signals with none of the edge |
+| Pass 15, exits: the owner's rules, a quarter per pick (value over holding it) | as of 2024-09; the screen on its list | the owner's set +0.57; stops +0.2 to +0.7 | stops +1.5 (t 1.3-1.5, first half only); the owner's set +0.56 | **-8% stop -1.60 (t -2.39)**; **volatility stop -1.28 (t -2.57)**; the owner's set -1.46 | union: the owner's set -0.37; screen: set -0.69, stagnation +1.11; no rule helps, and net of the same rule on random picks every rule is flat to negative (the average stock trailed SPY by 1% a quarter, so early exits into SPY look good on anything); win rate 55-60% to ~70%, spread halved, ~2 weeks in the stock |
+| Pass 16, exits on each stock's own levels | as of 2024-09; the screen on its list | resistance vs 10/20/30 +0.13; the plan +0.21 | **resistance vs 10/20/30 +1.00 (t 2.84)**; support stop +1.29 | **resistance vs 10/20/30 +0.67 (t 2.71)**; **support stop -1.60 (t -2.46)**; MACD exit -2.27 (t -1.99) | union: **resistance vs 10/20/30 +0.61 (t 3.25)**; screen: support stop +1.23 (t 1.90, both halves); the owner's plan trails his simpler set by 0.1-0.4; no ladder beats holding the quarter |
 
 ## 2. On the Council's nine weeks (seen)
 
@@ -102,7 +107,10 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   is *steady* rather than a regime, and the one whose picks keep it: held
   one, two, four or eight weeks his edge per week stays at +0.2 to +0.3
   (Pass 13), while removing his value leg costs 0.51%/wk (Pass 12); his
-  legs resist tuning and are right as designed. **The agent** was the better of the two
+  legs resist tuning and are right as designed. If his picks are sold
+  early, sell them at resistance: a third 1% under each of the nearest
+  three swing highs beat the 10/20/30 ladder by 1.00% a quarter (t 2.84,
+  Pass 16), though holding the quarter beat both. **The agent** was the better of the two
   LLM members on the nine weeks (+0.41%/wk, 57th percentile), which is
   nothing yet.
 - **Marky.** The channel pullback (v3) is the only design that beat random
@@ -113,7 +121,11 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   job done daily on small and mid caps, is not a better Marky run weekly
   (behind the channel five on all three lists) and does not earn him a
   bigger universe: on its own 2,195-name list its edge is 0.56%/wk below
-  its edge on the 111 (Pass 14). He keeps the 111.
+  its edge on the 111 (Pass 14). He keeps the 111. Never put a tight stop
+  on his picks: they are dips, and every stop that sells the next dip cost
+  him significantly (-8% stop -1.60% a quarter, t -2.39; volatility stop
+  t -2.57; support stop t -2.46; Passes 15 and 16), while random picks
+  showed nothing.
 - **The team.** Blending destroyed value (v2 synthesis -0.89%/wk against
   separate books +0.58%); v2.1 fixed the seating, not the returns; the vote
   swapped one name in nine weeks and objected names beat approved ones; the
@@ -123,7 +135,11 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   costs, because the members' Tuesday losers recover more than random ones
   (Pass 13). One thing added up: the union of the three engines' picks,
   equal, Cecil's P/E in, +0.27%/wk over random (t 2.16) gross on the clean
-  list, 82% of it in 2026H1, on the forward record as Union-equal. What held up on weeks nobody tuned: the
+  list, 82% of it in 2026H1, on the forward record as Union-equal. Exit
+  rules (Passes 15 and 16) reshape the outcome, not the return: the
+  owner's rules lift the win rate to about 70% and halve the spread by
+  holding about two weeks and waiting in SPY, and net of the same rules on
+  random picks they are flat to negative. What held up on weeks nobody tuned: the
   earnings blackout, and exposure.
 
 ## 5. The reading for the design question
