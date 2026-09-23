@@ -2288,3 +2288,72 @@ a round number; exit before earnings (neutral in return, a smaller spread);
 and put stops under real support on the screen's small-cap setups (a lead,
 t 1.90) but not on large-cap dip-buys (a cost, t -2.4 to -2.6). The
 screen's committed daily reports are the forward test for the support stop.
+
+## Pass 17 -- a fourth chair: the Insider (registered before any run)
+
+The owner approved a fourth member that reads what the other three cannot
+see (2026-09-23). The three read the price tape, and Cecil adds the P/E. The
+Insider reads what the people running each company do with their own
+money: open-market purchases by officers and directors, from their SEC Form
+4 filings. `fetch_insiders.py` freezes them in
+`insider_purchases_2024q3_2026q2.csv` (29,174 purchases in 3,099 tickers,
+from the SEC's quarterly Form 3/4/5 data sets). A row is an original Form 4
+(amendments skipped), transaction code P, acquired, priced, not a 10b5-1
+plan trade, with a director or officer among the reporting owners. A
+purchase counts from its filing date: EDGAR's day closes at 10 pm ET, so a
+filing dated the Friday before a Monday is public by that Monday.
+`pass17_insider.py` has the rules.
+
+**The Insider's two books**, up to five names from the week's tradeable
+names (the usual earnings blackout):
+- *Insider clusters*: names where two or more distinct directors or
+  officers bought in the 30 days before the Monday; most buyers first, then
+  the largest total purchase.
+- *Insider buys*: names with director and officer purchases of $100,000 or
+  more in total in those 30 days; the largest total first.
+
+**Where.** The S&P 500 as of 2024-09 decides for large caps; the screen's
+small and mid-cap list decides for them (survivorship as stated in Pass
+14); the 111 is reported. 96 history weeks. The Council weeks are not in
+this pass: the 2026 Q3 data set is published in October, so the latest
+filings are June 30's, and the last history week (2026-07-06) misses three
+days of filings.
+
+**Scored as every member**: the weekly clipped edge over random books of the
+same size from the same universe's tradeable names. The same books held 4
+and 13 weeks (edge per week of holding, Pass 13's method) are reported
+beside and decide nothing, since insider buying is known to act over
+months.
+
+**Does it look at something new?** The Insider's weekly edges against
+Ophelia's, Cecil's (with a P/E) and Marky's on the clean list, scored in the
+same run, and the names it shares with them. **Does it add to the team?**
+Four chairs (a quarter each to Ophelia, Cecil with a P/E, Marky and the
+Insider's buys; a week with no buys is three chairs) against three chairs
+(a third each), weekly, on the clean list, as in Pass 7.
+
+**Predictions.**
+1. Coverage: clusters are rare on the clean list (under two names a week on
+   average, none in many weeks) and commoner on the screen's list (two to
+   six a week). The buys book holds three to eight qualifying names a week
+   on the clean list and fills its five most weeks on the screen's list.
+2. The buys book is positive on both lists and larger on the screen's
+   list, under t 2 on both at one week. The clusters book is positive but
+   thin, and under t 2 everywhere. Nothing passes at one week.
+3. Held 13 weeks, the Insider's edge per week keeps, like Cecil's (Pass 13),
+   rather than fading like Ophelia's.
+4. Its weekly edges correlate with each member's between -0.2 and +0.2,
+   and it shares under one name a week with any member, the most with Cecil
+   (insiders buy after declines, when multiples are low).
+5. Four chairs land within +/-0.1%/wk of three chairs, not significantly.
+
+**What counts** (history). The Insider beats random with a book on a
+deciding list if its clipped edge has t >= 2, is positive and both halves
+are positive: two books on two lists, four tests. The fourth chair adds to
+the team if four chairs beat three on the clean list, paired by week, with
+t >= 2, a positive mean and both halves positive. Anything that passes goes
+to the forward record first; a live Insider would read EDGAR's Form 4 feed
+each Monday, since EDGAR publishes every filing the day it is filed.
+
+    python lab/fetch_insiders.py
+    python lab/pass17_insider.py
