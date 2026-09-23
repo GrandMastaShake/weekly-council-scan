@@ -1,6 +1,6 @@
 # Scorecard: every test, every member
 
-As of 2026-09-23, sixteen passes and five side checks (`lab/README.md` has each
+As of 2026-09-23, eighteen passes and five side checks (`lab/README.md` has each
 one's registration, rule and result; `lab/results/` the numbers). This page
 is the matrix the owner asked for: what was tested, and how each Council
 member did in it.
@@ -14,7 +14,7 @@ to 2026-09-14; they have been seen, so they are reported and decide nothing.
 A member appears in two forms: the **engine** (its code, replayable) and the
 **agent** (the Council Room's LLM member, nine weeks only). Marks: passed its
 registered rule (pass), failed it (no), a pass explained by hindsight (H).
-The exit passes (15 and 16) are the one exception to the per-week scale:
+The exit passes (15, 16 and 18) are the one exception to the per-week scale:
 their cells are per quarter, the rule's value over holding the pick the
 whole quarter.
 
@@ -44,6 +44,8 @@ whole quarter.
 | Pass 14, the owner's screen as Marky, weekly | the 111 / as of 2024-09 / the screen's 2,195-name small/mid list | | | Screen A+B +0.31 / -0.23 / -0.11; channel +0.40 / +0.04 / +0.18; paired screen minus channel -0.24 / -0.25 / -0.29 (all n.s.); the screen's list minus the 111 **-0.56%/wk (t -1.26)**; its 40-day-low exit loses to random names with the same exit everywhere (52-68% stopped out) | four verdicts, four no: not a better Marky, and the bigger universe is 14x the signals with none of the edge |
 | Pass 15, exits: the owner's rules, a quarter per pick (value over holding it) | as of 2024-09; the screen on its list | the owner's set +0.57; stops +0.2 to +0.7 | stops +1.5 (t 1.3-1.5, first half only); the owner's set +0.56 | **-8% stop -1.60 (t -2.39)**; **volatility stop -1.28 (t -2.57)**; the owner's set -1.46 | union: the owner's set -0.37; screen: set -0.69, stagnation +1.11; no rule helps, and net of the same rule on random picks every rule is flat to negative (the average stock trailed SPY by 1% a quarter, so early exits into SPY look good on anything); win rate 55-60% to ~70%, spread halved, ~2 weeks in the stock |
 | Pass 16, exits on each stock's own levels | as of 2024-09; the screen on its list | resistance vs 10/20/30 +0.13; the plan +0.21 | **resistance vs 10/20/30 +1.00 (t 2.84)**; support stop +1.29 | **resistance vs 10/20/30 +0.67 (t 2.71)**; **support stop -1.60 (t -2.46)**; MACD exit -2.27 (t -1.99) | union: **resistance vs 10/20/30 +0.61 (t 3.25)**; screen: support stop +1.23 (t 1.90, both halves); the owner's plan trails his simpler set by 0.1-0.4; no ladder beats holding the quarter |
+| Pass 17, a fourth chair: the Insider (SEC Form 4 open-market buys by officers and directors) | as of 2024-09; the screen's list | its buys correlate **-0.27** with her edges | its buys correlate **+0.34** with his: insiders buy cheap and falling, Cecil by other means | ~0 | no, five times: clusters +0.30 (1.33) and buys +0.13 on the clean list; **clusters on small caps +0.61 (t 1.72, both halves)**; buys -0.16; four chairs minus three -0.05; its edge does not keep over a quarter. Side result, not registered: **three chairs (a third each, Cecil with a P/E) +0.34%/wk, t 2.51, both halves, 58 of 96 weeks** |
+| Pass 18, overhead supply at each level (per quarter) | as of 2024-09; the screen's list | | | | **pass, twice: supply at a level predicts the stall.** After a first touch, the rest of the quarter vs SPY: light levels +0.77%, heavy -0.80% (**t -3.38**, 25,633 touches); small/mid +2.20% vs -0.15% (**t -3.78**). As a selling rule: no, fifteen times; selling each level's supply share beats equal thirds by 0.13-0.35 on random stocks, nothing measurable on the picks; no ladder beats holding |
 
 ## 2. On the Council's nine weeks (seen)
 
