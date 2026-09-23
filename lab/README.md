@@ -2202,3 +2202,89 @@ the median week positive. Seven new rules on five deciding books are 35
 tests.
 
     python lab/pass16_exits.py
+
+## Pass 16 results -- sell at resistance, not round numbers; the plan is the set again
+
+Run after the registration (27806f8) and the code commit (eabf121);
+`results/pass16_exits.json`. Pass 15's rules, rerun beside the new ones,
+reproduced its numbers exactly. The levels were found on most trades: a
+clear support on 85% of the clean list's book trades and 74% of the
+screen's; resistance levels 0/1/2/3 on 20/36/21/23% of the clean list's and
+6/48/30/16% of the screen's. Each cell is the rule's value over the plain
+quarter, per quarter (Newey-West t):
+
+| Rule | Ophelia | Cecil | Marky | Union | Screen A+B |
+|---|---|---|---|---|---|
+| MACD exit | -0.13% | -0.08% | -2.27% (-1.99) | -1.10% (-1.04) | -1.19% (-0.82) |
+| support stop | +0.23% | +1.29% (1.06) | **-1.60% (-2.46)** | -0.32% | +1.23% (1.90) |
+| resistance ladder | -0.44% (-1.14) | +0.29% | -0.07% | -0.08% | -1.12% (-1.02) |
+| ladder 9.3/18.6/27.9 | -0.62% | -0.72% | -0.68% | -0.67% | -1.50% |
+| the owner's plan | +0.21% | +0.45% | -1.78% (-1.52) | -0.64% | -1.08% |
+| the plan, no MACD | +0.24% | +0.64% | -1.56% | -0.49% | -0.89% |
+| the plan, generic ladder | +0.35% | +0.26% | -1.89% (-1.64) | -0.71% | -0.87% |
+
+**Registered verdicts: no new rule helps any deciding book.**
+
+**The owner's plan is his Pass 15 set again, a little worse.** Paired
+against the set, the plan trails on every deciding book, by 0.11% to 0.39%
+a quarter (significantly only on the union, -0.28%, t -2.22). It is the same
+two-week trade (1.7 to 2.6 weeks in the stock) with the same 67-75% win
+rate on the clean list, and the MACD exit adds nothing to it (the plan
+against the plan without it: -0.03% to -0.22%, none significant). The
+extra machinery ends trades before most targets and levels come into play.
+
+**Resistance beats round numbers.** This was not a registered verdict.
+Prediction 4 put the two ladders within +/-1% of each other, which held,
+but did not name a direction. Paired against the 10/20/30 ladder, the
+resistance ladder is ahead on all five deciding books and significantly on
+three:
+
+| Book | resistance minus 10/20/30 | Share of the position sold at targets (resistance / 10/20/30) |
+|---|---|---|
+| Cecil | **+1.00% a quarter (t 2.84)** | 40% / 30% |
+| Marky | **+0.67% (t 2.71)** | 31% / 29% |
+| Union | **+0.61% (t 3.25)** | 30% / 30% |
+| Ophelia | +0.13% (t 0.31) | 18% / 33% |
+| Screen A+B | +0.28% (t 0.52) | 27% / 44% |
+
+Selling less is not the explanation where it counts. On the three
+significant books the resistance ladder sold as much of the position as the
+generic ladder, or more (Cecil), and still did better; on Ophelia and the
+screen, where it sold less, the gain is small and not significant. The
+owner's intuition holds: a level the stock has already turned at is a better
+place to take profits than a round number. It is still a way to take
+profits, though, and no ladder beat holding the quarter (the resistance
+ladder against the plain quarter: +0.29%, -0.07%, -0.08% on those three).
+The owner's 9.3/18.6/27.9 is 10/20/30 (within -0.11% to +0.07% on every
+book).
+
+**Stops depend on the setup.** The support stop helps the screen's own
+picks: +1.23% a quarter over the plain quarter, t 1.90, both halves +1.2%,
+the median week +1.37%, +1.52% net of the same stop on random picks, and
++0.68% (t 1.92) over the fixed -8% stop. That is just under the line and
+the closest any exit came to passing for the screen: the classic trend
+trader's profile, 46% winners at +23.9% against losers at -9.3%. On Marky's
+large-cap pullbacks the same stop costs 1.60% a quarter (t -2.46), like
+every stop in Pass 15. The screen's small-cap setups and Marky's large-cap
+dips respond to stops in opposite ways.
+
+**The MACD exit** is a two-to-four-week time stop (2.2 to 4.3 weeks in the
+stock), flat for Ophelia and Cecil and a cost for Marky (-2.27% a quarter,
+t -1.99). The indicator that times his entry does not time his exit.
+
+**Predictions.** 1 right (nothing helps). 2 right on duration, wrong on
+size for Marky. 3 right that support is found on most trades and closes
+about half of them, wrong that it costs everywhere (it helped Cecil and the
+screen). 4 right on both sizes, silent on the direction that turned out to
+be consistent. 5 right on the win rate (60% on the screen's list, 67-75%
+on the clean list), the time in the stock and the size, and right that the
+plan does not differ significantly from the set, except on the union.
+
+**What this changes.** Nothing for the Council: holding the quarter beat
+every exit design on the members' picks in 2024-26. For the owner's own
+trading, Passes 15 and 16 leave three rules with evidence behind them: if
+you take profits, take them 1% under a real resistance level rather than at
+a round number; exit before earnings (neutral in return, a smaller spread);
+and put stops under real support on the screen's small-cap setups (a lead,
+t 1.90) but not on large-cap dip-buys (a cost, t -2.4 to -2.6). The
+screen's committed daily reports are the forward test for the support stop.
