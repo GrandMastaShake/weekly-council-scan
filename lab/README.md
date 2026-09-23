@@ -2056,3 +2056,66 @@ every rule: a rule that helps random picks as much is a property of how
 stocks move, usable with any picks, not a property of these.
 
     python lab/pass15_exits.py
+
+## Pass 16 -- exits built on each stock's own levels (registered before Pass 15's results were read)
+
+The owner's refinements, written on 2026-09-23 while Pass 15 was running and
+registered before any of its output was read, so nothing here is tuned on
+it: hold while the daily MACD is positive and sell when it turns; take
+profits at each stock's own resistance levels instead of a generic
+10/20/30% ("honestly 9.3/18.6/27.9% would probably do better"); put the
+stop under a clear support level when one sits within a reasonable range,
+and scale it to the stock when none does; avoid earnings; cap the hold at a
+quarter. Market direction is a cash-versus-invested question, not an exit
+(the Warden's dial agrees, Pass 8). `pass16_exits.py` has the exact rules.
+It reuses Pass 15's setup: a quarter per pick, sold money parked in SPY,
+resting-order fills on daily bars, 0.05% a side, random picks under the
+same rule, Newey-West t with 12 lags, and the median week must agree.
+
+**Levels**, point in time, found the way the owner's screen finds its
+ceilings. A swing high (low) is a close that is the highest (lowest) of the
+21 closes centred on it. It counts only once the 10 closes after it exist,
+so no level uses a price after the entry.
+- *Resistance:* swing highs of the last two years between 4% and 50% above
+  the entry, with levels within 3% of each other merged; the nearest three.
+  Each target sits 1% under its level.
+- *Support:* the nearest swing low of the last year between 2% and 15%
+  below the entry. The stop sits 1% under it. With none in that range, the
+  stop is 2 weekly SDs (Pass 15's volatility stop).
+
+| Rule | What sells |
+|---|---|
+| MACD exit | everything, at the next open after the daily MACD histogram (12, 26, 9) crosses from positive to negative; a name bought with a negative histogram is held until it turns up and then down |
+| support stop | everything, at the support stop (or 2 weekly SDs) |
+| resistance ladder | a third at each of the nearest three resistance levels; a stock with fewer levels holds the rest |
+| ladder 9.3/18.6/27.9 | a third at +9.3%, +18.6% and +27.9% |
+| the owner's plan | the support stop; the resistance ladder; after the first third, a breakeven stop and a trail 2 weekly SDs under the highest close; the MACD exit; the earnings exit |
+| the owner's plan, no MACD | the plan without the MACD exit |
+| the owner's plan, generic ladder | the plan with 10/20/30% targets |
+
+Pass 15's plain quarter, -8% stop, 10/20/30 ladder, trailing 10%, earnings
+exit and owner's set are rerun beside these and must reproduce Pass 15's
+numbers; they are reported, not re-judged.
+
+**Predictions.**
+1. No new rule helps any deciding book.
+2. The MACD exit ends most trades within four weeks (a daily histogram
+   runs a cycle in about a month), so it acts as a short time stop, within
+   +/-1.5% a quarter of the plain quarter.
+3. The support stop finds a clear support on most trades (a pullback entry
+   usually sits above a recent swing low) and behaves like Pass 15's fixed
+   stops: it closes about half the clean list's trades and costs 0% to 2% a
+   quarter.
+4. The resistance ladder lands within +/-1% a quarter of the generic
+   10/20/30 ladder on every deciding book, and 9.3/18.6/27.9 within +/-0.3%
+   a quarter of 10/20/30.
+5. The owner's plan wins more than 60% of trades, averages under four
+   weeks in the stock, lands within +/-2% a quarter of the plain quarter,
+   and is not significantly different from Pass 15's owner's set.
+
+**What counts**: as in Pass 15. A rule helps a book if its paired value
+over the plain quarter is positive with t >= 2, both halves positive and
+the median week positive. Seven new rules on five deciding books are 35
+tests.
+
+    python lab/pass16_exits.py
