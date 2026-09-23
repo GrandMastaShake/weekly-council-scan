@@ -1913,3 +1913,62 @@ today.
 
     python lab/fetch_smid.py
     python lab/pass14_screen_marky.py
+
+## Pass 14 results -- not a better Marky, and the bigger universe is more signals, not more edge
+
+Run after the registration commit (eecc199); `results/pass14_screen_marky.json`.
+The screen's list came to 2,195 names after its rate-sensitive exclusion
+(2,185 with prices), and its liquidity rule, the blackout and the two-year
+history left a pool of about 1,300 a week. History, 96 weeks, clipped edge
+over random from the same universe; "names" is the book's average size:
+
+| Universe | Signals / wk (A, B, C) | Screen A | Screen A+B | Screen C | Marky channel | A+B vs channel, paired |
+|---|---|---|---|---|---|---|
+| the 111 | 2.4 (0.4, 1.9, 0.1) | -0.53% (-0.98), 1.2 names, 31 wks | +0.31% (+0.81), 2.6 names, 76 wks | -1.07%, 11 wks | +0.40% (+1.42) | -0.24%/wk (t -0.50) |
+| the S&P 500 as of 2024-09 | 8.4 (1.2, 6.3, 0.8) | -0.18% (-0.57) | -0.23% (-1.05), 4.2 names | -0.22% | +0.04% (+0.22) | -0.25%/wk (t -1.06) |
+| the screen's list | 34.6 (2.8, 24.9, 7.0) | +0.38% (+0.75), 2.7 names | -0.11% (-0.36), 4.9 names | -0.07% | +0.18% (+0.57) | -0.29%/wk (t -0.73) |
+
+**Across universes**, Screen A+B on the screen's list minus on the 111,
+week by week: **-0.56%/wk (t -1.26)**; Marky channel the same way,
+-0.22%/wk. The bigger list gives the screen fourteen times the signals and
+none of the edge.
+
+**The screen's own trade** (entry Monday's open, exit at the signal's
+40-day low or week 8; against random names traded the same way with their
+own 40-day lows) is negative for every book on every list: on the screen's
+list, Screen A -1.54% a trade (-1.81%/wk held), A+B -0.49% (-0.55%/wk), C
+-1.37%, Marky channel -0.15%; 52% to 64% of names are stopped out before
+week 8, on the 111 and the clean list 59% to 68%. The mechanism is the
+setup itself: a name picked 8% to 30% off its high with the MACD just
+turning is, by construction, sitting close to its 40-day low, so the stop
+is tight and gets hit; random names carry the same stop but sit further
+from it.
+
+**Registered verdicts: no, four times.** The screen is not a better Marky
+on any universe (paired against the channel five it is behind on all three,
+none significantly), and the bigger universe does not pay for Marky's job:
+Screen A+B does not beat random on the screen's list, and its edge there is
+below its edge on the 111. One thin-book artifact: on the 111 Tier A trails
+A+B by 1.29%/wk (t -2.38) over 31 weeks with 1.2 names a week; on the
+screen's list, where Tier A is 2.7 names a week, it is +0.29% ahead (t
++0.91). "Clean air" neither helps nor hurts at this sample.
+
+**Predictions.** The 111 and the clean list near zero (right, and the 111's
+book is as thin as the smoke run said: 2.4 signals a week). The screen's
+list positive under t 2 (wrong: Screen A +0.38%, A+B -0.11%). The swing
+trade positive gross (wrong: negative everywhere) with about half stopped
+out (right). Tier A and A+B not significantly different (right on the
+list that has A names, wrong on the 111's thin book). The across-universe
+difference positive under t 2 (wrong in sign). Nothing passes (right).
+
+**What this changes.** Nothing in the Council, and one thing in how the
+screen should be read. Marky keeps the 111: Pass 9 said the team gains
+nothing from a wider list, and this says the same for his job alone, on the
+list the screen was built for. The screen stays what its own page says it
+is, a daily watchlist for a human who checks the catalyst and the chart,
+not a mechanical weekly book; run mechanically on Friday closes it does
+not beat random, and its 40-day-low exit is a losing rule against random
+names with the same exit. The one test this pass cannot run is the screen
+as it is actually used, daily and traded the next morning: the committed
+reports in `screen/reports/` supply exactly that from 2026-09-23 on, and
+the Room scores them once there are weeks of them.
