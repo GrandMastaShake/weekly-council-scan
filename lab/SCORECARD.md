@@ -38,6 +38,7 @@ registered rule (pass), failed it (no), a pass explained by hindsight (H).
 | Pass 12, Cecil's legs re-weighted | as of 2024-09 | | as is +0.25% (+1.34); value 60:40 +0.13; 70:30 +0.25; value only +0.26 (more volatile); safety only -0.26 (paired **-0.51, t -2.16**); + EPS growth -0.08 | | none helps; the value leg is the working part, the blend is what keeps him steady |
 | Pass 13 A, held 1 / 2 / 4 / 8 weeks (edge per week of holding) | as of 2024-09 | +0.66 / +0.51 / -0.21 / -0.02: gone by four | **+0.34 / +0.30 / +0.21 / +0.25: keeps** | +0.02 / +0.10 / +0.08 / -0.07 | all 15: +0.27 (2.16) / +0.26 / +0.04 / +0.05; no horizon beats hold-1 net of a 0.10% round trip |
 | Pass 13 B, managing the week (net vs the plain hold) | as of 2024-09 | stop -0.29; rotate -0.16; reverse +0.00 | stop -0.14; rotate **-0.21 (t -2.52)**; rotate Wed **-0.19 (t -2.96)** | all within +/-0.12 | all 15: stop -0.13, rotate -0.04; every rule that acts costs, and the stops cost the members more than random books |
+| Pass 14, the owner's screen as Marky, weekly | the 111 / as of 2024-09 / the screen's 2,195-name small/mid list | | | Screen A+B +0.31 / -0.23 / -0.11; channel +0.40 / +0.04 / +0.18; paired screen minus channel -0.24 / -0.25 / -0.29 (all n.s.); the screen's list minus the 111 **-0.56%/wk (t -1.26)**; its 40-day-low exit loses to random names with the same exit everywhere (52-68% stopped out) | four verdicts, four no: not a better Marky, and the bigger universe is 14x the signals with none of the edge |
 
 ## 2. On the Council's nine weeks (seen)
 
@@ -108,7 +109,11 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   on the Council weeks (+1.61%/wk, t 2.10), and it is a one-week bounce
   (+1.56% then -1.51% the next week); on 96 history weeks it is zero on
   every universe (+0.04% to +0.37%). His v2 chart was worse than classic on
-  the seen weeks. His ranks carry no order.
+  the seen weeks. His ranks carry no order. The owner's daily screen, his
+  job done daily on small and mid caps, is not a better Marky run weekly
+  (behind the channel five on all three lists) and does not earn him a
+  bigger universe: on its own 2,195-name list its edge is 0.56%/wk below
+  its edge on the 111 (Pass 14). He keeps the 111.
 - **The team.** Blending destroyed value (v2 synthesis -0.89%/wk against
   separate books +0.58%); v2.1 fixed the seating, not the returns; the vote
   swapped one name in nine weeks and objected names beat approved ones; the
