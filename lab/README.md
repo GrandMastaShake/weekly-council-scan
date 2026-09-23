@@ -1972,3 +1972,87 @@ names with the same exit. The one test this pass cannot run is the screen
 as it is actually used, daily and traded the next morning: the committed
 reports in `screen/reports/` supply exactly that from 2026-09-23 on, and
 the Room scores them once there are weeks of them.
+
+## Pass 15 -- exits: the owner's selling rules (registered before the full run)
+
+The owner's rules for a multi-week position, as he wrote them on
+2026-09-23: take profits a third at +10%, a third at +20% and a third at
++30%; sell everything at -8%; once the first third is sold, sell the rest
+if it trails back to +5%; and sell whatever has not moved more than 5%
+either way in two weeks. Every pass so far exited on a schedule (the
+Council sells every Friday; Passes 13 and 14 held fixed windows or stopped
+at a 40-day low), so this is the first test of managing a position.
+`pass15_exits.py` has the exact rules.
+
+**Setup.** Each pick is bought at its week's Monday open and given one
+quarter (13 weeks). A rule decides when to sell, and whatever it sells goes
+into SPY until the quarter ends: a rule is judged only on whether leaving
+the pick beats staying in it, with the owner's benchmark as the place the
+money waits. Fills on daily adjusted bars: resting orders (a stop or target
+inside the day's range fills at its price, an open through it fills at the
+open, and a stop and a target on the same day count the stop first);
+signals read on closes (stagnation, trailing) sell at the next open; the
+stop moved to +5% after the first third takes effect the next session.
+0.05% a side on every purchase and sale of the pick; SPY is free.
+
+| Rule | What sells |
+|---|---|
+| plain | nothing until the quarter ends (the baseline) |
+| stop -8% | everything, at -8% |
+| ladder | a third at +10%, +20% and +30% |
+| ladder + stops | the ladder; -8% before the first third, +5% after it |
+| stagnation | everything, when the last ten closes stayed within 5% either way of the close ten sessions before |
+| the owner's set | ladder + stops + stagnation |
+| trailing 10% | *added*: everything, at the next open after a close 10% below the highest close since entry (lets winners run) |
+| stop 2 weekly SDs | *added*: a stop scaled to the name, 2 x its weekly SD (60-day daily SD x sqrt 5); a fixed 8% is a normal week for a biotech and a crash for a utility |
+| earnings exit | *added*: everything, at the close before the next earnings report (extends the blackout, the one control that held) |
+| the owner's set + earnings | *added* |
+
+**Books**, as earlier passes recorded them: Ophelia (Passes 9 and 9b),
+Cecil with a point-in-time P/E (Pass 11), Marky's channel five and the
+owner's screen, Tier A then B (Pass 14), and the union of the three
+members. The S&P 500 as of 2024-09 decides for the members; the screen's
+own list decides for the screen; the 111 is reported. Random picks from the
+same week's pool under the same rule (a seeded sample of up to 300) show
+what a rule does to any stock. Quarters must end by 2026-09-18: 94 pick
+weeks. Consecutive quarters overlap, so t is Newey-West with 12 lags.
+Quarter returns are not clipped, because a rule's value lives in the tails;
+one +500% name can carry a mean (the smoke run found the 111's quantum names
+doing exactly that to random picks), so a rule helps only if the median
+week agrees. **Survivorship, stated:** the screen's list is today's small
+and mid caps, which includes names that grew into it, so the plain
+quarter's right tail is flattered there and the cost of taking profits is
+overstated; the clean list is the fairer judge of profit-taking.
+
+**Predictions** (formed before a six-week smoke run on the 111, which
+decides nothing here, and kept as formed):
+1. No rule helps any deciding book.
+2. Stagnation acts as a two-to-four-week time stop on large caps (most
+   clean-list trades end by week four: a 25%-volatility stock stays inside
+   a 5% band for two weeks about four times in ten) and fires on under a
+   third of the screen's small caps. It costs Cecil, whose edge keeps (Pass
+   13), and is within +/-1% a quarter elsewhere.
+3. The stops (-8%, trailing 10%, 2 weekly SDs) close half or more of the
+   clean list's trades and most of the screen's, and each costs 0% to 2% a
+   quarter against the plain quarter, on the picks and on random picks
+   alike: the reversal Passes 13 and 14 found.
+4. The ladder rarely reaches its second third on the clean list (a +20%
+   quarter is uncommon for a large cap) and moves its mean by under 1% a
+   quarter; on the screen's list it sells the big winners early and costs
+   1% to 4% a quarter.
+5. The owner's set wins more often and loses less: a win rate above 65%
+   everywhere (against about 50% to 55% for the plain quarter), under four
+   weeks in the stock on the clean list, and a mean 0.5% to 3% a quarter
+   below the plain quarter on every deciding book.
+6. The earnings exit: within +/-1% a quarter of the plain quarter, with a
+   smaller spread of outcomes.
+
+**What counts.** A rule *helps* a book if its paired value over the plain
+quarter is positive with t >= 2, both halves positive and the median week
+positive. Nine rules on five deciding books are 45 tests: two or three
+false passes by luck would not be a surprise, so a lone pass goes to the
+forward record, not the live book. The random column is reported beside
+every rule: a rule that helps random picks as much is a property of how
+stocks move, usable with any picks, not a property of these.
+
+    python lab/pass15_exits.py
