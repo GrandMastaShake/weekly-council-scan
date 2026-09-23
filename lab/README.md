@@ -1845,7 +1845,7 @@ nothing passes), and one nuance the registration did not foresee: the
 rotation's harm is not mechanical (random books show none); it is specific
 to these picks.
 
-**An unregistered observation, handled as such.** The union of the three
+**An unregistered observation, handled as such (Pass 13).** The union of the three
 engines' picks, equal-weighted with Cecil's P/E in ("all 15", about eleven
 names), makes +0.27%/wk over random at the one-week hold on the clean list,
 t 2.16, both halves positive (+0.07, +0.47), ahead 53 of 96. That crosses
@@ -1857,3 +1857,59 @@ scorecard said they would. It goes to the forward record as `Union-equal`
 over the union) from 2026-09-22, and to the live record for 2026-09-21 as
 "Union of engines, the 111" from Wednesday's open, and it decides nothing
 until the weeks say so.
+
+## Pass 14 -- the weekly screen as Marky's chair, and his universe (registered before any run)
+
+The owner's daily screen (`screen/daily_screen.py`, 2026-09-23: a rising
+120-day channel, a pullback into its lower half, the MACD histogram
+crossing up or turning, and "clean air" above) is Marky's job done daily on
+small and mid caps. Two of the owner's questions, on 96 history weeks with
+the nine Council weeks beside them. `pass14_screen_marky.py` has the rules;
+it imports the screen's own `analyze()` and `tier()`, so what is tested is
+what runs each morning.
+
+1. **Run weekly on Friday's close, is it a better Marky than the channel
+   five?** Books each week: *Screen A* (Tier A, up to five, in the screen's
+   order: least overhead first, nearest exit first), *Screen A+B* (up to
+   five across A then B), *Screen C*, and *Marky channel* (Pass 5's five on
+   the same universe, the baseline). Scored as in Passes 9-13, clipped edge
+   over random books of the same size from the week's tradeable names in the
+   same universe. Plus the screen's own trade: entry at Monday's open, exit
+   at the first close below the name's 40-day low as of the signal, else
+   week 8's Friday close, against random names traded the same way with
+   their own 40-day lows; the edge per trade and per week held, with the t
+   on every eighth pick week so trades do not overlap.
+2. **Should Marky have a bigger universe than the 111?** Three universes,
+   each against its own random books: the 111 (109 stocks; no cap or
+   liquidity rule), the S&P 500 as of 2024-09 (463), and *the screen's
+   list*: today's listing at $300M to $10B and $3 or more
+   (`universe_smid_2026-09-23.csv`, 2,627 names before the screen's
+   rate-sensitive exclusion), with the screen's $5M-a-day rule applied point
+   in time from the trailing 20 sessions. **Stated up front:** the names are
+   on that list because they are that size today, so it carries
+   survivorship; its base rate is flattered and only within-universe
+   comparisons count. The across-universe number is the screen's edge on
+   its list minus its edge on the 111, week by week.
+
+**Predictions.** On the 111 the screen fires about once a week (the smoke
+run: 0.3 Tier A, 0.7 Tier B), so Screen A+B there is a thin book near zero,
+like Marky's channel. On the clean list, near zero. On the screen's list,
+positive at one week but under t 2 after the clip (the bounce is bigger in
+small caps, and the list is survivors), and the swing trade positive gross
+per trade with about half the names stopped out before week 8. Tier A and
+A+B do not differ significantly (too few A names). The across-universe
+difference is positive but under t 2. Nothing passes.
+
+**What counts** (history): the screen *is a better Marky* on a universe if
+Screen A+B beats Marky channel, paired by week, with t >= 2, a positive
+mean and both halves positive. *The bigger universe pays for Marky's job*
+if Screen A+B on the screen's list beats random with t >= 2 and both
+halves positive **and** its edge exceeds its own edge on the 111, week by
+week, with t >= 2; both are needed, since a bigger list that does not beat
+random is more names, not more edge. Seen Council weeks decide nothing.
+Anything that passes goes to the forward record first: the Monday report
+in `screen/reports/` is already the weekly screen, point in time from
+today.
+
+    python lab/fetch_smid.py
+    python lab/pass14_screen_marky.py
