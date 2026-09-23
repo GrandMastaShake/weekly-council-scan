@@ -2057,6 +2057,89 @@ stocks move, usable with any picks, not a property of these.
 
     python lab/pass15_exits.py
 
+## Pass 15 results -- the rules reshape the outcome, not the return
+
+Run after the registration commit (ee414cd); `results/pass15_exits.json`.
+Each cell is the rule's value over the plain quarter, per quarter, paired by
+pick week (Newey-West t); the members' books on the S&P 500 as of 2024-09,
+the screen on its own list:
+
+| Rule | Ophelia | Cecil | Marky | Union | Screen A+B |
+|---|---|---|---|---|---|
+| *the plain quarter, vs SPY* | +0.25% | -0.26% | +0.85% | +0.40% | +0.73% |
+| stop -8% | +0.68% (0.75) | +1.57% (1.48) | **-1.60% (-2.39)** | -0.12% | +0.55% (0.77) |
+| ladder 10/20/30 | -0.57% | -0.70% | -0.75% (-1.85) | -0.69% (-1.94) | -1.39% (-1.17) |
+| ladder + stops | -0.09% | +0.42% | **-1.75% (-2.09)** | -0.72% | -1.08% |
+| stagnation | +0.55% | +0.81% | -1.04% | -0.12% | +1.11% (1.03) |
+| the owner's set | +0.57% | +0.56% | -1.46% | -0.37% | -0.69% |
+| trailing 10% | +0.18% | +1.66% (1.54) | -1.19% (-1.51) | -0.05% | -0.91% |
+| stop 2 weekly SDs | +0.38% | +1.48% (1.28) | **-1.28% (-2.57)** | -0.09% | +0.91% (1.46) |
+| earnings exit | +0.45% | -0.38% | -0.95% | -0.41% | -0.83% |
+| the owner's set + earnings | +0.56% | +0.48% | -1.36% | -0.34% | -0.64% |
+
+**Registered verdicts: no rule helps any deciding book.** The significant
+numbers all run the other way, on Marky.
+
+**What the rules actually do.** They turn a quarter into a two-to-three-week
+trade and trade return for comfort. The stagnation rule ends 95% to 100% of
+the clean list's trades (2.8 to 3.6 weeks in the stock) and 88% of the
+screen's (5.1 weeks). The owner's set holds the pick 2.2 to 2.4 weeks on the
+clean list, lifts the win rate from 54-62% to 68-73%, and halves the spread
+of outcomes (the quarter's SD from 16-20% to 8.5-9.3%; the screen's from 35%
+to 11%). The ladder fires more than a large-cap quarter would suggest: about
+half the clean list's trades reach +10%, a quarter reach +20%, and one in
+eight +30%.
+
+**The waiting place matters.** In 2024-26 the average clean-list stock
+trailed SPY by 1.01% a quarter (t -1.04): megacap leadership. So any rule
+that gets out early and waits in SPY picks up part of that gap, on random
+picks as much as on ours (random picks: stagnation +0.99% a quarter, the
+owner's set +0.63%, the earnings exit +0.56%). Net of it (value minus the
+same rule on random picks), every rule is flat to negative on the members'
+picks: the owner's set -0.06% (Ophelia), -0.07% (Cecil), -2.09% (Marky),
+-1.00% (Union), and +0.12% for the screen on its own list. That gap is a
+regime, not a property of the rules. By rule 7 the halved spread is not
+free either: it is mostly time spent in SPY, 11 weeks of the 13, which
+holding SPY does without the trades.
+
+**Stops and pullback buys do not mix.** On Marky's picks the -8% stop
+cost 1.60% a quarter (t -2.39), the volatility stop 1.28% (t -2.57), and the
+ladder with stops 1.75% (t -2.09), while random picks show nothing (+0.01%).
+Buying a dip and then selling the next dip sells the names that were about
+to bounce; Pass 13 found the same on Tuesday stops. On Cecil the stops ran
+the other way, about +1.5% a quarter, all of it in the first half, and not
+significant.
+
+**The earnings exit** stays within +/-1% of the plain quarter on every
+book and cuts the spread of outcomes by a fifth to a third: the cheapest
+risk control here.
+
+**The one pass anywhere, on a list that decides nothing.** Stagnation on the
+screen's picks on the 111: +2.53% a quarter, t 2.78, halves +3.43% and
++1.64%, median +2.16%, and +2.87% net of random picks. It is one of about
+ninety tests, on the list the screen was not built for, and on its own list
+it made +1.11% (t 1.03). The screen's committed daily reports are its
+forward test.
+
+**Predictions.** 1 (nothing helps) and 6 (the earnings exit near zero with
+a smaller spread) right. 2 wrong in part: stagnation fired on 88% of the
+screen's trades, not under a third (volatility clusters, and 55 rolling
+windows add up), and it did not cost Cecil against the plain quarter (it
+did, a little, net of random picks). 3 wrong in part: the stops closed 40%
+to 49% of the clean list's trades rather than half or more, and they cost
+random picks nothing. 4 half right: the mean effect was under 1% a quarter,
+but a quarter of the trades reached the second third. 5 half right: under
+four weeks in the stock and a 68-73% win rate on the clean list, but 59% on
+the screen's list, and the owner's set beat the plain quarter slightly for
+Ophelia and Cecil.
+
+**What this changes.** Nothing for the Council, whose weekly sell is
+already close to where these rules converge: about two weeks in the stock.
+For the owner's own positions the file supports the earnings exit and warns
+against tight stops on pullback entries. Pass 16, registered before these
+numbers were read, asks whether each stock's own levels do better than
+generic percentages.
+
 ## Pass 16 -- exits built on each stock's own levels (registered before Pass 15's results were read)
 
 The owner's refinements, written on 2026-09-23 while Pass 15 was running and
