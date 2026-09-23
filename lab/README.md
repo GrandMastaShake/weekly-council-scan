@@ -2358,6 +2358,64 @@ each Monday, since EDGAR publishes every filing the day it is filed.
     python lab/fetch_insiders.py
     python lab/pass17_insider.py
 
+## Pass 17 results -- the Insider is Cecil by other means
+
+Run after the registration (7f5781b) and the code commit (6f2b38d);
+`results/pass17_insider.json`. History, 96 weeks, clipped edge over random
+books from the same universe (Newey-West not needed: one-week books):
+
+| List | Book | Edge (t) | Halves | Names a week | Held 4 / 13 weeks (per week) |
+|---|---|---|---|---|---|
+| S&P 500 as of 2024-09 | Insider clusters | +0.30% (1.33) | +0.52 / +0.08 | 3.4 | +0.11% / -0.13% |
+| | Insider buys | +0.13% (0.65) | +0.27 / -0.01 | 4.8 | +0.04% / +0.04% |
+| the screen's list | Insider clusters | **+0.61% (1.72)** | **+0.54 / +0.68** | 4.8 | +0.34% / -0.09% |
+| | Insider buys | -0.16% (-0.48) | -0.51 / +0.20 | 5.0 | +0.08% / +0.02% |
+
+**Registered verdicts: no, five times.** Neither book beats random on either
+deciding list, and four chairs do not beat three (-0.05%/wk, t -0.86). The
+nearest is the classic signal where it is supposed to work: two or more
+insiders buying a small cap, +0.61%/wk with both halves positive, short of
+the line.
+
+**It is not the independent eye it was meant to be.** On the clean list its
+buys correlate +0.34 with Cecil's weekly edges and -0.27 with Ophelia's (the
+clusters +0.25 and -0.19). Insiders buy what is cheap and has been falling,
+so the Insider is largely Cecil's value signal read through people instead
+of ratios, and a contrarian against Ophelia's momentum. It shares almost no
+names with any member (0.00 to 0.03 a week): the same kind of bet on
+different stocks.
+
+**It is not a slow signal here.** Held a quarter, its edge per week is gone
+(-0.13% to +0.04%), unlike Cecil's (Pass 13).
+
+**Coverage was far larger than I expected.** On the clean list, 21.6
+tradeable names had director or officer purchases in any 30 days, 4.5 of
+them clusters and 16.5 over $100,000; on the screen's list 70, 22 and 48.
+Insider buying in large caps is common.
+
+**Predictions.** 1 wrong (coverage, both lists' clusters and the clean
+list's buys). 2 half right: nothing passes, and the clusters stay under t
+2, but the buys book on the screen's list is negative, not the stronger of
+the two. 3 wrong: the edge does not keep over a quarter. 4 half right:
+under one shared name a week and the closest tie to Cecil, but three
+correlations fall outside +/-0.2. 5 right: four chairs within 0.1%/wk of
+three.
+
+**The side result, not registered here.** In this run the three current
+members in separate equal books (Ophelia, Cecil with a P/E, Marky's
+channel; a third each) beat random on the clean list: **+0.34%/wk, t 2.51,
+halves +0.13 and +0.55, ahead in 58 of 96 weeks**. It is not new evidence,
+since it uses the same weeks and picks as Pass 13's union (+0.27%/wk, t 2.16,
+equal over names), but it recurs under a second weighting. It is the
+combination the lab keeps pointing to. It has been on the forward record
+as Union-equal since 2026-09-22, and the forward weeks decide.
+
+**What this changes.** The Insider does not join the Council. If the owner
+wants a fourth eye, the lab's lesson is that it has to read something no
+member reads *and* bet on a different kind of stock. The Insider read new
+information and bet like Cecil. Its clusters book on small caps is the one
+lead, and the screen's watchlist is where it could be watched.
+
 ## Pass 18 -- how much to sell at each level: overhead supply (registered before any run)
 
 The owner's question after Passes 15 and 16 (2026-09-23): the exit rules won
