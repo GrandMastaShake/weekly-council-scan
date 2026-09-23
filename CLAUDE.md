@@ -6,8 +6,12 @@ cron execution.
 
 ## Environment
 
-Windows. Scheduling is external (Kimi's cron), not GitHub Actions -- the only
-workflow is the manual backfill added 2026-08-25.
+Windows. The Council's Monday scheduling is external (Kimi's cron), not GitHub
+Actions. The workflows are the manual backfill (2026-08-25), CI, the daily
+observation of one closed session into `data/daily/` (21:45 UTC weekdays),
+and the owner's daily screen, `screen/daily_screen.py`, run at 12:00 UTC
+weekdays before the open and committed to `screen/reports/` (2026-09-23; see
+`screen/README.md`).
 
 **ASCII in anything new, with one exception: human-facing markdown.** The
 README may use symbols; `scripts/render_heatmap_dashboard.py` emits them. Data

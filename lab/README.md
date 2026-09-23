@@ -43,6 +43,12 @@ before anything changes in production.
   registered design, scored each Monday on weeks it never saw.
 - **Scorecard** -- [SCORECARD.md](SCORECARD.md). Every test so far, and how
   each member did in it, on one page (as of 2026-09-22).
+- **The daily screen** -- `screen/` (the owner's small and mid-cap setup
+  finder, 2026-09-23; see `screen/README.md`). Its committed reports are a
+  point-in-time record from the first one; the Room scores them once there
+  are enough days (entry at the next open, the 40-day low as the exit,
+  against random names from the same screened universe). Nothing in the
+  lab reads them yet.
 
 ## Faithfulness of the Engine Lab replay
 

@@ -1,0 +1,64 @@
+name: Daily screen
+
+# Runs the owner's small/mid-cap channel + MACD + overhead screen
+# (screen/daily_screen.py) before the US open and commits the day's hits to
+# screen/reports/. A committed report is a point-in-time record: the Testing
+# Room can score any day's Tier A/B/C names later without hindsight.
+#
+# 12:00 UTC is 8:00 ET in daylight time and 7:00 ET after clocks fall back;
+# either way the last close in the data is the prior session's. Never run it
+# mid-session: the price source includes the forming day.
+#
+# The script exits 1 when the universe download fails or prices cover less
+# than half the universe, so a throttled morning fails visibly instead of
+# committing an empty report as a quiet day. Standard library only: no pip.
+
+on:
+  schedule:
+    - cron: '0 12 * * 1-5'    # weekdays, before the US open
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Run on a weekend too
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: daily-screen
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Screen
+        run: python screen/daily_screen.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Commit the day's report
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add screen/reports
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git commit -m "screen: daily screen $(ls -1 screen/reports/screen_*.csv | tail -1 | sed 's/.*screen_//; s/\.csv$//')"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            echo "Push attempt $i failed; retrying."
+            sleep 5
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
