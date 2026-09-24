@@ -1,25 +1,33 @@
-name: Daily screen
+name: Butterfly Net
 
-# Runs the owner's small/mid-cap channel + MACD + overhead screen
-# (screen/daily_screen.py) before the US open and commits the day's hits to
-# screen/reports/. A committed report is a point-in-time record: the Testing
-# Room can score any day's Tier A/B/C names later without hindsight.
+# The owner's small/mid-cap channel + MACD + overhead screen, the Butterfly Net
+# (screen/daily_screen.py), run on weekday evenings after the US close for the
+# next session, and its report committed to screen/reports/. A committed report
+# is a point-in-time record: the Testing Room can score any day's Tier A/B/C
+# names later without hindsight.
 #
-# 12:00 UTC is 8:00 ET in daylight time and 7:00 ET after clocks fall back;
-# either way the last close in the data is the prior session's. Never run it
-# mid-session: the price source includes the forming day.
+# Why evenings (2026-09-24): GitHub delays scheduled jobs when its runners are
+# busy, worst at the top of the hour. The first morning schedule (12:00 UTC)
+# started at 17:00 UTC, mid-session, and screened intraday prices. After the
+# close a delay of hours changes nothing; only one past the next 9:30 open
+# would, and the script refuses to run while the session is open (exit 1, so
+# GitHub reports the failure). Two attempts, both off the hour:
+#   23:17 UTC   7:17 PM EDT / 6:17 PM EST
+#   01:43 UTC   9:43 PM EDT / 8:43 PM EST, the same ET evening (UTC Tue-Sat)
+# A report that already exists is not redone, so the retry is a no-op when the
+# first attempt ran.
 #
-# The script exits 1 when the universe download fails or prices cover less
-# than half the universe, so a throttled morning fails visibly instead of
-# committing an empty report as a quiet day. Standard library only: no pip.
+# Standard library only: no pip. The run page shows the day's hits (the job
+# summary); screen/reports/latest.html is always the newest report.
 
 on:
   schedule:
-    - cron: '0 12 * * 1-5'    # weekdays, before the US open
+    - cron: '17 23 * * 1-5'
+    - cron: '43 1 * * 2-6'
   workflow_dispatch:
     inputs:
       force:
-        description: Run on a weekend too
+        description: Run even during the session, or over an existing report
         required: false
         type: boolean
         default: false
@@ -42,10 +50,10 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Screen
+      - name: Cast the net
         run: python screen/daily_screen.py ${{ inputs.force && '--force' || '' }}
 
-      - name: Commit the day's report
+      - name: Commit the report
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -54,7 +62,7 @@ jobs:
             echo "Nothing new to commit."
             exit 0
           fi
-          git commit -m "screen: daily screen $(ls -1 screen/reports/screen_*.csv | tail -1 | sed 's/.*screen_//; s/\.csv$//')"
+          git commit -m "Butterfly Net: the session of $(ls -1 screen/reports/screen_*.csv | tail -1 | sed 's/.*screen_//; s/\.csv$//')"
           for i in 1 2 3; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
             echo "Push attempt $i failed; retrying."

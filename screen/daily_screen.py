@@ -1,24 +1,31 @@
-# daily_screen.py - one-shot daily channel + MACD + overhead screen.
+# daily_screen.py - the Butterfly Net: a daily channel + MACD + overhead screen.
 # Python 3 standard library only. ASCII output (Windows safe).
-# Usage:  python daily_screen.py            (skips weekends automatically)
-#         python daily_screen.py --force    (run on any day)
-# Output (in ./reports):  screen_YYYY-MM-DD.csv, screen_YYYY-MM-DD.html,
-#                         first_seen.json (tracks which names are NEW each day)
+# Usage:  python daily_screen.py            (the report for the next session)
+#         python daily_screen.py --force    (run even in the session, or over an existing report)
+#         python daily_screen.py --date YYYY-MM-DD   (stamp a re-run by hand)
+# Output (in ./reports):  screen_YYYY-MM-DD.csv, screen_YYYY-MM-DD.html, latest.html,
+#                         first_seen.json (tracks which names are NEW each day),
+#                         runs.json (when each report ran and whose closes it used)
 #
-# The owner's screener (2026-09-23), run weekdays by .github/workflows/daily-screen.yml
-# and committed to screen/reports/, so every day's hits are a point-in-time record
-# the Testing Room can score later. Three changes from the owner's original, all
-# guards: the run fails loudly when the universe comes back small (mid-session
-# the listing's volume is partial and the dollar-volume filter keeps ~400 names
-# instead of ~1800) or when the price fetch covers less than half of it (an
-# empty report must never be committed as a quiet day); the HTML declares
-# utf-8; a --date override lets a missed day be re-run by hand. --force skips
-# the weekend and universe checks for a smoke test, never for the record.
+# The owner's screener (2026-09-23), named the Butterfly Net on 2026-09-24. It
+# runs weekday evenings after the US close, for the next session: the report
+# dated D is the list for session D, built on closes through the session
+# before it. Run before the open, it is the list for that day's session; it
+# refuses to run while the session is open (the listing's volume is partial,
+# and the day's bar is not a close), and it drops any bar that has not closed.
+# .github/workflows/daily-screen.yml runs it and commits screen/reports/, so
+# every report is a point-in-time record the Testing Room can score later.
+#
+# Guards, none of which change the owner's rules: the run fails loudly when the
+# universe comes back small or prices cover less than half of it (an empty
+# report must never be committed as a quiet day); a report that already
+# exists is not redone; a throttled price batch is retried in halves.
 import json, math, os, sys, time, datetime, statistics, urllib.request
 
+NAME = "The Butterfly Net"
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports")
-MIN_UNIVERSE       = 1000           # a pre-open run lists ~1800; fewer means the listing's volume is partial
+MIN_UNIVERSE       = 1000           # a full-volume listing gives ~1800; fewer means the volume is partial
 MIN_PRICE_COVERAGE = 0.5            # fail the run below this share of the universe with prices
 
 # ---------------- rules (edit here) ----------------
@@ -30,6 +37,30 @@ DOLLAR_VOL_MIN   = 5e6              # traded per day
 # Overhead ("clean air", Alex's rule): overhead days <= 12%, <= 25% to 2y high, <= 1 ceiling, 25d base <= 18%
 MAX_EXIT_DIST = 20.0                # drop names whose exit (40d low) is further than this, in %
 EXCLUDE = {"XHR", "CXW", "CDP"}     # hand-maintained: REITs the listing data mislabels, or names you never want
+
+# ---------------- the clock (US Eastern, no tz database needed) ----------------
+def eastern(utc):
+    """US Eastern wall time for a UTC datetime: EDT from the second Sunday of March
+    (2:00 local) to the first Sunday of November (2:00 local), EST otherwise."""
+    u = utc.replace(tzinfo=None)
+    def sunday(month, n):
+        d = datetime.datetime(u.year, month, 1)
+        return d + datetime.timedelta(days=(6 - d.weekday()) % 7, weeks=n - 1)
+    dst = sunday(3, 2) + datetime.timedelta(hours=7) <= u < sunday(11, 1) + datetime.timedelta(hours=6)
+    return u - datetime.timedelta(hours=4 if dst else 5)
+
+def in_session(et):
+    return et.weekday() < 5 and (9, 30) <= (et.hour, et.minute) < (16, 0)
+
+def next_weekday(d):
+    d += datetime.timedelta(days=1)
+    while d.weekday() >= 5:
+        d += datetime.timedelta(days=1)
+    return d
+
+def session_for(et):
+    """The session a run at US Eastern time et is for: today's before the open, the next weekday's after it."""
+    return et.date() if (et.weekday() < 5 and (et.hour, et.minute) < (9, 30)) else next_weekday(et.date())
 
 def get(url, tries=3):
     for i in range(tries):
@@ -68,26 +99,31 @@ def universe():
             U[s] = dict(mc=mc, sector=r.get("sector", "") or "", industry=r.get("industry", "") or "")
     return U
 
-def _spark(batch):
+def _spark(batch, now_et):
+    """{symbol: (closes, date of the last close)}; a bar for a session still open is dropped."""
     d = get("https://query1.finance.yahoo.com/v7/finance/spark?symbols=" + ",".join(batch) + "&range=2y&interval=1d")
     out = {}
     for x in ((d or {}).get("spark", {}) or {}).get("result", []) or []:
         try:
-            c = [v for v in x["response"][0]["indicators"]["quote"][0]["close"] if v]
-            if len(c) >= 260: out[x["symbol"]] = c
+            r = x["response"][0]
+            bars = [(eastern(datetime.datetime.fromtimestamp(t, datetime.timezone.utc)).date(), v)
+                    for t, v in zip(r["timestamp"], r["indicators"]["quote"][0]["close"]) if v]
+            if bars and bars[-1][0] == now_et.date() and (now_et.hour, now_et.minute) < (16, 0):
+                bars = bars[:-1]
+            if len(bars) >= 260: out[x["symbol"]] = ([v for _, v in bars], bars[-1][0])
         except Exception:
             pass
     return out
 
-def prices(symbols):
+def prices(symbols, now_et):
     out = {}
     for i in range(0, len(symbols), 20):
         b = symbols[i:i + 20]
-        got = _spark(b)
+        got = _spark(b, now_et)
         if not got:                     # a throttled batch: wait, then ask again in halves
             time.sleep(5)
             for half in (b[:10], b[10:]):
-                if half: got.update(_spark(half)); time.sleep(0.5)
+                if half: got.update(_spark(half, now_et)); time.sleep(0.5)
         out.update(got)
         time.sleep(0.25)
     return out
@@ -134,28 +170,52 @@ def flags(meta):
     if "biotech" in ind or "pharmaceutical" in ind: f.append("BIOTECH")
     return f
 
+def summary(stamp, through, rows, screened, cols):
+    """The run page on GitHub shows this (GITHUB_STEP_SUMMARY): the day's hits, readable."""
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path: return
+    show = ["ticker", "price", "macd", "exit_dist", "overhead", "ceilings", "sector"]
+    lines = ["## %s - for the session of %s" % (NAME, stamp), "",
+             "Closes through %s. %d names screened, %d hits (A %d, B %d, C %d). NEW = first time on the net." % (
+                 through, screened, len(rows), *(sum(r["tier"] == t for r in rows) for t in "ABC")), ""]
+    for t, title in (("A", "Tier A - clean setup, clean air"), ("B", "Tier B - clean setup, overhead in the way"),
+                     ("C", "Tier C - almost, under $50")):
+        sub = [r for r in rows if r["tier"] == t]
+        lines += ["### %s (%d)" % (title, len(sub)), ""]
+        if not sub: lines += ["None.", ""]; continue
+        lines += ["| new | " + " | ".join(show) + " |", "|---" * (len(show) + 1) + "|"]
+        lines += ["| %s | %s |" % (r["new"], " | ".join(str(r[c]) for c in show)) for r in sub[:25]]
+        lines += [""]
+    with open(path, "a", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
+
 def main():
-    today = datetime.date.today()
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    now_et = eastern(now_utc)
+    force = "--force" in sys.argv
+    if in_session(now_et) and not force:
+        print("ERROR: the US session is open (%s ET). %s runs after the close for the next session." %
+              (now_et.strftime("%H:%M"), NAME)); sys.exit(1)
+    stamp = session_for(now_et)
     for i, arg in enumerate(sys.argv):
         if arg == "--date" and i + 1 < len(sys.argv):
-            today = datetime.date.fromisoformat(sys.argv[i + 1])       # the stamp for a re-run by hand
-    if today.weekday() >= 5 and "--force" not in sys.argv:
-        print("Weekend - nothing to do."); return
+            stamp = datetime.date.fromisoformat(sys.argv[i + 1])       # the stamp for a re-run by hand
+    stamp = stamp.isoformat()
     os.makedirs(OUT, exist_ok=True)
+    if os.path.exists(os.path.join(OUT, "screen_%s.csv" % stamp)) and not force:
+        print("The report for %s already exists; nothing to do." % stamp); return
     t0 = time.time()
     U = universe()
     if not U:
         print("ERROR: universe download failed."); sys.exit(1)
-    if len(U) < MIN_UNIVERSE and "--force" not in sys.argv:
-        # Mid-session the listing's volume is the forming day's, and the dollar-volume
-        # filter keeps a few hundred names instead of ~1800. Run before the open.
-        print("ERROR: universe has %d names (under %d): the listing's volume looks partial; run before the open."
-              % (len(U), MIN_UNIVERSE)); sys.exit(1)
-    P = prices(sorted(U))
+    if len(U) < MIN_UNIVERSE and not force:
+        print("ERROR: universe has %d names (under %d): the listing's volume looks partial." % (len(U), MIN_UNIVERSE)); sys.exit(1)
+    P = prices(sorted(U), now_et)
     if len(P) < MIN_PRICE_COVERAGE * len(U):
         print("ERROR: prices for only %d of %d names; not writing a report." % (len(P), len(U))); sys.exit(1)
+    through = statistics.mode(d for _, d in P.values()).isoformat()
     rows = []
-    for t, c in P.items():
+    for t, (c, _) in P.items():
         try:
             a = analyze(c)
         except Exception:
@@ -178,9 +238,8 @@ def main():
     fs = json.load(open(fs_path, encoding="utf-8")) if os.path.exists(fs_path) else {}
     for r in rows:
         r["new"] = "NEW" if r["ticker"] not in fs else ""
-        fs.setdefault(r["ticker"], today.isoformat())
+        fs.setdefault(r["ticker"], stamp)
     json.dump(fs, open(fs_path, "w", encoding="utf-8"), indent=0)
-    stamp = today.isoformat()
     cols = ["tier", "new", "ticker", "price", "cap_b", "macd", "exit_40d_low", "exit_dist", "to_2y_high",
             "overhead", "ceilings", "base_25d", "above_50d", "chan_pct_yr", "z", "off_hi", "sector", "industry", "flags"]
     with open(os.path.join(OUT, "screen_%s.csv" % stamp), "w", newline="", encoding="utf-8") as f:
@@ -189,13 +248,14 @@ def main():
     desc = {"A": "Tier A - clean setup AND clean air above (Alex's rule)",
             "B": "Tier B - clean setup, but overhead in the way",
             "C": "Tier C - almost: under $50, just crossed or about to"}
-    html = ["<html><head><meta charset='utf-8'><title>Screen %s</title><style>"
+    html = ["<html><head><meta charset='utf-8'><title>%s - %s</title><style>"
             "body{font-family:Calibri,Arial;margin:24px;color:#222}h1{color:#1F3864}h2{color:#1F3864;margin-top:28px}"
             "table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #ccc;padding:4px 7px;text-align:right}"
-            "th{background:#D9E2F3}td.l{text-align:left}.new{color:#1E7A1E;font-weight:bold}</style></head><body>" % stamp,
-            "<h1>Daily Channel Screen - %s</h1><p>%d names screened in %d seconds. %d hits. Rate-sensitive names excluded. "
-            "Prices are the prior close. Chart-only reads: check catalysts and the daily chart before acting. "
-            "Educational, not advice.</p>" % (stamp, len(P), time.time() - t0, len(rows))]
+            "th{background:#D9E2F3}td.l{text-align:left}.new{color:#1E7A1E;font-weight:bold}</style></head><body>" % (NAME, stamp),
+            "<h1>%s - for the session of %s</h1><p>Closes through %s (run %s ET). %d names screened in %d seconds. "
+            "%d hits. Rate-sensitive names excluded. Chart-only reads: check catalysts and the daily chart before "
+            "acting. Educational, not advice.</p>" % (NAME, stamp, through, now_et.strftime("%Y-%m-%d %H:%M"),
+                                                       len(P), time.time() - t0, len(rows))]
     for tr in "ABC":
         sub = [r for r in rows if r["tier"] == tr]
         html.append("<h2>%s (%d)</h2>" % (desc[tr], len(sub)))
@@ -210,10 +270,18 @@ def main():
             html.append("<tr>" + "".join(cells) + "</tr>")
         html.append("</table>")
     html.append("</body></html>")
-    open(os.path.join(OUT, "screen_%s.html" % stamp), "w", encoding="utf-8", errors="replace").write("\n".join(html))
-    print("Done: %d screened, %d hits (A=%d B=%d C=%d) -> %s" % (len(P), len(rows),
-          sum(r["tier"] == "A" for r in rows), sum(r["tier"] == "B" for r in rows),
-          sum(r["tier"] == "C" for r in rows), OUT))
+    for name in ("screen_%s.html" % stamp, "latest.html"):
+        open(os.path.join(OUT, name), "w", encoding="utf-8", errors="replace").write("\n".join(html))
+    runs_path = os.path.join(OUT, "runs.json")
+    runs = json.load(open(runs_path, encoding="utf-8")) if os.path.exists(runs_path) else []
+    hits = {t: sum(r["tier"] == t for r in rows) for t in "ABC"}
+    runs.append({"session": stamp, "run_utc": now_utc.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                 "run_et": now_et.strftime("%Y-%m-%d %H:%M"), "closes_through": through, "universe": len(U),
+                 "screened": len(P), "hits": hits, "forced": force})
+    json.dump(runs, open(runs_path, "w", encoding="utf-8"), indent=1)
+    summary(stamp, through, rows, len(P), cols)
+    print("Done: %s for %s, closes through %s: %d screened, %d hits (A=%d B=%d C=%d) -> %s" % (
+        NAME, stamp, through, len(P), len(rows), hits["A"], hits["B"], hits["C"], OUT))
 
 if __name__ == "__main__":
     main()
