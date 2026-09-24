@@ -6,7 +6,11 @@
   "closes_through": "2026-09-22",
   "universe": null,
   "screened": 1804,
-  "hits": {"A": 9, "B": 57, "C": 11},
+  "hits": {
+   "A": 9,
+   "B": 57,
+   "C": 11
+  },
   "forced": false
  },
  {
@@ -16,8 +20,26 @@
   "closes_through": "intraday 2026-09-24 about 13:00 ET, not a close",
   "universe": null,
   "screened": 1787,
-  "hits": {"A": 7, "B": 45, "C": 9},
+  "hits": {
+   "A": 7,
+   "B": 45,
+   "C": 9
+  },
   "forced": false,
   "note": "GitHub started the 12:00 UTC schedule five hours late, mid-session: intraday prices and a part-day volume listing. Kept as the record of what the run produced; not a pre-open list, not to be scored. The evening schedule replaced the morning one this day."
+ },
+ {
+  "session": "2026-09-25",
+  "run_utc": "2026-09-24T22:21:42Z",
+  "run_et": "2026-09-24 18:21",
+  "closes_through": "2026-09-24",
+  "universe": 1877,
+  "screened": 1787,
+  "hits": {
+   "A": 7,
+   "B": 40,
+   "C": 10
+  },
+  "forced": false
  }
 ]
