@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-19",
+  "as_of": "2026-09-25",
   "next_review": "2026-10-01",
   "source": "yahoo",
   "tickers": [
@@ -524,24 +524,6 @@
       "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "AVB",
-      "wiki_refs": [
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
       "t": "AVGO",
       "wiki_refs": [
         "wiki/earnings-surveillance.md",
@@ -752,24 +734,6 @@
       "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "BK",
-      "wiki_refs": [
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
       "t": "BKNG",
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
@@ -848,6 +812,24 @@
       "t": "BMY",
       "wiki_refs": [
         "wiki/healthcare.md",
+        "wiki/universe.md"
+      ]
+    },
+    {
+      "added": null,
+      "adv_usd": null,
+      "adv_usd_reason": "enrichment disabled (enrich=False)",
+      "cap": null,
+      "cap_reason": "enrichment disabled (enrich=False)",
+      "name": null,
+      "name_reason": "enrichment disabled (enrich=False)",
+      "removed": null,
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
+      "sub": null,
+      "sub_reason": "enrichment disabled (enrich=False)",
+      "t": "BNY",
+      "wiki_refs": [
         "wiki/universe.md"
       ]
     },
@@ -1655,6 +1637,24 @@
       "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
+      "t": "DOC",
+      "wiki_refs": [
+        "wiki/universe.md"
+      ]
+    },
+    {
+      "added": null,
+      "adv_usd": null,
+      "adv_usd_reason": "enrichment disabled (enrich=False)",
+      "cap": null,
+      "cap_reason": "enrichment disabled (enrich=False)",
+      "name": null,
+      "name_reason": "enrichment disabled (enrich=False)",
+      "removed": null,
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
+      "sub": null,
+      "sub_reason": "enrichment disabled (enrich=False)",
       "t": "DOW",
       "wiki_refs": [
         "wiki/materials.md",
@@ -1713,25 +1713,6 @@
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "DXCM",
       "wiki_refs": [
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "EA",
-      "wiki_refs": [
-        "wiki/communication-services.md",
         "wiki/universe.md"
       ]
     },
@@ -1867,24 +1848,6 @@
       "wiki_refs": [
         "wiki/real-estate.md",
         "wiki/synthesis.md",
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "EQR",
-      "wiki_refs": [
         "wiki/universe.md"
       ]
     },
@@ -2444,24 +2407,6 @@
       "wiki_refs": [
         "wiki/consumer-discretionary.md",
         "wiki/synthesis.md",
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "HES",
-      "wiki_refs": [
         "wiki/universe.md"
       ]
     },
@@ -3440,24 +3385,6 @@
       "sector_reason": "enrichment disabled (enrich=False)",
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "MMC",
-      "wiki_refs": [
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MMM",
       "wiki_refs": [
         "wiki/industrials.md",
@@ -3587,6 +3514,24 @@
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "MRNA",
+      "wiki_refs": [
+        "wiki/universe.md"
+      ]
+    },
+    {
+      "added": null,
+      "adv_usd": null,
+      "adv_usd_reason": "enrichment disabled (enrich=False)",
+      "cap": null,
+      "cap_reason": "enrichment disabled (enrich=False)",
+      "name": null,
+      "name_reason": "enrichment disabled (enrich=False)",
+      "removed": null,
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
+      "sub": null,
+      "sub_reason": "enrichment disabled (enrich=False)",
+      "t": "MRSH",
       "wiki_refs": [
         "wiki/universe.md"
       ]
@@ -4173,24 +4118,6 @@
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "PCAR",
-      "wiki_refs": [
-        "wiki/universe.md"
-      ]
-    },
-    {
-      "added": null,
-      "adv_usd": null,
-      "adv_usd_reason": "enrichment disabled (enrich=False)",
-      "cap": null,
-      "cap_reason": "enrichment disabled (enrich=False)",
-      "name": null,
-      "name_reason": "enrichment disabled (enrich=False)",
-      "removed": null,
-      "sector": null,
-      "sector_reason": "enrichment disabled (enrich=False)",
-      "sub": null,
-      "sub_reason": "enrichment disabled (enrich=False)",
-      "t": "PEAK",
       "wiki_refs": [
         "wiki/universe.md"
       ]
@@ -5668,6 +5595,24 @@
       "sub": null,
       "sub_reason": "enrichment disabled (enrich=False)",
       "t": "VMI",
+      "wiki_refs": [
+        "wiki/universe.md"
+      ]
+    },
+    {
+      "added": null,
+      "adv_usd": null,
+      "adv_usd_reason": "enrichment disabled (enrich=False)",
+      "cap": null,
+      "cap_reason": "enrichment disabled (enrich=False)",
+      "name": null,
+      "name_reason": "enrichment disabled (enrich=False)",
+      "removed": null,
+      "sector": null,
+      "sector_reason": "enrichment disabled (enrich=False)",
+      "sub": null,
+      "sub_reason": "enrichment disabled (enrich=False)",
+      "t": "VMRK",
       "wiki_refs": [
         "wiki/universe.md"
       ]
