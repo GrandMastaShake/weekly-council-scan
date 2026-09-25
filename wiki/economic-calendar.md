@@ -108,7 +108,7 @@ Tracking beats and misses over time to spot bias in consensus estimates.
 - If a data series has missed consensus 4+ times in a row, flag it: "Consensus may be too optimistic."
 - The Monday Council Scan must acknowledge any flagged biases.
 
-*Current status: **No series is at a 4+ consecutive beat or miss streak.** The closest is Jobless Claims (two straight lower-than-expected prints). Across series, though, the pattern is lopsided: of the week's nine consensus-bearing releases, seven beat (flash PMI composite/mfg/services, KC Fed, New Home Sales, core capex, claims) and one missed (Richmond). Consensus is running too pessimistic on U.S. activity as a whole. The Monday Council Scan should treat next week's consensus numbers (NFP +100K especially) as likely to understate.*
+*Current status: **No series is at a 4+ consecutive beat or miss streak.** The closest is Jobless Claims (two straight lower-than-expected prints). Across series, though, the pattern is lopsided: of the week's ten consensus-bearing readings, eight beat (flash PMI composite/mfg/services, KC Fed, New Home Sales, core capex, claims, UMich final), one missed (Richmond) and one is unconfirmed (CFNAI). Consensus is running too pessimistic on U.S. activity as a whole. The Monday Council Scan should treat next week's consensus numbers (NFP +100K especially) as likely to understate.*
 
 ---
 
