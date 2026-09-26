@@ -2,7 +2,7 @@
 
 > **Sector:** Real Estate | **ETF:** Real Estate Select Sector SPDR (XLRE) | **Expense Ratio:** 0.08%
 >
-> *"REITs are the bond market's cousin with a mortgage. When rates rise, they bleed. When rates fall, they heal — slowly."* — Ophelia
+> *"The trapdoor rule fired. Three straight weekly closes below the 200-day, five consecutive red sessions, and Friday's $41.56 close is under the $42.50 line I drew as the trapdoor — the $40.00 magnet is officially live. This was the week the long end stopped helping: the 30Y, which eased post-FOMC last week, jumped 11bp in three days to 5.40%, the 10Y closed Thursday at 5.18% — a 19-year high — and the mortgage market crossed 7.03%. The tower complex broke: Crown Castle -7.1% to a new 52-week closing low, SBA -7.0%, as rate math met take-private-arb deflation. And the two cheapest traditional names stayed green again — WELL +1.1%, SPG flat, CTO +2.2% — the value bid is the only bid. The fund's 3.19% yield against a 5.18% ten-year is a -199bp carry gap. Nobody has traded this chair yet, and the chair hasn't spoken."* — Ophelia
 
 ---
 
@@ -10,20 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $42.53 | $43.42 | **-2.05%** |
+| Price | $41.56 | $42.53 | **-2.28%** — five straight red sessions |
 | 52W Range | $39.12 – $46.46 | — | — |
-| AUM | ~$8.6B (carried) | — | — |
-| YTD Return | **+7.04%** | +9.2% | -2.2 pp |
-| 1Y Return | ~+5.79% | ~+6.1% | lower |
-| P/E Ratio | ~30.3 | ~30.9 | refreshed |
-| Dividend Yield | ~3.19% | ~3.19% | — |
+| AUM | ~$8.3B (yfinance totalAssets, refreshed) | ~$8.6B | Outflows + price |
+| YTD Return | **~+4.6%** (price basis) | +7.04% | -2.4 pp in one week |
+| 1Y Return | ~+3.4% | ~+5.8% | Fading toward zero |
+| P/E Ratio | ~29.6 | ~30.3 | Compressed |
+| Dividend Yield | ~3.19% | ~3.19% | Carry gap vs 5.18% 10Y now **-199bp** |
 | Beta | ~0.85 (carried) | — | — |
 | Total Holdings | ~30 | — | — |
-| Avg Daily Volume | ~4.4M shares (carried) | — | — |
+| Avg Daily Volume | ~5.7M this week | ~4.4M | Distribution-grade volume all five sessions |
 
-**Marky Tape Read:** XLRE closed Friday at **$42.53, down -2.05% on FOMC week** — five sessions of slow bleeding (Mon $43.12 → Tue $43.07 → Wed $42.81 → Thu $42.94 → **Fri $42.53, closing at the week low**) — and the line I said would decide the quarter **broke**: **Friday is the first weekly close below the 200D ($42.78) of 2026**, ending the average's perfect record by twenty-five cents, on the week the Fed hiked. RSI **25.6** — statistically oversold, the fund's deepest print of the year. Wednesday told the tale: the 10Y closed **5.006% — its first close above 5.00% this cycle** — and XLRE printed its week low that session; Thursday's bounce attempt died at $42.94; Friday sold to the close. The internals completed last week's rotation: the contracted-growth sleeve that led all month finally cracked (**AMT -2.2%, lost its 200D ($175.40); EQIX -1.6%; DLR -2.8%**) while the bond-proxy capitulation went terminal — **O -4.8%, RSI 10.0, the worst major and the most oversold print on any Council board this year**. Only two majors closed green: **PSA +1.0%** (held its 200D at $295.23 by a dollar) and **SPG +0.2%**. PLD +0.1% — flat, but still below its own 200D ($135.60), unreclaimed for a second week.
+**Marky Tape Read:** There is no way to soften it: **five consecutive down days** — Mon $42.59, Tue $42.50, Wed $41.84 (the 5.11% close), Thu $41.65 (the 5.18% close), Fri $41.56 (week low $41.33) — and a Friday close at $41.56 that is **below the $42.50 trapdoor** this page drew two weeks ago. The rules say what the rules say: a weekly close under $42.50 opens **$40.00**. The third straight weekly close below the 200D ($43.19 raw basis) confirms the break; RSI 29.3 is oversold but was 25.6 last week and it didn't matter — in a rates-led regime, oversold is a condition, not a floor. The week's internals confirmed the hierarchy: duration got liquidated hardest (**CCI -7.1%, SBAC -7.0%** — new 52-week closing low for CCI at $67.84), the AI landlords bent (**EQIX -1.3% with a -2.6% Friday**, DLR -1.9%), and the value bid kept showing up exactly where it's cheapest (**WELL +1.1% green, SPG -0.2% flat, CTO +2.2%**). PSA broke its 200D (-2.8%) — the last traditional major holding a line was discharged. What I'm watching into next week: **$41.33 (Friday's low) is the last shelf before $40.00**; a reclaim of $42.50–$43.19 (the trapdoor + 200D) would be the first constructive print in three weeks; and volume — Friday's 11.96M shares in Realty Income (2.5x average) looked like a capitulation day for that name. The reflex rally this sector owes will be violent; nothing in this tape says it starts before the 10Y lets it.
 
-**Ophelia Macro Read:** The crisis line is a price now. The FOMC hiked **+25bp to 3.75–4.00%, 12-0 — the first hike since July 2023 and the first of the Warsh chairmanship** — with the dots penciling **4.1% at end-2026 (one more hike) and the 2027 path raised to 4.1% from 3.6%**; Warsh submitted no dot and gave no forward guidance. The 10Y's week: 4.961 → 4.996 → **5.006 (Wed)** → 4.947 → **4.998 Fri**. My framework's crisis line (5.00%) was crossed on a Wednesday close and the world did not end — which is exactly what regime change feels like from inside. The 30Y actually EASED post-FOMC (5.331% Fri, -0.43% W/W) — the buyback backstop finally showed in the long end — but the front end did the damage: 2Y +13.4bp on hike day to 4.736%. The mortgage channel followed: **PMMS 6.95% for the week ending Sep 17 (+19bp — the largest weekly jump of the year, highest since early 2025)**; daily benchmarks sit at **7.19% (MND, Sep 17)** and **7.01% (Zillow)** — 7% money is the fall market. And Lennar said the quiet part Wednesday night: **EPS $1.19 vs. $2.29 a year ago, orders -9%, "the environment has deteriorated since our last earnings call"** — the first homebuilder to confirm on the record what 7% mortgages mean. XLRE's 3.19% yield against a 4.998% ten-year is a **-181bp carry gap** — the widest of the cycle. The fleet's rate-regime issue is **#106**; this desk opens nothing new.
+**Ophelia Macro Read:** Last week the 30Y eased after the hike and I wrote that the buyback backstop "finally showed." This week took it back: **the 30Y jumped 11bp in three days to 5.40% — a level not seen since 2004** — and the 10Y closed Thursday at **5.18%** (FRED; 19-year high), finishing near 5.15%. The composition flipped: the long end, which was supposed to be the defended part of the curve, is now doing the damage — the bond market is pricing the AI-commodity inflation floor (nat gas $3.18, copper $6.78 through mine disruptions), and buybacks are not big enough to fight that. The mortgage channel followed to **7.03%** — the highest 30Y fixed of this century's second half — and the builder data split: new home sales +12.7% to 684K (buydowns working) while the existing-home channel stays frozen. Lennar's "deteriorated" is the operative word for turnover. **~71% of an October hike is priced**, Barr said "further adjustments," and DXY closed the week at 101.04 (issue #115). The carry math: XLRE's 3.19% yield vs 5.18% ten-year = **-199bp** — and that number, not any REIT-specific fact, is the sector's price-setter until the Fed's next gate (PCE Sep 30). The wildcard file is unchanged and unresolved: nobody has traded Chair Warsh, and his first speeches are the cheapest optionality in the market.
 
 ---
 
@@ -31,45 +31,31 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | PLD | Prologis | ~13.5% | $134.84 | +0.12% | $150.06 | $108.70 | 3.17% | 30.1 | 🔴 |
-| 2 | AMT | American Tower | ~11.5% | $173.98 | **-2.18%** | $192.28 | $162.11 | 3.98% | 24.2 | 🔴 |
-| 3 | EQIX | Equinix | ~9.5% | $1,021.34 | -1.58% | $1,110.63 | $715.18 | 2.01% | 66.2 | ⚠️ |
-| 4 | CCI | Crown Castle | ~7.0% | $73.06 | -1.98% | $95.40 | $71.61 | 5.76% | 30.1 | ⚠️ |
-| 5 | PSA | Public Storage | ~6.0% | $296.31 | **+0.96%** | $330.47 | $253.48 | 3.99% | 28.3 | ⚡ |
-| 6 | O | Realty Income | ~5.0% | $56.66 | **-4.77%** | $65.82 | $53.70 | 5.68% | 41.4 | 🔴 |
-| 7 | WELL | Welltower | ~5.0% | $228.87 | -2.86% | $251.12 | $162.79 | 1.46% | 104.0* | ⚠️ |
-| 8 | SBAC | SBA Communications | ~4.0% | $178.59 | -3.71% | $220.88 | $163.03 | 2.76% | 19.5 | 🔴 |
-| 9 | SPG | Simon Property Group | ~4.0% | $205.32 | +0.24% | $234.19 | $165.67 | 4.35% | 14.4 | ⚡ |
-| 10 | DLR | Digital Realty Trust | ~4.0% | $182.12 | -2.76% | $202.56 | $145.96 | 2.65% | 90.2* | ⚠️ |
+| 1 | PLD | Prologis | ~13.5% | $133.05 | -1.33% | $150.06 | $108.70 | 3.17% | 30.1 | ⚠️ |
+| 2 | AMT | American Tower | ~11.5% | $169.03 | **-2.85%** | $192.28 | $162.11 | ~4.2% | 24.2 | 🔴 |
+| 3 | EQIX | Equinix | ~9.5% | $1,008.08 | -1.30% | $1,110.63 | $715.18 | 2.01% | 66.2 | ⚠️ |
+| 4 | CCI | Crown Castle | ~7.0% | $67.84 | **-7.15%** | $95.40 | **$71.61→broken** | ~6.2% | 30.1 | 🔴 |
+| 5 | PSA | Public Storage | ~6.0% | $287.97 | **-2.82%** | $330.47 | $253.48 | 3.99% | 28.3 | ⚠️ |
+| 6 | O | Realty Income | ~5.0% | $55.54 | -1.98% | $65.82 | $53.70 | ~5.5% | 41.4 | 🔴 |
+| 7 | WELL | Welltower | ~5.0% | $231.37 | **+1.09%** | $251.12 | $162.79 | 1.46% | 104.0* | ⚡ |
+| 8 | SBAC | SBA Communications | ~4.0% | $166.15 | **-6.97%** | $220.88 | $163.03 | ~2.8% | 19.5 | 🔴 |
+| 9 | SPG | Simon Property Group | ~4.0% | $204.82 | -0.24% | $234.19 | $165.67 | 4.35% | 14.4 | ⚡ |
+| 10 | DLR | Digital Realty Trust | ~4.0% | $178.61 | -1.93% | $202.56 | $145.96 | 2.65% | 90.2* | ⚠️ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | 🔴 = Breakdown / rate-pressure | ⚠️ = Pullback / caution
-> *Prices/weekly changes refreshed to Fri 9/18 closes (dividend-adjusted basis; date-pinned Fri 9/11 → Fri 9/18, five sessions). Yields/P/Es refreshed from yfinance quote data 9/19. \*Yahoo's GAAP trailing P/Es for WELL (104x) and DLR (90x) remain distorted by TTM items; FFO/AFFO multiples are the meaningful metric.*
+> *Prices/weekly changes refreshed to Fri 9/25 closes (dividend-adjusted basis; date-pinned Fri 9/18 → Fri 9/25). Yields carried from the 9/19 refresh where noted; CCI's yield re-marked to the post-fiber-sale dividend. \*WELL (104x) and DLR (90x) GAAP trailing P/Es remain distorted; FFO/AFFO is the meaningful metric.*
 
-**Sector Bifurcation:** XLRE is not your father's real estate fund. It is split into four distinct groups:
+**Sector Bifurcation:** The four-group structure is now a two-speed tape — duration victims vs the value bid:
 
-**The Logistics Giants (The E-Commerce Play):**
-- PLD (Prologis) — the world's largest logistics REIT. Warehouses, distribution centers, last-mile facilities. E-commerce = demand for industrial space. PLD is the Amazon supply chain in REIT form.
+**The Cell Towers — the complex broke.** **CCI -7.15% to $67.84** — a NEW 52-week closing low through $71.61 — and **SBAC -6.97% to $166.15**, three points over its own low. No single company headline did this; it was the convergence of three standing overhangs: the 5.18% tape (towers are the most rate-levered large REITs), carrier-capex questions post-EchoStar/Dish, and the deflation of take-private premiums — SBAC's strategic-review process (running since April's Bloomberg report) keeps leaking air as financing costs 5.4% at the long end. CCI's yield is now ~6.2%, the widest carry over Treasuries it has ever printed, and the market still sold it. This is the rate regime at its most brutal: even the cheapest nominal yields get marked down when the risk-free rate runs.
 
-**The Cell Towers (The Connectivity Play):**
-- AMT, CCI, SBAC — cell tower REITs. 5G rollout = more towers, more tenants, more revenue. These are infrastructure plays with long-term leases. AMT is the global leader. CCI is the only large pure-play U.S. tower company after closing its fiber/small-cell divestiture May 1. SBAC is the pure-play tower REIT.
+**The Data Centers — bent, not broken.** EQIX -1.3% to $1,008 (Friday -2.6% with the tech tape), DLR -1.9% to $178.61. Both below their 50Ds, both still far above their 200Ds — the AI-landlord premium compressed again but the demand story (record backlogs, +20% annual demand) is untouched by the rate tape. A hyperscaler leasing headline reverses this group in a session; none came this week.
 
-**The Data Centers (The AI Play):**
-- EQIX, DLR — data center REITs. AI = massive demand for data center space. Hyperscalers are leasing every square foot. EQIX is the interconnection leader. DLR is the hyperscale leader. These are the fastest-growing REITs — and the most correlated to the tech tape.
+**The Logistics Giants.** PLD -1.3% to $133.05 — a third week below the 200D with the Oct 15 print approaching; development yields vs 7.03% mortgage-adjacent money is the whole question for that day.
 
-**The Traditional REITs (The Bond Proxies):**
-- PSA (self-storage), O (triple-net retail), WELL (senior housing/healthcare), SPG (malls) — traditional REITs with stable cash flows but lower growth. O is the "Monthly Dividend Company." WELL is a healthcare REIT benefiting from aging demographics. SPG is the mall REIT that survived the retail apocalypse.
+**The Traditional REITs — the value bid's home.** **WELL +1.09% was the fund's only green major** (demographics, AFFO growth, the "expensive but growing" corner finally catching a bid). SPG -0.24% flat at 14.4x/4.35% — the market's shopping pattern continued for a second week. PSA -2.8% finally lost its 200D. And **O -1.98% to $55.54 on 2.5x average volume** — Friday's volume spike is the first capitulation-grade print this complex has produced; RSI 17.4, yield ~5.5%, and the monthly dividend arrives Oct 15 regardless.
 
-**The AMT Reclaim Fails:** American Tower **-2.18% to $173.98** — last week's fund leader gave back the reclamation: Friday's close put AMT **back below its 200D ($175.40)** after exactly one week above it. The rotation that carried the fund through the pre-FOMC siege did not survive the hike itself. The fundamental case is untouched (24.2x, 3.98% yield, $216 mean target), but the tape's message changed: in the first week of the new rate regime, the market stopped paying a premium even for contracted growth.
-
-**The Data-Center Complex Bends:** EQIX -1.58% to $1,021.34 and DLR -2.76% to $182.12 — both broke their multi-week refusal to make new lows. No leasing news either way; this was duration math, not demand. The AI-landlord premium (EQIX still +33% YTD) compressed with everything else as the 2027 dots moved up. Watch for leasing announcements — any hyperscaler print reverses this fast.
-
-**O Capitulates:** Realty Income **-4.77% to $56.66 — RSI 10.0.** The Monthly Dividend Company is now the most oversold major on any Council board, yielding **5.68% — 68 honest basis points over a 4.998% ten-year** — and still being sold every day. There is no company news; this is pure carry-vs-duration repricing at 7% mortgage money. Capitulation prints at RSI 10 historically mark the late stage of a move, not the early stage — but "late" is a condition, not a date.
-
-**The Two Greens:** PSA **+0.96% to $296.31** — held its 200D ($295.23) by one dollar and closed green on the week; self-storage is the least rate-levered traditional sleeve, and the tape noticed. SPG **+0.24% to $205.32** — the mall REIT at 14.4x with a 4.35% yield attracted the week's only value bid, retail sales +1.2% in hand. When the two cheapest traditional names are the only green, the market is shopping, not fleeing.
-
-**SBAC / CCI / WELL:** SBAC -3.71% to $178.59 — the 200D rematch ($190.35) is now a distant memory; below the 50D too. CCI -1.98% to $73.06 — the 5.76% carry trade took its first real hit of the month but made no new 52W low ($71.61 holds). WELL -2.86% to $228.87 — even demographics paid a tax this week.
-
-**Cecil Fundamental Read:** I will say the hard thing first: the 200D broke, and I do not buy broken lines — the discipline that kept me out of O at $59.50 keeps me out at $56.66, RSI 10 or not. What I am doing: PSA at 28.3x holding its 200D and SPG at 14.4x with a 4.35% yield were the only two names the market paid for this week — that is value asserting itself inside a rate storm, and it is where my attention goes. CCI's 5.76% yield with a repaired balance sheet made no new low. AMT's failed reclaim is the week's disappointment, not its disaster — 24.2x contracted towers with a $216 target is a price I revisit on stabilization. And Lennar told you Wednesday night what the housing channel looks like at 7% money: orders -9%, margins 15.8%, "deteriorated." This fund owns almost no housing — but the mortgage print that breaks homebuilders is the same print taxing every REIT in this table. I bought nothing. The harvest is patient; it is also, this week, smaller.
+**Cecil Fundamental Read:** The discipline held me out of the tower complex all month — CCI's new low and SBAC's -7% are the market agreeing I was right for the wrong reason: it wasn't the fundamentals, it was that 6% yields are no longer interesting when the long end runs 40 basis points a day. I did nothing again this week, which is itself a position: the trapdoor rule fired, $40 is the magnet, and I do not stand in front of magnets. The list, updated: O is now a 5.5% monthly payer with a capitulation volume print — the first name on the list I'd actually act on, but only after the 10Y closes a week under 4.90% or PCE cools the October odds. WELL's green week at a premium multiple tells you the market will pay for growth the moment the tape permits; WELL is the second name on the list. CCI at ~6.2% — the math is finally absurd, but broken lines get bought after they stop breaking, not while. PSA lost its 200D and leaves the list. The harvest is patient; at 7.03% mortgage money, patience is the only position that pays carry.
 
 ---
 
@@ -79,13 +65,13 @@
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | P/E | Signal | Council Read |
 |---|---|---|---|---|---|---|---|
-| CTO | CTO Realty Growth | $0.76B | $20.28 | -2.08% | 14.8 | ⚡ | Held up best of the cohort's income names — the ex-div arithmetic washed out; 7.45% yield at 14.8x with a $24.60 mean target. Est. earnings Oct 27 with AMT. Carry intact |
-| GTY | Getty Realty | $1.84B | $29.64 | **-8.15%** | 18.2 | 🔴 | **The cohort's casualty.** No company news found — this is a pure rate repricing of a 6.5%-yield net-lease book against a 5.00% risk-free close; lost its 200D ($31.52) hard. Next dividend $0.485, record Sep 24, payable Oct 8 — the payout is the floor argument now |
-| UE | Urban Edge Properties | $2.76B | $20.01 | -1.72% | 37.8 | 🔴 | Second week below the 200D, RSI 16.6 — statistically oversold, still no company news; the rate tape owns the chart. The $20 round number is the last line before the spring base |
-| SAFE | Safehold | $0.93B | $13.14 | **-6.34%** | 8.4 | 🔴 | **Second straight disaster week** (-7.2%, then -6.3%), RSI 9.2 — the deepest oversold print in the cohort's history on this board. Ground leases are a century of fixed payments; at 8.4x earnings and 5.2% yield the market is pricing duration extinction, not credit. 8.4x says the selling is exhausted; the tape hasn't confirmed |
-| BRT | BRT Apartments | $0.26B | $13.82 | -2.61% | N/M | ⚠️ | 7.24% yield; micro-cap float caveat. Lost the 200D zone this week with everything else. Multifamily delinquency held 7.69% in August — next Trepp read early Oct is the cohort's credit check |
+| CTO | CTO Realty Growth | $0.78B | $20.72 | **+2.17%** | 14.8 | ⚡ | **The cohort's only green name, again.** 7.4% yield at 14.8x with a $24.60 mean target; the market keeps paying for this book when everything else yields more. Oct 27 print with AMT |
+| GTY | Getty Realty | $1.77B | $28.66 | -1.66% (ex-div adj; -3.3% price) | 17.4 | ⚠️ | The $0.485 dividend recorded Sep 24 (payable Oct 8) — the payout is the floor argument, now 6.8% annualized. Stabilized after last week's -8.2% rout; RSI 20.7 |
+| UE | Urban Edge Properties | $2.74B | $19.90 | -0.55% | 37.5 | ⚡ | Held the $20 line on a closing basis ($19.90) into the weekend — the round number is the whole chart. RSI 29; base-or-break with the sector |
+| BRT | BRT Apartments | $0.26B | $13.77 | -0.36% | N/M | ⚡ | 7.3% yield; micro-cap float caveat. Quiet week — the multifamily credit question (August delinquency 7.69%) gets its next Trepp read early Oct |
+| SAFE | Safehold | $0.87B | $12.26 | **-6.70%** | 7.6 | 🔴 | **Third straight disaster week; new all-time low.** Ground leases are a century of fixed payments, and the market is pricing duration extinction: 7.6x earnings, 5.7% yield, $18.30 mean target. The selling is mathematically exhausted and mechanically continuing — the definition of a falling knife. No catch |
 
-**Small-Cap Sector Read:** All five names **re-verified under $5B as of Friday Sep 18 — no rotations** (CTO $0.76B / GTY $1.84B / UE $2.76B / SAFE $0.93B / BRT $0.26B). The cohort's one story went terminal: **duration got liquidated.** GTY's -8.2% on zero company news is the cleanest proof — a boring net-lease grocery/gas REIT does not lose 8% in a week on fundamentals; it loses it when a 6.5% yield is repriced against a 5.00% ten-year that just closed above the crisis line. Three of five now print RSI under 17 (SAFE 9.2, GTY ~15, UE 16.6) — capitulation territory. The cohort's next scheduled catalysts: GTY's dividend record date Sep 24, then Q3 prints starting Oct 21. Until the 10Y stops making 5.00% a habit, the carry math is the only fundamentals here.
+**Small-Cap Sector Read:** All five **re-verified under $5B as of Friday Sep 25 — no rotations** (CTO $0.78B / GTY $1.77B / UE $2.74B / BRT $0.26B / SAFE $0.87B). The cohort split cleanly: the names with real earnings support (CTO, GTY post-dividend, UE at $20) stabilized, and the pure-duration vehicle (SAFE) made new all-time lows for a third week. SAFE is now the cohort's MERC — a going-concern-priced duration stub, 7.6x with the Street at $18.30. The cohort's next scheduled read is the Trepp September print (early Oct) — multifamily delinquency is the credit check that matters for BRT and the whole rate-sensitive row.
 
 ---
 
@@ -94,17 +80,18 @@
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $46.46 | Resistance — untouched since July |
-| 50-Day MA | $44.60 | **Resistance** — fourth straight weekly close below |
-| Current Price | $42.53 | Fri 9/18 close — at the week low |
-| 200-Day MA | $42.78 | **LOST — first weekly close below in 2026** (Fri $42.53, -25c). The perfect record is over; this is now the reclaim line |
-| Week Low | $42.50 | Friday — the close sat on it |
-| Deep Support | $40.00 | Psychological floor — the stated magnet on a confirmed 200D break |
-| Structural Low | $39.12 | 52W bottom |
-| RSI(14) | 25.6 | Oversold — deepest fund print of 2026 |
+| 50-Day MA | ~$44.4 | Falling — the pre-siege supply |
+| 200-Day MA | ~$43.2 (raw) | **Third straight weekly close below — break confirmed** |
+| Trapdoor | $42.50 | **CLOSED UNDER Friday ($41.56) — the $40.00 magnet rule is live** |
+| Current Price | $41.56 | Fri 9/25 close; -2.28% W/W; five straight red sessions |
+| Week Low | $41.33 | Friday — the last shelf before $40 |
+| The Magnet | $40.00 | Psychological floor and the map's stated objective on a confirmed break |
+| Structural Low | $39.12 | 52W bottom — below $40, this is the only line left |
+| RSI(14) | 29.3 | Oversold for a second week; in a rate regime, not a floor |
 
-**Marky Setup Assessment:** The line I called the quarter's decider broke — and I don't grade on a curve: **a weekly close at $42.53 against a $42.78 200D is a break, full stop.** The qualifiers matter for sizing, not direction: the break is marginal (25 cents), printed at RSI 25.6 (oversold), on hike-week flow — the highest false-break risk configuration there is. So the rules: **a weekly reclaim of $42.78 marks this as a head-fake and re-opens $44.60; a second weekly close below — or any weekly close under $42.50 — opens $40.00.** Everything between is the proving ground. Inside the fund, the tells flipped: AMT lost its 200D back (one-week reclaim failed); PSA held its 200D by a dollar and closed green — the new leadership test; O at RSI 10.0 and the SMID trio at RSI 9-17 are springs compressed to their limit — the reflex rally, when the 10Y gives it permission, will be violent. PLD needs $135.60 back to matter. I trade the reclaim line and the 10Y, nothing else.
+**Marky Setup Assessment:** I drew the rules two weeks ago and the tape has now satisfied the worst of them: three weekly closes below the 200D (confirmation), a weekly close under $42.50 (trapdoor), and five straight red sessions (trend). **$40.00 is the magnet and the burden of proof has fully inverted — the bulls need a weekly close back over $42.50 to stop it, and over $43.19 to claim a reclaim.** What could do that: the same thing that has driven every tick for six weeks — the 10Y. A PCE cool (Sep 30) that unwinds the October-hike pricing is the scheduled catalyst; a Warsh speech that softens the 4.1% median is the unscheduled one. Until one of those, I trade the short side of rallies against $42.50 and I do not catch the springs — not O at RSI 17, not SAFE at new lows, not CCI at a 6.2% yield. The capitulation-volume print in O Friday (11.96M vs 7.9M average) goes in the ledger as evidence the end of this move is closer than its beginning; evidence, not a signal.
 
-**The relative strength story:** XLRE **-2.05% vs. SPY -0.09%** — a sixth straight week of underperformance, and the widest margin of the streak. YTD: **XLRE +7.0% vs. SPY +12.5%** — the gap is now ~5.5 points and widening. The AI-landlord premium is compressing on schedule; the bond-proxy tax is terminal-phase. At the ETF level the macro owns the tape until either $42.78 is reclaimed or the 10Y closes a full week under 4.90%.
+**The relative strength story:** XLRE **-2.28% vs SPY ~+1%** — a seventh straight week of underperformance and the widest of the streak. YTD: **XLRE +4.6% vs SPY ~+13** — an 8-point gap. The sector that led the spring has given back its entire relative advantage in seven weeks; the AI-landlord premium is compressed, the bond-proxy tax is terminal-phase, and the only relative winner left inside is the value bid (WELL/SPG/CTO). At the ETF level, the macro owns the tape until the 10Y closes a week under 4.90% or the fund reclaims $42.50.
 
 ---
 
@@ -112,125 +99,115 @@
 
 | Factor | Level | Implication for XLRE |
 |---|---|---|
-| **FOMC (Wed Sep 16)** | **Hiked +25bp to 3.75–4.00%, 12-0 — first hike since Jul 2023, first of the Warsh chairmanship**; dots: end-2026 4.1% (one more), end-2027 4.1% (raised from 3.6%); no guidance, Warsh no dot | The verdict landed hawkish-lean: no "one-and-done" language, 2027 path raised, next meeting ~57% priced. The relief valve the tape hadn't priced stayed closed |
-| 10Y Treasury | **4.998% Friday; 5.006% Wednesday — FIRST CLOSE ABOVE 5.00% THIS CYCLE** (week path: 4.961 / 4.996 / 5.006 / 4.947 / 4.998); RSI 78.3 | Ophelia's crisis line is now a price. Two closes at/above 5.00% in five sessions = testing acceptance, not touching. Stress framework: 4.75% stress / **5.00% crisis (CROSSED)** / 4.50% relief |
-| 30Y Treasury | **5.331% Friday, -0.43% W/W** — eased post-FOMC | The buyback backstop finally showed in the long end; the week's damage came from the FRONT end (2Y +13.4bp to 4.736% on hike day) — a Fed-expectations move, not a term-premium accident |
-| 30Y Mortgage Rate | **PMMS 6.95% (wk ending Sep 17, +19bp — largest weekly jump of 2026, highest since early 2025)**; 15Y 6.26%; MND daily 7.19% (Sep 17, off 7.24%); Zillow 7.01% | **7% money is the fall market.** PMMS lags (survey captures the pre-FOMC selloff); dailies say post-hike pricing eased a hair. Housing turnover stays frozen |
-| Lennar Q3 (Wed AMC) | **EPS $1.19 vs. $2.29 YoY — "below expectations"; orders -9% to 20,879; deliveries -3%; GM 15.8%; CEO Miller: "the environment has deteriorated since our last earnings call"; 30Y mtg ~6.8% at quarter-end "and even higher since"; Q4 guide 22–23K deliveries** | The first on-the-record homebuilder confirmation of what 7% mortgages do to volume — the housing channel's canary filed its report |
-| DXY | **100.22, +1.11% W/W** — back above its 50D (99.95) | The dollar finally joined the hawkish trade — AMT/EQIX international cash-flow translation flipped back to headwind; AMT's failed 200D reclaim is partly this |
-| 2Y Treasury | **4.736%** (+13.4bp hike day) | The front end repriced to the dots — end-2026 4.1% means no relief for the short-money crowd either |
-| Fed Funds | **3.75–4.00%** | Next meeting (~Oct) ~57% priced for another hike. Blackout lifted; Warsh's first speeches as chair are the new event risk |
-| Consumer | UMich final Sep due **Fri Sep 25** (prelim 47.8, Grid B issue #99); **August retail sales +1.2% beat** | Spending resilient, confidence collapsed — the trade-down tape. SPG +0.2% green on it |
-| Crude Oil | WTI **$100.30** (+0.25% W/W; Tue spike $105.83 close) | The siege premium plateaued — no longer worsening, fully embedded in the October CPI window |
-| BOJ | **Hiked to 1.25% Friday (Sep 18)** | Global tightening synchronized — one more source of upward pressure on global duration |
-| **Office Vacancy Rate** | **18–20%** | **Structural crisis.** Remote work destroyed office demand. XLRE is underweight office — correct positioning. |
-| Commercial RE Prices | Down ~15–20% from peak | Stabilizing at lower levels; transaction volume frozen at 7% money. |
-| CRE Refinancing Wall | ~$875B maturing 2026 | **No fresh Trepp print this week** (September read posts early Oct). August standing: overall 7.85%, office 12.00%, multifamily 7.69%, lodging 5.84%, retail 7.20%; 81% of new delinquencies = matured balloons. **~39% of 2026's $76.6B hard CMBS maturities land in Q4 — now AT 7% refi money, no longer approaching it** |
-| **Data Center Demand** | **~+20% annually** | No leasing announcements this week; ORCL's +121% cloud-infrastructure print (standing) is the demand engine. EQIX/DLR bent on duration math, not demand. Texas permitting pause (Aug 3) still a watch item |
-| 5G Capex | ~$100B+ globally | AMT's 200D reclaim failed after one week; CCI made no new low; SBAC broke down. Tower leadership is now nobody's — the complex trades rates, not contracts, until the 10Y stabilizes |
-| E-Commerce Growth | ~+8–10% YoY | PLD +0.1%, second week below its 200D ($135.60), unreclaimed — acceptance risk building into the Oct 15 print |
-| Senior Housing Demand | Growing ~+3% annually | WELL -2.9% — even the demographics story paid the rate tax this week |
-| REIT Regulatory Risk | Low | No domestic rule changes; the rate regime IS the regulation this quarter |
+| 10Y Treasury | **5.18% Thu close** (FRED; 19-year high); ~5.15% Fri | Acceptance, not a test — three weeks into life above 5.00%. The sector's price-setter. Fleet issues **#106/#114** own the rate regime; no new trigger from this desk |
+| 30Y Treasury | **5.40%** — highest since 2004 (+11bp in three days) | Last week's buyback-defense story failed; the long end now leads the selloff on the AI-commodity inflation floor. The worst composition for REIT duration |
+| 30Y Mortgage | **7.03%** (cycle high); PMMS 6.95% last read | 7% money is the fall market. Housing turnover frozen; Lennar's "deteriorated" is the template; new home sales 684K (+12.7%) only via builder buydowns |
+| Fed Posture | 3.75–4.00%; Barr hawkish; **~71% October +25bp odds**; Warsh yet to give a major speech | The wildcard file: the new chair's reaction function is untested. First speeches are the sector's cheapest upside option |
+| DXY | **101.04 weekly close** (issue #115) | Translation headwind for AMT's international book at exactly the wrong time |
+| 2Y Treasury | 4.905% Friday | Front end still pricing restrictive-longer; no relief for short-money REIT carry trades |
+| Core PCE | **Sep 30** | THE gate: cool print unwinds October odds → the 10Y can break 4.90% → this sector's springs uncoil; hot print sends the 30Y toward 5.50% |
+| Trepp CMBS Delinquency | September print posts **early Oct** (last: overall 7.85%, office 12.00%, multifamily 7.69%) | ~39% of 2026's $76.6B hard CMBS maturities land in Q4 at 7% refi money — the first major default headline is a sector event; next week's print is the checklist |
+| Data Center Demand | ~+20% annually; no new leasing prints | EQIX/DLR compressed on duration, not demand; one hyperscaler headline reverses the group |
+| UMich / Consumer | Final 48.1; inflation expectations 4.6% | Mall (SPG) traffic risk building into Q4; the trade-down tape is the standing retail condition |
+| ISM Manufacturing | Oct 1 | The cyclical-demand read that matters for PLD's space demand |
 
-**Ophelia Verdict:** The framework held; the line didn't. I set 5.00% as crisis in March, the market closed above it Wednesday, and I am restating the rule the way the evidence demands: **5.00% is no longer a line — it is a price, and the question is now acceptance.** One close above is a test; two in five sessions is a campaign. The 30Y easing to 5.33% post-FOMC says the buybacks work at the long end; the 2Y at 4.74% says the Fed's own dots are the problem now — and dots don't get bought back. My posture, restated for the new regime: **no new duration (unchanged); hold the contracted growers on stabilization, not on hope (AMT's failed reclaim is the lesson); harvest carry only where the balance sheet survives 7% money (CCI, PSA); and treat every oversold print (O at RSI 10, the SMID trio at 9–17) as a spring, not a signal.** The relief valve is 4.90% on the 10Y — a full weekly close under it. Until then, the sector trades at the mercy of the next CPI (Oct 14) and the next Warsh sentence. The fleet's regime issue is #106; this desk's file on the matter is now a standing appendix, not a trigger.
-
-**The Lennar Footnote:** I am filing the builder's word — "deteriorated" — under housing-channel confirmation. XLRE owns almost no housing, but the 6.95% PMMS print that broke Lennar's orders is the same gravity pulling on every multiple in this file. When the homebuilders start guiding down in bulk (Q4 deliveries 22–23K), the mortgage-rate ceiling for the fall is set.
+**Ophelia Verdict:** The framework held; the map executed; the sector lost. My crisis line became a price three weeks ago, and the new information this week is the composition — the **30Y at 5.40% means the term-premium/buyback defense failed**, and the long end has joined the front end in pricing the AI-commodity inflation floor. That is the worst version of this regime for REITs: there is no segment of the curve left to hide the duration in. My posture, unchanged in kind but stricter in degree: **no new duration while the 30Y makes new cycle highs; carry only where the balance sheet survives 7.03% money (CCI's 6.2% yield fails that test until its price stops breaking); the value bid (WELL, SPG, CTO) is the only leadership this fund has, and I respect it.** The relief conditions are named and dated: PCE Sep 30, then the October FOMC. A cool PCE that breaks the 10Y under 4.90% weekly makes this fund's capitulation prints (O RSI 17, SAFE new lows, CCI's yield) the best entry set of the year. A hot one sends the 30Y to 5.50% and takes XLRE through $40. There is no third path that doesn't run through those two prints.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLRE (week ending 2026-09-18)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLRE (week ending 2026-09-25)
 
-### This Week's Story: The Line That Held All Year, Held No Longer
+### This Week's Story: The Trapdoor
 
-All year, XLRE's 200-day average was the one line that never broke — untested through spring, tapped once in September's siege, survived by twenty-three cents. **Friday it gave way: a $42.53 close against a $42.78 line, at the week's low, on the week the Fed hiked for the first time in fourteen months.**
+Two weeks ago this page set the rules: a second weekly close below the 200D confirms the break; a weekly close under $42.50 opens $40.00. **This week both fired.**
 
-The verdict came Wednesday at 2:00 PM: +25bp to 3.75–4.00%, unanimous, first hike of the Warsh chairmanship — and the projections were the hawkish part. Dots pencil 4.1% at end-2026 (one more hike) and the 2027 path moved *up* to 4.1%. The 10-year closed **5.006% that day — the first close above 5.00% this cycle** — and finished the week at 4.998%, with two closes at-or-above the crisis line in five sessions. The composition shifted in a way that matters: the 30-year actually *eased* post-FOMC (the buyback backstop finally showing at the long end) while the 2-year jumped 13bp on the dots. The damage now comes from the Fed's own projections, not term premium — and dots don't get bought back.
+**Catalyst 1 — The Long End Defects (Wed–Thu):** Last week's mercy was the 30Y — it eased to 5.33% post-FOMC as buybacks showed up at the long end. This week the long end led the selloff: **+11bp in three days to 5.40%**, the highest since 2004, while the 10Y closed Thursday at **5.18%** — a 19-year high. The bond market has stopped distinguishing between Fed policy and the AI-commodity inflation floor (nat gas +5.3%, copper $6.78 through mine disruptions); it is pricing all of it at once, and the REIT complex is the asset class built to lose that argument.
 
-The mortgage channel priced it instantly: **PMMS 6.95% (+19bp, the year's largest weekly jump)**, daily locks at 7.19%. Hours after the hike, Lennar filed the housing channel's confirmation: orders -9%, EPS nearly halved year-over-year, and the CEO's word — "deteriorated" — on the record.
+**Catalyst 2 — The Tower Complex Breaks (all week):** **Crown Castle -7.1% to $67.84, a new 52-week closing low**, and **SBA -7.0%** — the most rate-levered large REITs met the week's rate regime at its most brutal, with SBA's take-private premium deflating alongside (the strategic review running since April prices worse every week financing costs rise). CCI's ~6.2% yield is the widest spread over Treasuries in its history as a pure-play tower company, and it was sold anyway. When the market won't own 6% contractual cash flows, the regime has declared what it thinks of duration at any price.
 
-Inside the fund, the month-long rotation completed its collapse. The contracted-growth sleeve that led through the siege finally cracked: **AMT lost its 200D back after one week above it**, EQIX and DLR bent on duration math with no demand news at all. The bond proxies went terminal: **O -4.8% to RSI 10.0 — the most oversold major on any Council board this year** — and in the small-caps, **Getty Realty lost 8.2% on zero company news**, a 6.5% yield repriced against 5.00% risk-free. The only two greens were the cheapest names in the fund: **PSA +1.0%** (held its 200D by a dollar) and **SPG +0.2%** — the market shopping value, not fleeing the sector.
+**Catalyst 3 — The Value Bid's Second Week (all week):** Against all of it, the same three names attracted the same buyers: **WELL +1.1%** (the fund's only green major), **SPG flat at 14.4x/4.35%**, and small-cap **CTO +2.2% with a 7.4% yield**. Two consecutive weeks of the identical pattern is a bid, not a blip — the market is shopping the cheapest cash flows in the fund while liquidating everything duration-levered above them.
 
-**The Bottom Line:** XLRE fell -2.05% to $42.53, broke its 200-day on a weekly close for the first time in 2026, and printed its deepest oversold reading of the year (RSI 25.6). The map is now binary: reclaim **$42.78** and the break is hike-week noise; a second weekly close below, or any close under **$42.50**, opens **$40.00**. The 10Y holds the pen.
+**Catalyst 4 — Capitulation Volume in the Monthly Dividend Company (Fri):** Realty Income traded **11.96M shares Friday — 2.5x its average** — and closed at $55.54, RSI 17.4. Capitulation-grade volume on a name that pays monthly is how bottoms announce themselves in this asset class; the announcement is not the bottom.
+
+**The Bottom Line:** XLRE fell -2.28% to $41.56 — seven straight weeks of underperformance, five straight red sessions, a confirmed 200D break, and a close under the trapdoor that puts **$40.00** in play for the first time since the spring. The next gate is dated: core PCE on Sep 30 decides whether the October-hike pricing (71%) survives, and with it whether this sector's capitulation prints become the entry set of the year or the first leg down. Chair Warsh has not yet given a major speech. Both options are live; both are binary; neither belongs to this sector.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-**Q3 2026 season — confirmed dates (per issuer calendars / Yahoo):**
+**Q3 2026 season — confirmed dates (carried; re-verify week of):**
 
 | Company | Ticker | Date | Quarter | What to Watch |
 |---|---|---|---|---|
-| **Prologis** | PLD | **Oct 15, 2026** | Q3 2026 | First major to report — development starts and rent spreads at 7% money; whether the 200D break is repricing or prophecy |
-| **Crown Castle / Getty Realty** | CCI / GTY | **Oct 21, 2026** | Q3 2026 | CCI's pure-tower run-rate and 5.76% coverage; GTY's first print after the -8.2% no-news repricing |
-| **Digital Realty** | DLR | **Oct 22, 2026** | Q3 2026 | Backlog conversion ($1.9B record) and Texas permitting commentary |
-| **Welltower** | WELL | **Oct 26, 2026** | Q3 2026 | Senior housing occupancy/pricing — the defensive engine's margin proof |
-| **American Tower / CTO Realty** | AMT / CTO | **Oct 27, 2026** | Q3 2026 | AMT: international leasing with DXY back over 100; CTO: the SMID cohort's steadiest carry |
-| **Equinix / Public Storage / Urban Edge** | EQIX / PSA / UE | **Oct 28, 2026** | Q3 2026 | EQIX: the largest guidance raise in company history gets its first follow-up; PSA: reported with the stock on its 200D; UE: oversold base-or-break |
-| **Safehold** | SAFE | **Oct 29, 2026** | Q3 2026 | Ground-lease duration math after two straight disaster weeks |
-| **Realty Income / Simon / SBA Comm** | O / SPG / SBAC | **Nov 2, 2026** | Q3 2026 | O: AFFO coverage of the 5.68% yield post-capitulation; SPG: mall occupancy against 47.8 sentiment; SBAC: domestic leasing vs. Sprint churn |
+| **Prologis** | PLD | **Oct 15, 2026** | Q3 2026 | First major to report — development yields at 7% money; the 200D break gets graded |
+| **Crown Castle / Getty Realty** | CCI / GTY | **Oct 21, 2026** | Q3 2026 | CCI: pure-tower run-rate after the new low, ~6.2% yield coverage; GTY: first print post-rout with the 6.8% yield |
+| **Digital Realty** | DLR | **Oct 22, 2026** | Q3 2026 | Backlog conversion and Texas permitting commentary |
+| **Welltower** | WELL | **Oct 26, 2026** | Q3 2026 | The value bid's leader gets its AFFO proof |
+| **American Tower / CTO Realty** | AMT / CTO | **Oct 27, 2026** | Q3 2026 | AMT: international leasing with DXY 101; CTO: the SMID cohort's steadiest carry |
+| **Equinix / Public Storage / Urban Edge** | EQIX / PSA / UE | **Oct 28, 2026** | Q3 2026 | EQIX: guidance follow-through; PSA: post-200D-break; UE: $20 base-or-break |
+| **Safehold** | SAFE | **Oct 29, 2026** | Q3 2026 | Ground-lease math after three disaster weeks |
+| **Realty Income / Simon / SBA Comm** | O / SPG / SBAC | **Nov 2, 2026** | Q3 2026 | O: AFFO coverage of the ~5.5% yield post-capitulation; SBAC: does the strategic review have a bid at 5.4% money |
 | **BRT Apartments** | BRT | **Nov 5, 2026** | Q3 2026 | Multifamily micro-cap read |
 
 **The macro calendar:**
 
-- **Thu Sep 24 — GTY dividend record date** ($0.485, payable Oct 8): the floor argument for the cohort's casualty
-- **Fri Sep 25 — UMich final September sentiment:** does 47.8 hold?
-- **Sep 30 — August PCE:** the mandate gauge's first post-hike print (2026 core penciled 3.4%)
-- **Early Oct — Trepp September CMBS print:** office 12.00% and multifamily 7.69% into Q4's hard-maturity stack at 7% refi money
-- **Oct 14 — September CPI:** the first inflation read of the post-hike regime; next FOMC (~Oct) currently ~57% priced
-- **Ongoing:** 10Y acceptance vs. rejection at 5.00% (two closes at/above in five sessions); 30Y buyback evidence (long end eased post-FOMC — first green shoot); Warsh's first speeches as chair; XLRE's $42.78 reclaim attempt; data-center leasing headlines
+- **Sep 30 — August core PCE:** THE gate. Cool → October odds unwind → 10Y can break 4.90% → the springs uncoil. Hot → 30Y toward 5.50% → XLRE through $40
+- **Early Oct — Trepp September CMBS delinquency:** office 12.00% / multifamily 7.69% standing reads; Q4's $76.6B hard-maturity stack at 7% refi money — the first default headline is a sector event
+- **Oct 1 — ISM Manufacturing:** the cyclical read behind PLD's demand
+- **Oct 2 — September jobs report**
+- **Oct 14 — September CPI:** the October FOMC's last big input (Oct 28, ~71% priced for +25bp)
+- **Ongoing:** 10Y vs 4.90%/5.25%; 30Y vs 5.40%; the first major Warsh speech; SBAC strategic-review headlines; data-center leasing announcements; XLRE $42.50/$40.00
 
-**Marky's Binary Event Read:** The gate is technical now, not calendar: **$42.78 reclaim vs. $42.50 loss.** RSI 25.6 with springs at RSI 9–17 across the income complex says the reflex rally is loaded — what fires it is the 10Y closing a week under 4.90%, or the Sep 30 PCE cooling the October odds. PLD's Oct 15 print is the first fundamental test. Trade the line the tape gives you.
+**Marky's Binary Event Read:** The technical state is as clean as it is bearish: under $42.50, rallies are for selling against the trapdoor until a weekly close back above it; under $41.33, $40.00 arrives within days. The fundamental gate is Sep 30. Positioning: no longs above the line, no shorts into capitulation volume (O Friday) — the asymmetry after a PCE cool is too violent to be short the income complex into it. The trigger that changes everything is the same one that has driven seven weeks: a weekly 10Y close under 4.90%.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **The head-fake:** XLRE reclaims $42.78 within two weeks at RSI 25.6 → hike-week break marked as noise → $44.60 (50D) back in play
-- **PCE cools (Sep 30):** October hike odds deflate from ~57% → the 10Y closes a week under 4.90% → the oversold springs (O RSI 10, SAFE 9.2, GTY ~15, UE 16.6) uncoil violently
-- **The backstop works:** the 30Y's post-FOMC ease (5.33%, -0.43% W/W) extends — buybacks with size cap the long end while the front end digests the dots
-- **Data-center leasing headlines** land in the quiet window → EQIX/DLR resume the premium trade
-- **Value bid broadens:** PSA/SPG's green week extends to the 14–19x row as shopping replaces fleeing
+- **Core PCE cools (Sep 30)** → October-hike odds collapse from 71% → 10Y under 4.90% weekly → the capitulation complex (O RSI 17, SAFE new lows, CCI ~6.2%, GTY 6.8%) uncoils; XLRE reclaims $42.50 and runs at $43.19
+- **Warsh's first speech softens the 4.1% median** → the front end unwinds the dots → the cheapest rally of the quarter in the most-shorted duration
+- **The 30Y buyback defense returns** → the long end stabilizes under 5.35% → construction materials (VMC/MLM) stop making lows
+- **Data-center leasing headlines** → EQIX/DLR resume the AI premium and drag the fund's growth pocket back
+- **The value bid broadens** → WELL/SPG/CTO strength pulls the 14–19x AFFO row up with it
+- **Trepp September (early Oct) holds office under 12.5%** → the Q4 refi wall starts as a process, not an event
 
 ### 🔴 Bear Case
-- **Acceptance at 5.00%:** the 10Y stacks a third weekly close at/above the old crisis line → XLRE's second weekly close under the 200D confirms → **$40.00 is the magnet**
-- **Hot PCE / hot CPI chain (Sep 30 / Oct 14):** October hike odds go to locked → the front end reprices again → the income complex's capitulation finds a lower floor
-- **The Q4 refi wall at 7% money:** Trepp's September print (early Oct) shows office pushing past 12% into the $76.6B hard-maturity stack — the first real CRE default headline is a sector event
-- **AMT's failed reclaim becomes a pattern:** contracted-growth premium compresses fully → no leadership pocket left inside the fund
-- **Lennar's "deteriorated" is the template:** builder earnings season (October) confirms a housing volume cliff → transaction-beta names and the mortgage complex drag sentiment on everything rate-adjacent
+- **Hot PCE (Sep 30)** → October hike locked → 30Y 5.50%+ → XLRE through $40.00; the March lows ($39.12) become the target
+- **A CRE default headline lands** in the Q4 maturity stack → credit fear infects the whole complex, even the fortress balance sheets reprice
+- **The tower complex keeps breaking** → CCI through $65 drags AMT/SBAC and the fund's two biggest weights into a second leg
+- **Builder season (October) confirms the volume cliff** in bulk → mortgage-complex sentiment drags every rate-adjacent name
+- **Inflation expectations (4.6% in Michigan) keep climbing** → the Fed validates with the October hike and the 2027 dots ratchet again
 
 ### ⚠️ The Wild Card
-**The Fed's own projections are now the risk asset.** The 30Y — the term-premium leg — eased after the hike; the 2Y — the Fed-expectations leg — is what broke the sector. If Warsh's early speeches as chair soften the 4.1% end-2026 median, the front end unwinds fast and this sector's most oversold prints in a year become the sharpest rally of the quarter. If he defends the dots, the market learns that the new chair's reaction function has no dovish setting — and acceptance above 5.00% becomes the base case. Nobody has traded this chair yet. The first speech is an event.
+**Chair Warsh has not given a major speech.** The market has priced his committee's dots but never heard his voice — and this sector's entire seven-week decline is, at its root, a bet that the new chair's reaction function has no dovish setting. The first speech moves the 2Y more than any CPI: one sentence about "timelier return" being conditional, and the front end unwinds the October hike; one sentence about credibility, and acceptance above 5.00% becomes the printed base case. Nobody has traded this chair. The speech is the trade.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The framework held and the line didn't — that is the honest summary. Crisis 5.00% is crossed, twice in five sessions, and the world did not end; regime change never announces itself. I have rewritten my own rule: 5.00% is a price now, and acceptance is the question. The composition tells me where the fight moved — the long end eased on the buybacks while the front end repriced to the dots, so the adversary is no longer the term premium; it is the Fed's own median. My posture is unchanged because it was built for this: no new duration, carry only where the balance sheet survives 7% money, springs watched but not caught. The relief valve is 4.90% on the ten-year, weekly-close basis. The rate regime lives in issue #106 — this desk files no new trigger: XLRE's -2.05% is inside the 5% band, no REIT missed, no default printed, and the 5% break was already the fleet's open file."*
+**Ophelia:** *"My rules fired and I will not pretend otherwise: three weeks below the 200D, a close under the trapdoor, $40 is the magnet. The new fact that matters is the 30Y at 5.40% — the long end defected from the buyback defense, which means there is no segment of the curve left carrying a bid. My posture is unchanged because it was built for exactly this, only stricter: no new duration while the 30Y makes cycle highs; carry only where balance sheets survive 7.03% money; the value bid is the only leadership and I respect it. The gate is dated — PCE Sep 30. A cool print makes this sector's capitulation prints the entry set of the year; a hot one takes us through $40. And the wildcard file remains open: nobody has traded Chair Warsh. The rate regime belongs to issues #106/#114/#115; this desk opens nothing new — XLRE's -2.28% is inside the band, no REIT missed, no default printed."*
 
-**Marky:** *"The line I said would decide the quarter broke Friday — twenty-five cents, at the low, on hike week. I don't grade breaks on a curve: defense is the stance, $42.78 is the reclaim, $42.50 is the trapdoor, $40 is the magnet. But I will note the setup honestly: RSI 25.6 on the fund, RSI 10 on O, single digits on the SMID duration names — the springs have never been this compressed on this board. The rally, when the ten-year permits it, will not be gentle. AMT losing its 200D back after one week tells you leadership is gone until proven otherwise; PSA holding its line by a dollar and closing green tells you where the proof-of-life starts. I trade $42.78 and $42.50. Everything else is commentary."*
+**Marky:** *"The map completed itself: break, confirm, trapdoor. Under $42.50 the trade is sell-the-rally against the trapdoor; under $41.33 it's $40 within days. But I'm putting Friday's O volume in the ledger — 2.5x average on the Monthly Dividend Company is capitulation behavior, and capitulation volume is how this asset class announces the end of a move. I'm not buying it; I'm not shorting into it either. The resolution gate is Sep 30 and everything before that is noise between $41.33 and $42.50. WELL's green week and CTO's second green week tell you where the bid is; CCI's new low tells you where the regime is. I trade the levels and wait for PCE."*
 
-**Cecil:** *"The frost reached the roots this week, and I did what I always do in a freeze: nothing. I do not buy broken lines, so O at 5.68% — sixty-eight honest basis points over the government's money — goes on the list, not in the portfolio; RSI 10 says the selling is nearly done, and the dividend on the 15th will arrive regardless, which is when I intend to revisit. PSA held its 200D and closed green at 28x; SPG closed green at 14.4x with a 4.35% yield — the market is shopping my aisle again. CCI pays 5.76% and made no new low. Lennar told you the housing truth Wednesday night; this fund owns almost no housing, but it rents the same gravity. The harvest is patient. It is also, this quarter, priced at seven percent money."*
+**Cecil:** *"The harvest stayed patient and the patience kept costing nothing, which is what cash at 4.9% buys you in a 5.18% world. The list is written and ordered: O first — 5.5% monthly, capitulation volume, and the October 15 dividend arrives regardless — but only after the 10Y closes a week under 4.90% or PCE cools the odds. WELL second, because the market just told you it will pay up for growth the moment the tape permits. CCI at ~6.2% is the math I never thought I'd see, and I still don't own it, because broken lines get bought after they stop breaking. PSA leaves the list. At 7.03% mortgage money, the garden's only paying crop is the discipline itself — and this quarter, that's enough."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance: XLRE + 10 top holdings + 5 small/mid-caps daily OHLCV through Fri Sep 18, 2026 close (weekly changes on dividend-adjusted closes, date-pinned Fri Sep 11 → Fri Sep 18, five sessions); XLRE fund fields: P/E ~30.3, yield ~3.19%, AUM ~$8.6B (carried); analyst mean targets: PLD $158 / AMT $216 / EQIX $1,233 / CCI $95 / DLR $223 / PSA $338 / O $68 / WELL $262 / SPG $235 / SBAC $226; SMID market caps verified via live quote data as of Sep 18: CTO $0.76B, GTY $1.84B, UE $2.76B, SAFE $0.93B, BRT $0.26B (all sub-$5B)
-- Treasury/Fed: 10Y (^TNX) week path 4.961 / 4.996 / **5.006 (Wed — first close above 5.00% this cycle)** / 4.947 / **4.998 Fri**; 30Y (^TYX) 5.331% Fri, -0.43% W/W (post-FOMC ease); 2Y +13.4bp to 4.736% on hike day; FOMC Sep 16: +25bp to 3.75–4.00% (12-0, first hike since Jul 2023, first of the Warsh chairmanship); SEP medians: end-2026 4.1% (one more hike), end-2027 4.1% (from 3.6%), end-2028 3.9%; 2026 core PCE 3.4%; Warsh no dot, no guidance; next meeting ~57% priced; BOJ hiked to 1.25% Sep 18
-- Mortgage/housing: Freddie Mac PMMS 30Y FRM **6.95% (wk ending Sep 17, +19bp — largest weekly jump of 2026, highest since early 2025; 15Y 6.26%)**; Mortgage News Daily 7.19% (Sep 17, off 7.24% pre-FOMC); Zillow purchase average 7.01% (Sep 17). Lennar Q3 (Sep 16 AMC): EPS $1.19 vs. $2.29 YoY ("below expectations" — CEO Miller), orders -9% to 20,879, deliveries -3%, GM 15.8%, "the environment has deteriorated since our last earnings call," 30Y mortgage ~6.8% at quarter-end "and even higher since"; Q4 guide 22–23K deliveries
-- Consumer: August retail sales +1.2% beat (Sep 16); UMich prelim Sep 47.8 (Grid B issue #99; final due Sep 25); August PCE due Sep 30
-- CRE credit: no fresh Trepp print this week — August standing (posted ~Sep 2): overall 7.85%, office 12.00%, multifamily 7.69%, lodging 5.84%, retail 7.20%; ~$875B maturing 2026; $76.6B hard CMBS maturities (~39% in Q4). Next print early Oct
-- Data center / AI infra: ORCL FQ1 cloud infrastructure +121% y/y (standing); EQIX largest-ever guidance raise, capex $5–7B/yr 2027–29 (standing); DLR record $1.9B backlog (standing); Texas data-center permitting pause (Aug 3, standing); no new leasing announcements this week
-- Company: GTY next dividend $0.485 — record Sep 24, payable Oct 8; no fresh GTY/UE/SAFE/BRT/CTO company news this week (GTY's -8.15% and SAFE's -6.34% verified as rate repricing, no company-specific catalysts found); Q3 confirmed dates: PLD Oct 15, CCI/GTY Oct 21, DLR Oct 22, WELL Oct 26, AMT/CTO Oct 27, EQIX/PSA/UE Oct 28, SAFE Oct 29, O/SPG/SBAC Nov 2, BRT Nov 5
-- Macro tape: WTI $100.30 Fri (+0.25% W/W; Tue $105.83 close spike — siege plateau, week three); DXY 100.22 (+1.11% W/W, back above its 50D 99.95); SPY $761.69, -0.09% W/W (YTD +12.5%)
-- **Cross-references:** fleet issue **#106** (10Y >5.00% regime — owns the rate line), Grid B issue **#99** (UMich sentiment). **No new issue opened this week: XLRE -2.05% (threshold ±5%), no major REIT earnings misses, no data-center leasing announcement, no CRE default headline; the 10Y's 5.00% break is already covered by #106.**
-- NAREIT: REIT industry data, sector performance, dividend trends
-- CBRE / CoStar / Trepp / Moody's: office vacancy, CRE pricing, maturity wall, CMBS delinquency data
+- Yahoo Finance / yfinance 1.6.0: XLRE + 10 top holdings + 5 SMIDs daily OHLCV through Fri Sep 25, 2026 close (weekly changes on dividend-adjusted closes, date-pinned Fri 9/18 → Fri 9/25; GTY adjusted for the $0.485 ex-dividend, record Sep 24); same-day bars verified; XLRE fund fields refreshed Sep 25 (P/E ~29.6, yield ~3.19%, AUM ~$8.3B); SMID market caps: CTO $0.78B, GTY $1.77B, UE $2.74B, SAFE $0.87B, BRT $0.26B (all sub-$5B)
+- Treasury/Fed: FRED DGS10 (9/23 5.11, 9/24 5.18 — 19-year high); 30Y 5.40% (highest since 2004; +11bp in three days per Fair Value); 2Y 4.905% Friday (MarketWatch/Schwab); ~71% October-hike odds (Octagon); Barr remarks (Sep 23); DXY 101.04 weekly close (issue #115)
+- Mortgage/housing: 30Y fixed 7.03% cycle high, mortgage 6.95→7.03% (Fair Value / MortgageDaily carried); Lennar Q3 "deteriorated" (Sep 16, standing); August new home sales 684K +12.7% (Sep 25)
+- Fair Value newsletter (Sep 25, 2026): 30Y 5.40%; 10s3M +0.92% bear-steepener; AI-commodity inflation floor (nat gas $3.18, copper $6.78, mine disruptions); U.S.-Iran truce hopes; Warsh no-speech-yet context
+- Tower complex context (carried/standing): SBAC strategic-review reports (Bloomberg, Apr 2026); CCI fiber/small-cell sale to EQT/Zayo ($8.5B, closed H1 2026 — pure-play transition); EchoStar/Dish network wind-down and FCC escrow (May 2026); no fresh company-specific CCI/SBAC headlines found this week — the -7% week is rate repricing + arb deflation
+- Capitulation-volume read: O Friday volume 11.96M vs 20D avg 7.9M (yfinance, Sep 25)
+- CRE credit: Trepp August standing (overall 7.85%, office 12.00%, multifamily 7.69%; $76.6B hard CMBS maturities 2026, ~39% Q4); September print posts early Oct
+- **Cross-references: fleet issues #106 (10Y >5.00%), #114 (10Y through 5.10%), #115 (DXY 101.04 — restriction ON), #99 (UMich). No new issue opened: XLRE -2.28% (threshold ±5%), no major REIT earnings miss, no data-center leasing announcement, no CRE default headline; the 10Y >5% regime is an existing open file.**
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-19 (data as of Fri 2026-09-18 close; Grid B Midday run)*
+*Last updated by Saturday Research Crew: 2026-09-25 (data as of Fri 2026-09-25 close; Grid B Midday run)*
 *Next update: Every Saturday*
 *Data sources: Yahoo Finance, Freddie Mac PMMS, NAREIT, CBRE, CoStar, Trepp, Council desk logs*
-*Note: Equity data through Friday Sep 18 close. FOMC delivered Sep 16; August PCE due Sep 30; next CPI Oct 14.*
+*Note: Trapdoor rule fired — weekly close under $42.50 puts $40.00 in play. Next gate: core PCE Sep 30. Trepp September posts early Oct.*
