@@ -2,7 +2,7 @@
 
 > **Sector:** Materials | **ETF:** Materials Select Sector SPDR (XLB) | **Expense Ratio:** 0.08%
 >
-> *"Materials are the raw nerve of the global economy. When copper speaks, every sector listens."* — Ophelia
+> *"The trip wire snapped. DXY closed 101.10, 101.29 and 101.04 — three straight sessions above 101 and a weekly close over the line for the first time of this regime. The restriction on commodity longs that I lifted when the dollar broke 98 is back ON as of today's close (issue #115). And yet the week's most important materials fact is the one that refuses to obey the dollar: copper rose ~+2.5% to ~$6.78 with Grasberg, Kamoa-Kakula and Escondida all disrupted, a second straight week of decoupling. XLB itself bounced the way the map said it would — RSI 25.5 produced the reflex rally, led by the oil-relief row (ECL +3.7%, IFF +3.3%, PPG +2.9%) — and then died at the 200D exactly where the map said it would. Two weeks below the line. The dollar says the regime changed; copper says the deficit is real. Both are true until one isn't."* — Ophelia
 
 ---
 
@@ -10,24 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $49.99 | $50.95 | **-1.88%** |
+| Price | $49.80 | $49.99 | **-0.38%** — second week below the 200D |
 | 52W Range | $41.48 – $54.19 (dividend-adjusted closing basis) | — | — |
-| AUM | ~$8.3B (carried) | — | — |
-| YTD Return | **+11.14%** | +11.38% | -0.24 pp |
-| 1Y Return | ~+11.15% | ~+13.17% | lower |
-| P/E Ratio | ~23.3 (trailing) | ~23.8 | refreshed |
+| AUM | ~$8.75B (yfinance totalAssets, refreshed) | ~$8.3B | — |
+| YTD Return | **+11.2%** | +11.14% | Flat on the week, still trailing SPY (~+13%) |
+| 1Y Return | ~+10.7% | ~+11.2% | Lower |
+| P/E Ratio | ~23.2 (trailing) | ~23.3 | Stable |
 | Dividend Yield | ~1.61% | ~1.61% | — |
 | Beta | ~1.0–1.1 (carried) | — | — |
 | Total Holdings | 27 | — | — |
-| Avg Daily Volume | ~10.5M shares (Fri) | ~10.8M | — |
+| Avg Daily Volume | ~11M this week | ~10.5M | Thursday 12.9M was the heavy session (the 5.18% flush) |
 
-**Marky Tape Read:** XLB closed Friday at **$49.99 — down -1.88% on FOMC week** (five sessions: Mon $50.49 → Tue $50.73 → Wed $50.36 → Thu $50.71 → **Fri $49.99, closing at the week low**), and the last trend line gave way: **$49.99 is the first weekly close below the 200D ($50.17) of this entire cycle** — by eighteen cents, at the low, on hike week. The 50D fell last week; the 200D fell this week; the map I drew — "lose the 200D on a weekly close and $47 is the target" — is now live. RSI fell to **25.5**, the board's most oversold print of 2026. The week's internals split on the commodity tape: copper rose **+2.25% to $6.615 — rising INTO a +1.11% dollar rally**, and the copper/steel names were the only green pockets (**CLF +3.65%, DD +1.59%, FCX +0.66%**) while the rate hostages and the lithium trade bled (**ALB -5.62%, VMC -4.71%, NUE -4.26%, CTVA -4.02%, MLM -3.79%**).
+**Marky Tape Read:** The map executed to the letter. Last week I wrote: "RSI 25.5 says the bounce comes; $50.17 decides what kind." **Monday** $49.71 (week low $49.66), **Tuesday** $50.53 — the reflex bounce, straight into the 200D zone and straight back down, **Wednesday** $50.28 (ignored the 5.11% close), **Thursday** $49.68 — the 5.18% flush on 12.9M, week low $49.57 — **Friday** $49.80. That is a failed reclaim: the bounce died at the line it needed to take back, which converts the 200D from support to resistance and keeps the map's $47 target alive. RSI 37.9 repaired from 25.5 — the bounce spent its fuel failing. Character check: the week's greens (ECL, IFF, PPG, SHW, LIN — the chemicals/gas/coatings row) all share one driver — WTI -2.7% to $92.92, the feedstock relief trade — while the dollar-sensitive and rate-sensitive names (DOW -2.7%, CTVA -2.5%, MLM -1.3%) paid the DXY-through-101 tax. The sector is trading as two ETFs: input-cost relief longs and FX-regime shorts. The reclaim line is now $50.51 (200D, raw basis); the floor is $49.57/$49.66 (Thursday/Monday lows); lose those and $47.00 is the map target with authority.
 
-**Ophelia Macro Read:** The hike landed: **+25bp to 3.75–4.00%, 12-0, first since July 2023**, with the 2026 median dot at **4.1% — one more penciled** — and the 2027 dots moved UP to 4.1% from 3.6%. The 10Y printed its **first close above 5.00% Wednesday (5.006%)** — my crisis line is now a price, not a line — before easing to **4.998% Friday**. The dollar ended its seven-week silence: **DXY +1.11% to 100.22**, back above its 50D (99.95) for the first time since the restriction was lifted. The restriction on commodity longs stays **LIFTED — 100.22 is below the 101 trip wire** — but the tailwind phase is over; the dollar is rallying now, not sitting quiet. Copper's refusal to fall with the dollar rally is the week's one bullish tell: the deficit/EV/data-center bid is absorbing FX headwind. WTI $100.30 (+0.25%) held the siege premium without worsening. BOJ hiked to 1.25% Friday — the global tightening cycle is synchronized now.
-
-**The Hormuz File — Siege, Week Three:** Still no ceasefire, still no reopening. WTI held the century mark ($100.30 Friday, +0.25% W/W after Tuesday's $105.83 close spike) — the supply shock is now a plateau, not a spike: fully embedded in feedstock math (SHW -0.8%, PPG -0.9% — the coatings complex actually STABILIZED this week after two weeks of rout) and in the Fed's "inflation remains elevated" language. The transmission question shifts from cost-push to demand-destruction.
-
-**The Canada File — Escalation, New Front:** The US banned Canadian motorcycles, dairy, and alcohol effective September 29 — Ottawa's 50% bilateral steel/aluminum walls are now one front of a widening trade war. For the shield complex (CLF +3.65% — the board's best major; NUE -4.26%), escalation is the standing bullish catalyst: walls that widen are premiums that compound. Watch for Canadian counter-escalation on metals specifically.
+**Ophelia Macro Read:** The rule was written before the regime and the regime has now crossed it: **DXY closed above 101 for three straight sessions (101.10/101.29/101.04) and the week closed at 101.04**. Per this board's standing rails — a weekly close above 101 snaps the restriction on commodity longs back ON — the restriction is ON as of today (issue #115). The driver is policy acceptance: Barr's "further adjustments," ~71% October-hike odds, the 10Y at 5.18%, and the 2Y at 4.905% pulled capital into the dollar all five sessions. What the restriction does NOT override: copper. HG rose ~+2.5% to ~$6.78 this week despite DXY 101+ — Grasberg, Kamoa-Kakula and Escondida disruptions (~300Kt annualized, 1.5% of global mine output) meeting data-center electrification demand is a physical story that no FX print cancels; FCX's hold of $72.31 (+1.1%) is the equity proof. Gold slipped -0.7% to $4,328 (the debasement bid pauses with the dollar strong), silver rose +2.3% to $64.95, and WTI's break to $92.92 ended the feedstock siege for coatings. China stays deferred — truce extended to Jan 10 but no stimulus, rare-earth halts persist, and Beijing's 80–99% DCS duties (issue #114) tightened its grip on the chip-feedstock chain. New rails: **DXY 101.00 (crossed — restriction ON); 99.00 below re-opens the add rail; 10Y 5.00% acceptance (crossed, holding); copper $6.60 hold (holding at $6.78); Brent $100 (broken, $98.58).**
 
 ---
 
@@ -35,41 +31,39 @@
 
 | Rank | Ticker | Name | Weight | Price | Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LIN | Linde | ~17% | $460.40 | -1.25% | $544.85 | $385.58 | 1.4% | 29.6 / 23.5 fwd | ⚠️ |
-| 2 | SHW | Sherwin-Williams | ~6% | $320.73 | -0.80% | $379.65 | $289.86 | 1.0% | 29.6 / 23.6 fwd | ⚡ |
-| 3 | FCX | Freeport-McMoRan | ~5% | $71.54 | **+0.66%** | $79.91 | $34.96 | 0.9% | 34.7 / 17.2 fwd | 🔥 |
-| 4 | APD | Air Products | ~5% | $284.18 | -2.49% | $314.87 | $229.11 | 2.5% | 19.7 fwd | ⚠️ |
-| 5 | NEM | Newmont | ~4% | $123.41 | -2.68% | $135.14 | $67.20 | 0.8% | 15.7 | ⚠️ |
-| 6 | ECL | Ecolab | ~4% | $269.46 | -2.17% | $309.27 | $243.15 | 1.1% | 36.5 / 28.6 fwd | ⚠️ |
-| 7 | NUE | Nucor | ~3% | $248.38 | -4.26% | $280.11 | $131.32 | 0.8% | 21.1 / 12.6 fwd | 🔴 |
-| 8 | DD | DuPont | ~3% | $129.01 | **+1.59%** | $157.98 | $91.38 | 1.9% | 55.1* / 16.2 fwd | 🔥 |
-| 9 | VMC | Vulcan Materials | ~3% | $240.83 | **-4.71%** | $331.09 | ~$240 zone | 0.9% | 28.4 / 22.6 fwd | 🔴 |
-| 10 | DOW | Dow Inc | ~2% | $28.73 | -1.03% | $42.74 | $20.65 | **4.8%** | 16.1 fwd | ⚠️ |
-| 11 | PPG | PPG Industries | ~2% | $104.52 | -0.93% | $133.43 | $93.39 | 2.8% | 15.1 | ⚡ |
-| 12 | CTVA | Corteva | ~2% | $80.53 | -4.02% | $90.97 | $60.54 | 0.9% | 49.4* / 19.5 fwd | 🔴 |
-| 13 | ALB | Albemarle | ~1% | $110.91 | **-5.62%** | $221.00 | $71.25 | 1.4% | 426.6* / 9.8 fwd | 🔴 |
-| 14 | MLM | Martin Marietta | ~1% | $490.64 | -3.79% | $710.97 | ~$490 zone | 0.7% | 31.9 / 24.1 fwd | 🔴 |
-| 15 | IFF | Int'l Flavors | ~1% | $82.96 | -0.31% | $89.32 | $59.14 | 1.9% | 20.9 fwd | ⚡ |
-| 16 | CLF | Cleveland-Cliffs | ~1% | $12.50 | **+3.65%** | $16.70 | $7.73 | — | 18.3 fwd | 🔥 |
+| 1 | LIN | Linde | ~17% | $471.10 | **+2.32%** | $544.85 | $385.58 | 1.4% | 29.6 / 23.5 fwd | ⚡ |
+| 2 | SHW | Sherwin-Williams | ~6% | $329.10 | **+2.61%** | $379.65 | $289.86 | 1.0% | 29.6 / 23.6 fwd | ⚡ |
+| 3 | FCX | Freeport-McMoRan | ~5% | $72.31 | **+1.08%** | $79.91 | $34.96 | 0.9% | 34.7 / 17.2 fwd | 🔥 |
+| 4 | APD | Air Products | ~5% | $281.78 | -0.84% | $314.87 | $229.11 | 2.5% | 19.7 fwd | ⚠️ |
+| 5 | NEM | Newmont | ~4% | $121.40 | -1.63% | $135.14 | $67.20 | 0.8% | 15.7 | ⚠️ |
+| 6 | ECL | Ecolab | ~4% | $279.49 | **+3.72%** | $309.27 | $243.15 | 1.1% | 36.5 / 28.6 fwd | ⚡ |
+| 7 | NUE | Nucor | ~3% | $247.25 | -0.46% | $280.11 | $131.32 | 0.8% | 21.1 / 12.6 fwd | ⚡ |
+| 8 | DD | DuPont | ~3% | $131.71 | **+2.09%** | $157.98 | $91.38 | 1.9% | 55.1* / 16.2 fwd | ⚡ |
+| 9 | VMC | Vulcan Materials | ~3% | $245.00 | **+1.73%** | $331.09 | $240.83 | 0.9% | 28.4 / 22.6 fwd | ⚠️ |
+| 10 | DOW | Dow Inc | ~2% | $27.96 | **-2.68%** | $42.74 | $20.65 | 4.8% | 16.1 fwd | 🔴 |
+| 11 | PPG | PPG Industries | ~2% | $107.52 | **+2.86%** | $133.43 | $93.39 | 2.8% | 15.1 | ⚡ |
+| 12 | CTVA | Corteva | ~2% | $78.52 | -2.50% | $90.97 | $60.54 | 0.9% | 49.4* / 19.5 fwd | ⚠️ |
+| 13 | ALB | Albemarle | ~1% | $109.71 | -1.08% | $221.00 | $71.25 | 1.4% | 426.6* / 9.8 fwd | ⚠️ |
+| 14 | MLM | Martin Marietta | ~1% | $484.30 | -1.29% | $710.97 | $480.10 | 0.7% | 31.9 / 24.1 fwd | 🔴 |
+| 15 | IFF | Int'l Flavors | ~1% | $85.69 | **+3.29%** | $89.32 | $59.14 | 1.9% | 20.9 fwd | ⚡ |
+| 16 | CLF | Cleveland-Cliffs | ~1% | $12.15 | -2.80% | $16.70 | $7.73 | — | 18.3 fwd | ⚡ |
 
 > 🔥 = Strong momentum / catalyst | ⚡ = Neutral / stable | ⚠️ = Pullback / profit-taking | 🔴 = Crash / broken
-> *Prices/weekly changes refreshed to Fri 9/18 closes (dividend-adjusted basis; date-pinned Fri 9/11 → Fri 9/18, five sessions). P/Es, yields, and 52W ranges refreshed from yfinance quote data 9/19. *Forward P/E where trailing is distorted (ALB lithium cycle, DD restructuring, CTVA trough-to-recovery).*
+> *Prices/weekly changes refreshed to Fri 9/25 closes (dividend-adjusted basis; date-pinned Fri 9/18 → Fri 9/25). P/Es and yields carried from the 9/19 refresh. *Forward P/E where trailing is distorted (ALB lithium cycle, DD restructuring, CTVA trough).*
 
-**Sector Bifurcation:** This week the tax had a direction — it followed the discount rate, not the feedstock:
+**Sector Bifurcation:** The split this week was the feedstock line, not the commodity line:
 
-1. **Mining & Metals** — copper's dollar-defying rally (+2.25%) carried the complex's only winners: **CLF +3.65%** (RSI 61 — momentum intact behind the widening walls), **FCX +0.66%** (reclaimed the $71 line it broke last week), DD +1.59%. The losers were the rate-and-lithium stories: **ALB -5.62%** (the slide extends — now $110.91 vs. a 50D at $124.97), **NUE -4.26%** (the shield's sharpest weekly tax since the walls went live — long-end financing of the reshoring build-out just got more expensive)
-2. **Chemicals & Gases** — the squeeze STABILIZED: SHW -0.80%, PPG -0.93%, IFF -0.31%, DOW -1.03% all held near flat after two rout weeks at $100 oil; LIN -1.25% (RSI 17.3 — deeply oversold ballast), APD -2.49%, ECL -2.17%. The cost shock is plateauing, and so are the margins charts
-3. **Construction Materials** — the 10Y's first close above 5.00% did direct damage: **VMC -4.71% to $240.83 — new 52-week-low territory**, MLM -3.79%. Long-duration, capex-financed models are the hike's cleanest victims
+1. **Chemicals & Gases — the oil-relief rally.** WTI -2.7% to $92.92 flipped the input-cost math and the whole row green: **ECL +3.72%, IFF +3.29%, PPG +2.86%, SHW +2.61%, LIN +2.32%** (LIN also the most-oversold ballast from last week's RSI 17 — exactly the reflex leader the map predicted). DOW was the exception at **-2.68% to $27.96** — its problem isn't feedstock, it's the global growth beta plus a 4.8% yield that keeps losing to 5.18% paper.
+2. **Mining & Metals — copper's decoupling held; the dollar taxed the rest.** **FCX +1.08% to $72.31** with HG copper +2.5% to ~$6.78 and three mine disruptions deepening — the deficit story absorbed a second week of DXY 101+. **NEM -1.63%** followed gold's -0.7% slip to $4,328. **CLF -2.80%** took profit after last week's +3.65% escalation bid; the Canada walls go live tomorrow (Sep 29). **ALB -1.08%**, holding above the $108.25 Thursday low — the $100 round number is the line.
+3. **Construction Materials — the 200D break's ground zero stayed broken.** VMC +1.73% (bounced off $240.83), MLM -1.29% at $484.30 — both still deep below falling MAs, both still avoiding fresh lows without reclaiming anything. The 10Y's 5.18% close is their ceiling; ISM Oct 1 is their only scheduled friend.
 
-**Copper Decouples:** The week's most important tape event isn't in the holdings table — it's HG=F: **+2.25% to $6.615/lb, rising every single session (6.33 → 6.615) while DXY rallied +1.11%**. Copper rising into a dollar rally is the deficit story asserting itself over FX math — EV and data-center demand is absorbing the headwind. FCX's +0.66% reclaim of $71 understates the tell; watch whether $6.60+ holds into next week.
+**Copper Decouples, Week Two:** HG copper ~**$6.78 (+2.5% W/W)** with DXY through 101 for three straight sessions. Two consecutive weeks of rising-into-dollar-strength, now with named supply losses: Grasberg (Indonesia), Kamoa-Kakula (DRC), Escondida (Chile) — ~300Kt annualized, ~1.5% of global mine output, per Fair Value. Add data-center electrical demand (busbars/transformers) growing 5–7% and the China checkbook still closed (the free option stays free). FCX at 17.2x forward remains the cheapest large-format expression.
 
-**The Shield's Split Week:** CLF **+3.65%** vs. NUE **-4.26%** — the same tariff premium, two different rate exposures. CLF (18.3x fwd, spot-price torque) caught the Canada-escalation bid as the US added motorcycle/dairy/alcohol bans (effective Sep 29); NUE (12.6x fwd, big capex programs) paid the 5.00% financing tax. Escalation helps both fundamentally; the tape is sorting who funds it.
+**The Shield Into the Wall's Live Date:** The US bans on Canadian motorcycles/dairy/alcohol go effective **tomorrow (Sep 29)**; the 50% bilateral steel/aluminum walls have been live since Sep 8. CLF's consolidation (-2.8% after +3.65%) says the market has priced the current walls; the next leg needs Canadian counter-escalation on metals specifically — watch for it in the Oct 1 week.
 
-**NEM's Divergence Ends (For Now):** Newmont **-2.68% to $123.41** — the first week in four that the miner underperformed... itself. Gold rose +0.36% to $4,424.90 but remains below its own 200D ($4,553), and the dollar rally finally taxed the debasement trade. The three-week "refusal to fall" streak is over; the margin-expansion case (15.7x, $135 tgt) is intact but no longer diverging upward.
+**NEM's Gold Math:** Gold $4,328 (-0.7%) below its own 200D (~$4,553 area carried) while the dollar runs — the debasement trade is paused, not dead. NEM at 15.7x with the AISC leverage intact is a hold, not a chase; a DXY stall under 102 is what re-opens it.
 
-**ALB: Thesis Under Review, Week Two:** **-5.62% to $110.91** — through the $110 area that was the next map line after $126 broke. At 9.8x forward with a $172.56 mean target, the valuation case screams; the tape screams louder. Lithium spot stays soft (CATL-restart overhang), and a rising dollar taxes every commodity narrative. No catching knives here — the Udd transition (Feb 2027) is the next real catalyst.
-
-**Cecil Fundamental Read:** The honest account: I held NEM through its first red divergence week and I'll hold through more — 15.7x with AISC leverage to $4,400 gold doesn't need a divergence to be cheap. The week's real gift was silence in the coatings row: PPG at 15.1x and SHW at 29.6x stopped falling at $100 oil — if the plateau holds, the Q3 prints (Oct 27) become relief events, and I will own PPG before that date. DOW at 4.75% yield remains a hold, no adds below $30 until feedstock rolls. And I note for the record: FCX at 17.2x forward, with copper rising into a dollar rally, is the cheapest exposure to the one commodity bid that didn't blink this week.
+**Cecil Fundamental Read:** The bounce paid the people who waited for it and I'm one of them: I bought **PPG Friday at ~$107.50** — 15.1x trailing for the coatings duopoly half, with the $100-oil siege broken and the Q3 print (Oct 27) now set up as a relief event rather than a confession. That's the trade this week handed us: input-cost relief with the multiple already compressed. I passed on FCX despite the decoupling — not because the copper story is wrong but because my own restriction (now formally back ON via #115) says no new commodity longs above DXY 101, and discipline outranks conviction. NEM stays held. DOW's 4.8% yield stays a hold — at $27.96 it's approaching the $26 add line I set in August, but the dollar says wait. The buy list added one name this week. Patience, as ever, is a position.
 
 ---
 
@@ -79,15 +73,13 @@
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | Signal | Council Read |
 |---|---|---|---|---|---|---|
-| KALU | Kaiser Aluminum | **$2.45B** ✅ | $150.13 | **-4.50%** | ⚠️ | Caught in Friday's aluminum complex-wide selloff (AA -5.4%, CMC -3.9%, STLD -4.1% that session) — sector tax, not company news. 11.1x trailing, $170.50 mean target; the record-Q2/settled-succession story intact. Watch $145 |
-| CENX | Century Aluminum | **$3.86B** ✅ | $39.01 | **-11.44%** | 🔴 | **The week's SMID casualty.** No company-specific disaster — the aluminum complex de-rated Friday and Wells Fargo kept Overweight while trimming PT $83→$79 (9/18). At 7.0x trailing / 3.2x fwd the selloff is a gift on the numbers; graduation watch continues ($5B ceiling now 29% away) |
-| KRO | Kronos Worldwide | **$0.92B** ✅ | $8.01 | **-1.60%** | ⚡ | Third quiet week consolidating the TiO2 squeeze cooldown; the $8.00 round-number defense held by a cent. 2.4% yield; still deep green YTD. Nothing to do |
-| MERC | Mercer International | **$0.03B** ✅ | $0.38 | **-2.56%** | 🔴 | **DISTRESS WATCH.** New lows again; forward P/E negative, Sell consensus, $0.51 target is a restructuring-implied number. Peace River maintenance shutdown (Sep 7-17) now complete; the maturities wall is the story. Tracking only |
-| SXC | SunCoke Energy | **$0.81B** ✅ | $9.49 | **-5.29%** | ⚠️ | Gave back two weeks of the post-high consolidation; FY EBITDA guide $250-265M stands, the met-coke chain stays bid behind widening walls, and a 5.0% yield pays you to wait. Trend damaged but not broken above $9 |
+| KALU | Kaiser Aluminum | **$2.49B** ✅ | $152.55 | +1.61% | ⚡ | Stabilized after last week's complex-wide rout; the record-Q2 story intact, $168.25 mean target. The aluminum tariff wall goes live tomorrow — KALU is the cleanest SMID expression |
+| CENX | Century Aluminum | **$3.80B** ✅ | $38.60 | -1.05% | ⚠️ | Quiet week after the -11.4% rout; 3.3x forward with $69 Street target. The wall's live date (Sep 29) matters more than the tape here — graduation watch reset from a lower base |
+| KRO | Kronos Worldwide | **$0.95B** ✅ | $8.25 | **+3.00%** | ⚡ | Third weekly hold of the $8.00 line — the round-number defense is now a three-week base. TiO2 squeeze cooldown continuing; nothing to do but the shelf works |
+| SXC | SunCoke Energy | **$0.81B** ✅ | $9.57 | +0.84% | ⚡ | Held the $9.40s through the 5.18% flush; FY EBITDA guide $250–265M stands; 4.9% yield pays the wait. Met-coke stays bid behind the walls |
+| MERC | Mercer International | **$0.02B** ✅ | $0.31 | **-15.6%** | 🔴 | **DISTRESS WATCH — deepening.** New all-time low; $21M market cap on a company that owed $191.7M of liquidity last disclosure; negative forward P/E. The maturities wall has not moved. Tracking only — removal candidate if no refinancing headline by next check |
 
-**Rotation Note:** All five verified **sub-$5B via yfinance as of Fri Sep 18 close** (KALU $2.45B, CENX $3.86B, KRO $0.92B, MERC $0.03B, SXC $0.81B). HCC stays graduated. CENX's -11.4% week pushed the ceiling farther away — the graduation watch continues from a lower base.
-
-**Small-Cap Sector Read:** The sleeve took the aluminum-complex tax in bulk — Friday's sector-wide metals selloff (aluminum and steel names down 3–5% in one session, no company headlines) hit CENX hardest at -11.4% on the week, and Wells Fargo's PT trim with an Overweight reaffirm says the Street sees price damage, not thesis damage. KRO held its $8.00 line. The sleeve's message matches the index's: the damage is in the discount rate, not in order books.
+**Rotation Note:** All five verified **sub-$5B via yfinance as of Fri Sep 25 close** (KALU $2.49B, CENX $3.80B, KRO $0.95B, SXC $0.81B, MERC ~$0.02B). HCC stays graduated. **SMID sector news:** Starboard Value pushed **Knife River** (construction materials) to explore a sale Wednesday — the activist letter sent KNF down -7% that session (Fair Value, Sep 24); aggregates M&A interest is the tell that private money sees value in the rate-broken construction row. The SMID sleeve's split mirrors the index: aluminum/coke steadied, the distressed tail (MERC) made new lows.
 
 ---
 
@@ -95,17 +87,20 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $54.19 | Resistance — three weeks removed; the breakout attempt is formally dead for now |
-| 50-Day MA | $51.77 | **LOST last week** — failed every reclaim attempt this week (Tue/Thu highs died at $50.73/$50.71) |
-| 200-Day MA | $50.17 | **LOST this week — first weekly close below it of the cycle** (Fri $49.99, -18c, at the week low). The map's stance flip is live |
-| Current Price | $49.99 | Fri 9/18 close — the week low, on the week's highest volume |
-| Major Support | $47.00 | The map's stated target on a 200D break; also prior consolidation shelf |
+| 52W High | $54.19 | Resistance — the breakout attempt is four weeks dead |
+| 50-Day MA | ~$51.7 | Falling — the failed-bounce graveyard (Tuesday died at $50.64, well under) |
+| 200-Day MA | ~$50.5 | **The failed-reclaim line: Tuesday's $50.53 close poked above, the week closed below — resistance confirmed** |
+| Tuesday's High | $50.64 | The reclaim attempt's high — the trigger for any future break |
+| Current Price | $49.80 | Fri 9/25 close; -0.38% W/W; second weekly close below the 200D |
+| Week Low | $49.57 | Thursday's 5.18% flush low — first support |
+| Floor | $49.57–$49.66 | Thursday/Monday double lows — lose both and $47 opens |
+| Major Support | $47.00 | The map's stated target on a confirmed 200D break |
 | Structural Low | $41.48 | 52W bottom |
-| RSI(14) | 25.5 | **Most oversold print of 2026** — bounce fuel is building, but oversold is a condition, not a signal |
+| RSI(14) | 37.9 | Bounce spent failing; no longer oversold |
 
-**Marky Setup Assessment:** The stance flip I pre-committed is now in force: **a weekly close under the 200D puts the board on defense with $47 as the first target.** The break is marginal (18 cents) and came at RSI 25.5 — deep enough that a reflex bounce is the base case for early next week; what matters is whether the bounce reclaims $50.17 or dies at it. Failed reclaim = confirmation. Individual setups: **VMC is in fresh 52-week-low territory ($240.83) — the board's most broken major, no map line until the low $230s.** ALB took out $110 — next shelf is the round $100, then the June base. FCX reclaimed $71 — hold that and the melt-up-top call is wrong. CLF is the only major with RSI above 50. LIN at RSI 17.3 is the most oversold mega-cap on any of my boards — ballast names don't stay there; watch for the gas complex to lead the reflex bounce.
+**Marky Setup Assessment:** The map ran its course: 25.5 RSI produced the bounce, the bounce died at the 200D, the week closed below — that's a confirmed failed reclaim, and it keeps the defensive stance with **$47.00 as the live target**. What would change my mind: a daily close over $50.64 (Tuesday's high) with volume — that re-opens the reclaim trade toward $51.7. What confirms the bear: any daily close under $49.57 — then $47.00 gets tested within days, and the year's most-oversold board becomes the year's most-confirmed break. Individual levels: **FCX $71.54 (last week's close) is the decoupling's line — hold it and the copper story stays longable inside the restriction; lose it and the dollar wins the argument.** VMC $240.83 remains the board's most broken major. LIN's bounce from RSI 17 is following the ballast playbook — first gas-name strength in a month.
 
-**The relative strength story:** XLB **-1.88% vs. SPY -0.09%** — a fourth consecutive week of underperformance, and the YTD gap is now +11.1% vs. SPY +12.5%: the index's lead over the sector widened to 1.4 points. Copper rising into a dollar rally says the demand story is alive; the sector falling anyway says the rate story is louder. Both are true. The $47 target and the $50.17 reclaim line define the next two weeks.
+**The relative strength story:** XLB **-0.38% vs SPY ~+1%** — a fifth straight week of underperformance, now -0.4% on the year vs SPY's +13: the YTD leadership is gone. Copper's decoupling says the demand story is alive; the sector's own tape says the FX and rate regimes outvote it. The $50.64 reclaim and the $49.57 floor define week six.
 
 ---
 
@@ -113,116 +108,115 @@
 
 | Factor | Level | Implication for XLB |
 |---|---|---|
-| **FOMC (Wed Sep 16)** | **Hiked +25bp to 3.75–4.00%, 12-0**; end-2026 dot 4.1% (one more), end-2027 raised to 4.1% from 3.6%; Warsh no dot, no guidance | "Higher for longer" is now printed policy — the capex-financing tax on NUE/VMC/MLM and the discount-rate tax on everything else extends into 2027 |
-| 10Y Treasury | **4.998% Friday; 5.006% Wednesday — first close above 5.00%** | Ophelia's crisis line is now a price. The fleet's regime issue **#106** owns this; for the sector it means construction materials stay under direct fire |
-| DXY | **100.22, +1.11% W/W** — first close back above the 50D (99.95) since the restriction was lifted | **Restriction on commodity longs stays LIFTED (below the 101 trip wire) — but the tailwind phase is over.** A close above 101 snaps it back ON |
-| Copper | **$6.615/lb, +2.25% W/W** — rose all five sessions INTO the dollar rally | **Decoupling: the deficit/EV/data-center bid is absorbing FX headwind.** The single most bullish tell on the board; FCX's $71 reclaim is the equity expression |
-| Gold | **$4,424.90, +0.36% W/W** — still below its own 200D ($4,553) | Stabilized, not recovered; the debasement bid paused with the dollar rally. NEM's divergence streak ended at three weeks |
-| Crude Oil | WTI **$100.30** (+0.25% W/W; Tue spike to $105.83 close) | Siege premium now a plateau — fully embedded in feedstock math; coatings complex (SHW/PPG) stabilized this week in confirmation |
-| Hormuz Status | **Siege, week three** | No ceasefire, no reopening; the shock is chronic now. Demand destruction, not supply headlines, is the next phase's question |
-| Canada Trade War | **US bans Canadian motorcycles/dairy/alcohol effective Sep 29**; 50% bilateral steel/aluminum walls live since Sep 8 | Escalation front widened — bullish law for the shield (CLF +3.65% caught the bid); watch for Canadian counter-escalation on metals |
-| Lithium | Soft (spot ~$20/kg LCE area, carried) | CATL-restart overhang + dollar rally = ALB -5.62%, through the $110 map line; the re-rating is fully reversed |
-| Steel (US) | HRC deck unmoved (carried ~$1,181/t) | Walls premium is law and widening (Sep 29 front); CLF momentum intact, NUE paying the financing tax on its build-out |
-| China Data | No stimulus announced (carried) | The deferred gap-up scenario stays deferred; copper is rising anyway — which makes the eventual stimulus a free option |
-| BOJ | **Hiked to 1.25% Friday (Sep 18)** | Global tightening is synchronized — one more headwind for the yen-carry commodity bid; not a sector driver yet |
-| SPY (context) | $761.69, -0.09% W/W | XLB underperformed for a fourth straight week; YTD now trails the index by 1.4 points |
+| **DXY** | **101.04 Friday close; 101.10/101.29/101.04 Wed–Fri; +0.82% W/W** | **THE TRIP WIRE SNAPPED — restriction on commodity longs back ON (issue #115).** Three consecutive closes above 101. The dollar is now the sector's governing variable; below 99.00 re-opens the add rail |
+| 10Y Treasury | **5.18% Thu close** (FRED; 19-year high); ~5.15% Fri; 30Y 5.40% | Acceptance, not a touch. The construction-materials ceiling stays; NUE's build-out financing math stays taxed. Fleet issue **#106/#114** own the rate regime |
+| Copper | **~$6.78/lb, +2.5% W/W** — rose a SECOND week into DXY 101+ | **The decoupling is confirmed so far.** Grasberg + Kamoa-Kakula + Escondida disruptions (~300Kt annualized, 1.5% of mine output) + data-center demand. The restriction is an FX rule, not a copper verdict — FCX is the exception that tests it |
+| Gold / Silver | **$4,328 (-0.7%)** / **$64.95 (+2.3%)** | Gold's debasement bid paused under the strong dollar (below its own 200D); silver's industrial leg firmed. NEM holds; no add |
+| Crude / Feedstock | **WTI $92.92 (-2.7%)**, Brent $98.58 — U.S.-Iran truce hopes | **The coatings/gas row's green week was this number.** The siege premium is unwinding; SHW/PPG margins get relief into Oct 27 prints |
+| Nat Gas | **$3.18 (+5.3% W/W)** on AI-power demand | The one rising input — but it hits utilities/industrial power more than XLB's chemistry chains. Watch as a chemicals-cost second-order |
+| Hormuz Status | **Truce hopes; no ceasefire signed** | The $105.83 spike is two weeks old; the plateau broke lower. A failed truce sends WTI back over $100 and reverses this week's relief row |
+| China | Truce extended to **Jan 10**; no stimulus; rare-earth halts persist; DCS duties 80–99% (issue #114) | The deferred gap-up scenario stays deferred. Copper rising without Beijing says the deficit is structural; stimulus, if it ever lands, is still a free option |
+| Canada Trade War | US bans effective **Sep 29 (tomorrow)**; 50% metals walls live since Sep 8 | The shield's live date. CLF/NUE/KALU/CENX all carry the premium; the next catalyst is Canadian counter-escalation |
+| US Demand Data | **Core capital goods orders +1.6% (Aug, big beat)**; Philly 37.8 carried | The order-book confirmation for the reshoring/industrial-demand story — the fundamental bull case improved the same week the FX regime turned |
+| ISM Manufacturing PMI | **Oct 1** | The next hard demand read; >52 makes the 200D break look like a tax, <50 confirms it |
+| SPY (context) | ~$770, +~1% W/W | Tech carried the index; materials' flat close is a relative fail hidden inside an absolute standstill |
 
-**Ophelia Verdict:** Week eight of the lifted restriction — and the first week the lift stopped helping. DXY +1.11% to 100.22 ended the dollar's seven-week silence exactly as I feared: not a break of my 98.00 rail downward, but a rally back through its 50D upward, on a hawkish Fed that means it this time (12-0, 2027 dots raised). The restriction stays LIFTED — 100.22 is not 101 — but I am drawing the new map honestly: **the tailwind is over, the headwind watch begins; a weekly close above 101 snaps the restriction back ON, and below 99.00 re-opens the add rail.** Meanwhile copper did something remarkable: rose all five sessions into that dollar rally. When the strongest FX headwind of the quarter cannot push copper down, the demand deficit is real. Posture: the shield stays core (escalation is compounding), FCX upgraded to conviction-watch on the decoupling, NEM stays hold (divergence over, thesis intact), chemicals stay plateau-posture, construction materials are avoids until the 10Y stops making 5.00% a habit. New rails: **DXY 101.00 above / 99.00 below; 10Y 5.00% (crossed Wednesday — watching for acceptance vs. rejection); copper $6.60 hold; Brent $100 (engaged via WTI plateau).**
+**Ophelia Verdict:** Week nine of the lifted restriction ended with the lift revoked — DXY closed the week at **101.04**, three straight sessions over the line, and the rule I wrote in August executes itself: **restriction ON, no new commodity longs above 101** (issue #115). I take no pleasure in the timing; the same week the dollar broke, the demand evidence improved (core capex goods +1.6%, copper +2.5% into the rally). But a regime rule that bends for good news is not a regime rule. What the restriction does NOT cover: the oil-relief trade (PPG/SHW/ECL — bought, not a commodity), the shield's wall premium (law, not speculation), and existing copper exposure held through the decoupling. What it forbids: new FCX/NEM/CLF adds while DXY holds 101+. The re-open condition is a close back under 99.00 or a committee redraw. Rails: **DXY 101/99; 10Y 5.00% (accepted); copper $6.60 hold ($6.78 — holding); Brent $100 (broken); ISM Oct 1 is the demand verdict.**
 
-**The Stagflation Corner:** Now the printed base case: the Fed hiked into $100 oil and called inflation "elevated" in the statement. Materials keeps sorting exactly as mapped: pricing-power-over-inputs (CLF, FCX, NEM) vs. input-buyers (SHW, PPG — stabilizing) vs. long-end-financed (VMC, MLM — breaking). The third group broke this week, on schedule.
+**The Stagflation Corner:** The corner dissolves with WTI at $92.92 — the cost-push leg broke this week, leaving only the rate leg (5.18% and accepted). Materials' sorting simplifies to one question: does the demand evidence (capex goods +1.6%, copper's stand, ISM on Oct 1) outlast the FX regime? History says the dollar's post-hike rallies peak within a month of the meeting; the restriction has a natural expiration if the pattern holds.
 
-**The China Question:** Still deferred — no package. But note: copper rose 2.25% with a rising dollar and no Beijing bid. If the checkbook ever opens, it opens into a tape that no longer needs it. The free option stays free.
+**The China Question:** Deferred a ninth week — the Trump-Xi summit produced a truce extension (Jan 10) and nothing else; rare-earth halts and DCS duties say the tech war runs on a separate track from trade. Copper rising without Beijing's checkbook is the strongest version of the deficit story. The free option stays free, and it gets cheaper every week the sector trades below its 200D.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLB (week ending 2026-09-18)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLB (week ending 2026-09-25)
 
-### This Week's Story: The Last Line Falls, and Copper Refuses to Follow
+### This Week's Story: The Trip Wire Snapped, and Copper Didn't Care
 
-The 50-day fell last week. The 200-day fell this week. **XLB's Friday close at $49.99 — eighteen cents below the 200-day line, at the week's low, on the week's highest volume — ends the trend structure that held through the entire 2026 run.**
+Two regime events landed in the same week, and they point in opposite directions.
 
-The mechanism was the one this board has war-gamed since spring, finally executed: the Fed hiked +25bp to 3.75–4.00% on Wednesday — unanimous, first since July 2023, with dots penciling 4.1% at end-2026 and the 2027 path raised. The 10-year Treasury closed above 5.00% for the first time that same day. The sector that buys the input and borrows at the rate paid both sides of the trade.
+**The first: the dollar broke 101.** DXY — silent for seven weeks last month, loud for two now — closed 101.10 Wednesday, 101.29 Thursday, and 101.04 Friday, the first weekly close above the line that governs this board. The driver is policy acceptance: Barr's "further adjustments," 71% odds of an October hike, the 10Y at 5.18%, the 2Y at 4.905%. The rule written for exactly this moment executed itself — **the restriction on commodity longs is back ON** (issue #115), no committee vote required.
 
-The damage sorted exactly along the map's lines. The long-end-financed names broke: **Vulcan -4.7% into fresh 52-week-low territory, Martin Marietta -3.8%, Nucor -4.3%** — the reshoring build-out's financing cost just went up with the 2027 dots. The lithium unwinding continued: **Albemarle -5.6% through the $110 line**, the summer re-rating now fully reversed. And the dollar — silent for seven weeks — rallied +1.11% back above its own 50-day, taxing every commodity narrative in the file.
+**The second: copper refused to obey.** HG copper rose ~+2.5% to ~$6.78 — a second consecutive weekly gain *into* a rising dollar, now with named supply losses: Grasberg, Kamoa-Kakula, Escondida, roughly 300,000 tonnes annualized, 1.5% of global mine output, per Fair Value. FCX closed the week at $72.31, up five of the last six sessions. When the strongest FX headwind of the quarter cannot push copper down two weeks running, the deficit is not a narrative.
 
-Except one. **Copper rose all five sessions — $6.33 to $6.615, +2.25% — into the teeth of that dollar rally.** Copper rising while the dollar rises is the deficit story outmuscling FX math: EV and data-center demand absorbing a headwind that used to be decisive. The equity expression was the week's only green pocket: **Cleveland-Cliffs +3.65%** (catching the Canada-escalation bid as the US widened the trade war to motorcycles, dairy and alcohol, effective September 29), **DuPont +1.6%, Freeport +0.66%** reclaiming the $71 line it lost last week.
+**The sector split between those stories.** The FX-regime shorts (DOW -2.7%, CTVA -2.5%, MLM -1.3%, ALB -1.1%) paid the dollar tax. The input-relief longs (ECL +3.7%, IFF +3.3%, PPG +2.9%, SHW +2.6%, LIN +2.3%) collected WTI's break to $92.92 — the coatings complex's first green week since the siege began. XLB net: **$49.80, -0.38%**, a second weekly close below the 200D after Tuesday's reclaim attempt died at $50.64 — the map's "bounce then fail" sequence, completed on schedule.
 
-Friday's aluminum selloff — Century -11.4% on the week, Kaiser -4.5%, the whole complex down 3–5% in one session on no company news — was the de-rating's final indiscriminate sweep. Wells Fargo kept its Overweight on CENX while trimming the target: the Street sees price damage, not thesis damage.
+**The demand side quietly improved.** Friday's August durable goods: core capital goods orders +1.6% versus +0.6% expected, July revised up. The order book of the industrial economy is re-accelerating into 5.18% money — the fundamental case for NUE's walls, VMC's aggregates and FCX's grid demand all got better the same week the FX regime got worse.
 
-**The Bottom Line:** XLB fell -1.88% to $49.99, lost its 200-day on a weekly close for the first time this cycle, and printed its most oversold RSI of 2026 (25.5). The map is now defensive with $47 as the target and $50.17 as the reclaim line — but the most oversold board of the year just met the one commodity that refuses to fall. The reflex bounce and the regime question arrive together Monday.
+**The Bottom Line:** The board's two governing variables have diverged: the dollar says restriction ON, the demand data says the cycle lives, and copper has picked its side. XLB sits below its 200D with $47 below and $50.64 above, and the Oct 1 ISM is positioned to break the tie. History says post-hike dollar rallies peak within a month. The restriction has a natural shelf life — if the pattern holds, DXY rolls before ISM disappoints, and this week's rule change becomes next month's buying opportunity. Until one of those prints, the discipline is the discipline: no new commodity longs, own the oil-relief row, hold the copper that's already held.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Q3 2026 season opens in mid-October. The macro calendar comes first:
+Q3 season opens mid-October; the macro calendar comes first:
 
 | Company / Event | Ticker | Date | Quarter | What to Watch |
 |---|---|---|---|---|
-| **UMich final Sep sentiment** | — | Fri Sep 25 | — | The confidence leg of the stagflation tape after the hike |
-| **August PCE** | — | Sep 30 | — | The Fed's preferred gauge after "inflation remains elevated"; core ~3.4% penciled |
-| **Canada ban effective** | — | Sep 29 | — | US bans on Canadian motorcycles/dairy/alcohol go live; watch for metals counter-escalation |
-| **Cleveland-Cliffs** | CLF | **Oct 19, 2026 (expected)** | Q3 2026 | First print behind the live walls; spot-price torque at RSI 61 |
-| **Kaiser Aluminum** | KALU | **Oct 21, 2026 (expected)** | Q3 2026 | SMID read on the aluminum rout; record-Q2 follow-through |
-| **Freeport / Newmont / Dow** | FCX/NEM/DOW | **Oct 22, 2026 (expected)** | Q3 2026 | The triple gate: copper realizations vs. the decoupling claim; NEM's AISC at $4,400 gold; DOW's yield coverage at $100 feedstock |
-| **Nucor** | NUE | **Oct 26, 2026 (expected)** | Q3 2026 | Steel shipments + pricing behind the walls; capex math at 5.00% money |
-| **Sherwin / Ecolab / PPG** | SHW/ECL/PPG | **Oct 27, 2026 (expected)** | Q3 2026 | Coatings margins after the plateau — cuts pre-priced, anything less is a relief rally |
-| **Vulcan / Mercer** | VMC/MERC | **Oct 29, 2026 (expected)** | Q3 2026 | VMC's aggregates pricing vs. the rate tape; MERC's liquidity vs. the maturities wall |
-| **Linde** | LIN | **Oct 30, 2026 (expected)** | Q3 2026 | Ballast-name confirmation at RSI 17 |
-| **Corteva / IFF / MLM** | CTVA/IFF/MLM | **Nov 3, 2026 (expected)** | Q3 2026 | Ag demand; construction-materials second verse |
-| **Albemarle / SunCoke** | ALB/SXC | **Nov 4, 2026 (expected)** | Q3 2026 | Lithium scenarios + Udd transition; met-coke behind the widening walls |
-| **APD / DD / CENX / KRO** | — | **Nov 5, 2026 (expected)** | Q3 2026 | CENX's first print after the -11.4% de-rating week |
-| **October CPI** | — | Oct 14 | — | The next hike's fuel; ~57% priced for the next meeting |
+| **Canada bans effective** | — | **Sep 29** | — | US bans on Canadian motorcycles/dairy/alcohol live; watch for metals counter-escalation — the shield's next leg |
+| **Core PCE** | — | **Sep 30** | — | October-hike referendum (71% priced); a hot print sends DXY through 102 |
+| **ISM Manufacturing PMI** | — | **Oct 1** | — | The demand verdict: >52 makes the 200D break a tax, <50 confirms it |
+| **September Jobs** | — | Oct 2 | — | The consumer/industrial cycle's labor leg |
+| **Cleveland-Cliffs** | CLF | **Oct 19 (exp.)** | Q3 2026 | First print behind the live walls; spot torque vs. the financing tax |
+| **Kaiser Aluminum** | KALU | **Oct 21 (exp.)** | Q3 2026 | Aluminum wall economics post-Sep 29 |
+| **Freeport / Newmont / Dow** | FCX/NEM/DOW | **Oct 22 (exp.)** | Q3 2026 | Copper realizations vs. the decoupling claim; NEM at $4,328 gold; DOW's yield coverage |
+| **Nucor** | NUE | **Oct 26 (exp.)** | Q3 2026 | Steel shipments/pricing behind the walls |
+| **Sherwin / Ecolab / PPG** | SHW/ECL/PPG | **Oct 27 (exp.)** | Q3 2026 | The oil-relief row's prints — the relief trade gets graded |
+| **Vulcan / Mercer** | VMC/MERC | **Oct 29 (exp.)** | Q3 2026 | VMC aggregates vs. the rate tape; MERC's maturities wall (going-concern risk) |
+| **Linde** | LIN | **Oct 30 (exp.)** | Q3 2026 | Ballast confirmation after the RSI-17 bounce |
+| **Corteva / IFF / MLM** | CTVA/IFF/MLM | **Nov 3 (exp.)** | Q3 2026 | Ag demand; construction materials second verse |
+| **Albemarle / SunCoke** | ALB/SXC | **Nov 4 (exp.)** | Q3 2026 | Lithium scenarios; met-coke behind the walls |
+| **APD / DD / CENX / KRO** | — | **Nov 5 (exp.)** | Q3 2026 | CENX post-rout; KRO's TiO2 base |
+| **October CPI** | — | Oct 14 | — | The next hike's fuel |
 
-**Marky's Binary Event Read:** The gate sequence is now technical first, fundamental second: Monday-Wednesday answer whether $50.17 reclaims or rejects (RSI 25.5 says bounce; hike-week momentum says rejection). Then the PCE (Sep 30) decides whether the October meeting's ~57% goes higher. The Q3 prints start Oct 19 with the shield's own CLF. Trade the reclaim line, not the forecast.
+**Marky's Binary Event Read:** The sequence is macro-dense: Sep 29 (Canada live) → Sep 30 (PCE) → Oct 1 (ISM). For the tape: over **$50.64** and the failed reclaim is forgiven (target $51.7); under **$49.57** and $47.00 is live. For the book: the restriction forbids new commodity longs, so the actionable list is the oil-relief row into Oct 27 prints and the shield's prints into Oct 19 — both are positioning trades around already-held themes, not new risk. ISM >52 with a DXY rollover under 101 is the full re-risk signal; wait for it.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- RSI 25.5 reflex bounce reclaims the 200D ($50.17) within a week → the break goes down as a hike-week head-fake, $51.77 (50D) is the next test
-- Copper's decoupling holds $6.60+ → FCX and the metals complex lead the recovery; a Beijing checkbook would be accelerant on an already-bid tape
-- Coatings relief: SHW/PPG prints (Oct 27) show the $100-oil plateau absorbed → the pre-priced cuts unwind upward
-- Canada escalation widens to metals remissions chaos → shield premium compounds; CLF's momentum leg extends into its Oct 19 print
-- DXY stalls below 101 → the restriction stays lifted and the dollar rally proves a hike-week knee-jerk
+- **DXY rolls over** (post-hike pattern: dollar rallies peak within a month of the meeting) → a close back under 100 re-opens commodity adds, restriction softens by its own terms
+- **ISM ≥ 52 (Oct 1)** + copper holds $6.60 → the 200D break gets reclassified as a tax; $50.64 falls, $51.7–$52.5 opens
+- China stimulus finally lands → accelerant on an already-bid copper tape; the free option pays
+- Canada counter-escalates on metals → shield premium compounds into CLF's Oct 19 print
+- Oil-relief row prints (Oct 27) confirm margin recovery → PPG/SHW re-rate from compressed multiples
+- The U.S.-Iran truce holds → WTI toward $85 → the coatings/gas margin story extends into 2027 guide season
 
 ### 🔴 Bear Case
-- The 200D break confirms: bounce dies at $50.17 → **$47 target activates**, and the 2026 leadership story is formally over
-- 10Y acceptance above 5.00% (not a touch — a habit) → construction materials (VMC at 52W lows, MLM) keep leading the index down; NUE's build-out math reprices
-- DXY closes above 101 → **restriction snaps back ON**; copper's decoupling fails the hard way, metals give back the week's stand
-- ALB through $100 → lithium unwinding becomes a rout into the Nov 4 print; the complex drags the SMID sleeve (CENX already -11.4%)
-- October CPI (Oct 14) hot on $100 oil plateau → the ~57% October hike goes to locked, and the whole rate map reprices again
+- **DXY through 102** on a hot PCE → the restriction extends; every commodity long thesis gets an FX tax increase; $47.00 target activates on a close under $49.57
+- ISM < 50 → the demand bull case dies the week after it was born; construction materials make new lows and pull the index through $47
+- The truce fails → WTI back over $100 → the relief row's green week reverses; feedstock siege returns
+- MERC-style distress spreads (credit spreads at 273bp, not pricing a default — yet) → a SMID materials default would be the cycle's first
+- October CPI hot (Oct 14) → October hike locked → 10Y 5.25%+ → the long-end-financed names (VMC, MLM, NUE-capex) de-rate again
 
 ### ⚠️ The Wild Card
-**Copper's defiance.** A +2.25% week into a +1.11% dollar rally and a rate hike is either the strongest demand signal of the cycle or the last gasp of positioning before the dollar wins. If $6.60 holds through next week, the deficit story is real and FCX is mispriced at 17.2x forward. If it fails, every green pocket on this board was distribution. The metal that didn't blink is now the board's lie detector.
+**Copper's decoupling is now a two-week streak against a dollar through 101.** Either this is the strongest physical-demand signal of the cycle — three concurrent mine disruptions meeting grid buildout demand — or it is the terminal squeeze before the FX regime asserts. The restriction says don't add; the tape says don't short. The resolution is unusually binary: if $6.60 holds through the PCE/ISM gauntlet, the deficit story forces a committee redraw of the DXY rails; if it fails the week ISM prints, every green week on this board was distribution. Watch HG=F, not XLB, for the answer.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Eight weeks ago I lifted the restriction on a falling dollar; this week the dollar rallied through its 50-day on a unanimous hike with raised 2027 dots. The lift holds — 100.22 is not 101 — but I am one weekly close from snapping it back. Watch copper, not the Fed: a metal that rises into a dollar rally is telling you the deficit is real, and if it keeps telling you that, this sector's 200-day break is a tax, not a thesis. My rails: DXY 101/99, 10Y 5.00% acceptance, copper $6.60. The regime crossed my crisis line Wednesday and nothing broke — the line is a price now. The fleet's issue #106 owns the rate regime; this desk opens nothing this week."*
+**Ophelia:** *"My trip wire snapped and I executed my own rule — the restriction is back ON (issue #115) and I feel no conflict about it, because a regime rule that bends for copper is not a regime rule. What I note for the record: the same week the dollar broke 101, core capital goods beat at +1.6% and copper rose 2.5% into the rally. The demand evidence improved while the FX regime deteriorated — that divergence resolves within a month, because post-hike dollar rallies always peak within a month. If DXY rolls before ISM disappoints, this week's rule change becomes next month's opportunity. Rails: 101 above / 99 below; copper $6.60; ISM Oct 1. The shelter of the rule is that it removes the decision."*
 
-**Marky:** *"Defense is live. The 200D fell by eighteen cents on a Friday at the low — marginal break, real signal, same as every line that's fallen this month. RSI 25.5 says the bounce comes; $50.17 decides what kind. Reclaim it and the break was hike-week noise; die at it and $47 is the map. The only longs I trust above their lines: CLF (RSI 61, escalation bid) and FCX (reclaimed $71 on copper's decoupling). VMC is in no-man's land at fresh 52-week lows — no line until the $230s. I trade the reclaim, not the oversold."*
+**Marky:** *"The map completed: bounce, fail at the 200D, close below. $47.00 is the live target and the only thing that changes it is a close over $50.64 — Tuesday's high, not Friday's close. Inside the tape the leadership told the truth: the greens were all oil-relief (ECL/IFF/PPG/SHW/LIN), the reds were all FX (DOW/CTVA/MLM/ALB). FCX at $72.31 holding five of six sessions is the one commodity long I wouldn't fight even under restriction — but I wouldn't add it either. VMC made no progress ($245 vs a $240.83 low) — broken majors don't get bottom-fished above their 200D. I trade $49.57/$50.64 and let PCE and ISM do the talking."*
 
-**Cecil:** *"The tape just handed me the cheapest PPG (15.1x), the cheapest FCX-forward (17.2x), and a 7x CENX in the same week — and I am buying none of them before the bounce shows its character. That's not fear; that's the rule: broken lines get paid to wait. NEM stays held at 15.7x — the divergence ended, the margin math didn't. DOW's 4.8% yield stays a hold. The garden took its third frost, and this one reached the roots — but roots that survive September frosts price themselves in October. My buy list is written: PPG first, FCX second, both contingent on $50.17."*
+**Cecil:** *"I bought PPG this week — 15.1x, oil siege broken, Oct 27 print now a relief setup. That's the trade this tape hands a value buyer: input-cost relief with the multiple already compressed, and no commodity-regime question attached. I passed on FCX despite the decoupling because my own restriction forbids it above DXY 101, and I will not be the value investor who writes rules and breaks them in the same week. NEM holds at 15.7x; DOW's add line is $26 and the dollar says not yet. KRO's $8.00 shelf held a third week — the SMID sleeve's quiet win. MERC at $0.31 is a going-concern clock, not an investment. The garden's rule for regime weeks: buy the cost relief, hold the copper you have, add nothing the FX rule forbids."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance daily OHLCV (week of Sep 14-18, 2026 closes, dividend-adjusted; weekly changes date-pinned Fri 9/11 → Fri 9/18, five sessions): XLB, LIN, SHW, FCX, APD, NEM, ECL, NUE, DD, VMC, DOW, PPG, CTVA, ALB, MLM, IFF, CLF, KALU, CENX, KRO, MERC, SXC, plus DX-Y.NYB, HG=F, GC=F, ^TNX; 50D/200D MAs, Wilder RSI(14) from 1Y daily bars
-- yfinance quote fundamentals + market caps (Sep 19, 2026): KALU $2.45B / CENX $3.86B / KRO $0.92B / MERC $0.03B / SXC $0.81B (all re-verified sub-$5B); analyst mean targets (LIN $544 / NUE $285 / NEM $135 / PPG $126 / ALB $173 / FCX $72 / CENX $70)
-- FOMC Sep 16, 2026: +25bp to 3.75–4.00% (12-0, first hike since Jul 2023); SEP medians — end-2026 4.1%, end-2027 4.1% (from 3.6%), end-2028 3.9%; statement "inflation remains elevated"; Chair Warsh no dot, no guidance
-- Desk logs / wire summaries (week of Sep 14-18): 10Y 5.006% Wed close (first >5.00%), 4.998% Fri; DXY 100.22 +1.11% W/W (above 50D 99.95); WTI $100.30 Fri after Tue $105.83 spike; August retail sales +1.2%; BOJ hike to 1.25% Fri; US ban on Canadian motorcycles/dairy/alcohol effective Sep 29
-- CENX catalyst check (Sep 19): Wells Fargo Overweight maintained, PT $83→$79 (Sep 18); Friday aluminum complex-wide selloff (AA -5.4%, KALU -3.2%, CMC -3.9%, STLD -4.1% that session) — sector de-rating, no company-specific news
-- Motley Fool / Quartr / Mercer IR (Aug 2026, carried): MERC Q2 2026 — negative operating EBITDA, dividend suspended, liquidity $191.7M; Peace River maintenance shutdown Sep 7-17 now complete
-- Prior-cycle materials wiki (2026-09-12): Canada counter-tariff framework live Sep 8 (50% bilateral steel/aluminum), HRC ~$1,181/t, lithium spot ~$20/kg LCE, ALB Udd appointment (effective Feb 1, 2027)
-- **Cross-references:** fleet issue **#106** (10Y >5.00% regime — owns the rate line), **#99** (CRE/refi wall). **No new issue opened this week: XLB -1.88% (threshold ±5%), copper +2.25% / gold +0.36% (threshold ±10%), DXY 100.22 inside the 99–101 band, no China stimulus announced.**
+- yfinance daily OHLCV (week of Sep 21–25, 2026 closes, dividend-adjusted; weekly changes date-pinned Fri 9/18 → Fri 9/25; same-day bars verified with repair=True): XLB + 16 holdings + 5 watch names; 50D/200D MAs, Wilder RSI(14) from 1Y daily bars; DX-Y.NYB (DXY) closes 101.10/101.29/101.04 Wed–Fri
+- yfinance quote fundamentals + market caps (Sep 25, 2026): KALU $2.49B / CENX $3.80B / KRO $0.95B / MERC ~$0.02B / SXC $0.81B (all re-verified sub-$5B); XLB fund metrics refreshed (P/E ~23.2, yield ~1.61%, AUM ~$8.75B)
+- Fair Value newsletter (Sep 25, 2026): copper ~$6.78 (+2.5% W/W) with Grasberg/Kamoa-Kakula/Escondida disruptions (~300Kt annualized, 1.5% of global mine output); gold $4,328 (-0.7%); silver $64.95 (+2.3%); WTI $92.92 / Brent $98.58; nat gas $3.18; core capital goods orders +1.6% (Aug); U.S.-Iran truce hopes; Trump-Xi truce to Jan 10, rare-earth halts, China DCS duties 80–99%
+- Fair Value (Sep 24, 2026): Starboard Value pushes Knife River to explore a sale (KNF -7% that session); COST preview
+- FRED DGS10: 9/23 5.11, 9/24 5.18; 2Y 4.905% Friday (MarketWatch/Schwab); ~71% October-hike odds (Octagon); Barr remarks (Sep 23)
+- **Cross-references: NEW ISSUE #115 (DXY weekly close 101.04 — restriction back ON), #106 (10Y >5.00%), #114 (10Y through 5.10% + DCS duties + ORCL force majeure), #99 (CRE/refi wall). Materials triggers otherwise NOT met: XLB -0.38% (±5%), copper +2.5% / gold -0.7% (±10%), no China stimulus announced.**
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-19 (data as of Fri 2026-09-18 close; Grid B Midday run)*
+*Last updated by Saturday Research Crew: 2026-09-25 (data as of Fri 2026-09-25 close; Grid B Midday run)*
 *Next update: Every Saturday*
 *Data sources: yfinance (Yahoo-sourced), COMEX, BLS, ISM, company IR, Council desk logs*
-*Note: Equity data through Friday Sep 18 close. FOMC delivered Sep 16; August PCE due Sep 30; next CPI Oct 14.*
+*Note: Restriction on commodity longs is ON as of this update (DXY 101.04 weekly close, issue #115). Next gates: Canada bans Sep 29, core PCE Sep 30, ISM Oct 1.*
