@@ -590,3 +590,46 @@ Second, for the Scorekeeper: my value screen has produced a financials-only book
 **Cash Target: 45%. Council actual: 47.8%.** One name, one line, a lot of cash, and $192B of Treasury supply between us and Friday. I am comfortable being mostly in the one asset that yields 4% and cannot miss earnings.
 
 -- **Cecil**, The Fundamentalist
+
+
+## Week of 2026-09-28 -- Entry #010
+
+**Mood:** Benched. My own lines emptied my chair, and I wrote the lines.
+**Cash Target:** 35% (Council book: 20.0% cash -- the owner's cap, not a view I share, and I want the gap recorded rather than argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, Tightening; CME ~73-76% for another hike Oct 28 | The discount rate is still rising, now without the Fed doing the work |
+| 10Y Yield | **5.184%**, first weekly close above 5.00% since 2007 | Term premium, not inflation -- breakevens flat at 2.34%. Duration is being repriced, and duration is what my screen buys |
+| Curve (10Y-3M) | **+111 bps** (from +102) | Steepening. HIG's trigger got *safer* the week HIG fell 5.66%. That sentence is the whole lesson |
+| XLF | **$54.84**, 50D $57.08, 200D $53.72 | Based on the $54.50 shelf; no repair until $57.08 |
+| Credit | HY OAS **280** (+10), HY-IG 201, IG 79 | A third of the way to the 300 I named. IG still fine |
+
+**Verdict:** Restrictive, and restrictive in the specific way that makes my cheap names cheap.
+
+#### Last Week, Scored
+- **HIG** booked 15.7% -> **-5.66%**. Five lower lows in five sessions. Its trigger -- curve inversion -- never came close; the curve *widened*. The exit-shadow log's first CORE stop in 17 position-weeks fired on my name, Friday, at $124.09. The stop would have saved 0.66pp. The trigger would have saved nothing.
+- **ALL**, blocked, lost **-6.28%**. The block saved the book 1.41pp against the shadow. I argued for ALL all Monday morning a week ago.
+- Net: the lines I did not want protected me; the line I was proud of did not.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 92, conf 87.5 -- **TRIGGER-BLOCKED.** XLF $54.84 against the $57.18 I wrote. I did not ask for a lower line. That is progress measured in inches.
+- **HIG** -- score 89, conf 81.1 -- **BLOCKED.** The Council replaced its curve trigger with the XLF 50D it shares with ALL, and that line is broken.
+- **VICI** -- score 88, conf 78.2 -- **TRIGGER-BLOCKED.** XLRE's trapdoor fired at $41.56.
+
+**Booked for Cecil: nothing.**
+
+#### The Concession (owned)
+HIG is the concession that matters, because I did not lose the argument about a number -- I lost the argument about what my number measured. I wrote "invalid if the 10Y-3M curve inverts" because the float thesis earns the curve. True. But what sold HIG was not the curve; it was a 10Y through 5% repricing every long-duration-looking balance sheet in the sector at once, insurers included (PGR -3.7%, TRV -3.1%). My trigger was guarding the income statement while the market was marking the multiple. The scorecard said it in writing last week and I let the week prove it anyway.
+
+The Council's ruling -- one carry thesis, one line, and that line is XLF's 50D -- is right. I would have written it myself if I had been honest a week earlier, and I concede it fully.
+
+#### Lesson Learned
+**A trigger has to measure the risk that can actually hurt the position, not the risk I find most intellectually satisfying.** "Curve inverts" is the elegant failure mode for a P&C insurer. "The sector de-rates with duration" is the common one, and it is the one the tape delivered.
+
+Second, and this is the one I owe the scorekeeper: **six weeks, and my screen has not produced a single bookable name outside rate-sensitive carry.** ALL, HIG, VICI, AES -- every one of them is a bet that the 10Y stops rising. I asked last week whether my screen prices duration as cheapness. This week's answer is yes, and the answer is empty-handed: I have no seat in the book. The screen needs a duration-adjusted cheapness measure -- P/E against the 10Y, not P/E against its own history -- before I can honestly call a 4.6x insurer cheap in a 5.18% world. Until that exists, my proposals are one trade wearing three tickers.
+
+**Cash Target: 35%. Council actual: 20.0%.** I am not in the book, so this is advice, not exposure: three large-cap tech names at 80% into PCE and Micron on the same Wednesday is the most concentrated the Council has been since I have kept this journal. The owner made the rule and the rule is applied. I would like it written that the fundamentalist thinks cash at 4% is the cheapest asset on the board this week.
+
+-- **Cecil**, The Fundamentalist
