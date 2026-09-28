@@ -1,0 +1,64 @@
+week: '2026-09-28'
+lock: 2026-09-28 08:50 ET
+entry_date: '2026-09-28'
+exit_date: '2026-10-02'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 768.35
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.75
+  cash_weight: 0.25
+  picks:
+  - ticker: NVDA
+    weight: 0.25
+    entry_price: 229.7
+    entry_price_source: open
+  - ticker: JNJ
+    weight: 0.15
+    entry_price: 270.17
+    entry_price_source: open
+  - ticker: MOD
+    weight: 0.1
+    entry_price: 195.1
+    entry_price_source: open
+  - ticker: VRTX
+    weight: 0.1
+    entry_price: 522.02
+    entry_price_source: open
+  - ticker: CNK
+    weight: 0.1
+    entry_price: 37.654
+    entry_price_source: open
+  - ticker: MCS
+    weight: 0.05
+    entry_price: 28.15
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: LNG
+    weight: 0.1
+    entry_price: 271.23
+    entry_price_source: open
+  - ticker: VRTX
+    weight: 0.2
+    entry_price: 522.02
+    entry_price_source: open
+  - ticker: BNO
+    weight: 0.3
+    entry_price: 60.81
+    entry_price_source: open
+  - ticker: GE
+    weight: 0.2
+    entry_price: 321.46
+    entry_price_source: open
+  - ticker: AAPL
+    weight: 0.2
+    entry_price: 340.37
+    entry_price_source: open
