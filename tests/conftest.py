@@ -4,7 +4,9 @@
 yfinance at import time. The merge semantics under test never touch the
 network -- they read a committed weekly file and write it back -- so the
 provider is stubbed rather than installed. A test suite that needs a market
-data provider to run is a test suite that does not get run.
+data provider to run is a test suite that does not get run. `requests` is
+stubbed for the same reason: the cash-cap test imports `run_scan`, which
+imports `fetch_context`, which calls requests only when it fetches.
 """
 from __future__ import annotations
 
@@ -17,7 +19,7 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 
-for name in ("yfinance", "pandas"):
+for name in ("yfinance", "pandas", "requests"):
     sys.modules.setdefault(name, types.ModuleType(name))
 
 sys.path.insert(0, str(ROOT))
