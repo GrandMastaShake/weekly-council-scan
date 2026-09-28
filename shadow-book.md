@@ -18,6 +18,22 @@
 
 ## Entries
 
+### Week of 2026-09-28 -- TRIGGER BLOCK: ALL + HIG (XLF 50D) and VICI (XLRE trapdoor); CASH CAP raises three survivors to 80%
+
+**Trigger:** The booking trigger check fired on the engine's #1 consensus pick **ALL** (Cecil, 24.7%) for the second straight week -- XLF $54.84 vs its 50D $57.08 (wiki/financials.md), Cecil's own re-entry line $57.18 -- and on **HIG** (Cecil, 15.3%), whose booked curve trigger (+111 bps, intact) the 2026-09-21 council scorecard had already called mis-specified ("HIG's intact trigger did not measure the risk that hurt it"). HIG lost -5.66% last week and fired the first CORE shadow stop in the log; the Council replaced its line BEFORE booking with the one that measured the risk -- the XLF 50D it shares with ALL as one carry thesis -- and that line is violated. Promotion candidate **VICI** blocked on XLRE's trapdoor ($41.56 < $42.50; 200D $43.19, wiki/real-estate.md). **TMO** (Marky, conf 80.3) declined as a chase (wiki/healthcare.md "don't chase RSI-70s tools (TMO)"); **QCOM** / **TEL** not promoted (share AMD's SMH / AAPL's XLK lines). With no candidate left, the owner's CASH CAP (commit e72d8af) raised the survivors in proportion to 80% via the pipeline's own `apply_cash_cap`.
+
+**Booked (official, Tracker-measured):** AAPL 30.0% / META 29.4% / AMD 20.6% / cash 20.0%.
+
+**Shadow A (the engine's unconstrained book):** ALL 24.7% / META 23.1% / AAPL 18.0% / HIG 15.3% / AMD 14.6% / cash 4.3% -- no booking trigger check, no cash floor (the floor did not fire in the pipeline: facts.json's fed_stance "Hike" is not in HAWKISH_STANCES -- a defect recorded in the report's Data Integrity Note 3).
+
+**Shadow B (the survivors at engine weight, no cap -- last week's rule):** META 23.1% / AAPL 18.0% / AMD 14.6% / cash 44.3%.
+
+**Overlap:** AAPL, META, AMD (all three books).
+
+**Resolution:** Counterfactual to be computed next Monday (2026-10-05), date-pinned Mon 2026-09-28 close -> Fri 2026-10-02 close, for both shadows against the official book. **Two questions, written before the answers are known:** (1) Does re-blocking ALL -- and now HIG on the replaced line -- keep protecting the book, or has the XLF 50D become a line that only ever says no? If ALL and HIG both beat the book this week, the second block (HIG's re-specified trigger) is the one to re-examine first. (2) The cash cap's first full week: Shadow B holds 44.3% cash into PCE + Micron + NFP; the booked book holds 20%. The difference between them is the price, or the payoff, of the owner's rule in a single-gate week.
+
+---
+
 ### Week of 2026-09-21 -- TRIGGER BLOCK: ALL + DE Dropped at Booking (their own invalidations fired the week before), VICI Blocked as a Promotion
 
 **Trigger:** The booking trigger check (the DOW rule) fired on the engine's #1 consensus pick **ALL** (Cecil, 24.3%) and #5 **DE** (Marky, 14.0%). Both were booked 2026-09-14 with explicit invalidation lines, and both lines FIRED on Friday 2026-09-18 (exit-shadow.md, week of 2026-09-14): ALL's XLF weekly close below the 50D (XLF $55.86 vs the 50D now $57.18, wiki/financials.md), DE's XLI weekly close below the 200D (XLI $169.75 vs $171.14, wiki/industrials.md "tripwire fired"). Unchanged theses carry unchanged triggers, and both triggers are violated at booking. Cecil's promotion candidate **VICI** was run against the gate first (his Entry #008 commitment) and fails XLRE's first 2026 weekly close below its 200D ($42.53 vs $42.78, wiki/real-estate.md). PSX (Marky #3) passed its trigger but was declined as crowded (RSI 83.0, 8.4% above target) -- not a trigger block, recorded here because it also shaped the book.
