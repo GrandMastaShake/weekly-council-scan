@@ -2,7 +2,7 @@ week: '2026-09-21'
 lock: 2026-09-21 08:50 ET
 entry_date: '2026-09-21'
 exit_date: '2026-09-25'
-status: open
+status: closed
 entry_basis_note: 'Entry SET pinned 08:49:06 ET and re-verified 08:57:57 ET (no comments
   created or edited after the 08:50 lock; 2 valid entries). Prices fetched ~10:36
   ET after the open had settled; every Monday bar (14 tickers + SPY) checked low <=
@@ -11,10 +11,21 @@ entry_basis_note: 'Entry SET pinned 08:49:06 ET and re-verified 08:57:57 ET (no 
   it was accepted. GrandMastaShake''s ''CASH 10%'' line is read as the cash remainder,
   never as a priced row. Umassalum''s weights carry no % sign, which the issue rules
   explicitly allow.'
+close_note: 'Closed 2026-09-28 ~07:25 ET via arena_ingest.py --close. The close run
+  re-fetched the settled Monday 2026-09-21 bars; all 14 (13 picks + SPY) passed low
+  <= open <= high, so this yaml uses the validated settled opens. Four differ by cents
+  from the prices recorded at lock (COIN 205.50 -> 205.19, UPST 25.60 -> 25.53, AGNC
+  9.90 -> 9.92, GOOG 346.10 -> 346.19, LLY/AMAT rounding). Locked-basis results (lock
+  prices -> same Friday closes): GrandMastaShake +3.39% (alpha +2.73%), Umassalum
+  -3.48% (alpha -4.15%), SPY +0.67% -- identical to the settled basis at 2 dp except
+  GrandMastaShake by 1bp. Council (Tracker, same Monday-open basis): +0.41%, alpha
+  -0.26%.'
 benchmark:
   ticker: SPY
-  entry_price: 766.251
+  entry_price: 766.25
   entry_price_source: open
+  exit_price: 771.35
+  return_pct: 0.67
 players:
 - player: GrandMastaShake
   valid: true
@@ -25,30 +36,46 @@ players:
     weight: 0.2
     entry_price: 248.39
     entry_price_source: open
+    exit_price: 247.25
+    return_pct: -0.46
   - ticker: SPCX
     weight: 0.2
     entry_price: 154.77
     entry_price_source: open
+    exit_price: 148.68
+    return_pct: -3.93
   - ticker: DDOG
     weight: 0.15
     entry_price: 229.73
     entry_price_source: open
+    exit_price: 268.13
+    return_pct: 16.72
   - ticker: LLY
     weight: 0.15
-    entry_price: 1144.495
+    entry_price: 1144.5
     entry_price_source: open
+    exit_price: 1183.46
+    return_pct: 3.4
   - ticker: AMAT
     weight: 0.1
-    entry_price: 455.96
+    entry_price: 455.95
     entry_price_source: open
+    exit_price: 485.0
+    return_pct: 6.37
   - ticker: COIN
     weight: 0.05
-    entry_price: 205.5
+    entry_price: 205.19
     entry_price_source: open
+    exit_price: 195.11
+    return_pct: -4.91
   - ticker: BFLY
     weight: 0.05
     entry_price: 8.0
     entry_price_source: open
+    exit_price: 9.39
+    return_pct: 17.38
+  weekly_return_pct: 3.4
+  alpha_vs_spy_pct: 2.73
 - player: Umassalum
   valid: true
   total_weight: 1.0
@@ -56,25 +83,39 @@ players:
   picks:
   - ticker: UPST
     weight: 0.1
-    entry_price: 25.6
+    entry_price: 25.53
     entry_price_source: open
+    exit_price: 23.81
+    return_pct: -6.74
   - ticker: HNGE
     weight: 0.2
     entry_price: 95.08
     entry_price_source: open
+    exit_price: 95.57
+    return_pct: 0.52
   - ticker: HQY
     weight: 0.2
     entry_price: 95.45
     entry_price_source: open
+    exit_price: 88.25
+    return_pct: -7.54
   - ticker: AGNC
     weight: 0.1
-    entry_price: 9.9
+    entry_price: 9.92
     entry_price_source: open
+    exit_price: 9.62
+    return_pct: -3.02
   - ticker: PGR
     weight: 0.2
     entry_price: 214.11
     entry_price_source: open
+    exit_price: 205.5
+    return_pct: -4.02
   - ticker: GOOG
     weight: 0.2
-    entry_price: 346.1
+    entry_price: 346.19
     entry_price_source: open
+    exit_price: 341.08
+    return_pct: -1.48
+  weekly_return_pct: -3.48
+  alpha_vs_spy_pct: -4.15
