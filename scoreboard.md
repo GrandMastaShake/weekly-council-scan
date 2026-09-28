@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-21 | 0.41% | 33% | TBD | TBD | AMD (8.00%) | HIG (-5.66%) | 47.8% |
 | 2026-09-21 | B (3.00 -- analysis quality) | TBD (week open) | Ophelia (3.30 rolling, tie with Cecil broken by AMD B+; thesis/ticker match restored) | Cecil (value screen may be pricing duration as cheapness; HIG's intact trigger did not measure the risk that hurt it) | AMD (B+) | HIG (B-) | 47.8% |
 | 2026-09-14 | +0.23% (Tracker P&L) | 50% | TBD | TBD | PSX (+5.26%) | HIG (-3.28%) | 40.2% |
 | 2026-09-14 | B (3.13 -- analysis quality) | TBD (week open) | Cecil (3.42 -- LEAD, only agent to build independent invalidations) | Ophelia (REVISED: thesis/ticker mismatch -- scarcity thesis, regulated utilities; prior confidence-calibration flag RESOLVED) | ALL (A-) | DE (C+) | 40.2% |
