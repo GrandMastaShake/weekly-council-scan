@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-09-28
+
+Booked: AAPL 30.0% / META 29.4% / AMD 20.6% (20.0% cash -- the owner's cash cap met exactly; 2 raised regime flags + NFP at risk, Tightening Fed, PCE + Micron on Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line, VICI blocked on XLRE's trapdoor, TMO declined as a chase; the three survivors raised in proportion to 80%). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| QCOM | 72 | 72.3 | Her #3 -- would share AMD's SMH $578.51 invalidation (two positions on one number, 2026-09-21 precedent); engine rationale ("risk-adjusted outperformer with lower volatility") is generic. Excluded on correlation, not conviction. Her #1 META and #2 AMD are both booked, so this is her only rejection |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): TMO (Marky #3, conf 80.3) declined as a chase per wiki/healthcare.md ("don't chase RSI-70s tools (TMO)"); TEL (Marky #2, conf 69.0) not promoted -- shares AAPL's XLK $190.00 line, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
+
+counterfactual: to be computed (Monday 2026-10-05, date-pinned Mon 2026-09-28 close -> Fri 2026-10-02 close; QCOM alone vs the official booked week, with TMO and TEL scored alongside).
+
+---
+
 ### Week of 2026-09-21
 
 Booked: XOM 19.7% / AMD 16.8% / HIG 15.7% (47.8% cash -- Council Review posture, 3 raised regime flags on canonical data, Tightening Fed, $192B 2/5/7-year supply week; ALL + DE trigger-blocked after their own invalidations fired, VICI trigger-blocked as a promotion). Ophelia's rejected candidates:
