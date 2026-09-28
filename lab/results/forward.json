@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28 11:44",
+ "generated": "2026-09-28 12:19",
  "weeks": [
   "2026-09-21"
  ],
@@ -8,7 +8,10 @@
    "weeks": 1,
    "mean_alpha": -0.0025509878327144896,
    "alpha_t": 0.0,
+   "mean_invested": 0.522,
+   "mean_alpha_at_exposure": 0.0006304651266043891,
    "mean_vs_production": 0.0013012760722901336,
+   "weeks_differed": 1,
    "weeks_better_than_production": 1,
    "cumulative": 0.004104771496404425,
    "max_drawdown": 0.0
@@ -18,7 +21,9 @@
     "week": "2026-09-21",
     "book_ret": 0.0041047714964045036,
     "alpha": -0.0025509878327144896,
-    "invested": 0.522
+    "invested": 0.522,
+    "spy_ret": 0.006655759329118993,
+    "differs": true
    }
   ]
  },
@@ -31,7 +36,10 @@
     "weeks": 1,
     "mean_alpha": -0.003852263905004623,
     "alpha_t": 0.0,
+    "mean_invested": 0.9803,
+    "mean_alpha_at_exposure": -0.003721145446220979,
     "mean_vs_production": 0.0,
+    "weeks_differed": 0,
     "weeks_better_than_production": 0,
     "mean_vs_random": 0.008250806669093596,
     "mean_pctile_vs_random": 0.705,
@@ -43,6 +51,7 @@
      "week": "2026-09-21",
      "book_ret": 0.00280349542411437,
      "alpha": -0.003852263905004623,
+     "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
       [
@@ -84,7 +93,10 @@
     "weeks": 1,
     "mean_alpha": -0.003852263905004623,
     "alpha_t": 0.0,
+    "mean_invested": 0.9803,
+    "mean_alpha_at_exposure": -0.003721145446220979,
     "mean_vs_production": 0.0,
+    "weeks_differed": 0,
     "weeks_better_than_production": 0,
     "mean_vs_random": 0.008250806669093596,
     "mean_pctile_vs_random": 0.705,
@@ -96,6 +108,7 @@
      "week": "2026-09-21",
      "book_ret": 0.00280349542411437,
      "alpha": -0.003852263905004623,
+     "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
       [
@@ -137,7 +150,10 @@
     "weeks": 1,
     "mean_alpha": 0.008218415407540411,
     "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": 0.008218415407540411,
     "mean_vs_production": 0.012070679312545034,
+    "weeks_differed": 1,
     "weeks_better_than_production": 1,
     "mean_vs_random": 0.020719365864524334,
     "mean_pctile_vs_random": 0.865,
@@ -149,6 +165,7 @@
      "week": "2026-09-21",
      "book_ret": 0.014874174736659404,
      "alpha": 0.008218415407540411,
+     "invested": 1.0,
      "pctile_vs_random": 0.865,
      "book": [
       [
@@ -190,7 +207,10 @@
     "weeks": 1,
     "mean_alpha": -0.007751221820802338,
     "alpha_t": 0.0,
+    "mean_invested": 0.9556,
+    "mean_alpha_at_exposure": -0.0074557061065894555,
     "mean_vs_production": -0.0038989579157977148,
+    "weeks_differed": 1,
     "weeks_better_than_production": 0,
     "mean_vs_random": 0.0043065488198131465,
     "mean_pctile_vs_random": 0.6,
@@ -202,6 +222,7 @@
      "week": "2026-09-21",
      "book_ret": -0.0010954624916833448,
      "alpha": -0.007751221820802338,
+     "invested": 0.9556,
      "pctile_vs_random": 0.6,
      "book": [
       [
@@ -244,7 +265,10 @@
     "weeks": 1,
     "mean_alpha": 0.00675280533716088,
     "alpha_t": 0.0,
+    "mean_invested": 0.9969,
+    "mean_alpha_at_exposure": 0.006773438191081149,
     "mean_vs_production": 0.010605069242165503,
+    "weeks_differed": 1,
     "weeks_better_than_production": 1,
     "mean_vs_random": 0.019138092095189768,
     "mean_pctile_vs_random": 0.83,
@@ -256,6 +280,7 @@
      "week": "2026-09-21",
      "book_ret": 0.013408564666279873,
      "alpha": 0.00675280533716088,
+     "invested": 0.9969,
      "pctile_vs_random": 0.83,
      "book": [
       [
@@ -297,7 +322,10 @@
     "weeks": 1,
     "mean_alpha": -0.03048694001312907,
     "alpha_t": 0.0,
+    "mean_invested": 0.9972,
+    "mean_alpha_at_exposure": -0.03046830388700754,
     "mean_vs_production": -0.02663467610812445,
+    "weeks_differed": 1,
     "weeks_better_than_production": 0,
     "mean_vs_random": -0.018084731438581355,
     "mean_pctile_vs_random": 0.14,
@@ -309,6 +337,7 @@
      "week": "2026-09-21",
      "book_ret": -0.023831180684010078,
      "alpha": -0.03048694001312907,
+     "invested": 0.9972,
      "pctile_vs_random": 0.14,
      "book": [
       [
@@ -351,7 +380,10 @@
     "weeks": 1,
     "mean_alpha": -0.030115339322824584,
     "alpha_t": 0.0,
+    "mean_invested": 0.9938,
+    "mean_alpha_at_exposure": -0.030074073614984046,
     "mean_vs_production": -0.026263075417819963,
+    "weeks_differed": 1,
     "weeks_better_than_production": 0,
     "mean_vs_random": -0.017773691835718305,
     "mean_pctile_vs_random": 0.145,
@@ -363,6 +395,7 @@
      "week": "2026-09-21",
      "book_ret": -0.02345957999370559,
      "alpha": -0.030115339322824584,
+     "invested": 0.9938,
      "pctile_vs_random": 0.145,
      "book": [
       [
@@ -404,7 +437,10 @@
     "weeks": 1,
     "mean_alpha": -0.003857049262247579,
     "alpha_t": 0.0,
+    "mean_invested": 0.9807,
+    "mean_alpha_at_exposure": -0.003728593107195583,
     "mean_vs_production": -4.785357242955909e-06,
+    "weeks_differed": 0,
     "weeks_better_than_production": 0,
     "mean_vs_random": 0.008246001781920257,
     "mean_pctile_vs_random": 0.705,
@@ -416,6 +452,7 @@
      "week": "2026-09-21",
      "book_ret": 0.002798710066871414,
      "alpha": -0.003857049262247579,
+     "invested": 0.9807,
      "pctile_vs_random": 0.705,
      "book": [
       [
@@ -457,7 +494,10 @@
     "weeks": 1,
     "mean_alpha": -0.0038577479966985335,
     "alpha_t": 0.0,
+    "mean_invested": 0.981,
+    "mean_alpha_at_exposure": -0.0037312885694452723,
     "mean_vs_production": -5.4840916939103215e-06,
+    "weeks_differed": 0,
     "weeks_better_than_production": 0,
     "mean_vs_random": 0.008244979275469091,
     "mean_pctile_vs_random": 0.705,
@@ -469,6 +509,7 @@
      "week": "2026-09-21",
      "book_ret": 0.0027980113324204596,
      "alpha": -0.0038577479966985335,
+     "invested": 0.981,
      "pctile_vs_random": 0.705,
      "book": [
       [
@@ -511,7 +552,10 @@
     "weeks": 1,
     "mean_alpha": -0.038415936191569286,
     "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": -0.038415936191569286,
     "mean_vs_production": -0.034563672286564665,
+    "weeks_differed": 1,
     "weeks_better_than_production": 0,
     "mean_vs_random": -0.026147131833231512,
     "mean_pctile_vs_random": 0.045,
@@ -523,6 +567,7 @@
      "week": "2026-09-21",
      "book_ret": -0.03176017686245029,
      "alpha": -0.038415936191569286,
+     "invested": 1.0,
      "pctile_vs_random": 0.045,
      "book": [
       [
@@ -564,7 +609,10 @@
     "weeks": 1,
     "mean_alpha": -0.019086089100330016,
     "alpha_t": 0.0,
+    "mean_invested": 0.9448,
+    "mean_alpha_at_exposure": -0.018718691185362644,
     "mean_vs_production": -0.01523382519532539,
+    "weeks_differed": 1,
     "weeks_better_than_production": 0,
     "mean_vs_random": -0.007371235038707507,
     "mean_pctile_vs_random": 0.385,
@@ -576,6 +624,7 @@
      "week": "2026-09-21",
      "book_ret": -0.01243032977121102,
      "alpha": -0.019086089100330016,
+     "invested": 0.9448,
      "pctile_vs_random": 0.385,
      "book": [
       [

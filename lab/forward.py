@@ -72,16 +72,29 @@ def _pct(x, digits=2):
     return "--" if x is None else f"{x * 100:+.{digits}f}%"
 
 
+def _names(book):
+    return {b["ticker"] for b in book} if isinstance(book, list) else set()
+
+
 def _summary(rows, prod_rows):
-    base = {r["week"]: r["book_ret"] for r in prod_rows}
-    diffs = [r["book_ret"] - base[r["week"]] for r in rows if r["week"] in base]
+    base = {r["week"]: r for r in prod_rows}
+    diffs = [r["book_ret"] - base[r["week"]]["book_ret"] for r in rows if r["week"] in base]
+    # "Better" counts only weeks whose names differ from production's: the same
+    # five with nudged weights (M-15 and M-0 in the first forward week) is a tie.
+    differed = [r for r in rows
+                if r["week"] in base and _names(r["book"]) != _names(base[r["week"]]["book"])]
     cum, dd = lab._curve([r["book_ret"] for r in rows])
     return {
         "weeks": len(rows),
         "mean_alpha": statistics.fmean(r["alpha"] for r in rows),
         "alpha_t": lab._tstat([r["alpha"] for r in rows]),
+        "mean_invested": statistics.fmean(r["invested"] for r in rows),
+        "mean_alpha_at_exposure": statistics.fmean(r["book_ret"] - r["invested"] * r["spy_ret"]
+                                                   for r in rows),
         "mean_vs_production": statistics.fmean(diffs) if diffs else None,
-        "weeks_better_than_production": sum(1 for d in diffs if d > 0),
+        "weeks_differed": len(differed),
+        "weeks_better_than_production": sum(1 for r in differed
+                                            if r["book_ret"] > base[r["week"]]["book_ret"]),
         "mean_vs_random": statistics.fmean(r["vs_random"] for r in rows),
         "mean_pctile_vs_random": statistics.fmean(r["pctile_vs_random"] for r in rows),
         "cumulative": cum, "max_drawdown": dd,
@@ -91,15 +104,21 @@ def _summary(rows, prod_rows):
 def build(weeks, results, generated):
     prod = results["production"]
     council = [{"week": r["week"], "book_ret": r["council_ret"], "alpha": r["council_alpha"],
-                "invested": r["council_invested"]} for r in prod]
+                "invested": r["council_invested"], "spy_ret": r["spy_ret"],
+                "differs": _names(r["council_book"]) != _names(r["book"])} for r in prod]
     base = {r["week"]: r["book_ret"] for r in prod}
     c_diffs = [c["book_ret"] - base[c["week"]] for c in council]
     c_cum, c_dd = lab._curve([c["book_ret"] for c in council])
     real = {"weeks": len(council),
             "mean_alpha": statistics.fmean(c["alpha"] for c in council),
             "alpha_t": lab._tstat([c["alpha"] for c in council]),
+            "mean_invested": statistics.fmean(c["invested"] for c in council),
+            "mean_alpha_at_exposure": statistics.fmean(c["book_ret"] - c["invested"] * c["spy_ret"]
+                                                       for c in council),
             "mean_vs_production": statistics.fmean(c_diffs),
-            "weeks_better_than_production": sum(1 for d in c_diffs if d > 0),
+            "weeks_differed": sum(1 for c in council if c["differs"]),
+            "weeks_better_than_production": sum(1 for c, d in zip(council, c_diffs)
+                                                if c["differs"] and d > 0),
             "cumulative": c_cum, "max_drawdown": c_dd}
     designs = {}
     for name, knobs, registered, source in REGISTRY:
@@ -110,6 +129,7 @@ def build(weeks, results, generated):
                          "registered": registered, "source": source,
                          "summary": _summary(rows, prod),
                          "weekly": [{"week": r["week"], "book_ret": r["book_ret"], "alpha": r["alpha"],
+                                     "invested": r["invested"],
                                      "pctile_vs_random": r["pctile_vs_random"],
                                      "book": [(b["ticker"], b["weight"]) for b in r["book"]],
                                      "earnings_skipped": r["earnings_skipped"]} for r in rows]}
@@ -126,18 +146,21 @@ def build(weeks, results, generated):
         f"Last run: {generated}. Forward weeks: {len(weeks)} "
         f"({', '.join(w[0] for w in weeks)}).",
         "",
-        "| Design | Source | Weeks | Alpha / wk | vs production | Weeks better | vs random | Cumulative | Max DD |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "| Design | Source | Weeks | Alpha / wk | At exposure | Invested | vs production | Better / differed "
+        "| vs random | Cumulative | Max DD |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
         f"| **Real Council** (official book) | engines + LLM layer | {real['weeks']} | "
-        f"{_pct(real['mean_alpha'])} | {_pct(real['mean_vs_production'])} | "
-        f"{real['weeks_better_than_production']}/{real['weeks']} | -- | {_pct(real['cumulative'], 1)} | "
+        f"{_pct(real['mean_alpha'])} | {_pct(real['mean_alpha_at_exposure'])} | {real['mean_invested']:.0%} | "
+        f"{_pct(real['mean_vs_production'])} | "
+        f"{real['weeks_better_than_production']}/{real['weeks_differed']} | -- | {_pct(real['cumulative'], 1)} | "
         f"{_pct(real['max_drawdown'], 1)} |",
     ]
     for name, d in designs.items():
         s = d["summary"]
         vs_prod = "--" if name == "production" else _pct(s["mean_vs_production"])
-        better = "--" if name == "production" else f"{s['weeks_better_than_production']}/{s['weeks']}"
-        lines.append(f"| {name} | {d['source']} | {s['weeks']} | {_pct(s['mean_alpha'])} | {vs_prod} | "
+        better = "--" if name == "production" else f"{s['weeks_better_than_production']}/{s['weeks_differed']}"
+        lines.append(f"| {name} | {d['source']} | {s['weeks']} | {_pct(s['mean_alpha'])} | "
+                     f"{_pct(s['mean_alpha_at_exposure'])} | {s['mean_invested']:.0%} | {vs_prod} | "
                      f"{better} | {_pct(s['mean_vs_random'])} ({s['mean_pctile_vs_random']:.0%}) | "
                      f"{_pct(s['cumulative'], 1)} | {_pct(s['max_drawdown'], 1)} |")
     names = list(designs)
@@ -159,6 +182,11 @@ def build(weeks, results, generated):
               "can and cannot say\"). Read this page for direction and for designs that break, not",
               "for proof. \"production\" is today's engine code replayed, so it follows every",
               "change to production; the Real Council row is what was actually booked.",
+              "",
+              "\"At exposure\" is the book's return less its invested share of SPY's: cash earns",
+              "zero, so a book half in cash is held to half of SPY's week. \"Better / differed\"",
+              "counts the weeks a design beat production out of the weeks its names differed",
+              "from production's; a week with the same names is a tie, not a loss.",
               ""]
     return "\n".join(lines), {"generated": generated, "weeks": [w[0] for w in weeks],
                               "real_council": {"summary": real, "weekly": council},
