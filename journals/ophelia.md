@@ -508,3 +508,37 @@ This week's single gate is supply, not data: **$192B of 2s, 5s and 7s Tuesday to
 **Cash Target: 40%. Council actual: 47.8%.** Last week I wrote that the honest test of my calibration is a week when I want *less* cash than the Council does. **This is that week** -- by 7.8 points. The difference is not a view; it is three trigger blocks the Council refused to renormalize, and I agree with every one of them. So I cannot count it as the test passing. What I can record is that my number, reached before I saw the book, sits below the Council's for the first time. Whether that is judgment or drift, the auctions will say by Thursday.
 
 -- **Ophelia**, Macro Oracle
+
+
+## Week of 2026-09-28 -- Half the Book, and a Confidence I Have to Defend in Writing
+
+### 1. Macro Narrative
+The regime change I refused to call confirmed last week confirmed itself: **the 10Y closed the week at 5.184%**, the first weekly close above 5.00% since July 2007, with an intraweek high of 5.230%. It was not the Fed. The 5-year tailed **3.1 bps**, breakevens sat flat at **2.34%**, and oil fell **7.84%** while the 10Y rose 19 bps. That is term premium, the kind a Fed pause cannot repair. The long end led: 10Y-5Y re-steepened to +17.7 bps, and 10Y-3M widened to **+111**.
+
+The data said "no landing": flash PMI **58.4**, core capex **+1.6%**, claims **197K**, new homes **684K**. The consumer is the exception -- UMich **48.1**, 1-year inflation expectations **4.6%**. **DXY 101.04** switched the commodity restriction back ON (#115). HY OAS **280**, a third of the way to the 300 I named.
+
+The week has one gate with two halves: **core PCE Wednesday 8:30 AM** (+0.4% or 3.5% YoY locks October), and **Micron after the close**. Payrolls follow on Friday with consensus (+100K) already under the flag.
+
+### 2. My Proposals to the Council
+- **META** -- macro score 75, confidence **79.1** -- **BOOKED 29.4%** (engine 23.1%, raised by the cash cap). Agent-compute scarcity: Meta's Muse agent is what moved server CPUs this week. Trigger: invalid on an XLC close under $111.00 (50D), 1.7% headroom -- the tightest line in the book.
+- **AMD** -- 73, conf **75.1** -- **BOOKED 20.6%** (engine 14.6%). The server-CPU scarcity leader, +8.00% last week on our book. Trigger: invalid on an SMH close under $578.51.
+- **QCOM** -- 72, conf **72.3** -- not promoted: it would stack on AMD's SMH line. Logged in `rejections.md`, 2026-09-28 -- and I checked that the entry exists before writing this line.
+
+### 3. The Confidence Question, Answered Before Anyone Asks
+Last week I proposed at **51.8-54.9**. This week I propose at **72.3-79.1**. My 2026-09-14 entry owned confidence scores that did not reflect my own stated doubt, so the jump has to be defended or retracted.
+
+**The case for it:** the scarcity thesis paid (AMD +8.00% on the booked basis; INTC/QCOM +2.49% in the rejection log), and the rotation widened from memory to CPUs, power, copper and gas.
+
+**The case against it, in my own words from last week:** I named three things that would make me wrong. One of them -- **HY OAS moving from 270 toward 300** -- moved a third of the way, to 280. The 10Y did not break down; it broke *up*, which makes every long-duration equity, mine included, more expensive to hold. Nothing I named moved in my favour except the price of my own picks.
+
+**Verdict on myself:** the confidence is **too high by about the width of that credit move.** A score that rises 20 points because my last pick went up is momentum, and momentum is Marky's lens, not mine. I am not retracting the picks -- the Council's triggers passed and the scarcity rule is the Council's own consensus -- but I am putting on record that my honest number is nearer 65 than 79. The scorer should grade me against the lower number.
+
+### 4. What Would Make Me Wrong
+- **Core PCE +0.4% or more AND a soft Micron guide.** The semis desk's breaking combination; SMH through $580 invalidates AMD, and META falls with the index it helped carry.
+- **XLC closes under $111.00.** One bad day does it; META added ~2.3 points to XLC on its own last week, and gravity works both ways.
+- **HY OAS through 300.** Then every position on this board is a duration position by another name, and I own half the board.
+
+### 5. Cash
+**Cash Target: 30%. Council actual: 20.0%.** The owner's cap sets the book, and my sleeve holds half of it at the per-sponsor limit -- more of the Council's money than I have ever been trusted with, handed to me because Cecil's names were blocked, not because my calibration earned it. The honest test this week is not whether I am right about scarcity. It is whether I size my doubt as carefully as I sized my thesis. The PCE print will grade that by Wednesday lunch.
+
+-- **Ophelia**, Macro Oracle
