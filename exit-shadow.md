@@ -47,6 +47,24 @@
 
 ## Entries
 
+### Week of 2026-09-28
+
+Book: AAPL 30.0% / META 29.4% / AMD 20.6% / cash 20.0%. **Entry prices = validated Monday 2026-09-28 opens** (tracker.py --open run ~11:35 ET by the post-open booking task; each price equals the 09:30 ET 5-minute bar open and sits inside the day's range so far; entry_price_source: open for all three; SPY $768.35 open). Opens sat just under Friday's closes (AAPL -0.21%, META -0.16%, AMD -0.91%) -- no gap to discount this week. First book since the log opened that is 100% CORE mega-cap tech/comm.
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| AAPL @ $340.37 (Marky) | **CORE** -- mega-cap, the deepest liquidity in the market | -5% = $323.35 | XLK close under $190.00 (bottom of the $190-$191.75 retest zone, wiki/tech.md; XLK $196.27 at booking per macro/facts.json) | Named catalyst: AAPL FQ4 print Oct 29 (wiki/earnings-surveillance.md); 6-week backstop Nov 9 | Trim 1/3 at +15% ($391.43); remainder trails -15% from HWM |
+| META @ $750.42 (Ophelia) | **CORE** -- mega-cap comm services, broad sponsorship | -5% = $712.90 | XLC close under $111.00 (the 50D, wiki/communication-services.md; wiki/synthesis.md Section 5 XLC row; XLC $112.96 at booking) | Named catalyst: META Q3 print Oct 28; 6-week backstop Nov 9 | Trim 1/3 at +15% ($862.99); remainder trails -15% from HWM |
+| AMD @ $624.90 (Ophelia) | **CORE** -- mega-cap semis, broad sponsorship; carries last week's +8.00% run into the MU gate | -5% = $593.65 | SMH close under $578.51 (failed-breakout line, wiki/semiconductors.md; wiki/synthesis.md Section 5 SMH row; SMH $606.56 at booking) | Named catalysts: core PCE Wed Sep 30 8:30 AM + MU FQ4 Wed Sep 30 AMC (the week's single gate, wiki/synthesis.md Section 4); AMD Q3 print Nov 3; 6-week backstop Nov 9 | Trim 1/3 at +15% ($718.63); remainder trails -15% from HWM |
+
+Note: ALL and HIG (Cecil) were TRIGGER-BLOCKED at booking (XLF $54.84 < 50D $57.08; HIG's curve line ruled mis-specified and replaced with the shared XLF-50D line) and VICI was blocked as a promotion (XLRE trapdoor); TMO was declined as a chase. No exit template attaches; their counterfactuals live in shadow-book.md / rejections.md.
+
+**Template stress note (observed at booking, ~11:36 ET, NOT a score):** day one already tests two of the three templates. META traded to $717.65 (-4.37% from entry, $4.75 above its $712.90 stop) and AMD to $596.07 (-4.61%, $2.42 above its $593.65 stop) inside the first two hours -- both already deeper than any CORE drawdown in the 4-cycle summary block except HIG's week of 09-21. XLC printed $111.14 intraday against META's $111.00 close line (0.13% headroom) and SMH $591.92 vs AMD's $578.51 line (2.3%). AAPL is flat (low -0.31%). Correlation warning for the calibration record: all three thesis lines are tech-leadership lines and moved together on day one; a single leadership break can fire all three legs in the same session. Scoring at the 2026-10-05 Monday close will tell whether -5% CORE survives a same-day -4.4/-4.6% open-to-low.
+
+outcome: to be computed
+
+---
+
 ### Week of 2026-09-21
 
 Book: XOM 19.7% / AMD 16.8% / HIG 15.7% / cash 47.8%. **Entry prices = validated Monday 2026-09-21 opens** (each bar checked low <= open <= high before the tracker was run at ~10:36 ET; SPY $766.25). First week since the log opened that the Council and the Arena share the same entry basis. Note AMD gapped **+4.3%** at the open ($583.94 vs Friday's $559.82 close), so its levels below sit well above the Friday chart.
