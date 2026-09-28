@@ -41,6 +41,8 @@
 
 **Promotion recommendation: NOT YET -- stay in shadow.** The sample is 11 position-weeks with exactly one firing, drawn almost entirely from a book carrying 60-73% cash, and it is CORE-dominated 10:1. The one number with real support (-8% SPEC) has a single observation. The honest reading is that the template has not yet been tested by a losing week deep enough to matter -- the book's worst pick since the log opened was cut by the one stop that fired. Continue shadow logging; revisit at 8 scored cycles or after the first week a CORE position closes below -5%, whichever comes first.
 
+**REVISIT TRIGGER MET (2026-09-28):** HIG (week of 2026-09-21) closed -5.66% -- the first CORE position to close below -5% -- and its -5% stop fired Friday and would have saved 0.66pp. Scored cycles now 6 (17 CORE / 1 SPEC position-weeks, adding the 4 CORE names of 09-14 and the 3 of 09-21; 2 stops fired -- TER SPEC and HIG CORE -- both helped, 0 hurt). The full re-calibration of this block is owed; not done in this run (time-boxed ahead of the Arena lock). Flagged for the next Council session.
+
 ---
 
 ## Entries
@@ -59,7 +61,11 @@ Note: ALL (Cecil) and DE (Marky) were TRIGGER-BLOCKED at booking -- their 2026-0
 
 **Template stress note:** AMD's stop ($554.74) sits ABOVE SMH's $560.28 invalidation in price terms for AMD itself -- the gap means the stop leg may fire before the thesis leg for the first time in this log. HIG's -3.81% intraweek low last week (closest CORE call on record) is the reference for whether -5% is still dead-zone.
 
-outcome: to be computed (score Monday 2026-09-28 against date-pinned daily bars 2026-09-21 -> 2026-09-25).
+outcome (scored 2026-09-28 against date-pinned daily OHLC 2026-09-21 -> 2026-09-25): **1/3 stops fired -- THE FIRST CORE STOP IN THE LOG.**
+- **HIG: CORE -5% STOP FIRED Fri 9/25** -- Thu low $125.52 held $125.11 by 41 cents, Fri opened $125.46 and traded to $124.09 (-5.77% from entry). Would-have exit $125.11 = -5.00% vs actual -5.66% (Friday close $124.23): **the stop SAVED 0.66pp**. HIG made a lower low every day of the week (-0.74 / -2.35 / -3.96 / -4.69 / -5.77%); last week's -3.81% 'closest CORE call' was the warning shot. Thesis leg (10Y-3M inversion) did NOT fire -- curve +111bp at Friday close (macro/facts.json) -- so the stop caught a loss the thesis line could not see, the scar Cecil was flagged for.
+- **XOM: stop untouched** (deepest -3.17% Tue low $155.85). **THESIS-INVALIDATION LEG FIRED** -- XLE closed $62.04 < $63.46 (failed breakout #2, wiki/energy.md 2026-09-25). XOM finished -0.23% (Monday-open basis); the line fired on a near-flat week.
+- **AMD: stop untouched** -- the stress note's fear did not materialise; the Monday low $582.27 (-0.29%) was the week's deepest print, and AMD closed every later session above entry. Best intraweek high +9.43% ($639.00, Fri) -- **no trim** (+15% = $671.53). SMH low close $596.03, nowhere near $560.28.
+- Trims: 0/3. Time stops: none due. Actual book +0.41% (Tracker); with HIG's shadow stop the weighted return would have been +0.51% (+0.10pp).
 
 ---
 
