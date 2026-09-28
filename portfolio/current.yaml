@@ -1,0 +1,61 @@
+week: '2026-09-28'
+status: open
+positions:
+- ticker: AAPL
+  weight: 0.3
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 6.6%. (confidence:
+    77.8)'
+  entry_price: 340.3699951171875
+  entry_date: '2026-09-28'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: META
+  weight: 0.294
+  sponsor: Ophelia
+  thesis: 'Aligned with Technology sector rotation. Macro score: 75. (confidence:
+    79.1)'
+  entry_price: 750.4249877929688
+  entry_date: '2026-09-28'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AMD
+  weight: 0.20600000000000002
+  sponsor: Ophelia
+  thesis: 'Benefiting from the rangebound market regime; the server-CPU scarcity leader
+    (wiki/synthesis.md Section 3 "Server CPUs"). Score: 73. (confidence: 75.1)'
+  entry_price: 624.89501953125
+  entry_date: '2026-09-28'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 768.3499755859375
+spy_entry_source: open
+vix_at_entry: 14.87
+fed_stance: 'Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0, first
+  hike since Jul 2023); SEP dots: 16 of 18 participants see another 2026 hike; CME
+  odds of an Oct 28 hike ~73-76% after Governor Barr''s "further policy adjustments
+  are likely to be needed" (macro/facts.json policy.fed_stance = "Hike"; wiki/synthesis.md
+  Section 3).'
+total_weight: 0.8
+cash_weight: 0.19999999999999996
