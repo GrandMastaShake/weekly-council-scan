@@ -699,3 +699,43 @@ Two concessions, and the DE one stings because DE was *right*.
 - [x] Cash rule -- the book is 47.8% cash. The song got one note again. Still not a solo.
 
 -- **Marky**, The Technician
+
+## WEEK OF 2026-09-28
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $771.35, **+1.27% W/W** | RSP **-0.56%**. The gap is -1.82 pts in a week, -5.64 in a month. Two sectors carried the index |
+| Breadth | **26.5%** of the S&P above its 50D (54.2% a month ago); NH/NL 3/31 | Live gauge, below the 40% red trigger. First real read since July |
+| VIX | **14.87**, three intraweek breaches of 16.50, zero closes | Put/call 0.52. Nobody is paying for protection into a 5.18% bond |
+| 10Y Yield | **5.184%**, high 5.230% | First weekly close above 5.00% since 2007. My line is 5.23% |
+| SMH / XLK | $606.56 (retest held $588.92) / $196.27 (1% under the June high) | The only two breakouts that held. Lighter volume on SMH Friday (-27%) |
+| XLE | $62.04 | **Failed breakout #2** -- XOM's invalidation line fired Friday |
+
+**Verdict:** A two-sector tape on a five-percent bond. Leadership is real; participation is not.
+
+### Last Week, Scored
+- **XOM** booked 19.7% -> **-0.23%**. The stop never came near (-3.17% worst). But XLE closed $62.04 under the $63.46 line I wrote, so the thesis leg **fired** on a near-flat week. That line was right to exist and right to fire.
+- **DE** (blocked) went **+0.84%**; the block cost 0.84% on that sleeve. **ALL** (blocked) went -6.28%. The whole shadow book lost 1.41pp to ours. Two weeks now: the rule cost a little on my winner and saved a lot on the loser. I argued last week to take the argument about DE's line to the data. The data answered, and it did not side with me.
+
+### Picks (Booked)
+1. **AAPL** -- 77.8 -- **BOOKED 30.0%** (raised from the engine's 18.0% by the cash cap, stopped at the per-name max). 52-week closing high $341.07, RSI 65.7, 4W +8.4%. Trigger: invalid on an XLK close under $190.00 (wiki/tech.md bull-trap line), 3.2% headroom.
+2. **TEL** -- 69.0 -- **not promoted.** Clean chart (RSI 62.6, above both MAs), but it would stack on AAPL's XLK line and it is in no wiki -- a name the engine likes and nobody on the Council has read.
+3. **TMO** -- 80.3 -- **declined.** My highest conviction, and the healthcare desk had already named it: "don't chase RSI-70s tools (TMO)."
+
+### The Concession (owned)
+TMO. Last week I owned proposing PSX at RSI 83 one week after the Council dropped VLO at 80.4, and I wrote that re-proposing a name for a reason that now applies harder "is not conviction; it is recency." This week the engine handed me TMO at RSI 72.5, a new high, above its mean target -- and the desk had written the ruling on that ticker by name before I got here. I concede it before it becomes a pattern, which is the only improvement over last week I can claim.
+
+The other thing to own: I have 30% of the book in one name, the largest single position I have ever carried, and I did not earn that size -- the cash cap gave it to me when Cecil's three names were blocked. A position sized by arithmetic is still a position. If XLK loses $190 on a hot PCE, that 30% is mine.
+
+### Lesson Learned
+**Size you inherit is still size you own.** The cap raised AAPL from 18% to 30%. Its trigger did not move and its chart did not get better; only the consequence of being wrong got bigger. The discipline for inherited size is the same as for chosen size: know the line, know the headroom (3.2% to $190), and know the day it can break (Wednesday 8:30 AM, then again after Micron).
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **101.04** and 10Y 5.184%. **Both lit** for the first time. The rule says respect the dollar-rates squeeze; the book is long three dollar-earners.
+- [x] "Good news = sell" cycle peaks -- SNX beat and fell -9.9%, SFIX -21.6%, GIS beat and fell -7.1%. Still punishing beats.
+- [x] 3+ canaries/regime flags -- 2 raised + NFP at risk; breadth red on live data; XLP correlation flipped. Answered with 80% invested, by rule.
+- [x] VIX < 16 + bad breadth -- VIX 14.87, 26.5% above the 50D. The cheapest insurance on the worst breadth of the year.
+- [ ] Cash rule -- the book is 20.0% cash. For the first time the song gets the full band whether I call for it or not.
+
+-- **Marky**, The Technician
