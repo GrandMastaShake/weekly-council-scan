@@ -55,5 +55,19 @@
    "C": 5
   },
   "forced": false
+ },
+ {
+  "session": "2026-09-29",
+  "run_utc": "2026-09-29T02:35:48Z",
+  "run_et": "2026-09-28 22:35",
+  "closes_through": "2026-09-28",
+  "universe": 1857,
+  "screened": 1779,
+  "hits": {
+   "A": 5,
+   "B": 49,
+   "C": 10
+  },
+  "forced": false
  }
 ]
