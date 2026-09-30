@@ -2544,3 +2544,78 @@ a point a quarter on random stocks, and nothing measurable on the members'
 picks. For his own positions the rule of thumb has evidence behind it: sell
 into a level where most of the overhead volume sits, and hold through a
 level with little. For the Council, holding the quarter still wins.
+
+## Pass 19 -- Cecil's value trap (registered before any run)
+
+The live pattern behind it (2026-09-29): ALL or HIG sat in five of the six
+official books from 08-17 to 09-21, while ALL fell 12.9% and HIG 10.0%
+from the 08-14 close to the 09-25 close (SPY -0.6%; the weekly panel). On
+09-21 and 09-28 the Council's
+trigger check blocked his names on lines that had already fired (XLF under
+its 50-day average, XLRE under a set level), and on 09-28 it blocked all
+three, so he had no weight in the book. His cheap-and-steady screen keeps
+landing on P&C insurers at peak earnings, and the Council removes them after
+the fact. The question: would a mechanical rule inside his engine do that job
+better? Skip names already under their sell line, and stop stacking one
+sector.
+
+`pass19_cecil_trap.py` captures his scored table each week as Pass 12 does
+(the engine's legs, point-in-time P/E) and re-ranks it offline. Each rule
+removes names and gives the slot to the next-ranked name that passes; "as is"
+must reproduce Pass 12's as-is five.
+
+| Variant | Rule |
+|---|---|
+| as is | Pass 12's as-is Cecil: the top five of the tradeable pool |
+| own 50-day gate | skip a name whose last close before the Monday is under the average of its last 50 daily closes |
+| sector 50-day gate | skip a name whose sector's SPDR ETF (XLK, XLC, XLY, XLP, XLV, XLF, XLI, XLE, XLB, XLU, XLRE) last closed under its own 50-day average: the kind of line the Council's triggers used |
+| one per sector | at most one name per GICS sector |
+| own gate + one per sector | both |
+
+Sectors are GICS from the S&P table, else the Council CSV, else the engine's
+bucket; a name whose only label is the folded "Consumer" bucket or "Macro
+Assets" has no ETF, so the sector gate never removes it. Closes are the
+lab's raw daily closes (split-adjusted), as known by the Monday; a name or
+ETF with fewer than 50 closes is not gated. The clean list (the S&P 500 as
+of 2024-09) decides, as in Passes 11 and 12. The 111 and the 277 (the
+engines' frozen list, nearest to Monday's 274, where ALL, HIG and VICI come
+from) are reported. 96 history weeks; the Council weeks are reported and
+decide nothing.
+
+**Diagnostics** (reported, no verdicts):
+1. *The trap.* The share of his as-is name-weeks under their own line, and
+   under their sector's; and how those names do against the rest of his
+   five, in excess of the pool's average: next week (clipped at +/-20%) and
+   over four weeks (Monday's open to the fourth Friday's close, clipped at
+   +/-40%, Newey-West t with 3 lags for the overlap).
+2. *Stacking.* The share of weeks his five holds two or more names in one
+   sector.
+3. *Block or replace.* Three chairs (Ophelia's engine five, Cecil's,
+   Marky's channel five; a third each) with the names the sector gate
+   removes (a) dropped, his remaining names keeping his third and the other
+   two chairs taking the book when none remain, which is roughly what the
+   Council's trigger check does now, against (b) replaced by his next names.
+
+**Predictions.**
+1. His five sits under its own line in a minority of name-weeks, 20% to 35%
+   (the safety leg rewards a shallow drawdown).
+2. At one week the names under the line do no worse than the rest (the
+   lab's short-horizon reversal: the members' losers recover more than
+   random ones, Passes 13 and 15), so neither gate helps: paired within
+   +/-0.1%/wk, |t| under 1.5. Over four weeks the names under the line
+   trail, which a weekly verdict does not reward.
+3. One per sector barely moves him (within +/-0.05%/wk) and trims his
+   weekly SD a little.
+4. Nothing passes.
+5. Replace beats block by a little (a fuller team book), under t 2.
+
+**What counts** (history, the clean list): a variant *helps* if its paired
+clipped edge over as is is positive with t >= 2 and both halves positive
+(Pass 12's rule), and replace *beats* block on the same rule: five tests,
+about one in ten that one passes by luck. A variant that helps goes on the
+forward record first, as Cecil-solo plus the rule; a change to his engine
+goes through the freeze with the owner's yes. If nothing helps, the trigger
+check stays where it is, in the Council's hands after the engines, and
+diagnostic 1 says whether the insurer streak was a trap or a bad stretch.
+
+    python lab/pass19_cecil_trap.py
