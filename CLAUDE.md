@@ -10,10 +10,12 @@ Windows. The Council's Monday scheduling is external (Kimi's cron), not GitHub
 Actions. The workflows are the manual backfill (2026-08-25), CI, the daily
 observation of one closed session into `data/daily/` (21:45 UTC weekdays),
 and the owner's screen, the Butterfly Net (`screen/daily_screen.py`), run on
-weekday evenings after the close for the next session (23:17 UTC, retry
-01:43 UTC) and committed to `screen/reports/` with a run log in `runs.json`
-(2026-09-23, evenings since 2026-09-24; see `screen/README.md`). It refuses
-to run while the US session is open.
+weekday evenings after the close for the next session and committed to
+`screen/reports/` with a run log in `runs.json` (2026-09-23, evenings since
+2026-09-24; see `screen/README.md`). Since 2026-09-30 the owner's scheduled
+task `crew-9-butterfly-net` dispatches it at about 5:15 PM ET; GitHub's own
+schedules (23:17 UTC, retry 01:43 UTC) start hours late and are the backstop.
+It refuses to run while the US session is open.
 
 **ASCII in anything new, with one exception: human-facing markdown.** The
 README may use symbols; `scripts/render_heatmap_dashboard.py` emits them. Data

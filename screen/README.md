@@ -11,8 +11,12 @@ names are excluded; biotech is flagged.
 ## When it runs, and what a report means
 
 - `.github/workflows/daily-screen.yml` casts the net on weekday evenings
-  after the US close, for the next session: 7:17 PM ET with a retry at
-  9:43 PM (an hour earlier in winter). Friday evening's report is Monday's.
+  after the US close, for the next session. Since 2026-09-30 a routine on
+  the owner's machine (scheduled task ⑨, `crew-9-butterfly-net`) dispatches
+  it at about 5:15 PM ET, because GitHub starts its own schedules hours late
+  (the 7:17 PM run of 09-29 started at 10:09 PM). The GitHub schedules, 7:17
+  PM ET with a retry at 9:43 PM (an hour earlier in winter), stay as the
+  backstop when that machine is off. Friday evening's report is Monday's.
 - A report dated D, `reports/screen_D.csv` and `.html`, is the list for the
   session of D, built on closes through the session before it. Each report
   says so in its first line.
