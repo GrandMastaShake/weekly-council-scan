@@ -131,6 +131,16 @@ CASH_FLOOR_DEFAULT = 0.15
 # the whole week in cash.
 CASH_CAP_DEFAULT = 0.20
 HAWKISH_STANCES = {"hawkish", "tightening"}
+# facts.json records the Fed's last move ("Hold", "Hike", "Cut"), not a stance
+# word, so a move reads as the stance it implies. Until 2026-09-29 nothing
+# mapped "Hike", and the floor stayed off after the first hike since 2023.
+STANCE_OF_MOVE = {
+    "hike": "tightening", "hikes": "tightening", "hiked": "tightening",
+    "raise": "tightening", "raised": "tightening",
+    "cut": "easing", "cuts": "easing",
+    "hold": "neutral", "holds": "neutral", "pause": "neutral",
+}
+FACTS_MAX_AGE_DAYS = 8  # the truth gate's own limit for facts.json
 
 
 def pe_fabrication_reason(stock: Dict[str, Any]) -> Optional[str]:
@@ -253,15 +263,49 @@ def count_unresolved_ties(proposal: Dict[str, Any]) -> int:
     return int(proposal.get("tied_at_top", 0) or 0)
 
 
-def load_macro_facts() -> Dict[str, Any]:
-    """Read the canonical macro fact table truth_gate/macro/facts.json."""
-    path = os.path.join(os.path.dirname(SCRIPT_DIR), "truth_gate", "macro", "facts.json")
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except (OSError, json.JSONDecodeError) as exc:
-        print(f"[cash-floor] facts.json unreadable ({exc}); using market_conditions fallback")
+def load_macro_facts(scan_date: Optional[str] = None, root: Optional[str] = None) -> Dict[str, Any]:
+    """Read the canonical macro fact table: the newer of the Monday download
+    (truth_gate/macro/facts.json) and a clone's own macro/facts.json.
+
+    The Monday truth gate checks whatever copy it downloads, and this read a
+    fixed path; nothing made them the same file. On 2026-09-21 and 09-28 the
+    gate passed a fresh table while the floor read the 09-12 one: July's
+    "Hold" through September's hike. Every run now prints the table's date and
+    warns past the gate's own 8-day limit."""
+    root = root or os.path.dirname(SCRIPT_DIR)
+    facts: Dict[str, Any] = {}
+    used = ""
+    for rel in ("truth_gate/macro/facts.json", "macro/facts.json"):
+        path = os.path.join(root, *rel.split("/"))
+        if not os.path.isfile(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                doc = json.load(f)
+        except (OSError, json.JSONDecodeError) as exc:
+            print(f"[cash-floor] {rel} unreadable ({exc})")
+            continue
+        if isinstance(doc, dict) and (not used or str(doc.get("generated", "")) > str(facts.get("generated", ""))):
+            facts, used = doc, rel
+    if not used:
+        print("[cash-floor] facts.json not found; using market_conditions fallback")
         return {}
+    generated = str(facts.get("generated") or "")
+    note = f"[cash-floor] read {used}, generated {generated or 'undated'}"
+    stale = not generated
+    if scan_date and generated:
+        try:
+            age = (datetime.strptime(str(scan_date)[:10], "%Y-%m-%d")
+                   - datetime.strptime(generated[:10], "%Y-%m-%d")).days
+            note += f", {age} days before the scan"
+            stale = age > FACTS_MAX_AGE_DAYS
+        except ValueError:
+            stale = True
+    if stale:
+        note += (f" -- WARNING: undated or past the truth gate's {FACTS_MAX_AGE_DAYS}-day limit, so the floor"
+                 " may read an old Fed stance. Download the repo's macro/facts.json to truth_gate/macro/ (STEP 0c).")
+    print(note)
+    return facts
 
 
 def _fact_value(facts: Dict[str, Any], *keys: str) -> Any:
@@ -305,17 +349,20 @@ def canary_raised(facts: Dict[str, Any]) -> bool:
 
 def macro_floor_trigger(facts: Dict[str, Any], market_conditions: Dict[str, Any]) -> Optional[str]:
     """Return the reason the cash floor fires, else None. Sources:
-    canary flag, or fed stance Hawkish/Tightening per facts.json
-    (policy.fed_stance.value), with market_conditions fed_stance as fallback."""
+    canary flag, or fed stance Hawkish/Tightening (or a move that implies it,
+    such as Hike) per facts.json (policy.fed_stance.value), with
+    market_conditions fed_stance as fallback."""
     if canary_raised(facts):
         return "canary flag raised (truth_gate/macro/facts.json)"
-    stance = _stance_word(_fact_value(facts, "policy", "fed_stance"))
+    word = _stance_word(_fact_value(facts, "policy", "fed_stance"))
     source = "facts.json policy.fed_stance"
-    if not stance:
-        stance = _stance_word(market_conditions.get("fed_stance"))
+    if not word:
+        word = _stance_word(market_conditions.get("fed_stance"))
         source = "market_conditions fed_stance"
+    stance = STANCE_OF_MOVE.get(word, word)
     if stance in HAWKISH_STANCES:
-        return f"fed stance {stance!r} ({source})"
+        implied = "" if stance == word else f" = {stance}"
+        return f"fed stance {word!r}{implied} ({source})"
     return None
 
 
@@ -717,10 +764,10 @@ def main() -> None:
             } for t in leaked])
 
     # Gate 3 (T1): cash floor. When macro is risk-off (canary flag raised, or
-    # fed stance Hawkish/Tightening per truth_gate/macro/facts.json), scale all
-    # weights by (1 - floor); the residual books as cash automatically --
-    # tracker.py computes cash_weight = 1 - sum(weights).
-    macro_facts = load_macro_facts()
+    # fed stance Hawkish/Tightening or a Hike per truth_gate/macro/facts.json),
+    # scale all weights by (1 - floor); the residual books as cash
+    # automatically -- tracker.py computes cash_weight = 1 - sum(weights).
+    macro_facts = load_macro_facts(date)
     floor_note = apply_cash_floor(
         consensus_result, macro_facts, market_data.get("market_conditions", {})
     )

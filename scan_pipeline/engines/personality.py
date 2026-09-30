@@ -63,6 +63,11 @@ class Journal:
     and never read by any scoring path -- state that looked like evolving
     agent memory and was not. The prose journals in journals/*.md are the real
     learning artifact, and STEP 1a of the Monday Council now loads them.
+    Two writers survived until 2026-09-29: from_dict still passed beliefs=,
+    and update_agent_personality still appended a canned "lesson" to
+    journal.beliefs. Any week that earned a lesson raised AttributeError, and
+    run_scan then lost every member's journal update and the report's
+    performance section. Both are gone, with the lesson generator.
 
     What remains is genuine: bigWins/bigLosses are the rolling last five
     realized outcomes, and lastBigWin/lastBigLoss are surfaced in the report
@@ -113,7 +118,6 @@ class AIPersonality:
         journal = Journal(
             bigWins=[WeeklyResult(**w) for w in journal_d.get("bigWins", [])],
             bigLosses=[WeeklyResult(**w) for w in journal_d.get("bigLosses", [])],
-            beliefs=journal_d.get("beliefs", []),
             lastBigWin=WeeklyResult(**journal_d["lastBigWin"]) if journal_d.get("lastBigWin") else None,
             lastBigLoss=WeeklyResult(**journal_d["lastBigLoss"]) if journal_d.get("lastBigLoss") else None,
         )
@@ -515,12 +519,6 @@ def update_agent_personality(agent: AIPersonality, week_result: PerformanceRepor
         updated.journal.bigLosses = (updated.journal.bigLosses + [loss])[-5:]
         updated.journal.lastBigLoss = updated.journal.bigLosses[-1]
 
-    lesson = generate_lesson(updated, week_result, agent_name)
-    if lesson and lesson not in updated.journal.beliefs:
-        updated.journal.beliefs.append(lesson)
-        if len(updated.journal.beliefs) > 5:
-            updated.journal.beliefs.pop(0)
-
     if updated.evolution:
         updated.evolution.nextWeekPriority = generate_next_week_focus(updated, week_result, agent_name)
         updated.evolution.recentAdjustments.append(
@@ -530,28 +528,6 @@ def update_agent_personality(agent: AIPersonality, week_result: PerformanceRepor
             updated.evolution.recentAdjustments.pop(0)
 
     return updated
-
-
-def generate_lesson(agent: AIPersonality, report: PerformanceReport, agent_name: str) -> str:
-    perf = report.agentContribution.get(agent_name)
-    if not perf:
-        return ""
-    was_overconfident = (perf.confidence / 100) > perf.accuracy
-    was_accurate = perf.accuracy > 0.66
-
-    if was_accurate and perf.contribution > 0.02:
-        if agent.archetype == "Fundamentalist":
-            return "See? Patience pays. The roots ran deep and the fruit was sweet."
-        elif agent.archetype == "Technician":
-            return "The chart painted a masterpiece and I signed it! Momentum is king!"
-        else:
-            return "The winds blew exactly as foretold. We sailed safely while others capsized."
-    elif not was_accurate and perf.contribution < -0.02:
-        if was_overconfident:
-            return "I was blinded by my own brilliance. Hubris is the killer of returns."
-        else:
-            return "The market is irrational longer than I can remain solvent. I must adapt."
-    return ""
 
 
 def generate_next_week_focus(agent: AIPersonality, report: PerformanceReport, agent_name: str) -> str:
