@@ -1,6 +1,6 @@
 # Scorecard: every test, every member
 
-As of 2026-09-23, eighteen passes and five side checks (`lab/README.md` has each
+As of 2026-09-29, nineteen passes and five side checks (`lab/README.md` has each
 one's registration, rule and result; `lab/results/` the numbers). This page
 is the matrix the owner asked for: what was tested, and how each Council
 member did in it.
@@ -46,6 +46,7 @@ whole quarter.
 | Pass 16, exits on each stock's own levels | as of 2024-09; the screen on its list | resistance vs 10/20/30 +0.13; the plan +0.21 | **resistance vs 10/20/30 +1.00 (t 2.84)**; support stop +1.29 | **resistance vs 10/20/30 +0.67 (t 2.71)**; **support stop -1.60 (t -2.46)**; MACD exit -2.27 (t -1.99) | union: **resistance vs 10/20/30 +0.61 (t 3.25)**; screen: support stop +1.23 (t 1.90, both halves); the owner's plan trails his simpler set by 0.1-0.4; no ladder beats holding the quarter |
 | Pass 17, a fourth chair: the Insider (SEC Form 4 open-market buys by officers and directors) | as of 2024-09; the screen's list | its buys correlate **-0.27** with her edges | its buys correlate **+0.34** with his: insiders buy cheap and falling, Cecil by other means | ~0 | no, five times: clusters +0.30 (1.33) and buys +0.13 on the clean list; **clusters on small caps +0.61 (t 1.72, both halves)**; buys -0.16; four chairs minus three -0.05; its edge does not keep over a quarter. Side result, not registered: **three chairs (a third each, Cecil with a P/E) +0.34%/wk, t 2.51, both halves, 58 of 96 weeks** |
 | Pass 18, overhead supply at each level (per quarter) | as of 2024-09; the screen's list | | | | **pass, twice: supply at a level predicts the stall.** After a first touch, the rest of the quarter vs SPY: light levels +0.77%, heavy -0.80% (**t -3.38**, 25,633 touches); small/mid +2.20% vs -0.15% (**t -3.78**). As a selling rule: no, fifteen times; selling each level's supply share beats equal thirds by 0.13-0.35 on random stocks, nothing measurable on the picks; no ladder beats holding |
+| Pass 19, Cecil's value trap (50-day gates, one name per sector) | as of 2024-09; the 111 and the 277 reported | | no rule helps: own 50-day gate -0.18 (t -1.21); sector-ETF gate +0.01; **one per sector -0.25 (t -2.07)**; both -0.31. His names under a 50-day line do no worse than the rest of his five, next week or over four; he stacks a sector in 97% of weeks, and that is where his edge is | | three chairs +0.32 (2.33), the same picks as the union; blocking his flagged names or replacing them gives the same book (+0.00) |
 
 ## 2. On the Council's nine weeks (seen)
 
@@ -112,7 +113,11 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   legs resist tuning and are right as designed. If his picks are sold
   early, sell them at resistance: a third 1% under each of the nearest
   three swing highs beat the 10/20/30 ladder by 1.00% a quarter (t 2.84,
-  Pass 16), though holding the quarter beat both. **The agent** was the better of the two
+  Pass 16), though holding the quarter beat both. He stacks one cheap sector nearly every
+  week, and that is his edge: one name per sector costs him 0.25%/wk
+  (t -2.07), and his names under their 50-day line do no worse than the
+  rest, so a mechanical gate would not have caught the insurer slide
+  early (Pass 19). Diversify him through the team, not inside his five. **The agent** was the better of the two
   LLM members on the nine weeks (+0.41%/wk, 57th percentile), which is
   nothing yet.
 - **Marky.** The channel pullback (v3) is the only design that beat random

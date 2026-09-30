@@ -2619,3 +2619,88 @@ check stays where it is, in the Council's hands after the engines, and
 diagnostic 1 says whether the insurer streak was a trap or a bad stretch.
 
     python lab/pass19_cecil_trap.py
+
+## Pass 19 results -- no trap to catch, and his stacking is his edge
+
+Run after the registration (be5e232) and the code (44d3203). The first full
+run crashed before printing anything: in three weeks all eleven sector ETFs
+sat under their 50-day lines, the sector gate removed every name, and the
+scorer skips an empty book. The registration did not say what an empty book
+is; it is scored as cash (aec3abb). `results/pass19_cecil_trap.json`. "As is"
+reproduces Pass 12's five in all 96 weeks on the clean list and in 94 on the
+111 (one week's fifth name, HON for PGR, and one week's order; the EPS cache
+was refreshed on 09-28, after Pass 12 ran). History, 96 weeks, five names,
+clipped edge over random, with the paired return difference beside it:
+
+| Variant | clean list: edge (t) | paired vs as is (t) | same five | paired returns (t) | the 111: paired (t) | the 277: paired (t) |
+|---|---|---|---|---|---|---|
+| as is | +0.23% (+1.23) | | | | edge -0.01% | edge -0.09% |
+| own 50-day gate | +0.05% (+0.27) | -0.18% (-1.21) | 14% | -0.20% (-1.41) | -0.11% (-0.67) | -0.09% (-0.57) |
+| sector 50-day gate | +0.24% (+1.01) | +0.01% (+0.06) | 26% | -0.11% (-0.62) | +0.01% (+0.05) | +0.16% (+0.86) |
+| one per sector | -0.03% (-0.15) | **-0.25% (-2.07)** | 3% | **-0.30% (-2.55)** | -0.06% (-1.01) | +0.05% (+0.46) |
+| own gate + one per sector | -0.08% (-0.46) | -0.31% (-1.87) | 0% | **-0.35% (-2.13)** | -0.15% (-1.03) | +0.15% (+0.91) |
+| three chairs, as is | +0.32% (+2.33) | | | | edge +0.19% | edge +0.36% |
+| three chairs, block | +0.32% (+2.27) | +0.00% (+0.05) | 26% | +0.02% (+0.48) | +0.09% (+1.09) | +0.00% (+0.04) |
+| three chairs, replace (vs block) | +0.32% (+2.24) | +0.00% (+0.02) | 29% | -0.02% (-0.37) | -0.11% (-1.85) | +0.06% (+0.98) |
+
+**Registered verdicts: no rule helps, and replace does not beat block.**
+
+**There is no trap in his history.** On the clean list 36% of his name-weeks
+sit under their own 50-day line and 34% under their sector's, and those
+names do no worse than the rest of his five. Against the pool's average,
+the names under their own line made +0.40% the next week and +1.31% over
+four weeks, the names above it +0.16% and +0.83% (paired by week +0.09%,
+t 0.32; +0.30%, t 0.36). Under the sector line: +0.18% and +0.38% against
++0.28% and +1.32% (+0.02%, t 0.06; -0.30%, t -0.32). The 111 and the 277
+say the same, nothing near t 2. For his kind of stock, cheap and steady,
+the 50-day line does not tell a falling name from a recovering one. The
+sector gate's three all-cash weeks show the other side: 2025-01-13, 04-07
+and 04-14, when every ETF was under its line and his five made +3.21%,
++2.81% and +1.44%, rebounds sat out. Its drawdown was deeper than as is
+(-18.0% against -10.1%).
+
+**His stacking is his edge.** His five holds two or more names in one
+sector in 97% of the clean list's weeks (90% on the 277, 38% on the 111).
+One name per sector costs him 0.25%/wk (t -2.07; -0.30%, t -2.55, in
+returns), his whole edge, while trimming his weekly SD from 2.45% to 2.17%;
+with his own gate added, -0.31% (t -1.87). Five tests at the line leave
+about one chance in five that one crosses it in either direction by luck,
+so read it as strong, not proven. The mechanism is plain: his value signal
+works across a sector, cheap sectors are cheap together, and a cap pushes
+him down his list into worse names. Diversifying Cecil himself is the wrong
+fix. The team book is where his concentration gets offset: three chairs
+made +0.32%/wk (t 2.33) here, the same picks as Pass 13's union and Pass
+17's side result, so not new evidence.
+
+**Block or replace comes out the same.** Dropping the names the sector gate
+flags, as the Council's trigger check does now, or letting him replace
+them, gives the same three-chair book to within 0.02%/wk on the clean list
+and within 0.11% on the others.
+
+**The live episode, through the gates** (Council weeks, seen, deciding
+nothing). On the clean list both gates look good over these ten weeks
+(+0.58%/wk his own, +0.46% the sector's): that is the slide that motivated
+the test, and a rule written after an episode fits that episode. The lines
+were late even there. On the 277, the list nearest Monday's, the lab's
+Cecil held ALL in nine of the ten weeks; his own-line gate first dropped it
+on 09-14, and the sector gate dropped his financials only on 09-21, when
+XLF closed under its 50-day. The Council's trigger check blocked ALL on
+09-21 and all three of his names on 09-28: a week after his own gate would
+have, and the same week as the sector gate.
+
+**Predictions.** 1 near: a minority on the clean list, but 36% (above
+20-35%), and half of his names on the 111. 2 right at one week (no worse,
+and no gate helps; |t| under 1.5), wrong at four: the names under the line
+do not trail there either. 3 wrong on the mean: one per sector costs him a
+quarter point a week, not nothing; right that it trims the SD. 4 right:
+nothing passes. 5 wrong: replace and block tie.
+
+**What this changes.** Nothing in his engine, and no rule goes on the
+forward record. The insurer slide was a real loss, but not a pattern the
+price line picks out in 96 weeks of his picks. His habit of stacking one
+cheap sector is where his edge comes from, so the fix for a concentrated
+Cecil is the team, not a cap on him: he is one chair of three, and the
+three-chair book is the best number on this list. The trigger check can
+stay where it is, in the Council's hands after the engines, since blocking
+and replacing come out the same; when it blocks all his names, as on 09-28,
+his empty seat costs nothing on average.
