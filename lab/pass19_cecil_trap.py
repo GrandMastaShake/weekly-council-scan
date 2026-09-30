@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import collections
 import json
+import pickle
 import statistics
 import sys
 from pathlib import Path
@@ -156,12 +157,30 @@ def week_rows(uname, names, weeks, start, cal, raw, adj, sectors, tag):
         trap = [{"ticker": t, "sector": sectors.get(t, "?"), "own": own(t), "sector_line": sec(t),
                  "x1": one[t] - base1 if t in one else None,
                  "x4": four[t] - base4 if t in four else None} for t in C]
+        scored = p7.score_week(books, adj, W, tradeable, f"p19-{uname}-{tag}")
+        for n in books:
+            if n not in scored:     # every name gated (all eleven ETFs under the line): the book is cash
+                scored[n] = {"book": [], "invested": 0.0, "raw": {"ret": 0.0, "edge": 0.0},
+                             "clipped": {"ret": 0.0, "edge": 0.0}}
         out.append({"week": label, "spy": adj["SPY"].week_return(W) or 0.0, "five": C, "fives": fives,
                     "ophelia": O, "marky": M, "trap": trap,
                     "stacked": max(collections.Counter(sectors.get(t, "?") for t in C).values(), default=0) >= 2,
                     "etfs_under": sorted(e for e, u in etf_under.items() if u),
-                    "books": p7.score_week(books, adj, W, tradeable, f"p19-{uname}-{tag}")})
+                    "books": scored})
     return out
+
+
+def cached_rows(uname, names, weeks, start, cal, raw, adj, sectors, tag):
+    """The replay is the slow part; keep it in the gitignored cache so a
+    failure in the summaries does not cost another run."""
+    path = lab.CACHE / f"pass19_rows_{uname.replace(' ', '_').replace('&', 'and')}_{tag}_{len(weeks)}.pkl"
+    if path.exists():
+        with open(path, "rb") as fh:
+            return pickle.load(fh)
+    rows = week_rows(uname, names, weeks, start, cal, raw, adj, sectors, tag)
+    with open(path, "wb") as fh:
+        pickle.dump(rows, fh)
+    return rows
 
 
 def trap_summary(rows):
@@ -234,6 +253,8 @@ def show(title, s, pairs, trap):
                     f" same {p['same_five']:.0%}; returns {p['ret_mean']*100:+.2f}, t {p['ret_t']:+.2f})")
         print(f"  {n:<28}{x['edge']*100:+8.2f}%{x['t']:+7.2f}{x['ahead']:>5}/{x['weeks']:<3}{x['mean_ret']*100:+7.2f}%"
               f"{x['sd']*100:10.2f}%{x['max_dd']*100:+7.1f}%{tail}")
+    print("  fewer than five names: " + "; ".join(
+        f"{n} {s[n]['short_weeks']} weeks ({s[n]['empty_weeks']} all cash)" for n in VARIANTS[1:]))
     print(f"  stacked (2+ names in a sector): {trap['stacked_weeks']:.0%} of weeks; name-weeks: {trap['name_weeks']}")
     for flag, label in (("own", "own line"), ("sector_line", "sector line")):
         f = trap[flag]
@@ -272,14 +293,18 @@ def main(smoke=False):
         adj = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, True, end, p4.HIST_START)).items()}
         gaps = [e for e in ETFS if e not in raw]
         print(f"  Cecil on {uname}: {len(names)} names; sector ETFs missing: {gaps or 'none'}", flush=True)
-        hist = week_rows(uname, names, hweeks, lab.HISTORY_DATA_START, cal, raw, adj, sectors, "hist")
-        cw = week_rows(uname, names, cweeks, lab.DATA_START, cal, raw, adj, sectors, "council")
+        rows_of = week_rows if smoke else cached_rows
+        hist = rows_of(uname, names, hweeks, lab.HISTORY_DATA_START, cal, raw, adj, sectors, "hist")
+        cw = rows_of(uname, names, cweeks, lab.DATA_START, cal, raw, adj, sectors, "council")
         rep = None if smoke else reproduces_pass12(hist, uname)
         out = {"reproduces_pass12_as_is": rep,
                "sectors": dict(collections.Counter(sectors.values()))}
         for section, rows, title in (("history", hist, f"Cecil on {uname}: history, {len(hweeks)} weeks"),
                                      ("council", cw, f"Cecil on {uname}: Council weeks, {len(cweeks)} (seen; decide nothing)")):
             s = {n: p10.summarize(rows, n) for n in VARIANTS + THREE}
+            for n in VARIANTS:
+                s[n]["short_weeks"] = sum(1 for r in rows if len(r["fives"][n]) < p7.TOP)
+                s[n]["empty_weeks"] = sum(1 for r in rows if not r["fives"][n])
             pairs = pairs_for(rows)
             trap = trap_summary(rows)
             show(title, s, pairs, trap)
