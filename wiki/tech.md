@@ -2,30 +2,30 @@
 
 > **Sector:** Information Technology | **ETF:** Technology Select Sector SPDR (XLK) | **Expense Ratio:** 0.08%
 >
-> *"The 10-year Treasury closed at 5.18% on Thursday — a 19-year high — and tech closed the week at its high anyway. Monday was the tell: a record Nasdaq (27,122, +2.3%) with AMD crossing a $1 trillion market cap, the CPU-shortage trade went vertical (INTC +46% in September, CEO can supply only half of server demand), and the 10Y spent three straight sessions at or above 5.10% without a single distribution day in the complex. The bill: ORCL declared force majeure on its New Mexico AI data center over power, China slapped 80-99% duties on Japanese chip feedstock, and only 29% of the S&P traded above its 50-day. XLK $196.79 (+3.8% W/W), one percent from the June peak."*
+> *"The 10-year touched 5.34% on Thursday — the highest since 2002 — and XLK closed the week at an all-time high anyway. Micron printed $54.2B of revenue at an 87% gross margin, guided $61.5B, and the stock did nothing; the money went to the people who sell Micron its tools (AMAT +11.3%, LRCX +10.2%). Then Friday's payrolls came in at +29K, the October hike died (odds ~70% Monday, ~17% Friday), and the fund gapped through $200 — and closed a quarter under it. XLK $199.81 (+1.8% W/W), through the June peak, with the 30-year at 5.63%."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 1W Ago (Sep 18) | Change |
+| Metric | Current | 1W Ago (Sep 25) | Change |
 |---|---|---|---|
-| Price | $196.79 | $189.60 | **+3.8% W/W** — third straight weekly gain |
-| 52W Range | $126.68 – $198.73 | $126.68 – $198.73 | Price now -1.0% below the June 2 peak |
-| AUM | ~$121.4B | ~$121.4B | Flat on price gains vs outflows |
-| YTD Return | +37.0% (price basis*) | +32.0% | +5.0 pts in one week |
-| 1Y Return | +41.9% | +36.7% | New highs in the base |
-| P/E Ratio | ~34.7 (Yahoo trailing) | ~33.6 | Expanded with price |
+| Price | $199.81 | $196.27 (settled) | **+1.8% W/W** — fourth straight weekly gain, new closing high |
+| 52W Range | $127.20 – $201.39 | $126.68 – $198.73 | June 2 peak ($198.73) cleared Friday; intraday high $201.39 |
+| AUM | ~$121.4B | ~$121.4B | Yahoo figure unchanged this pull |
+| YTD Return | +39.1% (price basis*) | +36.7% | +2.4 pts |
+| 1Y Return | +40.4% | +41.9% (as published) | Base effect — Oct 2025 was already strong |
+| P/E Ratio | ~35.4 (Yahoo trailing) | ~34.7 | Expanded with price |
 | Dividend Yield | ~0.43% | ~0.43% | — |
-| Beta | 1.47 (3Y) | 1.47 | — |
+| Beta | 1.47 (3Y) | 1.47 | Carried; not re-published this pull |
 | Total Holdings | 75 | 75 | — |
-| Avg Daily Volume | ~7.2M this week | ~7.4M | Monday (9.0M) and Tuesday (8.7M) were the heaviest sessions |
+| Avg Daily Volume | ~8.4M this week | ~7.2M | Thursday 10.9M was the heaviest session since the September breakout |
 
-\* YTD strict price basis (XLK close 12/31/25 = $143.62). Week path (adjusted closes): Mon $194.85, Tue $196.27, Wed $195.34, Thu $194.71, Fri $196.79 (Fri O $195.53 / H $196.94 / L $195.05, vol 6.0M). XLK went ex-dividend this week; adjusted vs strict basis differs by ~0.2.
+\* YTD strict price basis (XLK close 12/31/25 = $143.62). Week path: Mon $194.53, Tue $194.50, Wed $195.75, Thu $197.81, Fri $199.81 (Fri O $201.16 / H $201.39 / L $199.35, vol 8.9M). **Restatement:** last week's page carried a $196.79 Friday close; the settled Sep 25 daily bar is **$196.27**, and all weekly changes on this page are measured against settled Sep 25 closes.
 
-**Marky Tape Read:** Four up-days out of five, and every dip was bought before lunch. **Monday** +2.8% to $194.85 — the Nasdaq closed at a record 27,122 and AMD crossed $1 trillion in market cap intraweek; volume 9.0M said institutions, not tourists. **Tuesday** $196.27 — a quiet follow-through that carried the fund through the old $190–$191.75 double top without resistance. **Wednesday** $195.34 — the 10Y closed 5.11%, the first close above 5.10%, and the tape *yawned*. **Thursday** $194.71 — the 10Y printed 5.18%, a 19-year high; semis didn't care (INTC +3.9% to $127.39, AMD held $614+), ARM dropped -7.9% on a CFO insider sale, and ORCL took the fund's biggest single hit on a force majeure notice. **Friday** $196.79 — MSFT +4% on the redesigned Copilot app and the fund finished one percent under the June high ($198.73) with RSI at 63.5. The character change: two consecutive closes above the 5.10% line produced zero distribution. Breadth, though — 29% of the S&P above its 50-day — is the loudest divergence this tape has printed all year.
+**Marky Tape Read:** Two flat days, then three up on rising volume. **Monday** $194.53 and **Tuesday** $194.50 — the tape sat on the $194.50 shelf while AAPL lost its $333 line (-2.7% Tuesday on restructuring reports and a $5.7B patent verdict) and the October hike sat near 70%. **Wednesday** $195.75 on 9.1M — core PCE printed 3.0% against 3.3% expected, and Micron reported after the close. **Thursday** $197.81 on 10.9M — the 10Y touched 5.34% intraday, the highest since 2002, and the fund closed up 1% regardless; equipment led. **Friday** — payrolls +29K, a gap to $201.16, a high of $201.39, and a close at **$199.81**: a new all-time closing high that finished *below its own open* and a quarter under the round number. NVDA printed a record $237.88 intraday. RSI 69.0. I read Friday as a breakout with an asterisk — the level is cleared, the gap was sold.
 
-**Ophelia Macro Read:** My 5.10% redraw lasted four sessions. The 10Y closed **5.11% Wednesday and 5.18% Thursday** (FRED DGS10; highest since 2007), 30Y **5.40%** (highest since 2004), 2Y ~**4.90%** Friday — and the curve's message is genuinely new: 2s10s compressed to ~+25bp while 10s3M *widened* to +0.92%, a bear-steepener driven by inflation risk premium, not policy. The bond market is now pricing an **inflation floor from the AI buildout itself** — natural gas +5.3% to $3.18 despite a 53 Bcf build, copper $6.78/lb through mine disruptions at Grasberg, Kamoa-Kakula and Escondida — and Octagon's odds put a **~71% chance on an October +25bp**. The Fed's own Barr said "further policy adjustments are likely needed." The mercy remains oil: **WTI ~$92.92 (-2.7% W/W)** on U.S.-Iran truce hopes and Hormuz diplomacy (Brent $98.58), though VLCC earnings at $1.10M/day say the physical market isn't relaxed; France is deploying to Yanbu and the Houthis seized Mokha/Perim. **DXY 101.1 (+0.85%)**; USD/JPY 157.9. Claims 197K (lowest since mid-July); August new home sales +12.7% to 684K *against* 7.03% mortgages; HY OAS 273bp; VIX 15.33. The China ledger got worse, not better: truce extended to Jan 10 but rare-earth shipments stay halted and Beijing imposed **80–99% anti-dumping duties on Japanese dichlorosilane**, a logic/memory chip feedstock — that is a semiconductor supply-chain act, not a general trade one. Next gates: **MU Wed Sep 30 AMC** (on core PCE/GDP day), jobs Oct 2, FOMC Oct 28.
+**Ophelia Macro Read:** My 5.25% line broke in five sessions. The 10Y closed **5.28% Friday** after touching **5.34% Thursday** (highest since 2002); the 30Y is **5.63%** (from ~5.50%). What changed is the short end: core PCE **3.0%** (exp 3.3%, July 3.3%), headline 3.4% (exp 3.7%), then payrolls **+29K** (exp ~84–90K) with unemployment up to **4.2%** — and FedWatch odds of an October +25bp fell from roughly **70% Monday to ~17% Friday**. December is still priced above 75%. So the Fed got softer and the long end did not: that is term premium — fiscal, oil, and AI capital demand — not policy. ISM manufacturing held 54.5 but **prices paid jumped to 77.9** (+6.8 pts), the highest since the start of the Iran war. **WTI $91.11 (-1.4%)**, Brent $102.25; the G-7 agreed Friday to release 100M barrels of crude and diesel over four months, front-loaded on diesel. **DXY 101.93 (+0.95%)**, a ninth straight week of dollar strength; USD/JPY 157.8; VIX 15.31; nat gas $3.04 (-5.0%); copper $6.49 (-3.0%). Next gates: CPI mid-October, bank earnings Oct 13, **LRCX Oct 21 / INTC Oct 22**, FOMC Oct 27–28 with MSFT that evening.
 
 ---
 
@@ -33,23 +33,23 @@
 
 | Rank | Ticker | Name | Weight | Price | Avg Target | Upside | Bullish % | Conviction |
 |---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA Corp | 14.36% | $225.00 (+1.2% W/W) | $327.70 | +45.6% | ~92% | 🔥 |
-| 2 | AAPL | Apple Inc | 12.50% | $341.46 (+1.6%) | $328.22 | -3.9% | ~73% | ⚡ |
-| 3 | MSFT | Microsoft Corp | 10.12% | $517.89 (+4.9%) | $577.26 | +11.5% | ~93% | 🔥 |
-| 4 | AVGO | Broadcom Inc | 4.71% | $353.70 (-1.1%) | $531.85 | +50.4% | ~93% | 🔥 |
-| 5 | MU | Micron Technology | 4.00% | $1,085.02 (+6.8%) | $1,515.54 | +39.7% | ~90% | 🔥 |
-| 6 | AMD | Advanced Micro Devices | 3.93% | $630.99 (+12.7%) | $618.51 | -2.0% | ~88% | 🔥 |
-| 7 | INTC | Intel Corp | 2.90% | $122.95 (+13.2%) | $116.37 | -5.3% | ~58% | ⚠️ |
-| 8 | CSCO | Cisco Systems | 2.86% | $106.89 (-2.4%) | $137.25 | +28.4% | ~80% | ⚡ |
-| 9 | PLTR | Palantir Technologies | 2.81% | $189.65 (+6.8%) | $195.57 | +3.1% | ~78% | ⚡ |
-| 10 | LRCX | Lam Research | 2.47% | $315.65 (+9.6%) | $373.77 | +18.4% | ~88% | 🔥 |
+| 1 | NVDA | NVIDIA Corp | 14.36% | $233.95 (+3.9% W/W) | $327.70 | +40.1% | ~92% | 🔥 |
+| 2 | AAPL | Apple Inc | 12.50% | $333.69 (-2.2%) | $328.09 | -1.7% | ~73% | ⚡ |
+| 3 | MSFT | Microsoft Corp | 10.12% | $517.53 (+0.3%) | $578.82 | +11.8% | ~93% | 🔥 |
+| 4 | AVGO | Broadcom Inc | 4.71% | $355.14 (+0.7%) | $531.31 | +49.6% | ~93% | 🔥 |
+| 5 | MU | Micron Technology | 4.00% | $1,074.89 (-0.7%) | $1,520.02 | +41.4% | ~90% | 🔥 |
+| 6 | AMD | Advanced Micro Devices | 3.93% | $633.91 (+0.5%) | $619.51 | -2.3% | ~88% | 🔥 |
+| 7 | INTC | Intel Corp | 2.90% | $119.33 (-3.0%) | $116.37 | -2.5% | ~58% | ⚠️ |
+| 8 | CSCO | Cisco Systems | 2.86% | $112.20 (+5.6%) | $136.16 | +21.4% | ~80% | ⚡ |
+| 9 | PLTR | Palantir Technologies | 2.81% | $188.75 (-0.5%) | $195.57 | +3.6% | ~78% | ⚡ |
+| 10 | LRCX | Lam Research | 2.47% | $347.49 (+10.2%) | $375.06 | +7.9% | ~88% | 🔥 |
 
 > 🔥 = Strong Buy consensus | ⚡ = Buy / Mixed | ⚠️ = Caution / Under pressure
-> Prices = Fri Sep 25 close; weekly change vs Fri Sep 18 close. Targets = Yahoo Finance mean analyst target (fresh pull Sep 25, recommendation-mean based bullish %). **Weights = fresh State Street pull (Sep 25): the September rebalance lifted MSFT to 10.1% and NVDA to 14.4%; AMAT dropped to #11 and PLTR entered the top 10** — AMAT still covered below at $485.85 (+9.3% W/W). Notables: AMD closed the week **above** its mean target for the first time ($630.99 vs $618.51) after crossing a $1T market cap Monday; INTC trades **above** its mean target (-5.3% implied) at ~59.8x trailing vs an 11.2x five-year median; AAPL remains above its mean target for a fourth straight week.
+> Prices = Fri Oct 2 close; weekly change vs settled Fri Sep 25 close. Targets = Yahoo Finance mean analyst target (fresh pull Oct 3). Weights = State Street via Yahoo funds_data (Oct 3 pull — unchanged from the Sep 25 figures, so treat as the post-rebalance weights, not a fresh mark). AMAT (#11) covered below at **$540.04 (+11.3% W/W)**, mean target $638.94. Notables: AMD, INTC and AAPL all still trade **above** their mean targets; LRCX's implied upside has compressed to +7.9% after a 10% week; MU's mean target moved up only $4.50 on a 7% beat.
 
-**Concentration Risk:** Top 3 = 37.0% of the fund. Top 10 = 60.7%. The week belonged — again — to the physical-silicon complex, but the driver rotated from memory to **CPUs**: **INTC +13.2%** (+46% in September; CEO says Intel can supply only ~50% of server CPU demand as AI agents like Meta's Muse spin x86 orchestration/inference workloads; Q2 DC/AI revenue +59% YoY to $6.3B) — the stock pays 59.8x for it now. **AMD +12.7%** crossed $1T market cap Monday (Microsoft buying Helios racks for Azure; OpenAI/Meta performance warrants), **MU +6.8%** into Wednesday's FQ4 print, and equipment caught the capex read-through: **AMAT +9.3%, LRCX +9.6%**. **MSFT +4.9%** with Friday's +4% redesigned-Copilot-app rally leading the mega-caps. **NVDA +1.2%** keeps lagging the complex it supposedly leads — the market is paying for CPUs and memory today, accelerators tomorrow. The week's confessions: **ORCL -7.1%** (force majeure on the New Mexico "Project Jupiter" data center — power supply delays, ~$18B Blue Owl financing package, the buildout's first big execution failure), **CSCO -2.4%**, **AVGO -1.1%**. ARM, not in the fund's top 10, fell -7.9% Thursday on a CFO share sale despite "off-the-charts" demand commentary.
+**Concentration Risk:** Top 3 = 37.0% of the fund. Top 10 = 60.7%. The week's leadership was **equipment and plumbing, not the headline names**: **AMAT +11.3%** and **LRCX +10.2%** on the read-through from Micron's capex plan (~$11.5B in FQ1, ~$25B in the first half of FY27, more in the second half), **CSCO +5.6%** (AI infrastructure orders, a sovereign-AI deal with Bell Canada, ex-dividend Friday), **NVDA +3.9%** to a record and a $5.7T market cap. The names that carried September gave some back: **INTC -3.0%**, **MU -0.7%** on its own record quarter, **PLTR -0.5%**. **AAPL -2.2%** was the mega-cap drag — reports that CEO John Ternus is weighing a leaner, engineering-led management structure, a $5.7B patent verdict, and mixed iPhone 18 demand reads. **ORCL +3.8%** to $142.30 recovered about half of last week's force-majeure loss and still sits under its 50D.
 
-**Cecil Fundamental Read:** At a 5.18% 10-year, the only earnings stories in this fund that work are the ones with physical scarcity in them — and this week proved it. Intel at 59.8x trailing is not a value stock no matter what the chart says; the CPU-shortage print (50% of demand supplied, +59% DC revenue) is real but the multiple already capitalizes several years of it — I harvested a third. AMD above its own mean target a week after crossing $1T is a harvest signal, not an initiation signal; the Helios/OpenAI/Meta demand is genuine but priced. MU at 6.8x forward into Wednesday is still the cheapest fundamental story in the complex — but Wednesday IS the story, and I add nothing before it. ORCL is the week's real lesson: $664B of RPO means nothing if the electrons don't show up — power is now the binding constraint on the entire AI capex cycle, and the market will start charging execution-risk discounts to every datacenter name without secured power. AAPL above target: harvested. I keep MU into the print, I keep MSFT as the one mega-cap with earnings momentum AND a 4% Friday, and I let the CPU parabola run without me above 59x.
+**Cecil Fundamental Read:** Micron is the cleanest test I get of "priced in." Revenue $54.23B against $50.45B expected, EPS $33.42 against $31.16, 87% gross margin, FQ1 guided to $61.5B and $38.15, more than 75% of calendar-2027 output already committed — and the stock finished the week down 0.7% at 5.2x forward. The market is not doubting the numbers; it is doubting their duration, and it is charging for a capex bill that is weighted to construction. That bill is somebody else's revenue, which is why AMAT and LRCX took the week — but LRCX at 59x trailing with 7.9% to its mean target is now paying for the order before it is booked. I add to MU here, post-print, as I said I would; I do not chase equipment up 10%. AAPL at 38.3x trailing with a new CEO rearranging the org chart and a $5.7B verdict stays harvested. INTC and AMD above their targets stay trimmed. CSCO at 20x forward with a 1.5% yield is the one name on this board that got cheaper to own as it went up.
 
 ---
 
@@ -57,13 +57,13 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| BBAI | BigBear.ai | ~$1.34B | $2.80 | 0.0% | News search (Sep 25): no fresh company-specific news found; Ask Sage acquisition close still pending; FY26 guide $135–165M stands | ⚠️ Third flat week — a proxy for small-cap risk appetite that now goes nowhere. Needs the Ask Sage close or a funded award. |
-| SOUN | SoundHound AI | ~$2.69B | $6.07 | +2.4% | No fresh company headline found this week; LivePerson close expected H2 2026 ($350–400M combined 2027 revenue target) | ⚡ Reclaimed the $6.00 line it broke last week, still below its 50D ($6.64). The unprofitable-AI cohort stabilized with the tape. |
-| AI | C3.ai | ~$1.71B | $10.66 | +1.7% | Quiet week post-FQ1 turnaround print; note Street stance is now **Underperform** (mean rec 3.7, target $8.30 *below* price) | ⚡ Held $10+ against a skeptical Street — the bookings-conversion story has one more quarter to prove itself. |
-| KD | Kyndryl | ~$2.53B | $11.70 | -3.1% | No company headline found; drifted lower on light volume again | ⚠️ Worst of the five on fundamentals-tone; below its 50D ($12.93). The internal-controls overhang remains uncleared. |
-| VERI | Veritone | ~$0.13B | $1.31 | +19.1% | No filing found — squeeze dynamics continue in a ~$130M going-concern name | ⚠️ Entertaining, not investable. Third week flagged for replacement; decision is overdue. |
+| BBAI | BigBear.ai | ~$1.27B | $2.65 | -5.4% | No fresh company headline found; Ask Sage close still pending; Friday volume 25.1M vs 15.2M average | ⚠️ Broke the three-week flat line downward on heavy volume, six cents above its 52W low ($2.59). RSI 38. |
+| SOUN | SoundHound AI | ~$2.59B | $5.84 | -3.5% | No fresh company headline found; LivePerson close still expected H2 2026 | ⚠️ Lost $6.00 again; 52W low is $5.70. The unprofitable-AI cohort fell on the day rate-hike odds collapsed — that is not a rates problem. |
+| AI | C3.ai | ~$1.77B | $11.01 | +3.4% | Quiet week; Street still **Underperform** (mean rec 3.7, target $8.30 below price) | ⚡ Only green name in the cohort, back above its 50D and 200D (both ~$10.2). Holding against a skeptical Street for a third week. |
+| KD | Kyndryl | ~$2.52B | $11.56 | -0.3% | No company headline found; -4.6% Friday on 5.3M shares | ⚠️ Below its 50D ($12.87). 4.6x forward earnings and nobody wants it — the internal-controls overhang is the whole price. |
+| DGII | Digi International | ~$2.87B | $75.61 | -3.4% | **New to the watch.** Announced intent to acquire Disruptive Technologies (sensors) for $130M cash, funded on the revolver, close expected before year-end; last quarter EPS $0.75 (beat by $0.09), revenue +29% to $138.7M; Argus target to $85 | ⚡ A profitable industrial-IoT name above its 50D ($74.30) and 200D ($59.93), mean rec 1.4. The first name on this list with earnings. |
 
-> **Promotion Watch:** All five names re-verified under $5B as of the Sep 25 close (BBAI ~$1.34B, SOUN ~$2.69B, AI ~$1.71B, KD ~$2.53B, VERI ~$0.13B). No graduations, no rotations. VERI remains on replacement watch — a $0.13B cap with a $5.38 mean target is a squeeze artifact, not a valuation.
+> **Promotion Watch:** All five verified under $5B at the Oct 2 close (BBAI ~$1.27B, SOUN ~$2.59B, AI ~$1.77B, KD ~$2.52B, DGII ~$2.87B). No graduations. **Rotation: VERI removed** after four weeks on replacement watch — on Thursday Veritone sold 20M shares in a $15M registered direct offering at $0.75, a 37% discount to the prior close; the stock fell -42.8% on the week to $0.75 and the cap is ~$76M. That is a financing of last resort, not a small-cap watch candidate. DGII replaces it.
 
 ---
 
@@ -71,18 +71,20 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $198.73 | June 2 peak — Friday closed -1.0% below it; the last door |
-| Round Number | $200.00 | Psych level directly above the June high — first visit since June |
-| Near Resistance | $197.00–$196.94 | This week's high zone (Tue $196.51, Fri H $196.94) — cleared once, not confirmed |
-| Current Price | $196.79 | Friday close; +3.8% W/W; above the 20D/50D/200D stack |
-| 20-Day MA | ~$190.5 (est.) | Rising steeply; the old double top is being absorbed into it |
-| Pivot Support | $194.70–$195.05 | Wednesday/Thursday closes and Friday's low — first shelf |
-| Major Support | $190.00–$191.75 | The August double top — now the breakout-retest zone; losing it breaks the pattern |
-| 50-Day MA | $184.10 | The line that held the September 15 scare; now ~6.4% below |
-| 200-Day MA | $163.44 | Long-term trend floor, rising |
-| Deep Support | $126.53–$127.35 | 52-week structural floor |
+| 52W / All-Time High | $201.39 | Friday's intraday high, set in the first minutes after the gap |
+| Round Number | $200.00 | Opened above it Friday, closed $0.19 below — not yet held on a close |
+| Current Price | $199.81 | Friday close; +1.8% W/W; record close; above the 20D/50D/200D stack |
+| Gap Zone | $198.54 – $199.35 | Thursday's high to Friday's low — the unfilled payrolls gap |
+| Old High | $198.73 | The June 2 peak — resistance for four months, now first support |
+| Pivot Support | $194.50 – $195.25 | Monday/Tuesday closes and Wednesday's low — the week's shelf |
+| Week Low | $192.68 | Monday's low; last week's low was $192.61 — a double bottom for the breakout |
+| 20-Day MA | ~$191.2 | Rising about $0.5 a session |
+| Major Support | $190.00 – $191.75 | The August double top; now coincident with the 20D |
+| 50-Day MA | $186.13 | Up from $184.10; ~6.8% below price |
+| 200-Day MA | $164.58 | Long-term trend floor, rising |
+| RSI (14) | 69.0 | One good day from overbought; it was 63.5 a week ago |
 
-**Marky Setup Assessment:** The map has simplified to two numbers: **$198.73** and **$190**. A close through the June high on MU-beat volume opens blue sky — there is no supply above $200 that isn't just profit-taking. A close back under **$194.70** warns; under **$190–$191.75** and the September breakout fails as a bull trap, with the 50D ($184.10) the next magnet. What I respect most: the fund closed at $196.79 with the 10Y at 5.18% — scared tape that holds its line twice in a month is stronger than happy tape at all-time highs. What I respect least: 29% breadth. Index-level breakouts on 29% participation are where false breakouts live. I want either a breadth repair (45%+ above the 50-day) or a successful retest of $190–$191.75 before adding; I don't chase $198.73 with the tape this thin.
+**Marky Setup Assessment:** Last week I gave two numbers, $198.73 and $190. The first is done — a record close $1.08 above it. The new map is **$200** and **$194.50**. A close above $200 that holds the following session converts the round number and there is nothing overhead but the measured move from the September base. The warning is the candle: Friday opened at $201.16 and closed at $199.81, so everyone who bought the payrolls gap is under water by the bell, and the gap ($198.54–$199.35) is open underneath. Filling it and holding $198.73 is healthy. Closing back under $198.73 makes Friday a failed breakout, and then $194.50–$195.25 is the test, with the double low at $192.6 as the line that breaks the pattern. Volume improved all week (6.2M to 10.9M), which I respect. I did not re-source breadth this week, so last week's 29% figure stands unverified — until I see it repaired I add on a successful gap fill, not on a print above $200.
 
 ---
 
@@ -90,20 +92,20 @@
 
 | Factor | Level | Implication for XLK |
 |---|---|---|
-| Fed Funds Rate | **3.75–4.00%** (hiked +25bp Sep 16, 12-0) | The follow-through was hawkish: Barr — "further policy adjustments are likely needed"; **~71% odds priced for an October +25bp**. The dots-and-speakers channel now matters more than the delivered hike. Next FOMC Oct 28. |
-| 10Y Treasury | **5.18% Thu close** (FRED; path 5.11 Wed → 5.18 Thu → ~5.15 Fri); 30Y **5.40%** | Two consecutive closes above 5.10% — the Ophelia line is broken with authority. Highest since 2007. The five prior 5% visits all compressed multiples; this week the multiple ignored it entirely. That is either strength or the last act of denial. |
-| Curve Shape | 2s10s ~**+25bp** (from +41bp pre-hike); 10s3M **+0.92%**; 2Y 4.90% | A bear-steepener on the long end — inflation risk premium, not policy. The bond market is pricing an AI-commodity inflation floor the Fed can't hike away without breaking the productivity story. |
-| Growth Pulse | Flash PMI week; Q3 GDP tracking ~5% (GDPNow 5.1%); new home sales **684K (+12.7%)** vs mortgage **7.03%**; claims **197K** | No recession bid in the data — the soft-landing/goldilocks case that lets equities ignore the long end. Housing bifurcating, not breaking. |
-| Credit | HY OAS **~273bp**, IG ~77bp — both calm | Credit refuses to confirm the yield stress. HY-300bp stays the tripwire; at 273bp there is no stress signal, just less cushion. |
-| WTI Crude | **~$92.92 (-2.7% W/W)**; Brent $98.58 (-7.5%) | U.S.-Iran truce hopes + Hormuz diplomacy broke the stagflation tail for a third time. But VLCC rates at **$1.10M/day** and France deploying to Yanbu say the physical market prices sustained disruption. A failed truce is the fastest path back to $100+ WTI. |
-| DXY | **~101.1 (+0.85% W/W)**; USD/JPY 157.9 | The dollar rally regime persists — the eighth straight week of translation headwind building for multinational mega-cap revenue. |
-| AI Power/Commodities | Nat gas **$3.18 (+5.3% W/W, +14% MTD)** despite a 53 Bcf build; copper **$6.78/lb** (Grasberg, Kamoa-Kakula, Escondida disruptions) | AI datacenters are becoming the marginal buyer of U.S. electricity. This is the loop lifting the long end: capex → gas/copper bid → inflation floor → term premium. It cannot be hiked away without choking the productivity boom — the Fed's bind. |
-| Hyperscaler Capex / Execution | ORCL **force majeure** on Project Jupiter (New Mexico, ~$18B Blue Owl package, power supply delays) — -7.1% W/W | The first major AI-infrastructure execution failure, and the binding constraint is **power**, not demand or financing. Every DC name without secured interconnects just got cheaper to doubt. |
-| Memory Cycle | **MU FQ4 Wed Sep 30 AMC** (corrected from the Sep 22 date carried in error; Micron's own Q3 release set Sep 30); cons EPS ~$31.35, rev ~$50B guide, 86% GM | The fall's binary gate lands on PCE/GDP day. Beat-and-raise resumes shortage leadership through the index high; a whisper miss into a 5.18% 10Y de-rates the whole complex. |
-| China / Trade | Truce extended to **Jan 10**; rare-earth shipments still halted; **80–99% anti-dumping duties on Japanese dichlorosilane** (chip feedstock) | The DCS duties are a direct semiconductor supply-chain squeeze — the most targeted China tech action of the year. Watch for a Japan/U.S. response and any read-across to 2027 wafer input costs. |
-| VIX / Breadth | VIX **15.33**; only **29%** of S&P 500 above their 50-DMA | Vol is calm but breadth is the worst of the year. Index strength is running on fewer cylinders than at any point since April. |
+| Fed Funds Rate | **3.75–4.00%** (hiked +25bp Sep 16) | October hike odds fell from ~70% Monday to **~17% Friday** after payrolls; December still >75%. The hike was moved, not removed. Next FOMC **Oct 27–28**. |
+| 10Y Treasury | **5.28% Fri close**; **5.34% intraday Thu** (highest since 2002); 30Y **5.63%** | Third redraw (5.25%) broken in a week. The long end rose while the front end repriced softer — term premium, not policy. Tech made a record close through it. |
+| Curve Shape | 5Y 5.06%, 10Y 5.28%, 30Y 5.63%; 3M bill 3.99% | Bear-steepening at the long end continues: 10s–3M ~+1.28%, 5s30s ~+57bp. The 2Y was not cleanly sourced this run. |
+| Inflation | Aug core PCE **3.0% Y/Y** (exp 3.3%, prior 3.3%); headline 3.4% (exp 3.7%); ISM prices paid **77.9** (+6.8) | The consumer gauge cooled, the factory-gate gauge got hotter. PCE gave the Fed room; ISM prices says the pipeline has not. |
+| Growth Pulse | Sept payrolls **+29K** (exp ~84–90K), unemployment **4.2%**; ISM manufacturing **54.5** (ninth month of expansion) | Labor is slowing while factories expand — consistent with capex-led, low-hiring growth. Bad-news-is-good-news worked Friday; a second weak print will not be read the same way. |
+| WTI Crude | **$91.11 (-1.4% W/W)**; Brent $102.25 | G-7 to release 100M barrels of crude and diesel over four months, diesel front-loaded in the first 20 days. Hormuz still constricted — the release treats the symptom. |
+| DXY | **101.93 (+0.95% W/W)**; 52W high 102.10; USD/JPY 157.8 | Ninth straight week of dollar strength, within 0.2 of the year's high. Translation headwind for the Q3 prints from MSFT, AAPL, and the multinationals starts Oct 28. |
+| AI Power/Commodities | Nat gas **$3.04 (-5.0%)**; copper **$6.49 (-3.0%)**; gold $4,162 (-3.7%) | The commodity leg of the "AI inflation floor" loosened this week while ISM prices tightened — a split worth watching. |
+| Hyperscaler Capex | No new guides; **MU capex ~$11.5B FQ1, ~$25B H1 FY27**, second half higher, construction growing faster than equipment | Memory is now a capex story in its own right. Hyperscaler guides land in late October (MSFT Oct 28 est.). |
+| Memory Cycle | **MU FQ4: rev $54.23B (cons $50.45B), adj EPS $33.42 (cons $31.16), GM 87%; FQ1 guide ~$61.5B / $38.15** | Beat-and-raise delivered; stock -0.7% on the week. >75% of 2027 output committed. The cycle is intact; the stock has stopped paying for confirmation. |
+| China / Trade | No new action sourced this week | Truce runs to Jan 10; rare-earth halt and the dichlorosilane duties stand (issue #114). |
+| VIX | **15.31** (14.87 a week ago) | Calm through a 5.34% print and a payrolls miss. Breadth not re-sourced this week. |
 
-**Ophelia Verdict:** I said last week that if 5.00% held as a ceiling I would say I was wrong — I was wrong, and sooner than I thought. The 10Y closed 5.11% and 5.18% and the equity complex rallied: the market has decided the AI earnings cycle outranks the discount rate, and at 273bp of HY spread there is no credit confirmation to argue with. So I redraw the line one more time, at **5.25%** — above the Thursday high, below the 30Y's 5.40% — and I change the *kind* of line it is: not a ceiling for tech, but a ceiling for the index's breadth. Above 5.25% with HY still <300bp, the mega-cap complex can keep working while everything else quietly de-rates — exactly the 29% breadth tape we already have. My posture: hold the memory/CPU complex into Wednesday's MU print, add nothing at 34.7x trailing, and stop trusting index-level breakouts until breadth repairs. The honest risk is not the yield level; it is that a copper/gas supply shock prints a hot core PCE and the Fed hikes into its own term-premium storm.
+**Ophelia Verdict:** Three lines in three weeks — 5.00%, 5.10%, 5.25% — and all three broke while the fund made new highs, so I stop drawing ceilings on the 10-year for tech. What the week actually showed is more useful: the market got the two things it said it wanted (a cool PCE and a dead October hike) and the 10-year still closed at 5.28% with the 30-year at 5.63%. That means the long end is no longer about the Fed. It is about supply, oil, and the capital the AI buildout is pulling out of bonds — and none of those are fixed by a soft jobs number. My line is now on the **30-year at 5.75%** and on **HY spreads**, which I did not re-source this week and will not quote from memory. Posture: hold the complex, do not add at 35.4x trailing on a gap that was sold, and treat +29K payrolls as the first data point of a slowdown rather than a gift.
 
 ---
 
@@ -111,19 +113,21 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The 10Y Hit 5.18% and Tech Closed at the Highs Anyway
+### This Week's Story: A Record Close on a Jobs Miss, and Micron Proved "Priced In"
 
-XLK gained **+3.8% to $196.79** in a week when the 10-year Treasury made 19-year highs — the third straight weekly gain and the strongest of the three.
+XLK gained **+1.8% to $199.81**, its fourth straight weekly gain and a new all-time closing high, clearing the June peak ($198.73) that had capped it for four months.
 
-**Catalyst 1 — Monday's Record (Sep 21):** The week opened with the Nasdaq's best session in months: +2.3% to a record 27,122, with **AMD crossing a $1 trillion market cap** (Microsoft buying Helios AI racks for Azure; OpenAI/Meta performance warrants lock demand) and NVDA/META/AMZN all sharply higher. Monday's volume (9.0M shares in XLK) said this was repositioning, not short-covering.
+**Catalyst 1 — Micron's Print (Wed Sep 30):** The fall's binary gate opened and nothing happened. Revenue **$54.23B** (+31% Q/Q, +379% Y/Y; consensus $50.45B), adjusted EPS **$33.42** (consensus $31.16), gross margin 87%, and a fiscal Q1 guide of ~**$61.5B / $38.15**. Fiscal 2026 revenue was $133.2B. The stock was flat into the print, rose about 3% Thursday, gave back 2% Friday, and finished the week -0.7%. Investors weighed the numbers against a capex plan of ~$11.5B for FQ1 and ~$25B for the first half of FY27, with construction growing faster than equipment.
 
-**Catalyst 2 — The CPU Shortage Goes Vertical:** September's underappreciated rotation — from GPU narratives to total data-center silicon — hit overdrive. Intel's CEO said the company can supply only **~50% of server CPU demand** as AI agents (Meta's Muse) create x86 orchestration workloads; INTC added +13.2% this week and is +46% in September at ~59.8x trailing. Memory followed: MU +6.8% into its print, equipment caught up (AMAT +9.3%, LRCX +9.6%), and ARM dropped -7.9% Thursday on a CFO insider sale even as its CEO called demand "off the charts."
+**Catalyst 2 — The Capex Read-Through:** What Micron spends, the toolmakers book. **AMAT +11.3%** and **LRCX +10.2%** were the fund's best performers, and SMH (+4.0%) more than doubled XLK's gain. Leadership rotated from the chips to the people who equip the fabs.
 
-**Catalyst 3 — Yields Ignored (Sep 23–25):** The 10Y closed 5.11% Wednesday and **5.18% Thursday**, the 30Y touched 5.40%, and the equity market simply declined to react — MSFT +4% Friday on a redesigned Copilot app led the tape. The Dow fell a fourth straight week and the Russell 2000 is -5.8% in September; only 29% of S&P names hold above their 50-day. Leadership has never been narrower.
+**Catalyst 3 — The Data Flipped the Fed (Sep 30 – Oct 2):** Core PCE printed 3.0% against 3.3% expected. Then September payrolls came in at **+29K** against roughly 84–90K expected, with unemployment at 4.2%. Odds of an October hike fell from about 70% on Monday to about 17% by Friday's close. The Nasdaq made a record and NVDA hit $237.88 intraday, a $5.7T market cap.
 
-**Catalyst 4 — The Buildout's First Confession (ORCL):** Oracle declared **force majeure on Project Jupiter**, its ~$18B Blue Owl-financed New Mexico AI data center, citing power supply delays — the clearest signal yet that **electricity, not demand or capital, is the binding constraint** on AI capex. ORCL -7.1% on the week and the market started charging execution-risk discounts to every power-unsecured datacenter story. Compounding the supply picture: China's 80–99% anti-dumping duties on Japanese dichlorosilane, a direct hit at chip feedstock.
+**Catalyst 4 — The Long End Did Not Follow:** The 10Y touched **5.34%** Thursday, the highest since 2002, and closed the week at 5.28%; the 30Y is 5.63%. ISM prices paid jumped to 77.9. The G-7 answered diesel prices with a 100M-barrel release.
 
-**The Bottom Line:** The fund trades at ~34.7x trailing with the 10Y at 5.18% — a combination that only works while the market believes in physical scarcity earnings (CPUs, memory, power). Wednesday's MU print on PCE day is the first hard receipt of the fall; ORCL's force majeure is the first hard warning. Both are about the same thing: the AI buildout is real, but its constraints are now physical, and physical constraints price in hours, not quarters.
+**The drag:** AAPL -2.2% on reports of a management restructuring under CEO John Ternus and a $5.7B patent verdict; INTC -3.0% after a +46% September.
+
+**The Bottom Line:** The fund got a beat-and-raise from its most-crowded long, a cool inflation print, and a dead October hike, and it rose 1.8% — then sold its own gap on Friday. That is a market at a record that is running out of good news it has not already bought. The next real receipts are LRCX (Oct 21), INTC (Oct 22), and MSFT plus the FOMC on Oct 28.
 
 ---
 
@@ -131,67 +135,75 @@ XLK gained **+3.8% to $196.79** in a week when the 10-year Treasury made 19-year
 
 | Company | Ticker | Date | Quarter | EPS Estimate | Key Metric to Watch |
 |---|---|---|---|---|---|
-| **Microsoft** | MSFT | **Jul 29, 2026** (REPORTED) | Q4 FY2026 | $4.24 | **Actual: Rev $90.0B, adj. EPS $4.74, Azure +43%. This week: +4.9% — Friday's +4% came on the redesigned Copilot app; the market is re-rating the AI distribution layer.** |
-| **Apple** | AAPL | **Jul 30, 2026** (REPORTED) | Q3 FY2026 | $1.89 | **Actual: EPS $2.02, Rev $109.4B. This week: +1.6% — third week of iPhone 18 availability; still above the $328.22 mean target.** |
-| **AMD** | AMD | **Aug 4, 2026** (REPORTED) | Q2 FY2026 | $1.55 | **Actual: Rev $11.54B (+50.1%), EPS $1.66. This week: +12.7% — crossed $1T market cap Monday (Helios/Azure, OpenAI/Meta warrants). Now trades above its mean target.** |
-| **Cisco** | CSCO | **Aug 12, 2026** (REPORTED) | Q4 FY2026 | $1.17 | **Actual: Rev $17.3B (+18%), EPS $1.22. This week: -2.4% — networking remains the non-scarcity silicon that pays the rate tax.** |
-| **Applied Materials** | AMAT | **Aug 13, 2026** (REPORTED) | Q3 FY2026 | $3.39 | **Actual: Rev $9.12B (+24.8%), EPS $3.50. This week: +9.3% to $485.85 — equipment finally pricing the memory-capex supercycle; fell to #11 in the fund on the Sep rebalance.** |
-| **NVIDIA** | NVDA | **Aug 26, 2026** (REPORTED, AMC) | Q2 FY2027 | ~$2.10 | **Actual: Rev $96.22B (+106%), adj. EPS $2.22. This week: +1.2% — keeps lagging the complex it leads; $327.70 mean target implies +45.6%.** |
-| **Broadcom** | AVGO | **Sep 2, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$3.22 | **Actual: Record rev $29.59B (+86%), EPS $3.32. This week: -1.1% — worst of the semis; +50.4% implied upside is now the widest on the board.** |
-| **Adobe** | ADBE | **Sep 10, 2026** (REPORTED, AMC) | Q3 FY2026 | ~$6.08 | **Actual: Record rev $6.76B (+12.9%), AI-first ARR +150%, FY26 targets raised. Quiet week — the AI-monetization debate stays unresolved.** |
-| **Oracle** | ORCL | **Sep 10, 2026** (REPORTED, AMC) | Q1 FY2027 | $1.74 | **Actual: Rev $19.35B (+30%), adj. EPS $1.92, RPO $664B. This week: -7.1% — force majeure on the New Mexico "Project Jupiter" data center (power delays, ~$18B Blue Owl package). The buildout's execution-risk poster child.** |
-| **Micron** | MU | **Wed Sep 30, 2026 (AMC)** — DATE CORRECTED | Q4 FY2026 | ~$31.35 | **THE PRINT OF THE FALL — and it lands on core PCE/GDP day.** Prior weeks carried "~Sep 22" in error; Micron's own Q3 release set September 30. Guided ~$50B rev / 86% GM. Watch: FQ1 opening guide, HBM4 ramp detail, the ~$100B SCA book, and any SK Hynix–Intel Ohio update. Street mean target $1,515.54 sits +40% above Friday's close. |
+| **Micron** | MU | **Sep 30, 2026** (REPORTED, AMC) | Q4 FY2026 | $31.16 | **Actual: Rev $54.23B (cons $50.45B), adj. EPS $33.42 (+7.3% surprise), GM 87%. FQ1 guide ~$61.5B / $38.15. Capex ~$11.5B FQ1, ~$25B H1 FY27. Week: -0.7%.** Next report ~Dec 23 (cons $38.23). |
+| **Oracle** | ORCL | **Sep 10, 2026** (REPORTED) | Q1 FY2027 | $1.74 | **Actual: Rev $19.35B, adj. EPS $1.92, RPO $664B. Week: +3.8% to $142.30 — half of the force-majeure loss recovered; still below the 50D ($143.59).** Next ~Dec 10. |
+| **Broadcom** | AVGO | **Sep 2, 2026** (REPORTED) | Q3 FY2026 | ~$3.22 | **Actual: Rev $29.59B, EPS $3.32. Week: +0.7%; below both the 50D ($372.67) and 200D ($366.26) — the one large semi in a downtrend.** Next ~Dec 9 (cons $3.83). |
+| **Lam Research** | LRCX | **Oct 21, 2026** (est., AMC) | Q1 FY2027 | $2.18 | First equipment print after a +10.2% week. Memory mix, the Micron/SK Hynix order book, China share of revenue. |
+| **Intel** | INTC | **Oct 22, 2026** (est., AMC) | Q3 2026 | $0.39 | The CPU-shortage receipt: DC/AI revenue growth, the "50% of demand supplied" claim, gross margin, foundry customers. Trades above its mean target. |
+| **Microsoft** | MSFT | **Oct 28, 2026** (est., AMC) | Q1 FY2027 | $4.72 | Azure growth vs the +43% last quarter, capex guide, Copilot seats. Same day as the FOMC decision. |
+| **Apple** | AAPL | **Oct 29, 2026** (est., AMC) | Q4 FY2026 | $1.98 | iPhone 18 first full read, Services, the restructuring under Ternus, and any reserve for the $5.7B patent verdict. |
+| **Palantir** | PLTR | **Nov 2, 2026** (est.) | Q3 2026 | $0.41 | US commercial growth; 161x trailing leaves no room. |
+| **AMD** | AMD | **Nov 3, 2026** (est., AMC) | Q3 2026 | $1.93 | Helios rack revenue, data-center GPU guide; trades above its mean target. |
+| **Cisco** | CSCO | **Nov 12, 2026** (est., AMC) | Q1 FY2027 | $1.32 | AI infrastructure orders from hyperscalers; margin pressure flagged by the Street. |
+| **Applied Materials** | AMAT | **Nov 12, 2026** (est., AMC) | Q4 FY2026 | $4.06 | Whether orders confirm an +11.3% week taken on Micron's capex plan. |
+| **NVIDIA** | NVDA | **Nov 17, 2026** (est., AMC) | Q3 FY2027 | $2.47 | Revenue vs ~$109B consensus; the stock is at a record into it. |
 
-**Marky's Binary Event Read:** One gate matters now: **MU Wednesday Sep 30 AMC**, doubled with core PCE the same day. The macro board is set — 10Y 5.18%, ~71% odds of an October hike, oil broken, VIX 15.3, breadth 29%. A beat-and-raise with PCE tame carries XLK through $198.73 and the index goes price-discovery. A whisper miss — or a hot PCE — into these yields opens $190–$191.75 first and the 50D ($184.10) second. Between now and then the only scheduled prints are second-tier; the Fed's speaker circuit (post-Barr hawkishness) is the live risk.
+> Dates marked "est." are Yahoo Finance calendar dates pulled Oct 3 and are not yet company-confirmed. Reported rows for MSFT, AAPL, AMD, CSCO, AMAT, NVDA and ADBE (July–September prints) were retired from this table this week; their actuals remain in the Sep 25 revision of this page.
+
+**Marky's Binary Event Read:** The MU gate is behind us and it resolved as a non-event for the stock and a breakout for the fund — the best outcome I could ask for, because it means the index no longer needs MU to go up. The next three weeks have no top-10 print until **LRCX Oct 21 and INTC Oct 22**, so the tape trades macro: CPI in mid-October, then the **Oct 27–28 FOMC with MSFT the same evening**. Both of the next two reporters come in extended — LRCX up 10% in a week, INTC above its mean target — which is the setup where a good number gets sold. I want the $198.54–$199.35 gap filled and held before any of that.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **MU (Wed Sep 30) prints the guide and raises FQ1** — ~$50B rev, 86% GM, HBM4 detail, fresh SCA conversions → the complex clears $198.73 with the only earnings story that works at 5.18% → blue sky above $200
-- Core PCE (Sep 30) prints cool — the "AI inflation floor" narrative pauses, 10Y drifts back under ~5.00% → the multiple breathes and breadth repairs toward 45%+
-- CPU shortage receipts keep landing (INTC DC revenue, AMD Helios orders) → the x86/agent-compute theme broadens from two names to the whole server complex
-- U.S.-Iran truce holds and Hormuz reopens → WTI toward $85–88 → the oil → CPI → October-hike channel drains before the Oct 28 FOMC
-- China walks back the DCS duties (or Japan negotiates an exemption) → the 2027 feedstock squeeze premium comes out of semis
+- XLK closes above **$200** and holds it — the June peak becomes support and the September base projects higher
+- The October hike stays dead and December odds fade on a second soft labor print that is soft, not broken
+- Equipment orders confirm the capex read-through (LRCX Oct 21) and INTC proves the CPU shortage in its data-center line (Oct 22)
+- The G-7 release and any Hormuz progress pull WTI into the $80s and ISM prices paid back down
+- Hyperscaler capex guides rise again in late October with power secured
 
 ### 🔴 Bear Case
-- **The 10Y closes above 5.25%** — the third redraw breaks too; 30Y through 5.45% → mortgage 7%+ becomes a consumption tax → the 29% breadth tape resolves the only way thin breadth resolves
-- Hot core PCE (Sep 30) + strong jobs (Oct 2) → the October hike goes to ~100% and the curve bear-steepens further → duration-sensitive mega-caps (MSFT at 28.8x, AAPL at 39x) finally re-rate
-- **MU misses the whisper** — the most-crowded long in the fund (mean target +40%) de-rates into a 5.18% 10Y → $190–$191.75 breaks → 50D ($184.10) is the next magnet
-- The power constraint generalizes — another force majeure (or a hyperscaler capex guide-down citing interconnect queues) → the market re-prices the entire buildout's timeline
-- Hormuz diplomacy fails → WTI back over $100 with the Fed leaning hawkish → full stagflation pricing returns at the worst possible moment
+- **Friday was a failed breakout** — a close back under $198.73 with the gap filled → $194.50, then the $192.6 double low
+- The long end keeps going with the Fed on hold — **30Y through 5.75%** — and the multiple at 35.4x finally answers
+- Payrolls +29K is the start of a real slowdown, not a reprieve: enterprise IT budgets and consumer hardware (AAPL) guide down
+- ISM prices paid at 77.9 feeds through to CPI and the December hike becomes a certainty with a weakening labor market — stagflation pricing
+- A second AI-infrastructure execution failure after ORCL's force majeure, or a hyperscaler citing power in a capex guide-down
 
 ### ⚠️ The Wild Card
-The **r\* repricing debate**. The Fair Value desk and bond strategists are now openly arguing the neutral rate has risen 50–100bp structurally because AI capex is productivity-enhancing — meaning the Fed's 3.75–4.00% may be closer to neutral than anyone assumed and the long end is doing the tightening voluntarily. If that is true, 5.00–5.25% on the 10Y is not a stress event but the new operating environment, and the market's repeated refusal to sell tech at these yields is rational — narrow breadth and all. If it is false, this is exactly how tops form: the index making highs on 29% participation while the cost of capital climbs 40bp in a fortnight. Wednesday (MU + PCE) and Oct 28 (FOMC) are the two tests that separate the stories.
+**Good results that do not move the stock.** Micron beat revenue by 7.5%, guided the next quarter 13% above the one it just reported, and finished the week lower. If that is the template for October — INTC, LRCX, MSFT, NVDA all priced for the beat — then earnings season cannot lift the fund from here and the only remaining upside driver is the multiple, which has to expand against a 5.28% 10-year. The alternative reading is rotation: the money left Micron for AMAT, LRCX, CSCO and NVDA rather than leaving the sector. One week does not separate the two. The Oct 21–22 reactions will.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"I was wrong about the ceiling and I said I would say so: the 10Y closed 5.11% and 5.18% and tech rallied. I redraw at 5.25%, but the more important change is what KIND of line it is — no longer a ceiling for tech, a ceiling for breadth. The market has voted that AI scarcity earnings outrank the discount rate while HY sits at 273bp. Fine. But 29% breadth is the bill, and bills arrive. Hold the complex into MU Wednesday; add nothing at 34.7x; stop trusting index breakouts until participation repairs. A hot PCE on the same afternoon as MU's print is the two-sided coin that decides October."*
+**Ophelia:** *"Three ceilings, three breaks, three new highs — I stop drawing lines on the 10-year for tech. The useful fact this week is that the Fed repriced softer and the long end rose anyway: 10Y 5.28%, 30Y 5.63%, with the October hike at 17%. That is supply and term premium, and a soft payrolls number does not fix it. I watch the 30-year at 5.75% and credit spreads now. Hold the complex; add nothing at 35.4x on a gap that was sold; treat +29K as the first data point of a slowdown, not a gift."*
 
-**Marky:** *"Two numbers: $198.73 and $190. Through the June high on MU-beat volume and this goes price-discovery — there is nothing above $200 but sellers' remorse. Under $194.70 warns, under $190–$191.75 the September breakout was a bull trap and $184.10 is next. I do not chase the high with breadth at 29% — either breadth repairs or the level retests; one of the two gives me the entry. Above the 50D I stay long; I add only on a confirmed retest or a breadth repair, and I cut the adds — not the core — if the 10Y closes over 5.25%."*
+**Marky:** *"$198.73 is cleared on a record close and I respect it — volume rose into it all week. But Friday opened $201.16 and closed $199.81, and that is a sold gap sitting on an unfilled one. Two numbers again: $200 above, $194.50 below. Hold $198.73 on a gap fill and I add. Close back under it and Friday was a trap. I stay long above the 50D ($186.13) and I do not buy the first print over $200."*
 
-**Cecil:** *"At 5.18%, only physical scarcity works — and this week told me which parts of the complex actually have it. MU at 6.8x forward into Wednesday is the only name I'm adding risk to, and only after the print. I harvested a third of INTC at 59.8x and half of AMD above its own mean target; the CPU-shortage story is real and already capitalized. ORCL is the lesson of the week: a trillion dollars of backlog is worth nothing without electrons — power is the new moat, and I'll pay up for the names that have secured it (MSFT Friday was the market agreeing). AAPL above target: harvested. The wild card I respect is r* — if 5%+ IS the new operating rate, the only tech worth owning is the tech whose earnings don't need a multiple."*
+**Cecil:** *"Micron did everything asked of it and the stock fell, so I bought the one I said I would buy after the print — 5.2x forward with 75% of next year sold. I did not chase AMAT or LRCX up 10–11%; LRCX at 59x trailing has 7.9% to its target and reports in three weeks. AAPL at 38x with a restructuring and a $5.7B verdict stays harvested. CSCO at 20x forward is the quiet add. The wild card I take seriously: if a 7% beat cannot move the most-loved stock in the fund, October's prints will not either."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0: XLK + holdings quotes (Fri Sep 25, 2026 close; daily bars verified with repair=True after same-day bars returned incomplete), analyst targets (fresh Sep 25 pull), fund weights via State Street funds_data (Sep 25 pull), fund metrics; weekly changes vs Fri Sep 18 close
-- Fair Value newsletter (Sep 25, 2026): INTC +46% September / 50% supply statement / 59.8x; AMD $1T cross (Sep 21) / Helios-Azure / OpenAI-Meta warrants; ARM -7.9% CFO sale; ORCL force majeure Project Jupiter (~$18B, Blue Owl); 10Y 5.11%/30Y 5.40%/2Y 4.85%; 2s10s ~25bp; 10s3M +0.92%; DXY 101.1; WTI $92.92/Brent $98.58; VLCC $1.10M/day; nat gas $3.18; copper $6.78 (Grasberg/Kamoa-Kakula/Escondida); claims 197K; new home sales 684K; mortgage 7.03%; HY 273bp; VIX 15.33; breadth 29%; META +36% September (Muse); UPS -8% week; Trump-Xi truce to Jan 10; China DCS duties 80–99%; Barr "further adjustments"; GENIUS Act stablecoin comment period; BTC $84,780 ATH
-- FRED DGS10: 2026-09-23 = 5.11, 2026-09-24 = 5.18 (highest since 2007)
-- MarketWatch / Schwab live blogs (Sep 25): 2Y 4.905% Friday; yields at/near 19-year highs; stocks lock weekly gains
-- Octagon AI (Sep 24): ~71% odds of an October +25bp; Q3 GDPNow ~5.1%
-- WSJ live coverage (Sep 21): Nasdaq +2.3% to record 27,122.09
-- Tickeron (Sep 25): MSFT +3.7% Friday on redesigned Copilot app
-- GlobeNewswire / Micron IR (Jun 24, 2026): FQ4 report date **September 30, 2026** (corrects the ~Sep 22 date carried in error last week; see also issue #110); MarketBeat consensus EPS $31.28
-- Zacks / TechFlow / CNBC (Sep 25): ORCL force-majeure detail on the New Mexico data center (power delays, regulatory setbacks)
-- Repo cross-checks: wiki/semiconductors.md + wiki/economic-calendar.md (Sep 19 updates), wiki/earnings-surveillance.md (Sep 19 — MU Sep 30, cons $31.35), issues #106/#108/#109/#110 (5% regime, utilities 52W low, Aramco allocations, feed/WTI + MU date flags)
+- Yahoo Finance / yfinance 1.6.0 (pulled Sat Oct 3, 2026): XLK + holdings daily bars through Fri Oct 2 close; weekly changes vs settled Fri Sep 25 closes; analyst mean targets, trailing/forward P/E, market caps; fund weights via funds_data; earnings-calendar dates; ^TNX / ^TYX / ^FVX / ^IRX, DXY, WTI, Brent, natural gas, copper, gold, VIX, index closes. CSVs in the workspace: T1_quotes.csv, T1_fundies.csv, T1b_*.csv, MACRO_quotes.csv, earnings_calendar.csv, T1_XLK_daily.csv
+- CNBC / Investing.com / GlobeNewswire (Sep 30): Micron FQ4 — revenue $54.23B, adj. EPS $33.42, GM 87%, FQ1 guide ~$61.5B / $38.15, FY26 revenue $133.2B; MarketBeat surprise figures; GuruFocus on capex (~$11.5B FQ1, ~$25B H1 FY27) and >75% of 2027 output committed
+- Yahoo Finance live blog, TheStreet, Schwab, Motley Fool (Oct 2): September payrolls +29K, unemployment 4.2%; NVDA record $237.88 / $5.7T; Nasdaq record
+- Quartz, FXStreet, Seeking Alpha, Finwire (Oct 2): October hike odds ~70% Monday to ~17–20% Friday; December >75%
+- Yahoo Finance / Quartz (Oct 1): 10Y touched 5.34%, highest since 2002
+- Yahoo Finance (Sep 30): August PCE 3.4% headline, 3.0% core vs 3.7% / 3.3% expected
+- ISM / PR Newswire (Oct 1): September Manufacturing PMI 54.5; prices paid 77.9
+- Washington Post / Al Jazeera (Oct 2–3): G-7 100M-barrel crude and diesel release via the IEA
+- Invezz / MarketBeat / Yahoo Finance (Sep 29): AAPL — Ternus restructuring reports, $5.7B patent verdict
+- TradingKey / Traders Union (Oct 2): CSCO +3.6% Friday — AI infrastructure orders, Bell Canada sovereign AI, ex-dividend
+- Benzinga (Oct 1): Veritone $15M registered direct offering, 20M shares at $0.75
+- Investing.com / Yahoo Finance: Digi International to acquire Disruptive Technologies for $130M
+- Not re-sourced this week (carried or omitted, and flagged in the text): S&P breadth above the 50-DMA, HY/IG spreads, the 2Y yield, XLK beta
+- Repo cross-checks: issue #114 (China DCS duties, 10Y regime, ORCL force majeure), prior revision of this page (Sep 25)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-09-25** (8 PM ET run; covering week ended Fri Sep 25, 2026)*
+*Last updated by Saturday Research Crew: **2026-10-03** (Saturday morning run; covering week ended Fri Oct 2, 2026)*
 *Next update: Every Saturday 10:00 AM ET*
 *Data sources: Yahoo Finance, Federal Reserve, U.S. Treasury / FRED, company IR, Bloomberg, Dow Jones Newswires, market data feeds*
