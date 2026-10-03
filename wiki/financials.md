@@ -95,7 +95,7 @@ Week path: Mon $54.19, Tue $54.01, Wed $53.40, Thu $53.46 (low $52.81), Fri $53.
 | Thursday Low | $52.81 | The line. A close under it confirms the 200D break |
 | May–June Base | $50.42 – $51.58 | The range XLF closed in through May; next support if $52.81 fails |
 | Structural Low | $47.34 | 52W bottom |
-| RSI (14) | 27.5 | Lowest close since June 30; BAC 22.3, PNC 27.7, SCHW 29.9, MS 30.0 |
+| RSI (14) | 27.5 | Oversold, with price at its lowest close since June 30; BAC 22.3, PNC 27.7, SCHW 29.9, MS 30.0 |
 
 **Marky Setup Assessment:** Last week's ladder was $54.50 / $53.72 / $57.08. The top rung broke Monday and the middle rung — the 200D, now $53.32 — was tested Thursday and held by seventeen cents. So the map is two numbers: **$52.81** below and **$54.46** above. Three closes within nine cents of each other ($53.40, $53.46, $53.49) on falling volume is what a floor looks like while it forms; it is also what a pause looks like before the next leg. I cannot tell them apart yet and neither can anyone else. What I can say: RSI 27.5 with all seventeen names under their 50-day is as oversold as this fund has been since the spring, the 200D has held three closes, and the first money-center prints are six sessions away. I own a small piece from Thursday's reclaim with a stop on a close below $52.81. I add on a close back over $54.46, not before. I do not short a 27 RSI on the 200-day into earnings.
 
