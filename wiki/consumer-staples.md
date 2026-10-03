@@ -2,7 +2,7 @@
 
 > **Sector:** Consumer Staples | **ETF:** Consumer Staples Select Sector SPDR (XLP) | **Expense Ratio:** 0.08%
 >
-> *"The double gate resolved, and the garden got weeded from the roots up. GIS beat earnings Tuesday morning and got sold off 7% anyway — 'higher costs weigh on profits' is now the sector's epitaph. COST beat Thursday and actually got paid (+3%), the expensive shelf's floor holding one more quarter. XLP closed $82.12 (-0.82%) — a fifth straight red week, a second week below the 200D — but the damage was concentrated exactly where the doctrine said to hide: the branded-food row (GIS -7.1%, CPB -6.2% to a fresh low, STZ -4.0% to a fresh low). The yield row held (WMT +1.1%, KDP +3.3%, PM +1.0%, EL +1.1%). The 2.59% fund yield against a 5.18% ten-year is now a -259bp carry gap, and Michigan's households just told us their inflation expectation is 4.6% — on grocery and gas prices. The shelter leaks, but it still shelters."* — Cecil
+> *"The double bottom gave way and so did the shelf under it. XLP closed $80.53 (-1.9%) — a sixth straight red week, the lowest close since April 15, through $81.70 on Wednesday and through $81.00 with it. There was no print to blame: no staples company reported. The week the labor market cracked and confidence hit a 12-year low is the week a defensive sector is supposed to be bought, and it was sold on above-average volume. Seventeen of eighteen names fell. The 2.59% yield against a 5.28% ten-year is a -269bp carry gap, and the market is finally charging it to the whole fund, expensive shelf included (WMT -3.4%). PepsiCo reports Thursday at an RSI of 26."* — Cecil
 
 ---
 
@@ -10,74 +10,80 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $82.12 | $82.80 | **-0.82%** — fifth straight weekly decline |
-| 52W Range | $74.06 – $88.89 (dividend-adjusted closing basis) | — | — |
-| AUM | ~$14.5B (yfinance totalAssets, refreshed) | ~$14.6B | — |
-| YTD Return | **~+7.0%** (price basis) | +7.93% | -0.9 pp — fading but still ahead of XLY by ~14 pts |
-| 1Y Return | ~+4.6% | ~+5.5% | Lower |
-| P/E Ratio | ~24.3 (trailing, index) | ~24.5 | Stable |
-| Dividend Yield | ~2.59% (fund dist.) | ~2.59% | Carry gap vs 5.18% 10Y now **-259bp** |
+| Price | $80.53 | $82.06 (settled) | **-1.86%** — sixth straight weekly decline |
+| 52W Range | $74.06 – $88.89 (dividend-adjusted closing basis, carried) | — | Lowest close since Apr 15 |
+| AUM | ~$14.5B (yfinance totalAssets) | ~$14.5B | — |
+| YTD Return | **~+4.9%** (price basis) | ~+7.0% | -2.1 pp; still ~12 pts ahead of XLY |
+| 1Y Return | ~+6.2% (total return) | ~+4.6% | Base effect |
+| P/E Ratio | ~23.8 (trailing) | ~24.3 | Lower |
+| Dividend Yield | ~2.59% (fund dist.) | ~2.59% | Carry gap vs 5.28% 10Y now **-269bp** |
 | Beta | ~0.52 (carried) | — | — |
-| Total Holdings | 35 (fund) / 34 (index) | — | — |
-| Avg Daily Volume | ~10M this week | ~9.0M | Heavier than average all five sessions |
+| Total Holdings | 35 (carried) | — | — |
+| Avg Daily Volume | ~12.5M this week (20D 11.0M) | ~9.8M | Mon 14.1M and Tue 14.5M — heavy before the break, not after |
 
-**Marky Tape Read:** XLP closed **$82.12, -0.82%** — a fifth straight red week — but the shape was a base, not a break: **Monday** $81.92 (week low zone $81.73), **Tuesday** $82.73, **Wednesday** $82.43 (GIS beat pre-market; the 10Y closed 5.11% and nobody sold the sector into it), **Thursday** $81.70 — the 5.18% day, the week's flush, and it HELD above Monday's $81.73 low — **Friday** $82.12. Two weeks below the 200D now, but the second week came on declining damage and a Thursday low that never broke Monday's. RSI 38.3, up from 30.5 without a real bounce. The internal tape finally agreed with the doctrine: the 34–45x expensive shelf was *bought* (COST +3.0% post-beat, WMT +1.1%, KDP +3.3%), while the branded-food value row was liquidated (GIS -7.1%, CPB -6.2%, STZ -4.0%, HSY -2.0%) — a complete inversion of last week's "buy the cheap yield" rotation, because the GIS print said the cheap names' dividends are the ones at risk from input costs. The floor of the range is now $81.70–$81.73 (double-bottomed Thursday-Monday); below that, $81.00 (the February shelf), then $74.06. Reclaiming $83.65 (200D, raw basis) is the repair.
+Week path: Mon $82.28, Tue $81.85, Wed $80.60, Thu $80.33, Fri $80.53 (low $80.13). Last week's page carried $82.12 for Sep 25; the settled bar is $82.06.
 
-**Ophelia Macro Read:** The double gate delivered its verdict, and it was nuanced: **GIS beat EPS ($0.75 vs $0.72) and guided FY27 adjusted EPS to $3.00–$3.20 (midpoint above the $3.07 consensus) — and the market sold it 7%**, because the words around the numbers were "higher costs weigh on profits." Input-cost inflation (the same beef/coffee/candy complex from the CPI detail) now threatens the *value* row's dividend coverage, which is the one thing the value row had. **COST beat cleanly** ($6.75 incl. a $184M one-time item; net sales +11.2%; membership model intact) and was paid +3% — the expensive shelf survives on execution, the cheap shelf dies on costs. Meanwhile the macro closed in from both sides: the 10Y at **5.18% Thursday** widened the carry gap to -259bp, **DXY 101.1 (+0.85%)** kept the translation tax on KO/PG/PEP/PM/MDLZ, and the **final Michigan read (48.1) showed inflation expectations jumping to 4.6% — with households explicitly citing grocery prices**. The consumer's own survey is now a margin-warning for the sector that feeds them. My stance from last week carries with one modification: the hair-trigger is still armed, but the branded-food row just showed us which floor cracks first — and it isn't the expensive one.
+**Marky Tape Read:** The level I was long against is gone. **Monday** $82.28 and **Tuesday** $81.85 held the $81.70–$81.73 double bottom on well-above-average volume — 14.1M and 14.5M — which in hindsight was distribution into a level, not defense of it. **Wednesday** -1.5% to **$80.60**: straight through the double bottom and through my $81.00 stop in one session, closing three cents off the low. **Thursday** $80.33 (low $80.15), **Friday** $80.53 (low $80.13) — two days of nothing while the rest of the market rallied on payrolls. RSI 34.8, down from 38.3; not yet the 30.5 of three weeks ago. I am stopped out of the range trade per my own rule. There is no chart support I can name between here and the adjusted 52-week low at $74.06 other than this week's own low, **$80.13**. Resistance is the broken shelf at **$81.00**, then $81.70, then the 200D ($82.68).
+
+**Ophelia Macro Read:** I armed a hair-trigger three weeks ago and it has fired: a third weekly close below the 200D, and the double bottom lost. What I want on the record is *what kind* of week it happened in. Core PCE cooled to 3.0%. Payrolls printed +29K. Conference Board confidence fell to 81.9, the lowest since 2014. October hike odds went from ~70% to ~17%. Every one of those is supposed to send money toward staples. Instead the fund lost 1.9% and Walmart lost 3.4%. The explanation that fits is the long end: the 10Y touched **5.34%** (highest since 2002) and closed 5.28%, the 30Y is 5.63%, and a fund yielding 2.59% is a bond proxy with a 269bp disadvantage. The second explanation is **DXY 101.93 (+0.95%)**, a ninth straight weekly gain into a reporting season that starts with PepsiCo — KO, PG, PEP, PM, MDLZ and CL are all translation stories. The third is that the consumer weakness is real enough to hit volumes: a household that rates its own finances as bad trades down inside the grocery store too. I move from defensive-lean to **neutral**. The shelter thesis needed this sector to be bought on bad news, and it was not.
 
 ---
 
 ## TOP HOLDINGS & MOMENTUM
 
-| Rank | Ticker | Name | Weight | Price | Change (W/W) | 52W High | 52W Low | Yield (approx.) | P/E (approx.) | Signal |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | WMT | Walmart | ~9.6% | $107.91 | **+1.11%** | $133.88 | $99.77 | ~0.9% | ~38.8 | ⚡ |
-| 2 | COST | Costco | ~8.9% | $922.50 | **+3.04%** | $1,092.58 | $846.26 | ~0.7% | ~45.0 | ⚡ |
-| 3 | KO | Coca-Cola | ~7.4% | $87.66 | -0.67% | $91.99 | $64.35 | ~2.4% | ~26.4 | ⚡ |
-| 4 | PG | Procter & Gamble | ~7.1% | $145.64 | -0.51% | $164.72 | $135.03 | ~3.0% | ~22.1 | ⚡ |
-| 5 | PEP | PepsiCo | ~5% | $128.75 | -0.77% | $165.45 | $129.75 | ~4.5% | ~17.5 | ⚠️ |
-| 6 | PM | Philip Morris Intl | ~4% | $190.48 | **+0.99%** | $200.17 | $140.59 | ~3.1% | ~26.2 | ⚡ |
-| 7 | MO | Altria | ~3% | $68.80 | -1.03% | $74.92 | $53.03 | ~6.4% | ~14.7 | 🔥 |
-| 8 | CL | Colgate-Palmolive | ~3% | $86.06 | -1.61% | $97.97 | $73.64 | ~2.4% | ~34.4 | ⚠️ |
-| 9 | KMB | Kimberly-Clark | ~3% | $98.30 | +0.45% | $121.76 | $90.70 | ~5.2% | ~19.4 | ⚠️ |
-| 10 | GIS | General Mills | ~2% | $33.75 | **-7.09%** | $51.33 | $31.62 | ~6.0% | fwd mid-teens | 🔴 |
-| 11 | SYY | Sysco | ~2% | $78.46 | -0.75% | $91.85 | $68.19 | ~2.8% | ~21.6 | ⚡ |
-| 12 | MDLZ | Mondelez | ~2% | $60.81 | -0.07% | $64.99 | $50.64 | ~3.4% | ~22.7 | ⚡ |
-| 13 | KDP | Keurig Dr Pepper | ~2% | $31.99 | **+3.34%** | $33.82 | $24.88 | ~2.9% | ~31.6 | ⚡ |
-| 14 | STZ | Constellation Brands | ~2% | $114.25 | **-3.97%** | $168.60 | $118.97→broken | ~3.5% | ~11.7 | 🔴 |
-| 15 | HSY | Hershey | ~2% | $166.37 | -2.01% | $239.48 | $161.43 | ~3.5% | ~23.0 | ⚠️ |
-| 16 | EL | Estée Lauder | ~1% | $94.47 | +1.11% | $121.64 | $66.22 | ~1.5% | high-20s fwd | ⚡ |
-| 17 | CPB | Campbell Soup | ~1% | $19.41 | **-6.19%** | $34.17 | $19.56→broken | ~4.7% | ~16.2 | 🔴 |
+| Rank | Ticker | Name | Weight | Price | Change (W/W) | Fwd P/E | Yield | Mean Target (Implied) | Signal |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | WMT | Walmart | 9.8% | $104.26 | **-3.45%** | 32.3 | 1.0% | $126.78 (+21.6%) | ⚠️ |
+| 2 | COST | Costco | 8.9% | $920.65 | -0.23% | 36.8 | 0.6% | $1,057.94 (+14.9%) | ⚡ |
+| 3 | KO | Coca-Cola | 7.3% | $85.65 | -2.46% | 24.3 | 2.5% | $94.65 (+10.5%) | ⚠️ |
+| 4 | PG | Procter & Gamble | 7.2% | $144.91 | -0.90% | 19.6 | 3.0% | $160.61 (+10.8%) | ⚡ |
+| 5 | PM | Philip Morris Intl | 6.2% | $187.46 | -0.74% | 20.4 | 3.4% | $208.13 (+11.0%) | ⚡ |
+| 6 | TGT | Target | 4.7% | $156.00 | -0.92% | 16.3 | 3.0% | $164.68 (+5.6%) | ⚡ |
+| 7 | CL | Colgate-Palmolive | 4.5% | $84.26 | -2.09% | 20.5 | 2.5% | $98.60 (+17.0%) | ⚠️ |
+| 8 | PEP | PepsiCo | 4.4% | $125.89 | -2.13% | 14.1 | 4.7% | $149.36 (+18.6%) | 🔴 |
+| 9 | MDLZ | Mondelez | 4.4% | $58.19 | -2.57% | 17.3 | 3.6% | $69.23 (+19.0%) | ⚠️ |
+| 10 | MO | Altria | 4.2% | $67.35 | -2.14% | 11.5 | 6.6% | $70.00 (+3.9%) | 🔥 |
+| — | KMB | Kimberly-Clark | (outside top 10) | $94.36 | **-4.14%** | 12.6 | 5.4% | $116.20 (+23.1%) | 🔴 |
+| — | GIS | General Mills | (outside top 10) | $32.01 | **-4.85%** | 10.2 | 7.6% | $37.00 (+15.6%) | 🔴 |
+| — | SYY | Sysco | (outside top 10) | $77.49 | -0.53% | 14.4 | 2.8% | — | ⚡ |
+| — | KDP | Keurig Dr Pepper | (outside top 10) | $30.37 | **-4.26%** | 12.0 | 3.0% | — | ⚠️ |
+| — | STZ | Constellation Brands | (outside top 10) | $112.87 | -0.67% | 9.2 | 3.7% | — | 🔴 |
+| — | HSY | Hershey | (outside top 10) | $160.19 | -3.72% | 16.2 | 3.6% | — | ⚠️ |
+| — | EL | Estée Lauder | (outside top 10) | $91.97 | -2.65% | 23.5 | 1.5% | — | ⚡ |
+| — | CPB | Campbell's | (outside top 10) | $19.62 | **+2.58%** | 10.7 | 5.1% | — | ⚡ |
 
-> 🔥 = Deep value / high yield | ⚡ = Neutral / stable | ⚠️ = Expensive / overvalued | 🔴 = Event-driven stress
+> 🔥 = Deep value / high yield | ⚡ = Neutral / stable | ⚠️ = Expensive / under pressure | 🔴 = Event-driven stress
 >
-> *All 17 rows refreshed to Fri 9/25 closes this cycle (dividend-adjusted basis; weekly changes date-pinned Fri 9/18 → Fri 9/25). Weights per SSGA early-Sep index data (carried). Arrows mark 52W lows broken this week.*
+> *Prices are Fri Oct 2 closes; weekly changes vs settled Fri Sep 25 closes; forward P/E, yield and targets from the Oct 3 Yahoo pull. **Weights refreshed (Yahoo funds_data, Oct 3): WMT 9.8%, COST 8.9%, KO 7.3%, PG 7.2%, PM 6.2%, TGT 4.7%, CL 4.5%, PEP 4.4%, MDLZ 4.4%, MO 4.2%.** The weights this page carried from early September were stale: PM, CL, MDLZ and MO are each 1–2 points larger than shown, **Target is the #6 holding and is tracked here for the first time**, and KMB and GIS are outside the top 10. Forward P/E and mean target replace the 52-week high/low and trailing P/E columns.*
 
-**Weekly winners:** KDP (+3.3%), COST (+3.0%), PM (+1.0%), WMT (+1.1%), EL (+1.1%), KMB (+0.5%). **Losers:** GIS (-7.1%), CPB (-6.2%), STZ (-4.0%), HSY (-2.0%), CL (-1.6%). **Fresh 52-week closing lows: CPB ($19.41) and STZ ($114.25).** The rotation that worked for a month — buy the cheap yield, hide in tobacco — inverted violently in the GIS aftermath: the market decided the value row's *costs* are the risk (GIS's input inflation), not its yield the reward. Note who held up: execution-monopolies (COST's beat paid, WMT bid, KDP +3.3%) and the tobacco row (PM green, MO only -1% after last week's +2.4%).
+**Weekly winners:** CPB (+2.6%) — one name. **Losers:** GIS (-4.8%), KDP (-4.3%), KMB (-4.1%), HSY (-3.7%), WMT (-3.4%), EL (-2.6%), MDLZ (-2.6%), KO (-2.5%). Seventeen of eighteen tracked names fell.
 
-**The GIS Verdict (new):** General Mills reported FQ1 Tuesday: **EPS $0.75 vs $0.72 consensus; FY27 adjusted EPS guide $3.00–$3.20** (midpoint $3.10 vs $3.07 consensus). A beat and a raise. The market's answer: a shrug Wednesday (+$0.16) and then **-6.1% Thursday** on the 5.18% tape, closing the week -7.1%. Seeking Alpha's summary is the market's logic: "beats conservative estimates, but higher costs weigh on profits." The branded-food dividend-coverage question this page has carried for weeks got its first live answer — and the answer is that a 6% yield with rising input costs and flat volumes is not a floor, it's a maybe. At $33.75 the yield is now ~6.0%, the chart is three points over the $31.62 low, and Cramer said the quiet part out loud: he can't recommend it.
+**Last week's lesson reversed.** A week ago the market paid the expensive shelf and sold the value row. This week it sold both: **WMT -3.4%** (below its 50D and 200D) and **KDP -4.3%** gave back all of last week's gains, while GIS and KMB kept falling and the only green was CPB — the name that made a fresh low last week. That is what indiscriminate selling of a sector looks like, as opposed to a rotation inside it.
 
-**The COST Floor-Test, Passed (new):** Costco reported Q4 Thursday AMC: **EPS $6.75 vs $6.54 consensus** (helped by a one-time $184M tax item), net sales +11.2% to $93.9B, comps strong, membership model intact. The market paid it: **+2.9% Friday to $922.50**, +3.0% on the week — the expensive shelf's floor-test passed for another quarter. COST remains below its 50D ($934.72) and 200D ($958.13); the September sales print lands Oct 7. At ~45x trailing, this is the multiple the whole sector's "expensive defensive" thesis rests on, and it keeps not breaking.
+**Three names at or near 52-week lows going into their own events:**
+- **PEP $125.89, RSI 26.1** — its 52-week closing low is $125.60. Reports **Thu Oct 8** (consensus $2.30). It trades at 14.1x forward with a 4.7% yield.
+- **STZ $112.87, RSI 24.6** — its low is $112.77. Reports **Tue Oct 6** (consensus $3.55), 9.2x forward.
+- **GIS $32.01, RSI 26.6** — traded to $31.74 this week, $0.12 above its 52-week closing low. Coverage of September's -22% cites sales declines in all three U.S. units, a reaffirmed FY27 sales guide of -1.5% to +0.5%, and a CEO appointment read as a status-quo choice. The yield is 7.6%.
 
-**CPB and the Branded-Food Contagion (new):** Campbell's fell **-6.2% to $19.41 — a fresh 52-week closing low** — with no company headline, pure sympathy with the GIS cost-inflation read plus Thursday's rate tape. The low-yield real-staples row (CPB 4.7%, GIS 6.0%) is now the market's shorthand for "dividends that input inflation can eat." PEP (-0.8%) held only because its October 8 print hasn't happened yet.
+**KMB -4.1% to $94.36 (RSI 28.8).** Kimberly-Clark's lowered 2026 outlook — organic growth about 100bp below its category, citing social-media-driven disruption in China — is the standing reason; it reports Nov 3.
 
-**Cecil Fundamental Read:** My rule survived its first live test and I passed it, but barely. I did NOT own GIS into the print — the right call, since a beat-and-raise lost 7% — and the reason is the doctrine, not luck: a 6.7% yield with unanswered volume questions is a falling knife, and this week the knife fell on the owners. What I own and keep: MO at 14.7x/6.4% (the honest carry, no input-cost alchemy), PM, and now KDP after a +3.3% week on no news — 31x is rich but the coffee-system cash flows are the closest thing to a toll road in beverages. COST at 45x I will never own, but I acknowledge what this week proved: execution buys the expensive shelf one more quarter every quarter. The question the GIS print actually answered: where does the dividend-cut risk live? Answer: in the branded-food value row (GIS's costs, CPB's leverage, STZ's beer decline) — not the expensive row. I am watching, not buying, the 6% yields. The garden's weeds turned out to be wearing the roots' clothes.
+**Cecil Fundamental Read:** I told you to hold the honest carry and the toll roads, and they fell 2% and 4%. MO at 11.5x and a 6.6% yield I keep — the coupon is the return and the coupon is covered. KDP I bought the week before it gave back everything; at 12.0x forward (not the 31x trailing I quoted) it is cheaper than I described and I hold it. What I will not do is treat this week as a reason to buy the 7.6% yield at GIS: sales are falling in every U.S. unit and the guide says they keep falling. A dividend funded by a shrinking business is a liquidation in installments. The live question is PepsiCo on Thursday. At 14.1x forward with a 4.7% yield and an RSI of 26, the bad news has a price; if the guide holds I buy, if it is cut I am glad I waited four days. And a correction to my own page: Target is 4.7% of this fund and I had never written its name.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *The Captains flagged that our briefs track mega-caps only. This section sources sub-$5B consumer staples names with live quotes, real catalysts, and Council-relevant reads. No mega-caps repackaged. Rotated as market caps change.*
+> *Sub-$5B consumer staples names with live quotes and Council reads. Rotated as market caps change.*
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| CHEF | The Chefs' Warehouse | **$4.50B** ✅ | $110.27 | -0.52% | No fresh print; held flat against the GIS-contagion tape — specialty distribution has no branded-input-cost problem | Still on graduation watch ($4.50B). The fuel-cost question eases with WTI at $92.92. Oct 28 print is the next hard data |
-| ANDE | The Andersons | **$2.28B** ✅ | $67.05 | -3.79% | No fresh print; pulled down with the ag-input complex post-GIS (cost-inflation sympathy) | The strong_buy rating (3 analysts, $88.33 target, 10.5x forward) makes this the sleeve's cheapest quality. The sympathy drop is an opportunity if Nov 3 confirms |
-| NOMD | Nomad Foods | **$1.49B** ✅ (ROTATED IN) | $10.63 | -0.28% | **Rotated in for SPTN** — no fresh print; frozen-food category is the GLP-1-adjacent read to watch | European frozen leader at 5x analysts' $13.42 target; below its 50D ($11.57) with the sector. The frozen category's volume resilience is the open question — this name answers it |
-| UVV | Universal Corp | **$1.06B** ✅ | $42.47 | -3.78% | No fresh print; tobacco-adjacent leaf complex sold with the dollar/rate tape despite MO/PM holding | 7.8% yield — the sleeve's highest — but the leaf business carries the volume questions MO's pricing power doesn't. Size discount applies |
-| JBSS | John B. Sanfilippo & Son | **$0.79B** ✅ | $67.24 | -0.10% | Stabilized after the post-special-dividend adjustment; no fresh print | The nut complex eats the same input-cost story as GIS (cocoa/nuts), but the balance sheet just proved itself ($2.00 special). Watch the Oct 28 print |
+| CHEF | The Chefs' Warehouse | **$4.75B** ✅ | $116.42 | **+5.6%** | Record high Friday ($118.51 intraday, +3.4% on the day); last quarter EPS $0.78 vs $0.59 expected on $1.17B revenue; several price targets raised to $125–$131; +86.8% YTD | **$0.25B from graduation.** One more +5% week forces a swap. The best chart in the sector by a distance |
+| ANDE | The Andersons | **$2.30B** ✅ | $67.72 | +1.4% | No fresh print; corn futures -5.8% and wheat -2.9% on the week | Sitting on its 200D ($67.72 exactly). Cheap at 10.6x forward; falling grain is a mixed input for a merchandiser |
+| JBSS | John B. Sanfilippo & Son | **$0.80B** ✅ | $68.52 | +1.9% | No fresh print | Below both averages; quiet |
+| NOMD | Nomad Foods | **$1.49B** ✅ | $10.65 | +0.2% | No fresh print; 6.4x forward, 6.4% yield | Flat in a down tape; the dollar's rise is a translation headwind for a euro earner |
+| UVV | Universal Corp | **$1.05B** ✅ | $42.20 | -0.6% | No fresh print; RSI 30.5; 52-week low is $41.65 | 7.9% yield a half-dollar above its low. Size and leaf-volume discount still apply |
 
-**Council Note:** **SPTN ROTATED OUT — the SpartanNash quote is dead.** Yahoo returns 404 across quote/history/info; the company was acquired by C&S Wholesale Grocers ($1.77B deal announced June 2025) and delisted from Nasdaq effective **September 22, 2025** — the wiki had been carrying a ghost for a year; this week's pull makes it official. Replacement: **NOMD** (Nomad Foods, $1.49B) — frozen-food category read. Remaining four re-verified sub-$5B: CHEF $4.50B, ANDE $2.28B, UVV $1.06B, JBSS $0.79B. The sleeve's week was quiet except for the GIS contagion reaching ANDE — sympathy, not signal.
+**Council Note:** All five re-verified sub-$5B at the Oct 2 close (CHEF $4.75B, ANDE $2.30B, NOMD $1.49B, UVV $1.05B, JBSS $0.80B). No rotations. Four of the five rose in a week when seventeen of eighteen large caps fell — as in discretionary, the small end is outperforming. CHEF's record high was the only dated company headline found for the sleeve this week; the other four were not individually news-searched.
 
 ---
 
@@ -86,17 +92,18 @@
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $88.89 | Major resistance (dividend-adjusted closing basis) |
-| 50-Day MA | ~$84.8 | Falling — first supply above |
-| 200-Day MA | ~$83.6 | **Second straight weekly close below** — the break continues but isn't accelerating |
-| Current Price | $82.12 | Fri 9/25 close; -0.82% W/W; fifth red week |
-| Double Bottom | $81.70–$81.73 | Thursday's flush low held above Monday's $81.73 — the range floor is defended |
-| First Support | $81.00 | The February breakout shelf — lose the double bottom and this is next |
+| 50-Day MA | $83.94 | Falling |
+| 200-Day MA | $82.68 | **Third straight weekly close below** — the break is confirmed |
+| Broken Double Bottom | $81.70–$81.73 | Held Monday and Tuesday, lost Wednesday. Resistance now |
+| Broken Shelf | $81.00 | The February shelf — lost the same day |
+| Current Price | $80.53 | Fri 10/2 close; -1.86% W/W; sixth red week; lowest close since Apr 15 |
+| Week Low | **$80.13** | Friday's low; Thursday's was $80.15. The only nearby support |
 | Deep Support | $74.06 | 52W bottom (adjusted basis) |
-| RSI(14) | 38.3 | Repaired from 30.5; no capitulation, no bounce |
+| RSI(14) | 34.8 | Down from 38.3; above the 30.5 of three weeks ago |
 
-**Marky Setup Assessment:** The 200D break is two weeks old and hasn't accelerated — that is the most important fact on this board. Last week's marginal break (17 cents) looked like it might follow through; instead the fund based at $81.70–$82.73 all five sessions and Thursday's 5.18% flush *held above Monday's low*. The double bottom at $81.70–$81.73 is the level: hold it and the repair back to the 200D ($83.6) is the trade — a reclaim of $83.6–$84.0 on the back of COST's follow-through and a soft PCE would flip this page's stance back to neutral-defensive. A daily close under $81.00 opens $74.06 by steps. Inside the sector the map changed: the springs are now in the expensive row's wake (COST held its beat, KDP +3.3%), and the capitulation candidates are the value row that already broke (CPB/STZ fresh lows). GIS at RSI 34 after -7% is a falling knife with a 6% yield attached — the textbook says wait for the base, and I follow the textbook.
+**Marky Setup Assessment:** Last week's trade was long the double bottom with a stop on a daily close under $81.00. Wednesday closed at $80.60. I am out, and the risk scenario this page put at 35% — a third weekly close below the 200D — is what happened. What I have now is a fund that has made a lower low on higher volume, with RSI at 34.8 and *not* diverging, sitting on two days of lows a few cents apart ($80.15, $80.13). That pair is the only thing to trade against. Holding $80.13 and reclaiming $81.00 would be a failed breakdown and I would take it back toward the 200D. A close under $80.13 has no named support until the low $70s. I do not short a defensive sector at a 34 RSI three sessions before its first earnings print; I also do not buy it. The single-name setups are cleaner than the fund: PEP and STZ both report this week within a dollar of 52-week lows with RSIs in the mid-20s.
 
-**Relative Strength:** XLP **-0.82% vs SPY ~+1%** — a fifth straight week of underperformance in absolute terms, but the *relative* job held again: -0.82% against XLY's -0.42% is a wash, and against the 5.18% 10Y the sector's drawdown remains a third of what bond-proxy math would predict. YTD: XLP +7.0% vs XLY -6.8% — a 14-point spread that is this market's recession-vote, printed weekly.
+**Relative Strength:** XLP **-1.86% vs SPY -0.2%** — and worse than XLY (-0.5%) in a week of bad consumer data. YTD: XLP +4.9% vs XLY -7.3% — the spread narrowed to about 12 points from 14.
 
 ---
 
@@ -104,85 +111,99 @@
 
 | Factor | Level | Implication for XLP |
 |---|---|---|
-| **10Y Treasury** | **5.18% Thu close** (FRED; 19-year high); ~5.15% Friday | XLP's ~2.59% yield vs ~5.18% risk-free = **-259bp carry gap**, widest of the cycle. The GIS aftermath showed the market now charges this gap against the *value* row first |
-| **FOMC posture** | 3.75–4.00%; Barr hawkish; **~71% October +25bp odds** | The second hike is the base case. Bond-proxy math worsens for another three weeks minimum. Next FOMC Oct 28 |
-| **DXY** | **101.1 (+0.85% W/W)** | Translation tax persists on KO/PG/PEP/PM/MDLZ. PM/KO held anyway — the market is absorbing it |
-| **UMich (final Sep)** | **48.1**; **inflation expectations 4.6%** (from 4.0% prelim); households cite grocery and gas prices | The survey became a margin-warning: the consumer expects food inflation to worsen, which is both a volume risk (trade-down) and the reason the Fed's October hike stays priced |
-| **WTI / diesel** | **$92.92 (-2.7% W/W)** on U.S.-Iran truce hopes | The second-front cost pressure is easing — real relief for SYY/CHEF distribution margins and grocery logistics costs if it holds |
-| **GIS FQ1 (Sep 23)** | EPS $0.75 vs $0.72; FY27 guide $3.00–3.20 (mid above cons) — **and the stock -7.1%** | The week's defining event: input-cost inflation ("higher costs weigh on profits") now trumps earnings beats in the branded-food row. Dividend-coverage questions moved from theoretical to priced |
-| **COST Q4 (Sep 24)** | EPS $6.75 vs $6.54 (one-time $184M item); net sales +11.2%; **stock +3.0%** | The expensive shelf passed its floor-test again. Execution is the only multiple defense at 45x, and Costco keeps executing |
-| **Food-at-home CPI** | July +2.7% YoY (carried); August detail Oct 14 | Beef/coffee/candy still the pain points; the next CPI food print grades the GIS cost thesis |
-| **GLP-1 / private label** | GIS volumes flat; SMPL bounce faded (no fresh print) | No new large-cap evidence this week; the trade-down-without-demand-destruction regime continues to favor WMT/COST/DG over branded |
-| SPY (context) | ~$770, +~1% W/W | The index's gain came from tech; staples did its underperforming-while-falling-less job |
+| **10Y Treasury** | **5.28% Fri**; 5.34% intraday Thu (highest since 2002); 30Y 5.63% | XLP's ~2.59% yield vs 5.28% = **-269bp carry gap**, wider again. This week the whole fund paid for it, not just the value row |
+| **FOMC posture** | 3.75–4.00%; October hike odds ~70% → **~17%**; December >75% | The front end eased and it did not help. Bond proxies trade the long end. FOMC Oct 27–28 |
+| **DXY** | **101.93 (+0.95% W/W)**; 52W high 102.10 | The risk table's "DXY >102" scenario is 0.17 away, into PEP (Oct 8) and the KO/PM/PG/MDLZ prints that follow |
+| **Consumer** | Conference Board confidence **81.9** (lowest since 2014); payrolls +29K | Trade-down pressure inside the store: private label and club formats gain, branded volume loses. Not the defensive bid the sector expected |
+| **Core PCE (Aug)** | 3.0% (exp 3.3%) | Cooler headline inflation limits pricing power for the branded row |
+| **WTI / diesel** | WTI $91.11 (-1.4%); **G-7 release of 100M barrels, diesel front-loaded** | Distribution and logistics cost relief (SYY, CHEF, grocers) if the release works |
+| **Grains** | Corn **-5.8%** W/W ($4.98/bu), wheat **-2.9%** ($6.83/bu) | Input relief for packaged food and protein — the first good cost news the GIS/CPB row has had in a month |
+| **Softs** | Cocoa $5,670 (+0.9%), coffee $2.89/lb (+3.6%); **sugar front-month +13.9%** | The sugar move coincides with the front contract rolling from October to March and is **most likely a roll artifact, not a spot spike** — not treated as a trigger. Verify before acting |
+| **Food-at-home CPI** | Next detail with September CPI, mid-October | Grades the cost thesis |
+| **GLP-1 / private label** | No new large-cap evidence this week | GIS's sales declines in all three U.S. units are the standing datapoint |
+| SPY (context) | $769.64, -0.2% W/W | Tech made a record; staples made a five-and-a-half-month low |
 
-**Ophelia Verdict:** Defensive-lean, hair-trigger still armed — but the double gate resolved better than the tape suggests. Read it carefully: the 200D break did NOT accelerate in week two; the expensive shelf (COST) proved its floor; and the damage concentrated exactly where the new information was (GIS's costs → the branded-value row). What changed permanently this week: the market now prices input-cost inflation as the binding constraint on staples *dividends*, not just margins — that is why a beat-and-raise lost 7%. The two-week-old 200D break needs one more week to confirm or fail; the double bottom at $81.70–$81.73 is the tell. My stance: hold the yield-complex overweight but shift its center from branded food (GIS/CPB/STZ are now watch-list, not positions) toward the toll roads (PM, KDP, MO) and the trade-down execution names (WMT). Next gates: core PCE Sep 30 (the October-hike referendum) and COST's September sales Oct 7. The shelter leaks at the value end — keep the expensive end and the honest-carry end, and stop pretending the 6% yields are safe just because they're cheap.
+**Ophelia Verdict:** The trigger fired and I move to **neutral** from defensive-lean. I held the shelter thesis through a 200D break on the argument that the damage was confined to the names with new bad information. This week there was no new company information at all, the macro handed the sector its textbook setup, and it fell on volume with Walmart leading. A defensive that does not defend is a bond proxy with equity risk, and at -269bp of carry that is not a trade I want size in. What would change my mind, in order: the long end stabilizing (10Y back under 5.10%), PepsiCo holding its guide on Thursday, or the fund reclaiming $81.00. What I keep: tobacco as carry (MO, PM) and nothing in branded food. I am not opening a new issue — the rate regime is already tracked in #106, #114 and #123, and no staples-specific trigger was met.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLP (week ending 2026-09-25)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLP (week ending 2026-10-02)
 
-### This Week's Story: The Gatekeeper's Verdict — Beats Aren't Enough Anymore
+### This Week's Story: The Shelter Was Sold on the Week It Should Have Been Bought
 
-**The double gate resolved, and it weeded the garden.** XLP closed **$82.12, -0.82%**, a fifth straight red week — but the week's real story is what happened when the sector's two most-watched prints landed 48 hours apart and taught opposite lessons.
+XLP closed **$80.53, -1.9%** — a sixth straight losing week and its lowest close since mid-April.
 
-**Tuesday: GIS beats, and the market sells the beat.** General Mills printed FQ1 EPS of **$0.75 against a $0.72 consensus** and guided FY27 adjusted EPS to **$3.00–$3.20** — a beat and, at midpoint, a raise. The stock gained sixteen cents Wednesday morning. Then Thursday came — the 10Y's 5.18% close — and GIS fell **-6.1% in a session**, finishing the week **-7.1%**. The market's logic, per the analyst summaries: "beats conservative estimates, but higher costs weigh on profits." The branded-food row's dirty secret — that a 6%+ yield is only as safe as the input-cost line above it — got priced in a single afternoon. Campbell's, with no news at all, followed to a fresh 52-week closing low (-6.2%). Constellation, with its own beer-demand problems, made a fresh low too (-4.0%).
+**The break.** Last week's double bottom at $81.70–$81.73 held on Monday and Tuesday on 14M-share sessions, then failed on Wednesday: a 1.5% drop to $80.60 that also took out the $81.00 shelf beneath it. Thursday and Friday marked time near $80.15. This is the third weekly close below the 200-day moving average.
 
-**Thursday night: COST beats, and the market pays the beat.** Costco's Q4 — EPS $6.75 against $6.54 (a $184M one-time item flattered it), net sales +11.2%, the membership engine intact — was rewarded the old-fashioned way: **+2.9% Friday**, +3.0% for the week, the best major-capitalization staples move of 2026. The lesson of the two prints, side by side: in this tape, the market pays for pricing power and punishes cost exposure, and it no longer cares which P/E either one comes wrapped in. The "expensive defensive" thesis survived its quarterly exam. The "cheap yield" thesis failed it.
+**No company caused it.** No constituent reported this week. General Mills extended to within cents of a 52-week low (-4.8%) and Kimberly-Clark fell 4.1%, both on problems already known — falling sales at one, a lowered outlook tied to China at the other. But the selling was broad: Walmart -3.4%, Keurig Dr Pepper -4.3%, Hershey -3.7%, Coca-Cola -2.5%. Last week's winners gave back their gains. Seventeen of eighteen names tracked here fell; Campbell's, which made a fresh low the week before, was the one that rose.
 
-**The macro closed in from both flanks.** The 10Y's Thursday close at 5.18% stretched the carry gap to **-259bp**. The dollar held 101.1. And Friday's final Michigan read delivered the week's most quietly dangerous number: **inflation expectations at 4.6%**, with households naming grocery and gas prices. The consumer expects the cost pressure that just broke GIS's stock to get worse — which is both the sector's margin problem and the Fed's reason to hike in October.
+**The macro said buy and the tape said sell.** Consumer confidence dropped to its lowest since 2014 on Tuesday. Core PCE cooled on Wednesday. Payrolls printed +29K on Friday and the October rate hike was priced out. That is the environment defensive sectors exist for. What pushed the other way was the long end of the bond market — the 10-year touched 5.34%, the highest since 2002, and closed at 5.28% — and a dollar that rose for a ninth straight week. A fund yielding 2.59% now sits 269 basis points below the risk-free rate.
 
-**The Bottom Line:** The shelter's floor cracked two weeks ago at the 200-day, and this week the market showed which floorboards rot first: not the expensive shelf (COST passed), but the value row (GIS/CPB/STZ broke). XLP sits on a defended double bottom at $81.70–$81.73 with a -259bp carry gap overhead and a 71%-priced October hike behind it. Next week decides whether the leak is structural: core PCE on the 30th, then the market either repairs to the 200D or starts pricing which dividend gets cut first.
+**Small relief on costs.** Corn fell 5.8% and wheat 2.9%, and the G-7 agreed to release fuel stocks with diesel first. A double-digit jump in front-month sugar looks like a contract roll and is not treated here as a price spike.
+
+**The Bottom Line:** The sector lost its support with no earnings miss to explain it and no defensive bid to stop it. Earnings now take over: Constellation on Tuesday and PepsiCo on Thursday, both at RSIs in the mid-20s and within a dollar of 52-week lows. If PepsiCo holds its guide into a strong dollar, $81.00 can be reclaimed. If it cuts, there is no named support until the low $70s.
 
 ---
 
 ## EARNINGS CALENDAR
 
-| Date | Ticker | Company | Focus |
-|---|---|---|---|
-| **Tue Sep 23** | **GIS** | General Mills | **REPORTED ✔** — EPS $0.75 vs $0.72; FY27 adj EPS guide $3.00–3.20; "higher costs weigh on profits"; stock -7.1% on the week |
-| **Thu Sep 24** | **COST** | Costco | **REPORTED ✔** — EPS $6.75 vs $6.54 (one-time $184M item); net sales +11.2%; +3.0% W/W; Sept sales Oct 7 |
-| Oct 6 | STZ | Constellation Brands | Beer demand from a fresh 52W low ($114.25); 11.7x — the value row's next exam |
-| Oct 7 | COST | Costco | September sales (5 weeks) — the first post-print traffic read |
-| Oct 8 | PEP | PepsiCo | The FX/translation + volume print; guidance reset risk after last week's fresh low |
-| Oct 14 | — | CPI (August food detail) | Grades the GIS cost thesis: beef/coffee/candy |
-| Oct 20–22 | KO, PM, PG, SMPL | Coca-Cola, Philip Morris, P&G, Simply Good | Multinational FX math; PG's tariff-cost update; SMPL post-bounce |
-| Oct 26–29 | KDP, MDLZ, CHEF, JBSS, MO | Beverage/snack row + SMIDs | Cocoa costs (MDLZ); MO's smokeless pricing; CHEF/JBSS post-GIS |
-| Oct 30–Nov 5 | CL, EL, SYY, ANDE, KMB, HSY, UVV | Second wave | KMB deal timeline; SYY distribution margins as diesel falls |
+Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-confirmed); EPS is the Yahoo consensus mean.
+
+| Date | Ticker | Company | EPS Est. | Focus |
+|---|---|---|---|---|
+| **Tue Oct 6** | **STZ** | Constellation Brands | $3.55 | Beer depletions from a 52-week low; 9.2x forward, RSI 24.6 |
+| Wed Oct 7 | COST | Costco | — | September sales (carried from last week's page) |
+| **Thu Oct 8** | **PEP** | PepsiCo | $2.30 | Volume, FX at DXY ~102, the FY guide; RSI 26.1 at a 52-week low |
+| Mid-October | — | September CPI (food detail); retail sales | — | Food-at-home inflation; whether spending follows confidence |
+| Wed Oct 21 | PM | Philip Morris Intl | $2.34 | Smoke-free volumes, FX |
+| Thu Oct 22 | PG | Procter & Gamble | $1.89 | Organic growth, tariff costs, FX |
+| Tue Oct 27 | KO, MDLZ | Coca-Cola, Mondelez | $0.88 / $0.71 | FX; cocoa costs |
+| Thu Oct 29 | MO | Altria | $1.51 | Pricing, smokeless |
+| Fri Oct 30 | CL | Colgate-Palmolive | $0.93 | Emerging-market FX |
+| Mon Nov 2 | EL | Estée Lauder | $0.51 | China, travel retail |
+| Tue Nov 3 | KMB, SYY, KDP | Kimberly-Clark, Sysco, Keurig Dr Pepper | $1.60 / $1.19 / $0.62 | KMB's lowered outlook; diesel relief at SYY |
+| Thu Nov 5 | HSY | Hershey | $2.12 | Cocoa |
+| Thu Nov 19 | WMT | Walmart | $0.64 | Trade-down share, grocery mix |
+| Dec 10 / Dec 23 | COST / GIS | Costco / General Mills | $4.94 / $0.95 | — |
+| Late Oct – early Nov | CHEF, JBSS, ANDE, UVV | SMID sleeve | — | Dates carried from last week's page |
 
 ---
 
 ## RISK SCENARIOS
 
-| Scenario | Probability (ch. from 9/18) | Trigger | XLP Impact | Action |
+| Scenario | Probability (ch. from 9/25) | Trigger | XLP Impact | Action |
 |---|---|---|---|---|
-| **200D break confirms (3rd weekly close below $83.6)** | 35% (was 25%) | Slow PCE + Oct hike pricing | -3–4%, $81.00 then $74.06 | Cut to benchmark; shelter thesis review |
-| Branded-food dividend fear spreads (PEP/HSY pre-print) | 30% (new) | PEP Oct 8 guidance language; cocoa/beef CPI | Value row -5–8% more | Exit GIS/CPB/STZ watch-list entirely; toll-roads only |
-| Bond-proxy bleed continues | 35% (was 40%) | 10Y holds ≥5.10%; Oct hike delivered | -1–2%/week grind | 14–22x honest-carry row only; no 34–45x adds except COST on capitulation |
-| Dollar rally extends (DXY >102) | 25% (was 30%) | Post-hike momentum | Multinationals -2–3% extra | Underweight KO/MDLZ vs domestic MO/GIS-when-it-bases |
-| Relief: soft PCE + ISM cooling + 10Y <5.00% | 20% (unch.) | Sep 30 PCE cool | +3–4%; 200D reclaimed; value row bounces hardest | Add PEP pre-print; COST on strength |
+| ~~200D break confirms (3rd weekly close below)~~ | **Happened** (was 35%) | Third close below $82.68; double bottom and $81.00 lost | -1.9% this week | Cut to benchmark — done; shelter thesis under review |
+| Breakdown extends below $80.13 | 35% (new) | PEP guide cut; 10Y back above 5.34% | -4–8%, no named support until the low $70s | No new longs; tobacco carry only |
+| Branded-food dividend fear spreads (PEP/HSY) | 35% (was 30%) | PEP Oct 8 guidance language | Value row -5–8% more | Stay out of GIS/CPB/STZ |
+| Dollar rally extends (DXY >102) | 40% (was 25%) | 0.17 away; nine weekly gains | Multinationals -2–3% extra | Underweight KO/MDLZ/CL vs domestic names |
+| Failed breakdown: $81.00 reclaimed | 25% (new) | PEP holds its guide; long end eases | +2–3% to the 200D | Buy the reclaim, not before |
+| Relief: 10Y <5.00% | 15% (was 20%) | Second weak labor print pulls the long end down | +3–4%; value row bounces hardest | Add PEP post-print |
+
+*Probabilities are the desk's judgment, not a model output.*
 
 ## COUNCIL READ
 
-- **Ophelia (risk/regime):** Defensive-lean, trigger still armed but the evidence improved in week two of the break: no acceleration, a defended double bottom, and the damage confined to the row the new information implicated. The structural change to log: input-cost inflation now prices ahead of earnings beats in branded food. Rate regime remains **#106**/#114 territory; no new issue from this desk.
-- **Marky (momentum):** Bearish-to-neutral. The 200D break is two weeks old and going nowhere — that changes the trade from "sell rallies" to "trade the range": long the $81.70–$81.73 double bottom against $83.6, stop on a daily close under $81.00. The springs are spent; the next real signal is PCE Wednesday.
-- **Cecil (value):** The doctrine passed its live exam — I wasn't in GIS, and GIS beat-and-lost 7%. The garden reallocates: honest carry (MO, PM), toll roads (KDP), execution (WMT, COST-when-cheap). The 6% yields (GIS, CPB, UVV) are watch-list only until the input-cost line turns — a cheap dividend you can't trust is just a smaller lie than a 45x P/E. PEP on October 8 is the next exam; if it guides clean at 17.5x, the value row gets one more look.
+- **Ophelia (risk/regime):** **Neutral, down from defensive-lean.** The hair-trigger fired: third weekly close under the 200D, double bottom lost, on a week with no company news and a textbook defensive macro. A shelter that is sold on bad news is a bond proxy at -269bp of carry. Keep tobacco as carry; nothing in branded food. Rate regime tracked in #106/#114/#123.
+- **Marky (momentum):** Stopped out of the range long on Wednesday's close under $81.00. No position. $80.13 is the only support to trade against; I buy a reclaim of $81.00 and stand aside below $80.13. PEP and STZ at mid-20s RSI into prints are better setups than the fund.
+- **Cecil (value):** MO held, KDP held, both down. GIS at a 7.6% yield stays a no — sales are falling in every U.S. unit. PepsiCo on Thursday is the decision: 14.1x forward and a 4.7% yield if the guide holds. Correction logged: Target is the fund's #6 holding and is now on the page.
 
-**Consensus:** Hold the double bottom against the 200D. The double gate is resolved: expensive-shelf floor intact (COST), value-row floor broken (GIS/CPB/STZ) — center the overweight in toll roads and honest carry, not branded-food yield. **No trigger issue opened — XLP -0.82% (threshold ±5%), no staples earnings miss (both gates beat), no commodity spike, no shrinkflation action; rate regime covered by #106/#114.**
+**Consensus:** The range trade is over and the stance drops to neutral. Tobacco carry stays; branded food stays off; PepsiCo on Oct 8 decides whether $81.00 is reclaimed. **No trigger issue opened — XLP -1.86% (threshold ±5%), no staples earnings miss (none reported), no shrinkflation action; the +13.9% move in front-month sugar is treated as a contract-roll artifact, not a commodity spike.**
 
 ---
 
 ## SOURCES & REFERENCES
 
-- **Price/momentum data:** Yahoo Finance daily bars via yfinance 1.6.0, Fri 2026-09-18 → Fri 2026-09-25 closes (dividend-adjusted; same-day bars verified with repair=True); RSI(14), 50D/200D from daily series; XLP fund metrics refreshed Sep 25 (P/E ~24.3, yield ~2.59%, AUM ~$14.5B)
-- **GIS FQ1 FY2027 (Sep 23, 2026):** Business Wire/company PR (EPS $0.75 vs $0.72 cons; FY27 adjusted EPS guide $3.00–$3.20 vs FactSet $3.07); MarketBeat confirmation; Seeking Alpha "beats conservative FQ1 estimates, but higher costs weigh on profits"; marketscreener guide detail; Timing The Market Sep 23 (+$0.16 to $35.61)
-- **COST Q4 FY2026 (Sep 24 AMC, reported Sep 25):** Costco IR (net sales +11.2% to $93.9B); Yahoo Finance ($6.75 EPS vs $6.54 est, one-time $184M item); Seeking Alpha call transcript (September sales Oct 7); Fair Value Sep 24 preview ($6.54/$95B consensus framing)
-- **Macro:** FRED DGS10 (9/23 5.11, 9/24 5.18); Fair Value Sep 25 (DXY 101.1, WTI $92.92, ~71% October-hike odds); University of Michigan final September (sentiment 48.1, **inflation expectations 4.6%**, grocery/gas cited) via Yahoo Finance Sep 25
-- **SPTN rotation:** Globe and Mail / SEC DEFM14A — SpartanNash delisted from Nasdaq effective Sep 22, 2025 following C&S Wholesale Grocers acquisition ($1.77B, announced June 2025); Yahoo quote 404 confirmed Sep 25
-- **Replacement sourcing:** NOMD quote/cap via yfinance Sep 25 ($10.63, $1.49B, target $13.42)
-- **Cross-references:** issues **#106** (10Y >5.00% regime), **#114** (10Y through 5.10% + DCS duties + ORCL force majeure, Sep 25); no new issue from XLP
+- **Price/momentum data:** Yahoo Finance daily bars via yfinance 1.6.0 (pulled Sat Oct 3, 2026), settled Fri 2026-09-25 → Fri 2026-10-02 closes; RSI(14), 50D/200D from daily series; forward P/E, yields, mean targets, market caps; XLP top-10 weights via funds_data; earnings-calendar dates and consensus EPS. CSVs in the workspace: B2_quotes.csv, B2_fundies.csv, B2b_quotes.csv (TGT + grain/soft futures), B2_XLP_daily.csv, earnings_calendar_B.csv
+- **General Mills:** Motley Fool / Yahoo Finance (Oct 2, 2026) — September decline of ~22%, sales down in all three U.S. units, FY27 net sales guide -1.5% to +0.5%, CEO appointment; Investing.com — 52-week low $31.74
+- **Kimberly-Clark:** Yahoo Finance / Barchart — lowered 2026 outlook (organic growth ~100bp below category; China social-media disruption)
+- **Macro:** see wiki/tech.md and wiki/consumer-discretionary.md (Oct 3) — Conference Board 81.9, payrolls +29K, core PCE 3.0%, October hike odds ~17%, 10Y 5.34% intraday / 5.28% close, DXY 101.93, G-7 release
+- **Commodities:** Yahoo front-month futures (ZC=F, ZW=F, SB=F, CC=F, KC=F), week over week; the sugar change spans the October-to-March front-contract roll
+- **Not re-sourced this week:** COST September sales date, SMID report dates, fund beta and holdings count (all carried). Only CHEF was individually news-searched in the small-cap sleeve (MarketBeat / Investing.com, Oct 2: record high, EPS $0.78 vs $0.59, targets $125–$131).
+- **Cross-references:** issues #106, #114, #123 (rate regime and curve), #125 (consumer confidence); no new issue from XLP
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-09-25 (data as of Fri 2026-09-25 close; Grid B Midday run)*
+*Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid B Midday run)*
 *Next update: Every Saturday*
-*Data sources: yfinance (Yahoo-sourced), Yahoo Finance, company IR releases, University of Michigan, Federal Reserve, BLS/Census, SEC EDGAR*
+*Data sources: yfinance (Yahoo-sourced), Yahoo Finance, company IR releases, The Conference Board, Federal Reserve, BLS/Census, SEC EDGAR*
