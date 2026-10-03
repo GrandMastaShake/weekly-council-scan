@@ -194,6 +194,21 @@ The 44 names were backfilled 2026-08-26: the panel is 35,571 series, 332 a
 week, corrections at 330. Rationale and the corrected commands are in
 `BACKFILL_44.md`.
 
+## dad-kit/
+
+A starter kit for the owner's dad's Claude account (2026-10-03): two
+claude.ai skills, project instructions, his guide, and `build_kit.py`, which
+builds the upload zips and two workbooks into `dad-kit/dist/` (not
+committed). Not part of the pipeline; nothing in it touches `data/`. ASCII
+throughout, and `tests/test_dad_kit.py` checks each skill against claude.ai's
+upload rules.
+
+The stock skill reads this repo's public files by raw GitHub URL when he
+asks: `README.md`, `wiki/synthesis.md`, `wiki/economic-calendar.md`,
+`scoreboard.md`, `screen/reports/latest.html` and `runs.json`. Renaming or
+moving one breaks his skill silently; update
+`dad-kit/skills/stock-research/references/council-and-market.md` with it.
+
 ## Do not
 
 - Splice external price data into `data/weekly/`. The supplied
