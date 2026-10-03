@@ -2,7 +2,7 @@
 
 > **Sector:** Financials | **ETF:** Financials Select Sector SPDR (XLF) | **Expense Ratio:** 0.08%
 >
-> *"Last week the sector priced the recession the hike might cause; this week it stopped falling. Tuesday was the damage — a 2% distribution day on 70M shares as the 10Y pressed 5.11% and a cautious-Oppenheimer bank note made the rounds ahead of Q3 prints. Wednesday through Friday the fund based at $54.50 with credit spreads calm, and Friday bounced +0.5% as yields gave back their worst overnight levels. The shelter rotated: insurance finally cracked (PGR -3.7%, TRV -3.1%), payments went flat, and the only green of size was BLK (+1.5%) tokenizing model portfolios on-chain. XLF closed $54.81 (-1.9% W/W), RSI 30.6, BAC RSI 25 — washed out, not broken. The 200D ($53.72) is the next line down, and mid-October's Q3 prints are still the judge."*
+> *"The shelf did not hold. XLF lost $54.46 on Monday, sold on 53M and 56M shares Tuesday and Wednesday, pierced its 200-day on Thursday ($52.81 low) and closed the week $0.17 above it. The sector got the thing it was supposed to want — a cool PCE, a +29K payrolls print, the October hike priced out, the curve steeper by about 20bp — and it could not bounce, because a jobs number that kills a hike is also a jobs number that raises the credit question ten days before JPMorgan reports. XLF $53.49 (-2.5% W/W), RSI 27.5, all seventeen tracked names below their 50-day. BAC -5.2%, RSI 22."*
 
 ---
 
@@ -10,20 +10,22 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | **$54.81** | $55.86 (close) | **-1.9%** |
-| 52W Range | $47.34 – $58.39 | $47.50 – $58.60 | Price now -6.1% below the high |
+| Price | **$53.49** | $54.84 (settled close) | **-2.5%** — third straight weekly loss |
+| 52W Range | $47.34 – $58.39 | $47.34 – $58.39 | Price now -8.4% below the high |
 | AUM | ~$54.6B (yfinance totalAssets) | ~$54.6B | — |
-| YTD Return | **+0.7%** (price basis) | +2.6% | -1.9 pts — gave back the year's gain in two weeks |
-| 1Y Return | +2.6% | +4.6% | Stepping down on base effects + price |
-| P/E Ratio | ~15.6 (Yahoo trailing) | ~15.8 | Lower |
+| YTD Return | **-1.7%** (price basis; -1.1% with dividends) | +0.7% | Gave back the rest of the year's gain |
+| 1Y Return | +1.8% (total return) | +2.6% | — |
+| P/E Ratio | ~15.2 (Yahoo trailing) | ~15.6 | Lower |
 | Dividend Yield | ~1.4% | ~1.4% | Unchanged |
-| Beta | ~0.71 (3Y) | ~0.71 | Unchanged |
+| Beta | ~0.71 (3Y) | ~0.71 | Carried; not re-published this pull |
 | Total Holdings | 76 | 76 | — |
-| Friday Volume | 28.8M (20D avg ~34.2M) | 36.0M | Bounce came on the quietest Friday in weeks — no capitulation, no squeeze |
+| Avg Daily Volume | 44.1M this week (20D avg 38.0M) | 40.2M | Tue 53.1M and Wed 55.8M were distribution; Friday 30.3M was the quietest day |
 
-**Marky Tape Read:** A two-part week: **Tuesday** did all the damage — -2.0% to $54.80 on 69.8M shares, the heaviest count since the credit-scare flush, as the 10Y marched toward 5.11% and the pre-earnings bank commentary turned cautious (Oppenheimer's June cuts — GS/MS to Underperform, BAC/C to Perform — recirculated on Schwab Network ahead of Q3 prints). Monday, Wednesday and Thursday were all inside $54.46–$55.90: the fund based at **$54.50**, holding Tuesday's low ($54.55) on every test. **Friday** +0.5% to $54.81 as yields backed off their overnight highs — but on 28.8M shares, the lightest Friday since August. That's a shelf, not a reversal: sellers stepped away, buyers didn't step up. RSI 30.6 (from 37.0) — the weakest since the spring, matching BAC at 25.4. Price sits $2.27 under the 50D ($57.08) and $1.09 over the 200D ($53.72). Sixteen of the seventeen tracked names are below their 50-day. This is where the 2023 tape kept finding bounces — until the day it didn't.
+Week path: Mon $54.19, Tue $54.01, Wed $53.40, Thu $53.46 (low $52.81), Fri $53.49. Last week's page carried a $54.81 Friday close; the settled Sep 25 bar is $54.84 and weekly changes here are measured against settled closes.
 
-**Ophelia Macro Read:** The curve gave the sector a different problem than last week's. The front end kept climbing — 2Y to **4.905%** Friday (highest since 2024) as Barr warned "further policy adjustments are likely needed" and **~71% odds priced an October +25bp** — while the long end's selloff steepened 10s3M to **+0.92%**. For banks that is a genuinely mixed shape: loan yields re-price up (NIM hope) but deposit costs chase a 4.90% front end and 5.18% 10Y keeps credit formation expensive. My hard-landing tripwire did NOT fire: 2s10s held ~**+25bp** (no inversion), so oil under $100 plus new financial lows is only half the confirmation — and XLF's $54.46 shelf held, so even that leg is unconfirmed. The hard data stayed firm: claims **197K** (lowest since mid-July), August new home sales **+12.7% to 684K** against 7.03% mortgages, Q3 GDP tracking ~5%. The credit fear has now gone two weeks without a single confirming datapoint — and two weeks without refutation from the banks themselves. DXY 101.1 (+0.85% W/W) tightens the global dollar channel; HY OAS 273bp. Watch the same two prints: core PCE Sep 30 and jobs Oct 2 decide whether the October hike is delivered — and Q3 bank prints (JPM ~Oct 13–14) decide whether the credit scare was fact or positioning.
+**Marky Tape Read:** Three down days on rising volume, then two days of nothing. **Monday** -1.2% to $54.19 — the $54.46 shelf I called the line broke on the first session. **Tuesday** $54.01 on 53.1M and **Wednesday** $53.40 on 55.8M — the heaviest back-to-back volume since the September flush, and Wednesday was the day PCE came in cool. A sector that sells on the news it was waiting for is being distributed. **Thursday** — money centers led lower (C -4%, BAC -3% intraday) as the 10Y touched 5.34%; the fund traded to **$52.81**, fifty cents through the 200D, and closed back at $53.46. **Friday** +0.06% on 30.3M — payrolls killed the hike, the Nasdaq made a record, and financials did not participate. RSI 27.5, and the lowest close since June 30. Price is $3.16 under the 50D ($56.65) and $0.17 over the 200D ($53.32). I said I would buy the 200D; I have a first piece on at Thursday's reclaim, small, with the stop under $52.81.
+
+**Ophelia Macro Read:** The curve finally did what bank bulls asked for and the banks fell anyway — that is the information. Front end: core PCE **3.0%** (exp 3.3%), payrolls **+29K** (exp ~84–90K), unemployment **4.2%**, October hike odds from ~70% to ~17%; the 2Y closed **4.78% Thursday**, down from 4.905% a week ago. Long end: 10Y **5.28%** (5.34% intraday Thursday, highest since 2002), 30Y **5.63%**. Result: **2s10s ~+45bp, from ~+25bp** — a 20bp steepening in five sessions, and 10s–3M near +1.28%. In the wild card last week I wrote that 10s3M above +1.00% with XLF under $54 is the combination to fear. Both conditions are now met. A steepener driven by a falling front end on weak jobs is the late-cycle kind: it helps NIM on paper and it arrives with the credit cycle turning. I did not re-source HY spreads this week and will not quote them from memory; that is the one confirmation still missing. DXY 101.93 (+0.95%). WTI $91.11.
 
 ---
 
@@ -31,51 +33,51 @@
 
 | Rank | Ticker | Name | Price | Weekly Change | Mean Target | Implied | Signal |
 |---|---|---|---|---|---|---|---|
-| 1 | JPM | JPMorgan Chase | $343.10 | -1.9% | $374.24 | +9.1% | ⚡ |
-| 2 | BAC | Bank of America | $56.75 | -1.7% | $68.62 | +20.9% | 🔴 |
-| 3 | WFC | Wells Fargo | $82.92 | -3.7% | $100.37 | +21.0% | ⚠️ |
-| 4 | C | Citigroup | $134.52 | **+2.1%** | $154.75 | +15.0% | ⚡ |
-| 5 | USB | U.S. Bancorp | $59.33 | -1.2% | $70.33 | +18.6% | ⚡ |
-| 6 | PNC | PNC Financial | $225.64 | -3.2% | $276.58 | +22.6% | ⚠️ |
-| 7 | GS | Goldman Sachs | $935.99 | -0.6% | $1,134.15 | +21.2% | ⚠️ |
-| 8 | MS | Morgan Stanley | $196.31 | -3.1% | $235.62 | +20.0% | ⚠️ |
-| 9 | SCHW | Charles Schwab | $99.38 | **-5.6%** | $125.45 | +26.2% | 🔴 |
-| 10 | V | Visa | $367.54 | -0.2% | $419.36 | +14.1% | ⚡ |
-| 11 | MA | Mastercard | $567.65 | **+0.4%** | $666.71 | +17.4% | ⚡ |
-| 12 | AXP | American Express | $309.10 | -0.8% | $378.54 | +22.5% | ⚡ |
-| 13 | PGR | Progressive | $205.50 | -3.7% | $231.38 | +12.6% | ⚠️ |
-| 14 | CB | Chubb | $333.37 | -2.1% | $365.91 | +9.8% | ⚠️ |
-| 15 | TRV | Travelers | $363.04 | -3.1% | $360.71 | -0.6% | ⚠️ |
-| 16 | BLK | BlackRock | $1,086.31 | **+1.5%** | $1,322.75 | +21.8% | 🔥 |
-| — | BRK.B | Berkshire Hathaway | $505.56 | -0.8% | $547.67 | +8.3% | ⚡ |
+| 1 | JPM | JPMorgan Chase | $332.38 | -3.1% | $375.81 | +13.1% | ⚠️ |
+| 2 | BAC | Bank of America | $53.75 | **-5.2%** | $67.95 | +26.4% | 🔴 |
+| 3 | WFC | Wells Fargo | $80.45 | -3.0% | $100.20 | +24.5% | ⚠️ |
+| 4 | C | Citigroup | $128.50 | -4.3% | $155.05 | +20.7% | ⚠️ |
+| 5 | USB | U.S. Bancorp | $57.51 | -2.2% | $69.62 | +21.1% | ⚡ |
+| 6 | PNC | PNC Financial | $221.03 | -2.0% | $273.95 | +23.9% | ⚠️ |
+| 7 | GS | Goldman Sachs | $902.56 | -3.5% | $1,116.75 | +23.7% | 🔴 |
+| 8 | MS | Morgan Stanley | $190.31 | -3.1% | $233.43 | +22.7% | ⚠️ |
+| 9 | SCHW | Charles Schwab | $96.70 | -2.4% | $124.19 | +28.4% | 🔴 |
+| 10 | V | Visa | $360.66 | -1.8% | $419.36 | +16.3% | ⚡ |
+| 11 | MA | Mastercard | $552.26 | -2.7% | $666.71 | +20.7% | ⚡ |
+| 12 | AXP | American Express | $302.78 | -2.0% | $375.83 | +24.1% | ⚠️ |
+| 13 | PGR | Progressive | $210.31 | **+2.4%** | $232.05 | +10.3% | ⚡ |
+| 14 | CB | Chubb | $330.89 | -0.7% | $365.83 | +10.6% | ⚡ |
+| 15 | TRV | Travelers | $360.38 | -0.7% | $360.46 | 0.0% | ⚡ |
+| 16 | BLK | BlackRock | $1,059.63 | -2.5% | $1,315.65 | +24.2% | ⚠️ |
+| — | BRK.B | Berkshire Hathaway | $502.65 | -0.6% | $547.67 | +9.0% | ⚡ |
 
 > 🔥 = strong momentum | ⚡ = neutral / stable | ⚠️ = pullback / caution | 🔴 = breakdown watch
-> Prices = Fri Sep 25 close, weekly change vs Sep 18 close. Targets = Yahoo Finance mean analyst target (fresh pull Sep 25). XLF top-10 weights (fresh State Street pull): JPM 11.7%, BRK.B 11.3%, V 7.7%, MA 5.8%, BAC 5.0%, GS 3.7%, WFC 3.2%, MS 3.1%, C 2.8%, SCHW 2.2%.
+> Prices = Fri Oct 2 close, weekly change vs settled Sep 25 close. Targets = Yahoo Finance mean analyst target (pulled Oct 3). XLF top-10 weights (Yahoo funds_data, unchanged from the Sep 25 pull): JPM 11.7%, BRK.B 11.3%, V 7.7%, MA 5.8%, BAC 5.0%, GS 3.7%, WFC 3.2%, MS 3.1%, C 2.8%, SCHW 2.2%.
 
-**Sector Lanes — the shelter rotated again:**
+**Sector Lanes — one green name out of seventeen:**
 
-- **Lane 1 — Money centers: an oversold bounce inside a downtrend.** C **+2.1%** was the only green money center (oversold bounce after last week's -5.1%; best YTD at +16.8%). BAC -1.7% to $56.75 (RSI 25.4) is now -12% from its August high, JPM -1.9% held the fortress bid (best 2-week relative strength in the complex), WFC -3.7% and PNC -3.2% lagged on the curve shape. Deposit-beta anxiety into the October-hike pricing is the working excuse; nothing company-specific broke.
+- **Lane 1 — Money centers: the downtrend resumed.** BAC **-5.2%** to $53.75 (RSI 22.3) lost its 200D ($54.81) and is the weakest large bank on the board; it carries its own weak Q3 investment-banking guide, a $39M Merrill cash-sweep settlement, and a JPMorgan price-target cut on Friday. C -4.3% gave back last week's bounce and more. JPM -3.1%, WFC -3.0%. PNC -2.0% (RSI 27.7) and USB -2.2% held up best — the super-regionals with less capital-markets exposure. JPM, C and USB are still above their 200-day; BAC, WFC and PNC are not.
 
-- **Lane 2 — Brokers: SCHW broke, GS didn't.** SCHW **-5.6%** to $99.38 — no single headline; the market simply re-priced the most rate-sensitive mega-brokerage at a 4.90% 2Y (deposit-cost math) ahead of earnings, and it closed the week sitting on its 200D ($98.26). MS -3.1%, GS -0.6% after a Thursday poke to $923. The Oppenheimer frame (GS/MS Underperform, prefers alt asset managers) hung over the group all week.
+- **Lane 2 — Brokers: all three under the 200-day.** GS -3.5% to $902.56 (200D $952), MS -3.1% to $190.31 (200D $192.50), SCHW -2.4% to $96.70 (200D $97.87). A month of sharply higher long rates is being read as slower dealmaking and weaker trading; the falling 2Y that should have helped SCHW's deposit math did not.
 
-- **Lane 3 — The shelter moved to where the catalysts are.** Last week's winners (insurance) cracked: PGR -3.7%, TRV -3.1% (back under its mean target), CB -2.1%. Payments went flat (V -0.2%, MA +0.4%). The green was **BLK +1.5%** — tokenizing three model portfolios on-chain with Ondo Finance (largest traditional manager to do so) plus the alt-AM bid Oppenheimer prefers — and it held above its 200D all week while sixteen of seventeen tracked names lost theirs.
+- **Lane 3 — Payments broke rank; insurance held.** V -1.8%, MA -2.7%, AXP -2.0% (AXP is -17.5% YTD and under its 200D) — the +29K payrolls print is a consumer-spending read. Insurance was the shelter again: **PGR +2.4%** the only green name, CB and TRV -0.7%. BLK -2.5% gave back last week's tokenization gain. BRK.B -0.6%.
 
-**Cecil Fundamental Read:** Two weeks of credit-scare pricing and still not one confirming datapoint — claims 197K, retail sales +1.2% two weeks ago, new home sales beating at 7% mortgages. The banks report in ~three weeks and the market is already paying 10-13x forward for the money centers with 15-26% gaps to mean targets. BAC at $56.75 is 10.7x forward with a 21% gap — I started a quarter position Friday, not because the knife has stopped falling but because at RSI 25 the knife is usually two-thirds done, and I will add at the 200D ($53.45 XLF-equivalent) if the scare deepens. SCHW at 12.6x forward on its 200D with a 26% gap is the better risk-reward than the brokers it trails. What I won't do: pay up for the shelter rotation — insurance cracked exactly because its premium was earned by last week's fear, and PGR at 10.3x trailing with a Hold consensus is not a hiding place, it's a crowded one. BLK green on a plumbing story is my confirmation that the asset-gatherers are where the fee growth lives this cycle. Basel III final rule (~Q4) and the GENIUS Act stablecoin comment window are the two regulatory cards that could re-rate the complex without a single earnings print.
+**Cecil Fundamental Read:** I started BAC last Friday at $56.75 and it is $53.75. I said I would add at the XLF 200-day and I did, Thursday — the position is now half size at an average near $55, 10.2x forward with a 26% gap to the mean target. I am not adding again before the print on Oct 14: BAC has a guided-down IB line, and the +29K payrolls number is the first hard datapoint in three weeks that argues *for* the credit scare rather than against it. What is cheap: the money centers at 10–13x forward and SCHW at 12.4x with a 28% gap. What I got wrong: I called insurance a crowded shelter and it was the only thing that worked. What I will not own into the prints: GS and MS under their 200-day with trading and dealmaking both in question. Reserve builds on Oct 13–15 decide whether 10x is cheap or correct.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *Direct sourcing of sub-$5B financials names. All four re-verified under $5B using live yfinance quotes/market caps as of the week ending September 25, 2026. No promotions.*
+> *Direct sourcing of sub-$5B financials names. All four re-verified under $5B using live yfinance quotes/market caps at the Oct 2 close. No promotions, no swaps.*
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| WAFD | WaFd, Inc. | **$2.32B** ✓ | $31.35 | **-3.2%** | No fresh deal news; the EverBank reverse-merger arb bled for a fourth week — RSI ~18.5, down ~-18% since the Sep 7/8 announcement | ⚠️ RSI 18.5 is statistical capitulation on an arb, not a valuation. Deal still pending; the 59.2% PE-overhang math keeps getting voted down. Bounce candidate only. |
-| CUBI | Customers Bancorp | **$2.60B** ✓ | $77.06 | -0.7% | No fresh company news; held up best of the watch for a second straight week; mean target $94.09 (+22%) | ⚡ The market's quiet vote that the credit fear is not reaching the regional loan book. Late-October NIM print is the referendum. |
-| HOPE | Hope Bancorp | **$1.77B** ✓ | $13.82 | -1.0% | No fresh company headline; MANUBANK (CBU) close still pending 2H 2026; ~4.1% yield | ⚡ Yield shelter intact. The regional bid under ~$14 with a $15.50 target is the boring trade that keeps working. |
-| BANR | Banner Corporation | **$2.53B** ✓ | $69.03 | -2.4% | No fresh company headline; mean target $76.67 (+11.1%) | ⚡ Gave back part of last month's pop; still the low-beta way to hold the regional lane. |
+| WAFD | WaFd, Inc. | **$2.28B** ✓ | $30.80 | -1.8% | Merger proxy materials filed (DEFA14A); EverBank deal now guided to close **early 2027**, combined $75B assets, ~15% ROTCE target; **+2.7% Friday on 2.7M shares** (20D avg 1.6M) | ⚡ First volume up-day since the announcement, RSI off the floor (31.6 from ~18.5). The arb may have found its level near $30. |
+| CUBI | Customers Bancorp | **$2.55B** ✓ | $75.47 | -2.1% | No fresh company news; sits on its 200D ($75.69); mean target $93.73 (+24%); 7.9x forward | ⚡ Held the 200D while the money centers lost theirs. Late-October print is the referendum. |
+| HOPE | Hope Bancorp | **$1.75B** ✓ | $13.68 | -1.1% | No fresh company headline; ~4.1% yield; MANUBANK close still pending | ⚡ Best of the four again, RSI 47, +28.9% YTD. The quiet yield trade keeps working. |
+| BANR | Banner Corporation | **$2.49B** ✓ | $67.88 | -1.7% | No fresh company headline; mean target $75.83 (+11.7%) | ⚡ Above its 200D ($65.10). Low-beta regional exposure doing its job. |
 
-**Rotation Note:** All four remain sub-$5B ($1.77B–$2.60B) — no swaps required. KRE (-1.0% W/W) outperformed XLF (-1.9%) for a second week — the public market keeps marking big banks down toward the regionals, and the EverBank mark (~$3.9B) is still the private-market floor under the lane.
+**Rotation Note:** All four remain sub-$5B ($1.75B–$2.55B). KRE (-1.1% W/W) beat XLF (-2.5%) for a third straight week, and all four watch names fell less than JPM, BAC, WFC or C. The stress is in the large-cap, capital-markets-heavy names, not in the regional loan books — the opposite of what a real credit scare usually looks like at this stage.
 
 ---
 
@@ -83,17 +85,19 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $58.39 | The ceiling — now -6.1% away |
-| Breakout Pivot | $57.48 | Last week's lost shelf — first serious resistance |
-| 50-Day MA | $57.08 | Two full weeks below; a reclaim is required before the down-trend is even dented |
-| September Shelf | $55.66–$55.90 | The pre-breakdown base — now overhead supply |
-| Current Price | $54.81 | Friday close; -1.9% W/W; three sessions based at $54.50 |
-| Week's Low | $54.46–$54.55 | Tuesday's distribution low + Wed/Thu closes — the shelf that matters now |
-| 200-Day MA | $53.72 | Rising toward price; the last structural support before the June gap zone |
-| July Low Zone | ~$53.56 | Confluence with the 200D — a double floor |
+| 52W High | $58.39 | The ceiling — now -8.4% away |
+| 50-Day MA | $56.65 | Three full weeks below, and falling |
+| 20-Day MA | ~$55.46 | Falling; the first moving average any bounce meets |
+| Broken Shelf | $54.46 – $54.55 | Last week's base — lost Monday, now resistance |
+| Tuesday Close | $54.01 | Last close before the heavy-volume leg down |
+| Current Price | $53.49 | Friday close; -2.5% W/W; three closes inside $53.40–$53.49 |
+| 200-Day MA | $53.32 | Pierced intraday Thursday, held on every close so far |
+| Thursday Low | $52.81 | The line. A close under it confirms the 200D break |
+| May–June Base | $50.42 – $51.58 | The range XLF closed in through May; next support if $52.81 fails |
 | Structural Low | $47.34 | 52W bottom |
+| RSI (14) | 27.5 | Lowest close since June 30; BAC 22.3, PNC 27.7, SCHW 29.9, MS 30.0 |
 
-**Marky Setup Assessment:** The map is a clean three-level ladder: **$54.50** (hold → base builds), **$53.72** (the 200D — where I buy the panic), **$57.08** (the 50D — where the repair proves itself). Tuesday's 70M-share distribution day says the down-trend is intact; three quiet sessions at $54.50 say the sellers are done pressing for now. RSI 30.6 with BAC at 25.4 is the most washed-out the complex has been since the spring scare that launched the summer rally — but washed-out is a condition, not a signal. The signal is the levels: under $54.46 and the 200D test is live; a daily close back over $55.66–$55.90 makes the Tuesday flush look like a selling climax; the 50D at $57.08 is the line between a bounce and a repair. I do not short a 30-RSI fund into the 200D. I do not chase the first green day either. Q3 prints arbitrate in three weeks; until then this is a range-trade tape with a downward bias.
+**Marky Setup Assessment:** Last week's ladder was $54.50 / $53.72 / $57.08. The top rung broke Monday and the middle rung — the 200D, now $53.32 — was tested Thursday and held by seventeen cents. So the map is two numbers: **$52.81** below and **$54.46** above. Three closes within nine cents of each other ($53.40, $53.46, $53.49) on falling volume is what a floor looks like while it forms; it is also what a pause looks like before the next leg. I cannot tell them apart yet and neither can anyone else. What I can say: RSI 27.5 with all seventeen names under their 50-day is as oversold as this fund has been since the spring, the 200D has held three closes, and the first money-center prints are six sessions away. I own a small piece from Thursday's reclaim with a stop on a close below $52.81. I add on a close back over $54.46, not before. I do not short a 27 RSI on the 200-day into earnings.
 
 ---
 
@@ -101,21 +105,22 @@
 
 | Factor | Level | Implication for XLF |
 |---|---|---|
-| Fed Funds Rate | **3.75–4.00%** (Sep 16 hike) | The hawkish follow-through is the story: Barr "further adjustments likely needed"; **~71% odds of an October +25bp** (Octagon). The market now prices the Fed as a serial hiker — each hike extends the NII tailwind AND the credit-cost bill. |
-| 2Y Treasury | **4.905%** Friday (highest since 2024) | Deposit costs reprice with the front end. Regional NIM math stays squeezed until the long end follows — this week it started to. |
-| 10Y Treasury | **5.18% Thursday close** (FRED; 19-year high); ~5.15% Friday | Term-premium-led. Loan yields finally re-price (NIM hope) — but at the cost of credit formation and securities-book marks. |
-| **2Y-10Y Spread** | **~+25bp** (unchanged from +26bp); 10s3M **+0.92%** (widening) | The shape rotated from bear-flatten to bear-steepen — better for bank asset yields, worse for the macro credit picture. The hard-landing inversion trigger did NOT fire. |
-| Growth / Labor | Claims **197K**; Aug new home sales **684K (+12.7%)**; Q3 GDP tracking ~5%; mortgage **7.03%** | The hard data refuses to confirm the credit scare for a second week. Housing trades on builder buydowns, not rates breaking. |
-| Credit | HY OAS **~273bp** (from 270); IG 77bp | Direction ticked up, level still benign. >300bp is the tripwire — 27bp away. |
-| Oil → Growth Signal | WTI **~$92.92** (-2.7% W/W) on U.S.-Iran truce hopes | Last week's demand-destruction read has faded with diplomacy — but a failed truce sends oil back over $100 and revives the recession signature. |
-| DXY | 101.1 (+0.85% W/W) | Dollar strength tightens the global credit channel; EM-heavy banks feel it first. |
-| Regulatory — Capital | **Bowman (Fri, London): stress-test revisions** — revised noninterest income model, market-shock adjustments, more transparency, less capital-requirement volatility; Basel III final rule ~Q4 | The first concrete process step toward the capital tailwind in months. Quietly the most sector-positive event of the week — the market ignored it because it was in London on a Friday. |
-| Regulatory — Stablecoins | Fed opened a **60-day comment period (Thu)** on GENIUS Act proposals: 100% reserve backing + capital charge; Proposal 2 = tailored path for Fed-supervised banks issuing stablecoins | A potential new fee/liquidity franchise for the trust banks and JPM-scale deposit holders. Comments due ~Nov 23. |
-| Analyst Posture | **Oppenheimer's June cuts recirculated** (Schwab Network, ahead of Q3): GS/MS Underperform, BAC/C Perform; prefers USB, PNC, alt asset managers | The Street's bank desk is openly cautious into earnings for the first time this cycle. Watch for the pre-print downgrade window (now → Oct 13). |
-| CRE / Private Credit | No fresh print; UBS chair's private-credit warning still on the tape | The two structural wounds stay bandaged; the Q3 reserve line is where either becomes a number. |
-| SMID Bank M&A | WAFD–EverBank $3.9B reverse merger pending (WAFD RSI ~18.5) | The arb is pricing doubt, not failure — no termination chatter, and the PE floor under regional books holds. |
+| Fed Funds Rate | **3.75–4.00%** (Sep 16 hike) | October hike odds ~70% Monday → **~17% Friday**; December still >75%. The serial-hiker pricing is paused, not cancelled. FOMC Oct 27–28. |
+| 2Y Treasury | **4.78%** (Thu Oct 1 close), from 4.905% a week earlier | Deposit-cost pressure eased for the first time in a month. The tape did not reward it. |
+| 10Y Treasury | **5.28% Fri close**; **5.34% intraday Thu** (highest since 2002); 30Y **5.63%** | Securities-book marks get worse at every new high. Loan demand at these levels is the Q4 question. |
+| **2Y-10Y Spread** | **~+45bp** (from ~+25bp); 10s–3M ~**+1.28%** | **Sharp steepening — about 20bp in a week** — driven by the front end falling on weak data while the long end rose. Positive for NIM in arithmetic; historically the shape that shows up as the credit cycle turns. Trigger issue opened. |
+| Inflation | Aug core PCE **3.0%** (exp 3.3%); ISM prices paid **77.9** | PCE bought the Fed a pause. ISM prices says input costs are still accelerating. |
+| Growth / Labor | Payrolls **+29K** (exp ~84–90K); unemployment **4.2%** (from 4.1%); ISM manufacturing 54.5 | The first hard datapoint that supports the credit scare instead of refuting it. One print; the trend needs a second. |
+| Credit | HY/IG spreads **not re-sourced this week** | Last week: HY ~273bp, IG ~77bp. The 300bp tripwire cannot be called from stale data — check before acting. |
+| Oil → Growth Signal | WTI **$91.11** (-1.4% W/W); Brent $102.25; G-7 100M-barrel release | Under $100 WTI with financials at new lows is one leg of the hard-landing signature. |
+| DXY | **101.93** (+0.95% W/W), near the 52W high of 102.10 | Ninth week of dollar strength tightens the global credit channel. |
+| Regulatory — Capital | Basel III re-proposal (Mar 19, 2026; comments closed Jun 18; agencies expect overall capital to "modestly decrease"); final rule still expected ~Q4; no new action this week | The capital tailwind is intact and unpriced. It does not matter until the credit question is answered. |
+| Regulatory — Stablecoins | GENIUS Act comment period open, due ~Nov 23 | Unchanged. |
+| Company-specific | BAC: $39M Merrill cash-sweep settlement; JPMorgan cut its BAC price target (Oct 2); BAC's earlier Q3 investment-banking guide was weak | BAC is the name where the sector's worries are also company facts. |
+| CRE / Private Credit | No fresh print | Q3 reserve lines on Oct 13–15 are where either becomes a number. |
+| SMID Bank M&A | WAFD–EverBank: proxy materials filed, close guided to early 2027 | The PE-backed floor under regional books stands. |
 
-**Ophelia Verdict:** Two weeks ago I set a tripwire: 2s10s through zero with oil under $100 and financials at new lows. It has not fired — the curve held +25bp, XLF based $0.09 over its Tuesday low, and the hard data (claims 197K, new home sales 684K) actively disagrees with the recession read. So I stay neutral-leaning-insurance but I trim the urgency: the credit scare is aging without evidence. What changed this week is the *shape* of the risk — the long end now leads (10s3M +0.92%), which is better for bank NIM math and worse for everyone else's financing costs. If core PCE (Sep 30) cools, the October-hike odds unwind, the 2Y backs off 4.90%, and the fund's best two-week entry of the year is on the table at the 200D. If PCE runs hot, the October hike goes to certain, and the fund tests $53.72 with the whole Street leaning the same way. My posture: no chase above $55.90; accumulate the $53.72–$54.50 band slowly; let Q3 reserves, not vibes, confirm the credit cycle.
+**Ophelia Verdict:** I built a tripwire three weeks ago — 2s10s through zero, oil under $100, financials at new lows — and I was looking for the wrong shape. The curve did not invert; it steepened 20bp, and financials made new lows anyway. The condition I flagged in last week's wild card is the one that printed: 10s–3M above +1.00% with XLF under $54. I am not calling a credit event on one payrolls number and an unconfirmed spread, and I note that regionals are outperforming money centers, which is not how a loan-book scare trades. But I move from neutral to **cautious**: the sector failed to rally on a dead hike and a cool PCE, and that failure is the signal. Posture: no new money above the 200D until the Oct 13–15 prints; the buyers at $53.32 are trading a level, not a thesis. If JPM, WFC and C show flat reserves and the trading line holds, this was positioning and the 26% gaps to target start to close. If reserves build, $52.81 goes and the May–June base ($50.42–$51.58) is next.
 
 ---
 
@@ -123,85 +128,109 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Scare Found a Shelf
+### This Week's Story: Good News for the Curve, Bad Week for the Banks
 
-XLF fell **-1.9% to $54.81** — but the week's real story is what *didn't* happen: the credit-scare follow-through never arrived.
+XLF fell **-2.5% to $53.49**, its third straight weekly loss, its lowest close since June 30, and tested its 200-day moving average.
 
-**Catalyst 1 — Tuesday's Distribution Day (Sep 22):** -2.0% to $54.80 on 69.8M shares, the heaviest volume since the September flush. The 10Y pressed toward 5.11%, and Oppenheimer's cautious bank stance — GS/MS at Underperform, BAC/C at Perform since June — recirculated on Schwab Network ahead of Q3 earnings. The brokers absorbed it: SCHW -5.6% on the week, closing Friday on its 200D ($98.26); GS poked $923 intraday Thursday before recovering.
+**Catalyst 1 — The Shelf Broke (Sep 28–30):** Last week's base at $54.46 failed on Monday. Tuesday (53.1M shares) and Wednesday (55.8M) were the heaviest consecutive sessions since the September flush — and Wednesday was the day core PCE printed 3.0% against 3.3% expected. The sector sold a number it had been waiting for.
 
-**Catalyst 2 — The Base (Sep 23–24):** Wednesday and Thursday were inside days — $54.46–$54.54 — with the 10Y closing 5.11% and then 5.18% and nobody in financials selling. Credit spreads did nothing (HY 270→273). Barr said "further policy adjustments are likely needed" and the complex yawned. The market that treated 5.00% as an emergency two weeks ago treated 5.18% as weather.
+**Catalyst 2 — The Long End (Oct 1):** The 10-year touched **5.34%**, the highest since 2002, and the 30-year reached 5.63%. Money centers led the decline: Citigroup -4% and Bank of America -3% intraday. Coverage framed it as a month of sharply higher rates threatening borrower appetite, dealmaking and trading. XLF traded to $52.81, through its 200D ($53.32), and closed back above it.
 
-**Catalyst 3 — The Shelter Rotated (all week):** Last week's refuge — insurance — finally cracked: PGR -3.7%, TRV -3.1% (back under its mean target), CB -2.1%. Payments flattened (V -0.2%, MA +0.4%). The green of size was **BLK +1.5%**, tokenizing three model portfolios on-chain with Ondo Finance — fee-plumbing innovation is apparently worth more than a credit book right now. C +2.1% was the only green money center — an oversold bounce, and a tell that value buyers are circling the group at 10–13x forward.
+**Catalyst 3 — Payrolls (Oct 2):** September jobs came in at **+29K** against ~84–90K expected; unemployment rose to 4.2%. October hike odds collapsed from ~70% to ~17%. The 2s10s spread widened to roughly +45bp from +25bp a week earlier. Tech made a record. XLF rose 0.06%.
 
-**Catalyst 4 — The Quiet Regulatory Wins:** Bowman used a Friday London speech to detail stress-test revisions (revised noninterest-income model, market-shock adjustments, less capital-requirement volatility) — the most concrete Basel III process step in months — and the Fed opened the GENIUS Act stablecoin comment period with a tailored path for bank issuers. Both are medium-term fee/capital positives the tape ignored.
+**Catalyst 4 — Bank of America:** BAC was the worst large bank at **-5.2%** (RSI 22.3), below its 200-day. It carries a weak Q3 investment-banking guide, a $39M Merrill cash-sweep settlement, and a JPMorgan target cut on Friday.
 
-**The Bottom Line:** The credit scare is now two weeks old with zero confirming data (claims 197K, new home sales beating at 7% mortgages) and the fund washed out at RSI 30.6. Mid-October Q3 prints — reserve builds, trading revenue vs the BofA warning, deposit beta — remain the arbiter. Between here and there: core PCE (Sep 30) and jobs (Oct 2), which set the odds on an October hike now priced at 71%.
+**What held:** Insurance (PGR +2.4%, CB and TRV -0.7%), Berkshire (-0.6%), and the regionals — KRE -1.1% beat XLF for a third week and all four small-cap watch names fell less than JPM, BAC, WFC or C.
+
+**The Bottom Line:** The curve steepened, the hike was priced out, inflation cooled — the bull case's three macro conditions arrived in one week and the fund made a new low for the move. Either positioning into earnings is extreme and the 200-day holds, or the market is reading +29K jobs as the start of the credit cycle the last three weeks were afraid of. **JPM, WFC, C and GS report Tuesday, Oct 13.** Reserve builds answer the question.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Q3 2026 earnings remain ~three weeks out. The catalyst board is macro and regulatory until then:
+Q3 2026 bank earnings start in six sessions. Dates are Yahoo Finance calendar dates pulled Oct 3 and are not all company-confirmed; EPS figures are the Yahoo consensus mean.
 
-| Catalyst | Date | What to Watch |
+| Company | Ticker | Date | EPS Est. | What to Watch |
+|---|---|---|---|---|
+| **JPMorgan Chase** | JPM | **Tue Oct 13** | $5.91 | The opener. Reserve build, NII guide into a steeper curve, trading and IB fees, Dimon on credit. |
+| **Wells Fargo** | WFC | **Tue Oct 13** | $1.82 | Consumer credit, deposit beta with the 2Y off its high, CRE office reserves. |
+| **Citigroup** | C | **Tue Oct 13** | $2.62 | Markets revenue, card losses, buyback pace. Lost last week's bounce. |
+| **Goldman Sachs** | GS | **Tue Oct 13** | $15.01 | Dealmaking pipeline and trading after a month of rate shock; below its 200D. |
+| **Bank of America** | BAC | **Wed Oct 14** | $1.12 | The weakest chart in the group. IB fees vs its own lowered guide; securities-book marks at a 5.28% 10Y. |
+| **Morgan Stanley** | MS | **Wed Oct 14** | $3.03 | Wealth net new assets vs IB; below its 200D. |
+| **BlackRock** | BLK | **Wed Oct 14** | $14.24 | Flows and fee rate; bond-fund marks. |
+| **Progressive** | PGR | **Wed Oct 14** | $4.20 | The only green name this week; combined ratio and policy growth. |
+| **U.S. Bancorp** | USB | **Thu Oct 15** | $1.32 | NIM and payments; held up best among large banks. |
+| **PNC Financial** | PNC | **Thu Oct 15** | $4.99 | Loan growth, CRE; RSI 27.7. |
+| **Charles Schwab** | SCHW | **Thu Oct 15** | $1.67 | Sweep-cash balances and funding costs; below its 200D. |
+| **Travelers** | TRV | **Fri Oct 16** | $6.97 | Catastrophe losses, pricing; trades at its mean target. |
+| **Chubb** | CB | **Tue Oct 20** | $6.43 | P&C pricing cycle. |
+| **American Express** | AXP | **Fri Oct 23** | $4.54 | Billed business and credit after the weak jobs print; -17.5% YTD. |
+| **Visa** | V | **Tue Oct 27** | $3.43 | Payment volume growth, cross-border. |
+| **Mastercard** | MA | **Thu Oct 29** | $5.15 | Same; consumer-spending read. |
+| **Berkshire Hathaway** | BRK.B | **Sat Nov 7** | $5.78 | Cash pile, insurance float, buybacks. |
+
+| Macro / Regulatory Catalyst | Date | What to Watch |
 |---|---|---|
-| **Core PCE** | **Sep 30, 2026** | Cool print unwinds the ~71% October-hike odds → the 2Y backs off 4.90% → the fund's entry window opens. Hot print does the reverse. |
-| **September Jobs Report** | **Oct 2, 2026** | Claims at 197K say tight; a crack here is the first data point that WOULD confirm the credit scare. |
-| **Q3 2026 Bank Earnings** | **Mid-October (JPM customary opener ~Oct 13–14)** | THE judgment: reserve builds, trading revenue vs the BofA warning, deposit beta into 4.90% 2Y, CRE reserves, IB pipelines. The Oppenheimer downgrade window runs now → prints. |
-| **Next FOMC** | **Oct 28, 2026** | ~71% priced for +25bp; every PCE/jobs print between now and then moves it. |
-| **Basel III Final Rule (Expected)** | Q4 2026 | Bowman's stress-test revisions (Sep 25) are the runway; GSIB surcharge allocation remains contested. |
-| **GENIUS Act stablecoin comments** | ~Nov 23, 2026 (60 days from Sep 24) | Bank stablecoin issuance framework — a potential new deposit/fee franchise for the trust banks. |
-| **WAFD / EverBank merger close** | TBD (announced Sep 7/8) | Arb at RSI ~18.5 says doubt, not failure; watch shareholder approval + lockup terms. |
-| **CUBI Q3 Earnings** | Late October 2026 | NIM-rebound verdict for the SMID lane, doubled as the credit-fear referendum. |
-| **HOPE MANUBANK Close** | 2H 2026 | Pending acquisition integration update. |
+| **CPI (September)** | Mid-October | Whether ISM prices paid (77.9) is reaching consumer prices; sets December hike odds. |
+| **FOMC** | **Oct 27–28** | ~17% priced for a hike; the statement's read on labor matters more than the decision. |
+| **Basel III Final Rule (Expected)** | Q4 2026 | Capital-neutral-to-lower per the agencies; GSIB surcharge still contested. |
+| **GENIUS Act stablecoin comments** | ~Nov 23, 2026 | Bank issuance framework. |
+| **WAFD / EverBank merger close** | Early 2027 | Shareholder vote timing; combined ticker EVBK. |
+| **CUBI Q3 Earnings** | Late October 2026 | NIM verdict for the SMID lane. |
 
-**Marky's Binary Event Read:** Levels first: **$54.46** is the shelf, **$53.72** (200D) is the buy, **$55.66–$55.90** is the first proof, **$57.08** (50D) is the repair. The calendar gate is **Sep 30 PCE → Oct 2 jobs → Oct 28 FOMC**, and the fundamental gate is **JPM ~Oct 13–14**. If PCE cools and the 2Y backs under ~4.75%, the fund reclaims the shelf and the Q3 prints become upside fuel. If PCE runs hot, 71% goes to 100%, and the 200D gets its test with the whole Street leaning short into it — which is usually when it holds. Trade the band, size small, let October arbitrate.
+**Marky's Binary Event Read:** The gate is **Tuesday, Oct 13**, when four of the top holdings report on the same morning, and the fund walks into it at RSI 27.5 sitting on its 200-day. That is a loaded spring in one direction or a trapdoor in the other. Levels: **$52.81** is the stop, **$54.46** is the first proof, **$55.46** (20D) is where a bounce becomes a repair, **$56.65** (50D) is where the downtrend ends. If the prints are merely fine, an oversold fund on its 200D with 20–28% gaps to target can travel a long way quickly. If JPM builds reserves, $52.81 breaks on the open and there is no close-by support. I hold small into it and let the prints size the position for me.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- Core PCE (Sep 30) cools → October-hike odds collapse from ~71% → 2Y backs off 4.90% → XLF reclaims the $55.66–$55.90 shelf, then the 50D ($57.08)
-- Q3 prints (mid-Oct) show benign reserve builds and the BofA trading warning proving idiosyncratic → the two-week scare fades as fast as it arrived → BAC's 21% gap to target and SCHW's 26% gap start closing
-- Basel final rule (Q4) lands capital-positive on the back of Bowman's stress-test revisions → buyback capacity re-rates the money centers
-- Stablecoin framework gives the trust banks a new fee franchise → JPM/BLK lead a re-rating of the "plumbing" names
-- The 200D ($53.72) holds on any test and becomes the springboard — the 2023 pattern where every 30-RSI washout in financials launched the next leg
+- **Q3 prints (Oct 13–15) show flat reserve builds** and stable card/CRE losses → three weeks of credit-scare selling was positioning → oversold bounce from the 200D through $54.46 toward the 50D ($56.65)
+- NII guides rise on the steeper curve (2s10s ~+45bp) while the 2Y's retreat eases deposit costs — the NIM arithmetic finally shows up in guidance
+- Trading revenue beats on September's rate volatility; BAC's IB warning proves company-specific
+- The October hike stays dead and the long end stabilizes below 5.34% → securities-book marks stop getting worse
+- Basel final rule lands in Q4 with lower capital → buyback capacity re-rates money centers already at 10–13x forward
 
 ### 🔴 Bear Case
-- Hot PCE + strong jobs → October hike to 100% → 2Y through 5.00% → the long end follows (30Y 5.40%+) → credit formation freezes → $54.46 breaks → 200D ($53.72) test, then the June gap zone
-- 2s10s inverts through zero with oil under $100 — the Ophelia hard-landing tripwire completes and the sector's own bear case becomes self-fulfilling
-- Q3 prints validate the fear: reserve builds accelerating, trading misses across the Street (the BofA warning was the tell), deposit beta jumping → SCHW's 200D gives way → the brokers lead a second leg
-- The U.S.-Iran truce fails → WTI back over $100 → energy+banks fall together again, this time with the curve already flat
-- CRE or private credit produces an actual mark-to-market event (not a warning) while the Fed is mid-hike-cycle
+- **Reserve builds accelerate** across JPM/WFC/C with commentary tying it to labor weakness → $52.81 breaks → the 200D fails → May–June base at $50.42–$51.58
+- A second weak payrolls print in early November turns +29K from an outlier into a trend → payments (V, MA, AXP) join the banks below their 200-day
+- The long end keeps rising with the Fed on hold (30Y through 5.75%) → loan demand and dealmaking stall, AOCI losses grow, GS/MS guide down
+- HY spreads through 300bp (unverified this week) — the credit confirmation the tape has been front-running
+- A CRE or private-credit mark becomes a number in a Q3 release rather than a warning in a speech
 
 ### ⚠️ The Wild Card
-The term-premium feedback loop. The long end is now selling off on AI-driven commodity/inflation-premium logic (nat gas, copper, 30Y at 5.40%) — a force no FOMC dial controls. If that loop keeps running, the curve can steepen (good for NIM) while the LEVEL of rates silently kills the credit demand that feeds bank earnings — the bull and bear cases firing simultaneously. The sector's last three recessions all began with the long end doing the Fed's work for it; the tell this time is that financials keep falling even as the steepening begins. Watch the 10s3M: above +1.00% with XLF under $54 is the combination that has preceded every credit event of the last 20 years.
+**Who is actually being sold.** In a genuine credit scare, regional banks with concentrated loan books fall hardest and money centers are the refuge. For three weeks it has been the reverse: KRE has beaten XLF every week, the four small-cap watch names fell 1–2% while BAC fell 5%, and the damage is concentrated in names with large trading, dealmaking and securities books (BAC, GS, MS, C). That pattern fits a **rate-shock and capital-markets story** — 10Y at 5.34%, bond-book marks, a dead IPO window — better than a loan-loss story. If that reading is right, the Q3 prints will show ugly AOCI and soft IB fees but clean credit, and the sector bounces hard on the credit line alone. If it is wrong, the regionals are simply next.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"My hard-landing tripwire is half-armed and I refuse to fire it early: 2s10s held +25bp, XLF based $0.09 over its Tuesday low, and claims at 197K with new home sales at 684K actively disagree with the recession tape. What changed this week is the shape — the long end now leads (10s3M +0.92%), which fixes bank NIM math while it breaks everyone else's financing. A cool PCE on Sep 30 unwinds the 71% October-hike pricing and hands the fund its best entry since April; a hot one delivers the hike into a 5.18% long end and the 200D gets tested with the whole Street leaning the same way. Posture: accumulate the $53.72–$54.50 band slowly, no chasing above $55.90, and let Q3 reserves — not two weeks of vibes — tell me if the credit cycle actually turned."*
+**Ophelia:** *"The curve steepened 20bp, the hike died, PCE cooled — and financials made a new low. I was watching for an inversion and the signal came from the other side: 10s–3M above +1.00% with XLF under $54, the pairing I flagged last week. One payrolls print is not a credit cycle, and regionals beating money centers argues against a loan-book scare. But a sector that cannot rally on its own bull case has moved me from neutral to cautious. No new money above the 200-day until JPM, WFC and C report on the 13th. I have not re-checked HY spreads; do that before acting on anything I say here."*
 
-**Marky:** *"Tuesday was distribution (70M shares), Wednesday-Thursday were inside days, Friday was a quiet bounce. That's a shelf, and the shelf is $54.46. I buy $53.72 if they give it to me, I respect $55.66–$55.90 as the first real proof, and I don't call anything a repair until the 50D ($57.08) is back. RSI 30.6 with BAC at 25 is as washed-out as this tape gets — but washed-out is a condition, not a signal. The signal is the levels, and the levels say: range-trade with a downside bias until JPM prints in three weeks. No shorting 30-RSI into the 200D. No chasing green day one."*
+**Marky:** *"$54.46 broke Monday, the 200D got tagged Thursday at $52.81 and held by seventeen cents on the close. Three closes inside nine cents on falling volume. RSI 27.5, seventeen of seventeen under the 50-day. I own a small piece from the reclaim with a stop on a close below $52.81; I add over $54.46 and not a cent before. Four top holdings report Tuesday the 13th — I let that size the trade. I do not short this here and I do not get brave either."*
 
-**Cecil:** *"I started the BAC position Friday — 10.7x forward, 21% gap to target, RSI 25 — not because the knife stopped falling but because two weeks of credit-scare pricing produced zero confirming data, and that asymmetry is what you get paid for. SCHW on its 200D at 12.6x forward with a 26% gap is the better risk-reward. I will not pay a premium for the shelter rotation: insurance cracked this week exactly because its premium was last week's fear, and BLK green on an Ondo tokenization story confirms where fee growth actually lives — plumbing, not credit. Bowman's London speech and the GENIUS comment window are the two regulatory cards that can re-rate this complex without an earnings print; the market ignored both on a Friday, which is precisely when you read them. Q3 reserve builds judge everything in three weeks."*
+**Cecil:** *"BAC is half size at an average near $55 and three dollars under water on the first piece — I added at the fund's 200-day as I said I would, and I stop there until Oct 14. Ten times forward with a 26% gap is cheap if reserves are flat and merely correct if they are not, and +29K payrolls is the first datapoint that argues for the scare. I was wrong on insurance: I called it crowded and PGR was the only green name on the board. I will not hold GS or MS into prints below their 200-day. The pattern I trust most is the one in the wild card — regionals holding while the capital-markets banks fall says rates and marks, not loans. If Tuesday's credit lines are clean, that is the trade of the quarter."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0: XLF + holdings + SMID quotes (Fri Sep 25, 2026 close; daily bars verified with repair=True), analyst targets (fresh Sep 25 pull), market caps, fund metrics, State Street top-10 weights (Sep 25 pull)
-- Fair Value newsletter (Sep 25, 2026): 2Y 4.85%/4.90%, 10Y 5.11%/5.18%, 30Y 5.40%; 2s10s ~+25bp; 10s3M +0.92%; claims 197K; new home sales 684K (+12.7%); mortgage 7.03%; HY 273bp / IG 77bp; DXY 101.1; WTI $92.92 / Brent $98.58; BLK–Ondo tokenized model portfolios; Barr "further policy adjustments likely needed"; GENIUS Act stablecoin comment period (Proposal 1: 100% backing + 2% capital on first $20B; Proposal 2: bank issuance path); U.S.-Iran truce hopes; France to Yanbu
-- FRED DGS10: 2026-09-23 = 5.11, 2026-09-24 = 5.18; Octagon AI (Sep 24): ~71% October +25bp odds, GDPNow ~5.1%
-- Schwab Market Update / MarketWatch (Sep 25): Friday bounce as yields gave back overnight highs; 2Y 4.905%
-- Federal Reserve: Bowman stress-test speech (Sep 25, London — via BPI Sep 19 preview and Fair Value); Barr remarks (Sep 23); Jefferson discount-window speech (Sep 22)
-- Reuters / Seeking Alpha / Yahoo (Jun 30, 2026, recirculated Sep 22 on Schwab Network): Oppenheimer downgrades — GS/MS to Underperform, BAC/C to Perform, prefers USB/PNC and alternative asset managers
-- Repo cross-checks: wiki/tech.md (Sep 25 update — 10Y path, October-hike odds, DCS duties issue #114), wiki/economic-calendar.md, macro/facts.json (Sep 19), issues #106/#108 (rate regime)
+- Yahoo Finance / yfinance 1.6.0 (pulled Sat Oct 3, 2026): XLF + holdings + SMID daily bars through the Fri Oct 2 close; weekly changes vs settled Sep 25 closes; analyst mean targets, forward P/E, market caps; fund top-10 weights; earnings-calendar dates and consensus EPS; ^TNX, ^TYX, ^IRX, DXY, WTI, Brent, KRE. CSVs in the workspace: T2_quotes.csv, T2_fundies.csv, T2_XLF_daily.csv, MACRO_quotes.csv, earnings_calendar.csv
+- Yahoo Finance / 24/7 Wall St. (Oct 1): money-center banks lead financials lower — C -4%, BAC -3%; BAC $39M Merrill cash-sweep settlement; Yahoo Finance: bank stocks extend second-half slump amid sharp rate rise
+- MarketBeat (Oct 2): JPMorgan lowers BAC price target; Investing.com: big-bank shares fall after BAC outlook
+- Yahoo Finance live blog, TheStreet, Schwab (Oct 2): payrolls +29K, unemployment 4.2%
+- Quartz, FXStreet, Seeking Alpha, Finwire (Oct 2): October hike odds ~70% → ~17–20%; December >75%
+- Yahoo Finance / Quartz (Oct 1): 10Y 5.34%, highest since 2002
+- primerates.com (Oct 1): 2Y 4.78%; FRED T10Y2Y via search (Oct 2): ~+0.45% — both search-sourced, not pulled from FRED directly this run
+- Yahoo Finance (Sep 30): August PCE 3.4% / core 3.0%; ISM (Oct 1): PMI 54.5, prices paid 77.9
+- Bloomberg / Freshfields / Holland & Knight: Basel III re-proposal (Mar 19, 2026), capital expected to modestly decrease
+- SEC filings (WaFd DEFA14A / 8-K), Banking Dive: WaFd–EverBank terms, early-2027 close, EVBK ticker
+- Not re-sourced this week (flagged in the text): HY/IG credit spreads, XLF beta
+- Repo cross-checks: wiki/tech.md (Oct 3 update), prior revision of this page (Sep 25)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-09-25** (8 PM ET run; covering week ended Fri Sep 25, 2026)*
+*Last updated by Saturday Research Crew: **2026-10-03** (Saturday morning run; covering week ended Fri Oct 2, 2026)*
 *Next update: Every Saturday, 10:29 AM ET*
 *Data sources: Yahoo Finance, yfinance, Reuters, CNBC, FRED, MarketBeat, MarketWatch, Seeking Alpha, LPL Research*
