@@ -1,7 +1,7 @@
 {
   "schema": "macro-facts/v1",
-  "generated": "2026-09-25",
-  "generated_by": "Saturday Research Crew -- Canary Watch (single-agent run 2026-09-25, week ending Fri 2026-09-25 closes)",
+  "generated": "2026-10-04",
+  "generated_by": "Saturday Research Crew -- Canary Watch (single-agent run 2026-10-04, late: scheduled Sat 2026-10-03; week ending Fri 2026-10-02 closes)",
   "notes": "Canonical macro fact table. Wikis and reports CITE these values; they never restate their own macro numbers. Fields marked stale=true are last-known external-feed values -- treat as directional only. Canary Watch regenerates this file every Saturday from the same fetch that writes wiki/canary-watch.md.",
   "policy": {
     "fed_funds_range": {
@@ -15,45 +15,45 @@
       "source": "FOMC 2026-09-16 (12-0 vote, +25bp, first hike since Jul 2023; SEP dots: 16 of 18 see another 2026 hike)"
     },
     "next_macro_gate": {
-      "value": "August PCE Sep 30 (08:30 ET) + FOMC Oct 27-28 (16 of 18 dots see another 2026 hike); BOJ already hiked to 1.25% on Sep 18 (7-2 split)",
-      "as_of": "2026-09-19",
-      "source": "federalreserve.gov FOMC 2026 calendar + SEP 2026-09-16; BEA PCE schedule; BOJ statement 2026-09-18 (boj.or.jp k260918a.pdf); prior FOMC/BOJ September gates have now passed"
+      "value": "10Y auction + FOMC minutes Oct 7; September CPI Oct 14 (08:30 ET); FOMC Oct 27-28 (October-hike odds fell to roughly 16-18% after September payrolls +29K)",
+      "as_of": "2026-10-03",
+      "source": "wiki/economic-calendar.md (updated 2026-10-03: August PCE Sep 30 and September payrolls Oct 2 have passed; CPI date and hike odds as carried there) + federalreserve.gov FOMC 2026 calendar"
     }
   },
   "rates": {
     "ust_3m": {
-      "value": 4.07,
-      "as_of": "2026-09-25",
+      "value": 3.993,
+      "as_of": "2026-10-02",
       "source": "yahoo:^IRX",
       "tolerance_pct": 3
     },
     "ust_2y": {
-      "value": 4.87,
-      "as_of": "2026-09-24",
-      "source": "fred:DGS2",
+      "value": 4.83,
+      "as_of": "2026-10-02",
+      "source": "treasury.gov daily par yield curve, 2Y CMT (the upstream of fred:DGS2; FRED was unreachable from the runner on 2026-10-04; Treasury's 2026-09-24 print 4.87 equals last week's fred:DGS2 value)",
       "tolerance_pct": 4
     },
     "ust_5y": {
-      "value": 5.007,
-      "as_of": "2026-09-25",
+      "value": 5.055,
+      "as_of": "2026-10-02",
       "source": "yahoo:^FVX",
       "tolerance_pct": 2
     },
     "ust_10y": {
-      "value": 5.184,
-      "as_of": "2026-09-25",
+      "value": 5.277,
+      "as_of": "2026-10-02",
       "source": "yahoo:^TNX",
       "tolerance_pct": 2
     },
     "curve_10y_2y_bps": {
-      "value": 31,
+      "value": 45,
       "computed_from": [
         "ust_10y",
         "ust_2y"
       ]
     },
     "curve_10y_3m_bps": {
-      "value": 111,
+      "value": 128,
       "computed_from": [
         "ust_10y",
         "ust_3m"
@@ -62,156 +62,156 @@
   },
   "volatility": {
     "vix": {
-      "value": 14.87,
-      "as_of": "2026-09-25",
+      "value": 15.31,
+      "as_of": "2026-10-02",
       "source": "yahoo:^VIX",
       "tolerance_pct": 5
     }
   },
   "cross_asset": {
     "spy": {
-      "value": 771.35,
-      "as_of": "2026-09-25",
+      "value": 769.64,
+      "as_of": "2026-10-02",
       "source": "yahoo:SPY",
       "tolerance_pct": 1.5
     },
     "dxy": {
-      "value": 101.04,
-      "as_of": "2026-09-25",
+      "value": 101.93,
+      "as_of": "2026-10-02",
       "source": "yahoo:DX-Y.NYB",
       "tolerance_pct": 1
     },
     "eurusd": {
-      "value": 1.1392,
-      "as_of": "2026-09-25",
+      "value": 1.1257,
+      "as_of": "2026-10-02",
       "source": "yahoo:EURUSD=X",
       "tolerance_pct": 1
     },
     "usdjpy": {
-      "value": 157.185,
-      "as_of": "2026-09-25",
+      "value": 157.927,
+      "as_of": "2026-10-02",
       "source": "yahoo:JPY=X",
       "tolerance_pct": 1
     },
     "wti": {
-      "value": 92.44,
-      "as_of": "2026-09-25",
+      "value": 91.11,
+      "as_of": "2026-10-02",
       "source": "yahoo:CL=F",
       "tolerance_pct": 3
     },
     "gold": {
-      "value": 4320.5,
-      "as_of": "2026-09-25",
+      "value": 4162.3,
+      "as_of": "2026-10-02",
       "source": "yahoo:GC=F",
       "tolerance_pct": 2
     },
     "copper": {
-      "value": 6.779,
-      "as_of": "2026-09-25",
+      "value": 6.549,
+      "as_of": "2026-10-02",
       "source": "yahoo:HG=F",
       "tolerance_pct": 2
     },
     "btc": {
-      "value": 83987,
-      "as_of": "2026-09-26",
+      "value": 84497,
+      "as_of": "2026-10-02",
       "source": "yahoo:BTC-USD",
       "tolerance_pct": 5
     },
     "hyg": {
-      "value": 77.86,
-      "as_of": "2026-09-25",
+      "value": 76.91,
+      "as_of": "2026-10-02",
       "source": "yahoo:HYG",
       "tolerance_pct": 1.5
     },
     "lqd": {
-      "value": 103.21,
-      "as_of": "2026-09-25",
+      "value": 101.83,
+      "as_of": "2026-10-02",
       "source": "yahoo:LQD",
       "tolerance_pct": 1.5
     }
   },
   "sector_etf": {
     "XLK": {
-      "close": 196.27,
-      "wow_pct": 3.52,
-      "as_of": "2026-09-25",
+      "close": 199.81,
+      "wow_pct": 1.8,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLK",
       "tolerance_pct": 2
     },
     "XLE": {
-      "close": 62.04,
-      "wow_pct": -3.53,
-      "as_of": "2026-09-25",
+      "close": 62.82,
+      "wow_pct": 1.26,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLE",
       "tolerance_pct": 2
     },
     "XLF": {
-      "close": 54.84,
-      "wow_pct": -1.83,
-      "as_of": "2026-09-25",
+      "close": 53.49,
+      "wow_pct": -2.46,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLF",
       "tolerance_pct": 2
     },
     "XLV": {
-      "close": 170.7,
-      "wow_pct": 1.37,
-      "as_of": "2026-09-25",
+      "close": 166.18,
+      "wow_pct": -2.65,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLV",
       "tolerance_pct": 2
     },
     "XLY": {
-      "close": 110.56,
-      "wow_pct": -0.42,
-      "as_of": "2026-09-25",
+      "close": 110.04,
+      "wow_pct": -0.47,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLY",
       "tolerance_pct": 2
     },
     "XLP": {
-      "close": 82.06,
-      "wow_pct": -0.89,
-      "as_of": "2026-09-25",
+      "close": 80.53,
+      "wow_pct": -1.86,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLP",
       "tolerance_pct": 2
     },
     "XLI": {
-      "close": 170.43,
-      "wow_pct": 0.4,
-      "as_of": "2026-09-25",
+      "close": 169.95,
+      "wow_pct": -0.28,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLI",
       "tolerance_pct": 2
     },
     "XLB": {
-      "close": 49.8,
-      "wow_pct": -0.38,
-      "as_of": "2026-09-25",
+      "close": 48.86,
+      "wow_pct": -1.89,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLB",
       "tolerance_pct": 2
     },
     "XLU": {
-      "close": 39.51,
-      "wow_pct": -3.87,
-      "as_of": "2026-09-25",
+      "close": 39.83,
+      "wow_pct": 0.81,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLU",
       "tolerance_pct": 2
     },
     "XLRE": {
-      "close": 41.56,
-      "wow_pct": -2.28,
-      "as_of": "2026-09-25",
+      "close": 40.81,
+      "wow_pct": -1.8,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLRE",
       "tolerance_pct": 2
     },
     "XLC": {
-      "close": 112.96,
-      "wow_pct": 1.94,
-      "as_of": "2026-09-25",
+      "close": 110.32,
+      "wow_pct": -2.34,
+      "as_of": "2026-10-02",
       "source": "yahoo:XLC",
       "tolerance_pct": 2
     },
     "SMH": {
-      "close": 606.56,
-      "wow_pct": 5.86,
-      "as_of": "2026-09-25",
+      "close": 630.6,
+      "wow_pct": 3.96,
+      "as_of": "2026-10-02",
       "source": "yahoo:SMH",
       "tolerance_pct": 2
     }
