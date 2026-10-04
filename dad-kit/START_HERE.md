@@ -34,8 +34,8 @@ files, so Claude already knows the background when you walk in.
 
 - **Stocks** -- knows your goals and your limits, follows the family
   Council's rules for numbers, and can read the Council's weekly brief.
-- **Golf Course** -- knows the course, who's who, and how you like things
-  laid out.
+- **Golf** -- knows your league's rules, the course, who's who, and how you
+  like things laid out.
 
 Start a chat **inside** the right project. A chat started outside a project
 works fine, it just does not have the background.
@@ -43,10 +43,25 @@ works fine, it just does not have the background.
 You also have two **Skills**, which run in the background. You never have to
 call them; Claude uses them when the topic comes up.
 
-And two spreadsheets: the **Investing Journal** and the **Golf Course
-Organizer**. Keep them on your computer. When you want one updated, attach it
-to a chat and say what changed. Claude hands back the whole updated file;
-save it over the old one.
+And three spreadsheets: the **Investing Journal**, the **League Manager**
+(roster, schedule, scores, standings, subs, money) and the **Golf Course
+Organizer** (everything else at the course). Keep them on your computer.
+When you want one updated, attach it to a chat and say what changed. Claude
+hands back the whole updated file; save it over the old one.
+
+## Your plan
+
+You are starting on the free plan, which can do everything in this setup.
+What it limits is how much you can do in one stretch: usage refills on a
+rolling five-hour window. To make it go further:
+
+- Start a **new chat for each job** ("enter week 5", "stock brief on X").
+  Long chats cost more with every message.
+- Attach only what the job needs. Making a spreadsheet or reading a stack
+  of photos uses more than a plain question.
+- If you hit the limit, it tells you when it refills. If you keep hitting
+  it on league nights, that is the sign the Pro plan is worth it: same
+  setup, more room.
 
 ## How to talk to it
 
@@ -71,16 +86,26 @@ save it over the old one.
 5. "[Company] reports earnings next week. What should I watch for?"
 6. "Let's do my weekly review." (attach your Investing Journal)
 
-**In the Golf Course project**
+**In the Golf project: the league**
+
+1. "Read my league rules and tell me what's missing or unclear." Do this
+   one first; it saves arguments later.
+2. [League Manager + photos of the scorecards] "Enter week 5." Claude shows
+   you the scores to check before it does the standings.
+3. "Write this week's league email: results, standings and next week's
+   pairings."
+4. "Joe and Mike can't make it Wednesday. Who should I ask to sub?"
+5. "Build next season's schedule for 12 teams, 16 weeks, starting
+   [date]."
+6. "Work out the skins: here's who was in and the scores."
+
+**In the Golf project: around the course**
 
 1. "Here's everything on my plate this week: ... Turn it into a list."
 2. [photo of a whiteboard] "Turn this into a task list."
 3. "We're running a scramble on [date] for about [number] players. Build me
    the planning checklist."
-4. "Here are the volunteers and when they can work: ... Build a schedule for
-   [dates]."
-5. "Write a notice to members that the greens will be aerated [dates]."
-6. "Here are my notes from the committee meeting: ... What did we decide,
+4. "Here are my notes from the committee meeting: ... What did we decide,
    and who's doing what?"
 
 ## When you get stuck

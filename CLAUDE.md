@@ -198,8 +198,8 @@ week, corrections at 330. Rationale and the corrected commands are in
 
 A starter kit for the owner's dad's Claude account (2026-10-03): two
 claude.ai skills, project instructions, his guide, and `build_kit.py`, which
-builds the upload zips and two workbooks into `dad-kit/dist/` (not
-committed). Not part of the pipeline; nothing in it touches `data/`. ASCII
+builds the upload zips and three workbooks into `dad-kit/dist/` (not
+committed). He mostly runs a golf league, so the golf skill leads with it. Not part of the pipeline; nothing in it touches `data/`. ASCII
 throughout, and `tests/test_dad_kit.py` checks each skill against claude.ai's
 upload rules.
 

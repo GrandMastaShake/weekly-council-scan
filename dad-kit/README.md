@@ -1,7 +1,9 @@
 # Dad's Claude kit
 
-A starter setup for Dad's Claude account: two Projects, two Skills, two
-spreadsheets, and a plain-English guide. Built from what the Council taught
+A starter setup for Dad's Claude account: two Projects, two Skills, three
+spreadsheets, and a plain-English guide. He mostly runs a golf league and
+helps around the course besides, so the golf side is built around the
+league's weekly cycle. Built from what the Council taught
 us about numbers, records and plans, and pointed at the Council's own
 weekly brief, which already has "Dad Translation" boxes in it.
 
@@ -17,11 +19,12 @@ files, and only when Dad asks.
 | `profile-preferences.txt` | Account-wide instructions (bottom line first, plain English, no invented numbers) | Settings -> Instructions for Claude |
 | `projects/stocks/instructions.md` | Stocks project instructions | Stocks project -> instructions |
 | `projects/stocks/my-investing-profile.md` | His goals, limits and style, to fill in with him | Stocks project -> files |
-| `projects/golf-course/instructions.md` | Golf Course project instructions | Golf Course project -> instructions |
-| `projects/golf-course/about-the-course.md` | The course, his role, who's who, regular events, to fill in with him | Golf Course project -> files |
+| `projects/golf-course/instructions.md` | Golf project instructions | Golf project -> instructions |
+| `projects/golf-course/about-the-league.md` | The league's rule book: format, points, handicaps, absences, rain, money. Claude computes from it and asks instead of guessing | Golf project -> files |
+| `projects/golf-course/about-the-course.md` | The course, his role, who's who, other events, to fill in with him | Golf project -> files |
 | `skills/stock-research/` | Stock briefs, earnings checks, trade plans, portfolio check-ups, market read, weekly review, and the Council's lessons | Uploaded as `dist/stock-research.zip` |
-| `skills/golf-course-ops/` | Task lists, meeting notes, schedules, events, maintenance, notices, budgets | Uploaded as `dist/golf-course-ops.zip` |
-| `build_kit.py` | Builds the two skill zips and the two workbooks into `dist/` | Run it on your machine |
+| `skills/golf-course-ops/` | The league (pairings, scorecard photos, standings, handicaps, subs, skins, the weekly email, season schedule), plus task lists, schedules, events, maintenance, notices, budgets | Uploaded as `dist/golf-course-ops.zip` |
+| `build_kit.py` | Builds the two skill zips and the three workbooks into `dist/` | Run it on your machine |
 
 ## Build
 
@@ -33,6 +36,9 @@ That writes to `dad-kit/dist/` (not committed; it is all derived):
 - `stock-research.zip`, `golf-course-ops.zip`
 - `Investing Journal.xlsx` -- Holdings (with formulas for value, gain and
   weight), Trade Plans, Watchlist, Limit Orders, Weekly Review
+- `League Manager.xlsx` -- Roster, Schedule, Weekly Scores (net filled in),
+  Standings and Team Standings (add themselves up from Weekly Scores),
+  Subs (counts their rounds), Money (running balance)
 - `Golf Course Organizer.xlsx` -- Tasks, Schedule, Events, Sponsors,
   Maintenance Log, Equipment, Inventory, Contacts
 
@@ -49,9 +55,10 @@ not where this says, ask Claude "where do I find [setting]?"
 1. **Instructions for Claude.** Click his initials (bottom left) ->
    Settings -> "Instructions for Claude". Paste `profile-preferences.txt`
    and fix the [Windows PC / Mac / iPhone / Android] bracket.
-2. **Capabilities.** Settings -> Capabilities: turn on "Code execution and
-   file creation" (the skills and spreadsheets need it). Turn on Memory if it
-   is offered. Web search is turned on from the tools button in the chat box.
+2. **Capabilities.** Settings -> Capabilities: make sure "Code execution
+   and file creation" is on (the skills and spreadsheets need it). Memory and
+   web search are on by default on every plan, Free included; check nobody
+   turned them off.
 3. **Skills.** Customize -> Skills -> "+" -> Create skill -> Upload a
    skill. Upload `stock-research.zip`, then `golf-course-ops.zip`. Make sure
    both show as enabled.
@@ -59,10 +66,12 @@ not where this says, ask Claude "where do I find [setting]?"
    `projects/stocks/instructions.md` into the project instructions. Fill in
    `my-investing-profile.md` with him (his limits matter most: max loss per
    idea, max position size, cash target) and add it to the project files.
-5. **Golf Course project.** New project "Golf Course". Paste
-   `projects/golf-course/instructions.md`. Fill in `about-the-course.md`
-   with him and add it.
-6. **Spreadsheets.** Put the two workbooks somewhere he can find them
+5. **Golf project.** New project "Golf". Paste
+   `projects/golf-course/instructions.md`. Fill in `about-the-league.md`
+   with him first; it is the file he will lean on every week. Gaps are
+   fine: the first thing to try in START_HERE is asking Claude what is
+   missing or unclear in it. Then `about-the-course.md`, and add both.
+6. **Spreadsheets.** Put the three workbooks somewhere he can find them
    (Documents, or his Google Drive / OneDrive). They are not project files:
    project files are read-only to Claude. He attaches the current copy to a
    chat when he wants it updated and saves the copy Claude hands back.
@@ -71,8 +80,24 @@ not where this says, ask Claude "where do I find [setting]?"
 8. **Optional connectors.** If the course runs on Google (Drive, Gmail,
    Calendar) or he keeps his records there, Settings -> Connectors lets
    Claude read them. Leave this for week two.
-9. **First run.** Go through two or three of the "Things to try first" in
-   `START_HERE.md` together, one in each project.
+9. **First run.** In the Golf project, start with "Read my league rules and
+   tell me what's missing or unclear", and add his answers to
+   `about-the-league.md`. Then one stock prompt from `START_HERE.md`.
+
+## Free first, then Pro
+
+He is starting on Free. Everything in this kit works there: projects (Free
+allows five; this uses two), skills, file creation and code, web search,
+memory and connectors. What Free limits is volume: usage refills on a
+rolling five-hour window, and making files or reading a stack of scorecard
+photos uses more of it than a plain question. START_HERE tells him how to
+stretch it (a new chat per job, attach only what the job needs).
+
+Pro ($20 a month in the US) adds more usage per window, priority at busy
+times, more room for project files, and Claude Code. Same account, same
+projects and skills; nothing here needs redoing when he upgrades. The test
+that tells you it is time: he hits the limit entering scores on league
+night.
 
 ## Updating
 

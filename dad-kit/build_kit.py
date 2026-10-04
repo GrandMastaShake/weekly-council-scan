@@ -7,7 +7,8 @@ Produces:
       One per skill. claude.ai wants the skill folder as the zip's root and
       the folder name equal to the skill's `name`, so both are checked
       before anything is written.
-  dist/Investing Journal.xlsx, dist/Golf Course Organizer.xlsx
+  dist/Investing Journal.xlsx, dist/League Manager.xlsx,
+  dist/Golf Course Organizer.xlsx
       Blank starter workbooks. Needs openpyxl (pip install openpyxl); the
       zips do not, and are still built without it.
 
@@ -163,7 +164,7 @@ GOLF_HOWTO = [
     "",
     "How to use it with Claude:",
     "1. Keep this file on your computer (or in Google Drive / OneDrive).",
-    "2. In the Golf Course project, start a chat, attach this file, and say what changed.",
+    "2. In the Golf project, start a chat, attach this file, and say what changed.",
     "   Example: 'Add these jobs from today' or 'Build the volunteer schedule for the scramble'.",
     "3. Claude hands back the whole updated file. Save it over the old one.",
     "",
@@ -231,6 +232,102 @@ JOURNAL_HOWTO = [
 ]
 
 
+LEAGUE_SHEETS = {
+    "Roster": (
+        ["Name", "Team", "Phone", "Email", "Handicap", "Handicap as of", "Dues paid", "Paid on", "Active", "Notes"],
+        [22, 14, 15, 26, 10, 14, 10, 12, 8, 30],
+        {"Dues paid": ["Yes", "No"], "Active": ["Yes", "No"]},
+    ),
+    "Schedule": (
+        ["Week", "Date", "Day", "Start", "Nine", "Match or group", "Side A", "Side B", "Status", "Makeup date", "Notes"],
+        [7, 12, 11, 9, 8, 14, 20, 20, 12, 13, 30],
+        {"Nine": ["Front", "Back", "18"], "Status": ["Scheduled", "Played", "Rained out", "Makeup"]},
+    ),
+    "Weekly Scores": (
+        ["Week", "Date", "Player", "Team", "Gross", "Handicap used", "Net", "Points", "Skins won", "Sub for", "Notes"],
+        [7, 12, 22, 14, 8, 10, 8, 8, 10, 18, 34],
+        {},
+    ),
+    "Standings": (
+        ["Player", "Team", "Points", "Rounds", "Avg net", "Rank"],
+        [22, 14, 9, 9, 9, 7],
+        {},
+    ),
+    "Team Standings": (
+        ["Team", "Points", "Rank"],
+        [20, 9, 7],
+        {},
+    ),
+    "Subs": (
+        ["Name", "Phone", "Email", "Handicap", "Nights available", "Times subbed", "Last subbed", "Notes"],
+        [22, 15, 26, 10, 18, 12, 12, 30],
+        {},
+    ),
+    "Money": (
+        ["Date", "Who", "What", "In", "Out", "Balance", "Notes"],
+        [12, 22, 12, 10, 10, 11, 34],
+        {"What": ["Dues", "Skins", "Prize", "Payout", "Expense", "Other"]},
+    ),
+}
+
+LEAGUE_HOWTO = [
+    "League Manager",
+    "",
+    "One workbook for the season: roster, schedule, weekly scores, standings, subs and money.",
+    "",
+    "How to use it with Claude:",
+    "1. Keep this file on your computer. After league night, start a chat in the Golf project,",
+    "   attach this file and photos of the scorecards, and say 'Enter week 5'.",
+    "2. Claude reads each card, checks the holes add up to the total written on it, and shows you",
+    "   the scores to confirm before doing anything else.",
+    "3. It fills in Weekly Scores; Standings and Team Standings add themselves up.",
+    "   It hands back the whole file. Save it over the old one.",
+    "",
+    "Rules that keep it right:",
+    "- One row per player per week in Weekly Scores. Net = Gross minus Handicap used, filled in for you.",
+    "- Nobody gets a made-up score. A player who did not play gets what the league's absence rule says.",
+    "- Never delete a rained-out week from Schedule. Set its Status to Rained out.",
+    "- Standings lists everyone on the Roster, in Roster order, ranked by points (most first).",
+    "  Tie-breakers come from your league rules; Claude applies them when you ask for final standings.",
+    "- Subs go on the Subs sheet. Times subbed counts itself from Weekly Scores.",
+    "- Money: one row for every dollar in or out. Balance is a running total and should match the cash box.",
+]
+
+
+def _league_formulas(title: str, ws, players: int = 60, teams: int = 30, rows: int = 600) -> None:
+    """Standings that add themselves up from Weekly Scores, so entering a
+    week is one sheet of typing and nobody re-totals points by hand. Only
+    functions every Excel since 2010 and LibreOffice know: no SORT, no
+    MAXIFS, which would show #NAME? on an older copy of Office."""
+    scores = "'Weekly Scores'"
+    if title == "Weekly Scores":
+        for r in range(2, rows + 2):
+            ws[f"G{r}"] = f'=IF(AND(E{r}<>"",F{r}<>""),E{r}-F{r},"")'
+    elif title == "Standings":
+        last = players + 1
+        for r in range(2, last + 1):
+            ws[f"A{r}"] = f'=IF(Roster!A{r}="","",Roster!A{r})'
+            ws[f"B{r}"] = f'=IF(A{r}="","",IF(Roster!B{r}="","",Roster!B{r}))'
+            ws[f"C{r}"] = f'=IF(A{r}="","",SUMIF({scores}!$C:$C,A{r},{scores}!$H:$H))'
+            ws[f"D{r}"] = f'=IF(A{r}="","",COUNTIF({scores}!$C:$C,A{r}))'
+            ws[f"E{r}"] = f'=IF(A{r}="","",IFERROR(AVERAGEIF({scores}!$C:$C,A{r},{scores}!$G:$G),""))'
+            ws[f"F{r}"] = f'=IF(OR(A{r}="",D{r}=0),"",RANK(C{r},$C$2:$C${last}))'
+            ws[f"E{r}"].number_format = "0.0"
+    elif title == "Team Standings":
+        last = teams + 1
+        for r in range(2, last + 1):
+            ws[f"B{r}"] = f'=IF(A{r}="","",SUMIF({scores}!$D:$D,A{r},{scores}!$H:$H))'
+            ws[f"C{r}"] = f'=IF(A{r}="","",RANK(B{r},$B$2:$B${last}))'
+    elif title == "Subs":
+        for r in range(2, players + 2):
+            ws[f"F{r}"] = f'=IF(A{r}="","",COUNTIF({scores}!$C:$C,A{r}))'
+    elif title == "Money":
+        for r in range(2, rows + 2):
+            ws[f"F{r}"] = f'=IF(AND(D{r}="",E{r}=""),"",SUM($D$2:D{r})-SUM($E$2:E{r}))'
+            for col in "DEF":
+                ws[f"{col}{r}"].number_format = "$#,##0.00"
+
+
 def _holdings_formulas(ws, rows: int = 60) -> None:
     """Cost basis, value, gain and weight computed in the sheet, so a pasted
     price updates everything and nobody re-does the arithmetic by hand."""
@@ -293,6 +390,7 @@ def build_workbooks(out_dir: Path) -> list[Path]:
 
     return [
         build_workbook(out_dir / "Investing Journal.xlsx", JOURNAL_HOWTO, JOURNAL_SHEETS, journal_extras),
+        build_workbook(out_dir / "League Manager.xlsx", LEAGUE_HOWTO, LEAGUE_SHEETS, _league_formulas),
         build_workbook(out_dir / "Golf Course Organizer.xlsx", GOLF_HOWTO, GOLF_SHEETS),
     ]
 

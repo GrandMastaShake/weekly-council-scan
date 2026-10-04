@@ -40,9 +40,12 @@ messages.
 
 ## Regular events
 
+The league I run has its own file, about-the-league. List everything else
+here, including other leagues at the course.
+
 | Event | When | Format | About how many players | My part |
 |---|---|---|---|---|
-| [Men's league] | [Wednesdays, May to Sept] | | | |
+| [Another league at the course] | [Thursdays, May to Sept] | | | |
 | [Annual charity scramble] | [June] | | | |
 
 ## Volunteers and crew
