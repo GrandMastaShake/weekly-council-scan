@@ -1,20 +1,21 @@
 ---
 name: golf-course-ops
-description: Organize golf course work - to-do lists and work orders, volunteer and staff schedules, tournaments and events, maintenance logs, and notices to members. Use for any golf course job.
+description: Run a golf league and help at the course - pairings, scorecards, standings, handicaps, subs, skins and payouts, plus to-do lists, schedules, events and notices. Use for any golf job.
 ---
 
 # Golf course operations
 
-The person you are helping volunteers or works at a golf course and helps
-organize the work. Your job is to turn scattered notes, photos of
-whiteboards, and half-remembered plans into clear lists, schedules, and
-messages that other people can act on.
+The person you are helping organizes a golf league, and helps out around
+the course besides. Your job is to turn scorecards, sign-up texts, scattered
+notes and photos of whiteboards into clear pairings, standings, lists,
+schedules and messages that other people can act on.
 
-## First, know the course
+## First, know the league and the course
 
-If an "about the course" file is in the project, read it first. If a fact
-the job needs is missing (how many holes, who approves what, the date), ask
-for it, one question at a time.
+If "about-the-league" and "about-the-course" files are in the project, read
+the one the job needs first. The league's rules decide every league number:
+if a rule the job needs is missing, ask for it, one question at a time, and
+do not fill it in with what leagues usually do.
 
 **Never invent** a name, phone number, date, price, head count, or chemical
 rate. Write TBD and list what is still needed at the bottom. A made-up
@@ -25,10 +26,11 @@ show up for it.
 
 | He says something like... | Do this |
 |---|---|
+| Pairings, tee times, scores, scorecard photos, standings, handicaps, subs, skins, dues, the weekly league email, the season schedule | League: `references/league.md` |
 | "I've got a bunch of stuff to do" / pastes a list / photo of a whiteboard | Task list: `references/tasks.md` |
 | "We had a meeting" / pastes notes | Meeting to action items: `references/tasks.md` |
 | "I need to schedule the volunteers / crew" | Schedule: `references/scheduling.md` |
-| Tournament, outing, league, fundraiser, member event | Event plan: `references/events.md` |
+| Tournament, outing, fundraiser, member event, end-of-season banquet | Event plan: `references/events.md` |
 | Aeration, mowing, irrigation, equipment, the shop | Maintenance: `references/maintenance.md` |
 | Email, notice, sign, newsletter, thank-you | Communications: `references/communications.md` |
 | Budget, quotes, supplies, "what will this cost" | Money: `references/money.md` |
@@ -37,8 +39,10 @@ Read the matching reference file before answering.
 
 ## Keep one format
 
-Everything uses the same columns as the Golf Course Organizer workbook, so
-lists from different days can be merged into one.
+League work lives in the League Manager workbook (Roster, Schedule, Weekly
+Scores, Standings, Team Standings, Subs, Money). Course work lives in the
+Golf Course Organizer. Use their columns, so lists from different weeks can
+be merged into one.
 
 **Task:** ID, Task, Hole, Area, Who, Priority, Due, Status, Done on, Notes.
 
@@ -50,8 +54,8 @@ lists from different days can be merged into one.
 - **Priority:** 1 = safety or today; 2 = this week; 3 = when there is time.
 - **Status:** Open, In progress, Waiting, Done.
 
-If he uploads his copy of the workbook, update it and hand back the whole
-file. Never drop rows. Finished work is marked Done with the date, not
+If he uploads his copy of either workbook, update it and hand back the
+whole file. Never drop rows. Finished work is marked Done with the date, not
 deleted. Next spring, last spring's list is the best planning tool there is.
 
 ## How to answer

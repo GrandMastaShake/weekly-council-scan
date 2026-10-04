@@ -96,3 +96,21 @@ def test_kit_file_is_ascii(path):
     data = path.read_bytes()
     bad = [(i, b) for i, b in enumerate(data) if b > 127]
     assert not bad, f"non-ASCII byte at offset {bad[0][0]}: {data[max(0, bad[0][0] - 30):bad[0][0] + 10]!r}"
+
+
+def test_workbooks_build_with_their_formulas(tmp_path):
+    """The standings add themselves up from Weekly Scores; if a formula
+    goes missing, the sheet still opens and silently shows blanks."""
+    openpyxl = pytest.importorskip("openpyxl")
+    paths = {p.name: p for p in build_kit.build_workbooks(tmp_path)}
+    assert set(paths) == {"Investing Journal.xlsx", "League Manager.xlsx", "Golf Course Organizer.xlsx"}
+
+    league = openpyxl.load_workbook(paths["League Manager.xlsx"])
+    assert league.sheetnames == ["How To Use", *build_kit.LEAGUE_SHEETS]
+    assert league["Weekly Scores"]["G2"].value.startswith("=IF(AND(E2")
+    assert "SUMIF('Weekly Scores'!$C:$C,A2,'Weekly Scores'!$H:$H)" in league["Standings"]["C2"].value
+    assert "SUMIF('Weekly Scores'!$D:$D,A2" in league["Team Standings"]["B2"].value
+    assert league["Money"]["F2"].value.startswith("=IF(AND(D2")
+
+    journal = openpyxl.load_workbook(paths["Investing Journal.xlsx"])
+    assert journal["Holdings"]["M2"].value.startswith("=IF(AND(J2")
