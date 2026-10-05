@@ -106,6 +106,26 @@ FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
   unreviewed until someone gives it one by hand. It needs the network and
   yfinance, so it is not a `truth_check` mode and not in CI.
 
+## series_audit.json (which session a committed equity bar is)
+
+- The same question for `series` in `data/weekly`, and the same kind of list.
+  `scripts/backfill_weekly.py::slice_week` takes the last bar on or before the
+  Friday and marks nothing per ticker, so a name with no Friday bar carries an
+  earlier session under the Friday date. `DATA_FEED.md` sec.1b, "The equity
+  series", has what was found.
+- It is not a list of differences from the provider. An equity close is
+  adjusted to its fetch date and is supposed to differ from a fresh fetch;
+  `_method` in the file says how the session is told instead (volume, and the
+  close with the provider's own adjustment factor divided out). `audited` also
+  records the audit's reach: how often it names the session before, when that
+  bar is put in place of one that passed.
+- Most entries are `unverified`: the provider keeps only the last bar of a
+  delisted symbol, so AVB's and EA's weeks cannot be checked. That is not an
+  ok, and each carries a `cause` saying what else is known about it.
+- `python scripts/audit_series.py` re-runs it, with the same `--write` and the
+  same rule for causes. Network and yfinance, not a `truth_check` mode, not in
+  CI.
+
 ## Canonical earnings calendar
 
 `wiki/earnings-surveillance.md` is the ONLY page that states earnings dates.
