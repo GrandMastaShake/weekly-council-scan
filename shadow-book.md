@@ -18,6 +18,24 @@
 
 ## Entries
 
+### Week of 2026-10-05 -- TRIGGER BLOCK: ALL + HIG (XLF 50D, fourth week) and TROW; CASH CAP met by PROMOTION (NDSN, LRCX) instead of raising three survivors
+
+**Trigger:** The booking trigger check fired on the engine's #1 consensus pick **ALL** (Cecil, 21.0%) for the fourth straight week and on **HIG** (Cecil, 13.0%) for the second -- XLF $53.49 (macro/facts.json) vs its 50D $56.65 (wiki/financials.md), the one line the Council ruled both names share. Promotion candidate **TROW** (Cecil #3) blocked on the same fund line (a third financial, under its own 50D, no wiki coverage; wiki/synthesis.md Section 4 "Do nothing before the dated receipt" -- Oct 13). **APH** (Marky, conf 78.7) declined on Marky's own Rule 1 (engine rationale: "breakout with volume fading"). That left SNPS / JCI / AMAT at 47.3%.
+
+**What changed in the handling:** on 2026-09-21 and 2026-09-28 the Council refused promotions that would share a booked name's sector line and raised the survivors to the cap instead. This week it promoted **NDSN** (Marky #3, shares JCI's XLI $166.18 line) and **LRCX** (Ophelia #3, shares AMAT's SMH $609.66 line), both passing their trigger checks, at their sponsor's weakest booked weight scaled by relative confidence (13.4% and 11.75%), then raised all five in proportion to 80.0% with the pipeline's own `apply_cash_cap`. Reasons, recorded before the result: STEP 2 check 8 says promote first and raise only "when no candidate is left"; raising three names puts the same weight on the same lines with fewer names; and last week's rejection backfill showed the correlation exclusion did not measure what it claimed (QCOM -1.39% while SMH rose +5.10%).
+
+**Booked (official, Tracker-measured):** SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% / cash 20.0%.
+
+**Shadow A (the engine's unconstrained book):** ALL 21.0% / SNPS 19.3% / JCI 15.7% / HIG 13.0% / AMAT 12.3% / cash 18.7% -- the pipeline's post-cash-floor consensus book with no booking trigger check.
+
+**Shadow B (last week's rule -- no correlated promotions, three survivors raised to the cap):** JCI 30.0% / SNPS 29.5% / AMAT 20.5% / cash 20.0% (computed with `apply_cash_cap`; JCI stops at the per-name maximum).
+
+**Overlap:** SNPS, JCI, AMAT (all three books).
+
+**Resolution:** Counterfactual to be computed next Monday (2026-10-12), date-pinned Mon 2026-10-05 close -> Fri 2026-10-09 close, for both shadows against the official book. **Two questions, written before the answers are known:** (1) Fourth week of the XLF block, into the week BEFORE the bank prints: if ALL and HIG both beat the book, is that the oversold snap-back the synthesis names as the board's biggest opportunity arriving a week early, and should the line be re-read on Oct 13 rather than on a 50D that is $3.16 away? (2) Promotion vs concentration: does the five-name book beat or trail Shadow B? If NDSN and LRCX simply track JCI and AMAT, the promotions bought diversification of name risk at no cost; if they lag their line-mates, the old exclusion was protecting the book for the wrong stated reason again.
+
+---
+
 ### Week of 2026-09-28 -- TRIGGER BLOCK: ALL + HIG (XLF 50D) and VICI (XLRE trapdoor); CASH CAP raises three survivors to 80%
 
 **Trigger:** The booking trigger check fired on the engine's #1 consensus pick **ALL** (Cecil, 24.7%) for the second straight week -- XLF $54.84 vs its 50D $57.08 (wiki/financials.md), Cecil's own re-entry line $57.18 -- and on **HIG** (Cecil, 15.3%), whose booked curve trigger (+111 bps, intact) the 2026-09-21 council scorecard had already called mis-specified ("HIG's intact trigger did not measure the risk that hurt it"). HIG lost -5.66% last week and fired the first CORE shadow stop in the log; the Council replaced its line BEFORE booking with the one that measured the risk -- the XLF 50D it shares with ALL as one carry thesis -- and that line is violated. Promotion candidate **VICI** blocked on XLRE's trapdoor ($41.56 < $42.50; 200D $43.19, wiki/real-estate.md). **TMO** (Marky, conf 80.3) declined as a chase (wiki/healthcare.md "don't chase RSI-70s tools (TMO)"); **QCOM** / **TEL** not promoted (share AMD's SMH / AAPL's XLK lines). With no candidate left, the owner's CASH CAP (commit e72d8af) raised the survivors in proportion to 80% via the pipeline's own `apply_cash_cap`.

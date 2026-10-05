@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-10-05
+
+Booked: SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% (20.0% cash -- the owner's cash cap met exactly; 3 raised regime flags, Tightening Fed on pause, the $39B 10-year auction Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line for the fourth and second week, TROW blocked as a promotion on the same line, APH declined; NDSN and LRCX promoted and all five raised in proportion to 80%). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| (none) | -- | -- | All three of her proposals are booked: SNPS (78 / 74.8), AMAT (77 / 71.8) and LRCX (76 / 68.6, promoted). First week since the log opened with no Ophelia rejection. The promotion of LRCX reverses the correlation exclusion applied to INTC/QCOM (2026-09-21) and QCOM (2026-09-28); last week's backfill showed that exclusion was right for a reason other than the one given |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): ALL (Cecil #1, score 97, conf 87.7) and HIG (Cecil #2, 94 / 81.5) TRIGGER-BLOCKED -- XLF $53.49 vs the 50D $56.65 (wiki/financials.md); TROW (Cecil #3, 93 / 76.9) blocked as a promotion on the same line, no wiki coverage; APH (Marky, conf 78.7) declined -- engine rationale "breakout with volume fading" against Marky's own Rule 1, reports Oct 28, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
+
+counterfactual: to be computed (Monday 2026-10-12, date-pinned Mon 2026-10-05 close -> Fri 2026-10-09 close; ALL / HIG / TROW / APH each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-09-28
 
 Booked: AAPL 30.0% / META 29.4% / AMD 20.6% (20.0% cash -- the owner's cash cap met exactly; 2 raised regime flags + NFP at risk, Tightening Fed, PCE + Micron on Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line, VICI blocked on XLRE's trapdoor, TMO declined as a chase; the three survivors raised in proportion to 80%). Ophelia's rejected candidates:
