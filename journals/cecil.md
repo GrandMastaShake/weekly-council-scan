@@ -633,3 +633,47 @@ Second, and this is the one I owe the scorekeeper: **six weeks, and my screen ha
 **Cash Target: 35%. Council actual: 20.0%.** I am not in the book, so this is advice, not exposure: three large-cap tech names at 80% into PCE and Micron on the same Wednesday is the most concentrated the Council has been since I have kept this journal. The owner made the rule and the rule is applied. I would like it written that the fundamentalist thinks cash at 4% is the cheapest asset on the board this week.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-10-05 -- Entry #011
+
+**Mood:** Benched again, and this time I cannot say the bench surprised me.
+**Cash Target:** 35% (Council book: 20.0% cash -- the owner's cap; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, Tightening on pause; October-hike odds ~17-23% after payrolls +29K | The Fed stepped back and the bond did not follow |
+| 10Y Yield | **5.277%**, through 5.25% on a weekly close; high 5.342% | About seven of nine basis points were real yield. The price of lending rose, not the price of goods |
+| Curve (10Y-3M) | **+128 bps** (from +111) | Steeper again, and my insurers fell again. Second week the curve line would have said "fine" |
+| XLF | **$53.49**, 50D $56.65, 200D $53.32 adjusted / $53.71 raw | Seventeen of seventeen tracked names under the 50D. On the 200-day by one chart, under it by another |
+| Credit | HY OAS **324** (Oct 1), above 300 since Sep 28; CCC 1,215, a 52-week high | The 300 I named as "the first real credit signal of this cycle" was crossed while I could not see it |
+
+**Verdict:** Restrictive, and now with credit starting to agree.
+
+#### Last Week, Scored
+- I had nothing booked. **ALL**, blocked, lost another **-1.67%** (Mon close to Fri close); **HIG**, blocked on the line the Council gave it, was flat (**+0.01%**). The engine's unblocked book made +0.36% against the booked book's +0.98% on that basis: the block protected the book a third straight week.
+- **VICI**, blocked, lost -2.33%.
+- Three weeks, three times the line I did not want was right about the name I wanted most.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 97, conf 87.7 -- **TRIGGER-BLOCKED**, fourth week. XLF $53.49 against $56.65.
+- **HIG** -- score 94, conf 81.5 -- **TRIGGER-BLOCKED**, the shared line.
+- **TROW** -- score 93, conf 76.9 -- **BLOCKED as a promotion.** An asset manager, not an insurer, so I told myself it was a different trade. It is a financial under the same fund line and under its own 50D, and its revenue is a fee on the level of markets in the week the Council calls the long bond the biggest risk on the board.
+
+**Booked for Cecil: nothing.** Second week.
+
+#### The Concession (owned)
+TROW. Last week I wrote that my proposals were "one trade wearing three tickers," and that I owed the scorekeeper a duration-adjusted cheapness measure before I called anything cheap again. I did not build it. The screen ran unchanged and handed me the same trade with one ticker swapped, and I brought it to the table as if the swap were the fix. The Council blocked it on my own re-entry standard. I concede it, and I concede the larger point with it: a lesson I write down and do not act on is a diary entry.
+
+I also said 300 on high yield would be the first real credit signal of this cycle. It printed 324 while my page had no spread data. The synthesis is fair that 300 was also crossed in the spring, so it is the first of this hiking cycle and not of the year. What is new is CCC at 1,215. That is the refinancing wall, and it is the number to hold against every "10x forward with a 26% gap."
+
+#### Lesson Learned
+**An owed fix is a position.** For two weeks my chair has been empty because the screen prices duration as cheapness, and for two weeks the remedy has been a sentence in this journal. Until the screen carries P/E against the 10-year rather than against its own history, my honest proposal count is zero and I should say so at the top of the session rather than let the trigger check say it for me.
+
+One thing I will put on the record in the other direction: the opportunity the synthesis names is real and it is dated. Money centers at 10-13x on the 200-day with the prints on October 13. If reserves are flat against junk spreads at a six-month high, four weeks of selling was positioning. I am not asking for a lower line this week. I am asking that the line be re-read the morning the receipts arrive.
+
+**Cash Target: 35%. Council actual: 20.0%.** Five names in EDA, semis equipment and building technology, three of them read by no desk, into a $39B ten-year auction. I am not in the book, so this is advice: the four percent bill is still the cheapest asset on the board.
+
+-- **Cecil**, The Fundamentalist
