@@ -5,7 +5,7 @@ after it was registered -- weeks it could not have been tuned on. `lab/forward.p
 regenerates this page each Monday (scheduled task 8); edits by hand are overwritten.
 Scoring is the lab's: Monday open to Friday close, dividend-adjusted, cash earns zero.
 
-Last run: 2026-10-05 11:39. Forward weeks: 2 (2026-09-21, 2026-09-28).
+Last run: 2026-10-05 18:18. Forward weeks: 2 (2026-09-21, 2026-09-28).
 
 | Design | Source | Weeks | Alpha / wk | At exposure | Invested | vs production | Better / differed | vs random | Cumulative | Max DD |
 |---|---|---|---|---|---|---|---|---|---|---|
