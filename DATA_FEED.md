@@ -50,7 +50,8 @@ This is a file from before 2026-10-04, and its `US2Y` of 4.17 is not the 2-year 
 - **Closes only.** No intraday, no bid/ask, no derived fields. This file is an observation.
 - **`missing` is required and never empty-by-omission.** A ticker that could not be fetched is listed with a reason. A silently absent ticker is indistinguishable from a ticker that didn't exist, and that ambiguity is what the agents fill in from priors.
 - **`fetched_at` is UTC and real.** It is how you detect a scan that ran against a stale cache.
-- **Never edit.** If a provider restates, write `<date>.corrected.json` with the same shape plus `"corrects": "2026-08-08.json"` and `"reason": "..."`. Readers prefer the correction; the original stays.
+- **Never edit.** If a provider restates, write `<date>.corrected.json` with the same shape plus `"corrects": "2026-08-08.json"` and `"reason": "..."`. Readers prefer the correction; the original stays. A correction that *replaces* a close, rather than dropping a bar, also carries `restated`: the record of what it replaced (sec.1b).
+- **A close is the session's own, settled, or it is not in the file.** For `rates` / `vol` / `commodities` / `fx`: the bar dated `as_of`, or the instrument is in `missing`. An earlier session stands in only where the provider shows the instrument skipped `as_of`, and then the file says which session it is. A futures or dollar-index bar is not read until the exchange has settled it. Sec.1b has the rules and what the files written before them hold (amended 2026-10-05).
 - **`provenance` is optional and records per-series anchors.** Adding a ticker to a past week (a targeted backfill) fetches it *now*, so its adjusted closes are back-adjusted to a different date than the rest of the file. The file-level `source` / `fetched_at` still describe the majority of the series and are never restamped by a merge -- restamping would relabel every untouched series with a fetch that never happened to it. The added names are listed individually instead:
 
 ```json
@@ -65,7 +66,12 @@ This is a file from before 2026-10-04, and its `US2Y` of 4.17 is not the 2-year 
   A series absent from `provenance.series` carries the file-level `source` and `fetched_at`. Every key in `provenance.series` must exist in `series`. Consumers that care about the adjustment anchor -- `sector-regime-heatmap` refuses a window whose anchors span more than 180 days -- must resolve the anchor **per ticker**, not per file, or a merged week silently reports one anchor for two.
 
   This block exists because the alternative is writing two adjustment bases under one timestamp and calling it a fact. `--merge` in `scripts/backfill_weekly.py` is the only writer.
-- **`provenance.<block>` names an instrument that did not come from the file's provider.** The file-level `source` stays `yahoo`: it describes every series and every other instrument, and `sector-regime-heatmap` refuses a week whose file-level source it does not know. The one instrument Yahoo cannot supply says so beside itself (amended 2026-10-04):
+- **`provenance.<block>` names an instrument the file-level stamp does not describe.** The file-level `source` stays `yahoo`: it describes every series and every other instrument, and `sector-regime-heatmap` refuses a week whose file-level source it does not know. An instrument is named for one of three reasons, and a file from before 2026-10-04 names none:
+  - **It came from another publisher.** `US2Y` is Treasury's, the one instrument Yahoo cannot supply (amended 2026-10-04, sec.1a).
+  - **Its value is a stand-in.** The instrument printed nothing on `as_of`, a later bar proves it, and `observed` is the earlier session of the same week that the value belongs to (amended 2026-10-05, sec.1b).
+  - **A correction restated it** from a later fetch. The label carries that fetch's time and the `-backfill` source (sec.1b).
+
+  An ordinary week names only `US2Y`:
 
 ```json
 "rates": {
@@ -74,11 +80,30 @@ This is a file from before 2026-10-04, and its `US2Y` of 4.17 is not the 2-year 
   "US2Y_FUT": { "close": 4.635, "volume": null }
 },
 "provenance": {
-  "rates": { "US2Y": { "source": "treasury", "fetched_at": "2026-10-10T01:13:42Z" } }
+  "rates": { "US2Y": { "source": "treasury", "fetched_at": "2026-10-10T13:20:07Z" } }
 }
 ```
 
-  `<block>` is one of `rates`, `vol`, `commodities`, `fx`; today only `rates.US2Y` is ever named. An instrument absent from `provenance.<block>` carries the file-level `source`. Every key must exist in its block. `observed` is added when the value was published for an earlier day of the same week: Treasury skipped `as_of`, and a later row proves it (sec.1a, "The fetch"). The Friday job never writes it, because that proof does not exist on the night; a later rewrite of a holiday week does. `write_weekly` is the only writer, from what `snapshot_macro.fetch_special_instruments` reports.
+  Good Friday 2026-04-03, as a rewrite of that week would commit it. The Cboe index and the future printed nothing and carry Thursday's close, each saying so; Treasury published, so its 2-year is the day's own:
+
+```json
+"rates": {
+  "US10Y":    { "close": 4.313, "volume": null },
+  "US2Y":     { "close": 3.84,  "volume": null },
+  "US2Y_FUT": { "close": 3.806, "volume": null }
+},
+"provenance": {
+  "rates": {
+    "US10Y":    { "source": "yahoo",    "fetched_at": "2026-10-05T04:40:45Z", "observed": "2026-04-02" },
+    "US2Y":     { "source": "treasury", "fetched_at": "2026-10-05T04:40:45Z" },
+    "US2Y_FUT": { "source": "yahoo",    "fetched_at": "2026-10-05T04:40:46Z", "observed": "2026-04-02" }
+  }
+}
+```
+
+  `<block>` is one of `rates`, `vol`, `commodities`, `fx`. An instrument absent from `provenance.<block>` carries the file-level `source` and is the bar dated `as_of`. Every key must exist in its block. `observed` is always an earlier day of the same Mon..Fri week, and it is written only with proof: the publisher skipped `as_of`, and a later row or bar shows it (sec.1a "The fetch", sec.1b). The live job never writes it for a holiday Friday, because that proof does not exist on the night; a later rewrite of the week does. `write_weekly` is the only writer of these labels in a weekly file, from what `snapshot_macro.fetch_special_instruments` reports, and `scripts/restate_instruments.py` the only writer in a correction.
+
+  **Does `sector-regime-heatmap` tolerate it? Yes, checked 2026-10-05 against its `a8363de`.** `check_basis()` reads the file-level `source` and each `provenance.series.<ticker>.source`, and refuses either if it is not `yahoo` or `yahoo-backfill`. `anchor_of()` reads `provenance.series` and nothing else, the daily tape checks only the file-level `source` and `cadence`, and nothing in that repo reads `provenance.rates`, `.vol`, `.commodities` or `.fx`. So a label under `provenance.<block>` is invisible to it whatever its `source`. Two things would break it and are therefore fixed points: a new file-level `source`, and a new source string under `provenance.series`.
 
   **This label is load-bearing.** It is the only thing that separates a Treasury 2-year from the futures mark that every earlier file holds under the same key (sec.1a). A reader that ignores it differences two instruments.
 
@@ -140,6 +165,53 @@ The old files are not edited and are not corrected. They are right about what th
 **The fetch.** One CSV per calendar year, columns read by name (the 2024 file has no `1.5 Month` column, so `2 Yr` moves). The row dated `as_of` is the observation, and a missing row is not evidence of a holiday: if Treasury posts late or a stale copy comes back, the row on top is yesterday's, and the Friday job always runs after the day has ended, so no clock can tell the two apart. No row dated `as_of` therefore means `US2Y` goes to `missing` with the reason. Another day stands in only on proof: when the file already holds a row dated after `as_of`, Treasury skipped that day, and the last row of the same Mon..Fri week is used with `observed` recording which. That proof never exists on the night itself. So a holiday Friday is always a gap in its own weekly file and is filled afterwards by `backfill_us2y.py`, once the next session's row is up; until then `market_state` shows the 2-year as `null`. Daily files follow the same rule.
 
 **The gate.** `truth_check --feed` fails when `market_state.json` shows a `US2Y` level that is not the Treasury 2-year for its week, or anything but `null` where none exists. Three weekly syntheses found this defect by reading two files side by side; nothing mechanical did. It also fails when the weekly change or the percentile is `null` although the values it needs are in the tree, and when `us2y_treasury.json` is absent from a tree where `market_state.json` was derived. Those are the two ways a runner gets this wrong: the Friday job runs its own copy of `scan_pipeline/` against its own copy of `data/`, and it does not write the history file, so both have to be put there by hand. That job fetches `truth_check.py` fresh and stops on a FAIL, so either mistake is caught before it pushes. `python scripts/rederive_market_state.py` regenerates `market_state.json` through the whole chain when an input changed outside the weekly job.
+
+---
+
+## 1b. Which session a close is
+
+**Until 2026-10-05 nothing in a file said which session an instrument's close was read from.** The writer took the bar dated `as_of` when the provider had one and "the last bar on or before" when it did not; the note it attached to the second case was dropped before the file was written. `scripts/audit_instruments.py` asked the provider again for every committed instrument. Of the 789 closes in the 113 weekly files, 151 are not the provider's close for the file's date:
+
+| What the file holds | Closes | Where |
+| --- | --- | --- |
+| A prior session's close, on a day the instrument traded | 6 | `US10Y`, `VIX` and `DXY` in 2026-08-28; `US2Y` in 2026-09-11, 09-18, 09-25 |
+| A holiday stand-in the file does not mark | 28 | the five holiday Fridays; 2025-07-04 mixes two sessions in one file |
+| A futures or dollar-index close that is not the provider's settled one | 10 | `WTI`, `SILVER`, `DXY` in 2026-09-11, 09-18, 09-25, read on the evening; `SILVER` in 2026-08-28, the December contract's settlement |
+| `GOLD` that is not the provider's `GC=F` close | 107 | every week but six: 104 on a contract month the provider no longer serves, 3 read on the evening |
+
+and `VIX` is absent from two more. The eight daily files written by the evening job are worse: 39 of their 56. The 2026-09-18 `WTI` is the 95.47 of issue #110, the November contract's last trade under a date whose settled front month was 100.30.
+
+**Three rules, since 2026-10-05.** They are the Treasury path's (sec.1a), applied to every Yahoo instrument, and `snapshot_macro._fetch_one` is where they live.
+
+- **The bar dated `as_of` is the observation, and a missing bar is not evidence of a holiday.** 2026-08-28.json was fetched on the Saturday at 14:10 UTC, when the provider had no Friday bar for its three index symbols, and Thursday's 10-year, VIX and dollar index went in under Friday's date. No bar dated `as_of` and none after it: the instrument is in `missing` with the reason.
+- **A stand-in needs proof, and is written down.** A bar dated after `as_of` shows the instrument skipped `as_of`; the last bar of the same Mon..Fri week stands in, never one from an earlier week, and its date is committed as `provenance.<block>.<ticker>.observed`. On the night itself that proof does not exist, so a live run on a holiday Friday lists the instruments in `missing`.
+- **A bar the exchange has not settled is not a close.** `WTI`, `GOLD`, `SILVER`, `US2Y_FUT` and `DXY` trade past the cash close. Until the provider loads the settlement, the bar dated `as_of` is a quote: the last trade, of whichever contract month is most active, and on a weekday evening the first trades of the *next* session. Read on the evening of the session, `WTI`, `GOLD`, `SILVER` and `DXY` were wrong in all 11 files that tried and the future in 10; read from 13:07 UTC the next day, `WTI` was right in five of five. They are not read before **13:00 UTC on the day after `as_of`**, and earlier than that they are in `missing`. `US10Y` and `VIX` are Cboe indices, final by evening, and do not wait.
+
+**So the weekly job runs on Saturday, after 13:00 UTC.** Run on Friday night it commits a file with no commodities, no dollar index and no `US2Y_FUT`, and a weekly file cannot be completed afterwards. The daily job's two attempts, 21:45 UTC and 09:15 UTC the next morning, are both earlier than that, so it lists those five in `missing` every session (sec.4); `sector-regime-heatmap` reads `fx.DXY` from the daily files for one comparison row and shows it as missing meanwhile.
+
+**The files written before the rules are not edited.** `macro/instrument_audit.json` lists every difference the audit found, the session each committed close actually is where it is one, and for each a cause and what was decided. `python scripts/audit_instruments.py` re-runs it against the provider and prints only what is new, changed or gone against that list; `--write` replaces the list and carries a cause forward only while its finding is unchanged.
+
+**A correction that restates.** One file has been corrected. 2026-08-28.corrected.json replaces the three prior-session closes with Friday's (owner sign-off 2026-10-05); Cboe's own history and the Treasury par curve confirm the VIX and the 10-year, and the dollar index rests on the provider alone. A restating correction has two things the AVB one does not:
+
+```json
+"rates": { "US10Y": { "close": 4.72, "volume": null } },
+"provenance": {
+  "rates": { "US10Y": { "source": "yahoo-backfill", "fetched_at": "2026-10-05T04:27:45Z" } }
+},
+"restated": [
+  { "block": "rates", "ticker": "US10Y", "was": { "close": 4.672, "volume": null } }
+],
+"corrects": "2026-08-28.json",
+"reason": "..."
+```
+
+- **`restated` is the record of the edit**: which close, and what the base held. `scripts/rebuild_corrections.py` re-applies it to the current base only while the base still holds `was`, and otherwise aborts and fails the run.
+- **The replacement is labelled.** It was fetched later than the file, so `provenance.<block>.<ticker>` carries its own `fetched_at`; the file-level stamp goes on describing everything that was not restated.
+- `scripts/restate_instruments.py --date <as_of> --instrument rates.US10Y --reason "..."` writes one, through the writer's own fetch, so a stand-in or an unsettled bar is refused there too. Only special instruments, and only replacing a close that is there: adding or dropping one is not something a rebuild can re-apply, and the gate refuses it.
+
+**The gate.** `truth_check --feed` fails a file dated 2026-10-05 or later that carries one of the five late-settling instruments with a fetch time before 13:00 UTC on the day after its session; the file's own `fetched_at` is the evidence, so a runner still on the old writer is caught before it pushes. It fails a correction whose instrument closes differ from its base without a matching `restated` entry and label. The eleven evening files from before the rule are exempt by date and on record in the audit list.
+
+**What this does not fix.** `WTI`, `GOLD` and `SILVER` are continuous symbols, and nothing in a file says which contract month a close belongs to. The provider rebuilt its `GC=F` history onto the active contract between 2026-09-05 and 2026-10-03, so the panel's gold is the nearest-expiry contract through 2026-09-04 (2026-08-28 excepted) and the active one from 2026-10-02, up to 1.7% apart. Reading after settlement makes the bar a settlement; it does not make it a particular contract. Naming contracts and a roll rule is a decision about the instrument, as Treasury was for `US2Y`, and has not been made.
 
 ---
 
@@ -230,6 +302,19 @@ say so in `provenance.rates`, or list `US2Y` in `missing` when Treasury had no
 row for that session at run time: the day's curve was not posted yet, or the
 bond market was closed. The daily files are not backfilled: nothing derives
 from their rates, and `data/us2y_treasury.json` is keyed by week.
+
+Sec.1b applies here too, and bites harder. Neither of the daily job's two
+attempts is late enough: 21:45 UTC and 09:15 UTC the next morning are both
+before the 13:00 UTC at which `WTI`, `GOLD`, `SILVER`, `DXY` and `US2Y_FUT`
+may be read, so a daily file written since 2026-10-05 lists all five in
+`missing` with the reason, whichever attempt wrote it. The eight files from
+2026-09-11 to 2026-09-23 hold them anyway, and on the six that are not
+Fridays the number is the first ninety minutes of the *next* session (`WTI`
+on a volume of 593 to 2,923; 89.63 against a settled 94.59 on 2026-09-22).
+`US10Y` and `VIX` in those files are right. An attempt after 13:00 UTC, with
+no evening write ahead of it, would bring the five back. Whether 09:15 UTC
+is in fact late enough is not known: no committed read falls between 02:58
+and 13:07 UTC.
 
 **The session-witness gate.** `scripts/daily_observe.py` refuses to write a
 file unless **SPY has a bar dated exactly `as_of`**. No witness bar means the
@@ -350,3 +435,6 @@ All of it over the GitHub contents API, cached locally on the device. **No marke
 - [x] Provider on the runner only; nothing reachable from any client build (Yahoo needs no key at all)
 - [x] Purity check: `truth_check.py --derive` regenerates `market_state.json` from scratch and diffs against live (wired into the Monday gate)
 - [x] Cash 2-year from the Treasury par curve, labelled per instrument; the 113 futures-era weeks covered by `data/us2y_treasury.json` (2026-10-04, sec.1a)
+- [x] Every instrument close is the bar dated `as_of`, a recorded stand-in, or `missing`; nothing unsettled is read; the files from before are audited in `macro/instrument_audit.json` (2026-10-05, sec.1b)
+- [ ] Weekly job moved from Friday 9:13 PM ET to Saturday after 13:00 UTC, and the runner's `scan_pipeline/` synced, so the file still carries commodities and the dollar index (sec.1b)
+- [ ] Contract month and roll rule for `WTI` / `GOLD` / `SILVER` decided (sec.1b, "What this does not fix")
