@@ -359,7 +359,12 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
                             "reason": MISSING_REASON % friday.isoformat()})
     doc["missing"] = sorted(missing, key=lambda m: m.get("ticker") or "")
 
+    # Drop the per-series block if it ended up empty, and the provenance
+    # block only if nothing else lives in it: it can also name the source of
+    # a rates instrument (US2Y from Treasury), which a merge must not erase.
     if not prov:
+        prov_block.pop("series", None)
+    if not prov_block:
         doc.pop("provenance", None)
 
     with open(path, "w", encoding="utf-8", newline="") as f:

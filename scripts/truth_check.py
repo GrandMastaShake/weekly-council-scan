@@ -45,10 +45,21 @@ Modes:
                 close > 0 with volume null or >= 0, file pure ASCII and
                 valid JSON. Absent data/weekly/ = SKIP (the feed has not
                 launched yet) so the Monday gate keeps passing pre-launch.
+                Also validates the optional `provenance` block (per-series
+                anchors, and the per-instrument source that marks US2Y as
+                the Treasury 2-year rather than the 2YY=F future) and
+                data/us2y_treasury.json, WARNs for any week that has no
+                Treasury 2-year from either place, and FAILs when
+                data/market_state.json shows a US2Y level that is not the
+                Treasury 2-year for its week (or null where none exists),
+                a null weekly change or percentile that the tree can
+                supply, or was derived where data/us2y_treasury.json is
+                absent.
   --derive      Derivation purity check (NEW in v6): calls
                 scan_pipeline.snapshot.rederive_and_compare() from the
                 pipeline checkout (--pipeline) against the repo's
-                data/weekly/ + macro/facts.json and the committed
+                data/weekly/ + macro/facts.json (+ data/us2y_treasury.json,
+                found beside data/weekly/) and the committed
                 data/market_state.json. Absent market_state.json = SKIP;
                 pipeline import failure = WARN (the linter may run where
                 the pipeline is not checked out); a False result = FAIL
@@ -766,13 +777,45 @@ def _feed_entry_check(fname, section, ticker, entry, rep):
             rep.add("FAIL", f"feed: {where} volume {vol} < 0")
 
 
-def _feed_provenance_check(fname, doc, rep):
-    """Per-series anchors (DATA_FEED.md sec.1, `provenance`).
+def _observed_check(where, observed, as_of, rep):
+    """`observed` is a holiday stand-in: the session a value was published
+    for when that is not the file's date. It is therefore always an earlier
+    day of the same Mon..Fri week, and anything else is a wrong label."""
+    try:
+        day = dt.date.fromisoformat(observed)
+        of = dt.date.fromisoformat(as_of)
+    except (TypeError, ValueError):
+        rep.add("FAIL", f"feed: {where} observed {observed!r} is not an "
+                        f"ISO date")
+        return
+    monday = of - dt.timedelta(days=of.weekday())
+    if not monday <= day < of:
+        rep.add("FAIL", f"feed: {where} observed {observed} is not an "
+                        f"earlier day in the week of {as_of}; a stand-in "
+                        f"comes from the same week or not at all")
 
-    A merged week carries series fetched at two different times, so its
-    adjusted closes sit on two anchors. The block naming them is optional;
-    when present it must be exact, because a consumer that trusts it and is
-    wrong reports one anchor for two.
+
+def _timestamp_check(where, got, rep):
+    if not isinstance(got, str) or not got.endswith("Z"):
+        rep.add("FAIL", f"feed: {where} fetched_at {got!r} is not a UTC "
+                        f"...Z timestamp")
+        return
+    try:
+        dt.datetime.strptime(got, "%Y-%m-%dT%H:%M:%SZ")
+    except ValueError:
+        rep.add("FAIL", f"feed: {where} fetched_at {got!r} is not "
+                        f"YYYY-MM-DDTHH:MM:SSZ")
+
+
+def _feed_provenance_check(fname, doc, rep):
+    """Per-entry provenance (DATA_FEED.md sec.1, `provenance`).
+
+    `provenance.series` names the adjustment anchor of a series merged into
+    a week after the fact. `provenance.<block>` names the source of a
+    special instrument that did not come from the file's provider -- the
+    Treasury 2-year, under `rates`. Both are optional; when present they
+    must be exact, because a consumer that trusts one and is wrong reports
+    one anchor for two, or reads a futures mark as a cash yield.
     """
     prov = doc.get("provenance")
     if prov is None:
@@ -780,40 +823,269 @@ def _feed_provenance_check(fname, doc, rep):
     if not isinstance(prov, dict):
         rep.add("FAIL", f"feed: {fname} 'provenance' is not an object")
         return
-    unknown = sorted(set(prov) - {"series"})
+    if not prov:
+        rep.add("FAIL", f"feed: {fname} 'provenance' is empty; a file with "
+                        f"nothing to name omits the block")
+        return
+    known = ("series",) + FEED_EXTRA_BLOCKS
+    unknown = sorted(set(prov) - set(known))
     if unknown:
         rep.add("FAIL", f"feed: {fname} 'provenance' has unknown key(s) "
-                        f"{unknown}; only 'series' is defined")
-    entries = prov.get("series")
-    if not isinstance(entries, dict):
-        rep.add("FAIL", f"feed: {fname} 'provenance.series' is not an object")
+                        f"{unknown}; only {', '.join(known)} are defined")
+    for label in known:
+        if label not in prov:
+            continue
+        entries = prov[label]
+        if not isinstance(entries, dict):
+            rep.add("FAIL", f"feed: {fname} 'provenance.{label}' is not an "
+                            f"object")
+            continue
+        target = doc.get(label)
+        present = set(target) if isinstance(target, dict) else set()
+        for ticker, rec in sorted(entries.items()):
+            if ticker not in present:
+                rep.add("FAIL", f"feed: {fname} provenance names {ticker!r}, "
+                                f"which is not in '{label}' -- an anchor for "
+                                f"a series that is not there describes "
+                                f"nothing")
+            where = f"{fname} provenance[{ticker!r}]"
+            if not isinstance(rec, dict):
+                rep.add("FAIL", f"feed: {where} is not an object")
+                continue
+            src_ = rec.get("source")
+            if not isinstance(src_, str) or not src_:
+                rep.add("FAIL", f"feed: {where} lacks a non-empty 'source'")
+            _timestamp_check(where, rec.get("fetched_at"), rep)
+            if "observed" in rec:
+                _observed_check(where, rec["observed"], doc.get("as_of"), rep)
+
+
+# ---------------------------------------------------- the Treasury 2-year
+
+# Mirrors scan_pipeline/snapshot.py (TREASURY_SOURCE, US2Y_HISTORY_FILE).
+# This script stays importable with nothing but the standard library, so the
+# two names are repeated here and tests/test_us2y_source.py pins them equal.
+TREASURY_SOURCE = "treasury"
+US2Y_HISTORY = ("data", "us2y_treasury.json")
+
+
+def _is_number(x):
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+
+def _treasury_us2y(doc):
+    """A weekly doc's own Treasury-sourced US2Y close, or None.
+
+    None is the ordinary answer for every file through 2026-10-02: their
+    US2Y is the 2YY=F future, which no label claims is anything else."""
+    prov = doc.get("provenance") if isinstance(doc, dict) else None
+    rates = prov.get("rates") if isinstance(prov, dict) else None
+    rec = rates.get("US2Y") if isinstance(rates, dict) else None
+    if not isinstance(rec, dict) or rec.get("source") != TREASURY_SOURCE:
+        return None
+    entry = (doc.get("rates") or {}).get("US2Y")
+    close = entry.get("close") if isinstance(entry, dict) else None
+    return float(close) if _is_number(close) else None
+
+
+def check_us2y_history(repo, rep):
+    """Every week needs exactly one Treasury 2-year (DATA_FEED.md sec.1a).
+
+    A weekly file's US2Y is the cash yield only where provenance names
+    Treasury. For every other week -- all of them through 2026-10-02 -- the
+    value lives in data/us2y_treasury.json. This validates that file and
+    then asks the question that matters: is there a week with neither?
+    Such a week is not a FAIL, because the honest outcome is already in
+    place (market_state carries the 2-year as null with the reason). It is
+    a WARN, because scripts/backfill_us2y.py can fill it and nobody will
+    unless told.
+
+    The file being ABSENT is different, and a FAIL wherever a
+    market_state.json was derived: the weekly job does not write the
+    history, so a runner that never received it derives a null weekly
+    change and a null percentile for a 2-year whose level looks fine.
+    Pure stdlib, no network.
+    """
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
         return
-    series = doc.get("series")
-    series_keys = set(series) if isinstance(series, dict) else set()
-    for ticker, rec in sorted(entries.items()):
-        if ticker not in series_keys:
-            rep.add("FAIL", f"feed: {fname} provenance names {ticker!r}, "
-                            f"which is not in 'series' -- an anchor for a "
-                            f"series that is not there describes nothing")
-        if not isinstance(rec, dict):
-            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] is not "
-                            f"an object")
+    weeks = {}                  # as_of -> the file's own Treasury 2Y or None
+    for f in sorted(weekly.glob("*.json")):
+        if f.name.endswith(".corrected.json"):
             continue
-        src_ = rec.get("source")
-        if not isinstance(src_, str) or not src_:
-            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] lacks a "
-                            f"non-empty 'source'")
-        got = rec.get("fetched_at")
-        if not isinstance(got, str) or not got.endswith("Z"):
-            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] "
-                            f"fetched_at {got!r} is not a UTC ...Z timestamp")
-            continue
+        corrected = f.with_name(f.stem + ".corrected.json")
         try:
-            dt.datetime.strptime(got, "%Y-%m-%dT%H:%M:%SZ")
-        except ValueError:
-            rep.add("FAIL", f"feed: {fname} provenance[{ticker!r}] "
-                            f"fetched_at {got!r} is not "
-                            f"YYYY-MM-DDTHH:MM:SSZ")
+            doc = json.loads((corrected if corrected.is_file() else f)
+                             .read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            continue            # check_feed has already reported it
+        weeks[f.stem] = _treasury_us2y(doc)
+    if not weeks:
+        return
+
+    name = "/".join(US2Y_HISTORY)
+    path = repo.joinpath(*US2Y_HISTORY)
+    series = {}
+    if path.is_file():
+        before = rep.counts["FAIL"]
+        try:
+            hist = json.loads(path.read_bytes().decode("ascii"))
+        except UnicodeDecodeError as e:
+            rep.add("FAIL", f"feed: {name} is not pure ASCII ({e})")
+            hist = None
+        except json.JSONDecodeError as e:
+            rep.add("FAIL", f"feed: {name} does not parse as JSON ({e})")
+            hist = None
+        if hist is not None:
+            got = hist.get("series") if isinstance(hist, dict) else None
+            if isinstance(got, dict):
+                series = got
+            else:
+                rep.add("FAIL", f"feed: {name} has no 'series' object")
+        for week, rec in sorted(series.items()):
+            where = f"{name} series[{week!r}]"
+            if week not in weeks:
+                rep.add("FAIL", f"feed: {where} names a week with no weekly "
+                                f"file -- a value for a week the panel does "
+                                f"not have describes nothing")
+            if not isinstance(rec, dict):
+                rep.add("FAIL", f"feed: {where} is not an object")
+                continue
+            close = rec.get("close")
+            if not _is_number(close):
+                rep.add("FAIL", f"feed: {where} close is not numeric: "
+                                f"{close!r}")
+            elif close <= 0:
+                rep.add("FAIL", f"feed: {where} close {close} <= 0")
+            else:
+                own = weeks.get(week)
+                if own is not None and abs(own - close) > 1e-9:
+                    rep.add("FAIL", f"feed: {week} has two different "
+                                    f"Treasury 2-year values -- "
+                                    f"weekly/{week}.json says {own}, "
+                                    f"{name} says {close}. The deriver "
+                                    f"reads the weekly file's; one of them "
+                                    f"is wrong.")
+            _timestamp_check(where, rec.get("fetched_at"), rep)
+            if "observed" in rec:
+                _observed_check(where, rec["observed"], week, rep)
+        if rep.counts["FAIL"] == before:
+            rep.add("OK", f"feed: {name} validated ({len(series)} week(s))")
+
+    gaps = sorted(w for w, own in weeks.items()
+                  if own is None and w not in series)
+    derived_here = (repo / "data" / "market_state.json").is_file()
+    have_history = path.is_file()
+    if gaps and not have_history and derived_here:
+        rep.add("FAIL", f"feed: {name} not found, but {len(gaps)} of "
+                        f"{len(weeks)} week(s) can only get their Treasury "
+                        f"2-year from it and market_state.json was derived "
+                        f"in this tree. Without it the deriver nulls the "
+                        f"2-year's weekly change and its percentile. The "
+                        f"weekly job does not write this file: copy it from "
+                        f"the repo, then re-derive.")
+    elif gaps:
+        span = gaps[0] if len(gaps) == 1 else f"{gaps[0]} .. {gaps[-1]}"
+        absent = "" if have_history else f" ({name} not found)"
+        rep.add("WARN", f"feed: {len(gaps)} of {len(weeks)} week(s) have no "
+                        f"Treasury 2-year{absent}: {span}. market_state "
+                        f"derives US2Y for them as null, never from the "
+                        f"2YY=F future. Fill with "
+                        f"`python scripts/backfill_us2y.py`, which also "
+                        f"re-derives market_state.json.")
+    else:
+        own_n = sum(1 for own in weeks.values() if own is not None)
+        rep.add("OK", f"feed: all {len(weeks)} week(s) have a Treasury "
+                      f"2-year ({own_n} in their own file, "
+                      f"{len(weeks) - own_n} from {name})")
+
+    _market_state_us2y_check(repo, weeks, series, have_history or not gaps,
+                             rep)
+
+
+def _market_state_us2y_check(repo, weeks, series, history_ok, rep):
+    """market_state's 2-year is the Treasury 2-year for its week, or null.
+
+    The regression gate for the defect itself. Any other number is the
+    2YY=F future back under the name -- which is exactly what a deriver from
+    before 2026-10-04 writes, and the Friday job runs the runner's copy of
+    scan_pipeline/, not this repo's. Because that job fetches this script
+    fresh and stops on a FAIL, a stale runner is caught before it pushes.
+
+    `lvl` is checked by value: it is one rounding of one committed number,
+    so it cannot drift from the deriver. `d1w_bps` and `pctile_2y` are
+    checked only for being null exactly when they have to be, which is what
+    a state derived without the history file, or before a gap was filled,
+    gets wrong. Their values are --derive's business.
+    """
+    path = repo / "data" / "market_state.json"
+    if not path.is_file():
+        return
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+        as_of = state["as_of"]
+        us2y = state["rates"]["US2Y"]
+        lvl, d1w, pct = us2y["lvl"], us2y["d1w_bps"], us2y["pctile_2y"]
+        prior_week = (dt.date.fromisoformat(as_of)
+                      - dt.timedelta(weeks=1)).isoformat()
+    except (ValueError, KeyError, TypeError):
+        rep.add("FAIL", "feed: data/market_state.json has no readable "
+                        "as_of / rates.US2Y (lvl, d1w_bps, pctile_2y)")
+        return
+    if as_of not in weeks:
+        rep.add("WARN", f"feed: market_state.json is as_of {as_of}, which "
+                        f"has no weekly file here; its US2Y was not checked")
+        return
+
+    def cash(week):
+        """(Treasury 2-year, where it lives) by the deriver's own rule: the
+        week's labelled value, else the history entry, else nothing."""
+        if weeks.get(week) is not None:
+            return weeks[week], f"weekly/{week}.json"
+        rec = series.get(week)
+        close = rec.get("close") if isinstance(rec, dict) else None
+        return (float(close) if _is_number(close) else None,
+                "/".join(US2Y_HISTORY))
+
+    now, where = cash(as_of)
+    prior, _ = cash(prior_week)
+    want = round(now, 2) if now is not None else None
+    fix = ("Check that the deriver that wrote it is the Treasury-aware one "
+           "(scan_pipeline/ on the runner is synced by hand), then "
+           "`python scripts/rederive_market_state.py`.")
+
+    if not ((lvl is None and want is None)
+            or (_is_number(lvl) and want is not None
+                and abs(lvl - want) < 1e-9)):
+        truth = ("there is no Treasury 2-year for that week, so it must be "
+                 "null" if want is None
+                 else f"the Treasury 2-year is {want} ({where})")
+        rep.add("FAIL", f"feed: market_state.json carries US2Y {lvl!r} for "
+                        f"{as_of}, but {truth}. A number that is neither is "
+                        f"the 2YY=F future again, or a state derived before "
+                        f"the value existed. {fix}")
+        return
+
+    stale = []
+    if (d1w is None) != (now is None or prior is None):
+        stale.append(
+            f"d1w_bps is {d1w!r} although "
+            + (f"the Treasury 2-year exists for both {prior_week} and "
+               f"{as_of}" if d1w is None
+               else f"there is no Treasury 2-year for "
+                    f"{as_of if now is None else prior_week}"))
+    if history_ok and (pct is None) != (now is None):
+        stale.append(f"pctile_2y is {pct!r} although the level is {lvl!r}")
+    if stale:
+        rep.add("FAIL", f"feed: market_state.json US2Y for {as_of}: "
+                        f"{'; '.join(stale)}. It was derived without a "
+                        f"value this tree has, or with one it lacks -- "
+                        f"typically {'/'.join(US2Y_HISTORY)} missing where "
+                        f"it was derived, or a gap filled since. {fix}")
+        return
+    shown = ("null (no Treasury 2-year for that week)" if want is None
+             else f"{lvl}, the Treasury 2-year ({where})")
+    rep.add("OK", f"feed: market_state.json US2Y for {as_of} is {shown}")
 
 
 def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
@@ -1234,6 +1506,7 @@ def main():
         check_counterfactuals(repo, today, rep)
     if run_all or args.feed:
         check_feed(repo, rep)
+        check_us2y_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")
     if run_all or args.config:

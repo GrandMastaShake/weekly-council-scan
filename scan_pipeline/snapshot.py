@@ -14,14 +14,22 @@ files commit the FULL universe -- STOCK_UNIVERSE (277; 274 after the 2026-09-21 
 = 293 series tickers -- plus the special-instrument blocks, not just the
 charted ~40. Size math adjusts to ~15KB/file.
 
-Special instruments (US10Y, US2Y, VIX, WTI, GOLD, SILVER, DXY) come from
-scan_pipeline.snapshot_macro.fetch_special_instruments (Job V, built
-concurrently). Contract: returns {"rates": {"US10Y": {...}, "US2Y": {...}},
-"vol": {"VIX": {...}}, "commodities": {"WTI": ..., "GOLD": ..., "SILVER": ...},
-"fx": {"DXY": {...}}, "missing": [{"ticker", "reason"}]} with values
-{"close": float, "volume": float|None}. A defensive stub fallback covers the
-module being absent (empty blocks + a missing entry), so this file never
+Special instruments (US10Y, US2Y, US2Y_FUT, VIX, WTI, GOLD, SILVER, DXY) come
+from scan_pipeline.snapshot_macro.fetch_special_instruments (Job V, built
+concurrently). Contract: returns {"rates": {"US10Y": {...}, "US2Y": {...},
+"US2Y_FUT": {...}}, "vol": {"VIX": {...}}, "commodities": {"WTI": ...,
+"GOLD": ..., "SILVER": ...}, "fx": {"DXY": {...}}, "missing": [{"ticker",
+"reason"}]} with values {"close": float, "volume": float|None}, plus an
+optional "provenance" {block: {ticker: {"source", "fetched_at"}}} naming any
+instrument that did not come from PROVIDER. A defensive stub fallback covers
+the module being absent (empty blocks + a missing entry), so this file never
 depends on import success.
+
+US2Y is the one instrument with a second publisher (2026-10-04): the U.S.
+Treasury par yield curve, because Yahoo has no cash 2-year series. A weekly
+file says so per instrument in provenance.rates.US2Y, and that label is how
+the deriver tells a cash 2-year from the 2YY=F futures mark that every file
+through 2026-10-02 committed under the same key. See cash_2y_series().
 
 NOTE on the block shape: DATA_FEED.md sec.1 sketches rates/vol/commodities as
 bare numbers ({"US10Y": 4.66}); the Job V contract supersedes that sketch and
@@ -44,9 +52,11 @@ Byte-stability contract (Wave 2 backfill + truth gate depend on this):
     auto_adjust=True), matching the house convention in
     fetch_market_data._parse_daily_bars which prefers adjclose.
 
-Derivation purity: derive_market_state() reads ONLY the weekly files and
-facts.json. No network, no clocks; as_of comes from the newest weekly file.
-Given identical inputs it is byte-identical (see rederive_and_compare).
+Derivation purity: derive_market_state() reads ONLY the weekly files,
+facts.json and the committed Treasury 2-year history beside the weekly
+directory (us2y_treasury.json). No network, no clocks; as_of comes from the
+newest weekly file. Given identical inputs it is byte-identical (see
+rederive_and_compare).
 """
 
 from __future__ import annotations
@@ -71,11 +81,24 @@ except ImportError:  # same-dir import when repo root is not on sys.path
 PROVIDER = "yahoo"          # the ONE provider constant; backfill appends
                             # "-backfill" at call time, never here
 
+# The single exception to "one provider": the cash 2-year, which PROVIDER
+# does not carry. Never a file-level source -- a weekly file is still a Yahoo
+# file. It labels one instrument, in provenance, and the history file below.
+TREASURY_SOURCE = "treasury"
+
+# Treasury 2-year for the weeks whose own file cannot supply one: every week
+# through 2026-10-02 (those files hold the 2YY=F future under "US2Y" and are
+# never edited), and any later week whose Treasury fetch failed. Lives beside
+# the weekly directory, so a caller that names weekly_dir has named this too.
+US2Y_HISTORY_FILE = "us2y_treasury.json"
+
 # Instrument classification for the committed feed and market_state.
 INDEX_TICKERS = ["SPY", "QQQ", "DIA", "IWM"]
 SECTOR_TICKERS = ["SMH", "XLE", "XLF", "XLK", "XLV", "XLP",
                   "XLY", "XLI", "XLB", "XLRE", "XLU", "XLC"]
-RATE_TICKERS = ["US10Y", "US2Y"]        # weekly-file "rates" block
+RATE_TICKERS = ["US10Y", "US2Y"]        # market_state "rates" entries
+CASH_2Y = "US2Y"                        # read through cash_2y_series(), never
+                                        # straight from the weekly files
 VOL_TICKERS = ["VIX"]                   # weekly-file "vol" block
 COMMODITY_TICKERS = ["WTI", "GOLD", "SILVER"]   # "commodities" block
 FX_TICKERS = ["DXY"]                    # "fx" block
@@ -330,6 +353,45 @@ def _normalize_block(block) -> Dict[str, dict]:
     return out
 
 
+def special_provenance(special, doc: dict) -> Dict[str, dict]:
+    """Per-instrument source labels for the special blocks of one document.
+
+    The file-level `source` says who supplied the file, and for everything
+    but the cash 2-year that is PROVIDER. An instrument from another
+    publisher is named here instead of being relabelled by omission:
+    {block: {ticker: {"source", "fetched_at"[, "observed"]}}}. `observed` is
+    the session the value was published for, present only when that is not
+    the file's as_of: the publisher skipped as_of and a later row proved it
+    (snapshot_macro.select_treasury_row).
+
+    Only instruments that made it into `doc` are kept -- a label for an
+    entry that is not there describes nothing, and the feed gate refuses it.
+    Shared by write_weekly and scripts/daily_observe.py so the two files
+    carry the label identically."""
+    out: Dict[str, dict] = {}
+    raw = special.get("provenance") if isinstance(special, dict) else None
+    if not isinstance(raw, dict):
+        return out
+    for block in SPECIAL_BLOCKS:
+        entries = raw.get(block)
+        committed = doc.get(block)
+        if not isinstance(entries, dict) or not isinstance(committed, dict):
+            continue
+        for ticker, rec in entries.items():
+            if str(ticker) not in committed or not isinstance(rec, dict):
+                continue
+            src, got = rec.get("source"), rec.get("fetched_at")
+            if not (isinstance(src, str) and src
+                    and isinstance(got, str) and got):
+                continue
+            clean = {"source": src, "fetched_at": got}
+            observed = rec.get("observed")
+            if isinstance(observed, str) and _DATE_RE.match(observed):
+                clean["observed"] = observed
+            out.setdefault(block, {})[str(ticker)] = clean
+    return out
+
+
 def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = None,
                  out_dir: str = "data") -> str:
     """Write data/weekly/<friday_date>.json under out_dir.
@@ -339,7 +401,9 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
         {"bars": ..., "missing": ...}.
     special: the snapshot_macro contract dict, or None to call
         get_special_instruments(friday_date) (stub fallback if Job V's module
-        is absent).
+        is absent). Its "provenance" block, when present, is committed for
+        the instruments it names (see special_provenance); the file-level
+        source stays PROVIDER.
     out_dir: the data root; the file lands at <out_dir>/weekly/<date>.json.
 
     'missing' is REQUIRED and never empty-by-omission: it is the union of
@@ -384,6 +448,9 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
         "fx": _normalize_block(special.get("fx")),
         "missing": uniq,
     }
+    prov = special_provenance(special, doc)
+    if prov:
+        doc["provenance"] = prov
     path = os.path.join(out_dir, "weekly", friday_date + ".json")
     return _write_json(path, doc)
 
@@ -434,6 +501,78 @@ def _close_series(docs: List[Tuple[str, dict]], ticker: str,
                 pts[d] = float(c)
             except (TypeError, ValueError):
                 pass
+    return pts
+
+
+# -- the cash 2-year ----------------------------------------------------------
+def us2y_history_path(weekly_dir: str) -> str:
+    """The Treasury 2-year history file that belongs to a weekly directory."""
+    return os.path.join(os.path.dirname(os.path.abspath(weekly_dir)),
+                        US2Y_HISTORY_FILE)
+
+
+def load_us2y_history(path: str) -> Tuple[Dict[str, float], Optional[str]]:
+    """({week: close}, problem) from us2y_treasury.json. Pure.
+
+    Never raises. A history that cannot be read degrades the fields that
+    need it to null with the reason, the same way an unreadable facts.json
+    does; `problem` is None when the file loaded."""
+    name = os.path.basename(path)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+    except FileNotFoundError:
+        return {}, "%s not found" % name
+    except Exception as exc:
+        return {}, "%s unreadable (%s)" % (name, type(exc).__name__)
+    series = doc.get("series") if isinstance(doc, dict) else None
+    if not isinstance(series, dict):
+        return {}, "%s has no 'series' object" % name
+    pts: Dict[str, float] = {}
+    for d, rec in series.items():
+        c = rec.get("close") if isinstance(rec, dict) else None
+        if (_DATE_RE.match(str(d)) and isinstance(c, (int, float))
+                and not isinstance(c, bool)):
+            pts[str(d)] = float(c)
+    return pts, None
+
+
+def is_treasury_sourced(doc: dict, block: str, ticker: str) -> bool:
+    """True when the document names Treasury as the source of one instrument.
+
+    No label means the file-level source, which is PROVIDER: for US2Y that
+    is the 2YY=F future, in every file through 2026-10-02."""
+    prov = doc.get("provenance") if isinstance(doc, dict) else None
+    entries = prov.get(block) if isinstance(prov, dict) else None
+    rec = entries.get(ticker) if isinstance(entries, dict) else None
+    src = rec.get("source") if isinstance(rec, dict) else None
+    return src == TREASURY_SOURCE
+
+
+def cash_2y_series(docs: List[Tuple[str, dict]],
+                   history: Dict[str, float]) -> Dict[str, float]:
+    """{week: Treasury 2-year close} across the panel. The only way to read
+    US2Y -- do not take rates.US2Y from the weekly files directly.
+
+    "US2Y" names two instruments in data/weekly. Every file through
+    2026-10-02 holds the 2YY=F future there: a contract nobody trades, whose
+    mark sat up to 36 bp under the cash yield. Files written since hold the
+    Treasury par-curve 2-year and say so in provenance.rates.US2Y. The old
+    files are observations and are never edited, so the Treasury value for
+    those weeks comes from the history file.
+
+    A week's own Treasury-sourced value wins over a history entry for the
+    same week: it is what was observed that night. A value with no Treasury
+    label is a futures mark and is NEVER used. A week with neither is a gap,
+    and a gap reaches market_state as null with a reason, not as the future.
+    """
+    weeks = {d for d, _ in docs}
+    pts = {d: v for d, v in (history or {}).items() if d in weeks}
+    for d, doc in docs:
+        if not is_treasury_sourced(doc, "rates", CASH_2Y):
+            continue
+        own = _close_series([(d, doc)], CASH_2Y, "rates")
+        pts.update(own)
     return pts
 
 
@@ -571,14 +710,50 @@ def _regime(vix_pctile, curve_bps, fed_stance) -> str:
     return "%s / %s / %s" % (risk, curve, policy)
 
 
+def _cash_2y_fields(pts: Dict[str, float], as_of: str,
+                    history_problem: Optional[str]) -> dict:
+    """The three US2Y fields, with reasons that say what is actually absent.
+
+    The generic text ("no weekly file dated ...") would be wrong here: the
+    file usually exists, and holds a futures mark the deriver will not read.
+    """
+    def gap(week):
+        history = history_problem or "no %s entry" % US2Y_HISTORY_FILE
+        return ("no Treasury 2-year for %s (no treasury-sourced rates.US2Y "
+                "in that week's file, and %s); the 2YY=F future is never "
+                "substituted" % (week, history))
+
+    lvl = _level(pts, as_of)
+    d1w = _rate_delta_bps(pts, as_of)
+    pct = _pctile_2y(pts, as_of)
+    if as_of not in pts:
+        lvl = d1w = pct = (None, gap(as_of))
+    elif d1w[0] is None:
+        prior = (datetime.strptime(as_of, "%Y-%m-%d").date()
+                 - timedelta(weeks=1)).isoformat()
+        d1w = (None, gap(prior))
+    if pct[0] is not None and history_problem:
+        # Without the history the window holds only the weeks since the
+        # cutover, and a rank among a handful of weeks is not a 2y percentile.
+        pct = (None, "%s: the Treasury 2-year history before the cutover "
+                     "is unavailable" % history_problem)
+    return {"lvl": lvl, "d1w_bps": d1w, "pctile_2y": pct}
+
+
 def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
-                       prev_market_state: Optional[dict]) -> dict:
+                       prev_market_state: Optional[dict],
+                       us2y: Optional[Tuple[Dict[str, float],
+                                            Optional[str]]] = None) -> dict:
     """Core derivation over an explicit (date, doc) list -- the pure core
-    shared by derive_market_state() and rederive_and_compare()."""
+    shared by derive_market_state() and rederive_and_compare().
+
+    us2y: the load_us2y_history() result, (history, problem)."""
     if not docs:
         raise ValueError("no weekly files to derive from")
     as_of = docs[-1][0]
     facts = facts if isinstance(facts, dict) else {}
+    us2y_history, us2y_problem = us2y if us2y is not None else (
+        {}, "no Treasury 2-year history supplied")
 
     spy = _close_series(docs, "SPY", None)
 
@@ -602,9 +777,19 @@ def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
 
     # -- rates -----------------------------------------------------------------
     rates = {}
-    rate_pts = {t: _close_series(docs, t, "rates") for t in RATE_TICKERS}
     for t in RATE_TICKERS:
-        pts = rate_pts[t]
+        if t == CASH_2Y:
+            # The history matters only if some week has to come from it. A
+            # panel whose every week carries its own Treasury 2-year is
+            # whole without the file.
+            needs_history = any(
+                not is_treasury_sourced(doc, "rates", CASH_2Y)
+                for _, doc in docs)
+            rates[t] = _entry(_cash_2y_fields(
+                cash_2y_series(docs, us2y_history), as_of,
+                us2y_problem if needs_history else None))
+            continue
+        pts = _close_series(docs, t, "rates")
         rates[t] = _entry({
             "lvl": _level(pts, as_of),
             "d1w_bps": _rate_delta_bps(pts, as_of),
@@ -719,13 +904,17 @@ def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
 
 
 def derive_market_state(weekly_dir: str, facts_path: str,
-                        prev_market_state: Optional[dict] = None) -> dict:
+                        prev_market_state: Optional[dict] = None,
+                        us2y_path: Optional[str] = None) -> dict:
     """Derive the MARKET_GROUNDING sec.1 snapshot from committed weekly
-    files + facts.json. PURE: no network, no clocks; as_of is the newest
-    weekly file's date. Identical inputs -> byte-identical output.
+    files + facts.json + the Treasury 2-year history. PURE: no network, no
+    clocks; as_of is the newest weekly file's date. Identical inputs ->
+    byte-identical output.
 
     prev_market_state: last week's derived state (dict), used only for
     corr_prev. Pass None for the earliest week (corr_prev -> null+reason).
+    us2y_path: the history file; defaults to us2y_treasury.json beside
+    weekly_dir, so existing callers need no change.
     """
     docs = _load_weekly_files(weekly_dir)
     facts = None
@@ -734,14 +923,47 @@ def derive_market_state(weekly_dir: str, facts_path: str,
             facts = json.load(f)
     except Exception:
         facts = None  # every facts-fed field degrades to null+reason
-    return _derive_from_files(docs, facts, prev_market_state)
+    us2y = load_us2y_history(us2y_path or us2y_history_path(weekly_dir))
+    return _derive_from_files(docs, facts, prev_market_state, us2y)
 
 
 def write_market_state(weekly_dir: str, facts_path: str, out_path: str,
-                       prev_market_state: Optional[dict] = None) -> str:
+                       prev_market_state: Optional[dict] = None,
+                       us2y_path: Optional[str] = None) -> str:
     """Convenience writer around derive_market_state (canonical bytes)."""
-    state = derive_market_state(weekly_dir, facts_path, prev_market_state)
+    state = derive_market_state(weekly_dir, facts_path, prev_market_state,
+                                us2y_path)
     return _write_json(out_path, state)
+
+
+def derive_chain(weekly_dir: str, facts_path: str,
+                 us2y_path: Optional[str] = None) -> dict:
+    """Derive the newest week's state through the WHOLE chain, earliest
+    weekly file forward -- each week's state feeds the next as
+    prev_market_state, so corr_prev is reproduced rather than supplied.
+
+    This is the state rederive_and_compare() checks the committed file
+    against, so it is also the one to write when the committed file has to
+    be regenerated from scratch (a purity repair, a deriver change, a week
+    added to the Treasury 2-year history). scripts/rederive_market_state.py
+    is that writer."""
+    docs = _load_weekly_files(weekly_dir)
+    facts = None
+    try:
+        with open(facts_path, "r", encoding="utf-8") as f:
+            facts = json.load(f)
+    except Exception:
+        facts = None
+    us2y = load_us2y_history(us2y_path or us2y_history_path(weekly_dir))
+
+    prev = None
+    state = None
+    for i in range(len(docs)):
+        state = _derive_from_files(docs[: i + 1], facts, prev, us2y)
+        prev = state
+    if state is None:
+        raise ValueError("no weekly files to derive from")
+    return state
 
 
 # ---------------------------------------------------------------------------
@@ -773,7 +995,9 @@ def _first_diff(a, b, path: str = "$") -> Optional[str]:
 
 
 def rederive_and_compare(weekly_dir: str, facts_path: str,
-                         market_state_path: str) -> Tuple[bool, Optional[str]]:
+                         market_state_path: str,
+                         us2y_path: Optional[str] = None
+                         ) -> Tuple[bool, Optional[str]]:
     """Purity self-check for the truth gate.
 
     Re-derives the WHOLE chain from the earliest weekly file forward -- each
@@ -790,19 +1014,7 @@ def rederive_and_compare(weekly_dir: str, facts_path: str,
         committed_raw = f.read()
     committed = json.loads(committed_raw)
 
-    docs = _load_weekly_files(weekly_dir)
-    facts = None
-    try:
-        with open(facts_path, "r", encoding="utf-8") as f:
-            facts = json.load(f)
-    except Exception:
-        facts = None
-
-    prev = None
-    state = None
-    for i in range(len(docs)):
-        state = _derive_from_files(docs[: i + 1], facts, prev)
-        prev = state
+    state = derive_chain(weekly_dir, facts_path, us2y_path)
 
     if canonical_json(state) == canonical_json(committed):
         return True, None

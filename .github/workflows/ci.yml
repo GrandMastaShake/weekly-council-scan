@@ -67,4 +67,31 @@ jobs:
                   print("  %-38s %4d -> %4d" % (path, before, after))
               sys.exit(1)
           print("panel intact: no weekly or daily file lost series")
+
+          # data/us2y_treasury.json is append-only by week for the same
+          # reason. It holds the Treasury 2-year for the weeks whose weekly
+          # file cannot (DATA_FEED.md sec.1a); an entry that changes or
+          # disappears rewrites what market_state derives for a week nobody
+          # can observe again. New weeks pass; a changed or lost one fails.
+          hist = "data/us2y_treasury.json"
+          r = subprocess.run(["git", "show", "HEAD^:" + hist],
+                             capture_output=True, text=True)
+          if r.returncode != 0:
+              print("us2y history: not in the previous commit; nothing to compare")
+              sys.exit(0)
+          before = json.loads(r.stdout).get("series", {})
+          now = {}
+          if Path(hist).is_file():
+              now = json.loads(Path(hist).read_text(encoding="utf-8")).get("series", {})
+          keep = ("close", "observed")
+          bad = [(w, rec, now.get(w)) for w, rec in sorted(before.items())
+                 if w not in now
+                 or any(now[w].get(k) != rec.get(k) for k in keep)]
+          if bad:
+              print("US2Y HISTORY REGRESSION -- committed weeks were changed or removed:")
+              for week, was, got in bad:
+                  print("  %s  %s -> %s" % (week, was, got))
+              sys.exit(1)
+          print("us2y history intact: %d week(s) unchanged, %d added"
+                % (len(before), len(now) - len(before)))
           PY
