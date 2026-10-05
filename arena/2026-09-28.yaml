@@ -2,11 +2,20 @@ week: '2026-09-28'
 lock: 2026-09-28 08:50 ET
 entry_date: '2026-09-28'
 exit_date: '2026-10-02'
-status: open
+status: closed
+close_note: 'Closed 2026-10-05 ~09:45 ET via arena_ingest.py --close. The close run
+  re-fetched the settled Monday 2026-09-28 bars, so this yaml uses the settled opens.
+  Three differ from the prices recorded at lock: VRTX 522.02 -> 524.27 (0.43%, held
+  by both players), NVDA 229.70 -> 229.75, CNK 37.654 -> 37.65. Locked-basis results
+  (lock prices -> same Friday closes): GrandMastaShake -2.14% (alpha -2.31%), Umassalum
+  -0.71% (alpha -0.88%), SPY +0.17%. The week''s order is the same on either basis.
+  Council (Tracker, same Monday-open basis): -1.15%, alpha -1.32%.'
 benchmark:
   ticker: SPY
   entry_price: 768.35
   entry_price_source: open
+  exit_price: 769.64
+  return_pct: 0.17
 players:
 - player: GrandMastaShake
   valid: true
@@ -15,28 +24,42 @@ players:
   picks:
   - ticker: NVDA
     weight: 0.25
-    entry_price: 229.7
+    entry_price: 229.75
     entry_price_source: open
+    exit_price: 233.95
+    return_pct: 1.83
   - ticker: JNJ
     weight: 0.15
     entry_price: 270.17
     entry_price_source: open
+    exit_price: 256.03
+    return_pct: -5.23
   - ticker: MOD
     weight: 0.1
     entry_price: 195.1
     entry_price_source: open
+    exit_price: 178.2
+    return_pct: -8.66
   - ticker: VRTX
     weight: 0.1
-    entry_price: 522.02
+    entry_price: 524.27
     entry_price_source: open
+    exit_price: 504.73
+    return_pct: -3.73
   - ticker: CNK
     weight: 0.1
-    entry_price: 37.654
+    entry_price: 37.65
     entry_price_source: open
+    exit_price: 36.05
+    return_pct: -4.25
   - ticker: MCS
     weight: 0.05
     entry_price: 28.15
     entry_price_source: open
+    exit_price: 27.06
+    return_pct: -3.87
+  weekly_return_pct: -2.18
+  alpha_vs_spy_pct: -2.35
 - player: Umassalum
   valid: true
   total_weight: 1.0
@@ -46,19 +69,31 @@ players:
     weight: 0.1
     entry_price: 271.23
     entry_price_source: open
+    exit_price: 269.95
+    return_pct: -0.47
   - ticker: VRTX
     weight: 0.2
-    entry_price: 522.02
+    entry_price: 524.27
     entry_price_source: open
+    exit_price: 504.73
+    return_pct: -3.73
   - ticker: BNO
     weight: 0.3
     entry_price: 60.81
     entry_price_source: open
+    exit_price: 63.1
+    return_pct: 3.77
   - ticker: GE
     weight: 0.2
     entry_price: 321.46
     entry_price_source: open
+    exit_price: 309.56
+    return_pct: -3.7
   - ticker: AAPL
     weight: 0.2
     entry_price: 340.37
     entry_price_source: open
+    exit_price: 333.69
+    return_pct: -1.96
+  weekly_return_pct: -0.79
+  alpha_vs_spy_pct: -0.96

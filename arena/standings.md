@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 7 | +0.67% | +0.43% | 4-3 | +3.40% (2026-09-21) |
-| Umassalum | 5 | -0.13% | -0.80% | 4-1 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 8 | -0.64% | -1.11% | -- | +0.41% (2026-09-21) |
+| GrandMastaShake | 8 | +0.31% | +0.09% | 4-4 | +3.40% (2026-09-21) |
+| Umassalum | 6 | -0.24% | -0.83% | 5-1 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 9 | -0.70% | -1.13% | -- | +0.41% (2026-09-21) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-09-28 | Umassalum | -0.79% | -0.96% | -1.15% | 🏆 Umassalum |
+| 2026-09-28 | GrandMastaShake | -2.18% | -2.35% | -1.15% | 🏆 Umassalum |
 | 2026-09-21 | GrandMastaShake | +3.40% | +2.73% | +0.41% | 🏆 GrandMastaShake |
 | 2026-09-21 | Umassalum | -3.48% | -4.15% | +0.41% | 🏆 GrandMastaShake |
 | 2026-09-14 | GrandMastaShake | -0.16% | -0.76% | +0.23% | 🏆 The Council |
@@ -49,6 +51,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 **Basis note (2026-09-21, closed 2026-09-28):** every book -- both players and the Council -- is on the SAME basis for the first time: validated Monday 2026-09-21 opens -> Friday 2026-09-25 close (Arena SPY $766.25 -> $771.35, +0.67%; the Tracker's SPY window is identical). **GrandMastaShake +3.40%, alpha +2.73% -- the best week any player has posted** (DDOG +16.72% and BFLY +17.38% carried; SPCX -3.93% and COIN -4.91% cost). **Umassalum -3.48%, alpha -4.15%** (HQY -7.54%, UPST -6.74%, PGR -4.02% -- the insurer selloff that also took the Council's HIG -5.66%). **The Council +0.41%, alpha -0.26%** (AMD +8.00%; HIG -5.66%; 47.8% cash). GrandMastaShake wins the week and beats the Council head-to-head; the Council beats Umassalum -- his first head-to-head loss (4-1). The close run re-fetched the settled Monday bars: all 14 passed low <= open <= high; four opens moved by cents from the lock-time prices, and both results are recorded in arena/2026-09-21.yaml (locked basis: +3.39% / -3.48%).
 
-**Open week (2026-09-28):** two players locked in (entry set pinned 08:51:25 ET from #111; both comments created and unedited before the 08:50 lock) -- **GrandMastaShake** NVDA 25% / JNJ 15% / MOD 10% / VRTX 10% / CNK 10% / MCS 5%, 25% cash; **Umassalum** LNG 10% / VRTX 20% / BNO 30% / GE 20% / AAPL 20%, fully invested. **The Council is in:** AAPL 30.0% / META 29.4% / AMD 20.6% + 20.0% cash (the owner's cash cap, first full week). **Process note:** the Council's report went public at 07:14 ET, before the 08:50 lock -- the Council's own miss; its book should publish after the lock. Entry prices (validated Monday opens) are written to `arena/2026-09-28.yaml` by the post-open task; scored at Friday 2026-10-02's close.
+**Basis note (2026-09-28, closed 2026-10-05):** all three books are on the same basis: Monday 2026-09-28 opens -> Friday 2026-10-02 close (Arena SPY $768.35 -> $769.64, +0.17%; the Tracker's SPY window is identical). A red week for every book. **Umassalum -0.79%, alpha -0.96%** (BNO +3.77% on a 30% weight carried; VRTX -3.73% and GE -3.70% cost) -- wins the week and beats the Council head-to-head (5-1). **The Council -1.15%, alpha -1.32%** (AAPL -1.96%, META -2.93%, AMD +1.44%; 20.0% cash). **GrandMastaShake -2.18%, alpha -2.35%** (NVDA +1.83% was the only green; MOD -8.66%, JNJ -5.23%, CNK -4.25%, MCS -3.87%, VRTX -3.73%; 25% cash) -- the Council wins that head-to-head (4-4). The close run re-fetched the settled Monday bars; VRTX's open moved 0.43% from the lock-time price ($522.02 -> $524.27), and the locked-basis results (-0.71% / -2.14%) are recorded in arena/2026-09-28.yaml. The order is the same on either basis.
+
+<!-- OPEN WEEK 2026-10-05 -->
 
 *May the best thesis win.* 🏛️
