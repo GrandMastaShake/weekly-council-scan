@@ -3,14 +3,16 @@
 # Exposes fetch_special_instruments(friday_date) returning the rates / vol /
 # commodities / fx blocks of data/weekly/<date>.json (DATA_FEED.md section 1),
 # plus a mandatory "missing" list and a "provenance" block naming any
-# instrument that did not come from Yahoo. Closes only; volume is kept when
-# the feed reports a real one and normalized to None otherwise (never
-# invented).
+# instrument that did not come from Yahoo, and any whose value is not the
+# session the file is named for. Closes only; volume is kept when the feed
+# reports a real one and normalized to None otherwise (never invented).
 #
 # Fetch discipline follows truth_layer/sweep/scripts/arena_ingest.py fetch_bar:
 # explicit start/end window around the Friday, select that date's bar. No
-# period='1d' blind fetches. If the Friday was a holiday, the last trading
-# day <= Friday is used and a "note" field records the substitution.
+# period='1d' blind fetches. A date with no bar gets an earlier session's
+# only when the provider shows it skipped that date, and the stand-in's own
+# date is committed with it; a bar the exchange has not settled is not read
+# at all. Both rules are under "The Yahoo path" below.
 #
 # ---------------------------------------------------------------------------
 # INSTRUMENT RESEARCH LOG (live-verified, probes run against yfinance 1.5.2)
@@ -67,6 +69,28 @@
 # 63.33 sit above the briefing ranges (3000-3500 / 30-45); both are genuine
 # live closes (2025-08-08: GC=F 3439.10, SI=F 38.42 -- a sustained rally,
 # not a fetch artifact). All other instruments landed inside their ranges.
+#
+# WTI, GOLD and SILVER are CONTINUOUS symbols, and Yahoo does not hold them
+# still. Probed 2026-10-05 against yfinance 1.6.0, while auditing every
+# committed close (scripts/audit_instruments.py, macro/instrument_audit.json):
+#   GC=F  The history was the nearest-expiry contract when the panel was
+#         backfilled on 2026-08-12 (median committed volume 491 contracts)
+#         and is the active contract now (median 185,701), restated for the
+#         whole window. 107 of the 113 committed weeks are no longer Yahoo's
+#         GC=F close: always lower, by the carry between the two months, as
+#         much as 59.00 or 1.7 percent. From 2026-07-31 on, today's GC=F
+#         rows are GCZ26.CMX's, close and volume, row for row.
+#   SI=F  The history is still the nearest-expiry chain, but the live quote
+#         is the active contract (Dec 26). An evening read and the settled
+#         history are different contract months, 0.2 to 0.8 apart.
+#   CL=F  The live quote rolls to the next month before the history does.
+#         2026-09-18: the quote was CLX26 (Nov), the history is CLV26 (Oct,
+#         which expired 09-22). That is the 95.47 against 100.30 of #110.
+# Nothing in a committed file says which contract month a close belongs to;
+# the volume beside it is the only tell. Fixing that means naming contracts
+# and a roll rule, which is a decision about the instrument and has not been
+# made. What is fixed here is narrower: when the bar is read, and whether a
+# substitution is written down.
 
 import csv
 import datetime as dt
@@ -80,32 +104,44 @@ except ImportError as exc:
     raise ImportError("snapshot_macro requires yfinance") from exc
 
 try:
-    from scan_pipeline.snapshot import TREASURY_SOURCE
+    from scan_pipeline.snapshot import PROVIDER, TREASURY_SOURCE
 except ImportError:  # same-dir import when repo root is not on sys.path
-    from snapshot import TREASURY_SOURCE
+    from snapshot import PROVIDER, TREASURY_SOURCE
+
+# The bar of an instrument that trades past the US cash close is a live
+# quote until the provider loads the exchange settlement. See "The Yahoo
+# path" for what that has cost and why the hour is 13.
+NEXT_DAY = "next_day"
+SETTLED_HOUR_UTC = 13
 
 # ---------------------------------------------------------------------------
 # Provider map: instrument -> yahoo symbol -> normalization. One place to
 # touch on a provider swap. An entry with no "provider" is a Yahoo symbol;
-# US2Y is the single one that is not (see the research log).
+# US2Y is the single one that is not (see the research log). "settles" marks
+# a bar that is not final on the evening of its own session.
 # ---------------------------------------------------------------------------
 INSTRUMENTS = {
     "rates": {
         "US10Y":    {"symbol": "^TNX",  "divisor": 1.0, "kind": "yield"},
         "US2Y":     {"provider": TREASURY_SOURCE, "column": "2 Yr",
                      "kind": "yield"},
-        "US2Y_FUT": {"symbol": "2YY=F", "divisor": 1.0, "kind": "yield"},
+        "US2Y_FUT": {"symbol": "2YY=F", "divisor": 1.0, "kind": "yield",
+                     "settles": NEXT_DAY},
     },
     "vol": {
         "VIX": {"symbol": "^VIX", "divisor": 1.0, "kind": "index"},
     },
     "commodities": {
-        "WTI":    {"symbol": "CL=F", "divisor": 1.0, "kind": "future"},
-        "GOLD":   {"symbol": "GC=F", "divisor": 1.0, "kind": "future"},
-        "SILVER": {"symbol": "SI=F", "divisor": 1.0, "kind": "future"},
+        "WTI":    {"symbol": "CL=F", "divisor": 1.0, "kind": "future",
+                   "settles": NEXT_DAY},
+        "GOLD":   {"symbol": "GC=F", "divisor": 1.0, "kind": "future",
+                   "settles": NEXT_DAY},
+        "SILVER": {"symbol": "SI=F", "divisor": 1.0, "kind": "future",
+                   "settles": NEXT_DAY},
     },
     "fx": {
-        "DXY": {"symbol": "DX-Y.NYB", "divisor": 1.0, "kind": "index"},
+        "DXY": {"symbol": "DX-Y.NYB", "divisor": 1.0, "kind": "index",
+                "settles": NEXT_DAY},
     },
 }
 
@@ -303,11 +339,119 @@ def _fetch_treasury(ticker, cfg, as_of):
     return entry, prov, None
 
 
-def _fetch_one(ticker, cfg, friday):
-    """Fetch one instrument's Friday bar. Returns (entry_dict, error_str)."""
+# ---------------------------------------------------------------------------
+# The Yahoo path (every instrument but US2Y)
+# ---------------------------------------------------------------------------
+# The same three rules the Treasury path follows, for the same reason: what
+# is committed cannot be edited afterwards.
+#
+#  * The bar dated as_of is the observation, and a missing bar is NOT
+#    evidence of a holiday. 2026-08-28.json was fetched on the Saturday at
+#    14:10 UTC. Yahoo had no Friday bar for any of its three index symbols
+#    by then (or had a copy of Thursday's; the file cannot say which), and
+#    "the last bar on or before Friday" put Thursday's 10-year, VIX and
+#    dollar index under Friday's date. No bar dated as_of and none after it:
+#    "missing", with the reason.
+#  * A stand-in needs proof, and is written down. A bar dated AFTER as_of
+#    shows the instrument skipped as_of -- Good Friday, or July 4th, when
+#    the futures print a short session and the Cboe indices print nothing
+#    -- and the last bar of the same Mon..Fri week stands in. Its date goes
+#    out as "observed" and is committed in provenance.<block>.<ticker>.
+#    Through 2026-10-02 it went out as a "note" the writer dropped, so the
+#    28 stand-ins in the five holiday files are unmarked. On the night
+#    itself the proof does not exist yet, so a holiday Friday's instruments
+#    are "missing" from a live run and filled by a later full rewrite.
+#  * A bar the exchange has not settled is not a close. The five symbols
+#    marked "settles" trade past the cash close, and until Yahoo loads the
+#    settlement the bar dated as_of is a quote: the last trade, of whichever
+#    contract month is most active, and on a weekday evening the first
+#    trades of the NEXT session. Read on the evening of the session, WTI,
+#    gold, silver and the dollar index were wrong in all 11 files that tried
+#    (three weekly, eight daily) and the 2-year future in 10. WTI for
+#    2026-09-18 went in at 95.47 against a settled 100.30 (#110); the daily
+#    file for 2026-09-22 holds 89.63 against 94.59, on a volume of 1,643.
+#    Read from 13:07 UTC the next day onward, WTI was right in five files of
+#    five. So those five are not read before 13:00 UTC on the day after
+#    as_of; earlier they are "missing". That hour is where the evidence
+#    starts, not a measured boundary: the latest read that failed was at
+#    02:58 UTC. Nor does it settle which contract month the bar is (SI=F at
+#    14:10 UTC on 2026-08-29 was the active contract's settlement, and the
+#    history has since become the front month's). The Cboe indices, ^TNX
+#    and ^VIX, are final by evening and were right in all 11.
+#
+# The window opens on the week's Monday because nothing earlier can be used,
+# and because one that opens on the Sunday US clocks go forward returns no
+# rows at all for ^VIX: Friday minus five days is that Sunday once a year,
+# which is how VIX went missing from 2025-03-14 and 2026-03-13. It runs
+# eight days past as_of so that a later bar, where one exists, is in it.
+
+def settled_at(as_of):
+    """The first moment the bar dated as_of may be read for an instrument
+    that settles the next day. An aware UTC datetime."""
+    return dt.datetime.combine(as_of + dt.timedelta(days=1),
+                               dt.time(SETTLED_HOUR_UTC),
+                               tzinfo=dt.timezone.utc)
+
+
+def normalize_bar(close, volume, cfg):
+    """One provider bar as the feed commits it: (close, volume).
+
+    The divisor, the legacy x10 yield guard, 4 dp, and a zero or absent
+    volume as None. scripts/audit_instruments.py goes through this too, so
+    it compares a committed close with the number this writer would write."""
+    close = float(close) / cfg.get("divisor", 1.0)
+    if cfg.get("kind") == "yield" and close > LEGACY_X10_GUARD:
+        close = close / 10.0  # legacy x10 feed guard, see research log
+    vol = None
+    try:
+        if volume is not None and volume == volume and int(volume) > 0:
+            vol = int(volume)                               # NaN/0 -> None
+    except (TypeError, ValueError):
+        vol = None
+    return round(close, 4), vol
+
+
+def select_bar(days, as_of, cfg, now):
+    """Pick the session that answers for as_of. Pure: no network, no clock.
+
+    days is the set of dates the provider returned a bar for; now is an
+    aware UTC datetime. Returns (observed_date, error_str) under the rules
+    above."""
     symbol = cfg["symbol"]
-    start = (friday - dt.timedelta(days=5)).isoformat()
-    end = (friday + dt.timedelta(days=2)).isoformat()
+    if as_of in days:
+        if cfg.get("settles") == NEXT_DAY and now < settled_at(as_of):
+            return None, (
+                "%s: the bar dated %s is a quote until the exchange "
+                "settlement is loaded, and is not read before %s (now %s)"
+                % (symbol, as_of.isoformat(),
+                   settled_at(as_of).strftime("%Y-%m-%dT%H:%MZ"),
+                   now.strftime("%Y-%m-%dT%H:%MZ")))
+        return as_of, None
+    if not any(d > as_of for d in days):
+        return None, (
+            "%s: no bar dated %s, and none after it yet; a holiday cannot "
+            "be told from a late post, so no earlier session is substituted"
+            % (symbol, as_of.isoformat()))
+    monday = as_of - dt.timedelta(days=as_of.weekday())
+    earlier = [d for d in days if monday <= d < as_of]
+    if not earlier:
+        return None, ("%s: nothing printed on %s and its week has no "
+                      "earlier bar to stand in"
+                      % (symbol, as_of.isoformat()))
+    return max(earlier), None
+
+
+def _fetch_one(ticker, cfg, friday):
+    """Fetch one instrument's bar for `friday`, which is any session date:
+    the daily feed passes its own. Returns (entry_dict, error_str).
+
+    entry is {"close", "volume"}, and when the value is a stand-in from an
+    earlier session of the same week, "observed" (that session's date) and
+    a "note" saying so in words."""
+    symbol = cfg["symbol"]
+    monday = friday - dt.timedelta(days=friday.weekday())
+    start = monday.isoformat()
+    end = (friday + dt.timedelta(days=8)).isoformat()
     try:
         hist = yf.Ticker(symbol).history(start=start, end=end)
     except Exception as exc:  # network/parse failure: never kill the batch
@@ -315,33 +459,25 @@ def _fetch_one(ticker, cfg, friday):
     if hist is None or hist.empty:
         return None, "no data returned for window %s..%s" % (start, end)
 
-    # Select the exact Friday bar; else last trading day <= Friday.
-    picked = None
+    bars = {}
     for idx, row in hist.iterrows():
-        d = idx.date()
-        if d <= friday:
-            picked = (d, row)
-        if d == friday:
-            break
-    if picked is None:
-        return None, "no bar on or before %s in window" % friday.isoformat()
+        close = row["Close"]
+        if close is None or close != close:     # a NaN bar is not a bar
+            continue
+        bars[idx.date()] = row
 
-    d, row = picked
-    close = float(row["Close"]) / cfg["divisor"]
-    if cfg["kind"] == "yield" and close > LEGACY_X10_GUARD:
-        close = close / 10.0  # legacy x10 feed guard, see research log
-    vol = row.get("Volume")
-    volume = None
-    try:
-        if vol is not None and vol == vol and int(vol) > 0:  # NaN/0 -> None
-            volume = int(vol)
-    except (TypeError, ValueError):
-        volume = None
+    observed, err = select_bar(set(bars), friday, cfg, _utcnow())
+    if err is not None:
+        return None, err
 
-    entry = {"close": round(close, 4), "volume": volume}
-    if d != friday:
-        entry["note"] = ("Friday %s not a trading day; used last trading "
-                         "day %s" % (friday.isoformat(), d.isoformat()))
+    row = bars[observed]
+    close, volume = normalize_bar(row["Close"], row.get("Volume"), cfg)
+    entry = {"close": close, "volume": volume}
+    if observed != friday:
+        entry["observed"] = observed.isoformat()
+        entry["note"] = ("%s printed nothing on %s; used %s, the last bar "
+                         "of that week" % (symbol, friday.isoformat(),
+                                           observed.isoformat()))
     return entry, None
 
 
@@ -351,14 +487,17 @@ def fetch_special_instruments(friday_date: str) -> dict:
     Returns {"rates": {...}, "vol": {...}, "commodities": {...}, "fx": {...},
     "missing": [{"ticker": ..., "reason": ...}], "provenance": {...}}. Each
     instrument entry is {"close": float, "volume": int|None} plus an optional
-    "note" when a holiday forced a fallback to the prior trading day.
-    Failures land in "missing", never silently, and one instrument never
-    stands in for another: no Treasury row means no US2Y, whatever US2Y_FUT
-    printed.
+    "note" when an earlier session of the week stands in for a skipped one.
+    Failures land in "missing", never silently -- a bar that is not settled
+    yet is one of them -- and one instrument never stands in for another: no
+    Treasury row means no US2Y, whatever US2Y_FUT printed.
 
     "provenance" is {block: {ticker: {"source", "fetched_at"[, "observed"]}}}
-    for the instruments that did not come from Yahoo -- today, US2Y alone.
-    snapshot.write_weekly commits it; the file-level source stays "yahoo".
+    and names two kinds of instrument: one that did not come from Yahoo
+    (US2Y alone), and one whose value is a stand-in, where "observed" is the
+    session it was actually published for. An instrument that came from
+    Yahoo for the date asked has no entry. snapshot.write_weekly commits the
+    block; the file-level source stays "yahoo".
     """
     friday = dt.date.fromisoformat(friday_date)
     out = {block: {} for block in INSTRUMENTS}
@@ -371,6 +510,11 @@ def fetch_special_instruments(friday_date: str) -> dict:
                 entry, prov, err = _fetch_treasury(ticker, cfg, friday)
             else:
                 entry, err = _fetch_one(ticker, cfg, friday)
+                if err is None and entry.get("observed"):
+                    prov = {"source": PROVIDER,
+                            "fetched_at": _utcnow().strftime(
+                                "%Y-%m-%dT%H:%M:%SZ"),
+                            "observed": entry.pop("observed")}
             if err is not None:
                 out["missing"].append({"ticker": ticker, "reason": err})
                 continue

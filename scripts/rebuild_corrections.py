@@ -6,15 +6,29 @@ base changes -- for example when backfill_weekly.py adds tickers to a week that
 already carries a correction. Readers prefer the correction, so the base file's
 new tickers would be silently invisible.
 
-This regenerates each correction by re-applying its recorded edit to the
+This regenerates each correction by re-applying its recorded edits to the
 current base. Run it after any backfill that touches a corrected week.
 
-The only edit type currently supported is dropping zero-volume bars, which is
-what every existing correction does.
+Two kinds of edit are recorded in a correction, and both are re-applied:
+
+  * A zero-volume bar dropped from `series`. The record is the `missing`
+    entry it became, with "zero-volume" in the reason (2026-08-21, AVB).
+  * A special instrument's close restated from a later fetch. The record is
+    `restated`: [{"block", "ticker", "was": {"close", "volume"}}], and the
+    replacement carries its own `provenance.<block>.<ticker>` label
+    (2026-08-28: US10Y, VIX and DXY held Thursday's close).
+    scripts/restate_instruments.py writes these.
+
+Each is re-applied only while the base still holds what the correction
+replaced. If it does not, the base moved under the correction -- the provider
+restated, or someone rewrote the week -- and the file is left alone with an
+ABORT, which also fails the run: a backfill must not commit past a correction
+nobody has looked at.
 """
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import sys
 from pathlib import Path
@@ -22,34 +36,34 @@ from pathlib import Path
 WEEKLY = Path(__file__).resolve().parents[1] / "data" / "weekly"
 
 
-def rebuild(corrected: Path) -> bool:
-    doc = json.loads(corrected.read_text(encoding="utf-8"))
-    base_name = doc.get("corrects")
-    if not base_name:
-        print("  skip " + corrected.name + ": no 'corrects' field")
-        return False
-    base = corrected.with_name(base_name)
-    if not base.is_file():
-        print("  skip " + corrected.name + ": base " + base_name + " missing")
-        return False
+class BaseMoved(RuntimeError):
+    """The base no longer holds what the correction says it replaced."""
 
+
+def recorded_edits(doc: dict) -> tuple:
+    """(zero-volume drops by ticker, restated instruments) a correction records."""
     dropped = {m["ticker"]: m for m in doc.get("missing", [])
                if "zero-volume" in m.get("reason", "")}
-    if not dropped:
-        print("  skip " + corrected.name + ": no zero-volume drops recorded")
-        return False
+    return dropped, list(doc.get("restated") or [])
 
-    fresh = json.loads(base.read_text(encoding="utf-8"))
-    before = len(fresh["series"])
+
+def apply_edits(base: dict, correction: dict) -> dict:
+    """The correction as it should read against `base` today. Pure.
+
+    A fresh copy of the base with the correction's recorded edits re-applied
+    and its `corrects`, `reason` and `restated` carried over. Raises
+    BaseMoved rather than guess when the base no longer matches."""
+    dropped, restated = recorded_edits(correction)
+    fresh = copy.deepcopy(base)
+
     for ticker, entry in dropped.items():
         bar = fresh["series"].get(ticker)
         if bar is None:
             continue
         if bar.get("volume") != 0:
-            print("  ABORT " + corrected.name + ": " + ticker
-                  + " no longer has volume 0 in the base; the provider may have "
-                    "restated. Review by hand.")
-            return False
+            raise BaseMoved(
+                ticker + " no longer has volume 0 in the base; the provider "
+                "may have restated. Review by hand.")
         fresh["series"].pop(ticker)
         # A per-series anchor for a series that is no longer there describes
         # nothing, and truth_check --feed refuses it. Drop it with the bar --
@@ -64,15 +78,82 @@ def rebuild(corrected: Path) -> bool:
                 fresh.pop("provenance", None)
         fresh.setdefault("missing", []).append(entry)
 
+    for item in restated:
+        block, ticker = item["block"], item["ticker"]
+        name = block + "." + ticker
+        held = (fresh.get(block) or {}).get(ticker)
+        was = item["was"]["close"]
+        if not isinstance(held, dict) or held.get("close") != was:
+            now = held.get("close") if isinstance(held, dict) else None
+            raise BaseMoved(
+                name + " is " + repr(now) + " in the base, not the "
+                + repr(was) + " this correction replaced. Review by hand.")
+        value = (correction.get(block) or {}).get(ticker)
+        label = ((correction.get("provenance") or {}).get(block)
+                 or {}).get(ticker)
+        if not isinstance(value, dict) or not isinstance(label, dict):
+            raise BaseMoved(
+                name + " is recorded as restated, but the correction no "
+                "longer carries its close and its provenance label. Review "
+                "by hand.")
+        fresh[block][ticker] = copy.deepcopy(value)
+        # The replacement was fetched at another time than the file, and its
+        # label is the only thing in the document that says so.
+        fresh.setdefault("provenance", {}).setdefault(
+            block, {})[ticker] = copy.deepcopy(label)
+
     fresh["missing"].sort(key=lambda m: m["ticker"])
-    fresh["corrects"] = doc["corrects"]
-    fresh["reason"] = doc["reason"]
-    corrected.write_text(json.dumps(fresh, indent=2, ensure_ascii=True) + "\n",
-                         encoding="utf-8", newline="\n")
+    if restated:
+        fresh["restated"] = copy.deepcopy(restated)
+    fresh["corrects"] = correction["corrects"]
+    fresh["reason"] = correction["reason"]
+    return fresh
+
+
+def write_correction(path: Path, doc: dict) -> None:
+    """The one serialization every correction is written in, so that a file
+    written by restate_instruments.py and one rebuilt here are the same bytes."""
+    path.write_text(json.dumps(doc, indent=2, ensure_ascii=True) + "\n",
+                    encoding="utf-8", newline="\n")
+
+
+def rebuild(corrected: Path) -> str:
+    """Rebuild one correction in place. Returns "rebuilt", "skip" or "abort"."""
+    doc = json.loads(corrected.read_text(encoding="utf-8"))
+    base_name = doc.get("corrects")
+    if not base_name:
+        print("  skip " + corrected.name + ": no 'corrects' field")
+        return "skip"
+    base = corrected.with_name(base_name)
+    if not base.is_file():
+        print("  skip " + corrected.name + ": base " + base_name + " missing")
+        return "skip"
+
+    dropped, restated = recorded_edits(doc)
+    if not dropped and not restated:
+        print("  skip " + corrected.name + ": no zero-volume drops and no "
+              "restated instruments recorded")
+        return "skip"
+
+    base_doc = json.loads(base.read_text(encoding="utf-8"))
+    before = len(base_doc["series"])
+    try:
+        fresh = apply_edits(base_doc, doc)
+    except BaseMoved as exc:
+        print("  ABORT " + corrected.name + ": " + str(exc))
+        return "abort"
+    write_correction(corrected, fresh)
+
+    did = []
+    if dropped:
+        did.append("dropped " + ", ".join(sorted(dropped)))
+    if restated:
+        did.append("restated " + ", ".join(
+            item["block"] + "." + item["ticker"] for item in restated))
     print("  rebuilt " + corrected.name + ": base had " + str(before)
           + " series, correction now carries " + str(len(fresh["series"]))
-          + " (dropped " + ", ".join(sorted(dropped)) + ")")
-    return True
+          + " (" + "; ".join(did) + ")")
+    return "rebuilt"
 
 
 def main() -> int:
@@ -95,8 +176,13 @@ def main() -> int:
         print("No correction files found.")
         return 0
     print("Rebuilding " + str(len(files)) + " correction file(s):")
-    for f in files:
-        rebuild(f)
+    outcomes = [rebuild(f) for f in files]
+    if "abort" in outcomes:
+        # It used to exit 0 here, so the backfill workflow went on to commit
+        # with a correction that no longer matched its base.
+        print(str(outcomes.count("abort")) + " correction(s) left alone "
+              "because their base moved. Nothing above was guessed.")
+        return 1
     return 0
 
 
