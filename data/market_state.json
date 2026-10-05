@@ -77,8 +77,8 @@
     "fed_funds_range_as_of": "2026-09-16",
     "fed_stance": "Hike",
     "fed_stance_as_of": "2026-09-16",
-    "next_macro_gate": "August PCE Sep 30 (08:30 ET) + FOMC Oct 27-28 (16 of 18 dots see another 2026 hike); BOJ already hiked to 1.25% on Sep 18 (7-2 split)",
-    "next_macro_gate_as_of": "2026-09-19"
+    "next_macro_gate": "10Y auction + FOMC minutes Oct 7; September CPI Oct 14 (08:30 ET); FOMC Oct 27-28 (October-hike odds fell to roughly 16-18% after September payrolls +29K)",
+    "next_macro_gate_as_of": "2026-10-03"
   },
   "rates": {
     "US10Y": {
@@ -220,8 +220,8 @@
   "upcoming": [
     {
       "binary": null,
-      "event": "August PCE Sep 30 (08:30 ET) + FOMC Oct 27-28 (16 of 18 dots see another 2026 hike); BOJ already hiked to 1.25% on Sep 18 (7-2 split)",
-      "when": "2026-09-19"
+      "event": "10Y auction + FOMC minutes Oct 7; September CPI Oct 14 (08:30 ET); FOMC Oct 27-28 (October-hike odds fell to roughly 16-18% after September payrolls +29K)",
+      "when": "2026-10-03"
     }
   ],
   "vol": {
