@@ -105,6 +105,15 @@ FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
   cause forward only while its finding is unchanged, so anything new lands
   unreviewed until someone gives it one by hand. It needs the network and
   yfinance, so it is not a `truth_check` mode and not in CI.
+- For `WTI`, `GOLD` and `SILVER` the list compares a file from before
+  2026-10-05 with the provider's continuous symbol, because that is what the
+  file read. It does not say whether a close is the nearest-expiry contract's
+  settlement, which is what those keys mean (`DATA_FEED.md` sec.1d): 104 gold
+  closes differ from `GC=F` and are right. Which weeks are off the rule, and
+  what stands in for them, is `data/commodity_settlements.json`, written by
+  `scripts/backfill_commodities.py`. A file that names its contract is
+  compared with that contract's own history while the provider still serves
+  it, and left out once the contract has expired.
 
 ## series_audit.json (which session a committed equity bar is)
 

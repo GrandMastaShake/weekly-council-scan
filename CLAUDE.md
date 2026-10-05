@@ -60,6 +60,10 @@ The parts that get violated:
 - **An instrument close is the bar dated `as_of`, a stand-in the file names,
   or `missing`.** Never "the last bar on or before", and never a futures or
   dollar-index bar read before the exchange settled it. `DATA_FEED.md` sec.1b.
+- **A commodity close names its contract month**, in
+  `provenance.commodities`. One with no label is a continuous symbol's bar
+  of a month nobody named, which is every file through 2026-10-02.
+  `DATA_FEED.md` sec.1d.
 - **No SPY bar, no weekly file.** The series are one session's: SPY's bar
   dated `as_of`, or, only once a later SPY bar proves the Friday was skipped,
   the last session of that week, named in `session_note`. With neither,
@@ -174,15 +178,16 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   has no file. It names the `--since` command that recovers them. Offline,
   `truth_check --feed` WARNs when the newest daily file is two or more
   weekdays old; it knows no holidays, so it never fails.
-- **Neither attempt is late enough for the futures.** WTI, GOLD, SILVER, DXY
-  and US2Y_FUT trade past the cash close and are not read before 13:00 UTC on
-  the day after the session (Known data defects, below). 21:45 UTC and 09:15
-  UTC are both earlier, so every daily file written since 2026-10-05 lists
-  those five in `missing` with the reason, whichever attempt wrote it. US10Y
-  and VIX are final by evening and are read. The eight files from 2026-09-11
-  to 2026-09-23 hold evening quotes for the five. The heatmap's daily tape
-  reads `fx.DXY` and shows it missing meanwhile. An attempt after 13:00 UTC,
-  with no evening write ahead of it, would bring the five back. Whether 09:15
+- **Neither attempt is late enough for the futures.** WTI, WTI_NEXT, GOLD,
+  SILVER, DXY and US2Y_FUT trade past the cash close and are not read before
+  13:00 UTC on the day after the session (Known data defects, below). 21:45
+  UTC and 09:15 UTC are both earlier, so every daily file written since
+  2026-10-05 lists all of them in `missing` with the reason, whichever
+  attempt wrote it. US10Y and VIX are final by evening and are read. The
+  eight files from 2026-09-11 to 2026-09-23 hold evening quotes for the five
+  they carry. The heatmap's daily tape reads `fx.DXY` and shows it missing
+  meanwhile. An attempt after 13:00 UTC, with no evening write ahead of it,
+  would bring them back, each commodity naming its contract. Whether 09:15
   UTC is in fact late enough is not known: no committed read falls between
   02:58 and 13:07 UTC.
 
@@ -307,7 +312,7 @@ refused once with nothing asking again.
 
   The writer now follows the Treasury path's rules: the bar dated `as_of` or
   `missing`; a stand-in only when a later bar proves the date was skipped,
-  recorded as `provenance.<block>.<ticker>.observed`; and the five
+  recorded as `provenance.<block>.<ticker>.observed`; and the six
   late-settling instruments are not read before 13:00 UTC on the day after
   `as_of`. None of that catches a bar dated `as_of` with the wrong day's
   values in it; the audit is what finds that, so run it. `truth_check --feed` fails a file dated 2026-10-05 or later that
@@ -424,18 +429,68 @@ refused once with nothing asking again.
   of `scan_pipeline/`, which writes the empty file until it is synced (the
   gate stops it), and the job's prompt, which asks for the most recent Friday
   only and so needs the catch-up put into it.
-- **GOLD is two contract months, and nothing in a file says which.** WTI,
-  GOLD and SILVER are Yahoo's continuous symbols. Between 2026-09-05 and
-  2026-10-03 Yahoo rebuilt `GC=F` from the nearest-expiry contract onto the
-  active one, for its whole history. The panel's gold is therefore the old
-  basis through 2026-09-04 (2026-08-28 excepted) and the new one from
-  2026-10-02: 107 of 113 weeks no longer match the provider, by up to 59.00
-  or 1.7%, and any `market_state` GOLD change that spans the boundary
-  includes that spread. Committed volume is the only tell (median 491
-  contracts against 185,701). Not corrected -- neither series is wrong and it
-  would be 104 full copies of the panel -- and not fixed: which contract and
-  which roll rule is a decision nobody has made. `SI=F` and `CL=F` have the
-  same weakness in smaller doses; the audit list has the cases.
+- **WTI, GOLD and SILVER are named contracts since 2026-10-05; the 113
+  weeks before name nothing.** Those files hold Yahoo's continuous symbols
+  (`CL=F`, `GC=F`, `SI=F`), and Yahoo does not hold them still. It rebuilt
+  `GC=F` from the nearest-expiry contract onto the active one around
+  2026-09-05, for its whole history: 107 of 113 weeks no longer match it, by
+  up to 59.00 or 1.7%. `SI=F`'s live quote is a different month from its
+  history. And 2026-09-18.json holds the November crude contract's last
+  trade, 95.47, where October settled 100.30 (#110). Reading after the
+  settlement does not pick the month: 2026-08-28, read at 14:10 UTC on the
+  Saturday, got December gold and silver. Volume is not a tell either: on a
+  contract's last day the continuous bar is the expiring month's close on
+  the next month's volume.
+
+  **Owner decision 2026-10-05: the nearest-expiry contract, read by name.**
+  WTI is the NYMEX front month, GOLD and SILVER the COMEX spot month, each
+  held through its last trade date. `WTI_NEXT` is the crude contract after
+  WTI's. The writer reads `CLX26.NYM`, `GCV26.CMX`, `SIV26.CMX` off a roll
+  calendar in `snapshot_macro` and commits the month as
+  `provenance.commodities.<T>.contract`. The continuous symbols are never a
+  fallback: no bar for the named contract means `missing`. The rule is what
+  327 of the 339 committed closes already hold. It is the spot month and not
+  the active one because that is the price of the metal and the panel's own
+  history; so GOLD reads about 0.7% under `GC=F`, which `facts.json` and the
+  sector grids still pull.
+
+  **The old files are not edited and not corrected.** Twelve closes in five
+  weeks are off the rule, and `data/commodity_settlements.json` answers for
+  them: eight superseded, and four gold weeks (2026-08-28, 09-11, 09-18,
+  09-25) recorded as having no settlement, because the September contract
+  expired and nothing serves it. `audited_through` in that file is what lets
+  a committed close with no label be read at all; one from after it never
+  is. `snapshot.commodity_series` is that rule and the only reader
+  `market_state` uses. It also measures WTI's `d1w` on one contract, from
+  last week's `WTI` or `WTI_NEXT`: in a roll week front against front is
+  mostly the spread (-7.9% for 2026-09-25, where November fell 3.8%).
+
+  `truth_check --feed` fails when `market_state.json`'s WTI, GOLD or SILVER
+  is not what that derives (px, contract, each change); when a `contract`
+  label cannot be right for its session; and when the settlement file is
+  missing from a tree that derived a state. It warns for a week after the
+  audit with no named settlement. All of these are what a runner that is
+  behind produces. It needs `scan_pipeline/` AND
+  `data/commodity_settlements.json`, and the weekly job writes neither.
+
+  **An expired contract cannot be read.** Yahoo drops one within days of its
+  last trade. So a rewrite of an old week lists its commodities in
+  `missing`, and a Friday that is a last trade date (the first is
+  2026-11-20, CLZ26) may lose its WTI on the Saturday. A holiday week is the
+  hard case: it is written a week late, and 2026-12-25 is written on
+  2027-01-02, four days after GCZ26 and SIZ26 last trade. `GC=F` cannot stand
+  in, so that week may have no gold settlement at all. Fill what can be
+  filled with
+
+      python scripts/backfill_commodities.py
+
+  which reads by contract name, only adds, and re-derives
+  `market_state.json`. For one named week it can take the continuous
+  symbol's bar instead (`--week <as_of> --instrument WTI --from-continuous
+  --reason "..."`), but only on proof that the symbol was the nearest-expiry
+  chain at that roll; `GC=F` fails that today. `--unavailable` records a
+  week nothing can supply, and `--check` compares what is committed with the
+  provider. `DATA_FEED.md` sec.1d has all of it.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
@@ -500,6 +555,11 @@ moving one breaks his skill silently; update
   "the last bar on or before" for an instrument with no bar on the date.
 - Change a close in a correction by hand. Use `restate_instruments.py`, so
   the change is recorded in `restated` and survives the next rebuild.
+- Read `commodities.*` straight from a weekly file, or let `CL=F`, `GC=F` or
+  `SI=F` stand in for a named contract. Go through
+  `snapshot.commodity_series`; a gap stays a gap.
+- Rewrite an entry in `data/commodity_settlements.json`, or move its
+  `audited_through`. `backfill_commodities.py` only adds.
 - Call a committed equity close wrong because a fresh fetch disagrees. It is
   adjusted to its fetch date. `scripts/audit_series.py` is the comparison.
 - Build a weekly file the writer refused: by hand, from `1wk` bars, or from
