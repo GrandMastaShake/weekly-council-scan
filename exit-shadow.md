@@ -47,6 +47,22 @@
 
 ## Entries
 
+### Week of 2026-10-05
+
+Book: SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% / cash 20.0%. **Entry prices = validated Monday 2026-10-05 opens** (tracker.py --open run ~10:05 ET by the post-open booking task; every price sits inside the day's 1-minute range so far, entry_price_source: open for all five; SPY $769.69 open). Three of five names (SNPS, JCI, NDSN) are in no wiki, and the book rests on two sector lines (XLI for JCI/NDSN, SMH for AMAT/LRCX) plus XLK for SNPS -- a single sector break can fire several thesis legs at once.
+
+| Pick | Tag | Stop | Thesis Invalidation (Trigger line) | Time Stop | Trim Plan |
+|---|---|---|---|---|---|
+| SNPS @ $496.25 (Ophelia) | **SPEC** -- not in any wiki; +15.06% last week at RSI 74.1 (chase), tightest trigger (0.5% headroom) | -8% = $456.55 | XLK close under $198.73 (failed-breakout line, wiki/synthesis.md Section 5 XLK row; XLK $199.81 at booking per macro/facts.json) | Named catalyst: Wed Oct 7 $39B 10Y auction 1:00 PM + FOMC minutes 2:00 PM (wiki/synthesis.md Section 8); no dated next print on the Yahoo calendar (unverified); 6-week backstop Nov 16 | Trim 1/3 at +15% ($570.69); remainder trails -15% from HWM |
+| JCI @ $155.72 (Marky) | **CORE** -- large-cap building technology, broad sponsorship; not in any wiki | -5% = $147.93 | XLI close below $166.18 (Thursday's reversal low, wiki/industrials.md; XLI $169.95 at booking) | Named catalyst: JCI FQ4 print Oct 27 (Yahoo calendar, unverified); 6-week backstop Nov 16 | Trim 1/3 at +15% ($179.08); remainder trails -15% from HWM |
+| NDSN @ $333.54 (Marky) | **CORE** -- low-volatility uptrend (vol 2.8%), liquid mid/large-cap; not in any wiki; shares JCI's XLI line | -5% = $316.86 | XLI close below $166.18 (shared with JCI; wiki/industrials.md; XLI $169.95 at booking) | No dated next print (last reported Aug 19, unverified); 6-week backstop Nov 16 | Trim 1/3 at +15% ($383.57); remainder trails -15% from HWM |
+| AMAT @ $540.82 (Ophelia) | **CORE** -- large-cap semis equipment, broad sponsorship; +11.3% last week on the MU read-through | -5% = $513.78 | SMH close below $609.66 (double-top line, wiki/semiconductors.md; wiki/synthesis.md Section 5 SMH row; SMH $630.60 at booking) | Named catalyst: Oct 7 auction/minutes gate on a 43x semis sector; AMAT print Nov 12 (wiki/earnings-surveillance.md); 6-week backstop Nov 16 | Trim 1/3 at +15% ($621.94); remainder trails -15% from HWM |
+| LRCX @ $346.88 (Ophelia) | **CORE** -- large-cap semis equipment; +10.2% last week; shares AMAT's SMH line | -5% = $329.53 | SMH close below $609.66 (shared with AMAT; wiki/semiconductors.md; SMH $630.60 at booking) | Named catalyst: LRCX print Oct 21 inside the holding window; 6-week backstop Nov 16 | Trim 1/3 at +15% ($398.91); remainder trails -15% from HWM |
+
+outcome: to be computed
+
+---
+
 ### Week of 2026-09-28
 
 Book: AAPL 30.0% / META 29.4% / AMD 20.6% / cash 20.0%. **Entry prices = validated Monday 2026-09-28 opens** (tracker.py --open run ~11:35 ET by the post-open booking task; each price equals the 09:30 ET 5-minute bar open and sits inside the day's range so far; entry_price_source: open for all three; SPY $768.35 open). Opens sat just under Friday's closes (AAPL -0.21%, META -0.16%, AMD -0.91%) -- no gap to discount this week. First book since the log opened that is 100% CORE mega-cap tech/comm.
