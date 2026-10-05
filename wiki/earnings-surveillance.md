@@ -90,7 +90,7 @@
 | **Meta** | **META** | **$728.08** | **-3.14%** | **Oct 28** | **$6.74** ⚠️ | **-14.4% (Jul 29)** | 7/8 | ±7.4% | *Gave back a quarter of last week's +13%: -4.8% on Monday on profit-taking, a report of an always-on OpenAI assistant and a Goldman note on AI capex (per wiki/communication-services.md). ⚠️ Three consensus figures: $6.74 (calendar), $6.34 (`earnings_dates`, down from $6.40), $6.39 (Earnings Whispers). The bar is still drifting down after a miss.* |
 | **Alphabet** | **GOOGL** | **$343.50** | **-0.12%** | **Oct 28** | **$3.03** | +214.2% (Jul 22) ⚠️ | 8/8 | ±4.1% | *Flat. ⚠️ The headline surprise likely includes non-operating gains (investment mark-ups). Earnings Whispers shows $2.95.* |
 | **Amazon** | **AMZN** | **$251.52** | **+0.74%** | **Oct 29** (EW: Oct 28 expected) | **$1.98** | +214.9% (Jul 30) ⚠️ | 8/8 | ±6.2% | *Ended two red weeks. Same ⚠️ as GOOGL on the surprise. Calendar consensus moved up from $1.94 to $1.98; Earnings Whispers shows $2.02.* |
-| **Tesla** | **TSLA** | **$370.59** | **-0.41%** | **Oct 21** | **$0.44 (0.33–0.60)** ⚠️ | **-39.1% (Jul 22)** | **3/8** | ±7.8% | *Still the only one of the seven that usually misses. It reports first and sets the tone. ⚠️ Earnings Whispers shows $0.24, about half the yfinance figure; likely a GAAP vs. adjusted basis difference, not confirmed. Q3 deliveries were not pulled this session.* |
+| **Tesla** | **TSLA** | **$370.59** | **-0.41%** | **Oct 21** | **$0.44 (0.33–0.60)** ⚠️ | **-39.1% (Jul 22)** | **3/8** | ±7.8% | *Still the only one of the seven that usually misses. It reports first and sets the tone. ⚠️ Earnings Whispers shows $0.24, about half the yfinance figure; likely a GAAP vs. adjusted basis difference, not confirmed. Q3 deliveries were 486,532 against about 461,100 expected (reported Oct 2; see wiki/consumer-discretionary.md).* |
 | **NVIDIA** | **NVDA** | **$233.95** | **+3.95%** | **Nov 17** | **$2.47** | +6.2% (Aug 26) | 8/8 | ±4.0% | *Best of the seven this week. MU's print (revenue $54.23B, an 87% gross margin, a $61.5B guide) is the hard data point on AI memory demand that last week's page was waiting for.* |
 
 **Whisper note (flag kept):** Earnings Whispers ticker pages were read for all seven on 2026-10-03. **None shows a whisper number yet**; the site publishes them closer to the print. The mid-July values remain stale and **still need an external feed refresh (Earnings Whispers, Bloomberg)**.
@@ -341,6 +341,8 @@ Third week of the same behavior, and the pattern is now specific: a beat is sold
 - Earnings Whispers: whisper numbers. ⚠️ Partial fill this week from public ticker pages (six names); the Big 7 and most banks show none yet.
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: Tesla's Q3 deliveries are filled in. AZZ's Oct 13 date on this page is confirmed by the company; the industrials page has been corrected to match. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (single-agent sequential run, no sub-agents; week ending Friday 2026-10-02 closes; covering This Week Oct 5-9 + Next Week Preview Oct 12-16)*
 *Next update: Every Saturday evening ET*

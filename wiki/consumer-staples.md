@@ -2,7 +2,7 @@
 
 > **Sector:** Consumer Staples | **ETF:** Consumer Staples Select Sector SPDR (XLP) | **Expense Ratio:** 0.08%
 >
-> *"The double bottom gave way and so did the shelf under it. XLP closed $80.53 (-1.9%) — a sixth straight red week, the lowest close since April 15, through $81.70 on Wednesday and through $81.00 with it. There was no print to blame: no staples company reported. The week the labor market cracked and confidence hit a 12-year low is the week a defensive sector is supposed to be bought, and it was sold on above-average volume. Seventeen of eighteen names fell. The 2.59% yield against a 5.28% ten-year is a -269bp carry gap, and the market is finally charging it to the whole fund, expensive shelf included (WMT -3.4%). PepsiCo reports Thursday at an RSI of 26."* — Cecil
+> *"The double bottom gave way and so did the shelf under it. XLP closed $80.53 (-1.9%) — a seventh straight red week, the lowest close since April 15, through $81.70 on Wednesday and through $81.00 with it. There was no print to blame: no staples company reported. The week the labor market cracked and confidence hit a 12-year low is the week a defensive sector is supposed to be bought, and it was sold on above-average volume. Seventeen of eighteen names fell. The 2.59% yield against a 5.28% ten-year is a -269bp carry gap, and the market is finally charging it to the whole fund, expensive shelf included (WMT -3.4%). PepsiCo reports Thursday at an RSI of 26."* — Cecil
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $80.53 | $82.06 (settled) | **-1.86%** — sixth straight weekly decline |
+| Price | $80.53 | $82.06 (settled) | **-1.86%** — seventh straight weekly decline |
 | 52W Range | $74.06 – $88.89 (dividend-adjusted closing basis, carried) | — | Lowest close since Apr 15 |
 | AUM | ~$14.5B (yfinance totalAssets) | ~$14.5B | — |
 | YTD Return | **~+4.9%** (price basis) | ~+7.0% | -2.1 pp; still ~12 pts ahead of XLY |
@@ -25,7 +25,7 @@ Week path: Mon $82.28, Tue $81.85, Wed $80.60, Thu $80.33, Fri $80.53 (low $80.1
 
 **Marky Tape Read:** The level I was long against is gone. **Monday** $82.28 and **Tuesday** $81.85 held the $81.70–$81.73 double bottom on well-above-average volume — 14.1M and 14.5M — which in hindsight was distribution into a level, not defense of it. **Wednesday** -1.5% to **$80.60**: straight through the double bottom and through my $81.00 stop in one session, closing three cents off the low. **Thursday** $80.33 (low $80.15), **Friday** $80.53 (low $80.13) — two days of nothing while the rest of the market rallied on payrolls. RSI 34.8, down from 38.3; not yet the 30.5 of three weeks ago. I am stopped out of the range trade per my own rule. There is no chart support I can name between here and the adjusted 52-week low at $74.06 other than this week's own low, **$80.13**. Resistance is the broken shelf at **$81.00**, then $81.70, then the 200D ($82.68).
 
-**Ophelia Macro Read:** I armed a hair-trigger three weeks ago and it has fired: a third weekly close below the 200D, and the double bottom lost. What I want on the record is *what kind* of week it happened in. Core PCE cooled to 3.0%. Payrolls printed +29K. Conference Board confidence fell to 81.9, the lowest since 2014. October hike odds went from ~70% to ~17%. Every one of those is supposed to send money toward staples. Instead the fund lost 1.9% and Walmart lost 3.4%. The explanation that fits is the long end: the 10Y touched **5.34%** (highest since 2002) and closed 5.28%, the 30Y is 5.63%, and a fund yielding 2.59% is a bond proxy with a 269bp disadvantage. The second explanation is **DXY 101.93 (+0.95%)**, a ninth straight weekly gain into a reporting season that starts with PepsiCo — KO, PG, PEP, PM, MDLZ and CL are all translation stories. The third is that the consumer weakness is real enough to hit volumes: a household that rates its own finances as bad trades down inside the grocery store too. I move from defensive-lean to **neutral**. The shelter thesis needed this sector to be bought on bad news, and it was not.
+**Ophelia Macro Read:** I armed a hair-trigger three weeks ago and it has fired: a third weekly close below the 200D, and the double bottom lost. What I want on the record is *what kind* of week it happened in. Core PCE cooled to 3.0%. Payrolls printed +29K. Conference Board confidence fell to 81.9, the lowest since 2014. October hike odds went from ~70% to ~17%. Every one of those is supposed to send money toward staples. Instead the fund lost 1.9% and Walmart lost 3.4%. The explanation that fits is the long end: the 10Y touched **5.34%** (highest since 2002) and closed 5.28%, the 30Y is 5.63%, and a fund yielding 2.59% is a bond proxy with a 269bp disadvantage. The second explanation is **DXY 101.93 (+0.95%)**, a third straight weekly gain into a reporting season that starts with PepsiCo — KO, PG, PEP, PM, MDLZ and CL are all translation stories. The third is that the consumer weakness is real enough to hit volumes: a household that rates its own finances as bad trades down inside the grocery store too. I move from defensive-lean to **neutral**. The shelter thesis needed this sector to be bought on bad news, and it was not.
 
 ---
 
@@ -96,7 +96,7 @@ Week path: Mon $82.28, Tue $81.85, Wed $80.60, Thu $80.33, Fri $80.53 (low $80.1
 | 200-Day MA | $82.68 | **Third straight weekly close below** — the break is confirmed |
 | Broken Double Bottom | $81.70–$81.73 | Held Monday and Tuesday, lost Wednesday. Resistance now |
 | Broken Shelf | $81.00 | The February shelf — lost the same day |
-| Current Price | $80.53 | Fri 10/2 close; -1.86% W/W; sixth red week; lowest close since Apr 15 |
+| Current Price | $80.53 | Fri 10/2 close; -1.86% W/W; seventh red week; lowest close since Apr 15 |
 | Week Low | **$80.13** | Friday's low; Thursday's was $80.15. The only nearby support |
 | Deep Support | $74.06 | 52W bottom (adjusted basis) |
 | RSI(14) | 34.8 | Down from 38.3; above the 30.5 of three weeks ago |
@@ -131,13 +131,13 @@ Week path: Mon $82.28, Tue $81.85, Wed $80.60, Thu $80.33, Fri $80.53 (low $80.1
 
 ### This Week's Story: The Shelter Was Sold on the Week It Should Have Been Bought
 
-XLP closed **$80.53, -1.9%** — a sixth straight losing week and its lowest close since mid-April.
+XLP closed **$80.53, -1.9%** — a seventh straight losing week and its lowest close since mid-April.
 
 **The break.** Last week's double bottom at $81.70–$81.73 held on Monday and Tuesday on 14M-share sessions, then failed on Wednesday: a 1.5% drop to $80.60 that also took out the $81.00 shelf beneath it. Thursday and Friday marked time near $80.15. This is the third weekly close below the 200-day moving average.
 
 **No company caused it.** No constituent reported this week. General Mills extended to within cents of a 52-week low (-4.8%) and Kimberly-Clark fell 4.1%, both on problems already known — falling sales at one, a lowered outlook tied to China at the other. But the selling was broad: Walmart -3.4%, Keurig Dr Pepper -4.3%, Hershey -3.7%, Coca-Cola -2.5%. Last week's winners gave back their gains. Seventeen of eighteen names tracked here fell; Campbell's, which made a fresh low the week before, was the one that rose.
 
-**The macro said buy and the tape said sell.** Consumer confidence dropped to its lowest since 2014 on Tuesday. Core PCE cooled on Wednesday. Payrolls printed +29K on Friday and the October rate hike was priced out. That is the environment defensive sectors exist for. What pushed the other way was the long end of the bond market — the 10-year touched 5.34%, the highest since 2002, and closed at 5.28% — and a dollar that rose for a ninth straight week. A fund yielding 2.59% now sits 269 basis points below the risk-free rate.
+**The macro said buy and the tape said sell.** Consumer confidence dropped to its lowest since 2014 on Tuesday. Core PCE cooled on Wednesday. Payrolls printed +29K on Friday and the October rate hike was priced out. That is the environment defensive sectors exist for. What pushed the other way was the long end of the bond market — the 10-year touched 5.34%, the highest since 2002, and closed at 5.28% — and a dollar that rose for a third straight week. A fund yielding 2.59% now sits 269 basis points below the risk-free rate.
 
 **Small relief on costs.** Corn fell 5.8% and wheat 2.9%, and the G-7 agreed to release fuel stocks with diesel first. A double-digit jump in front-month sugar looks like a contract roll and is not treated here as a price spike.
 
@@ -176,7 +176,7 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 | ~~200D break confirms (3rd weekly close below)~~ | **Happened** (was 35%) | Third close below $82.68; double bottom and $81.00 lost | -1.9% this week | Cut to benchmark — done; shelter thesis under review |
 | Breakdown extends below $80.13 | 35% (new) | PEP guide cut; 10Y back above 5.34% | -4–8%, no named support until the low $70s | No new longs; tobacco carry only |
 | Branded-food dividend fear spreads (PEP/HSY) | 35% (was 30%) | PEP Oct 8 guidance language | Value row -5–8% more | Stay out of GIS/CPB/STZ |
-| Dollar rally extends (DXY >102) | 40% (was 25%) | 0.17 away; nine weekly gains | Multinationals -2–3% extra | Underweight KO/MDLZ/CL vs domestic names |
+| Dollar rally extends (DXY >102) | 40% (was 25%) | 0.17 away; three straight weekly gains | Multinationals -2–3% extra | Underweight KO/MDLZ/CL vs domestic names |
 | Failed breakdown: $81.00 reclaimed | 25% (new) | PEP holds its guide; long end eases | +2–3% to the 200D | Buy the reclaim, not before |
 | Relief: 10Y <5.00% | 15% (was 20%) | Second weak labor print pulls the long end down | +3–4%; value row bounces hardest | Add PEP post-print |
 
@@ -203,6 +203,8 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 - **Cross-references:** issues #106, #114, #123 (rate regime and curve), #125 (consumer confidence); no new issue from XLP
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: XLP has fallen seven straight weeks, not six (the first, the week of Aug 21, was -0.1%); the dollar's weekly streak is three, not nine. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid B Midday run)*
 *Next update: Every Saturday*

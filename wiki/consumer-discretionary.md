@@ -2,7 +2,7 @@
 
 > **Sector:** Consumer Discretionary | **ETF:** Consumer Discretionary Select Sector SPDR (XLY) | **Expense Ratio:** 0.08%
 >
-> *"The gap broke and then un-broke. XLY closed below $109.41 four days running — Thursday's $108.81 was the lowest close since July 23 — and then Tesla's delivery beat and a dead October hike put it back at $110.04 on Friday. Seven straight red weeks (-0.5%). The consumer file got worse where it counts: Conference Board confidence fell 6.7 points to 81.9, the lowest since 2014; payrolls added 29K; the 30-year mortgage jumped to 7.28%, its biggest weekly rise in four years; Nike guided fiscal 2027 revenue down high-single digits. Six of the fifteen names here set 52-week closing lows during the week. The ETF is being held up by two stocks that are 42% of it."*
+> *"The gap broke and then un-broke. XLY closed below $109.41 four days running — Thursday's $108.81 was the lowest close since July 23 — and then Tesla's delivery beat and a dead October hike put it back at $110.04 on Friday. Eight straight red weeks (-0.5%). The consumer file got worse where it counts: Conference Board confidence fell 6.7 points to 81.9, the lowest since 2014; payrolls added 29K; the 30-year mortgage jumped to 7.28%, its biggest weekly rise in four years; Nike guided fiscal 2027 revenue down high-single digits. Six of the fifteen names here set 52-week closing lows during the week. The ETF is being held up by two stocks that are 42% of it."*
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $110.04 | $110.56 | **-0.47%** — seventh straight down week |
+| Price | $110.04 | $110.56 | **-0.47%** — eighth straight down week |
 | 52W Range | $105.45 – $124.02 (closing basis, carried) | — | Thursday's $108.81 was the lowest close since Jul 23 |
 | AUM | ~$22.7B | ~$22.7B | yfinance totalAssets |
 | YTD Return | **-7.3%** (price basis) | -6.84% | ~21 pts behind SPY (~+13.7%) |
@@ -93,7 +93,7 @@ All prices are Fri Oct 2 closes; weekly changes vs settled Fri Sep 25 closes. Ta
 | Coil Top | $113.29 | The Sep 22 high; the upper edge of the old range |
 | 20-Day MA | ~$111.10 | Falling; first resistance with Friday's high |
 | Friday High | $110.64 | Where the reclaim stalled |
-| Current Price | $110.04 | Friday close; -0.47% W/W; seventh straight red week |
+| Current Price | $110.04 | Friday close; -0.47% W/W; eighth straight red week |
 | Gap Level | **$109.41** | Held twice in September, **closed below four days this week**, reclaimed Friday. Damaged, not dead |
 | Week Low Close | $108.81 | Thursday — lowest close since Jul 23 |
 | **Week Low** | **$107.99** | Thursday's intraday low. The new line |
@@ -132,7 +132,7 @@ All prices are Fri Oct 2 closes; weekly changes vs settled Fri Sep 25 closes. Ta
 
 ### This Week's Story: The Gap Broke, Tesla Bought It Back, and the Consumer Data Turned
 
-XLY fell **-0.5% to $110.04**, a seventh straight losing week, after closing below its $109.41 support four days in a row and reclaiming it on Friday.
+XLY fell **-0.5% to $110.04**, an eighth straight losing week, after closing below its $109.41 support four days in a row and reclaiming it on Friday.
 
 **Catalyst 1 — Confidence at a 12-Year Low (Tue Sep 29):** The Conference Board index fell 6.7 points to **81.9**, the lowest since 2014 and the third decline in a row. Present conditions and expectations both dropped, respondents cited prices and jobs, and for the first time more of them described their finances as bad than good.
 
@@ -218,6 +218,8 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 unless marked confir
 - Repo cross-checks: Grid A wikis (Oct 3), prior revision of this page (Sep 25)
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: XLY has fallen eight straight weeks, not seven (Friday closes $119.86 on Aug 7 down to $110.04). Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid B Midday run)*
 *Next update: Every Saturday*

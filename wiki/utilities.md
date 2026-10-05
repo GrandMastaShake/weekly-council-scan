@@ -2,7 +2,7 @@
 
 > **Sector:** Utilities | **ETF:** Utilities Select Sector SPDR (XLU) | **Expense Ratio:** 0.08%
 >
-> *"The streak ended on the week the 10-year made its highest print since 2002. XLU closed $39.83 (+0.8%) — the first up week in seven — after setting a new low at $39.03 on Tuesday, on volume that more than doubled: 52.6M shares a day against 24.7M the week before. And the inversion I marked last week reversed. The regulated wires bounced (DTE +2.5%, PPL +2.4%, XEL +2.3%); the scarcity pair did not (CEG -2.2%), because on September 30 FERC accepted PJM's reliability backstop and then suspended it for five months, and natural gas gave back half of last week's jump. The carry gap is -245bp, wider than ever. A sector that stops falling when its own bear case gets worse is telling me something; one week does not tell me what."* — Ophelia
+> *"The streak ended on the week the 10-year made its highest print since 2002. XLU closed $39.83 (+0.8%) — the first up week in four — after setting a new low at $39.03 on Tuesday, on volume that more than doubled: 52.6M shares a day against 24.7M the week before. And the inversion I marked last week reversed. The regulated wires bounced (DTE +2.5%, PPL +2.4%, XEL +2.3%); the scarcity pair did not (CEG -2.2%), because on September 30 FERC accepted PJM's reliability backstop and then suspended it for five months, and natural gas gave back half of last week's jump. The carry gap is -245bp, wider than ever. A sector that stops falling when its own bear case gets worse is telling me something; one week does not tell me what."* — Ophelia
 
 ---
 
@@ -10,7 +10,7 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | **$39.83** | $39.51 | **+0.81%** — first up week after six down |
+| Price | **$39.83** | $39.51 | **+0.81%** — first up week after three down (the fund also rose the week of Sep 4) |
 | 52W Range | $39.03 – $47.06 | $39.13 – $47.06 | New intraday low Tuesday ($39.03); lowest close Monday ($39.25) |
 | AUM | ~$21.8B (carried) | ~$21.8B | Not re-published this pull |
 | YTD Return | **-6.7%** (price basis) | -7.4% | +0.7 pts |
@@ -40,7 +40,7 @@ Week path: Mon $39.25 (low $39.06), Tue $39.71 (low $39.03), Wed $39.44, Thu $39
 | 5 | AEP | American Electric | 5.1% | $119.57 | +1.03% | 3.2% | 17.4 | $142.53 (+19.2%) | ⚡ |
 | 6 | D | Dominion Energy | 4.4% | $61.31 | +1.04% | 4.4% | 16.1 | $71.92 (+17.3%) | ⚡ |
 | 7 | SRE | Sempra | 4.1% | $78.38 | +0.58% | 3.4% | 14.1 | $99.92 (+27.5%) | ⚡ |
-| 8 | ETR | Entergy | 3.7% | not pulled | — | — | — | — | — |
+| 8 | ETR | Entergy | 3.7% | $100.91 | +2.37% | 2.5% | 19.8 | $122.28 (+21.2%) | ⚡ |
 | 9 | XEL | Xcel Energy | 3.6% | $71.40 | **+2.29%** | 3.3% | 15.7 | $90.61 (+26.9%) | ⚡ |
 | 10 | EXC | Exelon | 3.4% | $40.73 | +0.97% | 4.1% | 13.4 | $48.53 (+19.2%) | ⚡ |
 | — | VST | Vistra Corp | (outside top 10) | $140.02 | +1.13% | 0.7% | 13.5 | $212.79 (+52.0%) | ⚠️ |
@@ -55,7 +55,7 @@ Week path: Mon $39.25 (low $39.06), Tue $39.71 (low $39.03), Wed $39.44, Thu $39
 > 🔥 = Catalyst-driven momentum | ⚡ = Neutral / stable | ⚠️ = Volatile / narrative-driven | 🔴 = Breakdown / event risk
 > Prices are Fri Oct 2 closes; weekly changes vs settled Fri Sep 25 closes; yields, forward P/E and targets from the Oct 3 Yahoo pull. **Weights refreshed (Yahoo funds_data, Oct 3): NEE 13.1%, SO 7.5%, DUK 7.1%, CEG 6.7%, AEP 5.1%, D 4.4%, SRE 4.1%, ETR 3.7%, XEL 3.6%, EXC 3.4%.** Constellation is the #4 holding at 6.7%, not ~5%; **Entergy is a top-10 holding this page has never tracked** — it was not in this week's pull and will be added. EIX and PCG are now pulled (EIX was carried without a price last week). Forward P/E and mean target replace the 52-week and trailing-P/E columns.
 
-**The inversion reversed.** Last week: wires down 3–5%, CEG +3.4%. This week: sixteen of seventeen priced names up, **CEG -2.2%** the only loser. The regulated complex bounced from oversold — **DTE +2.5%** (it was RSI 17.8), **PPL +2.4%**, **XEL +2.3%**, NEE/SO/AEP/D/EXC all about +1.0%. CEG fell on the FERC suspension of the PJM backstop (coverage tied the two directly) and on gas giving back 5%. **VST +1.1%** held up better: 2,176 MW of its 2,609 MW Meta agreement comes from plants already operating, while Constellation's ~835 MW Crane unit has to restart before it supplies Microsoft.
+**The inversion reversed.** Last week: wires down 3–5%, CEG +3.4%. This week: seventeen of eighteen priced names up (Entergy, priced after the run, rose 2.4%), **CEG -2.2%** the only loser. The regulated complex bounced from oversold — **DTE +2.5%** (it was RSI 17.8), **PPL +2.4%**, **XEL +2.3%**, NEE/SO/AEP/D/EXC all about +1.0%. CEG fell on the FERC suspension of the PJM backstop (coverage tied the two directly) and on gas giving back 5%. **VST +1.1%** held up better: 2,176 MW of its 2,609 MW Meta agreement comes from plants already operating, while Constellation's ~835 MW Crane unit has to restart before it supplies Microsoft.
 
 **NextEra–Dominion.** A standing item this page has not been carrying: NextEra agreed on **May 18, 2026** to acquire Dominion in a $67B deal. NEE (13.1%) and D (4.4%) are 17.5% of the fund between them and trade partly on deal terms and approvals; lawmakers have raised rate concerns. Nothing new was found on it this week.
 
@@ -96,7 +96,7 @@ Week path: Mon $39.25 (low $39.06), Tue $39.71 (low $39.03), Wed $39.44, Thu $39
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $47.06 | Resistance — $7.23 above |
-| 200-Day MA | $43.79 | Seven weeks below |
+| 200-Day MA | $43.79 | Ten straight weekly closes below (since Jul 31) |
 | 50-Day MA | $42.43 | Falling; below the 200D |
 | 20-Day MA | ~$40.81 | First moving average overhead |
 | Breakdown Shelf | $40.45–$40.66 | Last week's burden-of-proof level — not reclaimed |
@@ -139,7 +139,7 @@ Week path: Mon $39.25 (low $39.06), Tue $39.71 (low $39.03), Wed $39.44, Thu $39
 
 ### Week of September 28 – October 2, 2026: The First Up Week, on the Worst Rate Print
 
-XLU closed **$39.83, +0.8%**, ending a six-week losing streak. It did so in a week when the 10-year Treasury touched 5.34%, its highest since 2002.
+XLU closed **$39.83, +0.8%**, ending a three-week losing streak. It did so in a week when the 10-year Treasury touched 5.34%, its highest since 2002.
 
 **A low, and a reversal.** Monday closed at $39.25, a new closing low. Tuesday traded down to $39.03 and reversed to finish at $39.71. From there the fund did not revisit that low, on volume that climbed from 49M shares Tuesday to 64M Friday — more than twice the prior week's pace. Friday's high of $40.21 failed at the round number.
 
@@ -228,6 +228,8 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 unless noted; EPS is
 - **Cross-references: #106 (10Y >5.00%), #108 (XLU 52W low), #114, #115, #123. New issue opened this run for the wildfire-liability ruling (EIX, Sep 22) with the FERC/PJM suspension noted alongside. Other triggers not met: XLU +0.81% (±5%), no utility earnings miss, no new PPA; the 10Y above 5% is an existing file.**
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: XLU's up week was its first in four, not seven: it also rose 0.8% the week of Sep 4, so the losing streak was three weeks. It has closed below its 200-day for ten straight weeks, not seven. Entergy is now priced. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid C run)*
 *Next update: Every Saturday 11:29 AM ET*

@@ -42,7 +42,7 @@ Week path: Mon $62.10, Tue $61.54 (low $60.95), Wed $61.50, Thu $62.70, Fri $62.
 | 7 | SLB | SLB | 4.9% | $48.74 | **-5.43%** | 2.4% | 15.2 | $62.48 (+28.2%) | 🔴 |
 | 8 | EOG | EOG Resources | 4.1% | $141.38 | +0.73% | 2.9% | 9.3 | $163.64 (+15.7%) | ⚡ |
 | 9 | WMB | Williams Cos | 3.8% | $70.54 | +1.85% | 3.0% | 26.7 | $85.46 (+21.1%) | ⚡ |
-| 10 | KMI | Kinder Morgan | 3.7% | not pulled | — | — | — | — | — |
+| 10 | KMI | Kinder Morgan | 3.7% | $31.07 | +1.04% | 3.8% | 20.1 | $36.09 (+16.2%) | ⚡ |
 | — | OXY | Occidental Petroleum | (outside top 10) | $58.08 | +2.15% | 1.9% | 14.5 | $68.36 (+17.7%) | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown
@@ -102,11 +102,11 @@ Week path: Mon $62.10, Tue $61.54 (low $60.95), Wed $61.50, Thu $62.70, Fri $62.
 | **G-7 Reserve Release** | **Oct 2: 100M barrels of crude and products over four months via the IEA; "frontloaded substantial diesel release within the first 20 days"**; followed U.S. pressure on Germany and France | A policy response to product prices, not to crude. Bearish for cracks if it works; the statement also called for restored navigation through Hormuz |
 | Products / Crack | ULSD crack reported **above $100/bbl** — a record, ~5x normal; refinery strikes and Russia's export ban cited alongside Hormuz | The driver of the refiners' week and of 15.8% of the fund. Figure is from press coverage, not pulled first-hand |
 | Iran / Hormuz | No ceasefire; G-7 condemned Iran's disruption; reports of some tanker transits resuming and of progress in U.S.–Iran talks (undated in the coverage found) | The verification gap from last week is still open. Not materially re-sourced this week |
-| Saudi / OPEC+ | **OPEC+ meets Sun Oct 4** — expected to hold November targets; capacity review delayed (Oct 2); core producers ~5 mb/d below pre-war; Saudi ~6.24 mb/d (August, lowest since 1990) | The decision lands after this update. A surprise increase would be a trigger for next week's page |
+| Saudi / OPEC+ | **OPEC+ met Sun Oct 4 and held November targets at September's level** (second straight month without an increase; the seven core members review again Nov 1); capacity review delayed (Oct 2); core producers ~5 mb/d below pre-war; Saudi ~6.24 mb/d (August, lowest since 1990) | Held, as expected: no policy change, so no trigger from this desk. Outcome added Oct 4, after the Saturday update |
 | U.S. Inventories / SPR | Carried: SPR ~290M (1983 lows); Cushing near tank bottoms | Not re-sourced. The U.S. share of the G-7 release, if any, comes out of a depleted reserve |
 | Natural Gas | **$3.04 (-5.0% W/W)** | Half of last week's AI-power spike reversed; CRK -2.6% |
 | 10Y Treasury | **5.28%** close; 5.34% intraday Thu (highest since 2002) | Refiners at 9–10x forward and E&Ps at 9–14x are the least rate-sensitive equities in the market |
-| Fed / Dollar | October hike odds ~17%; DXY **101.93** (+0.95%; #115) | A ninth week of dollar strength has not hurt dollar-priced crude sellers |
+| Fed / Dollar | October hike odds ~17%; DXY **101.93** (+0.95%; #115) | A third straight weekly gain for the dollar has not hurt dollar-priced crude sellers |
 | Demand | ISM manufacturing 54.5; payrolls +29K; Conference Board confidence 81.9; U.S. auto SAAR ~16.0M | Industrial demand firm, consumer softening — a demand question that has not reached this sector's prices |
 
 **Ophelia Verdict:** Hold, add nothing — unchanged — but the reason has shifted. Last week the risk was a ceasefire taking $8 off crude in a session. This week the fund proved it can rise while crude falls, because its marginal driver has become the product crack and its second-largest block is now the refiners. That is a different risk profile from the one I have been describing: less exposed to the barrel, more exposed to policy aimed at pump and diesel prices. A G-7 that releases 100M barrels with diesel first is a government telling you which margin it intends to compress. I do not think 0.8 mb/d for four months closes a gap created by shipping, strikes and an export ban, and the refiners' week says the market does not think so either. But I would not add to names trading 3–10% above their analyst targets into a policy response and a print. The structural file — SPR at 1983 lows, Saudi at 1990s output — is carried, not re-verified. OPEC+ is tomorrow; this desk opens no issue today because none of the triggers is met, and will if Sunday changes policy.
@@ -142,7 +142,7 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 | Company / Event | Ticker | Date | EPS Est. | What to Watch |
 |---|---|---|---|---|
 | **G-7 reserve release** | — | **Oct 2 — ANNOUNCED ✔** | — | 100M barrels over four months; diesel front-loaded in the first 20 days |
-| **OPEC+ meeting** | — | **Sun Oct 4** | — | Expected to hold November targets; any response to the G-7 release or to Hormuz |
+| **OPEC+ meeting** | — | **Sun Oct 4 — HELD ✔** | — | November targets kept at September's level; the seven core members meet again Nov 1 |
 | **Aramco November allocation letters** | — | October (expected) | — | Reinstated or cancelled again (issue #109) |
 | **Weekly EIA** | — | Wednesdays | — | Distillate stocks — the number the G-7 release is trying to move |
 | **September CPI** | — | Mid-October | — | Energy's contribution; the long end |
@@ -204,6 +204,8 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 - **Cross-references: #116 (last week's WTI >$5 move and de-escalation window), #109 (Aramco October cancellation), #106/#114/#123 (rate regime), #115 (DXY). No new issue this run: XLE +1.26% (±5%), WTI -$1.30 (±$5), no OPEC+ policy change (meeting is Oct 4), and the G-7 release, while significant, is not one of this page's enumerated triggers — it is recorded here and in cron.log.**
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: OPEC+ met on Sunday Oct 4 and held November targets steady, so no trigger; Kinder Morgan is now priced (eight of the fund's top ten rose); the dollar's weekly streak is three, not nine. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid C run)*
 *Next update: Every Saturday 10:19 AM ET*

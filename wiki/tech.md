@@ -10,7 +10,7 @@
 
 | Metric | Current | 1W Ago (Sep 25) | Change |
 |---|---|---|---|
-| Price | $199.81 | $196.27 (settled) | **+1.8% W/W** — fourth straight weekly gain, new closing high |
+| Price | $199.81 | $196.27 (settled) | **+1.8% W/W** — sixth straight weekly gain, new closing high |
 | 52W Range | $127.20 – $201.39 | $126.68 – $198.73 | June 2 peak ($198.73) cleared Friday; intraday high $201.39 |
 | AUM | ~$121.4B | ~$121.4B | Yahoo figure unchanged this pull |
 | YTD Return | +39.1% (price basis*) | +36.7% | +2.4 pts |
@@ -25,7 +25,7 @@
 
 **Marky Tape Read:** Two flat days, then three up on rising volume. **Monday** $194.53 and **Tuesday** $194.50 — the tape sat on the $194.50 shelf while AAPL lost its $333 line (-2.7% Tuesday on restructuring reports and a $5.7B patent verdict) and the October hike sat near 70%. **Wednesday** $195.75 on 9.1M — core PCE printed 3.0% against 3.3% expected, and Micron reported after the close. **Thursday** $197.81 on 10.9M — the 10Y touched 5.34% intraday, the highest since 2002, and the fund closed up 1% regardless; equipment led. **Friday** — payrolls +29K, a gap to $201.16, a high of $201.39, and a close at **$199.81**: a new all-time closing high that finished *below its own open* and a quarter under the round number. NVDA printed a record $237.88 intraday. RSI 69.0. I read Friday as a breakout with an asterisk — the level is cleared, the gap was sold.
 
-**Ophelia Macro Read:** My 5.25% line broke in five sessions. The 10Y closed **5.28% Friday** after touching **5.34% Thursday** (highest since 2002); the 30Y is **5.63%** (from ~5.50%). What changed is the short end: core PCE **3.0%** (exp 3.3%, July 3.3%), headline 3.4% (exp 3.7%), then payrolls **+29K** (exp ~84–90K) with unemployment up to **4.2%** — and FedWatch odds of an October +25bp fell from roughly **70% Monday to ~17% Friday**. December is still priced above 75%. So the Fed got softer and the long end did not: that is term premium — fiscal, oil, and AI capital demand — not policy. ISM manufacturing held 54.5 but **prices paid jumped to 77.9** (+6.8 pts), the highest since the start of the Iran war. **WTI $91.11 (-1.4%)**, Brent $102.25; the G-7 agreed Friday to release 100M barrels of crude and diesel over four months, front-loaded on diesel. **DXY 101.93 (+0.95%)**, a ninth straight week of dollar strength; USD/JPY 157.8; VIX 15.31; nat gas $3.04 (-5.0%); copper $6.49 (-3.0%). Next gates: CPI mid-October, bank earnings Oct 13, **LRCX Oct 21 / INTC Oct 22**, FOMC Oct 27–28 with MSFT that evening.
+**Ophelia Macro Read:** My 5.25% line broke in five sessions. The 10Y closed **5.28% Friday** after touching **5.34% Thursday** (highest since 2002); the 30Y is **5.63%** (from ~5.50%). What changed is the short end: core PCE **3.0%** (exp 3.3%, July 3.3%), headline 3.4% (exp 3.7%), then payrolls **+29K** (exp ~84–90K) with unemployment up to **4.2%** — and FedWatch odds of an October +25bp fell from roughly **70% Monday to ~17% Friday**. December is still priced above 75%. So the Fed got softer and the long end did not: that is term premium — fiscal, oil, and AI capital demand — not policy. ISM manufacturing held 54.5 but **prices paid jumped to 77.9** (+6.8 pts), the highest since the start of the Iran war. **WTI $91.11 (-1.4%)**, Brent $102.25; the G-7 agreed Friday to release 100M barrels of crude and diesel over four months, front-loaded on diesel. **DXY 101.93 (+0.95%)**, a third straight weekly gain for the dollar; USD/JPY 157.8; VIX 15.31; nat gas $3.04 (-5.0%); copper $6.49 (-3.0%). Next gates: CPI mid-October, bank earnings Oct 13, **LRCX Oct 21 / INTC Oct 22**, FOMC Oct 27–28 with MSFT that evening.
 
 ---
 
@@ -98,7 +98,7 @@
 | Inflation | Aug core PCE **3.0% Y/Y** (exp 3.3%, prior 3.3%); headline 3.4% (exp 3.7%); ISM prices paid **77.9** (+6.8) | The consumer gauge cooled, the factory-gate gauge got hotter. PCE gave the Fed room; ISM prices says the pipeline has not. |
 | Growth Pulse | Sept payrolls **+29K** (exp ~84–90K), unemployment **4.2%**; ISM manufacturing **54.5** (ninth month of expansion) | Labor is slowing while factories expand — consistent with capex-led, low-hiring growth. Bad-news-is-good-news worked Friday; a second weak print will not be read the same way. |
 | WTI Crude | **$91.11 (-1.4% W/W)**; Brent $102.25 | G-7 to release 100M barrels of crude and diesel over four months, diesel front-loaded in the first 20 days. Hormuz still constricted — the release treats the symptom. |
-| DXY | **101.93 (+0.95% W/W)**; 52W high 102.10; USD/JPY 157.8 | Ninth straight week of dollar strength, within 0.2 of the year's high. Translation headwind for the Q3 prints from MSFT, AAPL, and the multinationals starts Oct 28. |
+| DXY | **101.93 (+0.95% W/W)**; 52W high 102.10; USD/JPY 157.8 | Third straight weekly gain for the dollar, within 0.2 of the 52-week closing high (102.10, set Thursday). Translation headwind for the Q3 prints from MSFT, AAPL, and the multinationals starts Oct 28. |
 | AI Power/Commodities | Nat gas **$3.04 (-5.0%)**; copper **$6.49 (-3.0%)**; gold $4,162 (-3.7%) | The commodity leg of the "AI inflation floor" loosened this week while ISM prices tightened — a split worth watching. |
 | Hyperscaler Capex | No new guides; **MU capex ~$11.5B FQ1, ~$25B H1 FY27**, second half higher, construction growing faster than equipment | Memory is now a capex story in its own right. Hyperscaler guides land in late October (MSFT Oct 28 est.). |
 | Memory Cycle | **MU FQ4: rev $54.23B (cons $50.45B), adj EPS $33.42 (cons $31.16), GM 87%; FQ1 guide ~$61.5B / $38.15** | Beat-and-raise delivered; stock -0.7% on the week. >75% of 2027 output committed. The cycle is intact; the stock has stopped paying for confirmation. |
@@ -115,7 +115,7 @@
 
 ### This Week's Story: A Record Close on a Jobs Miss, and Micron Proved "Priced In"
 
-XLK gained **+1.8% to $199.81**, its fourth straight weekly gain and a new all-time closing high, clearing the June peak ($198.73) that had capped it for four months.
+XLK gained **+1.8% to $199.81**, its sixth straight weekly gain and a new all-time closing high, clearing the June peak ($198.73) that had capped it for four months.
 
 **Catalyst 1 — Micron's Print (Wed Sep 30):** The fall's binary gate opened and nothing happened. Revenue **$54.23B** (+31% Q/Q, +379% Y/Y; consensus $50.45B), adjusted EPS **$33.42** (consensus $31.16), gross margin 87%, and a fiscal Q1 guide of ~**$61.5B / $38.15**. Fiscal 2026 revenue was $133.2B. The stock was flat into the print, rose about 3% Thursday, gave back 2% Friday, and finished the week -0.7%. Investors weighed the numbers against a capex plan of ~$11.5B for FQ1 and ~$25B for the first half of FY27, with construction growing faster than equipment.
 
@@ -203,6 +203,8 @@ XLK gained **+1.8% to $199.81**, its fourth straight weekly gain and a new all-t
 - Repo cross-checks: issue #114 (China DCS duties, 10Y regime, ORCL force majeure), prior revision of this page (Sep 25)
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: the dollar's weekly streak is three, not nine (DXY 99.12, 100.22, 100.97, 101.93); XLK has risen six straight weeks, not four. CSCO's +5.6% includes Friday's dividend; the price change was +5.2%. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: **2026-10-03** (Saturday morning run; covering week ended Fri Oct 2, 2026)*
 *Next update: Every Saturday 10:00 AM ET*

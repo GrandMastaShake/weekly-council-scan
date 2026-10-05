@@ -10,7 +10,7 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | **$53.49** | $54.84 (settled close) | **-2.5%** — third straight weekly loss |
+| Price | **$53.49** | $54.84 (settled close) | **-2.5%** — fourth straight weekly loss |
 | 52W Range | $47.34 – $58.39 | $47.34 – $58.39 | Price now -8.4% below the high |
 | AUM | ~$54.6B (yfinance totalAssets) | ~$54.6B | — |
 | YTD Return | **-1.7%** (price basis; -1.1% with dividends) | +0.7% | Gave back the rest of the year's gain |
@@ -25,7 +25,7 @@ Week path: Mon $54.19, Tue $54.01, Wed $53.40, Thu $53.46 (low $52.81), Fri $53.
 
 **Marky Tape Read:** Three down days on rising volume, then two days of nothing. **Monday** -1.2% to $54.19 — the $54.46 shelf I called the line broke on the first session. **Tuesday** $54.01 on 53.1M and **Wednesday** $53.40 on 55.8M — the heaviest back-to-back volume since the September flush, and Wednesday was the day PCE came in cool. A sector that sells on the news it was waiting for is being distributed. **Thursday** — money centers led lower (C -4%, BAC -3% intraday) as the 10Y touched 5.34%; the fund traded to **$52.81**, fifty cents through the 200D, and closed back at $53.46. **Friday** +0.06% on 30.3M — payrolls killed the hike, the Nasdaq made a record, and financials did not participate. RSI 27.5, and the lowest close since June 30. Price is $3.16 under the 50D ($56.65) and $0.17 over the 200D ($53.32). I said I would buy the 200D; I have a first piece on at Thursday's reclaim, small, with the stop under $52.81.
 
-**Ophelia Macro Read:** The curve finally did what bank bulls asked for and the banks fell anyway — that is the information. Front end: core PCE **3.0%** (exp 3.3%), payrolls **+29K** (exp ~84–90K), unemployment **4.2%**, October hike odds from ~70% to ~17%; the 2Y closed **4.78% Thursday**, down from 4.905% a week ago. Long end: 10Y **5.28%** (5.34% intraday Thursday, highest since 2002), 30Y **5.63%**. Result: **2s10s ~+45bp, from ~+25bp** — a 20bp steepening in five sessions, and 10s–3M near +1.28%. In the wild card last week I wrote that 10s3M above +1.00% with XLF under $54 is the combination to fear. Both conditions are now met. A steepener driven by a falling front end on weak jobs is the late-cycle kind: it helps NIM on paper and it arrives with the credit cycle turning. I did not re-source HY spreads this week and will not quote them from memory; that is the one confirmation still missing. DXY 101.93 (+0.95%). WTI $91.11.
+**Ophelia Macro Read:** The curve finally did what bank bulls asked for and the banks fell anyway — that is the information. Front end: core PCE **3.0%** (exp 3.3%), payrolls **+29K** (exp ~84–90K), unemployment **4.2%**, October hike odds from ~70% to ~17%; the 2Y closed **4.78% Thursday** (4.83% Friday), down from 4.87% the Thursday before. Long end: 10Y **5.28%** (5.34% intraday Thursday, highest since 2002), 30Y **5.63%**. Result: **2s10s ~+45bp, from +36bp last Friday and +26bp on Sep 23** — 9bp Friday to Friday and about 20bp in seven sessions, and 10s–3M near +1.28%. In the wild card last week I wrote that 10s3M above +1.00% with XLF under $54 is the combination to fear. Both conditions are now met. A steepener driven by a falling front end on weak jobs is the late-cycle kind: it helps NIM on paper and it arrives with the credit cycle turning. I did not re-source HY spreads this week and will not quote them from memory; that is the one confirmation still missing. DXY 101.93 (+0.95%). WTI $91.11.
 
 ---
 
@@ -106,14 +106,14 @@ Week path: Mon $54.19, Tue $54.01, Wed $53.40, Thu $53.46 (low $52.81), Fri $53.
 | Factor | Level | Implication for XLF |
 |---|---|---|
 | Fed Funds Rate | **3.75–4.00%** (Sep 16 hike) | October hike odds ~70% Monday → **~17% Friday**; December still >75%. The serial-hiker pricing is paused, not cancelled. FOMC Oct 27–28. |
-| 2Y Treasury | **4.78%** (Thu Oct 1 close), from 4.905% a week earlier | Deposit-cost pressure eased for the first time in a month. The tape did not reward it. |
+| 2Y Treasury | **4.83%** Fri Oct 2 (4.78% Thu Oct 1; week high 4.92% Mon), from 4.81% a week earlier | Deposit-cost pressure eased from Monday's high, though the 2Y ended the week 2bp higher. The tape did not reward the relief. |
 | 10Y Treasury | **5.28% Fri close**; **5.34% intraday Thu** (highest since 2002); 30Y **5.63%** | Securities-book marks get worse at every new high. Loan demand at these levels is the Q4 question. |
-| **2Y-10Y Spread** | **~+45bp** (from ~+25bp); 10s–3M ~**+1.28%** | **Sharp steepening — about 20bp in a week** — driven by the front end falling on weak data while the long end rose. Positive for NIM in arithmetic; historically the shape that shows up as the credit cycle turns. Trigger issue opened. |
+| **2Y-10Y Spread** | **~+45bp** (from +36bp a week earlier and +26bp on Sep 23); 10s–3M ~**+1.28%** | **Sharp steepening — 9bp Friday to Friday, about 20bp from the Sep 23 close** — driven by the front end falling on weak data while the long end rose. Positive for NIM in arithmetic; historically the shape that shows up as the credit cycle turns. Trigger issue opened. |
 | Inflation | Aug core PCE **3.0%** (exp 3.3%); ISM prices paid **77.9** | PCE bought the Fed a pause. ISM prices says input costs are still accelerating. |
 | Growth / Labor | Payrolls **+29K** (exp ~84–90K); unemployment **4.2%** (from 4.1%); ISM manufacturing 54.5 | The first hard datapoint that supports the credit scare instead of refuting it. One print; the trend needs a second. |
-| Credit | HY/IG spreads **not re-sourced this week** | Last week: HY ~273bp, IG ~77bp. The 300bp tripwire cannot be called from stale data — check before acting. |
+| Credit | **HY OAS 324bp, IG OAS 86bp (Thu Oct 1; FRED, pulled Oct 4 after this page was written)** | **The 300bp tripwire is crossed.** HY OAS closed above 300bp on Sep 28 for the first time since April 7 and widened eight sessions running from 266bp on Sep 21. CCC spreads are at a 52-week high (1,215bp). HY–IG is 238bp against Canary's 250bp trigger. Friday's prints post Monday. |
 | Oil → Growth Signal | WTI **$91.11** (-1.4% W/W); Brent $102.25; G-7 100M-barrel release | Under $100 WTI with financials at new lows is one leg of the hard-landing signature. |
-| DXY | **101.93** (+0.95% W/W), near the 52W high of 102.10 | Ninth week of dollar strength tightens the global credit channel. |
+| DXY | **101.93** (+0.95% W/W), near the 52W high of 102.10 | Third straight weekly gain for the dollar tightens the global credit channel. |
 | Regulatory — Capital | Basel III re-proposal (Mar 19, 2026; comments closed Jun 18; agencies expect overall capital to "modestly decrease"); final rule still expected ~Q4; no new action this week | The capital tailwind is intact and unpriced. It does not matter until the credit question is answered. |
 | Regulatory — Stablecoins | GENIUS Act comment period open, due ~Nov 23 | Unchanged. |
 | Company-specific | BAC: $39M Merrill cash-sweep settlement; JPMorgan cut its BAC price target (Oct 2); BAC's earlier Q3 investment-banking guide was weak | BAC is the name where the sector's worries are also company facts. |
@@ -130,13 +130,13 @@ Week path: Mon $54.19, Tue $54.01, Wed $53.40, Thu $53.46 (low $52.81), Fri $53.
 
 ### This Week's Story: Good News for the Curve, Bad Week for the Banks
 
-XLF fell **-2.5% to $53.49**, its third straight weekly loss, its lowest close since June 30, and tested its 200-day moving average.
+XLF fell **-2.5% to $53.49**, its fourth straight weekly loss, its lowest close since June 30, and tested its 200-day moving average.
 
 **Catalyst 1 — The Shelf Broke (Sep 28–30):** Last week's base at $54.46 failed on Monday. Tuesday (53.1M shares) and Wednesday (55.8M) were the heaviest consecutive sessions since the September flush — and Wednesday was the day core PCE printed 3.0% against 3.3% expected. The sector sold a number it had been waiting for.
 
 **Catalyst 2 — The Long End (Oct 1):** The 10-year touched **5.34%**, the highest since 2002, and the 30-year reached 5.63%. Money centers led the decline: Citigroup -4% and Bank of America -3% intraday. Coverage framed it as a month of sharply higher rates threatening borrower appetite, dealmaking and trading. XLF traded to $52.81, through its 200D ($53.32), and closed back above it.
 
-**Catalyst 3 — Payrolls (Oct 2):** September jobs came in at **+29K** against ~84–90K expected; unemployment rose to 4.2%. October hike odds collapsed from ~70% to ~17%. The 2s10s spread widened to roughly +45bp from +25bp a week earlier. Tech made a record. XLF rose 0.06%.
+**Catalyst 3 — Payrolls (Oct 2):** September jobs came in at **+29K** against ~84–90K expected; unemployment rose to 4.2%. October hike odds collapsed from ~70% to ~17%. The 2s10s spread widened to roughly +45bp, from +36bp a week earlier and +26bp on Sep 23. Tech made a record. XLF rose 0.06%.
 
 **Catalyst 4 — Bank of America:** BAC was the worst large bank at **-5.2%** (RSI 22.3), below its 200-day. It carries a weak Q3 investment-banking guide, a $39M Merrill cash-sweep settlement, and a JPMorgan target cut on Friday.
 
@@ -196,7 +196,7 @@ Q3 2026 bank earnings start in six sessions. Dates are Yahoo Finance calendar da
 - **Reserve builds accelerate** across JPM/WFC/C with commentary tying it to labor weakness → $52.81 breaks → the 200D fails → May–June base at $50.42–$51.58
 - A second weak payrolls print in early November turns +29K from an outlier into a trend → payments (V, MA, AXP) join the banks below their 200-day
 - The long end keeps rising with the Fed on hold (30Y through 5.75%) → loan demand and dealmaking stall, AOCI losses grow, GS/MS guide down
-- HY spreads through 300bp (unverified this week) — the credit confirmation the tape has been front-running
+- HY spreads through 300bp (**confirmed after the run: 324bp on Oct 1, above 300bp since Sep 28**) — the credit confirmation the tape has been front-running
 - A CRE or private-credit mark becomes a number in a Q3 release rather than a warning in a speech
 
 ### ⚠️ The Wild Card
@@ -230,6 +230,8 @@ Q3 2026 bank earnings start in six sessions. Dates are Yahoo Finance calendar da
 - Repo cross-checks: wiki/tech.md (Oct 3 update), prior revision of this page (Sep 25)
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: the dollar's weekly streak is three, not nine; XLF has fallen four straight weeks, not three (it was flat the week of Sep 4); the 2-year closed 4.87% on Thu Sep 24, 4.78% on Thu Oct 1 and 4.83% on Fri Oct 2, so 2s10s widened 9bp Friday to Friday (36 to 45) and about 20bp from the Sep 23 close (26); the credit row is no longer blind (HY OAS 324bp on Oct 1). One caution on the 200-day: this page's $53.32 is computed on dividend-adjusted closes. On raw price closes the 200-day is $53.71 and XLF has closed below it since Wednesday. Prose that says the curve steepened "20bp in a week" should be read against those bases. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: **2026-10-03** (Saturday morning run; covering week ended Fri Oct 2, 2026)*
 *Next update: Every Saturday, 10:29 AM ET*

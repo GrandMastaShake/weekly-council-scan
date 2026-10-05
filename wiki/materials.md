@@ -25,7 +25,7 @@ Week path: Mon $49.47, Tue $49.10, Wed $48.70, Thu $48.54 (low $47.81), Fri $48.
 
 **Marky Tape Read:** The map said: any daily close under $49.57 and $47.00 gets tested within days. **Monday** closed $49.47. **Tuesday** $49.10, **Wednesday** $48.70 — three lower closes, no bounce attempt. **Thursday** traded to **$47.81**, eighty-one cents from the target, and closed $48.54 on 25.6M shares; I discount that volume because Corteva's separation forced index funds to trade that morning. **Friday** +0.7% to $48.86 with a $49.36 high — it could not get back to the level it broke. RSI 35.2, down from 37.9; not at the 25.5 that produced the last bounce. So the bear case confirmed and stopped short of its target by under a dollar. I hold the defensive stance with **$47.81** as the level that matters now: below it, $47.00 and then nothing I can name until the mid-$40s. Above, **$49.57** is resistance — the old floor — then the 20D ($50.10) and the 200D ($50.24).
 
-**Ophelia Macro Read:** Three rails, three results. **DXY 101.93 (+0.95% W/W)**: second weekly close above 101, ninth straight weekly gain, the 52-week high is 102.10 — restriction ON, unchanged. **Copper ~$6.49 (-3.0%)**: my $6.60 hold rail broke. Last week I called copper's two-week rise into a strong dollar a decoupling and wrote that if it failed "the week ISM prints," the green weeks were distribution. It failed the week ISM printed — in a base-metals selloff with Shanghai closed for Golden Week (Oct 1–7), so the thinnest possible tape; Shanghai reopens Oct 8 and that is the real test. **ISM 54.5**: over 52, the reading I said would make the 200D break "a tax." It printed and the sector fell anyway, with prices paid at 77.9. Gold **$4,162 (-3.7%)** and silver **$59.98 (-6.6%)** were sold on the dollar and on a 10Y that touched 5.34%. WTI $91.11 (-1.4%). The Fed got softer (October hike ~17%) and the dollar did not — which tells me the dollar bid is about the long end and relative growth, not the next meeting. China: on holiday, no stimulus. Rails now: **DXY 101 (ON) / 99 re-opens; copper $6.60 (lost — needs to be reclaimed); 10Y 5.34%; ISM cleared.**
+**Ophelia Macro Read:** Three rails, three results. **DXY 101.93 (+0.95% W/W)**: second weekly close above 101, third straight weekly gain, the 52-week closing high is 102.10 (set Thursday) — restriction ON, unchanged. **Copper ~$6.49 (-3.0%)**: my $6.60 hold rail broke. Last week I called copper's two-week rise into a strong dollar a decoupling and wrote that if it failed "the week ISM prints," the green weeks were distribution. It failed the week ISM printed — in a base-metals selloff with Shanghai closed for Golden Week (Oct 1–7), so the thinnest possible tape; Shanghai reopens Oct 8 and that is the real test. **ISM 54.5**: over 52, the reading I said would make the 200D break "a tax." It printed and the sector fell anyway, with prices paid at 77.9. Gold **$4,162 (-3.7%)** and silver **$59.98 (-6.6%)** were sold on the dollar and on a 10Y that touched 5.34%. WTI $91.11 (-1.4%). The Fed got softer (October hike ~17%) and the dollar did not — which tells me the dollar bid is about the long end and relative growth, not the next meeting. China: on holiday, no stimulus. Rails now: **DXY 101 (ON) / 99 re-opens; copper $6.60 (lost — needs to be reclaimed); 10Y 5.34%; ISM cleared.**
 
 ---
 
@@ -108,7 +108,7 @@ Week path: Mon $49.47, Tue $49.10, Wed $48.70, Thu $48.54 (low $47.81), Fri $48.
 
 | Factor | Level | Implication for XLB |
 |---|---|---|
-| **DXY** | **101.93 Friday close; +0.95% W/W; 52W high 102.10** | **Restriction on commodity longs stays ON (issue #115).** Second weekly close above 101, ninth straight weekly gain. Re-opens below 99.00 |
+| **DXY** | **101.93 Friday close; +0.95% W/W; 52W high 102.10** | **Restriction on commodity longs stays ON (issue #115).** Second weekly close above 101, third straight weekly gain. Re-opens below 99.00 |
 | 10Y Treasury | **5.28% Fri**; 5.34% intraday Thu (highest since 2002); 30Y 5.63% | The construction-materials ceiling moved higher. Rate regime tracked in #106/#114/#123 |
 | Copper | **~$6.49/lb, -3.0% W/W** | **The $6.60 rail broke; the two-week decoupling ended.** Base-metals selloff with Shanghai closed for Golden Week (Oct 1–7). Reopen Oct 8 is the test |
 | Gold / Silver | **$4,162 (-3.7%)** / **$59.98 (-6.6%)** | Sold on the dollar and yields. Neither move reaches the ±10% trigger. NEM -4.8% |
@@ -135,7 +135,7 @@ XLB fell **-1.9% to $48.86**, a third straight weekly close below its 200-day av
 
 **The break extended.** Last week's floor at $49.57 failed on Monday's close. The fund made three lower closes into Wednesday and an intraday low of $47.81 on Thursday — within a dollar of the $47.00 target this page set for a confirmed break — before a partial recovery.
 
-**The dollar kept going.** DXY rose 0.95% to 101.93, a ninth consecutive weekly gain and a second weekly close above the 101 line that governs this board's restriction on commodity longs. It did so in a week when the odds of an October rate hike fell from about 70% to about 17%.
+**The dollar kept going.** DXY rose 0.95% to 101.93, a third consecutive weekly gain and a second weekly close above the 101 line that governs this board's restriction on commodity longs. It did so in a week when the odds of an October rate hike fell from about 70% to about 17%.
 
 **Metals paid.** Gold fell 3.7% to $4,162, silver 6.6% to $59.98, and copper 3.0% to about $6.49 — ending a two-week stretch in which copper had risen against the dollar, and breaking the $6.60 level this page was watching. Shanghai was closed for Golden Week from Oct 1. Newmont lost 4.8% and Albemarle 4.7%. Freeport was the exception: +4.0% on Friday, -0.4% on the week.
 
@@ -194,7 +194,7 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 - Gold breaks $4,000 → NEM, now 7.8% of the fund, becomes a meaningful drag on the index
 
 ### ⚠️ The Wild Card
-**The stock and the metal disagree.** Copper fell 3% and lost a level this desk called a rail; Freeport rose 4% on Friday and closed the week above its own line. One of them is wrong. The case for the stock: the decline came in the thinnest week of the year for the metal, with the largest buyer on holiday, and three mine disruptions are unchanged. The case for the metal: the dollar has risen nine straight weeks with the year's peak in reach, and FCX trades within 3% of its mean target, so there is no cushion in the estimates. The answer arrives on a known date — Shanghai, October 8. A second, quieter wild card sits in this page's own plumbing: after the Corteva separation, any screen, average or RSI built on unadjusted CTVA history is wrong until the data providers back-adjust it, and the fund's holdings list is in flux.
+**The stock and the metal disagree.** Copper fell 3% and lost a level this desk called a rail; Freeport rose 4% on Friday and closed the week above its own line. One of them is wrong. The case for the stock: the decline came in the thinnest week of the year for the metal, with the largest buyer on holiday, and three mine disruptions are unchanged. The case for the metal: the dollar has risen three straight weeks with the year's peak in reach, and FCX trades within 3% of its mean target, so there is no cushion in the estimates. The answer arrives on a known date — Shanghai, October 8. A second, quieter wild card sits in this page's own plumbing: after the Corteva separation, any screen, average or RSI built on unadjusted CTVA history is wrong until the data providers back-adjust it, and the fund's holdings list is in flux.
 
 ---
 
@@ -221,6 +221,8 @@ Company dates are Yahoo Finance calendar dates pulled Oct 3 (not all company-con
 - **Cross-references: #115 (DXY above 101 — restriction ON, still in force), #106/#114/#123 (rate regime and curve), #99 (refinancing wall — Mercer). Materials triggers NOT newly met: XLB -1.89% (±5%); gold -3.7%, silver -6.6%, copper -3.0% (±10%); no China stimulus; DXY's break above 101 was last week's event (#115) and it has not broken 99. No new issue from this desk.**
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: the dollar's weekly streak is three, not nine (the 52-week closing high of 102.10 was set Thursday; the intraday high was 102.21). On copper, this page's ~$6.49 is the expiring October contract; macro/facts.json carries the December contract at $6.549. Both fell about 3% on the week (-3.0% and -3.2%) and both are under $6.60. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid B Midday run)*
 *Next update: Every Saturday*

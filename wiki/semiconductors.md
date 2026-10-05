@@ -16,7 +16,7 @@
 | 52W Range | $315.05 – $671.83 | — | — |
 | AUM | ~$67.8B (yfinance total assets, unchanged print) | ~$67.8B | — |
 | YTD Return | **+75.1%** | +68.4% | — |
-| 1Y Return | ~+89.0% | ~+88.9% | — |
+| 1Y Return | ~+87.0% (total return from the Oct 2, 2025 close; first printed as ~+89.0%) | ~+88.9% | — |
 | P/E Ratio | ~43.1x (mega-cap blend) | ~41.4x | — |
 | Dividend Yield | ~0.20% | ~0.20% | — |
 | Beta | ~2.1 (3Y, yfinance) | ~2.1 | — |
@@ -105,7 +105,7 @@
 
 **Marky Setup Assessment:** Two weeks ago this was a recovered range. Last week it was a breakout with a volume asterisk. This week it is a **confirmed breakout that took out its first target**: a scare on Monday that made a higher low, a close through the $609.66 double top on Thursday, and a gap on Friday on the heaviest volume in two weeks. The asterisk is gone. What replaces it is extension. SMH is 10.7% above its 50D, RSI is 68.6, and four of the top ten (TSM, AMD, ADI, TXN) are at or above 70. Gaps made on macro prints fill more often than not. The map: **hold $609.66 and the $640-650 shelf is next, then $671.83. A close back below $609.66 puts $591.92 in play.** Bias: **bullish, extended. I would rather buy a gap fill near $621 than chase $631.**
 
-**The relative strength story:** SMH is **+75.1% YTD** and **~+89.0% over 52 weeks**. It beat SPY (-0.22%) by **4.2 points** this week, the second week running that it rose while the 10-year rose. SOX +3.69% W/W (12,669 → 13,137), its highest close since July 1.
+**The relative strength story:** SMH is **+75.1% YTD** and **~+87% over 52 weeks**. It beat SPY (-0.22%) by **4.2 points** this week, the second week running that it rose while the 10-year rose. SOX +3.69% W/W (12,669 → 13,137), its highest close since July 1.
 
 ---
 
@@ -215,6 +215,8 @@ Last week chips outran a bond selloff. This week they were handed a softer Fed, 
 - **Not found this week:** any new BIS export-control rule or China chip action (search returned only standing policy); company releases for POWI, CEVA or ACLS; a confirmed date for TSMC's September revenue release
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: SMH's one-year total return is about +87% (from the Oct 2, 2025 close; +87.9% from Oct 3), not ~+89%. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03*
 *Next update: Every Saturday 6:33 PM ET*

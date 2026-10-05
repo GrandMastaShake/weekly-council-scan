@@ -2,7 +2,7 @@
 
 > **Sector:** Real Estate | **ETF:** Real Estate Select Sector SPDR (XLRE) | **Expense Ratio:** 0.08%
 >
-> *"The magnet pulled. $41.33 gave way on Wednesday and Thursday traded $40.40 — forty cents from the $40.00 objective — before the week closed at $40.81 (-1.8%), the lowest close since April 1 and a fourth straight week under the 200-day. The gate I named, core PCE, opened the right way: 3.0%, and the October hike went from ~70% to ~17%. It bought this sector nothing, because the long end went the other way — the 10-year touched 5.34%, the highest since 2002, the 30-year closed at 5.63%, and Freddie Mac's 30-year mortgage jumped to 7.28%. I wrote that there was no third path that did not run through PCE and the Fed. There was: the Fed eases in expectation and the bond market tightens anyway. Carry gap -209bp. RSI 25.7."* — Ophelia
+> *"The magnet pulled. $41.33 gave way on Wednesday and Thursday traded $40.40 — forty cents from the $40.00 objective — before the week closed at $40.81 (-1.8%), the lowest close since April 1 and a third straight weekly close under the 200-day. The gate I named, core PCE, opened the right way: 3.0%, and the October hike went from ~70% to ~17%. It bought this sector nothing, because the long end went the other way — the 10-year touched 5.34%, the highest since 2002, the 30-year closed at 5.63%, and Freddie Mac's 30-year mortgage jumped to 7.28%. I wrote that there was no third path that did not run through PCE and the Fed. There was: the Fed eases in expectation and the bond market tightens anyway. Carry gap -209bp. RSI 25.7."* — Ophelia
 
 ---
 
@@ -85,7 +85,7 @@ Week path: Mon $41.35, Tue $41.34, Wed $40.91, Thu $40.68 (low $40.40), Fri $40.
 |---|---|---|
 | 52W High | $46.46 | Resistance — untouched since July |
 | 50-Day MA | $43.62 | Falling |
-| 200-Day MA / Trapdoor | $42.52 / $42.50 | **Fourth straight weekly close below.** The two levels now coincide |
+| 200-Day MA / Trapdoor | $42.52 / $42.50 | **Third straight weekly close below.** The two levels now coincide |
 | 20-Day MA | ~$42.19 | Falling |
 | Broken Shelf | $41.33 | Lost Wednesday; Friday's high was $41.29. First resistance |
 | Current Price | $40.81 | Fri 10/2 close; -1.80% W/W |
@@ -105,7 +105,7 @@ Week path: Mon $41.35, Tue $41.34, Wed $40.91, Thu $40.68 (low $40.40), Fri $40.
 
 | Factor | Level | Implication for XLRE |
 |---|---|---|
-| 10Y Treasury | **5.28% Fri close**; **5.34% intraday Thu — highest since 2002** | Fourth week above 5.00%. The sector's price-setter. Regime tracked in **#106/#114/#123**; no new trigger from this desk |
+| 10Y Treasury | **5.28% Fri close**; **5.34% intraday Thu — highest since 2002** | Second weekly close above 5.00%. The sector's price-setter. Regime tracked in **#106/#114/#123**; no new trigger from this desk |
 | 30Y Treasury | **5.63%** (~5.50% a week ago on the same Yahoo series; this page carried 5.40%) | The long end led again. The 10s–30s spread is 35bp; duration has nowhere to hide |
 | 30Y Mortgage | **7.28%** (Freddie Mac, Oct 1), from 7.03% — largest weekly rise in four years; highest since Nov 2023; +63bp in six weeks | Housing turnover frozen further; pending home sales -4.7% Y/Y |
 | Fed Posture | 3.75–4.00%; October hike odds ~70% → **~17%**; December >75% | The front end eased and the sector fell — the Fed is no longer the binding variable. FOMC Oct 27–28 |
@@ -114,7 +114,7 @@ Week path: Mon $41.35, Tue $41.34, Wed $40.91, Thu $40.68 (low $40.40), Fri $40.
 | DXY | **101.93 (+0.95% W/W)** | AMT's international book translates lower again |
 | ISM Manufacturing | **54.5**; new orders accelerating | Supportive for PLD's space demand into its Oct 15 print |
 | Data Center Demand | No leasing announcement found this week; Micron capex ~$25B in H1 FY27, construction-heavy; XLK at a record | EQIX/DLR traded with tech, not rates |
-| Trepp CMBS Delinquency | **September print not found this week** (standing August read: overall 7.85%, office 12.00%, multifamily 7.69%) | The Q4 maturity stack is still the event risk; no CRE default headline this week |
+| Trepp CMBS Delinquency | **September: overall 8.02% (+17bp); multifamily 8.04% (+35bp), above the overall rate for the first time since the Covid shutdowns; office 12.16% (+16bp); lodging 6.18% (+34bp); retail 6.58% (-62bp)** (Trepp via Yield PRO, Oct 4; added after the Saturday update. August: 7.85% / 12.00% / 7.69%) | Delinquencies rose again in office, multifamily and lodging. The Q4 maturity stack is still the event risk; no CRE default headline this week |
 | Consumer | Conference Board confidence 81.9 (lowest since 2014) | Mall traffic risk for SPG into Q4 |
 
 **Ophelia Verdict:** I have to correct the frame, not just the levels. For seven weeks this page has treated the Fed as the gate — PCE, the dots, the chair's first speech. This week the gate opened: PCE cooled, the hike was priced out. And the 10-year made a 24-year high, the 30-year rose again, and mortgages jumped 25bp. The sector's problem is the term premium, and the term premium is being set by things outside monetary policy. So the relief condition is restated: not "a cool print" but **the 10-year closing a week below its prior week's close**. Posture: no new duration; I upgrade nothing. Two observations I did not expect to write. The data centers held, which says there is a bid for real estate with growth attached. And the spreads are turning positive — O at 6.0% and CCI at 6.4% now yield more than the 10-year — which is how a de-rating ends, eventually. I am not opening an issue: the 10-year above 5% is an existing file, XLRE is inside its band, no REIT reported, and there was no default or leasing headline.
@@ -161,7 +161,7 @@ XLRE fell **-1.8% to $40.81**, its lowest weekly close since the spring, after t
 
 - **Oct 8 — GTY dividend payable; Oct 15 — O monthly dividend**
 - **Mid-October — September CPI:** the next input for the long end
-- **Mid-October — Trepp September CMBS delinquency:** not found this week; ~39% of 2026's hard CMBS maturities fall in Q4
+- **Trepp September CMBS delinquency (published Oct 4): overall 8.02% (+17bp), multifamily 8.04%, office 12.16%;** ~39% of 2026's hard CMBS maturities fall in Q4
 - **Oct 27–28 — FOMC:** ~17% priced for a hike
 - **Ongoing:** 10Y vs 5.34%; 30Y vs 5.63%; mortgage rate vs 7.28%; data-center leasing announcements; XLRE $40.40 / $41.33
 
@@ -214,6 +214,8 @@ XLRE fell **-1.8% to $40.81**, its lowest weekly close since the spring, after t
 - **Cross-references: #106 (10Y >5.00%), #114 (10Y through 5.10%), #123 (curve steepening), #115 (DXY above 101), #99. No new issue opened: XLRE -1.80% (threshold ±5%), no REIT earnings miss (none reported), no data-center leasing announcement, no CRE default headline; the 10Y above 5% is an existing open file and it did not break below 4%.**
 
 ---
+
+> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: XLRE has three straight weekly closes under its 200-day, not four (it closed above on Sep 11); the 10-year has two weekly closes above 5.00%; Trepp's September delinquency report is now in the table. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
 
 *Last updated by Saturday Research Crew: 2026-10-03 (data as of Fri 2026-10-02 close; Grid B Midday run)*
 *Next update: Every Saturday*
