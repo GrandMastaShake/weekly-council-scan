@@ -542,3 +542,47 @@ Last week I proposed at **51.8-54.9**. This week I propose at **72.3-79.1**. My 
 **Cash Target: 30%. Council actual: 20.0%.** The owner's cap sets the book, and my sleeve holds half of it at the per-sponsor limit -- more of the Council's money than I have ever been trusted with, handed to me because Cecil's names were blocked, not because my calibration earned it. The honest test this week is not whether I am right about scarcity. It is whether I size my doubt as carefully as I sized my thesis. The PCE print will grade that by Wednesday lunch.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-10-05 -- The Thing I Said Would Make Me Wrong Happened, and I Am Still Holding Half the Book
+
+### 1. Macro Narrative
+The Fed stepped back and the bond market did not. Core PCE printed **+0.2%**, payrolls **+29K** with 60K of downward revisions, Jefferson and Williams said there was "no need for urgency," and October-hike odds fell from about two-thirds to about one in five. The 10-year closed **5.277%**, nine basis points higher, after a 5.342% intraday high. I guessed on Saturday that it was real yield and the refresh confirmed it: the breakeven is **2.36%** against 2.34%. My wording changed from "no landing with a hawkish Fed" to **"hiking cycle on pause, bear steepening."**
+
+Three flags are up: payrolls fired, the 10-year is through 5.25% on a weekly close, CPI is carried to October 14. There was no defensive rotation -- staples fell 1.86% and healthcare 2.65% in the week a textbook says to buy them. The dollar rose a third week to **101.93** while the front end fell.
+
+And credit, which I asked for and did not have: **HY OAS 324 bps on October 1, above 300 since September 28.** CCC at 1,215, a 52-week high.
+
+### 2. Last Week, Scored
+- **META** booked 29.4% -> **-2.93%**. Monday's low was $713.19 against a $712.90 shadow stop. XLC closed $110.97 on Wednesday, three cents under the line I wrote, and the thesis leg fired.
+- **AMD** booked 20.6% -> **+1.44%**, after trading 4.6% under entry on day one.
+- **QCOM**, my only rejection, lost -1.39%. First week the name I was not allowed to book lost to the book.
+- My sleeve: -0.56% of book on 50% of the weight.
+
+### 3. My Proposals to the Council
+- **SNPS** -- macro score 78, confidence 74.8 -- **BOOKED 21.3%.** Trigger: invalid on an XLK close under $198.73, 0.5% headroom.
+- **AMAT** -- 77, conf 71.8 -- **BOOKED 13.6%.** Micron's capex bill is this company's revenue. Trigger: invalid on an SMH close below $609.66.
+- **LRCX** -- 76, conf 68.6 -- **PROMOTED, BOOKED 13.0%.** Same line as AMAT, stated in the table. Reports October 21, outside the week.
+
+No entry in `rejections.md` for me this week: all three are booked, and I checked that the log says so.
+
+### 4. The Concession (owned)
+Last week, under "What Would Make Me Wrong," I wrote: "HY OAS through 300. Then every position on this board is a duration position by another name, and I own half the board." It went through 300 on the Monday that entry was dated. I own 47.9% of this board.
+
+The Council booked my names because each trigger passes, and refused my confidence: the scorecard grades me against 60, not 68.6-74.8. I concede the confidence. I do not get to name a falsifier, watch it fire, and then propose three long-duration growth names eight points lower as if I had priced it. On 2026-09-14 I owned confidence that did not reflect my stated doubt. Last week I owned it again and docked myself to 65. This is the third time, and the pattern is no longer about calibration. It is that my wrong-conditions have no consequence attached. A doubt with no rule behind it is commentary.
+
+I also concede SNPS in part. It is my top score, the book's largest weight, and I cannot tell the Council why it rose 15% last week, because it is on none of our pages and my rationale names its sector and not the company. I would not have graded that well in anyone else.
+
+### 5. Lesson Learned
+**A named wrong-condition needs a size attached before the week starts, not a paragraph after.** Proposed rule, for the Council to accept or reject: when one of my own written falsifiers has fired and has not un-fired, my sleeve is sized at the engine weights and takes none of the cash-cap raise, and I say so in the report's first paragraph. This week that would have cost me about four points of the book. I would rather be bound by that than write this section a fourth time.
+
+### 6. What Would Make Me Wrong
+- **The 10-year auction tails more than 2 bps Wednesday, or the 10Y closes above 5.342%.** The next line is 5.50% and it lands on a 43x sector 10.7% over its 50-day, where two of my three names live.
+- **XLK closes under $198.73.** Half a percent away. One ordinary down day fires my largest position.
+- **HY-IG through 250** (238 on October 1; Friday's print posts today). Then Canary's credit row goes yellow and what I conceded above stops being about confidence.
+
+### 7. Cash
+**Cash Target: 30%. Council actual: 20.0%.** My desk says no new rate-sensitive positions before 1:00 PM Wednesday without a stop. The book has five new positions and its stops are shadow-only. I have said which side of that I am on; the cap is the owner's and it is applied.
+
+-- **Ophelia**, Macro Oracle
