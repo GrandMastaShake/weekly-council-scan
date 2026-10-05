@@ -108,6 +108,7 @@ from scan_pipeline.snapshot import (  # noqa: E402
     canonical_json,
     fetch_weekly_bars,
     get_special_instruments,
+    special_provenance,
     _normalize_block,
 )
 
@@ -243,7 +244,7 @@ def build_document(as_of: str, fetched: dict, special: dict | None,
             uniq.append({"ticker": key[0], "reason": key[1]})
     uniq.sort(key=lambda m: (m["ticker"], m["reason"]))
 
-    return {
+    doc = {
         "as_of": as_of,
         "cadence": CADENCE,
         "source": SOURCE,
@@ -256,6 +257,12 @@ def build_document(as_of: str, fetched: dict, special: dict | None,
         "fx": _normalize_block(special.get("fx")),
         "missing": uniq,
     }
+    # US2Y comes from Treasury, not from this file's provider, and says so
+    # per instrument exactly as the weekly file does (DATA_FEED.md sec.1).
+    prov = special_provenance(special, doc)
+    if prov:
+        doc["provenance"] = prov
+    return doc
 
 
 def assert_session_closed(as_of: str, now: datetime | None = None) -> None:

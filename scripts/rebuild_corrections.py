@@ -52,11 +52,15 @@ def rebuild(corrected: Path) -> bool:
             return False
         fresh["series"].pop(ticker)
         # A per-series anchor for a series that is no longer there describes
-        # nothing, and truth_check --feed refuses it. Drop it with the bar.
+        # nothing, and truth_check --feed refuses it. Drop it with the bar --
+        # but only it: the block can also name the source of a rates
+        # instrument (US2Y from Treasury), and that label must survive.
         prov = fresh.get("provenance")
         if isinstance(prov, dict) and isinstance(prov.get("series"), dict):
             prov["series"].pop(ticker, None)
             if not prov["series"]:
+                prov.pop("series")
+            if not prov:
                 fresh.pop("provenance", None)
         fresh.setdefault("missing", []).append(entry)
 

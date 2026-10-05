@@ -87,11 +87,11 @@
       "pctile_2y": 99
     },
     "US2Y": {
-      "d1w_bps": 16,
-      "lvl": 4.63,
+      "d1w_bps": 2,
+      "lvl": 4.83,
       "pctile_2y": 99
     },
-    "curve_2s10s_bps": 65
+    "curve_2s10s_bps": 45
   },
   "regime": "risk-on / curve-positive / policy-hike",
   "schema": "market-state/v1",
