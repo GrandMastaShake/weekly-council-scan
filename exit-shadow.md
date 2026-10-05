@@ -2,46 +2,66 @@
 
 > **Living Document (created 2026-08-10). SHADOW ONLY -- no enforcement for ~4 cycles.** For each booked pick, log the exit template it WOULD trade under: stop (default -8% SPEC / -5% CORE from entry), thesis invalidation (the pick's Trigger line), time stop (default 6 weeks, or a named catalyst with a date window), trim plan (default: trim 1/3 at +15%, remainder rides a hard trailing stop at -15% from the high-water mark). The template never alters the book; it exists to generate the evidence base that tunes the numbers before enforcement. Newest entries on top, tagged with the week's Monday date, marked `outcome: to be computed` until scored at the following Monday close.
 
-## Stop-Calibration Summary (4 scored cycles, 2026-08-17 -> 2026-09-08)
+## Stop-Calibration Summary (7 scored cycles, 2026-08-17 -> 2026-09-28)
 
-> **This block is the evidence base the log was built to produce.** It appears after 4 scored cycles, per the STEP 3b doctrine. Read it as evidence, not yet as enforcement.
+> **This block is the evidence base the log was built to produce.** Re-written 2026-10-05 after the revisit trigger was met (first CORE close below -5%, HIG, week of 2026-09-21). It replaces the 4-cycle block of 2026-09-14; that block's numbers are all carried in the tables below. Read it as evidence, not yet as enforcement.
 
-**Sample:** 11 position-weeks across 4 booked cycles (2026-08-10 was an ENGINE ABORT -- no book, no templates). 10 CORE (-5%), 1 SPEC (-8%).
+**Sample:** 21 position-weeks across 7 booked cycles (2026-08-10 was an ENGINE ABORT -- no book, no templates). 20 CORE (-5%), 1 SPEC (-8%).
 
 | Metric | CORE (-5%) | SPEC (-8%) | All |
 |---|---|---|---|
-| Position-weeks scored | 10 | 1 | 11 |
-| Stops fired | 0 | 1 | 1 |
-| Stop helped (saved money) | 0 | 1 (TER, +5.1pp) | 1 |
+| Position-weeks scored | 20 | 1 | 21 |
+| Stops fired | 1 (HIG, 2026-09-21) | 1 (TER, 2026-08-17) | 2 |
+| Stop helped (saved money) | 1 (+0.66pp) | 1 (+5.1pp) | 2 |
 | Stop hurt (cut a winner) | 0 | 0 | 0 |
-| Untouched | 10 | 0 | 10 |
+| Untouched | 19 | 0 | 19 |
 | +15% trim reached | 0 | 0 | 0 |
 
 **Deepest intraweek drawdown from entry, CORE names (the number that decides the stop):**
 
-| Rank | Position | Week | Low vs Entry | Headroom Left Above Stop | Week Finished |
+| Rank | Position | Week | Low vs Entry | Stop Fired? | Week Finished |
 |---|---|---|---|---|---|
-| 1 | ETN | 2026-09-08 | -3.66% | 1.41% | **+1.01% (green)** |
-| 2 | VICI | 2026-08-24 | -3.45% | 1.62% | -3.00% |
-| 3 | ALL | 2026-08-17 | -3.36% | 1.72% | -2.98% |
-| 4 | HIG | 2026-08-17 | -1.92% | 3.24% | -1.85% |
-| 5 | HIG | 2026-08-31 | -1.59% | 3.59% | -0.08% |
-| 6 | VICI | 2026-08-17 | -1.15% | 4.07% | +1.55% |
-| 7 | ALL | 2026-08-31 | -1.06% | 4.15% | -0.21% |
-| 8 | LMT | 2026-09-08 | -0.83% | 4.39% | -0.39% |
-| 9 | HIG | 2026-08-24 | -0.63% | 4.60% | +0.87% |
-| 10 | ALL | 2026-08-24 | never below entry | 5.79% | +2.54% |
+| 1 | HIG | 2026-09-21 | -5.77% | **Yes** (Fri) | -5.66% |
+| 2 | META | 2026-09-28 | -4.96% | No (held by $0.29) | -2.93% |
+| 3 | AMD | 2026-09-28 | -4.61% | No | **+1.44% (green)** |
+| 4 | AAPL | 2026-09-28 | -4.28% | No | -1.96% |
+| 5 | HIG | 2026-09-14 | -3.81% | No | -3.28% |
+| 6 | ETN | 2026-09-08 | -3.66% | No | **+1.01% (green)** |
+| 7 | VICI | 2026-08-24 | -3.45% | No | -3.00% |
+| 8 | ALL | 2026-08-17 | -3.36% | No | -2.98% |
+| 9 | XOM | 2026-09-21 | -3.17% | No | -0.23% |
+| 10 | ALL | 2026-09-14 | -2.34% | No | -1.53% |
+| 11 | PSX | 2026-09-14 | -2.34% | No | **+5.26% (green)** |
+| 12 | HIG | 2026-08-17 | -1.92% | No | -1.85% |
+| 13 | HIG | 2026-08-31 | -1.59% | No | -0.08% |
+| 14 | DE | 2026-09-14 | -1.52% | No | **+1.22% (green)** |
+| 15 | VICI | 2026-08-17 | -1.15% | No | +1.55% |
+| 16 | ALL | 2026-08-31 | -1.06% | No | -0.21% |
+| 17 | LMT | 2026-09-08 | -0.83% | No | -0.39% |
+| 18 | HIG | 2026-08-24 | -0.63% | No | +0.87% |
+| 19 | AMD | 2026-09-21 | -0.29% | No | +8.00% |
+| 20 | ALL | 2026-08-24 | never below entry | No | +2.54% |
 
-**What the data says, stated against the hypothesis it could have supported:**
+**What each alternative CORE stop would have done to this sample** (sum of per-position differences vs the actual week-end result, in points of the position, not of the book; a fired stop is assumed filled at the stop level):
 
-1. **The -8% SPEC stop is the only one with a firing, and it earned its keep.** TER (2026-08-17) hit it Tuesday and saved 5.1pp against a -13.07% actual. One observation is not a mandate, but it is the only direct evidence in the file and it points one way: keep -8% on SPEC.
-2. **The -5% CORE stop has never fired in 10 position-weeks, and tightening it would have COST money, not saved it.** The deepest CORE drawdown on record is ETN's -3.66% -- and ETN closed the week GREEN at +1.01%. A -3.5% CORE stop would have fired on ETN and VICI: ETN would have turned +1.01% into roughly -4% (a ~5pp self-inflicted loss), VICI would have turned -3.00% into -3.5% (another small loss). **Every tightening this sample permits makes the book worse.** The naive read of "the CORE stop never fires, so it must be too loose" is exactly backwards.
-3. **Implied best stop from the data: leave both numbers where they are.** CORE -5% sits in a genuine dead zone -- far enough below the -3.66% worst observed drawdown to avoid whipsaw, and no CORE position has come near a loss deep enough to need it. There is no number in this sample that improves on -5% CORE / -8% SPEC.
-4. **The trim plan is completely untested.** Zero of 11 position-weeks reached +15%; the best week on record is ALL's +2.54%. The trim leg of the template has produced no evidence at all and should not be promoted on the strength of the stop leg.
+| CORE stop | Fires on | Net vs holding to Friday |
+|---|---|---|
+| -6.0% | nothing (HIG's low was -5.77%) | 0.00 -- gives back the one saving on record |
+| **-5.0% (current)** | HIG 09-21 | **+0.66** |
+| -4.5% | HIG, META, AMD (09-28) | +1.16 - 1.57 - 5.94 = **-6.35** |
+| -4.0% | the above + AAPL | +1.66 - 1.07 - 5.44 - 2.04 = **-6.89** |
+| -3.5% | the above + HIG 09-14, ETN | +2.16 - 0.57 - 4.94 - 1.54 - 0.22 - 4.51 = **-9.62** |
 
-**Promotion recommendation: NOT YET -- stay in shadow.** The sample is 11 position-weeks with exactly one firing, drawn almost entirely from a book carrying 60-73% cash, and it is CORE-dominated 10:1. The one number with real support (-8% SPEC) has a single observation. The honest reading is that the template has not yet been tested by a losing week deep enough to matter -- the book's worst pick since the log opened was cut by the one stop that fired. Continue shadow logging; revisit at 8 scored cycles or after the first week a CORE position closes below -5%, whichever comes first.
+**What the data says:**
 
-**REVISIT TRIGGER MET (2026-09-28):** HIG (week of 2026-09-21) closed -5.66% -- the first CORE position to close below -5% -- and its -5% stop fired Friday and would have saved 0.66pp. Scored cycles now 6 (17 CORE / 1 SPEC position-weeks, adding the 4 CORE names of 09-14 and the 3 of 09-21; 2 stops fired -- TER SPEC and HIG CORE -- both helped, 0 hurt). The full re-calibration of this block is owed; not done in this run (time-boxed ahead of the Arena lock). Flagged for the next Council session.
+1. **-5% CORE is the only level in the table that made money.** It fired once, on the one position that kept falling. Every tighter level fires on AMD's week of 2026-09-28, which traded 4.61% under entry on Monday and finished +1.44%. A looser level misses HIG.
+2. **The margin is thin and should be said so.** The gap between "best level in the sample" and "fires on META" was $0.29 on a $750 stock. One more tick on 2026-09-28 and the -5% row would read +0.66 - 2.07 = -1.41. The finding is that -5% is not worse than its neighbours, not that it is tuned.
+3. **Entry day does the damage, not the week.** All three CORE names in the 2026-09-28 book made their deep lows inside the first four sessions from a Monday-open entry; from Monday's close the same book was +0.98%. A stop measured from the open is partly measuring the entry basis. Worth one more cycle of evidence before reading anything into it.
+4. **The -8% SPEC stop still has one observation** (TER, saved 5.1pp). No SPEC name has been booked since 2026-08-17. Keep -8%.
+5. **Thesis-invalidation legs have fired four times** (ALL and DE 2026-09-14, XOM 2026-09-21, META 2026-09-28). Only META's fired mid-week on a daily-close line, and exiting on it would have cost 0.38pp (fired by three cents, stock drifted up). The other three fired on weekly closes, where the exit and the Friday close are the same price. The thesis leg has earned its keep as a re-entry block -- the books that ignored the fired lines lost to the booked ones by 1.41pp and 0.62pp in the two weeks scored like-for-like (shadow-book.md) -- not yet as an intraweek exit.
+6. **The trim plan is still untested.** Zero of 21 position-weeks reached +15%. The best intraweek high on record is AMD's +9.43% (2026-09-21).
+
+**Promotion recommendation: NOT YET -- stay in shadow, with a narrower question.** The stop numbers no longer need defending against tightening; the sample answers that. What it cannot answer is whether enforcing -5% CORE helps a book that is now 80% invested in five correlated leadership names, because the three deepest non-firing drawdowns all came from that kind of book in a single week. Revisit at 10 scored cycles, or the first week two CORE stops fire together, whichever comes first.
 
 ---
 
