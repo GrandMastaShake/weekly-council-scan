@@ -1,9 +1,14 @@
 """daily_observe.py -- one completed US session, committed as an observation.
 
 The weekly feed commits Friday closes because that is the cadence the council
-reads. The bars behind it were never weekly: `snapshot.fetch_weekly_bars`
+reads. The bars behind it were never weekly: `snapshot.fetch_session_bars`
 downloads daily bars over a ranged window and selects one. This script keeps
 the other four sessions instead of discarding them.
+
+It asks for the bar dated `as_of` and nothing else. The weekly writer lets
+an earlier session stand in for a Friday that a later bar proves was skipped
+(`snapshot.fetch_weekly_bars`); a daily file is named for the session it
+holds, so here a date with no bar is a date with no file.
 
 Output: <out>/daily/<YYYY-MM-DD>.json, the same shape as DATA_FEED.md sec.1
 plus a `cadence` discriminator. Append-only, exactly like the weekly files.
@@ -115,8 +120,9 @@ from scan_pipeline.config.tickers import PRICE_FEED_UNIVERSE  # noqa: E402
 from scan_pipeline.snapshot import (  # noqa: E402
     INDEX_TICKERS,
     SECTOR_TICKERS,
+    WITNESS,
     canonical_json,
-    fetch_weekly_bars,
+    fetch_session_bars,
     get_special_instruments,
     special_provenance,
     _normalize_block,
@@ -132,8 +138,8 @@ CADENCE = "daily"
 
 # SPY is the session witness (see module docstring). It is also the benchmark
 # every relative-momentum calculation downstream divides by, so a file without
-# it is useless even if it were complete.
-WITNESS = "SPY"
+# it is useless even if it were complete. WITNESS is snapshot's: the weekly
+# writer gates on the same name, and one definition cannot drift from itself.
 
 # The regular US close, US/Eastern wall time. An early close (13:00) is
 # earlier, so a session is never taken as closed before it is.
@@ -707,7 +713,7 @@ def main(argv: list | None = None) -> int:
 
     print("Observing " + as_of + " over " + str(len(tickers)) + " tickers")
 
-    fetched = fetch_weekly_bars(tickers, as_of)
+    fetched = fetch_session_bars(tickers, as_of)
     bars = fetched.get("bars") or {}
 
     try:

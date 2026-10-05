@@ -14,8 +14,14 @@ Per-file conventions (byte-stability contract inherited from snapshot.py):
   * Written via snapshot.write_weekly() then post-processed in place:
       "source"     -> "yahoo-backfill"  (PROVIDER + "-backfill")
       "fetched_at" -> one shared UTC timestamp for the whole backfill run
-      "session_note" (top-level, additive, only on holiday Fridays):
-                     "Friday holiday; bars from <actual date>"
+    write_weekly itself records "session_note" (top-level, only on holiday
+    Fridays): "Friday holiday; bars from <actual date>".
+  * A week is written only with its session witness (2026-10-06, DATA_FEED.md
+    sec.1c): SPY's bar dated the Friday, or -- only once a SPY bar dated
+    after the Friday proves it was skipped -- the last session of that week.
+    A Friday with neither is REFUSED and the run exits 2. Before that date
+    a run on the night wrote Thursday's bars as a "Friday holiday" whenever
+    no ticker had a Friday bar, which is also what a late post looks like.
   * Closes are split/dividend-adjusted (yfinance auto_adjust=True), rounded
     to 4dp by snapshot._normalize_block; volume int or None (never invented).
   * "missing" is REQUIRED: a ticker with no bar in the Monday..Friday week
@@ -186,11 +192,14 @@ def download_equity_history(tickers: list, first_friday: date,
 
     One ranged call per ticker, batched CHUNK_SIZE at a time. Fetch window
     starts 10 days before the first Friday (holiday/halt headroom for the
-    'last trading day <= Friday' rule) and ends the day after the last
-    Friday. Tickers that never return data get empty histories and land in
-    'missing' for every week -- never fabricated."""
+    'last trading day <= Friday' rule) and runs eight days past the last
+    Friday. Nothing after a Friday is ever sliced into its week; a bar dated
+    after it is there because it is the only proof that a Friday with no
+    bars was a holiday (build_and_write). Tickers that never return data get
+    empty histories and land in 'missing' for every week -- never
+    fabricated."""
     start_iso = (first_friday - timedelta(days=10)).isoformat()
-    end_iso = (last_friday + timedelta(days=1)).isoformat()
+    end_iso = (last_friday + timedelta(days=9)).isoformat()
     history: dict = {}
     chunks = [tickers[i:i + CHUNK_SIZE]
               for i in range(0, len(tickers), CHUNK_SIZE)]
@@ -251,31 +260,46 @@ def slice_week(hist: tuple, monday: date, friday: date):
 def build_and_write(friday: date, tickers: list, history: dict,
                     out_dir: str) -> dict:
     """Slice one Friday, fetch specials, write via snapshot.write_weekly,
-    then stamp backfill identity (source / fetched_at / session_note)."""
+    then stamp backfill identity (source / fetched_at).
+
+    Raises snapshot.NoSessionWitness, before anything is fetched or written,
+    for a Friday the witness cannot answer for."""
+    # Which session the file is: the weekly writer's rule, asked of the
+    # witness's own history. This used to be read off the slices below --
+    # "no ticker has a Friday bar, so it was a holiday" -- which is true of
+    # a holiday and equally true of a Friday the provider has not posted.
+    if snapshot.WITNESS not in tickers:
+        raise snapshot.NoSessionWitness(
+            "REFUSED, nothing written: no weekly file for %s, and this run "
+            "does not fetch %s (--only). A new week is one session of the "
+            "whole universe; --only with --merge adds names to a week that "
+            "exists." % (friday.isoformat(), snapshot.WITNESS))
+    session, why = snapshot.week_session(
+        set(history.get(snapshot.WITNESS, ([], [], []))[0]), friday)
+    if session is None:
+        raise snapshot.NoSessionWitness(
+            "REFUSED, nothing written for %s: %s. Run it again once the "
+            "provider shows a later session." % (friday.isoformat(), why))
+
     monday = friday - timedelta(days=4)
     bars: dict = {}
     missing: list = []
-    actual_dates = set()
     for t in tickers:
-        bar, actual = slice_week(history.get(t, ([], [], [])),
-                                 monday, friday)
+        bar, _actual = slice_week(history.get(t, ([], [], [])),
+                                  monday, friday)
         if bar is None:
             missing.append({"ticker": t,
                             "reason": MISSING_REASON % friday.isoformat()})
         else:
             bars[t] = bar
-            actual_dates.add(actual)
-
-    session_note = None
-    if actual_dates and friday not in actual_dates:
-        session_note = ("Friday holiday; bars from %s"
-                        % max(actual_dates).isoformat())
 
     special = snapshot_macro.fetch_special_instruments(friday.isoformat())
     time.sleep(FRIDAY_SLEEP_S)
 
+    # write_weekly turns a session that is not the Friday into session_note.
     path = snapshot.write_weekly(
-        friday.isoformat(), {"bars": bars, "missing": missing},
+        friday.isoformat(),
+        {"bars": bars, "missing": missing, "session": session.isoformat()},
         special, out_dir=out_dir)
 
     # Backfill identity: write_weekly stamps PROVIDER ("yahoo") and the write
@@ -295,11 +319,10 @@ def build_and_write(friday: date, tickers: list, history: dict,
             if label.get("source") == snapshot.PROVIDER:
                 label["source"] = BACKFILL_SOURCE
                 label["fetched_at"] = RUN_TS
-    if session_note:
-        doc["session_note"] = session_note
     with open(path, "w", encoding="utf-8", newline="") as f:
         f.write(snapshot.canonical_json(doc))
-    return {"path": path, "doc": doc, "session_note": session_note}
+    return {"path": path, "doc": doc,
+            "session_note": doc.get("session_note")}
 
 
 # ---------------------------------------------------------------------------
@@ -469,6 +492,7 @@ def main() -> int:
     missing_counts: list = []
     ticker_missing: dict = {t: 0 for t in tickers}
     notes: list = []
+    refused: list = []
     for n, friday in enumerate(fridays, 1):
         path = os.path.join(weekly_dir, friday.isoformat() + ".json")
         if os.path.exists(path) and args.merge:
@@ -496,7 +520,14 @@ def main() -> int:
             missing_counts.append(len(doc.get("missing", [])))
             log("  (%3d/%d) %s SKIP (exists)" % (n, len(fridays), friday))
             continue
-        rec = build_and_write(friday, tickers, history, args.out)
+        try:
+            rec = build_and_write(friday, tickers, history, args.out)
+        except snapshot.NoSessionWitness as refusal:
+            # Not a week this run can write. Say so and go on: the weeks
+            # after it may be ordinary ones, and the exit code carries it.
+            refused.append("%s: %s" % (friday.isoformat(), refusal))
+            log("  (%3d/%d) %s %s" % (n, len(fridays), friday, refusal))
+            continue
         doc = rec["doc"]
         n_missing = len(doc.get("missing", []))
         for m in doc.get("missing", []):
@@ -532,6 +563,14 @@ def main() -> int:
         for t in chronic:
             print("  %s: missing %d/%d weeks"
                   % (t, ticker_missing[t], len(fridays)))
+    if refused:
+        # A refusal is a correct outcome and still not "done": exit 2, so a
+        # run that left a week unwritten never reads as one that wrote it.
+        print("REFUSED (%d week(s) not written, no session witness):"
+              % len(refused))
+        for s in refused:
+            print("  " + s)
+        return 2
     return 0
 
 
