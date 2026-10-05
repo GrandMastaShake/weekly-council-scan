@@ -7,17 +7,42 @@ name: Daily observation
 # the two judgment components in sector-regime-heatmap have no daily source
 # and a daily file carrying them would be inventing them.
 #
-# 21:45 UTC is ~17:45 ET, about 1h45m after the close, which leaves room for
-# the provider to settle the session. The witness gate refuses the run if it
-# has not, so an early fire is safe: it exits 2 and writes nothing.
+# Two attempts per session (2026-10-04). One was not enough, twice over:
+#
+#   The script picks the session by the US/Eastern clock, not the runner's
+#   UTC date. GitHub starts the evening schedule hours late; past 00:00 UTC
+#   the old default asked for a date that had not traded and never looked at
+#   the one that had closed.
+#
+#   For an hour or more from 00:00 UTC (20:00 US/Eastern in summer) the
+#   provider serves the just-closed session with a NULL close, until its
+#   end-of-day roll: the bar was served through 23:59:53 UTC, gone at 00:10
+#   and 00:45, back by 01:38. The witness gate refuses that, correctly, and
+#   8 of the first 15 scheduled runs were started after 00:00 UTC.
+#
+#   21:45 UTC   5:45 PM EDT / 4:45 PM EST. Writes when GitHub starts it
+#               before that window; otherwise it is refused and says why.
+#   09:15 UTC   5:15 AM EDT / 4:15 AM EST the next morning (UTC Tue-Sat), long
+#               after the roll and, even started hours late, before the open.
+#               The session already on file is declined before any fetch.
+#
+# A refusal is a correct outcome and exits clean, so it can never be the
+# alarm: a run that will never write looks exactly like one that declined
+# once. The last step asks the separate question -- does every session the
+# witness lists have a file -- and that step is the one that goes red.
 
 on:
   schedule:
     - cron: '45 21 * * 1-5'    # weekdays, after the US close
+    - cron: '15 9 * * 2-6'     # the morning after, for the same session
   workflow_dispatch:
     inputs:
       date:
-        description: "Session date YYYY-MM-DD (default: latest weekday)"
+        description: "Session date YYYY-MM-DD (default: the latest session whose US/Eastern close has passed)"
+        required: false
+        type: string
+      since:
+        description: "Recovery: first date YYYY-MM-DD. Writes every settled session from it through date, from ONE ranged download"
         required: false
         type: string
       dry_run:
@@ -37,6 +62,10 @@ jobs:
   observe:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      # So a log line's timestamp is when it happened. Buffered, every line
+      # of a run carried the time the script exited.
+      PYTHONUNBUFFERED: '1'
     steps:
       - uses: actions/checkout@v4
 
@@ -48,20 +77,32 @@ jobs:
 
       - name: Observe the session
         id: observe
+        env:
+          OBS_DATE: ${{ inputs.date }}
+          OBS_SINCE: ${{ inputs.since }}
+          OBS_DRY_RUN: ${{ inputs.dry_run }}
         run: |
+          args=(--out data)
+          for d in "$OBS_DATE" "$OBS_SINCE"; do
+            if [ -n "$d" ] && ! [[ "$d" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+              echo "Dates must be YYYY-MM-DD, got: $d"
+              exit 1
+            fi
+          done
+          if [ -n "$OBS_DATE" ];  then args+=(--date "$OBS_DATE"); fi
+          if [ -n "$OBS_SINCE" ]; then args+=(--since "$OBS_SINCE"); fi
+          if [ "$OBS_DRY_RUN" = "true" ]; then args+=(--dry-run); fi
           set +e
-          python scripts/daily_observe.py \
-            ${{ inputs.date && format('--date {0}', inputs.date) || '' }} \
-            ${{ inputs.dry_run && '--dry-run' || '' }} \
-            --out data
+          python scripts/daily_observe.py "${args[@]}"
           code=$?
           set -e
-          # 2 means the script declined to write, and it has two causes: the
-          # witness gate refusing an unsettled or non-session date, or the
-          # append-only guard finding the file already there. Both are correct
-          # outcomes, not failures -- but do not name one of them here. The
-          # script already printed which, and asserting "no settled session"
-          # over an append-only refusal puts a confident wrong line in the log.
+          # 2 means the script declined to write, and it has several causes:
+          # the witness gate refusing an unsettled or non-session date, the
+          # clock refusing a session still open, or the append-only guard
+          # finding the file already there. All are correct outcomes, not
+          # failures -- but do not name one of them here. The script already
+          # printed which, and asserting "no settled session" over an
+          # append-only refusal puts a confident wrong line in the log.
           if [ "$code" = "2" ]; then
             echo "refused=true" >> "$GITHUB_OUTPUT"
             echo "Declined to write (reason above). Exiting clean."
@@ -94,7 +135,16 @@ jobs:
             echo "No new session file to commit."
             exit 0
           fi
-          git commit -m "data: daily observation $(ls -1 data/daily | tail -1 | sed 's/\.json$//')"
+          # Named from what was staged, not from the newest file in the
+          # directory: a recovery writes sessions older than the newest one.
+          staged=$(git diff --cached --name-only -- data/daily | sed 's#.*/##; s/\.json$//' | sort)
+          count=$(printf '%s\n' "$staged" | grep -c .)
+          if [ "$count" = "1" ]; then
+            message="data: daily observation $staged"
+          else
+            message="data: daily observations $(printf '%s\n' "$staged" | head -1) .. $(printf '%s\n' "$staged" | tail -1) ($count sessions, one ranged download)"
+          fi
+          git commit -m "$message"
           for i in 1 2 3; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
             echo "Push attempt $i failed; retrying."
@@ -102,3 +152,27 @@ jobs:
           done
           echo "Could not push after 3 attempts."
           exit 1
+
+      # The alarm. Runs whatever happened above -- above all after a refusal,
+      # which is green by design. Exit 1 when a settled session other than
+      # the newest has no file: no scheduled attempt will ever write it, so
+      # the run stays red until someone recovers it (the output names the
+      # command). A session whose close is still null is PENDING, not a
+      # fault; only the newest one unwritten is a warning.
+      - name: Audit the panel against the session witness
+        if: ${{ !cancelled() }}
+        run: |
+          set +e
+          python scripts/daily_observe.py --audit --out data | tee "$RUNNER_TEMP/audit.txt"
+          code=${PIPESTATUS[0]}
+          set -e
+          {
+            echo "### Daily observation feed"
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/audit.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          sed -n -e 's/^WARN: /::warning title=Daily observation feed::/p' \
+                 -e 's/^FAIL: /::error title=Daily observation feed::/p' "$RUNNER_TEMP/audit.txt"
+          exit "$code"

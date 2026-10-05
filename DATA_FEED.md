@@ -155,6 +155,32 @@ half-formed session is indistinguishable from a settled one once committed,
 so the gate is up front rather than a later lint. Holidays simply produce no
 file -- 2026-09-07 (Labor Day) is absent by design, not missing.
 
+The witness has one blind spot: while a session is open SPY already has a bar
+dated today, the forming one. The clock covers it. `as_of` is chosen and
+judged in **US/Eastern**, never on the runner's UTC date -- the default is the
+latest weekday whose 16:00 ET close has passed -- and a date still in session
+is refused before anything is fetched.
+
+**The null-close window.** For an hour or more each evening, from 00:00 UTC
+(20:00 ET in summer, the end of the post-market session) until its end-of-day
+roll, the provider serves the just-closed session's row with a null close:
+the row exists, with volume, and the price does not. On this feed the bar was
+served through 23:59:53 UTC, was gone at 00:10 and 00:45, and was back by
+01:38. That is "not settled" in the gate's sense and the run refuses; it is
+the reason each session gets a second attempt the next morning. It does not
+depend on the request -- the provider appends its newest row whatever `end`
+says, and a null close is null on every window and range.
+
+**Completeness.** A refusal is a correct outcome and exits clean, so a feed
+that has stopped writing looks the same as one that declined once. The panel
+is therefore audited against the witness on every run
+(`daily_observe.py --audit`): every session the provider lists with a settled
+close, from the first daily file to the last close, must have a file. A
+missing one that is not the newest fails the run. A range is recovered with
+`--since <first> --date <last>`, which cuts every missing session from one
+ranged download, stamps them with one `fetched_at`, and leaves existing files
+alone. Those files carry no rates/vol/commodities/fx; `missing` says so.
+
 **Never splice daily and weekly files into one calculation.** They carry
 different adjustment anchors and the divergence is real, not theoretical: on
 2026-08-28 the weekly file (anchor 2026-08-29) and the daily file (anchor
