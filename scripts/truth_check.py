@@ -55,6 +55,11 @@ Modes:
                 a null weekly change or percentile that the tree can
                 supply, or was derived where data/us2y_treasury.json is
                 absent.
+                Also WARNs when data/daily/ has stopped being written: the
+                newest daily file two or more weekdays behind the last
+                weekday before today. Never a FAIL -- an observation feed
+                that scores nothing must not stop a Monday; the check that
+                fails is the audit step of the Daily observation workflow.
   --derive      Derivation purity check (NEW in v6): calls
                 scan_pipeline.snapshot.rederive_and_compare() from the
                 pipeline checkout (--pipeline) against the repo's
@@ -1185,6 +1190,50 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                   f"DATA_FEED.md sec.1 (failures reported above)")
 
 
+def check_daily_freshness(repo, today, rep):
+    """Is data/daily/ still being written? (DATA_FEED.md sec.4.) No network.
+
+    check_feed validates the files that exist, and a file that was never
+    written fails nothing: the daily feed stopped on 2026-09-23 and this
+    gate went on reporting every file valid for eleven days.
+
+    A WARN, never a FAIL. This is an observation feed that scores nothing
+    and it must not stop a Monday. It also has no calendar of holidays, so
+    it counts weekdays, not sessions, and stays quiet about a single one --
+    the check that asks the provider which sessions exist, and fails, is
+    `daily_observe.py --audit` in the Daily observation workflow. This one
+    is for the case that workflow has stopped running altogether.
+    """
+    daily = repo / "data" / "daily"
+    if not daily.is_dir():
+        return
+    days = sorted(f.stem for f in daily.glob("*.json")
+                  if re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem))
+    if not days:
+        return
+    newest = dt.date.fromisoformat(days[-1])
+    # Yesterday at the latest: today's session may not have closed, and this
+    # runs on machines in more than one timezone.
+    expected = today - dt.timedelta(days=1)
+    while expected.weekday() >= 5:
+        expected -= dt.timedelta(days=1)
+    behind = []
+    d = newest + dt.timedelta(days=1)
+    while d <= expected:
+        if d.weekday() < 5:
+            behind.append(d)
+        d += dt.timedelta(days=1)
+    if len(behind) >= 2:
+        rep.add("WARN", f"feed: data/daily has stopped being written -- "
+                        f"newest file {newest}, {len(behind)} weekdays "
+                        f"behind {expected} (weekdays, not sessions: this "
+                        f"check knows no holidays). Run `python "
+                        f"scripts/daily_observe.py --audit` for the sessions "
+                        f"that are missing")
+    else:
+        rep.add("OK", f"feed: data/daily is current through {newest}")
+
+
 # --------------------------------------------------------------------- splits
 
 # Ratios a corporate action produces, as the percent change an UNADJUSTED
@@ -1509,6 +1558,7 @@ def main():
         check_us2y_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")
+        check_daily_freshness(repo, today, rep)
     if run_all or args.config:
         check_config(repo, rep)
     if run_all or args.splits:
