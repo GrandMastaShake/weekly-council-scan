@@ -76,6 +76,7 @@ import glob
 import json
 import os
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, datetime, timedelta, timezone
 from typing import Dict, List, Optional, Set, Tuple
@@ -380,6 +381,14 @@ def fetch_session_bars(tickers: List[str], session_date: str) -> dict:
 #    Mon..Fri week stands in, never one from an earlier week. Every ticker's
 #    bar is then the one dated that session, and the file says so in
 #    `session_note`.
+#  * The proof is checked against the provider's own listing. A later bar
+#    proves a holiday only if the Friday really has no row, and a download
+#    cannot say: a session whose close has not been posted comes back from
+#    it as no bar at all, exactly like a day that never traded. So before
+#    an earlier session stands in, the raw chart is asked, as the daily
+#    feed asks it (scripts/daily_observe.py, witness_rows). A holiday is
+#    not listed there. A session with a null close is, and that Friday is
+#    refused however many bars follow it.
 #  * On the night itself the proof does not exist. The job runs on the
 #    Saturday and the next bar is Monday's, so a holiday week is never
 #    written by the run that first meets it. It is written by the first run
@@ -389,6 +398,15 @@ def fetch_session_bars(tickers: List[str], session_date: str) -> dict:
 #
 # A refusal is a correct outcome, so it cannot be the alarm. The alarm is in
 # truth_check --feed: a week missing between two files fails it.
+
+_CHART = "https://query1.finance.yahoo.com/v8/finance/chart/"
+_CHART_UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+
+# Pauses between attempts at the two witness questions. A refusal costs the
+# week until the next weekly run, so a provider that hiccups once is asked
+# again before it is believed.
+_WITNESS_PAUSES_S = (2, 4)
+
 
 class NoSessionWitness(RuntimeError):
     """No weekly file may be written: SPY has no bar that can answer for the
@@ -403,7 +421,10 @@ def week_session(days: Set[date],
     days is the set of dates the witness has a bar for; friday is the date
     the file is named for. Returns (session, None) or (None, reason), under
     the rules above. It is snapshot_macro.select_bar without the settlement
-    hour, and tests/test_weekly_session.py holds the two to one answer."""
+    hour, and tests/test_weekly_session.py holds the two to one answer.
+
+    A session other than the Friday is a candidate, not yet an answer: the
+    caller confirms it with confirm_stand_in before any bar is taken."""
     if friday in days:
         return friday, None
     if not any(d > friday for d in days):
@@ -425,11 +446,12 @@ def _witness_days(friday: date) -> Tuple[Optional[Set[date]], Optional[str]]:
     never read as "no session".
 
     The window is snapshot_macro._fetch_one's. It opens on the week's Monday
-    because nothing earlier can be used, and runs eight days past the Friday
-    so that a later bar, where one exists, is in it. A row with no close is
-    not a bar: the provider serves a just-closed session that way for an
-    hour or more each evening (DATA_FEED.md sec.4), and such a row neither
-    answers for the Friday nor proves anything about it."""
+    because nothing earlier can be used, and its end, which is exclusive, is
+    eight days past the Friday, so that a later bar, where one exists, is in
+    it. A row with no close is not a bar: the provider serves a just-closed
+    session that way for an hour or more each evening (DATA_FEED.md sec.4),
+    and such a row neither answers for the Friday nor proves anything about
+    it."""
     monday = friday - timedelta(days=friday.weekday())
     start = monday.isoformat()
     end = (friday + timedelta(days=8)).isoformat()
@@ -438,11 +460,12 @@ def _witness_days(friday: date) -> Tuple[Optional[Set[date]], Optional[str]]:
     except ImportError as exc:
         return None, "yfinance import failed: %s" % exc
     problem = None
-    for _attempt in range(2):   # one transient failure does not cost a week
+    for pause in _WITNESS_PAUSES_S + (0,):
         try:
             hist = yf.Ticker(WITNESS).history(start=start, end=end)
         except Exception as exc:
             problem = "%s: %s" % (type(exc).__name__, str(exc)[:160])
+            time.sleep(pause)
             continue
         days: Set[date] = set()
         if hist is not None and not hist.empty:
@@ -457,7 +480,108 @@ def _witness_days(friday: date) -> Tuple[Optional[Set[date]], Optional[str]]:
         # a fortnight without a session.
         problem = "no %s bars at all returned for %s..%s" % (
             WITNESS, start, end)
+        time.sleep(pause)
     return None, problem
+
+
+def _fetch_chart(symbol: str, start: date, end: date):
+    """The provider's raw daily rows for [start, end], or None. Stdlib only,
+    and the same request scripts/daily_observe.py makes: two days of slack
+    past `end`, because the bounds are UTC and the rows are stamped in
+    exchange time."""
+    import urllib.request
+
+    def epoch(d: date) -> int:
+        return int(datetime(d.year, d.month, d.day,
+                            tzinfo=timezone.utc).timestamp())
+
+    url = (_CHART + symbol + "?period1=" + str(epoch(start)) + "&period2="
+           + str(epoch(end + timedelta(days=2)))
+           + "&interval=1d&includePrePost=false")
+    for pause in _WITNESS_PAUSES_S + (0,):
+        try:
+            req = urllib.request.Request(url, headers=_CHART_UA)
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.load(resp)
+        except Exception:
+            time.sleep(pause)
+    return None
+
+
+def parse_listing(payload) -> Optional[Dict[date, Optional[float]]]:
+    """{session date: close, or None where the close is null} from a raw
+    chart payload. Pure. None when the payload cannot be read: "unknown"
+    must never read as "not listed".
+
+    The distinction this draws is the one a download erases. A session that
+    ended and has not settled is a row with a null close; a day that was not
+    a session is no row at all. scripts/daily_observe.py reads the same
+    payload the same way, and a test holds the two to one answer."""
+    rows: Dict[date, Optional[float]] = {}
+    try:
+        result = payload["chart"]["result"][0]
+        offset = (result.get("meta") or {}).get("gmtoffset")
+        if isinstance(offset, bool) or not isinstance(offset, (int, float)):
+            offset = -5 * 3600      # US/Eastern, standard: right to the day
+        stamps = result.get("timestamp") or []
+        closes = result["indicators"]["quote"][0].get("close") or []
+        for stamp, close in zip(stamps, closes):
+            day = datetime.fromtimestamp(stamp + offset, timezone.utc).date()
+            if close is None or close != close:      # null, or NaN
+                # Never overwrite a price: while a session is live its own
+                # row is null and the close rides on a second row, same date.
+                rows.setdefault(day, None)
+            else:
+                rows[day] = float(close)
+    except (KeyError, IndexError, TypeError, AttributeError, ValueError,
+            OverflowError, OSError):
+        return None
+    return rows
+
+
+def witness_listing(friday: date) -> Optional[Dict[date, Optional[float]]]:
+    """What the provider itself lists for the witness, from the week's
+    Monday through the seven days after the Friday. None when it could not
+    be asked."""
+    monday = friday - timedelta(days=friday.weekday())
+    last = friday + timedelta(days=7)
+    rows = parse_listing(_fetch_chart(WITNESS, monday, last))
+    if rows is None:
+        return None
+    return {d: c for d, c in rows.items() if monday <= d <= last}
+
+
+def stand_in_refusal(listing: Optional[Dict[date, Optional[float]]],
+                     friday: date) -> Optional[str]:
+    """Why an earlier session may NOT stand in for friday, or None when the
+    provider's own listing shows the Friday was skipped. Pure.
+
+    listing is witness_listing's answer. The Friday has to be absent from
+    it, and a later day present in it."""
+    day = friday.isoformat()
+    if listing is None:
+        return ("a later %s bar says %s was skipped, but the provider could "
+                "not be asked what it lists for that day; a close that has "
+                "not been posted reads as a missing bar, so no earlier "
+                "session stands in until it can be asked" % (WITNESS, day))
+    if friday in listing:
+        if listing[friday] is None:
+            return ("the provider lists %s as a session whose %s close is "
+                    "null: it traded and has not settled, so no earlier "
+                    "session stands in for it" % (day, WITNESS))
+        return ("the provider lists a settled %s close for %s that the "
+                "download did not return: a transient provider failure"
+                % (WITNESS, day))
+    if not any(d > friday for d in listing):
+        return ("the provider's own listing shows no %s session after %s "
+                "yet, so nothing proves it was skipped" % (WITNESS, day))
+    return None
+
+
+def confirm_stand_in(friday: date) -> Optional[str]:
+    """Ask the provider directly before an earlier session stands in for
+    friday. None when it may; otherwise the reason it may not."""
+    return stand_in_refusal(witness_listing(friday), friday)
 
 
 def _refused(tickers: List[str], why: str) -> dict:
@@ -472,15 +596,16 @@ def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
     """The equity panel for one weekly file: each ticker's bar for the
     session that answers for friday_date.
 
-    The witness decides the session first (week_session), and every ticker's
-    bar is then the one dated exactly that session (fetch_session_bars). A
-    ticker without one is in missing; no ticker gets a day of its own.
+    The witness decides the session first (week_session, and confirm_stand_in
+    for a session that is not the Friday), and every ticker's bar is then the
+    one dated exactly that session (fetch_session_bars). A ticker without one
+    is in missing; no ticker gets a day of its own.
 
     Returns {"bars": {ticker: {"close", "volume"}},
              "missing": [{"ticker", "reason"}],
              "session": the date the bars are dated -- friday_date, or the
-                        last session of its week where a later bar proves
-                        the Friday was skipped. write_weekly records that.}
+                        last session of its week where the Friday is proven
+                        to have been skipped. write_weekly records that.}
     When no session answers, bars is empty, session is None, and "refused"
     carries the reason. write_weekly raises NoSessionWitness on it and
     writes nothing; it never raises here, so a caller can report first.
@@ -490,13 +615,26 @@ def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
 
     days, problem = _witness_days(friday)
     if days is None:
+        # The quick question went unanswered. The batch can still settle the
+        # one case that needs no proof: a SPY bar dated the Friday IS the
+        # session, so an ordinary week is not lost to one failed request.
+        got = (fetch_session_bars(tickers, friday_date)
+               if WITNESS in tickers else {})
+        if WITNESS in (got.get("bars") or {}):
+            got["session"] = friday_date
+            return got
         return _refused(tickers, (
             "could not ask the provider which sessions %s has around %s "
-            "(%s), so the session is unknown" % (WITNESS, friday_date,
-                                                 problem)))
+            "(%s), and the batch download holds no %s bar dated %s, so the "
+            "session is unknown" % (WITNESS, friday_date, problem, WITNESS,
+                                    friday_date)))
     session, why = week_session(days, friday)
     if session is None:
         return _refused(tickers, why)
+    if session != friday:
+        why = confirm_stand_in(friday)
+        if why is not None:
+            return _refused(tickers, why)
 
     got = fetch_session_bars(tickers, session.isoformat())
     if WITNESS in tickers and WITNESS not in (got.get("bars") or {}):

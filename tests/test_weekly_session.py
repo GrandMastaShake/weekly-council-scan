@@ -56,6 +56,17 @@ QUIET = {"rates": {}, "vol": {}, "commodities": {}, "fx": {}, "missing": []}
 TRUTH = SCRIPTS / "truth_check.py"
 
 
+@pytest.fixture(autouse=True)
+def no_provider(monkeypatch):
+    """conftest stubs yfinance; the listing probe is plain urllib and would
+    get through. A test that reaches the provider fails here instead of
+    quietly depending on the network. Nothing waits between retries."""
+    def refuse(*a, **k):
+        raise AssertionError("a test reached for the provider")
+    monkeypatch.setattr(snapshot, "_fetch_chart", refuse)
+    monkeypatch.setattr(snapshot.time, "sleep", lambda s: None)
+
+
 def weekdays(first, last, closed=()):
     out, day = set(), first
     while day <= last:
@@ -201,11 +212,136 @@ def test_a_provider_that_does_not_answer_is_unknown_not_a_holiday(witness):
     assert problem == "no SPY bars at all returned for 2026-12-21..2027-01-02"
 
 
+# -- the provider's own listing ------------------------------------------------
+
+def chart(*rows, meta=None):
+    """A raw chart payload from (UTC stamp, close) pairs, in the shape the
+    v8 endpoint answers with. A daily row is stamped at the open: 13:30 UTC
+    in summer, 14:30 in winter."""
+    stamps = [int(dt.datetime.strptime(stamp, "%Y-%m-%d %H:%M").replace(
+        tzinfo=UTC).timestamp()) for stamp, _ in rows]
+    return {"chart": {"error": None, "result": [{
+        "meta": meta if meta is not None else {"gmtoffset": -18000},
+        "timestamp": stamps,
+        "indicators": {"quote": [{
+            "close": [close for _, close in rows],
+            "volume": [36666700] * len(rows)}]}}]}}
+
+
+CHRISTMAS_LISTED = chart(
+    ("2026-12-23 14:30", 688.02), ("2026-12-24 14:30", 690.38),
+    ("2026-12-28 14:30", 690.31), ("2026-12-29 14:30", 687.85))
+
+
+def test_a_holiday_is_not_listed_and_an_unsettled_session_is():
+    """The one distinction a download cannot draw. Christmas has no row at
+    all; a session whose close is not posted has a row and a null."""
+    assert snapshot.parse_listing(CHRISTMAS_LISTED) == {
+        D(2026, 12, 23): 688.02, D(2026, 12, 24): 690.38,
+        D(2026, 12, 28): 690.31, D(2026, 12, 29): 687.85}
+
+    unsettled = chart(("2026-10-08 13:30", 760.1), ("2026-10-09 13:30", None),
+                      ("2026-10-12 13:30", 775.0), meta={"gmtoffset": -14400})
+    assert snapshot.parse_listing(unsettled) == {
+        D(2026, 10, 8): 760.1, D(2026, 10, 9): None, D(2026, 10, 12): 775.0}
+
+
+def test_a_price_is_never_overwritten_by_the_null_beside_it():
+    """While a session is live its own row is null and the close rides on a
+    second row stamped at the last trade, same date, either way round."""
+    for rows in ((("2026-10-05 13:30", None), ("2026-10-05 17:59", 774.1)),
+                 (("2026-10-05 17:59", 774.1), ("2026-10-05 13:30", None))):
+        assert snapshot.parse_listing(chart(*rows)) == {D(2026, 10, 5): 774.1}
+
+
+@pytest.mark.parametrize("payload", [
+    None, {}, {"chart": {"result": None}}, {"chart": {"result": []}},
+    {"chart": {"result": [{"timestamp": [1], "indicators": {}}]}},
+])
+def test_a_listing_that_cannot_be_read_is_unknown_not_empty(payload):
+    assert snapshot.parse_listing(payload) is None
+
+
+def test_the_listing_is_read_as_the_daily_feed_reads_it():
+    """scripts/daily_observe.py has drawn this distinction from this payload
+    since the null-close window cost it two sessions. Two readers of one
+    answer, in a package and a script that cannot share an import, held to
+    the same dates in both seasons and with or without the provider's
+    offset: a last trade at 20:00 New York is the next day in UTC."""
+    rows = (("2026-07-02 13:30", 744.78), ("2026-07-06 13:30", 751.28),
+            ("2026-10-02 13:30", 769.64), ("2026-10-05 13:30", None),
+            ("2026-10-06 00:00", 774.83), ("2026-12-24 14:30", 690.38),
+            ("2026-12-28 14:30", None), ("2026-12-29 01:00", 692.1))
+    for meta in ({"gmtoffset": -14400}, {"gmtoffset": -18000}, {},
+                 {"gmtoffset": None}):
+        payload = chart(*rows, meta=meta)
+        ours = {d.isoformat(): c
+                for d, c in snapshot.parse_listing(payload).items()}
+        assert ours == do.witness_rows("2026-07-01", "2026-12-31",
+                                       fetch=lambda *a: payload), meta
+    assert ours == {"2026-07-02": 744.78, "2026-07-06": 751.28,
+                    "2026-10-02": 769.64, "2026-10-05": 774.83,
+                    "2026-12-24": 690.38, "2026-12-28": 692.1}
+
+
+def test_the_listing_is_asked_for_the_week_and_the_seven_days_after(
+        monkeypatch):
+    asked = []
+
+    def fetch(symbol, start, end):
+        asked.append((symbol, start, end))
+        return chart(("2026-12-18 14:30", 684.0), *[
+            (d.isoformat() + " 14:30", 690.0) for d in sorted(
+                XMAS_WEEK | {D(2026, 12, 28), D(2027, 1, 4)})])
+
+    monkeypatch.setattr(snapshot, "_fetch_chart", fetch)
+    assert snapshot.witness_listing(XMAS) == {
+        d: 690.0 for d in XMAS_WEEK | {D(2026, 12, 28)}}
+    assert asked == [("SPY", D(2026, 12, 21), D(2027, 1, 1))]
+
+    monkeypatch.setattr(snapshot, "_fetch_chart", lambda *a: None)
+    assert snapshot.witness_listing(XMAS) is None
+
+
+@pytest.mark.parametrize("listing,why", [
+    ({EVE: 690.38, D(2026, 12, 28): 690.31}, None),
+    (None, "could not be asked what it lists for that day"),
+    ({EVE: 690.38, XMAS: None, D(2026, 12, 28): 690.31},
+     "lists 2026-12-25 as a session whose SPY close is null"),
+    ({EVE: 690.38, XMAS: 691.0, D(2026, 12, 28): 690.31},
+     "lists a settled SPY close for 2026-12-25 that the download did not "
+     "return"),
+    ({EVE: 690.38}, "shows no SPY session after 2026-12-25 yet"),
+    ({}, "shows no SPY session after 2026-12-25 yet"),
+])
+def test_thursday_stands_in_only_where_the_listing_skips_the_friday(
+        listing, why):
+    got = snapshot.stand_in_refusal(listing, XMAS)
+    if why is None:
+        assert got is None
+    else:
+        assert why in got
+
+
+def test_the_question_is_put_to_the_provider_not_to_the_download(
+        monkeypatch):
+    monkeypatch.setattr(snapshot, "_fetch_chart",
+                        lambda *a: CHRISTMAS_LISTED)
+    assert snapshot.confirm_stand_in(XMAS) is None
+
+    monkeypatch.setattr(snapshot, "_fetch_chart", lambda *a: chart(
+        ("2026-12-24 14:30", 690.38), ("2026-12-25 14:30", None),
+        ("2026-12-28 14:30", 690.31)))
+    assert "it traded and has not settled" in snapshot.confirm_stand_in(XMAS)
+
+
 # -- the fetch -----------------------------------------------------------------
 
 class Provider:
     """The provider as it stands on one day: it has a bar for every session
-    up to `today`, and none for a day that was not a session."""
+    up to `today`, and none for a day that was not a session. A session in
+    `unsettled` has traded and has no close yet: no bar comes back for it
+    from a download, and the provider's own listing shows it with a null."""
 
     def __init__(self, monkeypatch, sessions, today):
         self.sessions = set(sessions)
@@ -213,11 +349,16 @@ class Provider:
         self.asked = []
         self.problem = None
         self.dropped = set()
+        self.unsettled = set()
+        self.listing_down = False
+        self.listed = []
         monkeypatch.setattr(snapshot, "_witness_days", self.witness_days)
         monkeypatch.setattr(snapshot, "fetch_session_bars", self.batch)
+        monkeypatch.setattr(snapshot, "witness_listing", self.listing)
 
     def known(self):
-        return {d for d in self.sessions if d <= self.today}
+        return {d for d in self.sessions
+                if d <= self.today and d not in self.unsettled}
 
     def witness_days(self, friday):
         if self.problem:
@@ -225,6 +366,17 @@ class Provider:
         monday = friday - dt.timedelta(days=friday.weekday())
         return {d for d in self.known()
                 if monday <= d <= friday + dt.timedelta(days=8)}, None
+
+    def listing(self, friday):
+        self.listed.append(friday)
+        if self.listing_down:
+            return None
+        monday = friday - dt.timedelta(days=friday.weekday())
+        last = friday + dt.timedelta(days=7)
+        rows = {d: 100.0 + d.day for d in self.known() if monday <= d <= last}
+        rows.update({d: None for d in self.unsettled
+                     if monday <= d <= min(last, self.today)})
+        return rows
 
     def batch(self, tickers, session_date):
         self.asked.append(session_date)
@@ -266,6 +418,7 @@ def test_once_a_later_session_exists_every_bar_is_thursdays(monkeypatch):
     assert got["session"] == "2026-12-24"
     assert "refused" not in got
     assert provider.asked == ["2026-12-24"]
+    assert provider.listed == [XMAS], "the provider's listing was asked"
     assert got["bars"]["SPY"] == {"close": 124.0, "volume": 1000}
     assert sorted(got["bars"]) == UNIVERSE
 
@@ -275,6 +428,41 @@ def test_an_ordinary_friday_is_its_own_session(monkeypatch):
     got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-18")
     assert got["session"] == "2026-12-18"
     assert provider.asked == ["2026-12-18"]
+    assert provider.listed == [], "its own bar needs no second opinion"
+
+
+def test_a_friday_that_traded_and_has_not_settled_is_not_a_holiday(
+        monkeypatch):
+    """Monday 2026-12-21, and the close of Friday the 18th is still null at
+    the provider. A download drops that row, so what comes back is Thursday,
+    then Monday: the shape of a holiday. The provider's own listing has the
+    Friday, with no close, and nothing stands in for a day that traded."""
+    provider = Provider(monkeypatch, HOLIDAYS, today=D(2026, 12, 21))
+    provider.unsettled = {D(2026, 12, 18)}
+    days, _ = provider.witness_days(D(2026, 12, 18))
+    assert snapshot.week_session(days, D(2026, 12, 18)) == (
+        D(2026, 12, 17), None), "by the bars alone, Thursday would stand in"
+
+    got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-18")
+    assert got["session"] is None and got["bars"] == {}
+    assert "lists 2026-12-18 as a session whose SPY close is null" in \
+        got["refused"]
+    assert "it traded and has not settled" in got["refused"]
+    assert provider.asked == []
+
+    provider.unsettled = set()              # ... and once it has settled
+    got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-18")
+    assert got["session"] == "2026-12-18"
+
+
+def test_a_holiday_nobody_could_confirm_is_not_written(monkeypatch):
+    """The bars say holiday and the listing cannot be asked. Unknown is not
+    'not listed': the week waits for a run that can ask."""
+    provider = Provider(monkeypatch, HOLIDAYS, today=D(2027, 1, 2))
+    provider.listing_down = True
+    got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-25")
+    assert got["session"] is None and provider.asked == []
+    assert "could not be asked what it lists for that day" in got["refused"]
 
 
 def test_a_ticker_gets_the_sessions_bar_or_is_missing(monkeypatch):
@@ -288,14 +476,30 @@ def test_a_ticker_gets_the_sessions_bar_or_is_missing(monkeypatch):
                                "reason": "no bar dated 2026-12-24"}]
 
 
-def test_a_witness_that_could_not_be_asked_is_refused_as_unknown(monkeypatch):
+def test_an_ordinary_friday_survives_a_witness_that_cannot_be_asked(
+        monkeypatch):
+    """The quick question is one more request than the old writer made, and
+    its failure must not cost an ordinary week. SPY's bar dated the Friday
+    in the batch IS the session; that case needs no proof."""
+    provider = Provider(monkeypatch, HOLIDAYS, today=D(2026, 12, 19))
+    provider.problem = "OSError: timed out"
+    got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-18")
+    assert got["session"] == "2026-12-18" and "refused" not in got
+    assert sorted(got["bars"]) == UNIVERSE
+    assert provider.asked == ["2026-12-18"]
+
+
+def test_a_witness_that_could_not_be_asked_never_lets_thursday_in(
+        monkeypatch):
+    """The same failure on a holiday. The batch has no SPY bar dated the
+    Friday, and without the witness nothing says what followed it."""
     provider = Provider(monkeypatch, HOLIDAYS, today=D(2027, 1, 2))
     provider.problem = "OSError: timed out"
     got = snapshot.fetch_weekly_bars(UNIVERSE, "2026-12-25")
-    assert got["session"] is None
+    assert got["session"] is None and got["bars"] == {}
     assert "could not ask the provider" in got["refused"]
     assert "so the session is unknown" in got["refused"]
-    assert provider.asked == []
+    assert provider.asked == ["2026-12-25"] and provider.listed == []
 
 
 def test_a_batch_that_drops_the_witness_is_refused(monkeypatch):
@@ -868,6 +1072,14 @@ def test_a_run_that_wrote_two_weeks_derives_through_the_chain(tmp_path):
     assert snapshot.rederive_and_compare(str(weekly), facts, str(out)) == (
         False, "$.sectors.XLK.corr_prev")
 
+    # The night of a refusal is the same trap from the other side: nothing
+    # new was written, so the committed state is this week's own.
+    same = snapshot.derive_market_state(str(weekly), facts,
+                                        prev_market_state=chain)
+    assert same["sectors"]["XLK"]["corr_prev"] == \
+        chain["sectors"]["XLK"]["corr_spy_4w"] != \
+        chain["sectors"]["XLK"]["corr_prev"]
+
     assert snapshot.write_market_state_chain(str(weekly), facts,
                                              str(out)) == str(out)
     assert out.read_bytes() == snapshot.canonical_json(chain).encode("ascii")
@@ -879,6 +1091,9 @@ def test_a_run_that_wrote_two_weeks_derives_through_the_chain(tmp_path):
 
 def history(*days, close=655.0):
     return (list(days), [close] * len(days), [1] * len(days))
+
+
+SKIPPED = {EVE: 690.38, D(2026, 12, 28): 690.31}    # Christmas, as listed
 
 
 @pytest.fixture
@@ -896,7 +1111,7 @@ def no_specials(monkeypatch):
 
 
 def test_the_backfill_no_longer_calls_an_unposted_friday_a_holiday(
-        tmp_path, no_specials):
+        tmp_path, monkeypatch, no_specials):
     """It wrote 'Friday holiday; bars from <Thursday>' whenever no ticker
     had a Friday bar. Run on the night, that is every Friday."""
     hist = {"SPY": history(D(2026, 12, 23), EVE),
@@ -906,6 +1121,7 @@ def test_the_backfill_no_longer_calls_an_unposted_friday_a_holiday(
     assert not (tmp_path / "weekly").exists()
     assert no_specials == []
 
+    monkeypatch.setattr(snapshot, "witness_listing", lambda friday: SKIPPED)
     hist["SPY"] = history(D(2026, 12, 23), EVE, D(2026, 12, 28))
     rec = bf.build_and_write(XMAS, ["AAPL", "SPY"], hist, str(tmp_path))
     assert rec["session_note"] == "Friday holiday; bars from 2026-12-24"
@@ -913,32 +1129,105 @@ def test_the_backfill_no_longer_calls_an_unposted_friday_a_holiday(
     assert read(rec["path"])["session_note"] == rec["session_note"]
 
 
-def test_a_run_restricted_to_a_few_names_cannot_start_a_week(
+def test_the_backfill_asks_the_listing_before_thursday_stands_in(
+        tmp_path, monkeypatch, no_specials):
+    """Its history drops a row with no close like every download does. A
+    Friday that traded and has not settled must not go in as a holiday
+    because Monday's bar happens to be there."""
+    hist = {"SPY": history(D(2026, 12, 17), D(2026, 12, 21)),
+            "AAPL": history(D(2026, 12, 17), D(2026, 12, 21))}
+    monkeypatch.setattr(snapshot, "witness_listing", lambda friday: {
+        D(2026, 12, 17): 680.1, D(2026, 12, 18): None,
+        D(2026, 12, 21): 684.9})
+    with pytest.raises(snapshot.NoSessionWitness,
+                       match="it traded and has not settled"):
+        bf.build_and_write(D(2026, 12, 18), ["AAPL", "SPY"], hist,
+                           str(tmp_path))
+    assert not (tmp_path / "weekly").exists()
+    assert no_specials == []
+
+
+def test_a_file_that_says_thursday_holds_nothing_dated_after_it(
+        tmp_path, monkeypatch, no_specials):
+    """The note comes from SPY and the bars from each ticker's own slice.
+    Sliced up to the Friday, a ticker with a stray Friday bar would sit in a
+    file that says 'bars from Thursday'."""
+    monkeypatch.setattr(snapshot, "witness_listing", lambda friday: SKIPPED)
+    hist = {"SPY": history(EVE, D(2026, 12, 28)),
+            "AAPL": ([EVE, XMAS], [271.5, 999.0], [10, 20])}
+    rec = bf.build_and_write(XMAS, ["AAPL", "SPY"], hist, str(tmp_path))
+    assert rec["session_note"] == "Friday holiday; bars from 2026-12-24"
+    assert rec["doc"]["series"]["AAPL"] == {"close": 271.5, "volume": 10}
+
+
+def test_a_week_is_not_written_without_its_witness_in_the_run(
         tmp_path, no_specials):
-    """How 2024-08-09.json came to have no SPY: --only, on a Friday that
-    had no file yet."""
-    with pytest.raises(snapshot.NoSessionWitness, match="--only"):
+    with pytest.raises(snapshot.NoSessionWitness,
+                       match="does not fetch SPY"):
         bf.build_and_write(D(2026, 10, 9), ["PLTR"],
                            {"PLTR": history(D(2026, 10, 9))}, str(tmp_path))
     assert not (tmp_path / "weekly").exists()
+
+
+def run_backfill(monkeypatch, tmp_path, sessions, *args):
+    """main() in-process, over a provider that has `sessions`."""
+    monkeypatch.setattr(bf.snapshot, "equity_universe",
+                        lambda: ["AAPL", "SPY", "XLK"])
+    monkeypatch.setattr(bf, "download_equity_history",
+                        lambda tickers, first, last: {
+                            t: history(*sorted(sessions)) for t in tickers})
+    monkeypatch.setattr(sys, "argv", [
+        "backfill_weekly.py", "--out", str(tmp_path), *args])
+    return bf.main()
+
+
+def test_a_run_restricted_to_a_few_names_cannot_start_a_week(
+        tmp_path, monkeypatch, no_specials, capsys):
+    """How 2024-08-09.json was started: --only, on a Friday with no file.
+    Naming SPY among the few does not make them a week: the other names
+    would be in neither `series` nor `missing`, and the gate, which looks
+    for SPY, would pass it."""
+    sessions = weekdays(D(2026, 10, 5), D(2026, 10, 9))
+    assert run_backfill(monkeypatch, tmp_path, sessions, "--only", "SPY,AAPL",
+                        "--start", "2026-10-09", "--end", "2026-10-09") == 2
+    out = capsys.readouterr().out
+    assert "a run restricted with --only cannot start one" in out
+    assert "REFUSED (1 week(s) not written):" in out
+    assert list((tmp_path / "weekly").iterdir()) == []
+    assert no_specials == []
+
+
+def test_a_merge_adds_to_the_weeks_that_exist_and_starts_none(
+        tmp_path, monkeypatch, no_specials, capsys):
+    """The cure for 2024-08-09 run one Friday too far: --only the ETFs,
+    --merge, over a week that has a file and one that does not."""
+    weekly = tmp_path / "weekly"
+    weekly.mkdir()
+    (weekly / "2026-10-02.json").write_text(
+        json.dumps(weekly_doc("2026-10-02", ["AAPL"])), encoding="utf-8")
+    sessions = weekdays(D(2026, 9, 28), D(2026, 10, 9))
+
+    assert run_backfill(monkeypatch, tmp_path, sessions, "--only", "SPY,XLK",
+                        "--merge", "--start", "2026-10-02",
+                        "--end", "2026-10-09") == 2
+    out = capsys.readouterr().out
+    assert sorted(p.name for p in weekly.iterdir()) == ["2026-10-02.json"]
+    merged = read(weekly / "2026-10-02.json")
+    assert sorted(merged["series"]) == ["AAPL", "SPY", "XLK"]
+    assert sorted(merged["provenance"]["series"]) == ["SPY", "XLK"]
+    assert "2026-10-09: REFUSED, nothing written: no weekly file for " \
+           "2026-10-09 to add to" in out
 
 
 def test_a_backfill_that_refused_a_week_does_not_exit_clean(
         tmp_path, monkeypatch, no_specials, capsys):
     """It writes the weeks it can and says which it could not. Exit 2 stops
     the workflow before its commit step."""
-    sessions = sorted(weekdays(D(2026, 12, 14), EVE))
-    monkeypatch.setattr(bf.snapshot, "equity_universe",
-                        lambda: ["AAPL", "SPY"])
-    monkeypatch.setattr(bf, "download_equity_history",
-                        lambda tickers, first, last: {
-                            t: history(*sessions) for t in tickers})
-    monkeypatch.setattr(sys, "argv", [
-        "backfill_weekly.py", "--out", str(tmp_path),
-        "--start", "2026-12-18", "--end", "2026-12-25"])
-    assert bf.main() == 2
+    sessions = weekdays(D(2026, 12, 14), EVE)
+    assert run_backfill(monkeypatch, tmp_path, sessions,
+                        "--start", "2026-12-18", "--end", "2026-12-25") == 2
     out = capsys.readouterr().out
-    assert "REFUSED (1 week(s) not written, no session witness):" in out
+    assert "REFUSED (1 week(s) not written):" in out
     assert "2026-12-25: REFUSED, nothing written for 2026-12-25" in out
     assert sorted(p.name for p in (tmp_path / "weekly").iterdir()) == [
         "2026-12-18.json"]

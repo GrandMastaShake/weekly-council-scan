@@ -411,6 +411,9 @@ def test_a_rewritten_holiday_week_stamps_its_stand_ins_as_backfill(
     monkeypatch.setattr(bf.snapshot_macro, "fetch_special_instruments",
                         lambda friday: special)
     monkeypatch.setattr(bf.time, "sleep", lambda s: None)
+    # ... and the provider's own listing has no row for Good Friday.
+    monkeypatch.setattr(bf.snapshot, "witness_listing", lambda friday: {
+        D(2026, 4, 2): 655.0, D(2026, 4, 6): 658.9})
 
     rec = bf.build_and_write(D(2026, 4, 3), ["SPY"],
                              {"SPY": ([D(2026, 4, 2), D(2026, 4, 6)],

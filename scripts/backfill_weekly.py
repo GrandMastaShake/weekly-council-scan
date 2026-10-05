@@ -270,23 +270,34 @@ def build_and_write(friday: date, tickers: list, history: dict,
     # a holiday and equally true of a Friday the provider has not posted.
     if snapshot.WITNESS not in tickers:
         raise snapshot.NoSessionWitness(
-            "REFUSED, nothing written: no weekly file for %s, and this run "
-            "does not fetch %s (--only). A new week is one session of the "
-            "whole universe; --only with --merge adds names to a week that "
-            "exists." % (friday.isoformat(), snapshot.WITNESS))
+            "REFUSED, nothing written for %s: this run does not fetch %s, "
+            "and a week is not written without its session witness."
+            % (friday.isoformat(), snapshot.WITNESS))
     session, why = snapshot.week_session(
         set(history.get(snapshot.WITNESS, ([], [], []))[0]), friday)
+    if session is not None and session != friday:
+        # The history drops a row with no close, so a Friday whose close
+        # has not been posted looks like one that never traded. Ask the
+        # provider's own listing before Thursday stands in for it.
+        unconfirmed = snapshot.confirm_stand_in(friday)
+        if unconfirmed is not None:
+            session, why = None, unconfirmed
     if session is None:
         raise snapshot.NoSessionWitness(
-            "REFUSED, nothing written for %s: %s. Run it again once the "
-            "provider shows a later session." % (friday.isoformat(), why))
+            "REFUSED, nothing written for %s: %s. Run that week again "
+            "later; the writer takes the Friday's bars if they are there by "
+            "then, or the last session of the week once the Friday is "
+            "proven to have been skipped." % (friday.isoformat(), why))
 
+    # Sliced up to the file's session, not the Friday: a file that says
+    # "bars from Thursday" cannot then hold a bar dated after it. For an
+    # ordinary week the two are the same day and nothing changes.
     monday = friday - timedelta(days=4)
     bars: dict = {}
     missing: list = []
     for t in tickers:
         bar, _actual = slice_week(history.get(t, ([], [], [])),
-                                  monday, friday)
+                                  monday, session)
         if bar is None:
             missing.append({"ticker": t,
                             "reason": MISSING_REASON % friday.isoformat()})
@@ -520,6 +531,19 @@ def main() -> int:
             missing_counts.append(len(doc.get("missing", [])))
             log("  (%3d/%d) %s SKIP (exists)" % (n, len(fridays), friday))
             continue
+        if args.only:
+            # A restricted run has no week here to add to, and written as a
+            # new file its few names would BE the week: every other ticker
+            # in neither `series` nor `missing`. That is how 2024-08-09.json
+            # was started, and naming SPY among them does not change it.
+            refusal = ("REFUSED, nothing written: no weekly file for %s to "
+                       "add to, and a run restricted with --only cannot "
+                       "start one. A new week is one session of the whole "
+                       "universe: run that Friday without --only first."
+                       % friday.isoformat())
+            refused.append("%s: %s" % (friday.isoformat(), refusal))
+            log("  (%3d/%d) %s %s" % (n, len(fridays), friday, refusal))
+            continue
         try:
             rec = build_and_write(friday, tickers, history, args.out)
         except snapshot.NoSessionWitness as refusal:
@@ -566,8 +590,7 @@ def main() -> int:
     if refused:
         # A refusal is a correct outcome and still not "done": exit 2, so a
         # run that left a week unwritten never reads as one that wrote it.
-        print("REFUSED (%d week(s) not written, no session witness):"
-              % len(refused))
+        print("REFUSED (%d week(s) not written):" % len(refused))
         for s in refused:
             print("  " + s)
         return 2
