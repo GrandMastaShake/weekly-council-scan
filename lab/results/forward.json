@@ -1,20 +1,21 @@
 {
- "generated": "2026-09-28 12:19",
+ "generated": "2026-10-05 11:39",
  "weeks": [
-  "2026-09-21"
+  "2026-09-21",
+  "2026-09-28"
  ],
  "real_council": {
   "summary": {
-   "weeks": 1,
-   "mean_alpha": -0.0025509878327144896,
-   "alpha_t": 0.0,
-   "mean_invested": 0.522,
-   "mean_alpha_at_exposure": 0.0006304651266043891,
-   "mean_vs_production": 0.0013012760722901336,
-   "weeks_differed": 1,
-   "weeks_better_than_production": 1,
-   "cumulative": 0.004104771496404425,
-   "max_drawdown": 0.0
+   "weeks": 2,
+   "mean_alpha": -0.00787767839884801,
+   "alpha_t": -1.4789067059636194,
+   "mean_invested": 0.661,
+   "mean_alpha_at_exposure": -0.0061190545932966614,
+   "mean_vs_production": 0.00616250758498965,
+   "weeks_differed": 2,
+   "weeks_better_than_production": 2,
+   "cumulative": -0.007467933325437048,
+   "max_drawdown": -0.01152539570606248
   },
   "weekly": [
    {
@@ -23,6 +24,14 @@
     "alpha": -0.0025509878327144896,
     "invested": 0.522,
     "spy_ret": 0.006655759329118993,
+    "differs": true
+   },
+   {
+    "week": "2026-09-28",
+    "book_ret": -0.011525395706062447,
+    "alpha": -0.013204368964981528,
+    "invested": 0.8,
+    "spy_ret": 0.0016789732589190809,
     "differs": true
    }
   ]
@@ -33,24 +42,24 @@
    "registered": "2026-09-21",
    "source": "engines as live",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.003852263905004623,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9803,
-    "mean_alpha_at_exposure": -0.003721145446220979,
+    "weeks": 2,
+    "mean_alpha": -0.014040185983837659,
+    "alpha_t": -1.3781222177433723,
+    "mean_invested": 0.99015,
+    "mean_alpha_at_exposure": -0.013974626754445836,
     "mean_vs_production": 0.0,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": 0.008250806669093596,
-    "mean_pctile_vs_random": 0.705,
-    "cumulative": 0.0028034954241142884,
-    "max_drawdown": 0.0
+    "mean_vs_random": -0.005588318020762161,
+    "mean_pctile_vs_random": 0.40499999999999997,
+    "cumulative": -0.01980885548547695,
+    "max_drawdown": -0.022549123349295597
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.00280349542411437,
-     "alpha": -0.003852263905004623,
+     "book_ret": 0.002803483969658309,
+     "alpha": -0.0038522753594606844,
      "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
@@ -73,6 +82,40 @@
       [
        "XOM",
        0.1432
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.02254912334929555,
+     "alpha": -0.024228096608214632,
+     "invested": 1.0,
+     "pctile_vs_random": 0.105,
+     "book": [
+      [
+       "META",
+       0.2394
+      ],
+      [
+       "AES",
+       0.2323
+      ],
+      [
+       "HCA",
+       0.2192
+      ],
+      [
+       "TMO",
+       0.1565
+      ],
+      [
+       "QCOM",
+       0.1526
       ]
      ],
      "earnings_skipped": {
@@ -90,24 +133,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H3",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.003852263905004623,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9803,
-    "mean_alpha_at_exposure": -0.003721145446220979,
+    "weeks": 2,
+    "mean_alpha": -0.014040185983837659,
+    "alpha_t": -1.3781222177433723,
+    "mean_invested": 0.99015,
+    "mean_alpha_at_exposure": -0.013974626754445836,
     "mean_vs_production": 0.0,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": 0.008250806669093596,
-    "mean_pctile_vs_random": 0.705,
-    "cumulative": 0.0028034954241142884,
-    "max_drawdown": 0.0
+    "mean_vs_random": -0.005588318020762161,
+    "mean_pctile_vs_random": 0.40499999999999997,
+    "cumulative": -0.01980885548547695,
+    "max_drawdown": -0.022549123349295597
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.00280349542411437,
-     "alpha": -0.003852263905004623,
+     "book_ret": 0.002803483969658309,
+     "alpha": -0.0038522753594606844,
      "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
@@ -137,6 +180,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.02254912334929555,
+     "alpha": -0.024228096608214632,
+     "invested": 1.0,
+     "pctile_vs_random": 0.105,
+     "book": [
+      [
+       "META",
+       0.2394
+      ],
+      [
+       "AES",
+       0.2323
+      ],
+      [
+       "HCA",
+       0.2192
+      ],
+      [
+       "TMO",
+       0.1565
+      ],
+      [
+       "QCOM",
+       0.1526
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -147,24 +224,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": 0.008218415407540411,
-    "alpha_t": 0.0,
+    "weeks": 2,
+    "mean_alpha": -0.004868449207940813,
+    "alpha_t": -0.3720106627002213,
     "mean_invested": 1.0,
-    "mean_alpha_at_exposure": 0.008218415407540411,
-    "mean_vs_production": 0.012070679312545034,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 1,
-    "mean_vs_random": 0.020719365864524334,
-    "mean_pctile_vs_random": 0.865,
-    "cumulative": 0.014874174736659418,
-    "max_drawdown": 0.0
+    "mean_alpha_at_exposure": -0.004868449207940813,
+    "mean_vs_production": 0.009171736775896845,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 2,
+    "mean_vs_random": 0.003804179844887072,
+    "mean_pctile_vs_random": 0.5175,
+    "cumulative": -0.0016442626290155138,
+    "max_drawdown": -0.01627632989187222
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.014874174736659404,
-     "alpha": 0.008218415407540411,
+     "book_ret": 0.014874164064028665,
+     "alpha": 0.008218404734909672,
      "invested": 1.0,
      "pctile_vs_random": 0.865,
      "book": [
@@ -194,6 +271,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.016276329891872218,
+     "alpha": -0.0179553031507913,
+     "invested": 1.0,
+     "pctile_vs_random": 0.17,
+     "book": [
+      [
+       "MRNA",
+       0.2314
+      ],
+      [
+       "HCA",
+       0.231
+      ],
+      [
+       "AES",
+       0.2244
+      ],
+      [
+       "TMO",
+       0.1649
+      ],
+      [
+       "BFLY",
+       0.1483
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -204,18 +315,18 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H1",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.007751221820802338,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9556,
-    "mean_alpha_at_exposure": -0.0074557061065894555,
-    "mean_vs_production": -0.0038989579157977148,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": 0.0043065488198131465,
-    "mean_pctile_vs_random": 0.6,
-    "cumulative": -0.0010954624916833522,
-    "max_drawdown": -0.0010954624916833522
+    "weeks": 2,
+    "mean_alpha": -0.015000316620094727,
+    "alpha_t": -2.069267547937015,
+    "mean_invested": 0.95895,
+    "mean_alpha_at_exposure": -0.01482091011705766,
+    "mean_vs_production": -0.0009601306362570683,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.006703941036561625,
+    "mean_pctile_vs_random": 0.36,
+    "cumulative": -0.021643366508709017,
+    "max_drawdown": -0.021643366508709017
    },
    "weekly": [
     {
@@ -251,6 +362,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.020570438160468035,
+     "alpha": -0.022249411419387116,
+     "invested": 0.9623,
+     "pctile_vs_random": 0.12,
+     "book": [
+      [
+       "META",
+       0.2443
+      ],
+      [
+       "AES",
+       0.2496
+      ],
+      [
+       "QCOM",
+       0.1557
+      ],
+      [
+       "NDSN",
+       0.1623
+      ],
+      [
+       "PRU",
+       0.1504
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -262,18 +407,18 @@
    "registered": "2026-09-21",
    "source": "Pass 3",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": 0.00675280533716088,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9969,
-    "mean_alpha_at_exposure": 0.006773438191081149,
-    "mean_vs_production": 0.010605069242165503,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 1,
-    "mean_vs_random": 0.019138092095189768,
-    "mean_pctile_vs_random": 0.83,
-    "cumulative": 0.01340856466627982,
-    "max_drawdown": 0.0
+    "weeks": 2,
+    "mean_alpha": -0.004228835688961221,
+    "alpha_t": -0.38508230954754963,
+    "mean_invested": 0.9856,
+    "mean_alpha_at_exposure": -0.004196944455623976,
+    "mean_vs_production": 0.009811350294876437,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 2,
+    "mean_vs_random": 0.0042794636086089825,
+    "mean_pctile_vs_random": 0.5349999999999999,
+    "cumulative": -0.00030437682900841256,
+    "max_drawdown": -0.013531503456164273
    },
    "weekly": [
     {
@@ -309,6 +454,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.01353150345616424,
+     "alpha": -0.015210476715083321,
+     "invested": 0.9743,
+     "pctile_vs_random": 0.24,
+     "book": [
+      [
+       "MRNA",
+       0.2438
+      ],
+      [
+       "AES",
+       0.2447
+      ],
+      [
+       "NDSN",
+       0.1823
+      ],
+      [
+       "BFLY",
+       0.1562
+      ],
+      [
+       "PRU",
+       0.1474
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -319,24 +498,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.03048694001312907,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9972,
-    "mean_alpha_at_exposure": -0.03046830388700754,
-    "mean_vs_production": -0.02663467610812445,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": -0.018084731438581355,
-    "mean_pctile_vs_random": 0.14,
-    "cumulative": -0.023831180684010134,
-    "max_drawdown": -0.023831180684010134
+    "weeks": 2,
+    "mean_alpha": -0.023635031904256355,
+    "alpha_t": -3.449403232754572,
+    "mean_invested": 0.9666,
+    "mean_alpha_at_exposure": -0.02357198669691018,
+    "mean_vs_production": -0.009594845920418697,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.015220923518248327,
+    "mean_pctile_vs_random": 0.165,
+    "cumulative": -0.03857538157590734,
+    "max_drawdown": -0.03857538157590734
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.023831180684010078,
-     "alpha": -0.03048694001312907,
+     "book_ret": -0.023831191678078033,
+     "alpha": -0.030486951007197026,
      "invested": 0.9972,
      "pctile_vs_random": 0.14,
      "book": [
@@ -366,6 +545,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.015104139542396604,
+     "alpha": -0.016783112801315683,
+     "invested": 0.936,
+     "pctile_vs_random": 0.19,
+     "book": [
+      [
+       "AES",
+       0.2496
+      ],
+      [
+       "HCA",
+       0.2334
+      ],
+      [
+       "TMO",
+       0.1666
+      ],
+      [
+       "PRU",
+       0.1504
+      ],
+      [
+       "SHW",
+       0.136
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -377,24 +590,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.030115339322824584,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9938,
-    "mean_alpha_at_exposure": -0.030074073614984046,
-    "mean_vs_production": -0.026263075417819963,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": -0.017773691835718305,
-    "mean_pctile_vs_random": 0.145,
-    "cumulative": -0.023459579993705626,
-    "max_drawdown": -0.023459579993705626
+    "weeks": 2,
+    "mean_alpha": -0.02212538126919794,
+    "alpha_t": -2.769144771458038,
+    "mean_invested": 0.97115,
+    "mean_alpha_at_exposure": -0.022061514853860504,
+    "mean_vs_production": -0.00808519528536028,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.013714390744766564,
+    "mean_pctile_vs_random": 0.20500000000000002,
+    "cumulative": -0.03562380698815126,
+    "max_drawdown": -0.03562380698815126
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.02345957999370559,
-     "alpha": -0.030115339322824584,
+     "book_ret": -0.023459591080460244,
+     "alpha": -0.030115350409579238,
      "invested": 0.9938,
      "pctile_vs_random": 0.145,
      "book": [
@@ -424,6 +637,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.012456438869897562,
+     "alpha": -0.014135412128816643,
+     "invested": 0.9485,
+     "pctile_vs_random": 0.265,
+     "book": [
+      [
+       "AES",
+       0.2496
+      ],
+      [
+       "HCA",
+       0.2334
+      ],
+      [
+       "TMO",
+       0.1666
+      ],
+      [
+       "PRU",
+       0.1504
+      ],
+      [
+       "NEM",
+       0.1485
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -434,24 +681,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.003857049262247579,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9807,
-    "mean_alpha_at_exposure": -0.003728593107195583,
-    "mean_vs_production": -4.785357242955909e-06,
+    "weeks": 2,
+    "mean_alpha": -0.014034032535186754,
+    "alpha_t": -1.3789988667454534,
+    "mean_invested": 0.9903500000000001,
+    "mean_alpha_at_exposure": -0.013969804457660755,
+    "mean_vs_production": 6.1534486509042495e-06,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": 0.008246001781920257,
-    "mean_pctile_vs_random": 0.705,
-    "cumulative": 0.0027987100668713794,
-    "max_drawdown": 0.0
+    "mean_vs_random": -0.0055807536980346985,
+    "mean_pctile_vs_random": 0.40499999999999997,
+    "cumulative": -0.01979639284522039,
+    "max_drawdown": -0.02253203104442303
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.002798710066871414,
-     "alpha": -0.003857049262247579,
+     "book_ret": 0.002798698562087629,
+     "alpha": -0.003857060767031364,
      "invested": 0.9807,
      "pctile_vs_random": 0.705,
      "book": [
@@ -481,6 +728,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.022532031044423063,
+     "alpha": -0.024211004303342144,
+     "invested": 1.0,
+     "pctile_vs_random": 0.105,
+     "book": [
+      [
+       "META",
+       0.2391
+      ],
+      [
+       "AES",
+       0.2321
+      ],
+      [
+       "HCA",
+       0.2204
+      ],
+      [
+       "TMO",
+       0.1559
+      ],
+      [
+       "QCOM",
+       0.1525
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -491,24 +772,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.0038577479966985335,
-    "alpha_t": 0.0,
-    "mean_invested": 0.981,
-    "mean_alpha_at_exposure": -0.0037312885694452723,
-    "mean_vs_production": -5.4840916939103215e-06,
-    "weeks_differed": 0,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": 0.008244979275469091,
-    "mean_pctile_vs_random": 0.705,
-    "cumulative": 0.0027980113324204137,
+    "weeks": 2,
+    "mean_alpha": 0.004882027875798492,
+    "alpha_t": 0.5585980110897485,
+    "mean_invested": 0.98815,
+    "mean_alpha_at_exposure": 0.004949203176583582,
+    "mean_vs_production": 0.018922213859636147,
+    "weeks_differed": 1,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": 0.013307456013542841,
+    "mean_pctile_vs_random": 0.7849999999999999,
+    "cumulative": 0.01814159994259401,
     "max_drawdown": 0.0
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.0027980113324204596,
-     "alpha": -0.0038577479966985335,
+     "book_ret": 0.0027979997748220535,
+     "alpha": -0.0038577595542969396,
      "invested": 0.981,
      "pctile_vs_random": 0.705,
      "book": [
@@ -538,6 +819,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": 0.015300788564813005,
+     "alpha": 0.013621815305893924,
+     "invested": 0.9953,
+     "pctile_vs_random": 0.865,
+     "book": [
+      [
+       "META",
+       0.2443
+      ],
+      [
+       "AES",
+       0.2398
+      ],
+      [
+       "SNPS",
+       0.2108
+      ],
+      [
+       "QCOM",
+       0.1557
+      ],
+      [
+       "HCA",
+       0.1447
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -549,24 +864,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.038415936191569286,
-    "alpha_t": 0.0,
-    "mean_invested": 1.0,
-    "mean_alpha_at_exposure": -0.038415936191569286,
-    "mean_vs_production": -0.034563672286564665,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": -0.026147131833231512,
-    "mean_pctile_vs_random": 0.045,
-    "cumulative": -0.03176017686245025,
-    "max_drawdown": -0.03176017686245025
+    "weeks": 2,
+    "mean_alpha": -0.027452971052281012,
+    "alpha_t": -2.504153283205207,
+    "mean_invested": 0.96055,
+    "mean_alpha_at_exposure": -0.027386735557216654,
+    "mean_vs_production": -0.013412785068443352,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.01913803560020887,
+    "mean_pctile_vs_random": 0.1175,
+    "cumulative": -0.04610080867525135,
+    "max_drawdown": -0.04610080867525135
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.03176017686245029,
-     "alpha": -0.038415936191569286,
+     "book_ret": -0.03176018720729149,
+     "alpha": -0.038415946536410485,
      "invested": 1.0,
      "pctile_vs_random": 0.045,
      "book": [
@@ -596,6 +911,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.014811022309232457,
+     "alpha": -0.01648999556815154,
+     "invested": 0.9211,
+     "pctile_vs_random": 0.19,
+     "book": [
+      [
+       "HCA",
+       0.2343
+      ],
+      [
+       "AES",
+       0.2496
+      ],
+      [
+       "TMO",
+       0.1657
+      ],
+      [
+       "PRU",
+       0.1504
+      ],
+      [
+       "SHW",
+       0.1211
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -606,24 +955,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2, reference",
    "summary": {
-    "weeks": 1,
-    "mean_alpha": -0.019086089100330016,
-    "alpha_t": 0.0,
-    "mean_invested": 0.9448,
-    "mean_alpha_at_exposure": -0.018718691185362644,
-    "mean_vs_production": -0.01523382519532539,
-    "weeks_differed": 1,
-    "weeks_better_than_production": 0,
-    "mean_vs_random": -0.007371235038707507,
-    "mean_pctile_vs_random": 0.385,
-    "cumulative": -0.012430329771211057,
-    "max_drawdown": -0.012430329771211057
+    "weeks": 2,
+    "mean_alpha": -0.018269149113827012,
+    "alpha_t": -22.3625505425109,
+    "mean_invested": 0.94665,
+    "mean_alpha_at_exposure": -0.01804221659492616,
+    "mean_vs_production": -0.004228963129989353,
+    "weeks_differed": 2,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.010206601321567487,
+    "mean_pctile_vs_random": 0.2875,
+    "cumulative": -0.02800749907325395,
+    "max_drawdown": -0.02800749907325395
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.01243032977121102,
-     "alpha": -0.019086089100330016,
+     "book_ret": -0.012430342621956953,
+     "alpha": -0.01908610195107595,
      "invested": 0.9448,
      "pctile_vs_random": 0.385,
      "book": [
@@ -646,6 +995,261 @@
       [
        "PRU",
        0.076
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    },
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.015773223017658995,
+     "alpha": -0.017452196276578076,
+     "invested": 0.9485,
+     "pctile_vs_random": 0.19,
+     "book": [
+      [
+       "AES",
+       0.2653
+      ],
+      [
+       "HCA",
+       0.2617
+      ],
+      [
+       "TMO",
+       0.1868
+      ],
+      [
+       "PRU",
+       0.1598
+      ],
+      [
+       "PFE",
+       0.0749
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    }
+   ]
+  },
+  "Ophelia-solo": {
+   "knobs": {
+    "solo": "Ophelia"
+   },
+   "registered": "2026-09-22",
+   "source": "Pass 9b, the engine alone",
+   "summary": {
+    "weeks": 1,
+    "mean_alpha": -0.03054949333171597,
+    "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": -0.03054949333171597,
+    "mean_vs_production": -0.006321396723501339,
+    "weeks_differed": 1,
+    "weeks_better_than_production": 0,
+    "mean_vs_random": -0.026506255845610616,
+    "mean_pctile_vs_random": 0.09,
+    "cumulative": -0.02887052007279689,
+    "max_drawdown": -0.02887052007279689
+   },
+   "weekly": [
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.02887052007279689,
+     "alpha": -0.03054949333171597,
+     "invested": 1.0,
+     "pctile_vs_random": 0.09,
+     "book": [
+      [
+       "META",
+       0.3333
+      ],
+      [
+       "QCOM",
+       0.3333
+      ],
+      [
+       "AMD",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    }
+   ]
+  },
+  "Ophelia-solo-ownmap": {
+   "knobs": {
+    "solo": "Ophelia",
+    "sector_map_builder": "_own_map"
+   },
+   "registered": "2026-09-22",
+   "source": "Pass 10, the owner's map (weekly clusters)",
+   "summary": {
+    "weeks": 1,
+    "mean_alpha": -0.02119872955176368,
+    "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": -0.02119872955176368,
+    "mean_vs_production": 0.003029367056450953,
+    "weeks_differed": 1,
+    "weeks_better_than_production": 1,
+    "mean_vs_random": -0.017155492065658324,
+    "mean_pctile_vs_random": 0.185,
+    "cumulative": -0.019519756292844637,
+    "max_drawdown": -0.019519756292844637
+   },
+   "weekly": [
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.0195197562928446,
+     "alpha": -0.02119872955176368,
+     "invested": 1.0,
+     "pctile_vs_random": 0.185,
+     "book": [
+      [
+       "MRNA",
+       0.3333
+      ],
+      [
+       "BFLY",
+       0.3333
+      ],
+      [
+       "AES",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    }
+   ]
+  },
+  "Cecil-solo": {
+   "knobs": {
+    "solo": "Cecil"
+   },
+   "registered": "2026-09-22",
+   "source": "Pass 11, the engine alone with a point-in-time P/E",
+   "summary": {
+    "weeks": 1,
+    "mean_alpha": -0.027024615719621888,
+    "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": -0.027024615719621888,
+    "mean_vs_production": -0.0027965191114072557,
+    "weeks_differed": 1,
+    "weeks_better_than_production": 0,
+    "mean_vs_random": -0.022981378233516533,
+    "mean_pctile_vs_random": 0.115,
+    "cumulative": -0.02534564246070281,
+    "max_drawdown": -0.02534564246070281
+   },
+   "weekly": [
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.025345642460702807,
+     "alpha": -0.027024615719621888,
+     "invested": 1.0,
+     "pctile_vs_random": 0.115,
+     "book": [
+      [
+       "AES",
+       0.3333
+      ],
+      [
+       "PRU",
+       0.3333
+      ],
+      [
+       "PFE",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
+    }
+   ]
+  },
+  "Union-equal": {
+   "knobs": {
+    "union": true
+   },
+   "registered": "2026-09-22",
+   "source": "Pass 13, every engine's five, equal over the union",
+   "summary": {
+    "weeks": 1,
+    "mean_alpha": -0.025282464942502216,
+    "alpha_t": 0.0,
+    "mean_invested": 1.0,
+    "mean_alpha_at_exposure": -0.025282464942502216,
+    "mean_vs_production": -0.0010543683342875837,
+    "weeks_differed": 1,
+    "weeks_better_than_production": 0,
+    "mean_vs_random": -0.020463394684729824,
+    "mean_pctile_vs_random": 0.025,
+    "cumulative": -0.02360349168358311,
+    "max_drawdown": -0.02360349168358311
+   },
+   "weekly": [
+    {
+     "week": "2026-09-28",
+     "book_ret": -0.023603491683583135,
+     "alpha": -0.025282464942502216,
+     "invested": 1.0,
+     "pctile_vs_random": 0.025,
+     "book": [
+      [
+       "META",
+       0.1111
+      ],
+      [
+       "QCOM",
+       0.1111
+      ],
+      [
+       "AMD",
+       0.1111
+      ],
+      [
+       "AES",
+       0.1111
+      ],
+      [
+       "PRU",
+       0.1111
+      ],
+      [
+       "PFE",
+       0.1111
+      ],
+      [
+       "HCA",
+       0.1111
+      ],
+      [
+       "TMO",
+       0.1111
+      ],
+      [
+       "AAPL",
+       0.1111
       ]
      ],
      "earnings_skipped": {
