@@ -46,8 +46,15 @@ Modes:
                 valid JSON. Absent data/weekly/ = SKIP (the feed has not
                 launched yet) so the Monday gate keeps passing pre-launch.
                 Also validates the optional `provenance` block (per-series
-                anchors, and the per-instrument source that marks US2Y as
-                the Treasury 2-year rather than the 2YY=F future) and
+                anchors, the per-instrument source that marks US2Y as the
+                Treasury 2-year rather than the 2YY=F future, and the
+                `observed` date of an instrument whose value is a stand-in
+                from an earlier session); FAILs a file dated 2026-10-05 or
+                later that carries a futures or dollar-index close read
+                before 13:00 UTC the next day, which is a quote and not a
+                settlement; FAILs a correction that changes an instrument's
+                close without recording what it replaced in `restated` and
+                labelling the replacement; and validates
                 data/us2y_treasury.json, WARNs for any week that has no
                 Treasury 2-year from either place, and FAILs when
                 data/market_state.json shows a US2Y level that is not the
@@ -783,9 +790,10 @@ def _feed_entry_check(fname, section, ticker, entry, rep):
 
 
 def _observed_check(where, observed, as_of, rep):
-    """`observed` is a holiday stand-in: the session a value was published
-    for when that is not the file's date. It is therefore always an earlier
-    day of the same Mon..Fri week, and anything else is a wrong label."""
+    """`observed` is a stand-in: the session a value was published for when
+    the instrument printed nothing on the file's date. It is therefore
+    always an earlier day of the same Mon..Fri week, and anything else is a
+    wrong label."""
     try:
         day = dt.date.fromisoformat(observed)
         of = dt.date.fromisoformat(as_of)
@@ -816,11 +824,13 @@ def _feed_provenance_check(fname, doc, rep):
     """Per-entry provenance (DATA_FEED.md sec.1, `provenance`).
 
     `provenance.series` names the adjustment anchor of a series merged into
-    a week after the fact. `provenance.<block>` names the source of a
-    special instrument that did not come from the file's provider -- the
-    Treasury 2-year, under `rates`. Both are optional; when present they
-    must be exact, because a consumer that trusts one and is wrong reports
-    one anchor for two, or reads a futures mark as a cash yield.
+    a week after the fact. `provenance.<block>` names a special instrument
+    the file-level stamp does not describe: one from another publisher (the
+    Treasury 2-year, under `rates`), one whose value is a stand-in from an
+    earlier session (`observed`), or one a correction restated from a later
+    fetch. Both are optional; when present they must be exact, because a
+    consumer that trusts one and is wrong reports one anchor for two, reads
+    a futures mark as a cash yield, or takes Thursday's close for Friday's.
     """
     prov = doc.get("provenance")
     if prov is None:
@@ -1093,6 +1103,165 @@ def _market_state_us2y_check(repo, weeks, series, history_ok, rep):
     rep.add("OK", f"feed: market_state.json US2Y for {as_of} is {shown}")
 
 
+# ------------------------------------------------- settlement and restatement
+
+# Mirrors scan_pipeline/snapshot_macro.py: the instruments marked "settles"
+# there, under the names a file commits them by, and SETTLED_HOUR_UTC. This
+# script stays importable with nothing but the standard library, so they are
+# repeated here and tests/test_instrument_sessions.py pins them equal.
+LATE_SETTLING = {
+    "rates": ("US2Y_FUT",),
+    "commodities": ("WTI", "GOLD", "SILVER"),
+    "fx": ("DXY",),
+}
+SETTLED_HOUR_UTC = 13
+
+# The rule dates from 2026-10-05. Eleven files written before it hold
+# evening quotes; they cannot be edited, and macro/instrument_audit.json
+# lists every one. A file dated from here on has no such excuse.
+SETTLEMENT_RULE_SINCE = "2026-10-05"
+
+
+def _feed_settlement_check(fname, doc, rep):
+    """A futures or dollar-index close read on the evening of its own
+    session is a quote, not a settlement (snapshot_macro, "The Yahoo path").
+
+    The writer refuses such a bar and lists the instrument in `missing`. A
+    file that carries one anyway was written by a copy of scan_pipeline/
+    that predates the rule -- the Friday job runs the runner's copy, synced
+    by hand -- and since that job stops on a FAIL from this script, the
+    file is caught before it is pushed. The test needs no network: the
+    file's own fetch time against its own date."""
+    as_of = doc.get("as_of")
+    if not isinstance(as_of, str) or as_of < SETTLEMENT_RULE_SINCE:
+        return
+    prov = doc.get("provenance")
+    prov = prov if isinstance(prov, dict) else {}
+    watched = {block: list(tickers) for block, tickers in LATE_SETTLING.items()}
+    if _treasury_us2y(doc) is None:
+        # No Treasury label, so this US2Y is the 2YY=F future (sec.1a).
+        watched["rates"].append("US2Y")
+    for block, tickers in sorted(watched.items()):
+        entries = doc.get(block)
+        if not isinstance(entries, dict):
+            continue
+        labels = prov.get(block) if isinstance(prov.get(block), dict) else {}
+        for ticker in tickers:
+            if ticker not in entries:
+                continue
+            label = labels.get(ticker)
+            label = label if isinstance(label, dict) else {}
+            where = f"{fname} {block}.{ticker}"
+            fetched = label.get("fetched_at") or doc.get("fetched_at")
+            session = label.get("observed") or as_of
+            try:
+                read = dt.datetime.strptime(
+                    fetched, "%Y-%m-%dT%H:%M:%SZ").replace(
+                        tzinfo=dt.timezone.utc)
+                settled = dt.datetime.combine(
+                    dt.date.fromisoformat(session) + dt.timedelta(days=1),
+                    dt.time(SETTLED_HOUR_UTC), tzinfo=dt.timezone.utc)
+            except (TypeError, ValueError):
+                rep.add("FAIL", f"feed: {where} has no readable fetch time "
+                                f"({fetched!r}) or session ({session!r}), "
+                                f"so it cannot be shown to be a settlement")
+                continue
+            if read < settled:
+                rep.add("FAIL", f"feed: {where} was read at {fetched}, "
+                                f"before {settled:%Y-%m-%dT%H:%MZ}. Until "
+                                f"the exchange settlement for {session} is "
+                                f"loaded the bar is a quote, not a close "
+                                f"(WTI 2026-09-18: 95.47 read, 100.30 "
+                                f"settled). The writer lists such an "
+                                f"instrument in 'missing'; a file that "
+                                f"carries it came from a copy of "
+                                f"scan_pipeline/ older than 2026-10-05. "
+                                f"Sync the runner, and run the weekly job "
+                                f"after 13:00 UTC on the Saturday.")
+
+
+def _feed_restated_check(fname, doc, base, rep):
+    """A correction that changes a close says which one and what it replaced.
+
+    Dropping a bar is recorded in `missing` (the AVB correction). Replacing
+    one is recorded in `restated`: [{"block", "ticker", "was": {"close",
+    "volume"}}]. The replacement was fetched at another time than the file,
+    so it carries its own `provenance.<block>.<ticker>` label. Without the
+    record rebuild_corrections.py cannot re-apply the edit when the base
+    changes, and a reader cannot tell a restated close from an observed one.
+
+    Special instruments only. A restated equity close would also need an
+    adjustment anchor, and no correction has needed one.
+    """
+    restated = doc.get("restated")
+    recorded = {}
+    if restated is not None:
+        if not isinstance(restated, list) or not restated:
+            rep.add("FAIL", f"feed: {fname} 'restated' is not a non-empty "
+                            f"list; a correction that restates nothing "
+                            f"omits the key")
+            restated = []
+        for item in restated:
+            ok = (isinstance(item, dict)
+                  and item.get("block") in FEED_EXTRA_BLOCKS
+                  and isinstance(item.get("ticker"), str)
+                  and isinstance(item.get("was"), dict)
+                  and _is_number(item["was"].get("close")))
+            if not ok:
+                rep.add("FAIL", f"feed: {fname} 'restated' entry {item!r} "
+                                f"is not {{block, ticker, was: {{close, "
+                                f"volume}}}} with block one of "
+                                f"{', '.join(FEED_EXTRA_BLOCKS)}")
+                continue
+            recorded[(item["block"], item["ticker"])] = item["was"]
+
+    prov = doc.get("provenance")
+    prov = prov if isinstance(prov, dict) else {}
+    for block in FEED_EXTRA_BLOCKS:
+        now = doc.get(block) if isinstance(doc.get(block), dict) else {}
+        was = base.get(block) if isinstance(base.get(block), dict) else {}
+        for ticker in sorted(set(now) | set(was)):
+            where = f"{fname} {block}.{ticker}"
+            if ticker not in now or ticker not in was:
+                side = "the correction" if ticker in now else "its base"
+                rep.add("FAIL", f"feed: {where} is only in {side}. A "
+                                f"correction may restate a special "
+                                f"instrument's close; adding or dropping "
+                                f"one is not something "
+                                f"rebuild_corrections.py can re-apply")
+                continue
+            key = (block, ticker)
+            if key not in recorded:
+                if now[ticker] != was[ticker]:
+                    rep.add("FAIL", f"feed: {where} is {now[ticker]!r} in "
+                                    f"the correction and {was[ticker]!r} in "
+                                    f"its base, and 'restated' does not "
+                                    f"record the change")
+                continue
+            held = recorded.pop(key)
+            base_close = was[ticker].get("close") \
+                if isinstance(was[ticker], dict) else None
+            if base_close != held.get("close"):
+                rep.add("FAIL", f"feed: {where} 'restated' says the base "
+                                f"held {held.get('close')!r}, but it holds "
+                                f"{base_close!r}. The base moved under the "
+                                f"correction; rebuild_corrections.py will "
+                                f"refuse it. Review by hand.")
+            if now[ticker] == was[ticker]:
+                rep.add("FAIL", f"feed: {where} is recorded in 'restated' "
+                                f"but equals its base; it restates nothing")
+            label = prov.get(block) if isinstance(prov.get(block), dict) \
+                else {}
+            if not isinstance(label.get(ticker), dict):
+                rep.add("FAIL", f"feed: {where} is restated but carries no "
+                                f"provenance.{block}.{ticker} label. The "
+                                f"replacement was fetched at another time "
+                                f"than the file and has to say when")
+    for block, ticker in sorted(recorded):
+        rep.add("FAIL", f"feed: {fname} 'restated' names {block}.{ticker}, "
+                        f"which is in neither the correction nor its base")
+
+
 def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     """Data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no network.
     'missing' is required and never empty-by-omission: a silently absent
@@ -1100,7 +1269,8 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     ambiguity is what the agents fill in from priors.
 
     One contract governs data/weekly/ and data/daily/ alike -- ASCII bytes,
-    required keys, entry shape, correction pointers, per-series provenance.
+    required keys, entry shape, correction pointers and what a correction
+    restated, provenance, and no late-settling close read before it settled.
     Only the Friday rule differs: a daily file is named for whatever session
     settled (DATA_FEED.md sec.4)."""
     weekly = repo / "data" / subdir
@@ -1167,6 +1337,14 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                 if not doc.get("reason"):
                     rep.add("FAIL", f"feed: {f.name} correction lacks "
                                     f"'reason'")
+                if isinstance(corrects, str) and (weekly / corrects).is_file():
+                    try:
+                        base = json.loads(
+                            (weekly / corrects).read_text(encoding="utf-8"))
+                    except (ValueError, OSError):
+                        base = None     # reported under the base's own name
+                    if isinstance(base, dict):
+                        _feed_restated_check(f.name, doc, base, rep)
             else:
                 rep.add("FAIL", f"feed: filename {f.name} does not match "
                                 f"as_of {as_of}")
@@ -1186,6 +1364,7 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
             for ticker, entry in blk.items():
                 _feed_entry_check(f.name, block, ticker, entry, rep)
         _feed_provenance_check(f.name, doc, rep)
+        _feed_settlement_check(f.name, doc, rep)
     rep.add("OK", f"feed: {len(files)} {label} file(s) validated against "
                   f"DATA_FEED.md sec.1 (failures reported above)")
 

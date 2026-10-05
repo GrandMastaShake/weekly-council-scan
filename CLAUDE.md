@@ -57,6 +57,9 @@ The parts that get violated:
   closes are back-adjusted to the fetch date, so downstream consumers use it to
   detect stale splices.
 - **Closes only.** No intraday, no derived fields. The file is an observation.
+- **An instrument close is the bar dated `as_of`, a stand-in the file names,
+  or `missing`.** Never "the last bar on or before", and never a futures or
+  dollar-index bar read before the exchange settled it. `DATA_FEED.md` sec.1b.
 
 ## The correction trap
 
@@ -69,9 +72,17 @@ silently invisible for that week, permanently, with no error anywhere.
 
     python scripts/rebuild_corrections.py
 
-`2026-08-21.corrected.json` should carry ~330 series entries. If it still says
-286, this did not run. The script aborts rather than guessing if a dropped
-ticker no longer has volume 0, since that means the provider restated.
+Two weeks are corrected. `2026-08-21.corrected.json` drops AVB and should
+carry ~330 series entries; if it still says 286, this did not run.
+`2026-08-28.corrected.json` restates three instrument closes and records what
+they replaced in `restated`. The script re-applies each recorded edit only
+while the base still holds what the correction replaced -- a dropped ticker
+still at volume 0, a restated close still at its old value. Otherwise it
+prints ABORT, leaves the file alone and exits 1, so the backfill workflow
+stops before its commit step. (It used to exit 0.)
+
+`tests/test_instrument_sessions.py` fails if any committed correction is not
+what a rebuild would write, so a stale one no longer gets past CI.
 
 ## Universe vs focus set
 
@@ -158,6 +169,17 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   has no file. It names the `--since` command that recovers them. Offline,
   `truth_check --feed` WARNs when the newest daily file is two or more
   weekdays old; it knows no holidays, so it never fails.
+- **Neither attempt is late enough for the futures.** WTI, GOLD, SILVER, DXY
+  and US2Y_FUT trade past the cash close and are not read before 13:00 UTC on
+  the day after the session (Known data defects, below). 21:45 UTC and 09:15
+  UTC are both earlier, so every daily file written since 2026-10-05 lists
+  those five in `missing` with the reason, whichever attempt wrote it. US10Y
+  and VIX are final by evening and are read. The eight files from 2026-09-11
+  to 2026-09-23 hold evening quotes for the five. The heatmap's daily tape
+  reads `fx.DXY` and shows it missing meanwhile. An attempt after 13:00 UTC,
+  with no evening write ahead of it, would bring the five back. Whether 09:15
+  UTC is in fact late enough is not known: no committed read falls between
+  02:58 and 13:07 UTC.
 
 Eight sessions were lost between 2026-09-21 and 2026-10-02 with every run
 green: six to the UTC date, two (the Fridays) to the null-close window, each
@@ -241,10 +263,82 @@ refused once with nothing asking again.
   any other reason (a change to the deriver, say):
 
       python scripts/rederive_market_state.py
+- **Instrument closes from the wrong session, or read before they settled.**
+  Nothing in a file said which session a `rates` / `vol` / `commodities` /
+  `fx` close was read from. The writer took "the last bar on or before" the
+  date and its note was dropped before the file was written. An audit of
+  every committed close against the provider (2026-10-05) found 151 of the
+  789 in the weekly files are not the provider's close for the file's date:
+
+  - **2026-08-28 holds Thursday's US10Y, VIX and DXY** (4.672 / 14.51 / 99.16
+    for 4.72 / 14.43 / 99.70). Fetched Saturday 14:10 UTC. Most likely Yahoo
+    had no usable Friday bar for its index symbols yet and the fallback took
+    Thursday's; a Friday bar carrying Thursday's values would have left the
+    same file, and it cannot say which. Corrected, owner sign-off 2026-10-05.
+  - **Three Friday-evening files hold quotes, not settlements**: WTI, GOLD,
+    SILVER, DXY and the 2-year future in 2026-09-11, 09-18 and 09-25. The
+    2026-09-18 WTI is the 95.47 of #110: the November contract's last trade,
+    where the settled front month was 100.30. The eight daily files from the
+    evening job are the same or worse; on a weekday the bar dated today at
+    19:40 ET is the *next* session's first trades.
+  - **28 holiday stand-ins are unmarked** per instrument, and 2025-07-04 has
+    WTI and SILVER from a July 4 holiday bar beside rates from July 3.
+  - **VIX is absent from 2025-03-14 and 2026-03-13.** The fetch window opened
+    on the Sunday the clocks went forward, and Yahoo returns nothing at all
+    for `^VIX` when it does. Friday minus five days is that Sunday once a year.
+
+  **None of those files is edited**, and only 2026-08-28 is corrected.
+  `macro/instrument_audit.json` lists every finding with the session it
+  actually is, a cause and what was decided. Re-run it with
+
+      python scripts/audit_instruments.py
+
+  which prints only what is new, changed or gone against that list (network
+  and yfinance needed; the tests need neither). Give anything new a cause in
+  the JSON by hand, then `--write`.
+
+  The writer now follows the Treasury path's rules: the bar dated `as_of` or
+  `missing`; a stand-in only when a later bar proves the date was skipped,
+  recorded as `provenance.<block>.<ticker>.observed`; and the five
+  late-settling instruments are not read before 13:00 UTC on the day after
+  `as_of`. None of that catches a bar dated `as_of` with the wrong day's
+  values in it; the audit is what finds that, so run it. `truth_check --feed` fails a file dated 2026-10-05 or later that
+  carries one read earlier, which is what a runner still on the old writer
+  produces.
+
+  **So the weekly job has to run on Saturday after 13:00 UTC**, not Friday at
+  9:13 PM ET where it has been since 2026-09-12. On Friday night the new
+  writer commits a file with no commodities and no dollar index, and a weekly
+  file cannot be completed afterwards. The schedule and the runner's copy of
+  `scan_pipeline/` are both outside this repo and are changed by hand.
+
+  To restate a close in a file that is already committed, with sign-off:
+
+      python scripts/restate_instruments.py --date <as_of> \
+          --instrument rates.US10Y --reason "..."
+
+  It writes `<date>.corrected.json` through the writer's own fetch, records
+  what it replaced, and labels the replacement. Never by hand: an unrecorded
+  change is one the next rebuild erases and the feed gate refuses.
+- **GOLD is two contract months, and nothing in a file says which.** WTI,
+  GOLD and SILVER are Yahoo's continuous symbols. Between 2026-09-05 and
+  2026-10-03 Yahoo rebuilt `GC=F` from the nearest-expiry contract onto the
+  active one, for its whole history. The panel's gold is therefore the old
+  basis through 2026-09-04 (2026-08-28 excepted) and the new one from
+  2026-10-02: 107 of 113 weeks no longer match the provider, by up to 59.00
+  or 1.7%, and any `market_state` GOLD change that spans the boundary
+  includes that spread. Committed volume is the only tell (median 491
+  contracts against 185,701). Not corrected -- neither series is wrong and it
+  would be 104 full copies of the panel -- and not fixed: which contract and
+  which roll rule is a decision nobody has made. `SI=F` and `CL=F` have the
+  same weakness in smaller doses; the audit list has the cases.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
-  recording the actual session.
+  recording the actual session. That note is about the equity series. Which
+  session each instrument is from is in `provenance.<block>` for files
+  written since 2026-10-05, and in `macro/instrument_audit.json` for the five
+  written before.
 
 ## The backfill
 
@@ -292,3 +386,7 @@ moving one breaks his skill silently; update
 - Invent a close to fill a gap. Use `missing` with a reason.
 - Read `rates.US2Y` straight from a weekly file, or let `US2Y_FUT` stand in
   for it. Go through `snapshot.cash_2y_series`; a gap stays a gap.
+- Run the weekly feed job before 13:00 UTC on the Saturday, or bring back
+  "the last bar on or before" for an instrument with no bar on the date.
+- Change a close in a correction by hand. Use `restate_instruments.py`, so
+  the change is recorded in `restated` and survives the next rebuild.

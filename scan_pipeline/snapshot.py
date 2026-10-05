@@ -20,10 +20,11 @@ concurrently). Contract: returns {"rates": {"US10Y": {...}, "US2Y": {...},
 "US2Y_FUT": {...}}, "vol": {"VIX": {...}}, "commodities": {"WTI": ...,
 "GOLD": ..., "SILVER": ...}, "fx": {"DXY": {...}}, "missing": [{"ticker",
 "reason"}]} with values {"close": float, "volume": float|None}, plus an
-optional "provenance" {block: {ticker: {"source", "fetched_at"}}} naming any
-instrument that did not come from PROVIDER. A defensive stub fallback covers
-the module being absent (empty blocks + a missing entry), so this file never
-depends on import success.
+optional "provenance" {block: {ticker: {"source", "fetched_at"[, "observed"]}}}
+naming any instrument that did not come from PROVIDER, and any whose value is
+a stand-in from an earlier session of the week ("observed" is that session).
+A defensive stub fallback covers the module being absent (empty blocks + a
+missing entry), so this file never depends on import success.
 
 US2Y is the one instrument with a second publisher (2026-10-04): the U.S.
 Treasury par yield curve, because Yahoo has no cash 2-year series. A weekly
@@ -361,8 +362,10 @@ def special_provenance(special, doc: dict) -> Dict[str, dict]:
     publisher is named here instead of being relabelled by omission:
     {block: {ticker: {"source", "fetched_at"[, "observed"]}}}. `observed` is
     the session the value was published for, present only when that is not
-    the file's as_of: the publisher skipped as_of and a later row proved it
-    (snapshot_macro.select_treasury_row).
+    the file's as_of: the publisher skipped as_of and a later row or bar
+    proved it (snapshot_macro.select_treasury_row, select_bar). A PROVIDER
+    instrument is named only for that reason -- one read for the date asked
+    has no entry, so a label here always means something.
 
     Only instruments that made it into `doc` are kept -- a label for an
     entry that is not there describes nothing, and the feed gate refuses it.

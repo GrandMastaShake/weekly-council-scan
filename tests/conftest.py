@@ -10,6 +10,7 @@ imports `fetch_context`, which calls requests only when it fetches.
 """
 from __future__ import annotations
 
+import datetime as dt
 import json
 import sys
 import types
@@ -28,12 +29,21 @@ sys.path.insert(0, str(ROOT / "scripts"))
 SCRIPTS = ROOT / "scripts"
 
 
+def settled_stamp(as_of: str) -> str:
+    """A fetch time at which every instrument for as_of has settled: 13:20
+    UTC the next day. A file stamped the evening of its own session cannot
+    carry a futures close (truth_check._feed_settlement_check), and until
+    2026-10-05 this fixture stamped exactly that, 21:00 UTC on the day."""
+    day = dt.date.fromisoformat(as_of) + dt.timedelta(days=1)
+    return day.isoformat() + "T13:20:00Z"
+
+
 def weekly_doc(as_of: str, tickers, close: float = 100.0, volume: int = 1_000_000,
                source: str = "yahoo", fetched_at: str | None = None) -> dict:
     return {
         "as_of": as_of,
         "source": source,
-        "fetched_at": fetched_at or (as_of + "T21:00:00Z"),
+        "fetched_at": fetched_at or settled_stamp(as_of),
         "session": "close",
         "series": {t: {"close": close, "volume": volume} for t in tickers},
         "rates": {}, "vol": {}, "commodities": {}, "fx": {},

@@ -285,6 +285,16 @@ def build_and_write(friday: date, tickers: list, history: dict,
         doc = json.load(f)
     doc["source"] = BACKFILL_SOURCE
     doc["fetched_at"] = RUN_TS
+    # A stand-in's label names the file's own provider (it exists to carry
+    # "observed", the session the value is really from). It was fetched in
+    # this run like everything else, so it takes the same identity; left as
+    # "yahoo" it would be the one live-looking stamp in a backfilled file.
+    # Another publisher's label (US2Y from Treasury) is not ours to restamp.
+    for block in snapshot.SPECIAL_BLOCKS:
+        for label in ((doc.get("provenance") or {}).get(block) or {}).values():
+            if label.get("source") == snapshot.PROVIDER:
+                label["source"] = BACKFILL_SOURCE
+                label["fetched_at"] = RUN_TS
     if session_note:
         doc["session_note"] = session_note
     with open(path, "w", encoding="utf-8", newline="") as f:

@@ -88,6 +88,24 @@ FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
   Saturday crew prompt; confirmed fabrications get a ban entry added to
   `macro/quarantine.json` the same session.
 
+## instrument_audit.json (which session a committed close is)
+
+- The reviewed list of differences between the committed `rates` / `vol` /
+  `commodities` / `fx` closes in `data/weekly` and `data/daily` and the provider's
+  own history: a prior session's close under the file's date, a holiday stand-in
+  the file does not mark, a futures bar read before it settled, a contract month
+  the provider no longer serves. `DATA_FEED.md` sec.1b is the contract.
+- An entry is a statement that the difference was **looked at, not that it was
+  fixed**. The files are observations and are never edited; one week
+  (2026-08-28) is corrected. Each finding carries the session its committed close
+  actually is, where it is one, and a `cause`; the `causes` say what each is, the
+  evidence, and what was decided.
+- `python scripts/audit_instruments.py` re-runs it and prints only what is new,
+  changed or gone against the list. `--write` replaces the findings and carries a
+  cause forward only while its finding is unchanged, so anything new lands
+  unreviewed until someone gives it one by hand. It needs the network and
+  yfinance, so it is not a `truth_check` mode and not in CI.
+
 ## Canonical earnings calendar
 
 `wiki/earnings-surveillance.md` is the ONLY page that states earnings dates.

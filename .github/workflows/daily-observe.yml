@@ -26,6 +26,15 @@ name: Daily observation
 #               after the roll and, even started hours late, before the open.
 #               The session already on file is declined before any fetch.
 #
+# Neither attempt is late enough for the five instruments that trade past the
+# cash close (WTI, GOLD, SILVER, DXY, US2Y_FUT). Their bar is a quote until
+# the exchange settlement is loaded, and on a weekday evening it is the NEXT
+# session's first trades: the file for 2026-09-22 holds WTI 89.63 against a
+# settled 94.59. snapshot_macro does not read one before 13:00 UTC on the day
+# after the session and lists the five in `missing` instead (DATA_FEED.md
+# sec.1b). An attempt after that hour, with no evening write ahead of it,
+# would bring them back.
+#
 # A refusal is a correct outcome and exits clean, so it can never be the
 # alarm: a run that will never write looks exactly like one that declined
 # once. The last step asks the separate question -- does every session the
