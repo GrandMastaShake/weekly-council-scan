@@ -136,8 +136,9 @@ positions scored against it.
 attempt at 09:15 UTC the next morning (UTC Tue-Sat) for the same session.
 
 The weekly files commit Friday closes because that is the cadence the council
-reads. The bars behind them were never weekly -- `fetch_weekly_bars` pulls
-daily bars over a ranged window and keeps one. This feed keeps the rest.
+reads. The bars behind them were never weekly -- `fetch_session_bars`, under
+both feeds, pulls daily bars over a ranged window and keeps one. This feed
+keeps the rest.
 
 - **It is an observation, not a forecast.** It scores nothing. The heatmap's
   two judgment components have no daily source; a daily file carrying them
@@ -392,7 +393,10 @@ refused once with nothing asking again.
   bar proves the Friday was skipped, the last session of that week stands in
   for every ticker and the file says so: `"Friday holiday; bars from
   <date>"`, the note the backfilled holiday weeks carry and
-  `audit_series.py` reads.
+  `audit_series.py` reads. The later bar is checked against the provider's
+  raw chart first, as the daily feed checks: a download returns a session
+  whose close is not posted as no bar at all, the raw listing shows it with
+  a null, and a Friday listed there is never a holiday.
 
   **So a holiday week lands a week late, on purpose.** The job runs on the
   Saturday and SPY's next bar is Monday's, so the proof is never there on the
@@ -404,8 +408,10 @@ refused once with nothing asking again.
 
   **A refusal is green, so the panel is what gets asked.** The weekly job
   writes every Friday `snapshot.unwritten_fridays` lists, oldest first, and
-  stops at the first one refused; after writing more than one it derives
-  through the chain (`snapshot.write_market_state_chain`). `truth_check
+  stops at the first one refused. It derives `market_state.json` through the
+  chain (`snapshot.write_market_state_chain`): the committed state is "last
+  week's" only after exactly one new week, and after two, or none, the
+  deriver handed it takes `corr_prev` from the wrong week. `truth_check
   --feed` fails an empty `series`, a new file with no SPY bar, a
   `session_note` it cannot read a session out of, and a Friday missing
   between two weekly files; it warns from the Sunday while the newest Friday
@@ -416,7 +422,8 @@ refused once with nothing asking again.
   `scripts/backfill_weekly.py` called a week a holiday whenever no ticker had
   a Friday bar, which is every Friday on the night. It asks the witness under
   the same rule now and exits 2 on a week it cannot write, and `--only` can no
-  longer start a week. That is how `2024-08-09.json` came to hold no index
+  longer start a week, with or without SPY among its names: it adds to weeks
+  that exist. That is how `2024-08-09.json` came to hold no index
   or sector ETF at all, SPY among them, with none listed in `missing`. Not
   edited; the gate warns, and a `--merge` backfill of those names adds them.
 
