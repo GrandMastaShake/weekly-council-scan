@@ -168,6 +168,51 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   IONQ and QUBT for the same week of 2025-01-10, which was the quantum-stock
   selloff, not three simultaneous splits. Of 12 ratio candidates in the live
   panel, 2 are real. A failed fetch reports UNVERIFIED, never "no split".
+- **`US2Y` through 2026-10-02 is a futures mark, not the 2-year.** The feed
+  committed Yahoo's `2YY=F` under that key, on the belief that a front-month
+  yield future tracks the cash 2-year within a few bp. Nobody trades the
+  contract (volume 0 on 51 of 54 sessions, open interest 4), so the mark sat
+  still for weeks and met the cash yield only at month-end settlement. 24 of
+  the 113 weeks are more than 10 bp from the Treasury 2-year, the worst -36 bp
+  on 2026-09-18, and `market_state` carried a 2s10s 20 to 36 bp too steep for
+  three weeks (#110, #119, #129). Yahoo has no cash 2-year, so since
+  2026-10-04 `US2Y` comes from the Treasury par yield curve and the future is
+  kept as `US2Y_FUT`. Treasury is the one exception to "one provider";
+  `DATA_FEED.md` sec.1a and its Provider section carry the reasoning.
+
+  **The old files are not edited and not corrected.** They are right about
+  what they observed, and 113 corrections would be 113 full copies of the
+  panel behind the correction trap. What changed is the reader. A weekly
+  file's `US2Y` is the Treasury 2-year only where `provenance.rates.US2Y`
+  names `treasury`; for every other week the value is in
+  `data/us2y_treasury.json`. `snapshot.cash_2y_series` is that rule. A week
+  with neither derives as null with a reason, never from `US2Y_FUT`.
+
+  `truth_check --feed` fails when `market_state.json` shows a 2-year that is
+  not the Treasury 2-year for its week, or anything but null where none
+  exists; when its weekly change or percentile is null although the values
+  are in the tree; and when `data/us2y_treasury.json` is missing from a tree
+  that derived a `market_state.json`. It warns for any week with no Treasury
+  2-year. All of these are what a Friday looks like on a runner that is
+  behind: the writer is the runner's copy of `scan_pipeline/` against the
+  runner's copy of `data/`, both synced by hand, and the weekly job does not
+  write the history file.
+
+  **A missing row is not a holiday.** The fetch takes the row dated `as_of`
+  or lists `US2Y` in `missing`; it stands another day in only when a later
+  row proves Treasury skipped that one, and on the night there is never a
+  later row. So a late Treasury post and a holiday Friday both leave a gap,
+  and the gap is filled afterwards:
+
+      python scripts/backfill_us2y.py
+
+  It adds weeks from Treasury's archive, never rewrites one, and re-derives
+  `market_state.json`, which the new entry makes stale. For a holiday Friday
+  run it after the next session. `--check` compares what is committed against
+  the archive. To regenerate `market_state.json` through the whole chain for
+  any other reason (a change to the deriver, say):
+
+      python scripts/rederive_market_state.py
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
@@ -217,3 +262,5 @@ moving one breaks his skill silently; update
   independent cross-check and unusable as a source.
 - Edit a committed weekly file.
 - Invent a close to fill a gap. Use `missing` with a reason.
+- Read `rates.US2Y` straight from a weekly file, or let `US2Y_FUT` stand in
+  for it. Go through `snapshot.cash_2y_series`; a gap stays a gap.
