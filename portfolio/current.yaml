@@ -1,0 +1,92 @@
+week: '2026-10-05'
+status: open
+positions:
+- ticker: SNPS
+  weight: 0.213
+  sponsor: Ophelia
+  thesis: 'Aligned with Technology sector rotation. Macro score: 78. (confidence:
+    74.8)'
+  entry_price: 496.25
+  entry_date: '2026-10-05'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: JCI
+  weight: 0.17300000000000001
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 9.4%. (confidence:
+    84.5)'
+  entry_price: 155.72000122070312
+  entry_date: '2026-10-05'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: NDSN
+  weight: 0.14800000000000002
+  sponsor: Marky
+  thesis: 'Low volatility uptrend with clean price action. Vol: 2.8%. Score: 85. (confidence:
+    72.1) -- promoted (shares JCI''s XLI line)'
+  entry_price: 333.5400085449219
+  entry_date: '2026-10-05'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AMAT
+  weight: 0.136
+  sponsor: Ophelia
+  thesis: 'Benefiting from the rangebound market regime. Score: 77. (confidence: 71.8)'
+  entry_price: 540.8200073242188
+  entry_date: '2026-10-05'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: LRCX
+  weight: 0.13
+  sponsor: Ophelia
+  thesis: 'Risk-adjusted outperformer with lower volatility. Vol: 3.7%. Score: 76.
+    (confidence: 68.6) -- promoted (shares AMAT''s SMH line)'
+  entry_price: 346.875
+  entry_date: '2026-10-05'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 769.6900024414062
+spy_entry_source: open
+vix_at_entry: 15.31
+fed_stance: 'Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0);
+  SEP dots: 16 of 18 participants see another 2026 hike; October-hike odds fell to
+  roughly 17-23% after September payrolls +29K and Jefferson/Williams "no need for
+  urgency" -- a hiking cycle on pause, not ended (macro/facts.json policy.fed_stance
+  = "Hike"; wiki/synthesis.md Section 3).'
+total_weight: 0.8
+cash_weight: 0.19999999999999996
