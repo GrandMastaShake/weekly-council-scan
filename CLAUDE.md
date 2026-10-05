@@ -8,7 +8,8 @@ cron execution.
 
 Windows. The Council's Monday scheduling is external (Kimi's cron), not GitHub
 Actions. The workflows are the manual backfill (2026-08-25), CI, the daily
-observation of one closed session into `data/daily/` (21:45 UTC weekdays),
+observation of one closed session into `data/daily/` (21:45 UTC weekdays,
+tried again at 09:15 UTC the next morning),
 and the owner's screen, the Butterfly Net (`screen/daily_screen.py`), run on
 weekday evenings after the close for the next session and committed to
 `screen/reports/` with a run log in `runs.json` (2026-09-23, evenings since
@@ -115,7 +116,8 @@ positions scored against it.
 ## The daily observation feed
 
 `data/daily/<session>.json`, DATA_FEED.md sec.4. Written by
-`scripts/daily_observe.py`, scheduled weekdays 21:45 UTC.
+`scripts/daily_observe.py`, scheduled weekdays 21:45 UTC with a second
+attempt at 09:15 UTC the next morning (UTC Tue-Sat) for the same session.
 
 The weekly files commit Friday closes because that is the cadence the council
 reads. The bars behind them were never weekly -- `fetch_weekly_bars` pulls
@@ -133,7 +135,33 @@ daily bars over a ranged window and keeps one. This feed keeps the rest.
   agree on SPY to the penny and disagree ~1% across 57 dividend payers, and
   50% on APH. Treat `data/daily/` as its own panel.
 - Bootstrap a range with `--since`: one ranged download, so every session in
-  it shares one anchor. Per-date runs would give each file its own.
+  it shares one anchor. Per-date runs would give each file its own. It skips
+  sessions already on file and never runs past the last close.
+- **The session is picked by the US/Eastern clock, never the runner's UTC
+  date.** The default is the latest weekday whose 16:00 ET close has passed.
+  GitHub starts the evening schedule hours late; read off UTC, a start after
+  00:00 asked for a date that had not traded and never looked at the session
+  that had closed. A date still in session is refused before any fetch: SPY
+  has a bar for it all day, and it is the forming one.
+- **The provider blanks the just-closed bar for an hour or more each
+  evening.** From 00:00 UTC (20:00 ET in summer, the end of the post-market
+  session) until its end-of-day roll the row is there with a NULL close: on
+  this feed the bar was served through 23:59:53 UTC, gone at 00:10 and 00:45,
+  back by 01:38. Which clock the window follows in winter is not known.
+  yfinance turns it into "no bar" silently, so the gate refuses -- correctly
+  -- and the refusal now says which it was: not a session, not settled, or no
+  answer. It is not the `end` date; the provider appends its newest row
+  whatever the window says. The morning attempt exists for this.
+- **A refusal is green by design, so it can never be the alarm.** The alarm
+  is the workflow's last step: `daily_observe.py --audit` asks the witness
+  which sessions exist and exits 1 when a settled one, other than the newest,
+  has no file. It names the `--since` command that recovers them. Offline,
+  `truth_check --feed` WARNs when the newest daily file is two or more
+  weekdays old; it knows no holidays, so it never fails.
+
+Eight sessions were lost between 2026-09-21 and 2026-10-02 with every run
+green: six to the UTC date, two (the Fridays) to the null-close window, each
+refused once with nothing asking again.
 
 ## Known data defects
 
