@@ -1,0 +1,68 @@
+week: '2026-10-05'
+lock: 2026-10-05 08:50 ET
+entry_date: '2026-10-05'
+exit_date: '2026-10-09'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 769.69
+  entry_price_source: open
+players:
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: RDVT
+    weight: 0.2
+    entry_price: 79.52
+    entry_price_source: open
+  - ticker: NVDA
+    weight: 0.15
+    entry_price: 236.07
+    entry_price_source: open
+  - ticker: INSP
+    weight: 0.25
+    entry_price: 69.66
+    entry_price_source: open
+  - ticker: CDNA
+    weight: 0.1
+    entry_price: 66.9
+    entry_price_source: open
+  - ticker: BTC
+    weight: 0.3
+    entry_price: 38.05
+    entry_price_source: open
+- player: GrandMastaShake
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: AMAT
+    weight: 0.2
+    entry_price: 540.82
+    entry_price_source: open
+  - ticker: NVDA
+    weight: 0.2
+    entry_price: 236.07
+    entry_price_source: open
+  - ticker: XOM
+    weight: 0.2
+    entry_price: 163.76
+    entry_price_source: open
+  - ticker: GEV
+    weight: 0.15
+    entry_price: 988.06
+    entry_price_source: open
+  - ticker: BJRI
+    weight: 0.1
+    entry_price: 62.23
+    entry_price_source: open
+  - ticker: GEF
+    weight: 0.1
+    entry_price: 81.62
+    entry_price_source: open
+  - ticker: RKLB
+    weight: 0.05
+    entry_price: 73.59
+    entry_price_source: open
