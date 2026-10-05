@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-10-05 | B- (2.72 -- analysis quality) | TBD (week open) | Cecil (3.23 rolling -- on the record; no pick booked for a second week, ALL/HIG/TROW blocked on XLF's 50D) | Ophelia (named falsifier 'HY OAS through 300' fired at 324 with no size consequence on a 47.9% sleeve; confidence graded at 60; Cecil's duration flag CONFIRMED a third time, carried) | AMAT (B+) | SNPS (C+) | 20.0% |
 | 2026-09-28 | -1.15% | 33% | TBD | TBD | AMD (1.44%) | META (-2.93%) | 20.0% |
 | 2026-09-28 | B- (2.80 -- analysis quality) | TBD (week open) | Cecil (3.28 rolling -- on the record; no pick booked this week, all three trigger-blocked) | Ophelia (confidence 72-79 outran her own named doubt -- HY OAS 270->280 -- on a 50% sleeve; Cecil's duration flag CONFIRMED, carried) | AAPL (B) | META (B-) | 20.0% |
 | 2026-09-21 | 0.41% | 33% | TBD | TBD | AMD (8.00%) | HIG (-5.66%) | 47.8% |
@@ -281,9 +282,9 @@ The Synthesizer's rejects deserve their own graveyard. Every week, log the top 1
 
 > *"The Scoreboard does not care about your thesis. It cares about your results. Defend your process in the Arena. Defend your grades here."*
 
-**Last Updated:** 2026-09-28 (Council session -- AAPL 30.0% / META 29.4% / AMD 20.6%, 20.0% cash; the owner's cash cap met exactly in its first full week; ALL + HIG blocked on XLF's fired 50D line, VICI on XLRE's trapdoor, TMO declined as a chase; Cecil has no name in the book)
-**Next Audit:** 2026-10-05 (Tracker close of the 2026-09-28 week + Arena scoring of arena/2026-09-28.yaml + shadow-book/rejections counterfactuals for 2026-09-28 + the owed exit-shadow stop re-calibration)
-**Current Regime:** Restrictive and TIGHTENING, now led by term premium -- funds 3.75-4.00% (16 of 18 dots see another 2026 hike; CME ~73-76% for Oct 28). 10Y **5.184%** -- the first WEEKLY close above 5.00% since July 2007 (5Y tail 3.1bp, breakevens flat 2.34%); 10Y-3M +111bp / 10Y-2Y +31bp; VIX 14.87; DXY **101.04** (commodity restriction ON, #115); WTI $92.44 (-7.84%); HY OAS 280 / HY-IG 201. Breadth red on live gauges (26.5% above the 50D). **2 regime flags raised + NFP at risk.** This week's gate: core PCE Wed Sep 30 8:30 AM + Micron after the close; NFP Fri. Council Review posture holds; the book is 80% invested by rule.
+**Last Updated:** 2026-10-05 (Council session -- SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0%, 20.0% cash; ALL + HIG blocked on XLF's fired 50D line, TROW blocked as a promotion, APH declined; the cash cap met by promoting NDSN and LRCX rather than raising three survivors; Cecil has no name in the book for a second week; prior week closed -1.15% vs SPY +0.17%)
+**Next Audit:** 2026-10-12 (Tracker close of the 2026-10-05 week + Arena scoring of arena/2026-10-05.yaml + shadow-book/rejections counterfactuals for 2026-10-05, including Shadow B, the promotion-vs-raise test + the still-owed full re-write of the exit-shadow stop-calibration block)
+**Current Regime:** Restrictive, hiking cycle on pause, bear steepening -- funds 3.75-4.00% (October-hike odds ~17-23% after payrolls +29K). 10Y **5.277%**, through 5.25% on a weekly close (high 5.342%, mostly real yield); 10Y-3M +128bp / 10Y-2Y +45bp; VIX 15.31; DXY **101.93** (commodity restriction ON, #115); WTI $91.11; HY OAS **324** (above 300 since Sep 28) / HY-IG 238 vs the 250 trigger; CCC 1,215. Breadth red (24.7% above the 50D). **3 regime flags raised** (NFP fired, 10Y broken, CPI carried). This week's gate: $39B 10-year auction Wed Oct 7 1:00 PM + FOMC minutes 2:00 PM; bank and healthcare prints Oct 13; CPI Oct 14. Council Review posture holds (#127).
 
 ---
 
