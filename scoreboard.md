@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-09-28 | -1.15% | 33% | TBD | TBD | AMD (1.44%) | META (-2.93%) | 20.0% |
 | 2026-09-28 | B- (2.80 -- analysis quality) | TBD (week open) | Cecil (3.28 rolling -- on the record; no pick booked this week, all three trigger-blocked) | Ophelia (confidence 72-79 outran her own named doubt -- HY OAS 270->280 -- on a 50% sleeve; Cecil's duration flag CONFIRMED, carried) | AAPL (B) | META (B-) | 20.0% |
 | 2026-09-21 | 0.41% | 33% | TBD | TBD | AMD (8.00%) | HIG (-5.66%) | 47.8% |
 | 2026-09-21 | B (3.00 -- analysis quality) | TBD (week open) | Ophelia (3.30 rolling, tie with Cecil broken by AMD B+; thesis/ticker match restored) | Cecil (value screen may be pricing duration as cheapness; HIG's intact trigger did not measure the risk that hurt it) | AMD (B+) | HIG (B-) | 47.8% |

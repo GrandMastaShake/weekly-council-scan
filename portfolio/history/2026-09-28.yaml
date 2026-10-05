@@ -1,5 +1,5 @@
 week: '2026-09-28'
-status: open
+status: closed
 positions:
 - ticker: AAPL
   weight: 0.3
@@ -12,11 +12,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 333.69000244140625
+  exit_date: '2026-10-02'
+  exit_reason: week_end
+  pnl_pct: -1.96
+  entry_price_adjusted: 340.3699951171875
+  return_basis: total_return_same_snapshot
 - ticker: META
   weight: 0.294
   sponsor: Ophelia
@@ -28,11 +30,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 728.0800170898438
+  exit_date: '2026-10-02'
+  exit_reason: week_end
+  pnl_pct: -2.93
+  entry_price_adjusted: 750.0399780273438
+  return_basis: total_return_same_snapshot
 - ticker: AMD
   weight: 0.20600000000000002
   sponsor: Ophelia
@@ -44,11 +48,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 633.9099731445312
+  exit_date: '2026-10-02'
+  exit_reason: week_end
+  pnl_pct: 1.44
+  entry_price_adjusted: 624.9000244140625
+  return_basis: total_return_same_snapshot
 spy_entry: 768.3499755859375
 spy_entry_source: open
 vix_at_entry: 14.87
@@ -59,3 +65,11 @@ fed_stance: 'Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0,
   Section 3).'
 total_weight: 0.8
 cash_weight: 0.19999999999999996
+spy_entry_adjusted: 768.3499755859375
+spy_return_basis: total_return_same_snapshot
+weighted_return: -1.15
+spy_return: 0.17
+alpha: -1.32
+spy_exit: 769.6400146484375
+close_date: '2026-10-02'
+hit_rate: 0.33
