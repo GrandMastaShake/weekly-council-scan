@@ -739,3 +739,46 @@ The other thing to own: I have 30% of the book in one name, the largest single p
 - [ ] Cash rule -- the book is 20.0% cash. For the first time the song gets the full band whether I call for it or not.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-10-05
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $769.64, **-0.22% W/W** | Above the 50D ($763.70), 1% under the record close. Equal-weight lower a seventh straight week |
+| Breadth | **24.7%** of the S&P above its 50D (20.9% Wednesday) | Red for a second week. New lows beat new highs every day |
+| VIX | **15.31**, four closes above 16.00, high 17.59 | Gave it all back on a bad jobs number. That reading lasts until the next weak number |
+| 10Y Yield | **5.277%**, high **5.342%** | My line is 5.342%. Wednesday 1:00 PM is the test |
+| SMH / XLK | $630.60 (through $609.66 on 57% more volume) / $199.81 (record close, sold its own gap) | Two breakouts. One confirmed, one with an asterisk |
+| XLI | $169.95, 200D $171.48 | Third week under it. Thursday's $166.18 low reversed on the week's heaviest volume |
+
+**Verdict:** A record index on a quarter of its members. The leaders are extended and they are still the leaders.
+
+### Last Week, Scored
+- **AAPL** booked 30.0% -> **-1.96%**. Never above +0.77%, low -4.28% on Thursday, $2.46 above the shadow stop. XLK never came near $190. The line held and the stock lost money anyway; a trigger is not a floor.
+- **TMO**, which I conceded, lost **-3.51%**. The desk's "don't chase" was worth about four and a half points against the book.
+- **TEL**, not promoted for sharing AAPL's line, made **+2.63%** -- the one name left out that beat the book.
+
+### Picks (Booked)
+1. **JCI** -- 84.5 -- **BOOKED 17.3%.** 52-week closing high $156.24, RSI 67.9, 4W +9.9%, above both moving averages while its sector sits under the 200-day. Relative strength is the whole thesis. Trigger: invalid on an XLI close below $166.18, 2.2% headroom.
+2. **NDSN** -- 72.1 -- **PROMOTED, BOOKED 14.8%.** Low-volatility uptrend, $333.54 against a $334.70 high, RSI 66.8. Shares JCI's XLI line, and the report says so in the table.
+3. **APH** -- 78.7 -- **declined.** The engine's own words were "breakout with volume fading."
+
+### The Concession (owned)
+APH. I wrote the rule on 2026-08-17: a breakout without bodies in the room is a ghost. The engine gave me a higher confidence on APH than on NDSN and told me in the same line that the volume was leaving. I do not get to keep the rule for GILD and waive it for a name I like. Conceded without an argument.
+
+The other thing to own is what I did not concede. Both my names are industrials at highs inside a fund that has closed three weeks under its 200-day, and my own page says I am out of the XLI bear-trap by the letter. Neither name is in a wiki. The consensus says own machinery and power and names CAT, GEV and ETN; I brought two different tickers. If XLI closes under $166.18, both go on one number, and that is 32.1% of the book on my signature.
+
+### Lesson Learned
+**Last week's lesson got used, which is rarer than writing one.** "Size you inherit is still size you own" was about AAPL going from 18% to 30% by arithmetic. This week the same arithmetic would have made JCI 30.0%. The Council promoted NDSN and LRCX instead and JCI is 17.3%. Two names on one line at 32% is not obviously safer than one name at 30% -- the line is the same line -- but the name risk is halved, and TEL last week says the stacking fear cost us a winner. I will find out on Friday which way that cuts, and it is written in the shadow book so I cannot remember it differently.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **101.93** and 10Y 5.277%. Both lit, second week. No commodity longs in the book.
+- [x] "Good news = sell" cycle peaks -- fourteen beats last week, eight closed lower. Micron beat and fell. Still on.
+- [x] 3+ canaries/regime flags -- 3 raised (NFP fired, 10Y broken, CPI carried). Answered with 80% invested, by rule.
+- [x] VIX < 16 + bad breadth -- VIX 15.31, 24.7% above the 50D. Hedges are cheap and the book has none.
+- [ ] Cash rule -- 20.0% cash. The cap sets it.
+
+-- **Marky**, The Technician
