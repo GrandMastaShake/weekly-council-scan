@@ -203,8 +203,11 @@ refused once with nothing asking again.
   week-over-week return across them is the ratio rather than a market move.
   Two are known: **APH** (2:1, 2026-09-03) and **MNST** (2:1, 2026-08-11).
   Neither is in the 110-name analysis set, so heatmap sector scores are
-  untouched -- `market_state` and Arena, which derive over the full universe,
-  are not.
+  untouched. Nothing else in this repo derives across them either:
+  `market_state` reads only the four index and twelve sector ETFs from
+  `series`, and Arena and the Tracker fetch their own bars. (Until 2026-10-05
+  this said both derive over the full universe. Neither does.) A reader over
+  every name would hit the step: `panel_source.py` when it is on, or a chart.
 
   **The panel is not edited for these.** A weekly file is an observation and
   `2026-08-28.json` correctly records APH as it stood that day; rewriting it
