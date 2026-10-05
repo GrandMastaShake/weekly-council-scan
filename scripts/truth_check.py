@@ -45,6 +45,15 @@ Modes:
                 close > 0 with volume null or >= 0, file pure ASCII and
                 valid JSON. Absent data/weekly/ = SKIP (the feed has not
                 launched yet) so the Monday gate keeps passing pre-launch.
+                FAILs a file whose `series` is empty or holds no SPY bar:
+                SPY is the session witness, and a weekly file written on a
+                market holiday by a writer from before 2026-10-06 is
+                `series: {}` with nothing to say why. Validates a weekly
+                file's `session_note` (the session its bars are from, when
+                that is not the Friday). FAILs when a Friday between two
+                weekly files has no file -- a week the writer refused and
+                nobody came back for -- and WARNs while the newest Friday
+                is still owed one.
                 Also validates the optional `provenance` block (per-series
                 anchors, the per-instrument source that marks US2Y as the
                 Treasury 2-year rather than the 2YY=F future, and the
@@ -1262,6 +1271,182 @@ def _feed_restated_check(fname, doc, base, rep):
                         f"which is in neither the correction nor its base")
 
 
+# ------------------------------------------------------- the session witness
+
+# Mirrors scan_pipeline/snapshot.py (WITNESS, SESSION_NOTE). This script
+# stays importable with nothing but the standard library, so the two are
+# repeated here and tests/test_weekly_session.py pins them equal.
+WITNESS = "SPY"
+SESSION_NOTE_RE = re.compile(
+    r"^Friday holiday; bars from (\d{4}-\d{2}-\d{2})$")
+
+# The witness rule dates from 2026-10-06. One file written before it has
+# series and no SPY bar: 2024-08-09.json was started by a backfill run
+# restricted to 44 names, had 270 more merged in, and never got the four
+# index or twelve sector ETFs -- which it does not list in `missing` either.
+# It cannot be edited, so it is warned about, with the command that adds
+# them. A file dated from here on has no such excuse. An EMPTY series fails
+# whatever its date: no committed file is one.
+WITNESS_RULE_SINCE = "2026-10-06"
+
+# A weekly file is due once its Friday is this many days old. The job that
+# writes it runs on the Saturday (DATA_FEED.md sec.1b), so a warning on the
+# Saturday itself would fire every week and mean nothing.
+WEEKLY_DUE_DAYS = 2
+
+
+def _feed_session_check(fname, doc, weekly, rep):
+    """A file is one equity session, and SPY is the witness that it happened
+    (DATA_FEED.md sec.1c).
+
+    Run on a market holiday, the weekly writer used to commit `series: {}`:
+    every ticker in `missing` for want of a bar dated the Friday, nothing to
+    say the Friday was not a session, and this gate passed it (run for
+    2026-07-03 on 2026-10-05). Derived from such a week, market_state.json
+    is null in every index and sector field, and sector-regime-heatmap
+    scores eleven sectors on no constituents in three separate runs. The
+    writer refuses now (snapshot.write_weekly, NoSessionWitness). A file
+    that gets here anyway came from a copy of scan_pipeline/ older than
+    2026-10-06 -- the Saturday job runs the runner's copy, synced by hand --
+    or was built another way, and since that job stops on a FAIL from this
+    script it is caught before it is pushed.
+
+    `session_note` is how a weekly file names a session that is not its
+    Friday. scripts/audit_series.py reads the date out of it, so its form
+    is fixed and the date has to be one that can stand in: an earlier day
+    of the same week."""
+    series = doc.get("series")
+    as_of = doc.get("as_of")
+    if isinstance(series, dict) and WITNESS not in series:
+        cure = ("The writer refuses such a week and writes it whole once a "
+                "later session proves the Friday was skipped. Sync "
+                "scan_pipeline/ on the runner and remove the file from its "
+                "copy; never commit it.")
+        if not series:
+            rep.add("FAIL", f"feed: {fname} 'series' is empty -- no equity "
+                            f"session was observed, and the file does not "
+                            f"say why. It was written on a market holiday, "
+                            f"or before the provider had posted, by a "
+                            f"writer from before 2026-10-06. {cure}")
+        elif isinstance(as_of, str) and as_of < WITNESS_RULE_SINCE:
+            listed = any(isinstance(m, dict) and m.get("ticker") == WITNESS
+                         for m in doc.get("missing") or [])
+            silent = "" if listed else (", and does not list it in "
+                                        "'missing'")
+            rep.add("WARN", f"feed: {fname} has {len(series)} series and no "
+                            f"{WITNESS} bar{silent}. It predates the "
+                            f"witness rule and cannot be edited; "
+                            f"market_state derives every window that starts "
+                            f"or ends on {as_of} as null. A --merge "
+                            f"backfill adds the names without touching the "
+                            f"rest (Actions -> Backfill weekly panel: the "
+                            f"tickers, start and end {as_of}).")
+        else:
+            rep.add("FAIL", f"feed: {fname} has {len(series)} series and no "
+                            f"{WITNESS} bar. {WITNESS} is the session "
+                            f"witness: without it nothing shows the date "
+                            f"was a settled session, and every figure "
+                            f"relative to the benchmark is undefined. "
+                            f"{cure}")
+    if not weekly or "session_note" not in doc:
+        return
+    note = doc["session_note"]
+    found = SESSION_NOTE_RE.match(note) if isinstance(note, str) else None
+    if not found:
+        rep.add("FAIL", f"feed: {fname} session_note {note!r} is not "
+                        f"'Friday holiday; bars from YYYY-MM-DD'. It is the "
+                        f"record of which session the equity bars are from, "
+                        f"and readers take the date out of it")
+        return
+    _observed_check(f"{fname} session_note", found.group(1),
+                    doc.get("as_of"), rep)
+
+
+def _listing(days, limit=6):
+    shown = ", ".join(days[:limit])
+    if len(days) > limit:
+        shown += f", ... and {len(days) - limit} more"
+    return shown
+
+
+def weekly_gaps(have, today):
+    """(holes, owed) for a weekly panel. Pure.
+
+    have: the Fridays that have a file, as ISO dates. holes: Fridays between
+    the first and the newest of them with no file. owed: Fridays after the
+    newest that are WEEKLY_DUE_DAYS old or more."""
+    if not have:
+        return [], []
+    weeks = sorted(have)
+    on_file = set(weeks)
+    holes, owed = [], []
+    day = dt.date.fromisoformat(weeks[0])
+    day += dt.timedelta(days=(4 - day.weekday()) % 7)       # the first Friday
+    newest = dt.date.fromisoformat(weeks[-1])
+    due = today - dt.timedelta(days=WEEKLY_DUE_DAYS)
+    while day <= max(newest, due):
+        if day.isoformat() not in on_file:
+            (holes if day < newest else owed).append(day.isoformat())
+        day += dt.timedelta(days=7)
+    return holes, owed
+
+
+def check_weekly_completeness(repo, today, rep):
+    """Is every week there? (DATA_FEED.md sec.1c.) No network.
+
+    The weekly writer refuses a Friday it has no session witness for, and a
+    refusal is a correct outcome: nothing is written and nothing fails. The
+    daily feed lost eight sessions that way with every run green, so the
+    panel itself is asked.
+
+      FAIL  a Friday between two weekly files has no file. The job went on
+            past a week it had refused. Proof that the Friday was skipped,
+            or its own late bar, exists by then, so nothing stands in the
+            way of writing it; what does not exist is anything that will.
+      WARN  the newest Friday or Fridays have no file yet. That is what a
+            refusal looks like until the next session, and what a job that
+            did not run looks like. It cannot be told apart from here.
+    """
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        return
+    have = sorted(f.stem for f in weekly.glob("*.json")
+                  if re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem))
+    if not have:
+        return
+    holes, owed = weekly_gaps(have, today)
+    if holes:
+        rep.add("FAIL", f"feed: no weekly file for {_listing(holes)} -- "
+                        f"{len(holes)} week(s) missing between {have[0]} "
+                        f"and {have[-1]}. The writer refuses a Friday it "
+                        f"has no session witness for, and the job went on "
+                        f"without coming back. market_state nulls every "
+                        f"window that ends on a missing week, and a reader "
+                        f"that counts weeks by position "
+                        f"(sector-regime-heatmap) reads a window longer "
+                        f"than it says. Write them, oldest first, with the "
+                        f"weekly job's own calls for each Friday: "
+                        f"snapshot.fetch_weekly_bars, "
+                        f"snapshot_macro.fetch_special_instruments, "
+                        f"snapshot.write_weekly; then re-derive "
+                        f"market_state.json through the chain "
+                        f"(snapshot.write_market_state_chain). "
+                        f"snapshot.unwritten_fridays lists them.")
+    if owed:
+        rep.add("WARN", f"feed: no weekly file yet for {_listing(owed)} "
+                        f"(newest is {have[-1]}). Either the weekly job has "
+                        f"not run, or the writer refused: no {WITNESS} bar "
+                        f"dated the Friday and none after it, which is what "
+                        f"a market holiday looks like until the next "
+                        f"session. The next run writes the oldest first "
+                        f"(snapshot.unwritten_fridays), before the week "
+                        f"after it.")
+    if not holes and not owed:
+        rep.add("OK", f"feed: weekly panel is complete -- {len(have)} "
+                      f"week(s) from {have[0]} through {have[-1]}, none "
+                      f"missing")
+
+
 def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     """Data-feed validation (DATA_FEED.md sec.1). Pure stdlib, no network.
     'missing' is required and never empty-by-omission: a silently absent
@@ -1269,10 +1454,11 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     ambiguity is what the agents fill in from priors.
 
     One contract governs data/weekly/ and data/daily/ alike -- ASCII bytes,
-    required keys, entry shape, correction pointers and what a correction
-    restated, provenance, and no late-settling close read before it settled.
-    Only the Friday rule differs: a daily file is named for whatever session
-    settled (DATA_FEED.md sec.4)."""
+    required keys, entry shape, the session witness, correction pointers and
+    what a correction restated, provenance, and no late-settling close read
+    before it settled. Only the Friday rule differs, and `session_note` with
+    it: a daily file is named for whatever session settled (DATA_FEED.md
+    sec.4), so it has no other session to name."""
     weekly = repo / "data" / subdir
     if not weekly.is_dir():
         rep.add("SKIP", f"feed: {weekly} not found -- {label} feed has not "
@@ -1363,6 +1549,7 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                 continue
             for ticker, entry in blk.items():
                 _feed_entry_check(f.name, block, ticker, entry, rep)
+        _feed_session_check(f.name, doc, require_friday, rep)
         _feed_provenance_check(f.name, doc, rep)
         _feed_settlement_check(f.name, doc, rep)
     rep.add("OK", f"feed: {len(files)} {label} file(s) validated against "
@@ -1734,6 +1921,7 @@ def main():
         check_counterfactuals(repo, today, rep)
     if run_all or args.feed:
         check_feed(repo, rep)
+        check_weekly_completeness(repo, today, rep)
         check_us2y_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")

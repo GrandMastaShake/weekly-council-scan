@@ -418,7 +418,7 @@ def test_a_late_run_observes_the_session_that_closed(
         return {"bars": bars("SPY", "AAPL"), "missing": []}
 
     at("2026-09-29 01:17")
-    monkeypatch.setattr(do, "fetch_weekly_bars", fetch)
+    monkeypatch.setattr(do, "fetch_session_bars", fetch)
     assert do.main(["--out", str(tmp_path), "--no-special"]) == 0
     assert asked == ["2026-09-28"]
     assert (tmp_path / "daily" / "2026-09-28.json").is_file()
@@ -429,7 +429,7 @@ def test_an_unsettled_session_is_refused_and_the_refusal_says_why(
     """Run 37083274612 again: 00:45 UTC on Saturday, rows for the whole
     window and none for Friday."""
     at("2026-10-03 00:45")
-    monkeypatch.setattr(do, "fetch_weekly_bars", lambda tickers, as_of: {
+    monkeypatch.setattr(do, "fetch_session_bars", lambda tickers, as_of: {
         "bars": {}, "missing": [{"ticker": t, "reason": "no bar dated " + as_of}
                                 for t in tickers]})
     monkeypatch.setattr(do, "witness_rows", lambda start, end, fetch=None: {
@@ -445,7 +445,7 @@ def test_an_unsettled_session_is_refused_and_the_refusal_says_why(
 def test_the_morning_after_attempt_writes_what_the_evening_one_could_not(
         tmp_path, monkeypatch, at):
     at("2026-10-03 09:15")                       # Saturday, 05:15 ET
-    monkeypatch.setattr(do, "fetch_weekly_bars", lambda tickers, as_of: {
+    monkeypatch.setattr(do, "fetch_session_bars", lambda tickers, as_of: {
         "bars": bars("SPY", "AAPL"), "missing": []})
     assert do.main(["--out", str(tmp_path), "--no-special"]) == 0
     doc = json.loads((tmp_path / "daily" / "2026-10-02.json").read_text(
@@ -460,7 +460,7 @@ def test_a_session_already_on_file_is_declined_before_any_fetch(
     (tmp_path / "daily" / "2026-10-02.json").write_text(
         "{}\n", encoding="utf-8", newline="\n")
     at("2026-10-03 09:15")
-    monkeypatch.setattr(do, "fetch_weekly_bars", no_fetch)
+    monkeypatch.setattr(do, "fetch_session_bars", no_fetch)
     assert do.main(["--out", str(tmp_path)]) == 2
     assert "already exists" in capsys.readouterr().out
 
@@ -468,7 +468,7 @@ def test_a_session_already_on_file_is_declined_before_any_fetch(
 def test_an_open_session_named_by_hand_is_refused_before_any_fetch(
         tmp_path, monkeypatch, at, capsys):
     at("2026-10-05 18:00")                       # Monday, 14:00 ET
-    monkeypatch.setattr(do, "fetch_weekly_bars", no_fetch)
+    monkeypatch.setattr(do, "fetch_session_bars", no_fetch)
     assert do.main(["--out", str(tmp_path), "--date", "2026-10-05"]) == 2
     assert "has not closed" in capsys.readouterr().out
 
@@ -542,7 +542,7 @@ def test_audit_mode_exits_nonzero_on_a_hole_and_writes_nothing(
         (d / (day + ".json")).write_text("{}\n", encoding="utf-8",
                                          newline="\n")
     at("2026-10-05 03:07")
-    monkeypatch.setattr(do, "fetch_weekly_bars", no_fetch)
+    monkeypatch.setattr(do, "fetch_session_bars", no_fetch)
     monkeypatch.setattr(do, "witness_rows",
                         lambda start, end, fetch=None: settled(SESSIONS))
     assert do.main(["--audit", "--out", str(tmp_path)]) == 1

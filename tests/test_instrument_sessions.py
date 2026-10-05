@@ -360,10 +360,16 @@ def test_the_stand_in_date_reaches_the_committed_weekly_file(
     table, _ = provider
     table["^TNX"] = [(D(2026, 4, 2), 4.313, 0), (D(2026, 4, 6), 4.335, 0)]
     special = sm.fetch_special_instruments("2026-04-03")
-    path = snapshot.write_weekly("2026-04-03", {}, special,
+    # The equities of a Good Friday file are Thursday's too, by the same
+    # proof, and a weekly file is not written without its SPY bar at all
+    # (tests/test_weekly_session.py).
+    thursday = {"bars": {"SPY": {"close": 655.0, "volume": 1}},
+                "missing": [], "session": "2026-04-02"}
+    path = snapshot.write_weekly("2026-04-03", thursday, special,
                                  out_dir=str(tmp_path))
     doc = json.loads(Path(path).read_text(encoding="utf-8"))
 
+    assert doc["session_note"] == "Friday holiday; bars from 2026-04-02"
     assert doc["source"] == "yahoo", "sector-regime-heatmap reads this"
     assert doc["rates"]["US10Y"] == {"close": 4.313, "volume": None}
     assert doc["provenance"]["rates"]["US10Y"] == {
@@ -392,7 +398,8 @@ def test_a_rewritten_holiday_week_stamps_its_stand_ins_as_backfill(
         tmp_path, monkeypatch):
     """backfill_weekly --force writes the week, then restamps the file as a
     backfill. A stand-in's label names the file's own provider, so it takes
-    the same identity; Treasury's label is not the backfill's to restamp."""
+    the same identity; Treasury's label is not the backfill's to restamp.
+    SPY's bar on the Monday after is what lets Thursday stand in at all."""
     special = {
         "rates": {"US10Y": {"close": 4.313, "volume": None},
                   "US2Y": {"close": 3.84, "volume": None}},
@@ -406,7 +413,8 @@ def test_a_rewritten_holiday_week_stamps_its_stand_ins_as_backfill(
     monkeypatch.setattr(bf.time, "sleep", lambda s: None)
 
     rec = bf.build_and_write(D(2026, 4, 3), ["SPY"],
-                             {"SPY": ([D(2026, 4, 2)], [655.0], [1])},
+                             {"SPY": ([D(2026, 4, 2), D(2026, 4, 6)],
+                                      [655.0, 658.9], [1, 1])},
                              str(tmp_path))
     doc = json.loads(Path(rec["path"]).read_text(encoding="utf-8"))
     assert doc["session_note"] == "Friday holiday; bars from 2026-04-02"

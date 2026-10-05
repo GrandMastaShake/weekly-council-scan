@@ -3,11 +3,21 @@ snapshot.py -- committed data-feed writer/deriver for weekly-council-scan.
 
 Wave 1 (Job S). Owns the committed data feed:
 
-  * fetch_weekly_bars()     -- date-pinned yfinance fetch for the equity set
+  * fetch_weekly_bars()     -- the equity set for one weekly file: the bars of
+                               the session that answers for the Friday
+  * fetch_session_bars()    -- date-pinned yfinance fetch for one session
   * write_weekly()          -- data/weekly/<friday>.json   (DATA_FEED.md sec.1)
+  * unwritten_fridays()     -- the weeks the panel still owes a file for
   * derive_market_state()   -- data/market_state.json      (MARKET_GROUNDING sec.1, sec.9)
   * build_universe()        -- data/universe.json + wiki/universe.md mirror (sec.3)
   * rederive_and_compare()  -- purity self-check for the Wave 2 truth gate
+
+A weekly file is one equity session, and SPY is its witness (2026-10-06,
+DATA_FEED.md sec.1c). The Friday's own bar is the session. Where SPY has no
+bar dated the Friday, an earlier session of the week stands in only once a
+later bar proves the Friday was skipped, and the file says which; until
+then write_weekly raises NoSessionWitness and writes nothing. Run on a
+market holiday before that, the writer used to commit `series: {}`.
 
 Spec amendment (owner, supersedes DATA_FEED.md sec.1 "Ticker set"): weekly
 files commit the FULL universe -- STOCK_UNIVERSE (277; 274 after the 2026-09-21 review) + 16 index/sector ETFs
@@ -67,8 +77,8 @@ import json
 import os
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta, timezone
-from typing import Dict, List, Optional, Tuple
+from datetime import date, datetime, timedelta, timezone
+from typing import Dict, List, Optional, Set, Tuple
 
 try:
     from scan_pipeline.config.tickers import STOCK_UNIVERSE, BACKFILL_44_TICKERS
@@ -104,6 +114,18 @@ VOL_TICKERS = ["VIX"]                   # weekly-file "vol" block
 COMMODITY_TICKERS = ["WTI", "GOLD", "SILVER"]   # "commodities" block
 FX_TICKERS = ["DXY"]                    # "fx" block
 SPECIAL_BLOCKS = ("rates", "vol", "commodities", "fx")
+
+# The session witness. A weekly file is the equity session of one day, and
+# SPY says which day: no SPY bar that can answer for the Friday, no file.
+# scripts/daily_observe.py gates on the same name for the same reason, and
+# it is the benchmark every relative figure downstream divides by, so a file
+# without it would be useless even if it were complete.
+WITNESS = "SPY"
+
+# How a file names a session that is not its Friday. The five holiday weeks
+# the backfill wrote carry exactly this, and scripts/audit_series.py reads
+# the date back out of it, so it is the record and not a comment.
+SESSION_NOTE = "Friday holiday; bars from %s"
 
 MAX_WORKERS = 10
 PCTILE_WINDOW = 104                     # trailing weeks for pctile_2y
@@ -212,10 +234,10 @@ def get_special_instruments(friday_date: str) -> dict:
 # ---------------------------------------------------------------------------
 # 1. Date-pinned yfinance fetch
 # ---------------------------------------------------------------------------
-def _extract_bar(df, ticker: str, friday_date: str) -> Optional[dict]:
-    """Select the bar for exactly friday_date from a yf.download frame.
+def _extract_bar(df, ticker: str, session_date: str) -> Optional[dict]:
+    """Select the bar for exactly session_date from a yf.download frame.
 
-    Date-pinned: we pick the row dated friday_date, never 'the last row'.
+    Date-pinned: we pick the row dated session_date, never 'the last row'.
     Returns {"close": float(4dp), "volume": int|None} or None."""
     if df is None or len(df) == 0:
         return None
@@ -232,12 +254,12 @@ def _extract_bar(df, ticker: str, friday_date: str) -> Optional[dict]:
             sub = df  # single-ticker download: plain columns
     except Exception:
         return None
-    # locate the row whose date is exactly friday_date
+    # locate the row whose date is exactly session_date
     try:
         dates = sub.index.strftime("%Y-%m-%d")
     except Exception:
         return None
-    matches = [i for i, d in enumerate(dates) if d == friday_date]
+    matches = [i for i, d in enumerate(dates) if d == session_date]
     if not matches:
         return None
     row = sub.iloc[matches[0]]
@@ -261,22 +283,25 @@ def _extract_bar(df, ticker: str, friday_date: str) -> Optional[dict]:
     return {"close": _r4(close), "volume": volume}
 
 
-def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
-    """Date-pinned fetch of one Friday's bar per ticker.
+def fetch_session_bars(tickers: List[str], session_date: str) -> dict:
+    """Date-pinned fetch of one session's bar per ticker.
 
-    Window: [friday - 10d, friday + 1d); the bar dated exactly friday_date
-    is selected. period='1d'-style blind fetches are banned in this project.
-    Batch via yf.download first; tickers that come back without a usable bar
-    get one per-ticker retry; remaining failures land in missing with the
-    exception text as the reason.
+    Window: [session - 10d, session + 1d); the bar dated exactly
+    session_date is selected, and a ticker without one is in missing. Nothing
+    here stands in for anything: scripts/daily_observe.py calls this for the
+    session it is observing, and fetch_weekly_bars for the session it has
+    already decided the week is. period='1d'-style blind fetches are banned
+    in this project. Batch via yf.download first; tickers that come back
+    without a usable bar get one per-ticker retry; remaining failures land
+    in missing with the exception text as the reason.
 
     Returns {"bars": {ticker: {"close": float, "volume": int|None}},
              "missing": [{"ticker": str, "reason": str}]}.
     """
     tickers = sorted(set(tickers))
-    friday = datetime.strptime(friday_date, "%Y-%m-%d").date()
-    start = (friday - timedelta(days=10)).isoformat()
-    end = (friday + timedelta(days=1)).isoformat()
+    day = datetime.strptime(session_date, "%Y-%m-%d").date()
+    start = (day - timedelta(days=10)).isoformat()
+    end = (day + timedelta(days=1)).isoformat()
 
     try:
         import yfinance as yf
@@ -295,14 +320,14 @@ def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
                          progress=False, threads=True)
         for t in tickers:
             try:
-                bar = _extract_bar(df, t, friday_date)
+                bar = _extract_bar(df, t, session_date)
             except Exception as exc:
                 bar = None
                 retry.append((t, "batch parse error: %s" % exc))
                 continue
             if bar is None:
                 retry.append((t, "no bar dated %s in window %s..%s"
-                                 % (friday_date, start, end)))
+                                 % (session_date, start, end)))
             else:
                 bars[t] = bar
     except Exception as exc:
@@ -314,7 +339,7 @@ def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
         try:
             df1 = yf.download(t, start=start, end=end, interval="1d",
                               auto_adjust=True, progress=False, threads=False)
-            bar = _extract_bar(df1, t, friday_date)
+            bar = _extract_bar(df1, t, session_date)
         except Exception as exc:
             bar = None
             reason = "%s; per-ticker retry raised: %s" % (reason, exc)
@@ -324,6 +349,215 @@ def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
             bars[t] = bar
 
     return {"bars": bars, "missing": missing}
+
+
+# ---------------------------------------------------------------------------
+# 1b. Which session a weekly file is (DATA_FEED.md sec.1c)
+# ---------------------------------------------------------------------------
+# A weekly file is named for a Friday, and on a market holiday that Friday
+# has no bars. The writer above answers "no bar dated the Friday" for every
+# ticker, and until 2026-10-06 that went straight into a file: run for
+# 2026-07-03 it committed `series: {}`, every name in `missing`, nothing to
+# say why, and `truth_check --feed` passed it. The five holiday weeks already
+# in the panel never met this path. The backfill wrote them, by its own rule
+# (the last bar of the week, noted file-level), and the live job, which
+# started on 2026-08-14, has not yet run on a holiday.
+#
+# The repo has already said twice what a writer does when the bar it wants
+# is not there: the Treasury path, and snapshot_macro.select_bar for every
+# Yahoo instrument. The equity panel follows the same three lines, with SPY
+# as the witness for all of it:
+#
+#  * SPY's bar dated the Friday is the session, and a missing bar is NOT
+#    evidence of a holiday. On Saturday 2026-08-29 the provider's daily
+#    closes for the Friday before were all null, on an ordinary week, and a
+#    one-off script on the runner built 2026-08-28.json from `1wk` bars
+#    instead (macro/series_audit.json; the file is stamped 14:10 UTC). No
+#    bar dated the Friday and none after it: no file. Not an empty one, and
+#    not Thursday's.
+#  * A stand-in needs proof, and is written down. A SPY bar dated AFTER the
+#    Friday shows the Friday was skipped, and the last session of the same
+#    Mon..Fri week stands in, never one from an earlier week. Every ticker's
+#    bar is then the one dated that session, and the file says so in
+#    `session_note`.
+#  * On the night itself the proof does not exist. The job runs on the
+#    Saturday and the next bar is Monday's, so a holiday week is never
+#    written by the run that first meets it. It is written by the first run
+#    after a later session, whole: the instruments stand in under the same
+#    proof (snapshot_macro), which is why this refuses rather than writing
+#    the equities now and losing the other blocks for good.
+#
+# A refusal is a correct outcome, so it cannot be the alarm. The alarm is in
+# truth_check --feed: a week missing between two files fails it.
+
+class NoSessionWitness(RuntimeError):
+    """No weekly file may be written: SPY has no bar that can answer for the
+    Friday. Either the date was not a session and nothing proves it yet, or
+    the provider has not posted."""
+
+
+def week_session(days: Set[date],
+                 friday: date) -> Tuple[Optional[date], Optional[str]]:
+    """Which session a weekly file is. Pure: no network, no clock.
+
+    days is the set of dates the witness has a bar for; friday is the date
+    the file is named for. Returns (session, None) or (None, reason), under
+    the rules above. It is snapshot_macro.select_bar without the settlement
+    hour, and tests/test_weekly_session.py holds the two to one answer."""
+    if friday in days:
+        return friday, None
+    if not any(d > friday for d in days):
+        return None, (
+            "no %s bar dated %s, and none after it yet; a holiday cannot be "
+            "told from a late post, so no earlier session is substituted"
+            % (WITNESS, friday.isoformat()))
+    monday = friday - timedelta(days=friday.weekday())
+    earlier = [d for d in days if monday <= d < friday]
+    if not earlier:
+        return None, ("%s printed nothing on %s and its week has no earlier "
+                      "session to stand in" % (WITNESS, friday.isoformat()))
+    return max(earlier), None
+
+
+def _witness_days(friday: date) -> Tuple[Optional[Set[date]], Optional[str]]:
+    """The dates the witness has a bar for around one Friday: (days, None),
+    or (None, problem) when the provider could not be asked. "Unknown" must
+    never read as "no session".
+
+    The window is snapshot_macro._fetch_one's. It opens on the week's Monday
+    because nothing earlier can be used, and runs eight days past the Friday
+    so that a later bar, where one exists, is in it. A row with no close is
+    not a bar: the provider serves a just-closed session that way for an
+    hour or more each evening (DATA_FEED.md sec.4), and such a row neither
+    answers for the Friday nor proves anything about it."""
+    monday = friday - timedelta(days=friday.weekday())
+    start = monday.isoformat()
+    end = (friday + timedelta(days=8)).isoformat()
+    try:
+        import yfinance as yf
+    except ImportError as exc:
+        return None, "yfinance import failed: %s" % exc
+    problem = None
+    for _attempt in range(2):   # one transient failure does not cost a week
+        try:
+            hist = yf.Ticker(WITNESS).history(start=start, end=end)
+        except Exception as exc:
+            problem = "%s: %s" % (type(exc).__name__, str(exc)[:160])
+            continue
+        days: Set[date] = set()
+        if hist is not None and not hist.empty:
+            for idx, row in hist.iterrows():
+                close = row["Close"]
+                if close is None or close != close:     # a NaN bar is not a bar
+                    continue
+                days.add(idx.date())
+        if days:
+            return days, None
+        # Not one bar in twelve days is a provider that did not answer, not
+        # a fortnight without a session.
+        problem = "no %s bars at all returned for %s..%s" % (
+            WITNESS, start, end)
+    return None, problem
+
+
+def _refused(tickers: List[str], why: str) -> dict:
+    """What fetch_weekly_bars returns when no session answers. Every ticker
+    is in missing with the reason, so even the refusal is never
+    empty-by-omission; write_weekly raises on "refused"."""
+    return {"bars": {}, "session": None, "refused": why,
+            "missing": [{"ticker": t, "reason": why} for t in tickers]}
+
+
+def fetch_weekly_bars(tickers: List[str], friday_date: str) -> dict:
+    """The equity panel for one weekly file: each ticker's bar for the
+    session that answers for friday_date.
+
+    The witness decides the session first (week_session), and every ticker's
+    bar is then the one dated exactly that session (fetch_session_bars). A
+    ticker without one is in missing; no ticker gets a day of its own.
+
+    Returns {"bars": {ticker: {"close", "volume"}},
+             "missing": [{"ticker", "reason"}],
+             "session": the date the bars are dated -- friday_date, or the
+                        last session of its week where a later bar proves
+                        the Friday was skipped. write_weekly records that.}
+    When no session answers, bars is empty, session is None, and "refused"
+    carries the reason. write_weekly raises NoSessionWitness on it and
+    writes nothing; it never raises here, so a caller can report first.
+    """
+    tickers = sorted(set(tickers))
+    friday = datetime.strptime(friday_date, "%Y-%m-%d").date()
+
+    days, problem = _witness_days(friday)
+    if days is None:
+        return _refused(tickers, (
+            "could not ask the provider which sessions %s has around %s "
+            "(%s), so the session is unknown" % (WITNESS, friday_date,
+                                                 problem)))
+    session, why = week_session(days, friday)
+    if session is None:
+        return _refused(tickers, why)
+
+    got = fetch_session_bars(tickers, session.isoformat())
+    if WITNESS in tickers and WITNESS not in (got.get("bars") or {}):
+        return _refused(tickers, (
+            "the provider lists a %s bar dated %s and the batch download "
+            "came back without it: a transient provider failure"
+            % (WITNESS, session.isoformat())))
+    got["session"] = session.isoformat()
+    return got
+
+
+def session_note(friday_date: str, session: Optional[str]) -> Optional[str]:
+    """The file-level note for a week whose bars are not the Friday's, or
+    None when they are.
+
+    Raises ValueError for a session that cannot stand in: a stand-in is an
+    earlier day of the same Mon..Fri week, or it is nothing."""
+    if session is None or str(session) == friday_date:
+        return None
+    session = str(session)          # a date object says the same thing
+    if not _DATE_RE.match(session):
+        raise ValueError("session must be YYYY-MM-DD, got %r" % (session,))
+    friday = datetime.strptime(friday_date, "%Y-%m-%d").date()
+    day = datetime.strptime(session, "%Y-%m-%d").date()
+    monday = friday - timedelta(days=friday.weekday())
+    if not monday <= day < friday:
+        raise ValueError(
+            "session %s is not an earlier day in the week of %s; a stand-in "
+            "comes from the same week or not at all" % (session, friday_date))
+    return SESSION_NOTE % session
+
+
+def unwritten_fridays(weekly_dir: str,
+                      today: Optional[date] = None) -> List[str]:
+    """The Fridays the panel owes a file for, oldest first: every Friday
+    from the first weekly file through the last one before `today` (UTC)
+    that has none.
+
+    The weekly job writes these in this order and stops at the first one
+    the writer refuses. So a week that could not be written on the night is
+    written by the next run that can, and is never stepped over: a reader
+    that counts weeks by position (sector-regime-heatmap) reads a hole as a
+    window one week longer than it says. An empty directory owes nothing;
+    the backfill starts a panel, not this. A correction is not a week's
+    file."""
+    today = today or datetime.now(timezone.utc).date()
+    have = set()
+    for path in glob.glob(os.path.join(weekly_dir, "*.json")):
+        stem = os.path.basename(path)[: -len(".json")]
+        if _DATE_RE.match(stem):
+            have.add(stem)
+    if not have:
+        return []
+    owed: List[str] = []
+    day = datetime.strptime(min(have), "%Y-%m-%d").date()
+    day += timedelta(days=(4 - day.weekday()) % 7)      # the first Friday
+    while day < today:
+        if day.isoformat() not in have:
+            owed.append(day.isoformat())
+        day += timedelta(days=7)
+    return owed
 
 
 # ---------------------------------------------------------------------------
@@ -401,13 +635,21 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
 
     series_bars: either a plain {ticker: {"close","volume"}} mapping (missing
         defaults to []) or the full fetch_weekly_bars() result
-        {"bars": ..., "missing": ...}.
+        {"bars": ..., "missing": ..., "session": ...}. A "session" earlier
+        than friday_date is the proven stand-in for a Friday that was not a
+        session, and is committed as the file-level `session_note`.
     special: the snapshot_macro contract dict, or None to call
         get_special_instruments(friday_date) (stub fallback if Job V's module
         is absent). Its "provenance" block, when present, is committed for
         the instruments it names (see special_provenance); the file-level
         source stays PROVIDER.
     out_dir: the data root; the file lands at <out_dir>/weekly/<date>.json.
+
+    Raises NoSessionWitness, and writes nothing, when the series carry no
+    SPY bar: a fetch that was refused, or a panel that simply lacks it. A
+    weekly file is one session and SPY is its witness (section 1b above).
+    Everything that starts a weekly file comes through here, the backfill
+    included, so this is the one place the rule cannot be walked around.
 
     'missing' is REQUIRED and never empty-by-omission: it is the union of
     series fetch failures and special-instrument failures, sorted and deduped.
@@ -416,13 +658,34 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
     if not _DATE_RE.match(friday_date):
         raise ValueError("friday_date must be YYYY-MM-DD, got %r" % friday_date)
 
+    session = refused = None
     if isinstance(series_bars, dict) and ("bars" in series_bars or "missing" in series_bars):
         bars = series_bars.get("bars") or {}
         missing = list(series_bars.get("missing") or [])
+        session = series_bars.get("session")
+        refused = series_bars.get("refused")
     else:
         bars = series_bars
         missing = []
 
+    series = _normalize_block(bars)
+    path = os.path.join(out_dir, "weekly", friday_date + ".json")
+    if refused or WITNESS not in series:
+        why = refused or ("the series handed to the writer hold no %s bar"
+                          % WITNESS)
+        raise NoSessionWitness(
+            "REFUSED, nothing written: %s needs a session witness and has "
+            "none -- %s. A weekly file is one equity session and %s says "
+            "which (DATA_FEED.md sec.1c). No file is the correct outcome of "
+            "this run; do not build one another way. Run the same calls for "
+            "%s again once the provider shows a later session: the writer "
+            "then takes the Friday's bars if they are there, or the last "
+            "session of that week, and records which."
+            % (path, why, WITNESS, friday_date))
+    note = session_note(friday_date, session)
+
+    # After the refusal, not before it: a week that will not be written has
+    # no use for eight instrument fetches and Treasury's seventeen seconds.
     if special is None:
         special = get_special_instruments(friday_date)
     missing.extend(special.get("missing") or [])
@@ -436,8 +699,6 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
             seen.add(key)
             uniq.append({"ticker": key[0], "reason": key[1]})
     uniq.sort(key=lambda m: (m["ticker"], m["reason"]))
-
-    series = _normalize_block(bars)
 
     doc = {
         "as_of": friday_date,
@@ -454,7 +715,8 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
     prov = special_provenance(special, doc)
     if prov:
         doc["provenance"] = prov
-    path = os.path.join(out_dir, "weekly", friday_date + ".json")
+    if note:
+        doc["session_note"] = note
     return _write_json(path, doc)
 
 
@@ -967,6 +1229,22 @@ def derive_chain(weekly_dir: str, facts_path: str,
     if state is None:
         raise ValueError("no weekly files to derive from")
     return state
+
+
+def write_market_state_chain(weekly_dir: str, facts_path: str, out_path: str,
+                             us2y_path: Optional[str] = None) -> str:
+    """Write market_state.json through the whole chain (canonical bytes).
+
+    write_market_state takes last week's state from its caller, which is
+    right only while the caller has written exactly one week since. A run
+    that catches up on a week the writer refused earlier (section 1b) can
+    write two, and the committed state it holds is then two weeks back:
+    corr_prev would come from the wrong week and truth_check --derive would
+    fail it. The chain needs no previous state and is what that check
+    compares against, so it is right for one new week, for several, and for
+    none."""
+    state = derive_chain(weekly_dir, facts_path, us2y_path)
+    return _write_json(out_path, state)
 
 
 # ---------------------------------------------------------------------------
