@@ -60,6 +60,11 @@ The parts that get violated:
 - **An instrument close is the bar dated `as_of`, a stand-in the file names,
   or `missing`.** Never "the last bar on or before", and never a futures or
   dollar-index bar read before the exchange settled it. `DATA_FEED.md` sec.1b.
+- **No SPY bar, no weekly file.** The series are one session's: SPY's bar
+  dated `as_of`, or, only once a later SPY bar proves the Friday was skipped,
+  the last session of that week, named in `session_note`. With neither,
+  `write_weekly` raises `NoSessionWitness` and writes nothing. Never an empty
+  `series`, never an unproven Thursday. `DATA_FEED.md` sec.1c.
 
 ## The correction trap
 
@@ -371,6 +376,54 @@ refused once with nothing asking again.
   that bar should be recorded -- `missing`, as the Friday job does, or a
   per-ticker `observed` -- is not decided (`DATA_FEED.md` sec.1b, "The equity
   series"). Run the audit after any backfill.
+- **The weekly writer on a market holiday.** `fetch_weekly_bars` kept only
+  bars dated the Friday, so run for a holiday it committed `series: {}`:
+  every ticker in `missing`, no `session_note`, and `truth_check --feed`
+  passed it (run for 2026-07-03 on 2026-10-05). It never happened in
+  production. The five holiday weeks in the panel came from the backfill, and
+  the weekly job, running since 2026-08-14, has not met a holiday. The next
+  are 2026-12-25 and 2027-01-01, Fridays running.
+
+  Since 2026-10-06 SPY is the witness for the whole file, under the rule the
+  Treasury and instrument paths already follow. Its bar dated the Friday is
+  the session. With no such bar and none after it, nothing is written: a
+  missing bar is not evidence of a holiday, and on Saturday 2026-08-29 the
+  provider's closes for an ordinary Friday were all null. Once a later SPY
+  bar proves the Friday was skipped, the last session of that week stands in
+  for every ticker and the file says so: `"Friday holiday; bars from
+  <date>"`, the note the backfilled holiday weeks carry and
+  `audit_series.py` reads.
+
+  **So a holiday week lands a week late, on purpose.** The job runs on the
+  Saturday and SPY's next bar is Monday's, so the proof is never there on the
+  night. Writing the equities at once on the strength of a calendar would
+  lose the instruments for good: they cannot stand in that night, and a
+  weekly file cannot be completed afterwards. Written by the next run the
+  file is whole, each instrument with its `observed` date. Until then every
+  reader has last week's `market_state.json`, dated as what it is.
+
+  **A refusal is green, so the panel is what gets asked.** The weekly job
+  writes every Friday `snapshot.unwritten_fridays` lists, oldest first, and
+  stops at the first one refused; after writing more than one it derives
+  through the chain (`snapshot.write_market_state_chain`). `truth_check
+  --feed` fails an empty `series`, a new file with no SPY bar, a
+  `session_note` it cannot read a session out of, and a Friday missing
+  between two weekly files; it warns from the Sunday while the newest Friday
+  is still owed. A hole matters more than it looks: `market_state` nulls the
+  windows that reach it, but sector-regime-heatmap counts weeks by position
+  and scores the week after a hole over two weeks, calling it one.
+
+  `scripts/backfill_weekly.py` called a week a holiday whenever no ticker had
+  a Friday bar, which is every Friday on the night. It asks the witness under
+  the same rule now and exits 2 on a week it cannot write, and `--only` can no
+  longer start a week. That is how `2024-08-09.json` came to hold no index
+  or sector ETF at all, SPY among them, with none listed in `missing`. Not
+  edited; the gate warns, and a `--merge` backfill of those names adds them.
+
+  Both of these are outside this repo and changed by hand: the runner's copy
+  of `scan_pipeline/`, which writes the empty file until it is synced (the
+  gate stops it), and the job's prompt, which asks for the most recent Friday
+  only and so needs the catch-up put into it.
 - **GOLD is two contract months, and nothing in a file says which.** WTI,
   GOLD and SILVER are Yahoo's continuous symbols. Between 2026-09-05 and
   2026-10-03 Yahoo rebuilt `GC=F` from the nearest-expiry contract onto the
@@ -386,7 +439,8 @@ refused once with nothing asking again.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
-  recording the actual session. That note is about the equity series. Which
+  recording the actual session. That note is about the equity series, its
+  form is fixed, and the weekly job writes one only with proof (above). Which
   session each instrument is from is in `provenance.<block>` for files
   written since 2026-10-05, and in `macro/instrument_audit.json` for the five
   written before.
@@ -403,6 +457,11 @@ whole file from the ticker set it was given, so with `--only` it deletes every
 other series: on 2026-08-26 that emptied 107 files, 287 series down to 44, and
 the job reported success. The script refuses that combination now. `--force` is
 for a full-universe rewrite and nothing else.
+
+**A week is written only with its session witness.** A Friday SPY has no bar
+for is refused until a later SPY bar proves it was a holiday, and the run
+exits 2, which stops the workflow before its commit step. `--only` adds names
+to a week that exists; it cannot start one (`DATA_FEED.md` sec.1c).
 
 A merged week carries two adjustment anchors -- the names added later were
 fetched later -- so it records them per series in `provenance.series` rather
@@ -443,3 +502,8 @@ moving one breaks his skill silently; update
   the change is recorded in `restated` and survives the next rebuild.
 - Call a committed equity close wrong because a fresh fetch disagrees. It is
   adjusted to its fetch date. `scripts/audit_series.py` is the comparison.
+- Build a weekly file the writer refused: by hand, from `1wk` bars, or from
+  Thursday's. No file is the right outcome of that run, and the next one
+  writes it.
+- Step over a week that was refused. Write the Fridays
+  `snapshot.unwritten_fridays` lists, oldest first, before the newest.
