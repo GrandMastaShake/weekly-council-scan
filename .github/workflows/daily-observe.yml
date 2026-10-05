@@ -18,7 +18,7 @@ name: Daily observation
 #   provider serves the just-closed session with a NULL close, until its
 #   end-of-day roll: the bar was served through 23:59:53 UTC, gone at 00:10
 #   and 00:45, back by 01:38. The witness gate refuses that, correctly, and
-#   8 of the first 15 scheduled runs were started after 00:00 UTC.
+#   in 8 of the first 15 scheduled runs the script ran after 00:00 UTC.
 #
 #   21:45 UTC   5:45 PM EDT / 4:45 PM EST. Writes when GitHub starts it
 #               before that window; otherwise it is refused and says why.
