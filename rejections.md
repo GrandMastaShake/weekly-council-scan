@@ -14,7 +14,7 @@ Booked: AAPL 30.0% / META 29.4% / AMD 20.6% (20.0% cash -- the owner's cash cap 
 
 Also mirrored here (not Ophelia's, logged for the same counterfactual): TMO (Marky #3, conf 80.3) declined as a chase per wiki/healthcare.md ("don't chase RSI-70s tools (TMO)"); TEL (Marky #2, conf 69.0) not promoted -- shares AAPL's XLK $190.00 line, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
 
-counterfactual: to be computed (Monday 2026-10-05, date-pinned Mon 2026-09-28 close -> Fri 2026-10-02 close; QCOM alone vs the official booked week, with TMO and TEL scored alongside).
+counterfactual (computed 2026-10-05, date-pinned Mon 2026-09-28 close -> Fri 2026-10-02 close): QCOM $187.48 -> $184.87 = **-1.39%** vs the official book on the same basis **+0.98%** (Tracker, Monday-open basis: -1.15%) = delta **-2.37pp -- the rejection was right**. Scored alongside: TMO $678.60 -> $654.80 = -3.51% (the wiki's "don't chase" call was worth 4.5pp against the book), TEL $214.71 -> $220.36 = +2.63% (the one name left out that beat the book; no wiki coverage was the reason, and that reason did not change). Equal-weighted QCOM/TMO/TEL basket -0.76%, delta -1.74pp. Read it honestly: QCOM was excluded for sharing AMD's SMH line, and SMH rose +5.10% on the week while QCOM fell -- the correlation the exclusion assumed did not show up; the exclusion was right for a reason other than the one given. First week since the log opened that Ophelia's rejected name lost to the book.
 
 ---
 
