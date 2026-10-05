@@ -5,7 +5,12 @@ Job B (Wave 2). Reads NO live per-week equity calls: one ranged daily-bar
 download per ticker (batched ~50 tickers per yf.download call), then slices
 each Friday's bar locally. Special instruments (rates/vol/commodities/fx) go
 through scan_pipeline.snapshot_macro.fetch_special_instruments per Friday
-(Job V contract; it carries its own per-instrument holiday notes).
+(Job V contract; it carries its own per-instrument holiday notes). Since
+2026-10-05 a commodity is read by contract name, and the provider drops a
+contract once it has expired: a rewrite of a week older than a month or so
+lists WTI, WTI_NEXT, GOLD and SILVER in "missing". Their settlements for
+such a week are data/commodity_settlements.json's to hold (DATA_FEED.md
+sec.1d).
 
 Output (DATA_FEED.md sec.1, as amended by the owner):
   <out>/weekly/<YYYY-MM-DD>.json   one file per Friday, append-only.

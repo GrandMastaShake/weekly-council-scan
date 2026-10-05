@@ -2,22 +2,26 @@
   "as_of": "2026-10-02",
   "commodities": {
     "GOLD": {
-      "d13w": 1.2,
-      "d1w": -3.7,
-      "d4w": -6.0,
-      "d52w": 7.3,
-      "pctile_2y": 62,
-      "px": 4162.3
+      "contract": "GCV26",
+      "d13w": 0.5,
+      "d1w": null,
+      "d1w_reason": "no GOLD settlement on the nearest-expiry contract for 2026-09-25: The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28.",
+      "d4w": -6.7,
+      "d52w": 6.5,
+      "pctile_2y": 65,
+      "px": 4133.7
     },
     "SILVER": {
+      "contract": "SIV26",
       "d13w": -1.1,
-      "d1w": -7.3,
+      "d1w": -6.6,
       "d4w": -9.2,
       "d52w": 26.0,
       "pctile_2y": 63,
       "px": 59.98
     },
     "WTI": {
+      "contract": "CLX26",
       "d13w": 32.6,
       "d1w": -1.4,
       "d4w": -0.4,

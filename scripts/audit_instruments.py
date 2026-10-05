@@ -38,6 +38,18 @@ because it usually decides between the two. The reasoning is a reviewer's:
 each finding on file carries a "cause", and the baseline's "causes" say what
 each one is and what was decided about it.
 
+WTI, GOLD and SILVER are asked about in two ways, because they are two kinds
+of close. A file that names its contract (provenance.commodities, since
+2026-10-05) is compared with that contract's own history, while the provider
+still serves it; once the contract has expired the close cannot be asked
+about again, and it is left out rather than called ok or unverified. A file
+that names none holds a continuous symbol's bar and is compared with the
+continuous symbol, as it always was. That comparison says what the provider
+shows under GC=F today, not whether the close is the nearest-expiry
+contract's: 104 committed gold closes "differ" and are right. Which weeks
+are off the rule, and what stands in for them, is
+data/commodity_settlements.json's to say (DATA_FEED.md sec.1d).
+
 The baseline, macro/instrument_audit.json, is the reviewed list. A run prints
 what is NEW, CHANGED or GONE against it and stays quiet about the rest, the
 way truth_check --splits goes quiet once an action is acknowledged. --write
@@ -129,15 +141,64 @@ HEADINGS = {
 # ----------------------------------------------------------------- provider
 
 def instrument_map():
-    """{(block, ticker): cfg} for every instrument Yahoo supplies."""
+    """{(block, ticker): cfg} for every instrument Yahoo supplies.
+
+    A commodity has no fixed symbol since 2026-10-05: the writer reads the
+    contract the roll calendar names. Its "symbol" here is the continuous
+    one, which is what every file from before that date holds and is
+    audited against; symbol_for() picks the named contract instead for a
+    file that names one."""
     out = {}
     for block, instruments in snapshot_macro.INSTRUMENTS.items():
         for ticker, cfg in instruments.items():
             if cfg.get("symbol"):
                 out[(block, ticker)] = cfg
+            elif cfg.get("root"):
+                out[(block, ticker)] = dict(cfg,
+                                            symbol=cfg.get("continuous"))
     for key, cfg in LEGACY_INSTRUMENTS.items():
         out.setdefault(key, cfg)
     return out
+
+
+def named_symbol(contract):
+    """The provider's symbol for a contract a file names, or None."""
+    try:
+        return snapshot_macro.contract_symbol(contract)
+    except (ValueError, TypeError):
+        return None
+
+
+def symbol_for(cfg, doc, block, ticker):
+    """(symbol, contract) to audit one instrument in one file against.
+
+    A fixed-symbol instrument is always that symbol. A commodity is, in
+    order: the contract its file names; else, where the file holds a close
+    with no label, the continuous symbol (the file predates named
+    contracts); else, where the file has no close for it, the contract the
+    calendar gives for the date, which is what the writer asked for."""
+    if "root" not in cfg:
+        return cfg["symbol"], None
+    contract = label_of(doc, block, ticker).get("contract")
+    if contract:
+        return named_symbol(contract), contract
+    entry = (doc.get(block) or {}).get(ticker)
+    if isinstance(entry, dict) and entry.get("close") is not None:
+        return cfg.get("symbol"), None
+    contract = snapshot_macro.contract_for(
+        cfg["root"], dt.date.fromisoformat(doc["as_of"]),
+        cfg.get("position", 0))
+    return named_symbol(contract), contract
+
+
+def expired(contract, now):
+    """True once a named contract has stopped trading. The provider drops
+    it within days, so after that it cannot be asked about at all."""
+    try:
+        return snapshot_macro.last_trade_date(
+            *snapshot_macro.contract_parts(contract)) < now.date()
+    except (ValueError, TypeError):
+        return False
 
 
 # The writer's own normalization, so a committed close is compared with the
@@ -272,8 +333,15 @@ def audit_file(panel, name, doc, instruments, histories, now):
         if successor and (successor in (doc.get(block) or {})
                           or successor in declared):
             continue            # the name has moved on in this file
-        symbol = cfg["symbol"]
+        symbol, contract = symbol_for(cfg, doc, block, ticker)
+        if not symbol:
+            continue            # nothing this file could be compared with
         history = histories.get(symbol)
+        if contract and not history and expired(contract, now):
+            # A contract month that has stopped trading. The provider no
+            # longer serves it, so this close can never be asked about
+            # again: not ok, not a finding, and not counted as compared.
+            continue
         base = {
             "panel": panel, "file": name,
             "instrument": block + "." + ticker, "symbol": symbol,
@@ -368,23 +436,46 @@ def run_audit(repo, panels=PANELS, fetch=fetch_history, now=None):
         return result
 
     start, end = history_window(every)
-    histories, errors = {}, {}
+    # One request per symbol: every fixed symbol, and every contract month
+    # a file names or (for a commodity it lists as lost) would have named.
+    wanted, named = {}, {}
     for cfg in instruments.values():
-        symbol = cfg["symbol"]
-        if symbol in histories or symbol in errors:
-            continue
+        if cfg.get("symbol"):
+            wanted.setdefault(cfg["symbol"], cfg)
+    for _, doc in every:
+        lost = {m.get("ticker") for m in doc.get("missing") or []
+                if isinstance(m, dict)}
+        for (block, ticker), cfg in instruments.items():
+            if "root" not in cfg:
+                continue
+            entry = (doc.get(block) or {}).get(ticker)
+            held = isinstance(entry, dict) and entry.get("close") is not None
+            if not held and ticker not in lost:
+                continue
+            symbol, contract = symbol_for(cfg, doc, block, ticker)
+            if symbol and contract:
+                wanted.setdefault(symbol, cfg)
+                named[symbol] = contract
+
+    histories, errors, gone = {}, {}, []
+    for symbol, cfg in wanted.items():
         try:
             raw = fetch(symbol, start, end)
         except Exception as exc:        # a dead symbol must not end the audit
             errors[symbol] = "%s: %s" % (type(exc).__name__, str(exc)[:120])
             continue
         if not raw:
-            errors[symbol] = "no data returned for %s..%s" % (start, end)
+            if symbol in named and expired(named[symbol], now):
+                gone.append(symbol)     # dropped by the provider, as expected
+            else:
+                errors[symbol] = "no data returned for %s..%s" % (start, end)
             continue
         histories[symbol] = {d: normalize(c, v, cfg)
                              for d, (c, v) in raw.items()}
     result["audited"]["symbols"] = {
         "answered": sorted(histories), "failed": dict(sorted(errors.items()))}
+    if gone:
+        result["audited"]["symbols"]["expired"] = sorted(gone)
 
     for panel in panels:
         counts = {"files": len(loaded[panel]), "closes": 0, "ok": 0}
@@ -553,6 +644,11 @@ def render(result, baseline, show_all, panels=PANELS):
     for symbol, why in (audited.get("symbols") or {}).get("failed",
                                                           {}).items():
         out.append("  NO ANSWER for %s: %s" % (symbol, why))
+    lapsed = (audited.get("symbols") or {}).get("expired")
+    if lapsed:
+        out.append("  %d named contract(s) have expired and are no longer "
+                   "served; closes on them were not compared: %s"
+                   % (len(lapsed), ", ".join(lapsed)))
     for panel, c in audited["panels"].items():
         out.append("%s: %d file(s), %d close(s) compared, %d ok, %d not"
                    % (panel, c["files"], c["closes"], c["ok"],

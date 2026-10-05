@@ -100,7 +100,7 @@ def build_correction(base: dict, base_name: str, names: list, reason: str,
                               b + "." + t
                               for b in snapshot.SPECIAL_BLOCKS
                               for t in snapshot_macro.INSTRUMENTS.get(b, {})))
-        if "symbol" not in cfg:
+        if "symbol" not in cfg and "root" not in cfg:
             raise Refused(name + " does not come from " + snapshot.PROVIDER
                           + " and is not restated from it")
         held = (base.get(block) or {}).get(ticker)
@@ -111,7 +111,14 @@ def build_correction(base: dict, base_name: str, names: list, reason: str,
 
         entry, err = fetch(ticker, cfg, as_of)
         if err is not None:
-            raise Refused(name + ": " + err)
+            # A commodity is read by contract name, and an expired contract
+            # is not served. That week's settlement is not a correction's
+            # to supply.
+            hint = (". A week whose contract has expired is answered in "
+                    "data/commodity_settlements.json "
+                    "(scripts/backfill_commodities.py), not by a correction"
+                    if "root" in cfg else "")
+            raise Refused(name + ": " + err + hint)
         if entry.get("observed"):
             raise Refused(
                 name + ": the provider has no bar dated " + base["as_of"]
@@ -123,9 +130,12 @@ def build_correction(base: dict, base_name: str, names: list, reason: str,
 
         correction[block][ticker] = {"close": entry["close"],
                                      "volume": entry.get("volume")}
+        label = {"source": BACKFILL_SOURCE, "fetched_at": stamp}
+        if entry.get("contract"):
+            # The restated close is a named contract month's, and says so.
+            label["contract"] = entry["contract"]
         correction.setdefault("provenance", {}).setdefault(
-            block, {})[ticker] = {"source": BACKFILL_SOURCE,
-                                  "fetched_at": stamp}
+            block, {})[ticker] = label
         restated.append({"block": block, "ticker": ticker,
                          "was": {"close": held["close"],
                                  "volume": held.get("volume")}})

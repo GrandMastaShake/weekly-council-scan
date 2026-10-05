@@ -42,12 +42,13 @@ fetched.
 
 What the witness does not speak for
 -----------------------------------
-SPY settling says nothing about the futures. WTI, GOLD, SILVER, DXY and
-US2Y_FUT trade past the cash close, and for two weeks their "bar dated
-as_of" went into these files as a quote: on a weekday evening, the next
-session's opening trades (WTI 89.63 against a settled 94.59 on 2026-09-22).
+SPY settling says nothing about the futures. WTI, WTI_NEXT, GOLD, SILVER,
+DXY and US2Y_FUT trade past the cash close, and for two weeks the "bar dated
+as_of" of the five then read went into these files as a quote: on a weekday
+evening, the next session's opening trades (WTI 89.63 against a settled 94.59
+on 2026-09-22).
 snapshot_macro now refuses such a bar until 13:00 UTC the next day, which is
-later than either scheduled attempt, so those five are listed in `missing`
+later than either scheduled attempt, so all of them are listed in `missing`
 with the reason (DATA_FEED.md sec.1b).
 
 The clock is US/Eastern, never UTC

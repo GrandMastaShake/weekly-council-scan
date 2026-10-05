@@ -68,30 +68,86 @@ jobs:
               sys.exit(1)
           print("panel intact: no weekly or daily file lost series")
 
+          def previous(path):
+              r = subprocess.run(["git", "show", "HEAD^:" + path],
+                                 capture_output=True, text=True)
+              return json.loads(r.stdout) if r.returncode == 0 else None
+
+          def current(path):
+              if not Path(path).is_file():
+                  return {}
+              return json.loads(Path(path).read_text(encoding="utf-8"))
+
+          failed = False
+
           # data/us2y_treasury.json is append-only by week for the same
           # reason. It holds the Treasury 2-year for the weeks whose weekly
           # file cannot (DATA_FEED.md sec.1a); an entry that changes or
           # disappears rewrites what market_state derives for a week nobody
           # can observe again. New weeks pass; a changed or lost one fails.
           hist = "data/us2y_treasury.json"
-          r = subprocess.run(["git", "show", "HEAD^:" + hist],
-                             capture_output=True, text=True)
-          if r.returncode != 0:
+          was = previous(hist)
+          if was is None:
               print("us2y history: not in the previous commit; nothing to compare")
-              sys.exit(0)
-          before = json.loads(r.stdout).get("series", {})
-          now = {}
-          if Path(hist).is_file():
-              now = json.loads(Path(hist).read_text(encoding="utf-8")).get("series", {})
-          keep = ("close", "observed")
-          bad = [(w, rec, now.get(w)) for w, rec in sorted(before.items())
-                 if w not in now
-                 or any(now[w].get(k) != rec.get(k) for k in keep)]
-          if bad:
-              print("US2Y HISTORY REGRESSION -- committed weeks were changed or removed:")
-              for week, was, got in bad:
-                  print("  %s  %s -> %s" % (week, was, got))
-              sys.exit(1)
-          print("us2y history intact: %d week(s) unchanged, %d added"
-                % (len(before), len(now) - len(before)))
+          else:
+              before = was.get("series", {})
+              now = current(hist).get("series", {})
+              keep = ("close", "observed")
+              bad = [(w, rec, now.get(w)) for w, rec in sorted(before.items())
+                     if w not in now
+                     or any(now[w].get(k) != rec.get(k) for k in keep)]
+              if bad:
+                  print("US2Y HISTORY REGRESSION -- committed weeks were changed or removed:")
+                  for week, old, got in bad:
+                      print("  %s  %s -> %s" % (week, old, got))
+                  failed = True
+              else:
+                  print("us2y history intact: %d week(s) unchanged, %d added"
+                        % (len(before), len(now) - len(before)))
+
+          # data/commodity_settlements.json, the same contract for WTI, GOLD
+          # and SILVER (DATA_FEED.md sec.1d). A settlement that is on file
+          # stays as it is. So does "audited_through": moving it re-admits
+          # or drops committed closes for every reader at once. A week
+          # recorded as unavailable may leave that list only by gaining a
+          # settlement.
+          hist = "data/commodity_settlements.json"
+          was = previous(hist)
+          if was is None:
+              print("commodity settlements: not in the previous commit; nothing to compare")
+          else:
+              now = current(hist).get("instruments", {})
+              keep = ("close", "contract", "symbol", "observed")
+              bad, kept, added = [], 0, 0
+              for name, rec in sorted(was.get("instruments", {}).items()):
+                  got = now.get(name) or {}
+                  if rec.get("audited_through") != got.get("audited_through"):
+                      bad.append("%s audited_through  %s -> %s" % (
+                          name, rec.get("audited_through"),
+                          got.get("audited_through")))
+                  series = got.get("series") or {}
+                  for week, entry in sorted((rec.get("series") or {}).items()):
+                      if week not in series or any(
+                              series[week].get(k) != entry.get(k) for k in keep):
+                          bad.append("%s %s  %s -> %s" % (
+                              name, week, entry, series.get(week)))
+                      else:
+                          kept += 1
+                  added += len(series) - len(rec.get("series") or {})
+                  for week in sorted(rec.get("unavailable") or {}):
+                      if week not in (got.get("unavailable") or {}) \
+                              and week not in series:
+                          bad.append("%s %s  was recorded as unavailable and "
+                                     "is now neither that nor a settlement"
+                                     % (name, week))
+              if bad:
+                  print("COMMODITY SETTLEMENT REGRESSION -- committed entries were changed or removed:")
+                  for line in bad:
+                      print("  " + line)
+                  failed = True
+              else:
+                  print("commodity settlements intact: %d unchanged, %d added"
+                        % (kept, max(added, 0)))
+
+          sys.exit(1 if failed else 0)
           PY

@@ -71,6 +71,14 @@ Modes:
                 a null weekly change or percentile that the tree can
                 supply, or was derived where data/us2y_treasury.json is
                 absent.
+                The same for the named commodity contracts: validates the
+                `contract` label a file gives WTI, WTI_NEXT, GOLD or SILVER
+                and data/commodity_settlements.json, WARNs for a week with
+                no settlement on a named contract and no recorded reason,
+                and FAILs when market_state.json's WTI, GOLD or SILVER is
+                not what the nearest-expiry settlements derive (px, the
+                contract, and each change), or was derived where
+                data/commodity_settlements.json is absent.
                 Also WARNs when data/daily/ has stopped being written: the
                 newest daily file two or more weekdays behind the last
                 weekday before today. Never a FAIL -- an observation feed
@@ -882,6 +890,15 @@ def _feed_provenance_check(fname, doc, rep):
             _timestamp_check(where, rec.get("fetched_at"), rep)
             if "observed" in rec:
                 _observed_check(where, rec["observed"], doc.get("as_of"), rep)
+            if "contract" in rec:
+                if label != "commodities":
+                    rep.add("FAIL", f"feed: {where} carries a 'contract' "
+                                    f"under provenance.{label}; only a "
+                                    f"commodity is a named contract month")
+                else:
+                    _contract_check(where, ticker, rec["contract"],
+                                    rec.get("observed", doc.get("as_of")),
+                                    rep)
 
 
 # ---------------------------------------------------- the Treasury 2-year
@@ -1112,6 +1129,431 @@ def _market_state_us2y_check(repo, weeks, series, history_ok, rep):
     rep.add("OK", f"feed: market_state.json US2Y for {as_of} is {shown}")
 
 
+# ------------------------------------------------------ the named contracts
+
+# Mirrors scan_pipeline: snapshot.COMMODITY_HISTORY_FILE, COMMODITY_TICKERS
+# and NEXT_CONTRACT, and the "root" and "position" of each commodity in
+# snapshot_macro.INSTRUMENTS. This script stays importable with nothing but
+# the standard library, so they are repeated here and
+# tests/test_commodity_contracts.py pins them equal.
+COMMODITY_HISTORY = ("data", "commodity_settlements.json")
+COMMODITY_ROOTS = {"WTI": "CL", "WTI_NEXT": "CL", "GOLD": "GC", "SILVER": "SI"}
+COMMODITY_STATE = ("WTI", "GOLD", "SILVER")     # market_state's entries
+NEXT_CONTRACT = {"WTI": "WTI_NEXT"}
+CONTRACT_RE = re.compile(r"^([A-Z]{2})([FGHJKMNQUVXZ])(\d{2})$")
+# How many calendar months after the session's own month a contract's
+# delivery month can be: crude stops trading the month before delivery, the
+# metals in it. A second-position contract is one further out. This is a
+# bound, not the roll calendar; that lives with the writer.
+CONTRACT_MONTHS_AHEAD = {"CL": (1, 2), "GC": (0, 1), "SI": (0, 1)}
+COMMODITY_POSITION = {"WTI": 0, "WTI_NEXT": 1, "GOLD": 0, "SILVER": 0}
+
+
+def _contract_check(where, ticker, contract, session, rep):
+    """A contract label is the exchange's name for a month this instrument
+    could hold on that session. Returns True when it is."""
+    m = CONTRACT_RE.match(contract) if isinstance(contract, str) else None
+    root = COMMODITY_ROOTS.get(ticker)
+    if m is None or root is None or m.group(1) != root:
+        rep.add("FAIL", f"feed: {where} contract {contract!r} is not a "
+                        f"{root or 'known'} contract (product, month letter, "
+                        f"two-digit year, e.g. "
+                        f"{(root or 'CL')}X26)")
+        return False
+    try:
+        day = dt.date.fromisoformat(session)
+    except (TypeError, ValueError):
+        return True             # the session's own check reports it
+    ahead = ((2000 + int(m.group(3))) * 12 + "FGHJKMNQUVXZ".index(m.group(2))
+             - (day.year * 12 + day.month - 1))
+    lo, hi = CONTRACT_MONTHS_AHEAD[root]
+    shift = COMMODITY_POSITION.get(ticker, 0)
+    if not lo + shift <= ahead <= hi + shift:
+        rep.add("FAIL", f"feed: {where} names {contract} for the session of "
+                        f"{session}. That month cannot be the "
+                        f"{'next' if shift else 'nearest-expiry'} contract "
+                        f"then, so the close is another month's or the label "
+                        f"is wrong")
+        return False
+    return True
+
+
+def _named_contract(doc, ticker):
+    """The contract month a weekly doc names for one commodity, or None.
+
+    None is the ordinary answer for every file through 2026-10-02: they
+    hold a continuous symbol's bar and name nothing."""
+    prov = doc.get("provenance") if isinstance(doc, dict) else None
+    labels = prov.get("commodities") if isinstance(prov, dict) else None
+    rec = labels.get(ticker) if isinstance(labels, dict) else None
+    contract = rec.get("contract") if isinstance(rec, dict) else None
+    if isinstance(contract, str) and CONTRACT_RE.match(contract):
+        return contract
+    return None
+
+
+def _committed_close(doc, ticker):
+    entry = (doc.get("commodities") or {}).get(ticker) \
+        if isinstance(doc, dict) else None
+    close = entry.get("close") if isinstance(entry, dict) else None
+    return float(close) if _is_number(close) else None
+
+
+def _same_close(a, b):
+    """Equal, for a committed close and a fresh one: the provider serves
+    float32, so the 4th decimal of a large close is the float and not the
+    market. scripts/backfill_commodities.py decides `replaces` by this."""
+    return abs(a - b) <= max(1.5e-4, 2e-6 * abs(b))
+
+
+def _commodity_values(weeks, instruments, ticker):
+    """{week: (settlement, contract or None)} by the deriver's own rule
+    (snapshot.commodity_series): the week's own close where its file names
+    the contract; else the settlement file's entry; else nothing where that
+    file says none can be had; else the week's unlabelled close, through
+    the audited week only; else nothing."""
+    rec = instruments.get(ticker) if isinstance(instruments, dict) else None
+    rec = rec if isinstance(rec, dict) else {}
+    entries = rec.get("series") if isinstance(rec.get("series"), dict) else {}
+    gone = rec.get("unavailable") \
+        if isinstance(rec.get("unavailable"), dict) else {}
+    through = rec.get("audited_through")
+    out = {}
+    for week, doc in weeks.items():
+        own = _committed_close(doc, ticker)
+        contract = _named_contract(doc, ticker)
+        entry = entries.get(week)
+        if own is not None and contract:
+            out[week] = (own, contract)
+        elif isinstance(entry, dict) and _is_number(entry.get("close")):
+            named = entry.get("contract")
+            out[week] = (float(entry["close"]),
+                         named if isinstance(named, str)
+                         and CONTRACT_RE.match(named) else None)
+        elif week in gone:
+            continue
+        elif own is not None and isinstance(through, str) and week <= through:
+            out[week] = (own, None)
+    return out
+
+
+def check_commodity_history(repo, rep):
+    """Every week has one settlement of the nearest-expiry contract per
+    commodity, or a recorded reason for none (DATA_FEED.md sec.1d).
+
+    A weekly file's WTI, GOLD or SILVER is known to be that contract's
+    settlement only where provenance.commodities names the contract. For
+    every other week -- all of them through 2026-10-02 -- the answer is in
+    data/commodity_settlements.json: the committed close stands (it was
+    audited), or an entry supersedes it, or none can be had. This validates
+    that file, then asks which weeks have neither a value nor a reason.
+
+    Such a week is a WARN, not a FAIL, for the reason a week with no
+    Treasury 2-year is: the honest outcome is already in place (market_state
+    carries the field as null) and scripts/backfill_commodities.py can
+    usually fill it. The file being ABSENT where a market_state.json was
+    derived is a FAIL: the weekly job does not write it, and without it the
+    deriver can read no week from before contracts were named.
+    Pure stdlib, no network.
+    """
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        return
+    weeks = {}
+    for f in sorted(weekly.glob("*.json")):
+        if f.name.endswith(".corrected.json"):
+            continue
+        corrected = f.with_name(f.stem + ".corrected.json")
+        try:
+            doc = json.loads((corrected if corrected.is_file() else f)
+                             .read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            continue            # check_feed has already reported it
+        if isinstance(doc, dict):
+            weeks[f.stem] = doc
+    if not weeks:
+        return
+
+    name = "/".join(COMMODITY_HISTORY)
+    path = repo.joinpath(*COMMODITY_HISTORY)
+    have_history = path.is_file()
+    instruments = {}
+    if have_history:
+        before = rep.counts["FAIL"]
+        hist = None
+        try:
+            hist = json.loads(path.read_bytes().decode("ascii"))
+        except UnicodeDecodeError as e:
+            rep.add("FAIL", f"feed: {name} is not pure ASCII ({e})")
+        except json.JSONDecodeError as e:
+            rep.add("FAIL", f"feed: {name} does not parse as JSON ({e})")
+        if hist is not None:
+            got = hist.get("instruments") if isinstance(hist, dict) else None
+            if isinstance(got, dict):
+                instruments = got
+            else:
+                rep.add("FAIL", f"feed: {name} has no 'instruments' object")
+        entries = declared = 0
+        for ticker, rec in sorted(instruments.items()):
+            if ticker not in COMMODITY_ROOTS or not isinstance(rec, dict):
+                rep.add("FAIL", f"feed: {name} instruments[{ticker!r}] is "
+                                f"not one of {', '.join(COMMODITY_ROOTS)}")
+                continue
+            through = rec.get("audited_through")
+            if through is not None:
+                try:
+                    dt.date.fromisoformat(through)
+                except (TypeError, ValueError):
+                    rep.add("FAIL", f"feed: {name} {ticker} audited_through "
+                                    f"{through!r} is not an ISO date")
+            series = rec.get("series")
+            gone = rec.get("unavailable")
+            series = series if isinstance(series, dict) else {}
+            gone = gone if isinstance(gone, dict) else {}
+            for week, entry in sorted(series.items()):
+                entries += 1
+                where = f"{name} {ticker} series[{week!r}]"
+                doc = weeks.get(week)
+                if doc is None:
+                    rep.add("FAIL", f"feed: {where} names a week with no "
+                                    f"weekly file -- a value for a week the "
+                                    f"panel does not have describes nothing")
+                if week in gone:
+                    rep.add("FAIL", f"feed: {where} is also listed as "
+                                    f"unavailable; it cannot be both")
+                if not isinstance(entry, dict):
+                    rep.add("FAIL", f"feed: {where} is not an object")
+                    continue
+                _feed_entry_check(name, ticker + " series", week, entry, rep)
+                if not isinstance(entry.get("source"), str) \
+                        or not entry.get("source"):
+                    rep.add("FAIL", f"feed: {where} lacks a non-empty "
+                                    f"'source'")
+                if not isinstance(entry.get("symbol"), str) \
+                        or not entry.get("symbol"):
+                    rep.add("FAIL", f"feed: {where} lacks 'symbol', the "
+                                    f"provider symbol that answered")
+                _timestamp_check(where, entry.get("fetched_at"), rep)
+                if "observed" in entry:
+                    _observed_check(where, entry["observed"], week, rep)
+                _contract_check(where, ticker, entry.get("contract"),
+                                entry.get("observed", week), rep)
+                close = entry.get("close")
+                if doc is None or not _is_number(close):
+                    continue
+                held = _committed_close(doc, ticker)
+                was = entry.get("replaces")
+                if _named_contract(doc, ticker) and held is not None:
+                    if abs(held - close) > 1e-9:
+                        rep.add("FAIL", f"feed: {week} has two different "
+                                        f"{ticker} settlements -- "
+                                        f"weekly/{week}.json names its "
+                                        f"contract and says {held}, {name} "
+                                        f"says {close}. The deriver reads "
+                                        f"the weekly file's; one of them is "
+                                        f"wrong.")
+                elif was is not None:
+                    was_close = was.get("close") \
+                        if isinstance(was, dict) else None
+                    if held is None or not _is_number(was_close) \
+                            or abs(held - was_close) > 1e-9:
+                        rep.add("FAIL", f"feed: {where} says it replaces "
+                                        f"{was_close!r}, but weekly/{week}"
+                                        f".json holds {held!r}")
+                elif held is not None and not _same_close(held, close):
+                    rep.add("FAIL", f"feed: {where} is {close} where "
+                                    f"weekly/{week}.json holds {held}, and "
+                                    f"does not record that it replaces it")
+            for week, entry in sorted(gone.items()):
+                declared += 1
+                where = f"{name} {ticker} unavailable[{week!r}]"
+                if week not in weeks:
+                    rep.add("FAIL", f"feed: {where} names a week with no "
+                                    f"weekly file")
+                why = entry.get("reason") if isinstance(entry, dict) else None
+                if not isinstance(why, str) or not why.strip():
+                    rep.add("FAIL", f"feed: {where} gives no 'reason'; a "
+                                    f"week with no settlement says why")
+        if rep.counts["FAIL"] == before:
+            rep.add("OK", f"feed: {name} validated ({entries} settlement(s), "
+                          f"{declared} week(s) recorded as unavailable)")
+
+    values = {t: _commodity_values(weeks, instruments, t)
+              for t in COMMODITY_ROOTS}
+    gaps, counts = {}, {"named": 0, "entry": 0, "audited": 0, "none": 0}
+    for ticker in COMMODITY_ROOTS:
+        rec = instruments.get(ticker)
+        rec = rec if isinstance(rec, dict) else {}
+        series = rec.get("series") if isinstance(rec.get("series"), dict) \
+            else {}
+        gone = rec.get("unavailable") \
+            if isinstance(rec.get("unavailable"), dict) else {}
+        through = rec.get("audited_through") \
+            if isinstance(rec.get("audited_through"), str) else ""
+        for week, doc in weeks.items():
+            if week in values[ticker]:
+                kind = ("named" if _named_contract(doc, ticker)
+                        and _committed_close(doc, ticker) is not None
+                        else "entry" if week in series else "audited")
+                counts[kind] += 1
+            elif week in gone:
+                counts["none"] += 1
+            elif week > through:
+                gaps.setdefault(ticker, []).append(week)
+
+    derived_here = (repo / "data" / "market_state.json").is_file()
+    if gaps and not have_history and derived_here:
+        rep.add("FAIL", f"feed: {name} not found, and market_state.json was "
+                        f"derived in this tree. Without it no WTI, GOLD or "
+                        f"SILVER close from before contracts were named can "
+                        f"be read, so every change and percentile that "
+                        f"reaches back derives as null. The weekly job does "
+                        f"not write this file: copy it from the repo, then "
+                        f"re-derive.")
+    elif gaps and not have_history:
+        every = sorted({w for missing in gaps.values() for w in missing})
+        rep.add("WARN", f"feed: {name} not found. Without it no WTI, GOLD "
+                        f"or SILVER close from before contracts were named "
+                        f"can be read: {len(every)} week(s), {every[0]} .. "
+                        f"{every[-1]}, have no settlement on a named "
+                        f"contract. Copy the file from the repo before "
+                        f"deriving anything here.")
+    elif gaps:
+        for ticker, missing in sorted(gaps.items()):
+            missing.sort()
+            span = missing[0] if len(missing) == 1 \
+                else f"{missing[0]} .. {missing[-1]}"
+            unlabelled = sum(1 for w in missing
+                             if _committed_close(weeks[w], ticker) is not None)
+            how = (f" {unlabelled} of them carry a close with no contract "
+                   f"label, which a writer from before 2026-10-05 produces "
+                   f"and no reader uses." if unlabelled else "")
+            rep.add("WARN", f"feed: {len(missing)} week(s) have no {ticker} "
+                            f"settlement on a named contract: "
+                            f"{span}.{how} market_state derives the fields "
+                            f"that need them as null. Fill with `python "
+                            f"scripts/backfill_commodities.py`, which also "
+                            f"re-derives market_state.json.")
+    else:
+        rep.add("OK", f"feed: every week has its commodity settlements or a "
+                      f"recorded reason for none ({counts['named']} named "
+                      f"in their own file, {counts['entry']} from {name}, "
+                      f"{counts['audited']} audited closes, "
+                      f"{counts['none']} unavailable)")
+
+    if gaps and not have_history and derived_here:
+        return      # already failed; with no file there is nothing to
+                    # compare the state against
+    _market_state_commodity_check(repo, weeks, values,
+                                  have_history or not gaps, rep)
+
+
+def _pct_change(now, then):
+    """The deriver's own arithmetic (snapshot._pct_delta), to one decimal."""
+    if then == 0:
+        return None
+    return round(float(100.0 * (now / then - 1.0)), 1)
+
+
+def _market_state_commodity_check(repo, weeks, values, history_ok, rep):
+    """market_state's WTI, GOLD and SILVER are the nearest-expiry contract's
+    settlements, differenced against themselves, or null.
+
+    The regression gate for the defect: a deriver from before 2026-10-05
+    takes commodities.* straight from the weekly files, so it shows the
+    December gold contract as GOLD and measures a change from one contract
+    month to another. The Friday job runs the runner's copy of
+    scan_pipeline/, not this repo's; it fetches this script fresh and stops
+    on a FAIL, so a stale runner is caught before it pushes.
+
+    px, contract and the four changes are checked by value. Each is one
+    division of two committed numbers, rounded once, and the arithmetic here
+    is the deriver's. pctile_2y is checked only for being null exactly when
+    px is; its value is --derive's business.
+    """
+    path = repo / "data" / "market_state.json"
+    if not path.is_file():
+        return
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+        as_of = state["as_of"]
+        day = dt.date.fromisoformat(as_of)
+        block = state["commodities"]
+        shown = {t: {k: block[t][k] for k in (
+            "px", "contract", "d1w", "d4w", "d13w", "d52w", "pctile_2y")}
+            for t in COMMODITY_STATE}
+    except (ValueError, KeyError, TypeError):
+        rep.add("FAIL", "feed: data/market_state.json has no readable as_of "
+                        "/ commodities (px, contract, d1w, d4w, d13w, d52w, "
+                        "pctile_2y for WTI, GOLD and SILVER). A state with "
+                        "no 'contract' field was written by a deriver from "
+                        "before 2026-10-05: sync scan_pipeline/ on the "
+                        "runner, then `python "
+                        "scripts/rederive_market_state.py`.")
+        return
+    if as_of not in weeks:
+        rep.add("WARN", f"feed: market_state.json is as_of {as_of}, which "
+                        f"has no weekly file here; its commodities were not "
+                        f"checked")
+        return
+
+    def back(n):
+        return (day - dt.timedelta(weeks=n)).isoformat()
+
+    def same(a, b):
+        return (a is None and b is None) or (
+            _is_number(a) and _is_number(b) and abs(a - b) < 1e-9)
+
+    wrong = []
+    for ticker in COMMODITY_STATE:
+        pts = values[ticker]
+        now = pts.get(as_of)
+        want = {"px": round(now[0], 2) if now else None,
+                "contract": now[1] if now else None}
+        for field, n in (("d1w", 1), ("d4w", 4), ("d13w", 13), ("d52w", 52)):
+            then = pts.get(back(n))
+            want[field] = (_pct_change(now[0], then[0])
+                           if now and then else None)
+        if ticker in NEXT_CONTRACT:
+            # One contract: last week's settlement of the month px is.
+            want["d1w"] = None
+            if now and now[1]:
+                for name in (ticker, NEXT_CONTRACT[ticker]):
+                    then = values[name].get(back(1))
+                    if then and then[1] == now[1]:
+                        want["d1w"] = _pct_change(now[0], then[0])
+                        break
+        got = shown[ticker]
+        off = [f"{f} is {got[f]!r}, derives as {want[f]!r}"
+               for f in ("px", "contract", "d1w", "d4w", "d13w", "d52w")
+               if not (got[f] == want[f] if f == "contract"
+                       else same(got[f], want[f]))]
+        if history_ok and (got["pctile_2y"] is None) != (want["px"] is None):
+            off.append(f"pctile_2y is {got['pctile_2y']!r} although px "
+                       f"derives as {want['px']!r}")
+        if off:
+            wrong.append(f"{ticker}: " + "; ".join(off))
+    if wrong:
+        rep.add("FAIL", f"feed: market_state.json commodities for {as_of} "
+                        f"are not what the nearest-expiry settlements "
+                        f"derive -- {' | '.join(wrong)}. It was written by a "
+                        f"deriver that reads commodities.* straight from the "
+                        f"weekly files (before 2026-10-05), or before a "
+                        f"settlement was filled, or where "
+                        f"{'/'.join(COMMODITY_HISTORY)} was missing. Check "
+                        f"that scan_pipeline/ on the runner is current and "
+                        f"that file is beside its data/weekly, then `python "
+                        f"scripts/rederive_market_state.py`.")
+        return
+    said = ", ".join(
+        f"{t} null" if shown[t]["px"] is None else
+        f"{t} {shown[t]['px']!r} "
+        f"({shown[t]['contract'] or 'month not on record'})"
+        for t in COMMODITY_STATE)
+    rep.add("OK", f"feed: market_state.json commodities for {as_of} are the "
+                  f"nearest-expiry settlements: {said}")
+
+
 # ------------------------------------------------- settlement and restatement
 
 # Mirrors scan_pipeline/snapshot_macro.py: the instruments marked "settles"
@@ -1120,7 +1562,7 @@ def _market_state_us2y_check(repo, weeks, series, history_ok, rep):
 # repeated here and tests/test_instrument_sessions.py pins them equal.
 LATE_SETTLING = {
     "rates": ("US2Y_FUT",),
-    "commodities": ("WTI", "GOLD", "SILVER"),
+    "commodities": ("WTI", "WTI_NEXT", "GOLD", "SILVER"),
     "fx": ("DXY",),
 }
 SETTLED_HOUR_UTC = 13
@@ -1923,6 +2365,7 @@ def main():
         check_feed(repo, rep)
         check_weekly_completeness(repo, today, rep)
         check_us2y_history(repo, rep)
+        check_commodity_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
                    label="daily")
         check_daily_freshness(repo, today, rep)

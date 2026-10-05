@@ -282,7 +282,7 @@ def test_the_future_is_no_longer_filed_under_us2y():
 
 def yahoo_stub(ticker, cfg, friday):
     closes = {"^TNX": 5.277, "2YY=F": 4.635}
-    if cfg["symbol"] in closes:
+    if cfg.get("symbol") in closes:
         return {"close": closes[cfg["symbol"]], "volume": None}, None
     return {"close": 1.0, "volume": None}, None
 

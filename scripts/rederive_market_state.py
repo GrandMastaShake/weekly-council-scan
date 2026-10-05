@@ -1,14 +1,16 @@
 """rederive_market_state.py -- regenerate data/market_state.json from scratch.
 
 market_state.json is derived, and the derivation is pure: the weekly files,
-data/us2y_treasury.json and macro/facts.json in, one file out, byte for byte
-(DATA_FEED.md sec.2). The weekly job writes it one step at a time, from last
-week's state. This writes the same file through the whole chain, earliest
-week forward, which is what `truth_check --derive` compares against -- so it
-regenerates the file after a change the weekly job did not make:
+data/us2y_treasury.json, data/commodity_settlements.json and macro/facts.json
+in, one file out, byte for byte (DATA_FEED.md sec.2). The weekly job writes
+it one step at a time, from last week's state. This writes the same file
+through the whole chain, earliest week forward, which is what `truth_check
+--derive` compares against -- so it regenerates the file after a change the
+weekly job did not make:
 
-  * a week added to data/us2y_treasury.json (scripts/backfill_us2y.py calls
-    this itself after a fill),
+  * a week added to data/us2y_treasury.json or an entry added to
+    data/commodity_settlements.json (scripts/backfill_us2y.py and
+    scripts/backfill_commodities.py call this themselves after a fill),
   * a change to the deriver,
   * macro/facts.json regenerated after the weekly job ran (the Sunday
     auditor's purity repair is this same derivation).
@@ -20,8 +22,9 @@ and wrong for a repair: it would blank the policy block of a committed file.
 CLI:
   python scripts/rederive_market_state.py [--data data] [--facts PATH]
 
-  --data   the data root (default: data); reads <data>/weekly and
-           <data>/us2y_treasury.json, writes <data>/market_state.json
+  --data   the data root (default: data); reads <data>/weekly,
+           <data>/us2y_treasury.json and <data>/commodity_settlements.json,
+           writes <data>/market_state.json
   --facts  macro facts (default: macro/facts.json beside the data root)
 """
 from __future__ import annotations
