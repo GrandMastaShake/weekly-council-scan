@@ -203,8 +203,11 @@ refused once with nothing asking again.
   week-over-week return across them is the ratio rather than a market move.
   Two are known: **APH** (2:1, 2026-09-03) and **MNST** (2:1, 2026-08-11).
   Neither is in the 110-name analysis set, so heatmap sector scores are
-  untouched -- `market_state` and Arena, which derive over the full universe,
-  are not.
+  untouched. Nothing else in this repo derives across them either:
+  `market_state` reads only the four index and twelve sector ETFs from
+  `series`, and Arena and the Tracker fetch their own bars. (Until 2026-10-05
+  this said both derive over the full universe. Neither does.) A reader over
+  every name would hit the step: `panel_source.py` when it is on, or a chart.
 
   **The panel is not edited for these.** A weekly file is an observation and
   `2026-08-28.json` correctly records APH as it stood that day; rewriting it
@@ -320,6 +323,54 @@ refused once with nothing asking again.
   It writes `<date>.corrected.json` through the writer's own fetch, records
   what it replaced, and labels the replacement. Never by hand: an unrecorded
   change is one the next rebuild erases and the feed gate refuses.
+- **Equity closes: the backfill writer takes the last bar on or before the
+  Friday.** `backfill_weekly.py::slice_week` keeps a ticker's last bar inside
+  the Mon..Fri week and can mark nothing per ticker, so a name with no Friday
+  bar -- halted, delisted mid-week, a gap at the provider -- carries an
+  earlier session under the Friday date. It wrote the 105 backfilled files
+  and every name merged in afterwards. An audit of every committed equity bar
+  against the provider (2026-10-05) found it happened once: **EA in
+  2026-08-07.json is its close of Tuesday 2026-08-04**, the last session
+  before it was taken private, on volume 0. Of the other backfilled and
+  merged bars, 34,774 are the session their file names (the Thursday, in the
+  five holiday files) and 205 cannot be checked: the provider keeps only the
+  last bar of a delisted symbol (AVB 104 weeks, EA 101).
+
+  **A committed equity close cannot be compared with a fresh fetch.** It is
+  adjusted to its fetch date, so it differs for every name that has paid a
+  dividend or split since. `scripts/audit_series.py` tells the session from
+  the volume, which is never dividend-adjusted, and from the close once the
+  provider's own factor for the fetch date (its Adj Close over its Close) is
+  divided out. Re-run it with
+
+      python scripts/audit_series.py
+
+  It prints only what is new, changed or gone against
+  `macro/series_audit.json`, and how much it could have found: with the
+  session before it put in place of each bar that passed, that session is
+  named every time (37,947 of 37,947). Give anything new a cause in the JSON
+  by hand, then `--write`. Network and yfinance needed; the tests need
+  neither. EQR is audited as VMRK, which carries its history.
+
+  The same audit covers the Friday job's files, and one of them this repo's
+  writer did not write. **2026-08-28.json took every equity close from the
+  provider's `1wk` bar**: a one-off script on the runner, on the Saturday the
+  provider's daily closes were null. For 330 names that is the Friday close.
+  AVB's is 68.14 from Monday 2026-08-24, null volume, the successor's price
+  under a dead symbol, and `2026-08-28.corrected.json` carries it too. Not
+  corrected.
+
+  **None of this reached a derived number.** `market_state` reads sixteen
+  names from `series` (SPY, QQQ, DIA, IWM, the twelve sector ETFs) and every
+  one of their bars is right. The heatmap never scored AVB or EA. Arena and
+  the Tracker fetch their own bars (`scripts/arena_ingest.py`,
+  `portfolio/tracker.py`) and do not read `data/weekly`.
+
+  **Not fixed.** `slice_week` is unchanged, in both copies of the script, so
+  the next backfill or `--merge` that meets such a name does it again. How
+  that bar should be recorded -- `missing`, as the Friday job does, or a
+  per-ticker `observed` -- is not decided (`DATA_FEED.md` sec.1b, "The equity
+  series"). Run the audit after any backfill.
 - **GOLD is two contract months, and nothing in a file says which.** WTI,
   GOLD and SILVER are Yahoo's continuous symbols. Between 2026-09-05 and
   2026-10-03 Yahoo rebuilt `GC=F` from the nearest-expiry contract onto the
@@ -390,3 +441,5 @@ moving one breaks his skill silently; update
   "the last bar on or before" for an instrument with no bar on the date.
 - Change a close in a correction by hand. Use `restate_instruments.py`, so
   the change is recorded in `restated` and survives the next rebuild.
+- Call a committed equity close wrong because a fresh fetch disagrees. It is
+  adjusted to its fetch date. `scripts/audit_series.py` is the comparison.
