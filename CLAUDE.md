@@ -271,8 +271,10 @@ refused once with nothing asking again.
   789 in the weekly files are not the provider's close for the file's date:
 
   - **2026-08-28 holds Thursday's US10Y, VIX and DXY** (4.672 / 14.51 / 99.16
-    for 4.72 / 14.43 / 99.70). Fetched Saturday 14:10 UTC, when Yahoo had no
-    Friday bar for its index symbols. Corrected, owner sign-off 2026-10-05.
+    for 4.72 / 14.43 / 99.70). Fetched Saturday 14:10 UTC. Most likely Yahoo
+    had no usable Friday bar for its index symbols yet and the fallback took
+    Thursday's; a Friday bar carrying Thursday's values would have left the
+    same file, and it cannot say which. Corrected, owner sign-off 2026-10-05.
   - **Three Friday-evening files hold quotes, not settlements**: WTI, GOLD,
     SILVER, DXY and the 2-year future in 2026-09-11, 09-18 and 09-25. The
     2026-09-18 WTI is the 95.47 of #110: the November contract's last trade,
@@ -299,7 +301,8 @@ refused once with nothing asking again.
   `missing`; a stand-in only when a later bar proves the date was skipped,
   recorded as `provenance.<block>.<ticker>.observed`; and the five
   late-settling instruments are not read before 13:00 UTC on the day after
-  `as_of`. `truth_check --feed` fails a file dated 2026-10-05 or later that
+  `as_of`. None of that catches a bar dated `as_of` with the wrong day's
+  values in it; the audit is what finds that, so run it. `truth_check --feed` fails a file dated 2026-10-05 or later that
   carries one read earlier, which is what a runner still on the old writer
   produces.
 

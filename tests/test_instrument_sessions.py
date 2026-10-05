@@ -3,10 +3,12 @@
 Three things went into committed files with no trace, and each is pinned
 here from the file that carried it.
 
-2026-08-28.json was fetched on the Saturday at 14:10 UTC. Yahoo had no
-Friday bar for ^TNX, ^VIX or DX-Y.NYB, the writer took "the last bar on or
-before Friday", and Thursday's 10-year, VIX and dollar index went in under
-Friday's date. The note that said so was dropped on the way to the file.
+2026-08-28.json was fetched on the Saturday at 14:10 UTC and holds
+Thursday's 10-year, VIX and dollar index under Friday's date. Most likely
+Yahoo had no usable Friday bar for ^TNX, ^VIX or DX-Y.NYB yet and the writer
+took "the last bar on or before Friday"; the note that would have said so
+was dropped on the way to the file, so it cannot be told from a Friday bar
+that carried Thursday's values. The first is what the rule here stops.
 
 2026-09-18.json was fetched at 22:40 ET on the Friday. Its WTI is 95.47, the
 November contract's last trade; the settled front month was 100.30 (#110).
