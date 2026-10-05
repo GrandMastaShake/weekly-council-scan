@@ -14,6 +14,8 @@
 
 **2026-09-28 review:** No active resting limits to re-bless -- the ledger is empty for a seventh straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the wikis again describe buy *zones*, not resting prices -- Cecil's EOG add at $136 and XOM at $156-157 (wiki/synthesis.md Section 1), the XLF 200D test at $53.72 ("Buy a test of the 200D", wiki/synthesis.md Section 5). The calendar's rule for this week is "no new positions into Wednesday 8:30 AM without a stop" (wiki/synthesis.md Section 5); a resting bid that fills on a hot-PCE flush is exactly a new position into that print. The owner's cash cap (commit e72d8af) also changes what an empty ledger means: with the book held at >= 80% invested, a limit order is no longer a way to keep cash working -- it is the only place a deliberate *not yet* can live. None was voted.
 
+**2026-10-05 review:** No active resting limits to re-bless -- the ledger is empty for an eighth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the wikis again describe add-on-pullback zones rather than resting prices -- SMH toward $621 on a gap fill that holds, XLK $198.54-$199.35 holding $198.73 (wiki/synthesis.md Section 5). The Council booked SNPS, AMAT and LRCX at market above those zones this week; had those zones been written here as limits a month ago, this ledger would be the record of whether patience or paying market was cheaper.
+
 ## Filled / Cancelled
 
 *None.*
