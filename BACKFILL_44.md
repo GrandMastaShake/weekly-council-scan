@@ -108,6 +108,8 @@ Expected:
   were also not yet trading.
 - `data/weekly/2026-08-21.corrected.json` should carry roughly 330 series
   entries, not 286. If it still says 286, `rebuild_corrections.py` did not run.
+  (332 since BTC and GLD were merged in on 2026-10-06, and 330 is then the
+  stale count: CLAUDE.md, "The correction trap".)
 - Spot-check any dividend payer among the 44 (PM, STZ, TMUS) against the
   spreadsheet: the backfilled value should be BELOW the spreadsheet's for
   older weeks, by roughly the accumulated yield. If it matches exactly, the

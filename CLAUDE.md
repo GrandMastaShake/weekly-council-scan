@@ -166,10 +166,20 @@ sixteen ETFs. The heatmap takes both from `data/daily`, as comparison rows
 on its daily tape, and its weekly metrics come out byte-identical with and
 without them in the panel. They are stored for Council v2.
 
-`--config` is not in the weekly job's gate line (`--feed --derive`), so a
-week written by a stale runner copy of `scan_pipeline/` is caught by CI
-after the push, not by the job before it. On 2026-10-06 the runner's
-`snapshot.py` was still the repo's of 2026-09-21, with the old list in it.
+**What a week without a feed name stops.** `--config` is not in the weekly
+job's gate line (`--feed --derive`), so a week written by a runner whose
+`scan_pipeline/` is behind is pushed, and fails on main afterwards. CI goes
+red on that push. So does the daily job: it runs `--feed --config` and the
+whole suite before it commits a session, so from the Monday it commits
+nothing until the week is merged, and the sessions it skipped are recovered
+by hand afterwards (the audit step prints the command). Only the newest week
+is asked, so the failure also clears by itself once a later week is whole,
+with the hole still behind it.
+
+**So after any change to the feed, copy `scan_pipeline/config/` to the
+runner before the next Saturday build.** On 2026-10-06 the runner's
+`tickers.py` matched the repo's, and its `snapshot.py` was still the repo's
+of 2026-09-21, with the old list in it.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
@@ -413,7 +423,8 @@ refused once with nothing asking again.
   provider's daily closes were null. For 330 names that is the Friday close.
   AVB's is 68.14 from Monday 2026-08-24, null volume, the successor's price
   under a dead symbol, and `2026-08-28.corrected.json` carries it too. Not
-  corrected.
+  corrected. (BTC and GLD in that file are daily bars, merged in on
+  2026-10-06.)
 
   **None of this reached a derived number.** `market_state` reads sixteen
   names from `series` (SPY, QQQ, DIA, IWM, the twelve sector ETFs) and every
@@ -621,7 +632,9 @@ moving one breaks his skill silently; update
   writes it.
 - Step over a week that was refused. Write the Fridays
   `snapshot.unwritten_fridays` lists, oldest first, before the newest.
-- Give a writer its own list of names, or add a name to the feed without
-  merging it into the newest week in the same change.
+- Give the weekly or the daily writer its own list of names, or add a name
+  to the feed without merging it into the newest week in the same change.
   `snapshot.equity_universe()` reads `PRICE_FEED_UNIVERSE`, and
   `truth_check --config` holds the writer and the newest file to it.
+  (`build_universe` keeps a narrower set on purpose: `universe.json` mirrors
+  `wiki/universe.md`, which lists stocks.)
