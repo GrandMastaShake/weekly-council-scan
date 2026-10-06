@@ -81,7 +81,14 @@ The parts that get violated:
   what the agents fill in from priors. `truth_check --feed` warns where the
   panel itself can tell: a week with neither a bar nor a `missing` entry for
   an index or sector ETF, or for a name an earlier and a later week both
-  carry.
+  carry. And it fails a `missing` that is not a list of `{"ticker",
+  "reason"}` entries, both strings that say something (2026-10-06), in every
+  weekly and daily file. An entry with no reason records nothing and
+  accounts for no name: the checks that ask for a bar or an entry read it as
+  no entry, so a name typed in to get past them fails under its own line and
+  under theirs. The FAIL stops whatever ran the gate, the daily job's commits
+  included, and little clears it once it is on main (`DATA_FEED.md` sec.1).
+  It is stopped before the push.
 - **`fetched_at` is UTC and real.** It is also the adjustment anchor: adjusted
   closes are back-adjusted to the fetch date, so downstream consumers use it to
   detect stale splices.
