@@ -67,6 +67,14 @@ jobs:
       # and deleted 243 series from 107 weeks on 2026-08-26; the script now
       # refuses that combination outright. --force is reserved for a
       # full-universe rewrite, where writing the whole file is correct.
+      #
+      # --merge only adds. A named ticker a week already holds is left as
+      # committed and listed in the plan, never written over. A run that
+      # changes no file for that reason exits 2 and fails this step, the dry
+      # run too when the files alone show there is nothing to add: until
+      # 2026-10-06 it re-fetched every such bar over the committed one and
+      # this job went on to commit, with no series count moved for the
+      # guard below to see.
       - name: Backfill
         run: |
           ARGS="--out data --start ${{ inputs.start }} --end ${{ inputs.end }}"

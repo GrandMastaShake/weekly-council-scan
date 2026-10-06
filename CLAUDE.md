@@ -200,9 +200,12 @@ refused once with nothing asking again.
 
 - **The mirror backfill script.** `scan_pipeline/scripts/backfill_weekly.py`
   is a faithful copy of Kimi's runner and has diverged from
-  `scripts/backfill_weekly.py`: it has no `--merge`, so the only way it can add
-  tickers to an existing week is the `--only ... --force` combination that
-  emptied the panel. Nothing invokes it and a test fails if anything starts to.
+  `scripts/backfill_weekly.py`. It has had `--merge` and the refusal of
+  `--only ... --force` since 2026-08-26 (`7cf7025`; until 2026-10-06 this
+  entry said it had no `--merge`) and nothing since: it can still call an
+  unposted Friday a holiday (`DATA_FEED.md` sec.1c), and its `--merge` still
+  writes a fresh fetch over a bar the week already holds (The backfill,
+  below). Nothing invokes it and a test fails if anything starts to.
   Use `scripts/backfill_weekly.py`. The real fix is upstream in the runner.
 - **AVB 2026-08-21**: close 65.9005 behind volume 0, corrected. It was in
   `series` and not in `missing`, so it flowed through as real. Three
@@ -520,6 +523,38 @@ other series: on 2026-08-26 that emptied 107 files, 287 series down to 44, and
 the job reported success. The script refuses that combination now. `--force` is
 for a full-universe rewrite and nothing else.
 
+**`--merge` adds; it never replaces.** A named ticker a week already holds is
+left exactly as committed -- its bar, its `provenance.series` stamp and
+`missing` -- and the plan says which and how many, in a dry run too: it is
+read off the files, not the provider. Until 2026-10-06 such a ticker was
+fetched again and written over the committed bar, and the run logged it as
+"refreshed" and exited 0. A fresh fetch is adjusted to a later date, so it is
+another close for any name that has paid a dividend or split since, and the
+count of series does not move, which is all `panel_guard` and CI compare.
+
+**No merge run has hit a committed bar.** Every commit that touched
+`data/weekly` was compared with its parent: the two merge runs (`3a099f6`,
+`5f0d596`) put 4,839 bars into base files that existed and replaced none,
+and all 4,883 `provenance.series` stamps in the panel (44 are the 2026-08-21
+correction's copy) are on a name the file did not hold before.
+`BACKFILL_44.md`'s command run again would have fetched over every bar the
+44 have in the 107 base files, 4,612 of them. Rehearsed on a copy of the
+panel with the provider stubbed (2026-10-06), it wrote over all of them and
+exited 0, and `rebuild_corrections`, `panel_guard` and `truth_check --feed`
+all passed the result.
+
+A merge run that changes no file and left a named ticker alone exits 2,
+which stops the workflow before its commit step: before any download when
+every named ticker is already in every week on file in the range, and after
+the fetch otherwise. The 44 are the second kind, because SPCX has no bar
+before its IPO and only the fetch shows there is nothing to add. A week with
+nothing to add is not rewritten. No flag makes a merge replace a bar:
+`--force` beside `--merge` does nothing, and the plan says so. A close the
+provider has restated is a correction's to carry. `restate_instruments.py`
+writes one for a special instrument and nothing writes one for an equity
+bar: a correction is rebuilt from its base, so a close changed in one by
+hand does not survive.
+
 **A week is written only with its session witness.** A Friday SPY has no bar
 for is refused until a later SPY bar proves it was a holiday, and the run
 exits 2, which stops the workflow before its commit step. `--only` adds names
@@ -555,6 +590,8 @@ moving one breaks his skill silently; update
   total-return adjusted (`yfinance auto_adjust=True`). It is useful as an
   independent cross-check and unusable as a source.
 - Edit a committed weekly file.
+- Write a fresh fetch over a bar a week already holds. `--merge` leaves it
+  alone and says so; a restated close goes in `<date>.corrected.json`.
 - Invent a close to fill a gap. Use `missing` with a reason.
 - Read `rates.US2Y` straight from a weekly file, or let `US2Y_FUT` stand in
   for it. Go through `snapshot.cash_2y_series`; a gap stays a gap.
