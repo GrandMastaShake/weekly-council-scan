@@ -41,6 +41,20 @@ Per-file conventions (byte-stability contract inherited from snapshot.py):
     the files alone show there is nothing to add it stops before any
     download, a dry run included. Before that date a named ticker was
     re-fetched over its committed bar and the run exited 0.
+  * --merge never puts one company in the panel under two symbols
+    (2026-10-06). The provider serves a renamed company's whole history
+    under the new symbol, so a merge that named VMRK over the weeks that
+    hold EQR added EQR's own bars a second time, exited 0, and passed every
+    gate; a bar added to a week is never taken out. Two refusals, each for
+    the whole run, exit 2, with nothing written:
+      - a rename on record (RENAMED, scan_pipeline/config/tickers.py): the
+        old symbol is never merged, and the new one is not added to any
+        week up to the old symbol's last bar. Read off every week on file,
+        so it stops before the download, a dry run included.
+      - a rename nobody recorded: after the download, a named ticker that
+        would share a non-zero volume with one other key in
+        SAME_BARS_WEEKS weeks or more, counting the weeks the two already
+        share, is that key's history under another symbol.
 
 CLI:
   python backfill_weekly.py --out <data-root> [--start 2024-08-09]
@@ -93,6 +107,7 @@ if _PIPELINE_ROOT not in sys.path:
 
 from scan_pipeline import snapshot          # noqa: E402
 from scan_pipeline import snapshot_macro    # noqa: E402
+from scan_pipeline.config import tickers as feed_tickers    # noqa: E402
 
 RUN_TS = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 BACKFILL_SOURCE = snapshot.PROVIDER + "-backfill"   # "yahoo-backfill"
@@ -413,6 +428,13 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
 
     With nothing to add and no new `missing` entry the file is not written
     at all, and "changed" is False: its bytes stay the commit's.
+
+    A retired symbol, and a ticker whose company the week holds under an
+    earlier one (RENAMED), is not added and not listed in `missing`. It
+    comes back under "renamed". main() refuses such a run before it reaches
+    a week, and for more weeks than this function can see
+    (renamed_refusals); this is what stands in the way of a caller that
+    does not come through main().
     """
     doc = read_week(path, friday)
     series = doc.setdefault("series", {})
@@ -420,6 +442,7 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     monday = friday - timedelta(days=4)
     present: list = []
     absent: list = []
+    renamed: list = []
     fresh: dict = {}
     for t in tickers:
         if t in series:
@@ -429,6 +452,10 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
             # week and would be listed in `missing` beside the bar the week
             # still has for it.
             present.append(t)
+            continue
+        other = other_symbol_held(t, series)
+        if other is not None:
+            renamed.append((t, other))
             continue
         bar, _actual = slice_week(history.get(t, ([], [], [])),
                                   monday, friday)
@@ -447,7 +474,7 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     unlisted = [t for t in absent if t not in listed]
 
     rec = {"path": path, "doc": doc, "added": list(merged),
-           "present": present, "absent": absent,
+           "present": present, "absent": absent, "renamed": renamed,
            "changed": bool(merged or unlisted)}
     if not rec["changed"]:
         return rec
@@ -545,6 +572,269 @@ NOTHING_MERGED_NEXT = (
 
 
 # ---------------------------------------------------------------------------
+# One company, one symbol a week
+# ---------------------------------------------------------------------------
+# The provider serves a renamed company's whole history under the symbol it
+# trades by now, and of the retired symbol it keeps at most the last session.
+# Each made a merge write what it must not, on copies of the panel on
+# 2026-10-06, with exit 0 and every gate passing:
+#
+#   --only VMRK over the weeks that hold EQR   EQR's own bars a second time:
+#                                              105 weeks holding both
+#   --only EQR over 2026-08-21                 EQR's close of Monday
+#                                              2026-08-17 under the Friday,
+#                                              and EQR struck from `missing`
+#
+# A bar added to a week is never taken out, so each rule below stops the
+# whole run before it writes, and none has a flag.
+
+# How many weeks two keys must share a volume in before a run takes them for
+# one history. Measured on the panel of 2026-10-06 (113 weeks, some 56,000
+# pairs of keys a week): 59 pairs share a non-zero volume in a week, every
+# one of them in exactly one week. EQR and VMRK, merged over each other on a
+# copy, share it in 105.
+SAME_BARS_WEEKS = 3
+
+RENAMED_REFUSED = (
+    "REFUSED, nothing downloaded and nothing written: this run would put "
+    "one company in the panel under two symbols, or a retired symbol's last "
+    "session under a Friday (RENAMED, scan_pipeline/config/tickers.py). "
+    "Nothing overrides this, because a bar added to a week is never taken "
+    "out.")
+
+SAME_BARS_REFUSED = (
+    "REFUSED, nothing written: the bars this run would add are already in "
+    "the panel under another symbol. Nothing overrides this, because a bar "
+    "added to a week is never taken out.")
+
+SAME_BARS_NEXT = (
+    "  Two companies do not trade the same number of shares week after\n"
+    "  week: on the panel of 2026-10-06 no two tickers shared a volume in\n"
+    "  more than one week. The provider is serving one history under both\n"
+    "  symbols, as it does for a renamed company.\n"
+    "  If one was renamed into the other, record it in RENAMED\n"
+    "  (scan_pipeline/config/tickers.py) and in RENAMED_SYMBOLS\n"
+    "  (scripts/truth_check.py), and name only the weeks after the old\n"
+    "  symbol's last bar. If not, this wants a person before any week is\n"
+    "  written.")
+
+
+def real_bar(bar) -> bool:
+    """A bar with trades behind it. A close on volume 0 or none is a print:
+    AVB's two under a dead symbol are that (2026-08-21, 2026-08-28), and so
+    is what a feed that still asks for a renamed company's old symbol may be
+    handed. A print holds no week for a company and is not a symbol's last
+    bar."""
+    return isinstance(bar, dict) and bool(bar.get("volume"))
+
+
+def panel_weeks(weekly_dir: str, must_read=None):
+    """(Friday, document) for every week on file, oldest first. No network.
+
+    The rules below are read off the whole panel and not a run's range:
+    whether VMRK may go into 2024-08-09 depends on EQR's weeks after it.
+    Corrections are not read. They are rebuilt from their bases, and the
+    base is what a merge writes into.
+
+    A week that cannot be read stops the run when the answer depends on it:
+    every week, or with `must_read` the Fridays named there, the rest being
+    stepped over."""
+    for name in sorted(os.listdir(weekly_dir)):
+        stem, ext = os.path.splitext(name)
+        path = os.path.join(weekly_dir, name)
+        if ext != ".json" or not os.path.isfile(path):
+            continue
+        try:
+            friday = date.fromisoformat(stem)
+        except ValueError:
+            continue
+        try:
+            doc = read_week(path, friday)
+        except SystemExit as unreadable:
+            if must_read is not None and friday not in must_read:
+                continue
+            raise SystemExit(
+                "%s\nbackfill: what a merge may add is read off every week "
+                "on file, and that one cannot be read. Nothing was written."
+                % unreadable)
+        yield friday, doc
+
+
+def other_symbol_held(ticker: str, series: dict):
+    """The symbol that keeps `ticker` out of a week, or None (RENAMED,
+    scan_pipeline/config/tickers.py): the one a retired symbol was renamed
+    to, whatever the week holds, or an earlier symbol of the company that
+    has a bar in `series`."""
+    later = feed_tickers.later_symbols(ticker)
+    if later:
+        return later[0]
+    for other in feed_tickers.earlier_symbols(ticker):
+        if real_bar(series.get(other)):
+            return other
+    return None
+
+
+def symbol_spans(weekly_dir: str, symbols) -> dict:
+    """{symbol: (first Friday, last Friday)} whose file holds a bar for it,
+    over every week on file."""
+    spans: dict = {}
+    for friday, doc in panel_weeks(weekly_dir):
+        series = doc.get("series") or {}
+        for s in symbols:
+            if real_bar(series.get(s)):
+                spans[s] = (spans.get(s, (friday, friday))[0], friday)
+    return spans
+
+
+def renamed_refusals(weekly_dir: str, on_file: list, tickers: list,
+                     held: dict) -> list:
+    """What a merge must not add because RENAMED says OLD became NEW:
+    [(ticker, other, "retired" | "earlier", bound, weeks)], read off the
+    files before anything is fetched.
+
+      * OLD is never merged, into any week. The provider keeps at most its
+        last session, and slice_week files that under the Friday of its
+        week. Rehearsed on a copy, `--only EQR --merge` over 2026-08-21
+        wrote EQR's close of Monday 2026-08-17 beside VMRK's Friday bar and
+        struck EQR from that week's `missing`. Before VMRK was in that week
+        the same run would have left the Monday bar there alone, and the
+        week could never have taken its Friday one.
+      * NEW is not added to any week up to OLD's last bar. In the weeks that
+        hold OLD it would be OLD's own bar from a later fetch. In a week
+        before them that holds neither (2024-08-09.json, for VMRK) it would
+        be a bar with OLD's weeks after it, and the symbols of one company
+        do not interleave.
+
+    A pair the week already holds is not listed. It is left alone like any
+    other bar a week holds (held_already)."""
+    if not on_file:
+        return []
+    earlier = {t: feed_tickers.earlier_symbols(t) for t in tickers}
+    wanted = {s for symbols in earlier.values() for s in symbols}
+    spans = symbol_spans(weekly_dir, wanted) if wanted else {}
+    out = []
+    for t in tickers:
+        have = set(held.get(t, ()))
+        later = feed_tickers.later_symbols(t)
+        if later:
+            weeks = [f for f in on_file if f not in have]
+            if weeks:
+                out.append((t, later[0], "retired", None, weeks))
+            continue
+        for other in earlier[t]:
+            if other in spans:
+                bound = spans[other][1]
+                weeks = [f for f in on_file if f <= bound and f not in have]
+                if weeks:
+                    out.append((t, other, "earlier", bound, weeks))
+    return out
+
+
+def _weeks(weeks: list) -> str:
+    return (weeks[0].isoformat() if len(weeks) == 1
+            else "%s..%s" % (weeks[0], weeks[-1]))
+
+
+def describe_renamed(refusals: list) -> list:
+    """renamed_refusals as lines for the log: what is refused, why, and for
+    the new symbol the range that is not."""
+    lines = []
+    for t, other, which, bound, weeks in refusals:
+        if which == "retired":
+            lines.append(
+                "  %s was renamed %s and is not merged into any week: %d "
+                "week(s) named, %s. The provider serves that company's "
+                "history under %s. Of a retired symbol it keeps at most the "
+                "last session, and this script would file it under a Friday "
+                "it did not trade on."
+                % (t, other, len(weeks), _weeks(weeks), other))
+        else:
+            lines.append(
+                "  %s is %s renamed. %s has bars through %s, so %s is not "
+                "added to that week or any before it: %d of the week(s) "
+                "named, %s. In the weeks that hold %s it would be %s's own "
+                "bar a second time; in one that holds neither it would "
+                "stand before %s's weeks. To add %s where the panel has no "
+                "bar for the company, name only weeks after %s (--start "
+                "%s)."
+                % (t, other, other, bound, t, len(weeks), _weeks(weeks),
+                   other, other, other, t, bound,
+                   bound + timedelta(days=7)))
+    return lines
+
+
+def same_bars_refusals(weekly_dir: str, fridays: list, tickers: list,
+                       history: dict) -> list:
+    """Named tickers whose fresh bars are bars the panel already holds under
+    another key: [(ticker, other, the weeks this run would add, the weeks
+    the panel already holds both)], after the download and before anything
+    is written.
+
+    This is the rule for a rename nobody recorded, and it needs no map. The
+    volume is the witness, as it is for audit_series.py: a close is adjusted
+    to its fetch date, a volume is not. A named ticker that would come to
+    share a non-zero volume with one other key in SAME_BARS_WEEKS weeks or
+    more is that key's history under a second symbol. One other key: a name
+    that meets three different tickers once each has met three coincidences
+    (CI and ELV do, on the real panel).
+
+    The count is the pair's, over every week on file, so the weeks a run
+    would add are counted with the ones the pair already shares, and a
+    doubling cannot be brought in two weeks at a time. Two names of one run
+    are held against each other as well as against the panel.
+
+    What it cannot see:
+
+      * a pair that shares fewer weeks than that in all. The newest-week
+        merge of a name that has just joined the feed is one week;
+      * a week whose committed volume the provider has restated since. It
+        restates many: the audit finds no session for the volume of 1,720
+        of the weekly job's 3,181 bars (macro/series_audit.json). The files
+        the backfill wrote are older and hold still;
+      * a pair with a split between the two fetches, which moves the volume;
+      * a retired symbol's last session, which is another day's volume;
+      * anything at all in a dry run, which downloads nothing.
+
+    RENAMED covers every one of those for a rename that is on record."""
+    in_run = set(fridays)
+    adding: dict = {}      # (ticker, other) -> the weeks this run would add
+    already: dict = {}     # (ticker, other) -> the weeks the panel holds both
+    for friday, doc in panel_weeks(weekly_dir, must_read=in_run):
+        series = doc.get("series") or {}
+        by_volume: dict = {}
+        for other, bar in series.items():
+            if real_bar(bar):
+                by_volume.setdefault(bar["volume"], []).append(other)
+        monday = friday - timedelta(days=4)
+        fresh: dict = {}       # volume -> the named tickers it would arrive on
+        for t in tickers:
+            if t in series:
+                if real_bar(series[t]):
+                    for other in by_volume[series[t]["volume"]]:
+                        if other != t:
+                            already.setdefault((t, other), []).append(friday)
+                continue
+            if friday not in in_run:
+                continue
+            bar, _actual = slice_week(history.get(t, ([], [], [])),
+                                      monday, friday)
+            if bar is None or not bar["volume"]:
+                continue
+            for other in by_volume.get(bar["volume"], ()):
+                adding.setdefault((t, other), []).append(friday)
+            fresh.setdefault(bar["volume"], []).append(t)
+        for names in fresh.values():
+            names.sort()
+            for i, t in enumerate(names):
+                for other in names[i + 1:]:
+                    adding.setdefault((t, other), []).append(friday)
+    return sorted((t, other, weeks, already.get((t, other), []))
+                  for (t, other), weeks in adding.items()
+                  if len(weeks) + len(already.get((t, other), []))
+                  >= SAME_BARS_WEEKS)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 def main() -> int:
@@ -569,7 +859,10 @@ def main() -> int:
                          "preserving every other series and the file-level "
                          "adjustment anchor; a ticker a week already holds "
                          "is left alone, never written over, and a run that "
-                         "changes no file for that reason exits 2")
+                         "changes no file for that reason exits 2. So does "
+                         "a run that would put one company in the panel "
+                         "under two symbols (RENAMED, or the same volumes "
+                         "under another key): it is refused whole")
     args = ap.parse_args()
 
     # The combination that emptied the panel on 2026-08-26. --force writes a
@@ -624,13 +917,19 @@ def main() -> int:
         held = held_already(weekly_dir, on_file, tickers)
         held_bars = sum(len(weeks) for weeks in held.values())
         named = len(tickers) * len(on_file)
+        # One company, one symbol a week. Read off the files like the rest
+        # of the plan, and not counted among what a fetch could add: for
+        # VMRK over the whole panel this line answered "106 pair(s)", every
+        # one of them a week VMRK must not go into.
+        renamed = renamed_refusals(weekly_dir, on_file, tickers, held)
+        barred = len({(r[0], week) for r in renamed for week in r[4]})
         if held_bars:
             log("already in the week, left alone: %d of the %d (ticker, "
                 "week) pair(s) named" % (held_bars, named))
             for line in describe_held(held, len(on_file)):
                 log(line)
             log("could be added, if the provider has a bar: %d pair(s)"
-                % (named - held_bars))
+                % (named - held_bars - barred))
         if args.force:
             log("--force has no effect with --merge: a merge never rewrites "
                 "a week, and never a bar the week already holds")
@@ -653,6 +952,14 @@ def main() -> int:
                       "cannot start one." % (len(no_file), shown))
             print(NOTHING_MERGED_NEXT)
             return 2
+        # Refused before the download, and in a dry run too, like the plan
+        # with nothing to add above. The whole run: the weeks it could have
+        # written are for a command that names only those.
+        if renamed:
+            print(RENAMED_REFUSED)
+            for line in describe_renamed(renamed):
+                print(line)
+            return 2
     if args.dry_run:
         log("dry-run: no downloads, no writes. First 3 Fridays: %s; "
             "last 3: %s"
@@ -664,6 +971,21 @@ def main() -> int:
     os.makedirs(weekly_dir, exist_ok=True)
     history = download_equity_history(
         tickers, fridays[0], fridays[-1])
+
+    if args.merge:
+        # The same rule for a rename nobody recorded, which only the bars
+        # can show. Asked before the first week is written.
+        same = same_bars_refusals(weekly_dir, fridays, tickers, history)
+        if same:
+            print(SAME_BARS_REFUSED)
+            for t, other, weeks, shared in same:
+                print("  %s has the same non-zero volume as %s in %d week(s) "
+                      "this run would add, %s%s."
+                      % (t, other, len(weeks), _weeks(weeks),
+                         ", and in %d the panel already holds, %s"
+                         % (len(shared), _weeks(shared)) if shared else ""))
+            print(SAME_BARS_NEXT)
+            return 2
 
     written = skipped = unchanged = left_alone = 0
     missing_counts: list = []
@@ -687,6 +1009,10 @@ def main() -> int:
             else:
                 unchanged += 1
             left_alone += len(rec["present"])
+            for t, other in rec["renamed"]:
+                refused.append("%s: %s not added, it is one company with %s "
+                               "(RENAMED)"
+                               % (friday.isoformat(), t, other))
             log("  (%3d/%d) %s merged +%d new, %d already present (left "
                 "alone), %d absent -> series=%d%s"
                 % (n, len(fridays), friday, len(rec["added"]),

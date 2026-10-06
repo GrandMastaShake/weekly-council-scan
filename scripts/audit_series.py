@@ -109,6 +109,7 @@ if _PIPELINE_ROOT not in sys.path:
 # The baseline mechanics and the tolerance are the instrument audit's, so the
 # two reviewed lists read, diff and round the same way.
 import audit_instruments as ai  # noqa: E402
+from scan_pipeline.config.tickers import RENAMED, later_symbols  # noqa: E402
 from scan_pipeline.snapshot import PROVIDER  # noqa: E402
 
 BASELINE = ("macro", "series_audit.json")
@@ -128,14 +129,26 @@ TALLY = ("bars", "ok", "close_alone")
 # in their place, and how many of those the close alone would miss.
 REACH = ("tried", "named", "blind_on_close")
 
-# A ticker whose history the provider now serves under another symbol. EQR
-# was the surviving company of the AVB merger and trades as VMRK from
-# 2026-08-18 (wiki/universe.md); the provider moved its whole history there
-# and returns nothing for EQR. Nothing is taken on trust by listing a name
-# here: every committed bar still has to match the successor's bar for its
-# session in close and volume, and EQR's 105 do. AVB, the company that was
-# absorbed, has no successor: its history is gone.
-SUCCESSORS = {"EQR": "VMRK"}
+# A ticker whose history the provider now serves under another symbol:
+# RENAMED in scan_pipeline/config/tickers.py, the copy the merge reads too
+# (scripts/backfill_weekly.py refuses to add a symbol where the panel holds
+# its company under another). EQR was the surviving company of the AVB
+# merger and trades as VMRK from 2026-08-18 (wiki/universe.md); the provider
+# moved its whole history there and keeps at most EQR's last bar. Nothing is
+# taken on trust by listing a name here: every committed bar still has to
+# match the successor's bar for its session in close and volume, and EQR's
+# 105 do. BK, MMC and PEAK are in the map and in no file's `series`, so the
+# audit never meets them. AVB, the company that was absorbed, has no
+# successor: its history is gone.
+SUCCESSORS = RENAMED
+
+
+def successor(ticker):
+    """The symbol that carries `ticker`'s history today: the end of its
+    chain in RENAMED, or the ticker itself."""
+    later = later_symbols(ticker)
+    return later[-1] if later else ticker
+
 
 # The provider took more than two weeks to carry MNST's 2026-08-11 split back
 # through its history: bars fetched on 08-12 and on 08-27 are still on the
@@ -508,7 +521,7 @@ def audit_file(name, doc, histories, failed):
         committed = {"close": entry["close"], "volume": entry.get("volume")}
         if not committed["volume"]:
             counts["no_volume"].append(name + " " + ticker)
-        symbol = SUCCESSORS.get(ticker, ticker)
+        symbol = successor(ticker)
         finding = {
             "panel": PANEL, "file": name,
             "instrument": BLOCK + "." + ticker, "origin": origin,
@@ -600,7 +613,7 @@ def run_audit(repo, fetch=fetch_history, now=None):
         return result
 
     tickers = sorted({t for _, doc in ready for t in doc.get(BLOCK) or {}})
-    symbols = sorted({SUCCESSORS.get(t, t) for t in tickers})
+    symbols = sorted({successor(t) for t in tickers})
     start, end = history_window(ready, now)
     try:
         histories = fetch(symbols, start, end) or {}
@@ -613,8 +626,8 @@ def run_audit(repo, fetch=fetch_history, now=None):
     result["audited"]["tickers"] = {
         "asked": len(symbols), "answered": len(symbols) - len(failed),
         "failed": failed,
-        "through_successor": {t: SUCCESSORS[t] for t in tickers
-                              if t in SUCCESSORS}}
+        "through_successor": {t: successor(t) for t in tickers
+                              if successor(t) != t}}
 
     corrected = {name[:-len(".corrected.json")] for name, _ in ready
                  if name.endswith(".corrected.json")}
