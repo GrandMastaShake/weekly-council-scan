@@ -851,12 +851,13 @@ ON_FILE = (
     "written again whole is a declared rewrite, which is the backfill's to "
     "do (scripts/backfill_weekly.py --force), not this call's.")
 
-# What is at the week's path is not always the week. The refusal above told
-# a run to push whatever it found: the first bytes of a write that died, a
-# zero-byte file, a directory. Such a thing holds no observation, the feed
-# gate fails on it, and nothing else would ever write the week: the file is
-# there, so unwritten_fridays does not owe it. It is refused all the same,
-# because nothing here writes over a file, and says what it is.
+# What is at the week's path is not always the week: the first bytes of a
+# write that died, a zero-byte file, a directory, another week's file. Told
+# to leave that and push it, as the message above says of a week, a run
+# would push a file the feed gate fails, and nothing would ever write the
+# week: the file is there, so unwritten_fridays does not owe it. It is
+# refused all the same, because nothing here writes over a file, and the
+# refusal says what it found.
 NOT_A_WEEK = (
     "REFUSED, nothing written: %s is there and is not the weekly file for "
     "%s (%s). It holds no observation to keep. Do not push it. Nothing here "

@@ -744,11 +744,11 @@ def broken_week(kind: str, path: Path):
     "another week", "no series"])
 def test_a_thing_at_the_path_that_is_not_the_week_is_refused_and_named(
         tmp_path, kind):
-    """The first refusal told a run to push whatever it found there: a file
-    that does not parse, which the feed gate fails, under a name
-    unwritten_fridays no longer owes. Nothing would ever have written that
-    week. It is still refused, because nothing here writes over a file, and
-    it says what it is and what to do about it."""
+    """Told to leave it and push it as it stands, which is what a week on
+    file is told, a run would push a file that does not parse: the feed
+    gate fails it, and unwritten_fridays no longer owes the week, so nothing
+    would ever write it. It is still refused, because nothing here writes
+    over a file, and the refusal says what it found and what to do."""
     path = tmp_path / "weekly" / "2026-10-09.json"
     path.parent.mkdir()
     broken_week(kind, path)
