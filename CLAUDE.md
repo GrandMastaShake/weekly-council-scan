@@ -97,6 +97,26 @@ stops before its commit step. (It used to exit 0.)
 `tests/test_instrument_sessions.py` fails if any committed correction is not
 what a rebuild would write, so a stale one no longer gets past CI.
 
+**A corrected week is two files and one week.** A reader that lists
+`data/weekly/*.json` reads it twice. `scan_pipeline/panel_source.py` did
+until 2026-10-06: every name got a second row for 2026-08-21 and for
+2026-08-28 with its open equal to its close, twelve rows covered ten weeks,
+and the AVB bar the first correction drops was read from the base. It is
+opt-in (`COUNCIL_SCAN_SOURCE=panel`) and was off, so no book was built on
+it. A reader goes through `snapshot._load_weekly_files`: each week once,
+from its correction where it has one. `truth_check` spells the same rule
+for itself, because its feed checks are pure stdlib and run where there is
+no `scan_pipeline/`. The feed gate, the two audits, `panel_guard` and CI's
+panel step list every file under its own name on purpose: they check
+files, not weeks.
+
+Two things about that reader as it stands. A weekly file it cannot parse
+stops it (`PanelUnreadable`), wherever in the panel the file is; it used to
+step over one. And **not decided**: a row opens at the last close a name
+has, so a name with no bar in a week gets a next row that spans the gap
+under a one-week date. The panel holds two, AVB 2026-08-28 and EA
+2026-08-07, on names no engine scans.
+
 ## Universe vs focus set
 
 `scan_pipeline/config/tickers.py`:
@@ -713,3 +733,6 @@ moving one breaks his skill silently; update
   `truth_check --config` holds the writer and the newest file to it.
   (`build_universe` keeps a narrower set on purpose: `universe.json` mirrors
   `wiki/universe.md`, which lists stocks.)
+- List `data/weekly/*.json` to read the panel. A corrected week is two of
+  those. Go through `snapshot._load_weekly_files`: each week once, from its
+  correction where it has one.
