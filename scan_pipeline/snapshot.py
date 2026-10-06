@@ -20,9 +20,9 @@ then write_weekly raises NoSessionWitness and writes nothing. Run on a
 market holiday before that, the writer used to commit `series: {}`.
 
 Spec amendment (owner, supersedes DATA_FEED.md sec.1 "Ticker set"): weekly
-files commit the FULL universe -- STOCK_UNIVERSE (277; 274 after the 2026-09-21 review) + 16 index/sector ETFs
-= 293 series tickers -- plus the special-instrument blocks, not just the
-charted ~40. Size math adjusts to ~15KB/file.
+files commit the FULL feed -- PRICE_FEED_UNIVERSE + 16 index/sector ETFs, as
+equity_universe() returns it -- plus the special-instrument blocks, not just
+the charted ~40. Size math adjusts to ~15KB/file.
 
 Special instruments (US10Y, US2Y, US2Y_FUT, VIX, WTI, WTI_NEXT, GOLD, SILVER,
 DXY) come from scan_pipeline.snapshot_macro.fetch_special_instruments (Job V,
@@ -93,9 +93,11 @@ from datetime import date, datetime, timedelta, timezone
 from typing import Dict, List, Optional, Set, Tuple
 
 try:
-    from scan_pipeline.config.tickers import STOCK_UNIVERSE, BACKFILL_44_TICKERS
+    from scan_pipeline.config.tickers import (
+        STOCK_UNIVERSE, BACKFILL_44_TICKERS, PRICE_FEED_UNIVERSE)
 except ImportError:  # same-dir import when repo root is not on sys.path
-    from config.tickers import STOCK_UNIVERSE, BACKFILL_44_TICKERS
+    from config.tickers import (
+        STOCK_UNIVERSE, BACKFILL_44_TICKERS, PRICE_FEED_UNIVERSE)
 
 
 # ---------------------------------------------------------------------------
@@ -217,13 +219,21 @@ def _vol_int(v) -> Optional[int]:
 # Equity set
 # ---------------------------------------------------------------------------
 def equity_universe() -> List[str]:
-    """Full committed equity set: STOCK_UNIVERSE + index/sector ETFs, deduped.
+    """Full committed equity set: PRICE_FEED_UNIVERSE + index/sector ETFs,
+    deduped.
 
-    Per the owner amendment, weekly files commit this entire set.
-    BACKFILL_44_TICKERS included since 2026-08-26: the weekly panel carries
-    them, so a full-file rewrite that omits them would silently delete them
+    Per the owner amendment, weekly files commit this entire set, and
+    scripts/daily_observe.py fetches the same one for a daily file.
+
+    Read from the feed constant, never listed again here. This used to
+    repeat the union (STOCK_UNIVERSE | BACKFILL_44_TICKERS), so when the
+    Council watchlist joined PRICE_FEED_UNIVERSE on 2026-09-21 the weekly
+    writer went on fetching the old set: BTC and GLD reached the daily files
+    and no weekly file, in `series` or in `missing`, until 2026-10-06. A
+    name the feed lists and this leaves out is silently absent from every
+    week written, and a full-file rewrite deletes it from a week that had it
     (the 8/26 incident through the front door)."""
-    return sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
+    return sorted(set(PRICE_FEED_UNIVERSE)
                   | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
 
 

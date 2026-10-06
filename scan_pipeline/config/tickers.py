@@ -67,10 +67,11 @@ BACKFILL_44_TICKERS = [
 # ---------------------------------------------------------------------------
 # The price feed, and the analysis universe inside it
 # ---------------------------------------------------------------------------
-# PRICE_FEED_UNIVERSE is what data/weekly and data/daily commit: every name the
-# scan fetches. STOCK_UNIVERSE is what the ENGINES scan and is deliberately
-# narrower, so Monday fetch time is unchanged; the 44 backfilled names are fed
-# and stored but not scanned.
+# PRICE_FEED_UNIVERSE is what data/weekly and data/daily commit, beside the
+# sixteen index and sector ETFs snapshot.equity_universe() adds to it: every
+# name the feed fetches. STOCK_UNIVERSE is what the ENGINES scan and is
+# deliberately narrower, so Monday fetch time is unchanged; the 44 backfilled
+# names are fed and stored but not scanned.
 #
 # This constant exists because its absence was a live defect. Commit 009f7f6
 # added SECTOR_FOCUS_110, FOCUS_TICKERS and two asserts; 7cf7025 deleted all
@@ -111,6 +112,12 @@ assert len(COUNCIL_WATCHLIST) == len(set(COUNCIL_WATCHLIST)), "council watchlist
 # without being scanned until the heatmap's watchlist dropped it, the same day.)
 PRICE_FEED_UNIVERSE = sorted(set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS)
                              | set(COUNCIL_WATCHLIST))
+# Both writers fetch this through snapshot.equity_universe(), which reads this
+# constant. Until 2026-10-06 that function spelled the union out again, without
+# the watchlist, so the 320 above was true of the daily files only: BTC and GLD
+# were in no weekly file, in `series` or in `missing`. Both were merged into
+# all 113 weeks that day (provenance.series), and truth_check --config holds
+# the writer and the newest weekly file to every name here.
 
 
 # ---------------------------------------------------------------------------

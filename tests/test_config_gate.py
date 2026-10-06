@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import truth_check as tc  # noqa: E402
 import scan_pipeline.config as tickers_pkg  # noqa: E402
+from scan_pipeline import snapshot  # noqa: E402
 from scan_pipeline.config import tickers as t  # noqa: E402
 
 
@@ -69,6 +70,32 @@ def test_price_feed_is_the_union_of_its_three_parts():
                                           | set(t.COUNCIL_WATCHLIST))
     assert not hasattr(t, "FEED_ONLY_TICKERS")
     assert t.PRICE_FEED_UNIVERSE == sorted(set(t.PRICE_FEED_UNIVERSE))
+
+
+def test_the_weekly_writer_fetches_the_whole_feed():
+    """The feed constant and the set the weekly writer fetches, held together.
+
+    snapshot.equity_universe() spelled the union out for itself until
+    2026-10-06, and missed the Council watchlist when it joined the feed on
+    2026-09-21: BTC and GLD were in PRICE_FEED_UNIVERSE and the daily files,
+    and in no weekly file -- not in `series`, not in `missing`.
+    """
+    writer = set(snapshot.equity_universe())
+    assert set(t.PRICE_FEED_UNIVERSE) <= writer
+    assert {"BTC", "GLD"} <= writer
+    # The feed, the sixteen index and sector ETFs, and nothing else.
+    etfs = set(snapshot.INDEX_TICKERS) | set(snapshot.SECTOR_TICKERS)
+    assert len(etfs) == 16
+    assert writer == set(t.PRICE_FEED_UNIVERSE) | etfs
+    assert snapshot.equity_universe() == sorted(writer)
+
+
+def test_the_weekly_writer_reads_the_feed_constant_not_a_copy(monkeypatch):
+    """A second spelling of the union is what drifted. A name that joins the
+    feed has to reach the writer without anyone editing snapshot.py."""
+    monkeypatch.setattr(snapshot, "PRICE_FEED_UNIVERSE",
+                        list(t.PRICE_FEED_UNIVERSE) + ["JOINED_LATER"])
+    assert "JOINED_LATER" in snapshot.equity_universe()
 
 
 def test_council_watchlist_is_the_owners_111():
