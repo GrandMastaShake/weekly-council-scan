@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import os
 import sys
 import types
 from pathlib import Path
@@ -22,6 +23,23 @@ ROOT = Path(__file__).resolve().parents[1]
 
 for name in ("yfinance", "pandas", "requests"):
     sys.modules.setdefault(name, types.ModuleType(name))
+
+# git hands a hook, and a command run by `git rebase --exec`, the repository
+# it is working on in the environment: in a linked worktree, GIT_DIR and no
+# work tree. Several tests build a throwaway repository in tmp_path with
+# `git init`, `git add -A` and `git commit`. With GIT_DIR inherited those ran
+# against the repository being rebased instead: its tracked files staged as
+# deleted, the test's commits put on its branch (rehearsed on a scratch
+# repository, 2026-10-06). Every session here works in a linked worktree.
+# These are the names git itself calls repository-local
+# (`git rev-parse --local-env-vars`); no test means any of them.
+for name in ("GIT_ALTERNATE_OBJECT_DIRECTORIES", "GIT_CONFIG",
+             "GIT_CONFIG_PARAMETERS", "GIT_CONFIG_COUNT",
+             "GIT_OBJECT_DIRECTORY", "GIT_DIR", "GIT_WORK_TREE",
+             "GIT_IMPLICIT_WORK_TREE", "GIT_GRAFT_FILE", "GIT_INDEX_FILE",
+             "GIT_NO_REPLACE_OBJECTS", "GIT_REPLACE_REF_BASE", "GIT_PREFIX",
+             "GIT_SHALLOW_FILE", "GIT_COMMON_DIR"):
+    os.environ.pop(name, None)
 
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))

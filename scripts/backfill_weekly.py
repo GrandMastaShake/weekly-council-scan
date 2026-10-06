@@ -389,7 +389,8 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     which the run logged as "refreshed". A fresh fetch is adjusted to a
     later date, so it is another close for any name that has paid a
     dividend or split since; the count of series does not move, and the
-    count is all panel_guard and CI compare. No committed bar was hit: the
+    count was all panel_guard and CI compared then (they compare bars
+    since). No committed bar was hit: the
     two merge runs before that date (3a099f6, 5f0d596) named no ticker a
     week already held. A close the provider has restated is a correction's
     to carry (<date>.corrected.json, DATA_FEED.md sec.1), never this file's.
