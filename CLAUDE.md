@@ -52,7 +52,10 @@ The parts that get violated:
 - **`missing` is required and never empty-by-omission.** A ticker that could
   not be fetched is listed with a reason. A silently absent ticker is
   indistinguishable from one that never existed, and that ambiguity is exactly
-  what the agents fill in from priors.
+  what the agents fill in from priors. `truth_check --feed` warns where the
+  panel itself can tell: a week with neither a bar nor a `missing` entry for
+  an index or sector ETF, or for a name an earlier and a later week both
+  carry.
 - **`fetched_at` is UTC and real.** It is also the adjustment anchor: adjusted
   closes are back-adjusted to the fetch date, so downstream consumers use it to
   detect stale splices.
@@ -487,13 +490,48 @@ refused once with nothing asking again.
   the same rule now and exits 2 on a week it cannot write, and `--only` can no
   longer start a week, with or without SPY among its names: it adds to weeks
   that exist. That is how `2024-08-09.json` came to hold no index
-  or sector ETF at all, SPY among them, with none listed in `missing`. Not
-  edited; the gate warns, and a `--merge` backfill of those names adds them.
+  or sector ETF at all, SPY among them, with none listed in `missing`. The
+  sixteen were merged in on 2026-10-06 (next entry).
 
   Both of these are outside this repo and changed by hand: the runner's copy
   of `scan_pipeline/`, which writes the empty file until it is synced (the
   gate stops it), and the job's prompt, which asks for the most recent Friday
   only and so needs the catch-up put into it.
+- **`2024-08-09.json` went six weeks without its sixteen ETFs.** The
+  44-ticker merge of 2026-08-26 ran from 2024-08-09 and the panel began on
+  2024-08-16, so `--merge` started the week from its list; the next day the
+  277 of `STOCK_UNIVERSE` were merged in. Neither list had an index or
+  sector ETF in it. The file held 313 series and none of the sixteen, with
+  none listed in `missing`, and every other week had all of them.
+
+  **No committed number was touched.** `market_state` skips a week that
+  lacks a name, and when the file was written its week was already outside
+  every window of the newest state: whatever closes the sixteen take,
+  `market_state.json` re-derives byte-identical. What was wrong is the
+  record.
+
+  Merged in on 2026-10-06 with `--merge` (owner sign-off), fetched at
+  01:48:08 UTC and stamped so in `provenance.series`. Each is Friday
+  2024-08-09's bar by close and by volume (`audit_series.py`, run again on
+  the merged panel: nothing new, changed or gone). **That stamp matters.**
+  The same names in `2024-08-16.json` are anchored to 2026-08-12, before
+  the September distributions, so a return read across the two files is
+  overstated by 0.26 points for SPY and by up to 0.84 (XLRE; SMH, which
+  pays yearly, by nothing). Nothing committed reads across that pair.
+
+  `truth_check --feed` now warns when a week has neither a bar nor a
+  `missing` entry for one of the sixteen, or for a name an earlier and a
+  later week both carry. Earlier and later, not the weeks either side: a
+  rule that needs both neighbours cannot see the first file, and the two
+  corrected weeks are adjacent and would hide each other. It cannot see a
+  stock missing from the first file, which reads as a name that joined a
+  week later, as BNY, MRSH, DOC and VMRK did. The newest file is
+  `--config`'s to hold (Universe vs focus set, above).
+
+  The runner's copy of the file is the old one until it is synced, and the
+  weekly job's gate warns about it meanwhile. Nothing else follows: the job
+  pushes only the newest week, and its `market_state` does not depend on
+  this one.
 - **WTI, GOLD and SILVER are named contracts since 2026-10-05; the 113
   weeks before name nothing.** Those files hold Yahoo's continuous symbols
   (`CL=F`, `GC=F`, `SI=F`), and Yahoo does not hold them still. It rebuilt
