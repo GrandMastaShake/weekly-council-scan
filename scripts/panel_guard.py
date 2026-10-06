@@ -18,8 +18,9 @@ of the panel it wrote over 4,612 bars in 107 files; this guard printed
 "0 grew, 0 added; OK -- no file lost series", and CI, which carried its own
 copy of the count, would have said the same. That writer is closed. The rule
 below is for the next one: the runner's mirror of the backfill script, whose
---merge still overwrites; snapshot.write_weekly called for a week already on
-file; a hand edit; a one-off script.
+--merge still overwrites; a copy of snapshot.write_weekly from before it
+refused a week already on file, which the runner's is until it is synced; a
+hand edit; a one-off script.
 
 THE RULE. For every panel file that was there before:
 

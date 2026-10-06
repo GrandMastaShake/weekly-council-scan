@@ -51,7 +51,10 @@ CLI:
   --out C:\\Users\\alexa\\Documents\\kimi\\workspace\\truth_layer\\sweep\\data
 
   Existing files are never overwritten without --force (append-only
-  discipline, even for the backfill). Skipped files still feed the summary
+  discipline, even for the backfill). The writer holds every caller to
+  that since 2026-10-06: snapshot.write_weekly raises WeekOnFile for a week
+  that has its file, and --force is the one thing here that tells it to
+  write anyway. Skipped files still feed the summary
   statistics. --only restricts the equity set (for filling slices); it does
   not restrict the special-instrument blocks.
 
@@ -271,12 +274,16 @@ def slice_week(hist: tuple, monday: date, friday: date):
 # Weekly file assembly
 # ---------------------------------------------------------------------------
 def build_and_write(friday: date, tickers: list, history: dict,
-                    out_dir: str) -> dict:
+                    out_dir: str, *, overwrite: bool = False) -> dict:
     """Slice one Friday, fetch specials, write via snapshot.write_weekly,
     then stamp backfill identity (source / fetched_at).
 
     Raises snapshot.NoSessionWitness, before anything is fetched or written,
-    for a Friday the witness cannot answer for."""
+    for a Friday the witness cannot answer for. Raises snapshot.WeekOnFile
+    the same way for a week that already has its file, unless `overwrite`
+    is set. That is --force, the declared rewrite, and nothing else."""
+    if overwrite is not True:
+        snapshot.refuse_week_on_file(friday.isoformat(), out_dir)
     # Which session the file is: the weekly writer's rule, asked of the
     # witness's own history. This used to be read off the slices below --
     # "no ticker has a Friday bar, so it was a holiday" -- which is true of
@@ -324,7 +331,7 @@ def build_and_write(friday: date, tickers: list, history: dict,
     path = snapshot.write_weekly(
         friday.isoformat(),
         {"bars": bars, "missing": missing, "session": session.isoformat()},
-        special, out_dir=out_dir)
+        special, out_dir=out_dir, overwrite=overwrite)
 
     # Backfill identity: write_weekly stamps PROVIDER ("yahoo") and the write
     # clock; restamp with the backfill source and the shared run timestamp so
@@ -343,8 +350,9 @@ def build_and_write(friday: date, tickers: list, history: dict,
             if label.get("source") == snapshot.PROVIDER:
                 label["source"] = BACKFILL_SOURCE
                 label["fetched_at"] = RUN_TS
-    with open(path, "w", encoding="utf-8", newline="") as f:
-        f.write(snapshot.canonical_json(doc))
+    # Whole or not at all, as the writer wrote it: a restamp that died
+    # part-way would leave a file no later run may write over.
+    snapshot._write_json(path, doc, whole=True)
     return {"path": path, "doc": doc,
             "session_note": doc.get("session_note")}
 
@@ -710,7 +718,10 @@ def main() -> int:
             log("  (%3d/%d) %s %s" % (n, len(fridays), friday, refusal))
             continue
         try:
-            rec = build_and_write(friday, tickers, history, args.out)
+            # Reached for a week on file only under --force (it was skipped
+            # above otherwise), and --force is what tells the writer so.
+            rec = build_and_write(friday, tickers, history, args.out,
+                                  overwrite=args.force)
         except snapshot.NoSessionWitness as refusal:
             # Not a week this run can write. Say so and go on: the weeks
             # after it may be ordinary ones, and the exit code carries it.

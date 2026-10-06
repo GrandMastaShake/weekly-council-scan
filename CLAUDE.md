@@ -73,7 +73,8 @@ The parts that get violated:
 
 - **Weekly files are append-only. Never edit one.** If a provider restates,
   write `<date>.corrected.json` with the same shape plus `corrects` and
-  `reason`. Readers prefer the correction; the original stays.
+  `reason`. Readers prefer the correction; the original stays. The writer
+  will not write a week a second time: `write_weekly` raises `WeekOnFile`.
 - **`missing` is required and never empty-by-omission.** A ticker that could
   not be fetched is listed with a reason. A silently absent ticker is
   indistinguishable from one that never existed, and that ambiguity is exactly
@@ -839,10 +840,9 @@ that changes what the panel held fails CI whatever it says about itself, a
 revert of a bad write included. So do two things a correction can need: one
 more zero-volume drop in a correction that exists, and withdrawing one. Each
 goes in over a red check, by someone who has read why. What it does not reach
-is the runner. The weekly job's gate line is `truth_check --feed --derive`,
-and `snapshot.write_weekly` writes over a week that is on file without a
-word; only the job's prompt says not to. CI sees such a push once it is on
-main.
+is the runner: the weekly job's gate line is `truth_check --feed --derive`,
+and CI sees its push only once it is on main. What stands there instead is
+the writer (below).
 
 **What the guard does not say.** It compares a file with what that same file
 held. A new file held nothing, so a NEW correction is not compared with its
@@ -852,6 +852,56 @@ nothing says it for a daily correction (there is none). And a "before" with
 no panel file in it is refused, not passed: `--against` on a scratch copy the
 commit does not track used to print "0 file(s) before" and OK. A copy of the
 panel is rehearsed with `--snapshot` and `--compare`.
+
+**A week is written once.** `snapshot.write_weekly` raises `WeekOnFile` and
+writes nothing when the Friday already has its file. Until 2026-10-06 it
+wrote over it without a word: another fetch's closes over every bar,
+`fetched_at` restamped, and any name the second fetch lacked gone and listed
+nowhere. Only the weekly job's prompt said not to. The question is asked
+first, before the witness and before any instrument is fetched, and again
+just before the write. The refusal says what to do instead: leave the file;
+push one that never reached the repository as it stands; add the names it
+lacks afterwards, with a merge; take a restated close to a correction.
+`overwrite=True` is `scripts/backfill_weekly.py --force` and nothing else,
+and the workflow reaches that only with `rewrite` ticked.
+
+What is at the week's path is not always the week. A zero-byte file, the
+first bytes of a write that died, another week's file: the writer refuses
+those too, because nothing here writes over a file, and says it in other
+words. It is not a weekly file; do not push it; remove that one file and run
+again. Told to push it instead, a run would have pushed a file the feed gate
+fails, under a name `unwritten_fridays` no longer owes. The writer cannot
+leave one itself any more: a week is written beside its path and moved into
+place.
+
+The mirror script is left as it is (owner decision 2026-10-06). It passes no
+`overwrite`, so its `--force` on a week that is on file stops at the writer,
+and a test that runs it into a tmp directory fails if that changes. Its
+`--merge` does not go through the writer and still overwrites; the guard is
+what catches that.
+
+**Where the runner is not held to it.** Three things, all outside this repo.
+
+- Its copy of `scan_pipeline/` predates the witness rule. Until the sync it
+  is already owed, its writer overwrites as before.
+- The refusal, and step 2 of the job's prompt, look at the runner's own copy
+  of `data/weekly`. A week the repository has and that copy lacks, one a
+  backfill wrote from this side, is one the job would write and push over
+  when it is the Friday it runs for, and CI reports that only afterwards.
+  Not the case today: the copy has every base week. Keep it so.
+- On the path the prompt prescribes the refusal is never reached. Step 2
+  routes a week on file around the writer, and step 7 pushes the weekly
+  file only "if newly written". A run that died between writing and
+  pushing, as on 2026-08-15 and 2026-08-22, leaves a week its next run
+  neither rewrites nor pushes; a week later `unwritten_fridays`, reading the
+  runner's directory, does not owe it, and the repository has a hole that
+  the runner's gate passes and CI fails after the push. Step 7 has to push
+  a week the repository lacks whether or not that run wrote it.
+
+Where the refusal will be met is a second attempt inside one run, which the
+2026-08-28 run made (`step3_weekly.py`, then `step3_weekly_v2.py`). After
+the sync the first local write is final: a thin first fetch is pushed as it
+stands and mended by a merge, or the owner removes the file by hand.
 
 **Named tickers are ADDED with `--merge`, never `--force`.** `--force` writes a
 whole file from the ticker set it was given, so with `--only` it deletes every
@@ -971,6 +1021,11 @@ moving one breaks his skill silently; update
 - Build a weekly file the writer refused: by hand, from `1wk` bars, or from
   Thursday's. No file is the right outcome of that run, and the next one
   writes it.
+- Delete a weekly file to get `write_weekly` past `WeekOnFile`, or pass
+  `overwrite=True` from anywhere but the backfill's `--force`. A week on
+  file stays as written. One that never reached the repository is pushed as
+  it stands. The one file that is removed is the one the refusal itself
+  says is not a weekly file: it does not parse, or it is another week's.
 - Step over a week that was refused. Write the Fridays
   `snapshot.unwritten_fridays` lists, oldest first, before the newest.
 - Give the weekly or the daily writer its own list of names, or add a name

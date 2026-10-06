@@ -19,6 +19,10 @@ later bar proves the Friday was skipped, and the file says which; until
 then write_weekly raises NoSessionWitness and writes nothing. Run on a
 market holiday before that, the writer used to commit `series: {}`.
 
+A week is written once (2026-10-06). write_weekly raises WeekOnFile for a
+Friday that already has its file, where it used to write over it, and the
+one caller that may say otherwise is the backfill's declared rewrite.
+
 Spec amendment (owner, supersedes DATA_FEED.md sec.1 "Ticker set"): weekly
 files commit the FULL feed -- PRICE_FEED_UNIVERSE + 16 index/sector ETFs, as
 equity_universe() returns it -- plus the special-instrument blocks, not just
@@ -182,10 +186,17 @@ def canonical_json(obj) -> str:
     return json.dumps(obj, sort_keys=True, ensure_ascii=True, indent=2) + "\n"
 
 
-def _write_json(path: str, obj) -> str:
+def _write_json(path: str, obj, whole: bool = False) -> str:
+    """whole: write beside the path and move the file into place, so that
+    the path holds the whole file or nothing. A weekly file is written this
+    way: a write that died part-way used to leave its first bytes under the
+    week's name, where the writer now refuses to write again."""
     os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
-    with open(path, "w", encoding="utf-8", newline="") as f:
+    target = path + ".part" if whole else path
+    with open(target, "w", encoding="utf-8", newline="") as f:
         f.write(canonical_json(obj))
+    if whole:
+        os.replace(target, path)
     return path
 
 
@@ -815,8 +826,78 @@ def special_provenance(special, doc: dict) -> Dict[str, dict]:
     return out
 
 
+# A week that is on file is not written again. Until 2026-10-06 write_weekly
+# wrote over it without a word: called a second time for the same Friday it
+# replaced every bar with another fetch's, closes adjusted to a later date,
+# restamped fetched_at, and dropped any name the second fetch did not have.
+# The count of series need not move, and the count was all the gates
+# compared. Nothing in the code stood in the way. The weekly job's prompt
+# says not to, and that was the whole of it.
+class WeekOnFile(RuntimeError):
+    """No weekly file may be written: the week already has one, and a weekly
+    file is an observation, written once (DATA_FEED.md sec.1)."""
+
+
+ON_FILE = (
+    "REFUSED, nothing written: %s is already on file, and a weekly file is "
+    "written once (DATA_FEED.md sec.1). Written again it would put another "
+    "fetch's closes, adjusted to a later date, over every bar the file "
+    "holds, and lose any name this fetch does not have. Leave the file as "
+    "it is. If it has not reached the repository yet, push it as it stands. "
+    "Names it lacks are added afterwards by a merge, from the repository "
+    "(the \"Backfill weekly panel\" workflow with those tickers), never by "
+    "writing the week again. A close the provider has restated goes in "
+    "%s.corrected.json, with the owner's sign-off. A week that has to be "
+    "written again whole is a declared rewrite, which is the backfill's to "
+    "do (scripts/backfill_weekly.py --force), not this call's.")
+
+# What is at the week's path is not always the week: the first bytes of a
+# write that died, a zero-byte file, a directory, another week's file. Told
+# to leave that and push it, as the message above says of a week, a run
+# would push a file the feed gate fails, and nothing would ever write the
+# week: the file is there, so unwritten_fridays does not owe it. It is
+# refused all the same, because nothing here writes over a file, and the
+# refusal says what it found.
+NOT_A_WEEK = (
+    "REFUSED, nothing written: %s is there and is not the weekly file for "
+    "%s (%s). It holds no observation to keep. Do not push it. Nothing here "
+    "writes over a file, so remove that one file and run the same calls "
+    "again; the week is then written whole.")
+
+
+def _not_the_week(path: str, friday_date: str) -> Optional[str]:
+    """Why what is at `path` is not friday_date's weekly file, or None when
+    it is."""
+    if not os.path.isfile(path):
+        return "not a file"
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+    except (OSError, ValueError) as exc:        # ValueError: UTF-8 or JSON
+        return "it does not read as JSON: %s" % exc
+    if not isinstance(doc, dict) or not isinstance(doc.get("series"), dict):
+        return "it has no `series` object"
+    if doc.get("as_of") != friday_date:
+        return "its as_of is %r" % (doc.get("as_of"),)
+    return None
+
+
+def refuse_week_on_file(friday_date: str, out_dir: str = "data") -> str:
+    """The path of the week's file, once it is known that nothing is there.
+    Raises WeekOnFile when something is, and says whether it is the week.
+    write_weekly asks this first; a caller that fetches before it writes
+    can ask it before it fetches."""
+    path = os.path.join(out_dir, "weekly", friday_date + ".json")
+    if not os.path.lexists(path):       # a link to nowhere is something too
+        return path
+    why = _not_the_week(path, friday_date)
+    if why is None:
+        raise WeekOnFile(ON_FILE % (path, friday_date))
+    raise WeekOnFile(NOT_A_WEEK % (path, friday_date, why))
+
+
 def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = None,
-                 out_dir: str = "data") -> str:
+                 out_dir: str = "data", *, overwrite: bool = False) -> str:
     """Write data/weekly/<friday_date>.json under out_dir.
 
     series_bars: either a plain {ticker: {"close","volume"}} mapping (missing
@@ -830,6 +911,20 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
         the instruments it names (see special_provenance); the file-level
         source stays PROVIDER.
     out_dir: the data root; the file lands at <out_dir>/weekly/<date>.json.
+    overwrite: keyword only, and False for every caller but one. The
+        backfill's declared rewrite (scripts/backfill_weekly.py --force)
+        writes a week again whole and says so here. Only True is yes.
+
+    Raises WeekOnFile, and writes nothing, when something is already at the
+    week's path and overwrite is not set. That is asked first, before the
+    witness and before any instrument is fetched, and once more just before
+    the write, because fetching the instruments takes long enough for a
+    file to land. The message says which it found: the week, which is left
+    as it is, or a thing that is not a weekly file, which is removed by
+    hand. A correction is not the week's file, and is not looked at.
+
+    The file is written beside its path and moved into place, so the path
+    holds a whole week or nothing.
 
     Raises NoSessionWitness, and writes nothing, when the series carry no
     SPY bar: a fetch that was refused, or a panel that simply lacks it. A
@@ -844,6 +939,10 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
     if not _DATE_RE.match(friday_date):
         raise ValueError("friday_date must be YYYY-MM-DD, got %r" % friday_date)
 
+    path = os.path.join(out_dir, "weekly", friday_date + ".json")
+    if overwrite is not True:
+        refuse_week_on_file(friday_date, out_dir)
+
     session = refused = None
     if isinstance(series_bars, dict) and ("bars" in series_bars or "missing" in series_bars):
         bars = series_bars.get("bars") or {}
@@ -855,7 +954,6 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
         missing = []
 
     series = _normalize_block(bars)
-    path = os.path.join(out_dir, "weekly", friday_date + ".json")
     if refused or WITNESS not in series:
         why = refused or ("the series handed to the writer hold no %s bar"
                           % WITNESS)
@@ -903,7 +1001,9 @@ def write_weekly(friday_date: str, series_bars: dict, special: Optional[dict] = 
         doc["provenance"] = prov
     if note:
         doc["session_note"] = note
-    return _write_json(path, doc)
+    if overwrite is not True:
+        refuse_week_on_file(friday_date, out_dir)
+    return _write_json(path, doc, whole=True)
 
 
 # ---------------------------------------------------------------------------

@@ -6,12 +6,18 @@ with no error anywhere.
 """
 from __future__ import annotations
 
+import importlib.util
 import json
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
+import pytest
+
 from conftest import SCRIPTS, weekly_doc
+
+from scan_pipeline import snapshot  # noqa: E402  (conftest stubs the provider)
 
 REBUILD = SCRIPTS / "rebuild_corrections.py"
 TRUTH = SCRIPTS / "truth_check.py"
@@ -186,3 +192,38 @@ def test_nothing_invokes_the_mirror_backfill_script():
                 if needle in text:
                     hits.append(str(path.relative_to(root)))
     assert not hits, "something now invokes the mirror backfill: " + ", ".join(hits)
+
+
+def test_the_mirror_cannot_write_a_week_again_through_the_writer(
+        tmp_path, monkeypatch):
+    """Owner decision 2026-10-06: the mirror is left as it is. Its --force
+    hands a week that is on file to snapshot.write_weekly like any other,
+    and the writer refuses it, because nothing there says `overwrite`.
+    Taught to say it, the runner's copy could write a week again whole, with
+    no guard run before its push.
+
+    Loaded by path and run into a tmp directory with the provider stubbed,
+    which is the one way it is ever run here. On main's writer the second
+    call wrote 99.4 over the 100.0 and returned."""
+    root = Path(__file__).resolve().parents[1]
+    spec = importlib.util.spec_from_file_location(
+        "mirror_backfill_weekly",
+        root / "scan_pipeline" / "scripts" / "backfill_weekly.py")
+    mirror = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mirror)
+    monkeypatch.setattr(
+        mirror.snapshot_macro, "fetch_special_instruments",
+        lambda friday: {"rates": {}, "vol": {}, "commodities": {}, "fx": {},
+                        "missing": []}, raising=False)
+    monkeypatch.setattr(mirror.time, "sleep", lambda seconds: None)
+
+    day = date(2026, 10, 9)
+    history = {t: ([day], [100.0], [1000]) for t in ("AAPL", "SPY")}
+    rec = mirror.build_and_write(day, ["AAPL", "SPY"], history, str(tmp_path))
+    committed = Path(rec["path"]).read_bytes()
+    assert rec["doc"]["series"]["AAPL"]["close"] == 100.0
+
+    history["AAPL"] = ([day], [99.4], [1000])
+    with pytest.raises(snapshot.WeekOnFile, match="already on file"):
+        mirror.build_and_write(day, ["AAPL", "SPY"], history, str(tmp_path))
+    assert Path(rec["path"]).read_bytes() == committed

@@ -613,10 +613,12 @@ def test_a_stand_in_week_names_its_session(tmp_path):
 
 
 def test_an_ordinary_week_carries_no_note(tmp_path):
-    for got in (bars(), bars("2026-10-09"),
-                {t: {"close": 100.0, "volume": 1} for t in UNIVERSE}):
+    shapes = (bars(), bars("2026-10-09"),
+              {t: {"close": 100.0, "volume": 1} for t in UNIVERSE})
+    for n, got in enumerate(shapes):
+        # A directory each: a week is written once.
         doc = read(snapshot.write_weekly("2026-10-09", got, QUIET,
-                                         out_dir=str(tmp_path)))
+                                         out_dir=str(tmp_path / str(n))))
         assert "session_note" not in doc
 
 
@@ -631,6 +633,195 @@ def test_a_session_that_cannot_stand_in_is_not_written(tmp_path, session):
         snapshot.write_weekly("2026-12-25", bars(session), QUIET,
                               out_dir=str(tmp_path))
     assert not (tmp_path / "weekly").exists()
+
+
+# -- a week that is already on file --------------------------------------------
+
+LATER = {"AAPL": {"close": 99.4012, "volume": 1000},
+         "SPY": {"close": 99.87, "volume": 1000}}
+
+
+def test_a_week_on_file_is_not_written_again(tmp_path):
+    """Until 2026-10-06 the second call returned the same path and said
+    nothing. Every close in the file was another fetch's, adjusted to a
+    later date; fetched_at was restamped; and a name the second fetch did
+    not have was gone, listed nowhere. The series count need not move, and
+    the count was all the gates compared."""
+    path = snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                 out_dir=str(tmp_path))
+    committed = Path(path).read_bytes()
+
+    with pytest.raises(RuntimeError) as refusal:
+        snapshot.write_weekly("2026-10-09", LATER, QUIET,
+                              out_dir=str(tmp_path))
+
+    assert isinstance(refusal.value, snapshot.WeekOnFile)
+    assert Path(path).read_bytes() == committed
+    said = str(refusal.value)
+    assert said.startswith("REFUSED, nothing written")
+    assert "2026-10-09.json is already on file" in said
+    # What the runner's agent is to do instead of writing: leave it, push a
+    # file that never reached the repository as it stands, and take a wrong
+    # close to a correction (owner decision 2026-10-06).
+    assert "Leave the file as it is" in said
+    assert "push it as it stands" in said
+    assert "Names it lacks are added afterwards by a merge" in said
+    assert "2026-10-09.corrected.json" in said
+    assert "scripts/backfill_weekly.py --force" in said
+    said.encode("ascii")
+    # Not a kind of NoSessionWitness. The weekly job's catch-up and the
+    # backfill both catch that one to mean "not this run, come back", and a
+    # week that is on file is not coming back.
+    assert not issubclass(snapshot.WeekOnFile, snapshot.NoSessionWitness)
+    assert not issubclass(snapshot.NoSessionWitness, snapshot.WeekOnFile)
+
+
+def test_a_week_on_file_is_refused_before_the_witness_and_any_fetch(
+        tmp_path, monkeypatch):
+    """Asked first. A week that is on file has no use for eight instrument
+    fetches, and whether this fetch found a session is beside the point."""
+    def no_specials(friday):
+        raise AssertionError("fetched instruments for a week not written")
+
+    snapshot.write_weekly("2026-10-09", bars(), QUIET, out_dir=str(tmp_path))
+    monkeypatch.setattr(snapshot, "get_special_instruments", no_specials)
+    refused_fetch = {"bars": {}, "missing": [], "session": None,
+                     "refused": "no SPY bar dated 2026-10-09"}
+    without_witness = {"PLTR": {"close": 180.0, "volume": 5}}
+
+    for got in (bars(), refused_fetch, without_witness):
+        with pytest.raises(snapshot.WeekOnFile):
+            snapshot.write_weekly("2026-10-09", got, out_dir=str(tmp_path))
+    with pytest.raises(snapshot.WeekOnFile):
+        snapshot.refuse_week_on_file("2026-10-09", str(tmp_path))
+    assert snapshot.refuse_week_on_file("2026-10-16", str(tmp_path)).endswith(
+        "2026-10-16.json")
+
+
+def test_only_a_declared_rewrite_writes_over_a_week(tmp_path, monkeypatch):
+    """overwrite is the backfill's --force and nothing else, and it cannot
+    be passed by accident: it is keyword only."""
+    def no_specials(friday):
+        raise AssertionError("fetched instruments for a week not written")
+
+    path = snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                 out_dir=str(tmp_path))
+    with pytest.raises(TypeError):
+        snapshot.write_weekly("2026-10-09", LATER, QUIET, str(tmp_path), True)
+    # Only True is yes. "no" is a true value too, and is refused where a
+    # plain False is: before anything is fetched.
+    monkeypatch.setattr(snapshot, "get_special_instruments", no_specials)
+    for almost in ("no", 1, "True"):
+        with pytest.raises(snapshot.WeekOnFile):
+            snapshot.write_weekly("2026-10-09", LATER,
+                                  out_dir=str(tmp_path), overwrite=almost)
+    assert read(path)["series"]["AAPL"]["close"] == 100.0
+
+    again = snapshot.write_weekly("2026-10-09", LATER, QUIET,
+                                  out_dir=str(tmp_path), overwrite=True)
+    assert again == path
+    assert read(path)["series"] == LATER
+
+
+def broken_week(kind: str, path: Path):
+    if kind == "a directory":
+        path.mkdir()
+    elif kind == "zero bytes":
+        path.write_bytes(b"")
+    elif kind == "the first bytes of a write that died":
+        path.write_text('{\n  "as_of": "2026-10-09",\n  "series": {\n    "AAP',
+                        encoding="utf-8")
+    elif kind == "another week":
+        path.write_text(json.dumps(weekly_doc("2026-10-02", UNIVERSE)),
+                        encoding="utf-8")
+    elif kind == "no series":
+        path.write_text(json.dumps({"as_of": "2026-10-09"}),
+                        encoding="utf-8")
+
+
+@pytest.mark.parametrize("kind", [
+    "zero bytes", "the first bytes of a write that died", "a directory",
+    "another week", "no series"])
+def test_a_thing_at_the_path_that_is_not_the_week_is_refused_and_named(
+        tmp_path, kind):
+    """Told to leave it and push it as it stands, which is what a week on
+    file is told, a run would push a file that does not parse: the feed
+    gate fails it, and unwritten_fridays no longer owes the week, so nothing
+    would ever write it. It is still refused, because nothing here writes
+    over a file, and the refusal says what it found and what to do."""
+    path = tmp_path / "weekly" / "2026-10-09.json"
+    path.parent.mkdir()
+    broken_week(kind, path)
+
+    with pytest.raises(snapshot.WeekOnFile) as refusal:
+        snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                              out_dir=str(tmp_path))
+    said = str(refusal.value)
+    assert "is there and is not the weekly file for 2026-10-09" in said
+    assert "Do not push it" in said and "remove that one file" in said
+    assert "push it as it stands" not in said
+    said.encode("ascii")
+
+    if path.is_dir():
+        path.rmdir()
+    else:
+        path.unlink()
+    written = snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                    out_dir=str(tmp_path))
+    assert sorted(read(written)["series"]) == UNIVERSE
+
+
+def test_a_write_that_dies_leaves_nothing_under_the_weeks_name(
+        tmp_path, monkeypatch):
+    """So the writer cannot make the thing the test above is about. The
+    file is written beside its path and moved into place."""
+    def no_space(doc):
+        raise OSError(28, "No space left on device")
+
+    weekly = tmp_path / "weekly"
+    with monkeypatch.context() as dying:
+        dying.setattr(snapshot, "canonical_json", no_space)
+        with pytest.raises(OSError):
+            snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                  out_dir=str(tmp_path))
+    assert not (weekly / "2026-10-09.json").exists()
+
+    path = snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                 out_dir=str(tmp_path))
+    assert sorted(read(path)["series"]) == UNIVERSE
+    assert [p.name for p in weekly.iterdir()] == ["2026-10-09.json"]
+
+
+def test_a_week_that_lands_during_the_instrument_fetch_is_not_written_over(
+        tmp_path, monkeypatch):
+    """The question is asked first and asked again at the write. In between
+    are eight fetches and Treasury's seventeen seconds."""
+    path = tmp_path / "weekly" / "2026-10-09.json"
+
+    def another_run_gets_there_first(friday):
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(weekly_doc(friday, UNIVERSE, close=77.0)),
+                        encoding="utf-8")
+        return dict(QUIET)
+
+    monkeypatch.setattr(snapshot, "get_special_instruments",
+                        another_run_gets_there_first)
+    with pytest.raises(snapshot.WeekOnFile, match="already on file"):
+        snapshot.write_weekly("2026-10-09", bars(), out_dir=str(tmp_path))
+    assert read(path)["series"]["SPY"]["close"] == 77.0
+
+
+def test_a_correction_is_not_the_weeks_file(tmp_path):
+    """The rule unwritten_fridays counts by: only <date>.json is the week.
+    A correction with no base beside it is a broken tree the gate fails; it
+    does not stop the week being written."""
+    weekly = tmp_path / "weekly"
+    weekly.mkdir()
+    (weekly / "2026-10-09.corrected.json").write_text("{}", encoding="utf-8")
+
+    path = snapshot.write_weekly("2026-10-09", bars(), QUIET,
+                                 out_dir=str(tmp_path))
+    assert Path(path).name == "2026-10-09.json"
 
 
 # -- the Saturdays of 2026-12-26, 2027-01-02 and 2027-01-09 --------------------
@@ -1231,6 +1422,57 @@ def test_a_backfill_that_refused_a_week_does_not_exit_clean(
     assert "2026-12-25: REFUSED, nothing written for 2026-12-25" in out
     assert sorted(p.name for p in (tmp_path / "weekly").iterdir()) == [
         "2026-12-18.json"]
+
+
+def test_the_backfill_refuses_a_week_on_file_before_it_fetches_anything(
+        tmp_path, no_specials):
+    """build_and_write fetches the instruments before it reaches the writer,
+    so it asks the writer's question first: eight fetches and Treasury's
+    seventeen seconds are no use to a week that will not be written."""
+    day = D(2026, 10, 9)
+    hist = {"SPY": history(day), "AAPL": history(day)}
+    rec = bf.build_and_write(day, ["AAPL", "SPY"], hist, str(tmp_path))
+    committed = Path(rec["path"]).read_bytes()
+    assert no_specials == ["2026-10-09"]
+
+    hist["AAPL"] = history(day, close=99.4)
+    with pytest.raises(snapshot.WeekOnFile, match="already on file"):
+        bf.build_and_write(day, ["AAPL", "SPY"], hist, str(tmp_path))
+    assert Path(rec["path"]).read_bytes() == committed
+    assert no_specials == ["2026-10-09"], "fetched for a week not written"
+    with pytest.raises(TypeError):          # keyword only, here as well
+        bf.build_and_write(day, ["AAPL", "SPY"], hist, str(tmp_path), True)
+
+    rec = bf.build_and_write(day, ["AAPL", "SPY"], hist, str(tmp_path),
+                             overwrite=True)
+    assert rec["doc"]["series"]["AAPL"]["close"] == 99.4
+    assert no_specials == ["2026-10-09", "2026-10-09"]
+
+
+def test_force_is_what_tells_the_writer_to_write_a_week_again(
+        tmp_path, monkeypatch, no_specials, capsys):
+    """A week on file is skipped by a run without --force, as it always was.
+    With it the week is written again whole, and that is the one path on
+    which the writer is told to overwrite."""
+    sessions = weekdays(D(2026, 10, 5), D(2026, 10, 9))
+    week = ("--start", "2026-10-09", "--end", "2026-10-09")
+    path = tmp_path / "weekly" / "2026-10-09.json"
+
+    monkeypatch.setattr(bf, "RUN_TS", "2026-10-10T13:20:00Z")
+    assert run_backfill(monkeypatch, tmp_path, sessions, *week) == 0
+    committed = path.read_bytes()
+    assert read(path)["fetched_at"] == "2026-10-10T13:20:00Z"
+
+    monkeypatch.setattr(bf, "RUN_TS", "2026-10-12T09:00:00Z")
+    capsys.readouterr()
+    assert run_backfill(monkeypatch, tmp_path, sessions, *week) == 0
+    assert "SKIP (exists)" in capsys.readouterr().out
+    assert path.read_bytes() == committed
+
+    assert run_backfill(monkeypatch, tmp_path, sessions, "--force",
+                        *week) == 0
+    assert "wrote series=3" in capsys.readouterr().out
+    assert read(path)["fetched_at"] == "2026-10-12T09:00:00Z"
 
 
 def test_the_history_runs_past_the_last_friday_so_a_later_bar_is_in_it(
