@@ -2057,8 +2057,8 @@ def check_silent_absence(repo, rep):
 
     What the panel alone cannot say is left unsaid. A name that joins the
     universe has no earlier week and one that leaves has no later week, so
-    neither is expected: BNY, MRSH, DOC and VMRK have bars from 2026-09-25,
-    and nothing here asks for them before it. By the same rule a stock
+    neither is expected: VMRK has bars from 2026-08-21 and EQR through
+    2026-08-14, and nothing here asks for more. By the same rule a stock
     missing from the first file reads as one that joined a week later, and a
     stock dropped from the newest file as one that left. At the two ends
     this check holds only the ETFs. The newest end is --config's

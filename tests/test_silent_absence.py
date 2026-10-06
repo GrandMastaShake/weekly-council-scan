@@ -193,8 +193,8 @@ def test_each_absent_name_is_sent_to_the_repair_that_fits_it(panel, tmp_path):
 
 def test_a_name_that_joins_or_leaves_the_universe_is_not_expected(
         panel, tmp_path):
-    """BNY, DOC, MRSH and VMRK first appear in 2026-09-25.json, and nothing
-    is wrong with 2026-09-18.json for not having them."""
+    """VMRK first appears in 2026-08-21.json, and nothing is wrong with
+    2026-08-14.json for not having it."""
     files = {}
     for i, day in enumerate(FRIDAYS):
         stocks = list(STOCKS)

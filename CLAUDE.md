@@ -85,8 +85,9 @@ silently invisible for that week, permanently, with no error anywhere.
     python scripts/rebuild_corrections.py
 
 Two weeks are corrected. `2026-08-21.corrected.json` drops AVB and should
-carry one series fewer than its base: 332 since BTC and GLD were merged in on
-2026-10-06. If it says 330, or still 286, this did not run.
+carry one series fewer than its base: 336 since the two merges of 2026-10-06
+(BTC and GLD, then BNY, MRSH, DOC and VMRK). If it says 332, 330, or still
+286, this did not run.
 `2026-08-28.corrected.json` restates three instrument closes and records what
 they replaced in `restated`. The script re-applies each recorded edit only
 while the base still holds what the correction replaced -- a dropped ticker
@@ -180,9 +181,64 @@ name the writer fetches, the sixteen ETFs included.
 **So a name added to the feed is merged in the same change.** The gate fails
 until the newest week accounts for it, and `backfill_weekly.py --only
 <names> --merge` does that: a bar, or a `missing` entry where the provider
-has none. Only the newest week is held. BNY, MRSH, DOC and VMRK joined on
-2026-09-21 and have bars from 2026-09-25; the 111 weeks before hold them in
-neither `series` nor `missing`. Not merged, and not decided.
+has none. Only the newest week is held, so the weeks behind it are a
+decision somebody has to make. For four names it was made two weeks late.
+
+**BNY, MRSH and DOC are in every week; VMRK begins 2026-08-21.** The four
+joined on 2026-09-21 and had bars from 2026-09-25: neither `series` nor
+`missing` in the 111 weeks before. Owner decision 2026-10-06, merged that day
+with `--merge`: 338 bars, each stamped in `provenance.series`, each the bar
+of its file's session.
+
+- **BNY, MRSH and DOC went into all 111 weeks.** They are BK, MMC and PEAK
+  under the symbols they trade by now. The provider serves a renamed
+  company's history under the new symbol and at most its last bar under the
+  old, and all three were renamed before the panel's first fetch: three
+  companies that traded throughout had no bar in 111 weeks under either
+  symbol.
+- **BK, MMC and PEAK stay in `missing` in those weeks, beside the bars.** The
+  entry is true: the symbol was asked for and not served. In the 105 weeks
+  the backfill wrote, its reason is a guess and wrong for them: "likely
+  pre-IPO or not trading", that writer's one text for a ticker with no bar.
+  No file is edited to mend a reason. `DATA_FEED.md` sec.1, "Four renamed
+  names", is the record.
+- **VMRK went into five more weeks, 2026-08-21 to 2026-09-18, and no
+  earlier.** It is EQR, renamed on 2026-08-18 with AVB absorbed, and EQR is
+  in `series` under its own key in 105 weeks, 2024-08-16 to 2026-08-14. What
+  the provider serves under VMRK for those weeks is the same bar: merged
+  into a copy of the panel, it had EQR's volume in all 105 and a close
+  0.98824 of EQR's in each, the one dividend gone ex since. In the five
+  weeks after, all the panel held for the company was two prints under the
+  dead AVB symbol (Known data defects, below).
+- **So that history is EQR through 2026-08-14 and VMRK from 2026-08-21**,
+  never both in one week, and VMRK is in neither block of the 106 weeks
+  before on purpose. `audit_series.SUCCESSORS` is where the join is written
+  down.
+- **`2024-08-09.json` holds neither key, and stays so.** It was started
+  after EQR's symbol died and lists EQR in `missing`. A VMRK bar there would
+  be a bar in an earlier and in a later week, and `truth_check --feed`
+  would then warn about each of the 105 weeks between, printing the
+  `--merge` command that doubles them.
+- **Nothing mechanical refuses that merge.** Rehearsed on a copy, a
+  `--merge` that named VMRK over all 111 weeks exited 0, and every gate,
+  the audit and the suite passed the result. The rule is this entry and the
+  "Do not" below.
+
+All four pay dividends, so unlike BTC and GLD their merged closes are the
+merge day's and the seam shows. MRSH went ex on 2026-10-01 and VMRK on
+2026-10-05, after 2026-09-25.json was fetched: the panel reads MRSH's week to
+2026-09-25 as -1.65% where the price moved -2.22%, and VMRK's as +1.67% for
++0.47%. BNY and DOC had no ex-date in between and read true. A reader across
+merged and committed weeks resolves the anchor per ticker, as for the 44.
+BNY's closes also carry two 0.051 distributions that are not the bank's:
+0.08% on the level through 2026-01-16 (`DATA_FEED.md` sec.1).
+
+The runner's copy of `data/weekly` is the old one until it is synced, and it
+is synced whole or not at all. Left alone it fails nothing and warns of
+nothing new: there the four still begin on 2026-09-25, and the job pushes
+only the newest week. One file by itself is another matter. With only
+`2024-08-09.json` copied over, BNY, MRSH and DOC have a bar in an earlier
+and in a later week, and the gate there warns about the 110 between.
 
 Nobody reads BTC or GLD from a weekly file yet. `market_state` reads the
 sixteen ETFs. The heatmap takes both from `data/daily`, as comparison rows
@@ -439,9 +495,10 @@ refused once with nothing asking again.
   It prints only what is new, changed or gone against
   `macro/series_audit.json`, and how much it could have found: with the
   session before it put in place of each bar that passed, that session is
-  named every time (37,947 of 37,947). Give anything new a cause in the JSON
-  by hand, then `--write`. Network and yfinance needed; the tests need
-  neither. EQR is audited as VMRK, which carries its history.
+  named every time (37,947 of 37,947 on 2026-10-05; the list's `reach` has
+  the latest run's). Give anything new a cause in the JSON by hand, then
+  `--write`. Network and yfinance needed; the tests need neither. EQR is
+  audited as VMRK, which carries its history.
 
   The same audit covers the Friday job's files, and one of them this repo's
   writer did not write. **2026-08-28.json took every equity close from the
@@ -449,8 +506,9 @@ refused once with nothing asking again.
   provider's daily closes were null. For 330 names that is the Friday close.
   AVB's is 68.14 from Monday 2026-08-24, null volume, the successor's price
   under a dead symbol, and `2026-08-28.corrected.json` carries it too. Not
-  corrected. (BTC and GLD in that file are daily bars, merged in on
-  2026-10-06.)
+  corrected. (BTC, GLD, BNY, MRSH, DOC and VMRK in that file are daily
+  bars, merged in on 2026-10-06. VMRK's is the successor's own Friday close,
+  65.54, adjusted to the merge: 64.7694.)
 
   **None of this reached a derived number.** `market_state` reads sixteen
   names from `series` (SPY, QQQ, DIA, IWM, the twelve sector ETFs) and every
@@ -545,13 +603,18 @@ refused once with nothing asking again.
   rule that needs both neighbours cannot see the first file, and the two
   corrected weeks are adjacent and would hide each other. It cannot see a
   stock missing from the first file, which reads as a name that joined a
-  week later, as BNY, MRSH, DOC and VMRK did. The newest file is
-  `--config`'s to hold (Universe vs focus set, above).
+  week later. BNY, MRSH and DOC read so for two weeks, with bars from
+  2026-09-25 only, until they were merged into every week; VMRK does join
+  late, on 2026-08-21, by decision. The newest file is `--config`'s to hold
+  (Universe vs focus set, above).
 
   The runner's copy of the file is the old one until it is synced, and the
   weekly job's gate warns about it meanwhile. Nothing else follows: the job
   pushes only the newest week, and its `market_state` does not depend on
-  this one.
+  this one. Sync it with the rest of `data/weekly`, never by itself: the
+  repo's copy has held BNY, MRSH and DOC since later that day, and alone on
+  the runner it turns the one warning into 110 (Universe vs focus set,
+  above).
 - **WTI, GOLD and SILVER are named contracts since 2026-10-05; the 113
   weeks before name nothing.** Those files hold Yahoo's continuous symbols
   (`CL=F`, `GC=F`, `SI=F`), and Yahoo does not hold them still. It rebuilt
@@ -648,8 +711,12 @@ count of series does not move, which is all `panel_guard` and CI compare.
 **No merge run has hit a committed bar.** Every commit that touched
 `data/weekly` was compared with its parent: the two merge runs (`3a099f6`,
 `5f0d596`) put 4,839 bars into base files that existed and replaced none,
-and all 4,883 `provenance.series` stamps in the panel (44 are the 2026-08-21
-correction's copy) are on a name the file did not hold before.
+and all 4,883 `provenance.series` stamps then in the panel (44 are the
+2026-08-21 correction's copy) are on a name the file did not hold before.
+The three merges of 2026-10-06 that followed (BTC and GLD, the sixteen ETFs
+of `2024-08-09.json`, the four renamed names) were compared the same way:
+592 bars added, corrections included, and none replaced. The panel holds
+5,475 stamps.
 `BACKFILL_44.md`'s command run again would have fetched over every bar the
 44 have in the 107 base files, 4,612 of them. Rehearsed on a copy of the
 panel with the provider stubbed (2026-10-06), it wrote over all of them and
@@ -684,6 +751,12 @@ week, corrections at 330. Rationale and the corrected commands are in
 BTC and GLD were merged the same way on 2026-10-06, into all 113 weeks:
 226 bars, and the two corrections rebuilt (Universe vs focus set, above).
 
+BNY, MRSH and DOC followed that day, into the 111 weeks before 2026-09-25,
+and VMRK into five of them: 338 bars in two runs, and the corrections
+rebuilt again. VMRK had a run of its own because `--start` and `--end` are
+the only way to keep a name out of a week: one run over the four would have
+given it the 106 weeks it must not have.
+
 ## dad-kit/
 
 A starter kit for the owner's dad's Claude account (2026-10-03): two
@@ -708,6 +781,12 @@ moving one breaks his skill silently; update
 - Edit a committed weekly file.
 - Write a fresh fetch over a bar a week already holds. `--merge` leaves it
   alone and says so; a restated close goes in `<date>.corrected.json`.
+- Merge a renamed symbol into a week that holds its old one. For VMRK that
+  is every week before 2026-08-21 but the first: EQR holds that history
+  under its own key, the provider serves the same bars under VMRK, so
+  `--merge` adds them without a word, and a bar added to a week is never
+  taken out. The first, `2024-08-09.json`, holds neither and takes no VMRK
+  either (Universe vs focus set).
 - Invent a close to fill a gap. Use `missing` with a reason.
 - Read `rates.US2Y` straight from a weekly file, or let `US2Y_FUT` stand in
   for it. Go through `snapshot.cash_2y_series`; a gap stays a gap.

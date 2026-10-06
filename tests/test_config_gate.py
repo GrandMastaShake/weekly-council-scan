@@ -347,8 +347,8 @@ def test_gate_holds_the_newest_week_to_the_etfs_the_writer_adds(tmp_path,
 
 
 def test_gate_reads_the_newest_week_and_no_other(tmp_path, monkeypatch):
-    """A name missing from an older week is a name that joined later: BNY has
-    bars from 2026-09-25 and none before. The newest week is the one the
+    """A name missing from an older week is a name that joined later: VMRK
+    has bars from 2026-08-21 and none before. The newest week is the one the
     writer has just produced, and the one this holds."""
     stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "JOINED"])
 
