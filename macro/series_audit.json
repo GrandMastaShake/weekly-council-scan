@@ -38,17 +38,17 @@
     },
     "evening_read": {
       "what": "A close read on the evening of the session, half a cent under the one the provider settled on.",
-      "evidence": "2026-09-25.json was fetched at 22:14 UTC, 18:14 ET, on the Friday. COST 922.765, NFLX 71.145 and ORLY 86.115 against 922.77, 71.15 and 86.12 now; the file's other 331 closes are the provider's. None of its 334 volumes is: 325 are short of the final count, by up to 32 percent. The file read on a Saturday at 13:07 UTC, 2026-10-02.json, matches the provider in every close and every volume.",
+      "evidence": "2026-09-25.json was fetched at 22:14 UTC, 18:14 ET, on the Friday. COST 922.765, NFLX 71.145 and ORLY 86.115 against 922.77, 71.15 and 86.12 now; the file's other 331 closes are the provider's. None of its 334 volumes is: 325 are short of the final count, by up to 32 percent. (BTC and GLD, merged into the file on 2026-10-06 from a later fetch, are not among the 334.) The file read on a Saturday at 13:07 UTC, 2026-10-02.json, matches the provider in every close and every volume.",
       "resolution": "Panel left as written: half a cent on three closes, 0.7 bp at most, and no return changes sign (COST and NFLX are in the focus set; their week returns move by under 0.01 point). The weekly job now runs on Saturday after 13:00 UTC for the futures' sake (DATA_FEED.md sec.1b), which is late enough for these as well."
     }
   },
   "audited": {
     "provider": "yahoo",
-    "fetched_at": "2026-10-05T17:05:03Z",
+    "fetched_at": "2026-10-06T05:31:36Z",
     "yfinance": "1.6.0",
     "tickers": {
-      "asked": 336,
-      "answered": 336,
+      "asked": 338,
+      "answered": 338,
       "failed": {},
       "through_successor": {
         "EQR": "VMRK"
@@ -57,26 +57,26 @@
     "weekly": {
       "files": 115,
       "too_recent": [],
-      "bars": 38161,
-      "ok": 37949,
-      "close_alone": 1667,
+      "bars": 38391,
+      "ok": 38179,
+      "close_alone": 1722,
       "backfill": {
         "bars": 30097,
         "ok": 29891,
         "close_alone": 2
       },
       "merged": {
-        "bars": 4883,
-        "ok": 4883,
+        "bars": 5113,
+        "ok": 5113,
         "close_alone": 0
       },
       "live": {
         "bars": 3181,
         "ok": 3175,
-        "close_alone": 1665
+        "close_alone": 1720
       },
-      "named_by_note": 1652,
-      "tied": 13,
+      "named_by_note": 1662,
+      "tied": 15,
       "no_volume": [
         "2026-08-07.json EA",
         "2026-08-21.json AVB",
@@ -84,9 +84,9 @@
         "2026-08-28.json AVB"
       ],
       "reach": {
-        "tried": 37947,
-        "named": 37947,
-        "blind_on_close": 138
+        "tried": 38177,
+        "named": 38177,
+        "blind_on_close": 139
       },
       "prior_session": 0,
       "stand_in": 1,
