@@ -53,7 +53,7 @@ Its `WTI`, `GOLD` and `SILVER` are the provider's continuous symbols, and nothin
 - **Closes only.** No intraday, no bid/ask, no derived fields. This file is an observation.
 - **`missing` is required and never empty-by-omission.** A ticker that could not be fetched is listed with a reason. A silently absent ticker is indistinguishable from a ticker that didn't exist, and that ambiguity is what the agents fill in from priors. A file is valid in itself without a name that is simply not there, so `truth_check --feed` asks the panel: it warns when a week has neither a bar nor a `missing` entry for one of the sixteen index and sector ETFs, or for a name with a bar in an earlier and in a later week (sec.1c, "A name left out").
 - **`fetched_at` is UTC and real.** It is how you detect a scan that ran against a stale cache.
-- **Never edit.** If a provider restates, write `<date>.corrected.json` with the same shape plus `"corrects": "2026-08-08.json"` and `"reason": "..."`. Readers prefer the correction; the original stays. A correction that *replaces* a close, rather than dropping a bar, also carries `restated`: the record of what it replaced (sec.1b).
+- **Never edit.** If a provider restates, write `<date>.corrected.json` with the same shape plus `"corrects": "2026-08-08.json"` and `"reason": "..."`. Readers prefer the correction; the original stays. A corrected week is still one week: a reader lists weeks, not files, and reads each once, from its correction where it has one (`snapshot._load_weekly_files`; `scan_pipeline/panel_source.py` listed `*.json` for itself until 2026-10-06 and read both). A correction that *replaces* a close, rather than dropping a bar, also carries `restated`: the record of what it replaced (sec.1b).
 - **A close is the session's own, settled, or it is not in the file.** For `rates` / `vol` / `commodities` / `fx`: the bar dated `as_of`, or the instrument is in `missing`. An earlier session stands in only where the provider shows the instrument skipped `as_of`, and then the file says which session it is. A futures or dollar-index bar is not read until the exchange has settled it. Sec.1b has the rules and what the files written before them hold (amended 2026-10-05). `series` is held to the bar dated the file's session (sec.1c) by the weekly job and not yet, ticker by ticker, by the backfill writer; what that let through is in sec.1b, "The equity series".
 - **The series are one session's, and `SPY` is its witness.** A weekly file is written only with an `SPY` bar: the one dated `as_of`, or, where a later `SPY` bar proves the Friday was not a session, the last session of that week, which the file names in a top-level `session_note` (`"Friday holiday; bars from 2026-07-02"`). No witness, no file, and never an empty `series`. Sec.1c has the rule, what the writer did before it, and who comes back for a week it refused (amended 2026-10-06).
 - **`provenance` is optional and records per-series anchors.** Adding a ticker to a past week (a targeted backfill) fetches it *now*, so its adjusted closes are back-adjusted to a different date than the rest of the file. The file-level `source` / `fetched_at` still describe the majority of the series and are never restamped by a merge -- restamping would relabel every untouched series with a fetch that never happened to it. A merge only adds: a ticker the week already holds is left exactly as committed, bar and label, and nothing is written over it (since 2026-10-06; until then `--merge` wrote the fresh bar over it, which the two merge runs on the panel never did, checked commit by commit). The added names are listed individually instead:
@@ -664,7 +664,7 @@ If a provider swap ever happens (Tiingo remains the designated successor), keep 
 
 | Screen | File |
 | --- | --- |
-| Sector sparklines | last 13 `data/weekly/*.json` |
+| Sector sparklines | the last 13 weeks of `data/weekly/`, each from its correction where it has one (sec.1) |
 | 24-week return strip | `portfolio/history` + the weekly files |
 | Correlation slopes | `market_state.json` (`corr_spy_4w`, `corr_prev`) |
 | Brief stat pair | `market_state.json` |
@@ -682,7 +682,8 @@ All of it over the GitHub contents API, cached locally on the device. **No marke
 - [ ] Runner's `scan_pipeline/snapshot.py` synced, so the Saturday build fetches `BTC` and `GLD` (sec.1, "The equity set")
 - [ ] Whether `BNY`, `MRSH`, `DOC` and `VMRK` are merged into the weeks before 2026-09-25 decided (sec.1, "The equity set")
 - [x] `data/weekly/<date>.json` writer in the scan, with `missing` populated
-- [x] Correction-file path handled by readers (prefer `.corrected.json`)
+- [x] Correction-file path handled by readers (prefer `.corrected.json`; `scan_pipeline/panel_source.py` since 2026-10-06, sec.1)
+- [ ] Runner's `scan_pipeline/panel_source.py` replaced with this repo's; until then it reads a corrected week from both files (sec.1, "Never edit")
 - [x] `market_state.json` generator, pure, reproducible from weekly files + `macro/facts.json`
 - [x] `universe.json` generator with `wiki_refs` grepped from the wikis
 - [x] Backfill run, 104 weeks (2024-08-16 → 2026-08-07), labelled commit

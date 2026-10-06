@@ -41,8 +41,6 @@ Off by default. Set ``COUNCIL_SCAN_SOURCE=panel`` to turn it on.
 """
 from __future__ import annotations
 
-import glob
-import json
 import os
 from typing import Dict, List, Optional
 
@@ -56,6 +54,10 @@ MIN_WEEKS = 4
 _PIPELINE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 _CACHE: Dict[tuple, Dict[str, List[PriceHistory]]] = {}
+
+
+class PanelUnreadable(RuntimeError):
+    """A weekly file in the panel directory could not be read or parsed."""
 
 
 def enabled() -> bool:
@@ -82,9 +84,32 @@ def load_price_cache(as_of: Optional[str] = None,
                      directory: Optional[str] = None) -> Dict[str, List[PriceHistory]]:
     """``{ticker: [PriceHistory, ...]}`` reconstructed from the weekly panel.
 
-    ``weeks`` is the number of scored weeks wanted; one extra file is read to
+    ``weeks`` is the number of scored weeks wanted; one extra week is kept to
     anchor the first week's return. A ticker's first retained week is dropped
     because it has no prior close -- inventing one would be inventing a number.
+
+    A week is read once, from its ``<date>.corrected.json`` where it has one
+    (DATA_FEED.md sec.1: readers prefer the correction). Until 2026-10-06 this
+    listed ``*.json``, so a corrected week was read from both files. Every
+    name got a second row for it with open == close, a 0.0 return that never
+    happened. It pulled ``compute_std_dev`` down for most names, and on the
+    Monday after a corrected Friday it was the latest row of every name.
+    ``weeks`` counted files, so each corrected week in the window cost it a
+    week. And a bar the correction had dropped (AVB 2026-08-21, close 65.9005
+    on volume 0) was still read from the base.
+
+    The listing is ``snapshot._load_weekly_files``, the deriver's own, so the
+    two cannot disagree about which file answers for a week. It loads every
+    week on file, not only the window, and a file it cannot read or parse
+    raises ``PanelUnreadable`` wherever in the panel it is. This used to step
+    over such a file. That is damage: the deriver does not read around it
+    either, and ``truth_check --feed`` names the file.
+
+    Not decided here: a row opens at the last close the name has, whichever
+    week that was. A name with no bar in a week (listed in ``missing``, or
+    dropped by a correction) gets a next row that spans the gap under a
+    one-week date. The panel through 2026-10-02 holds two, AVB 2026-08-28 and
+    EA 2026-08-07, on names no engine scans.
     """
     directory = directory or panel_dir()
     if not directory:
@@ -93,30 +118,36 @@ def load_price_cache(as_of: Optional[str] = None,
     if key in _CACHE:
         return _CACHE[key]
 
-    files = sorted(glob.glob(os.path.join(directory, "*.json")))
+    # Imported here and not at the top. run_scan imports this module every
+    # Monday whether or not the panel is on, and config.tickers reaches it
+    # lazily; snapshot imports config.tickers. Nothing new happens at import
+    # time this way, so the default path is exactly what it was.
+    from scan_pipeline.snapshot import _load_weekly_files
+
+    try:
+        docs = _load_weekly_files(directory)    # oldest first, one per week
+    except (OSError, ValueError) as exc:
+        raise PanelUnreadable(
+            "a weekly file under %s cannot be read (%s: %s). The panel is "
+            "read whole or not at all; `python scripts/truth_check.py "
+            "--repo . --feed` names the file."
+            % (directory, type(exc).__name__, exc)) from exc
     if as_of:
-        files = [f for f in files if os.path.basename(f)[:-5] <= as_of]
-    files = files[-(weeks + 1):]
+        docs = [(week, doc) for week, doc in docs if week <= as_of]
+    docs = docs[-(weeks + 1):]
 
     rows: Dict[str, List[tuple]] = {}
-    for path in files:
-        try:
-            with open(path, encoding="utf-8") as fh:
-                doc = json.load(fh)
-        except (OSError, ValueError):
-            continue
-        stamp = doc.get("as_of")
+    for week, doc in docs:
         for ticker, bar in (doc.get("series") or {}).items():
             close = bar.get("close")
             if close is None:
                 continue
             rows.setdefault(ticker, []).append(
-                (stamp, float(close), float(bar.get("volume") or 0.0))
+                (week, float(close), float(bar.get("volume") or 0.0))
             )
 
     cache: Dict[str, List[PriceHistory]] = {}
     for ticker, series in rows.items():
-        series.sort()
         history = [
             PriceHistory(series[i][0], series[i - 1][1], series[i][1], series[i][2])
             for i in range(1, len(series))
