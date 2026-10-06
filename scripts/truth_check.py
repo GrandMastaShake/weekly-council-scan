@@ -38,7 +38,9 @@ Modes:
                 sec.1 -- required keys (as_of, source, fetched_at, session
                 "close", series, missing; a missing 'missing' key is a
                 FAIL -- a silently absent ticker is the failure mode this
-                file exists to prevent), as_of must be a Friday, filename
+                file exists to prevent -- and so is a `missing` that is not
+                a list of {"ticker", "reason"} entries, both strings that
+                say something), as_of must be a Friday, filename
                 must equal as_of (a <date>.corrected.json variant must
                 carry 'corrects' pointing at an existing original plus a
                 'reason'), every series/special-instrument entry numeric
@@ -821,6 +823,92 @@ def _feed_entry_check(fname, section, ticker, entry, rep):
             rep.add("FAIL", f"feed: {where} volume is not numeric: {vol!r}")
         elif vol < 0:
             rep.add("FAIL", f"feed: {where} volume {vol} < 0")
+
+
+def _missing_list(doc):
+    """A file's `missing` entries, or none where the key does not hold a
+    list. _feed_missing_check reports that; the checks that read the list
+    for a name must not fall over it."""
+    missing = doc.get("missing")
+    return missing if isinstance(missing, list) else []
+
+
+def _says_something(value):
+    """A ticker or a reason that is one: a string with something in it.
+
+    write_weekly and daily_observe.build_document pass both through str(),
+    so an entry that reaches either writer with no reason is committed as
+    the text "None". That says as little as leaving the reason out."""
+    return isinstance(value, str) and value.strip() not in ("", "None")
+
+
+def _clip(value, limit=80):
+    """repr() for a line of the report, cut where it stops being useful."""
+    text = repr(value)
+    return text if len(text) <= limit else text[:limit - 3] + "..."
+
+
+# How many entries a line quotes before it counts the rest.
+MISSING_QUOTED = 3
+
+
+def _feed_missing_check(fname, doc, rep):
+    """`missing` is a list of {"ticker": <name>, "reason": <why>}, each a
+    string that says something (DATA_FEED.md sec.1).
+
+    The key was required and the list never looked into. A name left out of
+    a file is the failure the contract exists to prevent, and an entry that
+    names nothing, or gives no reason, is the same failure with a line of
+    JSON around it. The entry is read, too. sector-regime-heatmap prints
+    the reason on its daily tape beside an instrument with no close.
+    rebuild_corrections.py and backfill_weekly.py --merge take each entry
+    for an object, and the first for one with a ticker; each ends in a
+    traceback on one that is not. check_feed_names and check_silent_absence
+    take a ticker here as a name accounted for, so an entry that says
+    nothing is the cheapest way past both.
+
+    A FAIL, as a malformed bar or label is, and for every file with no date
+    before which one is excused: all 724 entries committed on 2026-10-06,
+    weekly and daily, are well-formed, and no writer here produces anything
+    else. A file that trips it was written another way or edited by hand.
+
+    What it cannot catch is an entry typed in with a reason: that reads
+    like the writer's own. check_feed_names tells its reader not to."""
+    if "missing" not in doc:
+        return                  # check_feed has said so, on its own line
+    missing = doc["missing"]
+    cure = (f"Do not push the file, and do not repair it by hand: no writer "
+            f"here produces this, so something else wrote it or someone "
+            f"edited it. First see whether main already holds {fname}. If "
+            f"it does, it is committed and is not edited: where main's copy "
+            f"is well-formed it replaces this one, and where main's is the "
+            f"same, what a correction should say is the owner's to decide. "
+            f"If main does not hold it, remove the file from this copy of "
+            f"the panel and let its own writer write it again.")
+    shape = '{"ticker": <name>, "reason": <why>}'
+    if not isinstance(missing, list):
+        rep.add("FAIL", f"feed: {fname} `missing` is {_clip(missing)}, not a "
+                        f"list of {shape} entries. A file with nothing "
+                        f"missing commits an empty list. {cure}")
+        return
+    bad = [(i, entry) for i, entry in enumerate(missing)
+           if not (isinstance(entry, dict)
+                   and _says_something(entry.get("ticker"))
+                   and _says_something(entry.get("reason")))]
+    if not bad:
+        return
+    shown = "; ".join(f"entry {i} is {_clip(entry)}"
+                      for i, entry in bad[:MISSING_QUOTED])
+    if len(bad) > MISSING_QUOTED:
+        shown += f"; and {len(bad) - MISSING_QUOTED} more"
+    one = len(bad) == 1
+    rep.add("FAIL", f"feed: {fname} `missing` holds {len(bad)} "
+                    f"{'entry that is' if one else 'entries that are'} not "
+                    f"{shape}, both of them strings that say something: "
+                    f"{shown}. An entry is the writer's record that it asked "
+                    f"for a name and what came back. Without the name or "
+                    f"the reason it records neither, and readers take both "
+                    f"as they stand. {cure}")
 
 
 def _observed_check(where, observed, as_of, rep):
@@ -1792,7 +1880,7 @@ def _feed_session_check(fname, doc, weekly, rep):
                             f"writer from before 2026-10-06. {cure}")
         elif isinstance(as_of, str) and as_of < WITNESS_RULE_SINCE:
             listed = any(isinstance(m, dict) and m.get("ticker") == WITNESS
-                         for m in doc.get("missing") or [])
+                         for m in _missing_list(doc))
             silent = "" if listed else (", and does not list it in "
                                         "'missing'")
             rep.add("WARN", f"feed: {fname} has {len(series)} series and no "
@@ -1916,11 +2004,12 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     ambiguity is what the agents fill in from priors.
 
     One contract governs data/weekly/ and data/daily/ alike -- ASCII bytes,
-    required keys, entry shape, the session witness, correction pointers and
-    what a correction restated, provenance, and no late-settling close read
-    before it settled. Only the Friday rule differs, and `session_note` with
-    it: a daily file is named for whatever session settled (DATA_FEED.md
-    sec.4), so it has no other session to name."""
+    required keys, entry shape, what `missing` holds, the session witness,
+    correction pointers and what a correction restated, provenance, and no
+    late-settling close read before it settled. Only the Friday rule
+    differs, and `session_note` with it: a daily file is named for whatever
+    session settled (DATA_FEED.md sec.4), so it has no other session to
+    name."""
     weekly = repo / "data" / subdir
     if not weekly.is_dir():
         rep.add("SKIP", f"feed: {weekly} not found -- {label} feed has not "
@@ -2011,6 +2100,7 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
                 continue
             for ticker, entry in blk.items():
                 _feed_entry_check(f.name, block, ticker, entry, rep)
+        _feed_missing_check(f.name, doc, rep)
         _feed_session_check(f.name, doc, require_friday, rep)
         _feed_provenance_check(f.name, doc, rep)
         _feed_settlement_check(f.name, doc, rep)
@@ -2237,13 +2327,13 @@ NAMES_RULE_SINCE = "2026-10-06"
 def _unaccounted(doc, names):
     """The names a weekly file has neither a bar nor a `missing` entry for.
     Only an entry that names a ticker counts. Anything else in the list is
-    not this check's to judge, and must not stop it from saying what is
-    absent, or take the report down."""
+    _feed_missing_check's to fail, under --feed; it must not stop this from
+    saying what is absent, or take the report down. An entry with a ticker
+    and no reason still counts here, so that one defect is one line: the
+    entry fails there, and the name is not also reported as absent."""
     series = doc.get("series")
     series = set(series) if isinstance(series, dict) else set()
-    declared = doc.get("missing")
-    declared = {m.get("ticker")
-                for m in (declared if isinstance(declared, list) else [])
+    declared = {m.get("ticker") for m in _missing_list(doc)
                 if isinstance(m, dict) and isinstance(m.get("ticker"), str)}
     return set(names) - series - declared
 

@@ -522,13 +522,16 @@ def test_an_unhashable_ticker_does_not_take_the_report_down(tmp_path):
     """From the command line, where it ended in a traceback: in this check
     as first written, and in check_silent_absence on main before it. A gate
     that dies prints no FAIL, and a job that reads the last line for the
-    summary finds none. (Whether such an entry should itself fail the file
-    is check_feed's question, and is not answered here.)"""
+    summary finds none. The entry itself is check_feed's to fail, and it
+    does (tests/test_missing_entries.py); the names rule says nothing more
+    about a week that is otherwise whole."""
     doc = week(FRESH)
     doc["missing"] = [{"ticker": ["GLD"], "reason": "x"}]
     r = job_line(check_dir(tmp_path, doc), "--feed")
     assert "Traceback" not in r.stderr, r.stderr
     assert "SUMMARY:" in r.stdout
+    assert r.returncode == 1 and "1 fail" in r.stdout, r.stdout
+    assert "`missing` holds 1 entry that is not" in r.stdout
 
 
 # -- where the rule runs -----------------------------------------------------
