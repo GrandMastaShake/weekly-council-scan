@@ -47,6 +47,11 @@ def stub_tickers(monkeypatch, **attrs):
     # otherwise (WRITER), the writer fetches exactly the stubbed feed.
     writer = sorted(attrs.get("WRITER", stub.PRICE_FEED_UNIVERSE))
     monkeypatch.setattr(snapshot, "equity_universe", lambda: list(writer))
+    # And the gate keeps its own copy of that set for the weekly job's check
+    # dir (tc.EQUITY_UNIVERSE), which it holds to the writer's. Unless a test
+    # says otherwise (GATE_LIST), the copy is in step.
+    monkeypatch.setattr(tc, "EQUITY_UNIVERSE",
+                        tuple(attrs.get("GATE_LIST", writer)))
     return stub
 
 
@@ -283,6 +288,65 @@ def test_gate_passes_a_weekly_writer_wider_than_the_feed(tmp_path,
     rep = run_gate(fake.root)
     assert rep.counts["FAIL"] == 0, rep.render()
     assert rep.counts["OK"] == 1
+
+
+def test_gate_fails_a_list_of_its_own_that_lacks_a_name_the_writer_fetches(
+        tmp_path, monkeypatch):
+    """The gate carries the writer's names for the weekly job's check dir,
+    where there is no scan_pipeline/ to ask (tests/test_feed_names.py). A
+    name that joined the feed and not that list is one the job is never
+    asked for: the same drift as BTC and GLD, one file further on."""
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC"],
+                 WRITER=["AAA", "BTC", "SPY"], GATE_LIST=["AAA", "SPY"])
+    rep = run_gate(fake.root)
+    msgs = rep.render()
+    assert rep.counts["FAIL"] == 1, msgs
+    assert "EQUITY_UNIVERSE in scripts/truth_check.py is not" in msgs
+    assert "it lacks ['BTC']" in msgs
+    assert "still lists" not in msgs
+    assert rep.counts["OK"] == 0
+
+
+def test_gate_fails_a_list_of_its_own_that_kept_a_name_the_feed_dropped(
+        tmp_path, monkeypatch):
+    """The other direction. The job would be told a week is short of a name
+    nobody fetches any more, and could not push a week that is whole."""
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"],
+                 WRITER=["AAA", "SPY"], GATE_LIST=["AAA", "EA", "HES", "SPY"])
+    rep = run_gate(fake.root)
+    msgs = rep.render()
+    assert rep.counts["FAIL"] == 1, msgs
+    assert "it still lists ['EA', 'HES']" in msgs
+    assert "it lacks" not in msgs
+
+
+def test_gate_says_both_when_its_list_is_off_in_both_directions(
+        tmp_path, monkeypatch):
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC"],
+                 WRITER=["AAA", "BTC"], GATE_LIST=["AAA", "EA"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "it lacks ['BTC'] and it still lists ['EA']" in rep.render()
+
+
+def test_gate_does_not_judge_its_list_when_the_writer_cannot_be_asked(
+        tmp_path, monkeypatch):
+    """No writer, no comparison: that failure has its own line, and a second
+    one saying every name is surplus would be noise about the same thing."""
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"],
+                 GATE_LIST=["AAA", "EA"])
+
+    def broken():
+        raise RuntimeError("no universe today")
+    monkeypatch.setattr(snapshot, "equity_universe", broken)
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "cannot ask scan_pipeline.snapshot" in rep.render()
+    assert "EQUITY_UNIVERSE" not in rep.render()
 
 
 def test_gate_fails_when_the_writer_cannot_be_asked(tmp_path, monkeypatch):

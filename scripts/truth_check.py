@@ -54,6 +54,15 @@ Modes:
                 weekly files has no file -- a week the writer refused and
                 nobody came back for -- and WARNs while the newest Friday
                 is still owed one.
+                Holds the newest weekly file to the names the weekly writer
+                fetches: a bar or a `missing` entry for each. FAILs a file
+                fetched since 2026-10-06, when the rule began; WARNs about
+                an older one, which is what the runner's copy of a
+                committed week looks like after a name was merged into it
+                on main. The names are EQUITY_UNIVERSE, this script's own
+                copy of snapshot.equity_universe(): the weekly job gates
+                its week from a check dir that holds this script and no
+                scan_pipeline/, so the list travels with the gate.
                 Also validates the optional `provenance` block (per-series
                 anchors, the per-instrument source that marks US2Y as the
                 Treasury 2-year rather than the 2YY=F future, and the
@@ -2083,7 +2092,10 @@ def check_silent_absence(repo, rep):
         if not isinstance(series, dict):
             return None
         missing = doc.get("missing")
-        listed = {m.get("ticker") for m in missing if isinstance(m, dict)} \
+        # Only an entry that names a ticker. One that holds a list where the
+        # name belongs is unhashable, and took the whole report down.
+        listed = {m.get("ticker") for m in missing
+                  if isinstance(m, dict) and isinstance(m.get("ticker"), str)} \
             if isinstance(missing, list) else set()
         return set(series), set(series) | listed
 
@@ -2147,6 +2159,188 @@ def check_silent_absence(repo, rep):
                       f"`missing` entry for every name it should hold (the "
                       f"index and sector ETFs, and any name carried by an "
                       f"earlier and a later week)")
+
+
+# ---------------------------------------------- the newest week and the feed
+
+# Mirrors scan_pipeline/snapshot.py: equity_universe(), the names the weekly
+# writer fetches -- PRICE_FEED_UNIVERSE and the sixteen index and sector
+# ETFs. The other mirrors in this script are a constant or two. This one is
+# the whole list, and it is here for one reader.
+#
+# check_silent_absence asks the panel what a week should hold, and at the
+# newest end the panel cannot say: a stock left out of the newest file reads
+# as one that left the universe. Only the feed knows, and --config, which
+# asks it, cannot run where the newest week is written. The Saturday job
+# writes a week with the runner's copy of scan_pipeline/, synced by hand,
+# and gates it with `--feed --derive` from a check dir that holds its data,
+# macro/facts.json and this script, fetched fresh. That dir has no
+# scan_pipeline/, and the copy it could be pointed at is the runner's: the
+# one in doubt. Nothing in that line knew which names a week should hold.
+# The two builds without BTC and GLD passed it and were pushed, and so would
+# any week from a runner whose only fault is its list of names.
+#
+# So the list travels with the gate. tests/test_feed_names.py pins it equal
+# to equity_universe() and prints the replacement when it is not; --config
+# fails on the same difference. A name that joins or leaves the feed changes
+# this in the same commit.
+EQUITY_UNIVERSE = (
+    "AAPL", "ABBV", "ABNB", "ACN", "ADBE", "ADSK", "AEP", "AES", "AFL", "AIG",
+    "AJG", "AKAM", "ALB", "ALL", "AMAT", "AMD", "AMGN", "AMP", "AMT", "AMZN",
+    "ANET", "AON", "APD", "APH", "APO", "ARE", "ATO", "AVGO", "AWK", "AXON",
+    "AXP", "AZO", "BA", "BAC", "BAX", "BDX", "BFLY", "BIIB", "BKNG", "BKR",
+    "BLFS", "BLK", "BMY", "BNY", "BSX", "BTC", "BX", "BXP", "C", "CALM",
+    "CARR", "CAT", "CB", "CBRE", "CCI", "CCJ", "CDNS", "CEG", "CI", "CME",
+    "CMG", "CMS", "CNP", "COIN", "COLD", "COP", "COR", "COST", "CPAY", "CPRT",
+    "CPT", "CRM", "CRSP", "CRWD", "CSCO", "CSX", "CTAS", "CVNA", "CVS", "CVX",
+    "D", "DD", "DDOG", "DE", "DHR", "DIA", "DIS", "DLR", "DOC", "DOW", "DPZ",
+    "DUK", "DXCM", "ECL", "ED", "EIX", "ELV", "EMR", "EOG", "EQIX", "ES",
+    "ESS", "ETN", "ETR", "EVRG", "EW", "EXC", "EXR", "FAST", "FCX", "FDX",
+    "FE", "FIVE", "FIZZ", "FRT", "FSLR", "FTNT", "GD", "GE", "GEHC", "GEV",
+    "GILD", "GLD", "GLPI", "GOOG", "GOOGL", "GS", "GWW", "HAL", "HCA", "HD",
+    "HIG", "HIMS", "HLT", "HON", "HPE", "HST", "HUM", "IDXX", "ILMN", "IMAX",
+    "INOD", "INTC", "INTU", "INVH", "IONQ", "IQV", "IRM", "ISRG", "ITW", "IWM",
+    "JCI", "JKHY", "JNJ", "JPM", "KDP", "KEY", "KIM", "KKR", "KLAC", "KMB",
+    "KMI", "KO", "KVUE", "LIN", "LLY", "LMT", "LNG", "LNT", "LOW", "LRCX",
+    "LYB", "LYV", "MA", "MAA", "MAR", "MCD", "MCK", "MCO", "MDLZ", "MDT",
+    "META", "MLM", "MMM", "MNST", "MO", "MOD", "MP", "MPC", "MRK", "MRNA",
+    "MRSH", "MS", "MSFT", "MSI", "MTCH", "MU", "NDSN", "NEE", "NEM", "NFLX",
+    "NI", "NKE", "NOC", "NOW", "NRG", "NSC", "NTLA", "NUE", "NVDA", "NXPI",
+    "O", "ODFL", "OKE", "OKLO", "ORA", "ORCL", "ORLY", "OTIS", "OXY", "PANW",
+    "PAYX", "PCAR", "PEG", "PEP", "PFE", "PG", "PGR", "PH", "PLD", "PLTR",
+    "PM", "PNR", "PPG", "PPL", "PRU", "PSA", "PSX", "PWR", "PYPL", "QBTS",
+    "QCOM", "QQQ", "QUBT", "RBLX", "RDDT", "REG", "REGN", "RGTI", "RKLB",
+    "ROKU", "ROP", "ROST", "RSG", "RTX", "SBAC", "SBUX", "SCHW", "SHW", "SIDU",
+    "SJM", "SLB", "SM", "SMCI", "SMH", "SNPS", "SO", "SOFI", "SOLV", "SOUN",
+    "SPCX", "SPG", "SPGI", "SPOT", "SPY", "SRE", "SSD", "STZ", "SYK", "SYM",
+    "TDG", "TEL", "TER", "TGT", "TMO", "TMUS", "TPR", "TROW", "TRV", "TSLA",
+    "TSM", "TTWO", "TXT", "UDR", "ULTA", "UMH", "UNH", "UNP", "UPS", "UPST",
+    "URI", "V", "VEEV", "VICI", "VLO", "VMI", "VMRK", "VRTX", "VSAT", "VST",
+    "VTR", "WEC", "WELL", "WFC", "WM", "WMB", "WMT", "WRB", "WY", "XEL", "XLB",
+    "XLC", "XLE", "XLF", "XLI", "XLK", "XLP", "XLRE", "XLU", "XLV", "XLY",
+    "XOM", "XYL", "YUM", "ZS", "ZTS",
+)
+
+# The rule dates from 2026-10-06, and a file is held to it by when it was
+# FETCHED, not by which week it is: a holiday week is written a week late,
+# and a week refused once is written by a later run. No run that had this
+# check wrote a file fetched before that day. On that day the runner held
+# 113 such weeks, every one of them committed and none with BTC or GLD,
+# which had just been merged into main's copies: its data/ is synced by
+# hand, and a name merged into a week on main does not reach it. Failing
+# one of those would send the job to rewrite a committed week in order to
+# pass, so they are warned about. This is a fact about the rule and does
+# not move.
+NAMES_RULE_SINCE = "2026-10-06"
+
+
+def _unaccounted(doc, names):
+    """The names a weekly file has neither a bar nor a `missing` entry for.
+    Only an entry that names a ticker counts. Anything else in the list is
+    not this check's to judge, and must not stop it from saying what is
+    absent, or take the report down."""
+    series = doc.get("series")
+    series = set(series) if isinstance(series, dict) else set()
+    declared = doc.get("missing")
+    declared = {m.get("ticker")
+                for m in (declared if isinstance(declared, list) else [])
+                if isinstance(m, dict) and isinstance(m.get("ticker"), str)}
+    return set(names) - series - declared
+
+
+def check_feed_names(repo, rep):
+    """The newest weekly file has a bar or a `missing` entry for every name
+    the weekly writer fetches (DATA_FEED.md sec.1, "Where the week is
+    written"). No network and no scan_pipeline/.
+
+    --config asks the same of the same file, with the names read off the
+    constants, in CI and in the daily job. This is that question where the
+    constants cannot be asked: the weekly job's check dir, before the week
+    is pushed. The base file and not a correction, because the question is
+    what the writer was asked to fetch. The newest week and no other: an
+    older week without a name is a name that joined later, and
+    check_silent_absence, which looks at the rest of the panel, leaves this
+    end to the feed.
+
+      FAIL  the file was fetched on or after NAMES_RULE_SINCE.
+      WARN  it was fetched before: no run that had this check wrote it.
+
+    The split is check_silent_absence's caution about this gate, kept as
+    narrow as it can be. The job's check dir is the runner's copy of data/,
+    synced by hand, so a short newest file there is not always a short
+    week. It can be the runner's copy of a week main already holds with the
+    names merged in, as the runner's newest file was on 2026-10-06. The
+    gate cannot see main, so it does not say which it is looking at. Both
+    lines send the reader to main first, and a week that is on main is
+    never written again.
+
+    The job's prompt says only that a FAIL is fixed before pushing, so the
+    line carries the rest, in the order it has to be done."""
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        return
+    weeks = sorted(f for f in weekly.glob("*.json")
+                   if re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem))
+    if not weeks:
+        return
+    newest = weeks[-1]
+    try:
+        doc = json.loads(newest.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return                  # check_feed has reported it, under its name
+    if not isinstance(doc, dict):
+        return
+    absent = _unaccounted(doc, EQUITY_UNIVERSE)
+    if not absent:
+        rep.add("OK", f"feed: {newest.name} has a bar or a `missing` entry "
+                      f"for each of the {len(EQUITY_UNIVERSE)} names the "
+                      f"weekly writer fetches")
+        return
+
+    stamp = doc.get("fetched_at")
+    day = stamp[:10] if isinstance(stamp, str) else ""
+    dated = re.fullmatch(r"\d{4}-\d{2}-\d{2}", day) is not None
+    # A stamp that cannot be read says nothing about when, and "before" is
+    # the claim that excuses a file. It is not assumed.
+    before = dated and day < NAMES_RULE_SINCE
+    lacks = (f"feed: {newest.name} has no bar and no `missing` entry for "
+             f"{_name_list(absent)}, which the weekly writer fetches "
+             f"(EQUITY_UNIVERSE in this script: the repo's "
+             f"snapshot.equity_universe()).")
+    merge = ("scripts/backfill_weekly.py --only <names> --merge (Actions -> "
+             "Backfill weekly panel)")
+    if before:
+        rep.add("WARN", f"{lacks} It was fetched {stamp}, before this check "
+                        f"existed ({NAMES_RULE_SINCE}), so no run that had "
+                        f"it wrote this file, and it is warned about, not "
+                        f"failed. On the runner it is the runner's copy of "
+                        f"the week: where main holds {newest.name} with "
+                        f"those names, main's copy replaces it. Never write "
+                        f"a committed week again to add them. On main, "
+                        f"--config fails until {merge} has run for the "
+                        f"week.")
+        return
+    when = (f"It was fetched {stamp}." if dated else
+            f"Its fetched_at is {stamp!r}, which does not show it was "
+            f"written before this check existed ({NAMES_RULE_SINCE}).")
+    rep.add("FAIL", f"{lacks} {when} Do not push this file, and do not add "
+                    f"the names to `missing` by hand: an entry there is the "
+                    f"writer's record that it asked and the provider had no "
+                    f"bar. First see whether main already holds "
+                    f"{newest.name}. If it does, it is a committed week and "
+                    f"is never written again: where main's copy has the "
+                    f"names, the runner's is behind and main's replaces it, "
+                    f"and where main's lacks them too, they join it through "
+                    f"{merge} first. If main does not hold it, the writer "
+                    f"that wrote it was not asking for them: a "
+                    f"scan_pipeline/ behind the repo's (config/tickers.py, "
+                    f"config/council_watchlist.csv or snapshot.py), which is "
+                    f"what the runner's copy is until it is synced by hand. "
+                    f"Sync it, remove the file from the runner's "
+                    f"data/weekly, write the week again with the job's own "
+                    f"calls, and re-derive market_state.json through the "
+                    f"chain (snapshot.write_market_state_chain), not from "
+                    f"the state the discarded week left behind.")
 
 
 def check_daily_freshness(repo, today, rep):
@@ -2443,6 +2637,28 @@ def check_config(repo, rep):
                             f"week it writes holds neither a bar nor a "
                             f"`missing` entry for them")
 
+    # --feed holds the newest week to this script's own copy of that set,
+    # because the weekly job's check dir has no scan_pipeline/ to ask
+    # (check_feed_names). A copy that has drifted is a gate asking the job
+    # for last month's names, so it is held here, where the writer can be
+    # asked.
+    if writer is not None and set(EQUITY_UNIVERSE) != writer:
+        drift = []
+        if writer - set(EQUITY_UNIVERSE):
+            drift.append(f"it lacks "
+                         f"{_name_list(writer - set(EQUITY_UNIVERSE))}")
+        if set(EQUITY_UNIVERSE) - writer:
+            drift.append(f"it still lists "
+                         f"{_name_list(set(EQUITY_UNIVERSE) - writer)}")
+        rep.add("FAIL", f"config: EQUITY_UNIVERSE in scripts/truth_check.py "
+                        f"is not snapshot.equity_universe(): "
+                        f"{' and '.join(drift)}. The weekly job gates its "
+                        f"week with --feed from a check dir that has this "
+                        f"script and no scan_pipeline/, so that list is all "
+                        f"the job is asked for. Change it in the same commit "
+                        f"as the feed; tests/test_feed_names.py prints the "
+                        f"replacement.")
+
     # And the newest weekly file has to account for every one of those names:
     # a bar, or a `missing` entry that says why not. Until 2026-10-06 this
     # asked for the focus names only, so a feed name outside the focus set
@@ -2466,16 +2682,8 @@ def check_config(repo, rep):
             rep.add("FAIL", f"config: cannot read {files[-1].name} ({exc}), "
                             f"so the newest week is not known to account for "
                             f"the feed")
-        absent = set()
-        if doc is not None:
-            series = doc.get("series")
-            series = set(series) if isinstance(series, dict) else set()
-            declared = doc.get("missing")
-            declared_missing = {m.get("ticker")
-                                for m in (declared
-                                          if isinstance(declared, list) else [])
-                                if isinstance(m, dict)}
-            absent = expected_names - series - declared_missing
+        absent = (_unaccounted(doc, expected_names)
+                  if doc is not None else set())
         if absent:
             rep.add("FAIL", f"config: {files[-1].name} has no bar and no "
                             f"`missing` entry for {_name_list(absent)}, which "
@@ -2578,6 +2786,7 @@ def main():
         check_feed(repo, rep)
         check_weekly_completeness(repo, today, rep)
         check_silent_absence(repo, rep)
+        check_feed_names(repo, rep)
         check_us2y_history(repo, rep)
         check_commodity_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,

@@ -245,20 +245,75 @@ sixteen ETFs. The heatmap takes both from `data/daily`, as comparison rows
 on its daily tape, and its weekly metrics come out byte-identical with and
 without them in the panel. They are stored for Council v2.
 
-**What a week without a feed name stops.** `--config` is not in the weekly
-job's gate line (`--feed --derive`), so a week written by a runner whose
-`scan_pipeline/` is behind is pushed, and fails on main afterwards. CI goes
-red on that push. So does the daily job: it runs `--feed --config` and the
-whole suite before it commits a session, so from the Monday it commits
-nothing until the week is merged, and the sessions it skipped are recovered
-by hand afterwards (the audit step prints the command). Only the newest week
-is asked, so the failure also clears by itself once a later week is whole,
-with the hole still behind it.
+**What a week without a feed name stops.** On main, CI and the daily job.
+The daily job runs `--feed --config` and the whole suite before it commits a
+session, so it commits nothing until the week is merged, and the sessions it
+skipped are recovered by hand afterwards (the audit step prints the
+command). Only the newest week is asked, so the failure also clears by
+itself once a later week is whole, with the hole still behind it.
 
-**So after any change to the feed, copy `scan_pipeline/config/` to the
-runner before the next Saturday build.** On 2026-10-06 the runner's
-`tickers.py` matched the repo's, and its `snapshot.py` was still the repo's
-of 2026-09-21, with the old list in it.
+**The weekly job is asked before it pushes (2026-10-06).** Its gate line is
+`--feed --derive`, run from a check dir that holds a copy of the runner's
+data, `macro/facts.json` and `truth_check.py` fetched fresh. No
+`scan_pipeline/` is in it, so `--config` cannot import there, and the
+constants within reach are the runner's own. Nothing in that line knew which
+names a week should hold: the two builds without BTC and GLD passed it and
+were pushed, and so would any week from a runner whose only fault is its
+list of names. So the gate carries the names. `EQUITY_UNIVERSE` in
+`scripts/truth_check.py` is a copy of `snapshot.equity_universe()`, pinned
+by `tests/test_feed_names.py`, which prints the replacement, and by
+`--config`. `--feed` asks the newest weekly file for a bar or a `missing`
+entry for each.
+
+**A short newest file on the runner is not always a short week.** Its
+`data/` is synced by hand, and a name merged into a week on main does not
+reach its copy. So the file is either a week the stale writer has just
+written, which must not be pushed, or the runner's copy of a week main holds
+whole, which must not be rewritten, and the gate cannot see main to tell
+which. Both of its lines say to look at main first. **A week that is on main
+is never written again to add a name.** And it is a FAIL only for a file
+fetched on or after 2026-10-06, the day the rule began: no run that had it
+wrote an older one. On that day every weekly file on the runner was older,
+committed, and without BTC and GLD, and those only warn.
+
+**What a FAIL there leaves to do.** Not pushed, and not patched: a `missing`
+entry is the writer's record that it asked, and is never added by hand. If
+main does not hold the week, sync `scan_pipeline/` on the runner, remove the
+file from its `data/weekly`, write the week again, and re-derive
+`market_state.json` through the chain, because the state the discarded week
+left behind is not last week's. A short file left in place is worse than
+none: the job takes a week it finds on disk for a committed one, so it is
+neither pushed nor rewritten, and the week after it lands on main beside a
+hole.
+
+Rehearsed on main's data with the runner's own `2026-10-02.json` as the
+newest week, which has neither BTC nor GLD, with a current deriver and no
+pandas or yfinance. `--feed --derive` exited 0 on it before and said
+nothing. It warns now, because that file was fetched on 2026-10-03; the same
+file stamped as written on the 10th exits 1 naming both. The runner as it
+stood that day did not get that far: its own line failed on the two history
+files it lacked and on the futures mark its deriver still writes under
+`US2Y`.
+
+Three things this does not reach. `--derive` is as it was: with no
+`--pipeline` it judges with the runner's deriver. The Monday Council's
+fallback build (STEP 1d of its task card) is a second writer: the same
+calls, into the same `data/`, gated with the same flags. Its card named
+`scripts/truth_check.py`, which its workspace does not hold, and no check
+dir. That one sentence was clarified on 2026-10-06 (owner sign-off): the
+copy of `truth_check.py` it downloads that morning, from a check dir built
+as the weekly job builds its own. It is a card, and nothing in this repo
+checks that it is followed. And when a name next joins and is merged into
+the newest week on main, the runner's copy of that week is short of it: a
+Saturday that writes no week fails on the copy until main's replaces it.
+The weekly job's prompt and task card were not changed.
+
+**So after any change to the feed, sync `scan_pipeline/` on the runner
+before the next Saturday build**, and copy the week the name was merged into
+with it: `config/` for a change of names, and `snapshot.py` where it is
+behind. Of the feed modules on the runner on 2026-10-06, `tickers.py` held
+the repo's names, `snapshot.py` was the repo's of 2026-09-21, with the old
+list in it, and `snapshot_macro.py` the repo's of 2026-08-12.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
@@ -809,7 +864,9 @@ moving one breaks his skill silently; update
 - Give the weekly or the daily writer its own list of names, or add a name
   to the feed without merging it into the newest week in the same change.
   `snapshot.equity_universe()` reads `PRICE_FEED_UNIVERSE`, and
-  `truth_check --config` holds the writer and the newest file to it.
+  `truth_check --config` holds the writer and the newest file to it. The
+  one other list is the gate's own, `EQUITY_UNIVERSE` in `truth_check.py`,
+  for the weekly job's check dir. It changes in the same commit as the feed.
   (`build_universe` keeps a narrower set on purpose: `universe.json` mirrors
   `wiki/universe.md`, which lists stocks.)
 - List `data/weekly/*.json` to read the panel. A corrected week is two of
