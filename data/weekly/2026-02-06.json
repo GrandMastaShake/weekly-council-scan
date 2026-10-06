@@ -57,6 +57,10 @@
         "fetched_at": "2026-08-26T04:24:20Z",
         "source": "yahoo-backfill"
       },
+      "BNY": {
+        "fetched_at": "2026-10-06T11:51:25Z",
+        "source": "yahoo-backfill"
+      },
       "BTC": {
         "fetched_at": "2026-10-06T03:28:27Z",
         "source": "yahoo-backfill"
@@ -95,6 +99,10 @@
       },
       "DIS": {
         "fetched_at": "2026-08-26T04:24:20Z",
+        "source": "yahoo-backfill"
+      },
+      "DOC": {
+        "fetched_at": "2026-10-06T11:51:25Z",
         "source": "yahoo-backfill"
       },
       "FIVE": {
@@ -143,6 +151,10 @@
       },
       "MP": {
         "fetched_at": "2026-08-26T04:24:20Z",
+        "source": "yahoo-backfill"
+      },
+      "MRSH": {
+        "fetched_at": "2026-10-06T11:51:25Z",
         "source": "yahoo-backfill"
       },
       "MTCH": {
@@ -414,6 +426,10 @@
       "close": 60.6725,
       "volume": 17117600
     },
+    "BNY": {
+      "close": 123.3376,
+      "volume": 3904400
+    },
     "BSX": {
       "close": 76.27,
       "volume": 34885700
@@ -589,6 +605,10 @@
     "DLR": {
       "close": 169.3304,
       "volume": 3404300
+    },
+    "DOC": {
+      "close": 16.1432,
+      "volume": 8340100
     },
     "DOW": {
       "close": 31.0918,
@@ -1005,6 +1025,10 @@
     "MRNA": {
       "close": 41.01,
       "volume": 8338800
+    },
+    "MRSH": {
+      "close": 181.9859,
+      "volume": 2342500
     },
     "MS": {
       "close": 178.0181,
