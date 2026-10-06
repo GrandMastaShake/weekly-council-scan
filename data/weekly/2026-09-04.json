@@ -51,6 +51,18 @@
       "ticker": "PEAK"
     }
   ],
+  "provenance": {
+    "series": {
+      "BTC": {
+        "fetched_at": "2026-10-06T03:28:27Z",
+        "source": "yahoo-backfill"
+      },
+      "GLD": {
+        "fetched_at": "2026-10-06T03:28:27Z",
+        "source": "yahoo-backfill"
+      }
+    }
+  },
   "rates": {
     "US10Y": {
       "close": 4.784,
@@ -237,6 +249,10 @@
     "BSX": {
       "close": 47.8,
       "volume": 15502400
+    },
+    "BTC": {
+      "close": 35.31,
+      "volume": 1127700
     },
     "BX": {
       "close": 136.15,
@@ -537,6 +553,10 @@
     "GILD": {
       "close": 151.0,
       "volume": 6181300
+    },
+    "GLD": {
+      "close": 406.77,
+      "volume": 9813200
     },
     "GLPI": {
       "close": 41.92,
