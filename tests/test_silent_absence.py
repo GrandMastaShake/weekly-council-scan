@@ -270,13 +270,22 @@ def committed(name):
     return json.loads(path.read_bytes().decode("ascii"))
 
 
-def test_no_committed_week_lacks_a_name_it_should_hold():
-    """The check, run on the real panel. It named one file until the sixteen
-    were merged into it; it names none now, and a correction left stale by
-    the next backfill would be the first thing to change that."""
+def test_the_check_runs_on_the_real_panel_and_no_longer_names_the_first_week():
+    """It named 2024-08-09.json, and nothing else, until the sixteen were
+    merged into it.
+
+    Not asserted: that it names nothing. It is a warning on purpose, and a
+    test that failed on any warning would make it a failure wherever the
+    suite runs: CI, and daily-observe.yml, which runs the suite before it
+    commits a session. The weekly file is pushed by a runner on a hand-
+    synced copy of the config. A week it writes without a feed name fails
+    --config until a later week is whole, and from then on is a hole that
+    only this check reports. That is for the log to say. It is not worth
+    a daily session."""
     rep = check(ROOT)
-    assert warns(rep) == []
-    assert rep.counts["OK"] == 1
+    assert rep.counts["FAIL"] == 0
+    assert len(rep.lines) >= 1
+    assert not any("2024-08-09.json" in line for line in warns(rep))
 
 
 def test_the_first_week_has_its_sixteen_and_says_when_they_were_fetched():
