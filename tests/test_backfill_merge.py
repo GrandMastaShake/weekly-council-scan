@@ -126,7 +126,7 @@ def test_merge_never_replaces_a_bar_the_week_already_holds(tmp_path):
     fetched bar over the committed one and stamped it in provenance.series.
     A fresh fetch is adjusted to a later date, so it is a different number
     for any name that has paid a dividend or split since, and the count of
-    series does not move, which is all panel_guard and CI compare."""
+    series does not move, which was all panel_guard and CI compared."""
     p = write_week(tmp_path, weekly_doc("2026-08-21", EXISTING))
     committed = p.read_bytes()
 

@@ -119,6 +119,19 @@ jobs:
           fi
           exit $code
 
+      # This job adds one file per session and changes none. The script
+      # refuses a session already on file, but that is the only thing that
+      # says so: CI never sees this job's commit (a push made with the
+      # workflow token starts no workflow), and a rewritten file has as many
+      # series as it had. So the files on disk are compared with the commit
+      # this run started from, before anything is committed: every file that
+      # was there is still there, with every bar and label it held
+      # (scripts/panel_guard.py). New sessions pass. First of the gates, so
+      # that a rewrite is reported as one.
+      - name: Guard what the panel held
+        if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
+        run: python scripts/panel_guard.py --against HEAD
+
       - name: Validate the feed and config
         if: steps.observe.outputs.refused != 'true' && !inputs.dry_run
         run: python scripts/truth_check.py --repo . --feed --config

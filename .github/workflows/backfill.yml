@@ -3,8 +3,24 @@ name: Backfill weekly panel
 # Fills history for tickers added to the universe. Runs on a GitHub runner,
 # which has the network access that local sandboxes and some agents do not.
 #
-# Manual only. It rewrites committed weekly files (--force), so it is never
-# scheduled and always names what it touched in the commit message.
+# Manual only. It writes committed weekly files, so it is never scheduled and
+# always names what it touched in the commit message.
+#
+# What a run may do to a week that is already on file:
+#
+#   tickers named           ADD them (--merge). A bar the week holds is left
+#                           alone.
+#   tickers blank           nothing. Weeks with no file are written; weeks on
+#                           file are skipped.
+#   tickers blank, rewrite  REWRITE it whole (--force): every bar in the
+#                           range is fetched again and written over the
+#                           committed one. Declared at dispatch, passed to
+#                           the guard as --rewrite, and named in the commit.
+#
+# Until 2026-10-06 a blank `tickers` meant --force by itself, so the one way
+# to write a missing week was also the way to rewrite all the others, and
+# nothing downstream could tell: the guard counted series, and a rewritten
+# week has as many as it had.
 
 on:
   workflow_dispatch:
@@ -22,6 +38,11 @@ on:
         description: Last Friday to fill (YYYY-MM-DD)
         required: true
         type: string
+      rewrite:
+        description: "REWRITE weeks already on file, whole universe (--force). Changes every committed bar in the range. Leave off to write only the weeks that have no file"
+        required: false
+        default: false
+        type: boolean
       dry_run:
         description: Show the plan without writing or committing
         required: false
@@ -57,6 +78,13 @@ jobs:
           if [ -n "${{ inputs.tickers }}" ]; then
             echo "${{ inputs.tickers }}" | grep -Eq '^[A-Z0-9.,^=-]+$' \
               || { echo "tickers must be comma-separated symbols"; exit 1; }
+            # A ticker list is merged in and never rewrites a bar. Ticked
+            # beside one, `rewrite` would be a declaration the run does not
+            # act on, in the log of a run that changed nothing it held.
+            if [ "${{ inputs.rewrite }}" = "true" ]; then
+              echo "rewrite is for the whole universe. Named tickers are added to each week (--merge) and no bar a week holds is rewritten; leave rewrite off, or leave tickers blank."
+              exit 1
+            fi
           fi
 
       - name: Snapshot the panel before
@@ -65,22 +93,25 @@ jobs:
       # Named tickers are ADDED to each week (--merge). The old path passed
       # --only with --force, which writes a whole file from just those names
       # and deleted 243 series from 107 weeks on 2026-08-26; the script now
-      # refuses that combination outright. --force is reserved for a
-      # full-universe rewrite, where writing the whole file is correct.
+      # refuses that combination outright.
       #
       # --merge only adds. A named ticker a week already holds is left as
       # committed and listed in the plan, never written over. A run that
       # changes no file for that reason exits 2 and fails this step, the dry
       # run too when the files alone show there is nothing to add: until
       # 2026-10-06 it re-fetched every such bar over the committed one and
-      # this job went on to commit, with no series count moved for the
-      # guard below to see.
+      # this job went on to commit.
+      #
+      # --force writes a week WHOLE, over the file that is there. It is
+      # passed only when `rewrite` is ticked. Without it a whole-universe run
+      # skips every week on file and writes the ones that have none.
       - name: Backfill
         run: |
           ARGS="--out data --start ${{ inputs.start }} --end ${{ inputs.end }}"
           if [ -n "${{ inputs.tickers }}" ]; then
             ARGS="$ARGS --only ${{ inputs.tickers }} --merge"
-          else
+          elif [ "${{ inputs.rewrite }}" = "true" ]; then
+            echo "REWRITE DECLARED (--force): every week on file from ${{ inputs.start }} to ${{ inputs.end }} is fetched again and written whole, over the committed file."
             ARGS="$ARGS --force"
           fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then
@@ -93,14 +124,27 @@ jobs:
         if: inputs.dry_run == false
         run: python scripts/rebuild_corrections.py
 
-      # Fails the job if any week lost series. A targeted backfill on
-      # 2026-08-26 replaced every file with its 44 --only tickers (287 -> 44
+      # Fails the job if the panel no longer holds what it held: a file or a
+      # bar gone, a bar changed, a label or a file stamp changed. New weeks
+      # and new names pass. Two runs are behind it. On 2026-08-26 a targeted
+      # backfill replaced every file with its 44 --only tickers (287 -> 44
       # across 107 files) and this job reported success: the counts were
-      # printed with nothing to compare them against. Growth passes; loss
-      # stops the run before the commit step.
-      - name: Guard against series loss
+      # printed with nothing to compare them against. The guard written for
+      # that counted series, and a count does not move when a bar is
+      # written over.
+      #
+      # A declared rewrite is the one run that may change a bar, and only
+      # in the weeks it was dispatched for. The guard prints how many it
+      # changed. A bar that VANISHED fails that run too.
+      - name: Guard what the panel held
         if: inputs.dry_run == false
-        run: python scripts/panel_guard.py --compare /tmp/panel_before.json
+        run: |
+          if [ "${{ inputs.rewrite }}" = "true" ]; then
+            python scripts/panel_guard.py --compare /tmp/panel_before.json \
+              --rewrite "${{ inputs.start }}" "${{ inputs.end }}"
+          else
+            python scripts/panel_guard.py --compare /tmp/panel_before.json
+          fi
 
       # --repo is required and --feed is the data-feed gate (DATA_FEED.md
       # sec.1, pure stdlib, no network). This previously ran with no
@@ -117,8 +161,17 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/weekly
           if git diff --cached --quiet; then echo "No changes."; exit 0; fi
-          git commit -m "Backfill weekly panel ${{ inputs.start }} to ${{ inputs.end }}" \
-            -m "Tickers: ${{ inputs.tickers || 'entire universe' }}. Corrections rebuilt."
+          # No CI run will look at this commit: a push made with the workflow
+          # token starts no workflow. So a rewrite says what it is here, in
+          # the one place that stays.
+          if [ "${{ inputs.rewrite }}" = "true" ]; then
+            subject="REWRITE weekly panel ${{ inputs.start }} to ${{ inputs.end }} (declared, whole universe)"
+            body="Weeks already on file were written again whole (--force), declared at dispatch. Corrections rebuilt."
+          else
+            subject="Backfill weekly panel ${{ inputs.start }} to ${{ inputs.end }}"
+            body="Tickers: ${{ inputs.tickers || 'entire universe, weeks with no file only' }}. Corrections rebuilt."
+          fi
+          git commit -m "$subject" -m "$body"
           for i in 1 2 3; do
             git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
             sleep 5

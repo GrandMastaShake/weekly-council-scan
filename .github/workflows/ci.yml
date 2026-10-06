@@ -3,6 +3,11 @@ name: CI
 # The panel is committed data, so CI checks the data as well as the code:
 # a bad commit to data/weekly fails here rather than downstream in the
 # heatmap, or silently.
+#
+# What this cannot see: a commit a workflow pushes. A push made with the
+# workflow token starts no workflow, so the backfill's and the daily job's
+# commits are never the head of a run here. Each runs scripts/panel_guard.py
+# itself, before it commits.
 
 on:
   push:
@@ -15,8 +20,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # HEAD^ must exist for the panel-regression check below; the default
-          # shallow clone has no parent, which would skip the check silently.
+          # HEAD^ must exist for the panel check below: it is what a pull
+          # request is compared with, and the fallback for a push. The
+          # default shallow clone has no parent, and the check fails rather
+          # than pass without one.
           fetch-depth: 2
 
       - uses: actions/setup-python@v5
@@ -31,45 +38,73 @@ jobs:
       - name: Feed and config gates on the committed panel
         run: python scripts/truth_check.py --repo . --feed --config
 
-      - name: Panel is intact against the previous commit
+      # Runs whatever the two steps above did. A push is compared once, by
+      # its own run, with the tip it replaced; the next push starts from the
+      # new tip. So a run that stopped at a red test never compared its
+      # push, and nothing came back for it: on 2026-09-25 the push of that
+      # week's file failed at Tests, and this step and the feed gate were
+      # skipped. It needs git and the standard library, nothing a failed
+      # test could have broken.
+      - name: Panel is intact against what it held before
+        if: ${{ !cancelled() }}
+        env:
+          # The tip of the branch before this push. Empty on a pull request.
+          PUSH_BEFORE: ${{ github.event_name == 'push' && github.event.before || '' }}
         run: |
-          # A panel file that LOST series is the 2026-08-26 failure returning.
-          # Covers data/daily as well: same append-only contract, same hazard.
-          # Compare HEAD against its parent rather than trusting the diff to
-          # look obviously wrong.
-          git rev-parse HEAD^ >/dev/null 2>&1 || { echo "No parent commit; skipping."; exit 0; }
-          python - <<'PY'
-          import json, subprocess, sys
+          # What "before" is. A pull request is checked out as its merge
+          # into the base branch, so HEAD^ is that branch. A push is not:
+          # HEAD^ is the parent of its LAST commit only. On 2026-10-03 the
+          # runner pushed the weekly file, market_state.json and
+          # universe.json as three commits; this step ran on the third, and
+          # the commit that wrote the weekly file was never compared with
+          # anything. So a push is compared with the tip it replaced.
+          base="HEAD^"
+          if [ -n "$PUSH_BEFORE" ] && ! printf '%s' "$PUSH_BEFORE" | grep -Eq '^0+$'; then
+            if git cat-file -e "${PUSH_BEFORE}^{commit}" 2>/dev/null \
+                || git fetch --quiet --no-tags --depth=1 origin "$PUSH_BEFORE"; then
+              base="$PUSH_BEFORE"
+            else
+              echo "::warning title=Panel check::Could not fetch $PUSH_BEFORE, the tip of the branch before this push. Comparing the last commit with its parent only; the push's earlier commits were not looked at."
+            fi
+          fi
+          if ! git rev-parse --verify --quiet "${base}^{commit}" >/dev/null; then
+            # Only a first commit has nothing before it. A parent that is
+            # named in the commit and absent from the checkout is a clone
+            # too shallow to compare, and that must not read as a pass. The
+            # commit's header is asked, up to its first blank line: a
+            # message can have a line that begins "parent " too.
+            commit="$(git cat-file -p HEAD)"
+            case "${commit%%$'\n\n'*}" in
+              *$'\n'"parent "*)
+                echo "::error title=Panel check::HEAD has a parent this checkout did not fetch, so there is nothing to compare the panel with. The checkout step needs fetch-depth 2 or more."
+                exit 1 ;;
+            esac
+            echo "No parent commit; nothing to compare with."
+            exit 0
+          fi
+          echo "Comparing with $(git rev-parse --short "${base}^{commit}")"
+
+          # Both checks below run, so one failing does not hide the other.
+          set +e
+
+          # What a panel file held, it still holds: every file of data/weekly
+          # and data/daily that was there is still there, with every bar and
+          # every label it had (scripts/panel_guard.py has the rule). This
+          # step used to carry its own copy of the first version of that
+          # guard, a count of series per file. It passed a commit that
+          # changed a close, and one that deleted a file.
+          python scripts/panel_guard.py --against "$base"
+          panel=$?
+
+          PANEL_BASE="$base" python - <<'PY'
+          import json, os, subprocess, sys
           from pathlib import Path
 
-          def at(commit, path):
-              r = subprocess.run(["git", "show", commit + ":" + path],
-                                 capture_output=True, text=True)
-              if r.returncode != 0:
-                  return None
-              return len(json.loads(r.stdout).get("series", {}))
-
-          lost = []
-          panel = (sorted(Path("data/weekly").glob("*.json"))
-                   + sorted(Path("data/daily").glob("*.json")))
-          for p in panel:
-              path = p.as_posix()
-              before = at("HEAD^", path)
-              if before is None:
-                  continue          # new file, nothing to lose
-              after = len(json.loads(p.read_text(encoding="utf-8")).get("series", {}))
-              if after < before:
-                  lost.append((path, before, after))
-
-          if lost:
-              print("PANEL REGRESSION -- series were removed:")
-              for path, before, after in lost:
-                  print("  %-38s %4d -> %4d" % (path, before, after))
-              sys.exit(1)
-          print("panel intact: no weekly or daily file lost series")
+          # The commit the step above settled on. HEAD^ when run by hand.
+          BASE = os.environ.get("PANEL_BASE") or "HEAD^"
 
           def previous(path):
-              r = subprocess.run(["git", "show", "HEAD^:" + path],
+              r = subprocess.run(["git", "show", BASE + ":" + path],
                                  capture_output=True, text=True)
               return json.loads(r.stdout) if r.returncode == 0 else None
 
@@ -151,3 +186,6 @@ jobs:
 
           sys.exit(1 if failed else 0)
           PY
+          history=$?
+          set -e
+          if [ "$panel" -ne 0 ] || [ "$history" -ne 0 ]; then exit 1; fi
