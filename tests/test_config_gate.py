@@ -259,6 +259,28 @@ def test_gate_accepts_a_panel_absence_that_declares_a_reason(tmp_path,
     assert rep.counts["FAIL"] == 0, rep.render()
 
 
+@pytest.mark.parametrize("said", [{}, {"reason": ""}, {"reason": None},
+                                  {"reason": "None"}], ids=repr)
+def test_gate_does_not_take_a_name_typed_into_missing_for_a_reason(
+        tmp_path, monkeypatch, said):
+    """The cheapest way past "no bar and no `missing` entry": the name in
+    the list with nothing beside it. An entry that gives no reason accounts
+    for no name (truth_check._accounts), here as under --feed."""
+    focus = {"S%d" % i: ["T%d_%d" % (i, j) for j in range(10)]
+             for i in range(11)}
+    names = [x for xs in focus.values() for x in xs]
+    fake = FakeRepo(tmp_path, "none",
+                    weekly_doc={"series": {n: {"close": 1.0, "volume": 1}
+                                           for n in names[:-1]},
+                                "missing": [dict(said, ticker=names[-1])]})
+    stub_tickers(monkeypatch, STOCK_UNIVERSE=names,
+                 PRICE_FEED_UNIVERSE=sorted(names),
+                 SECTOR_FOCUS_110=focus, FOCUS_TICKERS=sorted(names))
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] >= 1
+    assert "no bar and no" in rep.render() and names[-1] in rep.render()
+
+
 # -- the weekly writer and the whole feed ------------------------------------
 #
 # BTC and GLD joined PRICE_FEED_UNIVERSE on 2026-09-21. For two weekly builds
