@@ -31,6 +31,17 @@ question: which session's close, if any, is the committed number?
     unverified        the provider could not answer, or the session is too
                       recent for its answer to be final. Never read as ok.
 
+One missing close is the rule and not a loss. An instrument that settles the
+day after its session is not read before 13:00 UTC on that day
+(snapshot_macro.select_bar), and both of the daily job's attempts run
+earlier (DATA_FEED.md sec.4): every daily file written since 2026-10-05
+lists all of them in `missing`. The first such file put five rows under NEW,
+and a row a session for each would bury the ones that want a reviewer. In
+data/daily they are counted, as "before_settlement", and not listed. The
+file's own fetched_at decides, never the reason it wrote down. In
+data/weekly the same state is a job that ran before the hour it is scheduled
+after; that file cannot be completed afterwards, and it is listed as absent.
+
 What it cannot tell you is WHY. A "differs" on WTI is the same line whether
 the committed number was a last trade ahead of the settlement or the next
 contract month's quote. Committed volume beside the provider's is printed
@@ -120,6 +131,13 @@ NEAR_DAYS = 7
 
 CLASSES = ("prior_session", "holiday_stand_in", "other_session", "differs",
            "absent", "unverified")
+
+# The panels in which a close the writer declined to read before its
+# settlement hour is counted and not listed (module docstring). The count is
+# a key of its own beside the classes, because it is not a finding: nothing
+# in the baseline answers for it and nothing needs a cause.
+COUNTED_BEFORE_SETTLEMENT = ("daily",)
+BEFORE_SETTLEMENT = "before_settlement"
 
 HEADINGS = {
     "prior_session": "PRIOR SESSION -- the as_of bar exists, and the "
@@ -282,6 +300,22 @@ def settled_at(as_of):
     return snapshot_macro.settled_at(dt.date.fromisoformat(as_of))
 
 
+def fetched_before_settlement(doc):
+    """True when the file was fetched before the hour at which the bar dated
+    its as_of may be read for an instrument that settles the next day.
+
+    The writer's own test (snapshot_macro.select_bar), asked of the stamp
+    the file carries. A stamp that cannot be read is not taken for an early
+    one: the instrument is then listed, not counted."""
+    try:
+        fetched = dt.datetime.strptime(
+            doc.get("fetched_at"), "%Y-%m-%dT%H:%M:%SZ").replace(
+                tzinfo=dt.timezone.utc)
+    except (TypeError, ValueError):
+        return False
+    return fetched < settled_at(doc["as_of"])
+
+
 def classify(close, as_of, history):
     """(class, session) for one committed close. Pure.
 
@@ -319,9 +353,10 @@ def classify(close, as_of, history):
 
 
 def audit_file(panel, name, doc, instruments, histories, now):
-    """Findings for one file, plus how many closes it compared and passed."""
+    """Findings for one file, plus how many closes it compared, how many
+    passed, and how many it declined to read before they settled."""
     as_of = doc["as_of"]
-    findings, compared, ok = [], 0, 0
+    findings, compared, ok, declined = [], 0, 0, 0
     declared = {m.get("ticker"): m.get("reason")
                 for m in doc.get("missing") or [] if isinstance(m, dict)}
     for (block, ticker), cfg in sorted(instruments.items()):
@@ -355,6 +390,13 @@ def audit_file(panel, name, doc, instruments, histories, now):
                 continue
             bar = history.get(as_of)
             if bar is None:
+                continue
+            if panel in COUNTED_BEFORE_SETTLEMENT \
+                    and cfg.get("settles") == snapshot_macro.NEXT_DAY \
+                    and fetched_before_settlement(doc):
+                # Declined, not lost: at the hour this file was fetched the
+                # writer may not read the bar, whatever reason it gave.
+                declined += 1
                 continue
             findings.append(dict(base, **{
                 "class": "absent", "committed": None,
@@ -401,7 +443,7 @@ def audit_file(panel, name, doc, instruments, histories, now):
         if doc.get("session_note"):
             finding["session_note"] = doc["session_note"]
         findings.append(finding)
-    return findings, compared, ok
+    return findings, compared, ok, declined
 
 
 def history_window(docs):
@@ -480,14 +522,16 @@ def run_audit(repo, panels=PANELS, fetch=fetch_history, now=None):
     for panel in panels:
         counts = {"files": len(loaded[panel]), "closes": 0, "ok": 0}
         counts.update({c: 0 for c in CLASSES})
+        counts[BEFORE_SETTLEMENT] = 0
         corrected = {name[:-len(".corrected.json")]
                      for name, _ in loaded[panel]
                      if name.endswith(".corrected.json")}
         for name, doc in loaded[panel]:
-            found, compared, ok = audit_file(panel, name, doc, instruments,
-                                             histories, now)
+            found, compared, ok, declined = audit_file(
+                panel, name, doc, instruments, histories, now)
             counts["closes"] += compared
             counts["ok"] += ok
+            counts[BEFORE_SETTLEMENT] += declined
             for finding in found:
                 counts[finding["class"]] += 1
                 stem = name[:-len(".json")]
@@ -656,6 +700,10 @@ def render(result, baseline, show_all, panels=PANELS):
         for cls in CLASSES:
             if c[cls]:
                 out.append("  %-17s %d" % (cls, c[cls]))
+        if c.get(BEFORE_SETTLEMENT):
+            out.append("  %-17s %d  (in `missing` by rule: fetched before the "
+                       "settlement hour. Counted, not listed)"
+                       % (BEFORE_SETTLEMENT, c[BEFORE_SETTLEMENT]))
 
     new, changed, gone, known = compare(baseline, result, panels)
     if baseline is None:

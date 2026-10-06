@@ -314,6 +314,104 @@ def test_an_instrument_the_file_never_carried_is_not_absent(panel):
     assert result["findings"] == []
 
 
+# -- declined before settlement ------------------------------------------------
+
+# Monday 2026-10-05, the first daily file under the rule: fetched at 01:54
+# UTC on the 6th, eleven hours before its futures and the dollar index may
+# be read. The audit listed all five under NEW.
+OCT_5 = {"^VIX": {"2026-10-05": (15.9, 0)},
+         "DX-Y.NYB": {"2026-10-05": (102.17, 0)},
+         "2YY=F": {"2026-10-05": (4.638, 0)},
+         "CLX26.NYM": {"2026-10-05": (89.43, 355302)}}
+LATER = dt.datetime(2026, 10, 7, 12, 0, tzinfo=dt.timezone.utc)
+EVENING = "2026-10-06T01:54:33Z"
+AFTER_THE_HOUR = "2026-10-06T13:07:00Z"
+
+
+def session_file(fetched_at, lost=("DXY", "US2Y_FUT", "WTI"), vol=None):
+    """A session file as the daily job writes it: VIX read, and the
+    instruments that settle the next day in `missing`."""
+    doc = week("2026-10-05", vol={"VIX": 15.9} if vol is None else vol)
+    doc["cadence"] = "daily"
+    doc["fetched_at"] = fetched_at
+    doc["missing"] = [{"ticker": t, "reason": "not read before 13:00Z"}
+                      for t in lost]
+    return doc
+
+
+def daily_audit(panel, doc, histories=OCT_5, now=LATER):
+    repo = panel({}).parents[1]
+    daily = repo / "data" / "daily"
+    daily.mkdir(parents=True, exist_ok=True)
+    (daily / (doc["as_of"] + ".json")).write_text(json.dumps(doc),
+                                                  encoding="utf-8")
+    return ai.run_audit(repo, ("daily",), provider(histories), now)
+
+
+def test_a_daily_file_fetched_before_the_hour_is_counted_not_listed(panel):
+    """Declined, not lost. Nothing for a reviewer to put a cause to, and
+    nothing that reads as ok either: the three are not among the compared."""
+    result = daily_audit(panel, session_file(EVENING))
+    counts = result["audited"]["panels"]["daily"]
+    assert result["findings"] == []
+    assert counts[ai.BEFORE_SETTLEMENT] == 3
+    assert counts["absent"] == 0
+    assert (counts["closes"], counts["ok"]) == (1, 1)       # VIX
+
+
+def test_the_same_file_fetched_after_the_hour_lost_them(panel):
+    """The reason in `missing` is the same text. The stamp is what differs,
+    and a file fetched when the bar could be read has no rule to point at."""
+    result = daily_audit(panel, session_file(AFTER_THE_HOUR))
+    got = found(result)
+    assert set(got) == {"fx.DXY", "rates.US2Y_FUT", "commodities.WTI"}
+    assert {f["class"] for f in got.values()} == {"absent"}
+    assert got["commodities.WTI"]["symbol"] == "CLX26.NYM"
+    assert result["audited"]["panels"]["daily"][ai.BEFORE_SETTLEMENT] == 0
+
+
+def test_a_weekly_file_fetched_before_the_hour_is_still_listed(panel):
+    """The weekly job runs after the hour. A file in this state is a run
+    that started early, and it can never be completed."""
+    doc = week("2026-10-09", vol={"VIX": 16.2})
+    doc["fetched_at"] = "2026-10-10T01:13:00Z"
+    doc["missing"] = [{"ticker": "DXY", "reason": "not read before 13:00Z"}]
+    hist = {"^VIX": {"2026-10-09": (16.2, 0)},
+            "DX-Y.NYB": {"2026-10-09": (101.5, 0)}}
+    result = audit(panel, {"2026-10-09.json": doc}, hist,
+                   now=dt.datetime(2026, 10, 12, tzinfo=dt.timezone.utc))
+    assert found(result)["fx.DXY"]["class"] == "absent"
+    assert result["audited"]["panels"]["weekly"][ai.BEFORE_SETTLEMENT] == 0
+
+
+def test_an_instrument_that_is_final_by_evening_is_never_counted(panel):
+    """VIX does not settle the next day. Missing from an evening file, it
+    was lost."""
+    doc = session_file(EVENING, lost=("VIX",), vol={})
+    result = daily_audit(panel, doc)
+    assert found(result)["vol.VIX"]["class"] == "absent"
+    assert result["audited"]["panels"]["daily"][ai.BEFORE_SETTLEMENT] == 0
+
+
+@pytest.mark.parametrize("stamp", [None, "", "2026-10-06", "yesterday", 20261006])
+def test_a_stamp_that_cannot_be_read_is_not_an_early_one(panel, stamp):
+    doc = session_file(EVENING, lost=("DXY",))
+    doc["fetched_at"] = stamp
+    result = daily_audit(panel, doc)
+    assert found(result)["fx.DXY"]["class"] == "absent"
+    assert result["audited"]["panels"]["daily"][ai.BEFORE_SETTLEMENT] == 0
+
+
+def test_the_report_gives_the_count_and_calls_nothing_new(panel):
+    result = daily_audit(panel, session_file(EVENING))
+    text, (new, changed, gone, known) = ai.render(
+        result, {"findings": []}, False, ("daily",))
+    assert (new, changed, gone, known) == ([], [], [], [])
+    line = [ln for ln in text.splitlines() if ai.BEFORE_SETTLEMENT in ln]
+    assert len(line) == 1 and " 3 " in line[0]
+    assert "0 new" in text and "NEW" not in text.replace("0 new", "")
+
+
 def test_the_history_window_never_opens_on_a_sunday(panel):
     asked = []
 

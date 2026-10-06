@@ -157,6 +157,13 @@ the check passes them as it always has.
   `scripts/backfill_commodities.py`. A file that names its contract is
   compared with that contract's own history while the provider still serves
   it, and left out once the contract has expired.
+- A close the writer declined to read is not a finding. The futures and the
+  dollar index are not read before 13:00 UTC on the day after their session,
+  and both of the daily job's attempts are earlier (`DATA_FEED.md` sec.4), so
+  every daily file since 2026-10-05 lists them in `missing`. The audit counts
+  those under `audited` as `before_settlement` and lists none of them: the
+  file's `fetched_at` decides, not the reason it gives. A weekly file in that
+  state is a job that ran early, and is listed as `absent`.
 
 ## series_audit.json (which session a committed equity bar is)
 
