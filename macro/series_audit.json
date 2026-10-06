@@ -44,7 +44,7 @@
   },
   "audited": {
     "provider": "yahoo",
-    "fetched_at": "2026-10-06T05:31:36Z",
+    "fetched_at": "2026-10-06T11:34:38Z",
     "yfinance": "1.6.0",
     "tickers": {
       "asked": 338,
@@ -57,8 +57,8 @@
     "weekly": {
       "files": 115,
       "too_recent": [],
-      "bars": 38391,
-      "ok": 38179,
+      "bars": 38407,
+      "ok": 38195,
       "close_alone": 1722,
       "backfill": {
         "bars": 30097,
@@ -66,8 +66,8 @@
         "close_alone": 2
       },
       "merged": {
-        "bars": 5113,
-        "ok": 5113,
+        "bars": 5129,
+        "ok": 5129,
         "close_alone": 0
       },
       "live": {
@@ -84,8 +84,8 @@
         "2026-08-28.json AVB"
       ],
       "reach": {
-        "tried": 38177,
-        "named": 38177,
+        "tried": 38193,
+        "named": 38193,
         "blind_on_close": 139
       },
       "prior_session": 0,
