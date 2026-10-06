@@ -33,7 +33,7 @@
     },
     "weekly_bar_fallback": {
       "what": "AVB in the 2026-08-28 file is the week's last print, taken from a weekly bar: 68.14 from Monday 2026-08-24, a week after AVB stopped trading, and it is the successor company's price.",
-      "evidence": "The file was not written by snapshot.fetch_weekly_bars. Its missing reasons read 'no usable close for 2026-08-28 (daily NaN + weekly unavailable)', a text no writer in this repo produces: on Saturday 2026-08-29 the provider's daily closes for the Friday were all null, and the runner's one-off script took every close from the provider's 1wk bar and the volume from the daily row (feed_run_2026-08-28/step3_weekly_v2.py and that day's log, on the runner; neither is in the repo). For the 330 names that traded on the Friday the 1wk close is the Friday close, and the audit confirms each against the daily bar. AVB had no Friday row, so it got the 1wk close and a null volume. data/daily/2026-08-24.json holds the same 68.14 for AVB dated the Monday, and 68.14 is VMRK's close that day (VMRK closed the Friday at 65.54): the provider was printing the successor's price under the dead symbol. It is the same Saturday whose index closes were Thursday's (macro/instrument_audit.json, index_bar_absent_at_fetch).",
+      "evidence": "The file was not written by snapshot.fetch_weekly_bars. Its missing reasons read 'no usable close for 2026-08-28 (daily NaN + weekly unavailable)', a text no writer in this repo produces: on Saturday 2026-08-29 the provider's daily closes for the Friday were all null, and the runner's one-off script took every close from the provider's 1wk bar and the volume from the daily row (feed_run_2026-08-28/step3_weekly_v2.py and that day's log, on the runner; neither is in the repo). For the 330 names that traded on the Friday the 1wk close is the Friday close, and the audit confirms each against the daily bar. AVB had no Friday row, so it got the 1wk close and a null volume. data/daily/2026-08-24.json holds the same 68.14 for AVB dated the Monday, and 68.14 is VMRK's close that day (VMRK closed the Friday at 65.54): the provider was printing the successor's price under the dead symbol. (VMRK's own Friday bar has been in the file since 2026-10-06, merged in from a later fetch: 64.7694, which is that 65.54 adjusted for the dividend that went ex on 2026-10-05.) It is the same Saturday whose index closes were Thursday's (macro/instrument_audit.json, index_bar_absent_at_fetch).",
       "resolution": "Not corrected: no sign-off was asked, and a live file is outside what this audit was asked to cover. The correction of 2026-10-05 for the three instrument closes is a full copy and carries the bar too. Dropping it needs a change first: rebuild_corrections.py recognises a dropped bar by volume 0 in the base, and this one's volume is null. No scored output used it. The heatmap's only run to open the 2026-08-28 file was 2026-09-25, as its month-start week, after AVB had left the watchlist. A reader that did score AVB from 2026-07-31 to 2026-08-28 would get -63.3 percent, and the heatmap's zero-volume guard would not stop it, because null is not 0."
     },
     "evening_read": {
@@ -44,7 +44,7 @@
   },
   "audited": {
     "provider": "yahoo",
-    "fetched_at": "2026-10-06T11:34:38Z",
+    "fetched_at": "2026-10-06T12:17:08Z",
     "yfinance": "1.6.0",
     "tickers": {
       "asked": 338,
@@ -57,8 +57,8 @@
     "weekly": {
       "files": 115,
       "too_recent": [],
-      "bars": 38407,
-      "ok": 38195,
+      "bars": 38753,
+      "ok": 38541,
       "close_alone": 1722,
       "backfill": {
         "bars": 30097,
@@ -66,8 +66,8 @@
         "close_alone": 2
       },
       "merged": {
-        "bars": 5129,
-        "ok": 5129,
+        "bars": 5475,
+        "ok": 5475,
         "close_alone": 0
       },
       "live": {
@@ -75,7 +75,7 @@
         "ok": 3175,
         "close_alone": 1720
       },
-      "named_by_note": 1662,
+      "named_by_note": 1677,
       "tied": 15,
       "no_volume": [
         "2026-08-07.json EA",
@@ -84,9 +84,9 @@
         "2026-08-28.json AVB"
       ],
       "reach": {
-        "tried": 38193,
-        "named": 38193,
-        "blind_on_close": 139
+        "tried": 38539,
+        "named": 38539,
+        "blind_on_close": 140
       },
       "prior_session": 0,
       "stand_in": 1,
