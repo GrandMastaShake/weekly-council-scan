@@ -10,6 +10,24 @@ Modes:
   --facts       Verify macro/facts.json against live Yahoo closes within each
                 field's tolerance_pct; verify computed spreads; check the
                 file's own generated date (< 8 days old).
+                A currency pair (what the provider calls CURRENCY: JPY=X,
+                EURUSD=X) gets a second witness before it FAILs. The
+                provider's daily bar for a pair closes at the price it
+                opened at, not where the session ended, so after a session
+                that moved more than the tolerance it disagrees with a
+                table that is right (#120: USDJPY 157.185 against a daily
+                close of 158.811, on 2026-09-28). The same bar's hourly
+                bars are asked for and the last close among them is
+                compared under the same tolerance: agreement is an OK that
+                gives both numbers. Where that close disagrees as well,
+                where the hourly bars stop more than six hours before the
+                daily bar ends, or where there is no answer, the FAIL
+                stands and says which. One more request at most per
+                currency field, counted against --max-fetch. A field
+                inside its tolerance against the daily bar is not asked
+                about, and no other kind of instrument ever is: their daily
+                closes are their sessions', and a future's hourly bars can
+                be another contract month's.
   --lint        Holdings linter: extract (TICKER, $price) pairs from wiki
                 tables and compare against live closes (WARN >3%; FAIL >15%
                 for prices >= $10, >35% for micro-cap prices < $10);
@@ -147,6 +165,14 @@ VERSION = "v6"
 _UA = {"User-Agent": "Mozilla/5.0"}
 _fetch_cache = {}
 _splits_cache = {}
+# Beside each close yahoo_close() returns: the daily bar's own timestamp and
+# what the provider calls the instrument. check_facts asks a second witness
+# about a currency pair's bar, and it has to be asked about that bar. The date
+# yahoo_close() returns will not do for it. It is worked out with one UTC
+# offset, today's, and a currency bar is stamped at London's midnight: 23:00
+# UTC in summer, 00:00 in winter, and the series holds both. Read with
+# winter's offset, a summer bar is the day before.
+_bar_cache = {}
 
 
 def yahoo_close(symbol, end=None, window_days=12):
@@ -181,11 +207,93 @@ def yahoo_close(symbol, end=None, window_days=12):
                 if day == today_utc and today_utc.weekday() < 5:
                     continue
                 _fetch_cache[symbol] = (float(c), day.isoformat())
+                _bar_cache[symbol] = (
+                    t, res.get("meta", {}).get("instrumentType"))
                 return _fetch_cache[symbol]
     except Exception:
         pass
     _fetch_cache[symbol] = (None, None)
     return None, None
+
+
+# A currency pair's daily bar does not close where its session ended. As the
+# provider served them on 2026-10-06, the daily bars of JPY=X and of EURUSD=X
+# each close at the price they opened at: 566 bars a pair from 2024-07-29,
+# the close equal to the open to the digit on 336 and 340 of them and never
+# more than 0.18% from it, on days whose high and low are a median 0.67% and
+# 0.50% apart. A bar reads right only for a while. After its session the
+# series ends in the last quote, and for a Friday it is some time over the
+# weekend, not the same time each week, that the provider puts such a bar in
+# its place. So Friday 2026-09-25 was 157.185 that night, which
+# macro/facts.json recorded, still passed this check on the Sunday, and on
+# the Monday was open 158.842, close 158.811: 1.03% away, and the Monday
+# Council's gate FAILed a table that was right (#120).
+#
+# The hourly bars keep the session. The last close among those inside that
+# daily bar's own 24 hours is 157.185. Of the nine tables committed through
+# 2026-10-04, eight hold their Friday's last hourly close for EURUSD and
+# seven for USDJPY, to within 0.02%: two readings of one session, weeks
+# apart. (Two USDJPY values are the daily bar's close, read after it had
+# changed; the other is a figure rounded to 1.16.) Over two years the daily
+# close and the last hourly close are more than 1% apart on 34 of 510
+# sessions for JPY=X, 8 of them Fridays, and on 16 for EURUSD=X.
+#
+# Only what the provider calls a CURRENCY is asked. The index, ETF and crypto
+# symbols checked (^TNX, ^FVX, ^IRX, ^VIX, DX-Y.NYB, SPY, HYG, XLK, BTC-USD)
+# closed within 0.2% of their own last hourly bar on every day from
+# 2026-08-10 to 2026-10-05, so their daily close is the session's. And an
+# hourly bar is no witness for a future, whose daily close is a settlement:
+# HG=F's last hourly close was 0.9% to 1.5% above it on six of the eight
+# Fridays to 2026-10-02, and CL=F's on 2026-09-18 was 96.08 against 100.30
+# (#110).
+CURRENCY = "CURRENCY"
+BAR_SECONDS = 24 * 3600
+# Hourly bars that stop early do not say where a session ended. On Friday
+# 2026-01-30 the provider's, for both pairs, stop with the 15:00 UTC bar and
+# do not start again until the Monday evening. In every other session of
+# those two years the last hourly bar begins 20 to 23 hours into the daily
+# bar, so one that begins less than 18 hours in is refused.
+SESSION_TAIL_SECONDS = 6 * 3600
+
+
+def yahoo_session_last(symbol, start):
+    """Last hourly close inside the 24 hours a daily bar covers, via the same
+    chart API. `start` is the daily bar's own timestamp.
+
+    Returns (close, when), `when` being the UTC hour that last bar began,
+    or (None, why) when the hourly bars cannot say where the session ended:
+    no answer, no bar with a close in those hours, or bars that stop more
+    than six hours before the daily bar does. Never the nearest thing
+    instead. A caller that gets None has no second witness."""
+    end = start + BAR_SECONDS
+    url = ("https://query1.finance.yahoo.com/v8/finance/chart/"
+           f"{symbol}?period1={start}&period2={end}&interval=60m"
+           "&events=history")
+    try:
+        raw = json.loads(urllib.request.urlopen(
+            urllib.request.Request(url, headers=_UA), timeout=30).read())
+        res = (raw.get("chart", {}).get("result") or [None])[0]
+        if not res:
+            return None, "its hourly bars could not be read"
+        ts = res.get("timestamp") or []
+        closes = (res.get("indicators", {}).get("quote", [{}])[0]
+                  .get("close") or [])
+        # The provider's own window is not relied on: a bar outside the
+        # daily bar's hours is another session's, whoever sent it.
+        inside = [(t, float(c)) for t, c in zip(ts, closes)
+                  if c is not None and start <= t < end]
+    except Exception:
+        return None, "its hourly bars could not be read"
+    if not inside:
+        return None, "the provider has no hourly bar with a close in it"
+    t, last = max(inside)
+    when = dt.datetime.fromtimestamp(
+        t, tz=dt.timezone.utc).strftime("%Y-%m-%d %H:%M")
+    if t < end - SESSION_TAIL_SECONDS:
+        return None, (f"its hourly bars stop with the one of {when} UTC, "
+                      f"more than {SESSION_TAIL_SECONDS // 3600} hours "
+                      f"before the daily bar ends")
+    return last, when
 
 
 def yahoo_close_on_or_before(symbol, date_str, window_days=14):
@@ -340,10 +448,45 @@ def check_facts(repo, today, rep, max_fetch):
         if dev <= tol:
             rep.add("OK", f"facts: {section}.{name} {recorded} vs live {live} "
                           f"({symbol} {live_date}, dev {dev:.2f}% <= {tol}%)")
+            continue
+        fail = (f"facts: {section}.{name} {recorded} vs live {live} "
+                f"({symbol} {live_date}, dev {dev:.2f}% > {tol}%) "
+                f"-- canonical table disagrees with market data")
+        start, kind = _bar_cache.get(symbol, (None, None))
+        if kind != CURRENCY or not recorded:
+            rep.add("FAIL", fail)
+            continue
+        # A currency pair: the daily bar just read closes where it opened,
+        # not where the session ended (the numbers are above
+        # yahoo_session_last). Its hourly bars are asked before the table is
+        # called wrong, under the field's own tolerance. That is one more
+        # request, and it is counted like any other.
+        if fetches >= max_fetch:
+            rep.add("FAIL", f"{fail}. A currency pair's daily bar is not "
+                            f"where its session ended, and its hourly bars, "
+                            f"which say where, were not asked for: fetch "
+                            f"cap {max_fetch} reached.")
+            continue
+        fetches += 1
+        last, when = yahoo_session_last(symbol, start)
+        if last is None:
+            # No close, so the second value is the reason there is none.
+            rep.add("FAIL", f"{fail}. A currency pair's daily bar is not "
+                            f"where its session ended, but nothing else "
+                            f"speaks for this session: {when}.")
+            continue
+        last_dev = abs(last - recorded) / recorded * 100
+        if last_dev <= tol:
+            rep.add("OK", f"facts: {section}.{name} {recorded} vs live {last} "
+                          f"({symbol} {live_date}, close of its last hourly "
+                          f"bar, {when} UTC, dev {last_dev:.2f}% <= {tol}%). "
+                          f"The daily bar's close {live} is {dev:.2f}% away: "
+                          f"a currency pair's daily bar is not where its "
+                          f"session ended.")
         else:
-            rep.add("FAIL", f"facts: {section}.{name} {recorded} vs live {live} "
-                            f"({symbol} {live_date}, dev {dev:.2f}% > {tol}%) "
-                            f"-- canonical table disagrees with market data")
+            rep.add("FAIL", f"{fail}. The session's last hourly bar, {when} "
+                            f"UTC, closed at {last}: {last_dev:.2f}% away as "
+                            f"well.")
 
     # computed spreads (arithmetic lint on the fact table itself)
     rates = facts.get("rates", {})
