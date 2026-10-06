@@ -33,6 +33,14 @@ Per-file conventions (byte-stability contract inherited from snapshot.py):
     (pre-IPO, halted, delisted) is ABSENT from "series" (no nulls) and listed
     in "missing" with reason "no bar for week of <date> (likely pre-IPO or
     not trading)". No interpolation, ever.
+  * --merge only adds (2026-10-06). A ticker named with --only goes into
+    each week on file that lacks it, stamped in "provenance.series" with
+    this run's fetch time. One a week already holds is left exactly as
+    committed and reported; a merge never writes over it, with or without
+    --force. A run that changes no file for that reason exits 2, and when
+    the files alone show there is nothing to add it stops before any
+    download, a dry run included. Before that date a named ticker was
+    re-fetched over its committed bar and the run exited 0.
 
 CLI:
   python backfill_weekly.py --out <data-root> [--start 2024-08-09]
@@ -342,6 +350,29 @@ def build_and_write(friday: date, tickers: list, history: dict,
 
 
 # ---------------------------------------------------------------------------
+def read_week(path: str, friday: date) -> dict:
+    """One weekly file, refused unless it is the week its name says it is.
+
+    Both readers of a week on file come through here: the merge, and the
+    plan that says what a merge will leave alone. Read without the check, a
+    file under another week's name answers for a week it is not, and the
+    plan would call a merge finished on the strength of the wrong bars."""
+    with open(path, "r", encoding="utf-8") as f:
+        try:
+            doc = json.load(f)
+        except ValueError as exc:
+            raise SystemExit(
+                "backfill: %s does not parse as JSON (%s) -- refusing to "
+                "merge into a file that cannot be read" % (path, exc))
+    as_of = doc.get("as_of") if isinstance(doc, dict) else None
+    if as_of != friday.isoformat():
+        raise SystemExit(
+            "backfill: %s has as_of %r, expected %s -- refusing to merge "
+            "into a file that is not the week it claims to be"
+            % (path, as_of, friday.isoformat()))
+    return doc
+
+
 def merge_into_existing(friday: date, tickers: list, history: dict,
                         path: str) -> dict:
     """Add tickers to an existing week without disturbing what is there.
@@ -351,34 +382,45 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     file: 287 series became 44 across 107 weeks. Merging is the operation
     that was actually wanted.
 
-    Existing series, the special-instrument blocks, and the file-level
-    source / fetched_at are left exactly as they were. Only the named
-    tickers are written, and each one is stamped in `provenance.series`
-    because it was fetched now and is therefore back-adjusted to a
-    different date than the rest of the file. The file-level anchor still
-    describes the majority of the series; the overrides describe the rest.
-    Restamping the file-level anchor would relabel every untouched series
-    with a fetch that never happened to it.
+    A merge adds, and that is all it does. A named ticker the week already
+    holds is left exactly as it is: its bar, its `provenance.series` stamp
+    if it has one, and `missing`. It comes back under "present". Until
+    2026-10-06 it was fetched again and written over the committed bar,
+    which the run logged as "refreshed". A fresh fetch is adjusted to a
+    later date, so it is another close for any name that has paid a
+    dividend or split since; the count of series does not move, and the
+    count is all panel_guard and CI compare. No committed bar was hit: the
+    two merge runs before that date (3a099f6, 5f0d596) named no ticker a
+    week already held. A close the provider has restated is a correction's
+    to carry (<date>.corrected.json, DATA_FEED.md sec.1), never this file's.
+
+    Every other series, the special-instrument blocks, and the file-level
+    source / fetched_at are left exactly as they were too. Each ticker that
+    is added is stamped in `provenance.series` because it was fetched now
+    and is therefore back-adjusted to a different date than the rest of the
+    file. The file-level anchor still describes the majority of the series;
+    the overrides describe the rest. Restamping the file-level anchor would
+    relabel every untouched series with a fetch that never happened to it.
+
+    With nothing to add and no new `missing` entry the file is not written
+    at all, and "changed" is False: its bytes stay the commit's.
     """
-    with open(path, "r", encoding="utf-8") as f:
-        doc = json.load(f)
-
-    if doc.get("as_of") != friday.isoformat():
-        raise SystemExit(
-            "backfill: %s has as_of %r, expected %s -- refusing to merge "
-            "into a file that is not the week it claims to be"
-            % (path, doc.get("as_of"), friday.isoformat()))
-
+    doc = read_week(path, friday)
     series = doc.setdefault("series", {})
-    prov_block = doc.setdefault("provenance", {})
-    prov = prov_block.setdefault("series", {})
 
     monday = friday - timedelta(days=4)
-    added: list = []
-    replaced: list = []
+    present: list = []
     absent: list = []
     fresh: dict = {}
     for t in tickers:
+        if t in series:
+            # Held already, so not this run's to touch. It is not sliced
+            # either: the provider keeps one bar of a delisted symbol, the
+            # last (AVB, EA), so such a name comes back with no bar for the
+            # week and would be listed in `missing` beside the bar the week
+            # still has for it.
+            present.append(t)
+            continue
         bar, _actual = slice_week(history.get(t, ([], [], [])),
                                   monday, friday)
         if bar is None:
@@ -390,37 +432,107 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     # indistinguishable in shape and rounding from a scanned one. Writing the
     # raw slice instead lands full float precision (179.94000244140625) beside
     # the panel's rounded closes.
-    for t, bar in snapshot._normalize_block(fresh).items():
-        (replaced if t in series else added).append(t)
-        series[t] = bar
-        prov[t] = {"source": BACKFILL_SOURCE, "fetched_at": RUN_TS}
+    merged = snapshot._normalize_block(fresh)
+
+    listed = {m.get("ticker") for m in doc.get("missing", [])}
+    unlisted = [t for t in absent if t not in listed]
+
+    rec = {"path": path, "doc": doc, "added": list(merged),
+           "present": present, "absent": absent,
+           "changed": bool(merged or unlisted)}
+    if not rec["changed"]:
+        return rec
+
+    if merged:
+        # Made only when there is a bar to stamp, and only its series part
+        # is touched: the block can also name the source of a rates
+        # instrument (US2Y from Treasury), which a merge must not erase.
+        prov = doc.setdefault("provenance", {}).setdefault("series", {})
+        for t, bar in merged.items():
+            series[t] = bar
+            prov[t] = {"source": BACKFILL_SOURCE, "fetched_at": RUN_TS}
 
     # `missing` stays honest in both directions: a ticker we just filled is
     # no longer missing, and one we could not fetch is listed with a reason
     # rather than silently absent.
-    filled = set(added) | set(replaced)
     missing = [m for m in doc.get("missing", [])
-               if m.get("ticker") not in filled]
-    listed = {m.get("ticker") for m in missing}
-    for t in absent:
-        if t not in listed:
-            missing.append({"ticker": t,
-                            "reason": MISSING_REASON % friday.isoformat()})
+               if m.get("ticker") not in merged]
+    for t in unlisted:
+        missing.append({"ticker": t,
+                        "reason": MISSING_REASON % friday.isoformat()})
     doc["missing"] = sorted(missing, key=lambda m: m.get("ticker") or "")
-
-    # Drop the per-series block if it ended up empty, and the provenance
-    # block only if nothing else lives in it: it can also name the source of
-    # a rates instrument (US2Y from Treasury), which a merge must not erase.
-    if not prov:
-        prov_block.pop("series", None)
-    if not prov_block:
-        doc.pop("provenance", None)
 
     with open(path, "w", encoding="utf-8", newline="") as f:
         f.write(snapshot.canonical_json(doc))
 
-    return {"path": path, "doc": doc, "added": added,
-            "replaced": replaced, "absent": absent}
+    return rec
+
+
+def held_already(weekly_dir: str, fridays: list, tickers: list) -> dict:
+    """{ticker: [the Fridays whose file already holds a bar for it]}, read
+    off the files as they stand. No network.
+
+    A --merge leaves exactly these alone (merge_into_existing). Reading them
+    first is what lets a dry run say so, and what stops a run that has
+    nothing to add before it downloads anything. A Friday with no file is
+    not looked at, and a file that is not its week is refused here as the
+    merge refuses it (read_week)."""
+    held: dict = {}
+    for friday in fridays:
+        path = os.path.join(weekly_dir, friday.isoformat() + ".json")
+        if not os.path.exists(path):
+            continue
+        series = read_week(path, friday).get("series") or {}
+        for t in tickers:
+            if t in series:
+                held.setdefault(t, []).append(friday)
+    return held
+
+
+def describe_held(held: dict, n_weeks: int) -> list:
+    """What a merge will leave alone, as lines for the log: tickers grouped
+    by how many of the n_weeks hold them, widest first. A ticker in only
+    some of the weeks is shown with its first and last, which is where a
+    name that joined the feed part-way begins."""
+    def span(t: str) -> str:
+        first, last = held[t][0], held[t][-1]
+        return ("%s (%s)" % (t, first) if first == last
+                else "%s (%s..%s)" % (t, first, last))
+
+    by_count: dict = {}
+    for t in sorted(held):
+        by_count.setdefault(len(held[t]), []).append(t)
+    lines = []
+    for count in sorted(by_count, reverse=True):
+        names = by_count[count]
+        if count == n_weeks:
+            lines.append("  in all %d week(s): %s"
+                         % (n_weeks, ", ".join(names)))
+        else:
+            lines.append("  in %d of %d week(s): %s"
+                         % (count, n_weeks, ", ".join(map(span, names))))
+    return lines
+
+
+# What a merge has to say for itself when it left a named ticker alone and
+# changed no file. It exits 2: until 2026-10-06 the same command re-fetched
+# that ticker over its committed bar and exited 0, so the run that now does
+# nothing instead must not read as one that did something. (A run that left
+# nothing alone and found nothing to add -- a pre-IPO name over weeks that
+# already list it in `missing` -- exits 0, as it always has.)
+#
+# The last line is for a name its base file holds and its correction does
+# not. It is not a way to restate a close: a correction is rebuilt from its
+# base, so an equity close changed in one by hand does not survive.
+NOTHING_MERGED_NEXT = (
+    "  --merge adds a ticker to a week that lacks it. A ticker a week\n"
+    "  already holds is left exactly as committed; nothing is written "
+    "over it.\n"
+    "  A close the provider has restated is never written over the bar in\n"
+    "  the weekly file. It is a correction's to carry (DATA_FEED.md sec.1),\n"
+    "  and no tool writes one for an equity bar yet.\n"
+    "  If a week's correction lacks a name its base file holds, the\n"
+    "  correction is stale: python scripts/rebuild_corrections.py")
 
 
 # ---------------------------------------------------------------------------
@@ -446,7 +558,9 @@ def main() -> int:
     ap.add_argument("--merge", action="store_true",
                     help="add --only tickers into existing weekly files, "
                          "preserving every other series and the file-level "
-                         "adjustment anchor")
+                         "adjustment anchor; a ticker a week already holds "
+                         "is left alone, never written over, and a run that "
+                         "changes no file for that reason exits 2")
     args = ap.parse_args()
 
     # The combination that emptied the panel on 2026-08-26. --force writes a
@@ -492,6 +606,44 @@ def main() -> int:
         else:
             mode = "will SKIP"
         log("%d files already exist (%s)" % (len(existing), mode))
+
+    # A merge adds and never replaces, so what it will leave alone is known
+    # from the files, before anything is fetched. Said here, in the plan,
+    # because the workflow's default is a dry run and this is what it shows.
+    if args.merge:
+        on_file = sorted(existing)
+        held = held_already(weekly_dir, on_file, tickers)
+        held_bars = sum(len(weeks) for weeks in held.values())
+        named = len(tickers) * len(on_file)
+        if held_bars:
+            log("already in the week, left alone: %d of the %d (ticker, "
+                "week) pair(s) named" % (held_bars, named))
+            for line in describe_held(held, len(on_file)):
+                log(line)
+            log("could be added, if the provider has a bar: %d pair(s)"
+                % (named - held_bars))
+        if args.force:
+            log("--force has no effect with --merge: a merge never rewrites "
+                "a week, and never a bar the week already holds")
+        if held_bars and held_bars == named:
+            # Nothing a fetch could add. Refused before the download, and in
+            # a dry run too: a plan that cannot do anything must not print
+            # as one. A Friday in the range with no file does not change
+            # that, since a run restricted with --only starts no week.
+            print("NOTHING TO MERGE: all %d named ticker(s) already have a "
+                  "bar in all %d week(s) on file from %s to %s. Nothing was "
+                  "downloaded and nothing was written."
+                  % (len(tickers), len(on_file), on_file[0], on_file[-1]))
+            no_file = [f.isoformat() for f in fridays if f not in existing]
+            if no_file:
+                shown = ", ".join(no_file[:5])
+                if len(no_file) > 5:
+                    shown += " and %d more" % (len(no_file) - 5)
+                print("  %d Friday(s) in the range have no file (%s). A run "
+                      "restricted with --only adds to weeks that exist and "
+                      "cannot start one." % (len(no_file), shown))
+            print(NOTHING_MERGED_NEXT)
+            return 2
     if args.dry_run:
         log("dry-run: no downloads, no writes. First 3 Fridays: %s; "
             "last 3: %s"
@@ -504,7 +656,7 @@ def main() -> int:
     history = download_equity_history(
         tickers, fridays[0], fridays[-1])
 
-    written = skipped = 0
+    written = skipped = unchanged = left_alone = 0
     missing_counts: list = []
     ticker_missing: dict = {t: 0 for t in tickers}
     notes: list = []
@@ -519,12 +671,19 @@ def main() -> int:
                 if m.get("ticker") in ticker_missing:
                     ticker_missing[m["ticker"]] += 1
             missing_counts.append(n_missing)
-            written += 1
-            log("  (%3d/%d) %s merged +%d new, %d refreshed, %d absent "
-                "-> series=%d"
+            # A week with nothing to add is not rewritten, so it is not
+            # counted as written either.
+            if rec["changed"]:
+                written += 1
+            else:
+                unchanged += 1
+            left_alone += len(rec["present"])
+            log("  (%3d/%d) %s merged +%d new, %d already present (left "
+                "alone), %d absent -> series=%d%s"
                 % (n, len(fridays), friday, len(rec["added"]),
-                   len(rec["replaced"]), len(rec["absent"]),
-                   len(doc.get("series", {}))))
+                   len(rec["present"]), len(rec["absent"]),
+                   len(doc.get("series", {})),
+                   "" if rec["changed"] else " [file unchanged]"))
             continue
         if os.path.exists(path) and not args.force:
             skipped += 1
@@ -576,10 +735,10 @@ def main() -> int:
     median = mc[len(mc) // 2] if mc else 0
     chronic = sorted(t for t, c in ticker_missing.items()
                      if c > len(fridays) / 2)
-    print("SUMMARY: files_written=%d files_skipped=%d fridays=%d "
-          "missing_per_file[min=%d median=%d max=%d] "
+    print("SUMMARY: files_written=%d files_unchanged=%d files_skipped=%d "
+          "fridays=%d missing_per_file[min=%d median=%d max=%d] "
           "chronic_missing(>50%%)=%d %s"
-          % (written, skipped, len(fridays),
+          % (written, unchanged, skipped, len(fridays),
              mc[0] if mc else 0, median, mc[-1] if mc else 0,
              len(chronic),
              ("-> " + ", ".join(chronic)) if chronic else ""))
@@ -592,6 +751,19 @@ def main() -> int:
         for t in chronic:
             print("  %s: missing %d/%d weeks"
                   % (t, ticker_missing[t], len(fridays)))
+    if left_alone:
+        print("ALREADY PRESENT: %d bar(s) named in --only were in their "
+              "week already and were left alone (listed in the plan above)."
+              % left_alone)
+    # The fetch found nothing to add either. That is what running a finished
+    # backfill's command a second time looks like: BACKFILL_44.md's has 43
+    # names in every week and SPCX, which has no bar before its IPO.
+    nothing_merged = bool(left_alone) and not written
+    if nothing_merged:
+        print("NOTHING MERGED: no file was changed. In every week on file, "
+              "each named ticker was there already, or has no bar for the "
+              "week and is in `missing` already.")
+        print(NOTHING_MERGED_NEXT)
     if refused:
         # A refusal is a correct outcome and still not "done": exit 2, so a
         # run that left a week unwritten never reads as one that wrote it.
@@ -599,7 +771,7 @@ def main() -> int:
         for s in refused:
             print("  " + s)
         return 2
-    return 0
+    return 2 if nothing_merged else 0
 
 
 if __name__ == "__main__":
