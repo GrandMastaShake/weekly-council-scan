@@ -35,11 +35,36 @@ belong in the markdown table.
     python -m pytest -q                          # the whole suite, green
     python scripts/truth_check.py --repo . --feed
 
-CI runs all three on every push and PR, plus a panel-regression check that
-fails if any weekly file lost series against the previous commit. The suite
-needs no network: `tests/conftest.py` stubs the market-data provider, because
-a test suite that needs a provider to run is a test suite that does not get
-run.
+CI runs all three on every push and PR, plus the panel check:
+`scripts/panel_guard.py --against <commit>` fails when a file of
+`data/weekly` or `data/daily` no longer holds what it held -- a file or a bar
+gone, a bar changed, a label or a file stamp changed ("The backfill", below,
+has the rule). A pull request is compared with its base and a push with the
+tip it replaced, so every commit of a push is covered and not only the last.
+New weeks and new names pass. The step runs whether or not the tests before
+it passed: a push is compared once, by its own run, and the next push starts
+from the new tip. On 2026-09-25 the push of that week's file failed at Tests
+and the panel step was skipped with the feed gate; nothing came back for it.
+
+Three limits. CI does not run on what a workflow pushes (a push made with the
+workflow token starts none), so the backfill and the daily job each run the
+guard themselves before they commit. A run that is cancelled, or never
+starts, compares nothing, and no later run makes up for it. And `main` is not
+protected: a red run reports, it does not block.
+
+The suite needs no network: `tests/conftest.py` stubs the market-data
+provider, because a test suite that needs a provider to run is a test suite
+that does not get run. `tests/test_panel_guard.py` runs the workflow steps
+that call the guard under bash (on Windows, the one that ships with Git) and
+skips those tests where there is none.
+
+**Do not run the suite from a git hook or `git rebase --exec` and trust what
+git puts in the environment.** There git exports `GIT_DIR`, and in a linked
+worktree no work tree with it. Several tests build throwaway repositories
+with `git init`, `git add -A` and `git commit`; with `GIT_DIR` inherited they
+did that to the repository being rebased, and `panel_guard --against` read
+the wrong tree and passed having compared nothing. `conftest.py` and the
+guard both drop those variables now, and a test fails if either stops.
 
 ## The data contract
 
@@ -312,6 +337,15 @@ keeps the rest.
   has no file. It names the `--since` command that recovers them. Offline,
   `truth_check --feed` WARNs when the newest daily file is two or more
   weekdays old; it knows no holidays, so it never fails.
+- **The job adds a file and changes none, and checks that before it
+  commits.** `panel_guard.py --against HEAD` compares the files on disk with
+  the commit the run started from, first of its gates: a new session passes,
+  and a file already committed that the run changed, relabelled or removed
+  fails it. CI cannot do this for it, because CI never runs on this job's
+  commit. The script refuses a session that is on file unless it is given
+  `--force`, which the workflow never passes; this step is what says so if
+  that ever stops being true. A failure means no commit, and the session is
+  recovered like any other the audit names.
 - **Neither attempt is late enough for the futures.** WTI, WTI_NEXT, GOLD,
   SILVER, DXY and US2Y_FUT trade past the cash close and are not read before
   13:00 UTC on the day after the session (Known data defects, below). 21:45
@@ -677,6 +711,21 @@ refused once with nothing asking again.
   chain at that roll; `GC=F` fails that today. `--unavailable` records a
   week nothing can supply, and `--check` compares what is committed with the
   provider. `DATA_FEED.md` sec.1d has all of it.
+- **Bars that were changed in place.** Four commits on main changed what a
+  panel file held, all from before the guard compared bars (2026-10-06).
+  `87dba89` (2026-08-16) changed three volumes in 2026-08-14.json (ALL, LOW,
+  PGR) and `0bcb75f` (2026-08-29) one in 2026-08-28.json (VTR, 1916834 to
+  1916830), each a hand transcription put right against the runner's copy.
+  `6260495` is the 2026-08-26 incident and `2a0f0dd` its revert. No close
+  was changed by any of them, and every other commit that touched a file on
+  main through 2026-10-06 only added to it, the five merges into existing
+  weeks among them.
+  `5e04b91` rewrote the 13 daily files 17 minutes after `b3def63` first
+  wrote them, on the branch of #93, so main never held the earlier form.
+  Found by comparing every commit that touched `data/weekly` or `data/daily`
+  with its parent. Nothing is undone: the files as they stand are what every
+  reader has had since. The guard has no memory of this; it compares a push
+  with the tip it replaced.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
@@ -693,6 +742,62 @@ because it writes committed files. It chains `rebuild_corrections.py`,
 `panel_guard.py --compare` and `truth_check.py --repo . --feed`, and any of the
 three failing stops the run before the commit step.
 
+**What a week on file gets depends on what was dispatched.** Named tickers
+are added to it (`--merge`). With `tickers` blank it is skipped, and only the
+weeks that have no file are written. It is rewritten whole (`--force`) only
+when `rewrite` is ticked, which is off by default and refused beside a ticker
+list. Until 2026-10-06 a blank `tickers` meant `--force` by itself, so the one
+way to write a missing week was also the way to rewrite every other.
+
+**What a panel file held, it still holds.** `scripts/panel_guard.py` records
+every file's bars before the write and compares after it. For each file of
+`data/weekly` and `data/daily` that was there: the file is still there; every
+entry it had in `series`, `rates`, `vol`, `commodities` and `fx` is still
+there with the same close and volume; each still has the label it had
+(`provenance.<block>.<ticker>`, or none); and the file's `source`,
+`fetched_at` and `session_note` are unchanged. New weeks and new names pass.
+Values are compared, not bytes. Corrections are held to it too, with one
+allowance: an instrument a correction newly records in `restated` may change
+there, which is what a restatement is.
+
+The first guard counted series per file, and CI carried its own copy of the
+count. A count does not move when a bar is written over or when one name
+replaces another, and CI's copy, which looped over the files still there,
+passed a deleted file as well. The rehearsal below, run again on 2026-10-06
+(the 4,612 bars changed and restamped on a copy of the panel, corrections
+rebuilt), fails the guard now: 4,656 bars and as many labels in 108 files,
+the 2026-08-21 correction's copies among them.
+
+**A rewrite is declared, and may not lose a bar.** Dispatched with `rewrite`,
+the workflow passes `--force` to the backfill and `--rewrite <start> <end>`
+to the guard. Inside that range a weekly file's bars, labels and stamps may
+change, and the guard prints how many did. Outside it the rule holds, and an
+entry that vanished fails either way. The commit is titled REWRITE. On
+today's panel a rewrite of the history would stop there:
+`equity_universe()` no longer fetches AVB, EA and EQR, which hold 314 bars in
+the weekly files, and a commodity whose contract has expired is listed in
+`missing` instead (`DATA_FEED.md` sec.1d). No flag lets a bar go.
+
+**The same comparison runs in CI and in the daily job**, as
+`panel_guard.py --against <commit>`, and takes no `--rewrite` there: a commit
+that changes what the panel held fails CI whatever it says about itself, a
+revert of a bad write included. So do two things a correction can need: one
+more zero-volume drop in a correction that exists, and withdrawing one. Each
+goes in over a red check, by someone who has read why. What it does not reach
+is the runner. The weekly job's gate line is `truth_check --feed --derive`,
+and `snapshot.write_weekly` writes over a week that is on file without a
+word; only the job's prompt says not to. CI sees such a push once it is on
+main.
+
+**What the guard does not say.** It compares a file with what that same file
+held. A new file held nothing, so a NEW correction is not compared with its
+base: that its series are its base's, bar for bar, is
+`tests/test_instrument_sessions.py`'s to say, for `data/weekly` only, and
+nothing says it for a daily correction (there is none). And a "before" with
+no panel file in it is refused, not passed: `--against` on a scratch copy the
+commit does not track used to print "0 file(s) before" and OK. A copy of the
+panel is rehearsed with `--snapshot` and `--compare`.
+
 **Named tickers are ADDED with `--merge`, never `--force`.** `--force` writes a
 whole file from the ticker set it was given, so with `--only` it deletes every
 other series: on 2026-08-26 that emptied 107 files, 287 series down to 44, and
@@ -706,7 +811,8 @@ read off the files, not the provider. Until 2026-10-06 such a ticker was
 fetched again and written over the committed bar, and the run logged it as
 "refreshed" and exited 0. A fresh fetch is adjusted to a later date, so it is
 another close for any name that has paid a dividend or split since, and the
-count of series does not move, which is all `panel_guard` and CI compare.
+count of series does not move, which was all `panel_guard` and CI compared
+until then.
 
 **No merge run has hit a committed bar.** Every commit that touched
 `data/weekly` was compared with its parent: the two merge runs (`3a099f6`,
@@ -721,7 +827,7 @@ of `2024-08-09.json`, the four renamed names) were compared the same way:
 44 have in the 107 base files, 4,612 of them. Rehearsed on a copy of the
 panel with the provider stubbed (2026-10-06), it wrote over all of them and
 exited 0, and `rebuild_corrections`, `panel_guard` and `truth_check --feed`
-all passed the result.
+all passed the result. The guard was the count then.
 
 A merge run that changes no file and left a named ticker alone exits 2,
 which stops the workflow before its commit step: before any download when
@@ -778,7 +884,9 @@ moving one breaks his skill silently; update
   `Watchlist_110_Weekly_History_1Year.xlsx` is price-only where this panel is
   total-return adjusted (`yfinance auto_adjust=True`). It is useful as an
   independent cross-check and unusable as a source.
-- Edit a committed weekly file.
+- Edit a committed weekly or daily file. `panel_guard.py` fails a bar, a
+  label or a file stamp that changed, and a bar or a file that is gone: in
+  the backfill, in CI and in the daily job.
 - Write a fresh fetch over a bar a week already holds. `--merge` leaves it
   alone and says so; a restated close goes in `<date>.corrected.json`.
 - Merge a renamed symbol into a week that holds its old one. For VMRK that
@@ -787,6 +895,10 @@ moving one breaks his skill silently; update
   `--merge` adds them without a word, and a bar added to a week is never
   taken out. The first, `2024-08-09.json`, holds neither and takes no VMRK
   either (Universe vs focus set).
+- Tick `rewrite` on the backfill to add names or to fill a week that has no
+  file. It writes every week on file in the range again, whole. Leave it
+  off: named tickers are merged, and a blank list writes only what is
+  missing.
 - Invent a close to fill a gap. Use `missing` with a reason.
 - Read `rates.US2Y` straight from a weekly file, or let `US2Y_FUT` stand in
   for it. Go through `snapshot.cash_2y_series`; a gap stays a gap.

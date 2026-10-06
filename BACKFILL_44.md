@@ -82,7 +82,10 @@ each". That was wrong, and it is the sentence that emptied the panel.**
 `--only` with `--force` outright and names this incident when it does.
 
 `--force` is still correct for its actual purpose: a full-universe rewrite with
-no `--only`, where writing each whole file is the operation you want.
+no `--only`, where writing each whole file is the operation you want. Since
+2026-10-06 the workflow passes it only when dispatched with `rewrite` ticked,
+and tells the guard which weeks were declared; a blank `tickers` without it
+writes only the weeks that have no file (CLAUDE.md, "The backfill").
 
 ## Rebuild corrections -- REQUIRED, do not skip
 
