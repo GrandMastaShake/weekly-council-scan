@@ -81,7 +81,11 @@ The parts that get violated:
   what the agents fill in from priors. `truth_check --feed` warns where the
   panel itself can tell: a week with neither a bar nor a `missing` entry for
   an index or sector ETF, or for a name an earlier and a later week both
-  carry.
+  carry. And it fails a `missing` that is not a list of `{"ticker",
+  "reason"}` entries, both strings that say something (2026-10-06), in every
+  weekly and daily file. An entry with no reason records nothing, and typed
+  in by hand it is how a name gets past every check that counts a listed
+  ticker as accounted for.
 - **`fetched_at` is UTC and real.** It is also the adjustment anchor: adjusted
   closes are back-adjusted to the fetch date, so downstream consumers use it to
   detect stale splices.
