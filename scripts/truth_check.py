@@ -2302,10 +2302,29 @@ def check_config(repo, rep):
     files = sorted(weekly.glob("*.json")) if weekly.is_dir() else []
     files = [f for f in files if "corrected" not in f.name]
     if files and expected_names:
-        doc = json.loads(files[-1].read_text(encoding="utf-8"))
-        series = set(doc.get("series") or {})
-        declared_missing = {m.get("ticker") for m in (doc.get("missing") or [])}
-        absent = expected_names - series - declared_missing
+        # A file this cannot read is --feed's to describe. Here it is a FAIL
+        # and not a traceback: CI runs --feed --config in one call, and a
+        # crash at this line loses every line --feed had already collected.
+        doc = None
+        try:
+            doc = json.loads(files[-1].read_text(encoding="utf-8"))
+            if not isinstance(doc, dict):
+                raise ValueError("not a JSON object")
+        except (OSError, ValueError) as exc:
+            doc = None
+            rep.add("FAIL", f"config: cannot read {files[-1].name} ({exc}), "
+                            f"so the newest week is not known to account for "
+                            f"the feed")
+        absent = set()
+        if doc is not None:
+            series = doc.get("series")
+            series = set(series) if isinstance(series, dict) else set()
+            declared = doc.get("missing")
+            declared_missing = {m.get("ticker")
+                                for m in (declared
+                                          if isinstance(declared, list) else [])
+                                if isinstance(m, dict)}
+            absent = expected_names - series - declared_missing
         if absent:
             rep.add("FAIL", f"config: {files[-1].name} has no bar and no "
                             f"`missing` entry for {_name_list(absent)}, which "

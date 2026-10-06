@@ -103,6 +103,20 @@ def test_the_weekly_writer_reads_the_feed_constant_not_a_copy(monkeypatch):
     assert "JOINED_LATER" in snapshot.equity_universe()
 
 
+def test_universe_json_does_not_follow_the_feed(tmp_path):
+    """build_universe() keeps its own, narrower set on purpose. universe.json
+    mirrors wiki/universe.md, which lists stocks: the engines' set and the 44
+    fed beside it, and not the sixteen ETFs or the watchlist's BTC and GLD.
+    "One function for the feed" is a rule for the two price writers."""
+    wiki = tmp_path / "wiki"
+    wiki.mkdir()
+    doc = snapshot.build_universe(str(wiki), str(tmp_path / "universe.json"),
+                                  enrich=False)
+    names = {e["t"] for e in doc["tickers"]}
+    assert names == set(t.STOCK_UNIVERSE) | set(t.BACKFILL_44_TICKERS)
+    assert not names & {"BTC", "GLD", "SPY", "XLK"}
+
+
 def test_council_watchlist_is_the_owners_111():
     """Council v2's universe: the owner's list, which is the focus set's 109
     stocks plus two macro ETFs. Stocks keep their heatmap/wiki sector."""
@@ -370,6 +384,37 @@ def test_gate_reads_the_base_file_of_a_corrected_newest_week(tmp_path,
     rep = run_gate(fake.root)
     assert rep.counts["FAIL"] == 1, rep.render()
     assert "2026-09-11.json has no bar" in rep.render()
+
+
+def test_gate_fails_cleanly_on_a_newest_week_it_cannot_read(tmp_path,
+                                                            monkeypatch):
+    """CI and the daily job run --feed --config in one call. A traceback
+    here would lose every line --feed had collected about the same file."""
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"])
+    for label, body in (("not_json", "{ this is not json"),
+                        ("a_list", "[1, 2, 3]")):
+        root = tmp_path / label
+        (root / "data" / "weekly").mkdir(parents=True)
+        (root / "CLAUDE.md").write_text("none", encoding="utf-8",
+                                        newline="\n")
+        (root / "data" / "weekly" / "2026-09-11.json").write_text(
+            body, encoding="utf-8", newline="\n")
+        rep = run_gate(root)
+        assert rep.counts["FAIL"] == 1, rep.render()
+        assert "cannot read 2026-09-11.json" in rep.render()
+        assert rep.counts["OK"] == 0
+
+
+def test_gate_survives_a_malformed_missing_list(tmp_path, monkeypatch):
+    """A bare string where an entry belongs is --feed's finding. It must not
+    stop this check from saying what is absent."""
+    doc = week(["AAA"])
+    doc["missing"] = ["GLD", {"ticker": "BTC", "reason": "no bar"}]
+    fake = FakeRepo(tmp_path, "none", weekly_doc=doc)
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC", "GLD"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "for ['GLD']" in rep.render()
 
 
 def test_gate_shortens_a_long_list_of_names(tmp_path, monkeypatch):

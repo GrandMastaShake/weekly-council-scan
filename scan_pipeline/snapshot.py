@@ -1812,6 +1812,10 @@ def build_universe(wiki_dir: str, out_path: str, enrich: bool = True,
     sibling (never invented). as_of/next_review use the real build clock:
     universe.json is a build artifact, not a pure derivation.
     """
+    # Not equity_universe(), on purpose. universe.json mirrors
+    # wiki/universe.md, which lists stocks. The feed is wider by the sixteen
+    # index and sector ETFs and by the Council watchlist's BTC and GLD, and
+    # none of those is a universe row.
     tickers = sorted(set(tickers)) if tickers else sorted(
         set(STOCK_UNIVERSE) | set(BACKFILL_44_TICKERS))
     refs = _grep_wiki_refs(wiki_dir, tickers)
