@@ -39,7 +39,11 @@ Modes:
                 sections (their $ figures are not current prices).
   --quarantine  Phantom-anomaly bans from macro/quarantine.json (ticker +
                 banned value co-occurring = FAIL) plus a generic phantom-EPS
-                net (EPS claim > 20% of same-row share price = FAIL).
+                net (EPS claim > 20% of same-row share price = FAIL). The
+                price is the first other "$d.dd" figure on the row, never
+                the EPS figure itself, which failed whatever it was (#120:
+                "$31.45 EPS vs $31.45 price"). It can still be an estimate
+                or a target and not a share price; that is not decided.
   --counterfactuals
                 Counterfactual-ledger staleness (NEW in v5, no network):
                 scans shadow-book.md, rejections.md, exit-shadow.md,
@@ -788,7 +792,8 @@ def check_quarantine(repo, rep):
       [{"ticker": "GOOGL", "banned": "9.11", "reason": "...", "added": "..."}]
     A line containing BOTH the ticker and the banned string = FAIL.
     Also runs a generic phantom-EPS net: a $X EPS claim inside a table row is
-    absurd when X exceeds 20% of the share price shown in the same row."""
+    absurd when X exceeds 20% of the share price shown in the same row. The
+    price is the first other $d.dd figure on the row."""
     qpath = repo / "macro" / "quarantine.json"
     entries = []
     if qpath.exists():
@@ -819,8 +824,24 @@ def check_quarantine(repo, rep):
             # generic phantom-EPS net (table rows only)
             if line.strip().startswith("|"):
                 em = EPS_CLAIM_RE.search(line)
-                pm = PRICE_RE.search(line)
-                if em and pm:
+                # The price is another figure on the row. PRICE_RE matches
+                # the EPS figure too, and one read as its own price fails
+                # whatever it is: X is more than 20% of X. On 2026-09-28
+                # that was semiconductors.md:123 and :156, MU's consensus
+                # "~$31.45 EPS" on a stock that had closed at 1,082.28,
+                # reported as "$31.45 EPS vs $31.45 price" (#120). In every
+                # version of the wiki through 2026-10-06 the net compared
+                # 17 rows, and in 9 the price was the EPS figure. What it
+                # reads instead can still be an estimate or a target rather
+                # than a share price. That is as it was, and not decided.
+                pm = None
+                if em:
+                    for cand in PRICE_RE.finditer(line):
+                        if cand.start() < em.end() and em.start() < cand.end():
+                            continue
+                        pm = cand
+                        break
+                if pm:
                     eps = float(em.group(1).replace(",", ""))
                     price = float((pm.group(1) or pm.group(2)).replace(",", ""))
                     if price > 0 and eps > price * 0.20:

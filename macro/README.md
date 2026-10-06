@@ -36,6 +36,11 @@ moved since Saturday), the wiki says so explicitly — it never silently diverge
   ghost free to re-enter next week.
 - `truth_check.py --quarantine` also runs a generic net: a `$X EPS` claim inside a
   table row is flagged when X exceeds 20% of the share price in the same row.
+  The price is the first other `$d.dd` figure on the row. Until 2026-10-06 it
+  could be the EPS figure itself, which fails whatever it is: on 2026-09-28 two
+  rows citing Micron's consensus read "$31.45 EPS vs $31.45 price" (issue #120).
+  It can still be an estimate or the reported number and not a share price
+  ("$2.04 EPS vs $1.60 est" fails); that is not decided.
 
 ## truth_check.py (scripts/)
 
