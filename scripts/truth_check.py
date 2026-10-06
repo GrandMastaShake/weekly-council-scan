@@ -96,6 +96,14 @@ Modes:
                 is simply not there. A WARN: the fix is a fetch
                 (backfill_weekly.py --merge), and the file cannot be
                 edited meanwhile.
+                FAILs a weekly file that holds one company under two
+                symbols of a rename on record (RENAMED_SYMBOLS): the
+                provider serves the old symbol's bars under the new one,
+                so one of the two is the other's bar a second time. WARNs
+                when no file holds both but the new symbol has a bar in a
+                week not after the old one's last. A week that holds a
+                company under one symbol is not asked for another, here
+                or in the newest-week check.
                 Also WARNs when data/daily/ has stopped being written: the
                 newest daily file two or more weekdays behind the last
                 weekday before today. Never a FAIL -- an observation feed
@@ -2032,6 +2040,33 @@ INDEX_AND_SECTOR_ETFS = (
     "XLY", "XLI", "XLB", "XLRE", "XLU", "XLC",
 )
 
+# Renamed in place, old symbol -> the symbol the company trades under now:
+# RENAMED in scan_pipeline/config/tickers.py. Repeated for the same reason as
+# the sixteen above, and tests/test_renamed_symbols.py holds the two equal.
+RENAMED_SYMBOLS = {"BK": "BNY", "MMC": "MRSH", "PEAK": "DOC", "EQR": "VMRK"}
+
+
+def _companies(renamed):
+    """{symbol: every symbol its company has traded under, itself included},
+    for each symbol a rename names."""
+    group = {}
+    for old, new in renamed.items():
+        merged = group.get(old, {old}) | group.get(new, {new})
+        for symbol in merged:
+            group[symbol] = merged
+    return {symbol: frozenset(members) for symbol, members in group.items()}
+
+
+def _traded(series):
+    """The names of `series` whose bar has trades behind it. A close on
+    volume 0 or none is a print, not a bar: AVB's two under a dead symbol
+    are that (2026-08-21, 2026-08-28), and so is what a feed that still asks
+    for a renamed company's old symbol may be handed. A print does not hold
+    a week for a company. scripts/backfill_weekly.py reads it the same way
+    (real_bar)."""
+    return {ticker for ticker, bar in series.items()
+            if isinstance(bar, dict) and bar.get("volume")}
+
 
 def check_silent_absence(repo, rep):
     """A week has a bar or a `missing` entry for every name it should hold.
@@ -2075,15 +2110,25 @@ def check_silent_absence(repo, rep):
     out any name the writer fetches. Nothing knows what the first week
     should have held. Weekly only: daily sessions are recovered out of
     order, each with the universe of the day it was recovered.
+
+    A week that holds a company under another of its symbols has the
+    company (RENAMED_SYMBOLS, above), and is not asked for this one. Asked,
+    it would be told to merge it in: with a VMRK bar in 2024-08-09.json
+    this printed the --merge command for each of the 105 weeks that hold
+    EQR, which is the merge check_renamed_symbols fails. That bar is still
+    reported, there, as symbols that interleave. A print with no volume
+    behind it does not hold the week (_traded).
     Pure stdlib, no network.
     """
     weekly = repo / "data" / "weekly"
     if not weekly.is_dir():
         return
+    companies = _companies(RENAMED_SYMBOLS)
 
     def held(path):
-        """(names with a bar, names with a bar or a `missing` entry), or
-        None for a file check_feed has already refused."""
+        """(names with a bar, names with a bar or a `missing` entry, names
+        whose bar has trades behind it), or None for a file check_feed has
+        already refused."""
         try:
             doc = json.loads(path.read_text(encoding="utf-8"))
         except (ValueError, OSError):
@@ -2097,9 +2142,10 @@ def check_silent_absence(repo, rep):
         listed = {m.get("ticker") for m in missing
                   if isinstance(m, dict) and isinstance(m.get("ticker"), str)} \
             if isinstance(missing, list) else set()
-        return set(series), set(series) | listed
+        return set(series), set(series) | listed, _traded(series)
 
-    weeks = []      # (week, file read, carried, accounted for, ... by its base)
+    # (week, file read, carried, accounted for, ... by its base, traded)
+    weeks = []
     for f in sorted(weekly.glob("*.json")):
         if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem):
             continue            # a correction, or a name check_feed refuses
@@ -2109,21 +2155,22 @@ def check_silent_absence(repo, rep):
         if seen is None:
             continue
         base = seen if read is f else held(f) or seen
-        weeks.append((f.stem, read.name, seen[0], seen[1], base[1]))
+        weeks.append((f.stem, read.name, seen[0], seen[1], base[1], seen[2]))
     if not weeks:
         return
 
     first, last = {}, {}    # ticker -> the first / last week that carries it
-    for i, (_, _, carried, _, _) in enumerate(weeks):
+    for i, (_, _, carried, _, _, _) in enumerate(weeks):
         for ticker in carried:
             first.setdefault(ticker, i)
             last[ticker] = i
 
     holes = 0
-    for i, (week, name, _, accounted, in_base) in enumerate(weeks):
+    for i, (week, name, _, accounted, in_base, traded) in enumerate(weeks):
         expected = set(INDEX_AND_SECTOR_ETFS)
         expected.update(t for t in first if first[t] < i < last[t])
-        absent = sorted(expected - accounted)
+        absent = sorted(t for t in expected - accounted
+                        if not companies.get(t, frozenset()) & traded)
         if not absent:
             continue
         holes += 1
@@ -2159,6 +2206,135 @@ def check_silent_absence(repo, rep):
                       f"`missing` entry for every name it should hold (the "
                       f"index and sector ETFs, and any name carried by an "
                       f"earlier and a later week)")
+
+
+def check_renamed_symbols(repo, rep):
+    """One company, one symbol a week. Pure stdlib.
+
+    The provider serves a renamed company's whole history under the symbol
+    it trades by now. So a merge that names the new symbol for a week that
+    holds the old one adds the old one's own bar a second time, adjusted to
+    another fetch date: rehearsed on a copy of the panel on 2026-10-06,
+    `backfill_weekly.py --only VMRK --merge` over the 105 weeks that hold
+    EQR exited 0 and every check in this file passed the result. Nothing
+    takes a bar out of a week again.
+
+      FAIL  a weekly file holds two symbols of one rename, each with a bar
+            that has trades behind it. One of the two is the other's bar.
+      WARN  no file holds both, but the new symbol has a bar in a week that
+            is not after the old symbol's last: the symbols interleave.
+            Nothing is doubled. A merge does not write this, a whole-week
+            write from today's universe can, and the file is not edited
+            afterwards, so it is said and nothing is stopped.
+
+    scripts/backfill_weekly.py refuses both merges itself. This is for every
+    other way a week can come to hold them: the mirror of that script under
+    scan_pipeline/, which nothing invokes (CLAUDE.md, "Known data
+    defects"), a file built by hand, a writer that does not exist yet.
+
+    Where the FAIL runs and what it stops: the backfill workflow (its
+    commit), CI (the pull request), the daily job (that day's commit) and
+    the weekly job's gate on the runner (that week's push). It is meant to
+    be met before a commit. No committed week holds both symbols of a
+    rename, and the weekly job cannot write one, since its universe holds
+    the new symbols only. A file is judged under its own name, a correction
+    as well as its base; the spans behind the WARN are the bases'. Weekly
+    only: nothing merges into a daily file.
+
+    The FAIL is read by whoever met it, and for a job that is an agent told
+    to fix every FAIL before it pushes. A bar cannot be fixed out of a file,
+    so the line says what not to do before it says anything else, and has a
+    sentence for each place the file can be: on main with both symbols, on
+    main with one, and not on main at all.
+    """
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        return
+    companies = sorted(set(_companies(RENAMED_SYMBOLS).values()), key=sorted)
+    named = set(RENAMED_SYMBOLS) | set(RENAMED_SYMBOLS.values())
+    files = 0
+    doubled = {}        # (the symbols held together) -> the files that do
+    held = {}           # symbol -> the base weeks with a traded bar for it
+    for f in sorted(weekly.glob("*.json")):
+        try:
+            doc = json.loads(f.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            continue                # check_feed has already refused it
+        series = doc.get("series") if isinstance(doc, dict) else None
+        if not isinstance(series, dict):
+            continue
+        files += 1
+        traded = _traded(series)
+        for company in companies:
+            both = tuple(sorted(company & traded))
+            if len(both) > 1:
+                doubled.setdefault(both, []).append(f.name)
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem):
+            for symbol in traded & named:
+                held.setdefault(symbol, []).append(f.stem)
+
+    # One line a company, not one a file: on the copy of 2026-10-06 that was
+    # 105 files, and whoever reads this needs the first sentence, once.
+    for both, names in sorted(doubled.items()):
+        renames = ", ".join(f"{old} -> {new}"
+                            for old, new in RENAMED_SYMBOLS.items()
+                            if old in both or new in both)
+        rep.add("FAIL", f"feed: {len(names)} weekly file(s) hold "
+                        f"{' and '.join(both)} in `series`: one company "
+                        f"under two symbols ({renames}). Do not delete a "
+                        f"bar, do not edit a file and do not push one. Look "
+                        f"at main first, file by file. Where main's copy "
+                        f"holds both symbols too, nothing here mends it and "
+                        f"the owner decides. Where main's copy holds one, "
+                        f"this copy is not main's: in a git checkout, "
+                        f"discard the uncommitted change to that file alone "
+                        f"(`git checkout -- data/weekly/<file>`); on the "
+                        f"weekly job's runner, stop and report, because that "
+                        f"copy of data/weekly is brought up to main's whole "
+                        f"and by hand. Where main has no such file, this "
+                        f"run wrote it: stop and report, because the feed "
+                        f"is naming both symbols. The provider serves the "
+                        f"old symbol's bars under the new one, so one of "
+                        f"these is the other's bar from a later fetch, and "
+                        f"`scripts/backfill_weekly.py --merge` refuses to "
+                        f"add it (DATA_FEED.md sec.1, \"One company, one "
+                        f"symbol a week\"). The files, each one whose "
+                        f"`series` has both: {_listing(names)}.")
+
+    interleaved = 0
+    for old in sorted(RENAMED_SYMBOLS):
+        new, seen = RENAMED_SYMBOLS[old], {old}
+        while new is not None and new not in seen:
+            seen.add(new)
+            if old in held and new in held:
+                last = held[old][-1]
+                early = [week for week in held[new]
+                         if week <= last and week not in held[old]]
+                if early:
+                    interleaved += 1
+                    rep.add("WARN", f"feed: {new} has a bar in "
+                                    f"{len(early)} week(s) not after "
+                                    f"{old}'s last, {last}: "
+                                    f"{_listing([w + '.json' for w in early])}. "
+                                    f"{old} was renamed {new}, and the "
+                                    f"symbols of one company do not "
+                                    f"interleave: what the provider serves "
+                                    f"under {new} for those weeks is "
+                                    f"{old}'s bar. No week holds both, so "
+                                    f"nothing is doubled, and a committed "
+                                    f"file is not edited: this line is the "
+                                    f"record. Do not merge {new} into the "
+                                    f"weeks between, and do not merge "
+                                    f"{old} at all. `scripts/"
+                                    f"backfill_weekly.py --merge` refuses "
+                                    f"both (DATA_FEED.md sec.1, \"One "
+                                    f"company, one symbol a week\").")
+            new = RENAMED_SYMBOLS.get(new)
+    if files and not doubled and not interleaved:
+        rep.add("OK", f"feed: none of {files} weekly file(s) holds a renamed "
+                      f"company under two symbols, and none of the "
+                      f"{len(RENAMED_SYMBOLS)} rename(s) on record has its "
+                      f"symbols interleaved")
 
 
 # ---------------------------------------------- the newest week and the feed
@@ -2238,14 +2414,26 @@ def _unaccounted(doc, names):
     """The names a weekly file has neither a bar nor a `missing` entry for.
     Only an entry that names a ticker counts. Anything else in the list is
     not this check's to judge, and must not stop it from saying what is
-    absent, or take the report down."""
+    absent, or take the report down.
+
+    A name whose company the file holds under another symbol is accounted
+    for (RENAMED_SYMBOLS). The week a rename is recorded in, the newest
+    file still holds the old symbol's bar, written before anyone asked for
+    the new one. The cure both callers print for an absent name is a merge,
+    and scripts/backfill_weekly.py refuses that one: it would be the same
+    bar a second time. Left as it was, --feed and --config would fail until
+    the next Saturday's file, and the daily job would commit nothing
+    meanwhile. A print with no volume behind it does not hold the week
+    (_traded), and the new symbol is still asked for."""
     series = doc.get("series")
-    series = set(series) if isinstance(series, dict) else set()
+    series = series if isinstance(series, dict) else {}
     declared = doc.get("missing")
     declared = {m.get("ticker")
                 for m in (declared if isinstance(declared, list) else [])
                 if isinstance(m, dict) and isinstance(m.get("ticker"), str)}
-    return set(names) - series - declared
+    companies, traded = _companies(RENAMED_SYMBOLS), _traded(series)
+    return {name for name in set(names) - set(series) - declared
+            if not companies.get(name, frozenset()) & traded}
 
 
 def check_feed_names(repo, rep):
@@ -2786,6 +2974,7 @@ def main():
         check_feed(repo, rep)
         check_weekly_completeness(repo, today, rep)
         check_silent_absence(repo, rep)
+        check_renamed_symbols(repo, rep)
         check_feed_names(repo, rep)
         check_us2y_history(repo, rep)
         check_commodity_history(repo, rep)

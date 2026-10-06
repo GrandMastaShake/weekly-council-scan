@@ -50,6 +50,51 @@ AVAILABLE_TICKERS = [
 # resolve their sectors.
 STOCK_UNIVERSE = sorted(AVAILABLE_TICKERS)
 
+# The same renames, for the tools: old symbol -> the symbol the company trades
+# under now. The provider serves a renamed company's whole history under the
+# new symbol, so the panel keeps one symbol a week per company.
+# scripts/backfill_weekly.py --merge never adds the old symbol, and adds the
+# new one only after the old one's last bar; truth_check --feed fails a week
+# that holds both (DATA_FEED.md sec.1, "One company, one symbol a week").
+# Record the next rename here when it is recorded above. truth_check.py
+# repeats the map, and a test holds the two equal.
+#
+# One old symbol to one new one. A merger of two listed companies is not a
+# rename: AVB was absorbed, no symbol serves its history, and with AVB -> VMRK
+# here every week that holds AVB and EQR would read as one company twice. A
+# symbol that comes back as another company's leaves the map.
+RENAMED = {"BK": "BNY", "MMC": "MRSH", "PEAK": "DOC", "EQR": "VMRK"}
+assert len(set(RENAMED.values())) == len(RENAMED), (
+    "RENAMED maps two old symbols to one new one: that is a merger, and the "
+    "tools would take the two companies for one")
+assert not any(old == new for old, new in RENAMED.items()), (
+    "RENAMED maps a symbol to itself")
+
+
+def earlier_symbols(ticker):
+    """The symbols a company traded under before `ticker`, nearest first."""
+    out, seen, frontier = [], {ticker}, [ticker]
+    while frontier:
+        now = frontier.pop(0)
+        for old, new in RENAMED.items():
+            if new == now and old not in seen:
+                seen.add(old)
+                out.append(old)
+                frontier.append(old)
+    return out
+
+
+def later_symbols(ticker):
+    """The symbols a company has traded under since `ticker`, nearest first."""
+    out, seen = [], {ticker}
+    while True:
+        new = RENAMED.get(ticker)
+        if new is None or new in seen:
+            return out
+        seen.add(new)
+        out.append(new)
+        ticker = new
+
 # 44 tickers added to the committed weekly panel on 2026-08-26 (BACKFILL_44,
 # repo-side merge with per-series provenance). The DATA FEED must keep them:
 # equity_universe() includes this set so the Saturday builder's full-file
