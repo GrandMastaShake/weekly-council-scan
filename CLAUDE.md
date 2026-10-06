@@ -296,13 +296,16 @@ files it lacked and on its deriver.
 
 Three things this does not reach. `--derive` is as it was: with no
 `--pipeline` it judges with the runner's deriver. The Monday Council's
-fallback build (STEP 1d of its task card) gates with the same flags, and is
-asked too if it runs the `truth_check.py` it downloaded that morning; its
-card names `scripts/truth_check.py` and a check dir without saying which, so
-that is not confirmed. And when a name next joins and is merged into the
-newest week on main, the runner's copy of that week is short of it: a
+fallback build (STEP 1d of its task card) is a second writer: the same
+calls, into the same `data/`, gated with the same flags. Its card named
+`scripts/truth_check.py`, which its workspace does not hold, and no check
+dir. That one sentence was clarified on 2026-10-06 (owner sign-off): the
+copy of `truth_check.py` it downloads that morning, from a check dir built
+as the weekly job builds its own. It is a card, and nothing in this repo
+checks that it is followed. And when a name next joins and is merged into
+the newest week on main, the runner's copy of that week is short of it: a
 Saturday that writes no week fails on the copy until main's replaces it.
-Neither job's prompt or task card was changed.
+The weekly job's prompt and task card were not changed.
 
 **So after any change to the feed, sync `scan_pipeline/` on the runner
 before the next Saturday build**, and copy the week the name was merged into
