@@ -2209,14 +2209,25 @@ def check_splits(repo, rep):
 DOCUMENTED_SYMBOLS = (
     "STOCK_UNIVERSE",
     "BACKFILL_44_TICKERS",
+    "COUNCIL_WATCHLIST",
     "PRICE_FEED_UNIVERSE",
     "SECTOR_FOCUS_110",
     "FOCUS_TICKERS",
 )
 
 
+def _name_list(names, limit=12):
+    """Names for a message: all of a short list, the head of a long one. A
+    writer that lost a whole set would otherwise print three hundred."""
+    names = sorted(names)
+    if len(names) <= limit:
+        return str(names)
+    return f"{names[:limit]} and {len(names) - limit} more"
+
+
 def check_config(repo, rep):
-    """Config-drift gate: the docs, the constants and the panel must agree."""
+    """Config-drift gate: the docs, the constants, the weekly writer and the
+    panel must agree."""
     before = rep.counts["FAIL"]
     sys.path.insert(0, str(repo))
     try:
@@ -2237,12 +2248,15 @@ def check_config(repo, rep):
 
     # Structural invariants. Counts are asserted here and deliberately NOT
     # hardcoded in the docs: a number in prose is a third copy that drifts.
+    feed = set(getattr(t, "PRICE_FEED_UNIVERSE", ()))
     focus = getattr(t, "SECTOR_FOCUS_110", None)
+    focus_names = set()
     if isinstance(focus, dict):
         if len(focus) != 11:
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 has {len(focus)} "
                             f"sectors, expected 11")
         names = [x for xs in focus.values() for x in xs]
+        focus_names = set(names)
         expected = getattr(t, "FOCUS_SIZE", 110)   # declared beside the set
         if len(names) != expected:
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 holds {len(names)} "
@@ -2250,30 +2264,59 @@ def check_config(repo, rep):
         if len(set(names)) != len(names):
             dupes = sorted({n for n in names if names.count(n) > 1})
             rep.add("FAIL", f"config: SECTOR_FOCUS_110 repeats {dupes}")
-        feed = set(getattr(t, "PRICE_FEED_UNIVERSE", ()))
         outside = sorted(set(names) - feed)
         if outside:
             rep.add("FAIL", f"config: focus names outside the price feed "
                             f"{outside} -- they would be scored without a bar")
 
-    # The feed must cover the panel it is supposed to have produced. This is
-    # the direction that actually broke: a feed narrower than the analysis set.
+    # The weekly writer has to fetch the whole feed. PRICE_FEED_UNIVERSE says
+    # what the files commit; snapshot.equity_universe() is what the Saturday
+    # job and a full backfill hand to the fetch, and it is another module.
+    # From 2026-09-21 to 2026-10-06 it spelled the union out for itself,
+    # without the Council watchlist: BTC and GLD were in the constant and in
+    # the daily files, and in no weekly file.
+    writer = None
+    try:
+        from scan_pipeline import snapshot
+        writer = set(snapshot.equity_universe())
+    except Exception as exc:                        # noqa: BLE001
+        rep.add("FAIL", f"config: cannot ask scan_pipeline.snapshot which "
+                        f"names the weekly writer fetches ({exc}), so the "
+                        f"feed is not known to be fetched")
+    if writer is not None:
+        unfetched = feed - writer
+        if unfetched:
+            rep.add("FAIL", f"config: snapshot.equity_universe() leaves out "
+                            f"{_name_list(unfetched)} of PRICE_FEED_UNIVERSE "
+                            f"-- the weekly writer fetches that set, so a "
+                            f"week it writes holds neither a bar nor a "
+                            f"`missing` entry for them")
+
+    # And the newest weekly file has to account for every one of those names:
+    # a bar, or a `missing` entry that says why not. Until 2026-10-06 this
+    # asked for the focus names only, so a feed name outside the focus set
+    # could be in no weekly file at all and pass. The base file, not a
+    # correction: this is about what the writer was asked to fetch.
+    expected_names = feed | focus_names | (writer or set())
     weekly = repo / "data" / "weekly"
     files = sorted(weekly.glob("*.json")) if weekly.is_dir() else []
     files = [f for f in files if "corrected" not in f.name]
-    if files and isinstance(focus, dict):
+    if files and expected_names:
         doc = json.loads(files[-1].read_text(encoding="utf-8"))
         series = set(doc.get("series") or {})
         declared_missing = {m.get("ticker") for m in (doc.get("missing") or [])}
-        names = {x for xs in focus.values() for x in xs}
-        absent = sorted(names - series - declared_missing)
+        absent = expected_names - series - declared_missing
         if absent:
             rep.add("FAIL", f"config: {files[-1].name} has no bar and no "
-                            f"`missing` entry for focus names {absent} -- a "
-                            f"silently absent ticker is the ambiguity the feed "
-                            f"contract exists to remove")
+                            f"`missing` entry for {_name_list(absent)}, which "
+                            f"the feed commits -- a silently absent ticker is "
+                            f"the ambiguity the feed contract exists to "
+                            f"remove. A name joins a week that exists through "
+                            f"scripts/backfill_weekly.py --only <names> "
+                            f"--merge (Actions -> Backfill weekly panel).")
     if rep.counts["FAIL"] == before:
-        rep.add("OK", "config: docs, constants and the latest panel agree")
+        rep.add("OK", "config: docs, constants, the weekly writer and the "
+                      "latest panel agree")
 
 
 # --------------------------------------------------------------------- derive
