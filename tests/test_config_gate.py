@@ -407,3 +407,21 @@ def test_every_name_the_writer_fetches_is_in_the_newest_week_on_file():
     held = set(doc["series"]) | {m["ticker"] for m in doc["missing"]}
     assert not sorted(set(snapshot.equity_universe()) - held), newest.name
     assert {"BTC", "GLD"} <= held
+
+
+def test_the_engines_panel_scan_set_leaves_out_btc_and_gld(monkeypatch):
+    """Fed and stored, not scanned. Every weekly file has held BTC and GLD
+    since 2026-10-06, so the opt-in panel reader loads both. Neither is in a
+    list the engines book from, and an ETF has no fundamentals for Cecil to
+    value; putting them in front of an engine is Council v2's decision, not
+    a side effect of widening the feed."""
+    from scan_pipeline import panel_source
+    monkeypatch.setenv("COUNCIL_SCAN_SOURCE", "panel")
+    monkeypatch.setenv("COUNCIL_PANEL_DIR", str(ROOT / "data" / "weekly"))
+    monkeypatch.delenv("COUNCIL_WIKI_WILDCARDS", raising=False)
+    monkeypatch.setattr(panel_source, "_CACHE", {})
+    assert {"BTC", "GLD"} <= set(panel_source.load_price_cache())
+    scan = set(panel_source.universe())
+    assert "NVDA" in scan and "PLTR" in scan, "the panel was not read"
+    assert not scan & {"BTC", "GLD"}
+    assert not {"BTC", "GLD"} & set(t.scan_universe())
