@@ -14,6 +14,12 @@ Usage:
     python portfolio/tracker.py --open 2026-07-21  # Open new week
     python portfolio/tracker.py --close 2026-07-21 # Close previous week
     python portfolio/tracker.py --full 2026-07-21  # Close prior + open new
+
+An entry open is booked only when its own bar bears it out: low <= open <=
+high (#105). When the Monday bar is at the provider and its Open is not
+that, --open books nothing, writes nothing and exits 2. Run it again later,
+and the next day if it still refuses after the close; the entry is
+date-pinned, so a later run reads the same bar. See OpenNotVerified.
 """
 
 import argparse
@@ -44,6 +50,102 @@ for d in [PORTFOLIO_DIR, HISTORY_DIR, SCORECARDS_DIR]:
 
 # --- Price Fetching ---
 
+# ENTRY-OPEN GUARD (#105). At 09:35-09:42 ET on Monday 2026-09-14 the
+# provider's forming daily bar carried an Open that was a verbatim copy of
+# Friday's, while High, Low and Close followed the live session. For five of
+# seven tickers checked it lay outside that same bar's range: TSM 431.55
+# against a high of 420.97, SPY 764.72 against 759.19, DE 685.92 against
+# 674.99, CBOE 290.99 against 287.04, XOM 165.07 against a low of 168.25.
+# fetch_yf_open returned the bar's Open whatever it was, and open_positions
+# booked it. The book was repriced onto those opens that morning and reverted
+# by hand to Friday's closes, which scored the week +0.23% where Monday open
+# -> Friday close was -0.31% (#112).
+#
+# So an Open is returned only when its own bar bears it out: a positive
+# number with low <= open <= high. The tolerance is float noise and nothing a
+# price can move by (one part in a million is $0.0005 on a $500 name). Open,
+# High and Low of one bar come out of one download under one adjustment
+# factor, so an Open that IS the day's high or low compares equal to it. The
+# opens of 2026-09-14 were out by 0.7% to 2.5%.
+#
+# The bar does not say which of its fields is wrong, and it is not always
+# the Open. On 2026-10-06 at 15:31 ET, six hours into the session, the
+# forming bars of the price feed's 320 names and the four index ETFs were
+# read: 8 of 323 failed this check, all eight NYSE-listed, and each Open was
+# the 09:30 one-minute bar's own (PEG 69.12 against a low of 69.15). The
+# day's range had left the opening print out. Three quarters of an hour
+# after the close eight bars still failed, one of them newly (ADBE, its Open
+# revised from 239.90 to 240.87 under a high still at 240.15) and two that
+# had read right in between. A true open is refused then, the same as a
+# stale one. A settled bar has not been seen to fail: none of the 82,121
+# those names had from 2025-10-01 through 2026-10-05, read on 2026-10-06.
+#
+# Not caught: a stale Open that happens to lie inside the day's range.
+OPEN_RANGE_TOL = 1e-6
+
+
+class OpenNotVerified(Exception):
+    """An entry bar is at the provider and its Open cannot stand as an open.
+
+    Outside the bar's own low-high range, or with no high/low to hold it to,
+    or not a positive number at all. Nothing is booked from such a bar, and
+    not its Close either. --close re-reads an entry by its recorded source: a
+    Close taken minutes after the open is the last trade so far, it would sit
+    in the book all week labelled "close", and the week would be scored from
+    Monday's settled close, a different window from the Arena's. So --open
+    books nothing, writes nothing and exits 2. The entry is date-pinned: a
+    later run reads the same Monday bar, and once that bar has settled it is
+    the one --close scores from.
+    """
+
+
+def _finite(value) -> Optional[float]:
+    """A bar field as a finite float, or None when it is missing or NaN."""
+    try:
+        x = float(value)
+    except (TypeError, ValueError):
+        return None
+    return x if math.isfinite(x) else None
+
+
+def _px(value: Optional[float]) -> str:
+    return "none" if value is None else str(round(value, 4))
+
+
+def open_fault(o: Optional[float], high: Optional[float], low: Optional[float]) -> Optional[str]:
+    """Why a bar's Open cannot be booked as an open, in words; None when it can.
+
+    A bar with no high/low is a fault, not a pass: an Open nothing can check
+    is not one that was checked.
+    """
+    if o is None or o <= 0:
+        return f"the bar has no usable open ({_px(o)})"
+    if high is None or low is None:
+        return f"open {_px(o)} cannot be checked, the bar has no high/low"
+    tol = OPEN_RANGE_TOL * max(abs(high), abs(low))
+    if o > high + tol:
+        return f"open {_px(o)} is above the bar's high {_px(high)} (low {_px(low)})"
+    if o < low - tol:
+        return f"open {_px(o)} is below the bar's low {_px(low)} (high {_px(high)})"
+    return None
+
+
+def _bars_by_day(data) -> Dict[str, Dict[str, Optional[float]]]:
+    """{YYYY-MM-DD: {"Open", "High", "Low"}} from one ticker's daily frame.
+
+    The first row for a date is the one kept. A field the frame does not have
+    reads None, the same as one that is NaN.
+    """
+    bars: Dict[str, Dict[str, Optional[float]]] = {}
+    for idx, row in data.iterrows():
+        bars.setdefault(idx.strftime("%Y-%m-%d"), {
+            "Open": _finite(row.get("Open")),
+            "High": _finite(row.get("High")),
+            "Low": _finite(row.get("Low")),
+        })
+    return bars
+
+
 def fetch_yf_open(ticker: str, date: datetime) -> Optional[float]:
     """Fetch the date-pinned OPEN price for a ticker on the given date.
 
@@ -52,7 +154,12 @@ def fetch_yf_open(ticker: str, date: datetime) -> Optional[float]:
     trading day (e.g. a holiday Monday), the first trading day AFTER it within
     the window is used and a note is printed. Never silently falls back to a
     PRIOR day -- an entry before the week starts is not an entry. Returns None
-    on failure.
+    when there is no bar to read: a failed fetch, or nothing on or after the
+    date yet.
+
+    Raises OpenNotVerified when the bar is there and its Open cannot stand as
+    an open (the guard above). That is not "no bar", and the caller must not
+    fall back from it.
     """
     try:
         import yfinance as yf
@@ -64,19 +171,24 @@ def fetch_yf_open(ticker: str, date: datetime) -> Optional[float]:
         # yfinance >= 1.x can return MultiIndex (Price, Ticker) columns even for one ticker
         if getattr(data.columns, "nlevels", 1) > 1:
             data.columns = data.columns.get_level_values(0)
-        dates = list(data.index.strftime("%Y-%m-%d"))
-        target = date.strftime("%Y-%m-%d")
-        if target in dates:
-            return float(data.loc[data.index.strftime("%Y-%m-%d") == target]["Open"].iloc[0])
-        # Non-trading day: first trading day after the target
-        later = [d for d in dates if d > target]
-        if later:
-            print(f"Note: {ticker} entry pinned to {later[0]} open (no bar on {target}).")
-            return float(data.loc[data.index.strftime("%Y-%m-%d") == later[0]]["Open"].iloc[0])
-        return None
+        bars = _bars_by_day(data)
     except Exception as e:
         print(f"Warning: Could not fetch open for {ticker} on {date}: {e}")
         return None
+    target = date.strftime("%Y-%m-%d")
+    day = target
+    if target not in bars:
+        # Non-trading day: first trading day after the target
+        later = sorted(d for d in bars if d > target)
+        if not later:
+            return None
+        day = later[0]
+        print(f"Note: {ticker} entry pinned to {day} open (no bar on {target}).")
+    bar = bars[day]
+    fault = open_fault(bar["Open"], bar["High"], bar["Low"])
+    if fault:
+        raise OpenNotVerified(f"{ticker} {day}: {fault}")
+    return bar["Open"]
 
 
 def fetch_yf_price(ticker: str, date: datetime) -> Optional[float]:
@@ -289,8 +401,34 @@ def parse_report(report_path: Path) -> Dict:
 
 # --- Position Management ---
 
+def _refusal(week_date_str: str, faults: List[str]) -> str:
+    """What --open says when it books nothing: every bar, and what to do."""
+    faults = list(dict.fromkeys(faults))     # SPY may be a pick as well
+    return "\n".join(
+        [f"nothing booked for week {week_date_str}, and {CURRENT_PATH} was not "
+         f"written. {len(faults)} entry bar(s) at the provider have an Open "
+         "that cannot stand as an open:"]
+        + [f"  {fault}" for fault in faults]
+        + ["Until the provider has settled a day, its bar can read like this "
+           "with the Open wrong (2026-09-14, minutes after the open: a copy "
+           "of Friday's) or with the range wrong (2026-10-06, all session and "
+           "past the close: it left the opening print out). The bar does not "
+           "say which.",
+           "Run the same command again later, and the next day if it still "
+           "refuses after the close: no settled bar has been seen to fail. "
+           "The entry is the date-pinned Monday open, so a later run reads "
+           "the same bar. Do not book by hand, and not at the bar's Close: "
+           "--close re-reads an entry by its recorded source."])
+
+
 def open_positions(week_date_str: str, report_data: Dict) -> Dict:
-    """Record new positions for the week."""
+    """Record new positions for the week.
+
+    Raises OpenNotVerified, with nothing written, when an entry bar is at the
+    provider and its Open cannot stand as an open (the guard above
+    fetch_yf_open). The close-based fallback below is for a bar that is not
+    there yet; it is never taken from a bar that is there and reads wrong.
+    """
     # Fetch Monday OPEN prices for entry -- canonical basis is the date-pinned
     # Monday open (Arena convention) so both books share the same ruler.
     monday = datetime.strptime(week_date_str, "%Y-%m-%d")
@@ -299,8 +437,15 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
     # Which bar each entry came from, so --close can re-read the same bar on the
     # same adjustment snapshot as the exit (see _same_snapshot_prices).
     sources = {}
+    # Every entry bar is asked before the run is refused, so the one message
+    # names them all: on 2026-09-14 it was five of seven.
+    refused: List[str] = []
     for t in tickers:
-        prices[t] = fetch_yf_open(t, monday)
+        try:
+            prices[t] = fetch_yf_open(t, monday)
+        except OpenNotVerified as exc:
+            refused.append(str(exc))
+            continue
         sources[t] = "open"
         if prices[t] is None:
             print(f"Warning: {t} Monday open unavailable; falling back to close-based entry.")
@@ -308,12 +453,20 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
             sources[t] = "close"
 
     # Fetch SPY entry price (same date-pinned Monday-open basis)
-    spy_price = fetch_yf_open("SPY", monday)
     spy_source = "open"
-    if spy_price is None:
-        print("Warning: SPY Monday open unavailable; falling back to close-based entry.")
-        spy_price = fetch_yf_price("SPY", monday)
-        spy_source = "close"
+    try:
+        spy_price = fetch_yf_open("SPY", monday)
+    except OpenNotVerified as exc:
+        refused.append(str(exc))
+        spy_price = None
+    else:
+        if spy_price is None:
+            print("Warning: SPY Monday open unavailable; falling back to close-based entry.")
+            spy_price = fetch_yf_price("SPY", monday)
+            spy_source = "close"
+
+    if refused:
+        raise OpenNotVerified(_refusal(week_date_str, refused))
 
     positions = []
     for pick in report_data["picks"]:
@@ -752,11 +905,24 @@ def main():
             print(f"Report not found: {report_path}")
             sys.exit(1)
         report_data = parse_report(report_path)
-        open_positions(args.open, report_data)
+        # A refusal is a correct outcome and still not "done": exit 2, with
+        # nothing written, so whatever ran this does not go on as if it had
+        # a book.
+        try:
+            open_positions(args.open, report_data)
+        except OpenNotVerified as exc:
+            print(f"REFUSED: {exc}")
+            sys.exit(2)
 
     if args.full:
         report_path = Path(args.report) if args.report else REPORTS_DIR / f"{args.full}-report.md"
-        full_cycle(args.full, report_path)
+        try:
+            full_cycle(args.full, report_path)
+        except OpenNotVerified as exc:
+            print(f"REFUSED: {exc}")
+            print("A prior week this run closed stays closed. Open this one "
+                  f"later with --open {args.full}.")
+            sys.exit(2)
 
 
 if __name__ == "__main__":

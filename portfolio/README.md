@@ -79,6 +79,7 @@ The Tracker checks for stop losses **daily** during the week. If a stop is hit, 
 - **Entry/exit prices:** Yahoo Finance via `yfinance` (same as the scan pipeline)
 - **Benchmark:** SPY
 - **Stop checking:** Intra-week daily closes
+- **Entry check:** a Monday open is booked only when it lies inside that day's own low-high range. If the Monday bar is at the provider and its open does not, `--open` books nothing, writes nothing and exits 2. Run it again later, and the next day if it still refuses after the close: the entry is date-pinned, so a later run reads the same bar. Never book by hand.
 
 ## Integration with Monday Cron
 
