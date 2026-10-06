@@ -117,12 +117,10 @@ while not os.path.isdir(os.path.join(_PIPELINE_ROOT, "scan_pipeline")):
 if _PIPELINE_ROOT not in sys.path:
     sys.path.insert(0, _PIPELINE_ROOT)
 
-from scan_pipeline.config.tickers import PRICE_FEED_UNIVERSE  # noqa: E402
 from scan_pipeline.snapshot import (  # noqa: E402
-    INDEX_TICKERS,
-    SECTOR_TICKERS,
     WITNESS,
     canonical_json,
+    equity_universe,
     fetch_session_bars,
     get_special_instruments,
     special_provenance,
@@ -194,12 +192,17 @@ def observation_universe(weekly_dir: str | None = None) -> list:
     110-name watchlist, and it left Communication Services with 2 usable
     constituents. `PRICE_FEED_UNIVERSE` (320 since 2026-09-21) is the feed.
 
+    It is read through `snapshot.equity_universe()`, the weekly writer's own
+    set: the feed plus the index and sector ETFs. Each writer used to spell
+    that union out for itself, and from 2026-09-21 the two spellings differed
+    by the Council watchlist's BTC and GLD, which these files carried and no
+    weekly file did. One function cannot disagree with itself.
+
     The union with the newest weekly file's series is the self-healing part:
     if the panel grows again, the daily feed follows automatically instead of
     silently staying narrow.
     """
-    universe = (set(PRICE_FEED_UNIVERSE)
-                | set(INDEX_TICKERS) | set(SECTOR_TICKERS))
+    universe = set(equity_universe())
     if weekly_dir and os.path.isdir(weekly_dir):
         newest = sorted(f for f in os.listdir(weekly_dir)
                         if f.endswith(".json") and "corrected" not in f)

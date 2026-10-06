@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import truth_check as tc  # noqa: E402
 import scan_pipeline.config as tickers_pkg  # noqa: E402
+from scan_pipeline import snapshot  # noqa: E402
 from scan_pipeline.config import tickers as t  # noqa: E402
 
 
@@ -41,6 +42,11 @@ def stub_tickers(monkeypatch, **attrs):
             setattr(stub, k, attrs[k])
     monkeypatch.setitem(sys.modules, "scan_pipeline.config.tickers", stub)
     monkeypatch.setattr(tickers_pkg, "tickers", stub)
+    # The gate also asks snapshot which names the weekly writer fetches, and
+    # snapshot bound the real feed when it was imported. Unless a test says
+    # otherwise (WRITER), the writer fetches exactly the stubbed feed.
+    writer = sorted(attrs.get("WRITER", stub.PRICE_FEED_UNIVERSE))
+    monkeypatch.setattr(snapshot, "equity_universe", lambda: list(writer))
     return stub
 
 
@@ -69,6 +75,46 @@ def test_price_feed_is_the_union_of_its_three_parts():
                                           | set(t.COUNCIL_WATCHLIST))
     assert not hasattr(t, "FEED_ONLY_TICKERS")
     assert t.PRICE_FEED_UNIVERSE == sorted(set(t.PRICE_FEED_UNIVERSE))
+
+
+def test_the_weekly_writer_fetches_the_whole_feed():
+    """The feed constant and the set the weekly writer fetches, held together.
+
+    snapshot.equity_universe() spelled the union out for itself until
+    2026-10-06, and missed the Council watchlist when it joined the feed on
+    2026-09-21: BTC and GLD were in PRICE_FEED_UNIVERSE and the daily files,
+    and in no weekly file -- not in `series`, not in `missing`.
+    """
+    writer = set(snapshot.equity_universe())
+    assert set(t.PRICE_FEED_UNIVERSE) <= writer
+    assert {"BTC", "GLD"} <= writer
+    # The feed, the sixteen index and sector ETFs, and nothing else.
+    etfs = set(snapshot.INDEX_TICKERS) | set(snapshot.SECTOR_TICKERS)
+    assert len(etfs) == 16
+    assert writer == set(t.PRICE_FEED_UNIVERSE) | etfs
+    assert snapshot.equity_universe() == sorted(writer)
+
+
+def test_the_weekly_writer_reads_the_feed_constant_not_a_copy(monkeypatch):
+    """A second spelling of the union is what drifted. A name that joins the
+    feed has to reach the writer without anyone editing snapshot.py."""
+    monkeypatch.setattr(snapshot, "PRICE_FEED_UNIVERSE",
+                        list(t.PRICE_FEED_UNIVERSE) + ["JOINED_LATER"])
+    assert "JOINED_LATER" in snapshot.equity_universe()
+
+
+def test_universe_json_does_not_follow_the_feed(tmp_path):
+    """build_universe() keeps its own, narrower set on purpose. universe.json
+    mirrors wiki/universe.md, which lists stocks: the engines' set and the 44
+    fed beside it, and not the sixteen ETFs or the watchlist's BTC and GLD.
+    "One function for the feed" is a rule for the two price writers."""
+    wiki = tmp_path / "wiki"
+    wiki.mkdir()
+    doc = snapshot.build_universe(str(wiki), str(tmp_path / "universe.json"),
+                                  enrich=False)
+    names = {e["t"] for e in doc["tickers"]}
+    assert names == set(t.STOCK_UNIVERSE) | set(t.BACKFILL_44_TICKERS)
+    assert not names & {"BTC", "GLD", "SPY", "XLK"}
 
 
 def test_council_watchlist_is_the_owners_111():
@@ -103,17 +149,32 @@ def test_feed_is_never_narrower_than_the_analysis_set():
 # -- the gate fires ----------------------------------------------------------
 
 class FakeRepo:
-    """A repo tree with just the two files check_config reads."""
+    """A repo tree with just the files check_config reads: CLAUDE.md and the
+    weekly panel. `weekly_doc` is one week; `weekly_docs` maps file names to
+    documents, for a panel of several."""
 
-    def __init__(self, tmp_path, claude_text, weekly_doc=None):
+    def __init__(self, tmp_path, claude_text, weekly_doc=None,
+                 weekly_docs=None):
         self.root = tmp_path
         (tmp_path / "CLAUDE.md").write_text(claude_text, encoding="utf-8",
                                             newline="\n")
+        docs = dict(weekly_docs or {})
         if weekly_doc is not None:
+            docs["2026-09-11.json"] = weekly_doc
+        if docs:
             d = tmp_path / "data" / "weekly"
             d.mkdir(parents=True)
-            (d / "2026-09-11.json").write_text(
-                json.dumps(weekly_doc), encoding="utf-8", newline="\n")
+            for name, doc in docs.items():
+                (d / name).write_text(
+                    json.dumps(doc), encoding="utf-8", newline="\n")
+
+
+def week(names, missing=()):
+    """A weekly file holding a bar for each name and a reason for each of
+    `missing`."""
+    return {"series": {n: {"close": 1.0, "volume": 1} for n in names},
+            "missing": [{"ticker": n, "reason": "no bar for the week"}
+                        for n in missing]}
 
 
 def run_gate(repo_root):
@@ -191,3 +252,221 @@ def test_gate_accepts_a_panel_absence_that_declares_a_reason(tmp_path,
                  SECTOR_FOCUS_110=focus, FOCUS_TICKERS=sorted(names))
     rep = run_gate(fake.root)
     assert rep.counts["FAIL"] == 0, rep.render()
+
+
+# -- the weekly writer and the whole feed ------------------------------------
+#
+# BTC and GLD joined PRICE_FEED_UNIVERSE on 2026-09-21. For two weekly builds
+# the writer went on fetching its own, older spelling of the feed, and the
+# gate above, which asked the newest file for the focus names only, passed
+# both files. Each test below is one half of that.
+
+def test_gate_fails_a_weekly_writer_narrower_than_the_feed(tmp_path,
+                                                           monkeypatch):
+    """The drift itself: the constant gains two names and the set the writer
+    fetches does not."""
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC", "GLD"],
+                 WRITER=["AAA", "SPY"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "equity_universe() leaves out ['BTC', 'GLD']" in rep.render()
+    assert rep.counts["OK"] == 0
+
+
+def test_gate_passes_a_weekly_writer_wider_than_the_feed(tmp_path,
+                                                         monkeypatch):
+    """The writer adds the index and sector ETFs. Wider is the design."""
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"],
+                 WRITER=["AAA", "SPY", "XLK"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 0, rep.render()
+    assert rep.counts["OK"] == 1
+
+
+def test_gate_fails_when_the_writer_cannot_be_asked(tmp_path, monkeypatch):
+    """No answer is not a pass, and the newest week is still held to the
+    feed."""
+    fake = FakeRepo(tmp_path, "none", weekly_doc=week(["AAA"]))
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC"])
+
+    def broken():
+        raise RuntimeError("no universe today")
+    monkeypatch.setattr(snapshot, "equity_universe", broken)
+    rep = run_gate(fake.root)
+    msgs = rep.render()
+    assert rep.counts["FAIL"] == 2, msgs
+    assert "cannot ask scan_pipeline.snapshot" in msgs
+    assert "no universe today" in msgs
+    assert "has no bar and no `missing` entry for ['BTC']" in msgs
+    assert rep.counts["OK"] == 0
+
+
+def test_gate_fails_a_feed_name_the_newest_week_does_not_account_for(
+        tmp_path, monkeypatch):
+    """BTC and GLD as they stood: in the feed, outside the focus set, and in
+    neither `series` nor `missing` of the newest weekly file."""
+    focus = {"S%d" % i: ["T%d_%d" % (i, j) for j in range(10)]
+             for i in range(11)}
+    names = [x for xs in focus.values() for x in xs]
+    fake = FakeRepo(tmp_path, "none", weekly_doc=week(names))
+    stub_tickers(monkeypatch, STOCK_UNIVERSE=names,
+                 PRICE_FEED_UNIVERSE=sorted(names + ["BTC", "GLD"]),
+                 SECTOR_FOCUS_110=focus, FOCUS_TICKERS=sorted(names))
+    rep = run_gate(fake.root)
+    msgs = rep.render()
+    assert rep.counts["FAIL"] == 1, msgs
+    assert ("2026-09-11.json has no bar and no `missing` entry for "
+            "['BTC', 'GLD']") in msgs
+    assert "--merge" in msgs, "the message has to say how a name joins a week"
+    assert rep.counts["OK"] == 0
+
+
+def test_gate_accepts_a_feed_name_the_newest_week_lists_as_missing(
+        tmp_path, monkeypatch):
+    """A bar or a reason. SPCX before it listed is the standing case."""
+    fake = FakeRepo(tmp_path, "none",
+                    weekly_doc=week(["AAA", "BTC"], missing=["GLD"]))
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC", "GLD"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 0, rep.render()
+
+
+def test_gate_holds_the_newest_week_to_the_etfs_the_writer_adds(tmp_path,
+                                                                monkeypatch):
+    """The sixteen index and sector ETFs are in no ticker list: the writer
+    adds them. A newest week without one is the same silent absence, and
+    2024-08-09.json was written without all sixteen."""
+    fake = FakeRepo(tmp_path, "none", weekly_doc=week(["AAA", "SPY"]))
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"],
+                 WRITER=["AAA", "SPY", "XLK"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "has no bar and no `missing` entry for ['XLK']" in rep.render()
+
+
+def test_gate_reads_the_newest_week_and_no_other(tmp_path, monkeypatch):
+    """A name missing from an older week is a name that joined later: BNY has
+    bars from 2026-09-25 and none before. The newest week is the one the
+    writer has just produced, and the one this holds."""
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "JOINED"])
+
+    older_lacks = tmp_path / "older_lacks"
+    older_lacks.mkdir()
+    fake = FakeRepo(older_lacks, "none", weekly_docs={
+        "2026-09-04.json": week(["AAA"]),
+        "2026-09-11.json": week(["AAA", "JOINED"])})
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 0, rep.render()
+
+    newest_lacks = tmp_path / "newest_lacks"
+    newest_lacks.mkdir()
+    fake = FakeRepo(newest_lacks, "none", weekly_docs={
+        "2026-09-04.json": week(["AAA", "JOINED"]),
+        "2026-09-11.json": week(["AAA"])})
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert ("2026-09-11.json has no bar and no `missing` entry for "
+            "['JOINED']") in rep.render()
+
+
+def test_gate_reads_the_base_file_of_a_corrected_newest_week(tmp_path,
+                                                             monkeypatch):
+    """The question is what the writer was asked to fetch, and a correction
+    is a copy made afterwards. A name only the correction holds was never
+    fetched for the week; a stale correction is another test's business
+    (tests/test_instrument_sessions.py)."""
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC"])
+    fake = FakeRepo(tmp_path, "none", weekly_docs={
+        "2026-09-11.json": week(["AAA"]),
+        "2026-09-11.corrected.json": week(["AAA", "BTC"])})
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "2026-09-11.json has no bar" in rep.render()
+
+
+def test_gate_fails_cleanly_on_a_newest_week_it_cannot_read(tmp_path,
+                                                            monkeypatch):
+    """CI and the daily job run --feed --config in one call. A traceback
+    here would lose every line --feed had collected about the same file."""
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA"])
+    for label, body in (("not_json", "{ this is not json"),
+                        ("a_list", "[1, 2, 3]")):
+        root = tmp_path / label
+        (root / "data" / "weekly").mkdir(parents=True)
+        (root / "CLAUDE.md").write_text("none", encoding="utf-8",
+                                        newline="\n")
+        (root / "data" / "weekly" / "2026-09-11.json").write_text(
+            body, encoding="utf-8", newline="\n")
+        rep = run_gate(root)
+        assert rep.counts["FAIL"] == 1, rep.render()
+        assert "cannot read 2026-09-11.json" in rep.render()
+        assert rep.counts["OK"] == 0
+
+
+def test_gate_survives_a_malformed_missing_list(tmp_path, monkeypatch):
+    """A bare string where an entry belongs is --feed's finding. It must not
+    stop this check from saying what is absent."""
+    doc = week(["AAA"])
+    doc["missing"] = ["GLD", {"ticker": "BTC", "reason": "no bar"}]
+    fake = FakeRepo(tmp_path, "none", weekly_doc=doc)
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=["AAA", "BTC", "GLD"])
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "for ['GLD']" in rep.render()
+
+
+def test_gate_shortens_a_long_list_of_names(tmp_path, monkeypatch):
+    """A writer that lost a whole set would print three hundred names."""
+    feed = ["N%03d" % i for i in range(40)]
+    fake = FakeRepo(tmp_path, "none")
+    stub_tickers(monkeypatch, PRICE_FEED_UNIVERSE=feed, WRITER=feed[:10])
+    rep = run_gate(fake.root)
+    msgs = rep.render()
+    assert rep.counts["FAIL"] == 1, msgs
+    assert "'N010'" in msgs and "'N021'" in msgs
+    assert "'N022'" not in msgs
+    assert "and 18 more" in msgs
+
+
+def test_gate_fails_when_docs_name_the_watchlist_and_the_code_lacks_it(
+        tmp_path, monkeypatch):
+    """CLAUDE.md describes the feed as a union of three sets since
+    2026-10-06. The third is held like the other two."""
+    fake = FakeRepo(tmp_path, "The feed includes `COUNCIL_WATCHLIST`.")
+    stub_tickers(monkeypatch)
+    rep = run_gate(fake.root)
+    assert rep.counts["FAIL"] == 1, rep.render()
+    assert "COUNCIL_WATCHLIST" in rep.render()
+
+
+def test_every_name_the_writer_fetches_is_in_the_newest_week_on_file():
+    """The real panel, stated without the gate in between: after the merge
+    of 2026-10-06 the newest weekly file has a bar or a reason for all of
+    the feed and all sixteen ETFs."""
+    weekly = ROOT / "data" / "weekly"
+    newest = sorted(f for f in weekly.glob("*.json")
+                    if "corrected" not in f.name)[-1]
+    doc = json.loads(newest.read_text(encoding="utf-8"))
+    held = set(doc["series"]) | {m["ticker"] for m in doc["missing"]}
+    assert not sorted(set(snapshot.equity_universe()) - held), newest.name
+    assert {"BTC", "GLD"} <= held
+
+
+def test_the_engines_panel_scan_set_leaves_out_btc_and_gld(monkeypatch):
+    """Fed and stored, not scanned. Every weekly file has held BTC and GLD
+    since 2026-10-06, so the opt-in panel reader loads both. Neither is in a
+    list the engines book from, and an ETF has no fundamentals for Cecil to
+    value; putting them in front of an engine is Council v2's decision, not
+    a side effect of widening the feed."""
+    from scan_pipeline import panel_source
+    monkeypatch.setenv("COUNCIL_SCAN_SOURCE", "panel")
+    monkeypatch.setenv("COUNCIL_PANEL_DIR", str(ROOT / "data" / "weekly"))
+    monkeypatch.delenv("COUNCIL_WIKI_WILDCARDS", raising=False)
+    monkeypatch.setattr(panel_source, "_CACHE", {})
+    assert {"BTC", "GLD"} <= set(panel_source.load_price_cache())
+    scan = set(panel_source.universe())
+    assert "NVDA" in scan and "PLTR" in scan, "the panel was not read"
+    assert not scan & {"BTC", "GLD"}
+    assert not {"BTC", "GLD"} & set(t.scan_universe())

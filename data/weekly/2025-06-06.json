@@ -57,6 +57,10 @@
         "fetched_at": "2026-08-26T04:24:20Z",
         "source": "yahoo-backfill"
       },
+      "BTC": {
+        "fetched_at": "2026-10-06T03:28:27Z",
+        "source": "yahoo-backfill"
+      },
       "CALM": {
         "fetched_at": "2026-08-26T04:24:20Z",
         "source": "yahoo-backfill"
@@ -103,6 +107,10 @@
       },
       "FSLR": {
         "fetched_at": "2026-08-26T04:24:20Z",
+        "source": "yahoo-backfill"
+      },
+      "GLD": {
+        "fetched_at": "2026-10-06T03:28:27Z",
         "source": "yahoo-backfill"
       },
       "HIMS": {
@@ -409,6 +417,10 @@
     "BSX": {
       "close": 102.09,
       "volume": 9114400
+    },
+    "BTC": {
+      "close": 46.19,
+      "volume": 768300
     },
     "BX": {
       "close": 134.1589,
@@ -717,6 +729,10 @@
     "GILD": {
       "close": 108.832,
       "volume": 5263500
+    },
+    "GLD": {
+      "close": 305.18,
+      "volume": 7787500
     },
     "GLPI": {
       "close": 42.6652,

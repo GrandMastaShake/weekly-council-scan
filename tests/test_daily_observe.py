@@ -728,6 +728,24 @@ def test_observation_universe_covers_the_whole_analysis_set():
     assert not missing, "focus names absent from the daily feed: " + str(missing)
 
 
+def test_observation_universe_is_the_weekly_writers_set(monkeypatch):
+    """One definition of the feed for both writers.
+
+    Each used to spell the union out for itself. From 2026-09-21 this one had
+    the Council watchlist and the weekly one did not, so BTC and GLD were in
+    the daily files and in no weekly file. It is one function now, and a name
+    added to the feed reaches both.
+    """
+    from scan_pipeline import snapshot
+    assert do.observation_universe() == snapshot.equity_universe()
+    assert {"BTC", "GLD"} <= set(do.observation_universe())
+
+    monkeypatch.setattr(snapshot, "PRICE_FEED_UNIVERSE",
+                        list(snapshot.PRICE_FEED_UNIVERSE) + ["JOINED_LATER"])
+    assert "JOINED_LATER" in do.observation_universe()
+    assert do.observation_universe() == snapshot.equity_universe()
+
+
 def test_observation_universe_follows_a_wider_weekly_panel(tmp_path):
     """Self-healing: a panel that grows drags the daily feed with it."""
     weekly = tmp_path / "weekly"

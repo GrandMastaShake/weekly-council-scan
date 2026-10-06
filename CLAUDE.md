@@ -82,7 +82,8 @@ silently invisible for that week, permanently, with no error anywhere.
     python scripts/rebuild_corrections.py
 
 Two weeks are corrected. `2026-08-21.corrected.json` drops AVB and should
-carry ~330 series entries; if it still says 286, this did not run.
+carry one series fewer than its base: 332 since BTC and GLD were merged in on
+2026-10-06. If it says 330, or still 286, this did not run.
 `2026-08-28.corrected.json` restates three instrument closes and records what
 they replaced in `restated`. The script re-applies each recorded edit only
 while the base still holds what the correction replaced -- a dropped ticker
@@ -97,8 +98,17 @@ what a rebuild would write, so a stale one no longer gets past CI.
 
 `scan_pipeline/config/tickers.py`:
 
-- `PRICE_FEED_UNIVERSE` -- what `data/weekly` and `data/daily` commit.
-  `STOCK_UNIVERSE | BACKFILL_44_TICKERS`.
+- `PRICE_FEED_UNIVERSE` -- what `data/weekly` and `data/daily` commit, beside
+  the sixteen index and sector ETFs the writers add.
+  `STOCK_UNIVERSE | BACKFILL_44_TICKERS | COUNCIL_WATCHLIST`.
+- `COUNCIL_WATCHLIST` -- the owner's own list, from `council_watchlist.csv`:
+  the focus set's stocks and two macro ETFs, BTC (Grayscale Bitcoin Mini
+  Trust) and GLD. Council v2's universe, in the feed since 2026-09-21 and not
+  yet scanned. BTC and GLD are fed and stored; no engine scores them, and
+  `panel_source` keeps both out of the scan set when it is on.
+- `snapshot.equity_universe()` -- what both writers **fetch**: the feed and
+  the sixteen ETFs, read from the constant. The weekly job, a full backfill
+  and `daily_observe.py` all call it.
 - `STOCK_UNIVERSE` -- what the **engines scan**. Deliberately narrower than the
   feed so Monday fetch time is unchanged; the backfilled names are fed and
   stored but not scanned.
@@ -126,6 +136,50 @@ wider than the engine set -- so the block was deleted rather than the bound
 corrected. It is now bound against `PRICE_FEED_UNIVERSE`, which is the set it
 always meant. Nothing caught it at the time because this repo had no
 config-drift gate; `truth_check --config` is that gate now.
+
+**BTC and GLD were in no weekly file until 2026-10-06.** `8ef6f33` put the
+watchlist into `PRICE_FEED_UNIVERSE` on 2026-09-21, "so data accrues from
+Friday's build". `daily_observe.py` read the constant and has carried both
+since 2026-09-22. `equity_universe()` spelled the union out for itself,
+without the watchlist, so the weekly writer never asked for them: neither
+`series` nor `missing` in any week, the two built after that date included.
+Nothing failed, because `--config` held the newest weekly file to the focus
+names and neither is one.
+
+Owner decision 2026-10-05: the weekly feed carries them. The function reads
+the constant now. Both names were merged into all 113 weeks with `--merge`
+and are stamped in `provenance.series`; each bar is its file's session, and
+since neither pays a distribution their closes do not depend on the fetch
+date. `--config` fails when `equity_universe()` leaves out a feed name, and
+when the newest weekly file has neither a bar nor a `missing` entry for a
+name the writer fetches, the sixteen ETFs included.
+
+**So a name added to the feed is merged in the same change.** The gate fails
+until the newest week accounts for it, and `backfill_weekly.py --only
+<names> --merge` does that: a bar, or a `missing` entry where the provider
+has none. Only the newest week is held. BNY, MRSH, DOC and VMRK joined on
+2026-09-21 and have bars from 2026-09-25; the 111 weeks before hold them in
+neither `series` nor `missing`. Not merged, and not decided.
+
+Nobody reads BTC or GLD from a weekly file yet. `market_state` reads the
+sixteen ETFs. The heatmap takes both from `data/daily`, as comparison rows
+on its daily tape, and its weekly metrics come out byte-identical with and
+without them in the panel. They are stored for Council v2.
+
+**What a week without a feed name stops.** `--config` is not in the weekly
+job's gate line (`--feed --derive`), so a week written by a runner whose
+`scan_pipeline/` is behind is pushed, and fails on main afterwards. CI goes
+red on that push. So does the daily job: it runs `--feed --config` and the
+whole suite before it commits a session, so from the Monday it commits
+nothing until the week is merged, and the sessions it skipped are recovered
+by hand afterwards (the audit step prints the command). Only the newest week
+is asked, so the failure also clears by itself once a later week is whole,
+with the hole still behind it.
+
+**So after any change to the feed, copy `scan_pipeline/config/` to the
+runner before the next Saturday build.** On 2026-10-06 the runner's
+`tickers.py` matched the repo's, and its `snapshot.py` was still the repo's
+of 2026-09-21, with the old list in it.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
@@ -372,7 +426,8 @@ refused once with nothing asking again.
   provider's daily closes were null. For 330 names that is the Friday close.
   AVB's is 68.14 from Monday 2026-08-24, null volume, the successor's price
   under a dead symbol, and `2026-08-28.corrected.json` carries it too. Not
-  corrected.
+  corrected. (BTC and GLD in that file are daily bars, merged in on
+  2026-10-06.)
 
   **None of this reached a derived number.** `market_state` reads sixteen
   names from `series` (SPY, QQQ, DIA, IWM, the twelve sector ETFs) and every
@@ -568,6 +623,9 @@ The 44 names were backfilled 2026-08-26: the panel is 35,571 series, 332 a
 week, corrections at 330. Rationale and the corrected commands are in
 `BACKFILL_44.md`.
 
+BTC and GLD were merged the same way on 2026-10-06, into all 113 weeks:
+226 bars, and the two corrections rebuilt (Universe vs focus set, above).
+
 ## dad-kit/
 
 A starter kit for the owner's dad's Claude account (2026-10-03): two
@@ -611,3 +669,9 @@ moving one breaks his skill silently; update
   writes it.
 - Step over a week that was refused. Write the Fridays
   `snapshot.unwritten_fridays` lists, oldest first, before the newest.
+- Give the weekly or the daily writer its own list of names, or add a name
+  to the feed without merging it into the newest week in the same change.
+  `snapshot.equity_universe()` reads `PRICE_FEED_UNIVERSE`, and
+  `truth_check --config` holds the writer and the newest file to it.
+  (`build_universe` keeps a narrower set on purpose: `universe.json` mirrors
+  `wiki/universe.md`, which lists stocks.)

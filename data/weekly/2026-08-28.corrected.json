@@ -47,6 +47,36 @@
       "ticker": "PEAK"
     }
   ],
+  "provenance": {
+    "series": {
+      "BTC": {
+        "fetched_at": "2026-10-06T03:28:27Z",
+        "source": "yahoo-backfill"
+      },
+      "GLD": {
+        "fetched_at": "2026-10-06T03:28:27Z",
+        "source": "yahoo-backfill"
+      }
+    },
+    "rates": {
+      "US10Y": {
+        "source": "yahoo-backfill",
+        "fetched_at": "2026-10-05T04:27:45Z"
+      }
+    },
+    "vol": {
+      "VIX": {
+        "source": "yahoo-backfill",
+        "fetched_at": "2026-10-05T04:27:45Z"
+      }
+    },
+    "fx": {
+      "DXY": {
+        "source": "yahoo-backfill",
+        "fetched_at": "2026-10-05T04:27:45Z"
+      }
+    }
+  },
   "rates": {
     "US10Y": {
       "close": 4.72,
@@ -237,6 +267,10 @@
     "BSX": {
       "close": 46.84,
       "volume": 17143444
+    },
+    "BTC": {
+      "close": 34.3,
+      "volume": 3547800
     },
     "BX": {
       "close": 142.39,
@@ -537,6 +571,10 @@
     "GILD": {
       "close": 145.68,
       "volume": 3946644
+    },
+    "GLD": {
+      "close": 408.89,
+      "volume": 25044400
     },
     "GLPI": {
       "close": 42.56,
@@ -1389,26 +1427,6 @@
     "VIX": {
       "close": 14.43,
       "volume": null
-    }
-  },
-  "provenance": {
-    "rates": {
-      "US10Y": {
-        "source": "yahoo-backfill",
-        "fetched_at": "2026-10-05T04:27:45Z"
-      }
-    },
-    "vol": {
-      "VIX": {
-        "source": "yahoo-backfill",
-        "fetched_at": "2026-10-05T04:27:45Z"
-      }
-    },
-    "fx": {
-      "DXY": {
-        "source": "yahoo-backfill",
-        "fetched_at": "2026-10-05T04:27:45Z"
-      }
     }
   },
   "restated": [
