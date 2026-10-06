@@ -207,8 +207,10 @@ name the writer fetches, the sixteen ETFs included.
 **So a name added to the feed is merged in the same change.** The gate fails
 until the newest week accounts for it, and `backfill_weekly.py --only
 <names> --merge` does that: a bar, or a `missing` entry where the provider
-has none. Only the newest week is held, so the weeks behind it are a
-decision somebody has to make. For four names it was made two weeks late.
+has none. A renamed name is the exception: the newest week holds its old
+symbol's bar, that accounts for it, and the merge would be refused (The
+backfill, below). Only the newest week is held, so the weeks behind it are
+a decision somebody has to make. For four names it was made two weeks late.
 
 **BNY, MRSH and DOC are in every week; VMRK begins 2026-08-21.** The four
 joined on 2026-09-21 and had bars from 2026-09-25: neither `series` nor
@@ -238,17 +240,15 @@ of its file's session.
   dead AVB symbol (Known data defects, below).
 - **So that history is EQR through 2026-08-14 and VMRK from 2026-08-21**,
   never both in one week, and VMRK is in neither block of the 106 weeks
-  before on purpose. `audit_series.SUCCESSORS` is where the join is written
-  down.
+  before on purpose. `RENAMED` in `scan_pipeline/config/tickers.py` is where
+  the join is written down.
 - **`2024-08-09.json` holds neither key, and stays so.** It was started
   after EQR's symbol died and lists EQR in `missing`. A VMRK bar there would
-  be a bar in an earlier and in a later week, and `truth_check --feed`
-  would then warn about each of the 105 weeks between, printing the
-  `--merge` command that doubles them.
-- **Nothing mechanical refuses that merge.** Rehearsed on a copy, a
-  `--merge` that named VMRK over all 111 weeks exited 0, and every gate,
-  the audit and the suite passed the result. The rule is this entry and the
-  "Do not" below.
+  stand before all of EQR's weeks.
+- **A merge refuses all of this now.** For some hours on 2026-10-06 nothing
+  did: on a copy, `--merge` named VMRK over EQR's weeks, exited 0, and
+  every gate passed 105 weeks holding both. The rules, and what the gate
+  fails and what it only warns about, are in "The backfill", below.
 
 All four pay dividends, so unlike BTC and GLD their merged closes are the
 merge day's and the seam shows. MRSH went ex on 2026-10-01 and VMRK on
@@ -946,6 +946,49 @@ writes one for a special instrument and nothing writes one for an equity
 bar: a correction is rebuilt from its base, so a close changed in one by
 hand does not survive.
 
+**`--merge` never puts one company in the panel under two symbols.** The
+provider serves a renamed company's whole history under the new symbol, and
+of the old one it keeps at most the last session. Two refusals since
+2026-10-06, each for the whole run, exit 2, with nothing written and no flag
+to override:
+
+- **A rename on record** (`RENAMED`, `scan_pipeline/config/tickers.py`). The
+  old symbol is never merged, into any week: `--only EQR` over 2026-08-21
+  filed EQR's close of Monday 2026-08-17 under the Friday beside VMRK's
+  bar, struck EQR from that week's `missing`, and exited 0. The new symbol
+  is not added to any week up to the old one's last bar, so the two never
+  interleave; `2024-08-09.json` is refused for VMRK with the rest. Read off
+  every week on file, so the run stops before the download, and in a dry
+  run. A close on no volume is a print, not a bar, and bounds nothing.
+- **A rename nobody recorded.** After the download and before the first
+  write, a named ticker that would share a non-zero volume with one other
+  key in three weeks or more, counting the weeks the pair already shares,
+  is that key's history under a second symbol. On the panel, 59 pairs of
+  tickers share a volume in some week, each in exactly one; EQR and VMRK,
+  merged over each other on a copy, share it in 105. It cannot see a pair
+  under three weeks, and the newest-week merge of a new feed name is one
+  week. Nor a week whose committed volume the provider has restated since,
+  as it has for more than half of the weekly job's bars, nor a split
+  between the fetches, and a dry run cannot run it. Record the rename and
+  the first rule covers all of that.
+
+`truth_check --feed` FAILs when a weekly file's `series` holds both symbols
+of a rename on record, each with volume behind it, a correction under its
+own name. That is for every other writer: the mirror script, a file built
+by hand. It runs in the workflow ahead of the commit, in CI, in the daily
+job and in the weekly job's gate. No committed week holds both, and the
+weekly job cannot write one, since it fetches the new symbols only. It
+WARNs, and stops nothing, when no week holds both but the new symbol has a
+bar in a week not after the old one's last.
+
+**A week that holds a company under one symbol is not asked for another.**
+Not by the "name left out" warning, which with a VMRK bar in the first week
+printed the doubling command for each of EQR's 105 weeks. And not by the
+newest-week checks of `--feed` and `--config`, whose cure is a merge this
+rule refuses. So the week a rename is recorded in needs no merge: the
+newest file holds the old symbol's bar, which accounts for the company, and
+the next Saturday's file holds the new one.
+
 **A week is written only with its session witness.** A Friday SPY has no bar
 for is refused until a later SPY bar proves it was a holiday, and the run
 exits 2, which stops the workflow before its commit step. `--only` adds names
@@ -994,12 +1037,16 @@ moving one breaks his skill silently; update
   the backfill, in CI and in the daily job.
 - Write a fresh fetch over a bar a week already holds. `--merge` leaves it
   alone and says so; a restated close goes in `<date>.corrected.json`.
-- Merge a renamed symbol into a week that holds its old one. For VMRK that
-  is every week before 2026-08-21 but the first: EQR holds that history
-  under its own key, the provider serves the same bars under VMRK, so
-  `--merge` adds them without a word, and a bar added to a week is never
-  taken out. The first, `2024-08-09.json`, holds neither and takes no VMRK
-  either (Universe vs focus set).
+- Merge a renamed symbol into a week on the old symbol's side of the
+  rename, merge an old symbol at all, or work round the refusal. For VMRK
+  that is every week before 2026-08-21: what the provider serves under VMRK
+  there is EQR's own bar, and a bar added to a week is never taken out.
+  `--merge` refuses it and the gate fails a week that holds both (The
+  backfill, above).
+- Rename a ticker in `tickers.py` without adding the pair to `RENAMED`
+  beside it and to `RENAMED_SYMBOLS` in `truth_check.py`. The map is what
+  keeps the new symbol out of the old one's weeks. Without it only the
+  volume rule stands, and that needs three weeks and a download.
 - Tick `rewrite` on the backfill to add names or to fill a week that has no
   file. It writes every week on file in the range again, whole. Leave it
   off: named tickers are merged, and a blank list writes only what is
@@ -1029,7 +1076,9 @@ moving one breaks his skill silently; update
 - Step over a week that was refused. Write the Fridays
   `snapshot.unwritten_fridays` lists, oldest first, before the newest.
 - Give the weekly or the daily writer its own list of names, or add a name
-  to the feed without merging it into the newest week in the same change.
+  to the feed without merging it into the newest week in the same change. (A
+  renamed symbol is not merged there: it goes into `RENAMED`, and the week
+  that holds its old symbol's bar accounts for it.)
   `snapshot.equity_universe()` reads `PRICE_FEED_UNIVERSE`, and
   `truth_check --config` holds the writer and the newest file to it. The
   one other list is the gate's own, `EQUITY_UNIVERSE` in `truth_check.py`,
