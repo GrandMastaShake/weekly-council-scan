@@ -6,6 +6,13 @@
 > reached 330. `panel_guard` reported 107 files grew and none lost series.
 > This document is kept for the rationale and for the next universe expansion;
 > the commands below are the corrected ones.
+>
+> **Run again, they do nothing, on purpose.** All 44 are in every week of
+> that range now (SPCX from its listing on 2026-06-12), and `--merge` leaves
+> a ticker a week already holds exactly as committed. A second run changes no
+> file and exits 2 saying so. Until 2026-10-06 it would have fetched those
+> bars again, 4,612 of them, written what came back over the committed ones
+> and exited 0.
 
 The universe went from 277 to 321 on 2026-08-25. The 44 added names have no
 history in `data/weekly/`. This fills it.
@@ -62,8 +69,9 @@ Windows, from the repo root. Needs network; the run takes a few minutes.
       --merge
 
 `--merge` adds the named tickers to each existing week and leaves every other
-series, the special blocks and the file-level adjustment anchor alone. Add
-`--dry-run` first to see the plan.
+series, the special blocks and the file-level adjustment anchor alone. A
+named ticker a week already has is left alone too, never written over. Add
+`--dry-run` first to see the plan; it lists those.
 
 **This document said `--force` until 2026-08-26, on the reasoning that "the
 target weekly files already exist; the run adds the new names to `series` in

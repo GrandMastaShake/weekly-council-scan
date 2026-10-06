@@ -163,8 +163,10 @@ def test_feed_gate_refuses_an_unknown_provenance_key(tmp_path):
 # --- the diverged mirror
 def test_nothing_invokes_the_mirror_backfill_script():
     """scan_pipeline/scripts/backfill_weekly.py is a faithful mirror of the
-    external runner and predates merge semantics: run against this repo's
-    data/weekly it would replace whole weekly files. Nothing may call it.
+    external runner and lags scripts/backfill_weekly.py. It has had --merge
+    since 2026-08-26, but run against this repo's data/weekly that --merge
+    still writes a fresh fetch over a bar the week already holds, and it
+    can call an unposted Friday a holiday. Nothing may call it.
     """
     root = Path(__file__).resolve().parents[1]
     hits = []
