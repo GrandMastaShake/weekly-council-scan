@@ -349,6 +349,10 @@
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
       },
+      "DIA": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
       "DLR": {
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
@@ -571,6 +575,10 @@
       },
       "ITW": {
         "fetched_at": "2026-08-27T14:02:49Z",
+        "source": "yahoo-backfill"
+      },
+      "IWM": {
+        "fetched_at": "2026-10-06T01:48:08Z",
         "source": "yahoo-backfill"
       },
       "JCI": {
@@ -893,6 +901,10 @@
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
       },
+      "QQQ": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
       "QUBT": {
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
@@ -961,6 +973,10 @@
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
       },
+      "SMH": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
       "SNPS": {
         "fetched_at": "2026-08-27T14:02:49Z",
         "source": "yahoo-backfill"
@@ -979,6 +995,10 @@
       },
       "SPGI": {
         "fetched_at": "2026-08-27T14:02:49Z",
+        "source": "yahoo-backfill"
+      },
+      "SPY": {
+        "fetched_at": "2026-10-06T01:48:08Z",
         "source": "yahoo-backfill"
       },
       "SRE": {
@@ -1123,6 +1143,50 @@
       },
       "XEL": {
         "fetched_at": "2026-08-27T14:02:49Z",
+        "source": "yahoo-backfill"
+      },
+      "XLB": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLC": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLE": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLF": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLI": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLK": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLP": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLRE": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLU": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLV": {
+        "fetched_at": "2026-10-06T01:48:08Z",
+        "source": "yahoo-backfill"
+      },
+      "XLY": {
+        "fetched_at": "2026-10-06T01:48:08Z",
         "source": "yahoo-backfill"
       },
       "XOM": {
@@ -1494,6 +1558,10 @@
       "close": 264.751,
       "volume": 2017800
     },
+    "DIA": {
+      "close": 381.9482,
+      "volume": 3380200
+    },
     "DIS": {
       "close": 84.2453,
       "volume": 16008400
@@ -1745,6 +1813,10 @@
     "ITW": {
       "close": 227.8323,
       "volume": 652500
+    },
+    "IWM": {
+      "close": 201.5004,
+      "volume": 20954500
     },
     "JCI": {
       "close": 66.0816,
@@ -2106,6 +2178,10 @@
       "close": 157.6209,
       "volume": 4824600
     },
+    "QQQ": {
+      "close": 445.2715,
+      "volume": 33574000
+    },
     "QUBT": {
       "close": 0.589,
       "volume": 270800
@@ -2190,6 +2266,10 @@
       "close": 50.876,
       "volume": 59190000
     },
+    "SMH": {
+      "close": 223.1634,
+      "volume": 7241700
+    },
     "SNPS": {
       "close": 524.73,
       "volume": 852900
@@ -2221,6 +2301,10 @@
     "SPOT": {
       "close": 339.9,
       "volume": 1212900
+    },
+    "SPY": {
+      "close": 519.3743,
+      "volume": 45619600
     },
     "SRE": {
       "close": 73.8012,
@@ -2397,6 +2481,50 @@
     "XEL": {
       "close": 54.3746,
       "volume": 1795200
+    },
+    "XLB": {
+      "close": 42.453,
+      "volume": 5722000
+    },
+    "XLC": {
+      "close": 82.9572,
+      "volume": 4385800
+    },
+    "XLE": {
+      "close": 41.7219,
+      "volume": 22345600
+    },
+    "XLF": {
+      "close": 40.9886,
+      "volume": 23838800
+    },
+    "XLI": {
+      "close": 120.6243,
+      "volume": 5891400
+    },
+    "XLK": {
+      "close": 101.4624,
+      "volume": 9535600
+    },
+    "XLP": {
+      "close": 74.6234,
+      "volume": 10319800
+    },
+    "XLRE": {
+      "close": 38.7755,
+      "volume": 5454900
+    },
+    "XLU": {
+      "close": 34.5293,
+      "volume": 16708400
+    },
+    "XLV": {
+      "close": 144.3878,
+      "volume": 8550400
+    },
+    "XLY": {
+      "close": 85.5494,
+      "volume": 6379600
     },
     "XOM": {
       "close": 110.5816,

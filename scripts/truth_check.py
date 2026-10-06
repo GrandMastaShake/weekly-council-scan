@@ -79,6 +79,14 @@ Modes:
                 not what the nearest-expiry settlements derive (px, the
                 contract, and each change), or was derived where
                 data/commodity_settlements.json is absent.
+                Also WARNs when a weekly file has neither a bar nor a
+                `missing` entry for a name it should hold: one of the
+                sixteen index and sector ETFs (the witness check asks for
+                SPY alone), or a name with a bar in an earlier and in a
+                later week. A file is valid in itself without a name that
+                is simply not there. A WARN: the fix is a fetch
+                (backfill_weekly.py --merge), and the file cannot be
+                edited meanwhile.
                 Also WARNs when data/daily/ has stopped being written: the
                 newest daily file two or more weekdays behind the last
                 weekday before today. Never a FAIL -- an observation feed
@@ -1722,13 +1730,16 @@ WITNESS = "SPY"
 SESSION_NOTE_RE = re.compile(
     r"^Friday holiday; bars from (\d{4}-\d{2}-\d{2})$")
 
-# The witness rule dates from 2026-10-06. One file written before it has
+# The witness rule dates from 2026-10-06. One file written before it had
 # series and no SPY bar: 2024-08-09.json was started by a backfill run
 # restricted to 44 names, had 270 more merged in, and never got the four
-# index or twelve sector ETFs -- which it does not list in `missing` either.
-# It cannot be edited, so it is warned about, with the command that adds
-# them. A file dated from here on has no such excuse. An EMPTY series fails
-# whatever its date: no committed file is one.
+# index or twelve sector ETFs -- which it did not list in `missing` either.
+# It could not be edited, so it was warned about, with the command that adds
+# them, and that command was run the same day: the committed file has all
+# sixteen. The warning stays for a tree that still holds the old copy, as
+# the runner's does until it is synced. A file dated from here on has no
+# such excuse. An EMPTY series fails whatever its date: no committed file
+# is one.
 WITNESS_RULE_SINCE = "2026-10-06"
 
 # A weekly file is due once its Friday is this many days old. The job that
@@ -1996,6 +2007,146 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
         _feed_settlement_check(f.name, doc, rep)
     rep.add("OK", f"feed: {len(files)} {label} file(s) validated against "
                   f"DATA_FEED.md sec.1 (failures reported above)")
+
+
+# ------------------------------------------------------ silently absent names
+
+# The four index and twelve sector ETFs: INDEX_TICKERS + SECTOR_TICKERS in
+# scan_pipeline/snapshot.py. equity_universe() adds them to every full write
+# of a week whatever the stock universe holds that quarter, and they are the
+# only names in `series` that market_state derives from. This script stays
+# importable with nothing but the standard library, so they are repeated here
+# and tests/test_silent_absence.py pins them equal.
+INDEX_AND_SECTOR_ETFS = (
+    "SPY", "QQQ", "DIA", "IWM",
+    "SMH", "XLE", "XLF", "XLK", "XLV", "XLP",
+    "XLY", "XLI", "XLB", "XLRE", "XLU", "XLC",
+)
+
+
+def check_silent_absence(repo, rep):
+    """A week has a bar or a `missing` entry for every name it should hold.
+
+    `missing` is required and never empty by omission (DATA_FEED.md sec.1).
+    check_feed holds each file to its own shape, so it cannot see a name that
+    is simply not there. 2024-08-09.json was started on 2026-08-26 by a
+    backfill of 44 named tickers and filled the next day with the 277 of
+    STOCK_UNIVERSE. Neither list had an index or sector ETF in it, and the
+    file sat in the panel without them, valid by every check there was,
+    until the witness rule (_feed_session_check) asked each file for SPY.
+    That rule asks for one name, and for a bar. This one asks for every
+    name a week should hold, and is content with a reason.
+
+    A week should hold a name -- as a bar, or in `missing` with a reason --
+    when
+
+      * it is one of the sixteen index and sector ETFs, which every full
+        write of a week carries; or
+      * an earlier week and a later week both carry it in `series`.
+
+    Earlier and later, not the week before and the week after: the panel's
+    two corrected weeks are adjacent, and two corrections gone stale together
+    would each hide behind the other. Weeks are compared as readers see
+    them, a correction in place of its base, so a correction that was not
+    rebuilt after names were merged into its base is found here as well,
+    and sent to rebuild_corrections.py rather than to the backfill.
+
+    A WARN, never a FAIL. The fix is a fetch (backfill_weekly.py --merge),
+    the file cannot be edited meanwhile, and this script is also the gate of
+    the weekly job, whose copy of data/ is synced by hand.
+
+    What the panel alone cannot say is left unsaid. A name that joins the
+    universe has no earlier week and one that leaves has no later week, so
+    neither is expected: BNY, MRSH, DOC and VMRK have bars from 2026-09-25,
+    and nothing here asks for them before it. By the same rule a stock
+    missing from the first file reads as one that joined a week later, and a
+    stock dropped from the newest file as one that left. At the two ends
+    this check holds only the ETFs. The newest end is --config's
+    (check_config), which knows the feed and fails a newest week that leaves
+    out any name the writer fetches. Nothing knows what the first week
+    should have held. Weekly only: daily sessions are recovered out of
+    order, each with the universe of the day it was recovered.
+    Pure stdlib, no network.
+    """
+    weekly = repo / "data" / "weekly"
+    if not weekly.is_dir():
+        return
+
+    def held(path):
+        """(names with a bar, names with a bar or a `missing` entry), or
+        None for a file check_feed has already refused."""
+        try:
+            doc = json.loads(path.read_text(encoding="utf-8"))
+        except (ValueError, OSError):
+            return None
+        series = doc.get("series") if isinstance(doc, dict) else None
+        if not isinstance(series, dict):
+            return None
+        missing = doc.get("missing")
+        listed = {m.get("ticker") for m in missing if isinstance(m, dict)} \
+            if isinstance(missing, list) else set()
+        return set(series), set(series) | listed
+
+    weeks = []      # (week, file read, carried, accounted for, ... by its base)
+    for f in sorted(weekly.glob("*.json")):
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.stem):
+            continue            # a correction, or a name check_feed refuses
+        corrected = f.with_name(f.stem + ".corrected.json")
+        read = corrected if corrected.is_file() else f
+        seen = held(read)
+        if seen is None:
+            continue
+        base = seen if read is f else held(f) or seen
+        weeks.append((f.stem, read.name, seen[0], seen[1], base[1]))
+    if not weeks:
+        return
+
+    first, last = {}, {}    # ticker -> the first / last week that carries it
+    for i, (_, _, carried, _, _) in enumerate(weeks):
+        for ticker in carried:
+            first.setdefault(ticker, i)
+            last[ticker] = i
+
+    holes = 0
+    for i, (week, name, _, accounted, in_base) in enumerate(weeks):
+        expected = set(INDEX_AND_SECTOR_ETFS)
+        expected.update(t for t in first if first[t] < i < last[t])
+        absent = sorted(expected - accounted)
+        if not absent:
+            continue
+        holes += 1
+        # Two different repairs. A name the base holds is not the backfill's
+        # to add: --merge leaves it alone, and a run given nothing else
+        # exits 2 with no file changed. That week needs its correction
+        # rebuilt, so the command printed here lists only what the base
+        # lacks.
+        stale = [t for t in absent if t in in_base]
+        to_add = [t for t in absent if t not in in_base]
+        fix = ""
+        if stale:
+            fix += (f" Its base has {'them' if not to_add else ', '.join(stale)}"
+                    f": the correction has gone stale, and `python "
+                    f"scripts/rebuild_corrections.py` brings them in.")
+        if to_add:
+            fix += (f" To add {'them' if not stale else ', '.join(to_add)}: "
+                    f"`python scripts/backfill_weekly.py --out data --start "
+                    f"{week} --end {week} --only {','.join(to_add)} --merge` "
+                    f"(the Backfill weekly panel workflow), then `python "
+                    f"scripts/rebuild_corrections.py`.")
+        rep.add("WARN", f"feed: {name} has neither a bar nor a `missing` "
+                        f"entry for {len(absent)} name(s): "
+                        f"{', '.join(absent)}. Each is an index or sector "
+                        f"ETF, which every week holds, or has a bar in an "
+                        f"earlier and in a later week. A name that was not "
+                        f"fetched is listed in `missing` with a reason, "
+                        f"never left out (DATA_FEED.md sec.1): absent, it "
+                        f"cannot be told from a name that never existed."
+                        f"{fix}")
+    if not holes:
+        rep.add("OK", f"feed: each of {len(weeks)} week(s) has a bar or a "
+                      f"`missing` entry for every name it should hold (the "
+                      f"index and sector ETFs, and any name carried by an "
+                      f"earlier and a later week)")
 
 
 def check_daily_freshness(repo, today, rep):
@@ -2426,6 +2577,7 @@ def main():
     if run_all or args.feed:
         check_feed(repo, rep)
         check_weekly_completeness(repo, today, rep)
+        check_silent_absence(repo, rep)
         check_us2y_history(repo, rep)
         check_commodity_history(repo, rep)
         check_feed(repo, rep, subdir="daily", require_friday=False,
