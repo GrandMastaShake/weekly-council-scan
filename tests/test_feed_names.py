@@ -119,6 +119,17 @@ def one(panel, doc):
     return names_gate(panel({doc["as_of"] + ".json": doc}).parents[1])
 
 
+def test_the_rules_day_does_not_move():
+    """Every other date here is derived from it, so this is the one test
+    that holds it to the day it was chosen for. Earlier, and the runner's
+    copies of committed weeks fail again: the newest was fetched on
+    2026-10-03, and a failure there sends the job to rewrite a committed
+    week, which is what the first draft did. Later, and a short week
+    written in between only warns. It is the day the rule began; a name
+    that joins the feed afterwards does not change it."""
+    assert tc.NAMES_RULE_SINCE == "2026-10-06"
+
+
 def test_the_dates_these_tests_use_are_what_they_say():
     """Guards the arithmetic above, whatever the rule's day is."""
     assert dt.date.fromisoformat(FRESH).weekday() == 4
@@ -264,6 +275,20 @@ def test_the_newest_week_is_the_one_that_fails(panel):
     got = lines(names_gate(repo), "FAIL")
     assert len(got) == 1 and (FRESH + ".json has no bar") in got[0]
     assert "['AAPL']" in got[0]
+
+
+def test_a_file_that_is_not_a_week_is_not_the_newest_week(panel):
+    """A stray name sorts after every date. check_feed refuses it under its
+    own name; it is not what the writer last wrote, and is not judged as if
+    it were."""
+    stray = week(FRESH, without("GLD"))
+    repo = panel({FRESH + ".json": week(FRESH),
+                  "notes.json": stray, "zzz.json": stray}).parents[1]
+    rep = names_gate(repo)
+    assert lines(rep, "FAIL") == [], rep.render()
+    assert lines(rep, "OK") == [
+        "OK: feed: %s.json has a bar or a `missing` entry for each of the "
+        "%d names the weekly writer fetches" % (FRESH, len(NAMES))]
 
 
 def test_the_base_file_is_read_and_not_its_correction(panel):

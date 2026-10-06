@@ -2268,11 +2268,11 @@ def check_feed_names(repo, rep):
     The split is check_silent_absence's caution about this gate, kept as
     narrow as it can be. The job's check dir is the runner's copy of data/,
     synced by hand, so a short newest file there is not always a short
-    week. It can be the runner's copy of a week main holds whole, and every
-    weekly file on the runner on 2026-10-06 is that. The gate cannot see
-    main, so it does not say which it is looking at. Both lines send the
-    reader to main first, and a week that is on main is never written
-    again.
+    week. It can be the runner's copy of a week main already holds with the
+    names merged in, as the runner's newest file was on 2026-10-06. The
+    gate cannot see main, so it does not say which it is looking at. Both
+    lines send the reader to main first, and a week that is on main is
+    never written again.
 
     The job's prompt says only that a FAIL is fixed before pushing, so the
     line carries the rest, in the order it has to be done."""

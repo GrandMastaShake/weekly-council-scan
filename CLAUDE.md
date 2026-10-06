@@ -292,7 +292,8 @@ pandas or yfinance. `--feed --derive` exited 0 on it before and said
 nothing. It warns now, because that file was fetched on 2026-10-03; the same
 file stamped as written on the 10th exits 1 naming both. The runner as it
 stood that day did not get that far: its own line failed on the two history
-files it lacked and on its deriver.
+files it lacked and on the futures mark its deriver still writes under
+`US2Y`.
 
 Three things this does not reach. `--derive` is as it was: with no
 `--pipeline` it judges with the runner's deriver. The Monday Council's
