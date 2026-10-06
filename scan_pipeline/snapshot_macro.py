@@ -3,9 +3,10 @@
 # Exposes fetch_special_instruments(friday_date) returning the rates / vol /
 # commodities / fx blocks of data/weekly/<date>.json (DATA_FEED.md section 1),
 # plus a mandatory "missing" list and a "provenance" block naming any
-# instrument that did not come from Yahoo, and any whose value is not the
-# session the file is named for. Closes only; volume is kept when the feed
-# reports a real one and normalized to None otherwise (never invented).
+# instrument that did not come from Yahoo, the contract month of each
+# commodity, and any value that is not the session the file is named for.
+# Closes only; volume is kept when the feed reports a real one and
+# normalized to None otherwise (never invented).
 #
 # Fetch discipline follows truth_layer/sweep/scripts/arena_ingest.py fetch_bar:
 # explicit start/end window around the Friday, select that date's bar. No
@@ -61,16 +62,24 @@
 #                      ZT=F  2026-08-07 = 102.9766 -- 2Y note futures PRICE,
 #                            not a yield; conversion would be invented data.
 # DXY   -> DX-Y.NYB  2026-08-07 close 99.60, volume 0 -> None.
-# WTI   -> CL=F      2026-08-07 close 78.18, volume 241222 (real, kept).
-# GOLD  -> GC=F      2026-08-07 close 4340.70, volume real, kept.
-# SILVER-> SI=F      2026-08-07 close 63.332, volume real, kept.
+# WTI   -> NAMED     DECISION 2026-10-05, superseding CL=F, GC=F and SI=F:
+# GOLD  -> NAMED     the nearest-expiry contract, read under its own symbol
+# SILVER-> NAMED     (CLX26.NYM, GCV26.CMX, SIV26.CMX), and the contract
+#                    committed beside the close. What the continuous symbols
+#                    did, and the rules, are under "Named contracts" below.
+#                    Through 2026-10-02 these keys held the continuous
+#                    symbols' bars: 2026-08-07 CL=F 78.18 (volume 241222),
+#                    GC=F 4340.70, SI=F 63.332, volume real and kept.
+# WTI_NEXT -> NAMED  The contract after WTI's, settled the same day. It is
+#                    there so that a one-week change can be measured on one
+#                    contract in the week the front month changes.
 #
 # Sanity notes from the smoke run (2026-08-07): GOLD 4340.70 and SILVER
 # 63.33 sit above the briefing ranges (3000-3500 / 30-45); both are genuine
 # live closes (2025-08-08: GC=F 3439.10, SI=F 38.42 -- a sustained rally,
 # not a fetch artifact). All other instruments landed inside their ranges.
 #
-# WTI, GOLD and SILVER are CONTINUOUS symbols, and Yahoo does not hold them
+# CL=F, GC=F and SI=F are CONTINUOUS symbols, and Yahoo does not hold them
 # still. Probed 2026-10-05 against yfinance 1.6.0, while auditing every
 # committed close (scripts/audit_instruments.py, macro/instrument_audit.json):
 #   GC=F  The history was the nearest-expiry contract when the panel was
@@ -86,12 +95,14 @@
 #   CL=F  The live quote rolls to the next month before the history does.
 #         2026-09-18: the quote was CLX26 (Nov), the history is CLV26 (Oct,
 #         which expired 09-22). That is the 95.47 against 100.30 of #110.
-# Nothing in a committed file says which contract month a close belongs to;
-# the volume beside it is the only tell. Fixing that means naming contracts
-# and a roll rule, which is a decision about the instrument and has not been
-# made. What is fixed here is narrower: when the bar is read, and whether a
-# substitution is written down.
+# Nothing in a file written through 2026-10-02 says which contract month a
+# close belongs to, and the volume beside it is not a tell either: on a
+# contract's last day the continuous bar is the expiring month's close on
+# the next month's volume (CL=F 2026-09-22: 94.59 on 422,683, which is
+# CLX26's volume). Since 2026-10-05 the contract is named; see "Named
+# contracts" below for the rule and what it rests on.
 
+import calendar
 import csv
 import datetime as dt
 import io
@@ -119,6 +130,13 @@ SETTLED_HOUR_UTC = 13
 # touch on a provider swap. An entry with no "provider" is a Yahoo symbol;
 # US2Y is the single one that is not (see the research log). "settles" marks
 # a bar that is not final on the evening of its own session.
+#
+# A commodity has no fixed symbol. "root" names the futures product, and the
+# symbol is the contract the roll calendar gives for the session ("Named
+# contracts" below); "position" 1 is the contract after that one.
+# "continuous" is the provider's rolling symbol, which the writer no longer
+# reads: it is what every file through 2026-10-02 holds, so the audit and
+# the history backfill still need its name.
 # ---------------------------------------------------------------------------
 INSTRUMENTS = {
     "rates": {
@@ -132,12 +150,14 @@ INSTRUMENTS = {
         "VIX": {"symbol": "^VIX", "divisor": 1.0, "kind": "index"},
     },
     "commodities": {
-        "WTI":    {"symbol": "CL=F", "divisor": 1.0, "kind": "future",
-                   "settles": NEXT_DAY},
-        "GOLD":   {"symbol": "GC=F", "divisor": 1.0, "kind": "future",
-                   "settles": NEXT_DAY},
-        "SILVER": {"symbol": "SI=F", "divisor": 1.0, "kind": "future",
-                   "settles": NEXT_DAY},
+        "WTI":      {"root": "CL", "position": 0, "continuous": "CL=F",
+                     "divisor": 1.0, "kind": "future", "settles": NEXT_DAY},
+        "WTI_NEXT": {"root": "CL", "position": 1,
+                     "divisor": 1.0, "kind": "future", "settles": NEXT_DAY},
+        "GOLD":     {"root": "GC", "position": 0, "continuous": "GC=F",
+                     "divisor": 1.0, "kind": "future", "settles": NEXT_DAY},
+        "SILVER":   {"root": "SI", "position": 0, "continuous": "SI=F",
+                     "divisor": 1.0, "kind": "future", "settles": NEXT_DAY},
     },
     "fx": {
         "DXY": {"symbol": "DX-Y.NYB", "divisor": 1.0, "kind": "index",
@@ -340,6 +360,210 @@ def _fetch_treasury(ticker, cfg, as_of):
 
 
 # ---------------------------------------------------------------------------
+# Named contracts (WTI, WTI_NEXT, GOLD, SILVER)
+# ---------------------------------------------------------------------------
+# A continuous symbol is the provider's choice of which contract month to
+# show, and the provider has changed it without saying so. Probed 2026-10-05:
+#
+#  * GC=F was the nearest-expiry contract when the panel was backfilled and
+#    is the most active one now, for its whole history, 0 to 1.7 percent
+#    higher. Its roll day is not constant either: on the first-notice-day
+#    Fridays 2024-11-29, 2025-01-31 and 2025-05-30 it holds the outgoing
+#    month's close, and on the four since, the incoming month's.
+#  * Reading after the settlement does not help. 2026-08-28.json was read at
+#    14:10 UTC on the Saturday, an hour past the rule below, and got the
+#    December contract for gold and for silver, where every other Saturday
+#    read on file got the nearest one.
+#  * The individual contracts do not move. GCV26.CMX is the October 2026
+#    gold contract on every request, with history back to its listing.
+#
+# So the feed names the contract (owner decision 2026-10-05), and the rule
+# is the one 327 of the panel's 339 committed closes already follow:
+#
+#    the listed contract with the earliest last trade date on or after the
+#    session.
+#
+# For WTI that is the front month, as EIA defined its "Contract 1". For gold
+# and silver it is the COMEX spot month: thinly traded, but the exchange
+# settles every listed month off the curve, and the spot month sits within
+# days of carry of spot metal. Checked on the 91 committed gold weeks that
+# are ten days or more from the active month's first notice day: the gap to
+# the active contract implies a carry of 3.3 to 5.9 percent a year, in step
+# with short rates, including the weeks that traded 2, 12 and 16 contracts.
+# A stale last trade would scatter. The active month was the alternative and
+# was not chosen: it steps 0.8 to 1.7 percent at each of five rolls a year,
+# the panel's history is not on it, and for silver the provider has no
+# history on it at all.
+#
+# Last trade dates are the exchange rulebook's:
+#
+#    CL       the third business day before the 25th of the month before the
+#             contract month; before the business day preceding the 25th,
+#             when the 25th is not one.
+#    GC, SI   the third last business day of the contract month.
+#
+# The calendar reproduces what the provider's chains did. All 32 crude
+# expiries from CLH24 to CLV26 show in CL=F's volume (it collapses for two
+# sessions, then the last day's bar carries the next month's volume), and by
+# name: CLQ26.NYM's last bar is 2026-07-21, CL=F becomes CLX26 on 2026-09-23
+# and SI=F becomes SIV26 on 2026-09-29.
+#
+# A business day is a day the exchange settles, so the table below is the
+# exchange's holidays and not the bond market's: Columbus Day and Veterans
+# Day are ordinary sessions. One entry is a judgment: New Year's Day on a
+# Saturday is not observed on the Friday (the equity exchanges' rule; next
+# in 2028). If the table is ever a day out the file is still right about
+# itself, because the contract that was read is the one it names.
+#
+# Three consequences, each deliberate:
+#
+#  * An expired contract cannot be read. The provider drops a contract
+#    within days of its last trade (GCU26, SIU26 and CLV26 were gone by
+#    2026-10-05). A rewrite of an old week therefore lists its commodities
+#    in "missing"; their settlements live in data/commodity_settlements.json
+#    (DATA_FEED.md sec.1d), which scripts/backfill_commodities.py fills.
+#  * A Friday that IS a last trade date is read on the Saturday, after the
+#    contract has expired. If the provider has already dropped it, the
+#    instrument is "missing" that week and is filled the same way. The first
+#    such Friday is 2026-11-20 (CLZ26).
+#  * A holiday stand-in stays inside one contract. If the week's last
+#    session belongs to another month than the date asked for, nothing
+#    stands in.
+
+MONTH_CODES = "FGHJKMNQUVXZ"            # January .. December
+
+# root -> the provider's exchange suffix, and how the contract expires.
+CONTRACT_ROOTS = {
+    "CL": {"exchange": "NYMEX", "suffix": "NYM", "expires": "before_25th"},
+    "GC": {"exchange": "COMEX", "suffix": "CMX", "expires": "third_last"},
+    "SI": {"exchange": "COMEX", "suffix": "CMX", "expires": "third_last"},
+}
+
+_HOLIDAYS = {}      # year -> frozenset of dates, for the life of the process
+
+
+def _easter(year):
+    """Gregorian Easter Sunday (the anonymous algorithm)."""
+    a, b, c = year % 19, year // 100, year % 100
+    d, e = b // 4, b % 4
+    g = (b - (b + 8) // 25 + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i, k = c // 4, c % 4
+    m = (32 + 2 * e + 2 * i - h - k) % 7
+    n = (a + 11 * h + 22 * m) // 451
+    month, day = divmod(h + m - 7 * n + 114, 31)
+    return dt.date(year, month, day + 1)
+
+
+def _nth_weekday(year, month, weekday, n):
+    first = dt.date(year, month, 1)
+    first += dt.timedelta(days=(weekday - first.weekday()) % 7)
+    return first + dt.timedelta(weeks=n - 1)
+
+
+def _last_weekday(year, month, weekday):
+    last = dt.date(year, month, calendar.monthrange(year, month)[1])
+    return last - dt.timedelta(days=(last.weekday() - weekday) % 7)
+
+
+def _observed(day, saturday_moves=True):
+    """The weekday a fixed-date holiday is kept on, or None."""
+    if day.weekday() == 5:
+        return day - dt.timedelta(days=1) if saturday_moves else None
+    if day.weekday() == 6:
+        return day + dt.timedelta(days=1)
+    return day
+
+
+def exchange_holidays(year):
+    """The days NYMEX and COMEX do not settle in `year`."""
+    if year not in _HOLIDAYS:
+        days = {
+            _observed(dt.date(year, 1, 1), saturday_moves=False),
+            _nth_weekday(year, 1, 0, 3),                # Martin Luther King
+            _nth_weekday(year, 2, 0, 3),                # Presidents' Day
+            _easter(year) - dt.timedelta(days=2),       # Good Friday
+            _last_weekday(year, 5, 0),                  # Memorial Day
+            _observed(dt.date(year, 7, 4)),
+            _nth_weekday(year, 9, 0, 1),                # Labor Day
+            _nth_weekday(year, 11, 3, 4),               # Thanksgiving
+            _observed(dt.date(year, 12, 25)),
+        }
+        if year >= 2022:
+            days.add(_observed(dt.date(year, 6, 19)))   # Juneteenth
+        days.discard(None)
+        _HOLIDAYS[year] = frozenset(days)
+    return _HOLIDAYS[year]
+
+
+def is_business_day(day):
+    return day.weekday() < 5 and day not in exchange_holidays(day.year)
+
+
+def _business_days_before(day, n):
+    """The n-th business day strictly before `day`."""
+    while n:
+        day -= dt.timedelta(days=1)
+        if is_business_day(day):
+            n -= 1
+    return day
+
+
+def last_trade_date(root, year, month):
+    """The last trade date of one contract month. Pure."""
+    if CONTRACT_ROOTS[root]["expires"] == "before_25th":
+        prior = dt.date(year, month, 1) - dt.timedelta(days=1)
+        anchor = dt.date(prior.year, prior.month, 25)
+        if not is_business_day(anchor):
+            anchor = _business_days_before(anchor, 1)
+        return _business_days_before(anchor, 3)
+    after = (dt.date(year, month, 28) + dt.timedelta(days=4)).replace(day=1)
+    return _business_days_before(after, 3)
+
+
+def contract_code(root, year, month):
+    """("CL", 2026, 11) -> "CLX26", the exchange's own name for it."""
+    return "%s%s%02d" % (root, MONTH_CODES[month - 1], year % 100)
+
+
+def contract_parts(code):
+    """"CLX26" -> ("CL", 2026, 11). Raises ValueError on anything else."""
+    root, letter, year = code[:-3], code[-3:-2], code[-2:]
+    if (root not in CONTRACT_ROOTS or letter not in MONTH_CODES
+            or len(letter) != 1 or not year.isdigit()):
+        raise ValueError("not a contract this feed names: %r" % (code,))
+    return root, 2000 + int(year), MONTH_CODES.index(letter) + 1
+
+
+def contract_symbol(code):
+    """"CLX26" -> "CLX26.NYM", the provider's symbol for that contract."""
+    return "%s.%s" % (code, CONTRACT_ROOTS[contract_parts(code)[0]]["suffix"])
+
+
+def contract_for(root, session, position=0):
+    """The contract that answers for `session`: the one with the earliest
+    last trade date on or after it, or the one `position` months later.
+    Every calendar month is listed for all three roots. Pure."""
+    year, month = session.year, session.month
+    while last_trade_date(root, year, month) < session:
+        year, month = (year, month + 1) if month < 12 else (year + 1, 1)
+    month += position
+    year, month = year + (month - 1) // 12, (month - 1) % 12 + 1
+    return contract_code(root, year, month)
+
+
+def resolved(cfg, session):
+    """(cfg with a "symbol", contract code or None) for one session.
+
+    An instrument with a fixed symbol comes back as it is. A commodity gets
+    the symbol of the contract the calendar gives for the session."""
+    if "root" not in cfg:
+        return cfg, None
+    code = contract_for(cfg["root"], session, cfg.get("position", 0))
+    return dict(cfg, symbol=contract_symbol(code)), code
+
+
+# ---------------------------------------------------------------------------
 # The Yahoo path (every instrument but US2Y)
 # ---------------------------------------------------------------------------
 # The same three rules the Treasury path follows, for the same reason: what
@@ -361,23 +585,26 @@ def _fetch_treasury(ticker, cfg, as_of):
 #    28 stand-ins in the five holiday files are unmarked. On the night
 #    itself the proof does not exist yet, so a holiday Friday's instruments
 #    are "missing" from a live run and filled by a later full rewrite.
-#  * A bar the exchange has not settled is not a close. The five symbols
+#  * A bar the exchange has not settled is not a close. The instruments
 #    marked "settles" trade past the cash close, and until Yahoo loads the
-#    settlement the bar dated as_of is a quote: the last trade, of whichever
-#    contract month is most active, and on a weekday evening the first
-#    trades of the NEXT session. Read on the evening of the session, WTI,
+#    settlement the bar dated as_of is a quote: the last trade (for a
+#    continuous symbol, of whichever contract month is most active), and on
+#    a weekday evening the first trades of the NEXT session. Through
+#    2026-10-02 the commodities were read as continuous symbols. Read on the
+#    evening of the session, WTI,
 #    gold, silver and the dollar index were wrong in all 11 files that tried
 #    (three weekly, eight daily) and the 2-year future in 10. WTI for
 #    2026-09-18 went in at 95.47 against a settled 100.30 (#110); the daily
 #    file for 2026-09-22 holds 89.63 against 94.59, on a volume of 1,643.
 #    Read from 13:07 UTC the next day onward, WTI was right in five files of
-#    five. So those five are not read before 13:00 UTC on the day after
-#    as_of; earlier they are "missing". That hour is where the evidence
-#    starts, not a measured boundary: the latest read that failed was at
-#    02:58 UTC. Nor does it settle which contract month the bar is (SI=F at
-#    14:10 UTC on 2026-08-29 was the active contract's settlement, and the
-#    history has since become the front month's). The Cboe indices, ^TNX
-#    and ^VIX, are final by evening and were right in all 11.
+#    five. So they are not read before 13:00 UTC on the day after as_of;
+#    earlier they are "missing". That hour is where the evidence starts, not
+#    a measured boundary: the latest read that failed was at 02:58 UTC. Nor
+#    did it settle which contract month a continuous symbol's bar was (SI=F
+#    at 14:10 UTC on 2026-08-29 was the active contract's settlement, and
+#    the history has since become the front month's); naming the contract
+#    is what settles that. The Cboe indices, ^TNX and ^VIX, are final by
+#    evening and were right in all 11.
 #
 # The window opens on the week's Monday because nothing earlier can be used,
 # and because one that opens on the Sunday US clocks go forward returns no
@@ -441,38 +668,71 @@ def select_bar(days, as_of, cfg, now):
     return max(earlier), None
 
 
-def _fetch_one(ticker, cfg, friday):
-    """Fetch one instrument's bar for `friday`, which is any session date:
-    the daily feed passes its own. Returns (entry_dict, error_str).
+def history(symbol, start, end):
+    """{date: row} of one symbol's bars in [start, end), ISO dates.
 
-    entry is {"close", "volume"}, and when the value is a stand-in from an
-    earlier session of the same week, "observed" (that session's date) and
-    a "note" saying so in words."""
-    symbol = cfg["symbol"]
-    monday = friday - dt.timedelta(days=friday.weekday())
-    start = monday.isoformat()
-    end = (friday + dt.timedelta(days=8)).isoformat()
-    try:
-        hist = yf.Ticker(symbol).history(start=start, end=end)
-    except Exception as exc:  # network/parse failure: never kill the batch
-        return None, "%s: %s" % (type(exc).__name__, str(exc)[:160])
-    if hist is None or hist.empty:
-        return None, "no data returned for window %s..%s" % (start, end)
-
+    Raises on a failed fetch. An empty dict means the provider answered and
+    has nothing: a window with no sessions, or a contract it has dropped.
+    scripts/backfill_commodities.py reads through this too, so a history
+    entry and a weekly file see the provider the same way."""
+    hist = yf.Ticker(symbol).history(start=start, end=end)
     bars = {}
+    if hist is None or hist.empty:
+        return bars
     for idx, row in hist.iterrows():
         close = row["Close"]
         if close is None or close != close:     # a NaN bar is not a bar
             continue
         bars[idx.date()] = row
+    return bars
+
+
+def _fetch_one(ticker, cfg, friday):
+    """Fetch one instrument's bar for `friday`, which is any session date:
+    the daily feed passes its own. Returns (entry_dict, error_str).
+
+    entry is {"close", "volume"}; for a commodity also "contract", the
+    contract month the bar belongs to; and when the value is a stand-in from
+    an earlier session of the same week, "observed" (that session's date)
+    and a "note" saying so in words."""
+    cfg, contract = resolved(cfg, friday)
+    symbol = cfg["symbol"]
+    monday = friday - dt.timedelta(days=friday.weekday())
+    start = monday.isoformat()
+    end = (friday + dt.timedelta(days=8)).isoformat()
+    try:
+        bars = history(symbol, start, end)
+    except Exception as exc:  # network/parse failure: never kill the batch
+        return None, "%s: %s" % (type(exc).__name__, str(exc)[:160])
+    if not bars:
+        if contract is None:
+            return None, "no data returned for window %s..%s" % (start, end)
+        # Name the contract, so the gap can be filled, and say so when the
+        # reason is the usual one: it has expired and is no longer served.
+        last = last_trade_date(*contract_parts(contract))
+        gone = ("; its last trade date is %s, and the provider drops a "
+                "contract once it has expired" % last.isoformat()
+                if last < _utcnow().date() else "")
+        return None, ("no data returned for %s in window %s..%s%s"
+                      % (symbol, start, end, gone))
 
     observed, err = select_bar(set(bars), friday, cfg, _utcnow())
     if err is not None:
         return None, err
+    if contract is not None and observed != friday:
+        there = contract_for(cfg["root"], observed, cfg.get("position", 0))
+        if there != contract:
+            return None, (
+                "%s printed nothing on %s, and the last session of that "
+                "week, %s, belongs to %s; one contract month does not "
+                "stand in for another"
+                % (symbol, friday.isoformat(), observed.isoformat(), there))
 
     row = bars[observed]
     close, volume = normalize_bar(row["Close"], row.get("Volume"), cfg)
     entry = {"close": close, "volume": volume}
+    if contract is not None:
+        entry["contract"] = contract
     if observed != friday:
         entry["observed"] = observed.isoformat()
         entry["note"] = ("%s printed nothing on %s; used %s, the last bar "
@@ -490,14 +750,17 @@ def fetch_special_instruments(friday_date: str) -> dict:
     "note" when an earlier session of the week stands in for a skipped one.
     Failures land in "missing", never silently -- a bar that is not settled
     yet is one of them -- and one instrument never stands in for another: no
-    Treasury row means no US2Y, whatever US2Y_FUT printed.
+    Treasury row means no US2Y, whatever US2Y_FUT printed, and no bar for
+    the named contract means no WTI, whatever CL=F shows.
 
-    "provenance" is {block: {ticker: {"source", "fetched_at"[, "observed"]}}}
-    and names two kinds of instrument: one that did not come from Yahoo
-    (US2Y alone), and one whose value is a stand-in, where "observed" is the
-    session it was actually published for. An instrument that came from
-    Yahoo for the date asked has no entry. snapshot.write_weekly commits the
-    block; the file-level source stays "yahoo".
+    "provenance" is {block: {ticker: {"source", "fetched_at"[, "contract"]
+    [, "observed"]}}} and names three kinds of instrument: one that did not
+    come from Yahoo (US2Y alone); a commodity, where "contract" is the
+    contract month the close belongs to; and one whose value is a stand-in,
+    where "observed" is the session it was actually published for. Any
+    other instrument that came from Yahoo for the date asked has no entry.
+    snapshot.write_weekly commits the block; the file-level source stays
+    "yahoo".
     """
     friday = dt.date.fromisoformat(friday_date)
     out = {block: {} for block in INSTRUMENTS}
@@ -510,11 +773,14 @@ def fetch_special_instruments(friday_date: str) -> dict:
                 entry, prov, err = _fetch_treasury(ticker, cfg, friday)
             else:
                 entry, err = _fetch_one(ticker, cfg, friday)
-                if err is None and entry.get("observed"):
+                if err is None and (entry.get("observed")
+                                    or entry.get("contract")):
                     prov = {"source": PROVIDER,
                             "fetched_at": _utcnow().strftime(
-                                "%Y-%m-%dT%H:%M:%SZ"),
-                            "observed": entry.pop("observed")}
+                                "%Y-%m-%dT%H:%M:%SZ")}
+                    for key in ("contract", "observed"):
+                        if entry.get(key):
+                            prov[key] = entry.pop(key)
             if err is not None:
                 out["missing"].append({"ticker": ticker, "reason": err})
                 continue

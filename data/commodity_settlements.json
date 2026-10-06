@@ -1,0 +1,185 @@
+{
+  "about": "Settlements of the nearest-expiry contract for WTI, WTI_NEXT, GOLD and SILVER, for the weeks whose weekly file does not name its contract or does not hold that contract's settlement. Weekly files through 2026-10-02 carry a continuous symbol's bar and are never edited; 'audited_through' is the last week whose committed close may be read without a label, 'series' supersedes a committed close or supplies a missing one (keyed by the weekly file's as_of; 'replaces' is what the file holds), and 'unavailable' lists weeks for which no settlement of the rule's contract can be had. An entry whose 'symbol' is a continuous one names the contract the calendar gives; the provider no longer listed it to confirm. Append-only. Written by scripts/backfill_commodities.py; read by snapshot.commodity_series(). DATA_FEED.md sec.1d.",
+  "instruments": {
+    "GOLD": {
+      "audited_through": "2026-10-02",
+      "continuous": "GC=F",
+      "root": "GC",
+      "series": {
+        "2026-10-02": {
+          "close": 4133.7002,
+          "contract": "GCV26",
+          "fetched_at": "2026-10-05T22:57:29Z",
+          "reason": "The file holds the December contract's settlement: GC=F, which the provider rebuilt onto the active month in September 2026. GOLD is the nearest-expiry contract (owner decision 2026-10-05).",
+          "replaces": {
+            "close": 4162.2998,
+            "volume": 130846
+          },
+          "source": "yahoo-backfill",
+          "symbol": "GCV26.CMX",
+          "volume": 348
+        }
+      },
+      "unavailable": {
+        "2026-08-28": {
+          "checked_at": "2026-10-05T23:01:53Z",
+          "contract": "GCU26",
+          "evidence": "the provider serves nothing for GCU26; GC=F is not the nearest-expiry chain at that roll: on 2026-09-29, after GCU26's last trade, it holds 4179.7002 where GCV26 settled 4147.7002. Its bar for 2026-08-28 is another contract month's",
+          "reason": "The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28."
+        },
+        "2026-09-11": {
+          "checked_at": "2026-10-05T23:02:14Z",
+          "contract": "GCU26",
+          "evidence": "the provider serves nothing for GCU26; GC=F is not the nearest-expiry chain at that roll: on 2026-09-29, after GCU26's last trade, it holds 4179.7002 where GCV26 settled 4147.7002. Its bar for 2026-09-11 is another contract month's",
+          "reason": "The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28."
+        },
+        "2026-09-18": {
+          "checked_at": "2026-10-05T23:02:39Z",
+          "contract": "GCU26",
+          "evidence": "the provider serves nothing for GCU26; GC=F is not the nearest-expiry chain at that roll: on 2026-09-29, after GCU26's last trade, it holds 4179.7002 where GCV26 settled 4147.7002. Its bar for 2026-09-18 is another contract month's",
+          "reason": "The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28."
+        },
+        "2026-09-25": {
+          "checked_at": "2026-10-05T23:03:09Z",
+          "contract": "GCU26",
+          "evidence": "the provider serves nothing for GCU26; GC=F is not the nearest-expiry chain at that roll: on 2026-09-29, after GCU26's last trade, it holds 4179.7002 where GCV26 settled 4147.7002. Its bar for 2026-09-25 is another contract month's",
+          "reason": "The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28."
+        }
+      }
+    },
+    "SILVER": {
+      "audited_through": "2026-10-02",
+      "continuous": "SI=F",
+      "root": "SI",
+      "series": {
+        "2026-08-28": {
+          "close": 66.995,
+          "contract": "SIU26",
+          "fetched_at": "2026-10-05T23:01:22Z",
+          "reason": "The file was read at 14:10 UTC on the Saturday and holds the December contract's settlement; the provider's bar for the date was not yet the nearest-expiry contract's.",
+          "replaces": {
+            "close": 67.786,
+            "volume": 85735
+          },
+          "source": "yahoo-backfill",
+          "symbol": "SI=F",
+          "volume": 4329
+        },
+        "2026-09-11": {
+          "close": 64.554,
+          "contract": "SIU26",
+          "fetched_at": "2026-10-05T23:00:50Z",
+          "reason": "The file was read on the Friday evening and holds the December contract's last trade, which is what SI=F quotes live; the nearest-expiry contract was September.",
+          "replaces": {
+            "close": 65.02,
+            "volume": 52640
+          },
+          "source": "yahoo-backfill",
+          "symbol": "SI=F",
+          "volume": 526
+        },
+        "2026-09-18": {
+          "close": 66.556,
+          "contract": "SIU26",
+          "fetched_at": "2026-10-05T22:59:54Z",
+          "reason": "The file was read on the Friday evening and holds the December contract's last trade, which is what SI=F quotes live; the nearest-expiry contract was September.",
+          "replaces": {
+            "close": 66.785,
+            "volume": 43186
+          },
+          "source": "yahoo-backfill",
+          "symbol": "SI=F",
+          "volume": 97
+        },
+        "2026-09-25": {
+          "close": 64.245,
+          "contract": "SIU26",
+          "fetched_at": "2026-10-05T22:59:02Z",
+          "reason": "The file was read on the Friday evening and holds the December contract's last trade, which is what SI=F quotes live; the nearest-expiry contract was September.",
+          "replaces": {
+            "close": 64.71,
+            "volume": 36179
+          },
+          "source": "yahoo-backfill",
+          "symbol": "SI=F",
+          "volume": 49
+        },
+        "2026-10-02": {
+          "close": 59.977,
+          "contract": "SIV26",
+          "fetched_at": "2026-10-05T22:58:11Z",
+          "reason": "Read by contract name on 2026-10-05: the committed close is the nearest-expiry contract's settlement. Recorded so that the first week written with named contracts has a named week before it.",
+          "source": "yahoo-backfill",
+          "symbol": "SIV26.CMX",
+          "volume": 229
+        }
+      },
+      "unavailable": {}
+    },
+    "WTI": {
+      "audited_through": "2026-10-02",
+      "continuous": "CL=F",
+      "root": "CL",
+      "series": {
+        "2026-09-11": {
+          "close": 100.05,
+          "contract": "CLV26",
+          "fetched_at": "2026-10-05T23:00:20Z",
+          "reason": "The file was read on the Friday evening, before the exchange settlement was loaded, and holds a last trade.",
+          "replaces": {
+            "close": 99.99,
+            "volume": 373308
+          },
+          "source": "yahoo-backfill",
+          "symbol": "CL=F",
+          "volume": 399142
+        },
+        "2026-09-18": {
+          "close": 100.3,
+          "contract": "CLV26",
+          "fetched_at": "2026-10-05T22:59:30Z",
+          "reason": "The file was read at 02:40 UTC on the Saturday and holds the November contract's last trade, 95.47 (issue #110). The front month was October until 2026-09-22.",
+          "replaces": {
+            "close": 95.47,
+            "volume": 300567
+          },
+          "source": "yahoo-backfill",
+          "symbol": "CL=F",
+          "volume": 112698
+        },
+        "2026-09-25": {
+          "close": 92.41,
+          "contract": "CLX26",
+          "fetched_at": "2026-10-05T22:58:36Z",
+          "reason": "The file was read on the Friday evening, before the exchange settlement was loaded, and holds a last trade.",
+          "replaces": {
+            "close": 92.44,
+            "volume": 323945
+          },
+          "source": "yahoo-backfill",
+          "symbol": "CLX26.NYM",
+          "volume": 345783
+        },
+        "2026-10-02": {
+          "close": 91.11,
+          "contract": "CLX26",
+          "fetched_at": "2026-10-05T22:58:11Z",
+          "reason": "Read by contract name on 2026-10-05: the committed close is the nearest-expiry contract's settlement. Recorded so that the first week written with named contracts has a named week before it.",
+          "source": "yahoo-backfill",
+          "symbol": "CLX26.NYM",
+          "volume": 337181
+        }
+      },
+      "unavailable": {}
+    },
+    "WTI_NEXT": {
+      "audited_through": "2026-10-02",
+      "root": "CL",
+      "series": {},
+      "unavailable": {}
+    }
+  },
+  "rule": "nearest-expiry",
+  "schema": "commodity-settlements/v1",
+  "session": "close"
+}

@@ -24,23 +24,34 @@ files commit the FULL universe -- STOCK_UNIVERSE (277; 274 after the 2026-09-21 
 = 293 series tickers -- plus the special-instrument blocks, not just the
 charted ~40. Size math adjusts to ~15KB/file.
 
-Special instruments (US10Y, US2Y, US2Y_FUT, VIX, WTI, GOLD, SILVER, DXY) come
-from scan_pipeline.snapshot_macro.fetch_special_instruments (Job V, built
-concurrently). Contract: returns {"rates": {"US10Y": {...}, "US2Y": {...},
-"US2Y_FUT": {...}}, "vol": {"VIX": {...}}, "commodities": {"WTI": ...,
-"GOLD": ..., "SILVER": ...}, "fx": {"DXY": {...}}, "missing": [{"ticker",
-"reason"}]} with values {"close": float, "volume": float|None}, plus an
-optional "provenance" {block: {ticker: {"source", "fetched_at"[, "observed"]}}}
-naming any instrument that did not come from PROVIDER, and any whose value is
-a stand-in from an earlier session of the week ("observed" is that session).
-A defensive stub fallback covers the module being absent (empty blocks + a
-missing entry), so this file never depends on import success.
+Special instruments (US10Y, US2Y, US2Y_FUT, VIX, WTI, WTI_NEXT, GOLD, SILVER,
+DXY) come from scan_pipeline.snapshot_macro.fetch_special_instruments (Job V,
+built concurrently). Contract: returns {"rates": {"US10Y": {...}, "US2Y":
+{...}, "US2Y_FUT": {...}}, "vol": {"VIX": {...}}, "commodities": {"WTI": ...,
+"WTI_NEXT": ..., "GOLD": ..., "SILVER": ...}, "fx": {"DXY": {...}},
+"missing": [{"ticker", "reason"}]} with values {"close": float, "volume":
+float|None}, plus an optional "provenance" {block: {ticker: {"source",
+"fetched_at"[, "contract"][, "observed"]}}} naming any instrument that did
+not come from PROVIDER, the contract month of each commodity ("contract"),
+and any value that is a stand-in from an earlier session of the week
+("observed" is that session). A defensive stub fallback covers the module
+being absent (empty blocks + a missing entry), so this file never depends on
+import success.
 
 US2Y is the one instrument with a second publisher (2026-10-04): the U.S.
 Treasury par yield curve, because Yahoo has no cash 2-year series. A weekly
 file says so per instrument in provenance.rates.US2Y, and that label is how
 the deriver tells a cash 2-year from the 2YY=F futures mark that every file
 through 2026-10-02 committed under the same key. See cash_2y_series().
+
+WTI, GOLD and SILVER are named contracts (2026-10-05): the nearest-expiry
+month, read under its own symbol, with the contract committed in
+provenance.commodities. Every file through 2026-10-02 holds a continuous
+symbol's bar instead and names nothing, and twelve of those closes are not
+the nearest-expiry contract's settlement. The deriver therefore reads a
+commodity only through commodity_series(), which takes a week's own close
+where the file names its contract and otherwise asks the committed
+settlement file beside the weekly directory (commodity_settlements.json).
 
 NOTE on the block shape: DATA_FEED.md sec.1 sketches rates/vol/commodities as
 bare numbers ({"US10Y": 4.66}); the Job V contract supersedes that sketch and
@@ -64,10 +75,10 @@ Byte-stability contract (Wave 2 backfill + truth gate depend on this):
     fetch_market_data._parse_daily_bars which prefers adjclose.
 
 Derivation purity: derive_market_state() reads ONLY the weekly files,
-facts.json and the committed Treasury 2-year history beside the weekly
-directory (us2y_treasury.json). No network, no clocks; as_of comes from the
-newest weekly file. Given identical inputs it is byte-identical (see
-rederive_and_compare).
+facts.json and the two committed history files beside the weekly directory
+(us2y_treasury.json, commodity_settlements.json). No network, no clocks;
+as_of comes from the newest weekly file. Given identical inputs it is
+byte-identical (see rederive_and_compare).
 """
 
 from __future__ import annotations
@@ -112,7 +123,10 @@ RATE_TICKERS = ["US10Y", "US2Y"]        # market_state "rates" entries
 CASH_2Y = "US2Y"                        # read through cash_2y_series(), never
                                         # straight from the weekly files
 VOL_TICKERS = ["VIX"]                   # weekly-file "vol" block
-COMMODITY_TICKERS = ["WTI", "GOLD", "SILVER"]   # "commodities" block
+COMMODITY_TICKERS = ["WTI", "GOLD", "SILVER"]   # market_state "commodities"
+                                        # entries; read through
+                                        # commodity_series(), never straight
+                                        # from the weekly files
 FX_TICKERS = ["DXY"]                    # "fx" block
 SPECIAL_BLOCKS = ("rates", "vol", "commodities", "fx")
 
@@ -128,6 +142,21 @@ WITNESS = "SPY"
 # the date back out of it, so it is the record and not a comment.
 SESSION_NOTE = "Friday holiday; bars from %s"
 
+# Settlements of the nearest-expiry contract for the weeks whose own file
+# does not name its contract: every week through 2026-10-02 (those files
+# hold a continuous symbol's bar and are never edited), and any later week
+# whose commodity fetch failed. Beside the weekly directory, like the
+# Treasury 2-year history.
+COMMODITY_HISTORY_FILE = "commodity_settlements.json"
+
+# market_state measures these instruments' one-week change on ONE contract.
+# The value is the block entry that carries the following contract's
+# settlement for the same session: in the week the front month changes, last
+# week's WTI_NEXT is this week's WTI contract a week ago. Gold and silver
+# need none: their nearest contract is the spot month, and the step from one
+# spot month to the next is a few days of carry.
+NEXT_CONTRACT = {"WTI": "WTI_NEXT"}
+
 MAX_WORKERS = 10
 PCTILE_WINDOW = 104                     # trailing weeks for pctile_2y
 CORR_WEEKS = 4                          # trailing weekly returns for corr_spy_4w
@@ -138,6 +167,8 @@ CAP_LARGE = 10e9
 CAP_MID = 2e9
 
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# A futures contract as the exchange names it: product, month letter, year.
+_CONTRACT_RE = re.compile(r"^[A-Z]{2}[FGHJKMNQUVXZ]\d{2}$")
 
 
 # ---------------------------------------------------------------------------
@@ -734,12 +765,14 @@ def special_provenance(special, doc: dict) -> Dict[str, dict]:
     The file-level `source` says who supplied the file, and for everything
     but the cash 2-year that is PROVIDER. An instrument from another
     publisher is named here instead of being relabelled by omission:
-    {block: {ticker: {"source", "fetched_at"[, "observed"]}}}. `observed` is
-    the session the value was published for, present only when that is not
-    the file's as_of: the publisher skipped as_of and a later row or bar
-    proved it (snapshot_macro.select_treasury_row, select_bar). A PROVIDER
-    instrument is named only for that reason -- one read for the date asked
-    has no entry, so a label here always means something.
+    {block: {ticker: {"source", "fetched_at"[, "contract"][, "observed"]}}}.
+    `observed` is the session the value was published for, present only when
+    that is not the file's as_of: the publisher skipped as_of and a later
+    row or bar proved it (snapshot_macro.select_treasury_row, select_bar).
+    `contract` is the contract month a commodity's close belongs to. A
+    PROVIDER instrument is named only for one of those two reasons -- any
+    other, read for the date asked, has no entry, so a label here always
+    means something.
 
     Only instruments that made it into `doc` are kept -- a label for an
     entry that is not there describes nothing, and the feed gate refuses it.
@@ -765,6 +798,9 @@ def special_provenance(special, doc: dict) -> Dict[str, dict]:
             observed = rec.get("observed")
             if isinstance(observed, str) and _DATE_RE.match(observed):
                 clean["observed"] = observed
+            contract = rec.get("contract")
+            if isinstance(contract, str) and _CONTRACT_RE.match(contract):
+                clean["contract"] = contract
             out.setdefault(block, {})[str(ticker)] = clean
     return out
 
@@ -981,6 +1017,228 @@ def cash_2y_series(docs: List[Tuple[str, dict]],
     return pts
 
 
+# -- the commodities ----------------------------------------------------------
+def commodity_history_path(weekly_dir: str) -> str:
+    """The settlement file that belongs to a weekly directory."""
+    return os.path.join(os.path.dirname(os.path.abspath(weekly_dir)),
+                        COMMODITY_HISTORY_FILE)
+
+
+def load_commodity_history(path: str) -> Tuple[Dict[str, dict], Optional[str]]:
+    """({instrument: {"audited_through", "series", "unavailable"}}, problem)
+    from commodity_settlements.json. Pure.
+
+    "series" is {week: (close, contract or None)}, "unavailable" is
+    {week: reason}, and "audited_through" is the last week whose committed
+    close may be read without a contract label, or None. Never raises: a
+    file that cannot be read degrades the fields that need it to null with
+    the reason, as load_us2y_history does; `problem` is None when it loaded.
+    """
+    name = os.path.basename(path)
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            doc = json.load(f)
+    except FileNotFoundError:
+        return {}, "%s not found" % name
+    except Exception as exc:
+        return {}, "%s unreadable (%s)" % (name, type(exc).__name__)
+    instruments = doc.get("instruments") if isinstance(doc, dict) else None
+    if not isinstance(instruments, dict):
+        return {}, "%s has no 'instruments' object" % name
+    out: Dict[str, dict] = {}
+    for ticker, rec in instruments.items():
+        if not isinstance(rec, dict):
+            continue
+        series: Dict[str, Tuple[float, Optional[str]]] = {}
+        for d, entry in (rec.get("series") or {}).items():
+            c = entry.get("close") if isinstance(entry, dict) else None
+            if not (_DATE_RE.match(str(d)) and isinstance(c, (int, float))
+                    and not isinstance(c, bool)):
+                continue
+            contract = entry.get("contract")
+            if not (isinstance(contract, str)
+                    and _CONTRACT_RE.match(contract)):
+                contract = None
+            series[str(d)] = (float(c), contract)
+        unavailable: Dict[str, str] = {}
+        for d, entry in (rec.get("unavailable") or {}).items():
+            why = entry.get("reason") if isinstance(entry, dict) else entry
+            if _DATE_RE.match(str(d)):
+                unavailable[str(d)] = str(why or "no reason recorded")
+        through = rec.get("audited_through")
+        if not (isinstance(through, str) and _DATE_RE.match(through)):
+            through = None
+        out[str(ticker)] = {"audited_through": through, "series": series,
+                            "unavailable": unavailable}
+    return out, None
+
+
+def named_contract(doc: dict, block: str, ticker: str) -> Optional[str]:
+    """The contract month a document names for one instrument, or None.
+
+    None is the ordinary answer for every file through 2026-10-02: they
+    hold a continuous symbol's bar, and nothing in them says which month."""
+    prov = doc.get("provenance") if isinstance(doc, dict) else None
+    entries = prov.get(block) if isinstance(prov, dict) else None
+    rec = entries.get(ticker) if isinstance(entries, dict) else None
+    contract = rec.get("contract") if isinstance(rec, dict) else None
+    if isinstance(contract, str) and _CONTRACT_RE.match(contract):
+        return contract
+    return None
+
+
+def commodity_series(docs: List[Tuple[str, dict]], history: Dict[str, dict],
+                     ticker: str) -> Dict[str, Tuple[float, Optional[str]]]:
+    """{week: (settlement, contract or None)} for one commodity, on one
+    rule: the nearest-expiry contract. The only way to read WTI, WTI_NEXT,
+    GOLD or SILVER -- do not take commodities.* from the weekly files
+    directly.
+
+    A commodity key names whatever contract month the provider's continuous
+    symbol showed on the day it was read, in every file through 2026-10-02.
+    Mostly that is the nearest-expiry contract's settlement; in twelve
+    closes it is the active month's, or a last trade read before the
+    settlement, up to 4.8 percent away. Nothing in those files says which.
+    Files written since name the contract in provenance.commodities. So,
+    for a week:
+
+      1. its own close, where the file names the contract;
+      2. else the settlement file's entry for that week (history["series"]);
+      3. else nothing, where the settlement file says none can be had
+         (history["unavailable"]);
+      4. else its own unlabelled close, but only through the week the
+         settlement file says the panel was audited to ("audited_through").
+         That audit is why a close with no label can be read at all;
+      5. else nothing. An unlabelled close from after the audit is a
+         contract month nobody has checked, and is NEVER used.
+
+    A gap reaches market_state as null with a reason. The contract is None
+    for a week read under rule 4, and for an entry the provider could no
+    longer confirm by name.
+    """
+    rec = (history or {}).get(ticker) or {}
+    entries = rec.get("series") or {}
+    unavailable = rec.get("unavailable") or {}
+    through = rec.get("audited_through")
+    out: Dict[str, Tuple[float, Optional[str]]] = {}
+    for d, doc in docs:
+        own = _close_series([(d, doc)], ticker, "commodities").get(d)
+        contract = named_contract(doc, "commodities", ticker)
+        if own is not None and contract:
+            out[d] = (own, contract)
+        elif d in entries:
+            out[d] = entries[d]
+        elif d in unavailable:
+            continue
+        elif own is not None and through and d <= through:
+            out[d] = (own, None)
+    return out
+
+
+def _commodity_gap(docs: List[Tuple[str, dict]], history: Dict[str, dict],
+                   problem: Optional[str], ticker: str, week: str) -> str:
+    """Why commodity_series() has nothing for one week, in words."""
+    doc = dict(docs).get(week)
+    if doc is None:
+        return "no weekly file dated %s" % week
+    rec = (history or {}).get(ticker) or {}
+    if week in (rec.get("unavailable") or {}):
+        return ("no %s settlement on the nearest-expiry contract for %s: %s"
+                % (ticker, week, rec["unavailable"][week]))
+    where = problem or "%s has no entry for it" % COMMODITY_HISTORY_FILE
+    if _close_series([(week, doc)], ticker, "commodities"):
+        return ("the file for %s names no contract for %s, and %s; a close "
+                "of an unknown contract month is never used"
+                % (week, ticker, where))
+    return "the file for %s carries no %s, and %s" % (week, ticker, where)
+
+
+def _commodity_fields(ticker: str, docs: List[Tuple[str, dict]],
+                      history: Dict[str, dict], problem: Optional[str],
+                      as_of: str) -> dict:
+    """The seven market_state fields of one commodity.
+
+    px, d4w, d13w, d52w and pctile_2y compare the nearest-expiry contract on
+    one date with the nearest-expiry contract on another: the level then and
+    the level now, as the instrument is defined. `contract` says which month
+    px is. d1w is the same for gold and silver; for an instrument in
+    NEXT_CONTRACT it is the change in the as_of contract itself, because in
+    the week the front month changes the level comparison is mostly the
+    spread between two months (WTI 2026-09-25: -7.9 percent front to front,
+    -3.8 on the November contract)."""
+    series = commodity_series(docs, history, ticker)
+    pts = {d: close for d, (close, _) in series.items()}
+
+    def gap(week):
+        return _commodity_gap(docs, history, problem, ticker, week)
+
+    def back(weeks):
+        return (datetime.strptime(as_of, "%Y-%m-%d").date()
+                - timedelta(weeks=weeks)).isoformat()
+
+    def level_change(weeks):
+        if as_of not in pts:
+            return None, gap(as_of)
+        if back(weeks) not in pts:
+            return None, gap(back(weeks))
+        return _pct_delta(pts, as_of, weeks)
+
+    def one_contract_change():
+        """d1w on the contract px belongs to."""
+        if as_of not in series:
+            return None, gap(as_of)
+        now, contract = series[as_of]
+        if contract is None:
+            return None, ("the contract month of the %s close is not on "
+                          "record, so a one-week change cannot be shown to "
+                          "be one contract's" % as_of)
+        prior = back(1)
+        if dict(docs).get(prior) is None:
+            return None, gap(prior)
+        held = []
+        for name in (ticker, NEXT_CONTRACT[ticker]):
+            rec = commodity_series(docs, history, name).get(prior)
+            if rec is not None and rec[1] == contract:
+                if rec[0] == 0:
+                    return None, "prior close is 0"
+                return _r1(100.0 * (now / rec[0] - 1.0)), None
+            held.append("%s is %s" % (
+                name, "absent" if rec is None
+                else rec[1] or "a contract not on record"))
+        return None, ("no %s settlement on file for %s (%s); a change "
+                      "across two contract months is not a market move"
+                      % (contract, prior, "; ".join(held)))
+
+    if as_of in series:
+        contract = (series[as_of][1], None)
+        if contract[0] is None:
+            contract = (None, "the %s close predates named contracts and "
+                              "its month was not confirmed afterwards"
+                              % as_of)
+        px = _level(pts, as_of)
+        pct = _pctile_2y(pts, as_of)
+    else:
+        px = contract = pct = (None, gap(as_of))
+    unnamed = any(named_contract(doc, "commodities", ticker) is None
+                  and _close_series([(d, doc)], ticker, "commodities")
+                  for d, doc in docs)
+    if pct[0] is not None and problem and unnamed:
+        # Without the settlement file the window holds only the weeks since
+        # contracts were named; a rank among those is not a 2y percentile.
+        pct = (None, "%s: the settlements from before contracts were named "
+                     "are unavailable" % problem)
+    return {
+        "px": px,
+        "contract": contract,
+        "d1w": (one_contract_change() if ticker in NEXT_CONTRACT
+                else level_change(1)),
+        "d4w": level_change(4),
+        "d13w": level_change(13),
+        "d52w": level_change(52),
+        "pctile_2y": pct,
+    }
+
+
 def _pct_delta(pts: Dict[str, float], as_of: str, weeks: int) -> Tuple[Optional[float], Optional[str]]:
     """Pct change vs the file dated exactly 7*weeks earlier (1dp). Requires
     an exact-date prior file -- adjacent-file substitution would silently
@@ -1148,17 +1406,24 @@ def _cash_2y_fields(pts: Dict[str, float], as_of: str,
 def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
                        prev_market_state: Optional[dict],
                        us2y: Optional[Tuple[Dict[str, float],
-                                            Optional[str]]] = None) -> dict:
+                                            Optional[str]]] = None,
+                       commodity: Optional[Tuple[Dict[str, dict],
+                                                 Optional[str]]] = None
+                       ) -> dict:
     """Core derivation over an explicit (date, doc) list -- the pure core
     shared by derive_market_state() and rederive_and_compare().
 
-    us2y: the load_us2y_history() result, (history, problem)."""
+    us2y: the load_us2y_history() result, (history, problem).
+    commodity: the load_commodity_history() result, (history, problem)."""
     if not docs:
         raise ValueError("no weekly files to derive from")
     as_of = docs[-1][0]
     facts = facts if isinstance(facts, dict) else {}
     us2y_history, us2y_problem = us2y if us2y is not None else (
         {}, "no Treasury 2-year history supplied")
+    commodity_history, commodity_problem = (
+        commodity if commodity is not None
+        else ({}, "no commodity settlement history supplied"))
 
     spy = _close_series(docs, "SPY", None)
 
@@ -1226,8 +1491,8 @@ def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
     # -- commodities / fx -------------------------------------------------------
     commodities = {}
     for t in COMMODITY_TICKERS:
-        commodities[t] = _px_entry(_close_series(docs, t, "commodities"),
-                                   spy, as_of, None, None, with_corr=False)
+        commodities[t] = _entry(_commodity_fields(
+            t, docs, commodity_history, commodity_problem, as_of))
     fx = {}
     for t in FX_TICKERS:
         fx[t] = _px_entry(_close_series(docs, t, "fx"),
@@ -1310,16 +1575,18 @@ def _derive_from_files(docs: List[Tuple[str, dict]], facts: Optional[dict],
 
 def derive_market_state(weekly_dir: str, facts_path: str,
                         prev_market_state: Optional[dict] = None,
-                        us2y_path: Optional[str] = None) -> dict:
+                        us2y_path: Optional[str] = None,
+                        commodity_path: Optional[str] = None) -> dict:
     """Derive the MARKET_GROUNDING sec.1 snapshot from committed weekly
-    files + facts.json + the Treasury 2-year history. PURE: no network, no
+    files + facts.json + the two history files. PURE: no network, no
     clocks; as_of is the newest weekly file's date. Identical inputs ->
     byte-identical output.
 
     prev_market_state: last week's derived state (dict), used only for
     corr_prev. Pass None for the earliest week (corr_prev -> null+reason).
-    us2y_path: the history file; defaults to us2y_treasury.json beside
-    weekly_dir, so existing callers need no change.
+    us2y_path, commodity_path: the history files; they default to
+    us2y_treasury.json and commodity_settlements.json beside weekly_dir, so
+    existing callers need no change.
     """
     docs = _load_weekly_files(weekly_dir)
     facts = None
@@ -1329,20 +1596,24 @@ def derive_market_state(weekly_dir: str, facts_path: str,
     except Exception:
         facts = None  # every facts-fed field degrades to null+reason
     us2y = load_us2y_history(us2y_path or us2y_history_path(weekly_dir))
-    return _derive_from_files(docs, facts, prev_market_state, us2y)
+    commodity = load_commodity_history(
+        commodity_path or commodity_history_path(weekly_dir))
+    return _derive_from_files(docs, facts, prev_market_state, us2y, commodity)
 
 
 def write_market_state(weekly_dir: str, facts_path: str, out_path: str,
                        prev_market_state: Optional[dict] = None,
-                       us2y_path: Optional[str] = None) -> str:
+                       us2y_path: Optional[str] = None,
+                       commodity_path: Optional[str] = None) -> str:
     """Convenience writer around derive_market_state (canonical bytes)."""
     state = derive_market_state(weekly_dir, facts_path, prev_market_state,
-                                us2y_path)
+                                us2y_path, commodity_path)
     return _write_json(out_path, state)
 
 
 def derive_chain(weekly_dir: str, facts_path: str,
-                 us2y_path: Optional[str] = None) -> dict:
+                 us2y_path: Optional[str] = None,
+                 commodity_path: Optional[str] = None) -> dict:
     """Derive the newest week's state through the WHOLE chain, earliest
     weekly file forward -- each week's state feeds the next as
     prev_market_state, so corr_prev is reproduced rather than supplied.
@@ -1350,8 +1621,8 @@ def derive_chain(weekly_dir: str, facts_path: str,
     This is the state rederive_and_compare() checks the committed file
     against, so it is also the one to write when the committed file has to
     be regenerated from scratch (a purity repair, a deriver change, a week
-    added to the Treasury 2-year history). scripts/rederive_market_state.py
-    is that writer."""
+    added to either history file). scripts/rederive_market_state.py is that
+    writer."""
     docs = _load_weekly_files(weekly_dir)
     facts = None
     try:
@@ -1360,11 +1631,14 @@ def derive_chain(weekly_dir: str, facts_path: str,
     except Exception:
         facts = None
     us2y = load_us2y_history(us2y_path or us2y_history_path(weekly_dir))
+    commodity = load_commodity_history(
+        commodity_path or commodity_history_path(weekly_dir))
 
     prev = None
     state = None
     for i in range(len(docs)):
-        state = _derive_from_files(docs[: i + 1], facts, prev, us2y)
+        state = _derive_from_files(docs[: i + 1], facts, prev, us2y,
+                                   commodity)
         prev = state
     if state is None:
         raise ValueError("no weekly files to derive from")
@@ -1372,7 +1646,8 @@ def derive_chain(weekly_dir: str, facts_path: str,
 
 
 def write_market_state_chain(weekly_dir: str, facts_path: str, out_path: str,
-                             us2y_path: Optional[str] = None) -> str:
+                             us2y_path: Optional[str] = None,
+                             commodity_path: Optional[str] = None) -> str:
     """Write market_state.json through the whole chain (canonical bytes).
 
     write_market_state takes last week's state from its caller, which is
@@ -1383,7 +1658,7 @@ def write_market_state_chain(weekly_dir: str, facts_path: str, out_path: str,
     fail it. The chain needs no previous state and is what that check
     compares against, so it is right for one new week, for several, and for
     none."""
-    state = derive_chain(weekly_dir, facts_path, us2y_path)
+    state = derive_chain(weekly_dir, facts_path, us2y_path, commodity_path)
     return _write_json(out_path, state)
 
 
@@ -1417,7 +1692,8 @@ def _first_diff(a, b, path: str = "$") -> Optional[str]:
 
 def rederive_and_compare(weekly_dir: str, facts_path: str,
                          market_state_path: str,
-                         us2y_path: Optional[str] = None
+                         us2y_path: Optional[str] = None,
+                         commodity_path: Optional[str] = None
                          ) -> Tuple[bool, Optional[str]]:
     """Purity self-check for the truth gate.
 
@@ -1435,7 +1711,7 @@ def rederive_and_compare(weekly_dir: str, facts_path: str,
         committed_raw = f.read()
     committed = json.loads(committed_raw)
 
-    state = derive_chain(weekly_dir, facts_path, us2y_path)
+    state = derive_chain(weekly_dir, facts_path, us2y_path, commodity_path)
 
     if canonical_json(state) == canonical_json(committed):
         return True, None

@@ -66,8 +66,11 @@ AUG_WEEK = {
              (D(2026, 8, 28), 14.43, 0), (D(2026, 8, 31), 14.92, 0)],
     "DX-Y.NYB": [(D(2026, 8, 26), 99.17, 0), (D(2026, 8, 27), 99.16, 0),
                  (D(2026, 8, 28), 99.70, 0), (D(2026, 8, 31), 99.43, 0)],
-    "CL=F": [(D(2026, 8, 27), 83.53, 220113), (D(2026, 8, 28), 83.40, 167615),
-             (D(2026, 8, 31), 85.76, 235761)],
+    # The October contract, the front month that week. Through 2026-10-02
+    # the writer read these bars as CL=F.
+    "CLV26.NYM": [(D(2026, 8, 27), 83.53, 220113),
+                  (D(2026, 8, 28), 83.40, 167615),
+                  (D(2026, 8, 31), 85.76, 235761)],
 }
 
 
@@ -81,8 +84,9 @@ JULY_4TH = {
              (D(2025, 7, 7), 17.79, 0)],
     "DX-Y.NYB": [(D(2025, 7, 2), 96.78, 0), (D(2025, 7, 3), 97.18, 0),
                  (D(2025, 7, 7), 97.48, 0)],
-    "CL=F": [(D(2025, 7, 2), 67.45, 265200), (D(2025, 7, 3), 67.0, 0),
-             (D(2025, 7, 4), 66.5, 0), (D(2025, 7, 7), 67.93, 332949)],
+    # The August contract, the front month that week.
+    "CLQ25.NYM": [(D(2025, 7, 2), 67.45, 265200), (D(2025, 7, 3), 67.0, 0),
+                  (D(2025, 7, 4), 66.5, 0), (D(2025, 7, 7), 67.93, 332949)],
 }
 
 
@@ -183,12 +187,14 @@ def test_a_futures_bar_is_not_read_before_it_settles(now, readable):
     against a settled 100.30. 13:07 UTC is the earliest read on file, and
     WTI was right in all five files read from then on."""
     day = D(2026, 9, 18)
-    observed, err = sm.select_bar({D(2026, 9, 17), day}, day, WTI, now)
+    october, contract = sm.resolved(WTI, day)
+    assert contract == "CLV26"
+    observed, err = sm.select_bar({D(2026, 9, 17), day}, day, october, now)
     if readable:
         assert (observed, err) == (day, None)
     else:
         assert observed is None
-        assert "CL=F: the bar dated 2026-09-18 is a quote" in err
+        assert "CLV26.NYM: the bar dated 2026-09-18 is a quote" in err
         assert "not read before 2026-09-19T13:00Z" in err
 
 
@@ -208,8 +214,8 @@ def test_exactly_the_instruments_that_trade_past_the_close_wait():
             for ticker, cfg in instruments.items()
             if cfg.get("settles") == sm.NEXT_DAY}
     assert late == {("rates", "US2Y_FUT"), ("commodities", "WTI"),
-                    ("commodities", "GOLD"), ("commodities", "SILVER"),
-                    ("fx", "DXY")}
+                    ("commodities", "WTI_NEXT"), ("commodities", "GOLD"),
+                    ("commodities", "SILVER"), ("fx", "DXY")}
 
 
 def test_the_gate_and_the_writer_agree_on_who_waits_and_until_when():
@@ -255,7 +261,7 @@ def test_a_stand_in_says_which_session_it_is(provider):
     """July 4th 2025. The futures printed a short session; ^TNX did not."""
     table, _ = provider
     table["^TNX"] = JULY_4TH["^TNX"]
-    table["CL=F"] = JULY_4TH["CL=F"]
+    table["CLQ25.NYM"] = JULY_4TH["CLQ25.NYM"]
     entry, err = sm._fetch_one("US10Y", TNX, D(2025, 7, 4))
     assert err is None
     assert entry["close"] == 4.348
@@ -263,7 +269,8 @@ def test_a_stand_in_says_which_session_it_is(provider):
     assert "2025-07-04" in entry["note"] and "2025-07-03" in entry["note"]
 
     crude, err = sm._fetch_one("WTI", WTI, D(2025, 7, 4))
-    assert (crude, err) == ({"close": 66.5, "volume": None}, None)
+    assert (crude, err) == ({"close": 66.5, "volume": None,
+                             "contract": "CLQ25"}, None)
 
 
 def test_a_nan_bar_is_not_a_bar(provider):
@@ -280,8 +287,8 @@ def test_a_nan_bar_is_not_a_bar(provider):
 def test_an_evening_read_of_crude_is_missing_with_the_reason(
         provider, monkeypatch):
     table, _ = provider
-    table["CL=F"] = [(D(2026, 9, 17), 101.91, 265972),
-                     (D(2026, 9, 18), 95.47, 300567)]
+    table["CLV26.NYM"] = [(D(2026, 9, 17), 101.91, 265972),
+                          (D(2026, 9, 18), 100.19, 98004)]
     monkeypatch.setattr(sm, "_utcnow", lambda: dt.datetime(
         2026, 9, 19, 2, 40, 26, tzinfo=UTC))
     entry, err = sm._fetch_one("WTI", WTI, D(2026, 9, 18))
@@ -315,7 +322,7 @@ def treasury_quiet(monkeypatch):
         {"source": "treasury", "fetched_at": STAMP}, None))
 
 
-def test_a_stand_in_is_named_in_provenance_and_only_a_stand_in(
+def test_a_stand_in_is_named_in_provenance_and_says_which_session(
         provider, treasury_quiet):
     table, _ = provider
     table.update(JULY_4TH)
@@ -330,8 +337,10 @@ def test_a_stand_in_is_named_in_provenance_and_only_a_stand_in(
     assert got["provenance"]["vol"]["VIX"]["observed"] == "2025-07-03"
     assert got["provenance"]["fx"]["DXY"]["observed"] == "2025-07-03"
     assert got["commodities"]["WTI"] == {"close": 66.5, "volume": None}
-    assert "commodities" not in got["provenance"], (
-        "an instrument read for the date asked has no entry")
+    assert got["provenance"]["commodities"] == {"WTI": {
+        "source": "yahoo", "fetched_at": STAMP, "contract": "CLQ25"}}, (
+        "read for the date asked: the contract is named, and nothing says "
+        "'observed'")
 
 
 def test_the_saturday_of_2026_08_29_as_the_writer_now_answers_it(
@@ -342,7 +351,7 @@ def test_the_saturday_of_2026_08_29_as_the_writer_now_answers_it(
     table, _ = provider
     for symbol in ("^TNX", "^VIX", "DX-Y.NYB"):
         table[symbol] = without(AUG_WEEK[symbol], FRI, D(2026, 8, 31))
-    table["CL=F"] = without(AUG_WEEK["CL=F"], D(2026, 8, 31))
+    table["CLV26.NYM"] = without(AUG_WEEK["CLV26.NYM"], D(2026, 8, 31))
     monkeypatch.setattr(sm, "_utcnow", lambda: SATURDAY_1410)
     got = sm.fetch_special_instruments("2026-08-28")
 
@@ -352,7 +361,11 @@ def test_the_saturday_of_2026_08_29_as_the_writer_now_answers_it(
     lost = {m["ticker"]: m["reason"] for m in got["missing"]}
     assert set(lost) >= {"US10Y", "VIX", "DXY"}
     assert all("none after it yet" in lost[t] for t in ("US10Y", "VIX", "DXY"))
-    assert set(got["provenance"]) == {"rates"}, "only Treasury's US2Y"
+    assert got["provenance"]["commodities"] == {"WTI": {
+        "source": "yahoo", "fetched_at": "2026-08-29T14:10:48Z",
+        "contract": "CLV26"}}
+    assert set(got["provenance"]) == {"rates", "commodities"}, (
+        "Treasury's US2Y and the crude contract, and no stand-in")
 
 
 def test_the_stand_in_date_reaches_the_committed_weekly_file(
