@@ -434,7 +434,7 @@ def test_an_ordinary_friday_is_its_own_session(monkeypatch):
 def test_a_friday_that_traded_and_has_not_settled_is_not_a_holiday(
         monkeypatch):
     """Monday 2026-12-21, and the close of Friday the 18th is still null at
-    the provider. A download drops that row, so what comes back is Thursday,
+    the provider. A row with no close is no bar, so what is read is Thursday,
     then Monday: the shape of a holiday. The provider's own listing has the
     Friday, with no close, and nothing stands in for a day that traded."""
     provider = Provider(monkeypatch, HOLIDAYS, today=D(2026, 12, 21))
@@ -1131,7 +1131,7 @@ def test_the_backfill_no_longer_calls_an_unposted_friday_a_holiday(
 
 def test_the_backfill_asks_the_listing_before_thursday_stands_in(
         tmp_path, monkeypatch, no_specials):
-    """Its history drops a row with no close like every download does. A
+    """Its history drops a row with no close, as every reader here does. A
     Friday that traded and has not settled must not go in as a holiday
     because Monday's bar happens to be there."""
     hist = {"SPY": history(D(2026, 12, 17), D(2026, 12, 21)),

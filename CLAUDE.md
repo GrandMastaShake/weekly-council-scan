@@ -394,9 +394,9 @@ refused once with nothing asking again.
   for every ticker and the file says so: `"Friday holiday; bars from
   <date>"`, the note the backfilled holiday weeks carry and
   `audit_series.py` reads. The later bar is checked against the provider's
-  raw chart first, as the daily feed checks: a download returns a session
-  whose close is not posted as no bar at all, the raw listing shows it with
-  a null, and a Friday listed there is never a holiday.
+  raw chart first, as the daily feed checks: a session whose close is not
+  posted has a row with a null close, every writer here reads a row with no
+  close as no bar, and a Friday the raw chart lists is never a holiday.
 
   **So a holiday week lands a week late, on purpose.** The job runs on the
   Saturday and SPY's next bar is Monday's, so the proof is never there on the

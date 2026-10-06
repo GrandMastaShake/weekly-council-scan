@@ -382,13 +382,15 @@ def fetch_session_bars(tickers: List[str], session_date: str) -> dict:
 #    bar is then the one dated that session, and the file says so in
 #    `session_note`.
 #  * The proof is checked against the provider's own listing. A later bar
-#    proves a holiday only if the Friday really has no row, and a download
-#    cannot say: a session whose close has not been posted comes back from
-#    it as no bar at all, exactly like a day that never traded. So before
-#    an earlier session stands in, the raw chart is asked, as the daily
-#    feed asks it (scripts/daily_observe.py, witness_rows). A holiday is
-#    not listed there. A session with a null close is, and that Friday is
-#    refused however many bars follow it.
+#    proves a holiday only if the Friday really has no row, and the bars
+#    read above cannot say: a session whose close has not been posted has
+#    a row with a null close, and a row with no close is no bar to any
+#    reader here, exactly like a day that never traded. So before an
+#    earlier session stands in, the raw chart is asked, as the daily feed
+#    asks it (scripts/daily_observe.py, witness_rows). A holiday is not
+#    listed there. A session with a null close is -- seen at 00:07 UTC on
+#    2026-10-06, the row for the 5th with its volume and no close -- and
+#    that Friday is refused however many bars follow it.
 #  * On the night itself the proof does not exist. The job runs on the
 #    Saturday and the next bar is Monday's, so a holiday week is never
 #    written by the run that first meets it. It is written by the first run
