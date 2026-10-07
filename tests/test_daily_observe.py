@@ -19,7 +19,7 @@ from datetime import date, datetime, timedelta, timezone
 import pytest
 
 import daily_observe as do
-from conftest import SCRIPTS
+from conftest import ROOT, SCRIPTS
 
 
 @pytest.fixture(autouse=True)
@@ -336,12 +336,41 @@ def test_audit_passes_a_complete_panel():
 
 
 def test_audit_warns_when_only_the_newest_settled_session_is_unwritten():
-    """One attempt missed and the next has not run. Worth a line, not a red
-    run: the morning attempt exists for exactly this."""
+    """The provider's roll is over and the session has no file. Worth a
+    line, not a red run. Until 2026-10-07 this was said from the moment the
+    witness settled; see the next test for why it waits now."""
     level, lines = do.audit_feed(SESSIONS[:-1], settled(SESSIONS),
-                                 now=utc("2026-10-03 03:00"))
+                                 now=utc("2026-10-03 06:00"))    # 02:00 ET
     assert level == "WARN"
     assert lines[0].startswith("WARN: 2026-10-02 is settled")
+
+
+def test_audit_calls_a_session_the_roll_may_not_have_reached_pending():
+    """The witness settles early in the provider's roll. An attempt that
+    finds SPY posted and other names not declines, by design, and the audit
+    that runs after it used to read the same state as an attempt that
+    missed. It is the session waiting for the morning, not a hole and not a
+    warning: 01:01 UTC is when run 37554944269 found 2026-10-06 that way."""
+    level, lines = do.audit_feed(SESSIONS[:-1], settled(SESSIONS),
+                                 now=utc("2026-10-03 01:01"))
+    assert level == "OK"
+    assert lines[0] == ("OK: daily feed complete -- 28 settled session(s) "
+                        "from 2026-08-24 through 2026-10-01, each with a "
+                        "file.")
+    assert lines[1].startswith(
+        "PENDING: 2026-10-02 has closed, SPY has settled")
+    assert "02:00 US/Eastern on 2026-10-03" in lines[1]
+    assert len(lines) == 2
+
+
+def test_audit_still_fails_on_a_hole_while_the_newest_session_waits():
+    """Pending is for the newest session alone. One behind it with no file
+    is a hole at any hour."""
+    have = [d for d in SESSIONS[:-1] if d != "2026-09-30"]
+    level, lines = do.audit_feed(have, settled(SESSIONS),
+                                 now=utc("2026-10-03 01:01"))
+    assert level == "FAIL"
+    assert "2026-09-30, 2026-10-02" in lines[0]
 
 
 def test_audit_treats_a_null_close_as_pending_not_missing():
@@ -554,6 +583,662 @@ def test_audit_mode_exits_nonzero_on_a_hole_and_writes_nothing(
                                          newline="\n")
     assert do.main(["--audit", "--out", str(tmp_path)]) == 0
     assert capsys.readouterr().out.startswith("OK: daily feed complete")
+
+
+# -- the half-posted session --------------------------------------------------
+#
+# Run 37554944269 wrote 2026-10-06.json at 01:01 UTC on the 7th with SPY
+# settled and 59 names not yet posted. The panel it was written into is read
+# here as committed, and never written to.
+
+PANEL = ROOT / "data" / "daily"
+
+# The 59, as that file's `missing` lists them. Kept here because the file is
+# the owner's to repair: withdrawn or made whole, it stops saying this.
+HALF_POSTED = (
+    "ABBV ABNB ANET BFLY BTC CARR CEG COIN COLD CRSP CRWD CVNA DDOG DOW FIVE "
+    "GEHC GEV GLPI GOOG HIMS HLT HPE INVH IONQ IQV KVUE META MP MRNA NOW NTLA "
+    "OKLO OTIS PANW PLTR PSX PYPL QBTS QUBT RBLX RDDT RGTI RKLB ROKU SIDU "
+    "SOFI SOLV SOUN SPCX SPOT SYM UPST VEEV VICI VST XLC XLRE ZS ZTS").split()
+
+
+def committed(day: str) -> dict:
+    return json.loads((PANEL / (day + ".json")).read_text(encoding="utf-8"))
+
+
+def asked_for(doc: dict) -> list:
+    """What the run that wrote a file asked the provider for: a name is in
+    `series` or it is in `missing`, never neither."""
+    return sorted(set(doc["series"]) | {m["ticker"] for m in doc["missing"]})
+
+
+def fetched(doc: dict) -> datetime:
+    return datetime.strptime(doc["fetched_at"], "%Y-%m-%dT%H:%M:%SZ").replace(
+        tzinfo=timezone.utc)
+
+
+def replay(day: str, held: dict | None = None) -> list:
+    """Put a committed file back through the gate: its own names, its own
+    bars and its own clock, against the sessions that stand before it.
+
+    Those are read from the panel on disk, or from `held` ({session:
+    names}) when the test has to say which sessions count. Not quite what
+    the run that wrote the file met: 2026-09-22, 09-23 and 10-05 were
+    written while sessions before them were still lost, and are compared
+    here with the ones recovered since."""
+    doc = committed(day)
+    if held is None:
+        sessions, names = do.recent_bars(str(PANEL), day)
+    else:
+        sessions, names = do.recent_bars(str(PANEL / "none"), day, held)
+    return do.assert_session_posted(day, asked_for(doc), doc["series"],
+                                    sessions, names, now=fetched(doc))
+
+
+def on_file(root, day: str, *tickers) -> None:
+    do.write_document(
+        do.build_document(day, {"bars": bars(*tickers), "missing": []}, None),
+        str(root))
+
+
+def short_by(*gone):
+    """A fetch that came back without some names, the way the batch and the
+    one-by-one retry both did that night."""
+    def fetch(tickers, as_of):
+        return {"bars": bars(*[t for t in tickers if t not in gone]),
+                "missing": [{"ticker": t, "reason": "no bar dated " + as_of}
+                            for t in tickers if t in gone]}
+    return fetch
+
+
+def no_special(*a, **k):
+    raise AssertionError("fetched the instruments for a file it will not "
+                         "write")
+
+
+@pytest.fixture
+def universe(monkeypatch):
+    """A feed of five names, so a panel fits in a test: what the run fetches
+    and what it is held to, both. Not the real feed's, so that a name
+    leaving tickers.py one day cannot change what these tests count."""
+    names = ["SPY", "AAPL", "MSFT", "META", "BTC"]
+    monkeypatch.setattr(do, "observation_universe", lambda weekly=None: names)
+    monkeypatch.setattr(do, "equity_universe", lambda: list(names))
+    return names
+
+
+def test_no_session_on_file_before_2026_10_06_would_have_been_refused():
+    """The bound is read off the panel, and this is the reading. Each of the
+    30 sessions before 2026-10-06, replayed at the minute it was fetched,
+    against the sessions before it: the evening files hold every expected
+    name, and the files cut days later are short by one at most. That one is
+    AVB, whose last bar the provider kept is 2026-08-24, for the five
+    sessions that bar stays in view.
+
+    From 2026-08-24 through 2026-10-05 and no further either way, each
+    held against the others of that span alone. Those files are append-only
+    and this cannot change. A later file is the gate's to judge when it is
+    written, not this test's afterwards: the suite runs in the daily job
+    before a session is committed, and a pin on files not yet written would
+    stop that job over a file already on main. An earlier one, bootstrapped
+    some day, would bring names the first of these sessions never held."""
+    days = [d for d in do.panel_sessions(str(PANEL))
+            if "2026-08-24" <= d <= "2026-10-05"]
+    assert len(days) == 30
+    held = {day: set(committed(day)["series"]) for day in days}
+    gone = {day: replay(day, held) for day in days}
+
+    assert {day: names for day, names in gone.items() if names} == {
+        day: ["AVB"] for day in ("2026-08-25", "2026-08-26", "2026-08-27",
+                                 "2026-08-28", "2026-08-31")}
+    assert max(len(names) for names in gone.values()) < do.MAX_GONE
+    in_the_evening = [day for day in days
+                      if do.roll_may_be_running(day, fetched(committed(day)))]
+    assert len(in_the_evening) == 9, in_the_evening
+    assert not any(gone[day] for day in in_the_evening)
+
+
+def test_the_half_posted_fetch_of_2026_10_06_is_refused():
+    """What run 37554944269 had in hand at 01:01 UTC on the 7th: the 336
+    names of the session before, 59 of them without a bar. Built from
+    2026-10-05.json and the list above, so it holds whatever becomes of
+    2026-10-06.json."""
+    before = committed("2026-10-05")
+    assert set(HALF_POSTED) < set(before["series"]) and len(HALF_POSTED) == 59
+    names = sorted(before["series"])
+    posted = {t: before["series"][t] for t in names if t not in HALF_POSTED}
+    sessions, held = do.recent_bars(str(PANEL), "2026-10-06")
+    assert sessions == ["2026-09-29", "2026-09-30", "2026-10-01",
+                        "2026-10-02", "2026-10-05"]
+
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        do.assert_session_posted("2026-10-06", names, posted, sessions, held,
+                                 now=utc("2026-10-07 01:01"))
+    assert exc.value.gone == sorted(HALF_POSTED)
+    assert len(exc.value.gone) > do.MAX_GONE
+    said = str(exc.value)
+    assert said.startswith(
+        "59 names with a bar in the last 5 sessions on file (2026-09-29 .. "
+        "2026-10-05) have none dated 2026-10-06: ABBV, ABNB, ANET, BFLY, BTC, "
+        "CARR, CEG, COIN, ... and 51 more. SPY has settled and they have "
+        "not.")
+    assert "until 02:00 US/Eastern on 2026-10-07" in said
+    assert "(it is 21:01 on 2026-10-06)" in said
+    assert "The next scheduled attempt writes the session." in said
+
+    # ... and at any hour after, because 59 is no delisting.
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        do.assert_session_posted("2026-10-06", names, posted, sessions, held,
+                                 now=utc("2026-10-07 09:15"))
+    assert "did not answer for part of the panel" in str(exc.value)
+    assert "The next scheduled attempt" not in str(exc.value)
+
+
+def test_2026_10_06_as_committed_is_the_file_the_gate_refuses():
+    """The file itself, while it stands as that run left it: short by 59,
+    and not edited. Whether it is withdrawn, written again or added to is
+    the owner's decision, and this test must not be what stops it: the daily
+    job runs the suite before it commits a session. So it reads the file
+    only while it is still that run's, and the test above goes on holding
+    the bound when it is not."""
+    path = PANEL / "2026-10-06.json"
+    if not path.is_file():
+        pytest.skip("2026-10-06.json has been withdrawn")
+    doc = committed("2026-10-06")
+    if (doc.get("fetched_at") != "2026-10-07T01:01:44Z"
+            or len(doc["series"]) != 277):
+        pytest.skip("2026-10-06.json is no longer the file run 37554944269 "
+                    "left")
+    assert "SPY" in doc["series"]
+    assert not set(HALF_POSTED) & set(doc["series"])
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        replay("2026-10-06")
+    assert exc.value.gone == sorted(HALF_POSTED)
+
+
+def test_a_short_file_does_not_hide_the_same_names_the_next_night(
+        tmp_path, monkeypatch):
+    """Why a file is compared with five sessions and not with the one
+    before it. The provider posts oldest listing first, so a roll caught at
+    the same point two nights running is short of the same names, and the
+    first night's file, which stays as written, holds none of them."""
+    for day in ("2026-09-30", "2026-10-01", "2026-10-02", "2026-10-05"):
+        on_file(tmp_path, day, "SPY", "AAPL", "META", "BTC")
+    on_file(tmp_path, "2026-10-06", "SPY", "AAPL")           # the short one
+    asked, tonight = ["SPY", "AAPL", "META", "BTC"], bars("SPY", "AAPL")
+    daily = str(tmp_path / "daily")
+
+    sessions, names = do.recent_bars(daily, "2026-10-07")
+    assert sessions[0] == "2026-09-30" and sessions[-1] == "2026-10-06"
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        do.assert_session_posted("2026-10-07", asked, tonight, sessions,
+                                 names, now=utc("2026-10-08 01:01"))
+    assert exc.value.gone == ["BTC", "META"]
+
+    monkeypatch.setattr(do, "RECENT_SESSIONS", 1)
+    sessions, names = do.recent_bars(daily, "2026-10-07")
+    assert sessions == ["2026-10-06"]
+    assert do.assert_session_posted("2026-10-07", asked, tonight, sessions,
+                                    names, now=utc("2026-10-08 01:01")) == []
+
+
+def test_recent_bars_are_the_five_sessions_before_and_no_later_one(tmp_path):
+    days = weekdays("2026-09-21", "2026-10-02")              # ten sessions
+    for n, day in enumerate(days):
+        on_file(tmp_path, day, "SPY", "N" + str(n))
+    sessions, names = do.recent_bars(str(tmp_path / "daily"), "2026-09-30")
+    assert sessions == ["2026-09-23", "2026-09-24", "2026-09-25",
+                        "2026-09-28", "2026-09-29"]
+    assert names == {"SPY", "N2", "N3", "N4", "N5", "N6"}
+    nothing = ([], set())
+    assert do.recent_bars(str(tmp_path / "daily"), "2026-09-21") == nothing
+    assert do.recent_bars(str(tmp_path / "absent"), "2026-09-30") == nothing
+
+
+def test_recent_bars_look_past_a_file_that_holds_no_series(tmp_path):
+    """A file that cannot say what it holds is not a session to compare
+    with, and does not use up one of the five. truth_check --feed is what
+    fails it. A correction is not a session either."""
+    for day in weekdays("2026-09-21", "2026-09-29"):         # seven
+        on_file(tmp_path, day, "SPY", "AAPL")
+    d = tmp_path / "daily"
+    (d / "2026-09-25.json").write_text("{}\n", encoding="utf-8", newline="\n")
+    (d / "2026-09-28.json").write_text("not json", encoding="utf-8")
+    (d / "2026-09-29.corrected.json").write_text(
+        json.dumps({"series": {"FROM_A_CORRECTION": {}}}), encoding="utf-8")
+    sessions, names = do.recent_bars(str(d), "2026-09-30")
+    assert sessions == ["2026-09-21", "2026-09-22", "2026-09-23",
+                        "2026-09-24", "2026-09-29"]
+    assert names == {"SPY", "AAPL"}
+
+
+def test_recent_bars_count_what_a_bootstrap_has_already_cut(tmp_path):
+    """A range is one download. Each session of it is compared with the
+    ones before it whether they are on disk yet or not, which in a dry run
+    they never are."""
+    on_file(tmp_path, "2026-09-30", "SPY", "ON_DISK")
+    cut = {"2026-10-01": {"SPY", "CUT"}, "2026-10-05": {"SPY", "LATER"}}
+    sessions, names = do.recent_bars(str(tmp_path / "daily"), "2026-10-02",
+                                     cut)
+    assert sessions == ["2026-09-30", "2026-10-01"]
+    assert names == {"SPY", "ON_DISK", "CUT"}
+
+
+@pytest.mark.parametrize("instant,running", [
+    ("2026-10-06 21:45", True),     # the evening attempt, on time
+    ("2026-10-07 01:01", True),     # run 37554944269
+    ("2026-10-07 05:59", True),
+    ("2026-10-07 06:00", False),    # 02:00 EDT
+    ("2026-10-07 09:15", False),    # the morning attempt
+])
+def test_the_roll_is_given_ten_hours_from_the_close(instant, running):
+    assert do.roll_may_be_running("2026-10-06", utc(instant)) is running
+
+
+def test_the_roll_hour_is_eastern_in_winter_too():
+    assert do.roll_ends("2026-12-15") == datetime(2026, 12, 16, 2, 0)
+    assert do.roll_may_be_running("2026-12-15", utc("2026-12-16 06:59"))
+    assert not do.roll_may_be_running("2026-12-15", utc("2026-12-16 07:00"))
+    # Friday's roll is over on Saturday morning, not on Monday.
+    assert not do.roll_may_be_running("2026-10-02", utc("2026-10-03 09:15"))
+
+
+def test_the_morning_attempt_falls_after_the_roll_in_both_seasons():
+    """The two numbers are in different files and depend on each other.
+    Before ROLL_HOURS a name with no bar is waited for. If the morning
+    attempt ran inside that time too, a name that had really stopped trading
+    would be waited for by both attempts, and no session would be written
+    until it left the feed. The evening attempt is inside it on purpose."""
+    import yaml
+    doc = yaml.safe_load((ROOT / ".github" / "workflows" /
+                          "daily-observe.yml").read_text(encoding="utf-8"))
+    # YAML 1.1 reads a bare `on` as the boolean True.
+    schedule = (doc.get("on") or doc.get(True))["schedule"]
+    evening, morning = sorted((s["cron"].split() for s in schedule),
+                              key=lambda c: -int(c[1]))
+    for session, next_day in (("2026-10-06", "2026-10-07"),      # EDT
+                              ("2026-12-15", "2026-12-16")):     # EST
+        at_night = utc("%s %02d:%02d" % (session, int(evening[1]),
+                                         int(evening[0])))
+        in_the_morning = utc("%s %02d:%02d" % (next_day, int(morning[1]),
+                                               int(morning[0])))
+        assert do.roll_may_be_running(session, at_night)
+        assert not do.roll_may_be_running(session, in_the_morning), (
+            "the morning attempt would wait for a name that is gone for good")
+        # GitHub starts a schedule late and never early, so the margin only
+        # grows. Two hours of it, so the next person to move the cron sees
+        # this before the two meet.
+        assert (do.eastern(in_the_morning) - do.roll_ends(session)
+                >= timedelta(hours=2)), session
+
+
+def test_one_name_gone_refuses_until_the_roll_is_over():
+    """The roll's last names are the newest listings, the same ones every
+    night. A bound that let one through would let that one through for
+    good."""
+    sessions, names = ["2026-10-05"], {"SPY", "AAPL", "BTC"}
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        do.assert_session_posted("2026-10-06", ["SPY", "AAPL", "BTC"],
+                                 bars("SPY", "AAPL"), sessions, names,
+                                 now=utc("2026-10-07 01:30"))
+    assert str(exc.value).startswith(
+        "1 name with a bar in the session on file before it (2026-10-05) "
+        "has none dated 2026-10-06: BTC. SPY has settled and it has not.")
+    assert do.assert_session_posted("2026-10-06", ["SPY", "AAPL", "BTC"],
+                                    bars("SPY", "AAPL"), sessions, names,
+                                    now=utc("2026-10-07 09:15")) == ["BTC"]
+
+
+def test_after_the_roll_a_few_names_gone_are_recorded_and_more_are_refused():
+    gone_for_good = ["DEAD" + str(n) for n in range(do.MAX_GONE + 1)]
+    names = {"SPY", *gone_for_good}
+    asked = ["SPY"] + gone_for_good
+    morning = utc("2026-10-07 09:15")
+    assert do.assert_session_posted(
+        "2026-10-06", asked[:-1], bars("SPY"), ["2026-10-05"], names,
+        now=morning) == gone_for_good[:-1]
+    with pytest.raises(do.SessionHalfPosted) as exc:
+        do.assert_session_posted("2026-10-06", asked, bars("SPY"),
+                                 ["2026-10-05"], names, now=morning)
+    said = str(exc.value)
+    assert "over by 02:00 US/Eastern on 2026-10-07" in said
+    assert "accounts for " + str(do.MAX_GONE) + " names at most" in said
+    # Days later it is the same answer: nothing about it was waiting.
+    with pytest.raises(do.SessionHalfPosted):
+        do.assert_session_posted("2026-10-06", asked, bars("SPY"),
+                                 ["2026-10-05"], names,
+                                 now=utc("2026-10-20 15:00"))
+
+
+def test_a_name_that_left_the_feed_or_never_had_a_bar_is_not_waited_for():
+    """AVB had a bar on file and is not among the names handed over (the
+    feed's, waited_for). SPCX before its listing was asked for and never had
+    one. Neither is gone."""
+    names = {"SPY", "AAPL", "AVB"}
+    assert do.assert_session_posted(
+        "2026-10-06", ["SPY", "AAPL", "SPCX"], bars("SPY", "AAPL"),
+        ["2026-10-05"], names, now=utc("2026-10-07 01:01")) == []
+
+
+def test_with_no_earlier_session_there_is_nothing_to_refuse():
+    """The first file of a panel. The witness is all that speaks for it, as
+    it was for every file before this rule, and no second rule is made up
+    for the one night that has nothing to be compared with."""
+    assert do.assert_session_posted(
+        "2026-08-24", ["SPY", "AAPL"], bars("SPY"), [], set(),
+        now=utc("2026-08-25 01:01")) == []
+
+
+def test_a_half_posted_session_is_refused_and_says_what_the_provider_lists(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """Run 37554944269 again, with the gate. Nothing is written, the
+    instruments are not fetched, and the exit is the clean one."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("META", "BTC"))
+    monkeypatch.setattr(do, "get_special_instruments", no_special)
+    asked = []
+
+    def listed(symbol, start, end, fetch=None):
+        asked.append((symbol, start, end))
+        return {"2026-10-05": 100.0, "2026-10-06": None}
+
+    monkeypatch.setattr(do, "listed_rows", listed)
+    assert do.main(["--out", str(tmp_path)]) == 2
+    out = capsys.readouterr().out
+    assert "Observing 2026-10-06 over 5 tickers" in out
+    assert ("REFUSED: 2 names with a bar in the session on file before it "
+            "(2026-10-05) have none dated 2026-10-06: BTC, META.") in out
+    assert ("  It lists 2026-10-06 for BTC and META as a session with a NULL "
+            "close") in out
+    assert asked == [("BTC", "2026-09-26", "2026-10-06"),
+                     ("META", "2026-09-26", "2026-10-06")]
+    assert "Wrote" not in out
+    assert sorted(p.name for p in (tmp_path / "daily").iterdir()) == [
+        "2026-10-05.json"]
+
+
+def test_a_dry_run_reports_the_refusal_the_same_way(
+        tmp_path, monkeypatch, at, capsys, universe):
+    on_file(tmp_path, "2026-10-05", *universe)
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("BTC"))
+    monkeypatch.setattr(do, "get_special_instruments", no_special)
+    monkeypatch.setattr(do, "listed_rows", lambda *a, **k: None)
+    assert do.main(["--out", str(tmp_path), "--dry-run"]) == 2
+    out = capsys.readouterr().out
+    assert "REFUSED: 1 name with a bar in" in out
+    assert "DRY RUN" not in out
+
+
+def test_force_does_not_write_a_half_posted_fetch_over_a_whole_file(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """--force is the key to the append-only guard and to nothing else.
+    Here it would have traded five bars for three."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    on_file(tmp_path, "2026-10-06", *universe)
+    whole = (tmp_path / "daily" / "2026-10-06.json").read_bytes()
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("META", "BTC"))
+    monkeypatch.setattr(do, "listed_rows", lambda *a, **k: None)
+    assert do.main(["--out", str(tmp_path), "--force", "--no-special"]) == 2
+    assert "REFUSED: 2 names" in capsys.readouterr().out
+    assert (tmp_path / "daily" / "2026-10-06.json").read_bytes() == whole
+
+
+def test_force_never_trades_a_whole_file_for_a_shorter_one(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """After the roll hour one name gone is no refusal, and until this was
+    added --force then wrote the shorter fetch over the file: five series
+    for four, exit 0. A committed bar is not given up by any flag."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    on_file(tmp_path, "2026-10-06", *universe)
+    whole = (tmp_path / "daily" / "2026-10-06.json").read_bytes()
+    at("2026-10-07 09:15")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("META"))
+    for flags in (["--force"], ["--force", "--dry-run"]):
+        assert do.main(["--out", str(tmp_path), "--no-special"] + flags) == 2
+        out = capsys.readouterr().out
+        assert ("REFUSED: --force would write 2026-10-06 again without 1 "
+                "name the file on disk holds a bar for: META.") in out
+        assert (tmp_path / "daily" / "2026-10-06.json").read_bytes() == whole
+
+
+def test_force_still_mends_a_write_that_failed(
+        tmp_path, monkeypatch, at, universe):
+    """What --force is for. A write that died leaves a file that does not
+    read, and that holds nothing to lose."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    broken = tmp_path / "daily" / "2026-10-06.json"
+    broken.write_text('{"as_of": "2026-10-06", "series": {"SPY": {"clo',
+                      encoding="utf-8")
+    at("2026-10-07 09:15")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by())
+    assert do.main(["--out", str(tmp_path), "--no-special", "--force"]) == 0
+    doc = json.loads(broken.read_text(encoding="utf-8"))
+    assert sorted(doc["series"]) == sorted(universe)
+
+
+def test_a_name_taken_out_of_the_feed_is_fetched_and_not_waited_for(
+        tmp_path, monkeypatch, at, capsys):
+    """The way out of a refusal that will not clear is to take the dead
+    names out of PRICE_FEED_UNIVERSE, and it has to work that day. The run
+    still fetches them: observation_universe adds whatever the newest weekly
+    file holds, and that file is not replaced until Saturday. So the gate
+    counts the feed's names and not the fetch's."""
+    feed = ["SPY", "AAPL", "MSFT"]
+    dead = ["DEAD" + str(n) for n in range(do.MAX_GONE + 1)]
+    monkeypatch.setattr(do, "equity_universe", lambda: list(feed))
+    weekly = tmp_path / "weekly"
+    weekly.mkdir()
+    (weekly / "2026-10-02.json").write_text(
+        json.dumps({"series": bars(*feed, *dead)}), encoding="utf-8",
+        newline="\n")
+    on_file(tmp_path, "2026-10-05", *feed, *dead)
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by(*dead))
+    assert do.observation_universe(str(weekly)) == sorted(feed + dead)
+    assert do.waited_for(sorted(feed + dead)) == sorted(feed)
+
+    assert do.main(["--out", str(tmp_path), "--no-special"]) == 0
+    assert "Observing 2026-10-06 over 7 tickers" in capsys.readouterr().out
+    doc = json.loads((tmp_path / "daily" / "2026-10-06.json").read_text(
+        encoding="utf-8"))
+    assert sorted(doc["series"]) == sorted(feed)
+    assert {m["ticker"] for m in doc["missing"]} >= set(dead)
+
+    # Still in the feed, the same four stop the run at any hour.
+    monkeypatch.setattr(do, "equity_universe", lambda: feed + dead)
+    for hour in ("2026-10-08 01:01", "2026-10-08 09:15"):
+        at(hour)
+        monkeypatch.setattr(do, "listed_rows", lambda *a, **k: None)
+        assert do.main(["--out", str(tmp_path), "--no-special"]) == 2
+    assert not (tmp_path / "daily" / "2026-10-07.json").exists()
+
+
+def test_the_morning_attempt_writes_a_name_that_is_gone_into_missing(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """The same fetch eight hours on. The roll is over, so a name with no
+    bar has stopped trading or been renamed, and the file says so the way a
+    daily file always has."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    at("2026-10-07 09:15")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("META"))
+    assert do.main(["--out", str(tmp_path), "--no-special"]) == 0
+    out = capsys.readouterr().out
+    assert ("META had a bar in the session on file before it (2026-10-05) "
+            "and none dated 2026-10-06.") in out
+    doc = json.loads((tmp_path / "daily" / "2026-10-06.json").read_text(
+        encoding="utf-8"))
+    assert sorted(doc["series"]) == ["AAPL", "BTC", "MSFT", "SPY"]
+    assert {"ticker": "META", "reason": "no bar dated 2026-10-06"} \
+        in doc["missing"]
+
+
+def test_the_morning_attempt_refuses_a_panel_short_by_more_than_the_bound(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """Four of five without a bar at 05:15 in the morning is not four
+    delistings. It is refused at every attempt, which leaves the session to
+    the audit: that is the alarm, and this is not."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    at("2026-10-07 09:15")
+    monkeypatch.setattr(do, "fetch_session_bars",
+                        short_by("AAPL", "MSFT", "META", "BTC"))
+    monkeypatch.setattr(do, "get_special_instruments", no_special)
+    monkeypatch.setattr(do, "listed_rows",
+                        lambda symbol, start, end, fetch=None: {
+                            "2026-10-05": 100.0, "2026-10-06": 101.0})
+    assert do.main(["--out", str(tmp_path)]) == 2
+    out = capsys.readouterr().out
+    assert "REFUSED: 4 names" in out
+    assert "did not answer for part of the panel" in out
+    assert ("Asked the provider about the first 3 of them. It lists a "
+            "settled close on 2026-10-06 for AAPL, BTC and META") in out
+    assert not (tmp_path / "daily" / "2026-10-06.json").exists()
+
+
+def test_a_first_file_is_written_on_the_witness_alone_and_says_so(
+        tmp_path, monkeypatch, at, capsys, universe):
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_bars", short_by("META", "BTC"))
+    assert do.main(["--out", str(tmp_path), "--no-special"]) == 0
+    assert "No earlier session on file to compare with" in \
+        capsys.readouterr().out
+    assert (tmp_path / "daily" / "2026-10-06.json").is_file()
+
+
+def ranged(by_day):
+    def fetch(tickers, start, end):
+        return {day: bars(*names) for day, names in by_day.items()
+                if start <= day <= end}
+    return fetch
+
+
+def test_a_bootstrap_leaves_a_half_posted_newest_session_for_a_later_run(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """A recovery dispatched in the small hours. Its range ends at the last
+    close, and that session comes out of the same half-posted download a
+    single run would have read. The settled sessions are written, so the
+    exit is 0 and the workflow commits them; the newest is left to the
+    morning attempt, which also reads the rates the bootstrap does not."""
+    on_file(tmp_path, "2026-10-01", *universe)
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_range", ranged({
+        "2026-10-02": universe, "2026-10-05": universe,
+        "2026-10-06": ["SPY", "AAPL", "MSFT"]}))
+    monkeypatch.setattr(do, "listed_rows", lambda *a, **k: {
+        "2026-10-06": None})
+    assert do.main(["--out", str(tmp_path), "--since", "2026-10-02"]) == 0
+    out = capsys.readouterr().out
+    assert ("  2026-10-06: REFUSED: 2 names with a bar in the last 3 sessions "
+            "on file (2026-10-01 .. 2026-10-05) have none dated 2026-10-06: "
+            "BTC, META.") in out
+    assert "NULL close" in out
+    assert ("Wrote 2 session file(s), skipped 0 existing. 1 refused, for the "
+            "reason given above.") in out
+    assert sorted(p.name for p in (tmp_path / "daily").iterdir()) == [
+        "2026-10-01.json", "2026-10-02.json", "2026-10-05.json"]
+
+
+def test_a_bootstrap_dry_run_compares_with_sessions_it_has_not_written(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """Nothing is on disk in a dry run, and the preview has to refuse what
+    the real run would: the session before, in the same download, is what
+    the newest one is short against."""
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_range", ranged({
+        "2026-10-05": universe, "2026-10-06": ["SPY", "AAPL", "MSFT"]}))
+    monkeypatch.setattr(do, "listed_rows", lambda *a, **k: None)
+    assert do.main(["--out", str(tmp_path), "--since", "2026-10-05",
+                    "--dry-run"]) == 0
+    out = capsys.readouterr().out
+    assert "  2026-10-05: 5 series, 1 missing (dry run)" in out
+    assert "  2026-10-06: REFUSED: 2 names with a bar in the session on " \
+           "file before it (2026-10-05)" in out
+    assert ("A real run would write 1 session file(s) and skip 0 existing. "
+            "1 would be refused, for the reason given above.") in out
+    assert not (tmp_path / "daily").exists()
+
+
+def test_a_bootstrap_that_declines_all_it_was_asked_for_exits_2(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """Nothing written and something refused is a run that declined, and the
+    workflow treats it as one: no gates, no commit, the audit."""
+    on_file(tmp_path, "2026-10-05", *universe)
+    at("2026-10-07 01:01")
+    monkeypatch.setattr(do, "fetch_session_range", ranged({
+        "2026-10-05": universe, "2026-10-06": ["SPY", "AAPL", "MSFT"]}))
+    monkeypatch.setattr(do, "listed_rows", lambda *a, **k: None)
+    assert do.main(["--out", str(tmp_path), "--since", "2026-10-05"]) == 2
+    out = capsys.readouterr().out
+    assert "2026-10-05: exists, skipped" in out
+    assert "Wrote 0 session file(s), skipped 1 existing. 1 refused" in out
+
+
+def test_a_bootstrap_days_later_records_a_gone_name_and_goes_on(
+        tmp_path, monkeypatch, at, capsys, universe):
+    """The 2026-09-12 bootstrap met this: AVB's last bar on 2026-08-24, no
+    bar after it. Long after any roll a name with no bar is gone, and every
+    session is written with it in `missing`."""
+    at("2026-10-12 15:00")
+    monkeypatch.setattr(do, "fetch_session_range", ranged({
+        "2026-10-05": universe,
+        "2026-10-06": ["SPY", "AAPL", "MSFT", "BTC"],
+        "2026-10-07": ["SPY", "AAPL", "MSFT", "BTC"]}))
+    assert do.main(["--out", str(tmp_path), "--since", "2026-10-05",
+                    "--date", "2026-10-07"]) == 0
+    out = capsys.readouterr().out
+    assert ("  2026-10-06: 4 series, 2 missing (META had a bar in the session "
+            "on file before it (2026-10-05) and none here)") in out
+    assert "Wrote 3 session file(s), skipped 0 existing." in out
+    assert "refused" not in out.lower()
+
+
+# -- what the provider lists for a name ---------------------------------------
+
+def test_listed_rows_ask_for_the_symbol_named_and_witness_rows_for_spy():
+    asked = []
+
+    def fetch(symbol, start, end):
+        asked.append(symbol)
+        return chart(("2026-10-05 13:30", 741.9), ("2026-10-06 13:30", None))
+
+    assert do.listed_rows("META", "2026-10-01", "2026-10-06", fetch) == {
+        "2026-10-05": 741.9, "2026-10-06": None}
+    do.witness_rows("2026-10-01", "2026-10-06", fetch)
+    assert asked == ["META", "SPY"]
+
+
+def test_explains_names_whose_close_is_not_posted_yet():
+    said = do.explain_gone("2026-10-06", ["ABBV", "ABNB"], rows_for=lambda
+                           symbol, start, end: {"2026-10-05": 1.0,
+                                                "2026-10-06": None})
+    assert said == ("It lists 2026-10-06 for ABBV and ABNB as a session with "
+                    "a NULL close: the session ended and the bar is not "
+                    "posted yet. Its end-of-day roll is part done.")
+
+
+def test_explains_each_answer_apart_and_asks_about_three_names_only():
+    answers = {"AAA": {"2026-10-05": 1.0, "2026-10-06": None},
+               "BBB": {"2026-10-05": 1.0, "2026-10-06": 2.0},
+               "CCC": {"2026-10-05": 1.0}}
+    asked = []
+
+    def rows_for(symbol, start, end):
+        asked.append(symbol)
+        return answers.get(symbol)
+
+    said = do.explain_gone("2026-10-06", ["AAA", "BBB", "CCC", "DDD"],
+                           rows_for=rows_for)
+    assert asked == ["AAA", "BBB", "CCC"]
+    assert said.startswith("Asked the provider about the first 3 of them.")
+    assert "for AAA as a session with a NULL close" in said
+    assert "a settled close on 2026-10-06 for BBB" in said
+    assert "no row on 2026-10-06 for CCC" in said
+
+    assert do.explain_gone("2026-10-06", ["DDD"], rows_for=rows_for) == (
+        "It gave no answer that could be read for DDD; a symbol it has "
+        "dropped answers that way too.")
 
 
 # -- the offline warning (truth_check --feed) ----------------------------------

@@ -646,6 +646,126 @@ the reason each session gets a second attempt the next morning. It does not
 depend on the request -- the provider appends its newest row whatever `end`
 says, and a null close is null on every window and range.
 
+**The half-posted session (2026-10-07).** The roll that ends that window is
+not one step, and the witness is early in it. The evening attempt for
+2026-10-06 was started at 01:00 UTC on the 7th (run 37554944269) and found
+`SPY` posted and 59 of the 336 names without a bar, in the batch and again
+when each was asked for alone. The witness gate passed, every gate after it
+passed, the file was committed with 277 series, and the audit was green. By
+02:41 UTC the provider had a bar for all 336.
+
+What the 59 have in common is their age. 57 of them are every name of the
+feed that the provider dates (`firstTradeDate`) from 2012-04-12 on. The
+other two, `GOOG` and `QUBT`, it dates 2004 and 2007, and `GOOG` at least is
+a symbol younger than the history filed under it (the class C shares took it
+in 2014). No name it had posted was first listed after 2011-10-13. So the
+roll works from the oldest listing to the newest and the names it reaches
+last are the same ones every night, `SPCX` and `BTC` today. It has been seen
+on that one night.
+
+A fetch is therefore held against the panel before it is written
+(`assert_session_posted` in `scripts/daily_observe.py`). A name is
+*expected* if it is in the feed and has a bar in one of the last sessions on
+file before the one being written (`RECENT_SESSIONS` of them), and an
+expected name with no bar is *gone*. The feed is `PRICE_FEED_UNIVERSE` and
+the sixteen ETFs, which is fewer names than a run fetches: it also fetches
+whatever the newest weekly file holds, so a name taken out of the feed goes
+on being fetched until a week is written without it, and is not waited for
+from the day it is taken out (`waited_for`).
+
+- **Until `ROLL_HOURS` after the close, which is 02:00 US/Eastern, one name
+  gone refuses the run.** The provider may still be posting, nothing on the
+  night tells a name not yet posted from one that did not trade, and a bound
+  above none would let the roll's last names drop out of the panel night
+  after night. The refusal is exit 2, like the witness's, and the morning
+  attempt writes the session.
+- **After that hour a name still gone is listed in `missing`**, as a
+  delisted or renamed symbol always was, up to `MAX_GONE` of them. More is a
+  provider that did not answer for part of the panel, and is refused at any
+  hour and by every attempt. A session short by that many is not written by
+  this script at all: it stays the hole the audit reports until the provider
+  has the bars or the names leave the feed, and leaving the feed works that
+  day.
+- **Several sessions, not the one before.** The newest file can be the short
+  one. Held against 2026-10-06.json alone, the same roll caught at the same
+  point the next night loses nothing.
+- **`--since` holds each session of its range to the same**, against the
+  sessions before it on file and in the same download. A range usually runs
+  long after any roll, but it may end at the last close, and in the small
+  hours that session is cut from the download a single run would have read.
+  One it refuses is left for a later run and the rest are written; the exit
+  is 2 only when nothing was.
+- **`--dry-run` reports the refusal as a real run would, and `--force` does
+  not override it.** `--force` is the append-only guard's key and nothing
+  else, and a half-posted fetch written over a whole file is the worse loss.
+  So it is refused as well wherever the fetch lacks a name the file on disk
+  holds a bar for, at any hour. A file that does not read, which is what a
+  write that died leaves and what `--force` is for, holds nothing to lose.
+- **With no earlier session on file nothing is compared**, and the witness
+  is all that speaks for the file, as it was for every file before this
+  rule.
+- **The audit calls the state a declined attempt leaves PENDING.** The
+  newest settled session with no file is a note, not a warning, while the
+  provider may still be posting it (`ROLL_HOURS`). Past that hour it is the
+  warning it was, and names the `--date` command, because no scheduled
+  attempt after the morning one aims at that session. One behind the newest
+  with no file fails the run at any hour ("Completeness", below).
+
+The refusal also asks the provider's raw chart what it lists for the first
+few of the names, as the witness's refusal does, and prints the answer. It
+decides nothing. What a name looks like there while the roll has not reached
+it has not been seen: on 2026-10-07 all 59 were posted before anyone asked.
+
+What this costs, and what it does not cover:
+
+- After a name really stops trading, the evening attempt declines for as
+  long as its last bar is among the sessions compared with, and each of
+  those sessions is written the next morning instead. Taking the name out of
+  the feed ends that the same day.
+- Every session the evening attempt declines rests on the morning one. Its
+  cron is 09:15 UTC and GitHub started the first of them at 15:56 UTC
+  (2026-10-06). It aims at the session that closed until the next close
+  passes; started later than that, it writes nothing for it and the audit
+  reports the hole.
+- The morning attempt has to stay later than `ROLL_HOURS` after the close.
+  Inside it, a name that is gone for good would be waited for by both
+  attempts and no session written. A test reads the cron and holds the two
+  apart.
+- After the roll hour up to `MAX_GONE` names are believed without the
+  provider being asked again. A fetch that failed for one of them at that
+  hour is written as `missing` for good. A `--since` range is the more
+  exposed: its one download has no second try per name, and every session
+  of it is cut from that download.
+- It compares names in `series`, not values and not the other blocks. A bar
+  dated `as_of` that held another day's numbers would pass, and an index
+  close (`US10Y`, `VIX`) not yet posted goes to `missing` as before. Neither
+  happened on the night: all 277 bars of 2026-10-06.json are the bars a
+  fetch at 02:41 UTC returned, close and volume, and so are the three
+  instrument closes it holds.
+- A name with no bar in any of the sessions compared with is not waited
+  for. That is right for a symbol long dead and wrong for a new listing in
+  its first days in the feed, which is the youngest instrument and so the
+  last the roll reaches. It is waited for from the first file that holds it.
+- The weekly writer has no such check. It runs on Saturday after 13:00 UTC,
+  some seventeen hours after the close.
+
+**2026-10-06.json is short by 59 and is not edited.** It lists them in
+`missing` as "no bar dated 2026-10-06 in window ...", which was true of the
+minute it was fetched and reads like 59 names that did not trade. Among them
+are `XLC` and `XLRE`, two of the sixteen ETFs, `BTC`, and 23 of the focus
+names. One of the 277 bars it does hold is a print and not a trade: `BLFS`
+at 38.61 on volume 0, the close of 2026-10-05, on a day the provider lists
+no trade for it. That is the provider's row and not the roll's doing: the
+later fetch returned the same.
+
+`sector-regime-heatmap` built its tape for the session from this file half
+an hour after it was committed (its `79ef7e7`): six of eleven baskets "too
+thin to characterise the sector" and an empty bitcoin row. A tape there is
+never rewritten. While the file stands, the two later tapes that have
+2026-10-06 at the far end of a window, 2026-10-07 over one session and
+2026-10-13 over five, are short of the same names. Whether the file is
+repaired, and how, is the owner's decision and has not been made.
+
 **Completeness.** A refusal is a correct outcome and exits clean, so a feed
 that has stopped writing looks the same as one that declined once. The panel
 is therefore audited against the witness on every run
@@ -769,3 +889,5 @@ All of it over the GitHub contents API, cached locally on the device. **No marke
 - [ ] Runner's `scan_pipeline/snapshot.py` synced, so that refusal exists where the weekly job runs. Until then its writer overwrites a week it is called for, and CI sees the push after it is on main (sec.1c, "Outside this repo")
 - [ ] Step 7 of the weekly job's prompt and task card changed to push a week the repository lacks whether or not that run wrote it. Today a run that died before its push leaves a week nothing pushes (sec.1c, "Outside this repo")
 - [ ] A new correction's series held to its base by a gate and not only by the test suite, and for `data/daily` at all (sec.1, "What a file held")
+- [x] A daily session is written only once the provider has posted it for the panel: a fetch is held against the last sessions on file, one name gone refuses the run while the roll may still be running, and more than a few refuse it at any hour (2026-10-07, sec.4, "The half-posted session")
+- [ ] 2026-10-06.json, written half way through the provider's roll and short by 59: whether it is repaired, and how (sec.4)

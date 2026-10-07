@@ -20,11 +20,25 @@ name: Daily observation
 #   and 00:45, back by 01:38. The witness gate refuses that, correctly, and
 #   in 8 of the first 15 scheduled runs the script ran after 00:00 UTC.
 #
+# And the roll is not one step (2026-10-07). Started at 01:00 UTC, the
+# evening attempt for 2026-10-06 found SPY posted and 59 of 336 names not
+# yet, and committed the file without them. The script now holds a fetch
+# against the last sessions on file: until 02:00 US/Eastern a name that had
+# a bar there and has none is waited for, and the run declines. That hour
+# is ROLL_HOURS in the script, and the morning attempt has to stay later
+# than it (tests/test_daily_observe.py holds the two apart).
+#
 #   21:45 UTC   5:45 PM EDT / 4:45 PM EST. Writes when GitHub starts it
-#               before that window; otherwise it is refused and says why.
+#               before that window, or late enough that the provider has
+#               posted every name; otherwise it declines and says why.
 #   09:15 UTC   5:15 AM EDT / 4:15 AM EST the next morning (UTC Tue-Sat), long
-#               after the roll and, even started hours late, before the open.
-#               The session already on file is declined before any fetch.
+#               after the roll. The session already on file is declined
+#               before any fetch. GitHub starts this one late as well: the
+#               first, on 2026-10-06, began at 15:56 UTC, after the open (this
+#               said "even started hours late, before the open"). The script
+#               still takes the session that closed, until the next close
+#               passes. A start later than that writes nothing for it, and
+#               the audit is what says so.
 #
 # Neither attempt is late enough for the instruments that trade past the cash
 # close (WTI, WTI_NEXT, GOLD, SILVER, DXY, US2Y_FUT). Their bar is a quote until
@@ -107,9 +121,10 @@ jobs:
           set -e
           # 2 means the script declined to write, and it has several causes:
           # the witness gate refusing an unsettled or non-session date, the
-          # clock refusing a session still open, or the append-only guard
-          # finding the file already there. All are correct outcomes, not
-          # failures -- but do not name one of them here. The script already
+          # clock refusing a session still open, the append-only guard
+          # finding the file already there, or the provider having posted
+          # the session for only part of the panel. All are correct outcomes,
+          # not failures -- but do not name one of them here. The script already
           # printed which, and asserting "no settled session" over an
           # append-only refusal puts a confident wrong line in the log.
           if [ "$code" = "2" ]; then
@@ -180,7 +195,10 @@ jobs:
       # the newest has no file: no scheduled attempt will ever write it, so
       # the run stays red until someone recovers it (the output names the
       # command). A session whose close is still null is PENDING, not a
-      # fault; only the newest one unwritten is a warning.
+      # fault, and so is the newest one with no file while the provider may
+      # still be posting it: that is the state an attempt leaves when it
+      # declines a half-posted session. Past that hour, only the newest one
+      # unwritten is a warning.
       - name: Audit the panel against the session witness
         if: ${{ !cancelled() }}
         run: |
