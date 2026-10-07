@@ -22,6 +22,13 @@ moved since Saturday), the wiki says so explicitly — it never silently diverge
 - Every verifiable field carries `source: "yahoo:<SYMBOL>"`, `as_of`, and
   `tolerance_pct`. Fields from external feeds we cannot re-fetch carry
   `stale: true` and are treated as directional only.
+- `cross_asset.wti` and `cross_asset.gold` are the committed feed's
+  settlements, not a fetch of Canary Watch's own, from the table generated
+  2026-10-10: the value is `px` in `data/market_state.json` and the `source`
+  names the contract (`yahoo:CLX26.NYM`, `yahoo:GCV26.CMX`), never the
+  continuous `CL=F` or `GC=F`, which change contract month underneath a
+  reader (`DATA_FEED.md` sec.1d). A week the feed has no number for keeps
+  the last one with `stale: true`.
 - Computed fields (`curve_10y_3m_bps` etc.) must recompute from their inputs.
 
 ## quarantine.json (phantom-anomaly bans)
