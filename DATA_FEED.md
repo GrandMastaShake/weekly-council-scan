@@ -792,7 +792,7 @@ What this costs, and what it does not cover:
 - The weekly writer has no such check. It runs on Saturday after 13:00 UTC,
   some seventeen hours after the close.
 
-**2026-10-06.json is short by 59 and is not edited.** It lists them in
+**2026-10-06.json was written short by 59, and withdrawn.** As first written (`4b6ffac`) it lists them in
 `missing` as "no bar dated 2026-10-06 in window ...", which was true of the
 minute it was fetched and reads like 59 names that did not trade. Among them
 are `XLC` and `XLRE`, two of the sixteen ETFs, `BTC`, and 23 of the focus
@@ -806,8 +806,12 @@ an hour after it was committed (its `79ef7e7`): six of eleven baskets "too
 thin to characterise the sector" and an empty bitcoin row. A tape there is
 never rewritten. While the file stands, the two later tapes that have
 2026-10-06 at the far end of a window, 2026-10-07 over one session and
-2026-10-13 over five, are short of the same names. Whether the file is
-repaired, and how, is the owner's decision and has not been made.
+2026-10-13 over five, are short of the same names. Owner decision 2026-10-07: the file
+is withdrawn whole and the session written again by a dispatched run of the
+daily workflow (`date` 2026-10-06), one fetch and one anchor for every name.
+No bar is edited or merged in. The removal is a commit of its own and fails
+CI's panel step on purpose, read and merged by the owner. It is the one daily
+file ever withdrawn.
 
 **Completeness.** A refusal is a correct outcome and exits clean, so a feed
 that has stopped writing looks the same as one that declined once. The panel
@@ -945,4 +949,4 @@ All of it over the GitHub contents API, cached locally on the device. **No marke
 - [x] A week is pushed from its bytes on disk and the push checked against the copy; twice a week typed out through a tool call reached the repository mistyped (2026-10-06, the job's step 7; sec.1c, "Outside this repo")
 - [x] A correction held to its base by a gate and not only by the test suite, and for `data/daily` as well: in a checkout `truth_check --feed` fails one that is not its base with its recorded edits applied, and says what differs and what a rebuild would do about it (2026-10-07, sec.1, "What a file held")
 - [x] A daily session is written only once the provider has posted it for the panel: a fetch is held against the last sessions on file, one name gone refuses the run while the roll may still be running, and more than a few refuse it at any hour (2026-10-07, sec.4, "The half-posted session")
-- [ ] 2026-10-06.json, written half way through the provider's roll and short by 59: whether it is repaired, and how (sec.4)
+- [x] 2026-10-06.json, written half way through the provider's roll and short by 59: withdrawn whole and written again by the job (owner decision 2026-10-07, sec.4)
