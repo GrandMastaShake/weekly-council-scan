@@ -131,6 +131,62 @@ stops before its commit step. (It used to exit 0.)
 `tests/test_instrument_sessions.py` fails if any committed correction is not
 what a rebuild would write, so a stale one no longer gets past CI.
 
+**And the gate holds a correction to its base (2026-10-07).** The suite
+does not run in the backfill workflow, which commits right after it
+rebuilds, and it said nothing of `data/daily`. `truth_check --feed` asks,
+in both directories: outside a recorded zero-volume drop, every bar the
+base holds and no other, the same labels (an instrument's too, outside
+`restated`) and file stamps, the base's `missing` plus the drops'
+entries, and no key of its own beside `corrects`, `reason` and
+`restated`. The base is the week the correction is named for, whatever
+its `corrects` says: readers pair the two by name, and so does
+`rebuild_corrections.py` now, which leaves a correction that names
+another week alone and exits 1.
+
+**The line says what differs and what a rebuild would do. It does not
+say "run it".** A rebuild goes through every correction in the directory.
+One with an edit on record that still applies it writes again from its
+base; one with none it skips; one whose record the base no longer bears
+out it leaves alone, with ABORT and exit 1. Writing one again mends a
+correction its base has moved away from. It also takes out whatever the
+correction says without a record: a bar dropped with no entry comes back,
+a name the base lacks goes out, a close or a label changed by hand
+reverts, and the gate then passes on a correction that no longer
+corrects. Three drafts of the check chose for their reader, and each was
+shown a case it got wrong.
+
+**What the sentence says of which side moved is evidence, and it says
+so.** A name the base labels later than any stamp the correction carries
+(its `fetched_at`, and every label it has, an instrument's too) reads as
+merged in since; one labelled no later, or never, as held when the two
+were last in step; a base fetched later than its correction as written
+again. A stamp can be typed, and a bar taken out by hand goes with its
+label: where that bar was the newest the base had gained (VMRK, in both
+committed corrections), what is left is the correction exactly as it
+stood before the merge, and reads so. The history can tell what two
+files cannot. `python scripts/panel_guard.py --against <commit>` fails
+where a correction has lost or changed something it held at that commit,
+and the line names it.
+
+Four other places said "run `rebuild_corrections.py`" of any difference,
+or led there: the suite's own test of the committed corrections, which
+CI runs before the gate and which stops the gate from running when it
+fails; the name-left-out warning, twice (for a name the base holds, and
+after its `--merge` command); the note `backfill_weekly.py` prints when
+a merge had nothing to add; and `restate_instruments.py`'s refusal for a
+week that already has a correction. Each speaks with the gate's words
+now, or points at it.
+
+**It is a FAIL in a checkout and a WARN in a copy.** A checkout has a
+`.git` and `scripts/rebuild_corrections.py` beside its data, both: CI,
+the daily job and the backfill. In CI the suite's test says it first,
+in the same words. Anything else is a copy: the weekly job's check dir,
+which has neither, and a check dir filled with every script, of which
+the runner holds two (`auditor_2026-09-19/checkdir`), where a rebuild
+would mend a copy. No correction is such a job's to write, so there it
+is said, with no command, and stops nothing, as the stale correction the
+name-left-out check reports stops nothing there (#139).
+
 **A corrected week is two files and one week.** A reader that lists
 `data/weekly/*.json` reads it twice. `scan_pipeline/panel_source.py` did
 until 2026-10-06: every name got a second row for 2026-08-21 and for
@@ -1017,9 +1073,10 @@ the writer (below).
 
 **What the guard does not say.** It compares a file with what that same file
 held. A new file held nothing, so a NEW correction is not compared with its
-base: that its series are its base's, bar for bar, is
-`tests/test_instrument_sessions.py`'s to say, for `data/weekly` only, and
-nothing says it for a daily correction (there is none). And a "before" with
+base here. That is `truth_check --feed`'s to say since 2026-10-07, for
+`data/weekly` and `data/daily` alike (The correction trap, above); until
+then only `tests/test_instrument_sessions.py` said it, for `data/weekly`,
+and nothing for a daily correction (there is none). And a "before" with
 no panel file in it is refused, not passed: `--against` on a scratch copy the
 commit does not track used to print "0 file(s) before" and OK. A copy of the
 panel is rehearsed with `--snapshot` and `--compare`.

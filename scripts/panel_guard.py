@@ -56,9 +56,12 @@ An entry that VANISHED fails under both. Neither is a way to lose a bar.
 
 WHAT THIS DOES NOT SAY. It compares a file with what the same file held. A
 new file held nothing, so a NEW correction is not compared with the base it
-corrects. That its series are its base's, bar for bar, is
-tests/test_instrument_sessions.py's to say, and only for data/weekly;
-`truth_check --feed` holds its instruments to the base and to `restated`.
+corrects. That is `truth_check --feed`'s to say, for data/weekly and
+data/daily alike: its series are its base's, bar for bar, outside a
+recorded zero-volume drop (since 2026-10-07; until then only
+tests/test_instrument_sessions.py said so, and only for data/weekly), and
+its instruments and their labels are the base's outside what `restated`
+records.
 
 Three things a correction or a repair can need have no way through here,
 on purpose: dropping one more zero-volume bar from a correction that
