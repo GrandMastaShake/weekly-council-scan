@@ -432,10 +432,12 @@ refused once with nothing asking again.
   is a faithful copy of Kimi's runner and has diverged from
   `scripts/backfill_weekly.py`. It has had `--merge` and the refusal of
   `--only ... --force` since 2026-08-26 (`7cf7025`; until 2026-10-06 this
-  entry said it had no `--merge`) and nothing since: it can still call an
-  unposted Friday a holiday (`DATA_FEED.md` sec.1c), and its `--merge` still
-  writes a fresh fetch over a bar the week already holds (The backfill,
-  below). Nothing invokes it and a test fails if anything starts to.
+  entry said it had no `--merge`), and `slice_week`'s rule since
+  2026-10-07 (the bar dated the file's session, or `missing`). Nothing
+  else: it can still call an unposted Friday a holiday (`DATA_FEED.md`
+  sec.1c), and its `--merge` still writes a fresh fetch over a bar the
+  week already holds (The backfill, below). Nothing invokes it and a test
+  fails if anything starts to.
   Use `scripts/backfill_weekly.py`. The real fix is upstream in the runner.
 - **AVB 2026-08-21**: close 65.9005 behind volume 0, corrected. It was in
   `series` and not in `missing`, so it flowed through as real. Three
@@ -567,12 +569,12 @@ refused once with nothing asking again.
   It writes `<date>.corrected.json` through the writer's own fetch, records
   what it replaced, and labels the replacement. Never by hand: an unrecorded
   change is one the next rebuild erases and the feed gate refuses.
-- **Equity closes: the backfill writer takes the last bar on or before the
-  Friday.** `backfill_weekly.py::slice_week` keeps a ticker's last bar inside
-  the Mon..Fri week and can mark nothing per ticker, so a name with no Friday
-  bar -- halted, delisted mid-week, a gap at the provider -- carries an
-  earlier session under the Friday date. It wrote the 105 backfilled files
-  and every name merged in afterwards. An audit of every committed equity bar
+- **Equity closes: the backfill writer took the last bar on or before the
+  Friday.** Until 2026-10-07 `backfill_weekly.py::slice_week` kept a ticker's
+  last bar inside the Mon..Fri week and could mark nothing per ticker, so a
+  name with no Friday bar -- halted, delisted mid-week, a gap at the
+  provider -- carried an earlier session under the Friday date. It wrote
+  the 105 backfilled files and every name merged in afterwards. An audit of every committed equity bar
   against the provider (2026-10-05) found it happened once: **EA in
   2026-08-07.json is its close of Tuesday 2026-08-04**, the last session
   before it was taken private, on volume 0. Of the other backfilled and
@@ -613,11 +615,20 @@ refused once with nothing asking again.
   the Tracker fetch their own bars (`scripts/arena_ingest.py`,
   `portfolio/tracker.py`) and do not read `data/weekly`.
 
-  **Not fixed.** `slice_week` is unchanged, in both copies of the script, so
-  the next backfill or `--merge` that meets such a name does it again. How
-  that bar should be recorded -- `missing`, as the Friday job does, or a
-  per-ticker `observed` -- is not decided (`DATA_FEED.md` sec.1b, "The equity
-  series"). Run the audit after any backfill.
+  **Fixed for the next file (owner decision 2026-10-06): `missing`, as
+  the Friday job does.** `slice_week` returns the bar dated the file's session
+  or nothing, in both copies of the script, and a ticker without one is
+  listed with a reason that names its last bar: "no bar dated 2026-08-07;
+  its last bar before that is dated 2026-08-04". No new key. The file's
+  session is the Friday, or the day a holiday week's `session_note` names:
+  a merge reads the note (`file_session`) and refuses a week whose note it
+  cannot read. The reason no longer guesses; "likely pre-IPO or not
+  trading" is what the files written before carry, and was wrong for BK,
+  MMC and PEAK. **No committed file is edited**: EA's bar stays in
+  2026-08-07.json, and the audit list is its record. The runner's copy of
+  the mirror script is the old one until someone copies it over by hand.
+  Still run the audit after any backfill: it is what tells a bar's
+  session, whoever wrote it.
 - **The weekly writer on a market holiday.** `fetch_weekly_bars` kept only
   bars dated the Friday, so run for a holiday it committed `series: {}`:
   every ticker in `missing`, no `session_note`, and `truth_check --feed`
@@ -881,7 +892,8 @@ fails, under a name `unwritten_fridays` no longer owes. The writer cannot
 leave one itself any more: a week is written beside its path and moved into
 place.
 
-The mirror script is left as it is (owner decision 2026-10-06). It passes no
+The mirror script's `--force` is left as it is (owner decision 2026-10-06;
+its slice was changed the next day, by a later one). It passes no
 `overwrite`, so its `--force` on a week that is on file stops at the writer,
 and a test that runs it into a tmp directory fails if that changes. Its
 `--merge` does not go through the writer and still overwrites; the guard is
