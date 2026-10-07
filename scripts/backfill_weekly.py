@@ -29,10 +29,11 @@ Per-file conventions (byte-stability contract inherited from snapshot.py):
     no ticker had a Friday bar, which is also what a late post looks like.
   * Closes are split/dividend-adjusted (yfinance auto_adjust=True), rounded
     to 4dp by snapshot._normalize_block; volume int or None (never invented).
-  * "missing" is REQUIRED: a ticker with no bar in the Monday..Friday week
-    (pre-IPO, halted, delisted) is ABSENT from "series" (no nulls) and listed
-    in "missing" with reason "no bar for week of <date> (likely pre-IPO or
-    not trading)". No interpolation, ever.
+  * "missing" is REQUIRED: a ticker with no bar dated the file's session
+    (pre-IPO, halted, delisted mid-week) is ABSENT from "series" (no nulls)
+    and listed in "missing" with a reason that names its last bar before
+    it. Never an earlier session's close under the file's date (since
+    2026-10-07, slice_week), and no interpolation, ever.
   * --merge only adds (2026-10-06). A ticker named with --only goes into
     each week on file that lacks it, stamped in "provenance.series" with
     this run's fetch time. One a week already holds is left exactly as
@@ -84,6 +85,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from bisect import bisect_right
@@ -116,7 +118,13 @@ CHUNK_SIZE = 50
 CHUNK_RETRIES = 3
 FRIDAY_SLEEP_S = 0.1        # politeness between per-Friday special fetches
 
+# Reasons for a ticker with no bar on the file's session (missing_reason).
+# MISSING_REASON is what the files the backfill wrote before 2026-10-07
+# carry; it is kept for the readers and tests that quote those files, and
+# is no longer written.
 MISSING_REASON = "no bar for week of %s (likely pre-IPO or not trading)"
+NO_SESSION_BAR = "no bar dated %s; its last bar before that is dated %s"
+NO_BAR_BEFORE = "no bar dated %s, and none before it in the download"
 
 
 def log(msg: str) -> None:
@@ -222,8 +230,9 @@ def download_equity_history(tickers: list, first_friday: date,
     """{ticker: (dates, closes, vols)} for the whole backfill window.
 
     One ranged call per ticker, batched CHUNK_SIZE at a time. Fetch window
-    starts 10 days before the first Friday (holiday/halt headroom for the
-    'last trading day <= Friday' rule) and runs eight days past the last
+    starts 10 days before the first Friday (so that a holiday week's
+    session, and a name's last bar before a session it missed, are in
+    it) and runs eight days past the last
     Friday. Nothing after a Friday is ever sliced into its week; a bar dated
     after it is there because it is the only proof that a Friday with no
     bars was a holiday (build_and_write). Tickers that never return data get
@@ -272,17 +281,39 @@ def download_equity_history(tickers: list, first_friday: date,
     return history
 
 
-def slice_week(hist: tuple, monday: date, friday: date):
-    """Last bar on/before friday, provided it is inside the Mon..Fri week.
-    Returns ({"close","volume"}, actual_date) or (None, None)."""
+def slice_week(hist: tuple, session: date):
+    """The bar dated `session`, the session the file holds, or nothing.
+
+    Returns ({"close","volume"}, session), or (None, last), where `last` is
+    the date of the ticker's last bar before the session, or None when the
+    download holds none before it.
+
+    Until 2026-10-07 this took the last bar on or before the Friday,
+    anywhere in the Mon..Fri week. A ticker with no bar on the session --
+    halted, delisted mid-week, a gap at the provider -- went into the file
+    as an earlier session's close under the Friday's date, with nothing to
+    show it. Of the 35,000 bars this function wrote it happened to one:
+    EA in 2026-08-07.json is its
+    close of Tuesday 2026-08-04, on volume 0, the last session before it
+    was taken private. Owner decision 2026-10-06 (DATA_FEED.md sec.1b):
+    the bar dated the file's session, or `missing`, which is what the
+    weekly job has always done (snapshot.fetch_session_bars). A gap stays a
+    gap, and every reader already handles one."""
     dates, closes, vols = hist
-    i = bisect_right(dates, friday) - 1
-    if i < 0:
-        return None, None
-    d = dates[i]
-    if d < monday:
-        return None, None     # did not trade this week
-    return {"close": closes[i], "volume": vols[i]}, d
+    i = bisect_right(dates, session) - 1
+    if i >= 0 and dates[i] == session:
+        return {"close": closes[i], "volume": vols[i]}, session
+    return None, (dates[i] if i >= 0 else None)
+
+
+def missing_reason(session: date, last) -> str:
+    """What `missing` says of a ticker with no bar on the file's session:
+    what was asked for and what the download holds, and no guess at why.
+    The text this replaced, "likely pre-IPO or not trading", was wrong for
+    BK, MMC and PEAK in every one of the 105 weeks it was written into."""
+    if last is None:
+        return NO_BAR_BEFORE % session.isoformat()
+    return NO_SESSION_BAR % (session.isoformat(), last.isoformat())
 
 
 # ---------------------------------------------------------------------------
@@ -324,18 +355,16 @@ def build_and_write(friday: date, tickers: list, history: dict,
             "then, or the last session of the week once the Friday is "
             "proven to have been skipped." % (friday.isoformat(), why))
 
-    # Sliced up to the file's session, not the Friday: a file that says
-    # "bars from Thursday" cannot then hold a bar dated after it. For an
-    # ordinary week the two are the same day and nothing changes.
-    monday = friday - timedelta(days=4)
+    # Every ticker's bar is the one dated the file's session: the Friday,
+    # or, in a week the witness proved a holiday, the day the file will
+    # name. A ticker without one is in `missing`.
     bars: dict = {}
     missing: list = []
     for t in tickers:
-        bar, _actual = slice_week(history.get(t, ([], [], [])),
-                                  monday, session)
+        bar, last = slice_week(history.get(t, ([], [], [])), session)
         if bar is None:
             missing.append({"ticker": t,
-                            "reason": MISSING_REASON % friday.isoformat()})
+                            "reason": missing_reason(session, last)})
         else:
             bars[t] = bar
 
@@ -396,6 +425,37 @@ def read_week(path: str, friday: date) -> dict:
     return doc
 
 
+_SESSION_NOTE = re.compile(
+    "^" + snapshot.SESSION_NOTE % r"(\d{4}-\d{2}-\d{2})" + "$")
+
+
+def file_session(doc: dict, friday: date, path: str = "the week") -> date:
+    """The session a week on file holds: the Friday, or the earlier day of
+    its week that `session_note` names (a market holiday, DATA_FEED.md
+    sec.1c). A merged bar is the one dated this day.
+
+    A note that cannot be read is refused, a null one included: the
+    writer leaves the key out of a week that holds its Friday, and the
+    feed gate fails any other form. Taken for "the Friday", a holiday
+    week would get no bar for any name merged into it, and each would be
+    listed in `missing` beside a session it did trade on."""
+    if "session_note" not in doc:
+        return friday
+    note = doc["session_note"]
+    match = _SESSION_NOTE.match(note) if isinstance(note, str) else None
+    try:
+        day = date.fromisoformat(match.group(1)) if match else None
+    except ValueError:
+        day = None
+    if day is None or not friday - timedelta(days=4) <= day < friday:
+        raise SystemExit(
+            "backfill: %s has session_note %r, which names no earlier "
+            "session of the week of %s -- refusing to merge into a week "
+            "whose session cannot be read"
+            % (path, note, friday.isoformat()))
+    return day
+
+
 def merge_into_existing(friday: date, tickers: list, history: dict,
                         path: str) -> dict:
     """Add tickers to an existing week without disturbing what is there.
@@ -439,11 +499,12 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     doc = read_week(path, friday)
     series = doc.setdefault("series", {})
 
-    monday = friday - timedelta(days=4)
+    session = file_session(doc, friday, path)
     present: list = []
     absent: list = []
     renamed: list = []
     fresh: dict = {}
+    last_bar: dict = {}
     for t in tickers:
         if t in series:
             # Held already, so not this run's to touch. It is not sliced
@@ -457,10 +518,10 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
         if other is not None:
             renamed.append((t, other))
             continue
-        bar, _actual = slice_week(history.get(t, ([], [], [])),
-                                  monday, friday)
+        bar, last = slice_week(history.get(t, ([], [], [])), session)
         if bar is None:
             absent.append(t)
+            last_bar[t] = last
             continue
         fresh[t] = bar
 
@@ -495,7 +556,7 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
                if m.get("ticker") not in merged]
     for t in unlisted:
         missing.append({"ticker": t,
-                        "reason": MISSING_REASON % friday.isoformat()})
+                        "reason": missing_reason(session, last_bar[t])})
     doc["missing"] = sorted(missing, key=lambda m: m.get("ticker") or "")
 
     with open(path, "w", encoding="utf-8", newline="") as f:
@@ -512,13 +573,17 @@ def held_already(weekly_dir: str, fridays: list, tickers: list) -> dict:
     first is what lets a dry run say so, and what stops a run that has
     nothing to add before it downloads anything. A Friday with no file is
     not looked at, and a file that is not its week is refused here as the
-    merge refuses it (read_week)."""
+    merge refuses it (read_week). So is a week whose session cannot be
+    read (file_session): the note is in the file, and a dry run that
+    printed OK over it would be a plan the real run cannot carry out."""
     held: dict = {}
     for friday in fridays:
         path = os.path.join(weekly_dir, friday.isoformat() + ".json")
         if not os.path.exists(path):
             continue
-        series = read_week(path, friday).get("series") or {}
+        doc = read_week(path, friday)
+        file_session(doc, friday, path)
+        series = doc.get("series") or {}
         for t in tickers:
             if t in series:
                 held.setdefault(t, []).append(friday)
@@ -597,8 +662,9 @@ SAME_BARS_WEEKS = 3
 
 RENAMED_REFUSED = (
     "REFUSED, nothing downloaded and nothing written: this run would put "
-    "one company in the panel under two symbols, or a retired symbol's last "
-    "session under a Friday (RENAMED, scan_pipeline/config/tickers.py). "
+    "one company in the panel under two symbols, or merge a retired symbol, "
+    "of which the provider keeps one session and no week's bar that the "
+    "panel lacks (RENAMED, scan_pipeline/config/tickers.py). "
     "Nothing overrides this, because a bar added to a week is never taken "
     "out.")
 
@@ -693,12 +759,14 @@ def renamed_refusals(weekly_dir: str, on_file: list, tickers: list,
     files before anything is fetched.
 
       * OLD is never merged, into any week. The provider keeps at most its
-        last session, and slice_week files that under the Friday of its
-        week. Rehearsed on a copy, `--only EQR --merge` over 2026-08-21
-        wrote EQR's close of Monday 2026-08-17 beside VMRK's Friday bar and
-        struck EQR from that week's `missing`. Before VMRK was in that week
-        the same run would have left the Monday bar there alone, and the
-        week could never have taken its Friday one.
+        last session, and until 2026-10-07 slice_week filed that under the
+        Friday of its week. Rehearsed on a copy, `--only EQR --merge` over
+        2026-08-21 wrote EQR's close of Monday 2026-08-17 beside VMRK's
+        Friday bar and struck EQR from that week's `missing`. Before VMRK
+        was in that week the same run would have left the Monday bar there
+        alone, and the week could never have taken its Friday one. A bar
+        is held to the file's session now, and this refusal stays: what
+        is left of a retired symbol is no week's bar that the panel lacks.
       * NEW is not added to any week up to OLD's last bar. In the weeks that
         hold OLD it would be OLD's own bar from a later fetch. In a week
         before them that holds neither (2024-08-09.json, for VMRK) it would
@@ -745,8 +813,7 @@ def describe_renamed(refusals: list) -> list:
                 "  %s was renamed %s and is not merged into any week: %d "
                 "week(s) named, %s. The provider serves that company's "
                 "history under %s. Of a retired symbol it keeps at most the "
-                "last session, and this script would file it under a Friday "
-                "it did not trade on."
+                "last session, which is no week's bar that the panel lacks."
                 % (t, other, len(weeks), _weeks(weeks), other))
         else:
             lines.append(
@@ -792,7 +859,6 @@ def same_bars_refusals(weekly_dir: str, fridays: list, tickers: list,
         of the weekly job's 3,181 bars (macro/series_audit.json). The files
         the backfill wrote are older and hold still;
       * a pair with a split between the two fetches, which moves the volume;
-      * a retired symbol's last session, which is another day's volume;
       * anything at all in a dry run, which downloads nothing.
 
     RENAMED covers every one of those for a rename that is on record."""
@@ -805,7 +871,11 @@ def same_bars_refusals(weekly_dir: str, fridays: list, tickers: list,
         for other, bar in series.items():
             if real_bar(bar):
                 by_volume.setdefault(bar["volume"], []).append(other)
-        monday = friday - timedelta(days=4)
+        # Only of a week this run would add to. A week outside the run is
+        # read for the bars a pair already shares and for nothing else,
+        # and what is wrong with it is the feed gate's to report.
+        session = file_session(doc, friday, friday.isoformat() + ".json") \
+            if friday in in_run else None
         fresh: dict = {}       # volume -> the named tickers it would arrive on
         for t in tickers:
             if t in series:
@@ -816,8 +886,7 @@ def same_bars_refusals(weekly_dir: str, fridays: list, tickers: list,
                 continue
             if friday not in in_run:
                 continue
-            bar, _actual = slice_week(history.get(t, ([], [], [])),
-                                      monday, friday)
+            bar, _last = slice_week(history.get(t, ([], [], [])), session)
             if bar is None or not bar["volume"]:
                 continue
             for other in by_volume.get(bar["volume"], ()):
@@ -1099,8 +1168,8 @@ def main() -> int:
     nothing_merged = bool(left_alone) and not written
     if nothing_merged:
         print("NOTHING MERGED: no file was changed. In every week on file, "
-              "each named ticker was there already, or has no bar for the "
-              "week and is in `missing` already.")
+              "each named ticker was there already, or has no bar dated "
+              "the file's session and is in `missing` already.")
         print(NOTHING_MERGED_NEXT)
     if refused:
         # A refusal is a correct outcome and still not "done": exit 2, so a
