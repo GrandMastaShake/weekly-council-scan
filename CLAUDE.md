@@ -990,7 +990,7 @@ has no US10Y or VIX for those eight sessions and never will.
   with its parent. Nothing is undone: the files as they stand are what every
   reader has had since. The guard has no memory of this; it compares a push
   with the tip it replaced.
-- **`data/daily/2026-10-06.json` is short by 59 names and is not edited.**
+- **`data/daily/2026-10-06.json` was written short by 59 names, and withdrawn.**
   The evening attempt wrote it at 01:01 UTC on the 7th, half way through the
   provider's end-of-day roll (The daily observation feed, above). It lists
   the 59 in `missing` as "no bar dated 2026-10-06 in window ...", which was
@@ -1006,9 +1006,14 @@ has no US10Y or VIX for those eight sessions and never will.
   provider lists no trade for it. That is the AVB pattern, it is the
   provider's row and not the roll's doing, and the heatmap rejects it.
 
-  **Not decided:** whether the file is repaired, and how. `DATA_FEED.md`
-  sec.4 has what it holds. A daily file has never been merged into or
-  withdrawn, and nothing here does either.
+  **Withdrawn (owner decision 2026-10-07), for the job to write the
+  session again.** The file was removed whole, in a commit of its own that
+  fails CI's panel step on purpose, and the session is written by a
+  dispatched run of the daily workflow with `date` 2026-10-06: one fetch,
+  one anchor, every name. No bar was edited or merged in, and what is said
+  above is of the file as first written (commit `4b6ffac` has it). It
+  is the one daily file ever withdrawn. The heatmap's tape of that day
+  stands as built.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
@@ -1329,5 +1334,7 @@ moving one breaks his skill silently; update
   hand. `--force` does not do it. At night the answer is to wait for the
   next attempt. A name that has stopped trading for good comes out of the
   feed, and is not waited for from that day.
-- Read a name in `2026-10-06.json`'s `missing` as one that did not trade.
-  All 59 traded; the file was written before the provider posted them.
+- Mend a short daily file by hand, or withdraw one without the owner's
+  word. `2026-10-06.json` as first written listed 59 names in `missing`
+  that had all traded; it was withdrawn whole on 2026-10-07 and written
+  again by the job.
