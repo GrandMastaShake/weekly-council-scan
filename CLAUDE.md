@@ -299,8 +299,10 @@ by `tests/test_feed_names.py`, which prints the replacement, and by
 entry for each.
 
 **A short newest file on the runner is not always a short week.** Its
-`data/` is synced by hand, and a name merged into a week on main does not
-reach its copy. So the file is either a week the stale writer has just
+`data/` was synced by hand until 2026-10-06, and a name merged into a week
+on main did not reach its copy. (The job's first step levels it since,
+below. The gate still cannot see main and reads any copy as one that may
+be behind.) So the file is either a week the stale writer has just
 written, which must not be pushed, or the runner's copy of a week main holds
 whole, which must not be rewritten, and the gate cannot see main to tell
 which. Both of its lines say to look at main first. **A week that is on main
@@ -339,7 +341,8 @@ as the weekly job builds its own. It is a card, and nothing in this repo
 checks that it is followed. And when a name next joins and is merged into
 the newest week on main, the runner's copy of that week is short of it: a
 Saturday that writes no week fails on the copy until main's replaces it.
-The weekly job's prompt and task card were not changed.
+The weekly job's prompt and task card were not changed for this. (They
+were later that day, for the catch-up: below.)
 
 **So after any change to the feed, sync `scan_pipeline/` on the runner
 before the next Saturday build**, and copy the week the name was merged into
@@ -347,6 +350,67 @@ with it: `config/` for a change of names, and `snapshot.py` where it is
 behind. Of the feed modules on the runner on 2026-10-06, `tickers.py` held
 the repo's names, `snapshot.py` was the repo's of 2026-09-21, with the old
 list in it, and `snapshot_macro.py` the repo's of 2026-08-12.
+
+**Synced that afternoon, at main `397d76c`.** The four feed modules that
+differed (`config/tickers.py`, `panel_source.py`, `snapshot.py`,
+`snapshot_macro.py`), every weekly file with both corrections, the two
+history files and `market_state.json`: each an exact copy of the committed
+blob, and each file replaced was first shown to be an old copy of a
+committed version, so nothing written on the runner was lost. The job's own
+gate line then exited 0 on the runner's data, where it had failed four ways
+that morning. What this file and `DATA_FEED.md` say the runner does "until
+it is synced" is the state before that. `scan_pipeline/state/` on the
+runner is live state, in no version of this repo, and no sync touches it.
+
+**The job levels its own data now, and its prompt asks for every week
+owed (owner sign-off 2026-10-06).** Step 0 of the weekly job downloads
+`scripts/sync_feed_copy.py` fresh and runs it. The rule is the panel's own:
+what a weekly file on the copy holds, it still holds. The repository's
+version replaces the copy's only where it keeps every bar, label and stamp
+the copy has, which is what a copy that is merely behind looks like. A
+repository file that changes or lacks something the copy holds is a
+refusal for the whole run, nothing written, because either side can be
+the wrong one: a week typed out through a tool call reached main mistyped
+twice (2026-08-14, 2026-08-28), and on 2026-08-26 main held 107 weeks cut
+to 44 series. Both history files and `market_state.json` are the
+repository's. What is replaced is kept under `data/replaced/`.
+
+A week on the copy that was never in the repository is left alone, for
+step 7 to push. One the repository held and removed is refused, not
+pushed back, unless it was fetched after the removal: that is the week
+the job wrote since, and it is kept. A correction the repository does
+not hold is moved aside. Anything else in `data/weekly` is refused with
+what it is.
+
+It ends `LEVEL`, and the job goes on; `REFUSED` then `NOT LEVEL`, and
+the job stops, because the two sides disagree about an observation;
+or `INTERRUPTED` then `NOT LEVEL`, and the job runs it once more: no
+answer from the repository, a copy that could not be read, a disk
+error part-way. None of those is the owner's to settle.
+
+Then `snapshot.unwritten_fridays`, oldest first, stopping at the first
+refusal; the state through the chain; and a push of the weeks that run
+wrote and the ones step 0 kept, **from the bytes on disk**, checked by
+running the same script again without `--apply`. The dry run was not
+made for that: a week that did not land ends it exit 0, "1 week(s)
+kept", and the job goes on after a weekly push that fails, so a state
+can go up for a week main lacks. A check made for it, and the two
+changes to the prompt that go with it, wait for the owner. The
+Council's fallback (card 06) points at the same steps, and tries the
+build whatever Saturday's line said. **Code is still synced by hand**:
+the script reports a `scan_pipeline/` file that is behind and writes none.
+`DATA_FEED.md` sec.1c, "Outside this repo", has all of it.
+
+    python scripts/sync_feed_copy.py --runner <pipeline_root>          # is it level?
+    python scripts/sync_feed_copy.py --runner <pipeline_root> --apply
+
+A dry run exits 1 when the copy is not level, 2 when it refuses. After a
+declared full rewrite of some weeks, and only then, a person adds
+`--rewritten START END`. It is `panel_guard`'s `--rewrite` and lifts no
+more: the repository's version may change what the copy holds, and may
+not lack an entry of it. **Do not resolve a refusal by editing, deleting
+or pushing a file it names.** It means the repository and the runner
+disagree about an observation, and that is the owner's to settle.
 
 **Do not shrink the feed to the focus set.** It would drop 211 tickers
 including 22 actively held or traded. C, MRK and SIDU are in the current Arena
@@ -479,7 +543,12 @@ keeps the rest.
 
 Eight sessions were lost between 2026-09-21 and 2026-10-02 with every run
 green: six to the UTC date, two (the Fridays) to the null-close window, each
-refused once with nothing asking again.
+refused once with nothing asking again. They were recovered on 2026-10-06
+with `--since 2026-09-21 --date 2026-10-02`, dispatched from the workflow:
+one download, one anchor, 336 series each. A recovered file holds equities
+only. Its `rates`, `vol`, `commodities` and `fx` are empty and `missing`
+says so, like the thirteen bootstrap files before 2026-09-11, so the panel
+has no US10Y or VIX for those eight sessions and never will.
 
 ## Known data defects
 
@@ -549,7 +618,8 @@ refused once with nothing asking again.
   that derived a `market_state.json`. It warns for any week with no Treasury
   2-year. All of these are what a Friday looks like on a runner that is
   behind: the writer is the runner's copy of `scan_pipeline/` against the
-  runner's copy of `data/`, both synced by hand, and the weekly job does not
+  runner's copy of `data/`, the first synced by hand and the second levelled
+  by the job's first step since 2026-10-06, and the weekly job does not
   write the history file.
 
   **A missing row is not a holiday.** The fetch takes the row dated `as_of`
@@ -599,7 +669,12 @@ refused once with nothing asking again.
 
   which prints only what is new, changed or gone against that list (network
   and yfinance needed; the tests need neither). Give anything new a cause in
-  the JSON by hand, then `--write`.
+  the JSON by hand, then `--write`. A close the writer declined is not one
+  of them: a late-settling instrument that a daily file fetched before
+  13:00 UTC lists in `missing` is counted (`before_settlement`) and not
+  listed, since that is every daily file from 2026-10-05 on. The file's
+  `fetched_at` decides. A weekly file in that state is a job that ran early
+  and is listed.
 
   The writer now follows the Treasury path's rules: the bar dated `as_of` or
   `missing`; a stand-in only when a later bar proves the date was skipped,
@@ -734,10 +809,10 @@ refused once with nothing asking again.
   or sector ETF at all, SPY among them, with none listed in `missing`. The
   sixteen were merged in on 2026-10-06 (next entry).
 
-  Both of these are outside this repo and changed by hand: the runner's copy
-  of `scan_pipeline/`, which writes the empty file until it is synced (the
-  gate stops it), and the job's prompt, which asks for the most recent Friday
-  only and so needs the catch-up put into it.
+  Both of these were outside this repo and changed by hand, and both were on
+  2026-10-06: the runner's copy of `scan_pipeline/`, which wrote the empty
+  file until it was synced, and the job's prompt, which asked for the most
+  recent Friday only and now has the catch-up in it.
 - **`2024-08-09.json` went six weeks without its sixteen ETFs.** The
   44-ticker merge of 2026-08-26 ran from 2024-08-09 and the panel began on
   2024-08-16, so `--merge` started the week from its list; the next day the
@@ -800,8 +875,12 @@ refused once with nothing asking again.
   fallback: no bar for the named contract means `missing`. The rule is what
   327 of the 339 committed closes already hold. It is the spot month and not
   the active one because that is the price of the metal and the panel's own
-  history; so GOLD reads about 0.7% under `GC=F`, which `facts.json` and the
-  sector grids still pull.
+  history; so GOLD reads about 0.7% under `GC=F`. `facts.json` and the
+  sector grids pulled that symbol until 2026-10-06. Canary Watch now takes
+  WTI and gold from `market_state.json`, names the contract beside the
+  number and gives `facts.json` the contract's own symbol as the `source`
+  (owner sign-off; first run 2026-10-10). The grids run on Friday night,
+  before the feed exists, and label a futures level read then as a quote.
 
   **The old files are not edited and not corrected.** Twelve closes in five
   weeks are off the rule, and `data/commodity_settlements.json` answers for
@@ -990,6 +1069,13 @@ what catches that.
   runner's directory, does not owe it, and the repository has a hole that
   the runner's gate passes and CI fails after the push. Step 7 has to push
   a week the repository lacks whether or not that run wrote it.
+
+All three were closed on 2026-10-06. The runner's `scan_pipeline/` was
+synced. The job's first step levels its `data/weekly` with the
+repository, so a week the repository has and the copy lacks is there
+before anything is asked for. And step 7 pushes the weeks step 0 found
+unpushed along with the ones that run wrote (owner sign-off; "Universe
+vs focus set", above).
 
 Where the refusal will be met is a second attempt inside one run, which the
 2026-08-28 run made (`step3_weekly.py`, then `step3_weekly_v2.py`). After

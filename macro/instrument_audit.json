@@ -9,6 +9,9 @@
     "absent": "no close in the file; the provider has a bar dated as_of",
     "unverified": "the provider could not answer; never an ok"
   },
+  "_counted": {
+    "before_settlement": "data/daily only, and not a finding: an instrument that settles the day after its session, listed in missing by a file fetched before 13:00 UTC on that day, where the provider has a bar dated as_of now. The writer may not read it at that hour and both of the daily job's attempts are earlier (DATA_FEED.md sec.1b, sec.4), so every daily file written since 2026-10-05 is in that state. The file's fetched_at decides, not the reason it gives. Counted under 'audited'; nothing in 'findings' answers for it. In data/weekly the same state is a job that ran early and is listed as absent."
+  },
   "causes": {
     "index_bar_absent_at_fetch": {
       "what": "2026-08-28.json holds the 2026-08-27 close for its three index instruments.",
@@ -58,7 +61,7 @@
   },
   "audited": {
     "provider": "yahoo",
-    "fetched_at": "2026-10-05T04:35:52Z",
+    "fetched_at": "2026-10-06T19:05:58Z",
     "yfinance": "1.6.0",
     "panels": {
       "weekly": {
@@ -70,27 +73,32 @@
         "other_session": 0,
         "differs": 119,
         "absent": 2,
-        "unverified": 0
+        "unverified": 0,
+        "before_settlement": 0
       },
       "daily": {
-        "files": 21,
-        "closes": 56,
-        "ok": 17,
+        "files": 30,
+        "closes": 58,
+        "ok": 19,
         "prior_session": 7,
         "holiday_stand_in": 0,
         "other_session": 0,
         "differs": 32,
         "absent": 0,
-        "unverified": 0
+        "unverified": 0,
+        "before_settlement": 5
       }
     },
     "symbols": {
       "answered": [
         "2YY=F",
         "CL=F",
+        "CLX26.NYM",
         "DX-Y.NYB",
         "GC=F",
+        "GCV26.CMX",
         "SI=F",
+        "SIV26.CMX",
         "^TNX",
         "^VIX"
       ],

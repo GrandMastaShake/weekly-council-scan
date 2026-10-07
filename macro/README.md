@@ -22,6 +22,13 @@ moved since Saturday), the wiki says so explicitly — it never silently diverge
 - Every verifiable field carries `source: "yahoo:<SYMBOL>"`, `as_of`, and
   `tolerance_pct`. Fields from external feeds we cannot re-fetch carry
   `stale: true` and are treated as directional only.
+- `cross_asset.wti` and `cross_asset.gold` are the committed feed's
+  settlements, not a fetch of Canary Watch's own, from the table generated
+  2026-10-10: the value is `px` in `data/market_state.json` and the `source`
+  names the contract (`yahoo:CLX26.NYM`, `yahoo:GCV26.CMX`), never the
+  continuous `CL=F` or `GC=F`, which change contract month underneath a
+  reader (`DATA_FEED.md` sec.1d). A week the feed has no number for keeps
+  the last one with `stale: true`.
 - Computed fields (`curve_10y_3m_bps` etc.) must recompute from their inputs.
 
 ## quarantine.json (phantom-anomaly bans)
@@ -157,6 +164,13 @@ the check passes them as it always has.
   `scripts/backfill_commodities.py`. A file that names its contract is
   compared with that contract's own history while the provider still serves
   it, and left out once the contract has expired.
+- A close the writer declined to read is not a finding. The futures and the
+  dollar index are not read before 13:00 UTC on the day after their session,
+  and both of the daily job's attempts are earlier (`DATA_FEED.md` sec.4), so
+  every daily file since 2026-10-05 lists them in `missing`. The audit counts
+  those under `audited` as `before_settlement` and lists none of them: the
+  file's `fetched_at` decides, not the reason it gives. A weekly file in that
+  state is a job that ran early, and is listed as `absent`.
 
 ## series_audit.json (which session a committed equity bar is)
 
