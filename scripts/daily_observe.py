@@ -79,14 +79,64 @@ second scheduled attempt the next morning, and `explain_no_witness`, which
 asks the provider directly so a refusal says which of the three it was: not
 a session, a session not settled yet, or a provider that did not answer.
 
+The half-posted session
+-----------------------
+That roll is not one step, and the witness is early in it. Run 37554944269,
+the evening attempt for 2026-10-06, was started at 01:00 UTC on the 7th and
+found SPY settled and 59 of the 336 names without a bar, in the batch and
+again when each was asked for alone: ABBV, GOOG, META, XLC, XLRE, BTC and
+the rest. Every gate passed, the file was committed with 277 series, and the
+audit was green. By 02:41 UTC the provider had all 336, and the 277 it had
+already given were the same bars to the cent and to the share. A daily file
+is not completed afterwards.
+
+What the 59 have in common is their age. 57 are every name of the feed the
+provider dates (`firstTradeDate`) from 2012-04-12 on. The other two, GOOG
+and QUBT, it dates 2004 and 2007, and GOOG at least is a symbol younger
+than the history filed under it (the class C shares took it in 2014). No
+name it had posted was first listed after 2011-10-13. One night is all
+anyone has seen of it, but a cut that clean is not chance: the roll works
+from the oldest listing to the newest, SPY (1993) is early in it, and the
+names it reaches last are the same ones every night, SPCX and BTC today.
+
+So a file is compared with the panel before it is written
+(`assert_session_posted`). A name is expected if it is in the feed
+(`waited_for`) and has a bar in one of the last RECENT_SESSIONS sessions on
+file, and an expected name with no bar now is gone:
+
+  * Until ROLL_HOURS after the close, one name gone refuses the run. The
+    provider may still be posting, nothing on the night tells a late name
+    from a dead one, and the morning attempt is there to ask again. A bound
+    above none would let the roll's last names drop out of the panel night
+    after night.
+  * After that the roll is over. A name still gone has stopped trading or
+    been renamed, and is listed in `missing` as it always was, up to
+    MAX_GONE of them. More than that is a provider that did not answer for
+    part of the panel, and is refused at any hour.
+
+Several sessions and not the newest alone, because the newest can be the
+short one. 2026-10-06.json stays as committed, and held against it alone the
+same roll caught at the same point the next night would have lost nothing.
+
+A refusal, exit 2, like the witness's: the next scheduled attempt writes the
+session, and the audit is what goes red if none does. `--force` does not
+override it. It is the append-only guard's key and nothing else, and a
+half-posted fetch written over a whole file would be the worse loss; so it
+is also refused wherever the fetch lacks a name the file on disk holds
+(`lost_in_rewrite`).
+
 CLI:
   python scripts/daily_observe.py [--date YYYY-MM-DD] [--out data]
          [--dry-run] [--force] [--no-special] [--since YYYY-MM-DD]
   python scripts/daily_observe.py --audit [--out data]
 
   --date defaults to the most recent weekday whose US/Eastern close has
-  passed. The gate above, not the calendar, decides whether that date is
+  passed. The gates above, not the calendar, decide whether that date is
   actually writable.
+
+  --since holds each session of its range to the same comparison, against
+  the sessions before it on file and in the same download. One it refuses
+  is left for a later run and the rest are written.
 
   --audit writes nothing. It asks the witness which sessions exist and exits
   1 if a settled one, other than the newest, has no file -- the check that
@@ -144,6 +194,42 @@ CADENCE = "daily"
 # earlier, so a session is never taken as closed before it is.
 CLOSE_ET = (16, 0)
 
+# What tells a session the provider has half posted from a whole one (module
+# docstring, "The half-posted session"). Three numbers, read off the panel
+# and the run logs as they stood on 2026-10-07. tests/test_daily_observe.py
+# replays the panel through them.
+#
+# A name is expected in a new file if it has a bar in one of this many
+# sessions on file before it. More than one, because the newest file can be
+# the short one: 2026-10-06.json is, by 59, and as the only thing a file is
+# compared with it would have passed the same 59 missing again. A trading
+# week, so a name that has stopped trading stops being waited for after five
+# sessions without anyone editing a list.
+RECENT_SESSIONS = 5
+
+# How many expected names may be without a bar once the roll is over, and be
+# listed in `missing`. Replayed over the 30 sessions on file before
+# 2026-10-06 the count is 0 on 25 of them and 1 on five, all AVB, a dead
+# symbol the provider kept one last bar for (2026-08-24). On 2026-10-06 it
+# is 59. Three is room for a merger that retires two symbols with a third
+# name gone beside them. It is also under four, the fewest names the feed
+# takes from one of the provider's exchange codes (NCM, as labelled on
+# 2026-10-07), so a venue the provider dropped for a day would be refused
+# and not written down as so many delistings. That last is reasoning, not
+# something seen.
+MAX_GONE = 3
+
+# Hours after the regular close before a name with no bar is believed. The
+# roll has been caught part done 5h01m after the close (01:01 UTC on
+# 2026-10-07) and found finished at 5h54m (01:54 UTC on 2026-10-06) and at
+# 6h41m (02:41 UTC on 2026-10-07). Nobody has watched it end. Ten is 02:00
+# US/Eastern: over three hours past the latest of those, and over two short
+# of the morning attempt in either season (09:15 UTC is 05:15 EDT and 04:15
+# EST). That attempt has to fall after it, or a name that has stopped
+# trading would be waited for by both attempts and its sessions never
+# written.
+ROLL_HOURS = 10
+
 _CHART = "https://query1.finance.yahoo.com/v8/finance/chart/"
 _UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 _SESSION_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json$")
@@ -151,6 +237,15 @@ _SESSION_FILE = re.compile(r"^(\d{4}-\d{2}-\d{2})\.json$")
 
 class SessionNotSettled(RuntimeError):
     """The requested date is not a completed, settled US trading session."""
+
+
+class SessionHalfPosted(SessionNotSettled):
+    """The witness has settled and part of the panel has not. `gone` is the
+    names that had a bar in a recent session on file and have none now."""
+
+    def __init__(self, message: str, gone: list):
+        super().__init__(message)
+        self.gone = list(gone)
 
 
 def _utcnow() -> datetime:
@@ -211,6 +306,21 @@ def observation_universe(weekly_dir: str | None = None) -> list:
             with open(path, encoding="utf-8") as f:
                 universe |= set(json.load(f).get("series") or {})
     return sorted(universe)
+
+
+def waited_for(tickers: list) -> list:
+    """The names a new file is held to (assert_session_posted): those of
+    `tickers` that the feed lists today.
+
+    A run fetches more than the feed. observation_universe() adds whatever
+    the newest weekly file holds, so a name taken out of
+    PRICE_FEED_UNIVERSE goes on being fetched until a week is written
+    without it. It is fetched and not waited for: taking a name that has
+    stopped trading out of the feed is the way out of a refusal that will
+    not clear by itself, and it has to work that day, not on the Saturday.
+    """
+    feed = set(equity_universe())
+    return [t for t in tickers if t in feed]
 
 
 def default_date(now: datetime | None = None) -> str:
@@ -320,6 +430,146 @@ def assert_session_settled(as_of: str, bars: dict,
             "session known to be complete.")
 
 
+def roll_ends(as_of: str) -> datetime:
+    """US/Eastern wall time by which the provider's end-of-day roll for the
+    session is taken to be over: ROLL_HOURS after the regular close."""
+    d = date.fromisoformat(as_of)
+    return (datetime(d.year, d.month, d.day, *CLOSE_ET)
+            + timedelta(hours=ROLL_HOURS))
+
+
+def roll_may_be_running(as_of: str, now: datetime | None = None) -> bool:
+    """Whether the provider may still be posting the session. Counted from
+    the close and not from the null-close window, so that one clock decides
+    it: a name the evening attempt cannot get is asked for again in the
+    morning whether the roll had begun or not."""
+    return eastern(now or _utcnow()) < roll_ends(as_of)
+
+
+def _names_on_file(path: str) -> set:
+    """The names a daily file holds a bar for. Empty when it cannot say."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            series = json.load(f).get("series")
+    except (OSError, ValueError, AttributeError):
+        return set()
+    return set(series) if isinstance(series, dict) else set()
+
+
+def recent_bars(daily_dir: str, as_of: str, cut: dict | None = None) -> tuple:
+    """What a new file for as_of is compared with: (sessions, names). The
+    last RECENT_SESSIONS sessions before as_of, oldest first, and every name
+    with a bar in any of them.
+
+    A session is one on file or, in a bootstrap, one this run has already
+    cut from its download (`cut`, {session: names}). That is how a dry run
+    sees the files a real one would have written by then.
+
+    Earlier sessions only: a name with a bar after as_of and none on it may
+    have listed in between. A file with no series this can read is not a
+    session to compare with, and the one before it is taken instead;
+    truth_check --feed is what fails such a file.
+    """
+    cut = cut or {}
+    days = sorted({d for d in panel_sessions(daily_dir) if d < as_of}
+                  | {d for d in cut if d < as_of}, reverse=True)
+    sessions, names = [], set()
+    for day in days:
+        held = (set(cut[day]) if day in cut
+                else _names_on_file(os.path.join(daily_dir, day + ".json")))
+        if not held:
+            continue
+        sessions.append(day)
+        names |= held
+        if len(sessions) == RECENT_SESSIONS:
+            break
+    return sorted(sessions), names
+
+
+def _compared_with(sessions: list) -> str:
+    if len(sessions) == 1:
+        return "the session on file before it (" + sessions[0] + ")"
+    return ("the last " + str(len(sessions)) + " sessions on file ("
+            + sessions[0] + " .. " + sessions[-1] + ")")
+
+
+def assert_session_posted(as_of: str, tickers: list, bars: dict,
+                          sessions: list, names: set,
+                          now: datetime | None = None) -> list:
+    """Refuse a session the provider has posted for only part of the panel.
+    See the module docstring, "The half-posted session".
+
+    `sessions` and `names` are recent_bars(): what the panel held just before
+    as_of. Returns the names that are gone and may be written down as
+    missing, which is none of them until the roll is over and MAX_GONE of
+    them after. With no earlier session there is nothing to compare with and
+    nothing is refused: the witness is then all that speaks for the file,
+    as it was for every file before this rule.
+
+    `tickers` is waited_for(): the feed's names, which is fewer than the run
+    fetched. Only those are counted. A name that has left the feed is not
+    gone, whatever the files before this one hold for it.
+    """
+    gone = sorted(t for t in set(tickers) if t in names and t not in bars)
+    if not gone:
+        return gone
+    one = len(gone) == 1
+    over = roll_ends(as_of)
+    et = eastern(now or _utcnow())
+    said = (("1 name" if one else str(len(gone)) + " names")
+            + " with a bar in " + _compared_with(sessions)
+            + (" has" if one else " have") + " none dated " + as_of + ": "
+            + _listing(gone, 8) + ". ")
+    stamp = (over.strftime("%H:%M") + " US/Eastern on "
+             + over.date().isoformat())
+    if et < over:
+        raise SessionHalfPosted(
+            said + WITNESS + " has settled and "
+            + ("it has" if one else "they have") + " not. The provider "
+            "posts a session name by name, and until " + stamp + " it may "
+            "not have finished (it is " + et.strftime("%H:%M") + " on "
+            + et.date().isoformat() + "). A daily file is not completed "
+            "afterwards, so nothing is written while a name is waited for. "
+            "The next scheduled attempt writes the session.", gone)
+    if len(gone) > MAX_GONE:
+        raise SessionHalfPosted(
+            said + "The provider's end-of-day roll for that session was "
+            "over by " + stamp + ", so these are not late posts, and a "
+            "delisting or a rename accounts for " + str(MAX_GONE) + " names "
+            "at most: the provider did not answer for part of the panel. A "
+            "daily file is not completed afterwards, so nothing is written "
+            "short by that many. Run it again. If these names have stopped "
+            "trading for good, they come out of the feed first "
+            "(PRICE_FEED_UNIVERSE in scan_pipeline/config/tickers.py).",
+            gone)
+    return gone
+
+
+def lost_in_rewrite(path: str, bars: dict) -> list:
+    """--force only: the names the file at `path` holds a bar for and the
+    fetch that would replace it does not.
+
+    --force writes a session again to mend a write that failed, and a file
+    that did not survive its write holds nothing this can read, so that use
+    is never refused. A file that reads is another matter. After the roll
+    hour the gate above lets a few names go into `missing`, and with --force
+    that was a whole file exchanged for a shorter one, exit 0 (rehearsed on
+    a panel of five names: four written over five). panel_guard stops that
+    in the workflow, which never passes --force. Nothing did at a desk.
+    """
+    return sorted(t for t in _names_on_file(path) if t not in bars)
+
+
+def _rewrite_refusal(as_of: str, lost: list) -> str:
+    one = len(lost) == 1
+    return ("--force would write " + as_of + " again without "
+            + ("1 name" if one else str(len(lost)) + " names")
+            + " the file on disk holds a bar for: " + _listing(lost, 8)
+            + ". A session is written again to mend a write that failed, "
+            "never to give up a bar it holds. If the file is wrong, that is "
+            "for a correction to say (" + as_of + ".corrected.json).")
+
+
 def _fetch_chart(symbol: str, start: date, end: date):
     """The provider's raw daily rows for [start, end], or None. Stdlib only."""
     import urllib.request
@@ -356,7 +606,20 @@ def witness_rows(start: str, end: str, fetch=None):
     Returns None when the provider could not be asked or answered something
     unreadable. "Unknown" must never read as "no session".
     """
-    payload = (fetch or _fetch_chart)(WITNESS, date.fromisoformat(start),
+    return listed_rows(WITNESS, start, end, fetch)
+
+
+def listed_rows(symbol: str, start: str, end: str, fetch=None):
+    """witness_rows for any symbol: what the provider lists for it over
+    [start, end], or None.
+
+    A symbol the provider no longer serves answers in one of two ways, both
+    seen on 2026-10-07. BK, MMC, PEAK and HES answer with an error (404,
+    "symbol may be delisted"), which reads here as None like any other
+    answer that is not one. AVB, EA and EQR answer with a listing that has
+    no rows in the window, which reads as {}: listed, and no session on any
+    date asked about."""
+    payload = (fetch or _fetch_chart)(symbol, date.fromisoformat(start),
                                       date.fromisoformat(end))
     rows: dict = {}
     try:
@@ -408,6 +671,64 @@ def explain_no_witness(as_of: str, rows) -> str:
     return ("The provider lists no session on " + as_of + " (a market "
             "holiday, or a date that has not traded). The latest session it "
             "lists is " + latest + " (" + state + ").")
+
+
+def _and(names: list) -> str:
+    if len(names) < 2:
+        return "".join(names)
+    return ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def explain_gone(as_of: str, gone: list, rows_for=None,
+                 sample: int = 3) -> str:
+    """What the provider itself lists on as_of for the first few names that
+    are gone, in its own terms.
+
+    The refusal counts names without a bar and cannot say why they have
+    none. A roll that is part done, a batch that dropped them and a name that
+    did not trade all look the same through yfinance, and the first of those
+    had never been looked at when this was written: on 2026-10-07 the 59
+    were posted before anyone asked. So the question is put to the raw chart
+    on every refusal, and the log of the next one is the evidence.
+
+    It explains and decides nothing. A few names only, because each is a
+    request, and the first ones in the alphabet because which names the roll
+    has reached does not depend on it.
+    """
+    probe_from = (date.fromisoformat(as_of) - timedelta(days=10)).isoformat()
+    asked = gone[:sample]
+    null, settled, absent, unknown = [], [], [], []
+    for ticker in asked:
+        rows = (rows_for or listed_rows)(ticker, probe_from, as_of)
+        if rows is None:
+            unknown.append(ticker)
+        elif as_of not in rows:
+            absent.append(ticker)
+        elif rows[as_of] is None:
+            null.append(ticker)
+        else:
+            settled.append(ticker)
+    said = []
+    if len(gone) > len(asked):
+        said.append("Asked the provider about the first " + str(len(asked))
+                    + " of them.")
+    if null:
+        said.append("It lists " + as_of + " for " + _and(null) + " as a "
+                    "session with a NULL close: the session ended and the "
+                    "bar is not posted yet. Its end-of-day roll is part "
+                    "done.")
+    if settled:
+        said.append("It lists a settled close on " + as_of + " for "
+                    + _and(settled) + ": posted since the batch was read, "
+                    "or dropped by the batch.")
+    if absent:
+        said.append("It lists no row on " + as_of + " for " + _and(absent)
+                    + ": no trade that day, or a row it has not made yet.")
+    if unknown:
+        said.append("It gave no answer that could be read for "
+                    + _and(unknown) + "; a symbol it has dropped answers "
+                    "that way too.")
+    return " ".join(said)
 
 
 def fetch_session_range(tickers: list, start: str, end: str) -> dict:
@@ -527,13 +848,18 @@ def audit_feed(have: list, rows, now: datetime | None = None) -> tuple:
                ever write it: the panel stays incomplete until someone
                recovers it. This is the state the feed sat in, green, from
                2026-09-24.
-      WARN     only the newest settled session is unwritten -- one attempt
-               missed and the next has not run -- or the witness could not
-               be asked.
+      WARN     only the newest settled session is unwritten, and the
+               provider's roll for it is over -- an attempt missed it or
+               declined it, and the morning attempt is the last one aimed at
+               it -- or the witness could not be asked.
       OK       every settled session has a file.
-      PENDING  a note, not a level: a session has closed and its close is
-               still null with the provider. Expected of any evening run
-               that lands in the null-close window.
+      PENDING  a note, not a level: a session has closed and is not yet the
+               provider's to give. Either its close is still null, which is
+               any evening run that lands in the null-close window, or the
+               witness has settled and the roll may not have reached every
+               name (roll_may_be_running). An attempt in that time writes
+               the session only whole, so no file yet is the designed state
+               and not a miss, and the next attempt is still to come.
     """
     last_closed = default_date(now)
     if not have:
@@ -564,6 +890,11 @@ def audit_feed(have: list, rows, now: datetime | None = None) -> tuple:
             "by the weekday calendar " + last_closed + "."]
 
     missing = [d for d in settled if d not in on_file]
+    # The witness settles early in the roll (module docstring, "The
+    # half-posted session"). While the roll may still be running, the newest
+    # session with no file is one an attempt was right to leave.
+    waiting = (missing == settled[-1:]
+               and roll_may_be_running(settled[-1], now))
     lines = []
     if [d for d in missing if d != settled[-1]]:
         level = "FAIL"
@@ -581,18 +912,36 @@ def audit_feed(have: list, rows, now: datetime | None = None) -> tuple:
                          "share an adjustment anchor (DATA_FEED.md sec.4):")
             lines.append("  python scripts/daily_observe.py --since "
                          + missing[0] + " --date " + missing[-1])
-    elif missing:
+    elif missing and not waiting:
+        # Until 2026-10-07 this said "the next scheduled attempt should
+        # write it". Now that it waits for the roll hour, the run that
+        # prints it is the morning attempt's or later, and no scheduled
+        # attempt aims at this session again.
         level = "WARN"
         lines.append(
             "WARN: " + missing[0] + " is settled with the provider and has no "
-            "daily file. One attempt missed it; the next scheduled attempt "
-            "should write it. Unwritten after that, it is a hole.")
+            "daily file, and the provider's roll for it is over. An attempt "
+            "missed it or declined it. The morning attempt is the last one "
+            "scheduled for a session: if that has run, write this one by "
+            "hand (python scripts/daily_observe.py --date " + missing[0]
+            + "). Unwritten when the next session settles, it is a hole.")
     else:
         level = "OK"
+        written = [d for d in settled if d in on_file]
         lines.append(
-            "OK: daily feed complete -- " + str(len(settled)) + " settled "
-            "session(s) from " + first + " through " + settled[-1]
+            "OK: daily feed complete -- " + str(len(written)) + " settled "
+            "session(s) from " + first + " through " + written[-1]
             + ", each with a file.")
+        if waiting:
+            over = roll_ends(missing[0])
+            lines.append(
+                "PENDING: " + missing[0] + " has closed, " + WITNESS + " has "
+                "settled, and it has no daily file yet. Until "
+                + over.strftime("%H:%M") + " US/Eastern on "
+                + over.date().isoformat() + " the provider may still be "
+                "posting the session name by name, and an attempt in that "
+                "time writes it only whole. The next scheduled attempt "
+                "writes it.")
     for d in sorted(closed):
         if closed[d] is None and d not in on_file:
             lines.append(
@@ -636,40 +985,71 @@ def _run_backfill(a, as_of: str, tickers: list) -> int:
                     "missing": [{"ticker": "*",
                                  "reason": "bootstrap backfill: special "
                                            "instruments not fetched"}]}
-    written, skipped = 0, 0
+    daily_dir = os.path.join(a.out, "daily")
+    cut: dict = {}          # sessions cut and kept so far, for recent_bars
+    written, skipped, refused = 0, 0, 0
     for day in sorted(sessions):
         day_bars = sessions[day]
+        # Say what a real run would do with each day, or the preview of a
+        # recovery cannot be told from a rewrite of the whole range.
+        if os.path.exists(document_path(a.out, day)) and not a.force:
+            print("  " + day + ": exists, "
+                  + ("would be skipped" if a.dry_run else "skipped")
+                  + " (append-only)")
+            skipped += 1
+            continue
+        # A range usually runs long after any roll, but it may end at the
+        # last close, and in the small hours the newest session is cut from
+        # the same half-posted download a single run would have read. So
+        # every session is held to the comparison, each against the ones
+        # before it. One refused is left for a later run, the rest are
+        # written, and it is not compared with again.
+        compared, names = recent_bars(daily_dir, day, cut)
+        try:
+            gone = assert_session_posted(day, waited_for(tickers), day_bars,
+                                         compared, names)
+        except SessionHalfPosted as exc:
+            print("  " + day + ": REFUSED: " + str(exc))
+            print("    " + explain_gone(day, exc.gone))
+            refused += 1
+            continue
+        lost = lost_in_rewrite(document_path(a.out, day), day_bars)
+        if lost:            # only ever under --force: the file is on disk
+            print("  " + day + ": REFUSED: " + _rewrite_refusal(day, lost))
+            refused += 1
+            continue
+        cut[day] = set(day_bars)
         fetched = {"bars": day_bars,
                    "missing": missing_for(tickers, day_bars, day)}
         doc = build_document(day, fetched, special_note, fetched_at)
+        said = ("  " + day + ": " + str(len(doc["series"])) + " series, "
+                + str(len(doc["missing"])) + " missing")
+        if gone:
+            said += (" (" + _and(gone) + " had a bar in "
+                     + _compared_with(compared) + " and none here)")
         if a.dry_run:
-            # Say what a real run would do with each day, or the preview of
-            # a recovery cannot be told from a rewrite of the whole range.
-            if os.path.exists(document_path(a.out, day)) and not a.force:
-                print("  " + day + ": exists, would be skipped (append-only)")
-                skipped += 1
-                continue
-            print("  " + day + ": " + str(len(doc["series"])) + " series, "
-                  + str(len(doc["missing"])) + " missing (dry run)")
-            written += 1
-            continue
-        try:
+            print(said + " (dry run)")
+        else:
             write_document(doc, a.out, force=a.force)
-        except FileExistsError:
-            print("  " + day + ": exists, skipped (append-only)")
-            skipped += 1
-            continue
-        print("  " + day + ": " + str(len(doc["series"])) + " series, "
-              + str(len(doc["missing"])) + " missing")
+            print(said)
         written += 1
+    left = ""
+    if refused:
+        left = (" " + str(refused)
+                + (" would be refused" if a.dry_run else " refused")
+                + ", for the reason" + ("" if refused == 1 else "s")
+                + " given above.")
     if a.dry_run:
         print("DRY RUN: nothing written. A real run would write "
               + str(written) + " session file(s) and skip " + str(skipped)
-              + " existing.")
-        return 0
-    print("Wrote " + str(written) + " session file(s), skipped "
-          + str(skipped) + " existing.")
-    return 0
+              + " existing." + left)
+    else:
+        print("Wrote " + str(written) + " session file(s), skipped "
+              + str(skipped) + " existing." + left)
+    # Exit 2 only when the run declined everything it was asked for. With a
+    # session written beside the refusal the workflow has files to commit,
+    # and a 2 would skip that step.
+    return 2 if refused and not written else 0
 
 
 def main(argv: list | None = None) -> int:
@@ -730,6 +1110,24 @@ def main(argv: list | None = None) -> int:
                                         witness_rows(probe_from, as_of)))
         return 2
 
+    # The witness has settled. Whether the rest of the panel has is a second
+    # question, asked of the files: 2026-10-06.json was written past this
+    # point with 59 names still to be posted. --dry-run and --force are
+    # refused like any other run.
+    compared, names = recent_bars(os.path.join(a.out, "daily"), as_of)
+    try:
+        gone = assert_session_posted(as_of, waited_for(tickers), bars,
+                                     compared, names)
+    except SessionHalfPosted as exc:
+        print("REFUSED: " + str(exc))
+        print("  " + explain_gone(as_of, exc.gone))
+        return 2
+    if a.force:
+        lost = lost_in_rewrite(path, bars)
+        if lost:
+            print("REFUSED: " + _rewrite_refusal(as_of, lost))
+            return 2
+
     special = None if a.no_special else get_special_instruments(as_of)
     doc = build_document(as_of, fetched, special)
 
@@ -740,6 +1138,13 @@ def main(argv: list | None = None) -> int:
         print("    missing " + m["ticker"] + ": " + m["reason"])
     if len(doc["missing"]) > 10:
         print("    ... and " + str(len(doc["missing"]) - 10) + " more")
+    if not compared:
+        print("  No earlier session on file to compare with, so the witness "
+              "is all that says this one is whole.")
+    elif gone:
+        print("  " + _and(gone) + " had a bar in " + _compared_with(compared)
+              + " and none dated " + as_of + ". The provider's roll is over, "
+              "so this is not a late post: listed in `missing`.")
 
     if a.dry_run:
         print("DRY RUN: nothing written")

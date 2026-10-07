@@ -394,10 +394,65 @@ keeps the rest.
   -- and the refusal now says which it was: not a session, not settled, or no
   answer. It is not the `end` date; the provider appends its newest row
   whatever the window says. The morning attempt exists for this.
+- **The roll that ends that window is not one step, and SPY is early in
+  it.** On 2026-10-07 at 01:01 UTC the evening attempt found SPY posted and
+  59 of the 336 names not, in the batch and again one by one. Every gate
+  passed and `2026-10-06.json` was committed with 277 series; by 02:41 UTC
+  the provider had all 336. The 59 are the youngest listings: every name the
+  provider dates from 2012-04-12 on, and two it dates earlier, GOOG and QUBT
+  (GOOG at least is a symbol younger than its history). Nothing it had
+  posted was listed after 2011-10-13. So the roll runs oldest listing first
+  and ends on the same few names every night, SPCX and BTC today. Seen on
+  that one night.
+
+  A fetch is held against the last sessions on file before it is written
+  (`assert_session_posted`). Until `ROLL_HOURS` after the close, which is
+  02:00 US/Eastern, one feed name that had a bar there and has none refuses
+  the run: exit 2, green, and the morning attempt writes the session. After
+  that hour such a name is taken to have stopped trading or been renamed and
+  is listed in `missing`, up to `MAX_GONE` of them; more is refused at any
+  hour. Several sessions and not the one before, because the one before can
+  be the short file. `--since` holds each session of its range to the same
+  and leaves one it refuses for a later run. `--dry-run` reports the refusal
+  as a real run would. `--force` does not override it, and is refused as
+  well wherever the fetch lacks a name the file on disk holds. With no
+  earlier session on file nothing is compared.
+
+  What it costs and does not cover:
+
+  - After a name really stops trading, the evening attempt declines for as
+    long as its last bar is among the sessions compared with
+    (`RECENT_SESSIONS`), and each is written the next morning. Taking the
+    name out of `PRICE_FEED_UNIVERSE` ends that the same day: it is still
+    fetched while the newest weekly file holds it, and no longer waited for
+    (`waited_for`).
+  - More than `MAX_GONE` names gone for good stop the feed until they leave
+    it, and the audit is what says so.
+  - Every session the evening attempt declines rests on the morning one,
+    and GitHub started the first of those at 15:56 UTC. Past the next close
+    it no longer aims at that session.
+  - After the roll hour up to `MAX_GONE` names are believed without the
+    provider being asked again. A fetch that failed for one of them at that
+    hour is written as `missing` for good, and a `--since` range has no
+    second try per name at all.
+  - It compares names in `series`, not values and not the other blocks. A
+    bar dated `as_of` holding another day's numbers passes, and an index
+    close not yet posted goes to `missing` as before.
+  - A name with no bar in any of the sessions compared with is not waited
+    for: a new listing in its first days in the feed.
+  - The morning attempt has to stay later than that hour, or a dead name is
+    waited for by both attempts and nothing is written. A test reads the
+    cron and holds the two apart.
+  - The weekly writer has no such check. It runs some seventeen hours after
+    the close.
 - **A refusal is green by design, so it can never be the alarm.** The alarm
   is the workflow's last step: `daily_observe.py --audit` asks the witness
   which sessions exist and exits 1 when a settled one, other than the newest,
-  has no file. It names the `--since` command that recovers them. Offline,
+  has no file. It names the `--since` command that recovers them. The newest
+  one with no file is PENDING, not a warning, while the provider may still be
+  posting it: that is what an attempt leaves when it declines a half-posted
+  session. Past that hour it is a warning that names the `--date` command,
+  since no scheduled attempt after the morning one aims at it. Offline,
   `truth_check --feed` WARNs when the newest daily file is two or more
   weekdays old; it knows no holidays, so it never fails.
 - **The job adds a file and changes none, and checks that before it
@@ -800,6 +855,25 @@ refused once with nothing asking again.
   with its parent. Nothing is undone: the files as they stand are what every
   reader has had since. The guard has no memory of this; it compares a push
   with the tip it replaced.
+- **`data/daily/2026-10-06.json` is short by 59 names and is not edited.**
+  The evening attempt wrote it at 01:01 UTC on the 7th, half way through the
+  provider's end-of-day roll (The daily observation feed, above). It lists
+  the 59 in `missing` as "no bar dated 2026-10-06 in window ...", which was
+  true of that minute and reads like 59 names that did not trade. Among
+  them: XLC and XLRE of the sixteen ETFs, BTC, and 23 focus names. The
+  heatmap built its tape for the day from it half an hour later (its
+  `79ef7e7`): six of eleven baskets too thin, the bitcoin row empty, and a
+  tape there is never rewritten.
+
+  The 277 bars it does hold are right: a fetch at 02:41 UTC returned the
+  same close and volume for every one. One of them is a print and not a
+  trade: BLFS, 38.61 on volume 0, the close of the 5th, on a day the
+  provider lists no trade for it. That is the AVB pattern, it is the
+  provider's row and not the roll's doing, and the heatmap rejects it.
+
+  **Not decided:** whether the file is repaired, and how. `DATA_FEED.md`
+  sec.4 has what it holds. A daily file has never been merged into or
+  withdrawn, and nothing here does either.
 - **SPCX** listed 2026-06-12. It correctly appears in `missing` for every
   earlier week. Not a failure.
 - Holiday weeks use the nominal Friday as the filename with `session_note`
@@ -1107,3 +1181,10 @@ moving one breaks his skill silently; update
 - List `data/weekly/*.json` to read the panel. A corrected week is two of
   those. Go through `snapshot._load_weekly_files`: each week once, from its
   correction where it has one.
+- Get a daily session past the half-posted refusal: a larger `MAX_GONE`, a
+  shorter `ROLL_HOURS`, a morning cron moved inside it, or a file built by
+  hand. `--force` does not do it. At night the answer is to wait for the
+  next attempt. A name that has stopped trading for good comes out of the
+  feed, and is not waited for from that day.
+- Read a name in `2026-10-06.json`'s `missing` as one that did not trade.
+  All 59 traded; the file was written before the provider posted them.
