@@ -462,7 +462,8 @@ def reach(close, as_of, named, history, basis_list):
     "None found" is worth what the audit could have found. So for a bar that
     passed, the previous session of its week is put in its place -- on the
     basis the real bar is on, rounded as the writer rounds, which is what
-    slice_week commits when the named session has no bar -- and asked about.
+    slice_week committed, until 2026-10-07, when the named session had no
+    bar -- and asked about.
     Returns (named, blind): whether that session is named, and whether the
     close alone would have let it through, which it does when the close did
     not change. None when the week has no earlier session."""

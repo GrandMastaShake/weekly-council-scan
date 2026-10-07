@@ -168,11 +168,12 @@ def test_feed_gate_refuses_an_unknown_provenance_key(tmp_path):
 
 # --- the diverged mirror
 def test_nothing_invokes_the_mirror_backfill_script():
-    """scan_pipeline/scripts/backfill_weekly.py is a faithful mirror of the
-    external runner and lags scripts/backfill_weekly.py. It has had --merge
-    since 2026-08-26, but run against this repo's data/weekly that --merge
-    still writes a fresh fetch over a bar the week already holds, and it
-    can call an unposted Friday a holiday. Nothing may call it.
+    """scan_pipeline/scripts/backfill_weekly.py began as a faithful mirror
+    of the external runner and lags scripts/backfill_weekly.py. It has had
+    --merge since 2026-08-26 and the session-held slice since 2026-10-07,
+    but run against this repo's data/weekly that --merge still writes a
+    fresh fetch over a bar the week already holds, and it can call an
+    unposted Friday a holiday. Nothing may call it.
     """
     root = Path(__file__).resolve().parents[1]
     hits = []
@@ -196,7 +197,7 @@ def test_nothing_invokes_the_mirror_backfill_script():
 
 def test_the_mirror_cannot_write_a_week_again_through_the_writer(
         tmp_path, monkeypatch):
-    """Owner decision 2026-10-06: the mirror is left as it is. Its --force
+    """Owner decision 2026-10-06: the mirror's --force is left as it is. It
     hands a week that is on file to snapshot.write_weekly like any other,
     and the writer refuses it, because nothing there says `overwrite`.
     Taught to say it, the runner's copy could write a week again whole, with

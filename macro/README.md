@@ -161,9 +161,11 @@ the check passes them as it always has.
 ## series_audit.json (which session a committed equity bar is)
 
 - The same question for `series` in `data/weekly`, and the same kind of list.
-  `scripts/backfill_weekly.py::slice_week` takes the last bar on or before the
-  Friday and marks nothing per ticker, so a name with no Friday bar carries an
-  earlier session under the Friday date. `DATA_FEED.md` sec.1b, "The equity
+  Until 2026-10-07 `scripts/backfill_weekly.py::slice_week` took the last bar
+  on or before the Friday and marked nothing per ticker, so a name with no
+  Friday bar carried an earlier session under the Friday date. (It returns
+  the bar dated the file's session or nothing now, and the name goes in
+  `missing`.) `DATA_FEED.md` sec.1b, "The equity
   series", has what was found.
 - It is not a list of differences from the provider. An equity close is
   adjusted to its fetch date and is supposed to differ from a fresh fetch;

@@ -18,10 +18,11 @@ Per-file conventions (byte-stability contract inherited from snapshot.py):
                      "Friday holiday; bars from <actual date>"
   * Closes are split/dividend-adjusted (yfinance auto_adjust=True), rounded
     to 4dp by snapshot._normalize_block; volume int or None (never invented).
-  * "missing" is REQUIRED: a ticker with no bar in the Monday..Friday week
-    (pre-IPO, halted, delisted) is ABSENT from "series" (no nulls) and listed
-    in "missing" with reason "no bar for week of <date> (likely pre-IPO or
-    not trading)". No interpolation, ever.
+  * "missing" is REQUIRED: a ticker with no bar dated the file's session
+    (pre-IPO, halted, delisted mid-week) is ABSENT from "series" (no nulls)
+    and listed in "missing" with a reason that names its last bar before
+    it. Never an earlier session's close under the file's date (since
+    2026-10-07, slice_week), and no interpolation, ever.
 
 CLI:
   python backfill_weekly.py --out <data-root> [--start 2024-08-09]
@@ -48,6 +49,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 from bisect import bisect_right
@@ -79,7 +81,13 @@ CHUNK_SIZE = 50
 CHUNK_RETRIES = 3
 FRIDAY_SLEEP_S = 0.1        # politeness between per-Friday special fetches
 
+# MISSING_REASON is what every file written before 2026-10-07 carries. It
+# is no longer written: see missing_reason.
 MISSING_REASON = "no bar for week of %s (likely pre-IPO or not trading)"
+NO_SESSION_BAR = "no bar dated %s; its last bar before that is dated %s"
+NO_BAR_BEFORE = "no bar dated %s, and none before it in the download"
+_SESSION_NOTE = re.compile(
+    r"^Friday holiday; bars from (\d{4}-\d{2}-\d{2})$")
 
 
 def log(msg: str) -> None:
@@ -185,8 +193,9 @@ def download_equity_history(tickers: list, first_friday: date,
     """{ticker: (dates, closes, vols)} for the whole backfill window.
 
     One ranged call per ticker, batched CHUNK_SIZE at a time. Fetch window
-    starts 10 days before the first Friday (holiday/halt headroom for the
-    'last trading day <= Friday' rule) and ends the day after the last
+    starts 10 days before the first Friday (so that a holiday week's
+    session, and a name's last bar before a session it missed, are in
+    it) and ends the day after the last
     Friday. Tickers that never return data get empty histories and land in
     'missing' for every week -- never fabricated."""
     start_iso = (first_friday - timedelta(days=10)).isoformat()
@@ -232,17 +241,60 @@ def download_equity_history(tickers: list, first_friday: date,
     return history
 
 
-def slice_week(hist: tuple, monday: date, friday: date):
-    """Last bar on/before friday, provided it is inside the Mon..Fri week.
-    Returns ({"close","volume"}, actual_date) or (None, None)."""
+def slice_week(hist: tuple, session: date):
+    """The bar dated `session`, the session the file holds, or nothing.
+    Returns ({"close","volume"}, session), or (None, last), where `last` is
+    the date of the ticker's last bar before the session, or None.
+
+    Owner decision 2026-10-06, in step with scripts/backfill_weekly.py
+    (DATA_FEED.md sec.1b). Until 2026-10-07 this took the last bar on or
+    before the Friday anywhere in the Mon..Fri week, so a ticker with no bar
+    on the session went in as an earlier session's close under the Friday's
+    date: EA in 2026-08-07.json is its close of Tuesday 2026-08-04."""
     dates, closes, vols = hist
+    i = bisect_right(dates, session) - 1
+    if i >= 0 and dates[i] == session:
+        return {"close": closes[i], "volume": vols[i]}, session
+    return None, (dates[i] if i >= 0 else None)
+
+
+def last_in_week(hist: tuple, monday: date, friday: date):
+    """The date of a ticker's last bar inside the Mon..Fri week, or None.
+    Only for finding which session a week is (build_and_write, below)."""
+    dates = hist[0]
     i = bisect_right(dates, friday) - 1
-    if i < 0:
-        return None, None
-    d = dates[i]
-    if d < monday:
-        return None, None     # did not trade this week
-    return {"close": closes[i], "volume": vols[i]}, d
+    if i < 0 or dates[i] < monday:
+        return None
+    return dates[i]
+
+
+def missing_reason(session: date, last) -> str:
+    """What `missing` says of a ticker with no bar on the file's session:
+    what was asked for and what the download holds, and no guess at why."""
+    if last is None:
+        return NO_BAR_BEFORE % session.isoformat()
+    return NO_SESSION_BAR % (session.isoformat(), last.isoformat())
+
+
+def file_session(doc: dict, friday: date, path: str = "the week") -> date:
+    """The session a week on file holds: the Friday, or the earlier day of
+    its week that `session_note` names. A note that cannot be read, a
+    null one included, is refused, as in scripts/backfill_weekly.py."""
+    if "session_note" not in doc:
+        return friday
+    note = doc["session_note"]
+    match = _SESSION_NOTE.match(note) if isinstance(note, str) else None
+    try:
+        day = date.fromisoformat(match.group(1)) if match else None
+    except ValueError:
+        day = None
+    if day is None or not friday - timedelta(days=4) <= day < friday:
+        raise SystemExit(
+            "backfill: %s has session_note %r, which names no earlier "
+            "session of the week of %s -- refusing to merge into a week "
+            "whose session cannot be read"
+            % (path, note, friday.isoformat()))
+    return day
 
 
 # ---------------------------------------------------------------------------
@@ -253,23 +305,28 @@ def build_and_write(friday: date, tickers: list, history: dict,
     """Slice one Friday, fetch specials, write via snapshot.write_weekly,
     then stamp backfill identity (source / fetched_at / session_note)."""
     monday = friday - timedelta(days=4)
-    bars: dict = {}
-    missing: list = []
-    actual_dates = set()
-    for t in tickers:
-        bar, actual = slice_week(history.get(t, ([], [], [])),
-                                 monday, friday)
-        if bar is None:
-            missing.append({"ticker": t,
-                            "reason": MISSING_REASON % friday.isoformat()})
-        else:
-            bars[t] = bar
-            actual_dates.add(actual)
-
+    # Which session the week is, decided as this script always has: the
+    # Friday if any ticker has a bar dated it, else the latest day of the
+    # week any ticker traded. (scripts/backfill_weekly.py asks SPY and the
+    # provider's listing instead; this one can still take an unposted
+    # Friday for a holiday.) Then every ticker is held to that one session.
+    actual_dates = {last_in_week(history.get(t, ([], [], [])), monday,
+                                 friday) for t in tickers} - {None}
+    session = friday
     session_note = None
     if actual_dates and friday not in actual_dates:
-        session_note = ("Friday holiday; bars from %s"
-                        % max(actual_dates).isoformat())
+        session = max(actual_dates)
+        session_note = "Friday holiday; bars from %s" % session.isoformat()
+
+    bars: dict = {}
+    missing: list = []
+    for t in tickers:
+        bar, last = slice_week(history.get(t, ([], [], [])), session)
+        if bar is None:
+            missing.append({"ticker": t,
+                            "reason": missing_reason(session, last)})
+        else:
+            bars[t] = bar
 
     special = snapshot_macro.fetch_special_instruments(friday.isoformat())
     time.sleep(FRIDAY_SLEEP_S)
@@ -324,16 +381,25 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     prov_block = doc.setdefault("provenance", {})
     prov = prov_block.setdefault("series", {})
 
-    monday = friday - timedelta(days=4)
+    session = file_session(doc, friday, path)
     added: list = []
     replaced: list = []
     absent: list = []
     fresh: dict = {}
+    last_bar: dict = {}
     for t in tickers:
-        bar, _actual = slice_week(history.get(t, ([], [], [])),
-                                  monday, friday)
+        bar, last = slice_week(history.get(t, ([], [], [])), session)
         if bar is None:
-            absent.append(t)
+            # A name the week already holds is not missing from it. This
+            # script still fetches such a name again (its --merge writes
+            # over a held bar, which scripts/backfill_weekly.py stopped
+            # doing on 2026-10-06), and of a delisted symbol the provider
+            # keeps one bar: with the slice held to the session, EA came
+            # back with none for 2026-08-07 and was listed in `missing`
+            # beside the bar the week has for it.
+            if t not in series:
+                absent.append(t)
+                last_bar[t] = last
             continue
         fresh[t] = bar
 
@@ -356,7 +422,7 @@ def merge_into_existing(friday: date, tickers: list, history: dict,
     for t in absent:
         if t not in listed:
             missing.append({"ticker": t,
-                            "reason": MISSING_REASON % friday.isoformat()})
+                            "reason": missing_reason(session, last_bar[t])})
     doc["missing"] = sorted(missing, key=lambda m: m.get("ticker") or "")
 
     if not prov:

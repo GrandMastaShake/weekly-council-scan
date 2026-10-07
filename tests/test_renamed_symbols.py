@@ -744,15 +744,34 @@ def test_the_volume_rule_names_the_pair_and_its_weeks(tmp_path, panel):
 
 def test_the_volume_rule_reads_a_holiday_week_by_its_session(
         tmp_path, panel):
-    """The Friday was a holiday and both bars are Thursday's. slice_week
-    takes the last bar of the week, which is the session the file holds."""
-    weekly = panel(unrecorded_panel())
+    """The Friday was a holiday and both bars are Thursday's. The file says
+    which session it holds, and a merged bar is the one dated that day
+    (bf.file_session). Until 2026-10-07 slice_week took the last bar of the
+    week whatever the file said."""
+    files = unrecorded_panel()
+    files[OLD_WEEKS[3] + ".json"]["session_note"] = \
+        "Friday holiday; bars from 2026-08-13"
+    weekly = panel(files)
     fridays = [day(d) for d in OLD_WEEKS]
     sessions = fridays[:3] + [day("2026-08-13")]
     history = {"NEWCO": (sessions, [64.2] * 4, VOLUMES)}
 
     assert bf.same_bars_refusals(str(weekly), fridays, ["NEWCO"], history) \
         == [("NEWCO", "OLDCO", fridays, [])]
+
+
+def test_the_volume_rule_does_not_count_a_bar_from_another_session(
+        tmp_path, panel):
+    """The same Thursday bar against a file that holds the Friday: it is not
+    that file's session, a merge would not add it, and it is not counted.
+    Three weeks are still three weeks."""
+    weekly = panel(unrecorded_panel())
+    fridays = [day(d) for d in OLD_WEEKS]
+    sessions = fridays[:3] + [day("2026-08-13")]
+    history = {"NEWCO": (sessions, [64.2] * 4, VOLUMES)}
+
+    assert bf.same_bars_refusals(str(weekly), fridays, ["NEWCO"], history) \
+        == [("NEWCO", "OLDCO", fridays[:3], [])]
 
 
 def test_the_volume_rule_steps_over_a_friday_with_no_file(tmp_path, panel):
