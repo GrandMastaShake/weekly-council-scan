@@ -124,6 +124,17 @@ def rebuild(corrected: Path) -> str:
     if not base_name:
         print("  skip " + corrected.name + ": no 'corrects' field")
         return "skip"
+    # A correction corrects the week it is named for: readers pair the two
+    # files by name and never read `corrects`. Paired by `corrects` here, a
+    # correction that named another week was rebuilt as a copy of that week
+    # (2026-08-28.corrected.json saying 2026-08-21.json came out with
+    # as_of 2026-08-21).
+    week = corrected.name[:-len(".corrected.json")] + ".json"
+    if base_name != week:
+        print("  ABORT " + corrected.name + ": its 'corrects' is "
+              + repr(base_name) + ", and the week it is named for is "
+              + week + ". Review by hand.")
+        return "abort"
     base = corrected.with_name(base_name)
     if not base.is_file():
         print("  skip " + corrected.name + ": base " + base_name + " missing")

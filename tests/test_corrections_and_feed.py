@@ -124,7 +124,38 @@ def test_rebuild_no_longer_ignores_the_directory_it_is_given(tmp_path):
 
 # --- the feed gate on per-series anchors
 def test_feed_gate_accepts_a_merged_week(tmp_path):
-    base_and_correction(tmp_path, base_extra=["PLTR"], prov={"PLTR": ANCHOR})
+    """Once its correction is rebuilt. Until 2026-10-07 the gate passed this
+    week with the correction still stale, PLTR in the base and invisible to
+    every reader: only the test suite held a correction's series to its
+    base, and the backfill workflow does not run the suite."""
+    weekly = base_and_correction(tmp_path, base_extra=["PLTR"],
+                                 prov={"PLTR": ANCHOR})
+    stale = ("1 name(s) its base holds are not in it, each labelled there "
+             "later than any stamp this correction carries (merged in "
+             "since, on that evidence): PLTR")
+
+    # A tree with only data in it is a copy, like the weekly job's check
+    # dir: nothing there can rebuild a correction, so it is said and stops
+    # nothing.
+    r = feed(tmp_path)
+    assert r.returncode == 0 and "0 fail" in r.stdout
+    assert "WARN: feed: 2026-08-21.corrected.json" in r.stdout
+    assert stale in r.stdout
+
+    # A checkout has a .git and the rebuild beside its data, and there it
+    # is a FAIL that says what a rebuild would do.
+    (tmp_path / ".git").mkdir()
+    scripts = tmp_path / "scripts"
+    scripts.mkdir()
+    (scripts / "rebuild_corrections.py").write_text("# at hand\n",
+                                                    encoding="ascii")
+    r = feed(tmp_path)
+    assert r.returncode == 1
+    assert stale in r.stdout
+    assert ("What a rebuild would do: `python scripts/"
+            "rebuild_corrections.py` goes through every correction") in r.stdout
+
+    assert rebuild(weekly).returncode == 0
     r = feed(tmp_path)
     assert r.returncode == 0
     assert "0 fail" in r.stdout

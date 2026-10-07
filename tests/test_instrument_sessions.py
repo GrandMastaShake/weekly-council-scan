@@ -893,9 +893,16 @@ def test_the_tool_refuses_without_a_reason_or_over_an_existing_correction(
                    fetch=fetcher(FRIDAY_CLOSES), now=LONG_AFTER)
     ri.restate(weekly, "2026-08-28", THREE, REASON,
                fetch=fetcher(FRIDAY_CLOSES), now=LONG_AFTER)
-    with pytest.raises(ri.Refused, match="already exists"):
+    with pytest.raises(ri.Refused, match="already exists") as refusal:
         ri.restate(weekly, "2026-08-28", ["rates.US10Y"], REASON,
                    fetch=fetcher(FRIDAY_CLOSES), now=LONG_AFTER)
+    # It said "then run scripts/rebuild_corrections.py". With the
+    # `restated` entry forgotten, that run writes the base's close back
+    # over the one typed in, and the feed gate then passes.
+    said = str(refusal.value)
+    assert "all three parts" in said and "'restated' entry" in said
+    assert "`python scripts/truth_check.py --repo . --feed`" in said
+    assert "rebuild_corrections" not in said
 
 
 def test_a_dry_run_writes_nothing(panel):
@@ -936,10 +943,27 @@ def test_every_committed_correction_is_current_against_its_base():
     assert corrections
     for path in corrections:
         doc = read(path)
-        base = read(path.with_name(doc["corrects"]))
-        assert any(rc.recorded_edits(doc)), path.name
+        week = path.name[:-len(".corrected.json")] + ".json"
+        base = read(path.with_name(week))
+        # CI runs this before the feed gate and skips the gate when it
+        # fails, so it speaks with the gate's words, and before any other
+        # assertion here does. It said "is stale: run
+        # scripts/rebuild_corrections.py" of any difference, which for a bar
+        # dropped without a record is the command that puts it back.
+        said = tc.correction_problems(doc, base)
+        assert not said, (
+            path.name + " is not its base with its recorded edits applied: "
+            + "; ".join(said) + "." + tc.CORRECTION_NEXT % "")
+        assert doc.get("corrects") == week, (
+            path.name + " says it corrects " + repr(doc.get("corrects"))
+            + ", and the week it is named for is " + week)
+        assert any(rc.recorded_edits(doc)), (
+            path.name + " records no edit: no zero-volume drop in `missing` "
+            "and nothing in `restated`. A correction that corrects nothing "
+            "is a second copy of its week")
         assert rc.apply_edits(base, doc) == doc, (
-            path.name + " is stale: run scripts/rebuild_corrections.py")
+            path.name + " is not, entry for entry, what a rebuild writes "
+            "(an order, or a spelling)." + tc.CORRECTION_NEXT % "")
 
 
 def test_2026_08_28_is_corrected_to_fridays_three_closes():

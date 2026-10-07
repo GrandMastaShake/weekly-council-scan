@@ -96,7 +96,22 @@ Modes:
                 before 13:00 UTC the next day, which is a quote and not a
                 settlement; FAILs a correction that changes an instrument's
                 close without recording what it replaced in `restated` and
-                labelling the replacement; and validates
+                labelling the replacement; holds a correction to its
+                base (2026-10-07): outside a recorded zero-volume drop
+                it has every bar the base has and no other, the same
+                labels (instruments' too, outside `restated`) and file
+                stamps, and the base's `missing` plus the drops'
+                entries, and its base is the week it is named for
+                whatever `corrects` says. A FAIL in a checkout of the
+                repository (a .git and scripts/rebuild_corrections.py
+                beside the data), each line saying what differs and
+                then what a rebuild would do: mend a correction its
+                base has moved away from, and take out, silently,
+                whatever a correction says without a record. It does
+                not choose for its reader. A WARN in a copy (the weekly
+                job's check dir), where no correction is the job's to
+                write;
+                and validates
                 data/us2y_treasury.json, WARNs for any week that has no
                 Treasury 2-year from either place, and FAILs when
                 data/market_state.json shows a US2Y level that is not the
@@ -155,6 +170,7 @@ Usage:
 """
 
 import argparse
+import collections
 import datetime as dt
 import json
 import re
@@ -1999,6 +2015,13 @@ def _feed_restated_check(fname, doc, base, rep):
                                 f"volume}}}} with block one of "
                                 f"{', '.join(FEED_EXTRA_BLOCKS)}")
                 continue
+            if (item["block"], item["ticker"]) in recorded:
+                rep.add("FAIL", f"feed: {fname} 'restated' names "
+                                f"{item['block']}.{item['ticker']} twice. "
+                                f"One instrument is restated once: "
+                                f"rebuild_corrections.py re-applies the "
+                                f"first and refuses at the second")
+                continue
             recorded[(item["block"], item["ticker"])] = item["was"]
 
     prov = doc.get("provenance")
@@ -2046,6 +2069,332 @@ def _feed_restated_check(fname, doc, base, rep):
     for block, ticker in sorted(recorded):
         rep.add("FAIL", f"feed: {fname} 'restated' names {block}.{ticker}, "
                         f"which is in neither the correction nor its base")
+
+
+# ------------------------------------------------- a correction is its base
+
+# The word a correction's `missing` entry carries for a zero-volume bar it
+# dropped from `series`. scripts/rebuild_corrections.py reads its record of
+# the drop off the same word (recorded_edits).
+ZERO_VOLUME_DROP = "zero-volume"
+
+# The file's own label, which is the label of every bar that has none.
+CORRECTION_STAMPS = ("source", "fetched_at", "session_note")
+
+# What a correction adds to its base at the top level.
+CORRECTION_KEYS = ("corrects", "reason", "restated")
+
+CORRECTION_SHOWN = 6        # names spelled out on one line
+
+# What a line says after what it found. It says what a rebuild would do and
+# leaves the choice with its reader, and that is on purpose.
+#
+# scripts/rebuild_corrections.py goes through every correction in a
+# directory. One with an edit on record that still applies it writes again
+# from its base as it is now; one with none it skips; one whose record the
+# base no longer bears out it leaves alone, with ABORT and exit 1. Writing
+# one again mends a correction its base has moved away from. It also takes
+# out whatever the correction says without a record: a bar dropped with no
+# entry comes back, a name the base lacks goes out, a close or a label
+# changed by hand reverts, and this check then passes on a correction that
+# no longer corrects. Rehearsed on 2026-08-21 with AVB's
+# reason blanked: with nothing else on record the rebuild skips the file,
+# and with a restated VIX beside the drop the zero-volume print is back in
+# every reader's panel with nothing left to say.
+#
+# Three drafts tried to decide for the reader. The first sent every line to
+# main and then to the rebuild: in a checkout whose base has just taken a
+# merge, main's two files agree, and "this copy is behind, level it with
+# main" throws the merge away. The next two gave each line an ending,
+# "rebuild" or "do not", by what the difference looked like, and a review
+# found a way round each rule. A name a merge had labelled weeks before the
+# correction was written read as gained since. A file stamp changed by hand
+# read as a rewrite. An instrument's close typed in with no record drew a
+# line that named the command. Two files do not always say which of them
+# moved. What they do say is in the sentences: a name the base labels later
+# than anything the correction carries is told from one it held before,
+# and a base fetched later than its correction from one that was not. And
+# that is evidence, said as evidence. A bar taken out of a correction by
+# hand goes with its label, and where it was the newest the base had
+# gained (VMRK, in both committed corrections), what is left reads exactly
+# as the correction did before that merge. The history can say what two
+# files cannot, so the line names the tool that asks it. The rest is its
+# reader's, who in a checkout is a person, or a session with one at hand.
+CORRECTION_NEXT = (
+    " What a rebuild would do: `python scripts/rebuild_corrections.py%s` "
+    "goes through every correction in the directory. One with an edit on "
+    "record it writes again from its base as it is now, one with none it "
+    "skips, and one whose record the base no longer bears out it leaves "
+    "alone, printing ABORT and exiting 1 once the others are written. "
+    "Writing one again mends it where its base has moved (names merged in "
+    "since, a week written again). It also takes out, silently, anything "
+    "the correction says without a record (a bar dropped with no "
+    "zero-volume entry, a name or an entry its base lacks, a close or a "
+    "label changed by hand), and this check then passes. So read every "
+    "line about this directory's corrections first. Where each is the base "
+    "having moved, the rebuild is the cure, committed with the change that "
+    "moved the base. Where one is not, or the rebuild skips or stops at a "
+    "file this check still fails, leave the files as they are and take it "
+    "to whoever wrote the correction, or to the owner. The stamps in the "
+    "two files are all a line here goes by, and a bar taken out together "
+    "with its label can read as one that was never there: `python "
+    "scripts/panel_guard.py --against <commit>` says whether a correction "
+    "has lost or changed anything it held at that commit. A correction "
+    "records two things: a bar dropped from `series` for trading on volume "
+    "0, by a `missing` entry for that name whose reason has the word "
+    "zero-volume in it, and an instrument's close restated, in `restated` "
+    "with its own `provenance` label.")
+# A checkout of the repository has a .git and scripts/rebuild_corrections.py
+# beside its data. A tree without both is a copy: the weekly job's check
+# dir, the Council's, and a check dir filled with every script in the
+# repository, of which the runner holds two (auditor_2026-09-19/checkdir),
+# where a rebuild would mend a copy. Nothing there may write a correction.
+# So it is a WARN there and stops nothing, as the stale correction
+# check_silent_absence reports is a WARN for the same reason (#139): a copy
+# that is behind is not the job's to mend, and a FAIL it cannot clear ends
+# in a week that is not pushed.
+CORRECTION_ON_A_COPY = (
+    " This tree is not a checkout of the repository (no .git, or no "
+    "scripts/rebuild_corrections.py, beside its data): it is a copy. "
+    "Nothing here writes or rebuilds a correction, and nothing here should "
+    "change either file or push one. A copy is brought level with the "
+    "repository whole, never one file by itself, and on the runner's own "
+    "data/, not on a check dir. If this is said of a copy that is level, "
+    "the repository's own pair disagrees: say so in your summary. It stops "
+    "nothing here.")
+
+
+def _names(names):
+    names = sorted(names)
+    shown = ", ".join(names[:CORRECTION_SHOWN])
+    if len(names) > CORRECTION_SHOWN:
+        shown += " and %d more" % (len(names) - CORRECTION_SHOWN)
+    return shown
+
+
+def _missing_pairs(doc):
+    """`missing` as comparable (ticker, reason) pairs, in order. Only the
+    entries that say something: one that does not is _feed_missing_check's
+    to fail, under its own line, and is not said twice."""
+    return sorted((json.dumps(m["ticker"]), json.dumps(m["reason"]))
+                  for m in _missing_list(doc) if _accounts(m))
+
+
+def _block(doc, name):
+    held = doc.get(name)
+    return held if isinstance(held, dict) else {}
+
+
+def _labels(doc, block):
+    return _block(_block(doc, "provenance"), block)
+
+
+def _when(label):
+    """A label's `fetched_at`, or a file's, as a time; None where it is
+    not one."""
+    text = label.get("fetched_at") if isinstance(label, dict) else label
+    try:
+        return dt.datetime.strptime(text, "%Y-%m-%dT%H:%M:%SZ")
+    except (TypeError, ValueError):
+        return None
+
+
+def correction_problems(doc, base):
+    """Why a correction is not its base with its recorded edits applied:
+    a list of sentences, empty when it is. Pure.
+
+    A correction is a full copy of its base with its recorded edits applied
+    (CLAUDE.md, "The correction trap"), and readers prefer it to the base.
+    For `series` one edit exists: a zero-volume bar dropped, recorded by the
+    `missing` entry it became (2026-08-21, AVB). So outside such a drop the
+    correction holds every bar its base holds and no other, under the same
+    labels and the same file stamps, and its `missing` is its base's with
+    the drops' entries added. That is what rebuild_corrections.apply_edits
+    writes, read from the other side. For an instrument the edit is a
+    restatement, which _feed_restated_check holds to `restated`; its label
+    is held here, because a label is what tells a Treasury 2-year from a
+    futures mark and one contract month from another, and a correction that
+    lost one drew no line from this gate.
+
+    A sentence gives what the two files hold about which side moved, and
+    says it is that. A base fetched later than its correction reads as
+    written again since. A bar the base labels in `provenance.series` later
+    than any stamp the correction carries (its own `fetched_at`, and every
+    label it has, an instrument's too) reads as merged in since; one
+    labelled no later, or never, as held when the two were last in step. A
+    stamp can be typed, and a bar taken out with its label leaves none:
+    the wording says "on that evidence".
+
+    Until 2026-10-07 only tests/test_instrument_sessions.py held a
+    correction's series to its base, and only for data/weekly: the suite
+    runs in CI and in the daily job, not in the backfill workflow, which
+    commits right after it rebuilds. scripts/panel_guard.py compares a
+    file with what the same file held, so a correction that is new is
+    compared with nothing."""
+    out = []
+    want, have = _labels(base, "series"), _labels(doc, "series")
+    made, copied = _when(base.get("fetched_at")), _when(doc.get("fetched_at"))
+    rewritten = made is not None and copied is not None and made > copied
+    # Every stamp the correction carries: a restated instrument's label was
+    # written when the correction was, and says it was in step then.
+    known = [t for t in [copied] + [
+        _when(label) for block in ("series",) + FEED_EXTRA_BLOCKS
+        for label in _labels(doc, block).values()] if t is not None]
+    in_step = max(known) if known else None
+
+    for key in CORRECTION_STAMPS:
+        if doc.get(key) != base.get(key):
+            out.append("its `%s` is %s where its base's is %s; a correction "
+                       "is its base's fetch and carries its stamps%s"
+                       % (key, _clip(doc.get(key)), _clip(base.get(key)),
+                          " (its base's is the later, as after a rewrite)"
+                          if key == "fetched_at" and rewritten else ""))
+    # What else a file says of itself: `as_of`, `session`, a daily file's
+    # `cadence`. The blocks, `missing` and the labels are asked below.
+    for key in sorted(base):
+        if key in CORRECTION_STAMPS + FEED_EXTRA_BLOCKS + (
+                "series", "missing", "provenance"):
+            continue
+        if doc.get(key) != base.get(key):
+            out.append("its `%s` is %s where its base's is %s; a correction "
+                       "is a copy of its base and says the same of itself"
+                       % (key, _clip(doc.get(key)), _clip(base.get(key))))
+
+    mine, theirs = _block(doc, "series"), _block(base, "series")
+    # The entries that record a drop: a name and a reason carrying the word.
+    # A malformed entry records nothing (and is _feed_missing_check's).
+    drop_entries = [m for m in _missing_list(doc)
+                    if _accounts(m) and ZERO_VOLUME_DROP in m["reason"]]
+    recorded = {m["ticker"] for m in drop_entries}
+    dropped, moved, since, before = set(), [], [], []
+    for ticker in set(theirs) - set(mine):
+        bar = theirs[ticker]
+        volume = bar.get("volume") if isinstance(bar, dict) else None
+        if ticker in recorded:
+            if volume == 0:     # the rebuild's own test (apply_edits)
+                dropped.add(ticker)
+            else:
+                moved.append(ticker)
+            continue
+        merged = _when(want.get(ticker))
+        if rewritten or (merged is not None and in_step is not None
+                         and merged > in_step):
+            since.append(ticker)
+        else:
+            before.append(ticker)
+    if since:
+        out.append("%d name(s) its base holds are not in it, %s: %s. "
+                   "Readers prefer the correction, so to them those bars "
+                   "are not in the week"
+                   % (len(since),
+                      "and its base was fetched later than it was (written "
+                      "again since, on that evidence)" if rewritten else
+                      "each labelled there later than any stamp this "
+                      "correction carries (merged in since, on that "
+                      "evidence)", _names(since)))
+    if before:
+        out.append("%d bar(s) its base holds are not in it, none labelled "
+                   "there later than this correction's newest stamp (held "
+                   "when the two were last in step, on that evidence), and "
+                   "it records no %s drop of them: %s"
+                   % (len(before), ZERO_VOLUME_DROP, _names(before)))
+    if moved:
+        t = sorted(moved)[0]
+        out.append("it records a %s drop of %s, and its base's bar for %s "
+                   "is %s, which is not a bar on volume 0"
+                   % (ZERO_VOLUME_DROP, _names(moved), t, _clip(theirs[t])))
+    extra = set(mine) - set(theirs)
+    if extra:
+        out.append("%d name(s) are in it and not in its base: %s. A "
+                   "correction holds no bar its base does not"
+                   % (len(extra), _names(extra)))
+    changed = [t for t in set(mine) & set(theirs) if mine[t] != theirs[t]]
+    if changed:
+        t = sorted(changed)[0]
+        out.append("%d bar(s) differ from its base's: %s (%s is %s here and "
+                   "%s there). `restated` is for instruments: no correction "
+                   "here records an equity close, and a rebuild writes the "
+                   "base's bar back"
+                   % (len(changed), _names(changed), t, _clip(mine[t]),
+                      _clip(theirs[t])))
+
+    # The labels a rebuild would write: the base's, less those of the bars
+    # dropped. A name said above (gained, gone without a record, or held by
+    # one file only) is said once, and not again for its label.
+    expected = {t: label for t, label in want.items() if t not in dropped}
+    named = set(since) | set(before) | set(moved) | extra
+    relabelled = [t for t in set(expected) | set(have)
+                  if t not in named and expected.get(t) != have.get(t)]
+    if relabelled:
+        out.append("%d `provenance.series` label(s) are not its base's: %s. "
+                   "The label is the bar's own fetch, and a correction does "
+                   "not change when a bar was fetched"
+                   % (len(relabelled), _names(relabelled)))
+
+    # An instrument's label, outside what `restated` records: that one is
+    # the correction's own, and _feed_restated_check asks for it.
+    record = doc.get("restated")
+    restated = {(item.get("block"), item.get("ticker"))
+                for item in (record if isinstance(record, list) else [])
+                if isinstance(item, dict)
+                and isinstance(item.get("block"), str)
+                and isinstance(item.get("ticker"), str)}
+    for block in FEED_EXTRA_BLOCKS:
+        theirs_l, mine_l = _labels(base, block), _labels(doc, block)
+        off = [t for t in set(theirs_l) | set(mine_l)
+               if (block, t) not in restated
+               and theirs_l.get(t) != mine_l.get(t)]
+        if off:
+            out.append("%d `provenance.%s` label(s) are not its base's, on "
+                       "an instrument `restated` does not name: %s. The "
+                       "label says whose number it is and for which session "
+                       "or contract, and readers go by it"
+                       % (len(off), block, _names(off)))
+
+    # `missing` is what a rebuild would write: the base's, with one entry
+    # for each bar really dropped, the last the correction has for it.
+    # Compared as (ticker, reason) pairs, each as often as it is there; the
+    # order is the rebuild's to set. (A drop the base's bar does not bear
+    # out is said above, once, and its entry is not said again here.)
+    last = {m["ticker"]: m for m in drop_entries}
+    want_missing = collections.Counter(_missing_pairs(base) + [
+        (json.dumps(name), json.dumps(last[name]["reason"]))
+        for name in dropped | set(moved)])
+    have_missing = collections.Counter(_missing_pairs(doc))
+    if want_missing != have_missing:
+        here = have_missing - want_missing      # only the correction says
+        there = want_missing - have_missing     # only its base does
+        out.append("its `missing` is not its base's with the drops it "
+                   "records: entries only here for %s, only in the base "
+                   "for %s (an entry is counted as often as it is there)"
+                   % (_names({name for name, _ in here}) or "none",
+                      _names({name for name, _ in there}) or "none"))
+
+    # (A stamp it has and its base lacks is said above, and `provenance`
+    # is the labels', asked about one by one.)
+    odd = sorted(key for key in doc
+                 if key not in base and key != "provenance"
+                 and key not in CORRECTION_KEYS + CORRECTION_STAMPS)
+    if odd:
+        out.append("%d key(s) of its own that its base does not have: %s. A "
+                   "correction adds `corrects`, `reason` and `restated` to "
+                   "its base and nothing else" % (len(odd), _names(odd)))
+    return out
+
+
+def _feed_correction_check(fname, doc, base, subdir, checkout, rep):
+    """One line per way a correction is not its base with its recorded
+    edits applied, data/weekly and data/daily alike. In a checkout a FAIL,
+    ending in what a rebuild would do (CORRECTION_NEXT); in a copy a WARN,
+    where nothing can be done about it (CORRECTION_ON_A_COPY)."""
+    flag = "" if subdir == "weekly" else " --dir data/" + subdir
+    for problem in correction_problems(doc, base):
+        line = (f"feed: {fname} is not its base with its recorded edits "
+                f"applied: {problem}.")
+        if checkout:
+            rep.add("FAIL", line + CORRECTION_NEXT % flag)
+        else:
+            rep.add("WARN", line + CORRECTION_ON_A_COPY)
 
 
 # ------------------------------------------------------- the session witness
@@ -2241,6 +2590,12 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
     session settled (DATA_FEED.md sec.4), so it has no other session to
     name."""
     weekly = repo / "data" / subdir
+    # A checkout of the repository, where a correction is written and can
+    # be rebuilt, or a copy of its data (CORRECTION_ON_A_COPY). Both, and
+    # not either: a check dir can hold every script, and an export has no
+    # .git. A linked worktree's .git is a file.
+    checkout = ((repo / ".git").exists()
+                and (repo / "scripts" / "rebuild_corrections.py").is_file())
     if not weekly.is_dir():
         rep.add("SKIP", f"feed: {weekly} not found -- {label} feed has not "
                         f"launched yet")
@@ -2295,23 +2650,43 @@ def check_feed(repo, rep, subdir="weekly", require_friday=True, label="weekly"):
             if f.name == f"{as_of}.json":
                 pass
             elif f.name == f"{as_of}.corrected.json":
+                # A correction corrects the week it is named for. Readers
+                # pair the two files by name and never read `corrects`, so
+                # the base it is held to is found by name too. Found
+                # through `corrects`, a correction that named itself was
+                # compared with itself, and one that named "" or "."
+                # passed "an existing original" on the directory and was
+                # compared with nothing: ten series for a week of 336,
+                # and every gate passed it.
                 corrects = doc.get("corrects")
-                if not isinstance(corrects, str) or \
-                        not (weekly / corrects).exists():
+                base_name = f"{as_of}.json"
+                base_path = weekly / base_name
+                if not isinstance(corrects, str) or not base_path.is_file():
                     rep.add("FAIL", f"feed: {f.name} correction lacks "
                                     f"'corrects' pointing at an existing "
                                     f"original (got {corrects!r})")
+                elif corrects != base_name:
+                    rep.add("FAIL", f"feed: {f.name} 'corrects' is "
+                                    f"{_clip(corrects)}, and the week it is "
+                                    f"named for is {base_name}. Readers "
+                                    f"pair a correction with its week by "
+                                    f"name, so that is the file it is held "
+                                    f"to here, and "
+                                    f"scripts/rebuild_corrections.py leaves "
+                                    f"it alone until `corrects` says so")
                 if not doc.get("reason"):
                     rep.add("FAIL", f"feed: {f.name} correction lacks "
                                     f"'reason'")
-                if isinstance(corrects, str) and (weekly / corrects).is_file():
+                if base_path.is_file():
                     try:
                         base = json.loads(
-                            (weekly / corrects).read_text(encoding="utf-8"))
+                            base_path.read_text(encoding="utf-8"))
                     except (ValueError, OSError):
                         base = None     # reported under the base's own name
                     if isinstance(base, dict):
                         _feed_restated_check(f.name, doc, base, rep)
+                        _feed_correction_check(
+                            f.name, doc, base, subdir, checkout, rep)
             else:
                 rep.add("FAIL", f"feed: filename {f.name} does not match "
                                 f"as_of {as_of}")
@@ -2405,7 +2780,11 @@ def check_silent_absence(repo, rep):
     would each hide behind the other. Weeks are compared as readers see
     them, a correction in place of its base, so a correction that was not
     rebuilt after names were merged into its base is found here as well,
-    and sent to rebuild_corrections.py rather than to the backfill.
+    and referred to its own line rather than to the backfill. That line
+    (correction_problems) and not this one says what a rebuild would do:
+    until 2026-10-07 this one printed the rebuild command for any name the
+    base holds and the correction lacks, which for a bar somebody dropped
+    without a record is the command that puts it back.
 
     A WARN, never a FAIL. The fix is a fetch (backfill_weekly.py --merge),
     the file cannot be edited meanwhile, and this script is also the gate of
@@ -2486,22 +2865,29 @@ def check_silent_absence(repo, rep):
         holes += 1
         # Two different repairs. A name the base holds is not the backfill's
         # to add: --merge leaves it alone, and a run given nothing else
-        # exits 2 with no file changed. That week needs its correction
-        # rebuilt, so the command printed here lists only what the base
-        # lacks.
+        # exits 2 with no file changed. That is the correction's to answer
+        # for, under its own line, so the command printed here lists only
+        # what the base lacks.
         stale = [t for t in absent if t in in_base]
         to_add = [t for t in absent if t not in in_base]
         fix = ""
         if stale:
             fix += (f" Its base has {'them' if not to_add else ', '.join(stale)}"
-                    f": the correction has gone stale, and `python "
-                    f"scripts/rebuild_corrections.py` brings them in.")
+                    f": that is the correction's to answer for, under its "
+                    f"own line above (\"is not its base with its recorded "
+                    f"edits applied\"), which says what a rebuild would do.")
         if to_add:
             fix += (f" To add {'them' if not stale else ', '.join(to_add)}: "
                     f"`python scripts/backfill_weekly.py --out data --start "
                     f"{week} --end {week} --only {','.join(to_add)} --merge` "
-                    f"(the Backfill weekly panel workflow), then `python "
-                    f"scripts/rebuild_corrections.py`.")
+                    f"(the Backfill weekly panel workflow).")
+            # It said "then `python scripts/rebuild_corrections.py`", on a
+            # line that can also name a bar somebody took out of the
+            # correction: followed, that bar was back. After a merge the
+            # correction is behind its base and draws its own line.
+            if name.endswith(".corrected.json"):
+                fix += (" The correction is then behind its base, and the "
+                        "line it draws says what a rebuild would do.")
         rep.add("WARN", f"feed: {name} has neither a bar nor a `missing` "
                         f"entry for {len(absent)} name(s): "
                         f"{', '.join(absent)}. Each is an index or sector "
