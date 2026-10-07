@@ -36,6 +36,11 @@ moved since Saturday), the wiki says so explicitly — it never silently diverge
   ghost free to re-enter next week.
 - `truth_check.py --quarantine` also runs a generic net: a `$X EPS` claim inside a
   table row is flagged when X exceeds 20% of the share price in the same row.
+  The price is the first other `$d.dd` figure on the row. Until 2026-10-06 it
+  could be the EPS figure itself, which fails whatever it is: on 2026-09-28 two
+  rows citing Micron's consensus read "$31.45 EPS vs $31.45 price" (issue #120).
+  It can still be an estimate or the reported number and not a share price
+  ("$2.04 EPS vs $1.60 est" fails); that is not decided.
 
 ## truth_check.py (scripts/)
 
@@ -53,7 +58,7 @@ python scripts/truth_check.py --repo <dir> [--staleness] [--facts] [--lint]
 |---|---|---|
 | **Staleness TTL** — every `wiki/*.md` "Last updated" stamp | > 7 days old; stamp missing | > 14 days old |
 | **Facts freshness** — facts.json `generated` date | — | > 8 days old |
-| **Facts accuracy** — each yahoo-sourced field vs live close | fetch failed | deviation > `tolerance_pct` |
+| **Facts accuracy** — each yahoo-sourced field vs live close | fetch failed | deviation > `tolerance_pct`; a currency pair only when its session's last hourly close is out of tolerance too, or cannot be read (below) |
 | **Spread arithmetic** — computed curve spreads recompute | — | off by > 3 bps |
 | **Holdings lint** — (TICKER, $price) rows in wiki tables vs live closes | dev > 3% | dev > 15% (price ≥ $10) or > 35% (micro-cap < $10) = impossible row |
 | **WoW arithmetic** — weekly-change columns recomputed | sign flip or off by > 2 pts | — |
@@ -70,6 +75,44 @@ matched to their columns by header name. Sections are tracked by sticky `##`
 parent so `###` day-headers inside skippable sections (earnings, surprises,
 implied moves, analyst targets) stay skipped. First full-grid sweep: 48 raw
 FAILs triaged to 1 real anomaly (CEVA post-earnings — correctly surfaced).
+
+Currency pairs (2026-10-06, issue #120): Yahoo's daily bar for a currency pair
+(`JPY=X`, `EURUSD=X`) does not close where the session ended. It closes at the
+price it opened at: every completed daily bar served for either pair on
+2026-10-06, back to 2024-07-29, has a close within 0.18% of its open. The bar
+reads right only until the provider replaces it, which for a Friday is some
+time over the weekend and not the same time each week. The table of 2026-09-25
+recorded USDJPY 157.185 on the Friday night, passed on the Sunday, and on
+Monday 2026-09-28 failed against a daily close of 158.811 (open 158.842). A
+FAIL there is the abort path; that run judged it an artifact and went on. The
+table was right: the last hourly bar of that session closed at 157.185.
+
+So a field whose source the provider calls a `CURRENCY` gets a second witness
+before it fails. When it is out of tolerance against the daily bar, the check
+asks for that same bar's hourly bars and compares the last close among them
+under the same `tolerance_pct`.
+
+- It agrees: OK, and the line gives both numbers.
+- It disagrees as well: FAIL, with both numbers.
+- No answer, no hourly bar with a close in that bar's 24 hours, or hourly bars
+  that stop more than six hours before the daily bar ends: FAIL. No witness is
+  not agreement. (The provider's hourly bars for both pairs stop at 15:00 UTC
+  on Friday 2026-01-30.)
+
+That is one more request at most per currency field, and it counts against
+`--max-fetch`. A field inside its tolerance against the daily bar is not asked
+about, so on most weeks nothing changes. No other kind of instrument is asked:
+index, ETF and crypto daily closes are their sessions', and a future's daily
+close is a settlement that its hourly bars need not match (`HG=F`'s ran about
+1% above it on six of the eight Fridays to 2026-10-02).
+
+What this does not change is the table. `usdjpy` and `eurusd` are written from
+the same daily bar, so a table written after the provider has replaced it
+holds a price from the start of the session, not its end. Two of the nine
+tables through 2026-10-04 do, for USDJPY: 156.129 for 2026-09-18, a session
+that ended at 156.855, and 157.927 for 2026-10-02, which ended at 157.830.
+Both are within the 1% tolerance of the daily bar and of the hourly close, so
+the check passes them as it always has.
 
 ## Who runs what, when (folded into EXISTING jobs — cron grid is full)
 
