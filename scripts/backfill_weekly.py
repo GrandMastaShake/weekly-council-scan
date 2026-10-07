@@ -632,8 +632,9 @@ NOTHING_MERGED_NEXT = (
     "  A close the provider has restated is never written over the bar in\n"
     "  the weekly file. It is a correction's to carry (DATA_FEED.md sec.1),\n"
     "  and no tool writes one for an equity bar yet.\n"
-    "  If a week's correction lacks a name its base file holds, the\n"
-    "  correction is stale: python scripts/rebuild_corrections.py")
+    "  If a week's correction lacks a name its base file holds, the feed\n"
+    "  gate says why, and what a rebuild would do about it:\n"
+    "  python scripts/truth_check.py --repo . --feed")
 
 
 # ---------------------------------------------------------------------------

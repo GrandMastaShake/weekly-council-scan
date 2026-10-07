@@ -153,9 +153,13 @@ def test_two_stale_corrections_side_by_side_are_both_found(panel, tmp_path):
         "2026-08-21.corrected.json", "2026-08-28.corrected.json"]
     for line in found:
         assert "for 1 name(s): PLTR." in line
-        assert "Its base has them: the correction has gone stale" in line
+        assert ("Its base has them: that is the correction's to answer "
+                "for, under its own line above") in line
         assert "backfill_weekly.py" not in line, (
             "the base holds PLTR, so a merge has nothing to add there")
+        assert "`python" not in line, (
+            "whether a rebuild is the cure is the correction's own line's "
+            "to say: for a bar dropped without a record it is not")
 
     for day in ("2026-08-21", "2026-08-28"):    # rebuild_corrections.py ran
         path = weekly / (day + ".corrected.json")
@@ -186,9 +190,18 @@ def test_each_absent_name_is_sent_to_the_repair_that_fits_it(panel, tmp_path):
     line = found[0]
     assert "2026-08-21.corrected.json" in line
     assert "for 2 name(s): JNJ, PLTR." in line
-    assert "Its base has PLTR: the correction has gone stale" in line
+    assert ("Its base has PLTR: that is the correction's to answer for, "
+            "under its own line above") in line
+    assert "rebuild_corrections.py` brings" not in line
     assert ("To add JNJ: `python scripts/backfill_weekly.py --out data "
             "--start 2026-08-21 --end 2026-08-21 --only JNJ --merge`") in line
+    # It ended "then `python scripts/rebuild_corrections.py`", on a line
+    # that also names a bar the correction leaves out. Followed, that bar
+    # was back, whether or not somebody had meant it gone.
+    assert "rebuild_corrections" not in line
+    assert line.endswith("(the Backfill weekly panel workflow). The "
+                         "correction is then behind its base, and the line "
+                         "it draws says what a rebuild would do.")
 
 
 def test_a_name_that_joins_or_leaves_the_universe_is_not_expected(

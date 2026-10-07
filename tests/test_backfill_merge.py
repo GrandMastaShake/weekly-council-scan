@@ -335,7 +335,11 @@ def test_a_run_with_nothing_to_add_stops_before_it_downloads(
     assert ("NOTHING TO MERGE: all 2 named ticker(s) already have a bar in "
             "all 1 week(s) on file from 2026-08-21 to 2026-08-21") in out
     assert "no tool writes one for an equity bar yet" in out
-    assert "rebuild_corrections.py" in out
+    # Not "the correction is stale: run rebuild_corrections.py": for a bar
+    # somebody dropped from a correction without a record, that is the
+    # command that puts it back. The feed gate says which it is.
+    assert "python scripts/truth_check.py --repo . --feed" in out
+    assert "rebuild_corrections.py" not in out
     assert "have no file" not in out
     assert "dry-run OK" not in out
 

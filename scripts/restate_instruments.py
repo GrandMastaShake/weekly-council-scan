@@ -155,10 +155,15 @@ def restate(directory: Path, date: str, names: list, reason: str,
     if not base_path.is_file():
         raise Refused("no file " + str(base_path))
     if target.exists():
+        # It said "then run scripts/rebuild_corrections.py". With the
+        # 'restated' entry forgotten, that run writes the base's close back
+        # over the one typed in, and the feed gate then passes.
         raise Refused(
             target.name + " already exists. Add the restatement to it by "
-            "hand (the close, its provenance label and a 'restated' entry), "
-            "then run scripts/rebuild_corrections.py")
+            "hand, all three parts: the close, its provenance label and a "
+            "'restated' entry with what the close replaced. Then run "
+            "`python scripts/truth_check.py --repo . --feed`, which says "
+            "whether the record is whole, before anything rebuilds the file")
     base = json.loads(base_path.read_text(encoding="utf-8"))
     if base.get("as_of") != date:
         raise Refused(base_path.name + " has as_of " + repr(base.get("as_of")))
