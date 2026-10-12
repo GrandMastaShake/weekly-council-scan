@@ -3569,3 +3569,9 @@ reason to read the 0.2 as skill in the wrong direction.
 (about 22% of the records). The Oracle forecasts are LLM-written, the Four-Sector and Pre-/Post-Bell documents are his own and his father's process in prose, and the Kimi and Perplexity files are LLM research. None of this reads the Council's own picks, and one season, mostly rising, is all there is.
 
 **What this changes.** Nothing in the engines. Two things go on the list to watch forward: the Oracle's level calls (a handful more forecasts would test them properly) and the heatmap's grader, which needs 8 cycles to decide; at one cycle a week that is early November.
+
+### Pass 30 -- wired into the Monday task (2026-10-12)
+
+At the owner's word `forward_beatfall.py` now runs as step 3d of the Monday forward-scorer task (scheduled task 8), after the sleeve so it reuses the earnings tables the sleeve just fetched, and the task commits
+`lab/beatfall_events.json`, `lab/BEATFALL.md` and `lab/results/beatfall.json` with its other files. The event ledger is append-only; the task reports the status, the new events, the qualifying weeks and the
+band rows each Monday and concludes nothing before 12 qualifying weeks. Budget 50 minutes.

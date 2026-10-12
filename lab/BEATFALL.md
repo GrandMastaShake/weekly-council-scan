@@ -2,7 +2,7 @@
 
 Registered 2026-10-12 as Pass 30 (`lab/README.md`, 36545ad). Flagged beats (a positive surprise after 8 or more positive quarters) against the other beats of the same reaction week, on the five-day market-adjusted return R5, for reports with a reaction day on or after 2026-07-06. `lab/forward_beatfall.py` rebuilds this page from the append-only `lab/beatfall_events.json`; edits by hand are overwritten.
 
-Last run: 2026-10-12 10:05. Latest bar: 2026-10-12. Events in the ledger: 495.
+Last run: 2026-10-12 10:28. Latest bar: 2026-10-12. Events in the ledger: 495.
 
 **Status: too early (5 qualifying weeks; 12 are needed).** Mean weekly gap +2.64% (Newey-West t +8.15), halves +1.80% / +3.19%, median +2.60%.
 
