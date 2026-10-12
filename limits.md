@@ -16,6 +16,8 @@
 
 **2026-10-05 review:** No active resting limits to re-bless -- the ledger is empty for an eighth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the wikis again describe add-on-pullback zones rather than resting prices -- SMH toward $621 on a gap fill that holds, XLK $198.54-$199.35 holding $198.73 (wiki/synthesis.md Section 5). The Council booked SNPS, AMAT and LRCX at market above those zones this week; had those zones been written here as limits a month ago, this ledger would be the record of whether patience or paying market was cheaper.
 
+**2026-10-12 review:** No active resting limits to re-bless -- the ledger is empty for a ninth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the wikis again describe conditional levels rather than resting prices -- XLF "add against $54.46" (done by Marky at market), SMH "back in on a close over $609.66 after $600.32 holds," XLP "add only on a close above $83.64 that holds," FCX "only if copper settles over $6.60 Monday" (wiki/synthesis.md Section 5). Every one is a reclaim or a settlement, which is a trigger, not a bid. The one price the Council itself came closest to owning as a limit this week is the XLF 50D ($56.39) that blocks Cecil's names -- and that is a line to re-read against Tuesday's prints, not a price to rest an order at. None was voted.
+
 ## Filled / Cancelled
 
 *None.*
