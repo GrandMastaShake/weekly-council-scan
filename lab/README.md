@@ -3575,3 +3575,39 @@ reason to read the 0.2 as skill in the wrong direction.
 At the owner's word `forward_beatfall.py` now runs as step 3d of the Monday forward-scorer task (scheduled task 8), after the sleeve so it reuses the earnings tables the sleeve just fetched, and the task commits
 `lab/beatfall_events.json`, `lab/BEATFALL.md` and `lab/results/beatfall.json` with its other files. The event ledger is append-only; the task reports the status, the new events, the qualifying weeks and the
 band rows each Monday and concludes nothing before 12 qualifying weeks. Budget 50 minutes.
+
+## Pass 31 -- ten years of earnings events from Finviz: the surprise tests again, two definitions of surprise (registered 2026-10-12 before any return or correlation is computed)
+
+The owner connected Finviz Elite and asked for the earnings work to be redone on a longer, definition-consistent history. Two reasons it is worth a registered pass rather than a swap.
+(1) The seven earnings seasons behind Passes 21, 23 and 30 are all there is on the yfinance table (24 quarters a ticker); Finviz's earnings calendar reaches back to at least 2012 with the
+estimate, the actual, the surprise percent, revenue and the report's timestamp. (2) Finviz's surprise is not yfinance's: JPM's July 2026 report is +37.8% on one and +5.9% on the other
+(the reported figure differs, 7.70 against 6.14), PGR's consensus 4.64 against 4.84. So this is also the test of whether the findings belong to the data vendor.
+
+**Data (private).** `lab/finviz_history.py fetch` walks the calendar in 12-week windows (a call returns about 13 weeks) from 2015-10 to 2026-10 into `lab/cache/finviz_earnings_calendar.json`,
+which is gitignored: Finviz data is for the owner's own use and this repo is public, so only counts and aggregate results are committed. Prices are Yahoo's dividend-adjusted daily bars for the same names.
+
+**Universe, and the look-ahead it must avoid.** The S&P 500 list of 2026-09-22 (503 names) with an event counted only if the name's `date_added` (`lab/universe_sp500_added_2026-09-22.csv`) is before the
+event's reaction day (blank means long-standing). That removes the bias of testing 2016 on names that joined the index later, the way the 2024-09 list did not need to. Removed and delisted names are
+still absent (survivors only, stated), and the calendar's own "Market Cap" is today's, not point in time, so it is not used for membership.
+
+**Events, as in Pass 21.** A report stamped before 12:00 ET reacts that day, otherwise the next session; R1, R5 and D20 are market-adjusted (SPY) dividend-adjusted returns clipped at +/-40%; surprise is the
+calendar's "EPS Surprise" percent clipped at +/-100 (an event with no surprise is dropped and counted, about 14% of rows in the sample probed). **Streak** (for T4) is the number of consecutive prior quarters with a
+strictly positive surprise in the same table. Reaction weeks with fewer than 15 events are dropped. **Samples:** S1, reaction days 2016-01-04 to 2026-07-03 (Pass 21's last event is 2026-07-03, and everything from 2026-07-06
+is Pass 30's forward sample, left alone). S2, the part of S1 that overlaps the yfinance table, 2020-10-01 to 2026-07-03, on the 2024-09 list's cached yfinance events. T4 uses S1 from 2018-01-02, when eight prior quarters exist.
+
+**Decisive tests, each with the rule its earlier pass registered (Newey-West t, 4 lags, both halves, the median week).**
+- **T1, the reaction (Pass 21 V1).** The weekly rank correlation of surprise with R5 on S1: holds if the mean is positive with t of 2 or more and both halves positive.
+- **T2, the drift chair (Pass 21 V3).** The top quintile of surprise in each reaction week, long from the reaction-day close for 20 sessions, D20 against the week's pool mean: passes if t is 2 or more, both halves and the median week positive.
+- **T3, the sleeve on the Monday clock (Pass 23 variant A, hold 4, as the sleeve runs it).** Each Monday, last week's reporters tradeable that Monday (at least four weeks of bars; no report inside the coming week, the first report taken strictly after the previous Friday; the 15-candidate floor), the five highest surprises, equal weight, Monday's open to the Friday of week W+3,
+  clipped at +/-40%, against the mean of the tradeable pool, per week of holding: has an edge if t is 2 or more, both halves positive, the median positive.
+- **T4, beat-then-fall, the corrected contrast (Pass 30's rule on history).** Flagged beats (positive surprise after a streak of 8 or more) against the other beats of the same reaction week on R5, weeks with 3 or more of each: holds if the mean is -0.3% or lower, t is -2 or lower, both halves and the median week negative, with at least 12 weeks.
+  The forward test of Pass 30 keeps running unchanged; this reads the same contrast on 2018 to 2026-07, and does not touch its rule or its record.
+
+**Reported, never decisive.** The same T1 and T2 on yfinance's surprise over S2, so the two definitions are read on the same events; the share of overlapping events whose two surprises have the same sign and the weekly rank correlation between them; T2 and T3 by calendar year and by half-decade; a season-blocked bootstrap of T2; and T2 with revenue surprise in place of EPS surprise.
+Four decisive tests; the chance that a rule-free signal passes one of them is about one in five, and T1 is expected to hold.
+
+**Predictions.** (1) T1 holds (a weekly IC of +0.1 to +0.3). (2) T2 passes, with a smaller mean than Pass 21's +1.21% per cohort (between +0.3% and +1.0%): the effect is real but was flattered by the seven seasons that found it. (3) T3 has an edge weaker than the corrected backtest's +0.51% a week of holding
+(between +0.1% and +0.4%), a coin-flip whether t reaches 2. (4) T4 does not hold: the mean is above -0.3% (the in-sample -0.59% on seen data is mostly the sample). (5) The two definitions agree in sign on at least 80% of overlapping events, and give the same verdict on T1 and T2.
+
+    python lab/finviz_history.py fetch      # the private data build (no returns)
+    python lab/finviz_history.py            # the four tests and the comparisons
