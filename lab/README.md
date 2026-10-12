@@ -2875,3 +2875,45 @@ comparison, so it says nothing about whether earnings weeks are good weeks to be
 **What this changes.** It is the first registered result in the lab that passes its rule and reads information (earnings) that none of
 the three engines reads, and its weekly edges are close to uncorrelated with theirs, which is what Pass 17 said a fourth chair has to be.
 It is not yet a chair: it needs the Council's clock (Pass 23, registered next) and a forward record. Nothing in production changes.
+
+## Pass 23 -- the drift chair on the Council's clock (registered before any run)
+
+Pass 21's V3 passed its rule: the top surprise quintile of each earnings-season week beat that week's reporters by +1.21% over the next 20
+sessions (t 2.8, six of seven seasons positive, weekly edge nearly uncorrelated with the three chairs'). But it entered at the
+reaction-day close, which the Council cannot do: the Monday scan sees last week's reports and buys at Monday's open, days after the
+largest part of the move. This pass asks the question that decides whether it is a chair. `pass23_drift_chair.py`; the S&P 500 as of
+2024-09 decides. The 111 has too few reporters a week to run it, and the Council weeks (from 2026-07-20) fall after the last event the
+earnings table covers for this window, so neither is scored.
+
+**The chair.** Every Monday W, among names whose reaction day fell in the look-back window and that are tradeable that Monday (the same
+pool the other chairs use: enough history, no report inside the coming week), rank by the table's surprise percent (clipped at +/-100%,
+ties by ticker) and propose the top five, equal weight, bought at W's open. The chair abstains (the team book is then the three
+chairs unchanged) when fewer than 15 tradeable candidates exist (variant A) or 30 (variant B).
+
+| Variant | Look-back window |
+|---|---|
+| A, last week | reaction days in the previous Monday-to-Friday week |
+| B, three weeks | reaction days in the previous 15 sessions |
+
+**Scoring**, in the lab's way. *Hold 1:* W's open to its Friday close, the book's clipped edge over random five-name picks from the whole
+tradeable pool (the lab's standard), 200 draws; also reported against random picks from the candidate set alone (which isolates the
+surprise ranking). *Hold 4:* W's open to the Friday of week W+3, clipped at +/-40%, the same two comparisons, quoted as an edge per week
+of holding (the four-week edge over 4). *The team:* four chairs (Ophelia, Cecil with the P/E, Marky and the drift chair, a quarter each)
+against Pass 19's three chairs, by the paired difference in the books' clipped weekly returns over all 96 weeks (the chair's inactive
+weeks contribute zero by construction; returns, not edges, because each book's random baseline is seeded by its name).
+
+**What counts.** The chair *has an edge* on its active weeks if the hold-1 edge over the whole tradeable pool is positive with a
+Newey-West t (4 lags) of 2 or more, both halves of the active weeks positive and the median active week positive. It *adds to the team*
+if the paired four-minus-three return difference has t of 2 or more over the 96 weeks with both halves positive. Six decisive tests
+(A and B on hold 1 and hold 4, and the team comparison for each of A and B on hold 1), which leaves about one chance in four that one
+passes by luck; the prior is not neutral, since V3 passed, and a pass here still goes to the forward record before it is wired in.
+
+**Predictions.**
+1. Variant A, hold 1: an edge of +0.15% to +0.40% a week over the pool on 30 to 40 active weeks, t between 0.8 and 2: it does not pass.
+   Most of the effect sits in the first days after the report.
+2. Variant B has about twice the active weeks; its hold-4 edge is +0.3% to +0.6% a week of holding with t of 1.5 to 2.5, about even odds of
+   passing.
+3. Against the candidate set alone the edges are close to the full-pool ones (the pool of recent reporters is not special).
+4. Four chairs minus three: +0.02% to +0.10% a week, t under 2.
+
+    python lab/pass23_drift_chair.py
