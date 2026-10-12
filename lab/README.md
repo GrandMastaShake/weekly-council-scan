@@ -3148,3 +3148,43 @@ not Ophelia's production use of the anchor (her top two sectors on the engine's 
 
 **What this changes.** The heatmap's mechanical sector score does not go into Ophelia. The heatmap is a map of the week just past; for the week to come it
 ranks sectors no better than a coin, which is also what the week-old anchor does here.
+
+## Pass 25 results -- on 27 years of sector ETFs Ophelia's anchor has no signal, and last week's winners lose slightly the next
+
+Run after the registration (cebc16e) and the code (5e262a9); `results/pass25_sector_history.json`. The SPDR sector ETFs, dividend-adjusted
+daily bars from Yahoo: nine from 1998-12-22, XLRE from 2015-10-08, XLC from 2018-06-19. 1,446 weekly cross-sections from 1999-01-11 to
+2026-09-21, nine to eleven sectors each. (The first download came back with XLV empty and cached the gap; the script now refuses an empty
+ETF, and the cache was cleared and refetched before any number was read.) Target: each ETF's Monday-open to Friday-close return minus the
+equal-weight mean of the sectors then listed. IC is the weekly rank correlation across sectors; the spread is the mean target of the
+top three sectors by the signal minus the bottom three.
+
+| Signal | Mean IC | NW t | Halves | Top 3 minus bottom 3 | 1999-2008 | 2009-2017 | 2018-2026 | Holds |
+|---|---|---|---|---|---|---|---|---|
+| Fresh (the week that just closed) | **-0.025** | **-2.25** | -0.013 / -0.036 | -0.120%/wk (t -2.28) | -0.011 (t -0.62) | -0.025 (t -1.25) | -0.039 (t -2.17) | **no** |
+| Stale (the week before; what production reads) | **-0.005** | -0.48 | -0.006 / -0.004 | -0.048%/wk (t -0.97) | -0.014 (t -0.76) | -0.010 (t -0.57) | +0.010 (t +0.54) | **no** |
+
+By window (IC; weekly t), fresh: 2000-2002 -0.031 (-0.92), 2007-2009 +0.009 (+0.26), 2020 -0.042 (-0.78), 2022 -0.059 (-1.53).
+Stale: 2000-2002 **-0.078 (-2.73)**, 2007-2009 -0.017 (-0.49), 2020 +0.016 (+0.50), 2022 -0.021 (-0.45).
+
+**What it says.** Neither signal holds. The stale anchor, the one Ophelia's rotation reads, ranks the next week's sector returns at
+-0.005 across 27 years and 1,446 weeks (t -0.5), and it is negative in two of the three eras; the one window where it is significant
+(2000-2002, t -2.7, one of eight window cells) is significantly *wrong*. Pass 9b found her two-year edge was 83% in the first half of
+2026; this puts the anchor itself on 27 years of regimes it has not seen (2000-02, 2008, 2022) and finds nothing in it. The fresh signal is the surprise:
+last week's winning sectors do slightly worse the following week (IC -0.025, t -2.25, the top three trailing the bottom three by
+0.12% a week, negative in all three eras and growing across them). That is a weekly sector reversal, small, in the direction opposite to the
+rotation's momentum premise, and it was not what the anchor was built on. It is the only one of the two decisive tests to reach |t| 2,
+and in the wrong direction for the question that was registered, so nothing is claimed beyond what is stated here.
+
+**Predictions.** 1 right: neither signal holds. 2 right on both counts: fresh is slightly negative over the whole sample (-0.025), and stale
+is within 0.01 of zero (-0.005). I did not predict that the fresh reversal would clear t 2 by itself or that it would deepen from era to era.
+
+**What this does not show.** The reversal is a sector-ETF result with the target beginning at Monday's open; it says nothing about
+stock picks inside a sector, which is what the Council buys, and a reversal of 0.12% a week gross across the top and bottom three has not
+been put through costs, a sector-ETF trading rule or a forward record. It is not a registered strategy. The Council's own history (Pass 24,
+96 weeks) shows the same sign on the clean list (fresh -0.020) and the opposite on the 111 (+0.027); neither is distinguishable from zero.
+XLRE and XLC enter the cross-section late, so the early sample is nine sectors against eleven in the last decade.
+
+**What this changes.** Nothing in the engines. Ophelia's sector anchor has no support in the long history, which matches Pass 9b's finding
+that her edge is the regime she was tested in; it stays in her rotation until a forward record says otherwise, and the question of
+whether it should is the owner's. A reversal rule on weekly sector returns is the one new lead: if it is worth a test it needs its own
+registration, with costs and a tradeable instrument named first.
