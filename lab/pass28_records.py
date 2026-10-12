@@ -383,7 +383,7 @@ def cluster_check(gs, kind):
     source document and asks the same question one level up (an unregistered check, reported beside the registered rule, never instead of it)."""
     docs = defaultdict(list)
     for g in gs:
-        docs[g["source_id"]].append(g)
+        docs[(g["source_id"], g["entry"][:10] if g["source_id"] in ("perplexity-2025", "kimi-swarm") else "")].append(g)    # one source file holds many dated reports
     diffs = []
     for sid, ds in docs.items():
         if kind == "pick":
@@ -414,7 +414,7 @@ def run(records_dir):
     series = {t: lab.Series(b) for t, b in lab.bars_by_ticker(lab.download(sorted(tickers), True, "2026-10-13", "2017-12-01")).items()}
     thin = sorted(t for t in tickers if t not in series or len(series[t].dates) < 250)
     uni_names = sp500_asof()
-    uni = {t: lab.Series(b) for t, b in lab.bars_by_ticker(lab.download(uni_names, True, "2026-10-13", "2026-05-01")).items() if b}
+    uni = {t: lab.Series(b) for t, b in lab.bars_by_ticker(lab.download(uni_names, True, "2026-10-13", "2025-09-01")).items() if b}
     br = BaseRates(series, series["SPY"])
     graded = [dict(grade_one(r, series, br, uni), family=r["family"], kind=r["kind"], source_id=r["source_id"], id=r["id"]) for r in records]
     status = Counter((g["family"], g["status"]) for g in graded)
