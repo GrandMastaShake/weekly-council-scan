@@ -1,0 +1,230 @@
+{
+ "capex": {
+  "registered": "517e4b7",
+  "data_matches_registration": true,
+  "checks": {
+   "start_close": 634.0900268554688,
+   "reg_close": 765.719970703125
+  },
+  "last_day": "2026-10-09",
+  "last_close": 778.5700073242188,
+  "return_since_start": 0.22785410166414666,
+  "running_peak": 779.0900268554688,
+  "peak_day": "2026-10-06",
+  "drawdown_from_peak": -0.0006674703992154418,
+  "worst_drawdown": -0.044946501730241395,
+  "trigger_fired_on": null,
+  "five_percent_watch_first_on": null,
+  "min_return_since_start": -0.0033434201720181633,
+  "P1": "episode still running and an expansion so far (return since start positive)",
+  "P2": "live: no termination, so the final return is not yet fixed; the peak-to-start return is already above +15%",
+  "P3": "not triggered",
+  "P4": "not triggered",
+  "P2_status": "passing"
+ },
+ "heatmap": {
+  "registered": "517e4b7",
+  "cycles": [
+   {
+    "as_of": "2026-08-21",
+    "horizon": "week",
+    "graded": false,
+    "why": "declared ungradeable by the forecast"
+   },
+   {
+    "as_of": "2026-08-21",
+    "horizon": "month",
+    "graded": true,
+    "window": "2026-08-21..2026-09-18",
+    "ic": 0.2,
+    "hits": 5,
+    "partial": 2,
+    "misses": 4,
+    "by_confidence": {
+     "low": {
+      "n": 7,
+      "hits": 2,
+      "misses": 3
+     },
+     "medium": {
+      "n": 4,
+      "hits": 3,
+      "misses": 1
+     }
+    }
+   },
+   {
+    "as_of": "2026-09-11",
+    "horizon": "week",
+    "graded": true,
+    "window": "2026-09-11..2026-09-18",
+    "ic": -0.0182,
+    "hits": 5,
+    "partial": 3,
+    "misses": 3,
+    "by_confidence": {
+     "medium": {
+      "n": 3,
+      "hits": 1,
+      "misses": 1
+     },
+     "low": {
+      "n": 8,
+      "hits": 4,
+      "misses": 2
+     }
+    }
+   },
+   {
+    "as_of": "2026-09-11",
+    "horizon": "month",
+    "graded": true,
+    "window": "2026-09-11..2026-10-09",
+    "ic": -0.0364,
+    "hits": 5,
+    "partial": 3,
+    "misses": 3,
+    "by_confidence": {
+     "low": {
+      "n": 7,
+      "hits": 2,
+      "misses": 3
+     },
+     "high": {
+      "n": 2,
+      "hits": 2,
+      "misses": 0
+     },
+     "medium": {
+      "n": 2,
+      "hits": 1,
+      "misses": 0
+     }
+    }
+   },
+   {
+    "as_of": "2026-09-18",
+    "horizon": "week",
+    "graded": true,
+    "window": "2026-09-18..2026-09-25",
+    "ic": 0.6545,
+    "hits": 8,
+    "partial": 3,
+    "misses": 0,
+    "by_confidence": {
+     "medium": {
+      "n": 3,
+      "hits": 1,
+      "misses": 0
+     },
+     "low": {
+      "n": 8,
+      "hits": 7,
+      "misses": 0
+     }
+    }
+   },
+   {
+    "as_of": "2026-09-18",
+    "horizon": "month",
+    "graded": false,
+    "why": "WINDOW NOT CLOSED: grading this horizon needs the weekly file 4 week(s) after 2026-09-18. "
+   },
+   {
+    "as_of": "2026-09-25",
+    "horizon": "week",
+    "graded": true,
+    "window": "2026-09-25..2026-10-02",
+    "ic": -0.1545,
+    "hits": 5,
+    "partial": 5,
+    "misses": 1,
+    "by_confidence": {
+     "medium": {
+      "n": 4,
+      "hits": 0,
+      "misses": 1
+     },
+     "low": {
+      "n": 6,
+      "hits": 4,
+      "misses": 0
+     },
+     "high": {
+      "n": 1,
+      "hits": 1,
+      "misses": 0
+     }
+    }
+   },
+   {
+    "as_of": "2026-09-25",
+    "horizon": "month",
+    "graded": false,
+    "why": "WINDOW NOT CLOSED: grading this horizon needs the weekly file 4 week(s) after 2026-09-25. "
+   },
+   {
+    "as_of": "2026-10-02",
+    "horizon": "week",
+    "graded": true,
+    "window": "2026-10-02..2026-10-09",
+    "ic": -0.1545,
+    "hits": 1,
+    "partial": 4,
+    "misses": 6,
+    "by_confidence": {
+     "low": {
+      "n": 10,
+      "hits": 1,
+      "misses": 6
+     },
+     "medium": {
+      "n": 1,
+      "hits": 0,
+      "misses": 0
+     }
+    }
+   },
+   {
+    "as_of": "2026-10-02",
+    "horizon": "month",
+    "graded": false,
+    "why": "WINDOW NOT CLOSED: grading this horizon needs the weekly file 4 week(s) after 2026-10-02. "
+   },
+   {
+    "as_of": "2026-10-09",
+    "horizon": "week",
+    "graded": false,
+    "why": "WINDOW NOT CLOSED: grading this horizon needs the weekly file 1 week(s) after 2026-10-09. "
+   },
+   {
+    "as_of": "2026-10-09",
+    "horizon": "month",
+    "graded": false,
+    "why": "WINDOW NOT CLOSED: grading this horizon needs the weekly file 4 week(s) after 2026-10-09. "
+   }
+  ],
+  "summary": {
+   "week": {
+    "cycles": 4,
+    "mean_ic": 0.081825,
+    "shuffle_p_one_sided": 0.3059,
+    "hits": 19,
+    "partial": 15,
+    "misses": 10,
+    "graded_calls": 44,
+    "decides": false
+   },
+   "month": {
+    "cycles": 2,
+    "mean_ic": 0.08180000000000001,
+    "shuffle_p_one_sided": 0.3637,
+    "hits": 10,
+    "partial": 5,
+    "misses": 7,
+    "graded_calls": 22,
+    "decides": false
+   }
+  }
+ }
+}
