@@ -2704,3 +2704,76 @@ three-chair book is the best number on this list. The trigger check can
 stay where it is, in the Council's hands after the engines, since blocking
 and replacing come out the same; when it blocks all his names, as on 09-28,
 his empty seat costs nothing on average.
+
+## Pass 20 -- regime and event splits of the weekly edges (registered before any run)
+
+From the 2026-10-05 deep dive of the owner's drive (private report, not in the repo). The Council's rulebooks and persona journals obey regime rules in prose that the lab never tested: a complacency trap (VIX under 16 with weak breadth), a count of risk flags, macro-event gates (CPI, FOMC), and a commodity gate (dollar over 101 and the 10-year over 4.5%). The lab has 96 weekly edges for every member and no split of them by anything the engines do not see. `pass20_regimes.py` splits them. It replays nothing: it takes each week's three fives from Pass 19's cached rows (Ophelia's engine five, Cecil's as-is five with the point-in-time P/E, Marky's channel five) and scores them again under one tag, so the members and the team are on one footing. The S&P 500 as of 2024-09 decides, the 111 is reported, and the nine Council weeks are reported and decide nothing.
+
+**Inputs, all point in time (the last close before the week's Monday).** VIX (^VIX), the 10-year yield (^TNX), the dollar index (DX-Y.NYB), WTI (CL=F); breadth = the share of the universe's names (at least 50 closes) whose last close is above their own 50-day average. Event dates: scheduled FOMC decision days (2024-09-18, 11-07, 12-18; 2025-01-29, 03-19, 05-07, 06-18, 07-30, 09-17, 10-29, 12-10; 2026-01-28, 03-18, 04-29, 06-17; the Fed's calendar; one "unscheduled" 2025-08-22 line from the page is not used, unverified) and CPI release dates (the BLS archive, whose list starts at the September 2024 reference month, plus 2024-09-11, the August 2024 release, added by hand: 2024-09-11, then 2024-10-10, 11-13, 12-11; 2025-01-15, 02-12, 03-12, 04-10, 05-13, 06-11, 07-15, 08-12, 09-11, 10-24, 12-18; 2026-01-13, 02-13, 03-11, 04-10, 05-12, 06-10). The jobs, retail-sales and CPI-surprise flags in the owner's seven-flag rule are not used: the revised FRED series are not point in time.
+
+**Part A, six splits** (a week is flagged or not; the Council's thresholds as written, not tuned):
+
+| Split | Flagged week |
+|---|---|
+| S1 complacency | VIX under 16 and breadth under 40% |
+| S2 fear | VIX over 22 |
+| S3 weak breadth | breadth under 40% |
+| S4 flags | three or more of: dollar under 100, 10-year under 4.3%, VIX over 22, WTI over 100 |
+| S5 event week | a CPI release or an FOMC decision falls in the week, Monday to Friday |
+| S6 commodity gate | dollar over 101 and the 10-year over 4.5% |
+
+The decisive book is the team (Ophelia, Cecil, Marky, a third each). A split *matters* if the flagged weeks' mean clipped edge differs from the other weeks' by Welch |t| of 2 or more, the difference has the same sign in both halves of the 96 weeks, and the two groups' medians differ the same way. A split with fewer than 8 flagged weeks has no verdict (it is reported as untestable). The three members' rows are reported and decide nothing.
+
+**Part B, three dials, judged by the lab's rule 7.** A dial holds the team book in unflagged weeks and cash in flagged ones: D1 on S1, D2 on S4, D3 on S5. Each is measured against the same book at a constant exposure equal to the dial's average (the rest cash): the statistic is the mean weekly difference between the dial and that exposure-matched book, with its t. A dial *helps* if t is 2 or more and both halves are positive. D2 is not run if S4 is untestable.
+
+**Part C, the commodity gate on index history** (2003 to 2026-07, daily data, Friday to Friday). Weeks with the S6 gate on against off: the average weekly return over the next four weeks of an equal-weight basket of XLB, XLE and GLD (GLD from 2004-11) minus SPY, overlapping windows, Newey-West t with 3 lags. The gate *matters* if the gate-on weeks trail by 0.3% a week or more, |t| is 2 or more, the sign holds in 2003-2014 and 2015-2026, and the gate is on in no more than 60% of weeks.
+
+**Predictions.**
+1. No Part A split matters on the team book. With 96 weeks and a weekly SD near 2.3%, a split of 20 flagged weeks needs a gap of about 1.2 points to reach t 2.
+2. S1 flags fewer than 12 weeks and its flagged weeks look worse than the rest, not significantly.
+3. S5 shows no difference in mean edge.
+4. No dial beats its exposure-matched book (Pass 8: cash is free and timing is not).
+5. The commodity gate is on in more than a third of weeks and the basket does not trail by 0.3% a week at t 2.
+
+Ten decisive tests (six splits, three dials, one gate), which leaves about one chance in four that one passes by luck. A pass goes to the forward record as a regime filter before anything is changed; the Council's prose rules stay as they are until then.
+
+    python lab/pass20_regimes.py
+
+## Pass 21 -- beat-then-fall: earnings surprise and the next days (registered before any run)
+
+The deep dive found a hypothesis in the owner's logs and a dataset (`earnings_pull.json`, 692 quarters on 63 Council names) too small and too hand-picked to test it. This pass uses every reporter on the S&P 500 as of 2024-09 (463 names, today's survivors, survivorship stated) instead. Events come from `yfinance.Ticker.get_earnings_dates` (consensus estimate, reported EPS and surprise as of each report), report dates 2024-09-09 to 2026-07-03, with the name's prior quarters from the same table for its beat streak. `pass21_beat_fall.py` has the rules.
+
+**Event timing.** A timestamp before 12:00 ET is a pre-market report and the reaction day is the report date; otherwise after the close and the reaction day is the next session. Pre-event close = the last close before the reaction day. Returns are dividend-adjusted and market-adjusted (minus SPY over the same days): **R1** = reaction day close over the pre-event close; **R5** = the close four sessions after the reaction day over the pre-event close; **D20** = the close 20 sessions after the reaction day over the reaction-day close (the drift). Clipped at +/-40%. Surprise is the table's percent, clipped at +/-100%; an event with no estimate or no reported figure is dropped and counted. Streak = consecutive prior quarters with a strictly positive surprise.
+
+**Four tests**, each by reaction week (weeks with fewer than 15 events dropped), Newey-West t over weeks (4 lags), both halves, the median week:
+- **V1 reaction.** The mean weekly Spearman correlation of surprise with R5. It *holds* if positive with t of 2 or more in both halves.
+- **V2 beat-then-fall.** Events with a streak of 8 or more and a positive surprise, against the other events of the same reaction week, on R5. It *holds* if the gap is -0.3% or lower with t of -2 or lower, both halves negative.
+- **V3 drift chair.** The top quintile of surprise in each reaction week, long from the reaction-day close for 20 sessions: D20 over random draws of the same count from that week's reporters. It *passes* if t is 2 or more, both halves are positive and the median week is positive. A pass is a candidate chair with new information, as Pass 17 asked for.
+- **V4 big beat, then fall.** Surprise over +10% and a streak of 4 or more, on D20 against random same-week reporters. It *holds* if t is -2 or lower, both halves negative.
+
+The 111 is reported beside the clean list; the clean list decides.
+
+**Predictions.** 1: V1 holds (the announcement reaction follows the surprise; the literature's one robust result, IC near 0.1). 2: V2 does not. 3: V3 does not pass (the post-earnings drift has faded in large caps; a weak positive mean under t 2). 4: V4 does not hold. Four tests leave about one chance in five that one of V2 to V4 passes by luck.
+
+    python lab/pass21_beat_fall.py
+
+## Pass 22 -- the frozen 2025 lists, scored forward against random (registered before any run)
+
+The deep dive found dated lists the 2025 bot stack wrote before any outcome existed and nobody scored. `pass22_frozen.py` scores them once, to close the book, against random draws from the same file. Expect a null. The files and their scores:
+
+| Cohort | File and date | Score | Cohort |
+|---|---|---|---|
+| threshold | `threshold_analysis_20250727_211832.csv`, 2,209 names | `weighted_score` | the top decile |
+| sentinel | `universe_sentinel_full_analysis_20250919_213629.json`, 2,500 names | `overall_score` | the top decile |
+| jensen | `jensen_elite_discoveries_20250919_231123.json`, 2,350 names | `bagbagger_score` | the top decile |
+| elizabet | `elizabet_universe_convergence_report_20250925_032815.json`, 1,968 names | `converging_strategies` | all names at or above the 90th percentile value |
+| cecil v1 | `cecil_ai_council_referrals_complete.json`, 2025-09-25 | its 20 stored recommendations (the file reports 27 buys; seven are not stored) | the 20 names; random draws of 20 from the sentinel pool |
+| overlap | names in the top decile of two or more of sentinel, jensen and elizabet | | random draws of the same size from the names all three cover |
+
+**Prices.** Daily dividend-adjusted bars from Yahoo; entry at the open of the first session after the file's timestamp, exit at the close of the Friday that ends week h of 4, 13, 26 and 52. A name with no price at entry is dropped from the pool (counted); a name that stops trading before the exit is held at its last close (counted); the jensen file's own recorded price must be within 15% of the entry close or the name is dropped (it parsed English words as tickers). Returns are winsorized at the pool's 1st and 99th percentile at each horizon.
+
+**Measure.** The cohort's mean return minus the mean of 2,000 random draws of the same size from the same pool, reported as the cohort's percentile among the draws, for the mean and for the median. A second set of draws, **matched**, takes each pick's replacement from the same pool within its cell of trailing-60-day volatility tercile and price bucket (under 5, 5 to 20, over 20 dollars). A cohort *beats random* at a horizon if its percentile is 97.5 or higher on both the mean and the median, uncontrolled and matched. It *passes* if it beats random at two or more horizons including 26 or 52 weeks.
+
+**Predictions.** No cohort passes. The jensen and elizabet scores favor cheap volatile small caps, so against unmatched draws they will swing either way and lose their edge when matched. Six cohorts at four horizons leave about one chance in two that one horizon crosses by luck, which is why a pass needs two, including a long one. The October 2025 rubric lists (the 250-day window closes about 2026-10-22) are not in this pass; they get their own once the window has closed.
+
+    python lab/pass22_frozen.py
