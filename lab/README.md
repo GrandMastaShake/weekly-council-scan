@@ -3611,3 +3611,41 @@ Four decisive tests; the chance that a rule-free signal passes one of them is ab
 
     python lab/finviz_history.py fetch      # the private data build (no returns)
     python lab/finviz_history.py            # the four tests and the comparisons
+
+## Pass 31 results -- the surprise predicts the reaction as before, but the drift is a recent-regime effect, and beat-then-fall holds by a hair
+
+Run after the registration (7b6c4d7) and the code (`finviz_history.py`, committed before the run); `results/pass31_finviz_history.json` (aggregates only; the calendar and every event row stay in the gitignored cache).
+The calendar gave 20,845 rows for 502 of the 503 names on the 2026-09-22 list (PSKY, the renamed Paramount, is absent), with a surprise on over 98% of them; 17,041 events from reaction days 2016-01-04 to 2026-07-03 have a surprise, Yahoo
+prices and index membership at the time (214 reaction weeks with 15 or more events, 42 earnings seasons against the seven behind Passes 21 and 23). A 40-name smoke run was read for plumbing, and after the full run I replayed the pipeline on the
+window Passes 21 and 23 had measured (below). Delisted names are still absent: survivors only.
+
+| Test (S1: 2016 to 2026-07-03) | Result | Halves | Median | Registered rule | Verdict |
+|---|---|---|---|---|---|
+| **T1** reaction: weekly rank IC of surprise with R5 | mean **+0.207**, t +15.7 (214 weeks) | +0.218 / +0.196 | +0.221 | positive, t 2+, both halves | **holds** |
+| **T2** drift: top surprise quintile, D20 vs the week | **+0.18%** per cohort, t **+0.80** | +0.11% / +0.25% | +0.07% | t 2+, both halves and median positive | **no** |
+| **T3** the sleeve on the Monday clock (hold 4, per week of holding) | **+0.096%**, t **+1.18** (214 weeks) | +0.07% / +0.12% | +0.01% | t 2+, both halves and median positive | **no** |
+| **T4** beat-then-fall, flagged beats minus other beats, R5 (2018 on) | **-0.310%**, t **-2.05** (171 weeks) | -0.25% / -0.37% | -0.56% | mean -0.3% or lower, t -2 or lower, both halves and median negative | **holds** (by 0.01 point and 0.05 of t) |
+
+**Drift.** The season-blocked bootstrap of T2 over 42 seasons gives a 95% interval of -0.22% to +0.63% and P(mean 0 or less) 0.20. By year, the weekly top-quintile edge reads -0.21, +0.33, -0.39, -0.62, -0.11, +1.24, -0.16, -0.09, +0.51, +0.50, +1.48%
+(2016 to 2026, the last eleven weeks only); by period, 2016-19 -0.24%, 2020-23 +0.22%, 2024 to mid-2026 +0.70%. The +1.21% of Pass 21 sat in the part of the sample where the effect is largest, and it does not generalize back: **the post-earnings drift
+here is a recent-regime result, not a decade-long edge.** The sleeve's Monday-clock backtest tells the same story: +0.096% a week of holding over ten years (t 1.18), below its own +0.20% confirm threshold, against +0.32% (t 3.01) on 2024-09 to 2026-07 in this pipeline.
+Revenue surprise carries the reaction (T1 IC +0.168) and no drift (T2 -0.04%, t -0.21).
+
+**Beat-then-fall.** The corrected contrast is negative in seven of nine years (2018 -0.23%, 2019 +0.21, 2020 -0.52, 2021 -0.63, 2022 -0.08, 2023 -0.84, 2024 +0.11, 2025 -0.41, 2026 to July -0.51), so it is not one regime's accident, and it is small: a
+habitual beater's beat trails other beats by about 0.3% over five sessions. It clears the registered rule by a hair on both numbers, one of four decisive tests, and the forward test of Pass 30 (reports from 2026-07-06) read +2.64% in its first five weeks, the other way: the
+two together say "small and not settled", and Pass 30 keeps running on its own rule.
+
+**The two definitions of surprise agree.** On the 2020-10 to 2026-07 overlap with the yfinance tables (9,998 events on both): the surprises have the same sign on 95%, and the weekly rank correlation between them averages 0.90. On that sample T1 holds under both (IC +0.199 Finviz, +0.203 yfinance) and
+T2 passes under both (+0.63%, t 2.04 and +0.60%, t 2.08), so **no finding in Passes 21 to 30 belongs to the data vendor**, and the JPM-sized disagreements are the tail. (T2 passes on this half-decade and fails on the decade, which is the point above.)
+
+**Pipeline check against the old windows.** On Pass 21's window (2024-09-09 to 2026-07-03) the new pipeline gives T1 IC +0.219 (published +0.234), T2 +0.80% over 38 weeks (published +1.21%, 35 weeks, t 2.37 against 2.81); on Pass 23's window the Monday-clock sleeve gives +0.32% a week (t 3.01) against the
+corrected +0.51% (t 4.36). Same signs and shapes at about 60 to 65% of the size, from the definition, the larger universe (503 names, with membership dates, against 463) and the week count; not a bug of the kind the audit found.
+
+**Predictions.** 1 right: T1 holds, IC +0.21. 2 wrong: T2 does not pass; I expected a smaller positive effect that still cleared t 2 and got +0.18% at t 0.80. 3 wrong, narrowly: the sleeve's ten-year edge is +0.096% a week, just under the +0.1% to +0.4% I gave, and t is 1.18. 4 wrong: T4 holds, by the thinnest margin.
+5 right: 95% sign agreement and the same verdicts under both definitions.
+
+**What this does not show.** Survivors only (delisted and removed names are not in the universe); the calendar's estimates and actuals are Finviz's as stored today; membership uses the current members' `date_added`, which removes the look-ahead of later additions but not the survivorship
+of removals; the sample ends 2026-07-03, so the unread July to September 2026 season belongs to the forward tests. Four decisive tests, two pass: T1, which was expected to, and T4, which passes by the margin of rounding.
+
+**What this changes.** The earnings-drift story weakens: the one signal that passed its rule in Passes 21 to 23 does not hold across ten years, and the sleeve (Pass 29) rests on the recent regime; it keeps running as registered, and "keep running" or "rejected" is the likelier outcome. The reaction signal (surprise to R5) is solid and
+the feed can move to Finviz without changing any conclusion. Beat-then-fall gets a small, near-threshold historical support and a conflicting first forward look; both keep accumulating.
