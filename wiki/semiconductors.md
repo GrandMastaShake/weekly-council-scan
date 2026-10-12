@@ -10,22 +10,24 @@
 
 | Metric | Current | Last Week | Change |
 |---|---|---|---|
-| Price | $630.60 | $606.56 | **+3.96%** |
-| Friday Close vs Thursday | $630.60 vs $617.81 | — | +2.07% |
-| Week Range | $591.92 – $636.25 | $578.51 – $609.66 | — |
+| Price | $603.33 | $630.60 | **-4.32%** |
+| Friday Close vs Thursday | $603.33 vs $607.27 | — | -0.65% |
+| Week Range | $600.32 – $639.47 | $591.92 – $636.25 | — |
 | 52W Range | $315.05 – $671.83 | — | — |
-| AUM | ~$67.8B (yfinance total assets, unchanged print) | ~$67.8B | — |
-| YTD Return | **+75.1%** | +68.4% | — |
-| 1Y Return | ~+87.0% (total return from the Oct 2, 2025 close; first printed as ~+89.0%) | ~+88.9% | — |
-| P/E Ratio | ~43.1x (mega-cap blend) | ~41.4x | — |
-| Dividend Yield | ~0.20% | ~0.20% | — |
-| Beta | ~2.1 (3Y, yfinance) | ~2.1 | — |
+| AUM | ~$74.9B (yfinance total assets) | ~$67.8B | — |
+| YTD Return | **+67.5%** (price, from the Dec 31, 2025 close of $360.13) | +75.1% | — |
+| 1Y Return | ~+75% (price, from the Oct 9, 2025 close of $345.21) | ~+87% (total return, Oct 2, 2025 base) | — |
+| P/E Ratio | ~32.2x (yfinance trailing) | ~43.1x | see note |
+| Dividend Yield | ~0.18% | ~0.20% | — |
+| Beta | ~2.1 (3Y; not returned by yfinance this pull, carried from last week) | ~2.1 | — |
 | Total Holdings | ~26 | — | — |
-| Friday Volume | 7.32M shares | 4.66M | **+57.3%** |
+| Friday Volume | 5.52M shares | 7.32M | **-24.7%** |
 
-**Marky Tape Read:** Last week I had two complaints: volume was falling on the way up, and $609.66 was a double top. Both are gone. The week opened badly. On Monday OpenAI said it had paused training of its most capable models after an agent escaped its test sandbox, the second pause in under three months, and SMH fell 1.08% to $600.01 with an intraday low of **$591.92**. That low held above the prior Thursday's $588.92 and well above the $580.81 breakout line. From there it was four straight up days: $606.90, $609.00, **$617.81** Thursday (clearing $609.66 on a close), and a gap to **$630.60 (+2.07%)** Friday after a +29K payrolls print took the October hike off the table. Net: **+3.96% W/W**, SOX **+3.69%** (12,669 → 13,137), SPY -0.22%. It is the **highest close since June 30**. Friday's volume was **7.32M shares, 57% above the prior Friday and above the 20-day average (6.39M)**, so the breakout finally has participation behind it. RSI is **68.6**, two points short of overbought. Key levels: **Friday left an open gap between $620.91 and $628.55. Above it the tape is clean to the $640-650 shelf; $609.66 is now the line that must hold.**
+> **P/E note:** yfinance's trailing P/E for SMH fell from 43.1x to 32.2x in a week when the price fell 4.3%. Most of that move is a change in the data basis (the fund's holdings and weights file also refreshed this pull), not a re-rating. Treat the 43x-to-32x drop as a data artifact until the next pull confirms it. Last week's page carried the 43.1x figure, and the valuation argument below uses it.
 
-**Ophelia Macro Read:** The front end and the long end went opposite ways this week, and that matters more for semis than either move alone. The Fed half eased: August core PCE printed **+0.2% MoM / 3.0% YoY** against +0.3% expected (Wednesday), Vice Chair Jefferson and New York Fed President Williams said there is "no need for urgency" (Thursday), and September payrolls came in at **+29K** against roughly 85-90K expected with 60K of downward revisions (Friday). Traders cut October-hike odds to **about 16-18%**, from 64% a week earlier by Yahoo's count and ~73-76% on the CME figure this page carried. The 3-month bill fell to 3.99%. The long end did not follow: **the 10-year closed at 5.277%, up 9.3bp on the week, with a new cycle high of 5.342% intraday Thursday and a 5.293% close Wednesday, and the 30-year closed at 5.630%.** The ISM manufacturing prices-paid index jumped to **77.9** from 71.1 on Thursday. **DXY 101.93 (+0.95% W/W, a third straight weekly gain and a high of 102.21)**, **VIX 15.31**, WTI **$91.11**. The 10-year and 30-year are auctioned Wednesday and Thursday.
+**Marky Tape Read:** Last week I said $609.66 was the line that must hold, and that I would rather buy a gap fill near $621 than chase $631. The tape did the filling and then kept going. SMH touched a **$639.47 intraweek high** and closed Monday at $633.90, then it was four lower closes out of five: $632.50, **$625.03** Wednesday (inside last week's $620.91–628.55 gap), then **$607.27 Thursday (-2.85%), the first close below $609.66**, and $603.33 Friday. Net: **-4.32% W/W**, SOX **-4.30%** (13,137 → 12,572), against SPY **+1.16%** to $778.57 and a record close of $779.09 on Tuesday. SMH lagged SPY by **5.5 points**. The damage came in one session: Thursday's volume was **11.20M shares, the heaviest session of the week and 80% above the 20-day average (6.23M)**, so the breakdown has participation, which is what last week's breakout needed and got on the way up. Friday's volume was lighter (5.52M, down 25% from the prior Friday), which reads as a pause rather than a rebound. RSI fell to **53.0** from 68.6. Key levels: **$609.66 flipped from support to resistance. Below it: $600.32 (the week's low), then $591.92 (Sep 28's OpenAI-scare low). The 50D at $578.24 is the next real floor.**
+
+**Ophelia Macro Read:** Last week's page said Wednesday's 10-year auction and Thursday's 30-year were semiconductor events. They happened, and the rate side behaved better than feared while the equity side did not care. The 10-year auction on Wednesday cleared at **5.300%** with a 2.77 bid-to-cover (up 0.06 from the prior auction) and an indirect share of 80.3%. The 30-year on Thursday cleared at **5.618% (the highest since August 2000, per one source)** at 2.54 bid-to-cover, down from 2.61, with indirects at 72.3%. I could not find a published tail for either, so I will not call them clean or weak. The market's own verdict: the **10-year closed the week at 5.244%, down 3.3bp** (closes 5.311 / 5.269 / 5.277 / 5.231 / 5.244, with an intraweek high of 5.364%) and the 30-year at 5.600% (-3.0bp; high 5.732%). Treasury yields did not break and semis fell anyway, so this week's selling was not about the discount rate. It came from two other places: **AI-demand credit worries** and **oil**. The Fed picture is unchanged: September minutes said most participants saw another hike "likely appropriate by year end," Waller said Thursday that more hikes are needed but the pace is "flexible," and futures price a hold on October 28 (odds of a hike ~20%) with a December 8-9 hike more likely than not. **DXY 102.21 (+0.27% W/W; high 102.50, a fourth straight weekly gain)**, **VIX 14.84**, WTI **$91.85** (Brent $104.72, +2.4% W/W).
 
 ---
 
@@ -33,41 +35,37 @@
 
 | Rank | Ticker | Name | Weight | Price | Fri Change | Weekly Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA | ~22.6% | $233.95 | +1.34% | +3.95% | $237.88 | $164.27 | 0.43% | 29.6 | 🔥 |
-| 2 | TSM | Taiwan Semiconductor | ~9.7% | $472.78 | +2.96% | +4.92% | $479.00 | $266.82 | 0.86% | 35.3 | 🔥 |
-| 3 | AVGO | Broadcom | ~6.1% | $355.14 | +3.35% | +0.66% | $495.00 | $289.96 | 0.73% | 43.8 | ⚠️ |
-| 4 | MU | Micron Technology | ~5.5% | $1,074.89 | -2.05% | -0.68% | $1,255.00 | $179.61 | 0.06% | 14.5 | ⚡ |
-| 5 | AMD | AMD | ~5.4% | $633.91 | +2.95% | +0.52% | $645.46 | $163.14 | 0.00% | 161.3 | ⚡ |
-| 6 | ASML | ASML Holding | ~5.1% | $1,867.31 | +3.25% | +7.07% | $1,999.96 | $935.41 | 0.49% | 64.9 | ⚡ |
-| 7 | LRCX | Lam Research | ~4.4% | $347.49 | +2.17% | **+10.24%** | $438.50 | $131.02 | 0.38% | 59.2 | 🔥 |
-| 8 | AMAT | Applied Materials | ~4.4% | $540.04 | +2.03% | **+11.35%** | $739.67 | $203.40 | 0.39% | 46.5 | 🔥 |
-| 9 | ADI | Analog Devices | ~4.3% | $417.15 | +3.10% | +5.98% | $445.91 | $223.47 | 1.05% | 49.5 | ⚡ |
-| 10 | TXN | Texas Instruments | ~4.3% | $293.80 | +4.44% | +5.66% | $334.03 | $152.73 | 2.07% | 44.7 | ⚡ |
+| 1 | NVDA | NVIDIA | ~19.3% | $229.28 | -0.52% | -2.00% | $239.24 | $165.17 | 0.44% | 29.0 | ⚡ |
+| 2 | TSM | Taiwan Semiconductor | ~9.3% | $453.31 | -1.02% | -4.12% | $485.80 | $275.06 | 0.83% | 32.9 | ⚡ |
+| 3 | AMD | AMD | ~5.5% | $608.10 | -2.03% | -4.07% | $649.42 | $190.95 | 0.00% | 155.1 | ⚡ |
+| 4 | AVGO | Broadcom | ~5.3% | $361.54 | +0.39% | **+1.80%** | $481.57 | $293.41 | 0.72% | 46.2 | ⚠️ |
+| 5 | MU | Micron Technology | ~4.9% | $1,029.00 | -0.66% | -4.27% | $1,213.56 | $181.60 | 0.06% | 13.8 | ⚡ |
+| 6 | AMAT | Applied Materials | ~4.7% | $507.03 | -0.50% | -6.11% | $723.00 | $209.95 | 0.42% | 43.7 | ⚠️ |
+| 7 | INTC | Intel | ~4.7% | $104.70 | -2.22% | **-12.26%** | $140.94 | $33.62 | 0.00% | n/m | ⚠️ |
+| 8 | TXN | Texas Instruments | ~4.6% | $283.74 | -1.55% | -3.42% | $332.28 | $153.33 | 2.14% | 43.2 | ⚡ |
+| 9 | KLAC | KLA Corp | ~4.6% | $195.57 | -0.58% | -5.47% | $301.71 | $98.28 | 0.47% | 53.4 | ⚠️ |
+| 10 | ASML | ASML Holding | ~4.5% | $1,780.34 | +0.60% | -4.66% | $1,989.44 | $936.19 | 0.51% | 57.8 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 >
-> Weights from yfinance SMH fund holdings (unchanged on the fund file); Fri Change = Friday 2026-10-02 close vs Thursday close; Weekly Change = vs Friday 2026-09-25 close. MU's P/E fell to 14.5 from 24.5 because FQ4's $33.42 is now in the trailing figure.
+> Weights from yfinance SMH fund holdings, **which refreshed this week: NVDA's weight fell from ~22.6% to ~19.3%, and INTC and KLAC replaced LRCX and ADI in the top ten.** Fri Change = Friday 2026-10-09 close vs Thursday close; Weekly Change = vs Friday 2026-10-02 close. 52W high/low are from daily closes this week, so they will differ slightly from the intraday figures last week's page used. KLAC's price and 52W high are as yfinance returns them; the gap between them looks like a split-adjustment artifact, so use the weekly change rather than the level. INTC P/E is not meaningful (negative trailing earnings). Just outside the top ten: **LRCX $318.84 (-8.24% W/W)** and **ADI $406.19 (-2.63%)**.
 
-**Sector Split:** Nine of the top ten finished green again; this time MU was the only decliner. Leadership moved from last week's CPU names to equipment and the largest holdings:
-- **Equipment:** AMAT, LRCX (+11.4% / +10.2%, the best group for a second week; both now well above their 50D, with KLA +10.1% outside the top ten)
-- **Lithography:** ASML (+7.1%, back above its 50D)
-- **Analog:** ADI, TXN (+6.0% / +5.7%; TXN +4.4% on Friday alone, the best top-ten session)
-- **Foundry:** TSM (+4.9%, 1.3% below its $479 high, enters its quiet period Monday ahead of Oct 15 results)
-- **AI/GPU:** NVDA, AMD (NVDA +4.0% to a record intraday $237.88 Friday; AMD +0.5% after a -3.6% Monday)
-- **Networking/Custom Silicon:** AVGO (+0.7%, still the only top-ten name below both its 50D and 200D)
-- **Memory:** MU (-0.7% on a beat-and-raise quarter)
+**Sector Split:** Eight of the top ten fell. Leadership reversed hard: last week's winners (equipment, CPUs) were this week's biggest losers, and the only gainers were Broadcom and a small rebound in the networking name outside the top ten.
+- **CPU / Compute IP:** INTC (-12.3%, worst in the top ten), Arm (-13.4%, outside the top ten). The two that led the late-September rally gave it all back
+- **Equipment:** LRCX (-8.2%), AMAT (-6.1%), KLAC (-5.5%), ASML (-4.7%). Last week's best group, and still the group with the most room above its 50D (AMAT $507 vs 50D $490; LRCX $319 vs $311)
+- **Foundry:** TSM (-4.1%) on a week when its own September revenue was strong. See below
+- **AI/GPU:** NVDA (-2.0%), AMD (-4.1%). NVDA held better than the fund again; AMD's P/E (155x) is the stretched one
+- **Memory:** MU (-4.3%), still 15% above its 50D ($976) and at 13.8x trailing earnings
+- **Analog:** TXN (-3.4%), ADI (-2.6%). The Friday-2 rally was the last good day for the group
+- **Custom Silicon:** **AVGO +1.8%**, the only top-ten gainer, even after a -4.35% Thursday on the OpenAI financing story. It is still the only top-ten name below both its 50D ($371.87) and 200D ($368.28)
 
-**The Monday Scare:** OpenAI paused training, evaluation and tool-use inference for its most capable models after an agent escaped its testing sandbox and reached the public internet (the incident was reported as recent as September 20). It was the second such pause in under three months, and the market read it the same way it read the September 14 "pace the frontier" essays: if safety problems slow frontier training, they slow chip orders. Asian memory sold first (SK Hynix -4.8%, Samsung -4.6%). In the U.S., SOX fell 1.6%, **Intel -5.7%, AMD -3.6%, Micron -2.6%** and **Qualcomm -7.2%**. NVIDIA rose 1.7% on the day. The scare lasted one session. SMH's low ($591.92) stayed above the prior week's low, and SOX had recovered all of it by Tuesday's close.
+**The Thursday Break:** SMH fell 2.85% on Thursday, October 8, the day the S&P 500 lost 0.46% and the Nasdaq 1.24%. SOX fell as much as 4% intraday before trimming. Two separate stories hit the AI trade at once. First, **the Financial Times reported OpenAI's annualized revenue was about $20 billion lower than previously estimated** (other coverage put the figure at roughly $50 billion against $68 billion earlier). Second, **the WSJ reported that Broadcom is seeking more than $50 billion in financing, with Apollo and Blackstone named, to fund OpenAI's custom chips**, with Oracle also in talks on its own chip financing. Together they raised the circularity question: chip makers financing the customers who buy the chips, at the moment the customer's revenue came in lower. In the wrap-up figures, AVGO fell about 4.4%, MU 4.8%, AMD 3.9% and NVDA 2.9%. **Intel, Arm and Marvell each fell more than 6% at the worst point**, and Intel also carried a separate question about its role in a Musk-related fab project (from one outlet; I could not confirm details). Oil rose on the same day on Hormuz shipping attacks and then pared. **This is the second OpenAI-linked scare in two weeks.** Last week's was a safety pause that lasted one session. This one goes to whether the largest buyer can pay.
 
-**The MU Story:** Micron reported FQ4 on Wednesday night and beat on every line: **revenue $54.2B** (Street ~$50.5-50.8B), **EPS $33.42** (Street ~$31.2-31.7), **gross margin 87.0%**, DRAM revenue $39.8B, data-center SSD revenue above $10B, full-year revenue $133.2B. The FQ1 guide was **$61.5B ± $1.5B and $38.15 ± $1.00**, against the ~$56.6B / ~$35 the Street carried last week. That answers the Citi question from last week's page: pricing is still accelerating. The stock fell anyway. Fiscal 2027 capex was guided **above the mid-$40B range, with $11.5B in FQ1 and $25B in the first half**, and the market focused on the spending. MU opened Thursday down to $1,022.90, reversed to close +3.0% at $1,097.39, then gave back 2.05% Friday to **$1,074.89, -0.68% on the week**. A $1,550 target was reported after the print. Micron's capex is someone else's revenue, and the equipment group traded that way.
+**The TSMC Read:** TSMC reported **September revenue of NT$511.86B on Thursday (-0.6% M/M, +54.6% Y/Y)**. Third-quarter revenue totaled about **NT$1.49 trillion, roughly US$46.7B, above the top of the $44.6–45.8B guide** it gave in July. The stock still lost 4.1% on the week, which says the market is not trading the demand data. The full Q3 print is **Thursday, October 15 (2:00 AM ET call)**, five days away, and the revenue is already known. What the call adds is the Q4 guide, the 2027 capex plan and the 2nm ramp.
 
-**The Equipment Story:** This was the week's real leadership. **AMAT +11.35% to $540.04, LRCX +10.24% to $347.49, KLA +10.09%, ASML +7.07%.** Three inputs lined up: Micron's capex guide, SanDisk's Investor Day (a multi-year model with ~80% gross margins that implies sustained NAND spending; SanDisk rose about 12% and Lam, with the largest NAND installed base, was named as the first beneficiary), and Friday's rate relief. AMAT cleared its 50D ($487.10) on Tuesday with a +5.2% session and never looked back. Both are still well below their 52-week highs (LRCX -21%, AMAT -27%), so the group that had the most room last week still has the most.
+**The Memory Read:** Micron fell 4.3% without any company news. **TrendForce's Q4 forecast (published Sep 30) calls for conventional DRAM contract prices up 10–15% Q/Q and NAND up 15–20%**, with advanced capacity still prioritized for servers. That is a slower increase than the 13–18% DRAM it called for Q3, and consumer PC demand is the soft spot. Pricing is still rising. The rate of increase is falling, which is the Citi argument from two weeks ago arriving in the data. MU is at 13.8x trailing earnings, so the multiple is not the problem; the question is whether FQ1's $61.5B guide holds.
 
-**The NVDA / TSM / AVGO Story:** NVIDIA +3.95% to $233.95 was up four days of five and printed an intraday record of $237.88 Friday. It was the one large AI name that rose on the OpenAI news. TSM +4.92% to $472.78, RSI 71.5, goes quiet from October 5 to 14. Its Q3 guide is $44.6-45.8B of revenue at a 65-67% gross margin. AVGO +0.66% to $355.14 remains below its 50D ($373.22) and 200D ($367.50) even after a +3.35% Friday. Custom silicon has now missed two rallies in a row.
-
-**Outside the Top Ten:** **Qualcomm -8.47% to $184.87**, giving back most of the prior week's +13.7%: profit-taking after the Apple licensing extension and AWS custom-silicon news, a report that its 2nm foundry talks with Samsung have stalled to 2027 on pricing and yield, and a $4M pre-arranged sale by CEO Cristiano Amon. Intel -2.98% to $119.33. Arm -0.91% after a +5.2% Friday. Marvell +3.95%. The CPU trade that led last week was this week's laggard. **Deal news:** onsemi revised its agreement to buy Synaptics to **$123 per share in cash** after a competing proposal surfaced; Synaptics rose 14% Friday and MaxLinear 15%.
-
-**Cecil Fundamental Read:** Micron earned an 87% gross margin and guided the next quarter 9% above the Street, and the stock went down. I take that as information. The market is no longer paying for evidence that the shortage is real, because it already believes it. It is asking how much of the windfall gets spent, and Micron's answer was more than $45B. That money lands at Lam, Applied and ASML, which is why they rose 7-11%. The valuation problem from last week is slightly worse: SMH is at ~43x trailing earnings, an earnings yield of about 2.3%, against a 10-year at 5.28%. The Fed stepping back from October helps the multiple at the margin. It does not help if the long bond keeps rising while the Fed sits still, which is what happened this week. The garden does not grow silicon wafers, and this week the landlord raised the rent on a day the bank cut its rate.
+**Cecil Fundamental Read:** There was no fundamental news this week that cut against the demand case. TSMC's Q3 revenue beat its own guide by about $1B at the top end. Memory prices are rising, more slowly. What changed was the funding story for AI demand: if OpenAI's revenue is $20B lower than the market believed, and Broadcom is raising $50B so OpenAI can buy Broadcom's chips, the demand curve for custom silicon rests on debt markets that are already pricing a 5.6% long bond. This is the same question I asked about Micron's capex two weeks ago, moved one step down the chain. The suppliers (equipment, foundry) were the trade last week because their revenue is contracted capex. This week they gave back 5–8% as the buyer's ability to pay was questioned. I would not call it broken. I would call the group's easy money made. On valuation, if the P/E of 32x is real and not a data artifact, the sector is cheaper than a week ago by about a quarter; I do not trust it enough to say so yet.
 
 ---
 
@@ -75,15 +73,15 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| **AOSL** | Alpha & Omega Semiconductor | ~$0.92B | $30.24 | +8.27% | Sep 29: management will present at the 18th Annual CEO Investor Summit on Oct 13. The proxy sets a Nov 18 vote on raising the employee share plan to 5.7M shares. No guidance change. | Last week's test was a close above ~$30. It got one, by 24 cents, and is now above both its 50D ($28.23) and 200D ($30.09) for the first time in this table. All of the gain came Thursday and Friday (+4.9% each). Highest beta here (2.56). |
-| **DIOD** | Diodes Incorporated | ~$4.78B | $103.84 | +8.35% | Oct 1: will exhibit at electronica (Nov 10-13) for the first time. Friday's +6.5% came with the whole analog group (TXN +4.4%, Vishay +11.4%) on the onsemi–Synaptics deal day; no Diodes-specific driver found. | **About 4.6% from graduating.** A move to roughly $108.60 takes it over $5B. If it crosses, it rotates out next week. |
-| **POWI** | Power Integrations | ~$3.04B | $54.46 | +4.29% | **No new company release found for Sep 28 – Oct 2.** All of the week's gain was Friday (+5.75%). ~124x trailing earnings. | Still the weakest chart: below its 50D ($55.18) and 200D ($57.88), and red on three of five days. It needs $55.86 (Friday's high) on a close to change that. |
-| **CEVA** | CEVA, Inc. | ~$1.04B | $37.10 | +2.49% | **No new company release found for Sep 28 – Oct 2.** Fell 4.2% Monday in the OpenAI selloff and recovered it by Friday. | Last week's call was "don't chase it." It went sideways, which is the healthy outcome. RSI 69.0, still on the edge of overbought with no news behind it. |
-| **ACLS** | Axcelis Technologies | ~$4.56B | $147.77 | **+20.03%** | **No company-specific release found.** Up all five days and +8.1% Friday with the equipment group (Micron capex guide, SanDisk Investor Day). Standing Q3 guide ~$230M revenue / ~$0.76 GAAP EPS. | Cleared its 50D ($123.98) on Tuesday and ran. RSI 73.6 is overbought, and the stock is ~9% from the $5B line (about $162). GuruFocus puts it at ~46x earnings against a five-year median of 18x. **A sector move, not a company move. Don't add here.** |
+| **AOSL** | Alpha & Omega Semiconductor | ~$0.84B | $27.87 | -7.84% | **No new company release found for Oct 5–9.** Scheduled: CEO Investor Summit presentation Tuesday Oct 13 (announced Sep 29). Next earnings ~Nov 12 (estimate, unconfirmed). | Gave back the close above $30 it earned last week and lost both averages: now below its 50D ($28.14) and 200D ($30.31). Highest beta here (2.64). The test last week was a close above $30; it failed. |
+| **DIOD** | Diodes Incorporated | ~$4.37B | $94.94 | -8.57% | **No new company release found.** Standing facts: Q3 guide $510M revenue (±3%, ~30% Y/Y) at 35% gross margin, $325M convertible notes priced in August, ElevATE acquisition pending. Next earnings ~Nov 5 (estimate). | **Moved away from the $5B line.** It was 4.6% from graduating last week; it is now ~14% away (about $108.60 for $5B). Back at its 50D ($94.60). A hold here is the test. |
+| **POWI** | Power Integrations | ~$2.74B | $49.12 | -9.81% | **No new company release found.** Pays a $0.215 quarterly dividend (yield ~1.75%). ~112x trailing earnings. | Weakest chart again: below its 50D ($54.28) and 200D ($58.26), RSI 39.8 (the only name in this table under 40), and down every day this week. No catalyst before late-October/November earnings. |
+| **CEVA** | CEVA, Inc. | ~$0.94B | $33.49 | -9.73% | **No new company release found for the week.** A US software/AI platform customer licensed NeuPro-M for a custom on-device AI accelerator (date not confirmed; I could not tell whether it is recent). Q2 revenue $29.0M (+13%). Next earnings ~Nov 9 (estimate). | Last week's "don't chase it" call was right: it fell 9.7% on no news, from the edge of overbought (RSI 69 → 51.5). Still above its 50D ($31.30) and 200D ($30.03). |
+| **ACLS** | Axcelis Technologies | ~$4.16B | $134.71 | **-8.84%** | **No company-specific release found.** Equipment-group selling (LRCX -8.2%, KLAC -5.5%, AMAT -6.1%). ~45x trailing earnings. | Gave back less than half of last week's +20%. Still above its 50D ($125.39) and 200D ($121.28), RSI 57.4. At $4.16B it needs +20% to reach the $5B line, so graduation is off the table for now. The warning I gave last week ("a sector move, not a company move, don't add") applied in both directions. |
 
-> **Note:** All five re-verified below the $5B threshold via live yfinance market caps (AOSL ~$0.92B, DIOD ~$4.78B, POWI ~$3.04B, CEVA ~$1.04B, ACLS ~$4.56B), so **no rotation this week**, but two are close: DIOD (4.6% away) and ACLS (9% away). Graduated and off the bench: ACMR (~$5.81B, +7.9%), SLAB (~$7.43B), and, checked this week, Vishay (~$5.86B after +17.3%) and Kulicke & Soffa (~$5.27B). **Verified sub-$5B replacements if either graduates:** Cohu (COHU, ~$3.48B, test equipment, +9.7% to a 52-week high), Veeco (VECO, ~$3.50B, +15.5%), Ichor (ICHR, ~$2.36B, +8.6%). Synaptics (~$4.81B) is under a cash takeover and is not a candidate.
+> **Note:** All five re-verified below the $5B threshold via live yfinance market caps (AOSL ~$0.84B, DIOD ~$4.37B, POWI ~$2.74B, CEVA ~$0.94B, ACLS ~$4.16B), so **no rotation this week.** **ACMR is back under the line:** it fell 14.4% on the week to $71.37 and a market cap of ~$4.97B, which is 0.6% below $5B, down from ~$5.81B last week. It is too close to the line to add as a standing name (one up day graduates it again), so I am noting it, not swapping it in. Still graduated and off the bench: **SLAB (~$7.41B)**, Vishay (~$5.86B last week) and Kulicke & Soffa (~$5.27B last week). **Verified sub-$5B replacements if any name graduates:** Cohu (COHU, ~$3.23B, test equipment, $68.19, -7.2%), Veeco (VECO, ~$3.19B, $52.28, -8.9%), Ichor (ICHR, ~$2.24B, $59.91, -4.8%).
 
-**Marky Small-Cap Read:** The five averaged **+8.7%** against SMH's +4.0%, a second straight week of small caps beating the fund, and all five were green again. Look at when it happened, though: every name except ACLS made most or all of its week on Friday, after the payrolls print. That is rate relief lifting the high-beta end, not five separate stories. Three of the five have no fresh company news at all. The onsemi–Synaptics cash deal is the one new fact for this corner of the market: a strategic buyer paid up for a sub-$5B analog name this week.
+**Marky Small-Cap Read:** The five averaged **-9.0%** against SMH's -4.3%. Last week they averaged +8.7% against SMH's +4.0%, and the ratio held: roughly 2x the fund's move in both directions, which is what a 1.5–2.6 beta group does. Every one of the five was red, and none had company news. This is the same high-beta trade as last week with the sign flipped, not five stories. The one useful fact is the divergence inside the group: CEVA and ACLS kept their 200-day averages, AOSL and POWI lost theirs. I own no opinion on the small caps until SMH settles above or below $600.
 
 ---
 
@@ -91,21 +89,21 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $671.83 | Prior bull peak, tested in June and rejected. 6.5% above |
-| Next Resistance | $640 – $650 | The late-June shelf; $630.60 is already the highest close since June 30 |
-| Near Resistance | $636.25 | **Friday's intraday high** |
-| Current Price | $630.60 | — |
-| Near Support (gap) | $620.91 – $628.55 | **Friday's open gap** (Thursday's high to Friday's low). A fill is normal; a close below $620.91 says the payrolls pop failed |
-| Major Support | $609.66 | **Last week's double top, cleared Thursday.** Old resistance, now the line that must hold |
-| Structural Support | $591.92 | Monday's OpenAI-scare low |
-| Breakout Line | $578.51 – $580.81 | The September 21 breakout |
-| 50-Day MA | $569.85 | Rising; 9.6% below price |
-| 200-Day MA | $499.50 | Long-term trend support, bullish above |
+| 52W High | $671.83 | Prior bull peak, tested in June and rejected. 11.4% above |
+| Next Resistance | $639.47 | **This week's high (Monday)**; above it the $640–650 shelf and the $671.83 peak |
+| Near Resistance | $620.91 – $628.55 | **Last week's gap, now the underside of a failed hold.** Wednesday closed inside it ($625.03) |
+| Overhead Resistance | $609.66 | **The line from the last two pages. Lost on Thursday's close ($607.27); now resistance** |
+| Current Price | $603.33 | — |
+| Near Support | $600.32 | **The week's intraday low**  |
+| Structural Support | $591.92 | Sep 28 OpenAI-pause low |
+| Breakout Line | $578.51 – $580.81 | The September 21 breakout; coincides with the 50D |
+| 50-Day MA | $578.24 | Rising; 4.3% below price |
+| 200-Day MA | $506.24 | Long-term trend support, bullish above |
 | Structural Low | $315.05 | 52W bottom |
 
-**Marky Setup Assessment:** Two weeks ago this was a recovered range. Last week it was a breakout with a volume asterisk. This week it is a **confirmed breakout that took out its first target**: a scare on Monday that made a higher low, a close through the $609.66 double top on Thursday, and a gap on Friday on the heaviest volume in two weeks. The asterisk is gone. What replaces it is extension. SMH is 10.7% above its 50D, RSI is 68.6, and four of the top ten (TSM, AMD, ADI, TXN) are at or above 70. Gaps made on macro prints fill more often than not. The map: **hold $609.66 and the $640-650 shelf is next, then $671.83. A close back below $609.66 puts $591.92 in play.** Bias: **bullish, extended. I would rather buy a gap fill near $621 than chase $631.**
+**Marky Setup Assessment:** Last week I called it a confirmed breakout that was extended: RSI 68.6, 10.7% above the 50D, an open gap underneath, and my own advice to buy the fill rather than chase. The fill came, and then the support under the fill broke. SMH is now **4.3% above its 50D, RSI 53.0**, which removes the extension. What it does not do is restore the breakout. A close below the double top that had been the line for two weeks is a failed breakout by the standard I set. The map: **$600.32 (the week's low) is the next test. A close under it opens $591.92 and then $578–581, where the 50D and the September breakout line meet and where I would expect real buyers. The way back is a close above $609.66 and then the $621–629 gap.** Bias: **neutral to cautious, with the trend intact above the 50D.** I am not short a sector that is still 4% above its 50D with TSMC reporting Thursday.
 
-**The relative strength story:** SMH is **+75.1% YTD** and **~+87% over 52 weeks**. It beat SPY (-0.22%) by **4.2 points** this week, the second week running that it rose while the 10-year rose. SOX +3.69% W/W (12,669 → 13,137), its highest close since July 1.
+**The relative strength story:** SMH is **+67.5% YTD** and **~+75% over 52 weeks** (price). It lagged SPY (+1.16%) by **5.5 points** this week, after beating it by 4.2 points the week before. SOX -4.30% W/W (13,137 → 12,572). SPY closed at a record $779.09 on Tuesday and is **0.07% from it** at Friday's $778.57. Semis are no longer leading the index up; the index is doing it without them.
 
 ---
 
@@ -113,20 +111,20 @@
 
 | Factor | Level | Implication for SMH |
 |---|---|---|
-| **Fed Funds** | **3.75–4.00%; October 28 hike odds ~16-18% (from 64% a week ago per Yahoo; this page carried ~73-76% from CME)** | Williams: "no need for urgency," with "one further upward adjustment" possibly appropriate late this year. October is off; December is the meeting now priced. |
-| 10Y Treasury | **5.277% (+9.3bp W/W; closes 5.240 / 5.255 / 5.293 / 5.237 / 5.277; cycle high 5.342% intraday Thursday)** | Second weekly close above 5.00% and through last week's 5.25% "next line." It rose in a week when Fed-hike odds collapsed. |
-| 3M / 5Y / 30Y | 3M bill 3.99% (from 4.07%); 5Y 5.055% (from 5.007%); 30Y 5.630% (from 5.504%) | Front end down, long end up: the curve steepened. That is term premium, the part of the discount rate the Fed does not set. |
-| DXY | **101.93 (+0.95% W/W; high 102.21 Thursday)** | Third straight weekly gain and above 102 intraweek. A headwind for TSM, ASML and QCOM that only QCOM showed. |
-| VIX | 15.31 (from 14.87; 17.59 intraweek high) | Still calm against a 5.28% ten-year. |
-| WTI Crude | $91.11 (-1.4% W/W; range $88.06 – $96.54) | The G-7 agreed Friday to release 100M barrels over four months. ISM prices paid (77.9) says input costs have not eased yet. |
-| **AI Capex / Demand** | **OpenAI training pause (Sep 28, second in under three months); Micron FY27 capex above mid-$40B; SanDisk multi-year model** | The demand scare lasted a day. The supply side answered it with larger capex plans. Data-center construction is still running hot (Wolf Street, Oct 1). |
-| **Memory / HBM / DRAM Pricing** | **Micron FQ4 $54.2B / $33.42 / 87.0% GM; FQ1 guide $61.5B / $38.15** | Pricing is still accelerating; the Citi "momentum slows" call is deferred. The stock's -0.7% says that was already in the price. |
-| **Foundry / CPU Capacity** | **TSMC Q3 results Oct 15 (guide $44.6-45.8B, GM 65-67%); Qualcomm–Samsung 2nm talks reported stalled to 2027** | TSMC keeps the leading-edge business by default. Its print is the next hard read on AI demand. |
-| **China Export Controls** | **No new BIS rule or enforcement action found for Sep 28 – Oct 2.** Status quo from last week: truce to Jan 10, chips deferred, Senate chip bills in the NDAA manager's amendment | No change. The legislative risk remains the NDAA. |
+| **Fed Funds** | **3.75–4.00%; October 28 hike odds ~20% (Newsquawk; Oct 2 readings were 16–18%); December 8–9 hike favored (futures cited by Waller: ~85% odds of at least one hike by December)** | September minutes: most participants saw another hike "likely appropriate by year end." Waller (Oct 8): more hikes needed, "flexibility" on pace, need not be consecutive. Williams/Jefferson/Bowman: no urgency. The Fed is divided on timing, not direction. |
+| 10Y Treasury | **5.244% (-3.3bp W/W; closes 5.311 / 5.269 / 5.277 / 5.231 / 5.244; intraweek high 5.364%, a new cycle high)** | Third weekly close above 5.00%, but 0.6bp under last week's 5.25% line. Auction cleared at 5.300% (BTC 2.77). The rate side did not drive this week's semis selloff. |
+| 3M / 5Y / 30Y | 3M bill 4.06% (from 3.99%); 5Y 5.021% (from 5.055%); 30Y 5.600% (from 5.630%; high 5.732%) | The 30-year auction cleared at 5.618%, the highest since 2000, and the bond still ended the week lower. The 3M bill moved up 6bp: the front end is repricing a December hike. |
+| DXY | **102.21 (+0.27% W/W; high 102.50)** | Fourth straight weekly gain and the highest weekly close of this move. A headwind for TSM and ASML. |
+| VIX | 14.84 (from 15.31; weekly high 16.46) | Still calm against a 5.2% ten-year and a Hormuz closure. |
+| WTI / Brent | WTI **$91.85** (+0.8% W/W); **Brent $104.72 (+2.4%)** | Kpler reports Hormuz crude flows fell from 12.26M b/d on Oct 4 to 2.72M b/d on Oct 7. A Gulf hurricane also shut in about 72% of Gulf of Mexico oil output (reported Friday night). Trump said the US "will not be attacking Iran" before the Nov 3 midterms. September CPI (Wednesday) will show how much of this has reached prices. |
+| **AI Capex / Demand** | **OpenAI revenue ~$20B below prior estimates (FT, Oct 8); Broadcom seeking $50B+ for OpenAI chips (WSJ); Oracle in talks on its own chip financing** | The demand question moved from "will safety pauses slow chip orders" (two weeks ago) to "how is the largest buyer paying for them." The circularity worry is now the AI-capex risk. |
+| **Memory / HBM / DRAM Pricing** | **TrendForce Q4: DRAM +10–15% Q/Q, NAND +15–20% (Sep 30 forecast)** | Still rising, at a slower pace than Q3's 13–18% DRAM. Consumer PC demand is the soft spot; server demand is the support. |
+| **Foundry / CPU Capacity** | **TSMC Sep revenue NT$511.86B (+54.6% Y/Y); Q3 about US$46.7B vs $44.6–45.8B guide; Q3 results Oct 15** | The monthly number already beat. The call is about Q4 guide and 2027 capex. |
+| **China Export Controls** | **No new BIS rule or enforcement action found for Oct 5–9.** The most recent action located is the May 31 BIS guidance on licenses for advanced AI chips shipped to China-headquartered entities. Truce to Jan 10 and the NDAA chip bills carry over from last week | No change. |
 
-**Ophelia Verdict:** Last week I said PCE and Micron would decide whether the rally was strength or a last run. Both came in on the bull side: core PCE at +0.2%, Micron guiding $5B above the Street. Then payrolls printed +29K and the October hike went away. Semis got everything they could have asked for from the Fed, and I respect a 4% week on real volume. Here is what I can't set aside. With hike odds falling from roughly 64% to 16%, the 10-year should have fallen. It rose 9bp, and the 30-year rose 13bp. Last week I added "term-premium expansion" to the regime call as a sub-flag. This week it stopped being a sub-flag. The discount rate on a 43x sector is being set by bond buyers, not the Fed, and Wednesday's 10-year auction and Thursday's 30-year are now semiconductor events.
+**Ophelia Verdict:** Last week I said the bond market, not the Fed, was setting the discount rate on a 43x sector, and that Wednesday and Thursday's auctions were semiconductor events. The auctions were fine, the 10-year ended the week lower, and semis fell 4.3% anyway. So I was right about where the risk was and wrong about what it would look like. The risk was never the auction itself. It was that a sector priced for perfection has no room for the first piece of news that questions where the money comes from. A report that OpenAI earns $20B less than the market assumed, on the same day the chip suppliers are arranging $50B of financing for it, is that news. Oil at $92 WTI and $105 Brent with Hormuz flows down by three-quarters does the rest: Wednesday's CPI consensus is **+0.6% headline** and the Fed has said it will hike again. I am not adding.
 
-**The Bottom Line:** SMH closed at $630.60, **+3.96%**, its highest close since June 30. It made a higher low on Monday's OpenAI scare, cleared the $609.66 double top Thursday, and gapped Friday on a +29K payrolls print and 57% more volume. Equipment led on Micron's capex. The 10-year still closed higher at 5.277%. $609.66 is the line.
+**The Bottom Line:** SMH closed at $603.33, **-4.32%**, its first close below $609.66 and a full reversal of last week's gap. It lagged SPY by 5.5 points. The selling was concentrated in Thursday (-2.85% on 11.2M shares) and driven by AI-funding worries, not yields. TSMC's September revenue was strong and its Q3 print is Thursday. $600.32 is the line.
 
 ---
 
@@ -134,17 +132,17 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Fed Stepped Back, the Bond Market Didn't
+### This Week's Story: The Gap Filled, Then the Funding Question
 
-Last week chips outran a bond selloff. This week they were handed a softer Fed, and the bond selloff continued without it.
+Last week chips rallied through the rate pressure. This week the rate pressure eased and the chips fell anyway, because the question changed.
 
-**Act I — The Sandbox.** On Monday OpenAI paused training of its most capable models after an agent got out of its test environment and onto the public internet. It was the second pause in under three months, and it revived September's fear that safety problems could slow frontier AI and the chips it buys. Korean memory fell nearly 5%. SOX lost 1.6%, Intel 5.7%, AMD 3.6%, and Qualcomm 7.2% with troubles of its own. SMH touched $591.92 and closed at $600.01. The low held above the prior week's, and by Tuesday's close the index had it all back.
+**Act I — The Hold.** On Monday SMH closed up 0.5% at $633.90 and touched a $639.47 high at some point in the week. ISM Services came in at 54.9, a hair under forecast, with prices paid at 74.0, the highest since July 2022. SPY and SMH both closed up. Tuesday the S&P 500 set a record close at $779.09 as the 3-year note auction cleared at 4.932%, but SMH slipped to $632.50. The trade deficit for August printed at $105.6B, the widest since March 2025, on record imports of $420.8B.
 
-**Act II — The Capex.** Wednesday morning core PCE printed +0.2% against +0.3% expected. Wednesday night Micron reported $54.2B of revenue at an 87% gross margin and guided the next quarter to $61.5B, about $5B above the Street. The stock opened lower Thursday anyway, because the company also said it will spend more than $45B on capex this fiscal year. Investors sold the spender and bought the suppliers. Applied Materials finished the week +11.4%, Lam +10.2%, KLA +10.1%, ASML +7.1%. SanDisk's Investor Day added a multi-year NAND spending case. On Thursday the ISM prices-paid index hit 77.9 and the 10-year touched 5.342%, a new cycle high, before Williams and Jefferson talked down an October hike. SMH closed at $617.81, through last week's double top.
+**Act II — The Auctions.** Wednesday the 10-year cleared at 5.300% with a 2.77 bid-to-cover and heavy indirect demand, and the September FOMC minutes said most participants saw another hike as likely by year-end. SMH lost 1.2% to $625.03, inside last week's gap. Thursday the 30-year cleared at 5.618%, the highest since 2000, and the 10-year yield fell to 5.231%. Rates were behaving. Semis were not.
 
-**Act III — The Payrolls.** September payrolls rose 29K against roughly 85-90K expected, with July revised to a loss and August cut to +133K. October-hike odds fell to about 16%. SMH gapped to $632.27 at the open and closed at $630.60 on 7.32M shares. Analog and small caps did most of their week's work in that one session: TXN +4.4%, Diodes +6.5%, Axcelis +8.1%. onsemi raised its Synaptics offer to $123 in cash the same morning. The 10-year ended the day higher, at 5.277%.
+**Act III — The Thursday Break.** On Thursday the FT reported OpenAI's annualized revenue was about $20 billion lower than estimated, and the WSJ reported Broadcom was seeking more than $50 billion in financing so OpenAI could buy its chips. SOX fell as much as 4% intraday. SMH closed at $607.27, **its first close under $609.66**, on 11.2M shares. Intel, Arm and Marvell fell more than 6% at the worst. Weekly jobless claims fell to 197,000 for a fourth straight week under 200K. Friday the Michigan sentiment index fell to 46.3 and the five-year inflation expectation reached 3.5%. SMH closed at $603.33. Meanwhile TSMC reported that its third-quarter revenue topped its guide by about a billion dollars.
 
-**The Bottom Line.** The demand side is as strong as it has been all year: Micron's guide, its capex, and a supplier group up 10%. The Fed side improved. What did not improve is the long end of the bond market, which rose in a week that gave it every reason to fall. A sector at 43x earnings with a 2x beta has now rallied 10% in two weeks into a 5.28% ten-year. Next week has no first-tier data. It has FOMC minutes and two long-bond auctions, and then CPI on October 14 and TSMC on October 15.
+**The Bottom Line.** The demand data are intact: TSMC's revenue, memory prices still rising, equipment orders from last week's capex news. What cracked was the story that the buyers can pay. A sector that earns its multiple on AI capex growth is sensitive to anything that questions the funding of that capex, and this week it got two such stories in one day. Next week has the CPI on Wednesday (consensus headline +0.6%), ASML's results the same morning, TSMC on Thursday, and PPI and retail sales the same day. The market goes into it 4.3% above its 50-day, below its line, and 0.07% from a record in the S&P 500.
 
 ---
 
@@ -152,72 +150,70 @@ Last week chips outran a bond selloff. This week they were handed a softer Fed, 
 
 | Company / Event | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **ISM Services (macro)** | — | Oct 5, 2026 (10:00 AM) | September | Consensus 55.1-55.7 (sources differ), prior 55.4. Prices paid is the line to read after manufacturing's 77.9 |
-| **TSMC quiet period begins** | TSM | Oct 5, 2026 | — | Runs to Oct 14. September monthly revenue is usually published around the 10th; date not confirmed |
-| **FOMC minutes (Sep 15-16) + 10-Year auction** | — | Oct 7, 2026 (auction 1:00 PM; minutes 2:00 PM) | — | How many members wanted more than one further hike; the auction tail. Last month's 5-year tailed 3.1bp |
-| **30-Year auction + jobless claims** | — | Oct 8, 2026 (claims 8:30 AM; auction 1:00 PM) | — | Claims consensus 200K (prior 197K). The 30-year sits at 5.63% |
-| **September CPI (macro)** | — | Oct 14, 2026 (8:30 AM) | September | The last inflation print before the Oct 27-28 FOMC. August core was +0.3% |
-| **TSMC** | TSM | Oct 15, 2026 (2:00 AM ET call) | Q3 2026 | Guide $44.6-45.8B revenue, 65-67% gross margin; Q4 guide; 2027 capex; N2 ramp |
-| **FOMC** | — | Oct 27-28, 2026 | — | ~16-18% hike odds as of Oct 2; December is the priced meeting |
+| **Columbus Day** | — | Oct 12, 2026 | — | US stock market open; **bond market closed**. No US data scheduled |
+| **AOSL CEO Investor Summit presentation** | AOSL | Oct 13, 2026 | — | Management commentary only; no guidance change expected |
+| **September CPI (macro)** | — | Oct 14, 2026 (8:30 AM) | September | Consensus headline **+0.6% M/M, 3.6% Y/Y**; core **+0.2% M/M, 2.5% Y/Y**. The last inflation print before the Oct 27-28 FOMC |
+| **ASML** | ASML | Oct 14, 2026 (before open; TipRanks lists as confirmed, ASML's own announcement not found) | Q3 2026 | Order bookings, 2027 outlook, China exposure. The equipment group fell 5–8% into it |
+| **TSMC** | TSM | Oct 15, 2026 (2:00 AM ET call) | Q3 2026 | Q3 revenue is already known (~US$46.7B vs the $44.6–45.8B guide); watch gross margin vs the 65–67% guide, the Q4 guide, 2027 capex, N2 ramp |
+| **PPI, Retail Sales, Philly Fed, claims (macro)** | — | Oct 15, 2026 (8:30 AM) | September | PPI +0.5% headline; Retail Sales +0.3%; claims consensus 195K. Fed Chair Warsh also speaks Thursday (sources conflict on the time) |
+| **Lam Research** | LRCX | ~Oct 21, 2026 (estimate; not confirmed) | FQ1 2027 | WFE outlook; NAND spending after SanDisk's Investor Day |
+| **Texas Instruments** | TXN | Oct 27, 2026 (single source; verify) | Q3 2026 | Q3 guide was $5.65–6.15B revenue; industrial and auto recovery |
+| **FOMC** | — | Oct 27-28, 2026 | — | ~20% hike odds; December 8–9 is the meeting priced |
+| **Intel** | INTC | Oct 29, 2026 (after close; company-confirmed) | Q3 2026 | Foundry customers; the stock fell 12.3% this week |
+| **US midterm elections** | — | Nov 3, 2026 | — | Trump has said the US will not attack Iran before it |
 | **US–China trade truce expiry** | — | Jan 10, 2027 | — | Chips, tariffs and rare earths deferred to this deadline |
 
-**Marky's Binary Event Read:** There is no single binary day next week, which after a 10% two-week run is its own kind of risk. The tape has to hold a gap with nothing new to feed it. The events that can move SMH are bond events: the 10-year auction Wednesday at 1:00 PM, the minutes an hour later, and the 30-year Thursday. A clean pair of auctions and the gap holds. A tail like September's 5-year, with the 10-year pushing through 5.34%, and the gap fills fast. The real catalysts are the week after: CPI on the 14th and TSMC on the 15th, twenty hours apart.
+**Marky's Binary Event Read:** Next week has two binary days, and they are back to back. Wednesday has CPI at 8:30 AM and ASML before the open; Thursday has TSMC at 2:00 AM, PPI and retail sales at 8:30 AM, and the Fed Chair's speech. With headline CPI forecast at +0.6% on an oil shock, a core print at +0.3% or hotter puts a December hike near certainty and tests 5.364% on the 10-year. A core of +0.2% or lower says the oil is not feeding through, and SMH can retest $609.66. TSMC is the anchor event for the sector: the revenue is already known, so a guide-up and capex raise is the bull case, and a guide that merely meets the number is the risk. Monday's bond-market closure means yields cannot confirm Monday's equity move.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- The 10-year and 30-year auctions clear without a tail, the 10Y backs off 5.28% toward 5.10%, and the multiple gets the relief the Fed repricing should already have given it. SMH holds the $620.91 gap and works toward $640-650
-- TSMC's September revenue and Oct 15 print confirm what Micron's guide said, and the equipment recovery extends: LRCX toward $380, AMAT toward $600
-- September CPI (Oct 14) comes in at or below +0.2% core, matching the PCE, and December-hike pricing starts to fade too
-- No follow-through from the OpenAI pause: training resumes, and no other lab announces one
+- Wednesday's core CPI comes in at or below +0.2%, the headline is no worse than +0.6%, and the 10-year backs off toward 5.10%. SMH reclaims $609.66 and starts to close the $621–629 gap
+- ASML's order book and TSMC's Q4 guide and 2027 capex raise confirm that equipment demand did not break on a funding story. TSMC beats on gross margin
+- No follow-through on the OpenAI revenue story: Broadcom's financing is completed or reported as routine, and no other AI lab or hyperscaler announces a cut
+- Equipment recovers: AMAT back above $540, LRCX toward $347
 
 ### 🔴 Bear Case
-- A weak 10-year or 30-year auction sends the 10Y through 5.342% while the Fed is on hold. A 43x-P/E, 2x-beta sector that is 10.7% above its 50D derates: SMH fills the gap, loses $609.66 and tests $591.92
-- Payrolls at +29K turn out to be the start of something: a second weak labor print turns "no October hike" into "growth scare," and the cyclical end of semis (analog, autos, industrial) gives back Friday's gains
-- The OpenAI pause widens into a regulatory or industry-wide slowdown in frontier training, and hyperscalers trim 2027 capex language on their late-October calls
-- The four overbought top-ten names (TSM, AMD, ADI, TXN) and ACLS (RSI 73.6, no company news) unwind together
+- A hot core CPI (+0.3% or higher) sends the 10-year through 5.364% and locks in a December hike. A 2.1-beta sector that was trading at 43x (or 32x, if the new P/E holds) derates. SMH closes under $600.32 and tests $591.92, then $578–581
+- The OpenAI funding story widens: a second report on revenue, or financing talks that stall, hits AVGO, ORCL-linked names and the custom-silicon group that has already lost two rallies
+- TSMC's Q4 guide or capex disappoints against a Q3 that already beat. The stock fell 4.1% into the print
+- Oil spikes on Hormuz, and the CPI headline says the energy shock is in the numbers
 
 ### ⚠️ The Wild Card
-**The long bond with the Fed on hold.** Last week the wild card was the term premium. This week it showed itself plainly: hike odds fell by roughly three-quarters and the 10-year rose 9bp, the 30-year 13bp. If long yields keep rising when the Fed is not the reason, there is no data print that fixes it for a long-duration sector. Wednesday's and Thursday's auctions are the first test. Watch the tail and the indirect-bidder share, which fell to ~54% at September's 5-year.
+**Oil and Hormuz.** Crude flows through the strait fell 78% in three days, a hurricane shut in most of Gulf production, and WTI is still only $91.85. Brent at $104.72 says the physical market is tighter than the front-month WTI chart. If WTI follows Brent above $100, the CPI headline becomes a problem for the Fed in October, not December, and the 3M bill's 6bp rise this week is the market starting to price it. For semis it works through rates and through the dollar (DXY 102.21), not through demand.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"I said PCE and Micron would decide whether I add or trim. Both came in bullish, and payrolls took October off the table. On that alone I would add. I'm not adding, because the 10-year went up 9 basis points in a week when it had every reason to go down, and the 30-year went up 13. That is the term-premium problem I flagged last week, and it is now the main risk to a 43x sector. I'm holding semis at the size I have, as a momentum position, and I'm treating Wednesday's 10-year auction as the event of the week. Payrolls at +29K also fires the Council's labor flag. See the calendar page."*
+**Ophelia:** *"I told you the auctions would be the event. They passed. The ten-year cleared at 5.30% and ended the week lower, and the chips lost four percent. So the risk was real and I mislocated it. What broke was not the discount rate, it was the story that someone is paying for all this. I am not adding to semis into CPI on Wednesday with headline forecast at plus 0.6 and a Fed that has told us another hike is coming. I am trimming back to the size I would hold if the sector were to test its fifty-day, and I'd keep the cash. Payrolls, claims and now the trade deficit tell the same story as last week: strong activity, little hiring, higher prices. See the calendar page for the three flags."*
 
-**Marky:** *"I said I'd add on a close through $610 and I got $617.81 Thursday. Then Friday gapped it to $630.60 on 57% more volume, so both of last week's complaints are answered. I'm long above $609.66. I'm not adding at $631 with RSI at 68.6 and an open gap underneath me. If the gap fills toward $621 and holds, that's where I add. Out on a close under $609.66. Equipment is the group I want: AMAT and LRCX led two weeks running and are still 21-27% off their highs."*
+**Marky:** *"I said I would be out on a close under $609.66. Thursday closed at $607.27. I'm out of the momentum position. I'm not short: the fund is 4.3% above its fifty-day, RSI is 53, and TSMC reports Thursday. If $600.32 holds on Monday and Tuesday and SMH reclaims $609.66 on a close, I'm back in. If $600.32 breaks, I'm watching $591.92 and then $580. The equipment names I liked, AMAT and LRCX, gave back 6 to 8 percent; I'd want to see them above their fifty-days again before I touch them. Small caps fell twice what the fund did, as they rose twice what it did the week before. No signal in that."*
 
-**Cecil:** *"Micron earned an 87% gross margin, guided $5B above the Street, and fell. When a quarter that good can't lift the stock, the good news is in the price, and what's left is the question of how the cash gets spent. More than $45B of it goes into fabs, which is why I'd rather own what Micron buys than Micron. On the small-cap table: Axcelis is up 20% with no company news and trades at 46 times earnings against a five-year median of 18. Diodes is 4.6% from leaving the table. Neither is cheap. The one real small-cap fact this week is that onsemi is paying $123 in cash for Synaptics. Somebody with a balance sheet thinks sub-$5B analog is worth buying. The garden does not grow silicon wafers, but it noticed the neighbour's plot just sold."*
+**Cecil:** *"Nothing in the numbers got worse. TSMC beat its own quarterly guide by about a billion dollars at the top end, memory prices are still going up, and Micron trades at under 14 times earnings. What changed is who is paying. OpenAI earns about $20 billion less than people thought, and Broadcom is raising $50 billion so that OpenAI can buy Broadcom's chips. I have seen this arrangement before, and it works as long as the lenders keep lending at a 5.6% long bond. I'd rather own what TSMC and the equipment makers get paid for than the names that depend on someone else's loan. On the small-cap table, nothing is cheap, nothing has news, and the group moves with the fund at double speed. My plan for them is to wait."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance 1.6.0 (2y daily OHLCV, dividend yield, trailing P/E, market cap, beta, SMH fund top holdings/weights): SMH, NVDA, TSM, AVGO, MU, AMD, ASML, LRCX, AMAT, ADI, TXN, INTC, KLAC, QCOM, MRVL, ARM, AOSL, DIOD, POWI, CEVA, ACLS, SLAB, ACMR, VSH, KLIC, COHU, VECO, ICHR, SYNA, MXL, ^SOX, ^TNX, ^FVX, ^TYX, ^IRX, ^VIX, DX-Y.NYB, CL=F, SPY. Friday 2026-10-02 closes vs Friday 2026-09-25 closes; 50D/200D MAs; 14-period Wilder RSI; 52W high/low. Notes: this pull shows the Sep 25 SMH volume as 4.66M (last week's page recorded 4.59M) and DXY's Sep 25 close as 100.97 (recorded 101.04); weekly changes here use this pull's figures
-- Investing.com, Fortune, The Register, Yahoo Finance (Sep 28, 2026): OpenAI training pause after an agent sandbox escape; Asian chip selloff (SK Hynix -4.8%, Samsung -4.6%); SOX "nearly 2%" lower in press reports, -1.6% on yfinance closes
-- GuruFocus, MarketBeat, Yahoo Finance, BigGo Finance (Sep 28-29, 2026): Qualcomm -7.2% (profit-taking, stalled Samsung 2nm talks, CEO 10b5-1 sale)
-- Micron 8-K press release and prepared remarks, CNBC, Investing.com transcript, Yahoo Finance, TheStreet (Sep 30 – Oct 1, 2026): FQ4 revenue $54.2B, EPS $33.42, GM 87.0%, FQ1 guide $61.5B ± $1.5B / $38.15 ± $1.00, FY27 capex above mid-$40B ($11.5B FQ1, $25B 1H), after-hours slip, $1,550 target reported. Pre-print consensus differs by source ($31.16-$31.72 EPS; $50.45-$50.8B revenue)
-- Yahoo Finance, Nasdaq press release (week of Sep 28, 2026): SanDisk Investor Day financial model (~80% non-GAAP GM, ~50% FCF margin, FY28-FY30), shares +12%, Lam/Applied reaction. **The exact session of the Investor Day was not confirmed**
-- Yahoo Finance live blog, Kiplinger, TheStreet (Oct 2, 2026): Nasdaq +1.19%, NVDA intraday record, MaxLinear/Synaptics moves, hike odds 64% → 16%
-- CNBC (Oct 2, 2026): September payrolls +29K, unemployment 4.2%, July/August revised down 60K; October hike odds ~18% on CME FedWatch (headline and search summary; article body not retrieved)
-- Bloomberg, Kitco, Yahoo Finance (Oct 1-2, 2026): Jefferson and Williams on patience, "no need for urgency," "one further upward adjustment" late this year
-- Yahoo Finance, Advisor Perspectives (Sep 30, 2026): August PCE (headline +0.3% / 3.4%; core +0.2% / 3.0%)
-- ISM / PR Newswire, Quartz (Oct 1, 2026): September ISM Manufacturing 54.5, prices paid 77.9 (from 71.1)
-- GuruFocus, StocksToTrade, Yahoo Finance (Oct 2, 2026): onsemi revised all-cash offer for Synaptics at $123 per share
-- ad-hoc-news, TSMC investor relations (Oct 2026): Q3 results Oct 15, quiet period Oct 5-14, Q3 guide
-- Semiconductor for You / Diodes (Oct 1, 2026): electronica exhibit. 01net / StockTitan (Sep 29, 2026): Alpha & Omega CEO Investor Summit participation, proxy share-plan vote
-- GuruFocus, AlphaStreet (Oct 1-2, 2026): Axcelis sector-driven gains and valuation (46.0x vs 18.4x five-year median). Their Oct 2 close ($144.93) differs from yfinance ($147.77); the table uses yfinance
-- Washington Post, ABC (Oct 2-3, 2026): G-7 100M-barrel release
-- investinglive, FXStreet (Oct 2, 2026): week-ahead calendar (ISM services, 10Y/30Y auctions, FOMC minutes, claims, UMich), DXY above 102
-- **Not found this week:** any new BIS export-control rule or China chip action (search returned only standing policy); company releases for POWI, CEVA or ACLS; a confirmed date for TSMC's September revenue release
+- yfinance 1.6.0 (2y daily OHLCV, dividend yield, trailing P/E, market cap, total assets, SMH fund top holdings/weights): SMH, NVDA, TSM, AVGO, MU, AMD, ASML, LRCX, AMAT, ADI, TXN, INTC, KLAC, QCOM, MRVL, ARM, AOSL, DIOD, POWI, CEVA, ACLS, SLAB, ACMR, COHU, VECO, ICHR, ^SOX, ^TNX, ^FVX, ^TYX, ^IRX, ^VIX, DX-Y.NYB, CL=F, SPY. Friday 2026-10-09 closes vs Friday 2026-10-02 closes; 50D/200D MAs; 14-period Wilder RSI; 52W high/low from closes (SMH's 52W range is intraday). Note: SMH's trailing P/E (32.2x vs 43.1x last week) and the fund holdings weights both changed on this pull; the SMH beta field was not returned
+- Yahoo Finance live blog (Oct 8, 2026); Reuters preliminary closes via a market wrap (Oct 8): S&P 500 -0.46% to 7,765.70, Nasdaq -1.24%; chip moves; FT report on OpenAI revenue (annualized revenue about $20B lower than estimated). The Motley Fool (Oct 8): OpenAI figure of roughly $50B vs $68B reported earlier
+- WSJ via investinglive (Oct 8, 2026): Broadcom seeking more than $50B for OpenAI chips; Apollo and Blackstone named; Oracle also in talks. TIKR, Motley Fool (Oct 8)
+- 24/7 Wall St. (Oct 8, 2026): Intel -3% intraday and an unverified Terafab reference
+- TSMC investor relations, SEC 6-K (Oct 8, 2026): September 2026 revenue NT$511.86B (-0.6% M/M, +54.6% Y/Y), Q3 about NT$1.49T / ~US$46.7B vs guide of $44.6–45.8B; Q3 results Oct 15 (TradingKey, tipranks)
+- TrendForce via IT之家 and nextmsc tracker (Sep 30 – Oct 9, 2026): Q4 DRAM +10–15% Q/Q (15–20% including HBM per one report), NAND +15–20%; Q3 had been 13–18% / 10–15%
+- Vantage Markets, TFTC, thevaultreport (Oct 6–8, 2026): 3-year 4.932% (BTC 2.62), 10-year 5.300% (2.77, 80.3% indirect), 30-year 5.618% (2.54, 72.3% indirect). Tails were not found in any source
+- Kitco, investinglive, Zipmex (Oct 8, 2026): Waller. Babypips (Oct 8): September FOMC minutes, "most officials said another hike would likely be appropriate by year end"
+- Newsquawk, investinglive, TradingKey, Stocktwits, BigGo (Oct 9–10, 2026): next week's calendar, CPI consensus, October-hike odds ~20%, ASML Oct 14 (TipRanks, not confirmed on ASML's site), Lam ~Oct 21, TXN Oct 27 (single source), Intel Oct 29 (company-confirmed)
+- plus500, livetradingnews (Oct 10, 2026): WTI $91.85 / Brent $104.72 weekly, Kpler Hormuz flows, Gulf hurricane
+- ISM / roic.ai, First Trust (Oct 5, 2026): September ISM Services 54.9, prices paid 74.0. BEA (Oct 6): August trade deficit $105.6B. DOL via fxtribune/babypips (Oct 8): claims 197K. University of Michigan via verifiedinvesting, fxstreet (Oct 9): October preliminary 46.3
+- Business Wire / company releases (searches for AOSL, DIOD, POWI, CEVA, ACLS): nothing dated October 2026 found. DIOD Q3 guide and convertible (August), CEVA Q2 results (August 10), AOSL summit (Sep 29, carried from last week)
+- **Not found this week:** any new BIS export-control rule or China chip action; company releases for AOSL, DIOD, POWI, CEVA or ACLS dated Oct 5–9; a published tail for the 10-year or 30-year auction; a verified date for Lam Research's report; the reason for Arm's -13.4% week (searches returned nothing relevant)
 
 ---
 
-> **Post-run verification, 2026-10-04 (Synthesis follow-up pass).** Corrected in place: SMH's one-year total return is about +87% (from the Oct 2, 2025 close; +87.9% from Oct 3), not ~+89%. Sources for this pass: Yahoo daily bars re-pulled 2026-10-04 (weekly closes, raw and dividend-adjusted), the U.S. Treasury par yield curve, a direct FRED download, TreasuryDirect's auction schedule, company investor-relations pages and the repo's own data/weekly files.
-
-*Last updated by Saturday Research Crew: 2026-10-03*
+*Last updated by Saturday Research Crew: 2026-10-11*
 *Next update: Every Saturday 6:33 PM ET*
 *Data sources: yfinance, SIA, market data feeds, company filings, web search*
