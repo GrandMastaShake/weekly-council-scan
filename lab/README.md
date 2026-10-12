@@ -3188,3 +3188,50 @@ XLRE and XLC enter the cross-section late, so the early sample is nine sectors a
 that her edge is the regime she was tested in; it stays in her rotation until a forward record says otherwise, and the question of
 whether it should is the owner's. A reversal rule on weekly sector returns is the one new lead: if it is worth a test it needs its own
 registration, with costs and a tradeable instrument named first.
+
+## Pass 26 results -- netting Cecil's value for rate exposure changes nothing he can use
+
+Run after the registration (cebc16e) and the code (0659ddb); `results/pass26_cecil_rates.json`. The S&P 500 as of 2024-09, 96 history weeks.
+The as-is five equals Pass 19's in every week (the script asserts it). Rate beta is each name's slope of weekly return on the weekly change
+in the 10-year yield (percentage points) over the trailing 52 weeks; every tradeable name had one in every week. "Rising-rate weeks" are
+the 17 weeks that follow a four-week rise of the 10-year of 20 basis points or more.
+
+| Variant | Edge/wk | t | Return/wk | Weekly SD | Max DD | Mean abs. beta of the five | Same five as as-is |
+|---|---|---|---|---|---|---|---|
+| As is | +0.231% | +1.27 | +0.527% | 2.45% | -10.1% | 0.03 | |
+| Residual (largest residuals of score on rate beta) | +0.308% | +1.55 | +0.606% | 2.54% | -11.9% | 0.05 | 11% |
+| Capped (best scores among names with below-median absolute beta) | +0.151% | +0.85 | +0.433% | 2.24% | -10.4% | 0.02 | 25% |
+
+| Paired against as is | Mean | t | Halves | Returns, paired | Rising-rate weeks (17) | Registered verdict |
+|---|---|---|---|---|---|---|
+| Residual | **+0.077%/wk** | +0.61 | +0.101 / +0.054 | +0.080% (t +0.64) | +0.381% (t +1.37) | no |
+| Capped | **-0.080%/wk** | -0.93 | -0.136 / -0.023 | -0.094% (t -1.09) | -0.178% (t -1.03) | no |
+
+**What it says.** Neither variant clears the +0.10%/wk and t 2 bars; the residual is ahead by +0.08 and the capped five behind by 0.08, both
+well inside noise on 96 weeks. The capped five does what it was built to: it holds less rate exposure (mean absolute beta 0.02 against
+0.03) and the lowest weekly SD (2.24% against 2.45%), at a cost of 0.08% a week of edge and a drawdown about the same as his. The
+residual variant is the surprise: the "rate-beta-neutral" ranking did not pick a lower-beta book, its five carries *more* absolute beta
+than as-is (0.05 against 0.03), because the table's total score is only weakly related to rate beta and the residual rewards names whose
+score is high for any reason, including the rate-sensitive ones. So the idea in his journal, a measure of cheapness net of duration,
+is not what this regression delivers. In the 17 rising-rate weeks, the weeks his journal is about, the residual variant is +0.38% ahead
+(t 1.4) and the capped five 0.18% behind: the right sign for the first, small, from 17 overlapping weeks.
+
+**Predictions.** 1 right: neither helps. 2 right: the capped variant lowers his SD and costs some mean (-0.08 a week). 3 right: in rising-rate
+weeks the residual is ahead by a few tenths (+0.38) under t 2 (1.37). I did not predict that the residual five would carry more rate
+beta than as-is.
+
+**What this does not show.** The registration said Cecil's journal "owes" a duration-adjusted measure; this is one version of it
+(an OLS on the table's total score, trailing weekly betas to the ^TNX change), with 96 weeks and one rate regime (a 10-year between roughly
+3.6% and 4.8%). A measure built on the earnings yield less the 10-year, or on a bond-proxy flag by sector, is a different test and was
+not registered. Cecil's as-is edge here (+0.23%/wk, t 1.27) is Pass 19's, not a new measurement.
+
+**A data hazard found on the way.** The first smoke run of this pass came back with a different as-is five from Pass 19's, through a
+single name: CTVA. The cause is not the code: `lab.run` downloads its own unadjusted price bars when its window is not already in the
+cache, and a fresh Yahoo download of CTVA now returns a close of $8.30 for 2024-09-06, where the bars cached on 2026-09-22 (Pass 19's, and
+the ones this pass reads) have $55.33. That is a split-like adjustment of about 0.15, consistent with the company's announced 2026
+separation, though I have not confirmed the corporate action itself. It turns CTVA's point-in-time P/E from 21 into 3 and puts it second
+in his ranking every week. So any replay that asks `lab.run` for a window it has not cached will now quietly re-price CTVA, and could re-price
+any other name with a corporate action since September. The script captures the full 96 weeks so the cached bars are read, and asserts
+the as-is five against Pass 19's in every week; that assertion catches a change that reaches his five, not one that stays below it.
+
+**What this changes.** Nothing in Cecil. The journal's open item (duration-adjusted cheapness) has one registered test and it says no.

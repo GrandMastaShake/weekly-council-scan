@@ -1,0 +1,4155 @@
+{
+ "registered": "cebc16e",
+ "weeks": 96,
+ "summary": {
+  "as is": {
+   "weeks": 96,
+   "edge": 0.0023077632191368254,
+   "t": 1.2682601400398386,
+   "ahead": 49,
+   "halves": [
+    0.0009960639458274883,
+    0.0036194624924461623
+   ],
+   "raw_edge": 0.002280636052862593,
+   "mean_ret": 0.005266177448425652,
+   "sd": 0.024472969814736012,
+   "max_dd": -0.10054588302935574,
+   "names": 5.0,
+   "by_half_year": {
+    "2024H2": 0.0005329504159495388,
+    "2025H1": 0.0027384082090978123,
+    "2025H2": 0.00013831757378199652,
+    "2026H1": 0.004891259575115008,
+    "2026H2": 0.010517492658127833
+   }
+  },
+  "residual": {
+   "weeks": 96,
+   "edge": 0.003079943344999655,
+   "t": 1.5516201812639652,
+   "ahead": 52,
+   "halves": [
+    0.0020025844159192205,
+    0.004157302274080089
+   ],
+   "raw_edge": 0.0030694408735380493,
+   "mean_ret": 0.006064001960185043,
+   "sd": 0.025415828075761312,
+   "max_dd": -0.11935526039563937,
+   "names": 5.0,
+   "by_half_year": {
+    "2024H2": 0.0014778167662354647,
+    "2025H1": 0.004291278070505439,
+    "2025H2": 0.0007973420150149764,
+    "2026H1": 0.0049238428059733405,
+    "2026H2": 0.010227640915126315
+   }
+  },
+  "capped": {
+   "weeks": 96,
+   "edge": 0.0015101611896681819,
+   "t": 0.8460180152067936,
+   "ahead": 48,
+   "halves": [
+    -0.0003668997288394721,
+    0.0033872221081758355
+   ],
+   "raw_edge": 0.001458903277031587,
+   "mean_ret": 0.004326603330220819,
+   "sd": 0.02244384478608583,
+   "max_dd": -0.10442161687040996,
+   "names": 5.0,
+   "by_half_year": {
+    "2024H2": -0.0015325237156499482,
+    "2025H1": 0.0013203825251882602,
+    "2025H2": -0.0010942763084344962,
+    "2026H1": 0.006105192515228558,
+    "2026H2": 0.0064146103426542065
+   }
+  }
+ },
+ "paired": {
+  "residual": {
+   "mean": 0.0007721801258628295,
+   "t": 0.6119481482334853,
+   "halves": [
+    0.0010065204700917321,
+    0.0005378397816339269
+   ],
+   "weeks_better": 47,
+   "weeks": 96,
+   "same_five": 0.11458333333333333,
+   "flagged_weeks": 17,
+   "flagged_mean": 0.003811063400279972,
+   "flagged_t": 1.3726212868883227,
+   "helps": false,
+   "ret_mean": 0.0007978245117593914,
+   "ret_t": 0.6382584056176398,
+   "ret_halves": [
+    0.0009367469500835792,
+    0.0006589020734352036
+   ]
+  },
+  "capped": {
+   "mean": -0.0007976020294686435,
+   "t": -0.9333975981293914,
+   "halves": [
+    -0.0013629636746669603,
+    -0.0002322403842703265
+   ],
+   "weeks_better": 47,
+   "weeks": 96,
+   "same_five": 0.25,
+   "flagged_weeks": 17,
+   "flagged_mean": -0.0017847276607323044,
+   "flagged_t": -1.0317737210832911,
+   "helps": false,
+   "ret_mean": -0.0009395741182048333,
+   "ret_t": -1.0907666022661644,
+   "ret_halves": [
+    -0.001431371296020477,
+    -0.00044777694038918947
+   ]
+  }
+ },
+ "rising_weeks": 17,
+ "verdicts": {
+  "residual": false,
+  "capped": false
+ },
+ "week_rows": [
+  {
+   "week": "2024-09-09",
+   "W": "2024-09-09",
+   "five": [
+    "EG",
+    "T",
+    "VZ",
+    "VTRS",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "T",
+     "VZ",
+     "VTRS",
+     "CMCSA"
+    ],
+    "residual": [
+     "AES",
+     "CMCSA",
+     "VICI",
+     "T",
+     "VZ"
+    ],
+    "capped": [
+     "T",
+     "VZ",
+     "VTRS",
+     "CVS",
+     "DD"
+    ]
+   },
+   "rising": false,
+   "with_beta": 458,
+   "tradeable": 460,
+   "beta_of_five": {
+    "as is": 0.030916968750513085,
+    "residual": 0.07612176096359537,
+    "capped": 0.00746996574862459
+   }
+  },
+  {
+   "week": "2024-09-16",
+   "W": "2024-09-16",
+   "five": [
+    "EG",
+    "VTRS",
+    "T",
+    "CMCSA",
+    "VZ"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "VTRS",
+     "T",
+     "CMCSA",
+     "VZ"
+    ],
+    "residual": [
+     "CMCSA",
+     "AES",
+     "T",
+     "GL",
+     "VICI"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "VZ",
+     "CVS",
+     "GL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 456,
+   "tradeable": 458,
+   "beta_of_five": {
+    "as is": 0.03268210491139027,
+    "residual": 0.08659644936273228,
+    "capped": 0.018955278155335438
+   }
+  },
+  {
+   "week": "2024-09-23",
+   "W": "2024-09-23",
+   "five": [
+    "EG",
+    "VTRS",
+    "CMCSA",
+    "T",
+    "CVS"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "VTRS",
+     "CMCSA",
+     "T",
+     "CVS"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "T",
+     "CVS",
+     "AES"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "CVS",
+     "VZ",
+     "DD"
+    ]
+   },
+   "rising": false,
+   "with_beta": 455,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.030412259356033207,
+    "residual": 0.06596287365670105,
+    "capped": 0.010125008337819198
+   }
+  },
+  {
+   "week": "2024-09-30",
+   "W": "2024-09-30",
+   "five": [
+    "EG",
+    "CMCSA",
+    "VTRS",
+    "T",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "CMCSA",
+     "VTRS",
+     "T",
+     "GL"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "T",
+     "VICI",
+     "AES"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "VZ",
+     "CVS",
+     "MO"
+    ]
+   },
+   "rising": false,
+   "with_beta": 456,
+   "tradeable": 458,
+   "beta_of_five": {
+    "as is": 0.03911620265181216,
+    "residual": 0.08111018989881602,
+    "capped": 0.011673542836346733
+   }
+  },
+  {
+   "week": "2024-10-07",
+   "W": "2024-10-07",
+   "five": [
+    "EG",
+    "VTRS",
+    "T",
+    "CMCSA",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "VTRS",
+     "T",
+     "CMCSA",
+     "GL"
+    ],
+    "residual": [
+     "CMCSA",
+     "PSKY",
+     "GL",
+     "T",
+     "VICI"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "VZ",
+     "CVS",
+     "MO"
+    ]
+   },
+   "rising": true,
+   "with_beta": 453,
+   "tradeable": 455,
+   "beta_of_five": {
+    "as is": 0.038305067480242844,
+    "residual": 0.06361540477436789,
+    "capped": 0.01457372971778321
+   }
+  },
+  {
+   "week": "2024-10-14",
+   "W": "2024-10-14",
+   "five": [
+    "EG",
+    "VTRS",
+    "CMCSA",
+    "T",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "VTRS",
+     "CMCSA",
+     "T",
+     "GL"
+    ],
+    "residual": [
+     "CMCSA",
+     "PSKY",
+     "GL",
+     "LEN",
+     "VTRS"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "CVS",
+     "VZ",
+     "MO"
+    ]
+   },
+   "rising": true,
+   "with_beta": 416,
+   "tradeable": 418,
+   "beta_of_five": {
+    "as is": 0.03727268143443166,
+    "residual": 0.07800069932596977,
+    "capped": 0.01597375980312169
+   }
+  },
+  {
+   "week": "2024-10-21",
+   "W": "2024-10-21",
+   "five": [
+    "VTRS",
+    "EG",
+    "CMCSA",
+    "MO",
+    "AIZ"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "EG",
+     "CMCSA",
+     "MO",
+     "AIZ"
+    ],
+    "residual": [
+     "VTRS",
+     "CMCSA",
+     "EG",
+     "PSKY",
+     "MO"
+    ],
+    "capped": [
+     "VTRS",
+     "MO",
+     "AIZ",
+     "DD",
+     "FOX"
+    ]
+   },
+   "rising": true,
+   "with_beta": 352,
+   "tradeable": 353,
+   "beta_of_five": {
+    "as is": 0.036904290824601296,
+    "residual": 0.05777741314106764,
+    "capped": 0.01451202412457952
+   }
+  },
+  {
+   "week": "2024-10-28",
+   "W": "2024-10-28",
+   "five": [
+    "VTRS",
+    "T",
+    "GL",
+    "GM",
+    "AIZ"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "T",
+     "GL",
+     "GM",
+     "AIZ"
+    ],
+    "residual": [
+     "PSKY",
+     "VTRS",
+     "GL",
+     "T",
+     "GM"
+    ],
+    "capped": [
+     "VTRS",
+     "T",
+     "GL",
+     "AIZ",
+     "ADM"
+    ]
+   },
+   "rising": true,
+   "with_beta": 302,
+   "tradeable": 304,
+   "beta_of_five": {
+    "as is": 0.0341561915425984,
+    "residual": 0.054772955458773566,
+    "capped": 0.02370885542744724
+   }
+  },
+  {
+   "week": "2024-11-04",
+   "W": "2024-11-04",
+   "five": [
+    "CMCSA",
+    "EG",
+    "T",
+    "GL",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "EG",
+     "T",
+     "GL",
+     "GM"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "GM",
+     "T",
+     "VICI"
+    ],
+    "capped": [
+     "CMCSA",
+     "T",
+     "GL",
+     "GM",
+     "F"
+    ]
+   },
+   "rising": true,
+   "with_beta": 361,
+   "tradeable": 362,
+   "beta_of_five": {
+    "as is": 0.03668001729146207,
+    "residual": 0.04123926905186072,
+    "capped": 0.029691625232346374
+   }
+  },
+  {
+   "week": "2024-11-11",
+   "W": "2024-11-11",
+   "five": [
+    "VTRS",
+    "EG",
+    "CMCSA",
+    "T",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "EG",
+     "CMCSA",
+     "T",
+     "GM"
+    ],
+    "residual": [
+     "GM",
+     "CMCSA",
+     "GL",
+     "T",
+     "VICI"
+    ],
+    "capped": [
+     "VTRS",
+     "CMCSA",
+     "T",
+     "GM",
+     "F"
+    ]
+   },
+   "rising": true,
+   "with_beta": 448,
+   "tradeable": 450,
+   "beta_of_five": {
+    "as is": 0.03046275329134479,
+    "residual": 0.039570280087279926,
+    "capped": 0.023749362778017733
+   }
+  },
+  {
+   "week": "2024-11-18",
+   "W": "2024-11-18",
+   "five": [
+    "CMCSA",
+    "EG",
+    "VTRS",
+    "T",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "EG",
+     "VTRS",
+     "T",
+     "GM"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "VICI",
+     "GM",
+     "T"
+    ],
+    "capped": [
+     "CMCSA",
+     "VTRS",
+     "T",
+     "GM",
+     "GL"
+    ]
+   },
+   "rising": true,
+   "with_beta": 445,
+   "tradeable": 447,
+   "beta_of_five": {
+    "as is": 0.031049041486147615,
+    "residual": 0.03803878898421948,
+    "capped": 0.027023445513396426
+   }
+  },
+  {
+   "week": "2024-11-25",
+   "W": "2024-11-25",
+   "five": [
+    "VTRS",
+    "CMCSA",
+    "EG",
+    "PSKY",
+    "T"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "CMCSA",
+     "EG",
+     "PSKY",
+     "T"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "LEN",
+     "GM",
+     "PSKY"
+    ],
+    "capped": [
+     "VTRS",
+     "CMCSA",
+     "PSKY",
+     "T",
+     "GM"
+    ]
+   },
+   "rising": false,
+   "with_beta": 454,
+   "tradeable": 456,
+   "beta_of_five": {
+    "as is": 0.027895763141936765,
+    "residual": 0.051033873109674846,
+    "capped": 0.022146444151069013
+   }
+  },
+  {
+   "week": "2024-12-02",
+   "W": "2024-12-02",
+   "five": [
+    "PSKY",
+    "VTRS",
+    "CMCSA",
+    "GL",
+    "T"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "VTRS",
+     "CMCSA",
+     "GL",
+     "T"
+    ],
+    "residual": [
+     "CMCSA",
+     "GL",
+     "LEN",
+     "PSKY",
+     "BEN"
+    ],
+    "capped": [
+     "PSKY",
+     "VTRS",
+     "CMCSA",
+     "GL",
+     "T"
+    ]
+   },
+   "rising": false,
+   "with_beta": 450,
+   "tradeable": 452,
+   "beta_of_five": {
+    "as is": 0.022266199187916034,
+    "residual": 0.051091973794992605,
+    "capped": 0.022266199187916034
+   }
+  },
+  {
+   "week": "2024-12-09",
+   "W": "2024-12-09",
+   "five": [
+    "PSKY",
+    "CMCSA",
+    "T",
+    "VTRS",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "CMCSA",
+     "T",
+     "VTRS",
+     "PRU"
+    ],
+    "residual": [
+     "CMCSA",
+     "PSKY",
+     "BEN",
+     "T",
+     "GL"
+    ],
+    "capped": [
+     "PSKY",
+     "CMCSA",
+     "T",
+     "VTRS",
+     "F"
+    ]
+   },
+   "rising": false,
+   "with_beta": 455,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.026162443983586227,
+    "residual": 0.023670735434984765,
+    "capped": 0.015337034075841676
+   }
+  },
+  {
+   "week": "2024-12-16",
+   "W": "2024-12-16",
+   "five": [
+    "PSKY",
+    "VTRS",
+    "BEN",
+    "T",
+    "F"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "VTRS",
+     "BEN",
+     "T",
+     "F"
+    ],
+    "residual": [
+     "PSKY",
+     "GL",
+     "T",
+     "VICI",
+     "PNW"
+    ],
+    "capped": [
+     "PSKY",
+     "VTRS",
+     "BEN",
+     "T",
+     "F"
+    ]
+   },
+   "rising": false,
+   "with_beta": 449,
+   "tradeable": 451,
+   "beta_of_five": {
+    "as is": 0.022380808779036778,
+    "residual": 0.04246579682172085,
+    "capped": 0.022380808779036778
+   }
+  },
+  {
+   "week": "2024-12-23",
+   "W": "2024-12-23",
+   "five": [
+    "PSKY",
+    "VTRS",
+    "EG",
+    "F",
+    "T"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "VTRS",
+     "EG",
+     "F",
+     "T"
+    ],
+    "residual": [
+     "PSKY",
+     "T",
+     "GL",
+     "PNW",
+     "VTRS"
+    ],
+    "capped": [
+     "PSKY",
+     "VTRS",
+     "EG",
+     "F",
+     "T"
+    ]
+   },
+   "rising": false,
+   "with_beta": 460,
+   "tradeable": 462,
+   "beta_of_five": {
+    "as is": 0.021465130929019558,
+    "residual": 0.03672972141730718,
+    "capped": 0.021465130929019558
+   }
+  },
+  {
+   "week": "2024-12-30",
+   "W": "2024-12-30",
+   "five": [
+    "PSKY",
+    "VTRS",
+    "DD",
+    "T",
+    "EG"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "VTRS",
+     "DD",
+     "T",
+     "EG"
+    ],
+    "residual": [
+     "PSKY",
+     "T",
+     "PNW",
+     "DD",
+     "GL"
+    ],
+    "capped": [
+     "PSKY",
+     "VTRS",
+     "DD",
+     "T",
+     "EG"
+    ]
+   },
+   "rising": true,
+   "with_beta": 461,
+   "tradeable": 463,
+   "beta_of_five": {
+    "as is": 0.01996512461666838,
+    "residual": 0.03137041276847555,
+    "capped": 0.01996512461666838
+   }
+  },
+  {
+   "week": "2025-01-06",
+   "W": "2025-01-06",
+   "five": [
+    "PSKY",
+    "EG",
+    "VTRS",
+    "DD",
+    "T"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "EG",
+     "VTRS",
+     "DD",
+     "T"
+    ],
+    "residual": [
+     "PSKY",
+     "T",
+     "DD",
+     "EG",
+     "VTRS"
+    ],
+    "capped": [
+     "PSKY",
+     "EG",
+     "VTRS",
+     "DD",
+     "T"
+    ]
+   },
+   "rising": true,
+   "with_beta": 461,
+   "tradeable": 461,
+   "beta_of_five": {
+    "as is": 0.01572542858411752,
+    "residual": 0.01572542858411752,
+    "capped": 0.01572542858411752
+   }
+  },
+  {
+   "week": "2025-01-13",
+   "W": "2025-01-13",
+   "five": [
+    "PSKY",
+    "EG",
+    "DD",
+    "T",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "EG",
+     "DD",
+     "T",
+     "GL"
+    ],
+    "residual": [
+     "PSKY",
+     "T",
+     "DD",
+     "EG",
+     "GL"
+    ],
+    "capped": [
+     "PSKY",
+     "EG",
+     "DD",
+     "GL",
+     "VTRS"
+    ]
+   },
+   "rising": true,
+   "with_beta": 441,
+   "tradeable": 441,
+   "beta_of_five": {
+    "as is": 0.024857399738481008,
+    "residual": 0.024857399738481008,
+    "capped": 0.016158361815026327
+   }
+  },
+  {
+   "week": "2025-01-20",
+   "W": "2025-01-20",
+   "five": [
+    "PSKY",
+    "EG",
+    "T",
+    "DD",
+    "VTRS"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "EG",
+     "T",
+     "DD",
+     "VTRS"
+    ],
+    "residual": [
+     "PSKY",
+     "T",
+     "EG",
+     "PNW",
+     "DD"
+    ],
+    "capped": [
+     "PSKY",
+     "EG",
+     "DD",
+     "VTRS",
+     "FOX"
+    ]
+   },
+   "rising": false,
+   "with_beta": 421,
+   "tradeable": 421,
+   "beta_of_five": {
+    "as is": 0.02148433302432432,
+    "residual": 0.039191248945312056,
+    "capped": 0.01262857637795288
+   }
+  },
+  {
+   "week": "2025-01-27",
+   "W": "2025-01-27",
+   "five": [
+    "EG",
+    "PSKY",
+    "APA",
+    "VTRS",
+    "DD"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "PSKY",
+     "APA",
+     "VTRS",
+     "DD"
+    ],
+    "residual": [
+     "PSKY",
+     "EG",
+     "AES",
+     "GL",
+     "HON"
+    ],
+    "capped": [
+     "EG",
+     "PSKY",
+     "VTRS",
+     "DD",
+     "F"
+    ]
+   },
+   "rising": false,
+   "with_beta": 361,
+   "tradeable": 361,
+   "beta_of_five": {
+    "as is": 0.0420838346617728,
+    "residual": 0.04523375443253103,
+    "capped": 0.012259389114587073
+   }
+  },
+  {
+   "week": "2025-02-03",
+   "W": "2025-02-03",
+   "five": [
+    "PSKY",
+    "VTRS",
+    "DD",
+    "AES",
+    "T"
+   ],
+   "fives": {
+    "as is": [
+     "PSKY",
+     "VTRS",
+     "DD",
+     "AES",
+     "T"
+    ],
+    "residual": [
+     "PSKY",
+     "AES",
+     "T",
+     "DD",
+     "MO"
+    ],
+    "capped": [
+     "PSKY",
+     "VTRS",
+     "DD",
+     "MO",
+     "STT"
+    ]
+   },
+   "rising": false,
+   "with_beta": 333,
+   "tradeable": 333,
+   "beta_of_five": {
+    "as is": 0.04498844859363175,
+    "residual": 0.04916546097392935,
+    "capped": 0.018405758172626546
+   }
+  },
+  {
+   "week": "2025-02-10",
+   "W": "2025-02-10",
+   "five": [
+    "VTRS",
+    "PFE",
+    "PSKY",
+    "F",
+    "APA"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "PFE",
+     "PSKY",
+     "F",
+     "APA"
+    ],
+    "residual": [
+     "PFE",
+     "AES",
+     "PNW",
+     "VTRS",
+     "PSKY"
+    ],
+    "capped": [
+     "VTRS",
+     "PFE",
+     "PSKY",
+     "F",
+     "FOX"
+    ]
+   },
+   "rising": false,
+   "with_beta": 388,
+   "tradeable": 388,
+   "beta_of_five": {
+    "as is": 0.05081707852939711,
+    "residual": 0.06029463101058351,
+    "capped": 0.021874942381422686
+   }
+  },
+  {
+   "week": "2025-02-17",
+   "W": "2025-02-17",
+   "five": [
+    "PFE",
+    "VTRS",
+    "PSKY",
+    "F",
+    "FOX"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "VTRS",
+     "PSKY",
+     "F",
+     "FOX"
+    ],
+    "residual": [
+     "PFE",
+     "AES",
+     "VTRS",
+     "PNW",
+     "KHC"
+    ],
+    "capped": [
+     "PFE",
+     "VTRS",
+     "PSKY",
+     "F",
+     "FOX"
+    ]
+   },
+   "rising": false,
+   "with_beta": 423,
+   "tradeable": 423,
+   "beta_of_five": {
+    "as is": 0.02017052071624256,
+    "residual": 0.06937985372638986,
+    "capped": 0.02017052071624256
+   }
+  },
+  {
+   "week": "2025-02-24",
+   "W": "2025-02-24",
+   "five": [
+    "PFE",
+    "F",
+    "GL",
+    "FOX",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "F",
+     "GL",
+     "FOX",
+     "PRU"
+    ],
+    "residual": [
+     "PFE",
+     "F",
+     "GL",
+     "BIIB",
+     "CNC"
+    ],
+    "capped": [
+     "PFE",
+     "F",
+     "FOX",
+     "PRU",
+     "STT"
+    ]
+   },
+   "rising": false,
+   "with_beta": 413,
+   "tradeable": 413,
+   "beta_of_five": {
+    "as is": 0.03360025679001648,
+    "residual": 0.042752083519962174,
+    "capped": 0.024476169306471278
+   }
+  },
+  {
+   "week": "2025-03-03",
+   "W": "2025-03-03",
+   "five": [
+    "PFE",
+    "F",
+    "PSKY",
+    "GL",
+    "BIIB"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "F",
+     "PSKY",
+     "GL",
+     "BIIB"
+    ],
+    "residual": [
+     "PFE",
+     "F",
+     "GL",
+     "BIIB",
+     "UHS"
+    ],
+    "capped": [
+     "PFE",
+     "F",
+     "PSKY",
+     "FOX",
+     "STT"
+    ]
+   },
+   "rising": false,
+   "with_beta": 450,
+   "tradeable": 450,
+   "beta_of_five": {
+    "as is": 0.04115021998121499,
+    "residual": 0.05505281524217266,
+    "capped": 0.019855447937353204
+   }
+  },
+  {
+   "week": "2025-03-10",
+   "W": "2025-03-10",
+   "five": [
+    "F",
+    "PFE",
+    "GL",
+    "UHS",
+    "CNC"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "GL",
+     "UHS",
+     "CNC"
+    ],
+    "residual": [
+     "PFE",
+     "GL",
+     "F",
+     "UHS",
+     "PHM"
+    ],
+    "capped": [
+     "F",
+     "PFE",
+     "CNC",
+     "PSKY",
+     "GM"
+    ]
+   },
+   "rising": false,
+   "with_beta": 458,
+   "tradeable": 458,
+   "beta_of_five": {
+    "as is": 0.04927381665969714,
+    "residual": 0.06983514226452904,
+    "capped": 0.029657990591810963
+   }
+  },
+  {
+   "week": "2025-03-17",
+   "W": "2025-03-17",
+   "five": [
+    "F",
+    "PFE",
+    "GL",
+    "CI",
+    "PSKY"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "GL",
+     "CI",
+     "PSKY"
+    ],
+    "residual": [
+     "F",
+     "PFE",
+     "GL",
+     "UHS",
+     "CI"
+    ],
+    "capped": [
+     "F",
+     "PFE",
+     "CI",
+     "PSKY",
+     "PRU"
+    ]
+   },
+   "rising": false,
+   "with_beta": 453,
+   "tradeable": 453,
+   "beta_of_five": {
+    "as is": 0.038688636513239054,
+    "residual": 0.05253217562381986,
+    "capped": 0.0300803445528847
+   }
+  },
+  {
+   "week": "2025-03-24",
+   "W": "2025-03-24",
+   "five": [
+    "F",
+    "PFE",
+    "GL",
+    "PSKY",
+    "CI"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "GL",
+     "PSKY",
+     "CI"
+    ],
+    "residual": [
+     "PFE",
+     "F",
+     "GL",
+     "UHS",
+     "PHM"
+    ],
+    "capped": [
+     "F",
+     "PSKY",
+     "PRU",
+     "MO",
+     "CNC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 457,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.04100231598955086,
+    "residual": 0.07163033651173066,
+    "capped": 0.02522628928283156
+   }
+  },
+  {
+   "week": "2025-03-31",
+   "W": "2025-03-31",
+   "five": [
+    "F",
+    "PFE",
+    "GL",
+    "PSKY",
+    "OMC"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "GL",
+     "PSKY",
+     "OMC"
+    ],
+    "residual": [
+     "PFE",
+     "F",
+     "GL",
+     "OMC",
+     "PHM"
+    ],
+    "capped": [
+     "F",
+     "PSKY",
+     "PRU",
+     "MO",
+     "CNC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 463,
+   "tradeable": 463,
+   "beta_of_five": {
+    "as is": 0.043402884276176876,
+    "residual": 0.06603660506852363,
+    "capped": 0.025388673582259453
+   }
+  },
+  {
+   "week": "2025-04-07",
+   "W": "2025-04-07",
+   "five": [
+    "F",
+    "PFE",
+    "CI",
+    "MO",
+    "CNC"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "CI",
+     "MO",
+     "CNC"
+    ],
+    "residual": [
+     "F",
+     "PFE",
+     "MO",
+     "CI",
+     "CNC"
+    ],
+    "capped": [
+     "F",
+     "PFE",
+     "MO",
+     "CNC",
+     "PSKY"
+    ]
+   },
+   "rising": false,
+   "with_beta": 455,
+   "tradeable": 455,
+   "beta_of_five": {
+    "as is": 0.022736529768747137,
+    "residual": 0.022736529768747137,
+    "capped": 0.019604742653536754
+   }
+  },
+  {
+   "week": "2025-04-14",
+   "W": "2025-04-14",
+   "five": [
+    "F",
+    "PFE",
+    "PSKY",
+    "CI",
+    "MO"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "PSKY",
+     "CI",
+     "MO"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "PSKY",
+     "PFE",
+     "GM"
+    ],
+    "capped": [
+     "F",
+     "PFE",
+     "PSKY",
+     "CI",
+     "MO"
+    ]
+   },
+   "rising": false,
+   "with_beta": 426,
+   "tradeable": 426,
+   "beta_of_five": {
+    "as is": 0.016454905087889715,
+    "residual": 0.03888167273125075,
+    "capped": 0.016454905087889715
+   }
+  },
+  {
+   "week": "2025-04-21",
+   "W": "2025-04-21",
+   "five": [
+    "F",
+    "PFE",
+    "PSKY",
+    "CI",
+    "LEN"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PFE",
+     "PSKY",
+     "CI",
+     "LEN"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "PSKY",
+     "PFE",
+     "GM"
+    ],
+    "capped": [
+     "F",
+     "PFE",
+     "PSKY",
+     "CI",
+     "MO"
+    ]
+   },
+   "rising": false,
+   "with_beta": 347,
+   "tradeable": 347,
+   "beta_of_five": {
+    "as is": 0.03216611304029838,
+    "residual": 0.03362154154437599,
+    "capped": 0.015018191129196584
+   }
+  },
+  {
+   "week": "2025-04-28",
+   "W": "2025-04-28",
+   "five": [
+    "F",
+    "PSKY",
+    "ELV",
+    "PHM",
+    "LEN"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "PSKY",
+     "ELV",
+     "PHM",
+     "LEN"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "PSKY",
+     "ELV",
+     "CMCSA"
+    ],
+    "capped": [
+     "F",
+     "PSKY",
+     "ELV",
+     "CMCSA",
+     "HIG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 286,
+   "tradeable": 286,
+   "beta_of_five": {
+    "as is": 0.049230731481465666,
+    "residual": 0.024647893904905134,
+    "capped": 0.014687505496847265
+   }
+  },
+  {
+   "week": "2025-05-05",
+   "W": "2025-05-05",
+   "five": [
+    "CNC",
+    "GM",
+    "CMCSA",
+    "PHM",
+    "MO"
+   ],
+   "fives": {
+    "as is": [
+     "CNC",
+     "GM",
+     "CMCSA",
+     "PHM",
+     "MO"
+    ],
+    "residual": [
+     "GM",
+     "CNC",
+     "CMCSA",
+     "PRU",
+     "GL"
+    ],
+    "capped": [
+     "CNC",
+     "GM",
+     "CMCSA",
+     "MO",
+     "PFE"
+    ]
+   },
+   "rising": true,
+   "with_beta": 373,
+   "tradeable": 373,
+   "beta_of_five": {
+    "as is": 0.037410887646832904,
+    "residual": 0.02968028416245929,
+    "capped": 0.016512537619442443
+   }
+  },
+  {
+   "week": "2025-05-12",
+   "W": "2025-05-12",
+   "five": [
+    "F",
+    "CNC",
+    "BG",
+    "GM",
+    "CI"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "CNC",
+     "BG",
+     "GM",
+     "CI"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "GM",
+     "CNC",
+     "CMCSA"
+    ],
+    "capped": [
+     "F",
+     "CNC",
+     "GM",
+     "CI",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 452,
+   "tradeable": 452,
+   "beta_of_five": {
+    "as is": 0.03192827566932791,
+    "residual": 0.029869062753502797,
+    "capped": 0.019312595693326877
+   }
+  },
+  {
+   "week": "2025-05-19",
+   "W": "2025-05-19",
+   "five": [
+    "F",
+    "CNC",
+    "GM",
+    "CI",
+    "PHM"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "CNC",
+     "GM",
+     "CI",
+     "PHM"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "GM",
+     "CNC",
+     "CMCSA"
+    ],
+    "capped": [
+     "F",
+     "CNC",
+     "GM",
+     "CI",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 449,
+   "tradeable": 449,
+   "beta_of_five": {
+    "as is": 0.04178427573262057,
+    "residual": 0.03261898017344782,
+    "capped": 0.02246517931577243
+   }
+  },
+  {
+   "week": "2025-05-26",
+   "W": "2025-05-26",
+   "five": [
+    "F",
+    "GM",
+    "CI",
+    "CMCSA",
+    "PHM"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "GM",
+     "CI",
+     "CMCSA",
+     "PHM"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "GM",
+     "CMCSA",
+     "GL"
+    ],
+    "capped": [
+     "F",
+     "GM",
+     "CI",
+     "CMCSA",
+     "MO"
+    ]
+   },
+   "rising": true,
+   "with_beta": 450,
+   "tradeable": 450,
+   "beta_of_five": {
+    "as is": 0.042606259746804404,
+    "residual": 0.03369077377589352,
+    "capped": 0.021264988320376287
+   }
+  },
+  {
+   "week": "2025-06-02",
+   "W": "2025-06-02",
+   "five": [
+    "F",
+    "GM",
+    "PHM",
+    "CI",
+    "BG"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "GM",
+     "PHM",
+     "CI",
+     "BG"
+    ],
+    "residual": [
+     "F",
+     "BG",
+     "GM",
+     "PRU",
+     "CMCSA"
+    ],
+    "capped": [
+     "F",
+     "GM",
+     "CI",
+     "CMCSA",
+     "CNC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 456,
+   "tradeable": 456,
+   "beta_of_five": {
+    "as is": 0.054353873943948174,
+    "residual": 0.03986181158879789,
+    "capped": 0.020730483511234174
+   }
+  },
+  {
+   "week": "2025-06-09",
+   "W": "2025-06-09",
+   "five": [
+    "F",
+    "GM",
+    "PHM",
+    "LEN",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "GM",
+     "PHM",
+     "LEN",
+     "CMCSA"
+    ],
+    "residual": [
+     "F",
+     "GM",
+     "BG",
+     "CMCSA",
+     "PRU"
+    ],
+    "capped": [
+     "F",
+     "GM",
+     "CMCSA",
+     "CI",
+     "MO"
+    ]
+   },
+   "rising": false,
+   "with_beta": 460,
+   "tradeable": 460,
+   "beta_of_five": {
+    "as is": 0.054112001416055856,
+    "residual": 0.03774462018779453,
+    "capped": 0.020738705076901818
+   }
+  },
+  {
+   "week": "2025-06-16",
+   "W": "2025-06-16",
+   "five": [
+    "F",
+    "GM",
+    "PHM",
+    "CMCSA",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "GM",
+     "PHM",
+     "CMCSA",
+     "KHC"
+    ],
+    "residual": [
+     "F",
+     "GM",
+     "CMCSA",
+     "PRU",
+     "VTRS"
+    ],
+    "capped": [
+     "F",
+     "GM",
+     "CMCSA",
+     "VZ",
+     "CI"
+    ]
+   },
+   "rising": false,
+   "with_beta": 458,
+   "tradeable": 458,
+   "beta_of_five": {
+    "as is": 0.04755865797115453,
+    "residual": 0.03106435796903493,
+    "capped": 0.018635611032296204
+   }
+  },
+  {
+   "week": "2025-06-23",
+   "W": "2025-06-23",
+   "five": [
+    "F",
+    "GM",
+    "CMCSA",
+    "PHM",
+    "LEN"
+   ],
+   "fives": {
+    "as is": [
+     "F",
+     "GM",
+     "CMCSA",
+     "PHM",
+     "LEN"
+    ],
+    "residual": [
+     "GM",
+     "F",
+     "CMCSA",
+     "VTRS",
+     "PRU"
+    ],
+    "capped": [
+     "F",
+     "GM",
+     "CMCSA",
+     "VZ",
+     "CI"
+    ]
+   },
+   "rising": false,
+   "with_beta": 452,
+   "tradeable": 452,
+   "beta_of_five": {
+    "as is": 0.051428126023263764,
+    "residual": 0.030288537062873832,
+    "capped": 0.0183360672904161
+   }
+  },
+  {
+   "week": "2025-06-30",
+   "W": "2025-06-30",
+   "five": [
+    "GM",
+    "F",
+    "CMCSA",
+    "KHC",
+    "PHM"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "F",
+     "CMCSA",
+     "KHC",
+     "PHM"
+    ],
+    "residual": [
+     "GM",
+     "F",
+     "VTRS",
+     "CMCSA",
+     "PRU"
+    ],
+    "capped": [
+     "GM",
+     "F",
+     "CMCSA",
+     "VZ",
+     "GL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 462,
+   "tradeable": 462,
+   "beta_of_five": {
+    "as is": 0.04792294115095565,
+    "residual": 0.02982188260034644,
+    "capped": 0.013318920487021806
+   }
+  },
+  {
+   "week": "2025-07-07",
+   "W": "2025-07-07",
+   "five": [
+    "CMCSA",
+    "VTRS",
+    "GM",
+    "GL",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "VTRS",
+     "GM",
+     "GL",
+     "PRU"
+    ],
+    "residual": [
+     "VTRS",
+     "GM",
+     "APA",
+     "CMCSA",
+     "PRU"
+    ],
+    "capped": [
+     "CMCSA",
+     "GM",
+     "GL",
+     "F",
+     "BMY"
+    ]
+   },
+   "rising": false,
+   "with_beta": 462,
+   "tradeable": 462,
+   "beta_of_five": {
+    "as is": 0.030893302743259687,
+    "residual": 0.06083031644353898,
+    "capped": 0.01207364265227874
+   }
+  },
+  {
+   "week": "2025-07-14",
+   "W": "2025-07-14",
+   "five": [
+    "CMCSA",
+    "GM",
+    "VTRS",
+    "PRU",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "GM",
+     "VTRS",
+     "PRU",
+     "GL"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "CMCSA",
+     "PRU",
+     "APA"
+    ],
+    "capped": [
+     "CMCSA",
+     "GL",
+     "BMY",
+     "F",
+     "BIIB"
+    ]
+   },
+   "rising": false,
+   "with_beta": 425,
+   "tradeable": 425,
+   "beta_of_five": {
+    "as is": 0.0336911774064156,
+    "residual": 0.06464764426673367,
+    "capped": 0.007938279516009098
+   }
+  },
+  {
+   "week": "2025-07-21",
+   "W": "2025-07-21",
+   "five": [
+    "CMCSA",
+    "PRU",
+    "VTRS",
+    "BMY",
+    "MET"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "PRU",
+     "VTRS",
+     "BMY",
+     "MET"
+    ],
+    "residual": [
+     "CMCSA",
+     "PRU",
+     "VTRS",
+     "MET",
+     "APA"
+    ],
+    "capped": [
+     "CMCSA",
+     "BMY",
+     "MET",
+     "OMC",
+     "F"
+    ]
+   },
+   "rising": false,
+   "with_beta": 354,
+   "tradeable": 354,
+   "beta_of_five": {
+    "as is": 0.03241494871704624,
+    "residual": 0.06194576217188894,
+    "capped": 0.012062897017058101
+   }
+  },
+  {
+   "week": "2025-07-28",
+   "W": "2025-07-28",
+   "five": [
+    "VTRS",
+    "GM",
+    "DD",
+    "MET",
+    "VZ"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "GM",
+     "DD",
+     "MET",
+     "VZ"
+    ],
+    "residual": [
+     "VTRS",
+     "GM",
+     "DD",
+     "MET",
+     "HPE"
+    ],
+    "capped": [
+     "GM",
+     "DD",
+     "MET",
+     "VZ",
+     "PFE"
+    ]
+   },
+   "rising": false,
+   "with_beta": 304,
+   "tradeable": 304,
+   "beta_of_five": {
+    "as is": 0.03381228081321434,
+    "residual": 0.054621155601393426,
+    "capped": 0.027258816071491304
+   }
+  },
+  {
+   "week": "2025-08-04",
+   "W": "2025-08-04",
+   "five": [
+    "GM",
+    "CMCSA",
+    "PRU",
+    "ALL",
+    "VZ"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "ALL",
+     "VZ"
+    ],
+    "residual": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "HPE",
+     "ALL"
+    ],
+    "capped": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "ALL",
+     "VZ"
+    ]
+   },
+   "rising": false,
+   "with_beta": 340,
+   "tradeable": 340,
+   "beta_of_five": {
+    "as is": 0.01571549768101929,
+    "residual": 0.03528733212401905,
+    "capped": 0.01571549768101929
+   }
+  },
+  {
+   "week": "2025-08-11",
+   "W": "2025-08-11",
+   "five": [
+    "GM",
+    "CMCSA",
+    "PRU",
+    "VTRS",
+    "PFE"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "VTRS",
+     "PFE"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "CMCSA",
+     "PRU",
+     "DD"
+    ],
+    "capped": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "PFE",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 456,
+   "tradeable": 456,
+   "beta_of_five": {
+    "as is": 0.02573228994897107,
+    "residual": 0.032460842417350956,
+    "capped": 0.013266456996275466
+   }
+  },
+  {
+   "week": "2025-08-18",
+   "W": "2025-08-18",
+   "five": [
+    "GM",
+    "CMCSA",
+    "PRU",
+    "ALL",
+    "DD"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "ALL",
+     "DD"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "CMCSA",
+     "PRU",
+     "DD"
+    ],
+    "capped": [
+     "GM",
+     "CMCSA",
+     "PRU",
+     "ALL",
+     "PFE"
+    ]
+   },
+   "rising": false,
+   "with_beta": 449,
+   "tradeable": 449,
+   "beta_of_five": {
+    "as is": 0.022383467373737632,
+    "residual": 0.03605142146647707,
+    "capped": 0.01498922134389227
+   }
+  },
+  {
+   "week": "2025-08-25",
+   "W": "2025-08-25",
+   "five": [
+    "GM",
+    "PRU",
+    "ALL",
+    "KHC",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "PRU",
+     "ALL",
+     "KHC",
+     "CMCSA"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "PRU",
+     "CMCSA",
+     "ALL"
+    ],
+    "capped": [
+     "GM",
+     "PRU",
+     "ALL",
+     "KHC",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 450,
+   "tradeable": 450,
+   "beta_of_five": {
+    "as is": 0.021117010612268967,
+    "residual": 0.029986174682269384,
+    "capped": 0.021117010612268967
+   }
+  },
+  {
+   "week": "2025-09-01",
+   "W": "2025-09-01",
+   "five": [
+    "GM",
+    "ALL",
+    "PRU",
+    "KHC",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "CMCSA"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "HPQ",
+     "PRU",
+     "CMCSA"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 457,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.021459294530867274,
+    "residual": 0.05715593946004458,
+    "capped": 0.021459294530867274
+   }
+  },
+  {
+   "week": "2025-09-08",
+   "W": "2025-09-08",
+   "five": [
+    "GM",
+    "ALL",
+    "PRU",
+    "KHC",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "CMCSA"
+    ],
+    "residual": [
+     "GM",
+     "VTRS",
+     "PRU",
+     "ALL",
+     "HPQ"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 459,
+   "tradeable": 459,
+   "beta_of_five": {
+    "as is": 0.01705328891371837,
+    "residual": 0.04770487623015622,
+    "capped": 0.01705328891371837
+   }
+  },
+  {
+   "week": "2025-09-15",
+   "W": "2025-09-15",
+   "five": [
+    "GM",
+    "ALL",
+    "PRU",
+    "CMCSA",
+    "ACGL"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "PRU",
+     "CMCSA",
+     "ACGL"
+    ],
+    "residual": [
+     "GM",
+     "HPQ",
+     "PRU",
+     "APA",
+     "ALL"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "PRU",
+     "CMCSA",
+     "ACGL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 458,
+   "tradeable": 458,
+   "beta_of_five": {
+    "as is": 0.012580848281279608,
+    "residual": 0.061744827057505156,
+    "capped": 0.012580848281279608
+   }
+  },
+  {
+   "week": "2025-09-22",
+   "W": "2025-09-22",
+   "five": [
+    "GM",
+    "ALL",
+    "VZ",
+    "BMY",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "VZ",
+     "BMY",
+     "PRU"
+    ],
+    "residual": [
+     "GM",
+     "HPQ",
+     "VTRS",
+     "APA",
+     "UAL"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "VZ",
+     "BMY",
+     "PRU"
+    ]
+   },
+   "rising": false,
+   "with_beta": 457,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.0076197760284652475,
+    "residual": 0.10573378735581132,
+    "capped": 0.0076197760284652475
+   }
+  },
+  {
+   "week": "2025-09-29",
+   "W": "2025-09-29",
+   "five": [
+    "GM",
+    "ALL",
+    "PRU",
+    "VZ",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "PRU",
+     "VZ",
+     "CMCSA"
+    ],
+    "residual": [
+     "GM",
+     "APA",
+     "HPQ",
+     "PRU",
+     "CMCSA"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "PRU",
+     "VZ",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 460,
+   "tradeable": 460,
+   "beta_of_five": {
+    "as is": 0.009243157503410648,
+    "residual": 0.05846994433599687,
+    "capped": 0.009243157503410648
+   }
+  },
+  {
+   "week": "2025-10-06",
+   "W": "2025-10-06",
+   "five": [
+    "GM",
+    "PRU",
+    "VZ",
+    "ALL",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "PRU",
+     "VZ",
+     "ALL",
+     "CMCSA"
+    ],
+    "residual": [
+     "GM",
+     "APA",
+     "HPQ",
+     "PRU",
+     "VZ"
+    ],
+    "capped": [
+     "GM",
+     "PRU",
+     "VZ",
+     "ALL",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 459,
+   "tradeable": 459,
+   "beta_of_five": {
+    "as is": 0.009932331426950169,
+    "residual": 0.05411977913470536,
+    "capped": 0.009932331426950169
+   }
+  },
+  {
+   "week": "2025-10-13",
+   "W": "2025-10-13",
+   "five": [
+    "GM",
+    "ALL",
+    "PRU",
+    "KHC",
+    "BMY"
+   ],
+   "fives": {
+    "as is": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "BMY"
+    ],
+    "residual": [
+     "GM",
+     "ALL",
+     "DAL",
+     "HPQ",
+     "PRU"
+    ],
+    "capped": [
+     "GM",
+     "ALL",
+     "PRU",
+     "KHC",
+     "BMY"
+    ]
+   },
+   "rising": false,
+   "with_beta": 429,
+   "tradeable": 429,
+   "beta_of_five": {
+    "as is": 0.01702905935315476,
+    "residual": 0.06995409090506494,
+    "capped": 0.01702905935315476
+   }
+  },
+  {
+   "week": "2025-10-20",
+   "W": "2025-10-20",
+   "five": [
+    "ALL",
+    "PRU",
+    "CMCSA",
+    "AES",
+    "BMY"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "PRU",
+     "CMCSA",
+     "AES",
+     "BMY"
+    ],
+    "residual": [
+     "PRU",
+     "CMCSA",
+     "ALL",
+     "AES",
+     "VTRS"
+    ],
+    "capped": [
+     "ALL",
+     "PRU",
+     "CMCSA",
+     "AES",
+     "BMY"
+    ]
+   },
+   "rising": false,
+   "with_beta": 373,
+   "tradeable": 373,
+   "beta_of_five": {
+    "as is": 0.01444213041752678,
+    "residual": 0.02315337435428691,
+    "capped": 0.01444213041752678
+   }
+  },
+  {
+   "week": "2025-10-27",
+   "W": "2025-10-27",
+   "five": [
+    "AES",
+    "ALL",
+    "GL",
+    "HON",
+    "OMC"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "GL",
+     "HON",
+     "OMC"
+    ],
+    "residual": [
+     "HON",
+     "ALL",
+     "AES",
+     "GPN",
+     "STT"
+    ],
+    "capped": [
+     "AES",
+     "ALL",
+     "GL",
+     "OMC",
+     "TRV"
+    ]
+   },
+   "rising": false,
+   "with_beta": 294,
+   "tradeable": 294,
+   "beta_of_five": {
+    "as is": 0.020107207790040525,
+    "residual": 0.04073803856503766,
+    "capped": 0.011931775942584145
+   }
+  },
+  {
+   "week": "2025-11-03",
+   "W": "2025-11-03",
+   "five": [
+    "BMY",
+    "PRU",
+    "KHC",
+    "ACGL",
+    "HIG"
+   ],
+   "fives": {
+    "as is": [
+     "BMY",
+     "PRU",
+     "KHC",
+     "ACGL",
+     "HIG"
+    ],
+    "residual": [
+     "PRU",
+     "BMY",
+     "HON",
+     "ACGL",
+     "SYF"
+    ],
+    "capped": [
+     "BMY",
+     "PRU",
+     "KHC",
+     "ACGL",
+     "HIG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 331,
+   "tradeable": 331,
+   "beta_of_five": {
+    "as is": 0.016560160728655127,
+    "residual": 0.03506772216435954,
+    "capped": 0.016560160728655127
+   }
+  },
+  {
+   "week": "2025-11-10",
+   "W": "2025-11-10",
+   "five": [
+    "ALL",
+    "BMY",
+    "PRU",
+    "AES",
+    "VTRS"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "BMY",
+     "PRU",
+     "AES",
+     "VTRS"
+    ],
+    "residual": [
+     "ALL",
+     "VTRS",
+     "PRU",
+     "AES",
+     "BMY"
+    ],
+    "capped": [
+     "ALL",
+     "BMY",
+     "PRU",
+     "AES",
+     "KHC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 451,
+   "tradeable": 451,
+   "beta_of_five": {
+    "as is": 0.02677994633848808,
+    "residual": 0.02677994633848808,
+    "capped": 0.013979091237205699
+   }
+  },
+  {
+   "week": "2025-11-17",
+   "W": "2025-11-17",
+   "five": [
+    "BMY",
+    "VTRS",
+    "PRU",
+    "CMCSA",
+    "ALL"
+   ],
+   "fives": {
+    "as is": [
+     "BMY",
+     "VTRS",
+     "PRU",
+     "CMCSA",
+     "ALL"
+    ],
+    "residual": [
+     "VTRS",
+     "DAL",
+     "PRU",
+     "BMY",
+     "UAL"
+    ],
+    "capped": [
+     "BMY",
+     "PRU",
+     "CMCSA",
+     "ALL",
+     "AES"
+    ]
+   },
+   "rising": false,
+   "with_beta": 451,
+   "tradeable": 451,
+   "beta_of_five": {
+    "as is": 0.02984964645860677,
+    "residual": 0.09685186190438186,
+    "capped": 0.012898115097811778
+   }
+  },
+  {
+   "week": "2025-11-24",
+   "W": "2025-11-24",
+   "five": [
+    "BMY",
+    "PRU",
+    "VTRS",
+    "CMCSA",
+    "AES"
+   ],
+   "fives": {
+    "as is": [
+     "BMY",
+     "PRU",
+     "VTRS",
+     "CMCSA",
+     "AES"
+    ],
+    "residual": [
+     "DAL",
+     "VTRS",
+     "UAL",
+     "PRU",
+     "BMY"
+    ],
+    "capped": [
+     "BMY",
+     "PRU",
+     "CMCSA",
+     "AES",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 454,
+   "tradeable": 454,
+   "beta_of_five": {
+    "as is": 0.028341001065590194,
+    "residual": 0.09694447537687069,
+    "capped": 0.012563374990470439
+   }
+  },
+  {
+   "week": "2025-12-01",
+   "W": "2025-12-01",
+   "five": [
+    "PRU",
+    "BMY",
+    "VTRS",
+    "CMCSA",
+    "ALL"
+   ],
+   "fives": {
+    "as is": [
+     "PRU",
+     "BMY",
+     "VTRS",
+     "CMCSA",
+     "ALL"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "HON",
+     "DAL",
+     "CMCSA"
+    ],
+    "capped": [
+     "PRU",
+     "BMY",
+     "CMCSA",
+     "ALL",
+     "AES"
+    ]
+   },
+   "rising": false,
+   "with_beta": 453,
+   "tradeable": 453,
+   "beta_of_five": {
+    "as is": 0.032956017389303274,
+    "residual": 0.07525406432258042,
+    "capped": 0.016411864692696995
+   }
+  },
+  {
+   "week": "2025-12-08",
+   "W": "2025-12-08",
+   "five": [
+    "PRU",
+    "VTRS",
+    "CMCSA",
+    "BMY",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "PRU",
+     "VTRS",
+     "CMCSA",
+     "BMY",
+     "KHC"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "CMCSA",
+     "HON",
+     "DAL"
+    ],
+    "capped": [
+     "PRU",
+     "CMCSA",
+     "BMY",
+     "KHC",
+     "AES"
+    ]
+   },
+   "rising": false,
+   "with_beta": 455,
+   "tradeable": 455,
+   "beta_of_five": {
+    "as is": 0.03148862139321619,
+    "residual": 0.07764939041864197,
+    "capped": 0.015162484950912289
+   }
+  },
+  {
+   "week": "2025-12-15",
+   "W": "2025-12-15",
+   "five": [
+    "VTRS",
+    "PRU",
+    "CMCSA",
+    "BMY",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "PRU",
+     "CMCSA",
+     "BMY",
+     "KHC"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "CMCSA",
+     "DAL",
+     "TROW"
+    ],
+    "capped": [
+     "CMCSA",
+     "BMY",
+     "KHC",
+     "AES",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 451,
+   "tradeable": 451,
+   "beta_of_five": {
+    "as is": 0.043769252476506176,
+    "residual": 0.10000188748974921,
+    "capped": 0.021594626569272714
+   }
+  },
+  {
+   "week": "2025-12-22",
+   "W": "2025-12-22",
+   "five": [
+    "VTRS",
+    "BMY",
+    "PRU",
+    "KHC",
+    "AES"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "BMY",
+     "PRU",
+     "KHC",
+     "AES"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "TROW",
+     "CMCSA",
+     "BMY"
+    ],
+    "capped": [
+     "BMY",
+     "KHC",
+     "AES",
+     "CMCSA",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 461,
+   "tradeable": 461,
+   "beta_of_five": {
+    "as is": 0.03920561727463885,
+    "residual": 0.06193856546973435,
+    "capped": 0.021030569229572412
+   }
+  },
+  {
+   "week": "2025-12-29",
+   "W": "2025-12-29",
+   "five": [
+    "VTRS",
+    "BMY",
+    "PRU",
+    "KHC",
+    "ALL"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "BMY",
+     "PRU",
+     "KHC",
+     "ALL"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "TROW",
+     "BMY",
+     "ALL"
+    ],
+    "capped": [
+     "BMY",
+     "KHC",
+     "ALL",
+     "AES",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 463,
+   "tradeable": 463,
+   "beta_of_five": {
+    "as is": 0.04433978159771166,
+    "residual": 0.06076112803182493,
+    "capped": 0.02123872661606073
+   }
+  },
+  {
+   "week": "2026-01-05",
+   "W": "2026-01-05",
+   "five": [
+    "VTRS",
+    "BMY",
+    "PRU",
+    "PFE",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "BMY",
+     "PRU",
+     "PFE",
+     "KHC"
+    ],
+    "residual": [
+     "VTRS",
+     "PRU",
+     "SYF",
+     "CMCSA",
+     "TROW"
+    ],
+    "capped": [
+     "BMY",
+     "PFE",
+     "KHC",
+     "CMCSA",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 462,
+   "tradeable": 462,
+   "beta_of_five": {
+    "as is": 0.04101496222059361,
+    "residual": 0.08034439550176907,
+    "capped": 0.022420119792252863
+   }
+  },
+  {
+   "week": "2026-01-12",
+   "W": "2026-01-12",
+   "five": [
+    "VTRS",
+    "PFE",
+    "PRU",
+    "BMY",
+    "VZ"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "PFE",
+     "PRU",
+     "BMY",
+     "VZ"
+    ],
+    "residual": [
+     "VTRS",
+     "SYF",
+     "PRU",
+     "VZ",
+     "PFE"
+    ],
+    "capped": [
+     "PFE",
+     "BMY",
+     "ALL",
+     "CMCSA",
+     "AES"
+    ]
+   },
+   "rising": false,
+   "with_beta": 449,
+   "tradeable": 449,
+   "beta_of_five": {
+    "as is": 0.05622152584485507,
+    "residual": 0.0784052219745238,
+    "capped": 0.02925313641989462
+   }
+  },
+  {
+   "week": "2026-01-19",
+   "W": "2026-01-19",
+   "five": [
+    "VTRS",
+    "PFE",
+    "BMY",
+    "VZ",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "PFE",
+     "BMY",
+     "VZ",
+     "CMCSA"
+    ],
+    "residual": [
+     "VTRS",
+     "SYF",
+     "VZ",
+     "PRU",
+     "TROW"
+    ],
+    "capped": [
+     "PFE",
+     "BMY",
+     "CMCSA",
+     "AES",
+     "KHC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 428,
+   "tradeable": 428,
+   "beta_of_five": {
+    "as is": 0.05296039136622473,
+    "residual": 0.10651162006527885,
+    "capped": 0.020278348071403475
+   }
+  },
+  {
+   "week": "2026-01-26",
+   "W": "2026-01-26",
+   "five": [
+    "VTRS",
+    "PFE",
+    "AES",
+    "BMY",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "PFE",
+     "AES",
+     "BMY",
+     "KHC"
+    ],
+    "residual": [
+     "VTRS",
+     "PFE",
+     "TROW",
+     "PRU",
+     "AES"
+    ],
+    "capped": [
+     "PFE",
+     "AES",
+     "BMY",
+     "KHC",
+     "GL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 362,
+   "tradeable": 362,
+   "beta_of_five": {
+    "as is": 0.03570687904924544,
+    "residual": 0.07475047822106243,
+    "capped": 0.010710063511609401
+   }
+  },
+  {
+   "week": "2026-02-02",
+   "W": "2026-02-02",
+   "five": [
+    "VTRS",
+    "CMCSA",
+    "AES",
+    "GM",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "VTRS",
+     "CMCSA",
+     "AES",
+     "GM",
+     "KHC"
+    ],
+    "residual": [
+     "VTRS",
+     "CMCSA",
+     "AES",
+     "APA",
+     "PFG"
+    ],
+    "capped": [
+     "CMCSA",
+     "AES",
+     "GM",
+     "KHC",
+     "BAX"
+    ]
+   },
+   "rising": false,
+   "with_beta": 329,
+   "tradeable": 329,
+   "beta_of_five": {
+    "as is": 0.04161810089964956,
+    "residual": 0.08841177575954459,
+    "capped": 0.022486349334644235
+   }
+  },
+  {
+   "week": "2026-02-09",
+   "W": "2026-02-09",
+   "five": [
+    "PFE",
+    "VTRS",
+    "CMCSA",
+    "EG",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "VTRS",
+     "CMCSA",
+     "EG",
+     "GM"
+    ],
+    "residual": [
+     "VTRS",
+     "CMCSA",
+     "PFE",
+     "ALL",
+     "EG"
+    ],
+    "capped": [
+     "PFE",
+     "CMCSA",
+     "EG",
+     "GM",
+     "ALL"
+    ]
+   },
+   "rising": false,
+   "with_beta": 388,
+   "tradeable": 388,
+   "beta_of_five": {
+    "as is": 0.0417882169197039,
+    "residual": 0.05042614541024011,
+    "capped": 0.02801014988281637
+   }
+  },
+  {
+   "week": "2026-02-16",
+   "W": "2026-02-16",
+   "five": [
+    "PFE",
+    "CMCSA",
+    "VTRS",
+    "GM",
+    "ALL"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "CMCSA",
+     "VTRS",
+     "GM",
+     "ALL"
+    ],
+    "residual": [
+     "VTRS",
+     "CMCSA",
+     "ALL",
+     "PFE",
+     "GM"
+    ],
+    "capped": [
+     "PFE",
+     "CMCSA",
+     "GM",
+     "ALL",
+     "EG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 416,
+   "tradeable": 416,
+   "beta_of_five": {
+    "as is": 0.0405625444507829,
+    "residual": 0.0405625444507829,
+    "capped": 0.02487337970028687
+   }
+  },
+  {
+   "week": "2026-02-23",
+   "W": "2026-02-23",
+   "five": [
+    "PFE",
+    "EG",
+    "CMCSA",
+    "ALL",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "EG",
+     "CMCSA",
+     "ALL",
+     "GM"
+    ],
+    "residual": [
+     "CMCSA",
+     "ALL",
+     "PFE",
+     "EG",
+     "MET"
+    ],
+    "capped": [
+     "PFE",
+     "EG",
+     "CMCSA",
+     "ALL",
+     "GM"
+    ]
+   },
+   "rising": false,
+   "with_beta": 416,
+   "tradeable": 416,
+   "beta_of_five": {
+    "as is": 0.0242812932126081,
+    "residual": 0.04123278749867286,
+    "capped": 0.0242812932126081
+   }
+  },
+  {
+   "week": "2026-03-02",
+   "W": "2026-03-02",
+   "five": [
+    "PFE",
+    "CMCSA",
+    "EG",
+    "ALL",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "CMCSA",
+     "EG",
+     "ALL",
+     "GM"
+    ],
+    "residual": [
+     "CMCSA",
+     "PFE",
+     "EG",
+     "ALL",
+     "GM"
+    ],
+    "capped": [
+     "PFE",
+     "CMCSA",
+     "EG",
+     "ALL",
+     "GM"
+    ]
+   },
+   "rising": false,
+   "with_beta": 449,
+   "tradeable": 449,
+   "beta_of_five": {
+    "as is": 0.03525114833363387,
+    "residual": 0.03525114833363387,
+    "capped": 0.03525114833363387
+   }
+  },
+  {
+   "week": "2026-03-09",
+   "W": "2026-03-09",
+   "five": [
+    "CMCSA",
+    "EG",
+    "PFE",
+    "ALL",
+    "KHC"
+   ],
+   "fives": {
+    "as is": [
+     "CMCSA",
+     "EG",
+     "PFE",
+     "ALL",
+     "KHC"
+    ],
+    "residual": [
+     "CMCSA",
+     "ALL",
+     "EG",
+     "PFE",
+     "APA"
+    ],
+    "capped": [
+     "CMCSA",
+     "EG",
+     "PFE",
+     "ALL",
+     "KHC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 457,
+   "tradeable": 457,
+   "beta_of_five": {
+    "as is": 0.029550324881689398,
+    "residual": 0.062028640296169446,
+    "capped": 0.029550324881689398
+   }
+  },
+  {
+   "week": "2026-03-16",
+   "W": "2026-03-16",
+   "five": [
+    "EG",
+    "PFE",
+    "ALL",
+    "GM",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "GL"
+    ],
+    "residual": [
+     "EG",
+     "ALL",
+     "APA",
+     "PFE",
+     "HPQ"
+    ],
+    "capped": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "GL"
+    ]
+   },
+   "rising": true,
+   "with_beta": 455,
+   "tradeable": 455,
+   "beta_of_five": {
+    "as is": 0.019586374842494262,
+    "residual": 0.07763799380035594,
+    "capped": 0.019586374842494262
+   }
+  },
+  {
+   "week": "2026-03-23",
+   "W": "2026-03-23",
+   "five": [
+    "EG",
+    "PFE",
+    "ALL",
+    "GM",
+    "GL"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "GL"
+    ],
+    "residual": [
+     "EG",
+     "ALL",
+     "PFE",
+     "HPQ",
+     "GM"
+    ],
+    "capped": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "GL"
+    ]
+   },
+   "rising": true,
+   "with_beta": 460,
+   "tradeable": 460,
+   "beta_of_five": {
+    "as is": 0.017848491816048438,
+    "residual": 0.042660160216179376,
+    "capped": 0.017848491816048438
+   }
+  },
+  {
+   "week": "2026-03-30",
+   "W": "2026-03-30",
+   "five": [
+    "EG",
+    "PFE",
+    "ALL",
+    "GM",
+    "CMCSA"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "CMCSA"
+    ],
+    "residual": [
+     "EG",
+     "ALL",
+     "PFE",
+     "HPQ",
+     "GM"
+    ],
+    "capped": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "CMCSA"
+    ]
+   },
+   "rising": true,
+   "with_beta": 459,
+   "tradeable": 459,
+   "beta_of_five": {
+    "as is": 0.02196798663545152,
+    "residual": 0.043307110393400225,
+    "capped": 0.02196798663545152
+   }
+  },
+  {
+   "week": "2026-04-06",
+   "W": "2026-04-06",
+   "five": [
+    "EG",
+    "PFE",
+    "ALL",
+    "GM",
+    "HPQ"
+   ],
+   "fives": {
+    "as is": [
+     "EG",
+     "PFE",
+     "ALL",
+     "GM",
+     "HPQ"
+    ],
+    "residual": [
+     "EG",
+     "ALL",
+     "PFE",
+     "HPQ",
+     "GM"
+    ],
+    "capped": [
+     "EG",
+     "ALL",
+     "GM",
+     "CMCSA",
+     "HIG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 461,
+   "tradeable": 461,
+   "beta_of_five": {
+    "as is": 0.03187246861175537,
+    "residual": 0.03187246861175537,
+    "capped": 0.009009225642108255
+   }
+  },
+  {
+   "week": "2026-04-13",
+   "W": "2026-04-13",
+   "five": [
+    "ALL",
+    "EG",
+    "PFE",
+    "HPQ",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "EG",
+     "PFE",
+     "HPQ",
+     "GM"
+    ],
+    "residual": [
+     "ALL",
+     "EG",
+     "PFE",
+     "GM",
+     "CMCSA"
+    ],
+    "capped": [
+     "ALL",
+     "PFE",
+     "HPQ",
+     "GM",
+     "CMCSA"
+    ]
+   },
+   "rising": false,
+   "with_beta": 435,
+   "tradeable": 435,
+   "beta_of_five": {
+    "as is": 0.04070057162120731,
+    "residual": 0.03598853744866752,
+    "capped": 0.029788549468866332
+   }
+  },
+  {
+   "week": "2026-04-20",
+   "W": "2026-04-20",
+   "five": [
+    "ALL",
+    "EG",
+    "PFE",
+    "HPQ",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "EG",
+     "PFE",
+     "HPQ",
+     "TRV"
+    ],
+    "residual": [
+     "ALL",
+     "EG",
+     "PFE",
+     "AES",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "PFE",
+     "HPQ",
+     "TRV",
+     "GM"
+    ]
+   },
+   "rising": false,
+   "with_beta": 373,
+   "tradeable": 373,
+   "beta_of_five": {
+    "as is": 0.05425003101350288,
+    "residual": 0.062261560891503656,
+    "capped": 0.03599742742374677
+   }
+  },
+  {
+   "week": "2026-04-27",
+   "W": "2026-04-27",
+   "five": [
+    "PFE",
+    "HPQ",
+    "TRV",
+    "AES",
+    "HIG"
+   ],
+   "fives": {
+    "as is": [
+     "PFE",
+     "HPQ",
+     "TRV",
+     "AES",
+     "HIG"
+    ],
+    "residual": [
+     "PFE",
+     "TRV",
+     "AES",
+     "HPQ",
+     "GL"
+    ],
+    "capped": [
+     "PFE",
+     "HPQ",
+     "TRV",
+     "HIG",
+     "KHC"
+    ]
+   },
+   "rising": false,
+   "with_beta": 290,
+   "tradeable": 290,
+   "beta_of_five": {
+    "as is": 0.05349155848270556,
+    "residual": 0.06912206902156023,
+    "capped": 0.04751979527013293
+   }
+  },
+  {
+   "week": "2026-05-04",
+   "W": "2026-05-04",
+   "five": [
+    "ALL",
+    "EG",
+    "ACGL",
+    "HPQ",
+    "GM"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "EG",
+     "ACGL",
+     "HPQ",
+     "GM"
+    ],
+    "residual": [
+     "ALL",
+     "EG",
+     "ACGL",
+     "TRV",
+     "HIG"
+    ],
+    "capped": [
+     "ALL",
+     "HPQ",
+     "GM",
+     "TRV",
+     "HIG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 338,
+   "tradeable": 338,
+   "beta_of_five": {
+    "as is": 0.05851909846945073,
+    "residual": 0.06495299303613261,
+    "capped": 0.04422740802161275
+   }
+  },
+  {
+   "week": "2026-05-11",
+   "W": "2026-05-11",
+   "five": [
+    "ALL",
+    "AES",
+    "EG",
+    "ACGL",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "AES",
+     "EG",
+     "ACGL",
+     "TRV"
+    ],
+    "residual": [
+     "ALL",
+     "AES",
+     "EG",
+     "ACGL",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "TRV",
+     "HIG",
+     "BMY",
+     "PFE"
+    ]
+   },
+   "rising": false,
+   "with_beta": 450,
+   "tradeable": 450,
+   "beta_of_five": {
+    "as is": 0.07810949368601698,
+    "residual": 0.07810949368601698,
+    "capped": 0.04041709955361843
+   }
+  },
+  {
+   "week": "2026-05-18",
+   "W": "2026-05-18",
+   "five": [
+    "ALL",
+    "AES",
+    "EG",
+    "ACGL",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "AES",
+     "EG",
+     "ACGL",
+     "TRV"
+    ],
+    "residual": [
+     "ALL",
+     "AES",
+     "EG",
+     "ACGL",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "TRV",
+     "HIG",
+     "PFE",
+     "BMY"
+    ]
+   },
+   "rising": true,
+   "with_beta": 447,
+   "tradeable": 447,
+   "beta_of_five": {
+    "as is": 0.0692878782204096,
+    "residual": 0.0692878782204096,
+    "capped": 0.037322180065800806
+   }
+  },
+  {
+   "week": "2026-05-25",
+   "W": "2026-05-25",
+   "five": [
+    "ALL",
+    "EG",
+    "AES",
+    "ACGL",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "ALL",
+     "EG",
+     "AES",
+     "ACGL",
+     "TRV"
+    ],
+    "residual": [
+     "ALL",
+     "EG",
+     "AES",
+     "ACGL",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "ACGL",
+     "TRV",
+     "HIG",
+     "PFE"
+    ]
+   },
+   "rising": true,
+   "with_beta": 452,
+   "tradeable": 452,
+   "beta_of_five": {
+    "as is": 0.06024651914906234,
+    "residual": 0.06024651914906234,
+    "capped": 0.0488734888622674
+   }
+  },
+  {
+   "week": "2026-06-01",
+   "W": "2026-06-01",
+   "five": [
+    "AES",
+    "ALL",
+    "CI",
+    "PFE",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "CI",
+     "PFE",
+     "PRU"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "CI",
+     "PFE",
+     "EG"
+    ],
+    "capped": [
+     "ALL",
+     "PFE",
+     "PRU",
+     "EG",
+     "TRV"
+    ]
+   },
+   "rising": false,
+   "with_beta": 453,
+   "tradeable": 453,
+   "beta_of_five": {
+    "as is": 0.0558837459381165,
+    "residual": 0.061825860846234884,
+    "capped": 0.029572823237160956
+   }
+  },
+  {
+   "week": "2026-06-08",
+   "W": "2026-06-08",
+   "five": [
+    "AES",
+    "ALL",
+    "CI",
+    "TRV",
+    "PFE"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "CI",
+     "TRV",
+     "PFE"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "CI",
+     "PFE",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "TRV",
+     "PFE",
+     "EG",
+     "PRU"
+    ]
+   },
+   "rising": false,
+   "with_beta": 459,
+   "tradeable": 459,
+   "beta_of_five": {
+    "as is": 0.05704730443930957,
+    "residual": 0.05704730443930957,
+    "capped": 0.025519440043882975
+   }
+  },
+  {
+   "week": "2026-06-15",
+   "W": "2026-06-15",
+   "five": [
+    "AES",
+    "ALL",
+    "CI",
+    "PFE",
+    "PRU"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "CI",
+     "PFE",
+     "PRU"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "CI",
+     "PFE",
+     "EG"
+    ],
+    "capped": [
+     "ALL",
+     "PFE",
+     "PRU",
+     "EG",
+     "BMY"
+    ]
+   },
+   "rising": false,
+   "with_beta": 460,
+   "tradeable": 460,
+   "beta_of_five": {
+    "as is": 0.05048830390411729,
+    "residual": 0.058403389701109684,
+    "capped": 0.026387532456365697
+   }
+  },
+  {
+   "week": "2026-06-22",
+   "W": "2026-06-22",
+   "five": [
+    "AES",
+    "ALL",
+    "EG",
+    "ACGL",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "EG",
+     "ACGL",
+     "TRV"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "EG",
+     "ACGL",
+     "CI"
+    ],
+    "capped": [
+     "ALL",
+     "EG",
+     "ACGL",
+     "TRV",
+     "TROW"
+    ]
+   },
+   "rising": false,
+   "with_beta": 455,
+   "tradeable": 455,
+   "beta_of_five": {
+    "as is": 0.04425764179596127,
+    "residual": 0.061249184564380076,
+    "capped": 0.028628449276558877
+   }
+  },
+  {
+   "week": "2026-06-29",
+   "W": "2026-06-29",
+   "five": [
+    "AES",
+    "ALL",
+    "EG",
+    "PRU",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "EG",
+     "PRU",
+     "TRV"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "EG",
+     "CI",
+     "TRV"
+    ],
+    "capped": [
+     "ALL",
+     "EG",
+     "PRU",
+     "TRV",
+     "AIG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 459,
+   "tradeable": 459,
+   "beta_of_five": {
+    "as is": 0.04490920425674265,
+    "residual": 0.06354799952550798,
+    "capped": 0.028740906008079038
+   }
+  },
+  {
+   "week": "2026-07-06",
+   "W": "2026-07-06",
+   "five": [
+    "AES",
+    "ALL",
+    "PFE",
+    "PRU",
+    "TRV"
+   ],
+   "fives": {
+    "as is": [
+     "AES",
+     "ALL",
+     "PFE",
+     "PRU",
+     "TRV"
+    ],
+    "residual": [
+     "AES",
+     "ALL",
+     "PFE",
+     "CI",
+     "GL"
+    ],
+    "capped": [
+     "ALL",
+     "PFE",
+     "PRU",
+     "TRV",
+     "EG"
+    ]
+   },
+   "rising": false,
+   "with_beta": 462,
+   "tradeable": 462,
+   "beta_of_five": {
+    "as is": 0.041591859529680204,
+    "residual": 0.06541923986533635,
+    "capped": 0.029643181267778283
+   }
+  }
+ ]
+}
