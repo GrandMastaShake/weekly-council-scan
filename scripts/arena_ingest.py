@@ -11,6 +11,51 @@
 # Monday's first available price (we use Monday's OPEN; falls back to Monday's
 # close if open is missing, and records which one was used).
 #
+# An open is an open only when its own bar bears it out (#105). At 09:35-09:42
+# ET on Monday 2026-09-14 the provider's forming daily bar carried Friday's
+# Open while High, Low and Close followed the live session: TSM open 431.55
+# against a high of 420.97, XOM open 165.07 against a low of 168.25, five of
+# seven tickers checked. entry_price() took any open > 0 and accepted them
+# all. So the Open is checked against the bar's own range, low <= open <= high:
+#
+#   entry_price_source    what entry_price is
+#   open                  the bar's Open, inside the bar's own low-high range
+#   close                 the bar's Close, because the bar has no Open
+#   close_open_rejected   the bar's Close, because its Open was outside that
+#                         range; open_rejected beside it holds the open, the
+#                         high and the low it was checked against. Written by
+#                         a lock run only.
+#   (null)                no bar for the date. Or, with open_rejected beside
+#                         it, the Open was rejected and the Close could not
+#                         be checked either: the bar has no high/low, or its
+#                         Close is outside them too.
+#
+# On a bar still forming the Close is the last trade so far, not Monday's
+# close. That is the price the hand-made lock file of 2026-09-14 called
+# live_intraday_open_unavailable. A lock file is provisional either way:
+# --close reads every entry bar again and writes the whole file from the
+# settled ones. So a lock run records the stand-in and says what it is.
+#
+# The stand-in is sometimes taken in place of a true open, because the bar
+# does not say which of its fields is wrong. On 2026-10-06 at 15:31 ET the
+# forming bars of the price feed's 320 names and the four index ETFs were
+# read: 8 of 323 failed the check, all eight NYSE-listed, and each Open was
+# the 09:30 one-minute bar's own (PEG 69.12 against a low of 69.15). The
+# day's range had left the opening print out. open_rejected keeps the
+# numbers, and --close reads the settled bar.
+#
+# A --close run REFUSES instead: exit 2, nothing written, the lock file left
+# as it was. A closed week is final, and a settled bar has not been seen to
+# fail: none of the 82,121 those names had from 2025-10-01 through
+# 2026-10-05, and none of the 22,685 of the 90 tickers the Arena and the
+# Council's book had priced by then, read on 2026-10-06. One that does is
+# the provider's error, with nothing to say which of its fields is the wrong
+# one. Run it again later.
+#
+# Not caught: a stale Open that happens to lie inside the day's range. On
+# 2026-09-21 AGNC's Open equalled its Friday Open, sat inside Monday's range
+# and passed.
+#
 # Usage:
 #   python arena_ingest.py --week 2026-07-27 --entries entries_2026-07-27.txt
 #   python arena_ingest.py --week 2026-07-27 --entries entries.txt --close
@@ -31,6 +76,7 @@
 
 import argparse
 import datetime as dt
+import math
 import re
 import sys
 from pathlib import Path
@@ -49,6 +95,16 @@ except ImportError:
 
 BENCHMARK = "SPY"
 PICK_RE = re.compile(r"^([A-Za-z.\-]{1,10})\s+(\d+(?:\.\d+)?)\s*%?\s*$")
+
+# How far outside its bar's range an Open may sit and still be that bar's
+# Open: float noise, and nothing a price can move by. One part in a million
+# is $0.0005 on a $500 name. Open, High and Low of one bar come out of one
+# download under one adjustment factor, so an Open that IS the day's high or
+# low compares equal to it. The opens of 2026-09-14 were out by 0.7% to 2.5%.
+OPEN_RANGE_TOL = 1e-6
+
+# entry_price_source for a Close that stands in for an Open its bar rejected.
+OPEN_REJECTED = "close_open_rejected"
 
 
 def parse_entries(path):
@@ -98,8 +154,22 @@ def parse_entries(path):
     return players
 
 
+def _number(row, field):
+    """A bar field as a finite float, or None when it is missing or NaN."""
+    try:
+        value = float(row[field])
+    except (KeyError, TypeError, ValueError):
+        return None
+    return value if math.isfinite(value) else None
+
+
 def fetch_bar(ticker, day):
-    """Fetch the OHLC bar for a specific calendar date. Returns dict or None."""
+    """Fetch the OHLC bar for a specific calendar date. Returns dict or None.
+
+    open and close are the provider's fields as they came. high and low are
+    None when the bar has none (missing or NaN): the open is checked against
+    them, and a bound that is not there must not read as one that passed.
+    """
     start = day - dt.timedelta(days=1)
     end = day + dt.timedelta(days=4)  # window guards against holidays/tz
     hist = yf.Ticker(ticker).history(start=start.isoformat(), end=end.isoformat())
@@ -107,17 +177,81 @@ def fetch_bar(ticker, day):
         return None
     for idx, row in hist.iterrows():
         if idx.date() == day:
-            return {"open": float(row["Open"]), "close": float(row["Close"])}
+            return {"open": float(row["Open"]), "close": float(row["Close"]),
+                    "high": _number(row, "High"), "low": _number(row, "Low")}
     return None
 
 
+def _has_open(bar):
+    """The test entry_price() has always made: an Open that is a number > 0."""
+    return bool(bar["open"] and bar["open"] > 0)
+
+
+def _in_range(price, bar):
+    """True when the bar has a high and a low and price lies between them."""
+    high, low = bar.get("high"), bar.get("low")
+    if price is None or high is None or low is None:
+        return False
+    tol = OPEN_RANGE_TOL * max(abs(high), abs(low))
+    return low - tol <= price <= high + tol
+
+
+def _px(value):
+    return "none" if value is None else str(round(value, 4))
+
+
+def open_fault(bar):
+    """Why this bar's Open cannot stand as an open, in words; None when it can.
+
+    None too for no bar and for a bar with no Open: there is nothing to
+    reject, and entry_price() falls back as it always has. A bar with no
+    high/low is a fault, not a pass: an Open nothing can check is not one
+    that was checked.
+    """
+    if bar is None or not _has_open(bar):
+        return None
+    o, high, low = bar["open"], bar.get("high"), bar.get("low")
+    if high is None or low is None:
+        return "open %s cannot be checked, the bar has no high/low" % _px(o)
+    tol = OPEN_RANGE_TOL * max(abs(high), abs(low))
+    if o > high + tol:
+        return ("open %s is above the bar's high %s (low %s)"
+                % (_px(o), _px(high), _px(low)))
+    if o < low - tol:
+        return ("open %s is below the bar's low %s (high %s)"
+                % (_px(o), _px(low), _px(high)))
+    return None
+
+
+def rejected_open(bar):
+    """For the record: the Open a bar had and the range it was held to, when
+    that Open could not stand. None otherwise."""
+    if open_fault(bar) is None:
+        return None
+    high, low = bar.get("high"), bar.get("low")
+    return {"open": round(bar["open"], 4),
+            "high": None if high is None else round(high, 4),
+            "low": None if low is None else round(low, 4)}
+
+
 def entry_price(bar):
-    """Monday's first available price: open preferred, close as fallback."""
+    """Monday's first available price and which field of the bar it is:
+    (price, source). The header has the table.
+
+    The Open, when its own bar bears it out. A bar with no Open falls back to
+    its Close, as it always has. A bar whose Open is there and cannot stand
+    is never an "open": its Close stands in when the same range bears the
+    Close out, and otherwise the bar gives no price at all.
+    """
     if bar is None:
         return None, None
-    if bar["open"] and bar["open"] > 0:
+    if not _has_open(bar):
+        return round(bar["close"], 4), "close"
+    if open_fault(bar) is None:
         return round(bar["open"], 4), "open"
-    return round(bar["close"], 4), "close"
+    if _in_range(bar["close"], bar):
+        return round(bar["close"], 4), OPEN_REJECTED
+    return None, None
 
 
 def main():
@@ -151,6 +285,36 @@ def main():
         if bar is None:
             print("WARN: no bar for %s on %s" % (t, monday.isoformat()))
 
+    # An entry Open its own bar does not bear out is never booked as an open
+    # (#105; the header has what a lock run records and why --close refuses).
+    faults = {}
+    for t in tickers:
+        fault = open_fault(entry_bars[t])
+        if fault:
+            faults[t] = fault
+    if faults and args.close:
+        print("REFUSED: %s not written. --close scores the week for good, and "
+              "%d entry bar(s) have an Open that cannot stand as one:"
+              % (Path(args.outdir) / (args.week + ".yaml"), len(faults)))
+        for t in faults:
+            print("  %s %s: %s" % (t, monday.isoformat(), faults[t]))
+        print("A settled bar should not read like this, and nothing says which "
+              "of its fields is the wrong one. Run --close again later. If it "
+              "still reads so, the provider has the bar wrong and the price is "
+              "the owner's to rule on. The lock file is as it was.")
+        sys.exit(2)
+    for t in faults:
+        stand_in, src = entry_price(entry_bars[t])
+        if stand_in is None:
+            print("WARN: %s %s: %s. Not booked as an open, and nothing else in "
+                  "the bar could be checked: no entry price."
+                  % (t, monday.isoformat(), faults[t]))
+        else:
+            print("WARN: %s %s: %s. Not booked as an open. Entry is the bar's "
+                  "Close %s (%s): the last trade so far if the session is "
+                  "still open. --close re-reads the settled bar."
+                  % (t, monday.isoformat(), faults[t], _px(stand_in), src))
+
     close_bars = {}
     if args.close:
         print("Fetching Friday close bars for %s..." % friday.isoformat())
@@ -172,6 +336,9 @@ def main():
         },
         "players": [],
     }
+    rejected = rejected_open(entry_bars.get(BENCHMARK))
+    if rejected:
+        doc["benchmark"]["open_rejected"] = rejected
 
     if args.close and close_bars.get(BENCHMARK):
         spy_exit = round(close_bars[BENCHMARK]["close"], 4)
@@ -198,6 +365,9 @@ def main():
                 "entry_price": ep,
                 "entry_price_source": src,
             }
+            rejected = rejected_open(entry_bars.get(t))
+            if rejected:
+                row["open_rejected"] = rejected
             if ep is None:
                 complete = False
             if args.close:

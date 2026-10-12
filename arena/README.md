@@ -24,6 +24,7 @@ Think you can beat Cecil, Marky, and Ophelia? Log your book before Monday open a
 - **One entry per GitHub user per week.** Multiple comments → your *latest valid* comment before the lock wins.
 - **Lock: Monday 8:50 AM ET.** Comment timestamps are the referee. Edits after the lock disqualify the comment.
 - **Entry prices:** Monday's first available price per ticker (same yfinance source as the Council's Tracker). **Exit:** Friday close. **Benchmark:** SPY.
+- **An open has to fit its own day.** A price is recorded as Monday's open only when it lies inside that day's low-high range. If the provider's bar says otherwise when entries are locked, your pick is recorded at the last trade instead and marked `close_open_rejected`, with the open and the range it failed beside it. When the week is closed every entry is read again from Monday's settled bar, and a week is not closed on a bar that still fails.
 - The Council's book publishes after the lock. No copying the librarian's homework.
 
 ## Scoring
