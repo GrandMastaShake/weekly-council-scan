@@ -127,6 +127,18 @@ NO_SESSION_BAR = "no bar dated %s; its last bar before that is dated %s"
 NO_BAR_BEFORE = "no bar dated %s, and none before it in the download"
 
 
+HISTORY_UNKNOWN_REFUSED = (
+    "REFUSED, nothing written: the download did not say whether these "
+    "tickers have bars. Written now, each would be listed in `missing` for "
+    "every week of the run, as a name the provider had no bar for.")
+
+HISTORY_UNKNOWN_NEXT = (
+    "  Run the same command again later. If a ticker is refused again with\n"
+    "  a frame that could not be read, the provider library has changed\n"
+    "  the shape it returns: that is _subframe's to learn, not a reason to\n"
+    "  write the week without the name.")
+
+
 def log(msg: str) -> None:
     print("[%s] %s" % (datetime.now(timezone.utc).strftime("%H:%M:%S"), msg),
           flush=True)
@@ -205,6 +217,44 @@ def _frame_to_history(sub) -> tuple:
             [vols[i] for i in order])
 
 
+class HistoryUnknown(Exception):
+    """The download answered for some ticker in a way that could not be
+    read, or did not answer: {ticker: why}. "Unknown" must never read as
+    "no bars" (snapshot._witness_days has the same rule for the witness).
+    An empty history goes into `missing` for every week of the run, as a
+    record that the provider had no bar, so the run stops instead."""
+
+    def __init__(self, unknown: dict):
+        self.unknown = dict(unknown)
+        super().__init__("history unknown for %d ticker(s): %s" % (
+            len(self.unknown), ", ".join(sorted(self.unknown))))
+
+
+def _ticker_history(df, ticker: str) -> tuple:
+    """One ticker's (dates, closes, volumes) out of a yf.download frame,
+    whichever way round it came: a batch, or a single ticker.
+
+    Both go through _subframe. Until 2026-10-11 the per-ticker fallback
+    handed its frame straight to _frame_to_history, and since yfinance
+    stopped returning plain columns for one ticker (its columns are
+    (Price, Ticker) now) that read 0 bars out of a frame holding every one.
+
+    Raises ValueError for a frame that has rows and no Close column for the
+    ticker. That is a shape this code does not know, not a ticker without
+    bars. A frame with no rows, and a ticker whose closes are all NaN, is
+    the provider's "nothing", and returns an empty history."""
+    sub = _subframe(df, ticker)
+    if sub is None:
+        if df is not None and len(df) > 0:
+            raise ValueError("a frame of %d rows has no columns for %s"
+                             % (len(df), ticker))
+        return [], [], []
+    if "Close" not in list(sub.columns):
+        raise ValueError("a frame of %d rows has no Close column for %s"
+                         % (len(sub), ticker))
+    return _frame_to_history(sub)
+
+
 def _download_chunk(chunk: list, start_iso: str, end_iso: str):
     """yf.download one chunk with bounded backoff. Returns the frame or None."""
     import yfinance as yf
@@ -237,10 +287,15 @@ def download_equity_history(tickers: list, first_friday: date,
     after it is there because it is the only proof that a Friday with no
     bars was a holiday (build_and_write). Tickers that never return data get
     empty histories and land in 'missing' for every week -- never
-    fabricated."""
+    fabricated.
+
+    Raises HistoryUnknown, after every chunk has been tried, when a
+    ticker's download raised or its frame could not be read. Not having an
+    answer is not the same as the answer "no bars"."""
     start_iso = (first_friday - timedelta(days=10)).isoformat()
     end_iso = (last_friday + timedelta(days=9)).isoformat()
     history: dict = {}
+    unknown: dict = {}
     chunks = [tickers[i:i + CHUNK_SIZE]
               for i in range(0, len(tickers), CHUNK_SIZE)]
     log("equity download: %d tickers in %d chunks of <=%d, window %s..%s"
@@ -260,20 +315,31 @@ def download_equity_history(tickers: list, first_friday: date,
                     df1 = yf.download(t, start=start_iso, end=end_iso,
                                       interval="1d", auto_adjust=True,
                                       progress=False, threads=False)
-                    history[t] = _frame_to_history(df1)
                 except Exception as exc:
                     log("    per-ticker %s failed: %s" % (t, exc))
-                    history[t] = ([], [], [])
+                    unknown[t] = "its own download raised %s: %s" % (
+                        type(exc).__name__, str(exc)[:160])
+                    time.sleep(0.3)
+                    continue
+                try:
+                    history[t] = _ticker_history(df1, t)
+                except Exception as exc:
+                    log("    parse failed for %s: %s" % (t, exc))
+                    unknown[t] = "its own frame could not be read (%s)" % (
+                        str(exc)[:160])
                 time.sleep(0.3)
         else:
             for t in chunk:
                 try:
-                    history[t] = _frame_to_history(_subframe(df, t))
+                    history[t] = _ticker_history(df, t)
                 except Exception as exc:
                     log("    parse failed for %s: %s" % (t, exc))
-                    history[t] = ([], [], [])
+                    unknown[t] = "its chunk's frame could not be read (%s)" % (
+                        str(exc)[:160])
         if ci < len(chunks):
             time.sleep(2.0)             # short sleep between chunks
+    if unknown:
+        raise HistoryUnknown(unknown)
     empty = [t for t in tickers if not history.get(t, ([],))[0]]
     if empty:
         log("  %d tickers returned no bars at all: %s"
@@ -1039,8 +1105,17 @@ def main() -> int:
         return 0
 
     os.makedirs(weekly_dir, exist_ok=True)
-    history = download_equity_history(
-        tickers, fridays[0], fridays[-1])
+    try:
+        history = download_equity_history(
+            tickers, fridays[0], fridays[-1])
+    except HistoryUnknown as exc:
+        # Before the first week is written. A ticker listed in `missing`
+        # is one the provider had no bar for; these it was never heard on.
+        print(HISTORY_UNKNOWN_REFUSED)
+        for t in sorted(exc.unknown):
+            print("  %s: %s" % (t, exc.unknown[t]))
+        print(HISTORY_UNKNOWN_NEXT)
+        return 2
 
     if args.merge:
         # The same rule for a rename nobody recorded, which only the bars
