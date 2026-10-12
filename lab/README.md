@@ -2828,3 +2828,50 @@ in more than a third of weeks, it is on in 1.5%; right that the basket's gap doe
 been shown to help, and on this history they cannot be shown, because the regimes they describe are too rare in it. The cheap test
 that remains is forward: log the flags on every Monday from now (the Monday pipeline already reads VIX, the 10-year and the dollar) next to
 each member's edge, and read the split after the flags have fired often enough. The Marky and Cecil volatility leads go on that list.
+
+## Pass 21 results -- the surprise predicts the reaction, there is no beat-then-fall, and the drift after it passes
+
+Run after the registration (d1ba76f) and the code (4c81f3e); `results/pass21_beat_fall.json`. 494 tickers, 11,626 reported quarters from
+yfinance's earnings tables; 3,235 events on the S&P 500 as of 2024-09 with prices through the window (reports 2024-09-09 to 2026-07-03),
+in 90 reaction weeks, 35 of them with 15 or more events (the earnings-season weeks; the rest are too thin for a cross-section).
+Report timestamps split cleanly: after-close (hour 16) and pre-market (hours 5 to 9) account for nearly all of them.
+
+| Test (S&P 500 as of 2024-09) | Result | Both halves | Verdict |
+|---|---|---|---|
+| V1 reaction: weekly rank correlation of surprise with R5 | mean IC **+0.234**, NW t +10.0 | +0.221 / +0.247 | **holds** |
+| V2 beat-then-fall: streak of 8+ and a beat vs the rest of the week, R5 | +0.39% (t +1.08), 940 flagged events | +0.58 / +0.22 | no (and the sign is the other way) |
+| V3 drift chair: top quintile of surprise, D20, vs the week's reporters | **+1.21%** per 20-session cohort (t **+2.81**), median +1.42% | +0.45 / +1.93 | **passes** |
+| V4 big beat then fall: surprise over 10% and a streak of 4+, D20 | +0.70% (t +2.23), 467 events | +0.72 / +0.69 | no (a drift up, not a fall) |
+
+Pooled by decile of surprise, returns rise from the bottom to the top at every horizon: the lowest decile (median surprise -11%) made
+-2.97% on the reaction day, -3.29% over five days and -0.91% over the next twenty sessions; the top decile (+40%) +1.86%, +1.59% and
++0.87%. On the 111 (21 reaction weeks of 15+ events; a hindsight list): V1 holds (IC +0.141, t +2.68; halves +0.188 and +0.099), the
+other three do not (V2 -0.11%, V3 +0.53% at t +0.40, V4 +0.60% at t +0.59).
+
+**Checks run after reading V3 (not registered; they test the pass, they do not replace it).** The 35 weeks cluster in seven earnings
+seasons and their 20-session windows overlap, which the Newey-West t only partly covers, so:
+
+| Check | Result |
+|---|---|
+| Edge by season (reaction quarter) | 2024-Q4 +1.16%, 2025-Q1 **-0.52%**, 2025-Q2 +0.85%, 2025-Q3 +1.31%, 2025-Q4 +2.12%, 2026-Q1 +1.12%, 2026-Q2 +3.27%: positive in 6 of 7 |
+| Season-blocked bootstrap of the weekly edges | 95% interval **+0.35% to +2.18%**; P(mean of 0 or less) 0.001 |
+| Shuffle null (surprise ranks shuffled within each week) | p = 0.001 |
+| After 0.10% round-trip costs | +1.11% per cohort |
+| Top quintile minus bottom quintile | +2.08% over the 20 sessions |
+| Correlation of its weekly edge with the weekly edges of | Ophelia +0.18, Cecil -0.06, Marky +0.15, the team +0.16 (35 weeks) |
+
+**Predictions.** 1: V1 holds, right, but the rank correlation is +0.23, more than twice the "near 0.1" I wrote. 2: V2 does not hold,
+right. 3: **V3 does not pass: wrong.** I expected the post-earnings drift to have faded in large caps to a weak positive under t 2; here it
+is +1.2% a cohort at t 2.8 with the sign steady across seasons. 4: V4 does not hold, right, though not because nothing is there: the big
+beats with long streaks drift up too.
+
+**What this does not show.** One regime (2024-09 to 2026-07, a rising market with a sharp April 2025 break that is the one negative
+season). Survivors only: today's S&P members that were in the index in 2024-09; names since removed or acquired are missing. The
+estimates are the ones yfinance stores today. The cohort enters at the reaction-day close, which a weekly clock cannot do: a Monday-open
+chair buying last week's top-surprise names gives up some days of the move. The 111, a hindsight list, does not show the drift (21 weeks,
+t 0.4), which says it is not a big-cap, big-name effect, only that the data there are too thin to say more. It is a within-week
+comparison, so it says nothing about whether earnings weeks are good weeks to be invested.
+
+**What this changes.** It is the first registered result in the lab that passes its rule and reads information (earnings) that none of
+the three engines reads, and its weekly edges are close to uncorrelated with theirs, which is what Pass 17 said a fourth chair has to be.
+It is not yet a chair: it needs the Council's clock (Pass 23, registered next) and a forward record. Nothing in production changes.

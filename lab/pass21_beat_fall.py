@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import bisect
 import json
+import random
 import statistics
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -212,7 +213,83 @@ def show(title, res):
     print("  deciles of surprise (pooled): " + "  ".join(f"D{d['decile']}: {d['surprise_mid']:+.0f}% R1 {d['r1']*100:+.2f} R5 {d['r5']*100:+.2f} D20 {d['d20']*100:+.2f}" for d in (res["deciles"][i] for i in (0, 3, 6, 9))))
 
 
+def season_of(week: str) -> str:
+    y, m = week[:4], int(week[5:7])
+    return f"{y}-Q{(m - 1) // 3 + 1}"
+
+
+def checks():
+    """After the registered run (unregistered diagnostics on V3): by earnings season, a within-week shuffle null, a season-blocked
+    bootstrap, costs, the long-short spread, and the correlation of V3's weekly edge with the team's. Reads the clean list."""
+    names = p9.sp500_asof()
+    tables = fetch(sorted(set(names)))
+    tickers = sorted(set(names) | set(p19.ETFS)) + [x for x in lab.EXTRA if x not in names]
+    adj = {t: lab.Series(r) for t, r in lab.bars_by_ticker(lab.download(tickers, True, END, p4.HIST_START)).items()}
+    events = build_events(names, adj, tables)
+    by_week = {}
+    for e in events:
+        by_week.setdefault(e["week"], []).append(e)
+    weeks = sorted(w for w, es in by_week.items() if len(es) >= MIN_WEEK)
+    edge, spread = {}, {}
+    for w in weeks:
+        es = sorted(by_week[w], key=lambda e: e["surprise"], reverse=True)
+        k = max(1, len(es) // 5)
+        pool = statistics.fmean(e["d20"] for e in es)
+        edge[w] = statistics.fmean(e["d20"] for e in es[:k]) - pool
+        spread[w] = statistics.fmean(e["d20"] for e in es[:k]) - statistics.fmean(e["d20"] for e in es[-k:])
+    vals = [edge[w] for w in weeks]
+    out = {"weeks": len(weeks), "mean": statistics.fmean(vals), "cost_round_trip": 0.001, "mean_net": statistics.fmean(vals) - 0.001,
+           "long_short_spread_mean": statistics.fmean(spread[w] for w in weeks)}
+    seasons = {}
+    for w in weeks:
+        seasons.setdefault(season_of(w), []).append(edge[w])
+    out["seasons"] = {k: {"weeks": len(v), "mean": statistics.fmean(v)} for k, v in sorted(seasons.items())}
+    out["seasons_positive"] = sum(1 for v in seasons.values() if statistics.fmean(v) > 0)
+    rng = random.Random(f"{lab.SEED}-p21-checks")
+    # within-week shuffle null: the surprise ranking is destroyed, everything else (the week's events, their returns) is kept
+    null = []
+    for _ in range(2000):
+        tot = []
+        for w in weeks:
+            es = by_week[w]
+            k = max(1, len(es) // 5)
+            pick = rng.sample(es, k)
+            tot.append(statistics.fmean(e["d20"] for e in pick) - statistics.fmean(e["d20"] for e in es))
+        null.append(statistics.fmean(tot))
+    out["shuffle_p"] = sum(1 for x in null if x >= out["mean"]) / len(null)
+    # season-blocked bootstrap of the weekly edges
+    keys = sorted(seasons)
+    boots = []
+    for _ in range(5000):
+        draw = [rng.choice(keys) for _ in keys]
+        boots.append(statistics.fmean([x for k in draw for x in seasons[k]]))
+    boots.sort()
+    out["season_bootstrap_ci95"] = [boots[int(0.025 * len(boots))], boots[int(0.975 * len(boots))]]
+    out["season_bootstrap_p_le_0"] = sum(1 for b in boots if b <= 0) / len(boots)
+    # correlation with the team book's weekly edge (Pass 20's rescored rows), same Monday
+    p20 = json.loads((lab.RESULTS / "pass20_regimes.json").read_text(encoding="utf-8"))
+    team = {w["W"]: w["edge"] for w in p20["universes"][p11.CLEAN]["hist"]["weeks"]}
+    pairs = [(edge[w], team[w]) for w in weeks if w in team]
+    if len(pairs) >= 10:
+        from scipy.stats import pearsonr
+        out["corr_with_team_edge"] = {b: float(pearsonr([a for a, _ in pairs], [t[b] for _, t in pairs]).statistic)
+                                      for b in ("Ophelia", "Cecil", "Marky", "Three chairs")}
+        out["corr_weeks"] = len(pairs)
+    print(f"  V3 checks on {out['weeks']} reaction weeks: mean edge {out['mean']*100:+.3f}% per 20-session cohort (net of 0.10% costs {out['mean_net']*100:+.3f}%), "
+          f"top-minus-bottom quintile {out['long_short_spread_mean']*100:+.3f}%")
+    print("  by earnings season: " + "  ".join(f"{k} {v['mean']*100:+.2f}% ({v['weeks']}w)" for k, v in out["seasons"].items()) + f"   positive in {out['seasons_positive']} of {len(out['seasons'])}")
+    print(f"  within-week shuffle null: p = {out['shuffle_p']:.4f};  season-blocked bootstrap 95% CI [{out['season_bootstrap_ci95'][0]*100:+.2f}%, {out['season_bootstrap_ci95'][1]*100:+.2f}%], P(mean<=0) = {out['season_bootstrap_p_le_0']:.3f}")
+    if "corr_with_team_edge" in out:
+        print("  correlation of V3's weekly edge with the weekly edges of: " + ", ".join(f"{b} {c:+.2f}" for b, c in out["corr_with_team_edge"].items()) + f"  ({out['corr_weeks']} weeks)")
+    path = lab.RESULTS / "pass21_checks.json"
+    path.write_text(json.dumps(out, indent=1, default=float) + chr(10), encoding="ascii")
+    print(f"  wrote {path}")
+
+
 def main(mode=""):
+    if mode == "checks":
+        checks()
+        return
     U = p9.universes()
     universes = {p11.CLEAN: p9.sp500_asof(), p9.REFERENCE: U[p9.REFERENCE]}
     if mode == "smoke":
