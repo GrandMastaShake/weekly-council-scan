@@ -3399,3 +3399,10 @@ The first Monday was logged at 09:07 ET, before the open (not late): 2 candidate
 nothing. Prediction 4 right. Ledger `lab/sleeve_ledger.json`, page `lab/SLEEVE.md`. A smoke run of the code on the Monday of 2026-07-27 (a past week, into a scratch
 ledger that is not part of the record) was plumbing only; its one cohort is not counted and decides nothing. The routine is run by hand for now: wiring it into
 the Monday task needs `lab/sleeve_ledger.json`, `lab/SLEEVE.md` and `lab/results/sleeve.json` added to that task's commit list, which is the owner's call.
+
+### Pass 29 -- wired into the Monday task (2026-10-12)
+
+At the owner's word the sleeve now runs with the Monday forward scorer (scheduled task 8): a separate step after `forward.py` and `live_week.py`, so a failure in one does
+not stop the others. Task 8 logs the Monday's row, scores every closed cohort, and commits `lab/sleeve_ledger.json`, `lab/SLEEVE.md` and `lab/results/sleeve.json` with its
+other files. It runs after 11:30 AM ET, so every row will carry the `late` flag under the registered definition (a row logged after the Monday open); that is expected and does
+not change a cohort's validity, since the choice uses only data from before the Monday. `forward.py` is untouched.
