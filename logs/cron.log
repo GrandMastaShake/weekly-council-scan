@@ -319,3 +319,4 @@
 2026-10-12T00:14:21-04:00 SYNTHESIS AGENT START
 2026-10-12T00:41:22-04:00 SYNTHESIS AGENT END — SUCCESS (synthesis c48ab1a, README brief 89f3caa, issue #161; 15/15 wikis fresh; facts.json 2026-10-12; waited for CANARY WATCH END)
 2026-10-12T00:51:00-04:00 CANARY WATCH UPDATE END OK (facts.json 1ec0837, wiki 6bf2038, issue #162 XLP correlation flip; FRED via second network path, nothing stale; week ending Fri 2026-10-09)
+2026-10-12T08:09:00-04:00 -- WEEKLY COUNCIL SCAN (FULL COUNCIL SESSION) START -- Claude-side run, fired on time (scheduled 08:33 ET; session began 08:08 ET by PowerShell Get-Date, early fire); double-booking guard clear (no 2026-10-12 START in cron.log before this line; no post-open task line today). Arena entries lock 08:50 ET; STEP 3/3b/arena lock handed to crew-6b-council-post-open per the 2026-09-21 post-open handoff.
