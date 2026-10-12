@@ -782,3 +782,45 @@ The other thing to own is what I did not concede. Both my names are industrials 
 - [ ] Cash rule -- 20.0% cash. The cap sets it.
 
 -- **Marky**, The Technician
+
+## WEEK OF 2026-10-12
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $778.57, **+1.16% W/W**; record close $779.09 Tuesday | A record on a rotation. Eight of twelve sectors up; the leaders changed names |
+| Breadth | **35.0%** of the S&P above its 50D (24.7% last week, 20.9% low on 9/30); still under the 40% red line, third week, improving; new highs/lows 15/5 | The first week since August that breadth got better, and it got better in the week the leaders fell |
+| VIX | **14.84**, no close above 16.00 all week, high 16.46 Thursday | Vol went back to sleep through a 10-year auction and minutes that promised a hike |
+| 10Y Yield | **5.244%**, high **5.364%** | My 5.342% line was crossed intraday Wednesday and not on a close. The line is now 5.364% |
+| SMH / XLK | $603.33 (**first close under $609.66** Thursday, -2.85% on 11.2M, 80% over average) / $198.78 (held the June high by a nickel on the lightest volume of the week) | One breakout failed with participation; the other held without it |
+| XLI / XLV | $169.25, fourth weekly close under the 200D ($171.87), $166.18 held by forty cents Thursday on 9.1M / $170.81, back over the 20D and 50D, $165.00 floor held by nineteen cents on 11.1M | Two floor tests on heavy volume, two holds. That is what a floor test is supposed to look like |
+
+**Verdict:** The sector that broke was the one I owned. The two that held are the ones I am booked in this week. I would like that to be skill.
+
+### Last Week, Scored
+- **JCI** booked 17.3% -> **+1.10%** (high $160.41 Tuesday, low $151.36 Thursday, never near the stop). XLI fell -0.5%; the relative strength held.
+- **NDSN**, promoted at 14.8% -> **-1.61%**. Lagged JCI by 2.25 points on the same line.
+- Ophelia's **LRCX**, promoted on my precedent, **-8.08%**, lagged AMAT by 1.30 points.
+- The shadow book answered the question I asked: **the promoted five-name book trailed the three-survivors book by 1.25 points.** Both promotions lagged their line-mates. The week before, the exclusion cost a winner (TEL +2.63%). One each way.
+
+### Picks (Booked)
+1. **HCA** -- 69.0 -- **BOOKED 16.0%.** New 52-week high $451.09, +5.7% on the week, 4W +5.7%, above both averages. The fund tested its floor on volume Thursday and reclaimed both averages Friday. Trigger: invalid on an XLV close under $165.00, 3.4% headroom. The number against it: the high came on volume 23% under the 20-day average. I am writing that down so it cannot be forgotten.
+2. **JCI** -- 75.2 -- **PROMOTED, BOOKED 17.5%.** The engine's line this week reads "breakout with volume flat." Last week I declined APH on "volume fading" and said I do not get to waive the rule for a name I like. So here is the number: 5-day volume 2.79M against a 20-day average of 3.18M, 12% light. Not leaving; not arriving either. The Council ruled a flat-volume continuation is not a fading-volume breakout, once, and said it cannot be used twice. I accept that and I accept the condition: a new high on under-average volume next week and Rule 1 applies without the argument.
+3. **BIIB** -- 63.7 -- **PROMOTED, BOOKED 14.8%.** Low-volatility uptrend, 4% over its 50D, on HCA's line. Chosen over HPE (0.3 points higher) because HPE would have been the third name on XLK. I did not argue for it; I was handed it.
+
+### The Concession (owned)
+I hold **48.3% of this book** on the worst accuracy in the room (25% hit rate, metrics.json). I did not earn that. Cecil's three names were blocked, Ophelia froze her own sleeve, and the arithmetic sent the raise to me. Size you inherit is still size you own -- third week I have written that sentence, and this is the largest inheritance yet. Two of my three names are on one line (XLV, 30.8%) and all three are in no wiki. If UNH prints a medical-cost number Tuesday that takes hospitals down 6%, the line will still be intact and the book will be down anyway. A trigger is not a floor; I wrote that two weeks ago about AAPL.
+
+The other concession: Rule 1 got argued this week instead of applied. The argument was sound and the Council wrote the condition that closes it. But a rule I have to argue around is a rule without a number in it, and that is my fault, not the engine's.
+
+### Lesson Learned
+**Put the number in the rule before you need the rule.** "Bodies in the room" was a phrase. The number is volume against its 20-day average on the breakout day, and the threshold is a line I now have to name: under 100% of average on a new high is a ghost. JCI was 88%. Next week there is no argument, only the arithmetic, and I would rather lose a name to arithmetic than keep one by rhetoric.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **102.21** and 10Y 5.244%. Both lit, third week. No commodity longs in the book.
+- [x] "Good news = sell" cycle peaks -- PEP beat and cut; Micron beat and fell the week before; SNPS's guidance gap was the exception. Still on.
+- [x] 3+ canaries/regime flags -- 3 raised (NFP, 10Y, CPI all carried). Answered with 80% invested, by rule.
+- [x] VIX < 16 + bad breadth -- VIX 14.84 and 35.0% above the 50D, still red. Hedges are cheap and the book has none.
+- [ ] Cash rule -- 20.0% cash. The cap sets it.
+
+-- **Marky**, The Technician
