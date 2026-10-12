@@ -3045,3 +3045,66 @@ a verdict either way; if it can, the difference is not distinguishable from zero
 
 Eight decisive tests across the four passes (two each for Passes 24, 25 and 26; one each for 27a and 27b), which leaves about one chance
 in three that one passes by luck.
+
+## Pass 22 results -- none of the frozen 2025 lists beats random at any horizon, and the first four weeks went against all six
+
+Run after the registration (d1ba76f) and the code (4c81f3e, 677e788, fff41c3); `results/pass22_frozen.json`; prices to 2026-10-09 from
+Yahoo (dividend-adjusted). Entry at the first open after each file's stamp, exit at the close of the Friday that ends week 4, 13, 26 or
+52. Returns winsorized at the pool's 1st and 99th percentile at each horizon; 2,000 random draws and 2,000 matched draws per cell.
+
+**One deviation, made before any threshold outcome was read (fff41c3).** In the threshold file 2,088 of the 2,209 scores are exactly 0,
+so "the top decile" is the whole list and every percentile was 50.0. The cohort is the 121 names whose score is above the cutoff (112
+priced); the sentinel (251), jensen (298 listed; 266 after the price check), elizabet (476) and cecil v1 (20) cohorts are as registered.
+The Jensen price check dropped 158 of the 2,304 names that carried a recorded price (the file parsed English words as tickers).
+
+| Cohort (entry; priced of listed) | Horizon | Picks | Random | Matched | Picks minus random | Percentile, mean / median | Matched, mean / median |
+|---|---|---|---|---|---|---|---|
+| threshold (2025-07-28; 112 of 121) | 4w | -0.42% | +1.95% | +2.10% | -2.37 | 0.9 / 53.4 | 0.7 / 42.6 |
+|  | 13w | +2.68% | +5.00% | +5.51% | -2.32 | 10.2 / 64.9 | 7.7 / 72.7 |
+|  | 26w | +5.70% | +11.06% | +11.77% | -5.36 | 3.7 / 52.3 | 2.2 / 48.4 |
+|  | 52w | +13.01% | +16.97% | +18.51% | -3.96 | 18.6 / 78.5 | 12.7 / 53.2 |
+| sentinel (2025-09-22; 240 of 251) | 4w | -2.16% | -1.44% | -1.24% | -0.72 | 8.9 / 30.2 | 1.8 / 7.5 |
+|  | 13w | +2.26% | +1.46% | +1.78% | +0.80 | 75.5 / 93.5 | 69.3 / 70.0 |
+|  | 26w | +1.17% | +0.63% | +1.80% | +0.55 | 62.3 / 53.9 | 34.8 / 13.0 |
+|  | 52w | +10.76% | +11.78% | +12.80% | -1.01 | 35.0 / 95.5 | 20.4 / 72.9 |
+| jensen (2025-09-22; 240 of 266) | 4w | -2.30% | -1.64% | -1.75% | -0.66 | 11.4 / 0.0 | 25.4 / 6.4 |
+|  | 13w | -1.16% | +1.03% | +0.42% | -2.19 | 2.0 / 0.2 | 15.6 / 35.0 |
+|  | 26w | +0.04% | -0.47% | -1.70% | +0.51 | 61.9 / 0.0 | 76.7 / 11.2 |
+|  | 52w | +14.73% | +10.65% | +9.97% | +4.08 | 95.1 / 22.4 | 91.3 / 76.5 |
+| elizabet (2025-09-25; 443 of 476) | 4w | -1.46% | -0.79% | -0.75% | -0.67 | 1.6 / 0.0 | 2.9 / 0.0 |
+|  | 13w | +2.38% | +1.59% | +1.91% | +0.79 | 86.7 / 99.6 | 71.8 / 95.6 |
+|  | 26w | -1.15% | -0.55% | -0.22% | -0.60 | 29.4 / 36.4 | 24.9 / 47.4 |
+|  | 52w | +12.14% | +10.61% | +11.94% | +1.53 | 82.2 / 99.8 | 54.4 / 93.7 |
+| cecil v1 (2025-09-25; 20 of 20) | 4w | -1.36% | -0.85% | -0.63% | -0.52 | 39.5 / 42.5 | 31.8 / 33.1 |
+|  | 13w | +0.59% | +2.06% | +2.41% | -1.47 | 36.2 / 11.9 | 29.2 / 6.5 |
+|  | 26w | -0.76% | +0.85% | +2.33% | -1.61 | 41.7 / 48.0 | 28.5 / 35.6 |
+|  | 52w | +4.93% | +12.64% | +13.61% | -7.71 | 22.4 / 27.0 | 15.1 / 12.7 |
+| overlap (2025-09-25; 79 of 87) | 4w | -2.17% | -1.18% | -1.41% | -1.00 | 11.8 / 0.5 | 20.9 / 3.2 |
+|  | 13w | +2.07% | +1.52% | +1.30% | +0.56 | 62.3 / 86.5 | 65.4 / 78.7 |
+|  | 26w | -1.10% | -0.67% | -0.82% | -0.43 | 44.5 / 40.0 | 47.0 / 55.3 |
+|  | 52w | +13.10% | +10.91% | +11.64% | +2.19 | 70.8 / 99.2 | 61.8 / 96.3 |
+
+Registered verdicts: threshold no, sentinel no, jensen no, elizabet no, cecil v1 no, overlap no. No cell of the 24 reaches the 97.5 line
+on the mean and the median together, uncontrolled and matched. The closest are jensen at 52 weeks (mean percentile 95.1, +4.1 points,
+but the median pick sits at the 22nd percentile: a few lottery winners, which is what a "bagger" score selects) and elizabet at 13 and
+52 weeks (median percentile 99.6 and 99.8, mean 86.7 and 82.2).
+
+**What it says.** The lists are not informative about the next year, and one of them is informative in the wrong direction: the July
+threshold file's 121 names with a nonzero score made 2 to 5 points less than random at every horizon (mean percentile 0.9, 10.2, 3.7
+and 18.6; 2.2 matched at 26 weeks), the signature of a score that ranks what has already run. The jensen list lost to random at 13
+weeks by 2.2 points (percentile 2.0). Cecil's first-generation list of 20 returned +4.9% over the year against +12.6% for random names
+from the same pool, the 22nd percentile, which at 20 names is not distinguishable from luck but is not a result to defend either. All
+six cohorts trailed random over the first four weeks (-0.5 to -2.4 points), but five of the six enter within four days of each other
+(the threshold list entered two months earlier) and share the same four weeks, in which the random draws themselves lost 0.8% to 1.6%,
+so those five are one market episode seen five times, not five findings.
+
+**Predictions.** 1 right: no cohort passes. 2 half right: elizabet lost its 52-week edge when matched (mean percentile 82.2 to 54.4,
++0.2 points against the matched draws), but jensen did not (95.1 to 91.3 on the mean, and the matched benchmark was lower, so the gap
+grew to +4.8 points), which means the volatility-and-price cell does not explain jensen's one good horizon; its median does.
+
+**What this does not show.** Survivors: a name Yahoo has no bars for is out of the pool and the picks alike (119 to 253 per file), so
+failures that delisted are missing from both sides. The lists were scored once, at fixed entry dates, in one rising market. The
+October 2025 rubric lists, whose 250-day window closes about 2026-10-22, are not in this pass.
+
+**What this changes.** Nothing. The 2025 bot lists are closed as scored: no input from them goes into the engines, and the next dated
+lists to grade are the forward ones.

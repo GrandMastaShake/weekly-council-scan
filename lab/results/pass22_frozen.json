@@ -1,0 +1,549 @@
+{
+ "registered": "d1ba76f",
+ "last_price_day": "2026-10-09",
+ "jensen_mismatched": 158,
+ "cohorts": {
+  "threshold": {
+   "entry": "2025-07-28",
+   "pool": 2022,
+   "picks": 112,
+   "picks_listed": 121,
+   "dropped": {
+    "no_price": 187,
+    "pick_not_in_pool": 0
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-08-22",
+     "n_pool": 2022,
+     "n_picks": 112,
+     "stopped_early": 0,
+     "pick_mean": -0.004239288756772929,
+     "pick_median": 0.016879746322874034,
+     "random_mean": 0.019474312465369382,
+     "random_median": 0.016691018085500584,
+     "matched_mean": 0.020957266006077505,
+     "percentile": {
+      "mean": 0.95,
+      "median": 53.35,
+      "mean_matched": 0.7,
+      "median_matched": 42.65
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-10-24",
+     "n_pool": 2022,
+     "n_picks": 112,
+     "stopped_early": 0,
+     "pick_mean": 0.026782976051593736,
+     "pick_median": 0.03269347920037824,
+     "random_mean": 0.050030659512776465,
+     "random_median": 0.028357410812860175,
+     "matched_mean": 0.05514810916238608,
+     "percentile": {
+      "mean": 10.2,
+      "median": 64.875,
+      "mean_matched": 7.65,
+      "median_matched": 72.7
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-01-23",
+     "n_pool": 2022,
+     "n_picks": 112,
+     "stopped_early": 0,
+     "pick_mean": 0.05698973935367076,
+     "pick_median": 0.06137669116218236,
+     "random_mean": 0.11057767496809653,
+     "random_median": 0.062076601607999764,
+     "matched_mean": 0.11774275537997146,
+     "percentile": {
+      "mean": 3.7,
+      "median": 52.3,
+      "mean_matched": 2.2,
+      "median_matched": 48.425
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-07-24",
+     "n_pool": 2022,
+     "n_picks": 112,
+     "stopped_early": 0,
+     "pick_mean": 0.1300947754583784,
+     "pick_median": 0.1352072383449131,
+     "random_mean": 0.1697140859362371,
+     "random_median": 0.10964861555938518,
+     "matched_mean": 0.18510718485801597,
+     "percentile": {
+      "mean": 18.55,
+      "median": 78.45,
+      "mean_matched": 12.65,
+      "median_matched": 53.2
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  },
+  "sentinel": {
+   "entry": "2025-09-22",
+   "pool": 2256,
+   "picks": 240,
+   "picks_listed": 251,
+   "dropped": {
+    "no_price": 244,
+    "pick_not_in_pool": 0
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-10-17",
+     "n_pool": 2256,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": -0.021587742381587983,
+     "pick_median": -0.01970482145467428,
+     "random_mean": -0.014364099144575383,
+     "random_median": -0.017819877625975433,
+     "matched_mean": -0.012407814281274307,
+     "percentile": {
+      "mean": 8.9,
+      "median": 30.2,
+      "mean_matched": 1.75,
+      "median_matched": 7.55
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-12-19",
+     "n_pool": 2256,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": 0.0225828599399077,
+     "pick_median": 0.014788954444441171,
+     "random_mean": 0.014573973275336756,
+     "random_median": 0.0036730674907850007,
+     "matched_mean": 0.017824861946779028,
+     "percentile": {
+      "mean": 75.45,
+      "median": 93.55,
+      "mean_matched": 69.3,
+      "median_matched": 69.95
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-03-20",
+     "n_pool": 2256,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": 0.011746105783135138,
+     "pick_median": -0.009669894279844382,
+     "random_mean": 0.006284409253976532,
+     "random_median": -0.011369692226579008,
+     "matched_mean": 0.017973238558913567,
+     "percentile": {
+      "mean": 62.3,
+      "median": 53.875,
+      "mean_matched": 34.75,
+      "median_matched": 13.0
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-09-18",
+     "n_pool": 2256,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": 0.10762884872771593,
+     "pick_median": 0.08569710328150437,
+     "random_mean": 0.11777863276578864,
+     "random_median": 0.05149619842745278,
+     "matched_mean": 0.12797584044827312,
+     "percentile": {
+      "mean": 35.0,
+      "median": 95.45,
+      "mean_matched": 20.4,
+      "median_matched": 72.925
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  },
+  "jensen": {
+   "entry": "2025-09-22",
+   "pool": 1939,
+   "picks": 240,
+   "picks_listed": 266,
+   "dropped": {
+    "no_price": 253,
+    "pick_not_in_pool": 0
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-10-17",
+     "n_pool": 1939,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": -0.022963280328502263,
+     "pick_median": -0.042069307897936004,
+     "random_mean": -0.016386273557362076,
+     "random_median": -0.018569366808416095,
+     "matched_mean": -0.01753805606641123,
+     "percentile": {
+      "mean": 11.45,
+      "median": 0.0,
+      "mean_matched": 25.45,
+      "median_matched": 6.4
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-12-19",
+     "n_pool": 1939,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": -0.011642567583386103,
+     "pick_median": -0.0225461135853931,
+     "random_mean": 0.010271730798458672,
+     "random_median": 0.0031023837265501844,
+     "matched_mean": 0.00419068094261268,
+     "percentile": {
+      "mean": 2.05,
+      "median": 0.2,
+      "mean_matched": 15.6,
+      "median_matched": 35.0
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-03-20",
+     "n_pool": 1939,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": 0.00043850134754252064,
+     "pick_median": -0.09409703664310903,
+     "random_mean": -0.004657284472368283,
+     "random_median": -0.017001929044457964,
+     "matched_mean": -0.017010071587991175,
+     "percentile": {
+      "mean": 61.9,
+      "median": 0.0,
+      "mean_matched": 76.7,
+      "median_matched": 11.15
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-09-18",
+     "n_pool": 1939,
+     "n_picks": 240,
+     "stopped_early": 0,
+     "pick_mean": 0.1473033738223452,
+     "pick_median": 0.03400083873314974,
+     "random_mean": 0.10649904351082412,
+     "random_median": 0.045735918176387884,
+     "matched_mean": 0.0996512884436841,
+     "percentile": {
+      "mean": 95.1,
+      "median": 22.45,
+      "mean_matched": 91.35,
+      "median_matched": 76.5
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  },
+  "elizabet": {
+   "entry": "2025-09-25",
+   "pool": 1803,
+   "picks": 443,
+   "picks_listed": 476,
+   "dropped": {
+    "no_price": 165,
+    "pick_not_in_pool": 0
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-10-17",
+     "n_pool": 1803,
+     "n_picks": 443,
+     "stopped_early": 0,
+     "pick_mean": -0.014598532710656779,
+     "pick_median": -0.024125747205951398,
+     "random_mean": -0.0078921422930827,
+     "random_median": -0.010100998571853087,
+     "matched_mean": -0.007471732575673461,
+     "percentile": {
+      "mean": 1.55,
+      "median": 0.0,
+      "mean_matched": 2.9,
+      "median_matched": 0.0
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-12-19",
+     "n_pool": 1803,
+     "n_picks": 443,
+     "stopped_early": 0,
+     "pick_mean": 0.023834500666507684,
+     "pick_median": 0.01928153310480707,
+     "random_mean": 0.015892131051111254,
+     "random_median": 0.008131949083632921,
+     "matched_mean": 0.019149703345151856,
+     "percentile": {
+      "mean": 86.7,
+      "median": 99.575,
+      "mean_matched": 71.8,
+      "median_matched": 95.575
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-03-20",
+     "n_pool": 1803,
+     "n_picks": 443,
+     "stopped_early": 0,
+     "pick_mean": -0.011465564040562835,
+     "pick_median": -0.016610061829345324,
+     "random_mean": -0.0055112760765277415,
+     "random_median": -0.013599934281939906,
+     "matched_mean": -0.002241187844932764,
+     "percentile": {
+      "mean": 29.35,
+      "median": 36.35,
+      "mean_matched": 24.9,
+      "median_matched": 47.425
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-09-18",
+     "n_pool": 1803,
+     "n_picks": 443,
+     "stopped_early": 0,
+     "pick_mean": 0.12136217430303858,
+     "pick_median": 0.09083126801192964,
+     "random_mean": 0.1060818536779378,
+     "random_median": 0.04708671576752908,
+     "matched_mean": 0.11935683716813289,
+     "percentile": {
+      "mean": 82.2,
+      "median": 99.85,
+      "mean_matched": 54.35,
+      "median_matched": 93.7
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  },
+  "cecil_v1": {
+   "entry": "2025-09-25",
+   "pool": 2257,
+   "picks": 20,
+   "picks_listed": 20,
+   "dropped": {
+    "no_price": 243,
+    "pick_not_in_pool": 0
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-10-17",
+     "n_pool": 2257,
+     "n_picks": 20,
+     "stopped_early": 0,
+     "pick_mean": -0.013626568364716258,
+     "pick_median": -0.015327407837570972,
+     "random_mean": -0.008458506184479353,
+     "random_median": -0.012606851429469485,
+     "matched_mean": -0.006311160983979702,
+     "percentile": {
+      "mean": 39.45,
+      "median": 42.5,
+      "mean_matched": 31.75,
+      "median_matched": 33.1
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-12-19",
+     "n_pool": 2257,
+     "n_picks": 20,
+     "stopped_early": 0,
+     "pick_mean": 0.0058647314610701775,
+     "pick_median": -0.025926392253113995,
+     "random_mean": 0.020585763472530095,
+     "random_median": 0.0082558546412695,
+     "matched_mean": 0.02405333966050553,
+     "percentile": {
+      "mean": 36.25,
+      "median": 11.95,
+      "mean_matched": 29.25,
+      "median_matched": 6.5
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-03-20",
+     "n_pool": 2257,
+     "n_picks": 20,
+     "stopped_early": 0,
+     "pick_mean": -0.007603254000176823,
+     "pick_median": -0.006829078611385153,
+     "random_mean": 0.00853301812284132,
+     "random_median": -0.005649942587620012,
+     "matched_mean": 0.023251695914931,
+     "percentile": {
+      "mean": 41.7,
+      "median": 47.95,
+      "mean_matched": 28.5,
+      "median_matched": 35.625
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-09-18",
+     "n_pool": 2257,
+     "n_picks": 20,
+     "stopped_early": 0,
+     "pick_mean": 0.04933858352338193,
+     "pick_median": 0.009709672196456076,
+     "random_mean": 0.12640204856883702,
+     "random_median": 0.06233841193083173,
+     "matched_mean": 0.13607940724281792,
+     "percentile": {
+      "mean": 22.4,
+      "median": 27.0,
+      "mean_matched": 15.05,
+      "median_matched": 12.65
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  },
+  "overlap": {
+   "entry": "2025-09-25",
+   "pool": 1155,
+   "picks": 79,
+   "picks_listed": 87,
+   "dropped": {
+    "no_price": 119,
+    "pick_not_in_pool": 1
+   },
+   "horizons": {
+    "4": {
+     "available": true,
+     "end": "2025-10-17",
+     "n_pool": 1155,
+     "n_picks": 79,
+     "stopped_early": 0,
+     "pick_mean": -0.02172642507982344,
+     "pick_median": -0.035719796444633634,
+     "random_mean": -0.011753493805084204,
+     "random_median": -0.014094312892555189,
+     "matched_mean": -0.014085725552327805,
+     "percentile": {
+      "mean": 11.8,
+      "median": 0.475,
+      "mean_matched": 20.9,
+      "median_matched": 3.2
+     },
+     "beats_random": false
+    },
+    "13": {
+     "available": true,
+     "end": "2025-12-19",
+     "n_pool": 1155,
+     "n_picks": 79,
+     "stopped_early": 0,
+     "pick_mean": 0.020740545333829772,
+     "pick_median": 0.02094001033689663,
+     "random_mean": 0.015156319765580477,
+     "random_median": 0.007305280370142533,
+     "matched_mean": 0.01295061742644263,
+     "percentile": {
+      "mean": 62.3,
+      "median": 86.475,
+      "mean_matched": 65.4,
+      "median_matched": 78.675
+     },
+     "beats_random": false
+    },
+    "26": {
+     "available": true,
+     "end": "2026-03-20",
+     "n_pool": 1155,
+     "n_picks": 79,
+     "stopped_early": 0,
+     "pick_mean": -0.010981443652746111,
+     "pick_median": -0.021388025490396534,
+     "random_mean": -0.0066701588376269095,
+     "random_median": -0.01386918991340315,
+     "matched_mean": -0.008156070500546113,
+     "percentile": {
+      "mean": 44.55,
+      "median": 39.975,
+      "mean_matched": 47.0,
+      "median_matched": 55.325
+     },
+     "beats_random": false
+    },
+    "52": {
+     "available": true,
+     "end": "2026-09-18",
+     "n_pool": 1155,
+     "n_picks": 79,
+     "stopped_early": 0,
+     "pick_mean": 0.1310354218839999,
+     "pick_median": 0.14004419115930888,
+     "random_mean": 0.10913720591898128,
+     "random_median": 0.05865259661753248,
+     "matched_mean": 0.11642439998150457,
+     "percentile": {
+      "mean": 70.75,
+      "median": 99.225,
+      "mean_matched": 61.75,
+      "median_matched": 96.3
+     },
+     "beats_random": false
+    }
+   },
+   "passes": false
+  }
+ },
+ "verdicts": {
+  "threshold": false,
+  "sentinel": false,
+  "jensen": false,
+  "elizabet": false,
+  "cecil_v1": false,
+  "overlap": false
+ }
+}
