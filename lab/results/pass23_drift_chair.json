@@ -1,0 +1,1035 @@
+{
+ "registered": "0400fdb",
+ "weeks": 96,
+ "variants": {
+  "A last week": {
+   "active_weeks": 34,
+   "hold1_pool": {
+    "weeks": 34,
+    "testable": true,
+    "mean": -0.0034431712654182695,
+    "t": -0.7888015254919124,
+    "halves": [
+     -0.012398427957560978,
+     0.00551208542672444
+    ],
+    "median": -0.0015143358701656517,
+    "has_edge": false
+   },
+   "hold1_cand": {
+    "weeks": 34,
+    "testable": true,
+    "mean": -0.0033621854865165265,
+    "t": -0.9303639653461753,
+    "halves": [
+     -0.010295526251139862,
+     0.0035711552781068083
+    ],
+    "median": -0.0006098133359467017,
+    "has_edge": false
+   },
+   "hold4_pool": {
+    "weeks": 34,
+    "testable": true,
+    "mean": 0.004038356932412484,
+    "t": 3.0233816949791508,
+    "halves": [
+     0.001462067326197831,
+     0.006614646538627137
+    ],
+    "median": 0.003055423499146832,
+    "has_edge": true
+   },
+   "hold4_cand": {
+    "weeks": 34,
+    "testable": true,
+    "mean": 0.002770709650488102,
+    "t": 1.8819376923582665,
+    "halves": [
+     -0.00011709663203659012,
+     0.005658515933012794
+    ],
+    "median": 0.0012674095114594218,
+    "has_edge": false
+   },
+   "team": {
+    "weeks": 96,
+    "mean_diff": -0.000944324638847376,
+    "t": -2.104176842858009,
+    "halves": [
+     -0.0012052602574786223,
+     -0.0006833890202161298
+    ],
+    "adds": false
+   }
+  },
+  "B three weeks": {
+   "active_weeks": 53,
+   "hold1_pool": {
+    "weeks": 53,
+    "testable": true,
+    "mean": 0.001791783848358253,
+    "t": 0.5895278178869805,
+    "halves": [
+     -0.00154260179787484,
+     0.005002673729916047
+    ],
+    "median": -0.0003642303646231859,
+    "has_edge": false
+   },
+   "hold1_cand": {
+    "weeks": 53,
+    "testable": true,
+    "mean": 0.0016781161254589192,
+    "t": 0.5935678865881691,
+    "halves": [
+     -0.0018172369288162933,
+     0.0050440116592054204
+    ],
+    "median": -0.002113145201671416,
+    "has_edge": false
+   },
+   "hold4_pool": {
+    "weeks": 53,
+    "testable": true,
+    "mean": 0.0020359669437746628,
+    "t": 1.2077383419525043,
+    "halves": [
+     5.5472310487381275e-05,
+     0.00394310992397723
+    ],
+    "median": 0.0006434208666239016,
+    "has_edge": false
+   },
+   "hold4_cand": {
+    "weeks": 53,
+    "testable": true,
+    "mean": 0.002248640346121586,
+    "t": 1.2648283805911642,
+    "halves": [
+     -0.0012441391908156775,
+     0.005612057677987099
+    ],
+    "median": 0.001052616408171325,
+    "has_edge": false
+   },
+   "team": {
+    "weeks": 96,
+    "mean_diff": -0.0004157775771513206,
+    "t": -1.0967644934828185,
+    "halves": [
+     -0.0006491813503995728,
+     -0.00018237380390306827
+    ],
+    "adds": false
+   }
+  }
+ },
+ "verdicts": {
+  "A last week hold1_pool": false,
+  "A last week hold4_pool": true,
+  "B three weeks hold1_pool": false,
+  "B three weeks hold4_pool": false,
+  "A last week team": false,
+  "B three weeks team": false
+ },
+ "weekly_picks": [
+  {
+   "W": "2024-09-09"
+  },
+  {
+   "W": "2024-09-16"
+  },
+  {
+   "W": "2024-09-23"
+  },
+  {
+   "W": "2024-09-30"
+  },
+  {
+   "W": "2024-10-07"
+  },
+  {
+   "W": "2024-10-14"
+  },
+  {
+   "W": "2024-10-21",
+   "A last week": [
+    "PLD",
+    "TRV",
+    "CCI",
+    "GS",
+    "MS"
+   ],
+   "B three weeks": [
+    "PLD",
+    "TRV",
+    "NKE",
+    "CCI",
+    "GS"
+   ]
+  },
+  {
+   "W": "2024-10-28",
+   "A last week": [
+    "CINF",
+    "LUV",
+    "CSGP",
+    "HAS",
+    "DECK"
+   ],
+   "B three weeks": [
+    "CINF",
+    "LUV",
+    "PLD",
+    "TRV",
+    "CSGP"
+   ]
+  },
+  {
+   "W": "2024-11-04",
+   "A last week": [
+    "ALL",
+    "UBER",
+    "VTR",
+    "EQT",
+    "IP"
+   ],
+   "B three weeks": [
+    "ALL",
+    "CINF",
+    "LUV",
+    "UBER",
+    "VTR"
+   ]
+  },
+  {
+   "W": "2024-11-11",
+   "A last week": [
+    "MRNA",
+    "WBD",
+    "MPC",
+    "NWS",
+    "NWSA"
+   ],
+   "B three weeks": [
+    "ALL",
+    "CINF",
+    "LUV",
+    "MRNA",
+    "UBER"
+   ]
+  },
+  {
+   "W": "2024-11-18",
+   "B three weeks": [
+    "ALL",
+    "MRNA",
+    "PSKY",
+    "UBER",
+    "VST"
+   ]
+  },
+  {
+   "W": "2024-11-25",
+   "A last week": [
+    "DE",
+    "WMT",
+    "NVDA",
+    "INTU",
+    "PANW"
+   ],
+   "B three weeks": [
+    "MRNA",
+    "PSKY",
+    "VST",
+    "WBD",
+    "MPC"
+   ]
+  },
+  {
+   "W": "2024-12-02",
+   "B three weeks": [
+    "TSN",
+    "OXY",
+    "DE",
+    "CRWD",
+    "LYV"
+   ]
+  },
+  {
+   "W": "2024-12-09",
+   "B three weeks": [
+    "DE",
+    "CRWD",
+    "ULTA",
+    "BF-B",
+    "SJM"
+   ]
+  },
+  {
+   "W": "2024-12-16"
+  },
+  {
+   "W": "2024-12-23"
+  },
+  {
+   "W": "2024-12-30"
+  },
+  {
+   "W": "2025-01-06"
+  },
+  {
+   "W": "2025-01-13"
+  },
+  {
+   "W": "2025-01-20"
+  },
+  {
+   "W": "2025-01-27",
+   "A last week": [
+    "PLD",
+    "FCX",
+    "TRV",
+    "GE",
+    "ISRG"
+   ],
+   "B three weeks": [
+    "PLD",
+    "FCX",
+    "TRV",
+    "GS",
+    "MS"
+   ]
+  },
+  {
+   "W": "2025-02-03",
+   "A last week": [
+    "VLO",
+    "NUE",
+    "WY",
+    "BXP",
+    "PHM"
+   ],
+   "B three weeks": [
+    "PLD",
+    "VLO",
+    "NUE",
+    "WY",
+    "BXP"
+   ]
+  },
+  {
+   "W": "2025-02-10",
+   "A last week": [
+    "MPC",
+    "UBER",
+    "EL",
+    "IT",
+    "CNC"
+   ],
+   "B three weeks": [
+    "MPC",
+    "PLD",
+    "UBER",
+    "VLO",
+    "NUE"
+   ]
+  },
+  {
+   "W": "2025-02-17",
+   "A last week": [
+    "VTR",
+    "WYNN",
+    "CINF",
+    "MGM",
+    "CVS"
+   ],
+   "B three weeks": [
+    "MPC",
+    "UBER",
+    "VLO",
+    "VTR",
+    "NUE"
+   ]
+  },
+  {
+   "W": "2025-02-24",
+   "A last week": [
+    "LYV",
+    "NEM",
+    "HAS",
+    "EQT",
+    "VMC"
+   ],
+   "B three weeks": [
+    "LYV",
+    "MPC",
+    "UBER",
+    "VTR",
+    "EL"
+   ]
+  },
+  {
+   "W": "2025-03-03",
+   "A last week": [
+    "NCLH",
+    "NRG",
+    "BRK-B",
+    "PNW",
+    "AXON"
+   ],
+   "B three weeks": [
+    "LYV",
+    "NCLH",
+    "VTR",
+    "WYNN",
+    "CINF"
+   ]
+  },
+  {
+   "W": "2025-03-10",
+   "B three weeks": [
+    "LYV",
+    "NCLH",
+    "NRG",
+    "BRK-B",
+    "PNW"
+   ]
+  },
+  {
+   "W": "2025-03-17",
+   "B three weeks": [
+    "NCLH",
+    "CCI",
+    "NRG",
+    "BRK-B",
+    "PNW"
+   ]
+  },
+  {
+   "W": "2025-03-24"
+  },
+  {
+   "W": "2025-03-31"
+  },
+  {
+   "W": "2025-04-07"
+  },
+  {
+   "W": "2025-04-14"
+  },
+  {
+   "W": "2025-04-21",
+   "A last week": [
+    "TRV",
+    "UAL",
+    "GS",
+    "BAC",
+    "JNJ"
+   ]
+  },
+  {
+   "W": "2025-04-28",
+   "A last week": [
+    "DOW",
+    "VLO",
+    "BA",
+    "DLR",
+    "HAS"
+   ],
+   "B three weeks": [
+    "DOW",
+    "TRV",
+    "VLO",
+    "BA",
+    "DLR"
+   ]
+  },
+  {
+   "W": "2025-05-05",
+   "A last week": [
+    "CCI",
+    "EL",
+    "MAA",
+    "ALB",
+    "UDR"
+   ],
+   "B three weeks": [
+    "CCI",
+    "DOW",
+    "EL",
+    "TRV",
+    "VLO"
+   ]
+  },
+  {
+   "W": "2025-05-12",
+   "A last week": [
+    "F",
+    "MPC",
+    "PSKY",
+    "BG",
+    "CF"
+   ],
+   "B three weeks": [
+    "CCI",
+    "DOW",
+    "EL",
+    "F",
+    "VLO"
+   ]
+  },
+  {
+   "W": "2025-05-19",
+   "B three weeks": [
+    "CCI",
+    "EL",
+    "F",
+    "MAA",
+    "ALB"
+   ]
+  },
+  {
+   "W": "2025-05-26",
+   "B three weeks": [
+    "F",
+    "DECK",
+    "NRG",
+    "MPC",
+    "PSKY"
+   ]
+  },
+  {
+   "W": "2025-06-02",
+   "B three weeks": [
+    "DECK",
+    "NRG",
+    "FOX",
+    "FOXA",
+    "TTWO"
+   ]
+  },
+  {
+   "W": "2025-06-09",
+   "B three weeks": [
+    "DECK",
+    "DG",
+    "HPE",
+    "ULTA",
+    "RL"
+   ]
+  },
+  {
+   "W": "2025-06-16"
+  },
+  {
+   "W": "2025-06-23"
+  },
+  {
+   "W": "2025-06-30"
+  },
+  {
+   "W": "2025-07-07"
+  },
+  {
+   "W": "2025-07-14"
+  },
+  {
+   "W": "2025-07-21",
+   "A last week": [
+    "TRV",
+    "C",
+    "GE",
+    "GS",
+    "BLK"
+   ],
+   "B three weeks": [
+    "TRV",
+    "C",
+    "GE",
+    "GS",
+    "BLK"
+   ]
+  },
+  {
+   "W": "2025-07-28",
+   "A last week": [
+    "HAS",
+    "LVS",
+    "COF",
+    "SYF",
+    "DECK"
+   ],
+   "B three weeks": [
+    "TRV",
+    "HAS",
+    "LVS",
+    "COF",
+    "SYF"
+   ]
+  },
+  {
+   "W": "2025-08-04",
+   "A last week": [
+    "ALB",
+    "ALL",
+    "SWK",
+    "MGM",
+    "CINF"
+   ],
+   "B three weeks": [
+    "ALB",
+    "ALL",
+    "SWK",
+    "TRV",
+    "HAS"
+   ]
+  },
+  {
+   "W": "2025-08-11",
+   "A last week": [
+    "FRT",
+    "TTWO",
+    "WBD",
+    "APA",
+    "AXON"
+   ],
+   "B three weeks": [
+    "ALB",
+    "ALL",
+    "FRT",
+    "SWK",
+    "TTWO"
+   ]
+  },
+  {
+   "W": "2025-08-18",
+   "B three weeks": [
+    "ALB",
+    "ALL",
+    "FRT",
+    "SWK",
+    "TTWO"
+   ]
+  },
+  {
+   "W": "2025-08-25",
+   "B three weeks": [
+    "FRT",
+    "TTWO",
+    "WBD",
+    "APA",
+    "AXON"
+   ]
+  },
+  {
+   "W": "2025-09-01",
+   "B three weeks": [
+    "DG",
+    "ULTA",
+    "CRWD",
+    "TJX",
+    "PANW"
+   ]
+  },
+  {
+   "W": "2025-09-08",
+   "B three weeks": [
+    "DLTR",
+    "DG",
+    "CPRT",
+    "ULTA",
+    "CRWD"
+   ]
+  },
+  {
+   "W": "2025-09-15"
+  },
+  {
+   "W": "2025-09-22"
+  },
+  {
+   "W": "2025-09-29"
+  },
+  {
+   "W": "2025-10-06"
+  },
+  {
+   "W": "2025-10-13"
+  },
+  {
+   "W": "2025-10-20",
+   "A last week": [
+    "MS",
+    "SYF",
+    "TRV",
+    "JBHT",
+    "C"
+   ],
+   "B three weeks": [
+    "NKE",
+    "MS",
+    "SYF",
+    "TRV",
+    "JBHT"
+   ]
+  },
+  {
+   "W": "2025-10-27",
+   "A last week": [
+    "INTC",
+    "LUV",
+    "DLR",
+    "EQT",
+    "DOW"
+   ],
+   "B three weeks": [
+    "INTC",
+    "LUV",
+    "DLR",
+    "EQT",
+    "DOW"
+   ]
+  },
+  {
+   "W": "2025-11-03",
+   "A last week": [
+    "CNC",
+    "VTR",
+    "WY",
+    "EL",
+    "FOX"
+   ],
+   "B three weeks": [
+    "CNC",
+    "INTC",
+    "LUV",
+    "VTR",
+    "WY"
+   ]
+  },
+  {
+   "W": "2025-11-10",
+   "A last week": [
+    "HST",
+    "UBER",
+    "ALL",
+    "ALB",
+    "MRNA"
+   ],
+   "B three weeks": [
+    "CNC",
+    "HST",
+    "INTC",
+    "LUV",
+    "UBER"
+   ]
+  },
+  {
+   "W": "2025-11-17",
+   "B three weeks": [
+    "CNC",
+    "HST",
+    "UBER",
+    "VTR",
+    "WY"
+   ]
+  },
+  {
+   "W": "2025-11-24",
+   "B three weeks": [
+    "HST",
+    "UBER",
+    "ALL",
+    "ALB",
+    "MRNA"
+   ]
+  },
+  {
+   "W": "2025-12-01"
+  },
+  {
+   "W": "2025-12-08",
+   "B three weeks": [
+    "DG",
+    "CRM",
+    "DLTR",
+    "ULTA",
+    "ROST"
+   ]
+  },
+  {
+   "W": "2025-12-15"
+  },
+  {
+   "W": "2025-12-22"
+  },
+  {
+   "W": "2025-12-29"
+  },
+  {
+   "W": "2026-01-05"
+  },
+  {
+   "W": "2026-01-12"
+  },
+  {
+   "W": "2026-01-19"
+  },
+  {
+   "W": "2026-01-26",
+   "A last week": [
+    "PLD",
+    "INTC",
+    "FCX",
+    "HAL",
+    "TRV"
+   ],
+   "B three weeks": [
+    "PLD",
+    "INTC",
+    "FCX",
+    "HAL",
+    "TRV"
+   ]
+  },
+  {
+   "W": "2026-02-02",
+   "A last week": [
+    "BA",
+    "GEV",
+    "BXP",
+    "DOW",
+    "WY"
+   ],
+   "B three weeks": [
+    "BA",
+    "GEV",
+    "PLD",
+    "INTC",
+    "FCX"
+   ]
+  },
+  {
+   "W": "2026-02-09",
+   "A last week": [
+    "MGM",
+    "REG",
+    "DOC",
+    "FOXA",
+    "FOX"
+   ],
+   "B three weeks": [
+    "BA",
+    "GEV",
+    "MGM",
+    "PLD",
+    "REG"
+   ]
+  },
+  {
+   "W": "2026-02-16",
+   "A last week": [
+    "FRT",
+    "UDR",
+    "HAS",
+    "CINF",
+    "ACGL"
+   ],
+   "B three weeks": [
+    "BA",
+    "FRT",
+    "GEV",
+    "MGM",
+    "UDR"
+   ]
+  },
+  {
+   "W": "2026-02-23",
+   "A last week": [
+    "OXY",
+    "EIX",
+    "NEM",
+    "CF",
+    "KVUE"
+   ],
+   "B three weeks": [
+    "FRT",
+    "MGM",
+    "UDR",
+    "REG",
+    "OXY"
+   ]
+  },
+  {
+   "W": "2026-03-02",
+   "A last week": [
+    "PNW",
+    "APA",
+    "AXON",
+    "CRM",
+    "AMT"
+   ],
+   "B three weeks": [
+    "FRT",
+    "PNW",
+    "UDR",
+    "OXY",
+    "HAS"
+   ]
+  },
+  {
+   "W": "2026-03-09",
+   "B three weeks": [
+    "PNW",
+    "OXY",
+    "APA",
+    "AXON",
+    "AES"
+   ]
+  },
+  {
+   "W": "2026-03-16",
+   "B three weeks": [
+    "PNW",
+    "APA",
+    "AXON",
+    "AES",
+    "CRM"
+   ]
+  },
+  {
+   "W": "2026-03-23"
+  },
+  {
+   "W": "2026-03-30"
+  },
+  {
+   "W": "2026-04-06"
+  },
+  {
+   "W": "2026-04-13"
+  },
+  {
+   "W": "2026-04-20",
+   "A last week": [
+    "PLD",
+    "C",
+    "BNY",
+    "MS",
+    "BLK"
+   ]
+  },
+  {
+   "W": "2026-04-27",
+   "A last week": [
+    "INTC",
+    "BA",
+    "DOW",
+    "CBRE",
+    "NEM"
+   ],
+   "B three weeks": [
+    "INTC",
+    "BA",
+    "DOW",
+    "CBRE",
+    "PLD"
+   ]
+  },
+  {
+   "W": "2026-05-04",
+   "A last week": [
+    "ARE",
+    "BG",
+    "F",
+    "PSX",
+    "UDR"
+   ],
+   "B three weeks": [
+    "ARE",
+    "BG",
+    "F",
+    "INTC",
+    "PSX"
+   ]
+  },
+  {
+   "W": "2026-05-11",
+   "A last week": [
+    "AES",
+    "ALB",
+    "DOC",
+    "HST",
+    "MPC"
+   ],
+   "B three weeks": [
+    "AES",
+    "ALB",
+    "ARE",
+    "BG",
+    "DOC"
+   ]
+  },
+  {
+   "W": "2026-05-18",
+   "B three weeks": [
+    "AES",
+    "ALB",
+    "ARE",
+    "BG",
+    "DOC"
+   ]
+  },
+  {
+   "W": "2026-05-25",
+   "A last week": [
+    "TTWO",
+    "KEYS",
+    "TGT",
+    "TJX",
+    "ROST"
+   ],
+   "B three weeks": [
+    "AES",
+    "ALB",
+    "DOC",
+    "HST",
+    "MPC"
+   ]
+  },
+  {
+   "W": "2026-06-01",
+   "B three weeks": [
+    "TTWO",
+    "FOXA",
+    "HAS",
+    "CRM",
+    "KEYS"
+   ]
+  },
+  {
+   "W": "2026-06-08",
+   "B three weeks": [
+    "HPE",
+    "TTWO",
+    "CRM",
+    "KEYS",
+    "HPQ"
+   ]
+  },
+  {
+   "W": "2026-06-15"
+  },
+  {
+   "W": "2026-06-22"
+  },
+  {
+   "W": "2026-06-29"
+  },
+  {
+   "W": "2026-07-06"
+  }
+ ]
+}

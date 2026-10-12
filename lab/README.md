@@ -2917,3 +2917,44 @@ passes by luck; the prior is not neutral, since V3 passed, and a pass here still
 4. Four chairs minus three: +0.02% to +0.10% a week, t under 2.
 
     python lab/pass23_drift_chair.py
+
+## Pass 23 results -- on the Council's weekly clock the drift chair loses; as a four-week hold it passes
+
+Run after the registration (0400fdb) and the code (8f24fcd); `results/pass23_drift_chair.json`. The S&P 500 as of 2024-09, 96 history
+weeks. Variant A was active in 34 weeks (15 or more tradeable names that reported last week), variant B in 53. Edges are clipped,
+per active week; the hold-4 rows are the four-week edge divided by four.
+
+| Test | Active weeks | Edge per week | NW t | Halves | Median | Registered verdict |
+|---|---|---|---|---|---|---|
+| A, last week's reporters, hold 1, vs the pool | 34 | **-0.344%** | -0.79 | -1.24 / +0.55 | -0.15 | no |
+| A, hold 1, vs the candidate set | 34 | -0.336% | -0.93 | -1.03 / +0.36 | -0.06 | no |
+| A, hold 4, vs the pool (per week of holding) | 34 | **+0.404%** | **+3.02** | +0.15 / +0.66 | +0.31 | **has an edge** |
+| A, hold 4, vs the candidate set | 34 | +0.277% | +1.88 | -0.01 / +0.57 | +0.13 | (secondary) no |
+| B, three weeks of reporters, hold 1, vs the pool | 53 | +0.179% | +0.59 | -0.15 / +0.50 | -0.04 | no |
+| B, hold 4, vs the pool | 53 | +0.204% | +1.21 | +0.01 / +0.39 | +0.06 | no |
+| **Four chairs minus three**, A, by clipped weekly return | 96 | **-0.094%** | **-2.10** | -0.12 / -0.07 | | no (it hurts) |
+| Four chairs minus three, B | 96 | -0.042% | -1.10 | -0.07 / -0.02 | | no |
+
+**What it says.** A name that reported last week and beat by the most, bought at Monday's open, did *worse* than the tradeable pool over
+that week (-0.34%, the sign in 34 weeks flipping between halves) and then made it back and more: over four weeks +1.6% against the pool
+(+0.40% a week held, t 3.0, positive in both halves). Pass 21's cohorts, which bought at the reaction-day close, showed the effect
+from the first day; bought a few days later it arrives after a week of giving some back. On the Council's own clock, which re-books every
+Monday and judges each week, that is a drag: adding the chair at a quarter weight lowers the team's weekly return by 0.09% a week (t
+-2.10, negative in both halves). So the chair registered here is **not** a chair for the weekly Council, and the four-week result is a
+different product: a separate multi-week earnings sleeve, held for a month, that the weekly scorer cannot judge.
+
+**How much to believe the four-week pass.** It is one of six decisive tests, which leaves about one chance in four that one passes by
+luck, and it is the same signal as Pass 21's V3, tested again in a different form, so the two are not independent evidence. Against
+the candidate set alone (recent reporters) it falls to t 1.9, which says part of the +0.40% is that last week's reporters as a group
+did better than the pool over the next month, not only that the high-surprise ones did better than the other reporters. Thirty-four
+active weeks inside seven earnings seasons, one regime.
+
+**Predictions.** 1 wrong: variant A hold 1 was a small loss, not a small gain. 2 wrong: variant B's hold-4 edge was +0.20%, below the
++0.3% to +0.6% I gave, and not close to t 2. 3 partly right: against the candidate set the edges are close to the full-pool ones at hold
+1 and 0.13 points lower at hold 4. 4 wrong: four chairs minus three was negative and, for A, significantly so.
+
+**What this changes.** The drift chair does not go into the weekly Council. If the four-week effect is worth chasing it is as a forward
+record of a one-month sleeve (buy each earnings-season Monday the five highest-surprise names of the week before, hold four weeks), which
+needs a scorer for four-week windows the lab does not have yet; registering that is the next step if the owner wants it. Pass 21's
+reading stands: the earnings surprise carries information the three engines do not read, and what is missing is a design that uses it on
+a clock where it pays.
