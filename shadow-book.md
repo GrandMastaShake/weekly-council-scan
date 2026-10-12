@@ -18,6 +18,26 @@
 
 ## Entries
 
+### Week of 2026-10-12 -- TRIGGER BLOCK: ALL + HIG (XLF 50D, fifth week) and TROW; CASH CAP met by PROMOTION (JCI, BIIB) with Ophelia's sleeve FROZEN under her own rule
+
+**Trigger:** The booking trigger check fired on the engine's #1 consensus pick **ALL** (Cecil, 21.1%) for the fifth straight week and on **HIG** (Cecil, 12.9%) for the third -- XLF $54.73 (macro/facts.json) vs its 50D $56.39 (wiki/synthesis.md Section 5 XLF row; wiki/financials.md "2.9% under its 50-day"), the one line the Council ruled both names share. Promotion candidate **TROW** (Cecil #3) blocked on the same fund line for a second week (under its own 50D $108.60, fetched; no wiki coverage; wiki/synthesis.md Section 4 "Do nothing before the dated receipt" -- the bank prints of Oct 13). **HPE** (Ophelia #3, conf 64.0) declined as a third name on the XLK line inside the AI-funding wire. That left ZS / HCA / FTNT at 46.6%.
+
+**The block's record going in:** 3-1. Last week was the first time the blocked names beat the book (ALL +2.10%, HIG +2.30% vs -1.17% same basis). Cecil asked that the line be re-read against the Oct 13 receipts rather than lowered; the Council scheduled that re-read for next session and blocked this week.
+
+**What the handling did:** promoted **JCI** (Marky #3 by rank, conf 75.2 -- the highest confidence of any unbooked name; passes XLI $166.18; Rule 1 checked by the number, volume 12% under its 20-day average, ruled a flat-volume continuation and not a fading-volume breakout) and **BIIB** (Marky #2, conf 63.7; passes XLV $165.00; chosen over HPE on line concentration), each at Marky's weakest booked weight scaled by relative confidence (16.2% and 13.8%), taking the book to 76.6%. Then **Ophelia's proposed rule** (journal 2026-10-05: a fired falsifier -- HY OAS through 300, still 315 -- freezes her sleeve at engine weights and takes none of the cash-cap raise) was accepted provisionally: ZS and FTNT stay at 19.3% / 12.4%, and the 3.4 points to 80.0% went to Marky's three names in proportion (factor 1.0757).
+
+**Booked (official, Tracker-measured):** ZS 19.3% / JCI 17.5% / HCA 16.0% / BIIB 14.8% / FTNT 12.4% / cash 20.0%.
+
+**Shadow A (the engine's unconstrained book):** ALL 21.1% / ZS 19.3% / HCA 14.9% / HIG 12.9% / FTNT 12.4% / cash 19.4% -- the pipeline's post-cash-floor consensus book with no booking trigger check.
+
+**Shadow B (Ophelia's rule rejected -- all five raised together to the cap):** ZS 20.2% / JCI 17.0% / HCA 15.6% / BIIB 14.3% / FTNT 12.9% / cash 20.0% (factor 1.0444 on the 76.6% post-promotion book). If the owner rejects the rule before the post-open booking, these are the official weights and this shadow becomes the booked book.
+
+**Overlap:** ZS, HCA, FTNT (all three books); JCI and BIIB (official and Shadow B).
+
+**Resolution:** Counterfactual to be computed next Monday (2026-10-19), date-pinned Mon 2026-10-12 close -> Fri 2026-10-16 close, for both shadows against the official book, plus HPE alone (rejections.md). **Three questions, written before the answers are known:** (1) Fifth week of the XLF block, now with the Tuesday receipts inside the week: if ALL and HIG beat the book again, the block's record goes to 3-2 and the re-read scheduled for Oct 19 has its evidence; if the bank prints send XLF back under $53.30, the block saved the book a fifth time and the 50D was the right line all along. (2) Ophelia's rule: it moved 1.4 points of the book from her two names to Marky's three. Shadow B measures exactly that. If her sleeve beats Marky's, the rule cost money the week it was adopted -- which is allowed, because the rule is about consequence for a stated doubt, not about forecasting -- but the number should be written down. (3) HPE vs BIIB: the concentration tiebreak. If HPE beats BIIB by more than the XLK line's 1.2% headroom was worth, the Council paid for diversification it did not need; if XLK closes under $196.48 this week, the third name on the line would have fired with the other two.
+
+---
+
 ### Week of 2026-10-05 -- TRIGGER BLOCK: ALL + HIG (XLF 50D, fourth week) and TROW; CASH CAP met by PROMOTION (NDSN, LRCX) instead of raising three survivors
 
 **Trigger:** The booking trigger check fired on the engine's #1 consensus pick **ALL** (Cecil, 21.0%) for the fourth straight week and on **HIG** (Cecil, 13.0%) for the second -- XLF $53.49 (macro/facts.json) vs its 50D $56.65 (wiki/financials.md), the one line the Council ruled both names share. Promotion candidate **TROW** (Cecil #3) blocked on the same fund line (a third financial, under its own 50D, no wiki coverage; wiki/synthesis.md Section 4 "Do nothing before the dated receipt" -- Oct 13). **APH** (Marky, conf 78.7) declined on Marky's own Rule 1 (engine rationale: "breakout with volume fading"). That left SNPS / JCI / AMAT at 47.3%.

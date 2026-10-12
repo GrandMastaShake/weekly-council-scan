@@ -146,9 +146,9 @@ the heatmap's own README and in `data/forecasts/2026-10-09_manual.json` there.
 <!-- ARENA BANNER START -->
 ## ⚔️ The Arena — Think You Can Beat the Council?
 
-### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/134)** 👈
+### 👉 **[ENTER THIS WEEK'S PICKS HERE](https://github.com/GrandMastaShake/weekly-council-scan/issues/163)** 👈
 
-**Week of 2026-10-12 · 🔒 Entries lock Monday 8:50 AM ET**
+**Week of 2026-10-19 · 🔒 Entries lock Monday 8:50 AM ET**
 
 1. Click the link above (opens this week's Arena issue)
 2. Scroll to the comment box at the bottom
@@ -243,6 +243,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-10-12 | [View](reports/2026-10-12-report.md) | 14.84 | +1.16% | ZS (Ophelia) |
 | 2026-10-05 | [View](reports/2026-10-05-report.md) | 15.31 | -0.22% | SNPS (Ophelia) |
 | 2026-09-28 | [View](reports/2026-09-28-report.md) | 14.87 | +1.27% | AAPL (Marky) |
 | 2026-09-21 | [View](reports/2026-09-21-report.md) | 14.81 | -0.34% | XOM (Marky) |

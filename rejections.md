@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-10-12
+
+Booked: ZS 19.3% / JCI 17.5% / HCA 16.0% / BIIB 14.8% / FTNT 12.4% (20.0% cash -- the owner's cash cap met exactly; 3 raised regime flags, Tightening Fed on pause, bank prints Tuesday and CPI Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line for the fifth and third week, TROW blocked as a promotion on the same line; JCI and BIIB promoted, Ophelia's sleeve frozen at engine weights under her own rule, Marky's three names raised in proportion to 80%). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| HPE | 76 | 64.0 | Her #3 -- passes its XLK line but would be the third name on it (43.4% of the book on one number) and is a server seller one step inside the AI-funding loop the synthesis names as the board's biggest risk (wiki/synthesis.md Section 6, Wire 1); +18.3% in four weeks at a 52-week high, in no wiki. BIIB (Marky, conf 63.7, 0.3 lower) promoted instead on line concentration. Excluded on concentration, not conviction |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): ALL (Cecil #1, score 95, conf 82.8) and HIG (Cecil #2, 92 / 76.0) TRIGGER-BLOCKED -- XLF $54.73 vs the 50D $56.39 (wiki/synthesis.md Section 5; wiki/financials.md); TROW (Cecil #3, 90 / 71.6) blocked as a promotion on the same line and under its own 50D, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
+
+counterfactual: to be computed (Monday 2026-10-19, date-pinned Mon 2026-10-12 close -> Fri 2026-10-16 close; HPE alone, and ALL / HIG / TROW each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-10-05
 
 Booked: SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% (20.0% cash -- the owner's cash cap met exactly; 3 raised regime flags, Tightening Fed on pause, the $39B 10-year auction Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line for the fourth and second week, TROW blocked as a promotion on the same line, APH declined; NDSN and LRCX promoted and all five raised in proportion to 80%). Ophelia's rejected candidates:
