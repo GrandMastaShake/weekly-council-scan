@@ -3295,3 +3295,48 @@ unregistered extra (27b2) and the long-history reversal in Pass 25 are noted as 
 
 **What this changes.** Nothing in the engines. The two ideas have an honest "not on this evidence" from a registered test; if he wants
 either pursued, the next step is a forward test whose rule he writes down first.
+
+## Pass 28 -- grading the dated forward predictions already on the drive (registered before any record is read or priced)
+
+The deep dive found falsifiable calls written before their outcomes that nobody scored. This pass reads them into a fixed record, then grades
+them by rules fixed here. **Extraction first, prices never:** the agents that read the documents record what a document says and when it was
+written and look at no price; grading is a script that runs after the records are frozen (`pass28_grade.py`, records stored outside this
+public repo; only the counts, rules and results are published, and nothing from personal or family accounts is read or kept).
+
+**What counts as a prediction.** A statement in a document dated before the outcome that a named instrument, index or sector will do something
+checkable over a stated or default horizon: a *direction* ("SPX closes higher Friday"), a *level* ("SMH holds 600", "stays above"), a *ranking or
+rating* of sectors, or a *pick* ("buy X"). Not: commentary on what already happened, a description of a position, a conditional whose
+condition is not stated checkably, or a statement with no instrument. Each record carries: source, the date and (if the document says it)
+the time of day it was written, the instrument, the kind, direction or level, the horizon as written, any stated confidence, and the
+sentence quoted verbatim. A record whose date cannot be established from the document or its filename is dropped and counted.
+
+**Entry and horizon.** A call written before the open (a pre-market brief) enters at that day's open; any other call at the next session's
+open after its date; for the day-count and the benchmark, the instrument's adjusted closes. Horizon: as written; if none, 5 sessions for a
+sector, stock or pick and 1 session for an index direction or level call. A call whose horizon has not closed by 2026-10-09 is not graded.
+
+**Grading, by kind.**
+- *Direction* (absolute): a hit if the sign of the return from entry to horizon end matches; a call of "flat" or "range" is not graded. The
+  null is the base rate: the share of all windows of the same length in the instrument's own history (2018-01 to 2026-10) that went the
+  stated way. Per source and kind, with 20 or more graded calls, the calls *beat the base rate* if the one-sided binomial p against that
+  base rate is 0.05 or less; fewer than 20 are reported and decide nothing.
+- *Level*: "holds" or "stays above X" is a hit if no close in the window is below X; "breaks below X" a hit if some close is; "reclaims" a
+  hit if a close is above. Base rate: the same condition at the same distance from the entry price (in percent) over all windows of the
+  same length in the instrument's own history.
+- *Ranking or rating of sectors* (as the heatmap's): the weekly rank correlation of the scores with the realized excess return over SPY of the
+  sector's basket, and the heatmap's own hit, partial and miss rule (its 1.0% track band) from `src/evaluate.py`; the null is 10,000 shuffles
+  of the scores across the sectors in each cycle; the cycles *beat chance* if the mean IC is positive and the shuffle p is 0.05 or less
+  with 8 or more cycles (so the heatmap's five cycles and their month horizons are reported and decide nothing).
+- *Pick* (buy or avoid a named stock): excess return over SPY from entry to horizon end, a buy as written and an avoid with the sign flipped;
+  the null is 2,000 random draws of the same number of names from the S&P 500 as of 2024-09 over the same window; with 20 or more picks the
+  list *beats random* at the 97.5th percentile on the mean and the median.
+- *Pre-registrations that carry their own grading rules* (the 2026-08-23 AI-capex forward test): graded as the document says, once, and
+  nothing else is read into it.
+
+**Multiple tests.** There is one decisive test per source and kind with enough calls; the count is stated in the results. Everything with
+fewer than the minimum is a forward record, not a finding.
+
+**Predictions.** (1) Direction calls beat the base rate nowhere: the hit rate on the daily index calls is within 5 points of the share
+of up days. (2) The heatmap's five cycles show a mean IC between -0.15 and +0.15. (3) The AI-capex test's P1 and P2 are still "passing" and
+P3 and P4 not triggered, because SPY has not closed 10% under its peak. (4) Picks lists, where there are 20 or more, do not beat random.
+
+    python lab/pass28_grade.py
