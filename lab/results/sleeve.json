@@ -1,0 +1,26 @@
+{
+ "registered": "85714da",
+ "generated": "2026-10-12 09:12",
+ "latest_bar": "2026-10-09",
+ "verdict": {
+  "closed": 0,
+  "seasons": [],
+  "mean_edge_per_week": null,
+  "nw_t": null,
+  "by_season": {},
+  "hit_share": null,
+  "status": "too early (0 closed cohorts; 12 across three seasons are needed)"
+ },
+ "cohorts": [
+  {
+   "W": "2026-10-12",
+   "season": "2026Q4",
+   "active": false,
+   "late": false,
+   "n_candidates": 2,
+   "picks": [],
+   "surprises": [],
+   "status": "inactive"
+  }
+ ]
+}

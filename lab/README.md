@@ -3392,3 +3392,10 @@ week of 2026-10-05.
     python lab/forward_sleeve.py            # log this Monday (if it is not logged yet), then score every closed cohort and rewrite SLEEVE.md
     python lab/forward_sleeve.py score      # rescore only
     python lab/forward_sleeve.py smoke      # plumbing: log to a scratch ledger
+
+### Pass 29 -- first row (2026-10-12)
+
+The first Monday was logged at 09:07 ET, before the open (not late): 2 candidates (STZ, PEP) of 474 tradeable names, so the sleeve is inactive and bought
+nothing. Prediction 4 right. Ledger `lab/sleeve_ledger.json`, page `lab/SLEEVE.md`. A smoke run of the code on the Monday of 2026-07-27 (a past week, into a scratch
+ledger that is not part of the record) was plumbing only; its one cohort is not counted and decides nothing. The routine is run by hand for now: wiring it into
+the Monday task needs `lab/sleeve_ledger.json`, `lab/SLEEVE.md` and `lab/results/sleeve.json` added to that task's commit list, which is the owner's call.
