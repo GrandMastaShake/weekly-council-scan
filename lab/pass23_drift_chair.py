@@ -11,6 +11,7 @@ from the candidate set; and as a fourth chair against Pass 19's three chairs.
 """
 from __future__ import annotations
 
+import bisect
 import json
 import random
 import statistics
@@ -31,16 +32,36 @@ import pass20_regimes as p20  # noqa: E402
 import pass21_beat_fall as p21  # noqa: E402
 
 VARIANTS = {"A last week": (7, 3, 15), "B three weeks": (21, 1, 30)}     # calendar days back (start, end), minimum tradeable candidates
+FIXED = False        # "fixed" mode (the 2026-10-12 audit): the blackout looks strictly after the previous Friday, the draws run over sorted lists, B is the previous 15 sessions
 TOP = 5
 DRAWS = 200
 CLIP4 = 0.40
 NW_LAGS = 4
 
 
-def candidates(events, W, variant):
+def candidates(events, W, variant, dates=None):
     lo, hi, _ = VARIANTS[variant]
     a, b = lab._plus(W, -lo), lab._plus(W, -hi)
+    if FIXED and variant.startswith("B") and dates is not None:       # the previous 15 sessions, not three calendar weeks
+        i = bisect.bisect_left(dates, W)
+        a, b = dates[max(0, i - 15)], dates[i - 1]
     return [e for e in events if a <= e["react"] <= b]
+
+
+def pool_fixed(names, raw, cal, W):
+    """p10.pool with the first report required to fall strictly after the previous Friday (a Friday reporter is not reporting in the coming week)."""
+    from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
+    from scan_pipeline.utils.data_utils import EARNINGS_BLACKOUT_TRADING_DAYS
+    short = {t: _aggregate_weekly(raw[t].before(W, lab.LOOKBACK_DAYS)) for t in names if t in raw}
+    eligible = [t for t in names if len(short.get(t, [])) >= lab.MIN_WEEKS]
+    F = _aggregate_weekly(raw["SPY"].before(W, lab.LOOKBACK_DAYS))[-1].date
+    out = []
+    for t in eligible:
+        nxt = lab._next_report(cal.get(t), lab._plus(F, 1))
+        etd = _business_days_between(F, nxt) if nxt else None
+        if etd is None or not 0 <= etd <= EARNINGS_BLACKOUT_TRADING_DAYS:
+            out.append(t)
+    return out
 
 
 def edge_vs(rng, picks_ret, pool_rets):
@@ -81,12 +102,12 @@ def main(smoke=False):
     weekly = []
     for r in rows:
         W = monday[r["week"]]
-        tradeable = set(p10.pool(names, raw, cal, W))
+        tradeable = set((pool_fixed if FIXED else p10.pool)(names, raw, cal, W))
         O, C, M = r["ophelia"], r["five"], r["marky"]
         books3 = p7.slices([O, C, M])
         wk = {"W": W}
         for v, (_, _, need) in VARIANTS.items():
-            cand = [e for e in candidates(events, W, v) if e["t"] in tradeable]
+            cand = [e for e in candidates(events, W, v, raw["SPY"].dates) if e["t"] in tradeable]
             seen, uniq = set(), []
             for e in sorted(cand, key=lambda e: (-e["surprise"], e["t"])):          # one row per ticker: its best-surprise event in the window
                 if e["t"] not in seen:
@@ -110,7 +131,7 @@ def main(smoke=False):
             def h4(t):
                 x = p13.hold_return(adj[t], W, 4) if t in adj else None
                 return None if x is None else max(-CLIP4, min(CLIP4, x))
-            pool4 = {t: h4(t) for t in tradeable}
+            pool4 = {t: h4(t) for t in (sorted(tradeable) if FIXED else tradeable)}
             pool4 = {t: x for t, x in pool4.items() if x is not None}
             cand4 = {t: x for t, x in ((t, h4(t)) for t in cset) if x is not None}
             picks4 = [pool4[t] for t in D if t in pool4]
@@ -145,7 +166,7 @@ def main(smoke=False):
     result["verdicts"].update({f"{v} team": result["variants"][v]["team"]["adds"] for v in VARIANTS})
     print("\n  registered verdicts: " + "; ".join(f"{k} {'YES' if ok else 'no'}" for k, ok in result["verdicts"].items()))
     result["weekly_picks"] = weekly
-    path = lab.CACHE / "pass23.smoke.json" if smoke else lab.RESULTS / "pass23_drift_chair.json"
+    path = lab.CACHE / "pass23.smoke.json" if smoke else lab.RESULTS / ("pass23_drift_chair_fixed.json" if FIXED else "pass23_drift_chair.json")
     with open(path, "w", encoding="ascii", newline="\n") as fh:
         json.dump(result, fh, indent=1, default=float)
         fh.write("\n")
@@ -153,4 +174,5 @@ def main(smoke=False):
 
 
 if __name__ == "__main__":
+    FIXED = "fixed" in sys.argv[1:]
     main(smoke=sys.argv[1:] == ["smoke"])

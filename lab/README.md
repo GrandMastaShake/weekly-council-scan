@@ -3416,3 +3416,74 @@ first report must be strictly after that Friday (fix in the commit that carries 
 it had 2 candidates; with the corrected pool it would have had 3 (DAL joins), still inactive, so nothing about that row changes. Pass 23's backtest, which used the same pool, is rerun
 on the corrected pool in the Pass 23 erratum below; the sleeve's thresholds are not moved. The same quirk is in `p10.pool` for every earlier pass; it matters most where the signal
 is built from last week's reporters (Passes 21 and 23 and this sleeve).
+
+## Audit errata for Passes 20-27 (2026-10-12): nothing registered flips, and four results are restated
+
+After Passes 20-27 were written up, an independent audit read each pass's code against its registration: 8 readers (one per pass) hunting look-ahead, undisclosed
+deviations, arithmetic and statistical errors, and for every finding two skeptics, one trying to refute it from the code and cached data and one sizing its effect. 31 findings
+were raised; 7 were refuted as defects; 24 were confirmed. **No registered verdict flips.** Four findings change numbers or sentences materially and are restated here; the rest are prose
+or disclosure corrections. Numbers marked (audit) are the audit's own reruns on the cached bars; the Pass 23 numbers I reran myself (`pass23_drift_chair.py fixed`,
+`results/pass23_drift_chair_fixed.json`). The original sections above stand as written; where they differ, this section governs.
+
+### The four that change numbers
+
+**1. Pass 23 (and Pass 29): last Friday's reporters were blacked out of the pool.** `p10.pool` reads the first report on or after the previous Friday, so a name that reported on that
+Friday counts as reporting in zero days and is excluded. The drift chair's candidate window includes that Friday's pre-market reporters, so the chair never saw them (29 of the 34 active
+A weeks lost at least one; in 7 one would have made the top five). The pool for every earlier pass has the same quirk (a few names a week in season weeks, signal-independent there).
+Corrected run (pool first report strictly after the Friday; draws over sorted lists, since the published hold-4 draws depended on set order and 12 reruns of the old code give +0.366% to
++0.390%, so +0.404% was a high draw; variant B as the previous 15 sessions):
+
+| Test | As published | Corrected |
+|---|---|---|
+| A, hold 1 vs the pool | -0.344% (t -0.79), 34 weeks | **-0.106%** (t -0.26), 35 weeks |
+| A, hold 1 vs candidates | -0.336% (t -0.93) | -0.091% (t -0.28) |
+| A, hold 4 vs the pool, per week | +0.404% (t +3.02), halves +0.15 / +0.66 | **+0.512%** (t **+4.36**), halves +0.32 / +0.70 |
+| A, hold 4 vs candidates | +0.277% (t +1.88), no | **+0.416% (t +3.22), has an edge** |
+| A, four chairs minus three | -0.094% (t -2.10), both halves negative | **-0.075%** (t **-1.68**), both halves negative |
+| B (previous 15 sessions), hold 1 / hold 4 vs the pool / team | 53 weeks: +0.179% / +0.204% (t 1.21) / -0.042% | 58 weeks: +0.203% (t 0.73) / +0.216% (t 1.58) / -0.036% (t -0.95) |
+
+The six registered booleans are unchanged (only A hold 4 has an edge). What changes in the prose: the first-week loss is small and not significant (-0.11%, t -0.26), so "did *worse* than the
+pool over that week" is withdrawn; the four-week edge is larger and clears the candidate-set comparison too (the part of the edge that was "recent reporters as a group" is now smaller);
+adding the chair to the team costs 0.075% a week and is no longer significant (t -1.68), so prediction 4's "for A, significantly so" is not supported (my prediction of +0.02% to +0.10% was
+still wrong in sign). This is still one test of six, the same signal as Pass 21's V3, in one rising market. The sleeve (Pass 29) keeps its registered thresholds; the corrected backtest
+reference is +0.51% a week of holding (t 4.36), the as-run +0.40% (t 3.02) being the figure the thresholds were set from. The ledger row of 2026-10-12 stays as logged (see the Pass 29 erratum).
+
+**2. Pass 22: the Jensen price check was not the registered rule.** The registration says the file's recorded price must be within 15% of the entry close. The code compared it with the
+dividend-adjusted close of 2025-09-19, adjusted through 2026-10, so a name's eligibility depended on dividends paid and splits after entry. Of the 158 names it dropped, only 35 are gross
+mismatches (ratio outside 0.5 to 2, the mis-parses the text described); about 123 are real tickers (high-yield names at ratios 0.72 to 0.85; SOFI, MRVL and others at 1.15 to 1.4; later reverse splits).
+The sentence "the file parsed English words as tickers" is wrong for most of them. Sensitivity of the Jensen 52-week row (audit): the check as run 95.1 / 22.4 (mean / median percentile); the registered wording
+on the 9/22 adjusted close 87.2 / 0.7; gross mismatches only 96.8 / 9.0; no check 94.5 / 0.9. The 13-week mean percentile is 0.6 to 11.7 (2.0 as run). **Verdict "no" in every variant**
+(the median percentile never approaches 97.5). "The median pick sits at the 22nd percentile" is not stable (0.6 to 24 across variants). Separately, pools and picks are Python sets, so a rerun's percentiles move by about
+1 to 4 points with the hash seed (no cell is within 25 points of the line); pick means and medians do not move.
+
+**3. Pass 27: the half-window statistic used an undisclosed 5-firing-day minimum.** The registration's "at least 20 firing days in a window" was applied to the 60% and 40% windows; the two out-of-sample
+halves used 5. At 20 per half: first half -0.042% a day (percentile 0.7, 266 names), second half +0.025% (percentile 82.5, 336 names); at 10: 25.4 and 98.9 (audit). So "the gain is the second half alone, the 99th percentile"
+is not robust; the registered verdict **does not hold** is unchanged at every setting because the first half fails. Also: the real draw and the null average over different name sets (a rare chosen rule drops out more often
+than the weekday rules the null picks); the "names positive" shares in the half rows used 463 as the denominator (first half 49.7% of 441, not 47%; second half 51.2% of 457); and the Breakfast test's last month-end (2026-06) gets a
+three-month return that stops on 2026-09-25: without it the difference is -0.79% (p 0.62) instead of -0.81% (0.61).
+
+**4. Pass 21: V2 could hardly say yes, and V4 and the bootstrap carry unregistered choices.** The registered V2 contrast sets long-streak beats against *every other event of the week*, misses included (27% of the pool, mean R5 -2.7%), so with no
+streak effect at all it would read about +0.99% (t +8.5); the observed +0.39% sits below that. Against the other beats of the same week the gap is **-0.59% (t -1.90, halves -0.36 / -0.82; six of seven seasons negative; R1 -0.73%, t -2.46; D20 ~0)**,
+which meets the size and both-halves parts of V2's rule and misses t by 0.10 (an exploratory split by surprise band puts it in the narrow beats: 0 to 5% beats -1.82%, t -5.03, four bands, post hoc). The registered verdict stays **no**, but the heading "there is no beat-then-fall"
+overstated it: the registered contrast could not see it, and the corrected contrast, on data already seen, is near the line in the owner's direction. It would be a new test and needs a forward season to settle. Also: V4 used an unregistered floor of 3 flagged events a week (31 weeks, +0.70%, t +2.23; at the registered no-floor rule 35 weeks, +1.11%, t +2.77,
+still positive, still "does not hold"); the event counts quoted (940 for V2, 467 for V4) were counted over all 90 reaction weeks, not the weeks tested (801 and 415); V3 compares with the week's pool mean (same expectation as the registered draws);
+the season-blocked bootstrap rests on 7 clusters and is too narrow (a t on the seven season means is 3.03 on 6 df, p about 0.02, so the 0.001 and the interval's lower bound of +0.35% are overstated); and the one negative season is 2025-Q1 (reaction weeks 2025-01-13 to 02-24, windows ending before the April break), so "a sharp April 2025 break" was the wrong explanation.
+
+### The smaller ones
+
+- **Pass 20.** The power sentence used the SD of the weekly *return* (2.3%) where the test runs on the *edge* (1.3%): a gap of 0.7 points, not 1.2, reaches t 2. The cash dial was matched to the plain book on average exposure, which the text called "rule 7" (equal weekly SD);
+  under the SD-matched rule D3's timing value is -0.122% a week (t -1.14) on the clean list and -0.266% (t -1.97) on the 111, the matched book's drawdown 10.6% and 14.8% (still shallower than the dial's), the Sharpe comparison unchanged; verdict unchanged. The member leads: 9 testable cells a list, not 18, so about 0.45
+  hits at |t| of 2 are expected a list against 3 seen, and the two lists share the same weeks and names, so "the lists agree" is weak corroboration.
+- **Pass 24.** The "stale anchor" is Friday-to-Friday on adjusted closes, as registered; production reads Monday-open to Friday-close on stocks. On the open-to-close basis the stale IC is +0.009 (t +0.23) on the clean list and +0.053 (t +1.32) on the 111: same verdicts. The power sentence should read "an IC of 0.05 reaches t of about 1.3" (the observed weekly IC SD is 0.35 to 0.40, not 0.3).
+  The 463 names are survivors of the index (today's members added before 2024-09), which the Pass 24 text did not say (an effect on the rank IC of about 0.01 or less). `lab.download` names its cache by the ticker count only; a different list of the same length would load the wrong pickle (the Pass 24 caches were checked and match).
+- **Pass 25.** The registered spread by era and window was not computed. Fresh top-3 minus bottom-3, % a week (NW t): 1999-2008 -0.138 (-1.34), 2009-2017 -0.079 (-1.13), 2018-2026 -0.141 (-1.50); windows 2000-02 -0.183 (-0.83), 2007-09 -0.171 (-0.78), 2020 -0.328 (-0.79), 2022 -0.063 (-0.27); stale 1999-2008 -0.142 (-1.63), 2009-2017 -0.011 (-0.16),
+  2018-2026 +0.022 (+0.23) (audit). "Negative in all three eras and growing across them" is withdrawn as to "growing" (a trend slope of -0.0011 a year, t -0.87; era 3 minus era 1 t -1.08): the eras are not distinguishable from a constant. "Stale, what production reads" is a Friday-to-Friday ETF series, not her stock baskets on open-to-close bars
+  (re-based to open-to-close the fresh IC is -0.029, t -2.63).
+- **Pass 26.** 17 weeks had one or two tradeable names without a rate beta (the text said none); no as-is pick was affected. The "capped five holds less rate exposure" is measured on the same trailing betas it selects on, so it is true by construction. Ex post, the slope of each book's weekly return on the weekly change in the 10-year during its holding week is as is -0.007 (se 0.023), residual -0.003 (0.024),
+  capped -0.016 (0.021): the three cannot be told apart, so out of sample the capped book is not less rate-exposed.
+- **Pass 23 variant B** was three calendar weeks, not the previous 15 sessions (corrected in the rerun above).
+
+Seven findings were refuted as defects, though several describe true limitations: the "S&P 500 as of 2024-09" list is a survivors list (today's members added before 2024-09; Pass 9b says so, and the texts of Passes 20, 24 and 27 do not repeat it, so read every result on that list with that in mind);
+V4's "drifts up too" is the surprise drift of V3 rather than a streak effect (flagged beats against other surprises above 10% are about -0.9%, t -0.9, not significant); the Pass 21 market adjustment subtracts SPY as registered (a beta-adjusted version leaves V3's verdict where it is);
+the Pass 22 overlap cohort covers only names all three lists contain (130 become 87, mostly names missing from the Jensen file) and that is disclosed; 294 of the 2,986 Pass 22 symbols have no Yahoo bars and are out of the pools and the picks alike; and Pass 26's as-is edge (+0.231%) is redrawn against different random baselines than Pass 19's (+0.226%), the lab's known per-book seeding.
+The audit did not rerun the 2,000-draw nulls or re-derive the price data; the earnings tables and prices are Yahoo's as stored on the run dates.
