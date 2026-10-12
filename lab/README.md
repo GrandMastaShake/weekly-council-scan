@@ -2958,3 +2958,90 @@ record of a one-month sleeve (buy each earnings-season Monday the five highest-s
 needs a scorer for four-week windows the lab does not have yet; registering that is the next step if the owner wants it. Pass 21's
 reading stands: the earnings surprise carries information the three engines do not read, and what is missing is a design that uses it on
 a clock where it pays.
+
+## Pass 24 -- the heatmap's mechanical sector score against Ophelia's anchor (registered before any run)
+
+The sector-regime-heatmap computes three of its five components by arithmetic (breadth, relative momentum, volume confirmation) and
+nobody has asked whether they rank sectors better than the one input Ophelia's rotation uses. `pass24_sector_score.py`. The score, as the
+heatmap defines it for the week horizon: **breadth** = the percent of the sector's names with a positive week; **relative momentum** =
+the sector basket's week minus SPY's, as a rank score 0 to 100 among the eleven; **volume confirmation** = the percent of the basket's
+week volume that traded in names that rose; **mechanical score** = (0.20 breadth + 0.20 momentum + 0.15 volume) / 0.55, the heatmap's
+week weights without its two judgment components. Weeks run Friday close to Friday close on dividend-adjusted closes, baskets are equal
+weight, and a sector needs 8 names. **Ophelia's anchor** is the basket's mean week return, in two forms: *stale*, the week before the
+latest completed week, which is what the production engine reads (ophelia.py), and *fresh*, the latest completed week.
+
+**Target.** For each Monday W, the eleven sectors' Monday-open to Friday-close basket returns minus SPY's, scored with the information
+available at the preceding Friday's close. **Measure:** the weekly Spearman rank correlation across the sectors (the IC) of a score with
+the target; its mean over the 96 history weeks, Newey-West t (4 lags), the two halves. Baskets: the S&P 500 as of 2024-09 by GICS sector
+(decides) and the 111 by its own sector labels (the heatmap's baskets; reported).
+
+**What counts.** The mechanical score *has signal* if its mean IC is positive with t of 2 or more and both halves positive. It *beats
+the production anchor* if the paired IC difference against the stale anchor has t of 2 or more with both halves positive. Two decisive
+tests; the three components alone and the fresh anchor are reported.
+
+**Predictions.** The mean IC of the score is between -0.03 and +0.04 with t under 1.5; it does not beat the stale anchor; the fresh
+anchor's IC is slightly negative (a week's sector winners give back a little); the three components are highly correlated with each
+other and with last week's return, so they add no information to one another.
+
+    python lab/pass24_sector_score.py
+
+## Pass 25 -- the sector anchor on 27 years of ETFs (registered before any run)
+
+Pass 9b found Ophelia's two-year edge was a regime (83% of it in 2026H1). The anchor itself, last week's best sector, can be tested on
+the nine SPDR sector ETFs from 1999 (XLRE from 2015-10, XLC from 2018-06), which spans 2000-02, 2008 and 2022, none of which the 96
+weeks contain. Data: dividend-adjusted daily bars from Yahoo (the 26-symbol database on the drive is raw, unadjusted and ends 2025-06,
+so it is not used). `pass25_sector_history.py`. **Signals:** fresh (last completed week's return) and stale (the week before it), as in
+Pass 24. **Target:** each sector's Monday-open to Friday-close return minus the equal-weight mean of the available sectors. **Measure:**
+the weekly rank IC across the sectors and the top-three minus bottom-three spread; mean, Newey-West t (4 lags); and the same in three
+eras (1999-2008, 2009-2017, 2018-2026) and in four windows (2000-2002, 2007-2009, 2020, 2022).
+
+**What counts.** A signal *holds* if its mean IC is positive with t of 2 or more and the IC is positive in all three eras. Two decisive
+tests (fresh, stale). **Predictions:** neither holds; the fresh anchor's IC is slightly negative over the whole sample (short-term sector
+reversal) and the stale anchor's is within +/-0.01 of zero.
+
+    python lab/pass25_sector_history.py
+
+## Pass 26 -- Cecil's value net of rate exposure (registered before any run)
+
+Cecil's journal says six weeks of his screen bought only rate carry (insurers, a REIT, a utility) and that he owes a duration-adjusted
+measure of cheapness. `pass26_cecil_rates.py` replays his table on the S&P 500 as of 2024-09 as in Pass 12 (point-in-time P/E) and
+adds each name's **rate beta**: the slope of its weekly returns on the weekly change in the 10-year yield (^TNX, in percentage points)
+over the trailing 52 weeks before the Monday (at least 40 observations). **Variants:** *as is* (Pass 12's five); *residual* (each
+week, regress the tradeable names' total score on rate beta and take the five largest residuals, so a name must be cheap or steady
+beyond what its rate exposure explains); *capped* (the five highest scores among names whose absolute rate beta is below the
+cross-section's median).
+
+**What counts.** A variant *helps* if its paired clipped edge over as is is at least +0.10%/wk with t of 2 or more and both halves
+positive. Two decisive tests. Reported, not decisive: the same difference in weeks that follow a 4-week rise of the 10-year of 20 basis
+points or more (the weeks the journal is about) and the variants' weekly SD and drawdown. **Predictions:** neither helps; the capped
+variant lowers his SD and costs some mean (Pass 19: his sector stacking is his edge and the rate-sensitive sectors are a large part of
+it); in rising-rate weeks the residual variant is ahead of as is by a few tenths, under t 2.
+
+    python lab/pass26_cecil_rates.py
+
+## Pass 27 -- two of the owner's own ideas, tested as he stated them (registered before any run)
+
+**(a) Pattern DNA: "every stock follows a pattern, unique to that stock."** `pass27_owner_ideas.py`. For each name on the S&P 500 as of
+2024-09, daily bars 2023-08 to 2026-09-26, rules in one family list: long on days after which the next close-to-close return is
+measured, conditioned on: each weekday (5); RSI(14) under 30; RSI(14) over 70; volume over 1.5 times its 20-day average; a gap down of
+more than 1%; a gap up of more than 1%; the close within 3% of its 52-week high; the close below its 20-day average. A rule is eligible
+for a name with at least 20 firing days in a window. On the first 60% of each name's days pick its best rule (the largest in-sample
+mean next-day return on firing days minus the name's overall mean); on the last 40% measure that rule the same way. **Null:** assign
+each name a random eligible rule instead and repeat, 2,000 times. The idea *holds* if the mean out-of-sample statistic across names is
+positive and above 97.5% of the null draws, in both halves of the out-of-sample period.
+
+**(b) The Breakfast Indicator: "food commodity collapses lead Fed pivots and flip growth leadership."** R = DBA / QQQ; its 6-month rate of
+change below -10% marks a collapse. At each month-end from 2007-07 to 2026-06 (DBA lists 2007-01) compare QQQ's next three months'
+return after flagged month-ends with the unflagged ones, with a block bootstrap (blocks of three months, 5,000 draws) for the
+difference. The idea *holds* if the difference is positive with a bootstrap two-sided p under 0.05 and positive in each of 2008-2012,
+2013-2019 and 2020-2026, each with at least three flagged months; otherwise it is reported as untestable if fewer than 12 flagged
+months exist or they fall in fewer than three separate episodes.
+
+**Predictions.** (a) Does not hold: the in-sample best rule of 20 or more is mostly noise and the mean out-of-sample statistic is within
++/-0.02%/day of the null's. (b) The flagged months cluster in a handful of episodes (2008-09, 2014-15, 2022), so the test cannot support
+a verdict either way; if it can, the difference is not distinguishable from zero.
+
+    python lab/pass27_owner_ideas.py
+
+Eight decisive tests across the four passes (two each for Passes 24, 25 and 26; one each for 27a and 27b), which leaves about one chance
+in three that one passes by luck.
