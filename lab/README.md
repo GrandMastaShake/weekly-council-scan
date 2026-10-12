@@ -3487,3 +3487,28 @@ Seven findings were refuted as defects, though several describe true limitations
 V4's "drifts up too" is the surprise drift of V3 rather than a streak effect (flagged beats against other surprises above 10% are about -0.9%, t -0.9, not significant); the Pass 21 market adjustment subtracts SPY as registered (a beta-adjusted version leaves V3's verdict where it is);
 the Pass 22 overlap cohort covers only names all three lists contain (130 become 87, mostly names missing from the Jensen file) and that is disclosed; 294 of the 2,986 Pass 22 symbols have no Yahoo bars and are out of the pools and the picks alike; and Pass 26's as-is edge (+0.231%) is redrawn against different random baselines than Pass 19's (+0.226%), the lab's known per-book seeding.
 The audit did not rerun the 2,000-draw nulls or re-derive the price data; the earnings tables and prices are Yahoo's as stored on the run dates.
+
+## Pass 30 -- beat-then-fall, the corrected contrast, as a forward test (registered 2026-10-12 before any event after 2026-07-03 is read)
+
+The owner asked for this after the audit of Pass 21 (see the audit errata). Pass 21's V2 set long-streak beats against every other event of the week, misses included, so it could
+hardly say yes; against the other beats of the same week the gap was -0.59% (t -1.90, halves -0.36 / -0.82, six of seven seasons negative) on data that had already been seen. This pass
+tests that corrected contrast on reports Pass 21 never read: every report whose reaction day falls on or after **2026-07-06** (Pass 21's events end 2026-07-03). I have not computed
+anything on those events. The July to September 2026 season is already closed but unread; the October to November season and later ones are forward.
+
+**The contrast (fixed).** Universe: the S&P 500 list of 2026-09-22 (`lab/universe_sp500_2026-09-22.csv`, 503 names). Events, reaction day, surprise (the table's percent, clipped at +/-100)
+and the market-adjusted five-day return **R5** (close four sessions after the reaction day over the close before it, minus SPY over the same days, clipped at +/-40%) are Pass 21's. An event is a
+**flagged beat** if its surprise is positive and the name's streak of consecutive prior quarters with a strictly positive surprise is 8 or more; an **other beat** if its surprise is positive and the
+streak is under 8. Misses and zero surprises are in neither group. For each reaction week (Monday to Friday of the reaction day) with at least 15 events, at least 3 flagged beats and at least
+3 other beats, the week's value is the mean R5 of the flagged beats minus the mean R5 of the other beats. A week that does not meet those floors is not counted and is listed as skipped.
+Events enter an append-only ledger (`lab/beatfall_events.json`) once their five-session window has closed and are never edited; the page `lab/BEATFALL.md` and `lab/results/beatfall.json` are rebuilt
+from it. Earnings tables are fetched fresh and, since Yahoo can revise them, the surprise and streak are frozen in the ledger at first sighting.
+
+**Reading rules (fixed now).** Nothing is concluded before 12 qualifying weeks. At 12 or more: **confirmed** if the mean is -0.3% or lower, the Newey-West t (4 lags) is -2 or lower, both halves of the weeks are
+negative and the median week is negative; **rejected** if the mean is 0 or higher; otherwise it keeps running, to at most 24 qualifying weeks, where the same confirm rule gives the final answer. One decisive test.
+Reported, never decisive: R1, the 20-session drift D20, the contrast within bands of surprise (0 to 5%, 5 to 10%, 10 to 20%, 20% and over: the exploratory result in the audit was the 0 to 5% band), the
+count of flagged beats a week, the same contrast against the registered Pass 21 V2 baseline (all other events). Two seasons, about 12 qualifying weeks, is the likely first reading, around December 2026.
+
+**Predictions.** (1) At 12 qualifying weeks the mean is between -1.0% and +0.2% and the t between -2.5 and +0.5: the corrected contrast keeps its sign but loses most of its size (a negative mean found after
+looking at seen data shrinks on new data). (2) The 0 to 5% band stays the most negative band. (3) Odds at the final reading: confirmed about one in four, rejected about two in five, the rest keeps running.
+
+    python lab/forward_beatfall.py          # log newly closed events, then score the ledger and rewrite BEATFALL.md
