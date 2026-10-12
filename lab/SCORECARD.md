@@ -1,6 +1,6 @@
 # Scorecard: every test, every member
 
-As of 2026-09-29, nineteen passes and five side checks (`lab/README.md` has each
+As of 2026-10-12, twenty-seven passes and five side checks (`lab/README.md` has each
 one's registration, rule and result; `lab/results/` the numbers). This page
 is the matrix the owner asked for: what was tested, and how each Council
 member did in it.
@@ -47,6 +47,14 @@ whole quarter.
 | Pass 17, a fourth chair: the Insider (SEC Form 4 open-market buys by officers and directors) | as of 2024-09; the screen's list | its buys correlate **-0.27** with her edges | its buys correlate **+0.34** with his: insiders buy cheap and falling, Cecil by other means | ~0 | no, five times: clusters +0.30 (1.33) and buys +0.13 on the clean list; **clusters on small caps +0.61 (t 1.72, both halves)**; buys -0.16; four chairs minus three -0.05; its edge does not keep over a quarter. Side result, not registered: **three chairs (a third each, Cecil with a P/E) +0.34%/wk, t 2.51, both halves, 58 of 96 weeks** |
 | Pass 18, overhead supply at each level (per quarter) | as of 2024-09; the screen's list | | | | **pass, twice: supply at a level predicts the stall.** After a first touch, the rest of the quarter vs SPY: light levels +0.77%, heavy -0.80% (**t -3.38**, 25,633 touches); small/mid +2.20% vs -0.15% (**t -3.78**). As a selling rule: no, fifteen times; selling each level's supply share beats equal thirds by 0.13-0.35 on random stocks, nothing measurable on the picks; no ladder beats holding |
 | Pass 19, Cecil's value trap (50-day gates, one name per sector) | as of 2024-09; the 111 and the 277 reported | | no rule helps: own 50-day gate -0.18 (t -1.21); sector-ETF gate +0.01; **one per sector -0.25 (t -2.07)**; both -0.31. His names under a 50-day line do no worse than the rest of his five, next week or over four; he stacks a sector in 97% of weeks, and that is where his edge is | | three chairs +0.32 (2.33), the same picks as the union; blocking his flagged names or replacing them gives the same book (+0.00) |
+| Pass 20, regime splits and a cash dial (VIX, breadth, CPI/FOMC weeks, the commodity gate) | as of 2024-09 | | **in fear weeks -0.99 (t -2.1)**: a lead, not a result | **event weeks +1.12 (t +2.9), fear weeks +0.64 (t +1.2)**: a lead | no split matters: fear -0.15 (t -0.48), weak breadth -0.40 (t -1.40), event week +0.04 (t +0.14); the complacency, four-flag and commodity-gate splits fire 1, 2 and 7 weeks of 96 and cannot be tested; skipping event weeks +0.03 (t 0.24) against the same exposure in cash; the gate is on in 1.5% of 1,222 weeks since 2003 |
+| Pass 21, earnings surprise (the owner's beat-then-fall ideas and the drift) | as of 2024-09 | | | | **V1 holds:** surprise rank vs the 5-day reaction IC +0.234 (t 10.0). **V3 passes:** top surprise quintile +1.21% over the next 20 sessions (t 2.81, 6 of 7 seasons positive, +1.11% after costs), edge correlated +0.18 / -0.06 / +0.15 with Ophelia / Cecil / Marky; V2 beat-then-fall no (+0.39%, t 1.08); V4 big-beat-then-fall no (a drift up). Reaction-day entry |
+| Pass 22, the frozen 2025 bot lists scored forward vs random (4, 13, 26, 52 weeks) | each file's own pool | | **Cecil v1's 20 names: 52 weeks +4.9% vs +12.6% for random** (22nd percentile, 20 names) | | no cohort of six reaches the 97.5 line on mean and median at any horizon; the July threshold list trails random at all four horizons (-2.4 to -5.4 points); all six trailed at four weeks, five of them one market episode |
+| Pass 23, the drift chair on the weekly clock | as of 2024-09 | | | | **no as a chair:** bought at Monday's open, last week's top-surprise names lose -0.34%/wk (t -0.79) over the week then make it back (**+0.40%/wk of holding over four weeks, t +3.02**, both halves, one of six tests); four chairs minus three -0.09 (t -2.10). A four-week sleeve, not registered |
+| Pass 24, the heatmap's arithmetic sector score vs Ophelia's anchor (weekly rank IC over eleven sectors) | as of 2024-09; the 111 | mechanical score **-0.037 (t -1.06)**; her stale anchor +0.016 (t +0.38); the 111 +0.018 / +0.044 | | | no, no: the score does not rank next week's sectors and does not beat her anchor; relative momentum ranks exactly as last week's return |
+| Pass 25, her anchor on SPDR sector ETFs since 1999 | 9 to 11 ETFs, 1,446 weeks | stale anchor IC **-0.005 (t -0.48)**; last week's winners **-0.025 (t -2.25)**, negative in all three eras | | | no: the anchor has no support in 27 years (2000-02, 2008, 2022 included); a small weekly sector reversal is the one lead |
+| Pass 26, Cecil's value net of rate exposure | as of 2024-09 | | residual **+0.08 (t 0.61)**; capped -0.08 (t -0.93); rate-beta capped five holds less rate exposure (SD 2.24% vs 2.45%); the residual five holds more | | no, no |
+| Pass 27, the owner's Pattern DNA and Breakfast Indicator, as stated | as of 2024-09; DBA/QQQ 2007-2026 | | | | no, no: a name's best daily rule keeps 8% of its in-sample edge and the first out-of-sample half is below its null; the Breakfast flag fires in 42% of months and the difference is -0.81% (p 0.61) |
 
 ## 2. On the Council's nine weeks (seen)
 
@@ -100,7 +108,9 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   negative. On the 277 and the feed her passes are ten hindsight names. Not
   momentum (a plain 12-1 screen makes nothing), not the additions. Finer
   sector maps hurt her; the owner's clusters are the steadiest map and won
-  the seen weeks. **The agent** (three passes on the 111) has no edge in
+  the seen weeks. The anchor itself has no support in 27 years of sector
+  ETFs (IC -0.005, t -0.48; Pass 25), and the heatmap's arithmetic does not
+  rank sectors better (Pass 24). **The agent** (three passes on the 111) has no edge in
   nine weeks and her sector reading was -0.18%/wk (t -0.59).
 - **Cecil, the engine.** Without a point-in-time P/E, a low-volatility
   screen, mildly negative everywhere (Passes 1-9 scored that). With the
@@ -117,7 +127,8 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   week, and that is his edge: one name per sector costs him 0.25%/wk
   (t -2.07), and his names under their 50-day line do no worse than the
   rest, so a mechanical gate would not have caught the insurer slide
-  early (Pass 19). Diversify him through the team, not inside his five. **The agent** was the better of the two
+  early (Pass 19), and a rate-beta-neutral version of his table adds
+  nothing (+0.08%/wk, t 0.61; Pass 26). Diversify him through the team, not inside his five. **The agent** was the better of the two
   LLM members on the nine weeks (+0.41%/wk, 57th percentile), which is
   nothing yet.
 - **Marky.** The channel pullback (v3) is the only design that beat random
@@ -132,7 +143,9 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   on his picks: they are dips, and every stop that sells the next dip cost
   him significantly (-8% stop -1.60% a quarter, t -2.39; volatility stop
   t -2.57; support stop t -2.46; Passes 15 and 16), while random picks
-  showed nothing.
+  showed nothing. In event weeks (CPI or FOMC) and fear weeks his edge ran
+  0.6-1.1 points a week above his other weeks (t +2.9 and +1.2; Pass 20), a
+  lead to read forward, not a finding.
 - **The team.** Blending destroyed value (v2 synthesis -0.89%/wk against
   separate books +0.58%); v2.1 fixed the seating, not the returns; the vote
   swapped one name in nine weeks and objected names beat approved ones; the
@@ -147,7 +160,14 @@ Cecil shared a name in six of nine weeks (0.78 a week, edge correlation
   owner's rules lift the win rate to about 70% and halve the spread by
   holding about two weeks and waiting in SPY, and net of the same rules on
   random picks they are flat to negative. What held up on weeks nobody tuned: the
-  earnings blackout, and exposure.
+  earnings blackout, and exposure. The one new signal that passed its rule
+  reads what no engine reads: the earnings surprise (Pass 21: +1.21% over the
+  next 20 sessions for the top quintile, t 2.81, edges nearly uncorrelated
+  with the three). It does not work as a weekly chair (Pass 23: -0.09%/wk
+  for the team, t -2.10) and pays over four weeks of holding. The market
+  regimes the Council's rules describe fire too rarely on two years of
+  history to test (Pass 20), and the 2025 bot lists did no better than
+  random picks from their own pools (Pass 22).
 
 ## 5. The reading for the design question
 
