@@ -163,7 +163,12 @@ def cohort_picks(frozen, name):
     sc = frozen[name]["scores"]
     vals = sorted(sc.values())
     cutoff = vals[int(0.90 * (len(vals) - 1))]
-    return {s for s, v in sc.items() if v >= cutoff}
+    picks = {s for s, v in sc.items() if v >= cutoff}
+    if len(picks) > 0.30 * len(sc):
+        # DEVIATION from the registration, made before any threshold outcome was read: ties make the cutoff cover most of the
+        # list (the threshold file scores 2,088 of 2,209 names at exactly 0), so take the names strictly above it, the list's own selection
+        picks = {s for s, v in sc.items() if v > cutoff}
+    return picks
 
 
 def evaluate(name, picks, pool, entry, px, last_day, tag):
