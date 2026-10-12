@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-10-05 | -1.36% | 40% | TBD | TBD | SNPS (2.77%) | LRCX (-8.08%) | 20.0% |
 | 2026-10-05 | B- (2.72 -- analysis quality) | TBD (week open) | Cecil (3.23 rolling -- on the record; no pick booked for a second week, ALL/HIG/TROW blocked on XLF's 50D) | Ophelia (named falsifier 'HY OAS through 300' fired at 324 with no size consequence on a 47.9% sleeve; confidence graded at 60; Cecil's duration flag CONFIRMED a third time, carried) | AMAT (B+) | SNPS (C+) | 20.0% |
 | 2026-09-28 | -1.15% | 33% | TBD | TBD | AMD (1.44%) | META (-2.93%) | 20.0% |
 | 2026-09-28 | B- (2.80 -- analysis quality) | TBD (week open) | Cecil (3.28 rolling -- on the record; no pick booked this week, all three trigger-blocked) | Ophelia (confidence 72-79 outran her own named doubt -- HY OAS 270->280 -- on a 50% sleeve; Cecil's duration flag CONFIRMED, carried) | AAPL (B) | META (B-) | 20.0% |
