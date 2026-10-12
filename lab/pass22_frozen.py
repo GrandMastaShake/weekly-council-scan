@@ -217,15 +217,13 @@ def evaluate(name, picks, pool, entry, px, last_day, tag):
         rng = random.Random(f"{lab.SEED}-p22-{name}-{h}")
         pool_l = [s for s in live_pool if s in w]
         u_mean, u_med, m_mean, m_med = [], [], [], []
+        members_of = {s: [x for x in cells.get(cell(s), []) if x in w] or pool_l for s in ps}     # fixed per pick, not per draw
         for _ in range(DRAWS):
             d = rng.sample(pool_l, len(ps))
             vals = [w[s] for s in d]
             u_mean.append(statistics.fmean(vals))
             u_med.append(statistics.median(vals))
-            mvals = []
-            for s in ps:
-                members = [x for x in cells.get(cell(s), []) if x in w] or pool_l
-                mvals.append(w[rng.choice(members)])
+            mvals = [w[rng.choice(members_of[s])] for s in ps]
             m_mean.append(statistics.fmean(mvals))
             m_med.append(statistics.median(mvals))
         pct = {"mean": percentile(pm, u_mean), "median": percentile(pmed, u_med),
