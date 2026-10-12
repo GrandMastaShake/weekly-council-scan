@@ -2777,3 +2777,54 @@ The deep dive found dated lists the 2025 bot stack wrote before any outcome exis
 **Predictions.** No cohort passes. The jensen and elizabet scores favor cheap volatile small caps, so against unmatched draws they will swing either way and lose their edge when matched. Six cohorts at four horizons leave about one chance in two that one horizon crosses by luck, which is why a pass needs two, including a long one. The October 2025 rubric lists (the 250-day window closes about 2026-10-22) are not in this pass; they get their own once the window has closed.
 
     python lab/pass22_frozen.py
+
+## Pass 20 results -- the regime rules fire too rarely to test, and the splits that can be tested are flat
+
+Run after the registration (d1ba76f) and the code (c7bdf18); `results/pass20_regimes.json`. The rescored team book equals Pass 19's
+"three chairs, as is" to 1e-12 in all 96 weeks on both lists (the script asserts it), and the inputs were spot-checked against known
+closes (2024-09-06: VIX 22.38, 10-year 3.71%). Team = Ophelia, Cecil with the P/E, Marky, a third each; clipped edge over random;
+the S&P 500 as of 2024-09, 96 weeks, mean team edge +0.31%/wk.
+
+| Split | Flagged weeks (of 96) | Team edge, flagged | other weeks | Difference (Welch t) | Halves | Median | Matters |
+|---|---|---|---|---|---|---|---|
+| S1 complacency (VIX under 16, breadth under 40%) | **1** | | | untestable | | | |
+| S2 fear (VIX over 22) | 14 | +0.19% | +0.33% | -0.15% (-0.48) | +0.16 / -0.48 | +0.14 | no |
+| S3 weak breadth (under 40%) | 18 | -0.01% | +0.39% | -0.40% (-1.40) | -0.47 / -0.19 | -0.02 | no |
+| S4 flags (3 or more of 4) | **2** | | | untestable | | | |
+| S5 event week (CPI or FOMC) | 36 | +0.33% | +0.30% | +0.04% (+0.14) | -0.15 / +0.26 | +0.07 | no |
+| S6 commodity gate (dollar over 101, 10-year over 4.5%) | **7** | | | untestable | | | |
+
+The 111 says the same: S2 +0.03% (t 0.07), S3 -0.21% (t -0.47), S5 +0.43% (t +1.14; halves -0.05 and +0.98), the rest untestable.
+
+**The Council's regime rules barely fire on the history we have.** VIX was under 16 in 26 of the 96 weeks, but breadth was under 40% in
+only one of them, so the "complacency trap" as the swarm rulebook states it (low VIX with weak breadth) is one week in two years. The
+four market flags reached three at once in two weeks and never four. The commodity gate is on in 7 weeks of the 96 and in 18 of 1,222
+weeks since 2003 (1.5%), all of them in 2023-2026. A rule that fires once or twice in two years cannot be tested on two years; its record
+will be the forward one. The ten Council weeks add little: S1 and S3 flag two of them, S6 one, and S2 and S4 none. (The registered CPI
+and FOMC lists end with the history window, so the Council-weeks S5 row, "0 flagged", is an artifact of the lists and means nothing.)
+
+**What can be tested is flat.** Fear weeks, weak-breadth weeks and event weeks do not separate the team's edge by anything near t 2, in
+either half, on either list. The cash dial fares no better. Skipping the 36 event weeks (D3, 62% invested) has a timing value of
++0.025%/wk (t +0.24; halves -0.07 and +0.12) against the same book at 62% exposure on the clean list, and -0.154%/wk (t -1.20) on the 111;
+the exposure-matched book had the better Sharpe both times (1.94 against 1.48, and 1.89 against 0.92) and the shallower drawdown (7.7%
+against 12.8%; 11.8% against 20.1%). Rule 7 again: cash does the risk reduction for free, and a calendar does not pick the weeks.
+D1 and D2 had too few flagged weeks to run.
+
+**The index leg.** With the gate on, XLB, XLE and GLD against SPY averaged -0.28%/wk over the next four weeks, against +0.01% with it off:
+slope -0.29%/wk, Newey-West t -0.77, from 18 gate weeks in one decade. The size is what the rule claimed; eighteen overlapping weeks
+cannot tell it from noise.
+
+**Members (decide nothing; 18 cells a list, three at |t| of 2 or more where about one in twenty is expected by chance).** Marky in event
+weeks +1.12%/wk better than other weeks (t +2.9, clean list; +0.87, t +1.5, the 111); Marky in fear weeks +0.64 (t +1.2) and +2.66 (t
++3.2, the 111); Cecil in fear weeks -0.99 (t -2.1) and -1.28 (t -1.9). The two lists agree on the signs, the sizes rest on 14 and 36
+weeks, and Marky's dips bouncing and Cecil's cheap names falling further when the tape is volatile is a story that needs no new
+mechanism. It is a lead to register as its own forward test, with the thresholds fixed first, not a finding.
+
+**Predictions.** 1 right: no split matters on the team book. 2 right on the count (one week), and one week cannot show a direction. 3
+right: event weeks are the same to four hundredths of a point. 4 right where it could be run. 5 half wrong: the commodity gate is not on
+in more than a third of weeks, it is on in 1.5%; right that the basket's gap does not reach t 2.
+
+**What this changes.** Nothing in the engines or the Council's rules. The Council's prose regime rules stay as they are: they have not
+been shown to help, and on this history they cannot be shown, because the regimes they describe are too rare in it. The cheap test
+that remains is forward: log the flags on every Monday from now (the Monday pipeline already reads VIX, the 10-year and the dollar) next to
+each member's edge, and read the split after the flags have fired often enough. The Marky and Cecil volatility leads go on that list.
