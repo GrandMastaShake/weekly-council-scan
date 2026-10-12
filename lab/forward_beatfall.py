@@ -174,7 +174,7 @@ def write_page(res, ledger, latest, generated):
              f"Registered 2026-10-12 as Pass 30 (`lab/README.md`, {REGISTERED}). Flagged beats (a positive surprise after 8 or more positive quarters) against the other beats of the same reaction week, on the "
              "five-day market-adjusted return R5, for reports with a reaction day on or after 2026-07-06. `lab/forward_beatfall.py` rebuilds this page from the append-only `lab/beatfall_events.json`; edits by hand are overwritten.", "",
              f"Last run: {generated}. Latest bar: {latest}. Events in the ledger: {len(ledger['events'])}.", "",
-             f"**Status: {res['status']}.** " + (f"Mean weekly gap {pct(r5['mean'])} (Newey-West t {r5['t']:+.2f}), halves {pct(r5['halves'][0])} / {pct(r5['halves'][1])}, median {pct(r5['median'])}." if "mean" in r5 else f"{res['qualifying_weeks']} qualifying weeks so far."), "",
+             f"**Status: {res['status']}.** " + (f"Mean weekly gap {pct(r5['mean'])}" + (f" (Newey-West t {r5['t']:+.2f})" if res["qualifying_weeks"] >= 8 and r5.get("t") is not None else " (no t before 8 qualifying weeks: it means nothing on so few)") + f", halves {pct(r5['halves'][0])} / {pct(r5['halves'][1])}, median {pct(r5['median'])}." if "mean" in r5 else f"{res['qualifying_weeks']} qualifying weeks so far."), "",
              "| Reaction week | Events | Flagged beats | Other beats | R5 gap (flagged minus other beats) | R1 gap | Versus all other events | D20 gap |", "|---|---|---|---|---|---|---|---|"]
     for w in res["weeks"]:
         lines.append(f"| {w['week']} | {w['events']} | {w['flagged']} | {w['other_beats']} | {pct(w['r5'])} | {pct(w['r1'])} | {pct(w['vs_all_other'])} | {pct(w['d20'])} |")

@@ -270,7 +270,7 @@ def write_page(rows, v, generated, ledger, latest):
              f"Last run: {generated}. Latest bar: {latest}. Mondays logged: {len(ledger['rows'])}; active: {sum(1 for r in ledger['rows'] if r['active'])}.", "",
              f"**Status: {v['status']}.** Closed cohorts: {v['closed']}"
              + (f"; mean edge over the tradeable pool {pct(v['mean_edge_per_week'])} a week of holding"
-                + (f" (Newey-West t {v['nw_t']:+.2f})" if v['nw_t'] is not None else "")
+                + (f" (Newey-West t {v['nw_t']:+.2f})" if v['nw_t'] is not None and v['closed'] >= 8 else "")
                 + f"; ahead in {v['hit_share']:.0%} of cohorts" if v["closed"] else "") + ".", ""]
     if v["by_season"]:
         lines.append("By season: " + "; ".join(f"{s} {pct(x)}" for s, x in v["by_season"].items()) + ".")
