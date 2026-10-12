@@ -207,11 +207,16 @@ class BaseRates:
 
 
 def level_rule(rec):
+    """Relation and direction are read together: 'above' with direction up is a call to get above X (some close above), 'above' or 'holds' with no
+    direction is a call to stay above (no close below); 'below' with direction down is a break below (some close below), 'below' with no direction a
+    ceiling (no close above). Fixed after the first partial run showed targets read as floors (a plumbing correction, made on the quotes' meaning)."""
     rel, d = rec.get("level_relation"), rec.get("direction")
-    if rel in ("above", "holds"):
-        return "no_close_below"
+    if rel == "above":
+        return "some_close_above" if d == "up" else "no_close_below"
+    if rel == "holds":
+        return "no_close_below" if d != "down" else None
     if rel == "below":
-        return "no_close_above"
+        return "some_close_below" if d == "down" else "no_close_above"
     if rel == "breaks":
         return "some_close_below" if d == "down" else "some_close_above" if d == "up" else None
     if rel == "reclaims":
@@ -368,7 +373,36 @@ def aggregate(graded, rng):
                 row["beats_random"] = bool(row["decisive"] and row["pct_mean"] >= 97.5 and row["pct_median"] >= 97.5)
             else:
                 row["note"] = "too few random-draw names priced for the window"
+        row["by_document"] = cluster_check(gs, kind)
         out[f"{fam}/{kind}"] = row
+    return out
+
+
+def cluster_check(gs, kind):
+    """Calls inside one document share a day, a regime and often a name, so the binomial over calls overstates the evidence. This groups by
+    source document and asks the same question one level up (an unregistered check, reported beside the registered rule, never instead of it)."""
+    docs = defaultdict(list)
+    for g in gs:
+        docs[g["source_id"]].append(g)
+    diffs = []
+    for sid, ds in docs.items():
+        if kind == "pick":
+            sig = [g["signed_excess"] - float(np.nanmean(g["null_vec"])) for g in ds if g.get("null_vec") is not None and np.isfinite(g["null_vec"]).any()]
+            if sig:
+                diffs.append(float(np.mean(sig)))
+        else:
+            ps = [g["base_rate"] for g in ds if g.get("base_rate") is not None]
+            if ps:
+                diffs.append(float(np.mean([1.0 if g["hit"] else 0.0 for g in ds if g.get("base_rate") is not None]) - np.mean(ps)))
+    n = len(diffs)
+    out = {"documents": n, "documents_above_null": sum(1 for d in diffs if d > 0)}
+    if n >= 2:
+        k = out["documents_above_null"]
+        from math import comb
+        out["sign_test_p"] = float(sum(comb(n, i) for i in range(k, n + 1)) / 2 ** n)
+        if n >= 3 and float(np.std(diffs, ddof=1)) > 0:
+            out["mean_diff"] = float(np.mean(diffs))
+            out["t"] = float(np.mean(diffs) / (np.std(diffs, ddof=1) / np.sqrt(n)))
     return out
 
 

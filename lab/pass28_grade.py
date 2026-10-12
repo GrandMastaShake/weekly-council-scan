@@ -161,7 +161,9 @@ def main(argv=None):
             else:
                 extra = f"mean {t['mean_excess']*100:+.2f}%, median {t['median_excess']*100:+.2f}%, percentile {t.get('pct_mean', float('nan')):.1f} / {t.get('pct_median', float('nan')):.1f}"
                 verdict = "BEATS random" if t.get("beats_random") else "no"
-            print(f"  {k:<22} graded {t['graded']:>4}, hit {t['hit_rate']:.0%} ({extra}); {'decisive' if t['decisive'] else 'reported only'} -> {verdict}")
+            bd = t.get("by_document", {})
+            cl = f"; by document: {bd.get('documents_above_null', 0)} of {bd.get('documents', 0)} above null" + (f", sign-test p {bd['sign_test_p']:.3f}" if "sign_test_p" in bd else "") + (f", t {bd['t']:+.2f}" if "t" in bd else "")
+            print(f"  {k:<22} graded {t['graded']:>4}, hit {t['hit_rate']:.0%} ({extra}); {'decisive' if t['decisive'] else 'reported only'} -> {verdict}{cl}")
     path = lab.RESULTS / ("pass28_" + "_".join(args.parts) + ".json")
     with open(path, "w", encoding="ascii", newline="\n") as fh:
         json.dump(result, fh, indent=1, default=float)
