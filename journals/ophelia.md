@@ -586,3 +586,43 @@ I also concede SNPS in part. It is my top score, the book's largest weight, and 
 **Cash Target: 30%. Council actual: 20.0%.** My desk says no new rate-sensitive positions before 1:00 PM Wednesday without a stop. The book has five new positions and its stops are shadow-only. I have said which side of that I am on; the cap is the owner's and it is applied.
 
 -- **Ophelia**, Macro Oracle
+
+## Week of 2026-10-12 -- The Rule I Asked For Was Adopted, and It Cost Me 1.4 Points Before the Week Started
+
+### 1. Macro Narrative
+The Fed half of the thesis came back and the term-premium half stalled. The September minutes said most participants see another hike by year-end; Waller said more hikes, pace flexible; the 13-week bill rose every day to **4.057%** as December was priced back in. The 10-year made a cycle-high close of 5.311% on Monday and a 5.364% print on Wednesday, then the $39B reopening cleared at 5.300% with 2.77 cover and 80.3% indirects and the week ended at **5.244%**, 3.3 bps lower. Term premium made its high and held. That is not relief; it is a pause with a number overhead.
+
+Inflation inputs leaned the wrong way: ISM services prices paid 74.0, a record-import trade deficit, Michigan's five-year expectation at 3.5%, headline CPI consensus +0.6% for Wednesday. Credit: **HY OAS 315 on Oct 8**, nine sessions above 300, off the 324 peak; **CCC 1,252, a new high**. HY-IG 233 against the 250 line. My falsifier from 2026-09-28 -- HY OAS through 300 -- fired that week and has not un-fired.
+
+Three flags up, unchanged. Dollar 102.21, a fourth weekly gain, three cents from its closing high. VIX 14.84 into a CPI week.
+
+### 2. Last Week, Scored
+- **SNPS** booked 21.3% -> **+2.77%**, the book's best name. My XLK line ($198.73) fired on Thursday's close by 95 cents and was reclaimed Friday; obeying it would have cost 2.47 points of the position. Second time a daily-close line of mine fired by cents and the stock finished higher (META, 2026-09-28).
+- **AMAT** 13.6% -> **-6.28%**; **LRCX** 13.0% -> **-8.08%**. SMH closed under $609.66 on Thursday on the OpenAI/Broadcom financing stories -- the risk I had mislocated in the discount rate was in the funding of demand, and both equipment names went down the same hole. Both -5% shadow stops fired; LRCX gapped through its stop at the open. The revisit trigger in exit-shadow.md is met and the question is now the owner's.
+- My sleeve: **-1.31% of book on 47.9% of the weight.** Ophelia's names did the damage in the week after Ophelia's falsifier fired. That is the sentence the rule below was written to prevent.
+
+### 3. My Proposals to the Council
+- **ZS** -- macro score 80, confidence 70.3 -- **BOOKED 19.3%, at the engine weight.** +18.9% last week on an Investor Day, reaffirmed guidance and raised targets (found this session; not in any wiki). Trigger: invalid on an XLK close under $196.48, 1.2% headroom. Tagged SPEC.
+- **FTNT** -- 77, conf 67.8 -- **BOOKED 12.4%, at the engine weight.** Record close on 33% billings growth; reports Oct 28, outside the week. Same line as ZS, stated in the table.
+- **HPE** -- 76, conf 64.0 -- **DECLINED.** Third name on the XLK line and a server seller inside the AI-funding loop the synthesis calls the biggest risk on the board. Conceded on concentration. It goes to the rejection log and will be scored.
+
+### 4. The Concession (owned)
+I proposed a rule last week and the Council adopted it, provisionally, pending the owner. A fired falsifier freezes my sleeve at engine weights and takes none of the cash-cap raise. HY OAS is 315. So ZS and FTNT are booked at 19.3% and 12.4%, the 3.4 points to the cap went to Marky, and the difference to my sleeve is 1.4 points of the book before a single price has printed. I asked for a consequence and got one. I am not going to write that it is unfair the week it is applied to me, because the whole point was that it would be.
+
+What I will concede plainly: the rule moves weight away from my names toward the sleeve with the worst accuracy in the room, and it does so on a credit number that has been coming in for a week. If my two names beat Marky's three, the rule cost money the week it was adopted. That is allowed. A rule about consequence for a stated doubt is not a forecast, and I would rather be bound by it than write the 2026-09-14 entry a fifth time. The scorecard grades me at 65 this week, up from 60, and the five points are the rule, not the names.
+
+The second concession is ZS. It is my largest weight, 25.8% above its 50D, +42% in four weeks, with a sector rationale and a 1.2% line. This time the cause of the move was found before booking, which is the one thing I owed after SNPS. It does not make the position less of a chase; it makes it an informed one.
+
+### 5. Lesson Learned
+**A rule that only costs you when your doubt was right is a rule you will keep.** Last week's lesson was that a doubt needs a size attached. This week's is narrower: the size has to come off before the week, in public, in the report's first paragraph, so that the week cannot be re-told afterwards. It did. The next test is whether I argue for an exception the first week the rule costs me a winner. I am writing now that I will not.
+
+### 6. What Would Make Me Wrong
+- **Core CPI above +0.3% Wednesday.** December becomes certain, the 10-year tests 5.364% and the long-duration names I own -- two cybersecurity stocks at 52-week highs -- are the first thing sold.
+- **XLK closes under $196.48.** 1.2% away. One ordinary down day fires both my positions at once; it fired by 95 cents on Thursday and cost nothing only because Friday took it back.
+- **HY-IG through 250, or HY back through 324.** Then the credit leg is widening, not narrowing, and the rule that froze my sleeve should have cut it.
+- **The 10Y closes above 5.364%.** The next line is 5.50% and nothing in this book is priced for it.
+
+### 7. Cash
+**Cash Target: 30%. Council actual: 20.0%.** My desk's own instruction this week is "do not buy the dip in anything long-duration or AI-funding-dependent before Wednesday at 8:30 AM." The book has five new positions, two of them long-duration growth at records, and its stops are still shadow-only. I have said which side of that I am on; the cap is the owner's and it is applied. The one thing I can control -- my own sleeve's size -- I did.
+
+-- **Ophelia**, Macro Oracle
