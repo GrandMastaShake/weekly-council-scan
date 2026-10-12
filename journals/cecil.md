@@ -677,3 +677,44 @@ One thing I will put on the record in the other direction: the opportunity the s
 **Cash Target: 35%. Council actual: 20.0%.** Five names in EDA, semis equipment and building technology, three of them read by no desk, into a $39B ten-year auction. I am not in the book, so this is advice: the four percent bill is still the cheapest asset on the board.
 
 -- **Cecil**, The Fundamentalist
+
+## Week of 2026-10-12 -- Entry #012
+
+**Mood:** Benched a third week, and this time the bench cost the book money. I said that would be the test. It was.
+**Cash Target:** 35% (Council book: 20.0% cash -- the owner's cap; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, Tightening on pause; minutes say another hike by year-end, Waller says more than one at a flexible pace; October hold priced, December the meeting | The pause is about timing, not direction |
+| 10Y Yield | **5.244%**, 3.3 bps lower on the week; cycle-high close 5.311% Monday, 5.364% print Wednesday; the reopening cleared 5.300% with 2.77 cover | The long end stopped. It did not turn. The bills rose every day instead |
+| Curve (10Y-3M) | **+119 bps** (from +128); 10Y-2Y +49 | Flatter from the short end, which is the Fed, not the economy |
+| XLF | **$54.73**, 50D $56.39, 200D $53.33; back over the $54.46 shelf on payments and insurance; money centers flat, KRE -2.5% | The sector bounced without the names I own. The line I am measured on is still $1.66 away |
+| Credit | HY OAS **315** (Oct 8), above 300 for nine sessions, off the 324 peak; IG 82; CCC **1,252**, a new 52-week high | The index spread came in. The weakest borrowers did not. That is the number for Tuesday's reserve lines |
+
+**Verdict:** Restrictive, hiking cycle on pause, and the receipts arrive tomorrow at 6:40 AM.
+
+#### Last Week, Scored
+- I had nothing booked. **ALL**, blocked, made **+2.10%** (Mon close to Fri close); **HIG**, blocked on the line the Council gave it, made **+2.30%**; **TROW**, blocked as a promotion, +1.18%. The book made -1.17% on that basis. The block cost the book 2.02 points against the engine's own five and 3.27 points against my two names alone. First time in four scorings.
+- The bounce was V and MA at records and PGR and CB behind them -- HIG's group, not JPM's. The money centers that the synthesis calls the biggest opportunity on the board did nothing. So the snap-back arrived a week early, in the wrong names, with the line unchanged.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 95, conf 82.8 -- **TRIGGER-BLOCKED**, fifth week. XLF $54.73 against $56.39.
+- **HIG** -- score 94, conf 76.0 -- **TRIGGER-BLOCKED**, the shared line, third week.
+- **TROW** -- score 90, conf 71.6 -- **BLOCKED as a promotion**, second week. Under its own 50D ($108.60), under the fund line, read by no desk.
+
+**Booked for Cecil: nothing.** Third week. Said at the top of the session this time, as I promised: my bookable count was zero before the trigger check ran.
+
+#### The Concession (owned)
+I asked last week that the line be re-read the morning the receipts arrive, not lowered. The Council did what I asked -- the re-read is scheduled against the Tuesday prints at the next session -- and blocked this week, the morning after the block first cost money. I concede the week. I do not concede the question, and I say why: the 50D is a line about the fund, and the thing that can hurt an insurer this week is a reserve line at a bank. Those are not the same risk, and I wrote that sentence on 2026-09-28 about HIG's curve trigger. The honest version is that I have been blocked on a line I helped choose, and the first week it was wrong I wanted a different line. That is what trigger-shopping feels like from the inside.
+
+The larger thing to own is Entry #011. "An owed fix is a position." The duration-adjusted screen is still not built. The screen ran unchanged for an eighth week and handed the Council the same three tickers. I have now written the same promise three times (#010, #011, #012). The scorekeeper's flag on my screen is confirmed a fourth time, and it should be.
+
+#### Lesson Learned
+**A standard you set for yourself has to be met before you argue the line.** I cannot ask the Council to re-read XLF's 50D while my own screen still prices a 4.6x P/E as cheapness without asking what the 10-year is. If I want the line moved on Tuesday's evidence, the screen has to be able to say what the evidence is worth. That is the order of operations, and I had it backwards for two weeks.
+
+For the record, the other direction: CCC at 1,252 is new and it is the right number to hold against the bank prints. If JPM, WFC, C and GS report flat reserves against that, four weeks of selling in my names was positioning and the Council should hear it from me on Oct 19 with a number, not a plea.
+
+**Cash Target: 35%. Council actual: 20.0%.** Five names in cybersecurity, a hospital, a biotech and building technology, none read by a desk, into bank prints, CPI and the Fed Chair in one week. I am not in the book. The four percent bill is still the cheapest asset on the board and it got six basis points cheaper last week.
+
+-- **Cecil**, The Fundamentalist
