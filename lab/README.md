@@ -3512,3 +3512,15 @@ count of flagged beats a week, the same contrast against the registered Pass 21 
 looking at seen data shrinks on new data). (2) The 0 to 5% band stays the most negative band. (3) Odds at the final reading: confirmed about one in four, rejected about two in five, the rest keeps running.
 
     python lab/forward_beatfall.py          # log newly closed events, then score the ledger and rewrite BEATFALL.md
+
+### Pass 30 -- first run (2026-10-12): the unread July-August season came in the other way
+
+The first run logged 495 events with reaction days from 2026-07-06 to 2026-09-28 whose five-session windows had closed (the July to August season was closed but unread; nothing from it
+had been looked at before this run). Five reaction weeks qualify (15+ events, 3+ flagged beats, 3+ other beats); eight were skipped for the floors, and none is open. The weekly R5 gap, flagged beats minus other
+beats: 2026-07-13 +1.01%, 07-20 +2.60%, 07-27 +4.30%, 08-03 +3.69%, 08-24 +1.59%: mean **+2.64%**, every week positive, the sign opposite to beat-then-fall. Reported, not decisive: R1 gap +2.92%
+(flagged beats reacted better on the day itself), D20 gap -1.48%, versus all other events +2.82%, and by surprise band the gap is +5.35% in the 0 to 5% band (four weeks), +1.60%, +0.89%
+and +0.06% in the higher bands (five weeks each). As a check on the pipeline, the weekly rank correlation of surprise with R5 on the same events is +0.09, +0.02, +0.28, +0.14 and +0.17, in line with
+Pass 21's +0.23, and the correlation of the streak itself with R5 is positive in all five weeks (+0.29, +0.08, +0.29, +0.16, +0.37). Status: **too early** (5 of the 12 qualifying weeks the rule needs;
+the October to November season is the forward part). Predictions: (1) already outside its range (a mean between -1.0% and +0.2% was predicted; five weeks read +2.64%, though the registered reading is at 12);
+(2) wrong (the 0 to 5% band is the most positive, not the most negative: the exploratory in-sample result of the audit, -1.82% in that band, does not survive a new season). One season of five weeks says
+little in either direction, but it is the second look in which a habitual beater did better, not worse, after a beat.
