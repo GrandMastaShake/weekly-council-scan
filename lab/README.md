@@ -3108,3 +3108,43 @@ October 2025 rubric lists, whose 250-day window closes about 2026-10-22, are not
 
 **What this changes.** Nothing. The 2025 bot lists are closed as scored: no input from them goes into the engines, and the next dated
 lists to grade are the forward ones.
+
+## Pass 24 results -- the heatmap's arithmetic ranks the sectors no better than last week's return, and neither ranks them at all
+
+Run after the registration (cebc16e) and the code (144c6d4); `results/pass24_sector_score.json`. 96 history weeks, eleven GICS sectors
+on the S&P 500 as of 2024-09 (decides; 19 to 75 names a sector) and nine to ten names a sector on the 111. IC is the weekly rank
+correlation across sectors between each Friday-close score and the next week's Monday-open to Friday-close basket return minus SPY's;
+the table is its mean, Newey-West t (4 lags) and the two halves.
+
+| Score | S&P 500 as of 2024-09: mean IC (t), halves | Paired with the stale anchor | The 111: mean IC (t), halves |
+|---|---|---|---|
+| Mechanical (0.20 breadth + 0.20 momentum + 0.15 volume) | **-0.037** (-1.06), -0.048 / -0.025 | -0.052 (t -0.92) | +0.018 (+0.45), +0.080 / -0.045 |
+| Breadth | -0.029 (-0.93), -0.017 / -0.041 | -0.044 (t -0.81) | -0.006 (-0.16), +0.066 / -0.078 |
+| Relative momentum = fresh anchor | -0.020 (-0.54), -0.053 / +0.013 | -0.036 (t -0.60) | +0.027 (+0.68), +0.055 / -0.002 |
+| Volume confirmation | -0.049 (-1.54), -0.020 / -0.079 | -0.065 (t -1.19) | -0.021 (-0.46), +0.069 / -0.110 |
+| **Stale anchor (what production reads)** | **+0.016** (+0.38), -0.034 / +0.065 | | +0.044 (+1.06), +0.038 / +0.050 |
+
+Registered verdicts: the mechanical score has signal **no**; it beats the stale anchor **no**. Neither side of the comparison is
+worth anything: the stale anchor's IC is +0.016, t 0.4, negative in the first half; no score has |t| above 1.6 on either list.
+
+**The three components are one signal.** The relative-momentum component ranks the sectors exactly as the fresh anchor does (SPY is
+subtracted from every sector alike), so their IC rows are identical by construction. The mean weekly rank correlation of the mechanical
+score with that ranking is +0.97 on the clean list and +0.93 on the 111, with breadth at +0.85 and +0.75 and volume confirmation at
++0.74 and +0.67: a week in which most of a sector's names rose, with the volume in the risers, is a week the sector's basket rose.
+The stale anchor is nearly independent of all of them (correlations -0.03 to +0.06), because a week-old return and last week's carry
+no common ranking.
+
+**Predictions.** 1 right on the verdict, a hair wrong on the band: the mechanical IC is -0.037, below the -0.03 I gave as the floor,
+with t -1.06 (inside the t 1.5 I gave). 2 right: it does not beat the stale anchor, and is behind it by 0.05. 3 right: the fresh
+anchor is slightly negative (-0.020, t -0.54) on the clean list, though +0.027 on the 111. 4 right: the components are heavily
+overlapping and with last week's return (+0.97 and +0.85).
+
+**What this does not show.** It is a test of the sector-ranking arithmetic over two years and eleven cross-sectional units a week, a
+small cross-section: one IC value has a standard error of about 0.3, so a sector signal of the size that would matter (an IC of
+0.05) needs the 96 weeks to reach t of roughly 1.6 if it were real; it did not get there in either direction. It does not test the
+heatmap's two judgment components (news and the yield-curve overlay), which are not arithmetic, or its five-day and month horizons. It is
+not Ophelia's production use of the anchor (her top two sectors on the engine's eight-bucket map): that is Pass 10's ground and Pass
+9b's regime finding.
+
+**What this changes.** The heatmap's mechanical sector score does not go into Ophelia. The heatmap is a map of the week just past; for the week to come it
+ranks sectors no better than a coin, which is also what the week-old anchor does here.
