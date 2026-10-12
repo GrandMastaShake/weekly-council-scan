@@ -63,6 +63,20 @@
 
 **Promotion recommendation: NOT YET -- stay in shadow, with a narrower question.** The stop numbers no longer need defending against tightening; the sample answers that. What it cannot answer is whether enforcing -5% CORE helps a book that is now 80% invested in five correlated leadership names, because the three deepest non-firing drawdowns all came from that kind of book in a single week. Revisit at 10 scored cycles, or the first week two CORE stops fire together, whichever comes first.
 
+**Addendum 2026-10-12 -- the revisit trigger fired: two CORE stops in one week (AMAT Thu Oct 8, LRCX Wed Oct 7), both on the SMH line.** The sample is now **26 position-weeks across 8 booked cycles: 24 CORE, 2 SPEC.** Stops fired 4 (CORE 3: HIG 09-21, AMAT 10-05, LRCX 10-05; SPEC 1: TER 08-17); helped 4, hurt 0; the +15% trim is still 0/26. The alternative-stop table re-run with this week's bars added (fired stops filled at the stop level; LRCX's gap open noted separately):
+
+| CORE stop | Fires on (cumulative) | Net vs holding to Friday |
+|---|---|---|
+| -6.0% | AMAT, LRCX (misses HIG) | +0.28 + 2.08 = **+2.36** |
+| **-5.0% (current)** | HIG, AMAT, LRCX | +0.66 + 1.28 + 3.08 = **+5.02** (+2.87 if LRCX fills at its $322.06 gap open) |
+| -4.5% | the above + META, AMD (09-28) | -6.35 + 1.78 + 3.58 = **-0.99** |
+| -4.0% | the above + AAPL (09-28) | -6.89 + 2.28 + 4.08 = **-0.53** |
+| -3.5% | the above + HIG 09-14, ETN | -9.62 + 2.78 + 4.58 = **-2.26** |
+
+What changed: (1) **-5% CORE is still the best level, now with three firings behind it instead of one.** The margin is still thin in the other direction: AMAT's Wednesday low missed the stop by $0.23 and fired the next day. (2) **The correlation question the block asked was answered the way it feared.** Two names on one sector line fired together in consecutive sessions, and the thesis leg (SMH close under $609.66) fired a day after the first stop; the stop would have exited LRCX Wednesday and AMAT Thursday, the thesis line both on Thursday's close for a smaller saving. (3) **The gap is new.** LRCX opened 2.15% through its stop. Stop-level accounting overstates that saving by 2.15pp of the position; the enforcement question is now "stop or stop-limit," not "-5% or -4%." (4) **"Entry day does the damage" did not hold this week** -- the damage came Tuesday to Thursday on a sector story (the OpenAI/Broadcom financing reports, wiki/semiconductors.md), not on the Monday basis. (5) The thesis leg cost money again where it fired alone (SNPS, -2.47pp) and saved less than the stop where both fired; it keeps its role as a re-entry block, not an intraweek exit.
+
+**Promotion recommendation, revised 2026-10-12: the -5% CORE stop has met the evidence bar this block set for itself** -- three firings, all helpful, no false positive at that level in 24 CORE position-weeks. It stays in shadow this week for one reason, and it is not the data: enforcement changes the book, and the book's rules are the owner's to change. Put to the owner: enforce -5% CORE as a daily-low stop filled at the next print (gap accepted), keep the thesis leg as a re-entry block only, keep -8% SPEC in shadow (two observations). Next revisit at 10 scored cycles regardless.
+
 ---
 
 ## Entries
@@ -79,7 +93,14 @@ Book: SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% / cash 20.0%
 | AMAT @ $540.82 (Ophelia) | **CORE** -- large-cap semis equipment, broad sponsorship; +11.3% last week on the MU read-through | -5% = $513.78 | SMH close below $609.66 (double-top line, wiki/semiconductors.md; wiki/synthesis.md Section 5 SMH row; SMH $630.60 at booking) | Named catalyst: Oct 7 auction/minutes gate on a 43x semis sector; AMAT print Nov 12 (wiki/earnings-surveillance.md); 6-week backstop Nov 16 | Trim 1/3 at +15% ($621.94); remainder trails -15% from HWM |
 | LRCX @ $346.88 (Ophelia) | **CORE** -- large-cap semis equipment; +10.2% last week; shares AMAT's SMH line | -5% = $329.53 | SMH close below $609.66 (shared with AMAT; wiki/semiconductors.md; SMH $630.60 at booking) | Named catalyst: LRCX print Oct 21 inside the holding window; 6-week backstop Nov 16 | Trim 1/3 at +15% ($398.91); remainder trails -15% from HWM |
 
-outcome: to be computed
+outcome (scored 2026-10-12 against date-pinned daily OHLC 2026-10-05 -> 2026-10-09): **2/5 stops fired -- both CORE, both on the SMH line, both saved money. The revisit trigger in the summary block ("the first week two CORE stops fire together") is MET; see the 2026-10-12 addendum above.**
+- **SNPS** (SPEC, -8% = $456.55): week low $482.16 Mon (-2.84%); not touched. Trim +15% ($570.69) not reached (high $512.49, +3.27%, Fri). Thesis leg FIRED Thu Oct 8: XLK closed $197.78 under $198.73 (back over it Friday at $198.78). Exiting at Thursday's close $497.75 (+0.30%) vs the booked +2.77% = the thesis leg would have COST 2.47pp of the position. Second time a daily-close thesis line fired by cents and the stock finished higher (META 2026-09-28).
+- **JCI** (CORE, -5% = $147.93): low $151.36 Thu (-2.80%); not touched. XLI line $166.18 held: week low $166.58 Thu, lowest close $167.84 Wed. Finished +1.10%.
+- **NDSN** (CORE, -5% = $316.86): low $322.21 Thu (-3.40%); not touched. Same XLI line, held. Finished -1.61%.
+- **AMAT** (CORE, -5% = $513.78): Wed low $514.01 held by $0.23; **Thu low $502.65 -> FIRED Thu Oct 8** at the stop level (-5.00%) vs the booked -6.28% = SAVED 1.28pp. The thesis leg fired the same session on the close (SMH $607.27 under $609.66; AMAT Thu close $509.57, -5.78%, would have saved 0.50pp).
+- **LRCX** (CORE, -5% = $329.53): Tue low $330.85 held by $1.32; **Wed Oct 7 opened $322.06, through the stop -> FIRED at the open.** Scored at the stop level (-5.00%) by the block's convention = SAVED 3.08pp vs the booked -8.08%; filled at the gap open ($322.06, -7.15%) the saving is 0.93pp -- the first stop on record that would not have filled near its level. Thesis leg fired Thu on the SMH close (LRCX $320.59, -7.58%, would have saved 0.50pp).
+- Trim plan: 0/5 reached +15%; best intraweek high SNPS +3.27%.
+- Book effect, stops filled at their levels: 1.28 x 13.6% + 3.08 x 13.0% = **0.57pp of the book** (-1.36% -> about -0.79%); with LRCX filled at its gap open, 0.29pp. The thesis legs alone, applied as exits, net -0.26pp of the book (SNPS -2.47 x 21.3% against +0.50 x 26.6% on the two equipment names).
 
 ---
 

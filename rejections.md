@@ -14,7 +14,7 @@ Booked: SNPS 21.3% / JCI 17.3% / NDSN 14.8% / AMAT 13.6% / LRCX 13.0% (20.0% cas
 
 Also mirrored here (not Ophelia's, logged for the same counterfactual): ALL (Cecil #1, score 97, conf 87.7) and HIG (Cecil #2, 94 / 81.5) TRIGGER-BLOCKED -- XLF $53.49 vs the 50D $56.65 (wiki/financials.md); TROW (Cecil #3, 93 / 76.9) blocked as a promotion on the same line, no wiki coverage; APH (Marky, conf 78.7) declined -- engine rationale "breakout with volume fading" against Marky's own Rule 1, reports Oct 28, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
 
-counterfactual: to be computed (Monday 2026-10-12, date-pinned Mon 2026-10-05 close -> Fri 2026-10-09 close; ALL / HIG / TROW / APH each and equal-weighted, vs the official booked week).
+counterfactual (scored 2026-10-12, date-pinned Mon 2026-10-05 close -> Fri 2026-10-09 close): Ophelia had no rejection, so her log scores nothing this week. Mirrored names: ALL +2.10% / HIG +2.30% / TROW +1.18% / APH -0.03%; equal-weighted basket **+1.39%** vs the official booked week **-1.17%** on the same basis (Tracker -1.36% from Monday opens) = **delta +2.56pp**. Every blocked or declined name beat the book: the three financials beat XLF (+1.58%) into the Oct 13 prints, APH was flat while the book's semis equipment lost 6.5-7.8%. The left-out names beat the booked ones again after last week's first loss (QCOM).
 
 ---
 

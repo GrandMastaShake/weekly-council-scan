@@ -2,11 +2,13 @@ week: '2026-10-05'
 lock: 2026-10-05 08:50 ET
 entry_date: '2026-10-05'
 exit_date: '2026-10-09'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 769.69
   entry_price_source: open
+  exit_price: 778.57
+  return_pct: 1.15
 players:
 - player: Umassalum
   valid: true
@@ -17,22 +19,34 @@ players:
     weight: 0.2
     entry_price: 79.52
     entry_price_source: open
+    exit_price: 79.78
+    return_pct: 0.33
   - ticker: NVDA
     weight: 0.15
-    entry_price: 236.07
+    entry_price: 236.09
     entry_price_source: open
+    exit_price: 229.28
+    return_pct: -2.88
   - ticker: INSP
     weight: 0.25
     entry_price: 69.66
     entry_price_source: open
+    exit_price: 68.89
+    return_pct: -1.11
   - ticker: CDNA
     weight: 0.1
-    entry_price: 66.9
+    entry_price: 66.89
     entry_price_source: open
+    exit_price: 63.67
+    return_pct: -4.81
   - ticker: BTC
     weight: 0.3
     entry_price: 38.05
     entry_price_source: open
+    exit_price: 36.36
+    return_pct: -4.44
+  weekly_return_pct: -2.46
+  alpha_vs_spy_pct: -3.61
 - player: GrandMastaShake
   valid: true
   total_weight: 1.0
@@ -40,29 +54,45 @@ players:
   picks:
   - ticker: AMAT
     weight: 0.2
-    entry_price: 540.82
+    entry_price: 540.99
     entry_price_source: open
+    exit_price: 507.03
+    return_pct: -6.28
   - ticker: NVDA
     weight: 0.2
-    entry_price: 236.07
+    entry_price: 236.09
     entry_price_source: open
+    exit_price: 229.28
+    return_pct: -2.88
   - ticker: XOM
     weight: 0.2
     entry_price: 163.76
     entry_price_source: open
+    exit_price: 168.94
+    return_pct: 3.16
   - ticker: GEV
     weight: 0.15
     entry_price: 988.06
     entry_price_source: open
+    exit_price: 1004.73
+    return_pct: 1.69
   - ticker: BJRI
     weight: 0.1
     entry_price: 62.23
     entry_price_source: open
+    exit_price: 59.87
+    return_pct: -3.79
   - ticker: GEF
     weight: 0.1
     entry_price: 81.62
     entry_price_source: open
+    exit_price: 81.82
+    return_pct: 0.25
   - ticker: RKLB
     weight: 0.05
-    entry_price: 73.59
+    entry_price: 73.7
     entry_price_source: open
+    exit_price: 68.21
+    return_pct: -7.45
+  weekly_return_pct: -1.67
+  alpha_vs_spy_pct: -2.82
