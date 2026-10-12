@@ -25,7 +25,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import engine_lab as lab  # noqa: E402
 import pass9_universe as p9  # noqa: E402
-import pass10_sectors as p10  # noqa: E402
 import pass15_exits as p15  # noqa: E402
 import pass21_beat_fall as p21  # noqa: E402
 
@@ -117,6 +116,24 @@ def fetch_tables(names, max_age_hours=12):
 
 
 # ------------------------------------------------------------------------------------------------ choosing the cohort
+def sleeve_pool(names, adj, cal, W):
+    """The Council's tradeable pool (enough history, no report inside the coming week) with one correction. p10.pool looks for the first report
+    ON OR AFTER the previous Friday, so a name that reported on that Friday reads as reporting in 0 days and is blacked out, which removes the
+    Friday pre-market reporters the sleeve is built from. Here the first report must be strictly after that Friday (lab/README.md, Pass 29 erratum)."""
+    from scan_pipeline.fetch_market_data import _aggregate_weekly, _business_days_between
+    from scan_pipeline.utils.data_utils import EARNINGS_BLACKOUT_TRADING_DAYS
+    short = {t: _aggregate_weekly(adj[t].before(W, lab.LOOKBACK_DAYS)) for t in names if t in adj}
+    eligible = [t for t in names if len(short.get(t, [])) >= lab.MIN_WEEKS]
+    F = _aggregate_weekly(adj["SPY"].before(W, lab.LOOKBACK_DAYS))[-1].date
+    out = []
+    for t in eligible:
+        nxt = lab._next_report(cal.get(t), lab._plus(F, 1))
+        etd = _business_days_between(F, nxt) if nxt else None
+        if etd is None or not 0 <= etd <= EARNINGS_BLACKOUT_TRADING_DAYS:
+            out.append(t)
+    return out
+
+
 def candidates_for(W, names, tables, adj, tradeable):
     lo, hi = lab._plus(W, -7), lab._plus(W, -3)
     out = {}
@@ -152,7 +169,7 @@ def log_week(W, names, ledger, path, now, allow_past=False):
     cal = lab.earnings_calendar(names, max_age_days=6)
     start = lab._plus(W, -200)
     adj, missing, thin = get_bars(names, start, lab._plus(W, 1))
-    tradeable = set(p10.pool(names, adj, cal, W))
+    tradeable = set(sleeve_pool(names, adj, cal, W))
     cands = candidates_for(W, names, tables, adj, tradeable)
     active = len(cands) >= MIN_ACTIVE
     sectors = p9.sp500()

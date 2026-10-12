@@ -3406,3 +3406,13 @@ At the owner's word the sleeve now runs with the Monday forward scorer (schedule
 not stop the others. Task 8 logs the Monday's row, scores every closed cohort, and commits `lab/sleeve_ledger.json`, `lab/SLEEVE.md` and `lab/results/sleeve.json` with its
 other files. It runs after 11:30 AM ET, so every row will carry the `late` flag under the registered definition (a row logged after the Monday open); that is expected and does
 not change a cohort's validity, since the choice uses only data from before the Monday. `forward.py` is untouched.
+
+### Pass 29 -- erratum (2026-10-12, found by an independent audit the same day, before any active cohort)
+
+The sleeve's registered pool is "the Council's pool: at least four weeks of bars, no report inside the coming week". The code reused `p10.pool`, which looks for the first report
+on or after the previous Friday, so a name that reported on that Friday reads as reporting in zero days and is blacked out. That removes the Friday pre-market reporters the sleeve is
+built from, which the registration did not intend (a name that reported last Friday is not reporting in the coming week). `forward_sleeve.py` now uses its own `sleeve_pool`, whose
+first report must be strictly after that Friday (fix in the commit that carries this note). The ledger row of 2026-10-12 was logged with the old pool and stays as logged (append-only):
+it had 2 candidates; with the corrected pool it would have had 3 (DAL joins), still inactive, so nothing about that row changes. Pass 23's backtest, which used the same pool, is rerun
+on the corrected pool in the Pass 23 erratum below; the sleeve's thresholds are not moved. The same quirk is in `p10.pool` for every earlier pass; it matters most where the signal
+is built from last week's reporters (Passes 21 and 23 and this sleeve).
