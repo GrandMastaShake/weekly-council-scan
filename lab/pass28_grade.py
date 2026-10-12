@@ -133,6 +133,7 @@ def main(argv=None):
     ap.add_argument("--heatmap", type=Path)
     ap.add_argument("--panel", type=Path)
     ap.add_argument("--records-dir", type=Path)
+    ap.add_argument("--private-out", type=Path, help="where the per-call graded rows go (private; not for this repo)")
     args = ap.parse_args(argv)
     result = {}
     if "capex" in args.parts:
@@ -142,7 +143,25 @@ def main(argv=None):
         print("\n  sector-regime-heatmap forecast cycles, graded by its own src/evaluate.py")
         result["heatmap"] = heatmap(args.heatmap, args.panel)
     if "records" in args.parts:
-        raise SystemExit("records part is added after extraction")
+        import pass28_records as pr
+        print("\n  extracted prediction records (Oracle, Four-Sector lists, Pre-/Post-Bell, Kimi swarm, Perplexity)")
+        res = pr.run(args.records_dir)
+        rows = res.pop("graded_rows")
+        res["thin_tickers"] = len(res.pop("thin_tickers"))
+        if args.private_out:
+            Path(args.private_out).write_text(json.dumps(rows, default=float), encoding="utf-8")
+        result["records"] = res
+        print(f"  loaded: {res['load']}; tickers without enough bars: {res['thin_tickers']}")
+        for k, v in sorted(res["status"].items()):
+            print(f"    {k:<44}{v:>5}")
+        for k, t in res["tests"].items():
+            if "p_one_sided" in t or t["kind"] != "pick":
+                extra = f"base rate {t.get('mean_base_rate', float('nan')):.0%}, p {t.get('p_one_sided', float('nan')):.3f}"
+                verdict = "BEATS the base rate" if t.get("beats_base_rate") else "no"
+            else:
+                extra = f"mean {t['mean_excess']*100:+.2f}%, median {t['median_excess']*100:+.2f}%, percentile {t.get('pct_mean', float('nan')):.1f} / {t.get('pct_median', float('nan')):.1f}"
+                verdict = "BEATS random" if t.get("beats_random") else "no"
+            print(f"  {k:<22} graded {t['graded']:>4}, hit {t['hit_rate']:.0%} ({extra}); {'decisive' if t['decisive'] else 'reported only'} -> {verdict}")
     path = lab.RESULTS / ("pass28_" + "_".join(args.parts) + ".json")
     with open(path, "w", encoding="ascii", newline="\n") as fh:
         json.dump(result, fh, indent=1, default=float)
