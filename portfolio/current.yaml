@@ -1,0 +1,93 @@
+week: '2026-10-12'
+status: open
+positions:
+- ticker: ZS
+  weight: 0.193
+  sponsor: Ophelia
+  thesis: 'Aligned with Technology sector rotation. Macro score: 80. (confidence:
+    70.3)'
+  entry_price: 237.22000122070312
+  entry_date: '2026-10-12'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: JCI
+  weight: 0.175
+  sponsor: Marky
+  thesis: 'Technical breakout with volume flat. Score: 94. (confidence: 75.2) -- promoted
+    (Rule 1 checked by the number, Dissonance #5)'
+  entry_price: 156.97000122070312
+  entry_date: '2026-10-12'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: HCA
+  weight: 0.16
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 5.5%. (confidence:
+    69)'
+  entry_price: 450.5799865722656
+  entry_date: '2026-10-12'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: BIIB
+  weight: 0.14800000000000002
+  sponsor: Marky
+  thesis: 'Low volatility uptrend with clean price action. Vol: 2.3%. Score: 95. (confidence:
+    63.7) -- promoted (shares HCA''s XLV line)'
+  entry_price: 234.24000549316406
+  entry_date: '2026-10-12'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: FTNT
+  weight: 0.124
+  sponsor: Ophelia
+  thesis: 'Benefiting from the bullish market regime. Score: 77. (confidence: 67.8)'
+  entry_price: 196.72500610351562
+  entry_date: '2026-10-12'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 778.780029296875
+spy_entry_source: open
+vix_at_entry: 14.84
+fed_stance: Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0 vote);
+  the September minutes (released Oct 7) say most participants see another hike as
+  likely appropriate by year-end and Governor Waller (Oct 8) said more hikes are needed
+  at a flexible pace; October 28 is priced as a hold (~20% hike odds) with December
+  the priced meeting -- a hiking cycle on pause, not ended (macro/facts.json policy.fed_stance
+  = "Hike"; wiki/economic-calendar.md).
+total_weight: 0.8
+cash_weight: 0.19999999999999996
