@@ -96,48 +96,48 @@ The regime is **a Fed that says it will hike again (December, not October), a jo
 Scored from the weekly price panel in this repo by
 [sector-regime-heatmap](https://github.com/GrandMastaShake/sector-regime-heatmap).
 
-**As of 2026-10-02** -- manual run
+**As of 2026-10-09** -- manual run
 
-> 🧭 &nbsp;**Regime** &nbsp; Hiking cycle on pause, bear steepening -- the long end, not the Fed, sets prices; leadership two sectors deep; archetype-1 label retained in name only pending taxonomy review
+> 🧭 &nbsp;**Regime** &nbsp; Hiking cycle, December priced -- the long end's break stalled at a cycle high (5.364 pct) but did not reverse; a labor market that has stopped hiring and an oil shock not yet in the core; leadership rotating out of the two AI carriers into defensives and energy with the index at a record, each new leader one headline deep; archetype-1 label retained in name only pending taxonomy review
 > 
-> **Confidence** &nbsp; ●○○ low &nbsp;&nbsp;•&nbsp;&nbsp; ✅ 5 supporting &nbsp;&nbsp;•&nbsp;&nbsp; ⚠️ 14 disconfirming
+> **Confidence** &nbsp; ●○○ low &nbsp;&nbsp;•&nbsp;&nbsp; ✅ 9 supporting &nbsp;&nbsp;•&nbsp;&nbsp; ⚠️ 17 disconfirming
 
 ```
 SECTOR                   WEEK                     MONTH
 ────────────────────────────────────────────────────────────────────────
-Technology                69.6 con ███████░░░     72.4 fav ███████░░░
-Energy                    60.5 con ██████░░░░     43.1 unf ████░░░░░░
-Industrials               57.0 con ██████░░░░     62.5 con ██████░░░░
-Utilities                 51.7 neu █████░░░░░     21.8 def ██░░░░░░░░
-Consumer Discretionary    32.1 unf ███░░░░░░░     22.9 def ██░░░░░░░░
-Consumer Staples          26.4 def ███░░░░░░░     33.9 unf ███░░░░░░░
-Materials                 23.8 def ██░░░░░░░░     28.4 def ███░░░░░░░
-Real Estate               23.4 def ██░░░░░░░░     21.3 def ██░░░░░░░░
-Financials                22.7 def ██░░░░░░░░     29.2 def ███░░░░░░░
-Healthcare                21.2 def ██░░░░░░░░     50.4 neu █████░░░░░
-Communication Services    20.8 def ██░░░░░░░░     41.8 unf ████░░░░░░
+Energy                    80.3 fav ████████░░     43.6 unf ████░░░░░░
+Consumer Staples          71.2 fav ███████░░░     48.5 neu █████░░░░░
+Healthcare                66.2 con ███████░░░     61.4 con ██████░░░░
+Utilities                 60.2 con ██████░░░░     39.2 unf ████░░░░░░
+Financials                53.9 neu █████░░░░░     38.8 unf ████░░░░░░
+Consumer Discretionary    53.1 neu █████░░░░░     31.0 unf ███░░░░░░░
+Communication Services    53.0 neu █████░░░░░     43.6 unf ████░░░░░░
+Real Estate               45.1 neu █████░░░░░     23.9 def ██░░░░░░░░
+Materials                 39.0 unf ████░░░░░░     34.6 unf ███░░░░░░░
+Industrials               37.3 unf ████░░░░░░     56.3 con ██████░░░░
+Technology                35.8 unf ████░░░░░░     66.8 con ███████░░░
 ```
 
 | | Sector | Week | Month | Confidence |
 |---|---|---:|---:|:---:|
-| 🔵 | **Technology** | 69.6 constructive | 72.4 favorable | ●○○ low |
-| 🔵 | **Energy** | 60.5 constructive | 43.1 unfavorable | ●○○ low |
-| 🔵 | **Industrials** | 57.0 constructive | 62.5 constructive | ●○○ low |
-| ⚪ | **Utilities** | 51.7 neutral | 21.8 defensive | ●○○ low |
-| 🟠 | **Consumer Discretionary** | 32.1 unfavorable | 22.9 defensive | ●○○ low |
-| 🔴 | **Consumer Staples** | 26.4 defensive | 33.9 unfavorable | ●○○ low |
-| 🔴 | **Materials** | 23.8 defensive | 28.4 defensive | ●●○ medium |
-| 🔴 | **Real Estate** | 23.4 defensive | 21.3 defensive | ●○○ low |
-| 🔴 | **Financials** | 22.7 defensive | 29.2 defensive | ●○○ low |
-| 🔴 | **Healthcare** | 21.2 defensive | 50.4 neutral | ●○○ low |
-| 🔴 | **Communication Services** | 20.8 defensive | 41.8 unfavorable | ●○○ low |
+| 🟢 | **Energy** | 80.3 favorable | 43.6 unfavorable | ●○○ low |
+| 🟢 | **Consumer Staples** | 71.2 favorable | 48.5 neutral | ●○○ low |
+| 🔵 | **Healthcare** | 66.2 constructive | 61.4 constructive | ●○○ low |
+| 🔵 | **Utilities** | 60.2 constructive | 39.2 unfavorable | ●○○ low |
+| ⚪ | **Financials** | 53.9 neutral | 38.8 unfavorable | ●●○ medium |
+| ⚪ | **Consumer Discretionary** | 53.1 neutral | 31.0 unfavorable | ●○○ low |
+| ⚪ | **Communication Services** | 53.0 neutral | 43.6 unfavorable | ●○○ low |
+| ⚪ | **Real Estate** | 45.1 neutral | 23.9 defensive | ●○○ low |
+| 🟠 | **Materials** | 39.0 unfavorable | 34.6 unfavorable | ●○○ low |
+| 🟠 | **Industrials** | 37.3 unfavorable | 56.3 constructive | ●○○ low |
+| 🟠 | **Technology** | 35.8 unfavorable | 66.8 constructive | ●○○ low |
 
 `fav` 70+, `con` 55+, `neu` 45+, `unf` 30+, `def` below 30. `n/a` is a
 horizon that was not offered -- the day horizon needs daily bars and this
 feed commits Friday closes only -- never a zero.
 
 Full rationale, per-sector sourcing and the disconfirming evidence are in
-the heatmap's own README and in `data/forecasts/2026-10-02_manual.json` there.
+the heatmap's own README and in `data/forecasts/2026-10-09_manual.json` there.
 
 <!-- HEATMAP:END -->
 
