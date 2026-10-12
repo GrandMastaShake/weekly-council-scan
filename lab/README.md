@@ -3235,3 +3235,63 @@ any other name with a corporate action since September. The script captures the 
 the as-is five against Pass 19's in every week; that assertion catches a change that reaches his five, not one that stays below it.
 
 **What this changes.** Nothing in Cecil. The journal's open item (duration-adjusted cheapness) has one registered test and it says no.
+
+## Pass 27 results -- neither of the owner's two ideas holds as he stated them, and the registered Breakfast flag fires in 42% of months
+
+Run after the registration (cebc16e) and the code (7bda4c8); `results/pass27_owner_ideas.json`.
+
+### (a) Pattern DNA
+
+The S&P 500 as of 2024-09, daily dividend-adjusted bars 2023-08 to 2026-09-25, twelve rules (five weekdays, RSI under 30, RSI over 70,
+volume over 1.5 times its 20-day average, a gap down or up of more than 1%, within 3% of the 52-week high, below the 20-day average).
+**One reading of "eligible" to state:** a rule is eligible for a name when it fires on at least 20 days in *both* the first 60% and the last
+40% of the name's days, so a rule picked in-sample can be measured out of sample; all 463 names had at least one. The statistic is the
+mean next-day return on firing days minus the name's own mean next-day return in the same window. The null assigns each name a random
+eligible rule (2,000 draws).
+
+| | Chosen rule, per day | Random eligible rule, per day (SD) | Percentile among the draws | Names positive |
+|---|---|---|---|---|
+| In sample, the best of the rules (selection) | +0.351% | | | |
+| Out of sample, all | **+0.028%** | +0.010% (0.014) | 91.3 | 53% of 463 |
+| Out of sample, first half | **-0.011%** | +0.014% (0.019) | 9.4 | 47% of 441 |
+| Out of sample, second half | **+0.065%** | +0.017% (0.020) | 99.1 | 51% of 457 |
+
+Registered verdict: **does not hold** (it needs the 97.5 line in both halves; the first half is below its null). The rules picked most
+were the +1% gap (143 names), Friday (99) and the volume surge (84). The best rule on the first 60% averaged +0.35% a day above the name's
+own mean and kept 0.03% of it on the last 40%: 92% of the in-sample edge was the selection of the maximum of twelve noisy means.
+
+**What it says.** A name's best rule in sample is not a pattern that persists. Over the whole out-of-sample window the chosen rule is
+ahead of a random one by 0.018% a day, about 1.3 SD of the null, and that gain is the second half alone (+0.065%, the 99th percentile)
+with the sign reversed in the first (-0.011%). A gap-up and volume-surge rule making money in 2026 is what a rising tape with momentum
+produces whichever stock the rule was assigned to, and the first half says it did not follow the stock. **Prediction 1 right:** it does not
+hold, and the all-window gap to the null (+0.018) is inside the +/-0.02%/day band I gave.
+
+### (b) The Breakfast Indicator
+
+DBA and QQQ month-ends 2007-07 to 2026-06 (228 months); QQQ's next three months; block bootstrap, blocks of three months, 5,000 draws,
+two-sided about the bootstrap's own centre.
+
+| Flag | Flagged months (episodes) | QQQ next 3 months, flagged vs other | Difference (95% bootstrap) | p | 2008-12 / 2013-19 / 2020-26 | Verdict |
+|---|---|---|---|---|---|---|
+| **Registered:** DBA/QQQ six-month change under -10% | **96 of 228** (13) | +3.78% vs +4.60% | **-0.81%** (-3.68 to +2.38) | 0.61 | -3.61 / -2.19 / +1.26 | **no** |
+| Not registered: DBA's own six-month change under -10% | 34 (9) | +3.34% vs +4.41% | -1.07% (-7.41 to +4.61) | 0.72 | -1.82 / -3.79 / +11.70 (4 months) | no |
+
+**What it says.** The flag as the idea is written does not mean what the idea says. DBA divided by QQQ falls more than 10% in six months
+whenever QQQ rallies, and QQQ rallied through most of these 19 years, so the ratio rule is on in 42% of month-ends and the test
+compares most months with the rest. It is testable by the registered rule (96 flagged months in 13 episodes) and the answer is no, with
+the difference negative in two of three eras. The second row, which I added after seeing the first and which is not registered, asks the
+question the sentence asks, a food-commodity collapse by itself, and finds 34 months in 9 episodes with the same sign: -1.07% against
+other months, p 0.72, and a +11.7% positive era resting on four flagged months. **Prediction 2 half right:** I said the flagged months would cluster in two or three episodes and leave the test unable to give a verdict, which
+was wrong (96 flagged months in 13 episodes make it testable), and that if it could, the difference would not be distinguishable from
+zero, which was right (p 0.61).
+
+**What this does not show.** Pattern DNA is tested in a family of twelve simple daily rules over about 2.3 years, which is a thin account
+of "a pattern unique to that stock"; a richer family, longer bars, or intraday data are different tests. The Breakfast Indicator's
+other half, "lead Fed pivots", is not tested at all: no pivot dates were registered, and the first half of the claim (flip growth
+leadership) is read here only as QQQ's three-month return. No test of either idea was run on the Council's own picks.
+
+**Pass 24-27 count.** Eight decisive tests (two each in Passes 24, 25 and 26, and one each for 27a and 27b): none reached its rule. One
+unregistered extra (27b2) and the long-history reversal in Pass 25 are noted as such and decide nothing.
+
+**What this changes.** Nothing in the engines. The two ideas have an honest "not on this evidence" from a registered test; if he wants
+either pursued, the next step is a forward test whose rule he writes down first.
