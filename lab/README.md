@@ -3340,3 +3340,55 @@ of up days. (2) The heatmap's five cycles show a mean IC between -0.15 and +0.15
 P3 and P4 not triggered, because SPY has not closed 10% under its peak. (4) Picks lists, where there are 20 or more, do not beat random.
 
     python lab/pass28_grade.py
+
+## Pass 29 -- the four-week earnings-drift sleeve, a forward record (registered 2026-10-12 before its first cohort)
+
+The owner asked for the sleeve Pass 23 found to be registered as a forward record. It is a separate paper ledger, not a Council member and not
+wired into any engine: nothing here changes what the Council buys. Origin, with the doubts on the table: Pass 21's V3 (the top surprise quintile
+beat that week's reporters over the next 20 sessions, +1.21%, t 2.81) and Pass 23's variant A at hold 4 (+0.404% a week of holding over the
+tradeable pool, t +3.02, both halves positive, 34 active weeks in seven seasons, one rising market). It is one of six decisive tests in Pass 23, it
+is the same signal Pass 21 found, tested again, and against the candidate set alone (last week's reporters) the edge falls to +0.277% (t 1.88),
+so part of it is that recent reporters as a group beat the pool.
+
+**The rule (fixed).** Every Monday W the routine runs, in this order:
+1. The universe is the S&P 500 list of 2026-09-22 (`lab/universe_sp500_2026-09-22.csv`, 503 names), frozen for the record.
+2. The candidates are the names that reported in the previous Monday-to-Friday week, by the reaction day of Pass 21 (a report stamped before 12:00
+   ET reacts that day, otherwise the next session; a Friday after-close report reacts on W itself and is not a candidate), that are tradeable on W
+   (the Council's pool: at least four weeks of bars, no report inside the coming week) and have a surprise percent in the earnings table.
+3. The sleeve is **active** only if at least 15 candidates exist. An inactive Monday is logged as inactive and buys nothing.
+4. The picks are the five candidates with the highest surprise percent (clipped at +/-100, ties by ticker), one row per ticker (its best-surprise
+   report in the window), equal weight, bought at W's open, sold at the close of the Friday of week W+3 (twenty-five calendar days after W).
+Cohorts overlap by construction (up to four live at once); each is scored on its own.
+
+**Data.** Dividend-adjusted daily bars from Yahoo; earnings tables from `yfinance` `get_earnings_dates` (estimate, reported EPS, surprise percent,
+timestamp), fetched fresh on the run; the earnings calendar for the blackout is the lab's cache, refreshed when older than six days. Everything the
+choice used is stored in the ledger on the day (the candidate set with each surprise and its timestamp, the tradeable pool), so a later revision of
+Yahoo's table cannot change a logged cohort.
+
+**The ledger.** `lab/sleeve_ledger.json` is append-only: one row per Monday the routine runs, active or not, written before any exit price exists; the
+script refuses to overwrite a Monday that is already there. A row logged after that Monday's open is flagged `late` (still a valid cohort, since the
+choice uses only data from before W, but the flag stays on the page). A Monday with no row is a gap and is reported as one; a gap is not
+repaired afterwards. `lab/SLEEVE.md` and `lab/results/sleeve.json` are regenerated from the ledger and the bars each run.
+
+**Scoring.** For a closed cohort, each name's return is open of W to close of the Friday of W+3, clipped at +/-40%. The cohort's *edge* is the mean of
+its five minus the mean of the whole tradeable pool on the same clipped basis (random five-name draws from the pool have exactly that expectation), quoted per
+week of holding (the four-week edge divided by 4), as in Pass 23. Also reported, never decisive: the edge over the candidate set, the excess over SPY, the
+edge after a 0.10% round trip (0.025% a week), and the open cohorts marked to the latest close.
+
+**Reading rules (fixed now).** Nothing is concluded before 12 closed cohorts spanning at least three earnings seasons (a season is the calendar quarter of
+the cohort's Monday); a cohort is the unit, and the Newey-West t uses 3 lags because neighbouring cohorts share weeks.
+- **Confirmed** if, with 12 or more closed cohorts in at least three seasons, the mean edge is at least +0.20% a week of holding (half of Pass 23's), the t is
+  2 or more, and the mean is positive in at least two of the seasons.
+- **Rejected** if, with 12 or more closed cohorts, the mean edge is 0 or below, or the t is -1 or lower at any count of 8 or more.
+- Otherwise **keep running**, to at most 24 closed cohorts, when it is judged on the same rules and the answer is final.
+A single decisive test, so no multiple-test correction. Twelve cohorts can confirm only an effect close to its historical size; a smaller true one will read
+"keep running", which is the right answer. Confirmation would earn the sleeve a registration as an addition to the Council's money, not a place in it.
+
+**Predictions.** (1) The forward edge is smaller than +0.404%: the first completed season's mean is between -0.30% and +0.50% a week of holding. (2) Of the
+three outcomes, "keep running" at 12 cohorts is the likeliest (about one in two), confirmed and rejected about one in four each. (3) The edge over the
+candidate set is lower than the edge over the pool in more cohorts than not. (4) The first Monday, 2026-10-12, is inactive: few S&P 500 names reported in the
+week of 2026-10-05.
+
+    python lab/forward_sleeve.py            # log this Monday (if it is not logged yet), then score every closed cohort and rewrite SLEEVE.md
+    python lab/forward_sleeve.py score      # rescore only
+    python lab/forward_sleeve.py smoke      # plumbing: log to a scratch ledger
