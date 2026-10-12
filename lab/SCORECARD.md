@@ -55,6 +55,9 @@ whole quarter.
 | Pass 25, her anchor on SPDR sector ETFs since 1999 | 9 to 11 ETFs, 1,446 weeks | stale anchor IC **-0.005 (t -0.48)**; last week's winners **-0.025 (t -2.25)**, negative in all three eras | | | no: the anchor has no support in 27 years (2000-02, 2008, 2022 included); a small weekly sector reversal is the one lead |
 | Pass 26, Cecil's value net of rate exposure | as of 2024-09 | | residual **+0.08 (t 0.61)**; capped -0.08 (t -0.93); rate-beta capped five holds less rate exposure (SD 2.24% vs 2.45%); the residual five holds more | | no, no |
 | Pass 27, the owner's Pattern DNA and Breakfast Indicator, as stated | as of 2024-09; DBA/QQQ 2007-2026 | | | | no, no: a name's best daily rule keeps 8% of its in-sample edge and the first out-of-sample half is below its null; the Breakfast flag fires in 42% of months and the difference is -0.81% (p 0.61) |
+| Pass 28, the dated forward calls on the drive (Oracle, Four-Sector lists, Pre-/Post-Bell, Kimi, Perplexity; 959 graded calls) | the instruments each call names | | | | ten decisive tests, nine no; **Oracle levels pass the registered rule (75% vs a 65% base rate, p 0.031) on three documents** (by-document sign test p 0.125); Four-Sector picks -0.84% vs random S&P names; Perplexity longs hit 43.6%, shorts 63.5%; AI-capex pre-registration P1 and P2 passing, P3 and P4 not triggered; the heatmap's own cycles IC -0.02 / +0.65 / -0.15 / -0.15 |
+| Pass 29, the four-week earnings-drift sleeve | the S&P 500, forward | | | | forward record from 2026-10-12; first Monday inactive (2 candidates); confirm at 12 cohorts across three seasons at +0.20%/wk of holding |
+| Pass 30, beat-then-fall (corrected contrast), forward | the S&P 500, forward | | | | first look at the unread July-August season: flagged beats beat other beats by +2.64% a week (5 weeks), the opposite of beat-then-fall; too early (12 weeks needed) |
 
 ## 2. On the Council's nine weeks (seen)
 

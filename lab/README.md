@@ -3524,3 +3524,48 @@ Pass 21's +0.23, and the correlation of the streak itself with R5 is positive in
 the October to November season is the forward part). Predictions: (1) already outside its range (a mean between -1.0% and +0.2% was predicted; five weeks read +2.64%, though the registered reading is at 12);
 (2) wrong (the 0 to 5% band is the most positive, not the most negative: the exploratory in-sample result of the audit, -1.82% in that band, does not survive a new season). One season of five weeks says
 little in either direction, but it is the second look in which a habitual beater did better, not worse, after a beat.
+
+## Pass 28 results -- none of the dated forward calls on the drive beats its null, the Oracle's levels pass the registered rule on three documents, and the Perplexity longs lagged
+
+Run after the registration (517e4b7) and the code (`pass28_grade.py`, `pass28_records.py`; the final grader is e627ce6); `results/pass28_capex_heatmap.json` and `results/pass28_records.json`. The per-call records and rows stay
+outside this public repo; only counts, rules and aggregates are here, and nothing from the family-account document series was read.
+
+**Extraction.** 72 agents (an extractor and a verifier for each of 36 sources) read three Market Direction Oracle forecasts of 2026-06-12, 06-22 and 06-26; ten Four-Sector Watchlist documents, local and Drive; 21 daily Pre-/Post-Bell pairs, 2026-09-11 to 10-09; the Kimi swarm journal;
+and the Perplexity reports of October to December 2025, and looked at no price. 1,567 records came out; a second agent per source re-opened it and checked every quote, date and reading: 158 dropped, a few dates and levels fixed where the quote made the right value unambiguous, and 247 calls the extractors missed were counted and not added.
+After the duplicates between the local and Drive copies (168), 1,241 records were graded by the registered rules: **959 graded**, 49 still open (window not closed by 2026-10-09), 98 with a conditional or open-ended horizon, 54 on an instrument that maps to no ticker (composites, pair calls, "precious metals"),
+46 flat, hold or no-direction calls, 22 whose ticker has no bars, 7 whose level is on another scale than the instrument, 6 levels with no rule.
+
+**Two plumbing corrections after the first partial run, disclosed.** (1) Levels read relation and direction together ("above" with direction up is a call to get above; "above" or "holds" with no direction is a call to stay above): the first read graded the Kimi journal's price targets as floors, a 0% base rate.
+(2) The calls inside one document are not independent, so each test also carries a by-document check (an unregistered check, reported beside the registered rule). The random-draw universe was also extended back to 2025-09 for the Perplexity picks. None was tuned on a hit rate.
+
+| Family and kind | Graded | Hit rate | Null | Registered test | By document |
+|---|---|---|---|---|---|
+| **Oracle levels** (holds/breaks, indices) | 55 | 75% | base rate 65% | **beats the base rate, p 0.031** | **3 of 3 documents above; sign test p 0.125** |
+| Oracle directions | 12 | 58% | 54% | reported only (under 20) | |
+| Pre-/Post-Bell levels | 79 | 53% | 57% | no (p 0.81) | 9 of 19 days above |
+| Pre-/Post-Bell directions, picks, rankings | 6 / 11 / 4 | | | reported only | |
+| Four-Sector levels | 34 | 32% | 36% | no (p 0.85) | 2 of 9 |
+| Four-Sector sector ratings (outperform or lag SPY) | 31 | 48% | 51% | no (p 0.67) | 3 of 7 |
+| Four-Sector picks (buy, avoid, trim, add) | 89 | 48% | random S&P names | no: mean **-0.84%**, median -0.19% over 5 sessions, percentile 3.2 / 25.1 | 2 of 6 documents |
+| Kimi journal levels (targets) | 31 | 6% | 2% | no (p 0.16) | |
+| Kimi journal picks | 37 | 43% | random S&P names | no: mean +0.83% (percentile 99.5) but median -1.22% (91.1) | 2 of 3 |
+| Perplexity directions | 21 | 62% | 52% | no (p 0.25) | 4 of 6 |
+| Perplexity sector/stock ratings | 139 | 53% | 50% | no (p 0.34) | 10 of 16 |
+| **Perplexity picks** (day-trade longs and shorts, Oct-Dec 2025) | 393 | 47% | random S&P names | no: mean **-0.23%**, median -0.26%, percentile **0.2 / 0.2** | 12 of 26 dates |
+| AI-capex pre-registration, 2026-08-23 | | | its own rules | SPY 778.57 on 10-09, +22.8% since 03-27, peak 779.09, no 5% or 10% drawdown: **P1 and P2 passing; P3 and P4 not triggered** | |
+| sector-regime-heatmap manual cycles (its own grader) | 4 weekly cycles, 2 monthly | | shuffle | week IC -0.02 / +0.65 / -0.15 / -0.15, mean +0.08 (shuffle p 0.31); decides nothing (fewer than 8 cycles) | |
+
+**Ten decisive tests** (a family and kind with 20 or more graded calls): Oracle levels, Pre-/Post-Bell levels, Four-Sector levels, ratings and picks, Kimi levels and picks, Perplexity directions, ratings and picks. Nine fail their rule. One, the Oracle's levels, passes it, and the passing is thin: its 55 calls
+are four indices' support and resistance levels from **three forecasts** (29 on June 12, 10 on June 22, 16 on June 26), so the binomial over calls counts one day's market as many independent hits; each of the three documents beat its own base rate (+6, +16 and +11 points), but a sign test on three
+documents cannot reach p 0.05 (0.125), and a t on the three differences (3.87, 2 degrees of freedom) has no real power. With ten decisive tests the chance of at least one pass by luck is about 40%. It is a lead for the forward record (the Oracle was built in June, before the Council), not a finding.
+
+**What the Perplexity picks say.** The sign-adjusted mean is -0.23% a five-session window against random S&P 500 draws, the 0.2nd percentile, and the null deserves care: it is a draw of random S&P 500 names with the pick's own sign. I did not print the null's mean, but if the average S&P name lagged the cap-weighted SPY over those weeks, which the picks' own numbers suggest, random *shorts* would start ahead of SPY by default and drag the percentile down for any book with shorts in it, so the 0.2 likely overstates how bad the picks were. Split by side: 319 longs hit 43.6% (mean -0.75% against SPY), 74 shorts hit 63.5% (the short side made about +2.0%). So the longs lagged SPY and the shorts worked; 328 of the 393 calls are from November 2025 on 26 dates, one regime. No evidence of skill, and no
+reason to read the 0.2 as skill in the wrong direction.
+
+**Predictions.** 1 mostly right: direction calls do not beat the base rate anywhere; the Oracle (58% against 54%) is inside the 5 points I gave, the Perplexity directions (62% against 52%) are not, though at p 0.25. 2 right: the heatmap's mean IC is +0.08. 3 right: P1 and P2 passing, P3 and P4 not triggered. 4 right: no picks list of 20 or more beats random (Kimi's mean percentile of
+99.5 fails on the median).
+
+**What this does not show.** The extractors coded judgement calls (a lean label mapped to up or down; support and resistance mapped to holds and below; paired range bounds dropped where true by construction), and the verifiers counted 247 calls they missed. The grader's instrument map and horizon parser are fixed rules on names and phrases, but an unmapped, conditional or open-ended call is simply absent
+(about 22% of the records). The Oracle forecasts are LLM-written, the Four-Sector and Pre-/Post-Bell documents are his own and his father's process in prose, and the Kimi and Perplexity files are LLM research. None of this reads the Council's own picks, and one season, mostly rising, is all there is.
+
+**What this changes.** Nothing in the engines. Two things go on the list to watch forward: the Oracle's level calls (a handful more forecasts would test them properly) and the heatmap's grader, which needs 8 cycles to decide; at one cycle a week that is early November.

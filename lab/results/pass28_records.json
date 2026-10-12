@@ -1,0 +1,353 @@
+{
+ "records": {
+  "registered": "517e4b7",
+  "load": {
+   "unverified_source": 0,
+   "dropped_by_verifier": 158,
+   "duplicate": 168,
+   "kept": 1241
+  },
+  "status": {
+   "bell/graded": 100,
+   "bell/not_graded_direction": 7,
+   "bell/not_graded_level": 5,
+   "bell/open": 25,
+   "bell/ungradeable_horizon": 8,
+   "bell/unmapped": 3,
+   "kimi/graded": 75,
+   "kimi/no_bars": 2,
+   "kimi/not_graded_direction": 8,
+   "kimi/scale_mismatch": 6,
+   "kimi/ungradeable_horizon": 43,
+   "kimi/unmapped": 7,
+   "oracle/graded": 77,
+   "oracle/not_graded_direction": 8,
+   "oracle/open": 8,
+   "oracle/ungradeable_horizon": 15,
+   "oracle/unmapped": 5,
+   "perplexity/graded": 553,
+   "perplexity/no_bars": 19,
+   "perplexity/not_graded_direction": 18,
+   "perplexity/open": 6,
+   "perplexity/ungradeable_horizon": 2,
+   "perplexity/unmapped": 30,
+   "watchlist/graded": 154,
+   "watchlist/no_bars": 1,
+   "watchlist/not_graded_direction": 5,
+   "watchlist/not_graded_level": 1,
+   "watchlist/open": 10,
+   "watchlist/scale_mismatch": 1,
+   "watchlist/ungradeable_horizon": 30,
+   "watchlist/unmapped": 9
+  },
+  "tests": {
+   "bell/direction": {
+    "family": "bell",
+    "kind": "direction",
+    "graded": 6,
+    "hits": 4,
+    "decisive": false,
+    "hit_rate": 0.6666666666666666,
+    "mean_base_rate": 0.5163562017264879,
+    "p_one_sided": 0.37383824169555496,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 5,
+     "documents_above_null": 3,
+     "sign_test_p": 0.5,
+     "mean_diff": 0.19400272603362106,
+     "t": 1.0411380314536143
+    }
+   },
+   "bell/level": {
+    "family": "bell",
+    "kind": "level",
+    "graded": 79,
+    "hits": 42,
+    "decisive": true,
+    "hit_rate": 0.5316455696202531,
+    "mean_base_rate": 0.5697762609537981,
+    "p_one_sided": 0.8112385731866508,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 19,
+     "documents_above_null": 9,
+     "sign_test_p": 0.6761970520019531,
+     "mean_diff": -0.053665570351081944,
+     "t": -0.7554513574373164
+    }
+   },
+   "bell/pick": {
+    "family": "bell",
+    "kind": "pick",
+    "graded": 11,
+    "hits": 5,
+    "decisive": false,
+    "hit_rate": 0.45454545454545453,
+    "mean_excess": -0.005033245976775508,
+    "median_excess": -0.0003194164361908225,
+    "pct_mean": 36.25,
+    "pct_median": 59.25,
+    "beats_random": false,
+    "by_document": {
+     "documents": 6,
+     "documents_above_null": 2,
+     "sign_test_p": 0.890625,
+     "mean_diff": -0.0012061771473674706,
+     "t": -0.2874852155626945
+    }
+   },
+   "bell/ranking": {
+    "family": "bell",
+    "kind": "ranking",
+    "graded": 4,
+    "hits": 2,
+    "decisive": false,
+    "hit_rate": 0.5,
+    "mean_base_rate": 0.5061335756474329,
+    "p_one_sided": 0.6971782436995118,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 2,
+     "documents_above_null": 1,
+     "sign_test_p": 0.75
+    }
+   },
+   "kimi/level": {
+    "family": "kimi",
+    "kind": "level",
+    "graded": 31,
+    "hits": 2,
+    "decisive": true,
+    "hit_rate": 0.06451612903225806,
+    "mean_base_rate": 0.023998577270428065,
+    "p_one_sided": 0.15874801528366583,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 3,
+     "documents_above_null": 1,
+     "sign_test_p": 0.875,
+     "mean_diff": 0.02965528442501378,
+     "t": 0.5220516640903783
+    }
+   },
+   "kimi/pick": {
+    "family": "kimi",
+    "kind": "pick",
+    "graded": 37,
+    "hits": 16,
+    "decisive": true,
+    "hit_rate": 0.43243243243243246,
+    "mean_excess": 0.008314804148934755,
+    "median_excess": -0.01224230171093077,
+    "pct_mean": 99.5,
+    "pct_median": 91.10000000000001,
+    "beats_random": false,
+    "by_document": {
+     "documents": 3,
+     "documents_above_null": 2,
+     "sign_test_p": 0.5,
+     "mean_diff": 0.018556435545221354,
+     "t": 0.721833020487199
+    }
+   },
+   "kimi/ranking": {
+    "family": "kimi",
+    "kind": "ranking",
+    "graded": 7,
+    "hits": 3,
+    "decisive": false,
+    "hit_rate": 0.42857142857142855,
+    "mean_base_rate": 0.5009411306548971,
+    "p_one_sided": 0.7755621866231877,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 1,
+     "documents_above_null": 0
+    }
+   },
+   "oracle/direction": {
+    "family": "oracle",
+    "kind": "direction",
+    "graded": 12,
+    "hits": 7,
+    "decisive": false,
+    "hit_rate": 0.5833333333333334,
+    "mean_base_rate": 0.5375190685494147,
+    "p_one_sided": 0.4913741451781155,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 3,
+     "documents_above_null": 1,
+     "sign_test_p": 0.875,
+     "mean_diff": -0.1170157470511175,
+     "t": -0.4785778893875555
+    }
+   },
+   "oracle/level": {
+    "family": "oracle",
+    "kind": "level",
+    "graded": 55,
+    "hits": 41,
+    "decisive": true,
+    "hit_rate": 0.7454545454545455,
+    "mean_base_rate": 0.6505159033920406,
+    "p_one_sided": 0.03058296316187247,
+    "beats_base_rate": true,
+    "by_document": {
+     "documents": 3,
+     "documents_above_null": 3,
+     "sign_test_p": 0.125,
+     "mean_diff": 0.1119449324362078,
+     "t": 3.8709575460597385
+    }
+   },
+   "oracle/pick": {
+    "family": "oracle",
+    "kind": "pick",
+    "graded": 8,
+    "hits": 1,
+    "decisive": false,
+    "hit_rate": 0.125,
+    "mean_excess": -0.012986022506636705,
+    "median_excess": -0.008624693888660495,
+    "pct_mean": 15.6,
+    "pct_median": 20.4,
+    "beats_random": false,
+    "by_document": {
+     "documents": 2,
+     "documents_above_null": 0,
+     "sign_test_p": 1.0
+    }
+   },
+   "oracle/ranking": {
+    "family": "oracle",
+    "kind": "ranking",
+    "graded": 2,
+    "hits": 2,
+    "decisive": false,
+    "hit_rate": 1.0,
+    "mean_base_rate": 0.453430258973194,
+    "p_one_sided": 0.20559156849319452,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 1,
+     "documents_above_null": 1
+    }
+   },
+   "perplexity/direction": {
+    "family": "perplexity",
+    "kind": "direction",
+    "graded": 21,
+    "hits": 13,
+    "decisive": true,
+    "hit_rate": 0.6190476190476191,
+    "mean_base_rate": 0.5212677292880961,
+    "p_one_sided": 0.24491609693488006,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 6,
+     "documents_above_null": 4,
+     "sign_test_p": 0.34375,
+     "mean_diff": 0.022125777593959967,
+     "t": 0.11302020856277581
+    }
+   },
+   "perplexity/pick": {
+    "family": "perplexity",
+    "kind": "pick",
+    "graded": 393,
+    "hits": 186,
+    "decisive": true,
+    "hit_rate": 0.4732824427480916,
+    "mean_excess": -0.0022813184282650316,
+    "median_excess": -0.0025605876654820614,
+    "pct_mean": 0.25,
+    "pct_median": 0.25,
+    "beats_random": false,
+    "by_document": {
+     "documents": 26,
+     "documents_above_null": 12,
+     "sign_test_p": 0.7214014530181885,
+     "mean_diff": -0.004485890102636417,
+     "t": -1.2792131663473456
+    }
+   },
+   "perplexity/ranking": {
+    "family": "perplexity",
+    "kind": "ranking",
+    "graded": 139,
+    "hits": 73,
+    "decisive": true,
+    "hit_rate": 0.5251798561151079,
+    "mean_base_rate": 0.5044371590415082,
+    "p_one_sided": 0.34288036714679,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 16,
+     "documents_above_null": 10,
+     "sign_test_p": 0.2272491455078125,
+     "mean_diff": 0.09148736524694999,
+     "t": 1.5896968399792983
+    }
+   },
+   "watchlist/level": {
+    "family": "watchlist",
+    "kind": "level",
+    "graded": 34,
+    "hits": 11,
+    "decisive": true,
+    "hit_rate": 0.3235294117647059,
+    "mean_base_rate": 0.36034990022188984,
+    "p_one_sided": 0.8534997325244222,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 9,
+     "documents_above_null": 2,
+     "sign_test_p": 0.98046875,
+     "mean_diff": 0.0021214670248099446,
+     "t": 0.03890396127203702
+    }
+   },
+   "watchlist/pick": {
+    "family": "watchlist",
+    "kind": "pick",
+    "graded": 89,
+    "hits": 43,
+    "decisive": true,
+    "hit_rate": 0.48314606741573035,
+    "mean_excess": -0.00840654010692471,
+    "median_excess": -0.0018854760706019658,
+    "pct_mean": 3.2,
+    "pct_median": 25.05,
+    "beats_random": false,
+    "by_document": {
+     "documents": 6,
+     "documents_above_null": 2,
+     "sign_test_p": 0.890625,
+     "mean_diff": -0.0075162400920289535,
+     "t": -1.82419861705357
+    }
+   },
+   "watchlist/ranking": {
+    "family": "watchlist",
+    "kind": "ranking",
+    "graded": 31,
+    "hits": 15,
+    "decisive": true,
+    "hit_rate": 0.4838709677419355,
+    "mean_base_rate": 0.5072538483929632,
+    "p_one_sided": 0.6701951463806011,
+    "beats_base_rate": false,
+    "by_document": {
+     "documents": 7,
+     "documents_above_null": 3,
+     "sign_test_p": 0.7734375,
+     "mean_diff": -0.013810596852502124,
+     "t": -0.10287737263585472
+    }
+   }
+  },
+  "thin_tickers": 17
+ }
+}
