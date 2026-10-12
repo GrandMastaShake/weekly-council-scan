@@ -2,7 +2,7 @@
 
 Registered 2026-10-12 as Pass 29 (`lab/README.md`, 85714da). A paper ledger, not a Council member. Every Monday the routine runs, the five highest-surprise names among last week's S&P 500 reporters are bought at the open and held to the Friday of week W+3, if at least 15 candidates exist. `lab/forward_sleeve.py` rewrites this page from `lab/sleeve_ledger.json` (append-only) and the bars; edits by hand are overwritten.
 
-Last run: 2026-10-12 09:12. Latest bar: 2026-10-09. Mondays logged: 1; active: 0.
+Last run: 2026-10-12 09:45. Latest bar: 2026-10-12. Mondays logged: 1; active: 0.
 
 **Status: too early (0 closed cohorts; 12 across three seasons are needed).** Closed cohorts: 0.
 

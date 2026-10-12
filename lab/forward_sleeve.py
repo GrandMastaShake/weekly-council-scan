@@ -282,7 +282,8 @@ def score(ledger_path, names):
         return None
     start = lab._plus(min(r["W"] for r in ledger["rows"]), -10)
     end = lab._plus(datetime.now().astimezone().date().isoformat(), 1)
-    adj, _, _ = get_bars(sorted({t for r in ledger["rows"] for t in r["pool"]} | {"SPY"}) or names, start, end)
+    pools = {t for r in ledger["rows"] if r["active"] for t in r["pool"]}      # inactive Mondays need no prices
+    adj, _, _ = get_bars(sorted(pools | {"SPY"}), start, end)
     latest = adj["SPY"].dates[-1]
     rows = score_rows(ledger, adj, latest)
     closed = [r for r in rows if r.get("status") == "closed" and "edge" in r]
