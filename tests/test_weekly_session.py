@@ -1491,5 +1491,8 @@ def test_the_history_runs_past_the_last_friday_so_a_later_bar_is_in_it(
     monkeypatch.setattr(bf, "_download_chunk", chunk)
     monkeypatch.setattr(bf.time, "sleep", lambda s: None)
     monkeypatch.setitem(sys.modules, "yfinance", Quiet)
-    bf.download_equity_history(["SPY"], XMAS, XMAS)
+    # The provider never answers here, and that is no longer an empty
+    # history (tests/test_backfill_fallback.py).
+    with pytest.raises(bf.HistoryUnknown):
+        bf.download_equity_history(["SPY"], XMAS, XMAS)
     assert asked == [("2026-12-15", "2027-01-03")]

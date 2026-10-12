@@ -613,7 +613,8 @@ has no US10Y or VIX for those eight sessions and never will.
   `scripts/backfill_weekly.py`. It has had `--merge` and the refusal of
   `--only ... --force` since 2026-08-26 (`7cf7025`; until 2026-10-06 this
   entry said it had no `--merge`), and `slice_week`'s rule since
-  2026-10-07 (the bar dated the file's session, or `missing`). Nothing
+  2026-10-07 (the bar dated the file's session, or `missing`), and the
+  per-ticker fallback's read since 2026-10-11 (The backfill, below). Nothing
   else: it can still call an unposted Friday a holiday (`DATA_FEED.md`
   sec.1c), and its `--merge` still writes a fresh fetch over a bar the
   week already holds (The backfill, below). Nothing invokes it and a test
@@ -1229,6 +1230,20 @@ newest-week checks of `--feed` and `--config`, whose cure is a merge this
 rule refuses. So the week a rename is recorded in needs no merge: the
 newest file holds the old symbol's bar, which accounts for the company, and
 the next Saturday's file holds the new one.
+
+**A download that did not answer is not a ticker without bars.** After a
+chunk has failed three times the script asks for each of its tickers alone.
+Under yfinance 1.6.0 that frame's columns are (Price, Ticker), and until
+2026-10-11 the fallback read 0 bars out of it: up to fifty names with an
+empty history, listed in `missing` for every week of the run, exit 0. Whether
+a past run took that path is not known. Both paths read through
+`_subframe` now. A ticker whose download raised, or whose frame has rows
+and no Close column for it, stops the run before the first write: exit 2,
+each named. A frame with no rows is still the provider's "nothing" and
+goes to `missing`, on either path, and yfinance returns that same empty
+frame for a request it was throttled on. That is not closed.
+`tests/test_backfill_fallback.py` has the real-frame tests; they skip in
+CI, which installs no pandas.
 
 **A week is written only with its session witness.** A Friday SPY has no bar
 for is refused until a later SPY bar proves it was a holiday, and the run
