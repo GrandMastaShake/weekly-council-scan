@@ -2,3 +2,11 @@ __pycache__/
 *.pyc
 lab/cache/
 dad-kit/dist/
+
+# Google Drive for desktop writes a shortcut file (.gdoc etc.) when a Google Doc is created
+# inside a mirrored folder. Five Spark market briefs landed that way on Oct 8-12 and sat untracked.
+*.gdoc
+*.gsheet
+*.gslides
+*.gform
+*.gdraw
