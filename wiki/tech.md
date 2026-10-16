@@ -2,30 +2,30 @@
 
 > **Sector:** Information Technology | **ETF:** Technology Select Sector SPDR (XLK) | **Expense Ratio:** 0.08%
 >
-> *"XLK printed a record close on Tuesday ($202.00, intraday $203.25), then lost it on a chip selloff Thursday and finished the week at $198.78 (-0.5% W/W), ending a six-week run — under the $200 line it failed to hold last Friday. The week was a split screen. Semiconductors (SMH -4.3%) paid back the Micron-capex trade: LRCX -8.2%, AMAT -6.1%, INTC -12.3% on the week, MU -4.3%. Platforms and software took the money: MSFT +3.4% to within 0.5% of its 52-week high, PLTR +10.8% to a new 52-week closing high, CSCO +5.5%. The 10-year closed 5.24% after topping 5.36% Wednesday; the S&P 500 gained 0.6% Friday to 7,811.54, just short of its record, and the Nasdaq Composite closed at 27,366.17."*
+> *"XLK fell 7.7% to $183.47, its worst week since April 2025 and its lowest close since Sep 2, on a selloff that started in the chips and finished in everything but Apple. A hot September CPI on Wednesday (headline 3.7% y/y, core +0.3% m/m against +0.2%) put an October hike back on the table and the fund lost 3.0% that day; it fell again Friday to close on its low. SMH lost 10.5%. AMAT -19.3%, LRCX -17.2%, MU -14.6%, INTC -14.2%, AMD -13.1%. Nine of the top ten fell; AAPL rose 2.0% to a 52-week closing high. The 10-year, which should have risen on that CPI, fell 15bp to 5.09% as money left stocks for bonds. The S&P 500 fell 1.95% on the week to 7,659.44 and the Nasdaq Composite 4.5% to 26,140.03; VIX closed 19.99 from 14.84."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 1W Ago (Oct 2) | Change |
+| Metric | Current | 1W Ago (Oct 9) | Change |
 |---|---|---|---|
-| Price | $198.78 | $199.81 (settled) | **-0.52% W/W** — ends a six-week winning streak |
-| 52W Range | $127.20 – $203.25 | $127.20 – $201.39 | Record close $202.00 (Tue Oct 6); intraday high $203.25 |
-| AUM | ~$127.3B | ~$121.4B | Yahoo totalAssets; includes the price move and flows |
-| YTD Return | +38.4% (price basis*) | +39.1% | -0.7 pts |
-| 1Y Return | not re-pulled | +40.4% | The 1-year bar window did not cover the full year this run |
-| P/E Ratio | ~32.5 (Yahoo trailing) | ~35.4 | Price fell only 0.5%, so this is a Yahoo data difference, not a re-rating (not investigated). Read as ~32–35x |
+| Price | $183.47 | $198.78 (settled) | **-7.70% W/W** — worst week since the week ended Apr 4, 2025 (-11.6%) |
+| 52W Range | $126.38 – $203.25 | $127.20 – $203.25 | Record close $202.00 (Oct 6) is now 9.2% above price |
+| AUM | ~$127.3B | ~$127.3B | Yahoo totalAssets unchanged from last week's pull — a stale figure, not re-checked |
+| YTD Return | +27.7% (price basis*) | +38.4% | -10.7 pts |
+| 1Y Return | +29.7% | not re-pulled | 252-session daily-bar basis |
+| P/E Ratio | ~30.0 (Yahoo trailing) | ~32.5 | Price -7.7%; read as ~30x |
 | Dividend Yield | ~0.43% | ~0.43% | — |
-| Beta | 1.45 (3Y) | 1.47 | Yahoo figure |
+| Beta | 1.45 (3Y) | 1.45 | Yahoo figure |
 | Total Holdings | 75 | 75 | Carried; not re-pulled |
-| Avg Daily Volume | ~6.8M this week (Yahoo 3-mo avg 7.4M) | ~8.4M | Thursday 9.1M was the heavy day |
+| Avg Daily Volume | ~10.6M this week (20D avg 8.2M) | ~6.8M | Rose every day: 5.2M Mon → 15.3M Fri |
 
-\* Price basis uses the Dec 31, 2025 close of $143.62. Week path: Mon $200.93, Tue $202.00, Wed $201.39, Thu $197.78 (low $196.48), Fri $198.78 (O $199.40 / H $199.41 / L $197.38, vol 5.6M). Friday's bar was settled when re-pulled Sunday evening (last bar dated Oct 9); no repair was needed.
+\* Price basis uses the Dec 31, 2025 close of $143.62 (carried basis). Week path: Mon $196.36, Tue $196.28, Wed $190.43, Thu $189.19, Fri $183.47 (O $188.28 / H $188.54 / L $182.82, vol 15.3M). Friday's bar was dated Oct 16 when pulled at ~18:20 ET and its volume is already the week's high; it was not re-pulled with repair.
 
-**Marky Tape Read:** Up two days, down two, a partial bounce. **Monday** +0.6% to $200.93 — the first close over $200, on 6.6M. **Tuesday** $202.00, the record close, high $203.25 — then it opened $200.28 on Wednesday, a gap lower from the close, and closed $201.39. **Thursday** -1.8% to **$197.78** on **9.1M**, the week's heavy day, with a low of $196.48: chip stocks sold off after reports that OpenAI's revenue and user targets were being missed (one account put its annualized run-rate near $50B against earlier $68–70B estimates; accounts of the source and the date conflict, so treat the figure as unverified). **Friday** +0.5% to $198.78 on 5.6M, a high of $199.41 — never back to $200. RSI 61.3 from 69.0. I called $200 and $194.50 last week. $200 was held for three closes and lost; $194.50 was not touched.
+**Marky Tape Read:** Five closes, five under the $198.73 old high I called first support, and a weekly range of $198.18 to $182.82. **Monday** opened under it ($198.07) and closed $196.36 on 5.2M. **Tuesday** gapped to $194.20 — under the $194.50 shelf and the 20D — and recovered to $196.28. **Wednesday** -3.0% to $190.43 on 12.0M, the CPI day. **Thursday** opened $186.38 on a gap, bounced to $189.19 on 13.7M. **Friday** -3.0% to **$183.47**, the low of the day $182.82, on **15.3M**, the heaviest volume of the move. Volume rose every session; that is distribution, not a shakeout. RSI 33.4 from 61.3. The 20D ($195.82) and 50D ($189.80) are both above price now; the 200D is $167.18.
 
-**Ophelia Macro Read:** The long end made another high and then gave a little back. The 10Y topped **5.36% intraday Wednesday** (search-sourced) and closed Friday at **5.24%** (Treasury par: 5.31% Mon, 5.27% Tue, 5.28% Wed, 5.22% Thu, 5.24% Fri); the 30Y closed **5.60%** after 5.67% Wednesday, the highest since 2002 per reports. The 2Y was 4.80%, the 3M bill 4.25%; **2s10s +44bp**. October hike odds were ~17% last Friday after payrolls and I did not re-source them this week. **WTI settled $91.85** (+0.8% W/W; the feed's CLX26 settlement), Brent $104.72 (BZ=F bar), still tied to the Iran war. **DXY 102.21** (+0.3%), a fourth straight weekly gain and 0.03 below the 52-week closing high (102.24). VIX 14.84. SPY +1.2% on the week, so the index outran the sector. Next gates: September CPI (mid-October, date not confirmed first-hand), bank earnings from Oct 13, **LRCX Oct 21**, MSFT Oct 28 and the **Oct 27–28 FOMC**.
+**Ophelia Macro Read:** CPI did what I feared and the bond market did the opposite of what I expected. September headline CPI rose 0.6% m/m to **3.7% y/y** (3.6% expected) on gasoline; **core +0.3% m/m, 2.6% y/y** (0.2% / 2.5% expected). October hike odds rose from ~22% to ~42–52% depending on the account (CME FedWatch, via CNBC/KSL; figures conflict). And yet the 10Y fell from 5.24% to **5.09%** (Treasury par; bond market shut Monday for Columbus Day) and the 30Y from 5.60% to **5.43%** — a flight out of equities into bonds. The 2Y eased only to **4.74%**, so **2s10s narrowed to +35bp** from +44. **WTI read $99.04 Fri evening (CL=F, last trade, not a settlement)** against last week's $91.85 settlement; the dollar fell to **101.78** (-0.4%). VIX **19.99**. SPY -2.0%. Next gates: **LRCX Oct 21**, MSFT and the **FOMC decision Oct 28**, INTC Oct 29.
 
 ---
 
@@ -33,24 +33,24 @@
 
 | Rank | Ticker | Name | Weight | Price | Avg Target | Upside | Bullish | Conviction |
 |---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA Corp | 15.47% | $229.28 (-2.0% W/W) | $328.72 | +43.4% | rec 1.29 | 🔥 |
-| 2 | AAPL | Apple Inc | 13.60% | $336.64 (+0.9%) | $328.09 | -2.5% | rec 2.20 | ⚡ |
-| 3 | MSFT | Microsoft Corp | 10.66% | $535.07 (+3.4%) | $587.63 | +9.8% | rec 1.29 | 🔥 |
-| 4 | AMD | Advanced Micro Devices | 5.06% | $608.10 (-4.1%) | $636.21 | +4.6% | rec 1.49 | ⚡ |
-| 5 | AVGO | Broadcom Inc | 4.68% | $361.54 (+1.8%) | $531.31 | +47.0% | rec 1.26 | 🔥 |
-| 6 | MU | Micron Technology | 4.47% | $1,029.00 (-4.3%) | $1,555.13 | +51.1% | rec 1.37 | 🔥 |
-| 7 | INTC | Intel Corp | 3.38% | $104.70 (**-12.3%**) | $118.05 | +12.7% | rec 2.47 | ⚠️ |
-| 8 | PLTR | Palantir Technologies | 2.44% | $209.05 (**+10.8%**) | $203.35 | -2.7% | rec 1.81 | ⚡ |
-| 9 | CSCO | Cisco Systems | 2.40% | $118.39 (+5.5%) | $136.16 | +15.0% | rec 1.86 | ⚡ |
-| 10 | LRCX | Lam Research | 2.33% | $318.84 (-8.2%) | $375.81 | +17.9% | rec 1.46 | 🔥 |
+| 1 | NVDA | NVIDIA Corp | 15.47% | $214.13 (-6.6% W/W) | $328.72 | +53.5% | rec 1.29 | 🔥 |
+| 2 | AAPL | Apple Inc | 13.60% | $343.46 (**+2.0%**) | $329.38 | -4.1% | rec 2.20 | ⚡ |
+| 3 | MSFT | Microsoft Corp | 10.66% | $529.05 (-1.1%) | $596.22 | +12.7% | rec 1.34 | 🔥 |
+| 4 | AMD | Advanced Micro Devices | 5.06% | $528.75 (**-13.1%**) | $636.21 | +20.3% | rec 1.49 | 🔥 |
+| 5 | AVGO | Broadcom Inc | 4.68% | $328.75 (-9.1%) | $527.59 | +60.5% | rec 1.26 | 🔥 |
+| 6 | MU | Micron Technology | 4.47% | $878.84 (**-14.6%**) | $1,560.57 | +77.6% | rec 1.37 | 🔥 |
+| 7 | INTC | Intel Corp | 3.38% | $89.85 (**-14.2%**) | $118.05 | +31.4% | rec 2.47 | ⚠️ |
+| 8 | PLTR | Palantir Technologies | 2.44% | $186.03 (**-11.0%**) | $206.43 | +11.0% | rec 1.88 | ⚡ |
+| 9 | CSCO | Cisco Systems | 2.40% | $107.39 (-9.3%) | $136.16 | +26.8% | rec 1.86 | ⚡ |
+| 10 | LRCX | Lam Research | 2.33% | $263.94 (**-17.2%**) | $375.81 | +42.4% | rec 1.46 | 🔥 |
 
-> 🔥 = Strong Buy consensus (Yahoo rec mean <1.5) | ⚡ = Buy / Mixed | ⚠️ = Caution / Under pressure. "Bullish" column now shows the Yahoo mean recommendation (1 = Strong Buy, 5 = Sell) because the percentage column was not re-sourced. Prices = Fri Oct 9 close; weekly change vs the settled Oct 2 daily bar. Targets = Yahoo mean analyst target (pulled Oct 11). Weights = State Street via Yahoo funds_data (Oct 11 pull); no new name entered the top ten — **AMD (5.06%) moved up to #4** ahead of AVGO and MU, and PLTR (#8) and CSCO (#9) swapped places. AMAT is #11 at **$507.03 (-6.1%)**, mean target $635.33. ORCL $141.40 (-0.3% vs the settled Oct 2 bar of $141.78; last week's page carried $142.30).
+> 🔥 = Strong Buy consensus (Yahoo rec mean <1.5) | ⚡ = Buy / Mixed | ⚠️ = Caution / Under pressure. Prices = Fri Oct 16 close; weekly change vs the settled Oct 9 daily bar (MU's Oct 9 bar restated $1,029.00 → $1,028.84). Targets = Yahoo mean (pulled Oct 16). Weights = State Street via Yahoo funds_data (Oct 16 pull) — **identical to last week's to the basis point**, so Yahoo has not refreshed them; no new name entered the top ten. AMAT (#11) **$409.29 (-19.3%)**, the worst large name in the fund, mean target $632.28. ORCL $128.23 (-9.3%).
 
-**Concentration Risk:** Top 3 = 39.7% of the fund (37.0% last week); top 10 = 64.5%. NVDA at 15.5% and AAPL at 13.6% now make up 29% on their own.
+**Concentration Risk:** Top 3 = 39.7% and top 10 = 64.5% on the stale weights. With AAPL up and the chips down 9–15%, the live AAPL weight is higher than shown.
 
-**The week's split:** Five of the ten top holdings rose and five fell, but the fall was in the semis. **INTC -12.3%** (-5.3% Thursday and -2.2% Friday; Yahoo now shows its Q3 report on **Oct 29**, not Oct 22, and the stock sits 26% under its 52-week high) and **LRCX -8.2% / AMAT -6.1%** gave back last week's Micron-capex gains in a week; one Stockopedia item put equipment-maker losses at 4.8% to 5.2% on the OpenAI-linked selloff (date not confirmed there). **PLTR +10.8%** (+5.2% Friday alone) and **CSCO +5.5%** (+3.0% Friday) were the leaders; I found no company news behind PLTR's Friday move — a Goldman Sachs upgrade to Buy on Oct 8 was reported in one search summary, not verified. **MSFT +3.4%** and the rest of the platforms were bid with no sourced headline. **NVDA -2.0%** and **AMD -4.1%** (no news, sector move).
+**The week's split:** **Nine of the ten fell.** The equipment and memory names led down — **LRCX -17.2%, MU -14.6%**, AMAT -19.3% outside the top ten — in a selloff accounts tie to rate-hike fears after CPI, the cost of financing the AI buildout and Chinese competition (Yahoo/CNN, Oct 14–15); Korea's Kospi fell 7.6% Thursday and tripped a circuit breaker (Yahoo summary, not verified first-hand). **INTC -14.2%** to $89.85 with no company news found; it reports Oct 29. **AMD -13.1%**, including about -5% Friday afternoon as a Delaware jury verdict against Arm in its Qualcomm licensing case (returned Tuesday) weighed on Arm-related names (Yahoo, Oct 16). **PLTR -11.0%** gave back the prior week's +10.8%. The one riser: **AAPL +2.0%** to $343.46, a 52-week closing high, intraday $348.15 — the defensive mega-cap.
 
-**Cecil Fundamental Read:** I said last week that I would add MU after the print and not chase equipment up 10%. MU is $1,029 against $1,074 and still 5.0x forward; LRCX is $318.84 against $347.49 and 27x forward. The equipment names paid back everything they were given for being Micron's suppliers — the cheaper route to the same exposure was waiting. INTC at 50x forward earnings with a 12.7% gap to a mean target it blew through in September is a hold until the Oct 29 print. PLTR at 180x trailing and 89x forward, above its mean target for a second week, is a name I do not own and do not argue with. MSFT at 22.6x forward with a 9.8% gap and a report on Oct 28 is the quiet leader.
+**Cecil Fundamental Read:** Last week I liked MU at 5.0x forward; it is 4.2x now and I am 14.6% poorer on the add. The market is telling me that a forward multiple on peak memory earnings is not a margin of safety, and I accept that as a fair hit. LRCX at $263.94 and 22x forward, with a 42% gap to its mean target, is now inside the range where I said I would look — but it reports Tuesday, and I do not buy the night before a print in a tape like this. AAPL at 36x forward and above its mean target is where the money hid; I do not follow it there. MSFT at 22.3x forward, -1.1% in a -7.7% fund, is still the quiet leader and still the add.
 
 ---
 
@@ -58,13 +58,13 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| BBAI | BigBear.ai | ~$1.15B | $2.39 | **-9.8%** | No fresh company headline found (latest sourced: Q2 results Jul 30, guide $135–165M reaffirmed, $410M cash); Friday close is a new 52-week low | 🔴 Lost its $2.59 line from last week and is at a closing low. RSI 27.6, below the 200D ($3.88). A third week of no news and falling. |
-| SOUN | SoundHound AI | ~$2.39B | $5.39 | **-7.7%** | No fresh headline found (latest: Q2 revenue $61.9M, guide $230–260M in August); new 52-week closing low; Q3 report ~Nov 5 | 🔴 Through the $5.70 52-week low I flagged. RSI 29.9. The cohort fell together. |
-| AI | C3.ai | ~$1.85B | $11.53 | +4.7% | Quiet week; Street Underperform (mean rec 3.7, target $8.30 well below price); next report ~Dec 2 per search | ⚡ Only green name among the loss-makers, above its 50D ($10.48) and 200D ($10.18). Still pays no attention to its analysts. |
-| KD | Kyndryl | ~$2.56B | $11.75 | +1.6% | No company headline found; next report Nov 4 (Yahoo); 4.7x forward | ⚠️ Bounced, still under its 50D ($12.72). The controls overhang is the price. |
-| DGII | Digi International | ~$2.87B | $75.63 | 0.0% | No new headline; Disruptive Technologies acquisition ($130M) pending; next report Nov 11 | ⚡ Flat in a week the cohort fell 8–10%; above 50D ($75.08) and 200D ($60.71), rec 1.4. |
+| BBAI | BigBear.ai | ~$1.04B | $2.16 | **-9.6%** | No fresh company headline found; Yahoo now shows the Q3 report on **Oct 27** (was Nov 2); Friday is another 52-week closing low | 🔴 Fourth week of falling with no news. RSI 30.7, under the 200D ($3.79). Two weeks of no stabilisation — I said I would look for a replacement, and I start next week. |
+| SOUN | SoundHound AI | ~$2.10B | $4.72 | **-12.4%** | No fresh headline found; closed $4.53 Wednesday, a 52-week closing low; Q3 report ~Nov 5 (Yahoo) | 🔴 RSI 29.0. Bounced 4% off Wednesday's low and gave half back. |
+| AI | C3.ai | ~$1.82B | $11.32 | -1.8% | No fresh headline found; Street mean rec 3.5, target $8.90 below price; Yahoo's next-report field still shows Sep 2 (stale) | ⚡ Lost only 1.8% in a -7.7% fund; still above its 50D ($10.68) and 200D ($10.13). |
+| KD | Kyndryl | ~$2.88B | $13.21 | **+12.4%** | No company headline found for the move (+11.9% Thursday alone); report Nov 4 (Yahoo); 5.3x forward | ⚡ Cleared its 50D ($12.57) on a day the fund bounced. I do not know why it moved, so I do not chase it. |
+| DGII | Digi International | ~$2.65B | $69.90 | -7.6% | No new headline; Disruptive Technologies acquisition pending (carried); Yahoo date moved to **Nov 16** (was Nov 11) | ⚠️ Lost its 50D ($74.97) after holding flat last week; 200D $61.42 well below. |
 
-> **Promotion Watch:** All five verified under $5B at the Oct 9 close (BBAI $1.15B, SOUN $2.39B, AI $1.85B, KD $2.56B, DGII $2.87B). No graduations, no rotation. The two weakest names are at 52-week closing lows with no sourced company news; if either does not stabilise in two weeks I will look at a replacement.
+> **Promotion Watch:** All five verified under $5B at the Oct 16 close (Yahoo marketCap: BBAI $1.04B, SOUN $2.10B, AI $1.82B, KD $2.88B, DGII $2.65B). No graduations, no rotation this week. Four of five fell, but only BBAI, SOUN and DGII fell about as hard as the fund; AI (-1.8%) and KD (+12.4%) beat it by 6 and 20 points.
 
 ---
 
@@ -72,19 +72,18 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W / All-Time High | $203.25 | Tuesday Oct 6 intraday; record close $202.00 |
-| Round Number | $200.00 | Closed above it Mon–Wed, lost it Thursday; Friday's high was $199.41 — now resistance |
-| Current Price | $198.78 | Friday close; -0.5% W/W; above the 20D/50D/200D stack |
-| Old High | $198.73 | The June 2 peak — Friday closed 5 cents above it. First support |
-| Thursday Low | $196.48 | The week's low; the first line a failed bounce would test |
-| Pivot Support | $194.50 – $195.25 | Last week's shelf, now also the 20-day average ($194.46) |
-| 20-Day MA | $194.46 | Rising |
-| 50-Day MA | $188.90 | Up from $186.13; 5.0% below price |
-| Major Support | $190.00 – $191.75 | The August double top |
-| 200-Day MA | $166.04 | Trend floor, rising |
-| RSI (14) | 61.3 | Down from 69.0 |
+| 52W / All-Time High | $203.25 | Oct 6 intraday; record close $202.00 |
+| Old High | $198.73 | The June 2 peak — lost Monday and never retaken; now resistance with the week's high $198.18 |
+| 20-Day MA | $195.82 | Turned down; now 6.7% above price |
+| 50-Day MA | $189.80 | Lost Wednesday; Thursday's bounce failed under it ($189.51 high) |
+| Major Resistance | $190.00 – $191.75 | The August double top, broken from above — old support, now overhead |
+| Current Price | $183.47 | Friday close, on the day's low area; lowest close since Sep 2 |
+| Week Low | $182.82 | Friday intraday |
+| Next Support | $175 – $177 | Not a drawn level from this week's bars — a round-number zone between price and the 200D; treat as a guide only |
+| 200-Day MA | $167.18 | Trend floor, rising; 8.9% below |
+| RSI (14) | 33.4 | Down from 61.3; not yet oversold |
 
-**Marky Setup Assessment:** The record was real and so was the reversal. I asked for the $198.54–$199.35 gap to be filled and held; Thursday filled it and Friday closed a nickel over the old $198.73 high, which is a hold, but not a convincing one: the high-volume day (9.1M) was the down day, and the bounce came on the lightest volume of the week (5.6M). **$200 is again the line to take back; $196.48 and $194.50 are the supports.** I stay long above the 20D at $194.46. A close under it with the 200D still $32 below is a trend pause, not a break. I do not add on a print over $200 until it comes on volume.
+**Marky Setup Assessment:** I said I was long above the 20D at $194.46 and that a close under it was a pause, not a break. Tuesday was the close under it; the pause turned into a 6.5% fall in four sessions on rising volume, and I was wrong to call it a pause. **The 50D ($189.80) is now the line to take back; until then I am flat, not long.** I do not try to catch Friday's close on the low with the heaviest volume of the week. RSI 33 is not a buy signal by itself. A close back over $190 on volume is the first thing I would buy; a close under $182.82 says the 200D ($167) is in play.
 
 ---
 
@@ -92,20 +91,20 @@
 
 | Factor | Level | Implication for XLK |
 |---|---|---|
-| Fed Funds Rate | **3.75–4.00%** (carried; last hike Sep 16) | October hike odds ~17% at last Friday's payrolls; **not re-sourced this week**. Next FOMC **Oct 27–28** |
-| 10Y Treasury | **5.24% Fri** (par); 5.36% intraday Wed (search); 5.31% Mon par; 30Y **5.60%** (5.67% Wed) | The long end topped Wednesday and eased Thursday–Friday as the chip selloff took growth with it. Level still near the 5.31% 52-week closing high |
-| Curve Shape | 3M 4.25%, 2Y 4.80%, 5Y 5.02%, 10Y 5.24%, 30Y 5.60% (Treasury par, Fri) | 2s10s **+44bp** (+45bp last week); 10s–3M +99bp on Treasury par (+109bp on the same basis last week; last week's page used the ^IRX proxy, +1.28%) |
-| Inflation | Latest sourced: Aug core PCE 3.0%, ISM prices paid 77.9 (last page) | September CPI due mid-October; date not confirmed first-hand |
-| Growth Pulse | Payrolls +29K, unemployment 4.2% (Oct 2); no major US release this week | Nothing new sourced |
-| WTI Crude | **$91.85** settled (feed CLX26), +0.8% W/W; Brent **$104.72** (BZ=F Fri bar) | Oil firm into a weekend where the front month traded **$89.99** in Sunday evening's open (last trade, not a settlement, provisional) |
-| DXY | **102.21** (Fri bar, DX-Y.NYB), +0.3% W/W; 52W closing high 102.24 | Fourth straight weekly gain for the dollar; translation drag on the Oct 28+ prints |
-| Commodities / AI Power | Nat gas **$3.22** (+6.1%), copper **$6.64** (+2.3%), gold **$4,216** (+1.3%) — Fri bars, front month | The input-cost leg turned up again (copper, gas) after last week's dip. Front-month bars: roll effects not checked contract by contract |
-| Hyperscaler Capex | No new guide sourced; MU capex plan (Sep 30) stands | Late-October prints (MSFT Oct 28) are next |
-| AI-demand sentiment | Reports (Oct 8) that OpenAI missed revenue and user targets — one account cites a ~$50B run-rate vs $68–70B estimates | A demand-side scare for the buildout; sources conflict on details and date |
-| China / Trade | No new action sourced this week | Truce to Jan 10 and the rare-earth halt stand (issue #114) |
-| VIX | **14.84** (15.31 last week) | Calm — through a chip selloff |
+| Fed Funds Rate | **3.75–4.00%** (last hike Sep 16) | October hike odds rose from ~22% to ~42–52% after CPI (CME FedWatch via CNBC/KSL; accounts conflict); Dec second-hike odds >50% (CNBC). FOMC **Oct 27–28** |
+| 10Y Treasury | **5.09% Fri** (Treasury par), from 5.24% | -15bp in a week with a hot CPI: a flight to bonds out of stocks. 30Y **5.43%** (-17bp). Yahoo ^TNX 5.10 |
+| Curve Shape | 3M 4.26%, 2Y 4.74%, 5Y 4.89%, 10Y 5.09%, 30Y 5.43% (Treasury par, Fri) | 2s10s **+35bp** (+44bp last week) — bull flattening; 10s–3M +83bp (+99bp) |
+| Inflation | **Sep CPI 3.7% y/y, +0.6% m/m; core 2.6% y/y, +0.3% m/m** (Oct 14) | Above consensus on both; gasoline +9.1% m/m. Capital Economics called the core miss broad-based (CNBC) |
+| Growth Pulse | Not re-sourced this week | — |
+| WTI Crude | **$99.04 (Fri evening, CL=F)** vs $91.85 settled last week; Brent **$109.69 (Fri evening, BZ=F)** | Not a settled change; the oil leg is what drove the headline CPI |
+| DXY | **101.78 (Fri evening, DX-Y.NYB)** vs 102.21 | Dollar eased with yields; the fourth-week streak is broken on this read |
+| Commodities / AI Power | Copper **$6.56**, gas **$3.12**, gold **$4,187** (all Fri evening, front month) | Copper and gas eased; nothing from the inputs side drove tech |
+| Hyperscaler Capex | No new guide sourced | MSFT Oct 28 is the first of the prints |
+| AI-demand sentiment | Rate fears + AI-financing cost + China competition named as drivers (CNN/Yahoo, Oct 14–15); last week's OpenAI revenue report still unverified | The suppliers sold, the platform that sells phones did not |
+| China / Trade | No new US action sourced | Issue #114 stands |
+| VIX | **19.99** (14.84 last week) | +35% in a week; highest close since Jul 29 (20.66) |
 
-**Ophelia Verdict:** The long end is making highs and the Fed is quiet, so the move this week was inside the sector, not from outside it. A report that the biggest AI customer is behind its revenue plan hit the suppliers one step removed (equipment, memory, Intel) and spared the platforms that sell the product (MSFT, PLTR, CSCO). That is a sensible sort. What I cannot size is the report itself — figures and dates differ across accounts — so I treat it as a risk flag, not a fact. My lines stay the **30-year at 5.75%** (it hit 5.67% Wednesday and reversed) and HY spreads, which I did not re-source for tech. Posture: hold the complex; do not add into $200 at 32–35x trailing with the dollar at its highs.
+**Ophelia Verdict:** I have been saying hold the complex and do not add at $200. That was right on not adding and wrong on holding. The new information this week is the CPI, and it changed the Fed path: a hike in 12 days is now close to a coin flip. What I did not expect is that the long end fell — the bond market is pricing growth damage from a hike, not only inflation. For tech that is half good (lower discount rate) and half bad (a hike into a buildout financed with debt). I wait for Oct 28. Posture: no adds until the FOMC; the line is the 50D at $189.80, and VIX back under 16.
 
 ---
 
@@ -113,21 +112,21 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Record, the Reversal, and the Split Between Chips and Software
+### This Week's Story: CPI, a Hike Back on the Table, and the Chips Pay for It
 
-XLK lost **0.5% to $198.78**, a week after closing at its then-record $199.81; it set a new record close of $202.00 on Tuesday and sold off Thursday. SMH fell 4.3%.
+XLK fell **7.7% to $183.47**, its worst week since April 2025. SMH fell 10.5%. The S&P 500 lost 1.95%; the Nasdaq Composite 4.5%.
 
-**Catalyst 1 — The Chips Gave It Back (Thu Oct 8):** Chip stocks fell after reports that OpenAI's revenue and user-acquisition goals were being missed. One account cited an annualized run-rate near $50B against estimates of $68–70B; the sourcing and dates differ across accounts and the figure is unverified. INTC closed -5.3% that day and ended the week **-12.3%** to $104.70; **LRCX -8.2%** and **AMAT -6.1%** unwound most of last week's capex-read-through trade.
+**Catalyst 1 — A hot CPI (Wed Oct 14):** September headline CPI rose 0.6% to 3.7% y/y on gasoline; core rose 0.3% against 0.2% expected. October hike odds roughly doubled, to about 42–52% on accounts that disagree. The Nasdaq and S&P 500 had their worst day since July (CNN), and XLK fell 3.0%.
 
-**Catalyst 2 — Platforms and Software Were Bought:** MSFT +3.4% to $535.07, PLTR +10.8% to a new 52-week closing high ($209.05; +5.2% Friday), CSCO +5.5%. I found no company-specific news for these moves; a Goldman Sachs upgrade to Buy on PLTR was reported on Oct 8 in one source I could not verify.
+**Catalyst 2 — The chip unwind:** The selloff started in the AI suppliers and widened. Accounts name rate fears, the cost of financing the buildout and Chinese competition; Korea's Kospi fell 7.6% Thursday and tripped a circuit breaker (not verified first-hand). AMAT -19.3%, LRCX -17.2%, MU -14.6%, INTC -14.2%, AMD -13.1% for the week. I found no company-specific news for any of them.
 
-**Catalyst 3 — Rates and the Dollar:** The 10Y closed 5.24% after topping 5.36% Wednesday; the 30Y was 5.67% Wednesday, a 24-year high on reports. DXY rose to 102.21.
+**Catalyst 3 — Arm and Qualcomm:** A Delaware jury found Tuesday that Arm breached its license with Qualcomm (nominal $2 damages). On Friday afternoon Arm and AMD were each about 5% lower with the verdict cited as one factor (Yahoo). A related bench trial on Arm's newest architecture has closing arguments next week.
 
-**The Index:** The S&P 500 gained 0.6% Friday to 7,811.54, just short of its record; the Nasdaq Composite closed at 27,366.17.
+**Catalyst 4 — Bonds, not stocks:** The 10Y fell 15bp to 5.09% and the 30Y 17bp to 5.43% after the CPI — money went to bonds. VIX closed 19.99.
 
-**The drag:** INTC, equipment, and the unprofitable-AI small caps (BBAI -9.8%, SOUN -7.7%).
+**The exception:** AAPL +2.0% to a 52-week closing high. The money did not leave tech entirely; it left the buildout.
 
-**The Bottom Line:** The fund is within 2% of a record and carries the same concentration problem as last week with more of it in one place: NVDA and AAPL are 29% of XLK. Nothing in the top ten reports until **LRCX on Oct 21**; the tape trades macro and the OpenAI story until then.
+**The Bottom Line:** Last week the platforms carried the chips. This week nobody carried anyone but Apple. The fund closed under its 20D and 50D on rising volume. LRCX on Tuesday is the first print from the part of the sector that fell hardest; the FOMC on Oct 28 decides the rest.
 
 ---
 
@@ -135,68 +134,66 @@ XLK lost **0.5% to $198.78**, a week after closing at its then-record $199.81; i
 
 | Company | Ticker | Date | Quarter | EPS Estimate | Key Metric to Watch |
 |---|---|---|---|---|---|
-| **Lam Research** | LRCX | **Oct 21, 2026** (Yahoo, AMC) | Q1 FY2027 | $2.18 | First equipment print after an +10.2% week and a -8.2% week. Memory mix, China share, the Micron order book |
-| **Microsoft** | MSFT | **Oct 28, 2026** (Yahoo, AMC) | Q1 FY2027 | $4.72 | Azure growth, capex guide; same day as the FOMC decision; stock within 0.5% of its high |
-| **Intel** | INTC | **Oct 29, 2026** (Yahoo, AMC; was Oct 22 on last week's page) | Q3 2026 | $0.39 | Data-center CPU demand, gross margin, foundry customers; -12.3% into the print |
-| **Apple** | AAPL | **Nov 2, 2026** (Yahoo; last week's page had Oct 29) | Q4 FY2026 | $1.98 | iPhone 18, Services, the restructuring; date moved, not company-confirmed |
-| **Palantir** | PLTR | **Nov 2, 2026** (Yahoo) | Q3 2026 | $0.41 | 180x trailing at a new 52-week closing high; US commercial growth |
-| **AMD** | AMD | **Nov 3, 2026** (Yahoo, AMC) | Q3 2026 | $1.93 | Data-center GPU guide, Helios racks |
-| **Cisco** | CSCO | **Nov 12, 2026** (Yahoo, AMC) | Q1 FY2027 | $1.32 | AI infrastructure orders; +5.5% into it |
-| **Applied Materials** | AMAT | **Nov 12, 2026** (Yahoo, AMC) | Q4 FY2026 | $4.06 | Orders after a +11.3% then -6.1% fortnight |
-| **NVIDIA** | NVDA | **Nov 17, 2026** (Yahoo, AMC) | Q3 FY2027 | $2.47 | 15.5% of the fund; -2.0% this week |
-| **Broadcom** | AVGO | **Dec 9, 2026** (Yahoo) | Q4 FY2026 | $3.83 | Below its 50D ($371.39) and 200D ($367.11) — the one large semi in a downtrend |
-| **Micron** | MU | **Dec 23, 2026** (Yahoo) | Q1 FY2027 | $38.21 | The $61.5B guide; reported Sep 30 |
+| **Lam Research** | LRCX | **Oct 21, 2026** (Yahoo, AMC) | Q1 FY2027 | $2.18 | -17.2% into it. Memory orders, China share; the first read on whether the equipment selloff was about demand |
+| **Microsoft** | MSFT | **Oct 28, 2026** (Yahoo, AMC) | Q1 FY2027 | $4.72 | Azure growth, capex guide; same day as the FOMC decision |
+| **Intel** | INTC | **Oct 29, 2026** (Yahoo, AMC) | Q3 2026 | $0.39 | -24.7% in two weeks into the print; data-center CPU, foundry |
+| **Apple** | AAPL | **Nov 2, 2026** (Yahoo) | Q4 FY2026 | $1.98 | At a 52-week closing high into it; iPhone 18, Services |
+| **Palantir** | PLTR | **Nov 2, 2026** (Yahoo) | Q3 2026 | $0.41 | 160x trailing after an -11% week |
+| **AMD** | AMD | **Nov 3, 2026** (Yahoo, AMC) | Q3 2026 | $1.93 | Data-center GPU guide; -13.1% this week |
+| **Cisco** | CSCO | **Nov 12, 2026** (Yahoo, AMC) | Q1 FY2027 | $1.32 | AI infrastructure orders |
+| **Applied Materials** | AMAT | **Nov 12, 2026** (Yahoo, AMC) | Q4 FY2026 | $4.06 | -19.3% this week; orders and China |
+| **NVIDIA** | NVDA | **Nov 17, 2026** (Yahoo, AMC) | Q3 FY2027 | $2.47 | 15.5% of the fund; -6.6% this week |
+| **Broadcom** | AVGO | **Dec 9, 2026** (Yahoo) | Q4 FY2026 | $3.83 | Under its 50D ($365.32) and 200D ($367.06) |
+| **Micron** | MU | **Dec 23, 2026** (Yahoo) | Q1 FY2027 | $38.21 | 4.2x forward after a -14.6% week |
 
-> Dates are Yahoo Finance calendar dates (pulled Oct 11) and are not company-confirmed; EPS is the Yahoo consensus mean. Small-cap dates: DGII Nov 11, KD Nov 4, BBAI Nov 2, SOUN Nov 5 (Yahoo).
+> Dates are Yahoo Finance calendar dates (pulled Oct 16) and are not company-confirmed; EPS is the Yahoo consensus mean; no estimate changes of note against last week's page. Small-cap dates: BBAI **Oct 27** (moved from Nov 2), KD Nov 4, SOUN Nov 5, DGII **Nov 16** (moved from Nov 11) (Yahoo).
 
-**Marky's Binary Event Read:** There is no top-10 print for ten sessions. The tape trades CPI, bank earnings (Oct 13–15, where credit lines decide the rate story) and the OpenAI headline. **LRCX on Oct 21** is the first read on whether equipment orders held up; MSFT and the FOMC share Oct 28. INTC has moved a week later and fell 12% in the meantime, which makes the setup less crowded than it was.
+**Marky's Binary Event Read:** LRCX reports into a -17% week with the stock 40% under its 52-week high. A good print gets a squeeze, a bad one confirms the tape. Then the FOMC and MSFT on the same day, INTC the next. Three binaries in eight sessions with VIX at 20 — I size small.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- XLK reclaims **$200** on volume and holds the $198.73 June high as support
-- Bank earnings and CPI keep the long end under 5.31%; the 30-year fails at 5.67% a second time
-- The OpenAI revenue story proves overstated or contained to a financing question, not demand
-- LRCX (Oct 21) confirms orders; MSFT (Oct 28) shows Azure and capex rising again
+- LRCX (Oct 21) shows memory orders held up — the selloff was about rates, not demand
+- The Fed holds on Oct 28 and the long end stays near 5.1%; XLK retakes the 50D ($189.80) and $190
+- MSFT confirms Azure and capex; the platforms lead again
 
 ### 🔴 Bear Case
-- A close under **$196.48** with the 20D ($194.46) next, then the $190–191.75 double top
-- The OpenAI report is the first of several signs the demand curve is behind the capex curve — MU at 5.0x forward then looks right, not cheap
-- 30Y through **5.75%**; DXY through 102.24 with Q3 translation to come
-- Concentration: NVDA and AAPL at 29% of the fund — either one misses and the fund cannot hide it
+- A close under **$182.82** opens the 200D ($167.18), 9% down
+- The Fed hikes on Oct 28 into a buildout financed with debt; the long end stops rallying
+- Memory pricing: MU at 4.2x forward turns out to be a peak-earnings multiple
+- AAPL is now the fund's support; if it gives way with the chips there is nothing left holding the index
 
 ### ⚠️ The Wild Card
-**Who owns the reversal.** The semis fell 4.3% in a week the fund fell 0.5%, because MSFT, PLTR and CSCO rose 3–11%. That is rotation inside the sector, not a sector exit — and it can continue, with XLK flat while SMH leaks. The risk is that the platforms are being bought *because* the chips are being sold, and when the chip selloff gets a second leg the platforms follow. I did not find a company-specific reason for any of the platform moves, so I do not know how durable they are.
+**Bonds rallied on a hot CPI.** The 10Y fell 15bp in a week the Fed became more likely to hike. That is either the bond market calling a policy mistake — growth damage ahead — or a one-week flight to safety that reverses the moment equities stabilise. If it reverses, tech loses the one thing that helped it this week.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The 10-year topped at 5.36% on Wednesday and finished at 5.24%; the 30-year touched a 24-year high and gave some back. The Fed is quiet and I have not re-sourced hike odds, so I will not guess. What moved tech this week was a demand scare about the biggest AI customer, and I cannot verify its numbers. The dollar is at its highs and the report season starts Tuesday. Hold the complex, do not add at $200, and keep the 30-year at 5.75% as my line."*
+**Ophelia:** *"The CPI moved a hike from one-in-five to about a coin flip in 12 days. The bond market answered by rallying, which tells me it expects the hike to hurt growth. I said hold the complex; that was wrong. I said do not add at $200; that was right. No adds until Oct 28. My lines: the 50D at $189.80 and VIX under 16."*
 
-**Marky:** *"$200 was held for three closes and then lost on the heaviest volume of the week, 9.1M on Thursday. Friday's bounce was the lightest, 5.6M, and never got back to $200. $196.48 is the line below; $194.46 is the 20D. I am long above it and I do not buy a print over $200 without volume."*
+**Marky:** *"Five closes under the old high, rising volume every day, Friday on its low with 15.3M shares. That is distribution. I was long above the 20D and it broke Tuesday — I am flat. A close over $190 on volume gets me back; a close under $182.82 puts the 200D at $167 in play."*
 
-**Cecil:** *"I said I would not chase equipment, and the equipment paid back its week. LRCX at $318.84 with a 17.9% gap to target is more interesting than it was at $347, but it reports Oct 21 and I wait. MU at 5.0x forward is the one I added to after the print and it is lower; I hold the add. INTC at 50x forward after a -12% week stays a hold into Oct 29. PLTR at 180x trailing stays a name I do not own. MSFT and CSCO are the two I would add on a dip."*
+**Cecil:** *"MU at 4.2x forward cost me 14.6% this week. A low multiple on peak earnings is not a margin of safety and I take the lesson. LRCX at 22x forward with a 42% gap to target is in my range, but it reports Tuesday — I wait for the number. MSFT, down 1.1% in this fund's worst week since April 2025, is still my add."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sun Oct 11, 2026): XLK + holdings + small-cap daily bars through the Fri Oct 9 close (last bar dated Oct 9, no repair needed); weekly changes vs settled Oct 2 closes; mean targets, trailing/forward P/E, market caps; fund weights via funds_data; Yahoo earnings-calendar dates; ^TNX/^TYX/^IRX/^FVX, DXY, CL=F, BZ=F, NG=F, HG=F, GC=F, ^VIX, SPY, SMH. CSVs in the workspace folder gridA_2026-10-09: tech_*.csv, macro_*.csv, fund.csv
-- U.S. Treasury daily par yield curve (fetched Oct 11): 3M, 2Y, 5Y, 10Y, 30Y closes for Oct 1–9
-- data/market_state.json (repo feed): WTI settlement $91.85 (CLX26), +0.8% W/W
-- AP table via La Nación (Oct 9): S&P 500 7,811.54 (+0.6%), Dow 51,654.95, Nasdaq Composite 27,366.17; CDA Press / AP: week narrative; Yahoo Finance / Stockopedia / CryptoBriefing (Oct 8): chip selloff on OpenAI revenue reports (figures and dates conflict between accounts)
-- TIKR / Quiver Quant / Yahoo (Oct 6–9): Intel -5.3% on Oct 8, report Oct 29
-- Sherwood / Pluang / TIKR (Oct 7–8): Palantir levels; Goldman upgrade reported once, unverified
-- Company releases (older, cited only as latest sourced): BigBear.ai Q2 (Jul 30), SoundHound Q2 (Aug), C3.ai (Sep 2), Digi International acquisition
-- Not re-sourced this week (carried or omitted): October hike odds, breadth above the 50-DMA, HY/IG spreads for tech, hyperscaler capex updates, 1Y fund return, company-specific causes of the MSFT/PLTR/CSCO moves
-- Restatements: Yahoo trailing P/E reads ~32.5 vs 35.4 last week with the price nearly unchanged (different data pull); INTC earnings date moved Oct 22 → Oct 29 and AAPL Oct 29 → Nov 2 (Yahoo); ORCL's Oct 2 close restated $142.30 → $141.78 (settled bar)
-- Repo cross-checks: prior revision of this page (Oct 3), wiki/financials.md
+- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 16, ~18:20 ET): XLK, SMH, holdings and small-cap daily bars through the Fri Oct 16 close (last bar dated Oct 16; not re-pulled with repair); weekly changes vs settled Oct 9 closes; mean targets, P/E, market caps, rec means; funds_data weights (unchanged from Oct 11 to the basis point); Yahoo earnings-calendar dates; ^TNX/^TYX/^IRX/^FVX, DX-Y.NYB, CL=F, BZ=F, NG=F, HG=F, GC=F, SI=F, ^VIX, SPY, ^GSPC, ^IXIC. CSVs in the workspace folder gridA_2026-10-16: tech_*.csv, macro_*.csv, summary_*.csv
+- U.S. Treasury daily par yield curve (fetched Oct 16): Oct 9 and Oct 13–16 (no Oct 12 row — Columbus Day)
+- CNBC / KSL / Fox Business / Mitrade (Oct 14–15): September CPI 3.7% y/y, core 2.6%; October hike odds ~42–52% (accounts conflict); Capital Economics quote
+- CNN (Oct 15) and Yahoo Finance live coverage (Oct 14–16): chip selloff drivers, worst Nasdaq/S&P day since July, Kospi -7.6% Thursday (summary only; the CNN page could not be opened)
+- Yahoo Finance (Oct 16, 2:10 PM): Arm and AMD about -5% afternoon, the Delaware verdict (returned Tuesday Oct 13); The Star / ServeTheHome: $2 nominal damages
+- TIKR / Quiver Quant: Intel's Oct 29 report date; no Intel-specific news found for this week's fall
+- Not re-sourced this week (carried or omitted): growth data, HY/IG spreads, hyperscaler capex, fund AUM and weights (Yahoo stale), company causes for KD's +12.4% and the large-chip moves, the OpenAI revenue report from last week
+- Restatements: MU Oct 9 close $1,029.00 → $1,028.84 (settled bar); BBAI and DGII report dates moved (Yahoo); MSFT rec mean 1.29 → 1.34
+- Repo cross-checks: prior revision of this page (Oct 11)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-10-11** (Sunday-evening run; covering week ended Fri Oct 9, 2026)*
+*Last updated by Saturday Research Crew: **2026-10-16** (Friday-evening run; covering week ended Fri Oct 16, 2026)*
 *Next update: Every Saturday 10:00 AM ET*
 *Data sources: Yahoo Finance, Federal Reserve, U.S. Treasury / FRED, company IR, Bloomberg, Dow Jones Newswires, market data feeds*
