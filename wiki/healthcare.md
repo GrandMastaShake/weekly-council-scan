@@ -2,61 +2,61 @@
 
 > **Sector:** Health Care | **ETF:** Health Care Select Sector SPDR (XLV) | **Expense Ratio:** 0.08%
 >
-> *"The floor held on the second visit and the sector took back everything it lost to the pricing rules. XLV rose 2.8% to $170.81 — the week's low of $165.19 came Thursday, a few cents above the $164.50–$165.00 September floor — and closed back over its 20-day and 50-day, which sit together at $168.5. Thirteen of the fourteen names that all fell last week rose this week (BMY was the exception). Managed care and medtech led (ELV +6.8%, ISRG +8.2%, CI +4.4%), AbbVie closed at a record ($276.47, +5.2%), Lilly reclaimed its 50-day, and J&J and UnitedHealth open earnings season Tuesday. I found no healthcare headline that explains the week; the policy news I carry from last week did not change, and the rally came without a sourced catalyst."*
+> *"The defensive bid found the sector built for it. XLV rose 3.5% to $176.71 in a week SPY fell 2.0% and XLK 7.7%, with a 52-week closing high of $177.19 on Thursday on the adjusted bars. Eighteen of the twenty large names tracked rose. Lilly led the weights, +6.6% to $1,257.03, after an EU regulatory panel backed its Foundayo pill. UnitedHealth beat, raised its outlook and rose 5.8%; the other insurers (CI +7.0%, CVS +7.2%) went with it. J&J was the exception: it booked a $5.5 billion talc charge, missed on medtech and fell 2.3%. The small end went the other way: XBI -6.2%, and four of the five small-cap watch names fell 9–21% with no news found."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | Prior Week (Oct 2) | Change |
+| Metric | Current | Prior Week (Oct 9) | Change |
 |---|---|---|---|
-| Price | **$170.81** | $166.18 (settled close) | **+2.79%** — beat SPY (+1.2%) by 1.6 pts |
-| 52W Range | $139.62 – $175.01 (adjusted bars) | $133.73 – $176.60 (raw, last page) | Raw ATH of $176.60 (Aug 19) is 3.3% overhead |
-| AUM | ~$43.4B | ~$43.9B | Yahoo totalAssets |
-| YTD Return | **+10.8%** (price basis; base implied by last week's +7.8%) | +7.8% | +3.0 pts (SPY ~+15.1%) |
-| 1Y Return | not re-pulled | +18.0% | — |
-| P/E Ratio | ~30.5 (Yahoo trailing) | ~29.7 | Up with price |
+| Price | **$176.71** | $170.81 (settled close) | **+3.45%** — beat SPY (-2.0%) by 5.4 pts |
+| 52W Range | $139.98 – $178.86 (adjusted bars) | $139.62 – $175.01 | New 52-week intraday high $178.86 (Thu); closing high $177.19 Thu |
+| AUM | ~$43.4B | ~$43.4B | Yahoo totalAssets not re-pulled |
+| YTD Return | **+14.6%** (price basis; base implied by last week's +10.8%) | +10.8% | +3.8 pts (SPY now ~+12.8%) |
+| 1Y Return | not re-pulled | not re-pulled | — |
+| P/E Ratio | ~30.5 (carried) | ~30.5 | Not re-pulled |
 | Dividend Yield | ~1.5% | ~1.5% | — |
-| Beta | 0.52 (3Y) | ~0.52 | Yahoo figure |
-| Total Holdings | 66 | 66 | Carried; not re-pulled |
-| Avg Daily Volume | ~8.3M this week (20D avg 8.2M) | ~8.9M | Thursday 11.1M was the heavy day, and it was flat |
+| Beta | 0.52 (3Y, carried) | 0.52 | — |
+| Total Holdings | 66 | 66 | Carried |
+| Avg Daily Volume | not re-computed | ~8.3M | — |
 
-Week path: Mon $167.37 (low $165.49), Tue $167.09, Wed $168.81 (high $170.38), Thu $168.16 (**low $165.19**, vol 11.1M), Fri $170.81 (O $167.73 / H $171.04 / L $167.52, vol 7.0M). The Friday bar was settled when re-pulled Sunday evening.
+Week path: Mon $171.99, Tue $169.66 (low $169.48 — J&J day), Wed $173.96, Thu **$177.19**, Fri $176.71 (week range $169.48 – $178.86). Friday's bar was dated Oct 16 when pulled at ~18:20 ET; not re-pulled with repair.
 
-**Marky Tape Read:** A floor test and a clean reclaim. **Monday** +0.7% to $167.37, low $165.49 — back off the September floor. **Tuesday** $167.09. **Wednesday** +1.0% to **$168.81**: the first close over the 50D ($168.47) since it was lost, high $170.38 (the 10Y was making its 5.36% high). **Thursday** the fund traded to **$165.19** on **11.1M shares** — nineteen cents above the $165.00 line — and closed at $168.16: a flush and a recovery on the heaviest volume of the week, which is what a floor test is supposed to look like. **Friday** +1.6% to **$170.81**, high $171.04, on lighter volume. The 20D ($168.52) and 50D ($168.47) are both reclaimed. RSI 57.6 from 42.6. The failed-breakout high of $171.87 is $1.06 above.
+**Marky Tape Read:** Last week was a floor test and a reclaim; this week was the follow-through. **Monday** +0.7% to $171.99. **Tuesday** -1.4% to $169.66 — J&J fell 5.7% that day on its print — and the low ($169.48) held well above last week's $165.19 floor test. **Wednesday** +2.5% to $173.96 on CPI day while tech fell 3%. **Thursday** +1.9% to **$177.19**, over the $176.60 raw high from August, with an intraday high of **$178.86** on 11.5M shares. **Friday** $176.71, a small give-back. RSI 66.2 from 57.6. The 20D ($170.14) and 50D ($169.61) are 4% below; the 200D $156.42. The money came in on the days the rest of the market sold.
 
-**Ophelia Macro Read:** Last week's rule was "policy is the driver, not rates," and this week supports the first half of that: no new federal pricing action was sourced and the sector rebounded. On rates, the 10Y topped 5.36% intraday Wednesday and closed Friday at **5.24%**; the 2Y was 4.80%, **2s10s +44bp**; the 30Y 5.60%. **DXY closed above 102 on Thursday (102.14) and Friday (102.21)**, the line I set as the bear-case trigger for LLY, MRK, ABBV and JNJ translation — and the stocks rose through it, which says the market is not trading dollar translation before the prints. WTI settled **$91.85** (+0.8%). I did not re-source October hike odds (~17% last Friday); an ISM Services roundup (Oct 5) quotes ISM saying the Fed is weighing another hike this month, which conflicts with that figure and is another reason not to quote either.
+**Ophelia Macro Read:** Rates helped and policy stayed quiet. September CPI ran hot (headline 3.7% y/y, core +0.3% m/m), October hike odds rose to ~42–52% (accounts conflict), and the 10Y still fell **15bp to 5.09%** (Treasury par) as money left equities — XLV is where much of it went. **DXY eased to 101.78** (Fri evening, DX-Y.NYB) from 102.21, below the 102 line I had set as the translation trigger. No new federal pricing action was sourced this week; the only Medicare news was a congressional minority report (Fortune/PBS, Oct 16) on the President's drug-stock holdings and the Medicare negotiation exemptions — politics, not policy.
 
 ---
 
 ## TOP HOLDINGS & MOMENTUM
 
-| Rank | Ticker | Name | Weight | Price | Change¹ | Mean Target | Implied | Fwd P/E | Yield | Signal |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | LLY | Eli Lilly | ~15.1% | $1,179.27 | +3.2% | $1,330.14 | +12.8% | 24.8 | 0.6% | ⚡ |
-| 2 | JNJ | Johnson & Johnson | ~10.4% | $261.44 | +2.1% | $279.82 | +7.0% | 21.6 | 2.1% | ⚡ |
-| 3 | ABBV | AbbVie | ~7.5% | $276.47 | **+5.2%** | $282.61 | +2.2% | 17.0 | 2.5% | 🔥 |
-| 4 | MRK | Merck | ~5.9% | $145.60 | +0.9% | $158.08 | +8.6% | 15.6 | 2.3% | ⚡ |
-| 5 | UNH | UnitedHealth | ~5.4% | $379.30 | +2.0% | $480.60 | +26.7% | 16.8 | 2.5% | ⚡ |
-| 6 | TMO | Thermo Fisher | ~4.1% | $658.02 | +0.5% | $677.24 | +2.9% | 23.9 | 0.3% | ⚡ |
-| 7 | AMGN | Amgen | ~3.7% | $414.87 | +2.9% | $395.25 | -4.7% | 16.9 | 2.4% | ⚡ |
-| 8 | GILD | Gilead | ~3.0% | $151.17 | +4.4% | $159.38 | +5.4% | 15.2 | 2.2% | 🔥 |
-| 9 | ABT | Abbott | ~2.8% | $99.60 | +2.2% | $120.72 | +21.2% | 16.4 | 2.5% | ⚠️ |
-| 10 | PFE | Pfizer | ~2.7% | $28.28 | +1.7% | $29.26 | +3.5% | 9.8 | 6.1% | ⚡ |
-| 11 | BMY | Bristol Myers | (outside top 10) | $59.12 | **-3.3%** | $65.71 | +11.1% | 9.0 | 4.3% | ⚠️ |
-| 12 | DHR | Danaher | (outside top 10) | $219.81 | +2.7% | $241.00 | +9.6% | 23.6 | 0.7% | ⚡ |
-| 13 | VRTX | Vertex | (outside top 10) | $510.08 | +1.1% | $571.61 | +12.1% | 25.2 | — | ⚠️ |
-| 14 | REGN | Regeneron | (outside top 10) | $746.54 | +1.5% | $859.04 | +15.1% | 12.1 | 0.5% | ⚠️ |
+| Rank | Ticker | Name | Weight | Price | Change¹ | Mean Target | Implied | Fwd P/E | Signal |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | LLY | Eli Lilly | ~15.1% | $1,257.03 | **+6.6%** | $1,328.05 | +5.6% | 26.5 | 🔥 |
+| 2 | JNJ | Johnson & Johnson | ~10.4% | $255.56 | **-2.2%** | $279.41 | +9.3% | 21.8 | ⚠️ |
+| 3 | ABBV | AbbVie | ~7.5% | $285.42 | +3.9% | $282.61 | -1.0% | 17.6 | 🔥 |
+| 4 | MRK | Merck | ~5.8% | $145.95 | +0.2% | $158.64 | +8.7% | 15.7 | ⚡ |
+| 5 | UNH | UnitedHealth | ~5.4% | $401.43 | **+5.8%** | $477.04 | +18.8% | 17.3 | ⚡ |
+| 6 | TMO | Thermo Fisher | ~4.1% | $690.00 | +4.9% | $688.69 | -0.2% | 25.0 | 🔥 |
+| 7 | AMGN | Amgen | ~3.7% | $432.49 | +4.2% | $394.98 | -8.7% | 17.7 | ⚡ |
+| 8 | GILD | Gilead | ~3.0% | $156.19 | +3.3% | $159.85 | +2.3% | 15.7 | 🔥 |
+| 9 | ABT | Abbott | ~2.8% | $104.89 | **+6.0%** | $120.72 | +15.1% | 17.3 | ⚡ |
+| 10 | PFE | Pfizer | ~2.7% | $29.58 | +4.6% | $29.26 | -1.1% | 10.3 | 🔥 |
+| 11 | BMY | Bristol Myers | (outside top 10) | $59.75 | +1.1% | $65.62 | +9.8% | 9.0 | ⚠️ |
+| 12 | DHR | Danaher | (outside top 10) | $229.04 | +4.2% | $244.14 | +6.6% | 24.6 | ⚡ |
+| 13 | VRTX | Vertex | (outside top 10) | $499.74 | -2.0% | $571.46 | +14.4% | 24.7 | ⚠️ |
+| 14 | REGN | Regeneron | (outside top 10) | $790.74 | **+5.9%** | $863.93 | +9.3% | 12.8 | ⚡ |
 
-> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Below its 50D, caution | 🔴 = Breakdown. ¹ Change vs settled Oct 2 close → Oct 9 close. Weights = Yahoo funds_data top-10 (Oct 11 pull); same ten names as last week. Targets = Yahoo mean target. Also tracked: CVS $86.16 (-0.3%), ELV $412.70 (**+6.8%**), CI $282.43 (+4.4%), ISRG $423.96 (**+8.2%**), MDT $88.48 (+2.4%), SYK $277.33 (+0.7%), NVO $38.64 (+3.5%).
+> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Below its 50D, caution | 🔴 = Breakdown. ¹ Change vs settled Oct 9 close → Oct 16 close. **ABBV's Oct 9 close restates $276.47 → $274.78** on the adjusted bar (a dividend adjustment, not checked further). Weights = Yahoo funds_data (Oct 16 pull); same ten names, unchanged from last week to the basis point (Yahoo not refreshed). Targets = Yahoo mean. Also tracked: **CVS $92.36 (+7.2%)**, **CI $302.30 (+7.0%)**, ELV $428.26 (+3.8%), **MDT $94.75 (+7.1%)**, **SYK $294.66 (+6.3%)**, ISRG $426.70 (+0.7%).
 
 **Sector Split:**
-1. **Managed care led.** **ELV +6.8% to $412.70** (above its 50D $398.62; reports Oct 21) and **CI +4.4%** (+0.5% on Friday; 8.4x forward) beat UNH (+2.0%, before its Oct 13 report). CVS (-0.3%) is the one laggard, still under its 200D ($87.20). I found no sourced reason for the group's rise.
-2. **Pharma recovered the policy hit.** **ABBV +5.2% to a record close of $276.47**, 2.2% under its mean target. **GILD +4.4%** (near its 52-week high of $153.05), **LLY +3.2%** back over its 50D ($1,173.63), **AMGN +2.9%** to $414.87, now **4.7% above its mean target**. **BMY -3.3%** was the only large-cap loser. JNJ +2.1% before Tuesday's print; still under its 50D ($264.90).
-3. **Medtech and tools:** **ISRG +8.2%** to $423.96 (above its 50D at $386.10, still under its 200D at $443.41, -25.1% YTD; reports Oct 20), DHR +2.7%, MDT +2.4%, ABT +2.2% (RSI up to 42.3 from 29.7). SYK +0.7% remains -20.4% YTD.
-4. **Physician-administered biologics (the GLOBE-exposed names):** REGN +1.5% to $746.54 (over its 200D at $734.12, under its 50D), MRK +0.9%, VRTX +1.1%. They fell hardest last week and recovered least this week.
+1. **Managed care, on UNH's print.** UNH (Oct 13): revenue $112.7B, adjusted EPS **$4.69 vs ~$4.12–4.14**, medical care ratio **88.4%** (89.9% a year ago), full-year outlook raised to **at least $20.50** from $19.50–$20. The stock rose 5.8% on the week; CVS +7.2%, CI +7.0%, ELV +3.8% went with it.
+2. **Lilly and the GLP-1 trade.** An EMA panel (CHMP) issued a positive opinion for **Foundayo (orforglipron)** in weight management and type 2 diabetes; final EU approval is pending (Benzinga/GuruFocus). Shares rose about 4% on Oct 14 with several brokers raising or reaffirming targets (StocksToTrade summary). LLY +6.6% to $1,257.03, within 1.8% of its 52-week high.
+3. **J&J's print.** Sales +5.9% to $25.4B and adjusted EPS $2.59 beat (~$2.53), the 2026 outlook rose $0.06 at the midpoint — but a **$5.5B pre-tax talc resolution charge** cut reported EPS to $0.09 and **MedTech grew only 2.5%** to $8.6B, a miss. -5.7% Tuesday, -2.2% on the week.
+4. **Medtech and tools without prints:** ABT +6.0%, MDT +7.1%, SYK +6.3%, TMO +4.9% (52-week high area), DHR +4.2%. TMO, ABT, DHR report Oct 21.
 
-**Cecil Fundamental Read:** Last week I said the sector's pricing sell-off had handed me a list: REGN at 12x forward, ABT at 16x with a 24% gap, UNH at 16x with the widest gap on the board, PFE at 6%. A week later UNH is $379.30 (+2.0%, 16.8x, +26.7% to target), REGN is $746.54 (12.1x), ABT is $99.60 (16.4x, +21.2%) and PFE yields 6.1%; none of them has moved far enough to call the opportunity gone. I hold AMGN, bought at $414.80 and exactly at its price today, now above its mean target; the Lp(a) binary is unresolved. I do not chase ABBV at a record with 2% to target. I am waiting for the Oct 13 prints and the first GLOBE commentary before adding to anything.
+**Cecil Fundamental Read:** UNH at 17.3x forward with an 18.8% gap to target after a raise is still the widest gap among the large names I would own, and the print removed the reason I was waiting. REGN at 12.8x forward rose 5.9% without news; I keep it. AMGN is 8.7% over its mean target and ABBV and PFE are over theirs — those have done their job. J&J at 21.8x forward after a talc charge is the one name that got cheaper on a reason, and the reason is a settlement offer, which ends a liability rather than starting one. I would start a position under $250.
 
 ---
 
@@ -64,15 +64,15 @@ Week path: Mon $167.37 (low $165.49), Tue $167.09, Wed $168.81 (high $170.38), T
 
 | Ticker | Name | Market Cap | Price | Wk Change | Catalyst / News | Council Read |
 |---|---|---|---|---|---|---|
-| RXRX | Recursion Pharmaceuticals | **$2.34B** ✓ | $4.36 | +5.8% | No fresh headline found; +10.4% Friday on 35.3M shares (20D avg ~20.9M); next report ~Nov 4 (Yahoo) | Above its 50D ($3.56) and 200D ($3.57). A second week up. Friday's volume was 1.7x average with no news found. |
-| SDGR | Schrödinger | **$2.04B** ✓ | $27.28 | **-10.0%** | No fresh headline found; next report ~Nov 4; mean target $21.43 is below price | Gave back a tenth of last week's $30.31 close; +3.4% Friday. The Street target is $5.85 under the price. |
-| RCUS | Arcus Biosciences | **$3.07B** ✓ | $24.41 | -0.1% | October casdatifan event not re-sourced; report **Oct 27** (Yahoo) | Flat on its 200D ($24.82); under its 50D ($27.47). Still no pay-in-advance. |
-| BEAM | Beam Therapeutics | **$2.65B** ✓ | $25.70 | +4.9% | No fresh headline; risto-cel BLA still possible by year-end (carried); report Nov 3 | Up 4.5% Friday; still under its 50D ($26.52) and 200D ($28.44). |
-| EDIT | Editas Medicine | **$0.45B** ✓ | $2.90 | **+10.7%** | No fresh headline found; the EDIT-401 CTN delay is carried, not re-confirmed; report Nov 9 | Above its 50D ($2.85) and 200D ($2.65). Up on volume 1.2x average with no explanation. |
+| RXRX | Recursion Pharmaceuticals | **$1.86B** ✓ | $3.46 | **-20.5%** | No fresh headline found (search returned only 2024–25 items); -16.8% Friday alone; next report ~Nov 4 (Yahoo) | 🔴 Gave back last week's +10% Friday and more; under its 20D ($4.03) and back to its 50D/200D area ($3.62 / $3.56) — closed under both. |
+| SDGR | Schrödinger | **$1.69B** ✓ | $22.60 | **-17.2%** | No fresh headline found (latest sourced: Sep 2 MarketBeat item); -11.3% Friday; report ~Nov 4 | 🔴 Two weeks: $30.31 → $22.60. Still above its 200D ($16.40), under its 50D ($23.53). The mean target ($25.57) is now above price again. |
+| RCUS | Arcus Biosciences | **$2.78B** ✓ | $22.12 | -9.4% | No fresh headline; October casdatifan event not re-sourced; report **Oct 27** (Yahoo) | ⚠️ Lost its 200D ($24.82) — it sat on it last week. RSI 31.3. |
+| BEAM | Beam Therapeutics | **$2.42B** ✓ | $23.47 | -8.7% | No fresh headline; risto-cel BLA by year-end carried, not re-confirmed; report Nov 3 | ⚠️ Under its 20D, 50D and 200D ($28.35). |
+| EDIT | Editas Medicine | **$0.36B** ✓ | $2.35 | **-19.0%** | No fresh headline found; report Nov 9 | 🔴 Lost its 50D ($2.82) and 200D ($2.66) in a week. |
 
-> All five verified under $5B at the Oct 9 close (Yahoo marketCap: RXRX $2.34B, SDGR $2.04B, RCUS $3.07B, BEAM $2.65B, EDIT $0.45B). No graduations. **IOVA** (graduated last week at $6.44B) stands at $14.62 and $6.62B and stays off the list.
+> All five verified under $5B at the Oct 16 close (Yahoo marketCap: RXRX $1.86B, SDGR $1.69B, RCUS $2.78B, BEAM $2.42B, EDIT $0.36B). No graduations, no swaps — all five fell, so the names are being tested, not replaced. **IOVA** (graduated at $6.44B) is $13.62 (-6.8%) and **$6.17B** — still over the line, still off the list.
 
-**The Small-Cap Regime:** XBI **$153.77 (-0.4% W/W)** — flat while XLV rose 2.8%. The small end, which was last week's shelter, did not join the large-cap recovery. XBI is under its 50D ($158.26) for a sixth week.
+**The Small-Cap Regime:** XBI **$144.32 (-6.2% W/W)** against XLV +3.5% — a 9.6-point gap. XBI is under its 50D ($157.96) for a seventh week and RSI 35.9. The large-cap bid was a defensive bid; the small end is a risk asset, and it traded with tech. I found no biotech-specific catalyst for the fall.
 
 ---
 
@@ -80,21 +80,21 @@ Week path: Mon $167.37 (low $165.49), Tue $167.09, Wed $168.81 (high $170.38), T
 
 | Level | Price | Significance |
 |---|---|---|
-| **All-Time High** | $176.60 | Aug 19, 2026 (raw, carried); 3.3% overhead |
-| Failed-Breakout High | $171.87 | Sep 28 high — first resistance, $1.06 above |
-| Friday High | $171.04 | Friday's intraday high |
-| Current Price | $170.81 | Friday close; +2.8% W/W; above the 20D and 50D |
-| 20-Day / 50-Day MA | $168.52 / $168.47 | Reclaimed Wednesday and held Thursday on the flush; now support |
-| Wednesday / Thursday Closes | $168.81 / $168.16 | Both inside or just above the stacked averages |
-| Mon Low / Thu Low | $165.49 / **$165.19** | The week's lows; the second test of the floor |
-| **September Floor** | **$164.50 – $165.00** | Held a second time; Thursday's low was 19 cents above it |
-| 200-Day MA | $155.91 | Rising; 8.7% below price |
-| June Consolidation | ~$145 | Carried from prior weeks |
-| RSI (14) | 57.6 | From 42.6; ABT 42.3, JNJ 46.9, ABBV 71.3 (the only overbought large-cap) |
+| **52-Week High** | $178.86 | Thu Oct 15 intraday (adjusted bars) — over the old $176.60 raw August high |
+| 52-Week Closing High | $177.19 | Thu Oct 15 |
+| Current Price | $176.71 | Friday close; +3.45% W/W |
+| **Old All-Time High** | $176.60 | Aug 19 (raw) — now the first support; Friday's low was $176.34 |
+| Wednesday Close | $173.96 | The breakout day's base |
+| Failed-Breakout High | $171.87 | Sep 28 — broken through, now support |
+| 20-Day / 50-Day MA | $170.14 / $169.61 | Both rising; 3.9% / 4.0% below |
+| Week Low | $169.48 | Tuesday (J&J day) |
+| **September Floor** | $164.50 – $165.00 | Held twice; now 7% below |
+| 200-Day MA | $156.42 | Rising; 11.5% below |
+| RSI (14) | 66.2 | From 57.6; LLY 68.6, ABBV 72.3, CI 73.4 the overbought names; JNJ 43.8 and VRTX 43.8 the laggards |
 
-**Marky Setup Assessment:** I set one line last week: $164.50–$165.00. It was tested Thursday on 11.1M shares, held by nineteen cents, and the fund closed Friday $5.81 above it and over the stacked 20D/50D. By my own rule that makes the trade "long against the floor for a reclaim of $168," and the reclaim is done. The next target is the **$171.87** failed-breakout high, then the $176.60 record. The risk is the narrowness of the evidence: Friday's +1.6% came on 7.0M shares, below the 20D average, and the week's biggest volume day was a flat one. I stay long above $168.47 with a stop under $165.00; I do not pay for a break over $171.87 until it comes on volume.
+**Marky Setup Assessment:** The floor test last week turned into a breakout this week: the fund went through $171.87 and the $176.60 August high in four sessions and closed Thursday on the high-volume day. Friday held $176.34, a few cents under the old high, and closed over it. **The old high at $176.60 is now my line: a close under it gives back the breakout; holding it puts the next leg in play.** I am long and I do not add at RSI 66 with VIX at 20 — a defensive breakout in a falling market can reverse the day the market stops falling.
 
-**The relative strength story:** XLV +2.8% vs SPY +1.2% — a 1.6-point outperformance against last week's 2.4-point shortfall. YTD: XLV ~+10.8% vs SPY ~+15.1% (adjusted bars; SPY base from the same pull).
+**The relative strength story:** XLV +3.45% vs SPY -1.97% — a 5.4-point outperformance, after last week's 1.6 points. YTD XLV ~+14.6% vs SPY ~+12.8% — **XLV is now ahead of SPY for the year** on these bases (last week it trailed by ~4 points).
 
 ---
 
@@ -102,21 +102,21 @@ Week path: Mon $167.37 (low $165.49), Tue $167.09, Wed $168.81 (high $170.38), T
 
 | Factor | Level | Implication for XLV |
 |---|---|---|
-| 10Y Treasury | **5.24% Fri** (Treasury par); 5.36% intraday Wed (search); 30Y **5.60%** | Rates were not the story; XLV rose through both the 5.36% high and the Thursday drop |
-| Fed / FOMC | 3.75–4.00%; ~17% October hike odds as of Oct 2, **not re-sourced**; ISM (Oct 5) says the Fed is weighing another hike this month | Two sources, two readings; do not rely on either. FOMC Oct 27–28 |
-| Inflation / Labor | Latest sourced: core PCE 3.0%, payrolls +29K (Oct 2); ISM Services 54.9 (Oct 5), prices index 74 — highest since July 2022 | CPI mid-October, date unconfirmed. Services prices rising is a cost-trend question for managed care |
-| **Medicare — GLOBE model** | Final rule Sep 30 (carried): Part B rebates benchmarked to 19 countries, ~25% of beneficiaries, Apr 2027 – Mar 2032, ~5% of proposed scale | **No new action sourced this week.** Open issue #124 stands. REGN/MRK/VRTX recovered least |
-| **Pharma tariffs (Section 232)** | In effect since Sep 29 (carried); 100% baseline, 20% with onshoring plans, zero through Jan 2029 with an MFN deal; all 17 largest manufacturers have one | No change sourced |
-| MFN / Cycle-3 negotiation | Cycle-3 negotiated prices land **Nov 30** (carried) | Next scheduled pricing date |
-| FDA | October PDUFA calendar light per RTTNews; Acting Commissioner Diamantas, nominee Overton heard in the Senate HELP Committee Sep 24; 44 novel approvals Jan–Sep 2026 vs 32 a year earlier | Not a driver this week; leadership change pending |
-| WTI Crude | **$91.85** settled (+0.8%); Brent $104.72 (Fri bar) | Neutral |
-| DXY | **102.21** Fri (102.14 Thu); 52W closing high 102.24 | The 102 line broke Thursday; XLV rose anyway. Translation risk lands on Oct 13+ prints |
-| GLP-1 / Diabetes | LLY **$1,179.27 (+3.2%)**, back over its 50D; NVO $38.64 (+3.5%); no October GLP-1 headline found | Zepbound script data and NVO's Capital Markets Day **not re-sourced** |
-| Managed care | ELV +6.8%, CI +4.4%, UNH +2.0%, CVS -0.3%; **UNH reports Oct 13** | The group that "outperformed" last week outperformed again |
-| Medtech / Tools | ISRG +8.2%, DHR +2.7%, MDT +2.4%, ABT +2.2% | Reports Oct 20–21 |
-| Biotech / XBI | **$153.77 (-0.4%)** | Small-cap did not join the recovery |
+| 10Y Treasury | **5.09% Fri** (Treasury par), from 5.24%; 30Y **5.43%** | Money left equities for bonds and for defensives; XLV was one of the defensives |
+| Fed / FOMC | 3.75–4.00%; October hike odds ~42–52% after CPI (from ~22%; accounts conflict) | FOMC Oct 27–28. A hike is the scenario where defensives keep their bid |
+| Inflation | **Sep CPI 3.7% y/y; core 2.6% y/y, +0.3% m/m** (Oct 14) | Above consensus; medical-care components not sourced |
+| **Medicare — GLOBE model** | Final rule Sep 30 (carried) | **No new action sourced this week.** Issue #124 stands |
+| **Medicare — negotiation / exemptions** | JEC minority report (Oct 16): the President's pharma holdings rose to as much as $56.2M as drugmakers gained negotiation exemptions; White House denies a conflict (Fortune/PBS) | Political noise, not a rule change. Cycle-3 negotiated prices **Nov 30** (carried); 15 drugs incl. Ozempic/Wegovy at new prices in 2027 (PBS) |
+| **Pharma tariffs (Section 232)** | In effect since Sep 29 (carried) | No change sourced |
+| FDA / EMA | **CHMP positive opinion for Lilly's Foundayo** (obesity + T2D); Foundayo met CV safety in ACHIEVE-4 (date not confirmed) | The one regulatory headline of the week, and a positive one |
+| WTI Crude | **$99.04 (Fri evening, CL=F)** vs $91.85 settled | Not a settled change |
+| DXY | **101.78 (Fri evening, DX-Y.NYB)** vs 102.21 | Back under the 102 translation line |
+| GLP-1 | LLY **+6.6%** to $1,257.03 | NVO not re-pulled |
+| Managed care | UNH +5.8% (beat, raise), CVS +7.2%, CI +7.0%, ELV +3.8% (reports Oct 21) | MCR 88.4% at UNH — the cost trend improved |
+| Medtech / Tools | MDT +7.1%, SYK +6.3%, ABT +6.0%, TMO +4.9%, DHR +4.2%, ISRG +0.7%; J&J MedTech +2.5% (a miss) | Prints Oct 20–21 |
+| Biotech / XBI | **$144.32 (-6.2%)** | Risk-off; traded with tech |
 
-**Ophelia Verdict:** Last week I moved big pharma to neutral on a precedent I could not price and told you the right dashboard was the Federal Register. This week the Federal Register was quiet and the fund recovered 2.8%, which supports that call: the damage was the news, and when there was none, the stocks came back. I do not mistake that for a verdict on GLOBE — I have no new company commentary on it and none arrives before Tuesday. The flag I set on the dollar was crossed (DXY 102.14 and 102.21) and nothing happened; I set the line too early. **Posture:** big pharma stays neutral, physician-administered biologics stay neutral-negative until the calls size GLOBE, managed care neutral into UNH. I will not claim the rally's cause. I could not find one.
+**Ophelia Verdict:** I said policy was the driver, not rates. This week neither policy nor rates hurt: no new pricing action, and the long end fell 15bp. What drove the sector was the market's search for shelter after a hot CPI, and two good prints (UNH's raise, Lilly's EU opinion). The bid is real, but some of it is borrowed from tech's fall, and that part leaves when tech stabilises. Posture: neutral-positive on large-cap pharma and managed care; cautious on XBI; the Federal Register and the Nov 30 negotiated prices are still the dashboard.
 
 ---
 
@@ -124,106 +124,102 @@ Week path: Mon $167.37 (low $165.49), Tue $167.09, Wed $168.81 (high $170.38), T
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Floor Held and the Policy Sell-Off Was Paid Back
+### This Week's Story: The Shelter Trade, Two Good Prints and One Charge
 
-XLV gained **2.8% to $170.81** while the S&P 500 rose roughly 1.2% (SPY), reclaiming its 20-day and 50-day averages.
+XLV rose **3.45% to $176.71** in a week SPY fell 2.0%, and closed Thursday at a 52-week high of $177.19.
 
-**Catalyst 1 — A Second Floor Test (Thu Oct 8):** The fund traded to $165.19 on 11.1M shares, nineteen cents above the $164.50–$165.00 September floor, then closed at $168.16. Friday's +1.6% took it to $170.81.
+**Catalyst 1 — UnitedHealth (Tue Oct 13):** Adjusted EPS $4.69 against ~$4.12–4.14, a medical care ratio of 88.4% against 89.9% a year earlier, and a full-year outlook raised to at least $20.50 from $19.50–$20. The cost-trend question that has hung over managed care for a year got its best answer in a while. UNH +5.8%, CVS +7.2%, CI +7.0%.
 
-**Catalyst 2 — Managed Care and Medtech:** Elevance (+6.8%), Cigna (+4.4%) and Intuitive Surgical (+8.2%) led the large-caps; UnitedHealth added 2.0% ahead of its Oct 13 report. I found no company news behind these moves.
+**Catalyst 2 — J&J (Tue Oct 13):** Sales +5.9% to $25.4B and an adjusted beat, but a $5.5B pre-tax talc resolution charge took reported EPS to $0.09, and MedTech grew only 2.5%. The stock fell 5.7% that day; the rest of the sector did not follow.
 
-**Catalyst 3 — Pharma Recovered:** AbbVie closed at a record $276.47 (+5.2%); Gilead +4.4%, Lilly +3.2% (over its 50-day again), Amgen +2.9%. Thirteen of the fourteen names that all fell last week rose; Bristol Myers (-3.3%) did not.
+**Catalyst 3 — Lilly's pill in Europe:** The EMA's CHMP backed Foundayo for obesity and type 2 diabetes, a step toward an EU launch against Novo's oral semaglutide. LLY +6.6%, within 1.8% of its 52-week high, with several brokers lifting targets midweek (aggregator accounts).
 
-**Catalyst 4 — A Quiet Policy Desk:** No new Medicare or tariff action was sourced. The GLOBE final rule (Sep 30) and the pharma tariffs (Sep 29) stand unchanged.
+**Catalyst 4 — CPI and the rotation (Wed Oct 14):** A hot CPI sent tech down 3% and XLV up 2.5% the same day. The 10Y fell 15bp on the week. Medtech names without prints (MDT +7.1%, SYK +6.3%, ABT +6.0%) moved like defensives.
 
-**What did not:** Small-cap biotech (XBI -0.4%), Bristol Myers (-3.3%), Schrödinger (-10.0%), and the GLOBE-exposed biologics, which recovered least (REGN +1.5%, VRTX +1.1%, MRK +0.9%).
+**The drag:** XBI -6.2%, and all five small-cap watch names fell 8.7–20.5% with no company news found.
 
-**The Bottom Line:** The fund reversed its sell-off in a week with no news to say why, which is the tell that last week's move was an over-reaction on policy size. What has not changed is the precedent: reference pricing is final-rule Medicare policy and the first company calls to put a number on it come Tuesday, Oct 13, with **J&J and UnitedHealth** before the open.
+**The Bottom Line:** Large-cap healthcare is now ahead of the S&P 500 for the year. Part of the move is earned (UNH, LLY) and part of it is shelter. Next week's prints (ISRG, ELV, TMO, DHR, ABT) test whether the medtech and tools bid has earnings behind it.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-**Resolved this week:** no top-holding earnings. Sector policy items (Sep 29 tariffs, Sep 30 GLOBE) are unchanged and carried in the Macro Overlay.
+**Resolved this week:** **UNH** (beat and raise) and **JNJ** (adjusted beat, $5.5B talc charge, MedTech miss) on Oct 13.
 
-**Q3 earnings — dates are Yahoo Finance calendar dates pulled Oct 11, not all company-confirmed:**
+**Q3 earnings — dates are Yahoo Finance calendar dates pulled Oct 16, not all company-confirmed:**
 
 | Company | Ticker | Date | EPS Est. | What to Watch |
 |---|---|---|---|---|
-| **Johnson & Johnson** | JNJ | **Tue Oct 13** | $2.50 | Opens the season after +2.1%; Stelara erosion, MedTech growth, any GLOBE or tariff commentary |
-| **UnitedHealth** | UNH | **Tue Oct 13** | $4.15 | Medical cost ratio — the first hard read on cost trend; 26.7% gap to target |
-| Intuitive Surgical | ISRG | Oct 20 (Yahoo; one source says Oct 19 AMC) | $2.64 | Procedure growth, da Vinci 5; +8.2% into it, -25.1% YTD |
-| Elevance | ELV | Oct 21 (Yahoo; one source says Oct 20 BMO) | $4.69 | Medicaid and ACA cost trend; +6.8% into it |
-| Thermo Fisher / Danaher / Abbott | TMO / DHR / ABT | Oct 21 | $6.40 / $1.92 / $1.42 | Bioprocessing orders, China |
-| **Eli Lilly** | LLY | **Oct 29** | $8.09 (Yahoo; last page showed $9.96 — not reconciled) | Zepbound / Mounjaro volume and price; 15.1% of the fund |
-| Merck / BMS / Gilead / Stryker | MRK / BMY / GILD / SYK | Oct 29 | $2.13 / $1.50 / $2.18 / $3.56 | MRK: Keytruda and GLOBE exposure |
-| AbbVie / Regeneron | ABBV / REGN | Oct 30 | $3.79 / $16.03 | REGN: Eylea and Part B reference pricing |
-| Vertex | VRTX | Nov 2 | n/a | Povetacicept PDUFA Nov 30 (carried) |
-| Pfizer / Amgen | PFE / AMGN | Nov 3 | $0.74 / $5.76 | AMGN: any OCEAN(a)-Outcomes timing |
-| CVS Health | CVS | **Nov 4** (Yahoo; last page had Oct 28) | $1.64 | Aetna margin; date moved, not confirmed |
+| Intuitive Surgical | ISRG | **Oct 20** | $2.64 | Procedure growth; still under its 200D ($439.63), -24.7% YTD |
+| Elevance | ELV | **Oct 21** | $4.69 | Medicaid / ACA cost trend after UNH's MCR improvement |
+| Thermo Fisher / Danaher / Abbott | TMO / DHR / ABT | **Oct 21** | $6.40 / $1.92 / $1.41 | Bioprocessing orders, China; TMO 1% under its Thursday 52-week closing high |
+| **Eli Lilly** | LLY | **Oct 29** | **$7.16** (Yahoo; $8.09 on last page) | Zepbound / Mounjaro volume and price; the EU Foundayo timeline |
+| Merck / BMS / Gilead / Stryker | MRK / BMY / GILD / SYK | Oct 29 | $2.09 / $1.34 / $2.20 / $3.55 | MRK Keytruda and GLOBE exposure; BMY estimate down from $1.50 |
+| AbbVie / Regeneron | ABBV / REGN | Oct 30 | $3.79 / $16.06 | REGN: Eylea and Part B reference pricing |
+| Vertex | VRTX | Nov 2 | $0.04 (Yahoo; likely an IPR&D-distorted mean — not checked) | Povetacicept PDUFA Nov 30 (carried) |
+| Pfizer / Amgen | PFE / AMGN | Nov 3 | $0.73 / $5.76 | AMGN 8.7% above its mean target |
+| CVS Health | CVS | Nov 4 | $1.65 | Aetna margin after a +7.2% week |
 | Cigna | CI | Nov 5 | $7.51 | PBM margins |
 | Medtronic | MDT | Nov 17 | $1.33 | — |
+
+> Estimate changes vs last week's page: LLY $8.09 → $7.16, BMY $1.50 → $1.34, MRK $2.13 → $2.09 (Yahoo means; causes not sourced). Small-cap dates: RCUS Oct 27, BEAM Nov 3, RXRX / SDGR ~Nov 4, EDIT Nov 9 (Yahoo).
 
 **Other dated catalysts:**
 
 | Catalyst | Company | Date | What to Watch |
 |---|---|---|---|
-| Eight October PDUFA dates (tracker; exact dates not legible in the source) | various | Oct 2026 | Calendar described as light by RTTNews |
-| FOMC | macro | Oct 27–28 | Hike odds not re-sourced |
+| FOMC | macro | **Oct 27–28** | ~42–52% hike odds |
+| Foundayo EU decision | LLY | European Commission decision after the CHMP opinion (date not sourced) | Launch timing vs NVO |
 | Cycle-3 Medicare negotiated prices | LLY, GILD, ABBV et al. | **Nov 30, 2026** (carried) | Trulicity, Biktarvy, Botox |
 | Povetacicept PDUFA | VRTX | Nov 30, 2026 (carried) | IgAN |
-| GLOBE model start | Part B drugs | April 2027 | First performance year |
-| Casdatifan investor event / NVO Capital Markets Day / EDIT-401 CTN | RCUS / NVO / EDIT | Oct (not re-sourced) | Carried from last page; unconfirmed |
 
-**Marky's Binary Event Read:** Tuesday, Oct 13, before the open: JNJ (10.4% of the fund) and UNH (5.4%) — together 15.8% of XLV. The fund walks in 1.1 points under the failed-breakout high at $171.87 and $5.81 above the floor, with JNJ over its 200D and under its 50D, UNH over its 200D and under its 50D. If the two prints are clean, $171.87 gives and the ATH ($176.60) is in play. If the numbers bring up a GLOBE cost, $168.47 is the first line.
+**Marky's Binary Event Read:** Five medtech and tools prints in two days (Oct 20–21) after a week those names rose 4–7% without news. That is the test of whether this bid is earnings or shelter. LLY on Oct 29 reports with its estimate cut 11% in a week on Yahoo's mean — I do not know why, and that is worth knowing before the print.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- JNJ and UNH (Oct 13) print clean; $171.87 breaks and the record at $176.60 is the next target
-- Q3 calls size GLOBE as immaterial (5% of the proposed scale, 2027 start)
-- The labor slowdown (+29K) finally brings the defensive bid
-- Lilly (Oct 29) shows Zepbound volume holding; LLY keeps its 50D ($1,173.63)
+- XLV holds the $176.60 old high and the medtech prints (Oct 20–21) confirm the move
+- ELV follows UNH on cost trend; managed care re-rates from 9–17x forward
+- Foundayo EU approval lands before LLY's Oct 29 print
 
 ### 🔴 Bear Case
-- **$164.50–$165.00 breaks on a close** → the 200D ($155.91) is the next support
-- GLOBE gets a larger scale or an added category; the Nov 30 negotiated prices land harsh
-- **DXY keeps above 102** and the dollar lands on LLY, MRK, ABBV and JNJ translation Oct 13–30
-- Managed-care prints confess the cost trend (ISM services prices at their highest since 2022) → ELV +6.8% and CI +4.4% reverse
-- AMGN, now 4.7% over its mean target, loses on a binary
+- Tech stabilises and the shelter money leaves: a close under $176.60, then $171.87
+- A medtech miss like J&J's (MedTech +2.5%) repeats at ABT/MDT/SYK after a 6–7% run
+- GLOBE or the Nov 30 negotiated prices bring a new federal action — policy was quiet for two weeks
+- XBI keeps falling and drags the mid-cap names into the fund's lower weights
 
 ### ⚠️ The Wild Card
-**A rally nobody can explain.** The fund returned 2.8% on a policy desk that said nothing, and I could not source a company-level cause for ELV +6.8%, ISRG +8.2% or ABBV +5.2%. Two readings: the fund was oversold on a policy over-reaction and mean-reverted into the earnings window (a technical rebound), or someone knows something about managed care and medtech cost trends that the calls have not told us. The first has the better evidence; the second can be settled in two weeks. The concentration risk is unchanged: Lilly ~15.1% and J&J ~10.4% make up a quarter of the fund.
+**LLY's estimate.** Yahoo's Q3 EPS mean for Lilly fell from $8.09 to $7.16 in a week the stock rose 6.6%. If that is a real cut (a charge, an IPR&D item, a pricing change) it is the most important number on this page and I have not sourced it. If it is a data artefact, it is noise. Fifteen percent of the fund sits on the answer.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"I told you last week the right dashboard was the Federal Register. It was quiet and the fund came back 2.8%, which says the damage was the news and not the numbers. The dollar crossed my 102 line and nothing happened; I set that line too early. I could not find a cause for the managed-care or medtech rallies, and I will not invent one. Big pharma stays neutral, biologics neutral-negative until the calls size GLOBE, managed care neutral into UNH."*
+**Ophelia:** *"No new pricing action, the long end down 15bp, and two good prints. The sector did what a defensive does in a week like this. Some of the bid is borrowed from tech and goes back when tech stops falling. Neutral-positive on large pharma and managed care, cautious on XBI. The Federal Register and Nov 30 stay my dashboard."*
 
-**Marky:** *"$164.50–$165.00 held on a heavy Thursday and the fund is back over the stacked 20D and 50D. The trade I described last week is done; the next trade is $171.87, one point away. Friday's +1.6% came on light volume. I stay long above $168.47 with a stop under $165 and wait for the volume to show on JNJ and UNH."*
+**Marky:** *"Floor test last week, breakout this week: through $171.87 and the $176.60 August high in four sessions. $176.60 is my line now. Long, not adding at RSI 66 with VIX at 20."*
 
-**Cecil:** *"I did not add to AMGN and it is flat at my price and 4.7% over target. UNH at 16.8x with a 26.7% gap is the one I want to see on Tuesday; ABT at 16.4x with 21% to target is no longer oversold. REGN at 12.1x stays on the list until the call. I do not chase ABBV at a record with 2% to target. And I do not hold the list into the print without GLOBE numbers."*
+**Cecil:** *"UNH at 17x forward with a raised outlook and an 18.8% gap to target — the print removed my reason to wait. REGN at 12.8x stays. J&J under $250 is a start: the talc charge ends a liability. AMGN, ABBV and PFE are over their targets and have done their job. And I want to know why Lilly's estimate fell 11%."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sun Oct 11, 2026): XLV, XBI, holdings and small-cap daily bars through the Fri Oct 9 close; weekly changes vs settled Oct 2 closes; mean targets, forward P/E, yields, market caps; fund top-10 weights; Yahoo earnings-calendar dates and consensus EPS. CSVs in the workspace folder gridA_2026-10-09: hc_*.csv, macro_*.csv, fund.csv
-- U.S. Treasury daily par yield curve (fetched Oct 11): Oct 1–9 closes
-- data/market_state.json: WTI settlement $91.85
-- Roic.ai / Trading Economics / ISM roundup (Oct 5): September ISM Services PMI 54.9, prices index 74, business activity 56.5
-- Epocrates / RTTNews (Oct 2026): September FDA approvals, 44 novel approvals Jan–Sep 2026, light October PDUFA calendar, FDA leadership
-- AP table via La Nación (Oct 9); macro and policy items carried from the Oct 3 revision of this page and issue #124 (GLOBE final rule, Section 232 tariffs, MFN deals, cycle-3 negotiation)
-- Searches that returned no October 2026 company news: Lilly/Novo GLP-1, Elevance, Intuitive Surgical, AbbVie, Recursion, Schrödinger
-- Not re-sourced this week: Zepbound script data, NVO Capital Markets Day, casdatifan investor event, EDIT-401 CTN status, October hike odds, 1Y XLV return, the cause of every large-cap move above; LLY's consensus EPS ($8.09 now vs $9.96 last page) is not reconciled
-- Restatements: XLV YTD +10.8% (price basis implied from last week's +7.8%); 52W range on adjusted bars; CVS earnings date Oct 28 → Nov 4 (Yahoo)
-- Repo cross-checks: prior revision of this page (Oct 3), wiki/tech.md and wiki/financials.md (Oct 11)
+- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 16, ~18:20 ET): XLV, XBI, 20 large names, 5 small caps and IOVA, daily bars through the Oct 16 close (last bar dated Oct 16; not re-pulled with repair); weekly changes vs settled Oct 9 closes; targets, forward P/E, caps; funds_data weights (unchanged from last week); Yahoo earnings dates and EPS means. CSVs: workspace gridA_2026-10-16/hc_*.csv, summary_hc.csv
+- U.S. Treasury daily par yield curve (fetched Oct 16)
+- UnitedHealth Q3 8-K (SEC) and CNBC (Oct 13): revenue, EPS, MCR, outlook
+- J&J Q3 8-K (SEC), CNBC, TIKR, Stocktitan (Oct 13): sales, talc charge, MedTech, guidance
+- Benzinga / GuruFocus / StocksToTrade / TradingView-Zacks (Oct 14–16): CHMP opinion on Foundayo, broker moves (aggregators; no primary EMA page opened)
+- Fortune / PBS / Newsweek (Oct 16): JEC minority report on pharma holdings and Medicare exemptions; PBS on 2027 negotiated prices
+- CNBC / KSL (Oct 14): September CPI and FedWatch odds (accounts conflict)
+- Not re-sourced this week: GLOBE, tariffs, FDA calendar, NVO, causes of the small-cap falls, the LLY estimate change, AUM/P/E/beta
+- Restatements: ABBV Oct 9 close $276.47 → $274.78 (adjusted bar)
+- Repo cross-checks: prior revision of this page (Oct 11); wiki/tech.md (de5d77f), wiki/financials.md (694ac03)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-10-11** (Sunday-evening run; covering week ended Fri Oct 9, 2026)*
+*Last updated by Saturday Research Crew: **2026-10-16** (Friday-evening run; covering week ended Fri Oct 16, 2026)*
 *Next update: Every Saturday*
 *Data sources: Yahoo Finance, StockAnalysis, CMS, FDA, FRED, market data feeds*
