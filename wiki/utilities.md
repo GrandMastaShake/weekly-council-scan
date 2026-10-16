@@ -2,7 +2,7 @@
 
 > **Sector:** Utilities | **ETF:** Utilities Select Sector SPDR (XLU) | **Expense Ratio:** 0.08%
 >
-> *"Second up week, and this one had a reason. XLU closed $41.41 (+4.0%), its largest weekly gain in at least four months, and the 10-year closed 4bp lower at 5.24% after printing 5.36% on Wednesday — a 24-year high the sector ignored. The reason was Tuesday: Google signed Constellation for 890 MW of new nuclear uprates on a 20-year contract plus 2,700 MW of existing supply, the DOE offered Vistra up to $4.2B for its own uprates, and Black Hills took a $1.8B Google data-center deal in Wyoming. CEG +15.8%, VST +15.3%, and Vistra enters the top ten. The scarcity trade that FERC put on hold two weeks ago found a route around FERC — bilateral, hyperscaler-paid, outside the auction. The wires rose 2–4% behind it. Last week I said the relief started in the wires and not in CEG; this week CEG led by a mile, and the wires followed. I was early on the leadership call by exactly one week."* — Ophelia
+> *"Third up week, and the halves swapped places. XLU closed $42.21 (+1.9%), its first close above the 50-day since July 29, and the wires did it on their own: Southern and ConEd +5.8%, WEC +4.8%, Exelon and Duke +4.2%. The pair that carried last week gave half of it back — CEG -9.0%, VST -5.9% — in the same three sessions that tech sold off on AI-return worries. The rate file finally helped: the 10-year closed 5.10%, down 14bp, even though Wednesday's CPI ran hot at 3.7%. Investors sold tech and bought bonds, and they bought the bond proxies with them. Then on Friday NiSource signed Microsoft for 1,100 MW on 20 years, Microsoft paying for the build — the fourth hyperscaler-funded utility deal in two weeks. The sector is now two trades again, and this week the bond trade was the better one."* — Ophelia
 
 ---
 
@@ -10,22 +10,22 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | **$41.41** | $39.83 | **+3.97%** — second straight up week; largest weekly gain in at least four months (the 1Y bars hold nothing bigger); highest close since Sep 14 |
-| 52W Range | $39.03 – $46.75 | $39.03 – $47.06 | 52W high re-based to the dividend-adjusted bar ($46.75); low unchanged |
-| AUM | **$21.3B** (Yahoo totalAssets) | ~$21.8B (carried) | Re-published this pull |
-| YTD Return | **-1.0%** (price basis) | -6.7% | +5.7 pts; Yahoo's total-return YTD figure is -5.7% |
-| 1Y Return | **-5.6%** (adjusted bars) | -6.8% | — |
-| P/E Ratio | 18.8 (trailing, Yahoo) | n/a last pull | — |
-| Dividend Yield | **3.07%** (Yahoo) | 2.83% | Carry gap vs 5.24% 10Y **-217bp**, from -245bp |
-| Beta | 0.40 (3Y, Yahoo) | 0.43 (5Y, carried) | — |
+| Price | **$42.21** | $41.41 | **+1.93%** — third straight up week (+0.8%, +4.0%, +1.9%); **first close above the 50-day since Jul 29**; highest close since Sep 10 |
+| 52W Range | $39.25 – $46.75 (adjusted bars) | $39.03 – $46.75 | Low re-based by the rolling 1Y window; high unchanged |
+| AUM | $21.3B (Yahoo totalAssets) | $21.3B | Yahoo figure unchanged from last pull |
+| YTD Return | **+0.9%** (price basis) | -1.0% | First positive YTD print on this page since summer; Yahoo's total-return YTD field still reads -5.7% (not refreshed) |
+| 1Y Return | **-5.2%** (adjusted bars) | -5.6% | — |
+| P/E Ratio | 19.1 (trailing, Yahoo) | 18.8 | — |
+| Dividend Yield | **3.07%** (Yahoo) | 3.07% | Carry gap vs 5.10% 10Y **-203bp**, from -217bp |
+| Beta | 0.40 (3Y, Yahoo) | 0.40 | — |
 | Total Holdings | 31 (carried) | — | — |
-| Avg Daily Volume | **36.3M this week** (20D 34.1M) | 52.6M | Mon 38.5M, Tue 52.1M, Wed 45.1M, Thu 28.8M, Fri 16.8M — fading into the long weekend |
+| Avg Daily Volume | **29.3M this week** (20D 35.7M) | 36.3M | Mon 16.6M, Tue 27.2M, Wed 35.4M, Thu 35.3M, Fri 31.9M |
 
-Week path: Mon $39.97, Tue **$41.16** (+3.0%, the Google–Constellation day), Wed $41.15, Thu $41.07, Fri $41.41 (high $41.46).
+Week path: Mon $41.63, Tue $41.87, Wed $41.72 (CPI day), Thu $41.65, Fri **$42.21** (high $42.29).
 
-**Marky Tape Read:** Both of last week's levels went. I asked for a close above $40.21 and got $41.16 on Tuesday, through the $40.45–$40.66 shelf and the 20-day in one session, on 52M shares. Then three days of nothing: $41.15, $41.07, $41.41, in a 73-cent range, on volume that halved by Friday. That is a gap-and-hold, not a gap-and-run, and in a sector this oversold a hold is enough. Wednesday the 10-year printed 5.36% intraday and the fund closed down a penny. RSI 54.7, from 35.4. What is overhead: the 50-day at **$42.01**, then the Sep 11 weekly close at $42.08, then $42.42–$42.77 (the late-August shelf) and the 200-day at $43.77. Support: **$40.97** (Friday's low, also the gap's upper edge), **$40.41** (Tuesday's gap low and the 20D), then $39.03. Bias: **bullish above $40.41**. I said I would buy over $40.21 and I did, in the model book, Tuesday's close.
+**Marky Tape Read:** My first target was $42.01–$42.08 and Friday closed $42.21, through both — the falling 50-day ($41.83 now) and the Sep 11 weekly close. Four sessions pinned under the 50-day in a 22-cent closing range ($41.65–$41.87), then Friday cleared it on 31.9M shares on a day SPY fell 1.1%. That is the tell: the fund rose on a risk-off day. RSI **62.0**, from 54.7. The gap support never came into play — the week's low was $41.09 Tuesday, 68 cents above last week's $40.41 stop. Overhead now: **$42.42–$42.77** (the late-August shelf), $43.13 (Sep 8 close), then the 200-day at **$43.77**. Support: **$41.83** (the 50-day, now underneath), $41.09 (week low), $40.58 (20D). Bias: **bullish above $41.83**. Stop raised to a close under $41.09.
 
-**Ophelia Macro Read:** The rate file barely moved and the sector moved a lot, so the week was not about rates. 10Y **5.24%** Friday (-4bp on the week) after **5.36%** intraday Wednesday, the highest since April 2002; 30Y **5.60%**; 3-month bills **4.06%**. The FOMC minutes (Wed Oct 7) said another hike is coming without saying when; October odds stayed in the high teens, December remains the base case. Carry gap **-217bp** — still the worst in the fund's life, and the fund rose 4%. The thing that happened was **Tuesday, Oct 6**: Google and Constellation announced a 20-year PPA for **890 MW of new nuclear capacity** from uprates at 11 reactors in Illinois, Pennsylvania and New Jersey, a **15-year supply agreement for a further 2,700 MW** of existing output (3,590 MW in total), and more than $4.3B of Constellation-funded upgrades, first unit online 2028. The day before, the DOE's Office of Energy Dominance Financing offered **Vistra a conditional loan of up to $4.2B** for uprates and 20-year extensions at Beaver Valley, Davis-Besse and Perry (+433 MW, ~4 GW kept online). And Black Hills signed Google for a Cheyenne data center: **$1.8B** of company-owned gas generation plus a 2.1 GW managed microgrid, Google bearing the cost. Three deals in two days, all structured so the hyperscaler pays and none of them routed through the suspended PJM backstop. Natural gas **+6.1% to $3.22**. This is the scarcity trade finding its own financing. It does not fix the carry gap; it says a third of the fund is not a bond.
+**Ophelia Macro Read:** The rate help I waited three weeks for arrived on the wrong data. **September CPI (Wed Oct 14) was hot**: headline +0.6% m/m, 3.7% y/y (from 3.4%, 3.6% expected), core +0.3% / 2.6% against 0.2% / 2.5%; gasoline +9.1% was about half of it. Yields rose on the print, and hike odds for Oct 28 rose with them. Then on Thursday PPI also ran hot and the 10-year fell **10.5bp to 5.09%** anyway, because investors were selling tech after a two-day rout and buying bonds. 10Y **5.10%** Friday (-14bp on the week), 30Y **5.44%** (-16bp), 3-month bills **4.07%** (flat), 5Y 4.90%. A Bloomberg headline Friday said rate-hold expectations rose after remarks from Chair Warsh; I did not read the remarks and carry no content from them. This is a flight-to-quality bid, not a disinflation bid, and the sector got both legs of it: bonds rallied and money rotated to defensives. VIX **19.99** from 14.84, SPY **-2.0%**, its worst week since June per Bloomberg. Natural gas **$3.12** Fri evening (NG=F), -3% on the week — not settled.
 
 ---
 
@@ -33,62 +33,64 @@ Week path: Mon $39.97, Tue **$41.16** (+3.0%, the Google–Constellation day), W
 
 | Rank | Ticker | Name | Weight | Price | 1W Change | Yield | Fwd P/E | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | NEE | NextEra Energy | 12.7% | $77.38 | +0.72% | 3.2% | 17.7 | $97.05 (+25.4%) | ⚡ |
-| 2 | SO | Southern Company | 7.7% | $86.17 | +2.93% | 3.5% | 17.5 | $98.13 (+13.9%) | ⚡ |
-| 3 | DUK | Duke Energy | 7.2% | $116.65 | +2.21% | 3.7% | 16.3 | $135.39 (+16.1%) | ⚡ |
-| 4 | CEG | Constellation Energy | 6.7% | **$298.07** | **+15.76%** | 0.6% | 22.4 | $341.53 (+14.6%) | 🔥 |
-| 5 | AEP | American Electric | 5.2% | $122.81 | +2.71% | 3.1% | 17.9 | $142.53 (+16.1%) | ⚡ |
-| 6 | D | Dominion Energy | 4.3% | $61.64 | +0.54% | 4.3% | 16.2 | $71.58 (+16.1%) | ⚡ |
-| 7 | SRE | Sempra | 4.1% | $81.34 | +3.78% | 3.2% | 14.7 | $99.75 (+22.6%) | ⚡ |
-| 8 | ETR | Entergy | 3.7% | $102.80 | +1.87% | 2.5% | 20.1 | $122.13 (+18.8%) | ⚡ |
-| 9 | XEL | Xcel Energy | 3.5% | $73.78 | +3.33% | 3.2% | 16.3 | $90.61 (+22.8%) | ⚡ |
-| 10 | **VST** | **Vistra Corp (new to top 10)** | **3.5%** | **$161.48** | **+15.33%** | 0.6% | 15.5 | $210.25 (+30.2%) | 🔥 |
-| — | EXC | Exelon (dropped to #11) | (outside top 10) | $41.76 | +2.53% | 4.0% | 13.7 | $48.53 (+16.2%) | ⚡ |
-| — | EIX | Edison Int'l | (outside top 10) | $55.30 | +4.30% | 6.4% | 8.5 | $63.79 (+15.3%) | 🔴 |
-| — | PCG | PG&E | (outside top 10) | $13.13 | **+6.57%** | 1.5% | 7.3 | $18.75 (+42.8%) | 🔴 |
-| — | PPL | PPL Corp | (outside top 10) | $34.25 | **+4.42%** | 3.3% | 16.2 | $40.13 (+17.2%) | ⚡ |
-| — | DTE | DTE Energy | (outside top 10) | $126.90 | +1.97% | 3.7% | 15.2 | $152.68 (+20.3%) | ⚡ |
-| — | ES | Eversource | (outside top 10) | $65.73 | +1.91% | 4.8% | 13.3 | $73.33 (+11.6%) | ⚡ |
-| — | ED | ConEd | (outside top 10) | $106.10 | +2.62% | 3.3% | 16.3 | $109.34 (+3.1%) | ⚡ |
-| — | WEC | WEC Energy | (outside top 10) | $103.74 | +2.12% | 3.7% | 17.3 | $120.26 (+15.9%) | ⚡ |
+| 1 | NEE | NextEra Energy | 12.7% | $79.80 | +3.13% | 3.2% | 18.2 | $97.00 (+21.6%) | ⚡ |
+| 2 | SO | Southern Company | 7.7% | **$91.18** | **+5.81%** | 3.4% | 18.5 | $96.29 (+5.6%) | 🔥 |
+| 3 | DUK | Duke Energy | 7.2% | $121.47 | +4.13% | 3.7% | 16.9 | $133.72 (+10.1%) | ⚡ |
+| 4 | CEG | Constellation Energy | 6.7% | **$271.37** | **-8.96%** | 0.6% | 20.4 | $337.57 (+24.4%) | ⚠️ |
+| 5 | AEP | American Electric | 5.2% | $127.14 | +3.53% | 3.1% | 18.5 | $141.12 (+11.0%) | ⚡ |
+| 6 | D | Dominion Energy | 4.3% | $63.56 | +3.11% | 4.3% | 16.7 | $71.58 (+12.6%) | ⚡ |
+| 7 | SRE | Sempra | 4.1% | $83.41 | +2.54% | 3.2% | 15.1 | $97.81 (+17.3%) | ⚡ |
+| 8 | ETR | Entergy | 3.7% | $105.11 | +2.25% | 2.5% | 20.6 | $121.18 (+15.3%) | ⚡ |
+| 9 | XEL | Xcel Energy | 3.5% | $76.31 | +3.43% | 3.2% | 16.8 | $89.33 (+17.1%) | ⚡ |
+| 10 | VST | Vistra Corp | 3.5% | **$152.02** | **-5.86%** | 0.6% | 14.7 | $210.10 (+38.2%) | ⚠️ |
+| — | EXC | Exelon (#11) | (outside top 10) | $43.50 | +4.17% | 4.0% | 14.3 | $48.81 (+12.2%) | ⚡ |
+| — | EIX | Edison Int'l | (outside top 10) | $55.93 | +1.14% | 6.3% | 8.6 | $63.21 (+13.0%) | 🔴 |
+| — | PCG | PG&E | (outside top 10) | $13.09 | -0.30% | 1.5% | 7.3 | $18.50 (+41.3%) | 🔴 |
+| — | PPL | PPL Corp | (outside top 10) | $35.17 | +2.69% | 3.3% | 16.6 | $39.81 (+13.2%) | ⚡ |
+| — | DTE | DTE Energy | (outside top 10) | $129.73 | +2.23% | 3.6% | 15.5 | $150.18 (+15.8%) | ⚡ |
+| — | ES | Eversource | (outside top 10) | $66.85 | +1.70% | 4.8% | 13.6 | $73.17 (+9.5%) | ⚡ |
+| — | ED | ConEd | (outside top 10) | **$112.26** | **+5.81%** | 3.2% | 17.3 | $108.66 (-3.2%) | 🔥 |
+| — | WEC | WEC Energy | (outside top 10) | $108.71 | +4.79% | 3.6% | 18.1 | $119.44 (+9.9%) | ⚡ |
 
 > 🔥 = Catalyst-driven momentum | ⚡ = Neutral / stable | ⚠️ = Volatile / narrative-driven | 🔴 = Breakdown / event risk
-> Prices are Fri Oct 9 closes; weekly changes vs settled Fri Oct 2 daily-bar closes (dividend-adjusted); yields, forward P/E and targets from the Oct 11 Yahoo pull. **Weights refreshed (Yahoo funds_data, Oct 11): NEE 12.7%, SO 7.7%, DUK 7.2%, CEG 6.7%, AEP 5.2%, D 4.3%, SRE 4.1%, ETR 3.7%, XEL 3.5%, VST 3.5%.** **Vistra enters the top ten; Exelon drops to #11** — EXC stays tracked. The nuclear pair (CEG + VST) is now 10.2% of the fund. One restatement: EIX's prior close is $53.02 on the adjusted bar, not the $53.89 this page carried, so its +4.3% is on the adjusted series.
+> Prices are Fri Oct 16 closes (last bar verified as Oct 16); weekly changes vs settled Fri Oct 9 daily-bar closes, which match last week's page — no restatements. Yields, forward P/E and targets from the Oct 16 Yahoo pull. **Weights: Yahoo funds_data returned the identical top ten to five decimals as the Oct 11 pull (NEE 12.715%, SO 7.674%, … VST 3.513%)** — the snapshot was not refreshed by Yahoo this week, so the weights are carried, not re-measured. No name entered or left the top ten.
 
-**All eighteen large caps rose; the pair led by ten points.** CEG **+15.8%** (Tue +12.2% on 13.5M shares, three times normal; Thursday gave back 4.8% and Friday took it back) and VST **+15.3%** (Tue +10.8%, Wed +3.9% to a $168.75 high, Thu -6.3%, Fri +3.4%). Both printed their weekly highs on Wednesday and closed the week 3–4% below them — a fast repricing with a wobble, not a straight line. Behind them the wires rose 2–4% in a tidy band: PPL +4.4%, SRE +3.8%, XEL +3.3%, SO +2.9%, AEP +2.7%, ED +2.6%, EXC +2.5%. The laggards were the two deal parties — NEE +0.7%, D +0.5%.
+**Fifteen of eighteen large caps rose; the three that fell were the pair and PG&E.** The wires led in a tight band: SO and ED +5.8%, WEC +4.8%, EXC +4.2%, DUK +4.1%, AEP +3.5%, XEL +3.4%, NEE and D +3.1%. ED closed **above its mean target** ($112.26 vs $108.66), $1.31 under its 52-week closing high ($113.57); SO closed within 5.6% of its target.
 
-**The Google–Constellation contract is the largest data-center power deal in the sector this year** and it is the trigger this page has been waiting on: 890 MW new (uprates, not new build — 11 units, first online 2028), 2,700 MW existing on 15 years, a five-year Google Cloud/Gemini technology partnership, load-shaping and demand-response terms written in so Google's load can be cut under grid stress, and framing aligned with the White House pledge that data-center operators bear their own utility costs. It follows **Amazon–Calvert Cliffs (Sep 30, 190 MW uprate, 20 years, online 2030–32)** — a deal last week's page said it could not find; it existed, and this page was wrong to write "no new PPA." **Vistra's DOE commitment (Oct 5)** is conditional — technical, legal, environmental and financial conditions precede definitive documents — but it finances the 433 MW of uprates that back the Meta PPA, and includes an option on Comanche Peak uprates in Texas.
+**The pair round-tripped half the Google week.** CEG **-9.0%** (Wed -5.5% to $279.54, Thu low $267.61, Fri $271.37 — its lowest close since Oct 5, the day before the Google contract) and VST **-5.9%** (Wed -6.5% to $151.79, Thu low $145.85). No company-specific news explains Wednesday: searches found MarketBeat and Motley Fool items recording the drops (CEG -5.49%, VST -6.51%), one aggregator headline attributing VST's fall to an "analyst downgrade" that its own article does not name, and nothing else. What coincides is the tape: Wednesday and Thursday were the tech rout that CNBC tied to rotation out of AI names into bonds, and Friday's Nasdaq -2% was framed as AI-return worry. The pair trades as AI power. When AI sold, the pair sold; the wires were bought. VST also redeemed its ~$1.0B Series A preferred this month (company-neutral).
 
-**NextEra–Dominion** had its worst week of process news: Virginia's Lt. Governor formally opposed the merger (Oct 7), the Attorney General asked the SCC to reset the review clock, the SCC admitted documents from NextEra's failed Florida acquisition into the record and added three in-person public hearings, and a Fairfax County hearing (Oct 9) was dominated by rate and data-center concerns. The companies are fighting to restrict circulation of the so-called "Robo Memo." Virginia's deadline is Jan 11 unless extended; the companies still guide to a 2H 2027 close. NEE and D, 17.0% of the fund, were its two weakest large caps.
+**NiSource–Microsoft (Fri Oct 16).** NiSource (NI, ~$20.5B, outside the top ten) signed a **20-year agreement with Microsoft for ~1,100 MW of new generation for a northwest Indiana campus, service from 2028**, Microsoft fully funding the generation and transmission through NiSource's GenCo subsidiary; it includes **600 MW of battery storage** under a tolling agreement (an AGP Group affiliate develops it) and raises NiSource's projected savings for existing NIPSCO customers to **$1.75B** from $1.4B. NI +3.5% Friday to $42.68 on 9.0M shares, about three times its recent volume. Fourth hyperscaler-funded utility deal in two weeks (Amazon–Calvert Cliffs Sep 30, Black Hills–Google Oct 6, Google–Constellation Oct 6), and the same template: the customer pays for the build.
 
-**California.** EIX +4.3% and PCG +6.6% in a rising tape; no new ruling. The Eaton Fire calendar carried an **Oct 8 hearing on a motion to continue the trial** — its outcome was not found in any report and should be read as unknown, with the first bellwether (eight plaintiffs) still set for **Jan 25, 2027**. PG&E filed a **10-year, $11.4B plan to underground ~5,000 miles** of line (Oct 1, 2028–2037), told an S&P event (Oct 5) that California's liability structure "is not durable," and issued PSPS warnings to ~12,200 customers for Oct 9–12 wind. The $2B of deferred 2027 capex stands. PCG reports **Oct 22**.
+**NextEra–Dominion.** Process only: public witness sessions are set for **Nov 5, 9 and 10**, the **evidentiary hearing starts Nov 17** in Richmond, and a decision is expected in January. WTVR reports SCC Chair Kelsey Bagot declined to recuse despite prior work as a NextEra attorney (date of that report unclear — treat as unverified timing). The AG's clock-reset request is still pending. NEE +3.1%, D +3.1% — in line with the wires, after last week's lag.
 
-**Cecil Fundamental Read:** I named VST first on the list two weeks running at 13.5x, and it is 15.5x now after a 15% week; CEG went from 19.3x to 22.4x. The Google contract is real money — 3,590 MW on 15–20 year terms, Constellation funding $4.3B of uprates against it — and it removes the single risk I had on the name, which was that the PJM suspension left it with no dated catalyst. It also removes the discount. At 22x I am not a buyer of CEG; at 15.5x with the DOE now co-financing its uprates, VST stays the better-contracted expression but no longer the cheap one. The wires did their job: SRE 14.7x, EXC 13.7x, ES 13.3x, DTE 15.2x, with 12–23% to target. I bought DTE in the model book on Tuesday's close, as I said I would if $40.21 went; it was $128.22. EIX at 8.5x and 6.4%: the Oct 8 hearing has no reported outcome and I will not buy a name whose next catalyst I cannot read. NEE at 17.7x with a merger fight in Richmond is a pass until January.
+**California.** EIX +1.1%, PCG -0.3%. **No court ruling or legislative action found this week** on either name (searched Eaton Fire, SCE, PG&E liability; newest liability coverage is late August–September). The Oct 8 continuance-hearing outcome is still not found; the first Eaton bellwether stays **Jan 25, 2027**. Operationally: a Santa Ana red-flag event, with SCE warning ~260,000 customers of possible shutoffs and roughly 35,000–57,000 per county actually de-energized in Los Angeles and Ventura counties Friday (counts differ by outlet), and a **Bryson Fire** near Malibu at 147 acres, 17% contained as of Oct 16. No cause has been reported for the Bryson Fire and this page attributes none. PCG reports **Thu Oct 22**.
+
+**Cecil Fundamental Read:** The pair just handed back the premium I refused to pay. CEG went 22.4x → 20.4x and VST 15.5x → 14.7x; VST has 38% to its mean target, the widest on the page, with the DOE loan and the Meta and uprate contracts unchanged. I said last week I would not buy CEG at 22x. At 20x, with the stock within 1.4% of its Oct 5 close, the day before Google signed, I am buying the contract for free — that is what the market is telling me, and it is wrong. I bought **VST at $152.02** in the model book on Friday's close; CEG I want under $265. On the other side, ED above its target at 17.3x and SO at 18.5x with 5.6% left are now the expensive defensives; I would trim, not add. DTE (held from $128.22) is +1.2% for me. The value in the regulated book has moved to ES (13.6x, 4.8%), EXC (14.3x) and SRE (15.1x, 17% to target).
 
 ---
 ## SMALL/MID-CAP WATCH
 
-> *Sub-$5B names. ALE and PNM remain delisted via M&A. All five re-verified under $5B at the Oct 9 close (Yahoo caps).*
+> *Sub-$5B names. ALE and PNM remain delisted via M&A. All five re-verified under $5B at the Oct 16 close (Yahoo caps).*
 
 | Ticker | Name | Price | 1W Change | Market Cap | Fwd P/E | Yield | Signal |
 |---|---|---|---|---|---|---|---|
-| OTTR | Otter Tail | $87.46 | **-1.59%** | **$3.67B** ✓ | 16.4x | 2.6% | ⚠️ |
-| NWE | NorthWestern Energy | **$74.15** | **+7.04%** | **$4.56B** ✓ | 18.7x | 3.6% | 🔥 |
-| UTL | Unitil Corp | $52.26 | +2.07% | **$0.95B** ✓ | 14.9x | 3.6% | ⚡ |
-| AVA | Avista Corp | $35.49 | +0.51% | **$2.97B** ✓ | 12.7x | **5.5%** | ⚠️ |
-| MGEE | MGE Energy | $70.22 | -0.78% | **$2.65B** ✓ | 16.7x | 2.9% | ⚠️ |
+| OTTR | Otter Tail | $90.13 | +3.05% | **$3.78B** ✓ | 16.9x | 2.5% | ⚡ |
+| NWE | NorthWestern Energy | $74.72 | +0.77% | **$4.60B** ✓ | 18.8x | 3.6% | ⚠️ |
+| UTL | Unitil Corp | $54.07 | **+3.46%** | **$0.99B** ✓ | 15.4x | 3.6% | ⚡ |
+| AVA | Avista Corp | $36.67 | +3.32% | **$3.07B** ✓ | 13.2x | **5.4%** | ⚡ |
+| MGEE | MGE Energy | $72.27 | +2.92% | **$2.73B** ✓ | 17.2x | 2.9% | ⚠️ |
 
-**NWE ($4.56B):** +7.0% to a 52-week high ($73.97 close Wed Oct 7; $76.00 intraday Wed). Catalyst: **Black Hills — its all-stock merger partner (0.98 NWE shares per BKH share) — signed Google on Oct 6** for a Cheyenne data center: $1.8B of owned gas generation 2027–29, a 2.1 GW managed microgrid, service through 2048, Google carrying the cost and $399M of refundable equipment advances. The merger has cleared Nebraska, South Dakota and FERC; **Montana's PSC is the last approval, expected mid-October to mid-November.** Council read: the data-center trade reached the small caps through a merger partner; at $4.56B NWE is $440M from the rail, and a Montana yes plus the BKH share exchange will carry it over — this is likely its last month on the list.
+**NWE ($4.60B):** +0.8%, the laggard of the five after last week's +7.0%; it printed a new intraday high ($76.68, Tue) and closed $1.96 under it. Catalyst: the **Montana PSC decision on the Black Hills merger is still pending** — the newest dated coverage found is Sep 24 (the PSC voted a new commissioner can participate; whether Commissioner Bushman can vote is before a Lewis and Clark County court). No October ruling found. Yahoo moved NWE's Q3 date to **Nov 4** from the Oct 28 this page carried. Council read: priced for a yes; $400M from the rail, and the stock has stopped running ahead of the vote.
 
-**OTTR ($3.67B):** -1.6%, the only decliner of the five, second straight down week; RSI 43, now below its 50D ($90.03). No company news found. Council read: the diversified name that outran the sector on the way down is giving it back on the way up — the buffer, both ways, again.
+**OTTR ($3.78B):** +3.1%, back above its 50D ($89.87). Catalyst: the Minnesota rate case — Otter Tail seeks ~$44.8M (17.7%); interim rates of ~$28.6M have applied since Jan 1, 2026 subject to refund; the **ALJ report is due Nov 9** and the commission's order deadline is Feb 23, 2027 (Minnesota PUC page). Council read: the buffer works in both directions — it lagged the up weeks and caught up in this one.
 
-**UTL ($0.95B):** +2.1%, back above its 200D ($51.37) and 20D; Friday volume 58K against a 158K average, so last week's 396K print did not repeat. No news found. Council read: in line with the wires.
+**UTL ($0.99B):** +3.5%, a 52-week-high zone ($54.07 vs $55.50 52W high close). No company news found. Council read: the smallest name on the list is moving with the wires; nothing more to it.
 
-**AVA ($2.97B):** +0.5%, still within a dollar of its 52-week closing low ($34.79); 12.7x, 5.5% yield. The only item found was NorthWestern's remark that the Colstrip tariff waiver does not recover O&M on the former Avista share (NWE took it at no cost Jan 1) — a NorthWestern problem, not Avista's. Council read: did not participate in a +4% sector week; that is its own signal.
+**AVA ($3.07B):** +3.3%, off the 52-week closing low it was within a dollar of last week. Catalyst: the **Washington electric rate case** (UTC docket 260007) — a ~13.9% / ~$111M request, the Attorney General arguing for a lower return than Avista's 10.2%; new rates proposed from Jan 1, 2027. No dated decision this week. Council read: 13.2x and 5.4% is the cheapest yield on the list, and the rate case is the reason it is cheap.
 
-**MGEE ($2.65B):** -0.8%, RSI 35, below all three moving averages; no news found. Council read: the spring did not release. The two Midwest names (OTTR, MGEE) were the only ones to fall in a week when everything else rose; no common catalyst was found.
+**MGEE ($2.73B):** +2.9%, still below its 50D ($75.16) and 200D; RSI 50. No news found. Council read: the weakest chart of the five rose with the group; one week does not repair it.
 
-> **Note:** No rotations this week. NWE ($4.56B) is now within 9% of the rail and flagged for exit on the Montana decision. Company-specific searches were run for all five; only NWE returned dated news.
+> **Note:** No rotations this week. NWE stays until the Montana vote. Company-specific searches were run for all five; only OTTR and AVA returned rate-case items, neither dated this week.
 
 ---
 
@@ -96,22 +98,22 @@ Week path: Mon $39.97, Tue **$41.16** (+3.0%, the Google–Constellation day), W
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $46.75 (adjusted bar) | Resistance — $5.34 above |
-| 200-Day MA | $43.77 | Eleven straight weekly closes below (since Jul 31) |
-| 50-Day MA | **$42.01** | First moving average overhead; falling |
-| Sep 11 weekly close | $42.08 | The level the slide accelerated from |
-| Late-August shelf | $42.42–$42.77 | Resistance band above the 50D |
-| Current Price | $41.41 | Fri 10/9 close; +3.97% W/W; highest close since Sep 14 |
-| 20-Day MA | $40.41 | **Reclaimed Tuesday**; coincides with the gap low |
-| Friday Low | $40.97 | Upper edge of Tuesday's gap |
-| Tuesday Gap | $40.21–$40.41 | Unfilled; prior week's high to Tuesday's low |
-| Breakdown Shelf | $40.45–$40.66 | Taken Tuesday — now support |
-| **52W Low** | **$39.03** | Sep 29 intraday; the line that voids everything |
-| RSI(14) | 54.7 | From 35.4 |
+| 52W High | $46.75 (adjusted bar) | Resistance — $4.54 above |
+| 200-Day MA | $43.77 | Twelve straight weekly closes below (since Jul 31) |
+| Sep 8 close | $43.13 | Last close above $43 |
+| Late-August shelf | $42.42–$42.77 | **Next resistance** |
+| Current Price | $42.21 | Fri 10/16 close; +1.93% W/W |
+| Sep 11 weekly close | $42.08 | Taken Friday |
+| 50-Day MA | **$41.83** | **Reclaimed Friday — first close above since Jul 29**; still falling, now support |
+| Week Low | $41.09 | Tue Oct 13; new stop line |
+| 20-Day MA | $40.58 | Rising |
+| Gap low / old stop | $40.41 | Never tested this week |
+| 52W Low | $39.25 (rolling 1Y close basis; Sep 29 intraday $39.03) | The line that voids everything |
+| RSI(14) | 62.0 | From 54.7 |
 
-**Marky Setup Assessment:** The rule was a close over $40.21 and I got it with room to spare — $41.16 Tuesday, which also cleared the $40.66 shelf and the 20-day in one bar, on the week's heaviest volume. The three sessions after were a hold, not a run: a 73-cent range, volume halving into the long weekend. I take that as the move digesting, because Wednesday was the real test — the 10-year printed 5.36% intraday, a 24-year high, and the fund closed down one cent. A sector that cannot be knocked off a gap by that print is not trading rates this week. What matters now is $42.01, the falling 50-day, which the fund has not closed above since late July. The trade: long from Tuesday's close, stop under **$40.41** (the gap low and the 20D — if the gap fills, the catalyst is being faded), first target **$42.01–$42.08**, second the $42.42–$42.77 shelf. Leadership: CEG and VST both put their highs in on Wednesday and closed 3–4% under them; the wires closed at or near their weekly highs Friday. The pair ran; the wires are still running. I want the pair to hold its Thursday lows ($280 CEG, $155 VST) while the wires take the 50-day.
+**Marky Setup Assessment:** First target paid. I was long from Tuesday Oct 6's close at $41.16 with $42.01–$42.08 as target one; Friday closed $42.21. What I like is how: four sessions coiled under a falling 50-day, closes $41.65–$41.87, and then the break came on a day the S&P fell 1.1% and the VIX rose 21%. A defensive breakout on a risk-off day is the pattern you want; one on a risk-on day is just beta. The 50-day is still falling (it was $42.01 last week, $41.83 now), so the reclaim is partly the average coming down to meet the price — I need a second close above it to call it real. Trade: hold, stop to a close under **$41.09**, target two **$42.42–$42.77**, and if that goes the 200-day at $43.77 is the real test. The leadership flip is the thing to respect: the pair broke the conditions I set last week — CEG closed $279.54 Wednesday under my $280 line and VST $151.79 under $155 — so the pair is no longer a leader, it is a separate trade. Thursday's $267.61 low filled CEG's Google gap to the cent (Oct 5 close $267.62); below it the whole contract rally is gone.
 
-**The correlation story:** Second week in a row the fund rose with the 10-year flat-to-up on an intraday basis. Over two weeks: 10Y 5.19% → 5.24% (Sep 25 → Oct 9), XLU $39.51 → $41.41 (+4.8%). The seven-week lockstep is broken. The honest caveat: the break coincided with the biggest contract news of the year, and a contract-driven decoupling says nothing about what the sector does on the next 10bp of yield without a contract.
+**The correlation story:** This week the 10-year and the sector moved the classic way for the first time in a month: 10Y -14bp, XLU +1.9%. Three weeks: 10Y 5.19% → 5.10% (Sep 25 → Oct 16), XLU $39.51 → $42.21 (+6.8%). The bond-proxy half of the fund is back to trading yields; the growth half is trading AI. Both happened to point the same way for two weeks and opposite ways this one.
 
 ---
 
@@ -119,125 +121,126 @@ Week path: Mon $39.97, Tue **$41.16** (+3.0%, the Google–Constellation day), W
 
 | Factor | Level | Implication for XLU |
 |---|---|---|
-| 10Y Treasury | **5.24% Fri close** (-4bp W/W); **5.36% intraday Wed** (highest since Apr 2002) | Carry gap: **3.07% vs 5.24% = -217bp**, from -245bp. The sector rose 4% through a new 24-year high in yields |
-| 30Y / Long End | **5.60%** (-3bp) | Flat; the long end did not confirm Wednesday's spike |
-| 3-Month Bill | 4.06% | Up 7bp; the front end is pricing the December hike |
-| Fed Posture | 3.75–4.00%; FOMC minutes (Oct 7): another hike is coming, timing unspecified; October ~17–20%, December the base case. FOMC Oct 27–28 | Unchanged from last week; the minutes added nothing the sector did not already carry |
-| **Data Center Demand** | **Oct 6: Google–Constellation 20-yr PPA, 890 MW new uprate capacity at 11 reactors + 15-yr 2,700 MW supply (3,590 MW), >$4.3B CEG-funded, first unit 2028. Oct 5: DOE conditional loan up to $4.2B to Vistra (Beaver Valley, Davis-Besse, Perry; +433 MW; Comanche Peak option). Oct 6: Black Hills–Google Cheyenne, $1.8B owned gas + 2.1 GW microgrid. Sep 30 (missed last week): Amazon–Constellation Calvert Cliffs, 190 MW, 20 yrs** | **Trigger met — issue opened.** The scarcity trade re-financed itself bilaterally; CEG +15.8%, VST +15.3%, NWE +7.0% |
-| **PJM / FERC** | Backstop still suspended to Feb 28, 2027, no new auction date; **PJM says it will file a revised backstop proposal by Oct 29** rather than wait out the paper hearing; DOE pressed PJM on ratepayer protections from large-load costs; a bloc of governors demanded PJM accountability on bills (Oct 10). Target ~6.8 GW | The regulatory route is still shut; the Oct 29 filing is the next dated item. Political heat on PJM is rising, which cuts against generator-friendly cost allocation |
-| Natural Gas | **$3.22 (+6.1% W/W, Fri settled bar)** | Higher spreads for merchant generators; the second week in three gas has moved 5%+ |
-| Labor / Growth | Payrolls +29K (last week); UMich prelim Oct 46.3, current conditions at an all-time low (#156); SPY +1.2% to a record | A defensive bid is available; this week the sector got a growth bid instead |
-| WTI Crude | $91.85 (+0.8%, settled CLX26) | Neutral |
-| DXY | 102.21 (+0.3% W/W; #115 restriction stays on) | No direct read |
-| **Wildfire Liability** | EIX: Oct 8 continuance hearing — **outcome not found**; bellwether Jan 25, 2027; parent still in the case (Sep 22). PCG: 10-yr $11.4B undergrounding plan filed Oct 1; "liability structure is not durable" (Oct 5); PSPS warnings Oct 9–12 | No new event; both names rose with the tape. PCG Q3 Oct 22 is the next read |
-| M&A | **NEE–D: Virginia Lt. Gov. opposes (Oct 7); AG asks SCC to reset clock; SCC admits NextEra Florida-probe documents and adds hearings; Jan 11 Virginia deadline.** NWE–BKH: Montana PSC last approval, mid-Oct to mid-Nov | 17.0% of the fund is the two parties to a deal whose Virginia politics turned against it this week |
+| 10Y Treasury | **5.10% Fri close** (-14bp W/W); 5.09% Thu after a 10.5bp one-day fall | Carry gap: **3.07% vs 5.10% = -203bp**, from -217bp; narrowing two weeks running |
+| 30Y / Long End | **5.44%** (-16bp) | The long end led the rally — flight to quality, not a policy repricing |
+| 5Y / 3-Month Bill | 4.90% / 4.07% | Front end flat; the market still carries a hike risk |
+| CPI (Sep, released Oct 14) | Headline +0.6% m/m, **3.7% y/y** (exp. 3.6%; Aug 3.4%); core +0.3% / 2.6% (exp. 0.2% / 2.5%); gasoline +9.1% | Hot. Yields rose on the day and hike odds for Oct 28 rose; the sector closed -0.4% Wednesday |
+| PPI (Sep, released Oct 15) | Hot — figures conflict between sources (not reported here) | Yields fell 10.5bp anyway on the tech-to-bonds rotation |
+| Fed Posture | 3.75–4.00% after the September hike; FOMC **Oct 27–28**. Bloomberg headline Oct 16: rate-hold expectations rose after Warsh remarks (content not read) | Odds not re-sourced first-hand this week; the hot CPI raised them, Friday's remarks may have lowered them |
+| Equity risk | SPY $763.25 (**-2.0%**, worst week since June per Bloomberg); VIX **19.99** (+5.2 pts); Nasdaq -2% Friday on AI-return worries | The sector's best relative week of the quarter: XLU +1.9% vs SPY -2.0% |
+| **Data Center Demand** | **Oct 16: NiSource–Microsoft 20-yr, ~1,100 MW new generation + 600 MW storage tolling, service 2028, Microsoft funds generation and transmission via GenCo; NIPSCO customer savings to $1.75B.** Oct 13: Enerflex >1 GW behind-the-meter gas for an unnamed data center (equipment, not a utility deal). Oct 21: Michigan PSC public hearing on DTE–Google related matters (DTE's supply agreement was approved Oct 1) | **Trigger met — issue opened** (data-center PPA). The template held: the hyperscaler pays. The pair fell anyway — the market separated "contracts exist" from "AI capex is safe" |
+| **PJM / FERC** | Backstop suspended to Feb 28, 2027; PJM said it would file a revised proposal by **Oct 29** (last week's sourcing); no new filing found this week | Next dated item is still Oct 29 |
+| Natural Gas | **$3.12 Fri evening (NG=F)**, -3% vs last Friday's settled $3.22 — not a settled change | Neutral |
+| WTI Crude | **$99.04 Fri evening (CL=F)** vs $91.85 settled CLX26 last week — provisional, see energy.md | Fed into the CPI gasoline line; an inflation risk for the rate file, not a direct utility input |
+| DXY | 101.78 (-0.4%) Fri evening | No direct read |
+| **Wildfire Liability** | EIX: no ruling found; Oct 8 continuance outcome still unknown; bellwether Jan 25, 2027. PCG: no legislative or court item found. **SCE red-flag PSPS Oct 16 (≈260K warned); Bryson Fire, Malibu, 147 acres / 17% contained, cause not reported** | No liability event. An active ignition season in SCE territory is the standing exposure; this page will check the Bryson Fire's cause next week |
+| M&A | NEE–D: public witness sessions Nov 5/9/10, evidentiary hearing Nov 17, decision expected January; AG clock request pending. NWE–BKH: Montana PSC pending | Quiet week; the dates are in November |
 
-**Ophelia Verdict:** I move from neutral to **constructive**, and this time the framework and the tape agree, which they did not last week. My standing condition for the regulated book was a 10-year under 4.90% — it is 5.24% and I am setting that condition aside, not because the rate moved but because the week proved the sector can rise 4% through a 5.36% print when it has its own catalyst. Two of them, actually: contracts that pay generators without the auction, and a Fed that has stopped adding hikes to the curve. What I retract: last week I said the relief started in the wires and not in CEG, and named FERC's suspension as the reason the pair had lost its catalyst. The pair found a bigger one in six days. I was right about the mechanism (the auction route is shut) and wrong about what it implied (that the trade was over). Stance: constructive on regulated names above $40.41; the nuclear pair is now a 10% weight that has repriced its own news and I would not add here — Cecil has the valuation and I agree with it; NEE/D is the fund's new problem, 17% of it in a merger that Virginia's second-ranking official just came out against. California unchanged: litigation, not utilities.
+**Ophelia Verdict:** **Constructive, unchanged**, with the composition reversed. Last week I said the bond half rose on the growth half's coattails; this week the bond half carried the fund while the growth half fell 6–9%. I am more comfortable with this version. A sector rising on falling long yields and rotation out of tech is the sector doing its job; a sector rising on one contract is a trade. What I do not like: the yield relief came from fear, not from inflation — CPI ran 3.7% and the Fed meets in eleven days. If the tech rout ends, the bid for bonds can end with it, and the carry gap is still -203bp. Stance: constructive on the regulated book above $41.83; I keep the 4.90% condition set aside but I am watching it again, because 5.10% is now only 20bp from it. On the pair: the contracts did not change and the price did; that is Cecil's argument and I let him make it. California: a Malibu fire and a red-flag weekend in SCE's territory is exactly the setup that turns "litigation, not utilities" back into "utilities" — nothing has happened yet.
 
 ---
 ## THE WEEKLY NARRATIVE — What's Actually Moving XLU
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### Week of October 5 – 9, 2026: Google Buys the Catalyst FERC Took Away
+### Week of October 12 – 16, 2026: The Bond Half Takes Over
 
-XLU closed **$41.41, +4.0%**, its largest weekly gain in at least four months, in a week when the 10-year Treasury touched 5.36% — a new 24-year high — and finished 4bp lower at 5.24%.
+XLU closed **$42.21, +1.9%**, its third straight weekly gain and its first close above the 50-day moving average since July 29. The S&P 500 fell 2.0% in the same week. The fund's growth half and its bond half went opposite ways, and the bond half won.
 
-**Tuesday was the week.** On October 6 Google and Constellation Energy announced a 20-year power purchase agreement for 890 MW of new nuclear capacity, to come from uprates at eleven existing reactors in Illinois, Pennsylvania and New Jersey, with the first unit online in 2028, plus a 15-year agreement for 2,700 MW of existing output. Constellation will fund more than $4.3B of upgrades against the contract. The structure matters as much as the size: Google's load can be curtailed under grid stress, and the deal is framed around data-center operators paying their own way. Constellation rose 12% that day and 15.8% on the week.
+**The bond half.** September CPI, released Wednesday, ran hot — 3.7% a year, 0.6% in the month, with gasoline up 9.1% — and yields rose on the print. By Thursday they were falling hard: the 10-year dropped 10.5 basis points in a day to 5.09%, even after a hot producer-price report, because investors were selling technology shares after a two-day rout and buying Treasuries. The 10-year finished the week at 5.10%, down 14 basis points and at its lowest close since September 22. Regulated utilities rose with bonds: Southern and ConEd gained 5.8%, WEC 4.8%, Exelon and Duke more than 4%. Fifteen of the eighteen large caps tracked here rose. ConEd closed above its average analyst target.
 
-**Three deals in two days.** The day before, the Department of Energy offered Vistra a conditional loan of up to $4.2B to uprate and extend its Beaver Valley, Davis-Besse and Perry plants — the capacity behind its Meta contract. Vistra gained 15.3% and entered the fund's top ten. Black Hills signed Google for a Cheyenne data center — $1.8B of company-owned gas generation and a 2.1 GW managed microgrid — and its merger partner NorthWestern Energy rose 7% to a 52-week high. Two weeks ago FERC suspended PJM's reliability backstop, the auction meant to pay for new generation, until February 2027. This week the generators were paid by contract instead.
+**The growth half.** Constellation fell 9.0% and Vistra 5.9%, most of it on Wednesday, giving back about half of the prior week's Google-contract rally. No company news explained the drop. It came in the same sessions as the tech selloff, and the pair trades as an AI-power position; when AI names were sold, so were they.
 
-**The wires followed.** All eighteen large caps rose; the regulated names gained 2–4%, led by PPL, Sempra and Xcel. The laggards were NextEra and Dominion, whose merger drew formal opposition from Virginia's Lieutenant Governor and a request from the Attorney General to restart the review clock.
+**The contracts kept coming.** On Friday NiSource signed a 20-year agreement with Microsoft for about 1,100 megawatts of new generation in northwest Indiana, service from 2028, with Microsoft paying for the generation and transmission and 600 megawatts of battery storage attached. It is the fourth utility deal in two weeks built so the data-center customer funds the build. NiSource rose 3.5%.
 
-**The macro.** The FOMC minutes said another hike is coming without saying when. The fund's 3.07% yield is 217 basis points below the 10-year, from 245. Natural gas rose 6% to $3.22.
+**Politics and courts.** NextEra–Dominion moved only on calendar: Virginia's evidentiary hearing begins November 17, with a decision expected in January. In California, no court or legislative action was found for Edison International or PG&E. Southern California Edison cut power to tens of thousands of customers in a Santa Ana wind event on Friday, and the Bryson Fire burned near Malibu; no cause has been reported.
 
-**California.** No new ruling. An October 8 hearing on moving the Eaton Fire trial date has no reported outcome; the first bellwether remains set for January 25, 2027. PG&E filed an $11.4B, ten-year undergrounding plan and reports October 22.
-
-**The Bottom Line:** The sector's growth half found a way to get paid that does not run through FERC, and the market repriced it in a day. The bond-proxy half rose with it. The next test is the 50-day at $42.01, which the fund has not closed above since July, and the next dated event is PJM's revised backstop filing by October 29.
+**The Bottom Line:** The sector got the rate relief it had waited for, but on fear rather than on inflation. That bid lasts as long as the tech selloff. The FOMC meets October 27–28, NextEra reports October 21, PG&E October 22, and PJM's revised backstop filing is due by October 29.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Company dates are Yahoo Finance calendar dates pulled Oct 11 unless noted; EPS is the Yahoo consensus mean. **NextEra's Yahoo date moved to Oct 21 from the Oct 27 this page carried** — not company-confirmed.
+Company dates are Yahoo Finance calendar dates pulled Oct 16 unless noted; EPS is the Yahoo consensus mean. **Date changes vs last week's page: NWE moved to Nov 4 (was Oct 28); DTE moved to Nov 5 (was Oct 29)** — Yahoo, not company-confirmed.
 
 | Catalyst | Date | What to Watch |
 |---|---|---|
-| **Google–Constellation PPA** | **Oct 6 — ANNOUNCED ✔** | 890 MW new + 2,700 MW existing; first uprate 2028 |
-| **DOE–Vistra conditional loan** | **Oct 5 — ANNOUNCED ✔** | Up to $4.2B; conditions precede definitive documents |
-| **September CPI** | Wed Oct 14 (08:30 ET) | The next input for the long end; bond market closed Mon Oct 12 |
-| **NextEra Q3** | Tue Oct 21 (Yahoo; was Oct 27) | EPS est. $1.18; Dominion deal path after the Virginia week; FPL large-load pipeline; 12.7% of the fund |
-| **PG&E Q3** | **Thu Oct 22 (company-confirmed)** | EPS est. $0.42; liability-reform push, the undergrounding plan, the $2B 2027 deferral |
-| **FOMC** | Oct 27–28 | ~17–20% priced for a hike |
-| **AEP Q3** | Wed Oct 28 | EPS est. $1.91; data-center load in Ohio/Texas |
-| **NWE Q3** | Wed Oct 28 | EPS est. $0.74; Montana PSC timing on the BKH merger |
-| **PJM revised backstop filing** | **By Oct 29** | PJM's stated plan instead of waiting out the paper hearing |
-| **XEL / EIX / WEC / DTE Q3** | Thu Oct 29 | $1.31 / $1.83 / $0.93 / $2.40. EIX: Eaton reserve, trial calendar |
-| **Dominion / Exelon Q3** | Fri Oct 30 | $1.21 / $0.81 |
-| **Entergy / OTTR / UTL Q3** | Mon Nov 2 | ETR $1.63 |
-| **SRE / PPL / ES / AVA / MGEE Q3** | Wed Nov 4 | $1.11 / $0.53 / $1.03 / $0.33 / $1.16 |
-| **SO / DUK / ED Q3** | Thu Nov 5 | $1.65 / $1.83 / $1.99 |
-| **Vistra Q3** | Fri Nov 6 | EPS est. $3.11; DOE loan conditions; Meta deliveries |
-| **Constellation Q3** | Mon Nov 9 | EPS est. $3.75; Google contract economics; Crane restart |
-| **Montana PSC on NWE–BKH** | Mid-Oct to mid-Nov | Last approval; NWE leaves the small-cap list on a yes |
-| **Virginia SCC on NEE–D** | Deadline Jan 11, 2027 (extension requested by the AG) | Three added public hearings |
-| **Eaton Fire bellwether** | Jan 25, 2027 | Oct 8 continuance hearing outcome unknown |
-| **PJM backstop effective date** | Feb 28, 2027 | Subject to the Oct 29 filing and further proceedings |
+| **NiSource–Microsoft** | **Oct 16 — ANNOUNCED ✔** | 1,100 MW / 20 yrs / 2028; detail promised on NI's Q3 call |
+| **NextEra Q3** | Wed Oct 21 (Yahoo) | EPS est. $1.17; the Dominion path into the Nov 17 hearing; 12.7% of the fund |
+| Michigan PSC hearing (DTE–Google related matters) | Oct 21 | Supply agreement already approved Oct 1 |
+| **PG&E Q3** | **Thu Oct 22 (company-confirmed)** | EPS est. $0.42; liability-reform push, the $2B 2027 deferral, undergrounding plan |
+| **FOMC** | Oct 27–28 | Hot CPI vs a flight-to-quality bond rally; odds not re-sourced |
+| **AEP Q3** | Wed Oct 28 | EPS est. $2.01; Ohio/Texas large-load pipeline |
+| **PJM revised backstop filing** | By Oct 29 | PJM's stated plan; no filing yet |
+| **XEL / EIX / WEC Q3** | Thu Oct 29 | $1.37 / $1.80 / $0.96. EIX: Eaton reserve, trial calendar, Bryson Fire if relevant |
+| **Dominion / Exelon Q3** | Fri Oct 30 | $1.19 / $0.81 |
+| **Entergy / OTTR / UTL Q3** | Mon Nov 2 | ETR $1.66; OTTR $1.55 |
+| **SRE / PPL / ES / AVA / MGEE / NWE Q3** | Wed Nov 4 | $1.20 / $0.53 / $0.99 / $0.40 / $1.16 / $0.74 |
+| **SO / DUK / ED / DTE Q3** | Thu Nov 5 | $1.69 / $1.88 / $1.99 / $2.22 |
+| NEE–D Virginia public witness sessions | Nov 5, 9, 10 | Then evidentiary hearing Nov 17 |
+| **Vistra Q3** | Fri Nov 6 | EPS est. $3.04; DOE loan conditions; Meta deliveries |
+| **Constellation Q3** | Mon Nov 9 | EPS est. $3.73; Google contract economics |
+| OTTR Minnesota rate case — ALJ report | Nov 9 | Order deadline Feb 23, 2027 |
+| **Montana PSC on NWE–BKH** | Pending (no date found) | Last approval |
+| **Virginia SCC on NEE–D** | January 2027 (Jan 11 statutory, AG seeks reset) | — |
+| **Eaton Fire bellwether** | Jan 25, 2027 | Oct 8 continuance outcome unknown |
+| **PJM backstop effective date** | Feb 28, 2027 | Subject to the Oct 29 filing |
 
-**Marky's Binary Event Read:** The level is $42.01, the 50-day, and the fund is 60 cents under it. CPI on the 14th is the only thing that can move the 10-year before earnings; a hot print tests the $40.41 gap low and tells me whether the decoupling was real. NextEra on the 21st (if Yahoo is right) is an eighth of the fund reporting in the middle of a merger fight. The pair reports last, in November, after the Oct 29 PJM filing — so the next CEG/VST move is regulatory, not earnings.
+**Marky's Binary Event Read:** The fund is through the 50-day with eleven days to the Fed. NextEra on the 21st is the first big print and an eighth of the fund. PG&E on the 22nd reports into a red-flag weekend in its neighbour's territory. The pair reports last, after the PJM filing; between now and then CEG and VST trade on the Nasdaq, not on their own news.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **The gap holds and the 50-day goes** → $42.01 then $42.42–$42.77; the regulated book at 13–18x forward with 12–23% to target re-rates on a sector that has proven it can rise through a yield spike
-- **More bilateral deals follow Google's template** — hyperscaler-paid, curtailable, outside the auction → the growth premium rebuilds without waiting for FERC
-- **PJM's Oct 29 filing fixes cost allocation** → the backstop gets a date; CEG/VST get a second catalyst on top of the first
-- **A soft CPI (Oct 14)** → the 10-year closes a week under 5.20% → the carry gap narrows for the first time since August
-- **Q3 calls (NEE, AEP, XEL) confirm large-load pipelines** → rate-base growth outruns the discount rate
+- **A second close above the 50-day** → $42.42–$42.77, then the 200-day at $43.77 — the first test of the long-term trend since July
+- **The 10-year breaks 5.00%** on continued rotation out of tech → the carry gap closes toward -190bp and the regulated book re-rates
+- **More hyperscaler-funded deals** on the NiSource/Google template → regulated utilities get growth without the political cost
+- **The pair stabilises** above CEG $267.61 / VST $145.85 → the 10% growth sleeve stops being a drag
+- **NEE Q3 (Oct 21)** shows the large-load pipeline outrunning the merger noise
 
 ### 🔴 Bear Case
-- **$40.41 fails** → Tuesday's gap fills and the contract pop is faded; $39.03 is back in play
-- **CPI hot → 10-year through 5.36%** and the 30-year through 5.73% → the two-week decoupling turns out to have been one news day
-- **The pair gives back the week** — both CEG and VST closed 3–4% under their Wednesday highs with a -5%/-6% Thursday in between; 10% of the fund is now a momentum position
-- **Virginia** — the SCC extends or the politics harden → NEE/D trade on deal risk into January; 17% of the fund
-- **PJM's Oct 29 filing shifts costs to generators** → the political pressure (governors, DOE) lands on the scarcity premium
-- **California** — the Oct 8 continuance was denied and January is live → EIX through $50; or granted and the overhang lengthens
+- **The tech rout ends and bonds give it back** → the 10Y returns to 5.25%+ with a hot CPI already in hand; Friday's break fails back under $41.83
+- **The FOMC hikes Oct 28** → the front end reprices and the sector's three-week rally is a bounce in a downtrend
+- **The pair keeps falling with AI** → CEG breaks $267.61, the low that already filled its Google gap to the cent; 10% of the fund trades as a Nasdaq derivative
+- **California** — the Bryson Fire or another Santa Ana-season ignition is tied to utility equipment → EIX through $51.53 (week low)
+- **Virginia** — the SCC accepts the AG's clock reset → NEE/D carry deal risk past January
 
 ### ⚠️ The Wild Card
-**Who pays, and who decides?** Every deal this week was built so the hyperscaler pays — Google carries Black Hills' costs, Google's load is curtailable in the Constellation contract, the DOE lends to Vistra rather than ratepayers funding it. That is the industry pre-empting a political problem: a bloc of governors demanded accountability from PJM on bills the same week, the DOE pressed PJM on ratepayer protection, and Virginia's merger hearings were about rates. If "data centers pay their own way" becomes the regulatory template, the contracted generators win twice — paid by contract, shielded from the backlash. If regulators decide the bilateral deals are themselves the problem (grid capacity reserved for one customer), the template breaks. Nothing this week tested it; the Oct 29 PJM filing and the Virginia hearings are where it gets tested.
+**Is the bond bid fear or inflation?** The 10-year fell 14bp in a week with a 3.7% CPI and a hot PPI. That only happens when money is running from something — here, AI-heavy tech. The utility sector is now long both sides of that run: its regulated half benefits when money leaves AI for bonds, and its nuclear half is an AI position. If the AI selloff deepens, the fund's bond half gains and its growth half loses; if it reverses, the reverse. The fund's net exposure to "AI capex" is close to zero for the first time this year, and that is either a hedge or an accident.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Constructive, up from neutral, and I retract last week's leadership call — I said the relief started in the wires, not CEG, and that FERC had taken the pair's catalyst. Google gave it a bigger one six days later: 3,590 MW on 15–20 years, Constellation funding $4.3B against it, the DOE co-financing Vistra. The auction route is still shut; the contract route is wide open, and it is built so the hyperscaler pays — which is also the industry's answer to the governors. I set aside my 4.90% rule for the regulated book: the sector rose 4% through a 5.36% print. What worries me now is 17% of the fund in a merger Virginia's Lieutenant Governor just opposed."*
+**Ophelia:** *"Constructive, unchanged, and more comfortable with it. The rate relief came — 10Y -14bp to 5.10% — but it came from a tech selloff, not from inflation, which was 3.7% on Wednesday. I respect the move and distrust the reason. The regulated book carried the fund on a week SPY fell 2%; the pair fell 6–9% with AI. NiSource–Microsoft is the fourth hyperscaler-pays deal in two weeks and it keeps the political template intact. I am watching the 4.90% line again — it is 20bp away — and the Fed in eleven days. California is quiet in court and loud on the ground: a red-flag weekend and a fire near Malibu."*
 
-**Marky:** *"Long from Tuesday's close, as I said I would be over $40.21. One day did the work — through $40.21, $40.66 and the 20-day on 52M shares — and three days held it, including the day the 10-year hit 5.36%. Stop under $40.41; if the gap fills, the news is being faded and I am out. Target $42.01, the 50-day, which the fund has not closed above since July. The pair ran and wobbled — both put their highs in Wednesday, both dropped 5–6% Thursday. I want CEG over $280 and VST over $155 while the wires take the 50-day. The wires closed Friday at their highs; the pair did not."*
+**Marky:** *"Target one paid — $42.21 against $42.01–$42.08 — on a risk-off day, which is the right way to break a 50-day. I need a second close above $41.83 to trust it because the average is falling to meet the price. Stop up to $41.09. Target two $42.42–$42.77, then $43.77. The pair broke my lines Wednesday — CEG under $280, VST under $155 — so I do not treat it as the leader anymore. CEG's Thursday low of $267.61 filled the Google gap to the cent; it holds there or the contract rally is gone."*
 
-**Cecil:** *"I bought DTE at $128.22 Tuesday, as promised, and I am not buying the pair. VST went from 13.5x to 15.5x and CEG from 19x to 22x in a week; the contracts are real — Google is funding uprates, not promises — but the discount I was being paid to wait is gone. The wires are still prices: SRE 14.7x, EXC 13.7x, ES 13.3x, with 12–23% to target and a 10-year that has stopped going up. EIX at 8.5x has a hearing on Oct 8 whose result I cannot find; I do not buy what I cannot read. NEE at 17.7x I pass until Virginia rules. List: DTE (held), then SRE, then EXC. The pair I own through the fund and that is enough."*
+**Cecil:** *"I bought VST at $152.02 Friday. It is 14.7x with 38% to target, the DOE loan and the Meta and uprate contracts unchanged, and it closed $7 above its Oct 5 close — before Google's deal re-rated the group. The market sold the pair because it sold AI; the contracts did not get worse. CEG I want under $265. On the other side, ConEd is above its target and Southern has 5.6% left — those are the trims. DTE held from $128.22. List: VST (bought), DTE (held), then ES, EXC, SRE."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sun Oct 11, 2026): XLU, 18 large caps and 5 small caps, daily bars through the Fri Oct 9 close (auto-adjusted; last bar verified as Oct 9); weekly changes vs settled Fri Oct 2 daily-bar closes; 20D/50D/200D MAs, Wilder RSI(14); yields, forward P/E, mean targets, market caps; XLU top-10 weights via funds_data; earnings-calendar dates and consensus EPS; NG=F (Fri settled bar), ^TNX, ^TYX, ^IRX, DX-Y.NYB. CSVs in the workspace folder grid-c-2026-10-09 (summary.csv, fund_util.csv, per-symbol bars)
-- Constellation Energy newsroom, Bloomberg, SiliconANGLE, Construction Dive, 24/7 Wall St. (Oct 6, 2026): Google–Constellation 890 MW / 2,700 MW agreements, $4.3B uprates, 11 units, first online 2028; CEG +12%, VST +10%, TLN +12% that day. Constellation IR (Sep 30): Amazon–Calvert Cliffs 190 MW
-- Utility Dive, World Nuclear News, American Public Power Association (Oct 5, 2026): DOE conditional loan commitment up to $4.2B to Vistra (Beaver Valley, Davis-Besse, Perry; +433 MW; Comanche Peak option); conditions precedent
-- Black Hills 8-K and press release, The Star, Power Engineering (Oct 6–7, 2026): Google Cheyenne agreements effective Sep 30 through 2048, $1.8B owned generation, 2.1 GW microgrid, $399M advances. GuruFocus / Investing.com (Oct 7): NWE +7% to a 52-week high; NWE–BKH approvals (NE, SD, FERC cleared; Montana pending)
-- Virginia Mercury (Oct 5, Oct 7), WTOP, WJLA, WTVR (Oct 8–9, 2026): Lt. Gov. opposition, AG clock-reset request, SCC document and hearing rulings, Fairfax hearing, "Robo Memo" dispute; Jan 11 Virginia deadline; 2H 2027 target close
-- Utility Dive, JEPIC, Jersey Vindicator, ZeroHedge (Oct 6–10, 2026): backstop on hold with no date; PJM revised filing by Oct 29; DOE letter on large-load ratepayer protection; governors' statement (Oct 10)
-- Courthouse News, Bloomberg Law, Danko Meredith, Bridgford Law (Sep 22 ruling; calendar): Oct 8 continuance hearing listed, outcome not found; bellwether Jan 25, 2027. PG&E IR (Oct 1), KCLU (Oct 8), Investing.com (Oct 5), Claims Journal (Oct 9): undergrounding plan, S&P webinar remarks, PSPS warnings
-- GuruFocus (Oct 9): XLU +3.92% on the week per its count (this page's bar-to-bar figure is +3.97%). Fed minutes coverage (Oct 7): another hike coming, timing unspecified
-- Macro (full sourcing in wiki/tech.md and wiki/consumer-discretionary.md, Oct 11): 10Y 5.36% intraday / 5.24% close, UMich 46.3 (#156), SPY record
-- Not sourced this week: the Oct 8 Eaton continuance outcome; XLU fund flows; the exact CEG weight after the Vistra entry (weights are the Oct 11 Yahoo snapshot); company news for OTTR, UTL, AVA, MGEE (searched, none dated this week)
-- **Cross-references: #106 (10Y >5.00%), #108 (XLU 52W low), #114, #115, #126 (EIX ruling / FERC suspension), #156. New issue opened this run for the data-center PPA trigger (Google–Constellation, DOE–Vistra, Black Hills–Google). Other triggers not met: XLU +3.97% (±5%), no utility earnings miss, no wildfire-liability event, no new 10Y break (5.24% sits inside the existing >5% files).**
+- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 16, 2026, ~18:20 ET): XLU, 18 large caps, NI and 5 small caps, daily bars through the Fri Oct 16 close (auto-adjusted; last bar verified as Oct 16, no repair needed); weekly changes vs settled Fri Oct 9 daily-bar closes; 20D/50D/200D MAs, Wilder RSI(14); yields, forward P/E, mean targets, market caps; XLU top-10 via funds_data (identical to the Oct 11 snapshot — carried); earnings-calendar dates and consensus EPS; ^TNX, ^TYX, ^FVX, ^IRX, DX-Y.NYB, ^VIX, SPY, NG=F and CL=F (Fri evening). CSVs in the workspace folder grid-c-2026-10-16 (summary.csv, fund_util.csv, per-symbol bars)
+- CNBC, Kiplinger, BLS (Oct 13–14, 2026): September CPI 3.7% y/y, +0.6% m/m, core 2.6% / +0.3%, gasoline +9.1%; yields higher and hike odds up on the print
+- CNBC, GuruFocus, investingLive, TheStreet (Oct 15, 2026): 10Y -10.5bp to 5.085%, 30Y to 5.426% on tech-to-bonds rotation despite hot PPI (PPI figures conflict between sources — not used)
+- Bloomberg, TheStreet, CNN Markets (Oct 16, 2026): S&P 500 -1.1% Friday, biggest weekly loss since June; Nasdaq ~-2% on AI-return worries; VIX 19.99; headline on rate-hold expectations after Warsh remarks (paywalled, content not read)
+- GuruFocus, StreetInsider, Benzinga, Investing.com, Stocktwits (Oct 16, 2026): NiSource–Microsoft 20-year agreement, ~1,100 MW, service 2028, Microsoft-funded via GenCo, 600 MW storage tolling (AGP Group affiliate), savings to $1.75B
+- MarketBeat (Oct 14), Motley Fool (Oct 15), Daily Political (Oct 16), 24/7 Wall St. (Oct 13): VST -6.5–6.7% and CEG -5.5% on Oct 14; no named downgrade found; VST preferred redemption
+- WAVY, WJLA, Virginia Scope, WTVR, SCC releases: NEE–D public witness sessions Nov 5/9/10, evidentiary hearing Nov 17, January decision expected, AG clock-reset request, Chair recusal report (timing unverified)
+- Daily Montanan / KPAX / Missoula Current (through Sep 24): NWE–BKH Montana PSC pending; no October ruling found
+- Minnesota PUC (OTTR rate case: ALJ report Nov 9, order Feb 23, 2027); Washington UTC docket 260007 and ElectricChoice tracker (AVA request ~13.9%)
+- CBS LA, Fox LA, KTLA, Newsweek/Cal Fire (Oct 16, 2026): SCE PSPS in LA and Ventura counties, ~260K warned; Bryson Fire 147 acres, 17% contained. Daily Journal (Sep 23) and SCE 10-Q: Eaton parent ruling, bellwether calendar
+- Simply Wall St / Kalkine (Oct 13): Enerflex >1 GW behind-the-meter contract. Michigan PSC (Oct 1): DTE–Google supply agreement approved; Detroit News (Oct 7): Oct 21 hearing
+- Not sourced this week: the Oct 8 Eaton continuance outcome; Fed funds futures odds; the content of Warsh's Oct 16 remarks; XLU fund flows; refreshed XLU weights (Yahoo snapshot unchanged); company news for UTL and MGEE (searched, none); any PJM filing after the Oct 7 MIC update
+- **Cross-references: #106, #108, #113 (10Y >5.00%), #126 (EIX ruling / FERC suspension), #158 (last week's data-center trigger), #159. New issue #166 opened this run for the NiSource–Microsoft data-center agreement. Other triggers not met: XLU +1.93% (±5%), no utility earnings miss (none reported), no wildfire-liability event, no new 10Y break (5.10% is inside the existing >5% files; <4% not in play).**
 
 ---
 
-> **Corrections to last week's page, logged here.** (1) "No new PPA announcement found this week" was wrong: Amazon–Constellation (Calvert Cliffs, 190 MW, 20 years) was announced Sep 30. (2) EIX's prior close is restated to the adjusted bar ($53.02, not $53.89). (3) The 52-week high is re-based to the adjusted bar ($46.75, not $47.06).
+> **Corrections to last week's page, logged here.** (1) None to prices: all Oct 9 closes match the settled bars. (2) Last week's earnings table carried NWE on Oct 28 and DTE on Oct 29; Yahoo now shows Nov 4 and Nov 5. (3) Last week's top-ten weights were described as "refreshed"; they are identical to five decimals this week, so Yahoo's snapshot may be older than either pull.
 
-*Last updated by Saturday Research Crew: 2026-10-11 (data as of Fri 2026-10-09 close; Grid C run, late — Sunday night)*
+*Last updated by Saturday Research Crew: 2026-10-16 (data as of Fri 2026-10-16 close; Grid C run, Friday evening)*
 *Next update: Every Saturday 11:29 AM ET*
 *Data sources: Yahoo Finance, EIA, FERC, market data feeds, company earnings releases*
