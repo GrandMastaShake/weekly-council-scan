@@ -2,7 +2,7 @@
 
 > **Sector:** Energy | **ETF:** Energy Select Sector SPDR (XLE) | **Expense Ratio:** 0.08%
 >
-> *"The breakout un-failed. XLE closed $65.08 (+3.6%), its best week since mid-August, through the $63.46 line it lost three weeks ago and 46 cents from its September closing high. Crude did almost nothing — WTI settled $91.85, up 74 cents — and OPEC+ held, as expected. What moved was the product: the heating-oil bar closed at $4.74 a gallon, which is a $107 diesel crack against WTI, nine dollars wider than a week ago, and the three refiners closed Thursday at all-time highs. Then there is the sentence from Washington on Thursday: no strikes on Iran before the midterms, blockade stays. Twelve tankers have been hit near Hormuz since Sep 29 and flows through the strait are 30% under normal. A pledge not to escalate, in a strait that is being shot at, is not a de-escalation this desk can file. The fund treated it as one anyway, for a day."* — Ophelia
+> *"Last week the product moved and crude sat still. This week it was the other way round. WTI read $99.04 Friday evening on the November contract, about $7 over last week's $91.85 settlement — provisional until the exchange posts tonight's settle, but it is the same contract and the direction is not in doubt. Heating oil went nowhere ($4.72) and gasoline fell, so the diesel crack I made so much of narrowed from $107 to about $99. XLE closed $68.24 (+4.9%), a new 52-week closing high, with Exxon, Chevron, Conoco and EOG at 52-week closing highs alongside it. The barrel led because the barrels are not arriving: the EIA showed an 8.6M-barrel crude draw on hurricane shut-ins, Kpler had Hormuz at 11.6 mb/d against a 17.2 mb/d baseline, a tanker with fifteen Indian crew was hit on Friday, and the IEA's answer was to finish a release it had already promised. The fund rose 4.9% in a week the S&P fell 2%. That is an inflation hedge doing its job — and CPI said 3.7% on Wednesday."* — Ophelia
 
 ---
 
@@ -10,22 +10,22 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | **$65.08** | $62.82 | **+3.60%** — second up week; largest since Aug 14 (+7.7%) |
-| 52W Range | $41.43 – $65.54 (closing, adjusted bars) | $41.18 – $65.78 (carried) | Re-based to the adjusted series; the Sep 15 closing high is $65.54 — **46 cents above Friday** |
-| AUM | **$39.1B** (Yahoo totalAssets) | ~$41.4B (carried) | Re-published this pull |
-| YTD Return | **+48.4%** (price basis, adjusted bars) | ~+40.4% | Yahoo's total-return YTD figure is +40.1%; the adjusted-bar figure is inflated by reinvested distributions |
-| 1Y Return | +57.1% (adjusted bars) | ~+46.1% | — |
-| P/E Ratio | 18.5 (trailing, Yahoo) | n/a last pull | — |
-| Dividend Yield | **2.48%** (Yahoo) | ~2.37% | — |
-| Beta | -0.03 (3Y, Yahoo) | ~-0.08 (carried) | The only sector with a negative beta to the index |
+| Price | **$68.24** | $65.08 | **+4.86%** — third up week; **new 52-week closing high** (prior $67.63, set Wed Oct 14), above the $65.54 Sep 15 close that capped it last week |
+| 52W Range | $41.80 – $68.24 (closing, adjusted bars) | $41.43 – $65.54 | High re-set Friday; low re-based by the rolling window |
+| AUM | $39.1B (Yahoo totalAssets) | $39.1B | Yahoo figure unchanged from last pull |
+| YTD Return | **+55.7%** (price basis, adjusted bars) | +48.4% | Yahoo's total-return YTD field still reads +40.1% (not refreshed) |
+| 1Y Return | +63.3% (adjusted bars) | +57.1% | — |
+| P/E Ratio | 19.4 (trailing, Yahoo) | 18.5 | — |
+| Dividend Yield | 2.48% (Yahoo) | 2.48% | — |
+| Beta | -0.03 (3Y, Yahoo) | -0.03 | XLE +4.9% vs SPY -2.0% this week |
 | Total Holdings | 23 (carried) | — | — |
-| Avg Daily Volume | 32.6M this week (20D 35.4M) | ~32.4M | Thursday 51.3M — the breakout day and the week's only heavy session |
+| Avg Daily Volume | 28.3M this week (20D 32.7M) | 32.6M | Friday 37.3M — the week's heaviest, on the new high |
 
-Week path: Mon $63.45, Tue $63.75, Wed $63.36, Thu **$65.24** (+3.0%, high $65.47), Fri $65.08 (high $65.86).
+Week path: Mon $66.01 (+1.4%), Tue $67.20 (+1.8%), Wed **$67.63** (52W closing high), Thu $66.56 (-1.6%, low $66.17), Fri **$68.24** (+2.5%, high $68.29 — closed within 5 cents of it).
 
-**Marky Tape Read:** I said a weekly close over $63.46 un-fails the breakout and I have it: $65.08, with the week's low ($62.05, Monday) above the prior week's low and three of five closes above the line (Monday missed it by a cent). The move came on one day — **Thursday** +3.0% to $65.24 on 51.3M shares, the heaviest session since at least the start of September, the same day WTI rose 3.6% and Washington said no strikes before November. **Friday** printed a $65.86 high, the highest intraday since Sep 10's $66.17, and closed 78 cents under it on 27M shares. So: breakout confirmed on a weekly close, a Friday that could not hold its high, and the September closing high ($65.54 adjusted) still unclaimed. RSI 62.5. Levels: **$65.54** is the next close I need; above it the fund is at all-time highs with nothing on the chart. **$63.46** is support now, then the 20D at $63.21 and the 50D at $62.41. The internals are not subtle: MPC, VLO and PSX all closed Thursday at record highs ($463.34 / $443.80 / $281.60) and gave back 1.8–2.3% Friday; XOM closed 38 cents from its own record; SLB (+0.4%) sat it out again and remains below both averages.
+**Marky Tape Read:** $65.54 went on Monday's open (the fund opened $65.85, its low for the week was $65.67, and it never traded under the line) and I did not get the pullback I said I would wait for. Four of five sessions closed higher; Thursday's -1.6% was the AI/tech rotation day and it held $66.17, above the old line by 63 cents. Friday closed on its high, $68.24, on the week's heaviest volume while the S&P fell 1.1%. That is a breakout with follow-through, which last week's one-day breakout was not. RSI **69.7** — at the overbought line, not through it. The fund sits $4.32 above its 20-day ($63.92) and $4.93 above its 50-day ($63.31), a stretched position. Levels: support **$67.63** (Wednesday's close), then **$66.17** (Thursday's low), then **$65.54** (the old cap, now the line that matters). There is no overhead resistance on the 1Y chart. Bias: **bullish above $65.54**; I raise my stop to a weekly close under it.
 
-**Ophelia Macro Read:** Crude was quiet and products were not, for the second week. **WTI settled $91.85** (CLX26, +$0.74 / +0.8%) with a $93.20 high Thursday; Yahoo's Brent front-month read $104.72 Friday (+2.4%) against ~$104.43 spot on Trading Economics — the series rolled in September, so the weekly figure is approximate but the direction matches. **Heating oil settled $4.74/gal (+5.3%)**: that is $199 a barrel, a **$107 crack against WTI, from $98 a week ago** — computed from the Friday bars, not from press; it is a different benchmark from the $102.20 ULSD record the trade press reported in September and I do not claim a record. Gasoline $3.30 (-0.5%), a $47 crack. The split tells you the shortage is diesel and only diesel. **Natural gas $3.22 (+6.1%)**. **OPEC+ (Sun Oct 4) held November targets at 31.01 mb/d** for the seven core members, next meeting Nov 1, capacity review still deferred — the expected result, no trigger. **Aramco's November pricing (Oct 5)** cut Arab Light for Asia to a $5 discount, a six-year low, while raising Europe by $3: Asia is being courted as Gulf flows recover, Europe is being charged for the diesel it cannot make. **EIA (Wed Oct 7, week ended Oct 2):** crude -3.2M to 424.1M; **distillate 105.1M, 13.5% under last year and 12% under the five-year average**, flat on the week; gasoline 204.7M; **SPR 283.0M, the lowest since October 1982.** Next EIA is Thu Oct 15 (Columbus Day delay). On the strait: **Kpler counted ~9.5 mb/d exiting Hormuz** in the week to Tuesday, about 30% below pre-war; **at least 12 tankers attacked since Sep 29**; Gulf of Oman VLCC fixtures $1.02–1.16M/day (Seatrade, Oct 7) — the strait itself is rated "severe" and the Gulf of Oman now prices like the strait did two weeks ago. Thursday's **Truth Social pledge — no attacks on Iran before the midterms, blockade "in full force"** — sent crude up 3.6% on the day (the market read a longer blockade, not a shorter war) and the fund with it. Macro: 10Y 5.24%, DXY 102.21 (#115 restriction stays on), UMich 46.3.
+**Ophelia Macro Read:** **WTI read $99.04 Fri evening (CL=F, still the November contract CLX26 per Yahoo, expiring ~Oct 20)** against last week's settled $91.85 — a provisional **+$7.19**; tonight's settle will be in data/market_state.json after Saturday's feed build. Daily path on the same series: $93.74, $94.14, $95.09, $97.97, $99.04 — five higher closes, a $99.34 high Friday. **Brent read $109.69 Fri evening (BZ=F)**, against $104.72 last Friday; Yahoo maps BZ=F to the December contract, which should have been front month since the November expiry at end-September, so the provisional +$4.97 (+4.7%) is probably like-for-like — I would not lean on it until it settles. **Heating oil $4.72 Fri evening (flat), gasoline $3.14 (-4.6%)** — the HO–WTI spread computed from the evening bars is about **$99, from $107**, and the gasoline crack about $33 from $47. This week crude did the work and the products lagged, the opposite of last week. **EIA (Thu Oct 15, week to Oct 9): commercial crude -8.6M to 415.6M** (vs -0.3M expected), tied by Reuters to **hurricane-related production shut-ins** (the storm and the volume shut in were not found in this run's searches); **distillate -2.5M, 12% under the five-year average**; gasoline +3.5M; Cushing +1.9M; refinery utilization 93.5%. SPR for that week not found; last week's 283M (lowest since 1982) carried. **IEA (Thu Oct 15):** the governing board agreed to release the **remaining ~100M barrels** of the March 400M-barrel action as soon as possible, **including 20M+ barrels of diesel**; ~330M barrels have been released so far, and Reuters reported analysts doubting it is a fresh intervention of that size. **Hormuz:** Kpler had flows at **11.62 mb/d in the week to Oct 13 against a 17.15 mb/d baseline** (~32% below); CNBC (Oct 9) counted **eleven tankers attacked in the week to Oct 4, the most since the war began**; on **Fri Oct 16 the crude tanker MT ST 3 (15 Indian crew) was struck by a projectile in the strait** (Indian shipping minister). **OPEC+** did not meet in the week; next meeting **Nov 1**. Tanker rates: **not re-sourced**. Macro: CPI 3.7% (gasoline +9.1%), 10Y 5.10% (-14bp), DXY 101.78 Fri evening (#115 restriction: still above 101).
 
 ---
 
@@ -33,39 +33,39 @@ Week path: Mon $63.45, Tue $63.75, Wed $63.36, Thu **$65.24** (+3.0%, high $65.4
 
 | Rank | Ticker | Name | Weight | Price | Change | Yield | Fwd P/E | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | XOM | ExxonMobil | 24.0% | $168.94 | +3.01% | 2.4% | 14.7 | $173.64 (+2.8%) | 🔥 |
-| 2 | CVX | Chevron | 18.1% | $211.98 | +2.56% | 3.4% | 14.5 | $226.04 (+6.6%) | ⚡ |
-| 3 | COP | ConocoPhillips | 6.7% | $134.10 | **+5.80%** | 2.5% | 13.3 | $147.73 (+10.2%) | ⚡ |
-| 4 | VLO | Valero Energy | 4.7% | $433.75 | **+6.76%** | 1.1% | 10.1 | $388.74 (-10.4%) | 🔥 |
-| 5 | MPC | Marathon Petroleum | 4.7% | $455.03 | **+7.74%** | 0.9% | 8.7 | $409.28 (-10.1%) | 🔥 |
-| 6 | PSX | Phillips 66 | 4.6% | $278.18 | **+5.14%** | 1.8% | 10.2 | $266.58 (-4.2%) | 🔥 |
-| 7 | WMB | Williams Cos | 4.3% | $72.67 | +3.02% | 2.9% | 27.5 | $85.46 (+17.6%) | ⚡ |
-| 8 | SLB | SLB | 3.9% | $48.95 | +0.43% | 2.4% | 15.3 | $62.45 (+27.6%) | 🔴 |
-| 9 | EOG | EOG Resources | 3.9% | $148.16 | +4.80% | 2.8% | 9.6 | $164.21 (+10.8%) | ⚡ |
-| 10 | KMI | Kinder Morgan | 3.2% | $32.49 | +4.57% | 3.6% | 21.0 | $36.09 (+11.1%) | ⚡ |
-| — | OXY | Occidental Petroleum | (outside top 10) | $60.11 | +3.50% | 1.9% | 14.7 | $68.40 (+13.8%) | ⚡ |
+| 1 | XOM | ExxonMobil | 24.0% | **$178.98** | **+5.94%** | 2.4% | 15.5 | $175.41 (-2.0%) | 🔥 |
+| 2 | CVX | Chevron | 18.1% | **$224.99** | **+6.14%** | 3.3% | 14.8 | $227.92 (+1.3%) | 🔥 |
+| 3 | COP | ConocoPhillips | 6.7% | **$146.51** | **+9.25%** | 2.4% | 13.9 | $149.15 (+1.8%) | 🔥 |
+| 4 | VLO | Valero Energy | 4.7% | $444.71 | +2.53% | 1.1% | 9.4 | $406.58 (-8.6%) | ⚡ |
+| 5 | MPC | Marathon Petroleum | 4.7% | $478.07 | +5.06% | 0.8% | 8.5 | $442.33 (-7.5%) | 🔥 |
+| 6 | PSX | Phillips 66 | 4.6% | $293.17 | +5.39% | 1.8% | 9.8 | $280.47 (-4.3%) | 🔥 |
+| 7 | WMB | Williams Cos | 4.3% | $71.28 | **-1.91%** | 3.0% | 26.9 | $85.38 (+19.8%) | ⚠️ |
+| 8 | SLB | SLB | 3.9% | $49.50 | +1.12% | 2.4% | 15.4 | $62.41 (+26.1%) | 🔴 |
+| 9 | EOG | EOG Resources | 3.9% | **$158.01** | **+6.65%** | 2.7% | 10.0 | $164.41 (+4.1%) | 🔥 |
+| 10 | KMI | Kinder Morgan | 3.2% | **$34.20** | +5.26% | 3.6% | 22.1 | $36.09 (+5.5%) | 🔥 |
+| — | OXY | Occidental Petroleum | (outside top 10) | $62.38 | +3.78% | 1.9% | 13.1 | $69.58 (+11.5%) | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown
-> Prices are Fri Oct 9 closes; weekly changes vs settled Fri Oct 2 daily-bar closes (dividend-adjusted; all eleven prior closes match last week's page); yields, forward P/E and targets from the Oct 11 Yahoo pull. **Weights refreshed (Yahoo funds_data, Oct 11): XOM 24.0%, CVX 18.1%, COP 6.7%, VLO 4.7%, MPC 4.7%, PSX 4.6%, WMB 4.3%, SLB 3.9%, EOG 3.9%, KMI 3.2%.** The Oct 11 snapshot shows the integrateds at 42.1% (from 34.8% a week ago) and **the three refiners at 14.0% (from 15.8%)** — a shift that large in one week is Yahoo's snapshot methodology, not a rebalance; the refiners remain the fund's second block. Same ten names; no entries or exits.
+> Prices are Fri Oct 16 closes (last bar verified as Oct 16); weekly changes vs settled Fri Oct 9 daily-bar closes (all eleven match last week's page — no restatements); yields, forward P/E and targets from the Oct 16 Yahoo pull. **Weights: Yahoo funds_data returned the same top ten as the Oct 11 pull to the decimal (XOM 24.03%, CVX 18.05%, COP 6.73%, VLO 4.73%, MPC 4.70%, PSX 4.64%, WMB 4.29%, SLB 3.86%, EOG 3.85%, KMI 3.15%)** — the snapshot was not refreshed, so the weights are carried. **The three refiners are 14.1% on this snapshot**, not the 15.8% of Oct 3. No entries or exits.
 
-**Eleven of eleven up, refiners to records.** **MPC +7.7%**, **VLO +6.8%**, **PSX +5.1%** — all three closed at all-time highs on Thursday (MPC $463.34, VLO $443.80, PSX $281.60) and gave back 1.2–2.3% Friday, with MPC printing $470 intraday. The driver is on this page's own bars: the HO–WTI spread widened from $98 to $107 in the week. All three now trade **4–10% above their mean analyst targets** (MPC $409, VLO $389, PSX $267), on forward multiples of 8.7–10.2x and quarterly consensus of **$24.67 for MPC and $20.27 for VLO** — both raised since last week ($22.97 / $18.84). The E&Ps caught up: **COP +5.8%**, **EOG +4.8%**, OXY +3.5%; midstream **KMI +4.6%**, WMB +3.0% (the gas names, with NG +6%). **XOM +3.0% to $168.94**, 38 cents from its Sep 15 closing high; CVX +2.6%. **SLB +0.4%** — up 3.2% Monday, down 4.1% Wednesday, flat the rest — the one name that did not participate; RSI 39, below the 200D ($50.35), reports Oct 23.
+**Ten of eleven up; the barrel names led.** **COP +9.3%**, EOG +6.7%, CVX +6.1%, XOM +5.9%, KMI +5.3% — **XOM, CVX, COP, EOG and KMI all closed at 52-week closing highs Friday**, and XOM closed **above its mean analyst target** ($178.98 vs $175.41). The refiners rose less than the producers for the first time in three weeks: PSX +5.4%, MPC +5.1%, **VLO +2.5%**. All three set their weekly and 52-week closing highs on Wednesday (MPC $484.92, VLO $459.78, PSX $297.29) and closed Friday 1.4–3.3% under them — consistent with the HO–WTI spread narrowing from $107 to ~$99. Estimates kept rising anyway: VLO Q3 consensus **$20.95** (from $20.27), MPC **$25.35** (from $24.67), PSX **$11.84** (from $11.26); targets rose too (VLO $389 → $407, MPC $409 → $442) but the stocks are still 4–9% above them. **WMB -1.9%** was the one decliner — -4.9% on Thursday to $69.22, no company news found, in the same sessions that the AI-power names (CEG, VST) were sold; it carries data-center power projects and may have traded with them, which this page cannot confirm. **SLB +1.1%** (+2.3% Friday) — still below its 50D ($52.56) and 200D ($50.64), RSI 44.5; it reports **Fri Oct 23**.
 
-**Cecil Fundamental Read:** MPC from $393.52 is up 15.6% in two weeks and I am now 10% above the Street's target with a print on Nov 3 that consensus has at $24.67 — the number went up $1.70 in a week, which is the sell-side chasing the crack. My rule for the position was never the target; it was the margin, and the margin widened. I hold, I do not add, and I set the first trim at a weekly close in MPC below the prior week's low ($421.08) — the first sign the crack is being faded. XOM at $168.94, 2.8% from target and 38 cents from its record, is a hold-not-buy for the same reason it was at $164. **EOG at 9.6x forward with 11% to target remains the cheapest quality barrel and had a good week (+4.8%); it is the add if the fund clears $65.54.** SLB at 15.3x, 28% under target, RSI 39: the contrarian name that keeps not working — Oct 23 print first, then I decide. The refiners are 14% of the fund at records above their targets, three weeks before earnings; that sentence has been true for two weeks and it has cost nothing so far.
+**Cecil Fundamental Read:** The refiners are now the cheap end of the fund again and the integrateds are the expensive end. XOM is through its target at 15.5x forward; CVX has 1.3% left; COP 1.8%. MPC at 8.5x and VLO at 9.4x with consensus still rising are 7–9% above targets that keep chasing them. My MPC trim rule was a weekly close below $421.08 — it closed $478.07, so I hold, and I raise the trim line to this week's low (**$454.51**). **EOG**: I said it was the add if $65.54 went. It went Monday and I added on Monday's close in the model book — **EOG at $150.51**; it closed $158.01. At 10.0x forward with 4% to target it is no longer cheap, so that is the last add. XOM I would not buy above its target. SLB at 15.4x and 26% under target reports next Friday — still the contrarian name that has not worked, and the one print this month that can tell me what E&P capex looks like at $99 crude.
 
 ---
 ## SMALL/MID-CAP WATCH
 
-> *Live sub-$5B energy names. All five re-verified sub-$5B at the Oct 9 close (Yahoo caps). TELL and VTLE remain delisted via M&A. PBF stays promoted out ($9.99B, +4.3% this week).*
+> *Live sub-$5B energy names. All five re-verified sub-$5B at the Oct 16 close (Yahoo caps). TELL and VTLE remain delisted via M&A. PBF stays promoted out ($10.0B, +0.3% this week).*
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst / Signal | Council Read |
 |---|---|---|---|---|---|---|
-| CRK | Comstock Resources | **$4.03B** ✓ | $13.71 | **+7.28%** | Nat gas +6.1%; the first 10,000-psi Western Haynesville rig was slated to deploy in October (Q2 call); Hold consensus, $15.96 target; 52W low $12.32 | Recovered last week's -2.6% and more; back near its 50D ($13.84). The gas beta works in both directions — this week it worked |
-| GPRK | GeoPark | **$752M** ✓ | $11.54 | **+6.36%** | Friday high $12.00 vs a $11.97 52W close high; Frontera Colombia deal still pending Frontera's board / Parex rival bid; now **6% above** its $10.85 mean target | Broke to the top of its range with crude flat; the arb premium is back. Above both averages |
-| AMPY | Amplify Energy | **$180M** ✓ | $4.46 | +2.29% | $15M buyback; target $7.75; no news found | Below both averages; participated a little |
-| GTE | Gran Tierra Energy | **$372M** ✓ | $10.58 | +1.34% | **Fri Oct 9: shareholders approved the sale of the Colombian and Ecuadorian businesses to Maurel & Prom (~$1.33B incl. debt)**; Colombia/Ecuador regulatory approvals still outstanding; **Oct 5: Azerbaijan's parliament ratified the Guba-Khazaryani onshore EDPSA**; the $180M October 2029-note amortization was pre-funded per guidance | The company is selling the assets that made it a crude-torque name and keeping Azerbaijan. After close it is a different stock; the list needs to decide whether it still belongs |
-| TUSK | Mammoth Energy | **$136M** ✓ | $2.82 | +0.71% | Thin volume (66K Friday); no news | Services found no bid for a fourth week, matching SLB |
+| CRK | Comstock Resources | **$4.11B** ✓ | $14.00 | +2.12% | Natural gas $3.12 Fri evening (NG=F), ~-3% on the week — not settled; reports **Nov 4** (EPS est. $0.05); Hold consensus, $15.23 target | Rose with the group while gas slipped; still under its 200D ($16.56). $890M from the rail |
+| GPRK | GeoPark | **$760M** ✓ | $11.76 | +1.91% | **Oct 15: Q3 operational update** — Colombia production stable, Argentina growing (five Vaca Muerta wells online), Milano 1X discovery, progress on a planned Venezuela entry; Frontera status not updated in what was found; Q3 results **Nov 3** | Closed $0.21 under its 52W closing high ($11.97); 8% above its $10.85 mean target. Working |
+| AMPY | Amplify Energy | **$180M** ✓ | $4.43 | -0.67% | No news found; $7.75 target | Fell in a +$7 crude week. Below both averages. The weakest crude torque on the list |
+| GTE | Gran Tierra Energy | **$390M** ✓ | $10.90 | +3.02% | Maurel & Prom sale of the Colombia/Ecuador businesses (~$1.33B incl. debt) approved by shareholders Oct 9; Colombia/Ecuador regulatory approvals outstanding; no news this week | Last week's flag stands: after close it is Azerbaijan plus cash. **Kept until the sale closes** — it still trades on Colombian barrels today |
+| TUSK | Mammoth Energy | **$130M** ✓ | $2.70 | **-4.08%** | No news found; 75K Friday volume | Services had no bid for a fifth week; RSI 35. Matches SLB |
 
-**Rotation Note:** No rotations. All five verified under $5B (CRK $4.03B largest, $970M from the rail). Four of five rose, led by the two with a catalyst (CRK on gas, GPRK on the deal). **GTE is flagged**: once the Maurel & Prom sale closes it is an Azerbaijan exploration story with a cash pile, not a LatAm producer; the Council should decide next week whether that is the exposure the watch wants. Company-specific searches run for all five; AMPY and TUSK returned nothing dated this week.
+**Rotation Note:** No rotations. All five verified under $5B (CRK $4.11B largest). Three of five rose; the two decliners were the two smallest caps (AMPY, TUSK). **GTE decision:** the Council keeps it until the Maurel & Prom sale closes, then replaces it; this page will name a candidate when the close is dated. Company searches run for all five; only GPRK returned dated news (Oct 15 6-K).
 
 ---
 
@@ -73,23 +73,22 @@ Week path: Mon $63.45, Tue $63.75, Wed $63.36, Thu **$65.24** (+3.0%, high $65.4
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High (intraday) | $66.17 | Sep 10 (raw bar) |
-| 52W High (close) | **$65.54** | Sep 15 (adjusted) — **46 cents above Friday**; the next close that matters |
-| Friday High | $65.86 | Highest intraday since Sep 10; not held |
-| Current Price | $65.08 | Fri 10/9 close; +3.60% W/W |
-| Thursday Close | $65.24 | The breakout day (+3.0%, 51.3M shares) |
-| **Breakout Line** | **$63.46** | **Reclaimed on a weekly close** — the failed breakout of Sep 25 is un-failed; now first support |
-| 20-Day MA | $63.21 | Just under the line |
-| 50-Day MA | $62.41 | Rising |
-| Week Low | $62.05 | Monday; above the prior week's $60.95 |
-| Prior Range Floor | $60.95 | Sep 29 low |
-| Major Support | $56.40 | 200D |
-| Structural Low | $41.43 | Rolling 52W bottom (adjusted) |
-| RSI(14) | 62.5 | From 51.7; not yet overbought |
+| **52W High (close)** | **$68.24** | **Set Friday** — no overhead resistance on the 1Y chart |
+| Friday High | $68.29 | Closed 5 cents under it |
+| Wednesday Close | $67.63 | Prior high close; first support |
+| Thursday Low | $66.17 | The rotation-day low |
+| Monday Low | $65.67 | Week low; above the old line |
+| **Old Cap / Breakout Line** | **$65.54** | Sep 15 close — **cleared Monday**; now the stop line on a weekly close |
+| Old Breakout Line | $63.46 | The Sep 25 failure level |
+| 20-Day MA | $63.92 | Rising; $4.32 below price |
+| 50-Day MA | $63.31 | Rising |
+| Major Support | $56.99 | 200D |
+| Structural Low | $41.80 | Rolling 52W bottom (adjusted) |
+| RSI(14) | 69.7 | From 62.5 — at the overbought line |
 
-**Marky Setup Assessment:** Three weeks ago the breakout failed on a weekly close under $63.46; last week the bottom of the range held at $60.95; this week the top was taken back — a higher low, then a higher high, on a weekly close. That is the sequence I wait for and I do not argue with it. What I hold against it: the move was one session, Thursday, and Friday failed at $65.86 on half the volume. A one-day breakout can be a one-day event, and this one came on a political sentence. The trade from here: **the fund is long above $63.46**, and a close over **$65.54** — 46 cents away — puts it at all-time highs with nothing overhead, where I would expect the refiners to lead again. A weekly close back under $63.46 makes this a second failed breakout, and a second failure at the same line is a top; I would respect that. Internals: XOM and the three refiners are at or within 2% of records; COP and EOG are 4–5% under theirs (Sep 15); SLB is 18% under its. The breadth is fine for a breakout. The laggard is the one name tied to activity rather than price.
+**Marky Setup Assessment:** Last week I had a one-day breakout made of a political sentence and I said I would not add in the middle of a half-dollar gap to the high. The gap closed on Monday's open and the fund never looked back: four higher closes out of five, Thursday's dip held above the old line, Friday closed on its high on the heaviest volume of the week. I missed the add I was waiting for; the rule now is the rule I had for $63.46, moved up — **long above $65.54, out on a weekly close under it**. Two things I hold against it. First, RSI at 69.7 with the fund 7.8% over its 50-day: the next week is more likely to be sideways than another +5%. Second, the internals changed: last week the refiners led from records and the producers followed; this week the producers (COP, EOG, XOM, CVX) made the new highs and the refiners closed 1–3% under Wednesday's. A breakout led by crude depends on crude; a breakout led by the crack depended on diesel. Crude is the bigger and more political number. I want to see $67.63 hold on any dip.
 
-**Key divergence — crude flat, product wide, services absent:** WTI +0.8%, HO +5.3%, XLE +3.6%, refiners +5–8%, SLB +0.4%. The HO–WTI spread from the bars went from $98 to $107 in a week while the G-7's 100M-barrel release — diesel front-loaded in its first 20 days, which end around Oct 22 — was supposedly in progress. No report on the release's actual deliveries was found; the EIA's distillate stock was flat in the first week it could have shown up. If the diesel barrels are landing, the crack has not noticed.
+**Key divergence — crude up, products flat, refiners lagging:** WTI ~+$7 (Fri evening), HO flat, RB -4.6%, XLE +4.9%, producers +6–9%, refiners +2.5–5.4%. The HO–WTI spread narrowed from $107 to ~$99 while the EIA showed distillate -2.5M and the IEA promised 20M+ barrels of diesel. The diesel shortage did not ease; crude caught up to it.
 
 ---
 
@@ -97,120 +96,119 @@ Week path: Mon $63.45, Tue $63.75, Wed $63.36, Thu **$65.24** (+3.0%, high $65.4
 
 | Factor | Level | Implication for XLE |
 |---|---|---|
-| WTI Crude | **$91.85 settled (CLX26; +$0.74, +0.8% W/W)**; Thursday +3.6% to $91.49 on the midterm pledge; weekly range $86.86–$93.20 | Inside the ±$5 band — **no trigger**. Brent front-month $104.72 on Yahoo (~$104.43 spot); series roll makes the weekly figure approximate |
-| **Products / Crack** | **HO $4.74/gal settled bar (+5.3%) → $107/bbl over WTI, from $98**; RB $3.30 (-0.5%) → $47 gasoline crack. Press: ULSD record $102.20 set in September (different benchmark) | The driver of the refiners' week and 14% of the fund. First-hand from the bars this week, not from press |
-| G-7 / IEA Release | 100M barrels over four months, diesel front-loaded in the first 20 days (to ~Oct 22); the G-7 pledged to avoid export restrictions; reporting suggests it completes the March 400M-barrel commitment (two-thirds delivered) rather than adding to it | **No delivery data found this week.** EIA distillate flat; the crack widened. If the release is working it has not shown up yet |
-| Iran / Hormuz | **Thu Oct 8: Trump — no attacks on Iran before the midterms, blockade stays "in full force"**; Kpler ~9.5 mb/d exiting Hormuz (week to Tue), ~30% below pre-war; **≥12 tankers attacked since Sep 29**; Iran's seven-day reopening plan rejected Sep 26, talks' status disputed | A pledge not to escalate while the strait is under attack and blockaded is **neither an escalation nor a de-escalation event** by this page's definition — recorded, no trigger. The market bought it as "longer blockade" |
-| Tanker Rates | **Gulf of Oman VLCC $1.02–1.16M/day (Seatrade, Oct 7)** — now at the level Hormuz transits fetched two weeks earlier; strait rated "severe," Gulf of Oman "moderate" | Re-sourced this week after two weeks carried. Freight is still pricing war |
-| Saudi / OPEC+ | **Oct 4: November targets held at 31.01 mb/d (seven core members; Saudi 10.478, Russia 9.949); next meeting Nov 1; capacity review still deferred.** Actual Gulf exports 60–80% of normal. **Aramco Nov OSPs (Oct 5): Asia Arab Light -$5 vs benchmark (six-year low); Europe +$3; U.S. unchanged** | Held as expected — **no policy change, no trigger.** The OSP split (Asia cheap, Europe dear) is a diesel-shortage tell |
-| U.S. Inventories / SPR | **EIA Oct 7 (wk to Oct 2): crude -3.2M to 424.1M; distillate 105.1M (-13.5% y/y, -12% vs 5y avg), flat; gasoline 204.7M (+0.4M); SPR 283.0M — lowest since Oct 1982.** Next report Thu Oct 15 | Re-sourced this week. The U.S. is contributing to a diesel release from a reserve at 44-year lows |
-| Natural Gas | **$3.22 (+6.1% W/W, Fri settled bar)** | CRK +7.3%, KMI +4.6%, WMB +3.0% |
-| 10Y Treasury | **5.24%** close (-4bp); 5.36% intraday Wed (highest since 2002) | Refiners at 9–10x and E&Ps at 10–13x do not need the bond market |
-| Fed / Dollar | FOMC minutes: another hike coming, timing open; DXY **102.21** (+0.3%; #115 restriction on) | Four straight weekly gains for the dollar; crude sellers unbothered |
-| Demand | UMich prelim Oct 46.3, current conditions all-time low (#156); SPY record; ISM 54.5 (carried) | The consumer is in a trough and diesel is $107 over crude — the demand question is still unasked by this sector's prices |
+| WTI Crude | **$99.04 Fri evening (CL=F, CLX26)** vs $91.85 settled CLX26 last week → **provisional +$7.19**; five higher daily closes on the series, high $99.34 Fri | **Over the ±$5 band — provisional trigger, issue opened.** Settled figure to be confirmed from data/market_state.json Saturday |
+| Brent | **$109.69 Fri evening (BZ=F, December contract per Yahoo)** vs $104.72 last Friday → provisional +$4.97 | Probably like-for-like (both December), not settled |
+| **Products / Crack** | **HO $4.72/gal, RB $3.14/gal (Fri evening) → HO–WTI ~$99/bbl (from $107), gasoline ~$33 (from $47)** | Narrowed — crude, not product, led. Still a diesel crack near $100; the refiners' Q3 is already earned |
+| IEA Release | **Oct 15: board agrees to release the remaining ~100M barrels of the March 400M action ASAP, incl. 20M+ barrels of diesel**; ~330M released so far; total may exceed 400M; analysts question whether it is fresh supply | Finishes a promise rather than adding one — the market took crude up anyway |
+| Iran / Hormuz | **Kpler: 11.62 mb/d through Hormuz in the week to Oct 13 vs a 17.15 mb/d baseline (~32% below)**; CNBC (Oct 9): 11 tankers attacked in the week to Oct 4, the most since the war began; **Oct 16: MT ST 3 (15 Indian crew) hit by a projectile in the strait**; U.S. blockade of Iranian ports in force; Iran deploying mines (Reuters, date unclear) | Continuing attacks, not a step-change — recorded as **the status quo, no escalation trigger on its own**. Flows read better than last week's ~9.5 mb/d (different Kpler windows) |
+| Tanker Rates | **Not re-sourced this week**; last sourced Gulf of Oman VLCC $1.02–1.16M/day (Seatrade, Oct 7) | Carried, flagged |
+| OPEC+ | **No meeting in the week.** Oct 4: November targets held at 31.01 mb/d (seven core members); **next meeting Sun Nov 1** | No policy change, no trigger |
+| U.S. Inventories / SPR | **EIA Oct 15 (wk to Oct 9): crude -8.6M to 415.6M (vs -0.3M expected), hurricane shut-ins cited; distillate -2.5M (12% under 5y avg); gasoline +3.5M (4% under); Cushing +1.9M; refinery utilization 93.5%.** SPR not found for the week; 283M carried (Oct 2) | The draw is the week's crude catalyst. The hurricane itself was not found in searches — the shut-in is Reuters' attribution |
+| Natural Gas | **$3.12 Fri evening (NG=F)** vs $3.22 settled → ~-3%, not settled | CRK +2.1%, KMI +5.3%, WMB -1.9% — gas names did not trade gas |
+| 10Y Treasury | **5.10%** (-14bp) | Irrelevant to a 10x refiner; helps the 27x WMB at the margin |
+| Inflation / Fed | **Sep CPI 3.7% y/y, gasoline +9.1% m/m**; FOMC Oct 27–28 | Energy is now the visible inflation driver — the political file for refiners does not get easier |
+| Dollar | DXY **101.78** Fri evening (-0.4%) — still above the 101 trip wire (#115) | Restriction stays on |
+| Equity risk | SPY -2.0%, VIX 19.99, Nasdaq -2% Fri (AI-return worries; CNBC cited oil prices too) | XLE +4.9% against it — the hedge leg of the book worked |
 
-**Ophelia Verdict:** Hold, add nothing, with one change: I now have a level that tells me when to stop holding. Two weeks ago the risk was a ceasefire; last week it was a government aimed at the diesel margin; this week the margin widened anyway, to $107 on this page's own arithmetic, with no evidence the G-7 barrels have landed and a distillate inventory 12% under its five-year average. The refiners went to records on it. What I will not do is call Thursday a de-escalation. A president promising not to bomb before an election, while keeping a blockade and while twelve tankers get hit in ten days, is a timing statement about politics, not a supply statement about oil — and crude rose on it, which tells you the market read "blockade through November." The structural file is re-sourced this week for the first time in three: SPR 283M (1982), Hormuz flows 30% under normal, VLCCs at $1M+ a day. None of it has improved. The level: a weekly close under $63.46 is a second failed breakout and this desk goes from hold to reduce. Until then the trade is the trade.
+**Ophelia Verdict:** **Hold, and I lift the reduce-line to $65.54.** Two weeks ago I said the structural file underneath the breakout was the strongest it had been; this week the market priced it — crude up roughly $7 on a big hurricane-shaped draw, Hormuz still a third short, tankers still being hit. What I did not expect was the crack narrowing while it happened: the IEA's diesel promise and a flat heating-oil bar took $8 out of the refiners' spread, so the leadership moved to the producers. I do not call the IEA move a de-escalation; it completes a pledge already counted. I do flag the political turn: energy was half of a 3.7% CPI, and a government that threatened a diesel export ban in September has more reason to reach for it at $99 crude than at $91. The trigger I am filing is the crude move, and I file it **provisional** because the number is an evening trade, not a settlement. Until a weekly close under $65.54, the trade is the trade.
 
 ---
 ## THE WEEKLY NARRATIVE — What's Actually Moving XLE
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### Week of October 5 – 9, 2026: The Breakout Un-Fails on a $107 Crack and a Political Sentence
+### Week of October 12 – 16, 2026: Crude Catches Up
 
-XLE gained **+3.6% to $65.08**, back above the $63.46 line it lost on September 25 and within half a dollar of its September closing high. WTI settled $91.85, up 74 cents.
+XLE gained **+4.9% to $68.24**, a new 52-week closing high, in a week when the S&P 500 fell 2.0%. WTI read about $99 on Friday evening, roughly $7 above the prior week's $91.85 settlement; the settled figure is not yet available.
 
-**Thursday did the work.** The fund rose 3.0% on October 8 on its heaviest volume since September, the day WTI gained 3.6% and the President posted that the U.S. would not attack Iran before the midterm elections while keeping the blockade "in full force." The market read a longer blockade rather than a shorter war. Friday printed a new intraday high for the move, $65.86, and could not hold it.
+**The barrel moved this time.** A week earlier the story was the diesel margin, with crude nearly flat. This week crude rose on five straight sessions while heating oil was unchanged and gasoline fell, so the refiners' spread narrowed from about $107 to about $99 a barrel. Leadership moved with it: ConocoPhillips gained 9.3%, EOG 6.7%, Chevron 6.1% and Exxon 5.9%, all to 52-week closing highs, while the three refiners rose 2.5–5.4% and closed below their Wednesday peaks.
 
-**The product margin widened again.** Heating oil settled $4.74 a gallon, a $107-a-barrel spread over WTI on this page's own bars, from $98 a week earlier. Marathon Petroleum, Valero and Phillips 66 all closed at record highs on Thursday — up 7.7%, 6.8% and 5.1% on the week — and gave some back Friday. The E&Ps followed: ConocoPhillips +5.8%, EOG +4.8%. Exxon closed 38 cents from its record. SLB, flat, was the exception again.
+**Why crude rose.** The Energy Information Administration reported an 8.6 million-barrel fall in U.S. commercial crude stocks, against expectations of almost none, attributed to hurricane-related production shut-ins; distillate stocks fell 2.5 million barrels and sit 12% below their five-year average. Kpler measured Hormuz flows at about 11.6 million barrels a day against a pre-war 17.2 million, and on Friday a crude tanker with fifteen Indian crew was struck in the strait. The International Energy Agency agreed to release the remaining 100 million barrels of its March emergency action, including more than 20 million of diesel — volumes already promised, which analysts said were not a fresh intervention.
 
-**Supply and reserves.** OPEC+ held November targets at 31.01 mb/d on October 4, as expected; its next meeting is November 1. Aramco cut Asian prices to a six-year-low discount and raised Europe by $3. The EIA's October 7 report showed distillate stocks 12% under their five-year average and the SPR at 283 million barrels, the lowest since 1982. Kpler counted roughly 9.5 mb/d leaving Hormuz, about 30% below pre-war; at least twelve tankers have been attacked since September 29; Gulf of Oman VLCC rates reached $1.0–1.2 million a day.
+**The inflation link.** September consumer prices, released Wednesday, rose 3.7% from a year earlier, with gasoline up 9.1% in the month. Energy is now the visible driver of U.S. inflation, eleven days before a Federal Reserve meeting.
 
-**The G-7 release.** Its diesel-first window runs through about October 22. No delivery data was found, distillate inventories were flat, and the crack widened.
+**The laggards.** Williams fell 1.9% with no company news found; SLB rose 1.1% but remains below both its 50- and 200-day averages ahead of its October 23 results. Among small caps, GeoPark issued a third-quarter operating update; Mammoth Energy fell for a fifth week.
 
-**Small caps.** Gran Tierra's shareholders approved the $1.33B sale of its Colombian and Ecuadorian businesses on Friday; Comstock rose 7.3% with natural gas up 6%.
-
-**The Bottom Line:** The sector made a higher low, then a higher high, on a weekly close — the sequence that confirms a range breakout. It did so on one day, on a political pledge, with its leaders at records above their analyst targets and two weeks from earnings. The next close that matters is $65.54; the one that un-does it is $63.46. Valero reports October 22.
+**The Bottom Line:** The fund cleared its September high on the first day of the week and closed on its high on the last, with the producers in front. It is stretched — RSI near 70, nearly 8% above its 50-day — and the crude move that drove it is, until Saturday, an evening quote rather than a settlement. Valero reports October 22, SLB October 23, and Exxon and Chevron October 30. OPEC+ meets November 1.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Company dates are Yahoo Finance calendar dates pulled Oct 11 (not all company-confirmed); EPS is the Yahoo consensus mean. Refiner estimates rose in the week (VLO $18.84 → $20.27; MPC $22.97 → $24.67).
+Company dates are Yahoo Finance calendar dates pulled Oct 16 (not all company-confirmed); EPS is the Yahoo consensus mean. Estimates rose again: VLO $20.27 → $20.95, MPC $24.67 → $25.35, PSX $11.26 → $11.84, XOM $3.76 → $3.93, COP $2.85 → $2.99. **KMI moved to Oct 21 (was Oct 28 on last week's page).**
 
 | Company / Event | Ticker | Date | EPS Est. | What to Watch |
 |---|---|---|---|---|
-| **OPEC+ meeting** | — | **Oct 4 — HELD ✔** | — | November targets unchanged at 31.01 mb/d; next Nov 1 |
-| **Aramco November OSPs** | — | **Oct 5 — ISSUED ✔** | — | Asia -$5 (six-year low), Europe +$3, U.S. flat |
-| **September CPI** | — | Wed Oct 14 | — | Energy's contribution; bond market closed Mon Oct 12 |
-| **Weekly EIA** | — | **Thu Oct 15** (holiday delay), then Wednesdays | — | Distillate stocks — first weeks the G-7 diesel should show; SPR from 283M |
-| **G-7 diesel window** | — | ~Oct 22 | — | End of the "first 20 days" front-loading |
-| **Valero** | VLO | **Thu Oct 22** | $20.27 | First refiner print; realized diesel margins; buybacks at a record price |
-| **SLB** | SLB | **Fri Oct 23** | $0.62 | Activity outlook, Middle East exposure; the fund's one laggard |
-| **Phillips 66 / Kinder Morgan** | PSX / KMI | Wed Oct 28 | $11.26 / $0.33 | Refining capture; gas volumes |
-| **PBF** | PBF | Thu Oct 29 | $11.07 | Promoted-out refiner; read-across to the small-cap book |
-| **ExxonMobil / Chevron** | XOM / CVX | **Fri Oct 30** | $3.76 / $4.81 | 42% of the fund; buybacks and capex at 5.24% money |
-| **OPEC+ meeting** | — | Sun Nov 1 | — | December targets; capacity review still deferred |
-| **Williams** | WMB | Mon Nov 2 | $0.53 | Gas volumes; data-center power |
-| **Marathon Petroleum** | MPC | Tue Nov 3 | $24.67 | The largest refiner weight, at a record, 10% over target |
-| **Comstock / GeoPark / Amplify** | CRK / GPRK / AMPY | Wed Nov 4 | $0.04 / — / — | CRK: Western Haynesville rig; GPRK: Frontera status |
-| **ConocoPhillips / EOG / Gran Tierra** | COP / EOG / GTE | Thu Nov 5 | $2.85 / $4.31 / — | 2027 capex framing; GTE post-sale shape |
-| **Occidental** | OXY | Mon Nov 9 | $1.35 | Debt paydown |
+| **EIA weekly** | — | **Oct 15 — REPORTED ✔** | — | Crude -8.6M, distillate -2.5M; next Wed Oct 21 |
+| **IEA board** | — | **Oct 15 — AGREED ✔** | — | Remaining ~100M barrels incl. 20M+ diesel, ASAP |
+| **Kinder Morgan** | KMI | **Wed Oct 21** | $0.33 | Gas volumes; data-center laterals |
+| **Valero** | VLO | **Thu Oct 22** | $20.95 | First refiner print; realized diesel margin vs the $99–107 HO–WTI range |
+| G-7 diesel "first 20 days" window | — | ~Oct 22 | — | Ends; IEA now says the diesel comes ASAP |
+| **SLB** | SLB | **Fri Oct 23** | $0.62 | Activity at $99 crude; Middle East exposure; the fund's laggard |
+| **Phillips 66** | PSX | Wed Oct 28 | $11.84 | Refining capture; chemicals |
+| **FOMC** | — | Oct 27–28 | — | Energy-led CPI in hand |
+| **PBF** | PBF | Thu Oct 29 | $11.13 | Promoted-out refiner; read-across |
+| **ExxonMobil / Chevron** | XOM / CVX | **Fri Oct 30** | $3.93 / $4.89 | 42% of the fund; both at 52-week closing highs, XOM above its target |
+| **OPEC+ meeting** | — | **Sun Nov 1** | — | December targets; capacity review |
+| **Williams** | WMB | Mon Nov 2 | $0.54 | Gas volumes; power projects |
+| **Marathon Petroleum** | MPC | Tue Nov 3 | $25.35 | Largest refiner weight |
+| **GeoPark** | GPRK | Tue Nov 3 | — | Q3 results after the Oct 15 operating update |
+| **Comstock / Amplify** | CRK / AMPY | Wed Nov 4 | $0.05 / — | CRK: Western Haynesville |
+| **ConocoPhillips / EOG / Gran Tierra** | COP / EOG / GTE | Thu Nov 5 | $2.99 / $4.42 / — | 2027 capex; GTE sale timing |
+| **Occidental** | OXY | Mon Nov 9 | $1.40 | Debt paydown |
+| Mammoth | TUSK | Fri Oct 30 (Yahoo) | — | — |
 
-**Marky's Binary Event Read:** **$65.54 above, $63.46 below.** The EIA on the 15th is the first number that can tell me whether the G-7 diesel exists; if distillate builds, the refiners' Friday fade becomes a top and I would expect the fund to retest the line. Valero on the 22nd is the hard receipt — a $20 quarter at a record price. I am long above $63.46 by the rule and I am not adding at $65.08 in the middle of a half-dollar gap to the high.
+**Marky's Binary Event Read:** **$65.54 is the line.** Saturday's settlement either confirms a ~$7 crude week or trims it; the EIA on the 21st tells me whether the draw was a storm or a trend. Valero on the 22nd is the first look at what the crack actually paid, and SLB on the 23rd is the only print that speaks to activity. The fund is overbought into the busiest two weeks of the quarter; I hold and do not add.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **$65.54 goes** → all-time highs with nothing on the chart; the refiners lead again from records
-- **The crack stays above $100** through the G-7 window → VLO (Oct 22) and MPC (Nov 3) beat estimates that were just raised; targets chase price
-- **The blockade outlasts the midterms** as pledged → Hormuz flows stay 30% under normal, Gulf of Oman freight stays above $1M/day → crude grinds toward $100 and the E&Ps close the gap to the refiners
-- **OPEC+ holds again Nov 1** with actual Gulf exports still 60–80% of target
-- **SLB's Oct 23 print** shows activity holding → the one laggard joins and breadth completes
+- **Settled WTI confirms the move** and the next EIA shows the draw was not only the storm → crude through $100 on a weekly settle; the producers extend from 52-week highs
+- **Hormuz stays a third short** with attacks continuing → the risk premium stays in; the IEA's last 100M barrels are absorbed
+- **Valero (Oct 22) beats a $20.95 estimate** → the refiners re-take leadership even with the crack ~$99
+- **SLB (Oct 23) shows activity rising at $99** → the laggard joins and breadth completes
+- **OPEC+ holds Nov 1** with Gulf exports below quota
 
 ### 🔴 Bear Case
-- **A weekly close under $63.46** → second failed breakout at the same line → a top; the 50D at $62.41, then $60.95
-- **The G-7 diesel lands** — EIA distillate builds on Oct 15 or 21 → the HO–WTI spread compresses from $107 → the refiners, at records 4–10% above their targets, give back the move before they report
-- **A real de-escalation** — the strait reopens or the blockade is traded away → WTI mid-$80s in a session; this week's pledge was explicitly not that
-- **Demand** — UMich current conditions at an all-time low finally reaches product volumes
-- **SLB confirms capex deferral (Oct 23)** → services leads lower and the E&Ps follow on 2027 guidance
-- **Export restrictions** — the G-7 pledged to avoid them, but the U.S. threatened a diesel export ban to force the release; at $107 the political pressure on refiners does not go away
+- **A weekly close under $65.54** → the breakout fails back into the old range; the 20D at $63.92
+- **The settle trims the move** and the hurricane barrels come back → the EIA draw reverses into builds; crude gives back $5 fast
+- **A real de-escalation** — the strait reopens or the blockade is traded → WTI to the mid-$80s in a session
+- **Policy** — with energy half of a 3.7% CPI, a U.S. diesel export ban or further release targets the refiners, who trade 4–9% above their targets
+- **Overbought** — RSI ~70 and 7.8% above the 50-day; a sideways week is the base case even if nothing goes wrong
+- **Tech/AI rotation reverses** → the money that came to energy as a hedge leaves with it
 
 ### ⚠️ The Wild Card
-**A breakout made of one sentence.** The fund's weekly close above $63.46 came from one session, and that session was driven by a Truth Social post. The post was about timing — no strikes before November — and the market chose to hear "blockade through November" rather than "war winding down." Both readings are available in the same sentence, and a single clarifying remark could flip which one the market hears. If a mediator announces a framework, Thursday's 3% reverses on the same volume it arrived on. If the blockade tightens or another VLCC is hit, the reading holds and $65.54 goes. This desk cannot price a sentence; it can only note that the breakout rests on one, and that the structural file underneath it — SPR 283M, distillate 12% under average, VLCCs at $1M, flows 30% under normal — is the strongest it has been.
+**Who is crude's marginal buyer — the shortage or the hedge?** This week XLE rose 4.9% while the S&P fell 2% and the Nasdaq had its worst week since June. Some of that is barrels: a storm-shaped draw, Hormuz a third short, a tanker hit on Friday. Some of it is the fund being the one place in the index that pays when inflation runs 3.7% and AI multiples compress. Those two buyers leave for different reasons — the first when the strait reopens, the second when tech stabilises. The fund cannot tell you which one bought this week. If tech bounces Monday and XLE gives back half, it was the hedge.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Hold, add nothing, and now a level: a weekly close under $63.46 and this desk reduces. The margin widened to $107 on our own bars with no sign the G-7 barrels have landed and distillate 12% under average; the refiners went to records on it. I will not file Thursday as de-escalation — a pledge not to bomb before an election, with a blockade in force and twelve tankers hit in ten days, is a political calendar, not a supply event, and crude rose on it. The structural file is re-sourced for the first time in three weeks: SPR at 1982 levels, Hormuz 30% under normal, VLCCs over $1M a day. Nothing in it improved. OPEC+ held; no issue from this desk."*
+**Ophelia:** *"Hold, and the reduce-line moves up to $65.54. Crude caught up to the shortage — roughly $7 on the November contract, provisional until it settles — on an 8.6M-barrel storm draw, Hormuz a third short and another tanker hit Friday. The IEA finished a promise; I do not file it as relief. The crack narrowed to ~$99, so leadership moved from refiners to producers. Energy was half of September's CPI, which makes the political risk to refiners larger, not smaller. One provisional trigger filed: the WTI move."*
 
-**Marky:** *"Higher low, higher high, weekly close through $63.46 — the breakout is un-failed and I am long by the rule. Against it: one day did the work, Friday failed at $65.86 on half the volume, and the day was a political post. $65.54 is 46 cents away and above it there is nothing on the chart. Under $63.46 on a weekly close it is a second failure at the same line, and that is a top I would respect. The refiners and Exxon are at records; SLB is 18% under its own. Breadth is fine. I do not add in the middle of a half-dollar gap."*
+**Marky:** *"$65.54 went on Monday's open and I never got my pullback. Four up closes, Thursday's dip held $66.17, Friday closed on its high on the week's best volume — that is follow-through. Stop to a weekly close under $65.54. RSI 69.7 and nearly 8% over the 50-day: I expect sideways next. The producers made the highs this week, not the refiners — this breakout now runs on crude."*
 
-**Cecil:** *"MPC from $393.52 is up 15.6% and ten percent through its target, on a quarter the Street just raised to $24.67. I hold because the margin widened, and I set my trim: a weekly close under $421.08, last week's low, means the crack is being faded. EOG at 9.6x, +4.8% this week, is still the cheapest quality barrel and the add if $65.54 goes. XOM at 38 cents from its record is a hold. SLB at 15.3x and 28% under target: Oct 23, then I decide. And Gran Tierra just voted to sell the assets I had it on the list for — next week we decide if it still belongs."*
+**Cecil:** *"I added EOG at Monday's $150.51 as promised; it closed $158.01 and at 10x with 4% to target that was the last add. XOM is through its target — hold, don't buy. MPC trim line moves up to $454.51, this week's low. VLO reports Thursday at 9.4x with estimates rising every week; I own it through the fund. GTE stays on the watch until its sale closes."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sun Oct 11, 2026): XLE, eleven large caps and five small caps (plus PBF), daily bars through the Fri Oct 9 close (auto-adjusted; last bar verified as Oct 9); weekly changes vs settled Fri Oct 2 daily-bar closes; 20D/50D/200D MAs, Wilder RSI(14); yields, forward P/E, mean targets, market caps (GPRK $752M, CRK $4.03B, AMPY $180M, GTE $372M, TUSK $136M; PBF $9.99B); XLE top-10 weights via funds_data; earnings-calendar dates and consensus EPS; CL=F, BZ=F, NG=F, HO=F, RB=F Friday bars (the Sunday-evening Oct 11 bars were discarded). WTI settled $91.85 CLX26 confirmed against data/market_state.json. CSVs in the workspace folder grid-c-2026-10-09
-- OPEC press release (Oct 4, 2026), Nairametrics, Enerdata, Reuters via ARY (Oct 4–5): seven core members hold November at 31.01 mb/d; next meeting Nov 1; capacity review deferred; Gulf exports 60–80% of normal
-- The National / Reuters / Bloomberg (Oct 5, 2026): Aramco November OSPs — Asia Arab Light -$5 (six-year low), Europe +$3, U.S. unchanged
-- EIA Weekly Petroleum Status Report (Oct 7, 2026, week ended Oct 2) via Admiral Markets preview, FinanceFeeds, Global Energy Flow: crude 424.1M (-3.2M), distillate 105.1M (flat; -13.5% y/y), gasoline 204.7M, SPR 283.0M (lowest since Oct 1982); next report Thu Oct 15
-- CNBC (Oct 8, 2026; article summary), CBS News live updates (Oct 8): WTI +3.6% to $91.49 Thursday; Trump Truth Social — no attacks on Iran before the midterms, blockade in full force; Kpler ~9.5 mb/d through Hormuz, ~30% below pre-war; nine tankers attacked in the week. Trading Economics (Oct 9): Brent ~$104.43, WTI ~$91.66 spot
-- Seatrade Maritime (Oct 7, 2026): Gulf of Oman VLCC fixtures $1.02–1.16M/day; ≥12 tankers attacked in the strait since Sep 29; JMIC risk ratings
-- Cyprus Mail, Nairametrics, OilPrice, Sinclair (Oct 2–3, 2026): G-7 100M-barrel release detail; completes the March 400M commitment; export-restriction pledge; U.S. threat of a diesel export ban. Investing.com / InvestingLive (Sep–Oct 2026): ULSD crack record $102.20 (September); refiner Q3 windfall previews
-- Gran Tierra 8-K and DEFA14A (Oct 9, 2026): stockholders approve the Maurel & Prom sale (~$1.33B incl. debt); Kalkine (Oct 5): Azerbaijan EDPSA ratified. Comstock Q2 call via RBN / Webull (July–Aug 2026, standing): Western Haynesville rig timing, guidance
-- Macro (full sourcing in wiki/tech.md and wiki/consumer-discretionary.md, Oct 11): 10Y 5.36% intraday / 5.24% close, FOMC minutes, UMich 46.3 (#156), DXY 102.21 (#115)
-- **Not re-sourced this week (flagged in the text):** G-7 release delivery data; Hormuz transit counts beyond the Kpler figure; Cushing stocks; Aramco November allocation volumes (prices only); the ULSD crack on the press benchmark (the $107 figure is HO–WTI from the bars); company news for AMPY and TUSK
-- **Cross-references: #116 (WTI >$5 move / de-escalation window, Sep 25), #109 (Aramco October cancellation), #106/#114/#123 (rate regime), #115 (DXY), #156 (consumer). No new issue this run: XLE +3.60% (±5%), WTI +$0.74 (±$5), OPEC+ held (no policy change), and the Oct 8 midterm pledge is recorded as neither an escalation nor a de-escalation event — a blockade kept in force with tankers under attack is the status quo, not a change in it.**
+- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 16, 2026, ~18:20 ET): XLE, eleven large caps, five small caps and PBF, daily bars through the Fri Oct 16 close (auto-adjusted; last bar verified as Oct 16); weekly changes vs settled Fri Oct 9 closes; 20D/50D/200D MAs, Wilder RSI(14); yields, forward P/E, mean targets, market caps (GPRK $0.76B, CRK $4.11B, AMPY $0.18B, GTE $0.39B, TUSK $0.13B; PBF $10.0B); XLE top-10 via funds_data (identical to Oct 11 — carried); earnings dates and consensus EPS; CL=F (CLX26), BZ=F (December), NG=F, HO=F, RB=F **Friday-evening last trades, not settlements**. Last week's WTI settle ($91.85 CLX26) from data/market_state.json. CSVs in the workspace folder grid-c-2026-10-16
+- Rigzone, BOE Report/Reuters, investingLive, FXEmpire (Oct 15–16, 2026): EIA week to Oct 9 — crude -8.6M to 415.6M, hurricane shut-ins, distillate -2.5M (12% under 5y), gasoline +3.5M, Cushing +1.9M, utilization 93.5%; SPR for the week not found
+- Rigzone, The National, CNBC, Washington Examiner, OilPrice (Oct 15–16, 2026): IEA agrees to release the remaining ~100M barrels incl. 20M+ diesel; ~330M released; analyst skepticism (Reuters)
+- OilPrice, FXStreet, Vantage Markets, CNBC live updates (Oct 16, 2026): oil weekly gain on Hormuz attacks and the U.S. draw; Kpler 11.62 mb/d vs 17.15 baseline (week to Oct 13). CNBC (Oct 9): 11 tankers attacked week to Oct 4. Sunday Guardian / Indian shipping minister (Oct 16): MT ST 3 struck
+- SEC 6-K (Oct 15, 2026): GeoPark Q3 operational update. Gran Tierra 8-K (Oct 9, standing): Maurel & Prom sale approval
+- CNBC / BLS (Oct 14): September CPI 3.7%, gasoline +9.1%. Bloomberg / CNBC (Oct 16): S&P worst week since June; Nasdaq -2% on AI worries and oil prices
+- **Not re-sourced this week (flagged in the text):** settled WTI/Brent/NG for Oct 16 (evening quotes used, labelled); tanker/VLCC rates; SPR for the week to Oct 9; the hurricane name and shut-in volume; G-7 release delivery data; company news for CRK, AMPY, GTE, TUSK, WMB (searched, none dated this week)
+- **Cross-references: #116 (WTI >$5 move, Sep 25), #109, #100, #115 (DXY), #159. New issue #169 opened this run: provisional WTI >$5/bbl weekly move. Other triggers not met: XLE +4.86% (under ±5%, by 14bp), OPEC+ no meeting / no policy change, no geopolitical step-change (continuing Hormuz attacks recorded as status quo).**
 
 ---
 
-> **Corrections to last week's page, logged here.** (1) The 52-week range is re-based to the adjusted bars ($41.43–$65.54 closing). (2) Fund weights moved materially in Yahoo's snapshot (integrateds 42.1%, refiners 14.0%); treated as a snapshot artefact, not a rebalance. (3) OPEC+ outcome, added Oct 4 by the verification pass, is confirmed.
+> **Corrections to last week's page, logged here.** (1) None to prices: all Oct 9 closes match the settled bars. (2) KMI's Yahoo date is now Oct 21, not Oct 28. (3) Last week's page called its top-ten weights "refreshed"; this week's snapshot is identical to the decimal, so the refiner weight (14.1%) is carried, not re-measured.
 
-*Last updated by Saturday Research Crew: 2026-10-11 (data as of Fri 2026-10-09 close; Grid C run, late — Sunday night)*
+*Last updated by Saturday Research Crew: 2026-10-16 (data as of Fri 2026-10-16 close; futures are Friday-evening last trades; Grid C run, Friday evening)*
 *Next update: Every Saturday 10:19 AM ET*
 *Data sources: Yahoo Finance, EIA, IEA, OPEC+, market data feeds*
