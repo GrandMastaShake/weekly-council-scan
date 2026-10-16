@@ -2,7 +2,7 @@
 
 > **Sector:** Communication Services | **ETF:** Communication Services Select Sector SPDR (XLC) | **Expense Ratio:** 0.08%
 >
-> *"A flat week that was anything but. XLC closed $110.38 (+0.05%) — six cents from where it started — after SpaceX agreed on Thursday night to pay a reported $8 billion for a nationwide low-band spectrum portfolio and said it intends to be a major mobile carrier. On Friday T-Mobile fell 13.3%, AT&T 9.8%, Verizon 8.7%, Charter 5.7%, Comcast 2.6%; three of the five closed at 52-week lows and the carriers traded four times their normal volume. The fund gave up 1.5% that day and still finished the week even, because Alphabet rose 2.4%, Netflix 4.8%, Disney 5.7% and Take-Two 5.3% over the four days before. The barbell I keep describing just had one end sawn off. A sector where a Thursday-night press release can take 9–13% out of three dividend stocks is not a defensive sector, and the yield sleeve I had at underweight is now the thing I was underweight for."* — Ophelia
+> *"Flat again — $110.32, down six cents — and for the second week the barbell swapped ends inside a flat number. Last week SpaceX took 9–13% out of the carriers on a Friday. This week they took most of it back: Verizon +7.5%, T-Mobile +7.1%, AT&T +5.7%, and the cable pair joined them, Charter +6.5% and Comcast +6.0%. The platforms paid for it. The Nasdaq had its worst week since June on AI-return worries and Meta (-1.3%), Alphabet (-3.2%) and Take-Two (-3.8%) went with it; Meta's print has moved up to Tuesday the 21st on Yahoo's calendar. Netflix confirmed the layoffs — about 1,000 jobs, roughly 6% — and finished flat. Skydance fell 25%, and that was a warrant distribution, not a collapse. No ruling, no miss, no ad-budget cut. A fund that is a third yield stock and a third AI stock does not need news to stand still; it needs the two halves to cancel, and they did."* — Ophelia
 
 ---
 
@@ -10,22 +10,22 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | $110.38 | $110.32 | **+0.05% W/W** — flat on the week; -1.5% Friday |
-| 52W Range | $105.03 – $119.00 (closing, adjusted bars) | $105.38 – $120.08 (carried) | Re-based to the adjusted series |
-| AUM | **$22.5B** (Yahoo totalAssets) | ~$22.4B (carried) | Re-published this pull |
-| YTD Return | **-5.4%** (price basis, adjusted bars) | ~-6.3% | Yahoo's total-return YTD figure is -4.9% |
-| 1Y Return | -0.9% (adjusted bars) | ~-4.1% | — |
-| P/E Ratio | 16.2 (trailing, Yahoo) | n/a last pull | — |
-| Dividend Yield | **1.24%** (Yahoo) | ~1.28% | — |
-| Beta | 0.85 (3Y, Yahoo) | ~0.84 (carried) | — |
-| Total Holdings | ~24 (carried) | — | WBD left on Oct 6; Skydance (SKYD) is its successor |
-| Avg Daily Volume | 5.7M this week (20D 6.2M) | ~7.8M | Friday 6.0M — an ordinary volume day for the fund on a day its telecoms traded 4x normal |
+| Price | $110.32 | $110.38 | **-0.05% W/W** — second flat week; the weekly close equals Oct 2's ($110.32) |
+| 52W Range | $105.03 – $119.00 (closing, adjusted bars) | $105.03 – $119.00 | Unchanged |
+| AUM | $22.5B (Yahoo totalAssets) | $22.5B | Yahoo figure unchanged from last pull |
+| YTD Return | **-5.4%** (price basis, adjusted bars) | -5.4% | Yahoo's total-return YTD field -4.9% (not refreshed) |
+| 1Y Return | -2.8% (adjusted bars) | -0.9% | Base date rolled |
+| P/E Ratio | 16.2 (trailing, Yahoo) | 16.2 | — |
+| Dividend Yield | 1.24% (Yahoo) | 1.24% | — |
+| Beta | 0.85 (3Y, Yahoo) | 0.85 | — |
+| Total Holdings | ~24 (carried) | — | WBD's slot is Skydance (SKYD) |
+| Avg Daily Volume | 6.8M this week (20D 6.7M) | 5.7M | No outsized day |
 
-Week path: Mon $111.61, Tue $111.65, Wed $111.26, Thu **$112.07** (high $112.08), Fri **$110.38** (low $110.33).
+Week path: Mon $111.45, Tue **$112.28** (over the 50D), Wed $110.82 (-1.3%), Thu **$112.44** (over the 50D again), Fri **$110.32** (-1.9%, low **$109.74**).
 
-**Marky Tape Read:** The map was $109.66 below and $111.19 above, and the fund spent four days above the line — $111.61, $111.65, $111.26, then Thursday's $112.07, which was a close over the 50D ($111.57) and the highest close in two weeks (Sep 25 was $112.96). I said a close over the 50D on a day that was not just Alphabet gets me long, and Thursday was Netflix (+2.7%), Disney, Take-Two and the telecoms (TMUS +2.2%, T +1.6%) as much as Alphabet. So I was long Thursday's close. Friday the spectrum news took the carriers apart and the fund fell 1.5% to $110.38, back under the 50D, on 6.0M shares — a normal day for the fund. The low was $110.33, 67 cents above the $109.66 line. So: a one-day reclaim, reversed by news in the next session, with the week's low still above last week's low. I am out at Friday's close, flat again, down about 1.5% on the trade. What I want noted: the three carriers, 12.5% of this fund by the Oct 11 weights, lost 9–13% Friday, Charter and Comcast made 52-week lows beside them, and the fund lost 1.5%. The other 87% is why. RSI 45.4, unchanged. Levels: **$109.66** below (last week's low), **$111.57** (the 50D) and **$112.08** (Thursday's high) above, then the 200D at $113.03.
+**Marky Tape Read:** Two more one-day reclaims of the 50-day, on Tuesday and Thursday, each lost the next session. That is four one-day reclaims in four weeks, and I took none of this week's, because last week I said I would not trade the middle of the $109.66–$112.08 range and I needed a close over $112.08 that held a second day. Tuesday closed $112.28 and Thursday $112.44 — both through the line — and neither held. So the range top is now a $112.08–$112.44 zone that fails, and the bottom held by eight cents: Friday's low was **$109.74** against the **$109.66** line. RSI 45.9, the 20-day ($111.80) and 50-day ($111.68) sitting flat on top of each other, the 200-day at $112.89. A coil this tight on flat averages resolves on news, and the news is two sessions away — Netflix reports the 20th, Meta the 21st. Levels: **$109.66** (the floor, now tested twice), **$112.44** (this week's high close), $112.89 (200D). Bias: **neutral, flat**. A close under $109.66 opens $105.03.
 
-**Ophelia Macro Read:** The macro was a non-event for this sector until Thursday night, and then the macro was not what moved it. 10Y **5.24%** (-4bp), 5.36% intraday Wednesday; FOMC minutes said another hike is coming, timing open; DXY **102.21**, a fourth straight weekly gain (#115) — translation drag for the platforms, unchanged. UMich prelim October **46.3**, current conditions at an all-time low (#156): the ad cycle's leading indicator got worse again and still no budget-cut announcement was found. **The event: on Thursday evening, Oct 8, SpaceX said it agreed to acquire a nationwide low-band spectrum portfolio (800 MHz band, up to 14 MHz paired) from Grain Management — which bought the licenses from T-Mobile — and Musk called it the last piece needed for complete U.S. phone coverage under Starlink Mobile.** The WSJ put the price at $8B cash; the companies disclosed no terms; the FCC must approve. SpaceX's COO had said in August it would build a terrestrial network and go after the three carriers' customers. The reaction was the trade: **T -9.8%, VZ -8.7%, TMUS -13.3%** on Friday alone, on 3.7–4.3x their 20-day volume; Charter -5.7%, Comcast -2.6%; tower stocks rose (the real-estate page has that side). Analysts' objections — 14 MHz is small, 800 MHz propagates worse than 600, indoor urban coverage needs ground towers SpaceX does not have — are correct and did not matter on the day. Two other items: **the WBD–Paramount Skydance merger closed Tue Oct 6** after Justice Kagan declined to halt it; the combined company trades as **Skydance (SKYD, NYSE)** with ~$80B of debt and a Fitch cut to BB; it closed the week $9.16. And **Netflix is reported (Puck, Oct 9) to be preparing a 5% workforce cut**, ~800 jobs, possibly announced the week of Oct 12; Barclays cut its target to $70 and Morgan Stanley to $80 the same week — and the stock rose 4.8%.
+**Ophelia Macro Read:** The rate file helped and the sector did not care. 10Y **5.10%** (-14bp) and 30Y **5.44%** (-16bp) on a flight from tech into bonds after a hot September CPI (3.7% y/y, core 2.6%; released Wed Oct 14). That helped the yield sleeve — VZ's 6.4% yield is now 127bp over the 10-year. It did nothing for the platforms, which were the thing being sold: the Nasdaq fell ~2% on Friday on worries that AI spending has outrun its returns (CNBC, TheStreet), and the S&P had its worst week since June (Bloomberg). VIX **19.99** from 14.84. DXY **101.78** Fri evening (-0.4%), still above the 101 line (#115). On ad budgets: **no Q4 ad-budget cut announcement found this week**. The Information (via TipRanks) reported marketers signalling up to 10% cuts to entertainment and news TV programming next year while Google and Meta see little pullback — the article is undated in the results and is not filed as a trigger. **Antitrust:** the Google ad-tech proposed final judgment (filed Oct 2 with competing six- and 12-month timelines) **had not been entered as of Oct 14** per PPC Land; no ruling, no notice of appeal. **Wireless:** no FCC action found on the SpaceX–Grain spectrum transfer; the carriers recovered roughly half or more of the Oct 9 drop without new news.
 
 ---
 
@@ -33,32 +33,30 @@ Week path: Mon $111.61, Tue $111.65, Wed $111.26, Thu **$112.07** (high $112.08)
 
 | Rank | Ticker | Name | Weight | Price | Change † | Fwd P/E | Yield | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | META | Meta Platforms | 22.2% | $718.67 | -1.29% | 20.8 | 0.3% | $799.00 (+11.2%) | ⚡ |
-| 2 | GOOGL | Alphabet (Class A) | 11.6% | $351.66 | **+2.38%** | 23.1 | 0.3% | $429.47 (+22.1%) | ⚡ |
-| 3 | GOOG | Alphabet (Class C) | 9.3% | $347.86 | +2.21% | 22.9 | 0.3% | $420.36 (+20.8%) | ⚡ |
-| 4 | SKYD | Skydance (fka WBD / PSKY) | 4.9% (WBD's slot) | $9.16 | -3.58% ‡ | 15.3 | 2.2% | $9.73 (+6.3%) | ⚠️ |
-| 5 | DIS | Walt Disney | 4.5% | $108.05 | **+5.73%** | 14.5 | 1.4% | $126.49 (+17.1%) | ⚡ |
-| 6 | TTWO | Take-Two Interactive | 4.4% | $213.44 | **+5.28%** | 20.7 | — | $286.44 (+34.2%) | ⚡ |
-| 7 | T | AT&T | 4.3% | $22.18 | **-7.69%** | 8.6 | 5.0% | $28.80 (+29.9%) | 🔴 |
-| 8 | **APP** | **AppLovin (new to tracking)** | **4.2%** | $277.04 | +3.29% | 13.3 | — | $487.66 (+76.0%) | ⚡ |
-| 9 | VZ | Verizon | 4.1% | $41.65 | **-7.89%** | 7.9 | 6.8% | $51.24 (+23.0%) | 🔴 |
-| 10 | TMUS | T-Mobile US | 4.1% | $148.58 | **-9.20%** | 10.3 | 3.2% | $241.50 (+62.5%) | 🔴 |
-| — | NFLX | Netflix | (outside top 10 this snapshot) | $70.30 | **+4.83%** | 18.5 | — | $92.55 (+31.7%) | ⚡ |
-| — | CMCSA | Comcast | (outside top 10 this snapshot) | $20.66 | -2.73% | 5.8 | 6.4% | $28.85 (+39.7%) | 🔴 |
-| — | CHTR | Charter Communications | (outside top 10) | $103.38 | **-5.41%** | 2.2 | — | $176.50 (+70.7%) | 🔴 |
+| 1 | META | Meta Platforms | 22.2% | $709.33 | -1.30% | 20.5 | 0.3% | $814.51 (+14.8%) | ⚠️ |
+| 2 | GOOGL | Alphabet (Class A) | 11.6% | $340.59 | **-3.15%** | 22.3 | 0.3% | $430.51 (+26.4%) | ⚠️ |
+| 3 | GOOG | Alphabet (Class C) | 9.3% | $336.91 | -3.15% | 22.0 | 0.3% | $420.79 (+24.9%) | ⚠️ |
+| 4 | SKYD | Skydance (WBD's slot) | 4.9% (stale WBD line) | **$6.91** | **-24.56% ‡** | 34.8 | 2.8% | $8.87 (+28.4%) | 🔴 |
+| 5 | DIS | Walt Disney | 4.5% | $110.59 | +2.35% | 14.8 | 1.4% | $126.65 (+14.5%) | ⚡ |
+| 6 | TTWO | Take-Two Interactive | 4.4% | $205.28 | **-3.82%** | 19.9 | — | $286.44 (+39.5%) | ⚠️ |
+| 7 | T | AT&T | 4.3% | $23.44 | **+5.68%** | 9.1 | 4.7% | $28.76 (+22.7%) | ⚡ |
+| 8 | APP | AppLovin | 4.2% | $266.13 | -3.94% | 13.0 | — | $480.08 (+80.4%) | ⚠️ |
+| 9 | VZ | Verizon | 4.1% | $44.79 | **+7.54%** | 8.5 | 6.4% | $51.24 (+14.4%) | 🔥 |
+| 10 | TMUS | T-Mobile US | 4.1% | $159.10 | **+7.08%** | 11.0 | 3.0% | $236.84 (+48.9%) | ⚡ |
+| — | NFLX | Netflix | (outside top 10) | $70.53 | +0.33% | 18.6 | — | $91.39 (+29.6%) | ⚠️ |
+| — | CMCSA | Comcast | (outside top 10) | $21.90 | **+6.00%** | 6.1 | 6.1% | $28.63 (+30.7%) | ⚡ |
+| — | CHTR | Charter Communications | (outside top 10) | $110.11 | **+6.51%** | 2.3 | — | $173.17 (+57.3%) | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / new lows
-> † Weekly change vs settled Fri 10/2 close (adjusted bars; all prior closes match last week's page except AT&T, VZ and TMUS, which are on the same series — no restatements); prices are Fri 10/9 closes; forward P/E, yields and targets from the Oct 11 Yahoo pull. ‡ SKYD vs PSKY's Oct 2 close of $9.50 — the Paramount Skydance line continued as the acquirer. **Weights refreshed (Yahoo funds_data, Oct 11): META 22.2%, GOOGL 11.6%, GOOG 9.3%, WBD 4.9% (stale — WBD delisted Oct 6; shown here as the Skydance slot), DIS 4.5%, TTWO 4.4%, T 4.3%, APP 4.2%, VZ 4.1%, TMUS 4.1%.** Two things changed in the snapshot: **AppLovin is a top-ten holding this page has never tracked** — added; **Netflix and Comcast fall outside the top ten** and stay tracked. Meta plus both Alphabet classes read **43.1%** of the fund, up from 35.3% a week ago — a shift that size in a week is Yahoo's snapshot methodology, not a rebalance, and the concentration should be read as "about 35–43%" until the next pull agrees with itself.
+> † Weekly change vs settled Fri 10/9 close (adjusted bars; all prior closes match last week's page — no restatements); prices are Fri 10/16 closes (last bar verified as Oct 16); forward P/E, yields and targets from the Oct 16 Yahoo pull. ‡ **SKYD's -24.6% is a corporate action:** on Wed Oct 14 ~470.7M warrants (exercise $12) separated from the Class B shares and the stock went ex-distribution — a technical reset, not a business event (Fool, Variety, Invezz). **Weights: Yahoo funds_data returned the identical top ten as the Oct 11 pull, WBD still listed** — the snapshot was not refreshed, so weights are carried. On it, Meta plus both Alphabet classes are **43.1%**; this page still reads concentration as "about 35–43%" until a pull refreshes. No entries or exits.
 
-**The telecom sleeve — one night.** Through Thursday's close the three carriers were up on the week (TMUS +4.7%, T +2.3%, VZ +0.9%). Friday: **TMUS -13.3% to $148.58**, a 52-week closing low on 19.0M shares (3.7x normal); **T -9.8% to $22.18** on 150M shares (3.9x), its lowest close since July 21; **VZ -8.7% to $41.65** on 95M (4.3x), lowest since July 10. The three were 12.5% of the fund at Thursday's weights. T-Mobile fell most although it is the carrier that sold Grain the spectrum and the one that already carries Starlink's satellite-to-phone service as T-Satellite — the market treated the partner as the most exposed, and the trade press argued the opposite. VZ's yield is now **6.8%**, 155bp over the 10-year; T's is 5.0%, 24bp under it. Prints: T Oct 21, VZ Oct 26, TMUS Oct 28.
+**The carriers took back most of Friday.** From the Oct 8 close (before SpaceX) to the Oct 9 low close and back: **VZ recovered 79%** of its drop ($45.64 → $41.65 → $44.79), **AT&T 52%** ($24.59 → $22.18 → $23.44), **T-Mobile 46%** ($171.31 → $148.58 → $159.10). Each rose on four of five sessions. No new news explains it — no FCC action, no carrier statement found; Barron's had TMUS +1% premarket Monday. This is the analysts' objections (14 MHz, no towers, an FCC process) being priced a week late. The cable pair went further: **CHTR +6.5% to $110.11 and CMCSA +6.0% to $21.90 both closed above their Oct 8 levels** — the whole SpaceX move undone — after making 52-week lows last Friday. Prints: **T Oct 21, CMCSA Oct 22, VZ Oct 26, TMUS Oct 28**, CHTR Nov 6.
 
-**Broadband — week five, with help.** **CHTR -5.4% to $103.38** and **CMCSA -2.7% to $20.66**, both new 52-week closing lows on Friday, both down 5.7% / 2.6% that day on the same spectrum news (a fourth wireless entrant is also a fourth bundler). Charter is 2.2x forward. CMCSA reports Oct 22; **CHTR's Yahoo date moved to Nov 6** from the Oct 30 this page carried.
+**The platforms paid for it.** **META -1.3% to $709.33**: +3.4% Monday, +2.6% Tuesday to $762.50, then -3.3% Wednesday (TradingKey tied it to AI-capex anxiety and pre-earnings profit-taking) and -3.7% Friday. Goldman raised its target to $860 from $725 (Buy); Investing.com reported Muse reached 5M downloads in 22 days after its Sep 8 launch — a data point against last week's Hunterbrook short report. **Yahoo now dates Meta's Q3 on Wed Oct 21** (EPS est. $6.76) — not the Oct 28 this page carried; several outlets give Oct 21. **GOOGL -3.2% to $340.59**, back under its 20D ($346.41) and 50D ($344.49), sitting on its 200D ($340.56) — no company news found; it fell with the AI tape (-1.7% Wed, -2.5% Fri). **APP -3.9%** to $266.13, within $4 of its 52-week closing low ($262.19, Wed).
 
-**The platforms held, differently.** **GOOGL +2.4% to $351.66**, back above its 50D ($346.14) and the week's steady leg; nothing on the ad-tech appeal was found (no filing confirmed), and on Oct 1 Judge Mehta dismissed the Chegg and Penske suits over AI search summaries. **META -1.3% to $718.67** — up 1.9% Monday, then down each of the next four days: a Hunterbrook short report on Friday arguing Muse downloads are slowing, a ban on TikTok ads across its U.S. platforms (Oct 8), and a CNBC item that the President bought up to $25M of META in August. It sits on its 20D ($719.05), well above the 50D ($639). Both report Oct 28. **APP +3.3% to $277.04** — tracked from here; 13.3x forward with a 76% gap to a $488 target is the widest in the fund, and it reports Nov 4.
+**Entertainment.** **NFLX +0.3% to $70.53**: Netflix **confirmed the layoffs on Wed Oct 14** — about 1,000 jobs, ~6% of staff, product/tech/legal/HR most affected, per a memo from the co-CEOs, with the company saying it remains on track for its full-year forecast; the stock rose 2.9% Thursday and gave it back Friday. It reports **Tue Oct 20**. **DIS +2.4%** to $110.59, no headline found; Yahoo moved its print to Nov 17. **TTWO -3.8%** to $205.28, no company news found; GTA VI still dated Nov 19. **SKYD $6.91** — after the warrant separation it needs +74% to reach the $12 strike; ~$80B net debt against ~$11.2B expected EBITDA (Fool).
 
-**Entertainment bounced from its lows.** **NFLX +4.8% to $70.30** — four straight up days from the 52-week low to Thursday's $71.57, then -1.8% Friday on the layoff report; Barclays ($70) and Morgan Stanley ($80) cut targets into it; reports **Oct 20**. **DIS +5.7% to $108.05**, its best week since early August, no company headline found. **TTWO +5.3%** to $213.44, GTA VI still dated Nov 19. **SKYD $9.16** (-3.6% on the PSKY line) in its first week as the combined company: $80B of debt, Fitch BB, $9.73 mean target.
-
-**Cecil Fundamental Read:** My Netflix half from $71.15 is $70.30 — the stock recovered its 52-week low in four days, then gave a third of it back on a report it is cutting 800 jobs, which is the kind of thing a company does three weeks before a print it expects questions about. I hold through Oct 20. The telecoms: I keep VZ, and I bought more at Friday's close, $41.65 — 7.9x forward, 6.8% yield, 155bp over the 10-year, on a competitor that has 14 MHz of spectrum, no towers, and an FCC approval to get. That is the first time in two months a fall in this sector has looked like a price to me rather than a verdict. T at 8.6x I do not add; its yield is under the risk-free rate and its fiber build is the thing a satellite entrant actually threatens. TMUS at 10.3x and 62% under target is the cheapest it has been in years and I want to see Oct 28 — it sold the spectrum and partners with the buyer, and the stock fell 13% anyway, which tells me the market does not know what it thinks. GOOGL at 23.1x stays the highest-conviction hold. META at 20.8x with a short report and a presidential shareholder: hold. CHTR at 2.2x is still a verdict. APP I am reading for the first time.
+**Cecil Fundamental Read:** My Verizon add at $41.65 is +7.5% in a week, and I am glad I did it, and I am not adding at $44.79: the yield is 6.4% now, not 6.8%, and the carriers have priced the SpaceX objections that took me a day to write. TMUS at 11.0x with 49% to target recovered least of the three; it reports the 28th with T-Satellite and the Grain sale to explain — that is the one I would buy before the print if anything. AT&T stays a pass: yield 4.7% against a 5.10% 10-year. Netflix half from $71.15 is $70.53 into Tuesday; the layoff is confirmed and the full-year guide reaffirmed, which is the floor I wanted, and I hold through the print. Meta at 20.5x into a print that moved a week earlier: hold, with Goldman and Muse's 5M downloads on one side and capex on the other. GOOGL at 22.3x on its 200-day is the highest-conviction hold and the first platform I would add to under $335. SKYD at $6.91: the warrant mechanics explain the price; the $80B of debt explains why I do not care.
 
 ---
 ## SMALL/MID-CAP WATCH
@@ -67,23 +65,23 @@ Week path: Mon $111.61, Tue $111.65, Wed $111.26, Thu **$112.07** (high $112.08)
 
 | Ticker | Name | Price | Cap (verified) | Weekly | Sector Niche | Signal |
 |---|---|---|---|---|---|---|
-| MGNI | Magnite | $25.40 | $3.64B | +2.71% | Sell-side ad-tech / CTV programmatic | ⚡ |
-| ZD | Ziff Davis | $56.52 | $1.94B | +2.39% | Digital media / net-cash cannibal | ⚡ |
-| CCOI | Cogent Communications | $8.54 | $0.44B | +0.95% | Fiber ISP / alt-telecom (distressed) | ⚠️ |
-| PPLI | People Inc (fka IAC) | $40.89 | $3.04B | -0.94% | Digital media rollup / MGM option | ⚡ |
-| CARG | CarGurus | $28.85 | $2.57B | **-3.90%** | Auto marketplace / ad-tech | ⚠️ |
+| MGNI | Magnite | $23.37 | $3.35B | **-7.99%** | Sell-side ad-tech / CTV programmatic | ⚠️ |
+| ZD | Ziff Davis | $57.15 | $1.96B | +1.11% | Digital media / net-cash cannibal | ⚡ |
+| CCOI | Cogent Communications | $8.07 | $0.41B | -5.50% | Fiber ISP / alt-telecom (distressed) | 🔴 |
+| PPLI | People Inc (fka IAC) | $38.76 | $2.89B | -5.21% | Digital media rollup / MGM option | ⚠️ |
+| CARG | CarGurus | $30.28 | $2.70B | **+4.96%** | Auto marketplace / ad-tech | ⚡ |
 
-> **Cap verification (Fri 10/9 quotes):** all five confirmed UNDER $5B — MGNI $3.64B, PPLI $3.04B, CARG $2.57B, ZD $1.94B, CCOI $0.44B. MGNI kept per the 9/8 rotation rule (the Google read-through) while under $5B. No rotations.
+> **Cap verification (Fri 10/16 quotes):** all five confirmed UNDER $5B — MGNI $3.35B, PPLI $2.89B, CARG $2.70B, ZD $1.96B, CCOI $0.41B. MGNI kept per the 9/8 rotation rule (the Google read-through) while under $5B. No rotations.
 
-**MGNI (+2.71%, $3.64B cap):** $25.40, 27 cents under its 52-week closing high ($25.67), above both averages, +56% YTD; Friday high $25.86. Nothing new on the Google final judgment or an appeal was found this week — the signature date is still the catalyst and still unknown. Reports Nov 4. **Council Read:** the rotation thesis is intact; the stock is pricing the remedy before the remedy has a date.
+**MGNI (-7.99%, $3.35B cap):** $23.37, from 27 cents under its 52-week closing high last week to $2.30 under it; closed under both its 20D ($24.74) and 50D ($24.31) Friday. Catalyst: **Oct 14 — a three-year extension of the Magnite–LG Ad Solutions partnership** (agentic buying on the LG home screen); the stock fell 5.7% that day anyway. A director sold 12,500 shares Oct 12 at $25.29 under a 10b5-1 plan. The Google ad-tech judgment is still not entered (PPC Land, Oct 14). Reports Nov 4. **Council Read:** good news, red tape — the ad-tech names traded with the AI/growth selloff, not on their own file.
 
-**ZD (+2.39%, $1.94B cap):** $56.52, above its 50D ($55.68); catalyst: **Yorkville Ives initiated at Outperform with a $68 target** (Oct, undated to the day in the coverage found). The Connectivity sale to Accenture ($1.2B cash, announced March) remains the balance-sheet story. 9.4x forward. **Council Read:** the ballast, with a new sponsor.
+**ZD (+1.11%, $1.96B cap):** $57.15, a fourth week above its 50D ($56.13); -2.0% on Oct 14 (Morningstar), recovered the rest of the week. No company news found. 9.6x forward, $63.67 mean target. **Council Read:** the ballast did its job in a week the growth names fell.
 
-**CCOI (+0.95%, $0.44B cap):** the week's strangest tape — a run from $8.46 to a **$10.31 high on Thursday**, then **-10.7% on Friday** to $8.54 with the carriers. No filing or company news found for the run-up. **Council Read:** a $440M distressed fiber name that traded like a meme into the SpaceX news and then like a telecom on it. Tracking only; a 22% intraweek swing on nothing is not a signal.
+**CCOI (-5.50%, $0.41B cap):** $8.07, 73 cents above its 52-week closing low ($7.34); the week's low was $7.06 intraday (Wed). Friday volume 4.6M against a 2.0M average. No filing or company news found. **Council Read:** last week it ran like a meme and fell like a telecom; this week the carriers bounced and it did not. That is a credit name, not a telecom.
 
-**PPLI (-0.94%, $3.04B cap):** $40.89. No MGM bid; nothing new found since the CEO's "could pursue" remark two weeks ago. Reports Nov 2. **Council Read:** an option with no counterparty activity for a third week. Cecil's small size stays small.
+**PPLI (-5.21%, $2.89B cap):** $38.76, -3.5% on Friday, back under its 200D ($40.59); no MGM news found for a fourth week. Reports Nov 2. **Council Read:** the option still has no counterparty and the market is pricing the wait.
 
-**CARG (-3.90%, $2.57B cap):** $28.85, RSI 30, below both averages, lowest close since mid-June; $1.89 above the $26.96 low this page flagged. UMich 46.3 with current conditions at an all-time low is its macro; Barclays' $40 target stands. 9.5x forward. **Council Read:** the consumer file keeps getting worse and this is the consumer name on the list. The $26.96 level is now close enough to matter.
+**CARG (+4.96%, $2.70B cap):** $30.28, off last week's RSI-30 lows; still under its 50D ($33.45). No company news found. Reports Nov 5. **Council Read:** a bounce from oversold in a week the consumer file did not change; the $26.96 low is still the line.
 
 ---
 
@@ -92,20 +90,21 @@ Week path: Mon $111.61, Tue $111.65, Wed $111.26, Thu **$112.07** (high $112.08)
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $119.00 (adjusted) | Resistance |
-| Sep 21 close | $114.75 | The highest close since mid-August — the lower high |
-| 200-Day MA | $113.03 | Not reclaimed |
-| 20-Day MA | $112.10 | — |
-| Thursday High / Close | $112.08 / $112.07 | The reclaim that lasted one session |
-| **50-Day MA** | **$111.57** | Reclaimed Thursday, lost Friday — the second one-day reclaim in three weeks |
-| Current Price | $110.38 | Fri 10/9 close; +0.05% W/W |
-| Friday Low | $110.33 | Above last week's low |
-| **Week Low (prior)** | **$109.66** | Oct 1 intraday; the line |
+| Sep 25 weekly close | $112.96 | The last weekly close above the 200D zone |
+| 200-Day MA | $112.89 | Not reclaimed |
+| **Week High Close** | **$112.44** | Thu — the fourth one-day reclaim of the 50D in four weeks |
+| Old range top | $112.08 | Closed through twice this week; held neither time |
+| 20-Day MA | $111.80 | Flat |
+| **50-Day MA** | **$111.68** | Flat; closed above it Tue and Thu, below it the other three days |
+| Current Price | $110.32 | Fri 10/16 close; -0.05% W/W |
+| **Friday Low** | **$109.74** | Eight cents above the line |
+| **Range Floor** | **$109.66** | Oct 1 intraday; tested twice, held twice |
 | Major Support | $105.03 | 52-week closing low (Jul 23, adjusted) |
-| RSI (14) | 45.4 | From 45.2 |
+| RSI (14) | 45.9 | From 45.4 |
 
-**Marky Setup Assessment:** I took the long at Thursday's close by my own rule — over the 50D on broad participation — and I am out at Friday's, which is what the rule says to do when the thing that got you in reverses the next day. Cost: about 1.5%. What the week leaves on the chart: the fund has now reclaimed and lost the 50-day twice in three weeks, each time for one session, and each time the loss came from a different part of the fund (Meta two weeks ago, the carriers now). That is a fund with no leadership, only rotation inside it. Friday's low ($110.33) held above $109.66, so the structure is not broken — a range, $109.66 to $112.08, with the 50D in the middle. I do not trade the middle. A close over **$112.08** that holds a second day gets me long for the 200D at $113.03; a close under **$109.66** opens $105.03. On the telecom sleeve specifically: TMUS, CHTR and CMCSA closed on their lows for the year with volume 4x normal in two of the three — that is capitulation volume, and capitulation on a news event usually gets a bounce. I am not trading it; I note it.
+**Marky Setup Assessment:** The rule I set was a close over $112.08 that holds a second day. I got the close twice and the second day neither time, so I did not trade, and the rule saved me two round trips. What the chart says now: flat 20-day and 50-day within 12 cents of each other, a 200-day 1.2% overhead, a floor at $109.66 tested on Friday and held by eight cents. That is a coil. The direction will come from Meta on the 21st and Alphabet on the 28th, which are 43% of the fund on Yahoo's stale snapshot and are trading with the Nasdaq this week, not with the carriers. I am flat. A close under $109.66 opens $105.03 and I would short that; a close over $112.89 (the 200D) that holds a day gets me long. On the inside, the carriers' capitulation volume from last Friday got its bounce — VZ recovered 79% in a week — which is exactly what capitulation on news usually does. I noted it and did not trade it; that was the right call for my rules and the wrong one for my P&L.
 
-**The relative strength story:** XLC **+0.05% vs SPY +1.2%** (a record close) — lagging again. YTD: XLC -5.4% vs SPY +15.1%, a 20-point gap, unchanged.
+**The relative strength story:** XLC **-0.05% vs SPY -2.0%** — a two-point outperformance, entirely because the yield half bounced while the index sold off. YTD: XLC -5.4% vs SPY +12.8%, an 18-point gap (from 20).
 
 ---
 
@@ -113,118 +112,117 @@ Week path: Mon $111.61, Tue $111.65, Wed $111.26, Thu **$112.07** (high $112.08)
 
 | Factor | Level | Implication for XLC |
 |---|---|---|
-| **Wireless Competition** | **Thu Oct 8 (after hours): SpaceX to acquire Grain Management's nationwide low-band (800 MHz) spectrum — WSJ: $8B cash; terms undisclosed; FCC approval required; "major mobile carrier" intent stated** | **TMUS -13.3%, T -9.8%, VZ -8.7% Friday; three 52-week lows across telecom/cable.** Not an enumerated trigger for this page (no platform miss, no ruling, no ad cut) — recorded here and in the cron log; the Synthesis may want it |
-| 10Y Treasury | **5.24% Fri close** (-4bp); 5.36% intraday Wed (highest since 2002); 30Y 5.60% | The yield sleeve's arithmetic after Friday: VZ 6.8% is ~155bp over the 10-year; T 5.0% is ~24bp under it |
-| Fed / Curve | FOMC minutes (Oct 7): another hike coming, timing unspecified; October ~17–20%; FOMC Oct 27–28 — still the day META, GOOGL and TMUS report | Unchanged; the minutes added nothing |
-| Consumer / Ad Budgets | **UMich prelim Oct 46.3; current conditions at an all-time low (#156)**; **no Q4 ad-budget cut announcement found** | The leading indicator worsened for a third week; the alarm still has not sounded. Q3 calls (Oct 28) are where it would |
-| AI Capex / Agents | Hunterbrook short report (Oct 9): Muse downloads slowing; Meta bans TikTok ads (Oct 8); Amazon has blocked Meta's agents (standing) | The capex-return question now has a short seller attached to it, three weeks before the print |
-| Google Ad-Tech Remedy | **No filing or appeal confirmed this week** (the Oct 2 proposed-judgment deadline remains unverified); Oct 1: Mehta dismissed the Chegg / Penske AI-summary suits | Not a ruling. The MGNI read-through is unchanged |
-| Corporate Action | **WBD–Paramount Skydance closed Oct 6 → Skydance (SKYD, NYSE)**, ~$80B debt, Fitch BB; **Netflix 5% layoff report (Puck, Oct 9)**; MGM ⇄ PPLI dormant | WBD's 4.7–4.9% slot is now a levered studio at $9 |
-| DXY | 102.21 (+0.3% W/W; #115) | Fourth straight weekly gain; translation drag for the platforms |
-| Broadband Repricing | **Week 5:** CMCSA and CHTR at new 52-week lows, now with a satellite bundler in the story | Still pre-paying for the late-October prints; CHTR's date slipped to Nov 6 |
-| VIX | 14.84 (-3%) | Calm at the index; the dispersion inside this sector on Friday (carriers -9 to -13%, fund -1.5%) is the widest this page has recorded |
+| **AI-return selloff** | Nasdaq -2% Fri; S&P worst week since June (Bloomberg); CNBC/TheStreet: worry that AI spend has outrun returns; tech-to-bonds rotation Wed–Thu | The platforms (META, GOOGL, APP, TTWO) fell; ~half the fund trades as AI |
+| 10Y Treasury | **5.10%** (-14bp); 30Y **5.44%** (-16bp) | Helped the yield sleeve: VZ 6.4% is ~127bp over the 10-year, T 4.7% ~40bp under |
+| Inflation / Fed | Sep CPI 3.7% y/y (hot), core 2.6%; FOMC Oct 27–28; Bloomberg headline Oct 16 on rate-hold expectations after Warsh remarks (content not read) | Odds not re-sourced; the hot print and the bond rally pull in opposite directions |
+| Consumer / Ad Budgets | **No Q4 ad-budget cut announcement found.** The Information (via TipRanks, undated in results): marketers signal up to 10% cuts to entertainment/news TV next year; Google and Meta see little pullback | Not filed as a trigger (no dated announcement). Points at Disney/Comcast linear, not the platforms |
+| **Google Ad-Tech Remedy** | Proposed final judgment filed Oct 2 (competing 6- and 12-month timelines); **not entered as of Oct 14** (PPC Land); no appeal notice | No ruling — no trigger. MGNI waits |
+| **Wireless Competition** | No FCC action found on SpaceX–Grain; carriers recovered 46–79% of the Oct 9 drop | The objections got priced. The FCC process and the carriers' Oct 21/26/28 calls are next |
+| Corporate Action | **SKYD: ~470.7M warrants ($12 strike) separated Oct 14 → -23.8% that day**; **Netflix layoffs confirmed Oct 14 (~1,000, ~6%)** | Both mechanical/structural, neither a trigger |
+| DXY | 101.78 Fri evening (-0.4%; #115 still above 101) | First down week in five; small help for platform translation |
+| VIX | 19.99 (+5.2 pts) | Higher; the dispersion inside the fund was carriers +6–8% vs platforms -1 to -4% |
 
-**Ophelia Verdict:** The framework holds and the weights change again, in the direction I did not expect. **Platforms: market-weight, unchanged** — Alphabet did the work for a second week, Meta is now carrying a short report into its print, and the two are somewhere between 35% and 43% of the fund depending on which Yahoo snapshot you believe. **Broadband: zero, unchanged** — a fifth week of lows, now with a new reason. **Telecom yield: from underweight to market-weight** — I had it underweight because of the long end, and the long end eased 4bp while the sleeve lost 8–13% on a press release. A press release is a different risk from a bond yield, and it is one that gets analysed over the next month: 14 MHz of 800 MHz, no towers, an FCC process. Verizon at 6.8% with 155bp over the 10-year is the kind of number that pulls the income buyers back in once the headline ages; Cecil bought and I do not disagree. **Entertainment: avoid until Netflix prints on the 20th** — the +4.8% week does not change that; the layoff report does not either. No issue from this desk: XLC +0.05% is inside its band, no platform has reported, no antitrust ruling landed, no ad-budget cut was announced. The SpaceX spectrum deal is the week's event and is not on this page's trigger list; it is logged for the Synthesis, and if the FCC acts on it, that is the next dated item.
+**Ophelia Verdict:** **Platforms: market-weight, unchanged** — they fell with AI, not on their own news, and Meta's print is now Tuesday the 21st, a week earlier than I had it. Muse at 5M downloads in 22 days and Goldman's $860 target are on one side; 2026 capex of $130–145B is on the other; the print decides. **Telecom yield: market-weight, unchanged** — last week I moved it up from underweight on the thesis that the SpaceX objections would be priced over a month. It took a week. Verizon at 6.4% is no longer the price it was at 6.8%; I hold the weight and do not chase. **Broadband: from zero to underweight** — CHTR and CMCSA undid the entire SpaceX move and closed above their Oct 8 levels; I still think the subscriber story is bad, but at 2.3x and 6.1x forward the stocks have stopped going down on it. **Entertainment: avoid until Netflix prints on the 20th**, unchanged; the layoff is confirmed and the full-year guide reaffirmed. No issue from this desk: XLC -0.05% (±5%), no platform has reported, no ruling entered, no ad-budget cut announced; Skydance's -25% is a warrant distribution.
 
 ---
 ## THE WEEKLY NARRATIVE — What's Actually Moving XLC
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: Four Quiet Days, Then SpaceX Took 9–13% Out of the Carriers
+### This Week's Story: The Carriers Take It Back, the Platforms Give It Up
 
-XLC closed **$110.38, +0.05%** — flat on the week, after a 1.5% fall on Friday that erased a four-day climb.
+XLC closed **$110.32, -0.05%** — flat for a second week, and at exactly the price it closed on October 2 — while the S&P 500 fell 2.0%.
 
-**Thursday night, October 8.** SpaceX announced an agreement to acquire a nationwide portfolio of low-band spectrum in the 800 MHz band from Grain Management, the investment firm that had bought the licenses from T-Mobile. The Wall Street Journal reported the price as $8 billion in cash; the companies disclosed no terms, and the FCC must approve the transfer. Musk described the spectrum as the final piece needed to offer complete phone coverage across the United States under Starlink Mobile, and SpaceX had said in August it intends to build a terrestrial network and compete for the carriers' customers.
+**The telecom bounce.** A week after SpaceX's spectrum purchase knocked 9–13% off the three national carriers in a session, they recovered much of it without new news. Verizon rose 7.5% and won back about four-fifths of the drop; T-Mobile (+7.1%) and AT&T (+5.7%) recovered about half. Charter (+6.5%) and Comcast (+6.0%) closed above their pre-announcement levels. No FCC action on the transfer was found. Analysts' objections from the week before — a small slice of spectrum, no ground network, a regulatory review — appear to have been priced.
 
-**Friday.** T-Mobile fell 13.3% to $148.58, AT&T 9.8% to $22.18 and Verizon 8.7% to $41.65, each on roughly four times normal volume. Charter (-5.7%) and Comcast (-2.6%) also closed at 52-week lows. Analysts noted the limits of the asset — 14 MHz of paired spectrum, a band that propagates worse than 600 MHz, no ground network — and the stocks fell anyway. Tower companies rose.
+**The platforms fell with AI.** The Nasdaq had its worst week since June on concern that AI spending has outrun its returns. Alphabet fell 3.2% to its 200-day average, Meta 1.3% after a 6% two-day rise and two sharp down days, Take-Two 3.8% and AppLovin 3.9%. Goldman Sachs raised its Meta target to $860, and Meta's Muse agent was reported at five million downloads in 22 days. Yahoo's calendar now shows Meta reporting on October 21, a week earlier than this page had it.
 
-**The other half rose into it.** Alphabet gained 2.4% over the week and reclaimed its 50-day average. Netflix rose 4.8% from its 52-week low over four sessions, then slipped Friday after Puck reported a planned 5% workforce reduction, about 800 jobs; Barclays and Morgan Stanley cut their targets the same week. Disney rose 5.7% and Take-Two 5.3%. Meta slipped 1.3% after a short-seller report on Friday argued Muse adoption is slowing.
+**Netflix and Skydance.** Netflix confirmed on Wednesday that it is cutting about 1,000 jobs, roughly 6% of its workforce, and said it remains on track for its full-year forecast; the stock finished flat ahead of its October 20 report. Skydance fell 25%, almost all of it on Wednesday, when about 471 million warrants separated from its shares — a mechanical reset, not a business event.
 
-**Corporate.** The Warner Bros. Discovery–Paramount Skydance merger closed on Tuesday after the Supreme Court declined to intervene; the combined Skydance trades as SKYD with about $80 billion of debt and finished the week at $9.16. AppLovin appears in the fund's top ten in this week's snapshot and is now tracked here.
+**The macro.** September CPI ran hot at 3.7%, yet the 10-year yield fell 14 basis points to 5.10% as money moved from technology stocks into bonds. That helped the dividend payers. No ad-budget cut was announced, and the Google ad-tech final judgment had still not been entered.
 
-**The macro.** The 10-year closed 4bp lower at 5.24% after a 5.36% intraday print; the dollar rose a fourth week; consumer sentiment fell to 46.3 with current conditions at an all-time low. No ad-budget cut was announced.
-
-**The Bottom Line:** The fund's yield sleeve lost in one session what the long end took two months to cost it, on a competitor that has spectrum and no towers. The platforms and the entertainment names absorbed it. The range is $109.66 to $112.08; the first print is Netflix on October 20, and the carriers report into the aftermath.
+**The Bottom Line:** The fund's two halves cancelled for a second week — telecom up, platforms down. The chart is a tight coil between $109.66 and $112.89. It resolves on earnings: Netflix October 20, Meta and AT&T October 21, Comcast October 22, Verizon October 26, and Alphabet and T-Mobile October 28.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Company dates are Yahoo Finance calendar dates pulled Oct 11 (not all company-confirmed); EPS is the Yahoo consensus mean. **Charter's Yahoo date moved to Nov 6 from Oct 30.**
+Company dates are Yahoo Finance calendar dates pulled Oct 16 (not all company-confirmed); EPS is the Yahoo consensus mean. **Changes vs last week's page: META moved to Wed Oct 21 (was Oct 28; several outlets also report Oct 21); DIS moved to Nov 17 (was Nov 12).**
 
 | Company | Ticker | Date | EPS Est. | Key Metric to Watch |
 |---|---|---|---|---|
-| **WBD–Paramount Skydance close** | SKYD | **Oct 6 — CLOSED ✔** | — | Trades as Skydance (NYSE: SKYD); ~$80B debt; Fitch BB |
-| **SpaceX–Grain spectrum** | T / VZ / TMUS | **Oct 8 — ANNOUNCED ✔**; FCC review open | — | Approval timeline; any carrier response (pricing, spectrum, Starlink partnerships) |
-| **Netflix layoffs** | NFLX | Week of Oct 12 (reported) | — | ~5% / ~800 jobs per Puck; not company-confirmed |
-| **September CPI** | — | Wed Oct 14 | — | The long end; bond market closed Mon Oct 12 |
-| **Netflix** | NFLX | **Tue Oct 20** | $0.82 | Engagement vs YouTube; ad tier; the reorganization; from a 52-week low |
-| **AT&T** | T | Wed Oct 21 | $0.60 | Postpaid adds, fiber; first carrier to speak after the SpaceX news |
-| **Comcast** | CMCSA | **Thu Oct 22** | $0.99 | Broadband losses; 5.8x forward |
-| **Verizon** | VZ | Mon Oct 26 | $1.28 | Churn; dividend cover at 6.8% |
-| **Meta / Alphabet / T-Mobile** | META / GOOGL / TMUS | **Wed Oct 28** | $6.74 / $3.05 / $2.98 | FOMC day. META: capex guide, Muse numbers vs the short report; GOOGL: first print under the remedy; TMUS: adds, the Grain sale, T-Satellite |
+| **Netflix layoffs** | NFLX | **Oct 14 — CONFIRMED ✔** | — | ~1,000 jobs / ~6%; full-year forecast reaffirmed |
+| **Skydance warrant separation** | SKYD | **Oct 14 — DONE ✔** | — | ~470.7M warrants, $12 strike |
+| **Netflix** | NFLX | **Tue Oct 20** | $0.82 | Engagement, ad tier, the reorganization's cost |
+| **Meta Platforms** | META | **Wed Oct 21** (Yahoo; was Oct 28) | $6.76 | 2026–27 capex guide ($130–145B for 2026 cited); Muse usage vs the short report |
+| **AT&T** | T | Wed Oct 21 | $0.60 | First carrier to speak after SpaceX; postpaid adds, fiber |
+| **Comcast** | CMCSA | Thu Oct 22 | $0.99 | Broadband losses; 6.1x forward |
+| **Verizon** | VZ | Mon Oct 26 | $1.27 | Churn; dividend cover at 6.4% |
+| **FOMC** | — | Oct 27–28 | — | Hot CPI vs the bond rally |
+| **Alphabet / T-Mobile** | GOOGL / TMUS | **Wed Oct 28** | $2.97 / $2.98 | GOOGL: cloud and AI capex on its 200-day; TMUS: adds, the Grain sale, T-Satellite |
 | **People Inc** | PPLI | Mon Nov 2 | $0.35 | MGM status |
-| **AppLovin / Magnite** | APP / MGNI | Wed Nov 4 | $4.35 / $0.28 | APP: first tracked print; MGNI: CTV, the remedy timeline |
-| **Ziff Davis / CarGurus / Cogent** | ZD / CARG / CCOI | Thu Nov 5 | $1.25 / $0.66 / -$0.86 | CARG: dealer counts into a sentiment trough |
-| **Charter** | CHTR | Fri Nov 6 (Yahoo; was Oct 30) | $9.16 | Internet losses; 2.2x forward |
-| **Skydance / Take-Two** | SKYD / TTWO | Mon Nov 9 | $0.19 / $0.95 | SKYD: first combined print; TTWO: GTA VI (Nov 19) |
-| **Disney** | DIS | Thu Nov 12 | $1.69 | Streaming margin, parks |
-| ~~EA~~ | — | — | — | Delisted 8/4 (take-private) |
+| **AppLovin / Magnite** | APP / MGNI | Wed Nov 4 | $4.34 / $0.28 | APP near its 52W low; MGNI: CTV, the remedy timeline |
+| **Ziff Davis / CarGurus / Cogent** | ZD / CARG / CCOI | Thu Nov 5 | $1.25 / $0.66 / -$0.86 | CARG dealer counts |
+| **Charter** | CHTR | Fri Nov 6 | $9.16 | Internet losses |
+| **Skydance / Take-Two** | SKYD / TTWO | Mon Nov 9 | $0.18 / $0.94 | SKYD: first combined print; TTWO: GTA VI (Nov 19) |
+| **Disney** | DIS | **Mon Nov 17** (Yahoo; was Nov 12) | $1.69 | Streaming margin, parks |
+| Google ad-tech final judgment | GOOGL | Not entered (as of Oct 14) | — | Entry starts the appeal clock |
+| ~~EA~~ | — | — | — | Delisted 8/4 (take-private); stale quote ignored |
 
-**Marky's Binary Event Read:** **$109.66 below, $112.08 above.** I was long for one day and out again; the range is intact and I am flat in it. Netflix on the 20th is the first print and it arrives from a bounce with a layoff story attached. AT&T on the 21st is the first carrier to speak after Friday — what it says about Starlink Mobile will move all three. Then the 28th: Meta with a short report, Alphabet with a remedy, T-Mobile from a 52-week low, all on FOMC day. The capitulation volume in the carriers Friday is the one thing on the chart that looks like an edge, and it is in the part of the fund I do not trade.
+**Marky's Binary Event Read:** **$109.66 below, $112.89 above**, and three days — Oct 20, 21, 22 — that cover Netflix, Meta, AT&T and Comcast. Meta alone is 22% of the fund on the stale snapshot; a capex number the market dislikes takes the floor. The carriers are the other leg: they bounced into their prints, so the bar for AT&T on the 21st is higher than it was a week ago. Flat until one of the lines breaks on a close.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **The spectrum sell-off is overdone** — 14 MHz, no towers, an FCC process → the carriers recover half of Friday within a month; VZ's 6.8% pulls the income bid back
-- **Netflix (Oct 20) clears a low bar** with a reorganization already announced → the first of the lows club turns for good
-- **Alphabet keeps leading** — a close over $112.08 that holds, then the 200D at $113.03
-- **Meta answers the short report with Muse numbers (Oct 28)** → the capex-return question gets a data point in its favor
-- **Broadband prints merely meet feral expectations** → CMCSA at 5.8x and CHTR at 2.2x forward squeeze
+- **Meta (Oct 21) clears the capex question** — revenue growth and Muse usage outrun the spend → the fund's largest weight leads it through the 200D at $112.89
+- **The AI selloff stops** → Alphabet bounces off its 200-day, APP off its 52-week low
+- **The carriers' calls (Oct 21/26/28) shrug off Starlink Mobile** → the yield sleeve finishes recovering; VZ back to its Oct 8 level
+- **Netflix (Oct 20) shows the layoff is margin, not distress** → the entertainment leg turns from its lows
+- **The 10-year keeps falling** → the 4.7–6.4% yields re-rate
 
 ### 🔴 Bear Case
-- **A close under $109.66** → $105.03, the 52-week closing low
-- **The FCC moves quickly** on the Grain transfer → a fourth carrier becomes a 2027 fact and the carriers' multiples (7.9–10.3x) stop being "cheap"
-- **AT&T (Oct 21) guides to defend price** → the sleeve's dividends get questioned, not just its growth
-- **The short report sticks** — Meta's Oct 28 print confirms slowing Muse adoption with capex still rising → the fund's 22% weight leads it down
-- **An ad-budget cut announcement** finally follows a sentiment index at 46 → the platforms' cyclical leg breaks
-- **Skydance's leverage** — $80B of debt in a 5.6% 30-year world; the WBD slot was a cash-deal arb and is now a credit story
+- **A close under $109.66** — tested twice and held by eight cents Friday → $105.03
+- **Meta's capex guide rises again** into an AI-return selloff → 22% of the fund reprices; the stock has fallen 7% from Tuesday's $762.50 already
+- **AT&T guides to defend price** against SpaceX → the carriers' bounce reverses
+- **An ad-budget cut announcement** — TV-first, per The Information, then digital
+- **The Google judgment is entered with the 6-month timelines** → the remedy starts sooner; an appeal follows
+- **Skydance's leverage** — $80B net debt, the stock 42% under its warrant strike
 
 ### ⚠️ The Wild Card
-**A carrier with no towers.** Friday's move priced SpaceX as a fourth national carrier. What it has: 14 MHz of 800 MHz spectrum (pending FCC approval), a satellite constellation that currently delivers about 4 Mbps to phones through T-Mobile, and a stated intention. What it does not have: a terrestrial network, indoor urban coverage, or a date. Either the market is early by years — in which case Friday was the entry in a yield sleeve that now pays 5–7% — or it is right that Starlink Mobile will lease or build its way in and the carriers' pricing power is gone, in which case Friday was the first day of a de-rating, not the last. The tell will be the carriers' own responses on Oct 21, 26 and 28: a carrier that cuts price or raises capex in response is confirming the threat; one that shrugs is betting the FCC and physics do the work. This desk notes that the stock that fell most was the one that sold SpaceX the spectrum and partners with it, which suggests the market has not decided what it is afraid of.
+**Is this fund a hedge against itself?** For two weeks the barbell has cancelled: one week the carriers fell and the platforms rose, the next the reverse, and the fund has closed within six cents of $110.35 three Fridays running. That looks like stability and is actually two opposite bets of similar size. It holds only while the two halves have different drivers — SpaceX and bond yields on one side, AI sentiment on the other. The earnings run from Oct 20 to Oct 28 hits both halves within eight days. If Meta and Alphabet disappoint while AT&T and Verizon reassure, the cancellation continues. If the platforms disappoint while a hot inflation path pushes the 10-year back up, both legs fall together and the flat line ends.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Flat week, and the flattest number on the page is the least informative. SpaceX bought spectrum Thursday night and on Friday the carriers lost 9–13% on four times normal volume while Alphabet, Netflix, Disney and Take-Two had already done enough in four days to cover it. Telecom yield goes from underweight to market-weight — I had it underweight for the long end, and the long end eased while the sleeve got hit by a press release that will be analysed for a month: 14 MHz, no towers, an FCC. Verizon at 6.8%, 155bp over the 10-year, is a price. Platforms stay market-weight; Meta carries a short report into Oct 28. Broadband stays zero. No issue — the spectrum deal is the week's event and not on this page's trigger list; it is logged for the Synthesis."*
+**Ophelia:** *"Flat for a second week, and again the flatness hides two moves. The carriers took back most of the SpaceX drop — Verizon 79% of it — on no news; the objections got priced faster than I said they would. The platforms fell with the AI selloff, not on their own news. Platforms market-weight into Meta's print, which is now the 21st. Telecom market-weight, not chasing. Broadband from zero to underweight: CHTR and CMCSA undid the whole move. No ruling, no miss, no ad cut — no issue."*
 
-**Marky:** *"Long Thursday's close by the rule, out Friday's by the rule, down 1.5%. Twice in three weeks the fund has taken the 50-day for one session and lost it the next, each time to a different part of itself — Meta last time, the carriers now. No leadership, only rotation. The range is $109.66 to $112.08 and I am flat in the middle of it. The carriers' Friday — three names on their lows for the year, two of them on 4x volume — is capitulation on news, and that usually bounces. I am noting it, not trading it."*
+**Marky:** *"Two closes over $112.08 this week, neither held a second day, so I did not trade either — the rule did its job. Friday held $109.66 by eight cents. Flat averages stacked on each other and the 200-day 1.2% overhead: it is a coil and it breaks on Meta. Short under $109.66, long over $112.89 that holds. The carriers' capitulation bounced exactly as capitulation does; I noted it and let it go."*
 
-**Cecil:** *"I bought more Verizon at $41.65 Friday — 7.9x, 6.8% yield, on a competitor with spectrum and no network. First time in two months a fall here has been a price instead of a verdict. AT&T I leave: yield under the 10-year and fiber is what a satellite entrant actually threatens. T-Mobile at 10.3x sold the spectrum and fell 13% — the market has not decided what it is afraid of, and I wait for Oct 28. Netflix half held through the 20th; the layoff report reads as a company clearing the decks before a print. Alphabet is the hold. Meta is a hold with a short report. AppLovin I am reading for the first time — 13x forward and a 76% gap to target is either the best setup in the fund or a target nobody has revised."*
+**Cecil:** *"Verizon from $41.65 is $44.79 — I keep it and do not add at 6.4%. T-Mobile, the one that recovered least, at 11x with 49% to target is the buy before its print if I make one. Netflix half held into Tuesday with the layoff confirmed and the guide reaffirmed. Meta hold into the 21st. Alphabet on its 200-day at 22x is the add under $335. AppLovin at 13x near its 52-week low with an 80% gap to a $480 target: still reading."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sun Oct 11, 2026): XLC, thirteen large caps (incl. SKYD and APP) and five small caps, daily bars through the Fri 10/9 close (auto-adjusted; last bar verified as Oct 9); weekly changes vs settled Fri 10/2 closes; 20D/50D/200D MAs, Wilder RSI(14); forward P/E, yields, mean targets, market caps (MGNI $3.64B, PPLI $3.04B, CARG $2.57B, ZD $1.94B, CCOI $0.44B — all sub-$5B; SKYD $46.2B; APP $93.1B); XLC top-10 weights via funds_data (WBD still listed — stale); earnings-calendar dates and consensus EPS. CSVs in the workspace folder grid-c-2026-10-09
-- Forbes, Yahoo Finance, Daily Caller, CoinCentral (Oct 8–9, 2026): SpaceX–Grain Management low-band spectrum agreement; WSJ $8B figure; Musk "last critical piece"; Shotwell's August remarks; after-hours and Friday carrier moves; tower-stock divergence; FCC approval pending. PCMag / PhoneArena / Reuters (Aug–Oct 2026, standing): 817–824 / 862–869 MHz, up to 14 MHz paired; analyst objections (Farrar, Sag); T-Mobile CTO's response
-- Deadline, Yahoo Finance, Variety, TipRanks (Oct 6–7, 2026): WBD–Paramount Skydance close; Kagan denial; SKYD NYSE debut at $9.51–9.53; ~$80B debt; Fitch BB+ → BB
-- The Star / Reuters, Variety, StockTwits, AV Club (Oct 9, 2026): Netflix 5% workforce cut per Puck; ~800 jobs; possible announcement week of Oct 12; company declined comment. Admiral Markets / Fool (Oct 7–10): Barclays $70, Morgan Stanley $80 target cuts; HSBC Hold (Sep 22)
-- CNBC / TipRanks headlines, Benzinga (Oct 8–9, 2026): Hunterbrook Muse report; Meta bans TikTok ads; Trump's August META purchase
-- Fool, TradersUnion (Sep–Oct 2026): ad-tech remedy standing; Mehta dismisses Chegg / Penske (Oct 1); no appeal notice found
-- Investing.com (Yorkville Ives initiation of ZD, $68); BusinessWire (Mar 2, 2026): ZD Connectivity sale to Accenture. Kalkine (Oct 1–5): PubMatic CFO 10b5-1 sales (context for the ad-tech small caps; PUBM not on the list)
-- Macro (full sourcing in wiki/tech.md and wiki/consumer-discretionary.md, Oct 11): 10Y 5.36% intraday / 5.24% close, FOMC minutes, UMich 46.3 (#156), DXY 102.21 (#115), SPY record
-- **Not verified or not sourced this week:** the $8B price (WSJ, not confirmed by the parties); whether the Google proposed final judgment was filed or appealed; a cause for Disney's +5.7% and Take-Two's +5.3%; CCOI's mid-week run to $10.31; any Q4 ad-budget announcement; the fund's post-WBD replacement mechanics (SKYD assumed); XLC holdings count (carried); company news for PPLI and CARG
-- **Cross-references: #106/#114/#123 (rate regime), #115 (DXY), #156 (consumer), #126, #158 (utilities — the Google–Constellation deal is also an Alphabet capex item). No new issue: XLC +0.05% (±5%), no platform earnings miss (none reported), no antitrust ruling, no ad-budget cut announcement found. The SpaceX–Grain spectrum deal (T -9.8%, VZ -8.7%, TMUS -13.3% Friday) is the week's event and is not an enumerated trigger for this page; logged in cron.log for the Synthesis.**
+- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 16, 2026, ~18:20 ET): XLC, fourteen large caps (incl. SKYD and APP) and five small caps, daily bars through the Fri 10/16 close (auto-adjusted; last bar verified as Oct 16 — the old PSKY line stopped at Oct 15 and is not used); weekly changes vs settled Fri 10/9 closes; 20D/50D/200D MAs, Wilder RSI(14); forward P/E, yields, mean targets, market caps (MGNI $3.35B, PPLI $2.89B, CARG $2.70B, ZD $1.96B, CCOI $0.41B — all sub-$5B; SKYD $34.8B; APP $89.4B); XLC top-10 via funds_data (identical to Oct 11, WBD still listed — carried); earnings-calendar dates and consensus EPS. CSVs in the workspace folder grid-c-2026-10-16
+- Motley Fool, Variety, Invezz, 24/7 Wall St., Yahoo Finance (Oct 14, 2026): Skydance warrant separation (~470.7M, $12 strike), -23.8% close at $7.06, ~$80B net debt vs ~$11.2B EBITDA
+- ABC30, ACM regional papers, NewsBytes, bdnews24 (Oct 14–15, 2026): Netflix ~1,000 job cuts (~6%), co-CEO memo, full-year forecast reaffirmed, Q3 Oct 20
+- TradingKey (Oct 14), TipRanks (Goldman $860), Investing.com (Muse 5M downloads in 22 days; TikTok ad ban), Yahoo Finance (2026 capex $130–145B): Meta; Q3 date Oct 21
+- PPC Land, Digiday, The Current, Computerworld (Sep–Oct 2026): Google ad-tech remedies (Sep 2), proposed final judgment filed Oct 2, not entered as of Oct 14; no appeal notice
+- CNBC, Forbes, Benzinga, Yahoo/Barron's (Oct 8–12, 2026): SpaceX–Grain carrier selloff (worst days since 2002/2013/2000 for VZ/TMUS/T); TMUS +1% premarket Oct 12; no FCC action found since
+- MarketBeat (Oct 14): MGNI director 10b5-1 sale, LG Ad Solutions extension, -5.7% midday. Morningstar (Oct 14): ZD -2.0%
+- TipRanks / The Information (undated in results): TV ad-spend cut signals; Digiday, eMarketer (2025–26 background): no dated Q4 2026 ad-budget cut found
+- Macro: CNBC/BLS (CPI Oct 14), CNBC/GuruFocus (Oct 15 yields), Bloomberg/TheStreet/CNN (Oct 16 market close) — full detail in wiki/utilities.md and wiki/energy.md this run
+- **Not verified or not sourced this week:** a cause for the carriers' bounce beyond the analyst objections; any FCC filing on SpaceX–Grain; causes for GOOGL, TTWO, APP and DIS moves beyond the tape; a dated Q4 ad-budget cut; refreshed XLC weights (Yahoo snapshot unchanged, WBD still listed); company news for CCOI, PPLI, CARG (searched, none)
+- **Cross-references: #106/#113/#159 (rate regime), #115 (DXY), #156 (consumer), #158/#166 (utilities — hyperscaler power deals are Alphabet/Microsoft capex items). No new issue: XLC -0.05% (±5%), no platform earnings miss (none reported — Netflix reports Oct 20), no antitrust ruling (the Google judgment is not entered), no ad-budget cut announcement found. Skydance's -24.6% is a warrant distribution (corporate action), not a crash.**
 
 ---
 
-> **Corrections to last week's page, logged here.** (1) 52-week range re-based to the adjusted bars ($105.03–$119.00 closing); the standing "$105.38" support is now $105.03. (2) WBD exited Oct 6; the row is carried as the Skydance (SKYD) slot at WBD's stale weight. (3) AppLovin is a top-ten holding this page had never tracked; added. (4) Charter's earnings date is Nov 6 on Yahoo, not Oct 30.
+> **Corrections to last week's page, logged here.** (1) None to prices: all Oct 9 closes match the settled bars. (2) Meta's earnings date is Oct 21 on Yahoo (and in several outlets), not Oct 28. (3) Disney's Yahoo date is Nov 17, not Nov 12. (4) Last week's Netflix layoff figure (~5%, ~800 jobs, per Puck) is superseded by the company's confirmed ~6%, ~1,000 jobs.
 
-*Last updated by Saturday Research Crew: 2026-10-11 (run covers week ending 2026-10-09; Grid C run, late — Sunday night)*
+*Last updated by Saturday Research Crew: 2026-10-16 (run covers week ending 2026-10-16; Grid C run, Friday evening)*
 *Next update: Every Saturday 11:39 AM ET*
 *Data sources: yfinance, Yahoo Finance, StockAnalysis, MarketXLS, Morningstar, MarketWatch, MAGNA, GroupM, eMarketer, WARC, company filings, market data feeds*
