@@ -81,8 +81,8 @@
     "fed_funds_range_as_of": "2026-09-16",
     "fed_stance": "Hike",
     "fed_stance_as_of": "2026-09-16",
-    "next_macro_gate": "10Y auction + FOMC minutes Oct 7; September CPI Oct 14 (08:30 ET); FOMC Oct 27-28 (October-hike odds fell to roughly 16-18% after September payrolls +29K)",
-    "next_macro_gate_as_of": "2026-10-03"
+    "next_macro_gate": "September CPI Oct 14 (08:30 ET; consensus headline +0.6% MoM, core +0.2%); PPI + retail sales + Fed Chair Warsh Oct 15; FOMC Oct 27-28 (October hold priced, ~20% hike odds; December is the priced meeting)",
+    "next_macro_gate_as_of": "2026-10-11"
   },
   "rates": {
     "US10Y": {
@@ -224,8 +224,8 @@
   "upcoming": [
     {
       "binary": null,
-      "event": "10Y auction + FOMC minutes Oct 7; September CPI Oct 14 (08:30 ET); FOMC Oct 27-28 (October-hike odds fell to roughly 16-18% after September payrolls +29K)",
-      "when": "2026-10-03"
+      "event": "September CPI Oct 14 (08:30 ET; consensus headline +0.6% MoM, core +0.2%); PPI + retail sales + Fed Chair Warsh Oct 15; FOMC Oct 27-28 (October hold priced, ~20% hike odds; December is the priced meeting)",
+      "when": "2026-10-11"
     }
   ],
   "vol": {
