@@ -1,77 +1,77 @@
 {
-  "as_of": "2026-10-09",
+  "as_of": "2026-10-16",
   "commodities": {
     "GOLD": {
       "contract": "GCV26",
-      "d13w": 2.1,
-      "d1w": 1.4,
+      "d13w": 3.7,
+      "d1w": -0.8,
       "d4w": null,
-      "d4w_reason": "no GOLD settlement on the nearest-expiry contract for 2026-09-11: The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28.",
-      "d52w": 5.4,
-      "pctile_2y": 66,
-      "px": 4191.0
+      "d4w_reason": "no GOLD settlement on the nearest-expiry contract for 2026-09-18: The file holds the December contract. The nearest-expiry contract was September, which expired on 2026-09-28.",
+      "d52w": -0.7,
+      "pctile_2y": 64,
+      "px": 4159.5
     },
     "SILVER": {
       "contract": "SIV26",
-      "d13w": 1.4,
-      "d1w": 1.2,
-      "d4w": -6.0,
-      "d52w": 29.3,
-      "pctile_2y": 64,
-      "px": 60.67
+      "d13w": 1.7,
+      "d1w": -6.1,
+      "d4w": -14.4,
+      "d52w": 14.3,
+      "pctile_2y": 57,
+      "px": 56.99
     },
     "WTI": {
       "contract": "CLX26",
-      "d13w": 28.6,
-      "d1w": 0.8,
-      "d4w": -8.2,
-      "d52w": 55.9,
-      "pctile_2y": 87,
-      "px": 91.85
+      "d13w": 22.9,
+      "d1w": 10.4,
+      "d4w": 1.1,
+      "d52w": 76.2,
+      "pctile_2y": 96,
+      "px": 101.41
     }
   },
   "fx": {
     "DXY": {
-      "d13w": 1.2,
-      "d1w": 0.3,
-      "d4w": 3.1,
-      "d52w": 3.3,
-      "pctile_2y": 75,
-      "px": 102.21
+      "d13w": 1.1,
+      "d1w": -0.4,
+      "d4w": 1.6,
+      "d52w": 3.5,
+      "pctile_2y": 74,
+      "px": 101.84
     }
   },
   "index": {
     "DIA": {
-      "d13w": -1.8,
-      "d1w": 1.0,
-      "d4w": -1.8,
-      "d52w": 14.8,
-      "pctile_2y": 87,
-      "px": 516.11
+      "d13w": -0.3,
+      "d1w": 0.6,
+      "d4w": 0.6,
+      "d52w": 13.7,
+      "pctile_2y": 89,
+      "px": 519.1
     },
     "IWM": {
-      "d13w": -5.8,
-      "d1w": -0.9,
-      "d4w": -3.4,
-      "d52w": 18.2,
-      "pctile_2y": 79,
-      "px": 278.94
+      "d13w": -8.0,
+      "d1w": -3.0,
+      "d4w": -4.8,
+      "d52w": 11.9,
+      "pctile_2y": 74,
+      "px": 270.44
     },
     "QQQ": {
-      "d13w": 3.6,
-      "d1w": 0.2,
-      "d4w": 5.1,
-      "d52w": 27.9,
-      "pctile_2y": 99,
-      "px": 751.27
+      "d13w": 2.1,
+      "d1w": -5.5,
+      "d4w": -1.6,
+      "d52w": 18.0,
+      "pctile_2y": 83,
+      "px": 709.8
     },
     "SPY": {
-      "d13w": 3.1,
-      "d1w": 1.2,
-      "d4w": 1.9,
-      "d52w": 20.2,
-      "pctile_2y": 99,
-      "px": 778.57
+      "d13w": 2.7,
+      "d1w": -2.0,
+      "d4w": 0.2,
+      "d52w": 15.8,
+      "pctile_2y": 90,
+      "px": 763.25
     }
   },
   "macro": null,
@@ -86,139 +86,139 @@
   },
   "rates": {
     "US10Y": {
-      "d1w_bps": -3,
-      "lvl": 5.24,
-      "pctile_2y": 98
+      "d1w_bps": -15,
+      "lvl": 5.1,
+      "pctile_2y": 96
     },
     "US2Y": {
-      "d1w_bps": -3,
-      "lvl": 4.8,
-      "pctile_2y": 97
+      "d1w_bps": -6,
+      "lvl": 4.74,
+      "pctile_2y": 95
     },
-    "curve_2s10s_bps": 44
+    "curve_2s10s_bps": 36
   },
-  "regime": "risk-on / curve-positive / policy-hike",
+  "regime": "risk-off / curve-positive / policy-hike",
   "schema": "market-state/v1",
   "sectors": {
     "SMH": {
-      "corr_prev": 0.883,
-      "corr_spy_4w": -0.144,
-      "d13w": -1.3,
-      "d1w": -4.3,
-      "d4w": 6.1,
-      "d52w": 86.0,
-      "pctile_2y": 93,
-      "px": 603.33
+      "corr_prev": -0.144,
+      "corr_spy_4w": 0.654,
+      "d13w": -3.0,
+      "d1w": -10.5,
+      "d4w": -5.8,
+      "d52w": 57.9,
+      "pctile_2y": 77,
+      "px": 539.79
     },
     "XLB": {
-      "corr_prev": 0.979,
-      "corr_spy_4w": 0.877,
-      "d13w": -2.9,
-      "d1w": 1.2,
-      "d4w": -3.0,
-      "d52w": 15.4,
-      "pctile_2y": 68,
-      "px": 49.43
+      "corr_prev": 0.877,
+      "corr_spy_4w": -0.499,
+      "d13w": 0.8,
+      "d1w": 3.0,
+      "d4w": 1.9,
+      "d52w": 17.4,
+      "pctile_2y": 79,
+      "px": 50.92
     },
     "XLC": {
-      "corr_prev": 0.598,
-      "corr_spy_4w": 0.909,
-      "d13w": -1.1,
-      "d1w": 0.1,
-      "d4w": -2.0,
-      "d52w": -1.3,
-      "pctile_2y": 52,
-      "px": 110.38
+      "corr_prev": 0.909,
+      "corr_spy_4w": 0.399,
+      "d13w": -0.3,
+      "d1w": -0.1,
+      "d4w": -0.4,
+      "d52w": -3.2,
+      "pctile_2y": 49,
+      "px": 110.32
     },
     "XLE": {
-      "corr_prev": -0.874,
-      "corr_spy_4w": -0.021,
-      "d13w": 18.2,
-      "d1w": 3.6,
-      "d4w": -0.1,
-      "d52w": 56.2,
-      "pctile_2y": 98,
-      "px": 65.08
+      "corr_prev": -0.021,
+      "corr_spy_4w": -0.626,
+      "d13w": 18.3,
+      "d1w": 4.9,
+      "d4w": 6.1,
+      "d52w": 62.3,
+      "pctile_2y": 99,
+      "px": 68.24
     },
     "XLF": {
-      "corr_prev": 0.042,
-      "corr_spy_4w": 0.637,
-      "d13w": -1.8,
-      "d1w": 2.3,
-      "d4w": -4.4,
-      "d52w": 6.2,
-      "pctile_2y": 85,
-      "px": 54.73
+      "corr_prev": 0.637,
+      "corr_spy_4w": -0.176,
+      "d13w": -1.3,
+      "d1w": 1.4,
+      "d4w": -0.6,
+      "d52w": 7.7,
+      "pctile_2y": 88,
+      "px": 55.52
     },
     "XLI": {
-      "corr_prev": 0.875,
-      "corr_spy_4w": 0.705,
-      "d13w": -7.0,
-      "d1w": -0.4,
-      "d4w": -1.8,
-      "d52w": 13.9,
-      "pctile_2y": 70,
-      "px": 169.25
+      "corr_prev": 0.705,
+      "corr_spy_4w": 0.789,
+      "d13w": -6.5,
+      "d1w": -0.9,
+      "d4w": -1.2,
+      "d52w": 11.5,
+      "pctile_2y": 68,
+      "px": 167.76
     },
     "XLK": {
-      "corr_prev": 0.972,
-      "corr_spy_4w": 0.09,
-      "d13w": 7.0,
-      "d1w": -0.5,
-      "d4w": 5.9,
-      "d52w": 43.4,
-      "pctile_2y": 98,
-      "px": 198.78
+      "corr_prev": 0.09,
+      "corr_spy_4w": 0.839,
+      "d13w": 4.5,
+      "d1w": -7.7,
+      "d4w": -3.2,
+      "d52w": 29.3,
+      "pctile_2y": 87,
+      "px": 183.47
     },
     "XLP": {
-      "corr_prev": 0.378,
-      "corr_spy_4w": 0.574,
-      "d13w": -0.8,
-      "d1w": 3.6,
-      "d4w": 0.1,
-      "d52w": 9.0,
-      "pctile_2y": 78,
-      "px": 83.43
+      "corr_prev": 0.574,
+      "corr_spy_4w": -0.444,
+      "d13w": 2.9,
+      "d1w": 5.0,
+      "d4w": 5.8,
+      "d52w": 12.2,
+      "pctile_2y": 97,
+      "px": 87.62
     },
     "XLRE": {
-      "corr_prev": -0.79,
-      "corr_spy_4w": 0.465,
-      "d13w": -6.4,
-      "d1w": 2.0,
-      "d4w": -4.2,
-      "d52w": 5.0,
-      "pctile_2y": 70,
-      "px": 41.61
+      "corr_prev": 0.465,
+      "corr_spy_4w": -0.284,
+      "d13w": -7.2,
+      "d1w": 1.3,
+      "d4w": -0.9,
+      "d52w": 3.0,
+      "pctile_2y": 71,
+      "px": 42.16
     },
     "XLU": {
-      "corr_prev": -0.539,
-      "corr_spy_4w": 0.164,
-      "d13w": -8.8,
-      "d1w": 4.0,
-      "d4w": -2.3,
-      "d52w": -6.3,
-      "pctile_2y": 45,
-      "px": 41.41
+      "corr_prev": 0.164,
+      "corr_spy_4w": -0.296,
+      "d13w": -6.6,
+      "d1w": 1.9,
+      "d4w": 2.7,
+      "d52w": -5.9,
+      "pctile_2y": 54,
+      "px": 42.21
     },
     "XLV": {
-      "corr_prev": 0.599,
-      "corr_spy_4w": 0.543,
-      "d13w": 6.2,
-      "d1w": 2.8,
-      "d4w": 3.3,
-      "d52w": 21.7,
-      "pctile_2y": 96,
-      "px": 170.81
+      "corr_prev": 0.543,
+      "corr_spy_4w": -0.124,
+      "d13w": 9.7,
+      "d1w": 3.5,
+      "d4w": 4.9,
+      "d52w": 24.9,
+      "pctile_2y": 99,
+      "px": 176.71
     },
     "XLY": {
-      "corr_prev": 0.717,
-      "corr_spy_4w": 0.666,
-      "d13w": -3.7,
-      "d1w": 2.6,
-      "d4w": -0.1,
-      "d52w": -0.7,
-      "pctile_2y": 45,
-      "px": 112.85
+      "corr_prev": 0.666,
+      "corr_spy_4w": 0.465,
+      "d13w": -2.6,
+      "d1w": -0.3,
+      "d4w": 1.3,
+      "d52w": -3.5,
+      "pctile_2y": 42,
+      "px": 112.46
     }
   },
   "upcoming": [
@@ -230,10 +230,10 @@
   ],
   "vol": {
     "VIX": {
-      "d1w": -3.1,
-      "lvl": 14.84,
-      "pctile_2y": 12
+      "d1w": 34.7,
+      "lvl": 19.99,
+      "pctile_2y": 75
     }
   },
-  "weekly_files_read": 114
+  "weekly_files_read": 115
 }
