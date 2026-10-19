@@ -1,0 +1,84 @@
+week: '2026-10-19'
+lock: 2026-10-19 08:50 ET
+entry_date: '2026-10-19'
+exit_date: '2026-10-23'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 767.23
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.8
+  cash_weight: 0.2
+  picks:
+  - ticker: UNH
+    weight: 0.15
+    entry_price: 399.69
+    entry_price_source: open
+  - ticker: XLE
+    weight: 0.15
+    entry_price: 67.95
+    entry_price_source: open
+  - ticker: XLV
+    weight: 0.1
+    entry_price: 175.72
+    entry_price_source: open
+  - ticker: XLU
+    weight: 0.1
+    entry_price: 42.13
+    entry_price_source: open
+  - ticker: VST
+    weight: 0.1
+    entry_price: 154.1
+    entry_price_source: open
+  - ticker: TMUS
+    weight: 0.1
+    entry_price: 158.77
+    entry_price_source: open
+  - ticker: AMZN
+    weight: 0.1
+    entry_price: 255.34
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 1.0
+  cash_weight: 0.0
+  picks:
+  - ticker: MSFT
+    weight: 0.15
+    entry_price: 528.74
+    entry_price_source: open
+  - ticker: AAPL
+    weight: 0.05
+    entry_price: 340.975
+    entry_price_source: open
+  - ticker: META
+    weight: 0.2
+    entry_price: 707.06
+    entry_price_source: open
+  - ticker: DT
+    weight: 0.15
+    entry_price: 61.54
+    entry_price_source: open
+  - ticker: IBIT
+    weight: 0.1
+    entry_price: 46.63
+    entry_price_source: open
+  - ticker: XLK
+    weight: 0.1
+    entry_price: 185.96
+    entry_price_source: close_open_rejected
+    open_rejected:
+      open: 186.99
+      high: 186.82
+      low: 185.61
+  - ticker: SPY
+    weight: 0.15
+    entry_price: 767.23
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.1
+    entry_price: 149.2501
+    entry_price_source: open
