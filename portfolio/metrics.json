@@ -1,16 +1,16 @@
 {
-  "total_weeks": 11,
-  "avg_weekly_return": -0.85,
-  "avg_spy_return": 0.23,
-  "avg_alpha": -1.09,
-  "hit_rate": 0.37,
-  "sharpe_4w": -5.03,
-  "max_drawdown": 9.07,
+  "total_weeks": 12,
+  "avg_weekly_return": -1.21,
+  "avg_spy_return": 0.05,
+  "avg_alpha": -1.26,
+  "hit_rate": 0.35,
+  "sharpe_4w": -6.69,
+  "max_drawdown": 13.76,
   "agent_summary": {
     "Marky": {
-      "avg_return": -1.57,
-      "hit_rate": 0.25,
-      "total_picks": 12
+      "avg_return": -1.66,
+      "hit_rate": 0.27,
+      "total_picks": 15
     },
     "Cecil": {
       "avg_return": -0.67,
@@ -18,10 +18,10 @@
       "total_picks": 19
     },
     "Ophelia": {
-      "avg_return": -1.81,
-      "hit_rate": 0.4,
-      "total_picks": 10
+      "avg_return": -3.69,
+      "hit_rate": 0.33,
+      "total_picks": 12
     }
   },
-  "last_updated": "2026-10-12 08:18:37"
+  "last_updated": "2026-10-19 09:41:16"
 }

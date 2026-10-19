@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-10-12 | -5.16% | 20% | TBD | TBD | HCA (1.83%) | FTNT (-14.03%) | 20.0% |
 | 2026-10-12 | B- (2.53 -- analysis quality) | TBD (week open) | Ophelia (2.83 rolling; her falsifier rule adopted provisionally, sleeve frozen at engine weights) | Marky (48.3% of the book on a 25% hit rate, by inheritance -- two promotions, all three names in no wiki, Rule 1 argued on JCI; Cecil's duration flag CONFIRMED a fourth time, carried; Council-level: 5 of 5 booked names in no wiki) | FTNT (B) | BIIB (C) | 20.0% |
 | 2026-10-05 | -1.36% | 40% | TBD | TBD | SNPS (2.77%) | LRCX (-8.08%) | 20.0% |
 | 2026-10-05 | B- (2.72 -- analysis quality) | TBD (week open) | Cecil (3.23 rolling -- on the record; no pick booked for a second week, ALL/HIG/TROW blocked on XLF's 50D) | Ophelia (named falsifier 'HY OAS through 300' fired at 324 with no size consequence on a 47.9% sleeve; confidence graded at 60; Cecil's duration flag CONFIRMED a third time, carried) | AMAT (B+) | SNPS (C+) | 20.0% |
