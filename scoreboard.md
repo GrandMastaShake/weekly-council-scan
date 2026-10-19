@@ -233,6 +233,7 @@ If any rule triggers, note it in the scorecard header.
 
 | Week Ending | Council Grade | Hit Rate | Lead Councilor | Flagged Blindspot | Best Pick | Worst Pick | Cash % |
 |-------------|---------------|----------|----------------|-------------------|-----------|------------|--------|
+| 2026-10-19 | C+ (2.40 -- analysis quality) | TBD (week open) | Ophelia (2.71 rolling; her rule 1-0, sleeve at engine weight again; the macro call right, the names the worst in the book) | Cecil (2.33 rolling; the value screen prices duration as cheapness, CONFIRMED a fifth time and now inside the book: VICI 272 bps over the bill and AES 29 bps under it on 4x leverage, scored two points apart; fix deadline set in #013; Council grade below the 2.5 Review line for the first time, posture already carried #127, the owner's cap governs the no-new-picks clause) | VICI (B-) | AES (C) | 16.3% |
 | 2026-10-12 | -5.16% | 20% | TBD | TBD | HCA (1.83%) | FTNT (-14.03%) | 20.0% |
 | 2026-10-12 | B- (2.53 -- analysis quality) | TBD (week open) | Ophelia (2.83 rolling; her falsifier rule adopted provisionally, sleeve frozen at engine weights) | Marky (48.3% of the book on a 25% hit rate, by inheritance -- two promotions, all three names in no wiki, Rule 1 argued on JCI; Cecil's duration flag CONFIRMED a fourth time, carried; Council-level: 5 of 5 booked names in no wiki) | FTNT (B) | BIIB (C) | 20.0% |
 | 2026-10-05 | -1.36% | 40% | TBD | TBD | SNPS (2.77%) | LRCX (-8.08%) | 20.0% |
