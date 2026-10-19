@@ -2,11 +2,13 @@ week: '2026-10-12'
 lock: 2026-10-12 08:50 ET
 entry_date: '2026-10-12'
 exit_date: '2026-10-16'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 778.78
   entry_price_source: open
+  exit_price: 763.25
+  return_pct: -1.99
 players:
 - player: GrandMastaShake
   valid: true
@@ -15,36 +17,48 @@ players:
   picks:
   - ticker: AMZN
     weight: 0.2
-    entry_price: 262.545
+    entry_price: 262.5
     entry_price_source: open
+    exit_price: 250.0
+    return_pct: -4.76
   - ticker: COP
     weight: 0.1
     entry_price: 136.01
     entry_price_source: open
+    exit_price: 146.51
+    return_pct: 7.72
   - ticker: KO
     weight: 0.1
-    entry_price: 88.665
-    entry_price_source: close_open_rejected
-    open_rejected:
-      open: 88.415
-      high: 88.88
-      low: 88.5
+    entry_price: 88.42
+    entry_price_source: open
+    exit_price: 93.9
+    return_pct: 6.2
   - ticker: MTCH
     weight: 0.1
     entry_price: 41.33
     entry_price_source: open
+    exit_price: 42.95
+    return_pct: 3.92
   - ticker: TSLA
     weight: 0.3
-    entry_price: 382.605
+    entry_price: 382.61
     entry_price_source: open
+    exit_price: 354.72
+    return_pct: -7.29
   - ticker: ULTA
     weight: 0.1
-    entry_price: 566.91
+    entry_price: 568.06
     entry_price_source: open
+    exit_price: 592.94
+    return_pct: 4.38
   - ticker: V
     weight: 0.1
     entry_price: 385.78
     entry_price_source: open
+    exit_price: 402.61
+    return_pct: 4.36
+  weekly_return_pct: -0.48
+  alpha_vs_spy_pct: 1.51
 - player: Umassalum
   valid: true
   total_weight: 1.0
@@ -54,19 +68,31 @@ players:
     weight: 0.3
     entry_price: 102.29
     entry_price_source: open
+    exit_price: 99.16
+    return_pct: -3.06
   - ticker: INSP
     weight: 0.25
     entry_price: 69.99
     entry_price_source: open
+    exit_price: 68.79
+    return_pct: -1.71
   - ticker: RDVT
     weight: 0.2
     entry_price: 79.3
     entry_price_source: open
+    exit_price: 74.0
+    return_pct: -6.68
   - ticker: VEEV
     weight: 0.15
     entry_price: 296.53
     entry_price_source: open
+    exit_price: 310.36
+    return_pct: 4.66
   - ticker: GLD
     weight: 0.1
-    entry_price: 382.605
+    entry_price: 382.61
     entry_price_source: open
+    exit_price: 382.01
+    return_pct: -0.16
+  weekly_return_pct: -2.0
+  alpha_vs_spy_pct: -0.01
