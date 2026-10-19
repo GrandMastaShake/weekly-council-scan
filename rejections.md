@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-10-19
+
+Booked: VICI 20.8% / MNST 18.7% / COST 15.8% / BIIB 15.2% / AES 13.2% (16.3% cash -- the pipeline's 15% cash floor on a Tightening stance with 3 raised regime flags; the owner's 80% cap met; no trigger block, no promotion, no raise -- the booked book is the engine's book for the first time since 2026-09-14; Ophelia's sleeve at its engine weight under her rule, HY OAS 323 > 300). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| MAR | 73 | 81.7 | Her #2 -- not booked by consensus (her vote weight 32.8%); "Benefiting from the rangebound market regime" on a stock +6.06% to its highest close since June at RSI 75.1, above its Street mean target ($383.54, wiki/consumer-discretionary.md), where Cecil's read is a trim; UMich 46.3 and a +0.1% control group are the macro the rationale ignores. Excluded by ranking, not by rule |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): CI (Cecil #3, score 87, conf 74.7) not booked by consensus -- +7.0% to RSI 82.6 into ELV's Wednesday print, "the UNH read" (wiki/earnings-surveillance.md); MDT (Marky #3, score 94, conf 74.9) not booked by consensus -- Friday volume 91% of its 20-day average on the breakout day (Rule 1 by the number), reports Dec 1. `[sanity] DROP` lines this week: **ELV, TMO, DHR** (Marky, earnings-blackout -- each reports 2026-10-21, 3 trading days out), passed over at ranking and replaced by BIIB / COST / MDT.
+
+counterfactual: to be computed (Monday 2026-10-26, date-pinned Mon 2026-10-19 close -> Fri 2026-10-23 close; MAR alone, and CI / MDT each, and ELV / TMO / DHR each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-10-12
 
 Booked: ZS 19.3% / JCI 17.5% / HCA 16.0% / BIIB 14.8% / FTNT 12.4% (20.0% cash -- the owner's cash cap met exactly; 3 raised regime flags, Tightening Fed on pause, bank prints Tuesday and CPI Wednesday; ALL + HIG trigger-blocked on XLF's fired 50D line for the fifth and third week, TROW blocked as a promotion on the same line; JCI and BIIB promoted, Ophelia's sleeve frozen at engine weights under her own rule, Marky's three names raised in proportion to 80%). Ophelia's rejected candidates:
@@ -14,7 +28,7 @@ Booked: ZS 19.3% / JCI 17.5% / HCA 16.0% / BIIB 14.8% / FTNT 12.4% (20.0% cash -
 
 Also mirrored here (not Ophelia's, logged for the same counterfactual): ALL (Cecil #1, score 95, conf 82.8) and HIG (Cecil #2, 92 / 76.0) TRIGGER-BLOCKED -- XLF $54.73 vs the 50D $56.39 (wiki/synthesis.md Section 5; wiki/financials.md); TROW (Cecil #3, 90 / 71.6) blocked as a promotion on the same line and under its own 50D, no wiki coverage. No `[sanity] DROP` lines this week (no earnings-blackout passes).
 
-counterfactual: to be computed (Monday 2026-10-19, date-pinned Mon 2026-10-12 close -> Fri 2026-10-16 close; HPE alone, and ALL / HIG / TROW each and equal-weighted, vs the official booked week).
+counterfactual (scored 2026-10-19, date-pinned Mon 2026-10-12 close -> Fri 2026-10-16 close): **HPE -21.61%** alone vs the official booked week **-4.00%** on the same basis (Tracker -5.16% from Monday opens) = **delta -17.61pp** -- the first rejection on this log that lost to the book, and by the widest margin either way; BIIB, promoted in its place, made +1.41% on this basis, so the concentration tiebreak saved 23.0 points of the position. Mirrored names: ALL +6.57% / HIG +3.79% / TROW -2.90%; equal-weighted basket **+2.48%** = **delta +6.49pp** vs the book (all four names equal-weighted, HPE included, -3.54%, delta +0.46pp). The blocked financials beat the book for a second straight week while XLF ($55.52) stayed under its 50D ($56.16); the rejected tech name went down the AI-funding hole with the sector (XLK -6.56%).
 
 ---
 

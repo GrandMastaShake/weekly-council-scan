@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 9 | +0.09% | -0.24% | 4-5 | +3.40% (2026-09-21) |
-| Umassalum | 7 | -0.56% | -1.22% | 5-2 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 10 | -0.77% | -1.27% | -- | +0.41% (2026-09-21) |
+| GrandMastaShake | 10 | +0.04% | -0.06% | 5-5 | +3.40% (2026-09-21) |
+| Umassalum | 8 | -0.74% | -1.07% | 6-2 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 11 | -1.17% | -1.44% | -- | +0.41% (2026-09-21) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-10-12 | GrandMastaShake | -0.48% | +1.51% | -5.16% | 🏆 GrandMastaShake |
+| 2026-10-12 | Umassalum | -2.00% | -0.01% | -5.16% | 🏆 GrandMastaShake |
 | 2026-10-05 | GrandMastaShake | -1.67% | -2.82% | -1.36% | 🏆 The Council |
 | 2026-10-05 | Umassalum | -2.46% | -3.61% | -1.36% | 🏆 The Council |
 | 2026-09-28 | Umassalum | -0.79% | -0.96% | -1.15% | 🏆 Umassalum |
@@ -57,6 +59,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 **Basis note (2026-10-05, closed 2026-10-12):** all three books are on the same basis: Monday 2026-10-05 opens -> Friday 2026-10-09 close (Arena SPY $769.69 -> $778.57, +1.15%; the Tracker's SPY window is identical). A red week for every book while SPY made a record. **The Council -1.36%, alpha -2.51%** (SNPS +2.77%, JCI +1.10%, NDSN -1.61%, AMAT -6.28%, LRCX -8.08%; 20.0% cash) -- **wins the week, its third Council week win,** and beats both players head-to-head (GrandMastaShake 4-5, Umassalum 5-2). **GrandMastaShake -1.67%, alpha -2.82%** (XOM +3.16% and GEV +1.69% carried; AMAT -6.28%, RKLB -7.45%, BJRI -3.79%, NVDA -2.88% cost; fully invested). **Umassalum -2.46%, alpha -3.61%** (RDVT +0.33% the only green; BTC -4.44% on a 30% weight, CDNA -4.81%, NVDA -2.88%, INSP -1.11%; fully invested). The close run re-fetched the settled Monday bars; four opens moved by cents from the lock-time prices (NVDA $236.07 -> $236.09, AMAT $540.82 -> $540.99, CDNA $66.90 -> $66.89, RKLB $73.59 -> $73.70); the order is the same on either basis. The semis-equipment selloff (SMH -4.32% on the OpenAI/Broadcom financing reports, Thursday) is the common thread: AMAT was in two of the three books.
 
-**Open week (2026-10-12):** entry set pinned from #134 by comment timestamps (rule: created AND last edited before 2026-10-12T12:50:00Z). Two players locked in, both comments created and unedited before the lock: **GrandMastaShake** AMZN 20% / COP 10% / KO 10% / MTCH 10% / TSLA 30% / ULTA 10% / V 10%, fully invested; **Umassalum** HNGE 30% / INSP 25% / RDVT 20% / VEEV 15% / GLD 10%, fully invested. **The Council is in:** ZS 19.3% / JCI 17.5% / HCA 16.0% / BIIB 14.8% / FTNT 12.4% + 20.0% cash (report published after the lock). Entry prices will be the validated Monday 2026-10-12 opens, recorded in arena/2026-10-12.yaml by the post-open booking task. The Council's book is published in reports/2026-10-12-report.md.
+**Basis note (2026-10-12, closed 2026-10-19):** all three books are on the same basis: Monday 2026-10-12 opens -> Friday 2026-10-16 close (Arena SPY $778.78 -> $763.25, -1.99%; the Tracker's SPY window is identical). **GrandMastaShake -0.48%, alpha +1.51%** (COP +7.72%, KO +6.20%, ULTA +4.38%, V +4.36%, MTCH +3.92% carried; TSLA -7.29% on a 30% weight and AMZN -4.76% cost; fully invested) -- **wins the week** and beats the Council head-to-head (5-5). **Umassalum -2.00%, alpha -0.01%** (VEEV +4.66% the only green; RDVT -6.68%, HNGE -3.06%, INSP -1.71%, GLD -0.16%; fully invested) -- beats the Council head-to-head (6-2). **The Council -5.16%, alpha -3.17%** (FTNT -14.03%, ZS -12.17%, JCI -7.33%, BIIB -0.57%, HCA +1.83%; 20.0% cash) -- its worst week on record; both players beat it for the first time since 2026-09-21. The close run re-fetched the settled Monday bars: KO's open, which the lock-time guard rejected (the live bar's open printed under its own low, so the lock booked the last trade $88.665), was accepted from the settled bar at $88.42; AMZN moved from $262.545 to $262.50; the order of the three books is the same on either basis. The common thread was the AI-funding selloff (XLK -7.7%, SMH -10.5%): the Council's two cybersecurity names and the players' AMZN and TSLA were the damage, and the defensives (KO, COP, V, ULTA) the carry.
+
+**Open week (2026-10-19):** entry set pinned from #163 by comment timestamps (rule: created AND last edited before 2026-10-19T12:50:00Z). Two players locked in, both comments created and unedited before the lock: **GrandMastaShake** UNH 15% / XLE 15% / XLV 10% / XLU 10% / VST 10% / TMUS 10% / AMZN 10%, 80% invested (20% cash); **Umassalum** MSFT 15% / AAPL 5% / META 20% / DT 15% / IBIT 10% / XLK 10% / SPY 15% / SPCX 10%, fully invested. **The Council is in:** VICI 20.8% / MNST 18.7% / COST 15.8% / BIIB 15.2% / AES 13.2% + 16.3% cash (report published after the lock). Entry prices will be the validated Monday 2026-10-19 opens, recorded in arena/2026-10-19.yaml by the post-open booking task. The Council's book is published in reports/2026-10-19-report.md.
 
 *May the best thesis win.* 🏛️

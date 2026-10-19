@@ -77,6 +77,20 @@ What changed: (1) **-5% CORE is still the best level, now with three firings beh
 
 **Promotion recommendation, revised 2026-10-12: the -5% CORE stop has met the evidence bar this block set for itself** -- three firings, all helpful, no false positive at that level in 24 CORE position-weeks. It stays in shadow this week for one reason, and it is not the data: enforcement changes the book, and the book's rules are the owner's to change. Put to the owner: enforce -5% CORE as a daily-low stop filled at the next print (gap accepted), keep the thesis leg as a re-entry block only, keep -8% SPEC in shadow (two observations). Next revisit at 10 scored cycles regardless.
 
+**Addendum 2026-10-19 -- three stops in one week (ZS SPEC Thu, JCI CORE Thu, FTNT CORE Wed), two through gaps, all three helpful.** The sample is now **31 position-weeks across 9 booked cycles: 28 CORE, 3 SPEC.** Stops fired 7 (CORE 5: HIG 09-21, AMAT 10-05, LRCX 10-05, JCI 10-12, FTNT 10-12; SPEC 2: TER 08-17, ZS 10-12); helped 7, hurt 0; the +15% trim is still 0/31 (best intraweek high on record remains AMD +9.43%, 2026-09-21). The alternative-stop table re-run with this week's two CORE bars added (fired stops filled at the stop level; FTNT's gap was 13 cents, ZS is SPEC and outside this table):
+
+| CORE stop | Fires on (cumulative) | Net vs holding to Friday |
+|---|---|---|
+| -6.0% | AMAT, LRCX, JCI, FTNT (misses HIG) | +2.36 + 1.33 + 8.03 = **+11.72** |
+| **-5.0% (current)** | HIG, AMAT, LRCX, JCI, FTNT | +5.02 + 2.33 + 9.03 = **+16.38** (+16.31 with FTNT at its gap open) |
+| -4.5% | the above + META, AMD (09-28) | -0.99 + 2.83 + 9.53 = **+11.37** |
+| -4.0% | the above + AAPL (09-28) | -0.53 + 3.33 + 10.03 = **+12.83** |
+| -3.5% | the above + HIG 09-14, ETN | -2.26 + 3.83 + 10.53 = **+12.10** |
+
+What changed: (1) **-5% CORE is still the best level, now with five firings behind it and no false positive in 28 CORE position-weeks.** For the first time every level in the table is positive, because FTNT's -14.03% is large enough to pay for any stop; the ordering is what matters, and -5% still leads by more than four points. (2) **The thesis leg beat the stop for the first time.** XLK's $196.48 line broke on Monday's close under two names (31.7% of the book); exiting on it that evening saves 2.92pp of the book against the stops' 2.33pp. Five of the six thesis firings on record cost money or saved less than the stop; this one, on a sector line under two names on the first session, saved more. The sample for "re-entry block, not an exit" is now 5-1, and the one is the largest. (3) **Gaps again.** Two of the three stops filled through gaps (ZS 2.15% through, FTNT 0.07% through); over the sample, three of seven firings have been gaps. "Stop or stop-limit" stays the enforcement question. (4) **Entry day did not do the damage** for a second week: the lows came Wednesday to Friday on the sector (XLK -7.7% on rising volume, wiki/synthesis.md), not on the Monday basis. (5) **The lines held and the book lost anyway on two of five names** (JCI: XLI never closed under $166.18; HCA and BIIB: XLV never near $165.00). A sector trigger measures the sector.
+
+**Promotion recommendation, restated 2026-10-19: unchanged from 2026-10-12, with the evidence doubled.** Enforce -5% CORE as a daily-low stop filled at the next print (gap accepted); keep the thesis leg as a re-entry block, with one amendment put to the owner for the next revisit -- a sector line that fires under two or more booked names on the same close is a book-level event, and this week it was worth more than the stops; keep -8% SPEC in shadow (three observations, 2 fired, both helped). The owner has not ruled; nothing is enforced. Next revisit at 10 scored cycles (one more), or the owner's word, whichever comes first.
+
 ---
 
 ## Entries
@@ -97,7 +111,14 @@ Note: ALL and HIG (Cecil) were TRIGGER-BLOCKED at booking for the fifth and thir
 
 **Template stress note (observed at booking, ~10:05 ET, NOT a score):** sector lines on day one -- XLK low $196.97 / last $197.15 vs the $196.48 line (+0.3% headroom); XLI low $168.83 / last $169.46 vs the $166.18 line (+2.0% headroom); XLV low $170.86 / last $171.31 vs the $165.00 line (+3.8% headroom). Monday is Columbus Day: stocks open, bonds closed, no US data -- the first real test of every line is Tuesday's bank/UNH/JNJ prints and Wednesday's CPI. For the calibration record: the open-guard on the Arena side rejected one daily-bar open today (KO, open under its own low); all five Council opens passed the same low <= open <= high check against the 1-minute range.
 
-outcome: to be computed
+outcome (scored 2026-10-19 against date-pinned daily OHLC 2026-10-12 -> 2026-10-16): **3/5 stops fired -- the SPEC name and two CORE names, two of the three through gaps; all three saved money. The XLK thesis line under ZS and FTNT fired on Monday's close, the first session of the week.**
+- **ZS** (SPEC, -8% = $218.24): Mon low $224.60 (-5.32%), Tue $223.75, Wed $220.06 (-7.23%, held by $1.82); **Thu Oct 15 opened $216.77, through the stop -> FIRED at the open.** Scored at the stop level (-8.00%) by the block's convention = SAVED 4.17pp vs the booked -12.17%; filled at the gap open (-8.62%) the saving is 3.55pp. Friday's low was $203.33 (-14.29%). Thesis leg FIRED Mon Oct 12: XLK closed $196.36 under $196.48 -- exiting at Monday's close ($225.78, -4.82%) would have saved 7.35pp, more than the stop. Trim +15% ($272.80) never approached (week high = the entry print).
+- **JCI** (CORE, -5% = $149.12): Tue low $151.93 (-3.21%), Wed $150.60 (-4.06%, held by $1.48); **Thu Oct 15 low $143.79 -> FIRED Thu** at the stop level (-5.00%) vs the booked -7.33% = SAVED 2.33pp (the open was $149.69, 57 cents above the stop, so no gap). XLI line $166.18 never closed under (lowest close $167.04 Wed; intraday lows $166.56 / $165.69 / $164.66 Tue-Thu -- "wear, not defence"). A trigger is not a floor: the line held and the name lost 7.33%.
+- **HCA** (CORE, -5% = $428.05): never below -1.28% (Mon low $444.81); high $478.86 Thu (+6.28%); not touched, trim not reached. XLV line $165.00 never in play (week low $169.48). Finished +1.83%, the book's only green.
+- **BIIB** (CORE, -5% = $222.53): low $226.71 Tue (-3.21%); not touched. High $240.99 Thu (+2.88%). Finished -0.57% from the gap-up open (+1.41% from Monday's close).
+- **FTNT** (CORE, -5% = $186.89): Tue low $190.30 (-3.27%); **Wed Oct 14 opened $186.76, 13 cents through the stop -> FIRED at the open.** Scored at the stop level (-5.00%) = SAVED 9.03pp vs the booked -14.03%; filled at the gap open (-5.07%) 8.96pp -- a gap of 13 cents, so the two conventions agree here. Friday's low was $166.75 (-15.24%). Thesis leg fired Monday with ZS (shared XLK line): exiting at Monday's close ($192.94, -1.92%) would have saved 12.11pp.
+- Trim plan: 0/5 reached +15%; best intraweek high HCA +6.28%.
+- Book effect, stops filled at their levels: 4.17 x 19.3% + 2.33 x 17.5% + 9.03 x 12.4% = **2.33pp of the book** (-5.16% -> about -2.83%); with ZS and FTNT filled at their gap opens, 2.20pp. The thesis leg alone, applied as an exit on Monday's close for both XLK names: 7.35 x 19.3% + 12.11 x 12.4% = **2.92pp of the book** -- the first week the thesis leg beat the stop, because the line broke on day one and the stops needed two and three more sessions.
 
 ---
 
