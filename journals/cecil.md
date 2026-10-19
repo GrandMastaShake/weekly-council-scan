@@ -718,3 +718,44 @@ For the record, the other direction: CCC at 1,252 is new and it is the right num
 **Cash Target: 35%. Council actual: 20.0%.** Five names in cybersecurity, a hospital, a biotech and building technology, none read by a desk, into bank prints, CPI and the Fed Chair in one week. I am not in the book. The four percent bill is still the cheapest asset on the board and it got six basis points cheaper last week.
 
 -- **Cecil**, The Fundamentalist
+
+
+## Week of 2026-10-19 -- Entry #013
+
+**Mood:** Back in the book after three weeks, with two names the screen found and one of them I would not have chosen on my own standard.
+**Cash Target:** 35% (Council book: 16.3% cash -- the pipeline's floor; the owner's cap is 20%; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, Tightening on pause; Warsh gave no October signal, blackout until Oct 28; December ~79-90% priced | The hike is in December unless the growth scare gets there first |
+| 10Y Yield | **5.098%**, 14.6 bps lower on the week, all of it real yield; a fourth weekly close above 5.00% | The long end bought a slowdown, not inflation relief. The bill did not move |
+| Curve (10Y-3M) | **+103 bps** (from +119); 10Y-2Y +33 | Flatter from the long end. That is the shape that squeezes a bank's margin and flatters a landlord's |
+| XLF | **$55.52**, 50D $56.16; Friday's high 13 cents short. ALL +6.57%, HIG +3.79% while blocked | The line never cleared and my names ran anyway. Receipts: GS beat, JPM missed and raised, BAC paid $1.2B; no two-bank provision increase (#167) |
+| Credit | HY OAS **323** (peak 325 on CPI day), HY-IG **239**, eleven under the trigger; CCC **1,278**, another 52-week high; CoreWeave's 2032s near 15% | The index joined the bottom tier. The AI build-out's financing is now on the high-yield tape |
+
+**Verdict:** Restrictive, with a growth scare arriving from financial conditions rather than the economy. The calendar desk's label; I adopt it.
+
+#### Last Week, Scored
+- I had nothing booked, for a third week. **ALL**, blocked, made **+6.57%** (Mon close to Fri close); **HIG**, blocked on the shared line, **+3.79%**; **TROW**, blocked as a promotion, -2.90%. The book made -4.00% on that basis and -5.16% from the opens, the worst week on the record. The block cost the engine's book 2.78 points. Its record is 3-2 and the two losses are consecutive.
+- I promised a number for today, not a plea. Here it is: the two-bank provision trigger was **not confirmed**. Four weeks of selling in my names was positioning. I was right about that and I was not in the book, and both of those are true at once.
+- The line did not clear. XLF closed $55.52 against a 50D of $56.16, and the money centers that hold the fund down sat at RSI 30 while the insurers ran. I asked for the re-read and the Council did it (Dissonance #1). The verdict is the one I would have given in their chair: the 50D is my own re-entry standard from Entry #009, and the morning after a line costs money is the wrong morning to move it. What the Council wrote down instead is the thing I have been saying since 09-28 -- a sector line blocks a name when the name's risk is the sector's, and two insurers rose with their group while the banks did not, twice. That sentence is now on the record. Next time a carry name is proposed under this line, it is the first thing read.
+
+#### This Week's Picks (Council Book)
+- **VICI** -- score 90, conf 83.9 -- **BOOKED 20.8%.** A casino net-lease landlord at 9.0x trailing, 7.8x forward, $2.6B of free cash flow, and a **7.82% yield that clears the 10-year by 272 bps**. On my own synthesis rule this week -- the single-name yields that clear the Treasury are a short list -- it is the strongest carry case on the board. My desk bought O at $56.08 on Friday on the condition I set (a second lower weekly 10-year close); VICI is the same trade with a wider spread and a rent that is contractual. Trigger: invalid on an XLRE close under $41.47 (the 20D), 1.6% headroom. What I do not like: it is 13% under its 200D with a 4-week return of -0.5%, the bond proxies have not confirmed their own turn, and the 20-year auction is Wednesday at 1:00 PM. The calendar desk said no new duration before it. The synthesis resolved that as "with a stop." The stop is the line.
+- **AES** -- score 89, conf 80.3 -- **BOOKED 13.2%.** The screen's cheapest name: 5.6x trailing, 6.1x forward. And here is what the screen did not say: debt at 4.0x equity, no free cash flow in the cache, a 4.81% yield that sits **29 bps under the 10-year** and 74 under the 5-year. The carry gap I measure for the whole utilities sector every week (-203 bps) applies to this name and the screen scored it as value anyway. It is also the one position on the AI-power wire the synthesis maps -- CEG -9.0%, VST -5.9% last week, AES flat. I conceded the pattern in the deliberation (Dissonance #5), not the name: a 5.6x multiple on a 4x-levered balance sheet is exactly what the unbuilt screen cannot tell from cheapness. Trigger: XLU close under $41.09, 2.7% headroom. The Council flagged it the weakest-evidenced position in the book and asked the exit-shadow task to tag it SPEC on leverage. I did not argue.
+- **CI** -- score 87, conf 74.7 -- not booked (consensus). Managed care at RSI 82.6 after UNH's beat, into ELV's print Wednesday. Correctly left out; I would not have fought for it.
+
+**Booked for Cecil: 34.0%.** The largest sleeve in the book, by vote weight (38.2%) and by the arithmetic of nothing being blocked.
+
+#### The Concession (owned)
+Entry #012 said: a standard you set for yourself has to be met before you argue the line. I did not argue the line this week; the screen moved on by itself and changed the subject. That is not the same as meeting the standard. The duration-adjusted screen is still not built -- ninth week, fourth journal entry to say so -- and this week it produced the clearest case yet for why it matters: two yield names, one 272 bps over the bill and one 29 bps under it, scored two points apart. A screen that cannot tell those apart is not a value screen; it is a P/E sort. I am in the book with both of them, and the one I would defend on my own numbers is the one the Council graded higher. The other is a C and should be.
+
+The other thing to own: I was right about the banks' reserves and it earned me nothing, because being right about the sector's risk is not the same as being allowed to own the names under the sector's line. The Council's new sentence is the remedy I asked for. It arrived the week my names stopped being proposed.
+
+#### Lesson Learned
+**A yield that does not clear the bill is not carry; it is a promise about the balance sheet.** VICI pays 7.82% and the 10-year pays 5.10%; the 272 bps is what I am paid to take the lease risk. AES pays 4.81%; the 29 bps gap is what I pay to take the leverage, and the P/E hides it. The fix is one column: the dividend yield minus the 10-year, beside the multiple, so the screen scores the spread and not the ratio. I have written the fix three different ways in three entries. This one is a column. Build it before Entry #014 or stop promising it.
+
+**Cash Target: 35%. Council actual: 16.3%.** Five names in the four sectors that rose on money leaving tech, every line carrying a print inside the week, the 20-year auction Wednesday and Meta that evening. The four percent bill is 4.07% and still the cheapest asset on the board. I am in the book this week; the bill is not, and I would rather have both.
+
+-- **Cecil**, The Fundamentalist
