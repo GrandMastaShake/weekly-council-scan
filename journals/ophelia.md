@@ -626,3 +626,40 @@ The second concession is ZS. It is my largest weight, 25.8% above its 50D, +42% 
 **Cash Target: 30%. Council actual: 20.0%.** My desk's own instruction this week is "do not buy the dip in anything long-duration or AI-funding-dependent before Wednesday at 8:30 AM." The book has five new positions, two of them long-duration growth at records, and its stops are still shadow-only. I have said which side of that I am on; the cap is the owner's and it is applied. The one thing I can control -- my own sleeve's size -- I did.
 
 -- **Ophelia**, Macro Oracle
+
+
+## Week of 2026-10-19 -- The Macro Was Right, the Names Were the Worst in the Book, and the Rule Held
+
+### 1. Macro Narrative
+The regime moved from term premium to **sticky inflation with a growth scare from financial conditions**, which is the hardest mix the Fed can be handed, and the calendar desk named it before I did. The inflation half confirmed on every measure: September CPI **3.7% Y/Y**, core **+0.3% M/M** against +0.2%, PPI **+1.3%** with core +0.7%, Philly prices received at a 17-month high, and WTI's front month settling **$101.41**, through $100 and into October's CPI. On those numbers my thesis said yields up and October priced. Instead the 10-year spiked to 5.329% on CPI morning and closed the week at **5.098%, -14.6 bps**, all of it real yield; the 2-year did not join (4.77%), so 10Y-2Y flattened 16 bps to +33 and 10Y-3M to **+103**. October odds went 22% -> 50% -> 14-28% after Warsh declined to signal in Bangkok; December is **79-90%**; the Fed is in blackout until Oct 28. The bond market looked at hot inflation and a 10.5% fall in semiconductors and priced growth risk. Credit went the other way from rates: **HY OAS 323** (cycle peak 325 on CPI day), **HY-IG 239**, eleven under my trigger, **CCC 1,278**, a 52-week high; HYG fell while LQD rose. CoreWeave's 2032s near 15% put the AI build-out's financing on the high-yield tape. Three flags up, unchanged; oil and VIX each one qualifying close from making it five. Dollar 101.84, its first down week in five, still above 101. VIX **19.99** with the term structure at 0.975.
+
+### 2. Last Week, Scored
+- **ZS** booked 19.3% -> **-12.17%**; **FTNT** 12.4% -> **-14.03%**. My sleeve: **-4.09% of book on 31.7% of the weight.** The two worst names in the worst week on the record, and both were mine.
+- My named wrong-condition -- XLK under $196.48 -- fired on **Monday's close**, the first session, by twelve cents. Both positions were dead on the thesis leg by the evening of the day they were booked, and the stops did not fire until Wednesday and Thursday. The exit shadow scored the thesis leg at 2.92 points of the book against the stops' 2.33: the first week the line beat the stop, because it was a sector line under two names and it broke on day one.
+- The rule I asked for was tested in the direction it was built for. Shadow B -- my sleeve raised with the others -- would have lost 0.11pp more. **1-0 for the rule.** It did not cost me a winner, so the test I set myself (whether I would argue for an exception) did not arrive. It will.
+- What was right: the regime label, the credit read, the instruction on the calendar page not to buy anything long-duration or AI-funding-dependent before Wednesday. What was wrong: I wrote that instruction on Saturday and sponsored two long-duration tech names at records on Monday because the engine's sector rationale said "rotation." The macro was right and the names ignored it. That is a new scar, and it is the one this entry is about.
+
+### 3. My Proposals to the Council
+- **MNST** -- macro score 75, confidence 84.6 -- **BOOKED 18.7%, at the engine weight, under my rule.** "Aligned with Consumer sector rotation" at RSI 79.6 after +4.79% in a week, 42.9x trailing, no debt, 20% revenue growth (cache), reports Nov 6. The line is XLP's $86.06, 1.8% headroom, shared with COST and stated. My own staples desk wrote on Friday that the sizing waits for a pullback toward $85.50 and that the sector broke its trigger on a flow, not on fundamentals. The engine did not wait. I am the sponsor, and the shape -- a sector rationale on a stock at a run, one week after the same shape lost 12% -- is the first thing the Council named (Dissonance #3). I did not contest it.
+- **MAR** -- 73, conf 81.7 -- not booked (consensus). "Benefiting from the rangebound market regime" on a hotel chain above its own Street target at RSI 75, with UMich at 46.3 and a +0.1% control group. It goes to the rejection log, and I am glad it is there and not here.
+- **COST** -- 73, conf 76.5 -- booked under Marky's sponsorship. Two engines, one name, on a fund both our desks said not to add to at this price.
+
+### 4. The Concession (owned)
+My falsifier is still fired -- HY OAS 323, fourteen sessions above 300 -- so my sleeve is at its engine weight and takes no raise. This week there was no raise to take, so the rule cost nothing and proved nothing. I note that rather than claim it.
+
+The concession that matters is the confidence number. The engine prints **84.6** on MNST, the highest in the room, one week after it printed 70.3 on ZS and 67.8 on FTNT and both lost double digits with my own wrong-condition firing on day one. The Council graded me at 65 last week and does again this week, and the number I would give myself is lower: my macro posture for the week says "keep energy and staples with stops" and "no new rate-sensitive position without a stop," and it also says every defensive bid is partly borrowed from a tech selloff that Meta can end on Wednesday night. A confidence of 84.6 does not reflect that doubt. The rule I wrote fixes the size. It does not fix the number, and the scorecard's prior flag on me -- confidence that does not reflect stated doubt -- is remedied in one place and not the other.
+
+### 5. Lesson Learned
+**A desk instruction that the sponsor does not apply to her own pick is a paragraph, not a rule.** Last week's lesson was that the size has to come off before the week, in public; it did, and it helped. This week's is one step earlier: the staples desk's "wait for $85.50" was mine, written Friday, and the engine's "rotation" rationale overrode it Monday with my name on the sponsorship line. The next consequence I owe is the one Marky wrote for himself today in a different form -- a ceiling. When my desk has written a wait-for level for a sector inside the same week, a proposal in that sector carries my sleeve at engine weight regardless of the falsifier, and the report says so in the first paragraph. If I will not trade my own desk's instruction, the Council should not have to.
+
+### 6. What Would Make Me Wrong
+- **Meta holds or raises its capex Wednesday night.** The funding scare ends, SMH squeezes toward $564.74 and $579, and the borrowed part of the defensive bid -- the part under MNST, COST, BIIB, VICI and AES -- goes back where it came from in one session.
+- **XLP closes under $86.06.** 1.8% away. It fires MNST and COST together, 34.5% of the book, the way $196.48 fired ZS and FTNT together last Monday.
+- **The 20-year auction tails more than 1 bp, or stops out above 5.50%.** Term premium comes back after a growth-scare rally and the duration names (VICI first) give it back before the earnings do.
+- **HY-IG prints 250 or wider on Friday's number, posted Monday.** Then the credit leg is widening, not narrowing, and the rule that froze my sleeve should have cut it. This is the number I read first this morning.
+- **The 10Y closes back over 5.24%.** The synthesis says the defensive breakouts fail there. Every line in this book is a defensive breakout.
+
+### 7. Cash
+**Cash Target: 30%. Council actual: 16.3%.** My desks hold 25-30%. The book holds five positions in four sectors that rose on fear, into a week with no first-tier data, a Fed in blackout, a 20-year auction and the first hyperscaler capex read since the selloff began. The cap is the owner's and the floor set the number. The one thing I control is my sleeve, and it is at the engine weight for the second week by my own rule. The thing I did not control this week is what went into it.
+
+-- **Ophelia**, Macro Oracle
