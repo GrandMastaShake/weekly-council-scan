@@ -824,3 +824,45 @@ The other concession: Rule 1 got argued this week instead of applied. The argume
 - [ ] Cash rule -- 20.0% cash. The cap sets it.
 
 -- **Marky**, The Technician
+
+
+## WEEK OF 2026-10-19
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $763.25, **-1.97% W/W**; first close under the 50D ($768.50) since the rotation began; Wednesday -1.08% the worst day since July | The index broke its average and the leaders distributed. That is the tape |
+| Breadth | **44.9%** of the S&P above its 50D (35.0% last week), off the 40% red line for the first time in four weeks; RSP +2.46 pts vs SPY; market-wide 26.5% above the 50D, 410 new lows vs 111 highs | The average large stock got better while the index fell. Everything outside the S&P got worse. Both are true; the improvement is a defensive rotation |
+| VIX | **19.99**, one cent under the line; 22.31 intraday Friday; VIX/VIX3M **0.975**; VVIX 109.91; SPX put/call 1.46 | The regime question is not answered because 19.99 is not 20. One more Friday like that one inverts the term structure. Above 1.00 I hedge the book, not a sector |
+| 10Y Yield | **5.098%**, -14.6 bps; CPI-morning high 5.329% | My 5.364% line was never tested. The next test is Wednesday's 20-year |
+| SMH / XLK | $539.79 (**-10.53%**, volume rising every session 6.3M -> 18.4M, SOX eight days down) / $183.47 (**-7.70%**, five closes under $198.73, through the 20D and 50D, Friday on its low) | Distribution, not a shakeout. I was long both lines two weeks ago and the book paid for it last week |
+| XLP / XLV / XLU / XLRE | $87.62 (RSI 73, through $88.31 intraday, closed under; I take half off there) / $176.71 (52-week closing high Thursday over the $176.60 August high; long, no add at RSI 66) / $42.21 (first close over the 50D since Jul 29, on a day SPY fell 1.1%) / $42.16 (two rejections at $42.34-42.49, eight cents under the trapdoor; half off, stop at $41.47) | Four defensive breakouts on risk-off days. That is the pattern you want -- and a defensive breakout in a falling market can reverse the day the market stops falling |
+
+**Verdict:** The book is long the four sectors that rose on fear. If Meta holds its capex Wednesday night and the chips squeeze, every one of these lines gives back the borrowed part of its bid at once. I am saying that on Monday so it cannot be re-told on Friday.
+
+### Last Week, Scored
+- **JCI** booked 17.5% -> **-7.33%** (high $157.09 Monday, low $143.79 Thursday). XLI's $166.18 line never closed under -- lowest close $167.04 -- and the stock lost 7.33% anyway; the -5% shadow stop fired Thursday at $149.12 and would have saved 2.33 points. I wrote two weeks ago that a trigger is not a floor. The week wrote it again, in my name.
+- **HCA** 16.0% -> **+1.83%**, the book's only green; high $478.86 Thursday (+6.28%), the best intraweek high in the book. The XLV floor was never in play.
+- **BIIB** 14.8% -> **-0.57%** from the gap-up open (+1.41% from Monday's close). The gap I noted at booking was the whole loss.
+- Ophelia's two names on the XLK line did the damage (-12.17%, -14.03%); the line broke on Monday's close. The shadow book says her rule saved 0.11 points; the exit shadow says three stops would have saved 2.33 points of the book. Neither is enforced.
+- I held 48.3% of that book by inheritance. It returned -1.07 points of the book on my sleeve against -4.09 on hers. I did not earn the size and I did not lose the week; both are in the record.
+
+### Picks (Booked)
+1. **BIIB** -- 78.5 -- **BOOKED 15.2%**, second week. 52-week high $240.99 on Thursday on 1.57M shares, **120% of its 20-day average**. Rule 1 by the number: pass. 5.9% over the 50D, 14.2x forward (cache). The trigger is an XLV close under $171.87 (2.7% headroom); the page's own line is $176.60, 11 cents away, and the Council named it the first warning rather than the trigger (Dissonance #4) -- I agreed, because a line that fires on a 0.1% dip is a coin, not a rule. Still in no wiki; still biotech into an Oct 28 print; still on a sector whose bid is partly borrowed.
+2. **COST** -- 79.0 -- **BOOKED 15.8%.** Score 100 on a low-volatility uptrend (vol 2.3%). Friday's close $989.11, the highest since May 28 but not a 52-week high ($1,096.50), on 2.52M shares, **105% of average**. Rule 1 by the number: pass, barely, and on a day that was not a breakout. RSI 79.0, 5.9% over its 50D, 47.8x trailing. The staples desk -- my own desk -- said "I do not open a new long up here" about the fund, and Cecil said he would not add COST at this price. The engine opened one and I am its sponsor. The line is XLP $86.06, 1.8% headroom, shared with MNST and stated.
+3. **MDT** -- 74.9 -- not booked (consensus). "Breakout with volume rising": the five-day average is 116% of the 20-day, Friday's own was 91%. Pass on the week, fail on the day. Reports Dec 1. I did not argue for it and I would have lost the argument to my own number.
+
+### The Concession (owned)
+I hold 31.0% of this book, by vote weight this time (28.9%), not by inheritance -- nothing was blocked, nothing was promoted, nothing was raised. That is the first clean sleeve I have had in a month and both names in it are on sectors my own desk says not to add to at these prices. The rule I gave myself last week (volume on the breakout day against its 20-day) was applied to both and both passed; the rule I did not give myself is the one that matters this week: **what RSI is too high to open a new long in a sector whose bid is borrowed.** I wrote "I do not open a new long up here" on the staples page on Friday and sponsored one on Monday. The engine did it, the number passed, and the sentence is still mine.
+
+### Lesson Learned
+**A rule with a number in it tells you when you are allowed in. It does not tell you when you should not want to be.** Rule 1 passed on BIIB and COST because volume was there. Nothing in my rules says that a sector at RSI 73-77 after a flow-driven +5% week, with its own desk taking half off, is a place to open a new position -- so the engine opened two. The next number I owe is the ceiling: a new long is not opened in a sector ETF whose 14-day RSI is above 75 unless the name's own line has at least 3% of headroom. XLP is 77 (fetched) and the line has 1.8%. By that rule, written today, both of my names would be on a watchlist, not in the book. I am writing it now so that next week it is arithmetic.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **101.84** (first down week in five, still above 101) and 10Y 5.098%. Both lit, fourth week. No commodity longs in the book.
+- [x] "Good news = sell" cycle peaks -- TSMC beat and raised, ASML sold out through 2028, and the stocks fell 9% and 8%. PLD beat and raised and made its lowest close since January. On, and louder.
+- [x] 3+ canaries/regime flags -- 3 raised, oil and VIX at the line. Answered with 83.7% invested, by the floor and the cap.
+- [x] VIX < 16 + bad breadth -- **no longer**: VIX 19.99 and breadth 44.9%. The cheap-hedge window closed last week while I was not hedged. Above 20 with VIX/VIX3M over 1.00 I hedge the book.
+- [ ] Cash rule -- 16.3% cash. The floor set it.
+
+-- **Marky**, The Technician
