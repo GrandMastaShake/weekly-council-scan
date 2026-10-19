@@ -1,0 +1,94 @@
+week: '2026-10-19'
+status: open
+positions:
+- ticker: VICI
+  weight: 0.20800000000000002
+  sponsor: Cecil
+  thesis: 'Deep value at 9.0x earnings with solid fundamentals. Score: 90. (confidence:
+    83.9)'
+  entry_price: 23.479999542236328
+  entry_date: '2026-10-19'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: MNST
+  weight: 0.187
+  sponsor: Ophelia
+  thesis: 'Aligned with Consumer sector rotation. Macro score: 75. (confidence: 84.6)'
+  entry_price: 45.41999816894531
+  entry_date: '2026-10-19'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: COST
+  weight: 0.158
+  sponsor: Marky
+  thesis: 'Low volatility uptrend with clean price action. Vol: 2.3%. Score: 100.
+    (confidence: 79)'
+  entry_price: 986.0
+  entry_date: '2026-10-19'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: BIIB
+  weight: 0.152
+  sponsor: Marky
+  thesis: 'Strong momentum breaking above the 12-week MA. 4W return: 6.5%. (confidence:
+    78.5)'
+  entry_price: 231.80999755859375
+  entry_date: '2026-10-19'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AES
+  weight: 0.132
+  sponsor: Cecil
+  thesis: 'Quality business trading at a discount. P/E: 5.6. Score: 89. (confidence:
+    80.3)'
+  entry_price: 14.949999809265137
+  entry_date: '2026-10-19'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 767.22998046875
+spy_entry_source: open
+vix_at_entry: 19.99
+fed_stance: 'Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0 vote;
+  16 of 18 dots see another 2026 hike); the September minutes (released Oct 7) say
+  most participants see another hike as likely appropriate by year-end; Fed Chair
+  Warsh gave no October signal on Oct 16 and the Fed is in blackout until the Oct
+  27-28 meeting -- October is priced as a hold (~28% CME Thu / ~14% Polymarket Fri)
+  with December the priced meeting (~79-90%): a hiking cycle on pause, not ended (macro/facts.json
+  policy.fed_stance = "Hike", policy.next_macro_gate; wiki/economic-calendar.md).'
+total_weight: 0.837
+cash_weight: 0.16300000000000003
