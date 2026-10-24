@@ -115,7 +115,7 @@ Week path: Mon $50.95, Tue $51.23, Wed $51.32, **Thu $51.69** (highest close sin
 | Crude / Feedstock | **WTI $103.44** (Fri evening, CL=F) vs $101.41 settled (CLX26); Brent $111.66 (Fri evening) | About +2.0%, provisional. Dow's local prices +14% show the pass-through is working for now |
 | Nat Gas | $3.05 (Fri evening, NG=F), -2.2% | Provisional |
 | **ISM Manufacturing PMI** | 54.5 (Sept); prices paid 77.9 (carried) | October print due in early November |
-| Housing | 30Y mortgage **7.32%** (Freddie Mac, Oct 22), from 7.40% | First move in three weeks; small |
+| Housing | 30Y mortgage **7.32%** (Freddie Mac, Oct 22), from 7.40% | First decline in at least three weeks; small |
 | China | No stimulus announcement or dated demand read found (searches returned 2024 items) | Not re-sourced a third week |
 | Corporate actions | **Corteva/Vylor**: pieces +2.3% combined. **KALU** -26.7% checked: earnings miss, no corporate action | — |
 | SPY (context) | $759.97, -0.43% W/W; VIX 19.45 | — |
