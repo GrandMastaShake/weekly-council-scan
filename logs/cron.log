@@ -384,3 +384,4 @@
 2026-10-25T08:56:00-04:00 SEMICONDUCTORS + ECONOMIC CALENDAR WIKI UPDATE START (late run: scheduled Sat 6:33 PM ET, firing Sun AM)
 2026-10-25T08:58:00-04:00 EARNINGS SURVEILLANCE UPDATE START (late run: scheduled Sat 7:03 PM ET, firing Sun AM)
 2026-10-25T08:56:37-04:00 | CANARY WATCH UPDATE | START (late run: scheduled Sat 2026-10-24 19:39 ET; week ending Fri 2026-10-23)
+2026-10-25T09:20:00-04:00 | CANARY WATCH UPDATE | END — SUCCESS (late run). macro/facts.json regenerated (262e30b; truth_check 26 ok/0 warn/0 fail/2 skip); wiki/canary-watch.md updated (34a8247, 9df074f); issue #177 (HY–IG 251 > 250, XLV corr flip). WTI/gold STALE: data/market_state.json still as_of 2026-10-16. FRED via second network path (runner timeout).
