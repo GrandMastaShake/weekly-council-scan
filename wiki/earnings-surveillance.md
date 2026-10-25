@@ -6,115 +6,109 @@
 
 ---
 
-## THIS WEEK'S EARNINGS GAUNTLET (Oct 19 – Oct 23)
+## THIS WEEK'S EARNINGS GAUNTLET (Oct 26 – Oct 30)
 
-> *THE FIRST BIG 7 WEEK, AND IT IS TWO NAMES, NOT ONE. **META moved its print up a week to Wed Oct 21 (AMC)**, company-confirmed on Oct 12, so it now reports the same evening as TSLA and TXN. Eight tracked names: **NFLX Tue Oct 20 (AMC); TMO, ABT, T Wed Oct 21 (BMO); TSLA, META, TXN Wed Oct 21 (AMC); HON Thu Oct 22 (BMO).** Every date is company-confirmed on Earnings Whispers. They report into a tape that broke last week: hot September CPI (headline 3.7% y/y, core +0.3% m/m) put October hike odds at roughly 42–52% (#165, #167), SMH fell 10.5% W/W, QQQ 5.5%, SPY 2.0%, and VIX closed 19.99 from 14.84. The 10Y fell to 5.10% from 5.24% on the same news; bonds read it as growth risk, equities as rate risk. FOMC is Oct 27–28. Outside the tracked list: about 75 names, including GE, RTX, NOC, 3M, GM, ISRG, COF, PM, IBM, LRCX, PG, LMT, UNP, BX, CMCSA, VLO, WDC and AXP. Dates and estimates: yfinance `calendar`/`earnings_dates` for the 50 tracked names and 210 outside names; whisper numbers from Earnings Whispers ticker pages (20 names checked, 15 whispers, read 2026-10-18).*
+> *THE HEAVIEST WEEK OF THE QUARTER, WITH THE FED IN THE MIDDLE. Sixteen tracked names in five sessions: **VZ Mon Oct 26 (BMO); BA, FCX (BMO) and V (AMC) Tue Oct 27; MSFT, GOOGL Wed Oct 28 (AMC), two hours after the FOMC statement; LLY, MRK, MA, CAT, LIN (BMO) and AMZN, SBUX (AMC) Thu Oct 29; XOM, CVX, ABBV Fri Oct 30 (BMO).** All sixteen dates are now company-confirmed on Earnings Whispers (last week six were unchecked). They report into a tape that steadied but did not repair: META fell 9.4% on its print week, GOOGL 6.0%, CAT and FCX 6.0–6.3%, while TSLA rose 4.9% and AAPL made another weekly gain. HY–IG crossed its 250 bp trigger (#177). About 670 names report outside the tracked list, including SK Hynix (SKHY, Oct 27), KO, HSBC, NVS, UPS, GLW, STX, GEV, VRT, KLAC, NOW, TMUS, INTC, SNDK, GILD, SHEL, TTE, BP and AZN. Dates and estimates: yfinance `calendar`/`earnings_dates` for the 50 tracked names (sector tracks 1–6 worked in order); Finviz earnings calendar for outside names (680 rows); whispers from Earnings Whispers ticker pages (21 names checked, 17 whispers, read 2026-10-25).*
 
-**Week at a Glance:** 8 tracked, about 75 outside. Wednesday Oct 21 carries six tracked prints and about 25 outside names; the evening alone is TSLA, META, TXN, IBM, LRCX, SAP, URI and CSX. **The whisper board turned: TSLA's whisper ($0.40) is now below the consensus ($0.44)**, the first tracked name this season with a whisper under the street. Every other tracked name this week has a whisper above consensus, the widest **AT&T at +4.9%** and **HON at +3.7%**. The straddle-implied moves barely moved despite a VIX up 5 points: TSLA 7.4% (from 7.5%), NFLX 9.5% (from 8.5%), TXN 8.4% (from 8.8%).
+**Week at a Glance:** 16 tracked, about 670 outside. Three of the Big 7 (MSFT, GOOGL, AMZN) report inside 26 hours of the FOMC decision. **The whisper board leans up:** 14 of 16 tracked names show a whisper, 13 above consensus. The widest gap is **LLY: whisper $8.71 against a $7.11 Earnings Whispers consensus (+22.5%)**, then **XOM +7.9%**, **FCX +6.3%** and **SBUX +5.5%**. AMZN and BA are the only tracked names with whispers below consensus, unchanged from last week. Straddles came in across the board as the VIX eased: MSFT ±5.3% (from ±6.0%), GOOGL ±6.1% (from ±7.0%), CAT ±7.4% (from ±8.7%), MRK ±5.3% (from ±7.0%), XOM ±3.9% (from ±4.8%).
 
 | Date | Company | Ticker | Sector | EPS Est (yfinance consensus, range) | Revenue Est | Key Metric | Council Stake |
 |---|---|---|---|---|---|---|---|
-| **Tue Oct 20 (AMC, 4:05 PM)** | **Netflix** | **NFLX** | **Communication (tracked)** | **$0.82 (0.79–0.87)** | **$12.88B** | **Engagement vs. YouTube; ad tier; the reported 5% workforce cut; Q4 guide** | 🔥 **$70.53, +0.3% W/W, the only tracked tech-adjacent name that did not fall. Beat 6 of 8, ±7.1%; four of its last five reactions negative, the last -7.3% on a +1.4% beat. Whisper $0.84 vs. $0.82 (+2.4%, EW, unchanged). Straddle ±9.5% to Oct 23 (5,152 contracts), up from 8.5%: the only tracked straddle that got more expensive.** |
-| **Wed Oct 21 (BMO, 6:00 AM)** | **Thermo Fisher** | **TMO** | **Healthcare / tools (tracked)** | **$6.40 (6.33–6.47)** | **$11.93B** | **Biopharma instrument demand; China; full-year guide** | **$690.00, +4.9% W/W in the healthcare rotation. Beat 8 of 8, ±5.1%; the last print +5.6% and +8.7%. Whisper $6.51 (+1.7%). Straddle ±6.2% on 29 contracts; disregard.** |
-| **Wed Oct 21 (BMO, 7:30 AM)** | **Abbott** | **ABT** | **Healthcare / devices (tracked)** | **$1.41 (1.31–1.44)** | **$12.99B** | **Libre growth; diagnostics; 2027 outlook** | **$104.89, +6.0% W/W. Strict beats 4 of 8 on yfinance's current estimate history (7 of 8 on last week's pull; the median surprise is +0.3%, so several quarters sit within a cent); ±5.4%; the last print +2.6% and +10.7%. Whisper $1.44 vs. $1.42 EW (+1.4%). Straddle ±5.5%. JNJ's MedTech miss (Oct 13) is the read-in.** |
-| **Wed Oct 21 (BMO, 6:30 AM)** | **AT&T** | **T** | **Communication / telecom (tracked)** | **$0.60 (0.56–0.63)** | **$31.65B** | **Postpaid phone adds; fiber; response to SpaceX's 800 MHz purchase; dividend cover** | 🔥 **$23.44, +5.7% W/W, retracing about two-thirds of the prior week's -8.7%. Beat 6 of 8 (7 of 8 last week; restated estimate), ±2.9%. Whisper $0.64 vs. $0.61 EW (+4.9%), the widest tracked gap this week. The straddle is clean again: ±5.0% to Oct 23 with call and put both $0.58 (last week ±12.7%, distorted). Still 1.7x its norm.** |
-| **Wed Oct 21 (AMC, 4:15 PM)** | **Tesla** | **TSLA** | **Consumer Discretionary (tracked)** | **$0.45 (0.30–0.70)** | **$28.11B** | **Auto gross margin ex-credits; Q3 deliveries 486,532 vs. about 461,100 expected; robotaxi and Optimus timelines** | 🔥 **$354.72, -7.3% W/W. Beat 3 of 8, ±7.8%; the last print missed -39.1% and fell -14.5%. ✅ Basis resolved: EW now shows $0.44 non-GAAP (last week's $0.22 was GAAP). ⚠️ Whisper $0.40, $0.04 below consensus: the room expects another miss. Straddle ±7.4% to Oct 23 (2,500 contracts), still under its realized norm.** |
-| **Wed Oct 21 (AMC, 4:00 PM)** | **Meta Platforms** | **META** | **Communication (tracked, Big 7)** | **$6.76 calendar (3.92–7.64); `earnings_dates` $5.70** ⚠️ | **$63.39B** | **Ad pricing and impressions; 2027 capex guide; the reported plan to lease out AI capacity** | 🔥 **$709.33, -1.3% W/W. MOVED UP from Oct 28 (company release, Oct 12). Beat 7 of 8, ±7.4%; the last print missed -14.4% and fell -8.0%. ⚠️ Three consensus figures again: $6.76 (calendar), $5.70 (`earnings_dates`, down from $6.25), $6.54 (EW). Whisper $6.65 (+1.7% vs. EW). Revenue guide was $61–64B. Straddle ±7.3% to Oct 23 (from ±8.8% to Oct 30; a week shorter).** |
-| **Wed Oct 21 (AMC, 4:00 PM)** | **Texas Instruments** | **TXN** | **Tech / analog semis (tracked)** | **$2.42 (2.24–2.54)** | **$5.91B** | **Q4 revenue guide; industrial and auto orders; China; fab depreciation** | 🔥 **$276.48, -2.6% W/W, the best semi in a week SMH lost 10.5%. Beat 6 of 8, ±8.7%; the last print +10.5% and -3.1%. Whisper $2.46 vs. $2.40 EW (+2.5%), first whisper shown this cycle. Straddle ±8.4% on 104 contracts (thin). The first tracked semi to speak after the sell-off.** |
-| **Thu Oct 22 (BMO, 6:00 AM)** | **Honeywell** | **HON** | **Industrials (tracked)** | **$2.16 (2.10–2.23)** | **$5.01B** | **Aerospace aftermarket; automation orders; separation timeline** | **$211.41, +1.8% W/W. Beat 8 of 8, ±5.3%. Whisper $2.25 vs. $2.17 EW (+3.7%). Straddle ±5.1% on 57 contracts (thin). Reports two days after GE, RTX and NOC.** |
-| Mon Oct 19 | Fifth Third / Zions / Western Alliance / Steel Dynamics / Cleveland-Cliffs | FITB / ZION / WAL / STLD / CLF | Regional banks, steel (outside) | $1.08 / $1.65 / $2.43 / $5.40 / $0.24 | $3.34B / $0.89B / $0.99B / $6.55B / $5.72B | Regional credit after TFC's charge; steel pricing | ZION's last print beat +58.8% and fell -4.0%. WAL beat 2 of 8. CLF ±12.4%. FITB's `earnings_dates` shows $0.82 against a $1.08 calendar; unresolved. |
-| Tue Oct 20 (BMO) | GE Aerospace | GE | Industrials (outside) | $2.01 (1.96–2.09) | $12.88B | Services; LEAP output | $313.83, +1.8%. Beat 8 of 8, ±5.3%. Straddle ±6.2% (from 7.3%). |
-| Tue Oct 20 (BMO) | RTX / Northrop / 3M | RTX / NOC / MMM | Industrials and defense (outside) | $1.78 / $7.18 / $2.39 | $24.11B / $11.12B / $6.61B | Backlog; restock; PFAS | NOC **+8.1% W/W**, RTX +4.3%: defense bid into the prints. RTX straddle ±5.1%. |
-| Tue Oct 20 (BMO) | General Motors | GM | Consumer Discretionary (outside) | $3.63 (3.44–3.85) | $48.76B | Pricing; tariffs; EV losses | Beat 8 of 8, ±7.2%. Straddle ±6.3%. TSLA companion the next evening. |
-| Tue Oct 20 (BMO) | Synchrony / Ally / KeyCorp / MSCI / Hasbro / Genuine Parts / Halliburton | SYF / ALLY / KEY / MSCI / HAS / GPC / HAL | Mixed (outside) | $2.40 / $1.33 / $0.46 / $5.02 / $1.85 / $2.04 / $0.58 | — | Card credit; oil service | MSCI's last reaction -10.1%. HAL first oil-service print with crude near $99 (#169). |
-| Tue Oct 20 (AMC) | Intuitive Surgical / Capital One / Chubb / East West / United / Alaska | ISRG / COF / CB / EWBC / UAL / ALK | Mixed (outside) | $2.64 / $5.50 / $6.80 / $2.73 / $2.59 / $0.28 | $2.91B / $16.24B / $13.51B / — / $17.90B / $4.32B | Procedures; card charge-offs; fuel | **UAL -10.6% and ALK -10.7% W/W into the print** on crude. ISRG's last beat +11.9% fell -14.1%; straddle ±7.9%. COF straddle ±5.5%. |
-| Wed Oct 21 (BMO) | Philip Morris / Danaher / Elevance / CME / Moody's / NextEra / Northern Trust / Wabtec | PM / DHR / ELV / CME / MCO / NEE / NTRS / WAB | Mixed (outside) | $2.32 / $1.92 / $4.69 / $2.98 / $4.25 / $1.18 / $2.84 / $2.74 | — | Managed care after UNH; utilities; custody | ELV is the UNH read: its last beat (+20.0%) fell -8.5%. DHR's last reaction -11.0%. |
-| Wed Oct 21 (AMC) | IBM / Lam Research / SAP / United Rentals / CSX / Molina / Crown Castle / Southwest / Las Vegas Sands / Knight-Swift / Kinder Morgan / Packaging Corp | IBM / LRCX / SAP / URI / CSX / MOH / CCI / LUV / LVS / KNX / KMI / PKG | Mixed (outside) | $2.87 / $2.18 / $2.09 / $14.03 / $0.53 / $0.79 / $0.68 / $0.57 / $0.72 / $0.76 / $0.33 / $2.92 | $16.84B / $8.13B / €10.09B / $4.71B / … | WFE demand (LRCX); software (IBM, SAP) | **LRCX -17.2% W/W into the print** (nine straight down days per ScanX); beat 8 of 8, last reaction +18.0%; straddle ±8.2%. IBM straddle ±7.7%. MOH ±14.6% average move. |
-| Thu Oct 22 (BMO) | Procter & Gamble | PG | Consumer Staples (outside) | $1.89 (1.85–2.00) | $22.82B | Organic volume vs. price | $159.35, **+5.4% W/W** in the staples rotation (#168). Beat 8 of 8, ±1.7%. Straddle ±3.7%. |
-| Thu Oct 22 (BMO) | Lockheed / Union Pacific / Norfolk Southern / Blackstone / Comcast / Valero / Dow / Dover / Nasdaq / Quest / PulteGroup / NVR / Pool / Roper / Snap-on / Tractor Supply / Huntington / Allegion / American Airlines / Nokia | LMT / UNP / NSC / BX / CMCSA / VLO / DOW / DOV / NDAQ / DGX / PHM / NVR / POOL / ROP / SNA / TSCO / HBAN / ALLE / AAL / NOK | Mixed (outside) | $7.52 / $3.47 / $3.47 / $1.28 / $0.99 / $20.95 / $0.63 / $2.85 / $1.02 / $2.87 / $2.62 / $102.77 / $3.35 / $5.79 / $4.93 / $0.41 / $0.38 / $2.50 / -$0.33 / $0.07 | — | — | LMT +8.3% W/W. VLO's range ($13.56–22.77) is still the widest in dollars. BX -6.7% W/W. NOK -11.8% W/W even after ERIC's +11.8% day. |
-| Thu Oct 22 (AMC) | Western Digital / Newmont / Omnicom | WDC / NEM / OMC | Mixed (outside) | $4.08 (4.00–4.40) / $1.94 / $2.67 | $4.14B / $6.30B / $6.22B | HDD pricing; AI storage | **WDC -16.4% W/W.** Last beat (+7.9%) fell -13.0%. Straddle ±10.4%. |
-| Fri Oct 23 (BMO) | American Express / SLB / Infosys | AXP / SLB / INFY | Mixed (outside) | $4.51 / $0.61 / $0.21 | $20.12B / $9.27B / ₹492.1B | Card spend; oil service | INFY +14.1% W/W. SLB's last print +11.0%. |
+| **Mon Oct 26 (BMO, 7:00 AM)** | **Verizon** | **VZ** | **Communication / telecom (tracked)** | **$1.27 (1.23–1.31)** | **$34.85B** | **Postpaid phone adds; the SpaceX spectrum and tower response** | 🔥 **$44.66, -0.3% W/W. The first carrier after T fell 6.45% on its print day and 10.7% on the week on the SpaceX tower report (#176). Beat 7 of 8, ±4.0%; last +2.7% and +5.8%. Whisper $1.29 (+1.6%). Straddle ±4.5% to Oct 30 (from ±5.5%).** |
+| **Tue Oct 27 (BMO, 7:30 AM)** | **Boeing** | **BA** | **Industrials / aerospace (tracked)** | **-$0.20 (-0.59–0.17)** | **$24.37B** | **737 and 787 delivery rates; free cash flow; defense charges** | **$188.35, -1.0% W/W. Beat 4 of 8, ±3.7%. ⚠️ Whisper -$0.45 vs. -$0.21 EW: the room still expects a loss twice the street's. Straddle ±5.7% (from ±6.6%), 1.5x its norm.** |
+| **Tue Oct 27 (BMO, 8:00 AM)** | **Freeport-McMoRan** | **FCX** | **Materials (tracked)** | **$0.83 (0.72–0.94); EW $0.80** | **$7.40B** | **Copper realization; Grasberg; unit costs** | 🔥 **$65.18, -6.3% W/W (Thu's -6.3% day not sourced; materials wiki). Beat 8 of 8 by a median +21.9%, ±3.8%. Whisper $0.85 (+6.3%). Straddle ±6.4%, 1.7x its norm. A repeat of the median beat trips the surprise half of the alert rule.** |
+| **Tue Oct 27 (AMC, 4:05 PM)** | **Visa** | **V** | **Financials / payments (tracked)** | **$3.44 (3.39–3.48)** | **$12.09B** | **Cross-border volume; payments volume** | **$407.92, +1.3% W/W; a 52-week closing high Thu Oct 22 ($414.34). Beat 8 of 8, ±2.3%. Whisper $3.50 (+2.0%). Straddle ±3.5% (first usable chain; 191 contracts).** |
+| **Wed Oct 28 (AMC, 4:05 PM)** | **Microsoft** | **MSFT** | **Tech (tracked, Big 7)** | **$4.72 (4.43–4.86)** | **$90.75B** | **Azure growth; capex; OpenAI exposure** | 🔥 **$524.51, -0.9% W/W. Beat 8 of 8, ±7.0%; last +11.8% and +15.5%. Whisper $4.93 vs. $4.71 EW (+4.7%), unchanged. Reports two hours after the FOMC statement. Straddle ±5.3% to Oct 30 (18,659 contracts), under its realized norm.** |
+| **Wed Oct 28 (AMC, 4:00 PM)** | **Alphabet** | **GOOGL** | **Communication (tracked, Big 7)** | **$2.97 calendar (2.25–3.19); `earnings_dates` $3.00** | **$127.83B (EW $111.64B, ex-TAC)** | **Search; Cloud; capex** | 🔥 **$320.21, -6.0% W/W (cause not sourced; the week META fell 9.4%). Beat 8 of 8, ±4.1%. Whisper $3.08 vs. $2.94 EW (+4.8%). Straddle ±6.1% (from ±7.0%), 1.5x its norm.** |
+| **Thu Oct 29 (BMO, 6:45 AM)** | **Eli Lilly** | **LLY** | **Healthcare / pharma (tracked)** | **$6.67 (4.65–10.68)** ⚠️ | **$22.62B** | **GLP-1 volume; orforglipron launch; pricing** | 🔥 **$1,273.46, +1.3% W/W. Beat 6 of 8, ±8.0%; last +27.3% and +4.9%. ⚠️ Consensus now reads three ways: $6.67 yfinance, **$7.11 EW (non-GAAP; last week EW showed $5.38)**, $5.70 Finviz. **Whisper $8.71, +22.5% over EW: the widest tracked gap of the season.** Straddle ±6.5% on 2 contracts; disregard.** |
+| **Thu Oct 29 (BMO, 6:30 AM)** | **Merck** | **MRK** | **Healthcare / pharma (tracked)** | **$2.09 (1.80–2.26)** | **$17.35B** | **Keytruda; Gardasil China; Winrevair** | **$145.27, -0.5% W/W. Beat 7 of 8, ±2.4%. Whisper $2.21 vs. $2.12 EW (+4.2%), first MRK whisper on this page. Straddle ±5.3% (from ±7.0%), still 2.2x its norm.** |
+| **Thu Oct 29 (BMO, 8:05 AM)** | **Mastercard** | **MA** | **Financials / payments (tracked)** | **$5.17 (5.03–5.36)** | **$9.66B** | **Cross-border; value-added services** | **$623.60, +1.0% W/W; a 52-week closing high Thu Oct 22 ($633.21). Beat 8 of 8, ±2.3%. Whisper $5.30 vs. $5.14 EW (+3.1%), first shown. Straddle ±3.5% (12 contracts, thin). Two days after V.** |
+| **Thu Oct 29 (BMO, 6:30 AM)** | **Caterpillar** | **CAT** | **Industrials (tracked)** | **$7.03 (6.23–8.48)** | **$20.69B** | **Power generation for data centers; dealer inventories; tariffs** | 🔥 **$687.00, -6.0% W/W after -8.7% the week before. Beat 5 of 8, ±4.8%; last +31.8% and +5.6%. Whisper $7.24 vs. $7.12 EW (+1.7%; EW consensus rose from $6.95, so the gap halved). Straddle ±7.4% (4 contracts, thin).** |
+| **Thu Oct 29 (BMO, 5:30 AM)** | **Linde** | **LIN** | **Materials (tracked)** | **$4.52 calendar (4.46–4.55); `earnings_dates` $2.63** ⚠️ | **$9.16B** | **Pricing; project backlog** | **$508.83, +2.1% W/W. Beat 8 of 8 by a median +0.8%, ±2.4%. ⚠️ The $2.63 `earnings_dates` figure is back (flag closed last week, reopened). EW $4.52, whisper $4.53. First listed expiry after the print is Nov 20 (±5.6%); not an earnings figure.** |
+| **Thu Oct 29 (AMC, 4:00 PM)** | **Amazon** | **AMZN** | **Consumer / cloud (tracked, Big 7)** | **$1.98 calendar (1.85–2.22); `earnings_dates` $1.96** | **$202.20B** | **AWS growth; retail margin; capex** | 🔥 **$248.00, -0.8% W/W. Beat 7 of 8, ±6.2%; last +15.3%. ⚠️ Whisper $1.98 vs. $2.01 EW, below consensus for a second week. Straddle ±7.8% (from ±7.9%), 1.3x its norm.** |
+| **Thu Oct 29 (AMC, 4:05 PM)** | **Starbucks** | **SBUX** | **Consumer Discretionary (tracked)** | **$0.71 (0.49–0.76)** | **$9.24B** | **U.S. comps; turnaround margin** | **$100.80, +3.4% W/W. Beat 3 of 8 (median -5.5%), ±3.3%. Whisper $0.77 vs. $0.73 EW (+5.5%), first shown. Straddle ±6.6%, 2.0x its norm.** |
+| **Fri Oct 30 (BMO, 6:30 AM)** | **Exxon Mobil** | **XOM** | **Energy (tracked)** | **$4.03 (3.00–4.20)** | **$106.02B** | **Upstream realizations; Permian volumes; buyback** | **$183.21, +2.4% W/W to a 52-week closing high, with XLE at one too (#175). Beat 7 of 8 (the Jul 31 print missed by 3.0%; last week's page said 8 of 8), ±1.1%. Whisper $4.21 vs. $3.90 EW (+7.9%), first shown. Straddle ±3.9%, 3.5x its norm: still oil risk, not earnings risk.** |
+| **Fri Oct 30 (BMO, 6:15 AM)** | **Chevron** | **CVX** | **Energy (tracked)** | **$4.83 (3.61–5.18)** | **$61.65B** | **Hess integration; Guyana; buyback pace** | **$233.21, +3.7% W/W. Beat 7 of 8, ±2.4%. Whisper $4.94 vs. $4.78 EW (+3.3%). Straddle ±3.9%, 1.6x its norm.** |
+| **Fri Oct 30 (BMO, 7:45 AM)** | **AbbVie** | **ABBV** | **Healthcare / pharma (tracked)** | **$3.78 (3.61–3.86)** | **$17.35B** | **Skyrizi and Rinvoq; Humira erosion** | **$285.64, +0.1% W/W. Beat 7 of 8, ±3.5%. EW $3.76, no whisper. Straddle ±4.8%, 1.4x its norm.** |
+| Mon Oct 26 (AMC) | Welltower / Cadence / Nucor / Public Storage / Hartford / Celestica | WELL / CDNS / NUE / PSA / HIG / CLS | Mixed (outside) | $0.64 / $2.05 / $5.84 / $2.49 / $3.17 / $2.98 | $3.64B / $1.61B / $10.84B / $1.34B / $7.37B / $5.46B | REITs; EDA; steel | NUE's last +6.9% beat rose +7.2%. CLS is the first AI-hardware print of the week. |
+| Tue Oct 27 (BMO) | Coca-Cola / HSBC / Novartis / S&P Global / Corning / HCA / American Tower / UPS / Sherwin-Williams / Royal Caribbean / PayPal / Centene | KO / HSBC / NVS / SPGI / GLW / HCA / AMT / UPS / SHW / RCL / PYPL / CNC | Mixed (outside) | $0.88 / $2.20 / $2.27 / $4.43 / $0.88 / $6.65 / $1.64 / $1.62 / $3.69 / $6.38 / $1.31 / $0.10 | $12.92B / … / $14.53B / $3.64B / $5.03B / $19.33B / $2.76B / $22.27B / $6.78B / $5.61B / $8.71B / $47.12B | Staples volume; card spend; managed care | KO straddle ±3.3%. **GLW ±9.6%** after -15.8% two weeks ago. UPS ±6.4%. CNC is the managed-care read after ELV's +48% beat sold. |
+| Tue Oct 27 (AMC) | **SK Hynix** / Seagate / Waste Management / Robinhood / NXP / Baker Hughes / Teradyne | SKHY / STX / WM / HOOD / NXPI / BKR / TER | Mixed (outside) | $6.15 / $7.42 / $2.18 / $0.56 / $4.12 / $0.61 / $2.04 | $70.96B / $4.14B / $6.81B / $1.44B / $3.76B / $7.75B / $1.26B | HBM pricing; AI storage | **SKHY ($999B) is the largest non-tracked print of the season, the night before MSFT/GOOGL capex.** STX ±9.8%, HOOD ±10.2%. |
+| Wed Oct 28 (BMO) | GE Vernova / Amphenol / UBS / ADP / Phillips 66 / GSK / Vertiv / Boston Scientific / Aon | GEV / APH / UBS / ADP / PSX / GSK / VRT / BSX / AON | Mixed (outside) | $3.99 / $0.73 / $0.91 / $2.77 / $11.73 / $1.33 / $1.82 / $0.72 / $3.30 | $11.99B / $9.49B / … / $5.48B / $44.87B / … / $3.75B / $5.06B / $4.08B | AI power and cooling | **VRT ±11.0%, GEV ±7.9%.** VRT's last beat (+6.4%) fell -17.3%. |
+| Wed Oct 28 (AMC) | KLA / ServiceNow / T-Mobile / Fortinet / Equinix / O'Reilly / Ford / Carvana / Chipotle / eBay | KLAC / NOW / TMUS / FTNT / EQIX / ORLY / F / CVNA / CMG / EBAY | Mixed (outside) | $1.18 / $1.02 / $2.89 / $0.86 / $4.11 / $0.93 / $0.41 / $0.44 / $0.29 / $1.41 | $4.04B / $4.09B / $23.15B / $2.06B / $2.56B / $5.01B / $49.08B / $7.70B / $3.29B / $3.11B | WFE; software; wireless | NOW ±10.2%, KLAC ±8.7% (39 contracts), TMUS ±6.1% after T's tower-report week. |
+| Thu Oct 29 (BMO) | Shell / TotalEnergies / AB InBev / BBVA / Bristol-Myers / Altria / Trane / ICE / Quanta / D.R. Horton / L3Harris / Hershey | SHEL / TTE / BUD / BBVA / BMY / MO / TT / ICE / PWR / DHI / LHX / HSY | Mixed (outside) | $3.61 / $3.82 / $1.14 / $0.60 / $1.10 / $1.51 / $4.73 / $1.97 / $4.99 / $3.01 / $2.95 / $2.11 | — | Oil majors; power build-out | Shell and Total a day before XOM/CVX. |
+| Thu Oct 29 (AMC) | Intel / Gilead / SanDisk / Stryker / Mondelez / Strategy / Coinbase / Roblox / Reddit | INTC / GILD / SNDK / SYK / MDLZ / MSTR / COIN / RBLX / RDDT | Mixed (outside) | $0.40 / $2.18 / $46.20 / $3.55 / $0.71 / $17.25 / -$0.23 / -$0.43 / $1.33 | $16.50B / $7.81B / $10.65B / $6.62B / $9.98B / … / $1.21B / $1.63B / $0.87B | Foundry; NAND | INTC ±9.9%, SNDK ±10.8%. |
+| Fri Oct 30 (BMO) | AstraZeneca / BP / General Dynamics / Regeneron / Colgate / CN Rail / Imperial / Dominion / Exelon | AZN / BP / GD / REGN / CL / CNI / IMO / D / EXC | Mixed (outside) | $2.59 / $2.74 / $4.12 / $16.36 / $0.93 / $1.48 / $3.45 / $1.21 / $0.78 | $16.00B / $63.14B / $13.72B / $4.56B / $5.34B / $3.30B / $12.47B / $4.90B / $6.73B | — | REGN's last +40.0% beat rose +6.2%. |
 
-*Date changes since last week (yfinance + Earnings Whispers, read 2026-10-18):* **META moved to Oct 21 from Oct 28** (company release; resolves last week's "expected" flag). **KO moved to Tue Oct 27 BMO** on yfinance (last week's page carried EW's Oct 21; now in Next Week). **INTC is Oct 29 AMC** on yfinance (last week's page had Oct 22). **LIN:** calendar $4.52 vs. `earnings_dates` $4.61 now agree within a dime; the $2.63 figure is gone and the flag is closed.
+*Date and estimate changes since last week (yfinance + Earnings Whispers, read 2026-10-25):* all sixteen tracked dates confirmed (ABBV, CVX, FCX, LIN, MRK, SBUX newly checked; times added). **LLY:** EW consensus moved from $5.38 to $7.11 non-GAAP, closing the EW-vs-yfinance basis gap from the EW side, but yfinance's own figure fell from $7.11 to $6.67 and Finviz shows $5.70; flag stays. **LIN:** `earnings_dates` shows $2.63 again against a $4.52 calendar; flag reopened. **CAT:** EW consensus up to $7.12 from $6.95. **XOM:** 8-quarter beat rate corrected to 7 of 8.
 
-**The Density Verdict:** 🔴 **High, broad.** Eight tracked names across five sectors, two Big 7, and about 75 outside names, with Wednesday evening the single heaviest session of the season.
+**The Density Verdict:** 🔴 **Extreme.** Sixteen tracked names, three of the Big 7, the FOMC decision on Oct 28, SK Hynix the night before, and the AI-capex supply chain (STX, KLAC, VRT, GEV, GLW, INTC, SNDK, CAT) inside four sessions.
 
 ---
 
-## NEXT WEEK'S EARNINGS PREVIEW (Oct 26 – Oct 30)
+## NEXT WEEK'S EARNINGS PREVIEW (Nov 2 – Nov 6)
 
-> *THE HEAVIEST WEEK OF THE QUARTER, WITH THE FED IN THE MIDDLE OF IT. Sixteen tracked names in five days: **VZ Mon Oct 26 (BMO); BA, FCX (BMO) and V (AMC) Tue Oct 27; MSFT, GOOGL Wed Oct 28 (AMC) on FOMC day; LLY, MRK, MA, CAT, LIN (BMO) and AMZN, SBUX (AMC) Thu Oct 29; XOM, CVX, ABBV Fri Oct 30 (BMO).** Every tracked date is company-confirmed on Earnings Whispers except ABBV, CVX, FCX, LIN, MRK and SBUX (not checked). About 85 outside names in the window, including KO, UPS, RCL, TMUS, NOW, KLAC, INTC, F, BMY, GILD, REGN, STX and GEV.*
+> *THE BIG 7 TAIL AND THE ELECTION. Five tracked names: **AAPL Mon Nov 2 (AMC); PFE Tue Nov 3 (BMO) and AMD (AMC); MCD Wed Nov 4 (BMO) and QCOM (AMC).** All five company-confirmed on Earnings Whispers. Tuesday Nov 3 is the U.S. midterm election; the October payrolls report is due Friday Nov 6. About 1,400 names report outside the tracked list (Finviz), the heaviest count of the season, including PLTR, VRTX, MAR, SHOP, ETN, AMGN, ANET, BKNG, UBER, NVO, CVS, ARM, MCK, MELI, APP, DASH, COP, TM, SONY, CI, ABNB, NET, EOG, MRNA, HUM and VST.*
 
 | Date | Company | Ticker | Sector | EPS Est (consensus, range) | Revenue Est | Key Metric | Council Stake |
 |---|---|---|---|---|---|---|---|
-| **Mon Oct 26 (BMO, 7:00 AM)** | **Verizon** | **VZ** | **Communication / telecom (tracked)** | **$1.27 (1.23–1.31)** | **$34.85B** | **Postpaid phone adds; the SpaceX spectrum response five days after T** | **$44.79, +7.5% W/W, the best tracked telecom week. Beat 7 of 8, ±4.0%; last +2.7% and +5.8%. Whisper $1.29 (+1.6%). Straddle ±5.5% to Oct 30.** |
-| **Tue Oct 27 (BMO, 7:30 AM)** | **Boeing** | **BA** | **Industrials / aerospace (tracked)** | **-$0.20 (-0.59–0.17)** | **$24.37B** | **737 and 787 delivery rates; free cash flow; defense charges** | **$190.21, flat W/W. Beat 4 of 8, ±3.7%. ⚠️ Whisper -$0.45 vs. -$0.17 EW: the room expects a bigger loss than the street. Straddle ±6.6%, 1.8x its norm.** |
-| **Tue Oct 27 (BMO)** | **Freeport-McMoRan** | **FCX** | **Materials (tracked)** | **$0.83 (0.72–0.94)** | **$7.40B** | **Copper price realization; Grasberg; unit costs** | **$69.54, -5.4% W/W. Beat 8 of 8 by a median +21.9%, ±3.8%; the last +18.5% beat fell -2.3%. Straddle ±8.3%, 2.2x its norm. A repeat of the last beat trips the surprise half of the alert rule.** |
-| **Tue Oct 27 (AMC, 4:05 PM)** | **Visa** | **V** | **Financials / payments (tracked)** | **$3.43 (3.18–3.48)** | **$12.09B** | **Cross-border volume; payments volume growth** | **$402.61, +4.5% W/W, a 52-week closing high (#167). Beat 8 of 8, ±2.3%. Whisper $3.50 (+2.0%). No usable option chain pulled.** |
-| **Wed Oct 28 (AMC, 4:05 PM)** | **Microsoft** | **MSFT** | **Tech (tracked, Big 7)** | **$4.72 (4.43–4.86)** | **$90.71B** | **Azure growth; capex; OpenAI exposure** | 🔥 **$529.05, -1.1% W/W. Beat 8 of 8, ±7.0%; the last print +11.8% and +15.5%. Whisper $4.93 vs. $4.71 EW (+4.7%), the widest Big 7 whisper gap. Reports two hours after the FOMC statement. Straddle ±6.0% to Oct 30.** |
-| **Wed Oct 28 (AMC, 4:00 PM)** | **Alphabet** | **GOOGL** | **Communication (tracked, Big 7)** | **$2.97 calendar (2.25–3.19); `earnings_dates` $3.00** | **$127.68B (EW $111.36B, ex-TAC)** | **Search; Cloud; capex** | 🔥 **$340.59, -3.1% W/W. Beat 8 of 8, ±4.1%; the last print -7.1% on a non-operating-inflated beat. Whisper $3.08 vs. $2.94 EW (+4.8%). Straddle ±7.0%.** |
-| **Thu Oct 29 (BMO, 6:45 AM)** | **Eli Lilly** | **LLY** | **Healthcare / pharma (tracked)** | **$7.11 (4.65–10.68)** ⚠️ | **$22.50B** | **GLP-1 volume; orforglipron launch; pricing** | **$1,257.03, +6.6% W/W. Beat 6 of 8, ±8.0%; last +27.3% and +4.9%. ⚠️ EW consensus is $5.38 against yfinance's $7.11, and the yfinance range is $4.65–10.68: a basis or charge difference (likely acquired IPR&D), unresolved. No whisper. Straddle ±7.7% on 105 contracts.** |
-| **Thu Oct 29 (BMO)** | **Merck** | **MRK** | **Healthcare / pharma (tracked)** | **$2.09 (1.80–2.26)** | **$17.32B** | **Keytruda; Gardasil China; Winrevair** | **$145.95, flat W/W. Beat 7 of 8, ±2.4%. Straddle ±7.0%, 2.9x its norm; the widest ratio on next week's board.** |
-| **Thu Oct 29 (BMO, 8:05 AM)** | **Mastercard** | **MA** | **Financials / payments (tracked)** | **$5.16 (5.03–5.36)** | **$9.65B** | **Cross-border; value-added services** | **$617.42, +4.8% W/W, a 52-week closing high. Beat 8 of 8, ±2.3%. No whisper. Two days after V.** |
-| **Thu Oct 29 (BMO, 6:30 AM)** | **Caterpillar** | **CAT** | **Industrials (tracked)** | **$7.03 (6.23–8.48)** | **$20.69B** | **Power generation for data centers; dealer inventories; tariffs** | 🔥 **$730.76, -8.7% W/W with the AI-capex complex. Beat 5 of 8, ±4.8%; the last print +31.8% and +5.6%. Whisper $7.24 vs. $6.95 EW (+4.2%). Straddle ±8.7%, 1.8x its norm.** |
-| **Thu Oct 29 (BMO)** | **Linde** | **LIN** | **Materials (tracked)** | **$4.52 calendar (4.46–4.55); `earnings_dates` $4.61** | **$9.16B** | **Pricing; project backlog** | **$498.43, +3.0% W/W. Beat 8 of 8 by a median +0.8%, ±2.4%; the last +0.3% beat fell -5.9%. First listed expiry after the print is Nov 20 (±5.9%), three weeks long; not an earnings figure.** |
-| **Thu Oct 29 (AMC, 4:00 PM)** | **Amazon** | **AMZN** | **Consumer / cloud (tracked, Big 7)** | **$1.96 (`earnings_dates`); $1.98 calendar (1.85–2.22)** | **$202.16B** | **AWS growth; retail margin; capex** | 🔥 **$250.00, -4.7% W/W. Beat 7 of 8, ±6.2%; the last print +15.3%. ⚠️ Whisper $1.98 vs. $2.01 EW, below consensus, the second Big 7 name with that sign. Straddle ±7.9% (9,442 contracts).** |
-| **Thu Oct 29 (AMC)** | **Starbucks** | **SBUX** | **Consumer Discretionary (tracked)** | **$0.70 (0.49–0.76)** | **$9.22B** | **U.S. comps; turnaround margin** | **$97.52, +7.5% W/W. Beat 3 of 8 (median -5.5%), ±3.3%; the last +30.8% beat rose only +1.6%. Straddle ±7.1%, 2.2x its norm.** |
-| **Fri Oct 30 (BMO, 6:30 AM)** | **Exxon Mobil** | **XOM** | **Energy (tracked)** | **$3.98 (3.00–4.33)** | **$104.03B** | **Upstream realizations at about $99 WTI; Permian volumes; buyback** | **$178.98, +5.9% W/W (#169). Beat 8 of 8, ±1.1%. EW $3.92, no whisper. Straddle ±4.8%, 4.4x its norm: options are pricing the oil tape, not the print.** |
-| **Fri Oct 30 (BMO)** | **Chevron** | **CVX** | **Energy (tracked)** | **$4.89 (3.61–5.66)** | **$60.67B** | **Hess integration; Guyana; buyback pace** | **$224.99, +6.1% W/W. Beat 7 of 8, ±2.4%. Straddle ±4.9%, 2.0x its norm.** |
-| **Fri Oct 30 (BMO)** | **AbbVie** | **ABBV** | **Healthcare / pharma (tracked)** | **$3.79 (3.61–3.86)** | **$17.35B** | **Skyrizi and Rinvoq; Humira erosion** | **$285.42, +3.9% W/W. Beat 7 of 8, ±3.5%. Straddle ±5.7%.** |
-| Mon Oct 26 (AMC) | Nucor / Welltower / Public Storage / Hartford | NUE / WELL / PSA / HIG | Mixed (outside) | $5.83 / $0.63 / $2.29 / $3.17 | $10.79B / $3.75B / $1.32B / $7.41B | Steel; REITs; P&C | NUE's last +6.9% beat rose +7.2%. |
-| Tue Oct 27 (BMO) | Coca-Cola / UPS / Royal Caribbean / HCA / Corning / Centene / S&P Global / Sherwin-Williams / Illinois Tool Works / American Tower / Hilton / PACCAR / IQVIA / Xylem / Ecolab / Hubbell | KO / UPS / RCL / HCA / GLW / CNC / SPGI / SHW / ITW / AMT / HLT / PCAR / IQV / XYL / ECL / HUBB | Mixed (outside) | $0.88 / $1.62 / $6.38 / $6.63 / $0.88 / $0.10 / $4.42 / $3.69 / $2.98 / $1.63 / $2.35 / $1.60 / $3.27 / $1.45 / $2.17 / $5.76 | — | — | KO +6.6% W/W; straddle ±4.1% (Oct 30). **GLW -15.8% W/W**; its last beat fell -12.1%. UPS last reaction -6.6%. |
-| Tue Oct 27 (AMC) | Seagate / Teradyne / NXP / Baker Hughes / Waste Management / Universal Health | STX / TER / NXPI / BKR / WM / UHS | Mixed (outside) | $7.38 / $2.05 / $4.11 / $0.62 / $2.18 / $5.16 | $4.13B / $1.26B / $3.75B / $7.74B / $6.82B / $4.71B | AI storage and test | **STX -18.4% and TER -19.3% W/W.** STX straddle ±12.5% (101 contracts). TER ±11.5% average move. |
-| Wed Oct 28 (BMO) | GE Vernova / Vertiv / Boston Scientific / Phillips 66 / Otis / Aon / Biogen / AEP / International Paper / Etsy | GEV / VRT / BSX / PSX / OTIS / AON / BIIB / AEP / IP / ETSY | Mixed (outside) | $4.02 / $1.82 / $0.74 / $11.84 / $1.01 / $3.30 / $2.00 / $2.01 / $0.29 / $0.75 | — | AI power and cooling | **VRT -15.0%, GEV -8.3% W/W.** VRT's last beat (+6.4%) fell -17.3%; GEV's last miss (-22.4%) fell -8.7%. ETSY calendar $1.30 vs. `earnings_dates` $0.75; unresolved. |
-| Wed Oct 28 (AMC) | T-Mobile / ServiceNow / KLA / Equinix / Chipotle / Ford / eBay | TMUS / NOW / KLAC / EQIX / CMG / F / EBAY | Mixed (outside) | $2.91 / $1.02 / $1.18 / $3.96 / $0.29 / $0.41 / $1.41 | $23.14B / $4.09B / $4.04B / $2.57B / $3.28B / $46.72B / $3.11B | Wireless; software; WFE | TMUS +7.1% W/W; straddle ±6.6%. NOW ±12.6% straddle. **KLAC -15.3% W/W**, straddle ±11.0%. |
-| Thu Oct 29 (BMO) | Bristol-Myers / Altria / Hershey / Carrier / Trane / L3Harris / ICE / Xcel / Textron | BMY / MO / HSY / CARR / TT / LHX / ICE / XEL / TXT | Mixed (outside) | $1.33 / $1.51 / $2.12 / $0.77 / $4.73 / $3.05 / $1.96 / $1.37 / $1.44 | — | — | HSY's last +33.1% beat fell -3.6%. LHX's last +27.9% beat fell -8.6%. |
-| Thu Oct 29 (AMC) | Intel / Gilead / Stryker / Mondelez / Reddit / Ingersoll Rand / Arthur J. Gallagher | INTC / GILD / SYK / MDLZ / RDDT / IR / AJG | Mixed (outside) | $0.39 / $2.20 / $3.55 / $0.72 / $1.32 / $0.90 / $2.99 | $16.45B / $7.79B / $6.62B / $9.99B / $0.87B / … | Foundry; HIV franchise; ads | **INTC -14.2% W/W**, straddle ±12.1%. RDDT ±14.7% average move; calendar $1.95 vs. `earnings_dates` $1.32. |
-| Fri Oct 30 (BMO) | General Dynamics / Colgate / Regeneron / Dominion / Exelon | GD / CL / REGN / D / EXC | Mixed (outside) | $4.14 / $0.93 / $16.06 / $1.19 / $0.81 | $13.73B / $5.34B / $4.54B / $4.80B / $6.82B | — | REGN's last +40.0% beat rose +6.2%. |
+| **Mon Nov 2 (AMC, 4:30 PM)** | **Apple** | **AAPL** | **Tech (tracked, Big 7)** | **$1.98 (1.93–2.06); EW $2.00** | **$113.38B** | **iPhone cycle; Services; gross margin; China** | 🔥 **$347.73, +1.2% W/W, a second straight weekly gain; 52-week closing high Thu Oct 22 ($348.22). Beat 8 of 8, ±2.5%; last +6.7% and -7.4%. ✅ First AAPL whisper on this page: $2.07 (+3.5%). Straddle ±4.5% to Nov 4, 1.8x its norm.** |
+| **Tue Nov 3 (BMO, 6:45 AM)** | **Pfizer** | **PFE** | **Healthcare / pharma (tracked)** | **$0.73 (0.56–0.83)** | **$15.88B** | **COVID franchise run-off; cost cuts; 2027 guide** | **$30.03, +1.5% W/W. Beat 8 of 8, ±2.2%. EW $0.72, no whisper. Straddle ±5.0% to Nov 6, 2.3x its norm (election day inside the window).** |
+| **Tue Nov 3 (AMC, 4:15 PM)** | **AMD** | **AMD** | **Tech / semis (tracked)** | **$1.93 (1.72–2.10)** | **$13.08B** | **MI-series GPU ramp; data-center CPU share; Q4 guide** | 🔥 **$516.79, -2.3% W/W. Beat 5 of 8, ±8.8%; last +3.2% and -7.0%. Whisper $1.98 (+2.1%). Straddle ±10.0% to Nov 4 (10 contracts, thin). The first tracked semi after the hyperscaler capex guides.** |
+| **Wed Nov 4 (BMO, 7:00 AM)** | **McDonald's** | **MCD** | **Consumer Discretionary (tracked)** | **$3.38 (3.23–3.50)** | **$7.29B** | **U.S. comps; value menu; low-income traffic** | **$248.46, +2.3% W/W. Beat 5 of 8, ±2.1%. EW $3.37, no whisper. Straddle ±4.3% to Nov 6, 2.0x its norm.** |
+| **Wed Nov 4 (AMC, 4:00 PM)** | **Qualcomm** | **QCOM** | **Tech / semis (tracked)** | **$2.16 (2.09–2.24)** | **$10.14B** | **Handset outlook; Apple modem roll-off; auto and PC** | **$175.91, +2.2% W/W. Beat 7 of 8, ±6.3%; last -0.7% (the window's only miss) and -2.6%. Whisper $2.19 (+1.4%). Straddle ±10.3% to Nov 6, 1.6x its norm.** |
+| Mon Nov 2 (BMO) | Marriott / Entergy / Idexx / Estée Lauder / PSEG / Fox | MAR / ETR / IDXX / EL / PEG / FOXA | Mixed (outside) | $2.84 / $1.72 / $3.72 / $0.51 / $1.20 / $2.08 | $6.92B / $4.12B / $1.19B / $3.65B / $3.10B / $4.32B | Travel; utilities | — |
+| Mon Nov 2 (AMC) | Palantir / Vertex / Williams / Diamondback / Realty Income / ON Semi / Roku | PLTR / VRTX / WMB / FANG / O / ON / ROKU | Mixed (outside) | $0.41 / $4.80 / $0.54 / $5.72 / $0.41 / $0.88 / $0.53 | $2.18B / $3.42B / $2.99B / $4.60B / $1.43B / $1.70B / $1.41B | AI software; CF | **PLTR straddle ±12.4%.** Same evening as AAPL. |
+| Tue Nov 3 (BMO) | Shopify / Eaton / Marathon Petroleum / Energy Transfer / Apollo / Ferrari / Keurig Dr Pepper / ADM / Sysco | SHOP / ETN / MPC / ET / APO / RACE / KDP / ADM / SYY | Mixed (outside) | $0.47 / $3.54 / $25.37 / $0.40 / $2.20 / $2.70 / $0.62 / $1.60 / $1.19 | $3.74B / $8.53B / $46.60B / $31.04B / $5.79B / $2.16B / $7.33B / $23.27B / $22.03B | Data-center electrical (ETN); refining | Election day. |
+| Tue Nov 3 (AMC) | Amgen / Arista / Booking / Suncor / Block / Astera Labs / AIG / Prudential / Super Micro | AMGN / ANET / BKNG / SU / XYZ / ALAB / AIG / PRU / SMCI | Mixed (outside) | $5.79 / $1.08 / $4.49 / $2.50 / $1.03 / $1.19 / $1.88 / $3.38 / $1.20 | $10.08B / $3.33B / $9.54B / $11.90B / $6.58B / $0.55B / $7.42B / $14.84B / $16.02B | AI networking | ANET and ALAB the same evening as AMD. |
+| Wed Nov 4 (BMO) | Santander / Uber / Novo Nordisk / CVS / Datadog / Emerson / Grainger / Cencora / Kraft Heinz | SAN / UBER / NVO / CVS / DDOG / EMR / GWW / COR / KHC | Mixed (outside) | $0.27 / $0.86 / $0.73 / $1.66 / $0.64 / $1.85 / $11.68 / $4.58 / $0.42 | — | GLP-1 (NVO, a week after LLY); managed care | — |
+| Wed Nov 4 (AMC) | Arm / McKesson / MercadoLibre / AppLovin / Motorola Solutions / DoorDash / Allstate / MetLife / Edwards | ARM / MCK / MELI / APP / MSI / DASH / ALL / MET / EW | Mixed (outside) | $0.47 / $10.72 / $9.34 / $4.04 / $4.42 / $0.81 / $6.89 / $2.77 / $0.74 | — | — | ARM the same evening as QCOM. |
+| Thu Nov 5 (BMO) | Toyota / ConocoPhillips / Sony / Parker-Hannifin / Southern / Duke / Cigna / Cummins / Air Products | TM / COP / SONY / PH / SO / DUK / CI / CMI / APD | Mixed (outside) | $3.37 / $3.05 / $0.40 / $8.31 / $1.71 / $1.86 / $7.52 / $8.18 / $3.61 | — | — | — |
+| Thu Nov 5 (AMC) | Cloudflare / Airbnb / Lumentum / Simon Property / Atlassian / Devon / Microchip | NET / ABNB / LITE / SPG / TEAM / DVN / MCHP | Mixed (outside) | $0.34 / $2.85 / $4.22 / $1.69 / $1.44 / $1.31 / $0.70 | — | Optical (LITE) | — |
+| Fri Nov 6 (BMO) | Enbridge / EOG / Moderna / Brookfield AM / Humana / Vistra / Monster | ENB / EOG / MRNA / BAM / HUM / VST / MNST | Mixed (outside) | $0.34 / $4.45 / -$1.11 / $0.47 / -$1.00 / $2.71 / $0.29 | — | — | Payrolls morning. ⚠️ EOG appears on both Nov 5 AMC and Nov 6 BMO in Finviz; unresolved. |
 
-**The Density Verdict:** 🔴 **Extreme.** Sixteen tracked names, three of the Big 7 (MSFT, GOOGL Oct 28; AMZN Oct 29), the FOMC decision on Oct 28, and the whole AI-capex supply chain (STX, TER, KLAC, VRT, GEV, GLW, INTC, CAT) inside four sessions after it fell 8–19% in a week.
+**The Density Verdict:** 🟡 **Medium for the tracked list, 🔴 extreme for the market.** Five tracked names (one Big 7), but the broadest outside week of the season, an election and payrolls.
 
 ---
 
 ## THE BIG 3 (+4): STATUS AND FORWARD LOOK
 
-> *Prices as of the Friday Oct 16 close (yfinance). **META now reports first with TSLA (Oct 21)**, then MSFT/GOOGL (Oct 28, FOMC day), AMZN (Oct 29), AAPL (Nov 2) and NVDA (Nov 17). "Big 3" per project scope (MSFT, AAPL, META) are shown first. Last-print surprise, beat rate and average reaction from yfinance `earnings_dates` + daily closes (8 quarters).*
+> *Prices as of the Friday Oct 23 close (yfinance). TSLA and META have reported; MSFT and GOOGL (Oct 28, FOMC day) and AMZN (Oct 29) report this week, AAPL Nov 2, NVDA Nov 17. "Big 3" per project scope (MSFT, AAPL, META) shown first. Beat rate and average reaction: yfinance `earnings_dates` + daily closes (8 quarters).*
 
-| Company | Ticker | Price (Oct 16) | W/W (vs Oct 9) | Next Earnings | Consensus EPS (yfinance; EW) | Whisper (EW, Oct 18) | Last Print Surprise / Reaction | Beat Rate (8Q) | Avg Earnings-Day Move | Council Read |
+| Company | Ticker | Price (Oct 23) | W/W (vs Oct 16) | Next Earnings | Consensus EPS (yfinance; EW) | Whisper (EW, Oct 25) | Last Print Surprise / Reaction | Beat Rate (8Q) | Avg Earnings-Day Move | Council Read |
 |---|---|---|---|---|---|---|---|---|---|---|
-| **Microsoft** | **MSFT** | **$529.05** | **-1.12%** | **Oct 28 AMC (confirmed)** | **$4.72; $4.71** | **$4.93 (+4.7%)** | +11.8% / +15.5% (Jul 29) | 8/8 | ±7.0% | *Held up in a -7.7% XLK week (#165). First Big 7 whisper this cycle, and the widest. Reports two hours after the FOMC statement with hike odds near 50%.* |
-| **Apple** | **AAPL** | **$343.46** | **+2.03%** | **Nov 2 AMC (confirmed)** | **$1.98; $2.00** | none shown | +6.7% / -7.4% (Jul 30) | 8/8 | ±2.5% | *The only Big 7 name up on the week, to a 52-week closing high (#165). The Nov 6 straddle now spans the print: ±5.7%.* |
-| **Meta** | **META** | **$709.33** | **-1.30%** | **Oct 21 AMC (confirmed; moved from Oct 28)** | **$6.76 calendar / $5.70 `earnings_dates`; $6.54** ⚠️ | **$6.65 (+1.7%)** | **-14.4% / -8.0% (Jul 29)** | 7/8 | ±7.4% | *⚠️ The `earnings_dates` figure has now fallen four weeks running ($6.40 → $6.34 → $6.25 → $5.70) while the calendar figure sits at $6.76; the spread is $1.06. Grade the print against EW's $6.54. The reported plan to lease out AI capacity was cited in the chip sell-off.* |
-| **Alphabet** | **GOOGL** | **$340.59** | **-3.15%** | **Oct 28 AMC (confirmed)** | **$3.00 / $2.97 calendar; $2.94** | **$3.08 (+4.8%)** | +214.2% / -7.1% (Jul 22) ⚠️ | 8/8 | ±4.1% | *⚠️ The headline surprise included non-operating gains. EW revenue $111.36B is ex-TAC; yfinance $127.68B is gross.* |
-| **Amazon** | **AMZN** | **$250.00** | **-4.74%** | **Oct 29 AMC (confirmed)** | **$1.96 / $1.98 calendar; $2.01** | **$1.98 (-1.5%)** ⚠️ | +214.9% / +15.3% (Jul 30) ⚠️ | 7/8 | ±6.2% | *Worst of the seven after NVDA and TSLA. Whisper under consensus. Same ⚠️ as GOOGL on the surprise.* |
-| **Tesla** | **TSLA** | **$354.72** | **-7.31%** | **Oct 21 AMC (confirmed)** | **$0.45 (0.30–0.70); $0.44 non-GAAP** ✅ | **$0.40 (-9.1%)** 🔴 | **-39.1% / -14.5% (Jul 22)** | **3/8** | ±7.8% | *Basis resolved (EW's $0.22 last week was GAAP). The whisper is below the street; the stock fell 7% into it; the straddle (±7.4%) is still under its realized norm. Everything is priced for a miss except the options.* |
-| **NVIDIA** | **NVDA** | **$214.13** | **-6.61%** | **Nov 17 AMC (confirmed)** | **$2.47; $2.49** | none shown | +6.2% / +8.7% (Aug 26) | 8/8 | ±4.0% | *SMH -10.5% around it. The next hard data points are LRCX (Oct 21), KLAC and STX (Oct 27–28) and MSFT/GOOGL/AMZN capex guides.* |
+| **Microsoft** | **MSFT** | **$524.51** | **-0.86%** | **Oct 28 AMC (confirmed)** | **$4.72; $4.71** | **$4.93 (+4.7%)** | +11.8% / +15.5% (Jul 29) | 8/8 | ±7.0% | *The straddle (±5.3%) is under its realized norm on FOMC day. After META, the question is capex vs. cash flow, not EPS.* |
+| **Apple** | **AAPL** | **$347.73** | **+1.24%** | **Nov 2 AMC (confirmed)** | **$1.98; $2.00** | **$2.07 (+3.5%)** ✅ new | +6.7% / -7.4% (Jul 30) | 8/8 | ±2.5% | *Up two straight weeks while the AI names fell. First whisper this cycle. Straddle ±4.5% to Nov 4.* |
+| **Meta** | **META** | **$642.62** | **-9.40%** | **Reported Oct 21; next ~Jan 27, 2027** | **Q4 est. $8.33 `earnings_dates` / $8.55 calendar; EW $8.16** | — | **GAAP $3.83 vs. $5.46 (-29.9%) / about $7.40 ex-charge; -6.98%** 🚨 | 6/8 | ±7.8% | *🚨 Alert arithmetic met on GAAP; the operating quarter beat. A $9.89B charge (state AG teen-safety settlement) cut GAAP EPS to $3.83; ex-charge about $7.40 against the $6.65 whisper. Revenue $64.60B (+26%) vs. $63.34B. Q4 revenue guide $73–76B. Sold on the capex line, not the charge (#176). Issue opened this run.* |
+| **Alphabet** | **GOOGL** | **$320.21** | **-5.98%** | **Oct 28 AMC (confirmed)** | **$3.00 / $2.97 calendar; $2.94** | **$3.08 (+4.8%)** | +214.2% / -7.1% (Jul 22) ⚠️ | 8/8 | ±4.1% | *Fell 6% in META's week without reporting. ⚠️ Last surprise inflated by non-operating gains; EW revenue $111.64B is ex-TAC, yfinance $127.83B gross.* |
+| **Amazon** | **AMZN** | **$248.00** | **-0.80%** | **Oct 29 AMC (confirmed)** | **$1.96 / $1.98 calendar; $2.01** | **$1.98 (-1.5%)** ⚠️ | +214.9% / +15.3% (Jul 30) ⚠️ | 7/8 | ±6.2% | *Whisper under consensus a second week; the only Big 7 name still in that position.* |
+| **Tesla** | **TSLA** | **$372.22** | **+4.93%** | **Reported Oct 21; next ~Jan 27, 2027** | **Q4 est. $0.49** | — | **$0.48 vs. $0.45 (+6.4%; GAAP $0.22); -3.08%** | 3/8 | ±5.4% | *Beat the $0.40 whisper by 8 cents, fell 3.1% on the day, then rose 4.9% on the week. The SpaceX combination talk was cited in SpaceX's own post-print rally (unconfirmed; no agreement).* |
+| **NVIDIA** | **NVDA** | **$210.96** | **-1.48%** | **Nov 17 AMC (confirmed)** | **$2.47; $2.49** | none shown | +6.2% / +8.7% (Aug 26) | 8/8 | ±4.0% | *Waits for four hyperscaler capex guides, SK Hynix (Oct 27) and AMD (Nov 3). Nov 20 straddle ±9.7%.* |
 
-**Whisper note (partial fill, flag kept for the rest):** Earnings Whispers ticker pages, read 2026-10-18, now show whispers for **MSFT, META, GOOGL, AMZN and TSLA**; **AAPL and NVDA still show none.** Single source, not cross-checked against Bloomberg. **AAPL and NVDA whispers still require an external feed refresh (Earnings Whispers subscription, Bloomberg).**
+**Whisper note (partial fill, flag kept for the rest):** Earnings Whispers ticker pages, read 2026-10-25, show whispers for **MSFT, GOOGL, AMZN and now AAPL ($2.07)**. **NVDA still shows none**; META and TSLA have reported. Single source, not cross-checked against Bloomberg. **NVDA's whisper still requires an external feed refresh (Earnings Whispers subscription, Bloomberg).**
 
-**Implied-move note (flag kept, partial fill):** No CBOE or Bloomberg feed. Stand-in: at-the-money straddle on the first expiry after each print, Yahoo option chain at the Friday Oct 16 close, as % of price: **META 7.3%** (Oct 23, from 8.8% to Oct 30), **TSLA 7.4%** (Oct 23, from 7.5%), **MSFT 6.0%** (from 6.4%), **GOOGL 7.0%** (from 7.3%), **AMZN 7.9%** (flat) (all Oct 30), **AAPL 5.7%** (Nov 6, now spanning the print), **NVDA 9.9%** (Nov 20, from 9.5%). Six of seven fell or held as a week of time came off, despite VIX +5.2 points. They cover extra trading days, **overstate the earnings-day move, and need a CBOE refresh the week of each print.**
+**Implied-move note (flag kept, partial fill):** No CBOE or Bloomberg feed. Stand-in: at-the-money straddle on the first expiry after each print, Yahoo option chain at the Friday Oct 23 close, as % of price: **MSFT 5.3%** (from 6.0%), **GOOGL 6.1%** (from 7.0%), **AMZN 7.8%** (from 7.9%) (all Oct 30), **AAPL 4.5%** (Nov 4, from 5.7% to Nov 6), **NVDA 9.7%** (Nov 20, from 9.9%). All five fell. They cover extra trading days, **overstate the earnings-day move, and need a CBOE refresh the week of each print.**
 
 ---
 
 ## SECTOR EARNINGS DENSITY
 
-> *Windows: Oct 19-23 and Oct 26-30. Tracked-universe names in **bold**; names outside the tracked list in parentheses.*
+> *Windows: Oct 26-30 and Nov 2-6. Tracked names in **bold**; outside names in parentheses.*
 
-| Sector | This Week (Oct 19-23) | Next Week (Oct 26-30) | Density Score |
+| Sector | This Week (Oct 26-30) | Next Week (Nov 2-6) | Density Score |
 |---|---|---|---|
-| Technology / semis | **TXN (Oct 21)**; (IBM, LRCX, SAP, WDC, NOK, INFY) | **MSFT (Oct 28)**; (STX, TER, NXPI, KLAC, NOW, GLW, INTC) | 🟡 **Medium, then** 🔴 **high: the semis that fell 15–19% last week report in the second window** |
-| Communication Services | **NFLX (Oct 20); META, T (Oct 21)**; (CMCSA, OMC) | **VZ (Oct 26), GOOGL (Oct 28)**; (TMUS, RDDT) | 🔴 **High both weeks: two Big 7 platforms and all three carriers in eight sessions** |
-| Financials | (FITB, ZION, WAL, SYF, ALLY, KEY, COF, CB, EWBC, MSCI, CME, MCO, NTRS, BX, NDAQ, HBAN, AXP) | **V (Oct 27), MA (Oct 29)**; (HIG, SPGI, AON, ICE, AJG) | 🟡 **Medium: the regionals and card lenders finish, then payments** |
-| Healthcare | **TMO, ABT (Oct 21)**; (ISRG, DHR, ELV, MOH, DGX) | **LLY, MRK (Oct 29), ABBV (Oct 30)**; (HCA, CNC, IQV, UHS, BSX, BIIB, BMY, GILD, SYK, REGN) | 🔴 **High in week two: three tracked pharmas plus the managed-care second wave (CNC, HCA, UHS)** |
-| Industrials | **HON (Oct 22)**; (GE, RTX, NOC, MMM, UAL, ALK, WAB, CSX, KNX, LUV, URI, LMT, UNP, NSC, DOV, AAL, SNA, ALLE, ROP) | **BA (Oct 27), CAT (Oct 29)**; (UPS, PCAR, ITW, XYL, HUBB, WM, GEV, VRT, OTIS, CARR, TT, LHX, TXT, IR, GD) | 🔴 **High both weeks: aerospace-and-defense first, AI-power second** |
-| Consumer Discretionary | **TSLA (Oct 21)**; (GM, HAS, GPC, LVS, PHM, NVR, POOL, TSCO) | **AMZN, SBUX (Oct 29)**; (RCL, HLT, CMG, F, EBAY, ETSY) | 🟡 **Medium, then** 🔴 **high** |
-| Consumer Staples | (PM, PG) | (KO, MO, HSY, MDLZ, CL) | 🟡 **Medium both weeks, into a +5.0% XLP week (#168)** |
-| Energy | (HAL, KMI, VLO, SLB) | **XOM, CVX (Oct 30)**; (BKR, PSX) | 🟢 **Low, then** 🔴 **high: the majors report with WTI near $99 (#169)** |
-| Materials | (STLD, CLF, DOW, NEM, PKG) | **FCX (Oct 27), LIN (Oct 29)**; (NUE, SHW, ECL, IP) | 🟡 **Medium** |
-| Real Estate | (CCI) | (WELL, PSA, AMT, EQIX) | 🟢 **Low** |
-| Utilities | (NEE) | (AEP, XEL, D, EXC) | 🟢 **Low, then** 🟡 **medium** |
+| Technology / semis | **MSFT (Oct 28)**; (SKHY, CDNS, CLS, STX, TER, NXPI, KLAC, NOW, FTNT, APH, INTC, SNDK, MPWR) | **AMD (Nov 3), QCOM (Nov 4)**; (PLTR, ON, ANET, ALAB, SMCI, ARM, NET, LITE, MCHP, DDOG, TEAM) | 🔴 **High both weeks: memory and WFE first, then the second-tier AI chips** |
+| Communication Services | **VZ (Oct 26), GOOGL (Oct 28)**; (TMUS, RDDT, RBLX) | (FOXA, ROKU, NWSA) | 🔴 **High, then** 🟢 **low** |
+| Financials | **V (Oct 27), MA (Oct 29)**; (HSBC, SPGI, HOOD, UBS, AON, ICE, BBVA, COIN, MSTR, AJG) | (APO, XYZ, AIG, PRU, SAN, ALL, MET, AFL, BAM) | 🟡 **Medium: payments, then insurers** |
+| Healthcare | **LLY, MRK (Oct 29), ABBV (Oct 30)**; (NVS, HCA, CNC, GSK, BSX, BMY, GILD, SYK, AZN, REGN) | **PFE (Nov 3)**; (VRTX, AMGN, NVO, CVS, CI, MCK, HUM, MRNA) | 🔴 **High both weeks: GLP-1 (LLY, then NVO) and managed care (CNC, CVS, CI, HUM)** |
+| Industrials | **BA (Oct 27), CAT (Oct 29)**; (UPS, GEV, VRT, ADP, TT, PWR, LHX, GD) | (ETN, EMR, GWW, PH, CMI) | 🔴 **High, then** 🟡 **medium** |
+| Consumer Discretionary | **AMZN, SBUX (Oct 29)**; (RCL, ORLY, F, CVNA, CMG, EBAY, DHI) | **MCD (Nov 4)**; (MAR, SHOP, RACE, BKNG, UBER, MELI, DASH, ABNB, TM, SONY) | 🔴 **High both weeks** |
+| Consumer Staples | (KO, MO, HSY, MDLZ, BUD, CL) | (EL, KDP, ADM, SYY, KHC, MNST) | 🟡 **Medium** |
+| Energy | **XOM, CVX (Oct 30)**; (SHEL, TTE, BP, PSX, BKR, OKE, EQT, IMO) | (WMB, FANG, MPC, ET, SU, COP, EOG, DVN, ENB) | 🔴 **High both weeks, with XLE at a 52-week high (#175)** |
+| Materials | **FCX (Oct 27), LIN (Oct 29)**; (NUE, SHW, ECL, VALE) | (APD, MLM, CF, NTR) | 🟡 **Medium** |
+| Real Estate | (WELL, PSA, AMT, EQIX, DLR, VTR) | (O, SPG, SBAC) | 🟡 **Medium: the data-center REITs report after EQIX/DLR hit multi-month lows** |
+| Utilities | (AEP, XEL, D, EXC, WEC) | (ETR, PEG, SO, DUK, VST, ED) | 🟡 **Medium, then** 🔴 **high** |
 
-**The Sector Density Verdict:** The calendar and the tape now point at the same place. The AI-capex chain that lost 8–19% in a week (LRCX, WDC this week; STX, TER, KLAC, VRT, GEV, GLW, INTC, CAT next week) reports alongside the three hyperscalers whose capex guides are its revenue (META Oct 21, MSFT and GOOGL Oct 28, AMZN Oct 29). After that: AAPL Nov 2; AMD, PFE Nov 3; QCOM, MCD Nov 4; NVDA, HD, DIS Nov 17; TGT Nov 18; WMT Nov 19; DE Nov 25.
+**The Sector Density Verdict:** The AI-capex chain gets its answer this week: SK Hynix on Tuesday night, MSFT and GOOGL on Wednesday night, AMZN on Thursday night, with STX, KLAC, VRT, GEV, INTC and SNDK around them. META's print showed what the tape is grading (capex against cash flow), and it fell 9.4%. Next week thins to the second tier (AMD, QCOM, ARM, ANET, PLTR) over an election. After that: NVDA, HD, DIS Nov 17; TGT Nov 18; WMT Nov 19; DE Nov 25; CRM Dec 2; AVGO, ADBE Dec 9.
 
 ---
 
@@ -122,245 +116,236 @@
 
 ### Upcoming prints: whisper numbers found this week
 
-> *Source: Earnings Whispers ticker pages, read 2026-10-18 through a page-summary tool. Single source, not cross-checked against Bloomberg.*
+> *Source: Earnings Whispers ticker pages, read 2026-10-25 through a page-summary tool. Single source, not cross-checked against Bloomberg.*
 
 | Company | Ticker | Report Date | Consensus (Earnings Whispers) | Consensus (yfinance) | Whisper EPS | Whisper vs. Consensus | Read |
 |---|---|---|---|---|---|---|---|
-| **AT&T** | **T** | **Oct 21** | $0.61 | $0.60 | **$0.64** | **+$0.03 (+4.9%)** | 🟡 Widest tracked gap this week, on a ±2.9% mover |
-| **Alphabet** | **GOOGL** | **Oct 28** | $2.94 | $3.00 | **$3.08** | +$0.14 (+4.8%) | 🟡 |
-| **Microsoft** | **MSFT** | **Oct 28** | $4.71 | $4.72 | **$4.93** | **+$0.22 (+4.7%)** | 🟡 The largest dollar gap among the Big 7 |
-| **Caterpillar** | **CAT** | **Oct 29** | $6.95 | $7.03 | **$7.24** | +$0.29 (+4.2%) | 🟡 The stock fell 8.7% into it |
-| **Honeywell** | **HON** | **Oct 22** | $2.17 | $2.16 | **$2.25** | +$0.08 (+3.7%) | 🟡 |
-| **Texas Instruments** | **TXN** | **Oct 21** | $2.40 | $2.42 | **$2.46** | +$0.06 (+2.5%) | 🟢 First TXN whisper this cycle |
-| **Netflix** | **NFLX** | **Oct 20** | $0.82 | $0.82 | **$0.84** | +$0.02 (+2.4%) | 🟢 Unchanged from last week |
-| **Visa** | **V** | **Oct 27** | $3.43 | $3.43 | **$3.50** | +$0.07 (+2.0%) | 🟢 |
-| **Thermo Fisher** | **TMO** | **Oct 21** | $6.40 | $6.40 | **$6.51** | +$0.11 (+1.7%) | 🟢 |
-| **Meta** | **META** | **Oct 21** | $6.54 | $6.76 / $5.70 ⚠️ | **$6.65** | +$0.11 (+1.7%) | 🟢 vs. EW; ⚠️ yfinance's two figures straddle it by $1.06 |
-| **Verizon** | **VZ** | **Oct 26** | $1.27 | $1.27 | **$1.29** | +$0.02 (+1.6%) | 🟢 |
-| **Abbott** | **ABT** | **Oct 21** | $1.42 | $1.41 | **$1.44** | +$0.02 (+1.4%) | 🟢 |
-| **Amazon** | **AMZN** | **Oct 29** | $2.01 | $1.96 | **$1.98** | -$0.03 (-1.5%) | 🔴 Below consensus |
-| **Tesla** | **TSLA** | **Oct 21** | $0.44 | $0.45 | **$0.40** | **-$0.04 (-9.1%)** | 🔴 **Below consensus; the room expects a fourth miss in five** |
-| **Boeing** | **BA** | **Oct 27** | -$0.17 | -$0.20 | **-$0.45** | **-$0.28 (a loss 2.6x the street's)** | 🔴 Below consensus |
+| **Eli Lilly** | **LLY** | **Oct 29** | $7.11 | $6.67 ⚠️ | **$8.71** | **+$1.60 (+22.5%)** | 🔴 **Unconfirmed by judgement: the widest tracked gap of the season, on a basis that has moved three times** |
+| **Exxon Mobil** | **XOM** | **Oct 30** | $3.90 | $4.03 | **$4.21** | +$0.31 (+7.9%) | 🟡 First XOM whisper; on a ±1.1% mover, under the 10% rule from last week but near it |
+| **Freeport-McMoRan** | **FCX** | **Oct 27** | $0.80 | $0.83 | **$0.85** | +$0.05 (+6.3%) | 🟡 |
+| **Starbucks** | **SBUX** | **Oct 29** | $0.73 | $0.71 | **$0.77** | +$0.04 (+5.5%) | 🟡 On a 3-of-8 beater |
+| **Alphabet** | **GOOGL** | **Oct 28** | $2.94 | $3.00 | **$3.08** | +$0.14 (+4.8%) | 🟡 Unchanged |
+| **Microsoft** | **MSFT** | **Oct 28** | $4.71 | $4.72 | **$4.93** | +$0.22 (+4.7%) | 🟡 Unchanged; largest Big 7 dollar gap |
+| **Merck** | **MRK** | **Oct 29** | $2.12 | $2.09 | **$2.21** | +$0.09 (+4.2%) | 🟡 |
+| **Apple** | **AAPL** | **Nov 2** | $2.00 | $1.98 | **$2.07** | +$0.07 (+3.5%) | 🟢 First AAPL whisper |
+| **Chevron** | **CVX** | **Oct 30** | $4.78 | $4.83 | **$4.94** | +$0.16 (+3.3%) | 🟢 |
+| **Mastercard** | **MA** | **Oct 29** | $5.14 | $5.17 | **$5.30** | +$0.16 (+3.1%) | 🟢 |
+| **AMD** | **AMD** | **Nov 3** | $1.94 | $1.93 | **$1.98** | +$0.04 (+2.1%) | 🟢 |
+| **Visa** | **V** | **Oct 27** | $3.43 | $3.44 | **$3.50** | +$0.07 (+2.0%) | 🟢 Unchanged |
+| **Caterpillar** | **CAT** | **Oct 29** | $7.12 | $7.03 | **$7.24** | +$0.12 (+1.7%) | 🟢 Gap halved as consensus rose |
+| **Verizon** | **VZ** | **Oct 26** | $1.27 | $1.27 | **$1.29** | +$0.02 (+1.6%) | 🟢 Unchanged |
+| **Qualcomm** | **QCOM** | **Nov 4** | $2.16 | $2.16 | **$2.19** | +$0.03 (+1.4%) | 🟢 |
+| **Linde** | **LIN** | **Oct 29** | $4.52 | $4.52 / $2.63 ⚠️ | **$4.53** | +$0.01 (+0.2%) | 🟢 In line |
+| **Amazon** | **AMZN** | **Oct 29** | $2.01 | $1.96 | **$1.98** | -$0.03 (-1.5%) | 🔴 Below consensus, second week |
+| **Boeing** | **BA** | **Oct 27** | -$0.21 | -$0.20 | **-$0.45** | **-$0.24 (a loss 2.1x the street's)** | 🔴 Below consensus |
 
-*No whisper shown: AAPL, NVDA, LLY, MA, XOM. Not checked: MRK, ABBV, CVX, FCX, LIN, SBUX and all outside names. **These still require an external feed (Earnings Whispers subscription, Bloomberg).** ⚠️ LLY: EW consensus $5.38 vs. yfinance $7.11; unresolved.*
+*No whisper shown: ABBV, MCD, PFE, NVDA. Not checked: all outside names. **These still require an external feed (Earnings Whispers subscription, Bloomberg).***
 
-### Last week's prints (Oct 12 – Oct 16): whisper vs. actual
+### Last week's prints (Oct 19 – Oct 23): whisper vs. actual
 
-> *Whispers captured on this page on 2026-10-11, before the prints. Actuals: yfinance `earnings_dates`, cross-read with the Finviz earnings calendar (adjusted EPS). Where the two disagree, both are shown.*
+> *Whispers captured on this page on 2026-10-18, before the prints. Actuals: yfinance `earnings_dates`, cross-read with the Finviz earnings calendar (adjusted EPS) and, for META, the company release via WebSearch.*
 
-| Company | Ticker | Report Date | Consensus EPS | Whisper EPS | Actual EPS | Surprise vs Consensus | vs. Whisper | Stock Reaction (day) | Verdict |
+| Company | Ticker | Report Date | Consensus EPS | Whisper EPS | Actual EPS | Surprise vs Consensus | vs. Whisper | Stock Reaction (day; W/W) | Verdict |
 |---|---|---|---|---|---|---|---|---|---|
-| **Goldman Sachs** | **GS** | **Oct 13** | **$13.09** (EW $12.90; Finviz $12.86) | **$12.95** | **$17.01** | **+30.0%** | **+31.4%** | **-0.2%; -1.6% W/W** | 🔴 **Cleared a bar cut 12% the prior week by 30%; equities trading +72%, record advisory $1.7B, record financing. Not paid. The biggest tracked beat of the season.** |
-| **UnitedHealth** | **UNH** | **Oct 13** | **$4.14** | **$4.60** | **$4.69** | **+13.3%** | **+2.0%** | **-0.2%; +5.8% W/W** | 🟢 **The one whisper that was right: beat it by 9 cents and rallied 5.8% on the week.** |
-| **BlackRock** | **BLK** | **Oct 14** | **$14.30** | **$14.16** | **$15.93** | **+11.4%** | **+12.5%** | **+0.7%; +4.8% W/W** | 🟢 Whisper set below consensus, both beaten; the only tracked bank-adjacent print paid on the week |
-| **Morgan Stanley** | **MS** | **Oct 14** | **$2.92** | **$2.92** | **$3.03** | **+3.9%** | **+3.8%** | **-2.7%; -5.0% W/W** | 🔴 Beat both, sold |
-| **Citigroup** | **C** | **Oct 13** | **$2.62** (Finviz $2.66) | **$2.84** | **$2.83 / $2.85** | **+7.1% to +8.0%** | **in line** | **-5.6%; -4.1% W/W** | 🔴 Hit the whisper exactly, fell 5.6%: the whisper was the bar and it was not exceeded |
-| **Johnson & Johnson** | **JNJ** | **Oct 13** | **$2.52** | **$2.93** ⚠️ | **$2.59** (GAAP $0.09) | **+2.7%** | **-11.6%** | **-5.7%; -2.2% W/W** | 🔴 **The +15.8% whisper flagged as unconfirmed last week was 34 cents too high. Talc-resolution charge, MedTech $8.6B vs. $8.71B LSEG; raised the year to $11.05–11.15 and fell 5.7%.** |
-| **Schwab** | **SCHW** | **Oct 15** | **$1.66** | **$1.68** | **$1.69** | **+2.1%** | **+0.6%** | **-2.7%; -4.9% W/W** | 🔴 Beat both; guided revenue and NIM to the low end (#167) |
-| **Wells Fargo** | **WFC** | **Oct 13** | **$1.86** | **$1.93** | **$1.87** | **+0.8%** | **-3.1%** | **-3.1%; +0.4% W/W** | 🔴 Missed the whisper, revenue $21.87B vs. $22.30B |
-| **JPMorgan** | **JPM** | **Oct 13** | **$5.94** (Finviz $5.93) | **$6.10** | **$5.75 yfinance / $5.57 Finviz** ⚠️ | **-3.2% / -6.0%** | **-5.7% / -8.7%** | **-0.9%; +2.0% W/W** | 🟡 A miss on fixed-income trading on both sources (they disagree on the figure); revenue $50.17B vs. $51.23B. Stock rose on the week. |
-| **Bank of America** | **BAC** | **Oct 14** | **$1.11** | **$1.17** | **$0.91** (about $1.08 adjusted) | **-17.8%** | **-22.2%** | **-4.8%; -5.7% W/W** | 🔴 **$1.2B OCC/FinCEN settlement charge; trading below estimates even ex-charge. Stopped 0.24 points short of the alert move threshold (#170).** |
+| **Meta** | **META** | **Oct 21 (AMC)** | **$5.46** yfinance / $6.54 Finviz-EW | **$6.65** | **$3.83 GAAP; about $7.40 ex-charge** | **-29.9% / -41.4% GAAP; about +13% ex-charge vs. $6.54** | **-42% GAAP; +11% ex-charge** | **-6.98%; -9.40% W/W** | 🔴 **Beat the whisper on operations, sold anyway. $9.89B legal charge; revenue $64.60B vs. $63.34B. Alert issued on the GAAP arithmetic.** |
+| **AT&T** | **T** | **Oct 21 (BMO)** | **$0.60** | **$0.64** | **$0.65** (GAAP $0.13) | **+8.0%** | **+1.6%** | **-6.45%; -10.7% W/W** | 🔴 **Beat the widest whisper gap on the board, then fell on the SpaceX tower report (#176).** |
+| **Netflix** | **NFLX** | **Oct 20 (AMC)** | **$0.82** | **$0.84** | **$0.87** | **+6.0%** | **+3.6%** | **-5.31%; -6.6% W/W** | 🔴 Beat both; Q4 guide and ad-forecast cut drove the drop (#176). Fifth negative reaction in six. |
+| **Tesla** | **TSLA** | **Oct 21 (AMC)** | **$0.45** | **$0.40** | **$0.48** (GAAP $0.22) | **+6.4%** | **+20.0%** | **-3.08%; +4.93% W/W** | 🟡 **The whisper below the street was wrong; the day was red, the week green.** |
+| **Texas Instruments** | **TXN** | **Oct 21 (AMC)** | **$2.43** | **$2.46** | **$2.62** | **+7.9%** | **+6.5%** | **-1.81%; +3.0% W/W** | 🟡 Beat both by the widest margin of the tracked names; sold on the day, bought on the week |
+| **Thermo Fisher** | **TMO** | **Oct 21 (BMO)** | **$6.40** | **$6.51** | **$6.68** | **+4.3%** | **+2.6%** | **+0.97%; -2.3% W/W** | 🟡 |
+| **Honeywell** | **HON** | **Oct 22 (BMO)** | **$2.16** | **$2.25** | **$2.27** | **+4.9%** | **+0.9%** | **+1.67%; +4.6% W/W** | 🟢 **The one clean sandbag: beat both and rallied on the week** |
+| **Abbott** | **ABT** | **Oct 21 (BMO)** | **$1.42** | **$1.44** | **$1.42** (GAAP $0.53) | **0.0%** | **-1.4%** | **-1.89%; -1.1% W/W** | 🔴 Missed the whisper, in line with the street; sold |
 
 > 🟢 **Sandbag confirmed** = consensus beat + stock rally
 > 🔴 **Trap / miss confirmed** = the number or the narrative drove an adverse move
 > 🟡 **Mixed / partial** = miss or beat on one line, muted or delayed reaction
 
-**Marky's Interpretation:** Ten whispers captured in advance, and the stocks went the right way on two (UNH, BLK). Seven of ten beat consensus; eight of ten fell on the day. The whisper was useful once: UNH at $4.60 against a $4.12 street, printed $4.69, and was the best tracked bank-and-healthcare week at +5.8%. The JNJ whisper (+15.8%) was wrong by 34 cents; last week's page called it unconfirmed, and it should stay that way as a category: any whisper more than ten points above consensus on a name with a sub-2% average move gets the same flag from now on. GS is the case that matters. The consensus was cut 12% in a week, the whisper sat a nickel above it, the company beat both by 30%, and the stock fell 0.2% in a week the Fed odds moved. A cut bar did not make the beat easy to sell; it made it irrelevant.
+**Marky's Interpretation:** Eight whispers captured in advance. Seven of eight tracked names beat the street on an operating basis; six of eight fell on the day. The whisper beat the street on direction in six of eight (it was wrong on TSLA and ABT), and that was worth nothing: the two biggest drops (META -7.0%, T -6.5%) beat their whispers. Last week the room said TSLA would miss; it beat by 20% against the whisper, fell 3.1% on the day and rose 4.9% on the week. Two weeks of evidence: the whisper was closer to the number than the street on 9 of 18 names, and it predicted the stock no better than a coin.
 
 ---
 
 ## HISTORICAL BEAT RATES
 
-> *8-quarter window via yfinance `earnings_dates`; average earnings-day move = mean absolute close-to-close reaction (AMC: report-day close → next close; BMO: prior close → report-day close). Strict beat = reported EPS above estimate. Refreshed this session for every name on the two-week board and last week's reporters.*
+> *8-quarter window via yfinance `earnings_dates`; average earnings-day move = mean absolute close-to-close reaction (AMC: report-day close → next close; BMO: prior close → report-day close). Strict beat = reported EPS above estimate. Refreshed 2026-10-25 for every name on the two-week board and last week's reporters.*
 
-| Company | Ticker | Beat Rate (8Q) | Avg Surprise (median) | Avg Earnings-Day Move | Latest Print / Note |
+| Company | Ticker | Beat Rate (8Q) | Median Surprise | Avg Earnings-Day Move | Latest Print / Note |
 |---|---|---|---|---|---|
-| **Netflix** | **NFLX** | **75.0% (6/8)** | +0.7% (+1.6%) | ±7.1% | Jul 16 +1.4%, **-7.3%**; negative on four of the last five |
-| **Tesla** | **TSLA** | **37.5% (3/8)** | -5.3% (-3.1%) | ±7.8% | Jul 22 miss -39.1%, **-14.5%** |
-| **Meta** | **META** | **87.5% (7/8)** | +11.0% (+11.3%) | ±7.4% | Jul 29 miss -14.4%, **-8.0%** |
-| **Texas Instruments** | **TXN** | **75.0% (6/8)** | +8.5% (+7.7%) | ±8.7% | Jul 22 +10.5%, -3.1% |
-| **Thermo Fisher** | **TMO** | **100.0% (8/8)** | +2.9% (+2.6%) | ±5.1% | Jul 23 +5.6%, +8.7% |
-| **Abbott** | **ABT** | **50.0% (4/8) strict** | +0.7% (+0.3%) | ±5.4% | Jul 16 +2.6%, +10.7%. 7/8 on last week's pull; yfinance restated estimates put several quarters exactly in line |
-| **AT&T** | **T** | **75.0% (6/8)** | +4.9% (+4.2%) | ±2.9% | Jul 22 +10.5%, +3.5% |
-| **Honeywell** | **HON** | **100.0% (8/8)** | +6.3% (+5.4%) | ±5.3% | Jul 23 +7.2%, +5.7% |
-| **Verizon** | **VZ** | **87.5% (7/8)** | (+2.6%) | ±4.0% | +2.7%, +5.8% |
-| **Boeing** | **BA** | **50.0% (4/8)** | (-8.7%) | ±3.7% | loss quarters; surprises n/m |
-| **Freeport-McMoRan** | **FCX** | **100.0% (8/8)** | (+21.9%) | ±3.8% | +18.5%, -2.3% |
-| **Visa** | **V** | **100.0% (8/8)** | (+3.2%) | ±2.3% | +2.8%, +0.6% |
-| **Microsoft** | **MSFT** | **100.0% (8/8)** | +7.5% (+6.8%) | ±7.0% | Jul 29 +11.8%, **+15.5%** |
-| **Alphabet** | **GOOGL** | **100.0% (8/8)** | n/m (+20.9%) | ±4.1% | Jul 22 +214.2% (non-operating), -7.1% |
-| **Eli Lilly** | **LLY** | **75.0% (6/8)** | (+11.0%) | ±8.0% | +27.3%, +4.9% |
-| **Merck** | **MRK** | **87.5% (7/8)** | (+4.5%) | ±2.4% | +49.4%, +0.2% |
-| **Mastercard** | **MA** | **100.0% (8/8)** | (+4.0%) | ±2.3% | +5.5%, +2.5% |
-| **Caterpillar** | **CAT** | **62.5% (5/8)** | (+5.8%) | ±4.8% | +31.8%, +5.6% |
-| **Linde** | **LIN** | **100.0% (8/8)** | (+0.8%) | ±2.4% | +0.3%, -5.9% |
-| **Amazon** | **AMZN** | **87.5% (7/8)** | n/m (+25.3%) | ±6.2% | Jul 30 +214.9% (non-operating), **+15.3%** |
-| **Starbucks** | **SBUX** | **37.5% (3/8)** | (-5.5%) | ±3.3% | +30.8%, +1.6% |
-| **Exxon / Chevron** | **XOM / CVX** | **100% / 87.5%** | (+4.0% / +4.5%) | ±1.1% / ±2.4% | +13.3%, -1.0% / +8.8%, +2.4% |
-| **AbbVie** | **ABBV** | **87.5% (7/8)** | (+2.2%) | ±3.5% | +1.1%, -2.5% |
-| **Apple / NVIDIA** | **AAPL / NVDA** | **100% / 100%** | +4.6% / +5.8% | ±2.5% / ±4.0% | +6.7%, -7.4% / +6.2%, +8.7% |
+| **Verizon** | **VZ** | **87.5% (7/8)** | +2.7% | ±4.0% | Jul 24 +2.7%, +5.8% |
+| **Boeing** | **BA** | **50.0% (4/8)** | -8.7% | ±3.7% | loss quarters; surprises n/m |
+| **Freeport-McMoRan** | **FCX** | **100.0% (8/8)** | +21.9% | ±3.8% | Jul 23 +18.7%, -2.3% |
+| **Visa** | **V** | **100.0% (8/8)** | +3.2% | ±2.3% | Jul 28 +2.8%, +0.6% |
+| **Microsoft** | **MSFT** | **100.0% (8/8)** | +6.8% | ±7.0% | Jul 29 +11.8%, **+15.5%** |
+| **Alphabet** | **GOOGL** | **100.0% (8/8)** | +20.9% (n/m) | ±4.1% | Jul 22 +214.2% (non-operating), -7.1% |
+| **Eli Lilly** | **LLY** | **75.0% (6/8)** | +11.0% | ±8.0% | Aug 5 +27.3%, +4.9% |
+| **Merck** | **MRK** | **87.5% (7/8)** | +4.5% | ±2.4% | Aug 4 +49.4% (loss quarter), +0.2% |
+| **Mastercard** | **MA** | **100.0% (8/8)** | +4.0% | ±2.3% | Jul 30 +5.5%, +2.5% |
+| **Caterpillar** | **CAT** | **62.5% (5/8)** | +5.8% | ±4.8% | Aug 4 +31.8%, +5.6% |
+| **Linde** | **LIN** | **100.0% (8/8)** | +0.8% | ±2.4% | Jul 31 +0.3%, -5.9% |
+| **Amazon** | **AMZN** | **87.5% (7/8)** | +25.3% (n/m) | ±6.2% | Jul 30 +214.9% (non-operating), **+15.3%** |
+| **Starbucks** | **SBUX** | **37.5% (3/8)** | -5.5% | ±3.3% | Jul 29 +30.8%, +1.6% |
+| **Exxon / Chevron** | **XOM / CVX** | **87.5% / 87.5%** | +2.8% / +4.5% | ±1.1% / ±2.4% | Jul 31 -3.0%, -1.0% / +8.8%, +2.4%. *XOM corrected from 8/8* |
+| **AbbVie** | **ABBV** | **87.5% (7/8)** | +2.2% | ±3.5% | Jul 31 +1.2%, -2.5% |
+| **Apple** | **AAPL** | **100.0% (8/8)** | +4.0% | ±2.5% | Jul 30 +6.7%, -7.4% |
+| **Pfizer** | **PFE** | **100.0% (8/8)** | n/m (small base) | ±2.2% | Aug 4 +12.9%, +1.5% |
+| **AMD** | **AMD** | **62.5% (5/8)** | +2.5% | ±8.8% | Aug 4 +3.2%, -7.0% |
+| **McDonald's** | **MCD** | **62.5% (5/8)** | +1.1% | ±2.1% | Aug 4 +1.8%, +1.2% |
+| **Qualcomm** | **QCOM** | **87.5% (7/8)** | +3.1% | ±6.3% | Jul 29 -0.7%, -2.6% |
+| **NVIDIA** | **NVDA** | **100.0% (8/8)** | +5.4% | ±4.0% | Aug 26 +6.2%, +8.7% |
 | *Last week's tracked reporters (window now includes the Oct prints):* | | | | | |
-| **Goldman Sachs** | **GS** | **100.0% (8/8)** | +21.6% (+17.0%) | ±3.3% | Oct 13 **+30.0%, -0.2%** |
-| **BlackRock** | **BLK** | **100.0% (8/8)** | +8.8% (+9.5%) | ±4.1% | Oct 14 +11.4%, +0.7% |
-| **Morgan Stanley** | **MS** | **100.0% (8/8)** | +16.8% (+15.6%) | ±3.1% | Oct 14 +3.9%, -2.7% |
-| **Johnson & Johnson** | **JNJ** | **87.5% (7/8)** | +2.3% (+1.5%) | ±2.3% | Oct 13 +2.7%, **-5.7%** |
-| **Bank of America** | **BAC** | **87.5% (7/8)** | +4.2% (+7.3%) | ±2.7% | Oct 14 **-17.8%, -4.8%**: first miss in the window |
-| **Charles Schwab** | **SCHW** | **87.5% (7/8)** | +3.9% (+3.5%) | ±2.3% | Oct 15 +2.1%, -2.7% |
-| **JPMorgan** | **JPM** | **75.0% (6/8)** | +6.2% (+6.8%) | ±2.1% | Oct 13 -3.2%, -0.9% |
-| **Wells Fargo** | **WFC** | **75.0% (6/8)** | +5.5% (+5.1%) | ±4.5% | Oct 13 +0.8%, -3.1% |
-| **UnitedHealth** | **UNH** | **62.5% (5/8)** | +6.0% (+2.5%) | ±8.0% | Oct 13 +13.3%, -0.2%; +5.8% W/W |
-| Selected outside names | GE / RTX / ISRG / GM / LRCX / IBM / PG / KO | 100% / 100% / 100% / 100% / 100% / 87.5% / 100% / 100% | (+14.5% / +10.6% / +13.2% / +11.3% / +7.2% / +5.4% / +1.6% / +4.0%) | ±5.3% / ±4.7% / ±6.7% / ±7.2% / ±6.5% / ±6.0% / ±1.7% / ±2.8% | unchanged from last week's page |
+| **Meta** | **META** | **75.0% (6/8)** | +8.3% | ±7.8% | Oct 21 **-29.9% GAAP, -7.0%**: second straight GAAP miss, second straight drop |
+| **Tesla** | **TSLA** | **37.5% (3/8)** | -3.1% | ±5.4% | Oct 21 +6.4%, -3.1% |
+| **Netflix** | **NFLX** | **75.0% (6/8)** | +1.6% | ±6.4% | Oct 20 +5.8%, **-5.3%** |
+| **Texas Instruments** | **TXN** | **75.0% (6/8)** | +8.1% | ±8.4% | Oct 21 +7.9%, -1.8% |
+| **AT&T** | **T** | **75.0% (6/8)** | +5.1% | ±3.2% | Oct 21 +7.8%, **-6.4%** |
+| **Thermo Fisher** | **TMO** | **100.0% (8/8)** | +3.2% | ±5.0% | Oct 21 +4.3%, +1.0% |
+| **Honeywell** | **HON** | **100.0% (8/8)** | +5.4% | ±4.9% | Oct 22 +4.9%, +1.7% |
+| **Abbott** | **ABT** | **37.5% (3/8) strict** | +0.3% | ±5.5% | Oct 21 in line (+0.03%), -1.9% |
 
-**Cecil's Interpretation:** The nine tracked financial and healthcare names had beaten in 64 of their last 72 quarters. This quarter they beat in 7 of 9, and 8 of 9 fell on the day (BLK the exception). The two misses split: JPM rose 2.0% on the week, BAC fell 5.7%. The beat rate is not a forecast of the reaction and has not been all season. What has been: the forward line. UNH and BLK, the two that rose on the week, gave the market a forward number it believed; SCHW guided to the low end and fell 4.9%; JNJ raised the year and was sold on MedTech and a charge. For next week, the forward line is capex: META, MSFT, GOOGL and AMZN guide the spending that STX, KLAC, VRT and CAT were sold for.
+**Cecil's Interpretation:** The eight tracked names that reported last week had beaten in 48 of their prior 64 quarters (75%). This quarter: seven beat on an operating basis (six on GAAP), and the average day was -2.9%. The beat rate is a description, not a forecast. Last week's page said the forward line would decide, and it did, three ways: NFLX's Q4 guide, T's exposure to a competitor's announcement, META's capex. For this week, the forward line is the same one META just failed: capex guides from MSFT, GOOGL and AMZN, measured against their cash flow.
 
 ---
 
 ## IMPLIED MOVES
 
-> *Live implied moves from CBOE, Bloomberg or OPRA are still not available; that flag stays. Stand-in: at-the-money straddle (call mid + put mid, as % of price) on the first listed expiry after the print, Yahoo Finance option chain at the Friday Oct 16 close. Limits: delayed retail quotes; the figure covers every trading day to expiry, not only the print; open interest is thin in several names (noted). Treat each as an upper bound and confirm against CBOE before sizing. **"Hist. Avg Move" is realized (yfinance, 8 quarters).***
+> *Live implied moves from CBOE, Bloomberg or OPRA are still not available; that flag stays. Stand-in: at-the-money straddle (call mid + put mid, as % of price) on the first listed expiry after the print, Yahoo Finance option chain at the Friday Oct 23 close. Limits: delayed retail quotes; covers every trading day to expiry, not only the print; thin open interest noted. Treat each as an upper bound and confirm against CBOE before sizing. **"Hist. Avg Move" is realized (yfinance, 8 quarters).***
 
 ### Upcoming
 
 | Company | Ticker | Report Date | Straddle-Implied Move (expiry) | Last Week's Figure | Hist. Avg Move (8Q, realized) | Signal |
 |---|---|---|---|---|---|---|
-| **Netflix** | **NFLX** | **Oct 20** | **±9.5% (Oct 23)** | 8.5% | ±7.1% | 🟡 1.3x; the only tracked straddle that rose |
-| **Tesla** | **TSLA** | **Oct 21** | **±7.4% (Oct 23)** | 7.5% | ±7.8% | 🔴 Still under its norm, with a whisper under consensus |
-| **Meta** | **META** | **Oct 21** | **±7.3% (Oct 23)** | 8.8% (Oct 30) | ±7.4% | 🟢 At its norm on a week-shorter expiry |
-| **Texas Instruments** | **TXN** | **Oct 21** | **±8.4% (Oct 23)** ⚠️ 104 contracts | 8.8% | ±8.7% | 🟡 At its norm; thin |
-| **Thermo Fisher** | **TMO** | **Oct 21** | ±6.2% (Oct 23) ⚠️ 29 contracts | 7.0% | ±5.1% | — Disregard |
-| **AT&T** | **T** | **Oct 21** | **±5.0% (Oct 23)** | 12.7% (distorted) | ±2.9% | 🔴 1.7x; clean quote this week |
-| **Abbott** | **ABT** | **Oct 21** | **±5.5% (Oct 23)** | 6.1% | ±5.4% | 🟢 At its norm |
-| **Honeywell** | **HON** | **Oct 22** | ±5.1% (Oct 23) ⚠️ 57 contracts | 5.8% | ±5.3% | 🟢 At its norm; thin |
-| **Verizon** | **VZ** | **Oct 26** | ±5.5% (Oct 30) | — | ±4.0% | 🟡 1.4x |
-| **Boeing** | **BA** | **Oct 27** | ±6.6% (Oct 30) | — | ±3.7% | 🔴 1.8x |
-| **Freeport-McMoRan** | **FCX** | **Oct 27** | ±8.3% (Oct 30) | — | ±3.8% | 🔴 2.2x |
-| **Microsoft** | **MSFT** | **Oct 28** | ±6.0% (Oct 30) | 6.4% | ±7.0% | 🟢 Under its norm, on FOMC day |
-| **Alphabet** | **GOOGL** | **Oct 28** | ±7.0% (Oct 30) | 7.3% | ±4.1% | 🔴 1.7x |
-| **Eli Lilly** | **LLY** | **Oct 29** | ±7.7% (Oct 30) ⚠️ 105 contracts | — | ±8.0% | 🟢 At its norm; thin |
-| **Merck** | **MRK** | **Oct 29** | ±7.0% (Oct 30) | — | ±2.4% | 🔴 2.9x, the richest tracked ratio |
-| **Caterpillar** | **CAT** | **Oct 29** | ±8.7% (Oct 30) | — | ±4.8% | 🔴 1.8x |
-| **Amazon** | **AMZN** | **Oct 29** | ±7.9% (Oct 30) | 7.9% | ±6.2% | 🟡 1.3x |
-| **Starbucks** | **SBUX** | **Oct 29** | ±7.1% (Oct 30) | — | ±3.3% | 🔴 2.2x |
-| **Exxon / Chevron** | **XOM / CVX** | **Oct 30** | ±4.8% / ±4.9% (Oct 30) | — | ±1.1% / ±2.4% | 🔴 4.4x / 2.0x: oil risk, not earnings risk |
-| **AbbVie** | **ABBV** | **Oct 30** | ±5.7% (Oct 30) | — | ±3.5% | 🟡 1.6x |
-| GE / RTX / GM / COF / UAL | GE / RTX / GM / COF / UAL | Oct 20 | ±6.2% / ±5.1% / ±6.3% / ±5.5% / ±7.1% (Oct 23) | 7.3% / — / — / — / — | ±5.3% / ±4.7% / ±7.2% / ±3.4% / ±4.1% | 🟡 |
-| ISRG / IBM / LRCX | ISRG / IBM / LRCX | Oct 20–21 | ±7.9% / ±7.7% / ±8.2% (Oct 23) | 8.6% / 7.9% / — | ±6.7% / ±6.0% / ±6.5% | 🟡 |
-| PG / WDC | PG / WDC | Oct 22 | ±3.7% / ±10.4% (Oct 23) | — | ±1.7% / ±7.5% | 🔴 PG 2.2x |
-| STX / KLAC / NOW / INTC / TMUS / KO | — | Oct 27–29 | ±12.5% / ±11.0% / ±12.6% / ±12.1% / ±6.6% / ±4.1% (Oct 30) | INTC 8.4% (Oct 23, wrong date) | ±10.2% / ±5.0% / ±8.8% / ±9.3% / ±6.8% / ±2.8% | 🔴 KLAC 2.2x after a -15% week |
+| **Verizon** | **VZ** | **Oct 26** | ±4.5% (Oct 30) | 5.5% | ±4.0% | 🟢 1.1x |
+| **Boeing** | **BA** | **Oct 27** | ±5.7% (Oct 30) | 6.6% | ±3.7% | 🟡 1.5x |
+| **Freeport-McMoRan** | **FCX** | **Oct 27** | ±6.4% (Oct 30) | 8.3% | ±3.8% | 🟡 1.7x |
+| **Visa** | **V** | **Oct 27** | ±3.5% (Oct 30) | n/a (chain error) | ±2.3% | 🟡 1.5x |
+| **Microsoft** | **MSFT** | **Oct 28** | **±5.3% (Oct 30)** | 6.0% | ±7.0% | 🔴 **0.8x: under its norm on FOMC day** |
+| **Alphabet** | **GOOGL** | **Oct 28** | ±6.1% (Oct 30) | 7.0% | ±4.1% | 🟡 1.5x |
+| **Eli Lilly** | **LLY** | **Oct 29** | ±6.5% (Oct 30) ⚠️ 2 contracts | 7.7% | ±8.0% | — Disregard |
+| **Merck** | **MRK** | **Oct 29** | ±5.3% (Oct 30) | 7.0% | ±2.4% | 🔴 2.2x |
+| **Mastercard** | **MA** | **Oct 29** | ±3.5% (Oct 30) ⚠️ 12 contracts | n/a | ±2.3% | 🟡 1.5x; thin |
+| **Caterpillar** | **CAT** | **Oct 29** | ±7.4% (Oct 30) ⚠️ 4 contracts | 8.7% | ±4.8% | 🟡 1.5x; thin |
+| **Amazon** | **AMZN** | **Oct 29** | ±7.8% (Oct 30) | 7.9% | ±6.2% | 🟡 1.3x |
+| **Starbucks** | **SBUX** | **Oct 29** | ±6.6% (Oct 30) | 7.1% | ±3.3% | 🔴 2.0x |
+| **Exxon / Chevron** | **XOM / CVX** | **Oct 30** | ±3.9% / ±3.9% (Oct 30) | 4.8% / 4.9% | ±1.1% / ±2.4% | 🔴 3.5x / 1.6x: oil risk, not earnings risk |
+| **AbbVie** | **ABBV** | **Oct 30** | ±4.8% (Oct 30) | 5.7% | ±3.5% | 🟡 1.4x |
+| **Apple** | **AAPL** | **Nov 2** | ±4.5% (Nov 4) | 5.7% (Nov 6) | ±2.5% | 🔴 1.8x |
+| **Pfizer** | **PFE** | **Nov 3** | ±5.0% (Nov 6) | — | ±2.2% | 🔴 2.3x; spans the election |
+| **AMD** | **AMD** | **Nov 3** | ±10.0% (Nov 4) ⚠️ 10 contracts | — | ±8.8% | 🟡 1.1x; thin |
+| **McDonald's** | **MCD** | **Nov 4** | ±4.3% (Nov 6) | — | ±2.1% | 🔴 2.0x |
+| **Qualcomm** | **QCOM** | **Nov 4** | ±10.3% (Nov 6) | — | ±6.3% | 🟡 1.6x |
+| **NVIDIA** | **NVDA** | **Nov 17** | ±9.7% (Nov 20, four weeks) | 9.9% | ±4.0% | — Not an earnings figure yet |
+| KO / UPS / GLW | KO / UPS / GLW | Oct 27 | ±3.3% / ±6.4% / ±9.6% (Oct 30) | 4.1% / — / — | ±2.8% / — / — | 🟡 |
+| STX / HOOD | STX / HOOD | Oct 27 | ±9.8% / ±10.2% (Oct 30) | 12.5% / — | ±10.2% / — | 🟢 STX at its norm |
+| GEV / VRT / KLAC / NOW / TMUS | — | Oct 28 | ±7.9% / ±11.0% / ±8.7% / ±10.2% / ±6.1% (Oct 30) | — / — / 11.0% / 12.6% / 6.6% | — / — / ±5.0% / ±8.8% / ±6.8% | 🔴 KLAC 1.7x |
+| INTC / SNDK | INTC / SNDK | Oct 29 | ±9.9% / ±10.8% (Oct 30) | 12.1% / — | ±9.3% / — | 🟢 INTC at its norm |
+| PLTR | PLTR | Nov 2 | ±12.4% (Nov 6) | — | — | — |
 
-*Not available: LMT, V, MA (chain error). LIN's first listed expiry after Oct 29 is Nov 20; ±5.9% is not an earnings figure.*
+*LIN's first listed expiry after Oct 29 is Nov 20 (±5.6%); not an earnings figure.*
 
 ### Last week: what was priced vs. what happened
 
-| Company | Ticker | Report Date | Straddle-Implied (Oct 9 close) | Realized Move (day) | Hist. Avg Move (8Q, realized) | Signal |
+| Company | Ticker | Report Date | Straddle-Implied (Oct 16 close) | Realized Move (day) | Hist. Avg Move (8Q, realized) | Signal |
 |---|---|---|---|---|---|---|
-| **UnitedHealth** | **UNH** | **Oct 13** | **±7.2%** | **-0.2%** | ±8.0% | 🟢 The one I said to respect moved 0.2% |
-| **Goldman Sachs** | **GS** | **Oct 13** | **±4.7%** | **-0.2%** | ±3.3% | 🟢 A 30% beat inside a quarter of a point |
-| **Wells Fargo** | **WFC** | **Oct 13** | **±4.7%** | **-3.1%** | ±4.5% | 🟢 Inside |
-| **JPMorgan** | **JPM** | **Oct 13** | **±3.6%** | **-0.9%** | ±2.1% | 🟢 Inside |
-| **Johnson & Johnson** | **JNJ** | **Oct 13** | **±3.6%** | **-5.7%** | ±2.3% | 🔴 **1.6x what was priced**; the smallest mover on the board had the largest move |
-| **BlackRock** | **BLK** | **Oct 14** | **±5.1%** | **+0.7%** | ±4.1% | 🟢 |
-| **Morgan Stanley** | **MS** | **Oct 14** | **±4.5%** | **-2.7%** | ±3.1% | 🟢 |
-| **Bank of America** | **BAC** | **Oct 14** | **±4.1%** | **-4.8%** | ±2.7% | 🔴 Exceeded, on CPI morning |
-| **Charles Schwab** | **SCHW** | **Oct 15** | **±4.4%** | **-2.7%** | ±2.3% | 🟢 |
-| Citigroup | C | Oct 13 | ±4.2% | -5.6% | ±4.1% | 🔴 1.3x |
-| ASML | ASML | Oct 14 | ±6.1% | -3.9% | ±5.8% | 🟢 |
-| TSMC | TSM | Oct 15 | ±4.3% | -1.8% | ±3.5% | 🟢 (-9.0% on the week) |
-| U.S. Bancorp / PNC | USB / PNC | Oct 15 | ±4.0% / ±4.1% | +2.0% / -0.4% | ±2.1% / ±1.7% | 🟢 |
-| J.B. Hunt | JBHT | Oct 15 | ±6.8% | -2.8% | ±7.2% | 🟢 |
-| ManpowerGroup | MAN | Oct 15 | *not computed* | -15.8% | ±10.9% | 🔴 1.5x its norm on an in-line print |
+| **Meta** | **META** | **Oct 21** | **±7.3%** | **-6.98%** | ±7.8% | 🟢 Inside, by 0.3 points |
+| **AT&T** | **T** | **Oct 21** | **±5.0%** | **-6.45%** | ±3.2% | 🔴 **1.3x what was priced; the competitor headline, not the print** |
+| **Netflix** | **NFLX** | **Oct 20** | **±9.5%** | **-5.31%** | ±6.4% | 🟢 |
+| **Tesla** | **TSLA** | **Oct 21** | **±7.4%** | **-3.08%** | ±5.4% | 🟢 The cheap straddle I flagged was still too big |
+| **Texas Instruments** | **TXN** | **Oct 21** | **±8.4%** | **-1.81%** | ±8.4% | 🟢 |
+| **Thermo Fisher** | **TMO** | **Oct 21** | ±6.2% | +0.97% | ±5.0% | 🟢 |
+| **Abbott** | **ABT** | **Oct 21** | ±5.5% | -1.89% | ±5.5% | 🟢 |
+| **Honeywell** | **HON** | **Oct 22** | ±5.1% | +1.67% | ±4.9% | 🟢 |
+| General Motors | GM | Oct 20 | ±6.3% | -6.84% | ±7.2% | 🔴 1.1x on an in-line print |
+| Lam Research | LRCX | Oct 21 | ±8.2% | -11.76% | ±6.5% | 🔴 1.4x on a +0.8% beat |
+| Procter & Gamble | PG | Oct 22 | ±3.7% | +5.58% | ±1.7% | 🔴 1.5x, upward |
+| GE / RTX / COF / UAL | GE / RTX / COF / UAL | Oct 20 | ±6.2% / ±5.1% / ±5.5% / ±7.1% | -3.67% / +0.64% / +2.53% / +3.99% | ±5.3% / ±4.7% / ±3.4% / ±4.1% | 🟢 |
+| ISRG / IBM / WDC | ISRG / IBM / WDC | Oct 20–22 | ±7.9% / ±7.7% / ±10.4% | -2.26% / +0.26% / -2.97% | ±6.7% / ±6.0% / ±7.5% | 🟢 |
 
-**Marky's Interpretation:** Fifteen straddles, and the stock stayed inside twelve. The average realized move was 2.5% against an average 4.8% priced: 53%, close to the week before (40%). So the call was right on the banks and wrong on the one I singled out: UNH, the only name priced under its norm, moved 0.2%. The three that broke out were JNJ, BAC and C, all down, all on the line items under the EPS line (talc charge, regulatory charge, a beat that exactly met the whisper). This week the pattern inverts in one place. TSLA is still priced under its realized history, its whisper is now below the street, and the stock fell 7.3% into the print. That is the setup where an option buyer is getting paid for being early, not for being right. The rest of the board says what it has said for three weeks: premium is rich, and next week's XOM (4.4x), MRK (2.9x), FCX and KLAC (2.2x) are the richest ratios this page has shown.
+**Marky's Interpretation:** Eighteen straddles; the stock stayed inside fourteen. Average realized move 3.8% against 6.8% priced: 56%, the third week in a row between 40% and 56%. I said TSLA's straddle was cheap; TSLA moved 3.1%. The four that broke out were T (a SpaceX headline), GM (an in-line print), LRCX (a small beat) and PG (up 5.6% on a staples rotation), and none of them was a large EPS surprise. The straddle is paying for headlines, not numbers. This week the call is MSFT: priced ±5.3% against a ±7.0% history, on FOMC afternoon, with the largest Big 7 whisper gap. That is the only tracked straddle on the board priced under its norm with usable open interest.
 
 ---
 
-## NOTABLE SURPRISES — SINCE THE LAST UPDATE (Oct 12 – Oct 16)
+## NOTABLE SURPRISES — SINCE THE LAST UPDATE (Oct 19 – Oct 23)
 
-> *EPS/price data via yfinance (`earnings_dates`, daily closes) and the Finviz earnings calendar for Oct 12–16 (63 rows, every listed reporter). Narrative cross-checked via WebSearch (SEC 8-K exhibits, RTTNews, Reuters via Capital.com and Kitco, Finviz, StockStory/Wedbush, Tradingpedia) for BAC, GS, JNJ, ERIC, MAN and the chip sell-off. The remaining rows are data only.*
+> *EPS/price data via the Finviz earnings calendar for Oct 19–23 (326 rows, every listed reporter; adjusted EPS, 1-day reaction) and yfinance `earnings_dates` for tracked names. Narrative cross-checked via WebSearch for META (company release, 10-Q, TheWrap, 247 Wall St) and SPCX (Teslarati, FMP, 247 Wall St). The NOK and BE causes were searched and not found; those rows are data only.*
 
 | Company | Ticker | Date | EPS Est | Reported | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|---|---|
-| **Ericsson** | **ERIC** | **Oct 15 (BMO)** | **$0.145** | **$0.178** | **+22.7%** | **+11.8% on the day** | 🚨 **ALERT-TRIGGERING (beat above 15%, move above 5%). Issue #170.** Net sales SEK 59.5B vs. about SEK 55.4B (LSEG); Networks +17% q/q, "well above normal seasonality" (Jefferies). Profit fell on a missing prior-year divestment gain; a simplified operating structure and a new Asia-Pacific market area from Jan 1, 2027. The largest single-day gain in nine months, in the week SMH fell 10.5%. NOK, its peer, fell 11.8% on the week. |
-| **ChronoScale** | **CHRN** | **Oct 15 (AMC)** | **-$0.11** | **-$0.18** | **-63.6%** | **-6.0% next session** | 🚨 **Alert arithmetic met, downward. Issue #170.** $2.2B market cap; revenue in line ($41.5M). A wider loss on flat revenue. |
-| **Goldman Sachs** | **GS** | **Oct 13 (BMO)** | **$13.09** | **$17.01** | **+30.0%** | **-0.2% on the day; -1.6% W/W to $881.26** | **The season's biggest tracked beat, unpaid.** Net revenue $18.68B (Finviz est. $16.83B, +11%); equities trading +72% to $6.44B; record advisory ($1.7B) and financing; $5.00 dividend. CET1 slipped to 12.4% and the backlog shrank (per one source). No alert: move under 5%. |
-| **Bank of America** | **BAC** | **Oct 14 (BMO)** | **$1.11** | **$0.91** | **-17.8%** | **-4.8% on the day; -5.7% W/W to $51.23** | **0.24 points from an alert.** Net income $6.9B including a $1.2B settlement with the OCC and FinCEN; about $1.08 adjusted, still a miss. Revenue $30.0B (+3%), NII +8% to $16.4B. Trading roughly $750M under estimates (#167). The first BAC miss in the 8-quarter window. |
-| **ManpowerGroup** | **MAN** | **Oct 15 (BMO)** | **$1.01** | **$1.01** | **0.0%** | **-15.8% on the day; -21.4% W/W to $41.49** | **The largest tracked-adjacent move of the week, on a zero surprise.** Revenue $4.84B vs. $4.85B; Q4 EPS guided $1.03–1.13 vs. $1.10; CEO Jonas Prising hands to Becky Frankiewicz Jan 1, 2027. A labor-demand read into a ±10.9% history. The alert rule cannot see it. |
-| **Johnson & Johnson** | **JNJ** | **Oct 13 (BMO)** | **$2.52** | **$2.59** | **+2.7%** | **-5.7% on the day; -2.2% W/W** | The largest JNJ drop in over 18 months. GAAP EPS $0.09 on a talc-resolution charge; MedTech $8.6B (+2.5%) vs. $8.71B (LSEG); Tremfya +68%. Raised the year to $11.05–11.15 and $101.0–101.4B. A beat-and-raise sold on the line below. |
-| **Travelers** | **TRV** | **Oct 16 (BMO)** | **$7.43** | **$9.18** | **+23.5%** | **+1.5%; +5.6% W/W** | A catastrophe quarter that wasn't. Beat above the line, move under it. |
-| **UnitedHealth** | **UNH** | **Oct 13 (BMO)** | **$4.14** | **$4.69** | **+13.3%** | **-0.2% on the day; +5.8% W/W to $401.43** | Beat the $4.60 whisper; GAAP $4.56 vs. $3.83. Paid over the week, not the day. |
-| **BlackRock** | **BLK** | **Oct 14 (BMO)** | **$14.30** | **$15.93** | **+11.4%** | **+0.7%; +4.8% W/W** | Revenue $7.75B vs. $7.42B (+4.5%). GAAP $10.57 vs. $13.53. |
-| **Truist** | **TFC** | **Oct 16 (BMO)** | **$1.21** | **$0.56** | **-53.8%** | **+1.1%** | A charge-driven miss the market looked through. Not checked for the cause. |
-| **Alcoa** | **AA** | **Oct 15 (AMC)** | **$1.51** | **$1.82** | **+20.2%** | **+2.5% next session** | Above the line, move under it. GAAP $1.81 vs. $1.80: the adjusted estimate was the outlier. |
-| **Citigroup** | **C** | **Oct 13 (BMO)** | **$2.62** | **$2.83** | **+8.0%** | **-5.6% on the day** | Printed the whisper to the cent ($2.84 EW) and fell. |
-| **ASML** | **ASML** | **Oct 14 (BMO)** | **$10.76** (Finviz $12.17) | **$11.82** (Finviz $14.40) | **+9.9% / +18.3%** | **-3.9%; -7.8% W/W** | ⚠️ Currency basis: the Finviz figures are USD per ADR, yfinance's are EUR. On the Finviz basis the surprise clears 15%; the move does not clear 5%. Revenue -1.3% vs. estimate. |
-| **TSMC** | **TSM** | **Oct 15 (BMO)** | **$4.52** | **$4.60** | **+1.7%** | **-1.8%; -9.0% W/W** | In line; the sell-off was not about TSM's number. |
-| **JPMorgan** | **JPM** | **Oct 13 (BMO)** | **$5.94** | **$5.75 / $5.57** ⚠️ | **-3.2% / -6.0%** | **-0.9%; +2.0% W/W** | A miss on fixed-income trading. yfinance and Finviz disagree on the reported figure by 18 cents; unresolved. |
-| Comtech | CMTL | Oct 14 (AMC) | -$0.51 | -$0.31 | +39.2% | +13.3% | Meets the alert rule arithmetically; $42M micro-cap with revenue 41% under estimate. Recorded in #170 for consistency. |
-| Sono-Tek | SOTK | Oct 14 (BMO) | $0.04 | $0.02 | -50.0% | -12.9% | Meets the rule arithmetically; $97M micro-cap. Recorded in #170. |
-| Nurix | NRIX | Oct 12 (AMC) | -$0.60 | $4.73 | n/m | -0.1% | A collaboration payment ($673M revenue); no signal. |
-| Winmark / Westamerica / BNY / Marsh | WINA / WABC / BNY / MRSH | Oct 14–15 | — | — | -0.6% / +4.7% / +3.2% / +3.1% | +5.5% / +3.8% / +3.2% / +4.6% | Small beats paid; BNY the best large-bank reaction of the week. |
+| **Meta Platforms** | **META** | **Oct 21 (AMC)** | **$5.46 (yf) / $6.54 (Finviz)** | **$3.83 GAAP** | **-29.9% / -41.4%** | **-6.98% next session; -9.40% W/W to $642.62** | 🚨 **ALERT-TRIGGERING on GAAP (miss above 15%, move above 5%). Issue opened this run.** A $9.89B G&A charge for the August settlement with 52 state AGs over teen mental-health litigation; ex-charge EPS about $7.40, which beat. Revenue $64.60B (+26%) vs. $63.34B; Q4 revenue guide $73–76B. Operating income $12.99B (-37%). The market sold the capex line (capex above operating cash flow, per #176), not the charge. |
+| **SpaceX** | **SPCX** | **Oct 20 (AMC)** | **$0.13** | **$0.35** | **+161.4%** | **+7.79% next session** | 🚨 **ALERT-TRIGGERING ($1.98T market cap).** Revenue $14.58B vs. $12.87B (+13%); "Super Intelligence" segment $7.6B; first quarterly profit as a public company. Q1 2027 revenue guide $33–37B. Reports of Tesla-combination talks (no agreement). The same company's tower-spectrum report sank T and TMUS the next day (#176). |
+| **Nokia** | **NOK** | **Oct 22 (BMO)** | **$0.070** | **$0.101** | **+43.8%** | **-14.81% on the day** | 🚨 **ALERT-TRIGGERING ($46B). Beat and fell 15%; GAAP $0.03 vs. $0.044 est. Cause not sourced.** One week after peer ERIC rose 11.8% on its beat (#170). |
+| **Bloom Energy** | **BE** | **Oct 22 (AMC)** | **$0.69** | **$0.94** | **+36.1%** | **-11.24% next session** | 🚨 **ALERT-TRIGGERING ($57B).** Revenue $1.24B vs. $1.07B (+15.4%). An AI-power name sold on a beat in the capex sell-off. Cause not sourced. |
+| **Hasbro** | **HAS** | **Oct 20 (BMO)** | **$1.86** | **$2.90** | **+56.2%** | **+11.20% on the day** | 🚨 **ALERT-TRIGGERING ($16.6B).** Revenue +8.1% vs. estimate. A clean beat, paid. |
+| **Cleveland-Cliffs** | **CLF** | **Oct 19 (BMO)** | **$0.21** | **$0.28** | **+30.9%** | **+16.34% on the day** | 🚨 **ALERT-TRIGGERING ($7.9B).** Revenue missed by 1.5%; the margin beat was paid. |
+| **TTM Technologies** | **TTMI** | **Oct 22 (BMO)** | **$1.25** | **$1.46** | **+16.5%** | **-27.67% on the day** | 🚨 **ALERT-TRIGGERING ($8.4B).** GAAP $0.79 missed; the biggest drop on a beat this week. |
+| **First Citizens** | **FCNCA** | **Oct 23 (BMO)** | **$46.18** | **$55.37** | **+19.9%** | **+8.15% on the day** | 🚨 **ALERT-TRIGGERING ($26.8B).** |
+| **Southwest Airlines** | **LUV** | **Oct 21 (AMC)** | **$0.57** | **$0.66** | **+15.6%** | **+5.39% next session** | 🚨 **ALERT-TRIGGERING ($20.4B), by the narrowest margin on both legs.** GAAP $0.55 missed. |
+| **Weatherford** | **WFRD** | **Oct 20 (AMC)** | **$1.33** | **$1.66** | **+24.6%** | **+7.75% next session** | 🚨 **ALERT-TRIGGERING ($6.3B).** Oil service with Brent at a war high (#175). |
+| **Kaiser Aluminum** | **KALU** | **Oct 21 (AMC)** | **$2.37** | **$1.89** | **-20.1%** | **-25.31% next session** | 🚨 **ALERT-TRIGGERING ($1.75B).** No corporate action (materials wiki). |
+| **American Express** | **AXP** | **Oct 23 (BMO)** | **$4.50** | **$5.42** | **+20.5%** | **-3.68% on the day** | **Beat by a fifth, sold.** Revenue $20.06B, slightly under. No alert: move under 5%. |
+| **Elevance / Capital One / RTX** | **ELV / COF / RTX** | **Oct 20–21** | **$4.71 / $5.53 / $1.78** | **$6.99 / $6.69 / $2.26** | **+48.3% / +21.0% / +27.0%** | **-1.37% / +2.53% / +0.64%** | Three large beats above 15%, none paid more than 2.5%. ELV is the managed-care read for CNC (Oct 27). |
+| **Deckers** | **DECK** | **Oct 22 (AMC)** | **$1.79** | **$2.31** | **+28.7%** | **-4.91% next session** | **0.09 points from an alert.** Revenue missed by 1.7%. |
+| **Lam Research** | **LRCX** | **Oct 21 (AMC)** | **$2.18** | **$2.20** | **+0.8%** | **-11.76% next session** | **The largest tracked-adjacent drop, on an in-line print**, after -17.2% the week before. The alert rule cannot see it. |
+| **General Motors** | **GM** | **Oct 20 (BMO)** | **$3.69** | **$3.70** | **+0.1%** | **-6.84% on the day** | In line and sold; TSLA rose on the week. |
+| **Carpenter / Robert Half** | **CRS / RHI** | **Oct 22** | **$3.04 / $0.47** | **$3.25 / $0.49** | **+6.9% / +4.8%** | **-20.62% / +21.74%** | Two 20% moves on single-digit surprises, opposite signs. |
+| **Procter & Gamble** | **PG** | **Oct 22 (BMO)** | **$1.88** | **$2.00** | **+6.2%** | **+5.58% on the day** | The staples rotation paid a +6% beat as much as HAS's +56%. |
+| **Netflix / AT&T** | **NFLX / T** | **Oct 20–21** | **$0.82 / $0.60** | **$0.87 / $0.65** | **+6.0% / +8.0%** | **-5.31% / -6.45%** | Both beat; both fell more than 5% on guidance (NFLX) and a competitor headline (T). #176. |
+| Small caps meeting the rule arithmetically | FLG / SLM / OII / MHO / SIGI / COCO / TCBI / EGBN / THRM / ASIC / CNOB / GRC / VFS | Oct 19–23 | — | — | -86% to +131% | -16.9% to +15.6% | Recorded in the alert issue for consistency; all under $7.5B. BDN, SLG and EPRT excluded (REIT FFO-vs-EPS basis). |
 
 ### The Key Lesson
 
-**The banks beat and were sold; the chips did not report and were sold harder.** Seven of nine tracked financial and healthcare names beat, eight of nine fell on the day, and the two that missed (JPM, BAC) bracketed the range: JPM up 2.0% on the week, BAC down 5.7%. The market was not grading the quarter. It was grading the September CPI, which landed between BAC's release and the open on Oct 14 and moved October hike odds to roughly half. SMH lost 10.5% and VIX rose 5 points without a single major US semi reporting. **One GitHub issue was opened this session (#170: ERIC upward, CHRN downward, CMTL and SOTK recorded as micro-cap arithmetic, BAC and MAN as the near-misses that mattered more)**, the ninth earnings alert in seven weeks after #101, #102, #107, #117, #128 and #160.
+**The quarter beat; the stocks were graded on what came next.** Seven of eight tracked reporters beat on an operating basis and six fell on the day. The two largest tracked drops (META -7.0%, T -6.5%) both beat their whispers. Outside the tracked list the pattern held: AXP (+20%), ELV (+48%), COF (+21%), RTX (+27%) all cleared 15% and none rose more than 2.5%; NOK (+44%), BE (+36%) and TTMI (+17%) fell 11–28%. The beats that were paid (HAS, CLF, FCNCA, SPCX, WFRD) had either a clean revenue beat or an oil tailwind. **One GitHub issue opened this run** (META on the GAAP arithmetic; SPCX, NOK, BE, HAS, CLF, TTMI, FCNCA, LUV, WFRD, KALU as clean hits; AXP and DECK as near-misses), the latest in a line of earnings alerts after #101, #102, #107, #117, #128, #160 and #170.
 
 ---
 
-## NOTABLE SURPRISES — PRIOR WEEKS (Aug 26 – Oct 9)
+## NOTABLE SURPRISES — PRIOR WEEKS (Aug 26 – Oct 16)
 
-> *Kept for continuity. Full tables: the 2026-10-11/12 commit of this file (Oct 5–9), the 2026-10-03 commit (Sep 28 – Oct 2), 96e64fd (Sep 21–25), the 2026-09-19 commit (Sep 14–18 + Sep 9–11 backfill) and b790c1d (Sep 7–11).*
+> *Kept for continuity. Full tables: the 2026-10-18 commit of this file (Oct 12–16), the 2026-10-11/12 commit (Oct 5–9), the 2026-10-03 commit (Sep 28 – Oct 2), 96e64fd (Sep 21–25), the 2026-09-19 commit (Sep 14–18 + Sep 9–11 backfill) and b790c1d (Sep 7–11).*
 
 | Company | Ticker | Date | Surprise | Stock Reaction | Council Lesson |
 |---|---|---|---|---|---|
-| **Penguin Solutions** | **PENG** | **Oct 6 (AMC)** | **+29.5%** | **+13.1% next session** | 🚨 Issue #160: paid on a guide a third above the street |
-| **Apogee** | **APOG** | **Oct 6 (BMO)** | **+84.3%** | **+12.2% on the day** | 🚨 Issue #160: FY27 guide raised |
-| **Lamb Weston** | **LW** | **Oct 6 (BMO)** | **+27.7%** | **+7.5% on the day** | 🚨 Issue #160: EBITDA outlook raised on a profit decline |
-| **AngioDynamics** | **ANGO** | **Oct 8 (BMO)** | **+64.7%** | **-20.9% on the day** | 🚨 Issue #160: sold on cash burn and a CEO change |
-| **Delta Air Lines** | **DAL** | **Oct 9 (BMO)** | **-2.1%** | **+0.04%** | Full-year guide cut 22%; the estimate cuts had done the selling |
-| **Levi Strauss** | **LEVI** | **Oct 7 (AMC)** | **+34.0%** | **-2.4% next session; -5.9% W/W** | Raised and sold three days running |
-| **AAR Corp** | **AIR** | **Sep 28 (AMC)** | **+15.5%** | **-7.2% next session** | 🚨 Issue #128: debt-funded deal |
-| **Jabil** | **JBL** | **Sep 30 (BMO)** | **+8.0%** | **-10.0% on the day** | Beat, raised, sold on capex and cash |
-| **Accenture** | **ACN** | **Oct 1 (BMO)** | **+3.4%** | **+15.8% on the day** | Bookings $22.2B |
-| **Nike** | **NKE** | **Oct 1 (AMC)** | **+9.9%** | **-3.6% next session** | FY27 guide well under the street; issue #125 |
-| **Micron** | **MU** | **Sep 30 (AMC)** | **+5.0%** | **+3.0% next session** | Already in the price (then -14.6% in the Oct 12–16 week, #165) |
+| **Ericsson** | **ERIC** | **Oct 15 (BMO)** | **+22.7%** | **+11.8% on the day** | 🚨 Issue #170: Networks +17% q/q (then NOK, beat +44%, fell 14.8% a week later) |
+| **ChronoScale** | **CHRN** | **Oct 15 (AMC)** | **-63.6%** | **-6.0% next session** | 🚨 Issue #170 |
+| **Goldman Sachs** | **GS** | **Oct 13 (BMO)** | **+30.0%** | **-0.2%** | The season's biggest tracked bank beat, unpaid |
+| **Bank of America** | **BAC** | **Oct 14 (BMO)** | **-17.8%** | **-4.8%** | $1.2B OCC/FinCEN charge; 0.24 points from an alert |
+| **ManpowerGroup** | **MAN** | **Oct 15 (BMO)** | **0.0%** | **-15.8%** | Guide and CEO change; invisible to the rule |
+| **Johnson & Johnson** | **JNJ** | **Oct 13 (BMO)** | **+2.7%** | **-5.7%** | Talc charge; MedTech miss |
+| **Penguin Solutions** | **PENG** | **Oct 6 (AMC)** | **+29.5%** | **+13.1% next session** | 🚨 Issue #160 |
+| **Apogee / Lamb Weston / AngioDynamics** | **APOG / LW / ANGO** | **Oct 6–8** | **+84.3% / +27.7% / +64.7%** | **+12.2% / +7.5% / -20.9%** | 🚨 Issue #160 |
+| **Levi Strauss** | **LEVI** | **Oct 7 (AMC)** | **+34.0%** | **-2.4%; -5.9% W/W** | Raised and sold |
+| **AAR Corp** | **AIR** | **Sep 28 (AMC)** | **+15.5%** | **-7.2% next session** | 🚨 Issue #128 |
+| **Accenture / Nike / Micron** | **ACN / NKE / MU** | **Sep 30 – Oct 1** | **+3.4% / +9.9% / +5.0%** | **+15.8% / -3.6% / +3.0%** | Bookings paid; guides sold (#125) |
 | **TD SYNNEX / Stitch Fix** | **SNX / SFIX** | **Sep 23–24** | **+20.8% / +84.9%** | **-9.9% / -21.6%** | 🚨 Issue #117 |
 | **Dave & Buster's** | **PLAY** | **Sep 14 (AMC)** | **-244.3%** | **-19.0%** | 🚨 Issue #107 |
 | **Braze / American Eagle** | **BRZE / AEO** | **Sep 8–9** | **+22.2% / +259.1%** | **-21.7% / -13.6% W/W** | 🚨 Issues #101, #102 |
-| **Broadcom** | **AVGO** | **Sep 2 (AMC)** | **+3.1%** | **-2.95% W/W** | First "beat and sold" |
-| **NVIDIA** | **NVDA** | **Aug 26 (AMC)** | **+6.2%** | **+8.74%** | The guide cleared the bar |
+| **Broadcom / NVIDIA** | **AVGO / NVDA** | **Aug 26 – Sep 2** | **+3.1% / +6.2%** | **-2.95% W/W / +8.74%** | First "beat and sold"; the guide that cleared the bar |
 
 ---
 
-## COUNCIL READ — Beats Sold, Chips Sold Without Reporting
+## COUNCIL READ — The Quarter Beat; the Capex Line Didn't
 
-**Ophelia:** *"The banks told us the consumer is fine and the market did not care. BAC's net interest income rose 8%, credit held, UNH beat its whisper and SCHW's clients kept trading, and eight of nine fell on the day because CPI printed 3.7% between BAC's release and the open. That is the regime, not the sector: the same week XLP rose 5%, XLE rose 5% on oil near $99 (#168, #169), and the 10Y fell 14 basis points. The money left growth for defensives and duration. This week the consumer reads come from TSLA, GM, NFLX and the airlines, with UAL and ALK each down more than 10% on fuel before they report. I would rather hear GM and UAL guide than read another bank beat."*
+**Ophelia:** *"META told us the advertising business is fine: revenue up 26%, a Q4 guide of $73–76 billion, and an operating quarter that would have printed about $7.40 a share without a $9.89 billion settlement. The stock fell 7% the next day and 9.4% on the week, and GOOGL fell 6% in sympathy without reporting. The market was not grading ad demand. It was grading capex against cash flow, and META's capex now runs above its operating cash flow (#176). This week MSFT, GOOGL and AMZN answer the same question, two hours and twenty-six hours after the Fed. Outside the hyperscalers, the consumer reads were mixed: HAS paid, GM and AXP were sold, SBUX and MCD come next with whispers above the street."*
 
-**Marky:** *"Two numbers for this week. TSLA: the whisper is below the street for the first time this season, the stock fell 7.3% into it, and the straddle is still under its realized norm. Every other signal on the page is priced for a miss except the options. META: it moved its print up a week to share an evening with TSLA and TXN, and the chip sell-off was blamed in part on a report that Meta may lease out AI capacity. META's capex guide on Wednesday is the first hyperscaler answer to the question that took $2 trillion off the SOX. On the option side, last week's straddles were too big in twelve of fifteen names, again; I was wrong on UNH and right on the banks. Next week's ratios (XOM 4.4x, MRK 2.9x, KLAC 2.2x) are the richest this page has shown, and they cover an FOMC."*
+**Marky:** *"Two numbers. MSFT: straddle ±5.3% against a ±7.0% realized history, the widest Big 7 whisper gap (+4.7%), and the print lands on FOMC afternoon. It is the only liquid tracked straddle priced under its norm. LLY: a whisper 22.5% over the Earnings Whispers consensus on a consensus that has read $5.38, $7.11, $6.67 and $5.70 in two weeks depending on source. I would not trade a whisper whose base moved 32% in a week; it gets the unconfirmed flag. On last week's options: fourteen of eighteen inside, 56% of priced moves realized, and the four breaks were headline moves (T, GM, LRCX, PG), not earnings surprises. I said TSLA's straddle was cheap. It moved 3.1%. I was wrong."*
 
-**Cecil:** *"Grading framework holds: forward line over EPS line. Process notes. (1) Alert #170 opened: ERIC is a clean hit; CHRN, CMTL and SOTK are arithmetic. The two most informative prints were not hits. BAC missed by 17.8% and fell 4.76%, a quarter of a point short; MAN printed in line and fell 15.8%. Same open question as #128 and #160: a two-session window, a market-cap floor, and a guide-cut or zero-surprise move clause. I would add a fourth: a 0.25-point tolerance band reported as 'near-miss', so BAC-type cases are recorded by rule and not by judgement. (2) Date fixes: META to Oct 21 (closed); KO to Oct 27; INTC to Oct 29; LIN basis closed. (3) TSLA basis closed: EW's $0.22 was GAAP; $0.44 non-GAAP agrees with yfinance's $0.45. (4) New basis flags: LLY ($7.11 yfinance vs. $5.38 EW), META's two yfinance figures ($6.76 vs. $5.70), JPM's reported figure ($5.75 yfinance vs. $5.57 Finviz), ASML's currency basis, and FITB, ETSY and RDDT calendar-vs-`earnings_dates` gaps. (5) JNJ's +15.8% whisper, flagged as unconfirmed last week, was 34 cents too high; the flag was correct, and I propose it becomes a rule (whisper more than 10% over consensus on a sub-2% mover = unconfirmed). (6) This run fired early Sunday ET rather than Saturday evening; data are Friday Oct 16 closes, Yahoo option chains as of that close, Earnings Whispers as of Sunday morning."*
+**Cecil:** *"Grading framework holds: forward line over EPS line. Process notes. (1) Alert opened this run: META is a GAAP-only hit (ex-charge it beat), so the issue says so. SPCX, NOK, BE, HAS, CLF, TTMI, FCNCA, LUV, WFRD and KALU are clean hits on Finviz adjusted EPS and 1-day reactions; thirteen sub-$7.5B names are recorded as arithmetic. That is the largest hit list this page has produced. The rule needs the clauses proposed in #128, #160 and #170: a market-cap floor, a GAAP-vs-adjusted basis note, and a near-miss band (DECK missed by 0.09 points this week, BAC by 0.24 the week before). (2) Basis flags: LLY (three consensus figures, EW moved from $5.38 to $7.11); LIN ($2.63 `earnings_dates` reopened); EOG listed twice in Finviz (Nov 5 AMC, Nov 6 BMO); XOM beat rate corrected to 7/8. (3) Closed: TSLA basis (non-GAAP $0.48 printed against the $0.44–0.45 consensus); META's three-consensus problem resolved itself on a GAAP charge none of them included. (4) The whisper scorecard after two weeks: the whisper was closer to the print than the street on 9 of 18 tracked names (3 of 10 banks and healthcare, 6 of 8 last week, counting META ex-charge), a coin flip with a better recent run. (5) This run fired Sunday morning ET instead of Saturday evening; data are Friday Oct 23 closes, Yahoo option chains as of that close, Earnings Whispers as of Sunday morning."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance 1.6.0 (`Ticker.get_earnings_dates`, `Ticker.calendar`, `download` daily closes through Fri 2026-10-16, `Ticker.option_chain` and `history` at the Oct 16 close): primary source for the 50 tracked names and 210 outside names (sector tracks 1–6 worked in order; about 75 outside names dated Oct 19–23 and about 85 Oct 26–30). Two symbols returned no data (MMC, HOLX). Option chains failed for LMT, V and MA. Beat rates, average moves (8 quarters, AMC/BMO-aware) and straddles computed from these pulls.
-- Finviz earnings calendar, Oct 12–16 (63 rows, adjusted and GAAP EPS, revenue, 1-day reaction): used for the alert scan and as the second source on reported EPS.
-- Earnings Whispers ticker pages, read 2026-10-18 via a page-summary tool (single source): [TSLA](https://www.earningswhispers.com/stocks/tsla), [NFLX](https://www.earningswhispers.com/stocks/nflx), [META](https://www.earningswhispers.com/stocks/meta), [TXN](https://www.earningswhispers.com/stocks/txn), [TMO](https://www.earningswhispers.com/stocks/tmo), [ABT](https://www.earningswhispers.com/stocks/abt), [T](https://www.earningswhispers.com/stocks/t), [HON](https://www.earningswhispers.com/stocks/hon), [MSFT](https://www.earningswhispers.com/stocks/msft), [GOOGL](https://www.earningswhispers.com/stocks/googl), [AMZN](https://www.earningswhispers.com/stocks/amzn), [AAPL](https://www.earningswhispers.com/stocks/aapl), [NVDA](https://www.earningswhispers.com/stocks/nvda), [VZ](https://www.earningswhispers.com/stocks/vz), [LLY](https://www.earningswhispers.com/stocks/lly), [CAT](https://www.earningswhispers.com/stocks/cat), [V](https://www.earningswhispers.com/stocks/v), [BA](https://www.earningswhispers.com/stocks/ba), [XOM](https://www.earningswhispers.com/stocks/xom), [MA](https://www.earningswhispers.com/stocks/ma).
-- WebSearch cross-checks (2026-10-18):
-  - BAC: [SEC 8-K exhibit](https://www.sec.gov/Archives/edgar/data/0000070858/000007085826000481/bac-09302026ex993.htm), [Quiver Quant](https://www.quiverquant.com/news/Bank+of+America+Reports+%246.9+Billion+Third-Quarter+Net+Income), [Grafa](https://grafa.com/en/news/united-states/bank-of-america-reports-q3-2026-earnings-after-regulatory-charge)
-  - GS: [SEC 8-K](https://www.sec.gov/Archives/edgar/data/0000886982/000088698226000529/a3q26gsearningsresults.htm), [RTTNews](https://www.rttnews.com/3698509/goldman-sachs-q3-net-profit-rises-33-update.aspx?type=ern), [Beinsure](https://beinsure.com/news/goldman-sachs-nyse-gs-stock-price-forecast-q3-earnings-beat-as-equities-jump-72/)
-  - JNJ: [RTTNews](https://www.rttnews.com/3698614/johnson-johnson-stock-falls-5-after-q3-profit-plunges.aspx), [Capital.com / Reuters](https://capital.com/en-int/news/johnson-johnson-eyes-biggest-drop-in-over-18-months), [Tradingpedia](https://www.tradingpedia.com/2026/10/13/litigation-soft-device-sales-pull-jj-shares-lower/)
-  - ERIC: [RTTNews](https://www.rttnews.com/3699316/ericsson-q3-profit-drops-sales-rise-simplifies-operating-structure-stock-gains.aspx), [Capital.com](https://capital.com/en-int/news/ericsson-tops-stoxx-600-after-q3-beat-well-above-normal)
-  - MAN: [Finviz](https://finviz.com/news/403159/manpowergroup-shares-fall-nearly-20-as-q3-revenue-misses-forecasts-and-q4-outlook-disappoints), [Wedbush / StockStory](https://investor.wedbush.com/wedbush/article/stockstory-2026-10-16-why-manpowergroup-man-stock-is-falling-today)
-  - META date: [Meta investor release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx)
-  - Chip sell-off: [Kitco / Reuters, Oct 15](https://www.kitco.com/news/off-the-wire/2026-10-15/us-chip-stocks-set-wipe-out-2-trillion-after-latest-selloff), [Stocktwits](https://stocktwits.com/news-articles/Markets/Equity/semiconductor-stocks-sox-losing-streak-2-trillion-ai-selloff/cZxKaOoRBsy), [ScanX (LRCX streak)](https://scanx.trade/stock-market-news/companies/lam-research-stock-falls-nine-straight-sessions-down-21-7/53639693), [Barchart (undated; Meta capacity-leasing report)](https://www.barchart.com/story/news/3105549/seagate-kulicke-and-soffa-and-lam-research-shares-plummet-what-you-need-to-know)
-- Intra-Council cross-checks: issues #165 (tech: XLK -7.7%, CPI), #167 (financials: BAC, JPM, HY OAS), #168 (staples), #169 (energy), #160 and #128 (prior alerts), #159 (regime).
+- yfinance 1.6.0 (`Ticker.get_earnings_dates`, `Ticker.calendar`, `download` daily closes through Fri 2026-10-23, `Ticker.option_chain` and `history` at the Oct 23 close): primary source for the 50 tracked names (sector tracks 1–6 worked in order) and 13 outside straddles. Beat rates, average moves (8 quarters, AMC/BMO-aware) and straddles computed from these pulls.
+- Finviz earnings calendar: Oct 19–23 (326 rows, adjusted and GAAP EPS, revenue, 1-day reaction) for the alert scan and as the second source on reported EPS; Oct 26–30 (680 rows) and Nov 2–6 (1,410 rows; read in two pulls) for outside names, dates and estimates.
+- Earnings Whispers ticker pages, read 2026-10-25 via a page-summary tool (single source; 21 checked, 17 whispers): [MSFT](https://www.earningswhispers.com/stocks/msft), [GOOGL](https://www.earningswhispers.com/stocks/googl), [AMZN](https://www.earningswhispers.com/stocks/amzn), [AAPL](https://www.earningswhispers.com/stocks/aapl), [NVDA](https://www.earningswhispers.com/stocks/nvda), [META](https://www.earningswhispers.com/stocks/meta), [LLY](https://www.earningswhispers.com/stocks/lly), [CAT](https://www.earningswhispers.com/stocks/cat), [BA](https://www.earningswhispers.com/stocks/ba), [VZ](https://www.earningswhispers.com/stocks/vz), [V](https://www.earningswhispers.com/stocks/v), [MA](https://www.earningswhispers.com/stocks/ma), [MRK](https://www.earningswhispers.com/stocks/mrk), [ABBV](https://www.earningswhispers.com/stocks/abbv), [XOM](https://www.earningswhispers.com/stocks/xom), [CVX](https://www.earningswhispers.com/stocks/cvx), [FCX](https://www.earningswhispers.com/stocks/fcx), [LIN](https://www.earningswhispers.com/stocks/lin), [SBUX](https://www.earningswhispers.com/stocks/sbux), [AMD](https://www.earningswhispers.com/stocks/amd), [QCOM](https://www.earningswhispers.com/stocks/qcom), [MCD](https://www.earningswhispers.com/stocks/mcd), [PFE](https://www.earningswhispers.com/stocks/pfe).
+- WebSearch cross-checks (2026-10-25):
+  - META: [SEC 10-Q](https://www.sec.gov/Archives/edgar/data/0001326801/000162828026066773/meta-20260930.htm), [Q3 release (PDF mirror)](https://static.poder360.com.br/uploads/2026/10/Meta-Meta-Reports-Third-Quarter-2026-Results.pdf), [TheWrap](https://www.thewrap.com/industry-news/business/meta-third-quarter-earnings-2026/), [247 Wall St](https://247wallst.com/cards/meta-q3-2026-earnings-meta-01m5g1awm0ef8g90sxmwd9b4kz)
+  - SPCX: [Teslarati](https://www.teslarati.com/spacex-spcx-delivers-blockbuster-q3-results-super-intelligence-booms/embed/), [FMP](https://site.financialmodelingprep.com/market-news/spacex-price-target-raised-after-q3-results), [247 Wall St](https://247wallst.com/investing/2026/10/20/live-will-spacex-crush-q3-earnings-tonight-after-shares-soared-35-following-last-quarters-report/)
+  - NOK, BE: searched; no Oct 22 coverage found. Causes not sourced.
+- Intra-Council cross-checks: issues #176 (comm services: NFLX guide, META, SpaceX tower report), #175 (energy), #177 (HY–IG canary), #170, #160, #128 (prior alerts); the Oct 24 sector wikis (materials: FCX, KALU; real estate: EQIX/DLR).
 - CBOE: options implied volatility and implied moves. ⚠️ Still no feed. Straddle stand-ins above need confirmation.
 - Bloomberg: whisper numbers, guidance tracking. ⚠️ No feed; needs external refresh.
-- Earnings Whispers: ⚠️ Partial fill from public ticker pages (20 names checked, 15 whispers); AAPL, NVDA, LLY, MA, XOM show none, and outside names were not checked.
+- Earnings Whispers: ⚠️ Partial fill from public ticker pages; NVDA, ABBV, MCD and PFE show none, and outside names were not checked.
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-10-18 (single-agent sequential run, no sub-agents; fired early Sunday ET; week ending Friday 2026-10-16 closes; covering This Week Oct 19-23 + Next Week Preview Oct 26-30)*
+*Last updated by Saturday Research Crew: 2026-10-25 (single-agent sequential run, no sub-agents; fired Sunday morning ET; week ending Friday 2026-10-23 closes; covering This Week Oct 26-30 + Next Week Preview Nov 2-6)*
 *Next update: Every Saturday evening ET*
-*Data sources: yfinance (primary, including option chains), Finviz earnings calendar (alert scan), Earnings Whispers public pages (15 whispers, single source), WebSearch (narrative cross-checks), CBOE / Bloomberg (no feed, flagged for external refresh)*
+*Data sources: yfinance (primary, including option chains), Finviz earnings calendar (alert scan, outside names), Earnings Whispers public pages (17 whispers, single source), WebSearch (narrative cross-checks), CBOE / Bloomberg (no feed, flagged for external refresh)*
