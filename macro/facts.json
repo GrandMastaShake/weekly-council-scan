@@ -1,7 +1,7 @@
 {
   "schema": "macro-facts/v1",
   "generated": "2026-10-25",
-  "generated_by": "Saturday Research Crew -- Canary Watch (single-agent run 2026-10-25 ~09:00 ET, late: scheduled Sat 2026-10-24 19:39 ET; week ending Fri 2026-10-23 closes)",
+  "generated_by": "Saturday Research Crew -- Canary Watch (single-agent run 2026-10-25 ~09:00 ET, late: scheduled Sat 2026-10-24 19:39 ET; week ending Fri 2026-10-23 closes); wti/gold rebuilt 2026-10-25 ~17:30 ET from data/market_state.json as_of 2026-10-23 (842a5ab) after the feed rolled -- stale flags cleared",
   "notes": "Canonical macro fact table. Wikis and reports CITE these values; they never restate their own macro numbers. Fields marked stale=true are last-known external-feed values -- treat as directional only. Canary Watch regenerates this file every Saturday from the same fetch that writes wiki/canary-watch.md.",
   "policy": {
     "fed_funds_range": {
@@ -94,18 +94,16 @@
       "tolerance_pct": 1
     },
     "wti": {
-      "value": 101.41,
-      "as_of": "2026-10-16",
-      "source": "yahoo:CLX26.NYM",
-      "tolerance_pct": 3,
-      "stale": true
+      "value": 103.27,
+      "as_of": "2026-10-23",
+      "source": "yahoo:CLZ26.NYM",
+      "tolerance_pct": 3
     },
     "gold": {
-      "value": 4159.5,
-      "as_of": "2026-10-16",
+      "value": 3991.1,
+      "as_of": "2026-10-23",
       "source": "yahoo:GCV26.CMX",
-      "tolerance_pct": 2,
-      "stale": true
+      "tolerance_pct": 2
     },
     "copper": {
       "value": 6.5075,
