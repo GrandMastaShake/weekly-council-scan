@@ -1,0 +1,72 @@
+week: '2026-10-26'
+lock: 2026-10-26 08:50 ET
+entry_date: '2026-10-26'
+exit_date: '2026-10-30'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 762.25
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.8
+  cash_weight: 0.2
+  picks:
+  - ticker: UNH
+    weight: 0.2
+    entry_price: 418.99
+    entry_price_source: open
+  - ticker: LMT
+    weight: 0.15
+    entry_price: 613.37
+    entry_price_source: open
+  - ticker: SLB
+    weight: 0.15
+    entry_price: 52.32
+    entry_price_source: open
+  - ticker: MSFT
+    weight: 0.15
+    entry_price: 527.41
+    entry_price_source: open
+  - ticker: GEF
+    weight: 0.15
+    entry_price: 82.63
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 0.9
+  cash_weight: 0.1
+  picks:
+  - ticker: AAPL
+    weight: 0.15
+    entry_price: 343.9
+    entry_price_source: open
+  - ticker: DT
+    weight: 0.15
+    entry_price: 64.05
+    entry_price_source: open
+  - ticker: GTLB
+    weight: 0.1
+    entry_price: 56.3
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.15
+    entry_price: 146.88
+    entry_price_source: open
+  - ticker: SPY
+    weight: 0.15
+    entry_price: 762.25
+    entry_price_source: open
+  - ticker: TSLA
+    weight: 0.1
+    entry_price: 383.9725
+    entry_price_source: open
+  - ticker: VIXY
+    weight: 0.1
+    entry_price: 17.55
+    entry_price_source: close_open_rejected
+    open_rejected:
+      open: 17.65
+      high: 17.635
+      low: 17.43
