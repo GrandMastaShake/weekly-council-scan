@@ -2,11 +2,13 @@ week: '2026-10-19'
 lock: 2026-10-19 08:50 ET
 entry_date: '2026-10-19'
 exit_date: '2026-10-23'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 767.23
   entry_price_source: open
+  exit_price: 759.97
+  return_pct: -0.95
 players:
 - player: GrandMastaShake
   valid: true
@@ -17,30 +19,46 @@ players:
     weight: 0.15
     entry_price: 399.69
     entry_price_source: open
+    exit_price: 418.09
+    return_pct: 4.6
   - ticker: XLE
     weight: 0.15
     entry_price: 67.95
     entry_price_source: open
+    exit_price: 69.33
+    return_pct: 2.03
   - ticker: XLV
     weight: 0.1
     entry_price: 175.72
     entry_price_source: open
+    exit_price: 179.28
+    return_pct: 2.03
   - ticker: XLU
     weight: 0.1
     entry_price: 42.13
     entry_price_source: open
+    exit_price: 42.56
+    return_pct: 1.02
   - ticker: VST
     weight: 0.1
     entry_price: 154.1
     entry_price_source: open
+    exit_price: 140.16
+    return_pct: -9.05
   - ticker: TMUS
     weight: 0.1
     entry_price: 158.77
     entry_price_source: open
+    exit_price: 146.54
+    return_pct: -7.7
   - ticker: AMZN
     weight: 0.1
-    entry_price: 255.34
+    entry_price: 255.25
     entry_price_source: open
+    exit_price: 248.0
+    return_pct: -2.84
+  weekly_return_pct: -0.66
+  alpha_vs_spy_pct: 0.29
 - player: Umassalum
   valid: true
   total_weight: 1.0
@@ -48,37 +66,51 @@ players:
   picks:
   - ticker: MSFT
     weight: 0.15
-    entry_price: 528.74
+    entry_price: 528.7
     entry_price_source: open
+    exit_price: 524.51
+    return_pct: -0.79
   - ticker: AAPL
     weight: 0.05
-    entry_price: 340.975
+    entry_price: 340.78
     entry_price_source: open
+    exit_price: 347.73
+    return_pct: 2.04
   - ticker: META
     weight: 0.2
-    entry_price: 707.06
+    entry_price: 707.16
     entry_price_source: open
+    exit_price: 642.62
+    return_pct: -9.13
   - ticker: DT
     weight: 0.15
     entry_price: 61.54
     entry_price_source: open
+    exit_price: 64.05
+    return_pct: 4.08
   - ticker: IBIT
     weight: 0.1
     entry_price: 46.63
     entry_price_source: open
+    exit_price: 45.96
+    return_pct: -1.44
   - ticker: XLK
     weight: 0.1
-    entry_price: 185.96
-    entry_price_source: close_open_rejected
-    open_rejected:
-      open: 186.99
-      high: 186.82
-      low: 185.61
+    entry_price: 186.99
+    entry_price_source: open
+    exit_price: 183.23
+    return_pct: -2.01
   - ticker: SPY
     weight: 0.15
     entry_price: 767.23
     entry_price_source: open
+    exit_price: 759.97
+    return_pct: -0.95
   - ticker: SPCX
     weight: 0.1
-    entry_price: 149.2501
+    entry_price: 149.23
     entry_price_source: open
+    exit_price: 147.49
+    return_pct: -1.17
+  weekly_return_pct: -1.84
+  alpha_vs_spy_pct: -0.89

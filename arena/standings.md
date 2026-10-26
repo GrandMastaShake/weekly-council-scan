@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 10 | +0.04% | -0.06% | 5-5 | +3.40% (2026-09-21) |
-| Umassalum | 8 | -0.74% | -1.07% | 6-2 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 11 | -1.17% | -1.44% | -- | +0.41% (2026-09-21) |
+| GrandMastaShake | 11 | -0.02% | -0.03% | 5-6 | +3.40% (2026-09-21) |
+| Umassalum | 9 | -0.86% | -1.05% | 6-3 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 12 | -0.90% | -1.06% | -- | +2.12% (2026-10-19) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-10-19 | GrandMastaShake | -0.66% | +0.29% | +2.12% | 🏆 The Council |
+| 2026-10-19 | Umassalum | -1.84% | -0.89% | +2.12% | 🏆 The Council |
 | 2026-10-12 | GrandMastaShake | -0.48% | +1.51% | -5.16% | 🏆 GrandMastaShake |
 | 2026-10-12 | Umassalum | -2.00% | -0.01% | -5.16% | 🏆 GrandMastaShake |
 | 2026-10-05 | GrandMastaShake | -1.67% | -2.82% | -1.36% | 🏆 The Council |
@@ -61,6 +63,6 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 **Basis note (2026-10-12, closed 2026-10-19):** all three books are on the same basis: Monday 2026-10-12 opens -> Friday 2026-10-16 close (Arena SPY $778.78 -> $763.25, -1.99%; the Tracker's SPY window is identical). **GrandMastaShake -0.48%, alpha +1.51%** (COP +7.72%, KO +6.20%, ULTA +4.38%, V +4.36%, MTCH +3.92% carried; TSLA -7.29% on a 30% weight and AMZN -4.76% cost; fully invested) -- **wins the week** and beats the Council head-to-head (5-5). **Umassalum -2.00%, alpha -0.01%** (VEEV +4.66% the only green; RDVT -6.68%, HNGE -3.06%, INSP -1.71%, GLD -0.16%; fully invested) -- beats the Council head-to-head (6-2). **The Council -5.16%, alpha -3.17%** (FTNT -14.03%, ZS -12.17%, JCI -7.33%, BIIB -0.57%, HCA +1.83%; 20.0% cash) -- its worst week on record; both players beat it for the first time since 2026-09-21. The close run re-fetched the settled Monday bars: KO's open, which the lock-time guard rejected (the live bar's open printed under its own low, so the lock booked the last trade $88.665), was accepted from the settled bar at $88.42; AMZN moved from $262.545 to $262.50; the order of the three books is the same on either basis. The common thread was the AI-funding selloff (XLK -7.7%, SMH -10.5%): the Council's two cybersecurity names and the players' AMZN and TSLA were the damage, and the defensives (KO, COP, V, ULTA) the carry.
 
-**Open week (2026-10-19):** entry set pinned from #163 by comment timestamps (rule: created AND last edited before 2026-10-19T12:50:00Z). Two players locked in, both comments created and unedited before the lock: **GrandMastaShake** UNH 15% / XLE 15% / XLV 10% / XLU 10% / VST 10% / TMUS 10% / AMZN 10%, 80% invested (20% cash); **Umassalum** MSFT 15% / AAPL 5% / META 20% / DT 15% / IBIT 10% / XLK 10% / SPY 15% / SPCX 10%, fully invested. **The Council is in:** VICI 20.8% / MNST 18.7% / COST 15.8% / BIIB 15.2% / AES 13.2% + 16.3% cash (report published after the lock). Entry prices will be the validated Monday 2026-10-19 opens, recorded in arena/2026-10-19.yaml by the post-open booking task. The Council's book is published in reports/2026-10-19-report.md.
+**Basis note (2026-10-19, closed 2026-10-26):** all three books are on the same basis: Monday 2026-10-19 opens -> Friday 2026-10-23 close (Arena SPY $767.23 -> $759.97, -0.95%; the Tracker's SPY window is identical). **The Council +2.12%, alpha +3.07%** (BIIB +8.14%, COST +1.76%, MNST +1.67%, VICI +1.19%, AES +0.33%; 16.3% cash) -- **wins the week, its fourth Council week win and its best week on record,** the first 5-for-5 hit rate, and beats both players head-to-head (GrandMastaShake 5-6, Umassalum 6-3). **GrandMastaShake -0.66%, alpha +0.29%** (UNH +4.60%, XLE +2.03%, XLV +2.03%, XLU +1.02% carried; VST -9.05%, TMUS -7.70%, AMZN -2.84% cost; 20% cash) -- beats SPY, loses to the Council. **Umassalum -1.84%, alpha -0.89%** (DT +4.08%, AAPL +2.04% the greens; META -9.13% on a 20% weight after the print, XLK -2.01%, IBIT -1.44%, SPCX -1.17%, SPY -0.95%, MSFT -0.79%; fully invested). The close run re-fetched the settled Monday bars: XLK's open, which the lock-time guard rejected (the live bar's open $186.99 printed above its own high, so the lock booked the last trade $185.96), was accepted from the settled bar at $186.99; AMZN moved from $255.34 to $255.25, MSFT $528.74 -> $528.70, AAPL $340.975 -> $340.78, META $707.06 -> $707.16, SPCX $149.2501 -> $149.23; the order of the three books is the same on either basis. The common thread: the defensive rotation the Council's book was built on (staples, healthcare, a REIT, a utility) paid, while the two player books carried the week's two post-earnings breaks (META -9% on the $9.9B charge; TMUS/VST on the carrier and power selloffs).
 
 *May the best thesis win.* 🏛️
