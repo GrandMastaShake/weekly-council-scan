@@ -180,6 +180,7 @@ def nothing_in_the_repo(tmp_path, monkeypatch):
     monkeypatch.setattr(tk, "PORTFOLIO_DIR", book)
     monkeypatch.setattr(tk, "CURRENT_PATH", book / "current.yaml")
     monkeypatch.setattr(tk, "HISTORY_DIR", book / "history")
+    monkeypatch.setattr(tk, "RESTATEMENTS_DIR", book / "restatements")
     monkeypatch.setattr(tk, "METRICS_PATH", book / "metrics.json")
     monkeypatch.setattr(tk, "SCORECARDS_DIR", tmp_path / "scorecards")
     monkeypatch.setattr(tk, "SCOREBOARD_PATH", tmp_path / "scoreboard.md")

@@ -1,19 +1,19 @@
 {
   "total_weeks": 12,
-  "avg_weekly_return": -1.21,
-  "avg_spy_return": 0.05,
-  "avg_alpha": -1.26,
+  "avg_weekly_return": -1.26,
+  "avg_spy_return": 0.13,
+  "avg_alpha": -1.39,
   "hit_rate": 0.35,
   "sharpe_4w": -6.69,
-  "max_drawdown": 13.76,
+  "max_drawdown": 14.22,
   "agent_summary": {
     "Marky": {
-      "avg_return": -1.66,
+      "avg_return": -1.73,
       "hit_rate": 0.27,
       "total_picks": 15
     },
     "Cecil": {
-      "avg_return": -0.67,
+      "avg_return": -0.78,
       "hit_rate": 0.42,
       "total_picks": 19
     },
@@ -23,5 +23,5 @@
       "total_picks": 12
     }
   },
-  "last_updated": "2026-10-19 09:41:16"
+  "last_updated": "2026-10-26 05:06:28"
 }

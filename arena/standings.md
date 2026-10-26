@@ -6,9 +6,9 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 10 | +0.04% | -0.06% | 5-5 | +3.40% (2026-09-21) |
+| GrandMastaShake | 10 | +0.04% | -0.06% | 6-4 | +3.40% (2026-09-21) |
 | Umassalum | 8 | -0.74% | -1.07% | 6-2 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 11 | -1.17% | -1.44% | -- | +0.41% (2026-09-21) |
+| 🏛️ The Council | 11 | -1.21% | -1.58% | -- | +0.41% (2026-09-21) |
 
 ## Weekly Results
 
@@ -22,7 +22,7 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 | 2026-09-28 | GrandMastaShake | -2.18% | -2.35% | -1.15% | 🏆 Umassalum |
 | 2026-09-21 | GrandMastaShake | +3.40% | +2.73% | +0.41% | 🏆 GrandMastaShake |
 | 2026-09-21 | Umassalum | -3.48% | -4.15% | +0.41% | 🏆 GrandMastaShake |
-| 2026-09-14 | GrandMastaShake | -0.16% | -0.76% | +0.23% | 🏆 The Council |
+| 2026-09-14 | GrandMastaShake | -0.16% | -0.76% | -0.31% (restated, #112; recorded +0.23%) | 🏆 GrandMastaShake |
 | 2026-08-31 | Umassalum | +0.82% | +0.45% | -0.04% | 🏆 Umassalum |
 | 2026-08-31 | GrandMastaShake | -1.94% | -2.31% | -0.04% | 🏆 The Council |
 | 2026-08-24 | GrandMastaShake | -1.22% | -1.82% | +0.05% | 🏆 The Council |
@@ -44,6 +44,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 **Basis note (2026-08-03):** player alpha uses the Arena SPY basis (Mon open $749.44 -> Fri close $773.26, +3.18%). The Council's return/alpha come from the Tracker's own basis (SPY +2.72% that week; Council -1.03%, alpha -3.75%). Both books are Monday-entry -> Friday-close.
 
 **Basis note (2026-07-27):** player alpha uses the Arena SPY basis (Mon open 744.91 -> Fri close 747.03, +0.28%). The Council's return/alpha come from the Tracker's own basis (SPY +0.71% that week). Both books are Monday-entry -> Friday-close.
+
+**Restatement (2026-09-14, restated 2026-10-26, #112):** the Council's week is restated onto the basis both players were scored on: Monday 2026-09-14 open -> Friday 2026-09-18 close, total return. **The Council -0.31%, alpha -0.92%** (ALL -2.44%, PSX +3.81%, HIG -4.49%, DE +1.62%; SPY +0.60%), where it was recorded +0.23% / alpha +0.57% from Friday 2026-09-11's close with SPY price-only. **GrandMastaShake (-0.16%) wins the week** and the head-to-head goes to 6-4; the Council's "second week win" below is withdrawn, so the 2026-10-05 win is its second, not its third. The Council's all-time averages are recomputed from the eleven weekly rows above: -1.21% and alpha -1.58% (the row read -1.17% before, where its rows gave -1.16%). The tracker's closed file `portfolio/history/2026-09-14.yaml` is left as written; `portfolio/restatements/2026-09-14.yaml` carries the restated figures and the metrics read it. The note below is kept as it was written.
 
 **Basis note (2026-09-14, closed 2026-09-21):** player alpha uses the Arena SPY basis (Mon open $757.12 -> Fri close $761.69, +0.60%, dividend-adjusted -- SPY went ex-div 9/18). GrandMastaShake -0.16% (XOM -3.06%, CBOE -4.27% did the damage; TSM +4.77% and DDOG +2.18% carried), alpha -0.76%. The Council's +0.23% / alpha +0.57% is on the Tracker's own basis (Fri 2026-09-11 close -> Fri 2026-09-18 close, SPY -0.34%), so the head-to-head carries the basis caveat below; on a same-window Mon-close basis the Council book was -0.14% (shadow-book.md), which still beats -0.16% by 2bp. **Second Council week win.** The close run re-fetched the settled Monday bars: every open passed low <= open <= high, so the closed yaml uses validated Monday opens in place of the ~09:42 ET live prices recorded at lock (locked-basis result -0.90% vs SPY +0.35%; both are recorded in arena/2026-09-14.yaml).
 
