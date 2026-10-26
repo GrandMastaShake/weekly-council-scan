@@ -1,0 +1,91 @@
+week: '2026-10-26'
+status: open
+positions:
+- ticker: ALL
+  weight: 0.205
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 254.99000549316406
+  entry_date: '2026-10-26'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: COST
+  weight: 0.19
+  sponsor: Marky
+  thesis: ''
+  entry_price: 1001.3200073242188
+  entry_date: '2026-10-26'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: MNST
+  weight: 0.155
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 46.06999969482422
+  entry_date: '2026-10-26'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AIG
+  weight: 0.15
+  sponsor: Marky
+  thesis: ''
+  entry_price: 81.63999938964844
+  entry_date: '2026-10-26'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: PGR
+  weight: 0.124
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 228.6699981689453
+  entry_date: '2026-10-26'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 762.25
+spy_entry_source: open
+vix_at_entry: 19.45
+fed_stance: Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0 vote;
+  16 of 18 dots see another 2026 hike); the September minutes (released Oct 7) say
+  most participants see another hike as likely appropriate by year-end; the Fed is
+  in blackout into the Oct 27-28 meeting, where a hold is priced (CME October hike
+  ~10%, December ~84%; 94 of 100 economists in the Reuters poll see a hold) -- a hiking
+  cycle on pause, not ended; Wednesday's statement language on December is the week's
+  policy event (macro/facts.json policy.fed_stance = "Hike", policy.next_macro_gate;
+  wiki/economic-calendar.md).
+total_weight: 0.824
+cash_weight: 0.17600000000000005
