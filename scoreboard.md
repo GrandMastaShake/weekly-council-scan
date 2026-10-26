@@ -244,7 +244,7 @@ If any rule triggers, note it in the scorecard header.
 | 2026-09-28 | B- (2.80 -- analysis quality) | TBD (week open) | Cecil (3.28 rolling -- on the record; no pick booked this week, all three trigger-blocked) | Ophelia (confidence 72-79 outran her own named doubt -- HY OAS 270->280 -- on a 50% sleeve; Cecil's duration flag CONFIRMED, carried) | AAPL (B) | META (B-) | 20.0% |
 | 2026-09-21 | 0.41% | 33% | TBD | TBD | AMD (8.00%) | HIG (-5.66%) | 47.8% |
 | 2026-09-21 | B (3.00 -- analysis quality) | TBD (week open) | Ophelia (3.30 rolling, tie with Cecil broken by AMD B+; thesis/ticker match restored) | Cecil (value screen may be pricing duration as cheapness; HIG's intact trigger did not measure the risk that hurt it) | AMD (B+) | HIG (B-) | 47.8% |
-| 2026-09-14 | +0.23% (Tracker P&L) | 50% | TBD | TBD | PSX (+5.26%) | HIG (-3.28%) | 40.2% |
+| 2026-09-14 | -0.31% (Tracker P&L, restated #112; recorded +0.23%) | 50% | TBD | TBD | PSX (+3.81%) | HIG (-4.49%) | 40.2% |
 | 2026-09-14 | B (3.13 -- analysis quality) | TBD (week open) | Cecil (3.42 -- LEAD, only agent to build independent invalidations) | Ophelia (REVISED: thesis/ticker mismatch -- scarcity thesis, regulated utilities; prior confidence-calibration flag RESOLVED) | ALL (A-) | DE (C+) | 40.2% |
 | 2026-09-08 | +0.08% (Tracker P&L) | 50% | TBD | TBD | ETN (+1.01%) | LMT (-0.39%) | 73.4% |
 | 2026-09-08 | B+ (3.35 -- analysis quality) | TBD (week open) | Marky (3.55 holds -- no book x4) | Ophelia (CEG/VST proposed at unchanged conviction despite stated durability doubt) | LMT (A-) | ETN (B) | 73.4% |

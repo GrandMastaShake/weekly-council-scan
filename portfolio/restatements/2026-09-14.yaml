@@ -1,0 +1,53 @@
+# Restatement of portfolio/history/2026-09-14.yaml (issue #112).
+#
+# The history file stays as the tracker wrote it. calculate_metrics() reads
+# this file in its place for the fields below; nothing else is changed.
+#
+# Recorded: entry at Friday 2026-09-11's close (the #105 reprice/revert put
+# it there), SPY price-only across its 9/18 ex-dividend date. That credited
+# the Council with the Friday->Monday gap and with SPY's dividend.
+#
+# Restated: the basis every other week is on, the Arena's and the tracker's
+# since 2eeed42: date-pinned Monday 2026-09-14 open -> Friday 2026-09-18
+# close, both ends from one dividend-adjusted download (total return).
+# Figures are the independent recomputation in #112, which reproduces the
+# recorded Friday-basis returns of all four names exactly (-1.53 / +5.26 /
+# -3.28 / +1.22) and the Arena log's SPY +0.60% exactly
+# (arena/2026-09-14.yaml: 757.1199 -> 761.69).
+#
+# Every position keeps its sign, so the hit rate and each sponsor's hit
+# count are unchanged; the Council engines read the history files for those
+# counts and are not affected.
+week: '2026-09-14'
+corrects: portfolio/history/2026-09-14.yaml
+reason: >-
+  Issue #112: entry was backdated to the Friday 2026-09-11 close and SPY was
+  scored price-only across its 2026-09-18 ex-dividend date. Restated on the
+  Monday 2026-09-14 open -> Friday 2026-09-18 close total-return basis.
+restated_on: '2026-10-26'
+basis: monday_open_to_friday_close_total_return
+positions:
+- ticker: ALL
+  sponsor: Cecil
+  pnl_pct: -2.44
+  recorded_pnl_pct: -1.53
+- ticker: PSX
+  sponsor: Marky
+  pnl_pct: 3.81
+  recorded_pnl_pct: 5.26
+- ticker: HIG
+  sponsor: Cecil
+  pnl_pct: -4.49
+  recorded_pnl_pct: -3.28
+- ticker: DE
+  sponsor: Marky
+  pnl_pct: 1.62
+  recorded_pnl_pct: 1.22
+weighted_return: -0.31
+spy_return: 0.6
+alpha: -0.92
+hit_rate: 0.5
+recorded:
+  weighted_return: 0.23
+  spy_return: -0.34
+  alpha: 0.57

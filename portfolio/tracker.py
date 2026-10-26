@@ -38,6 +38,7 @@ import yaml
 REPO_ROOT = Path(__file__).parent.parent
 PORTFOLIO_DIR = REPO_ROOT / "portfolio"
 HISTORY_DIR = PORTFOLIO_DIR / "history"
+RESTATEMENTS_DIR = PORTFOLIO_DIR / "restatements"
 REPORTS_DIR = REPO_ROOT / "reports"
 SCORECARDS_DIR = REPO_ROOT / "scorecards"
 SCOREBOARD_PATH = REPO_ROOT / "scoreboard.md"
@@ -639,16 +640,76 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
 
 # --- Metrics ---
 
+# RESTATEMENTS (#112). A closed week is never rewritten: history/<week>.yaml
+# stays as the tracker wrote it. When a week was scored on the wrong basis,
+# restatements/<week>.yaml carries the corrected figures beside it, with
+# `corrects` and `reason`, and the metrics read it in the week's place. It
+# lives in its own directory because several readers glob history/*.yaml
+# (scan_pipeline's accuracy feed among them) and would count a second file
+# there as a second week.
+#
+# A restatement may change the week's weighted_return, spy_return, alpha
+# and hit_rate, and each position's pnl_pct. It may not add, drop or rename
+# a position: one that does not name exactly the base's tickers is refused.
+RESTATED_WEEK_FIELDS = ("weighted_return", "spy_return", "alpha", "hit_rate")
+
+
+class RestatementMismatch(Exception):
+    """A restatement that does not fit the week it says it restates."""
+
+
+def apply_restatement(base: Dict, restatement: Dict) -> Dict:
+    """The week as restated: a copy of base with the restatement's figures."""
+    week = base.get("week")
+    if str(restatement.get("week")) != str(week):
+        raise RestatementMismatch(
+            f"restatement is for week {restatement.get('week')}, not {week}")
+    if not restatement.get("reason"):
+        raise RestatementMismatch(f"restatement of {week} gives no reason")
+    base_tickers = [p.get("ticker") for p in base.get("positions") or []]
+    restated = {p.get("ticker"): p for p in restatement.get("positions") or []}
+    if sorted(base_tickers) != sorted(restated):
+        raise RestatementMismatch(
+            f"restatement of {week} names {sorted(restated)}, "
+            f"the week holds {sorted(base_tickers)}")
+
+    week_data = dict(base)
+    for field in RESTATED_WEEK_FIELDS:
+        if field in restatement:
+            week_data[field] = restatement[field]
+    week_data["positions"] = []
+    for pos in base.get("positions") or []:
+        pos = dict(pos)
+        pos["pnl_pct"] = restated[pos.get("ticker")]["pnl_pct"]
+        week_data["positions"].append(pos)
+    week_data["restated"] = restatement.get("reason")
+    return week_data
+
+
+def load_history_weeks() -> List[Dict]:
+    """Every closed week in order, each from its restatement where it has one."""
+    weeks = []
+    for hf in sorted(HISTORY_DIR.glob("*.yaml")):
+        with open(hf, "r", encoding="utf-8") as f:
+            week_data = yaml.safe_load(f)
+        rf = RESTATEMENTS_DIR / hf.name
+        if rf.exists():
+            with open(rf, "r", encoding="utf-8") as f:
+                week_data = apply_restatement(week_data, yaml.safe_load(f))
+        weeks.append(week_data)
+    if RESTATEMENTS_DIR.is_dir():
+        for rf in sorted(RESTATEMENTS_DIR.glob("*.yaml")):
+            if not (HISTORY_DIR / rf.name).exists():
+                raise RestatementMismatch(
+                    f"{rf.name} restates a week that has no history file")
+    return weeks
+
+
 def calculate_metrics() -> Dict:
     """Calculate rolling metrics from history."""
-    history_files = sorted(HISTORY_DIR.glob("*.yaml"))
-    if not history_files:
+    weeks = load_history_weeks()
+    if not weeks:
         return {}
-
-    weeks = []
-    for hf in history_files:
-        with open(hf, "r", encoding="utf-8") as f:
-            weeks.append(yaml.safe_load(f))
 
     returns = [w.get("weighted_return", 0) or 0 for w in weeks]
     spy_returns = [w.get("spy_return", 0) or 0 for w in weeks if w.get("spy_return") is not None]
