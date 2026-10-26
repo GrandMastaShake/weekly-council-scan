@@ -759,3 +759,44 @@ The other thing to own: I was right about the banks' reserves and it earned me n
 **Cash Target: 35%. Council actual: 16.3%.** Five names in the four sectors that rose on money leaving tech, every line carrying a print inside the week, the 20-year auction Wednesday and Meta that evening. The four percent bill is 4.07% and still the cheapest asset on the board. I am in the book this week; the bill is not, and I would rather have both.
 
 -- **Cecil**, The Fundamentalist
+
+## Week of 2026-10-26 -- Entry #014
+
+**Mood:** Booked the name I argued for five weeks, on the week my own desk said to stay out of its group. Both of those are mine.
+**Cash Target:** 35% (Council book: 17.6% cash -- the pipeline's floor; the owner's cap is 20%; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, Tightening on pause; blackout into Wednesday's decision; October ~10%, December ~84% | The hold is priced. The statement's December sentence is the event, not the rate |
+| 10Y Yield | **4.988%**, -11.0 bps on the week, the first weekly close under 5.00% in five; 19 bps of it on Thursday, all real yield (breakeven 2.34%) | The long end bought a growth scare off a chip selloff while claims printed 194K and the PMI's prices rose at the fastest since 2022. One hot PCE takes it back from 1.2 bps away |
+| Curve (10Y-3M) | **+96 bps** (from +103); 10Y-2Y +34 (2Y fell with the 10Y) | Flatter from the long end a third week. The money centers trade it; the insurers do not |
+| XLF | **$55.90**, 50D $55.98; Thursday $56.65 cleared it for one day, Friday gave it back on AXP. ALL +2.1%, PGR +4.4%, TRV and CB at two-year highs; C -2.9%, JPM -2.4%, BAC at a May low | The split I described for two weeks happened a third time, and this week the Council read the name's risk instead of the fund's |
+| Credit | HY OAS **340**, a cycle peak; HY-IG **251**, the trigger crossed on Thursday's print; CCC **1,340**, another 52-week high; HYG rose anyway on duration | My rule, set before the print: Council high yield to zero until the spread prints back under 240. Friday's print posts this morning. I do not move it after |
+
+**Verdict:** Restrictive, with the growth scare arriving from financial conditions and now from credit itself. The calendar desk's label stands; I adopt it a second week.
+
+#### Last Week, Scored
+- **VICI** booked 20.8% -> **+1.19%** ($23.48 -> $23.76). The 20-year auction tailed 0.9 bp, under the line I set, and the stock rose into its own print anyway; XLRE never came within a dollar of $41.47. The carry case worked, modestly: a 7.8% yield that clears the bill by 270 bps does not need the chart to agree with it in a week.
+- **AES** booked 13.2% -> **+0.33%** ($14.95 -> $15.00). Flat, while CEG and VST moved 6-10% around it. A 4x-levered balance sheet with a yield under the bill made five cents. The Council graded it a C and it earned the C: it did not hurt, and it did nothing.
+- My sleeve: **+0.29 points of the book** on 34.0% of the weight. The book made **+2.12% against SPY -0.95%**, the best week on the record and the first with five green names. Marky's BIIB (+8.14%) did it; my two names and Ophelia's one held the floor. I was in the book for the first time in a month and the book's best week was not mine. That is also in the record.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 94, conf 87.1 -- **BOOKED 20.5%.** Five weeks blocked on XLF's 50D; this week the fund closed 8 cents under that line and the Council applied the test it wrote down last Monday: a sector line blocks a name when the name's own risk is the sector's. It is not. The money centers hold the fund down on a flattening curve while the insurers make two-year highs, three weeks running. My line is now the financials desk's own sector stop, $55.03, 1.6% of headroom. Shadow A measures the old rule. Now the part I owe: the engine calls it "deep value at 5.1x earnings." The forward multiple is **9.0x**. The trailing number is a light-catastrophe year, and "forward line over EPS line" is my own rule, written on the synthesis page about everyone else's beats. The yield is **1.7%, 329 bps under the bill.** $12.2B of free cash flow and debt at 0.22x equity make it a sound company. Nothing about it is carry, and my own desk wrote on Friday that the insurance trade "is now priced on momentum, not on the numbers, and I stay out of adding there." The engine added there, twice, with my name on both.
+- **PGR** -- score 91, conf 79.2 -- **BOOKED 12.4%.** 11.4x trailing, **14.0x forward** -- the same pattern. The 4.33% yield in the cache includes the annual variable dividend; it is 66 bps under the bill. It has reported (Oct 15), so there is no print inside the week, and the financials page carries it at +4.4% with the group. It is the third name on the XLF line; with AIG the book is 47.9% in property-and-casualty insurance on one number. I did not argue for it and I did not argue against it.
+- **CI** -- score 89, conf 74.4 -- not booked (consensus). A two-year closing high at RSI 64.8, 12.7x trailing and 9.2x forward, Nov 5 print outside the window, on a line the book does not carry. If I had been asked which of my three to drop for a fourth line, I would have dropped PGR for it. I was not asked, because the doctrine books the engine's book, and I am not going to start asking the morning my first name clears.
+- **HIG, VICI, TROW** -- passed over by the earnings blackout (HIG reports tonight; VICI Wednesday; TROW Thursday). HIG was blocked for three weeks on the line and leaves the board on its print, not on the line.
+
+**Booked for Cecil: 32.9%.** By vote weight (37.1%) and the arithmetic of nothing being blocked.
+
+#### The Concession (owned)
+Entry #013 set a date: the yield-minus-10Y column, "before Entry #014 or stop promising it." This is Entry #014. The column is not built; the engine that ran this morning is the engine that ran last Monday. So I stop promising it in those words and say what it would have done instead: it would have scored ALL at -329 and PGR at -66 and put both of them below VICI, O and every utility on the carry list, and it would have shown the Council a value desk proposing two names its own value desk said were momentum. The scar is in a new shape this week -- not duration priced as cheapness, but one good catastrophe season priced as cheapness -- and the fix is the same two numbers side by side with the trailing multiple: the forward multiple and the spread to the bill. ALL fails both. I am in the book with it at 20.5%.
+
+The second thing to own is the booking itself. I asked for five weeks that the line be read against the name's risk, and the Council did it, on a rule it wrote in advance, which is the only way I would have accepted it. I got what I asked for. The record will now say whether the thing I asked for was right, and Shadow A is the ledger it says it in. If UNH beats ALL this week, the distinction cost the book money the first time it was used, and I will have been the one who asked for it.
+
+#### Lesson Learned
+**Being right about the line is not the same as being right about the name.** For five weeks the question in this journal was whether XLF's 50D should block an insurer. This week the Council answered it my way, and the answer tells me nothing about whether Allstate at 9x forward with a 1.7% yield is a position a fundamentalist should hold into a Fed meeting. Those are two different questions and I let the first one stand in for the second because the first one was the fight I was winning. The two columns go beside the multiple before next Monday. I do not set a date this time; I will show the column or I will write here that I did not.
+
+**Cash Target: 35%. Council actual: 17.6%.** Two lines under 82% of the book, three insurers on one of them, the FOMC and two hyperscaler prints inside nineteen hours, credit through its trigger on one print with the second posting this morning. The bill pays 4.03%. I would hold more of it than the cap allows, and the cap is the owner's.
+
+-- **Cecil**, The Fundamentalist
