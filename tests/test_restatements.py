@@ -114,12 +114,14 @@ def test_the_committed_metrics_are_what_the_restated_history_gives(book):
     assert computed == committed
 
 
-def test_without_restatements_the_recorded_metrics_come_back(book):
+def test_without_restatements_the_recorded_week_comes_back(book):
     _, restatements = book
     shutil.rmtree(restatements)
-    m = tk.calculate_metrics()
-    assert (m["avg_weekly_return"], m["avg_spy_return"], m["avg_alpha"]) \
-        == (-1.21, 0.05, -1.26)
+    weeks = {w["week"]: w for w in tk.load_history_weeks()}
+    week = weeks["2026-09-14"]
+    assert (week["weighted_return"], week["spy_return"], week["alpha"]) \
+        == (0.23, -0.34, 0.57)
+    assert "restated" not in week
 
 
 def test_a_restatement_that_names_other_positions_is_refused(book):

@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-10-26
+
+Booked: ALL 20.5% / COST 19.0% / MNST 15.5% / AIG 15.0% / PGR 12.4% (17.6% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags and two Canary triggers crossed; the owner's 80% cap met; no trigger block, no promotion, no raise -- the engine's book for a second straight week; ALL booked under the 2026-10-19 distinction with the XLF 50D retired as its line, shadow-book.md; Ophelia's sleeve at its engine weight under both of her rules, HY OAS 340 > 300 and the staples desk's "pullback toward $86-$87"). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| PEP | 73 | 74.1 | Her #3 -- not booked by consensus (her vote weight 32.3%); "Risk-adjusted outperformer with lower volatility" on a stock +3.25% to $135.77 at 17.0x with a 4.31% yield, 20.8% under its 52-week high, having reported Oct 8; Cecil's desk: "I still want its guide first" (wiki/consumer-staples.md). Excluded by ranking, not by rule |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): CI (Cecil #3, score 89, conf 74.4) not booked by consensus -- a two-year closing high Thursday at RSI 64.8, 12.7x / 9.2x forward, reports Nov 5, the one Cecil name on a line the book does not carry; UNH (Marky #3, score 101, conf 80.4) not booked by consensus -- +4.2% to $418.09, breakout-day volume 89% of its 20-day (Rule 1 fail on the day), Cecil's desk holds it as the widest target gap among the names it would own, reports Jan 13; UNH is the promotion in both shadow-book entries this week. `[sanity] DROP` lines this week: **HIG (Cecil; reports Oct 26 AMC, 1 trading day out), VICI (Cecil; Oct 28), TROW (Cecil; Oct 29), GILD (Marky; Oct 29), HLT (Ophelia; Oct 27)** -- earnings blackout, passed over at ranking and replaced by each engine's next-best name.
+
+counterfactual: to be computed (Monday 2026-11-02, date-pinned Mon 2026-10-26 close -> Fri 2026-10-30 close; PEP alone, and CI / UNH each, and HIG / VICI / TROW / GILD / HLT each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-10-19
 
 Booked: VICI 20.8% / MNST 18.7% / COST 15.8% / BIIB 15.2% / AES 13.2% (16.3% cash -- the pipeline's 15% cash floor on a Tightening stance with 3 raised regime flags; the owner's 80% cap met; no trigger block, no promotion, no raise -- the booked book is the engine's book for the first time since 2026-09-14; Ophelia's sleeve at its engine weight under her rule, HY OAS 323 > 300). Ophelia's rejected candidates:
@@ -14,7 +28,7 @@ Booked: VICI 20.8% / MNST 18.7% / COST 15.8% / BIIB 15.2% / AES 13.2% (16.3% cas
 
 Also mirrored here (not Ophelia's, logged for the same counterfactual): CI (Cecil #3, score 87, conf 74.7) not booked by consensus -- +7.0% to RSI 82.6 into ELV's Wednesday print, "the UNH read" (wiki/earnings-surveillance.md); MDT (Marky #3, score 94, conf 74.9) not booked by consensus -- Friday volume 91% of its 20-day average on the breakout day (Rule 1 by the number), reports Dec 1. `[sanity] DROP` lines this week: **ELV, TMO, DHR** (Marky, earnings-blackout -- each reports 2026-10-21, 3 trading days out), passed over at ranking and replaced by BIIB / COST / MDT.
 
-counterfactual: to be computed (Monday 2026-10-26, date-pinned Mon 2026-10-19 close -> Fri 2026-10-23 close; MAR alone, and CI / MDT each, and ELV / TMO / DHR each and equal-weighted, vs the official booked week).
+counterfactual (scored 2026-10-26, date-pinned Mon 2026-10-19 close -> Fri 2026-10-23 close): **MAR +0.00%** ($390.70 -> $390.71) alone vs the official booked week **+1.63%** on the same basis (Tracker +2.12% from Monday opens, SPY -0.95%) = **delta -1.63pp** -- the second rejection on this log to lose to the book, and the first to do it by standing still: the hotel chain above its Street target at RSI 75 went nowhere while the book made its best week on record. Mirrored names: CI +2.83% / MDT +2.85% (each beat the book by ~1.2pp: CI ran into and through ELV's beat-and-raise, MDT rose with XLV +2.07% on volume that was 91% of average on its breakout day -- Rule 1's fail-on-the-day did not cost it); earnings-blackout drops ELV +2.26% / TMO -0.82% / DHR +2.70%, equal-weighted **+1.38%** = **delta -0.25pp** vs the book -- the three names that reported inside the week (ELV beat by 48% and rose, DHR beat and raised, TMO beat and fell 2.3% on the Street's own 9% target raise) finished, as a basket, a quarter-point behind the book that passed them over; all six unbooked names equal-weighted +1.64%, delta +0.01pp. The blackout neither cost nor saved money this week; the print risk it exists to avoid showed up in TMO's sign, not its size.
 
 ---
 
