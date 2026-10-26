@@ -1080,6 +1080,684 @@
    "empty_price_tickers": [
     "WBD"
    ]
+  },
+  {
+   "W": "2026-10-26",
+   "logged_at": "2026-10-26T12:16:40.904413-04:00",
+   "late": true,
+   "active": true,
+   "n_candidates": 75,
+   "n_tradeable": 324,
+   "min_active": 15,
+   "earnings_tables_fetched_at": "2026-10-26T12:18:41.677770-04:00",
+   "picks": [
+    {
+     "t": "HAS",
+     "surprise": 56.61,
+     "ts": "2026-10-20T06:00:00-04:00",
+     "react": "2026-10-20",
+     "sector": "Consumer Discretionary"
+    },
+    {
+     "t": "ELV",
+     "surprise": 48.89,
+     "ts": "2026-10-21T06:00:00-04:00",
+     "react": "2026-10-21",
+     "sector": "Health Care"
+    },
+    {
+     "t": "DECK",
+     "surprise": 28.71,
+     "ts": "2026-10-22T16:00:00-04:00",
+     "react": "2026-10-23",
+     "sector": "Consumer Discretionary"
+    },
+    {
+     "t": "RTX",
+     "surprise": 27.03,
+     "ts": "2026-10-20T06:00:00-04:00",
+     "react": "2026-10-20",
+     "sector": "Industrials"
+    },
+    {
+     "t": "COF",
+     "surprise": 21.58,
+     "ts": "2026-10-20T16:00:00-04:00",
+     "react": "2026-10-21",
+     "sector": "Financials"
+    }
+   ],
+   "candidates": [
+    {
+     "t": "HAS",
+     "surprise": 56.61
+    },
+    {
+     "t": "ELV",
+     "surprise": 48.89
+    },
+    {
+     "t": "DECK",
+     "surprise": 28.71
+    },
+    {
+     "t": "RTX",
+     "surprise": 27.03
+    },
+    {
+     "t": "COF",
+     "surprise": 21.58
+    },
+    {
+     "t": "AXP",
+     "surprise": 20.44
+    },
+    {
+     "t": "NTRS",
+     "surprise": 19.69
+    },
+    {
+     "t": "LUV",
+     "surprise": 14.21
+    },
+    {
+     "t": "ISRG",
+     "surprise": 13.61
+    },
+    {
+     "t": "WDC",
+     "surprise": 13.23
+    },
+    {
+     "t": "NEM",
+     "surprise": 13.03
+    },
+    {
+     "t": "CB",
+     "surprise": 12.68
+    },
+    {
+     "t": "VLO",
+     "surprise": 12.55
+    },
+    {
+     "t": "DOW",
+     "surprise": 11.49
+    },
+    {
+     "t": "SYF",
+     "surprise": 11.44
+    },
+    {
+     "t": "GE",
+     "surprise": 11.39
+    },
+    {
+     "t": "URI",
+     "surprise": 10.85
+    },
+    {
+     "t": "KEY",
+     "surprise": 10.38
+    },
+    {
+     "t": "DHR",
+     "surprise": 10.02
+    },
+    {
+     "t": "NOC",
+     "surprise": 9.89
+    },
+    {
+     "t": "FITB",
+     "surprise": 9.7
+    },
+    {
+     "t": "TDY",
+     "surprise": 8.99
+    },
+    {
+     "t": "CMCSA",
+     "surprise": 8.45
+    },
+    {
+     "t": "FIX",
+     "surprise": 8.24
+    },
+    {
+     "t": "TXN",
+     "surprise": 7.94
+    },
+    {
+     "t": "T",
+     "surprise": 7.75
+    },
+    {
+     "t": "CSX",
+     "surprise": 7.25
+    },
+    {
+     "t": "TSLA",
+     "surprise": 6.4
+    },
+    {
+     "t": "KMI",
+     "surprise": 6.25
+    },
+    {
+     "t": "TSCO",
+     "surprise": 6.07
+    },
+    {
+     "t": "LMT",
+     "surprise": 6.01
+    },
+    {
+     "t": "NFLX",
+     "surprise": 5.75
+    },
+    {
+     "t": "PG",
+     "surprise": 5.66
+    },
+    {
+     "t": "CBRE",
+     "surprise": 4.97
+    },
+    {
+     "t": "BX",
+     "surprise": 4.88
+    },
+    {
+     "t": "HON",
+     "surprise": 4.88
+    },
+    {
+     "t": "DGX",
+     "surprise": 4.36
+    },
+    {
+     "t": "TMO",
+     "surprise": 4.33
+    },
+    {
+     "t": "NSC",
+     "surprise": 4.3
+    },
+    {
+     "t": "PKG",
+     "surprise": 4.27
+    },
+    {
+     "t": "NEE",
+     "surprise": 4.15
+    },
+    {
+     "t": "SLB",
+     "surprise": 4.11
+    },
+    {
+     "t": "ALLE",
+     "surprise": 3.74
+    },
+    {
+     "t": "WAB",
+     "surprise": 3.53
+    },
+    {
+     "t": "MMM",
+     "surprise": 3.21
+    },
+    {
+     "t": "EFX",
+     "surprise": 2.83
+    },
+    {
+     "t": "IBM",
+     "surprise": 2.71
+    },
+    {
+     "t": "HAL",
+     "surprise": 2.57
+    },
+    {
+     "t": "NDAQ",
+     "surprise": 2.32
+    },
+    {
+     "t": "OMC",
+     "surprise": 2.17
+    },
+    {
+     "t": "GM",
+     "surprise": 1.89
+    },
+    {
+     "t": "PM",
+     "surprise": 1.88
+    },
+    {
+     "t": "ROP",
+     "surprise": 1.74
+    },
+    {
+     "t": "MSCI",
+     "surprise": 1.66
+    },
+    {
+     "t": "GPC",
+     "surprise": 1.63
+    },
+    {
+     "t": "UNP",
+     "surprise": 1.56
+    },
+    {
+     "t": "DOV",
+     "surprise": 1.19
+    },
+    {
+     "t": "CME",
+     "surprise": 1.02
+    },
+    {
+     "t": "LRCX",
+     "surprise": 0.94
+    },
+    {
+     "t": "WRB",
+     "surprise": 0.46
+    },
+    {
+     "t": "ABT",
+     "surprise": 0.03
+    },
+    {
+     "t": "HBAN",
+     "surprise": -0.12
+    },
+    {
+     "t": "GL",
+     "surprise": -1.1
+    },
+    {
+     "t": "UAL",
+     "surprise": -1.28
+    },
+    {
+     "t": "ROL",
+     "surprise": -1.41
+    },
+    {
+     "t": "PCG",
+     "surprise": -2.08
+    },
+    {
+     "t": "CCI",
+     "surprise": -2.3
+    },
+    {
+     "t": "MCO",
+     "surprise": -2.51
+    },
+    {
+     "t": "STLD",
+     "surprise": -2.69
+    },
+    {
+     "t": "VRSN",
+     "surprise": -2.73
+    },
+    {
+     "t": "PHM",
+     "surprise": -3.53
+    },
+    {
+     "t": "SNA",
+     "surprise": -5.82
+    },
+    {
+     "t": "NVR",
+     "surprise": -12.96
+    },
+    {
+     "t": "LVS",
+     "surprise": -20.98
+    },
+    {
+     "t": "META",
+     "surprise": -29.91
+    }
+   ],
+   "pool": [
+    "A",
+    "AAPL",
+    "ABNB",
+    "ABT",
+    "ACN",
+    "ADBE",
+    "ADI",
+    "ADM",
+    "ADSK",
+    "AEE",
+    "AES",
+    "AFL",
+    "AIG",
+    "AIZ",
+    "AKAM",
+    "ALB",
+    "ALL",
+    "ALLE",
+    "AMAT",
+    "AMCR",
+    "AMD",
+    "AMGN",
+    "ANET",
+    "APA",
+    "APD",
+    "APO",
+    "APP",
+    "APTV",
+    "ATO",
+    "AVGO",
+    "AXON",
+    "AXP",
+    "AZO",
+    "BAC",
+    "BALL",
+    "BBY",
+    "BDX",
+    "BEN",
+    "BF-B",
+    "BKNG",
+    "BLK",
+    "BNY",
+    "BR",
+    "BRK-B",
+    "BX",
+    "C",
+    "CAH",
+    "CASY",
+    "CB",
+    "CBRE",
+    "CCI",
+    "CCL",
+    "CDW",
+    "CEG",
+    "CF",
+    "CFG",
+    "CHTR",
+    "CI",
+    "CIEN",
+    "CLX",
+    "CMCSA",
+    "CME",
+    "CMI",
+    "COF",
+    "COHR",
+    "COO",
+    "COP",
+    "COR",
+    "COST",
+    "CPAY",
+    "CPRT",
+    "CPT",
+    "CRL",
+    "CRM",
+    "CRWD",
+    "CSCO",
+    "CSX",
+    "CTAS",
+    "CTVA",
+    "CVS",
+    "DAL",
+    "DASH",
+    "DD",
+    "DDOG",
+    "DE",
+    "DECK",
+    "DELL",
+    "DG",
+    "DGX",
+    "DHR",
+    "DIS",
+    "DLTR",
+    "DOC",
+    "DOV",
+    "DOW",
+    "DPZ",
+    "DRI",
+    "DUK",
+    "DVN",
+    "EBAY",
+    "ECHO",
+    "ED",
+    "EFX",
+    "EL",
+    "ELV",
+    "EMR",
+    "EOG",
+    "ES",
+    "ETN",
+    "ETR",
+    "EVRG",
+    "EW",
+    "EXPD",
+    "EXPE",
+    "FANG",
+    "FAST",
+    "FDS",
+    "FDX",
+    "FERG",
+    "FICO",
+    "FIS",
+    "FISV",
+    "FITB",
+    "FIX",
+    "GE",
+    "GIS",
+    "GL",
+    "GM",
+    "GPC",
+    "GPN",
+    "GS",
+    "GWW",
+    "HAL",
+    "HAS",
+    "HBAN",
+    "HD",
+    "HON",
+    "HPE",
+    "HPQ",
+    "HRL",
+    "HSIC",
+    "HST",
+    "HUM",
+    "IBKR",
+    "IBM",
+    "IDXX",
+    "IFF",
+    "INTU",
+    "IRM",
+    "ISRG",
+    "IT",
+    "J",
+    "JBHT",
+    "JBL",
+    "JKHY",
+    "JNJ",
+    "JPM",
+    "KDP",
+    "KEY",
+    "KEYS",
+    "KKR",
+    "KMB",
+    "KMI",
+    "KR",
+    "KVUE",
+    "L",
+    "LDOS",
+    "LEN",
+    "LITE",
+    "LMT",
+    "LOW",
+    "LRCX",
+    "LULU",
+    "LUV",
+    "LVS",
+    "LYV",
+    "MAR",
+    "MCD",
+    "MCHP",
+    "MCK",
+    "MCO",
+    "MDT",
+    "MET",
+    "META",
+    "MKC",
+    "MLM",
+    "MMM",
+    "MNST",
+    "MOS",
+    "MPC",
+    "MRNA",
+    "MRSH",
+    "MRVL",
+    "MS",
+    "MSCI",
+    "MSI",
+    "MTB",
+    "MTD",
+    "MU",
+    "NCLH",
+    "NDAQ",
+    "NDSN",
+    "NEE",
+    "NEM",
+    "NFLX",
+    "NKE",
+    "NOC",
+    "NRG",
+    "NSC",
+    "NTAP",
+    "NTRS",
+    "NVDA",
+    "NVR",
+    "NWS",
+    "NWSA",
+    "O",
+    "OMC",
+    "ON",
+    "ORCL",
+    "OXY",
+    "P",
+    "PANW",
+    "PAYX",
+    "PCG",
+    "PEG",
+    "PEP",
+    "PFE",
+    "PG",
+    "PGR",
+    "PH",
+    "PHM",
+    "PKG",
+    "PLD",
+    "PLTR",
+    "PM",
+    "PNC",
+    "PNW",
+    "PODD",
+    "PPL",
+    "PRU",
+    "PSKY",
+    "PTC",
+    "Q",
+    "QCOM",
+    "REG",
+    "RF",
+    "RL",
+    "ROK",
+    "ROL",
+    "ROP",
+    "ROST",
+    "RTX",
+    "RVTY",
+    "SBAC",
+    "SCHW",
+    "SJM",
+    "SLB",
+    "SMCI",
+    "SNA",
+    "SNPS",
+    "SO",
+    "SOLV",
+    "SPG",
+    "SRE",
+    "STE",
+    "STLD",
+    "STT",
+    "STZ",
+    "SWK",
+    "SWKS",
+    "SYF",
+    "SYY",
+    "T",
+    "TDG",
+    "TDY",
+    "TECH",
+    "TFC",
+    "TGT",
+    "TJX",
+    "TKO",
+    "TMO",
+    "TPL",
+    "TPR",
+    "TRGP",
+    "TRMB",
+    "TRV",
+    "TSCO",
+    "TSLA",
+    "TSN",
+    "TTWO",
+    "TXN",
+    "UAL",
+    "UBER",
+    "UDR",
+    "ULTA",
+    "UNH",
+    "UNP",
+    "URI",
+    "USB",
+    "VEEV",
+    "VLO",
+    "VLTO",
+    "VMRK",
+    "VRSK",
+    "VRSN",
+    "VRT",
+    "VRTX",
+    "VST",
+    "VTRS",
+    "WAB",
+    "WAT",
+    "WDAY",
+    "WDC",
+    "WFC",
+    "WMB",
+    "WMT",
+    "WRB",
+    "WSM",
+    "WYNN",
+    "XYZ",
+    "YUM",
+    "ZBH",
+    "ZBRA",
+    "ZTS"
+   ],
+   "empty_price_tickers": [
+    "WBD"
+   ]
   }
  ]
 }
