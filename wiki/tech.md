@@ -97,11 +97,11 @@
 | Inflation | Sep PCE **3.6% y/y**, core **3.1%** (Oct 29; figures via search coverage) | Quarterly PCE slowed to 2.1% from 5.0%. Sep CPI 3.7%, core 2.6% (carried) |
 | Growth Pulse | Q3 GDP **+3.4%** (BEA advance) from +2.2%; claims **194K** | Strong enough to keep December live. September payrolls +29,000 and unemployment 4.2% cited alongside (commentary, not re-checked) |
 | WTI Crude | **$104.12 (Yahoo CL=F Friday bar, not confirmed as a settlement)** vs **$103.27 settled last week (CLZ26)**; Brent **$117.64 (BZ=F, same caveat)** | A rare speedboat attack on a tanker in Hormuz Friday (Bloomberg, headline). Week-over-week change provisional. Last page's Brent $111.66 was a Fri-evening read; the Oct 23 bar now shows $116.72 |
-| DXY | **101.88 (DX-Y.NYB)** vs 101.75 Fri evening last week | Touched 102.32 Tuesday; still above the 101 trip wire (#115) |
+| DXY | **101.88 (DX-Y.NYB)** vs 101.75 Fri evening last week | Touched 102.32 Tuesday; still above the 101 trip wire (#115, closed) |
 | Commodities / AI Power | Copper **$6.46**, gas **$2.90**, gold **$3,899**, silver **$49.10** (Yahoo front month, Friday) | Gold vs $3,991.10 settled last week; lowest close since Oct 2, 2025 on the continuous bars. Silver vs $53.71 settled. No input-cost signal for tech |
 | Hyperscaler Capex | **MSFT** $39.4B, under estimates; about $175B calendar-2026 guide after a lease reclassification. **GOOGL** Q3 capex $51.4B, FCF -$9.1B (one source). **AMZN** $77.3B vs $58.7B consensus; TTM FCF -$42.4B; long-term debt $173.1B | The chain's revenue grew: Azure +48%, Cloud +103%, AWS +39.3%. The stocks were judged on cash. GOOGL -12.6% Thursday; AMZN -3.1% on the week |
 | AI financing | Amazon tapped an $80B credit line (Stocktwits, headline); OpenAI cut its funding target (IBD, headline); Reuters: Big Tech returning its smallest share of cash in 15 years; WSJ: a shortage of cheap money is the new bottleneck | The bear case moved from "too much spending" to "who funds it" |
-| China / Trade | Nvidia's Megaspeed ties and export-control gaps (MarketWatch, Oct 31, headline); China's October factory PMI contracted at its fastest pace in three months (Reuters) | Issue #114 stands |
+| China / Trade | Nvidia's Megaspeed ties and export-control gaps (MarketWatch, Oct 31, headline); China's October factory PMI contracted at its fastest pace in three months (Reuters) | Issue #114 is closed; not re-opened |
 | VIX | **19.42** (19.45 last week) | Path: Mon 18.39, Tue 17.52, Wed 16.91, Thu 17.20, Fri 19.42 |
 
 A 1.8% S&P day took the VIX only back to last Friday's level.
