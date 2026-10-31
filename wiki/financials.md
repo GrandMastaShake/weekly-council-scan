@@ -2,7 +2,7 @@
 
 > **Sector:** Financials | **ETF:** Financials Select Sector SPDR (XLF) | **Expense Ratio:** 0.08%
 >
-> *"A third straight weekly gain, and the first close over the 50-day since mid-September — for one day. XLF rose 0.7% to $55.90 while SPY fell 0.4% and XLK was flat. Thursday's $56.65 was the best close since Sep 14 and cleared the 50D; Friday gave back 1.3% as American Express beat on adjusted EPS, missed slightly on revenue, announced a 5% job cut and fell 3.7%. The split from last week held: the money-center banks fell (C -2.9%, JPM -2.4%, BAC to its lowest close since May), while Visa, Mastercard, Berkshire and Travelers made two-year closing highs Thursday and the regionals rallied (KRE +3.8%). Customers Bancorp beat and rose 13%. October hike odds fell from about half to under 10%, the 10Y closed 5.00%, and 2s10s narrowed again to +31bp."*
+> *"A fourth straight weekly gain, in a week tech broke. XLF rose 1.09% to $56.51 while XLK fell 2.0% and SPY 0.6%. Thursday's $56.94 was the best close since Sep 11 and the breakout Marky wanted, over $56.67; Friday gave back 0.8% with the market and held the 50D. Mastercard beat ($5.31 adjusted, revenue +14%), rose 4.2% Thursday and closed Friday at a two-year high of $638.01; Chubb did the same at $364.12. Visa beat and raised its dividend 16%. Thirteen of seventeen names rose, the money centers included, up from seven last week. The exceptions are the two that hurt: BAC fell to its lowest close since May, SCHW to its lowest since June. The Fed held 10-2, December hike odds sit near 70%, and 2s10s widened to +38bp after three weeks of narrowing. HY OAS 3.26%, off its 3.40% peak."*
 
 ---
 
@@ -10,22 +10,22 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | **$55.90** | $55.52 (settled close) | **+0.68%** — third straight weekly gain |
-| 52W Range | $47.34 – $58.39 | $47.34 – $58.39 | Price 4.3% below the high |
-| AUM | ~$51.0B (yfinance totalAssets) | ~$51.0B | Unchanged a third week; not re-checked |
-| YTD Return | **+3.3%** (price basis, daily bars) | +2.1% | +1.2 pts |
-| 1Y Return | +8.3% | +5.9% | 252-session daily-bar basis |
-| P/E Ratio | ~15.9 (Yahoo trailing) | ~15.8 | Up with price |
+| Price | **$56.51** | $55.90 (settled close) | **+1.09%** — fourth straight weekly gain |
+| 52W Range | $47.34 – $58.39 | $47.34 – $58.39 | Price 3.2% below the high |
+| AUM | ~$51.0B (yfinance totalAssets) | ~$51.0B | Unchanged a fourth week; not re-checked |
+| YTD Return | **+4.4%** (price basis, daily bars) | +3.3% | +1.1 pts |
+| 1Y Return | +10.2% | +8.3% | 252-session daily-bar basis |
+| P/E Ratio | ~16.1 (Yahoo trailing) | ~15.9 | Up with price |
 | Dividend Yield | ~1.55% | ~1.55% | Yahoo figure |
 | Beta | 0.75 (3Y) | 0.75 | Yahoo figure |
 | Total Holdings | 76 | 76 | Carried; not re-pulled |
-| Avg Daily Volume | ~27.9M this week (20D avg 36.4M) | ~34.1M | The lightest week in a month; Thursday's breakout came on 32.6M |
+| Avg Daily Volume | ~29.1M this week (20D avg 32.6M) | ~27.9M | Friday 37.1M and Thursday 32.9M the heaviest |
 
-Week path: Mon $55.06, Tue $55.72, Wed $56.04, Thu $56.65, Fri $55.90 (O $56.19 / H $56.35 / L $55.81). Week range $55.03 – $56.67. Every bar in the pull was dated Oct 23 at ~23:30 ET; not re-pulled with repair.
+Week path: Mon $56.02, Tue $55.88, Wed $56.13, Thu $56.94, Fri $56.51 (O $57.19 / H $57.20 / L $56.33). Week range $55.75 – $57.23. This run fired late, Saturday morning; every bar in the pull is dated Oct 30 and settled, not re-pulled with repair.
 
-**Marky Tape Read:** Last week's rule was a close over $56.16 adds. **Monday** dipped to $55.06, the low of the week at $55.03, and held last week's shelf. **Tuesday** $55.72, **Wednesday** $56.04 — level with the 50D, not over it. **Thursday** +1.1% to **$56.65** on 32.6M, the best close since Sep 14 and a clean close over both the 50D ($56.02) and my $56.16 line: **the add fired.** **Friday** -1.3% to $55.90, eight cents under the 50D ($55.98), on the AXP print. One day over the line and back under it is not a failure yet, but it is not a breakout either. RSI 55.3, flat on the week. 20D $54.69 rising, 50D $55.98 falling, 200D $53.36. Volume was light all week.
+**Marky Tape Read:** Last week's rule: a close over $56.67 is the breakout, a close under $55.03 takes the second add off. **Monday** $56.02 and **Tuesday** $55.88 sat on the 50D; Tuesday's close was three cents under it. **Wednesday** $56.13 back over. **Thursday** +1.4% to **$56.94** on 32.9M, a clean close over $56.67 and the best since Sep 11: **the breakout confirmed**, on the day the tech rally broke. **Friday** opened $57.19, sold with the market to $56.33, and closed **$56.51**, -0.8% on 37.1M, on a day the S&P lost 1.8%. It held the 50D ($55.87) by 64 cents. RSI 58.4 from 55.3. 20D $55.33 rising, 50D $55.87 flat, 200D $53.41.
 
-**Ophelia Macro Read:** The rate risk I worried about last week largely went away. October hike odds fell from ~42–52% to **about 7–8%** (CME-based trackers, Oct 23); one account still has a December hike near 80%. Treasury par Friday: 3M 4.22%, **2Y 4.69%**, 5Y 4.82%, **10Y 5.00%**, 30Y 5.33%. The 10Y fell 9bp and the 2Y 5bp, so **2s10s narrowed to +31bp** (+35 last week, +44 the week before) and **10s–3M to +78bp** (+83). Three straight weeks of bull flattening — the curve shape least kind to net interest margins, but not the sharp move my trigger asks for. I could not re-source credit spreads: FRED would not answer tonight, so **HY OAS is not re-sourced** and last week's 3.25% peak is the latest reading on this page. That is the line I care about most, and I do not have it.
+**Ophelia Macro Read:** The curve finally moved the right way. Treasury par Friday: 3M 4.16%, **2Y 4.56%**, 5Y 4.71%, **10Y 4.94%**, 30Y 5.31%. The 2Y fell 13bp and the 10Y 6bp, so **2s10s widened to +38bp** (+31 last week, +35, +44) and **10s–3M held +78bp**. My +30bp line held. The FOMC held at **3.75–4.00%** on a **10-2** vote, Cook and Hammack for a hike, and called activity "strong" (investingLive). Q3 GDP +3.4%, core PCE 3.1%. **December hike odds about 68–79%** on most trackers; BofA now forecasts hikes in December and March (Investing.com headline). And I have credit back: **HY OAS 3.26%** Thursday (FRED), from 3.38% last Friday, a **3.40% peak on Oct 22** and a 3.14% low Wednesday; IG **0.89%**. So last week's unread number did what I feared: it went through 3.25%. It has since come in, but Thursday's +12bp came before Friday's selloff, which FRED has not printed. Not under my 3.00% line.
 
 ---
 
@@ -33,49 +33,49 @@ Week path: Mon $55.06, Tue $55.72, Wed $56.04, Thu $56.65, Fri $55.90 (O $56.19 
 
 | Rank | Ticker | Name | Price | Weekly Change | Mean Target | Implied | Signal |
 |---|---|---|---|---|---|---|---|
-| 1 | BRK.B | Berkshire Hathaway | $542.19 | +1.9% | $555.67 | +2.5% | 🔥 |
-| 2 | JPM | JPMorgan Chase | $331.58 | **-2.4%** | $372.26 | +12.3% | ⚠️ |
-| 3 | V | Visa | $407.92 | +1.3% | $425.39 | +4.3% | 🔥 |
-| 4 | MA | Mastercard | $623.60 | +1.0% | $676.04 | +8.4% | 🔥 |
-| 5 | BAC | Bank of America | $50.56 | -1.3% | $62.95 | +24.5% | 🔴 |
-| 6 | GS | Goldman Sachs | $875.68 | -0.6% | $1,031.14 | +17.8% | 🔴 |
-| 7 | WFC | Wells Fargo | $82.39 | -1.8% | $97.02 | +17.8% | ⚠️ |
-| 8 | MS | Morgan Stanley | $179.49 | -0.6% | $211.05 | +17.6% | 🔴 |
-| 9 | C | Citigroup | $120.62 | **-2.9%** | $150.71 | +24.9% | ⚠️ |
-| 10 | AXP | American Express | $313.22 | -0.1% | $369.52 | +18.0% | ⚠️ |
-| — | USB | U.S. Bancorp | $59.58 | +1.4% | $68.27 | +14.6% | ⚡ |
-| — | PNC | PNC Financial | $224.46 | **+3.3%** | $263.00 | +17.2% | ⚡ |
-| — | SCHW | Charles Schwab | $90.58 | -1.5% | $117.59 | +29.8% | 🔴 |
-| — | PGR | Progressive | $228.07 | **+4.4%** | $230.38 | +1.0% | 🔥 |
-| — | CB | Chubb | $355.11 | -1.3% | $371.48 | +4.6% | ⚡ |
-| — | TRV | Travelers | $398.28 | +2.2% | $374.29 | -6.0% | ⚡ |
-| — | BLK | BlackRock | $1,118.25 | -1.4% | $1,351.00 | +20.8% | ⚡ |
+| 1 | BRK.B | Berkshire Hathaway | $542.49 | +0.1% | $555.67 | +2.4% | ⚡ |
+| 2 | JPM | JPMorgan Chase | $337.04 | +1.6% | $373.26 | +10.7% | ⚡ |
+| 3 | V | Visa | $413.59 | +1.4% | $441.15 | +6.7% | 🔥 |
+| 4 | MA | Mastercard | $638.01 | **+2.3%** | $686.79 | +7.6% | 🔥 |
+| 5 | BAC | Bank of America | $50.01 | -1.1% | $62.84 | +25.7% | 🔴 |
+| 6 | GS | Goldman Sachs | $894.55 | **+2.1%** | $1,031.14 | +15.3% | ⚠️ |
+| 7 | WFC | Wells Fargo | $83.40 | +1.2% | $97.02 | +16.3% | ⚠️ |
+| 8 | MS | Morgan Stanley | $184.30 | **+3.3%** | $211.27 | +14.6% | ⚠️ |
+| 9 | C | Citigroup | $122.64 | +1.7% | $150.71 | +22.9% | ⚠️ |
+| 10 | AXP | American Express | $319.11 | +1.9% | $365.75 | +14.6% | ⚡ |
+| — | USB | U.S. Bancorp | $59.45 | -0.2% | $68.66 | +15.5% | ⚡ |
+| — | PNC | PNC Financial | $227.86 | +1.5% | $263.52 | +15.7% | ⚡ |
+| — | SCHW | Charles Schwab | $88.05 | **-2.8%** | $117.32 | +33.2% | 🔴 |
+| — | PGR | Progressive | $231.28 | +1.4% | $230.38 | -0.4% | 🔥 |
+| — | CB | Chubb | $364.12 | **+2.5%** | $373.22 | +2.5% | 🔥 |
+| — | TRV | Travelers | $396.22 | -0.5% | $376.54 | -5.0% | ⚡ |
+| — | BLK | BlackRock | $1,147.54 | **+2.6%** | $1,358.71 | +18.4% | ⚡ |
 
-> 🔥 = strong momentum / record | ⚡ = neutral-positive | ⚠️ = below its 50D, caution | 🔴 = breakdown watch. Prices = Fri Oct 23 close; weekly change vs the settled Oct 16 close (no restatements against last week's page). Targets = Yahoo mean (pulled Oct 23; CB $366.78 → $371.48 after its print, TRV $360.67 → $374.29). Weights (Yahoo funds_data, Oct 23): BRK.B 12.3%, JPM 11.7%, V 8.1%, MA 5.9%, BAC 4.7%, GS 3.5%, WFC 3.2%, MS 3.0%, C 2.9%, AXP 2.1% — **identical for a third week**; Yahoo is not refreshing them.
+> 🔥 = strong momentum / record | ⚡ = neutral-positive | ⚠️ = below its 50D, caution | 🔴 = breakdown watch. Prices = Fri Oct 30 close; weekly change vs the settled Oct 23 daily bar. **Restatement: MS's Oct 23 close reads $178.40 on the adjusted bar against $179.49 on last week's page (a dividend adjustment; not checked further); the rest match.** Targets = Yahoo mean (pulled Oct 31): **V $425.39 → $441.15, MA $676.04 → $686.79** after their prints; AXP $369.52 → $365.75 after last week's. Weights (Yahoo funds_data, Oct 31): BRK.B 12.3%, JPM 11.7%, V 8.1%, MA 5.9%, BAC 4.7%, GS 3.5%, WFC 3.2%, MS 3.0%, C 2.9%, AXP 2.1% — **identical for a fourth week**; Yahoo is not refreshing them.
 
-**Sector Lanes — seven of seventeen rose, ten fell; all seven risers are payments, insurance, Berkshire or regional banks:**
+**Sector Lanes — thirteen of seventeen rose; four fell, BAC and SCHW the ones that matter:**
 
-- **Lane 1 — The money centers kept falling.** No prints this week; the group gave back more of the post-earnings drift. **C -2.9%**, **JPM -2.4%**, **WFC -1.8%**, **BAC -1.3%** — Monday's $50.39 was its lowest close since May 28; RSI 26.4. GS and MS -0.6% after Wednesday rallies faded (MS +3.7% Wednesday, gone by Friday). No company news sourced for the slide.
-- **Lane 2 — American Express (Fri Oct 23).** Adjusted EPS **$4.68** (+13%) against ~$4.50 consensus; GAAP $5.42 includes a $982M pre-tax gain on its Global Business Travel stake. Revenue **$20.1B** (+9%) was slightly under the ~$20.12B estimate. It **raised full-year EPS guidance**, booked a **$336M restructuring charge to cut about 5% of jobs**, and added legal reserves including an OCC civil money penalty (SEC 8-K; MarketBeat; Benzinga). The stock fell **3.7% Friday** from $325.17 to $313.22 and finished the week flat.
-- **Lane 3 — Payments, Berkshire, insurers.** **V** ($414.34), **MA** ($633.21), **BRK.B** ($546.97) and **TRV** ($405.44) all made **two-year closing highs Thursday** and eased Friday. **PGR +4.4%**. **CB -1.3%** after a record quarter Tuesday: core operating EPS **$7.66**, a P&C combined ratio of **84.1%**, catastrophe losses $705M against $285M a year ago, $1.57B returned to shareholders (Chubb 8-K, Oct 20).
-- **Lane 4 — Regionals bid.** **KRE +3.8%** to $72.46, its best close since Sep 15. **PNC +3.3%**, **USB +1.4%**. Customers Bancorp beat and rose 13% (see the watch below).
+- **Lane 1 — Payments reported, and the market paid.** **MA (Thu Oct 29):** adjusted EPS **$5.31** against ~$5.15, revenue **$9.8B (+14%)** against ~$9.64B. +4.2% Thursday, which Stocktwits called its best day in nine months; +0.4% Friday to a **two-year closing high of $638.01**. Earnings Whispers flags a Q4 timing payback, slower cross-border and an unchanged outlook. **V (Tue Oct 27, after the close):** fiscal Q4 net revenue **$12.1B (+13%)**, non-GAAP EPS **$3.48 (+17%)** against about $3.44, GAAP $3.19 after a **$469M interchange-litigation provision** and a $282M foundation donation; dividend **+16% to $0.78**. It slipped 0.3% Wednesday and rose 2.5% Thursday with MA; $413.59 is 75 cents under its Oct 22 closing high.
+- **Lane 2 — The money centers joined, then gave half back.** **JPM +1.6%, C +1.7%, WFC +1.2%, GS +2.1%, MS +3.3%**, rising through Thursday with no bank news sourced; Friday took 1.7–3.6% off each. GS's -3.6% led the Dow's fall (MarketWatch). **BAC -1.1%** is the exception: $50.01, its lowest close since May 15, RSI 27.7, a 26% gap to target. No company news sourced.
+- **Lane 3 — Insurers and Berkshire.** **CB +2.5%** to a **two-year closing high of $364.12**. **PGR +1.4%**, at its mean target. **BRK.B +0.1%** after a two-year closing high of $548.56 Monday. TRV -0.5%, still 5% over target. CB and PGR rose 0.5% Friday; TRV fell 0.5%.
+- **Lane 4 — Brokers, asset managers, regionals.** **SCHW -2.8%** to $88.05, its lowest close since Jun 8, RSI 27.7, and a 33% gap to target the Street has not touched. **BLK +2.6%**, Thursday's $1,176.24 a whisker under its two-year closing high. **KRE -0.6%** to $72.01, a pause after +3.8%; USB -0.2%, PNC +1.5%.
 
-**Cecil Fundamental Read:** Chubb gave me a record quarter at 12x forward and the stock fell 1.3%; Travelers is 6% over its mean target and rose. The insurance trade is now priced on momentum, not on the numbers, and I stay out of adding there. The value I wanted is in the money-center banks and it keeps getting cheaper: **BAC at 9.7x forward with a 24.5% gap to target**, Citi at 9.2x with a 25% gap. I said I would treat BAC's $1.2B penalty as a one-off only after a clean quarter, and that rule stands — but at a May low and an RSI of 26, I start watching it daily. AXP at 15.5x forward, raising guidance and cutting costs, is the one name I would add on Friday's fall.
+**Cecil Fundamental Read:** The insurance call I gave up last week kept working without me: Chubb rose 2.5% to a two-year high at 12.4x forward, and I said momentum and stayed out. I stay out, but I note the record: I have now watched that stock go from a value name to a momentum name at 12 times earnings, which is an odd kind of momentum. AXP rose 1.9% after I said it was the one to add; I hold that. BAC at 9.6x forward closed at a May low on no news, a 26% gap, and I said I would watch it daily and wait for a clean quarter. That rule stands until January. **SCHW at 11.3x is the new name on my list:** the Street's target is 33% over price, and I cannot find the reason it keeps falling, which is exactly why I do not buy it yet.
 
 ---
 
 ## SMALL/MID-CAP WATCH
 
-> *Sub-$5B financials names, carried forward. All four re-verified under $5B using yfinance market caps at the Oct 23 close. No promotions, no swaps.*
+> *Sub-$5B financials names, carried forward. All four re-verified under $5B using yfinance market caps at the Oct 30 close. No promotions, no swaps.*
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Fresh Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| WAFD | WaFd, Inc. | **$2.18B** ✓ | $29.47 | +1.1% | No fresh headline; the fiscal Q4 miss with cleaner credit is carried; next report Jan 14 (Yahoo) | ⚠️ Still under its 50D ($32.61) and 200D ($33.70); RSI 41.4. The laggard of the four. |
-| CUBI | Customers Bancorp | **$2.86B** ✓ | $84.54 | **+13.1%** | **Reported Q3 Thu Oct 22 (8-K):** EPS **$2.25** vs $2.13 consensus (Yahoo, last week's page); record deposits $22.6B (+3.8% q/q) and loans $18.5B; NII +7.6% q/q; efficiency ratio 47.2% from 50.6% | 🔥 A two-year closing high Friday (+7.4% on the day after the call). RSI 76.1. Within 10% of its mean target ($92.90). The best print on this page. |
-| HOPE | Hope Bancorp | **$1.80B** ✓ | $14.07 | +4.8% | No fresh headline; reports **Wed Oct 28** (Yahoo) | ⚡ Retook its 50D ($13.77); ~4% yield. |
-| BANR | Banner Corporation | **$2.58B** ✓ | $70.28 | +4.0% | **Reported Q3 Wed Oct 21 (8-K):** EPS **$1.36** vs ~$1.57 (Earnings Whispers; last week's Yahoo figure the same), down from $1.43 in Q2, with $5.2M of merger costs from the Pacific Financial deal; NII $161.9M (+5.3% q/q) on a wider margin; provision $2.8M (from $3.8M) | ⚡ Missed on EPS and rose 3.0% Thursday anyway — the market looked through the merger costs to the margin. Back over its 50D ($69.42). |
+| WAFD | WaFd, Inc. | **$2.17B** ✓ | $29.35 | -0.4% | No fresh headline; next report Jan 14 (Yahoo) | ⚠️ On its 20D ($29.33); under its 50D ($31.85) and 200D ($33.64). RSI 41.5. Still the laggard. |
+| CUBI | Customers Bancorp | **$2.84B** ✓ | $84.16 | -0.5% | No new headline; Thursday's $87.49 was a two-year closing high before -3.8% Friday; mean target **$98.20** from $92.90 after the print | 🔥 RSI 64.6 from 76.1. Well over its averages. A rest, not a reversal. |
+| HOPE | Hope Bancorp | **$1.69B** ✓ | $13.21 | **-6.1%** | **Reported Q3 Tue–Wed Oct 27–28:** Earnings Whispers has it narrowly missing on EPS with margins wider, guidance cut after the Manubank deal and delinquencies rising (headline; release not read) | ⚠️ Lost its 20D ($13.58) and 50D ($13.73) in three straight down days. The one credit flag on this list. Yield about 4% (carried). |
+| BANR | Banner Corporation | **$2.54B** ✓ | $69.21 | -1.5% | No fresh headline; next report Jan 20 (Yahoo) | ⚡ Holding its 50D ($69.10) by 11 cents. |
 
-**Rotation Note:** All four stay sub-$5B ($1.80B–$2.86B); CUBI is the largest and still 43% under the line. Two reported: CUBI beat and BANR missed, and both rose. All four rose with KRE (+3.8%) in a week the money-center banks fell — the regional bid that last week's page said was missing.
+**Rotation Note:** All four stay sub-$5B ($1.69B–$2.84B); CUBI is the largest. All four fell in a week XLF rose and KRE fell 0.6%, which ends last week's regional bid. HOPE's rising delinquencies are the only asset-quality note on this page this week, from a headline, and I want the release before leaning on it.
 
 ---
 
@@ -83,19 +83,20 @@ Week path: Mon $55.06, Tue $55.72, Wed $56.04, Thu $56.65, Fri $55.90 (O $56.19 
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $58.39 | Price 4.3% below |
-| Week High | $56.67 | Thursday intraday |
-| Thursday Close | $56.65 | Best close since Sep 14; over the 50D and the $56.16 add line |
-| 50-Day MA | $55.98 | Falling; Friday closed 8 cents under it |
-| Current Price | $55.90 | Friday close; +0.7% W/W |
-| Week Low | $55.03 | Monday intraday; held last week's shelf |
-| 20-Day MA | $54.69 | Rising; 2.2% under price |
-| Old Shelf | $54.46 – $54.55 | Last week's add line; untested this week |
-| 200-Day MA | $53.36 | 4.5% below |
+| 52W High | $58.39 | Price 3.2% below; closing high $58.35 |
+| Week High | $57.23 | Thursday intraday; Friday's $57.20 failed under it |
+| Thursday Close | $56.94 | Best close since Sep 11; over the $56.67 breakout line |
+| Breakout Line | $56.67 | **Confirmed Thursday; Friday closed 16 cents under it** |
+| Current Price | $56.51 | Friday close; +1.09% W/W |
+| 50-Day MA | $55.87 | Flat; held on every close but Tuesday's |
+| Week Low | $55.75 | Tuesday intraday |
+| 20-Day MA | $55.33 | Rising; 2.1% under price |
+| Add-Off Lines | $55.03 / $54.46 | Marky's rule: under $55.03 the second add comes off, under $54.46 the first. $55.03 is also the Council's XLF sector stop |
+| 200-Day MA | $53.41 | 5.5% below |
 | October 1 Low | $52.81 | The stop line; not tested |
-| RSI (14) | 55.3 | Flat. Under the fund: BAC 26.4, SCHW 30.5, MS 34.1, C 34.9; CUBI 76.1, BRK.B 73.5, MA 70.2, V 70.0 |
+| RSI (14) | 58.4 | From 55.3. Under the fund: BAC 27.7, SCHW 27.7; MA 70.7, V 69.4 |
 
-**Marky Setup Assessment:** The add fired Thursday on the close over $56.16 and I took it. Friday closed $55.90 — under the 50D, still over the add line's fail point. **My rule now: a close under $55.03 (this week's low) takes the second add off; under $54.46 takes the first.** A close back over $56.67 is the breakout I want to see confirmed. The breadth under the fund is still split: four names over 70 RSI, four under 35. The regionals joining the payments names is the first broadening I have seen; the money centers are the part that has not turned.
+**Marky Setup Assessment:** The breakout I asked for printed Thursday at $56.94, and Friday's market closed it back 16 cents under the line. A fund that loses 0.8% on a day the S&P loses 1.8% and holds its 50D is doing what I want, so I hold both adds. **My rule now: a close under $55.75 (this week's low) is the first warning; $55.03 still takes the second add off, $54.46 the first.** Breadth is the real improvement: 13 of 17 rose, and the money centers took part. The split is narrower: only BAC and SCHW under 30, and both at lows no one has explained. If those two turn, the fund goes to $58.
 
 ---
 
@@ -103,20 +104,22 @@ Week path: Mon $55.06, Tue $55.72, Wed $56.04, Thu $56.65, Fri $55.90 (O $56.19 
 
 | Factor | Level | Implication for XLF |
 |---|---|---|
-| Fed Funds Rate | **3.75–4.00%** (Sep 16 hike) | October hike odds **~7–8%** (CME-based trackers, Oct 23), from ~42–52% last week. One account puts a December hike near 80% (BeInCrypto citing CME). FOMC **Oct 27–28** |
-| 2Y Treasury | **4.69%** Fri (Treasury par); 4.65% Thu | -5bp on the week |
-| 10Y Treasury | **5.00%** Fri; 4.96% Thu; 30Y **5.33%** | -9bp. Yahoo ^TNX's 4.95/4.99 were its first closes under 5.00 since Sep 22 |
-| **2Y–10Y Spread** | **+31bp** (Fri par); +35bp last week; +44bp two weeks ago; 10s–3M **+78bp** | **Bull flattening, -4bp** — a third straight week, but not a sharp move |
-| Credit | **Not re-sourced** — FRED did not respond to four requests tonight | Last reading on this page: HY OAS 3.25% (Oct 14), IG 0.84% |
-| Inflation | Sep CPI 3.7% y/y, core 2.6% (Oct 14, carried) | No print this week; PCE next week |
-| Growth / Labor | Not re-sourced this week | Q3 GDP and PCE next week (moomoo calendar) |
-| Oil → Growth Signal | WTI **$103.44 (Fri evening, CL=F)** vs $101.41 settled last week (CLX26); Brent $111.66 (Fri evening, BZ=F) | Not a settled change. Brent above $111 Thursday on Iran war worries (Yahoo) |
-| DXY | **101.75 (Fri evening, DX-Y.NYB)** | Flat; above the 101 line (#115) |
-| Regulatory — AXP | Legal reserves include the remaining part of an **OCC civil money penalty** (AXP Q3 release) | The second penalty disclosed in two weeks among the top ten, after BAC's $1.2B |
-| Regulatory — Cards / Capital / Stablecoins | Card-competition bill, Basel III re-proposal, GENIUS Act comments (~Nov 23) | All carried; **not re-sourced this week** |
-| CRE / Private Credit | No fresh print sourced | — |
+| Fed Funds Rate | **3.75–4.00%**, held Oct 28 by **10-2** (Cook, Hammack for a hike) | December hike ~68–79% on most trackers (72.4% CME-based Friday; OIS ~68%; one report 82.8%). BofA forecasts December and March hikes (headline). Next FOMC **Dec 9** |
+| 2Y Treasury | **4.56%** Fri (Treasury par), from 4.69% | -13bp, from 4.70% Tuesday |
+| 10Y Treasury | **4.94%** Fri; 30Y **5.31%** | -6bp; closed 5.05% Wednesday |
+| **2Y–10Y Spread** | **+38bp** (Fri par); +31bp last week; +35bp; +44bp; 10s–3M **+78bp** | **Bull steepening, +7bp** — the first widening after three weeks of narrowing. Helpful to NIM, not a sharp move |
+| Credit | **HY OAS 3.26%** (Oct 29, FRED), 3.38% Oct 23, peak **3.40%** Oct 22, low 3.14% Oct 28; **IG 0.89%** | Friday's selloff not yet printed. Bloomberg reports AI debt driving a wedge between corporate bonds and credit hedges (headline) |
+| Inflation | Sep PCE 3.6% y/y, core 3.1% (Oct 29, search coverage) | Quarterly PCE slowed to 2.1%. Sep CPI 3.7% (carried) |
+| Growth / Labor | Q3 GDP **+3.4%** (BEA advance); claims **194K** | Strong; the data side of the December case |
+| Oil → Growth Signal | WTI **$104.12 (Yahoo CL=F Friday bar, not confirmed as a settlement)** vs $103.27 settled last week (CLZ26); Brent $117.64 (BZ=F, same caveat) | Change provisional. A tanker attack in Hormuz Friday (Bloomberg headline) |
+| DXY | **101.88 (DX-Y.NYB)** | Above the 101 line (#115) |
+| Private credit / distressed | **Arini** down more than 21% YTD (Hedgeweek) and offloading about $800M of debt, with Pimco and Oaktree bidding (WSJ, Bloomberg headlines) | One fund, not a system signal. It is the kind of forced sale I watch |
+| Regulatory — Cards | Visa took a **$469M interchange-litigation provision** | The swipe-fee fight is now in the numbers, and the stock rose anyway |
+| Regulatory — Capital / Stablecoins | Basel III re-proposal, GENIUS Act comments (~Nov 23) | Both carried; **not re-sourced this week** (searches returned 2024 material only) |
+| Market structure | JPMorgan among 30-plus objectors to an OKX-ICE tokenized-stock venue (Unchained, CryptoProwl headlines); Binance hack (WSJ) | Watch item only |
+| AI lending | WSJ: the AI boom is driving a jump in lending and bankers still sound cautious (headline); JPMorgan to lead Anthropic's US retail share sale (InvestorsHub) | The banks' exposure to the buildout is the question tech's week raised. Not quantified anywhere I can source |
 
-**Ophelia Verdict:** The Fed is mostly out of the October story, which is the good news. The bad news is that the curve is still flattening and I could not see credit. I said my lines were HY under 3.00% and 2s10s holding +30bp. The curve is at +31 — one more week like this and it breaks my line. Credit I cannot read tonight. The fund is rising on payments, insurance and now the regionals; the money-center banks — the most rate-sensitive part — keep falling. That is consistent with a market that expects a flatter curve to squeeze margins. **Neutral on the fund, cautious on the money centers.** I want to see Saturday's credit data before Monday.
+**Ophelia Verdict:** Last week I set two lines: HY under 3.00% and 2s10s holding +30bp. The curve held and steepened. Credit went through the old 3.25% peak to 3.40% before coming in, and I cannot yet see Friday. **I move to neutral-positive on the fund, from neutral,** on the curve and the breadth, and I stay cautious on the money centers until BAC stops making lows. The risk I carry into next week is new: tech's selloff was about who funds the AI buildout, and bond and loan desks are the answer. If that is the next shoe, financials are not a shelter; they are the next stop. HY OAS back over 3.40% ends the upgrade.
 
 ---
 
@@ -124,93 +127,97 @@ Week path: Mon $55.06, Tue $55.72, Wed $56.04, Thu $56.65, Fri $55.90 (O $56.19 
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Regionals Join the Defensives; the Big Banks Don't
+### This Week's Story: The Payments Print, and a Rotation with a Question Attached
 
-XLF rose **0.7% to $55.90**, its third straight weekly gain, while SPY fell 0.4%.
+XLF rose **1.09% to $56.51**, its fourth straight weekly gain, while XLK fell 2.0% and SPY 0.6%.
 
-**Catalyst 1 — Chubb (Tue Oct 20):** Record core operating income, $7.66 a share, and an 84.1% P&C combined ratio, despite catastrophe losses of $705M against $285M a year ago. The stock fell 1.3% on the week. The insurers are now trading on momentum: Travelers made a two-year closing high Thursday, 6% over its mean target.
+**Catalyst 1 — Visa (Tue Oct 27):** Net revenue +13%, non-GAAP EPS $3.48, a 16% dividend raise, and a $469M litigation provision. The stock slipped Wednesday, then rose with Mastercard.
 
-**Catalyst 2 — The regionals report (Oct 21–22):** Banner missed on EPS ($1.36 vs ~$1.57) on merger costs but widened its margin; it rose 4.0%. Customers Bancorp beat ($2.25 vs $2.13) with record deposits and loans and a 47% efficiency ratio; it rose 13.1% to a two-year high. KRE rose 3.8% to its best close since Sep 15.
+**Catalyst 2 — The Fed (Wed Oct 28):** A hold, two dissents for a hike, and "strong" in place of "solid". December stayed priced. The 10Y rose to 5.05% par that day and finished the week at 4.94%.
 
-**Catalyst 3 — The Fed steps back:** October hike odds fell from about half to under 10%. The 10Y closed 5.00% and the 2Y 4.69%; 2s10s narrowed to +31bp, a third straight week of flattening.
+**Catalyst 3 — Mastercard and the data (Thu Oct 29):** Adjusted EPS $5.31, revenue +14%, +4.2% on the day. GDP +3.4% and core PCE 3.1% the same morning. XLF closed $56.94, its best since Sep 11.
 
-**Catalyst 4 — American Express (Fri Oct 23):** Adjusted EPS $4.68 beat; revenue was slightly short; full-year guidance went up. It also announced a 5% job cut and added legal reserves for an OCC penalty. The stock fell 3.7% Friday and took the fund back under its 50D.
+**Catalyst 4 — The rotation (Thu–Fri):** Tech fell 1.2% and 4.9% in two sessions. XLF rose 1.4% and fell 0.8%. Capital moved, but Friday's money-center losses (GS -3.6%, BLK -2.4%, C -2.5%) show this was not a clean shelter.
 
-**The laggards:** The money centers fell with no news — C -2.9%, JPM -2.4%, WFC -1.8% — and BAC closed Monday at its lowest since May.
+**The laggards:** BAC closed at its lowest since May and SCHW at its lowest since June, neither on news I can source.
 
-**The Bottom Line:** Last week the defensives carried the fund. This week the regionals joined them after two decent prints. The largest banks, the most exposed to a flattening curve, did not. XLF broke over its 50D for one day; next week's FOMC and V/MA prints decide whether it holds.
+**The Bottom Line:** The fund made its breakout and the curve turned helpful. Two weeks ago the rally was payments and insurance; last week regionals joined; this week the money centers did and the regionals rested. The open question is whether AI financing turns from a tech problem into a credit one.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Dates are Yahoo Finance calendar dates pulled Oct 23, not company-confirmed; EPS is the Yahoo consensus mean.
+Dates are Yahoo Finance calendar dates pulled Oct 31, not company-confirmed; EPS is the Yahoo consensus mean.
 
 | Company | Ticker | Date | EPS Est. | What to Watch |
 |---|---|---|---|---|
-| **Visa** | V | **Tue Oct 27** | $3.44 | Two-year closing high Thursday; RSI 70.0 into it |
-| **Hope Bancorp** | HOPE | **Wed Oct 28** | $0.29 (carried) | Small-cap watch; the last of the four to report |
-| **Mastercard** | MA | **Thu Oct 29** | $5.17 | Same setup as Visa; RSI 70.2 |
-| **Berkshire Hathaway** | BRK.B | **Sat Nov 7** | $6.14 (from $6.03) | Cash, float, buybacks; two-year closing high Thursday |
+| **Berkshire Hathaway** | BRK.B | **Sat Nov 7** | $6.14 | Cash, float, buybacks; insurers are the fund's strength |
+| **JPMorgan / Citi / Wells / Morgan Stanley** | JPM / C / WFC / MS | **Jan 14** | $5.90 / $2.29 / $1.84 / $2.98 | The next bank prints; NII on a steeper curve |
+| **BlackRock** | BLK | Jan 14 | $15.47 | Flows |
+| **Bank of America / PNC** | BAC / PNC | Jan 15 | $1.12 / $5.10 | BAC's "clean quarter", Cecil's condition |
+| **Goldman Sachs** | GS | Jan 19 | $16.05 | Advisory and any IPO calendar |
+| **Schwab / Customers** | SCHW / CUBI | Jan 21 | $1.72 / $2.27 | SCHW after a June low |
+| **Visa / Mastercard** | V / MA | Jan 26 / Jan 28 | $3.63 / $5.13 | Cross-border; MA's timing payback |
 
-> **Reported this week:** CB (Oct 20, record core EPS $7.66); BANR (Oct 21, $1.36, a miss on merger costs); CUBI (Oct 22, $2.25, a beat); AXP (Oct 23, adjusted $4.68, a beat; revenue slightly short; guide raised). The large banks next report mid-January (Yahoo: JPM, WFC, C, MS Jan 14; BAC, PNC Jan 15; GS Jan 19; SCHW Jan 21).
+> **Reported this week:** V (Oct 27, non-GAAP $3.48 vs about $3.44; dividend +16%); HOPE (Oct 27–28, narrow miss per Earnings Whispers; guide cut); MA (Oct 29, adjusted $5.31 vs ~$5.15). Nothing else in the page's list reports before January except Berkshire. Small-cap dates: WAFD Jan 14, BANR Jan 20, CUBI Jan 21, HOPE Jan 26 (Yahoo).
 
 | Macro / Regulatory Catalyst | Date | What to Watch |
 |---|---|---|
-| **FOMC** | **Oct 27–28** | ~7–8% hike odds; a hold is priced, the statement and December guidance are not |
-| **Q3 GDP / September PCE** | Next week (moomoo calendar; exact dates not confirmed) | Growth and inflation into the December decision |
+| **Midterm election** | **Nov 3** | Regulatory outlook; card-competition legislation |
+| **FOMC** | **Dec 9** | ~70% hike odds, with projections |
 | **GENIUS Act comments** | ~Nov 23 (carried) | Stablecoin rules |
-| **Basel III re-proposal** | ~Q4 (carried) | Capital relief or not |
+| **Basel III re-proposal** | ~Q4 (carried, not re-sourced) | Capital relief or not |
 
-**Marky's Binary Event Read:** The FOMC and Visa land in the same 36 hours, with Mastercard the next day. Payments go into their prints at two-year highs with RSI 70 — a beat may already be in the price. The fund is sitting on its 50D. I hold the adds and let the rule decide.
+**Marky's Binary Event Read:** Earnings season is over for this fund until January, so the binaries are macro now: the election Tuesday and the December hike. The fund goes into both with the breakout printed. I hold, and let the $55.75 / $55.03 lines work.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- XLF closes over **$56.67** and holds the 50D; the regional rally spreads to the money centers from RSI 26–35
-- The Fed holds on Oct 28 without hinting at December; the curve stops flattening
-- V and MA beat and hold their highs
+- XLF closes back over **$56.67** and then $57.23; BAC and SCHW turn from RSI 28; 2s10s pushes past +40bp
+- HY OAS stays under 3.40% through tech's selloff; the rotation stays
+- December's hike comes with a steeper curve, helping NIM
 
 ### 🔴 Bear Case
-- 2s10s closes under +30bp, breaking Ophelia's line; the money centers keep falling on margin fears
-- V and MA sell off on their prints from RSI 70 and take the fund's support with them
-- A close under **$55.03** takes the second add off; under $54.46 the first; $52.81 is the stop
-- Credit, unread tonight, turns out to have widened past 3.25%
+- Friday's selloff shows up in HY OAS: back through **3.40%** ends Ophelia's upgrade
+- Tech's financing worry turns to lenders: an AI-linked loan or private-credit loss lands on a bank
+- BAC closes under $50 and takes the money centers with it
+- A close under **$55.03** takes the second add off and hits the Council's sector stop; under $54.46 the first; $52.81 is the stop
 
 ### ⚠️ The Wild Card
-**Two penalties in two weeks.** BAC disclosed $1.2B and AXP added reserves for an OCC penalty. Two cases are not a trend, but if regulators are getting more aggressive on consumer and compliance cases while capital rules are being eased, the costs land in the line items the market is not watching.
+**The shelter and the funder are the same sector.** Rotation out of tech helped XLF this week, and banks, private lenders and bond buyers are also who finance the buildout tech was sold for. The page cannot quantify that exposure yet. If Amazon's $80B credit line and Alphabet's negative cash flow are how the next leg gets funded, then the tech trade and the XLF trade are not opposites.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The Fed left the October story, which helps. The curve kept flattening, to +31bp — one more week and my +30bp line breaks. I could not read credit tonight. Neutral on the fund, cautious on the money centers. I want Saturday's spread data before Monday."*
+**Ophelia:** *"The curve held my line and steepened to +38bp. Credit went through the old peak to 3.40% and came back to 3.26%, but Friday is not in that number. Neutral-positive on the fund, cautious on the money centers. HY back over 3.40% ends it. And I am watching whether AI debt becomes the banks' problem."*
 
-**Marky:** *"The add fired Thursday at $56.65 and Friday slipped eight cents under the 50D. I hold. A close under $55.03 takes the second add off, under $54.46 the first. The regionals joined the move this week — the first broadening I have seen."*
+**Marky:** *"The breakout printed Thursday at $56.94 and Friday closed 16 cents under the line while holding the 50D on a 1.8% market fall. I hold both adds. $55.75 is the first warning, $55.03 takes the second add off. Thirteen of seventeen rose, from seven last week."*
 
-**Cecil:** *"Chubb printed a record and fell; Travelers is 6% over target and rose. Insurance is momentum now and I stay out. BAC at 9.7x forward is at a May low; I watch it daily but wait for a clean quarter. AXP raised guidance, cut costs and fell 3.7% — that is the one I would add."*
+**Cecil:** *"Insurance kept working without me and I stay out. AXP, the one I said to add, rose 1.9%. BAC is at a May low at 9.6x and I wait for January. SCHW at 11.3x with a 33% gap goes on my list, and it stays a list until I can find why it keeps falling."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 23, ~23:30 ET): XLF, KRE and 21 names, daily bars through the Oct 23 close (every last bar dated Oct 23; no repair needed); weekly changes vs settled Oct 16 closes; targets, P/E, caps; funds_data weights (unchanged a third week); Yahoo earnings dates. CSVs: workspace 2026-10-23-gridA/fin_*.csv
-- U.S. Treasury daily par yield curve (fetched Oct 23): treasury_par_2026.csv
-- data/market_state.json (as of 2026-10-16): last week's WTI settlement $101.41 (CLX26)
-- SEC 8-K, Investing.com, MarketBeat, Benzinga, Yahoo (Oct 23): American Express Q3 results, guidance, job cuts, OCC reserve, share reaction
-- SEC 8-K and Chubb release, Reinsurance News (Oct 20): Chubb Q3
-- SEC 8-K (Banner Q3 exhibit, Oct 21); Earnings Whispers ($1.57 consensus)
-- SEC 8-K (Customers Bancorp Q3 release, Oct 22)
-- StockAnalysis / Financial Content (Oct 19–20): KRE closes (matched to the daily bars)
-- Rate trackers and BeInCrypto (Oct 22–23): October and December hike odds
-- **Not re-sourced this week:** HY and IG credit spreads (FRED unreachable — four attempts timed out or were dropped); card-competition bill; Basel III; GENIUS Act; growth/labor data; causes of the money-center slide and the V/MA/BRK.B/TRV highs
-- Restatements: none against last week's closes. BANR consensus per Earnings Whispers ($1.57) matches last week's Yahoo figure
-- Repo cross-checks: prior revision of this page (Oct 16); wiki/tech.md (488a2c2)
+- Yahoo Finance / yfinance 1.6.0 (pulled Sat Oct 31, ~10:00 ET): XLF, KRE and 21 names, daily bars through the Oct 30 close (every last bar dated Oct 30, settled; no repair needed); weekly changes vs settled Oct 23 closes; targets, P/E, caps; funds_data weights (unchanged a fourth week); Yahoo earnings dates. CSVs: workspace 2026-10-30-gridA/fin_*.csv
+- U.S. Treasury daily par yield curve (fetched Oct 31): treasury_par_2026.csv
+- FRED (fetched Oct 31): HY and IG OAS through Oct 29
+- data/market_state.json (as of 2026-10-23): last week's WTI settlement $103.27 (CLZ26)
+- Visa fiscal Q4 2026 release (SEC 8-K, Visa newsroom) via search, Oct 27
+- Mastercard Q3 2026 release (SEC 8-K) via search; preview consensus ($5.15, $9.64B), Oct 29
+- investingLive (Oct 28): FOMC decision and vote; rate trackers, rateprobability.com (Oct 30)
+- BEA Q3 advance GDP via search; PCE and claims via search coverage
+- Hedgeweek: Arini's year-to-date losses
+- Finviz news feed, headlines only (articles not read): Earnings Whispers (HOPE, MA), Stocktwits (MA's best day), MarketWatch (GS and the Dow), WSJ and Bloomberg (Arini, AI debt, AI lending), Investing.com (BofA hike call), Unchained/CryptoProwl (OKX-ICE), InvestorsHub (Anthropic retail lead)
+- **Not re-sourced this week:** causes of the BAC and SCHW lows; card-competition bill; Basel III; GENIUS Act; CRE; Hope Bancorp's release itself (searches returned 2025); the exact V consensus (the $3.44 is last week's Yahoo mean on this page); FRED for Oct 30
+- Restatements: MS Oct 23 close $179.49 → $178.40 (adjusted bar). The Oct 23 page's HY "3.25% peak" is superseded: FRED now shows 3.40% on Oct 22
+- Repo cross-checks: prior revision of this page (Oct 23); wiki/tech.md (1499ed8)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-10-23** (Friday-evening run; covering week ended Fri Oct 23, 2026)*
+*Last updated by Saturday Research Crew: **2026-10-31** (Saturday-morning late run; covering week ended Fri Oct 30, 2026)*
 *Next update: Every Saturday 10:00 AM ET*
 *Data sources: Yahoo Finance, Federal Reserve, U.S. Treasury / FRED, company IR, Bloomberg, Dow Jones Newswires, market data feeds*
