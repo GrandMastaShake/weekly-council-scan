@@ -132,7 +132,7 @@ Tracking beats and misses over time to spot bias in consensus estimates.
 
 > *Ophelia's note to the Council before Monday's session.*
 
-**Macro Thesis Check:** The Fed and the data said the same thing this week, and the market said something else. GDP 3.4%, claims 194K, confidence 91.7, a 10-2 hold with two votes to hike, and Musalem saying "necessary, and soon." That is the hike half of my regime, and it is stronger than it was a week ago. Then Intel guided down, Amazon's cash flow showed up, and the market cut about 0.8 of a hike from the path to June 2027 in one session's worth of repricing. I still side with the data, with two cautions. Final sales of 1.7% and flat real spending say the 3.4% was softer underneath. And a seven percent day in chips is a real tightening in financial conditions, whatever Warsh says about being comfortable with it. Core PCE at +0.3% ended the run of inflation under-calls for now. **The regime is unchanged: sticky inflation, a December hike, and a growth scare that comes from equity and credit stress rather than the economy.** Three flags are up (NFP, CPI, Oil). Last week I was worried oil would fire before the FOMC. It did.
+**Macro Thesis Check:** The Fed and the data said the same thing this week, and the market said something else. GDP 3.4%, claims 194K, confidence 91.7, a 10-2 hold with two votes to hike, and Musalem saying "necessary, and soon." That is the hike half of my regime, and it is stronger than it was a week ago. Then Intel guided down, Amazon's cash flow showed up, and the market cut about 0.8 of a hike from the path to June 2027. I still side with the data, with two cautions. Final sales of 1.7% and flat real spending say the 3.4% was softer underneath. And a seven percent day in chips is a real tightening in financial conditions, whatever Warsh says about being comfortable with it. Core PCE at +0.3% ended the run of inflation under-calls for now. **The regime is unchanged: sticky inflation, a December hike, and a growth scare that comes from equity and credit stress rather than the economy.** Three flags are up (NFP, CPI, Oil). Last week I was worried oil would fire before the FOMC. It did.
 
 **Next Week's Watchlist:**
 - **Mon 11/2 — ISM Manufacturing at 10:00 AM (cons 54.7, prior 54.5; prices 77.5).** ≥ 56.0 with prices ≥ 80 puts December back over 80%. Senior Loan Officer Survey at 2:00, Treasury financing estimates at 3:00. Apple after the close. OPEC+ from Sunday, and Monday's December WTI settle against $100.
@@ -148,7 +148,7 @@ Tracking beats and misses over time to spot bias in consensus estimates.
 
 ## OPHELIA'S SIGN-OFF
 
-> *"Two votes to hike, GDP at three and a half, and the ten-year still fell, because Intel lost a quarter of its value and Amazon's cash flow went red. The Fed is telling you one thing and the tape is telling you another, and oil at a hundred and four has quietly raised my third flag while everyone watched chips. Tuesday the country votes, and Friday the labor market speaks. I'm keeping the cash short and the hedges on until both have spoken."*
+> *"Two votes to hike, GDP at three point four, and the ten-year still fell, because Intel lost a quarter of its value and Amazon's cash flow went red. The Fed is telling you one thing and the tape is telling you another, and oil at a hundred and four has quietly raised my third flag while everyone watched chips. Tuesday the country votes, and Friday the labor market speaks. I'm keeping the cash short and the hedges on until both have spoken."*
 >
 > — **Ophelia**, Macro Oracle
 
