@@ -4,9 +4,9 @@
 >
 > *"The canary does not predict the mine collapse. It simply dies first. Watch the canary."* — Marky
 
-> **Truth layer:** every macro number on this page equals `macro/facts.json` (generated 2026-10-25, same fetch, commit 262e30b; `truth_check --facts` 26 ok / 0 warn / 0 fail / 2 skip before push; the two skips were WTI and gold, carried stale). **Correction 2026-10-25 ~17:35 ET:** WTI and gold in facts.json were rebuilt from the rolled feed (commit 9f4ff50; `truth_check --facts` now 28 ok / 0 warn / 0 fail / 0 skip), and the WTI and gold rows below now carry those values. Week ending Friday 2026-10-23 closes.
+> **Truth layer:** every macro number on this page equals `macro/facts.json` (generated 2026-10-31, same fetch, commit f9cd1ca; `truth_check --facts` 28 ok / 0 warn / 0 fail / 0 skip before push). Week ending Friday 2026-10-30 closes.
 
-> **Run note:** this update ran late (Sunday 2026-10-25 ~08:56–09:50 ET; scheduled Saturday 2026-10-24 19:39 ET). **FRED timed out from the runner's own connection for a fourth week** (nine series, two attempts each, plus a 30-second curl test). All nine series were downloaded in one fredgraph request through a second network path during the same run, so **no FRED row is stale**: DGS2 / DGS10 / DGS3MO, the four OAS series and VIXCLS are posted through Thu 2026-10-22 (FRED's usual one-day lag), the 10Y breakeven through Fri 2026-10-23. **WTI and gold (corrected):** when this page was written, `data/market_state.json` was still as_of 2026-10-16, so this page and facts.json first carried last week's settlements marked `stale: true`. The Universe & Data Feed Builder committed the 10/23 feed at 17:04 ET Sunday (842a5ab), and facts.json was rebuilt from it (9f4ff50): **WTI $103.27 (CLZ26), gold $3,991.10 (GCV26), both as_of 2026-10-23, no longer stale.** Finviz Elite breadth ran cleanly.
+> **Run note:** this update ran on schedule (Saturday 2026-10-31 ~19:46 ET). **WTI and gold are from the 2026-10-30 feed** (`data/market_state.json`), not stale. **FRED timed out from the runner's own connection for a fifth week**, and the in-app browser refused the site. All nine series were downloaded in one fredgraph request through a second network path during the same run, so **no FRED row is stale**: DGS2 / DGS10 / DGS3MO, the four OAS series and VIXCLS are posted through Thu 2026-10-29 (FRED's usual one-day lag), the 10Y breakeven through Fri 2026-10-30. Finviz Elite breadth ran cleanly.
 
 ---
 
@@ -14,18 +14,18 @@
 
 | Metric | Current | 1W Ago | 1M Ago | Regime |
 |---|---|---|---|---|
-| VIX | **19.45** | 19.99 | 15.67 | 🟡 **Under 20 on every close; 20.31 intraday Thu, 20.66 intraday Fri** |
-| VIX 20-Day MA | ~16.54 | ~15.73 | — | — |
-| VIX Trend | **-2.7% WoW**; closes 18.44 / 17.31 / 16.68 / 19.03 / 19.45; low 16.51, high **20.66 Fri**; all five closes above 16.50 | — | — | — |
-| VIX3M (term structure) | 20.48 (VIX/VIX3M **0.950**) | 20.50 (0.975) | 18.43 (0.850) | 🟡 **Contango thin: 0.941 → 0.912 → 0.891 → 0.946 → 0.950** |
-| Implied SPY Move (30D) | ~±5.6% | ~±5.8% | — | — |
-| VVIX (VIX of VIX) | **109.70** | 109.91 | 90.57 | 🔴 **Held at 110; 118.17 intraweek high** |
-| Total Put/Call Ratio (CBOE) | 0.93 (5D avg 0.90) | 0.92 (5D avg 0.87) | 0.80 | 🟡 **Five-day average the highest in this fetch** |
-| Equity Put/Call Ratio (CBOE) | 0.67 (5D avg 0.60) | 0.65 (5D avg 0.61) | 0.55 | 🟡 **0.69 Thu on the SOX selloff** |
+| VIX | **19.42** | 19.45 | 16.39 | 🟡 **Under 20 on every close; 23.93 intraday Fri** |
+| VIX 20-Day MA | ~17.00 | ~16.54 | — | — |
+| VIX Trend | **-0.15% WoW**; closes 18.39 / 17.52 / 16.91 / 17.20 / 19.42; low 16.21, high **23.93 Fri** | — | — | — |
+| VIX3M (term structure) | 20.78 (VIX/VIX3M **0.935**) | 20.48 (0.950) | 18.58 (0.882) | 🟡 **Contango thin: 0.922 → 0.895 → 0.880 → 0.888 → 0.935** |
+| Implied SPY Move (30D) | ~±5.6% | ~±5.6% | — | — |
+| VVIX (VIX of VIX) | **106.43** | 109.70 | 92.01 | 🔴 **124.06 intraday Fri; 98.02 was Thursday's high** |
+| Total Put/Call Ratio (CBOE) | 0.90 (5D avg 0.89) | 0.93 (5D avg 0.90) | 0.90 | 🟡 **Five-day average just off last week's high** |
+| Equity Put/Call Ratio (CBOE) | 0.66 (5D avg 0.59) | 0.67 (5D avg 0.60) | 0.57 | 🟡 **0.54 Wed, 0.66 Fri** |
 
-> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. This week the Friday close was cross-checked against the **CBOE official daily history file (VIX_History.csv): Fri 2026-10-23 close 19.45, high 20.66**, an exact match for Yahoo ^VIX, and the CBOE file matches Yahoo on all five closes. **FRED VIXCLS** is posted through Thu 10/22 (19.03) and agrees. **Put/call ratios** are from CBOE's official daily market statistics file (cdn.cboe.com daily_options), Fri 2026-10-23 vs. Fri 2026-10-16 and Thu 2026-09-24 (21 sessions back); 5D averages are Mon–Fri of each week. Index put/call was 1.10 Friday (5D avg 1.03); SPX + SPXW 1.25 (5D avg 1.20, from 1.24 the week before; Friday 10/16's 1.46 remains the high of the fetch).*
+> *Source note: VIX prints vary by vendor — discrepancies of ~2–3 pts are common across quote sources (delayed feeds, spot vs. VX futures, stale prints). Canonical reference: CBOE official close / FRED VIXCLS. This week the Friday close was cross-checked against the **CBOE official daily history file (VIX_History.csv): Fri 2026-10-30 close 19.42, high 23.93**, an exact match for Yahoo ^VIX, and the CBOE file matches Yahoo on all five closes. **FRED VIXCLS** is posted through Thu 10/29 (17.20) and agrees. **Put/call ratios** are from CBOE's official daily market statistics file (cdn.cboe.com daily_options), Fri 2026-10-30 vs. Fri 2026-10-23 and Thu 2026-10-01 (21 sessions back); 5D averages are Mon–Fri of each week. Index put/call was 1.03 Friday (5D avg 1.01); SPX + SPXW 1.25 (5D avg 1.15, from 1.20 the week before).*
 
-**Marky Interpretation:** Last week VIX closed one cent under 20. This week it never closed above it either, but it touched it twice: **20.31 on Thursday**, the day SOX fell 6.7% after Lam's supply comment and Meta's reversal, and **20.66 on Friday**, when December crude settled above $103 on Hormuz headlines (wiki/economic-calendar.md, #175). The close was 19.45. What did not relax is the structure. VIX3M stayed at 20.48, so the ratio finished at **0.950** and never got back under 0.89; VVIX held **109.70**; equity put/call printed 0.69 on Thursday and the total 5-day average rose to 0.90, the highest in this fetch. The low of the week was 16.51, above every close from the first half of October. My lines stay where they were: a close above 20 is the regime question, 25 is the alarm, a ratio above 1.00 is the tell. Wednesday has the FOMC and Microsoft/Alphabet inside four hours.
+**Marky Interpretation:** The Friday close is the same as last Friday's, and that hides the week. VIX fell four straight sessions to a low of **16.21**, ratio 0.880, VVIX under 100. Then on Friday it printed **23.93** intraday, with Intel down 28.6% and SOX down 7.20% (#183, #190), and closed at **19.42**. VVIX hit **124.06** and closed 106.43. So the fear came and most of it left the same day, the same fade as Oct 16. What it left behind is a ratio back at **0.935** and VIX3M at 20.78, up 1.46% on the week. My lines stay where they were: a close above 20 is the regime question, 25 is the alarm, a ratio above 1.00 is the tell. Next week carries Apple, AMD, the midterms and payrolls.
 
 ---
 
@@ -33,116 +33,116 @@
 
 | Maturity | Yield | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
-| 13-Week (T-Bill) | 4.032% | -0.038% | -0.036% (vs. 4.068% on 9/24) | **Closes 4.075 / 4.080 / 4.063 / 4.022 / 4.032; October priced out, December still on** |
-| 2-Year | 4.65% (FRED DGS2, Thu 10/22 — see note) | **-0.12%** (vs. 4.77% Thu 10/15) | -0.22% (vs. 4.87% on 9/24) | **4.74 / 4.77 / 4.79 / 4.81, then -16 bps Thursday** |
-| 5-Year | 4.805% | -0.094% | -0.220% | Closes 4.929 / 4.935 / 4.972 / 4.768 / 4.805 |
-| **10-Year** | **4.988%** | **-0.110%** | **-0.174%** | **First weekly close under 5.00% in five weeks; closes 5.136 / 5.117 / 5.146 / 4.953 / 4.988** |
-| **10Y–2Y Spread** | **~+34 bps** (Fri 10Y vs. Thu 2Y) | +1 bp vs. last week's +33 | — | **Positive; Thursday's rally moved both ends together** |
-| **10Y–5Y Spread** | **~+18.3 bps** | -1.6 bps (was +19.9) | — | Flat to slightly flatter |
-| **10Y–3M Spread** | **~+96 bps** | -7 bps (was +103) | — | **Positive, flatter for a third week** |
+| 13-Week (T-Bill) | 3.973% | -0.059% | -0.009% (vs. 3.982% on 10/1) | **Closes 4.025 / 4.040 / 3.995 / 3.998 / 3.973; the Fed held, December odds slipped** |
+| 2-Year | 4.61% (FRED DGS2, Thu 10/29 — see note) | **-0.04%** (vs. 4.65% Thu 10/22) | -0.17% (vs. 4.78% on 10/1) | **4.69 / 4.68 / 4.70 / 4.67 / 4.61 from last Friday; Friday 10/30 not yet posted** |
+| 5-Year | 4.721% | -0.084% | -0.284% | Closes 4.824 / 4.840 / 4.871 / 4.801 / 4.721 |
+| **10-Year** | **4.929%** | **-0.059%** | **-0.308%** | **Second weekly close under 5.00%; closes 4.986 / 4.993 / 5.045 / 4.989 / 4.929** |
+| **10Y–2Y Spread** | **~+32 bps** (Fri 10Y vs. Thu 2Y) | -2 bps vs. last week's +34 | — | **Positive; same-day Thursday basis +37 (see note)** |
+| **10Y–5Y Spread** | **~+20.8 bps** | +2.5 bps (was +18.3) | — | Slightly steeper |
+| **10Y–3M Spread** | **~+96 bps** | Flat (+96 last week) | — | **Positive, stopped flattening** |
 
-> *2Y source: FRED DGS2, Thu 2026-10-22 (FRED's one-day lag), so the 10Y–2Y spread pairs Friday's 10Y with Thursday's 2Y. On a same-day Thursday basis (FRED DGS10 4.96% vs. DGS2 4.65%) the spread is +31. macro/facts.json carries 4.65 with as_of 2026-10-22 and source fred:DGS2. ^IRX is a discount-basis T-bill yield; FRED's constant-maturity 3M (DGS3MO) was 4.22% Thursday, about 20 bps higher, so a CMT-basis 10Y–3M would read ~+77 bps. This page and facts.json use ^IRX for series continuity. FRED's DGS10 for Thu 10/22 is 4.96%, consistent with ^TNX's 4.953% Thursday close.*
+> *2Y source: FRED DGS2, Thu 2026-10-29 (FRED's one-day lag), so the 10Y–2Y spread pairs Friday's 10Y with Thursday's 2Y and understates the week's steepening. On a same-day Thursday basis (FRED DGS10 4.98% vs. DGS2 4.61%) the spread is +37, from +31 a week earlier. The feed (`data/market_state.json`) carries a Friday 2Y of 4.56% and a 2s10s of +37; that number comes from a Friday source this job does not use, so macro/facts.json carries 4.61 with as_of 2026-10-29 and source fred:DGS2. ^IRX is a discount-basis T-bill yield; FRED's constant-maturity 3M (DGS3MO) was 4.18% Thursday, about 18 bps higher, so a CMT-basis 10Y–3M would read ~+80 bps. This page and facts.json use ^IRX for series continuity. FRED's DGS10 for Thu 10/29 is 4.98%, consistent with ^TNX's 4.989% Thursday close.*
 
-**Ophelia Interpretation:** The 10-year closed the week at **4.988%**, down 11 bps and under 5.00% on a weekly close for the first time in five weeks. It did not come from the data. Claims printed 194K, the flash PMI composite 57.6 with manufacturing at a 53-month high and output prices the fastest since August 2022, and UMich beat every estimate (wiki/economic-calendar.md). The 10-year was **5.146% on Wednesday** after a record 5.469% 20-year auction stop, then fell **19 bps on Thursday** when SOX fell 6.7%. The 2-year fell with it (-16 bps Thursday to 4.65%), which is new: last week the front end held while the long end rallied. With October hike odds drifting to ~10% in the blackout, the market took a little of December out too. The breakeven barely moved (**T10YIE 2.34%**, -1 bp), so the fall was real yield again: about **2.65%**, from 2.75%. Net: **10Y–2Y +34** (unchanged), **10Y–3M +96** (-7). No inversion anywhere.
+**Ophelia Interpretation:** The 10-year closed at **4.929%**, down 6 bps, and the path mattered more than the level. It went over 5.00% on one close, **5.045% on Wednesday** after a 10-2 FOMC hold with two dissents for a hike, then fell 11.6 bps in two sessions as Amazon, Intel and Alphabet took the tape down (wiki/economic-calendar.md). The data did not help the rally: GDP 3.4%, core PCE +0.3% and 3.1%, claims 194K, Conference Board confidence 91.7. The bond rally came from equity stress again and not from a print. The feed's Friday 2Y of 4.56% is 13 bps lower on the week, against 4 bps on FRED's Thursday-to-Thursday print, so the curve steepened by more than the +32 shows. The breakeven was flat (**T10YIE 2.34%**), so the fall was real yield again: about **2.59%**, from 2.65%. Net: **10Y–2Y +32** on the mixed basis, **10Y–3M +96** (unchanged). No inversion anywhere.
 
-**Yield Curve Regime:** 🟡 **Positive, rallying in parallel on equity stress.** 10Y under 5.00%, 1.2 bps below the line. Next gates: **FOMC Wed Oct 28 (2:00 PM), Q3 GDP and September PCE Thu Oct 29**.
+**Yield Curve Regime:** 🟡 **Positive, rate relief borrowed from equities.** 10Y 7.1 bps under 5.00%. Next gates: **ISM Mon Nov 2, refunding and ISM Services Wed Nov 4, payrolls Fri Nov 6, CPI Nov 10.**
 
 ---
 
 ## CREDIT SPREADS
 
-> *OAS rows are FRED's **Thu 2026-10-22** prints (FRED's one-day lag), with Thu 10/15 as the week-ago column and Thu 9/24 as the month-ago column. Friday Oct 16's prints, flagged last week as the rumor-day watch, posted this week: HY 331, IG 85, HY–IG **246**. Friday Oct 23's OAS posts Monday. HYG and LQD are live Friday closes.*
+> *OAS rows are FRED's **Thu 2026-10-29** prints (FRED's one-day lag), with Thu 10/22 as the week-ago column and Thu 10/1 as the month-ago column. Friday Oct 23's prints, flagged last week as the confirmation test, posted this week: HY 338, IG 91, HY–IG **247**. Friday Oct 30's OAS posts Monday. HYG and LQD are live Friday closes.*
 
 | Spread | Current | 1W Ago | 1M Ago | Regime |
 |---|---|---|---|---|
-| HY OAS (ICE BofA US HY, BAMLH0A0HYM2) | **340 bps** (Thu 10/22) | 323 bps | 280 bps | 🔴 **New cycle peak; 331 / 329 / 333 / 327 / 340 since last Friday** |
-| IG OAS (ICE BofA US Corp, BAMLC0A0CM) | 89 bps (Thu 10/22) | 84 bps | 79 bps | 🟡 **+5 bps; wider every session this week** |
-| **HY–IG Spread** | **251 bps** (Thu 10/22) | 239 bps | 201 bps | 🔴 **TRIGGER CROSSED: above 250 for the first time (246 / 242 / 246 / 239 / 251) — issue #177** |
-| EM Corporate OAS (BAMLEMCBPIOAS) | 173 bps (Thu 10/22) | 159 bps | 134 bps | 🟡 **+14 bps, +10 of it on Thursday** |
-| CCC & Lower OAS (ICE BofA, BAMLH0A3HYC) | **1,340 bps** (Thu 10/22) | 1,278 bps | 1,112 bps | 🔴 **Another 52-week high; +62 bps on the week, +228 on the month** |
-| **HYG Price** | **$77.05** | **$76.86** | **$77.89** | 🟡 **+0.25%; has not confirmed the index print** |
-| **LQD Price** | **$103.85** | **$103.40** | **$103.15** | 🟢 **+0.44% on the 11 bp 10Y rally** |
+| HY OAS (ICE BofA US HY, BAMLH0A0HYM2) | **326 bps** (Thu 10/29) | 340 bps | 324 bps | 🟡 **Off the 340 peak; 338 / 330 / 318 / 314 / 326 since last Friday** |
+| IG OAS (ICE BofA US Corp, BAMLC0A0CM) | 89 bps (Thu 10/29) | 89 bps | 86 bps | 🟡 **Flat; 91 last Friday, 86 Wednesday** |
+| **HY–IG Spread** | **237 bps** (Thu 10/29) | 251 bps | 238 bps | 🟢 **BACK UNDER 250: 247 / 240 / 230 / 228 / 237; the 251 was one print, not confirmed** |
+| EM Corporate OAS (BAMLEMCBPIOAS) | 173 bps (Thu 10/29) | 173 bps | 161 bps | 🟡 **Flat, holding last week's jump** |
+| CCC & Lower OAS (ICE BofA, BAMLH0A3HYC) | **1,325 bps** (Thu 10/29) | 1,340 bps | 1,215 bps | 🟡 **1,356 on Fri 10/23, the high of this fetch; +110 on the month** |
+| **HYG Price** | **$77.43** | **$77.05** | **$76.90** | 🟢 **+0.49%** |
+| **LQD Price** | **$104.27** | **$103.85** | **$102.03** | 🟢 **+0.40% on the 6 bp 10Y rally** |
 
-**Cecil Interpretation:** The trigger I have been eleven basis points from for a week went on Thursday. **HY–IG printed 251 bps**, the first print above 250 on this board, with **HY OAS at a new cycle peak of 340** and **CCC at 1,340**, up 62 in a week and 228 in a month. Friday Oct 16's rumor-day print came in at 246, so the trigger did not fire on the rumor; it fired on Thursday's semiconductor selloff, the same day the 10-year fell 19 bps. That is the configuration I warned about: Treasuries rally, spreads widen, and the AI-capex financing chain is the part of the market widening. EM corporate spreads also jumped 10 bps on Thursday. The ETFs disagree: HYG rose 0.25% and LQD 0.44%, because the Treasury rally carried the price. One print above 250 is a trigger, not a trend; Friday's print on Monday tells me whether it holds. **CCC-minus-HY is about 1,000 bps** (955 last week).
+**Cecil Interpretation:** The trigger did not confirm. **HY–IG printed 247 on Friday Oct 23**, then 240, 230 and 228, before ticking back to **237 on Thursday**. HY OAS came off its 340 peak to 326; the worst of it was **CCC at 1,356** on Oct 23, and it is 1,325 now. That is a single print above 250, which is what I said it might be. Now the caution. Every print in that table is from before Friday. Thursday's move was already wider by 9 bps on a day SPY fell only 0.38%, and Friday was the day SPY fell 1.77% and VIX hit 23.93. The month-ago column shows the point: HY–IG is back where it was on Oct 1, but CCC is 110 wider. **CCC-minus-HY is about 1,000 bps** (999), unchanged from last week.
 
-**Credit Regime:** 🔴 **Trigger crossed (one print).** HY–IG 251 bps on Oct 22, HY OAS 340 (cycle peak), CCC 1,340 (52-week high). Issue #177. Next: Friday Oct 23's prints, posted Monday.
+**Credit Regime:** 🟢 **Back under the line, one print pending.** HY–IG 237 on Oct 29; HY OAS 326; CCC 1,325. The crossing on #177 did not confirm. Next: Friday Oct 30's prints, posted Monday.
 
 ---
 
 ## MARKET BREADTH
 
-> *S&P 500 rows are computed from the daily closes of all 503 constituents with a Fri 2026-10-23 print (Yahoo, list from Wikipedia's S&P 500 table; 50D/200D = simple MA of closes; a new high/low means the day's high/low reached the trailing 252-session extreme). They are cross-checked against **Finviz Elite** (`finviz_elite breadth`, S&P 500 universe, 503 members), which agrees on advancers/decliners (135 / 367), new highs/lows (19 / 8) and % above 50D (292 names, 58.05% vs. 58.0% here), and within 0.2 pts on % above 200D (55.67% vs. 55.8%). Market-wide rows are Finviz's NYSE + Nasdaq + AMEX stock totals for Friday (5,601 stocks, ETFs and funds excluded). The 1W and 1M comparisons are recomputed from this fetch on the current 503-member list (1W 45.0% here vs. 44.9% published last week, a recompute difference of one name).*
+> *S&P 500 rows are computed from the daily closes of all 503 constituents with a Fri 2026-10-30 print (Yahoo, list from Wikipedia's S&P 500 table; 50D/200D = simple MA of closes; a new high/low means the day's high/low reached the trailing 252-session extreme). They are cross-checked against **Finviz Elite** (`finviz_elite breadth`, S&P 500 universe, 503 members), which agrees exactly on advancers/decliners (226 / 277), new highs/lows (42 / 5) and names above each average (302 and 296), giving 60.04% vs. 60.2% here on % above 50D and 58.85% vs. 59.2% on % above 200D; the gaps are denominators, members with a full 50D/200D history here against all 503 there. Market-wide rows are Finviz's NYSE + Nasdaq + AMEX stock totals for Friday (5,602 stocks, ETFs and funds excluded). The 1W and 1M comparisons are recomputed from this fetch on the current 503-member list; 1M is Thu 10/1, 21 sessions back.*
 
 | Metric | Current | 5D Avg | 20D Avg | Regime |
 |---|---|---|---|---|
-| S&P 500 Advance/Decline (Fri) | **0.37** (135 up / 367 down) | 1.13 | 1.12 | 🟡 **Weak Friday after a strong week; advancers 176 / 404 / 281 / 336 / 135** |
-| Market-wide Advance/Decline (Fri, Finviz) | 0.64 (2,075 up / 3,251 down) | — | — | 🟡 **Better than last Friday's 0.46** |
-| S&P 500 New 52-Week Highs | **19** | 23.6 | 15.2 | 🟢 **42 on Thursday, the most in this fetch** |
-| S&P 500 New 52-Week Lows | **8** | 3.6 | 11.8 | 🟢 **Highs beat lows every day** |
-| Market-wide New Highs / Lows (Fri, Finviz) | 147 / 443 | — | — | 🔴 **Lows still 75% of the total** |
-| **S&P 500 % Above 50D MA** | **58.0%** (1W 45.0%, 1M 25.5%) | 53.9% | 36.9% | 🟢 **Above 50%: yellow cleared; 60.6% Thursday** |
-| **S&P 500 % Above 200D MA** | **55.8%** (1W 51.8%, 1M 44.8%) | 54.2% | 48.0% | 🟢 **Highest in this fetch** |
-| Market-wide % Above 50D / 200D (Fri, Finviz) | 33.7% / 38.2% | — | — | 🔴 **Improved from 26.5% / 36.7%, still under 40%** |
-| Equal-Weight (RSP) vs. Cap-Weight (SPY), 1W | **+1.57 pts** (RSP +1.14% vs. SPY -0.43%) | — | 1M: **+3.93 pts** | 🟢 **Third week ahead** |
-| Sector ETFs above own 50D MA | **5 of 12** (XLE, XLV, XLP, XLB, XLU) | — | — | 🟡 **XLB regained it; XLK, SMH, XLC, XLF, XLI, XLY, XLRE below** |
+| S&P 500 Advance/Decline (Fri) | **0.82** (226 up / 277 down) | 1.66 | 1.62 | 🟢 **On a -1.77% SPY day; advancers 289 / 245 / 247 / 406 / 226** |
+| Market-wide Advance/Decline (Fri, Finviz) | 0.37 (1,455 up / 3,938 down) | — | — | 🔴 **Worse than last Friday's 0.64** |
+| S&P 500 New 52-Week Highs | **42** | 20.0 | 18.5 | 🟢 **Ties Oct 22, the most in the last 30 sessions** |
+| S&P 500 New 52-Week Lows | **5** | 7.4 | 6.5 | 🟢 **14 Wednesday; highs beat lows every day** |
+| Market-wide New Highs / Lows (Fri, Finviz) | 162 / 448 | — | — | 🔴 **Lows still 73% of the total** |
+| **S&P 500 % Above 50D MA** | **60.2%** (1W 58.0%, 1M 22.9%) | 60.6% | 46.2% | 🟢 **Above 50%; 64.9% Thursday** |
+| **S&P 500 % Above 200D MA** | **59.2%** (1W 55.8%, 1M 41.0%) | 59.5% | 52.4% | 🟢 **63.6% Thursday** |
+| Market-wide % Above 50D / 200D (Fri, Finviz) | 36.4% / 38.9% | — | — | 🔴 **Improved from 33.7% / 38.2%, still under 40%** |
+| Equal-Weight (RSP) vs. Cap-Weight (SPY), 1W | **+1.38 pts** (RSP +0.82% vs. SPY -0.56%) | — | 1M: **+5.53 pts** | 🟢 **Fourth week ahead** |
+| Sector ETFs above own 50D MA | **8 of 12** (XLY, XLF, XLB, XLRE, XLU, XLV, XLE, XLP) | — | — | 🟢 **XLY, XLF and XLRE regained it; XLK, SMH, XLC, XLI below** |
 
-**Marky Interpretation:** For the third straight week the average stock beat the index. **SPY fell -0.43% to $759.97** and stayed under its 50-day ($767.81); **RSP rose +1.14%**. **58.0% of S&P 500 members are above their 50-day**, up from 45.0% and from 25.5% a month ago, and 55.8% are above their 200-day, the best in this fetch. Thursday, the day SOX fell 6.7%, had **42 new highs**. Finviz Elite agrees name for name. The breadth trigger cleared yellow for the first time since the board started measuring it live.
+**Marky Interpretation:** For the fourth straight week the average stock beat the index. **SPY fell -0.56% to $755.72**, its third down week, and closed back under its 50-day ($767.49) after three closes over it; **RSP rose +0.82%**. On Friday, with SPY down 1.77% and SMH down 6.98%, the S&P had **226 advancers and 42 new 52-week highs**, level with the most in the last 30 sessions. That is not what a broad selloff looks like. **60.2% of members are above the 50-day** and 59.2% above the 200-day. Thursday's 406 advancers and 64.9% above the 50-day were the highs of the last 30 sessions. Finviz Elite agrees name for name.
 
-The caution is the same as last week, smaller. The market outside the S&P 500 improved (33.7% above the 50-day, from 26.5%) but is still red, with new lows at 443 against 147 highs. Friday was weak: 135 advancers. And the cap-weighted index is below its 50-day because its largest members are the ones falling (XLC -4.36%, SMH -2.33%).
+The caution is outside the index. Market-wide A/D on Friday was 0.37 against 0.82 for the S&P 500, new lows are 448 against 162 highs, and only 36.4% of all stocks are above their 50-day. The sector ETFs at closing highs this week are healthcare and energy (#186, #185).
 
-**Breadth Regime:** 🟢 **Clear.** S&P 500 % above 50D (58.0%) is above the 50% yellow line. Market-wide gauges remain red.
+**Breadth Regime:** 🟢 **Clear.** S&P 500 % above 50D (60.2%) is above the 50% yellow line. Market-wide gauges remain red.
 
 ---
 
 ## SECTOR CORRELATION MATRIX
 
-*30-day rolling correlation of daily returns vs. SPY (30-calendar-day window, 22 sessions 2026-09-24 → 2026-10-23; same convention as prior weeks; the 1W-ago column is last week's published window ending 2026-10-16, which this fetch reproduces exactly)*
+*30-day rolling correlation of daily returns vs. SPY (30-calendar-day window, 22 sessions 2026-10-01 → 2026-10-30; same convention as prior weeks; the 1W-ago column is last week's published window ending 2026-10-23, which this fetch reproduces exactly)*
 
 | Sector | ETF | vs. SPY Correlation | 1W Ago | Regime |
 |---|---|---|---|---|
-| 🖥️ Technology | XLK | **0.836** | 0.861 | 🔥 **High beta** |
-| 💻 Semiconductors | SMH | **0.765** | 0.765 | 🔥 **High beta (unchanged)** |
-| 🛍️ Consumer Discretionary | XLY | **0.727** | 0.804 | 🔥 **High beta (easing)** |
-| ⚙️ Industrials | XLI | **0.603** | 0.470 | 🔥 **High beta (rising, +13 pts)** |
-| 📡 Communication Services | XLC | **0.440** | 0.543 | 🟡 **Moderate (falling)** |
-| 🏦 Financials | XLF | **0.275** | 0.305 | 🟡 **Low** |
-| ⛏️ Materials | XLB | **0.262** | 0.235 | 🟡 **Low** |
-| 🏠 Real Estate | XLRE | **0.111** | 0.396 | 🟡 **Near zero (fell 29 pts)** |
-| ⚡ Utilities | XLU | **0.024** | 0.210 | 🟡 **Near zero (next flip candidate)** |
-| 🏥 Healthcare | XLV | **-0.071** | 0.059 | 🔴 **FLIPPED positive → negative (issue #177)** |
-| ⛽ Energy | XLE | **-0.263** | -0.462 | 🔴 **Inverse (less so)** |
-| 🍞 Consumer Staples | XLP | **-0.371** | -0.303 | 🔴 **Inverse, deepened** |
+| 🖥️ Technology | XLK | **0.919** | 0.836 | 🔥 **High beta (rising)** |
+| 💻 Semiconductors | SMH | **0.879** | 0.765 | 🔥 **High beta (rising, +11 pts)** |
+| 🛍️ Consumer Discretionary | XLY | **0.697** | 0.727 | 🔥 **High beta** |
+| ⚙️ Industrials | XLI | **0.650** | 0.603 | 🔥 **High beta** |
+| 📡 Communication Services | XLC | **0.423** | 0.440 | 🟡 **Moderate** |
+| 🏦 Financials | XLF | **0.205** | 0.275 | 🟡 **Low (easing)** |
+| ⛏️ Materials | XLB | **0.117** | 0.262 | 🟡 **Low (next flip candidate)** |
+| 🏠 Real Estate | XLRE | **-0.049** | 0.111 | 🔴 **FLIPPED positive → negative (issue #192)** |
+| ⚡ Utilities | XLU | **-0.126** | 0.024 | 🔴 **FLIPPED positive → negative (issue #192)** |
+| 🏥 Healthcare | XLV | **-0.162** | -0.071 | 🔴 **Inverse (second week)** |
+| ⛽ Energy | XLE | **-0.396** | -0.263 | 🔴 **Inverse, deepened** |
+| 🍞 Consumer Staples | XLP | **-0.558** | -0.371 | 🔴 **Inverse, deepened** |
 
-**Ophelia Interpretation:** Last week's page named healthcare as the row to watch at 0.059. It crossed: **XLV -0.071**, a strict positive-to-negative flip. Utilities (**0.024**) and real estate (**0.111**) fell toward zero behind it. The board now has **three sectors below zero and two within 0.11 of it**, all defensives. The growth side held together: XLK 0.836, SMH 0.765, XLY 0.727, and industrials rose to 0.603. **The index is moving with five sectors and against or apart from five.** That is the hedge working again: XLV +1.45% and XLE +1.60% in a week SPY fell.
+**Ophelia Interpretation:** Last week's page named utilities as the next flip at 0.024. It flipped, and real estate went with it: **XLU -0.126 and XLRE -0.049**, both strict positive-to-negative crossings. **Five of twelve sectors are now below zero**, every one of them defensive or energy, and staples deepened to -0.558. The other end tightened: **XLK 0.919 and SMH 0.879**, up 8 and 11 points. Financials and materials slid to 0.205 and 0.117. This is one trade with two sides, and Friday showed it: SMH -6.98%, XLP +1.41%, XLE +1.91%.
 
-**The key insight:** the defensive bloc is not only uncorrelated, it is now the larger share of the board. When SPY falls on a semiconductor day, half the sectors do not follow.
+**The key insight:** the index now moves with four sectors. Being diversified paid this week, and a cap-weighted book is more of a single semiconductor and software bet than it was a month ago.
 
-**Alert:** Strict-criterion flip — **XLV (+0.059 → -0.071)**. XLU at 0.024 is next.
+**Alert:** Strict-criterion flips — **XLU (+0.024 → -0.126)** and **XLRE (+0.111 → -0.049)**, issue #192. No sector is left between 0 and 0.1; XLB at 0.117 is next.
 
 ---
 
 ## SECTOR ROTATION FLOW
 
-*1-Day / 1-Week / 1-Month performance vs. SPY (1D = Fri 10/23 vs. Thu 10/22; 1W = Fri-to-Fri; 1M = 21 sessions from 2026-09-24). SPY: -0.52% / -0.43% / -0.94%.*
+*1-Day / 1-Week / 1-Month performance vs. SPY (1D = Fri 10/30 vs. Thu 10/29; 1W = Fri-to-Fri; 1M = 21 sessions from 2026-10-01). SPY: -1.77% / -0.56% / -1.08%.*
 
 | Sector | ETF | 1D vs. SPY | 1W vs. SPY | 1M vs. SPY | Rotation Signal |
 |---|---|---|---|---|---|
-| ⛽ Energy | XLE | +3.12% | **+2.03%** | **+11.69%** | 🟢 **Inflow (leader: +1.60%; 52-week closing high, Hormuz, #175)** |
-| 🏥 Healthcare | XLV | -0.59% | +1.88% | +6.48% | 🟢 **Inflow (+1.45%; fourth week)** |
-| 🏠 Real Estate | XLRE | +0.64% | +1.40% | +3.15% | 🟢 **Inflow (+0.97% on the 10Y rally)** |
-| ⚡ Utilities | XLU | -0.20% | +1.26% | +9.07% | 🟢 **Inflow (+0.83%)** |
-| ⛏️ Materials | XLB | -0.22% | +1.20% | +4.22% | 🟢 **Inflow (+0.77%; back above its 50-day)** |
-| 🍞 Consumer Staples | XLP | -1.40% | +1.16% | +8.97% | 🟢 **Inflow (+0.73%; +3.3% Thursday)** |
-| 🏦 Financials | XLF | -0.80% | +1.11% | +3.45% | 🟢 **Inflow (+0.68%)** |
-| 🛍️ Consumer Discretionary | XLY | -1.14% | +1.00% | +3.46% | 🟡 **Neutral (+0.57%)** |
-| 🖥️ Technology | XLK | +1.01% | +0.30% | -4.96% | 🟡 **Flat (-0.13%) after last week's -7.70%** |
-| ⚙️ Industrials | XLI | -0.75% | -1.44% | -1.55% | 🟡 **Lagging (-1.87%)** |
-| 💻 Semiconductors | SMH | +1.26% | -1.90% | **-11.27%** | 🔴 **Outflow (-2.33%; SOX -6.7% Thursday)** |
-| 📡 Communication Services | XLC | -1.26% | **-3.93%** | -6.50% | 🔴 **Outflow (-4.36%; Netflix guide, Meta -9.4%, #176)** |
+| 🏥 Healthcare | XLV | +2.22% | +3.68% | +12.32% | 🟢 **Inflow (leader: +3.12%; two-year closing high, #186)** |
+| ⛏️ Materials | XLB | +2.17% | +3.35% | +9.74% | 🟢 **Inflow (+2.79%)** |
+| ⚡ Utilities | XLU | +2.45% | +2.60% | +10.53% | 🟢 **Inflow (+2.04%)** |
+| 🛍️ Consumer Discretionary | XLY | +1.07% | +2.58% | +7.12% | 🟢 **Inflow (+2.02%)** |
+| ⚙️ Industrials | XLI | +0.17% | +2.25% | +0.35% | 🟢 **Inflow (+1.69%; still under its 50D and 200D, #188)** |
+| 🏠 Real Estate | XLRE | +2.03% | +1.97% | +7.20% | 🟢 **Inflow (+1.41%)** |
+| 🍞 Consumer Staples | XLP | +3.18% | +1.87% | +12.40% | 🟢 **Inflow (+1.31%; +1.41% Friday)** |
+| 🏦 Financials | XLF | +1.02% | +1.65% | +6.79% | 🟢 **Inflow (+1.09%)** |
+| ⛽ Energy | XLE | +3.68% | +1.55% | +12.76% | 🟢 **Inflow (+1.00%; 52-week closing high, #185)** |
+| 💻 Semiconductors | SMH | -5.20% | -0.33% | -14.35% | 🔴 **Outflow on the day (-0.89% W/W; -6.98% Friday, #190)** |
+| 🖥️ Technology | XLK | -3.12% | -1.47% | -8.17% | 🔴 **Outflow (-2.03%; -4.89% Friday, #183)** |
+| 📡 Communication Services | XLC | +0.48% | -4.76% | -8.05% | 🔴 **Outflow (-5.32%; 52-week closing low, #187)** |
 
-**Ophelia Interpretation:** **Eight of twelve sectors beat SPY again**, and this week the laggard was **communication services, -4.36%**: Netflix's guidance miss and ad-forecast cut, then Meta's reversal after it held its capex budget (#176, wiki/economic-calendar.md). SMH fell another 2.33% to $527.20 after Thursday's 6.7% SOX drop on Lam's supply comment; it closed 8.3% under its 50-day ($575.09), and the calendar desk's next line is its 200-day near $515. XLK was flat (-0.13%), so the board's leadership trigger (**XLK -5% vs. SPY in a week**) did not fire again. **Energy led** (+1.60%, +2.03 pts vs. SPY) on Friday's Hormuz headlines. Over a month the board is now sharply split: **XLE +11.69, XLU +9.07, XLP +8.97 pts** ahead of SPY; **SMH -11.27, XLC -6.50, XLK -4.96** behind.
+**Ophelia Interpretation:** **Ten of twelve sectors beat SPY**, and the two that did not were the ones that matter to it. **XLC fell -5.32%** to a 52-week closing low on Alphabet (#187), XLK fell -2.03% with -4.89% on Friday alone (#183), and SMH fell -0.89% only because it had rallied into Friday: it lost 6.98% that day, and its low of $511.63 went through the 200-day ($519.50) before it closed $2.99 above (#190). **Healthcare led** (+3.12%, a two-year closing high at $184.87, #186), with materials +2.79% and utilities +2.04% behind it. The board's leadership trigger (**XLK -5% vs. SPY in a week**) did not fire at -1.47 pts. Over a month the split widened from last week's 23 points: **XLE +12.76, XLP +12.40, XLV +12.32** pts ahead of SPY; **SMH -14.35, XLK -8.17, XLC -8.05** behind.
 
-**The risk:** the one-month spread between the best and worst sector is 23 points. Wednesday's Microsoft and Alphabet reports decide whether the growth bloc keeps falling.
+**The risk:** the one-month spread between the best and worst sector is 27 points. Apple Monday and AMD Tuesday decide whether Friday was Intel's problem or the sector's.
 
 ---
 
@@ -150,23 +150,23 @@ The caution is the same as last week, smaller. The market outside the S&P 500 im
 
 | Asset | Level | 1W Change | 1M Change | Implication |
 |---|---|---|---|---|
-| DXY (US Dollar Index) | **101.81** (Yahoo DX-Y.NYB) | -0.03% | +0.51% | 🟢 **Flat under 102: closes 101.98 / 101.73 / 101.78 / 101.61 / 101.81; high 102.08** |
-| EUR/USD | 1.1204 | -0.08% | -1.56% | 🟡 **Flat; range 1.1188–1.1259** |
-| USD/JPY | 156.814 | -0.84% | -0.92% | 🟢 **Yen firmer on the Thursday rally (see note)** |
-| WTI Crude | **$103.27 (CLZ26 settle, as_of 2026-10-23)** | **+4.29%** (same contract; Oct 16 $99.02) | — | 🔴 **First December settle above $100 (closes 98.54 / 97.82 / 97.15 / 99.47 / 103.27). The November contract (CLX26, $101.41 on 10/16) expired 10/20** |
-| Brent Crude | $111.70 | +1.67% | +4.78% | 🔴 **$113.49 intraweek; directional only (see note)** |
-| Gold | **$3,991.10 (GCV26 settle, as_of 2026-10-23)** | **-4.05%** (Oct 16 $4,159.50) | — | 🟡 **Under $4,000 on the spot month; GCZ26 $4,007.90 (-4.14%)** |
-| Copper | $6.5075/lb (HG=F front month) | -0.36% | -3.14% | 🟡 **+2.28% Friday; range $6.36–6.58 (see note)** |
-| Bitcoin | $81,074 (Fri 10/23 UTC close) | -0.52% | -3.92% | 🟡 **Range $80,422–$84,840; held $80K a third week** |
-| HY Bonds (HYG) | $77.05 | +0.25% | -1.08% | 🟡 **Duration beat the spread this week** |
-| IG Bonds (LQD) | $103.85 | +0.44% | +0.68% | 🟢 **Duration relief on -11 bps 10Y** |
-| TIPS Breakeven (10Y) | 2.34% (FRED T10YIE, Fri 10/23) | -0.01 pts | +0.01 pts | 🟡 **The 10Y's fall was real yield again (about 2.65%, from 2.75%)** |
+| DXY (US Dollar Index) | **101.88** (Yahoo DX-Y.NYB) | +0.07% | -0.22% | 🟢 **Friday close under 102 after three closes over it: 101.96 / 102.32 / 102.19 / 102.04 / 101.88; high 102.49** |
+| EUR/USD | 1.1183 | -0.34% | -1.27% | 🟡 **Range 1.1110–1.1227 (see note)** |
+| USD/JPY | 157.804 | +0.84% | +0.16% | 🟡 **Gave back last week's firming (see note)** |
+| WTI Crude | **$104.12 (CLZ26 settle, as_of 2026-10-30)** | **+0.8%** (same contract; Oct 23 $103.27) | **+14.3%** (feed, 4W) | 🔴 **Four of five closes over $100: 101.76 / 99.90 / 102.78 / 102.00 / 104.12** |
+| Brent Crude | $117.64 | +0.79% | +14.98% | 🔴 **Directional only (see note)** |
+| Gold | **$3,885.70 (GCX26 settle, as_of 2026-10-30)** | **-2.6%** (feed; Oct 23 $3,991.10 on GCV26) | **-6.0%** (feed, 4W) | 🟡 **Fell $132.00 on the same contract Friday; GCZ26 $3,898.90** |
+| Copper | $6.4585/lb (HG=F front month) | -0.27% | -0.36% | 🟡 **-1.86% Friday; range $6.43–6.64 (see note)** |
+| Bitcoin | $77,198 (Fri 10/30 UTC close) | -4.78% | -9.02% | 🔴 **Lost $80K after three weeks over it; range $76,190–$81,890** |
+| HY Bonds (HYG) | $77.43 | +0.49% | +0.69% | 🟢 **Up with spreads tighter, unlike last week** |
+| IG Bonds (LQD) | $104.27 | +0.40% | +2.20% | 🟢 **Duration relief on -6 bps 10Y** |
+| TIPS Breakeven (10Y) | 2.34% (FRED T10YIE, Fri 10/30) | 0.00 pts | -0.02 pts | 🟡 **Flat; the 10Y's fall was real yield again (about 2.59%, from 2.65%)** |
 
-> *DXY from Yahoo's ICE DXY series (DX-Y.NYB), carried in macro/facts.json at 101.81 (tolerance 1%). 1W changes use this run's Yahoo fetch for both endpoints. Two Yahoo series revised last Friday's bar since last week's run: **USD/JPY** 10/16 now 158.143 (published 157.987; vs. the published value the week is -0.74%), and **HG=F** 10/16 now 6.5310 (published 6.5735; vs. the published value the week is -1.00%). **WTI and gold (feed contract, corrected):** facts.json now carries WTI $103.27 (CLZ26, yahoo:CLZ26.NYM) and gold $3,991.10 (GCV26, yahoo:GCV26.CMX), as_of 2026-10-23, taken from `data/market_state.json` after the feed rolled (842a5ab → facts 9f4ff50). The first version of this page carried the 10/16 settlements marked stale, including the November WTI contract (CLX26), which expired 10/20. The continuous symbols CL=F and GC=F were not used. GCZ26 ($4,007.90) is shown for direction only and is not in facts.json; CLZ26's $103.27 matches wiki/economic-calendar.md. **Brent (BZ=F)** is a continuous series, shown for direction only. **Bitcoin:** the Fri 10/23 UTC daily bar is present ($81,074, same value and as_of in facts.json).*
+> *DXY from Yahoo's ICE DXY series (DX-Y.NYB), carried in macro/facts.json at 101.88 (tolerance 1%). 1W changes use this run's Yahoo fetch for both endpoints. Three Yahoo series revised last Friday's bar since last week's run: **EUR/USD** 10/23 now 1.1221 (published 1.1204; vs. the published value the week is -0.19%), **USD/JPY** 10/23 now 156.494 (published 156.814; vs. the published value the week is +0.63%), and **HG=F** 10/23 now 6.4760 (published 6.5075; vs. the published value the week is -0.75%). **FX daily bars:** per macro/README.md, Yahoo's daily bar for a pair closes near its open until the provider replaces it. facts.json carries the daily bars (157.804, 1.1183); the last hourly closes of the session were 157.519 and 1.1166, inside the 1% tolerance. **WTI and gold (feed contract):** facts.json carries WTI $104.12 (CLZ26, yahoo:CLZ26.NYM) and gold $3,885.70 (GCX26, yahoo:GCX26.CMX), as_of 2026-10-30, from `data/market_state.json`; both verified against the contracts' own bars by `truth_check --facts`. Gold's spot month rolled from GCV26 to GCX26; on GCX26 alone the week is -2.71% ($3,993.80 → $3,885.70). The continuous symbols CL=F and GC=F were not used. GCZ26 ($3,898.90) is shown for direction only and is not in facts.json. **Brent (BZ=F)** is a continuous series, shown for direction only; its 10/23 bar now reads $116.72, where last week's page published $111.70, so last week's level is not comparable. **Bitcoin:** the Fri 10/30 UTC daily bar is present ($77,198, same value and as_of in facts.json).*
 
-**Ophelia Interpretation:** **Oil held above $100 on the contract that now matters.** November expired on Tuesday at a premium; December, the new front month, dipped to $97.15 midweek and then settled **$103.27** on Friday on IRGC tanker and mine claims near Hormuz, with Brent at **$111.70** (#175, wiki/energy.md). That $103.27 is now the canonical number in facts.json (rebuilt after the feed rolled on Sunday evening). **Gold broke $4,000 on the spot contract** (GCV26 $3,991.10, -4.05%) in a week real yields fell another 10 bps. That is the second straight week gold fell with real yields, and the deleveraging read from last week gets stronger. **The dollar was flat** (101.81), **the yen firmed 0.8%** on Thursday's rally, and **Bitcoin held $80K**. Bonds were bought: TLT +1.61%, LQD +0.44%.
+**Ophelia Interpretation:** **Oil stayed above $100 and the risk premium is still building.** December WTI closed over $100 on four of five days and finished at **$104.12**, the highest close of the week, with December Brent at $117.64 and the Hormuz claims widening (#185, wiki/energy.md; OPEC+ meets Sunday). **Gold fell again**, -2.6% to **$3,885.70**, with $132.00 of it on Friday, while real yields fell another 6 bps. That is the third straight week of gold falling with real yields, and silver settled -8.6%. On a day equities sold off hard, gold, silver, copper and Bitcoin all fell, which fits a deleveraging, not a flight to safety. **Bitcoin lost $80K**, -4.78% to $77,198. **The dollar was flat** (101.88), and bonds were bought: TLT +0.61%, LQD +0.40%.
 
-**The risk:** oil above $100 on December with the flash PMI's output prices at a three-year high and PCE on Thursday. A second December settle above $100 on Monday fires the calendar desk's sustained-oil flag.
+**The risk:** oil at $104 and hike odds falling at the same time. The tape is pricing the growth scare and the Fed's dissents are pricing the inflation, and both cannot be right by December.
 
 ---
 
@@ -174,51 +174,51 @@ The caution is the same as last week, smaller. The market outside the S&P 500 im
 
 | Signal | Status | Trend | Trigger Level |
 |---|---|---|---|
-| VIX Regime | 🟡 **At the line: 19.45 close; 20.31 Thu and 20.66 Fri intraday** | -2.7% WoW from 19.99; VVIX 109.70; VIX/VIX3M 0.950 | 🟡 >20 | 🔴 >25 |
-| Yield Curve | 🟡 Positive, parallel rally | 10Y 4.988% (-11 bps; first weekly close under 5.00% in five weeks); 10Y–2Y ~+34, 10Y–3M +96 (was +103) | 🟡 <0 (inverted) | 🔴 <-50 bps |
-| Credit Spreads | 🔴 **TRIGGER CROSSED (one print)** | HY–IG **251 bps** Thu 10/22 (239 on 10/15; 246 on 10/16); HY OAS 340, cycle peak; CCC 1,340, a 52-week high; HYG +0.25% | 🟡 HY–IG >250 bps | 🔴 >350 bps |
-| Market Breadth | 🟢 **Cleared yellow** | S&P 500 58.0% above 50D (45.0% last week), 55.8% above 200D; new highs/lows 19 / 8; RSP +1.57 pts vs. SPY WoW; market-wide 33.7% above 50D | 🟡 <50% above 50D MA | 🔴 <40% |
-| Sector Rotation | 🟡 **No new leadership trigger; XLC and SMH the outflows** | XLK -0.13% (+0.30 vs. SPY); XLC -4.36%, SMH -2.33%; eight of twelve beat SPY; XLE leads | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
-| Sector Correlation | 🔴 **FLIP: XLV +0.059 → -0.071** | XLP -0.371, XLE -0.263; XLU 0.024 and XLRE 0.111 next; growth bloc 0.73–0.84 | 🔴 positive → negative flip | — |
-| DXY | 🟢 **Under 102** | 101.81 (-0.03% WoW); 102.08 intraweek | 🟡 >102 | 🔴 >105 |
-| Geopolitics | 🔴 **Oil above $100** | WTI $103.27 (CLZ26, Fri settle; facts.json); Brent $111.70; Hormuz (#175) | 🟡 Oil >$90 | 🔴 Oil >$100 |
-| Credit Risk | 🟡 Index and CCC both widening (CDS not sourced) | XLF +0.68% to $55.90; EM OAS +14 bps; CCC +62 bps W/W | 🟡 CDS widening | 🔴 Bank stress |
-| Policy | 🔴 **Live hiking cycle; FOMC Wednesday** | Fed 3.75–4.00% (hiked 9/16); October hike ~10%, December ~84%; PCE and GDP Thu 10/29 | — | — |
-| Overall Risk | 🟡 **HIGH CAUTION (credit and correlation triggers crossed; breadth cleared)** | — | — | — |
+| VIX Regime | 🟡 **Under 20 on the close; 23.93 intraday Fri** | -0.15% WoW to 19.42; VVIX 106.43 (124.06 high); VIX/VIX3M 0.935 | 🟡 >20 | 🔴 >25 |
+| Yield Curve | 🟡 Positive, rally borrowed from equities | 10Y 4.929% (-6 bps; 5.045% Wed); 10Y–2Y ~+32 (+37 same-day Thu), 10Y–3M +96 (flat) | 🟡 <0 (inverted) | 🔴 <-50 bps |
+| Credit Spreads | 🟢 **Back under the line; Friday's print pending** | HY–IG **237 bps** Thu 10/29 (251 on 10/22; 247 on 10/23, so unconfirmed); HY OAS 326; CCC 1,325; HYG +0.49% | 🟡 HY–IG >250 bps | 🔴 >350 bps |
+| Market Breadth | 🟢 **Clear** | S&P 500 60.2% above 50D (58.0% last week), 59.2% above 200D; new highs/lows 42 / 5; RSP +1.38 pts vs. SPY WoW; market-wide 36.4% above 50D | 🟡 <50% above 50D MA | 🔴 <40% |
+| Sector Rotation | 🟡 **No leadership trigger; XLC, XLK and SMH the only laggards** | XLK -2.03% (-1.47 vs. SPY); XLC -5.32%, SMH -0.89%; ten of twelve beat SPY; XLV leads | 🟡 XLK -5% vs. SPY | 🔴 XLK -10% |
+| Sector Correlation | 🔴 **TWO FLIPS: XLU +0.024 → -0.126, XLRE +0.111 → -0.049** | Five sectors below zero; XLP -0.558, XLE -0.396, XLV -0.162; XLK 0.919, SMH 0.879 | 🔴 positive → negative flip | — |
+| DXY | 🟢 **Under 102 on the Friday close** | 101.88 (+0.07% WoW); three closes over 102, high 102.49 | 🟡 >102 | 🔴 >105 |
+| Geopolitics | 🔴 **Oil above $100** | WTI $104.12 (CLZ26, Fri settle; facts.json); Brent $117.64; Hormuz (#185) | 🟡 Oil >$90 | 🔴 Oil >$100 |
+| Credit Risk | 🟡 CCC off its high, still 110 wider on the month (CDS not sourced) | XLF +1.09% to $56.51; EM OAS flat; CCC -15 bps W/W | 🟡 CDS widening | 🔴 Bank stress |
+| Policy | 🔴 **Live hiking cycle; 10-2 hold** | Fed 3.75–4.00% (held 10/28, Cook and Hammack dissented for a hike); December ~73–76%; payrolls Fri 11/6, CPI 11/10 | — | — |
+| Overall Risk | 🟡 **HIGH CAUTION (correlation trigger crossed; credit cleared, one print pending)** | — | — | — |
 
-**Weekly Narrative — Overall Assessment:** Breadth healed and credit broke. The ledger: (1) **SPY fell -0.43% to $759.97**, a second down week, and stayed under its 50-day ($767.81); (2) **S&P 500 breadth cleared the yellow line**: 58.0% of members above the 50-day (45.0% last week, 25.5% a month ago), 55.8% above the 200-day, 42 new highs on Thursday, RSP +1.14%; (3) **HY–IG crossed 250 bps for the first time on this board (251 on Thursday)**, with HY OAS at a 340 cycle peak and CCC at 1,340; (4) **healthcare's correlation with SPY flipped negative** (+0.059 → -0.071), and utilities (0.024) and real estate (0.111) are close behind; (5) **the 10Y fell 11 bps to 4.988%**, its first weekly close under 5.00% in five weeks, almost all of it on Thursday's 19 bp drop when SOX fell 6.7%; the 2Y fell 12 bps with it, so the curve did not change shape (10Y–2Y +34); (6) **VIX touched 20 twice intraday** (20.31, 20.66) and closed 19.45; VIX/VIX3M 0.950, VVIX 110; (7) **XLC fell -4.36%** on Netflix and Meta, SMH -2.33%, XLK flat; energy (+1.60%) and healthcare (+1.45%) led; (8) **December WTI settled $103.27** on Hormuz headlines after November's expiry; facts.json carries the December settlement after the feed rolled late on Sunday; (9) **gold's spot month broke $4,000** (-4.05%) while real yields fell; (10) the data did not show a slowdown: claims 194K, flash PMI 57.6, UMich 48.0 (wiki/economic-calendar.md).
+**Weekly Narrative — Overall Assessment:** The index fell on its largest members, and on the week ten of twelve sectors did better than it did. The ledger: (1) **SPY fell -0.56% to $755.72**, a third down week, and closed back under its 50-day ($767.49), all of it on Friday's -1.77%; (2) **S&P 500 breadth stayed clear**: 60.2% of members above the 50-day, 59.2% above the 200-day, 42 new highs on Friday, RSP +0.82%, ten of twelve sectors ahead of SPY; (3) **HY–IG did not confirm**: 247 on Oct 23, then 228 Wednesday and 237 Thursday, with HY OAS 326, off its 340 peak; (4) **two more correlations flipped negative** (XLU -0.126, XLRE -0.049), so five sectors are below zero while XLK reached 0.919; (5) **the 10Y fell 6 bps to 4.929%** after one close at 5.045% on the 10-2 FOMC hold; (6) **VIX hit 23.93 intraday Friday** and closed 19.42, VIX/VIX3M 0.935, VVIX 124.06 high; (7) **XLC fell -5.32%** to a 52-week closing low, XLK -2.03%, SMH -6.98% on Friday with a pierced 200-day; healthcare (+3.12%) led; (8) **December WTI settled $104.12**, four of five closes over $100; (9) **gold fell -2.6% to $3,885.70** and **Bitcoin lost $80K**; (10) the data stayed hot: GDP 3.4%, core PCE 3.1%, claims 194K, confidence 91.7 (wiki/economic-calendar.md).
 
-The fragilities: (1) credit is now through its trigger while the equity tape is improving underneath, and those two do not usually last together; (2) the bond rally is coming from equity stress, not from inflation, and Thursday's PCE can reverse it from 1.2 bps under 5.00%; (3) the defensive bloc is decoupling from the index (three negative correlations, two near zero), which protects a diversified book but says the index is a growth bet; (4) VIX/VIX3M has stayed above 0.89 for two weeks, so the curve has little room before backwardation; (5) gold falling with real yields for a second week is a deleveraging signature; (6) oil above $100 on the December contract arrives in the week of PCE.
+The fragilities: (1) Friday's OAS print is the first read of credit after the selloff, and every credit number on this page predates it; (2) the index is now a concentrated bet, with XLK 0.919 and five sectors negative, so a growth break lands on it with little offset inside the cap-weighted book; (3) the bond rally is still coming from equity stress, with oil at $104 and two Fed dissents for a hike; (4) market-wide breadth is still red while S&P breadth is green, so the strength is in large defensive names; (5) gold falling with real yields for a third week, and Bitcoin under $80K, are deleveraging signatures; (6) VIX/VIX3M went from 0.880 to 0.935 in two sessions, so the curve has little room before backwardation.
 
-**The Canary Watch verdict:** 🟡 **HIGH CAUTION**, the ninth straight week of caution and the second at this level. Composition changes: **Credit Spreads** goes from green to red (trigger crossed); **Sector Correlation** goes from yellow to red (new flip); **Market Breadth** goes from yellow to green; **Sector Rotation** stays yellow with no new trigger; **VIX**, **Yield Curve**, **DXY**, **Geopolitics** and **Policy** unchanged. Of the four strict criteria, **two were met**: credit spreads widened above 250 bps (HY–IG 251) and a sector correlation flipped from positive to negative (XLV). VIX touched above 20 intraday but did not close there; the curve is positive at every tenor. **Issue #177** opened this run; related: #175 (energy, Hormuz), #176 (comm services), #172 (last week's VIX spike). Watch: (1) Friday Oct 23's OAS on Monday: HY–IG above 250 on a second print confirms the trigger; (2) Monday's December WTI settle (a second close above $100); (3) FOMC Wednesday 2:00 PM and Microsoft / Alphabet after the close; (4) Q3 GDP and core PCE Thursday 8:30 AM; (5) VIX 20 on a close and VIX/VIX3M above 1.00; (6) XLU at 0.024, the next correlation flip; (7) SMH's 200-day near $515; (8) 10Y 5.00% on a close.
+**The Canary Watch verdict:** 🟡 **HIGH CAUTION**, the tenth straight week of caution and the third at this level. Composition changes: **Credit Spreads** goes from red to green (one print pending); **Sector Correlation** stays red with two new flips; **Market Breadth**, **Sector Rotation**, **VIX**, **Yield Curve**, **DXY**, **Geopolitics** and **Policy** unchanged. Of the four strict criteria, **one was met**: sector correlations flipped from positive to negative (XLU, XLRE). VIX touched above 20 intraday but did not close there; the curve is positive at every tenor; credit is under 250 on every print posted this week. **Issue #192** opened this run; related: #177 (last week's crossing), #183, #187, #190. Watch: (1) Friday Oct 30's OAS on Monday: HY–IG above 250 would make the Oct 22 print a pattern; (2) Apple Monday and AMD Tuesday; (3) SMH's 200-day ($519.50) on a close; (4) ISM Monday and refunding Wednesday; (5) midterms Tuesday; (6) payrolls Friday; (7) VIX 20 on a close and VIX/VIX3M above 1.00; (8) XLB at 0.117, the next correlation flip; (9) 10Y 5.00% on a close.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-*(Updated this week: credit crossed its trigger, healthcare's correlation flipped negative, and breadth cleared its yellow line.)*
+*(Updated this week: credit went back under its trigger, two more correlations flipped negative, and VIX printed 23.93 intraday.)*
 
-**Ophelia:** *"The data this week was hot and the bond market rallied anyway. Claims 194, PMI 57.6 with output prices at a three-year high, UMich above every estimate. The ten-year fell eleven basis points because semis fell seven percent on Thursday. That rally is borrowed from the equity market, and Thursday's PCE can take it back. I am not extending duration into Wednesday and Thursday: I said last week I would add IG at the margin, and I did; I stop there. Cash stays at 25–30%. Energy stays, with December above a hundred. What changed for me is the correlation board: healthcare, staples and energy all move against the index now, and utilities are at zero. A diversified book is better hedged than it has been all year. A cap-weighted one is a growth bet."*
+**Ophelia:** *"The Fed held with two dissents for a hike, GDP was 3.4%, core PCE did not cool, and the ten-year still fell, because Intel fell twenty-eight percent. The bond market took its rally from the equity market again. I said last week I would stop adding duration, and I have. Cash stays at 25–30%. Energy stays, with December at $104. The board did what I said it might: utilities and real estate went negative, so five sectors now move against the index. A diversified book beat the index on a week SPY fell. I keep it. A cap-weighted book is a growth bet and it knows it."*
 
-**Marky:** *"Last week I said I wanted SPY back over its 50-day before I believed the breadth. It isn't, and I believe the breadth anyway: 58% of the S&P above the 50-day, 42 new highs on the day semis fell almost seven percent. That is a market rotating, not one breaking. VIX touched 20 twice and closed under it both times, and the low of the week was 16.5. I keep the hedge on through Wednesday because VVIX is 110 and the ratio is 0.95, but I am not adding to it. If VIX closes above 20 with the ratio above one, that changes. Until then, the equal-weight index is the trade, not the cap-weight one."*
+**Marky:** *"Forty-two new highs on a day SMH fell seven percent. Last week I said the market was rotating, not breaking, and this is the same read with a bigger number. I am not calling Friday nothing: VIX printed 23.93 and VVIX 124 before the close took most of it back. I keep the hedge on through AMD, the midterms and payrolls, and I am not adding to it. If VIX closes above 20 with the ratio above one, that changes. Until then, the equal-weight index is still the trade, not the cap-weight one, and it has now been the trade for four weeks."*
 
-**Cecil:** *"Two hundred fifty-one. I said if HY–IG printed 250 or wider the trigger fires and I want the council's high-yield exposure at zero. It printed 251 on Thursday, so that is my recommendation for Monday: high yield to zero, and keep it there until the spread prints back under 240. One print is not a trend, and Friday's number comes out Monday, but I set the rule before the print and I am not moving it after. CCC is out another sixty-two basis points to 1,340 and EM jumped ten on Thursday. HYG went up this week only because Treasuries rallied; the spread did not. IG duration I keep. The trade is still the same: own the duration, not the credit."*
+**Cecil:** *"I said high yield to zero, and to keep it there until the spread printed back under 240. It printed 230 on Tuesday and 237 on Thursday. The rule I set is met, so the zero is no longer a rule, and I will not pretend otherwise. But I am not buying on Monday morning either. Everything I have is from before Friday, and Friday's print comes out Monday. CCC is a hundred and ten wider than it was on the first of October with HY–IG unchanged, so the bottom of the market has not healed. IG duration I keep. The trade is still the same: own the duration, not the credit."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance (yfinance 1.6.0, single fetch 2026-10-25 ~09:00 ET): VIX, VIX3M, VVIX, SPY, RSP, QQQ, IWM, 12 sector ETFs, Treasury yield proxies (^IRX/^FVX/^TNX), DXY (DX-Y.NYB), FX (EURUSD=X, JPY=X, GBPUSD=X, CNY=X), copper (HG=F), Bitcoin (BTC-USD), bond ETFs (HYG, LQD, TLT), Brent (BZ=F, direction only); CLZ26.NYM, GCV26.CMX and GCZ26.CMX for direction only (not in facts.json)
-- data/market_state.json (Universe & Data Feed Builder): as_of 2026-10-16 when this page was first written; the 2026-10-23 file was committed at 17:04 ET Sunday (842a5ab). WTI $103.27 (CLZ26) and gold $3,991.10 (GCV26) in facts.json are taken from it (rebuilt 9f4ff50); CL=F and GC=F were not used
-- CBOE: official VIX daily history (cdn.cboe.com VIX_History.csv), Fri 2026-10-23 close 19.45, high 20.66, exact match on all five closes; daily options market statistics (cdn.cboe.com daily_options) for total / equity / index / SPX put/call ratios, 9/21–10/23
-- FRED (St. Louis Fed): the runner's own connection timed out on every series (two attempts each); all nine were downloaded in one fredgraph request through a second network path during the run. Live on this page: DGS2 (4.65%, Thu 10/22; source of the 2Y row and facts.json ust_2y), DGS10 / DGS3MO (cross-checks), BAMLH0A0HYM2 / BAMLC0A0CM / BAMLEMCBPIOAS / BAMLH0A3HYC through Thu 10/22, T10YIE through Fri 10/23, VIXCLS through Thu 10/22
-- Federal Reserve: FOMC 2026 calendar (decision Wed Oct 28). Fed funds range and stance in facts.json unchanged (no policy event; blackout); `next_macro_gate` rolled forward to the FOMC and Thursday's GDP / PCE from wiki/economic-calendar.md (updated 2026-10-25)
-- Breadth: S&P 500 constituent closes via Yahoo (503 of 503 members with a Fri print; constituent list from Wikipedia's S&P 500 table), cross-checked against Finviz Elite (`finviz_elite breadth --json`, S&P 500 and market universes, fetched 2026-10-25 13:07 UTC); market-wide NYSE + Nasdaq + AMEX counts from the same Finviz Elite run. Only derived counts and percentages are published
-- Internal desk cross-references, used for every news item on this page; none was re-sourced by this run: wiki/economic-calendar.md (claims, PMIs, UMich, housing, 20Y auction, Meta, Lam, Netflix, SOX, Hormuz, CLZ26 settles, hike odds, next week's calendar), wiki/energy.md
-- GitHub issues cross-referenced this run: #172, #175, #176. **One new issue opened this run: #177** (HY–IG above 250; XLV correlation flip; VIX intraday touches)
+- Yahoo Finance (yfinance 1.6.0, single fetch 2026-10-31 ~19:47 ET): VIX, VIX3M, VVIX, SPY, RSP, QQQ, IWM, 12 sector ETFs, Treasury yield proxies (^IRX/^FVX/^TNX), DXY (DX-Y.NYB), FX (EURUSD=X, JPY=X, GBPUSD=X, CNY=X), copper (HG=F), Bitcoin (BTC-USD), bond ETFs (HYG, LQD, TLT), Brent (BZ=F, direction only); CLZ26.NYM, GCX26.CMX and GCZ26.CMX for checking and direction only
+- data/market_state.json (Universe & Data Feed Builder): as_of 2026-10-30. WTI $104.12 (CLZ26) and gold $3,885.70 (GCX26) in facts.json are taken from it; CL=F and GC=F were not used
+- CBOE: official VIX daily history (cdn.cboe.com VIX_History.csv), Fri 2026-10-30 close 19.42, high 23.93, exact match on all five closes; daily options market statistics (cdn.cboe.com daily_options) for total / equity / index / SPX put/call ratios, 9/21–10/30
+- FRED (St. Louis Fed): the runner's own connection timed out on every series (two attempts, 20 and 50 seconds); all nine were downloaded in one fredgraph request through a second network path during the run. Live on this page: DGS2 (4.61%, Thu 10/29; source of the 2Y row and facts.json ust_2y), DGS10 / DGS3MO (cross-checks), BAMLH0A0HYM2 / BAMLC0A0CM / BAMLEMCBPIOAS / BAMLH0A3HYC through Thu 10/29, T10YIE through Fri 10/30, VIXCLS through Thu 10/29
+- Federal Reserve: fed funds range and stance in facts.json unchanged (the Oct 28 meeting held the range); `next_macro_gate` rolled forward to ISM, the midterms, refunding, payrolls, CPI and the December FOMC from wiki/economic-calendar.md (updated 2026-10-31)
+- Breadth: S&P 500 constituent closes via Yahoo (503 of 503 members with a Fri print; constituent list from Wikipedia's S&P 500 table), cross-checked against Finviz Elite (`finviz_elite breadth --json`, S&P 500 and market universes, fetched 2026-10-31 23:50 UTC); market-wide NYSE + Nasdaq + AMEX counts from the same Finviz Elite run. Only derived counts and percentages are published
+- Internal desk cross-references, used for every news item on this page; none was re-sourced by this run: wiki/economic-calendar.md (FOMC, GDP, PCE, claims, confidence, hike odds, SOX, silver, WTI settles, December Brent, next week's calendar), wiki/energy.md
+- GitHub issues cross-referenced this run: #177, #183, #185, #186, #187, #190. **One new issue opened this run: #192** (XLU and XLRE correlation flips; VIX intraday; HY–IG back under 250)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-10-25 (single-agent run, late: scheduled Sat 2026-10-24 19:39 ET, ran Sun 2026-10-25 ~09:00 ET; all market data as of Fri 2026-10-23 closes; macro/facts.json regenerated from the same fetch; breadth live from S&P 500 constituents with a Finviz Elite cross-check; put/call live from CBOE; FRED series live via a second network path after the runner's connection timed out; WTI and gold first carried stale from the 2026-10-16 feed, corrected ~17:35 ET from the 2026-10-23 feed after facts.json was rebuilt)*
+*Last updated by Saturday Research Crew: 2026-10-31 (single-agent run, on schedule; all market data as of Fri 2026-10-30 closes; macro/facts.json regenerated from the same fetch; breadth live from S&P 500 constituents with a Finviz Elite cross-check; put/call live from CBOE; FRED series live via a second network path after the runner's connection timed out; WTI and gold from the 2026-10-30 feed)*
 *Next update: Every Saturday 7:39 PM ET*
 *Data sources: Yahoo Finance (yfinance), data/market_state.json (feed), CBOE, FRED, Finviz Elite, Federal Reserve*
