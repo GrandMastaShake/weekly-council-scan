@@ -112,7 +112,7 @@ Week path: Mon $56.02, Tue $55.88, Wed $56.13, Thu $56.94, Fri $56.51 (O $57.19 
 | Inflation | Sep PCE 3.6% y/y, core 3.1% (Oct 29, search coverage) | Quarterly PCE slowed to 2.1%. Sep CPI 3.7% (carried) |
 | Growth / Labor | Q3 GDP **+3.4%** (BEA advance); claims **194K** | Strong; the data side of the December case |
 | Oil → Growth Signal | WTI **$104.12 (Yahoo CL=F Friday bar, not confirmed as a settlement)** vs $103.27 settled last week (CLZ26); Brent $117.64 (BZ=F, same caveat) | Change provisional. A tanker attack in Hormuz Friday (Bloomberg headline) |
-| DXY | **101.88 (DX-Y.NYB)** | Above the 101 line (#115) |
+| DXY | **101.88 (DX-Y.NYB)** | Above the 101 line (#115, closed) |
 | Private credit / distressed | **Arini** down more than 21% YTD (Hedgeweek) and offloading about $800M of debt, with Pimco and Oaktree bidding (WSJ, Bloomberg headlines) | One fund, not a system signal. It is the kind of forced sale I watch |
 | Regulatory — Cards | Visa took a **$469M interchange-litigation provision** | The swipe-fee fight is now in the numbers, and the stock rose anyway |
 | Regulatory — Capital / Stablecoins | Basel III re-proposal, GENIUS Act comments (~Nov 23) | Both carried; **not re-sourced this week** (searches returned 2024 material only) |
