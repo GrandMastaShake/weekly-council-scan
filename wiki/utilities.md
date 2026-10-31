@@ -123,7 +123,7 @@ Week path: Mon $42.55, Tue $42.85, Wed $42.49, Thu $43.14, Fri **$43.43**.
 
 | Factor | Level | Implication for XLU |
 |---|---|---|
-| 10Y Treasury | **4.93% Fri close** (-6bp W/W), lowest close since Sep 9; **5.05% Wed** after the Fed | Carry gap: **3.07% vs 4.93% = -186bp**, from -192bp. Wednesday's single close over 5% reversed in two sessions (standing 10Y issues; no new issue filed) |
+| 10Y Treasury | **4.93% Fri close** (-6bp W/W), lowest close since Sep 9; **5.05% Wed** after the Fed | Carry gap: **3.07% vs 4.93% = -186bp**, from -192bp. Wednesday's single close over 5% reversed in two sessions (the earlier 10Y issue #113 is closed; regime flag tracked in #179; no new issue filed) |
 | 30Y / Long End | **5.31%** (-1bp) | The long end barely moved; the front led |
 | 5Y / 2Y / 3-Month | 4.72% (-8bp) / **4.56%** (-13bp, feed) / 3.97% | 2s10s 37bp |
 | Fed Posture | **Held 3.75–4.00% Oct 28, 10-2; Cook and Hammack for +25bp.** December hike ~**78–80%+** per press reports after PCE; next decision Dec 9 | Hawkish hold. Two dissents is the news; the market did not sell bonds for long |
@@ -133,7 +133,7 @@ Week path: Mon $42.55, Tue $42.85, Wed $42.49, Thu $43.14, Fri **$43.43**.
 | **PJM / FERC** | **No revised backstop filing found** in any search (due by Oct 29 per earlier reporting; FERC docket ER26-3380). Backstop suspended to Feb 28, 2027 | Unconfirmed either way; not checked against FERC eLibrary |
 | Natural Gas | **December (NGZ26) $2.90** vs $3.05 Oct 23, settled. NG=F's +9.8% is the roll from November, not a move | Neutral |
 | WTI Crude | **$104.12 settled (CLZ26)**, +$0.85 | The inflation leg of the rate file |
-| DXY | 101.88 (feed, +0.1%) | No direct read; #115 still above 101 |
+| DXY | 101.88 (feed, +0.1%) | No direct read; still above the 101 trip wire (#115, closed) |
 | **Wildfire Liability** | **EIX 10-Q (as of Oct 22): about 2,000 pending Eaton lawsuits, ~38,000 individual plaintiffs**, up from ~1,500 / ~20,000 in February; bellwether trials set for January, May and September 2027; **SCE has moved to continue the January trial to June 2027**. No ruling found on the motion. **PCG: no court or legislative item found.** The special session ended in August with no bill; no October action found. **Bryson Fire: CAL FIRE lists the cause as under investigation** | No liability event. The plaintiff count nearly doubled since February; that is a disclosure, not an event |
 | M&A | NEE–D: Dominion says hearings run late 2026 to early 2027; Virginia witness sessions Nov 5/9/10, evidentiary hearing Nov 17. **NWE–BKH: Montana PSC vote postponed to Nov 10** | A date on the second deal |
 
@@ -233,7 +233,7 @@ Company dates are Yahoo Finance calendar dates pulled Oct 31 unless noted; EPS i
 - Daily Montanan (Oct 27), News From The States: PSC vote postponed to Nov 10, staff recommended approval. Minnesota PUC (OTTR); Washington UTC docket 260007 (AVA)
 - CAL FIRE incident page: Bryson Fire cause under investigation. CalMatters, Utility Dive (August–September): special session ended with no wildfire bill
 - Not sourced this week: the PJM revised backstop filing; any ruling on SCE's continuance motion; any PCG court or legislative item; any October California wildfire legislation; WEC's adjusted figure and consensus at the print; AEP's Q3 contracted load (84 GW press figure unconfirmed); a reconciled EIX consensus; a Vistra-specific cause; XLU fund flows; refreshed XLU weights (Yahoo snapshot unchanged a fourth week); news for UTL and MGEE
-- **Cross-references: #113 and successors (10Y >5.00%; Wednesday's one close at 5.05% reversed, no new issue), #126 (EIX ruling / FERC suspension), #158 and #166 (data-center deals), #115 (DXY). No new issue this run: XLU +2.04% (±5%); no major earnings miss found (EIX's core is above this page's consensus; one headline disagrees); no new data-center PPA; no wildfire-liability event.**
+- **Cross-references: #113 (10Y >5.00%, closed; Wednesday's one close at 5.05% reversed in two sessions and is read under #179, no new issue), #126 (EIX ruling / FERC suspension, closed), #158 (closed) and #166 (data-center deals), #115 (DXY, closed). No new issue this run: XLU +2.04% (±5%); no major earnings miss found (EIX's core is above this page's consensus; one headline disagrees); no new data-center PPA; no wildfire-liability event.**
 
 ---
 
