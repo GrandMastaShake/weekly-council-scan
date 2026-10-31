@@ -122,7 +122,7 @@ Week path: Mon $103.85 (-1.6%), Tue $103.58, Wed $103.14, Thu $101.21 (-1.9%), F
 | **Google Ad-Tech Remedy** | Final judgment **not found as entered**; parties to file a jointly proposed judgment; remedy takes effect 60 days after entry | No ruling — no trigger |
 | **Wireless Competition** | **No confirmed update on SpaceX's ~80,000-site talks**; Crown Castle CEO: "talking to all parties"; no lease signed; one estimate ~$8B. 24/7 Wall St.: rising price tag for SpaceX's plans lifted the carriers Friday | The carriers traded relief, not resolution |
 | **Carrier prints** | VZ 406K phone adds, outlook raised; TMUS adj. $3.22, ARPA guide raised, MVNO ruled out; T last week 379K | All three now reported; VZ's and TMUS's numbers say the fight is not yet in the subscriber data |
-| DXY | 101.88 (#115 still above 101) | No read |
+| DXY | 101.88 (still above 101; #115 closed) | No read |
 | VIX | 19.42; +12.9% Friday | — |
 
 **Ophelia Verdict:** **Platforms: underweight, unchanged.** Alphabet is the second to fail the test I wrote down last week, and it failed it harder: a miss on the core, -$9.1B of cash, and a bigger bill coming in 2027. Cloud's double is real and the market paid nothing for it. **Telecom yield: underweight, unchanged, and I am watching it.** T-Mobile and Verizon both raised and the carriers beat the fund by five points or more. One relief day does not settle the tower question, and I was early on this call two weeks ago. **Broadband: underweight, unchanged** — Comcast rose 2.3% and Charter 2.7%, with no thesis behind either. **Entertainment: market-weight on Disney** — -1.4% in this tape, reports Nov 17. One issue filed: XLC beyond ±5% and Alphabet's miss, together.
@@ -214,7 +214,7 @@ Company dates are Yahoo Finance calendar dates pulled Oct 31 (not all company-co
 - WARC (Oct 7, 2026): 2026 ad spend +11.9%, 2027 +8.4%
 - AP via WTOP, StockTitan, Investrade (Oct 30): S&P -1.8%, Intel, Amazon, third down week
 - **Not verified or not sourced this week:** a confirmed cause for TMUS's Friday move; any SpaceX update after Oct 27; a dated advertiser-side ad-budget cut; Omnicom's Q3 2026 ad commentary; any FCC action; causes for APP -10.4% and CCOI -13.1% Friday, CHTR -5.9% Monday, TTWO's slide; Verizon's EPS against the 8-K; Alphabet's revenue consensus figure; refreshed XLC weights; company news for all five small caps
-- **Cross-references: #176 (last week's comm services trigger), #178 (Meta), #165 (tech/AI selloff), #158/#166 (hyperscaler capex), #115 (DXY). New issue opened this run: XLC -5.32% (beyond ±5%) and a major platform earnings miss (Alphabet). Other triggers not met: no antitrust ruling; no advertiser ad-budget cut announcement.**
+- **Cross-references: #176 (last week's comm services trigger), #178 (Meta), #165 (tech/AI selloff), #158 (closed) / #166 (hyperscaler capex), #115 (DXY, closed). New issue opened this run: XLC -5.32% (beyond ±5%) and a major platform earnings miss (Alphabet). Other triggers not met: no antitrust ruling; no advertiser ad-budget cut announcement.**
 
 ---
 
