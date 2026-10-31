@@ -2,7 +2,7 @@
 
 > **Sector:** Consumer Discretionary | **ETF:** Consumer Discretionary Select Sector SPDR (XLY) | **Expense Ratio:** 0.08%
 >
-> *"Marky's long fired Tuesday and was gone by Friday. XLY closed over $114.68 on Tuesday, sat on the 200-day Wednesday at $115.53, then gave back $2.43 in two sessions to finish +0.57% at $113.10, eight cents under the 50-day. Tesla carried the week: +4.9%, nearly all of it before its Q3 print (EPS $0.48 vs $0.45). The autos did not: GM -9.6% on a guide that would not rise, Ford -6.7%. Amazon gave up 4.6% on Thursday with no sourced cause. The 10Y closed a Friday under 5% for the first time since Sep 18, and Freddie's 30-year finally moved, to 7.32%."*
+> *"XLY rose 2.02% to $115.38 while SPY fell 0.56%, and it closed a Friday over the 200-day for the first time since Aug 28. Amazon did not help. It fell 4.2% on Thursday before it reported, then printed EPS of $1.89 against about $1.96 with $77.3B of quarterly capex, and finished at its lowest close since Jul 30. Tesla carried the fund again, +7.4%. GM rose 15.1% with no sourced cause, undoing last week's fall and then some. Ford beat. Starbucks comped 7.2%. The Conference Board jumped to 91.7. Thursday's close of $116.20 stopped two cents under my long line."*
 
 ---
 
@@ -10,23 +10,23 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $113.10 | $112.46 | **+0.57%** |
+| Price | $115.38 | $113.10 | **+2.02%** |
 | 52W Range | $105.22 – $123.75 (closing basis, dividend-adjusted) | $105.22 – $123.75 | Unchanged |
 | AUM | ~$21.3B | ~$21.3B | yfinance totalAssets |
-| YTD Return | **-4.7%** (price basis) | -5.2% | ~17 pts behind SPY (+12.3%) |
-| P/E Ratio | ~24.9 (trailing) | ~24.8 | yfinance |
+| YTD Return | **-2.8%** (price basis) | -4.7% | ~14.5 pts behind SPY (+11.7%) |
+| P/E Ratio | ~25.4 (trailing) | ~24.9 | yfinance |
 | Dividend Yield | ~0.86% | ~0.86% | yfinance |
 | Beta | ~1.18 (3Y) | ~1.18 | yfinance beta3Year |
 | Total Holdings | 47 (carried; not re-sourced) | — | — |
-| Avg Daily Volume | Friday 6.4M (20D ~7.2M) | Friday 16.2M | Friday's bar may still be finalizing |
+| Avg Daily Volume | Friday 10.1M (20D ~7.1M) | Friday 6.4M | Friday was the heaviest day of the week |
 
-Week path: Mon $114.46, Tue $115.50, Wed $115.53, Thu $115.01, Fri $113.10. Intraday range **$112.67–$116.22**. All bars dated Fri Oct 23; no repair pull was needed.
+Week path: Mon $114.26, Tue $115.45, Wed $115.33, **Thu $116.20**, Fri $115.38. Intraday range **$113.82–$116.77**. All bars dated Fri Oct 30; pulled Saturday morning (this run fired late), so no repair was needed.
 
-**Marky Tape Read:** I said long on a close over $114.68. Tuesday closed $115.50, so it fired, and Wednesday's $115.53 put the fund on its 200-day ($115.35 now) for the first time in weeks. Thursday held $115.01. Friday dropped 1.7% to $113.10, back under the 50D ($113.31) and back inside last week's range. That is the second failed breakout in two weeks, this time at the 200D instead of the 50D. The 20D ($111.97) is rising underneath and held. RSI 51.1, from 52.1. The working range is now **$111.97–$116.22**, with the 50D and the 200D both overhead inside it.
+**Marky Tape Read:** I said long on a close over $116.22. Thursday closed $116.20, two cents short, after trading $116.77, so it did not fire. The short under $111.97 was never close. Friday lost 0.7% but held the 200D ($115.16), and that is the first Friday close above it since Aug 28; every session this week from Tuesday on closed over it. The 50D ($113.14) and 20D ($113.51) are both under the price again, with the 20D back over the 50D. RSI 57.7, from 51.1. The working range is now **$113.82–$116.77**.
 
-**Ophelia Macro Read:** A light data week for the consumer; the confidence reads are next week. What moved was rates. **The 10Y closed at 4.99%** (5.10%), its first Friday close under 5% since Sep 18, after Thursday's 4.95%. The 30Y fell to 5.32%. **Freddie Mac's 30-year fell to 7.32%** (Oct 22) from 7.40%, its first decline in at least three weeks (7.28% Oct 1, 7.40% Oct 8 and Oct 15); 15-year 6.68%. NAR's September existing-home sales (released Oct 13, not re-read last week) rose 1.5% to a 3.99M annual rate, down 2.2% y/y, with Yun calling August–September the two slowest months of the year. WTI read **$103.44** (Fri evening, CL=F, not settled); last week settled **$101.41** (CLX26). VIX 19.45 (19.99). SPY -0.43% to $759.97. I did not re-source FOMC odds for Oct 28.
+**Ophelia Macro Read:** The consumer data beat and the inflation data did not. **Conference Board confidence rose 7.5 points to 91.7** (Oct 27) from a September revised up to 84.2, against about 81 expected; one source puts Expectations at 72.6, still under 80. **Q3 GDP +3.4%** (advance, Oct 29; consumer spending +3.8%; consensus about 3.1%). **September PCE +3.6% y/y, core +3.1%**, and real disposable income fell 0.3%. **The FOMC held at 3.75–4.00% on a 10–2 vote, with Cook and Hammack voting for a quarter-point hike** (Fed statement, Oct 28). **The 10Y closed 4.93%** (4.99%), after a one-day close at 5.05% on FOMC Wednesday. **Freddie Mac's 30-year fell to 7.24%** (Oct 29), from 7.32%; 15-year 6.60%. WTI settled **$104.12** (CLZ26; repo feed), +0.8%. VIX 19.42 (19.45), after 16.91 Wednesday. SPY -0.56% to $755.72, all of it Friday (-1.8%).
 
-**Restatement:** last week's page carried LOW's Oct 16 close at $197.38; the adjusted bar now reads $196.14 (dividend adjustment). Weekly change uses the bar.
+**Correction:** last week's page said the October UMich final was due Oct 30. It was published **Oct 23**, at 48.0 (preliminary 46.3; September 48.1). The next read is the November preliminary.
 
 ---
 
@@ -34,41 +34,45 @@ Week path: Mon $114.46, Tue $115.50, Wed $115.53, Thu $115.01, Fri $113.10. Intr
 
 | Rank | Ticker | Name | Weight | Price | Wk Change | Mean Target | Implied | Fwd P/E | Yield | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 1 | AMZN | Amazon | 23.4% | $248.00 | -0.80% | $331.72 | +33.8% | 23.8 | — | ⚠️ |
-| 2 | TSLA | Tesla | 17.7% | $372.22 | **+4.93%** | $407.22 | +9.4% | 172 | — | ⚡ |
-| 3 | HD | Home Depot | 5.0% | $319.83 | +3.29% | $379.75 | +18.7% | 20.0 | 2.8% | ⚡ |
-| 4 | MCD | McDonald's | 4.2% | $248.46 | +2.26% | $291.69 | +17.4% | 18.1 | 3.1% | ⚡ |
-| 5 | TJX | TJX Companies | 4.1% | $145.06 | -1.54% | $171.68 | +18.4% | 25.1 | 1.3% | ⚡ |
-| 6 | BKNG | Booking Holdings | 3.4% | $155.83 | **-4.66%** | $232.97 | +49.5% | 12.6 | 1.0% | 🔴 |
-| 7 | SBUX | Starbucks | 3.0% | $100.80 | +3.36% | $110.17 | +9.3% | 32.3 | 2.5% | ⚡ |
-| 8 | LOW | Lowe's | 2.9% | $198.68 | +1.30% | $252.73 | +27.2% | 15.3 | 2.5% | ⚡ |
-| 9 | MAR | Marriott | 2.1% | $390.71 | +0.69% | $386.81 | -1.0% | 29.7 | 0.7% | 🔥 |
-| 10 | ROST | Ross Stores | 2.1% | $229.30 | -3.20% | $268.00 | +16.9% | 25.5 | 0.8% | ⚠️ |
-| — | DASH | DoorDash | (outside top 10) | $179.38 | **-5.17%** | $257.37 | +43.5% | 21.7 | — | ⚠️ |
-| — | GM | General Motors | (outside top 10) | $75.92 | **-9.58%** | $101.00 | +33.0% | 5.1 | 0.9% | 🔴 |
-| — | NKE | Nike | (outside top 10) | $37.30 | +0.46% | $36.50 | -2.1% | 23.4 | 4.3% | ⚡ |
-| — | F | Ford Motor | (outside top 10) | $11.60 | **-6.68%** | $15.56 | +34.1% | 6.0 | 5.0% | 🔴 |
-| — | LULU | Lululemon | (outside top 10) | $99.01 | +1.97% | $103.66 | +4.7% | 11.5 | — | 🔴 |
-| — | CMCSA | Comcast | (not in XLY; tracked) | $22.69 | +3.61% | $28.16 | +24.1% | 6.4 | 5.8% | ⚡ |
-| — | DIS | Walt Disney | (not in XLY; tracked) | $112.52 | +1.75% | $126.58 | +12.5% | 15.0 | 1.3% | 🔥 |
-| — | DG | Dollar General | (not in XLY; tracked) | $132.69 | -1.24% | $142.83 | +7.6% | 16.0 | 1.7% | ⚡ |
+| 1 | AMZN | Amazon | 23.4% | $240.35 | **-3.08%** | $331.77 | +38.0% | 22.8 | — | ⚠️ |
+| 2 | TSLA | Tesla | 17.7% | $399.81 | **+7.41%** | $411.82 | +3.0% | 185.5 | — | 🔥 |
+| 3 | HD | Home Depot | 5.0% | $329.20 | +2.93% | $379.00 | +15.1% | 20.6 | 2.8% | ⚡ |
+| 4 | MCD | McDonald's | 4.2% | $258.12 | **+3.89%** | $291.69 | +13.0% | 18.8 | 3.0% | ⚡ |
+| 5 | TJX | TJX Companies | 4.1% | $140.31 | **-3.27%** | $171.42 | +22.2% | 24.3 | 1.4% | ⚠️ |
+| 6 | BKNG | Booking Holdings | 3.4% | $148.13 | **-4.94%** | $232.71 | +57.1% | 12.0 | 1.1% | 🔴 |
+| 7 | SBUX | Starbucks | 3.0% | $103.67 | +2.85% | $110.24 | +6.3% | 27.7 | 2.4% | ⚡ |
+| 8 | LOW | Lowe's | 2.9% | $209.07 | **+5.23%** | $251.97 | +20.5% | 16.1 | 2.4% | ⚡ |
+| 9 | MAR | Marriott | 2.1% | $399.30 | +2.20% | $387.77 | -2.9% | 30.3 | 0.7% | 🔥 |
+| 10 | ROST | Ross Stores | 2.1% | $228.28 | -0.44% | $271.83 | +19.1% | 25.4 | 0.8% | ⚡ |
+| — | DASH | DoorDash | (outside top 10) | $178.99 | -0.22% | $254.51 | +42.2% | 22.1 | — | ⚠️ |
+| — | GM | General Motors | (outside top 10) | $87.40 | **+15.12%** | $101.09 | +15.7% | 5.9 | 0.8% | 🔥 |
+| — | NKE | Nike | (outside top 10) | $38.67 | **+3.67%** | $36.50 | -5.6% | 24.8 | 4.2% | ⚡ |
+| — | F | Ford Motor | (outside top 10) | $12.25 | **+5.60%** | $15.25 | +24.5% | 6.4 | 4.9% | ⚡ |
+| — | LULU | Lululemon | (outside top 10) | $107.24 | **+8.31%** | $103.66 | -3.3% | 12.4 | — | ⚡ |
+| — | CMCSA | Comcast | (not in XLY; tracked) | $23.22 | +2.34% | $27.98 | +20.5% | 6.6 | 5.7% | ⚡ |
+| — | DIS | Walt Disney | (not in XLY; tracked) | $110.94 | -1.40% | $126.58 | +14.1% | 14.8 | 1.4% | ⚡ |
+| — | DG | Dollar General | (not in XLY; tracked) | $132.30 | -0.29% | $142.90 | +8.0% | 15.9 | 1.8% | ⚡ |
 
-All prices are Fri Oct 23 closes (daily bars, auto-adjusted, pulled about 11:20 PM ET); weekly changes are against the settled Fri Oct 16 daily-bar closes. Targets, forward P/E and yields are from the Oct 23 Yahoo pull.
+All prices are Fri Oct 30 closes (daily bars, auto-adjusted, pulled Sat Oct 31 about 10:00 AM ET); weekly changes are against the settled Fri Oct 23 daily-bar closes, all of which match last week's page. Targets, forward P/E and yields are from the same pull.
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
-> **Weights (Yahoo funds_data, Oct 23): AMZN 23.4%, TSLA 17.7%, HD 5.0%, MCD 4.2%, TJX 4.1%, BKNG 3.4%, SBUX 3.0%, LOW 2.9%, MAR 2.1%, ROST 2.1%.** Identical to the decimal for a third straight week, so Yahoo's snapshot is stale. The top ten is unchanged. AMZN + TSLA = **41.1%**. CMCSA and DIS are communication-services names and DG is a staples name; they stay on this page as consumer reads.
+> **Weights (Yahoo funds_data, Oct 30): AMZN 23.4%, TSLA 17.7%, HD 5.0%, MCD 4.2%, TJX 4.1%, BKNG 3.4%, SBUX 3.0%, LOW 2.9%, MAR 2.1%, ROST 2.1%.** Identical to the decimal for a fourth straight week, so Yahoo's snapshot is stale. AMZN + TSLA = **41.1%**. CMCSA and DIS are communication-services names and DG is a staples name; they stay on this page as consumer reads.
 
-**Tesla did the lifting.** By rough weighting TSLA added about **0.9 points** and AMZN took about 0.2; the other 45 names together were roughly flat to slightly down. Six of the top ten rose. No tracked name set a 52-week closing high or low.
+**Tesla paid for Amazon.** By rough weighting TSLA added about **1.3 points** and AMZN took away about 0.7; the other 45 names together added about 1.4. Six of the top ten rose, the same count as last week.
 
-**Tesla and Amazon.** TSLA rose 3.4% on Wednesday into its Q3 print, then fell 3.1% Thursday to $374.58 after it: revenue **$28.05B** (flat y/y, in line), non-GAAP EPS **$0.48** vs $0.45 consensus, deliveries 486,532 against ~462K expected, storage 13.7 GWh short of ~15.9 GWh (Electrek, Oct 21). It finished $372.22, back over its 20D and 50D ($369.87 / $363.77) and still under the 200D ($386.35). **AMZN fell 4.6% on Thursday** ($262.37 to $250.38) and closed the week at $248.00, under its 20D and 50D; a search for a dated cause returned nothing for Oct 22, so it is **not sourced**. Amazon reports **Oct 29** (Yahoo).
+**Amazon: the trigger of the week.** Q3 (Oct 29, after the close): revenue **$201.9B**, operating income **$28.1B** (+61%), EPS **$1.89** vs about **$1.96**. AWS +39.3% to **$46.0B**, backlog **$578B**. The issue was spending: capex **$77.3B** against a roughly $58.7B consensus, trailing free cash flow **-$42.4B**, about $220B of cash capex guided for 2026 (Yahoo live coverage, Zacks, secondary summaries; the primary filing was not read). The stock fell **4.2% on Thursday, before the print**, on 85M shares, a move I could not source to a dated cause. Friday it opened down 4.6%, recovered, and closed -1.4% at $240.35 on 105M shares, under its 200D ($243.40). **A GitHub issue is opened** for the EPS miss at the fund's largest holding.
 
-**Autos: the guide, not the quarter.** **GM -9.6% to $75.92**, its lowest close since Jul 20. Q3 adjusted EPS $3.70 vs $3.69 and revenue $50.0B beat, but GM narrowed full-year EPS guidance to $12.75–$13.75, a midpoint under the ~$13.41 consensus, citing logistics, energy and tariff costs, alongside a new $20B buyback (CTV/BNN Bloomberg, Oct 20). Tuesday alone was -6.8%. **Ford -6.7% to $11.60**, its lowest close since May 5, ahead of its Oct 28 print.
+**Tesla.** +5.2% Monday and +4.0% Tuesday, to $399.81, back over all three averages. Oct 29–30 headlines discuss a possible Tesla–SpaceX merger and its China regulatory risk (Investing.com, BofA via Stocktwits); I did not establish the status of any such deal, so this page does not assign the move to it.
 
-**Housing pair over the 50-day.** HD +3.3% to $319.83 and LOW +1.3% to $198.68; both now close above their 50-day averages ($309.31 / $196.54), after Thursday's +4.3% and +4.0% on the 10Y's 19bp drop. Both remain well under their 200-day averages ($331.67 / $224.74).
+**Autos: a full reversal.** **GM +15.1% to $87.40**, its best close since Sep 4, with no earnings and no sourced cause. The dated company items are a $220M driver-privacy settlement (Reuters, Oct 29) and a hybrid program at Lansing Delta Township (Wards, Oct 30), neither of which explains it. **Ford +5.6% to $12.25**: Q3 adjusted EPS **$0.49** vs ~$0.39, full-year adjusted EBIT raised at the bottom to **$10.5–$11B**, 2027 guided roughly flat with 2026, and Ford Pro EBIT -16%.
 
-**Travel split.** BKNG -4.7% to $155.83, its lowest close since May 19 and $2.46 above its 52-week closing low; MAR +0.7% to $390.71, still above its mean target. DASH -5.2%.
+**Housing pair.** HD +2.9% to $329.20 and LOW +5.2% to $209.07, on Thursday's +3.6% and +4.5%. Both set their best closes since late August. HD closed $1.41 under its 200D ($330.61); LOW is still far under its own ($223.23). No dated cause beyond the 7.24% mortgage rate was found.
 
-**Cecil Fundamental Read:** Booking is now 12.6x forward with a 49% gap to the Street, and the stock keeps going down. I said it was the buy at 13.2x; it is cheaper and I still want it, but I note that I have been early for three weeks. GM at 5.1x looks like a bargain until you read that management would not raise after a beat; I treat that as information about margins, not as a discount. HD at 20x is no longer cheap for a business whose customers still face a 7.32% mortgage. Amazon at 23.8x is the mega-cap price that interests me, and it reports in six days.
+**Starbucks and DoorDash.** SBUX fiscal Q4 (Oct 29): global comps **+7.2%**, U.S. +7.7%, transactions +1.8%, non-GAAP EPS **$0.80** vs ~$0.71 (8-K), with a revenue miss (Investing.com). +2.2% before the print, -1.7% after. **DoorDash agreed to buy Instacart at $65.00 a share, about $17B**, at least 75% cash (8-K, Oct 29); DASH finished -0.2%.
+
+**Travel.** **BKNG -4.9% to $148.13**, after a **52-week closing low of $147.94 on Wednesday**. It reports Tuesday. MAR +2.2%, reports Monday, above its mean target. LULU +8.3%, helped by an upbeat Adidas read (MarketWatch, Oct 29).
+
+**Cecil Fundamental Read:** Booking is 12.0x forward with a 57% gap to the Street, and it set a 52-week low this week. That makes four weeks of being early; the print on Tuesday settles whether the thesis or the chart was right. Amazon at 22.8x with AWS growing 39% is what I said I wanted. The EPS miss doesn't bother me, but negative trailing free cash flow does, and I want to see that capex earn something before I size it. GM at 5.9x after a 15% week with no reason I can name is a stock I now will not chase. Ford's beat is real and its 2027 guide is flat.
 
 ---
 
@@ -78,13 +82,13 @@ All prices are Fri Oct 23 closes (daily bars, auto-adjusted, pulled about 11:20 
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| SHAK | Shake Shack | **$2.79B** ✅ | $65.16 | **-6.9%** | No dated company headline this week (search returned older items); Q3 **Nov 5** (Yahoo); mean target $81.17 | The four-week run ended. Back under the 20D and 50D ($65.64 / $65.87) after Monday's $71.87 high close |
-| AEO | American Eagle | **$3.00B** ✅ | $17.91 | -0.4% | Nothing new sourced; at its $18.60 mean target | Quiet. Above the 50D ($16.76), under the 200D ($18.29). Dec 1 print (Yahoo) |
-| RVLV | Revolve Group | **$1.58B** ✅ | $22.26 | -2.4% | No fresh print; Q3 est. Nov 3 (Yahoo) | Holding the 50D ($21.86) by 40 cents. Still under the 200D ($23.52) |
-| EYE | National Vision | **$1.48B** ✅ | $18.67 | **+7.1%** | No dated headline sourced (latest found: Q2 on Aug 12, FY adj. EPS guide $0.94–$1.09); Q3 est. Nov 4 | Thursday's $18.87 was its best close of the week; now over the 50D ($17.27). RSI 66.6 |
-| BJRI | BJ's Restaurants | **$1.20B** ✅ | $56.51 | -4.8% | No fresh print; Q3 Nov 5 (Yahoo) | Third week under the 20D and 50D ($59.37 / $61.33); the cooling became a slide. RSI 39.6 |
+| AEO | American Eagle | **$3.29B** ✅ | $19.61 | **+9.5%** | No dated company headline this week; last item is the Sep 9 print. Dec 1 print (Yahoo); now above its $18.60 mean target | Back over the 200D ($18.13). RSI 66.3. The run has no sourced reason |
+| SHAK | Shake Shack | **$3.02B** ✅ | $70.48 | **+8.2%** | Earnings Whispers preview (Oct 28): traffic strong, beef costs decide Q3. Q3 **Nov 5** (Yahoo) | Over the 20D and 50D again, last week's break undone. Still under the 200D ($75.04) |
+| RVLV | Revolve Group | **$1.59B** ✅ | $22.43 | +0.8% | Earnings Whispers preview (Oct 26): sales accelerating, margin comps harder. Q3 **Nov 3** (Yahoo) | Above the 20D and 50D, under the 200D ($23.32). Quiet into the print |
+| BJRI | BJ's Restaurants | **$1.33B** ✅ | $62.53 | **+10.6%** | Named in Mizuho's restaurant picks ahead of earnings (Investing.com, Oct 30). Q3 Nov 5 (Yahoo) | Back over the 20D and 50D after three weeks under. RSI 57.3 |
+| EYE | National Vision | **$1.31B** ✅ | $16.59 | **-11.1%** | No dated cause found; Q3 date moved to **Nov 12** (Yahoo; was Nov 4) | Fell three days straight, to $15.46 Wednesday, then +7.6% Thursday. Last week's move above the 50D is gone |
 
-**Council Note:** All five re-verified below $5B at the Oct 23 close (AEO $3.00B, SHAK $2.79B, RVLV $1.58B, EYE $1.48B, BJRI $1.20B). No promotions or rotations. No company headline could be sourced for any of the five this week; three of them report in the Nov 3–5 window.
+**Council Note:** All five re-verified below $5B at the Oct 30 close. No promotions or rotations. SHAK, BJRI and RVLV report inside the next week. EYE's fall and AEO's rise have no sourced cause.
 
 ---
 
@@ -93,20 +97,21 @@ All prices are Fri Oct 23 closes (daily bars, auto-adjusted, pulled about 11:20 
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $123.75 | Resistance (closing basis) |
-| Week High | $116.22 | The failed push through the 200D |
-| 200-Day MA | $115.35 | Closed on it Tue/Wed ($115.50 / $115.53), lost it Thu |
-| 50-Day MA | $113.31 | Friday closed 21 cents under it |
-| Current Price | $113.10 | Friday close; +0.57% W/W |
-| Week Low | $112.67 | Friday intraday |
-| 20-Day MA | $111.97 | Rising; the first support |
-| Prior Range Low | $110.67 | Last week's CPI-day low |
+| Week High | $116.77 | Thursday intraday; the new long line |
+| Week High Close | $116.20 | Two cents under last week's $116.22 trigger |
+| Current Price | $115.38 | Friday close; +2.02% W/W |
+| 200-Day MA | $115.16 | First Friday close above it since Aug 28 |
+| Week Low | $113.82 | Monday intraday |
+| 20-Day MA | $113.51 | Back over the 50D; the short line |
+| 50-Day MA | $113.14 | — |
+| Prior Range Low | $110.67 | Oct 14 CPI-day low |
 | Gap Level | $109.41 | The Oct 2 gap |
 | Structural Support | $105.22–$105.66 | 52W low zone (closing basis) |
-| RSI(14) | 51.1 | From 52.1 |
+| RSI(14) | 57.7 | From 51.1 |
 
-**Marky Setup Assessment:** The long from $114.68 fired Tuesday and I'm out on Friday's close under the 50D, roughly flat on the trade. Two weeks, two failed breakouts, both on Fridays. I stand aside again. **Long on a close over $116.22**, the week high above the 200D. **Short on a close under $111.97** (the 20D), for $110.67 and then $109.41. My doubts: Tesla's +4.9% did more for the fund than the whole rest of the sector, and Amazon reports Thursday with the stock under its 50-day. The tape is waiting on Amazon.
+**Marky Setup Assessment:** Flat. Two cents is two cents, and I don't take a fill the rule didn't give me. **Long on a close over $116.77**, the week high. **Short on a close under $113.51** (the 20D). The 200D at $115.16 is the line in the middle: a close back under it makes this the third failed push in three weeks. My doubt is Friday: SPY lost 1.8% and XLY lost 0.7%, and that gap was Tesla and a recovering Amazon, not breadth.
 
-**The relative strength story:** XLY **+0.57% vs SPY -0.43%**, about 1.0 point better, for a second week. YTD **XLY -4.7% vs SPY +12.3%**. XLP's weekly move is on the staples page.
+**The relative strength story:** XLY **+2.02% vs SPY -0.56%**, about 2.6 points better, a third week ahead. YTD **XLY -2.8% vs SPY +11.7%**. XLP's weekly move is on the staples page.
 
 ---
 
@@ -114,20 +119,22 @@ All prices are Fri Oct 23 closes (daily bars, auto-adjusted, pulled about 11:20 
 
 | Factor | Level | Implication for XLY |
 |---|---|---|
-| **10Y Treasury** | **4.99%** (5.10%); 30Y 5.32%; 3M bill 4.03% | First Friday close under 5% since Sep 18. A break below 4% is the next trigger level; the standing 10Y-above-5% issue covers the other side |
-| **30Y Mortgage (Freddie Mac)** | **7.32%** (Oct 22), from 7.40%; 15Y 6.68% | Read directly from Freddie Mac's PMMS page. First decline in three weeks |
-| **Existing home sales (Sep, released Oct 13)** | 3.99M annual rate, +1.5% m/m, -2.2% y/y; inventory 1.60M (4.8 months); median $417,500 | Turnover is flat near cycle lows; NAR flagged Q4 closings could be "measurably down" |
+| **10Y Treasury** | **4.93%** (4.99%); 30Y 5.31%; 3M bill 3.97% | A fourth lower Friday close. Wednesday closed 5.05% for one session. 4% is the lower trigger line |
+| **30Y Mortgage (Freddie Mac)** | **7.24%** (Oct 29), from 7.32%; 15Y 6.60% | Read directly from Freddie Mac's PMMS page. Second straight decline; a year ago 6.17% |
+| **Conference Board Confidence** | **91.7** (Oct), from 84.2 (Sep, revised up from 81.9); consensus ~81 | A positive surprise. Expectations 72.6, one source |
+| **UMich Sentiment (Oct final)** | **48.0** (prelim 46.3; Sep 48.1), published Oct 23 | Still near record lows. November preliminary next |
+| **GDP (Q3 advance)** | **+3.4%**; consumer spending +3.8% | Beat ~3.1%. AI investment was a large driver |
+| **PCE (Sep)** | **+3.6% y/y; core +3.1%**; real disposable income -0.3% | Spending held up while real income fell |
+| **Existing home sales (Sep, released Oct 13)** | 3.99M annual rate, +1.5% m/m, -2.2% y/y (carried) | October's report is due in November |
 | **CPI (Sep)** | 3.7% y/y; core 2.6% (carried, Oct 14) | October CPI is due mid-November |
 | **Retail sales (Sep)** | +0.8%; control group +0.1% (carried, Oct 15) | — |
-| **UMich Sentiment (Oct prelim)** | 46.3; current conditions 44.7 (carried) | Final due Oct 30; issue #156 covers it |
-| **Conference Board Confidence** | 81.9 (Sep; carried) | October reading due Oct 27 |
-| **FOMC posture** | 3.75–4.00%; meeting Oct 27–28 | Odds not re-sourced this week |
-| **WTI Crude** | **$103.44** (Fri evening, CL=F, not settled); last week settled $101.41 (CLX26) | Provisional ~+2%. Brent $111.66 (Fri evening, BZ=F). Still the consumer's tax |
-| **DXY** | 101.75 (Fri evening, DX-Y.NYB) | Flat (101.84) |
-| **VIX** | 19.45, from 19.99 | Elevated, steady |
-| SPY (context) | $759.97, -0.43% W/W | — |
+| **FOMC posture** | **Held 3.75–4.00%, 10–2; Cook and Hammack dissented for a hike** | Next decision Dec 9 (one source). Admiral Markets reports markets pricing a December hike; not checked against futures |
+| **WTI Crude** | **$104.12** settled (CLZ26; repo feed), +0.8% | Brent $117.64 on the expiring contract (BZ=F, Fri bar); January $113.43. Hormuz headlines kept it bid (Investing.com, Oct 31) |
+| **DXY** | 101.88 (Fri bar, DX-Y.NYB, read Sat AM) | Flat (101.81) |
+| **VIX** | 19.42, from 19.45 | 16.91 Wednesday, then +13% Friday |
+| SPY (context) | $755.72, -0.56% W/W; Friday -1.8% | The AI trade sold off into the weekend |
 
-**Ophelia Verdict:** This was the week the mortgage moved, and only by 8bp. A 7.32% rate with 3.99M existing sales is not a housing turn; it is a market that stopped getting worse. The autos told me more than the housing pair did: GM beat and would not raise, and named energy and logistics costs, with WTI over $100. I stay underweight the index. The Oct 27 Conference Board and the Oct 28 FOMC are the next two prints that can change my mind.
+**Ophelia Verdict:** My condition for moving was the Conference Board and the Fed. The first printed well above consensus. The second held, but two governors wanted a hike, with core PCE at 3.1% and rising. That is a strong consumer with weaker real income, spending into 3.6% inflation and $104 oil. I raise the read from underweight to **neutral on the non-megacap names** and stay underweight the index, because 41% of it is two stocks and one of them just printed negative trailing free cash flow. Election Nov 3 and October payrolls are next.
 
 ---
 
@@ -135,92 +142,94 @@ All prices are Fri Oct 23 closes (daily bars, auto-adjusted, pulled about 11:20 
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: Up to the 200-Day, and Back
+### This Week's Story: Over the 200-Day, Without Amazon
 
-XLY rose **0.57% to $113.10** while SPY fell 0.43%. Midweek it looked like more: closes of $115.50 and $115.53 put the fund on its 200-day average, and Friday's 1.7% drop took it back under the 50-day.
+XLY rose **2.02% to $115.38** while SPY fell 0.56%. The fund closed a Friday above its 200-day average for the first time since August 28, and it did so with its largest holding at a three-month low.
 
-**Catalyst 1: Tesla's print.** Tesla rose 3.4% into Wednesday's report and fell 3.1% after it. The quarter was a modest beat on EPS ($0.48 vs $0.45) with flat revenue and storage short of estimates. Net, TSLA's +4.9% week was worth about 0.9 points to the fund, more than everything else combined.
+**Catalyst 1: Amazon's capex.** Amazon reported revenue of $201.9B and AWS growth of 39%, but EPS of $1.89 missed about $1.96 and quarterly capex of $77.3B ran far above estimates. The stock had already fallen 4.2% on Thursday, before the report. It closed the week -3.1%, worth about -0.7 points to the fund.
 
-**Catalyst 2: Detroit's guidance.** GM beat its quarter and narrowed its full-year range to a midpoint below the Street, naming energy, logistics and tariff costs. The stock fell 9.6%, Ford 6.7%. Both closed at multi-month lows.
+**Catalyst 2: Tesla again.** A 7.4% week added about 1.3 points. Without it, the fund's gain would have been about 0.7 points.
 
-**Catalyst 3: rates finally reached mortgages.** The 10Y fell 11bp on the week to 4.99%, its first Friday close under 5% since mid-September, and Freddie Mac's 30-year eased to 7.32%. Home Depot and Lowe's rose 4% on Thursday and both now close above their 50-day averages.
+**Catalyst 3: autos turned.** GM rose 15.1% with no sourced cause, reversing last week's guide-driven fall. Ford beat, lifted the bottom of its EBIT range and guided 2027 flat.
 
-**Catalyst 4: Amazon's Thursday.** Amazon dropped 4.6% on Oct 22. A search found no dated cause, so this page does not assign one. It reports Oct 29.
+**Catalyst 4: the consumer data.** The Conference Board index jumped to 91.7, about ten points above forecasts, and Q3 GDP grew 3.4% on 3.8% consumer spending. Starbucks posted 7.2% global comps. Against that, September PCE rose to 3.6% and real disposable income fell.
 
-**The Bottom Line:** A second straight Friday failure at a moving average, this time the 200-day. The rate relief helped the housing names, and the autos showed what $100 oil does to margins. Next week is the heaviest of the season for this page: Conference Board and the FOMC, then Ford, Amazon and Starbucks.
+**Catalyst 5: the Fed.** It held, with two dissents for a hike. The 10Y still finished lower at 4.93%, and Freddie Mac's 30-year eased to 7.24%. Home Depot and Lowe's rose on Thursday to their best closes since August.
+
+**The Bottom Line:** The fund cleared a line it had failed at for two weeks, and Thursday's close fell two cents short of the long trigger. The next test is Booking on Tuesday, McDonald's on Wednesday, and the Nov 3 election. **Trigger: Amazon's EPS miss. Issue opened.**
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Company dates are Yahoo Finance calendar dates pulled Oct 23, not company-confirmed; EPS is the Yahoo consensus mean. No date moved since last week's page.
+Company dates are Yahoo Finance calendar dates pulled Oct 30–31, not company-confirmed; EPS is the Yahoo consensus mean. Moved since last week's page: **EYE Nov 4 → Nov 12; DASH Nov 4 → Oct 29** (Yahoo; DoorDash's results were not read).
 
 | Company | Ticker | Date | Quarter | EPS Est. | Key Metric to Watch |
 |---|---|---|---|---|---|
-| **General Motors** | GM | **Oct 20 — REPORTED ✔** | Q3 2026 | — | **Adj. EPS $3.70 vs $3.69; FY guide narrowed to $12.75–$13.75; stock -9.6% W/W** |
-| **Tesla** | TSLA | **Oct 21 — REPORTED ✔** | Q3 2026 | — | **EPS $0.48 vs $0.45; revenue $28.05B flat; -3.1% Thursday** |
-| **Comcast** | CMCSA | **Oct 22 — REPORTED ✔** | Q3 2026 | — | **Adj. EPS $1.07 vs $0.99 (last week's consensus); +3.4% Thursday. Broadband net change not sourced** |
-| **Conference Board (Oct)** | — | Oct 27, 2026 | — | — | First confidence read after the hot CPI |
-| **FOMC** | — | Oct 27–28, 2026 | — | — | Odds not re-sourced |
-| **Ford** | F | Oct 28, 2026 | Q3 2026 | $0.40 | EV losses; at a May low into the print, 5.0% yield |
-| **Amazon / Starbucks** | AMZN / SBUX | **Oct 29, 2026** | Q3 2026 / Q4 FY2026 | $1.98 / $0.71 | AWS growth and capex; 23.4% of the fund. SBUX U.S. comps |
-| **UMich (Oct final)** | — | Oct 30, 2026 | — | — | Whether 46.3 and the 44.7 record low hold |
+| **Ford** | F | **Oct 28 — REPORTED ✔** | Q3 2026 | — | **Adj. EPS $0.49 vs ~$0.39; 2026 adj. EBIT $10.5–$11B; 2027 flat; +5.6% W/W** |
+| **Amazon** | AMZN | **Oct 29 — REPORTED ✔** | Q3 2026 | — | **EPS $1.89 vs ~$1.96 (miss); AWS +39.3%; capex $77.3B; -3.1% W/W** |
+| **Starbucks** | SBUX | **Oct 29 — REPORTED ✔** | Q4 FY2026 | — | **Global comps +7.2%; non-GAAP EPS $0.80; +2.9% W/W** |
 | **Marriott** | MAR | Nov 2, 2026 | Q3 2026 | $2.85 | RevPAR; above its mean target |
-| **Booking Holdings / Revolve** | BKNG / RVLV | Nov 3, 2026 | Q3 2026 | $4.49 / $0.24 | Room nights; BKNG at a May low into it |
-| **McDonald's / DoorDash / National Vision** | MCD / DASH / EYE | Nov 4, 2026 | Q3 2026 | $3.38 / $1.54 / $0.17 | U.S. traffic |
-| **Shake Shack / BJ's Restaurants** | SHAK / BJRI | Nov 5, 2026 | Q3 2026 | $0.34 / $0.16 | Traffic and beef costs |
-| **Home Depot / Disney** | HD / DIS | Nov 17, 2026 | Q3 FY2026 / Q4 FY2026 | $3.84 / $1.69 | HD comps with mortgages at 7.32% |
+| **Booking Holdings / Revolve** | BKNG / RVLV | Nov 3, 2026 | Q3 2026 | $4.50 / $0.24 | Room nights; BKNG at a 52-week low into it |
+| **U.S. election** | — | Nov 3, 2026 | — | — | Midterms |
+| **McDonald's** | MCD | Nov 4, 2026 | Q3 2026 | $3.38 | U.S. traffic after Starbucks' 1.8% transactions |
+| **Shake Shack / BJ's Restaurants** | SHAK / BJRI | Nov 5, 2026 | Q3 2026 | $0.34 / $0.17 | Traffic and beef costs |
+| **National Vision** | EYE | Nov 12, 2026 | Q3 2026 | $0.17 | After an 11.1% week |
+| **Home Depot / Disney** | HD / DIS | Nov 17, 2026 | Q3 FY2026 / Q4 FY2026 | $3.84 / $1.69 | HD comps with mortgages at 7.24% |
 | **Lowe's / TJX / Ross** | LOW / TJX / ROST | Nov 18 / Nov 18 / Nov 19 | Q3 FY2026 | $2.87 / $1.34 / $1.84 | Comps |
 
-Yahoo's calendar still shows past dates for LULU (Sep 3) and DG (Aug 27). NKE is listed Dec 17 and AEO Dec 1.
+Yahoo's calendar still shows past dates for LULU (Sep 3) and DG (Aug 27); SBUX now shows Jan 27. NKE is listed Dec 17 and AEO Dec 1.
 
-**Marky's Binary Event Read:** Amazon on Oct 29 is the gate. It is 23.4% of the fund, it fell 4.6% on one unexplained day this week, and it reports with the stock under its 50D. Levels: long over $116.22, short under $111.97.
+**Marky's Binary Event Read:** Amazon is done and the fund held. Booking on Tuesday is the next single-name gate, at a 52-week low. Levels: long over $116.77, short under $113.51, with the 200D at $115.16 in between.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **The 10Y stays under 5%** and mortgages extend from 7.32%; HD and LOW hold their new 50-day reclaim
-- **Amazon (Oct 29) clears the bar** and the fund takes out $116.22 and the 200D on its second attempt
-- **The Oct 28 FOMC holds** and the hike talk after the 3.7% CPI fades
-- **WTI turns back under $90**, easing the cost line GM named
+- **The fund closes over $116.77** and the 200D holds as support for the first time since August
+- **The 10Y stays under 5%** and the mortgage rate extends its two-week fall from 7.24%
+- **Booking and McDonald's confirm** what the Conference Board and Starbucks suggested about demand
+- **Amazon recovers its 200D** ($243.40) and stops subtracting from the fund
 
 ### 🔴 Bear Case
-- **A close under $111.97**, then $110.67: a third failed breakout turns into a breakdown
-- **GM's warning spreads**: Ford (Oct 28) also blames energy and logistics, and the auto group keeps setting lows
-- **Oil over $100 (Fri evening, unsettled)** keeps eating into the control group, and the Conference Board print confirms it
-- **Amazon misses on retail margin**, with 23.4% of the fund under its 50-day going into it
+- **A close back under the 200D**, then $113.51: a third failed push in three weeks
+- **The capex worry keeps spreading**: Amazon closes under $240 with the fund's weight behind it
+- **A December hike gets priced**, with two dissents, core PCE at 3.1% and the 10Y back over 5%
+- **Oil stays over $100** while real disposable income falls, and the confidence jump does not last
 
 ### ⚠️ The Wild Card
-**Tesla carried the fund for a week on a modest beat.** Without TSLA's ~0.9 points, XLY was roughly flat in a week when the housing pair rallied on rates. One name at 172x forward earnings is deciding the cap-weighted read, and Yahoo's weight snapshot has not refreshed in three weeks, so even that share is approximate.
+**The two-stock fund split in half.** Tesla and Amazon went opposite ways, and Tesla's 17.7% beat Amazon's 23.4%. Tesla trades at about 186x forward on headlines this page could not pin down, and GM's 15% week has no sourced reason. Yahoo's weights have not refreshed in four weeks, so even those contributions are approximate.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The mortgage moved 8 basis points and GM told us what $100 oil does to costs. That's not a consumer recovery. I stay underweight and wait for the Conference Board and the Fed next week."*
+**Ophelia:** *"Confidence beat, GDP beat, and two governors wanted a hike. I go neutral on the non-megacap names and stay underweight the index. Forty-one percent of it is two stocks, and one of them just spent $77 billion in a quarter."*
 
-**Marky:** *"Long fired Tuesday, gone Friday. Two weeks, two failed breakouts. I'm flat. Long over $116.22, short under $111.97, and nothing until Amazon reports."*
+**Marky:** *"Two cents short on Thursday, so I'm still flat. Long over $116.77, short under $113.51. First Friday over the 200-day since August, and I want to see it hold."*
 
-**Cecil:** *"Booking at 12.6 times is cheaper than when I called it the buy, and I've been early three weeks running. I hold the view and size it small. GM at 5 times is cheap for a reason this week. Amazon at 24 times is where I'm looking."*
+**Cecil:** *"Booking at 12 times with a 52-week low on Wednesday, and it reports Tuesday. I've been early four weeks and I keep it small. Amazon's AWS is what I wanted to see; its free cash flow isn't. GM up 15% on nothing I can name is not a value case."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance 1.6.0 (pulled Fri Oct 23, 2026, ~11:20 PM ET): daily bars through the Fri Oct 23 close for XLY and all tracked names (auto_adjust=True); weekly changes vs the settled Fri Oct 16 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week closing highs and lows; mean targets, forward P/E, yields, market caps; XLY top-10 weights via funds_data (unchanged for a third straight pull); earnings-calendar dates and consensus EPS. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-10-23-gridB/: quotes_XLY.csv, quotes_MAC.csv, top10_XLY.csv, bars_*.csv
-- Electrek (Oct 21, 2026): Tesla Q3 2026 revenue $28.05B, non-GAAP EPS $0.48 vs $0.45, deliveries 486,532, storage 13.7 GWh
-- CTV News / BNN Bloomberg / CP24 (Oct 20, 2026): GM Q3 adjusted EPS $3.70 vs $3.69, revenue $50.02B, FY EPS guide $12.75–$13.75, $20B buyback
-- Comcast 8-K exhibit 99.1 (SEC, Oct 22, 2026): Q3 adjusted EPS $1.07, adjusted EBITDA $9.1B, FCF $4.2B, 368K wireless adds
-- Freddie Mac PMMS (freddiemac.com/pmms, read Oct 23): 30-year fixed 7.32% as of Oct 22 (7.40% prior); 15-year 6.68%
-- NAR (Oct 13, 2026): September existing-home sales 3.99M, +1.5% m/m, -2.2% y/y; inventory 1.60M, 4.8 months; median $417,500
-- data/market_state.json (as of Oct 16): WTI settled $101.41 (CLX26). This week's settlement is not loaded yet; CL=F is a Friday-evening read
-- Not re-sourced this week: cause of AMZN's Oct 22 drop; Comcast's broadband subscriber change; FOMC odds; small-cap catalysts (searches returned only older items); Conference Board, UMich and CPI (carried); XLY holdings count
-- Repo cross-checks: prior revision of this page (Oct 16); LOW's Oct 16 close restated to $196.14 from $197.38 on the adjusted bar
+- yfinance 1.6.0 (pulled Sat Oct 31, 2026, ~10:00 AM ET): daily bars through the Fri Oct 30 close for XLY and all tracked names (auto_adjust=True); weekly changes vs the settled Fri Oct 23 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week closing highs and lows; mean targets, forward P/E, yields, market caps; XLY top-10 weights via funds_data (unchanged a fourth pull); earnings-calendar dates and consensus EPS. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-10-30-gridB/: quotes_XLY.csv, quotes_MAC.csv, top10_XLY.csv, bars_*.csv
+- data/market_state.json (as of Oct 30): WTI settled $104.12 (CLZ26), +0.8%
+- Federal Reserve statement (Oct 28, 2026; read directly): rate held; Cook and Hammack preferred a 1/4-point raise. Dec 9 next meeting and December-hike pricing per Admiral Markets
+- Freddie Mac PMMS (freddiemac.com/pmms, read Oct 31): 30-year 7.24% as of Oct 29 (7.32% prior); 15-year 6.60%
+- BEA Q3 2026 advance GDP release (Oct 29) via Axios, ABC, NPR: +3.4%, consumer spending +3.8%; Fox Business and StockTitan (Oct 29): September PCE +3.6%, core +3.1%, real disposable income -0.3%
+- Conference Board October release via secondary reports (Oct 27): 91.7, September revised to 84.2; Expectations 72.6 from Verified Investing only. UMich Oct final 48.0 via Teleborsa (Oct 23)
+- Amazon Q3: Yahoo Finance live coverage, Zacks ("Amazon the Latest Mag 7 to Miss Q3 Estimates", Oct 29), Pomegra, BigGo and DataStudios summaries. Sources differ slightly on cash capex ($75.9B vs $77.3B of property and equipment)
+- Ford Q3: Ford release and Earnings Whispers (Oct 29). Revenue reported as $49.53B (Earnings Whispers) and $46.08B (Quiver, likely a different basis), so it is not quoted above
+- Starbucks 8-K (SEC, Oct 29, 2026): comps, non-GAAP EPS $0.80; Investing.com (Oct 29): revenue miss
+- DoorDash 8-K exhibit 99.1 (SEC, Oct 29, 2026): Instacart at $65.00 per share, ~$17B, at least 75% cash
+- Reuters (Oct 29): GM $220M privacy settlement; Wards (Oct 30): Lansing Delta Township hybrids; MarketWatch (Oct 29): Adidas lifts athleisure; Investing.com (Oct 30): Mizuho restaurant picks; Earnings Whispers previews (Oct 26–28)
+- Not re-sourced this week: the cause of AMZN's Oct 29 pre-print drop; the cause of GM's +15.1%; the status of any Tesla–SpaceX deal; HD/LOW's Thursday cause; DoorDash's Q3 results; AEO and EYE catalysts; fund holdings count; primary Amazon filing (SEC.gov refused the automated fetch)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-10-23 (data as of Fri 2026-10-23 close; Grid B Midday run, Friday evening)*
+*Last updated by Saturday Research Crew: 2026-10-31 (data as of Fri 2026-10-30 close; Grid B Midday run, late fire Saturday morning)*
 *Next update: Every Saturday*
-*Data sources: yfinance (Yahoo-sourced), Freddie Mac, NAR, company IR releases and SEC filings, Council desk logs*
+*Data sources: yfinance (Yahoo-sourced), repo market_state, Freddie Mac, Federal Reserve, company IR releases and SEC filings, Council desk logs*
