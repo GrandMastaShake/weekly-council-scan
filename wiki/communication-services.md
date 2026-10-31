@@ -2,7 +2,7 @@
 
 > **Sector:** Communication Services | **ETF:** Communication Services Select Sector SPDR (XLC) | **Expense Ratio:** 0.08%
 >
-> *"The coil broke, and it broke down. XLC closed $105.51, -4.4%, its lowest close since July 23 and 48 cents above the 52-week closing low. Both ends of the barbell fell in the same week. The platforms fell on their own prints: Meta beat on revenue and still lost 7% Thursday on a $9.9B legal charge and capex that outran operating cash flow; Netflix beat on earnings, guided Q4 below and cut its ad forecast, and lost 5% Wednesday. Alphabet fell 6% without reporting. Then on Friday Bloomberg reported SpaceX in talks for about 80,000 tower sites, and the carriers fell again: AT&T -8.0% on the day, -10.7% on the week after a beat-and-raise; T-Mobile to its lowest close in two years. Comcast and Disney rose. The hedge stopped hedging."* — Ophelia
+> *"Eight straight down days. XLC closed $99.90, -5.3%, a new 52-week closing low, its worst week since April 2025 and the lowest close since June 2025. Alphabet did it. A first top-and-bottom-line miss in nearly four years, Search short of expectations, $51.4B of capex, free cash flow of -$9.1B, and a 2027 capex line that analysts turned into about $300B. The stock fell 12.6% Thursday. Google Cloud doubled and nobody cared. That is the same verdict Meta got last week: the market will not finance this. This time the barbell worked. T-Mobile beat, raised and jumped 6.2% Friday, Verizon raised its outlook, and Comcast and Charter rose. The phone companies were up on the week and the platforms took the fund through the floor. RSI is 22.9, the lowest in two years of bars."* — Ophelia
 
 ---
 
@@ -10,22 +10,22 @@
 
 | Metric | Current | Prior Week | Change |
 |---|---|---|---|
-| Price | **$105.51** | $110.32 | **-4.36% W/W** — lowest close since Jul 23; $0.48 above the 52-week closing low |
-| 52W Range | $105.03 – $119.00 (closing, adjusted bars) | $105.03 – $119.00 | Unchanged |
+| Price | **$99.90** | $105.51 | **-5.32% W/W** — new 52-week closing low; worst week since Apr 2025; lowest close since Jun 3, 2025 |
+| 52W Range | $99.90 – $119.00 (closing, adjusted bars) | $105.03 – $119.00 | Low re-set Friday |
 | AUM | $22.5B (Yahoo totalAssets) | $22.5B | Yahoo figure unchanged |
-| YTD Return | **-9.6%** (price basis, adjusted bars) | -5.4% | Yahoo's total-return YTD field -4.9% (stale) |
-| 1Y Return | -7.3% (adjusted bars) | -2.8% | — |
-| P/E Ratio | 15.5 (trailing, Yahoo) | 16.2 | — |
+| YTD Return | **-14.4%** (price basis, adjusted bars) | -9.6% | Yahoo's total-return YTD field -4.9% (stale) |
+| 1Y Return | -11.9% (adjusted bars) | -7.3% | — |
+| P/E Ratio | 14.7 (trailing, Yahoo) | 15.5 | — |
 | Dividend Yield | 1.24% (Yahoo) | 1.24% | — |
 | Beta | 0.85 (3Y, Yahoo) | 0.85 | — |
 | Total Holdings | ~24 (carried) | — | WBD's slot is Skydance (SKYD) |
-| Avg Daily Volume | 5.9M this week (20D 6.5M) | 6.8M | Wed 9.3M (Netflix day) the heaviest |
+| Avg Daily Volume | 8.7M this week (20D 6.8M) | 5.9M | Thu 10.5M (Alphabet day) the heaviest |
 
-Week path: Mon $110.09, Tue $110.19, Wed $108.97 (-1.1%, **through $109.66**), Thu $107.42 (-1.4%), Fri **$105.51** (-1.8%). Three straight lower closes to finish the week.
+Week path: Mon $103.85 (-1.6%), Tue $103.58, Wed $103.14, Thu $101.21 (-1.9%), Fri **$99.90** (-1.3%, low $99.32). **Eight straight lower closes**, from $110.19 on Oct 20.
 
-**Marky Tape Read:** I said short under $109.66 and Wednesday gave it to me: $108.97 on Netflix's print, the heaviest volume of the week. Thursday and Friday followed through without a bounce, and Friday closed near the low ($105.50). The fund is now $5.01 under its 20-day ($110.52), $5.91 under its 50-day ($111.42) and $7.19 under its 200-day ($112.70). RSI **33.1**, from 45.9 — not yet oversold. The target I named was $105.03, the 52-week closing low; Friday closed 48 cents above it. Levels: **$105.03** (the 52-week closing low), $109.66 (the old floor, now resistance), $110.52 (20D). Bias: **bearish below $109.66**. Short from $108.97; I cover a third at $105.03 and hold the rest with a stop on a close over $109.66.
+**Marky Tape Read:** The target paid Monday: the fund went through $105.03 and I covered my third. Short from $108.97, the fund is -8.3%. Nothing bounced. The fund is $8.51 under its 20-day ($108.41), $10.66 under its 50-day ($110.56) and $12.45 under its 200-day ($112.35). RSI **22.9**, from 33.1, the lowest reading in the two years of bars and past March's 23.3 and April 2025's 23.7. Oversold is not a signal to buy, but it is a signal to stop adding to a short. Friday lost $100 on a close for the first time since mid-2025 and closed 58 cents off its low. Levels: **$105.03** (old 52-week low, now resistance), $101.21 (Thursday's close), $99.32 (Friday's low). There is no support on the 1Y chart; the next reference is $99.78 (Jun 3, 2025 close). Bias: **bearish below $105.03**. I cover a second third here at $99.90 and keep the last third with a stop on a close over $105.03.
 
-**Ophelia Macro Read:** This week was company news, not macro. The 10Y fell to **4.99%** (-11bp) and it helped nobody in this fund: Verizon's 6.3% yield now sits about 130bp over the 10-year and Verizon still fell. The AI trade sold on Thursday after Meta's print (S&P -1.2% that day), and the platforms went with it. FedWatch per press reports: October hike ~7%, December ~71–78%. VIX **19.45**. DXY 101.75 Fri evening, flat. **Ad budgets:** Netflix cut its 2026 ad-revenue forecast to about **$2.7B from about $3B**, citing delays in ad-product features — a company's own ad forecast, not an advertiser's budget cut; Meta's revenue rose 26% and its Q4 guide ($73–76B) bracketed consensus. No advertiser-side Q4 budget cut was found. **Antitrust:** the Google ad-tech final judgment had **not been entered** in any source found (newest: Oct 5–14 reports); no appeal notice. **Wireless:** Bloomberg (Fri Oct 23, unnamed sources) reported SpaceX held talks with at least one large tower owner, Crown Castle named, for about 80,000 sites; SpaceX expects its spectrum purchase to close in 1H 2027. Crown Castle and American Tower rose.
+**Ophelia Macro Read:** Company news again, and again a verdict on capex. The Fed held at 3.75–4.00% in a 10-2 vote with two for a hike, PCE was 3.6%, and the 10-year fell to **4.93%** (-6bp). None of that moved this fund. SPY **-0.6%**; XLC -5.3%. Friday's S&P -1.8% came from Intel's guide and Amazon's capex, the same question Alphabet was asked on Thursday: S&P 500 down a third straight week. VIX **19.42**. DXY 101.88. **Ad budgets:** Alphabet's Search grew 12% to $63.4B and missed; that is one seller's number, not a buyer's cut. WARC's Oct 7 outlook still has 2026 global ad spend +11.9%. **No advertiser-side budget cut found.** **Antitrust:** the Google ad-tech final judgment was **not found as entered**; newest reports still describe a jointly proposed judgment. **Wireless:** no update found on the SpaceX tower report; Crown Castle's CEO said it is "talking to all parties," no lease signed. T-Mobile's CEO again ruled out a SpaceX MVNO. 24/7 Wall St. reported Friday that a rising price tag on SpaceX's wireless plans lifted the carriers.
 
 ---
 
@@ -33,32 +33,32 @@ Week path: Mon $110.09, Tue $110.19, Wed $108.97 (-1.1%, **through $109.66**), T
 
 | Rank | Ticker | Name | Weight | Price | Change † | Fwd P/E | Yield | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | META | Meta Platforms | 22.2% | **$642.62** | **-9.40%** | 18.5 | 0.3% | $843.39 (+31.2%) | 🔴 |
-| 2 | GOOGL | Alphabet (Class A) | 11.6% | **$320.21** | **-5.98%** | 20.8 | 0.3% | $429.12 (+34.0%) | ⚠️ |
-| 3 | GOOG | Alphabet (Class C) | 9.3% | $317.28 | -5.83% | 20.7 | 0.3% | $422.36 (+33.1%) | ⚠️ |
-| 4 | SKYD | Skydance (WBD's slot) | 4.9% (stale WBD line) | $7.77 | **+12.45%** | 102.8 | 2.6% | $9.01 (+16.0%) | ⚠️ |
-| 5 | DIS | Walt Disney | 4.5% | $112.52 | +1.75% | 15.0 | 1.3% | $126.58 (+12.5%) | ⚡ |
-| 6 | TTWO | Take-Two Interactive | 4.4% | $203.69 | -0.77% | 19.7 | — | $286.44 (+40.6%) | ⚡ |
-| 7 | T | AT&T | 4.3% | **$20.93** | **-10.71%** | 8.1 | 4.9% | $27.80 (+32.8%) | 🔴 |
-| 8 | APP | AppLovin | 4.2% | **$260.25** | -2.21% | 12.7 | — | $476.85 (+83.2%) | 🔴 |
-| 9 | VZ | Verizon | 4.1% | $44.66 | -0.29% | 8.5 | 6.3% | $51.24 (+14.7%) | ⚡ |
-| 10 | TMUS | T-Mobile US | 4.1% | **$146.54** | **-7.89%** | 10.2 | 3.0% | $236.84 (+61.6%) | 🔴 |
-| — | NFLX | Netflix | (outside top 10) | **$65.85** | **-6.64%** | 17.5 | — | $84.83 (+28.8%) | 🔴 |
-| — | CMCSA | Comcast | (outside top 10) | $22.69 | **+3.61%** | 6.4 | 5.8% | $28.16 (+24.1%) | ⚡ |
-| — | CHTR | Charter Communications | (outside top 10) | $108.61 | -1.36% | 2.3 | — | $173.17 (+59.4%) | ⚠️ |
+| 1 | META | Meta Platforms | 22.2% | $614.99 | -4.30% | 17.3 | 0.3% | $848.38 (+37.9%) | 🔴 |
+| 2 | GOOGL | Alphabet (Class A) | 11.6% | $279.84 | -12.61% | 18.5 | 0.3% | $406.55 (+45.3%) | 🔴 |
+| 3 | GOOG | Alphabet (Class C) | 9.3% | $278.22 | -12.31% | 18.4 | 0.3% | $403.87 (+45.2%) | 🔴 |
+| 4 | SKYD | Skydance (WBD's slot) | 4.9% (stale WBD line) | $7.95 | +2.32% | 145.1 | 2.5% | $9.15 (+15.1%) | ⚠️ |
+| 5 | DIS | Walt Disney | 4.5% | $110.94 | -1.40% | 14.8 | 1.4% | $126.58 (+14.1%) | ⚡ |
+| 6 | TTWO | Take-Two Interactive | 4.4% | $190.17 | -6.64% | 18.5 | — | $285.13 (+49.9%) | 🔴 |
+| 7 | T | AT&T | 4.3% | $21.41 | +2.29% | 8.3 | 5.2% | $27.72 (+29.5%) | ⚡ |
+| 8 | APP | AppLovin | 4.2% | $228.50 | -12.20% | 11.1 | — | $452.95 (+98.2%) | 🔴 |
+| 9 | VZ | Verizon | 4.1% | $44.73 | +0.16% | 8.4 | 6.3% | $50.65 (+13.2%) | ⚡ |
+| 10 | TMUS | T-Mobile US | 4.1% | $156.44 | +6.76% | 10.9 | 3.0% | $226.96 (+45.1%) | 🔥 |
+| — | NFLX | Netflix | (outside top 10) | $62.08 | -5.73% | 16.5 | — | $84.76 (+36.5%) | 🔴 |
+| — | CMCSA | Comcast | (outside top 10) | $23.22 | +2.34% | 6.6 | 5.7% | $27.98 (+20.5%) | ⚡ |
+| — | CHTR | Charter Communications | (outside top 10) | $111.49 | +2.65% | 2.3 | — | $173.17 (+55.3%) | ⚠️ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / new lows
-> † Weekly change vs settled Fri 10/16 close (adjusted bars; all prior closes match last week's page — no restatements); prices are Fri 10/23 closes (last bar verified as Oct 23, no repair needed); forward P/E, yields and targets from the Oct 23 Yahoo pull. No single-stock move beyond ±30%; no corporate action this week (Meta's announced Class C stock dividend has not been distributed — Thursday's $648.85 close matches the reported close). **Weights: Yahoo funds_data returned the identical top ten a third week, WBD still listed** — carried; on it Meta plus both Alphabet classes are **43.1%**.
+> † Weekly change vs settled Fri 10/23 close (adjusted bars; all prior closes match last week's page — no restatements); prices are Fri 10/30 closes (last bar verified as Oct 30, no repair needed); forward P/E, yields and targets from the Oct 31 Yahoo pull. No single-stock move beyond ±30%; no corporate action seen this week (Meta's announced Class C stock dividend not distributed in the bars). **Weights: Yahoo funds_data returned the identical top ten a fourth week, WBD still listed** — carried; on it Meta plus both Alphabet classes are **43.1%**. Alphabet's two classes alone cost the fund roughly 2.6 points of the 5.3.
 
-**Meta (Wed Oct 21): revenue beat, stock -9.4% on the week.** Revenue **$64.6B, +26%** (vs ~$63.3B est.); GAAP EPS $3.83, cut by a **$9.9B legal charge** tied to a New Mexico ruling (Meta plans to appeal); operating income -37% to $13.0B (+11% ex-charge). Q4 revenue guide $73–76B vs ~$73.75B. 2026 capex **$135–145B**, the low end raised from $130B; Q3 capex $34.9B and **free cash flow -$2.1B**; per GuruFocus, capex exceeded operating cash flow for the first time since 2012. A non-voting **Class C** share was announced, to be distributed as a stock dividend with the effect of a two-for-one split. The stock rose ~3.5% after hours, then fell **7.0% Thursday to $648.85** and to **$642.62** Friday, its lowest close since Sep 8.
+**Alphabet (Wed Oct 28): the miss.** Revenue $127.6B, a first top-and-bottom-line miss in nearly four years per CNBC. GAAP EPS **$2.12**; CNBC's adjusted figure **$2.67 vs $3.02 expected**, the gap largely an **$8.7B paper loss on equity investments**. **Search +12% to $63.4B**, short of expectations. **Cloud +103% to $30.7B** vs $28.7B, operating income $11.1B. **Capex $51.4B**, a record; **free cash flow -$9.1B**. 2026 capex unchanged, a "significant increase" in 2027, which analysts put near $300B from about $200B. GOOGL closed **-12.6% Thursday** to $283.82, by Stock Titan's count its largest one-day fall since the 2004 listing, and $279.84 Friday, its lowest close since Mar 30.
 
-**Netflix (Tue Oct 20): EPS beat, guide missed.** Revenue $12.87B (in line, +12%); EPS **$0.87 vs $0.82**; operating margin 34.6%. **Q4 EPS guide $0.67 vs ~$0.73 expected**; 2026 revenue narrowed to $51.1B vs $51.2B expected; **2026 ad revenue cut to ~$2.7B from ~$3B**; layoffs to cost ~120bp of Q4 margin; Peter Rice named Chief Content Officer. NFLX -5.3% Wednesday, **-6.6%** on the week; Wednesday's $65.04 was a 52-week closing low.
+**T-Mobile: beat and raise, +6.8%.** Adjusted EPS **$3.22** vs ~$2.89 (this page carried $2.98); revenue $23.58B; postpaid service revenue +9%; full-year ARPA growth raised to about 3.5% from 2.5–3%. Postpaid net accounts **274K**; phone adds no longer disclosed; one review puts account churn at 1.09% from 0.97%. The stock did nothing for two days, then rose **6.2% Friday** to $156.44. TradingKey tied it to the results and easing SpaceX fears; 24/7 Wall St. to a rising price tag on SpaceX's plans. Neither is a confirmed cause.
 
-**AT&T (Wed Oct 21): beat and raise, stock -10.7%.** Revenue $32.3B (+5.3%, vs ~$31.7B); adjusted EPS **$0.65 vs $0.60**; 2026 adjusted EPS outlook raised to $2.40; **postpaid phone adds 379K, from 432K in Q2, churn 0.92% from 0.86%**; record 769K fiber/AIA adds; a $2.6B Mexico impairment. T -6.4% Wednesday, then **-8.0% Friday** on the SpaceX tower report to $20.93, its lowest close since Jul 10. **TMUS -7.7% Friday** to **$146.54, its lowest close in two years of bars**; VZ -1.2% Friday, flat on the week.
+**Verizon (Mon Oct 26): raised, then sold, then recovered.** **406K postpaid phone net adds**, its best third quarter in five years; churn 0.94%, better by 4bp; 2026 phone adds raised to **1.1–1.2M**; adjusted EPS and FCF guidance raised a third straight quarter; capex $16–16.5B; a $2B+ AWS infrastructure deal. Adjusted EPS is reported as both $1.31 and $1.25; revenue $34.31B was called a miss by 24/7 Wall St. VZ fell 3.5% Monday and finished +0.2% on the week. **AT&T** +2.3%, off Wednesday's $20.70. **Charter** +2.7% after -5.9% Monday, no cause found. **Comcast** +2.3%, +3.2% Thursday and +4.3% Friday.
 
-**Comcast (Thu Oct 22):** adjusted EPS **$1.07** (vs ~$0.99 on this page), revenue $29.3B (-6.1% reported, +0.5% pro forma), FCF $4.2B, 10.6M wireless lines; the broadband-subscriber figure was not found. CMCSA **+3.6%**. **Alphabet -6.0%** with no company news found — it reports Oct 28; Friday's $320.21 is its lowest close since Jul 24. **APP** closed $260.25, its lowest close since April 2025. **SKYD +12.5%** off its post-warrant low; no news found.
+**Meta -4.3%** to $614.99 (Wednesday's $612.49 the week's low close), trading Alphabet's verdict. **Netflix -5.7%** to $62.08, ten cents over Wednesday's 52-week closing low of $61.99, flat the last three days. **AppLovin -12.2%, -10.4% Friday** to $228.50, a 52-week closing low; no cause found; reports Nov 4. **Take-Two -6.6%** to $190.17, 48 cents over its 52-week closing low ($189.69), with GTA VI scheduled for Nov 19; no news found. **Disney -1.4%**, **Skydance +2.3%**.
 
-**Cecil Fundamental Read:** I was wrong about the floor on Netflix: the layoff and the reaffirmed guide were not enough when Q4 came in under and the ad forecast was cut. My Netflix half from $71.15 is $65.85, -7.4%; at 17.5x I hold, because the ad cut is a delay in features, not a lost advertiser — but I do not add before the January print. Meta at 18.5x with 31% to target, after a quarter where revenue grew 26%: the market is pricing the capex and the legal charge as permanent; I treat the charge as one-off and the capex as the question. Hold. **T-Mobile** was the one I said I would buy before its print: at 10.2x and $146.54 — down 7.9% in a week on a report about towers SpaceX does not yet own — I buy a starter at Friday's close in the model book, sized small, with the print on the 28th. Verizon from $41.65 is +7.2%; I hold. AT&T beat and raised and lost 11%: I still pass at a 4.9% yield, now on valuation-is-not-the-question grounds. Alphabet under $335 was my add — it is $320.21. I wait for its print five days away rather than front-run it.
+**Cecil Fundamental Read:** I said I would wait five days for Alphabet's print rather than front-run it, and that patience saved me 12%. My $335 add line is gone; at 18.5x with a $9B cash burn, and an equity loss flattering nobody, I do not add until I can see the 2027 capex number and what it does to cash. It is the first time I have written that about Alphabet. Cloud at $30.7B and +103% is the best asset in this fund and I want it, at a price that pays me for the wait. The Netflix half from $71.15 is $62.08, -12.7%; I hold and I said no add before January. Meta at 17.3x: hold. **T-Mobile**, the starter at $146.54, is $156.44, +6.8%, in a week; I keep it and I do not add 6% up. Verizon from $41.65 is $44.73, +7.4%; hold. AT&T still a pass. The barbell's cheap end was the one thing that paid, and it paid because it was already priced for SpaceX.
 
 ---
 ## SMALL/MID-CAP WATCH
@@ -67,23 +67,23 @@ Week path: Mon $110.09, Tue $110.19, Wed $108.97 (-1.1%, **through $109.66**), T
 
 | Ticker | Name | Price | Cap (verified) | Weekly | Sector Niche | Signal |
 |---|---|---|---|---|---|---|
-| MGNI | Magnite | $22.89 | $3.28B | -2.05% | Sell-side ad-tech / CTV programmatic | ⚠️ |
-| ZD | Ziff Davis | $57.89 | $1.98B | +1.29% | Digital media / net-cash cannibal | ⚡ |
-| CCOI | Cogent Communications | $7.48 | $0.38B | **-7.31%** | Fiber ISP / alt-telecom (distressed) | 🔴 |
-| PPLI | People Inc (fka IAC) | $38.50 | $2.87B | -0.67% | Digital media rollup / MGM option | ⚠️ |
-| CARG | CarGurus | $31.52 | $2.81B | **+4.10%** | Auto marketplace / ad-tech | ⚡ |
+| MGNI | Magnite | $21.49 | $3.08B | -6.12% | Sell-side ad-tech / CTV programmatic | ⚠️ |
+| ZD | Ziff Davis | $54.79 | $1.88B | -5.35% | Digital media / net-cash cannibal | ⚠️ |
+| CCOI | Cogent Communications | $6.74 | $0.35B | -9.89% | Fiber ISP / alt-telecom (distressed) | 🔴 |
+| PPLI | People Inc (fka IAC) | $35.62 | $2.65B | -7.48% | Digital media rollup / MGM option | ⚠️ |
+| CARG | CarGurus | $32.18 | $2.87B | +2.09% | Auto marketplace / ad-tech | ⚡ |
 
-> **Cap verification (Fri 10/23 quotes):** all five confirmed UNDER $5B — MGNI $3.28B, PPLI $2.87B, CARG $2.81B, ZD $1.98B, CCOI $0.38B. MGNI kept per the 9/8 rotation rule (the Google read-through) while under $5B. No rotations. A combined news search for the five returned nothing dated this week.
+> **Cap verification (Fri 10/30 quotes):** all five confirmed UNDER $5B — MGNI $3.08B, CARG $2.87B, PPLI $2.65B, ZD $1.88B, CCOI $0.35B. MGNI kept per the 9/8 rotation rule (the Google read-through) while under $5B. No rotations. Searches for CCOI and MGNI returned nothing dated this week; the other three not found either.
 
-**MGNI (-2.05%, $3.28B cap):** $22.89, a second week under its 20D ($24.48) and 50D ($24.21). Catalyst: the **Google ad-tech final judgment is still not entered** (no source found after mid-October); Netflix, one of the largest CTV ad sellers, cut its 2026 ad-revenue forecast to ~$2.7B on feature delays. Reports **Nov 4** (EPS est. $0.28). **Council Read:** the ruling it waits on has not come and the CTV read-through got worse; the stock held better than the platforms did.
+**MGNI (-6.12%, $3.08B cap):** $21.49, under its 20D ($23.71) and 50D ($23.98). Catalyst: the **Google ad-tech final judgment is still not found as entered**; Alphabet's Search miss is a read on the same ad market. Reports **Nov 4** (EPS est. $0.28). **Council Read:** lower again with the judgment still pending; it fell with the ad names, not on its own news.
 
-**ZD (+1.29%, $1.98B cap):** $57.89, a fifth week above its 50D ($56.40); 9.7x forward, $63.67 target. No news found. Reports **Nov 5**. **Council Read:** the ballast held again, in a week when the fund fell 4.4%.
+**ZD (-5.35%, $1.88B cap):** $54.79, closing under its 50D ($56.50) and ending five weeks above it; 9.2x forward, $63.67 target. No news found. Reports **Nov 5**. **Council Read:** the ballast gave way in the fund's worst week; the print decides whether that is the market or the company.
 
-**CCOI (-7.31%, $0.38B cap):** $7.48 after Thursday's **$7.30, a 52-week closing low**. No filing or company news found. Reports **Nov 5** (EPS est. -$0.86). **Council Read:** it fell with the carriers this time; a credit name either way.
+**CCOI (-9.89%, $0.35B cap):** $6.74, **-13.1% Friday**, the lowest close in two years of bars. No filing or company news found. Reports **Nov 5** (EPS est. -$0.86). **Council Read:** a credit name, and Friday's move came with no explanation a week before the print. That is the warning.
 
-**PPLI (-0.67%, $2.87B cap):** $38.50, under its 200D ($40.58); no MGM news for a fifth week. Reports **Nov 2**. **Council Read:** unchanged — the option still has no counterparty.
+**PPLI (-7.48%, $2.65B cap):** $35.62, under its 200D ($40.51), now $4.10 over its 52-week closing low ($31.52); no MGM news. Reports **Nov 2** (EPS est. $0.35). **Council Read:** Monday's print is first up; the option still has no counterparty.
 
-**CARG (+4.10%, $2.81B cap):** $31.52, back above its 20D ($30.21), still under its 50D ($32.86); no news found. Reports **Nov 5**. **Council Read:** a second week off the lows with nothing new behind it; $26.96 remains the line.
+**CARG (+2.09%, $2.87B cap):** $32.18, over its 20D ($30.48), a hair under its 50D ($32.35); no news found. Reports **Nov 5**. **Council Read:** the only one of the five up in a -5% tape, with nothing behind it; $26.96 remains the line.
 
 ---
 
@@ -92,19 +92,21 @@ Week path: Mon $110.09, Tue $110.19, Wed $108.97 (-1.1%, **through $109.66**), T
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $119.00 (adjusted) | Resistance |
-| 200-Day MA | $112.70 | $7.19 overhead |
-| 50-Day MA | $111.42 | Falling |
-| 20-Day MA | $110.52 | Rolled over |
-| Week High Close | $110.19 | Tue |
-| **Old Floor** | **$109.66** | **Broken Wednesday on a close ($108.97)**; now resistance and the short's stop |
-| Current Price | $105.51 | Fri 10/23 close; -4.36% W/W; lowest close since Jul 23 |
-| Week Low | $105.50 | Fri — closed on it |
-| **52W Closing Low** | **$105.03** | Jul 23 (adjusted); 48 cents below |
-| RSI (14) | 33.1 | From 45.9 |
+| 200-Day MA | $112.35 | $12.45 overhead |
+| 50-Day MA | $110.56 | Falling |
+| Old Floor | $109.66 | Broken Oct 21 |
+| 20-Day MA | $108.41 | Falling |
+| **Old 52W Closing Low** | **$105.03** | **Broken Monday; now resistance and the stop on the last third** |
+| Week High Close | $103.85 | Mon |
+| Thursday Close | $101.21 | — |
+| **Current Price** | **$99.90** | Fri 10/30 close; -5.32% W/W; **new 52-week closing low** |
+| Jun 3, 2025 close | $99.78 | Next reference |
+| Week Low | $99.32 | Fri |
+| RSI (14) | **22.9** | From 33.1; lowest in two years of bars |
 
-**Marky Setup Assessment:** The coil resolved the way the risk scenario said it could: both legs fell together. My rule was short under $109.66, and Wednesday's $108.97 close on the heaviest volume of the week was the entry. Thursday and Friday gave no bounce, and Friday closed on its low — that is not a capitulation candle; it is a trend day. The 52-week closing low at $105.03 is the obvious first target and it is 48 cents away. I cover a third there. I do not want to be short into Alphabet on the 28th with the whole position: Alphabet is a fifth of the fund, it has fallen 6% without reporting, and a good print gaps the fund back toward $109.66. Stop on the rest is a close over $109.66. On the inside: T-Mobile's $146.54 is its lowest close in two years of bars, AT&T's lowest since Jul 10, Meta's since Sep 8, Alphabet's since Jul 24, AppLovin's since April 2025.
+**Marky Setup Assessment:** From $108.97 this short has paid $9.07. A third came off at $105.03, a second comes off here, and the last third stays with a stop on a close over $105.03. Eight straight down closes and RSI under 23 is where shorts get hurt, and the market has a binary week ahead: the midterms Tuesday, then payrolls Friday. A good Monday could run the fund to $103 without changing a thing. I do not reverse; there is no base to buy against. On the inside: GOOGL's lowest close since Mar 30, TTWO's since Mar 27, APP's 52-week closing low, NFLX within a dollar of its low, CCOI's lowest in two years. T-Mobile is the opposite tape: $146.54 was the 52-week closing low and it is +6.8% from it.
 
-**The relative strength story:** XLC **-4.36% vs SPY -0.43%** — almost four points of underperformance. YTD: XLC -9.6% vs SPY +12.3%, a 22-point gap (from 18).
+**The relative strength story:** XLC **-5.32% vs SPY -0.56%** — almost five points of underperformance, after four last week. YTD: XLC -14.4% vs SPY +11.7%, a 26-point gap (from 22).
 
 ---
 
@@ -112,111 +114,112 @@ Week path: Mon $110.09, Tue $110.19, Wed $108.97 (-1.1%, **through $109.66**), T
 
 | Factor | Level | Implication for XLC |
 |---|---|---|
-| **Platform earnings** | **META (Oct 21): revenue $64.6B +26%, $9.9B legal charge, capex $135–145B, FCF -$2.1B → -9.4% wk. NFLX (Oct 20): EPS beat, Q4 guide $0.67 vs ~$0.73, ad forecast cut to ~$2.7B → -6.6% wk** | **Trigger met — Netflix's guidance miss** (filed as a platform earnings miss on the guide; the quarter itself beat). Meta's quarter was a revenue beat; its drop is on cost and cash |
-| **AI trade** | Thursday's AI-infrastructure sell-off after Meta's print; S&P -1.2% Thursday | Alphabet -6.0% without news; the platform half trades as AI spending |
-| 10Y Treasury | **4.99%** (-11bp); 30Y 5.32% | No help: VZ 6.3% is ~130bp over the 10-year and it fell; T 4.9% roughly equals it |
-| Fed | FOMC Oct 27–28; October hike ~7%, December ~71–78% (FedWatch per press reports) | Not this fund's driver this week |
-| Consumer / Ad Budgets | **No advertiser-side Q4 cut found.** Netflix lowered its own 2026 ad-revenue forecast (~$3B → ~$2.7B, ad-feature delays); Meta's Q4 guide bracketed consensus | Not filed as an ad-budget trigger — it is a seller's forecast, not a buyer's cut |
-| **Google Ad-Tech Remedy** | Final judgment **not entered** (newest sources mid-October); remedy takes effect 60 days after entry; Google says it will appeal adverse parts | No ruling — no trigger. Alphabet reports Oct 28 |
-| **Wireless Competition** | **Bloomberg (Oct 23, unnamed sources): SpaceX in talks with at least one large tower owner (Crown Castle named) for ~80,000 sites**; spectrum deal expected to close 1H 2027. AT&T -8.0%, TMUS -7.7%, VZ -1.2% Friday; CCI/AMT rose | The second SpaceX leg in three weeks: spectrum (Oct 9), now towers. The objection the carriers priced away last week — "no towers" — was the one this report targets |
-| **Carrier prints** | AT&T beat and raised but postpaid phone adds slowed to 379K and churn rose to 0.92%; VZ reports **Mon Oct 26**, TMUS **Wed Oct 28** | The question on both calls is now SpaceX, not the quarter |
-| DXY | 101.75 Fri evening (flat; #115 still above 101) | No read |
-| VIX | 19.45 | Dispersion again, but this time both halves down |
+| **Platform earnings** | **GOOGL (Oct 28): miss on both lines per CNBC; Search +12% short; Cloud +103%; capex $51.4B; FCF -$9.1B → -12.6% wk.** META -4.3% in sympathy; NFLX -5.7% | **Trigger met — major platform earnings miss, and XLC beyond ±5%** |
+| **AI trade** | Capex-over-cash is the sector's test: Meta (last week), Alphabet (this week), Amazon (Friday). Intel's guide hit chips Friday; S&P -1.8% | The market is now pricing AI spend by free cash flow |
+| 10Y Treasury | **4.93%** (-6bp); 30Y 5.31% | VZ 6.3% is ~140bp over the 10-year; yield finally drew a bid Friday |
+| Fed | Held 3.75–4.00%, 10-2; December hike ~78–80%+ (press reports) | Not this fund's driver |
+| Consumer / Ad Budgets | **No advertiser-side cut found.** Alphabet's Search shortfall is a seller's result; WARC (Oct 7) 2026 global ad spend +11.9%, 2027 +8.4%. Omnicom's Q3 2026 commentary not found | Not filed as an ad-budget trigger |
+| **Google Ad-Tech Remedy** | Final judgment **not found as entered**; parties to file a jointly proposed judgment; remedy takes effect 60 days after entry | No ruling — no trigger |
+| **Wireless Competition** | **No confirmed update on SpaceX's ~80,000-site talks**; Crown Castle CEO: "talking to all parties"; no lease signed; one estimate ~$8B. 24/7 Wall St.: rising price tag for SpaceX's plans lifted the carriers Friday | The carriers traded relief, not resolution |
+| **Carrier prints** | VZ 406K phone adds, outlook raised; TMUS adj. $3.22, ARPA guide raised, MVNO ruled out; T last week 379K | All three now reported; VZ's and TMUS's numbers say the fight is not yet in the subscriber data |
+| DXY | 101.88 (#115 still above 101) | No read |
+| VIX | 19.42; +12.9% Friday | — |
 
-**Ophelia Verdict:** **Platforms: market-weight → underweight.** Meta's revenue grew 26% and the stock fell 9%, because for the first time since 2012 it spent more than it earned in operating cash, and a $9.9B legal bill landed on top. Netflix guided down and cut its ad forecast. The market is no longer paying for growth it has to finance. Alphabet reports on the 28th and has already fallen 6% into it. **Telecom yield: market-weight → underweight.** Last week I said the SpaceX objections got priced. Friday's tower report goes straight at the main one, and AT&T's slowing phone adds and rising churn arrived the same week. I was early to call the bottom. **Broadband: underweight, unchanged** — Comcast beat and rose; I do not chase a 6.4x stock on one quarter. **Entertainment: avoid → market-weight on Disney only** — +1.8% in a down week, reports Nov 17. One issue filed: Netflix's guidance miss under the platform-earnings trigger, with the SpaceX tower report and the XLC -4.36% week (just inside ±5%) recorded alongside it.
+**Ophelia Verdict:** **Platforms: underweight, unchanged.** Alphabet is the second to fail the test I wrote down last week, and it failed it harder: a miss on the core, -$9.1B of cash, and a bigger bill coming in 2027. Cloud's double is real and the market paid nothing for it. **Telecom yield: underweight, unchanged, and I am watching it.** T-Mobile and Verizon both raised and the carriers beat the fund by five points or more. One relief day does not settle the tower question, and I was early on this call two weeks ago. **Broadband: underweight, unchanged** — Comcast rose 2.3% and Charter 2.7%, with no thesis behind either. **Entertainment: market-weight on Disney** — -1.4% in this tape, reports Nov 17. One issue filed: XLC beyond ±5% and Alphabet's miss, together.
 
 ---
 ## THE WEEKLY NARRATIVE — What's Actually Moving XLC
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### Week of October 19 – 23, 2026: Both Ends of the Barbell Break
+### Week of October 26 – 30, 2026: Alphabet Fails the Cash Test
 
-XLC fell **4.4% to $105.51**, its lowest close since July 23, while the S&P 500 slipped 0.4%. For two weeks the fund's platforms and its phone companies had moved in opposite directions and cancelled out. This week both fell.
+XLC fell **5.3% to $99.90**, a new 52-week closing low and its worst week since April 2025, while the S&P 500 slipped 0.6%. The fund has now fallen eight sessions in a row.
 
-**The platforms reported.** Netflix went first on Tuesday. It beat on earnings but guided fourth-quarter profit below estimates and cut its 2026 advertising-revenue forecast to about $2.7 billion from about $3 billion, blaming delays in ad features. The stock fell 5% the next day. Meta followed on Wednesday with revenue up 26% to $64.6 billion, above estimates. But a $9.9 billion legal charge cut its profit, and it spent more on data centres in the quarter than its operations brought in, for the first time since 2012. Shares rose after hours, then fell 7% on Thursday as investors sold AI-infrastructure stocks broadly. Alphabet, which reports next Wednesday, fell 6% with no news of its own.
+**Alphabet was the week.** It reported on Wednesday and missed on both revenue and profit for the first time in nearly four years, according to CNBC. Search grew 12% to $63.4 billion, short of forecasts. Part of the profit gap was an $8.7 billion paper loss on investments. Capital spending hit a record $51.4 billion, free cash flow was negative $9.1 billion, and the company said spending will rise significantly in 2027; analysts put that near $300 billion. Google Cloud more than doubled to $30.7 billion and beat estimates. The stock still fell 12.6% on Thursday.
 
-**The carriers were hit twice.** AT&T beat estimates and raised its profit outlook on Wednesday, but phone subscriber growth slowed and more customers left; the stock fell 6% that day. On Friday Bloomberg reported that SpaceX has been talking to tower owners about access to roughly 80,000 cell sites, a step toward a fourth national network. AT&T fell 8% and T-Mobile almost 8% that day; T-Mobile closed at its lowest price in two years. Last week the carriers recovered on the argument that SpaceX had spectrum but no towers.
+**The same test, again.** Last week Meta lost 9% after spending more than its operations brought in. Investors applied that judgment to Alphabet this week and to Amazon on Friday. Meta fell another 4.3%, Netflix 5.7%, AppLovin 12.2%.
 
-**The exceptions.** Comcast beat estimates and rose 3.6%. Disney rose 1.8%. Skydance recovered 12% from its post-warrant low.
+**The other end of the barbell held.** T-Mobile beat, raised its outlook and rose 6.2% on Friday, recovering from its lowest close in two years. Verizon added 406,000 phone customers and raised guidance; its stock fell 3.5% on Monday and recovered by Friday. Comcast and Charter rose. Last week's report on SpaceX's tower talks has not been confirmed, and no lease has been signed. T-Mobile's chief executive again ruled out a reseller deal with SpaceX.
 
-**What did not happen.** No advertiser announced a budget cut; Netflix's lower forecast is its own. The judge in the Google ad-tech case still had not entered a final judgment.
+**What did not happen.** No advertiser announced a budget cut; Alphabet's Search shortfall is a seller's result. No final judgment was found in the Google ad-tech case.
 
-**The Bottom Line:** The fund broke its range on its own news, not on rates. Verizon reports October 26, Alphabet and T-Mobile October 28, the Fed decides the same day, and Alphabet alone is a fifth of the fund.
+**The Bottom Line:** The fund fell through its floor because 43% of it is two companies being marked down for spending. Its momentum reading is the lowest in two years, so a bounce would not be a surprise. It would need a better cash answer to last.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-Company dates are Yahoo Finance calendar dates pulled Oct 23 (not all company-confirmed); EPS is the Yahoo consensus mean. **Changes vs last week's page: Netflix's next date is Jan 19, 2027 (Q4); META's next-quarter estimate now reads $8.49 on Yahoo (Q4).**
+Company dates are Yahoo Finance calendar dates pulled Oct 31 (not all company-confirmed); EPS is the Yahoo consensus mean. No date changes vs last week's page.
 
 | Company | Ticker | Date | EPS Est. | Key Metric to Watch |
 |---|---|---|---|---|
-| **Netflix** | NFLX | **Oct 20 — REPORTED ✔** | $0.82 | EPS $0.87; Q4 guide $0.67 vs ~$0.73; ad forecast ~$2.7B — **guide miss** |
-| **Meta Platforms** | META | **Oct 21 — REPORTED ✔** | — | Revenue $64.6B (+26%); $9.9B legal charge; capex $135–145B; FCF -$2.1B; Class C dividend announced |
-| **AT&T** | T | **Oct 21 — REPORTED ✔** | $0.60 | Adj. $0.65; outlook $2.40; phone adds 379K; churn 0.92% |
-| **Comcast** | CMCSA | **Oct 22 — REPORTED ✔** | $0.99 | Adj. $1.07; FCF $4.2B; broadband figure not found |
-| **Verizon** | VZ | **Mon Oct 26** | $1.27 | First carrier to speak after the tower report; churn; dividend cover at 6.3% |
-| **FOMC** | — | Oct 27–28 | — | Hold priced |
-| **Alphabet / T-Mobile** | GOOGL / TMUS | **Wed Oct 28** | $2.97 / $2.98 | GOOGL: cloud, capex, search after a -6% week; TMUS: SpaceX, the Grain sale, T-Satellite |
+| **Verizon** | VZ | **Oct 26 — REPORTED ✔** | $1.27 | 406K phone adds; adds outlook 1.1–1.2M; EPS reported as $1.31 and $1.25 |
+| **Alphabet** | GOOGL | **Oct 28 — REPORTED ✔** | $2.97 / $3.02 (LSEG via CNBC) | Adj. $2.67, GAAP $2.12 — **miss**; capex $51.4B; FCF -$9.1B |
+| **T-Mobile** | TMUS | **Oct 28 — REPORTED ✔** | $2.98 | Adj. $3.22; ARPA guide ~3.5% |
 | **People Inc** | PPLI | Mon Nov 2 | $0.35 | MGM status |
-| **AppLovin / Magnite** | APP / MGNI | Wed Nov 4 | $4.34 / $0.28 | APP at its lowest close since Apr 2025; MGNI: CTV after Netflix's ad cut |
-| **Ziff Davis / CarGurus / Cogent** | ZD / CARG / CCOI | Thu Nov 5 | $1.25 / $0.66 / -$0.86 | CCOI at a 52-week closing low |
+| Midterm elections | — | Tue Nov 3 | — | — |
+| **AppLovin / Magnite** | APP / MGNI | Wed Nov 4 | $4.34 / $0.28 | APP at a 52-week closing low after -10.4% Friday; MGNI: CTV |
+| **Ziff Davis / CarGurus / Cogent** | ZD / CARG / CCOI | Thu Nov 5 | $1.25 / $0.66 / -$0.86 | CCOI after -13.1% Friday |
+| October payrolls | — | Fri Nov 6 | — | — |
 | **Charter** | CHTR | Fri Nov 6 | $9.16 | Internet losses |
-| **Skydance / Take-Two** | SKYD / TTWO | Mon Nov 9 | $0.16 / $0.94 | SKYD: first combined print; TTWO: GTA VI (Nov 19) |
+| **Skydance / Take-Two** | SKYD / TTWO | Mon Nov 9 | $0.20 / $0.94 | SKYD: first combined print; TTWO: GTA VI (Nov 19) |
 | **Disney** | DIS | Mon Nov 17 | $1.69 | Streaming margin, parks |
-| Google ad-tech final judgment | GOOGL | Not entered | — | Entry starts the 60-day clock and the appeal |
+| **Netflix** | NFLX | Jan 19, 2027 | — | Q4; ad-revenue forecast |
+| Google ad-tech final judgment | GOOGL | Not found as entered | — | Entry starts the 60-day clock and the appeal |
 | ~~EA~~ | — | — | — | Delisted 8/4 (take-private); stale quote ignored |
 
-**Marky's Binary Event Read:** **$105.03 below, $109.66 above.** Verizon Monday decides whether the carriers stabilise; Alphabet and T-Mobile Wednesday, the same afternoon as the Fed, decide the rest. A good Alphabet print is the one thing that squeezes the short.
+**Marky's Binary Event Read:** **$105.03 above, $99.32 below.** No platform prints left to move the fund; AppLovin on Wednesday is the last big ad name. Macro and tape decide the bounce.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **Alphabet (Oct 28) prints clean** with cloud growth covering capex → a fifth of the fund gaps up; XLC back toward $109.66
-- **Verizon and T-Mobile talk down the tower report** — sites are not spectrum-plus-network → the carriers recover as they did last week
-- **Meta's legal charge is treated as one-off** and the stock re-rates toward its $843 target
+- **An oversold bounce** — RSI 22.9 and eight down days → back toward $103–$105 with no news needed
+- **Alphabet details 2027 capex with a cash path** → Cloud's +103% gets paid for
+- **SpaceX's tower talks fade** on price → the carriers keep the relief
+- **Meta's charge treated as one-off** and Meta re-rates toward its $848 target
 
 ### 🔴 Bear Case
-- **A close under $105.03** → a new 52-week closing low; no support on the 1Y chart
-- **Alphabet guides capex up** into the same reaction Meta got → the platform half falls again
-- **SpaceX confirms tower access** → the carriers' "no network" defence is gone; T-Mobile and AT&T de-rate further
-- **An advertiser-side budget cut** follows Netflix's lower ad forecast
+- **A close under $99.32** → no support on the 1Y chart
+- **Amazon's and Alphabet's reactions make capex-over-cash the permanent screen** → Meta and Alphabet de-rate together, 43% of the fund
+- **SpaceX confirms tower access** → the carriers give back Friday
+- **An advertiser-side budget cut** follows the Search shortfall
 - **The Google judgment is entered** with the shorter timelines → MGNI's read-through turns
 
 ### ⚠️ The Wild Card
-**Growth has to be financed now.** Meta grew revenue 26% and lost 9%, because its capex passed its operating cash flow. That is a new test for the platforms in this fund: not whether AI demand exists, but whether the spending to meet it pays back inside the cash the business throws off. Alphabet faces the same test on the 28th. The carriers face a different one — whether a well-funded fourth network can be built at all — and both tests now fall in the same week.
+**Cloud's double was worth nothing this week.** Alphabet's Cloud grew 103% with $11.1 billion of operating income and the stock had its worst day on record by one count. Either the market is right that Search is the franchise and its 12% is the number that matters, or it is pricing $300 billion of 2027 capex as a straight loss. If the second, the first investor who can show AI revenue paying for AI capex re-rates quickly, and Alphabet has the best evidence for that in the fund. The test is whether anyone wants that argument before the bill arrives.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"The barbell broke at both ends. Platforms to underweight: Meta grew 26% and fell 9% on cash and a legal bill, Netflix guided down and cut its ad forecast. Telecom yield to underweight: the tower report goes at the objection I said was priced. Disney to market-weight. One issue: Netflix's guide miss. The fund is 4.4% down and just inside the ±5% line."*
+**Ophelia:** *"Platforms underweight, telecom yield underweight, both unchanged, Disney market-weight. Alphabet failed the cash test harder than Meta did. Cloud doubled and the market paid nothing. The carriers raised and rallied on relief; the tower question is open. One issue: XLC -5.3% and Alphabet's miss."*
 
-**Marky:** *"Short from $108.97 on the floor break, trend days Thursday and Friday, closed on the low. Cover a third at $105.03, stop the rest on a close over $109.66. I will not carry the whole short into Alphabet's print on the 28th."*
+**Marky:** *"Short from $108.97, $9.07 paid. Second third off at $99.90. Last third stops on a close over $105.03. RSI 22.9, lowest in two years: I stop pressing. No base, no long."*
 
-**Cecil:** *"Netflix half from $71.15 is $65.85 — I was wrong about the floor; I hold at 17.5x and do not add before January. Meta hold at 18.5x. I buy a small T-Mobile starter at $146.54, 10.2x, into its print. Verizon from $41.65 held. Alphabet is under my $335 add line at $320.21 and I still wait five days for the print."*
+**Cecil:** *"Waiting five days on Alphabet saved me 12%. No add until I see 2027 capex against cash. Netflix half from $71.15 is -12.7%, hold, no add before January. Meta hold. T-Mobile starter from $146.54 is +6.8%, keep, no add. Verizon from $41.65 is +7.4%, hold."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Fri Oct 23, 2026, ~00:10 ET Sat): XLC, thirteen large caps (incl. SKYD and APP) and five small caps, daily bars through the Fri 10/23 close (auto-adjusted; last bar verified as Oct 23, no repair needed); weekly changes vs settled Fri 10/16 closes; 20D/50D/200D MAs, Wilder RSI(14); forward P/E, yields, mean targets, market caps (MGNI $3.28B, PPLI $2.87B, CARG $2.81B, ZD $1.98B, CCOI $0.38B — all sub-$5B; SKYD $39.2B; APP $87.4B); XLC top-10 via funds_data (identical, WBD still listed — carried); earnings dates and consensus EPS. CSVs in council-scan-workspace/2026-10-23-gridC/comm
-- SEC 8-K/10-Q (Meta Q3 2026), Fortune, Yahoo Finance, Investing.com, StockTitan (Oct 21, 2026): revenue $64.6B, $9.9B legal charge, capex $135–145B, FCF -$2.1B, Class C stock dividend. GuruFocus, Opening Bell Daily, heygotrade, CNBC Investing Club (Oct 22–23): -7% Thursday to $648.85, capex over operating cash flow for the first time since 2012
-- QuiverQuant, NewsBytes, Kaohoon, IndMoney (Oct 20–21, 2026): Netflix Q3 — revenue $12.87B, EPS $0.87 vs $0.82, Q4 EPS guide $0.67 vs ~$0.73, 2026 revenue $51.1B vs $51.2B, ad forecast ~$2.7B from ~$3B, Peter Rice
-- SEC 8-K (AT&T Q3 2026), QuiverQuant, Roic.ai, Hem Ekonomi (Oct 21): revenue $32.3B, adj. $0.65 vs $0.60, outlook $2.40, 379K phone adds, churn 0.92%, Mexico impairment
-- SEC 8-K (Comcast Q3 2026, Oct 22): adj. EPS $1.07, revenue $29.3B, FCF $4.2B, 10.6M wireless lines
-- Bloomberg via Forbes, 24/7 Wall St., FX Leaders, Investing.com, Global Banking & Finance (Oct 23, 2026): SpaceX tower talks (~80,000 sites, Crown Castle named; unnamed sources); carrier declines; spectrum close 1H 2027
-- Relevant Audience, Digiday, The Current (Sep–Oct 2026): Google ad-tech remedies; final judgment not entered as of the newest reports found
-- **Not verified or not sourced this week:** Comcast's broadband-subscriber figure; a cause for Alphabet's -6%; SpaceX confirmation of the tower talks; any FCC action; a dated advertiser-side ad-budget cut; refreshed XLC weights; company news for all five small caps (one combined search, nothing dated)
-- **Cross-references: #165 (tech/AI selloff), #158/#166 (hyperscaler capex), #115 (DXY). New issue opened this run: a major platform earnings miss — Netflix's Q4 guide and ad-forecast cut — with Meta's post-print fall and the SpaceX tower report recorded. Other triggers not met: XLC -4.36% (inside ±5%); no antitrust ruling (judgment not entered); no advertiser ad-budget cut announcement.**
+- Yahoo Finance / yfinance 1.6.0 (pulled Sat Oct 31, 2026, ~10:00 ET — late fire): XLC, thirteen large caps (incl. SKYD and APP) and five small caps, daily bars through the Fri 10/30 close (auto-adjusted; last bar verified as Oct 30, no repair needed); weekly changes vs settled Fri 10/23 closes; 20D/50D/200D MAs, Wilder RSI(14); forward P/E, yields, mean targets, market caps (MGNI $3.08B, CARG $2.87B, PPLI $2.65B, ZD $1.88B, CCOI $0.35B — all sub-$5B; SKYD $40.1B; APP $76.8B); XLC top-10 via funds_data (identical, WBD still listed — carried); earnings dates and consensus EPS. Tickers WBD, EA and PSKY returned no current bars and are ignored. CSVs in council-scan-workspace/2026-10-30-gridc
+- CNBC, Fortune, Stock Titan, FinanceFeeds, SEC 8-K (Alphabet Q3 2026, Oct 28): revenue $127.6B, GAAP $2.12, adj. $2.67 vs $3.02, $8.7B equity loss, Search $63.4B, Cloud $30.7B, capex $51.4B, FCF -$9.1B, 2027 capex language; -12.6% Thursday
+- Fierce Network, Investing.com, TradingKey, Yahoo Finance call summaries (Oct 28–30): TMUS adj. $3.22 vs $2.89, 274K net accounts, ARPA guide, MVNO ruled out. Churn 1.09% from one Substack review. 24/7 Wall St. and TradingKey (Oct 30): Friday's move
+- SEC 8-K (Verizon Q3 2026), Finviz release, telecomlead, 24/7 Wall St., beancount.io (Oct 26): 406K, churn 0.94%, outlook, capex, AWS deal; EPS sources conflict
+- Telecoms.com, Fierce Network, 24/7 Wall St., StarAdvertiser (Oct 22–27): SpaceX tower talks, Crown Castle comment, no lease signed
+- Relevant Audience, Digiday, Courthouse News, AdExchanger (Sep–Oct 2026): ad-tech remedies; final judgment not confirmed as entered
+- WARC (Oct 7, 2026): 2026 ad spend +11.9%, 2027 +8.4%
+- AP via WTOP, StockTitan, Investrade (Oct 30): S&P -1.8%, Intel, Amazon, third down week
+- **Not verified or not sourced this week:** a confirmed cause for TMUS's Friday move; any SpaceX update after Oct 27; a dated advertiser-side ad-budget cut; Omnicom's Q3 2026 ad commentary; any FCC action; causes for APP -10.4% and CCOI -13.1% Friday, CHTR -5.9% Monday, TTWO's slide; Verizon's EPS against the 8-K; Alphabet's revenue consensus figure; refreshed XLC weights; company news for all five small caps
+- **Cross-references: #176 (last week's comm services trigger), #178 (Meta), #165 (tech/AI selloff), #158/#166 (hyperscaler capex), #115 (DXY). New issue opened this run: XLC -5.32% (beyond ±5%) and a major platform earnings miss (Alphabet). Other triggers not met: no antitrust ruling; no advertiser ad-budget cut announcement.**
 
 ---
 
-> **Corrections to last week's page, logged here.** (1) None to prices: all Oct 16 closes match the settled bars. (2) Last week's page carried Meta's 2026 capex range as $130–145B; the Q3 release narrowed it to $135–145B.
+> **Corrections to last week's page, logged here.** (1) None to prices: all Oct 23 closes match the settled bars. (2) Alphabet's expected EPS: this page carried $2.97 (Yahoo mean); CNBC's LSEG figure was $3.02. (3) T-Mobile's expected EPS: this page carried $2.98; reporting at the print used about $2.89. Both are basis differences, not errors in the pull.
 
-*Last updated by Saturday Research Crew: 2026-10-23 (run covers week ending 2026-10-23; Grid C run, Friday evening)*
+*Last updated by Saturday Research Crew: 2026-10-30 (run covers week ending 2026-10-30; Grid C run, late fire Sat 2026-10-31 AM)*
 *Next update: Every Saturday 11:39 AM ET*
 *Data sources: yfinance, Yahoo Finance, StockAnalysis, MarketXLS, Morningstar, MarketWatch, MAGNA, GroupM, eMarketer, WARC, company filings, market data feeds*
