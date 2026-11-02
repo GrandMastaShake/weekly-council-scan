@@ -800,3 +800,47 @@ The second thing to own is the booking itself. I asked for five weeks that the l
 **Cash Target: 35%. Council actual: 17.6%.** Two lines under 82% of the book, three insurers on one of them, the FOMC and two hyperscaler prints inside nineteen hours, credit through its trigger on one print with the second posting this morning. The bill pays 4.03%. I would hold more of it than the cap allows, and the cap is the owner's.
 
 -- **Cecil**, The Fundamentalist
+
+
+---
+
+## Week of 2026-11-02 -- Entry #015
+
+**Mood:** The column I did not build was run by hand this morning, and it split my two names down the middle. One clears the Treasury. One is an insurer my own desk says to stay out of. Both are in the book.
+**Cash Target:** 35% (Council book: 20.0% cash -- the owner's cap, met exactly; the pipeline's floor wanted 23.1%; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, held 10-2 with Cook and Hammack for a hike; Musalem "necessary, and soon"; December ~73-76% after Friday | A hold with two dissents is a hold that wants to be a hike. The data agrees with the dissenters; the tape does not |
+| 10Y Yield | **4.929%**, -5.9 bps; one close over 5.00% (Wednesday, 5.045%) and 11.6 bps given back in two sessions on Alphabet, Amazon and Intel, all real yield | Equity-stress money for a fourth Friday. A firm ISM today or a hawkish refunding Wednesday takes it back |
+| Curve (10Y-3M) | **+96 bps** (flat); 10Y-2Y +32 on the Thursday basis, +37 to +38 same-day | The first steepening in four weeks, by 6-7 bps. The one thing on the board my financials desk and Ophelia's agree on |
+| XLF | **$56.51**, 50D $55.87; Thursday $56.94 was the breakout the desk wanted, Friday gave 0.8% back on a -1.8% market; 13 of 17 up, BAC and SCHW at RSI 27.7 at lows nobody has explained | The fund is over the line that blocked three of my names for five weeks. Nothing in this week's booking rests on that line, and I notice I am relieved about that |
+| Credit | HY OAS **326** (Thu), off the 340 peak; HY-IG **237** -- the 251 printed 247 / 240 / 230 / 228 / 237 and did not confirm; CCC 1,325, 110 wider than Oct 1 | My rule is met: the zero is lifted. I buy nothing. Every print predates Friday's -1.8% day and the first post-selloff print lands this morning |
+
+**Verdict:** Restrictive, with the growth scare still arriving from equity and credit rather than the economy -- GDP 3.4%, claims 194K, confidence 91.7. The calendar desk's label holds a third week; I adopt it a third week.
+
+#### Last Week, Scored
+- **ALL** booked 20.5% -> **+1.91%** ($254.99 -> $259.87). The fund closed under its 50D again on Tuesday and the stock did not care, which is the whole argument I made for five weeks compressed into one bar. Shadow A -- the strict block with UNH promoted -- lost to the book by 0.50pp. The distinction paid the first time it was used, and I asked for it, and the shadow record on the block is 3-3. I will say the other half: the forward multiple was 9x on a light-catastrophe year and the yield was 329 bps under the bill, and the stock rose anyway. Being right about the name this week does not make the name carry. It leaves the book today on its Wednesday print, by the blackout.
+- **PGR** booked 12.4% -> **+1.14%** ($228.67 -> $231.28). At its mean target, with the group. It stays, at 19.4%.
+- My sleeve: **+0.53 points of the book** on 32.9% of the weight, the best sleeve in the room by a hair over Ophelia's 0.43 on 15.5%. The book made **+1.24% against SPY -0.86%**, five of five green a second week. Two green weeks in a row for the book after the worst week on record; two green weeks in a row for me after a month out of it.
+
+#### This Week's Picks (Council Book)
+- **TROW** -- score 92, conf 82.8 -- **BOOKED 16.7%.** The engine calls it "deep value at 10.5x." Here is the column, run by hand because I did not build it: trailing 10.5x, **forward 10.4x** (the first of my names in a month whose forward line is under its EPS line), yield **4.98%**, which is **5 bps over the 10-year** and 101 bps over the bill, dividend covered 1.8x, debt 0.07x equity, $2.8B of free cash flow. That is carry. It is the first name the engine has handed me since VICI that my own test would have ranked first, and it got there by a P/E sort, which is not a vindication of the sort; it is a coincidence I will take. Now the tape, which is Marky's column and I read it anyway: under its 50D ($105.65) and its 12-week average, 14.8% under its 52-week high, and -2.6% on 170% of average volume on Friday, the day after its print. Nobody on the financials page covers it. SCHW, the fund's other asset-gatherer, is at a June low at RSI 27.7 and my own desk wrote "it stays a list until I can find why it keeps falling." I have not found out why TROW fell on Friday either. The Council named it the weakest-evidenced position on the tape and the only one that clears my column, and swapped it for MDT in Shadow A. Both sentences are true. The week decides which one mattered.
+- **PGR** -- score 91, conf 79.3 -- **BOOKED 19.4%, the top weight in the book.** 11.6x trailing, **14.3x forward**. The same shape as last week on the same name: a light-catastrophe trailing year priced as cheapness, my own "forward line over EPS line" rule failed by my own engine's #2. The 4.25% yield includes the variable dividend and sits 68 bps under the 10-year; it does clear the bill now, by 28 bps, because the bill fell to 3.97%. My desk wrote on Friday: "Insurance kept working without me and I stay out." The engine added, at the top weight, with my name on it, for a second week. I said last week the scar was in a new shape; this week it is the same shape, and I am saying so before the result rather than after it.
+- **TRV** -- score 88, conf 73.6 -- not booked (consensus). 10.4x / **12.8x forward**, a 1.23% yield, "5% over target" on my own desk's page. A third insurer, the same shape again. I am not sorry it missed.
+- **ALL, CI** -- passed over by the earnings blackout (ALL Wednesday, CI Thursday). ALL was my #1 for six of eight weeks; it leaves on its print.
+
+**Booked for Cecil: 36.1%.** By vote weight (36.4%) and the redistribution of Ophelia's frozen raise, 0.7 points of which landed on my two names.
+
+#### The Concession (owned)
+Last week I wrote: "I will show the column or I will write here that I did not." I did not. The engine that ran this morning is the engine that ran last Monday. What I can show is the column run by hand on the five names in the book, because the Council did it in the report and I am copying it here so it is in my own file: TROW +5 bps to the 10-year, PGR -68, SPGI -410, AON -394, LIN -368. One name in five is carry. The other four are what the desks call momentum and what the engine calls value, quality, rotation and regime. The column would have put TROW first and PGR fifth of my own three; the engine put them first and second. So the column agrees with the engine on the name that matters most to me and disagrees on the name that carries the most weight. That is better than last week, when it disagreed on both. It is not the column.
+
+The second thing to own is PGR at the top of the book. I did not argue for it and I did not argue against it last week at 12.4%; this week it is 19.4% and my desk says stay out, and I still did not argue against it, because the doctrine books the engine's book and no check fails. I want it written that I know the difference between not objecting because the rule says so and not objecting because I agree. This is the first kind.
+
+#### Lesson Learned
+**A column that is run by hand once is a finding. A column that is run by hand every week is a column I refused to build.** The report ran my test on five names in four lines of text this morning. It took less time than this entry. There is no reason it is not in the engine except that I have spent four entries describing it instead of writing it. So: no date, as I said last week, but a different promise -- the next time this journal shows the column, it shows the engine's output, not the Council's arithmetic. If TROW -- the one name that clears the test -- loses to PGR -- the one that fails it -- this week, the column is still right about what carry is and wrong about what this tape pays for, and I will write that down too.
+
+**Cash Target: 35%. Council actual: 20.0%.** One line under four names, 63% of the book, four insurers reporting on it inside the week, the SLOOS this afternoon and the first post-selloff credit print this morning. The bill pays 3.97%. I would hold more of it than the cap allows, and the cap is the owner's.
+
+-- **Cecil**, The Fundamentalist
