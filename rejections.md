@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-11-02
+
+Booked: PGR 19.4% / LIN 16.9% / TROW 16.7% / SPGI 16.3% / AON 10.7% (20.0% cash -- the pipeline's 15% cash floor on a Tightening stance with 3 raised regime flags and one Canary strict criterion met, then the owner's 80% cap; no trigger block, no promotion; the cap raise redistributed under Ophelia's freeze rule, HY OAS 326 > 300; four names on the XLF line, 63.1% of the book, shadow-book.md). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| AJG | 71 | 66.2 | Her #3 -- not booked by consensus (her vote weight 32.0%); "Risk-adjusted outperformer with lower volatility" on a stock +3.0% to $276.07 and +22.1% in four weeks, 0.5% under its 52-week high at RSI 69.5, 42.2x trailing / 18.6x forward, Friday's close on 216% of its 20-day volume, having reported Oct 29; a fifth financial on a line already carrying 63.1% of the book. In no wiki. Excluded by ranking, not by rule |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): TRV (Cecil #3, score 88, conf 73.6) not booked by consensus -- $396.22, -0.5% on the week, 10.4x / 12.8x forward, 1.23% yield, "still 5% over target" (wiki/financials.md Lane 3), reported Oct 16, a fifth insurer-line name; MDT (Marky #3, score 100, conf 77.0) not booked by consensus -- $96.54, +1.2% with the medtech line (wiki/healthcare.md), 5.3% over its 50D, RSI 60.5, 23.8x / 15.1x forward, reports Dec 1, Rule 1 by the number 28% against a 20-day average distorted by one session; MDT is the promotion in Shadow A this week. `[sanity] DROP` lines this week: **ALL (Cecil; reports Nov 4, 3 trading days out), CI (Cecil; Nov 5), AIG (Marky; Nov 3), AFL (Ophelia; Nov 4)** -- earnings blackout, passed over at ranking and replaced by each engine's next-best name; ALL and AIG were in last week's book (+1.91%, +0.32%) and leave it on their prints.
+
+counterfactual: to be computed (Monday 2026-11-09, date-pinned Mon 2026-11-02 close -> Fri 2026-11-06 close; AJG alone, and TRV / MDT each, and ALL / CI / AIG / AFL each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-10-26
 
 Booked: ALL 20.5% / COST 19.0% / MNST 15.5% / AIG 15.0% / PGR 12.4% (17.6% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags and two Canary triggers crossed; the owner's 80% cap met; no trigger block, no promotion, no raise -- the engine's book for a second straight week; ALL booked under the 2026-10-19 distinction with the XLF 50D retired as its line, shadow-book.md; Ophelia's sleeve at its engine weight under both of her rules, HY OAS 340 > 300 and the staples desk's "pullback toward $86-$87"). Ophelia's rejected candidates:
