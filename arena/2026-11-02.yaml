@@ -1,0 +1,76 @@
+week: '2026-11-02'
+lock: 2026-11-02 08:50 ET
+entry_date: '2026-11-02'
+exit_date: '2026-11-06'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 759.45
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.75
+  cash_weight: 0.25
+  picks:
+  - ticker: MSFT
+    weight: 0.2
+    entry_price: 524.1
+    entry_price_source: open
+  - ticker: RSP
+    weight: 0.2
+    entry_price: 219.54
+    entry_price_source: open
+  - ticker: MCO
+    weight: 0.15
+    entry_price: 497.48
+    entry_price_source: open
+  - ticker: TSM
+    weight: 0.1
+    entry_price: 412.52
+    entry_price_source: open
+  - ticker: ELV
+    weight: 0.1
+    entry_price: 421.34
+    entry_price_source: open
+- player: Umassalum
+  valid: true
+  total_weight: 0.8
+  cash_weight: 0.2
+  picks:
+  - ticker: AAPL
+    weight: 0.05
+    entry_price: 342.67
+    entry_price_source: open
+  - ticker: AMZN
+    weight: 0.05
+    entry_price: 243.085
+    entry_price_source: open
+  - ticker: DT
+    weight: 0.1
+    entry_price: 57.75
+    entry_price_source: open
+  - ticker: GTLB
+    weight: 0.1
+    entry_price: 54.075
+    entry_price_source: open
+  - ticker: HYG
+    weight: 0.1
+    entry_price: 77.18
+    entry_price_source: open
+  - ticker: LLY
+    weight: 0.15
+    entry_price: 1393.15
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.1
+    entry_price: 137.04
+    entry_price_source: open
+  - ticker: SPY
+    weight: 0.05
+    entry_price: 759.45
+    entry_price_source: open
+  - ticker: TSLA
+    weight: 0.1
+    entry_price: 404.74
+    entry_price_source: open
