@@ -1,0 +1,91 @@
+week: '2026-11-02'
+status: open
+positions:
+- ticker: PGR
+  weight: 0.19399999999999998
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 230.66000366210938
+  entry_date: '2026-11-02'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: LIN
+  weight: 0.16899999999999998
+  sponsor: Marky
+  thesis: ''
+  entry_price: 519.780029296875
+  entry_date: '2026-11-02'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: TROW
+  weight: 0.16699999999999998
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 105.40499877929688
+  entry_date: '2026-11-02'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: SPGI
+  weight: 0.163
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 465.4599914550781
+  entry_date: '2026-11-02'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AON
+  weight: 0.107
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 324.3900146484375
+  entry_date: '2026-11-02'
+  entry_price_source: open
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 759.4500122070312
+spy_entry_source: open
+vix_at_entry: 19.42
+fed_stance: 'Tightening. The FOMC held 3.75-4.00% on 2026-10-28 by 10-2, with Cook
+  and Hammack dissenting for a +25bp hike, after the +25bp hike of 2026-09-16 (12-0;
+  16 of 18 dots see another 2026 hike); Warsh gave no December guidance and said the
+  Fed is "not uncomfortable" with tighter financial conditions; Musalem on Friday:
+  "additional firming of monetary policy will be necessary, and soon." A hiking cycle
+  on hold with a hawkish bias: December hike odds ~73-76% after Friday''s selloff
+  (from ~83% after the presser); next decision Dec 9 (macro/facts.json policy.fed_stance
+  = "Hike", policy.next_macro_gate; wiki/economic-calendar.md Oct 28 and Oct 30 rows).'
+total_weight: 0.7999999999999999
+cash_weight: 0.20000000000000007
