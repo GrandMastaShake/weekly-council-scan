@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 11 | -0.02% | -0.03% | 6-5 | +3.40% (2026-09-21) |
-| Umassalum | 9 | -0.86% | -1.05% | 6-3 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 12 | -0.94% | -1.19% | -- | +2.12% (2026-10-19) |
+| GrandMastaShake | 12 | -0.01% | +0.06% | 6-6 | +3.40% (2026-09-21) |
+| Umassalum | 10 | -1.01% | -1.10% | 6-4 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 13 | -0.77% | -0.94% | -- | +2.12% (2026-10-19) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-10-26 | GrandMastaShake | +0.14% | +1.00% | +1.24% | 🏆 The Council |
+| 2026-10-26 | Umassalum | -2.39% | -1.53% | +1.24% | 🏆 The Council |
 | 2026-10-19 | GrandMastaShake | -0.66% | +0.29% | +2.12% | 🏆 The Council |
 | 2026-10-19 | Umassalum | -1.84% | -0.89% | +2.12% | 🏆 The Council |
 | 2026-10-12 | GrandMastaShake | -0.48% | +1.51% | -5.16% | 🏆 GrandMastaShake |
@@ -34,6 +36,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 | 2026-08-10 | GrandMastaShake | +1.83% | +1.35% | 0.00% (cash -- ENGINE ABORT) | 🏆 GrandMastaShake |
 | 2026-08-03 | Umassalum | +2.52% | -0.66% | -1.03% | 🏆 Umassalum |
 | 2026-07-27 | GrandMastaShake | +0.61% | +0.33% | -1.52% | 🏆 GrandMastaShake |
+
+**Basis note (2026-10-26, closed 2026-11-02):** every book is on the same basis -- validated Monday 2026-10-26 opens -> Friday 2026-10-30 close (Arena SPY $762.25 -> $755.72, -0.86%; the Tracker's SPY window is identical). **The Council +1.24%, alpha +2.10%, wins the week** (ALL +1.91%, COST +1.09%, MNST +2.76%, AIG +0.32%, PGR +1.14%; 82.4% invested, five of five green for a second straight week). **GrandMastaShake +0.14%, alpha +1.00%** (LMT +3.84% and SLB +2.71% carried; UNH -2.87% and MSFT -1.04% cost; 80% invested). **Umassalum -2.39%, alpha -1.53%** (TSLA +4.16% and VIXY +4.31% could not cover DT -9.93% and SPCX -8.25%; 90% invested). The Council beats both players head-to-head for a second straight week: GrandMastaShake's record goes to 6-6, Umassalum's to 6-4. All-time: the Council's 13-week average improves to -0.77% / alpha -0.94%; GrandMastaShake's 12-week alpha turns positive (+0.06%). VIXY's lock-time entry ($17.55, close_open_rejected) was replaced at close by the settled bar's open $17.65, as the --close run re-reads entry bars.
 
 **Basis note (2026-08-31):** player alpha uses the Arena SPY basis (Mon open $767.33 -> Fri close $770.19, +0.37%). The Council's return/alpha come from the Tracker's own basis (same SPY window this week; Council -0.04%, alpha -0.41%). GrandMastaShake's CRWD (-3.76%) and FCX (-5.48%) did the damage; Umassalum's SPCX (+5.66%) and GILD (+4.69%) carried his book despite DDOG's -8.74%. Umassalum wins the week outright; the Council beats GrandMastaShake but loses to Umassalum.
 
