@@ -70,9 +70,14 @@ python portfolio/tracker.py --metrics
 
 ## Stop Losses
 
-The Tracker checks for stop losses **daily** during the week. If a stop is hit, the position is recorded as exited at that day's price with reason `"stop_loss"`. If no stop is hit, the position exits at Friday close with reason `"week_end"`.
+**The -5% CORE stop is in the book from the week of 2026-11-02** (the owner's ruling, after eleven shadow cycles in `exit-shadow.md`: five firings in 37 CORE position-weeks, five helped, none hurt).
 
-> **Note:** Stop loss levels are currently read from agent journals. If a journal doesn't specify a stop, the Tracker uses a default 8% stop. You can override this by adding explicit stops to each agent's weekly entry template.
+- `--open` books every name as **CORE** with `stop_pct: -5.0` and `stop_loss` = entry x 0.95, unless `--spec T1,T2` names it. A **SPEC** name is booked with no stop; the -8% SPEC stop stays in shadow. The report's exit-shadow section says which names are SPEC.
+- `--close` reads the entry and the week's daily bars from **one** adjusted download (the same-snapshot rule of #112), and stops a CORE name out on the first session whose **Low** trades at or under the stop. The fill is the stop level, or the bar's **Open** when it opens through the stop (`stop_fill: gap_open`): the next print after the touch is the open itself. The stopped weight sits in cash for the rest of the week. Exit reason `"stop_loss"`, with `exit_date` and `stop_fill`; the week carries `stops_fired`.
+- Anything else exits at Friday close with reason `"week_end"`.
+- `--arm-stops DATE` gives an open week booked before the rule its tiers and stops (used once, for 2026-11-02). Weeks before that in `history/` carry `stop_loss: null` and are scored as they were.
+
+The thesis-invalidation lines (sector closes) are **not** stops in the book: they stay re-entry blocks, scored in `exit-shadow.md`.
 
 ## Data Sources
 

@@ -6,7 +6,10 @@ Tracks the Council's weekly picks as if they were actually traded.
 - Records entry prices at the date-pinned Monday open (canonical basis,
   shared with the Arena so both books are measured against the same ruler)
 - Tracks through Friday close
-- Checks stop losses during the week
+- Enforces the -5% CORE stop on the daily low (the owner's ruling of
+  2026-11-02 after eleven shadow cycles, exit-shadow.md): filled at the
+  stop level, or at the Open of a bar that gaps through it. A SPEC name
+  (--spec at --open) carries no stop; -8% SPEC stays in shadow.
 - Calculates P&L, Sharpe, max drawdown, alpha vs SPY
 - Updates the scoreboard with actual returns
 
@@ -84,6 +87,18 @@ for d in [PORTFOLIO_DIR, HISTORY_DIR, SCORECARDS_DIR]:
 # Not caught: a stale Open that happens to lie inside the day's range.
 OPEN_RANGE_TOL = 1e-6
 
+# THE CORE STOP (2026-11-02). exit-shadow.md shadowed a -5% stop on every
+# CORE name from 2026-08-17: in 37 CORE position-weeks it fired five times,
+# saved money five times and cut no winner, and every tighter level in the
+# calibration table fired on a week that finished green. The owner enforced
+# it on 2026-11-02. It is measured against the entry on the daily Low and
+# filled at the stop level, or at the Open of a bar that opens through it:
+# the next print after the touch, a gap accepted rather than assumed away.
+# The -8% SPEC stop (four observations) stays in shadow: a SPEC name carries
+# no stop in the book.
+CORE_STOP_PCT = -5.0
+TIERS = ("CORE", "SPEC")
+
 
 class OpenNotVerified(Exception):
     """An entry bar is at the provider and its Open cannot stand as an open.
@@ -132,7 +147,7 @@ def open_fault(o: Optional[float], high: Optional[float], low: Optional[float]) 
 
 
 def _bars_by_day(data) -> Dict[str, Dict[str, Optional[float]]]:
-    """{YYYY-MM-DD: {"Open", "High", "Low"}} from one ticker's daily frame.
+    """{YYYY-MM-DD: {"Open", "High", "Low", "Close"}} from one ticker's daily frame.
 
     The first row for a date is the one kept. A field the frame does not have
     reads None, the same as one that is NaN.
@@ -143,6 +158,7 @@ def _bars_by_day(data) -> Dict[str, Dict[str, Optional[float]]]:
             "Open": _finite(row.get("Open")),
             "High": _finite(row.get("High")),
             "Low": _finite(row.get("Low")),
+            "Close": _finite(row.get("Close")),
         })
     return bars
 
@@ -271,6 +287,29 @@ def _same_snapshot_prices(ticker: str, entry_date_str: str, entry_source: str,
     the first trading day on or after entry_date (fetch_yf_open), "close" means
     entry_date or the nearest prior trading day (fetch_yf_price).
     """
+    snap = _same_snapshot_bars(ticker, entry_date_str, entry_source, exit_date_str)
+    if snap is None:
+        return None
+    ep, _, xp = snap
+    return ep, xp
+
+
+Bars = List[Tuple[str, Dict[str, Optional[float]]]]
+
+
+def _same_snapshot_bars(ticker: str, entry_date_str: str, entry_source: str,
+                        exit_date_str: str) -> Optional[Tuple[float, Bars, float]]:
+    """(entry, held bars, exit close) read from ONE auto-adjusted download, or None.
+
+    The same-snapshot rule as _same_snapshot_prices, with the bars between.
+    `held` is [(day, {"Open", "High", "Low", "Close"})], in order, for every
+    session the position could trade through: from the entry day when the
+    entry is that day's Open, from the next session when it is a Close, up
+    to exit_date_str. The stop is measured on these, so the level and the
+    entry it hangs from sit on one adjustment basis (an ex-dividend inside
+    the week moves both). The exit close is the last session on or before
+    exit_date_str.
+    """
     try:
         import yfinance as yf
         e = datetime.strptime(entry_date_str, "%Y-%m-%d")
@@ -286,30 +325,57 @@ def _same_snapshot_prices(ticker: str, entry_date_str: str, entry_source: str,
             return None
         if getattr(data.columns, "nlevels", 1) > 1:
             data.columns = data.columns.get_level_values(0)
-        days = list(data.index.strftime("%Y-%m-%d"))
-        if entry_source == "open":
-            cands = [d for d in days if d >= entry_date_str]
-            if not cands:
-                return None
-            e_day, e_field = cands[0], "Open"
-        else:
-            cands = [d for d in days if d <= entry_date_str]
-            if not cands:
-                return None
-            e_day, e_field = cands[-1], "Close"
-        exits = [d for d in days if d <= exit_date_str]
-        if not exits:
-            return None
-        x_day = exits[-1]
-        idx = data.index.strftime("%Y-%m-%d")
-        ep = float(data.loc[idx == e_day][e_field].iloc[0])
-        xp = float(data.loc[idx == x_day]["Close"].iloc[0])
-        if ep <= 0:
-            return None
-        return ep, xp
+        bars = _bars_by_day(data)
     except Exception as exc:
         print(f"Warning: same-snapshot refetch failed for {ticker}: {exc}; using stored entry.")
         return None
+    days = sorted(bars)
+    if entry_source == "open":
+        cands = [d for d in days if d >= entry_date_str]
+        if not cands:
+            return None
+        e_day, e_field = cands[0], "Open"
+        held = [(d, bars[d]) for d in days if e_day <= d <= exit_date_str]
+    else:
+        cands = [d for d in days if d <= entry_date_str]
+        if not cands:
+            return None
+        e_day, e_field = cands[-1], "Close"
+        held = [(d, bars[d]) for d in days if e_day < d <= exit_date_str]
+    exits = [d for d in days if d <= exit_date_str]
+    if not exits:
+        return None
+    ep = bars[e_day].get(e_field)
+    xp = bars[exits[-1]].get("Close")
+    if ep is None or ep <= 0 or xp is None:
+        return None
+    return ep, held, xp
+
+
+def stop_level(entry: float, stop_pct: float) -> float:
+    """The stop in dollars at the booked entry, to the cent: what the book shows."""
+    return round(entry * (1 + stop_pct / 100.0), 2)
+
+
+def stop_fill(entry: float, stop_pct: float, held: Bars) -> Optional[Tuple[str, float, str]]:
+    """The first held bar whose Low touches the stop, and its fill, or None.
+
+    Returns (day, price, how). The stop sits stop_pct below the entry. A bar
+    that opens at or under it fills at its Open ("gap_open": the next print
+    after the touch is the open itself); any other bar that trades down to it
+    fills at the stop level ("stop_level"). A bar with no Low cannot fire.
+    The comparison is unrounded, on the bars' own basis; the stop_loss the
+    book shows is the same level rounded for reading.
+    """
+    level = entry * (1 + stop_pct / 100.0)
+    for day, bar in held:
+        low, o = bar.get("Low"), bar.get("Open")
+        if low is None or low > level:
+            continue
+        if o is not None and o <= level:
+            return day, o, "gap_open"
+        return day, level, "stop_level"
+    return None
 
 
 # --- Report Parsing ---
@@ -422,13 +488,19 @@ def _refusal(week_date_str: str, faults: List[str]) -> str:
            "--close re-reads an entry by its recorded source."])
 
 
-def open_positions(week_date_str: str, report_data: Dict) -> Dict:
+def open_positions(week_date_str: str, report_data: Dict,
+                   spec: Optional[List[str]] = None) -> Dict:
     """Record new positions for the week.
 
     Raises OpenNotVerified, with nothing written, when an entry bar is at the
     provider and its Open cannot stand as an open (the guard above
     fetch_yf_open). The close-based fallback below is for a bar that is not
     there yet; it is never taken from a bar that is there and reads wrong.
+
+    Every name is CORE, with the -5% stop armed from its entry, unless `spec`
+    names it: the report's own tags (its exit-shadow section) say which, and
+    the post-open task passes them with --spec. A SPEC name is booked with
+    no stop.
     """
     # Fetch Monday OPEN prices for entry -- canonical basis is the date-pinned
     # Monday open (Arena convention) so both books share the same ruler.
@@ -469,9 +541,15 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
     if refused:
         raise OpenNotVerified(_refusal(week_date_str, refused))
 
+    spec_set = {s.upper() for s in (spec or [])}
+    unknown = sorted(spec_set - set(tickers))
+    if unknown:
+        print(f"Warning: --spec names not in this book, ignored: {', '.join(unknown)}")
+
     positions = []
     for pick in report_data["picks"]:
         entry_price = prices.get(pick["ticker"])
+        tier = "SPEC" if pick["ticker"] in spec_set else "CORE"
         positions.append({
             "ticker": pick["ticker"],
             "weight": pick["weight"],
@@ -480,7 +558,10 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
             "entry_price": entry_price,
             "entry_date": week_date_str,
             "entry_price_source": sources.get(pick["ticker"]),
-            "stop_loss": None,  # Will be set from journal if available
+            "tier": tier,
+            "stop_pct": CORE_STOP_PCT if tier == "CORE" else None,
+            "stop_loss": (stop_level(entry_price, CORE_STOP_PCT)
+                          if tier == "CORE" and entry_price else None),
             "target": None,
             "direction": "long",
             "status": "open",
@@ -506,6 +587,27 @@ def open_positions(week_date_str: str, report_data: Dict) -> Dict:
         yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
 
     return current
+
+
+def arm_stops(current: Dict, spec: Optional[List[str]] = None) -> List[str]:
+    """Give every position that has no tier its tier and stop, in place.
+
+    For a week booked before the rule and still open (2026-11-02, booked at
+    09:56 ET that morning, ruled on at 11:00): --arm-stops. A position that
+    already has a tier is left alone. Returns the tickers armed.
+    """
+    spec_set = {s.upper() for s in (spec or [])}
+    armed = []
+    for pos in current.get("positions", []):
+        if pos.get("tier") in TIERS:
+            continue
+        tier = "SPEC" if pos["ticker"] in spec_set else "CORE"
+        pos["tier"] = tier
+        pos["stop_pct"] = CORE_STOP_PCT if tier == "CORE" else None
+        pos["stop_loss"] = (stop_level(pos["entry_price"], CORE_STOP_PCT)
+                            if tier == "CORE" and pos.get("entry_price") else None)
+        armed.append(pos["ticker"])
+    return armed
 
 
 def close_positions(week_date_str: str) -> Optional[Dict]:
@@ -534,26 +636,51 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
     # Also fetch SPY exit price
     spy_exit = fetch_yf_price("SPY", friday)
 
+    friday_str = friday.strftime("%Y-%m-%d")
     for pos in current["positions"]:
         t = pos["ticker"]
         entry = pos["entry_price"]
 
-        # Check for stop loss during the week
+        # Entry, the week's bars and the exit close from ONE adjusted download
+        # (_same_snapshot_bars). Weeks opened before 2026-09-21 carry no
+        # entry_price_source and keep the old arithmetic.
+        snap = None
+        if pos.get("entry_price_source"):
+            snap = _same_snapshot_bars(t, pos["entry_date"], pos["entry_price_source"], friday_str)
+
+        # THE CORE STOP, on the daily Low, from the same snapshot as the entry.
+        # A position with no stop_pct (a SPEC name, or a week opened before the
+        # rule) is held to Friday. With no snapshot the stop is still honoured,
+        # on the closes the week download has: a coarser reading than the low,
+        # and the record says so.
         stop_hit = False
-        stop_date = None
-        if entry and pos.get("stop_loss"):
-            for date_str, price in week_prices.get(t, {}).items():
-                if price <= pos["stop_loss"]:
+        stop_pct = pos.get("stop_pct")
+        if stop_pct is not None and snap:
+            e_adj, held, _ = snap
+            fired = stop_fill(e_adj, stop_pct, held)
+            if fired:
+                stop_hit = True
+                day, fill, how = fired
+                pos["entry_price_adjusted"] = e_adj
+                pos["exit_price"] = fill
+                pos["exit_date"] = day
+                pos["exit_reason"] = "stop_loss"
+                pos["stop_fill"] = how
+                pos["pnl_pct"] = round((fill - e_adj) / e_adj * 100, 2)
+                pos["return_basis"] = "total_return_same_snapshot"
+        elif stop_pct is not None and entry:
+            level = entry * (1 + stop_pct / 100.0)
+            for date_str, price in sorted(week_prices.get(t, {}).items()):
+                if date_str >= pos["entry_date"] and price <= level:
                     stop_hit = True
-                    stop_date = date_str
                     pos["exit_price"] = price
                     pos["exit_date"] = date_str
                     pos["exit_reason"] = "stop_loss"
+                    pos["stop_fill"] = "close_no_snapshot"
                     break
 
         if not stop_hit:
             # Use Friday close
-            friday_str = friday.strftime("%Y-%m-%d")
             if friday_str in week_prices.get(t, {}):
                 pos["exit_price"] = week_prices[t][friday_str]
                 pos["exit_date"] = friday_str
@@ -572,13 +699,12 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
                     pos["exit_reason"] = "no_data"
 
         # Calculate P&L -- total return, both ends from one adjusted download
-        # when the entry basis was recorded at open. Weeks opened before
-        # 2026-09-21 carry no entry_price_source and keep the old arithmetic.
-        snap = None
-        if pos.get("entry_price_source") and pos.get("exit_reason") in ("week_end", "last_available"):
-            snap = _same_snapshot_prices(t, pos["entry_date"], pos["entry_price_source"], pos["exit_date"])
-        if snap:
-            e_adj, x_adj = snap
+        # when the entry basis was recorded at open. A stop fired from the
+        # snapshot is scored on it above.
+        if pos.get("pnl_pct") is not None:
+            pass
+        elif snap and pos.get("exit_reason") in ("week_end", "last_available"):
+            e_adj, _, x_adj = snap
             pos["entry_price_adjusted"] = e_adj
             pos["exit_price"] = x_adj
             pos["pnl_pct"] = round((x_adj - e_adj) / e_adj * 100, 2)
@@ -617,6 +743,8 @@ def close_positions(week_date_str: str) -> Optional[Dict]:
         alpha = round(weighted_return - spy_return, 2)
 
     current["status"] = "closed"
+    current["stops_fired"] = [p["ticker"] for p in current["positions"]
+                              if p.get("exit_reason") == "stop_loss"]
     current["weighted_return"] = round(weighted_return, 2)
     current["spy_return"] = spy_return
     current["alpha"] = alpha
@@ -808,9 +936,16 @@ def generate_scorecard(week_data: Dict) -> str:
         entry = f"${p['entry_price']:.2f}" if p.get('entry_price') else "N/A"
         exit_p = f"${p['exit_price']:.2f}" if p.get('exit_price') else "N/A"
         pnl = f"{p['pnl_pct']:.2f}%" if p.get('pnl_pct') is not None else "N/A"
+        reason = p.get("exit_reason", "N/A")
+        if reason == "stop_loss":
+            reason = f"stop_loss ({p.get('stop_fill', '?')}, {p.get('exit_date')}, stop ${p.get('stop_loss')})"
         lines.append(
-            f"| {p['ticker']} | {p['weight']*100:.1f}% | {p['sponsor']} | {entry} | {exit_p} | {pnl} | {p.get('exit_reason', 'N/A')} |"
+            f"| {p['ticker']} | {p['weight']*100:.1f}% | {p['sponsor']} | {entry} | {exit_p} | {pnl} | {reason} |"
         )
+
+    if week_data.get("stops_fired"):
+        lines.extend(["", f"**Stops fired:** {', '.join(week_data['stops_fired'])} "
+                          f"(-5% CORE on the daily low, enforced from 2026-11-02; the rest of the week in cash)"])
 
     lines.extend([
         "",
@@ -908,7 +1043,8 @@ def update_scoreboard(week_data: Dict) -> str:
 
 # --- Main Entry Points ---
 
-def full_cycle(week_date_str: str, report_path: Optional[Path] = None):
+def full_cycle(week_date_str: str, report_path: Optional[Path] = None,
+               spec: Optional[List[str]] = None):
     """Close previous week, then open new week."""
     # Step 1: Close previous week if open
     closed = close_positions(week_date_str)
@@ -930,7 +1066,7 @@ def full_cycle(week_date_str: str, report_path: Optional[Path] = None):
         return
 
     report_data = parse_report(report_path)
-    current = open_positions(week_date_str, report_data)
+    current = open_positions(week_date_str, report_data, spec)
     print(f"Opened {len(current['positions'])} positions for week {week_date_str}.")
     print(f"  Cash weight: {current['cash_weight']*100:.1f}%")
     print(f"  SPY entry: ${current['spy_entry']:.2f}" if current['spy_entry'] else "  SPY entry: N/A")
@@ -943,11 +1079,38 @@ def main():
     parser.add_argument("--full", metavar="DATE", help="Close prior week + open new week for DATE")
     parser.add_argument("--report", metavar="PATH", help="Path to report markdown file (optional)")
     parser.add_argument("--metrics", action="store_true", help="Recalculate metrics only")
+    parser.add_argument("--spec", metavar="TICKERS",
+                        help="Comma-separated SPEC names in the book being opened or armed: "
+                             "booked with no stop (-8%% SPEC stays in shadow). Every other name "
+                             "is CORE with the -5%% stop.")
+    parser.add_argument("--arm-stops", metavar="DATE",
+                        help="Give the open week DATE its tiers and stops (a week booked before the rule)")
     args = parser.parse_args()
+    spec = [s.strip() for s in args.spec.split(",") if s.strip()] if args.spec else None
 
     if args.metrics:
         calculate_metrics()
         print(f"Metrics updated: {METRICS_PATH}")
+        return
+
+    if args.arm_stops:
+        current = None
+        if CURRENT_PATH.exists():
+            with open(CURRENT_PATH, "r", encoding="utf-8") as f:
+                current = yaml.safe_load(f)
+        if not current or current.get("week") != args.arm_stops or current.get("status") != "open":
+            print(f"REFUSED: current.yaml is not the open week {args.arm_stops}. Nothing written.")
+            sys.exit(2)
+        armed = arm_stops(current, spec)
+        if not armed:
+            print("Nothing to arm: every position already has a tier. Nothing written.")
+            sys.exit(2)
+        with open(CURRENT_PATH, "w", encoding="utf-8", newline="\n") as f:
+            yaml.dump(current, f, default_flow_style=False, sort_keys=False, allow_unicode=False)
+        for pos in current["positions"]:
+            if pos["ticker"] in armed:
+                print(f"  {pos['ticker']} {pos['tier']}: stop {pos['stop_loss']}")
+        print(f"Armed {len(armed)} positions for week {args.arm_stops}.")
         return
 
     if args.close:
@@ -970,7 +1133,7 @@ def main():
         # nothing written, so whatever ran this does not go on as if it had
         # a book.
         try:
-            open_positions(args.open, report_data)
+            open_positions(args.open, report_data, spec)
         except OpenNotVerified as exc:
             print(f"REFUSED: {exc}")
             sys.exit(2)
@@ -978,7 +1141,7 @@ def main():
     if args.full:
         report_path = Path(args.report) if args.report else REPORTS_DIR / f"{args.full}-report.md"
         try:
-            full_cycle(args.full, report_path)
+            full_cycle(args.full, report_path, spec)
         except OpenNotVerified as exc:
             print(f"REFUSED: {exc}")
             print("A prior week this run closed stays closed. Open this one "
