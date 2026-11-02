@@ -1,23 +1,24 @@
 {
- "generated": "2026-10-26 12:13",
+ "generated": "2026-11-02 12:10",
  "weeks": [
   "2026-09-21",
   "2026-09-28",
   "2026-10-05",
   "2026-10-12",
-  "2026-10-19"
+  "2026-10-19",
+  "2026-10-26"
  ],
  "real_council": {
   "summary": {
-   "weeks": 5,
-   "mean_alpha": -0.008382606375092458,
-   "alpha_t": -0.7642960467513549,
-   "mean_invested": 0.7518,
-   "mean_alpha_at_exposure": -0.008323813039007394,
-   "mean_vs_production": -0.0013866187259946531,
-   "weeks_differed": 5,
-   "weeks_better_than_production": 3,
-   "cumulative": -0.05182424357337989,
+   "weeks": 6,
+   "mean_alpha": -0.003482258199317203,
+   "alpha_t": -0.34112298096720167,
+   "mean_invested": 0.7638333333333334,
+   "mean_alpha_at_exposure": -0.003684556013703514,
+   "mean_vs_production": -0.00047712682797422827,
+   "weeks_differed": 6,
+   "weeks_better_than_production": 4,
+   "cumulative": -0.040016894329426345,
    "max_drawdown": -0.07530884641478996
   },
   "weekly": [
@@ -55,10 +56,18 @@
    },
    {
     "week": "2026-10-19",
-    "book_ret": 0.021205424743055094,
-    "alpha": 0.03066804996683659,
+    "book_ret": 0.02120542400521092,
+    "alpha": 0.030668049228992415,
     "invested": 0.837,
     "spy_ret": -0.009462625223781496,
+    "differs": true
+   },
+   {
+    "week": "2026-10-26",
+    "book_ret": 0.012452701788180604,
+    "alpha": 0.021019483417403246,
+    "invested": 0.824,
+    "spy_ret": -0.008566781629222642,
     "differs": true
    }
   ]
@@ -69,24 +78,24 @@
    "registered": "2026-09-21",
    "source": "engines as live",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.006995987649097804,
-    "alpha_t": -0.9736095779527735,
-    "mean_invested": 0.9686600000000001,
-    "mean_alpha_at_exposure": -0.007099865270306184,
+    "weeks": 6,
+    "mean_alpha": -0.003005131371342975,
+    "alpha_t": -0.4235141253696059,
+    "mean_invested": 0.9604166666666667,
+    "mean_alpha_at_exposure": -0.0032070620482901554,
     "mean_vs_production": 0.0,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": -0.012744247939384029,
-    "mean_pctile_vs_random": 0.327,
-    "cumulative": -0.04459971527071893,
-    "max_drawdown": -0.05413346346339565
+    "mean_vs_random": -0.009614055283294945,
+    "mean_pctile_vs_random": 0.3725,
+    "cumulative": -0.03659119822635648,
+    "max_drawdown": -0.05413347637663424
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.002803483969658309,
-     "alpha": -0.0038522753594606844,
+     "book_ret": 0.0028034919597053672,
+     "alpha": -0.003852267369413626,
      "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
@@ -119,8 +128,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.02254912334929555,
-     "alpha": -0.024228096608214632,
+     "book_ret": -0.02254913095495335,
+     "alpha": -0.02422810421387243,
      "invested": 1.0,
      "pctile_vs_random": 0.105,
      "book": [
@@ -153,8 +162,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.007381494648097941,
-     "alpha": -0.004155624003106606,
+     "book_ret": 0.007381486514366438,
+     "alpha": -0.00415563213683811,
      "invested": 0.9412,
      "pctile_vs_random": 0.29,
      "book": [
@@ -187,8 +196,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.03940360638182512,
-     "alpha": -0.019462122634615622,
+     "book_ret": -0.03940360426566641,
+     "alpha": -0.01946212051845691,
      "invested": 0.9438,
      "pctile_vs_random": 0.08,
      "book": [
@@ -221,8 +230,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.0072555551361270275,
-     "alpha": 0.016718180359908522,
+     "book_ret": 0.007255549696372775,
+     "alpha": 0.01671817492015427,
      "invested": 0.978,
      "pctile_vs_random": 0.455,
      "book": [
@@ -255,6 +264,44 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.008382379461146314,
+     "alpha": 0.016949161090368956,
+     "invested": 0.9192,
+     "pctile_vs_random": 0.6,
+     "book": [
+      [
+       "AIG",
+       0.2116
+      ],
+      [
+       "COST",
+       0.1884
+      ],
+      [
+       "AES",
+       0.2254
+      ],
+      [
+       "MNST",
+       0.1586
+      ],
+      [
+       "PRU",
+       0.1352
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -265,24 +312,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H3",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.006996336969642291,
-    "alpha_t": -0.9736972456108283,
-    "mean_invested": 0.96864,
-    "mean_alpha_at_exposure": -0.007100403843355145,
-    "mean_vs_production": -3.493205444861022e-07,
+    "weeks": 6,
+    "mean_alpha": -0.0029974472355696288,
+    "alpha_t": -0.4221737573194396,
+    "mean_invested": 0.9652166666666666,
+    "mean_alpha_at_exposure": -0.003158272291423117,
+    "mean_vs_production": 7.684135773345103e-06,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": -0.012744520195563653,
-    "mean_pctile_vs_random": 0.327,
-    "cumulative": -0.044601371955291014,
-    "max_drawdown": -0.05413346346339565
+    "mean_vs_random": -0.009680422634423957,
+    "mean_pctile_vs_random": 0.36666666666666664,
+    "cumulative": -0.036547151619890195,
+    "max_drawdown": -0.05413347637663424
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.002803483969658309,
-     "alpha": -0.0038522753594606844,
+     "book_ret": 0.0028034919597053672,
+     "alpha": -0.003852267369413626,
      "invested": 0.9803,
      "pctile_vs_random": 0.705,
      "book": [
@@ -315,8 +362,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.02254912334929555,
-     "alpha": -0.024228096608214632,
+     "book_ret": -0.02254913095495335,
+     "alpha": -0.02422810421387243,
      "invested": 1.0,
      "pctile_vs_random": 0.105,
      "book": [
@@ -349,8 +396,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.007381494648097941,
-     "alpha": -0.004155624003106606,
+     "book_ret": 0.007381486514366438,
+     "alpha": -0.00415563213683811,
      "invested": 0.9412,
      "pctile_vs_random": 0.29,
      "book": [
@@ -383,8 +430,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.03940360638182512,
-     "alpha": -0.019462122634615622,
+     "book_ret": -0.03940360426566641,
+     "alpha": -0.01946212051845691,
      "invested": 0.9438,
      "pctile_vs_random": 0.08,
      "book": [
@@ -417,8 +464,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.007253808533404597,
-     "alpha": 0.016716433757186094,
+     "book_ret": 0.007253803090549164,
+     "alpha": 0.01671642831433066,
      "invested": 0.9779,
      "pctile_vs_random": 0.455,
      "book": [
@@ -448,6 +495,40 @@
       "Marky": [],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.008430230881609995,
+     "alpha": 0.01699701251083264,
+     "invested": 0.9481,
+     "pctile_vs_random": 0.565,
+     "book": [
+      [
+       "AIG",
+       0.2378
+      ],
+      [
+       "AES",
+       0.2381
+      ],
+      [
+       "COST",
+       0.1622
+      ],
+      [
+       "MNST",
+       0.1671
+      ],
+      [
+       "PRU",
+       0.1429
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -458,24 +539,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": 0.0023008540859451175,
-    "alpha_t": 0.3136045722918614,
-    "mean_invested": 0.9799,
-    "mean_alpha_at_exposure": 0.0021362024367638276,
-    "mean_vs_production": 0.00929684173504292,
-    "weeks_differed": 5,
+    "weeks": 6,
+    "mean_alpha": 0.0027822665661130087,
+    "alpha_t": 0.46295595085205576,
+    "mean_invested": 0.9757666666666666,
+    "mean_alpha_at_exposure": 0.002580948775936584,
+    "mean_vs_production": 0.005787397937455983,
+    "weeks_differed": 6,
     "weeks_better_than_production": 4,
-    "mean_vs_random": -0.003465697078397571,
-    "mean_pctile_vs_random": 0.40599999999999997,
-    "cumulative": 0.0016594679460124606,
-    "max_drawdown": -0.02288574595580528
+    "mean_vs_random": -0.0039003825102160647,
+    "mean_pctile_vs_random": 0.39666666666666667,
+    "cumulative": -0.0017235896316434296,
+    "max_drawdown": -0.022885755577742195
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.014874164064028665,
-     "alpha": 0.008218404734909672,
+     "book_ret": 0.014874171874505421,
+     "alpha": 0.008218412545386428,
      "invested": 1.0,
      "pctile_vs_random": 0.865,
      "book": [
@@ -508,8 +589,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.016276329891872218,
-     "alpha": -0.0179553031507913,
+     "book_ret": -0.016276337239649045,
+     "alpha": -0.017955310498568126,
      "invested": 1.0,
      "pctile_vs_random": 0.17,
      "book": [
@@ -542,8 +623,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": -0.0004503788078110666,
-     "alpha": -0.011987497459015613,
+     "book_ret": -0.00045038694154257047,
+     "alpha": -0.011987505592747118,
      "invested": 0.9776,
      "pctile_vs_random": 0.18,
      "book": [
@@ -576,8 +657,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.006271218646408416,
-     "alpha": 0.013670265100801084,
+     "book_ret": -0.0062712129230799414,
+     "alpha": 0.013670270824129558,
      "invested": 0.9673,
      "pctile_vs_random": 0.31,
      "book": [
@@ -610,8 +691,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.010095775980040248,
-     "alpha": 0.019558401203821744,
+     "book_ret": 0.010095771811252426,
+     "alpha": 0.019558397035033922,
      "invested": 0.9546,
      "pctile_vs_random": 0.505,
      "book": [
@@ -644,6 +725,44 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": -0.0033774465457792543,
+     "alpha": 0.005189335083443387,
+     "invested": 0.9551,
+     "pctile_vs_random": 0.35,
+     "book": [
+      [
+       "AIG",
+       0.2657
+      ],
+      [
+       "AES",
+       0.2396
+      ],
+      [
+       "PAYX",
+       0.1717
+      ],
+      [
+       "COST",
+       0.1343
+      ],
+      [
+       "PRU",
+       0.1438
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HIG"
+      ]
+     }
     }
    ]
   },
@@ -654,24 +773,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3, H1",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.005687891330787622,
-    "alpha_t": -0.6210250870454587,
-    "mean_invested": 0.9553200000000001,
-    "mean_alpha_at_exposure": -0.005814252052541413,
-    "mean_vs_production": 0.0013080963183101832,
-    "weeks_differed": 5,
-    "weeks_better_than_production": 3,
-    "mean_vs_random": -0.011538665711387772,
-    "mean_pctile_vs_random": 0.33899999999999997,
-    "cumulative": -0.03830415219041483,
-    "max_drawdown": -0.05735153533502413
+    "weeks": 6,
+    "mean_alpha": -0.0009735429134070257,
+    "alpha_t": -0.11012729485979272,
+    "mean_invested": 0.9570333333333334,
+    "mean_alpha_at_exposure": -0.0011279597295427279,
+    "mean_vs_production": 0.002031588457935949,
+    "weeks_differed": 6,
+    "weeks_better_than_production": 4,
+    "mean_vs_random": -0.007667660397597818,
+    "mean_pctile_vs_random": 0.4016666666666666,
+    "cumulative": -0.02481019632010606,
+    "max_drawdown": -0.05735154126151998
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.0010954624916833448,
-     "alpha": -0.007751221820802338,
+     "book_ret": -0.0010954545016362868,
+     "alpha": -0.00775121383075528,
      "invested": 0.9556,
      "pctile_vs_random": 0.6,
      "book": [
@@ -704,8 +823,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.020570438160468035,
-     "alpha": -0.022249411419387116,
+     "book_ret": -0.02057044633329668,
+     "alpha": -0.022249419592215762,
      "invested": 0.9623,
      "pctile_vs_random": 0.12,
      "book": [
@@ -738,8 +857,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": -0.00038601163885525235,
-     "alpha": -0.0119231302900598,
+     "book_ret": -0.0003860197725867562,
+     "alpha": -0.011923138423791304,
      "invested": 0.9596,
      "pctile_vs_random": 0.195,
      "book": [
@@ -772,8 +891,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.0361260442502632,
-     "alpha": -0.016184560503053703,
+     "book_ret": -0.03612604213410449,
+     "alpha": -0.01618455838689499,
      "invested": 0.9521,
      "pctile_vs_random": 0.085,
      "book": [
@@ -806,8 +925,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.020206242155583354,
-     "alpha": 0.02966886737936485,
+     "book_ret": 0.0202062340244053,
+     "alpha": 0.029668859248186796,
      "invested": 0.947,
      "pctile_vs_random": 0.695,
      "book": [
@@ -839,6 +958,47 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.014031431875805744,
+     "alpha": 0.022598213505028386,
+     "invested": 0.9656,
+     "pctile_vs_random": 0.715,
+     "book": [
+      [
+       "AES",
+       0.25
+      ],
+      [
+       "TMO",
+       0.2082
+      ],
+      [
+       "MNST",
+       0.2012
+      ],
+      [
+       "PRU",
+       0.15
+      ],
+      [
+       "DHR",
+       0.1562
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD",
+       "ABBV",
+       "IQV",
+       "HCA"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -850,24 +1010,24 @@
    "registered": "2026-09-21",
    "source": "Pass 3",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": 0.006662465920964977,
-    "alpha_t": 0.7122130359405405,
-    "mean_invested": 0.98414,
-    "mean_alpha_at_exposure": 0.0065289322242862895,
-    "mean_vs_production": 0.013658453570062781,
-    "weeks_differed": 5,
+    "weeks": 6,
+    "mean_alpha": 0.007174031065073188,
+    "alpha_t": 0.937155896091995,
+    "mean_invested": 0.9845833333333333,
+    "mean_alpha_at_exposure": 0.007043906064923327,
+    "mean_vs_production": 0.010179162436416164,
+    "weeks_differed": 6,
     "weeks_better_than_production": 4,
-    "mean_vs_random": 0.0006918509965567488,
-    "mean_pctile_vs_random": 0.487,
-    "cumulative": 0.023564325748267834,
-    "max_drawdown": -0.014608397006567464
+    "mean_vs_random": 0.0003441573208119969,
+    "mean_pctile_vs_random": 0.47333333333333333,
+    "cumulative": 0.02475685508711889,
+    "max_drawdown": -0.01460840719199874
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.013408564666279873,
-     "alpha": 0.00675280533716088,
+     "book_ret": 0.01340857265632693,
+     "alpha": 0.006752813327207938,
      "invested": 0.9969,
      "pctile_vs_random": 0.83,
      "book": [
@@ -900,8 +1060,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.01353150345616424,
-     "alpha": -0.015210476715083321,
+     "book_ret": -0.013531511466079081,
+     "alpha": -0.015210484724998162,
      "invested": 0.9743,
      "pctile_vs_random": 0.24,
      "book": [
@@ -934,8 +1094,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": -0.0003162393005192452,
-     "alpha": -0.011853357951723792,
+     "book_ret": -0.0003162474070635098,
+     "alpha": -0.011853366058268058,
      "invested": 1.0,
      "pctile_vs_random": 0.18,
      "book": [
@@ -968,8 +1128,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.0007756714221414221,
-     "alpha": 0.019165812325068077,
+     "book_ret": -0.0007756655342456777,
+     "alpha": 0.01916581821296382,
      "invested": 0.9758,
      "pctile_vs_random": 0.405,
      "book": [
@@ -1002,8 +1162,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.024994921385621545,
-     "alpha": 0.03445754660940304,
+     "book_ret": 0.02499491325444349,
+     "alpha": 0.03445753847822498,
      "invested": 0.9737,
      "pctile_vs_random": 0.78,
      "book": [
@@ -1035,6 +1195,47 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.0011650855260859673,
+     "alpha": 0.00973186715530861,
+     "invested": 0.9868,
+     "pctile_vs_random": 0.405,
+     "book": [
+      [
+       "AES",
+       0.25
+      ],
+      [
+       "TMO",
+       0.224
+      ],
+      [
+       "PAYX",
+       0.1947
+      ],
+      [
+       "DHR",
+       0.1681
+      ],
+      [
+       "PRU",
+       0.15
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD",
+       "ABBV",
+       "IQV",
+       "HCA"
+      ],
+      "Ophelia": [
+       "HIG"
+      ]
+     }
     }
    ]
   },
@@ -1045,24 +1246,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.00752950632299851,
-    "alpha_t": -0.7509439749118875,
-    "mean_invested": 0.94424,
-    "mean_alpha_at_exposure": -0.00772689505935111,
-    "mean_vs_production": -0.0005335186739007047,
-    "weeks_differed": 3,
+    "weeks": 6,
+    "mean_alpha": -0.005289135067675793,
+    "alpha_t": -0.623145859755606,
+    "mean_invested": 0.9519500000000001,
+    "mean_alpha_at_exposure": -0.005467189752215898,
+    "mean_vs_production": -0.002284003696332819,
+    "weeks_differed": 4,
     "weeks_better_than_production": 2,
-    "mean_vs_random": -0.0131287394891965,
-    "mean_pctile_vs_random": 0.277,
-    "cumulative": -0.047245613495824346,
-    "max_drawdown": -0.06564045696917498
+    "mean_vs_random": -0.011779921393099566,
+    "mean_pctile_vs_random": 0.29333333333333333,
+    "cumulative": -0.04977428088899072,
+    "max_drawdown": -0.0656404625788296
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.023831191678078033,
-     "alpha": -0.030486951007197026,
+     "book_ret": -0.023831183688030975,
+     "alpha": -0.030486943017149968,
      "invested": 0.9972,
      "pctile_vs_random": 0.14,
      "book": [
@@ -1095,8 +1296,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.015104139542396604,
-     "alpha": -0.016783112801315683,
+     "book_ret": -0.01510414771522525,
+     "alpha": -0.016783120974144333,
      "invested": 0.936,
      "pctile_vs_random": 0.19,
      "book": [
@@ -1129,8 +1330,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.006393039353940184,
-     "alpha": -0.0051440792972643635,
+     "book_ret": 0.006393031220208681,
+     "alpha": -0.005144087430995867,
      "invested": 0.9194,
      "pctile_vs_random": 0.27,
      "book": [
@@ -1163,8 +1364,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.03432461215737065,
-     "alpha": -0.01438312841016115,
+     "book_ret": -0.034324610041211935,
+     "alpha": -0.014383126294002437,
      "invested": 0.9237,
      "pctile_vs_random": 0.095,
      "book": [
@@ -1197,8 +1398,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.01968711467716418,
-     "alpha": 0.029149739900945677,
+     "book_ret": 0.019687109321224774,
+     "alpha": 0.02914973454500627,
      "invested": 0.9449,
      "pctile_vs_random": 0.69,
      "book": [
@@ -1231,6 +1432,46 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": -0.0026540488639910705,
+     "alpha": 0.005912732765231571,
+     "invested": 0.9905,
+     "pctile_vs_random": 0.375,
+     "book": [
+      [
+       "AIG",
+       0.2672
+      ],
+      [
+       "AES",
+       0.2342
+      ],
+      [
+       "UNH",
+       0.2157
+      ],
+      [
+       "PRU",
+       0.1406
+      ],
+      [
+       "COST",
+       0.1328
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "SYK",
+       "BIIB",
+       "BAX"
+      ]
+     }
     }
    ]
   },
@@ -1242,24 +1483,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": 0.001246527623959873,
-    "alpha_t": 0.11443884792773842,
-    "mean_invested": 0.95898,
-    "mean_alpha_at_exposure": 0.0009833530037218759,
-    "mean_vs_production": 0.008242515273057678,
-    "weeks_differed": 5,
+    "weeks": 6,
+    "mean_alpha": 0.00212130384169242,
+    "alpha_t": 0.23737198218793457,
+    "mean_invested": 0.9608833333333333,
+    "mean_alpha_at_exposure": 0.0018597288687899245,
+    "mean_vs_production": 0.005126435213035395,
+    "weeks_differed": 6,
     "weeks_better_than_production": 4,
-    "mean_vs_random": -0.004560604887078817,
-    "mean_pctile_vs_random": 0.40099999999999997,
-    "cumulative": -0.004706331587827184,
-    "max_drawdown": -0.03562380698815126
+    "mean_vs_random": -0.00459205589755161,
+    "mean_pctile_vs_random": 0.39666666666666667,
+    "cumulative": -0.00676817813885644,
+    "max_drawdown": -0.03562380707872925
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.023459591080460244,
-     "alpha": -0.030115350409579238,
+     "book_ret": -0.023459583090413186,
+     "alpha": -0.03011534241953218,
      "invested": 0.9938,
      "pctile_vs_random": 0.145,
      "book": [
@@ -1292,8 +1533,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.012456438869897562,
-     "alpha": -0.014135412128816643,
+     "book_ret": -0.012456447042726209,
+     "alpha": -0.01413542030164529,
      "invested": 0.9485,
      "pctile_vs_random": 0.265,
      "book": [
@@ -1326,8 +1567,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.04111305409903544,
-     "alpha": 0.029575935447830895,
+     "book_ret": 0.04111304596530394,
+     "alpha": 0.029575927314099394,
      "invested": 0.9647,
      "pctile_vs_random": 0.895,
      "book": [
@@ -1360,8 +1601,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.01899218381605859,
-     "alpha": 0.000949299931150907,
+     "book_ret": -0.018992181699899875,
+     "alpha": 0.0009493020473096241,
      "invested": 0.9246,
      "pctile_vs_random": 0.205,
      "book": [
@@ -1394,8 +1635,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.010495540055431948,
-     "alpha": 0.019958165279213444,
+     "book_ret": 0.010495534715166914,
+     "alpha": 0.019958159938948408,
      "invested": 0.9633,
      "pctile_vs_random": 0.495,
      "book": [
@@ -1428,6 +1669,42 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": -0.0020715851582480804,
+     "alpha": 0.006495196470974561,
+     "invested": 0.9704,
+     "pctile_vs_random": 0.375,
+     "book": [
+      [
+       "AIG",
+       0.267
+      ],
+      [
+       "AES",
+       0.2434
+      ],
+      [
+       "VEEV",
+       0.181
+      ],
+      [
+       "PRU",
+       0.146
+      ],
+      [
+       "COST",
+       0.133
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -1438,24 +1715,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.006933152468468299,
-    "alpha_t": -0.9591642714201896,
-    "mean_invested": 0.96846,
-    "mean_alpha_at_exposure": -0.007038324209878323,
-    "mean_vs_production": 6.283518062950664e-05,
+    "weeks": 6,
+    "mean_alpha": -0.0029517026969686673,
+    "alpha_t": -0.4146057690150707,
+    "mean_invested": 0.9603333333333333,
+    "mean_alpha_at_exposure": -0.003153997908948118,
+    "mean_vs_production": 5.342867437430767e-05,
     "weeks_differed": 0,
     "weeks_better_than_production": 0,
-    "mean_vs_random": -0.012709412210241472,
-    "mean_pctile_vs_random": 0.329,
-    "cumulative": -0.044298202114241625,
-    "max_drawdown": -0.05412602673350164
+    "mean_vs_random": -0.009583604469298969,
+    "mean_pctile_vs_random": 0.3741666666666667,
+    "cumulative": -0.036281044867712775,
+    "max_drawdown": -0.054126039639393
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.002798698562087629,
-     "alpha": -0.003857060767031364,
+     "book_ret": 0.002798706552134687,
+     "alpha": -0.003857052776984306,
      "invested": 0.9807,
      "pctile_vs_random": 0.705,
      "book": [
@@ -1488,8 +1765,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.022532031044423063,
-     "alpha": -0.024211004303342144,
+     "book_ret": -0.022532038641751965,
+     "alpha": -0.024211011900671046,
      "invested": 1.0,
      "pctile_vs_random": 0.105,
      "book": [
@@ -1522,8 +1799,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.007302780553229194,
-     "alpha": -0.004234338097975353,
+     "book_ret": 0.00730277241949769,
+     "alpha": -0.004234346231706858,
      "invested": 0.941,
      "pctile_vs_random": 0.29,
      "book": [
@@ -1556,8 +1833,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.039337787680955104,
-     "alpha": -0.019396303933745605,
+     "book_ret": -0.03933778556479639,
+     "alpha": -0.019396301817586892,
      "invested": 0.9443,
      "pctile_vs_random": 0.08,
      "book": [
@@ -1590,8 +1867,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.007570319535971482,
-     "alpha": 0.017032944759752977,
+     "book_ret": 0.007570315595750887,
+     "alpha": 0.017032940819532383,
      "invested": 0.9763,
      "pctile_vs_random": 0.465,
      "book": [
@@ -1624,6 +1901,44 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.008388774096382074,
+     "alpha": 0.016955555725604716,
+     "invested": 0.9197,
+     "pctile_vs_random": 0.6,
+     "book": [
+      [
+       "AIG",
+       0.2114
+      ],
+      [
+       "COST",
+       0.1886
+      ],
+      [
+       "AES",
+       0.2256
+      ],
+      [
+       "MNST",
+       0.1588
+      ],
+      [
+       "PRU",
+       0.1354
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -1634,24 +1949,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.0016681911099006095,
-    "alpha_t": -0.29088309679417235,
-    "mean_invested": 0.9725999999999999,
-    "mean_alpha_at_exposure": -0.0018152522589221557,
-    "mean_vs_production": 0.005327796539197195,
-    "weeks_differed": 2,
+    "weeks": 6,
+    "mean_alpha": 0.0009617430362872853,
+    "alpha_t": 0.1790773583180518,
+    "mean_invested": 0.9692666666666666,
+    "mean_alpha_at_exposure": 0.0007715145038984713,
+    "mean_vs_production": 0.003966874407630261,
+    "weeks_differed": 3,
     "weeks_better_than_production": 1,
-    "mean_vs_random": -0.007502496213827814,
-    "mean_pctile_vs_random": 0.445,
-    "cumulative": -0.018578041199583173,
-    "max_drawdown": -0.0394140651211925
+    "mean_vs_random": -0.0057406556812732235,
+    "mean_pctile_vs_random": 0.4566666666666666,
+    "cumulative": -0.013136417345509521,
+    "max_drawdown": -0.03941407082715287
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": 0.0027979997748220535,
-     "alpha": -0.0038577595542969396,
+     "book_ret": 0.002798007764869112,
+     "alpha": -0.003857751564249881,
      "invested": 0.981,
      "pctile_vs_random": 0.705,
      "book": [
@@ -1684,8 +1999,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": 0.015300788564813005,
-     "alpha": 0.013621815305893924,
+     "book_ret": 0.015300780713453437,
+     "alpha": 0.013621807454534356,
      "invested": 0.9953,
      "pctile_vs_random": 0.865,
      "book": [
@@ -1718,8 +2033,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.0034861090000326625,
-     "alpha": -0.008051009651171885,
+     "book_ret": 0.003486100866301159,
+     "alpha": -0.00805101778490339,
      "invested": 0.9699,
      "pctile_vs_random": 0.225,
      "book": [
@@ -1752,8 +2067,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.038308348184962086,
-     "alpha": -0.018366864437752588,
+     "book_ret": -0.03830834606880337,
+     "alpha": -0.018366862321593874,
      "invested": 0.959,
      "pctile_vs_random": 0.085,
      "book": [
@@ -1786,8 +2101,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": -0.0011497624359570534,
-     "alpha": 0.008312862787824442,
+     "book_ret": -0.0011497705671351078,
+     "alpha": 0.008312854656646388,
      "invested": 0.9578,
      "pctile_vs_random": 0.345,
      "book": [
@@ -1819,6 +2134,44 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.00554464614806747,
+     "alpha": 0.014111427777290112,
+     "invested": 0.9526,
+     "pctile_vs_random": 0.515,
+     "book": [
+      [
+       "COST",
+       0.2148
+      ],
+      [
+       "AES",
+       0.2398
+      ],
+      [
+       "KMB",
+       0.1852
+      ],
+      [
+       "MNST",
+       0.1688
+      ],
+      [
+       "PRU",
+       0.1439
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -1830,24 +2183,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": -0.005264022012868181,
-    "alpha_t": -0.4676342247525107,
-    "mean_invested": 0.94436,
-    "mean_alpha_at_exposure": -0.0054611064922758705,
-    "mean_vs_production": 0.0017319656362296252,
-    "weeks_differed": 4,
+    "weeks": 6,
+    "mean_alpha": -0.0034014845631741945,
+    "alpha_t": -0.3627134800778281,
+    "mean_invested": 0.9521333333333333,
+    "mean_alpha_at_exposure": -0.0035785718017911036,
+    "mean_vs_production": -0.00039635319183122024,
+    "weeks_differed": 5,
     "weeks_better_than_production": 3,
-    "mean_vs_random": -0.01096211934398417,
-    "mean_pctile_vs_random": 0.282,
-    "cumulative": -0.036146172475520766,
-    "max_drawdown": -0.055138847262501955
+    "mean_vs_random": -0.00997512426480697,
+    "mean_pctile_vs_random": 0.2975,
+    "cumulative": -0.03870576210860699,
+    "max_drawdown": -0.05513885336040336
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.03176018720729149,
-     "alpha": -0.038415946536410485,
+     "book_ret": -0.03176017967654389,
+     "alpha": -0.03841593900566288,
      "invested": 1.0,
      "pctile_vs_random": 0.045,
      "book": [
@@ -1880,8 +2233,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.014811022309232457,
-     "alpha": -0.01648999556815154,
+     "book_ret": -0.014811030482061104,
+     "alpha": -0.016490003740980183,
      "invested": 0.9211,
      "pctile_vs_random": 0.19,
      "book": [
@@ -1914,8 +2267,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.006016957223610961,
-     "alpha": -0.005520161427593586,
+     "book_ret": 0.006016949089879457,
+     "alpha": -0.005520169561325091,
      "invested": 0.9274,
      "pctile_vs_random": 0.26,
      "book": [
@@ -1948,8 +2301,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.015399137470218326,
-     "alpha": 0.004542346276991172,
+     "book_ret": -0.015399135354059611,
+     "alpha": 0.0045423483931498875,
      "invested": 0.9278,
      "pctile_vs_random": 0.215,
      "book": [
@@ -1982,8 +2335,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.020101021967042044,
-     "alpha": 0.02956364719082354,
+     "book_ret": 0.020101018184342165,
+     "alpha": 0.02956364340812366,
      "invested": 0.9455,
      "pctile_vs_random": 0.7,
      "book": [
@@ -2016,6 +2369,46 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": -0.0026555685015732006,
+     "alpha": 0.005911213127649442,
+     "invested": 0.991,
+     "pctile_vs_random": 0.375,
+     "book": [
+      [
+       "AIG",
+       0.2671
+      ],
+      [
+       "AES",
+       0.2345
+      ],
+      [
+       "UNH",
+       0.2158
+      ],
+      [
+       "PRU",
+       0.1407
+      ],
+      [
+       "COST",
+       0.1329
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "SYK",
+       "BIIB",
+       "BAX"
+      ]
+     }
     }
    ]
   },
@@ -2026,24 +2419,24 @@
    "registered": "2026-09-21",
    "source": "Pass 2, reference",
    "summary": {
-    "weeks": 5,
-    "mean_alpha": 0.0021998270439848168,
-    "alpha_t": 0.21563298242765522,
-    "mean_invested": 0.9360799999999999,
-    "mean_alpha_at_exposure": 0.002021080968988542,
-    "mean_vs_production": 0.009195814693082621,
-    "weeks_differed": 5,
+    "weeks": 6,
+    "mean_alpha": 0.003574677858320863,
+    "alpha_t": 0.4234211685587037,
+    "mean_invested": 0.9397166666666666,
+    "mean_alpha_at_exposure": 0.0033656125447255863,
+    "mean_vs_production": 0.006579809229663838,
+    "weeks_differed": 6,
     "weeks_better_than_production": 4,
-    "mean_vs_random": -0.003614438496296614,
-    "mean_pctile_vs_random": 0.391,
-    "cumulative": 0.0011116281753296153,
-    "max_drawdown": -0.02800749907325395
+    "mean_vs_random": -0.00314122216146789,
+    "mean_pctile_vs_random": 0.3958333333333333,
+    "cumulative": 0.0029958707693844566,
+    "max_drawdown": -0.02800749931601154
    },
    "weekly": [
     {
      "week": "2026-09-21",
-     "book_ret": -0.012430342621956953,
-     "alpha": -0.01908610195107595,
+     "book_ret": -0.012430334153264251,
+     "alpha": -0.019086093482383243,
      "invested": 0.9448,
      "pctile_vs_random": 0.385,
      "book": [
@@ -2076,8 +2469,8 @@
     },
     {
      "week": "2026-09-28",
-     "book_ret": -0.015773223017658995,
-     "alpha": -0.017452196276578076,
+     "book_ret": -0.015773231703498685,
+     "alpha": -0.017452204962417766,
      "invested": 0.9485,
      "pctile_vs_random": 0.19,
      "book": [
@@ -2110,8 +2503,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.007533699476234014,
-     "alpha": -0.004003419174970534,
+     "book_ret": 0.0075336911539163765,
+     "alpha": -0.004003427497288171,
      "invested": 0.9123,
      "pctile_vs_random": 0.3,
      "book": [
@@ -2144,8 +2537,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": 0.012632690048004084,
-     "alpha": 0.03257417379521358,
+     "book_ret": 0.01263269211784542,
+     "alpha": 0.03257417586505492,
      "invested": 0.8879,
      "pctile_vs_random": 0.61,
      "book": [
@@ -2178,8 +2571,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.009504053603553567,
-     "alpha": 0.018966678827335062,
+     "book_ret": 0.009504046942384497,
+     "alpha": 0.018966672166165995,
      "invested": 0.9869,
      "pctile_vs_random": 0.47,
      "book": [
@@ -2212,6 +2605,42 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.001882163431570803,
+     "alpha": 0.010448945060793444,
+     "invested": 0.9579,
+     "pctile_vs_random": 0.42,
+     "book": [
+      [
+       "AIG",
+       0.2767
+      ],
+      [
+       "AES",
+       0.2862
+      ],
+      [
+       "PRU",
+       0.1717
+      ],
+      [
+       "COST",
+       0.1495
+      ],
+      [
+       "UNH",
+       0.0738
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -2222,17 +2651,17 @@
    "registered": "2026-09-22",
    "source": "Pass 9b, the engine alone",
    "summary": {
-    "weeks": 4,
-    "mean_alpha": -0.028886447938238052,
-    "alpha_t": -0.6799969990317037,
+    "weeks": 5,
+    "mean_alpha": -0.017858310293774292,
+    "alpha_t": -0.5145903341945721,
     "mean_invested": 1.0,
-    "mean_alpha_at_exposure": -0.028886447938238052,
-    "mean_vs_production": -0.02110453221673097,
-    "weeks_differed": 4,
-    "weeks_better_than_production": 2,
-    "mean_vs_random": -0.03913674364723659,
-    "mean_pctile_vs_random": 0.4125,
-    "cumulative": -0.13868231531835895,
+    "mean_alpha_at_exposure": -0.017858310293774292,
+    "mean_vs_production": -0.015022606122045448,
+    "weeks_differed": 5,
+    "weeks_better_than_production": 3,
+    "mean_vs_random": -0.028245202533282988,
+    "mean_pctile_vs_random": 0.469,
+    "cumulative": -0.12344779438185427,
     "max_drawdown": -0.16840460572653748
    },
    "weekly": [
@@ -2342,6 +2771,36 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.0176874586548581,
+     "alpha": 0.026254240284080743,
+     "invested": 1.0,
+     "pctile_vs_random": 0.695,
+     "book": [
+      [
+       "MNST",
+       0.3333
+      ],
+      [
+       "COST",
+       0.3333
+      ],
+      [
+       "PEP",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -2353,24 +2812,24 @@
    "registered": "2026-09-22",
    "source": "Pass 10, the owner's map (weekly clusters)",
    "summary": {
-    "weeks": 4,
-    "mean_alpha": -0.016535391559547075,
-    "alpha_t": -1.3286872778996905,
+    "weeks": 5,
+    "mean_alpha": -0.0074081567446276754,
+    "alpha_t": -0.5580431909323729,
     "mean_invested": 1.0,
-    "mean_alpha_at_exposure": -0.016535391559547075,
-    "mean_vs_production": -0.008753475838039992,
-    "weeks_differed": 4,
-    "weeks_better_than_production": 2,
-    "mean_vs_random": -0.02678568726854562,
-    "mean_pctile_vs_random": 0.2025,
-    "cumulative": -0.08069887645461082,
-    "max_drawdown": -0.09013777858591177
+    "mean_alpha_at_exposure": -0.0074081567446276754,
+    "mean_vs_production": -0.004572452572898831,
+    "weeks_differed": 5,
+    "weeks_better_than_production": 3,
+    "mean_vs_random": -0.017795048984136367,
+    "mean_pctile_vs_random": 0.312,
+    "cumulative": -0.061821947034596425,
+    "max_drawdown": -0.09013779614047412
    },
    "weekly": [
     {
      "week": "2026-09-28",
-     "book_ret": -0.0195197562928446,
-     "alpha": -0.02119872955176368,
+     "book_ret": -0.01951976720572712,
+     "alpha": -0.0211987404646462,
      "invested": 1.0,
      "pctile_vs_random": 0.185,
      "book": [
@@ -2395,8 +2854,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": -0.02321051585175811,
-     "alpha": -0.03474763450296266,
+     "book_ret": -0.023210526720455385,
+     "alpha": -0.03474764537165993,
      "invested": 1.0,
      "pctile_vs_random": 0.045,
      "book": [
@@ -2421,8 +2880,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.04997330175341549,
-     "alpha": -0.03003181800620599,
+     "book_ret": -0.04997329893805813,
+     "alpha": -0.030031815190848632,
      "invested": 1.0,
      "pctile_vs_random": 0.08,
      "book": [
@@ -2473,6 +2932,34 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.020534019852049723,
+     "alpha": 0.029100801481272365,
+     "invested": 1.0,
+     "pctile_vs_random": 0.75,
+     "book": [
+      [
+       "INTU",
+       0.3333
+      ],
+      [
+       "ACN",
+       0.3333
+      ],
+      [
+       "ETR",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": []
+     }
     }
    ]
   },
@@ -2483,24 +2970,24 @@
    "registered": "2026-09-22",
    "source": "Pass 11, the engine alone with a point-in-time P/E",
    "summary": {
-    "weeks": 4,
-    "mean_alpha": 0.012154547524216899,
-    "alpha_t": 0.7863192411807969,
+    "weeks": 5,
+    "mean_alpha": 0.012092352433056567,
+    "alpha_t": 1.0099255151853515,
     "mean_invested": 1.0,
-    "mean_alpha_at_exposure": 0.012154547524216899,
-    "mean_vs_production": 0.019936463245723984,
-    "weeks_differed": 4,
+    "mean_alpha_at_exposure": 0.012092352433056567,
+    "mean_vs_production": 0.014928056604785411,
+    "weeks_differed": 5,
     "weeks_better_than_production": 2,
-    "mean_vs_random": 0.0019042518152183555,
-    "mean_pctile_vs_random": 0.47875,
-    "cumulative": 0.03190470427646219,
-    "max_drawdown": -0.02534564246070281
+    "mean_vs_random": 0.0017054601935478759,
+    "mean_pctile_vs_random": 0.476,
+    "cumulative": 0.035286039591159835,
+    "max_drawdown": -0.025345653373585297
    },
    "weekly": [
     {
      "week": "2026-09-28",
-     "book_ret": -0.025345642460702807,
-     "alpha": -0.027024615719621888,
+     "book_ret": -0.025345653373585332,
+     "alpha": -0.027024626632504413,
      "invested": 1.0,
      "pctile_vs_random": 0.115,
      "book": [
@@ -2525,8 +3012,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.02391390624098218,
-     "alpha": 0.012376787589777633,
+     "book_ret": 0.023913895372284905,
+     "alpha": 0.012376776721080358,
      "invested": 1.0,
      "pctile_vs_random": 0.595,
      "book": [
@@ -2551,8 +3038,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": 0.0286229007289005,
-     "alpha": 0.04856438447611,
+     "book_ret": 0.028622903544257856,
+     "alpha": 0.04856438729146735,
      "invested": 1.0,
      "pctile_vs_random": 0.755,
      "book": [
@@ -2577,8 +3064,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.0052390085268203546,
-     "alpha": 0.01470163375060185,
+     "book_ret": 0.005238997701577282,
+     "alpha": 0.014701622925358777,
      "invested": 1.0,
      "pctile_vs_random": 0.45,
      "book": [
@@ -2603,6 +3090,36 @@
       ],
       "Ophelia": []
      }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.0032768202306581173,
+     "alpha": 0.011843601859880759,
+     "invested": 1.0,
+     "pctile_vs_random": 0.465,
+     "book": [
+      [
+       "AES",
+       0.3333
+      ],
+      [
+       "PRU",
+       0.3333
+      ],
+      [
+       "AIG",
+       0.3333
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
+     }
     }
    ]
   },
@@ -2613,24 +3130,24 @@
    "registered": "2026-09-22",
    "source": "Pass 13, every engine's five, equal over the union",
    "summary": {
-    "weeks": 4,
-    "mean_alpha": -0.006171631780101014,
-    "alpha_t": -0.43873591341641116,
+    "weeks": 5,
+    "mean_alpha": -0.0022466698502896626,
+    "alpha_t": -0.19398785862386375,
     "mean_invested": 1.0,
-    "mean_alpha_at_exposure": -0.006171631780101014,
-    "mean_vs_production": 0.0016102839414060708,
-    "weeks_differed": 4,
+    "mean_alpha_at_exposure": -0.0022466698502896626,
+    "mean_vs_production": 0.0005890343214391815,
+    "weeks_differed": 5,
     "weeks_better_than_production": 2,
-    "mean_vs_random": -0.017108395338314503,
-    "mean_pctile_vs_random": 0.30875,
-    "cumulative": -0.04204432434633687,
-    "max_drawdown": -0.05844279880395842
+    "mean_vs_random": -0.013320296189306502,
+    "mean_pctile_vs_random": 0.35500000000000004,
+    "cumulative": -0.03736337331975448,
+    "max_drawdown": -0.058442804727148134
    },
    "weekly": [
     {
      "week": "2026-09-28",
-     "book_ret": -0.023603491683583135,
-     "alpha": -0.025282464942502216,
+     "book_ret": -0.023603495321210644,
+     "alpha": -0.025282468580129724,
      "invested": 1.0,
      "pctile_vs_random": 0.025,
      "book": [
@@ -2679,8 +3196,8 @@
     },
     {
      "week": "2026-10-05",
-     "book_ret": 0.018641483282456493,
-     "alpha": 0.007104364631251945,
+     "book_ret": 0.0186414796595574,
+     "alpha": 0.007104361008352853,
      "invested": 1.0,
      "pctile_vs_random": 0.53,
      "book": [
@@ -2729,8 +3246,8 @@
     },
     {
      "week": "2026-10-12",
-     "book_ret": -0.05332886952682625,
-     "alpha": -0.03338738577961675,
+     "book_ret": -0.053328868588373796,
+     "alpha": -0.0333873848411643,
      "invested": 1.0,
      "pctile_vs_random": 0.0,
      "book": [
@@ -2779,8 +3296,8 @@
     },
     {
      "week": "2026-10-19",
-     "book_ret": 0.017416333746681473,
-     "alpha": 0.02687895897046297,
+     "book_ret": 0.017416332494930575,
+     "alpha": 0.02687895771871207,
      "invested": 1.0,
      "pctile_vs_random": 0.68,
      "book": [
@@ -2824,6 +3341,52 @@
        "ELV"
       ],
       "Ophelia": []
+     }
+    },
+    {
+     "week": "2026-10-26",
+     "book_ret": 0.004886403813558141,
+     "alpha": 0.013453185442780784,
+     "invested": 1.0,
+     "pctile_vs_random": 0.54,
+     "book": [
+      [
+       "MNST",
+       0.1429
+      ],
+      [
+       "COST",
+       0.1429
+      ],
+      [
+       "PEP",
+       0.1429
+      ],
+      [
+       "AES",
+       0.1429
+      ],
+      [
+       "PRU",
+       0.1429
+      ],
+      [
+       "AIG",
+       0.1429
+      ],
+      [
+       "UNH",
+       0.1429
+      ]
+     ],
+     "earnings_skipped": {
+      "Cecil": [],
+      "Marky": [
+       "GILD"
+      ],
+      "Ophelia": [
+       "HLT"
+      ]
      }
     }
    ]
