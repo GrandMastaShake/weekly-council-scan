@@ -1,5 +1,5 @@
 week: '2026-10-26'
-status: open
+status: closed
 positions:
 - ticker: ALL
   weight: 0.205
@@ -11,11 +11,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 259.8699951171875
+  exit_date: '2026-10-30'
+  exit_reason: week_end
+  pnl_pct: 1.91
+  entry_price_adjusted: 254.99000549316406
+  return_basis: total_return_same_snapshot
 - ticker: COST
   weight: 0.19
   sponsor: Marky
@@ -26,11 +28,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 1012.280029296875
+  exit_date: '2026-10-30'
+  exit_reason: week_end
+  pnl_pct: 1.24
+  entry_price_adjusted: 999.8422758446658
+  return_basis: total_return_same_snapshot
 - ticker: MNST
   weight: 0.155
   sponsor: Ophelia
@@ -41,11 +45,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 47.34000015258789
+  exit_date: '2026-10-30'
+  exit_reason: week_end
+  pnl_pct: 2.76
+  entry_price_adjusted: 46.06999969482422
+  return_basis: total_return_same_snapshot
 - ticker: AIG
   weight: 0.15
   sponsor: Marky
@@ -56,11 +62,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 81.9000015258789
+  exit_date: '2026-10-30'
+  exit_reason: week_end
+  pnl_pct: 0.32
+  entry_price_adjusted: 81.63999938964844
+  return_basis: total_return_same_snapshot
 - ticker: PGR
   weight: 0.124
   sponsor: Cecil
@@ -71,11 +79,13 @@ positions:
   stop_loss: null
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 231.27999877929688
+  exit_date: '2026-10-30'
+  exit_reason: week_end
+  pnl_pct: 1.14
+  entry_price_adjusted: 228.6699981689453
+  return_basis: total_return_same_snapshot
 spy_entry: 762.25
 spy_entry_source: open
 vix_at_entry: 19.45
@@ -89,3 +99,11 @@ fed_stance: Tightening. The FOMC hiked +25bp to 3.75-4.00% on 2026-09-16 (12-0 v
   wiki/economic-calendar.md).
 total_weight: 0.824
 cash_weight: 0.17600000000000005
+spy_entry_adjusted: 762.25
+spy_return_basis: total_return_same_snapshot
+weighted_return: 1.24
+spy_return: -0.86
+alpha: 2.1
+spy_exit: 755.719970703125
+close_date: '2026-10-30'
+hit_rate: 1.0

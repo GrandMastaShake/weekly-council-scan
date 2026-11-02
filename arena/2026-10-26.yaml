@@ -2,11 +2,13 @@ week: '2026-10-26'
 lock: 2026-10-26 08:50 ET
 entry_date: '2026-10-26'
 exit_date: '2026-10-30'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 762.25
   entry_price_source: open
+  exit_price: 755.72
+  return_pct: -0.86
 players:
 - player: GrandMastaShake
   valid: true
@@ -17,22 +19,34 @@ players:
     weight: 0.2
     entry_price: 418.99
     entry_price_source: open
+    exit_price: 406.97
+    return_pct: -2.87
   - ticker: LMT
     weight: 0.15
     entry_price: 613.37
     entry_price_source: open
+    exit_price: 636.95
+    return_pct: 3.84
   - ticker: SLB
     weight: 0.15
     entry_price: 52.32
     entry_price_source: open
+    exit_price: 53.74
+    return_pct: 2.71
   - ticker: MSFT
     weight: 0.15
-    entry_price: 527.41
+    entry_price: 527.4
     entry_price_source: open
+    exit_price: 521.91
+    return_pct: -1.04
   - ticker: GEF
     weight: 0.15
     entry_price: 82.63
     entry_price_source: open
+    exit_price: 81.99
+    return_pct: -0.77
+  weekly_return_pct: 0.14
+  alpha_vs_spy_pct: 1.0
 - player: Umassalum
   valid: true
   total_weight: 0.9
@@ -40,33 +54,45 @@ players:
   picks:
   - ticker: AAPL
     weight: 0.15
-    entry_price: 343.9
+    entry_price: 343.92
     entry_price_source: open
+    exit_price: 344.63
+    return_pct: 0.21
   - ticker: DT
     weight: 0.15
     entry_price: 64.05
     entry_price_source: open
+    exit_price: 57.69
+    return_pct: -9.93
   - ticker: GTLB
     weight: 0.1
-    entry_price: 56.3
+    entry_price: 56.4
     entry_price_source: open
+    exit_price: 54.09
+    return_pct: -4.1
   - ticker: SPCX
     weight: 0.15
-    entry_price: 146.88
+    entry_price: 146.84
     entry_price_source: open
+    exit_price: 134.72
+    return_pct: -8.25
   - ticker: SPY
     weight: 0.15
     entry_price: 762.25
     entry_price_source: open
+    exit_price: 755.72
+    return_pct: -0.86
   - ticker: TSLA
     weight: 0.1
-    entry_price: 383.9725
+    entry_price: 383.83
     entry_price_source: open
+    exit_price: 399.81
+    return_pct: 4.16
   - ticker: VIXY
     weight: 0.1
-    entry_price: 17.55
-    entry_price_source: close_open_rejected
-    open_rejected:
-      open: 17.65
-      high: 17.635
-      low: 17.43
+    entry_price: 17.65
+    entry_price_source: open
+    exit_price: 18.41
+    return_pct: 4.31
+  weekly_return_pct: -2.39
+  alpha_vs_spy_pct: -1.53
