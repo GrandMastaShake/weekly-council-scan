@@ -2,7 +2,7 @@
 
 > **Sector:** Real Estate | **ETF:** Real Estate Select Sector SPDR (XLRE) | **Expense Ratio:** 0.08%
 >
-> *"Seven weeks it took. XLRE closed $43.17, +1.41%, over its 200-day on a Friday for the first time since Sep 11, with SPY down 0.56% and the 10-year at 4.93%, a fourth lower weekly close. It was not a clean week to get there. The FOMC held with two dissents for a hike, and the 10-year closed 5.05% that day, the fund's low close of the week. Welltower beat and raised and fell 5.8% in a session. What carried it was the data centers: Equinix reported record bookings and raised, Digital Realty reported record leasing and raised, and Equinix rose 6.1%. Trepp's October report is not out. The price condition I have been waiting for has finally been met."* — Ophelia
+> *"A fifth up week, and the 200-day held. XLRE rose 1.92% to $44.00 while SPY fell 2.70%, and the 10-year fell to 4.86%, a fifth lower Friday, even after payrolls beat by about 100,000. Wednesday, after the election, the fund rose 3.3% to $45.12, its highest close since July 29. Public Storage, American Tower and Crown Castle closed at 52-week highs that day. Thursday the data centers gave back 5% with the AI selloff. Trepp's October report is out: overall CMBS delinquency eased to 7.87%, and office rose to 12.33%. The fund is now ahead of SPY for the year."* — Ophelia
 
 ---
 
@@ -10,23 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $43.17 | $42.57 | **+1.41%**, a fourth up week |
-| 52W Range | $38.96 – $45.63 (closing basis, dividend-adjusted bars) | $38.96 – $45.63 | Unchanged |
-| AUM | ~$7.7B (yfinance totalAssets) | ~$7.7B | — |
-| YTD Return | **+9.6%** (price basis) | +8.0% | ~2.1 pts behind SPY (+11.7%) |
-| P/E Ratio | ~30.8 (trailing) | ~30.4 | — |
-| Dividend Yield | ~3.53% (yfinance) | ~3.53% | vs the 4.93% 10Y, **-140bp** (from -146bp) |
-| Beta | ~0.98 (3Y, yfinance) | ~0.98 | — |
+| Price | $44.00 | $43.17 | **+1.92%**, a fifth up week |
+| 52W Range | $38.96 – $45.63 (closing basis, dividend-adjusted bars) | $38.96 – $45.63 | Unchanged; Wednesday's $45.12 came within 51 cents |
+| AUM | ~$8.2B (yfinance totalAssets) | ~$7.7B | — |
+| YTD Return | **+11.7%** (price basis) | +9.6% | **~3.0 pts ahead of SPY (+8.7%)**, from 2.1 behind |
+| P/E Ratio | ~29.4 (trailing) | ~30.8 | yfinance |
+| Dividend Yield | ~3.34% (yfinance) | ~3.53% | vs the 4.86% 10Y, **-152bp** (from -140bp) |
+| Beta | ~0.93 (3Y, yfinance) | ~0.98 | — |
 | Total Holdings | ~30 (carried) | — | — |
-| Avg Daily Volume | ~8.2M this week | ~8.2M | Friday 8.9M |
 
-Week path: Mon $42.80, Tue $42.44, **Wed $42.13** (low $41.78), Thu $43.06, **Fri $43.17** (high $43.44). Friday's close is the highest since Sep 8. All bars dated Fri Oct 30; pulled Saturday morning, no repair needed.
+Week path: Mon $43.64, Tue $43.67, **Wed $45.12** (+3.32%), Thu $44.30, Fri $44.00. Intraday range **$43.09–$45.34**. The last bar is dated Fri Nov 6; no repair pull was needed. Every prior close matches last week's page.
 
-**Marky Tape Read:** The rule was a weekly close over the 200D, and it fired: **$43.17 against $42.77**, 40 cents clear, after six straight Fridays under. Thursday's $43.06 was the first close over it this week to hold; Monday's $42.80 had been a one-day close over before Tuesday lost it. My stop at a close under the 20D ($41.52 then) was not hit; Wednesday's low of $41.78 stayed above it. The 50D ($42.50) has slipped under the 200D by 27 cents, and the 20D ($41.95) is rising under both. RSI 60.0, from 56.1. Above: $43.44 (week high), then $45.63. Below: $42.77, $42.50, $42.13.
+**Marky Tape Read:** The add needed a weekly close over $43.44, and $44.00 is over it, so I add. The stop at a close under $42.13 was never near; the week's low was $43.09. All three averages are under the price and bunched: 200D $42.86, 20D $42.75, 50D $42.45. The 20D has crossed back over the 50D. RSI 60.2, unchanged. Above: $45.12, then $45.63. Below: $43.09, then the 200D.
 
-**Ophelia Macro Read:** **The 10-year closed 4.93%** (4.99%), the fourth lower Friday (5.28% → 5.24% → 5.10% → 4.99% → 4.93%), after a one-day close at **5.05% on FOMC Wednesday**. The **30-year 5.31%** (5.32%). 2-year 4.56%, -13bp (repo feed). 3M bill 3.97%. **Freddie Mac's 30-year fell to 7.24%** (Oct 29) from 7.32%; 15-year 6.60%. **The FOMC held 3.75–4.00%, 10–2; Cook and Hammack voted for a hike** (statement read directly). Core PCE +3.1%, GDP +3.4%. DXY 101.88. **Trepp:** I could not find the October report; it is due early November. The September report stands as the read: overall CMBS delinquency **8.02%**, office **12.16%**, multifamily 8.04%, retail 6.58% (carried). One Commercial Observer item cites an office rate of 13.2% for August, which conflicts with Trepp's series as this page has carried it, so I do not use it. I found no new CRE refinancing default dated this week.
-
-**Restatement:** the adjusted bar restates O's Oct 23 close to $56.62 (page $56.89). The weekly change uses the bar.
+**Ophelia Macro Read:** **The 10-year closed 4.86%** (4.93%), the fifth lower Friday (5.28% → 5.24% → 5.10% → 4.99% → 4.93% → 4.86%). The **30-year 5.26%** (5.31%). 3M bill 4.00%. **Freddie Mac's 30-year fell to 7.18%** (Nov 5) from 7.24%, a third decline; 15-year 6.57% (read directly). **Payrolls +165K** against ~59–70K, unemployment 4.1%; Reuters read it as room for the Fed to focus on oil-driven inflation, though oil fell to about $90 on Friday evening's read. **Michigan year-ahead inflation expectations fell to 4.3%** from 4.7%. **Democrats took Congress.** VIX 25.64. **Trepp (October, via Connect CRE):** overall CMBS delinquency **7.87%** (8.02%), helped by a $975M showroom loan returning to current; **office 12.33%** (12.16%), **retail 7.21%** (6.58%), multifamily 8.09% (8.04%). New delinquencies included a **$384.3M Los Angeles office loan**. One source only; Trepp's own release was not read.
 
 ---
 
@@ -34,32 +31,34 @@ Week path: Mon $42.80, Tue $42.44, **Wed $42.13** (low $41.78), Thu $43.06, **Fr
 
 | Rank | Ticker | Name | Weight | Price | Change | Yield | Mean Target (Implied) | RSI | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | WELL | Welltower | 11.7% | $234.60 | -1.15% | 1.4% | $260.71 (+11.1%) | 52.7 | ⚠️ |
-| 2 | PLD | Prologis | 8.7% | $127.98 | +1.21% | 3.3% | $151.64 (+18.5%) | 46.5 | ⚡ |
-| 3 | EQIX | Equinix | 7.0% | $1,013.70 | **+6.14%** | 2.0% | $1,234.09 (+21.7%) | 51.8 | 🔥 |
-| 4 | AMT | American Tower | 5.4% | $187.78 | -0.63% | 3.8% | $215.74 (+14.9%) | 62.6 | ⚡ |
-| 5 | SPG | Simon Property Group | 4.6% | $217.75 | +2.89% | 4.1% | $228.89 (+5.1%) | 68.9 | ⚡ |
-| 6 | PSA | Public Storage | 4.5% | $324.77 | **+4.80%** | 3.7% | $330.50 (+1.8%) | 72.4 | 🔥 |
-| 7 | VTR | Ventas | 4.5% | $84.80 | -2.30% | 2.5% | $99.73 (+17.6%) | 49.1 | ⚠️ |
-| 8 | VMRK | Vivmark Residential | 4.4% | $61.90 | -1.79% | 4.5% | $71.62 (+15.7%) | 50.6 | ⚡ |
-| 9 | DLR | Digital Realty Trust | 4.4% | $180.70 | **+4.83%** | 2.7% | $223.97 (+23.9%) | 53.4 | 🔥 |
-| 10 | CBRE | CBRE Group | 4.3% | $128.85 | **+4.50%** | — | $172.83 (+34.1%) | 46.8 | ⚠️ |
-| — | O | Realty Income | (outside top 10) | $56.93 | +0.55% | 5.7% | $64.63 (+13.5%) | 56.2 | ⚡ |
-| — | CCI | Crown Castle | (outside top 10) | $88.69 | **+3.16%** | 4.8% | $93.50 (+5.4%) | 74.8 | 🔥 |
-| — | SBAC | SBA Communications | (outside top 10) | $187.15 | +1.30% | 2.7% | $225.25 (+20.4%) | 59.8 | ⚡ |
+| 1 | WELL | Welltower | 11.3% | $245.01 | **+4.44%** | 1.4% | $261.14 (+6.6%) | 61.2 | ⚡ |
+| 2 | PLD | Prologis | 8.1% | $126.96 | -0.80% | 3.3% | $152.07 (+19.8%) | 44.2 | ⚠️ |
+| 3 | EQIX | Equinix | 6.7% | $1,012.71 | -0.10% | 2.1% | $1,234.88 (+21.9%) | 50.7 | ⚡ |
+| 4 | AMT | American Tower | 5.9% | $188.79 | +0.54% | 3.7% | $215.83 (+14.3%) | 58.3 | ⚡ |
+| 5 | PSA | Public Storage | 5.0% | $337.46 | **+3.91%** | 3.5% | $334.06 (-1.0%) | 72.9 | 🔥 |
+| 6 | SPG | Simon Property Group | 4.8% | $228.42 | **+4.90%** | 3.9% | $228.89 (+0.2%) | 75.4 | 🔥 |
+| 7 | DLR | Digital Realty Trust | 4.3% | $174.20 | **-3.60%** | 2.8% | $224.22 (+28.7%) | 45.3 | ⚠️ |
+| 8 | VMRK | Vivmark Residential | 4.3% | $65.51 | **+5.83%** | 4.3% | $71.62 (+9.3%) | 67.5 | 🔥 |
+| 9 | VTR | Ventas | 4.3% | $88.75 | **+4.66%** | 2.3% | $99.00 (+11.5%) | 58.7 | ⚡ |
+| 10 | O | Realty Income | 4.3% | $59.04 | **+3.71%** | 5.5% | $64.15 (+8.7%) | 65.0 | ⚡ |
+| — | CBRE | CBRE Group | (left the top 10) | $135.51 | **+5.17%** | — | $172.00 (+26.9%) | 53.8 | ⚡ |
+| — | CCI | Crown Castle | (outside top 10) | $88.60 | -0.10% | 4.7% | $93.50 (+5.5%) | 63.6 | ⚡ |
+| — | SBAC | SBA Communications | (outside top 10) | $189.42 | +1.21% | 2.6% | $224.25 (+18.4%) | 57.8 | ⚡ |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | 🔴 = Breakdown / rate-pressure | ⚠️ = Pullback / caution
-> *Prices are Fri Oct 30 closes (daily bars, auto-adjusted, pulled Sat Oct 31 ~10:00 AM ET); weekly changes are against the settled Fri Oct 23 closes. Yields, targets and RSI are from the same pull. **Weights (Yahoo funds_data, Oct 30): WELL 11.7%, PLD 8.7%, EQIX 7.0%, AMT 5.4%, SPG 4.6%, PSA 4.5%, VTR 4.5%, VMRK 4.4%, DLR 4.4%, CBRE 4.3%.** Identical for a fourth pull; the snapshot is stale. The top ten is unchanged.*
+> *Prices are Fri Nov 6 closes (daily bars, auto-adjusted, pulled Fri evening ~10:45 PM ET); weekly changes are against the settled Fri Oct 30 closes, which match last week's page. Yields, targets and RSI are from the same pull. **Weights (Yahoo funds_data, Nov 6): WELL 11.3%, PLD 8.1%, EQIX 6.7%, AMT 5.9%, PSA 5.0%, SPG 4.8%, DLR 4.3%, VMRK 4.3%, VTR 4.3%, O 4.3%.** Refreshed this week after four identical pulls. **Realty Income entered the top ten and CBRE left.***
 
-**Data centers: the trigger of the week.** **Equinix (Oct 28):** AFFO beat, full-year guidance raised for a third time, **record annualized gross bookings of $533M, +35%** y/y (8-K via search; CRE Daily; Earnings Whispers flags a one-time fee boost and rising leverage). EQIX +3.3% Tuesday and +2.9% Thursday, **+6.1% on the week** to $1,013.70, from last week's lowest close since March. **Digital Realty (Oct 29, 8-K):** Core FFO ex-promote **$2.10** (+11% y/y; $2.13 prior quarter), 2026 outlook raised to **$8.30–$8.35** from $8.15–$8.20, renewals +11.8% cash, and the CEO called it a quarter of **record leasing**; I found no Q3 backlog figure. DLR +4.8% to $180.70, -1.2% after the print on Friday. Both remain just under their 50-day averages ($1,022.27 / $181.04). **Issue #189** is opened under the data-center leasing trigger.
+**Wednesday's rally, by group.** The fund rose 3.3% the day after the election. **52-week closing highs that day: PSA ($342.76), AMT ($194.86), CCI ($92.17).** SBAC rose 5.8% that day and O 3.0%. Nine of the thirteen large names rose on the week.
 
-**Senior housing: beats that sold off.** **Welltower (Oct 26):** normalized FFO **$1.67** vs ~$1.64 (+24.6%), same-store NOI +15.8%, full-year raised to **$6.47–$6.53**, the third raise. The stock fell **5.8% Tuesday** to $226.72, and Investing.com called it a miss on GAAP EPS ($0.54). Bisnow ties the slump to a $21B buying spree; I could not confirm the reason. It recovered to $234.60, -1.1% on the week. **Ventas (Oct 27):** normalized FFO $0.99 vs ~$0.98, a penny under the whisper; -4.7% Tuesday, -2.7% Wednesday, -2.3% on the week. Neither is a REIT miss on FFO, so neither is treated as a trigger.
+**Data centers: the AI selloff reached them.** **EQIX -5.4% and DLR -5.5% on Thursday**, the day SPY fell 4.4% and XLK fell 8.0% on midterm data-center fears (Tech page, issue #196). EQIX finished flat on the week; DLR -3.6%. No new data-center leasing announcement was found this week.
 
-**Storage and towers.** **Public Storage (Oct 26):** Core FFO **$4.34** (+0.7%), same-store revenue +0.5%, 2026 guide raised to $16.90–$17.10. +4.8% to its best close since Aug 13, $2.34 under its 52-week closing high. **American Tower (Oct 27):** AFFO **$2.87** vs ~$2.84, 2026 outlook up $0.02 to $11.04–$11.16, $2B more in buyback authority; -2.4% Tuesday, -0.6% on the week. I found no SpaceX comment in the coverage. CCI +3.2%, RSI 74.8; no signed SpaceX deal was found.
+**The prints.**
+- **Realty Income (Q3, 8-K and 10-Q):** AFFO **$1.12** (+3.7%), against ~$1.11; revenue $1.62B; full-year AFFO raised to **$4.45–$4.46** from $4.37–$4.43 (goldesel.de). +3.7% on the week. Cecil's $56.08 basis is now 5.3% in the money.
+- **SBA Communications (Nov 2, 8-K):** AFFO **$3.19** a share; site leasing $665.4M (from $656.4M), **domestic -3.4%**; sold its Chile and Ecuador towers and agreed to sell Peru. +1.2%.
+- **Welltower and Ventas** recovered last week's post-print falls: WELL +4.4%, VTR +4.7%. No new dated item.
+- **Prologis -0.8%**, back under its 50D and far under its 200D ($136.24). No dated item.
 
-**The rest.** SPG +2.9%, CBRE +4.5% after a **52-week closing low of $121.65 Tuesday**, no sourced cause for either leg. PLD +1.2%. O +0.5%. Nine of the thirteen large names rose.
-
-**Cecil Fundamental Read:** O closed $56.93 against my $56.08, and it reports Monday. I hold. Welltower came back to $226.72 on Tuesday, and I said I'd wait for a pullback. I didn't buy it, and it's $234.60 now, so that is a miss I own. PLD held $123.43, with a week low of $124.69, so the starter I set is on. CBRE at 14.5x with 34% to target I still want a reason for. EQIX with a 22% gap to target, after a record bookings quarter, is the first time the data-center math has interested me, though leverage is rising. I still don't pay for talks with SpaceX.
+**Cecil Fundamental Read:** O raised its AFFO guide and yields 5.5%; I hold from $56.08. Prologis at $126.96 is where I started a position, three dollars over my $123.43 line, and it's 20% under the Street; I keep it. DLR at a 29% gap after a record leasing quarter, and down 5.5% on a day the AI trade sold off, is the data-center name I'd now buy before Equinix. PSA and SPG are at their targets; I don't chase them.
 
 ---
 
@@ -69,13 +68,13 @@ Week path: Mon $42.80, Tue $42.44, **Wed $42.13** (low $41.78), Thu $43.06, **Fr
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | Yield | Signal | Council Read |
 |---|---|---|---|---|---|---|---|
-| UE | Urban Edge Properties | $2.74B | $19.93 | **+3.10%** | 4.2% | ⚡ | Q3 (Oct 28): missed by a penny, third guidance raise, a Florida entry (Earnings Whispers). Back over the 20D, on the 50D ($20.03) |
-| GTY | Getty Realty | $1.88B | $28.00 | -0.04% | 7.1% | ⚠️ | Last week's unsourced print: AFFO beat and guide edged up (Earnings Whispers, Oct 22). On its 20D ($27.96), under the 50D ($29.56). RSI 44.5 |
-| SAFE | Safehold | $0.80B | $11.30 | +0.62% | 6.3% | 🔴 | Earnings Whispers preview (Oct 26): must prove the origination rebound after a 32% slide. Still under all three averages. Reports **Nov 3** (Yahoo) |
-| CTO | CTO Realty Growth | $0.76B | $19.71 | -0.35% | 7.7% | ⚠️ | Q3 (Oct 27): beat and lifted guidance, same-store momentum cooling (Earnings Whispers). On its 200D ($19.70) |
-| BRT | BRT Apartments | $0.24B | $12.98 | -1.96% | 7.7% | ⚡ | Micro-cap float caveat. 23 cents above its 52-week closing low of $12.75. Reports Nov 5 (Yahoo). No dated headline |
+| UE | Urban Edge Properties | $2.81B | $20.42 | +2.46% | 4.0% | ⚡ | No new dated item after the Oct 28 print. Over the 20D and 50D, under the 200D ($20.94) |
+| GTY | Getty Realty | $1.92B | $28.56 | +2.00% | 7.0% | ⚠️ | No new dated item. Over the 20D ($28.15), under the 50D ($29.15). RSI 51.0 |
+| CTO | CTO Realty Growth | $0.78B | $20.20 | +2.49% | 7.5% | ⚡ | No new dated item. Back over its 200D ($19.78) |
+| SAFE | Safehold | $0.74B | $10.59 | **-6.28%** | 6.7% | 🔴 | Q3 (Nov 3): GAAP EPS $0.41, a penny under; revenue $118.7M, a small beat (headline only; release not read). **Lowest close in the page's two-year bar history.** RSI 33.9 |
+| BRT | BRT Apartments | $0.24B | $12.56 | -3.24% | 7.8% | 🔴 | Reported Nov 5 (Yahoo); release not found. **Lowest close in the two-year bar history**, under last week's $12.75 low. Micro-cap float caveat |
 
-**Small-Cap Sector Read:** All five re-verified under $5B at the Oct 30 close. No rotations. The sleeve split this week after falling in full last week: UE and SAFE rose, the rest slipped. It is still not following the large-cap rate names; only UE moved with them.
+**Small-Cap Sector Read:** All five re-verified under $5B at the Nov 6 close. No rotations. The three property owners rose with the large caps; the two with balance-sheet questions, SAFE and BRT, closed at two-year lows. That split is the sleeve's read on financing, not on rates.
 
 ---
 
@@ -84,21 +83,22 @@ Week path: Mon $42.80, Tue $42.44, **Wed $42.13** (low $41.78), Thu $43.06, **Fr
 | Level | Price | Significance |
 |---|---|---|
 | 52W High | $45.63 | Resistance, untouched since July |
-| Week High | $43.44 | Friday intraday; the next add line |
-| Current Price | $43.17 | Fri 10/30 close; +1.41% W/W; highest close since Sep 8 |
-| 200-Day MA | $42.77 | **First Friday close above it since Sep 11** |
-| 50-Day MA | $42.50 | Now 27 cents under the 200D |
-| Week Low (close) | $42.13 | Wednesday; the new stop line |
-| 20-Day MA | $41.95 | Rising |
-| Week Low | $41.78 | Wednesday intraday |
-| Prior Stop Line | $40.57 | Retired |
+| Week High | $45.34 | Thursday intraday, before the selloff |
+| Week High Close | $45.12 | Wednesday; highest since Jul 29 |
+| Current Price | $44.00 | Fri 11/6 close; +1.92% W/W |
+| Old Add Line | $43.44 | Cleared on the weekly close |
+| Week Low | $43.09 | Monday intraday; the new stop line |
+| 200-Day MA | $42.86 | Held all week |
+| 20-Day MA | $42.75 | Back over the 50D |
+| 50-Day MA | $42.45 | — |
+| Prior Stop Line | $42.13 | Retired |
 | The Magnet | $40.00 | Untested |
 | Structural Low | $38.96 | 52W bottom (closing basis) |
-| RSI(14) | 60.0 | From 56.1 |
+| RSI(14) | 60.2 | Unchanged |
 
-**Marky Setup Assessment:** The rule fired, so I buy the other half on Friday's weekly close at **$43.17**. Full position, from $41.33 and $43.17. New stop on the whole thing: a close under **$42.13**, this week's low close. Add over **$43.44** on a weekly close, with $45.63 the target. Friday's close was 27 cents under the high, the third straight Friday to fade from the high, but this one held the line. Internals are better than last week: data centers, storage and malls all rose, and the towers did not need to.
+**Marky Setup Assessment:** The add fired on the weekly close at **$44.00**. I'm long from $41.33, $43.17 and $44.00. The stop moves up to a close under **$43.09**, this week's low, which sits 23 cents over the 200D. Next add is a weekly close over **$45.63**, the 52-week high. Wednesday's $45.12 faded $1.12 by Friday, so I don't pay up before then.
 
-**The relative strength story:** XLRE **+1.41% vs SPY -0.56%**, about 2.0 points better, a fourth week ahead of SPY. YTD: **XLRE +9.6% vs SPY +11.7%**. XLP +1.31% and XLB +2.79% in the same week.
+**The relative strength story:** XLRE **+1.92% vs SPY -2.70%**, about 4.6 points better, a fifth week ahead of SPY. YTD: **XLRE +11.7% vs SPY +8.7%**, ahead for the year. XLP +0.74% and XLB -1.50% in the same week.
 
 ---
 
@@ -106,112 +106,98 @@ Week path: Mon $42.80, Tue $42.44, **Wed $42.13** (low $41.78), Thu $43.06, **Fr
 
 | Factor | Level | Implication for XLRE |
 |---|---|---|
-| 10Y Treasury | **4.93%** Fri close (4.99%); **5.05% Wednesday** | A fourth lower Friday. One daily close over 5% after the FOMC, reversed Thursday (4.99%): recorded on the trigger issue, not treated as a new weekly break. The 4% line is untouched |
-| 30Y Treasury | **5.31%** (5.32%) | -1bp |
-| 30Y Mortgage | **7.24%** (Freddie Mac, Oct 29), from 7.32%; 15Y 6.60% | Second straight decline; 16bp off 7.40% |
-| Inflation | September PCE +3.6% y/y, core +3.1%; CPI 3.7%, core 2.6% (carried, Oct 14) | Moving the wrong way for the Fed |
-| Fed Posture | **Held 3.75–4.00%, 10–2; Cook and Hammack for a hike** | Next decision Dec 9 (one source). The risk to the rate trade is now a hike, not a hold |
-| DXY | 101.88 (repo feed) | Flat |
-| Wireless | No signed SpaceX cell-site deal found. AMT AFFO $2.87, outlook +$0.02 | Towers mixed: CCI +3.2%, SBAC +1.3%, AMT -0.6% |
-| Data Center Demand | **EQIX record bookings $533M (+35%), guide raised; DLR record leasing, outlook $8.30–$8.35** | **Trigger met** |
-| Trepp CMBS Delinquency | **September: overall 8.02%**, office 12.16%, multifamily 8.04%, retail 6.58% (carried) | October report not found; due early November. No new default found dated this week |
-| SPY (context) | $755.72, -0.56% W/W; VIX 19.42 | — |
+| 10Y Treasury | **4.86%** Fri close (4.93%) | A fifth lower Friday. No new break of 5% or 4% |
+| 30Y Treasury | **5.26%** (5.31%) | -5bp |
+| 30Y Mortgage | **7.18%** (Freddie Mac, Nov 5), from 7.24%; 15Y 6.57% | Third straight decline; 22bp off 7.40% |
+| Payrolls (Oct) | **+165K**; unemployment 4.1%; wages +0.4% | The 10Y fell anyway |
+| Inflation expectations | UMich year-ahead **4.3%** (4.7%) | Supports the rate trade |
+| Fed Posture | Held 3.75–4.00%, 10–2 (Oct 28; carried); next Dec 9 | A hike is the risk; payrolls make it more possible |
+| DXY | 102.28 (Fri evening, DX-Y.NYB) | — |
+| Election | Democrats took Congress (Nov 3) | REITs rallied 3.3% the next day |
+| Wireless | SBAC domestic leasing -3.4%; towers at 52-week highs (AMT, CCI) Wednesday | Price is ahead of the leasing |
+| Data Center Demand | No new leasing announcement this week; EQIX and DLR -5.4% / -5.5% on Thursday's AI selloff | Last week's record bookings stand (#189) |
+| Trepp CMBS Delinquency | **October: overall 7.87%** (8.02%), **office 12.33%** (12.16%), retail 7.21% (6.58%), multifamily 8.09% (8.04%) | One source (Connect CRE). $384.3M LA office loan among new delinquencies |
+| SPY (context) | $735.29, -2.70% W/W; Thursday -4.4%; VIX 25.64 | — |
 
-**Ophelia Verdict:** My two conditions were the rate trend and the price, and both are now met: a fourth lower weekly close and a weekly close over the 200-day. I upgrade the index from neutral to **constructive, normal size, no more**, and I keep the yield names (O, PSA, VMRK) constructive. WELL and VTR showed me that good quarters can sell off hard when positioning is crowded. Two things hold me back from more: two governors voted to hike with core PCE at 3.1%, and CMBS delinquency is at its highest since 2020 with October's report still to come. **Issue #189 opened** for the data-center leasing trigger. Not met: XLRE +1.41% (±5%); no major REIT miss on FFO; no new CRE refinancing default found; no new weekly 10Y break.
+**Ophelia Verdict:** **Constructive, normal size**, unchanged. The 10-year fell a fifth week, the 200-day held through a 4.4% S&P day, and the fund is ahead of SPY for the year. I don't go bigger: office delinquency rose again to 12.33%, retail jumped 63bp, and two of the five small caps closed at two-year lows. The rate trade is working; the credit underneath it is not improving.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLRE (week ending 2026-10-30)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLRE (week ending 2026-11-06)
 
-### This Week's Story: Over the 200-Day at Last
+### This Week's Story: The Rate Trade Held Through the Selloff
 
-XLRE rose **+1.41% to $43.17**, its fourth straight up week and its highest close since September 8, while SPY fell 0.56%. It closed a Friday over its 200-day average for the first time since September 11.
+XLRE rose **+1.92% to $44.00**, its fifth straight up week, while SPY fell 2.70%. It is now ahead of SPY for the year, +11.7% against +8.7%.
 
-**The data centers turned.** Equinix reported record bookings of $533 million and raised its guidance a third time. Digital Realty reported record leasing and raised its Core FFO outlook to $8.30–$8.35. Equinix rose 6.1% and Digital Realty 4.8%, both from multi-month lows last week.
+**The election rally.** Democrats took Congress, and on Wednesday the fund rose 3.3% to $45.12, its highest close since July 29. Public Storage, American Tower and Crown Castle all closed at 52-week highs that day.
 
-**The rate move held, narrowly.** The FOMC held with two dissents for a hike, and the 10-year closed 5.05% that day while the fund posted its low close of the week at $42.13. It reversed: 4.93% by Friday, a fourth lower weekly close. Freddie Mac's 30-year eased to 7.24%.
+**Rates kept falling.** Payrolls rose 165,000, far above forecasts, and the 10-year still fell to 4.86%, its fifth lower Friday. Freddie Mac's 30-year mortgage rate fell to 7.18%. Michigan's year-ahead inflation expectations eased to 4.3%.
 
-**Good quarters still sold.** Welltower beat and raised and fell 5.8% on Tuesday. Ventas edged consensus and fell 7% in two sessions. American Tower added two cents to its outlook and slipped. Public Storage was the winner, raising guidance and rising 4.8%.
+**Data centers took the hit.** On Thursday, with the S&P down 4.4% and tech down 8% on data-center fears, Equinix and Digital Realty each fell more than 5%. Last week's record bookings did not protect them. Equinix ended flat for the week and Digital Realty fell 3.6%.
 
-**The CRE backdrop.** Trepp's October report is not out. September's 8.02% delinquency rate, the highest since 2020, stands, with office at 12.16%. No new default was found.
+**The prints were steady.** Realty Income raised its AFFO guide. SBA's domestic leasing fell 3.4% while it sold Latin American towers.
 
-**The Bottom Line:** The price condition that failed by cents for two weeks finally cleared by 40 cents, with data-center demand behind it rather than a headline. Next: Realty Income and SBA (Mon), Safehold (Tue), the election and payrolls, then the Trepp report. **Trigger: data-center leasing. Issue #189 opened.**
+**Credit did not improve.** Trepp's October report put overall CMBS delinquency at 7.87%, down from 8.02% only because one large loan cured. Office rose to 12.33% and retail jumped 63 basis points. Safehold and BRT closed at two-year lows.
+
+**The Bottom Line:** The fund held its 200-day through a 4.4% S&P selloff, and Marky added on the close. **No trigger:** XLRE +1.92% (threshold ±5%); no major REIT earnings miss (O beat and raised); no new data-center leasing announcement found; no CRE refinancing default found (Trepp's new delinquencies are noted, not treated as one); the 10Y at 4.86% made no new break of 5% or 4%. Last week's data-center trigger stays on #189.
 
 ---
 
 ## EARNINGS CALENDAR — THE CATALYSTS AHEAD
 
-**Q3 2026 season.** Yahoo Finance calendar dates pulled Oct 30–31 unless marked. The EPS column is Yahoo's GAAP consensus, which is not FFO. No upcoming date moved from last week's page.
+Company dates are Yahoo Finance calendar dates pulled Nov 6, not company-confirmed; EPS is the Yahoo consensus mean. No dates moved since last week's page.
 
-| Company | Ticker | Date | GAAP EPS Est. | What to Watch |
+| Company | Ticker | Date | Quarter | Key Metric |
 |---|---|---|---|---|
-| **Welltower / Public Storage** | WELL / PSA | **Oct 26 — REPORTED ✔** | — | **WELL FFO $1.67, guide raised, -5.8% Tuesday; PSA Core FFO $4.34, guide raised, +4.8% W/W** |
-| **American Tower / Ventas / CTO** | AMT / VTR / CTO | **Oct 27 — REPORTED ✔** | — | **AMT AFFO $2.87; VTR FFO $0.99; CTO beat and raised** |
-| **Equinix / Urban Edge** | EQIX / UE | **Oct 28 — REPORTED ✔** | — | **EQIX record bookings, third raise, +6.1% W/W; UE missed by a penny, third raise** |
-| **Digital Realty** | DLR | **Oct 29 — REPORTED ✔** | — | **Core FFO $2.10, outlook $8.30–$8.35, record leasing, +4.8% W/W** |
-| **Realty Income / SBA** | O / SBAC | Nov 2 | $0.43 / $2.10 | O: AFFO cover of a 5.7% yield; SBAC on SpaceX |
-| **Safehold** | SAFE | Nov 3 | $0.43 | At the bottom of its range |
-| **Vivmark Residential** | VMRK | Nov 4 | $0.20 | First full quarter as a merged company |
-| **Simon / BRT** | SPG / BRT | Nov 5 | $1.62 / -$0.21 | SPG tenant sales |
+| **Realty Income** | O | **Nov 2 — REPORTED ✔** | Q3 2026 | **AFFO $1.12 (+3.7%); FY raised to $4.45–$4.46; +3.7% W/W** |
+| **SBA Communications** | SBAC | **Nov 2 — REPORTED ✔** | Q3 2026 | **AFFO $3.19; domestic leasing -3.4%; LatAm tower sales; +1.2% W/W** |
+| **Safehold** | SAFE | **Nov 3 — REPORTED ✔** | Q3 2026 | **GAAP EPS $0.41, a penny under (headline only); -6.3% W/W** |
+| **Vivmark Residential** | VMRK | Nov 4 (Yahoo) | Q3 2026 | Release not found; +5.8% W/W |
+| **BRT Apartments** | BRT | Nov 5 (Yahoo) | Q3 2026 | Release not found; two-year low |
+| **Prologis** | PLD | Jan 20, 2027 | Q4 2026 | Next cycle |
+| **Simon Property** | SPG | Feb 1, 2027 | Q4 2026 | Next cycle |
 
-**The macro calendar:**
+**Macro dates:** October CPI mid-November (date not re-sourced); FOMC Dec 9; Freddie Mac PMMS every Thursday; Trepp's November report in early December.
 
-- **Nov 3 — election**; October payrolls next (date not re-sourced)
-- **Early November — Trepp October CMBS delinquency report** (September's 8.02% overall / 12.16% office is the standing read)
-- **Mid-November — October CPI; Dec 9 — next FOMC decision** (one source)
-- **Ongoing:** the 10Y vs 5.00% and 4.00%; the mortgage rate vs 7.24%; XLRE vs $42.77 / $42.13
-
-**Marky's Binary Event Read:** Levels: **$43.44** above, then $45.63; **$42.77** (200D) and **$42.13** below. Realty Income on Monday tests the yield names; the election and the Trepp report test the close over the 200-day.
+Yahoo still shows past dates for WELL (Oct 26), PSA (Oct 26), AMT and VTR (Oct 27), EQIX (Oct 28), DLR (Oct 29), CBRE (Oct 22), CCI (Oct 21), CTO (Oct 27), GTY (Oct 21) and UE (Oct 28).
 
 ---
 
 ## RISK SCENARIOS
 
-### 🟢 Bull Case
-- **The 200-day holds as support** and the fund closes over $43.44
-- **The 10Y stays under 5%** and the mortgage rate extends from 7.24%
-- **EQIX and DLR reclaim their 50-day averages** on the bookings
-- **Realty Income confirms** the yield trade on Monday
-- **SpaceX signs**, and the tower option becomes rent
+| Scenario | Probability (ch. from 10/30) | Trigger | XLRE Impact | Action |
+|---|---|---|---|---|
+| Breakout to the 52-week high | 35% (was 30%) | 10Y under 4.80%; weekly close over $45.63 | +3–4% | Marky adds over $45.63 |
+| Range $43–$45.6 holds | 35% (unchanged) | Rates drift; data centers stabilize | ±2% | Hold |
+| Rate scare after payrolls | 20% (unchanged) | December hike priced; 10Y back over 5% | -4–6% to the 200D and below | Stop on a close under $43.09 |
+| AI selloff spreads to data centers | 20% (new) | Another Thursday like Nov 5 | EQIX/DLR -10% | Cecil buys DLR, not EQIX |
+| Credit stress | 15% (was 10%) | Office delinquency keeps rising; small-cap REIT financing breaks | Small caps -10%, index -2% | Stay out of SAFE and BRT |
 
-### 🔴 Bear Case
-- **A close under $42.77, then $42.13**: another failure at the 200D
-- **A December hike gets priced** after the two dissents, and the 10Y retakes 5.05%
-- **Trepp's October report** prints a new high, with office over 12.16%
-- **Senior housing keeps selling on beats**: WELL and VTR are 16% of the fund on Yahoo's stale weights
-- **Data-center funding needs and leverage** take the shine off record bookings
-- **The small-cap sleeve stays under its averages**, an early sign for long-duration credit
-
-### ⚠️ The Wild Card
-**The same AI capex that hurt Amazon helped this fund.** Friday's market sold off on capex worries, and Equinix and Digital Realty's bookings are the other side of that spending. EQIX and DLR are 11.4% of the fund on Yahoo's stale weights. If the hyperscalers slow the spending that investors are punishing, the leasing behind this week's breakout slows too.
+*Probabilities are the desk's judgment, not a model output.*
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Fourth lower weekly close and a Friday over the 200-day: both conditions met. I upgrade the index to constructive, normal size, no more. Two governors voted to hike, and Trepp's October report isn't out. Issue #189 is open on the data-center leasing."*
+**Ophelia:** *"Constructive, normal size. Five lower Fridays on the 10-year and the 200-day held through a 4.4% S&P day. Office delinquency at 12.33% and two small caps at two-year lows keep me from going bigger."*
 
-**Marky:** *"The rule fired, so I buy the other half at $43.17. Full position, stop a close under $42.13. It took seven weeks. Add on a weekly close over $43.44."*
+**Marky:** *"The add fired at $44.00. Long from $41.33, $43.17 and $44.00; stop on a close under $43.09. Next add over $45.63."*
 
-**Cecil:** *"Realty Income works: bought $56.08, now $56.93. Welltower came back to $226.72, I didn't buy it, and that's on me. The Prologis starter is on, since $123.43 held. Equinix is finally interesting with a 22% gap to target. I still don't pay for talks with SpaceX."*
+**Cecil:** *"Realty Income raised and I hold it. Prologis I hold. Digital Realty at a 29% gap after a record leasing quarter is the data-center name I'd add on Thursday's kind of day."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- Yahoo Finance / yfinance 1.6.0 (pulled Sat Oct 31, 2026, ~10:00 AM ET, bars through the Fri Oct 30 close): XLRE, holdings and SMID daily bars (auto_adjust=True); weekly changes vs the settled Fri Oct 23 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week closing highs and lows; yields, mean targets, market caps (UE $2.74B, GTY $1.88B, SAFE $0.80B, CTO $0.76B, BRT $0.24B, all sub-$5B); XLRE top-10 weights via funds_data (unchanged a fourth pull); earnings-calendar dates and GAAP consensus EPS; ^TNX/^TYX/^IRX. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-10-30-gridB/: quotes_XLRE.csv, quotes_MAC.csv, top10_XLRE.csv, bars_*.csv
-- Equinix 8-K exhibit 99.1 (SEC, Oct 28, 2026) via search, CRE Daily (Oct 30), Earnings Whispers headline: record gross bookings $533M, +35%; guidance raised a third time. The full-year ranges were not verified against the Q3 release and are not quoted (SEC.gov refused the automated fetch)
-- Digital Realty 8-K exhibit 99.1 (SEC, 2026) via search, Earnings Whispers headline (Oct 29): Core FFO ex-promote $2.10, outlook $8.30–$8.35, renewals +11.8% cash, "record leasing"; prior $8.15–$8.20 per Q2 summary; Q3 backlog not found
-- Welltower 8-K (SEC, Oct 26, 2026), Earnings Whispers (Oct 27), Trefis (Oct 28), Investing.com (Oct 26), Bisnow (Oct 27): normalized FFO $1.67 vs ~$1.64, guide $6.47–$6.53, -5.8% Tuesday; a Finviz headline claiming a 2.2% rise on the results is not used
-- Ventas: Earnings Whispers (Oct 28). Public Storage: 8-K and company release (Oct 26), MarketBeat, Mitrade; one source reads same-store revenue flat rather than +0.5%. American Tower: 8-K (Oct 27), Goldesel, Earnings Whispers headline. CTO, UE, GTY: Earnings Whispers headlines (Oct 22–28); SAFE preview (Oct 26)
-- Freddie Mac PMMS (read Oct 31): 30-year 7.24% as of Oct 29 (7.32% prior); 15-year 6.60%. Federal Reserve statement (Oct 28), read directly. BEA GDP and PCE via Axios, ABC, Fox Business (Oct 29). data/market_state.json (Oct 30): DXY 101.88, 2-year 4.56%
-- Trepp September CMBS delinquency via Scotsman Guide (carried; date checked last week): 8.02% overall, office 12.16%, multifamily 8.04%, retail 6.58%. October report searched and not found
-- **Not found or not verified this week:** Trepp October; the reason for WELL's Tuesday drop; CBRE's two legs; DLR's Q3 backlog; any new CRE refinancing default; AMT's SpaceX comment or a signed SpaceX deal; dated news for BRT; fund holdings count; Fed-funds futures odds.
-- **Cross-references: #171 and #179 (regime flags), #106, #113, #127, #114, #159 (closed or carried regime issues), #115 (DXY above 101, closed in housekeeping). #189 opened this week under the data-center leasing trigger. Not met: XLRE +1.41% (±5%), no major REIT miss on FFO, no new CRE default found, no new weekly 10Y break.**
+- yfinance 1.6.0 (pulled Fri Nov 6, 2026, ~10:45 PM ET): daily bars through the Fri Nov 6 close for XLRE and all tracked names (auto_adjust=True); weekly changes vs the settled Fri Oct 30 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week and two-year closing highs and lows; mean targets, yields, market caps, AUM; XLRE top-10 weights via funds_data (refreshed); earnings-calendar dates. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-11-06-gridB/: quotes_XLRE.csv, quotes_MAC.csv, top10_XLRE.csv, bars_*.csv
+- Freddie Mac PMMS (freddiemac.com/pmms, read Nov 6): 30-year 7.18% as of Nov 5 (7.24% prior); 15-year 6.57%
+- Trepp October 2026 CMBS delinquency via Connect CRE ("Large Loan's Return to Current Status Nudges CMBS Delinquency Down in October"); Trepp's own release not read
+- Realty Income 8-K supplement and 10-Q (SEC); goldesel.de for consensus and the guidance raise. SBA Communications 8-K exhibit 99.1 (SEC, Nov 2). Safehold: headline only (EPS and revenue vs estimates)
+- Macro: payrolls (Benzinga, CNBC, Nov 6; Reuters via the same coverage); UMich (Bloomberg, Kitco, Nov 6); election (CBS, The Hill); Thursday's data-center selloff per the Tech page and issue #196
+- Not re-sourced this week: VMRK and BRT results; any CRE refinancing default; a dated cause for WELL, VTR, SPG or PLD moves; October CPI date; fund holdings count
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-10-31 (data as of Fri 2026-10-30 close; Grid B Midday run, late fire Saturday morning)*
+*Last updated by Saturday Research Crew: 2026-11-06 (data as of Fri 2026-11-06 close; Grid B Friday-night run)*
 *Next update: Every Saturday*
-*Data sources: Yahoo Finance, Freddie Mac PMMS, Federal Reserve, SEC filings via search, Trepp via Scotsman Guide, company releases, Council desk logs*
-*Note: The 10-year closed lower four weeks running (5.24% → 5.10% → 4.99% → 4.93%, from 5.28%); XLRE closed over its 200D for the first Friday since Sep 11. Next gates: O/SBAC Nov 2, SAFE Nov 3, Trepp early November.*
+*Data sources: yfinance (Yahoo-sourced), Freddie Mac, Trepp (via Connect CRE), company SEC filings, Council desk logs*
