@@ -4,6 +4,20 @@
 
 ## Entries
 
+### Week of 2026-11-09
+
+Booked: ALL 21.2% / NEE 19.5% / UPS 18.4% / PGR 12.8% / D 11.9% (16.2% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags and the Canary ELEVATED; the book landed over the 80% cap minimum, so no raise, no redistribution, no trigger block, no promotion; three sector lines, XLF 34.0% / XLU 31.4% / XLI 18.4%, shadow-book.md). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| MCD | 71 | 69.3 | Her #3 -- not booked by consensus (her vote weight 34.5%); "Risk-adjusted outperformer with lower volatility" on a stock **+7.1% on the week and +17.6% in four weeks, RSI 73.5, 11.2% over its 50D**, 6.5% under its 52-week high, having reported Nov 4 (+6.53% on the day; "Sandbag: beat both, paid, 1.7x the straddle," wiki/earnings-surveillance.md); 22.0x trailing / 20.2x forward, 2.71% yield; on the XLY line the book does not carry. Cecil's synthesis read: "MCD at 20x on negative U.S. comps: none." Excluded by ranking, not by rule |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): **TROW** (Cecil #3, score 91, conf 71.3) not booked by consensus -- $108.41, +4.34% on the week, last week's best Cecil name (+2.97% Tracker), 11.11x trailing / 10.97x forward, 4.72% yield 14 bps under the 10-year and 72 over the bill, 3.0% over its 50D, RSI 57.2, reports Jan 29; the name nearest Cecil's column and the swap in Shadow A; **GWW** (Marky #2, score 97, conf 74.7) not booked by consensus -- $1,440.70, +6.0% on the week and +11.7% in four, 9.8% over its 50D, RSI 66.4, 32.5x / 28.5x forward, 0.65% yield, in no wiki, Rule 1 N/A (a low-volatility-uptrend signal); **MMM** (Marky #3, score 97, conf 75.0) not booked by consensus -- $185.15, +6.2% on the week on the $7.4B PFAS settlement (wiki/industrials.md), 9.6% over its 50D, RSI 62.2, 27.8x / 18.7x forward, debt 3.78x equity, 3.7% to its mean target; **Rule 1 by the number on the signal day (Friday): 87% of 20-day volume, 93% with the window's highest-volume session excluded -- a fail on both denominators, the first name the new clause was applied to.** No `[sanity] DROP` lines this week: no proposed name inside the earnings blackout.
+
+counterfactual: to be computed (Monday 2026-11-16, date-pinned Mon 2026-11-09 close -> Fri 2026-11-13 close; MCD alone, and TROW / GWW / MMM each and equal-weighted, vs the official booked week).
+
+---
+
 ### Week of 2026-11-02
 
 Booked: PGR 19.4% / LIN 16.9% / TROW 16.7% / SPGI 16.3% / AON 10.7% (20.0% cash -- the pipeline's 15% cash floor on a Tightening stance with 3 raised regime flags and one Canary strict criterion met, then the owner's 80% cap; no trigger block, no promotion; the cap raise redistributed under Ophelia's freeze rule, HY OAS 326 > 300; four names on the XLF line, 63.1% of the book, shadow-book.md). Ophelia's rejected candidates:
