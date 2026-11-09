@@ -3,86 +3,85 @@
 > Automated stock scan reports from the **Market Consciousness Orchestra** — a rule-based AI trinity (Cecil, Marky, and Ophelia) that analyzes live market data and debates weekly portfolio picks.
 
 <!-- MARKET BRIEF START -->
-## 🌡️ Market Brief — Week of 2026-10-31
+## 🌡️ Market Brief — Week of 2026-11-08
 
-> *Auto-updated by the Synthesis Agent every Saturday. Data as of Friday Oct 30 close. Every research page this edition uses was finished and up to date before it started.*
+> *Auto-updated by the Synthesis Agent every Saturday. Data as of Friday Nov 6 close. **This edition is late (Sunday night), and four of our fifteen research pages did not update this week** (chips, the economic calendar, earnings and the warning-light board). Their numbers are a week old and are not used for prices below.*
 
 ### The Headline
 
-The market stopped asking what the AI boom costs and started asking who is paying for it. Alphabet fell **12.6%** after its cash went negative on **$51.4B** of quarterly spending, Amazon spent **$77.3B** against about $58.7B expected, and chip stocks lost **7.2%** on Friday alone, closing under their long-term trend line for the first time in at least 150 trading days. The counter-story is that most stocks went up: nine of our twelve groups beat the S&P 500, health care hit a two-year high, oil companies hit a one-year high, and the typical stock beat the big index for a fourth week. The VIX fear gauge closed at **19.42**, about where it started, after jumping to **23.93** during Friday. The corporate bombshell: Intel beat its forecasts, warned about next quarter, and fell **28.6%** in a day, while Apple passed Nvidia as the most valuable company in the world.
+The election moved the market more than any earnings report. Democrats swept Congress on Tuesday, and stocks rallied hard on Wednesday; then on Thursday investors decided the new politics could slow the building of AI data centers, and the S&P 500 had its **worst day since April 2025**, with tech funds down **8%** and chip funds down **11%** that day. Oil fell from **$104** to **$90.83** on bets the vote pushes Washington toward a deal with Iran, and oil company stocks lost **12%** in a week. The counter-story: five of our twelve sector groups still rose, led by media and phone companies (**+4.9%**), real estate and consumer stocks, and health care held flat. The VIX fear gauge closed at **25.64**, up from 19.42 a week earlier. The corporate bombshell: CVS beat its forecasts, raised its outlook, announced it will split into two companies, and fell **12.5%** in a day.
 
 ### Index Check
 
 | Index | Level | Move | Story |
 |-------|-------|------|-------|
-| S&P 500 | $755.72 (SPY) | -0.6% | A third down week, all of it on Friday's -1.8%; back under its 50-day average of $767.49 |
-| Nasdaq 100 | $690.49 (QQQ) | -2.0% | Its third correction of 2026: Alphabet, Intel and Amazon fell; Microsoft beat and did nothing |
-| Dow Jones | $517.13 (DIA) | -0.8% | Caterpillar's -9.1% and Boeing's -8.9% did the damage |
-| Russell 2000 | $279.33 (IWM) | +1.3% | Small companies rose as interest rates eased and money left the giants |
-| VIX | 19.42 | -0.2% | Fell to 16.91 Wednesday, spiked to 23.93 Friday, and most of the fear left by the closing bell |
+| S&P 500 | $735.29 (SPY) | -2.7% | A fourth down week; Thursday's roughly -4.4% was the worst day since April 2025 |
+| Nasdaq 100 | $656.10 (QQQ) | -5.0% | The AI giants took the hit after the vote raised doubts about where data centers can be built |
+| Dow Jones | $512.22 (DIA) | -0.9% | Held up best; 3M jumped on a lawsuit settlement while Caterpillar fell 10% |
+| Russell 2000 | $273.67 (IWM) | -2.0% | Smaller companies fell too, but less than the tech giants |
+| VIX | 25.64 | +32% | Closed 28.18 on Thursday, the most fear in months; still elevated Friday |
 
-> **Dad Translation:** The big famous companies dragged the scoreboard down, but most of the other players on the field had a good week. Friday was the scary day, and even then a lot of ordinary stocks rose. It looked more like money changing seats than money leaving the room.
+> **Dad Translation:** The election rattled investors. The first day they cheered, the second day they panicked about the AI building boom, and the big tech companies that drive the index took the worst of it. The fear gauge jumped by about a third in one week.
 
 ### What's Moving Markets — The Big Stories
 
 | Story | What Happened | Why It Matters | Dad Translation |
 |-------|---------------|----------------|-----------------|
-| 🤖 **Who Pays for AI? (Part 4)** | Nobody cut spending. Microsoft spent less than feared and sat flat. Alphabet's quarterly cash flow hit **-$9.1B** and Amazon's past-year figure **-$42.4B**; Amazon tapped an **$80B** credit line | The buyers now need to borrow. That moves the risk from tech stocks toward bonds and banks | The customers are still buying everything in the store, but they've started putting it on the credit card, and investors noticed. |
-| 💻 **Intel's Warning** | A good quarter, then a forecast of **$15–16B** against about $17B expected. Intel -28.6%, AMD -10.9%, Qualcomm -11.1% on Friday | AI is soaking up the world's memory chips, so PCs and phones are running short. AMD reports Tuesday | The AI buyers bought up all the parts, so the companies that make ordinary computers can't get enough, and it's hurting them. |
-| 🏛️ **Fed vs. the Market** | The Fed held at **3.75–4.00%**, but two officials voted to raise rates. Growth was **3.4%**, inflation **3.6%**. The 10-year yield still fell to **4.929%** | The Fed says rates may need to go up. Investors are betting the AI selloff will slow things down for them. Both can't be right by December | The referee says the game is running hot. The crowd is betting it will cool off without him. |
-| 🛢️ **Oil Over $100** | December oil settled **$104.12**, over $100 on four of five days. Iran claims more tanker attacks, the U.S. says the lanes are safe, and reports describe possible strikes after the election | The Council's third warning light came on Monday. Exxon and Chevron beat on refining and hit record highs | Gas stays expensive, and that keeps inflation up. The oil majors are doing fine; nobody has confirmed what's really happening in the Gulf. |
-| 🏥 **The Safe Stuff Got Paid** | Lilly sales +39%, stock +11.3%. Regeneron +15.3%. Coca-Cola sold 5% more drinks and raised its forecast | Real earnings backed up the move into safer stocks, but those stocks are now crowded and expensive | People ran to the sturdy houses, and the sturdy houses turned out to be well built. They just aren't cheap anymore. |
+| 🗳️ **The Vote Hit AI Building** | Democrats swept Congress; Texas elected a governor who promised to halt new data centers. UBS says about **30%** of planned 2028 US data-center additions could be at risk. Tech -8.2%, chips -11.2%, Micron -22% | For a year the AI story was "how much will they spend." Now it's "where are they allowed to build" | The customers still want the factories. The question is whether the town will issue the building permits. |
+| 🛢️ **The Peace Trade** | December oil settled **$90.83**, down **$13.29**, the biggest weekly drop since 2022, on hopes of a U.S.–Iran deal. Nothing is signed and tankers are still being attacked | Cheaper gas helps shoppers and cools inflation; Marathon had a record quarter and its stock still fell **16%** | Gas should get cheaper if this holds. But it's a handshake that hasn't happened yet, and it could fall apart. |
+| 💼 **Jobs Came In Hot** | **165,000** jobs added against about 65,000 expected; unemployment **4.1%**; wages +0.4% in a month. A Fed official said higher rates are "likely to be needed" | A strong job market gives the Fed room to raise rates in December. Interest rates fell anyway because scared money ran to bonds | The economy is working fine. The worry this week came from Washington and Wall Street, not from Main Street. |
+| 💳 **Borrowing Got Pricier** | The extra interest risky companies pay rose to **3.48%**, the highest of this cycle. CoreWeave, a big AI borrower, pays over **16%** on its bonds. Cogent suspended its dividend | The AI boom runs on borrowed money, and lenders are asking for more | When the bank starts charging your neighbor more for his loan, it's because it's a little worried about getting paid back. |
+| 📺 **The Shelter Held** | Media and phone stocks rose **4.9%** (AppLovin **+71%** on a big quarter), real estate **+1.9%**, consumer stocks **+1.9%**; staples hit new highs | Money left AI and went to steadier businesses | When the storm hit one neighborhood, people moved their furniture two streets over. |
 
 ### Sector Scorecard (1-Year Trend + Week)
 
 | Sector | Trend | 1Y Return | Week Return | Signal |
 |--------|-------|-----------|-------------|--------|
-| 🔥 Energy | Leading | +62.5% | +1.00% | New one-year high; Exxon and Chevron beat while the pure refiners fell 7–9% in a day; the line is a weekly close under $66.29 |
-| 🔥 Semiconductors | Leading | +44.4% | -0.89% | Up 7.7% in three days, then -7.0% Friday; the low went through the 200-day and the close held it by $2.99 ($519.50) |
-| 🔥 Healthcare | Leading | +29.8% | +3.12% | Two-year closing high; 13 of 14 big names rose; stretched, RSI 72.6; line moves up to $181.30 |
-| 🔥 Materials | Leading | +24.8% | +2.79% | Builders and chemicals up, gold miners down; 68 cents from a one-year high |
-| 🟡 Technology | Middling | +19.9% | -2.03% | Lowest close since Aug 3; -4.9% Friday; needs $189.60 on real volume |
-| 🟡 Consumer Staples | Middling | +19.7% | +1.31% | Coca-Cola, Colgate and Altria delivered; new intraday high $90.38, faded; 57 cents under its closing high |
-| 🟡 Financials | Middling | +9.2% | +1.09% | Fourth up week and a breakout Thursday; Mastercard at a two-year high; Bank of America and Schwab at lows no one can explain |
-| 🟡 Industrials | Middling | +8.9% | +1.69% | 13 of 17 rose, but Caterpillar is at a January low; a seventh week under the 200-day |
-| 🟡 Real Estate | Middling | +8.4% | +1.41% | First Friday over its 200-day since Sep 11, on record data-center leasing |
-| ❄️ Utilities | Lagging | -0.5% | +2.04% | Fifth up week; 17 of 18 rose; 37 cents under a 200-day that has capped 14 weeks |
-| ❄️ Consumer Discretionary | Lagging | -3.2% | +2.02% | Over its 200-day on a Friday for the first time since August, thanks to Tesla (+7.4%), not Amazon (-3.1%) |
-| ❄️ Communication Services | Lagging | -12.2% | -5.32% | New one-year low, eight down days in a row; the phone companies rose while the platforms fell |
+| 🔥 Energy | Leading | +40.7% | -12.00% | Worst week since April 2025 on the Iran-deal bet; record refiner profits ignored; long-term average $58.58 is the floor to watch |
+| 🔥 Semiconductors | Leading | +33.7% | -11.2% | Thursday's -11.2% broke its long-term average; now 11% under it |
+| 🔥 Healthcare | Leading | +28.1% | -0.04% | Two-year high Wednesday on the vote, gave it all back Thursday; still 2.7 points better than the S&P |
+| 🔥 Materials | Leading | +22.7% | -1.50% | Record highs Monday and Wednesday, then steel fell 10–20%; gold miners up 13% |
+| 🟡 Consumer Staples | Middling | +19.9% | +0.74% | New highs Monday and Wednesday; fifth up week; Sysco missed and fell 7% |
+| 🟡 Technology | Middling | +14.8% | -8.23% | Worst week since April 2025; under its long-term average for the first time since April |
+| 🟡 Financials | Middling | +9.6% | +1.15% | Record close Wednesday; Berkshire did most of the work while the big banks fell |
+| 🟡 Real Estate | Middling | +9.5% | +1.92% | Fifth up week; now ahead of the S&P for the year as mortgage rates fell to 7.18% |
+| 🟡 Industrials | Middling | +7.0% | -2.83% | Defense and AI-power names sold on the vote; new low for the move |
+| ❄️ Consumer Discretionary | Lagging | +0.3% | +1.91% | Best day since May 2025 on Wednesday; Amazon +7.9% covered Tesla's -10.4% |
+| ❄️ Utilities | Lagging | -1.8% | -0.69% | Texas data-center vote hit Vistra and Sempra; the regular power companies held |
+| ❄️ Communication Services | Lagging | -5.7% | +4.89% | Best group of the week: lost just 0.6% on the S&P's worst day |
 
-*1Y returns are the 52-week price changes in the repo's data feed (data/market_state.json, as of Oct 30).*
+*1Y returns are the 52-week price changes in the repo's data feed (data/market_state.json, as of Nov 6). Semiconductors' week is from the feed and the tech page; the chips page itself did not update.*
 
-> **Dad Translation:** Nine of twelve groups rose, led by health care and materials. The three that fell are the ones tied to the AI spending boom, and they're the ones that move the big index. Over a full year, oil and chips are still the big winners and media is the big loser.
+> **Dad Translation:** It was a lopsided week: the oil companies and the AI companies took big hits, while media, real estate and shopping stocks went up. Over a full year, oil and chips are still the biggest winners, even after this week. Media is still the year's laggard, but it was this week's best.
 
 ### Market Breadth — The Grid's Own Tape
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Sector ETFs UP on the week | **9** | XLV (+3.12%), XLB (+2.79%), XLU (+2.04%), XLY (+2.02%), XLI (+1.69%), XLRE (+1.41%), XLP (+1.31%), XLF (+1.09%), XLE (+1.00%) |
-| Sector ETFs FLAT on the week | **0** | — |
-| Sector ETFs DOWN on the week | **3** | XLC (-5.32%), XLK (-2.03%), SMH (-0.89%) |
-| Sectors above 50-day MA | **8** | XLV ($184.87 vs $171.96), XLE ($70.02 vs $64.78), XLP ($89.42 vs $84.39), XLU ($43.43 vs $41.63), XLB ($52.74 vs $50.90), XLF ($56.51 vs $55.87, **regained**), XLY ($115.38 vs $113.14, **regained**), XLRE ($43.17 vs $42.50, **regained**). Up from 5 a week ago |
-| Sectors below 50-day MA | **4** | XLK ($179.51 vs $189.60), SMH ($522.49 vs $572.62), XLC ($99.90 vs $110.56), XLI ($167.40 vs $170.51) |
-| Sectors above 200-day MA | **9** | XLK ($169.24), SMH ($519.50, by $2.99), XLF ($53.41), XLE ($58.15), XLV ($157.67), XLP ($83.58), XLB ($50.72), XLRE ($42.77, **regained**), XLY ($115.16, **regained**). Up from 7 |
-| Sectors below 200-day MA | **3** | XLC ($112.35), XLI ($172.58, 7th straight weekly close below), XLU ($43.80, 14th week, by 37 cents) |
-| Leadership concentration | **Broad in six green sectors; narrow in three** | **XLU:** 17 of 18 big names rose (WEC +4.5%, PCG +4.4%, EXC +3.9%); only Vistra fell. **XLV:** 13 of 14 rose (REGN +15.3%, LLY +11.3%, GILD +9.4%). **XLI:** 13 of 17 rose (UPS +7.1%, GE +5.7%, LMT +5.4%), with CAT and BA down about 9%. **XLF:** 13 of 17 rose (MS +3.3%, BLK +2.6%, CB +2.5%). **XLP:** 15 of 21 rose, all of the top ten (MO +5.0%, PM +4.7%). **XLRE:** 9 of 13 rose (EQIX +6.1%, DLR +4.8%, PSA +4.8%). **Narrow — XLB:** 11 of 18 rose; builders and chemicals carried it (PPG +8.1%, VMC +7.5%) while Newmont and Freeport fell. **XLE:** 6 of 11 rose; XOM, CVX and COP made it, all three refiners fell. **XLY:** Tesla's +7.4% was about 1.3 points of the fund's 2.02 |
+| Sector ETFs UP on the week | **5** | XLC (+4.89%), XLRE (+1.92%), XLY (+1.91%), XLF (+1.15%), XLP (+0.74%) |
+| Sector ETFs FLAT on the week | **1** | XLV (-0.04%) |
+| Sector ETFs DOWN on the week | **6** | XLE (-12.00%), SMH (-11.2%), XLK (-8.23%), XLI (-2.83%), XLB (-1.50%), XLU (-0.69%) |
+| Sectors above 50-day MA | **7** | XLV ($184.80 vs $173.19), XLP ($90.08 vs $84.88), XLY ($117.58 vs $113.28), XLF ($57.16 vs $55.85), XLRE ($44.00 vs $42.45), XLU ($43.13 vs $41.68), XLB ($51.95 vs $50.86). Down from 8 a week ago |
+| Sectors below 50-day MA | **5** | XLK ($164.74 vs $188.38), XLC ($104.79 vs $109.70), XLI ($162.67 vs $169.33), XLE ($61.62 vs $64.96, **lost Wednesday**), SMH ($463.96; its last published 50-day was $572.62 on Oct 30) |
+| Sectors above 200-day MA | **7** | XLV ($158.43), XLP ($83.82), XLY ($115.10), XLF ($53.52), XLRE ($42.86), XLB ($50.84), XLE ($58.58). Down from 9 |
+| Sectors below 200-day MA | **5** | XLK ($169.91, **lost Thursday**, first time since April 7), SMH ($521.76, **lost**), XLC ($112.07), XLI ($172.65, 8th weekly close below), XLU ($43.83, 15th) |
+| Leadership concentration | **Narrow in most green sectors** | **XLF:** Berkshire (+5.2%) was about 0.66 point of the fund's 1.15; eight names rose, eight fell, the big banks fell. **XLY:** Amazon (+7.9%) added about 1.7 points and Tesla (-10.4%) took about 1.95; eight of the top ten rose. **XLC:** broad, 12 of 13 rose, led by AppLovin (+71%) and Take-Two (+13%); only Meta fell. **XLRE:** 9 of 13 rose (VMRK +5.8%, SPG +4.9%, VTR +4.7%). **XLP:** 16 of 20 rose; tobacco (PM -5.2%, MO -2.5%) held it back. **XLI (down):** the three biggest gainers (3M, GE, Uber) each had their own news |
 
-> **Dad Translation:** Most neighborhoods went up, and in utilities, health care, banks and factories nearly every house rose together, which is the healthy kind. Three more groups climbed back above their short-term trend line and two more above their long-term one. The neighborhoods still under water are the ones that hold the biggest houses in town.
+> **Dad Translation:** Fewer neighborhoods went up this week, and in the ones that did, one or two big houses did most of the lifting: Berkshire in banking, Amazon in shopping. Tech and chips dropped below their long-term trend lines, which is the first time that has happened since spring. More groups are now below that line than a week ago.
 
 ### What to Watch This Week
 
 | Date | Event | What to Do |
 |------|-------|------------|
-| **Sun Nov 1** | OPEC+ meets (no change expected) · Iran's answer to Qatar due this weekend | **🟡 Moderate.** A strike or a deal moves oil at Monday's open. December oil under **$97** is the first sign the warning can clear. |
-| **Mon Nov 2** | **Factory survey (ISM) 10:00 AM** (forecast 54.7) · Bank lending survey 2:00 · Friday's credit-spread data posts · **Apple, Palantir** after the close | **🟡 Moderate.** ISM **56+** with prices **80+** puts a December hike back over 80%. The junk-bond spread gap over **2.50 points** means the money worry has spread. Apple's forecast matters most: it's now the biggest company, and its options price a **4.3%** move. |
-| **Tue Nov 3** | **Midterm elections** · Job openings 10:00 AM · Pfizer, Eaton, Marathon before · **AMD**, Amgen, Booking after | **🟡 Moderate.** If AMD blames memory shortages or weak PCs, chip stocks likely close under **$519.50**, their long-term line. No House result by Thursday's open points to a VIX close over 22. |
-| **Wed Nov 4** | ADP jobs 8:15 · **Treasury borrowing plan 8:30** · Services survey 10:00 · McDonald's, Novo, CVS, Uber · **Qualcomm, Arm** after | **🟡 Moderate.** If the Treasury signals more long-term borrowing, the 10-year goes back over **5.00%**. Services prices of **76+** are a hot sign. |
-| **Thu Nov 5** | Jobless claims (forecast 197K) · Bank of England · Fed's Hammack, Barkin, Logan · Southern, Duke, ConocoPhillips, EOG | **🟢 Watch.** Claims over **215K** means layoffs are starting. A Fed speaker saying December is "likely" puts the odds back over 80%. |
-| **Fri Nov 6** | **October jobs report 8:30 AM** (forecast +55–65K) · Consumer sentiment 10:00 · Vistra, Charter | **🔴 CRITICAL. The week's main event.** Over **150K** clears the jobs warning and makes a December hike very likely. Under **zero** is a recession scare, with hike odds under 50%. |
+| **Mon Nov 9** | **Constellation Energy** (first company to talk about the Texas data-center vote) · Occidental, Take-Two after the close · Arena picks lock 8:50 AM | **🟡 Moderate.** If Constellation says Texas won't touch existing contracts, power stocks can steady. Vistra under **$112.89** and Sempra under **$76.89** would be new one-year lows. |
+| **Tue Nov 10** | **October inflation report (CPI) 8:30 AM** (date per calendars) · Montana vote on the NorthWestern–Black Hills merger · **CoreWeave** after the close | **🔴 CRITICAL. The week's main event.** Core inflation over **0.3%** in a month keeps a December rate hike alive and could end the bond rally that has cushioned stocks. CoreWeave pays over 16% on its bonds; its report is the AI-borrowing test. |
+| **Wed Nov 11** | Weekly oil inventories (first since the price drop) · Corteva and its seed spin-off report | **🟡 Moderate.** Any signed Iran deal or a collapse of the talks matters more than the inventory number. Oil company stocks: watch the **$58.58** floor on the energy fund. |
+| **Thu Nov 12** | **Cisco and Applied Materials** after the close | **🟡 Moderate.** Applied Materials is the last big chip-equipment report before Nvidia. Tech fund needs a close back over **$169.91** on strong volume before the desks buy again. |
+| **Next week** | **Nvidia Tue Nov 17** · Home Depot, Disney Nov 17 · Lowe's, TJX, Target Nov 18 · Walmart Nov 19 | **🔴 Critical for tech.** Nvidia is 15% of the tech fund; the value desk waits for this report before buying it. |
 
 ### The Bottom Line
 
-The regime is **sticky inflation, a Fed that still leans toward a December hike, and a scare coming from Wall Street rather than Main Street**: jobs, shoppers and factories held up, and the bond rally came from people leaving AI stocks. The rotation is four weeks old and has a sharper question behind it, who funds the AI buildout, so the buyers and chipmakers fell while health care, staples, utilities and energy rose. **The single most important thing is whether the bond rally survives this week**, because it has cushioned four weeks of chip selling while oil sits at $104 and two Fed officials want a hike; Friday's credit numbers on Monday, AMD and the election Tuesday, the Treasury's plan Wednesday and jobs on Friday all test it. The Council's own book had a good week (about **+1.2%** by Friday's closes against **-0.9%** for the S&P from Monday's open, provisional until Monday's official scoring), with all five stocks above where they were bought and no practice stop-loss near. On cash, the research desks want **25–30%** while the Council's book is capped at **20%** (it holds **17.6%**); hedges stay on through the jobs report. No new long-term bonds until after the jobs report, no new AI buys until AMD reports and credit settles.
+The regime is **a hot economy hit by a political shock**: jobs, factories and shoppers look strong enough for the Fed to raise rates, while the election raised new doubts about where the AI boom can be built and pushed oil down on hopes of an Iran deal. The rotation out of AI is five weeks old and has a new reason behind it, permits instead of price tags, and the money went to media, real estate, staples and consumer names, though only a few big stocks carried most of those gains. **The single most important thing is Tuesday's inflation report**, because bonds rallied this week on fear, not on good inflation news, and a hot number could take that support away while the cost of borrowing for risky companies is at its highest of the cycle. The Council's own book had a good relative week (about **+0.5%** from Monday's open to Friday's close against **-3.2%** for the S&P over the same stretch, provisional until Monday's official scoring), with no stop-loss near. On cash, the book holds **20%** (the owner's cap); the research desks cut back this week, with no new AI buys until credit calms and inflation is out, no oil buys before a signed deal, and hedges on while the fear gauge stays over 20.
 
 *[Full synthesis →](wiki/synthesis.md) · [Economic Calendar →](wiki/economic-calendar.md) · [Canary Watch →](wiki/canary-watch.md)*
 <!-- MARKET BRIEF END -->
