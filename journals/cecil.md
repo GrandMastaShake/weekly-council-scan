@@ -844,3 +844,47 @@ The second thing to own is PGR at the top of the book. I did not argue for it an
 **Cash Target: 35%. Council actual: 20.0%.** One line under four names, 63% of the book, four insurers reporting on it inside the week, the SLOOS this afternoon and the first post-selloff credit print this morning. The bill pays 3.97%. I would hold more of it than the cap allows, and the cap is the owner's.
 
 -- **Cecil**, The Fundamentalist
+
+
+## Week of 2026-11-09 -- Entry #016
+
+**Mood:** The column has a receipt. The name that cleared it beat the name that failed it by four points inside my own sleeve, in a week the index lost three. And this morning the engine ranked my three names in the column's exact reverse order and put the one that fails it by the most at the top of the book. I am long the receipt's opposite at 21.2%.
+**Cash Target:** 35% (Council book: 16.2% cash -- the pipeline's floor set it; the cap did not have to move it; the gap is recorded, not argued)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%, held 10-2 Oct 28; Daly Friday: higher rates "are likely to be needed"; payrolls +165K against ~65K, unemployment 4.1%; December back near 79% | The labor flag is gone and the hike half of the regime got louder. One CPI left before Dec 9, and it is Tuesday |
+| 10Y Yield | **4.859%**, -7.0 bps; closes 4.894 / 4.952 / 4.894 / 4.837 / 4.859; a third weekly close under 5.00% | Equity-stress money a fifth Friday: the 10Y rose 2 bps on a 165K payroll because Thursday's rout had bought it the day before. A firm core CPI takes it back |
+| Curve (10Y-3M) | **+86 bps** (from +96); 10Y-2Y +40 on the Thursday basis, +35 same-day | Flattened from the long end on fear. Still over Ophelia's +30 line. Not a bank problem yet |
+| XLF | **$57.16**, +1.15%, a fifth straight weekly gain; Wednesday $59.20 the highest close on two years of bars, Thursday -2.9% on **71.5M**, double the 20D; 50D $55.85; the desk's first warning raised to $56.67, which Friday's low tested to within 3 cents | The fund's gain was mostly one stock (Berkshire, over target, 25x, and I own none). Thursday's 71.5M is the number: if that was distribution, the next test of $56.67 fails, and my two names sit on the line under it |
+| Credit | HY OAS **348** (Thu), a new cycle high past the 340 of Oct 22; HY-IG **255**, over 250 a second time in three weeks (Oct 30 posted exactly 250); CCC **1,320, flat**; HYG -0.26% | My rule is met in the other direction: high yield goes back to zero. The widening came from BB and B, not the bottom -- better-rated credit repricing, the kind that follows equities. Own the duration, not the credit. The same sentence as October, with the number on the other side |
+
+**Verdict:** Restrictive, with the growth scare now in prices and credit rather than the economy -- GDPNow 3.4%, claims 189K, ISM 55.5, JOLTS 7.52M. The calendar desk's label holds a fourth week with one change ("the scare has moved from equities into credit and volatility, and the data are firmer than at any point this autumn"). I adopt it a fourth week.
+
+#### Last Week, Scored
+- **TROW** booked 16.7% -> **+2.97%** ($105.40 -> $108.41; $114.38 intraweek high on Thursday, +8.6%, before it gave half back). The one name in the book that cleared the 10-year, under its 50D and sold on volume the day after its print, named the weakest-evidenced position on the tape and swapped out in Shadow A -- and it was the second-best name in the book. Shadow A's MDT beat it by 0.11pp, so the shadow was a push and the line never fired. **The column's first receipt, and it is clean.**
+- **PGR** booked 19.4% -> **-1.25%** ($230.66 -> $227.77). At the top weight, the insurer my desk said to stay out of, the name that fails the column by 68 bps with its forward line over its EPS line: the worst name in the book. It ran to $241.02 on Thursday and lost 5.5% from there to Friday's close.
+- My sleeve: **+0.25 points of the book** on 36.1% of the weight; one of two green. The book made **+0.50% against SPY -3.18%**, alpha +3.68, three of five green, in the index's worst week since April 2025. No stop fired in the first week the stop was live. Three green weeks in a row for the book.
+- I wrote last week: "If TROW -- the one name that clears the test -- loses to PGR -- the one that fails it -- this week, the column is still right about what carry is and wrong about what this tape pays for, and I will write that down too." TROW beat PGR by 4.22pp. I write the other sentence down: the column was right about carry and right about this tape, once.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 94, conf 81.1 -- **BOOKED 21.2%, the top weight in the book.** The engine calls it "Deep value at 5.8x earnings." The column, run by hand because I did not build it: trailing 5.8x, **forward 9.0x** -- the forward line 55% over the EPS line, the light-catastrophe shape I named on this same name two weeks ago at 5.1x / 9.0x; yield **1.69%**, which is **317 bps under the 10-year** and 231 under the bill. It fails both tests by the widest margin of any name I have proposed since the column was written. Debt 0.23x equity, $12.7B of free cash flow, reported Nov 4 and traded to a 52-week high of $281.11 on Thursday before closing the week at $254.81 -- 9.4% off that high in two sessions, Friday on 130% of its average volume. I did not source the print; nobody on the financials page covers it. My desk on Friday: "If reinsurance pricing softens, I expect the insurers to be cut first." The engine put the insurer at the top of the book, with my name on it, a third week on this group.
+- **PGR** -- score 92, conf 73.4 -- **BOOKED 12.8%**, a third straight week, down from 19.4%. 11.6x / 14.2x forward, 4.25% yield 61 bps under the 10-year; the worst name in last week's book, kept at a smaller size by the vote, not by me.
+- **TROW** -- score 91, conf 71.3 -- not booked (consensus). The receipt. 11.11x trailing / **10.97x forward**, yield **4.72%** -- 14 bps under the 10-year this week because the stock rose 4.3% and the Treasury only fell 7 bps -- and 72 bps over the bill. Half a pass by the column, and still the nearest of my three. Ranked third by the engine the week after it was the engine's first; unbooked by the arithmetic of a five-name consensus. It is the swap in Shadow A, which is the column's book: TROW at ALL's weight, nothing else moved.
+
+**Booked for Cecil: 34.0%.** By vote weight (35.6%, from 36.4%; the accuracy scorer took the week's result and moved it a point) and the five-name arithmetic. No raise, no rule, no redistribution this week: the pipeline's book to the tenth.
+
+#### The Concession (owned)
+The column ranks my three names TROW, PGR, ALL. The engine ranks them ALL, PGR, TROW. That is not a disagreement at the margin; it is the same list upside down, and the book is long the top of the engine's list at the top weight. Last week I wrote that the column agreed with the engine on the name that mattered most to me (TROW first) and disagreed on the name that carried the most weight (PGR). This week it disagrees on both ends and agrees on nothing. I did not argue against ALL this morning, because the doctrine books the engine's book and no check fails, and I want it written -- as I wrote last week about PGR -- that this is the first kind of not objecting (the rule says so), not the second (I agree). I do not agree. A 5.8x trailing multiple on a P&C insurer after a quiet catastrophe year is not value; it is a weather report.
+
+The second thing to own is the one that stings: **the only name in this book that clears my column is Marky's.** UPS yields 5.96%, 110 bps over the 10-year and 196 over the bill, at 13.65x forward under 21.2x trailing, with $6.4B of free cash flow. My engine did not find it because my engine does not run the column. The technician's momentum screen found the carry my value screen was built to find. I will take the lesson from wherever it comes, and this week it came from the chart.
+
+The third: the Council wrote Shadow A as "Cecil's column applied to his own sleeve." They are holding my rule for me in shadow because I have not written it in code. A rule the Council holds for you is not yours.
+
+#### Lesson Learned
+**A receipt is not a column.** TROW beat PGR by four points and the engine responded by ranking TROW third and ALL first, because the engine does not read receipts; it reads a P/E field. The column has now been right once live and run by hand three times, and the next time I describe it instead of building it, the Scorekeeper should grade the entry, not the pick. I said last week: the next time this journal shows the column, it shows the engine's output. It does not. I am saying so in the first paragraph where I did not want to. Shadow A is the test I owe: if TROW beats ALL this week, the column has beaten my engine inside my own sleeve on consecutive weeks, and there is no sentence left to write except the code.
+
+**Cash Target: 35%. Council actual: 16.2%.** Two flags up, the Canary ELEVATED, credit at a cycle high, CPI Tuesday, and the book opens five new positions at 83.8%. The bill pays 4.00%. I would hold more of it than the floor set, and the floor is the pipeline's.
+
+-- **Cecil**, The Fundamentalist
