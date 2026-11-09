@@ -2,11 +2,13 @@ week: '2026-11-02'
 lock: 2026-11-02 08:50 ET
 entry_date: '2026-11-02'
 exit_date: '2026-11-06'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 759.45
   entry_price_source: open
+  exit_price: 735.29
+  return_pct: -3.18
 players:
 - player: GrandMastaShake
   valid: true
@@ -15,24 +17,36 @@ players:
   picks:
   - ticker: MSFT
     weight: 0.2
-    entry_price: 524.1
+    entry_price: 524.02
     entry_price_source: open
+    exit_price: 530.61
+    return_pct: 1.26
   - ticker: RSP
     weight: 0.2
     entry_price: 219.54
     entry_price_source: open
+    exit_price: 216.05
+    return_pct: -1.59
   - ticker: MCO
     weight: 0.15
     entry_price: 497.48
     entry_price_source: open
+    exit_price: 505.67
+    return_pct: 1.65
   - ticker: TSM
     weight: 0.1
     entry_price: 412.52
     entry_price_source: open
+    exit_price: 375.44
+    return_pct: -8.99
   - ticker: ELV
     weight: 0.1
     entry_price: 421.34
     entry_price_source: open
+    exit_price: 425.62
+    return_pct: 1.02
+  weekly_return_pct: -0.62
+  alpha_vs_spy_pct: 2.56
 - player: Umassalum
   valid: true
   total_weight: 0.8
@@ -42,35 +56,55 @@ players:
     weight: 0.05
     entry_price: 342.67
     entry_price_source: open
+    exit_price: 342.37
+    return_pct: -0.09
   - ticker: AMZN
     weight: 0.05
-    entry_price: 243.085
+    entry_price: 243.01
     entry_price_source: open
+    exit_price: 259.3
+    return_pct: 6.7
   - ticker: DT
     weight: 0.1
     entry_price: 57.75
     entry_price_source: open
+    exit_price: 43.44
+    return_pct: -24.78
   - ticker: GTLB
     weight: 0.1
-    entry_price: 54.075
+    entry_price: 54.135
     entry_price_source: open
+    exit_price: 48.09
+    return_pct: -11.17
   - ticker: HYG
     weight: 0.1
     entry_price: 77.18
     entry_price_source: open
+    exit_price: 77.23
+    return_pct: 0.06
   - ticker: LLY
     weight: 0.15
     entry_price: 1393.15
     entry_price_source: open
+    exit_price: 1354.0
+    return_pct: -2.81
   - ticker: SPCX
     weight: 0.1
-    entry_price: 137.04
+    entry_price: 137.01
     entry_price_source: open
+    exit_price: 134.27
+    return_pct: -2.0
   - ticker: SPY
     weight: 0.05
     entry_price: 759.45
     entry_price_source: open
+    exit_price: 735.29
+    return_pct: -3.18
   - ticker: TSLA
     weight: 0.1
-    entry_price: 404.74
+    entry_price: 404.66
     entry_price_source: open
+    exit_price: 358.22
+    return_pct: -11.48
+  weekly_return_pct: -5.19
+  alpha_vs_spy_pct: -2.01

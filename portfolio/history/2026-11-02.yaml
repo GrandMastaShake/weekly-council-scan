@@ -1,5 +1,5 @@
 week: '2026-11-02'
-status: open
+status: closed
 positions:
 - ticker: PGR
   weight: 0.19399999999999998
@@ -11,13 +11,15 @@ positions:
   stop_loss: 219.13
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 227.77000427246094
+  exit_date: '2026-11-06'
+  exit_reason: week_end
+  pnl_pct: -1.25
   tier: CORE
   stop_pct: -5.0
+  entry_price_adjusted: 230.66000366210938
+  return_basis: total_return_same_snapshot
 - ticker: LIN
   weight: 0.16899999999999998
   sponsor: Marky
@@ -28,13 +30,15 @@ positions:
   stop_loss: 493.79
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 515.25
+  exit_date: '2026-11-06'
+  exit_reason: week_end
+  pnl_pct: -0.79
   tier: CORE
   stop_pct: -5.0
+  entry_price_adjusted: 519.3400268554688
+  return_basis: total_return_same_snapshot
 - ticker: TROW
   weight: 0.16699999999999998
   sponsor: Cecil
@@ -45,13 +49,15 @@ positions:
   stop_loss: 100.13
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 108.41000366210938
+  exit_date: '2026-11-06'
+  exit_reason: week_end
+  pnl_pct: 2.97
   tier: CORE
   stop_pct: -5.0
+  entry_price_adjusted: 105.27999877929688
+  return_basis: total_return_same_snapshot
 - ticker: SPGI
   weight: 0.163
   sponsor: Ophelia
@@ -62,13 +68,15 @@ positions:
   stop_loss: 442.19
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 467.79998779296875
+  exit_date: '2026-11-06'
+  exit_reason: week_end
+  pnl_pct: 0.25
   tier: CORE
   stop_pct: -5.0
+  entry_price_adjusted: 466.6199951171875
+  return_basis: total_return_same_snapshot
 - ticker: AON
   weight: 0.107
   sponsor: Ophelia
@@ -79,13 +87,15 @@ positions:
   stop_loss: 308.17
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 334.80999755859375
+  exit_date: '2026-11-06'
+  exit_reason: week_end
+  pnl_pct: 3.21
   tier: CORE
   stop_pct: -5.0
+  entry_price_adjusted: 324.3900146484375
+  return_basis: total_return_same_snapshot
 spy_entry: 759.4500122070312
 spy_entry_source: open
 vix_at_entry: 19.42
@@ -99,3 +109,12 @@ fed_stance: 'Tightening. The FOMC held 3.75-4.00% on 2026-10-28 by 10-2, with Co
   = "Hike", policy.next_macro_gate; wiki/economic-calendar.md Oct 28 and Oct 30 rows).'
 total_weight: 0.7999999999999999
 cash_weight: 0.20000000000000007
+spy_entry_adjusted: 759.4500122070312
+spy_return_basis: total_return_same_snapshot
+stops_fired: []
+weighted_return: 0.5
+spy_return: -3.18
+alpha: 3.68
+spy_exit: 735.2899780273438
+close_date: '2026-11-06'
+hit_rate: 0.6
