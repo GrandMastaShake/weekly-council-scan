@@ -2,9 +2,9 @@
 
 Registered 2026-10-12 as Pass 30 (`lab/README.md`, 36545ad). Flagged beats (a positive surprise after 8 or more positive quarters) against the other beats of the same reaction week, on the five-day market-adjusted return R5, for reports with a reaction day on or after 2026-07-06. `lab/forward_beatfall.py` rebuilds this page from the append-only `lab/beatfall_events.json`; edits by hand are overwritten.
 
-Last run: 2026-11-02 12:24. Latest bar: 2026-11-02. Events in the ledger: 632.
+Last run: 2026-11-11 17:21. Latest bar: 2026-11-11. Events in the ledger: 886.
 
-**Status: too early (7 qualifying weeks; 12 are needed).** Mean weekly gap +2.11% (no t before 8 qualifying weeks: it means nothing on so few), halves +2.63% / +1.72%, median +2.60%.
+**Status: too early (8 qualifying weeks; 12 are needed).** Mean weekly gap +1.36% (Newey-West t +1.29), halves +2.90% / -0.17%, median +2.10%.
 
 | Reaction week | Events | Flagged beats | Other beats | R5 gap (flagged minus other beats) | R1 gap | Versus all other events | D20 gap |
 |---|---|---|---|---|---|---|---|
@@ -13,13 +13,14 @@ Last run: 2026-11-02 12:24. Latest bar: 2026-11-02. Events in the ledger: 632.
 | 2026-07-27 | 174 | 56 | 93 | +4.30% | +2.57% | +4.39% | +1.33% |
 | 2026-08-03 | 133 | 47 | 67 | +3.69% | +2.85% | +3.65% | +0.02% |
 | 2026-08-24 | 19 | 7 | 12 | +1.59% | +6.61% | +1.59% | -8.96% |
-| 2026-10-12 | 25 | 9 | 12 | +2.73% | +2.82% | +2.93% | -- |
+| 2026-10-12 | 25 | 9 | 12 | +2.73% | +2.82% | +2.93% | -2.05% |
 | 2026-10-19 | 76 | 25 | 37 | -1.13% | -0.25% | -0.18% | -- |
+| 2026-10-26 | 172 | 49 | 93 | -3.89% | -1.32% | -3.56% | -- |
 
 Weeks below the floors (not counted): 2026-07-06 (2 events, 0 flagged, 1 other beats); 2026-08-10 (14 events, 7 flagged, 6 other beats); 2026-08-17 (12 events, 5 flagged, 7 other beats); 2026-08-31 (6 events, 3 flagged, 3 other beats); 2026-09-07 (6 events, 3 flagged, 2 other beats); 2026-09-14 (1 events, 0 flagged, 0 other beats); 2026-09-21 (6 events, 1 flagged, 4 other beats); 2026-09-28 (7 events, 5 flagged, 2 other beats); 2026-10-05 (3 events, 0 flagged, 2 other beats).
 
-Weeks whose reaction windows are still open: 2026-10-26.
+Weeks whose reaction windows are still open: 2026-11-02.
 
-Reported, never decisive: R1 +2.45%; D20 -1.48%; versus all other events +2.41%. By surprise band: 0-5% +4.04% (6 weeks); 5-10% +1.14% (6 weeks); 10-20% -0.81% (7 weeks); 20-up% +1.16% (6 weeks).
+Reported, never decisive: R1 +1.98%; D20 -1.58%; versus all other events +1.66%. By surprise band: 0-5% +2.64% (7 weeks); 5-10% +0.51% (7 weeks); 10-20% -1.31% (8 weeks); 20-up% +1.18% (7 weeks).
 
 Rule: confirmed at 12 or more qualifying weeks if the mean is -0.3% or lower, the Newey-West t is -2 or lower, both halves and the median are negative; rejected at 12 or more if the mean is 0 or higher; otherwise it keeps running to 24.
