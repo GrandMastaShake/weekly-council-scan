@@ -1,0 +1,100 @@
+week: '2026-11-09'
+status: open
+positions:
+- ticker: ALL
+  weight: 0.212
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 256.6400146484375
+  entry_date: '2026-11-09'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 243.81
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: NEE
+  weight: 0.195
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 87.61000061035156
+  entry_date: '2026-11-09'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 83.23
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: UPS
+  weight: 0.184
+  sponsor: Marky
+  thesis: ''
+  entry_price: 109.7699966430664
+  entry_date: '2026-11-09'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 104.28
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: PGR
+  weight: 0.128
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 229.0399932861328
+  entry_date: '2026-11-09'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 217.59
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: D
+  weight: 0.11900000000000001
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 69.18000030517578
+  entry_date: '2026-11-09'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 65.72
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 741.9500122070312
+spy_entry_source: open
+vix_at_entry: 25.64
+fed_stance: 'Tightening. The FOMC held 3.75-4.00% on 2026-10-28 by 10-2, with Cook
+  and Hammack dissenting for a +25bp hike, after the +25bp hike of 2026-09-16 (12-0;
+  16 of 18 dots see another 2026 hike); Daly on Friday Nov 6: higher rates "are likely
+  to be needed"; October payrolls +165K against ~65K put the December hike back near
+  79% (macro/facts.json policy.fed_stance = "Hike", policy.next_macro_gate; wiki/economic-calendar.md
+  Regime Risk Flags and Council Read). A hiking cycle on hold with a hawkish bias
+  and one CPI (Tue Nov 10) left before the Dec 9 decision.'
+total_weight: 0.838
+cash_weight: 0.16200000000000003
