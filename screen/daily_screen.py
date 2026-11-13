@@ -20,7 +20,7 @@
 # universe comes back small or prices cover less than half of it (an empty
 # report must never be committed as a quiet day); a report that already
 # exists is not redone; a throttled price batch is retried in halves.
-import json, math, os, sys, time, datetime, statistics, urllib.request
+import json, math, os, sys, time, datetime, statistics, urllib.error, urllib.parse, urllib.request
 
 NAME = "The Butterfly Net"
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
@@ -82,22 +82,65 @@ def reg_z(y):
     sd = (sum(t * t for t in r) / (n - 2)) ** 0.5
     return b, (r[-1] / sd if sd else 0.0)
 
-def universe():
-    d = get("https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true")
-    rows = (d or {}).get("data", {}).get("rows", []) or []
+# The listing (who is in the universe, with cap, price, volume, sector).
+# Since 2026-11-12 it comes from Financial Modeling Prep's company screener
+# when the FMP_API_KEY secret is set: Nasdaq's listing API stopped answering
+# the GitHub runner on 2026-11-10 and every run since failed on it. Without
+# the key the run reads Nasdaq's listing as before.
+FMP_SCREENER = "https://financialmodelingprep.com/stable/company-screener"
+LISTING_ERROR = [""]                # why the listing came back empty, for the failure line
+
+def _num(x):
+    return float(str(x if x is not None else 0).replace("$", "").replace(",", "") or 0)
+
+def _keep(U, s, mc, px, vol, sector, industry):
+    if not s or any(ch in s for ch in "^/ "): return
+    if CAP_MIN <= mc <= CAP_MAX and px >= PRICE_MIN and px * vol >= DOLLAR_VOL_MIN:
+        U[s] = dict(mc=mc, sector=sector or "", industry=industry or "")
+
+def _universe_fmp(key):
+    """US-listed common stocks (NASDAQ, NYSE, AMEX; no ETFs or funds) from FMP's screener."""
+    q = urllib.parse.urlencode(dict(
+        marketCapMoreThan=int(CAP_MIN), marketCapLowerThan=int(CAP_MAX), priceMoreThan=PRICE_MIN,
+        exchange="NASDAQ,NYSE,AMEX", isEtf="false", isFund="false", isActivelyTrading="true",
+        limit=10000, apikey=key))
+    try:
+        req = urllib.request.Request(FMP_SCREENER + "?" + q, headers={"Accept": "application/json"})
+        rows = json.load(urllib.request.urlopen(req, timeout=60))
+    except urllib.error.HTTPError as e:
+        LISTING_ERROR[0] = "FMP screener answered HTTP %d (%s)" % (e.code, e.read()[:200].decode("ascii", "replace"))
+        return {}
+    except Exception as e:
+        LISTING_ERROR[0] = "FMP screener: %s" % type(e).__name__
+        return {}
+    if not isinstance(rows, list):
+        LISTING_ERROR[0] = "FMP screener answered: %s" % str(rows)[:200]
+        return {}
     U = {}
     for r in rows:
-        s = r.get("symbol", "")
-        if not s or any(ch in s for ch in "^/ "): continue
         try:
-            mc = float(r.get("marketCap") or 0)
-            px = float(str(r.get("lastsale", "0")).replace("$", "").replace(",", ""))
-            vol = float(r.get("volume") or 0)
+            _keep(U, r.get("symbol", ""), _num(r.get("marketCap")), _num(r.get("price")),
+                  _num(r.get("volume")), r.get("sector"), r.get("industry"))
         except ValueError:
             continue
-        if CAP_MIN <= mc <= CAP_MAX and px >= PRICE_MIN and px * vol >= DOLLAR_VOL_MIN:
-            U[s] = dict(mc=mc, sector=r.get("sector", "") or "", industry=r.get("industry", "") or "")
     return U
+
+def _universe_nasdaq():
+    d = get("https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true")
+    rows = (d or {}).get("data", {}).get("rows", []) or []
+    if not rows: LISTING_ERROR[0] = "Nasdaq listing gave no rows"
+    U = {}
+    for r in rows:
+        try:
+            _keep(U, r.get("symbol", ""), _num(r.get("marketCap")), _num(r.get("lastsale")),
+                  _num(r.get("volume")), r.get("sector"), r.get("industry"))
+        except ValueError:
+            continue
+    return U
+
+def universe():
+    key = os.environ.get("FMP_API_KEY", "").strip()
+    return _universe_fmp(key) if key else _universe_nasdaq()
 
 def _spark(batch, now_et):
     """{symbol: (closes, date of the last close)}; a bar for a session still open is dropped."""
@@ -167,7 +210,7 @@ def flags(meta):
     f = []
     if "Real Estate" in s or "bank" in ind or "savings institution" in ind or "reit" in ind or "real estate investment" in ind:
         f.append("RATE-SENSITIVE")
-    if "biotech" in ind or "pharmaceutical" in ind: f.append("BIOTECH")
+    if "biotech" in ind or "pharmaceutical" in ind or "drug manufacturers" in ind: f.append("BIOTECH")
     return f
 
 def summary(stamp, through, rows, screened, cols):
@@ -207,7 +250,7 @@ def main():
     t0 = time.time()
     U = universe()
     if not U:
-        print("ERROR: universe download failed."); sys.exit(1)
+        print("ERROR: universe download failed: %s." % (LISTING_ERROR[0] or "no names passed the rules")); sys.exit(1)
     if len(U) < MIN_UNIVERSE and not force:
         print("ERROR: universe has %d names (under %d): the listing's volume looks partial." % (len(U), MIN_UNIVERSE)); sys.exit(1)
     P = prices(sorted(U), now_et)
