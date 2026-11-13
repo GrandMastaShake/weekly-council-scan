@@ -83,10 +83,13 @@ def reg_z(y):
     return b, (r[-1] / sd if sd else 0.0)
 
 # The listing (who is in the universe, with cap, price, volume, sector).
-# Since 2026-11-12 it comes from Financial Modeling Prep's company screener
-# when the FMP_API_KEY secret is set: Nasdaq's listing API stopped answering
-# the GitHub runner on 2026-11-10 and every run since failed on it. Without
-# the key the run reads Nasdaq's listing as before.
+# Nasdaq's listing API stopped answering the GitHub runner on 2026-11-10 and
+# every run since failed on it. Since 2026-11-12 the run reads, in order:
+# the owner's Finviz Elite screener export when FINVIZ_API_KEY is set,
+# Financial Modeling Prep's company screener when FMP_API_KEY is set, and
+# Nasdaq's listing otherwise.
+FINVIZ_EXPORT = "https://elite.finviz.com/export.ashx"
+FINVIZ_FILTERS = "cap_smallover,sh_price_o3,ind_stocksonly"   # over $300M, over $3, no funds
 FMP_SCREENER = "https://financialmodelingprep.com/stable/company-screener"
 LISTING_ERROR = [""]                # why the listing came back empty, for the failure line
 
@@ -97,6 +100,40 @@ def _keep(U, s, mc, px, vol, sector, industry):
     if not s or any(ch in s for ch in "^/ "): return
     if CAP_MIN <= mc <= CAP_MAX and px >= PRICE_MIN and px * vol >= DOLLAR_VOL_MIN:
         U[s] = dict(mc=mc, sector=sector or "", industry=industry or "")
+
+def _universe_finviz(key):
+    """US-listed stocks (NASDAQ, NYSE, AMEX) from the owner's Finviz Elite screener export (CSV)."""
+    import csv, io
+    q = urllib.parse.urlencode(dict(v="111", f=FINVIZ_FILTERS, auth=key))
+    text = None
+    for i in range(3):
+        try:
+            req = urllib.request.Request(FINVIZ_EXPORT + "?" + q, headers={"Accept": "text/csv"})
+            text = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+            break
+        except urllib.error.HTTPError as e:
+            LISTING_ERROR[0] = "Finviz export answered HTTP %d" % e.code
+            if e.code != 429: return {}
+            time.sleep(6)                   # Elite allows 10 requests per rolling 5 seconds
+        except Exception as e:
+            LISTING_ERROR[0] = "Finviz export: %s" % type(e).__name__
+            time.sleep(2 + 2 * i)
+    if text is None: return {}
+    rows = list(csv.DictReader(io.StringIO(text.lstrip("\ufeff"))))
+    if not rows or "Ticker" not in rows[0]:
+        LISTING_ERROR[0] = "Finviz export was not a screener CSV (is the token right?)"
+        return {}
+    caps = sorted(_num(r.get("Market Cap")) for r in rows if r.get("Market Cap"))
+    scale = 1e6 if caps and caps[len(caps) // 2] < 1e6 else 1.0   # the export gives the cap in millions
+    U = {}
+    for r in rows:
+        if "exchange traded fund" in (r.get("Industry") or "").lower(): continue
+        try:
+            _keep(U, r.get("Ticker", ""), _num(r.get("Market Cap")) * scale, _num(r.get("Price")),
+                  _num(r.get("Volume")), r.get("Sector"), r.get("Industry"))
+        except ValueError:
+            continue
+    return U
 
 def _universe_fmp(key):
     """US-listed common stocks (NASDAQ, NYSE, AMEX; no ETFs or funds) from FMP's screener."""
@@ -139,8 +176,10 @@ def _universe_nasdaq():
     return U
 
 def universe():
-    key = os.environ.get("FMP_API_KEY", "").strip()
-    return _universe_fmp(key) if key else _universe_nasdaq()
+    finviz = os.environ.get("FINVIZ_API_KEY", "").strip()
+    if finviz: return _universe_finviz(finviz)
+    fmp = os.environ.get("FMP_API_KEY", "").strip()
+    return _universe_fmp(fmp) if fmp else _universe_nasdaq()
 
 def _spark(batch, now_et):
     """{symbol: (closes, date of the last close)}; a bar for a session still open is dropped."""

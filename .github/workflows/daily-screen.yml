@@ -52,6 +52,7 @@ jobs:
 
       - name: Cast the net
         env:
+          FINVIZ_API_KEY: ${{ secrets.FINVIZ_API_KEY }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
         run: python screen/daily_screen.py ${{ inputs.force && '--force' || '' }}
 

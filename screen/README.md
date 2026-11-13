@@ -30,16 +30,20 @@ names are excluded; biotech is flagged.
 
 ## Where the listing comes from
 
-- Since 2026-11-12 the universe (cap, price, volume, sector) comes from
-  Financial Modeling Prep's company screener, read with the repository
-  secret `FMP_API_KEY`. Nasdaq's listing API stopped answering the GitHub
-  runner on 2026-11-10, and every run from that evening failed on it.
-- Without the secret the script reads Nasdaq's listing as before, so a run
-  by hand on a machine Nasdaq still answers needs no key.
-- FMP names sectors and industries its own way ("Healthcare", "Banks -
-  Regional", "Drug Manufacturers - ..."), so a report from FMP reads a
-  little differently from a Nasdaq one; the BIOTECH flag also catches
-  "Drug Manufacturers" for that reason.
+- Nasdaq's listing API stopped answering the GitHub runner on 2026-11-10,
+  and every run from that evening failed on it. Since 2026-11-12 the
+  script reads the universe (cap, price, volume, sector, industry) from the
+  first source it has a key for, in the repository's Actions secrets:
+  1. `FINVIZ_API_KEY`: the owner's Finviz Elite screener export (the token
+     under API and Exports in the Finviz account), filtered to stocks over
+     $300M and over $3.
+  2. `FMP_API_KEY`: Financial Modeling Prep's company screener.
+  3. Neither: Nasdaq's listing as before, so a run by hand on a machine
+     Nasdaq still answers needs no key.
+- Finviz and FMP name sectors and industries their own way ("Healthcare",
+  "Banks - Regional", "Drug Manufacturers - ..."), so a report from them
+  reads a little differently from a Nasdaq one; the BIOTECH flag also
+  catches "Drug Manufacturers" for that reason.
 
 ## Where to see it
 
