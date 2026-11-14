@@ -20,7 +20,7 @@
 # universe comes back small or prices cover less than half of it (an empty
 # report must never be committed as a quiet day); a report that already
 # exists is not redone; a throttled price batch is retried in halves.
-import json, math, os, sys, time, datetime, statistics, urllib.request
+import json, math, os, sys, time, datetime, statistics, urllib.error, urllib.parse, urllib.request
 
 NAME = "The Butterfly Net"
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
@@ -82,22 +82,104 @@ def reg_z(y):
     sd = (sum(t * t for t in r) / (n - 2)) ** 0.5
     return b, (r[-1] / sd if sd else 0.0)
 
-def universe():
-    d = get("https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true")
-    rows = (d or {}).get("data", {}).get("rows", []) or []
+# The listing (who is in the universe, with cap, price, volume, sector).
+# Nasdaq's listing API stopped answering the GitHub runner on 2026-11-10 and
+# every run since failed on it. Since 2026-11-12 the run reads, in order:
+# the owner's Finviz Elite screener export when FINVIZ_API_KEY is set,
+# Financial Modeling Prep's company screener when FMP_API_KEY is set, and
+# Nasdaq's listing otherwise.
+FINVIZ_EXPORT = "https://elite.finviz.com/export.ashx"
+FINVIZ_FILTERS = "cap_smallover,sh_price_o3,ind_stocksonly"   # over $300M, over $3, no funds
+FMP_SCREENER = "https://financialmodelingprep.com/stable/company-screener"
+LISTING_ERROR = [""]                # why the listing came back empty, for the failure line
+
+def _num(x):
+    return float(str(x if x is not None else 0).replace("$", "").replace(",", "") or 0)
+
+def _keep(U, s, mc, px, vol, sector, industry):
+    if not s or any(ch in s for ch in "^/ "): return
+    if CAP_MIN <= mc <= CAP_MAX and px >= PRICE_MIN and px * vol >= DOLLAR_VOL_MIN:
+        U[s] = dict(mc=mc, sector=sector or "", industry=industry or "")
+
+def _universe_finviz(key):
+    """US-listed stocks (NASDAQ, NYSE, AMEX) from the owner's Finviz Elite screener export (CSV)."""
+    import csv, io
+    q = urllib.parse.urlencode(dict(v="111", f=FINVIZ_FILTERS, auth=key))
+    text = None
+    for i in range(3):
+        try:
+            req = urllib.request.Request(FINVIZ_EXPORT + "?" + q, headers={"Accept": "text/csv"})
+            text = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+            break
+        except urllib.error.HTTPError as e:
+            LISTING_ERROR[0] = "Finviz export answered HTTP %d" % e.code
+            if e.code != 429: return {}
+            time.sleep(6)                   # Elite allows 10 requests per rolling 5 seconds
+        except Exception as e:
+            LISTING_ERROR[0] = "Finviz export: %s" % type(e).__name__
+            time.sleep(2 + 2 * i)
+    if text is None: return {}
+    rows = list(csv.DictReader(io.StringIO(text.lstrip("\ufeff"))))
+    if not rows or "Ticker" not in rows[0]:
+        LISTING_ERROR[0] = "Finviz export was not a screener CSV (is the token right?)"
+        return {}
+    caps = sorted(_num(r.get("Market Cap")) for r in rows if r.get("Market Cap"))
+    scale = 1e6 if caps and caps[len(caps) // 2] < 1e6 else 1.0   # the export gives the cap in millions
     U = {}
     for r in rows:
-        s = r.get("symbol", "")
-        if not s or any(ch in s for ch in "^/ "): continue
+        if "exchange traded fund" in (r.get("Industry") or "").lower(): continue
         try:
-            mc = float(r.get("marketCap") or 0)
-            px = float(str(r.get("lastsale", "0")).replace("$", "").replace(",", ""))
-            vol = float(r.get("volume") or 0)
+            _keep(U, r.get("Ticker", ""), _num(r.get("Market Cap")) * scale, _num(r.get("Price")),
+                  _num(r.get("Volume")), r.get("Sector"), r.get("Industry"))
         except ValueError:
             continue
-        if CAP_MIN <= mc <= CAP_MAX and px >= PRICE_MIN and px * vol >= DOLLAR_VOL_MIN:
-            U[s] = dict(mc=mc, sector=r.get("sector", "") or "", industry=r.get("industry", "") or "")
     return U
+
+def _universe_fmp(key):
+    """US-listed common stocks (NASDAQ, NYSE, AMEX; no ETFs or funds) from FMP's screener."""
+    q = urllib.parse.urlencode(dict(
+        marketCapMoreThan=int(CAP_MIN), marketCapLowerThan=int(CAP_MAX), priceMoreThan=PRICE_MIN,
+        exchange="NASDAQ,NYSE,AMEX", isEtf="false", isFund="false", isActivelyTrading="true",
+        limit=10000, apikey=key))
+    try:
+        req = urllib.request.Request(FMP_SCREENER + "?" + q, headers={"Accept": "application/json"})
+        rows = json.load(urllib.request.urlopen(req, timeout=60))
+    except urllib.error.HTTPError as e:
+        LISTING_ERROR[0] = "FMP screener answered HTTP %d (%s)" % (e.code, e.read()[:200].decode("ascii", "replace"))
+        return {}
+    except Exception as e:
+        LISTING_ERROR[0] = "FMP screener: %s" % type(e).__name__
+        return {}
+    if not isinstance(rows, list):
+        LISTING_ERROR[0] = "FMP screener answered: %s" % str(rows)[:200]
+        return {}
+    U = {}
+    for r in rows:
+        try:
+            _keep(U, r.get("symbol", ""), _num(r.get("marketCap")), _num(r.get("price")),
+                  _num(r.get("volume")), r.get("sector"), r.get("industry"))
+        except ValueError:
+            continue
+    return U
+
+def _universe_nasdaq():
+    d = get("https://api.nasdaq.com/api/screener/stocks?tableonly=true&download=true")
+    rows = (d or {}).get("data", {}).get("rows", []) or []
+    if not rows: LISTING_ERROR[0] = "Nasdaq listing gave no rows"
+    U = {}
+    for r in rows:
+        try:
+            _keep(U, r.get("symbol", ""), _num(r.get("marketCap")), _num(r.get("lastsale")),
+                  _num(r.get("volume")), r.get("sector"), r.get("industry"))
+        except ValueError:
+            continue
+    return U
+
+def universe():
+    finviz = os.environ.get("FINVIZ_API_KEY", "").strip()
+    if finviz: return _universe_finviz(finviz)
+    fmp = os.environ.get("FMP_API_KEY", "").strip()
+    return _universe_fmp(fmp) if fmp else _universe_nasdaq()
 
 def _spark(batch, now_et):
     """{symbol: (closes, date of the last close)}; a bar for a session still open is dropped."""
@@ -167,7 +249,7 @@ def flags(meta):
     f = []
     if "Real Estate" in s or "bank" in ind or "savings institution" in ind or "reit" in ind or "real estate investment" in ind:
         f.append("RATE-SENSITIVE")
-    if "biotech" in ind or "pharmaceutical" in ind: f.append("BIOTECH")
+    if "biotech" in ind or "pharmaceutical" in ind or "drug manufacturers" in ind: f.append("BIOTECH")
     return f
 
 def summary(stamp, through, rows, screened, cols):
@@ -207,7 +289,7 @@ def main():
     t0 = time.time()
     U = universe()
     if not U:
-        print("ERROR: universe download failed."); sys.exit(1)
+        print("ERROR: universe download failed: %s." % (LISTING_ERROR[0] or "no names passed the rules")); sys.exit(1)
     if len(U) < MIN_UNIVERSE and not force:
         print("ERROR: universe has %d names (under %d): the listing's volume looks partial." % (len(U), MIN_UNIVERSE)); sys.exit(1)
     P = prices(sorted(U), now_et)
