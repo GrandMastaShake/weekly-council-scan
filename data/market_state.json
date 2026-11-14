@@ -1,76 +1,76 @@
 {
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-13",
   "commodities": {
     "GOLD": {
       "contract": "GCX26",
-      "d13w": -6.4,
-      "d1w": 4.6,
-      "d4w": -3.0,
-      "d52w": 1.6,
-      "pctile_2y": 56,
-      "px": 4064.5
+      "d13w": -11.4,
+      "d1w": -4.5,
+      "d4w": -6.7,
+      "d52w": -5.1,
+      "pctile_2y": 47,
+      "px": 3879.7
     },
     "SILVER": {
       "contract": "SIX26",
-      "d13w": -18.2,
-      "d1w": 5.5,
-      "d4w": -14.6,
-      "d52w": 7.9,
-      "pctile_2y": 53,
-      "px": 51.8
+      "d13w": -24.6,
+      "d1w": -5.4,
+      "d4w": -14.0,
+      "d52w": -3.1,
+      "pctile_2y": 48,
+      "px": 49.03
     },
     "WTI": {
       "contract": "CLZ26",
-      "d13w": 16.2,
-      "d1w": -12.8,
-      "d4w": -1.1,
-      "d52w": 52.0,
-      "pctile_2y": 80,
-      "px": 90.83
+      "d13w": 7.5,
+      "d1w": -2.5,
+      "d4w": -12.7,
+      "d52w": 47.4,
+      "pctile_2y": 77,
+      "px": 88.56
     }
   },
   "fx": {
     "DXY": {
-      "d13w": 2.7,
-      "d1w": 0.4,
-      "d4w": 0.1,
-      "d52w": 2.7,
-      "pctile_2y": 79,
-      "px": 102.3
+      "d13w": 3.8,
+      "d1w": 1.1,
+      "d4w": 1.5,
+      "d52w": 4.2,
+      "pctile_2y": 81,
+      "px": 103.41
     }
   },
   "index": {
     "DIA": {
-      "d13w": -5.1,
-      "d1w": -0.9,
-      "d4w": -0.8,
-      "d52w": 10.2,
-      "pctile_2y": 81,
-      "px": 512.22
+      "d13w": -2.5,
+      "d1w": 2.1,
+      "d4w": 0.8,
+      "d52w": 12.1,
+      "pctile_2y": 90,
+      "px": 523.15
     },
     "IWM": {
-      "d13w": -9.2,
-      "d1w": -2.0,
-      "d4w": -1.9,
-      "d52w": 14.1,
-      "pctile_2y": 72,
-      "px": 273.67
+      "d13w": -9.0,
+      "d1w": 1.4,
+      "d4w": 2.6,
+      "d52w": 17.7,
+      "pctile_2y": 76,
+      "px": 277.54
     },
     "QQQ": {
-      "d13w": -9.3,
-      "d1w": -5.0,
-      "d4w": -12.7,
-      "d52w": 8.0,
-      "pctile_2y": 72,
-      "px": 656.1
+      "d13w": -7.0,
+      "d1w": 3.6,
+      "d4w": -4.2,
+      "d52w": 12.1,
+      "pctile_2y": 74,
+      "px": 679.89
     },
     "SPY": {
-      "d13w": -4.9,
-      "d1w": -2.7,
-      "d4w": -5.6,
-      "d52w": 10.5,
-      "pctile_2y": 75,
-      "px": 735.29
+      "d13w": -2.8,
+      "d1w": 2.6,
+      "d4w": -1.2,
+      "d52w": 13.2,
+      "pctile_2y": 85,
+      "px": 754.37
     }
   },
   "macro": null,
@@ -80,159 +80,159 @@
     "fed_funds_range_as_of": "2026-09-16",
     "fed_stance": "Hike",
     "fed_stance_as_of": "2026-09-16",
-    "next_macro_gate": "ISM Mfg Mon Nov 2 (cons 54.7); midterms Tue Nov 3; Treasury refunding + ISM Services Wed Nov 4; October payrolls Fri Nov 6 (cons +55-65K); October CPI Nov 10; FOMC decision Dec 9 (held 3.75-4.00 on Oct 28, 10-2 with two hike dissents; December hike odds ~73-76% after the Oct 30 selloff)",
-    "next_macro_gate_as_of": "2026-10-31"
+    "next_macro_gate": "October CPI Tue Nov 10 (cons +0.3% headline / +0.2% core) with the 10Y auction; Veterans Day Wed Nov 11 (bond market closed); 30Y auction Thu Nov 12; October PPI Fri Nov 13 (cons +0.4%); November payrolls Dec 4; FOMC decision Dec 9 (held 3.75-4.00 on Oct 28; December hike odds near 79% after October payrolls +165K); November CPI Dec 10",
+    "next_macro_gate_as_of": "2026-11-08"
   },
   "rates": {
     "US10Y": {
-      "d1w_bps": -7,
-      "lvl": 4.86,
-      "pctile_2y": 91
+      "d1w_bps": 29,
+      "lvl": 5.15,
+      "pctile_2y": 96
     },
     "US2Y": {
-      "d1w_bps": -5,
-      "lvl": 4.51,
-      "pctile_2y": 91
+      "d1w_bps": 37,
+      "lvl": 4.88,
+      "pctile_2y": 99
     },
-    "curve_2s10s_bps": 35
+    "curve_2s10s_bps": 27
   },
   "regime": "risk-off / curve-positive / policy-hike",
   "schema": "market-state/v1",
   "sectors": {
     "SMH": {
-      "corr_prev": 0.558,
+      "corr_prev": 0.963,
       "corr_spy_4w": 0.963,
-      "d13w": -20.4,
-      "d1w": -11.2,
-      "d4w": -23.1,
-      "d52w": 33.7,
-      "pctile_2y": 71,
-      "px": 463.96
+      "d13w": -17.2,
+      "d1w": 4.9,
+      "d4w": -9.8,
+      "d52w": 41.5,
+      "pctile_2y": 72,
+      "px": 486.75
     },
     "XLB": {
-      "corr_prev": -0.688,
-      "corr_spy_4w": 0.488,
-      "d13w": -1.7,
-      "d1w": -1.5,
-      "d4w": 5.1,
-      "d52w": 22.7,
-      "pctile_2y": 88,
-      "px": 51.95
+      "corr_prev": 0.488,
+      "corr_spy_4w": 0.373,
+      "d13w": -0.6,
+      "d1w": 0.5,
+      "d4w": 2.6,
+      "d52w": 22.0,
+      "pctile_2y": 90,
+      "px": 52.23
     },
     "XLC": {
-      "corr_prev": 0.062,
-      "corr_spy_4w": -0.976,
-      "d13w": -5.8,
-      "d1w": 4.9,
-      "d4w": -5.1,
-      "d52w": -5.7,
-      "pctile_2y": 33,
-      "px": 104.79
+      "corr_prev": -0.976,
+      "corr_spy_4w": 0.028,
+      "d13w": -3.8,
+      "d1w": 3.7,
+      "d4w": -1.5,
+      "d52w": -1.5,
+      "pctile_2y": 43,
+      "px": 108.69
     },
     "XLE": {
-      "corr_prev": -0.243,
-      "corr_spy_4w": 0.616,
-      "d13w": 7.2,
-      "d1w": -12.0,
-      "d4w": -5.3,
-      "d52w": 40.7,
-      "pctile_2y": 87,
-      "px": 61.62
+      "corr_prev": 0.616,
+      "corr_spy_4w": 0.89,
+      "d13w": 4.9,
+      "d1w": 5.4,
+      "d4w": -4.8,
+      "d52w": 44.4,
+      "pctile_2y": 94,
+      "px": 64.96
     },
     "XLF": {
-      "corr_prev": 0.536,
-      "corr_spy_4w": -0.648,
-      "d13w": -0.8,
-      "d1w": 1.2,
-      "d4w": 4.4,
-      "d52w": 9.6,
-      "pctile_2y": 93,
-      "px": 57.16
+      "corr_prev": -0.648,
+      "corr_spy_4w": 0.78,
+      "d13w": 0.9,
+      "d1w": 2.7,
+      "d4w": 5.7,
+      "d52w": 13.2,
+      "pctile_2y": 99,
+      "px": 58.68
     },
     "XLI": {
-      "corr_prev": 0.078,
-      "corr_spy_4w": 0.578,
-      "d13w": -12.2,
-      "d1w": -2.8,
-      "d4w": -3.9,
-      "d52w": 7.0,
-      "pctile_2y": 61,
-      "px": 162.67
+      "corr_prev": 0.578,
+      "corr_spy_4w": 0.869,
+      "d13w": -9.5,
+      "d1w": 3.8,
+      "d4w": 0.6,
+      "d52w": 12.0,
+      "pctile_2y": 68,
+      "px": 168.78
     },
     "XLK": {
-      "corr_prev": 0.825,
-      "corr_spy_4w": 0.966,
-      "d13w": -12.4,
-      "d1w": -8.2,
-      "d4w": -17.1,
-      "d52w": 14.8,
+      "corr_prev": 0.966,
+      "corr_spy_4w": 0.952,
+      "d13w": -10.4,
+      "d1w": 3.4,
+      "d4w": -7.2,
+      "d52w": 18.7,
       "pctile_2y": 74,
-      "px": 164.74
+      "px": 170.28
     },
     "XLP": {
-      "corr_prev": -0.256,
-      "corr_spy_4w": -0.275,
-      "d13w": 5.8,
-      "d1w": 0.7,
-      "d4w": 8.0,
-      "d52w": 19.9,
+      "corr_prev": -0.275,
+      "corr_spy_4w": 0.9,
+      "d13w": 7.3,
+      "d1w": 2.5,
+      "d4w": 5.4,
+      "d52w": 22.0,
       "pctile_2y": 99,
-      "px": 90.08
+      "px": 92.35
     },
     "XLRE": {
-      "corr_prev": 0.644,
-      "corr_spy_4w": -0.801,
-      "d13w": -2.2,
-      "d1w": 1.9,
-      "d4w": 5.7,
-      "d52w": 9.5,
-      "pctile_2y": 85,
-      "px": 44.0
+      "corr_prev": -0.801,
+      "corr_spy_4w": -0.879,
+      "d13w": -2.0,
+      "d1w": 0.8,
+      "d4w": 5.2,
+      "d52w": 11.2,
+      "pctile_2y": 88,
+      "px": 44.37
     },
     "XLU": {
-      "corr_prev": 0.648,
-      "corr_spy_4w": 0.567,
-      "d13w": -1.1,
-      "d1w": -0.7,
-      "d4w": 4.2,
-      "d52w": -1.8,
-      "pctile_2y": 63,
-      "px": 43.13
+      "corr_prev": 0.567,
+      "corr_spy_4w": 0.817,
+      "d13w": -0.6,
+      "d1w": 2.1,
+      "d4w": 4.3,
+      "d52w": 1.3,
+      "pctile_2y": 71,
+      "px": 44.04
     },
     "XLV": {
-      "corr_prev": -0.32,
-      "corr_spy_4w": 0.419,
-      "d13w": 11.5,
-      "d1w": -0.0,
-      "d4w": 8.2,
-      "d52w": 28.1,
-      "pctile_2y": 98,
-      "px": 184.8
+      "corr_prev": 0.419,
+      "corr_spy_4w": 0.604,
+      "d13w": 12.8,
+      "d1w": 2.2,
+      "d4w": 6.9,
+      "d52w": 26.0,
+      "pctile_2y": 99,
+      "px": 188.85
     },
     "XLY": {
-      "corr_prev": 0.868,
-      "corr_spy_4w": 0.005,
-      "d13w": -1.9,
-      "d1w": 1.9,
-      "d4w": 4.2,
-      "d52w": 0.3,
-      "pctile_2y": 76,
-      "px": 117.58
+      "corr_prev": 0.005,
+      "corr_spy_4w": 0.121,
+      "d13w": 1.5,
+      "d1w": 2.0,
+      "d4w": 6.7,
+      "d52w": 4.6,
+      "pctile_2y": 90,
+      "px": 119.98
     }
   },
   "upcoming": [
     {
       "binary": null,
-      "event": "ISM Mfg Mon Nov 2 (cons 54.7); midterms Tue Nov 3; Treasury refunding + ISM Services Wed Nov 4; October payrolls Fri Nov 6 (cons +55-65K); October CPI Nov 10; FOMC decision Dec 9 (held 3.75-4.00 on Oct 28, 10-2 with two hike dissents; December hike odds ~73-76% after the Oct 30 selloff)",
-      "when": "2026-10-31"
+      "event": "October CPI Tue Nov 10 (cons +0.3% headline / +0.2% core) with the 10Y auction; Veterans Day Wed Nov 11 (bond market closed); 30Y auction Thu Nov 12; October PPI Fri Nov 13 (cons +0.4%); November payrolls Dec 4; FOMC decision Dec 9 (held 3.75-4.00 on Oct 28; December hike odds near 79% after October payrolls +165K); November CPI Dec 10",
+      "when": "2026-11-08"
     }
   ],
   "vol": {
     "VIX": {
-      "d1w": 32.0,
-      "lvl": 25.64,
-      "pctile_2y": 93
+      "d1w": -24.7,
+      "lvl": 19.3,
+      "pctile_2y": 70
     }
   },
-  "weekly_files_read": 118
+  "weekly_files_read": 119
 }
