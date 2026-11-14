@@ -10,22 +10,22 @@
 
 | Metric | Current | Last Week | Change |
 |---|---|---|---|
-| Price | $463.96 | $522.49 | **-11.20%** |
-| Friday Close vs Thursday | $463.96 vs $447.73 | — | **+3.62%** |
-| Week Range | $445.59 – $532.76 | $511.63 – $571.00 | — |
+| Price | $486.75 | $463.96 | **+4.91%** |
+| Friday Close vs Thursday | $486.75 vs $501.73 | — | **-2.99%** |
+| Week Range | $462.88 – $516.65 | $445.59 – $532.76 | — |
 | 52W Range | $315.05 – $671.83 | — | — |
-| AUM | ~$66.4B (yfinance total assets; **refreshed this week** after four weeks stuck at $74.9B) | ~$74.9B (stale) | — |
-| YTD Return | **+28.8%** (price, from the Dec 31, 2025 close of $360.13) | +45.1% | -16.3 pts |
-| 1Y Return | ~+32% (price, from the Nov 6, 2025 close) | ~+44% | — |
-| P/E Ratio | ~25.0x (yfinance trailing) | ~27.9x | -10% (price-driven) |
-| Dividend Yield | ~0.21% | ~0.18% | — |
-| Beta | 2.1 (3Y, yfinance) | 2.0 | — |
+| AUM | ~$66.4B (yfinance total assets; unchanged from last week, may not have refreshed) | ~$66.4B | — |
+| YTD Return | **+35.2%** (price, from the Dec 31, 2025 close of $360.13) | +28.8% | +6.4 pts |
+| 1Y Return | ~+41% (price, from the Nov 13, 2025 close) | ~+32% | — |
+| P/E Ratio | ~26.3x (yfinance trailing) | ~25.0x | +5% (price-driven) |
+| Dividend Yield | ~0.21% | ~0.21% | — |
+| Beta | 2.12 (3Y, yfinance) | 2.1 | — |
 | Total Holdings | ~26 | — | — |
-| Friday Volume | **16.84M shares** (Thursday **28.96M**) | 17.57M | -4% |
+| Friday Volume | **12.38M shares** (Thursday 10.21M) | 16.84M | -26% |
 
-**Marky Tape Read:** The 200D test I bought last Friday failed on the first session. Daily closes: **$508.31 Monday (-2.71%), $518.52 Tuesday (+2.01%), $504.27 Wednesday (-2.75%), $447.73 Thursday (-11.21%) and $463.96 Friday (+3.62%)**. Net: **-11.20% W/W** against SPY **-2.70%** ($735.29), an **8.5-point gap**, in line with the 8.6 points three weeks ago. **Monday's $508.31 was SMH's first close under the 200D in 2026**, and my stop went with it. Thursday's -11.21% is **the worst SMH day of 2026**, worse than Jun 5 (-9.22%), and Thursday's close was the lowest since **April 13**. SOX fell **-12.15%** (10,688.80 → 9,390.25), **-12.25% on Thursday alone**. Volume: **8.9M, 9.1M, 13.4M, 29.0M, 16.8M**; Thursday ran 2.6x the 20-day average (11.0M). Friday's bounce came on 58% of Thursday's volume. RSI **31.4**, not yet oversold. The 200D ($521.76) is now **12.5% overhead**, the 50D ($565.64) 21.9%.
+**Marky Tape Read:** A bounce, and it stopped exactly where I said it would. Daily closes: **$487.41 Monday (+5.05%), $483.63 Tuesday (-0.78%), $506.96 Wednesday (+4.82%), $501.73 Thursday (-1.03%) and $486.75 Friday (-2.99%)**. Net: **+4.91% W/W** against SPY **+2.59%** ($754.37), a **2.3-point lead**, the first week SMH has beaten SPY in three. SOX **+8.05%** (9,390.25 → 10,146.32) ran ahead of the fund because SMH carries 20% NVIDIA and **NVIDIA fell 12.75%**. Wednesday's +4.82% took SMH back over $504–508, Monday-last-week's breakdown level, and **the high was $516.65, $7 under the 200D ($523.89)**. Thursday and Friday gave back $20. Volume: **14.8M, 10.2M, 15.4M, 10.2M, 12.4M**, all near the 20-day average (11.7M); no up day ran over 15.4M, and the reclaim I wanted needed more than 11M on a close *over* the 200D. It never got the close. RSI **40.1**, from 31.4. The 200D is **7.6% overhead**, the 50D ($559.80) 15.0%.
 
-**Ophelia Macro Read:** This was not a rates week and it was not a supplier-data week. It was politics, then credit. The **Democratic midterm sweep** on Tuesday was read Thursday as a threat to where data centers can be built: **UBS put about 30% of expected 2028 US data-center additions at risk** from construction pauses (Reuters coverage, carried from wiki/tech.md). **CoreWeave's bonds yielded over 16%** (CNBC, Nov 6) and **HY OAS reached 3.48%**, a new high for the cycle (FRED, via wiki/tech.md). The data ran hot: **payrolls +165K vs 65K, unemployment 4.1%, hourly earnings +0.4%**, ISM manufacturing 55.5. December hike odds came back to **~75–79%** (Reuters/LSEG, Morningstar). **The 10-year still fell 7bp to 4.859%** on equity stress. **DXY 102.30 (+0.41%)**, **VIX 25.64 (+32%; 28.18 Thursday close)**, **WTI December (CLZ26) $90.83 settled (-$13.29)** on Iran de-escalation, so the oil flag cleared.
+**Ophelia Macro Read:** Last week the rates side helped chips; this week it turned. **October CPI ran hot: +0.4% headline vs +0.3%, core +0.3% vs +0.2%** (BLS via CNBC, Seeking Alpha). **PPI was softer, +0.3% vs +0.4%; core +0.3% in line; 6.5% Y/Y**, the highest since 2022 (CNBC). December hike odds went to **~88–89%** on CME FedWatch, with **9–14% for 50bp** (Investing.com, Yahoo Finance); Waller said the Fed "ought to" hike. **The 10-year rose 29.5bp to 5.154%**, closed over 5.00% Thursday (5.103%) for the first time on this page since the flag cleared, and the 30-year reached 5.481%. **DXY 103.41 (+1.09%)**, the highest close of the past year. **VIX 19.30 (-25%)** fell back under 22 on Monday. WTI December $88.56 (-2.5%). Chips rose anyway, on CoreWeave, not on the Fed.
 
 ---
 
@@ -33,39 +33,39 @@
 
 | Rank | Ticker | Name | Weight | Price | Fri Change | Weekly Change | 52W High | 52W Low | Yield | P/E | Signal |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | NVDA | NVIDIA | ~20.2% | $186.64 | +2.78% | **-8.80%** | $239.24 | $165.17 | 0.54% | 23.6 | 🔴 |
-| 2 | TSM | Taiwan Semiconductor | ~9.6% | $375.44 | +6.33% | -7.56% | $485.80 | $275.06 | 1.00% | 24.3 | 🔴 |
-| 3 | TXN | Texas Instruments | ~5.7% | $277.36 | -0.28% | -7.80% | $332.28 | $153.33 | 2.19% | 36.0 | ⚠️ |
-| 4 | AVGO | Broadcom | ~5.6% | $293.69 | +0.74% | -9.93% | $481.57 | $291.53 | 0.89% | 37.5 | 🔴 |
-| 5 | AMD | AMD | ~5.3% | $449.04 | **+11.04%** | **-11.05%** | $649.42 | $190.95 | 0.00% | 95.9 | ⚠️ |
-| 6 | ADI | Analog Devices | ~5.0% | $363.56 | +0.71% | **-12.84%** | $445.48 | $225.20 | 1.21% | 43.2 | 🔴 |
-| 7 | MU | Micron Technology | ~4.7% | $690.00 | +5.12% | **-22.01%** | $1,213.56 | $201.37 | 0.09% | 9.3 | 🔴 |
-| 8 | ASML | ASML Holding | ~4.5% | $1,424.75 | +5.02% | -9.01% | $1,989.44 | $966.57 | — | 35.1 | 🔴 |
-| 9 | KLAC | KLA Corp | ~4.3% | $138.49 | +6.69% | **-12.30%** | $301.71 | $109.71 | — | 34.7 | 🔴 |
-| 10 | SKHY | SK hynix ADR | ~4.1% | $127.34 | +2.78% | **-14.66%** | $198.63 | $123.90 | 0.09% | 8.1 | 🔴 |
+| 1 | NVDA | NVIDIA | ~20.2% | $162.85 | -2.01% | **-12.75%** | $239.24 | **$162.85** | 0.61% | 20.6 | 🔴 |
+| 2 | TSM | Taiwan Semiconductor | ~9.6% | $398.73 | -1.67% | +6.20% | $485.80 | $275.06 | 0.95% | 25.8 | 🔴 |
+| 3 | TXN | Texas Instruments | ~5.7% | $303.60 | -2.84% | +9.46% | $332.28 | $153.33 | 2.00% | 39.4 | ⚡ |
+| 4 | AVGO | Broadcom | ~5.6% | $347.01 | -4.76% | **+18.16%** | $481.57 | $291.53 | 0.75% | 44.3 | ⚠️ |
+| 5 | AMD | AMD | ~5.3% | $534.06 | **-8.75%** | **+18.93%** | $649.42 | $190.95 | 0.00% | 114.1 | ⚠️ |
+| 6 | ADI | Analog Devices | ~5.0% | $397.97 | -2.77% | +9.46% | $445.48 | $225.20 | 1.11% | 47.3 | ⚡ |
+| 7 | MU | Micron Technology | ~4.7% | $778.31 | -2.52% | **+12.80%** | $1,213.56 | $201.37 | 0.08% | 10.5 | ⚠️ |
+| 8 | ASML | ASML Holding | ~4.5% | $1,495.16 | -0.13% | +4.94% | $1,989.44 | $966.57 | 0.62% | 36.8 | 🔴 |
+| 9 | KLAC | KLA Corp | ~4.3% | $152.32 | -3.17% | +9.99% | $301.71 | $109.71 | 0.60% | 38.2 | 🔴 |
+| 10 | SKHY | SK hynix ADR | ~4.1% | $131.79 | -4.30% | +3.49% | $198.63 | $123.90 | 0.08% | 8.4 | 🔴 |
 
 > 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Pullback / caution | 🔴 = Breakdown / value trap
 >
-> **Weights refreshed this week** (yfinance SMH fund holdings; the file had been frozen since early October). **New in the top ten: ADI and SK hynix's ADR (SKHY). Out: AMAT and INTC.** Fri Change = Friday 2026-11-06 close vs Thursday; Weekly Change = vs Friday 2026-10-30 close. 52W high/low from daily closes; SKHY has only ~85 sessions of ADR history, so its range is since listing and it has no real 200D. KLAC's 52W high still looks like a split-adjustment artifact. 🔴 = below both the 50D and 200D (SKHY: below its 50D, $166.79, and at its post-listing low). **Nine of ten fell more than 7%; all ten fell Thursday.** TXN ($262.27 200D) and AMD ($415.98) are the only two still above their 200D. **NVDA closed under its 200D ($204.67) every day this week.** Outside the top ten: AMAT $332.72 (-14.71%), LRCX $200.44 (-16.17%), INTC $56.28 (-14.42%), ARM $174.62 (-15.22%), **MRVL $141.20 (-28.11%)**, QCOM $165.41 (+0.38%, the only gainer of the 18 large names tracked), **SNDK $835.06 (-27.44%)**, **WDC $263.78 (-27.95%)**.
+> Weights from yfinance SMH fund holdings (unchanged from last week). Fri Change = Friday 2026-11-13 close vs Thursday; Weekly Change = vs Friday 2026-11-06 close. 52W high/low from daily closes; **NVDA's $162.85 Friday close is a new 52W closing low** (intraday low **$148.80 Thursday**). SKHY has only ~90 sessions of ADR history, so no real 200D. KLAC's 52W high still looks like a split-adjustment artifact. 🔴 = below both the 50D and 200D (SKHY: below its 50D, $164.00). ⚡ = above both: **TXN and ADI retook their 50D**. ⚠️ = between: **MU back over its 200D ($765.61)**, AVGO over its 50D ($345.38) but under its 200D ($367.42), AMD over its 200D ($423.12) and under its 50D ($554.55). **TSM is 1.1% under its 200D ($403.05)**; it closed over it Wednesday and Thursday. **Nine of ten rose; NVIDIA, the largest, fell 12.75%.** All ten fell Friday. Outside the top ten: AMAT $370.50 (+11.35%), LRCX $225.92 (+12.71%), INTC $59.66 (+6.01%), ARM $190.53 (+9.11%), MRVL $156.76 (+11.02%), QCOM $172.47 (+4.27%), SNDK $885.01 (+5.98%), WDC $295.65 (+12.08%), **CRWV $53.13 (+14.50%; +24.71% Wednesday)**.
 
-**Sector Split:** Last week the consumer end fell and equipment held. This week everything fell, and memory fell the most.
-- **Memory:** MU (-22.0%), SKHY (-14.7%), SNDK (-27.4%), WDC (-28.0%). **MU -17.46% Thursday, its worst day in more than a year** (Trefis; the bars agree)
-- **Custom Silicon / Networking:** MRVL (-28.1%), AVGO (-9.9%). Marvell signed Lumentum Monday (see below)
-- **Equipment:** LRCX (-16.2%), AMAT (-14.7%), KLAC (-12.3%), ASML (-9.0%). Last week's leaders gave it all back and more
-- **Analog:** ADI (-12.8%), TXN (-7.8%). **No longer above their 50D**; TXN fell 10.7% Thursday and held its 200D
-- **AI/GPU:** NVDA (-8.8%). Under its 200D every session; NVDA reports Nov 17
-- **Foundry:** TSM (-7.6%), under its 200D ($401.48) for the first time on this page; +6.3% Friday after Taiwan limited short selling (wiki/tech.md)
-- **CPU / Compute IP / Handset:** ARM (-15.2%), INTC (-14.4%), AMD (-11.1%), QCOM (+0.4%). Qualcomm had fallen in advance
+**Sector Split:** Last week everything fell. This week everything but NVIDIA rose, and the money that left NVIDIA went to its competitors.
+- **AI/GPU:** NVDA (-12.8%). Six straight weekly losses, the longest since 2012 (CNBC). **CEO resigned Thursday** (see below)
+- **Custom Silicon / Networking:** AVGO (+18.2%), MRVL (+11.0%). Broadcom was a stated beneficiary of the NVIDIA rotation (investingLive, 24/7 Wall St.)
+- **CPU / Compute IP / Handset:** AMD (+18.9%; +13.3% Monday, +7.3% Wednesday), ARM (+9.1%), INTC (+6.0%), QCOM (+4.3%)
+- **Memory:** MU (+12.8%), WDC (+12.1%), SNDK (+6.0%), SKHY (+3.5%). A bounce, against a softer TrendForce number (see below)
+- **Equipment:** LRCX (+12.7%), AMAT (+11.4%), KLAC (+10.0%), ASML (+4.9%). AMAT beat and guided up Thursday
+- **Analog:** TXN (+9.5%), ADI (+9.5%). Both back over their 50D
+- **Foundry:** TSM (+6.2%). Back to its 200D, not over it on the Friday close
 
-**The Election Read:** Nothing in the chip chain reported badly enough to explain Thursday. **AMD reported a record quarter Tuesday after the close** (revenue **$13.4B, +45%; non-GAAP EPS $2.09 vs $1.94; data center $8.5B, +97%; Q4 guide ~$17B ±3%**, carried from wiki/tech.md, AMD release) and was +9% after hours. Wednesday the Democratic sweep was read as *lower* capex pressure and SMH slipped 2.75%. Thursday the reading turned to data-center permitting and local construction pauses; UBS's 30% figure and systematic selling (Bloomberg, via wiki/tech.md) did the rest. **SMH -11.21%, SOX -12.25%, MU -17.46%, AMD -17.3%, LRCX -16.4%.** Friday's hot payrolls did not stop a +3.6% bounce. The Council should be clear on what this is: **a policy and funding repricing of the buildout's 2027–2028 runway, not a print.** The supplier data this week were records.
+**The NVIDIA Read:** This is the story of the week, and it is not a demand story. **NVIDIA announced Thursday Nov 12 that Jensen Huang stepped down as president, CEO and director, effective immediately; CFO Colette Kress is interim CEO while remaining CFO, and the board is weighing internal and external candidates** (NVIDIA 8-K; CNBC, CNN, Fox Business). Coverage ties the exit to reported personal relationships, one with a person described as a suspected Chinese intelligence asset; the board opened an internal investigation and **the FBI has opened an inquiry** (ABC News, Reuters-syndicated wire copy). **These are allegations, not findings.** On Wednesday **Baird cut NVDA to Neutral and its target from $500 to $200**, citing export-control and Southeast Asia diversion risk, hyperscaler AI capex growth of "approximately 40% or slightly less" in 2027, leadership, and a possible $5B inventory write-down; **Morgan Stanley took NVDA off its top-picks list** without a downgrade (wire copy via SRN News, Crypto Briefing). Daily: **-4.27%, -5.47%, +2.87%, -4.34%, -2.01%.** Market value fell under $4T; CNBC puts the six-week loss at about $1.7T. **Earnings are still set for Tue Nov 17 after the close** (Earnings Whispers, Wall Street Horizon, consensus EPS ~$2.49; options imply ±10.8%). NVDA now trades at **20.6x trailing**, the cheapest in the top ten after MU and SKHY.
 
-**The Memory Read:** Memory led the drop for the second straight Friday-to-Friday, and nothing new came from the producers. Apple's CEO called memory pricing "unprecedented" on Monday's call and guided gross margin to 45–46% on it (wiki/tech.md). Qualcomm's handset revenue fell **26%** as phone makers passed higher memory costs to consumers (tech-insider, 247wallst). Coverage cites **AI capex worries, pricing durability, and talk that newer models need less memory** (Trefis, Motley Fool). The last pricing data on file are still TrendForce's: **Q4 DRAM contract ~+20% Q/Q (Oct 20)**, PC DRAM still rising but slower (Oct 30). A UDN report puts conventional DRAM ex-HBM at **+8–13%**; I could not reconcile the two. Micron at **9.3x trailing** and SKHY at **8.1x** price the peak. One offset: Barron's reports Micron may raise buybacks once CHIPS Act restrictions expire **Dec 9**. **No new producer guide this week. The selling ran ahead of any price data.**
+**The Rotation Read:** The selling did not leave the sector. **CoreWeave reported Tuesday after the close and raised its 2026 forecast; CRWV +24.71% Wednesday, and the SOX rose 5.66% with every member up** (Yahoo Finance, Kalkine, Milton Berg). Last week CoreWeave's bonds over 16% were the funding warning; this week its print was the relief. AMD rose 13.3% Monday and 7.3% Wednesday; Goldman named it a top pick (Motley Fool). **SMH beat SPY and lagged SOX because of one name.** Friday all ten top holdings fell into NVDA's print, the 10-year at 5.15% and AMD's -8.75%.
 
-**The Marvell Read:** The talks became a deal on **Monday Nov 2: Marvell buys Lumentum in an all-stock deal at an implied $115B enterprise value, 4.5 MRVL shares per LITE share, ~23.9% premium to the Oct 28 close; Marvell holders keep ~67%; close expected in 1H 2028** (Marvell/Lumentum release via HPCwire, Data Centre Magazine). MRVL fell more than 10% Monday and **28.1% on the week**, now **23.7% under its 200D ($185.05)**. Last week's bear case named this exact outcome. The fixed ratio means Lumentum holders are now paid in a falling currency; Stifel marked the offer at ~$824 per share at Monday midday.
+**The Equipment Read:** **Applied Materials (Nov 12 AMC): FQ4 revenue $10.41B (+53% Y/Y) vs $10.30B; non-GAAP EPS $4.16 vs $4.05; FY26 revenue $34.31B (+21%). FQ1 2027 guide ~$11.1B and $4.35 midpoint vs ~$10.83B / $4.23 consensus; semiconductor systems revenue up >40% in calendar 2026** (Benzinga, SiliconANGLE, Investing.com transcript). It was the first big equipment guide after the election, and it went up. AMAT still fell 2.7% Friday with the group. The permitting fear from last week has not shown up in any supplier's order book yet.
 
-**The Handset and IP Read:** **Qualcomm (Nov 4): adjusted EPS $2.17 on ~$10.4B; handset -26% Y/Y to $5.14B; auto +89%; December-quarter guide $10.4–11.2B and $2.15–2.35, called light; ~6–7% lower after hours** (SiliconANGLE, investingLive, 247wallst). It finished the week +0.4% because it had already fallen 11% the Friday before. **Arm: data-center royalties doubled; a cautious guide; -2% late** (SiliconANGLE; exact figures not retrieved). Qualcomm also said a jury found Arm breached its license agreement. GlobalFoundries "did little better" (SiliconANGLE; figures not retrieved).
+**The Memory Read:** Memory bounced, but the price data moved the other way. **TrendForce (Nov 11): Q4 conventional DRAM contract +10–15% Q/Q; PC DRAM +13–18%, down from +18–23% in Q3. Spot prices kept falling into Nov 12 with buyers "on the sidelines"; DDR4 8Gb spot ~$44.71** (TrendForce, Capital Times, Crypto Briefing). Last week's page carried **~+20% Q/Q (Oct 20)**. That makes this **the first TrendForce number since this page started tracking it that is lower than the one before.** Prices still rising, at half the pace. MU at 10.5x and SKHY at 8.4x. Barron's buyback point (CHIPS restrictions end **Dec 9**) carried.
 
-**Cecil Fundamental Read:** AMD set a record, Diodes and ACM set records, Axcelis beat, Qualcomm was light on phones, and SMH fell 11%. The multiple took the hit: **SMH 25.0x from 27.9x; NVDA 23.6x; TSM 24.3x; MU 9.3x.** That is cheaper than any week since I started this page, and I do not trust it yet, because the question moved from *how much will they spend* to *where are they allowed to build it*, and no supplier can answer that one. AMAT on Nov 12 and NVDA on Nov 17 are the first prints after the vote.
+**Cecil Fundamental Read:** AMAT beat and raised, CoreWeave raised, and the largest holding lost its founder-CEO in the same week. SMH's multiple came back to **26.3x from 25.0x**, and NVDA's fell to **20.6x**. The thing I said I couldn't model last week, permits, didn't get worse. A new thing I can't model got added: **who runs NVIDIA, and whether the China inquiry turns into an export-control enforcement problem.** Tuesday's print gives me the numbers; it won't give me the second answer.
 
 ---
 
@@ -73,15 +73,15 @@
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| **AOSL** | Alpha & Omega Semiconductor (power) | ~$0.72B | $23.61 | **+2.74%** | **FQ1 2027 (Nov 5 AMC): loss -$0.07 vs -$0.14 est; revenue $177.8M vs $176.2M; Advanced Computing +50% Q/Q, +80% Y/Y, ~20% of sales; non-GAAP GM 25.2%; FQ2 guide $170–190M** (MarketBeat). **+27.8% Friday.** | Best in the table, and the only one up. The AI server ramp showed up in the numbers. Still under its 50D ($25.14) and 22% under its 200D ($30.46). |
-| **DIOD** | Diodes Incorporated (analog/discrete) | ~$3.56B | $77.36 | -3.46% | **Q3 (Nov 5): record revenue $532.6M (+35.8% Y/Y, +19.5% Q/Q) vs $510M guide; non-GAAP EPS $1.18 vs $1.05; Q4 guide ~$550M, 37% GM**, against a normal 5–6% seasonal decline (company release, Earnings Whispers). Demand described as "hand-to-mouth." **+13.2% Friday.** | A clean beat-and-raise. Still under both averages (50D $90.04, 200D $88.43). Supply-limited, not demand-limited. |
-| **POWI** | Power Integrations (power) | ~$2.25B | $40.26 | **-8.21%** | **Q3 (Nov 4 AMC): revenue $125.5M vs ~$126M; non-GAAP EPS $0.46 vs $0.38; Q4 guide $118–126M (midpoint $122M vs ~$124.4M consensus); dividend to $0.22 in 2027** (company release, StockStory). Gate-driver demand above supply. | The only print in the table that guided under. Worst weekly change of the five; 32% under its 200D ($58.85). |
-| **ACLS** | Axcelis Technologies (ion-implant equipment) | ~$3.06B | $99.24 | -0.83% | **Q3 (Nov 5 BMO): revenue $237.8M vs ~$230M guide; non-GAAP EPS $1.26 vs $1.11 outlook; record service revenue $93M; non-GAAP GM 41.2% (won headwind). Q4 ~$275M per one headline, not confirmed.** Pending Veeco merger, close described as delayed (Panabee, company 8-K). | Flat in a -12% equipment week. **Merger watch: ACLS + VECO caps sum to ~$5.3B; if it closes, the combined name graduates and comes off this table.** |
-| **ACMR** | ACM Research (wafer-cleaning equipment) | ~$3.11B | $44.61 | -1.89% | **Q3 (Nov 5): revenue $367.7M (+36.6%), above the $360–365M prelim; shipments $343.5M; FY26 guide raised to $1.24–1.28B from $1.125–1.175B; backlog ~$2.5B (+88%)** (MENAFN release, MarketBeat). Mostly mainland-China fab revenue. **+13.5% Friday.** | Last week's "the market doesn't want revenue" ended Friday. Still 31% under its 50D ($64.92). The export-control name here; no new BIS action found. |
+| **AOSL** | Alpha & Omega Semiconductor (power) | ~$0.82B | $27.20 | **+15.21%** | **No fresh company news this week** (Finviz news feed). Follow-through from the Nov 5 FQ1 beat (Advanced Computing +80% Y/Y); Earnings Whispers notes the PC business is "collapsing" under the AI mix. **-10.91% Friday**, cause not sourced. | Best in the table again. Back over its 20D and 50D ($25.62); still 11% under its 200D ($30.63). Friday's -11% says it trades as high beta, not as a story yet. |
+| **DIOD** | Diodes Incorporated (analog/discrete) | **~$4.02B** | $87.25 | +12.78% | No fresh news this week. Follow-through from the Nov 5 record quarter and ~$550M Q4 guide. | **Watch the cap: $4.02B is 20% under the $5B line**; another 25% move graduates it. Back near both averages (50D $89.98, 200D $89.19). |
+| **POWI** | Power Integrations (power) | ~$2.47B | $44.18 | +9.74% | No fresh company news (the Nov 12 Ideal Power item tagged POWI is about a competitor). Earnings Whispers flags an **11.8-week channel inventory build** behind the Nov 4 beat. | Rose with the group after last week's light guide. A channel build is the thing that comes back to bite power names. Still 25% under its 200D ($58.83). |
+| **ACLS** | Axcelis Technologies (ion-implant equipment) | ~$3.22B | $104.42 | +5.22% | No fresh news. Earnings Whispers: Q3 **book-to-bill 1.5x**; Veeco close still delayed. | Lagged its big-cap equipment peers (+10–13%). **Merger watch carried: ACLS + VECO ≈ $5.6B**; if it closes, the combined name graduates. |
+| **ACMR** | ACM Research (wafer-cleaning equipment) | ~$3.36B | $47.95 | +7.49% | No fresh news. Earnings Whispers: the raised guide "falls short of whisper as margins and cash flow weaken." **China exposure:** no new BIS rule found this week. | Rose less than LRCX/AMAT; 30% under its 200D ($68.29). It is the table's export-control name, and NVIDIA's China inquiry is the headline to watch for it. |
 
-> **Rotation note:** All five re-verified below $5B on live yfinance market caps (AOSL $0.72B, DIOD $3.56B, POWI $2.25B, ACLS $3.06B, ACMR $3.11B); no rotation. **SLAB still graduated (~$7.39B, $221.50, -0.43%; flat all week, consistent with a pending deal price; not re-verified).** Bench (all verified sub-$5B): CEVA (~$0.76B, $27.10, -8.2%), Veeco (VECO, ~$2.27B, $37.19, -4.3%; merging with ACLS), **Cohu (COHU, ~$1.82B, $38.49, -24.2%; cause not sourced)**, **Ichor (ICHR, ~$1.16B, $30.97, -20.4%; reported Nov 2, results not retrieved)**.
+> **Rotation note:** All five re-verified below $5B on live yfinance market caps (AOSL $0.82B, DIOD $4.02B, POWI $2.47B, ACLS $3.22B, ACMR $3.36B); no rotation. **DIOD is the nearest to graduating.** SLAB still graduated (~$7.39B, $221.43, -0.03%; flat, consistent with a pending deal price). Bench (all verified sub-$5B): CEVA (~$0.73B, $25.59, -5.6%), VECO (~$2.39B, $39.06, +5.0%; merging with ACLS), COHU (~$2.06B, $43.59, **+13.3%**), ICHR (~$1.34B, $35.72, **+15.4%**).
 
-**Marky Small-Cap Read:** The five averaged **-2.33% against SMH's -11.20%**, a **9-point beat**, the first time this table has beaten the fund by that much. It was earnings, not beta: **four of the five beat on Nov 4–5 and three of them rose 13–28% on Friday.** POWI was the one light guide and the worst of the five. Equipment small caps held while LRCX and AMAT fell 15–16%, the reverse of last week. The bench tells the other half: COHU and ICHR, the two that sell into Lam and AMAT test and subsystems, fell 20–24%. **Small caps that printed beat the fund; small caps that only trade on the big names fell with them.**
+**Marky Small-Cap Read:** The five averaged **+10.1% against SMH's +4.9%**, a **5-point beat** for a second straight week. Different reason this time: no prints, just beta. Last week the names that reported beat the fund on earnings; this week the whole small-cap end rose with the rebound, and the two bench names that fell 20–24% last week (COHU, ICHR) bounced 13–15%. Small caps beat SMH this week mostly because they don't own NVIDIA. **That is a weighting edge, not stock-picking, and Friday's -3% to -11% across the table shows they still trade with the big names.**
 
 ---
 
@@ -89,19 +89,19 @@
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High | $671.83 | Prior bull peak. 44.8% above |
-| 50-Day MA | $565.64 | Falling. 21.9% above |
-| Overhead Resistance | $521.76 – $532.76 | **The 200D ($521.76) and the week's high ($532.76, Tuesday). The first line to reclaim** |
-| 20-Day MA | $536.94 | — |
-| Near Resistance | $504.22 – $508.31 | Old July 29 support; Monday's close, the first close under the 200D this year |
-| Current Price | $463.96 | — |
-| Near Support | $445.59 – $447.73 | **Thursday's low and close**; the lowest close since Apr 13 |
-| Structural Support | $443.34 | The April 13 close; 4.4% below |
+| 52W High | $671.83 | Prior bull peak. 38.0% above |
+| 50-Day MA | $559.80 | Falling. 15.0% above |
+| Overhead Resistance | $516.65 – $523.89 | **This week's high (Wednesday) and the 200D. The line that held the bounce** |
+| 20-Day MA | $518.14 | Inside the resistance band |
+| Near Resistance | $504.22 – $508.31 | Old July support / last week's breakdown close; **retaken Wednesday and Thursday, lost Friday** |
+| Current Price | $486.75 | — |
+| Near Support | $462.88 – $463.96 | **Monday's low and last Friday's close** |
+| Structural Support | $443.34 – $445.59 | The April 13 close and last week's low |
 | Structural Low | $315.05 | 52W bottom |
 
-**Marky Setup Assessment:** I said I would take a small starter on a held 200D test and be out on any close under $519.50. **Monday closed $508.31, and I was out with a ~2.7% loss.** That was the cheapest thing I did all year: the stop saved the other 9 points. The map now: **the 200D ($521.76) is 12.5% overhead, and nothing below it is a buy for me.** Thursday was the year's worst day on 2.6x volume, and Friday's +3.6% came on less volume. RSI 31.4 is close to oversold, not there. **A close under $445.59 opens the April levels ($443 and lower). A close above $508.31 retakes Monday's breakdown level; only a close over the 200D on volume above 11M puts me back in.** Bias: **bearish below the 200D; flat.**
+**Marky Setup Assessment:** I said I'd only buy a close over the 200D on volume above 11M. **The high was $516.65 on 15.4M, and the close was $506.96, under it.** Two days later the fund was back at $486.75. That is a failed test from below, and I'm glad I didn't front-run it. The map: **$504–508 is resistance again, then the 200D at $523.89. Support is $462.88, then $443–446.** NVDA reports Tuesday, and with 20% of the fund in one name whose CEO just left, the print decides which line breaks. Bias: **bearish below the 200D; flat. A close over $523.89 on >11.7M puts me back in; a close under $462.88 opens last week's low.**
 
-**The relative strength story:** SMH is **+28.8% YTD** (from +45.1%) and **~+32% over 52 weeks**. It lagged SPY (-2.70%) by **8.5 points**, after 0.3 last week. The Nasdaq fell 3.4%, the Dow 0.9%, XLK 8.2%. The defensive trade held: **XLP +0.7%; XLE -12.0%** as oil fell.
+**The relative strength story:** SMH is **+35.2% YTD** (from +28.8%) and **~+41% over 52 weeks**. It beat SPY (+2.59%) by **2.3 points**, after lagging by 8.5. The Nasdaq rose 2.3%, the Dow 2.1%, XLK 3.4%. SOX's +8.1% against SMH's +4.9% is the NVIDIA weighting. Defensives held: **XLP +2.5% to a 52W closing high ($92.35)**; XLE +5.4%.
 
 ---
 
@@ -109,20 +109,20 @@
 
 | Factor | Level | Implication for SMH |
 |---|---|---|
-| **Fed Funds** | **3.75–4.00%. December hike ~75–79% after payrolls** (Reuters/LSEG ~75%, Morningstar 79%), from ~73–76% last Friday | Payrolls put the hike back. Daly: higher rates "are likely to be needed" (CNBC, via wiki/tech.md). **Next FOMC Dec 9**, the same day as Broadcom |
-| 10Y Treasury | **4.859% (-7.0bp W/W; closes 4.894 / 4.952 / 4.894 / 4.837 / 4.859)** | A fifth straight lower Friday; still above 4.75% |
-| 5Y / 30Y / 2Y | 5Y 4.648% (-7.3bp); 30Y 5.260% (-4.9bp); 2Y 4.51% (market_state) | Less steepening than last week; the front end gave some back on payrolls |
-| DXY | **102.30 (+0.41% W/W)** | A firmer dollar; not a chip factor |
-| VIX | **25.64 (+32%; closes 21.15 / 20.83 / 16.61 / 28.18 / 25.64; 28.36 high Thursday)** | **Over 22 on a close for the first time in this run.** Chips are no longer carrying the volatility alone |
-| WTI / Brent | **WTI December (CLZ26) $90.83 settled (-$13.29); Brent January $98.32** (wiki/energy.md) | **Oil flag cleared.** Lower oil helps the inflation side; it did nothing for chips |
-| **AI Capex / Demand / Policy** | **Democratic sweep; UBS: ~30% of expected 2028 US data-center additions at risk. CoreWeave bonds >16%. HY OAS 3.48%, cycle high. Microsoft reportedly winding down an Oracle AI cloud deal (headline).** AMD data center +97% | The new risk is *where*, not *how much*. Funding stress is now visible in credit. NVDA (Nov 17) is the first answer |
-| **Memory / HBM / DRAM Pricing** | **No new producer guide. TrendForce Q4 DRAM ~+20% (Oct 20, carried); PC DRAM still rising, slower (Oct 30). Apple: memory costs "unprecedented"; Qualcomm handset -26%** | Memory fell 15–28% with no new price data. The consumer end is paying; the buyers are now the question |
-| **Foundry / Equipment Capacity** | **No new capacity data. KLA Dec-Q guide $4.7B and CoWoS price-rise report (unconfirmed) carried.** ACMR backlog $2.5B (+88%) | Small-cap equipment prints were strong; the big names fell anyway. AMAT Nov 12 |
-| **China Export Controls** | **No new BIS rule or enforcement action found for Nov 2–6.** Standing: January H200/MI325X case-by-case licensing; May 31 guidance on China-headquartered firms abroad; truce to Jan 10. House passed the Remote Access Security Act (cloud), status in the Senate not confirmed | No rule change. Marvell–Lumentum needs China's approval. ACMR is the exposed name and it rose |
+| **Fed Funds** | **3.75–4.00%. December hike ~88–89% (CME FedWatch); 50bp odds ~9–14%** (Investing.com, Yahoo Finance), from ~75–79% last Friday | The hot CPI took December from likely to priced. Waller: the Fed "ought to" hike. **FOMC minutes Wed Nov 18; Chair Warsh speaks Mon Nov 16; FOMC Dec 9**, the same day as Broadcom |
+| 10Y Treasury | **5.154% (+29.5bp W/W; closes 4.864 / 4.983 / Veterans Day / 5.103 / 5.154)** | **Back over 5.00% from Thursday.** The worst rates week for long-duration growth on this page since the spring |
+| 5Y / 30Y / 2Y | 5Y 4.981% (+33bp); 30Y 5.481% (+22bp); 3M bill 4.12% | A bear flattener led by the 5-year: hikes, not term premium |
+| DXY | **103.41 (+1.09% W/W)**, a 52W closing high | A firm dollar is a headwind to TSM/ASML ADR translation; not a driver yet |
+| VIX | **19.30 (-25%; closes 19.92 / 19.46 / 17.49 / 18.70 / 19.30)** | **Back under 22 from Monday.** Fear left the index; it stayed in NVIDIA |
+| WTI / Brent | **WTI December $88.56 (-2.5%); Brent $95.84** (front-month, yfinance) | Oil flag stays cleared; not a chip factor |
+| **AI Capex / Demand / Policy** | **CoreWeave raised its 2026 forecast (+24.7% Wednesday). AMAT guided FQ1 above consensus. Baird: hyperscaler AI capex +~40% or less in 2027.** No new data-center permitting action found | The election fear eased on supplier and buyer prints. The new risk is company-specific: NVIDIA's leadership and China inquiry |
+| **Memory / HBM / DRAM Pricing** | **TrendForce Nov 11: Q4 conventional DRAM contract +10–15% Q/Q, PC DRAM +13–18% (from +18–23% in Q3). Spot falling, buyers waiting.** Prior page: ~+20% (Oct 20) | **The first slower number.** Still rising. The memory bounce ran ahead of it |
+| **Foundry / Equipment Capacity** | **AMAT: semiconductor systems revenue +40%+ in CY2026; FQ1 guide ~$11.1B.** No new TSMC capacity data | Equipment demand held through the election. TSM back at its 200D |
+| **China Export Controls** | **No new BIS rule or enforcement action found for Nov 9–13.** Standing: January H200/MI325X case-by-case licensing (25% fee, <50% of US volume per commentary); truce to Jan 10. **New: reported FBI inquiry tied to NVIDIA's former CEO; Baird cites Southeast Asia diversion enforcement risk** | No rule change, but enforcement risk is now a named analyst concern. ACMR is the small-cap name exposed |
 
-**Ophelia Verdict:** Last week I said funding, and this week the market added policy. The two connect: if a third of the 2028 buildout can't get permits, the buyers need less money, and the people lending it to them want more for it. CoreWeave over 16% and HY at a cycle high say the lenders already moved. Meanwhile payrolls at 165K put a December hike back near 80%. **That's the worst mix for this sector: a hawkish Fed and a questioned runway at once.** I'm staying reduced. I want HY back under 3.40% and NVDA's Nov 17 print before I add.
+**Ophelia Verdict:** Two weeks ago it was funding, last week politics. This week the Fed came back: CPI hot, December at 88%, the 10-year over 5%. Chips rose anyway because CoreWeave and AMAT answered last week's runway question with numbers. **I'll take that. What I won't take is a 20% fund weight in a company whose CEO resigned under an FBI inquiry, one week before its print, with the 10-year at 5.15%.** I stay reduced. I add on a 10-year back under 5.00% and an NVIDIA print that carries a clean guide.
 
-**The Bottom Line:** SMH closed at $463.96, **-11.20%**, with **the year's worst day on Thursday** and **its first closes under the 200D in 2026**. No supplier caused it: AMD, Diodes and ACM set records. The election and credit did. **$445.59 is the floor; $508.31, then the 200D at $521.76, are the lines to reclaim.**
+**The Bottom Line:** SMH closed at $486.75, **+4.91%**, beating SPY for the first time in three weeks, on a CoreWeave-led rally that **stopped $7 under the 200D**. NVIDIA fell 12.75% on its CEO's resignation and a Baird downgrade; nine of the other top ten rose. **$462.88 is support; $504–508, then the 200D at $523.89, are resistance.**
 
 ---
 
@@ -130,19 +130,19 @@
 
 > *This section is rewritten weekly by the Saturday Research Crew. It captures the story beneath the headlines.*
 
-### This Week's Story: The Vote Asked Where the Buildout Gets Built
+### This Week's Story: The Sector Rallied Without Its Largest Name
 
-Two weeks ago the question was the bill. Last week it was who pays it. This week the market asked whether they'll be allowed to build it at all.
+Last week the market asked where the buildout gets built. This week the buyers answered, and the market found a new question in the biggest company.
 
-**Act I — The Deal and the Break (Mon).** Marvell signed Lumentum at $115B all-stock and fell more than 10%. Micron fell 5.8% on memory-pricing worry. **SMH closed $508.31, its first close under the 200D this year.** ISM manufacturing beat (55.5). Apple beat after the close and guided margin down on memory.
+**Act I — The Rebound (Mon).** SMH +5.05%, AMD +13.3%, MU +6.3%. VIX fell under 22. **NVDA -4.27%** as reports on Jensen Huang began.
 
-**Act II — The Prints (Tue–Wed).** The country voted. AMD posted a record quarter after Tuesday's close. Wednesday the sweep was read as *easing* capex pressure; Apple had its best day in over a year; Qualcomm and Arm reported after the close; SMH -2.75%. Diodes, Axcelis and ACM reported Thursday morning and evening.
+**Act II — The CPI and the Buyer (Tue–Wed).** CPI ran hot Tuesday: **+0.4% / core +0.3%**. The 10-year rose 12bp. NVDA fell another 5.47%. CoreWeave reported after the close and raised its forecast. **Wednesday: CRWV +24.7%, SOX +5.66% with every member up, SMH +4.82% to a $516.65 high.** Baird downgraded NVDA to Neutral with a $200 target. Bond market closed for Veterans Day.
 
-**Act III — The Thursday.** The read flipped to data-center permitting. **SMH -11.21%, SOX -12.25%, MU -17.46%, AMD -17.3%, LRCX -16.4%, TXN -10.7%.** The Nasdaq lost 5.5%. VIX closed 28.18. CoreWeave's bonds crossed 16%.
+**Act III — The Resignation (Thu).** **NVIDIA said Jensen Huang stepped down; Colette Kress is interim CEO.** NVDA touched $148.80 and closed -4.34%. The 10-year closed over 5.00%. **AMAT beat and guided above consensus after the close.**
 
-**Act IV — The Bounce (Fri).** Payrolls 165K, hike odds back to ~79%, and chips bounced anyway: **AMD +11.0%, TSM +6.3%, KLAC +6.7%; AOSL +27.8%, ACMR +13.5%, DIOD +13.2%** on their prints. Taiwan limited short selling.
+**Act IV — The Fade (Fri).** PPI came in softer (+0.3%), but the 10-year still rose to 5.154%. All ten top holdings fell; **AMD -8.75%, SMH -2.99%**. NVDA at $162.85, a 52W closing low.
 
-**The Bottom Line.** The demand data were strong again. What broke is the runway: a political risk to 2027–2028 data-center construction, priced the same week credit for the most levered buyer got expensive. **Next week: CPI Tuesday, AMAT and Cisco Thursday, PPI Friday, then NVDA on Nov 17.**
+**The Bottom Line.** The supply chain is fine: AMAT, CoreWeave and last week's AMD say so. Rates are not: the 10-year is over 5% and December is priced. And the sector's largest company has no permanent CEO four days before its print. **Next week: Warsh Monday, retail sales Tuesday, NVDA Tuesday after the close, FOMC minutes Wednesday.**
 
 ---
 
@@ -150,71 +150,68 @@ Two weeks ago the question was the bill. Last week it was who pays it. This week
 
 | Company / Event | Ticker | Date | Quarter | Key Metric to Watch |
 |---|---|---|---|---|
-| **October CPI** | — | Nov 10, 2026 (8:30 AM ET; Finviz) | — | Headline cons +0.3%, core +0.2%; the hike case |
-| **10-Year / 30-Year auctions** | — | Nov 10 / Nov 12, 2026 (1:00 PM ET) | — | Refunding sizes held "for the next several quarters" |
-| **Applied Materials** | AMAT | Nov 12, 2026 (Yahoo, AMC) | FQ4 2026 | 2027 WFE; China share; first equipment guide after the vote |
-| **Cisco** | CSCO | Nov 12, 2026 (wiki/tech.md) | FQ1 2027 | AI networking orders |
-| **October PPI** | — | Nov 13, 2026 (8:30 AM ET; Finviz) | — | Cons +0.4%, core +0.3% |
-| **NVIDIA** | NVDA | Nov 17, 2026 (Yahoo, AMC) | FQ3 2027 | **The first data-center pipeline read after the vote; under its 200D** |
-| **Analog Devices** | ADI | Nov 24, 2026 (Finviz, not confirmed) | FQ4 2026 | Analog after TXN's Thursday |
+| **Fed Chair Warsh speaks** | — | Nov 16, 2026 (12:00 PM ET; Finviz) | — | December size: 25bp or 50bp |
+| **October Retail Sales; Industrial Production** | — | Nov 17, 2026 (8:30 / 9:15 AM ET; Finviz) | — | Retail cons 0.0%; IP +0.1% |
+| **NVIDIA** | NVDA | **Nov 17, 2026 (AMC; Earnings Whispers, Wall Street Horizon list as confirmed)** | FQ3 2027 | **First call under interim CEO Kress; data-center guide; China/Southeast Asia exposure; any inventory write-down (Baird flagged $5B). Options imply ±10.8%; EPS cons ~$2.49** |
+| **FOMC Minutes (Oct)** | — | Nov 18, 2026 (2:00 PM ET) | — | Cook and Hammack dissented for a hike in October |
+| **Analog Devices** | ADI | Nov 24, 2026 (Finviz, not confirmed) | FQ4 2026 | Analog after TXN/ADI retook their 50D |
 | **Marvell** | MRVL | late Nov (not confirmed) | FQ3 2027 | Lumentum financing and accretion |
-| **Micron** | MU | December (date not confirmed; Trefis) | FQ1 2027 | Buyback after CHIPS restrictions lapse Dec 9 |
-| **FOMC; Broadcom** | AVGO | Dec 9, 2026 | Q4 FY2026 | December hike ~75–79% |
+| **Micron** | MU | December (date not confirmed; Trefis) | FQ1 2027 | Buyback after CHIPS restrictions lapse Dec 9; TrendForce's slower Q4 |
+| **FOMC; Broadcom** | AVGO | Dec 9, 2026 | Q4 FY2026 | December hike ~88–89% |
 | **US–China trade truce expiry** | — | Jan 10, 2027 | — | Chips, tariffs and rare earths |
 
-> None of the five small-cap watch names reports again this quarter. Dates are Yahoo/Finviz calendar dates and not company-confirmed unless marked. Veterans Day (Wed Nov 11): bond market closed, stocks open.
+> None of the five small-cap watch names reports again this quarter. Dates are Yahoo/Finviz/Earnings Whispers calendar dates and not company-confirmed unless marked. Cisco's FQ1 2027 results (scheduled Nov 12) were not retrieved this run.
 
-**Marky's Binary Event Read:** Last week's binary was AMD, and AMD won the print and lost the week: +9% after hours, -17% Thursday, +11% Friday. **This week's binary is CPI Tuesday.** A hot core (≥ +0.3%) puts December over 85% and takes away the one support this sector had left, falling yields. A soft one won't fix permitting, but it lets the bounce run toward $508. AMAT Thursday is the first big-cap guide after the vote. **NVDA Nov 17 is the one that matters, and I'd rather buy it after the print over the 200D than before it under.**
+**Marky's Binary Event Read:** Last week's binary was CPI, and it went hot: core +0.3%, December over 85%, the 10-year over 5%. Exactly the case I said would take away the falling-yield support, and chips rose anyway on CoreWeave. **This week's binary is NVDA Tuesday, and it's bigger than usual: ±10.8% implied on a 20% fund weight is a ±2% SMH move from one name before anything else trades.** The numbers will probably be fine; the call is the risk. I'd still rather buy NVDA after the print over its 200D ($204.19, 25% overhead) than before it at a 52W low with no CEO.
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- CPI core +0.2% or less; the 10-year breaks 4.75%; December odds under 60%
-- AMAT and NVDA guide through the permitting question with numbers; SMH reclaims $508.31, then the 200D
-- HY OAS back under 3.40%; CoreWeave refinances
-- Memory gets a producer guide or a TrendForce update that holds Q4/Q1 DRAM pricing
+- NVDA prints and guides cleanly under Kress; a named permanent CEO; no China enforcement follow-through
+- The 10-year back under 5.00%; Warsh or the minutes cap December at 25bp
+- SMH closes over the 200D ($523.89) on volume over 11.7M
+- TrendForce's Q1 2027 DRAM call holds or re-accelerates
 
 ### 🔴 Bear Case
-- A close under $445.59, then the April lows
-- Concrete data-center moratoriums or permitting bills from the new Congress or states
-- A funding event: a failed AI-linked bond deal, CoreWeave distress, or a hyperscaler capex cut for cash rather than demand
-- Hot CPI and a December hike with SMH already under its 200D
-- Memory price data finally confirms the selloff: a flat or down Q1 DRAM call
+- NVDA guides light, takes a write-down, or the China inquiry turns into an export-control enforcement action
+- A 50bp December or a 10-year over 5.25%
+- A close under $462.88, then $443–446
+- Memory contract pricing keeps slowing: a flat Q1 DRAM call
 
 ### ⚠️ The Wild Card
-**Permitting.** The sector's 2027–2028 revenue now depends on where data centers can legally connect to power, not just on who pays. No supplier can answer that, and the first official answers come from the new Congress in January. Until then, every print is a beat the market can ignore.
+**NVIDIA governance.** The sector's largest company, 20% of this fund, lost its founder-CEO under reported allegations involving a suspected Chinese intelligence asset and an FBI inquiry. If that becomes an export-control or diversion case, it lands on the whole China-exposed chain, not just NVIDIA.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"I said funding last week. This week it was funding and politics, and the two feed each other. CoreWeave pays sixteen percent, HY is at a cycle high, and payrolls put the hike back. The ten-year fell only because chips did. I stay reduced, no adds, hedges on. My two lines: HY under three-forty and a CPI that doesn't run hot."*
+**Ophelia:** *"CPI ran hot, December is at eighty-eight percent, and the ten-year closed over five. Chips rose five percent anyway, because CoreWeave and Applied told us the buildout's still being paid for. That's the part I was worried about last week, and it held. I stay reduced for a different reason now: rates over five and a governance event in a fifth of the fund. Ten-year back under five and a clean NVIDIA call, then I add."*
 
-**Marky:** *"My stop worked. Out Monday at $508, down under three percent, and the fund went on to lose eleven. The worst day of the year, on two and a half times volume, and I'm not buying the bounce until it takes back $508, then the 200D at $521.76 on real volume. The small caps that printed beat the fund by nine points, so the stock-picking is in there, not in SMH."*
+**Marky:** *"My line was a close over the 200D on real volume. We got to $516.65, seven dollars short, and closed Friday at $486. Failed test from below, no trade, no loss. NVDA is twenty percent of SMH and implies eleven percent either way on Tuesday. I'm flat into it. Over $523.89 I'm in; under $462.88 I'm glad I waited."*
 
-**Cecil:** *"AMD set a record, Diodes set a record, ACM raised the year, and the fund fell eleven percent. That's a multiple story, 25x from 28x, and it's the cheapest this page has been. I still don't add, because the question is now permits, and I can't model permits. My list is NVDA after Nov 17 and TSM back above its 200D. Micron at nine times earnings is the peak, priced, and I'll wait for a DRAM number before I touch it."*
+**Cecil:** *"Applied beat and guided up, CoreWeave raised, AMD went up nineteen percent. The supply chain is fine. NVIDIA at twenty-one times trailing is the cheapest it's been on this page, and I still don't buy it before Tuesday, because the question isn't earnings, it's governance and China. My list: TXN and ADI back over their fifty-day, AMAT after its guide, and TSM once it closes over its two-hundred-day."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance 1.6.0 (pulled Sun Nov 8, ~23:00 ET; 2y daily OHLCV, dividend yield, trailing P/E, beta, market cap, total assets, SMH fund top holdings/weights, **refreshed this week**): SMH, NVDA, TSM, TXN, AVGO, AMD, ADI, MU, ASML, KLAC, SKHY, AMAT, INTC, LRCX, QCOM, MRVL, ARM, SNDK, WDC, AOSL, DIOD, POWI, ACLS, ACMR, SLAB, CEVA, COHU, VECO, ICHR, CRWV, AAPL, ^SOX, ^GSPC, ^IXIC, ^DJI, SPY, ^TNX, ^FVX, ^TYX, ^IRX, ^VIX, DX-Y.NYB, CLZ26.NYM, BZ=F, XLK, XLP, XLE. Friday 2026-11-06 closes vs Friday 2026-10-30 closes (last week's closes matched; no restatements); 20/50/200D MAs; 14-period Wilder RSI; 52W high/low from closes (SMH's 52W range is intraday). Futures and DXY show a partial Sunday-evening bar; Friday values used
-- data/market_state.json (as of 2026-11-06, via wiki/synthesis.md): 2Y 4.51%, settled WTI CLZ26 $90.83. wiki/energy.md (Nov 6): Brent BZF27 $98.32
-- wiki/tech.md (Nov 6): AMD Q3 figures (AMD release), Apple Q4 and memory comments, UBS 30% data-center estimate (Reuters coverage), CoreWeave bond yield (CNBC), HY OAS 3.48% (FRED), Daly, Taiwan short-selling limit, Microsoft–Oracle headline, Bloomberg on systematic selling. **Taken from that page, not re-read first-hand**
-- Trefis (Nov 6), Motley Fool (Nov 5), MarketBeat, investingLive: Micron's Thursday drop and its stated causes. Barron's via search: Micron buyback after Dec 9
-- HPCwire, Data Centre Magazine, The Next Web, Finimize, Lightreading (Nov 2): Marvell–Lumentum terms. Stifel note via search
-- SiliconANGLE (Nov 4), investingLive, 247wallst, tech-insider: Qualcomm FQ4, Arm, GlobalFoundries
-- MarketBeat, The Cerbat Gem (Nov 5–6): AOSL FQ1 2027. Diodes press release (diodes.com), Earnings Whispers, MarketBeat call highlights (Nov 5): DIOD Q3. Power Integrations release and transcript (q4cdn), StockStory, finsee, Benzinga: POWI Q3. Axcelis 8-K (SEC), Panabee, Finviz: ACLS Q3. MENAFN release, MarketBeat, Panabee: ACMR Q3
-- TrendForce (Oct 20, Oct 30), UDN, evertiq: DRAM pricing (carried; conflicting figures noted)
-- Reuters/LSEG, Morningstar, Advisor Perspectives (Nov 6): December odds after payrolls. Finviz economic calendar: payrolls, ISM, next week's dates
-- BIS news page, Khaleej Times, introl.com: export-control status (no new November action found)
-- **Not found this week:** Arm and GlobalFoundries exact figures; Ichor's Q3 results; the cause of COHU's -24%; Axcelis's Q4 guide from the release itself; any new BIS rule; any TrendForce update after Oct 30; Samsung's final Q3 call
-- **Not treated as a major supply shock:** nothing this week interrupted supply. The drop is a demand-runway and funding repricing; the regime issue for it is filed with the economic-calendar update
+- yfinance (pulled Sat Nov 14, ~18:45 ET; 2y daily OHLCV, dividend yield, trailing P/E, beta, market cap, total assets, SMH fund top holdings/weights): SMH, NVDA, TSM, TXN, AVGO, AMD, ADI, MU, ASML, KLAC, SKHY, AMAT, INTC, LRCX, QCOM, MRVL, ARM, SNDK, WDC, AOSL, DIOD, POWI, ACLS, ACMR, SLAB, CEVA, COHU, VECO, ICHR, CRWV, ^SOX, ^GSPC, ^IXIC, ^DJI, SPY, QQQ, IWM, ^TNX, ^FVX, ^TYX, ^IRX, ^VIX, DX-Y.NYB, CL=F, BZ=F, XLK, XLP, XLE, HYG. Friday 2026-11-13 closes vs Friday 2026-11-06 closes (last week's closes matched; no restatements); 20/50/200D MAs; 14-period Wilder RSI; 52W high/low from closes (SMH's 52W range is intraday). ^TNX shows a Veterans Day (Nov 11) value that is not a cash-market close
+- NVIDIA 8-K (CEO transition), CNBC live updates and "longest weekly losing streak since 2012" (Nov 12–13), CNN, Fox Business, ABC News, Decrypt, Yahoo Finance: Huang resignation, Kress interim, board and FBI inquiries (allegations reported, not confirmed)
+- Baird downgrade and Morgan Stanley top-picks removal: SRN News, Crypto Briefing, American Bazaar, Magica (syndicated wire copy; Baird's note not read first-hand)
+- Earnings Whispers, Wall Street Horizon, MarketChameleon, EarningsWatcher: NVDA Nov 17 date, ~$2.49 EPS consensus, ±10.8% implied move
+- Yahoo Finance, Kalkine, Milton Berg, Motley Fool, 24/7 Wall St., investingLive, Alphastreet (Nov 11): CoreWeave print, SOX +5.66%, AMD/AVGO rotation
+- Benzinga, SiliconANGLE, Investing.com (Nov 12): AMAT FQ4 2026 and FQ1 2027 guide
+- TrendForce (Nov 11–12) via Capital Times, Crypto Briefing; TrendForce DRAM spot page: Q4 DRAM contract and spot
+- CNBC, Seeking Alpha (Nov 10, Nov 13): CPI and PPI. Investing.com/CME FedWatch, Yahoo Finance (Nov 13–14): December odds. Finviz economic calendar: next week's dates
+- Finviz news feed (AOSL, DIOD, POWI, ACLS, ACMR): no new company items Nov 9–13; Earnings Whispers post-earnings notes (Nov 4–5)
+- IAPS, Baker McKenzie, BIS: export-control status (no new November action found)
+- **Not found this week:** Cisco FQ1 2027 results; the cause of AOSL's -10.9% Friday; any new BIS rule; HY OAS for Nov 13; a TrendForce Q1 2027 call confirmed on TrendForce's own site
+- **Major-event note:** NVIDIA's CEO resignation is a governance shock to the sector's largest name, **not a supply shock**: nothing interrupted production or shipments. It is flagged in the run summary; a GitHub issue is filed only if the Finish rule's criteria are met
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-11-08 (data through Fri 2026-11-06 close; late Sunday-night run)*
+*Last updated by Saturday Research Crew: 2026-11-14 (data through Fri 2026-11-13 close)*
 *Next update: Every Saturday 6:33 PM ET*
 *Data sources: yfinance, SIA, market data feeds, company filings, web search*
