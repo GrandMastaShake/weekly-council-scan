@@ -2,30 +2,30 @@
 
 > **Sector:** Industrials | **ETF:** Industrial Select Sector SPDR (XLI) | **Expense Ratio:** 0.08%
 >
-> *"The election hit this fund twice. Wednesday defense sold off on fears the new Congress will cut spending (WSJ, MarketWatch): Lockheed -6.9%, its worst day since July 2025. Thursday the data-center scare reached the power names (WSJ: "industrial stocks drop amid fears of AI data center slowdown"): Eaton -7.4% after -9.9% the day before, GE Vernova -7.5%, Caterpillar -6.4% to its lowest close since November 2025. XLI fell 2.83% to $162.67, with Thursday's -4.1% its worst day since April 2025, and closed under the $162.97 low of the move. An eighth weekly close under the 200-day. On the other side: 3M +6.2% on a $7.4B PFAS settlement, GE +7.1%, Uber +5.1%. ISM manufacturing 55.5, payrolls +165K."*
+> *"Monday did the week. XLI rose 3.8% that day, with Caterpillar +7.2% leading a Dow rally of more than 1,100 points intraday (MarketWatch), and finished the week +3.76% at $168.78, back over last week's broken $165.44 line and briefly over the 50D, but still under the 200D for a ninth straight Friday. Fifteen of seventeen large names rose: CAT +7.4%, CSX +6.0%, FDX +5.2%, LMT +5.1%, RTX +4.8% as the defense fear eased and S&P upgraded RTX to A-. Boeing fell 1.1% after cutting about 5% of its commercial-airplanes workforce. JPMorgan cut targets on the AI-exposed electrical names. The 10-year rose 29bp to 5.15% and the dollar to 103.41."*
 
 ---
 
 ## ETF SNAPSHOT
 
-| Metric | Current | 1W Ago (Oct 30) | Change |
+| Metric | Current | 1W Ago (Nov 6) | Change |
 |---|---|---|---|
-| Price | $162.67 | $167.40 (settled) | **-2.83% W/W**, an eighth weekly close below the 200D |
-| 52W Range | $145.48 – $187.69 (adjusted bars) | $145.48 – $187.69 | Price 12.5% under the high close ($186.01) |
-| AUM | ~$31.2B (Yahoo totalAssets) | ~$29.8B | Refreshed for the first time in weeks |
-| YTD Return | **+5.7%** (price basis, daily bars; Dec 31 base $153.89) | +8.8% | SPY ~+8.7% on the same basis |
-| 1Y Return | +7.4% | +9.2% | 252-session daily-bar basis |
-| P/E Ratio | ~26.1 (Yahoo trailing) | ~27.5 | Down with price |
+| Price | $168.78 | $162.67 (settled) | **+3.76% W/W**; a ninth weekly close below the 200D |
+| 52W Range | $145.48 – $187.69 (adjusted bars) | $145.48 – $187.69 | Price 9.3% under the high close ($186.01, Aug 14) |
+| AUM | ~$31.2B (Yahoo totalAssets) | ~$31.2B | Unchanged |
+| YTD Return | **+9.7%** (price basis, daily bars; Dec 31 base $153.89) | +5.7% | SPY ~+11.5% on the same basis |
+| 1Y Return | +10.6% | +7.4% | 252-session daily-bar basis |
+| P/E Ratio | ~27.1 (Yahoo trailing) | ~26.1 | Up with price |
 | Dividend Yield | ~1.13% | ~1.13% | Yahoo figure |
-| Beta | 1.00 (3Y) | 1.01 | Yahoo figure |
+| Beta | 1.00 (3Y) | 1.00 | Yahoo figure |
 | Total Holdings | 78 | 78 | Carried |
-| Avg Daily Volume | ~11.8M this week (20D avg 8.9M) | ~8.0M | Thursday 19.3M, the heaviest; Friday 8.1M |
+| Avg Daily Volume | ~6.9M this week (20D avg 8.8M) | ~11.8M | Monday 9.1M the heaviest; a rally on light volume |
 
-Week path: Mon $169.71, Tue $171.32 (H $172.40), Wed $169.46, Thu **$162.47**, Fri **$162.67** (O $162.62 / H $163.84 / L $161.74, vol 8.1M). Pulled Fri Nov 6 evening; every last bar dated Nov 6, not re-pulled with repair.
+Week path: Mon **$168.89**, Tue $168.73, Wed **$170.97** (H $171.41), Thu $169.44 (H **$171.60**), Fri $168.78 (O $170.54 / H $170.73 / L $167.50, vol 6.8M). Pulled Fri Nov 13 evening; every last bar dated Nov 13, not re-pulled with repair.
 
-**Marky Tape Read:** I set the reclaim at a close over the 200D on volume, and a stop at $165.44. **Monday** +1.4% to $169.71. **Tuesday** traded to **$172.40**, 23 cents under the 200D ($172.63), and closed $171.32: the reclaim never printed. **Wednesday** -1.1% to $169.46 as defense sold. **Thursday** -4.1% to **$162.47** on **19.3M**, more than double the 20D: through $165.44 and the $162.97 low of the move in one session, the lowest close since Mar 31. **Friday** made a new low at **$161.74** and closed $162.67 on 8.1M, a bounce nobody traded. RSI 37.7 from 46.1. 20D $167.51, 50D $169.33, 200D $172.65, with the 50D still under the 200D.
+**Marky Tape Read:** Last week I said a close back over $165.44 was the first sign, and the 200D on volume the reclaim. **Monday** gapped to $165.75, traded down to $165.05, and closed **$168.89**, +3.8%, on 9.1M: the first sign, on the first day. **Tuesday** $168.73 on 5.4M. **Wednesday** **$170.97**, over the 50D ($169.03). **Thursday** traded to **$171.60**, $1.17 under the 200D ($172.77), and closed $169.44, still over the 50D. **Friday** $168.78, 9 cents under the 50D ($168.87). RSI **50.6** from 37.7. 20D $167.82 now turning up; 50D $168.87 flat and still under the 200D ($172.80). **The reclaim did not print and the volume never came**: every day was under the 20D average.
 
-**Ophelia Macro Read:** The data said one thing and politics another. **ISM manufacturing 55.5** (54.6 expected), new orders 55.5, prices paid **75.2** from 77.9; **ISM services 54.5**; factory orders +1.8%; **payrolls +165K** with manufacturing +19K; unemployment 4.1% (Finviz calendar). Atlanta Fed GDPNow 3.4% for Q4. That is a cycle that is fine and input costs that are easing a little. Then the vote: a Democratic Congress was read as **lower defense spending** (MarketWatch: defense "take a beating amid fears the new Congress will cut spending") and as **slower data-center construction** (UBS: ~30% of planned 2028 additions at risk, Reuters coverage). The 10Y fell 8bp to **4.86%**. WTI fell to **$90.34** on a Friday-evening read (CL=F) from **$104.12 settled** last week (CLZ26), about -$13.8, provisional, on US–Iran diplomacy. The dollar rose to 102.28 (Fri evening). **The data justified more than the price paid, again; the price this week was political.**
+**Ophelia Macro Read:** No ISM this week; the data were inflation. October CPI **+0.4%**, core **+0.3%** vs 0.2%; core PPI +0.3% in line, PPI y/y **6.5%** (Finviz calendar). The 10Y rose **29bp to 5.15%** and the 2Y 37bp to 4.88% (Treasury par) as coverage put December hike odds near 85% (secondary, FedWatch). That is a capex-financing headwind. NFIB optimism **97.8**, claims 200K, the October deficit **$404B**. The dollar rose to **103.41** (Fri evening, DX-Y.NYB), a headwind for exporters (CAT, DE). WTI **$88.92 (Fri evening, CL=F)** vs **$90.83 settled last week (CLZ26)**, provisional; IBD wrote of "stubborn diesel prices" for the rails (headline). The defense fear of last week eased with no budget news: S&P upgraded RTX to **A-** on demand and debt reduction (Investing.com), and Lockheed booked new contracts (Stocktwits, headline). **The price this week was a relief rally; the macro got slightly worse.**
 
 ---
 
@@ -33,34 +33,35 @@ Week path: Mon $169.71, Tue $171.32 (H $172.40), Wed $169.46, Thu **$162.47**, F
 
 | Rank | Ticker | Name | Weight | Price | W/W Change | Mean Target | Implied | Signal |
 |---|---|---|---|---|---|---|---|---|
-| 1 | GE | GE Aerospace | 5.88% | $323.24 | **+7.10%** | $378.43 | +17.1% | ⚡ |
-| 2 | CAT | Caterpillar | 5.38% | $558.63 | **-10.30%** | $823.41 | +47.4% | 🔴 |
-| 3 | RTX | RTX Corp | 5.06% | $189.53 | **-5.14%** | $227.91 | +20.3% | ⚠️ |
-| 4 | GEV | GE Vernova | 4.29% | $774.11 | **-9.76%** | $1,187.07 | +53.3% | 🔴 |
-| 5 | UNP | Union Pacific | 3.39% | $290.16 | **-4.55%** | $331.38 | +14.2% | ⚡ |
-| 6 | DE | Deere & Company | 3.19% | $671.65 | -0.57% | $694.01 | +3.3% | ⚡ |
-| 7 | ETN | Eaton Corp | 2.70% | $341.72 | **-7.64%** | $480.55 | +40.6% | 🔴 |
-| 8 | BA | Boeing | 2.55% | $173.40 | +1.08% | $233.35 | +34.6% | 🔴 |
-| 9 | UBER | Uber Technologies | 2.50% | $68.59 | **+5.12%** | $100.77 | +46.9% | ⚠️ |
-| 10 | LMT | Lockheed Martin | 2.43% | $567.08 | **-10.97%** | $660.86 | +16.5% | 🔴 |
-| 11 | PH | Parker Hannifin | (outside top 10) | $917.79 | +2.00% | $1,152.58 | +25.6% | ⚠️ |
-| 12 | HON | Honeywell | (outside top 10) | $220.05 | +0.79% | $253.91 | +15.4% | ⚡ |
-| 13 | UPS | United Parcel | (outside top 10) | $108.30 | +0.05% | $115.42 | +6.6% | 🔥 |
-| 14 | FDX | FedEx | (outside top 10) | $308.14 | -1.64% | $357.00 | +15.9% | ⚡ |
-| 15 | CSX | CSX Corp | (outside top 10) | $49.12 | **-5.52%** | $53.81 | +9.5% | ⚡ |
-| — | MMM | 3M | (outside top 10) | $185.15 | **+6.20%** | $192.07 | +3.7% | 🔥 |
-| — | ITW | Illinois Tool Works | (outside top 10) | $280.95 | +0.86% | $294.14 | +4.7% | ⚡ |
+| 1 | GE | GE Aerospace | 5.88% | $331.81 | +2.65% | $378.43 | +14.1% | ⚡ |
+| 2 | CAT | Caterpillar | 5.38% | $600.20 | **+7.44%** | $815.26 | +35.8% | ⚠️ |
+| 3 | RTX | RTX Corp | 5.06% | $198.58 | **+4.77%** | $227.91 | +14.8% | ⚡ |
+| 4 | GEV | GE Vernova | 4.29% | $803.13 | +3.75% | $1,178.39 | +46.7% | 🔴 |
+| 5 | UNP | Union Pacific | 3.39% | $302.44 | **+4.23%** | $329.96 | +9.1% | ⚡ |
+| 6 | DE | Deere & Company | 3.19% | $673.54 | +0.28% | $694.01 | +3.0% | ⚡ |
+| 7 | ETN | Eaton Corp | 2.70% | $352.97 | +3.61% | $468.59 | +32.8% | 🔴 |
+| 8 | BA | Boeing | 2.55% | $171.50 | -1.10% | $233.35 | +36.1% | 🔴 |
+| 9 | UBER | Uber Technologies | 2.50% | $69.69 | +1.60% | $98.88 | +41.9% | ⚠️ |
+| 10 | LMT | Lockheed Martin | 2.43% | $596.04 | **+5.11%** | $660.86 | +10.9% | ⚡ |
+| 11 | PH | Parker Hannifin | (outside top 10) | $955.68 | **+4.35%** | $1,137.60 | +19.0% | ⚡ |
+| 12 | HON | Honeywell | (outside top 10) | $222.46 | +1.41% | $254.48 | +14.4% | ⚡ |
+| 13 | UPS | United Parcel | (outside top 10) | $112.40 | **+3.79%** | $115.46 | +2.7% | 🔥 |
+| 14 | FDX | FedEx | (outside top 10) | $324.14 | **+5.19%** | $356.62 | +10.0% | 🔥 |
+| 15 | CSX | CSX Corp | (outside top 10) | $52.05 | **+5.96%** | $53.81 | +3.4% | 🔥 |
+| — | MMM | 3M | (outside top 10) | $183.66 | -0.39% | $193.43 | +5.3% | ⚡ |
+| — | ITW | Illinois Tool Works | (outside top 10) | $287.52 | +2.34% | $294.62 | +2.5% | ⚡ |
 
-> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Under pressure (below its 50D) | 🔴 = Breakdown (below 50D and 200D, or the week's worst). Prices = Fri Nov 6 close; W/W vs the Oct 30 daily bar; **no restatements** against last week's page. Targets = Yahoo mean (pulled Nov 6): **CAT's fell again, $902.34 → $823.41**; GEV's $1,194.82 → $1,187.07; ETN's $485.47 → $480.55; LMT's rose $652.57 → $660.86. **Weights = Yahoo funds_data, refreshed this week for the first time in five:** GE is now #1 (5.88%) over CAT (5.38%, from 7.0%); **LMT entered the top ten at #10 and PH left it.**
+> 🔥 = New high / strong momentum | ⚡ = Neutral / stable | ⚠️ = Under pressure (below its 50D) | 🔴 = Breakdown (below 50D and 200D, or the week's worst). Prices = Fri Nov 13 close; W/W vs the Nov 6 daily bar. **Restatements: four Nov 6 closes read lower on the adjusted bars than on last week's page — ETN $341.72 → $340.67, PH $917.79 → $915.87, HON $220.05 → $219.36, MMM $185.15 → $184.37 — consistent with dividend adjustments (not checked further).** Targets = Yahoo mean (pulled Nov 13): **CAT's fell again, $823.41 → $815.26**; **ETN's $480.55 → $468.59** and GEV's $1,187.07 → $1,178.39 after JPMorgan's cuts; UBER's $100.77 → $98.88. **Weights = Yahoo funds_data, unchanged from last week**; same ten names.
 
-**Sector Bifurcation — eight up, nine down; the political names fell, the self-help names rose:**
+**Sector Breadth — fifteen of seventeen rose; Boeing and 3M fell:**
 
-1. **Defense — the vote (Wed Nov 4).** **LMT -6.9% Wednesday**, its worst day since Jul 22, 2025, and **-11.0% on the week**; **RTX -5.1%**, both down every day from Wednesday. WSJ: "Defense stocks sell off after Democrats' midterm gains." Stocktwits' defense watch: strong Q3s and new contracts, but the sweep "poses spending hurdles." Lockheed also agreed to pay $29.5M to settle a federal probe over diversity efforts (WSJ, Nov 3). No contract cancellation sourced. By weight × move the two cost the fund about 0.5 point.
-2. **AI power — the data-center scare (Wed–Thu).** **ETN** reported Tuesday Nov 3: a beat and a third raise, organic growth **19%**, with a debt-funded expansion flagged (Earnings Whispers); **+7.0% Tuesday, then -9.9% Wednesday (its worst day since Jan 2025) and -7.4% Thursday**; -7.6% on the week. **GEV +6.5% Tuesday, -9.3% and -7.5%** after; -9.8%, its lowest close since February on Thursday. **CAT -5.2% and -6.4%**: Thursday's $553.64 was its lowest close since Nov 21, 2025; RSI **21.3**; Investing.com asked why a Dow stock levered to data-center power has fallen 26%. **PH** reported Thursday: beat and raise, organic growth **11.5%**, a leveraged filtration bet (Earnings Whispers); +2.9% Friday, +2.0% on the week.
-3. **Self-help winners.** **MMM +6.2%**: a **$7.4B settlement** of PFAS foam injury claims, paid over nine years (WSJ, Investing.com); +9.5% Wednesday, leading the Dow's rally; UBS says it removes a major overhang (Proactive). **GE +7.1%** with no print; an aviation supplier's orders jumped 49% while Boeing's factories stall (Investing.com, headline). **UBER +5.1%**: Q3 revenue beat with bookings +20%, EPS missed on non-cash charges (Earnings Whispers), a Q4 EPS guide of $0.95–0.99 (Stocktwits), and an Amazon Prime–Uber Eats partnership Thursday (WSJ, IBD); BofA cut its target to $98. **BA +1.1%**.
-4. **Transports gave back.** **UNP -4.6%, CSX -5.5%**, FDX -1.6%, UPS flat; all four fell Thursday and Friday after Wednesday's rally. Lower oil did not help them this week. UP–NS comments at the STB are due Nov 18 (carried).
+1. **Machinery — Monday's rebound.** **CAT +7.2% Monday** led the Dow's rally (MarketWatch), +7.4% on the week, after a 26% slide; Stocktwits reported Michael Burry cashed in CAT puts after a 4x gain (headline). BofA warned of further valuation risk despite machinery strength (Proactive, Nov 11). Still 25% under its 200D ($804.37) with RSI 35.7. **PH +4.4%**, **DE +0.3%** into its Nov 25 print. ITW +2.3%.
+2. **Defense — the fear eased.** **LMT +5.1%**, **RTX +4.8%**, both up Monday through Wednesday and soft Thursday–Friday. **S&P Global upgraded RTX to A-** on strong demand and debt reduction (Investing.com, Nov 13); Raytheon completed a third DeepStrike flight test (InvestorsHub); NASA awarded $10B in moon-base contracts, SpaceX and Blue Origin the winners (IBD, headline). No cancellation sourced.
+3. **AI power — a bounce, and a downgrade.** **GEV +7.1% Monday**, +3.8% on the week; **ETN +3.6%**. **JPMorgan "grows wary on AI-exposed industrials, lowers price targets"** on ETN and GEV (Investing.com, Nov 11). GEV's Ontario nuclear plant faces delays and rising costs (Stocktwits, headline); MarketWatch on SoftBank "back-pedaling on a gas-turbine order" (headline). GEV won a German wind order (InvestorsHub).
+4. **Transports — the best lane.** **CSX +6.0%**, **FDX +5.2%**, **UNP +4.2%**, **UPS +3.8%**. CSX rose four straight days. The WSJ reported the railroad CEO's "loose lips" threaten his $72B megadeal (UP–NS, headline); STB comments are due **Nov 18**.
+5. **Boeing and 3M.** **BA -1.1%**, its lowest close since Oct 28, as **Boeing Commercial Airplanes cuts about 5% of its workforce with 737 production growth stalled** (WSJ, Investing.com, Nov 9). **MMM -0.4%**, consolidating after last week's PFAS-settlement jump.
 
-**Cecil Fundamental Read:** CAT at 17.3x forward and a 47% gap, and the Street just cut its target another $79. I said I would hold and not add until a clean margin quarter, and nothing this week was a margin quarter. I hold. GE, the small position, is up 7.1%, and up about 13% since I started it at $285.64; I keep it. The new value is in the names the election sold, not the ones it explains: **LMT at 17.0x forward with a 16.5% gap** fell 11% on a spending fear with no cancellation behind it. Defense budgets move in years, not weeks. **I start a third of LMT.** ETN at 21.0x and a 41% gap after a beat-and-raise goes on the list; I wait for the data-center question to get a number.
+**Cecil Fundamental Read:** CAT's target fell another $8 and the stock rose 7.4%; I held and did not add, and I still do not, because no margin quarter has come and BofA is right that the multiple is not cheap on these earnings. GE, my small position from $285.64, is up 16%. **LMT, the third I started at $567.08, is up 5.1%.** The thesis was that budgets move in years, not weeks, and it held for one week; I do not add on a week. ETN stays on my list: JPMorgan cut its target, which is the kind of reset I wanted before buying, and I want one more: a quarter that shows the data-center orders converting.
 
 ---
 
@@ -68,13 +69,13 @@ Week path: Mon $169.71, Tue $171.32 (H $172.40), Wed $169.46, Thu **$162.47**, F
 
 | Ticker | Name | Market Cap | Price | W/W Change | Catalyst / Note | Council Read |
 |---|---|---|---|---|---|---|
-| AZZ | AZZ Inc | **$3.76B** ✓ | $125.71 | **-6.5%** | No company headline; **-7.6% Thursday**, its worst day on the two-year bars, with the power names; next report Jan 6 (Yahoo) | ⚠️ Under all three averages; Thursday's $122.22 was its lowest close since Mar 30. It trades with the grid. |
-| PRIM | Primoris Services | **$3.44B** ✓ | $65.40 | **-10.1%** | **Reported Tue Nov 3:** a beat as margins rebound, with renewables and cash-flow cuts keeping the recovery unproven (Earnings Whispers); "surges on earnings beat, strong guidance" (Investing.com) | 🔴 +7.8% Tuesday, then **-14.0% and -13.0%**: Thursday's $59.56 was its lowest close since Apr 24, 2025. +9.8% Friday. The print was fine; the AI-power trade was not. |
-| TRN | Trinity Industries | **$2.30B** ✓ | $29.43 | -0.1% | No new headline; last week's Q3 (2,190 railcar orders, EPS -28.9% y/y) carried | ⚡ Held most of last week's +15%; over its 20D and 50D (~$27.1), under its 200D ($30.90). |
-| BLBD | Blue Bird | **$1.98B** ✓ | $58.09 | **+3.9%** | No fresh headline; report **Nov 25** (Yahoo) | ⚡ Back over its 20D ($57.36), just under its 50D ($58.49). Target $90.14. |
-| MATV | Mativ Holdings | **$0.65B** ✓ | $11.70 | +3.2% | **Reported Wed Nov 4:** cleared a low EPS bar with record growth in its FAM unit, but SAS weakness and a softer Q4 guide (Earnings Whispers) | ⚡ +8.3% Wednesday, -5.3% Friday. Over its 20D and 200D; under its 50D ($11.89). |
+| AZZ | AZZ Inc | **$4.00B** ✓ | $133.60 | **+6.3%** | No fresh headline (Finviz feed checked); +5.7% Monday with the power names; next report Jan 6 (Yahoo) | ⚡ Back to its 20D ($133.66); under its 50D ($134.99) and 200D ($138.19). **Cap is $1.0B from the line**; graduation watch. |
+| PRIM | Primoris Services | **$3.64B** ✓ | $69.30 | **+6.0%** | No fresh headline; the Nov 3 beat (margins rebound; renewables and cash-flow cuts, Earnings Whispers) carried | ⚠️ +8.9% Monday, then faded. Under its 20D ($70.50), 50D ($74.28) and far under its 200D ($109.47). |
+| TRN | Trinity Industries | **$2.39B** ✓ | $30.54 | +3.8% | No new headline; the Q3 (2,190 railcar orders, EPS -28.9%) carried | 🔥 Over its 20D and 50D (~$27.8) and now within 1.4% of its 200D ($30.98). RSI 63.7. Rides the rails' week. |
+| BLBD | Blue Bird | **$1.89B** ✓ | $55.43 | **-4.6%** | No fresh headline; report **Nov 25** (Yahoo) | ⚠️ +3.8% Monday, then -4.9% Tuesday and -3.7% Thursday. Under all three averages. 6.6x trailing, target $90.14. |
+| MATV | Mativ Holdings | **$0.65B** ✓ | $11.79 | +0.8% | No new headline; the Nov 4 print (record FAM growth, softer Q4 guide) carried | ⚡ On its 20D ($11.77), a hair under its 50D ($11.88), over its 200D. |
 
-*Caps verified via Yahoo marketCap at the Nov 6 close — all five sub-$5B. No graduations, no swaps. Bench: GVA (graduated past $5B last week) and GBX were not re-pulled this week. I do not add a sixth name.*
+*Caps verified via Yahoo marketCap at the Nov 13 close — all five sub-$5B; AZZ is closest at $4.00B. No graduations, no swaps. No watch name had fresh company news this week. Bench: **GVA $124.52 (+3.3%), cap $5.50B — still graduated**; GBX $41.40 (+0.5%), $1.28B.*
 
 ---
 
@@ -82,19 +83,20 @@ Week path: Mon $169.71, Tue $171.32 (H $172.40), Wed $169.46, Thu **$162.47**, F
 
 | Level | Price | Significance |
 |---|---|---|
-| 52W High (close) | $186.01 | Price 12.5% under |
-| 200-Day MA | **$172.65** | **Eighth straight weekly close below**; Tuesday's $172.40 high stopped 23 cents under it |
-| 50-Day MA | $169.33 | Falling; still under the 200D |
-| 20-Day MA | $167.51 | Turning down; 3.0% above price |
-| Old Stop | $165.44 | Last week's range low; **lost Thursday** |
-| Prior Low | $162.97 | Oct 23 intraday; **lost Thursday** |
-| Current Price | $162.67 | Friday close; -2.83% W/W |
-| Thursday Close | $162.47 | Lowest close since Mar 31 |
-| Week Low | $161.74 | Friday intraday; the new low of the move |
-| Next Support | $160.39 – $160.90 / $155.81 | Mar 20 and Mar 31 closes, then the Mar 30 close, the low of that drawdown |
-| RSI (14) | 37.7 | From 46.1. CAT 21.3, GEV 35.2, ETN 37.0, BA 38.5 at the low end; MMM 62.2, UPS 61.3 at the top |
+| 52W High (close) | $186.01 | Aug 14; price 9.3% under |
+| 200-Day MA | **$172.80** | **Ninth straight Friday close below**; Thursday's $171.60 high stopped $1.17 under it |
+| Week High | $171.60 | Thursday intraday |
+| Wednesday Close | $170.97 | High close of the week |
+| 50-Day MA | $168.87 | Flat; closed over it Wed and Thu, 9 cents under Friday |
+| Current Price | $168.78 | Friday close; +3.76% W/W |
+| 20-Day MA | $167.82 | Turning up; 0.6% below |
+| Week Low | $165.05 | Monday intraday |
+| Old Stop / First Sign | $165.44 | Retaken Monday; held every close |
+| Prior Week Low | $161.74 | Nov 6 intraday, the low of the move |
+| Next Support | $160.39 – $160.90 / $155.81 | Mar 20 and Mar 31 closes, then the Mar 30 close |
+| RSI (14) | 50.6 | From 37.7. CAT 35.7, BA 37.8 at the low end; UPS 64.9, TRN 63.7, FDX 61.5 at the top |
 
-**Marky Setup Assessment:** Flat, and the stop I gave for a re-entry ($165.44) is gone along with the low of the move. I do not chase a new low into a bounce on 8.1M shares. **The line moves down: a close back over $165.44 is the first sign; the reclaim is still a close over the 200D ($172.65) on volume over the 20D average.** A close under $161.74 opens the March zone. CAT at RSI 21.3 is the most oversold name on the page and 5.4% of the fund, and GEV and ETN are with it. Leadership is narrow in the wrong way: the three names that rose most (MMM, GE, UBER) each had their own news.
+**Marky Setup Assessment:** The first sign printed Monday; the reclaim did not. I said I would not chase a new low into a bounce, and I did not chase the bounce either. **I take a starter on Monday's signal only now that Wednesday and Thursday closed over the 50D: a third, with the stop at $165.44 on a close.** The full position waits for the 200D ($172.80) on volume over the 20D average (8.8M), which no day this week came near. The tape is a relief rally on light volume: 6.9M a day against 11.8M on last week's selling. Transports led, and that is the healthiest leadership this fund has had in a month; machinery bounced off an RSI of 21 and is still 25% under its own 200D.
 
 ---
 
@@ -102,106 +104,96 @@ Week path: Mon $169.71, Tue $171.32 (H $172.40), Wed $169.46, Thu **$162.47**, F
 
 | Factor | Latest Reading | Trend | Impact on Industrials |
 |---|---|---|---|
-| **ISM Manufacturing (Oct, Nov 2)** | **55.5** vs 54.6 expected (54.5 prior); new orders 55.5; employment 52.4; **prices 75.2** from 77.9 | ▲ | 🟢 A beat, with input costs easing for the first time in this run |
-| ISM Services (Oct, Nov 4) | 54.5 vs 54.8; prices 73.0 | ▶ | 🟡 |
-| Factory Orders (Sep, Nov 3) | **+1.8%** vs 1.2%; ex-transport +1.3%; durable goods final ex-defense +2.3% | ▲ | 🟢 |
-| Labor | Payrolls **+165K** vs 65K; manufacturing **+19K**; unemployment 4.1%; Q3 productivity +3.6%, unit labor costs -0.7% | ▲ | 🟢 |
-| GDPNow (Q4, Nov 4) | 3.4% (from 3.7%) | ▶ | 🟢 |
-| LMI Logistics Managers (Oct) | 70.7 from 70.2 | ▲ | 🟢 Freight demand firm |
-| Fed Posture | 3.75–4.00%; held 10-2 Oct 28; Daly: higher rates "likely to be needed" | ▲ | 🟡 December hike still live |
-| 10Y Treasury Yield | **4.86% Fri** (par), -8bp; 30Y 5.26% | ▼ | 🟢 Capex financing cost eased |
-| WTI / Diesel | WTI **$90.34 (Fri evening, CL=F)** vs **$104.12 settled last week (CLZ26)**; Brent $97.76 (Fri evening) | ▼ (provisional) | 🟢 Fuel relief, about -$13.8, not a settlement and not a roll. The transports fell anyway |
-| **Defense Backdrop** | Democratic sweep read as a spending risk (WSJ, MarketWatch); strong Q3s and new contracts (Stocktwits) | ▼ | 🔴 LMT -11.0%, RTX -5.1%. No cancellation sourced |
-| **AI / Power Buildout** | WSJ (Nov 5): industrials drop on fears of an AI data-center slowdown; UBS: ~30% of 2028 US additions at risk from construction pauses; Goldman raised its global data-center capacity forecast to 273 GW by 2030 (Investing.com) | ▼ | 🔴 GEV, ETN, CAT, PRIM, AZZ. Demand forecasts rose while the stocks fell on permitting risk |
-| Tariffs | CAT's $2.2–2.4B of 2026 tariff cost (carried) | ▶ | 🔴 Margin |
-| Legal | 3M's $7.4B PFAS injury settlement over nine years | ▲ | 🟢 MMM +6.2% |
-| Aerospace | GE +7.1%; supplier orders +49% while Boeing's factories stall (Investing.com, headline) | ▶ | 🟢 Engines over airframes still |
-| Regulatory — Ag Equipment | FTC/USDA inquiry, comments due **Dec 7** (carried) | ▶ | DE -0.6% into its Nov 25 print |
-| DXY | **102.28** (Fri evening, DX-Y.NYB), from 101.88 | ▲ | 🟡 A headwind for exporters if it holds |
-| UP-NS Merger (STB) | Comments due **Nov 18** (carried) | ▶ | UNP -4.6% |
-| China | Nvidia chips piling up in Hong Kong awaiting import approval (Reuters); last week's PMI contraction carried | ▼ | 🟡 Not quantified for CAT/DE |
+| ISM Manufacturing (Oct, Nov 2) | 55.5; prices 75.2 (carried; next print Dec 1) | ▶ | 🟢 |
+| CPI / PPI (Oct) | CPI **+0.4%**, core **+0.3%** (0.2% exp.); PPI +0.3%, core PPI +0.3%, PPI y/y **6.5%** | ▲ | 🔴 Input-cost and rate pressure |
+| NFIB Small Business (Oct) | **97.8** (97.7 exp., 97.9 prior) | ▶ | 🟡 |
+| Claims | Initial **200K** (195K exp.); continuing 1.70M | ▶ | 🟢 |
+| GDPNow (Q4, Nov 9) | **3.5%** | ▶ | 🟢 |
+| Fed Posture | 3.75–4.00%; ~85% December hike odds in secondary coverage of FedWatch; BofA now sees December and January hikes | ▲ | 🔴 Capex financing cost |
+| 10Y Treasury Yield | **5.15% Fri** (par), +29bp; 30Y 5.47% | ▲ | 🔴 Back over 5% (standing issue) |
+| WTI / Diesel | WTI **$88.92 (Fri evening, CL=F)** vs **$90.83 settled last week (CLZ26)**; Brent $96.08 (Fri evening); EIA distillate stocks +4.07M | ▶ (provisional) | 🟡 IBD: diesel prices "stubborn" for the rails |
+| **Defense Backdrop** | No budget action; S&P upgrades RTX to A-; new LMT contracts (Stocktwits); NASA $10B moon-base awards | ▲ | 🟢 LMT +5.1%, RTX +4.8%. No cancellation sourced |
+| **AI / Power Buildout** | JPMorgan wary on AI-exposed industrials, cuts ETN and GEV targets (Nov 11); GEV Ontario nuclear delays (Stocktwits); SoftBank turbine-order report (MarketWatch); Citi: rising costs will not halt the data-center boom (Investing.com, Nov 11) | ▶ | 🟡 A bounce, not a re-rating |
+| Aerospace | Boeing cuts ~5% of commercial-airplanes staff, 737 production growth stalled (WSJ); GE +2.7% | ▼ | 🔴 BA; 🟢 engines over airframes |
+| Tariffs | CAT's 2026 tariff cost (carried) | ▶ | 🔴 Margin |
+| Regulatory — Ag Equipment | FTC/USDA inquiry, comments due **Dec 7** (carried) | ▶ | DE into Nov 25 |
+| DXY | **103.41** (Fri evening, DX-Y.NYB), from 102.30 | ▲ | 🔴 Exporters (CAT, DE) |
+| UP–NS Merger (STB) | Comments due **Nov 18**; WSJ: the CEO's remarks threaten the $72B deal (headline) | ▶ | UNP +4.2% anyway |
+| China | Washington's Nvidia-chip efforts could spark a short US-China trade spat (MarketWatch, headline) | ▼ | 🟡 Not quantified for CAT/DE |
 
-**Ophelia Verdict:** The ISM did what I wanted: 55.5 and prices paid down to 75.2. The data justifies more than this price, for a second straight week. But the week's selling was not cyclical. It was two political reads of one election: defense spending and data-center permits. **I move defense to neutral, from neutral-positive,** because a spending fear in a new Congress lasts until the first budget, and I would rather wait for it than argue with it. **Power and electrical go to cautious, from neutral:** ETN beat and raised and lost 16.5% in two days, which tells me the multiple is now hostage to permitting, not orders. Machinery stays cautious. Rails and parcels stay neutral-positive on ISM and lower diesel. Leadership is **narrow**: three names with their own news rose.
+**Ophelia Verdict:** Last week the data justified more than the price; this week the price caught up while the data I care about for financing got worse. A 5.15% 10-year and a December hike are not what a capex-led sector wants, and the dollar is over 103. **I keep my postures: defense neutral** (one good week after a fear is not a budget), **power and electrical cautious** (JPMorgan's cut is the Street catching up to my call), **machinery cautious**, **rails and parcels neutral-positive**, and they earned it this week. Leadership broadened, 15 of 17, which is better than last week's three names with their own news. It is still a rally under the 200D on light volume.
 
 ---
 
-## WEEKLY NARRATIVE — The Election Found Two Targets
+## WEEKLY NARRATIVE — One Big Monday, Then a Wait at the 200D
 
-XLI fell **2.83% to $162.67**, a new low for the move, while SPY fell 2.7% and the ISM beat. It is under its 20D, 50D and 200D.
+XLI rose **3.76% to $168.78**, against SPY +2.6%, its best week since Apr 10. It is over its 20D and $165.44, on its 50D, and under its 200D.
 
-**Catalyst 1 — The data (Mon–Tue):** ISM manufacturing 55.5 with prices paid down to 75.2; factory orders +1.8%. XLI rose 2.3% in two days and touched $172.40, 23 cents under the 200D.
+**Catalyst 1 — The Monday rebound (Nov 9):** XLI +3.8% on the week's heaviest volume. CAT +7.2% and GEV +7.1% led; the Dow rallied more than 1,100 points intraday with CAT, Goldman and Cisco at the front (MarketWatch). Last week's political selling in defense and AI power found buyers: LMT +3.7%, RTX +3.6% that day. The same day, Boeing said it would cut about 5% of its commercial-airplanes workforce as 737 production growth stalls.
 
-**Catalyst 2 — Eaton and Primoris (Tue Nov 3):** Both beat; ETN raised for a third time on 19% organic growth. ETN +7.0%, PRIM +7.8% that day.
+**Catalyst 2 — Hot CPI (Tue Nov 10):** Core CPI +0.3% against 0.2%. The 10-year went on to 5.15% by Friday. XLI held Monday's gain but stopped rising.
 
-**Catalyst 3 — Defense and 3M (Wed Nov 4):** The Democratic sweep was read as a defense-spending risk. LMT -6.9%, RTX -2.6%. 3M settled PFAS injury claims for $7.4B and rose 9.5%. The power names fell the same day, ETN -9.9%, GEV -9.3%. XLI -1.1%.
+**Catalyst 3 — JPMorgan on AI power (Wed Nov 11):** JPMorgan grew wary on AI-exposed industrials and cut targets on ETN and GEV, while seeing a possible AI-stock rebound. XLI closed at $170.97, over its 50D.
 
-**Catalyst 4 — The data-center scare (Thu Nov 5):** WSJ: industrials drop on fears of an AI data-center slowdown. XLI -4.1%, its worst day since April 2025, on 19.3M shares. CAT -6.4% to its lowest close since November 2025; PRIM -13.0%; AZZ -7.6%. Parker beat and raised.
+**Catalyst 4 — Transports and defense finish strong (Thu–Fri):** CSX rose four straight days, FDX and UNP added to Monday's gains, and S&P upgraded RTX to A- on Friday. Thursday's push to $171.60 stopped $1.17 under the 200D, and Friday closed 9 cents under the 50D.
 
-**Catalyst 5 — Payrolls (Fri Nov 6):** +165K, manufacturing +19K. XLI made a new low at $161.74 and closed flat.
-
-**The Bottom Line:** Three weeks ago the problem was tariffs at CAT and production at Boeing. This week it was the election, read against defense and against the power buildout, while the cycle data improved. GEV, ETN and CAT all have Street targets 40–53% over price. The data are not the problem; the multiple on the AI-power names is.
+**The Bottom Line:** Last week the fund broke its low on two political reads of the election. This week both reads relaxed and fifteen of seventeen names rose, led by the transports. But the volume never came, the 10-year moved back over 5%, and the 200D held. The data that would justify the reclaim, the December ISM, is two weeks away; Deere on Nov 25 is the last company print.
 
 ---
 
 ## EARNINGS CALENDAR & EVENT WATCH
 
-**Resolved this week:**
-- **ETN (Nov 3)** — beat and raised a third time, organic growth 19% (Earnings Whispers); stock -7.6% on the week
-- **PRIM (Nov 3)** — beat, margins rebound, renewables and cash-flow cuts (Earnings Whispers); -10.1%
-- **UBER (Nov 4)** — revenue beat, bookings +20%, EPS miss on non-cash charges; Q4 EPS guide $0.95–0.99; +5.1%
-- **MATV (Nov 4)** — cleared a low bar; softer Q4 guide; +3.2%
-- **PH (Nov 5)** — beat and raised, organic growth 11.5%; +2.0%
-- **MMM (Nov 3, not earnings)** — $7.4B PFAS settlement; +6.2%
+**Resolved this week:** no reports among the page's names. Corporate news: Boeing's ~5% commercial-airplanes workforce cut (Nov 9); S&P's RTX upgrade (Nov 13).
 
-**Next up** (company dates are Yahoo Finance calendar dates pulled Nov 6 and not all company-confirmed; EPS is the Yahoo consensus mean):
+**Next up** (company dates are Yahoo Finance calendar dates pulled Nov 13 and not all company-confirmed; EPS is the Yahoo consensus mean):
 
 | Date | Event | EPS Est. | What to Watch |
 |---|---|---|---|
-| Next week | October CPI (Reuters week ahead) | — | The hike case after payrolls |
-| Nov 18 | UP–NS merger comments due at the STB | — | — |
-| **Wed Nov 25** | **DE; BLBD** | $4.01 / $1.43 | DE's FY27 guide, China and the ag inquiry; BLBD at a 55% gap to target |
+| Nov 18 | UP–NS merger comments due at the STB | — | After the WSJ's "loose lips" report |
+| **Wed Nov 25** | **DE; BLBD** | $4.01 / $1.43 | DE's FY27 guide, China, the ag inquiry, a 103 dollar; BLBD at a 63% gap to target |
+| Dec 1 | ISM Manufacturing (Nov) | — | Whether 55.5 holds and prices paid keep easing |
 | Dec 7 | FTC/USDA inquiry comment deadline | — | DE, CAT, AGCO, CNH |
-| Jan 6 | AZZ | $1.87 | Galvanizing volumes after a -7.6% day |
-| Jan 21 – Feb 3 | GE (Jan 21); BA, LMT, RTX, UNP, UPS (Jan 26); GEV (Jan 27); CAT, PH (Jan 28); ETN (Feb 2); UBER (Feb 3) | — | The next full round |
+| Dec 8–9 | FOMC | — | A hike into a 5% 10-year |
+| Jan 6 | AZZ | $1.87 | Galvanizing volumes |
+| Jan 21 – Feb 3 | GE (Jan 21); BA, LMT, RTX, UNP, UPS (Jan 26); GEV (Jan 27); CAT, PH (Jan 28); ETN (Feb 2); UBER (Feb 3) | GE $2.04 / CAT $6.46 / GEV $6.95 / LMT $8.35 | The next full round |
 
-> Estimate changes vs last week's page: BLBD $1.45 → $1.43; DE unchanged at $4.01. Nothing else on this page reports before January.
+> Estimate changes vs last week's page: none on DE ($4.01) or BLBD ($1.43). Nothing else on this page reports before January.
 
-**Marky's Binary Event Read:** The AI-power names reported good numbers and fell harder than anything else in the fund, ETN by 16.5% in two days after a beat-and-raise. That is the third week the prints have not mattered here. Deere on Nov 25 is the last company print of the year, and it is not an AI name. Until the 200D, I am flat and I let the political tape settle.
+**Marky's Binary Event Read:** No prints for twelve days. The binary is the FOMC on Dec 9 and, before it, the Dec 1 ISM. Deere on Nov 25 goes in with the dollar at 103 and an ag-equipment inquiry open. I hold my starter third through it with the stop at $165.44.
 
 ---
 
 ## RISK SCENARIOS
 
-- **Bull Case:** The ISM's strength and lower diesel get priced: XLI closes back over $165.44, then the 200D ($172.65) on volume. The defense fear fades without a budget cut, and LMT and RTX recover their 16–20% gaps to target. A data-center permitting fight gets a number smaller than UBS's 30%.
-- **Bear Case:** A close under **$161.74** opens $160.39–160.90, then $155.81. Concrete moratoriums or permitting bills hit GEV, ETN, CAT and PRIM again. A budget proposal from the new Congress cuts procurement. A hot CPI brings a December hike into a fund already under all three averages.
-- **Wild Card:** **Permits, not orders.** Goldman raised its data-center forecast to 273 GW by 2030 the same week UBS put 30% of 2028 US additions at risk. Orders and backlogs at GEV, ETN and CAT are records. If the binding constraint is where capacity can be built, the order books do not protect the multiples, and the delay shows up first in slot conversions and project timing, not in the next quarter's revenue.
+- **Bull Case:** XLI closes over the **200D ($172.80)** on volume over 8.8M: the reclaim, and Marky's full position. The December ISM holds over 55 with prices paid falling. Transports keep leading, and the defense names close their 11–15% gaps to target without a budget fight.
+- **Bear Case:** A close under **$165.44** stops the starter; under $161.74 the March zone ($160.39–160.90, then $155.81). A 50bp December hike and a 10-year toward 5.36% hit capex names; the dollar over 103 hits CAT and DE; more targets come down on the AI-power names after JPMorgan's.
+- **Wild Card:** **Relief is not resolution.** Last week's two political fears, defense budgets and data-center permits, eased this week with no new information on either. Nothing was decided; the fund rose because the fear stopped. The first budget proposal from the new Congress and the first concrete permitting action will decide both, and neither has a date.
 
 ---
 
 ## COUNCIL READ
 
-**Regime check:** Eight consecutive weekly closes below the 200-day (now $172.65), with the 50D under it. Tuesday's $172.40 was the closest the fund came. Leadership narrowed: eight of seventeen rose, the three biggest on their own news (MMM, GE, UBER). CAT, GEV, ETN, RTX and LMT cost about 1.7 points between them by weight × move.
+**Regime check:** Nine consecutive Friday closes below the 200-day (now $172.80), with the 50D ($168.87) still under it and the 20D ($167.82) turning up. Breadth broadened: fifteen of seventeen large names rose, transports and defense leading. Volume averaged 6.9M, under the 20D every day.
 
-- **Cecil (Value):** *"CAT's target fell another $79 and I hold without adding; no margin quarter yet. GE is up about 13% on my small position. LMT at 17x with no cancellation behind an 11% fall is the new name: I start a third. ETN goes on the list."*
-- **Marky (Momentum):** *"Flat. $165.44 and the $162.97 low both went Thursday on 19.3M. A close back over $165.44 is the first sign; the 200D on volume is the reclaim. Under $161.74, the March zone at $160.39."*
-- **Ophelia (Risk/Regime):** *"The ISM beat and prices paid eased. The selling was political: defense to neutral, power and electrical to cautious. Machinery stays cautious; rails and parcels neutral-positive. Leadership is narrow."*
+- **Cecil (Value):** *"CAT +7.4% with its target cut again: I hold, no add, no margin quarter. GE +16% on my small position. LMT +5.1% on the third I started; I don't add on a week. ETN stays on the list after JPMorgan's cut."*
+- **Marky (Momentum):** *"First sign Monday, two closes over the 50D, no reclaim. A starter third, stop on a close under $165.44. Full size only over the 200D, $172.80, on volume over 8.8M."*
+- **Ophelia (Risk/Regime):** *"A relief rally on light volume while the 10-year went back over 5% and the dollar to 103. Defense neutral, power and electrical cautious, machinery cautious, rails and parcels neutral-positive. Breadth improved."*
 
-**Consensus:** Marky is flat. Cecil holds CAT and GE and starts a third of LMT. Power and electrical go to cautious, defense to neutral. A close over $165.44 is the first sign; the 200D ($172.65) on volume is the reclaim; a close under $161.74 is the next leg.
+**Consensus:** Marky takes a starter third; Cecil holds CAT, GE and his third of LMT. Postures unchanged. The 200D ($172.80) on volume is the reclaim; a close under $165.44 ends the starter.
 
 ---
 
 ## SOURCES
 
-- Price, volume, moving-average and RSI data: **yfinance 1.6.0** pull (Fri Nov 6, ~22:00 ET) of XLI + holdings + watch names, daily bars through the **Fri Nov 6 close** (every last bar dated Nov 6; no repair needed); weekly changes vs the Oct 30 daily bars; Yahoo targets, forward P/E, caps, earnings dates and EPS means; funds_data weights (refreshed this week). CSVs: workspace 2026-11-06-gridA/ind_*.csv
-- U.S. Treasury daily par yield curve (fetched Nov 6); data/market_state.json (WTI settlement $104.12, CLZ26, as of Oct 30)
-- Finviz economic calendar (week of Nov 2): ISM manufacturing and services, factory orders, durable goods final, LMI, JOLTS, payrolls, productivity, GDPNow
-- Reuters coverage via Business Recorder/NST (Nov 5): the Nasdaq rout and the UBS estimate
-- Finviz news feed, headlines only (articles not read): WSJ (defense sell-off, industrials and data centers, 3M settlement, Lockheed probe, Amazon–Uber), MarketWatch (defense and the new Congress, 3M and the Dow), Earnings Whispers (ETN, PH, UBER, PRIM, MATV), Investing.com (CAT -26%, GE supplier orders, 3M, PRIM, Goldman 273 GW), Stocktwits (defense watch, UBER guide), Proactive (UBS on 3M, BofA on UBER), IBD (Amazon–Uber), Bloomberg (data-center IPOs)
-- **Not re-sourced this week:** ETN's and PH's actual numbers beyond the headlines; GE's and HON's moves; the cause of AZZ's Thursday; freight indices; FTC/USDA developments; tariff updates; GVA and GBX prices (not re-pulled)
-- Restatements: none against last week's closes. CAT mean target $902.34 → $823.41
-- **Trigger check:** XLI -2.83% (under 5%); no major industrial earnings miss (UBER's EPS miss was on non-cash charges and the stock rose); ISM beat, no shock; no defense contract cancellation sourced — the defense fall was a spending fear. **No issue opened.** Noted for Synthesis: the election as a defense and data-center catalyst
-- Repo cross-checks: prior revision of this page (Oct 31); wiki/tech.md (d781ee4), wiki/financials.md (bb9263a), wiki/healthcare.md (359658d)
+- Price, volume, moving-average and RSI data: **yfinance 1.6.0** pull (Fri Nov 13, ~23:10 ET) of XLI + holdings + watch names + GVA, GBX, daily bars through the **Fri Nov 13 close** (every last bar dated Nov 13; no repair needed); weekly changes vs the Nov 6 daily bars; Yahoo targets, P/E, caps, earnings dates and EPS means; funds_data weights (unchanged). CSVs: workspace grid-a-2026-11-13/ind_*.csv, XLI_top10.csv
+- U.S. Treasury daily par yield curve (fetched Nov 13); data/market_state.json (WTI settlement $90.83, CLZ26, as of Nov 6)
+- Finviz economic calendar (week of Nov 9): CPI, PPI, NFIB, claims, GDPNow, EIA, budget statement
+- Finviz news feed, headlines only (articles not read): MarketWatch (Dow rally and CAT, SoftBank turbine order), WSJ (Boeing workforce cut, UP–NS "loose lips"), Investing.com (S&P upgrades RTX, JPMorgan on AI-exposed industrials, CAT levels, Citi on data-center costs, Boeing cut), Proactive (BofA on CAT), Stocktwits (Burry CAT puts, defense contracts, GEV Ontario nuclear, JPMorgan electrical), InvestorsHub (DeepStrike, GEV German wind order), IBD (diesel and rails, NASA moon-base awards)
+- **Not re-sourced this week:** freight indices; FTC/USDA developments; tariff updates; small-cap company news (none found); the content of the WSJ's UP–NS report; the size of JPMorgan's target cuts
+- Restatements: Nov 6 closes ETN $341.72 → $340.67, PH $917.79 → $915.87, HON $220.05 → $219.36, MMM $185.15 → $184.37 (adjusted bars). CAT mean target $823.41 → $815.26; ETN $480.55 → $468.59
+- **Trigger check:** XLI +3.76% (under 5%); no industrial earnings this week; no ISM print (next Dec 1); no defense contract cancellation sourced (Boeing's workforce cut is commercial, not defense). **No issue opened**
+- Repo cross-checks: prior revision of this page (Nov 6); wiki/tech.md (72dc8de), wiki/financials.md (f3cec67), wiki/healthcare.md (3b9b3b0)
 
 ---
 
-*Last updated by Saturday Research Crew: **2026-11-06** (Friday-night run; covering week ended Fri Nov 6, 2026)*
+*Last updated by Saturday Research Crew: **2026-11-13** (Friday-night run; covering week ended Fri Nov 13, 2026)*
