@@ -2,7 +2,7 @@
 
 > **Sector:** Materials | **ETF:** Materials Select Sector SPDR (XLB) | **Expense Ratio:** 0.08%
 >
-> *"The split flipped. Gold rallied about 5% on Friday evening's read and Newmont rose 13.4%. Steel, which my restriction kept us out of last week, fell hard: Nucor -10.6%, Steel Dynamics -11.1%, Cleveland-Cliffs -19.6%, most of it on Thursday when SPY lost 4.4%. XLB closed at 52-week highs Monday and Wednesday, $53.90 the top, then fell 2.9% Thursday and finished -1.50% at $51.95. DXY 102.28 on Friday evening's read. The restriction on new commodity longs stays ON. This week it cost us Newmont and saved us the steel names."* — Ophelia
+> *"The dollar did what it does to this sector. DXY read 103.41 on Friday evening, a 52-week high, after a hot CPI and Fed officials talking about hikes. Gold fell about 4% and Newmont 6.4%. Corteva fell 24% in one session on a miss, a guidance cut and an index deletion. XLB still rose 0.54% to $52.23 because Linde, Air Products, Ecolab and the chemicals carried it. The restriction on new commodity longs stays ON. This week it kept us out of the gold miners on the way down."* — Ophelia
 
 ---
 
@@ -10,20 +10,20 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $51.95 | $52.74 | **-1.50%**, ending a four-week run |
-| 52W Range | $41.48 – **$53.90** (closing basis, dividend-adjusted bars) | $41.48 – $53.42 | **New closing highs Mon ($53.67) and Wed ($53.90)**, the highest close in the two-year bar history |
-| AUM | ~$8.4B (yfinance totalAssets) | ~$7.8B | — |
-| YTD Return | **+16.0%** (price basis) | +17.8% | Ahead of SPY (+8.7%) |
-| P/E Ratio | ~21.6 (trailing) | ~24.6 | yfinance |
-| Dividend Yield | ~1.64% (yfinance) | ~1.77% | — |
-| Beta | ~0.76 (3Y, yfinance) | ~0.85 | — |
+| Price | $52.23 | $51.95 | **+0.54%** |
+| 52W Range | $41.48 – $53.90 (closing basis, dividend-adjusted bars) | $41.48 – $53.90 | Unchanged; the high is Nov 4 |
+| AUM | ~$8.4B (yfinance totalAssets) | ~$8.4B | — |
+| YTD Return | **+16.7%** (price basis) | +16.0% | Ahead of SPY (+11.5%) |
+| P/E Ratio | ~21.7 (trailing) | ~21.6 | yfinance |
+| Dividend Yield | ~1.64% (yfinance) | ~1.64% | — |
+| Beta | ~0.76 (3Y, yfinance) | ~0.76 | — |
 | Total Holdings | 27 (carried) | — | Vylor's fund weight not confirmed |
 
-Week path: **Mon $53.67**, Tue $52.59, **Wed $53.90**, Thu $52.33, Fri $51.95. Intraday range **$51.55–$54.63** (high Thursday, before the selloff). The last bar is dated Fri Nov 6; no repair pull was needed. Every prior close matches last week's page.
+Week path: Mon $52.94, Tue $52.85, **Wed $53.02**, Thu $52.34, Fri $52.23. Intraday range **$51.95–$53.39**. The last bar is dated Fri Nov 13; no repair pull was needed. The Nov 6 close matches last week's page.
 
-**Marky Tape Read:** Monday's $53.67 cleared the old $53.42 high, where I'd said I'd take a third off, and I did. A weekly close over $53.42 was the add; Friday's $51.95 isn't. Thursday ran to $54.63 and closed $52.33, a $2.30 reversal. The stop at a close under $51.21 held; Friday's low was $51.55. The averages are just under the price: 20D $51.58, 50D $50.86, 200D $50.84. RSI **52.9**, from 71.4.
+**Marky Tape Read:** Two-thirds long. The add line was a weekly close over $53.90; the week's high was $53.39, so no add. The stop at a close under $51.21 was never in play; the low was $51.95. Wednesday's $53.02 was the best close, and Thursday and Friday gave back $0.79. The fund sits exactly on its 20D ($52.23), over the 50D ($50.88) and 200D ($50.92). RSI **52.7**, from 52.9. Friday volume 7.2M against a 20D of ~11.9M.
 
-**Ophelia Macro Read:** **DXY 102.28** (Fri evening, DX-Y.NYB; 101.88). Above 101: the **restriction on new commodity longs stays ON** under the page's standing rule, and it lifts only on a weekly close under 99.00. No new break either way. **Gold ~$4,080** (Fri evening, GC=F $4,079.50) against a $3,885.70 settlement, about **+5%**; USAGold had spot near $4,050 after the payrolls beat lifted the dollar. **Silver ~$51.97** (Fri evening, SI=F) against $49.10, about +6%. **Copper $6.26** (Fri evening, HG=F) from $6.46; Business Recorder called it copper's worst week since March, on the AI selloff, while Shanghai spot premiums hit a record on tight supply (Bloomberg, Nov 5). **WTI ~$90** (Fri evening, CL=F $90.34) from a $104.12 settlement. All Friday-evening levels are provisional. **The 10Y closed 4.86%** (4.93%); Freddie's 30-year 7.18%. Payrolls +165K. Democrats took Congress. I found no China stimulus announcement.
+**Ophelia Macro Read:** **DXY 103.41** (Fri evening, DX-Y.NYB; 102.30), the highest read in the 52-week window. Above 101: the **restriction on new commodity longs stays ON** under the page's standing rule; it lifts only on a weekly close under 99.00. No new break either way. **October CPI rose 0.4% and core 0.3%**, each a tenth hot; **PPI's annual rate hit 6.5%** (CNBC, Nov 10 and 13). Fed officials floated hikes, and futures fully price at least a quarter point on Dec 9. **The 10Y closed 5.15%** (4.86%). **Gold ~$3,888** (Fri evening, GC=F) against a **$4,064.50 settlement** on Nov 6 (market_state, GCX26), about **-4.4%**; Thursday's $3,885.30 close was the lowest in the 52-week window of the continuous contract. **Silver ~$48.65** (Fri evening, SI=F) against $51.80 settled, about -6.1%. **Copper $6.06** (Fri evening, HG=F) from $6.22, -2.5%. **WTI ~$89** (Fri evening, CL=F) against a $90.83 settlement. All Friday-evening levels are provisional. I found no dated cause for gold's fall beyond the dollar and the hike talk, and no China stimulus announcement.
 
 ---
 
@@ -31,39 +31,39 @@ Week path: **Mon $53.67**, Tue $52.59, **Wed $53.90**, Thu $52.33, Fri $51.95. I
 
 | Rank | Ticker | Name | Weight | Price | Change | Fwd P/E | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|
-| 1 | LIN | Linde | 12.8% | $515.25 | +0.20% | 26.4 | $550.85 (+6.9%) | ⚡ |
-| 2 | NEM | Newmont | 6.1% | $120.91 | **+13.41%** | 12.1 | $135.46 (+12.0%) | 🔥 |
-| 3 | VMC | Vulcan Materials | 5.1% | $282.72 | +0.52% | 28.0 | $312.65 (+10.6%) | ⚡ |
-| 4 | ECL | Ecolab | 5.1% | $300.68 | -0.76% | 32.0 | $330.57 (+9.9%) | ⚡ |
-| 5 | APD | Air Products | 4.9% | $304.84 | **-3.66%** | 19.5 | $342.55 (+12.4%) | ⚠️ |
-| 6 | MLM | Martin Marietta | 4.9% | $518.15 | **-4.12%** | 26.3 | $634.63 (+22.5%) | ⚠️ |
-| 7 | FCX | Freeport-McMoRan | 4.9% | $59.42 | **-4.88%** | 14.0 | $78.09 (+31.4%) | 🔴 |
-| 8 | NUE | Nucor | 4.8% | $244.97 | **-10.55%** | 11.4 | $295.88 (+20.8%) | 🔴 |
-| 9 | STLD | Steel Dynamics | 4.8% | $222.90 | **-11.12%** | 10.4 | $272.68 (+22.3%) | 🔴 |
-| 10 | SHW | Sherwin-Williams | 4.7% | $344.10 | **+3.45%** | 26.0 | $374.04 (+8.7%) | ⚡ |
-| — | CRH | CRH plc | (left the top 10) | $94.81 | **+4.40%** | 15.8 | $121.22 (+27.9%) | ⚡ |
-| — | DD | DuPont | (outside top 10) | $146.52 | **+4.62%** | 18.1 | $169.35 (+15.6%) | 🔥 |
-| — | DOW | Dow Inc | (outside top 10) | $31.40 | **-9.51%** | 17.1 | $34.76 (+10.7%) | 🔴 |
-| — | PPG | PPG Industries | (outside top 10) | $122.38 | +2.39% | 14.1 | $130.14 (+6.3%) | 🔥 |
-| — | ALB | Albemarle | (outside top 10) | $99.25 | **+9.07%** | 9.5 | $154.68 (+55.8%) | ⚡ |
-| — | IFF | Int'l Flavors | (outside top 10) | $82.62 | **-11.18%** | 21.2 | $97.76 (+18.3%) | 🔴 |
-| — | CLF | Cleveland-Cliffs | (not in XLB; tracked) | $11.46 | **-19.58%** | 6.7 | $14.35 (+25.2%) | 🔴 |
-| — | CTVA | Corteva (crop protection, post-spin) | (not in Yahoo's top 10) | $11.90 | +2.23% | 10.6 | $17.13 (basis unclear) | ⚡ |
-| — | VYLR | Vylor (seed business, spun Oct 1) | (not in Yahoo's top 10) | $70.14 | -3.12% | 26.9 | $82.64 (+17.8%) | ⚠️ |
+| 1 | LIN | Linde | 12.8% | $526.06 | +2.10% | 26.9 | $551.04 (+4.7%) | ⚡ |
+| 2 | NEM | Newmont | 6.1% | $113.14 | **-6.43%** | 11.2 | $135.39 (+19.7%) | ⚠️ |
+| 3 | VMC | Vulcan Materials | 5.1% | $278.63 | -1.27% | 27.6 | $313.61 (+12.6%) | ⚡ |
+| 4 | ECL | Ecolab | 5.1% | $309.27 | +2.86% | 32.9 | $330.57 (+6.9%) | 🔥 |
+| 5 | APD | Air Products | 4.9% | $316.53 | **+3.83%** | 20.4 | $344.10 (+8.7%) | 🔥 |
+| 6 | MLM | Martin Marietta | 4.9% | $513.61 | -0.88% | 28.8 | $627.04 (+22.1%) | ⚡ |
+| 7 | FCX | Freeport-McMoRan | 4.9% | $59.24 | -0.30% | 14.0 | $78.22 (+32.0%) | ⚠️ |
+| 8 | NUE | Nucor | 4.8% | $251.73 | +2.76% | 11.4 | $298.38 (+18.5%) | ⚡ |
+| 9 | STLD | Steel Dynamics | 4.8% | $229.43 | +2.93% | 10.6 | $274.10 (+19.5%) | ⚡ |
+| 10 | SHW | Sherwin-Williams | 4.7% | $349.89 | +1.91% | 26.5 | $374.25 (+7.0%) | ⚡ |
+| — | CRH | CRH plc | (outside top 10) | $93.16 | -1.33% | 15.6 | $121.18 (+30.1%) | ⚡ |
+| — | DD | DuPont | (outside top 10) | $153.78 | **+4.95%** | 18.8 | $172.47 (+12.2%) | 🔥 |
+| — | DOW | Dow Inc | (outside top 10) | $33.04 | **+5.22%** | 18.0 | $34.76 (+5.2%) | ⚡ |
+| — | PPG | PPG Industries | (outside top 10) | $122.56 | +0.74% | 14.2 | $130.14 (+6.2%) | ⚡ |
+| — | ALB | Albemarle | (outside top 10) | $93.53 | **-5.76%** | 12.2 | $140.55 (+50.3%) | ⚠️ |
+| — | IFF | Int'l Flavors | (outside top 10) | $81.16 | -1.77% | 21.0 | $98.24 (+21.0%) | ⚠️ |
+| — | CLF | Cleveland-Cliffs | (not in XLB; tracked) | $12.65 | **+10.38%** | 7.3 | $14.65 (+15.8%) | ⚡ |
+| — | CTVA | Corteva (crop protection, post-spin) | (not in Yahoo's top 10) | $9.43 | **-20.76%** | 10.3 | $14.78 (basis unclear) | 🔴 |
+| — | VYLR | Vylor (seed business, spun Oct 1) | (not in Yahoo's top 10) | $72.54 | +3.42% | — | — | ⚡ |
 
 > 🔥 = Strong momentum / catalyst | ⚡ = Neutral / stable | ⚠️ = Pullback / profit-taking | 🔴 = Crash / broken
-> *Prices are Fri Nov 6 closes (daily bars, auto-adjusted, pulled Fri evening ~10:45 PM ET); weekly changes are against the settled Fri Oct 30 daily-bar closes, which match last week's page. **Weights (Yahoo funds_data, Nov 6): LIN 12.8%, NEM 6.1%, VMC 5.1%, ECL 5.1%, APD 4.9%, MLM 4.9%, FCX 4.9%, NUE 4.8%, STLD 4.8%, SHW 4.7%.** Refreshed this week after four identical pulls. **Nucor entered the top ten and CRH left.** No move this week reached ±30%, so no corporate-action check was needed beyond the spin below.*
+> *Prices are Fri Nov 13 closes (daily bars, auto-adjusted, pulled Fri evening ~10:40 PM ET); weekly changes are against the settled Fri Nov 6 daily-bar closes. **Restatements** from dividend-adjusted Nov 6 bars: VMC $282.20 (page $282.72), SHW $343.32 ($344.10), PPG $121.66 ($122.38), CRH $94.42 ($94.81), HWKN $150.75 ($150.95); the bars are used. VYLR was priced in a separate pull (the batch pull returned no data for it); its target and forward P/E were not re-pulled. **Weights (Yahoo funds_data, Nov 13): LIN 12.8%, NEM 6.1%, VMC 5.1%, ECL 5.1%, APD 4.9%, MLM 4.9%, FCX 4.9%, NUE 4.8%, STLD 4.8%, SHW 4.7%** — identical to last week's snapshot, so Yahoo did not refresh it. No move reached ±30%.*
 
-**Corteva / Vylor.** Unadjusted CTVA history still carries the false -85%, so its averages and RSI are not used. Priced as the two pieces: Oct 30 $11.64 + $72.40 = $84.04; Nov 6 $11.90 + $70.14 = **$82.04**. A holder of one pre-spin share **lost 2.4%** this week. VYLR's cap is about $46.8B. Both report Nov 11 (Yahoo), the first standalone quarters; Yahoo's VYLR consensus is a loss of $0.52, a seasonal seed quarter. No dated company news found.
+**Corteva / Vylor.** **CTVA -24.3% on Thursday** ($12.14 to $9.19), its first standalone quarter after the spin: **adjusted EPS $0.06 vs ~$0.10, revenue -9% to $1.59B vs ~$1.76B**, Latin America organic sales **-31%** on Brazilian farmer liquidity and distributor inventories, and 2026 adjusted operating EPS **cut to $0.76–$0.80** (Corteva 8-K, Nov 11; Proactive, Motley Fool, Nov 12). Investing.com also reported Corteva's **deletion from the MSCI USA Index**. Unadjusted CTVA history still carries the spin's false -85%, so its averages and RSI are not used. Priced as the two pieces: Nov 6 $11.90 + $70.14 = $82.04; Nov 13 $9.43 + $72.54 = **$81.97**. A holder of one pre-spin share was **about flat (-0.1%)**: Vylor's +3.4% covered most of Corteva's fall, because Corteva is now the small piece (cap $6.3B vs Vylor's $48.4B). Vylor's own Nov 11 results were not found.
 
 **The week, by group.**
 
-1. **Steel broke on Thursday.** **NUE -8.3%, STLD -7.6% and CLF -12.2%** on Nov 5, the day SPY fell 4.4%; Trefis (Nov 6) found no company announcement for NUE or STLD. NUE had made its 52-week closing high of $277.65 on Monday. **CLF -19.6% on the week**, after -9.2% Wednesday. No steel-price cause was sourced.
-2. **Gold miners led.** **NEM +13.4%**, +9.9% on Wednesday, as gold rallied about 5% on the week (Friday-evening read). FCX did not follow: **-4.9%** to $59.42, -7.5% Thursday with copper's worst week since March.
-3. **Aggregates.** **MLM (Nov 4, 8-K):** record revenue **$2.37B (+28%)** on the Lhoist North America deal, adjusted EPS **$5.47** (from $6.12), aggregates price -4% to $22.41/ton, organic shipments down modestly; full-year revenue midpoint raised to **$7.8B** on the acquisition, with softer heritage demand. -4.1% on the week. VMC +0.5%. CRH +4.4%.
-4. **Chemicals.** **IFF (Nov 3, 8-K):** sales $1.94B (+4%), adjusted EPS $0.83, full-year low end raised, but a **softer Q4 warning** in Health & Biosciences (24/7 Wall St.); **-11.2%**. **ALB (Nov 4, 8-K):** Energy Storage adjusted EBITDA **$559.8M** from $124.1M; lithium volume guide narrowed to 225–235kt after a Greenbushes fire delay; **+9.1%**. **DOW -9.5%**, down every day, no dated cause found. DD +4.6% (reported Nov 3; release not read). SHW +3.5%, PPG +2.4%, APD -3.7%.
+1. **Gold miners gave back.** **NEM -6.4%**, half of last week's 13.4% gain, as gold fell about 4% against a 52-week-high dollar.
+2. **Steel bounced, then faded.** NUE, STLD and CLF rose Monday through Wednesday, then gave some back; **NUE +2.8%, STLD +2.9%, CLF +10.4%** on the week. No company news sourced.
+3. **Industrial gases and chemicals led.** APD +3.8%, ECL +2.9%, LIN +2.1%, DD +5.0%, **DOW +5.2%** after last week's -9.5%. No dated catalysts found.
+4. **Lithium and aggregates slipped.** **ALB -5.8%**, giving back most of last week's +9.1%. VMC -1.3%, MLM -0.9%, CRH -1.3%, with the 10Y at 5.15%.
 
-**Cecil Fundamental Read:** Nucor at 11.4x after a 10.6% week with no company news is the first steel price I'd look at since September, and Steel Dynamics at 10.4x with it. The restriction keeps me out, and I don't argue with it this week. PPG at $122.38 is 14% over my $107.50 basis; I hold. Martin Marietta's quarter was bought growth with price down 4%, and at 26x I'd wait. Albemarle at 9.5x forward earnings with EBITDA up 4.5 times is cheap if lithium holds. I want one more quarter of it.
+**Cecil Fundamental Read:** Corteva is now a $6.3B crop-protection company that just cut its year on Brazil, and I'm not catching it at 10x until I see a quarter that isn't Brazil. Nucor at 11.4x and Steel Dynamics at 10.6x are still the cheapest quality in the fund, and the restriction still keeps me out. PPG at $122.56 is 14% over my $107.50 basis; I hold. Albemarle at 12x forward fell back with lithium; I still want one more quarter.
 
 ---
 
@@ -73,13 +73,13 @@ Week path: **Mon $53.67**, Tue $52.59, **Wed $53.90**, Thu $52.33, Fri $51.95. I
 
 | Ticker | Name | Mkt Cap | Price | Weekly Change | Signal | Council Read |
 |---|---|---|---|---|---|---|
-| CENX | Century Aluminum | **$3.31B** ✅ | $33.47 | -0.68% | ⚡ | Reported Nov 5 (Yahoo); release not found. Flat into and through it. Under the 50D ($37.87). Restricted |
-| HWKN | Hawkins Inc | **$3.14B** ✅ | $150.95 | -1.04% | ⚡ | Held most of last week's post-earnings gap. RSI 67.3. Outside the restriction |
-| KALU | Kaiser Aluminum | **$1.75B** ✅ | $106.84 | **-8.12%** | 🔴 | -6.2% Wed and -6.5% Thu; no dated headline. Far under all three averages. RSI 32.0 |
-| SXC | SunCoke Energy | **$0.83B** ✅ | $9.80 | **-13.50%** | ⚠️ | Gave back last week's +13% with the steel names (-7.2% Thursday). Its customers are steelmakers. 5.0% yield |
-| KRO | Kronos Worldwide | **$0.86B** ✅ | $7.46 | -0.53% | ⚡ | Reported Nov 5 (Yahoo); release not found. Under the 20D ($7.51) |
+| CENX | Century Aluminum | **$3.37B** ✅ | $34.03 | +1.67% | ⚡ | **Q3 (Nov 5): net sales $961.2M, EPS $2.89 with one-time gains, adj. EBITDA $331.6M on the Iceland Line 2 restart; Q4 EBITDA guided to $275–300M** (company release; Finviz/Earnings Whispers). Gave back most of Monday's +9.4% by Friday. Restricted |
+| HWKN | Hawkins Inc | **$3.09B** ✅ | $148.68 | -1.38% | ⚡ | Up Monday, then down four straight days; no dated headline. Still over all three averages. Outside the restriction |
+| KALU | Kaiser Aluminum | **$1.77B** ✅ | $108.50 | +1.55% | ⚠️ | No dated headline. Far under all three averages (200D $150.97). RSI 36.3 |
+| SXC | SunCoke Energy | **$0.89B** ✅ | $10.54 | **+7.55%** | ⚡ | Bounced with the steel names; no dated headline. Over all three averages. 4.5% yield |
+| KRO | Kronos Worldwide | **$0.95B** ✅ | $8.29 | **+11.13%** | 🔥 | No Q3 release found for the second week. Over all three averages; RSI 58.8 |
 
-**Rotation Note:** All five verified **sub-$5B at the Nov 6 close**. No rotation. CENX and KRO results were not sourced this week.
+**Rotation Note:** All five verified **sub-$5B at the Nov 13 close**. No rotation. **Correction:** last week's page said CENX's Nov 5 release was not found; it was out that day (above). KRO's results remain unsourced.
 
 ---
 
@@ -87,21 +87,21 @@ Week path: **Mon $53.67**, Tue $52.59, **Wed $53.90**, Thu $52.33, Fri $51.95. I
 
 | Level | Price | Significance |
 |---|---|---|
-| Week High | $54.63 | Thursday intraday, before the reversal |
-| 52W High | **$53.90** | Closing basis, Wed Nov 4; the new add line |
-| Old High | $53.42 | Cleared Monday; Marky took a third off there |
-| Current Price | $51.95 | Fri 11/6 close; -1.50% W/W |
-| 20-Day MA | $51.58 | Rising |
-| Week Low | $51.55 | Friday intraday |
-| Stop Line | $51.21 | Last week's low; held |
-| 50-Day MA | $50.86 | — |
-| 200-Day MA | $50.84 | Rising |
+| 52W High | **$53.90** | Closing basis, Wed Nov 4; the add line |
+| Week High | $53.39 | Intraday |
+| Week High Close | $53.02 | Wednesday |
+| Current Price | $52.23 | Fri 11/13 close; +0.54% W/W |
+| 20-Day MA | $52.23 | Price sits on it |
+| Week Low | $51.95 | Intraday |
+| Stop Line | $51.21 | Held |
+| 200-Day MA | $50.92 | Rising |
+| 50-Day MA | $50.88 | — |
 | Structural Low | $41.48 | 52W bottom |
-| RSI(14) | 52.9 | From 71.4 |
+| RSI(14) | 52.7 | From 52.9 |
 
-**Marky Setup Assessment:** I'm two-thirds long from the Oct 15 entry and Tuesday's add, after taking a third off over $53.42 on Monday. The stop stays a close under **$51.21**. The next add is a weekly close over **$53.90**. Thursday's $54.63-to-$52.33 reversal is a warning, and I won't add before the fund closes back over the 20D with room. Single names: no adds into the steel break; NEM is outside my rules while the restriction is on.
+**Marky Setup Assessment:** Two-thirds long from the Oct 15 entry and the add, after taking a third off over $53.42 on Nov 2. **Stop on a close under $51.21. Add on a weekly close over $53.90.** Nothing fired this week; the fund ranged $1.44 and closed on its 20D. A rising 10Y and a strong dollar are not the setup for a breakout, so I wait.
 
-**The relative strength story:** XLB **-1.50% vs SPY -2.70%**, about 1.2 points better. YTD: **XLB +16.0% vs SPY +8.7%**. XLP +0.74% and XLY +1.91% in the same week.
+**The relative strength story:** XLB **+0.54% vs SPY +2.59%**, about two points behind. YTD: **XLB +16.7% vs SPY +11.5%**. XLP +2.52% and XLY +2.04% in the same week.
 
 ---
 
@@ -109,101 +109,99 @@ Week path: **Mon $53.67**, Tue $52.59, **Wed $53.90**, Thu $52.33, Fri $51.95. I
 
 | Factor | Level | Implication for XLB |
 |---|---|---|
-| **DXY** | **102.28** (Fri evening, DX-Y.NYB; provisional) vs 101.88 | **Restriction on new commodity longs stays ON** (standing rule; #115 closed). No new break above 101 or below 99 |
-| 10Y Treasury | **4.86%** (4.93%); 30Y 5.26% | A fifth lower Friday. Helps aggregates and coatings |
-| Payrolls (Oct) | +165K vs ~59–70K; unemployment 4.1% | Lifted the dollar on Friday, per USAGold |
-| Copper | **$6.26** (Fri evening, HG=F) vs $6.46; LME $13,759/t (Business Recorder) | Worst week since March on the AI selloff; Shanghai spot premiums at a record |
-| Gold / Silver | **~$4,080 / ~$51.97** (Fri evening, GC=F / SI=F) vs $3,885.70 / $49.10 settled | About +5% / +6%, provisional. Both under 10% |
-| Crude / Feedstock | **WTI ~$90** (Fri evening, CL=F $90.34) vs $104.12 settled; Brent ~$97.76 (BZ=F, January) | About -13%, provisional; an energy-page commodity (see Energy issue #185). Cheaper feedstock for DOW and the chemicals |
-| Nat Gas | $3.00 (Fri bar, NG=F) vs $2.90 | +3.6% |
-| ISM Manufacturing PMI | October print not re-sourced this week | — |
-| Housing | 30Y mortgage **7.18%** (Freddie Mac, Nov 5), from 7.24% | Third straight decline; MLM still named softer heritage demand |
-| China | No stimulus announcement found; Shanghai copper premiums at a record (Bloomberg, Nov 5) | Physical tightness, not policy |
-| Election | Democrats took Congress (Nov 3) | Steel's tariff protection is the exposure; no source tied Thursday's fall to it |
-| Corporate actions | **Corteva/Vylor**: pieces -2.4% combined | No move beyond ±30% this week |
-| SPY (context) | $735.29, -2.70% W/W; Thursday -4.4%; VIX 25.64 | — |
+| **DXY** | **103.41** (Fri evening, DX-Y.NYB; provisional) vs 102.30; a 52-week high | **Restriction on new commodity longs stays ON** (standing rule; #115 closed). No new break above 101 or below 99 |
+| 10Y Treasury | **5.15%** (4.86%); 30Y 5.48% | Back over 5% on CPI/PPI and hike talk. A headwind for aggregates and coatings |
+| Inflation (Oct) | CPI +0.4%, core +0.3%; PPI 6.5% y/y | Fed officials floated hikes; at least 25bp priced for Dec 9 |
+| Copper | **$6.06** (Fri evening, HG=F) vs $6.22 | -2.5%, provisional |
+| Gold / Silver | **~$3,888 / ~$48.65** (Fri evening, GC=F / SI=F) vs **$4,064.50 / $51.80 settled** Nov 6 (market_state) | About -4.4% / -6.1%, provisional. Both under 10% |
+| Crude / Feedstock | **WTI ~$89** (Fri evening, CL=F $88.92) vs **$90.83 settled**; Brent ~$96 (BZ=F) | About -2%, provisional |
+| Nat Gas | $3.24 (Fri bar, NG=F) vs $3.00 | +8.1%; feedstock cost for the chemicals |
+| ISM Manufacturing PMI | Not re-sourced this week | — |
+| Housing | 30Y mortgage **7.11%** (Freddie Mac, Nov 12), from 7.18% | Fourth straight decline, but the survey predates Thursday's yield jump |
+| China | No stimulus announcement found | — |
+| Corporate actions | **Corteva/Vylor**: pieces about flat combined; CTVA -24.3% Thursday on a miss and guidance cut | No move beyond ±30% this week |
+| SPY (context) | $754.37, +2.59% W/W; VIX 19.30 | — |
 
-**Ophelia Verdict:** The restriction stays ON. This week it kept us out of Newmont (+13.4%) and ALB (+9.1%), and out of the three steel names, which fell 10–20%. It had a better week than last week, when it cost us the steel run. Gold's rally, cheaper oil and a copper squeeze in Shanghai are all happening with the dollar at 102. That is unusual, and I want a settlement and a second week before I read anything into it.
+**Ophelia Verdict:** The restriction stays ON, and this was the kind of week it's for: the dollar at a 52-week high, gold down about 4% and Newmont down 6.4%. The fund still rose because the gases and chemicals aren't commodity longs. A Fed that hikes into a 103 dollar is not a backdrop for metals. I want a weekly close under 99 before I lift it, and that is four points away.
 
-**The China Question:** Physical copper is tight in Shanghai while the futures fell on AI demand worries. No stimulus. I keep the question open.
+**The China Question:** No stimulus, no new data sourced. Copper drifted lower with the dollar. The question stays open.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLB (week ending 2026-11-06)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLB (week ending 2026-11-13)
 
-### This Week's Story: Record Highs, Then the Steel Break
+### This Week's Story: A Strong Dollar, and the Gases Carry It
 
-XLB fell **1.50% to $51.95** while SPY fell 2.70%. It set the highest closes in its two-year bar history on Monday and Wednesday, $53.90 the top, before Thursday's market-wide selloff took it down 2.9%.
+XLB rose **0.54% to $52.23** while SPY rose 2.59%. It never threatened the $53.90 high or the $51.21 stop.
 
-**Steel gave back its run.** Nucor, Steel Dynamics and Cleveland-Cliffs fell 8–12% on Thursday, when SPY lost 4.4%, and none of the companies said anything. Nucor had set a 52-week closing high on Monday. Cleveland-Cliffs finished the week down 19.6% and SunCoke, which sells coke to steelmakers, 13.5%.
+**The dollar and the Fed.** October CPI and PPI ran hot, Fed officials talked about hiking, and DXY read 103.41 on Friday evening, a 52-week high. The 10Y closed at 5.15%. That combination hits the metals first.
 
-**Gold went the other way.** Gold rose about 5% on Friday evening's read, and Newmont rose 13.4%, most of it on Wednesday. Silver rose about 6%. Copper had its worst week since March on the AI selloff, even as Shanghai's physical premiums hit a record, and Freeport fell 4.9%.
+**Gold gave back.** Gold fell about 4% against last week's settlement and Newmont fell 6.4%, about half of last week's gain. Silver fell about 6%. Copper slipped 2.5% and Freeport was flat.
 
-**The prints were mixed.** Martin Marietta's revenue rose 28% on an acquisition while its aggregates price fell 4%. IFF warned on Q4 and fell 11.2%. Albemarle's lithium earnings jumped and it rose 9.1%. Dow fell every day of the week, 9.5% in all, without a sourced cause.
+**Corteva broke.** In its first quarter as a standalone crop-protection company, Corteva missed, cut its year on Brazil and was dropped from the MSCI USA Index. It fell 24% on Thursday. Vylor, the seed business it spun off, rose 3.4%, so a holder of the original share was about flat.
 
-**The dollar.** DXY read 102.28 on Friday evening after the payrolls beat. The restriction on new commodity longs stays on; there was no new break.
+**The rest of the fund held up.** Air Products, Ecolab and Linde rose 2–4%, and Dow and DuPont about 5%. The steel names bounced early and faded; Nucor and Steel Dynamics finished up about 3%.
 
-**The Bottom Line:** The sector made new highs and gave them back in one session. **No trigger:** XLB -1.50% (threshold ±5%); no tracked metal moved 10% (gold and silver about +5–6%, copper about -3%, all provisional); oil's ~13% fall is a provisional Friday-evening read on an energy commodity, left to the Energy page and its open issue #185; no China stimulus announcement; no new DXY break.
+**The Bottom Line:** The dollar and rates are pointing the wrong way for the commodity names, and the fund is flat on its 20D. **No trigger:** XLB +0.54% (threshold ±5%); no tracked metal moved 10% (gold about -4%, silver about -6%, copper -2.5%, all provisional); no China stimulus announcement; no new DXY break (103.41 is above 101 but not a new cross). Corteva's miss is not on the trigger list and it is not a top-ten holding.
 
 ---
 
 ## EARNINGS CALENDAR
 
-Company dates are Yahoo Finance calendar dates pulled Nov 6, not company-confirmed; EPS is the Yahoo consensus mean. No dates moved since last week's page.
+Company dates are Yahoo Finance calendar dates pulled Nov 13, not company-confirmed; EPS is the Yahoo consensus mean. No dates moved since last week's page.
 
 | Date | Ticker | Company | EPS Est. | Focus |
 |---|---|---|---|---|
-| **Tue Nov 3** | IFF, DD | Int'l Flavors, DuPont | — | **REPORTED ✔** — IFF adj. EPS $0.83, softer Q4 warning, -11.2%; DD release not read, +4.6% |
-| **Wed Nov 4** | MLM, ALB | Martin Marietta, Albemarle | — | **REPORTED ✔** — MLM revenue $2.37B (+28%), adj. EPS $5.47; ALB Energy Storage EBITDA $559.8M, +9.1% |
-| **Thu Nov 5** | APD, CENX, KRO | Air Products, Century Aluminum, Kronos | — | **Listed as reported; releases not read.** APD -3.7%, CENX -0.7%, KRO -0.5% |
-| **Wed Nov 11** | CTVA, VYLR | Corteva, Vylor | $0.10 / -$0.52 | First standalone quarters after the spin |
-| Jan 21 / Jan 25 / Jan 26 | FCX / NUE, STLD / SHW, PPG | — | $1.07 / $6.05, $5.87 / $2.34, $1.68 | Next cycle |
+| **Wed Nov 11** | CTVA | Corteva | — | **REPORTED ✔** — adj. EPS $0.06 vs ~$0.10; 2026 EPS cut to $0.76–$0.80; LatAm organic -31%; -20.8% W/W |
+| **Wed Nov 11** | VYLR | Vylor | — | **Listed by last week's page; release not found.** +3.4% W/W |
+| **Thu Nov 5** | CENX | Century Aluminum | — | **REPORTED ✔ (sourced this week)** — EPS $2.89, Q4 EBITDA guide $275–300M |
+| Jan 21 / Jan 25 / Jan 26 | FCX / NUE, STLD / SHW, PPG | — | $1.02 / $6.06, $5.88 / $2.34, $1.68 | Next cycle |
+| Jan 27 / Jan 29 / Feb 2 | HWKN / APD / CTVA | — | $0.71 / $3.43 / $0.10 | — |
 
-Yahoo still shows past dates for LIN (Oct 29), NEM (Oct 22), ECL (Oct 27), VMC (Oct 29), CRH (Oct 29), CLF (Oct 19), KALU (Oct 21) and SXC (Oct 27).
+Yahoo still shows past dates for LIN (Oct 29), NEM (Oct 22), ECL (Oct 27), VMC (Oct 29), CRH (Oct 29), MLM (Nov 4), ALB (Nov 4), DD and IFF (Nov 3), CLF (Oct 19), KALU (Oct 21), CENX and KRO (Nov 5) and SXC (Oct 27).
 
 ---
 
 ## RISK SCENARIOS
 
 ### 🟢 Bull Case
-- **A weekly close over $53.90** confirms the breakout Thursday reversed
-- **The dollar turns down** toward 101, and gold holds its ~$4,050–4,080 area
-- **The 10Y keeps falling** from 4.86% and mortgages from 7.18%, helping aggregates and coatings
-- **Cheaper oil** lowers feedstock costs for Dow and the chemicals
+- **A weekly close over $53.90** makes a new high and is Marky's add
+- **The dollar turns down** from 103 after a softer November CPI (Dec 10), and gold recovers its $4,000 handle
+- **The gases and chemicals** keep carrying the fund while metals are out of favor
+- **Natural gas stays near $3** and oil near $89, keeping feedstock cheap
 
 ### 🔴 Bear Case
-- **A close under $51.21** stops Marky out, with the 20D already being tested
-- **Steel's fall spreads** if it turns out to be about tariffs under the new Congress rather than one bad session
-- **DXY extends over 102.5** after the payrolls beat, pressuring the miners and the restriction stays on longer
-- **Copper keeps sliding** on AI-demand worries, taking FCX under $59
+- **A close under $51.21** stops Marky out; the fund is already on its 20D
+- **The Fed hikes on Dec 9** and the dollar extends over 104, pushing gold under its 52-week low and NEM with it
+- **The 10Y holds over 5%**, pressuring Vulcan, Martin Marietta and CRH through housing
+- **Corteva's Brazil problem** shows up at other ag-input names
 
 ### ⚠️ The Wild Card
-**Washington and the dollar.** A Democratic Congress may change the tariff wall that steel has traded on, and an Iran deal would cut oil further. Neither has been sourced as the cause of anything this week; both would hit this fund.
+**A Fed that hikes.** The market now prices a quarter point in December. A half point, which Waller floated, would push the dollar higher and keep the restriction on well into next year.
 
 ---
 
 ## COUNCIL READ — What This Means for Monday
 
-**Ophelia:** *"Restriction on: DXY 102.28. It kept us out of Newmont, and it kept us out of the steel break, and I'll take that trade. No new commodity longs until a weekly close under 99."*
+**Ophelia:** *"Restriction on: DXY 103.41, a 52-week high. It kept us out of Newmont on the way down. No new commodity longs until a weekly close under 99."*
 
-**Marky:** *"Two-thirds long after trimming over $53.42 Monday. Stop on a close under $51.21, add over $53.90. Thursday's reversal from $54.63 is the warning."*
+**Marky:** *"Two-thirds long. Stop on a close under $51.21, add over $53.90. The fund closed on its 20-day, which tells me nothing yet."*
 
-**Cecil:** *"Nucor at 11 times after a 10% drop with nothing said is interesting, and I can't buy it under the rule. PPG I hold. Albemarle at 9.5 times is cheap if lithium holds one more quarter."*
+**Cecil:** *"Corteva at 10 times after a guidance cut is a falling knife until Brazil turns. Nucor and Steel Dynamics are still the cheap names I can't buy. PPG I hold."*
 
 ---
 
 ## SOURCES & REFERENCES
 
-- yfinance 1.6.0 (pulled Fri Nov 6, 2026, ~10:45 PM ET): daily bars through the Fri Nov 6 close for XLB, VYLR and all tracked names (auto_adjust=True); weekly changes vs the settled Fri Oct 30 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week closing highs and lows; mean targets, forward P/E, market caps, AUM; XLB top-10 weights via funds_data (refreshed); earnings-calendar dates and consensus EPS. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-11-06-gridB/: quotes_XLB.csv, quotes_MAC.csv, top10_XLB.csv, bars_*.csv
-- data/market_state.json (as of Oct 30): gold settled $3,885.70 (GCX26), silver $49.10 (SIX26), WTI $104.12 (CLZ26). Nov 6 levels for GC=F, SI=F, HG=F, CL=F, BZ=F and DX-Y.NYB are Friday-evening reads, provisional
-- Steel: Trefis ("What Just Hit Nucor Stock?", "What Sent Steel Dynamics Stock Lower?", Nov 6): Nov 5 moves, SPY -4.4%, no company announcement
-- Martin Marietta 8-K exhibit 99.1 (SEC, Nov 4) and IR release; Zacks preview. IFF 8-K exhibit 99.1 (SEC, Nov 3); 24/7 Wall St. on the Q4 warning. Albemarle 8-K exhibit 99.1 (SEC, Nov 4)
-- Gold: USAGold daily report (Nov 6); copper: Business Recorder ("worst week since March"), Bloomberg ("China's Copper Squeeze Deepens", Nov 5)
-- Macro: payrolls (Benzinga, CNBC, Nov 6); Freddie Mac PMMS (read directly, Nov 6: 7.18%); election (CBS, The Hill)
-- Not re-sourced this week: a cause for the Nov 5 steel selloff; NEM's company news; DOW's fall; DD, APD, CENX and KRO results; China PMI and any stimulus; October ISM; settled Nov 6 futures and DXY; Vylor's fund weight
+- yfinance 1.6.0 (pulled Fri Nov 13, 2026, ~10:40 PM ET; VYLR in a separate pull): daily bars through the Fri Nov 13 close for XLB, VYLR and all tracked names (auto_adjust=True); weekly changes vs the settled Fri Nov 6 daily-bar close; 20D/50D/200D, Wilder RSI(14), 52-week closing highs and lows; mean targets, forward P/E, market caps, AUM; XLB top-10 weights via funds_data (unchanged from Nov 6); earnings-calendar dates and consensus EPS. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-11-13-gridB/: quotes_XLB.csv, quotes_MAC.csv, top10_XLB.csv, bars_*.csv
+- data/market_state.json (as of Nov 6): gold settled $4,064.50 (GCX26), silver $51.80 (SIX26), WTI $90.83 (CLZ26). Nov 13 levels for GC=F, SI=F, HG=F, CL=F, BZ=F and DX-Y.NYB are Friday-evening reads, provisional
+- Corteva: 8-K Q3 2026 earnings release (SEC, Nov 11); Proactive Investors and Yahoo Finance ("Corteva shares plunge 23%"), Motley Fool ("Why Corteva Stock Dropped on Thursday", Nov 12), Investing.com (MSCI USA deletion), GuruFocus
+- Century Aluminum Q3 2026 release (company IR, Nov 5); Finviz/Earnings Whispers on the Q4 outlook
+- Macro: CPI (CNBC, Nov 10), PPI and Fed pricing (CNBC, Nov 13); Freddie Mac PMMS (read directly, Nov 13: 7.11%)
+- Not re-sourced this week: a dated cause for gold's fall; NEM, ALB, DOW and steel company news; Vylor's results; Kronos's Q3 results; China PMI and any stimulus; October ISM; settled Nov 13 futures and DXY; Vylor's fund weight
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-11-06 (data as of Fri 2026-11-06 close; Grid B Friday-night run)*
+*Last updated by Saturday Research Crew: 2026-11-13 (data as of Fri 2026-11-13 close; Grid B Friday-night run)*
 *Next update: Every Saturday*
 *Data sources: yfinance (Yahoo-sourced), repo market_state, Freddie Mac, company SEC filings, Council desk logs*
