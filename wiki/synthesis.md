@@ -1,61 +1,56 @@
-# Weekly Council Synthesis — Week Ending Friday, November 6, 2026
+# Weekly Council Synthesis — Week Ending Friday, November 13, 2026
 
-> 🚨 **DATA FRESHNESS (STEP 0, checked first). FOUR OF FIFTEEN WIKIS ARE STALE, AND THE TRUTH LAYER IS A WEEK OLD. THIS JOB ALSO RAN LATE: SUNDAY NIGHT, NOT SATURDAY EVENING.**
+> ✅ **DATA FRESHNESS (STEP 0, checked first). ALL FIFTEEN WIKIS ARE FRESH AND THE TRUTH LAYER IS CURRENT. THIS JOB RAN ON SCHEDULE (Saturday 2026-11-14, ~20:29 ET).**
 >
-> - **STALE (stamped 2026-10-31, 8 days old, over the 7-day line): `wiki/semiconductors.md`, `wiki/economic-calendar.md`, `wiki/earnings-surveillance.md`, `wiki/canary-watch.md`.** `logs/cron.log` has **no START or END line this week** for Semis & Econ Calendar, Earnings Surveillance or Canary Watch: those Saturday jobs did not run. Every number on those four pages describes the week ending **Oct 30**. They are used below only for standing rules, thresholds and dates that were already scheduled, and are **unreliable for the Monday Watchlist.** The crew auditor pairs START/END lines and should already have flagged the three missing jobs.
-> - **FRESH (stamped 2026-11-06, Friday-night runs, settled bars): tech, financials, healthcare, industrials (Grid A); consumer-discretionary, consumer-staples, materials, real-estate (Grid B); utilities, energy, communication-services (Grid C).** Eleven of fifteen.
-> - **`macro/facts.json` was generated 2026-10-31, 8 days ago, and carries the Oct 30 closes.** Canary Watch, which regenerates it, did not run. Its values (10Y **4.929%**, 2Y **4.61%**, 3M **3.973%**, 10Y–2Y **+32**, 10Y–3M **+96**, VIX **19.42**, SPY **$755.72**, DXY **101.88**, WTI **$104.12**, gold **$3,885.70**, copper **$6.4585**, BTC **$77,198**, HYG **$77.43**, LQD **$104.27**, fed funds **3.75–4.00%**, stance **Hike**) are **last week's**. No `stale` flag is set on WTI or gold, because the file was right when written. **This page quotes facts.json only as last week's reference.** For the week ending Nov 6 it uses the committed, gate-verified feed **`data/market_state.json` (as_of 2026-11-06)**: 10Y **4.86%** (-7 bps), 2Y **4.51%** (-5 bps), 2s10s **+35**, VIX **25.64**, SPY **$735.29**, DXY **102.3**, WTI **$90.83** (CLZ26 settle), gold **$4,064.5** (GCX26), silver **$51.8**. Fed funds **3.75–4.00%** and stance **Hike** have not changed. Copper, BTC, HYG and LQD have **no fresh committed value** and are not restated. Section 7.A lists every difference.
-> - **What the stale pages miss, scored against their own written rules (this page's reading, not a desk's):** VIX closed **28.18 Thursday and 25.64 Friday**, over Canary's 25 alarm line on both closes and over the calendar's VIX > 22 flag. HY–IG was **255 bps** (financials: HY 3.48%, IG 0.93%), over Canary's 250 line. Payrolls were **+165K**, over the calendar's 150K clearing line. December WTI settled **$90.83**, under the $97 mark the calendar named as the first sign the oil flag clears. None of these crossings is on the board, because nobody ran it.
+> - **Fresh, stamped 2026-11-13 (Friday-night runs, settled Friday bars):** tech, financials, healthcare, industrials (Grid A); consumer-discretionary, consumer-staples, materials, real-estate (Grid B); utilities, energy, communication-services (Grid C). **Fresh, stamped 2026-11-14:** semiconductors, economic-calendar, earnings-surveillance, canary-watch. `logs/cron.log` shows a START and an END for every upstream job this week. **No wiki is over the 7-day line. No stale page.**
+> - **`macro/facts.json` generated 2026-11-14** (Canary Watch, commit e57f0b8), carrying the Fri Nov 13 closes. **WTI ($88.56, CLZ26) and gold ($3,879.70, GCX26) come from the feed (`data/market_state.json`, as_of 2026-11-13) and are not flagged stale.** One field is a day old by design: the **2Y (4.86%) is FRED's Thursday Nov 12 print**, so facts.json's **10Y–2Y +29** pairs Friday's 10Y with Thursday's 2Y. Every macro number below equals facts.json: 10Y **5.154%**, 5Y **4.981%**, 2Y **4.86%**, 3M **4.122%**, 10Y–3M **+103**, VIX **19.30**, SPY **$754.37**, DXY **103.41**, EUR/USD 1.105, USD/JPY 159.875, copper **$6.0795**, BTC **$68,249**, HYG **$76.94**, LQD **$102.81**, fed funds **3.75–4.00%**, stance **Hike**.
+> - **What the sector pages could not see.** FRED timed out for the Friday-night grids, so tech and financials wrote "HY OAS not re-sourced; last read 3.48%" and kept Ophelia's "no adds until HY is back under 3.40%" gate shut. Canary fetched FRED through a second path on Saturday: **HY OAS 320 bps, HY–IG 231 bps (Thu Nov 12)**. The gate the Grid A desks were waiting on has already opened. Section 7 and the issue filed this run carry it.
 
 ---
 
 ## 1. CECIL'S SYNTHESIS — Fundamentalist Lens
 
-**The prints were good and the vote decided the prices.** In eleven fresh sector pages, the week's best quarters were sold and nobody's numbers saved them. **Marathon Petroleum** earned **$26.93** a share against about $26.00, ran its refineries at **100%** and raised its dividend **10%**, and fell **16.2%**. **ConocoPhillips** beat at $3.27, raised its dividend **11%**, and fell 11.5%. **AMD** posted a record **$13.4B** quarter with data center **+97%** and a ~$17B guide, and fell 11.1%. **Eaton** beat and raised a third time on **19%** organic growth and lost **16.5%** in two days. **Vistra** printed a record **$2.378B** of EBITDA and a 2027 range above 2026, and finished -9.8%. **Sempra** beat at $1.40 and fell 9.2%. Apple and Palantir beat, and neither closed the week higher. Three weeks running, the tape has sold good news in tech; this week it did so in energy and power too.
+**The numbers held and a person left.** Nothing in this week's prints said the AI buildout is short of money or orders. **Applied Materials** posted a record **$10.41B (+53%)** and guided FQ1 to **~$11.1B / $4.35** against ~$10.83B / $4.23; **CoreWeave** raised its 2026 forecast and rose **24.7%** in a day; **Constellation** earned **$5.06** against ~$3.89, raised 2026 to **$12.50–12.80** and took a conditional **$5B DOE** uprate loan; **Cisco** beat and raised its FY27 revenue to **$74.8–75.8B**. Then NVIDIA's founder resigned under allegations with a China-security angle, and the stock lost **12.75%** to **$162.85**, a 52-week closing low. Cecil's line on the tech page is the week: *"NVDA at 10.3x is cheaper than when I said I'd start it, and I'm not starting it. The estimate belongs to a CEO who's gone."* He waits for Kress's first guide on Tuesday.
 
-**Where the value moved.** The cheap list grew on the names the election hit, not on the names it explained. **LMT** at **17.0x** forward with a 16.5% gap fell **11.0%** on a spending fear with no cancellation behind it; Cecil starts a third ("defense budgets move in years, not weeks"). **CVS** at **9.8x** with a 38% gap fell 12.5% on the day it beat, raised and announced a split; he starts a third. **SYY** at **14.3x** with a 19% gap after a sales miss and a held guide is "the name I've wanted since September." **NVDA** at **11.7x** forward with a 75% gap is the first chip he would start, after the Nov 17 print. **SRE** at 14.1x goes to the top of his utilities list, not his book, until "lower half of 2027" is explained. **BKNG** at 13.1x beat its own guide by two points. **NUE** at 11.4x and **STLD** at 10.4x are interesting and restricted. **ALB** at 9.5x wants one more quarter. **CMCSA** at 6.9x and 5.3% sits "behind Charter's 233,000."
+**Where the value is.** **MSFT at 21.7x** fell 1.3% in an up week and he keeps adding. **NVDA at 20.6x trailing / 10.3x forward** is on the list after the print, not before. **TXN and ADI**, back over their 50-day, **AMAT** after its guide and **TSM** once it closes over its 200-day are the semis list. **BKNG at 13.0x** with a 35% gap; **SYY at 14.3x** (18% gap) and **STZ at 12.0x**; **SRE at 14.4x** (22% gap) first in utilities, then **NWN**; **DLR** 24% under its target before EQIX; **NUE 11.4x / STLD 10.6x**, still blocked by the dollar restriction; **CMCSA at 7.1x** and 5.3%; **ETN** after JPMorgan's target cut, waiting for a quarter that shows data-center orders converting.
 
-**Traps, by his own words.** **MU at 3.3x** forward after a -22% week with no report: "a memory stock at 3.3x is pricing a peak, not a bargain." **TSLA at 165.9x** lost 10.4%: "cheaper, not cheap." **APP** at 18.9x after +71%: he does not chase. **COST at 42x**, **MCD at 20x** on negative U.S. comps, **BRK.B at 25.5x** and over its target after carrying XLF: none.
+**Traps, in his words.** **Costco at 44.2x**, +5.0% on no news and over its mean target: "a momentum trade, not a value one." **Berkshire at 26.0x**, a two-year high on operating earnings **-5.8%** and buybacks doubled to **$9.6B**: "I do not pay 26x and 5% over target to join it." **Tesla at 180.7x**, +8.9% "on a production line it is ending and a merger nobody has filed." **Corteva** at ~10x after a guidance cut on Brazil: "a falling knife." **Skydance**, with ~$87B of gross debt, stopping subscriber disclosure. **GIS at 7.3%**: "a dividend the market doesn't believe." Over target now: JNJ, AMGN, KO, MO, PEP, COST, WEC, ED, SPG, CB, TRV, PGR.
 
-**His book.** **MSFT +1.7%**, the one top-ten tech name that rose, at 21.9x: he keeps adding. **GE** +7.1%, about 13% over his $285.64 start. **TMUS** +10.6% and **VZ** +9.7% from their starts: hold, no adds. **O** +5.3% from $56.08 after an AFFO raise. **PPG** 14% over its basis. **DTE** +5.4%. The misses: **LRCX** -12.9% on his third ("I do not average down into a political drawdown I cannot size"), **VST** -17.9% from $152.02 (held until Austin speaks to existing contracts), **UNH** -3.2% since the add, on a ratings headline, **NFLX** half -10.9%, **SLB** filled at $52.44 and -4.8%, **CAT** held, no add, with the Street's target down another $79.
+**His book, marked.** GE **+16%** from $285.64; LMT **+5.1%** on the third he started at $567.08; TMUS **+16.0%**, VZ **+11.3%**; CVS third **+6.6%**, UNH back to even, ELV **+2.3%**; DTE **+9.0%**; O **+5%**; PPG **+14%**; EOG **+5.2%**; LRCX third back to **-1.8%** (from -12.9%). Still red: VST **-12.5%** from $152.02 (held until Austin speaks to existing contracts), NFLX half **-12.6%**, SLB **-1.5%**.
 
-**Dividend spreads that matter.** Against the feed's 10-year at **4.86%**: utilities' Yahoo yield **2.79%** sits **207 bps** under, real estate's **3.34%** **152 bps** under, staples' **2.46%** **240 bps** under. All three gaps *widened* on a lower 10-year because Yahoo restated the fund yields lower; the pages say the earlier fields were stale, so the change is a basis change, not a re-rating. Yields that still clear the Treasury: **UVV 8.1%**, **BRT 7.8%**, **CTO 7.5%**, **GTY 7.0%**, **GIS 6.7%**, **VZ 6.1%**, **EIX 5.8%**, **NOMD 5.7%**, **MO 5.7%**, **O 5.5%**, **CMCSA 5.3%**, **T 5.1%**. BRT and SAFE closed at two-year lows; CCOI suspended its dividend. Yield is not the screen this week; the balance sheet under it is.
+**Dividend spreads that matter.** Against facts.json's **10Y 5.154%**: utilities' **2.79%** yield sits **-236 bps** under (from -207), staples' **2.46%** **-269 bps**, real estate's **3.34%** **-181 bps** (from -152). All three gaps widened about 29 bps in a week, and **all three funds rose anyway** (XLU +2.11%, XLP +2.52% to a 52-week closing high, XLRE +0.84%). That is the week's valuation puzzle: the bond proxies were bought as cash flows, not as bonds. Yields that still clear the 10-year: **UVV 8.8%**, **BRT 7.9%**, **CTO 7.5%**, **GIS 7.3%**, **SAFE 7.2%**, **GTY 7.1%**, **VZ 6.1%** (about **+95 bps**, from ~125), **EIX 5.9%**, **NOMD 5.8%**, **MO 5.7%**, **O 5.6%**, **CMCSA 5.3%**. SAFE closed at a two-year low and UVV at its lowest close in two years: yield is not the screen, the balance sheet under it is.
 
 ---
 
 ## 2. MARKY'S SYNTHESIS — Technician Lens
 
-**The index had its worst day since April 2025 and the average fund did not.** SPY **-2.70% to $735.29** (feed), a fourth straight down week; QQQ **-5.0%** to $656.10; DIA **-0.9%**; IWM **-2.0%**. Thursday was the session: S&P about **-4.4%**, Nasdaq Composite **-5.5%**, Nasdaq 100 **-6.4%**, **XLK -8.0%** on 33.5M shares (2.9x its 20-day), **SMH -11.2%**, XLI -4.1%, XLY -3.83%. VIX closed **28.18** that day and **25.64** Friday, from 19.42.
+**Everything rose, and almost nothing confirmed.** SPY **+2.59% to $754.37**, ending a four-week losing streak; QQQ **+3.6%** to $679.89; DIA **+2.1%**; IWM **+1.4%**. VIX closed under 20 every day (**19.92 / 19.46 / 17.49 / 18.70 / 19.30**) and VIX/VIX3M went back to **0.936**, contango all week. **All twelve sector funds rose.** But the lines that matter mostly printed intraday and failed on the close.
 
-**Breadth by the Grid's own count: five up, one flat, six down.** Up: XLC (+4.89%), XLRE (+1.92%), XLY (+1.91%), XLF (+1.15%), XLP (+0.74%). Flat: XLV (-0.04%). Down: XLE (-12.00%), SMH (-11.2%), XLK (-8.23%), XLI (-2.83%), XLB (-1.50%), XLU (-0.69%). **Above the 50-day: seven of twelve**, down from eight: XLE lost it Wednesday on 69.4M shares. **Above the 200-day: seven of twelve**, down from nine: **XLK** closed under its 200-day ($169.91) for the first time since April 7, and **SMH** is **11.1%** under its own ($521.76, tech page). XLI made an **eighth** weekly close under its 200-day; XLU a **fifteenth**.
+**Breadth by the Grid's own count.** Up on the week: **12 of 12** (XLE +5.42%, SMH +4.91%, XLI +3.76%, XLC +3.72%, XLK +3.36%, XLF +2.66%, XLP +2.52%, XLV +2.19%, XLU +2.11%, XLY +2.04%, XLRE +0.84%, XLB +0.54%). **Above the 50-day: 8 of 12** on the sector pages' own levels (XLY, XLF, XLB, XLRE, XLV, XLU, XLP, and XLE by five cents), up from 7. **Above the 200-day: 8 of 12**, up from 7: **XLU** made its first Friday close over the 200-day since Jul 24, ending sixteen straight rejections. Below both: **XLK, SMH, XLC, XLI**.
 
-**Lines that fired.**
-- **XLK.** $172.50 went on Thursday's open ($172.33), the 200-day on the close ($162.38). Marky was flat and stayed flat. RSI **29.4**, the first oversold print of the move, and Friday's bounce came on 20.0M against Thursday's 33.5M. Re-entry: a close over **$169.91** on volume over 12.1M. Down: **$161.50**, then $157.50.
-- **SMH.** Last week's starter was stopped on any close under $519.50. The fund closed **$463.96**; that stop fired. The semis page, stale, still shows the starter.
-- **XLE.** The weekly stop under **$66.29** fired at **$61.62**. Flat. The 200-day is **$58.58**, untouched intraday since Oct 17, 2025.
-- **XLI.** **$165.44** and the **$162.97** low both went Thursday on 19.3M. New low **$161.74** Friday. First sign: a close back over $165.44.
-- **XLU.** The last piece came off at **$43.80** Monday, the 200-day to the cent; Thursday opened over the line and closed under it on 47.7M. A fifteenth rejection.
-- **XLV.** The add fired Wednesday over $187.99 (close **$189.66**, a two-year closing high) and Thursday took it back on **24.5M**, the heaviest since Nov 2025. Add off; the long stays; $181.30 held Friday by $3.50.
+**The near-misses, all four of them.**
+- **XLK** closed over its 200-day Monday ($170.88) and Wednesday ($174.36) and finished **$0.26 under it** ($170.28 vs $170.54): "a whipsaw, not a reclaim." Small size, stop on a close under **$169.35**; add over **$174.36** on volume over 12.8M.
+- **SMH** ran to **$516.65** Wednesday, **$7 under the 200-day ($523.89)**, and closed Friday at $486.75 after all ten top holdings fell. "Failed test from below, no trade, no loss." In over $523.89 on volume above 11.7M; under **$462.88** opens $443–446.
+- **XLI** traded to **$171.60**, $1.17 under the 200-day ($172.80), a **ninth** straight Friday close below it, every day under average volume. Starter third on the 50-day closes, stop **$165.44**.
+- **XLC** stopped at **$109.26** against a **$109.31** 50-day. The short is closed ($108.97 in; out at $105.03, $99.90, $107.36). A close over $109.31 buys a starter, stop $106.22.
 
-**Lines that held and paid.** **XLRE**'s add fired at **$44.00**; all three averages under price, bunched ($42.45–$42.86); stop $43.09. **XLP** rebought at **$90.08**, nine cents over the line; new closing highs Monday and Wednesday ($91.94); stop the 20-day $88.09. **XLY**'s long fired Monday at **$118.16**; the 200-day ($115.10) held through a +4.26% and a -3.83% day. **XLF** made a two-year closing high **$59.20** Wednesday, then 71.5M shares of selling Thursday, and still closed over **$56.67**. **XLB** took a third off over $53.42 Monday; Thursday ran to **$54.63** and closed $52.33, a $2.30 reversal. **XLC**'s last third of the short is **seven cents** from its stop ($105.03; Wednesday closed $104.96): a fund that lost 0.6% on a 4.4% S&P day "has a buyer under it."
+Two more closed **on** their lines rather than over: **XLE $64.96** against Marky's $64.96/$64.97 rule (no fill) and **XLU $44.04** against a $44.09/$44.14 buy line (high $44.14, no close). **XLV** pushed to $190.66 Thursday and closed $187.83 under its $189.66 re-add line: a four-day flag on falling volume.
 
-**Correlations broke the other way.** No Canary matrix this week. The tape alone says it: comm services +4.9% and real estate +1.9% on the worst week for tech since April 2025, energy -12.0% in the same week (it had been a hedge), and XLE's beta now **-0.22** on Yahoo. Leadership was narrow in the green funds: **Berkshire ~0.66 point of XLF's 1.15**; **Amazon ~+1.7 points of XLY**, cancelled by Tesla's -1.95; **XLI's three gainers (MMM, GE, UBER) each had their own news.** His rule from last week stands: VIX closed over 20, and with no ratio on the board this week, he hedges the book, not a sector.
+**What held and paid.** **XLP** closed on its high at **$92.35**, a 52-week closing high, six up weeks, full size, stop the 20-day **$89.48**. **XLF** six straight up weeks, 16 of 17 names up; warning moves up to the 20-day **$57.06**. **XLRE** absorbed a 29 bp 10-year move in an 80-cent range. **XLY** long from $118.16 is up $1.82, but closed lower four days running. **XLB** sat on its 20-day ($52.23).
+
+**Correlations.** Canary's 30-day matrix has **all twelve sectors positive vs SPY** for the first time in weeks; XLE (0.026) and XLP (0.043) crossed back from negative, XLU is 0.072. And bonds stopped hedging: **TLT -3.10%, LQD -1.65%** in a +2.6% week for stocks. The one correlation that broke the textbook way: utilities, staples and real estate rose while the 10-year rose 29.5 bps. Inside the market, **RSP lagged SPY by 0.22 pts** for the first time in six weeks, and market-wide breadth (Finviz) stayed red: **40.0%** of stocks over their 50-day, **453 new lows vs 75 highs**, while the S&P's own read **71.3%** over the 50-day.
 
 ---
 
 ## 3. OPHELIA'S SYNTHESIS — Macro Lens
 
-**The election was the macro event, and the market read it twice.** Democrats swept on Tuesday. On **Wednesday** the read was lower AI-capex pressure, lower oil and policy relief: XLY **+4.26%** (best day since May 2025), XLF **+3.5%** to a record close, XLV **+3.1%** to a two-year closing high, XLRE **+3.3%**, insurers, hospitals and medtech up (Reuters). On **Thursday** the read flipped to **where data centers can be built**: a new Texas governor elected on a promise to halt new data centers, **UBS putting about 30% of expected 2028 US data-center additions at risk** from construction pauses, and the S&P's worst day since April 2025. Defense sold on a spending fear (LMT -11.0%, RTX -5.1%). The rotation is five weeks old, and its motive moved again: from rates, to cost, to who funds it, to **where it can be built.**
+**The regime moved one notch hawkish and the equity market did not care.** October CPI ran **+0.4%** headline and **+0.3% core** against +0.3% / +0.2%, the third straight hot core (Tue Nov 10). PPI was cooler on the headline (+0.3% vs +0.4%) but its annual rate hit **6.5%**, the highest since 2022. December hike odds went from ~72–79% to **~88–89%** (CME FedWatch, per the calendar and semis pages), with a 9–14% tail for 50 bp; Waller said the Fed "ought to" hike; BofA now calls December **and** January. The bond market answered with a bear flattener led by the belly: **5Y +33 bps to 4.981%**, **10Y +29.5 bps to 5.154%** (over 5.00% Thursday for the first time since the flag cleared), the **2Y +40 bps to 4.86%** (FRED, Thursday). The 10Y breakeven barely moved (2.24%), so the whole 10-year move was **real yield, now ~2.91%**. The dollar made a **52-week closing high at 103.41**; USD/JPY is 159.875.
 
-**The peace trade.** The same vote moved the barrel. Traders bet a weakened White House would take an Iran deal over the strikes floated for after the midterms. A Doha draft would lift the blockade and open Hormuz on day six; nothing is signed, Iran's negotiators left without a breakthrough, tanker attacks continued, and one analyst in CNBC's coverage puts renewed fighting at 80%. **December WTI settled $90.83 (-$13.29); January Brent $98.32 (-$15.11)**, the biggest weekly drop since 2022. OPEC+ held December and meets **Nov 29** on 2027 quotas. Lower oil helped the consumer and the inflation case; the energy page says plainly that "falling oil eases the December hike case."
+**The rotation story.** Last week money ran from AI and oil into media, real estate and staples on an election shock. This week **everything rose**, and the order reversed: the three that lagged last week (XLE, SMH, XLK) are three of the top five. But the month still belongs to the shelters: **XLV +8.84, XLP +8.80, XLF +8.43** points ahead of SPY over 21 sessions; **SMH -10.64, XLK -7.74** behind. Inside tech, the money did not leave AI, it left one company: NVDA -12.75% while **AMD +18.9%, AVGO +18.2%, MU +12.8%, LRCX +12.7%, AMAT +11.4%**. Utilities, staples and communication services each write that part of the chip money went to "steady cash flow." Both are true, and they are not the same trade.
 
-**The data argued for a hike, louder than last week.** Payrolls **+165K** against 55–65K, unemployment **4.1%**, hourly earnings **+0.4% m/m**, Aug–Sep revised up 84K; ISM manufacturing **55.5** (prices **75.2**, down from 77.9); ISM services 54.5; JOLTS **7.52M**; factory orders +1.8%; claims 189K; GDPNow **3.4%**; UMich **51.0** with year-ahead inflation expectations down to **4.3%**. Daly: higher rates "are likely to be needed." December odds were **not re-sourced** by any fresh page.
+**Cross-currents.** (1) **Rates vs proxies:** a 5.15% 10-year and a priced hike, and XLU broke over its 200-day, XLP made a high, XLRE made a sixth up week. (2) **Iran vs the barrel:** Trump posted the U.S. "does not need" a deal, the IRGC said two supertankers were stopped by explosions, and **December WTI still fell 2.5% to $88.56**, while XLE rose **5.42%** (#207). Energy's own read: "That is positioning, not fundamentals." (3) **Dollar vs metals:** DXY 103.41 → gold **-4.5%** to **$3,879.70**, under $4,000; silver about -6%; copper **$6.0795**, the lowest close of Canary's fetch; NEM -6.4%; the materials restriction stays ON. (4) **Credit vs duration:** spreads tightened every print (HY OAS **348 → 320**, HY–IG **255 → 231**), and IG bond prices fell anyway because rates did the damage.
 
-**And the bond market bought anyway.** The feed's 10-year fell **7 bps to 4.86%**, the 2-year **5 bps to 4.51%**; 2s10s **+35**. Every page reads it as fear money: "the bond market is being held down by equity fear, not by the data" (utilities); "rates fell only because equities did" (tech). The dollar rose to **102.3** on payrolls. Gold **+4.6%** to $4,064.5 and silver +5.5% with the dollar *up*: materials calls it unusual.
-
-**Credit is the line that broke.** HY OAS **3.48%** on Thursday (FRED), a new cycle high past the 3.40% Oct 22 peak; FRED now shows **3.44%** for Oct 30, so it was already over 3.40% when last week's pages went out. HY–IG **255**. CoreWeave bonds yield over **16%**. Millennium cut credit pods. Money-market inflows surged. Ophelia ends her financials upgrade ("neutral"), keeps tech at "reduced, no adds" until HY is back under 3.40% and CPI is out, and holds energy at "reduce held; no new longs before a signature."
-
-**What the Economic Calendar revealed.** Nothing new: it did not run. Its Oct 31 thresholds, applied to this week's prints, say the **NFP flag clears** (>150K), **AHE ≥ +0.4% is hawkish**, **JOLTS > 7.4M means the labor flag was overstated**, ISM did not reach the 56/80 re-acceleration line, the **oil flag starts clearing** (settle under $97), the **CPI flag carries** into October CPI, and **VIX > 22 broke on a close.** Net by her own rules: one inflation flag up, the oil flag fading, and the volatility line crossed. The regime sentence from last week still fits with one change: sticky inflation, a December hike in play, and a growth scare that now has a **political** source on top of the equity and credit one.
+**What the Economic Calendar revealed.** Its thesis was "sticky inflation, a December hike, and a financial-conditions growth scare." **The first two were confirmed in full; the third reversed.** VIX cleared its 22 flag on Monday's close and never came back, even through a CEO resignation at a top-three S&P company. The flags are still two, but the mix changed: **CPI MoM > 0.3% carried, 10Y > 5.00% raised; VIX > 22 cleared.** Four triggers hit: core CPI ≥ +0.3%, December > 85%, the 10-year back over 5.00%, and **existing home sales 3.75M** under the 3.85M line. Housing is the soft spot (builders have missed four straight releases; mortgages 7.11–7.21%). The calendar's sentence for Monday: **"The risk is no longer a growth scare that cuts the Fed's legs out. It is a Fed that hikes into a 10-year already over 5%."** The 10-year is **9.6 bps under the 5.25% crisis line**, and Warsh speaks Monday.
 
 ---
 
@@ -63,170 +58,157 @@
 
 **Where all three agree.**
 
-1. **The vote, not the prints, set the prices.** All three desks write that good quarters were sold (MPC, COP, AMD, ETN, VST, SRE, AAPL, PLTR) because the market priced Washington and Austin, not the quarter.
-2. **The bond rally is borrowed.** Payrolls +165K and AHE +0.4% would normally lift yields; the 10-year fell to 4.86% on Thursday's rout. Nobody extends duration on it. Ophelia (utilities): "the bond bid is fear, and fear is not a plan."
-3. **Credit is now the gate for the AI chain.** HY OAS 3.48%, CoreWeave over 16%: Ophelia wants HY back under 3.40% before any tech add or any financials upgrade; Cecil waits for NVDA's print; Marky is flat in XLK, XLI and XLE.
-4. **The shelter worked, and it is narrower than it looks.** XLC, XLRE, XLY, XLF and XLP rose; XLV flat. But XLF's gain is mostly Berkshire, XLY's is Amazon against Tesla, and XLV gave back its whole Wednesday gain on its heaviest volume in a year. "A shelter, not a refuge" (healthcare).
-5. **Nobody buys oil before a signature.** Marky stopped out; Cecil buys Exxon "after a deal is signed than before"; Ophelia holds the reduce.
+1. **Rates are the gate now, not fear.** Every desk that writes a macro verdict names the 5.15% 10-year and the priced hike: tech "reduced, no adds," financials "neutral, no upgrade," healthcare "the macro turned," real estate cut to **half size**, utilities **half size**, materials restriction on, discretionary "underweight the index." The calendar: no duration adds until a close back under 5.00% after the minutes. Canary: "rates, dollar and policy, not volatility or credit."
+2. **Hedges come down to standard size.** VIX under 20 every close with VIX/VIX3M under 1.00: Marky takes his extra hedge off and keeps the base; the calendar says the same.
+3. **NVIDIA is a governance event, not a demand event.** Tech, semis and earnings all say the supply chain answered with numbers (AMAT, CoreWeave, AMD, CSCO's AI target to $9B) and that Tuesday's print is about whether Kress affirms a Huang-era outlook. Nobody buys NVDA before it; Marky "would rather buy NVDA after the print over its 200D than before it at a 52W low with no CEO."
+4. **The relief rallies have not earned full size.** XLK, SMH, XLI, XLC, XLE and XLU all touched or reached their lines and none closed decisively over them, all on light volume. Starters at most.
+5. **Oil does not get bought on posts.** Energy holds the reduce until Nov 29 or a signature; Canary leaves energy out "on headlines."
 
 **Where they disagree.**
 
-- **Data-center demand.** Cecil wants DLR on "Thursday's kind of day" and lists ETN and SRE; real estate's bullish data-center trigger (#189) is still open; Goldman raised its global forecast to **273 GW by 2030** the same week. Ophelia moved power and electrical to **cautious** and tech to reduced; utilities calls Texas "the first policy shock to the power-demand story."
-- **Defense.** Cecil starts a third of LMT; Ophelia moves defense to neutral and "would rather wait for it than argue with it."
-- **Duration.** Real estate adds (Marky to three pieces, Ophelia constructive, normal size); utilities and staples say a December hike is the case against bond proxies. The same split, a fourth week (#173, #180, #193).
-- **Managed care.** Cecil starts CVS and holds UNH; Ophelia is neutral until the star-ratings cost is known.
+- **Bond proxies.** Marky is long XLRE (three pieces) and full size XLP, and wants XLU over $44.14; Ophelia halves XLRE and XLU and won't add to XLP; Cecil "sells safety, does not buy it" at WEC/ED and COST at 44x.
+- **Credit.** Grid A (tech, financials) is still waiting for "HY under 3.40%" it could not read; Canary prints **3.20%**. Cecil keeps zero high yield anyway because **CCC (1,314) did not tighten** with the rest.
+- **Cash.** Canary's Ophelia keeps **25–30%**; the Council book holds **16.2%** (83.8% invested).
+- **Defense and AI power.** Cecil holds LMT and lists ETN; Ophelia keeps defense neutral and power/electrical cautious after JPMorgan's ETN/GEV cuts.
 
-**The single biggest risk: October CPI lands hot on a bond market that has been rallying on fear.** Payrolls +165K, AHE +0.4% and Daly have already put a hike back in play; the 10-year sits at 4.86% only because equities fell. A hot CPI on **Tuesday Nov 10** (date per calendars; BLS's own row not seen) would take that cushion away while HY OAS is at a cycle high, XLK and SMH are under their 200-days, and the most levered AI borrower pays over 16%. In that week the rate-sensitive shelter (XLRE, XLU wires, XLP) and the AI chain would fall together, and the negative correlations that protected diversified books would stop working. The Council's book has two lines inside 4%: XLB's **$51.21** (LIN) is **1.4%** under XLB's $51.95, and XLF's **$55.03** is 3.9% under.
+**The single biggest risk: a Fed that hikes into a 10-year already over 5%, with nothing left to hedge it.** The 10-year is 9.6 bps from 5.25%; Warsh (Mon) and the minutes plus a 20-year auction (Wed) can carry it there before any data does. Stocks and bonds fell together this week (TLT -3.1%), no sector is negatively correlated with SPY, and the dollar and real yields are tightening conditions before the Fed acts. NVDA's print (Tue) lands in the middle of that, at 15% of XLK and 20% of SMH.
 
-**The single biggest opportunity: the names the election sold without a cancellation.** LMT at 17.0x, ETN at 21.0x after a third raise, CAT at RSI 21.3, MPC at 6.0x after a record quarter, NVDA at 11.7x, DLR at a 29% gap. Each was sold on a political read that has no number yet: no budget cut, no permitting bill, no signed Iran deal. If CPI is calm and HY OAS comes back under 3.40%, they are priced for outcomes that have not happened. The desks' rule is the same for all of them: wait for the number (NVDA Nov 17, a Texas statement on existing contracts, a signature in Doha), and buy in thirds.
+**The single biggest opportunity: the credit gate opened while the desks weren't looking.** HY OAS **320** and HY–IG **231** meet Ophelia's own Grid A condition for tech and financials. If NVDA's call is clean and the 10-year holds under 5.25%, the AI-chain names that cleared on numbers (AMAT, TXN/ADI, TSM over its 200D, MSFT, and NVDA itself at 20.6x trailing) are the first buys, and the XLK/SMH 200-day lines are the trigger.
 
 ---
 
 ## 5. MONDAY WATCHLIST
 
-*Eleven fresh wikis; levels are Friday Nov 6 closes. **Semiconductors, economic-calendar, earnings-surveillance and canary-watch are stale (Oct 31): their levels are not used; only their scheduled dates and written thresholds are.** Index and macro levels are `data/market_state.json` (as_of 2026-11-06), not facts.json (Oct 30). Arena: week of Nov 9 is open on #194 (lock Mon 8:50 AM ET).*
+*All fifteen wikis fresh. Levels are Friday Nov 13 closes from the sector pages; macro from facts.json. Arena: week of Nov 16 is open on #203 (lock Mon 8:50 AM ET).*
 
 **Macro gates (these outrank every ticker line):**
 
 | Gate | Level now | Trigger | Action |
 |---|---|---|---|
-| **October CPI (Tue Nov 10, 8:30, per calendars)** | Sep headline +0.6%, core +0.3% (stale page); payrolls +165K, AHE +0.4% | Core M/M **> 0.3%** keeps the CPI flag up | Hot: December hike priced, 10Y off its fear bid, bond proxies and the AI chain fall together. Cool: Ophelia's second condition for tech adds is met |
-| **HY OAS (FRED, daily, one-day lag)** | **3.48%** (Thu Nov 5); HY–IG 255 | Back **under 3.40%** / through **3.50%** | Under: Ophelia re-looks at XLF and XLK. Through 3.50%: tech bear case, AI funding stress |
-| **10Y** | **4.86%** (feed) | Close **over 5.00%** / under 4.75% | Over: proxies lose the fear bid. Under 4.75%: the calendar's stress line, from above, for the first time in eleven weeks |
-| **VIX** | **25.64** (28.18 Thu) | Close **under 20** / over 30 | Under 20: hedges come off. The 25 alarm is already crossed |
-| **WTI / Doha** | **$90.83** (CLZ26) | A signed deal / a collapse or strike | Deal: low $80s, XLE through its 200D. Collapse: "$15 of Brent comes back faster than it left." EIA Wed Nov 11 |
-| **DXY** | **102.3** | Weekly close **< 99** | The only thing that lifts the materials restriction |
-| **Texas / data-center policy** | Governor-elect pledge; no bill | A moratorium or statement on existing contracts | VST through $112.89, SRE through $76.89; CEG Monday is the first management read |
+| **Warsh, Mon 12:00 PM** | Dec hike ~88–89%; 50 bp ~9–14% | Opens the door to 50 bp or "more than one" | 10Y toward **5.25%**; proxies and long-duration growth hit first. Pushback on December: 10Y back under **5.00%**, duration case reopens |
+| **10Y** | **5.154%** | Close **over 5.25%** / back **under 5.00%** | Over: crisis line; XLRE "defensive over 5.30%." Under: XLRE back to normal size; the calendar's duration add |
+| **NVDA, Tue AMC** | $162.85; straddle ±8.6% (earnings page) vs ±10.8% implied (semis page) | Clean guide under Kress / guide cut, write-down, China enforcement | ±2% on SMH from one name before anything else trades |
+| **Retail sales, Tue 8:30** | cons **0.0%**, ex autos +0.4% | **< -0.1%** fires the retail flag; > +0.5% with control > +0.4% lifts 50 bp odds | HD/LOW/TJX/TGT/WMT all read it the same week |
+| **FOMC minutes + 20Y, Wed** | prior 20Y 5.469% | "Many/most" saw a December hike; 20Y tail > 2 bp | December locked; long-end supply stress |
+| **Credit** | HY OAS **320**, HY–IG **231**, CCC 1,314 | HY–IG back **over 250** | Grid A's gate shuts again |
+| **VIX** | **19.30**; VIX/VIX3M 0.936 | Close over 20 with ratio over 1.00 | Extra hedge back on |
+| **DXY** | **103.41** | Weekly close **< 99** / **> 105** | Under 99 lifts the materials restriction; over 105 is Canary's red line |
 
-**Tickers, levels, triggers, stops:**
+**Sector funds:**
 
 | Ticker | Close | Trigger | Stop / invalidation |
 |---|---|---|---|
-| **XLK** | $164.74 | Flat. Re-entry: close over the **200D $169.91** on volume > 12.1M | **$161.50**, then $157.50 |
-| **SMH** | $463.96 | Starter stopped (closed under $519.50). No re-entry level on a fresh page | 200D $521.76 is 12.5% above |
-| **XLC** | $104.79 | Last third covers on a close over **$105.03**; no long until the 20D **$106.35** is behind it | $104.34, $101.44, $99.90 |
-| **XLY** | $117.58 | Long from $118.16; add on a close over **$122.92** | Close under the **200D $115.10** |
-| **XLF** | $57.16 | Both adds held; Berkshire reported Sat Nov 7 (no fresh page covers it) | Close under **$56.67** = warning; $55.75; **$55.03** second add off and the Council line |
-| **XLI** | $162.67 | Flat. First sign a close over **$165.44**; reclaim the **200D $172.65** on volume | Under **$161.74** → $160.39–160.90, $155.81 |
-| **XLB** | $51.95 | Two-thirds long; add on a weekly close over **$53.90** | Close under **$51.21** (also LIN's thesis line) |
-| **XLE** | $61.62 | Flat after the weekly stop. Look again at the **200D $58.58** with WTI holding $90, or a close over the **50D $64.96** | — |
-| **XLV** | $184.80 | Long, add off; re-add over **$189.66** | Two closes under **$181.30** or one under **$177.07**: half off |
-| **XLU** | $43.13 | Flat. Buy a close over **$44.09** | $42.63, $42.42 |
-| **XLP** | $90.08 | Full size (half $81.70, half $90.08); Ophelia's add zone $87–$88 | Close under the **20D $88.09**: sell half |
-| **XLRE** | $44.00 | Long from $41.33 / $43.17 / $44.00; add over **$45.63** | Close under **$43.09** |
-| **MSFT** | $530.61 | Cecil's core add at 21.9x | — |
-| **NVDA** | $186.64 | Cecil's first chip start, after **Nov 17**; Marky: after the print, over its 200D | 200D **$204.39** is 9.5% above |
-| **CSCO / AMAT** | $93.85 / $332.72 | Report **Thu Nov 12 AMC**; Marky does not trade either into it | CSCO at its lowest close since May 7 |
-| **CEG / VST / SRE** | $249.95 / $124.80 / $78.17 | CEG reports **Mon Nov 9**; the first word on Texas | VST $112.89; SRE $76.89 (52W lows) |
-| **LMT / ETN / CAT** | $567.08 / $341.72 / $558.63 | Cecil starts a third of LMT; ETN on the list; CAT held, RSI 21.3 | — |
-| **CVS / UNH** | $83.85 / $394.15 | Cecil starts a third of CVS; UNH held, no add | Star-ratings cost |
-| **SYY / BKNG / DLR** | $76.86 / $160.67 / $174.20 | Cecil's list | — |
-| **MPC / XOM / SLB** | $372.74 / $165.87 / $49.92 | Held; Exxon only after a signature; OXY reports Mon Nov 9 | SLB -4.8% from $52.44 |
-| **TTWO / DIS** | $214.87 / $116.75 | TTWO Mon Nov 9 AMC, GTA VI Nov 19; DIS Nov 17 | — |
-| **NUE / NEM** | $244.97 / $120.91 | Watch only (restriction on) | — |
+| **XLK** | $170.28 | Small. Add on a close over **$174.36**, volume > 12.8M | Close under **$169.35**; $165.30, $162.14 |
+| **SMH** | $486.75 | Flat. In on a close over the **200D $523.89**, volume > 11.7M | Under **$462.88** → $443–446 |
+| **XLC** | $108.69 | Flat. Starter on a close over **$109.31** (50D); target 200D $111.86 | **$106.22** |
+| **XLF** | $58.68 | Both adds held; third add over **$59.20** | Close under the **20D $57.06** = warning; $56.67, $55.75; **$55.03** Council line |
+| **XLI** | $168.78 | Starter third; full size over the **200D $172.80** on volume > 8.8M | Close under **$165.44** |
+| **XLB** | $52.23 | Two-thirds long; add on a weekly close over **$53.90** | Close under **$51.21** |
+| **XLE** | $64.96 | Flat. Half on a close over **$64.97**; first targets $66.17, $66.29 | **$62.21**; a close under $63.37 = short-covering week |
+| **XLV** | $188.85 | Long; re-add over **$189.66** | **$185.36**; two closes under $181.30 or one under $177.07: half off |
+| **XLU** | $44.04 | Flat. Starter on a close over **$44.14** | **$43.79** (Monday gap) |
+| **XLP** | $92.35 | Full size; no adds at the high; Ophelia's zone $89–90 | Close under the **20D $89.48**: sell half |
+| **XLRE** | $44.37 | Long (Ophelia half size); add on a weekly close over **$45.63** | Close under **$43.09** |
+| **XLY** | $119.98 | Long from $118.16; add over **$122.92** | Close under the **200D $115.08** |
 
-**Council book (provisional; Monday Nov 2 opens to Friday Nov 6 closes from `portfolio/current.yaml` and `data/weekly/2026-11-06.json`; the official close is Monday's tracker run):** PGR $230.66 → $227.77 (**-1.25%**), LIN $519.78 → $515.25 (-0.87%), TROW $105.41 → $108.41 (**+2.85%**), SPGI $465.46 → $467.80 (+0.50%), AON $324.39 → $334.81 (**+3.21%**). At 80.0% invested, about **+0.5%** for the book against SPY **-3.18%** open-to-close ($759.45 → $735.29), alpha about **+3.7 points**. No CORE -5% stop is near: the deepest is PGR at -1.25% against a $219.13 stop. Thesis lines: XLF $55.03 (four names) is 3.9% under XLF; **XLB $51.21 (LIN) is 1.4% under XLB**, the closer of the two.
+**Names:**
 
-**Last week's board, scored.** Fired: XLY's long ($118.16), XLB's third off ($53.42), XLRE's add ($44.00), XLP's rebuy ($90.08), XLV's add (and its removal), XLU's exit at $43.80, XLE's weekly stop ($61.62), XLK's reduce under the 200D, XLI under $165.44, SMH under $519.50, HY OAS over 3.40% (Ophelia's financials upgrade ended), HY–IG over 250, payrolls over 150K, VIX over 20 on a close, the 10Y under 4.90%, Dec WTI under $97. Did not fire: XLC's cover ($105.03, by seven cents), ISM ≥ 56 with prices ≥ 80, the 10Y over 5.00%, XLF's $55.75 warning, DXY under 99.
+| Ticker | Close | Trigger | Stop / note |
+|---|---|---|---|
+| **NEE / D** (Council book, CORE) | $85.12 / $67.66 | **Virginia SCC evidentiary hearing on NEE–D, Tue Nov 17**; staff recommends denial as proposed | CORE -5% stops **$83.23 / $65.72** (2.2% and 2.9% away) |
+| **ALL / UPS / PGR** (Council book) | $267.64 / $112.40 / $235.78 | Held | Stops $243.81 / $104.28 / $217.59 |
+| **NVDA** | $162.85 | Cecil after Kress's guide; Marky after the print over its 200D (~$204) | 52-week closing low |
+| **MSFT** | $523.88 | Cecil keeps adding at 21.7x | — |
+| **HD / DIS** | $348.69 / $118.97 | Report Tue BMO; whispers $3.89 / $1.74 | HD straddle 2.5x norm on 9 open calls: ignore it |
+| **TGT / LOW / TJX / WMT / ROST** | $161.45 / $227.73 / $134.37 / $128.09 / $231.68 | Wed / Wed / Wed / Thu / Thu | TGT whisper +6.4%, the widest gap |
+| **TTWO / CHTR** | $227.82 / $138.39 | GTA VI Thu Nov 19; Charter tender expires Nov 17 | — |
+| **TXN / ADI / AMAT / TSM** | $303.60 / $397.97 / $370.50 / $398.73 | Cecil's chip list; TSM once over its 200D ($403.05) | ADI reports Nov 24 |
+| **LLY** | $1,443.50 | Two-year closing high, 1.4% under target | Cycle-3 Medicare prices by **Nov 30** |
+| **VST / SRE / CEG** | $133.01 / $79.54 / $280.20 | CEG back over its 200D; VST under its 20D | VST $112.89, SRE $76.89 (52W lows) |
+| **MPC / EOG / XOM** | $414.65 / $158.32 / $170.59 | Held; Exxon only after a signature | OPEC+ Nov 29 |
+| **DE / MDT** | $673.54 / $102.86 | Nov 25 / Nov 24 | DE into a 103 dollar and the FTC/USDA inquiry |
+
+**Council book (provisional; Monday Nov 9 opens from `portfolio/current.yaml` to Friday Nov 13 closes from `data/weekly/2026-11-13.json`; the official close is Monday's tracker run):** ALL $256.64 → $267.64 (**+4.29%**), PGR $229.04 → $235.78 (+2.94%), UPS $109.77 → $112.40 (+2.40%), D $69.18 → $67.66 (**-2.20%**), NEE $87.61 → $85.12 (**-2.84%**). At 83.8% invested, about **+0.9%** against SPY **+1.67%** from Monday's open ($741.95). No stop hit; the two utilities are the closest, and they share Tuesday's hearing.
+
+**Last week's board, scored.** Fired: CPI hot (core +0.3%); 10Y over 5.00%; **VIX under 20** (hedges off); **HY back under 3.40%** (found by Canary, missed by Grid A); XLC's last third covered over $105.03 ($107.36 Mon); XLI's first sign over $165.44 (Mon); XLK over its 200D (Mon, Wed; lost Fri). Not fired: XLU over $44.09 on a close; XLE over $64.96 (closed on it); XLV re-add $189.66; XLY add $122.92; XLB add $53.90; XLRE add $45.63; every stop held. CEG reported Monday but said nothing on Texas.
 
 ---
 
 ## 6. CROSS-SECTOR CONNECTIONS — The Hidden Wires
 
-**Wire 1 — The ballot box to the building permit.** Texas elects a governor pledged to halt new data centers (utilities) → VST -13.8% and CEG ~-7% Wednesday, KeyBanc cuts VST, SRE -9.2% through a beat (Oncor) → UBS: ~30% of 2028 US additions at risk (tech, industrials) → XLK -8.0% and SMH -11.2% Thursday, MU -22% on the week with no report → ETN -16.5% in two days after a raise, GEV -9.8%, CAT -10.3%, PRIM -10.1%, AZZ's worst day on two years of bars (industrials) → EQIX -5.4% and DLR -5.5% Thursday (real estate) → GS -6.4% and MS -5.9%, "the banks closest to the AI deal flow" (financials). Meanwhile Goldman raised its 2030 forecast to 273 GW. **Orders and backlogs are records; the multiples are now hostage to permits.** Industrials' wild card says it: "the delay shows up first in slot conversions and project timing, not in the next quarter's revenue."
+**Wire 1 — The rate-sensitivity chain, running backwards.** Hot core CPI → 2Y +40 bps, 5Y +33, 10Y +29.5 to 5.154% (calendar) → 2s10s flattens to **+27 bps on par** (under financials' +30 line), so the regionals stall (KRE +0.75%, WAFD/HOPE/BANR flat to down) while the dealers rise on the Anthropic IPO → mortgages had fallen a fourth week to **7.11%**, but Freddie's survey predates Thursday (RE, discretionary) → **existing home sales 3.75M** miss → HD/LOW report into it Tuesday/Wednesday → SAFE (pure duration) two-year low, XBI a tenth Friday under its 50-day (healthcare). And the proxies went the other way: XLU over its 200-day, XLP a 52-week high. The chain is live; this week the rotation overpowered it.
 
-**Wire 2 — The vote to the barrel to the shopper.** Democratic sweep → bets on an Iran deal → Dec WTI -$13.29 to $90.83, Brent -$15.11 (energy) → XLE -12.0% through MPC's record quarter, midstream sold as hard as producers → gasoline crack about $26 while the diesel crack (~$92) held → discretionary and staples count it as their biggest tailwind (freight, packaging, the consumer), UMich year-ahead inflation expectations 4.7% → **4.3%** → the energy page: "falling oil eases the December hike case." But the wire did not reach everyone: transports fell anyway (UNP -4.6%, CSX -5.5%), and DOW fell 9.5% on cheaper feedstock. And it is unsigned: a collapse in Doha reverses every link at once.
+**Wire 2 — The AI supply chain loses its face, keeps its orders.** NVDA CEO exit (#205) → NVDA -12.75%, Baird to Neutral with a **$200** target and a possible **$5B** inventory write-down → money moves to AMD (+18.9%), AVGO (+18.2%), MU, LRCX, AMAT → CoreWeave's raise and AMAT's guide answer last week's permitting fear with numbers → Constellation beats and buys a plant, NRG +10.3% (earnings) → utilities' CEG +12.1%, data-center REITs EQIX +4.1% and DLR +3.3% → but JPMorgan cuts ETN/GEV and Baird puts 2027 hyperscaler capex growth at "~40% or less" (industrials, semis) → and TrendForce's Q4 DRAM contract call (**+10–15%**, from ~+20%) is the first slower number on the semis page. Demand held this week; the second derivative turned.
 
-**Wire 3 — The fear bid under the proxies.** Thursday's rout → 10Y -7 bps to 4.86% despite +165K payrolls and AHE +0.4% → Freddie's 30-year **7.18%**, a third decline → HD +4.3%, LOW +7.4% → XLRE +1.92%, now **ahead of SPY for the year** (+11.7% vs +8.7%), PSA/AMT/CCI 52-week highs → XLP new highs, XLU's regulated wires (NEE +3.9%, ED a 52-week closing high) → while CMBS office delinquency rose to **12.33%** and SAFE and BRT closed at two-year lows. **The proxies trade the bond, the bond trades the Nasdaq, and the Nasdaq traded a ballot.** A calm CPI keeps this wire live; a hot one cuts it.
+**Wire 3 — The geopolitical energy loop that the barrel ignored.** Trump: the U.S. "does not need" a deal; IRGC tanker blasts; Houthi claims on Saudi facilities (energy) → XLE +5.42%, all thirteen large caps up, refiners on a ~$92 diesel crack → but **WTI -2.5% to $88.56** and Brent under $90 intraday for the first time since August → discretionary and staples keep cheap fuel and freight as a tailwind; industrials' rails fight "stubborn diesel" (IBD) → Canary's geopolitics light stays yellow with oil under $90. The stocks priced the risk of a deal failing; the barrel priced supply.
 
-**Wire 4 — AI financing becomes a credit question.** CoreWeave bonds over 16% (tech) → HY OAS 3.48%, a cycle high, HY–IG 255 → Millennium cuts credit pods, money-market inflows surge, Anthropic IPO price talk falls, Brookfield raises $25B for AI (financials, tech headlines) → Ophelia's financials upgrade ends → down the cap scale, Cogent suspends its dividend over **$700M of June 2027 notes** (comm services), Safehold and BRT at two-year lows (real estate). The buildout's funding and the small-cap balance sheets are reading the same spread.
+**Wire 4 — The dollar-and-real-yield squeeze.** Real 10-year ~2.91% (+28 bps) and DXY 103.41 → gold **-4.5%**, silver ~-6%, copper lowest close of the fetch, Bitcoin **-9.9%** and ~$63,450 over the weekend (Canary) → NEM -6.4%, ALB -5.8%, the materials restriction holds → exporters CAT and DE carry a translation headwind (industrials); healthcare's 102 translation line is now crossed for real; staples flag PG/KO/PM/MDLZ overseas sales → TLT -3.1%, LQD -1.65%: the hedge assets fell with the risk assets.
 
-**Wire 5 — Washington's new oversight list.** One election → defense (LMT -11.0%, RTX -5.1%; no cancellation) → Tesla (-10.4%; congressional scrutiny of autonomy and Musk's contracts, Thursday's cause unsourced) → card fees and bank capital (financials: Warren "at the height of her power," headline) → drug pricing as the other half of healthcare's coverage rally (Novo's CEO: "won't change dramatically") → steel's tariff wall (NUE -10.6%, STLD -11.1%, CLF -19.6%, no company news, no source tying it to the vote). Every page names the same Congress; none has a bill yet.
+**Wire 5 — The consumer stress triangle.** Food at home **+0.4%** (staples) and card debt a record **$1.29T** with household debt **$19.1T** (financials) → retail sales consensus **0.0%**, 0.1 point from the flag (calendar) → XLY's gain was ~85% Tesla, on news "that isn't about selling cars" → GIS to a 7.3% yield, KDP -7.4% in a day with no cause → DoorDash and Lululemon -4.5% → the holiday fortnight (HD, LOW, TJX, TGT, WMT, ROST, BJ) reads it next week with the 10-year over 5%.
 
-**Wire 6 — The memory squeeze, one link further.** AI takes memory from devices (stale semis page) → Apple guides gross margin 45–46% on memory costs its CEO called "unprecedented" → MU -22%, -17.5% Thursday, its worst day on two years of bars (tech) → AMD's record was sold. The squeeze that broke Intel last week now shows in Apple's margin guide.
-
-**Wire 7 — Gold up with the dollar.** DXY 102.3 after payrolls → yet gold **+4.6%** (feed) and silver +5.5% → NEM **+13.4%** (materials) → copper's worst week since March on AI demand fears while Shanghai's physical premiums hit a record → FCX -4.9%. The restriction kept the desk out of the winner and the steel losers alike.
+**Wire 6 — Washington's China file.** The Huang allegations and a reported FBI inquiry (semis) → Bessent: whether Nvidia "knew its client" (tech) → MarketWatch's "short-lived U.S.-China trade war" scenario (tech, industrials) → Chinese tech fell on the exit; BIDU, JD, BABA, PDD report next week (earnings) → ACMR is the small-cap export-control name; the truce expires **Jan 10, 2027**.
 
 ---
 
 ## 7. SECTOR CONTRADICTIONS — Where the Wikis Disagree
 
-### A. Truth Layer — facts.json (Oct 30) against this week
+### A. Truth Layer — facts.json against the sector pages
 
-**facts.json is stale; it is not wrong.** Every macro row differs because a week passed. This page uses the committed feed for the week and lists facts.json for the record.
+facts.json wins on every row; the sector pages' numbers are recorded here, not restated elsewhere.
 
-| Item | facts.json (gen. Oct 31, as of Oct 30) | This week (feed, as_of Nov 6) | What the fresh pages say | Resolution |
-|---|---|---|---|---|
-| 10Y | 4.929% | **4.86%** (^TNX 4.859) | Treasury par 4.86%; "-7 bps" (Grid C, B) vs "-8 bps" (Grid A, from par 4.94%) | Basis of the prior week. Same close |
-| 2Y | 4.61% (FRED, Thu Oct 29) | **4.51%** | Grid A par 4.51% (from 4.56%) | facts.json's 2Y was a Thursday print a week ago |
-| 10Y–2Y | +32 | **+35** | Financials: "narrowed 3 bps" from +38 | Against facts.json the curve steepened 3 bps; against the same-day prior week it flattened 3. Same mixed-day trap as last week (7.A, Oct 31) |
-| 3M | 3.973% (^IRX) | — | Grid A 4.19% (par); utilities "bills 4.00%" | Discount vs par basis |
-| VIX | 19.42 | **25.64** | 25.64; Thu 28.18 | — |
-| SPY | $755.72 | **$735.29** | $735.29, -2.70% | — |
-| DXY | 101.88 | **102.3** | 102.28 Fri evening (Grid A/B), 102.30 (utilities) | Feed is the settled figure |
-| WTI | $104.12 | **$90.83** (CLZ26 settle) | Grid A/B: **$90.34**, CL=F Friday evening, "provisional"; Grid C: $90.83 settled | **The settlement supersedes the provisional read.** Both are the December contract; no roll |
-| Gold | $3,885.70 | **$4,064.5** (GCX26) | Tech/materials $4,079.50 (GC=F, Fri evening); "about +5%" | Feed +4.6% is the settled number |
-| Copper, BTC, HYG, LQD | $6.4585, $77,198, $77.43, $104.27 | — | Copper $6.26 (Fri evening); the others nowhere | **No fresh committed value**; not restated |
-| Fed funds / stance | 3.75–4.00% / Hike | same | Held Oct 28; Daly: higher rates likely | Unchanged |
-| `next_macro_gate` | ISM Nov 2 … payrolls Nov 6, CPI Nov 10 | copied into the feed's `policy` and `upcoming` | — | Describes the week just past. Do not read it as next week's gate |
-| Sector ETF closes | Oct 30 | 12 of 12 feed closes equal the fresh pages (SMH from the tech page) | — | ✓ |
-| Correlations | — | Feed `corr_spy_4w` (four weekly returns): XLC **-0.976**, XLRE -0.801, XLF -0.648 | No Canary matrix this week | Four data points. Do not quote as decoupling evidence |
+| Item | facts.json (gen. Nov 14) | What the pages say | Resolution |
+|---|---|---|---|
+| 2Y | **4.86%** (FRED DGS2, Thu Nov 12) | Grid A **4.88%** (Treasury par, Fri), "+37 bp"; Canary "+40 bp" vs Thu Nov 5 | Different day and basis. facts.json's value is Thursday's |
+| 10Y–2Y | **+29** (Fri 10Y vs Thu 2Y) | Grid A **+27** (same-day Fri par); Canary +24 same-day Thursday | Mixed-day pairing; all three agree the curve flattened |
+| 3M / 10Y–3M | **4.122% / +103** (^IRX, discount basis) | Grid A 3M **4.32%**, 10s–3M **+83** (par / CMT) | Basis. Canary notes CMT 3M ~20 bps higher |
+| WTI | **$88.56** (CLZ26 settle) | Grids A/B/C **$88.92** (CL=F Fri evening, "provisional"); energy also cites **$88.74** Thursday settle and "~-$1.91" on the week | Feed settlement supersedes. Weekly move is **-$2.27 (-2.5%)**; #207's "~-$1.91" was provisional; under $5 either way |
+| Gold | **$3,879.70** (GCX26) | Tech **$3,887.60**, materials **~$3,888** (GC=F Fri evening), "about -4.4%" | Feed: **-4.5%** |
+| Copper | **$6.0795** | Tech/materials **$6.06** | Evening read vs facts |
+| HY OAS | not a facts.json field | **Grid A: "not re-sourced, last 3.48% (Nov 5)"**; Canary **320 bps (Nov 12)** | **Canary is current.** Grid A's posture rests on a reading two weeks old |
+| Fed hike odds | next_macro_gate ~88–89% | Grid A **~85%** (secondary coverage, Nov 10); semis/calendar/utilities/energy/comm **~88–89%** | Use 88–89% (CME, later read) |
 
 ### B. Same factor, opposite reads
 
-1. **The election, bull and bear on the same Wednesday and Thursday.** Healthcare (coverage, procedures), financials (a record close), real estate (+3.3%), discretionary (best day since May 2025) and staples (a new high) read the sweep as relief. Tech, industrials, utilities and energy read it as a data-center, defense and peace-trade shock. **Discretionary and staples count cheaper oil as a tailwind; energy says the deal is unsigned and one analyst puts renewed fighting at 80%.** Both cannot be right about the barrel for long.
-2. **Data-center demand, a fourth week.** Real estate's bullish trigger (#189) is still open and Cecil wants DLR on the dip; Goldman raised its 2030 forecast to 273 GW; Vistra raised its 2027 range; Sempra lifted Oncor's capex ~20%. Tech (#196), utilities (#197) and industrials file the same buildout as the bear case on permits. **Issue #193 (last week) is sharpened, not resolved: the bull case is now about demand and the bear case about location.**
-3. **Credit: broken or fine.** Financials: HY over 3.40% "ends the upgrade." Tech: "the funding side is still getting worse." Real estate: "constructive, normal size," while writing that "the credit underneath it is not improving." The last Canary board (stale) still rates credit 🟢 on Oct 29 prints; by its own 250 line, HY–IG 255 is 🟡.
-4. **Duration, a fourth week, all Ophelia.** Real estate constructive and Marky adds; utilities: "fear is not a plan"; staples: "a December hike is still the case against bond proxies." Filed as #173, #180, #193.
-5. **The dollar.** Healthcare: DXY "over my 102 translation line," provisional. Materials: "no new break above 101 or below 99," restriction on. Different rules on one number; the feed's 102.3 settles it over 102.
-6. **Defense.** Cecil starts LMT on "no cancellation"; Ophelia goes neutral until "the first budget."
+1. **The 10-year over 5%: bearish verdicts, bullish tapes.** Real estate files #206 and cuts to half size; utilities and healthcare call the macro "turned"; staples says "rates finally bite" is 25%. On the same week, XLU broke its 200-day, XLP made a 52-week high, XLRE made a sixth up week, and the carriers (VZ +1.5%, T +2.5%) rose. Every proxy desk writes the same disclaimer: "the bid isn't about rates." Nobody has said what it *is* about besides "not chips."
+2. **Credit: gate shut vs gate open.** Tech and financials hold "no adds until HY < 3.40%" on a 3.48% print; Canary's live HY OAS is **3.20%**, HY–IG **231**, "back under the line." Cecil's counterpoint (CCC flat at 1,314; LQD -1.65%) means the healing is in the middle of the credit stack, not the bottom.
+3. **Where the NVDA money went.** Tech and semis: "the money did not leave AI; it moved from Nvidia to its rivals." Utilities, staples and comm services: chip money rotated "into steady earners." Both can be true; neither page measures the split.
+4. **Iran: re-escalation vs falling oil.** Energy's trigger (#207) reads the week as re-escalation and XLE +5.4%; the feed has WTI -2.5% and Canary rates oil "under $90 despite the Iran re-escalation." Discretionary and staples still count cheap fuel as a tailwind.
+5. **The dollar.** Materials keeps the commodity restriction ON (52-week high); healthcare's translation line is crossed; industrials flags exporters; comm services rates the week "risk-on." Same 103.41.
+6. **Data-center demand, a fifth week.** CEG's raise, CoreWeave, AMAT and real estate's EQIX/DLR bounce read as demand intact; JPMorgan's ETN/GEV cuts, Baird's capex call and TrendForce's slower DRAM number read as the peak rate of change passing. Open across #193, #199.
 
 ### C. Counts, bases and dates the pages differ on
 
-- **Thursday's Dow:** utilities/comm "~-1,830" on the close; financials "the Dow's 1,488-point intraday drop." A close cannot fall further than the intraday low; one of the two is wrong or on a different basis. Unreconciled.
-- **Thursday's loss in dollars:** "Magnificent 7 ~-$1T" (CNBC, comm services) vs "the Nasdaq's loss $2.5 trillion" (Reuters, tech). Different universes; both can be true.
-- **Montana PSC vote on NWE–BKH:** "Monday, Nov 10" (utilities, small-cap text) vs "Tue Nov 10" (utilities calendar). **Nov 10 is a Tuesday.**
-- **Disney:** "Mon Nov 17" (comm services). **Nov 17 is a Tuesday**; HD and NVDA are listed the same day.
-- **SMH's 200-day:** $521.76 (tech, Nov 6) vs $519.50 (semis, Oct 30, stale). The stale page still shows Marky's starter open; on the fresh tape it was stopped.
-- **October CPI date:** "next week" (Reuters, tech/financials/industrials), "mid-November" (staples, discretionary), Nov 10 (stale calendar; BLS's row not seen).
-- **Gold's week:** "about +5%" (materials, Friday-evening GC=F) vs **+4.6%** (feed, GCX26 settle).
-- **Weights refreshed:** Yahoo's funds_data snapshots changed on **every** fresh page this week after four identical weeks (AMAT in/LRCX out; LMT in/PH out; TRGP in/KMI out; EXC in/VST out; HLT in/ROST out; NUE in/CRH out; O in/CBRE out; CMCSA and NFLX in, SKYD and APP out). Concentration math is better than last week's, and XLC's snapshot date is unknown.
-- **The stale pages' standing boards** (regime flags, Canary trigger board, earnings "this week") describe Nov 2–6 as the future. Read them for rules, not status.
+- **October CPI date:** Tue **Nov 10** (calendar, tech, semis, financials, staples/discretionary/real estate citing CNBC Nov 10) vs "Wed Nov 11" (utilities, comm services, energy's calendar row). **Nov 10 is correct**; Nov 11 was Veterans Day.
+- **XLE vs its 50-day:** energy **$64.91** (closed 5 cents over) vs Canary **$64.99** (3 cents under). The breadth count above uses the sector page; on Canary's basis it is 7 of 12.
+- **10Y 52-week high:** 5.36% (tech, healthcare) vs 5.31% (utilities).
+- **NVDA:** consensus $2.47 (tech, yfinance) vs ~$2.49 (semis, EW); implied move ±10.8% (semis) vs ±8.6% straddle (earnings); 200-day $203.92 (tech) vs ~$204.19 (semis).
+- **30Y:** 5.47% (Grid A par) vs 5.48% / 5.481% (Grids B/C, ^TYX).
+- **VZ spread to the 10Y:** ~93 bp (comm) vs +95 bp on facts.json's 5.154%.
+- **Cisco:** semis "results not retrieved"; tech carries the full print.
+- **Weights:** Yahoo funds_data unchanged on every page for a second week; concentration math rests on Nov 6 snapshots.
 
 ---
 
-## 8. MACRO CALENDAR IMPACT — The Data Says Hike, the Ballot Said Fear, and CPI Decides Which One the Bond Market Believes
+## 8. MACRO CALENDAR IMPACT — Hot Core, a Priced Hike, and a Fed-Communication Week
 
-**What this week's data did to the posture** (from the fresh sector pages; the calendar desk did not run). It made the hike half of the regime stronger. **Payrolls +165K** against 55–65K, the biggest beat of the season, with **unemployment 4.1%**, **AHE +0.4% m/m (3.1% y/y)** and Aug–Sep revised up 84K. **ISM manufacturing 55.5** (expected 54.6–54.7) with prices paid easing to **75.2**; services 54.5 with prices **73.0**. **JOLTS 7.52M**, far over the 7.10M consensus the calendar carried. Factory orders +1.8%. Claims 189K, an eighth week under 200K by the tech page's figure. Productivity +3.6%, unit labor costs -0.7%. **UMich 51.0** against 47.3–47.8, year-ahead inflation expectations down to **4.3%**. GDPNow 3.4%. Daly: higher rates "are likely to be needed."
+**What this week's data did to the posture.** It removed the ambiguity. Last week the data said hike and the ballot said fear; this week **CPI said hike, the bond market agreed, and the fear left.** Core CPI +0.3% for the third month, headline +0.4%, PPI 6.5% y/y with September revised up; claims ended their run at 200K; existing home sales fell 5.5%; GDPNow 3.5%; NY Fed 1-year expectations 3.9%. Auctions cleared lower than their priors (3Y 4.627%, 10Y 5.020%, 30Y 5.441%) but the secondary market rose through them. The October budget deficit was **$404B** against ~$299B. Every desk moved toward caution on rates while the tape moved up, which is why so many lines printed intraday and failed on the close.
 
-**The flags, by the calendar's own Oct 31 rules (this page's reading):**
-- **NFP < 150K: CLEARS** (+165K). The calendar said a print over 150K takes December odds over 85%; no fresh page sourced the odds.
-- **CPI M/M > 0.3%: CARRIED** into October CPI.
-- **Oil > $100: CLEARING.** December WTI settled **$90.83**, under the $97 first-sign line.
-- **VIX > 22: BROKEN on a close** (28.18 Thursday, 25.64 Friday). Canary's 25 alarm also crossed.
-- **10Y:** 4.86%, still over the 4.75% stress line, an eleventh week; 5.00% not threatened.
-- **DXY < 100:** resolved (102.3).
+**Next week is a Fed-communication week, not a data week** (calendar Gauntlet):
 
-The count moves from three raised flags (labor, CPI, oil) to **one inflation flag up and one market flag crossed (VIX)**. The labor worry is gone; the inflation worry is not; the stress moved from the economy to the tape. Canary's last verdict was HIGH CAUTION with credit green. On this week's tape, credit (HY–IG 255) and VIX (25.64) would both be over their lines.
-
-**Next week and what each print does to the posture.**
-
-| When | Event | Posture change if… |
+| Date | Event | What it decides |
 |---|---|---|
-| **Mon Nov 9** | **CEG** BMO (Texas, Calpine); KKR, Barrick, NRG; **OXY, TTWO, SKYD** AMC; OTTR Minnesota ALJ report; NEE–D Virginia witness sessions; Arena lock 8:50 AM | CEG says Texas does not touch existing contracts: the merchants steady. Otherwise VST and SRE test their 52-week lows |
-| **Tue Nov 10** | **October CPI 8:30** (per calendars); **Montana PSC on NWE–BKH**; **CRWV** AMC | Core > 0.3%: the CPI flag stays and the fear bid in bonds is tested. CRWV is "the capex-against-cash-flow screen with leverage on it," with its bonds over 16% |
-| **Wed Nov 11** | EIA weekly (first after the collapse); CTVA and VYLR first standalone quarters; DGII | A draw with WTI at $90 says the deal is priced; Doha headlines outrank it |
-| **Thu Nov 12** | **CSCO, AMAT** AMC; Brookfield, Nebius BMO; EYE | AMAT is the last big equipment print and the 2027 WFE view; CSCO reports from its lowest close since May 7 |
-| **Fri Nov 13** | JD, Dillard's, Birkenstock (no session given) | — |
-| **Nov 17–19** | **NVDA** Nov 17 AMC; HD, DIS Nov 17; TGT, LOW, TJX Nov 18; WMT, ROST Nov 19; **GTA VI** Nov 19; STB UP–NS comments Nov 18; UMich final Nov 20 | NVDA is 15.1% of XLK and Cecil's first chip start. HD/LOW test the mortgage wire |
-| **Late Nov – Dec** | MDT Nov 24; DE, BLBD Nov 25; **OPEC+ Nov 29**; Cycle-3 Medicare prices and SCE's compensation deadline Nov 30; November payrolls Dec 4; **FOMC Dec 9** (AVGO the same day); November CPI Dec 10 | October CPI and November payrolls are two of the last three hard prints before the Fed |
+| **Mon Nov 16** | **Warsh 12:00 PM** (first remarks since CPI); Empire State; Williams, Barr, Barkin | 25 vs 50 bp. An opening to 50 bp or "more than one" = 10Y toward 5.25%; pushback = under 5.00% |
+| **Tue Nov 17** | **Retail sales** (cons 0.0%); import prices; IP (+0.1%); NAHB; **HD, DIS** BMO; **NVDA** AMC; Charter tender expiry; **NEE–D Virginia hearing** | Retail < -0.1% fires a third flag; NVDA's call decides the XLK/SMH 200-day lines |
+| **Wed Nov 18** | **FOMC minutes 2:00 PM**; housing starts (cons 1.23M); **20Y auction**; STB UP–NS comments; **TGT, LOW, TJX** BMO; PANW AMC | "Many/most" = December locked; starts < 1.15M = housing breaking |
+| **Thu Nov 19** | Claims (cons 200K); Philly Fed; 10Y TIPS; **WMT** BMO; ROST, INTU AMC; **GTA VI** | Claims > 215K = layoffs; Philly prices > 50 = pipeline inflation |
+| **Fri Nov 20** | UMich final (51.0; 5-yr 3.4%); Waller, Cook | 5-yr ≥ 3.6% = expectations unanchoring, the 50 bp case |
+| **Nov 23–27** | Thanksgiving week: ADI, MDT, DELL, HPE (AI-server read-through), DE Nov 25; October PCE and Q3 GDP second estimate (dates unconfirmed) | — |
+| **Late Nov – Dec** | OPEC+ Nov 29; Cycle-3 Medicare prices by Nov 30; ISM Dec 1; payrolls Dec 4; **FOMC Dec 8–9** (AVGO Dec 9); November CPI Dec 10 | The last hard prints before the decision |
 
-*October retail sales and PPI dates were not confirmed by any page this week. The calendar desk's Gauntlet for Nov 9–13 was never written; the dates above come from the fresh sector pages, the stale earnings page's preview (written Oct 31), and the stale calendar's forward notes.*
-
-**The Council's posture into it.** **Cash: the book holds 20.0%** (the owner's cap; floor 15%), 80.0% invested in PGR, LIN, TROW, SPGI and AON. The desks' own postures moved the cautious way this week: tech reduced with no adds, energy reduce held, financials back to neutral, power and electrical cautious, defense neutral; real estate constructive and staples defensive-lean unchanged. **No duration extended into CPI** on a rally the desks call fear. **No AI-chain adds until HY OAS is back under 3.40% and CPI is out**; Cecil's starts (LMT, CVS) are thirds, and NVDA waits for Nov 17. **No energy longs before a signature in Doha.** Hedges stay on while VIX is over 20. The market spent the week pricing a political shock on top of a hot economy; Tuesday's CPI decides whether the bond market keeps treating it as a growth scare or goes back to pricing the Fed.
+**The Council's posture into it.** **Cash: the book holds 16.2%** (83.8% invested in ALL, NEE, UPS, PGR and D since Monday's open), under the 20% the book held last week and well under Canary's 25–30% preference. That is the gap to watch, not to force: 31% of the book is in two utilities (NEE, D) that share a regulatory hearing Tuesday and a -236 bp carry gap if the 10-year keeps rising. The desks' postures: **no duration adds while the 10-year is over 5.00%**; hedges back to standard size; tech and semis reduced/flat into NVDA; real estate and utilities half size; staples hold, no adds; energy reduce held to Nov 29; materials restriction on; financials neutral (and its HY gate is, on Canary's numbers, open). Short paper pays **4.12%** on the 3-month bill. The one level that changes all of it: **10Y 5.25%.**
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-11-08 (Synthesis Agent, single-agent sequential run, LATE: Sunday 2026-11-08 ~23:30 ET instead of Saturday 8:26 PM ET; all market data as of Fri 2026-11-06 closes)*
-*Inputs: all 15 wikis (stamps 2026-11-06 ×11; **2026-10-31 ×4, stale: semiconductors, economic-calendar, earnings-surveillance, canary-watch**), macro/facts.json (generated 2026-10-31, stale), data/market_state.json (as_of 2026-11-06), data/weekly/2026-11-06.json, portfolio/current.yaml*
+*Last updated by Saturday Research Crew: 2026-11-14 (Synthesis Agent, single-agent sequential run, on schedule, Saturday ~20:29 ET; all market data as of Fri 2026-11-13 closes)*
+*Inputs: all 15 wikis (stamps 2026-11-13 ×11, 2026-11-14 ×4; **none stale**), macro/facts.json (generated 2026-11-14), data/market_state.json (as_of 2026-11-13), data/weekly/2026-11-13.json, portfolio/current.yaml*
 *Next update: Every Saturday 8:26 PM ET*
