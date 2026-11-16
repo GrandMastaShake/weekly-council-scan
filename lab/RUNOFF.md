@@ -6,7 +6,7 @@ the numbers are the link's return over its benchmark (SPY for S&P 500 names, IWM
 open after the map was committed, signed by that expectation. `lab/forward_runoff.py` regenerates this page;
 edits by hand are overwritten.
 
-Maps scored: 0. Waiting on their window: 0. Not scored (invalid, uncommitted or edited after entry): 0.
+Maps scored: 0. Waiting on their window: 5. Not scored (invalid, uncommitted or edited after entry): 0.
 
 No map has been scored yet.
 

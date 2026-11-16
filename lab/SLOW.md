@@ -4,7 +4,7 @@ Cecil's engine picks on the frozen S&P 500 list, equal weight, bought Monday and
 no exits (Pass 35). `lab/forward_slow.py` regenerates this page each Monday from `lab/slow_ledger.json`,
 which is append-only; edits by hand are overwritten.
 
-Last run: 2026-11-16 10:04. Prices through 2026-11-16.
+Last run: 2026-11-16 12:14. Prices through 2026-11-16.
 
 **Status: too early (0 closed cohorts; 12 across three quarters are needed).** Closed cohorts: 0. Mean edge per week of holding: --.
 
