@@ -1,5 +1,5 @@
 week: '2026-11-09'
-status: open
+status: closed
 positions:
 - ticker: ALL
   weight: 0.212
@@ -13,11 +13,13 @@ positions:
   stop_loss: 243.81
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 267.6400146484375
+  exit_date: '2026-11-13'
+  exit_reason: week_end
+  pnl_pct: 4.29
+  entry_price_adjusted: 256.6400146484375
+  return_basis: total_return_same_snapshot
 - ticker: NEE
   weight: 0.195
   sponsor: Ophelia
@@ -30,11 +32,13 @@ positions:
   stop_loss: 83.23
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 85.12000274658203
+  exit_date: '2026-11-13'
+  exit_reason: week_end
+  pnl_pct: -2.84
+  entry_price_adjusted: 87.61000061035156
+  return_basis: total_return_same_snapshot
 - ticker: UPS
   weight: 0.184
   sponsor: Marky
@@ -47,11 +51,13 @@ positions:
   stop_loss: 104.28
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 112.4000015258789
+  exit_date: '2026-11-13'
+  exit_reason: week_end
+  pnl_pct: 2.4
+  entry_price_adjusted: 109.7699966430664
+  return_basis: total_return_same_snapshot
 - ticker: PGR
   weight: 0.128
   sponsor: Cecil
@@ -64,11 +70,13 @@ positions:
   stop_loss: 217.59
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 235.77999877929688
+  exit_date: '2026-11-13'
+  exit_reason: week_end
+  pnl_pct: 2.94
+  entry_price_adjusted: 229.0399932861328
+  return_basis: total_return_same_snapshot
 - ticker: D
   weight: 0.11900000000000001
   sponsor: Ophelia
@@ -81,11 +89,13 @@ positions:
   stop_loss: 65.72
   target: null
   direction: long
-  status: open
-  exit_price: null
-  exit_date: null
-  exit_reason: null
-  pnl_pct: null
+  status: closed
+  exit_price: 67.66000366210938
+  exit_date: '2026-11-13'
+  exit_reason: week_end
+  pnl_pct: -2.2
+  entry_price_adjusted: 69.18000030517578
+  return_basis: total_return_same_snapshot
 spy_entry: 741.9500122070312
 spy_entry_source: open
 vix_at_entry: 25.64
@@ -98,3 +108,12 @@ fed_stance: 'Tightening. The FOMC held 3.75-4.00% on 2026-10-28 by 10-2, with Co
   and one CPI (Tue Nov 10) left before the Dec 9 decision.'
 total_weight: 0.838
 cash_weight: 0.16200000000000003
+spy_entry_adjusted: 741.9500122070312
+spy_return_basis: total_return_same_snapshot
+stops_fired: []
+weighted_return: 0.91
+spy_return: 1.67
+alpha: -0.76
+spy_exit: 754.3699951171875
+close_date: '2026-11-13'
+hit_rate: 0.6

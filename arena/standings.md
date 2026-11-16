@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 13 | -0.06% | +0.25% | 6-7 | +3.40% (2026-09-21) |
-| Umassalum | 11 | -1.39% | -1.18% | 6-5 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 14 | -0.68% | -0.62% | -- | +2.12% (2026-10-19) |
+| GrandMastaShake | 14 | -0.14% | +0.03% | 6-8 | +3.40% (2026-09-21) |
+| Umassalum | 12 | -1.16% | -1.10% | 7-5 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 15 | -0.57% | -0.62% | -- | +2.12% (2026-10-19) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-11-09 | Umassalum | +1.41% | -0.26% | +0.91% | 🏆 Umassalum |
+| 2026-11-09 | GrandMastaShake | -1.18% | -2.85% | +0.91% | 🏆 Umassalum |
 | 2026-11-02 | GrandMastaShake | -0.62% | +2.56% | +0.50% | 🏆 The Council |
 | 2026-11-02 | Umassalum | -5.19% | -2.01% | +0.50% | 🏆 The Council |
 | 2026-10-26 | GrandMastaShake | +0.14% | +1.00% | +1.24% | 🏆 The Council |
@@ -38,6 +40,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 | 2026-08-10 | GrandMastaShake | +1.83% | +1.35% | 0.00% (cash -- ENGINE ABORT) | 🏆 GrandMastaShake |
 | 2026-08-03 | Umassalum | +2.52% | -0.66% | -1.03% | 🏆 Umassalum |
 | 2026-07-27 | GrandMastaShake | +0.61% | +0.33% | -1.52% | 🏆 GrandMastaShake |
+
+**Basis note (2026-11-09, closed 2026-11-16):** every book is on the same basis -- validated Monday 2026-11-09 opens -> Friday 2026-11-13 close (Arena SPY $741.95 -> $754.37, +1.67%; the Tracker's SPY window is identical). **Umassalum +1.41%, alpha -0.26%, wins the week** (TSLA +8.32%, LLY +5.85%, AAPL +3.35%, SPCX +1.90%, BUG +1.72% carried; MSFT -3.79%, AMZN -0.99%, GTLB -0.17% cost; 65% invested) and beats the Council head-to-head (7-5). **The Council +0.91%, alpha -0.76%** (ALL +4.29%, PGR +2.94%, UPS +2.40% green; NEE -2.84%, D -2.20% red on the 10-year's move back over 5%; 83.8% invested; no CORE stop fired; the book was opened late, on Wednesday, at the validated Monday opens) -- beats GrandMastaShake (his record goes to 6-8) and loses to Umassalum, ending a run of three Council week wins. **GrandMastaShake -1.18%, alpha -2.85%** (XLP +2.37% the one green; GLD -6.02% as the dollar made a 52-week high, MSFT -3.79%, AMZN -0.99%, MCO -0.50%; 70% invested). No book beat SPY in a week all twelve sector funds rose. The close run re-fetched the settled Monday bars. All-time averages are recomputed from the weekly rows: the Council's 15-week average is -0.57% / alpha -0.62%.
 
 **Basis note (2026-11-02, closed 2026-11-09):** every book is on the same basis -- validated Monday 2026-11-02 opens -> Friday 2026-11-06 close (Arena SPY $759.45 -> $735.29, -3.18%; the Tracker's SPY window is identical). **The Council +0.50%, alpha +3.68%, wins the week** (TROW +2.97%, AON +3.21%, SPGI +0.25% green; PGR -1.25%, LIN -0.79% red; 80.0% invested, three of five green; the first week under the enforced -5% CORE stop, and no stop fired). **GrandMastaShake -0.62%, alpha +2.56%** (MSFT +1.26%, MCO +1.65%, ELV +1.02% carried; TSM -8.99% on the Thursday semis rout and RSP -1.59% cost; 75% invested) -- beats SPY by 2.56 points and loses to the Council by 1.12. **Umassalum -5.19%, alpha -2.01%** (AMZN +6.70% the one carry; DT -24.78% on its print, TSLA -11.48%, GTLB -11.17%, LLY -2.81%, SPCX -2.00%; 80% invested). The Council beats both players head-to-head for a third straight week: GrandMastaShake's record goes to 6-7, Umassalum's to 6-5. All-time: the Council's 14-week average improves to -0.68% / alpha -0.62%; GrandMastaShake's 13-week alpha rises to +0.25%. The close run re-fetched the settled Monday bars: MSFT's open moved from $524.10 at lock to $524.02 settled; the order of the three books is the same on either basis. The common thread: the semis and AI-chain names (TSM, DT, GTLB, TSLA) did the damage in both player books on Thursday's 4.4% S&P day, while the Council's book held no AI-chain name and its two asset-light financials (TROW, AON) carried.
 

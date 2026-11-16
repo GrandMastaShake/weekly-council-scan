@@ -2,11 +2,13 @@ week: '2026-11-09'
 lock: 2026-11-09 08:50 ET
 entry_date: '2026-11-09'
 exit_date: '2026-11-13'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 741.95
   entry_price_source: open
+  exit_price: 754.37
+  return_pct: 1.67
 players:
 - player: GrandMastaShake
   valid: true
@@ -15,24 +17,36 @@ players:
   picks:
   - ticker: MSFT
     weight: 0.2
-    entry_price: 544.485
+    entry_price: 544.49
     entry_price_source: open
+    exit_price: 523.88
+    return_pct: -3.79
   - ticker: MCO
     weight: 0.15
     entry_price: 510.75
     entry_price_source: open
+    exit_price: 508.2
+    return_pct: -0.5
   - ticker: XLP
     weight: 0.15
     entry_price: 90.21
     entry_price_source: open
+    exit_price: 92.35
+    return_pct: 2.37
   - ticker: AMZN
     weight: 0.1
     entry_price: 269.32
     entry_price_source: open
+    exit_price: 266.66
+    return_pct: -0.99
   - ticker: GLD
     weight: 0.1
-    entry_price: 378.197
+    entry_price: 378.2
     entry_price_source: open
+    exit_price: 355.45
+    return_pct: -6.02
+  weekly_return_pct: -1.18
+  alpha_vs_spy_pct: -2.85
 - player: Umassalum
   valid: true
   total_weight: 0.65
@@ -40,33 +54,51 @@ players:
   picks:
   - ticker: AAPL
     weight: 0.1
-    entry_price: 344.935
+    entry_price: 344.7381
     entry_price_source: open
+    exit_price: 356.27
+    return_pct: 3.35
   - ticker: AMZN
     weight: 0.1
     entry_price: 269.32
     entry_price_source: open
+    exit_price: 266.66
+    return_pct: -0.99
   - ticker: BUG
     weight: 0.05
-    entry_price: 44.0
+    entry_price: 44.07
     entry_price_source: open
+    exit_price: 44.83
+    return_pct: 1.72
   - ticker: GTLB
     weight: 0.05
     entry_price: 47.81
     entry_price_source: open
+    exit_price: 47.73
+    return_pct: -0.17
   - ticker: LLY
     weight: 0.1
-    entry_price: 1365.395
+    entry_price: 1363.745
     entry_price_source: open
+    exit_price: 1443.5
+    return_pct: 5.85
   - ticker: MSFT
     weight: 0.05
-    entry_price: 544.485
+    entry_price: 544.49
     entry_price_source: open
+    exit_price: 523.88
+    return_pct: -3.79
   - ticker: SPCX
     weight: 0.15
-    entry_price: 136.53
+    entry_price: 136.51
     entry_price_source: open
+    exit_price: 139.11
+    return_pct: 1.9
   - ticker: TSLA
     weight: 0.05
     entry_price: 360.25
     entry_price_source: open
+    exit_price: 390.22
+    return_pct: 8.32
+  weekly_return_pct: 1.41
+  alpha_vs_spy_pct: -0.26
