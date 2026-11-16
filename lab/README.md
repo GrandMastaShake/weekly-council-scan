@@ -4143,3 +4143,72 @@ to read for months. "Keep running" is the likeliest state at 60 links.
     python lab/forward_runoff.py detect
     python lab/forward_runoff.py check lab/runoff/<file>.json
     python lab/forward_runoff.py
+
+## Pass 35 -- the slow book: Cecil's engine picks held four weeks, a forward record (registered 2026-11-16 before its first cohort)
+
+The owner asked for this on 2026-11-16 (the number was held while Pass 36 ran
+first). A separate paper ledger, not a Council member: nothing here changes
+what the Council buys.
+
+**Why.** The weekly book is where the lab keeps finding nothing, and two of
+its own results point at a slower clock. Cecil with a point-in-time P/E is
+the one steady signal (+0.30% a week over random on the clean S&P 500 list,
+Pass 11), and his picks kept it when held longer (+0.2 to +0.3 a week of
+holding at one, two, four and eight weeks, Pass 13). The earnings surprise
+pays over four weeks and loses on the weekly clock (Passes 21 and 23); that
+one is already the Pass 29 sleeve. And three results say what to leave out:
+managing the week costs (Pass 13), exits reshape the outcome and not the
+return (Pass 16), and a stop costs raw return about as cash would (Pass 32).
+
+**What this is not.** It has no small-cap leg. The lab's one test of a wider,
+smaller universe went against it (Pass 14), and the Butterfly Net's reports
+are not scored yet.
+
+**The rule (fixed).** Every Monday W the routine runs:
+1. Universe: the S&P 500 list of 2026-09-22, frozen (the Pass 29 universe).
+2. The picks: the Cecil-solo engine's book on that universe for week W, as
+   `lab.run` computes it with Pass 11's point-in-time P/E and the engine's own
+   earnings blackout, from data before W. **The engine returns three names**
+   (it has since 2026-09-21, so the lab's "five" for Cecil in Passes 11 to 13
+   was three); this record takes what the engine returns and does not pad it.
+3. Equal weight, bought at W's open, sold at the close of the Friday of W+3.
+   No stop, no trim, no exit rule, no cash.
+4. Cohorts overlap (up to four live); each is scored on its own.
+
+**Ledger.** `lab/slow_ledger.json`, append-only, one row per Monday, written
+before any exit price exists, with the picks and the whole tradeable pool
+(Pass 29's pool: enough history, no report inside the coming week). The
+routine runs with the Monday forward task, after the open, so every row is
+flagged late, as the sleeve's are: valid, since the picks use only data from
+before W. A Monday with no row is a gap and is not repaired.
+
+**Scoring.** As Pass 29: each name open of W to close of the Friday of W+3,
+clipped at +/-40%; the cohort's edge is the mean of its picks minus the mean
+of the tradeable pool on the same basis, per week of holding (the four-week
+edge over 4). Reported, never decisive: the excess over SPY, the edge after a
+0.10% round trip, and the same picks' edge in their first week alone, so the
+page shows whether the slower clock adds anything.
+
+**Reading rules (fixed now).** Nothing before 12 closed cohorts across at
+least three calendar quarters; a cohort is the unit; Newey-West t, 3 lags.
+- *Confirmed*: mean edge at least +0.15% a week of holding (half the
+  history's), t of 2 or more, positive in at least two quarters.
+- *Rejected*: mean edge 0 or below at 12 cohorts, or t -1 or lower at 8.
+- Otherwise keep running to 24 closed cohorts, judged once, final.
+This is the second decisive forward test of a four-week hold (the sleeve is
+the first), so a lone pass among the two needs t 2.24.
+
+**Predictions.** (1) A forward edge between -0.30% and +0.40% a week of
+holding in the first twelve cohorts: the history is one rising two-year
+stretch on a list with survivorship in it, and three names are noisy.
+(2) "Keep running" is the likeliest state at 12 cohorts. (3) Consecutive
+cohorts hold the same names more often than not (Cecil stacks one cheap
+sector, Pass 19), so the cohorts are far from independent; the Newey-West t
+is there for that and still flatters it.
+
+**Left for the owner, not registered:** eight weeks in place of four; a
+ten-name arm (needs the engine to return more than three); a combined book
+with the drift sleeve.
+
+    python lab/forward_slow.py          # log this Monday if it is not logged, score, rewrite SLOW.md
+    python lab/forward_slow.py score    # rescore only
