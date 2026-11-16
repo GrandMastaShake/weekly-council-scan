@@ -3675,3 +3675,127 @@ The Finviz values quoted as examples in the registration were removed from this 
 
 **The connector's new modules (private repo).** The audit found real bugs there and they are fixed (`ae2879b`): the `finviz_breadth` and `finviz_enrich` MCP tools crashed on every call (the CLI the routines use was unaffected); `pe-cache` checked that rows came back, not that their fields were filled, so one lost Finviz column would have been written as a whole missing input and moved Cecil's third pick in a replay (it now refuses on a missing header, a column
 below its fill floor, or under 90% coverage, and leaves yfinance to run); its earnings window started on the Monday where the pipeline counts from the Friday, so a name that reported after the close that Friday would have escaped the blackout (the window now starts on the Friday); and a cache that already existed was reported without saying who wrote it (the summary now carries the source and counts, and the Monday task logs from it). The enrich news count is marked as a floor when the 100-row cap binds.
+
+## Pass 32 -- the -5% stop on random fives, twenty years of weeks (registered 2026-11-16 before any run)
+
+**Why.** The owner enforced the -5% CORE stop on 2026-11-02 on the strength of
+exit-shadow.md: 37 CORE position-weeks, five fires. A web scan of the published
+evidence (2026-11-16) says tight stops on single stocks tend to cost return
+unless returns trend within the holding period, and found nothing that tests a
+one-week hold in large caps. Pass 13 B tested a different rule (sell on
+Tuesday's close) on 96 weeks. This pass asks the mechanical question only:
+on names nobody picked, what does the tracker's own stop rule do to a
+five-name week? It involves no LLM and no engine, so history is admissible
+(rule 1's engine-only exception, with its caveat).
+
+**Data.** Daily auto-adjusted bars (Open, High, Low, Close) for today's S&P 500
+list (`universe_sp500_added_2026-09-22.csv`) and SPY, from 2006-06-01. Weeks:
+every Monday from 2007-01-01 through 2026-11-09; a week runs from the first
+session on or after Monday to the last session on or before Friday. A name is
+eligible in week W if its index "Date added" is blank or before W, it has a bar
+on every session SPY traded that week, and it has 60 sessions before the entry.
+**Caveat, stated before the run:** names that left the index (the failures
+above all) are missing, so the left tail is understated and a stop's benefit
+with it; read the result as a ceiling on the damage a stop avoids being wrong
+about, not a floor.
+
+**The rule, exactly as `portfolio/tracker.py` runs it.** Entry at the first
+session's Open. The stop sits x% under the entry. On each held bar in order
+(the entry bar included): if Low <= stop, the name is sold -- at the bar's Open
+if the Open is at or under the stop (a gap, entry bar excepted by
+construction), else at the stop level -- and the weight sits in cash to Friday.
+Otherwise the name is held to Friday's Close.
+
+**Arms.** plain (no stop); fixed stops at -3%, **-5% (the enforced rule)**,
+-8% (the SPEC shadow level), -10%; two stops scaled to each name's own
+volatility, at 1.5 and 2.0 weekly standard deviations (the SD of the 60 daily
+close-to-close returns before the entry, times root 5).
+
+**Books.** 200 random equal-weight fives per week from that week's eligible
+names (seed 20261116), every arm on the same draws. Also every eligible
+name-week on its own, which needs no sampling.
+
+**What is reported, per arm.** Mean weekly book return and its paired
+difference from plain (t over weeks, one number per week: the mean of the 200
+draws); weekly SD, the mean of the worst 5% of book-weeks, and the worst
+book-week, over all book-weeks; per name-week: how often the stop fires, the
+share of fires filled at a gap open, and the share of stopped names that close
+Friday above their fill. Splits: first and second half of the weeks, weeks SPY
+rose and fell, and the 37 weeks of 2008-09-01..2009-03-31 on their own.
+Sensitivity: a 0.10% slip on every fill at the stop level.
+
+**The registered test (rule 7: a risk design is judged against cash).** For a
+stop arm, let c = its weekly SD over the plain book's. The cash-matched book is
+the plain book held at exposure c. Two numbers decide:
+- D_ret = mean(stop arm) - c x mean(plain), t over weeks on the weekly series
+  (stop - c x plain).
+- D_tail = (mean of the stop arm's worst 5% of book-weeks) - c x (mean of the
+  plain book's worst 5%). Positive is a shallower tail than cash gives.
+
+**Rule for the -5% stop.** *Earns its place* if D_ret >= 0 with the same sign
+in both halves, or if D_tail > 0 by at least a tenth of the cash-matched tail
+while D_ret's t is above -2. *Fails* if D_ret < 0 with t <= -2 and the same
+sign in both halves, and D_tail is not positive by that tenth. Anything else is
+*a cash dial*: it does what holding less would do, no more and no less. The
+other arms are reported on the same two numbers and judged by the same rule,
+six arms at once, so a lone |t| near 2 among them is read as chance.
+
+**What this cannot say.** It is random names, not the Council's CORE picks; a
+stop can suit one picker's names and not another's (Marky's dips, Passes 15
+and 16). Whatever comes out, the enforced rule stays the owner's ruling until
+he changes it.
+
+    python lab/pass32_stop_random.py
+    python lab/pass32_stop_random.py smoke
+
+## Pass 33 -- where the Council's gap to SPY sits: cash, beta, sector, selection, and a dartboard (registered 2026-11-16 before any run)
+
+**Why.** Sixteen closed weeks, book about -9.6% against SPY -2.9%. The book
+held cash and defensive names, lagged in rising weeks and led in falling ones.
+The same web scan suggests measuring before changing anything: is the gap
+exposure, sector calls, or the names? This pass is arithmetic on the booked
+record; nothing is tuned and no rule follows from it.
+
+**Scope.** Every closed week in `portfolio/history/` (16 at registration). Per
+position, the official booked `pnl_pct`, weight and sponsor; per week, the
+official `weighted_return` and `spy_return`. Abort weeks have no file and are
+not in scope here.
+
+**A. Regression.** Weekly book return on SPY's same-window return, OLS:
+alpha, beta, their standard errors, R squared. Again on the invested part alone
+(book return over invested weight).
+
+**B. Attribution, exact by construction.** For each position i with weight
+w_i, booked return r_i, sector fund S(i) (the SPDR fund of its GICS sector in
+`universe_sp500_full_2026-09-22.csv`; names outside that file are mapped by
+hand and listed), and betas b_i and b_S estimated point-in-time from the 52
+weekly Friday-to-Friday returns before the entry (fewer than 26 weeks: beta 1,
+listed):
+- cash      = -(1 - sum w) x r_SPY
+- beta      = sum w_i (b_i - 1) r_SPY
+- sector    = sum w_i (r_S - b_S r_SPY)
+- selection = sum w_i [(r_i - b_i r_SPY) - (r_S - b_S r_SPY)]
+- booking   = official weighted_return - sum w_i r_i (rounding, restatements)
+The five add to the week's official alpha. Sector-fund returns are the lab's
+basis (Monday open to Friday close, adjusted). Reported per week, summed, and
+by sponsor (the beta, sector and selection terms carry a sponsor; cash does
+not). Per pick: the selection residual by sponsor, mean and t.
+
+**C. Dartboard.** For each week, 2,000 random books with the Council's own
+number of names, weights and cash (seed 20261116), scored on the lab's basis:
+(1) from the lab's frozen universe (`universe_2026-09-21.txt`), as rule 4
+does; (2) sector-matched, each pick replaced by a random S&P 500 name from its
+own GICS sector. The official book's percentile in each; the mean percentile
+over weeks with z = (mean - 0.5) x root(12 n).
+
+**How it will be read (stated now).** Sixteen weeks decide nothing about
+skill; the web scan's own arithmetic puts the gap inside one standard error.
+The pass answers a narrower question: of the cumulative gap, what share is the
+cash and beta terms (exposure the Council chose), what share sector, what share
+names. A selection term per pick with |t| >= 2 for a sponsor would be worth a
+forward test; anything less is a description. The dartboard percentile is the
+skill benchmark from here on and is meant to be carried forward weekly; that
+wiring, and asking each desk to rank its whole list with probabilities, change
+the live prompts and wait on the owner.
+
+    python lab/pass33_attribution.py
