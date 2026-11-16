@@ -104,7 +104,7 @@ def _keep(U, s, mc, px, vol, sector, industry):
 def _universe_finviz(key):
     """US-listed stocks (NASDAQ, NYSE, AMEX) from the owner's Finviz Elite screener export (CSV)."""
     import csv, io
-    q = urllib.parse.urlencode(dict(v="111", f=FINVIZ_FILTERS, auth=key))
+    q = urllib.parse.urlencode(dict(type="stocks", v="111", f=FINVIZ_FILTERS, auth=key))   # type= required from 2026-12-07
     text = None
     for i in range(3):
         try:
