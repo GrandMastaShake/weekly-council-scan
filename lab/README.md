@@ -3978,3 +3978,61 @@ universe; the dartboard in A is the check on that.
     python lab/forward_dartboard.py
     python lab/forward_ranks.py
     python lab/forward_ranks.py check lab/ranks/2026-11-23.json
+
+## Pass 36 A -- the runoff: do a screaming stock's neighbours drift? (registered 2026-11-16 before any run)
+
+**The owner's idea (2026-11-16).** When a headline is screaming one stock, do
+not buy that stock: find the one that handles its runoff, a step away, before
+attention gets there. This pass is the half of it that history can answer
+without hindsight: prices and the index's own sub-industry table, no LLM. The
+other half (an LLM mapping suppliers and customers, forward only) is a draft
+with the owner and is not registered here. Pass 35 is a draft too and its
+number is held.
+
+**Data.** The 2006-2026 daily auto-adjusted bars Pass 32 cached (today's S&P
+500 list and SPY), with Pass 32's survivorship caveat. GICS sector and
+sub-industry and the index "Date added" from
+`universe_sp500_full_2026-09-22.csv`; a name counts from its date added (blank
+= long-standing). The sub-industry table is today's, applied to the past.
+
+**Trigger.** Day D, 2007-01-01 onward: a member whose close-to-close return
+minus SPY's is at least +8% or at most -8%, on volume at least twice its mean
+of the 20 sessions before. A name that triggered in the previous 20 sessions
+does not trigger again. When several names of one sub-industry trigger the
+same day in the same direction, the largest move is the trigger and the rest
+are its linked names.
+
+**Linked names.** Every other member of the trigger's sub-industry on D.
+*Priced*: its own day-D return over SPY, in the trigger's direction, is at
+least a third of the trigger's. *Unpriced* (the runoff): the rest. Thresholds
+are the registration's guesses, fixed here: one set, no search.
+
+**Measure.** Each linked name from the open of D+1 to the close of D+5, and
+to the close of D+20, minus SPY over the same window, clipped at +/-50%.
+Against two controls: (i) the mean of the members of the same GICS sector
+outside the sub-industry over the same window; (ii) the name's own mean over
+every day it was a member (its ordinary 5- and 20-session excess). An event's
+value is the mean over its unpriced linked names of (name minus control i).
+Events are averaged within their calendar month and the t is over months.
+
+**Decisive tests: four.** Unpriced neighbours after an up-trigger, 5 sessions
+and 20; after a down-trigger, 5 and 20; each against control (i). The idea
+*passes* a test if the neighbours move in the trigger's direction with |t| of
+2.5 or more (four looks) and the same sign in both halves of the months. It
+*fails* that test with |t| under 1.64 or the wrong sign. Between is "a lead".
+
+**Reported, never decisive.** The same against control (ii); the priced
+neighbours; the trigger itself over the same windows (does the screaming
+stock keep going); 2007-2016 against 2017-2026; counts of events and links.
+
+**What it cannot say.** A sub-industry is a crude link, and these are large
+caps, where a neighbour is likeliest to be priced the same day. A fail here
+says large-cap sub-industry neighbours are not slow. It does not test
+suppliers, customers or small names. Windows of events close together in one
+sub-industry overlap; the monthly clustering only partly answers that.
+
+**Prediction, stated before the run.** Little or nothing at 5 sessions; if
+anything shows, it is at 20 sessions after down-triggers.
+
+    python lab/pass36_runoff.py
+    python lab/pass36_runoff.py smoke
