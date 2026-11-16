@@ -3918,3 +3918,63 @@ carrying the dartboard percentile forward each Monday, and asking each desk to
 rank its whole candidate list with probabilities.
 
 Result file: `lab/results/pass33_attribution.json`.
+
+## Pass 34 -- two forward records: the dartboard, and each desk's ranked ten with probabilities (registered 2026-11-16 before the first row of either)
+
+The owner asked for both on 2026-11-16, after Pass 33. Both are records, kept
+forward; neither changes the book, the engines or a vote.
+
+**A. The dartboard, weekly.** `lab/forward_dartboard.py`, run by the Monday
+forward task. For every closed week in `portfolio/history/` not yet in
+`lab/dartboard_ledger.json` it logs the official book's percentile among 2,000
+random books at the book's own number of names, weights and cash, on the lab's
+basis: against the frozen universe, and sector-matched (each pick replaced by
+a random S&P 500 name of its GICS sector). The first sixteen rows are Pass
+33's, copied as computed there; later weeks use the seed 20261116 plus the
+week's date as a number. The ledger is append-only. A pick with no sector in
+the S&P 500 file and no hand mapping leaves that week's sector-matched cell
+empty and is named. The page (`lab/DARTBOARD.md`) carries the mean percentile
+and z = (mean - 0.5) x root(12 n) for each. **Reading:** z at or above +1.64
+over at least 40 weeks would be the first evidence of selection skill this
+project has had; z at or below -1.64 would say the selection step does worse
+than chance; anything between is a dartboard.
+
+**B. Each desk's ten, ranked, with a probability.** From the Council run of
+2026-11-23, before the open, the Monday session writes
+`lab/ranks/<MONDAY>.json`: for Cecil, Marky and Ophelia, ten distinct names
+from the scan universe in rank order (1 = best), each with `p`, the desk's
+probability in whole percent (1-99) that the name beats SPY from Monday's open
+to Friday's close. The desk's engine proposals as the report prints them must
+be among the ten and are flagged `engine: true`; the rest are the desk's own
+next-best names by its own lens. `p` may not rise as rank falls. The file
+names the model that wrote it. It must be committed before 09:30 ET that
+Monday and never edited after; `lab/forward_ranks.py` reads the file's commit
+times and refuses to score a week that fails either test (it is listed as
+late). No file is written for an abort week. Nothing reads the file but the
+scorer: the ranks do not feed the consensus, the weights or the report.
+
+**Scored each Monday** (`lab/forward_ranks.py`, lab basis), per desk and
+pooled: the rank IC (Spearman of rank against the week's return over SPY);
+the Brier score of `p` against beat-or-not, with skill = 1 - Brier / 0.25
+(0.25 is what always saying 50% scores); calibration by bucket of `p`; mean
+excess return of ranks 1-5 against ranks 6-10; engine names against the
+desk's own additions.
+
+**The registered reading, at 40 scored weeks and not before.** A desk shows
+ranking skill if its mean weekly IC is above zero with t >= 1.64 **and** its
+Brier skill is above zero. The selection step adds nothing if mean IC has
+t < 1.64, Brier skill is at or under zero, and ranks 6-10 do as well as ranks
+1-5 (the paired weekly difference has t < 1.64). Three desks and a pooled row
+are four looks, so one lone pass among them is read as chance unless its t
+clears 2.24. A change of model starts a new record for B; the page splits by
+model.
+
+**What it cannot say.** One session writes all three desks, so the lists are
+not independent of each other or of the report it has just written. The ten
+are chosen, not sampled: a rank IC inside a hand-picked ten says whether the
+desk can order its own shortlist, not whether the shortlist beats the
+universe; the dartboard in A is the check on that.
+
+    python lab/forward_dartboard.py
+    python lab/forward_ranks.py
+    python lab/forward_ranks.py check lab/ranks/2026-11-23.json
