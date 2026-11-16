@@ -786,3 +786,47 @@ Third, **the engine's sentence on NEE is wrong and its name is right,** and I wo
 **Cash Target: 30%. Council actual: 16.2%.** My desks hold 25-30% into CPI with two flags up, the Canary ELEVATED and the calendar's own flag action reading "no new gross exposure while it is up." The pipeline's floor set 16.1% and the cap did not have to move it, so the gap this week is between the desks and the pipeline, not between the desks and the owner. The book holds two wires, two insurers and a parcel carrier, nothing in the AI chain, nothing in energy, no duration except the two wires' own; the posture the desks asked for, at a size the desks did not, on a line my own rule would have halved.
 
 -- **Ophelia**, Macro Oracle
+
+
+## Week of 2026-11-16 -- The Cut Rule Got Its Receipt for a Reason It Did Not Name; My One Name Is the One My Desk Will Not Add To
+
+### 1. Macro Narrative
+The regime moved one notch hawkish and lost its third clause. **Sticky inflation and a December hike, confirmed in full; the growth scare reversed.** October CPI ran +0.4% headline and +0.3% core, a third straight hot core. December went from the high 70s to about 88-89%, with a tail for 50 bp. The 10-year rose 29.5 bps to **5.154%**, over 5.00% on Thursday, and the breakeven did not move, so all of it was real yield. The dollar made a 52-week closing high at **103.41**. And equities did not care: SPY +2.59%, VIX under 20 on every close, all twelve sector funds up. The calendar desk's sentence for this week is the one I adopt: the risk is no longer a growth scare; it is a Fed that hikes into a 10-year already over 5%.
+
+**Credit, the number I read first.** HY OAS **320**, HY-IG **231**, both Thursday -- back under 340 and under 250. The line that made me neutral on financials has reopened and my Grid A page could not see it, because FRED timed out on Friday. The synthesis filed that as #210. CCC did not tighten.
+
+### 2. Last Week, Scored
+- **NEE** booked 19.5% -> **-2.84%**; **D** booked 11.9% -> **-2.20%**. My sleeve: **-0.82 points of the book** on 31.4%, zero for two, the only red sleeve. The fund rose 2.11%. My names fell while their sector rose.
+- I wrote the pair down as one position. It moved as one: both made their week lows on Friday, 1.3 and 1.9 points from their stops, with staff recommending denial of the merger as proposed and the hearing tomorrow.
+- **The reversal I carried fired:** a 10Y close over 5.00%, Thursday. As an exit it was a wash (+0.19pp on NEE, -0.22pp on D).
+- **Section 6, scored:** core CPI at or over +0.3% -- yes. XLU under $42.42 -- no. Virginia -- the staff recommendation, yes in part. A third HY-IG print over 250 -- no, 231. Doha -- neither. The 10Y through 4.75% -- no. Two of six, and they were the two that set the week.
+- **The cut rule: Shadow B +1.62% against the book's +1.37% on the same basis. +0.25pp. Its first receipt.**
+
+### 3. My Proposals to the Council
+- **COST** -- macro score 73, confidence 76.9 -- **BOOKED 18.4%.** "Aligned with Consumer sector rotation" -- the template has the right sector this week. $1,106.21, a 52-week closing high, +5.0% on the week with no dated catalyst on its page, **RSI 76.0**, 14.4% over its 50D, 44.2x forward, 0.52% yield, over its mean target. Reports Dec 10. My staples desk on Friday: defensive-lean, unchanged, and no adds at $92 with the carry gap at -269 bps; my add zone is the 20-day.
+- **PEP** -- 71, conf 67.7 -- not booked. It was the fifth name in the scan's first run and left the book when the vote weights were corrected for my own bad week. 3.98% yield on a 94% payout; over its target.
+- **MDLZ** -- 70, conf 61.8 -- not booked (consensus). A 52-week closing high; payout over 100% in the cache.
+- **WMT** -- passed over by the blackout (reports Thursday).
+
+### 4. The Concession (owned)
+First, **the receipt is real and the reason is not mine.** My cut rule keys on HY-IG at or over 250. In the week it would have fired, HY-IG fell from 255 to 231. My sleeve lost money because the 10-year rose 30 basis points and a commission staff said no -- rates and a docket, not credit. A rule that pays for a reason other than its trigger has been lucky once. I asked the owner for a ruling with the number attached; I am attaching the mechanism too, because it argues against me.
+
+Second, **my desk and my engine are on opposite sides again.** One week of alignment, and now my engine's only booked name is the stock all three desks on its own page decline to add to, at RSI 76. I did not argue it down: the XLP line passes with 3.1%, the fund closed on its high, and the book held no staples. But I wrote "I do not add here" on Friday and my name is on a new position Monday.
+
+Third, **my vote weight fell to 31.8% and my sleeve to one name, and that is the system working.** The first run of the scan did not know about my 0-for-2 and gave me two names and 31.6%. The corrected run knows and gave me one and 18.4%.
+
+### 5. Lesson Learned
+**A rule that is right for the wrong reason has not been tested.** The freeze has two receipts in its own direction for its own reason. The cut rule has one receipt in its direction for someone else's reason. If I count them the same I am keeping score, not learning. The practice: every shadow result I report carries one more field -- **did the trigger's own variable move the way the rule assumed?** For the cut rule this week the answer is no.
+
+### 6. What Would Make Me Wrong
+- **Warsh opens the door to 50 bp at noon.** The 10Y goes for 5.25%, and a 44x stock with a 0.52% yield is long-duration growth whatever the fund is called.
+- **XLP closes under $89.48.** The line under my one name, 3.1% away.
+- **WMT or TGT report soft volume.** The staples page gives that 20%; Costco is priced as the exception.
+- **Retail sales under -0.1% Tuesday.** A third flag, and the growth scare I just struck from the regime comes back from the data.
+- **HY-IG back over 250.** Then the cut rule fires for its own reason and I get a real observation.
+- **The 10Y back under 5.00% after the minutes.** Then the proxies lead and I held too little of them.
+
+### 7. Cash
+**Cash Target: 30%. Council actual: 17.3%.** My desks hold 25-30% with two flags up and the 10-year 9.6 bps from the crisis line. The floor set the number. The book holds an insurer, two industrials, Costco and a utility that does not move.
+
+-- **Ophelia**, Macro Oracle

@@ -995,3 +995,46 @@ The second concession is about the rule itself. Rule 1 passed UPS on a 122% day 
 - [ ] Cash rule -- 16.2% cash. The floor set it; the cap did not have to move it.
 
 -- **Marky**, The Technician
+
+
+## WEEK OF 2026-11-16
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $754.37, **+2.59% W/W**, ended a four-week losing streak; under its 50D ($764.43 fetched), over its 200D | A bounce that stopped under the 50D. All twelve sector funds rose and almost none closed over its line |
+| Breadth | 12 of 12 sectors up; 8 of 12 over the 50D and 200D on the pages' levels; market-wide 453 new lows vs 75 highs, 40.0% over the 50D (Finviz, per the synthesis) | Inside the index it looks healed. Outside it does not |
+| VIX | **19.30**, every close under 20; VIX/VIX3M 0.936, contango all week | The extra hedge is off, the base stays. Back on with a close over 20 and the ratio over 1.00 |
+| 10Y Yield | **5.154%**, +29.5 bps | Now it is a line: 5.25%. TLT -3.1% in an up week for stocks; bonds hedged nothing |
+| XLI | **$168.78**, +3.76%; $165.44 retaken Monday and held every close; high $171.60, $1.17 under the 200D ($172.80); every day under average volume | A starter third, stop on a close under $165.44. The reclaim did not print. The book has two names on this line |
+| XLF / XLP / XLU | $58.68 (six up weeks; warning now the 20D $57.06) / $92.35 (52-week closing high; stop a close under the 20D $89.48) / $44.04 (first Friday close over the 200D since July; flat until a close over $44.14; $43.79 below) | The three other lines under this book. I hold the first two and I am flat the third |
+
+**Verdict:** Two of my names are in the book, 30.3%, both on XLI, a fund I own a third of and call a relief rally on light volume. One of them is there because a vote-weight correction moved the fifth slot from Ophelia to me. I will say plainly which is which.
+
+### Last Week, Scored
+- **UPS** booked 18.4% -> **+2.40%** ($109.77 -> $112.40). The thinnest line on the record (XLI $161.74, 0.6%) never came within 4% on a close; the fund gapped over $165.44 on Monday.
+- My sleeve: +0.44 points of the book on 18.4%, one for one.
+- **The sign clause, before its first use:** I wrote last Monday that Rule 1's third clause would have kept UPS on the watchlist, and that if UPS beat the book I would keep the clause anyway. UPS beat the book by 1.49 points. The clause cost money before it was ever applied. I keep it; one Friday bar that closed down and then worked is one bar.
+- MMM, the first fail on the denominator clause: -2.63% on the Monday-close basis. One observation, in the rule's favour.
+
+### Picks (Booked)
+1. **TDG** -- 82.2 -- **BOOKED 19.1%.** "Strong momentum breaking above the 12-week MA" -- above it ten of ten sessions, so a level, not a crossing. **Rule 1, all three clauses: 125% of the 20-day on the signal day (Friday), 130% trimmed, and the bar closed above its open ($1,214.93 -> $1,217.28).** Pass. What the number does not say: it reported Tuesday, the headlines call the FY27 outlook a miss, it traded a $64 range that day, and volume fell every session after -- 202%, 168%, 149%, 137%, 129%. The signal day was the quietest day of a loud week, measured against a 20-day that is mostly pre-print calm. $1,217.28 is 0.2% over its 200D and 16.8% under its high. RSI 59.1. The ceiling: XLI RSI 50.6, nowhere near 75. Trigger: an XLI close under $165.44, 2.0% away.
+2. **FAST** -- 72.2 -- **BOOKED 11.2%** (corrected run; not in the first run's book). "Low volatility uptrend with clean price action" -- not a breakout, Rule 1 N/A. $55.19, +4.2% on the week, 1.9% under its high, RSI 67.3, 45x trailing. Its Friday bar closed under its open on 60% of average volume; the clause does not apply to it and I write the bar down anyway. In no wiki. Shares TDG's line.
+3. **JNJ** -- 71.7 -- not booked (consensus). "Technical breakout with volume rising." **Rule 1: 84% on the signal day, 86% trimmed -- fail on the ratio; the bar closed above its open -- pass on the sign.** A two-year high and over its mean target. The rule kept it out by the number.
+
+### The Concession (owned)
+I hold 30.3% of this book on one line. With my own money I have a third of a position in that fund and a stop 2% under it. The engine has two full names. Last week I conceded the fund and not the pick; this week I concede the fund again and I concede that FAST is not a pick I argued for at all -- it is in the book because the Council fixed its vote weights and the arithmetic handed me the fifth slot. That is the correct book and I would rather be given a slot by a correction than by an error. It is still not conviction.
+
+On TDG: every clause I have written passes it, and the tape reader in me does not like it. A stock that sells off on its guide, recovers to flat, and does it on shrinking volume has not told me anything yet.
+
+### Lesson Learned
+**A ratio taken in a print week is a comparison to the wrong week.** TDG's 125% is real and it is the smallest number of its five days. I am not writing a fourth clause. I have three clauses and each has one observation or none; a rulebook that grows a clause every Monday is a diary with numbering. The practice instead: **no new clause until the existing three have five observations each**, and until then I report the print-week caveat in words beside the ratio, the way I reported distribution beside UPS.
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **103.41**, a 52-week high, and 10Y 5.154%. Both lit, eighth week. TDG and FAST are not commodity names. Checked.
+- [x] "Good news = sell" -- TransDigm grew revenue and fell 4% intraday on the outlook. On.
+- [ ] 3+ canaries/regime flags -- **2 flags raised** (10Y > 5.00% new, CPI carried); Canary HIGH CAUTION, no strict criterion met. Not three.
+- [ ] VIX < 16 + bad breadth -- no: VIX 19.30.
+- [ ] Cash rule -- 17.3% cash. The floor set it.
+
+-- **Marky**, The Technician

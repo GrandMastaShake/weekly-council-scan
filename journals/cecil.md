@@ -888,3 +888,45 @@ The third: the Council wrote Shadow A as "Cecil's column applied to his own slee
 **Cash Target: 35%. Council actual: 16.2%.** Two flags up, the Canary ELEVATED, credit at a cycle high, CPI Tuesday, and the book opens five new positions at 83.8%. The bill pays 4.00%. I would hold more of it than the floor set, and the floor is the pipeline's.
 
 -- **Cecil**, The Fundamentalist
+
+
+## Week of 2026-11-16 -- Entry #017
+
+**Mood:** I asked for a test and I lost it. TROW against ALL, same weight, same line, my column against my engine: the engine won by seven points. And this morning the engine's second name is a 5.95x multiple on a stock that closed within two cents of the same price five days running. I am being taught two different things in one week and I intend to keep them apart.
+**Cash Target:** 35% (Council book: 17.3% cash -- the pipeline's floor set it; the cap did not move it)
+
+#### Regime Quick-Check
+| Factor | Reading | Implication |
+|--------|---------|--------------|
+| Fed | 3.75-4.00%; October core CPI +0.3%, a third hot core; December ~88-89%; Waller: "ought to" hike; Warsh speaks today | The hike is priced. The question moved from whether to how many |
+| 10Y Yield | **5.154%**, +29.5 bps; over 5.00% Thursday; 9.6 bps under 5.25% | Real yield did the whole move (breakeven flat). Every yield I own is measured against a higher bar than a week ago |
+| Curve (10Y-3M) | **+103 bps**; 10Y-2Y +29 (mixed-day), +27 same-day par | The front end moved faster. Under Ophelia's +30 line for lenders |
+| XLF | **$58.68**, +2.66%, a sixth straight weekly gain, sixteen of seventeen names up | The fund my top weight sits under has 6.2% to the Council's line. My desk still would not start an insurer here |
+| Credit | HY OAS **320**, HY-IG **231** (Thu Nov 12); CCC 1,314, flat | The middle of the stack healed; the bottom did not. I keep zero high yield |
+
+**Verdict:** Restrictive and one notch more hawkish, with the fear gone. Sticky inflation and a priced hike; the growth scare reversed.
+
+#### Last Week, Scored
+- **ALL** booked 21.2% -> **+4.29%** ($256.64 -> $267.64), the best name in the book, a higher close every session after Monday. The name that failed my column by 317 bps.
+- **PGR** booked 12.8% -> **+2.94%**. The other name my desk said it would not start.
+- My sleeve: **+1.29 points of the book** on 34.0% of the weight, two of two green, the only sleeve that carried. The book made +0.91% against SPY +1.67%.
+- **Shadow A, the test I owed:** TROW -1.71% against ALL +5.46% on the Monday-close basis. The column's sleeve lost to the engine's by 7.17pp, 1.52 points of book. I wrote last Monday that if ALL beat TROW, "the column is wrong about this tape a second time on the insurers." It is 1-1 live. I write that sentence down as promised.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 90, conf 80.4 -- **BOOKED 21.0%, the top weight a second week.** 6.12x trailing, 9.45x forward, 1.59% yield: 356 bps under the 10-year. It fails the column by more than last week because the 10-year rose and the stock did too. $267.64, 4.8% under its high. In no wiki.
+- **AES** -- score 89, conf 74.4 -- **BOOKED 13.0%, tagged SPEC.** The engine says "Quality business trading at a discount. P/E: 6.0." The tape says $14.90 / $14.92 / $14.92 / $14.91 / $14.91 on volume falling to 39% of average. A headline from April mentions new owners. I have not read the terms and neither has the Council, and that is the point: my screen scored a multiple without asking who is setting the price. 4.69% yield, 46 bps under the 10-year; debt 3.77x equity; no free cash flow in the cache.
+- **TROW** -- score 89, conf 71.9 -- not booked (consensus). 10.85x forward under 10.95x trailing; 4.79%, 36 bps under the 10-year and 67 over the bill. Still the nearest to the column, and last week's loser. It is the swap in Shadow A a third time.
+
+**Booked for Cecil: 34.0%.** Vote weight 37.2%, up from 35.6% on last week's result -- after the Council corrected a stale-weights run. My share of the vote rose because the engine I keep criticising was right.
+
+#### The Concession (owned)
+The column lost. I do not get to say the week was unusual; I chose the week. What I can say honestly is narrower: the column measures carry against the Treasury, and in a week the Treasury yield rose 30 basis points the names with the most carry fell and the name with the least rose, because insurers reprice their float upward when rates rise and a 4.8% dividend does not. The column has no term for that. It is not wrong about what carry is. It was wrong about what a hike week pays for, twice now on insurers.
+
+The second concession is AES. For nine weeks the flag on me has been "the value screen is a P/E sort." This is the cleanest proof yet and it has nothing to do with catastrophe years: a P/E sort cannot tell a cheap business from a stock whose price is fixed by something else. The Council booked it because no gate fails. I would not have.
+
+#### Lesson Learned
+**Before a multiple means anything, ask who is setting the price.** A trailing P/E is a ratio of a market price to earnings; when the price has stopped being a market's opinion, the ratio is arithmetic. I am not proposing a rule this morning -- Ophelia's lesson last week was that a rule goes to the owner the week it is written, and I have one unbuilt column already. I am proposing an observation for the Scorekeeper: any name of mine whose five closes sit inside half a percent on falling volume gets the words "price not discovering" beside its score. And on the column: 1-1 is not a reason to build it or to bury it. It is a reason to stop promising it in the first paragraph.
+
+**Cash Target: 35%. Council actual: 17.3%.** Two flags up, the 10-year 9.6 bps from the crisis line, the bill at 4.12%. With AES moving two cents a day the book is less exposed than its number, by accident rather than by decision.
+
+-- **Cecil**, The Fundamentalist
