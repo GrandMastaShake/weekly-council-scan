@@ -1,0 +1,68 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-13",
+  "slug": "defensives-staples-utilities-breakout",
+  "headline": "The 'Boring' Stocks Kept Winning: household-goods stocks hit a one-year high; utilities broke above their long-term trend for the first time since July; Constellation Energy beat and rose 12%.",
+  "source": "README Market Brief 2026-11-14"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-16T10:04:40-05:00",
+ "links": [
+  {
+   "ticker": "TLN",
+   "type": "competitor",
+   "degree": 1,
+   "chain": [
+    "Constellation's beat points to the same strong power pricing at other nuclear-heavy independent generators"
+   ],
+   "expected": 1,
+   "exposure_source": "Talen Energy 10-K FY2025, Item 1: independent power producer whose fleet includes the Susquehanna nuclear plant; serves data center demand"
+  },
+  {
+   "ticker": "LEU",
+   "type": "supplier",
+   "degree": 2,
+   "chain": [
+    "Constellation beats on its nuclear fleet as power demand grows",
+    "reactor owners run harder and longer and contract for more enriched uranium fuel"
+   ],
+   "expected": 1,
+   "exposure_source": "Centrus Energy 10-K FY2025, Item 1: supplies low-enriched uranium to nuclear utilities"
+  },
+  {
+   "ticker": "CENX",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "Constellation beats as wholesale power prices and capacity payments rise",
+    "aluminum smelters on market-priced power pay more for electricity, one of their largest costs"
+   ],
+   "expected": -1,
+   "exposure_source": "Century Aluminum 10-K FY2025, Item 1: its Kentucky smelters run on market-based power contracts"
+  },
+  {
+   "ticker": "MIR",
+   "type": "supplier",
+   "degree": 3,
+   "chain": [
+    "Constellation beats on its nuclear fleet",
+    "owners approve more life extensions, uprates and restarts",
+    "plants buy more radiation monitoring and detection equipment"
+   ],
+   "expected": 1,
+   "exposure_source": "Mirion Technologies 10-K FY2025, Item 1: Nuclear & Safety solutions are in more than 98% of nuclear power plants globally"
+  },
+  {
+   "ticker": "MSEX",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "money leaving chip stocks lifts large utilities and staples to new highs",
+    "the same defensive buying reaches small regulated water utilities later"
+   ],
+   "expected": 1,
+   "exposure_source": "Middlesex Water 10-K FY2025, Item 1: owns and operates regulated water utility and wastewater systems in New Jersey and Delaware"
+  }
+ ]
+}

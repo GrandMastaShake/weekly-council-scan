@@ -1,0 +1,70 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-13",
+  "slug": "hot-cpi-december-hike",
+  "headline": "Prices Ran Hot: October CPI +0.4%, core +0.3% (third hot month); wholesale prices up 6.5% from a year ago, the most since 2022. A Fed governor said the Fed 'ought to' raise rates.",
+  "source": "README Market Brief 2026-11-14"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-16T10:04:40-05:00",
+ "links": [
+  {
+   "ticker": "LPLA",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "hot CPI makes a December Fed rate hike nearly certain",
+    "banks pay brokers more on swept client cash when short rates rise"
+   ],
+   "expected": 1,
+   "exposure_source": "LPL Financial 10-K FY2025, Item 1A and Item 7: fees from banks in its client cash programs move with interest rates"
+  },
+  {
+   "ticker": "PCTY",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "hot CPI makes a December Fed rate hike nearly certain",
+    "payroll processors earn more interest on client funds they hold before paying them out"
+   ],
+   "expected": 1,
+   "exposure_source": "Paylocity 10-K FY2026 (June year), Item 1A and Item 7: interest income on funds held for clients"
+  },
+  {
+   "ticker": "CACC",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "hot CPI makes a December Fed rate hike nearly certain",
+    "subprime auto lenders pay more on variable-rate credit lines while the loans they hold stay fixed-rate"
+   ],
+   "expected": -1,
+   "exposure_source": "Credit Acceptance 10-K FY2025, Item 1A: revolving credit facility and warehouse facilities bear interest at variable rates"
+  },
+  {
+   "ticker": "GO",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "prices rise fast for a third month, groceries and rent included",
+    "household budgets tighten further as borrowing costs head up again",
+    "shoppers trade down from regular supermarkets to closeout grocers"
+   ],
+   "expected": 1,
+   "exposure_source": "Grocery Outlet 10-K FY2025, Item 1: an extreme value retailer of name-brand consumables and fresh products"
+  },
+  {
+   "ticker": "EZPW",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "prices rise fast for a third month",
+    "lower-income households run short of cash while bank credit gets dearer",
+    "more of them pawn goods for small short-term loans"
+   ],
+   "expected": 1,
+   "exposure_source": "EZCORP 10-K FY2026 (September year), Item 1: revenue is primarily pawn service charges on pawn loans, plus merchandise sales"
+  }
+ ]
+}

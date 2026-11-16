@@ -1,0 +1,59 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-13",
+  "slug": "iran-tension-tankers-hit",
+  "headline": "Iran Got Tense, Oil Didn't: Trump said the U.S. 'does not need' a deal; two supertankers were reported hit. December oil still fell 2.5% to $88.56, while oil stocks rose 5.4%.",
+  "source": "README Market Brief 2026-11-14"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-16T10:04:40-05:00",
+ "links": [
+  {
+   "ticker": "INSW",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "two supertankers are reported hit and the Iran talks stall",
+    "owners ask more to send crude tankers into the Gulf and safer routes tie ships up longer"
+   ],
+   "expected": 1,
+   "exposure_source": "International Seaways 10-K FY2025, Item 1: owns and operates crude and product tankers, VLCCs included"
+  },
+  {
+   "ticker": "KTOS",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "the Iran talks stall and ships are hit in the Gulf",
+    "militaries order more target drones and unmanned aircraft to train and equip air and ship defense"
+   ],
+   "expected": 1,
+   "exposure_source": "Kratos 10-K FY2025, Item 1: Unmanned Systems is a reporting segment (target drones and tactical unmanned aircraft)"
+  },
+  {
+   "ticker": "VG",
+   "type": "substitute",
+   "degree": 3,
+   "chain": [
+    "ships are hit in the Gulf and the Iran talks stall",
+    "buyers doubt that Gulf LNG can keep passing the Strait of Hormuz",
+    "spot LNG from US plants fetches more"
+   ],
+   "expected": 1,
+   "exposure_source": "Venture Global 10-K FY2025, Item 1: US LNG producer that sells commissioning cargos outside its long-term contracts"
+  },
+  {
+   "ticker": "LXU",
+   "type": "substitute",
+   "degree": 3,
+   "chain": [
+    "ships are hit in the Gulf and the Iran talks stall",
+    "Gulf urea and ammonia exports, a large share of world trade, look less dependable",
+    "nitrogen fertilizer prices firm for US makers"
+   ],
+   "expected": 1,
+   "exposure_source": "LSB Industries 10-K FY2025, Item 1: makes ammonia, UAN and other nitrogen products from natural gas at US plants"
+  }
+ ]
+}

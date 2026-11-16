@@ -1,0 +1,71 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-13",
+  "slug": "ten-year-yield-crosses-five",
+  "headline": "The 10-Year Crossed 5%: the 10-year Treasury yield rose 0.29 points to 5.15%; the dollar hit a one-year high (103.41); bonds fell along with gold (-4.5%).",
+  "source": "README Market Brief 2026-11-14"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-16T10:04:40-05:00",
+ "links": [
+  {
+   "ticker": "ORC",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "the 10-year yield jumps 0.29 points in a week to 5.15%",
+    "leveraged holders of agency mortgage bonds take book-value losses and pay more to hedge"
+   ],
+   "expected": -1,
+   "exposure_source": "Orchid Island Capital 10-K FY2025, Item 1: its primary business is leveraged investment in Agency RMBS"
+  },
+  {
+   "ticker": "BOH",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "the 10-year yield jumps to 5.15% and bonds fall",
+    "banks with big books of old low-yield bonds carry larger paper losses and stay stuck earning under 2% on them"
+   ],
+   "expected": -1,
+   "exposure_source": "Bank of Hawaii 10-K FY2025, Item 7 average balances: about $4.4 billion of taxable held-to-maturity securities yielding 1.77%"
+  },
+  {
+   "ticker": "STC",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "the 10-year yield at 5.15% pulls mortgage rates higher",
+    "fewer home purchases and refinancings close",
+    "title insurers write fewer policies"
+   ],
+   "expected": -1,
+   "exposure_source": "Stewart Information Services 10-K FY2025, Item 1 and Item 7: title revenues depend on home sales, mortgage interest rates and loan originations"
+  },
+  {
+   "ticker": "FND",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "the 10-year yield at 5.15% pulls mortgage rates higher",
+    "fewer existing homes change hands",
+    "fewer new owners replace floors, a main driver of hard-surface flooring sales"
+   ],
+   "expected": -1,
+   "exposure_source": "Floor & Decor 10-K FY2025, Item 1: names existing home sales as a driver of hard surface flooring demand"
+  },
+  {
+   "ticker": "FG",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "the 10-year yield at 5.15% raises the discount rate on pension promises",
+    "company pension plans look better funded, so sponsors can afford to hand them off",
+    "insurers that write pension risk transfer annuities win more deals"
+   ],
+   "expected": 1,
+   "exposure_source": "F&G Annuities & Life 10-K FY2025, Item 1: pension risk transfer solutions serving about 145,000 plan participants"
+  }
+ ]
+}

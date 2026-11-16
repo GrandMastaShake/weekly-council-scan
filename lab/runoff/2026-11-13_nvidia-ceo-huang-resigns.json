@@ -1,0 +1,80 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-13",
+  "slug": "nvidia-ceo-huang-resigns",
+  "headline": "NVIDIA Lost Its CEO: Jensen Huang resigned; CFO Colette Kress is interim CEO; reports of an FBI inquiry. NVDA -12.75%, AMD +18.9%, Broadcom +18.2%. NVIDIA reports earnings Tuesday.",
+  "source": "README Market Brief 2026-11-14"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-16T10:04:40-05:00",
+ "links": [
+  {
+   "ticker": "AMD",
+   "type": "competitor",
+   "degree": 1,
+   "chain": [
+    "NVIDIA's founder exits and buyers place more AI chip orders with its closest rival"
+   ],
+   "expected": 1,
+   "exposure_source": "AMD 10-K FY2025, Item 1: offers AI accelerators, CPUs and GPUs for data centers"
+  },
+  {
+   "ticker": "MRVL",
+   "type": "competitor",
+   "degree": 2,
+   "chain": [
+    "NVIDIA's founder exits and big buyers hedge their dependence on it",
+    "cloud companies push more work onto custom chips built with design partners"
+   ],
+   "expected": 1,
+   "exposure_source": "Marvell 10-K FY2026 (January year), Item 1 and Item 1A: makes custom and semi-custom products for data center customers"
+  },
+  {
+   "ticker": "TER",
+   "type": "supplier",
+   "degree": 2,
+   "chain": [
+    "NVIDIA's founder exits and big buyers hedge toward their own custom accelerators",
+    "more custom chips from cloud companies means more test systems bought to check them"
+   ],
+   "expected": 1,
+   "exposure_source": "Teradyne 10-K FY2025, Item 7: semiconductor test growth from AI in networking and vertically integrated producer compute"
+  },
+  {
+   "ticker": "CRWV",
+   "type": "customer",
+   "degree": 2,
+   "chain": [
+    "NVIDIA's founder exits amid reports of an FBI inquiry",
+    "cloud renters built on early access to NVIDIA's newest systems lose certainty about supply and backing"
+   ],
+   "expected": -1,
+   "exposure_source": "CoreWeave 10-K FY2025, Item 1 and Item 1A: deploys NVIDIA GB200 and GB300 systems first; supply chain risk names NVIDIA"
+  },
+  {
+   "ticker": "SANM",
+   "type": "supplier",
+   "degree": 3,
+   "chain": [
+    "NVIDIA's founder exits and buyers hedge away from it",
+    "AMD wins more AI accelerator and rack-system orders",
+    "Sanmina, which bought ZT Systems' manufacturing business from AMD, builds more of those racks"
+   ],
+   "expected": 1,
+   "exposure_source": "Sanmina 10-K FY2025 (September year), Item 1A and notes: acquired the data center infrastructure manufacturing business of ZT Systems from AMD"
+  },
+  {
+   "ticker": "APLD",
+   "type": "supplier",
+   "degree": 3,
+   "chain": [
+    "NVIDIA's founder exits amid reports of an FBI inquiry",
+    "CoreWeave, built on NVIDIA systems, faces doubts about supply and financing",
+    "Applied Digital's large data center leases depend on CoreWeave as the tenant"
+   ],
+   "expected": -1,
+   "exposure_source": "Applied Digital 10-K FY2026 (May year), Item 1 and notes: data center leases with CoreWeave for 250 MW and more at Polaris Forge 1"
+  }
+ ]
+}
