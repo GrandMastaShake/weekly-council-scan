@@ -4076,3 +4076,70 @@ up-triggers as buys, and expect the up side to need names well under the S&P
 500 in size.
 
 Result file: `lab/results/pass36_runoff.json`.
+
+## Pass 36 B -- the runoff, forward: from a story to the names several steps away (registered 2026-11-16 before the first map)
+
+**The owner's idea, in his words (2026-11-16).** "Seven degrees of
+separation": not the stock in the headline and not its neighbours, but "the
+companies affected by the companies that are affected by the companies that
+are affected by the story ... the 'duh' trades after the fact. Like generator
+sellers during a massive flood." Pass 36 A tested same-sub-industry
+neighbours, which was the lab's reduction and not this idea; it does not bear
+on it. This is the idea itself, and it can only be tested forward: asked what
+followed from a 2023 story, a model already knows (rule 5).
+
+**Triggers, fixed so nothing is cherry-picked.** Each weekend:
+- *Stories:* every row of the "What's Moving Markets -- The Big Stories"
+  table in that Saturday's README Market Brief (the Synthesis Agent writes
+  three to five). All of them, none skipped, none added.
+- *Stock moves:* the two largest triggers of the week by Pass 36 A's rule (an
+  S&P 500 name up or down 8% against SPY on twice its 20-day volume), one up
+  and one down when both exist, as `lab/forward_runoff.py detect` prints them.
+
+**The map.** For each trigger one file, `lab/runoff/<DAY>_<KEY>.json`,
+written by one session: two to eight linked US-listed names. Each link
+carries `chain`, the causal steps from the story to the name, one line a
+step; `degree`, the number of steps (1 = the obvious name, up to 4);
+`type` (supplier, customer, competitor, complement, substitute, demand,
+cost); `expected` (+1 the name should beat its benchmark, -1 lag it); and
+`exposure_source`, the filing or company page showing the name is in that
+business (no source, no link). At least one link in every map is two or more
+steps out. The session does not look up the linked names' prices. The file is
+committed before the next open and never edited; the scorer reads the commit
+times.
+
+**Scored** by `lab/forward_runoff.py`, run with the Monday forward task.
+Entry is the first open after the file's commit. Each link: entry open to
+the close 5 and 20 sessions on, minus its benchmark (SPY for an S&P 500 name,
+IWM otherwise), clipped at +/-50%, times `expected`. A trigger's value is the
+mean of its links; the t is over triggers. Recorded mechanically at scoring,
+not by the session: whether the name is in the S&P 500, and its run-up over
+the benchmark from the story's day to the entry (3% or more its expected way
+= already run).
+
+**One decisive test.** Links two or more steps out, 20 sessions. Nothing is
+read before 60 such links from at least 20 triggers. *Confirmed* at a mean of
++1.0% or more with t of 2 or more. *Rejected* at zero or below once there are
+100 links. Otherwise it keeps running to 200 links and is judged once, final.
+
+**Reported, never decisive.** By degree (1, 2, 3 or 4): the owner's claim is
+that the far names are the slow ones, so the page shows whether the signed
+return rises or falls with distance. Story triggers against stock triggers;
+buys against avoids (Pass 36 A's lead was on the avoid side); inside and
+outside the S&P 500; run already or not; 5 sessions.
+
+**What can fool it, stated now.** (1) One session writes the chain and the
+sign, and a good story is not a cash flow: far links are where the reasoning
+is thinnest. (2) The benchmark is crude for small names; a small-cap rally
+lifts every non-member link at once, which is why the t is over triggers and
+IWM is the benchmark there. (3) "After the fact" is the point of the idea and
+also its weakness: by Monday's open the obvious part may be done, which the
+run-up split is there to show. (4) A change of model starts a new record.
+
+**Predictions.** Degree 1 is flat (priced). If anything shows it is at degree
+2 in names outside the S&P 500. Degree 3 and 4 will be too few and too noisy
+to read for months. "Keep running" is the likeliest state at 60 links.
+
+    python lab/forward_runoff.py detect
+    python lab/forward_runoff.py check lab/runoff/<file>.json
+    python lab/forward_runoff.py
