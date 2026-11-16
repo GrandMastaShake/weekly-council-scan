@@ -1,0 +1,39 @@
+{
+ "generated": "2026-11-16T10:04:13.387381-05:00",
+ "latest": "2026-11-16",
+ "verdict": {
+  "closed": 0,
+  "seasons": [],
+  "mean_edge_per_week": null,
+  "nw_t": null,
+  "by_season": {},
+  "status": "too early (0 closed cohorts; 12 across three quarters are needed)"
+ },
+ "rows": [
+  {
+   "W": "2026-11-16",
+   "season": "2026Q4",
+   "late": true,
+   "picks": [
+    "AES",
+    "EG",
+    "VTRS"
+   ],
+   "status": "open",
+   "exit": "2026-12-11",
+   "pick_return": -0.0031180285115245767,
+   "pool_return": -0.0033512302198249054,
+   "spy_return": -0.005389080612637764,
+   "edge": 0.0002332017083003287,
+   "edge_per_week": 5.8300427075082175e-05,
+   "edge_per_week_net": -0.00019169957292491783,
+   "vs_spy": 0.0022710521011131877,
+   "pick_returns": {
+    "AES": 0.0010060592539413715,
+    "EG": -0.006769964904259851,
+    "VTRS": -0.0035901798842552513
+   },
+   "first_week_edge": 0.0002332017083003287
+  }
+ ]
+}
