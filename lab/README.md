@@ -4036,3 +4036,43 @@ anything shows, it is at 20 sessions after down-triggers.
 
     python lab/pass36_runoff.py
     python lab/pass36_runoff.py smoke
+
+## Pass 36 A results -- no runoff to buy among large-cap neighbours; after a crash the neighbours keep slipping, a lead and not a pass
+
+2007-01-03 .. 2026-10-15, 503 names. 1,985 up-triggers and 2,040
+down-triggers (378 had no neighbour to score); about 15,000 unpriced links
+and 2,300 priced ones. Monthly clusters, 227 to 230 months.
+
+| Trigger | Sessions | Unpriced neighbours vs sector (t) | Halves | vs their own ordinary (t) | Verdict |
+|---|---|---|---|---|---|
+| up | 5 | +0.05% (+0.66) | +0.09% / +0.01% | +0.00% (+0.06) | fail |
+| up | 20 | -0.02% (-0.12) | -0.13% / +0.09% | +0.00% (+0.02) | fail |
+| down | 5 | -0.15% (-1.51) | -0.15% / -0.14% | -0.11% (-1.11) | fail |
+| down | 20 | **-0.37% (-2.31)** | -0.23% / -0.50% | -0.30% (-1.67) | a lead |
+
+- **The idea as stated fails.** After a stock screams upward, the
+  sub-industry neighbours that had not moved do nothing over the next week or
+  the next month: +0.05% and -0.02% against the rest of the sector. There is
+  no runoff to buy.
+- **The other direction is a lead.** After a stock collapses, the neighbours
+  that had not moved slip a further 0.37% over 20 sessions against their
+  sector (t -2.31, same sign in both halves, -0.48% with t -2.37 in
+  2017-2026). It does not reach the registered 2.5, and against the names' own
+  ordinary excess it is t -1.67. It is on the selling side: for a long-only
+  book it is a reason not to buy the neighbour of a fresh collapse, not a
+  trade.
+- **The screaming stock itself** does not keep going either way: +0.22% and
+  +0.35% after an up day (t 1.36 and 1.17), -0.21% and -0.13% after a down day
+  (t -1.10, -0.49). The neighbours that *did* move with it show nothing.
+- **The prediction held:** nothing at 5 sessions, the only thing showing at
+  20 sessions after down-triggers.
+
+**Reading.** Large-cap sub-industry neighbours are priced by the next open,
+as expected. This says nothing about suppliers, customers or small names,
+which is where the idea would live if it lives anywhere; that half is forward
+only and stays a draft with the owner. If it is built, this pass argues for
+two changes to the draft: score down-triggers as "avoid" signals as well as
+up-triggers as buys, and expect the up side to need names well under the S&P
+500 in size.
+
+Result file: `lab/results/pass36_runoff.json`.
