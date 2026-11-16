@@ -4,6 +4,22 @@
 
 ## Entries
 
+### Week of 2026-11-16
+
+Booked: ALL 21.0% / TDG 19.1% / COST 18.4% / AES 13.0% / FAST 11.2% (17.3% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags, 10Y > 5.00% new and CPI carried; over the 80% cap minimum, so no raise, no trigger block, no promotion; four sector lines, XLF 21.0% / XLI 30.3% / XLP 18.4% / XLU 13.0%; the book is the corrected-input run's, see shadow-book.md). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| PEP | 71 | 67.7 | Her #2 -- not booked by the corrected consensus (her vote weight 31.8% after last week's 0-for-2; it was the fifth name at 11.7% in the first run on stale weights, Shadow S). $145.44, +2.9% on the week and +10.6% in four, 8.8% over its 50D, on its 200D, RSI 66.3, 18.5x trailing / 17.2x forward, 3.98% yield with a 94% payout; over its mean target (wiki/consumer-staples.md). Excluded by ranking, not by rule |
+| MDLZ | 70 | 61.8 | Her #3 -- not booked by consensus. $67.54, +2.3% on the week, a 52-week closing high (wiki/consumer-staples.md), RSI 64.0, 21.6x / 20.4x forward, 2.98% yield, payout over 100% in the cache. Excluded by ranking |
+| WMT | n/a | n/a | `[sanity] DROP` -- earnings_proximity (earnings 2026-11-19, 4 trading days out), passed over at ranking by the earnings blackout; her next-best name was proposed. $128.09, RSI 67.9, 46.9x / 40.1x forward |
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): **TROW** (Cecil #3, score 89, conf 71.9) not booked by consensus -- $108.93, 10.95x / 10.85x forward, 4.79% yield 36 bps under the 10-year; the swap in Shadow A; **JNJ** (Marky #3, score 100, conf 71.7) not booked by consensus -- $285.75, a two-year high and over its mean target (wiki/healthcare.md), RSI 65.6; **Rule 1 by the number on the signal day (Friday): 84% of 20-day volume, 86% trimmed; the bar closed above its open -- a fail on the ratio, a pass on the new sign clause.**
+
+counterfactual: to be computed (Monday 2026-11-23, date-pinned Mon 2026-11-16 close -> Fri 2026-11-20 close; PEP / MDLZ / WMT each and equal-weighted, and TROW / JNJ each, vs the official booked week).
+
+---
+
 ### Week of 2026-11-09
 
 Booked: ALL 21.2% / NEE 19.5% / UPS 18.4% / PGR 12.8% / D 11.9% (16.2% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags and the Canary ELEVATED; the book landed over the 80% cap minimum, so no raise, no redistribution, no trigger block, no promotion; three sector lines, XLF 34.0% / XLU 31.4% / XLI 18.4%, shadow-book.md). Ophelia's rejected candidates:
