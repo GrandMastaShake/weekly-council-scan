@@ -1,0 +1,99 @@
+week: '2026-11-16'
+status: open
+positions:
+- ticker: ALL
+  weight: 0.21
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 270.0
+  entry_date: '2026-11-16'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 256.5
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: TDG
+  weight: 0.191
+  sponsor: Marky
+  thesis: ''
+  entry_price: 1218.56005859375
+  entry_date: '2026-11-16'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 1157.63
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: COST
+  weight: 0.184
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 1110.4599609375
+  entry_date: '2026-11-16'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 1054.94
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: AES
+  weight: 0.13
+  sponsor: Cecil
+  thesis: ''
+  entry_price: 14.90999984741211
+  entry_date: '2026-11-16'
+  entry_price_source: open
+  tier: SPEC
+  stop_pct: null
+  stop_loss: null
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: FAST
+  weight: 0.11199999999999999
+  sponsor: Marky
+  thesis: ''
+  entry_price: 55.27000045776367
+  entry_date: '2026-11-16'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 52.51
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 749.6599731445312
+spy_entry_source: open
+vix_at_entry: 19.3
+fed_stance: Tightening. The FOMC held 3.75-4.00% on 2026-10-28 by 10-2 with two dissents
+  for a hike, after the +25bp hike of 2026-09-16; October core CPI ran +0.3% (a third
+  straight hot core, Tue Nov 10), December hike odds went to about 88-89%, and Waller
+  said the Fed "ought to" hike in December (macro/facts.json policy.fed_stance = "Hike",
+  policy.next_macro_gate; wiki/economic-calendar.md Regime Risk Flags). Chair Warsh
+  speaks today at 12:00, his first remarks since the CPI print.
+total_weight: 0.827
+cash_weight: 0.17300000000000004
