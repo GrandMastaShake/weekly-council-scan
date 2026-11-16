@@ -3799,3 +3799,122 @@ wiring, and asking each desk to rank its whole list with probabilities, change
 the live prompts and wait on the owner.
 
     python lab/pass33_attribution.py
+
+## Pass 32 results -- the -5% stop costs return like cash and trims the tail better than cash; it passes the registered rule on the tail clause only
+
+1,037 weeks (2007-01-01 .. 2026-11-09), 200 random fives a week, 503 names
+with bars (352 eligible in an average week), about 365,000 name-weeks.
+
+| Arm | Mean / wk | vs plain (t) | Weekly SD | Worst 5% of weeks | Worst week | Fires | D_ret (t) | D_tail | Registered verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| plain | +0.267% | | 2.98% | -6.57% | -29.0% | | | | |
+| -3% | +0.172% | -0.095% (-2.40) | 2.21% | -3.23% | -10.7% | 33.3% | -0.026% (-0.94) | +1.63% | earns its place |
+| **-5% (enforced)** | **+0.209%** | **-0.058% (-2.10)** | 2.56% | -4.66% | -11.4% | 15.6% | -0.020% (-0.89) | +0.98% | **earns its place** |
+| -8% | +0.233% | -0.034% (-2.22) | 2.80% | -5.82% | -11.8% | 5.7% | -0.018% (-1.27) | +0.34% | a cash dial |
+| -10% | +0.238% | -0.029% (-2.66) | 2.88% | -6.21% | -13.4% | 3.2% | -0.020% (-1.91) | +0.13% | a cash dial |
+| 1.5 SD | +0.244% | -0.023% (-1.73) | 2.87% | -5.94% | -23.7% | 11.1% | -0.013% (-1.03) | +0.39% | a cash dial |
+| 2.0 SD | +0.249% | -0.018% (-2.05) | 2.93% | -6.30% | -25.8% | 5.3% | -0.013% (-1.59) | +0.16% | a cash dial |
+
+- **Every stop lowers the raw return.** The -5% rule gives up 0.058% a week
+  against holding (t -2.10), about three points a year, on random names. It
+  fires on 15.6% of name-weeks, 13% of those at a gap open, and 54% of the
+  stopped names close Friday above their fill.
+- **Against cash it is a wash on return.** Held at the exposure that gives the
+  same weekly SD (0.86), the plain book earns 0.020% a week more than the -5%
+  book (t -0.89; first half -0.044%, second half +0.004%, so the sign does not
+  even hold). The stop is not worse than holding 14% less.
+- **Against cash it is better on the tail.** The worst 5% of weeks average
+  -4.66% with the stop and -5.64% for the cash-matched plain book, 17%
+  shallower, and the worst single week is -11.4% against -29.0%. That is the
+  clause it passes on: tail improvement of more than a tenth with D_ret's t
+  above -2.
+- **Where it pays and costs.** Weeks SPY rose: -0.249% a week. Weeks SPY fell:
+  +0.197%. September 2008 to March 2009: +0.092% a week.
+- **Fixed against volatility-scaled.** The two volatility stops cost the least
+  return and protect the least: their worst weeks (-23.7%, -25.8%) are close
+  to the plain book's. A fixed level is what cuts the deep week. The -3% stop
+  trims the tail most and costs the most, firing on a third of name-weeks.
+- **With a 0.10% slip on level fills:** -5% is -0.072% a week against plain,
+  D_ret -0.034% (t -1.49), same verdict. The -3% stop's D_ret goes to t -2.01.
+- **Six arms, one sample.** No arm's D_ret reaches t -2 before slippage; the
+  raw differences against plain are all negative with t between -1.7 and -2.7,
+  which is one finding (stops cost raw return), not six.
+
+**Reading.** On random large caps the enforced stop is insurance with a fair
+premium: it costs about what the equivalent cash would and buys a shallower
+bad week than cash does. It does not add return and nothing here says it
+should be expected to. Two things this pass cannot settle: the missing
+delisted names (which should flatter the plain hold), and Yahoo's daily Lows
+over twenty years, where a bad tick fires a stop that never traded (which
+counts against the stop). And it is random names: the Council's own record
+is still the 37 CORE position-weeks in exit-shadow.md.
+
+**Erratum to the registration:** the 2008-09-01..2009-03-31 window holds 31
+Mondays, not 37.
+
+Result file: `lab/results/pass32_stop_random.json`.
+
+## Pass 33 results -- the gap is in the names, not the exposure; against a dartboard the book is ordinary
+
+16 closed weeks (2026-07-20 .. 2026-11-09). Book -9.58% against SPY -2.86%
+compounded; the weekly alphas sum to -7.05 points.
+
+**A. Regression.** Book on SPY: beta 0.21 (se 0.32), alpha -0.58% a week
+(se 0.46), R squared 0.03. Invested part alone: beta 0.32 (se 0.42), alpha
+-0.70% a week (se 0.60). Mean invested weight 71%. The book barely moved with
+SPY; with sixteen points the alpha is 1.3 standard errors from zero.
+
+**B. Attribution** (sums over the sixteen weeks, points of alpha):
+
+| Term | Sum | Mean / wk (t) | Weeks SPY rose | Weeks SPY fell |
+|---|---|---|---|---|
+| cash | +1.10 | +0.07% (0.89) | -1.39 | +2.49 |
+| beta | +2.98 | +0.19% (1.03) | -2.24 | +5.22 |
+| sector | +1.55 | +0.10% (0.31) | -1.53 | +3.08 |
+| **selection** | **-12.67** | **-0.79% (-1.56)** | -6.46 | -6.21 |
+| booking | -0.01 | | | |
+| **alpha** | **-7.05** | | | |
+
+- **Exposure helped.** Cash and low beta together added about four points,
+  because SPY fell over the period: they cost 3.6 points in rising weeks and
+  gave back 7.7 in falling ones. Sector calls added about 1.5.
+- **The names lost it.** Selection inside the sectors is -12.7 points, and it
+  is the same size in rising and falling weeks, so it is not an exposure
+  effect in disguise. It is concentrated: four weeks (2026-08-03 -5.87,
+  2026-10-12 -4.25, 2026-08-17 -2.52, 2026-07-20 -2.23) carry more than the
+  whole sum. Weekly t -1.56: large, not established.
+- **Betas in this stretch are unusual** and the split between the beta and
+  sector terms leans on them: over the trailing year XLK ran at 1.6 to SPY,
+  XLF 0.6, XLI 0.65, staples and utilities near zero or below, energy -0.8.
+  The names' weighted trailing beta averaged 0.42. No name lacked the history
+  for a beta. SYM and ZS were mapped to a sector by hand.
+
+| Sponsor | Picks | Mean trailing beta | vs SPY per pick (t) | Sector term per pick (t) | Selection per pick (t) | Selection, summed |
+|---|---|---|---|---|---|---|
+| Cecil | 27 | 0.28 | +0.24% (0.35) | +0.13% (0.41) | -0.28% (-0.33) | -2.65 |
+| Marky | 21 | 0.17 | -0.16% (-0.18) | +0.64% (1.55) | -1.16% (-1.34) | -4.97 |
+| Ophelia | 18 | 0.89 | -2.33% (-1.63) | -0.50% (-0.90) | -1.81% (-1.80) | -5.05 |
+
+No sponsor's selection reaches |t| 2, so by the registration these are
+descriptions. Ophelia is the nearest, and hers is the only sector term that
+is negative; Marky's sectors were right and his names inside them were not.
+
+**C. Dartboard.** The official book's mean percentile among 2,000 random
+books at its own weights and cash: 44th against the lab's frozen universe
+(z -0.84), 46th sector-matched (z -0.49). Mean weekly return: book -0.61%,
+frozen dartboard +0.17%, sector-matched +0.15%. The percentiles sit near the
+middle while the means sit far apart because a few weeks were at the very
+bottom (2nd, 2nd, 3rd percentile) and the rest were unremarkable.
+
+**Reading.** The web scan's guess that the gap was cash and low beta is not
+what the record shows: exposure was a net help over a falling stretch, and
+the shortfall is stock selection inside the sectors, mostly in four weeks.
+Against random books the Council is indistinguishable from a dartboard, which
+is also not evidence of a selection problem that will persist. Sixteen weeks
+cannot separate a bad picker from four bad weeks.
+
+Not done here, and waiting on the owner because they change live prompts:
+carrying the dartboard percentile forward each Monday, and asking each desk to
+rank its whole candidate list with probabilities.
+
+Result file: `lab/results/pass33_attribution.json`.
