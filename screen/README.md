@@ -28,6 +28,23 @@ names are excluded; biotech is flagged.
   or when prices cover less than half of it. A missing day means the
   sources did not answer, not a quiet market.
 
+## Where the listing comes from
+
+- Nasdaq's listing API stopped answering the GitHub runner on 2026-11-10,
+  and every run from that evening failed on it. Since 2026-11-12 the
+  script reads the universe (cap, price, volume, sector, industry) from the
+  first source it has a key for, in the repository's Actions secrets:
+  1. `FINVIZ_API_KEY`: the owner's Finviz Elite screener export (the token
+     under API and Exports in the Finviz account), filtered to stocks over
+     $300M and over $3.
+  2. `FMP_API_KEY`: Financial Modeling Prep's company screener.
+  3. Neither: Nasdaq's listing as before, so a run by hand on a machine
+     Nasdaq still answers needs no key.
+- Finviz and FMP name sectors and industries their own way ("Healthcare",
+  "Banks - Regional", "Drug Manufacturers - ..."), so a report from them
+  reads a little differently from a Nasdaq one; the BIOTECH flag also
+  catches "Drug Manufacturers" for that reason.
+
 ## Where to see it
 
 - The run page on GitHub (Actions, "Butterfly Net") shows the day's hits as
