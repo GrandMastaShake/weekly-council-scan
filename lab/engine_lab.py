@@ -429,7 +429,7 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
             stock_data[t] = {
                 "context": generate_deterministic_context(t, weekly_returns[t], F),
                 "pe": None, "sector": get_sector(t), "fundamentals": None,
-                "realized_vol": rv, "max_drawdown": mdd,
+                "realized_vol": rv, "max_drawdown": mdd, "history_weeks": len(cache[t]),
                 "earnings_date": nxt,
                 "earnings_trading_days": _business_days_between(F, nxt) if nxt else None,
             }

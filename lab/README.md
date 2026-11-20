@@ -4212,3 +4212,130 @@ with the drift sleeve.
 
     python lab/forward_slow.py          # log this Monday if it is not logged, score, rewrite SLOW.md
     python lab/forward_slow.py score    # rescore only
+
+## Pass 37 -- the pinned-price screen: pass over a name whose price is not being set by the business (registered 2026-11-20 before any run)
+
+The owner asked for this on 2026-11-20. Unlike Passes 34 to 36 it changes
+production, so it arrives as a pull request; nothing is live until he merges.
+
+**The defect.** AES has closed between $14.80 and $15.05 on every session
+since at least 2026-09-21, which is how a stock under a pending cash offer
+trades (the terms are not sourced here). Cecil's engine ranked it second on
+2026-11-16 with a score of 89: near-full value points from a trailing P/E of
+6, and near-full safety points because a pinned price has almost no
+volatility and no drawdown. He proposed it in four reports (08-31, 09-14,
+10-19, 11-16) and the Council booked it twice (10-19 and 11-16, about 13% of
+the book each time). It earns nothing either way: hidden cash, inside a book
+that reports itself 83% invested. No gate catches it.
+
+**The rule (fixed).** A name is *pinned* when its weekly history holds at
+least 8 bars and the annualized volatility of its weekly returns (the number
+Cecil's safety leg already uses, `realized_vol`) is under 5%. All three
+engines pass over a pinned name at ranking and propose their next-best name,
+exactly as the earnings blackout does, and the scan logs it under the gate
+`pinned-price`. A name with no history count or no volatility is never
+excluded.
+
+**How the number was chosen, plainly.** After seeing the case. On the frozen
+S&P 500 list on 2026-11-20, two names stood apart on 60-session daily
+volatility: TECH at 1.9% and AES at 2.6% a year; the next quietest was 13%.
+5% sits in that gap. That is a threshold fitted to two names, so this pass
+does not ask whether it catches them. It asks whether it does harm anywhere
+else.
+
+**Measurement A, false positives over history.** The frozen S&P 500 list,
+every Monday from 2007-01-08, the rule computed on the 13 weeks before each
+Monday as production computes it. Reported: flagged name-weeks, their share
+of all name-weeks, the distinct names with their spans, and the median
+absolute return of flagged names over the following week beside the same
+median for all names. The list is today's members, so targets that were
+bought and delisted are absent: this measures wrong flags on live companies,
+not how many real deals the rule would have caught.
+- *Harmless* if the flagged share is under 0.5% of name-weeks **and** the
+  flagged names' median absolute next-week return is under half of all
+  names'. Otherwise the rule is catching ordinary quiet stocks and fails.
+
+**Measurement B, the Council weeks.** The production replay (`lab.run`, the
+live universe) over every Council week, with the screen on and off (off is
+the threshold set to zero). Reported: the weeks whose books differ, the
+names passed over, and the change in mean weekly alpha. Never decisive: a
+handful of weeks.
+
+**Predictions.** (1) A: a flagged share under 0.05%, most of it a few
+names in long runs. (2) B: books differ in two to five weeks, every one a
+week AES ranked in Cecil's three, and the mean alpha moves by less than
+0.15% a week either way. (3) The screen will not improve returns in any way
+the record can show; its case is that the book's stated exposure is true.
+
+**What it changes downstream, if merged.** `production` on the forward page
+is today's code replayed, so its past weeks move with this. The slow book
+(Pass 35) and Cecil-solo take what the engine returns, so their picks change
+from the first Monday after the merge; rows already in the slow ledger are
+not touched, and its first cohort keeps AES to 2026-12-11. Reruns of earlier
+passes can differ in any week a pinned name ranked in an engine's three.
+
+**Not covered.** A deal announced within the last eight weeks, a stock-for-
+stock deal (the target moves with the buyer), and a halted name. This is a
+tape test for one failure, not a merger feed.
+
+    python lab/pass37_pinned.py          # both measurements
+    python lab/pass37_pinned.py smoke    # plumbing: 2024 on, 60 names, last four Council weeks
+
+## Pass 37 results -- harmless by the registered test; and the replay had AES in the book far more often than the Council did
+
+Run 2026-11-20, `lab/results/pass37_pinned.json`.
+
+**A, false positives: harmless.** 1,036 Mondays, 503 names, 475,103
+name-weeks. The rule flags 226 of them, **0.048%** (the line was 0.5%), on
+32 names. The flagged names' median absolute move over the next week is
+**0.39% against 2.16%** for all names, 18% of it (the line was half).
+
+What the 226 flags are, read from the spans:
+
+| Kind | Names | Name-weeks |
+|---|---|---|
+| A price that really was pinned | VRT 2018-11 to 2019-12 (57), NXPI 2017-06 to 2018-02 (34), AES 2026-06 on (21), TECH 2026-09 on (7) | 119 |
+| A flat or stale series in the data, volatility 0.0% | AMCR (27), SW (13), FERG (7) | 47 |
+| An ordinary quiet stock in a very calm market | 25 names, none for more than 14 weeks: KMB, JNJ, UPS, CB, MCD, KO and others, mostly 2012, 2014 and 2017 | 60 |
+
+The last row is the rule's real cost: 60 name-weeks in twenty years, 0.013%
+of the total, when a staple or a utility went through a quarter so calm its
+weekly volatility dipped under 5%. Those names would have been passed over
+for a week or two. The kinds are my reading of the spans; they are not
+sourced deal by deal.
+
+**B, the Council weeks: prediction 2 was wrong.** 17 weeks. The production
+replay's book differs in **14** of them, not two to five. Today's engine
+code, replayed, ranks AES in Cecil's three in 13 of the 17 weeks and books
+it; the live Council booked it twice. The live book is the engines plus
+the LLM layer on that week's inputs, and the replay is today's code on
+the lab's inputs, so the two were never the same book.
+The names that take its place: PRU five times, ALL three, and PFE, CI, COST
+and UPS once each.
+
+| | Screen off | Screen on | Change |
+|---|---|---|---|
+| Mean weekly alpha, 17 weeks | -0.21% | -0.25% | -0.04% |
+
+Inside the registered +/-0.15%, and it says nothing either way: in 13
+weeks AES left the book: seven came out better, five worse, and in one
+(2026-10-26) nothing replaced it and the alpha moved 0.02.
+
+**Scored against the predictions.** (1) Held, barely: 0.048% against a
+predicted "under 0.05%". (2) Missed on the count (14 weeks against two to
+five); held on the size. (3) Held: nothing here shows better returns.
+
+**What it means.**
+1. The screen does what it was built for and costs almost nothing. The
+   case for it is unchanged from the registration: the book's stated
+   exposure should be true.
+2. The `production` row on the forward page has carried a dead position in
+   most of its weeks. After the merge that row is replayed without it, so
+   its history moves; the same holds for every design built on production.
+3. Cecil's engine has wanted AES since June. That is the more useful
+   finding: a value screen with a volatility-rewarding safety leg will
+   always reach for whatever is not moving, and a pinned price is only the
+   extreme case. The 60 quiet-stock flags are the same pull seen from the
+   other side. Not tested here.
+4. Not covered, as registered: a deal younger than eight weeks, stock
+   deals, halts.

@@ -671,6 +671,20 @@ def main() -> None:
     for name, proposal in (("Cecil", cecil_proposal), ("Marky", marky_proposal),
                            ("Ophelia", ophelia_proposal)):
         for s in proposal.get("earnings_skipped") or []:
+            if s.get("pinned"):
+                # Pinned price (2026-11-20, lab Pass 37): a name whose weekly
+                # volatility is near zero is trading on an offer, not on the
+                # business. Passed over the same way, logged under its own gate.
+                blackout.append({
+                    "date": date,
+                    "gate": "pinned-price",
+                    "engine": name,
+                    "ticker": s["ticker"],
+                    "reason": (f"pinned_price (weekly volatility {s['realized_vol'] * 100:.1f}% a year "
+                               f"over {s['history_weeks']} weeks) -- "
+                               f"passed over at ranking; next-best name proposed"),
+                })
+                continue
             blackout.append({
                 "date": date,
                 "gate": "earnings-blackout",

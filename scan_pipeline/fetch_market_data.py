@@ -506,6 +506,7 @@ class MarketDataFetcher:
                 "fundamentals": fundamentals,
                 "realized_vol": realized_vol,
                 "max_drawdown": max_drawdown,
+                "history_weeks": len(hist),
                 "earnings_date": earnings_date,
                 "earnings_trading_days": earnings_tdays,
             }
