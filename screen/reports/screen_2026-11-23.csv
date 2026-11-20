@@ -1,0 +1,12 @@
+tier,new,ticker,price,cap_b,macd,exit_40d_low,exit_dist,to_2y_high,overhead,ceilings,base_25d,above_50d,chan_pct_yr,z,off_hi,sector,industry,flags
+"A","","CAKE","107.94","5.6","cross 3d","104.49","-3.2","11.2","9.2","1","13.5","n","173","-1.48","-10.1","Consumer Discretionary","Restaurants",""
+"B","","WKC","36.45","1.86","cross 1d","34.79","-4.6","10.4","6.8","2","9.2","Y","28","-0.53","-9.4","Energy","Oil Refining/Marketing",""
+"B","NEW","DHT","21.58","3.46","0.39% away, rising","20.48","-5.1","23.2","7.8","2","22.5","n","121","-1.81","-18.8","Consumer Discretionary","Marine Transportation",""
+"B","","DBX","33.91","7.56","0.21% away, rising","31.92","-5.9","11.6","11.6","2","16.8","n","87","-1.61","-10.4","Technology","Computer Software: Prepackaged Sof",""
+"B","","TNK","85.42","2.99","0.30% away, rising","81.97","-4.0","26.9","13.0","2","23.5","n","121","-2.15","-21.2","Consumer Discretionary","Marine Transportation",""
+"B","","S","22.91","8.35","cross 1d","21.15","-7.7","25.2","14.6","3","21.6","n","169","-1.47","-12.8","Technology","Computer Software: Prepackaged Sof",""
+"B","","BWLP","21.6","3.46","0.37% away, rising","21.46","-0.6","21.9","16.4","2","21.4","n","72","-2.12","-17.9","Consumer Discretionary","Transportation Services",""
+"B","","NPK","140.73","1.02","0.27% away, rising","136.88","-2.7","11.4","16.8","3","10.9","n","55","-1.64","-10.2","Industrials","Ordnance And Accessories",""
+"B","","CHRD","136.48","7.25","cross 5d","132.33","-3.0","15.9","21.4","3","19.5","n","45","-1.51","-13.7","Energy","Oil & Gas Production",""
+"B","","VOR","19.19","1.14","0.42% away, rising","17.83","-7.1","178.3","41.7","8","17.3","n","55","-0.78","-23.5","Health Care","Biotechnology: Biological Products","BIOTECH"
+"C","","MG","20.19","0.64","0.23% away, rising","20.14","-0.2","7.0","6.3","1","7.2","n","67","-0.54","-6.5","Consumer Discretionary","Military/Government/Technical",""
