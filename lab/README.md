@@ -4212,3 +4212,71 @@ with the drift sleeve.
 
     python lab/forward_slow.py          # log this Monday if it is not logged, score, rewrite SLOW.md
     python lab/forward_slow.py score    # rescore only
+
+## Pass 37 -- the pinned-price screen: pass over a name whose price is not being set by the business (registered 2026-11-20 before any run)
+
+The owner asked for this on 2026-11-20. Unlike Passes 34 to 36 it changes
+production, so it arrives as a pull request; nothing is live until he merges.
+
+**The defect.** AES has closed between $14.80 and $15.05 on every session
+since at least 2026-09-21, which is how a stock under a pending cash offer
+trades (the terms are not sourced here). Cecil's engine ranked it second on
+2026-11-16 with a score of 89: near-full value points from a trailing P/E of
+6, and near-full safety points because a pinned price has almost no
+volatility and no drawdown. He proposed it in four reports (08-31, 09-14,
+10-19, 11-16) and the Council booked it twice (10-19 and 11-16, about 13% of
+the book each time). It earns nothing either way: hidden cash, inside a book
+that reports itself 83% invested. No gate catches it.
+
+**The rule (fixed).** A name is *pinned* when its weekly history holds at
+least 8 bars and the annualized volatility of its weekly returns (the number
+Cecil's safety leg already uses, `realized_vol`) is under 5%. All three
+engines pass over a pinned name at ranking and propose their next-best name,
+exactly as the earnings blackout does, and the scan logs it under the gate
+`pinned-price`. A name with no history count or no volatility is never
+excluded.
+
+**How the number was chosen, plainly.** After seeing the case. On the frozen
+S&P 500 list on 2026-11-20, two names stood apart on 60-session daily
+volatility: TECH at 1.9% and AES at 2.6% a year; the next quietest was 13%.
+5% sits in that gap. That is a threshold fitted to two names, so this pass
+does not ask whether it catches them. It asks whether it does harm anywhere
+else.
+
+**Measurement A, false positives over history.** The frozen S&P 500 list,
+every Monday from 2007-01-08, the rule computed on the 13 weeks before each
+Monday as production computes it. Reported: flagged name-weeks, their share
+of all name-weeks, the distinct names with their spans, and the median
+absolute return of flagged names over the following week beside the same
+median for all names. The list is today's members, so targets that were
+bought and delisted are absent: this measures wrong flags on live companies,
+not how many real deals the rule would have caught.
+- *Harmless* if the flagged share is under 0.5% of name-weeks **and** the
+  flagged names' median absolute next-week return is under half of all
+  names'. Otherwise the rule is catching ordinary quiet stocks and fails.
+
+**Measurement B, the Council weeks.** The production replay (`lab.run`, the
+live universe) over every Council week, with the screen on and off (off is
+the threshold set to zero). Reported: the weeks whose books differ, the
+names passed over, and the change in mean weekly alpha. Never decisive: a
+handful of weeks.
+
+**Predictions.** (1) A: a flagged share under 0.05%, most of it a few
+names in long runs. (2) B: books differ in two to five weeks, every one a
+week AES ranked in Cecil's three, and the mean alpha moves by less than
+0.15% a week either way. (3) The screen will not improve returns in any way
+the record can show; its case is that the book's stated exposure is true.
+
+**What it changes downstream, if merged.** `production` on the forward page
+is today's code replayed, so its past weeks move with this. The slow book
+(Pass 35) and Cecil-solo take what the engine returns, so their picks change
+from the first Monday after the merge; rows already in the slow ledger are
+not touched, and its first cohort keeps AES to 2026-12-11. Reruns of earlier
+passes can differ in any week a pinned name ranked in an engine's three.
+
+**Not covered.** A deal announced within the last eight weeks, a stock-for-
+stock deal (the target moves with the buyer), and a halted name. This is a
+tape test for one failure, not a merger feed.
+
+    python lab/pass37_pinned.py          # both measurements
+    python lab/pass37_pinned.py smoke    # plumbing: 2024 on, 60 names, last four Council weeks
