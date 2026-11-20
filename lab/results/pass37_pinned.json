@@ -1,0 +1,546 @@
+{
+ "generated": "2026-11-20",
+ "A": {
+  "mondays": 1036,
+  "names": 503,
+  "name_weeks": 475103,
+  "flagged_name_weeks": 226,
+  "flagged_share": 0.00047568632486008297,
+  "distinct_flagged": 32,
+  "by_name": {
+   "KMB": {
+    "weeks": 14,
+    "first": "2007-01-08",
+    "last": "2011-04-25",
+    "min_vol": 0.0349406953485493,
+    "max_abs_next_week": 0.02466227884066119
+   },
+   "WFC": {
+    "weeks": 1,
+    "first": "2007-02-26",
+    "last": "2007-02-26",
+    "min_vol": 0.04700666018711109,
+    "max_abs_next_week": 0.03664363411327465
+   },
+   "SW": {
+    "weeks": 13,
+    "first": "2009-08-17",
+    "last": "2016-10-03",
+    "min_vol": 0.0,
+    "max_abs_next_week": 0.4210523880287136
+   },
+   "EVRG": {
+    "weeks": 1,
+    "first": "2011-02-14",
+    "last": "2011-02-14",
+    "min_vol": 0.04973227056668051,
+    "max_abs_next_week": 0.010384547664066046
+   },
+   "JNJ": {
+    "weeks": 6,
+    "first": "2012-03-26",
+    "last": "2013-05-13",
+    "min_vol": 0.04644128141929737,
+    "max_abs_next_week": 0.029569787278513004
+   },
+   "UPS": {
+    "weeks": 4,
+    "first": "2012-04-02",
+    "last": "2012-04-23",
+    "min_vol": 0.03949545294926552,
+    "max_abs_next_week": 0.020234739547804192
+   },
+   "MO": {
+    "weeks": 1,
+    "first": "2012-05-07",
+    "last": "2012-05-07",
+    "min_vol": 0.042373218304175723,
+    "max_abs_next_week": 0.019129830902721023
+   },
+   "CL": {
+    "weeks": 2,
+    "first": "2012-05-21",
+    "last": "2012-05-28",
+    "min_vol": 0.04931484291921735,
+    "max_abs_next_week": 0.02702684941098288
+   },
+   "FERG": {
+    "weeks": 7,
+    "first": "2012-05-28",
+    "last": "2012-07-09",
+    "min_vol": 0.0,
+    "max_abs_next_week": 0.06405216501603528
+   },
+   "GIS": {
+    "weeks": 2,
+    "first": "2012-09-03",
+    "last": "2012-09-10",
+    "min_vol": 0.04628650624180404,
+    "max_abs_next_week": 0.010935712049138568
+   },
+   "AMCR": {
+    "weeks": 27,
+    "first": "2012-11-19",
+    "last": "2016-12-05",
+    "min_vol": 0.0,
+    "max_abs_next_week": 0.08737860435312661
+   },
+   "WELL": {
+    "weeks": 1,
+    "first": "2013-03-25",
+    "last": "2013-03-25",
+    "min_vol": 0.0473218045414943,
+    "max_abs_next_week": 0.023820540729636352
+   },
+   "DTE": {
+    "weeks": 1,
+    "first": "2013-04-08",
+    "last": "2013-04-08",
+    "min_vol": 0.047766017054693105,
+    "max_abs_next_week": 0.023421676945136527
+   },
+   "PNW": {
+    "weeks": 1,
+    "first": "2013-04-15",
+    "last": "2013-04-15",
+    "min_vol": 0.04800739111437687,
+    "max_abs_next_week": 0.0018550675676394235
+   },
+   "CB": {
+    "weeks": 4,
+    "first": "2014-05-19",
+    "last": "2014-06-09",
+    "min_vol": 0.047284898811670806,
+    "max_abs_next_week": 0.012826495683951666
+   },
+   "NEE": {
+    "weeks": 1,
+    "first": "2014-06-16",
+    "last": "2014-06-16",
+    "min_vol": 0.039258607122642154,
+    "max_abs_next_week": 0.0312502853838168
+   },
+   "SRE": {
+    "weeks": 1,
+    "first": "2014-06-16",
+    "last": "2014-06-16",
+    "min_vol": 0.041660342041992024,
+    "max_abs_next_week": 0.028187427052469127
+   },
+   "TRV": {
+    "weeks": 1,
+    "first": "2014-06-16",
+    "last": "2014-06-16",
+    "min_vol": 0.046744571884945706,
+    "max_abs_next_week": 0.006511665385279364
+   },
+   "PSA": {
+    "weeks": 2,
+    "first": "2014-08-04",
+    "last": "2014-08-11",
+    "min_vol": 0.04770974445620102,
+    "max_abs_next_week": 0.012672224643031305
+   },
+   "RSG": {
+    "weeks": 1,
+    "first": "2017-02-13",
+    "last": "2017-02-13",
+    "min_vol": 0.040236259687298645,
+    "max_abs_next_week": 0.04597125227230903
+   },
+   "HSY": {
+    "weeks": 1,
+    "first": "2017-03-27",
+    "last": "2017-03-27",
+    "min_vol": 0.04915966839677357,
+    "max_abs_next_week": 0.014768448416733637
+   },
+   "MCD": {
+    "weeks": 4,
+    "first": "2017-04-03",
+    "last": "2017-04-24",
+    "min_vol": 0.03398615105174674,
+    "max_abs_next_week": 0.042386598418983956
+   },
+   "DIS": {
+    "weeks": 2,
+    "first": "2017-04-24",
+    "last": "2017-05-01",
+    "min_vol": 0.04259379746400477,
+    "max_abs_next_week": 0.031144407334208424
+   },
+   "KO": {
+    "weeks": 2,
+    "first": "2017-05-15",
+    "last": "2017-05-22",
+    "min_vol": 0.04471875577576086,
+    "max_abs_next_week": 0.034176446815359585
+   },
+   "NXPI": {
+    "weeks": 34,
+    "first": "2017-06-19",
+    "last": "2018-02-05",
+    "min_vol": 0.03378323928007081,
+    "max_abs_next_week": 0.03145415199135637
+   },
+   "HON": {
+    "weeks": 1,
+    "first": "2017-07-31",
+    "last": "2017-07-31",
+    "min_vol": 0.04585430359351445,
+    "max_abs_next_week": 0.01906571578250471
+   },
+   "BR": {
+    "weeks": 2,
+    "first": "2017-11-13",
+    "last": "2017-11-20",
+    "min_vol": 0.047930787401199076,
+    "max_abs_next_week": 0.010301054828805833
+   },
+   "VRT": {
+    "weeks": 57,
+    "first": "2018-11-12",
+    "last": "2019-12-09",
+    "min_vol": 0.027418812922772946,
+    "max_abs_next_week": 0.05192292812401367
+   },
+   "HRL": {
+    "weeks": 2,
+    "first": "2019-09-30",
+    "last": "2019-10-07",
+    "min_vol": 0.036531351491495535,
+    "max_abs_next_week": 0.05466234045043106
+   },
+   "CME": {
+    "weeks": 2,
+    "first": "2025-03-17",
+    "last": "2025-03-24",
+    "min_vol": 0.04804815473800606,
+    "max_abs_next_week": 0.008656055553764919
+   },
+   "AES": {
+    "weeks": 21,
+    "first": "2026-06-22",
+    "last": "2026-11-09",
+    "min_vol": 0.011137323462147795,
+    "max_abs_next_week": 0.009562825230620575
+   },
+   "TECH": {
+    "weeks": 7,
+    "first": "2026-09-28",
+    "last": "2026-11-09",
+    "min_vol": 0.01185300609023471,
+    "max_abs_next_week": 0.002480008809569223
+   }
+  },
+  "median_abs_next_week_all": 0.021575241538024592,
+  "median_abs_next_week_flagged": 0.003893570724727291,
+  "harmless": true,
+  "threshold": 0.05,
+  "min_weeks": 8
+ },
+ "B": {
+  "weeks": 17,
+  "weeks_differing": [
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-08",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09"
+  ],
+  "mean_alpha_off": -0.0021221065190690737,
+  "mean_alpha_on": -0.002520775605519811,
+  "change": -0.00039866908645073756,
+  "rows": [
+   {
+    "week": "2026-07-20",
+    "spy": -0.010882686821280796,
+    "alpha_off": 0.01696687843651925,
+    "alpha_on": 0.01696687843651925,
+    "invested_off": 1.0,
+    "invested_on": 1.0,
+    "differs": false,
+    "left_book": [],
+    "entered_book": [],
+    "passed_over_pinned": []
+   },
+   {
+    "week": "2026-07-27",
+    "spy": 0.0028460761470363583,
+    "alpha_off": -0.007999365967163372,
+    "alpha_on": -0.007999365967163372,
+    "invested_off": 0.9634,
+    "invested_on": 0.9634,
+    "differs": false,
+    "left_book": [],
+    "entered_book": [],
+    "passed_over_pinned": []
+   },
+   {
+    "week": "2026-08-03",
+    "spy": 0.03178371702279925,
+    "alpha_off": -0.00997236161324849,
+    "alpha_on": -0.00997236161324849,
+    "invested_off": 0.9554,
+    "invested_on": 0.9554,
+    "differs": false,
+    "left_book": [],
+    "entered_book": [],
+    "passed_over_pinned": []
+   },
+   {
+    "week": "2026-08-10",
+    "spy": 0.0048408903064867115,
+    "alpha_off": 0.000640670800860949,
+    "alpha_on": 0.0006964580180770057,
+    "invested_off": 0.9396,
+    "invested_on": 0.9472,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "ALL"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-08-17",
+    "spy": -0.013476288590551944,
+    "alpha_off": -0.003920919228464437,
+    "alpha_on": -0.011971224339712674,
+    "invested_off": 0.9467,
+    "invested_on": 0.9672,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "ALL"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-08-24",
+    "spy": 0.005975555154863921,
+    "alpha_off": -0.016424425871809645,
+    "alpha_on": -0.015328281043135468,
+    "invested_off": 0.9381,
+    "invested_on": 0.9776,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PRU"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-08-31",
+    "spy": 0.0037272254120594983,
+    "alpha_off": -0.008394854799440375,
+    "alpha_on": -0.006552442825011854,
+    "invested_off": 0.9152,
+    "invested_on": 0.9365,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PRU"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-09-08",
+    "spy": -0.006215319343814807,
+    "alpha_off": -0.002508987142846192,
+    "alpha_on": -0.0058083814494381825,
+    "invested_off": 0.9019,
+    "invested_on": 0.914,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PRU"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-09-14",
+    "spy": 0.006036178924970548,
+    "alpha_off": -0.007167956881708652,
+    "alpha_on": -0.010582032953113735,
+    "invested_off": 0.8841,
+    "invested_on": 0.9033,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PRU"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-09-21",
+    "spy": 0.006655759329118993,
+    "alpha_off": -0.005125284477483865,
+    "alpha_on": -0.012027104441264935,
+    "invested_off": 0.9065,
+    "invested_on": 0.9467,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PRU"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-09-28",
+    "spy": 0.0016789732589190809,
+    "alpha_off": -0.027068657015677716,
+    "alpha_on": -0.038855578407673494,
+    "invested_off": 0.9512,
+    "invested_on": 1.0,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "PFE"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-10-05",
+    "spy": 0.011537118651204548,
+    "alpha_off": -0.004146095770351602,
+    "alpha_on": 0.005081919495398608,
+    "invested_off": 0.9172,
+    "invested_on": 0.9775,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "CI"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-10-12",
+    "spy": -0.0199414837472095,
+    "alpha_off": -0.018347586995730372,
+    "alpha_on": -0.010901433725591173,
+    "invested_off": 0.9252,
+    "invested_on": 0.9798,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "ALL"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-10-19",
+    "spy": -0.009462625223781496,
+    "alpha_off": 0.015514121289369796,
+    "alpha_on": 0.017215136014245003,
+    "invested_off": 0.9743,
+    "invested_on": 0.9774,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "COST"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-10-26",
+    "spy": -0.008566781629222642,
+    "alpha_off": 0.017224561546018844,
+    "alpha_on": 0.017444143856147655,
+    "invested_off": 0.9439,
+    "invested_on": 0.7479,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   },
+   {
+    "week": "2026-11-02",
+    "spy": -0.03181254037968373,
+    "alpha_off": 0.04132801096327772,
+    "alpha_on": 0.04128810328627998,
+    "invested_off": 0.9689,
+    "invested_on": 1.0,
+    "differs": true,
+    "left_book": [],
+    "entered_book": [],
+    "passed_over_pinned": []
+   },
+   {
+    "week": "2026-11-09",
+    "spy": 0.016739649175570914,
+    "alpha_off": -0.016673558096296094,
+    "alpha_on": -0.011547617635150914,
+    "invested_off": 0.9521,
+    "invested_on": 1.0,
+    "differs": true,
+    "left_book": [
+     "AES"
+    ],
+    "entered_book": [
+     "UPS"
+    ],
+    "passed_over_pinned": [
+     "AES"
+    ]
+   }
+  ]
+ }
+}
