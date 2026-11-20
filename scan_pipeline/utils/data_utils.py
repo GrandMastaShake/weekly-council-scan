@@ -506,22 +506,49 @@ def earnings_blackout(market_data: Dict, ticker: str) -> Optional[Tuple[Optional
     return stock.get("earnings_date"), etd
 
 
+# No engine proposes a name whose price is not being set by the business: a
+# stock under a pending cash offer trades pinned to the offer. AES closed inside
+# $14.80-$15.05 for two months and Cecil ranked it second on 2026-11-16 (a low
+# P/E, and full safety points for having no volatility); it was booked twice
+# as hidden cash. A name is pinned when its weekly history holds at least
+# PINNED_MIN_WEEKS bars and the annualized volatility of its weekly returns
+# (stockData's realized_vol) is under PINNED_VOL_MAX. Lab Pass 37.
+PINNED_VOL_MAX = 0.05
+PINNED_MIN_WEEKS = 8
+
+
+def pinned_price(market_data: Dict, ticker: str) -> Optional[Tuple[float, int]]:
+    """(realized_vol, history_weeks) when the ticker's price is pinned, else
+    None. A missing volatility or history count never excludes."""
+    stock = (market_data.get("stockData") or {}).get(ticker) or {}
+    vol, weeks = stock.get("realized_vol"), stock.get("history_weeks")
+    if vol is None or weeks is None or weeks < PINNED_MIN_WEEKS or vol >= PINNED_VOL_MAX:
+        return None
+    return vol, weeks
+
+
 def tradeable_picks(sorted_scores: List[dict], market_data: Dict, n: int = 3) -> Tuple[List[dict], List[dict]]:
-    """An engine's ranking with the earnings-blackout names passed over.
+    """An engine's ranking with the earnings-blackout and pinned-price names
+    passed over.
 
     Returns (tradeable, skipped). tradeable is the ranking minus every
-    blackout name, order kept: its first n are the proposal and its
-    neighbours set each pick's margin. skipped lists the blackout names that
-    ranked above the n-th tradeable pick -- the names the engine would have
-    proposed -- for run_scan.py to log. With no earnings data, tradeable is
-    the ranking unchanged.
+    passed-over name, order kept: its first n are the proposal and its
+    neighbours set each pick's margin. skipped lists the passed-over names
+    that ranked above the n-th tradeable pick -- the names the engine would
+    have proposed -- for run_scan.py to log; a pinned name's entry carries
+    "pinned": True. With no earnings data and no history counts, tradeable
+    is the ranking unchanged.
     """
     tradeable: List[dict] = []
     skipped: List[dict] = []
     for s in sorted_scores:
-        hit = earnings_blackout(market_data, s["ticker"])
-        if hit is None:
+        pin = pinned_price(market_data, s["ticker"])
+        hit = None if pin else earnings_blackout(market_data, s["ticker"])
+        if pin is None and hit is None:
             tradeable.append(s)
+        elif len(tradeable) < n and pin is not None:
+            skipped.append({"ticker": s["ticker"], "pinned": True,
+                            "realized_vol": pin[0], "history_weeks": pin[1]})
         elif len(tradeable) < n:
             skipped.append({"ticker": s["ticker"], "earnings_date": hit[0],
                             "earnings_trading_days": hit[1]})
