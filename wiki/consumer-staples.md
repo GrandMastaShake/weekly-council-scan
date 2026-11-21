@@ -2,7 +2,7 @@
 
 > **Sector:** Consumer Staples | **ETF:** Consumer Staples Select Sector SPDR (XLP) | **Expense Ratio:** 0.08%
 >
-> *"XLP rose 2.52% to $92.35, a new 52-week closing high, on the last day of the week. All ten of the top ten rose. Costco, Procter, Coke, Altria, Colgate and Mondelez closed at 52-week highs too. That happened in a week the 10Y went back over 5% and the Fed started talking about hikes, which is not supposed to be a good week for bond proxies. Grocery prices rose 0.4% in October. Costco is now 44 times earnings. I still won't pay it."* — Cecil
+> *"XLP fell 2.05% to $90.46 in a week the index lost 8.56%. That is the job. It made a new closing high Monday at $92.60 and then gave it back, and six up weeks are over. Nine of the top ten fell; Target was the one that rose, on a beat that needed a tariff refund to get there. Philip Morris lost 7.5% and I can't tell you why. Costco is still 44 times earnings and still over its target. Campbell's and General Mills, the cheap ones nobody wanted, were up 4%."* — Cecil
 
 ---
 
@@ -10,21 +10,21 @@
 
 | Metric | Current | 1W Ago | Change |
 |---|---|---|---|
-| Price | $92.35 | $90.08 | **+2.52%**, the sixth straight up week |
-| 52W Range | $74.47 – **$92.35** (closing basis, dividend-adjusted) | $73.58 – $91.94 | **New closing high Friday**; the low end restated by dividend adjustment (Nov 19, 2025 close) |
-| AUM | ~$15.0B (yfinance totalAssets) | ~$15.0B | — |
-| YTD Return | **+21.2%** (price basis) | +18.2% | Ahead of SPY (+11.5%) and XLY (+1.1%) |
-| P/E Ratio | ~24.9 (trailing) | ~24.2 | yfinance |
-| Dividend Yield | ~2.46% (yfinance) | ~2.46% | vs the 5.15% 10Y, **-269bp** of carry (from -240bp) |
-| Beta | ~0.39 (3Y, yfinance) | ~0.39 | — |
+| Price | $90.46 | $92.35 | **-2.05%**; ends six straight up weeks |
+| 52W Range | $74.94 – **$92.60** (closing basis, dividend-adjusted) | $74.47 – $92.35 | **New closing high Monday**; the low end moved as the window rolled |
+| AUM | ~$15.0B (carried; yfinance totalAssets not returned tonight) | ~$15.0B | — |
+| YTD Return | **+18.7%** (price basis) | +21.2% | Ahead of SPY (+2.0%) and XLY (-5.2%) |
+| P/E Ratio | ~24.9 (carried; not returned tonight) | ~24.9 | yfinance |
+| Dividend Yield | ~2.46% (yfinance) | ~2.46% | vs the 4.91% 10Y, **-245bp** of carry (from -269bp) |
+| Beta | ~0.39 (3Y; carried) | ~0.39 | — |
 | Total Holdings | 34 (carried; not re-sourced) | 34 | — |
-| Avg Daily Volume | Friday 18.4M (20D ~19.0M) | — | — |
+| Avg Daily Volume | Friday **34.4M** (20D ~21.0M) | Friday 18.4M | Heaviest day of the week |
 
-Week path: Mon $90.89, Tue $91.03, Wed $91.45, Thu $91.06, **Fri $92.35**. Intraday range **$89.80–$92.35**; Friday closed on its high. The last bar is dated Fri Nov 13; no repair pull was needed. The Nov 6 close matches last week's page.
+Week path: **Mon $92.60**, Tue $91.46, Wed $91.18, **Thu $89.86**, Fri $90.46. Intraday range **$89.29–$93.48**; Monday's $93.48 high took out the Nov 5 print of $93.40. The last bar is dated Fri Nov 20. The Nov 13 close matches last week's page.
 
-**Marky Tape Read:** Full size, half from $81.70 and half from $90.08, and both halves are in the money. The stop was a close under the 20D; the 20D rose to **$89.48** and the low was $89.80, so it was never hit. Friday's close cleared Wednesday's prior high of $91.94 and closed at the top of the day's range. RSI **65.1**, from 59.5. Above: nothing on the closing chart; Nov 5's $93.40 intraday print is the only overhead mark. Below: $91.94, then the 20D.
+**Marky Tape Read:** **Half sold.** The rule was sell half on a close under the 20D. Thursday closed $89.86 against a 20D of $90.14, so the half from $90.08 went at $89.86, a 22-cent loss. The half from $81.70 stays. Friday closed $90.46, back over the 20D ($90.25) by 21 cents, on 34.4M shares. RSI **54.8**, from 65.1. Monday's $93.48 intraday and $92.60 close are the overhead marks now.
 
-**Ophelia Macro Read:** **October CPI rose 0.4%, core 0.3%**, each a tenth hot; **food at home rose 0.4%**, the most since April, with snacks +1.0% and beef +0.9% (BLS via FoodNavigator, Supermarket News, Nov 10). **PPI's annual rate reached 6.5%** (CNBC, Nov 13). Fed officials talked about hiking, and futures fully price at least a quarter point on Dec 9. **The 10Y closed 5.15%** (4.86%). **DXY 103.41** (Fri evening, DX-Y.NYB; 102.30), a 52-week high. Ag futures were quiet: **corn $4.46** (+1.0%), **wheat $5.94** (+0.4%), sugar 18.40¢ (+0.9%), cocoa $5,267 (+2.2%), coffee $2.74 (-2.1%), all Friday bars. **WTI settled $90.83** on Nov 6 (market_state, CLZ26); ~$89 Friday evening (CL=F). VIX **19.30**. Staples rose with a rising 10Y, which breaks the usual bond-proxy pattern; I read it as money leaving the AI-capex names (tech's page covers Nvidia's week).
+**Ophelia Macro Read:** **SPY fell 8.56%** and **VIX closed 35.89** (19.30); XLP fell 2.05%. **The 10Y closed 4.91%** (5.15%), back under 5% Friday, which narrows the carry gap to -245bp. **October retail sales rose 0.2%** (Census, Nov 17), in line. **DXY 103.84** (Fri evening, DX-Y.NYB; 103.41). Ag futures, Friday bars: **corn $4.49** (+0.7%), **wheat $5.93** (flat), **sugar 17.07¢ (-7.3%)**, cocoa $5,294 (+3.4%), coffee $2.69 (-3.6%). Sugar's fall is the largest move and it is down, not a cost spike; no contract roll falls in the week. **WTI settled $88.56** on Nov 13 (market_state, CLZ26); ~$84 Friday evening (CL=F, possibly already January). Last week I read the bid as money leaving AI-capex names. This week that trade lost 12.5% (tech page) and staples lost 2%; the read holds.
 
 ---
 
@@ -32,41 +32,42 @@ Week path: Mon $90.89, Tue $91.03, Wed $91.45, Thu $91.06, **Fri $92.35**. Intra
 
 | Rank | Ticker | Name | Weight | Price | Change (W/W) | Fwd P/E | Yield | Mean Target (Implied) | Signal |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | WMT | Walmart | 11.1% | $128.09 | +2.05% | 39.8 | 0.8% | $130.40 (+1.8%) | ⚡ |
-| 2 | COST | Costco | 9.1% | $1,106.21 | **+5.00%** | 44.2 | 0.5% | $1,073.35 (-3.0%) | ⚠️ |
-| 3 | PG | Procter & Gamble | 7.6% | $169.80 | +2.66% | 23.0 | 2.6% | $174.04 (+2.5%) | 🔥 |
-| 4 | KO | Coca-Cola | 7.4% | $99.25 | **+3.74%** | 28.1 | 2.2% | $98.43 (-0.8%) | 🔥 |
-| 5 | PM | Philip Morris Intl | 6.6% | $198.96 | +0.55% | 22.0 | 3.3% | $212.44 (+6.8%) | ⚡ |
-| 6 | MO | Altria | 4.7% | $78.64 | +3.31% | 13.3 | 5.7% | $73.45 (-6.6%) | 🔥 |
-| 7 | CL | Colgate-Palmolive | 4.4% | $99.67 | +3.22% | 24.3 | 2.2% | $101.70 (+2.0%) | 🔥 |
-| 8 | MDLZ | Mondelez | 4.3% | $67.54 | +2.30% | 20.1 | 3.1% | $70.45 (+4.3%) | 🔥 |
-| 9 | PEP | PepsiCo | 4.1% | $145.44 | +2.90% | 16.9 | 4.2% | $141.59 (-2.6%) | ⚡ |
-| 10 | TGT | Target | 4.0% | $161.45 | +2.64% | 16.9 | 2.9% | $165.94 (+2.8%) | ⚡ |
-| — | KMB | Kimberly-Clark | (outside top 10) | $109.43 | +0.92% | 15.4 | 4.8% | $118.67 (+8.4%) | ⚡ |
-| — | KDP | Keurig Dr Pepper | (outside top 10) | $36.34 | -0.79% | 14.4 | 2.6% | $38.03 (+4.6%) | ⚠️ |
-| — | STZ | Constellation Brands | (outside top 10) | $145.61 | +2.56% | 12.0 | 2.9% | $152.91 (+5.0%) | ⚡ |
-| — | EL | Estée Lauder | (outside top 10) | $111.75 | +1.54% | 27.5 | 1.3% | $115.53 (+3.4%) | ⚡ |
-| — | SYY | Sysco | (outside top 10) | $77.10 | +0.31% | 14.3 | 2.9% | $91.25 (+18.4%) | ⚡ |
-| — | HSY | Hershey | (outside top 10) | $174.27 | -2.14% | 18.4 | 3.4% | $180.90 (+3.8%) | ⚡ |
-| — | MNST | Monster Beverage | (outside top 10) | $46.46 | +1.62% | 35.7 | — | $50.13 (+7.9%) | ⚡ |
-| — | GIS | General Mills | (outside top 10) | $34.32 | **-3.35%** | 10.9 | 7.3% | $36.53 (+6.4%) | 🔴 |
-| — | CPB | Campbell's | (outside top 10) | $22.77 | -1.56% | 12.4 | 4.5% | $20.79 (-8.7%) | ⚡ |
-| — | KR | Kroger | (outside top 10) | $70.80 | **+4.58%** | 12.9 | 2.2% | $69.27 (-2.2%) | ⚡ |
+| 1 | WMT | Walmart | 11.1% | $127.95 | -0.11% | 39.6 | 0.8% | $135.76 (+6.1%) | ⚡ |
+| 2 | COST | Costco | 9.1% | $1,102.15 | -0.37% | 44.0 | 0.5% | $1,085.35 (-1.5%) | ⚠️ |
+| 3 | PG | Procter & Gamble | 7.6% | $169.37 | -0.25% | 22.8 | 2.6% | $175.83 (+3.8%) | ⚡ |
+| 4 | KO | Coca-Cola | 7.4% | $96.99 | -2.28% | 27.4 | 2.2% | $99.64 (+2.7%) | ⚡ |
+| 5 | PM | Philip Morris Intl | 6.6% | $184.09 | **-7.47%** | 20.4 | 3.4% | $212.69 (+15.5%) | ⚠️ |
+| 6 | MO | Altria | 4.7% | $74.87 | **-4.79%** | 12.6 | 6.0% | $73.45 (-1.9%) | ⚠️ |
+| 7 | CL | Colgate-Palmolive | 4.4% | $98.71 | -0.96% | 24.1 | 2.2% | $101.70 (+3.0%) | ⚡ |
+| 8 | MDLZ | Mondelez | 4.3% | $66.28 | -1.87% | 19.7 | 3.2% | $70.64 (+6.6%) | ⚡ |
+| 9 | PEP | PepsiCo | 4.1% | $140.54 | -3.37% | 16.4 | 4.3% | $141.14 (+0.4%) | ⚠️ |
+| 10 | TGT | Target | 4.0% | $165.83 | **+2.71%** | 17.0 | 2.8% | $172.34 (+3.9%) | 🔥 |
+| — | KMB | Kimberly-Clark | (outside top 10) | $106.38 | -2.79% | 15.0 | 4.9% | $118.31 (+11.2%) | ⚡ |
+| — | KDP | Keurig Dr Pepper | (outside top 10) | $34.84 | **-4.13%** | 13.8 | 2.7% | $38.82 (+11.4%) | ⚠️ |
+| — | STZ | Constellation Brands | (outside top 10) | $141.87 | -2.57% | 11.7 | 2.9% | $153.43 (+8.2%) | ⚡ |
+| — | EL | Estée Lauder | (outside top 10) | $99.46 | **-11.00%** | 24.5 | 1.4% | $116.49 (+17.1%) | 🔴 |
+| — | SYY | Sysco | (outside top 10) | $78.17 | +1.39% | 14.5 | 2.9% | $91.25 (+16.7%) | ⚡ |
+| — | HSY | Hershey | (outside top 10) | $175.48 | +1.54% | 18.5 | 3.3% | $180.90 (+3.1%) | ⚡ |
+| — | MNST | Monster Beverage | (outside top 10) | $43.69 | **-5.96%** | 33.6 | — | $50.25 (+15.0%) | ⚠️ |
+| — | GIS | General Mills | (outside top 10) | $35.74 | **+4.14%** | 11.4 | 7.1% | $36.53 (+2.2%) | 🔥 |
+| — | CPB | Campbell's | (outside top 10) | $23.78 | **+4.44%** | 12.9 | 4.3% | $20.79 (-12.6%) | 🔥 |
+| — | KR | Kroger | (outside top 10) | $68.44 | -2.80% | 12.5 | 2.3% | $69.96 (+2.2%) | ⚡ |
 
 > 🔥 = Deep value / high yield / strength | ⚡ = Neutral / stable | ⚠️ = Expensive / under pressure | 🔴 = Event-driven stress
 >
-> *Prices are Fri Nov 13 closes (daily bars, auto-adjusted, pulled Fri evening ~10:40 PM ET); weekly changes are against the settled Fri Nov 6 daily-bar closes. **Restatement:** TGT's dividend-adjusted Nov 6 bar reads $157.30 (page $158.41); the bar is used. **Weights (Yahoo funds_data, Nov 13): WMT 11.1%, COST 9.1%, PG 7.6%, KO 7.4%, PM 6.6%, MO 4.7%, CL 4.4%, MDLZ 4.3%, PEP 4.1%, TGT 4.0%** — identical to last week's snapshot, so Yahoo did not refresh it.*
+> *Prices are Fri Nov 20 closes (daily bars, auto-adjusted, pulled Fri evening ~10:40 PM ET); weekly changes are against the settled Fri Nov 13 daily-bar closes. **Restatements:** the dividend-adjusted Nov 13 bars read KR $70.41 (page $70.80) and HSY $172.82 (page $174.27); the bars are used. **Weights (Yahoo funds_data, Nov 20): WMT 11.1%, COST 9.1%, PG 7.6%, KO 7.4%, PM 6.6%, MO 4.7%, CL 4.4%, MDLZ 4.3%, PEP 4.1%, TGT 4.0%** — identical to the last two snapshots, so Yahoo has not refreshed it.*
 
-**The breadth.** All ten of the top ten rose, and sixteen of the 20 large names; the four that fell were KDP, HSY, GIS and CPB. **Six holdings closed at 52-week highs on Friday: COST, PG, KO, MO, CL and MDLZ.**
+**The breadth.** Nine of the top ten fell; Target was the exception. Of the 20 large names, five rose: TGT, SYY, HSY, GIS and CPB. The three biggest (WMT, COST, PG) each lost less than half a percent. No large name closed at a 52-week high or low on Friday.
 
 **The moves.**
-- **COST +5.0%** to $1,106.21, now 3% over its mean target at 44x forward. No dated company catalyst was found this week.
-- **KO +3.7%** to a 52-week closing high, also over its mean target.
-- **KDP:** -7.4% on Thursday on 37.1M shares, then +2.6% Friday on 60.3M, its heaviest day since Aug 2025. I found no dated cause for Thursday; the Nov 3 Q3 beat was followed by a fall that week (Tradingpedia, Webull).
-- **GIS -3.4%** to $34.32; its yield is now 7.3%. No dated catalyst.
+- **TGT +2.7%**, +4.0% on Wednesday's print. Q3 (Nov 18, per 24/7 Wall St and Stocktwits): adjusted EPS **$2.65** vs about $2.07 expected, **including a $0.50 tariff-refund benefit** (about $2.15 without it); net sales +7.1% to $27.1B; full-year sales growth guide raised to about 6%.
+- **WMT -0.1%.** Yahoo's calendar has rolled to February, so the Nov 19 print is out; the stock fell 1.0% Thursday and rose 1.5% Friday. **The results were not re-sourced:** the search returned last year's figures.
+- **PM -7.5%** to $184.09, its lowest close since Sep 8, and **MO -4.8%**. No dated cause found for either.
+- **EL -11.0%** to $99.46, down all five days; no dated cause found.
+- **GIS +4.1%, CPB +4.4%:** the two cheapest food names rose in the worst index week since April 2025.
 - **Shrinkflation / GLP-1:** no new U.S. regulatory action searched this week (not re-sourced).
 
-**Cecil Fundamental Read:** Costco went up 5% in a week with no news to 44x, past its own mean target; that is a momentum trade, not a value one. Altria and Pepsi are also over their targets now. What's left for me is Sysco (14.3x, 18% under the Street), STZ (12.0x) and MDLZ (20.1x, 4% gap, now at a high). GIS at 7.3% is a dividend the market doesn't believe.
+**Cecil Fundamental Read:** The expensive defensives held: Walmart, Costco and Procter lost a quarter-point between them. But the names that actually went up were General Mills at 11x and Campbell's at 13x. Target's beat is $2.15 once you take the refund out, still ahead of $2.07. Philip Morris is now 15% under the Street at 20x; I want a reason for the fall before I call that cheap. Sysco at 14.5x rose and stays on my list.
 
 ---
 
@@ -76,13 +77,13 @@ Week path: Mon $90.89, Tue $91.03, Wed $91.45, Thu $91.06, **Fri $92.35**. Intra
 
 | Ticker | Name | Market Cap | Price | Weekly Change | Catalyst | Council Read |
 |---|---|---|---|---|---|---|
-| CHEF | The Chefs' Warehouse | **$4.64B** ✅ | $106.66 | +2.8% | No dated item found this week; the Oct 28 beat-and-raise is the last | Over the 20D ($106.38), under the 50D ($109.21). **$0.36B from graduation**, from $0.49B |
-| ANDE | The Andersons | **$1.86B** ✅ | $55.40 | +0.5% | No dated item found after the Nov 3 record quarter | Flat after a 14% fall. RSI 28.2, still oversold; under all three averages |
-| NOMD | Nomad Foods | **$1.67B** ✅ | $11.92 | +2.9% | No dated item found; Q3 results still not located | Over all three averages; 7.4x forward, 5.8% yield |
-| UVV | Universal Corp | **$0.94B** ✅ | $37.77 | **-4.2%** | No dated item found after the fiscal Q2 volume drop | Fell four of five days; Thursday's $37.74 was its lowest close in the 2-year pull. 8.8% yield |
-| JBSS | John B. Sanfilippo & Son | **$0.69B** ✅ | $59.06 | **+7.5%** | No dated item found; Friday alone +5.1% | Up from the $52.59 Nov 3 low; still under all three averages |
+| CHEF | The Chefs' Warehouse | **$4.46B** ✅ | $102.67 | -3.7% | No dated item found this week | Under the 20D ($104.98) and 50D ($108.51). **$0.54B from graduation**, from $0.36B |
+| ANDE | The Andersons | **$1.51B** ✅ | $44.97 | **-18.8%** | **Correction: the Nov 4 fall (-11.7%) followed a $915M deal for Harvestone's three ethanol plants, announced with the record quarter** (Business News Today). No dated cause found for this week's drop | 52-week closing low; lowest close since Oct 21, 2025. RSI 14.0 |
+| NOMD | Nomad Foods | **$1.61B** ✅ | $11.51 | -3.4% | No dated item found | Under the 20D ($11.77), over the 50D and 200D; 7.2x forward, 6.0% yield |
+| UVV | Universal Corp | **$0.80B** ✅ | $32.23 | **-14.7%** | No dated item found | Down all five days to the lowest close on the two-year bars. RSI 19.1; trailing yield now 10.1% |
+| JBSS | John B. Sanfilippo & Son | **$0.71B** ✅ | $61.07 | **+3.4%** | No dated item found | Second up week; over the 20D ($58.58), under the 50D and 200D |
 
-**Council Note:** All five re-verified sub-$5B at the Nov 13 close. No rotation; CHEF is the closest to graduating. **Restatement:** NOMD's dividend-adjusted Nov 6 bar reads $11.58 (page $11.75). No company catalyst could be sourced for any of the five this week.
+**Council Note:** All five re-verified sub-$5B at the Nov 20 close. No rotation. ANDE and UVV fell 19% and 15% with no news found; both moves were checked against the bars for a split or spin-off and neither shows one (each is a run of ordinary daily declines). A 10% trailing yield on UVV is a price the market does not trust.
 
 ---
 
@@ -90,21 +91,22 @@ Week path: Mon $90.89, Tue $91.03, Wed $91.45, Thu $91.06, **Fri $92.35**. Intra
 
 | Level | Price | Significance |
 |---|---|---|
-| Overhead print | $93.40 | Nov 5 intraday high |
-| **52W High / Current Price** | **$92.35** | Fri 11/13 close and closing high; +2.52% W/W |
-| Prior closing high | $91.94 | Wed Nov 4 |
-| Half-two entry | $90.08 | Nov 6 close |
-| Week Low | $89.80 | Monday intraday |
-| 20-Day MA | $89.48 | Rising; the stop line |
-| 50-Day MA | $85.54 | — |
-| 200-Day MA | $84.08 | — |
-| Half-one entry | $81.70 | — |
-| Deep Support | $74.47 | 52W bottom (closing basis, Nov 19, 2025) |
-| RSI(14) | 65.1 | From 59.5 |
+| Week High (intraday) | $93.48 | Monday; above the Nov 5 print of $93.40 |
+| **52W Closing High** | **$92.60** | Mon Nov 16 |
+| Old half-two entry | $90.08 | Nov 6 close; sold Thursday at $89.86 |
+| **Current Price** | **$90.46** | Fri 11/20 close; -2.05% W/W |
+| 20-Day MA | $90.25 | Lost Thursday, regained Friday by 21 cents |
+| Week Low Close | $89.86 | Thursday |
+| Week Low | $89.29 | Thursday intraday |
+| 50-Day MA | $86.34 | — |
+| 200-Day MA | $84.26 | — |
+| Half-one entry | $81.70 | Still held |
+| Deep Support | $74.94 | 52W bottom (closing basis) |
+| RSI(14) | 54.8 | From 65.1 |
 
-**Marky Setup Assessment:** Full size, half from $81.70 and half from $90.08. **Stop: sell half on a close under the 20D, now $89.48.** No adds at a new high with RSI 65; I'd add only on a pullback that holds the 20D. The trend is six up weeks and a close on the high.
+**Marky Setup Assessment:** **Half size, from $81.70.** The second half was sold Thursday at $89.86 on the close under the 20D. **Stop on the remaining half: a close under the 50D, $86.34.** I buy the second half back on a close over $92.60, not on Friday's 21-cent recovery of the 20D.
 
-**Relative Strength:** XLP **+2.52% vs SPY +2.59%**, about even, and vs XLY +2.04%. YTD: XLP +21.2% vs SPY +11.5% vs XLY +1.1%.
+**Relative Strength:** XLP **-2.05% vs SPY -8.56%**, 6.5 points better, and vs XLY -6.27%. YTD: XLP +18.7% vs SPY +2.0% vs XLY -5.2%.
 
 ---
 
@@ -112,51 +114,58 @@ Week path: Mon $90.89, Tue $91.03, Wed $91.45, Thu $91.06, **Fri $92.35**. Intra
 
 | Factor | Level | Implication for XLP |
 |---|---|---|
-| **10Y Treasury** | **5.15%** (4.86%); 30Y 5.48%; 3M bill 4.12% | Back over 5% Thursday. Carry gap -269bp |
-| **CPI (Oct)** | +0.4% m/m, core +0.3%, both a tenth hot | No y/y published (2025 shutdown gap) |
-| **Food at home (Oct)** | **+0.4% m/m**, the most since April; snacks +1.0%, beef +0.9%; food overall +0.5% | Pricing power for branded snacks; a cost line for grocers |
-| **PPI (Oct)** | +0.3% m/m, 6.5% y/y | Input costs upstream |
-| **FOMC** | 3.75–4.00%; futures fully price at least a 25bp hike Dec 9 | Waller floated 50bp |
-| **DXY** | 103.41 (Fri evening, DX-Y.NYB) vs 102.30 | A 52-week high; headwind for PG, KO, PM, MDLZ overseas sales |
-| **WTI / Brent** | $90.83 settled Nov 6 (market_state, CLZ26); ~$89 / ~$96 (Fri evening, CL=F / BZ=F) | Freight relief holds |
-| **Grains** | Corn $4.46/bu (+1.0%), wheat $5.94/bu (+0.4%), Fri bars ZC=F/ZW=F | Corn's six-Friday losing run ended |
-| **Softs** | Sugar 18.40¢ (+0.9%), cocoa $5,267 (+2.2%), coffee $2.74/lb (-2.1%), Fri bars | No spike; no roll artifact seen |
+| **10Y Treasury** | **4.91%** (5.15%); 30Y 5.30%; 3M bill 4.12% | Back under 5% Friday. Carry gap -245bp |
+| **Retail sales (Oct)** | +0.2% m/m, in line (Census, Nov 17) | Slower than September's 0.8% |
+| **CPI / food at home (Oct)** | +0.4% m/m; food at home +0.4% (carried) | November CPI Dec 10 |
+| **FOMC** | 3.75–4.00%; Dec 8–9 meeting | Last week a hike was fully priced; this week's pricing not re-sourced |
+| **DXY** | 103.84 (Fri evening, DX-Y.NYB) vs 103.41 | Near its 52-week high (103.90 Thursday); headwind for PG, KO, PM, MDLZ overseas sales |
+| **WTI / Brent** | $88.56 settled Nov 13 (market_state, CLZ26); ~$84 / ~$90 (Fri evening, CL=F / BZ=F) | Freight relief; CL=F may already be January |
+| **Grains** | Corn $4.49/bu (+0.7%), wheat $5.93/bu (flat), Fri bars ZC=F/ZW=F | Quiet |
+| **Softs** | **Sugar 17.07¢ (-7.3%)**, cocoa $5,294 (+3.4%), coffee $2.69/lb (-3.6%), Fri bars | Sugar and coffee lower; no spike; no roll in the week |
 | **GLP-1 / private label / shrinkflation** | Not re-sourced this week | — |
-| SPY (context) | $754.37, +2.59% W/W; VIX 19.30 | — |
+| SPY (context) | $689.81, **-8.56% W/W**; VIX **35.89** | The reason to own this fund |
 
-**Ophelia Verdict:** **Defensive-lean, unchanged.** The fund rose with the 10Y going up, which tells me the money is coming from outside the rate trade. I said a December hike was the risk to bond proxies, and the market now prices one; the fund made a high anyway. I don't add at $92 with the carry gap at -269bp. My add zone moves up to the 20D, $89–$90.
+**Ophelia Verdict:** **Defensive-lean, unchanged, and it paid.** The fund lost 2% while the index lost 8.6%. The carry gap narrowed 24bp because the 10Y fell, not because anything got cheaper. Last week my add zone was the 20D, $89–$90; the fund traded there Thursday and Friday. I add a first piece here and keep the rest for the 50D ($86.34), because in a real liquidation the defensives get sold last, and Thursday's break of the 20D may be the start of that.
 
 ---
 
-## THE WEEKLY NARRATIVE — What's Actually Moving XLP (week ending 2026-11-13)
+## THE WEEKLY NARRATIVE — What's Actually Moving XLP (week ending 2026-11-20)
 
-### This Week's Story: A High Against the Rate Tide
+### This Week's Story: Down Two in a Week the Index Lost Eight
 
-XLP closed **$92.35, +2.52%**, a new 52-week closing high on Friday and its sixth straight up week. SPY rose 2.59%.
+XLP closed **$90.46, -2.05%**, ending six straight up weeks. SPY fell 8.56% and VIX closed at 35.89.
 
-**Everything big went up.** All ten of the top ten rose. Costco gained 5% with no dated news and now trades over its average target. Coke, Procter, Altria, Colgate and Mondelez closed at 52-week highs with it.
+**It made a high first.** Monday closed at $92.60, a new 52-week closing high, and traded to $93.48. Every close after that was lower until Friday.
 
-**Rates went the wrong way and it didn't matter.** October CPI and PPI ran hot, Fed officials talked about hiking, and the 10Y rose 29 basis points to 5.15%. That usually hurts staples. This week staples kept pace with the index while tech's leader had its own crisis (see the tech page).
+**Then the selling reached it.** Thursday's $89.86 was the first close under the 20-day since the run began, and it cost Marky half his position. Friday bounced 0.7% on 34.4M shares, the most of the week, while the index fell hardest.
 
-**Grocery inflation came back.** Food at home rose 0.4% in October, led by snacks and beef. That supports pricing for Mondelez and Hershey and squeezes grocers on cost, though Kroger rose 4.6%.
+**The biggest names barely moved.** Walmart, Costco and Procter each lost less than half a percent. Walmart reported Thursday; the numbers were not sourced, but the stock ended the week flat.
 
-**The laggards were the cheap ones.** General Mills fell 3.4% to a 7.3% yield. Keurig Dr Pepper fell 7.4% on Thursday for no sourced reason. Hershey and Campbell's slipped.
+**Target beat with an asterisk.** Adjusted EPS of $2.65 included 50 cents of tariff refunds. Sales rose 7.1% and the year was raised. The stock gained 2.7%.
 
-**The Bottom Line:** The defensive stance is working, and it is getting expensive. Walmart and Target report next week. **No trigger:** XLP +2.52% (threshold ±5%); no major staples company reported; no commodity spike (no tracked ag future moved more than 2.2%); no shrinkflation action found.
+**Tobacco and beauty fell without a headline.** Philip Morris lost 7.5%, Altria 4.8% and Estée Lauder 11%. No cause was found for any of them.
+
+**The cheap food names rose.** General Mills and Campbell's gained more than 4% each, Hershey and Sysco about 1.5%.
+
+**Two small caps broke.** The Andersons fell 18.8% to a 52-week low and Universal 14.7% to a two-year low, both without news.
+
+**The Bottom Line:** The fund did what a defensive is for. **No trigger:** XLP -2.05% (threshold ±5%); no staples earnings miss found (Target beat; Walmart not sourced); no commodity spike (the largest ag move was sugar, down 7.3%); no shrinkflation action found.
 
 ---
 
 ## EARNINGS CALENDAR
 
-Company dates are Yahoo Finance calendar dates pulled Nov 13, not company-confirmed; EPS is the Yahoo consensus mean. No dates moved since last week's page.
+Company dates are Yahoo Finance calendar dates pulled Nov 20, not company-confirmed; EPS is the Yahoo consensus mean. **GIS moved to Dec 17 from Dec 23.**
 
 | Date | Ticker | Company | EPS Est. | Focus |
 |---|---|---|---|---|
-| Tue Nov 17 | — | Retail sales (Oct) | — | Grocery and general merchandise lines |
-| Wed Nov 18 | TGT | Target | $2.06 | Trade-down share; up 71% YTD |
-| Thu Nov 19 | WMT | Walmart | $0.63 | Grocery share at 40x |
-| Dec 3 / Dec 9 / Dec 10 / Dec 23 | KR / CPB / COST / GIS | Kroger / Campbell's / Costco / General Mills | $1.16 / $0.41 / $4.92 / $0.95 | COST at 44x |
+| Wed Nov 18 ✔ | TGT | Target | reported $2.65 adj. | $0.50 of it tariff refunds; +2.7% W/W |
+| Thu Nov 19 ✔ | WMT | Walmart | not re-sourced | -0.1% W/W |
+| Thu Dec 3 | KR | Kroger | $1.16 | Grocery margin with food inflation back |
+| Wed Dec 9 | CPB | Campbell's | $0.41 | Whether this week's bid has a reason |
+| Thu Dec 10 | COST | Costco | $4.90 | 44x |
 | Thu Dec 10 | — | CPI (Nov) | — | Food at home after October's +0.4% |
+| Thu Dec 17 | GIS | General Mills | $0.95 | The 7.1% yield |
 
 Yahoo still shows past dates for PEP (Oct 8), KO (Oct 27), PM (Oct 21), MDLZ (Oct 29), KDP (Nov 3), MNST (Nov 5). PG next reports Jan 21 and STZ Jan 7 (Yahoo).
 
@@ -164,36 +173,38 @@ Yahoo still shows past dates for PEP (Oct 8), KO (Oct 27), PM (Oct 21), MDLZ (Oc
 
 ## RISK SCENARIOS
 
-| Scenario | Probability (ch. from 11/06) | Trigger | XLP Impact | Action |
+| Scenario | Probability (ch. from 11/13) | Trigger | XLP Impact | Action |
 |---|---|---|---|---|
-| New highs extend | 35% (was 40%) | Rotation out of tech continues; WMT/TGT beat | +2–3% | Hold full size |
-| Pullback to the 20D ($89–$90) | 40% (unchanged) | Profit-taking at RSI 65; tech stabilizes | -2–3% | Ophelia's add zone; Marky sells half under the 20D |
-| Rates finally bite | 25% (was 20%) | December hike confirmed, 10Y holds over 5.10% | -4–6% to the 50D | Marky's stop |
-| Volume weakness spreads | 20% (was 25%) | WMT or TGT report soft volume | Branded names -5–8% | Stay out of GIS |
+| Holds the 20D and retests the high | 30% (was 35%) | Index stabilizes; money stays defensive | +2–3% to $92.60 | Marky re-buys over $92.60 |
+| Chops between the 20D and the 50D | 35% (was 40%) | VIX stays over 25 | -2–4% | Ophelia's second add at the 50D |
+| Liquidation reaches the defensives | 25% (unchanged) | A second 5%+ index week; funds sell what is up | -4–6% to the 50D ($86.34) | Marky's stop on the last half |
+| Volume weakness spreads | 10% (was 20%) | Walmart's detail, once read, shows soft units | Branded names -5–8% | Stay with GIS/CPB only as trades |
 
 *Probabilities are the desk's judgment, not a model output.*
 
 ## COUNCIL READ
 
-- **Ophelia (risk/regime):** **Defensive-lean** (unchanged). A new high in a week the 10Y rose 29bp says the bid isn't about rates. I don't add at the high; my zone is the 20D.
-- **Marky (momentum):** Full size, both halves in profit. Stop: sell half on a close under the 20D at $89.48. Six up weeks and a close on the high; I don't fight it.
-- **Cecil (value):** Costco, Coke, Altria and Pepsi are over their targets. Sysco at 14.3x and STZ at 12.0x are still on my list. I'd rather own the cheap names that lagged than the expensive ones at highs.
+- **Ophelia (risk/regime):** **Defensive-lean** (unchanged). It lost a quarter of what the index lost. I add a first piece at the 20D and hold the rest for the 50D.
+- **Marky (momentum):** Half sold Thursday at $89.86 on the close under the 20D. Half from $81.70 stays with a stop under the 50D at $86.34. I re-buy over $92.60.
+- **Cecil (value):** The cheap food names finally did something. Sysco at 14.5x and STZ at 11.7x stay on my list. Philip Morris is 15% under the Street after a 7.5% fall I can't explain, so I wait. Target's quarter is $2.15, not $2.65.
 
-**Consensus:** Hold the stance; no adds at the high. **No trigger.**
+**Consensus:** Hold the defensive stance at reduced momentum size. **No trigger.**
 
 ---
 
 ## SOURCES & REFERENCES
 
-- **Price/momentum data:** Yahoo Finance daily bars via yfinance 1.6.0 (pulled Fri Nov 13, 2026, ~10:40 PM ET), Fri 2026-11-06 → Fri 2026-11-13 closes (auto_adjust=True); RSI(14), 20D/50D/200D, 52-week closing highs and lows; forward P/E, yields, mean targets, market caps, AUM; XLP top-10 weights via funds_data (unchanged from Nov 6); earnings-calendar dates and consensus EPS. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-11-13-gridB/: quotes_XLP.csv, quotes_MAC.csv, top10_XLP.csv, bars_*.csv
-- **CPI and food at home:** CNBC (Nov 10); BLS CPI release (Nov 10) as reported by FoodNavigator ("Grocery prices jump in October", Nov 10), Supermarket News and Vinetur (Nov 11). **PPI and Fed pricing:** CNBC (Nov 13). Goolsbee: CNBC (Nov 11)
-- **KDP:** Tradingpedia (Nov 3) and Webull/Simply Wall St on the post-earnings fall; Thursday's cause not found
-- **Commodities:** WTI settled $90.83 on Nov 6 (data/market_state.json, CLZ26); Nov 13 levels are Fri-evening Yahoo reads (CL=F, BZ=F, DX-Y.NYB) and Friday bars for ZC=F/ZW=F/SB=F/CC=F/KC=F, not feed settlements
-- **Not re-sourced this week:** causes for the COST, KO, KR, KDP and GIS moves; small-cap catalysts (none found for CHEF, ANDE, NOMD, UVV, JBSS); NOMD Q3 results; shrinkflation and GLP-1 regulatory news; fund holdings count
-- **Cross-references:** issues #113, #127 (rate regime), #156 (consumer confidence), #162 (Canary XLP correlation flip), #168 (last XLP trigger), #205 (tech trigger this week)
+- **Price/momentum data:** Yahoo Finance daily bars via yfinance 1.6.0 (pulled Fri Nov 20, 2026, ~10:40 PM ET), Fri 2026-11-13 → Fri 2026-11-20 closes (auto_adjust=True); RSI(14), 20D/50D/200D by day, 52-week closing highs and lows; forward P/E, yields, mean targets, market caps; XLP top-10 weights via funds_data (unchanged since Nov 6); earnings-calendar dates and consensus EPS. KVUE returned no bars after Oct 30 and is off the table. CSVs in C:/Users/alexa/Documents/council-scan-workspace/2026-11-20-gridb/: quotes_XLP.csv, quotes_MAC.csv, top10_XLP.csv, bars_*.csv
+- **Target Q3:** 24/7 Wall St ("Target Q3 2026: A Big EPS Beat With a $0.50 Tariff Refund Asterisk"); Stocktwits (raised outlook). Company release not read
+- **Retail sales:** StockAnalysis and AP via WCAX (Nov 17)
+- **The Andersons / Harvestone:** Business News Today ("The Andersons plunges 11.7% after $915M Harvestone deal despite record profit"); company Q3 release (PR Newswire via Morningstar, Nov 3)
+- **Commodities:** WTI settled $88.56 on Nov 13 (data/market_state.json, CLZ26); Nov 20 levels are Fri-evening Yahoo reads (CL=F, BZ=F, DX-Y.NYB) and Friday bars for ZC=F/ZW=F/SB=F/CC=F/KC=F, not feed settlements
+- **Market context:** SPY and VIX from the same pull; tech's week is on wiki/tech.md (Grid A, Nov 20)
+- **Not re-sourced this week:** Walmart's Q3 results (search returned the 2025 quarter); causes for the PM, MO, EL, MNST, KDP, ANDE and UVV moves; small-cap catalysts (none found for CHEF, NOMD, UVV, JBSS); NOMD Q3 results; shrinkflation and GLP-1 regulatory news; Fed-funds pricing; fund AUM, P/E and holdings count
+- **Cross-references:** issues #113, #127 (rate regime), #156 (consumer confidence), #162 (Canary XLP correlation flip), #168 (last XLP trigger), #214–#218 (this week's sector triggers)
 
 ---
 
-*Last updated by Saturday Research Crew: 2026-11-13 (data as of Fri 2026-11-13 close; Grid B Friday-night run)*
+*Last updated by Saturday Research Crew: 2026-11-20 (data as of Fri 2026-11-20 close; Grid B Friday-night run)*
 *Next update: Every Saturday*
 *Data sources: yfinance (Yahoo-sourced), repo market_state, company SEC filings, Council desk logs*
