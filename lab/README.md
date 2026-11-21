@@ -4682,3 +4682,56 @@ flipped.
    marks are logged before the week trades, and they are scored against
    random books from the same universe. That tests his eye, which no
    formula here has matched, and it cannot be flattered by hindsight.
+
+## Pass 40 -- hold until it breaks: a wider channel, drawn once (registered 2026-11-20 before any run)
+
+The owner on the Pass 39 results, 2026-11-20: "the width of the channel
+probably needs to be larger than you are thinking. This is more a hold
+until it breaks strategy." Pass 38 already leaned that way (the break at
+3.0 beat 2.5 beat 2.0). Lab only.
+
+**Two changes from Pass 38, nothing else.**
+1. *Wider.* Break lines at 3, 4, 5 and 6 widths.
+2. *Drawn once.* Passes 38 and 39 refit the channel every week, so the
+   line follows the stock down and a slow fade never "breaks" it, while
+   the slope and 40-week tests sell on their own schedule. A person draws
+   the channel once and watches for the break. The **anchored** arms do
+   that: the 26-week line and its width are fixed on the day of entry and
+   extended forward at the same slope; the name is sold on the first
+   Friday close below that line by more than the break width, and for no
+   other reason.
+
+Entry is Pass 38's, unchanged: a rising channel by `channel_facts`, at or
+below the centre line, ranked by the channel score; ten slots of 10%,
+three a sector, the frozen S&P 500 list, not pinned, Friday decision,
+Monday open, 0.10% a side. No sector layer (it subtracted in Pass 38).
+
+| Arm | Exit |
+|---|---|
+| refit 3 / refit 4 / refit 5 | Pass 38's rule (line refit weekly; also sold when the slope or the 40-week average turns) with a wider break |
+| anchored 2.5 | the entry-day line, 2.5 widths |
+| **anchored 4** | the entry-day line, 4 widths -- the primary |
+| anchored 6 | the entry-day line, 6 widths |
+| anchored 4, market brake | the primary, and the whole book to cash while SPY's channel is broken (Pass 38's market layer) |
+
+**Control and verdict lines.** As Passes 38 and 39: place among 200 random
+books a week at the same exposure; beats luck at the 95th percentile
+overall and the 75th in each half; better ride on Sharpe and drawdown
+against SPY. Only **anchored 4** is scored.
+
+**Read this before the result.** This is the third draw at one idea. And
+a wider break has a floor it cannot fall through: as the width grows the
+book stops selling and becomes "buy ten survivors and hold them", which
+sits near the middle of random books by construction. So rising from the
+bottom toward the 50th percentile as the width grows is the rule doing
+*less*, not the rule working. Only a place well above the middle says the
+channel picks anything.
+
+**Predictions.** (1) The place among random books rises with the width in
+both families. (2) Anchored 4 lands between the 20th and 60th percentile
+and fails the beats-luck line. (3) Its median hold is over 20 weeks. (4)
+The market brake cuts the largest drawdown by more than a third and
+lowers the compound return.
+
+    python lab/pass40_hold_break.py          # every arm
+    python lab/pass40_hold_break.py smoke    # plumbing: 2022 on, 80 names, 20 draws
