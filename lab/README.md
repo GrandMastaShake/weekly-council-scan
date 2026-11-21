@@ -5648,3 +5648,55 @@ does about as well as ranking by channels (within half a point).
 
     python lab/pass47_sector_choice.py          # every arm, both sets
     python lab/pass47_sector_choice.py smoke    # plumbing: 400 names
+
+## Pass 47 results -- the sector rule stops it adding everything, and does not make it earn more
+
+Run 2026-11-20, `lab/results/pass47_sector_choice.json`. Top 500 by size;
+the pool compounds 9.6% and SPY 10.9% (Sharpe 0.66, drawdown -54.6%).
+
+| Arm | Compound a year | To 2016 | 2017 on | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Entries a year | 13-week card excess |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| no sector rule | 8.4% | 6.3% | 10.5% | 0.55 | -55.7% | 0th | 1st | 0th | 284 | 411 | -0.42% |
+| **top four by channels** | **7.9%** | 4.4% | 11.3% | **0.52** | **-58.6%** | **2nd** | 0th | 34th | 116 | 170 | -0.71% |
+| top four by fund | 8.7% | 6.3% | 10.9% | 0.58 | -52.4% | 8th | 14th | 24th | 111 | 153 | -0.12% |
+| bottom four by channels | 6.9% | 4.0% | 9.7% | 0.47 | -64.3% | 7th | 17th | 3rd | 87 | 121 | -0.28% |
+
+On every tradeable name: 9.4%, 9.1%, 10.4% and 9.9% in the same order,
+against a pool at 11.7%.
+
+**Against the lines (primary: top four by channels).** *Beats luck:*
+**no** (2nd percentile; 0th and 34th by half). *Better ride:* **no**
+(Sharpe 0.52 against 0.66, a deeper drawdown than SPY). *The cards:*
+**no** (-0.71%; negative in both halves).
+
+**What the sector rule did.**
+1. *It did what he asked of it.* Names held fall from 284 to 116, entries
+   from 411 a year to 170. The book no longer adds everything.
+2. *It did not help, and by channels it hurt.* 7.9% a year against 8.4%
+   with no sector rule, and a deeper drawdown.
+3. *Strong sectors do beat weak ones, modestly*: top four by channels
+   7.9% against bottom four 6.9%. So the ranking carries some
+   information. Being selective is not the same as selecting well: both
+   are below the book that takes everything.
+4. *Counting channels ranks the quiet sectors first.* The sector chosen
+   most often by channel count is Utilities (half of all weeks), then
+   Health Care. A utility stays inside a channel because it barely
+   moves, not because it is leading. Ranking by the fund's 26-week
+   return chooses Information Technology most (58% of weeks) and is the
+   better of the two by 0.8 points a year with a shallower drawdown. It
+   is the same pull found in Cecil's safety leg (Pass 37) and in Pass
+   42's "weakest survive longest": a channel test rewards stillness.
+
+**Scored against the predictions.** (1) Held: names held more than
+halve. (2) Missed: the channel-count rule compounds less than no rule,
+not more. (3) Held: top beats bottom by 1.0 point. (4) Held. (5) Missed:
+the fund ranking is 0.8 points ahead of the channel ranking, not within
+half a point.
+
+**What it means.** Nine draws. Cutting the list by sector makes the book
+smaller and leaves it where it was. If a sector layer is ever used, rank
+by the fund's return and not by how many of its names are in a channel.
+The standing conclusion from Pass 46 is unchanged: no version of the
+line, the exit or now the sector cut has shown a qualifying chart to be
+worth more than a random one, on a list that cannot be fully trusted,
+and the forward ledger (Pass 44) is where the question goes next.
