@@ -1,0 +1,797 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1001,
+ "first_week": "2007-09-14",
+ "last_week": "2026-11-13",
+ "arms": {
+  "basket": {
+   "avg_names_held": 613.7432567432568,
+   "weeks_in_cash": 0,
+   "entries": 16206,
+   "closed": 15123,
+   "median_hold_weeks": 12.0,
+   "share_closed_at_a_gain": 0.36335383191165777,
+   "mean_closed_gain": 0.036458272253746385,
+   "median_closed_gain": -0.03442634248460319,
+   "book": {
+    "all": {
+     "cagr": 0.09643170946240187,
+     "sharpe": 0.5838984701936293,
+     "max_drawdown": -0.5089698739280686,
+     "pool_cagr": 0.11735364024543982,
+     "pool_sharpe": 0.5997928705926129,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0021169372161403788,
+     "random_mean_week": 0.0026447278362049307
+    },
+    "to 2016": {
+     "cagr": 0.0704210493490467,
+     "sharpe": 0.4548352296424311,
+     "max_drawdown": -0.5089698739280686,
+     "pool_cagr": 0.10698623518973571,
+     "pool_sharpe": 0.5452999143272714,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.001656780212210577,
+     "random_mean_week": 0.0025151640402297304
+    },
+    "2017 on": {
+     "cagr": 0.12155708981194313,
+     "sharpe": 0.7063376580325564,
+     "max_drawdown": -0.3529036656492772,
+     "pool_cagr": 0.127226281986766,
+     "pool_sharpe": 0.656281810141221,
+     "pool_max_drawdown": -0.4156531155529669,
+     "percentile_among_random": 0.5,
+     "arm_mean_week": 0.0025511824664508327,
+     "random_mean_week": 0.0027669958067757026
+    }
+   },
+   "cards": {
+    "all": {
+     "every tier": {
+      "cards": 16206,
+      "excess_13w": 0.0013391283539707518,
+      "excess_26w": 0.007063508639742652,
+      "share_beating_pool_13w": 0.46336260978670013,
+      "weekly_mean_excess_13w": -0.001459887966120675,
+      "t": -0.29259973743637957
+     },
+     "mega": {
+      "cards": 922,
+      "excess_13w": -0.012612908016162354,
+      "excess_26w": -0.02101088721511251,
+      "share_beating_pool_13w": 0.44627192982456143,
+      "weekly_mean_excess_13w": -0.021041636221297857,
+      "t": -2.5782835398444117
+     },
+     "large": {
+      "cards": 3920,
+      "excess_13w": -0.0025469375410109595,
+      "excess_26w": 0.0015340382023943217,
+      "share_beating_pool_13w": 0.4741868869385648,
+      "weekly_mean_excess_13w": -0.012843613798787226,
+      "t": -2.486334097177266
+     },
+     "mid": {
+      "cards": 5492,
+      "excess_13w": -0.007526541641485355,
+      "excess_26w": -0.01136243612326729,
+      "share_beating_pool_13w": 0.4514705882352941,
+      "weekly_mean_excess_13w": -0.010196726947253891,
+      "t": -1.7178402054931854
+     },
+     "small": {
+      "cards": 4847,
+      "excess_13w": 0.007858900765255363,
+      "excess_26w": 0.0238145648979438,
+      "share_beating_pool_13w": 0.4614900314795383,
+      "weekly_mean_excess_13w": 0.010221374930645405,
+      "t": 1.644085655841827
+     },
+     "smaller": {
+      "cards": 1025,
+      "excess_13w": 0.04869572022144238,
+      "excess_26w": 0.08952391521986969,
+      "share_beating_pool_13w": 0.5131717597471022,
+      "weekly_mean_excess_13w": 0.03333386879198001,
+      "t": 2.19030186979978
+     }
+    },
+    "to 2016": {
+     "every tier": {
+      "cards": 5984,
+      "excess_13w": -0.0009417829517581679,
+      "excess_26w": -0.0009159106302550693,
+      "share_beating_pool_13w": 0.47008689839572193,
+      "weekly_mean_excess_13w": -0.007249364417981707,
+      "t": -1.4335474762217364
+     },
+     "mega": {
+      "cards": 467,
+      "excess_13w": -0.019655534001715092,
+      "excess_26w": -0.03466743525187859,
+      "share_beating_pool_13w": 0.4132762312633833,
+      "weekly_mean_excess_13w": -0.03308871052009613,
+      "t": -4.791368829485287
+     },
+     "large": {
+      "cards": 1974,
+      "excess_13w": -0.0021042738038256573,
+      "excess_26w": -0.003113764485304879,
+      "share_beating_pool_13w": 0.46200607902735563,
+      "weekly_mean_excess_13w": -0.009147805564878408,
+      "t": -1.3849795946807866
+     },
+     "mid": {
+      "cards": 2626,
+      "excess_13w": -0.0016602984135901905,
+      "excess_26w": -0.002599824724600012,
+      "share_beating_pool_13w": 0.4737242955064737,
+      "weekly_mean_excess_13w": -0.0026209959283575216,
+      "t": -0.45303389903860136
+     },
+     "small": {
+      "cards": 917,
+      "excess_13w": 0.01314862084876745,
+      "excess_26w": 0.025826165618290552,
+      "share_beating_pool_13w": 0.5059978189749182,
+      "weekly_mean_excess_13w": 0.02014415545139998,
+      "t": 2.0321257927482548
+     },
+     "smaller": {
+      "cards": 0,
+      "excess_13w": null,
+      "excess_26w": null,
+      "share_beating_pool_13w": null,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    },
+    "2017 on": {
+     "every tier": {
+      "cards": 10222,
+      "excess_13w": 0.0027100577687439393,
+      "excess_26w": 0.012081251904945085,
+      "share_beating_pool_13w": 0.4593210124548011,
+      "weekly_mean_excess_13w": 0.0039194029071672075,
+      "t": 0.4718337624988259
+     },
+     "mega": {
+      "cards": 455,
+      "excess_13w": -0.0052221072627845365,
+      "excess_26w": -0.006213653031423965,
+      "share_beating_pool_13w": 0.48089887640449436,
+      "weekly_mean_excess_13w": -0.009299551145253966,
+      "t": -0.6621094812157071
+     },
+     "large": {
+      "cards": 1946,
+      "excess_13w": -0.0030068418658550553,
+      "excess_26w": 0.006501424507493523,
+      "share_beating_pool_13w": 0.4868421052631579,
+      "weekly_mean_excess_13w": -0.01641414039764829,
+      "t": -2.089643831856332
+     },
+     "mid": {
+      "cards": 2866,
+      "excess_13w": -0.013000868122101097,
+      "excess_26w": -0.019803601762629092,
+      "share_beating_pool_13w": 0.43070362473347545,
+      "weekly_mean_excess_13w": -0.016992125157336908,
+      "t": -1.7251845401759336
+     },
+     "small": {
+      "cards": 3930,
+      "excess_13w": 0.006598330776538997,
+      "excess_26w": 0.023314663038713997,
+      "share_beating_pool_13w": 0.45088357588357586,
+      "weekly_mean_excess_13w": 0.0033387654630581904,
+      "t": 0.42913855929113465
+     },
+     "smaller": {
+      "cards": 1025,
+      "excess_13w": 0.04869572022144238,
+      "excess_26w": 0.08952391521986969,
+      "share_beating_pool_13w": 0.5131717597471022,
+      "weekly_mean_excess_13w": 0.03333386879198001,
+      "t": 2.19030186979978
+     }
+    }
+   }
+  },
+  "no pullback rule": {
+   "avg_names_held": 628.3356643356643,
+   "weeks_in_cash": 0,
+   "entries": 17169,
+   "closed": 16068,
+   "median_hold_weeks": 11.0,
+   "share_closed_at_a_gain": 0.3570450585013692,
+   "mean_closed_gain": 0.03751697477943357,
+   "median_closed_gain": -0.03562840624602204,
+   "book": {
+    "all": {
+     "cagr": 0.09810465926207068,
+     "sharpe": 0.586245827950209,
+     "max_drawdown": -0.5329940507684934,
+     "pool_cagr": 0.11735364024543982,
+     "pool_sharpe": 0.5997928705926129,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.002156295594079742,
+     "random_mean_week": 0.002652897827234306
+    },
+    "to 2016": {
+     "cagr": 0.07461798944612341,
+     "sharpe": 0.46863120899425764,
+     "max_drawdown": -0.5329940507684934,
+     "pool_cagr": 0.10698623518973571,
+     "pool_sharpe": 0.5452999143272714,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0017494923434653441,
+     "random_mean_week": 0.00251648631856881
+    },
+    "2017 on": {
+     "cagr": 0.12073936309944755,
+     "sharpe": 0.700114759206507,
+     "max_drawdown": -0.35256503891150226,
+     "pool_cagr": 0.127226281986766,
+     "pool_sharpe": 0.656281810141221,
+     "pool_max_drawdown": -0.4156531155529669,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0025401914771838144,
+     "random_mean_week": 0.0027816279111399977
+    }
+   },
+   "cards": {
+    "all": {
+     "every tier": {
+      "cards": 17169,
+      "excess_13w": 0.00019867872458218102,
+      "excess_26w": 0.004503825471983945,
+      "share_beating_pool_13w": 0.4604904632152589,
+      "weekly_mean_excess_13w": -0.0026357626583304984,
+      "t": -0.5062631957282873
+     },
+     "mega": {
+      "cards": 956,
+      "excess_13w": -0.014817348360930625,
+      "excess_26w": -0.0235893888300272,
+      "share_beating_pool_13w": 0.4376321353065539,
+      "weekly_mean_excess_13w": -0.019868692014566064,
+      "t": -2.3057504191690676
+     },
+     "large": {
+      "cards": 4112,
+      "excess_13w": -0.004517763903728487,
+      "excess_26w": -0.002849585869832518,
+      "share_beating_pool_13w": 0.4691114939699729,
+      "weekly_mean_excess_13w": -0.011860393896552064,
+      "t": -2.48601566496539
+     },
+     "mid": {
+      "cards": 5758,
+      "excess_13w": -0.008576133918697373,
+      "excess_26w": -0.01399424403391593,
+      "share_beating_pool_13w": 0.44896527534198527,
+      "weekly_mean_excess_13w": -0.009586847563358062,
+      "t": -1.6395996603927903
+     },
+     "small": {
+      "cards": 5236,
+      "excess_13w": 0.005654715686850643,
+      "excess_26w": 0.02108635322470572,
+      "share_beating_pool_13w": 0.46080529079945537,
+      "weekly_mean_excess_13w": 0.008743944806599485,
+      "t": 1.3353031795777015
+     },
+     "smaller": {
+      "cards": 1107,
+      "excess_13w": 0.05393903182232898,
+      "excess_26w": 0.09077626118553946,
+      "share_beating_pool_13w": 0.5097087378640777,
+      "weekly_mean_excess_13w": 0.0422879627099539,
+      "t": 2.2284799229730483
+     }
+    },
+    "to 2016": {
+     "every tier": {
+      "cards": 6353,
+      "excess_13w": -0.001813369346270713,
+      "excess_26w": -0.002427301643087584,
+      "share_beating_pool_13w": 0.46560679993703763,
+      "weekly_mean_excess_13w": -0.007528364836005393,
+      "t": -1.754824391949472
+     },
+     "mega": {
+      "cards": 498,
+      "excess_13w": -0.02557444986492796,
+      "excess_26w": -0.039922859971018666,
+      "share_beating_pool_13w": 0.39357429718875503,
+      "weekly_mean_excess_13w": -0.03480083226460875,
+      "t": -4.537824423750977
+     },
+     "large": {
+      "cards": 2078,
+      "excess_13w": -0.0030853654453822862,
+      "excess_26w": -0.004993495172566206,
+      "share_beating_pool_13w": 0.4615014436958614,
+      "weekly_mean_excess_13w": -0.008964708462937012,
+      "t": -1.4358725797843497
+     },
+     "mid": {
+      "cards": 2757,
+      "excess_13w": -0.0020331124202747986,
+      "excess_26w": -0.0040174062483833515,
+      "share_beating_pool_13w": 0.46753717809212914,
+      "weekly_mean_excess_13w": -0.003099466665502998,
+      "t": -0.6077610983483333
+     },
+     "small": {
+      "cards": 1020,
+      "excess_13w": 0.012972961680468924,
+      "excess_26w": 0.025405302865115047,
+      "share_beating_pool_13w": 0.503921568627451,
+      "weekly_mean_excess_13w": 0.017304421644036738,
+      "t": 1.7215140327776899
+     },
+     "smaller": {
+      "cards": 0,
+      "excess_13w": null,
+      "excess_26w": null,
+      "share_beating_pool_13w": null,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    },
+    "2017 on": {
+     "every tier": {
+      "cards": 10816,
+      "excess_13w": 0.0014127105789015298,
+      "excess_26w": 0.008880038010450392,
+      "share_beating_pool_13w": 0.45740336214265365,
+      "weekly_mean_excess_13w": 0.001959717929607054,
+      "t": 0.2130842233669742
+     },
+     "mega": {
+      "cards": 458,
+      "excess_13w": -0.002859677492647874,
+      "excess_26w": -0.004804010935769112,
+      "share_beating_pool_13w": 0.48660714285714285,
+      "weekly_mean_excess_13w": -0.004936551764523392,
+      "t": -0.34016758540043823
+     },
+     "large": {
+      "cards": 2034,
+      "excess_13w": -0.006017272214279322,
+      "excess_26w": -0.0005412731594280584,
+      "share_beating_pool_13w": 0.4770780856423174,
+      "weekly_mean_excess_13w": -0.014651416001241273,
+      "t": -2.0501014341047044
+     },
+     "mid": {
+      "cards": 3001,
+      "excess_13w": -0.014701468475964279,
+      "excess_26w": -0.023631995181327747,
+      "share_beating_pool_13w": 0.43157894736842106,
+      "weekly_mean_excess_13w": -0.015462997712807083,
+      "t": -1.541425597439821
+     },
+     "small": {
+      "cards": 4216,
+      "excess_13w": 0.003843356571710956,
+      "excess_26w": 0.019971926553008907,
+      "share_beating_pool_13w": 0.4501334627517593,
+      "weekly_mean_excess_13w": 0.002953559638896625,
+      "t": 0.3469843787200228
+     },
+     "smaller": {
+      "cards": 1107,
+      "excess_13w": 0.05393903182232898,
+      "excess_26w": 0.09077626118553946,
+      "share_beating_pool_13w": 0.5097087378640777,
+      "weekly_mean_excess_13w": 0.0422879627099539,
+      "t": 2.2284799229730483
+     }
+    }
+   }
+  },
+  "older only": {
+   "avg_names_held": 538.5244755244755,
+   "weeks_in_cash": 0,
+   "entries": 11738,
+   "closed": 10755,
+   "median_hold_weeks": 15.0,
+   "share_closed_at_a_gain": 0.3692236169223617,
+   "mean_closed_gain": 0.04785370850863963,
+   "median_closed_gain": -0.03428542480297769,
+   "book": {
+    "all": {
+     "cagr": 0.09807315323307475,
+     "sharpe": 0.5883015012991403,
+     "max_drawdown": -0.537205031646923,
+     "pool_cagr": 0.11735364024543982,
+     "pool_sharpe": 0.5997928705926129,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0021515368181590183,
+     "random_mean_week": 0.0026350577415675965
+    },
+    "to 2016": {
+     "cagr": 0.06793289000773384,
+     "sharpe": 0.43725779469715076,
+     "max_drawdown": -0.537205031646923,
+     "pool_cagr": 0.10698623518973571,
+     "pool_sharpe": 0.5452999143272714,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0016267515109209053,
+     "random_mean_week": 0.0024953948074619755
+    },
+    "2017 on": {
+     "cagr": 0.12729593374078685,
+     "sharpe": 0.735446449482827,
+     "max_drawdown": -0.3488034439611011,
+     "pool_cagr": 0.127226281986766,
+     "pool_sharpe": 0.656281810141221,
+     "pool_max_drawdown": -0.4156531155529669,
+     "percentile_among_random": 14.499999999999998,
+     "arm_mean_week": 0.002646771108096344,
+     "random_mean_week": 0.0027668561609371723
+    }
+   },
+   "cards": {
+    "all": {
+     "every tier": {
+      "cards": 11738,
+      "excess_13w": 0.004869063642848051,
+      "excess_26w": 0.01192534019232152,
+      "share_beating_pool_13w": 0.474827676468022,
+      "weekly_mean_excess_13w": 0.0026343180008157174,
+      "t": 0.6101755912806112
+     },
+     "mega": {
+      "cards": 663,
+      "excess_13w": -0.0038597154505326733,
+      "excess_26w": -0.018455214798907785,
+      "share_beating_pool_13w": 0.4627092846270928,
+      "weekly_mean_excess_13w": -0.015302049148510567,
+      "t": -2.2347005065584984
+     },
+     "large": {
+      "cards": 2924,
+      "excess_13w": 0.0013755039407951405,
+      "excess_26w": 0.0019081916154090757,
+      "share_beating_pool_13w": 0.47936177592785295,
+      "weekly_mean_excess_13w": 0.004225464352586473,
+      "t": 0.6439010478168262
+     },
+     "mid": {
+      "cards": 3993,
+      "excess_13w": -0.0033227604826624405,
+      "excess_26w": -0.008658342565953275,
+      "share_beating_pool_13w": 0.4628876461616675,
+      "weekly_mean_excess_13w": -0.007562170548184684,
+      "t": -1.6532903578676303
+     },
+     "small": {
+      "cards": 3418,
+      "excess_13w": 0.014420867559394063,
+      "excess_26w": 0.03896417764571126,
+      "share_beating_pool_13w": 0.48494882600842865,
+      "weekly_mean_excess_13w": 0.0174964903899271,
+      "t": 2.4606157737367944
+     },
+     "smaller": {
+      "cards": 740,
+      "excess_13w": 0.029383776401287327,
+      "excess_26w": 0.08157272448124829,
+      "share_beating_pool_13w": 0.48721804511278194,
+      "weekly_mean_excess_13w": 0.03940511474331781,
+      "t": 2.4483266465317985
+     }
+    },
+    "to 2016": {
+     "every tier": {
+      "cards": 4618,
+      "excess_13w": 0.0054361925646826985,
+      "excess_26w": 0.005703667545989309,
+      "share_beating_pool_13w": 0.4919878735383283,
+      "weekly_mean_excess_13w": -0.0013597107434341652,
+      "t": -0.31165236004475144
+     },
+     "mega": {
+      "cards": 367,
+      "excess_13w": -0.0029940442483452796,
+      "excess_26w": -0.023729115251777875,
+      "share_beating_pool_13w": 0.4713896457765668,
+      "weekly_mean_excess_13w": -0.016983459229922532,
+      "t": -2.290139283496234
+     },
+     "large": {
+      "cards": 1554,
+      "excess_13w": 0.006186928487457957,
+      "excess_26w": 0.002390729231602099,
+      "share_beating_pool_13w": 0.49163449163449163,
+      "weekly_mean_excess_13w": -0.00030312684885310345,
+      "t": -0.038605853981136924
+     },
+     "mid": {
+      "cards": 2002,
+      "excess_13w": 0.0037680605946321544,
+      "excess_26w": 0.004341479679121773,
+      "share_beating_pool_13w": 0.493006993006993,
+      "weekly_mean_excess_13w": -0.0015583337718727843,
+      "t": -0.2623610007029789
+     },
+     "small": {
+      "cards": 695,
+      "excess_13w": 0.01301439902573263,
+      "excess_26w": 0.032577390620531874,
+      "share_beating_pool_13w": 0.5007194244604316,
+      "weekly_mean_excess_13w": 0.02920616128038053,
+      "t": 2.4810900498812507
+     },
+     "smaller": {
+      "cards": 0,
+      "excess_13w": null,
+      "excess_26w": null,
+      "share_beating_pool_13w": null,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    },
+    "2017 on": {
+     "every tier": {
+      "cards": 7120,
+      "excess_13w": 0.004486336569775948,
+      "excess_26w": 0.016277306911612964,
+      "share_beating_pool_13w": 0.4632471138389595,
+      "weekly_mean_excess_13w": 0.006255460244046419,
+      "t": 0.8734906270625412
+     },
+     "mega": {
+      "cards": 296,
+      "excess_13w": -0.004955237282266379,
+      "excess_26w": -0.011517861873447851,
+      "share_beating_pool_13w": 0.4517241379310345,
+      "weekly_mean_excess_13w": -0.013590967124485452,
+      "t": -1.1810707929841606
+     },
+     "large": {
+      "cards": 1370,
+      "excess_13w": -0.0042504958677180415,
+      "excess_26w": 0.0013322596218883717,
+      "share_beating_pool_13w": 0.4650112866817156,
+      "weekly_mean_excess_13w": 0.008386872483639058,
+      "t": 0.8172900836207613
+     },
+     "mid": {
+      "cards": 1991,
+      "excess_13w": -0.010670495367105395,
+      "excess_26w": -0.022384948122198132,
+      "share_beating_pool_13w": 0.43167701863354035,
+      "weekly_mean_excess_13w": -0.013273137237847227,
+      "t": -1.9664634801623753
+     },
+     "small": {
+      "cards": 2723,
+      "excess_13w": 0.014792963345802395,
+      "excess_26w": 0.04071588126942857,
+      "share_beating_pool_13w": 0.4807765511990864,
+      "weekly_mean_excess_13w": 0.009966930847095492,
+      "t": 1.1556591217914973
+     },
+     "smaller": {
+      "cards": 740,
+      "excess_13w": 0.029383776401287327,
+      "excess_26w": 0.08157272448124829,
+      "share_beating_pool_13w": 0.48721804511278194,
+      "weekly_mean_excess_13w": 0.03940511474331781,
+      "t": 2.4483266465317985
+     }
+    }
+   }
+  },
+  "ten straightest": {
+   "avg_names_held": 9.999000999001,
+   "weeks_in_cash": 0,
+   "entries": 165,
+   "closed": 155,
+   "median_hold_weeks": 15.0,
+   "share_closed_at_a_gain": 0.4,
+   "mean_closed_gain": 0.06803757747593683,
+   "median_closed_gain": -0.03656479583923089,
+   "book": {
+    "all": {
+     "cagr": 0.08304615060302889,
+     "sharpe": 0.4781160753308563,
+     "max_drawdown": -0.5650782771577587,
+     "pool_cagr": 0.11735364024543982,
+     "pool_sharpe": 0.5997928705926129,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 11.5,
+     "arm_mean_week": 0.001984372532851316,
+     "random_mean_week": 0.0026016487890201277
+    },
+    "to 2016": {
+     "cagr": 0.049343548331900466,
+     "sharpe": 0.32912323577042424,
+     "max_drawdown": -0.5650782771577587,
+     "pool_cagr": 0.10698623518973571,
+     "pool_sharpe": 0.5452999143272714,
+     "pool_max_drawdown": -0.5685408579463767,
+     "percentile_among_random": 4.5,
+     "arm_mean_week": 0.0013988554801916168,
+     "random_mean_week": 0.0025188426676267892
+    },
+    "2017 on": {
+     "cagr": 0.11584308192636561,
+     "sharpe": 0.6253856165570155,
+     "max_drawdown": -0.31328669820947863,
+     "pool_cagr": 0.127226281986766,
+     "pool_sharpe": 0.656281810141221,
+     "pool_max_drawdown": -0.4156531155529669,
+     "percentile_among_random": 42.0,
+     "arm_mean_week": 0.0025369187223515366,
+     "random_mean_week": 0.0026797920414418025
+    }
+   },
+   "cards": {
+    "all": {
+     "every tier": {
+      "cards": 165,
+      "excess_13w": 0.006141188777933827,
+      "excess_26w": -0.014892000057896964,
+      "share_beating_pool_13w": 0.503030303030303,
+      "weekly_mean_excess_13w": -0.008797288123687526,
+      "t": -0.4127670925141283
+     },
+     "mega": {
+      "cards": 18,
+      "excess_13w": -0.09616024146058495,
+      "excess_26w": -0.09919500262538551,
+      "share_beating_pool_13w": 0.3333333333333333,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "large": {
+      "cards": 71,
+      "excess_13w": 0.001290207568506041,
+      "excess_26w": 0.012013832569153745,
+      "share_beating_pool_13w": 0.5492957746478874,
+      "weekly_mean_excess_13w": -0.008447155362913537,
+      "t": -0.2833803892278309
+     },
+     "mid": {
+      "cards": 57,
+      "excess_13w": 0.019223571131288687,
+      "excess_26w": -0.029082307451848925,
+      "share_beating_pool_13w": 0.43859649122807015,
+      "weekly_mean_excess_13w": -0.010169394936795141,
+      "t": -0.3235143877775595
+     },
+     "small": {
+      "cards": 18,
+      "excess_13w": 0.07420138808225528,
+      "excess_26w": -0.00425911105925753,
+      "share_beating_pool_13w": 0.6666666666666666,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "smaller": {
+      "cards": 1,
+      "excess_13w": 0.2212072173216308,
+      "excess_26w": 0.1792121118026617,
+      "share_beating_pool_13w": 1.0,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    },
+    "to 2016": {
+     "every tier": {
+      "cards": 116,
+      "excess_13w": -0.006367874239983355,
+      "excess_26w": -0.03852021281198598,
+      "share_beating_pool_13w": 0.4827586206896552,
+      "weekly_mean_excess_13w": -0.03181348451824166,
+      "t": -1.1894800928575577
+     },
+     "mega": {
+      "cards": 11,
+      "excess_13w": -0.13503169416021918,
+      "excess_26w": -0.11963102948391623,
+      "share_beating_pool_13w": 0.18181818181818182,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "large": {
+      "cards": 56,
+      "excess_13w": -0.01642596432437576,
+      "excess_26w": -0.023979785814783022,
+      "share_beating_pool_13w": 0.5535714285714286,
+      "weekly_mean_excess_13w": -0.03201324179473064,
+      "t": -1.1112253380353128
+     },
+     "mid": {
+      "cards": 45,
+      "excess_13w": 0.03420107668501596,
+      "excess_26w": -0.03277161316553457,
+      "share_beating_pool_13w": 0.4666666666666667,
+      "weekly_mean_excess_13w": -0.0017148644867761489,
+      "t": -0.04765811941580341
+     },
+     "small": {
+      "cards": 4,
+      "excess_13w": 0.03187019381591634,
+      "excess_26w": -0.08370319094759754,
+      "share_beating_pool_13w": 0.5,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "smaller": {
+      "cards": 0,
+      "excess_13w": null,
+      "excess_26w": null,
+      "share_beating_pool_13w": null,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    },
+    "2017 on": {
+     "every tier": {
+      "cards": 49,
+      "excess_13w": 0.03575448082035001,
+      "excess_26w": 0.0446921886263275,
+      "share_beating_pool_13w": 0.5510204081632653,
+      "weekly_mean_excess_13w": 0.038804390783231245,
+      "t": 2.6923454387481565
+     },
+     "mega": {
+      "cards": 7,
+      "excess_13w": -0.03507653007544543,
+      "excess_26w": -0.0617289533847459,
+      "share_beating_pool_13w": 0.5714285714285714,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "large": {
+      "cards": 15,
+      "excess_13w": 0.06743058263526476,
+      "excess_26w": 0.16706326560765056,
+      "share_beating_pool_13w": 0.5333333333333333,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "mid": {
+      "cards": 12,
+      "excess_13w": -0.036942074695188606,
+      "excess_26w": -0.015247411025527754,
+      "share_beating_pool_13w": 0.3333333333333333,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "small": {
+      "cards": 14,
+      "excess_13w": 0.08629601501549496,
+      "excess_26w": 0.01843919748026818,
+      "share_beating_pool_13w": 0.7142857142857143,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     },
+     "smaller": {
+      "cards": 1,
+      "excess_13w": 0.2212072173216308,
+      "excess_26w": 0.1792121118026617,
+      "share_beating_pool_13w": 1.0,
+      "weekly_mean_excess_13w": null,
+      "t": null
+     }
+    }
+   }
+  }
+ }
+}

@@ -5363,3 +5363,77 @@ more than 5%.
 
     python lab/pass45_channel_frozen.py          # every arm (slow: tens of minutes)
     python lab/pass45_channel_frozen.py smoke    # plumbing: 300 names
+
+## Pass 45 results -- the frozen rule owns a third of the market and earns a little less than the market
+
+Run 2026-11-20, `lab/results/pass45_channel_frozen.json`. 3,004 names,
+1,001 weeks, 2007-09-14 to 2026-11-13. "Pool" is every tradeable name,
+equal weight.
+
+| | Compound a year | Sharpe | Largest drawdown | Place among random baskets | Cards | 13-week return over the pool | t | Cards beating the pool |
+|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.66 | -54.6% | | | | | |
+| pool | 11.7% | 0.60 | -56.9% | | | | | |
+| **basket** | **9.6%** | **0.58** | **-50.9%** | **0th** | 16,206 | +0.13% | -0.3 | 46% |
+| no pullback rule | 9.8% | 0.59 | -53.3% | 0th | 17,169 | +0.02% | -0.5 | 46% |
+| older only | 9.8% | 0.59 | -53.7% | 0th | 11,738 | +0.49% | 0.6 | 47% |
+| ten straightest | 8.3% | 0.48 | -56.5% | 12th | 165 | +0.61% | -0.4 | 50% |
+
+| Basket by half | Compound a year | Pool | SPY | Sharpe | Pool | SPY | 13-week card excess |
+|---|---|---|---|---|---|---|---|
+| to 2016 | 7.0% | 10.7% | 6.9% | 0.45 | 0.55 | 0.45 | -0.09% |
+| 2017 on | 12.2% | 12.7% | 14.8% | 0.71 | 0.66 | 0.89 | +0.27% |
+
+**Against the lines.**
+- *Beats luck:* **no.** Below every random basket, overall and in both
+  halves. (A basket of 600 names leaves random baskets almost no spread,
+  so any shortfall reads as the 0th percentile; the plain fact is 9.6% a
+  year against the pool's 11.7%.)
+- *Better ride:* **no.** Sharpe 0.58 against SPY's 0.66; the drawdown is
+  a little smaller (-50.9% against -54.6%).
+- *The cards:* **no.** The 13-week excess is +0.13% over 16,206 cards,
+  indistinguishable from zero, negative before 2017, and 46% of cards
+  beat the pool.
+
+**What it shows.**
+1. *The rule is not picky.* The basket holds 614 names on an average
+   week, about a third of everything tradeable. The owner marked roughly
+   one A name in eight. A rule that says yes this often is describing a
+   rising market, not choosing within it, and a book that owns a third of
+   the market and sells the dips earns the market less the dips.
+2. *A card tells you nothing about the next quarter.* A name qualifying
+   on a random day did as well over the next 13 weeks as any other
+   tradeable name, to a tenth of a percent. That is the windowless-box
+   answer for this rule on this list.
+3. *The trade shape is still a trend rule's:* 36% of holds end at a gain,
+   the median loses 3.4%, the mean makes 3.6%, median hold twelve weeks.
+   The winners do not pay for the losers by enough.
+4. *The pullback rule did nothing here.* It matched his eye on tonight's
+   names and moved the result by 0.2 points a year the wrong way. It
+   keeps names out at entry; it says nothing once a name is held.
+5. *Older channels were slightly better cards* (+0.49% against +0.13%),
+   still nothing. That is the opposite direction from the owner's next
+   idea (channels of four to eight weeks) and is noted for that pass.
+
+**A flaw in what I registered.** The cards by size tier were measured
+against the whole pool, and the pool's small names are the survivors
+that inflate it (Pass 43). So the tier rows in the JSON (large caps
+-0.25%, small +0.79%) compare each tier with a biased average and should
+not be read as "small is better". Pass 43's within-tier comparison is
+the fair one and it pointed at large caps.
+
+**Scored against the predictions.** (1) Not shown: the sign is as
+predicted in each half but every number is within noise of zero. (2)
+Missed: I predicted the 40th to 85th percentile; it is the 0th. (3)
+Missed: the pullback rule did not help. (4) Two of three: median hold 12
+weeks and 36% of holds at a gain, but the mean hold gained 3.6%, not over
+5%.
+
+**What it means.** Seven draws at this idea on history, and the answer
+has not changed since Pass 41: about the market's return, a little less
+of its fall, no evidence of picking. Writing the owner's eye down more
+faithfully made the rule match his marks better and did not make it
+earn more. Either his eye adds something the formula still lacks (he is
+far pickier than it is), or the picture does not predict. History with
+this list cannot say which. Pass 44's ledger can: 42 of his own marks go
+in at Monday's open.
