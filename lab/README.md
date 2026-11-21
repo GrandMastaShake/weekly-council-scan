@@ -5082,3 +5082,73 @@ single out beforehand.
 4. Items 2 and 3 are suggestions read off this table after the fact. As
    rules they are untested, and adding them to Pass 41's book would be a
    fifth draw.
+
+## Pass 43 -- the owner's channel by size: mega, large, mid, small (registered 2026-11-20 before any run)
+
+The owner, 2026-11-20: "can you check if any particular caps are most
+reliable for the strategy? Mega, mid, small, etc." His own examples (UVE,
+GRDN) are small caps and Passes 38 to 42 ran on the S&P 500 only. This
+pass runs Pass 41's channel and book inside each size tier. Lab only.
+
+**Universe.** Today's full US listing from the Nasdaq screener at $300M
+and up and $3 and up, frozen to `lab/universe_all_<date>.csv` with each
+name's market cap and sector. Weekly bars from Yahoo, 2006-06 on,
+adjusted, cached locally.
+
+**Size, point in time.** A name's size in a past week is today's market
+cap scaled by its adjusted price then over now. That ignores share
+issuance and buybacks and is otherwise known at the time. Each week the
+names with a price are ranked by it and cut into tiers by rank, the way
+the indexes are: **mega** the top 100, **large** the next 400, **mid** the
+next 600, **small** the next 1,000, **smaller** everything below. Rank
+tiers, not dollar lines, so 2008 and 2026 are comparable.
+
+**Tradeable.** A name counts in a week when its adjusted close is $3 or
+more and its median weekly dollar volume over the past year is $5M or
+more. Costs a side: 0.10% mega and large, 0.20% mid, 0.30% small, 0.50%
+smaller. These are guesses and are low for the bottom tiers.
+
+**Per tier, four numbers.**
+1. *How often the picture appears:* the share of name-weeks with a
+   channel worth owning (Pass 41's definition, unchanged).
+2. *How long it lasts:* the share of lines broken within 13 weeks of the
+   week they were drawn.
+3. *Whether it pays:* the 13-week return of channel names over their own
+   tier's average for the same weeks, with errors that allow for the
+   overlap.
+4. *The book:* Pass 41's primary (ten slots, straightest first, the line
+   fixed at entry, sold on the first weekly close below it), choosing
+   only from that tier at entry and keeping a name that later changes
+   tier. Scored against 200 random books a week of the same size drawn
+   from the same tier, and shown beside the tier's equal-weight average.
+   No sector cap (the listing's sectors are coarse) and no index
+   membership rule (there is none for this list).
+Each is reported for the whole period and for 2017 on.
+
+**"Most reliable" means, fixed now:** the tier where the book places
+highest among its own tier's random books in both halves. A tier is only
+called reliable if that place is at or above the 75th percentile in both.
+Five tiers are five chances, so one tier clearing the line is weak
+evidence and is said so.
+
+**The survivor problem is worse here than in any earlier pass, and it is
+not the same in every tier.** Every name is alive and at least $300M
+today. The small tiers of 2010 are therefore made of two kinds of name:
+ones that stayed small, and ones that grew into today's large caps. The
+small companies that failed are absent. That inflates every small-tier
+return and it inflates the random books equally, so the place among
+random books is the only number that means much, and it still carries
+the bias from Pass 41 (everything sold later recovered). 2017 on is
+less exposed than the full period.
+
+**Predictions.** (1) The picture is most common in the mega and large
+tiers and lasts longest there. (2) The 13-week return over the tier's
+average is positive in the three lower tiers and near zero in mega and
+large: momentum is stronger in smaller stocks in the published record.
+(3) The book places higher among its random books in mid, small and
+smaller than in mega and large. (4) No tier clears the 75th percentile in
+both halves.
+
+    python lab/pass43_channel_by_size.py fetch    # the listing and the weekly bars -> lab/cache (prices are not committed)
+    python lab/pass43_channel_by_size.py          # the four numbers per tier
+    python lab/pass43_channel_by_size.py smoke    # plumbing: 400 names
