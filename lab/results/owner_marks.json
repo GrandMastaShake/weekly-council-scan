@@ -1,0 +1,638 @@
+{
+ "generated": "2026-11-20 23:33",
+ "prices_through": null,
+ "summary": {
+  "potential": {
+   "marks": 42,
+   "4w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "13w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "26w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   }
+  },
+  "broken": {
+   "marks": 18,
+   "4w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "13w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "26w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   }
+  },
+  "ideal": {
+   "marks": 2,
+   "4w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "13w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   },
+   "26w": {
+    "scored": 0,
+    "mean_place": null,
+    "share_above_50": null,
+    "t_against_50": null,
+    "mean_return_over_spy": null
+   }
+  }
+ },
+ "rows": [
+  {
+   "ticker": "AZN",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ATO",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMPH",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ABT",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "UVE",
+   "call": "ideal",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "GRDN",
+   "call": "ideal",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "CAT",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AGX",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ADM",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ACMR",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ACLS",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMAT",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMKR",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "APEI",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ASML",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "A",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ABCB",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ABNB",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ACT",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ADI",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AEG",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AHR",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AIR",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AIZ",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMD",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMPL",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AMZN",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ANET",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "APA",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ASC",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ASX",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "ATI",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AXGN",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "his own pick",
+   "scores": {}
+  },
+  {
+   "ticker": "AEP",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ALNT",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ARCB",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ANAB",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ATEX",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AYA",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ACRS",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AEHR",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AVAL",
+   "call": "broken",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AMRX",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "APPN",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ABM",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AVPT",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AMGN",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ALRM",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AVBH",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AVBC",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ACCO",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ANRO",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AZTA",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AAPL",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ALRS",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AMLX",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AMG",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ANDG",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AMTB",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "ASB",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AAMI",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  },
+  {
+   "ticker": "AME",
+   "call": "potential",
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "status": "not yet entered",
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "scores": {}
+  }
+ ]
+}
