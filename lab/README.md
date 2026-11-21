@@ -7951,3 +7951,42 @@ best book this lab has produced, on survivors. Two things stand
 between it and anything more: the dead names, which need bought data,
 and time, which needs it on a forward ledger. Count of ideas tried
 since Pass 58: twenty-three. Not a candidate for production.
+
+## Pass 62 -- is "cap of three plus the pause" solid? Its neighbours and its start date (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on Pass 61's table: "So cap of three plus pause
+looks pretty solid." It is the best row in the table (19.4% a year,
+Sharpe 0.93, -40.4%, 26.3% a year in the last decade). Pass 61 called
+the pause noise on the strength of the pause *alone* at four, eight and
+thirteen weeks. That is not the same as testing the combination he is
+pointing at, so this pass tests it directly. Lab only.
+
+**Two questions, both about luck rather than about a new idea.**
+- *Neighbours.* The same book with the pause at four and at thirteen
+  weeks (cap of three), and with the cap at two and at four (pause of
+  eight weeks). A rule that is solid does not depend on eight being
+  eight.
+- *Start date.* A ten-name book's whole history depends on which ten it
+  happened to hold first. The cap-of-three book and the cap-plus-pause
+  book are each started 0, 13, 26 and 39 weeks late and compared over
+  the weeks all four share. If one rule is really better, it is better
+  from every start.
+
+**Lines (fixed).** The combination is *solid* if both hold:
+1. all four neighbours have a thirty-year drawdown no deeper than the
+   cap of three alone (-45.6%), a thirty-year return no more than a
+   point a year under it (so 17.5% or more), and are at or above the
+   75th percentile of the base's random books in each period;
+2. from each of the four start dates, cap-plus-pause has a shallower
+   largest drawdown than the cap alone from the same start, and a
+   return over the shared weeks no more than a point a year lower.
+If it is solid it replaces the cap alone as the book to carry forward.
+If it is not, the cap alone stands and the pause stays dropped.
+
+**Prediction.** Not solid. I expect at least one neighbour to fail line
+1 (the four-week pause most likely, on drawdown) and at least one start
+date from which the pause is worse on drawdown. I was wrong on four of
+five predictions in Pass 61, so this is worth what it is worth.
+
+    python lab/pass62_is_it_solid.py          # full run
+    python lab/pass62_is_it_solid.py smoke    # plumbing: 300 names
