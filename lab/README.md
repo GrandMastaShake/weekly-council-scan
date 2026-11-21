@@ -4521,3 +4521,90 @@ gated row, which has no stock selection in it.
    later.
 4. The one transferable piece is the market brake, and its cost is
    stated above: it halves the drawdown and roughly halves the return.
+
+## Pass 39 -- the straight line: trade inside the channel, buy the bottom, sell the top (registered 2026-11-20 before any run)
+
+The owner's answer to Pass 38, 2026-11-20, in his words: "maybe the width
+tightens or expands for the stock depending on the trend of the sector and
+then the trend of the general market"; trend strength matters "over 5 hr,
+1 day, 1 week, 1 month, 1 year", and "a nice linear bottom left corner to
+top right corner is the ideal graph for any time frame"; "nearing the
+bottom of the channel presents buying opportunity but risk", "nearing the
+top of the channel presents selling opportunities". This pass encodes
+those three things. Lab only.
+
+**How it differs from Pass 38.** That book bought a pullback and held until
+the channel broke, with the sector and the market as on/off gates. This one
+trades *inside* the channel: in at the bottom, out at the top. The sector
+and the market no longer switch the book off; they set how much room a
+stock gets. And a name must be a straight line on several time frames, not
+only rising on one.
+
+**Straightness (fixed).** On daily closes, a least-squares line through the
+log closes of the last 21, 63, 126 and 252 sessions (a month, a quarter,
+half a year, a year). Each frame gives a slope and an R-squared: 1.0 is a
+ruler from bottom left to top right. A name is *lined up* when all four
+slopes are positive; its straightness is the mean of the four R-squareds.
+The lab holds daily bars only, so the 5-hour and intraday frames he named
+are not tested.
+
+**The channel (fixed).** The 126-session line; width is the residuals'
+standard deviation; z is how many widths the latest close sits above or
+below the line.
+
+**The book (fixed).** Decided on each Friday's close, traded at Monday's
+open, 0.10% a side. Ten slots of 10%, at most three names a sector, cash
+earns zero. Frozen S&P 500 list, a name counted from the date it joined,
+not pinned (Pass 37).
+- *Buy:* lined up, and at least one width below its line (z <= -1), but
+  not through the break line. Straightest first.
+- *Sell at the top:* z >= +1.
+- *Sell on a break:* z below the break line, or the 126-session slope no
+  longer positive.
+- *The break line moves with the backdrop:* 2.0 widths, plus 0.5 when the
+  stock's sector fund is trending up, plus 0.5 when SPY is (trending up:
+  its 126- and 252-session slopes both positive). So 3.0 widths of room in
+  a strong sector in a strong market, 2.0 in neither. This direction is my
+  reading of "tightens or expands"; the opposite reading is an arm.
+
+**Arms.** The primary arm is **line+width**. Six are run; only the primary
+is scored against the lines.
+
+| Arm | What it is |
+|---|---|
+| line | break fixed at 2.5, no backdrop |
+| **line+width** | the break line moves with sector and market, as above |
+| reversed | the opposite reading: 3.0 widths, minus 0.5 for each of sector and market trending up |
+| no top | the primary, without the sale at the top (held until a break) |
+| any channel | the primary, without the lined-up rule (126-session slope positive is enough) |
+| council names | the primary, drawn only from the Council's live universe where it overlaps the list |
+
+**Data, basis, control.** As Pass 38: weeks from the first with 252
+sessions of history to 2026-11-13; held names marked Friday close to
+Friday close; each arm placed among 200 random books a week holding the
+same number of names from the same pool. SPY and the list for scale.
+
+**Verdict lines (fixed, the same as Pass 38).**
+- *Beats luck:* mean weekly return at or above the 95th percentile of its
+  random books overall, and at or above the 75th in each half (to 2016,
+  from 2017).
+- *Better ride:* Sharpe above SPY's and a smaller largest drawdown.
+
+**This is the second try at one idea, and it counts as that.** Pass 38
+failed. Every revision after a failure is another draw, and enough draws
+will pass a 95th-percentile line by chance. So a pass here earns a place
+on the forward page, scored on weeks nobody has seen, and nothing more. A
+fail is not softened by pointing at whichever arm did best.
+
+**Predictions.** (1) The primary does better against luck than Pass 38's
+9th percentile, because selling the top and buying the bottom harvests
+the short-term reversal that large caps do show: between the 50th and
+90th percentile overall. (2) It still fails the beats-luck line. (3) "No
+top" places below the primary. (4) The moving break line lands within
+0.05 Sharpe of the fixed one, and "reversed" within 0.05 of both: the
+backdrop will not matter much through the width. (5) "Any channel" places
+within 15 percentile points of the primary: straightness adds little.
+(6) Median hold under six weeks.
+
+    python lab/pass39_straight_line.py          # every arm
+    python lab/pass39_straight_line.py smoke    # plumbing: 2022 on, 80 names, 20 draws
