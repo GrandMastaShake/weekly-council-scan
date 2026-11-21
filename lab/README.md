@@ -6088,3 +6088,44 @@ strength and weakness are the same.
 4. None of this moves either book past the S&P 500. Rules of this kind
    shape the ride. They were never likely to be where a missing edge
    was, and this pass does not change that.
+
+## Pass 50 note -- the channel-hold book's drawdown is a start-up artifact of the test (2026-11-21)
+
+The owner asked how a book that sells on a break can fall 54% to 61%.
+A diagnostic of the baseline arm (same rule, same data, more printed; not
+a new test) shows the figure is the whole book in 2008-09, and that three
+choices of mine produced it.
+
+1. *The book starts nearly empty.* Channels need two years of bars and
+   the bars start in 2006, so the book opens in July 2008 with 24 names,
+   not 225. It holds fewer than 50 names in 60 of 957 weeks, all at the
+   start, and first reaches 100 in September 2009.
+2. *There is no cash.* Money from a sold name is spread over what is
+   left. The book went from 32 names in September 2008 to 2 in February
+   2009, still fully invested: the trough (week ending 2009-03-06) is two
+   stocks, and those two then missed 2009's rebound (+10% against +32%
+   for SPY).
+3. *The line is fixed at entry and can be far under the price.* Over all
+   5,391 sales the line sat a median 6.2% under the entry close, but more
+   than 28% under for a tenth of them, and the sale came a median 7.5%
+   under the name's high while held (27% for the worst tenth). A name
+   bought high above an old line can fall most of the way to nothing
+   before it is sold (NVAX 2020-23, -98% from its high). The weekly-close
+   trigger adds a median 2.1% of overshoot under the line.
+
+**What this changes.** The -61.4% and -53.7% drawdowns, and the "to
+2016" half of every hold-until-break book in Passes 48 and 50, are
+dominated by a book of 2 to 32 names in the first year. From the saved
+Pass 48 by-year figures, the top-500 "screen in, break out" book made
+12.4% a year from 2010 on against 11.9% for the random pool and 13.8%
+for SPY; before costs its largest fall from July 2009 on is -32.6%.
+2010 is a cut chosen after seeing the result, so this is a reading, not
+a verdict: without the start-up the book is a little ahead of luck and
+still about a point and a half behind the S&P 500, on a list with
+survivor bias in its favour.
+
+**What a fair test of the owner's rule needs** (not yet registered):
+sold slots go to cash, with a cap on any one name's weight; the line
+moves up with the price ("dynamic as it goes up with some cushion",
+which Pass 46 tested but Passes 48 and 50 did not carry over); and a
+start no earlier than the week the book can hold a full set of names.
