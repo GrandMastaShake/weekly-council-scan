@@ -6739,3 +6739,61 @@ ten years a book of equally weighted large stocks starts three points a
 year behind SPY before any rule is applied, so a channel book that only
 ever holds equal weights of whatever passes its screen has that much to
 make up first.
+
+## Pass 55 -- the best movers of the last ten years, and what marked them beforehand (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "let's analyze some of the best movers over that
+period and what made them special. Time to dive into the trenches of
+time!" Lab only. **A description, not a test: no rule is being judged
+and nothing here is a candidate for anything.**
+
+**Why this needs care.** Picking the winners afterwards and listing what
+they had in common finds traits every time, and most are shared by the
+losers. So every trait is counted on *all* names and reported as how
+much more common the winners are among names that had it (1.0 means no
+more common than anywhere else). And every trait found on 2016-26 is
+counted again on **2006-11 to 2016-11**, the decade before, on the same
+list. A trait that marks the winners of only one decade is a story about
+that decade.
+
+**Data.** The weekly bars from 1994 (Pass 53), the whole list of 3,004
+names, prices only: the lab has no earnings or sales history, so
+"special" here means what could be seen on the chart and in size and
+sector. Channels are the Pass 41 drawing with a channel counting after
+8 weeks (Pass 54). The list holds only names alive today, so there are
+no decade-long losers that went to nothing; the comparison is winners
+against survivors.
+
+**Who counts.** A name is in a decade's population if it was tradeable
+at the start (price $3, $5M a week) and has bars at both ends. *Best
+movers*: the top 5% by total return over the decade; the top 30 are
+listed by name. Names listed after the start cannot be in it, so a
+second list takes **the best two-year runs** begun inside 2016-26 by any
+tradeable name, later listings included.
+
+**What is measured.**
+- *At the start:* size tier, sector, return over the prior one and two
+  years, weekly swing, distance under the 52-week high, whether it had a
+  channel worth owning and was on the screen.
+- *Along the way:* how many times it closed 20% under its high (each
+  one a sale under the owner's rule), largest drawdown, share of weeks
+  on the screen.
+- *What the rules would have caught:* each name traded alone, bought
+  when on the screen and sold 20% under its high, as a share of what
+  holding it throughout made; and how much of the move was over by the
+  first buy.
+- *For the best two-year runs:* where the stock stood when the run
+  began (how far under its high, in a channel or not) and whether the
+  screen saw it in the run's first six months.
+
+**Predictions.** (1) The winners are smaller and jumpier at the start
+than the rest, in both decades. (2) Prior return does little: winners
+are not concentrated among the names that had already run. (3) Sector
+matters in 2016-26 (technology) and the sector is a different one in
+2006-16. (4) The typical best mover closed 20% under its high at least
+five times in its decade, and the rules alone would have kept less than
+half of what holding it made. (5) Most of the best two-year runs began
+more than 20% under the 52-week high, off the screen.
+
+    python lab/pass55_best_movers.py          # full run
+    python lab/pass55_best_movers.py smoke    # plumbing: 300 names
