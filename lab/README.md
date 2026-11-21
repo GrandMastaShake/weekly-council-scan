@@ -4792,3 +4792,73 @@ separate them.
 no more variants. What is left is what the Pass 39 results named: a
 point-in-time membership file, or a forward record of the owner's own
 marks.
+
+## Pass 41 -- the owner's channel: drawn from the swing low along the lows, held until a weekly close breaks it (registered 2026-11-20 before any run)
+
+Passes 38 to 40 closed "this family" and this reopens it, for one reason:
+the owner showed his charts, and they are not what those passes drew. He
+sent UVE and GRDN on weekly bars as the ideal ("weekly charts are the most
+reliable"), and CAT with his own channel drawn on it as a break: anchored
+at the April 2025 low, the lower line run along the lows since, the upper
+line parallel through the highs, about a year and a half long, broken when
+the weekly bars went through the lower line. Against that:
+- I fitted 26 weeks. He reads one to two years. On GRDN the last 26 weeks
+  have a straightness of 0.11 and the two-year view 0.87.
+- I drew a best-fit line with a band of 2.5 times the wobble. He draws
+  support through the lows; on UVE that channel is about twice as wide.
+- I ranked by the deepest pullback. He picks the straightest long line.
+So this pass draws his channel. It is still the fourth draw at the idea
+and is counted as that.
+
+**The channel (fixed).** On weekly bars, at each Friday close:
+- *Anchor:* the lowest weekly low of the last 104 weeks. It must be 26 to
+  100 weeks back, so there is a channel to speak of and it is not the
+  stock's whole history.
+- *Lower line:* from the anchor's low, the steepest straight line (on a
+  log scale) that stays at or under every weekly low since. This is the
+  support line a person draws under the lows.
+- *Upper line:* parallel, through the weekly high furthest above it.
+- *A channel worth owning:* the lower line rises at 10% a year or more,
+  and the weekly closes since the anchor have a straightness (R-squared
+  against their own best-fit line) of 0.80 or more. UVE and GRDN both
+  clear that today.
+
+**The book (fixed).** Decided at Friday's close, traded at Monday's open,
+0.10% a side; ten slots of 10%, three a sector; the frozen S&P 500 list
+from the date a name joined; not pinned (Pass 37); cash earns zero.
+- *Buy:* a name with a channel worth owning, straightest first.
+- *The channel is drawn once.* Its lower line on the day of entry is
+  extended forward at the same slope.
+- *Sell:* the first weekly close below that line. Nothing else sells.
+
+| Arm | What it is |
+|---|---|
+| **owner's channel** | as above -- the primary |
+| lower half | buys only in the lower half of the channel |
+| 3% buffer | sells on a weekly close more than 3% below the line |
+| straighter | straightness of 0.90 or more |
+| market brake | the primary, and the book in cash while SPY's own channel (Pass 38's reading) is broken |
+
+**What it is not.** His examples UVE and GRDN are small caps and this runs
+on the S&P 500, because that is the list the lab holds twenty years of
+prices for. The small and mid cap list has prices from August 2023 only,
+which leaves no room for a two-year channel. A small cap run needs a
+download first and is a separate pass. CAT is in this list.
+
+**Control and verdict lines.** As Passes 38 to 40: place among 200 random
+books a week at the same exposure; beats luck at the 95th percentile
+overall and the 75th in each half; better ride on Sharpe and drawdown
+against SPY. Only the primary is scored.
+
+**Predictions.** (1) This does better against luck than anything in
+Passes 38 to 40, because a long straight rise is momentum with a
+smoothness filter, and that has support in the published record: the
+primary lands between the 30th and 75th percentile. (2) It fails the
+beats-luck line. (3) The lower line is broken sooner than a chart reader
+would expect, because a trend that slows without falling still crosses a
+rising line: median hold under 30 weeks. (4) The 3% buffer and the
+primary land within 0.05 Sharpe of each other. (5) The market brake cuts
+the largest drawdown by more than a third.
+
+    python lab/pass41_owner_channel.py          # every arm
+    python lab/pass41_owner_channel.py smoke    # plumbing: 2022 on, 80 names, 20 draws
