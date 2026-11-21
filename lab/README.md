@@ -4608,3 +4608,77 @@ within 15 percentile points of the primary: straightness adds little.
 
     python lab/pass39_straight_line.py          # every arm
     python lab/pass39_straight_line.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 39 results -- worse than Pass 38: every arm sits in the bottom two percent of random books
+
+Run 2026-11-20, `lab/results/pass39_straight_line.json`. 1,015 weeks,
+2007-06-08 to 2026-11-13, 503 names (258 of them in the Council's
+universe).
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Sold at the top | Sold on a break |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.5% | 0.64 | -54.6% | 100% | | | | | | |
+| list | 13.0% | 0.72 | -52.3% | 100% | | | | | | |
+| line | 5.7% | 0.43 | -39.7% | 83% | 1st | 7th | 2nd | 5 wk | 438 | 816 |
+| **line+width** | **3.6%** | **0.30** | **-50.9%** | 83% | **0th** | 2nd | 0th | 6 wk | 422 | 640 |
+| reversed | 6.0% | 0.45 | -36.1% | 82% | 2nd | 2nd | 22nd | 4 wk | 458 | 1,166 |
+| no top | 5.3% | 0.40 | -37.3% | 89% | 0th | 8th | 2nd | 11 wk | 0 | 523 |
+| any channel | 8.3% | 0.51 | -58.6% | 98% | 2nd | 12th | 6th | 6 wk | 448 | 840 |
+| council names | 5.7% | 0.45 | -33.4% | 77% | 2nd | 0th | 12th | 7 wk | 411 | 565 |
+
+**Against the lines.** *Beats luck:* **no**, and not close: no random book
+in 200 did as badly as the primary. *Better ride:* **no**: Sharpe 0.30
+against 0.64, and a drawdown (-50.9%) nearly as deep as SPY's.
+
+**What happened.**
+1. *The book sells its winners and keeps its losers.* A name bought at the
+   bottom of its channel is sold a width above the line, which caps the
+   gain at about two widths. A name that keeps falling is held until the
+   break line, two to three widths down, and the primary gives the most
+   room exactly when the backdrop looked strongest. Of 1,062 closed
+   positions, 422 left at the top and 640 on a break.
+2. *More room made it worse here, the opposite of Pass 38.* The moving
+   break line (0.30 Sharpe) lost to the fixed 2.5 (0.43) and to the
+   reversed reading (0.45). With the top sale capping gains, room only
+   lets losses run.
+3. *Straightness did not select.* Dropping the lined-up rule ("any
+   channel") gave the best compound return of the six, at nearly full
+   exposure and the deepest drawdown.
+4. *No brake.* With the market only adjusting the width, the book lost
+   29.6% in 2008 and 24.6% in 2020, a year SPY made 18.0%.
+
+**Scored against the predictions.** (1) Missed badly: I predicted the
+50th to 90th percentile and got the 0th. I thought buying the bottom and
+selling the top would harvest short-term reversal; the break exits gave
+back more than that. (2) Held. (3) Not shown: "no top" and the primary are
+both at the bottom, and "no top" has the better Sharpe. (4) Missed: the
+moving line is 0.13 Sharpe below the fixed one. (5) Held: "any channel" is
+within two points of the primary. (6) Missed by a hair: median hold is
+six weeks, not under six.
+
+**Two passes, thirteen arms, one pattern.** Every channel rule tried here
+places in the bottom tenth of random books in this data, most at the very
+bottom. Being that reliably wrong is information, and it has two readings
+that this data cannot separate:
+- The survivor list. Every name that broke down in this data later
+  recovered, because the ones that did not are gone from the index. A
+  rule that sells breakdowns is penalised by construction.
+- Large caps mean-revert at these horizons. A stock that has fallen
+  through its channel is, on average, nearer a bounce than a collapse,
+  and a stock that looks like a ruler has already been bid.
+Either way the tempting conclusion, "do the opposite", is not supported:
+buying breakdowns in a list of survivors is the same bias with the sign
+flipped.
+
+**What it means.**
+1. Neither pass supports a channel book, and Pass 39's revisions did not
+   rescue Pass 38. As registered, nothing here goes to the forward page.
+2. Further revisions on this data are not worth running. The list cannot
+   tell a bad rule from a biased test, and each new variant is another
+   draw. The two things that could settle it are a point-in-time index
+   membership file (names that left, with their prices) and a forward
+   record.
+3. A forward record costs nothing: the owner marks charts on a date, the
+   marks are logged before the week trades, and they are scored against
+   random books from the same universe. That tests his eye, which no
+   formula here has matched, and it cannot be flattered by hindsight.
