@@ -4441,3 +4441,83 @@ If the rule fails, that is the first thing to vary, in a new pass.
 
     python lab/pass38_chart_stack.py          # every arm, 2007 on
     python lab/pass38_chart_stack.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 38 results -- the stack fails every line: it picks worse than luck, and only the market layer does anything
+
+Run 2026-11-20, `lab/results/pass38_chart_stack.json`. 1,028 weeks,
+2007-03-09 to 2026-11-13, 503 names.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold |
+|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.67 | -54.6% | 100% | | | | |
+| SPY gated | 5.8% | 0.57 | -22.1% | 68% | | | | |
+| list | 13.4% | 0.74 | -52.2% | 100% | | | | |
+| stock | 6.2% | 0.44 | -57.8% | 97% | 0th | 0th | 13th | 9 wk |
+| stock+sector | 3.9% | 0.33 | -30.6% | 84% | 0th | 8th | 0th | 6 wk |
+| **full** | **5.5%** | **0.48** | **-21.4%** | 68% | **9th** | 67th | 2nd | 7 wk |
+| full, 2.0 | 4.0% | 0.37 | -25.6% | 68% | 0th | 30th | 0th | 5 wk |
+| full, 3.0 | 6.5% | 0.56 | -22.2% | 68% | 30th | 78th | 14th | 7 wk |
+| full, beta | 4.6% | 0.40 | -24.3% | 68% | 3rd | 29th | 2nd | 6 wk |
+| full, no pullback | 5.9% | 0.48 | -25.3% | 68% | 20th | 30th | 23rd | 7 wk |
+
+**Against the lines.**
+- *Beats luck:* **no.** The full arm earned 0.119% a week; random books
+  holding the same number of names earned 0.150%. It sits at the 9th
+  percentile overall and the 2nd since 2017.
+- *Better ride:* **no.** The drawdown is far smaller (-21.4% against
+  -54.6%) but the Sharpe ratio is lower than SPY's (0.48 against 0.67).
+- *Each layer earns its place:* **no.** Sharpe goes 0.44, 0.33, 0.48: the
+  sector layer makes it worse and the market layer rescues it.
+
+**What each layer did.**
+1. *Stock channels pick worse than chance.* Fully invested, the stock arm
+   compounds 6.2% against the list's 13.4%, and no random book in 200 did
+   as badly. Costs are about 0.6% a year of that. The rest is the rule
+   itself: it sells a name after it has fallen through its channel, and in
+   this list fallen names came back.
+2. *The sector layer subtracts.* It sells whole sectors after they have
+   fallen and waits about half a year of evidence before going back.
+3. *The market layer is the only one that works, and it works as a brake,
+   not an engine.* The full arm sat wholly in cash in 331 of 1,028 weeks.
+   It lost 0.4% in 2008 against SPY's 39.4%. It also made 5.6% in 2019
+   against 32.8% and 3.1% in 2023 against 26.2%: the channel needs months
+   of recovery before it calls the trend up again, and the recovery is
+   where the year's return is. Holding SPY under the same gate does the
+   same thing more cheaply (5.8% a year, -22.1%).
+4. *More room is better; beta is not the way to give it.* The break at 3.0
+   beats 2.5 beats 2.0 on every measure, and median holds are five to
+   seven weeks, so the rule is being shaken out constantly. Scaling the
+   line by beta did worse than leaving it alone.
+
+**Scored against the predictions.** (1) Held: the drawdown is 39% of
+SPY's. (2) Half held: it does not beat luck and compounds below the list,
+but I predicted the 40th to 80th percentile and it landed at the 9th. I
+expected noise and got a rule that is reliably wrong. (3) Half held: the
+market layer does the work (+0.15 Sharpe), but the sector layer did not
+move it by under 0.05, it cost 0.11. (4) Missed: beta is 0.08 below the
+full arm. (5) Held.
+
+**The caution that cuts in the rule's favour.** The list is the index's
+members today. A stock that broke its channel and never came back is not
+in it, so every breakdown in this data was followed by a survivor's
+recovery. That biases the test against any rule that sells breakdowns, by
+an amount this pass cannot measure. It does not explain the failure since
+2017 in names that were already members, and it does not touch the SPY
+gated row, which has no stock selection in it.
+
+**What it means.**
+1. Do not put this rule in front of the Council. As written it would have
+   taken about a third of a point a year less than throwing darts at the
+   same exposure, for a smoother ride that SPY-and-cash delivers alone.
+2. Marky's `channel` mode in Council v2 is this same reading on a one-week
+   hold. This pass does not test that hold, but it is no support for it.
+3. The owner's eye and this formula are not the same thing. The formula
+   fits one fixed 26-week window and waits for a 40-week average; a person
+   drawing a channel chooses where it starts and what counts as a touch,
+   and sees it after the fact. Whether a rule that draws channels the way
+   he does can be written down, and whether it then works on data it has
+   not seen, is a separate pass. The honest way to find out is forward:
+   he marks charts on a date, the marks are logged, and they are scored
+   later.
+4. The one transferable piece is the market brake, and its cost is
+   stated above: it halves the drawdown and roughly halves the return.
