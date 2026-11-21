@@ -4339,3 +4339,105 @@ five); held on the size. (3) Held: nothing here shows better returns.
    other side. Not tested here.
 4. Not covered, as registered: a deal younger than eight weeks, stock
    deals, halts.
+
+## Pass 38 -- the chart stack: market, sector and stock channels, nothing else (registered 2026-11-20 before any run)
+
+The owner's idea, 2026-11-20, in his words: plot a channel up and "it is
+really easy to pick what sectors are worth investing in", and when they
+break it, avoid them until the pattern shows again; "same with stocks";
+read "the general market trend, sector trend and then stock trend" and
+ignore the rest as noise, "as long as the company is reasonably stable".
+This pass builds exactly that as a mechanical book and asks whether it
+beats luck. No LLM, no wiki, no valuation, no earnings data. Lab only:
+nothing in production changes.
+
+**The channel (fixed, and not new).** Marky's `channel_facts` in
+`scan_pipeline/engines/marky.py`, called as it stands: a least-squares line
+through the last 26 weekly log closes, the residuals' standard deviation as
+its width. A chart is *in a rising channel* when the line slopes up, the
+40-week average is higher than it was ten weeks earlier, and the latest
+close is no more than 2.5 widths below the line. It *breaks* when any of
+the three fails. The same reading is applied to SPY, to the eleven sector
+funds and to every stock. Needs 40 weekly closes.
+
+**The book (fixed).** Decided on each Friday's close, traded at the next
+Monday's open, 0.10% a side.
+- Ten slots of 10% each, at most three names in one sector; an empty slot
+  is cash and cash earns zero.
+- *Entry:* a stock in a rising channel, at or below its centre line (the
+  pullback), ranked by the production channel score without the wiki
+  adjustment (position 50, slope 20, MACD 30).
+- *Exit:* the stock's channel breaks. It is held otherwise, for as long as
+  that takes. A sold name can come back when it qualifies again.
+- *Sector layer:* the stock's sector fund must be in a rising channel to
+  enter; when the fund breaks, the sector's names are sold.
+- *Market layer:* SPY must be in a rising channel to enter; when it
+  breaks, the whole book goes to cash.
+- *Reasonably stable:* the frozen S&P 500 list (a name counts from the date
+  it joined the index), and not pinned by the Pass 37 screen.
+
+**Arms.** The primary arm is **full** (stock + sector + market, break at
+2.5). The rest are there to say which part does the work:
+
+| Arm | What it is |
+|---|---|
+| SPY | bought and held |
+| SPY gated | SPY while its own channel is rising, cash otherwise |
+| list | every eligible name, equal weight |
+| stock | stock channel only |
+| stock+sector | the sector layer added |
+| **full** | the market layer added |
+| full, 2.0 / full, 3.0 | the break line moved |
+| full, beta | the break line at 2.5 times the stock's beta (52 weekly returns against SPY, held between 0.75 and 1.5): the owner's point that a jumpier stock needs more room |
+| full, no pullback | enters anywhere inside the channel, ranked by slope over width (the cleanest channel first) |
+
+On the beta arm, said before the run: the width is already each stock's own
+noise around its own line, so 2.5 widths is already wider for a jumpier
+stock. Beta adds its sensitivity to the market on top.
+
+**Data.** The frozen S&P 500 list of 2026-09-22 and SPY, daily adjusted
+bars from 2006-06, weeks from 2007-03 (the first with 40 weekly closes) to
+2026-11-13. Sector funds XLB XLE XLF XLI XLK XLP XLU XLV XLY from the
+start; Real Estate is read from XLF until XLRE has 40 weeks (it was inside
+XLF until 2016) and Communication Services from XLK until XLC does.
+
+**Basis, and where it departs from the lab's.** A held name is marked
+Friday close to Friday close, because this book holds over weekends; an
+entry earns Monday open to Friday close and an exit earns Friday close to
+Monday open. Every held name is counted at 10% each week (the drift
+between rebalances is ignored).
+
+**The control that matters.** The list is today's index members, so it is
+full of companies that went on to do well: any picker drawn from it looks
+good against SPY, and none of these numbers is a return anyone could have
+had. So each arm is measured against **random books at the same
+exposure**: every week, 200 draws of as many names as the arm held, from
+the names eligible that week, 10% each, no costs. The arm's place among
+those 200 is the result. SPY and the list are shown for scale.
+
+**Verdict lines (fixed).**
+- *Beats luck:* the full arm's mean weekly return is at or above the 95th
+  percentile of its random books over the whole period, and at or above
+  the 75th in each half (2007-2016, 2017-2026).
+- *Better ride:* its Sharpe ratio (weekly, cash at zero) is above SPY's
+  and its largest drawdown is smaller.
+- *Each layer earns its place:* Sharpe rises from stock to stock+sector to
+  full.
+Seven strategy arms are run; only the full arm is scored against the
+lines, and the others are reported as sensitivity, not as second chances.
+
+**Predictions.** (1) The full arm's largest drawdown is under 60% of
+SPY's. (2) It does **not** beat luck: its place among random books lands
+between the 40th and 80th percentile, and its compound return is below the
+list's. (3) The market layer does most of the work: it raises Sharpe more
+than the sector layer, which moves it by less than 0.05. (4) The beta arm
+lands within 0.05 Sharpe of the full arm. (5) "SPY gated" has a smaller
+drawdown than SPY and a lower compound return.
+
+**Not covered.** Earnings dates (no history of them back to 2007), taxes,
+names that left the index, intraday stops, and the eye: a person drawing a
+channel picks its start and its touches, and this fits one fixed window.
+If the rule fails, that is the first thing to vary, in a new pass.
+
+    python lab/pass38_chart_stack.py          # every arm, 2007 on
+    python lab/pass38_chart_stack.py smoke    # plumbing: 2022 on, 80 names, 20 draws
