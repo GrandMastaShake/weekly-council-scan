@@ -7031,3 +7031,123 @@ Banks, insurers and property trusts mostly do not report a gross profit.
 Foreign filers on other forms are absent.
 
     python lab/pass56_back_in.py fetchsec    # needs SEC_CONTACT in the environment; the address is not stored
+
+## Pass 56 results -- two things tell a good sale to undo from a bad one in both decades: whose fall it was, and how deep the MACD line is; no fundamental clears the line; quicker ways back in keep more by being in more, not by choosing better
+
+Run 2026-11-21, `lab/results/pass56_back_in.json`. 1,151 names that were
+ever in the top 500 since 2006; Yahoo earnings history for 1,140; SEC
+quarterly sales for 984, net income for 1,028, gross profit for 530.
+
+**The sales.** 2016-26: 2,289 sales, 47% good to undo (back above the
+old high within a year, a median 18 weeks later). 2006-16: 1,923 sales,
+42% (23 weeks). Over the 52 weeks after a sale the median stock trailed
+SPY by 8.6 points and 3.1 points: the typical sale was right, and
+nearly half were wrong.
+
+**Part A: what was known on the day.** Share of sales that were good to
+undo, one side against the other.
+
+| Known on the day of the sale | 2016-26 | 2006-16 | Differentiates? |
+|---|---|---|---|
+| **The stock's fall less SPY's**, fifth that fell least beyond the market / fifth that fell most | 64% / 35% | 46% / 33% | **yes: 29 and 13 points** |
+| **MACD line as a share of price**, highest fifth / lowest (most negative) fifth | 51% / 37% | 46% / 34% | **yes: 14 and 12 points** |
+| Weeks from the high to the sale, quick / slowest fifth | 49% / 38% | 46% / 35% | about 11 both, on the line |
+| SPY 10% or more under its high, yes / no | 60% / 42% | 45% / 40% | no: 18 and 5 |
+| SPY under its 40-week average, yes / no | 55% / 42% | 43% / 41% | no |
+| MACD line above zero, yes / no | 52% / 41% | 45% / 39% | no: 11 and 6 |
+| MACD histogram rising, yes / no | 48% / 47% | 53% / 41% | no |
+| Close above its 40-week average, yes / no | 53% / 45% | 48% / 40% | no: 8 and 8 |
+| Weekly swing, jumpiest / calmest fifth | 49% / 44% | 49% / 32% | no: 5 and 17 |
+| Three or more of the last four reports beat, yes / no | 49% / 41% | 46% / 36% | no: 8 and 10 |
+| Last report beat the estimate, yes / no | 48% / 44% | 45% / 35% | no: 4 and 10 |
+| EPS up on a year before, yes / no | 49% / 42% | 43% / 40% | no |
+| Last EPS positive, yes / no | 48% / 39% | 42% / 40% | no |
+| Sales growth faster than the quarter before, yes / no | 54% / 46% | 46% / 39% | no: 8 and 7 |
+| Gross margin up on a year before, yes / no | 54% / 49% | 50% / 39% | no: 5 and 11 |
+| Net income positive, yes / no | 50% / 47% | 49% / 39% | no |
+| Sales up on a year before, yes / no | 49% / 52% | 47% / 41% | no |
+| Sales up 20% or more, yes / no | 48% / 50% | 47% / 45% | no |
+| Sold within two weeks after a report, yes / no | 41% / 48% | 40% / 43% | no |
+| Gain from the buy to the high; prior 52-week return; volume in the fall | flat | flat | no |
+
+(SEC-based rows in 2006-16 rest on 300 to 770 sales from about 2010 on.)
+
+**Part B: ways back in.**
+
+| Way back in | Comes within a year | Weeks after the sale | Next 26 weeks less SPY, 2016-26 / 2006-16 | Then fell 20% before rising 20% |
+|---|---|---|---|---|
+| the screen | 53% / 49% | 2 / 1 | +2.8% / +1.6% | 36% / 31% |
+| above the 10-week average | 100% | 6 / 6 | -0.2% / +0.2% | 35% / 37% |
+| half back | 69% / 67% | 10 / 12 | +0.6% / -0.9% | 31% / 34% |
+| MACD cross | 100% | 12 / 13 | -3.1% / -0.2% | 37% / 38% |
+| new high | 47% / 42% | 18 / 23 | +2.0% / -0.9% | 31% / 31% |
+| (never sold) | | 0 | +1.1% / +0.7% | |
+
+Each name traded alone over its decade, the screen plus one way back in:
+
+| | Best movers keep, 2016-26 (holding: 12.9x) | Best movers keep, 2006-16 (holding: 8.0x) | Mean log growth, every name, 2016-26 / 2006-16 | Weeks held, every name |
+|---|---|---|---|---|
+| the screen alone | 1.4x | 1.5x | 0.09 / 0.20 | 16% / 26% |
+| or above the 10-week average | **4.2x** | **3.4x** | **0.21 / 0.42** | 63% / 70% |
+| or MACD cross | 2.7x | 3.4x | 0.12 / 0.36 | 55% / 65% |
+| or half back | 2.5x | 2.6x | 0.16 / 0.28 | 30% / 45% |
+| or new high | 2.5x | 2.1x | 0.12 / 0.26 | 23% / 37% |
+
+**Against the lines.**
+- *Differentiates:* two variables. **Whose fall it was**: a sale made
+  when the stock had fallen little more than the market was wrong far
+  more often than one made when the stock fell on its own. **The depth
+  of the MACD line**: sales with the weekly MACD line deeply negative
+  (a long slide already behind it) were rarely wrong. The slowness of
+  the fall says the same thing and sits on the line.
+- *Fundamentals:* none clears the line. Four lean the right way in both
+  decades by five to eleven points: a run of earnings beats, sales
+  growth speeding up, gross margin rising, and (not a fundamental) the
+  price still above its 40-week average. Whether sales or earnings were
+  merely growing, and how fast sales grew, told nothing.
+- *A way back in beats the screen:* none, by the line as written. No
+  way back in is followed by better returns than the screen's in both
+  decades.
+
+**What happened.**
+1. *The cleanest signal is not about the company at all.* If the market
+   took the stock down, the sale was usually wrong; if the stock went
+   down alone, usually right. This is Pass 51's finding (the 20% exit
+   costs most in market-wide falls) seen one sale at a time, and it
+   holds in both decades in a form that "SPY is 10% off its high" does
+   not.
+2. *MACD is useful as a measure of damage, not as a trigger.* How
+   negative the line is at the sale separates good from bad. The MACD
+   cross as a way back in is the worst of the five: it comes after 12
+   weeks, is followed by the poorest returns, and fails most often.
+3. *Fundamentals help at the margin and in the next year's return more
+   than in the recovery.* In 2016-26 stocks sold after a miss, or with
+   earnings down, went on to trail SPY by 11 to 13 points over the next
+   year against roughly level for the others; in 2006-16 the same split
+   is three to four points or absent.
+4. *Getting back in sooner keeps more, in both decades, without picking
+   better.* Buying back on a close above the 10-week average tripled
+   what the rule kept of the best movers (1.4x to 4.2x; 1.5x to 3.4x)
+   and doubled the average name's growth. It did so by being in the
+   stock 63% to 70% of the time against 16% to 26%: the 26 weeks after
+   it are no better than SPY. Holding throughout still made far more
+   than any of them.
+
+**Scored against the predictions.** (1) Half: the market differentiates
+in both decades as the stock's fall less SPY's, not as SPY 10% under its
+high. (2) Missed: the depth of the MACD line differentiates. (3) Mostly
+held: the EPS measures add up to nine points, short of the line; but
+the run of beats did as much as any of them. (4) Half: the new high
+comes last and fails least, the MACD cross fails most, but it is not the
+soonest. (5) Half: no way clears the line; the 10-week average, not the
+new high, adds most to the best movers.
+
+**What it means.** A rule worth testing in the ten-slot book has now
+been described from his question, and it has two halves. *Do not sell,
+or buy straight back, when the fall was the market's.* *After a sale
+for the stock's own fall, come back on a close above the 10-week
+average unless the MACD line is deeply negative*, with a run of beats
+and quickening sales as tie-breakers. Every part of that was read off
+these two decades, so it goes to a registered test in ten slots with
+the market rule, and then to the forward ledger; it is not a finding
+yet.
