@@ -5278,3 +5278,88 @@ will take months, so the first honest read is in 2027.
 
 The scorer is written and committed before the first 4-week score is due
 (2026-12-18).
+
+## Pass 45 -- the channel rule, frozen: what the owner's marks taught, tested on history it has not seen (registered 2026-11-20 before any run)
+
+The owner, 2026-11-20: "It should mostly be mathematical now, although I
+think we should sell when it breaks the bottom of the channel rather than
+limit the top." And on testing it: "pick some random day in history and
+put an AI entity in a windowless box". A formula is that box: it cannot
+know what came next. What it cannot escape is the list of names it is
+shown, which is survivors (Pass 43). This pass freezes the rule as the
+evening's 66 marks shaped it and runs it over twenty years.
+
+**What changed from Pass 41, and where each change came from.**
+1. *The anchor.* Pass 41 anchored at the lowest low of two years. His
+   pictures (Agilent's six channels, AZN, ATO, ABT, AMPH) anchor at the
+   low that started the current move, and after a break at the low that
+   followed it; his AGX and ACLS channels ran three and four years. So:
+   the look-back is tried at 52, 104, 156 and 208 weeks and the first one
+   whose lowest low is a real swing low (not within the window's first
+   four weeks) is used; after a break, no anchor may predate the break.
+2. *Age.* 13 weeks or more since the anchor (Pass 41: 26). He marked
+   channels as young as seven weeks; 13 is my compromise, not his number.
+3. *Straightness.* 0.70 or more (Pass 41: 0.80). He accepts choppier
+   channels than 0.80 allowed (ACLS, ABCB, ANET, AIR).
+4. *Not already broken.* The last close is no more than 4.7 of the
+   stock's own weekly swings below its 52-week high close (a swing is the
+   standard deviation of its weekly log returns over two years). Fitted
+   tonight to his calls on 32 A names, where it matched 30; his own
+   explanation of ANRO and AMLX ("big quick run ups") is why it is in
+   swings and not percent.
+5. *A real stock.* Weekly swing of 1.5% or more, which drops the notes
+   and preferred shares that passed Pass 41's rule.
+6. *The exit, his instruction.* The lower line is fixed at entry and
+   extended; the name is sold at the next open after the first weekly
+   close below it. Nothing sells at the top. No buffer.
+Unchanged: the lower line is the steepest straight line under every
+weekly low since the anchor, it must rise 10% a year or more, weekly
+bars, Friday decision, Monday open.
+
+**Why history is a fair test of it.** Items 1 to 5 were shaped on names
+beginning with A as they stood on 2026-11-20. Nothing before that date
+was looked at in choosing them. Passes 38 to 43 did look at this history
+for the earlier drawings, so this is not the first visit, and it is
+counted as the seventh draw at the idea.
+
+**The basket (primary).** Every tradeable name that qualifies is bought
+(Pass 43's universe and rules: $3 or more, $5M median weekly dollar
+volume, costs by size tier) and held until its line breaks; the book is
+split equally among whatever is held. No slots and no ranking, because
+Pass 43 showed the ten-slot book doing worse than the picture itself.
+Scored against 200 random baskets a week of the same number of names from
+the same tradeable pool.
+
+**The windowless view.** Every entry is a card: a name and a date. Per
+card, the return over the next 13 and 26 weeks minus the average of every
+tradeable name over the same weeks, and the return and length of the
+hold to its break. Reported overall, by size tier and by half.
+
+| Arm | What it is |
+|---|---|
+| **basket** | as above -- the primary |
+| no pullback rule | item 4 removed: what the swing rule adds |
+| older only | 26 weeks or more since the anchor: what the young channels add |
+| ten straightest | ten slots, straightest first, as Passes 41 and 43 |
+
+**Verdict lines (fixed).** *Beats luck:* the basket at or above the 95th
+percentile of its random baskets overall and the 75th in each half (to
+2016, from 2017). *Better ride:* Sharpe above SPY's and a smaller largest
+drawdown. *The cards:* a 13-week excess that is positive in both halves.
+
+**The bias, stated before the result.** Survivors, as in Pass 43, worst
+in the small tiers. It inflates the basket and the random baskets alike;
+it still penalises selling, because every sold name here came back. A
+pass on these lines would earn a forward page, where there are no
+survivors. It would not be proof.
+
+**Predictions.** (1) The cards' 13-week excess is positive overall and
+since 2017, and near zero before 2017 (Pass 43's pattern). (2) The
+basket places between the 40th and 85th percentile overall and fails the
+beats-luck line on the first half. (3) The pullback rule helps: the
+basket places higher with it than without. (4) Median hold between 10
+and 25 weeks; fewer than half of holds end at a gain; the mean hold gains
+more than 5%.
+
+    python lab/pass45_channel_frozen.py          # every arm (slow: tens of minutes)
+    python lab/pass45_channel_frozen.py smoke    # plumbing: 300 names
