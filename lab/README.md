@@ -8220,3 +8220,22 @@ slots. If the owner would rather hold more names for the same idea,
 twenty with a cap of six is the version to register beside them; this
 pass says it gives up return, not edge. Count of ideas tried since
 Pass 58: twenty-three, this pass adding a check and not an idea.
+
+## Pass 44 note -- ten marks from the trend-strength rank (2026-11-21, before they trade)
+
+The forward book's first week listed the ten screen names with the
+highest trend strength: GKOS, MRNA, VTRS, TGT, CAH, CART, AIZ, GILD,
+VLTO, R. The owner looked at their charts on 2026-11-21: "They all look
+pretty good but the worst three I would say are TGT, CART and VLTO."
+
+Logged in `lab/owner_marks.json` for the open of 2026-11-23: all ten as
+`potential`, each with its `trend_strength_rank`; the three he liked
+least carry `owner_rank: weakest three of the ten`. They are not marked
+`broken`, because he did not call them broken. AIZ was already a
+`potential` mark of 2026-11-20 and is flagged so that it is not scored
+twice. The ledger now holds 76 rows, 71 scored: 51 potential, 18
+broken, 2 ideal.
+
+What this adds, if he keeps doing it each week: a record of whether his
+eye separates names the rank cannot, his seven against his three, from
+lists the rank chose and not he. Nothing is read from one week's ten.

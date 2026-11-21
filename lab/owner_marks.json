@@ -899,6 +899,110 @@
    "last_close": 26.02,
    "duplicate_of_earlier_row": true,
    "note": "confirmed on a second look: 'pulled back recently but still look in their channel'; not scored twice"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "GKOS",
+   "call": "potential",
+   "last_close": 237.31,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 1,
+   "note": "'They all look pretty good'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "MRNA",
+   "call": "potential",
+   "last_close": 195.0,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 2,
+   "note": "'They all look pretty good'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "VTRS",
+   "call": "potential",
+   "last_close": 19.63,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 3,
+   "note": "'They all look pretty good'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "TGT",
+   "call": "potential",
+   "last_close": 165.83,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 4,
+   "owner_rank": "weakest three of the ten",
+   "note": "'They all look pretty good but the worst three I would say are TGT, CART and VLTO'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "CAH",
+   "call": "potential",
+   "last_close": 272.81,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 5,
+   "note": "'They all look pretty good'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "CART",
+   "call": "potential",
+   "last_close": 57.31,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 6,
+   "owner_rank": "weakest three of the ten",
+   "note": "'They all look pretty good but the worst three I would say are TGT, CART and VLTO'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AIZ",
+   "call": "potential",
+   "last_close": 316.65,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 7,
+   "note": "'They all look pretty good'; already marked potential on 2026-11-20, not scored twice",
+   "duplicate_of_earlier_row": true
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "GILD",
+   "call": "potential",
+   "last_close": 166.43,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 8,
+   "note": "'They all look pretty good'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "VLTO",
+   "call": "potential",
+   "last_close": 116.63,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 9,
+   "owner_rank": "weakest three of the ten",
+   "note": "'They all look pretty good but the worst three I would say are TGT, CART and VLTO'"
+  },
+  {
+   "marked": "2026-11-21",
+   "enter_open_of": "2026-11-23",
+   "ticker": "R",
+   "call": "potential",
+   "last_close": 276.1,
+   "source": "proposed by the trend-strength rank (forward book, week ending 2026-11-20), judged by the owner",
+   "trend_strength_rank": 10,
+   "note": "'They all look pretty good'"
   }
  ]
 }
