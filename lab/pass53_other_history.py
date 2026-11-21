@@ -93,6 +93,12 @@ def main(argv):
     if smoke:
         names = names[::max(1, len(names) // 300)][:300]
     import pandas as pd
+    # Yahoo keys a weekly bar on the request's start day for names that were
+    # trading then (1994-01-01, a Saturday) and on Monday for names listed
+    # later. Both are the same trading week: move every bar to its Monday.
+    for t, f in frames.items():
+        if len(f) and f.index[0].weekday() != 0:
+            f.index = pd.DatetimeIndex([d + pd.Timedelta(days=(7 - d.weekday()) % 7) for d in f.index])
     idx = pd.DatetimeIndex([d for d in frames["SPY"].index if d.weekday() == 0])
 
     def mat(col):
