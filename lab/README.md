@@ -6599,3 +6599,66 @@ question is now a narrow one: why it stopped. The two things worth
 doing next are a list that includes the dead names, and the two
 re-entry repairs from Pass 51's results (suspend the exit, or get back
 in faster, when the whole market has fallen), judged on 2016 on.
+
+## Pass 54 -- quicker reactions: the ten-slot book on daily bars, the last ten years (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on Pass 53's book losing every five-year window
+that starts from 2016: "I think the reaction time is quicker now. Maybe
+we should apply it to daily bars for the last 10 years and see how
+things look. Maybe weekly in a sideways to down market and daily in an
+up market." Lab only.
+
+**The book is Pass 53's:** ten slots, equal weights, the highest quality
+score first, top 500 by size, sold only when its close is 20% or more
+under its high, no new buys while the market is cold. Everything is now
+measured on **daily bars** (the channel under the daily lows over the
+last 520 sessions, the high and the 20% on daily closes, cold meaning
+SPY's close under its 200-day average), so the books below differ only
+in what is being tested.
+
+**Two things that could be "reaction time", crossed.**
+- *When it acts.* **Weekly**: decides on the last close of the week and
+  trades at the next open, as every pass so far. **Daily**: decides on
+  every close. **Switch**, his second idea: daily while SPY is above
+  its 200-day average, weekly while it is under.
+- *How soon a new channel counts.* Since Pass 41 a channel has needed
+  **26 weeks** (130 sessions) from its starting candle. That is my
+  number, not his; he said "a solid 4-8 weeks of trending up before it
+  is considered". After a fall that sets a two-year low in most stocks,
+  as in March 2020, the 26-week rule leaves nothing to buy for half a
+  year whatever else is done. The other arm is **8 weeks** (40
+  sessions).
+
+Six books, 2016-11-14 to 2026-11-13, each starting empty.
+
+**Benchmarks.** SPY; the pool (every top-500 member, equal weight); and
+for each book 100 random books run the same way that fill slots at
+random from the screen.
+
+**Verdict lines (fixed).** *Quicker reaction earns its place* if a book
+beats the weekly, 26-week book by two points a year or more of compound
+return over the ten years **and** in each half (split at 2021-11-14),
+without a deeper largest drawdown by more than five points. *Beats the
+S&P 500*: compound return above SPY's over the ten years and in both
+halves.
+
+**Limits.** These are the ten years Pass 53 already showed to be bad for
+this book, so any arm that repairs them has been chosen on them: a
+candidate for the forward ledger, not a finding. Daily bars for the
+whole list do not go back before 2014 here, so there is no earlier
+period to check a daily rule on. The list is names alive today. Ten
+names is a noisy book, hence the random books. The weekly book here is
+built from daily bars and starts empty, so it will not match Pass 53's
+2016-26 figures exactly.
+
+**Predictions.** (1) Acting daily alone changes little: within a point
+and a half a year of weekly either way, with more trades. (2) The
+8-week rule is where the difference is: two points a year or more
+better over the ten years, most of it in 2020-21, but not in both
+halves. (3) The switch book lands between daily and weekly. (4) No book
+beats the S&P 500 over the ten years; the best is within four points a
+year.
+
+    python lab/pass54_daily_reaction.py fetch    # daily bars from 2014 for the names that were ever top 500
+    python lab/pass54_daily_reaction.py          # full run
+    python lab/pass54_daily_reaction.py smoke    # plumbing: 150 names
