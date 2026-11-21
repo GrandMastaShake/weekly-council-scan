@@ -8058,3 +8058,60 @@ the book to carry forward and the pause stays dropped. The trend-strength
 book with a cap of three: 18.5% a year, Sharpe 0.86, a largest drawdown
 of -39% to -46% depending on its start, on a list of survivors. Count of
 ideas tried since Pass 58: twenty-three; this pass added none.
+
+## Pass 63 -- the trend-strength book goes on a forward ledger, cap alone against cap with the pause (registered 2026-11-21 before the first week)
+
+The owner, 2026-11-21, on Pass 62: "I'd argue the last decade is the most
+viable data". My answer was that the last decade is the most relevant
+evidence and the least independent, every rule here having been shaped
+on it. Neither of us can settle that from history. Asked whether to
+build a weekly runner so that new weeks can: "For sure". Lab only.
+
+**Two paper books, rules frozen today.** Both: ten slots; top 500 by
+size from the lab's list of 2026-11-20; the screen of Pass 48 with a
+channel counting after 8 weeks and no price floor; names ranked by
+stock trend strength (return over 4, 13, 26 and 52 weeks, ranks
+averaged); no more than three names from one sector; sold on a weekly
+close 20% under its high; no new buys while SPY's weekly close is under
+its 40-week average; positions drift; 0.10% a side.
+- **cap of three.** My book to carry forward (Pass 62).
+- **cap of three, pause of eight weeks.** His: after three sales in a
+  row at a loss, no new buys for eight weeks.
+
+**How a week runs** (`lab/forward_book.py`, `lab/book_ledger.json`,
+`lab/BOOK.md`). Orders are written on Friday's close and filled at the
+next Monday's open; sales first, then the cash on hand shared equally
+among the empty slots. The first orders are written on the close of
+2026-11-20 for the open of 2026-11-23. The ledger is append-only and a
+week is never counted twice. A missed week is caught up in order from
+the same bars.
+
+**Three small differences from the backtests, stated so they are not
+found later.** A sale counts as a loss for the pause if the position is
+under its cost at Friday's close (the backtest knew Monday's open). The
+runner fetches the 800 largest names on the list by its own market
+values and ranks those, where the backtests ranked all 3,004. And a
+name with no bar for two weeks running is sold at its last close.
+
+**What will be read, and when.** Each book against SPY, and the two
+against each other, on compound return and largest drawdown. Pass 62
+measured how far one rule moves with nothing but its start date: about
+a point and a half a year of return and six points of drawdown. So:
+- **nothing is read before 52 weeks** (the week ending 2027-11-19);
+- at 52 and at 104 weeks the two books are compared, and **the pause
+  is taken to have earned its place if it is ahead by more than three
+  points a year of return, or has the shallower drawdown by more than
+  six points, at 104 weeks**; anything less is a tie and the simpler
+  book, the cap alone, stays;
+- either book *beats the S&P 500* only on the 104-week figures, return
+  above SPY's with a drawdown no deeper.
+Two books over two years is one path each. The ledger can end the
+argument about the pause; it cannot by itself show an edge.
+
+**What it does not fix.** Survivor bias is gone going forward, which is
+the point. The list is frozen at 2026-11-20, so a name that becomes
+large after that date is not seen until the list is rebuilt, and that
+would be a new registration.
+
+    python lab/forward_book.py            # settle, mark, decide; writes the ledger and BOOK.md
+    python lab/forward_book.py plan       # print what it would do; write nothing
