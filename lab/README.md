@@ -5769,3 +5769,63 @@ largest of the four.
 
     python lab/pass48_screen_book.py          # every arm, both sets (slow: about ten minutes)
     python lab/pass48_screen_book.py smoke    # plumbing: 300 names
+
+## Pass 48 results -- the screen itself: better than a random large cap since 2017, far worse before, and under SPY in both halves
+
+Run 2026-11-21, `lab/results/pass48_screen_book.json`. 957 weeks from
+2008-07. Top 500 by size: the pool compounds 10.8% (10.1% to 2016, 11.4%
+since); SPY 12.3% (9.5%, 14.8%), Sharpe 0.73, largest drawdown -46.3%.
+
+| Arm | Compound a year | To 2016 | 2017 on | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **the screen, weekly** | **9.2%** | 6.5% | 11.5% | **0.61** | **-33.3%** | **12th** | 9th | 36th | 90 | 6 wk |
+| the screen, 13 weeks | 8.7% | 2.7% | 14.1% | 0.54 | -58.1% | 8th | 2nd | 100th | 117 | 13 wk |
+| screen in, break out | 8.5% | 4.1% | 12.5% | 0.54 | -56.6% | 5th | 0th | 98th | 221 | 7 wk |
+| no pullback rule | 9.7% | 4.8% | 14.1% | 0.62 | -46.2% | 29th | 10th | 98th | 94 | 6 wk |
+
+On every tradeable name all four are worse: 6.2% to 9.4% against a pool
+at 13.2%, at the bottom of their random baskets overall.
+
+**Against the lines (primary, top 500).** *Beats luck:* **no** (12th
+percentile; 9th and 36th by half). *Better ride:* **no** on Sharpe (0.61
+against 0.73); the drawdown is much smaller (-33.3% against -46.3%).
+
+**What the screen does, now that it has been tested as itself.**
+1. *It is the size he expected.* 90 names of about 470, one in five.
+2. *Since 2017 it chooses better than chance, in three forms of four.*
+   Held 13 weeks, held to the break, or held weekly without the pullback
+   rule, it sits at the 98th to 100th percentile of random baskets of
+   large caps and compounds 12.5% to 14.1% against the pool's 11.4%.
+   That is a real result for those ten years and it is the owner's
+   picture doing it.
+3. *Before 2017 it is as bad as it is good after.* 2.7% to 6.5% a year
+   against the pool's 10.1%, at the 0th to 10th percentile. 2009, 2011,
+   2014 to 2016 are years of sharp reversals, and a rule that owns what
+   has been rising straight is on the wrong side of each one.
+4. *It does not beat SPY in either half.* Since 2017 the best arm makes
+   14.1% and SPY 14.8%. SPY is weighted by size and that decade belonged
+   to the largest companies; an equal-weight book of ninety large caps
+   gave up three points a year to that before it chose anything (the
+   pool's 11.4% against SPY's 14.8%).
+5. *The pullback rule earns its keep only on the ride*: with it the
+   drawdown is -33.3% and without it -46.2%, for half a point less
+   return.
+6. *His exit is not what cost the earlier books.* "Screen in, break out"
+   is 0.7 points behind the weekly screen over the whole period and
+   ahead of it since 2017.
+
+**Scored against the predictions.** (1) Held: 19% of the top 500. (2)
+Held: ahead of the pool since 2017 (barely, for the primary), behind it
+before. (3) Half: it fails the first half as predicted, but overall it
+places 12th, not between the 60th and 95th. I underestimated how bad the
+first half was. (4) Held. (5) Held: 763 trades a year, the most.
+
+**What it means.** The owner was right that the lab had not tested what
+he agreed with, and testing it changed the picture in one respect: the
+screen does pick, in the last ten years. It did not change the answer to
+his question. Over twenty years, in either half, in any of four ways of
+holding it, the screen does not beat the S&P 500. What it is, on this
+evidence, is a momentum screen: good while trends persist, costly when
+they reverse, and so far unable to tell which kind of year it is in.
+That last sentence is where the next real idea would have to be, and it
+is not a tweak to the line.
