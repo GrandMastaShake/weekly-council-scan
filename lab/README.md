@@ -7379,3 +7379,83 @@ year. So I expect none of the five to clear its line.
 
     python lab/pass58_five_ideas.py          # full run
     python lab/pass58_five_ideas.py smoke    # plumbing: 300 names
+
+## Pass 58 results -- none of the five clears its line; two of them beat SPY in the last decade and each fails a different decade
+
+Run 2026-11-21, `lab/results/pass58_five_ideas.json`. 1,604 weeks from
+1996-02, ten slots, top 500. Compound return a year, with the scored
+book's percentile among the random books in brackets for the two
+picking ideas.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Five-year windows from 2016 over SPY |
+|---|---|---|---|---|---|---|---|
+| base | 16.4% | 14.1% | 9.9% | 13.7% | 0.90 | -31.8% | 0 of 12 |
+| 1 idle slots hold SPY | 17.6% | 13.8% | 14.1% | 15.4% | 0.87 | -45.1% | 7 of 12 |
+| 2 the jumpiest picks | 15.9% (99) | 9.7% (31) | 24.3% (100) | 17.1% | 0.73 | -72.0% | 10 of 12 |
+| 3 the strongest picks | 13.9% (91) | 11.0% (50) | 19.4% (100) | 15.2% | 0.71 | -52.0% | 5 of 12 |
+| 4 hold a market fall, warm market only | 16.7% | 13.9% | 10.6% | 14.0% | 0.92 | -30.8% | 0 of 12 |
+| (half one of Pass 57) | 19.7% | 8.7% | 13.9% | 14.4% | 0.89 | -32.1% | 4 of 12 |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% | |
+
+Medians of the random books, for the two changes of structure: base
+12.5% / 12.0% / 9.9% (11.3% over everything); idle slots hold SPY 14.0%
+/ 11.0% / 13.5% (12.7%); warm-market hold 12.9% / 10.8% / 9.8% (11.3%).
+
+From 2006-11 only: base 12.9% then 9.9%; buys need three beats in four
+11.8% then 10.1% (random medians 11.1% and 10.0% against 10.9% and
+9.8%).
+
+**Against the lines.**
+1. *Idle slots hold SPY:* **no.** On the random medians +1.5, -1.0 and
+   +3.6 points; the line needs a point in each. The thirty-year drawdown
+   is 13 points deeper.
+2. *The jumpiest picks:* **no.** 99th, 31st and 100th percentile; the
+   line needs the 75th in each.
+3. *The strongest picks:* **no.** 91st, 50th and 100th.
+4. *Warm-market hold:* **no.** +0.4, -1.2 and -0.1 on the medians.
+   Letting the hold give way in a cold market takes away what half one
+   cost in 2008 and what it earned everywhere else: the book is the
+   base book again.
+5. *Three beats in four:* not judged, and not worth more history. It
+   changed nothing in either decade it could be run on.
+
+**What happened.**
+1. *SPY in the idle slots is exposure, not skill, and it is the plainest
+   answer to "why does the book lose to SPY lately".* The book is 10%
+   in cash on average, bunched after falls. Putting that in SPY is
+   worth 1.4 points a year over thirty years on the random medians and
+   takes the last decade from 9.9% to 14.1% against SPY's 15.4%, at the
+   price of 2008: the drawdown goes from -32% to -45%. It fails the
+   line because it was written to demand a gain in every decade, and
+   the gain here is bought with risk.
+2. *How the ten are picked matters after all, enormously and
+   unreliably.* Taking the jumpiest or the strongest names from the
+   same screen made 24.3% and 19.4% a year in the last decade, the best
+   of 100 random books both times and well over SPY, and was near the
+   top on the unseen decade too. In 2006-16 the same rules were
+   ordinary (31st and 50th percentile), and the jumpiest book lost 72%
+   in 2000-02 and turned over every two weeks. The quality score is the
+   reverse case: steady and unremarkable. This is Pass 55 again in a
+   book: the winners are jumpy, and so are the wrecks.
+3. *Thirty-year return and thirty-year ride pull opposite ways.* Every
+   idea that raised the return over the base (1, 2, 3) lowered Sharpe
+   and deepened the drawdown. The base remains the best ride on the
+   page.
+
+**Scored against the predictions.** (1) Held, with a drawdown 13 points
+deeper. (2) Held on return and on missing a period; the drawdown is 40
+points deeper, not ten. (3) Half: one period under the 75th percentile,
+but the other two far above the range I gave. (4) Half: it beats half
+one in 2006-16, and clears the one-point line in none of three periods,
+not two. (5) Held. And the summary held: none clears its line.
+
+**What it means.** Nothing here goes to the forward ledger by the lines
+as written. Two things are worth knowing all the same, and neither is
+a claim of an edge. First, the base book's shortfall against SPY since
+2016 is mostly idle cash and equal weights (Pass 54), not bad picking.
+Second, picking by swing or strength is where the large numbers are and
+where the large losses are; whether there is a version that keeps the
+first without the second is a question about the exit for jumpy names,
+and it would have to be asked of the unseen decade and 2000-02 first,
+not of 2016-26.
