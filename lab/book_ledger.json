@@ -1,0 +1,74 @@
+{
+ "schema": "book-ledger/v1",
+ "started": "2026-11-20",
+ "rules": "lab/README.md, Pass 63",
+ "books": {
+  "cap of three": {
+   "pause_weeks": null,
+   "cash": 100.0,
+   "positions": {},
+   "pending": {
+    "decided_on": "2026-11-20",
+    "enter_open_of": "2026-11-23",
+    "sells": [],
+    "buys": [],
+    "no_buys_because": "cold market"
+   },
+   "losing_streak": 0,
+   "paused_until": null,
+   "trades": [],
+   "history": [
+    {
+     "friday": "2026-11-20",
+     "equity": 100.0,
+     "cash": 100.0,
+     "names": 0,
+     "spy_close": 689.8099975585938
+    }
+   ]
+  },
+  "cap of three, pause of eight weeks": {
+   "pause_weeks": 8,
+   "cash": 100.0,
+   "positions": {},
+   "pending": {
+    "decided_on": "2026-11-20",
+    "enter_open_of": "2026-11-23",
+    "sells": [],
+    "buys": [],
+    "no_buys_because": "cold market"
+   },
+   "losing_streak": 0,
+   "paused_until": null,
+   "trades": [],
+   "history": [
+    {
+     "friday": "2026-11-20",
+     "equity": 100.0,
+     "cash": 100.0,
+     "names": 0,
+     "spy_close": 689.8099975585938
+    }
+   ]
+  }
+ },
+ "weeks": [
+  {
+   "friday": "2026-11-20",
+   "cold": true,
+   "names_on_screen": 66,
+   "top_ten": [
+    "GKOS",
+    "MRNA",
+    "VTRS",
+    "TGT",
+    "CAH",
+    "CART",
+    "AIZ",
+    "GILD",
+    "VLTO",
+    "R"
+   ]
+  }
+ ]
+}
