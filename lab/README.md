@@ -5829,3 +5829,56 @@ evidence, is a momentum screen: good while trends persist, costly when
 they reverse, and so far unable to tell which kind of year it is in.
 That last sentence is where the next real idea would have to be, and it
 is not a tweak to the line.
+
+## Pass 49 -- the channel screen as the Council's universe (registered 2026-11-21 before any run)
+
+The owner on the Pass 48 results, 2026-11-21: "our market regime and
+weekly analysis has been solid. I think these picks plus the council
+could produce some solid stuff. Use it as their universe or something
+each week." So: the three engines keep doing what they do, but each
+Monday they may only choose among the names the channel screen flags.
+Lab only; nothing in production changes.
+
+**The filter (fixed).** Each Monday, from weekly bars that end before it:
+a name of the Council's live universe passes when it has a Pass 41
+channel worth owning (look-back 104 weeks, anchor 26 to 100 weeks back,
+lower line rising 10% a year or more, straightness 0.80 or more), its
+weekly swing is 1.5% or more, and it is no more than 4.7 swings under its
+52-week high: Pass 48's screen, unchanged. If fewer than ten names pass,
+the engines scan the whole universe that week and the week is counted as
+a fallback.
+
+**Two things are measured.**
+1. *History, as far as the engine replay reaches.* Production's engine
+   code replayed on every Monday from 2024-06-03 to the last closed week,
+   with and without the filter, on the lab's usual basis (Monday open to
+   Friday close, dividend-adjusted, cash at zero, the earnings blackout
+   fed). This is the engines without the LLM layer, as `production` is on
+   the forward page. Beside them: every screen name held equal weight,
+   and the whole universe equal weight.
+2. *Forward.* A design named `channel-universe` joins the forward page
+   from the week of 2026-11-23, replayed each Monday beside `production`.
+
+**Verdict line for the history (fixed).** The filter *helps the engines*
+if the weekly alpha of filtered-minus-unfiltered is positive with a t of
+2 or more over the whole window, and positive in each half of it.
+
+**Read this before the result.** The window is two and a half years,
+all of it inside the stretch where Pass 48 found the screen works (2017
+on) and none of it inside the stretch where it failed. A pass here says
+the filter helps in the kind of market it was already known to like. It
+cannot say what happens in a 2011 or a 2015. And on the forward record so
+far, `production` trails SPY, so "solid" is the owner's read of the
+Council, not the record's; the filter is being asked to improve engines
+that have not yet shown an edge of their own.
+
+**Predictions.** (1) The filter leaves 30 to 70 names of the universe on
+a typical Monday and falls back in fewer than one week in ten. (2)
+Filtered-minus-unfiltered is positive, between 0 and +0.15% a week, with
+a t under 2: it helps a little and does not clear the line. (3) Every
+screen name held equal weight does about as well as the filtered engines
+(within 0.05% a week): the screen does the work and the engines add
+little on top.
+
+    python lab/pass49_council_channel.py          # the history
+    python lab/pass49_council_channel.py smoke    # plumbing: the last eight weeks
