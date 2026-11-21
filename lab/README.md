@@ -6008,3 +6008,83 @@ weakness in Part B is worse than adding on strength.
 
     python lab/pass50_size_and_time.py          # both parts
     python lab/pass50_size_and_time.py smoke    # plumbing: 300 names, eight weeks
+
+## Pass 50 results -- no rule clears the line; equal risk suits the channel book and wrecks the Council's, and buying in pieces helps neither
+
+Run 2026-11-21, `lab/results/pass50_size_and_time.json`.
+
+**Part A, the channel-hold book** (top 500, 957 weeks from 2008-07, about
+225 names held).
+
+| How much | Buying | Selling | Compound a year | Sharpe | To 2016 | 2017 on | Largest drawdown |
+|---|---|---|---|---|---|---|---|
+| equal dollars | at once | at once | 8.6% | 0.53 | 0.26 | 0.79 | -61.4% |
+| equal dollars | at once | in halves | 9.0% | 0.55 | 0.31 | 0.78 | -58.9% |
+| equal dollars | in halves | at once | 8.9% | 0.54 | 0.28 | 0.79 | -60.4% |
+| equal dollars | in halves | in halves | 8.9% | 0.54 | 0.29 | 0.78 | -60.1% |
+| equal risk | at once | at once | 9.0% | 0.58 | 0.34 | 0.82 | -56.8% |
+| equal risk | at once | in halves | 9.5% | 0.61 | 0.40 | 0.80 | -53.7% |
+| equal risk | in halves | at once | 9.2% | 0.59 | 0.36 | 0.82 | -55.9% |
+| equal risk | in halves | in halves | 9.4% | 0.60 | 0.38 | 0.81 | -54.7% |
+
+- *Equal risk:* +0.05 Sharpe and +0.4 points a year overall, with a
+  shallower drawdown. By half it is +0.08 and then +0.03, so it clears
+  the line overall and in the first half and **not in the second**.
+- *Selling in halves:* +0.02 Sharpe, +0.4 points a year. Helps a little
+  everywhere; under the line.
+- *Buying in halves:* +0.01. Nothing.
+- The best book has both of the first two: 9.5% a year, Sharpe 0.61,
+  drawdown -53.7%, against 8.6%, 0.53 and -61.4%. A real improvement in
+  the ride, and still a book that trails SPY.
+
+**Part B, the weekly Council** (129 Mondays from 2024-06-03).
+
+| How much | Buying | Mean weekly alpha | Its weekly SD | Alpha per unit of SD | Worst week | Against production (t) |
+|---|---|---|---|---|---|---|
+| production's weights | all on Monday | +0.42% | 3.72% | 0.114 | -11.5% | |
+| production's weights | half, add on strength | +0.20% | 2.61% | 0.077 | -7.9% | -0.22% (-1.5) |
+| production's weights | half, add on weakness | +0.22% | 3.22% | 0.068 | -8.4% | -0.20% (-1.8) |
+| equal dollars | all on Monday | +0.46% | 3.64% | 0.127 | -9.6% | +0.04% (0.8) |
+| equal dollars | half, add on strength | +0.22% | 2.67% | 0.083 | -7.8% | -0.20% (-1.2) |
+| equal dollars | half, add on weakness | +0.25% | 3.06% | 0.080 | -6.9% | -0.18% (-1.5) |
+| equal risk | all on Monday | +0.02% | 2.29% | 0.010 | -6.6% | -0.40% (-2.0) |
+| equal risk | half, add on strength | -0.06% | 2.02% | -0.029 | -7.9% | -0.48% (-1.9) |
+| equal risk | half, add on weakness | -0.09% | 2.00% | -0.043 | -5.6% | -0.51% (-2.2) |
+
+- *Equal risk removes the Council's alpha altogether* (+0.42% to +0.02%).
+  In this replay the return came from the jumpiest names in the five, and
+  sizing by risk gives those the least.
+- *Buying in halves halves the alpha and cuts the swings by less.* The
+  week is too short to buy in pieces: the half that waits until Wednesday
+  misses the two days where much of the move is.
+- *Equal dollars is as good as production's weights* (+0.46% against
+  +0.42%, a slightly milder worst week). The confidence-and-merit
+  weighting is not adding anything measurable over splitting the book
+  five ways.
+- Adding on strength and adding on weakness are indistinguishable.
+
+**Against the lines.** No sizing rule and no timing rule earns its place
+in both halves of either part.
+
+**Scored against the predictions.** (1) Half: equal risk helps the
+channel book as predicted but misses the line in the second half; on the
+Council it does not earn its place, as predicted, and is far worse than I
+expected. (2) Held. (3) Half: selling in halves does not earn its place,
+but it raised the return a little instead of lowering it. (4) Not shown:
+strength and weakness are the same.
+
+**What it means.**
+1. The two books want opposite sizing. The slow channel book holds
+   hundreds of names for months, and tilting it to the calm ones smooths
+   it at no cost. The weekly book holds five names for five days, and
+   its edge, such as it is, is in the volatile ones. One sizing rule for
+   both would be wrong for one of them.
+2. For the weekly Council the cheap, defensible change is to drop the
+   weighting scheme for equal dollars. It is not better by any margin
+   that matters, but it is simpler and no worse. Not a candidate for
+   production without the owner's say, and the universe caveat of Pass 49
+   applies to every number in Part B.
+3. Buying in pieces is not worth building for either book.
+4. None of this moves either book past the S&P 500. Rules of this kind
+   shape the ride. They were never likely to be where a missing edge
+   was, and this pass does not change that.
