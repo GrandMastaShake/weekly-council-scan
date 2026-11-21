@@ -5700,3 +5700,72 @@ The standing conclusion from Pass 46 is unchanged: no version of the
 line, the exit or now the sector cut has shown a qualifying chart to be
 worth more than a random one, on a list that cannot be fully trusted,
 and the forward ledger (Pass 44) is where the question goes next.
+
+## Pass 48 -- the screen as the book: hold what the screen flags, and only that (registered 2026-11-20 before any run)
+
+The owner caught a gap, 2026-11-20: "you said every formula picked half
+the market, why didn't it pick the ones you flagged? That wasn't half the
+A names for sure that we chose." He is right, and the gap is in the
+lab's harness.
+
+**What he reviewed and what was tested were different things.**
+- The list he went through on the A names was a *snapshot*: the names
+  that, that week, had a channel worth owning by Pass 41's rule (a
+  two-year look-back, 26 weeks old or more, straightness 0.80). It
+  flagged 46 of 303 A names, about one in seven, and he agreed with
+  about two thirds of them.
+- The *books* in Passes 45 to 47 held a third to a half of the market for
+  two reasons. They buy a name once and keep it until its line breaks,
+  so the holdings are everything that ever qualified and has not broken
+  yet, far more than qualify in any one week. And Passes 46 and 47
+  dropped the straightness test altogether: any name with a starting
+  low, a few green weeks and a red run got a line.
+- So the picky screen, the one thing checked against his eye, has never
+  been tested as a portfolio. The nearest measurement is Pass 43's third
+  number: name-weeks on that screen beat their own size tier over the
+  next 13 weeks by 0.6% to 1.4%, all of it since 2017. That was the one
+  positive finding of the evening and nothing was built on it.
+
+**The screen (fixed).** A name is on it in a week when it is tradeable
+(Pass 43's rule), its weekly swing is 1.5% or more, it has a Pass 41
+channel worth owning (look-back 104 weeks, anchor 26 to 100 weeks back,
+lower line rising 10% a year or more, straightness 0.80 or more), and it
+is no more than 4.7 of its own weekly swings under its 52-week high (the
+rule fitted to his calls on the A names).
+
+**The books.**
+
+| Arm | What it holds |
+|---|---|
+| **the screen, weekly** | exactly the names on the screen each week, equal weight; a name is sold the week it drops off -- the primary |
+| the screen, 13 weeks | a name is bought when it appears and held 13 weeks, then kept only if it is still on the screen |
+| screen in, break out | bought when it appears, sold only on a weekly close under the line fixed at entry (his stated exit) |
+| no pullback rule | the primary without the 4.7-swing rule |
+
+The primary sells a name when it stops looking like the picture, which is
+not the same as waiting for the bottom of the channel to break; the third
+arm is his exit, for the comparison.
+
+**Universe, control, verdict lines.** The top 500 by size (primary) and
+every tradeable name, costs by tier, 200 random baskets a week of the
+same number of names from the same set, SPY. Beats luck at the 95th
+percentile overall and the 75th in each half; better ride on Sharpe and
+drawdown against SPY.
+
+**Counted honestly.** This is the tenth draw at the idea, and the 4.7-
+swing rule was fitted on 32 names tonight. But it is the first draw that
+tests the object the owner actually agreed with, and it is aimed at the
+one place a positive number has already been seen. Pass 43 also says
+where that number will fail: before 2017.
+
+**Predictions.** (1) The primary holds between a tenth and a quarter of
+the top 500 on an average week. (2) It compounds more than the pool since
+2017 and no more than the pool before 2017. (3) Overall it places
+between the 60th and 95th percentile of its random baskets and fails the
+75th in the first half. (4) "Screen in, break out" compounds less than
+the primary: the hold-until-break rule is where the earlier books lost
+what the screen had. (5) Weekly turnover makes the primary's costs the
+largest of the four.
+
+    python lab/pass48_screen_book.py          # every arm, both sets (slow: about ten minutes)
+    python lab/pass48_screen_book.py smoke    # plumbing: 300 names
