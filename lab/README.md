@@ -5882,3 +5882,62 @@ little on top.
 
     python lab/pass49_council_channel.py          # the history
     python lab/pass49_council_channel.py smoke    # plumbing: the last eight weeks
+
+## Pass 49 results -- the channel universe makes the engines worse, in both halves
+
+Run 2026-11-21, `lab/results/pass49_council_channel.json`. 129 Mondays,
+2024-06-03 to 2026-11-16, the Council's 274 names. SPY made +0.21% a week
+on the lab's basis. The screen passed a median of 44 names (15 to 88) and
+never fell back.
+
+| | Weekly alpha, all 129 weeks | t | First 64 weeks | Last 65 weeks | Compounded over the window |
+|---|---|---|---|---|---|
+| engines, whole universe | +0.42% | 1.3 | +0.06% | +0.78% | +106.7% |
+| **engines, channel universe** | **-0.15%** | -0.7 | -0.28% | -0.02% | **+3.5%** |
+| every screen name, equal weight | -0.07% | | -0.18% | +0.05% | |
+| every name, equal weight | +0.08% | | -0.01% | +0.17% | +41.7% |
+| SPY | | | | | +27.3% |
+
+Filtered minus unfiltered: **-0.57% a week (t -1.8)**, -0.34% in the
+first half and -0.80% in the second; the filtered book was the better one
+in 60 weeks of 129.
+
+**Against the line.** The filter does not help the engines. It hurts
+them, in both halves, by an amount just short of the usual bar for
+calling a difference real.
+
+**Why, as far as this shows.**
+1. *On this universe and in these years the screen's names lagged.* Held
+   equal weight they made -0.07% a week against +0.08% for the whole
+   list. The Council's list is already hand-picked growth and theme
+   names; inside it, the smooth steady climbers were the slower ones.
+2. *The engines do not want what the screen offers.* Marky ranks on the
+   last three weeks, Ophelia on sector rotation, Cecil on a low multiple.
+   Their picks are movers and cheap names, and a name within 4.7 swings
+   of its high in a straight two-year channel is rarely either. Taking
+   those away removed the picks that carried the unfiltered replay.
+
+**Do not read the first row as proof the Council works.** +0.42% a week
+would be remarkable, and it is not established: its t is 1.3, the book
+is five names, and above all the universe is the one the owner curated
+in 2026, replayed back to 2024. Names are on that list partly because
+they did well in those years, so every row here is flattered (the plain
+equal-weight list beats SPY by 0.08% a week doing nothing). This is why
+the forward page counts only from 2026-09-21, where `production` has
+made about +0.2% a week over eight weeks. What the table can say is the
+comparison between its rows, which share the flattery: on the same
+names and weeks, the filter subtracted.
+
+**Scored against the predictions.** (1) Held: a median of 44 names, no
+fallback weeks. (2) Missed, wrong sign: I predicted the filter would
+help by up to 0.15% a week and it cost 0.57%. (3) Missed narrowly: the
+screen's names held equally (-0.07%) did somewhat better than the
+filtered engines (-0.15%), not the same.
+
+**What it means.** The channel screen and the Council's engines are
+different ideas that do not stack. One owns smooth, established
+climbers; the others pick movers, rotations and cheap names. Forcing the
+second to choose from the first's list gives it less of what it uses.
+The `channel-universe` design stays on the forward page as registered,
+from the week of 2026-11-23, so the comparison continues on weeks nobody
+has seen; on this evidence it is not a candidate for production.

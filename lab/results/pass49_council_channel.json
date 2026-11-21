@@ -1,0 +1,3411 @@
+{
+ "generated": "2026-11-21",
+ "first": "2024-06-03",
+ "last": "2026-11-16",
+ "universe": 274,
+ "all": {
+  "weeks": 129,
+  "alpha_whole": 0.004223393392939786,
+  "alpha_channel": -0.001515821545900123,
+  "alpha_whole_t": 1.284882117288195,
+  "alpha_channel_t": -0.6603768641269095,
+  "difference": -0.005739214938839909,
+  "difference_t": -1.8283626225110665,
+  "weeks_channel_better": 60,
+  "weeks_differed": 129,
+  "alpha_screen_equal": -0.0006589234879472507,
+  "alpha_screen_equal_t": -0.5039649092687687,
+  "alpha_universe_equal": 0.00078308578937254,
+  "spy_week": 0.002118802215185758
+ },
+ "first_half": {
+  "weeks": 64,
+  "alpha_whole": 0.0006311169405890819,
+  "alpha_channel": -0.0028115638436959417,
+  "alpha_whole_t": 0.12342609413982014,
+  "alpha_channel_t": -1.0001084178405846,
+  "difference": -0.003442680784285024,
+  "difference_t": -0.7134082444074148,
+  "weeks_channel_better": 31,
+  "weeks_differed": 64,
+  "alpha_screen_equal": -0.0018243981604214503,
+  "alpha_screen_equal_t": -1.012043948882724,
+  "alpha_universe_equal": -0.00010798354999928051,
+  "spy_week": 0.004131778450778492
+ },
+ "second_half": {
+  "weeks": 65,
+  "alpha_whole": 0.0077604040537158645,
+  "alpha_channel": -0.00024001374499347072,
+  "alpha_whole_t": 1.8739685845234222,
+  "alpha_channel_t": -0.06605697191742724,
+  "difference": -0.008000417798709334,
+  "difference_t": -1.976877005049894,
+  "weeks_channel_better": 29,
+  "weeks_differed": 65,
+  "alpha_screen_equal": 0.0004886208049504228,
+  "alpha_screen_equal_t": 0.25773197863203123,
+  "alpha_universe_equal": 0.0016604463696771017,
+  "spy_week": 0.00013679484475598902
+ },
+ "median_passed": 44,
+ "min_passed": 15,
+ "max_passed": 88,
+ "fallback_weeks": 0,
+ "rows": [
+  {
+   "monday": "2024-06-03",
+   "spy": 0.009432394378366071,
+   "alpha_whole": -0.005849700429851262,
+   "alpha_channel": -0.009493235259601945,
+   "invested_whole": 0.9591,
+   "invested_channel": 0.9649,
+   "book_whole": [
+    "WMT",
+    "DD",
+    "LLY",
+    "LMT",
+    "MO"
+   ],
+   "book_channel": [
+    "KLAC",
+    "PRU",
+    "NVDA",
+    "WFC",
+    "BAC"
+   ],
+   "passed": 54,
+   "fallback": false,
+   "alpha_screen_equal": -0.007354925863131173,
+   "alpha_universe_equal": -0.01494771760555956
+  },
+  {
+   "monday": "2024-06-10",
+   "spy": 0.018005195120506468,
+   "alpha_whole": -0.009930472652748538,
+   "alpha_channel": -0.020059116175722518,
+   "invested_whole": 0.9405,
+   "invested_channel": 0.9497,
+   "book_whole": [
+    "LLY",
+    "DD",
+    "COST",
+    "CNP",
+    "MO"
+   ],
+   "book_channel": [
+    "SYK",
+    "IRM",
+    "PRU",
+    "ELV",
+    "WFC"
+   ],
+   "passed": 56,
+   "fallback": false,
+   "alpha_screen_equal": -0.0023384907546318,
+   "alpha_universe_equal": -0.014078319207728644
+  },
+  {
+   "monday": "2024-06-17",
+   "spy": 0.0077234649573860725,
+   "alpha_whole": 0.004502597469784047,
+   "alpha_channel": 0.017837521253250315,
+   "invested_whole": 0.9692,
+   "invested_channel": 0.9006,
+   "book_whole": [
+    "MCK",
+    "LLY",
+    "DD",
+    "VTR",
+    "REGN"
+   ],
+   "book_channel": [
+    "IRM",
+    "CDNS",
+    "PRU",
+    "VMRK",
+    "WFC"
+   ],
+   "passed": 57,
+   "fallback": false,
+   "alpha_screen_equal": 0.0044619103995270325,
+   "alpha_universe_equal": 0.004101237138132752
+  },
+  {
+   "monday": "2024-06-24",
+   "spy": -0.00020200333736042353,
+   "alpha_whole": -0.004585489285783719,
+   "alpha_channel": -0.00429134503366359,
+   "invested_whole": 0.9907,
+   "invested_channel": 0.9766,
+   "book_whole": [
+    "MSI",
+    "ECL",
+    "DD",
+    "HON",
+    "GOOGL"
+   ],
+   "book_channel": [
+    "ECL",
+    "GOOGL",
+    "PRU",
+    "MCO",
+    "GOOG"
+   ],
+   "passed": 59,
+   "fallback": false,
+   "alpha_screen_equal": 0.0008554892881367652,
+   "alpha_universe_equal": -0.0037263344337695164
+  },
+  {
+   "monday": "2024-07-01",
+   "spy": 0.016513089963181793,
+   "alpha_whole": -0.014278220554718165,
+   "alpha_channel": -0.00785318257594457,
+   "invested_whole": 0.9789,
+   "invested_channel": 0.9372,
+   "book_whole": [
+    "MSFT",
+    "DD",
+    "KMI",
+    "HLT",
+    "MO"
+   ],
+   "book_channel": [
+    "VMRK",
+    "MSFT",
+    "PRU",
+    "IRM",
+    "WFC"
+   ],
+   "passed": 58,
+   "fallback": false,
+   "alpha_screen_equal": -0.00863945213793702,
+   "alpha_universe_equal": -0.016253431191054157
+  },
+  {
+   "monday": "2024-07-08",
+   "spy": 0.00819183030201942,
+   "alpha_whole": 0.02354283340228131,
+   "alpha_channel": -0.0010582385966571841,
+   "invested_whole": 0.9859,
+   "invested_channel": 0.988,
+   "book_whole": [
+    "VTR",
+    "NEM",
+    "DD",
+    "MCO",
+    "MO"
+   ],
+   "book_channel": [
+    "MCO",
+    "NOW",
+    "PRU",
+    "INTU",
+    "GOOGL"
+   ],
+   "passed": 55,
+   "fallback": false,
+   "alpha_screen_equal": -0.002185843821318416,
+   "alpha_universe_equal": 0.01743121635249476
+  },
+  {
+   "monday": "2024-07-15",
+   "spy": -0.02320162246310309,
+   "alpha_whole": 0.0143655263499065,
+   "alpha_channel": -0.03813117275462385,
+   "invested_whole": 0.9995,
+   "invested_channel": 0.9951,
+   "book_whole": [
+    "RBLX",
+    "LNT",
+    "DD",
+    "ARE",
+    "TER"
+   ],
+   "book_channel": [
+    "LLY",
+    "NXPI",
+    "PRU",
+    "AMD",
+    "NI"
+   ],
+   "passed": 59,
+   "fallback": false,
+   "alpha_screen_equal": 0.0008125103865172616,
+   "alpha_universe_equal": 0.01687988147532448
+  },
+  {
+   "monday": "2024-07-22",
+   "spy": -0.015479349086683802,
+   "alpha_whole": 0.021189357489429024,
+   "alpha_channel": 0.01801235052695193,
+   "invested_whole": 0.9862,
+   "invested_channel": 0.978,
+   "book_whole": [
+    "GS",
+    "PLD",
+    "DD",
+    "BAC",
+    "COLD"
+   ],
+   "book_channel": [
+    "BAC",
+    "AEP",
+    "PRU",
+    "CTAS",
+    "JPM"
+   ],
+   "passed": 65,
+   "fallback": false,
+   "alpha_screen_equal": 0.004731121735159669,
+   "alpha_universe_equal": 0.01835354270483689
+  },
+  {
+   "monday": "2024-07-29",
+   "spy": -0.024028288249654972,
+   "alpha_whole": 0.00915189217862355,
+   "alpha_channel": -0.0019685479231130974,
+   "invested_whole": 0.9871,
+   "invested_channel": 0.9603,
+   "book_whole": [
+    "KO",
+    "MPC",
+    "CBRE",
+    "GS",
+    "DOC"
+   ],
+   "book_channel": [
+    "JPM",
+    "VMRK",
+    "KO",
+    "C",
+    "CTAS"
+   ],
+   "passed": 69,
+   "fallback": false,
+   "alpha_screen_equal": -0.009159783590729123,
+   "alpha_universe_equal": 0.0035151053155095327
+  },
+  {
+   "monday": "2024-08-05",
+   "spy": 0.04172831022572887,
+   "alpha_whole": -0.05822456498252472,
+   "alpha_channel": -0.04929968669408157,
+   "invested_whole": 0.9841,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "CTAS",
+    "AEP",
+    "DD",
+    "KO",
+    "ED"
+   ],
+   "book_channel": [
+    "AEP",
+    "JPM",
+    "CTAS",
+    "KO",
+    "ETR"
+   ],
+   "passed": 68,
+   "fallback": false,
+   "alpha_screen_equal": 0.0022744035664376896,
+   "alpha_universe_equal": -0.01095718693534544
+  },
+  {
+   "monday": "2024-08-12",
+   "spy": 0.03762573671585412,
+   "alpha_whole": -0.02324724387301601,
+   "alpha_channel": -0.01569497450132251,
+   "invested_whole": 0.9897,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "KO",
+    "DD",
+    "PEG",
+    "PPL",
+    "MO"
+   ],
+   "book_channel": [
+    "IRM",
+    "JPM",
+    "KO",
+    "PRU",
+    "NRG"
+   ],
+   "passed": 73,
+   "fallback": false,
+   "alpha_screen_equal": -0.010743335597134154,
+   "alpha_universe_equal": -0.012296070471858406
+  },
+  {
+   "monday": "2024-08-19",
+   "spy": 0.013339723352908894,
+   "alpha_whole": 0.0006375381051049837,
+   "alpha_channel": 0.002042176309080719,
+   "invested_whole": 0.9337,
+   "invested_channel": 0.9494,
+   "book_whole": [
+    "MSI",
+    "DD",
+    "MAA",
+    "MO",
+    "FTNT"
+   ],
+   "book_channel": [
+    "MSI",
+    "JPM",
+    "MPC",
+    "NVDA",
+    "CPT"
+   ],
+   "passed": 75,
+   "fallback": false,
+   "alpha_screen_equal": 0.0001323465161954477,
+   "alpha_universe_equal": 0.004886616418954184
+  },
+  {
+   "monday": "2024-08-26",
+   "spy": 0.0008878814362036636,
+   "alpha_whole": 0.017345709939028106,
+   "alpha_channel": 0.014032274728584041,
+   "invested_whole": 1.0,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "DD",
+    "VMRK",
+    "SIDU",
+    "ESS",
+    "MO"
+   ],
+   "book_channel": [
+    "JPM",
+    "VMRK",
+    "MSI",
+    "AMD",
+    "PRU"
+   ],
+   "passed": 77,
+   "fallback": false,
+   "alpha_screen_equal": 0.008979050532065658,
+   "alpha_universe_equal": 0.0035382202140337637
+  },
+  {
+   "monday": "2024-09-02",
+   "spy": -0.035880389591496975,
+   "alpha_whole": 0.011309692318726024,
+   "alpha_channel": 0.013491692787360954,
+   "invested_whole": 0.9909,
+   "invested_channel": 0.9319,
+   "book_whole": [
+    "DD",
+    "WMB",
+    "MSI",
+    "CVS",
+    "VMRK"
+   ],
+   "book_channel": [
+    "VMRK",
+    "JPM",
+    "SYK",
+    "AIG",
+    "UDR"
+   ],
+   "passed": 77,
+   "fallback": false,
+   "alpha_screen_equal": -0.00781757940751289,
+   "alpha_universe_equal": 0.008631383226836525
+  },
+  {
+   "monday": "2024-09-09",
+   "spy": 0.03187379969924464,
+   "alpha_whole": -0.01497524079476813,
+   "alpha_channel": -0.02490464541015896,
+   "invested_whole": 0.9847,
+   "invested_channel": 0.97,
+   "book_whole": [
+    "CVS",
+    "CB",
+    "TRV",
+    "DD",
+    "UDR"
+   ],
+   "book_channel": [
+    "JPM",
+    "UDR",
+    "ECL",
+    "WRB",
+    "AEP"
+   ],
+   "passed": 57,
+   "fallback": false,
+   "alpha_screen_equal": 0.0041010473453532426,
+   "alpha_universe_equal": -0.004539844235716593
+  },
+  {
+   "monday": "2024-09-16",
+   "spy": 0.014691699878973452,
+   "alpha_whole": -0.023855126948033538,
+   "alpha_channel": -0.02131033311324579,
+   "invested_whole": 0.9744,
+   "invested_channel": 0.9835,
+   "book_whole": [
+    "CVS",
+    "CB",
+    "ETR",
+    "MO",
+    "JKHY"
+   ],
+   "book_channel": [
+    "ETR",
+    "AEP",
+    "AIG",
+    "WRB",
+    "NEE"
+   ],
+   "passed": 68,
+   "fallback": false,
+   "alpha_screen_equal": 0.0002865171926433544,
+   "alpha_universe_equal": -0.006615364831611032
+  },
+  {
+   "monday": "2024-09-23",
+   "spy": 0.003740769777025532,
+   "alpha_whole": 0.025840449912477054,
+   "alpha_channel": -0.011643176034074533,
+   "invested_whole": 0.995,
+   "invested_channel": 0.9843,
+   "book_whole": [
+    "CVS",
+    "EXC",
+    "SYM",
+    "DD",
+    "EQIX"
+   ],
+   "book_channel": [
+    "ETR",
+    "WRB",
+    "UDR",
+    "PRU",
+    "D"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.008279384102159351,
+   "alpha_universe_equal": 0.0017646871837533893
+  },
+  {
+   "monday": "2024-09-30",
+   "spy": 0.004487886808022479,
+   "alpha_whole": -0.01460895661486245,
+   "alpha_channel": -0.016657163087942885,
+   "invested_whole": 0.9927,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "CVS",
+    "EXC",
+    "IONQ",
+    "GEHC",
+    "MO"
+   ],
+   "book_channel": [
+    "NEM",
+    "MU",
+    "WRB",
+    "ETR",
+    "COIN"
+   ],
+   "passed": 44,
+   "fallback": false,
+   "alpha_screen_equal": -0.006426750991582924,
+   "alpha_universe_equal": -0.0045538172029062
+  },
+  {
+   "monday": "2024-10-07",
+   "spy": 0.014493484118394129,
+   "alpha_whole": -0.004987083690478509,
+   "alpha_channel": -0.00872361591396023,
+   "invested_whole": 0.9808,
+   "invested_channel": 0.9056,
+   "book_whole": [
+    "CVS",
+    "GEHC",
+    "HD",
+    "MO",
+    "XOM"
+   ],
+   "book_channel": [
+    "RTX",
+    "WRB",
+    "ETR",
+    "AIG",
+    "RSG"
+   ],
+   "passed": 45,
+   "fallback": false,
+   "alpha_screen_equal": -0.008958189847190774,
+   "alpha_universe_equal": -0.0001067163050962102
+  },
+  {
+   "monday": "2024-10-14",
+   "spy": 0.005798330711405786,
+   "alpha_whole": -0.016446734562531044,
+   "alpha_channel": 0.009389935030879848,
+   "invested_whole": 0.9738,
+   "invested_channel": 0.9906,
+   "book_whole": [
+    "CVS",
+    "AFL",
+    "NUE",
+    "MO",
+    "JKHY"
+   ],
+   "book_channel": [
+    "HIG",
+    "PANW",
+    "HLT",
+    "PRU",
+    "AIG"
+   ],
+   "passed": 44,
+   "fallback": false,
+   "alpha_screen_equal": 0.021161756872720303,
+   "alpha_universe_equal": 0.009985158431320217
+  },
+  {
+   "monday": "2024-10-21",
+   "spy": -0.00823845024707337,
+   "alpha_whole": 0.009226337766374281,
+   "alpha_channel": -0.013124335299291755,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9473,
+   "book_whole": [
+    "MO",
+    "PAYX",
+    "RGTI",
+    "DD",
+    "CTAS"
+   ],
+   "book_channel": [
+    "AIG",
+    "D",
+    "PANW",
+    "PRU",
+    "APD"
+   ],
+   "passed": 51,
+   "fallback": false,
+   "alpha_screen_equal": -0.010981165027027218,
+   "alpha_universe_equal": -0.010741199267146319
+  },
+  {
+   "monday": "2024-10-28",
+   "spy": -0.019808411819240535,
+   "alpha_whole": 0.0077734927551200705,
+   "alpha_channel": 0.006205046255249237,
+   "invested_whole": 0.9748,
+   "invested_channel": 0.988,
+   "book_whole": [
+    "BNY",
+    "DD",
+    "KKR",
+    "FAST",
+    "HIG"
+   ],
+   "book_channel": [
+    "FAST",
+    "HIG",
+    "APD",
+    "AIG",
+    "ISRG"
+   ],
+   "passed": 66,
+   "fallback": false,
+   "alpha_screen_equal": -0.0005076006720534376,
+   "alpha_universe_equal": -0.0006626967716083232
+  },
+  {
+   "monday": "2024-11-04",
+   "spy": 0.047288133307477054,
+   "alpha_whole": -0.04211427199574601,
+   "alpha_channel": -0.011388780306418989,
+   "invested_whole": 0.985,
+   "invested_channel": 0.975,
+   "book_whole": [
+    "CBRE",
+    "PFE",
+    "RBLX",
+    "XEL",
+    "PRU"
+   ],
+   "book_channel": [
+    "XEL",
+    "PRU",
+    "GOOGL",
+    "ALL",
+    "VMI"
+   ],
+   "passed": 74,
+   "fallback": false,
+   "alpha_screen_equal": 0.010652932571715519,
+   "alpha_universe_equal": 0.006583310736079297
+  },
+  {
+   "monday": "2024-11-11",
+   "spy": -0.023440967927075396,
+   "alpha_whole": 0.015267886885374693,
+   "alpha_channel": 0.030678987016184878,
+   "invested_whole": 0.9954,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "XEL",
+    "PRU",
+    "GILD",
+    "AON",
+    "DD"
+   ],
+   "book_channel": [
+    "PRU",
+    "XEL",
+    "MCK",
+    "AON",
+    "ALL"
+   ],
+   "passed": 88,
+   "fallback": false,
+   "alpha_screen_equal": 0.0093159046909088,
+   "alpha_universe_equal": 0.0011421639588242369
+  },
+  {
+   "monday": "2024-11-18",
+   "spy": 0.015847256099567053,
+   "alpha_whole": 0.23310664891466382,
+   "alpha_channel": -0.0009296533727416109,
+   "invested_whole": 0.9948,
+   "invested_channel": 0.9755,
+   "book_whole": [
+    "XEL",
+    "PRU",
+    "QUBT",
+    "AXP",
+    "VICI"
+   ],
+   "book_channel": [
+    "XEL",
+    "PRU",
+    "MCK",
+    "AMZN",
+    "ALL"
+   ],
+   "passed": 88,
+   "fallback": false,
+   "alpha_screen_equal": 0.007553174309836364,
+   "alpha_universe_equal": 0.020304492601607868
+  },
+  {
+   "monday": "2024-11-25",
+   "spy": 0.005054014399850537,
+   "alpha_whole": 0.0014643681924236688,
+   "alpha_channel": 0.006926938590272439,
+   "invested_whole": 1.0,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "AON",
+    "PRU",
+    "NI",
+    "XEL",
+    "CMG"
+   ],
+   "book_channel": [
+    "PRU",
+    "AON",
+    "NI",
+    "XEL",
+    "ALL"
+   ],
+   "passed": 88,
+   "fallback": false,
+   "alpha_screen_equal": 0.0023730256090602614,
+   "alpha_universe_equal": -0.001309611601307977
+  },
+  {
+   "monday": "2024-12-02",
+   "spy": 0.00802716571892681,
+   "alpha_whole": 0.033626428097667894,
+   "alpha_channel": -0.04517517548932108,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9925,
+   "book_whole": [
+    "RGTI",
+    "PRU",
+    "PPL",
+    "DD",
+    "HD"
+   ],
+   "book_channel": [
+    "PRU",
+    "PPL",
+    "APD",
+    "ALL",
+    "ATO"
+   ],
+   "passed": 84,
+   "fallback": false,
+   "alpha_screen_equal": -0.018321676492462212,
+   "alpha_universe_equal": -0.016994721720649
+  },
+  {
+   "monday": "2024-12-09",
+   "spy": -0.0057266424957965745,
+   "alpha_whole": -0.021534122307949044,
+   "alpha_channel": -0.013963535770868705,
+   "invested_whole": 0.9882,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "CME",
+    "PRU",
+    "SPG",
+    "DD",
+    "HD"
+   ],
+   "book_channel": [
+    "CMG",
+    "PRU",
+    "CBRE",
+    "ALL",
+    "MSFT"
+   ],
+   "passed": 77,
+   "fallback": false,
+   "alpha_screen_equal": -0.013324445396735912,
+   "alpha_universe_equal": -0.01363157525462956
+  },
+  {
+   "monday": "2024-12-16",
+   "spy": -0.021221678180733727,
+   "alpha_whole": 0.053669892633492464,
+   "alpha_channel": -0.007308548470644324,
+   "invested_whole": 0.972,
+   "invested_channel": 0.969,
+   "book_whole": [
+    "AAPL",
+    "MSFT",
+    "PRU",
+    "AZO",
+    "RGTI"
+   ],
+   "book_channel": [
+    "AZO",
+    "PRU",
+    "PANW",
+    "JPM",
+    "WMT"
+   ],
+   "passed": 64,
+   "fallback": false,
+   "alpha_screen_equal": -0.00618371582672677,
+   "alpha_universe_equal": 0.0016662914861652889
+  },
+  {
+   "monday": "2024-12-23",
+   "spy": 0.006972420971450566,
+   "alpha_whole": 0.0035728798700363582,
+   "alpha_channel": 0.00017276807939030098,
+   "invested_whole": 0.9759,
+   "invested_channel": 0.9935,
+   "book_whole": [
+    "AAPL",
+    "PRU",
+    "TPR",
+    "DD",
+    "EW"
+   ],
+   "book_channel": [
+    "AZO",
+    "PRU",
+    "WMT",
+    "ALL",
+    "AIG"
+   ],
+   "passed": 63,
+   "fallback": false,
+   "alpha_screen_equal": 0.002074920653837126,
+   "alpha_universe_equal": 0.002384056303738065
+  },
+  {
+   "monday": "2024-12-30",
+   "spy": 0.006906099532810739,
+   "alpha_whole": 0.033656622491967714,
+   "alpha_channel": 0.03896534935356522,
+   "invested_whole": 0.9936,
+   "invested_channel": 0.9408,
+   "book_whole": [
+    "RGTI",
+    "EW",
+    "DD",
+    "QBTS",
+    "AAPL"
+   ],
+   "book_channel": [
+    "PRU",
+    "BFLY",
+    "ALL",
+    "NI",
+    "GILD"
+   ],
+   "passed": 64,
+   "fallback": false,
+   "alpha_screen_equal": 0.002299527587145196,
+   "alpha_universe_equal": 0.0017773221736034003
+  },
+  {
+   "monday": "2025-01-06",
+   "spy": -0.026464676790798003,
+   "alpha_whole": -0.11469842854155501,
+   "alpha_channel": -0.023682144946906757,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9228,
+   "book_whole": [
+    "RGTI",
+    "DD",
+    "GEV",
+    "TER",
+    "PRU"
+   ],
+   "book_channel": [
+    "BFLY",
+    "PRU",
+    "ALL",
+    "NRG",
+    "MCK"
+   ],
+   "passed": 65,
+   "fallback": false,
+   "alpha_screen_equal": -0.0012219773382418642,
+   "alpha_universe_equal": -0.0034563994668507167
+  },
+  {
+   "monday": "2025-01-13",
+   "spy": 0.03787967259954028,
+   "alpha_whole": -0.016824295037722974,
+   "alpha_channel": 0.017237016857083003,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9481,
+   "book_whole": [
+    "DD",
+    "BDX",
+    "META",
+    "GEHC",
+    "OXY"
+   ],
+   "book_channel": [
+    "ISRG",
+    "PRU",
+    "MCK",
+    "NRG",
+    "AIG"
+   ],
+   "passed": 63,
+   "fallback": false,
+   "alpha_screen_equal": 0.013025484830031686,
+   "alpha_universe_equal": 0.012364767365538286
+  },
+  {
+   "monday": "2025-01-20",
+   "spy": 0.012153087030458476,
+   "alpha_whole": 0.0015187723844678237,
+   "alpha_channel": -0.01993099769414405,
+   "invested_whole": 0.993,
+   "invested_channel": 0.9416,
+   "book_whole": [
+    "JPM",
+    "DD",
+    "CVS",
+    "BNY",
+    "PRU"
+   ],
+   "book_channel": [
+    "JPM",
+    "PRU",
+    "OKE",
+    "C",
+    "ALL"
+   ],
+   "passed": 75,
+   "fallback": false,
+   "alpha_screen_equal": -0.006925126861720473,
+   "alpha_universe_equal": -0.002474020995255172
+  },
+  {
+   "monday": "2025-01-27",
+   "spy": 0.011785334175883788,
+   "alpha_whole": -0.04711798902699568,
+   "alpha_channel": -0.00219016424539285,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9414,
+   "book_whole": [
+    "MDT",
+    "VSAT",
+    "DD",
+    "APH",
+    "BDX"
+   ],
+   "book_channel": [
+    "JPM",
+    "PRU",
+    "MMM",
+    "ISRG",
+    "VMI"
+   ],
+   "passed": 80,
+   "fallback": false,
+   "alpha_screen_equal": -0.0017007872869803826,
+   "alpha_universe_equal": -0.00830443063850872
+  },
+  {
+   "monday": "2025-02-03",
+   "spy": 0.013666817941136777,
+   "alpha_whole": 0.01454697284102905,
+   "alpha_channel": 0.01251932942584711,
+   "invested_whole": 0.9974,
+   "invested_channel": 0.9131,
+   "book_whole": [
+    "JPM",
+    "META",
+    "DD",
+    "ACN",
+    "BKR"
+   ],
+   "book_channel": [
+    "JPM",
+    "NFLX",
+    "GS",
+    "HIG",
+    "QUBT"
+   ],
+   "passed": 76,
+   "fallback": false,
+   "alpha_screen_equal": 0.0043638029785444225,
+   "alpha_universe_equal": -0.0007036632865949181
+  },
+  {
+   "monday": "2025-02-10",
+   "spy": 0.009386717313924597,
+   "alpha_whole": -0.007355898268718569,
+   "alpha_channel": -0.009507170002376374,
+   "invested_whole": 0.9917,
+   "invested_channel": 0.8142,
+   "book_whole": [
+    "ORLY",
+    "SBUX",
+    "PFE",
+    "MA",
+    "WMT"
+   ],
+   "book_channel": [
+    "ORLY",
+    "PRU",
+    "WMT",
+    "MA",
+    "HLT"
+   ],
+   "passed": 78,
+   "fallback": false,
+   "alpha_screen_equal": -0.009701029894094106,
+   "alpha_universe_equal": -0.005594454504595142
+  },
+  {
+   "monday": "2025-02-17",
+   "spy": -0.017908493135432413,
+   "alpha_whole": 0.03982972192919225,
+   "alpha_channel": 0.007492880194681469,
+   "invested_whole": 0.9963,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "SMCI",
+    "ORLY",
+    "PFE",
+    "INTC",
+    "ACN"
+   ],
+   "book_channel": [
+    "ORLY",
+    "PRU",
+    "WELL",
+    "SPGI",
+    "ALL"
+   ],
+   "passed": 78,
+   "fallback": false,
+   "alpha_screen_equal": 0.003238530859503484,
+   "alpha_universe_equal": 0.008360642875759302
+  },
+  {
+   "monday": "2025-02-24",
+   "spy": -0.013022814933101867,
+   "alpha_whole": 0.02602773850539751,
+   "alpha_channel": 0.05542223842039308,
+   "invested_whole": 0.9887,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "CSCO",
+    "PFE",
+    "LIN",
+    "CMS",
+    "PRU"
+   ],
+   "book_channel": [
+    "CMS",
+    "GILD",
+    "PRU",
+    "AON",
+    "ALL"
+   ],
+   "passed": 53,
+   "fallback": false,
+   "alpha_screen_equal": 0.027369973767179805,
+   "alpha_universe_equal": 0.010903336070066022
+  },
+  {
+   "monday": "2025-03-03",
+   "spy": -0.03398294171877758,
+   "alpha_whole": 0.02350935449094245,
+   "alpha_channel": 0.02200221543219662,
+   "invested_whole": 0.9625,
+   "invested_channel": 0.9995,
+   "book_whole": [
+    "LNT",
+    "SO",
+    "PFE",
+    "EVRG",
+    "ATO"
+   ],
+   "book_channel": [
+    "SO",
+    "ALL",
+    "LNT",
+    "EVRG",
+    "ATO"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.008784967371395065,
+   "alpha_universe_equal": 0.009670242029327276
+  },
+  {
+   "monday": "2025-03-10",
+   "spy": -0.008421519541785716,
+   "alpha_whole": -0.023167520601769367,
+   "alpha_channel": 0.011740151647625107,
+   "invested_whole": 1.0,
+   "invested_channel": 0.8428,
+   "book_whole": [
+    "SBAC",
+    "SO",
+    "PFE",
+    "O",
+    "ITW"
+   ],
+   "book_channel": [
+    "SO",
+    "MAA",
+    "ALL",
+    "WRB",
+    "CMS"
+   ],
+   "passed": 39,
+   "fallback": false,
+   "alpha_screen_equal": 0.010752248505366557,
+   "alpha_universe_equal": 0.00666446513369523
+  },
+  {
+   "monday": "2025-03-17",
+   "spy": 0.005128848513979767,
+   "alpha_whole": 0.016599625993022935,
+   "alpha_channel": 0.0017347082322176398,
+   "invested_whole": 0.9963,
+   "invested_channel": 0.8301,
+   "book_whole": [
+    "COR",
+    "PFE",
+    "ELV",
+    "AZO",
+    "CI"
+   ],
+   "book_channel": [
+    "AZO",
+    "ALL",
+    "WRB",
+    "DUK",
+    "BAC"
+   ],
+   "passed": 37,
+   "fallback": false,
+   "alpha_screen_equal": -0.005314017954550983,
+   "alpha_universe_equal": -0.0017498067922028853
+  },
+  {
+   "monday": "2025-03-24",
+   "spy": -0.026524235498993742,
+   "alpha_whole": 0.030375258222429716,
+   "alpha_channel": 0.035272069655974916,
+   "invested_whole": 1.0,
+   "invested_channel": 0.895,
+   "book_whole": [
+    "COR",
+    "PFE",
+    "ED",
+    "ELV",
+    "EIX"
+   ],
+   "book_channel": [
+    "ALL",
+    "AZO",
+    "CB",
+    "CMS",
+    "PEG"
+   ],
+   "passed": 41,
+   "fallback": false,
+   "alpha_screen_equal": 0.02091213384299145,
+   "alpha_universe_equal": 0.00881011003412581
+  },
+  {
+   "monday": "2025-03-31",
+   "spy": -0.08102512565522191,
+   "alpha_whole": 0.01497241251872966,
+   "alpha_channel": 0.002758085697926932,
+   "invested_whole": 0.9826,
+   "invested_channel": 0.9784,
+   "book_whole": [
+    "XOM",
+    "PFE",
+    "ELV",
+    "CNP",
+    "PRU"
+   ],
+   "book_channel": [
+    "ALL",
+    "PPL",
+    "OKE",
+    "CB",
+    "AZO"
+   ],
+   "passed": 40,
+   "fallback": false,
+   "alpha_screen_equal": 0.009698773107485043,
+   "alpha_universe_equal": -0.0007677083240028026
+  },
+  {
+   "monday": "2025-04-07",
+   "spy": 0.0914776719706476,
+   "alpha_whole": -0.06750656064451925,
+   "alpha_channel": -0.06565824578218996,
+   "invested_whole": 0.9723,
+   "invested_channel": 0.8879,
+   "book_whole": [
+    "MCK",
+    "PFE",
+    "EXC",
+    "COR",
+    "CI"
+   ],
+   "book_channel": [
+    "MCK",
+    "CB",
+    "AZO",
+    "ALL",
+    "GILD"
+   ],
+   "passed": 23,
+   "fallback": false,
+   "alpha_screen_equal": -0.05585238084203456,
+   "alpha_universe_equal": -0.020625233069727314
+  },
+  {
+   "monday": "2025-04-14",
+   "spy": -0.03242327472796902,
+   "alpha_whole": 0.04474478523980443,
+   "alpha_channel": 0.03773557625770083,
+   "invested_whole": 0.9409,
+   "invested_channel": 0.9854,
+   "book_whole": [
+    "EXC",
+    "PFE",
+    "RSG",
+    "CI",
+    "FE"
+   ],
+   "book_channel": [
+    "WRB",
+    "CB",
+    "COST",
+    "ORLY",
+    "ALL"
+   ],
+   "passed": 31,
+   "fallback": false,
+   "alpha_screen_equal": 0.03139448792698656,
+   "alpha_universe_equal": 0.021109111194155657
+  },
+  {
+   "monday": "2025-04-21",
+   "spy": 0.056566286846164715,
+   "alpha_whole": -0.0503833457309754,
+   "alpha_channel": -0.058049545260710524,
+   "invested_whole": 0.9264,
+   "invested_channel": 0.9786,
+   "book_whole": [
+    "EXC",
+    "PFE",
+    "LLY",
+    "SBAC",
+    "CI"
+   ],
+   "book_channel": [
+    "ATO",
+    "ALL",
+    "COR",
+    "EVRG",
+    "DUK"
+   ],
+   "passed": 33,
+   "fallback": false,
+   "alpha_screen_equal": -0.05464664356299796,
+   "alpha_universe_equal": -0.014218127186330483
+  },
+  {
+   "monday": "2025-04-28",
+   "spy": 0.02787514620040099,
+   "alpha_whole": -0.011401360937912,
+   "alpha_channel": -0.006105779131707689,
+   "invested_whole": 0.9707,
+   "invested_channel": 0.968,
+   "book_whole": [
+    "DLR",
+    "CNP",
+    "ELV",
+    "SPG",
+    "ATO"
+   ],
+   "book_channel": [
+    "ATO",
+    "CB",
+    "WMB",
+    "WRB",
+    "EVRG"
+   ],
+   "passed": 35,
+   "fallback": false,
+   "alpha_screen_equal": -0.0020923039663978543,
+   "alpha_universe_equal": -0.0008835668202794994
+  },
+  {
+   "monday": "2025-05-05",
+   "spy": 0.0031460770610944877,
+   "alpha_whole": -0.006866491409113362,
+   "alpha_channel": 0.007795149762084688,
+   "invested_whole": 0.966,
+   "invested_channel": 0.9978,
+   "book_whole": [
+    "RBLX",
+    "CNP",
+    "MO",
+    "NFLX",
+    "CME"
+   ],
+   "book_channel": [
+    "BSX",
+    "CB",
+    "PH",
+    "MAA",
+    "ALL"
+   ],
+   "passed": 34,
+   "fallback": false,
+   "alpha_screen_equal": -0.005445329992269615,
+   "alpha_universe_equal": -0.0006824434210024022
+  },
+  {
+   "monday": "2025-05-12",
+   "spy": 0.02189284214605336,
+   "alpha_whole": -0.0067518211858481805,
+   "alpha_channel": 0.0025792811646232587,
+   "invested_whole": 0.9803,
+   "invested_channel": 0.9773,
+   "book_whole": [
+    "AXON",
+    "CME",
+    "CI",
+    "BA",
+    "ES"
+   ],
+   "book_channel": [
+    "JCI",
+    "CB",
+    "BSX",
+    "ALL",
+    "MMM"
+   ],
+   "passed": 23,
+   "fallback": false,
+   "alpha_screen_equal": -0.01001067180601961,
+   "alpha_universe_equal": -0.002846996805969275
+  },
+  {
+   "monday": "2025-05-19",
+   "spy": -0.015286691741968172,
+   "alpha_whole": 0.01873087764846967,
+   "alpha_channel": -0.0060968738080915165,
+   "invested_whole": 0.9936,
+   "invested_channel": 0.9343,
+   "book_whole": [
+    "SYM",
+    "ES",
+    "CI",
+    "NEE",
+    "NVDA"
+   ],
+   "book_channel": [
+    "CB",
+    "ALL",
+    "XEL",
+    "ORLY",
+    "RTX"
+   ],
+   "passed": 28,
+   "fallback": false,
+   "alpha_screen_equal": 0.006744101183511165,
+   "alpha_universe_equal": 0.0007814491102748292
+  },
+  {
+   "monday": "2025-05-26",
+   "spy": 0.005664704993290526,
+   "alpha_whole": -0.004081128042196771,
+   "alpha_channel": 0.008167179539690853,
+   "invested_whole": 0.9569,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "SYM",
+    "MNST",
+    "CI",
+    "INTU",
+    "CSX"
+   ],
+   "book_channel": [
+    "CB",
+    "TPR",
+    "NFLX",
+    "GEV",
+    "JCI"
+   ],
+   "passed": 27,
+   "fallback": false,
+   "alpha_screen_equal": -0.0011994767284155905,
+   "alpha_universe_equal": -0.00501943040687693
+  },
+  {
+   "monday": "2025-06-02",
+   "spy": 0.01936175360554504,
+   "alpha_whole": 0.012779089236328076,
+   "alpha_channel": -0.012010960745004627,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9888,
+   "book_whole": [
+    "ZS",
+    "ZTS",
+    "CI",
+    "EW",
+    "APH"
+   ],
+   "book_channel": [
+    "JCI",
+    "RSG",
+    "CB",
+    "RTX",
+    "TRV"
+   ],
+   "passed": 34,
+   "fallback": false,
+   "alpha_screen_equal": -0.0171130857857296,
+   "alpha_universe_equal": -0.0013978029870326258
+  },
+  {
+   "monday": "2025-06-09",
+   "spy": -0.004535551199137733,
+   "alpha_whole": -0.006858995226490904,
+   "alpha_channel": -0.02182068077643561,
+   "invested_whole": 0.9981,
+   "invested_channel": 0.9868,
+   "book_whole": [
+    "DLR",
+    "ZTS",
+    "CI",
+    "EQIX",
+    "BIIB"
+   ],
+   "book_channel": [
+    "GILD",
+    "TRV",
+    "PAYX",
+    "ALL",
+    "JCI"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": -0.0038749081167840597,
+   "alpha_universe_equal": -0.0006830286347338623
+  },
+  {
+   "monday": "2025-06-16",
+   "spy": -0.007267080274975801,
+   "alpha_whole": -0.018008430574050948,
+   "alpha_channel": 0.0013629001888876297,
+   "invested_whole": 0.9946,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "NEE",
+    "ORCL",
+    "CI",
+    "VSAT",
+    "MDT"
+   ],
+   "book_channel": [
+    "RTX",
+    "ALL",
+    "AVGO",
+    "TRV",
+    "JCI"
+   ],
+   "passed": 39,
+   "fallback": false,
+   "alpha_screen_equal": 0.0031987987637374033,
+   "alpha_universe_equal": 0.001034620461243284
+  },
+  {
+   "monday": "2025-06-23",
+   "spy": 0.03339276741650821,
+   "alpha_whole": -0.0375690214887524,
+   "alpha_channel": -0.03860832749950758,
+   "invested_whole": 0.9623,
+   "invested_channel": 0.952,
+   "book_whole": [
+    "NUE",
+    "BXP",
+    "CI",
+    "XOM",
+    "CVX"
+   ],
+   "book_channel": [
+    "ALL",
+    "RTX",
+    "TRV",
+    "EVRG",
+    "DE"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": -0.01764376241370785,
+   "alpha_universe_equal": -0.010768294548458304
+  },
+  {
+   "monday": "2025-06-30",
+   "spy": 0.01289327778381999,
+   "alpha_whole": -0.000789528620727651,
+   "alpha_channel": -0.005707165954855965,
+   "invested_whole": 0.9982,
+   "invested_channel": 0.9967,
+   "book_whole": [
+    "GS",
+    "FDX",
+    "CI",
+    "INTC",
+    "EOG"
+   ],
+   "book_channel": [
+    "TRV",
+    "TPR",
+    "RTX",
+    "GILD",
+    "BSX"
+   ],
+   "passed": 36,
+   "fallback": false,
+   "alpha_screen_equal": -0.004679274251509066,
+   "alpha_universe_equal": 0.010883516705841614
+  },
+  {
+   "monday": "2025-07-07",
+   "spy": 0.00041699932703398446,
+   "alpha_whole": -0.032306689971928836,
+   "alpha_channel": -0.01523398512763981,
+   "invested_whole": 0.9809,
+   "invested_channel": 0.9698,
+   "book_whole": [
+    "QUBT",
+    "AMP",
+    "PRU",
+    "NTLA",
+    "NSC"
+   ],
+   "book_channel": [
+    "BNY",
+    "TRV",
+    "AVGO",
+    "FTNT",
+    "JCI"
+   ],
+   "passed": 36,
+   "fallback": false,
+   "alpha_screen_equal": -0.0074024534504516055,
+   "alpha_universe_equal": -0.0027617419121991585
+  },
+  {
+   "monday": "2025-07-14",
+   "spy": 0.0070929069331893135,
+   "alpha_whole": -0.00011984950232789542,
+   "alpha_channel": 0.016390028354844165,
+   "invested_whole": 0.9631,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "NTLA",
+    "NDSN",
+    "PRU",
+    "TER",
+    "GOOG"
+   ],
+   "book_channel": [
+    "TPR",
+    "AVGO",
+    "GILD",
+    "AEP",
+    "JCI"
+   ],
+   "passed": 37,
+   "fallback": false,
+   "alpha_screen_equal": 0.009870441479518408,
+   "alpha_universe_equal": 0.0009284253261839046
+  },
+  {
+   "monday": "2025-07-21",
+   "spy": 0.013248115782209302,
+   "alpha_whole": -0.003988873584916812,
+   "alpha_channel": 0.0038054915285512005,
+   "invested_whole": 0.9876,
+   "invested_channel": 0.9747,
+   "book_whole": [
+    "JNJ",
+    "APD",
+    "PRU",
+    "PEP",
+    "OKE"
+   ],
+   "book_channel": [
+    "BNY",
+    "TRV",
+    "TPR",
+    "ALL",
+    "WELL"
+   ],
+   "passed": 40,
+   "fallback": false,
+   "alpha_screen_equal": 0.006854568254721607,
+   "alpha_universe_equal": 0.0021574434485864113
+  },
+  {
+   "monday": "2025-07-28",
+   "spy": -0.024722234567306156,
+   "alpha_whole": -0.0365558180461798,
+   "alpha_channel": 0.01998093440949629,
+   "invested_whole": 0.9899,
+   "invested_channel": 0.9159,
+   "book_whole": [
+    "NTLA",
+    "NI",
+    "DD",
+    "TEL",
+    "BDX"
+   ],
+   "book_channel": [
+    "BNY",
+    "NI",
+    "TRV",
+    "AVGO",
+    "APH"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.02029339189373771,
+   "alpha_universe_equal": -0.010070598068463478
+  },
+  {
+   "monday": "2025-08-04",
+   "spy": 0.01839632813278258,
+   "alpha_whole": 0.009590685797667066,
+   "alpha_channel": 0.002417779015652405,
+   "invested_whole": 0.9949,
+   "invested_channel": 0.921,
+   "book_whole": [
+    "JNJ",
+    "ABBV",
+    "PRU",
+    "AEP",
+    "HUM"
+   ],
+   "book_channel": [
+    "BNY",
+    "AEP",
+    "TRV",
+    "ORLY",
+    "AZO"
+   ],
+   "passed": 39,
+   "fallback": false,
+   "alpha_screen_equal": -0.017813835039653,
+   "alpha_universe_equal": -0.012640335650452961
+  },
+  {
+   "monday": "2025-08-11",
+   "spy": 0.009380955451033124,
+   "alpha_whole": -0.006609529735935096,
+   "alpha_channel": -0.020071721780686818,
+   "invested_whole": 1.0,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "EVRG",
+    "D",
+    "PRU",
+    "AEP",
+    "PFE"
+   ],
+   "book_channel": [
+    "TRV",
+    "EVRG",
+    "WELL",
+    "BNY",
+    "AEP"
+   ],
+   "passed": 41,
+   "fallback": false,
+   "alpha_screen_equal": -0.020935117623836257,
+   "alpha_universe_equal": 0.0011899914242057413
+  },
+  {
+   "monday": "2025-08-18",
+   "spy": 0.003811265333509395,
+   "alpha_whole": 0.0215148394893871,
+   "alpha_channel": 0.02354408282626247,
+   "invested_whole": 0.9376,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "MO",
+    "PRU",
+    "SHW",
+    "ALL",
+    "MCD"
+   ],
+   "book_channel": [
+    "TRV",
+    "AZO",
+    "ATO",
+    "CBRE",
+    "BNY"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": 0.007035630897574868,
+   "alpha_universe_equal": 0.012348936455351622
+  },
+  {
+   "monday": "2025-08-25",
+   "spy": 0.0015681254301929126,
+   "alpha_whole": 0.002578879796619969,
+   "alpha_channel": -0.0040354067361104765,
+   "invested_whole": 0.9993,
+   "invested_channel": 0.9902,
+   "book_whole": [
+    "HUM",
+    "ATO",
+    "PRU",
+    "ITW",
+    "CVS"
+   ],
+   "book_channel": [
+    "ATO",
+    "TRV",
+    "APH",
+    "MMM",
+    "BNY"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.0054734643983698865,
+   "alpha_universe_equal": -0.002119216828172676
+  },
+  {
+   "monday": "2025-09-01",
+   "spy": 0.015278438735526922,
+   "alpha_whole": -0.025288392188144944,
+   "alpha_channel": -0.008929303196464967,
+   "invested_whole": 0.9925,
+   "invested_channel": 0.8897,
+   "book_whole": [
+    "FRT",
+    "EOG",
+    "ALL",
+    "DD",
+    "CVX"
+   ],
+   "book_channel": [
+    "C",
+    "TRV",
+    "CBRE",
+    "JPM",
+    "BNY"
+   ],
+   "passed": 39,
+   "fallback": false,
+   "alpha_screen_equal": -0.010105743738374601,
+   "alpha_universe_equal": -0.008519748859800818
+  },
+  {
+   "monday": "2025-09-08",
+   "spy": 0.013551807553182638,
+   "alpha_whole": -0.020024740111275387,
+   "alpha_channel": 0.007872281311104967,
+   "invested_whole": 0.9891,
+   "invested_channel": 0.9496,
+   "book_whole": [
+    "FRT",
+    "PANW",
+    "ALL",
+    "SPG",
+    "TER"
+   ],
+   "book_channel": [
+    "TRV",
+    "AZO",
+    "C",
+    "BNY",
+    "CBRE"
+   ],
+   "passed": 37,
+   "fallback": false,
+   "alpha_screen_equal": 0.001778247539849927,
+   "alpha_universe_equal": -0.004981802373541077
+  },
+  {
+   "monday": "2025-09-15",
+   "spy": 0.008944326045767559,
+   "alpha_whole": 0.12821997925208442,
+   "alpha_channel": 0.011701320585626094,
+   "invested_whole": 0.9946,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "IONQ",
+    "WMT",
+    "ALL",
+    "RGTI",
+    "MSI"
+   ],
+   "book_channel": [
+    "APH",
+    "TRV",
+    "WMT",
+    "BNY",
+    "TPR"
+   ],
+   "passed": 23,
+   "fallback": false,
+   "alpha_screen_equal": -0.002393176886281663,
+   "alpha_universe_equal": 0.00022293674596802343
+  },
+  {
+   "monday": "2025-09-22",
+   "spy": -0.0005737476436594724,
+   "alpha_whole": 0.05186253405518834,
+   "alpha_channel": 0.007166018128614823,
+   "invested_whole": 0.9933,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "QBTS",
+    "BIIB",
+    "ALL",
+    "RGTI",
+    "ABBV"
+   ],
+   "book_channel": [
+    "APH",
+    "TRV",
+    "C",
+    "BNY",
+    "GS"
+   ],
+   "passed": 23,
+   "fallback": false,
+   "alpha_screen_equal": -0.00044413687725345903,
+   "alpha_universe_equal": 0.004994167198050742
+  },
+  {
+   "monday": "2025-09-29",
+   "spy": 0.007300320080535272,
+   "alpha_whole": 0.06123017352030066,
+   "alpha_channel": -0.008283283853396526,
+   "invested_whole": 0.9992,
+   "invested_channel": 0.9571,
+   "book_whole": [
+    "ES",
+    "INTC",
+    "ALL",
+    "RGTI",
+    "IRM"
+   ],
+   "book_channel": [
+    "JPM",
+    "TRV",
+    "APH",
+    "XEL",
+    "GILD"
+   ],
+   "passed": 22,
+   "fallback": false,
+   "alpha_screen_equal": -0.011476796521874014,
+   "alpha_universe_equal": 0.009152753327293192
+  },
+  {
+   "monday": "2025-10-06",
+   "spy": -0.02769418890227271,
+   "alpha_whole": -0.0007349959766840171,
+   "alpha_channel": 0.021729998258505957,
+   "invested_whole": 0.9825,
+   "invested_channel": 0.9105,
+   "book_whole": [
+    "ES",
+    "XYL",
+    "PRU",
+    "AES",
+    "VMI"
+   ],
+   "book_channel": [
+    "XEL",
+    "WMB",
+    "HPE",
+    "WEC",
+    "GILD"
+   ],
+   "passed": 15,
+   "fallback": false,
+   "alpha_screen_equal": 0.011168630052065587,
+   "alpha_universe_equal": -4.78338958296784e-05
+  },
+  {
+   "monday": "2025-10-13",
+   "spy": 0.005660991138475069,
+   "alpha_whole": 0.010046961941910328,
+   "alpha_channel": -0.005816038613755704,
+   "invested_whole": 0.9854,
+   "invested_channel": 0.9609,
+   "book_whole": [
+    "EVRG",
+    "CVS",
+    "ALL",
+    "FE",
+    "GILD"
+   ],
+   "book_channel": [
+    "SRE",
+    "HPE",
+    "AMD",
+    "WEC",
+    "XEL"
+   ],
+   "passed": 18,
+   "fallback": false,
+   "alpha_screen_equal": 0.010649972530104704,
+   "alpha_universe_equal": 0.001879458503270739
+  },
+  {
+   "monday": "2025-10-20",
+   "spy": 0.014880267672972902,
+   "alpha_whole": -0.024305785641539332,
+   "alpha_channel": -0.022211390015617262,
+   "invested_whole": 0.9764,
+   "invested_channel": 0.9863,
+   "book_whole": [
+    "PSA",
+    "ALL",
+    "EXC",
+    "JNJ",
+    "PRU"
+   ],
+   "book_channel": [
+    "GILD",
+    "MNST",
+    "HPE",
+    "WMT",
+    "WEC"
+   ],
+   "passed": 21,
+   "fallback": false,
+   "alpha_screen_equal": -0.013294164295393011,
+   "alpha_universe_equal": -0.006063589543657091
+  },
+  {
+   "monday": "2025-10-27",
+   "spy": -0.0009812483240367875,
+   "alpha_whole": -0.02592508277612421,
+   "alpha_channel": -0.014102761970330514,
+   "invested_whole": 1.0,
+   "invested_channel": 0.95,
+   "book_whole": [
+    "KO",
+    "EXC",
+    "AES",
+    "HLT",
+    "WFC"
+   ],
+   "book_channel": [
+    "DD",
+    "MNST",
+    "VLO",
+    "WMT",
+    "HPE"
+   ],
+   "passed": 23,
+   "fallback": false,
+   "alpha_screen_equal": 0.009918799170602233,
+   "alpha_universe_equal": -0.01669169287993871
+  },
+  {
+   "monday": "2025-11-03",
+   "spy": -0.021438923634880647,
+   "alpha_whole": 0.008388548801557925,
+   "alpha_channel": 0.009099063612910883,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9725,
+   "book_whole": [
+    "NUE",
+    "EQIX",
+    "BMY",
+    "MS",
+    "SHW"
+   ],
+   "book_channel": [
+    "TEL",
+    "GILD",
+    "TER",
+    "BIIB",
+    "HPE"
+   ],
+   "passed": 26,
+   "fallback": false,
+   "alpha_screen_equal": 0.01866393721881982,
+   "alpha_universe_equal": 0.014711562121077642
+  },
+  {
+   "monday": "2025-11-10",
+   "spy": -0.007840559980502038,
+   "alpha_whole": 0.03827425534779907,
+   "alpha_channel": 0.005111855509935315,
+   "invested_whole": 0.9768,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "EW",
+    "ALL",
+    "AKAM",
+    "IDXX",
+    "BMY"
+   ],
+   "book_channel": [
+    "IDXX",
+    "GILD",
+    "MU",
+    "TEL",
+    "DD"
+   ],
+   "passed": 27,
+   "fallback": false,
+   "alpha_screen_equal": -0.0161765739995326,
+   "alpha_universe_equal": -3.890484172826454e-05
+  },
+  {
+   "monday": "2025-11-17",
+   "spy": -0.015932312838103257,
+   "alpha_whole": 0.027464840459464582,
+   "alpha_channel": 0.010408647629363377,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9754,
+   "book_whole": [
+    "IDXX",
+    "VTR",
+    "BMY",
+    "WELL",
+    "JCI"
+   ],
+   "book_channel": [
+    "IDXX",
+    "GILD",
+    "VLO",
+    "DD",
+    "CME"
+   ],
+   "passed": 35,
+   "fallback": false,
+   "alpha_screen_equal": -0.010469072216167705,
+   "alpha_universe_equal": 0.004984613620732733
+  },
+  {
+   "monday": "2025-11-24",
+   "spy": 0.03123640740378164,
+   "alpha_whole": -0.012835943649592223,
+   "alpha_channel": -0.027375535694199177,
+   "invested_whole": 0.9844,
+   "invested_channel": 0.8693,
+   "book_whole": [
+    "LLY",
+    "MNST",
+    "BMY",
+    "HCA",
+    "CB"
+   ],
+   "book_channel": [
+    "ALL",
+    "GILD",
+    "WRB",
+    "MNST",
+    "BIIB"
+   ],
+   "passed": 36,
+   "fallback": false,
+   "alpha_screen_equal": 0.01144193684821114,
+   "alpha_universe_equal": -0.001541836907406214
+  },
+  {
+   "monday": "2025-12-01",
+   "spy": 0.010135374647669781,
+   "alpha_whole": -0.002042322650163155,
+   "alpha_channel": -0.02163012570487838,
+   "invested_whole": 0.9832,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "MRK",
+    "WMT",
+    "PRU",
+    "MDT",
+    "PCAR"
+   ],
+   "book_channel": [
+    "BIIB",
+    "MNST",
+    "GILD",
+    "CSCO",
+    "IQV"
+   ],
+   "passed": 32,
+   "fallback": false,
+   "alpha_screen_equal": -0.017419852787782162,
+   "alpha_universe_equal": -0.005083915379382455
+  },
+  {
+   "monday": "2025-12-08",
+   "spy": -0.0070348816759426835,
+   "alpha_whole": 0.0018526949499460968,
+   "alpha_channel": 0.0021114154408252567,
+   "invested_whole": 0.9843,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ACN",
+    "PWR",
+    "PRU",
+    "NXPI",
+    "OKE"
+   ],
+   "book_channel": [
+    "GEV",
+    "TER",
+    "GILD",
+    "DD",
+    "QBTS"
+   ],
+   "passed": 33,
+   "fallback": false,
+   "alpha_screen_equal": -0.009718331936296606,
+   "alpha_universe_equal": 0.011576589497704428
+  },
+  {
+   "monday": "2025-12-15",
+   "spy": -0.004577305546701771,
+   "alpha_whole": 0.028143644475429087,
+   "alpha_channel": -0.012627242321689089,
+   "invested_whole": 0.992,
+   "invested_channel": 0.9785,
+   "book_whole": [
+    "SIDU",
+    "BAC",
+    "PRU",
+    "HPE",
+    "GWW"
+   ],
+   "book_channel": [
+    "MS",
+    "GILD",
+    "VSAT",
+    "AXP",
+    "JPM"
+   ],
+   "passed": 39,
+   "fallback": false,
+   "alpha_screen_equal": -0.005086639844707053,
+   "alpha_universe_equal": -0.0035372862196094545
+  },
+  {
+   "monday": "2025-12-22",
+   "spy": 0.009313661121592931,
+   "alpha_whole": 0.006190743550527251,
+   "alpha_channel": 0.011988678212806254,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9452,
+   "book_whole": [
+    "C",
+    "GWW",
+    "BMY",
+    "PRU",
+    "SPGI"
+   ],
+   "book_channel": [
+    "GS",
+    "GILD",
+    "C",
+    "MS",
+    "JPM"
+   ],
+   "passed": 43,
+   "fallback": false,
+   "alpha_screen_equal": -0.005015492650899548,
+   "alpha_universe_equal": -0.0017149222455386179
+  },
+  {
+   "monday": "2025-12-29",
+   "spy": -0.006356009960748699,
+   "alpha_whole": 0.0001772339520384131,
+   "alpha_channel": -0.0010366058104407175,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9108,
+   "book_whole": [
+    "BMY",
+    "GWW",
+    "DHR",
+    "JCI",
+    "PRU"
+   ],
+   "book_channel": [
+    "MNST",
+    "GILD",
+    "DD",
+    "GEV",
+    "IQV"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": 0.023006046403895353,
+   "alpha_universe_equal": 0.009667233229611126
+  },
+  {
+   "monday": "2026-01-05",
+   "spy": 0.010968024041010382,
+   "alpha_whole": -0.000574203606805275,
+   "alpha_channel": 0.010661977307516252,
+   "invested_whole": 0.9733,
+   "invested_channel": 0.7756,
+   "book_whole": [
+    "CPT",
+    "GE",
+    "BMY",
+    "PRU",
+    "MAA"
+   ],
+   "book_channel": [
+    "EIX",
+    "MRK",
+    "FDX",
+    "CME",
+    "BIIB"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.01181971525851934,
+   "alpha_universe_equal": 0.00926887073036135
+  },
+  {
+   "monday": "2026-01-12",
+   "spy": 0.0014188256019589396,
+   "alpha_whole": 0.01735689721693226,
+   "alpha_channel": 0.014715647681822274,
+   "invested_whole": 0.9848,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "LRCX",
+    "XOM",
+    "PFE",
+    "SNPS",
+    "CVX"
+   ],
+   "book_channel": [
+    "VLO",
+    "EIX",
+    "LRCX",
+    "NDSN",
+    "FDX"
+   ],
+   "passed": 43,
+   "fallback": false,
+   "alpha_screen_equal": 0.02371517741980448,
+   "alpha_universe_equal": 0.013549241311784725
+  },
+  {
+   "monday": "2026-01-19",
+   "spy": 0.011357479029732165,
+   "alpha_whole": 0.040581976504325004,
+   "alpha_channel": -0.009451464899374436,
+   "invested_whole": 0.9756,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "PFE",
+    "MRNA",
+    "GD",
+    "TMO",
+    "BMY"
+   ],
+   "book_channel": [
+    "EIX",
+    "TMO",
+    "MCK",
+    "VLO",
+    "FDX"
+   ],
+   "passed": 44,
+   "fallback": false,
+   "alpha_screen_equal": 8.569004714179679e-05,
+   "alpha_universe_equal": -0.001734386929135509
+  },
+  {
+   "monday": "2026-01-26",
+   "spy": 0.0021434212394817465,
+   "alpha_whole": -0.01943177884108914,
+   "alpha_channel": 0.021836237648278422,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9833,
+   "book_whole": [
+    "DOC",
+    "FAST",
+    "PFE",
+    "ACN",
+    "HST"
+   ],
+   "book_channel": [
+    "NDSN",
+    "EIX",
+    "MU",
+    "FDX",
+    "MNST"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.0008703596419488676,
+   "alpha_universe_equal": -0.01507637481411303
+  },
+  {
+   "monday": "2026-02-02",
+   "spy": 0.00150820176019284,
+   "alpha_whole": 0.0650101234095457,
+   "alpha_channel": 0.06576030822064695,
+   "invested_whole": 0.9964,
+   "invested_channel": 0.9997,
+   "book_whole": [
+    "GILD",
+    "AES",
+    "OXY",
+    "HCA",
+    "MO"
+   ],
+   "book_channel": [
+    "MO",
+    "NUE",
+    "EIX",
+    "HAL",
+    "FDX"
+   ],
+   "passed": 45,
+   "fallback": false,
+   "alpha_screen_equal": 0.036786281108586415,
+   "alpha_universe_equal": 0.013728093727342986
+  },
+  {
+   "monday": "2026-02-09",
+   "spy": -0.011125280488858191,
+   "alpha_whole": 0.01764309907548301,
+   "alpha_channel": 0.04944610764729164,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9221,
+   "book_whole": [
+    "SPG",
+    "PFE",
+    "AES",
+    "ALL",
+    "REG"
+   ],
+   "book_channel": [
+    "MO",
+    "EIX",
+    "MNST",
+    "FDX",
+    "CAT"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.0289444348936362,
+   "alpha_universe_equal": 0.019102912210927973
+  },
+  {
+   "monday": "2026-02-16",
+   "spy": 0.013658876388942476,
+   "alpha_whole": -0.02150703529205497,
+   "alpha_channel": -0.005256798801112286,
+   "invested_whole": 0.9386,
+   "invested_channel": 0.9539,
+   "book_whole": [
+    "PFE",
+    "EOG",
+    "KMI",
+    "PLD",
+    "ALL"
+   ],
+   "book_channel": [
+    "DD",
+    "PLD",
+    "PH",
+    "MRK",
+    "VLO"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.00888001812183117,
+   "alpha_universe_equal": -0.01154550769107074
+  },
+  {
+   "monday": "2026-02-23",
+   "spy": -0.0026751078228750558,
+   "alpha_whole": 0.026692584576037667,
+   "alpha_channel": 0.00907543691496024,
+   "invested_whole": 0.9615,
+   "invested_channel": 0.9184,
+   "book_whole": [
+    "ATO",
+    "PFE",
+    "HLT",
+    "ALL",
+    "EIX"
+   ],
+   "book_channel": [
+    "EIX",
+    "PLD",
+    "DD",
+    "VMI",
+    "AEP"
+   ],
+   "passed": 43,
+   "fallback": false,
+   "alpha_screen_equal": 0.012717828236824394,
+   "alpha_universe_equal": 0.017653168395570847
+  },
+  {
+   "monday": "2026-03-02",
+   "spy": -0.009311992891848808,
+   "alpha_whole": -0.014186295124041043,
+   "alpha_channel": -0.03535019519523464,
+   "invested_whole": 0.9956,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "GEV",
+    "PFE",
+    "WM",
+    "WEC",
+    "ALL"
+   ],
+   "book_channel": [
+    "LNT",
+    "EIX",
+    "MNST",
+    "DD",
+    "HCA"
+   ],
+   "passed": 47,
+   "fallback": false,
+   "alpha_screen_equal": -0.032315154079150074,
+   "alpha_universe_equal": -0.0062285364848960675
+  },
+  {
+   "monday": "2026-03-09",
+   "spy": -0.0061525276877383295,
+   "alpha_whole": -0.030628857139711523,
+   "alpha_channel": 0.004039106490203274,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9789,
+   "book_whole": [
+    "VEEV",
+    "PFE",
+    "RTX",
+    "ALL",
+    "GLPI"
+   ],
+   "book_channel": [
+    "HIG",
+    "CME",
+    "EVRG",
+    "VLO",
+    "MO"
+   ],
+   "passed": 50,
+   "fallback": false,
+   "alpha_screen_equal": 0.02069184809303679,
+   "alpha_universe_equal": -0.004547587216909099
+  },
+  {
+   "monday": "2026-03-16",
+   "spy": -0.026988872326497604,
+   "alpha_whole": 0.006959065461098361,
+   "alpha_channel": 0.026271676264653505,
+   "invested_whole": 0.9954,
+   "invested_channel": 0.956,
+   "book_whole": [
+    "PFE",
+    "DUK",
+    "BNY",
+    "AWK",
+    "ALL"
+   ],
+   "book_channel": [
+    "PSX",
+    "PFE",
+    "VLO",
+    "HIG",
+    "LNT"
+   ],
+   "passed": 53,
+   "fallback": false,
+   "alpha_screen_equal": -0.0004956850847783918,
+   "alpha_universe_equal": -0.0002787368309920199
+  },
+  {
+   "monday": "2026-03-23",
+   "spy": -0.03643978306826379,
+   "alpha_whole": 0.0599439715808182,
+   "alpha_channel": 0.06219140020267535,
+   "invested_whole": 0.9481,
+   "invested_channel": 0.9757,
+   "book_whole": [
+    "CVX",
+    "PFE",
+    "ALL",
+    "OKE",
+    "AWK"
+   ],
+   "book_channel": [
+    "PSX",
+    "PFE",
+    "KLAC",
+    "VLO",
+    "HIG"
+   ],
+   "passed": 53,
+   "fallback": false,
+   "alpha_screen_equal": 0.021712362598866955,
+   "alpha_universe_equal": 0.014479145519426959
+  },
+  {
+   "monday": "2026-03-30",
+   "spy": 0.02455836365258901,
+   "alpha_whole": -0.03483345455207652,
+   "alpha_channel": -0.05466992276151051,
+   "invested_whole": 0.9954,
+   "invested_channel": 0.9969,
+   "book_whole": [
+    "APD",
+    "PFE",
+    "VLO",
+    "CVX",
+    "ALL"
+   ],
+   "book_channel": [
+    "PSX",
+    "VLO",
+    "PFE",
+    "HIG",
+    "HAL"
+   ],
+   "passed": 35,
+   "fallback": false,
+   "alpha_screen_equal": -0.007945753679444258,
+   "alpha_universe_equal": -0.0044131086278725445
+  },
+  {
+   "monday": "2026-04-06",
+   "spy": 0.03598338198265272,
+   "alpha_whole": -0.008060569584586168,
+   "alpha_channel": -0.028813501237482816,
+   "invested_whole": 0.9715,
+   "invested_channel": 0.9654,
+   "book_whole": [
+    "PFE",
+    "NUE",
+    "ROST",
+    "FCX",
+    "ALL"
+   ],
+   "book_channel": [
+    "PFE",
+    "HAL",
+    "NUE",
+    "EIX",
+    "VLO"
+   ],
+   "passed": 36,
+   "fallback": false,
+   "alpha_screen_equal": 0.015979298783711113,
+   "alpha_universe_equal": -0.014801650938741008
+  },
+  {
+   "monday": "2026-04-13",
+   "spy": 0.04831655849914429,
+   "alpha_whole": -0.00017551261211687375,
+   "alpha_channel": -0.04071108240004413,
+   "invested_whole": 0.9681,
+   "invested_channel": 0.9671,
+   "book_whole": [
+    "AMD",
+    "ALL",
+    "ROST",
+    "TER",
+    "AEP"
+   ],
+   "book_channel": [
+    "EIX",
+    "PFE",
+    "TER",
+    "KLAC",
+    "HST"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": -0.030975301537846913,
+   "alpha_universe_equal": -0.00557492616265827
+  },
+  {
+   "monday": "2026-04-20",
+   "spy": 0.007280083591140851,
+   "alpha_whole": -0.009637090992367203,
+   "alpha_channel": -0.019881321919374997,
+   "invested_whole": 0.976,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ODFL",
+    "PLD",
+    "ALL",
+    "UPS",
+    "REG"
+   ],
+   "book_channel": [
+    "PLD",
+    "PFE",
+    "VSAT",
+    "FRT",
+    "GOOGL"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.00275548998100298,
+   "alpha_universe_equal": -0.011876201085011506
+  },
+  {
+   "monday": "2026-04-27",
+   "spy": 0.01048831538901851,
+   "alpha_whole": 0.03919990637343907,
+   "alpha_channel": 0.03901294705760528,
+   "invested_whole": 0.9737,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "INTC",
+    "BNY",
+    "PFE",
+    "AMD",
+    "TRV"
+   ],
+   "book_channel": [
+    "PFE",
+    "INTC",
+    "PLD",
+    "HST",
+    "MU"
+   ],
+   "passed": 44,
+   "fallback": false,
+   "alpha_screen_equal": -0.0020547381508435707,
+   "alpha_universe_equal": -0.003540313826507176
+  },
+  {
+   "monday": "2026-05-04",
+   "spy": 0.02437264839028641,
+   "alpha_whole": 0.08554228725743548,
+   "alpha_channel": 0.08420150202063634,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9951,
+   "book_whole": [
+    "ALL",
+    "INTC",
+    "CSX",
+    "MU",
+    "VMRK"
+   ],
+   "book_channel": [
+    "INTC",
+    "CSX",
+    "EIX",
+    "FDX",
+    "MU"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": -0.0027402607274675528,
+   "alpha_universe_equal": -0.017268584997889337
+  },
+  {
+   "monday": "2026-05-11",
+   "spy": 0.0036934594376036856,
+   "alpha_whole": -0.015909196568555117,
+   "alpha_channel": 0.0013595453088044891,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9905,
+   "book_whole": [
+    "INTC",
+    "BIIB",
+    "ALL",
+    "PANW",
+    "AES"
+   ],
+   "book_channel": [
+    "BIIB",
+    "MNST",
+    "HIG",
+    "PFE",
+    "CSX"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": -0.0109059501703535,
+   "alpha_universe_equal": -0.012175043078556014
+  },
+  {
+   "monday": "2026-05-18",
+   "spy": 0.007853171545997517,
+   "alpha_whole": 0.022298866934020493,
+   "alpha_channel": 0.001853312096625575,
+   "invested_whole": 0.9795,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "PANW",
+    "ALL",
+    "BIIB",
+    "CSCO",
+    "AAPL"
+   ],
+   "book_channel": [
+    "CSCO",
+    "HIG",
+    "BIIB",
+    "PFE",
+    "DD"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": 0.00783052927440631,
+   "alpha_universe_equal": 0.020324068215646824
+  },
+  {
+   "monday": "2026-05-25",
+   "spy": 0.008626544740983455,
+   "alpha_whole": -0.029847803457375376,
+   "alpha_channel": -0.025565804365665464,
+   "invested_whole": 0.9984,
+   "invested_channel": 0.9557,
+   "book_whole": [
+    "ALL",
+    "GWW",
+    "RGTI",
+    "AES",
+    "PRU"
+   ],
+   "book_channel": [
+    "HIG",
+    "BNY",
+    "BIIB",
+    "PFE",
+    "MRK"
+   ],
+   "passed": 51,
+   "fallback": false,
+   "alpha_screen_equal": -0.01739290449544651,
+   "alpha_universe_equal": -0.012015137243991926
+  },
+  {
+   "monday": "2026-06-01",
+   "spy": -0.023578107846644047,
+   "alpha_whole": -0.04316758261105698,
+   "alpha_channel": 0.042392105425882926,
+   "invested_whole": 0.9901,
+   "invested_channel": 0.9837,
+   "book_whole": [
+    "NOW",
+    "D",
+    "AES",
+    "SMCI",
+    "HON"
+   ],
+   "book_channel": [
+    "PFE",
+    "ILMN",
+    "GE",
+    "NUE",
+    "HIG"
+   ],
+   "passed": 51,
+   "fallback": false,
+   "alpha_screen_equal": 0.02747352564618498,
+   "alpha_universe_equal": 0.027673160394047894
+  },
+  {
+   "monday": "2026-06-08",
+   "spy": -0.002165827651976593,
+   "alpha_whole": -0.006847600943682768,
+   "alpha_channel": 0.01293874912548144,
+   "invested_whole": 0.9947,
+   "invested_channel": 0.9718,
+   "book_whole": [
+    "HPE",
+    "UPS",
+    "AES",
+    "HLT",
+    "MSI"
+   ],
+   "book_channel": [
+    "PFE",
+    "BIIB",
+    "HLT",
+    "FDX",
+    "HIG"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": 0.026655582632922885,
+   "alpha_universe_equal": 0.011647911474753756
+  },
+  {
+   "monday": "2026-06-15",
+   "spy": -0.004237855023967563,
+   "alpha_whole": 0.07277772963617846,
+   "alpha_channel": -0.031678609310868786,
+   "invested_whole": 0.9798,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "HUM",
+    "AES",
+    "CSX",
+    "BFLY",
+    "ALL"
+   ],
+   "book_channel": [
+    "PFE",
+    "FDX",
+    "CSX",
+    "SPG",
+    "BIIB"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": -0.005401640458044886,
+   "alpha_universe_equal": -0.010017739061571924
+  },
+  {
+   "monday": "2026-06-22",
+   "spy": -0.025023433095685776,
+   "alpha_whole": 0.04346600223476248,
+   "alpha_channel": 0.04209189569349878,
+   "invested_whole": 0.9906,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ABNB",
+    "JPM",
+    "AES",
+    "PG",
+    "ALL"
+   ],
+   "book_channel": [
+    "JPM",
+    "BIIB",
+    "TER",
+    "AMAT",
+    "EIX"
+   ],
+   "passed": 46,
+   "fallback": false,
+   "alpha_screen_equal": 0.022834459216422288,
+   "alpha_universe_equal": 0.03979361271216062
+  },
+  {
+   "monday": "2026-06-29",
+   "spy": 0.011201206684462228,
+   "alpha_whole": -0.004453569358318078,
+   "alpha_channel": -0.014446334098467392,
+   "invested_whole": 0.9884,
+   "invested_channel": 0.9753,
+   "book_whole": [
+    "AES",
+    "NDSN",
+    "D",
+    "ALL",
+    "AWK"
+   ],
+   "book_channel": [
+    "NDSN",
+    "KEY",
+    "GE",
+    "EIX",
+    "JPM"
+   ],
+   "passed": 47,
+   "fallback": false,
+   "alpha_screen_equal": -0.018105515607869483,
+   "alpha_universe_equal": 0.001540034732693216
+  },
+  {
+   "monday": "2026-07-06",
+   "spy": 0.008293958591813366,
+   "alpha_whole": -0.05245294138246023,
+   "alpha_channel": -0.032773059051003646,
+   "invested_whole": 0.9752,
+   "invested_channel": 0.9684,
+   "book_whole": [
+    "MRNA",
+    "AES",
+    "LNT",
+    "VRTX",
+    "ALL"
+   ],
+   "book_channel": [
+    "BIIB",
+    "ILMN",
+    "CAT",
+    "KEY",
+    "PH"
+   ],
+   "passed": 47,
+   "fallback": false,
+   "alpha_screen_equal": -0.015020852041837722,
+   "alpha_universe_equal": -0.013931609580890831
+  },
+  {
+   "monday": "2026-07-13",
+   "spy": -0.012199864023459073,
+   "alpha_whole": 0.05890431218718847,
+   "alpha_channel": 0.034081723348065925,
+   "invested_whole": 0.9046,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ALL",
+    "PYPL",
+    "AES",
+    "V",
+    "AAPL"
+   ],
+   "book_channel": [
+    "EIX",
+    "AAPL",
+    "ILMN",
+    "CSX",
+    "KEY"
+   ],
+   "passed": 51,
+   "fallback": false,
+   "alpha_screen_equal": 0.008111264133360552,
+   "alpha_universe_equal": 0.004705849029503164
+  },
+  {
+   "monday": "2026-07-20",
+   "spy": -0.010882686821280796,
+   "alpha_whole": 0.016129998868220103,
+   "alpha_channel": 0.0071302284483456616,
+   "invested_whole": 0.9763,
+   "invested_channel": 0.929,
+   "book_whole": [
+    "MPC",
+    "AES",
+    "BMY",
+    "VLO",
+    "ALL"
+   ],
+   "book_channel": [
+    "VLO",
+    "MPC",
+    "AAPL",
+    "EIX",
+    "BIIB"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.008488729833870168,
+   "alpha_universe_equal": 0.010552593694751564
+  },
+  {
+   "monday": "2026-07-27",
+   "spy": 0.0028460761470363583,
+   "alpha_whole": -0.01151685492091839,
+   "alpha_channel": -0.01126510121878326,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9885,
+   "book_whole": [
+    "AES",
+    "BNY",
+    "COR",
+    "DLR",
+    "PRU"
+   ],
+   "book_channel": [
+    "CSX",
+    "KEY",
+    "HST",
+    "MPC",
+    "FDX"
+   ],
+   "passed": 40,
+   "fallback": false,
+   "alpha_screen_equal": -0.022910806435841275,
+   "alpha_universe_equal": -0.002985054665297512
+  },
+  {
+   "monday": "2026-08-03",
+   "spy": 0.03178371702279925,
+   "alpha_whole": -0.011966753786141496,
+   "alpha_channel": -0.072073956973015,
+   "invested_whole": 0.993,
+   "invested_channel": 0.9996,
+   "book_whole": [
+    "NUE",
+    "ITW",
+    "CI",
+    "VLO",
+    "HIG"
+   ],
+   "book_channel": [
+    "ILMN",
+    "VLO",
+    "KEY",
+    "EIX",
+    "BIIB"
+   ],
+   "passed": 41,
+   "fallback": false,
+   "alpha_screen_equal": -0.020793158061446382,
+   "alpha_universe_equal": -0.012271394318661723
+  },
+  {
+   "monday": "2026-08-10",
+   "spy": 0.0048408903064867115,
+   "alpha_whole": 0.0005598235421133343,
+   "alpha_channel": 0.01259814228776443,
+   "invested_whole": 1.0,
+   "invested_channel": 0.9752,
+   "book_whole": [
+    "ABNB",
+    "ITW",
+    "PRU",
+    "ORLY",
+    "ALL"
+   ],
+   "book_channel": [
+    "NUE",
+    "NDSN",
+    "KEY",
+    "FCX",
+    "MPC"
+   ],
+   "passed": 48,
+   "fallback": false,
+   "alpha_screen_equal": 0.018803556240356106,
+   "alpha_universe_equal": 0.009999165489583121
+  },
+  {
+   "monday": "2026-08-17",
+   "spy": -0.013476288590551944,
+   "alpha_whole": -0.011310558375156599,
+   "alpha_channel": -0.04851465707174187,
+   "invested_whole": 0.966,
+   "invested_channel": 0.992,
+   "book_whole": [
+    "TER",
+    "PRU",
+    "FAST",
+    "INTU",
+    "ALL"
+   ],
+   "book_channel": [
+    "TER",
+    "KEY",
+    "DD",
+    "PSX",
+    "VSAT"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": 0.00968421029728879,
+   "alpha_universe_equal": 0.016522728896352756
+  },
+  {
+   "monday": "2026-08-24",
+   "spy": 0.005975555154863921,
+   "alpha_whole": -0.01628356196019958,
+   "alpha_channel": -0.022301752029066854,
+   "invested_whole": 0.9666,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "OXY",
+    "ALL",
+    "EMR",
+    "FCX",
+    "PRU"
+   ],
+   "book_channel": [
+    "FCX",
+    "KEY",
+    "UNP",
+    "NEM",
+    "EIX"
+   ],
+   "passed": 48,
+   "fallback": false,
+   "alpha_screen_equal": -0.017772123833922245,
+   "alpha_universe_equal": -0.011223448184840733
+  },
+  {
+   "monday": "2026-08-31",
+   "spy": 0.0037272254120594983,
+   "alpha_whole": -0.006966467099040706,
+   "alpha_channel": -0.00953361026489864,
+   "invested_whole": 0.9762,
+   "invested_channel": 0.9959,
+   "book_whole": [
+    "VEEV",
+    "ALL",
+    "UNP",
+    "MCK",
+    "PRU"
+   ],
+   "book_channel": [
+    "KEY",
+    "UNP",
+    "BIIB",
+    "EIX",
+    "NSC"
+   ],
+   "passed": 47,
+   "fallback": false,
+   "alpha_screen_equal": -0.0020608537467655297,
+   "alpha_universe_equal": -0.006110687886251824
+  },
+  {
+   "monday": "2026-09-07",
+   "spy": -0.006215319343814807,
+   "alpha_whole": -0.007060180672356567,
+   "alpha_channel": -0.0063243340524509264,
+   "invested_whole": 0.9909,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ALL",
+    "RBLX",
+    "MCK",
+    "PRU",
+    "AMGN"
+   ],
+   "book_channel": [
+    "KEY",
+    "PSX",
+    "TGT",
+    "MO",
+    "BIIB"
+   ],
+   "passed": 48,
+   "fallback": false,
+   "alpha_screen_equal": 7.825473453263593e-05,
+   "alpha_universe_equal": -0.008593182089443489
+  },
+  {
+   "monday": "2026-09-14",
+   "spy": 0.006036178924970548,
+   "alpha_whole": -0.009175651834770409,
+   "alpha_channel": -0.009650023630431482,
+   "invested_whole": 0.9715,
+   "invested_channel": 0.9716,
+   "book_whole": [
+    "ALL",
+    "DE",
+    "EVRG",
+    "PRU",
+    "PSX"
+   ],
+   "book_channel": [
+    "KEY",
+    "PSX",
+    "C",
+    "VLO",
+    "MO"
+   ],
+   "passed": 52,
+   "fallback": false,
+   "alpha_screen_equal": 0.005245070728927518,
+   "alpha_universe_equal": -0.012443246275935231
+  },
+  {
+   "monday": "2026-09-21",
+   "spy": 0.006655759329118993,
+   "alpha_whole": -0.010746953267953952,
+   "alpha_channel": -0.005843280490765986,
+   "invested_whole": 0.9916,
+   "invested_channel": 0.9969,
+   "book_whole": [
+    "ALL",
+    "DE",
+    "AMD",
+    "PRU",
+    "XOM"
+   ],
+   "book_channel": [
+    "KEY",
+    "XOM",
+    "AMD",
+    "PSX",
+    "MO"
+   ],
+   "passed": 48,
+   "fallback": false,
+   "alpha_screen_equal": -0.000986042714552343,
+   "alpha_universe_equal": -0.012415855634354687
+  },
+  {
+   "monday": "2026-09-28",
+   "spy": 0.0016789732589190809,
+   "alpha_whole": -0.03650467340789167,
+   "alpha_channel": 0.0036706301650601333,
+   "invested_whole": 0.9907,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "META",
+    "PRU",
+    "HCA",
+    "QCOM",
+    "TMO"
+   ],
+   "book_channel": [
+    "AMD",
+    "KEY",
+    "AAPL",
+    "PANW",
+    "INTC"
+   ],
+   "passed": 49,
+   "fallback": false,
+   "alpha_screen_equal": 0.011333026463341988,
+   "alpha_universe_equal": -0.005350227551686862
+  },
+  {
+   "monday": "2026-10-05",
+   "spy": 0.011537118651204548,
+   "alpha_whole": 0.0048725888005669155,
+   "alpha_channel": -0.010596460049584068,
+   "invested_whole": 1.0,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "ALL",
+    "TMO",
+    "ILMN",
+    "CI",
+    "NVDA"
+   ],
+   "book_channel": [
+    "KEY",
+    "NDSN",
+    "ILMN",
+    "JCI",
+    "FDX"
+   ],
+   "passed": 51,
+   "fallback": false,
+   "alpha_screen_equal": -0.01032738282117408,
+   "alpha_universe_equal": 0.006079184163663112
+  },
+  {
+   "monday": "2026-10-12",
+   "spy": -0.0199414837472095,
+   "alpha_whole": -0.013384154127591821,
+   "alpha_channel": -0.0711483718256056,
+   "invested_whole": 0.9912,
+   "invested_channel": 0.9523,
+   "book_whole": [
+    "ZS",
+    "PRU",
+    "HCA",
+    "FTNT",
+    "ALL"
+   ],
+   "book_channel": [
+    "BIIB",
+    "HPE",
+    "JCI",
+    "CVS",
+    "PANW"
+   ],
+   "passed": 50,
+   "fallback": false,
+   "alpha_screen_equal": -0.0164078398126739,
+   "alpha_universe_equal": 0.02260335152056578
+  },
+  {
+   "monday": "2026-10-19",
+   "spy": -0.009462625223781496,
+   "alpha_whole": 0.01743844359144498,
+   "alpha_channel": 0.017875423709770577,
+   "invested_whole": 0.9765,
+   "invested_channel": 0.9491,
+   "book_whole": [
+    "AIG",
+    "MCK",
+    "PRU",
+    "BAX",
+    "COST"
+   ],
+   "book_channel": [
+    "XOM",
+    "SJM",
+    "HLT",
+    "PSX",
+    "C"
+   ],
+   "passed": 44,
+   "fallback": false,
+   "alpha_screen_equal": -0.009851446665557526,
+   "alpha_universe_equal": 0.018601143069198786
+  },
+  {
+   "monday": "2026-10-26",
+   "spy": -0.008566781629222642,
+   "alpha_whole": 0.017895539049225688,
+   "alpha_channel": 0.022197227453425353,
+   "invested_whole": 0.8852,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "AIG",
+    "COST",
+    "MNST",
+    "PRU",
+    "PEP"
+   ],
+   "book_channel": [
+    "AMGN",
+    "C",
+    "MNST",
+    "VLO",
+    "SJM"
+   ],
+   "passed": 41,
+   "fallback": false,
+   "alpha_screen_equal": -0.0021849552027221383,
+   "alpha_universe_equal": 0.013666032639295639
+  },
+  {
+   "monday": "2026-11-02",
+   "spy": -0.03181254037968373,
+   "alpha_whole": 0.047503954712221394,
+   "alpha_channel": -0.02007044408597218,
+   "invested_whole": 0.9815,
+   "invested_channel": 0.9835,
+   "book_whole": [
+    "SPGI",
+    "LIN",
+    "TROW",
+    "AON",
+    "COST"
+   ],
+   "book_channel": [
+    "CSX",
+    "MO",
+    "AEP",
+    "UNP",
+    "PSX"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": -0.018514825609426876,
+   "alpha_universe_equal": 0.017699967181001558
+  },
+  {
+   "monday": "2026-11-09",
+   "spy": 0.016739649175570914,
+   "alpha_whole": -0.012235474685053174,
+   "alpha_channel": -0.0006614626066049345,
+   "invested_whole": 0.9915,
+   "invested_channel": 1.0,
+   "book_whole": [
+    "D",
+    "PRU",
+    "PEP",
+    "NEE",
+    "UPS"
+   ],
+   "book_channel": [
+    "BIIB",
+    "MO",
+    "EVRG",
+    "SJM",
+    "V"
+   ],
+   "passed": 38,
+   "fallback": false,
+   "alpha_screen_equal": -0.0032406097113792717,
+   "alpha_universe_equal": -0.00585576883428039
+  },
+  {
+   "monday": "2026-11-16",
+   "spy": -0.07983616270039096,
+   "alpha_whole": 0.029240641574502818,
+   "alpha_channel": 0.024437739622659382,
+   "invested_whole": 0.9952,
+   "invested_channel": 0.9437,
+   "book_whole": [
+    "COST",
+    "TDG",
+    "PRU",
+    "PEP",
+    "FAST"
+   ],
+   "book_channel": [
+    "MO",
+    "SPG",
+    "HLT",
+    "C",
+    "HST"
+   ],
+   "passed": 42,
+   "fallback": false,
+   "alpha_screen_equal": 0.00861407150074081,
+   "alpha_universe_equal": 0.014164524662834868
+  }
+ ]
+}
