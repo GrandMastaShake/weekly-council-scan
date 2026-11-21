@@ -6822,3 +6822,104 @@ by splits and is enough on its own.
 **The amendment.** Pass 55 is run a second time with no price floor
 (`nofloor`, written to `pass55_best_movers_nofloor.json`); both runs are
 reported. Any later channel pass should drop the price floor.
+
+## Pass 55 results -- the best movers were jumpy, not tidy; each fell 20% from a high about once a year; and the biggest runs began in wreckage the screen never looks at
+
+Run 2026-11-21. Figures are from the amended run with no price floor
+(`lab/results/pass55_best_movers_nofloor.json`); the first run
+(`pass55_best_movers.json`) differs only in missing the split-heavy
+names and gives the same reading. A description: nothing here is a rule
+or a candidate.
+
+**Who they were.** 2016-11 to 2026-11: 1,454 names, SPY 4.1 times, the
+median name 2.1 times; the 73 best movers made 8 times or more, median
+11.5. The first fifteen: AMD 80x, NVDA 75x, MU 45x, FIX 37x, ANET 37x,
+TSLA 31x, DELL 28x, AVGO 27x, LRCX 26x, KLAC 24x, LLY 22x, STX 21x,
+FTNT 20x, PWR 20x, CROX 19x. 2006-11 to 2016-11: 916 names, SPY and
+the median name both 1.9 times; the 46 best made 5.6 times or more,
+led by BKNG 38x, NFLX 27x, INCY 21x, AMZN 19x, REGN 18x, MKTX 13x, MA
+12x, DPZ 11x, AAPL 10x, MNST 10x. (CHRD appears in both lists of
+2016-26 on a 99% drawdown and a 2,014-fold two-year "run": its bars
+cross a bankruptcy and are not to be believed.)
+
+**What marked them at the start, and whether it held in both decades.**
+1.0 means winners were no more common among names with the trait.
+
+| Trait at the start | 2016-26 | 2006-16 | Holds in both? |
+|---|---|---|---|
+| Jumpiest fifth by weekly swing | 1.6 | 2.4 | **yes** |
+| Calmest fifth by weekly swing | 0.4 | 0.3 | **yes** |
+| Had a channel worth owning | 1.0 | 1.1 | yes: it says nothing |
+| On the screen | 1.0 | 1.1 | yes: it says nothing |
+| More than 20% under the 52-week high | 1.2 | 1.4 | faintly |
+| Best fifth by prior 52-week return | 1.3 | 1.2 | faintly |
+| Worst fifth by prior 52-week return | 1.4 | 0.9 | no |
+| Smallest fifth by size | 1.3 | 1.5 | faintly |
+| Largest fifth by size | 1.0 | 0.3 | no |
+| Mega caps | 1.5 | 0.4 | **no, reversed** |
+| Information technology | 3.1 | 1.4 | in degree only |
+| Health care | 0.6 | 1.8 | no |
+| Consumer staples | 0.3 | 2.0 | no |
+| Financials | 0.5 | 0.3 | **yes, scarce** |
+| Real estate | 0.0 | 0.7 | scarce |
+
+**Along the way** (median of the group):
+
+| | 2016-26 winners | 2016-26 the rest | 2006-16 winners | 2006-16 the rest |
+|---|---|---|---|---|
+| Times it closed 20% under its high | 12 | 12 | 10 | 12 |
+| Largest drawdown | -55% | -63% | -64% | -70% |
+| Weeks on the screen | 27% | 15% | 24% | 15% |
+| Weeks the rule held it | 42% | 27% | 47% | 30% |
+| Holding it throughout | 11.5x | 2.0x | 7.4x | 1.9x |
+| Bought on the screen, sold 20% under the high | 2.0x | 1.0x | 2.4x | 1.1x |
+| Share for which the rule beat holding | 0% | 20% | 0% | 23% |
+
+Of a winner's whole move (in log terms) the rule kept a median 28% in
+2016-26 and 42% in 2006-16. Very little of the move was over by its
+first buy (9% and 3%): the rule found the winners early and then let
+them go. The few it held well are the calm compounders: LLY (4
+shake-outs, rule 8.4x of 22x), AAPL (5), MA (5), TJX (2), AZO (3), and
+NVDA by luck of timing (16x of 75x).
+
+**The best two-year runs begun in 2016-26** (100 names, median 14 times,
+later listings included: NVAX, CVNA, APP, ROOT, ENPH, MRNA, SMCI, PLTR
+among them). When the run began: 89% were more than 20% under their
+52-week high, the median 73% under; 5% had a channel; 5% were on the
+screen; 84% were small caps or smaller. 41% reached the screen within
+six months, the median first appearance was week 35 of 104, and 10%
+never did.
+
+**What made them special, as far as prices show.**
+1. *They were jumpy.* The one trait that marked ten-year winners in
+   both decades is a large weekly swing at the start. The calmest fifth
+   of stocks produced almost none.
+2. *They were not tidy.* A channel at the start, or a place on the
+   screen, told nothing about who would be a winner, in either decade.
+   The winners spent about a quarter of their weeks on the screen.
+3. *Every one of them tested the 20% rule about once a year,* exactly as
+   often as the stocks that went nowhere. Being 20% off the high does
+   not tell a winner from a loser; half the median winner's price was
+   lost at some point on the way to 11 times.
+4. *Sector and size are the decade's story, not the stock's.* Technology
+   and mega caps in 2016-26; staples, health care and mid caps in
+   2006-16. Only the scarcity of winners among financials and real
+   estate repeats.
+5. *The biggest two-year moves start in wreckage.* That is hindsight in
+   its purest form (most wrecked small caps stay wrecked, and this pass
+   did not count them), but it does say where such moves are not: among
+   established channels near their highs.
+
+**Scored against the predictions.** (1) Half: jumpier in both decades;
+smaller only in 2006-16. (2) Held. (3) Held. (4) Held: 12 and 10
+shake-outs, and the rule kept 28% and 42%. (5) Held: 89% and 95%.
+
+**What it means for the channel book.** The screen and the 20% exit are
+built to hold calm, straight climbers, and they do that: LLY and AAPL
+are the names they kept. The decade's largest winners were a different
+animal, and the book's own rules threw them back about once a year and
+were slow to take them again (in a winner 42% of weeks). That is the
+third pass to end at the same place (Passes 51 and 53 before it): the
+cost is in getting back in. A sold name that goes on to a new high is
+the plainest sign the sale was wrong, and no rule tested so far buys
+it back on that.
