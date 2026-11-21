@@ -4782,7 +4782,7 @@ weeks, not over 20 (the mean is 20). (4) Held: the brake cut the
 drawdown from -62.0% to -22.2% and the return from 6.9% to 5.3%.
 
 **Three passes, twenty arms.** None reaches the 31st percentile of random
-books over the whole period; seventeen sit at or below the 10th. Tight or
+books over the whole period; eighteen sit at or below the 10th. Tight or
 wide, refit or drawn once, sold at the top or held to the break, with or
 without sector and market layers. The two readings from Pass 39 stand
 (the survivor list; large caps snapping back), and this data cannot
