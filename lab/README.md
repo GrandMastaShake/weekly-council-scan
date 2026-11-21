@@ -4993,3 +4993,92 @@ bounces.
 
     python lab/pass42_who_breaks_first.py          # the three measurements
     python lab/pass42_who_breaks_first.py smoke    # plumbing: 80 names
+
+## Pass 42 results -- they break together, not in order; the strong break sooner, not later; and a low tide does shake you out
+
+Run 2026-11-20, `lab/results/pass42_who_breaks_first.json`. 1,068 weeks to
+2026-11-13, 503 names: 7,355 stock breaks (5,474 while an index member,
+with 13 weeks either side), 238 sector fund breaks, 29 SPY breaks.
+
+**A. Does the sector break first? No. They break together.**
+
+| At a stock's break, the other broke... | Sector fund | Base rate | SPY | Base rate |
+|---|---|---|---|---|
+| in the 13 weeks before | 33.8% | 18.8% | 41.5% | 23.4% |
+| the same week | 16.7% | 2.7% | 20.1% | 3.6% |
+| in the 13 weeks after | 35.4% | 20.2% | 44.7% | 24.8% |
+| not within 13 weeks either side | 52.6% | | 42.6% | |
+
+Breaks cluster: a sector break is nearly twice as likely as usual near a
+stock's break, and six times as likely the same week. But it is as likely
+after as before. Among the 3,093 stock breaks with a sector break within
+26 weeks, the stock went first in 39.0%, the same week in 29.5%, and the
+sector first in 31.5%; the median gap is zero weeks. SPY reads the same
+(38.5%, 28.7%, 32.8%). If anything the stock leads, which is what an
+index made of stocks has to show: the fund breaks when enough of its
+members have. And about half of all stock breaks happen with no sector
+break anywhere near: the stock's own business.
+
+**B. Do the strong hang on longest? No, the reverse.** At 223 sector
+breaks, the stocks of that sector still inside a channel, by their
+52-week return over the fund's:
+
+| Third | Names | Still unbroken 13 weeks later | 13-week return |
+|---|---|---|---|
+| weakest | 1,605 | 72.0% | +4.3% |
+| middle | 1,792 | 59.7% | +3.3% |
+| strongest | 1,605 | 61.0% | +3.9% |
+
+The strongest third broke more often than the weakest, by 10.4 points
+(t -3.9). Their returns over the 13 weeks did not differ (t 0.9). The
+reading: the strongest names have the steepest lines, and a steep line is
+the easiest to cross. They do not fall more; they stop climbing at that
+rate, which under a fixed line is a break.
+
+**C. Does a low tide sweep you out? Yes on breaks, no on returns.** The
+share of stock lines broken within 13 weeks, by where the backdrop sat
+the week the line was drawn:
+
+| Backdrop that week | Sector fund | SPY |
+|---|---|---|
+| top third of its channel | 30.0% | 24.0% |
+| middle | 32.7% | 37.2% |
+| bottom third | 44.6% | 48.6% |
+| no rising channel | 31.4% | 32.0% |
+
+With SPY in the bottom third of its channel a stock's line is twice as
+likely to be broken within a quarter as with SPY in the top third. For
+the sector, measured inside the same weeks, bottom third against top
+third is +9.0 points (t 3.8). The registered "against" group (both low
+or none, 36.8%) against "with" (both middle or top, 31.3%) is +5.5 points
+and not significant (t 1.4), because "no rising channel" behaves like an
+ordinary week and dilutes it: the danger is a channel that exists and is
+being tested, not the absence of one.
+
+Returns do not follow. Names bought with the sector in its bottom third
+made 1.68% over the list in 13 weeks, the best of the four; against-minus-
+with is +0.20% (t 0.3). In this list, being shaken out near a low was
+usually being shaken out before a bounce. The survivor caution applies
+in full to that sentence.
+
+**Scored against the predictions.** (A) Held: before is above its base
+rate, under 40%, and the median gap is zero. (B) Missed, and in the wrong
+direction: I predicted the strongest third would survive more by five
+points; it survived less by ten. (C) Held on the letter (5.5 points, the
+line was five; returns not lower) but the registered grouping is weak
+evidence. The clean result is the bottom-third rows, which I did not
+single out beforehand.
+
+**What it means for the rule.**
+1. The sector is not an early warning. Waiting for it to break tells you
+   nothing your own stock's line has not told you by the same week.
+2. Where the market and sector sit in their own channels is real
+   information about how soon a stock's line will be tested. It argues
+   for *when to draw a new line* (not while the tide is at its lower
+   line), not for when to sell.
+3. A fixed straight line under a steep climber is a hair trigger. That
+   is the same finding as Pass 41's 3% buffer and Pass 40's quick breaks,
+   from a third direction.
+4. Items 2 and 3 are suggestions read off this table after the fact. As
+   rules they are untested, and adding them to Pass 41's book would be a
+   fifth draw.
