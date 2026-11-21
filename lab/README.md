@@ -6497,3 +6497,105 @@ between the 30th and 70th percentile: the picks do not matter.
     python lab/pass53_other_history.py fetch    # bars from 1994
     python lab/pass53_other_history.py          # full run
     python lab/pass53_other_history.py smoke    # plumbing: 300 names
+
+## Pass 53 results -- the 20% exit book holds up on 1996 to 2008 and wins 39 of 40 five-year windows that start before 2016, then loses all 12 that start after
+
+Run 2026-11-21, `lab/results/pass53_other_history.json`. 1,604 weeks
+from 1996-02, ten slots, top 500. 860 of the 3,004 names have bars at
+the start of 1996.
+
+*A note on the bars.* Yahoo keys a weekly bar on the request's start day
+for names trading in 1994 and on Monday for names listed later; the
+script moves every bar to its Monday (committed before the full run).
+Weekly returns then correlate 0.993 to 0.9996 with the Pass 43 bars, the
+differences falling in dividend weeks, so the 2008-26 figures here
+differ a little from Pass 52's. The book also enters 2008 already
+holding names, where Pass 52's started empty.
+
+**The 20% exit with the market rule** (the best cell of Pass 52):
+
+| Period | Book | SPY | Pool | Median random book | Percentile among random | Book Sharpe / SPY | Book drawdown / SPY |
+|---|---|---|---|---|---|---|---|
+| **new: 1996-07 to 2008-06** | **15.6%** | 7.1% | 11.7% | 11.5% | 97 | 0.93 / 0.49 | -30.8% / -45.7% |
+| seen: 2008-07 to 2026 | 11.7% | 12.1% | 10.5% | 11.4% | 59 | 0.86 / 0.72 | -30.0% / -46.3% |
+| everything | 13.6% | 10.1% | 11.0% | 11.4% | 94 | 0.90 / 0.64 | -30.8% / -54.6% |
+| 1996-99 | 30.4% | 25.3% | 19.3% | 23.6% | 93 | | |
+| 2000-02 | -3.2% | -14.8% | -1.2% | -7.0% | 78 | | |
+| 2003-07 | 21.8% | 13.0% | 18.2% | 18.9% | 81 | | |
+| 2008-09 | 4.7% | -10.6% | -8.3% | 1.8% | 79 | | |
+| 2010-16 | 16.3% | 12.5% | 12.7% | 14.2% | 84 | | |
+| 2017-19 | 19.7% | 15.2% | 13.8% | 14.6% | 92 | | |
+| 2020-21 | 7.9% | 23.0% | 19.9% | 15.1% | 16 | | |
+| 2022 | -16.1% | -18.2% | -17.8% | -20.5% | 85 | | |
+| 2023-26 | 8.7% | 20.6% | 14.1% | 12.1% | 25 | | |
+
+**The other three books, new period / seen period / everything:**
+20% exit, no market rule 14.9% / 11.8% / 13.3% (Sharpe 0.81, drawdown
+-37.9%); line, market rule 15.5% / 6.5% / 10.4% (0.62, -50.8%); line, no
+rule 13.4% / 8.6% / 10.9% (0.61, -66.1%). The line books made 43% to 47%
+a year in 1996-99 and fell 51% to 66% in 2000-02.
+
+**Five-year windows, starting every 26 weeks (52 of them):**
+
+| Book | Beats SPY | Beats the pool | Beats the median random book | Shallower drawdown than SPY |
+|---|---|---|---|---|
+| 20% exit, market rule | 75% | 71% | 83% | 96% |
+| 20% exit, no rule | 73% | 73% | 87% | 92% |
+| line, market rule | 48% | 27% | 40% | 35% |
+| line, no rule | 42% | 25% | 35% | 44% |
+
+For the 20% exit with the market rule, by when the window starts:
+
+| Window starts | Windows | Beat SPY | Beat the pool | Beat the median random book | Median gap to SPY, a year |
+|---|---|---|---|---|---|
+| 1996 to 2007 | 24 | 24 | 22 | 24 | +10.7 points |
+| 2008 to 2015 | 16 | 15 | 15 | 16 | +4.7 points |
+| 2016 to 2021 | 12 | **0** | **0** | 3 | **-8.0 points** |
+
+**Against the lines.**
+- *Holds up out of sample:* **yes.** On twelve years that did not choose
+  it, 15.6% a year against 7.1% for SPY and 11.7% for the pool, Sharpe
+  0.93 against 0.49.
+- *Reliable:* **yes** by the line as written, 75% of five-year windows.
+  The line did not ask when, and the when matters: every window that
+  starts in 2016 or later loses.
+- *The picks matter:* **yes** on the new period, 97th percentile of the
+  random books. On the seen period it is the 59th, as in Pass 52.
+
+**How to read it.**
+1. *This is the first channel book to pass its registered lines on data
+   it was not chosen on,* and it does so against the two yardsticks
+   that share its survivor bias, not only against SPY. The exit and the
+   concentration are the owner's; the result is a point for his
+   structure.
+2. *The edge runs out.* From windows starting 2016 the book is behind
+   SPY by a median eight points a year and behind its own pool every
+   time. 2020-21 (7.9% against 23.0%) and 2023-26 (8.7% against 20.6%)
+   are the cost: fast falls that trip the 20% exit and the market rule
+   together, then fast recoveries led by a few very large names.
+3. *Two explanations fit and this data cannot separate them.* One is
+   that the market changed after about 2016 and the rule no longer
+   suits it. The other is survivor bias: the further back, the more the
+   list is only eventual winners, and a rule that picks the straightest
+   climbers among eventual winners may be flattered by more than the
+   pool and the random books are. Both predict exactly this table.
+   Settling it needs a list with the delisted names in it, which the
+   lab does not have.
+4. *The line exit fails the same test.* It needs the 1990s to look
+   good and gives it all back in 2000-02. The 20% exit is the better
+   rule on every stretch of thirty years except 2023-26.
+
+**Scored against the predictions.** (1) Missed: the book beats the pool
+as well as SPY on the new period. (2) Half: it wins 2000-02 against SPY
+(not the pool) and 2008-09, and loses 2023-26, but it won 1996-99 and
+2017-19, which I had as losses. (3) Missed twice: 75% of windows against
+SPY, not 45% to 60%, and 71% against the pool, not under 40%; the
+drawdown share held. (4) Missed: 97th percentile, not the middle.
+
+**What it means.** Not a candidate for production: lab only, ten names,
+a list with thirty years of survivor bias, and nothing since 2016. But
+it is the strongest result the channel idea has produced, and the open
+question is now a narrow one: why it stopped. The two things worth
+doing next are a list that includes the dead names, and the two
+re-entry repairs from Pass 51's results (suspend the exit, or get back
+in faster, when the whole market has fallen), judged on 2016 on.
