@@ -6129,3 +6129,67 @@ sold slots go to cash, with a cap on any one name's weight; the line
 moves up with the price ("dynamic as it goes up with some cushion",
 which Pass 46 tested but Passes 48 and 50 did not carry over); and a
 start no earlier than the week the book can hold a full set of names.
+
+## Pass 51 -- the channel-hold book with cash, and the owner's 20% rule (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on seeing that the Pass 50 book held names through
+falls of 50% and more: "I wouldn't hold anything 20% or more from its
+high in the channel." This pass adds that rule and repairs the two faults
+of construction the Pass 50 note found. Lab only.
+
+**The book.** Pass 48's screen for entries (channel worth owning, weekly
+swing of 1.5% or more, close within 4.7 swings of the 52-week high
+close), bought at the next Monday's open. Every held name gets the same
+weight, **one over the number held or one hundredth, whichever is
+smaller; the rest is cash** earning nothing. So a book of 24 names is 24%
+invested, and money from a sold name is not piled onto the survivors. A
+sold name may come back when it is on the screen again. Decisions on the
+weekly close, sold at the next Monday's open, costs at the tier's rate.
+
+**Four exits.**
+- *line*: a weekly close under the line fixed at entry (Passes 48, 50).
+- *20% off the high*: a weekly close 20% or more under the name's high,
+  the high being its 52-week high close at entry or any higher weekly
+  close since. The owner's rule, alone.
+- *line or 20%*: whichever comes first. The owner's rule as he would run
+  it.
+- *line or 4.7 swings*: the same with the distance scaled to the stock's
+  own weekly swing in place of a flat 20% (his point on ANRO and AMLX,
+  that a jumpy name sits further from its high without being broken).
+
+Two universes as in Pass 48: the top 500 by size (the one that counts)
+and every tradeable name.
+
+**Control.** 200 random books a week holding the same number of names
+from the same pool at the same weights, so with the same cash.
+
+**Windows.** All (from 2008-07), to 2016, 2017 on, as before; and, named
+here in advance because the Pass 50 note used it after the fact, **2010
+on**, the years in which the book can hold a full set.
+
+**Verdict lines (fixed).** *Beats luck*: mean weekly return at or above
+the 95th percentile of the random books overall and the 75th in each
+half. *Better ride*: Sharpe above SPY's and a largest drawdown shallower
+than SPY's, overall. *Beats the S&P 500*: compound return above SPY's in
+all, in both halves, and in 2010 on. The 20% rule *earns its place* if
+"line or 20%" against "line" raises Sharpe by 0.05 or more without
+lowering the compound return by more than half a point a year, in both
+halves.
+
+**Limits.** The list holds only names alive today, which hides the worst
+breakdowns and so understates what a selling rule saves. Cash earns
+nothing, and in 2008-09 a part-empty book is flattered against SPY by
+its cash, which is why the random books carry the same cash.
+
+**Predictions.** (1) "Line or 20%" has a shallower largest drawdown than
+"line" and a higher Sharpe; I expect it to earn its place overall and am
+unsure of the second half. (2) Its compound return is within half a
+point of "line" either way. (3) "20% off the high" alone is the worst of
+the four on return: with no line it holds slow decliners too long. (4)
+The swing-scaled version does about as well as the flat 20%, not
+clearly better. (5) No arm beats luck in both halves, and none beats the
+S&P 500 on every window; the best is within two points a year of SPY in
+2010 on.
+
+    python lab/pass51_cash_and_twenty.py          # full run
+    python lab/pass51_cash_and_twenty.py smoke    # plumbing: 300 names
