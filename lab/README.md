@@ -7698,3 +7698,92 @@ of the four exits; weight-tightening comes closest.
 
     python lab/pass60_tightening_exit.py          # full run
     python lab/pass60_tightening_exit.py smoke    # plumbing: 300 names
+
+## Pass 60 results -- tightening the 20% rule does not help, by time or by weight; the trend-strength book's big fall is made of buying, not of holding
+
+Run 2026-11-21, `lab/results/pass60_tightening_exit.json`. 1,604 weeks
+from 1996-02, ten slots, top 500, positions drifting. Compound return a
+year, percentile among the flat exit's 100 random books in brackets.
+
+| Picks | Exit | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Buys a year |
+|---|---|---|---|---|---|---|---|---|
+| quality | flat | 17.5% (91) | 13.1% (76) | 8.7% (38) | 13.4% | 0.85 | -33.6% | 8 |
+| quality | tightens with time | 19.0% | 9.5% | 5.9% | 11.8% | 0.74 | -36.2% | 14 |
+| quality | tightens with weight | 14.8% | 15.4% | 10.4% | 13.9% | 0.88 | -36.2% | 9 |
+| quality | both | 17.4% | 9.6% | 7.0% | 11.6% | 0.73 | -36.4% | 14 |
+| trend strength | flat | 21.2% (100) | 14.8% (100) | 17.6% (100) | **18.1%** | 0.81 | **-52.9%** | 14 |
+| trend strength | tightens with time | 18.3% (100) | 8.2% (11) | 20.9% (100) | 16.0% | 0.71 | -53.5% | 20 |
+| trend strength | tightens with weight | 22.0% (100) | 12.7% (85) | 20.5% (100) | 18.6% | 0.82 | -51.0% | 15 |
+| trend strength | both | 21.9% (100) | 9.1% (29) | 20.1% (100) | 17.2% | 0.76 | -52.9% | 20 |
+| SPY | | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+Medians of 100 random books for each exit (return over everything /
+largest drawdown): flat 11.2% / -37.0%; tightens with time 11.6% /
+-35.2%; tightens with weight 10.9% / -36.3%; both 12.0% / -35.0%. By
+period the time rule's random books are +1.9, -2.7 and +1.6 points
+against the flat ones.
+
+The largest position in any book peaked at 24% to 49% of the book and
+was typically 15% to 16%.
+
+**Against the lines.**
+- *A tightening helps:* **no**, for either set of picks or on the
+  random books. No tightening makes the thirty-year drawdown five
+  points shallower; the most is two (trend strength, by weight), and
+  the time rule costs two points a year on both sets of picks.
+- *Trend strength earns its place:* **no.** At the 100th percentile in
+  all three periods with the flat exit, and nineteen points deeper in
+  drawdown than the quality book, with every exit.
+
+**Where the 53% went** (diagnostic of the flat trend-strength book, same
+rules and data with the trades printed; not a new test). The fall runs
+148 weeks, from the week ending 2000-03-10 to 2003-01-10, while SPY
+fell 31%. It is not one collapse. In those weeks the book made **59 new
+buys and 67 sales; two thirds of the sales were at a loss, a median 9%
+down after a median six weeks held.** 42 of the buys were in 2000,
+before the market turned cold (it was cold in 78% of the weeks, which
+is why there are none in 2001), and 30 of the 59 were technology
+names; eight of the ten names held at the peak were technology. The
+quality book's worst fall is the same event, over in eleven weeks: 28
+buys, 23 of them technology.
+
+**How to read it.**
+1. *The owner's idea was aimed at the wrong half of the trade, and so
+   was mine.* A tighter stop guards against a position that is held too
+   long or has grown too large. The book's worst years were not that:
+   no position was over a third of the book, and names were being sold
+   after six weeks. The loss is the stop working as designed, twenty
+   percent at a time, on a stream of new buys in a market that had
+   stopped rewarding them.
+2. *Tightening with time is plainly wrong for these books.* It sells
+   the long holds, where the money is, and turns the book over half
+   again as fast.
+3. *Tightening with weight is harmless and nearly useless.* It trims
+   concentration (the largest position ever, 24% against 39% in the
+   quality book) and changes return and drawdown by less than the
+   noise.
+4. *Letting positions drift did not change the picture.* Trend strength
+   makes 18.1% a year against 17.7% under weekly equal weights and is
+   still at the top of the random books in every period.
+5. *One year carries a lot of the thirty-year figure.* The trend book
+   made 206% in 1999. Without that year its thirty-year return is about
+   14.4% against about 12.4% for the quality book: still two points
+   ahead, and still at the 100th percentile in the two later periods,
+   but the 18% is not the number to carry around. It is also lumpy
+   year to year (2024 +78%, 2021 +4% against SPY's +30%, 2023 +4%
+   against +26%).
+
+**Scored against the predictions.** (1) Held: the time rule costs two
+points a year. (2) Missed: the weight rule cut the drawdown by two
+points, not five, because the loss was never in a few large names. (3)
+Held. (4) Held: 18.1% and -52.9% against 17.7% and -47.1%. (5) Held on
+the verdict, and wrong about why weight-tightening would come closest.
+
+**What it means.** The exit is not where the trend-strength book's
+drawdown can be fixed. If it can be fixed it is on the buying side, and
+the diagnostic names two candidates: a limit on how many of the ten may
+come from one sector, and a pause on new buys after a run of losing
+sales. Both are now suggested by 2000-02 itself, which was this lab's
+unseen decade until this pass looked inside it; a test of either has
+to be judged on what it costs in the other two decades, not on what it
+saves in that one. Count of ideas tried since Pass 58: seventeen.
