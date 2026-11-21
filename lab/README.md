@@ -5589,3 +5589,62 @@ no sign that a qualifying chart predicts the next quarter. More history
 passes on the line and the exit will not move it. What has not been
 written down or tested is his selection, and the only fair test of that
 is Pass 44.
+
+## Pass 47 -- choosing: only add names in the four strongest sectors (registered 2026-11-20 before any run)
+
+Pass 46 ended on the point that the rule draws the owner's line and does
+none of his choosing: it sat in a channel on half of all large caps. His
+answer, 2026-11-20: "What if they only consider adding stocks in the top
+four trending channel sectors? So they don't go nuts adding everything."
+And on timing: "If you wait 9 weeks or so to buy a stock the second
+weekly low candle is usually lower than the one you mark off of so I
+would go off of the lowest in the watch window." Lab only.
+
+**What does not change.** Pass 46's Heikin-Ashi channel and its dynamic
+exit with one weekly swing of cushion. The starting candle is already the
+lowest Heikin-Ashi low of the watch window and moves down if a later
+candle undercuts it, which is his second point; nothing to change there.
+
+**What changes.**
+- *The wait:* the early entry moves from six weeks after the starting
+  candle to **nine**, with at least six of the nine candles green. (A
+  name that misses it is bought at the bounce, as before.)
+- *The sector rule:* a name is only **added** in a week its sector is one
+  of the four strongest. A name already held is kept whatever its sector
+  does; the exit is the channel's alone.
+
+**"Strongest", two ways.**
+- *By channels (the primary, his words):* the share of the sector's
+  top-500 names that the rule itself has in a channel that week. Sectors
+  with fewer than ten names are not ranked.
+- *By the fund:* the sector fund's return over the last 26 weeks.
+
+| Arm | Adds allowed in |
+|---|---|
+| no sector rule | every sector (the nine-week entry alone) |
+| **top four by channels** | the four sectors with the largest share of names in a channel -- the primary |
+| top four by fund | the four sector funds with the best 26-week return |
+| bottom four by channels | the four with the smallest share: the check that "four sectors" is not doing the work by itself |
+
+**Universe, book, control, verdict lines.** As Pass 46 on the top 500 by
+size (every tradeable name is reported beside it): every allowed signal
+bought, the book split equally, costs by tier, 200 random baskets a week
+of the same number of names from the same set, SPY. Beats luck at the
+95th percentile overall and the 75th in each half; better ride on Sharpe
+and drawdown against SPY; cards positive in both halves.
+
+**Why this is a fairer question than the last two.** Passes 38 and 42
+found that a sector's own channel is no gate and no early warning. This
+is different: it ranks sectors against each other and takes the leaders,
+which is sector momentum, and that has support in the published record.
+It is also the ninth draw, and a rule that is right about sectors and
+wrong about stocks would still show up here as a pass.
+
+**Predictions.** (1) The sector rule cuts the names held by more than
+half. (2) Top four by channels compounds more than no sector rule, by
+less than one point a year. (3) Top beats bottom, by less than one and a
+half points. (4) The primary does not beat luck. (5) Ranking by the fund
+does about as well as ranking by channels (within half a point).
+
+    python lab/pass47_sector_choice.py          # every arm, both sets
+    python lab/pass47_sector_choice.py smoke    # plumbing: 400 names
