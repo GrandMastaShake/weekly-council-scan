@@ -6353,3 +6353,87 @@ every window.
 
     python lab/pass52_ten_good_channels.py          # full run
     python lab/pass52_ten_good_channels.py smoke    # plumbing: 300 names
+
+## Pass 52 results -- the score agrees with the owner's eye and does not pick better; the market rule and the 20% exit make the book, in the first half only
+
+Run 2026-11-21, `lab/results/pass52_ten_good_channels.json`. 957 weeks
+from 2008-07, top 500, a median of 80 names on the screen a week, SPY
+under its 40-week average in 20% of weeks. SPY: 12.3% a year, Sharpe
+0.73, largest drawdown -46.3% (to 2016 9.5%; 2017 on 14.8%; 2010 on
+13.9%).
+
+**Ten slots, equal weights** (percentile is among 200 books that fill
+the same slots at random from the screen):
+
+| Exit | Market rule | Compound a year | Sharpe | Largest drawdown | To 2016 | 2017 on | 2010 on | Percentile (all / to 2016 / 2017 on) | Random books' median | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| line | none | 8.2% | 0.52 | -53.3% | 3.2% | 12.7% | 11.6% | 22 / 8 / 55 | 10.0% | 8 weeks |
+| line | cold | 8.9% | 0.60 | -33.0% | 8.1% | 9.5% | 7.7% | 6 / 2 / 36 | 12.0% | 8 weeks |
+| 20% off the high | none | 10.4% | 0.69 | -40.7% | 10.4% | 10.5% | 12.6% | 32 / 24 / 50 | 11.0% | 15 weeks |
+| 20% off the high | cold | 12.3% | 0.91 | -29.7% | 17.0% | 8.5% | 11.4% | 60 / 76 / 44 | 11.9% | 35 weeks |
+
+**Twenty-five slots, equal weights:** line/none 8.9% (0.58, -44.1%, 7th
+percentile); line/cold 11.7% (0.79, -31.2%, 24th); 20%/none 10.4% (0.75,
+-31.9%, 56th); 20%/cold 11.7% (0.89, -29.5%, 52nd).
+
+**Ten slots filled with the lowest scores:** line 7.8% (0.50, -43.5%);
+20% off the high 10.4% (0.70, -32.0%). The same as the highest scores.
+
+**Weights by quality** against equal, same book: between -0.6 and +0.8
+points a year and -0.05 and +0.02 of Sharpe across the eight books. On
+the ten-slot line book, +0.1 points and 0.00.
+
+**The owner's marks on the score** (week ending 2026-11-13, every
+tradeable channel name scored whatever its size): UVE is at the 95th
+percentile and GRDN the 71st. Of his 45 solid marks 27 are on the screen,
+median 63rd percentile; of 18 broken, 7 are on the screen, median 44th.
+
+**Against the lines.**
+- *The score earns its place:* no. The registered book is at the 22nd
+  percentile of its random books (8th and 55th by half). Across the
+  eight equal-weight books the percentiles run from 6 to 60. The top
+  ten and the bottom ten by score make the same return.
+- *Weights by quality:* no. Nothing measurable.
+- *The market rule:* no, by the two-halves test. On the ten-slot line
+  book it adds 0.08 of Sharpe and 0.7 points overall and takes the
+  drawdown from -53% to -33%; to 2016 it adds 0.35 of Sharpe and 4.9
+  points, from 2017 it costs 0.17 and 3.2 points.
+- *Beats the S&P 500:* no book. The best, ten slots with the 20% exit
+  and the market rule, ties SPY overall (12.3%) with a far better ride
+  (0.91 against 0.73, -29.7% against -46.3%) and 17.0% against 9.5% to
+  2016. From 2017 it makes 8.5% against 14.8%.
+
+**What happened.**
+1. *The score measures what the owner sees and what he sees is not what
+   pays.* It puts his two ideal charts near the top and his solid marks
+   above his broken ones, so it is a fair stand-in for his eye. But on
+   twenty years of the top 500, straighter, tighter, longer, better
+   tested channels did not go on to do better than any other name on
+   the screen. The screen already takes the wonky ones out; ranking what
+   is left added nothing.
+2. *What made the best book is the rules, not the picks.* Ten random
+   screen names run under the 20% exit and the market rule made 11.9% a
+   year at the median, against 12.3% for the ten best by score.
+3. *The line exit is the weak part.* Median hold eight weeks, the same
+   in ten slots as in the full screen: the line fixed at entry is hit
+   fast whichever channels are chosen. The 20% exit lets holds run (a
+   median 35 weeks with the market rule, the longest about ten years,
+   47% of sales at a gain averaging +24.7%).
+4. *Every result splits at 2017.* The market rule and the 20% exit
+   protect in 2008-09, 2011 and 2015-16 and cost in the fast recoveries
+   of 2019, 2020 and 2023, when SPY was carried by a few very large
+   names that an equal-weight book of channel names holds little of.
+
+**Scored against the predictions.** (1) Missed: the top ten do not beat
+the bottom ten and sit below the middle of the random books. (2) Held.
+(3) Held. (4) Missed: with the line exit the hold is the same eight
+weeks; only the 20% exit with the market rule lengthens it. (5) Held.
+
+**What it means.** The owner's structure, a few names held long with a
+wide stop and cash when the market is cold, gives the best ride any
+channel book has shown and matched SPY's return over the whole window.
+It is one cell of sixteen, it does that entirely in the first half, and
+random picks from the screen do as well, so it is not evidence of an
+edge. The quality score as built is not worth adding. Whether his own
+eye picks better than the score is what the forward ledger of his marks
+will show, first scores about 2026-12-18.
