@@ -7990,3 +7990,71 @@ five predictions in Pass 61, so this is worth what it is worth.
 
     python lab/pass62_is_it_solid.py          # full run
     python lab/pass62_is_it_solid.py smoke    # plumbing: 300 names
+
+## Pass 62 results -- not solid: three of four neighbours fail, and from three of four start dates the pause makes the drawdown deeper; the cap alone stands
+
+Run 2026-11-21, `lab/results/pass62_is_it_solid.json`. Trend-strength
+picks, ten slots, positions drifting, 1996 to 2026.
+
+**Neighbours.** Compound return a year, percentile among the base's
+random books in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Line 1 |
+|---|---|---|---|---|---|---|---|
+| cap of three (no pause) | 20.0% (100) | 14.5% (99) | 20.2% (100) | 18.5% | 0.86 | -45.6% | the yardstick |
+| **cap of three, pause of eight weeks** | 17.3% (94) | 14.5% (98) | 26.3% (100) | 19.4% | 0.93 | -40.4% | the book in question |
+| cap of three, pause of four weeks | 19.6% (99) | 11.8% (75) | 22.5% (100) | 18.1% | 0.88 | -40.9% | passes |
+| cap of three, pause of thirteen weeks | 14.4% (76) | 10.5% (44) | 21.9% (100) | 15.7% | 0.82 | -38.8% | fails: return, 2006-16 |
+| cap of two, pause of eight weeks | 13.9% (70) | 12.6% (87) | 19.6% (100) | 15.6% | 0.81 | -42.1% | fails: return, unseen |
+| cap of four, pause of eight weeks | 18.8% (98) | 8.8% (10) | 18.4% (100) | 15.5% | 0.77 | -50.2% | fails: all three |
+
+**Start dates.** Each book started 0, 13, 26 and 39 weeks late; return
+and largest drawdown over the weeks all four share.
+
+| Started | Cap of three | Cap of three with the pause | Line 2 |
+|---|---|---|---|
+| on time | 18.0% / -45.6% | 19.0% / -40.4% | passes |
+| 13 weeks late | 16.4% / -41.3% | 18.6% / -43.1% | fails: drawdown deeper |
+| 26 weeks late | 17.1% / -41.2% | 19.6% / -43.0% | fails: drawdown deeper |
+| 39 weeks late | 16.7% / -39.3% | 18.6% / -39.9% | fails: drawdown deeper |
+
+Whatever the start, the books are the same book again within the first
+decade: every start gives the identical 14.5% for 2006-16 and the
+identical figure for 2016-26. The start date changes only the years
+around 2000.
+
+**Against the lines.** *Not solid.* Line 1 fails on three neighbours of
+four; line 2 fails from three starts of four.
+
+**How to read it.**
+1. *The row the owner pointed at is the best of its neighbourhood, which
+   is what a lucky row looks like.* Move the pause to thirteen weeks or
+   the cap to two or four and the thirty-year return falls from 19.4%
+   to between 15.5% and 15.7%, under the cap alone at 18.5%. Only the
+   four-week pause holds up.
+2. *The 26.3% of the last decade is one path.* Every pause setting beat
+   no pause in 2016-26 (21.9% to 26.3% against 20.2%), which is the one
+   steady thing the pause does, and every one of them cost the unseen
+   decade (14.4% to 19.6% against 20.0%). In 2006-16 it is level at
+   eight weeks and three to four points worse at four and thirteen.
+3. *The shallower drawdown belongs to the start date, not to the
+   pause.* Started on time the pause saves five points of drawdown;
+   started a quarter, half or three quarters of a year later it costs
+   up to two. The cap alone runs from -45.6% to -39.3% across the same
+   four starts.
+4. *This run puts a number on the noise.* The same rule, cap of three,
+   makes between 16.4% and 18.0% a year with a largest drawdown between
+   -39% and -46% depending only on the quarter it started in. No
+   difference between two ten-name books smaller than about a point
+   and a half of return, or about six points of drawdown, should be
+   read as a difference between their rules.
+
+**Scored against the prediction.** Held on the verdict. I expected the
+four-week pause to be the neighbour that failed; it was the one that
+passed.
+
+**What it means.** By the registration the cap of three alone stands as
+the book to carry forward and the pause stays dropped. The trend-strength
+book with a cap of three: 18.5% a year, Sharpe 0.86, a largest drawdown
+of -39% to -46% depending on its start, on a list of survivors. Count of
+ideas tried since Pass 58: twenty-three; this pass added none.
