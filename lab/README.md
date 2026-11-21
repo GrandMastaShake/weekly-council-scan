@@ -4937,3 +4937,59 @@ hair: the brake cut the drawdown by 32%, not more than a third.
    through the spring of 2026, at the lower line by late August), so the
    weekly list can be logged before each Monday and scored, on any
    universe, with no survivor problem at all.
+
+## Pass 42 -- who breaks first: the stock, its sector or the market (registered 2026-11-20 before any run)
+
+The owner's questions on the Pass 41 results, 2026-11-20: "Does the
+individual stock's sector generally break trend first? Assume the strong
+often hang on the longest. If the tides are fighting you with the general
+market and sector near the bottom of the channel you might get swept
+away." Three measurements, no book and no verdict on a strategy. Lab only.
+
+**Channels and breaks (fixed).** Pass 41's drawing on weekly bars, for
+every stock on the frozen S&P 500 list, the eleven sector funds and SPY.
+A *channel episode* opens the first week a series has a channel worth
+owning (lower line rising 10% a year or more, straightness 0.80 or more)
+and none is open; its lower line is fixed that week and extended. The
+episode *breaks* on the first weekly close below the line. A new one can
+open afterwards.
+
+**A. Does the sector break first?** For every stock break: did its sector
+fund break in the 13 weeks before, in the same week, or in the 13 weeks
+after? The same for SPY. Each share is set beside its base rate: the same
+share over all weeks the stock was inside a channel and did not break.
+Also the median gap, in weeks, between a stock's break and the nearest
+fund break within 26 weeks either side.
+
+**B. Do the strong hang on longest?** At every sector fund break, the
+stocks of that sector that are inside a channel, sorted into thirds by
+their 52-week return over the fund's. Per third: the share still unbroken
+13 weeks later, and the 13-week return.
+
+**C. Are you swept away when the tide is against you?** Every name-week
+with a channel worth owning, sorted by where the sector fund and SPY sit
+that week: no rising channel, the bottom third of their channel, the
+middle, the top. *Against* means both sector and market are in "none" or
+"bottom"; *with* means both are in "middle" or "top". Per group: the share
+of stock lines (fixed that week) broken within 13 weeks, and the 13-week
+return over the list's average for the same weeks. Differences are tested
+on weekly means with errors that allow for the overlapping windows.
+
+**Caution carried from the earlier passes.** The list is survivors, so the
+13-week returns after a break or a bad backdrop are flattered: everything
+here came back. The timing in A is much less exposed to that than the
+returns in B and C.
+
+**Predictions.** (A) A sector break in the 13 weeks before is more common
+at a stock's break than its base rate, but still the minority: under 40%
+of stock breaks. Most stock breaks happen with the sector's channel
+intact or absent. The median gap is within two weeks of zero: they break
+together more than one leads. (B) The strongest third survives the next
+13 weeks more often than the weakest, by at least five points. (C) Lines
+drawn against the tide break more often within 13 weeks than lines drawn
+with it, by at least five points; the 13-week return over the list is
+not lower against the tide, because in this list falls are followed by
+bounces.
+
+    python lab/pass42_who_breaks_first.py          # the three measurements
+    python lab/pass42_who_breaks_first.py smoke    # plumbing: 80 names
