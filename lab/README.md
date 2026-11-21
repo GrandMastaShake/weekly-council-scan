@@ -4735,3 +4735,60 @@ lowers the compound return.
 
     python lab/pass40_hold_break.py          # every arm
     python lab/pass40_hold_break.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 40 results -- wider did not fix it: the primary sits below every random book again
+
+Run 2026-11-20, `lab/results/pass40_hold_break.json`. 1,028 weeks,
+2007-03-09 to 2026-11-13, 503 names.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Longest hold |
+|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.67 | -54.6% | 100% | | | | | |
+| list | 13.4% | 0.74 | -52.2% | 100% | | | | | |
+| refit 3 | 7.0% | 0.48 | -53.4% | 97% | 0th | 0th | 11th | 9 wk | 159 wk |
+| refit 4 | 8.4% | 0.54 | -46.7% | 97% | 2nd | 0th | 28th | 10 wk | 156 wk |
+| refit 5 | 8.4% | 0.54 | -46.7% | 97% | 2nd | 0th | 28th | 10 wk | 156 wk |
+| anchored 2.5 | 6.3% | 0.45 | -59.7% | 98% | 0th | 0th | 6th | 4 wk | 402 wk |
+| **anchored 4** | **6.9%** | **0.49** | **-62.0%** | 98% | **0th** | 0th | 26th | 12 wk | 417 wk |
+| anchored 6 | 5.8% | 0.41 | -56.0% | 98% | 0th | 0th | 2nd | 23 wk | 507 wk |
+| anchored 4, market brake | 5.3% | 0.48 | -22.2% | 68% | 10th | 19th | 16th | 9 wk | 67 wk |
+
+**Against the lines.** *Beats luck:* **no.** Anchored 4 earned 0.154% a
+week; random books of ten earned 0.257%. *Better ride:* **no**: Sharpe
+0.49 against 0.67 and a deeper drawdown than SPY (-62.0%).
+
+**What happened.**
+1. *Wider helped the refit rule a little and the anchored rule not at
+   all.* Refit goes 7.0% to 8.4% from 3 to 4 widths and then stops: 4 and
+   5 are the same book to the trade, because past 4 widths the break line
+   is never reached and the slope and 40-week tests do all the selling.
+2. *A channel drawn once breaks fast or never.* A steep entry-day line is
+   broken within weeks because no stock keeps that slope: half of anchored
+   4's closed positions lasted twelve weeks or less. A shallow, wide one is
+   never broken: the open book holds SJM, CLX and DGX from 2008 and 2009,
+   over 900 weeks each. So the ten slots silt up with whichever quiet
+   names happened to be bought early, and the rule stops choosing.
+3. *Nothing protected it in 2008.* Fully invested with four widths of
+   room, anchored 4 lost 52.9% that year against SPY's 39.4%.
+4. *The market brake did what it did in Pass 38*: drawdown -22.2%, at the
+   cost of return, and still the 10th percentile of its random books.
+
+**Scored against the predictions.** (1) Half: the place rises with width
+for refit (0th, 2nd, 2nd) and not for anchored (0th throughout). (2)
+Missed: I predicted the 20th to 60th percentile; it is the 0th. I expected
+a wide rule to drift up toward "hold ten survivors"; the ten it got stuck
+with were worse than a random ten. (3) Missed: the median hold is 12
+weeks, not over 20 (the mean is 20). (4) Held: the brake cut the
+drawdown from -62.0% to -22.2% and the return from 6.9% to 5.3%.
+
+**Three passes, twenty arms.** None reaches the 31st percentile of random
+books over the whole period; seventeen sit at or below the 10th. Tight or
+wide, refit or drawn once, sold at the top or held to the break, with or
+without sector and market layers. The two readings from Pass 39 stand
+(the survivor list; large caps snapping back), and this data cannot
+separate them.
+
+**What it means.** The line for this family on this data is drawn here:
+no more variants. What is left is what the Pass 39 results named: a
+point-in-time membership file, or a forward record of the owner's own
+marks.
