@@ -422,6 +422,456 @@
     "pos": 0.78,
     "worth_owning": true
    }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AEP",
+   "call": "broken",
+   "last_close": 125.14,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'probably would have gotten sold early August'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.81,
+    "pos": 0.2,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.084
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ALNT",
+   "call": "broken",
+   "last_close": 71.64,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.89,
+    "pos": 0.68,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.394
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ARCB",
+   "call": "broken",
+   "last_close": 123.43,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.8,
+    "pos": 0.59,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.285
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ANAB",
+   "call": "broken",
+   "last_close": 46.63,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.88,
+    "pos": 0.5,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.327
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ATEX",
+   "call": "broken",
+   "last_close": 67.37,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.84,
+    "pos": 0.44,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.359
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AYA",
+   "call": "broken",
+   "last_close": 17.38,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.9,
+    "pos": 0.22,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.399
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACRS",
+   "call": "broken",
+   "last_close": 3.44,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.85,
+    "pos": 0.06,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.463
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AEHR",
+   "call": "broken",
+   "last_close": 39.84,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.82,
+    "pos": 0.01,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.703
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AVAL",
+   "call": "broken",
+   "last_close": 3.43,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'broke their channels'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.84,
+    "pos": 0.0,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.394
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMRX",
+   "call": "potential",
+   "last_close": 21.12,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.94,
+    "pos": 0.91,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.018
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "APPN",
+   "call": "potential",
+   "last_close": 51.79,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.9,
+    "pos": 0.89,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.05
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ABM",
+   "call": "potential",
+   "last_close": 53.61,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.94,
+    "pos": 0.84,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.019
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AVPT",
+   "call": "potential",
+   "last_close": 16.49,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.91,
+    "pos": 0.8,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.035
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMGN",
+   "call": "potential",
+   "last_close": 435.64,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.84,
+    "pos": 0.79,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.06
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ALRM",
+   "call": "potential",
+   "last_close": 64.99,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.86,
+    "pos": 0.78,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.006
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AVBH",
+   "call": "potential",
+   "last_close": 34.04,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.87,
+    "pos": 0.71,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.019
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AVBC",
+   "call": "potential",
+   "last_close": 21.05,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.92,
+    "pos": 0.68,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.102
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACCO",
+   "call": "potential",
+   "last_close": 5.39,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.82,
+    "pos": 0.56,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.006
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ANRO",
+   "call": "potential",
+   "last_close": 25.37,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.85,
+    "pos": 0.48,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.286
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AZTA",
+   "call": "potential",
+   "last_close": 44.8,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.91,
+    "pos": 0.42,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.019
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AAPL",
+   "call": "potential",
+   "last_close": 342.56,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.9,
+    "pos": 0.35,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.038
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ALRS",
+   "call": "potential",
+   "last_close": 32.23,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.89,
+    "pos": 0.23,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.066
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMLX",
+   "call": "potential",
+   "last_close": 26.02,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.87,
+    "pos": 0.16,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.327
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMG",
+   "call": "potential",
+   "last_close": 368.15,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.92,
+    "pos": 0.08,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.067
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ANDG",
+   "call": "potential",
+   "last_close": 57.85,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.94,
+    "pos": 0.05,
+    "worth_owning": true
+   },
+   "off_52_week_high": 0.018
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMTB",
+   "call": "potential",
+   "last_close": 28.11,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.92,
+    "pos": 0.04,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.073
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ASB",
+   "call": "potential",
+   "last_close": 29.06,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.81,
+    "pos": 0.02,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.094
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AAMI",
+   "call": "potential",
+   "last_close": 80.26,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.94,
+    "pos": 0.01,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.161
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AME",
+   "call": "potential",
+   "last_close": 222.9,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.9,
+    "pos": 0.01,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.124
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AEF",
+   "call": "potential",
+   "last_close": 6.69,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'look solid'",
+   "pass41_rule_on_mark_date": {
+    "r2": 0.86,
+    "pos": 0.0,
+    "worth_owning": true
+   },
+   "off_52_week_high": -0.313
   }
  ]
 }
