@@ -7151,3 +7151,73 @@ and quickening sales as tie-breakers. Every part of that was read off
 these two decades, so it goes to a registered test in ten slots with
 the market rule, and then to the forward ledger; it is not a finding
 yet.
+
+## Pass 57 -- the way back in, tested in the ten-slot book over thirty years (registered 2026-11-21 before any run)
+
+Pass 56 read a two-part rule off the sales of 2006 to 2026. The owner,
+2026-11-21: "Let's run it!" Lab only.
+
+**The base book** is Pass 53's with the two corrections found since: a
+channel counts after 8 weeks (Pass 54) and there is no price floor
+(Pass 55). Ten slots, equal weights, top 500 by size, the highest
+quality score first, sold on a weekly close 20% under its high, no new
+buys while SPY is under its 40-week average. Weekly bars from 1994, so
+the books run from early 1996.
+
+**The two halves, with their numbers fixed here from Pass 56's fifths
+(which agreed across its two decades to within a point).**
+- *Half one, whose fall it was.* When a held name closes 20% under its
+  high, measure its fall from that high less SPY's change over the same
+  weeks. **If the stock has fallen less than 13.5 points more than SPY,
+  the fall is the market's and it is not sold.** It is sold on the
+  first later close that is 20% under the high and 13.5 points or more
+  beyond SPY.
+- *Half two, the way back.* A name sold may be bought back within 52
+  weeks on **a weekly close above its 10-week average**, provided that
+  on the day it was sold its **weekly MACD line was not below -2% of
+  its price** (the deeply negative fifth). It takes a free slot ahead
+  of new names from the screen, most recently sold first, under the
+  same market rule, and its high for the 20% exit starts again from the
+  price it is bought back at.
+The fundamentals are left out: none cleared Pass 56's line, and their
+history does not reach before 2002 (earnings) or 2010 (sales).
+
+**Five books:** the base; half one only; half two only; **both**; and
+half two without the MACD proviso, to see whether the proviso does
+anything.
+
+**Periods.** *1996-07 to 2006-10*: no sale in these years was in Pass
+56, so this is the rule on history that did not write it. *2006-11 to
+2016-11* and *2016-11 to 2026-11*: the two decades it was read from.
+And every five-year window, by when it starts.
+
+**Benchmarks.** SPY; the pool (every top-500 member, equal weight); 100
+random books for each book, filling slots at random from the screen
+with the same halves in force.
+
+**Verdict lines (fixed).** *The rule earns its place* if "both" beats
+the base by 1.5 points a year or more of compound return in each of the
+three periods, with a largest drawdown over the thirty years no more
+than five points deeper. *Holds up on unseen history*: the 1996-2006
+part of that alone. *Beats the S&P 500*: "both" above SPY in each of
+the three periods, in 60% or more of all five-year windows, and in more
+than half of the windows that start from 2016.
+
+**Limits.** The two later decades are where the rule was found; only
+1996-2006 is a test. The list is names alive today, thirty years of
+survivor bias in the books and the pool alike. Ten names is noisy: Pass
+54 showed the same rules eight points a year apart over three years
+from a different start. Half one keeps names through market falls by
+design, so a deeper drawdown is expected and is part of what is being
+judged.
+
+**Predictions.** (1) "Both" beats the base in 2016-26, where it was
+fitted, by two points or more. (2) On 1996-2006 it beats the base by
+less than 1.5 points: it does not hold up by the line. (3) Half one
+deepens the thirty-year drawdown by more than five points (it holds
+through 2000-02 and 2008). (4) Half two adds more than half one. (5)
+The MACD proviso changes the result by less than half a point a year.
+(6) "Both" still trails SPY in 2016-26, by less than the base does.
+
+    python lab/pass57_way_back_book.py          # full run
+    python lab/pass57_way_back_book.py smoke    # plumbing: 300 names
