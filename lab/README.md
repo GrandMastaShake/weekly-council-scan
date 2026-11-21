@@ -6797,3 +6797,28 @@ more than 20% under the 52-week high, off the screen.
 
     python lab/pass55_best_movers.py          # full run
     python lab/pass55_best_movers.py smoke    # plumbing: 300 names
+
+## Pass 55 amendment -- the $3 price floor is wrong on adjusted prices (2026-11-21, after the first run, before the second)
+
+The first run's list of the decade's best movers had no NVDA. The cause
+is a fault that has been in every pass since Pass 43: "tradeable" asks
+for a price of $3 or more, and the bars are adjusted for later splits,
+so a stock that went on to split many times shows an old price under $3
+however large and liquid it was. In November 2016 that removed 9 liquid
+names, among them NVDA (adjusted $2.16, about $1.9 billion traded a
+week, 75 times its price ten years on) and SMCI. In November 2006 it
+removed 22, among them BKNG, NFLX, AMZN, AAPL, MNST, ORLY, CMG and NVDA.
+In July 1996, 51, among them AAPL, QCOM, SBUX, GILD and BBY.
+
+**What it means for earlier passes.** The floor used knowledge of the
+future to remove exactly the names that later did best, from the books,
+the pools and the random books alike, until their adjusted price
+crossed $3. Comparisons between a book and its pool or its random books
+stand, since all three lost the same names. Comparisons with SPY were
+tilted *against* the books by it, the opposite direction to survivor
+bias, by an amount not measured. The dollar-volume floor is unaffected
+by splits and is enough on its own.
+
+**The amendment.** Pass 55 is run a second time with no price floor
+(`nofloor`, written to `pass55_best_movers_nofloor.json`); both runs are
+reported. Any later channel pass should drop the price floor.

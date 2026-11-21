@@ -7,6 +7,7 @@ Registered in lab/README.md (Pass 55) before any run.
 
     python lab/pass55_best_movers.py          # full run
     python lab/pass55_best_movers.py smoke    # plumbing: 300 names
+    python lab/pass55_best_movers.py nofloor  # the amendment: no $3 floor on adjusted prices
 """
 from __future__ import annotations
 
@@ -37,6 +38,9 @@ TIER_NAMES = [t[0] for t in p43.TIERS]
 
 def main(argv):
     smoke = len(argv) > 1 and argv[1] == "smoke"
+    nofloor = "nofloor" in argv            # amendment of 2026-11-21: no $3 floor on adjusted prices
+    price_min = 0.0 if nofloor else p43.PRICE_MIN
+    out_path = OUT.with_name("pass55_best_movers_nofloor.json") if nofloor else OUT
     import pandas as pd
     uni = {r["ticker"]: r for r in p43.read_universe(p43.universe_file())}
     with open(p53.BARS, "rb") as fh:
@@ -74,7 +78,7 @@ def main(argv):
     with np.errstate(invalid="ignore", divide="ignore"):
         swings_off = (lC - np.log(hi52)) / swing
         off_high = Cw / hi52 - 1.0
-    liquid = (Cw >= p43.PRICE_MIN) & (np.nan_to_num(med_dv) >= p43.DV_MIN)
+    liquid = (Cw >= price_min) & (np.nan_to_num(med_dv) >= p43.DV_MIN)
     tradeable = liquid & (np.nan_to_num(swing) >= p48.SWING_MIN)
     cap_now = np.array([float(uni[t]["cap_m"]) for t in names])
     # the list is two sources with two sets of sector names: one name each
@@ -282,10 +286,10 @@ def main(argv):
     print(f"  by tier {b['by_tier']}\n  by sector {b['by_sector']}")
     print("  top 30: " + "; ".join(f"{x['ticker']} x{x['multiple']:.0f} from {x['from'][:7]} ({P(x['under_high_at_start'])} off high, screen wk {x['first_screen_week_in_run']})" for x in b["rows"][:30]))
     if not smoke:
-        with open(OUT, "w", encoding="utf-8", newline="\n") as fh:
+        with open(out_path, "w", encoding="utf-8", newline="\n") as fh:
             json.dump(out, fh, indent=1)
             fh.write("\n")
-        print(f"wrote {OUT.name}")
+        print(f"wrote {out_path.name}")
 
 
 if __name__ == "__main__":
