@@ -1,0 +1,194 @@
+{
+ "generated": "2026-11-13",
+ "weeks": 1068,
+ "names": 503,
+ "episodes": {
+  "stocks": 7591,
+  "stock_breaks": 7355,
+  "fund_breaks": 238,
+  "spy_breaks": 29,
+  "spy_break_weeks": [
+   "2010-05-07",
+   "2010-06-04",
+   "2010-07-02",
+   "2011-08-12",
+   "2014-10-10",
+   "2014-10-17",
+   "2015-08-21",
+   "2018-10-26",
+   "2020-02-28",
+   "2020-03-13",
+   "2020-10-30",
+   "2021-01-29",
+   "2021-02-26",
+   "2021-03-19",
+   "2021-05-21",
+   "2021-06-18",
+   "2021-07-16",
+   "2021-08-13",
+   "2021-09-10",
+   "2021-09-17",
+   "2021-09-24",
+   "2021-11-26",
+   "2021-12-03",
+   "2022-01-07",
+   "2022-01-21",
+   "2022-02-11",
+   "2022-03-04",
+   "2023-10-20",
+   "2025-04-04"
+  ]
+ },
+ "A": {
+  "sector": {
+   "stock_breaks": 5474,
+   "before": 0.3379612714651078,
+   "same": 0.16660577274388016,
+   "after": 0.35385458531238584,
+   "none": 0.5259408111070515,
+   "base_before": 0.187682853680332,
+   "base_same": 0.026539031227430194,
+   "base_after": 0.20204184059443514,
+   "other_was_inside_its_channel_the_week_before": 0.6198392400438436,
+   "pairs_within_26w": 3093,
+   "median_gap_weeks": 0.0,
+   "share_other_first": 0.31522793404461685,
+   "share_same_week": 0.2948593598448109,
+   "share_stock_first": 0.38991270611057227
+  },
+  "market": {
+   "stock_breaks": 5474,
+   "before": 0.4145049324077457,
+   "same": 0.20076726342711,
+   "after": 0.4473876507124589,
+   "none": 0.4258312020460358,
+   "base_before": 0.2336977145585193,
+   "base_same": 0.03624022230111028,
+   "base_after": 0.24846066274130565,
+   "other_was_inside_its_channel_the_week_before": 0.6655096821337231,
+   "pairs_within_26w": 3835,
+   "median_gap_weeks": 0.0,
+   "share_other_first": 0.3280312907431551,
+   "share_same_week": 0.2865710560625815,
+   "share_stock_first": 0.3853976531942634
+  }
+ },
+ "B": {
+  "sector_break_events": 223,
+  "thirds": {
+   "weak": {
+    "n": 1605,
+    "unbroken_13w_later": 0.719626168224299,
+    "return_13w": 0.0430868244068751
+   },
+   "middle": {
+    "n": 1792,
+    "unbroken_13w_later": 0.5965401785714286,
+    "return_13w": 0.03329861835055677
+   },
+   "strong": {
+    "n": 1605,
+    "unbroken_13w_later": 0.609968847352025,
+    "return_13w": 0.03903986418380624
+   }
+  },
+  "strong_minus_weak_unbroken": -0.10408273303253104,
+  "strong_minus_weak_unbroken_t": -3.9216111606546304,
+  "strong_minus_weak_return": 0.006286133404880503,
+  "strong_minus_weak_return_t": 0.9063013939285943
+ },
+ "C": {
+  "against (both low or none)": {
+   "name_weeks": 37769,
+   "weeks_present": 758,
+   "broken_within_13w": 0.36776793794789414,
+   "return_13w_over_list": 0.003473472911504843
+  },
+  "with (both middle or top)": {
+   "name_weeks": 9889,
+   "weeks_present": 243,
+   "broken_within_13w": 0.3128625169282699,
+   "return_13w_over_list": 0.0015108732424664558
+  },
+  "sector low, market not": {
+   "name_weeks": 10121,
+   "weeks_present": 245,
+   "broken_within_13w": 0.3167363245437575,
+   "return_13w_over_list": 0.00878433978492758
+  },
+  "market low, sector not": {
+   "name_weeks": 12255,
+   "weeks_present": 541,
+   "broken_within_13w": 0.3095935847628036,
+   "return_13w_over_list": 0.01724333003244775
+  },
+  "sector: none": {
+   "name_weeks": 23994,
+   "weeks_present": 952,
+   "broken_within_13w": 0.3135610461912904,
+   "return_13w_over_list": -0.0010116963850224793
+  },
+  "sector: bottom third": {
+   "name_weeks": 23896,
+   "weeks_present": 653,
+   "broken_within_13w": 0.44593377094212155,
+   "return_13w_over_list": 0.016781489556189733
+  },
+  "sector: middle": {
+   "name_weeks": 13442,
+   "weeks_present": 667,
+   "broken_within_13w": 0.3272299976173243,
+   "return_13w_over_list": 0.013392398010336298
+  },
+  "sector: top third": {
+   "name_weeks": 8702,
+   "weeks_present": 509,
+   "broken_within_13w": 0.30034906192923627,
+   "return_13w_over_list": -0.002353585232610742
+  },
+  "market: none": {
+   "name_weeks": 26718,
+   "weeks_present": 561,
+   "broken_within_13w": 0.3202956350382685,
+   "return_13w_over_list": 0.0031409077472400347
+  },
+  "market: bottom third": {
+   "name_weeks": 23306,
+   "weeks_present": 197,
+   "broken_within_13w": 0.48609518348316616,
+   "return_13w_over_list": -0.00015493454577733052
+  },
+  "market: middle": {
+   "name_weeks": 10487,
+   "weeks_present": 138,
+   "broken_within_13w": 0.37164524748248895,
+   "return_13w_over_list": 0.004094251577240013
+  },
+  "market: top third": {
+   "name_weeks": 9523,
+   "weeks_present": 107,
+   "broken_within_13w": 0.23955485383450137,
+   "return_13w_over_list": 0.006076516595481547
+  },
+  "all candidates": {
+   "name_weeks": 70034,
+   "weeks_present": 1003,
+   "broken_within_13w": 0.351312079676498,
+   "return_13w_over_list": 0.0029379074118237006
+  },
+  "against_minus_with": {
+   "note": "unpaired: the two groups never share a week",
+   "broken": 0.054905421019624256,
+   "broken_t": 1.3869657519928904,
+   "return": 0.001962599669038386,
+   "return_t": 0.2653641930850302
+  },
+  "sector_bottom_minus_top_same_week": {
+   "weeks_with_both": 368,
+   "broken": 0.09000110243266116,
+   "broken_t": 3.762630140317918,
+   "return": 0.022336655430571912,
+   "return_t": 1.5546000859520999
+  }
+ }
+}

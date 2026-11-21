@@ -4339,3 +4339,938 @@ five); held on the size. (3) Held: nothing here shows better returns.
    other side. Not tested here.
 4. Not covered, as registered: a deal younger than eight weeks, stock
    deals, halts.
+
+## Pass 38 -- the chart stack: market, sector and stock channels, nothing else (registered 2026-11-20 before any run)
+
+The owner's idea, 2026-11-20, in his words: plot a channel up and "it is
+really easy to pick what sectors are worth investing in", and when they
+break it, avoid them until the pattern shows again; "same with stocks";
+read "the general market trend, sector trend and then stock trend" and
+ignore the rest as noise, "as long as the company is reasonably stable".
+This pass builds exactly that as a mechanical book and asks whether it
+beats luck. No LLM, no wiki, no valuation, no earnings data. Lab only:
+nothing in production changes.
+
+**The channel (fixed, and not new).** Marky's `channel_facts` in
+`scan_pipeline/engines/marky.py`, called as it stands: a least-squares line
+through the last 26 weekly log closes, the residuals' standard deviation as
+its width. A chart is *in a rising channel* when the line slopes up, the
+40-week average is higher than it was ten weeks earlier, and the latest
+close is no more than 2.5 widths below the line. It *breaks* when any of
+the three fails. The same reading is applied to SPY, to the eleven sector
+funds and to every stock. Needs 40 weekly closes.
+
+**The book (fixed).** Decided on each Friday's close, traded at the next
+Monday's open, 0.10% a side.
+- Ten slots of 10% each, at most three names in one sector; an empty slot
+  is cash and cash earns zero.
+- *Entry:* a stock in a rising channel, at or below its centre line (the
+  pullback), ranked by the production channel score without the wiki
+  adjustment (position 50, slope 20, MACD 30).
+- *Exit:* the stock's channel breaks. It is held otherwise, for as long as
+  that takes. A sold name can come back when it qualifies again.
+- *Sector layer:* the stock's sector fund must be in a rising channel to
+  enter; when the fund breaks, the sector's names are sold.
+- *Market layer:* SPY must be in a rising channel to enter; when it
+  breaks, the whole book goes to cash.
+- *Reasonably stable:* the frozen S&P 500 list (a name counts from the date
+  it joined the index), and not pinned by the Pass 37 screen.
+
+**Arms.** The primary arm is **full** (stock + sector + market, break at
+2.5). The rest are there to say which part does the work:
+
+| Arm | What it is |
+|---|---|
+| SPY | bought and held |
+| SPY gated | SPY while its own channel is rising, cash otherwise |
+| list | every eligible name, equal weight |
+| stock | stock channel only |
+| stock+sector | the sector layer added |
+| **full** | the market layer added |
+| full, 2.0 / full, 3.0 | the break line moved |
+| full, beta | the break line at 2.5 times the stock's beta (52 weekly returns against SPY, held between 0.75 and 1.5): the owner's point that a jumpier stock needs more room |
+| full, no pullback | enters anywhere inside the channel, ranked by slope over width (the cleanest channel first) |
+
+On the beta arm, said before the run: the width is already each stock's own
+noise around its own line, so 2.5 widths is already wider for a jumpier
+stock. Beta adds its sensitivity to the market on top.
+
+**Data.** The frozen S&P 500 list of 2026-09-22 and SPY, daily adjusted
+bars from 2006-06, weeks from 2007-03 (the first with 40 weekly closes) to
+2026-11-13. Sector funds XLB XLE XLF XLI XLK XLP XLU XLV XLY from the
+start; Real Estate is read from XLF until XLRE has 40 weeks (it was inside
+XLF until 2016) and Communication Services from XLK until XLC does.
+
+**Basis, and where it departs from the lab's.** A held name is marked
+Friday close to Friday close, because this book holds over weekends; an
+entry earns Monday open to Friday close and an exit earns Friday close to
+Monday open. Every held name is counted at 10% each week (the drift
+between rebalances is ignored).
+
+**The control that matters.** The list is today's index members, so it is
+full of companies that went on to do well: any picker drawn from it looks
+good against SPY, and none of these numbers is a return anyone could have
+had. So each arm is measured against **random books at the same
+exposure**: every week, 200 draws of as many names as the arm held, from
+the names eligible that week, 10% each, no costs. The arm's place among
+those 200 is the result. SPY and the list are shown for scale.
+
+**Verdict lines (fixed).**
+- *Beats luck:* the full arm's mean weekly return is at or above the 95th
+  percentile of its random books over the whole period, and at or above
+  the 75th in each half (2007-2016, 2017-2026).
+- *Better ride:* its Sharpe ratio (weekly, cash at zero) is above SPY's
+  and its largest drawdown is smaller.
+- *Each layer earns its place:* Sharpe rises from stock to stock+sector to
+  full.
+Seven strategy arms are run; only the full arm is scored against the
+lines, and the others are reported as sensitivity, not as second chances.
+
+**Predictions.** (1) The full arm's largest drawdown is under 60% of
+SPY's. (2) It does **not** beat luck: its place among random books lands
+between the 40th and 80th percentile, and its compound return is below the
+list's. (3) The market layer does most of the work: it raises Sharpe more
+than the sector layer, which moves it by less than 0.05. (4) The beta arm
+lands within 0.05 Sharpe of the full arm. (5) "SPY gated" has a smaller
+drawdown than SPY and a lower compound return.
+
+**Not covered.** Earnings dates (no history of them back to 2007), taxes,
+names that left the index, intraday stops, and the eye: a person drawing a
+channel picks its start and its touches, and this fits one fixed window.
+If the rule fails, that is the first thing to vary, in a new pass.
+
+    python lab/pass38_chart_stack.py          # every arm, 2007 on
+    python lab/pass38_chart_stack.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 38 results -- the stack fails every line: it picks worse than luck, and only the market layer does anything
+
+Run 2026-11-20, `lab/results/pass38_chart_stack.json`. 1,028 weeks,
+2007-03-09 to 2026-11-13, 503 names.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold |
+|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.67 | -54.6% | 100% | | | | |
+| SPY gated | 5.8% | 0.57 | -22.1% | 68% | | | | |
+| list | 13.4% | 0.74 | -52.2% | 100% | | | | |
+| stock | 6.2% | 0.44 | -57.8% | 97% | 0th | 0th | 13th | 9 wk |
+| stock+sector | 3.9% | 0.33 | -30.6% | 84% | 0th | 8th | 0th | 6 wk |
+| **full** | **5.5%** | **0.48** | **-21.4%** | 68% | **9th** | 67th | 2nd | 7 wk |
+| full, 2.0 | 4.0% | 0.37 | -25.6% | 68% | 0th | 30th | 0th | 5 wk |
+| full, 3.0 | 6.5% | 0.56 | -22.2% | 68% | 30th | 78th | 14th | 7 wk |
+| full, beta | 4.6% | 0.40 | -24.3% | 68% | 3rd | 29th | 2nd | 6 wk |
+| full, no pullback | 5.9% | 0.48 | -25.3% | 68% | 20th | 30th | 23rd | 7 wk |
+
+**Against the lines.**
+- *Beats luck:* **no.** The full arm earned 0.119% a week; random books
+  holding the same number of names earned 0.150%. It sits at the 9th
+  percentile overall and the 2nd since 2017.
+- *Better ride:* **no.** The drawdown is far smaller (-21.4% against
+  -54.6%) but the Sharpe ratio is lower than SPY's (0.48 against 0.67).
+- *Each layer earns its place:* **no.** Sharpe goes 0.44, 0.33, 0.48: the
+  sector layer makes it worse and the market layer rescues it.
+
+**What each layer did.**
+1. *Stock channels pick worse than chance.* Fully invested, the stock arm
+   compounds 6.2% against the list's 13.4%, and no random book in 200 did
+   as badly. Costs are about 0.6% a year of that. The rest is the rule
+   itself: it sells a name after it has fallen through its channel, and in
+   this list fallen names came back.
+2. *The sector layer subtracts.* It sells whole sectors after they have
+   fallen and waits about half a year of evidence before going back.
+3. *The market layer is the only one that works, and it works as a brake,
+   not an engine.* The full arm sat wholly in cash in 331 of 1,028 weeks.
+   It lost 0.4% in 2008 against SPY's 39.4%. It also made 5.6% in 2019
+   against 32.8% and 3.1% in 2023 against 26.2%: the channel needs months
+   of recovery before it calls the trend up again, and the recovery is
+   where the year's return is. Holding SPY under the same gate does the
+   same thing more cheaply (5.8% a year, -22.1%).
+4. *More room is better; beta is not the way to give it.* The break at 3.0
+   beats 2.5 beats 2.0 on every measure, and median holds are five to
+   seven weeks, so the rule is being shaken out constantly. Scaling the
+   line by beta did worse than leaving it alone.
+
+**Scored against the predictions.** (1) Held: the drawdown is 39% of
+SPY's. (2) Half held: it does not beat luck and compounds below the list,
+but I predicted the 40th to 80th percentile and it landed at the 9th. I
+expected noise and got a rule that is reliably wrong. (3) Half held: the
+market layer does the work (+0.15 Sharpe), but the sector layer did not
+move it by under 0.05, it cost 0.11. (4) Missed: beta is 0.08 below the
+full arm. (5) Held.
+
+**The caution that cuts in the rule's favour.** The list is the index's
+members today. A stock that broke its channel and never came back is not
+in it, so every breakdown in this data was followed by a survivor's
+recovery. That biases the test against any rule that sells breakdowns, by
+an amount this pass cannot measure. It does not explain the failure since
+2017 in names that were already members, and it does not touch the SPY
+gated row, which has no stock selection in it.
+
+**What it means.**
+1. Do not put this rule in front of the Council. As written it would have
+   taken about a third of a point a year less than throwing darts at the
+   same exposure, for a smoother ride that SPY-and-cash delivers alone.
+2. Marky's `channel` mode in Council v2 is this same reading on a one-week
+   hold. This pass does not test that hold, but it is no support for it.
+3. The owner's eye and this formula are not the same thing. The formula
+   fits one fixed 26-week window and waits for a 40-week average; a person
+   drawing a channel chooses where it starts and what counts as a touch,
+   and sees it after the fact. Whether a rule that draws channels the way
+   he does can be written down, and whether it then works on data it has
+   not seen, is a separate pass. The honest way to find out is forward:
+   he marks charts on a date, the marks are logged, and they are scored
+   later.
+4. The one transferable piece is the market brake, and its cost is
+   stated above: it halves the drawdown and roughly halves the return.
+
+## Pass 39 -- the straight line: trade inside the channel, buy the bottom, sell the top (registered 2026-11-20 before any run)
+
+The owner's answer to Pass 38, 2026-11-20, in his words: "maybe the width
+tightens or expands for the stock depending on the trend of the sector and
+then the trend of the general market"; trend strength matters "over 5 hr,
+1 day, 1 week, 1 month, 1 year", and "a nice linear bottom left corner to
+top right corner is the ideal graph for any time frame"; "nearing the
+bottom of the channel presents buying opportunity but risk", "nearing the
+top of the channel presents selling opportunities". This pass encodes
+those three things. Lab only.
+
+**How it differs from Pass 38.** That book bought a pullback and held until
+the channel broke, with the sector and the market as on/off gates. This one
+trades *inside* the channel: in at the bottom, out at the top. The sector
+and the market no longer switch the book off; they set how much room a
+stock gets. And a name must be a straight line on several time frames, not
+only rising on one.
+
+**Straightness (fixed).** On daily closes, a least-squares line through the
+log closes of the last 21, 63, 126 and 252 sessions (a month, a quarter,
+half a year, a year). Each frame gives a slope and an R-squared: 1.0 is a
+ruler from bottom left to top right. A name is *lined up* when all four
+slopes are positive; its straightness is the mean of the four R-squareds.
+The lab holds daily bars only, so the 5-hour and intraday frames he named
+are not tested.
+
+**The channel (fixed).** The 126-session line; width is the residuals'
+standard deviation; z is how many widths the latest close sits above or
+below the line.
+
+**The book (fixed).** Decided on each Friday's close, traded at Monday's
+open, 0.10% a side. Ten slots of 10%, at most three names a sector, cash
+earns zero. Frozen S&P 500 list, a name counted from the date it joined,
+not pinned (Pass 37).
+- *Buy:* lined up, and at least one width below its line (z <= -1), but
+  not through the break line. Straightest first.
+- *Sell at the top:* z >= +1.
+- *Sell on a break:* z below the break line, or the 126-session slope no
+  longer positive.
+- *The break line moves with the backdrop:* 2.0 widths, plus 0.5 when the
+  stock's sector fund is trending up, plus 0.5 when SPY is (trending up:
+  its 126- and 252-session slopes both positive). So 3.0 widths of room in
+  a strong sector in a strong market, 2.0 in neither. This direction is my
+  reading of "tightens or expands"; the opposite reading is an arm.
+
+**Arms.** The primary arm is **line+width**. Six are run; only the primary
+is scored against the lines.
+
+| Arm | What it is |
+|---|---|
+| line | break fixed at 2.5, no backdrop |
+| **line+width** | the break line moves with sector and market, as above |
+| reversed | the opposite reading: 3.0 widths, minus 0.5 for each of sector and market trending up |
+| no top | the primary, without the sale at the top (held until a break) |
+| any channel | the primary, without the lined-up rule (126-session slope positive is enough) |
+| council names | the primary, drawn only from the Council's live universe where it overlaps the list |
+
+**Data, basis, control.** As Pass 38: weeks from the first with 252
+sessions of history to 2026-11-13; held names marked Friday close to
+Friday close; each arm placed among 200 random books a week holding the
+same number of names from the same pool. SPY and the list for scale.
+
+**Verdict lines (fixed, the same as Pass 38).**
+- *Beats luck:* mean weekly return at or above the 95th percentile of its
+  random books overall, and at or above the 75th in each half (to 2016,
+  from 2017).
+- *Better ride:* Sharpe above SPY's and a smaller largest drawdown.
+
+**This is the second try at one idea, and it counts as that.** Pass 38
+failed. Every revision after a failure is another draw, and enough draws
+will pass a 95th-percentile line by chance. So a pass here earns a place
+on the forward page, scored on weeks nobody has seen, and nothing more. A
+fail is not softened by pointing at whichever arm did best.
+
+**Predictions.** (1) The primary does better against luck than Pass 38's
+9th percentile, because selling the top and buying the bottom harvests
+the short-term reversal that large caps do show: between the 50th and
+90th percentile overall. (2) It still fails the beats-luck line. (3) "No
+top" places below the primary. (4) The moving break line lands within
+0.05 Sharpe of the fixed one, and "reversed" within 0.05 of both: the
+backdrop will not matter much through the width. (5) "Any channel" places
+within 15 percentile points of the primary: straightness adds little.
+(6) Median hold under six weeks.
+
+    python lab/pass39_straight_line.py          # every arm
+    python lab/pass39_straight_line.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 39 results -- worse than Pass 38: every arm sits in the bottom two percent of random books
+
+Run 2026-11-20, `lab/results/pass39_straight_line.json`. 1,015 weeks,
+2007-06-08 to 2026-11-13, 503 names (258 of them in the Council's
+universe).
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Sold at the top | Sold on a break |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.5% | 0.64 | -54.6% | 100% | | | | | | |
+| list | 13.0% | 0.72 | -52.3% | 100% | | | | | | |
+| line | 5.7% | 0.43 | -39.7% | 83% | 1st | 7th | 2nd | 5 wk | 438 | 816 |
+| **line+width** | **3.6%** | **0.30** | **-50.9%** | 83% | **0th** | 2nd | 0th | 6 wk | 422 | 640 |
+| reversed | 6.0% | 0.45 | -36.1% | 82% | 2nd | 2nd | 22nd | 4 wk | 458 | 1,166 |
+| no top | 5.3% | 0.40 | -37.3% | 89% | 0th | 8th | 2nd | 11 wk | 0 | 523 |
+| any channel | 8.3% | 0.51 | -58.6% | 98% | 2nd | 12th | 6th | 6 wk | 448 | 840 |
+| council names | 5.7% | 0.45 | -33.4% | 77% | 2nd | 0th | 12th | 7 wk | 411 | 565 |
+
+**Against the lines.** *Beats luck:* **no**, and not close: no random book
+in 200 did as badly as the primary. *Better ride:* **no**: Sharpe 0.30
+against 0.64, and a drawdown (-50.9%) nearly as deep as SPY's.
+
+**What happened.**
+1. *The book sells its winners and keeps its losers.* A name bought at the
+   bottom of its channel is sold a width above the line, which caps the
+   gain at about two widths. A name that keeps falling is held until the
+   break line, two to three widths down, and the primary gives the most
+   room exactly when the backdrop looked strongest. Of 1,062 closed
+   positions, 422 left at the top and 640 on a break.
+2. *More room made it worse here, the opposite of Pass 38.* The moving
+   break line (0.30 Sharpe) lost to the fixed 2.5 (0.43) and to the
+   reversed reading (0.45). With the top sale capping gains, room only
+   lets losses run.
+3. *Straightness did not select.* Dropping the lined-up rule ("any
+   channel") gave the best compound return of the six, at nearly full
+   exposure and the deepest drawdown.
+4. *No brake.* With the market only adjusting the width, the book lost
+   29.6% in 2008 and 24.6% in 2020, a year SPY made 18.0%.
+
+**Scored against the predictions.** (1) Missed badly: I predicted the
+50th to 90th percentile and got the 0th. I thought buying the bottom and
+selling the top would harvest short-term reversal; the break exits gave
+back more than that. (2) Held. (3) Not shown: "no top" and the primary are
+both at the bottom, and "no top" has the better Sharpe. (4) Missed: the
+moving line is 0.13 Sharpe below the fixed one. (5) Held: "any channel" is
+within two points of the primary. (6) Missed by a hair: median hold is
+six weeks, not under six.
+
+**Two passes, thirteen arms, one pattern.** Every channel rule tried here
+places in the bottom tenth of random books in this data, most at the very
+bottom. Being that reliably wrong is information, and it has two readings
+that this data cannot separate:
+- The survivor list. Every name that broke down in this data later
+  recovered, because the ones that did not are gone from the index. A
+  rule that sells breakdowns is penalised by construction.
+- Large caps mean-revert at these horizons. A stock that has fallen
+  through its channel is, on average, nearer a bounce than a collapse,
+  and a stock that looks like a ruler has already been bid.
+Either way the tempting conclusion, "do the opposite", is not supported:
+buying breakdowns in a list of survivors is the same bias with the sign
+flipped.
+
+**What it means.**
+1. Neither pass supports a channel book, and Pass 39's revisions did not
+   rescue Pass 38. As registered, nothing here goes to the forward page.
+2. Further revisions on this data are not worth running. The list cannot
+   tell a bad rule from a biased test, and each new variant is another
+   draw. The two things that could settle it are a point-in-time index
+   membership file (names that left, with their prices) and a forward
+   record.
+3. A forward record costs nothing: the owner marks charts on a date, the
+   marks are logged before the week trades, and they are scored against
+   random books from the same universe. That tests his eye, which no
+   formula here has matched, and it cannot be flattered by hindsight.
+
+## Pass 40 -- hold until it breaks: a wider channel, drawn once (registered 2026-11-20 before any run)
+
+The owner on the Pass 39 results, 2026-11-20: "the width of the channel
+probably needs to be larger than you are thinking. This is more a hold
+until it breaks strategy." Pass 38 already leaned that way (the break at
+3.0 beat 2.5 beat 2.0). Lab only.
+
+**Two changes from Pass 38, nothing else.**
+1. *Wider.* Break lines at 3, 4, 5 and 6 widths.
+2. *Drawn once.* Passes 38 and 39 refit the channel every week, so the
+   line follows the stock down and a slow fade never "breaks" it, while
+   the slope and 40-week tests sell on their own schedule. A person draws
+   the channel once and watches for the break. The **anchored** arms do
+   that: the 26-week line and its width are fixed on the day of entry and
+   extended forward at the same slope; the name is sold on the first
+   Friday close below that line by more than the break width, and for no
+   other reason.
+
+Entry is Pass 38's, unchanged: a rising channel by `channel_facts`, at or
+below the centre line, ranked by the channel score; ten slots of 10%,
+three a sector, the frozen S&P 500 list, not pinned, Friday decision,
+Monday open, 0.10% a side. No sector layer (it subtracted in Pass 38).
+
+| Arm | Exit |
+|---|---|
+| refit 3 / refit 4 / refit 5 | Pass 38's rule (line refit weekly; also sold when the slope or the 40-week average turns) with a wider break |
+| anchored 2.5 | the entry-day line, 2.5 widths |
+| **anchored 4** | the entry-day line, 4 widths -- the primary |
+| anchored 6 | the entry-day line, 6 widths |
+| anchored 4, market brake | the primary, and the whole book to cash while SPY's channel is broken (Pass 38's market layer) |
+
+**Control and verdict lines.** As Passes 38 and 39: place among 200 random
+books a week at the same exposure; beats luck at the 95th percentile
+overall and the 75th in each half; better ride on Sharpe and drawdown
+against SPY. Only **anchored 4** is scored.
+
+**Read this before the result.** This is the third draw at one idea. And
+a wider break has a floor it cannot fall through: as the width grows the
+book stops selling and becomes "buy ten survivors and hold them", which
+sits near the middle of random books by construction. So rising from the
+bottom toward the 50th percentile as the width grows is the rule doing
+*less*, not the rule working. Only a place well above the middle says the
+channel picks anything.
+
+**Predictions.** (1) The place among random books rises with the width in
+both families. (2) Anchored 4 lands between the 20th and 60th percentile
+and fails the beats-luck line. (3) Its median hold is over 20 weeks. (4)
+The market brake cuts the largest drawdown by more than a third and
+lowers the compound return.
+
+    python lab/pass40_hold_break.py          # every arm
+    python lab/pass40_hold_break.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 40 results -- wider did not fix it: the primary sits below every random book again
+
+Run 2026-11-20, `lab/results/pass40_hold_break.json`. 1,028 weeks,
+2007-03-09 to 2026-11-13, 503 names.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Longest hold |
+|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.67 | -54.6% | 100% | | | | | |
+| list | 13.4% | 0.74 | -52.2% | 100% | | | | | |
+| refit 3 | 7.0% | 0.48 | -53.4% | 97% | 0th | 0th | 11th | 9 wk | 159 wk |
+| refit 4 | 8.4% | 0.54 | -46.7% | 97% | 2nd | 0th | 28th | 10 wk | 156 wk |
+| refit 5 | 8.4% | 0.54 | -46.7% | 97% | 2nd | 0th | 28th | 10 wk | 156 wk |
+| anchored 2.5 | 6.3% | 0.45 | -59.7% | 98% | 0th | 0th | 6th | 4 wk | 402 wk |
+| **anchored 4** | **6.9%** | **0.49** | **-62.0%** | 98% | **0th** | 0th | 26th | 12 wk | 417 wk |
+| anchored 6 | 5.8% | 0.41 | -56.0% | 98% | 0th | 0th | 2nd | 23 wk | 507 wk |
+| anchored 4, market brake | 5.3% | 0.48 | -22.2% | 68% | 10th | 19th | 16th | 9 wk | 67 wk |
+
+**Against the lines.** *Beats luck:* **no.** Anchored 4 earned 0.154% a
+week; random books of ten earned 0.257%. *Better ride:* **no**: Sharpe
+0.49 against 0.67 and a deeper drawdown than SPY (-62.0%).
+
+**What happened.**
+1. *Wider helped the refit rule a little and the anchored rule not at
+   all.* Refit goes 7.0% to 8.4% from 3 to 4 widths and then stops: 4 and
+   5 are the same book to the trade, because past 4 widths the break line
+   is never reached and the slope and 40-week tests do all the selling.
+2. *A channel drawn once breaks fast or never.* A steep entry-day line is
+   broken within weeks because no stock keeps that slope: half of anchored
+   4's closed positions lasted twelve weeks or less. A shallow, wide one is
+   never broken: the open book holds SJM, CLX and DGX from 2008 and 2009,
+   over 900 weeks each. So the ten slots silt up with whichever quiet
+   names happened to be bought early, and the rule stops choosing.
+3. *Nothing protected it in 2008.* Fully invested with four widths of
+   room, anchored 4 lost 52.9% that year against SPY's 39.4%.
+4. *The market brake did what it did in Pass 38*: drawdown -22.2%, at the
+   cost of return, and still the 10th percentile of its random books.
+
+**Scored against the predictions.** (1) Half: the place rises with width
+for refit (0th, 2nd, 2nd) and not for anchored (0th throughout). (2)
+Missed: I predicted the 20th to 60th percentile; it is the 0th. I expected
+a wide rule to drift up toward "hold ten survivors"; the ten it got stuck
+with were worse than a random ten. (3) Missed: the median hold is 12
+weeks, not over 20 (the mean is 20). (4) Held: the brake cut the
+drawdown from -62.0% to -22.2% and the return from 6.9% to 5.3%.
+
+**Three passes, twenty arms.** None reaches the 31st percentile of random
+books over the whole period; eighteen sit at or below the 10th. Tight or
+wide, refit or drawn once, sold at the top or held to the break, with or
+without sector and market layers. The two readings from Pass 39 stand
+(the survivor list; large caps snapping back), and this data cannot
+separate them.
+
+**What it means.** The line for this family on this data is drawn here:
+no more variants. What is left is what the Pass 39 results named: a
+point-in-time membership file, or a forward record of the owner's own
+marks.
+
+## Pass 41 -- the owner's channel: drawn from the swing low along the lows, held until a weekly close breaks it (registered 2026-11-20 before any run)
+
+Passes 38 to 40 closed "this family" and this reopens it, for one reason:
+the owner showed his charts, and they are not what those passes drew. He
+sent UVE and GRDN on weekly bars as the ideal ("weekly charts are the most
+reliable"), and CAT with his own channel drawn on it as a break: anchored
+at the April 2025 low, the lower line run along the lows since, the upper
+line parallel through the highs, about a year and a half long, broken when
+the weekly bars went through the lower line. Against that:
+- I fitted 26 weeks. He reads one to two years. On GRDN the last 26 weeks
+  have a straightness of 0.11 and the two-year view 0.87.
+- I drew a best-fit line with a band of 2.5 times the wobble. He draws
+  support through the lows; on UVE that channel is about twice as wide.
+- I ranked by the deepest pullback. He picks the straightest long line.
+So this pass draws his channel. It is still the fourth draw at the idea
+and is counted as that.
+
+**The channel (fixed).** On weekly bars, at each Friday close:
+- *Anchor:* the lowest weekly low of the last 104 weeks. It must be 26 to
+  100 weeks back, so there is a channel to speak of and it is not the
+  stock's whole history.
+- *Lower line:* from the anchor's low, the steepest straight line (on a
+  log scale) that stays at or under every weekly low since. This is the
+  support line a person draws under the lows.
+- *Upper line:* parallel, through the weekly high furthest above it.
+- *A channel worth owning:* the lower line rises at 10% a year or more,
+  and the weekly closes since the anchor have a straightness (R-squared
+  against their own best-fit line) of 0.80 or more. UVE and GRDN both
+  clear that today.
+
+**The book (fixed).** Decided at Friday's close, traded at Monday's open,
+0.10% a side; ten slots of 10%, three a sector; the frozen S&P 500 list
+from the date a name joined; not pinned (Pass 37); cash earns zero.
+- *Buy:* a name with a channel worth owning, straightest first.
+- *The channel is drawn once.* Its lower line on the day of entry is
+  extended forward at the same slope.
+- *Sell:* the first weekly close below that line. Nothing else sells.
+
+| Arm | What it is |
+|---|---|
+| **owner's channel** | as above -- the primary |
+| lower half | buys only in the lower half of the channel |
+| 3% buffer | sells on a weekly close more than 3% below the line |
+| straighter | straightness of 0.90 or more |
+| market brake | the primary, and the book in cash while SPY's own channel (Pass 38's reading) is broken |
+
+**What it is not.** His examples UVE and GRDN are small caps and this runs
+on the S&P 500, because that is the list the lab holds twenty years of
+prices for. The small and mid cap list has prices from August 2023 only,
+which leaves no room for a two-year channel. A small cap run needs a
+download first and is a separate pass. CAT is in this list.
+
+**Control and verdict lines.** As Passes 38 to 40: place among 200 random
+books a week at the same exposure; beats luck at the 95th percentile
+overall and the 75th in each half; better ride on Sharpe and drawdown
+against SPY. Only the primary is scored.
+
+**Predictions.** (1) This does better against luck than anything in
+Passes 38 to 40, because a long straight rise is momentum with a
+smoothness filter, and that has support in the published record: the
+primary lands between the 30th and 75th percentile. (2) It fails the
+beats-luck line. (3) The lower line is broken sooner than a chart reader
+would expect, because a trend that slows without falling still crosses a
+rising line: median hold under 30 weeks. (4) The 3% buffer and the
+primary land within 0.05 Sharpe of each other. (5) The market brake cuts
+the largest drawdown by more than a third.
+
+    python lab/pass41_owner_channel.py          # every arm
+    python lab/pass41_owner_channel.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 41 results -- the first channel book that is not broken: SPY's return with a shallower fall, and still behind random books
+
+Run 2026-11-20, `lab/results/pass41_owner_channel.json`. 1,041 weeks,
+2006-12-08 to 2026-11-13, 503 names. A name had a channel worth drawing in
+47% of name-weeks; a typical week offered 62 candidates.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Closed at a gain | Mean closed gain |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.8% | 0.66 | -54.6% | 100% | | | | | | |
+| list | 13.3% | 0.74 | -52.2% | 100% | | | | | | |
+| **owner's channel** | **10.5%** | **0.69** | **-37.7%** | 97% | **11th** | 10th | 26th | 10 wk | 42% | +9.9% |
+| lower half | 9.3% | 0.59 | -39.5% | 97% | 3rd | 0th | 45th | 4 wk | 41% | +3.1% |
+| 3% buffer | 11.0% | 0.70 | -40.8% | 98% | 20th | 21st | 31st | 18 wk | 43% | +15.9% |
+| straighter | 10.9% | 0.74 | -32.7% | 96% | 9th | 4th | 32nd | 16 wk | 49% | +11.1% |
+| market brake | 6.8% | 0.57 | -25.6% | 67% | 36th | 15th | 66th | 8 wk | 53% | +3.0% |
+
+**Against the lines.**
+- *Better ride:* **yes, narrowly.** Sharpe 0.69 against SPY's 0.66, and
+  the largest drawdown -37.7% against -54.6%. The first line any channel
+  book here has passed.
+- *Beats luck:* **no.** 0.219% a week against 0.261% for random books of
+  ten from the same list: the 11th percentile, 10th and 26th by half.
+
+**How to hold both.** Against SPY, which is what a person can actually
+buy, this book earned the same return (10.5% against 10.8%; the weekly
+difference has a t of -0.2, nothing) with about two thirds of the worst
+fall. Against ten random names from the list it loses, because the list
+is today's survivors and any ten of them compounded 13% and more. The
+truth about the rule sits between those two and this data cannot place
+it: the first is too kind (the book picks from survivors too), the second
+too harsh (it penalises every sale, since everything sold later
+recovered).
+
+**What changed from Passes 38 to 40.** The owner's drawing, not a tweak:
+a channel one to two years long, from the swing low, with support under
+the lows. Compound return went from 5.5%, 3.6% and 6.9% to 10.5% at the
+same full exposure. The shape of the trades is what a trend rule should
+look like: 42% of closed positions made money, the median one lost 1.8%,
+and the mean one made 9.9%. Many small losses, a few long winners (COR
+held 854 weeks, V 735).
+
+**What the arms say.**
+1. *Buying the lower half of the channel is worse*, as in Pass 38. A name
+   near its support line is one bad week from a sale: median hold four
+   weeks, 62 trades a year.
+2. *A little room helps.* The 3% buffer nearly doubles the median hold
+   and adds half a point a year.
+3. *Straighter is a better ride, not a better return*: Sharpe 0.74 and
+   the shallowest unbraked drawdown (-32.7%).
+4. *The market brake costs more than it saves here*: 6.8% a year for a
+   -25.6% drawdown. The channel's own exits already got the book through
+   2008 at -35.8% against -39.4%, and the brake then sat out recoveries.
+
+**Scored against the predictions.** (1) Missed: I predicted the 30th to
+75th percentile and it is the 11th, and Pass 38's 3.0 arm placed higher
+(30th) on a far lower return. (2) Held. (3) Held: median hold ten weeks.
+(4) Held: the buffer is 0.01 Sharpe from the primary. (5) Missed by a
+hair: the brake cut the drawdown by 32%, not more than a third.
+
+**What it means.**
+1. Three wrong drawings and one right one. The owner's picture was worth
+   encoding properly, and the earlier passes say nothing about it.
+2. It is not a way to beat the S&P 500 on this evidence. It is, at best,
+   the index's return with a shallower fall, measured on a list that
+   flatters it. It does not go to the forward page: it failed the line
+   that page requires.
+3. His examples were small caps and this is not a test of them. That run
+   needs twenty years of prices for the small and mid cap list, and a
+   membership history, or the survivor problem is far worse than here.
+4. The cheap honest next step is unchanged: a forward record. The rule
+   is now mechanical and matches his drawing on CAT (straightness 0.98
+   through the spring of 2026, at the lower line by late August), so the
+   weekly list can be logged before each Monday and scored, on any
+   universe, with no survivor problem at all.
+
+## Pass 42 -- who breaks first: the stock, its sector or the market (registered 2026-11-20 before any run)
+
+The owner's questions on the Pass 41 results, 2026-11-20: "Does the
+individual stock's sector generally break trend first? Assume the strong
+often hang on the longest. If the tides are fighting you with the general
+market and sector near the bottom of the channel you might get swept
+away." Three measurements, no book and no verdict on a strategy. Lab only.
+
+**Channels and breaks (fixed).** Pass 41's drawing on weekly bars, for
+every stock on the frozen S&P 500 list, the eleven sector funds and SPY.
+A *channel episode* opens the first week a series has a channel worth
+owning (lower line rising 10% a year or more, straightness 0.80 or more)
+and none is open; its lower line is fixed that week and extended. The
+episode *breaks* on the first weekly close below the line. A new one can
+open afterwards.
+
+**A. Does the sector break first?** For every stock break: did its sector
+fund break in the 13 weeks before, in the same week, or in the 13 weeks
+after? The same for SPY. Each share is set beside its base rate: the same
+share over all weeks the stock was inside a channel and did not break.
+Also the median gap, in weeks, between a stock's break and the nearest
+fund break within 26 weeks either side.
+
+**B. Do the strong hang on longest?** At every sector fund break, the
+stocks of that sector that are inside a channel, sorted into thirds by
+their 52-week return over the fund's. Per third: the share still unbroken
+13 weeks later, and the 13-week return.
+
+**C. Are you swept away when the tide is against you?** Every name-week
+with a channel worth owning, sorted by where the sector fund and SPY sit
+that week: no rising channel, the bottom third of their channel, the
+middle, the top. *Against* means both sector and market are in "none" or
+"bottom"; *with* means both are in "middle" or "top". Per group: the share
+of stock lines (fixed that week) broken within 13 weeks, and the 13-week
+return over the list's average for the same weeks. Differences are tested
+on weekly means with errors that allow for the overlapping windows.
+
+**Caution carried from the earlier passes.** The list is survivors, so the
+13-week returns after a break or a bad backdrop are flattered: everything
+here came back. The timing in A is much less exposed to that than the
+returns in B and C.
+
+**Predictions.** (A) A sector break in the 13 weeks before is more common
+at a stock's break than its base rate, but still the minority: under 40%
+of stock breaks. Most stock breaks happen with the sector's channel
+intact or absent. The median gap is within two weeks of zero: they break
+together more than one leads. (B) The strongest third survives the next
+13 weeks more often than the weakest, by at least five points. (C) Lines
+drawn against the tide break more often within 13 weeks than lines drawn
+with it, by at least five points; the 13-week return over the list is
+not lower against the tide, because in this list falls are followed by
+bounces.
+
+    python lab/pass42_who_breaks_first.py          # the three measurements
+    python lab/pass42_who_breaks_first.py smoke    # plumbing: 80 names
+
+## Pass 42 results -- they break together, not in order; the strong break sooner, not later; and a low tide does shake you out
+
+Run 2026-11-20, `lab/results/pass42_who_breaks_first.json`. 1,068 weeks to
+2026-11-13, 503 names: 7,355 stock breaks (5,474 while an index member,
+with 13 weeks either side), 238 sector fund breaks, 29 SPY breaks.
+
+**A. Does the sector break first? No. They break together.**
+
+| At a stock's break, the other broke... | Sector fund | Base rate | SPY | Base rate |
+|---|---|---|---|---|
+| in the 13 weeks before | 33.8% | 18.8% | 41.5% | 23.4% |
+| the same week | 16.7% | 2.7% | 20.1% | 3.6% |
+| in the 13 weeks after | 35.4% | 20.2% | 44.7% | 24.8% |
+| not within 13 weeks either side | 52.6% | | 42.6% | |
+
+Breaks cluster: a sector break is nearly twice as likely as usual near a
+stock's break, and six times as likely the same week. But it is as likely
+after as before. Among the 3,093 stock breaks with a sector break within
+26 weeks, the stock went first in 39.0%, the same week in 29.5%, and the
+sector first in 31.5%; the median gap is zero weeks. SPY reads the same
+(38.5%, 28.7%, 32.8%). If anything the stock leads, which is what an
+index made of stocks has to show: the fund breaks when enough of its
+members have. And about half of all stock breaks happen with no sector
+break anywhere near: the stock's own business.
+
+**B. Do the strong hang on longest? No, the reverse.** At 223 sector
+breaks, the stocks of that sector still inside a channel, by their
+52-week return over the fund's:
+
+| Third | Names | Still unbroken 13 weeks later | 13-week return |
+|---|---|---|---|
+| weakest | 1,605 | 72.0% | +4.3% |
+| middle | 1,792 | 59.7% | +3.3% |
+| strongest | 1,605 | 61.0% | +3.9% |
+
+The strongest third broke more often than the weakest, by 10.4 points
+(t -3.9). Their returns over the 13 weeks did not differ (t 0.9). The
+reading: the strongest names have the steepest lines, and a steep line is
+the easiest to cross. They do not fall more; they stop climbing at that
+rate, which under a fixed line is a break.
+
+**C. Does a low tide sweep you out? Yes on breaks, no on returns.** The
+share of stock lines broken within 13 weeks, by where the backdrop sat
+the week the line was drawn:
+
+| Backdrop that week | Sector fund | SPY |
+|---|---|---|
+| top third of its channel | 30.0% | 24.0% |
+| middle | 32.7% | 37.2% |
+| bottom third | 44.6% | 48.6% |
+| no rising channel | 31.4% | 32.0% |
+
+With SPY in the bottom third of its channel a stock's line is twice as
+likely to be broken within a quarter as with SPY in the top third. For
+the sector, measured inside the same weeks, bottom third against top
+third is +9.0 points (t 3.8). The registered "against" group (both low
+or none, 36.8%) against "with" (both middle or top, 31.3%) is +5.5 points
+and not significant (t 1.4), because "no rising channel" behaves like an
+ordinary week and dilutes it: the danger is a channel that exists and is
+being tested, not the absence of one.
+
+Returns do not follow. Names bought with the sector in its bottom third
+made 1.68% over the list in 13 weeks, the best of the four; against-minus-
+with is +0.20% (t 0.3). In this list, being shaken out near a low was
+usually being shaken out before a bounce. The survivor caution applies
+in full to that sentence.
+
+**Scored against the predictions.** (A) Held: before is above its base
+rate, under 40%, and the median gap is zero. (B) Missed, and in the wrong
+direction: I predicted the strongest third would survive more by five
+points; it survived less by ten. (C) Held on the letter (5.5 points, the
+line was five; returns not lower) but the registered grouping is weak
+evidence. The clean result is the bottom-third rows, which I did not
+single out beforehand.
+
+**What it means for the rule.**
+1. The sector is not an early warning. Waiting for it to break tells you
+   nothing your own stock's line has not told you by the same week.
+2. Where the market and sector sit in their own channels is real
+   information about how soon a stock's line will be tested. It argues
+   for *when to draw a new line* (not while the tide is at its lower
+   line), not for when to sell.
+3. A fixed straight line under a steep climber is a hair trigger. That
+   is the same finding as Pass 41's 3% buffer and Pass 40's quick breaks,
+   from a third direction.
+4. Items 2 and 3 are suggestions read off this table after the fact. As
+   rules they are untested, and adding them to Pass 41's book would be a
+   fifth draw.
+
+## Pass 43 -- the owner's channel by size: mega, large, mid, small (registered 2026-11-20 before any run)
+
+The owner, 2026-11-20: "can you check if any particular caps are most
+reliable for the strategy? Mega, mid, small, etc." His own examples (UVE,
+GRDN) are small caps and Passes 38 to 42 ran on the S&P 500 only. This
+pass runs Pass 41's channel and book inside each size tier. Lab only.
+
+**Universe.** Today's full US listing from the Nasdaq screener at $300M
+and up and $3 and up, frozen to `lab/universe_all_<date>.csv` with each
+name's market cap and sector. Weekly bars from Yahoo, 2006-06 on,
+adjusted, cached locally.
+
+**Size, point in time.** A name's size in a past week is today's market
+cap scaled by its adjusted price then over now. That ignores share
+issuance and buybacks and is otherwise known at the time. Each week the
+names with a price are ranked by it and cut into tiers by rank, the way
+the indexes are: **mega** the top 100, **large** the next 400, **mid** the
+next 600, **small** the next 1,000, **smaller** everything below. Rank
+tiers, not dollar lines, so 2008 and 2026 are comparable.
+
+**Tradeable.** A name counts in a week when its adjusted close is $3 or
+more and its median weekly dollar volume over the past year is $5M or
+more. Costs a side: 0.10% mega and large, 0.20% mid, 0.30% small, 0.50%
+smaller. These are guesses and are low for the bottom tiers.
+
+**Per tier, four numbers.**
+1. *How often the picture appears:* the share of name-weeks with a
+   channel worth owning (Pass 41's definition, unchanged).
+2. *How long it lasts:* the share of lines broken within 13 weeks of the
+   week they were drawn.
+3. *Whether it pays:* the 13-week return of channel names over their own
+   tier's average for the same weeks, with errors that allow for the
+   overlap.
+4. *The book:* Pass 41's primary (ten slots, straightest first, the line
+   fixed at entry, sold on the first weekly close below it), choosing
+   only from that tier at entry and keeping a name that later changes
+   tier. Scored against 200 random books a week of the same size drawn
+   from the same tier, and shown beside the tier's equal-weight average.
+   No sector cap (the listing's sectors are coarse) and no index
+   membership rule (there is none for this list).
+Each is reported for the whole period and for 2017 on.
+
+**"Most reliable" means, fixed now:** the tier where the book places
+highest among its own tier's random books in both halves. A tier is only
+called reliable if that place is at or above the 75th percentile in both.
+Five tiers are five chances, so one tier clearing the line is weak
+evidence and is said so.
+
+**The survivor problem is worse here than in any earlier pass, and it is
+not the same in every tier.** Every name is alive and at least $300M
+today. The small tiers of 2010 are therefore made of two kinds of name:
+ones that stayed small, and ones that grew into today's large caps. The
+small companies that failed are absent. That inflates every small-tier
+return and it inflates the random books equally, so the place among
+random books is the only number that means much, and it still carries
+the bias from Pass 41 (everything sold later recovered). 2017 on is
+less exposed than the full period.
+
+**Predictions.** (1) The picture is most common in the mega and large
+tiers and lasts longest there. (2) The 13-week return over the tier's
+average is positive in the three lower tiers and near zero in mega and
+large: momentum is stronger in smaller stocks in the published record.
+(3) The book places higher among its random books in mid, small and
+smaller than in mega and large. (4) No tier clears the 75th percentile in
+both halves.
+
+**Amended 2026-11-20, before any run.** The Nasdaq listing refused the
+request (HTTP 403), so the universe is the lab's two frozen lists instead:
+the small and mid cap list ($300M to $10B, caps of 2026-09-23) and the
+S&P 500 list (caps read from Yahoo on the day). Names above $10B that are
+not in the S&P 500 are therefore absent, which thins the mega and large
+tiers a little. A name's size is scaled from the week its cap is dated.
+Nothing else changes.
+
+    python lab/pass43_channel_by_size.py fetch    # the universe file and the weekly bars -> lab/cache (prices are not committed)
+    python lab/pass43_channel_by_size.py          # the four numbers per tier
+    python lab/pass43_channel_by_size.py smoke    # plumbing: 400 names
+
+## Pass 43 results -- no size tier is reliable by the registered test; large caps come closest and small caps come last
+
+Run 2026-11-20, `lab/results/pass43_channel_by_size.json`. 3,004 names
+with weekly bars, 1,068 weeks to 2026-11-13. The "smaller" tier holds
+almost no tradeable names in this universe (a median of none a week, a
+book averaging three positions) and is left out of the reading below.
+
+**The picture, by tier, whole period.**
+
+| Tier (rank by size that week) | Tradeable names a week | Has a channel worth owning | Line broken within 13 weeks | 13-week return over the tier's average | t |
+|---|---|---|---|---|---|
+| mega (top 100) | 94 | 21.3% | 32.9% | +1.41% | 2.9 |
+| large (next 400) | 385 | 19.2% | 36.0% | +0.80% | 2.4 |
+| mid (next 600) | 552 | 15.5% | 36.2% | +0.62% | 1.9 |
+| small (next 1,000) | 454 | 12.2% | 36.0% | +1.38% | 2.7 |
+
+**The book, by tier.** Place among 200 random books a week from the same
+tier:
+
+| Tier | Book, compound a year | Tier average | Place, whole period | To 2016 | 2017 on | Median hold |
+|---|---|---|---|---|---|---|
+| mega | 7.9% | 8.6% | 45th | 61st | 38th | 8 wk |
+| **large** | **11.2%** | 9.5% | **86th** | 30th | **98th** | 11 wk |
+| mid | 7.3% | 8.6% | 43rd | 14th | 78th | 11 wk |
+| small | 10.3% | 17.7% | 10th | 12th | 24th | 13 wk |
+
+**Against the registered meaning of "most reliable".** No tier is at or
+above the 75th percentile in both halves, so **none is called reliable**.
+Large caps come closest: the only tier whose book beat its own average
+over the whole period, 86th percentile overall and 98th since 2017, but
+30th before 2017. Mid caps show the same shape more weakly (14th, then
+78th). Small caps are last in every column.
+
+**What the tiers say.**
+1. *The picture is more common the bigger the company*: one name-week in
+   five among mega caps, one in eight among small caps. Once drawn, the
+   line is broken at the same rate everywhere, about 36% within a
+   quarter. Size does not make a channel last longer.
+2. *Being in a channel has paid a little in every tier, and only
+   recently.* Channel names beat their own tier's average over the next
+   13 weeks by 0.6% to 1.4%. All of it is from 2017 on (mega +2.26%,
+   large +1.45%, mid +0.99%, small +2.05%); before 2017 it is 0.1% to
+   0.6% and indistinguishable from nothing. That is a decade in which
+   what had been rising kept rising.
+3. *The book does worse than the picture.* Measure 3 holds every channel
+   name for a fixed 13 weeks; the book picks the ten straightest and
+   sells on the first close under a fixed line. In three tiers of four
+   the book places below what the plain picture would suggest, which
+   points at the choosing and the selling, not at the channel.
+4. *Small caps are where the survivor problem bites.* The small tier's
+   average compounds 17.7% a year, an impossible number for small caps
+   as a class: the tier is full of names that were small then and are
+   large now, and a random draw gets them for free. A channel rule,
+   which sells whatever dips, cannot keep up with a pool like that. So
+   the 10th percentile there is the least trustworthy number on this
+   page, in either direction.
+
+**Scored against the predictions.** (1) Half: the picture is most common
+in mega and large; it does not last longer there. (2) Missed: the 13-week
+edge is not confined to the smaller tiers; mega is as strong as small.
+(3) Missed, reversed: the book places highest in large and lowest in
+small. (4) Held: no tier clears the line in both halves.
+
+**What it means.** If the channel book is used anywhere, the evidence
+leans to large caps (roughly the S&P 500 below its top hundred), and
+leans only: one tier in four doing well in one half in two is what
+chance looks like too. The owner's own examples are small caps, the tier
+this data is least able to judge. A forward record on small caps is the
+only clean test of them.
+
+## Pass 44 -- the owner's marks, forward: his own channels, logged before they trade (registered 2026-11-20 with the first marks)
+
+Passes 38 to 43 tried to write the owner's chart reading as a formula and
+test it on history. Every one of them carries the survivor problem, and
+none draws exactly what he draws (his channels run up to four years, he
+anchors a new one at the low after the last break, and he accepts
+choppier ones than the 0.80 straightness rule does). This pass skips the
+formula. He marks charts; the marks are written down with the date before
+the next session opens; they are scored later against prices nobody had
+seen. No history, no survivors, no hindsight.
+
+**The ledger.** `lab/owner_marks.json`. One row per mark: the date he
+sent it, the ticker, the last close, and his call, one of:
+- `potential`: a channel he reads as forming or intact and worth owning.
+- `ideal`: shown as an example of the picture, not called a buy.
+- `broken`: a channel he reads as broken, to be avoided until a new
+  pattern shows.
+Rows are never edited or removed. A changed mind is a new row.
+
+**Scoring (fixed).** Each mark is entered at the open of the first
+session after its date. At 4, 13 and 26 weeks: the name's return, SPY's
+over the same days, and the name's place (0 to 100) among the returns of
+every name in its size tier of `lab/universe_all_2026-11-20.csv` (Pass
+43's tiers, by rank that week). Dividends included, no costs.
+- `potential` should place above 50 on average. `broken` should place
+  below 50. `ideal` is reported and not judged.
+- Nothing is concluded from fewer than 40 marks of one call with a
+  13-week score. Until then the page shows the rows and says "too few".
+
+**The mechanical shadow.** Beside each `potential` mark, the lab draws
+the lower line from the anchor low he used (read off his picture to the
+month) as the steepest straight line under every weekly low since, fixed
+on the mark date, and records the first weekly close below it. That is a
+record of where the rule would have sold, not a part of the score.
+
+**Predictions.** (1) `broken` names place below 50 at 13 weeks: his
+breaks came late in Pass 41's overlay but the five that had already
+broken all kept falling. (2) `potential` names place between 45 and 60:
+a real edge here, if there is one, is small. (3) Forty marks of one call
+will take months, so the first honest read is in 2027.
+
+The scorer is written and committed before the first 4-week score is due
+(2026-12-18).

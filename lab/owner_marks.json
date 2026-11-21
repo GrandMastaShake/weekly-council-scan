@@ -1,0 +1,427 @@
+{
+ "rules": "lab/README.md, Pass 44",
+ "marks": [
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AZN",
+   "call": "potential",
+   "last_close": 174.35,
+   "note": "old channel from April 2025 broke in mid 2026; new one from the autumn low",
+   "shadow": {
+    "anchor_week": "2026-08-03",
+    "anchor_low": 153.41,
+    "lower_line_on_mark_date": 154.3,
+    "slope_year": 0.02,
+    "room_to_the_line": 0.13,
+    "matches_his_drawing": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ATO",
+   "call": "potential",
+   "last_close": 168.28,
+   "note": "long channel from mid 2024 broke in autumn 2026; new one from the October low",
+   "shadow": {
+    "anchor_week": "2026-09-28",
+    "anchor_low": 154.72,
+    "lower_line_on_mark_date": 164.57,
+    "slope_year": 0.582,
+    "room_to_the_line": 0.0226,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMPH",
+   "call": "potential",
+   "last_close": 28.25,
+   "note": "2021-2024 channel broke; new one from the May 2026 low",
+   "shadow": {
+    "anchor_week": "2026-05-18",
+    "anchor_low": 16.65,
+    "lower_line_on_mark_date": 22.57,
+    "slope_year": 0.838,
+    "room_to_the_line": 0.2515,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ABT",
+   "call": "potential",
+   "last_close": 103.0,
+   "note": "2023-2025 channel broke in early 2026; new one from the May 2026 low",
+   "shadow": {
+    "anchor_week": "2026-05-11",
+    "anchor_low": 80.89,
+    "lower_line_on_mark_date": 99.75,
+    "slope_year": 0.497,
+    "room_to_the_line": 0.0325,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "UVE",
+   "call": "ideal",
+   "last_close": 48.49,
+   "note": "weekly, the picture he calls most reliable"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "GRDN",
+   "call": "ideal",
+   "last_close": 46.94,
+   "note": "weekly, same"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "CAT",
+   "call": "broken",
+   "last_close": 510.45,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AGX",
+   "call": "broken",
+   "last_close": 268.94,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ADM",
+   "call": "broken",
+   "last_close": 66.95,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACMR",
+   "call": "broken",
+   "last_close": 39.8,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACLS",
+   "call": "broken",
+   "last_close": 90.26,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMAT",
+   "call": "broken",
+   "last_close": 302.63,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMKR",
+   "call": "broken",
+   "last_close": 30.24,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "APEI",
+   "call": "broken",
+   "last_close": 39.77,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ASML",
+   "call": "broken",
+   "last_close": 1266.22,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "A",
+   "call": "potential",
+   "last_close": 170.38,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'; his picture shows a new channel from the spring 2026 low",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.47,
+    "slope_year": 0.118,
+    "pos": 0.84,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ABCB",
+   "call": "potential",
+   "last_close": 79.56,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-03-31",
+    "r2": 0.76,
+    "slope_year": 0.369,
+    "pos": 0.01,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ABNB",
+   "call": "potential",
+   "last_close": 170.36,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.55,
+    "slope_year": 0.184,
+    "pos": 0.61,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACT",
+   "call": "potential",
+   "last_close": 44.18,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-01-06",
+    "r2": 0.92,
+    "slope_year": 0.089,
+    "pos": 0.61,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ADI",
+   "call": "potential",
+   "last_close": 345.92,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.87,
+    "slope_year": 0.635,
+    "pos": 0.01,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AEG",
+   "call": "potential",
+   "last_close": 8.08,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.73,
+    "slope_year": 0.306,
+    "pos": 0.17,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AHR",
+   "call": "potential",
+   "last_close": 57.54,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2024-12-16",
+    "r2": 0.89,
+    "slope_year": 0.007,
+    "pos": 0.96,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AIR",
+   "call": "potential",
+   "last_close": 101.84,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.76,
+    "slope_year": 0.544,
+    "pos": 0.13,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AIZ",
+   "call": "potential",
+   "last_close": 316.65,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.88,
+    "slope_year": 0.18,
+    "pos": 0.91,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMD",
+   "call": "potential",
+   "last_close": 424.39,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.89,
+    "slope_year": 1.568,
+    "pos": 0.22,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMPL",
+   "call": "potential",
+   "last_close": 16.2,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2026-04-13",
+    "r2": 0.9,
+    "slope_year": 0.475,
+    "pos": 0.84,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMZN",
+   "call": "potential",
+   "last_close": 246.82,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.54,
+    "slope_year": 0.244,
+    "pos": 0.21,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ANET",
+   "call": "potential",
+   "last_close": 167.62,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.76,
+    "slope_year": 0.862,
+    "pos": 0.05,
+    "worth_owning": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "APA",
+   "call": "potential",
+   "last_close": 45.03,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.94,
+    "slope_year": 1.083,
+    "pos": 0.15,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ASC",
+   "call": "potential",
+   "last_close": 17.09,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.91,
+    "slope_year": 0.362,
+    "pos": 0.55,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ASX",
+   "call": "potential",
+   "last_close": 26.27,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.93,
+    "slope_year": 1.333,
+    "pos": 0.01,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ATI",
+   "call": "potential",
+   "last_close": 165.6,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-04-07",
+    "r2": 0.88,
+    "slope_year": 1.401,
+    "pos": 0.04,
+    "worth_owning": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AXGN",
+   "call": "potential",
+   "last_close": 55.75,
+   "note": "second batch, the A names: 'move nicely on weekly charts from left to right'",
+   "pass41_rule_on_mark_date": {
+    "anchor": "2025-06-16",
+    "r2": 0.83,
+    "slope_year": 1.071,
+    "pos": 0.78,
+    "worth_owning": true
+   }
+  }
+ ]
+}

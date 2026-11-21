@@ -1,0 +1,3120 @@
+# source: universe_smid_2026-09-23.csv (caps of 2026-09-23) and universe_sp500_full_2026-09-22.csv (caps from Yahoo, 2026-11-20)
+# built: 2026-11-20T21:28:39-05:00
+# not on it: names above $10B outside the S&P 500; S&P names with no cap returned: none
+ticker,cap_m,sector,cap_date
+A,48041,Health Care,2026-11-20
+AAC,712,Industrials,2026-09-23
+AADX,2236,Industrials,2026-09-23
+AAL,8841,Consumer Discretionary,2026-09-23
+AAMI,3217,Finance,2026-09-23
+AAOI,8750,Technology,2026-09-23
+AAON,6577,Industrials,2026-09-23
+AAP,2501,Consumer Discretionary,2026-09-23
+AAPG,1466,Health Care,2026-09-23
+AAPL,4978144,Information Technology,2026-11-20
+AAT,1336,Real Estate,2026-09-23
+AAUC,3074,,2026-09-23
+AB,3374,Finance,2026-09-23
+ABBV,505892,Health Care,2026-11-20
+ABCB,5543,Finance,2026-09-23
+ABCL,4026,Health Care,2026-09-23
+ABEO,332,Health Care,2026-09-23
+ABG,3305,Consumer Discretionary,2026-09-23
+ABM,2912,Consumer Discretionary,2026-09-23
+ABNB,100094,Consumer Discretionary,2026-11-20
+ABR,807,Real Estate,2026-09-23
+ABSI,1745,Health Care,2026-09-23
+ABT,178390,Health Care,2026-11-20
+ABTC,733,Finance,2026-09-23
+ABUS,985,Health Care,2026-09-23
+ABVX,8303,Health Care,2026-09-23
+ABX,765,Finance,2026-09-23
+ABXL,1896,Finance,2026-09-23
+ACA,7198,Industrials,2026-09-23
+ACAD,4473,Health Care,2026-09-23
+ACCO,394,Consumer Discretionary,2026-09-23
+ACDC,842,Energy,2026-09-23
+ACEL,903,Consumer Discretionary,2026-09-23
+ACGL,35424,Financials,2026-11-20
+ACGLN,5234,Finance,2026-09-23
+ACGLO,6374,Finance,2026-09-23
+ACHC,2745,Health Care,2026-09-23
+ACHR,4386,Industrials,2026-09-23
+ACHV,839,Health Care,2026-09-23
+ACI,5758,Consumer Staples,2026-09-23
+ACIC,436,Finance,2026-09-23
+ACIW,4949,Technology,2026-09-23
+ACLS,3470,Technology,2026-09-23
+ACM,8020,Consumer Discretionary,2026-09-23
+ACMR,5081,Technology,2026-09-23
+ACN,130653,Information Technology,2026-11-20
+ACNB,642,Finance,2026-09-23
+ACRS,824,Health Care,2026-09-23
+ACT,6546,Finance,2026-09-23
+ACTG,419,Miscellaneous,2026-09-23
+ACVA,1777,Consumer Discretionary,2026-09-23
+AD,3004,Telecommunications,2026-09-23
+ADAM,771,Real Estate,2026-09-23
+ADAMI,2264,Real Estate,2026-09-23
+ADAML,2251,Real Estate,2026-09-23
+ADAMM,2308,Real Estate,2026-09-23
+ADAMN,2209,Real Estate,2026-09-23
+ADAMZ,1631,Real Estate,2026-09-23
+ADBE,84733,Information Technology,2026-11-20
+ADC,8291,Real Estate,2026-09-23
+ADEA,2750,Telecommunications,2026-09-23
+ADI,167621,Information Technology,2026-11-20
+ADIG,1598,Industrials,2026-09-23
+ADM,31863,Consumer Staples,2026-11-20
+ADMA,2175,Health Care,2026-09-23
+ADNT,1372,Consumer Discretionary,2026-09-23
+ADP,119103,Industrials,2026-11-20
+ADPT,4450,Health Care,2026-09-23
+ADSE,808,Consumer Discretionary,2026-09-23
+ADSK,51096,Information Technology,2026-11-20
+ADT,4690,Consumer Discretionary,2026-09-23
+ADTN,583,Utilities,2026-09-23
+ADUR,457,Industrials,2026-09-23
+ADUS,2146,Health Care,2026-09-23
+ADV,421,Consumer Discretionary,2026-09-23
+AEBI,911,Industrials,2026-09-23
+AEE,30998,Utilities,2026-11-20
+AEF,1044,Finance,2026-09-23
+AEHR,3068,Industrials,2026-09-23
+AEO,2638,Consumer Discretionary,2026-09-23
+AEP,68142,Utilities,2026-11-20
+AERO,2332,Consumer Discretionary,2026-09-23
+AES,10718,Utilities,2026-11-20
+AESI,1464,Industrials,2026-09-23
+AEVA,1025,Consumer Discretionary,2026-09-23
+AFGB,1799,Finance,2026-09-23
+AFGC,1512,Finance,2026-09-23
+AFGD,1771,Finance,2026-09-23
+AFGE,1379,Finance,2026-09-23
+AFL,61490,Financials,2026-11-20
+AFYA,1262,Real Estate,2026-09-23
+AG,9385,Basic Materials,2026-09-23
+AGBK,966,Finance,2026-09-23
+AGCC,526,Consumer Staples,2026-09-23
+AGCO,8569,Industrials,2026-09-23
+AGEN,387,Health Care,2026-09-23
+AGIO,2079,Health Care,2026-09-23
+AGL,1414,Health Care,2026-09-23
+AGM,2368,Finance,2026-09-23
+AGMB,552,Health Care,2026-09-23
+AGNT,612,Finance,2026-09-23
+AGO,3119,Finance,2026-09-23
+AGRO,1603,Consumer Staples,2026-09-23
+AGX,5124,Consumer Discretionary,2026-09-23
+AGYS,2804,Technology,2026-09-23
+AHCO,781,Health Care,2026-09-23
+AHRT,452,Finance,2026-09-23
+AI,1738,Technology,2026-09-23
+AIG,41309,Financials,2026-11-20
+AII,500,Finance,2026-09-23
+AIIR,1201,Consumer Discretionary,2026-09-23
+AIN,1714,Consumer Discretionary,2026-09-23
+AIO,865,Finance,2026-09-23
+AIP,1179,Technology,2026-09-23
+AIR,4716,Industrials,2026-09-23
+AIRJ,315,Industrials,2026-09-23
+AIZ,15537,Financials,2026-11-20
+AIZN,918,Finance,2026-09-23
+AJG,71606,Financials,2026-11-20
+AKAM,12275,Information Technology,2026-11-20
+AKR,2631,Real Estate,2026-09-23
+AKTS,1181,Health Care,2026-09-23
+ALB,9405,Materials,2026-11-20
+ALG,2005,Industrials,2026-09-23
+ALGM,6514,Technology,2026-09-23
+ALGN,10937,Health Care,2026-11-20
+ALGT,2163,Consumer Discretionary,2026-09-23
+ALH,4261,Industrials,2026-09-23
+ALHC,1606,Health Care,2026-09-23
+ALIT,334,Consumer Discretionary,2026-09-23
+ALK,4560,Consumer Discretionary,2026-09-23
+ALKS,7195,Health Care,2026-09-23
+ALKT,1566,Technology,2026-09-23
+ALL,66069,Financials,2026-11-20
+ALLE,15482,Industrials,2026-11-20
+ALLT,410,Telecommunications,2026-09-23
+ALM,3910,Basic Materials,2026-09-23
+ALMR,2314,Industrials,2026-09-23
+ALMS,1007,Health Care,2026-09-23
+ALNT,1848,Industrials,2026-09-23
+ALOY,595,Basic Materials,2026-09-23
+ALRM,2590,Technology,2026-09-23
+ALRS,801,Finance,2026-09-23
+ALSN,9477,Consumer Discretionary,2026-09-23
+ALT,643,Health Care,2026-09-23
+ALTI,485,Finance,2026-09-23
+ALV,8435,Consumer Discretionary,2026-09-23
+ALVO,2243,Health Care,2026-09-23
+ALX,1256,Real Estate,2026-09-23
+AMAL,1412,Finance,2026-09-23
+AMAT,240166,Information Technology,2026-11-20
+AMBA,2878,Technology,2026-09-23
+AMBP,2645,Industrials,2026-09-23
+AMBQ,1726,Technology,2026-09-23
+AMCR,19559,Materials,2026-11-20
+AMCX,489,Telecommunications,2026-09-23
+AMD,702393,Information Technology,2026-11-20
+AME,51115,Industrials,2026-11-20
+AMG,9416,Finance,2026-09-23
+AMGN,235643,Health Care,2026-11-20
+AMLX,4055,Health Care,2026-09-23
+AMN,1332,Consumer Discretionary,2026-09-23
+AMP,41695,Financials,2026-11-20
+AMPH,1046,Health Care,2026-09-23
+AMPL,1649,Technology,2026-09-23
+AMPX,1468,Miscellaneous,2026-09-23
+AMR,2312,Energy,2026-09-23
+AMRC,1251,Consumer Discretionary,2026-09-23
+AMRX,6764,Health Care,2026-09-23
+AMSC,1508,Consumer Discretionary,2026-09-23
+AMSF,455,Finance,2026-09-23
+AMT,85430,Real Estate,2026-11-20
+AMTB,1141,Finance,2026-09-23
+AMTM,4881,Consumer Discretionary,2026-09-23
+AMZN,2668899,Consumer Discretionary,2026-11-20
+AN,5525,Consumer Discretionary,2026-09-23
+ANAB,1551,Health Care,2026-09-23
+ANDE,2276,Industrials,2026-09-23
+ANDG,5978,Consumer Discretionary,2026-09-23
+ANET,211771,Information Technology,2026-11-20
+ANF,5562,Consumer Discretionary,2026-09-23
+ANGO,655,Health Care,2026-09-23
+ANGX,888,Consumer Discretionary,2026-09-23
+ANIP,1767,Health Care,2026-09-23
+ANL,1071,Health Care,2026-09-23
+ANNX,763,Health Care,2026-09-23
+ANRO,1170,Health Care,2026-09-23
+AON,70663,Financials,2026-11-20
+AORT,1159,Health Care,2026-09-23
+AOS,8495,Industrials,2026-11-20
+AOSL,821,Technology,2026-09-23
+APA,15119,Energy,2026-11-20
+APAM,2902,Finance,2026-09-23
+APD,66158,Materials,2026-11-20
+APEI,737,Real Estate,2026-09-23
+APH,172157,Information Technology,2026-11-20
+API,364,Technology,2026-09-23
+APLD,8254,Technology,2026-09-23
+APLE,3717,Real Estate,2026-09-23
+APMD,1008,Health Care,2026-09-23
+APO,65632,Financials,2026-11-20
+APOG,774,Consumer Discretionary,2026-09-23
+APP,115396,Communication Services,2026-11-20
+APPF,7412,Technology,2026-09-23
+APPN,2691,Technology,2026-09-23
+APPS,1433,Miscellaneous,2026-09-23
+APTV,7152,Consumer Discretionary,2026-11-20
+AQN,3937,Utilities,2026-09-23
+AQST,618,Health Care,2026-09-23
+ARCB,2916,Industrials,2026-09-23
+ARCO,1580,Consumer Discretionary,2026-09-23
+ARCT,400,Health Care,2026-09-23
+ARDT,1550,Health Care,2026-09-23
+ARDX,875,Health Care,2026-09-23
+ARE,7001,Real Estate,2026-11-20
+ARES,28067,Financials,2026-11-20
+ARHS,1281,Consumer Discretionary,2026-09-23
+ARI,814,Real Estate,2026-09-23
+ARIS,3874,,2026-09-23
+ARKO,477,Consumer Staples,2026-09-23
+ARLO,1404,Consumer Discretionary,2026-09-23
+ARLP,3313,Energy,2026-09-23
+AROC,5379,Utilities,2026-09-23
+AROW,687,Finance,2026-09-23
+ARQQ,537,Technology,2026-09-23
+ARQT,3440,Health Care,2026-09-23
+ARR,2475,Real Estate,2026-09-23
+ARRY,591,Technology,2026-09-23
+ARTNA,349,Utilities,2026-09-23
+ARTV,383,Health Care,2026-09-23
+ARVN,553,Health Care,2026-09-23
+ARWR,9927,Health Care,2026-09-23
+ARX,4285,Finance,2026-09-23
+ASA,1047,Industrials,2026-09-23
+ASAN,2060,Technology,2026-09-23
+ASB,5460,Finance,2026-09-23
+ASBA,3760,Finance,2026-09-23
+ASC,712,Consumer Discretionary,2026-09-23
+ASH,3197,Consumer Discretionary,2026-09-23
+ASIC,1302,Finance,2026-09-23
+ASIX,451,Industrials,2026-09-23
+ASM,1022,Basic Materials,2026-09-23
+ASMB,507,Health Care,2026-09-23
+ASO,2981,Consumer Discretionary,2026-09-23
+ASPI,468,Industrials,2026-09-23
+ASPN,466,Consumer Discretionary,2026-09-23
+ASR,7256,Consumer Discretionary,2026-09-23
+ASST,2771,Finance,2026-09-23
+ASTE,962,Industrials,2026-09-23
+ASTH,1653,Consumer Discretionary,2026-09-23
+ASTL,461,Industrials,2026-09-23
+ATAT,4420,Consumer Discretionary,2026-09-23
+ATEC,1578,Health Care,2026-09-23
+ATEN,1946,Telecommunications,2026-09-23
+ATEX,1654,Telecommunications,2026-09-23
+ATHM,2435,Technology,2026-09-23
+ATHS,5003,Finance,2026-09-23
+ATKR,3193,Miscellaneous,2026-09-23
+ATLC,1356,Finance,2026-09-23
+ATLCL,381,Finance,2026-09-23
+ATLCP,364,Finance,2026-09-23
+ATLCZ,388,Finance,2026-09-23
+ATMU,3686,Consumer Discretionary,2026-09-23
+ATNI,444,Telecommunications,2026-09-23
+ATO,28643,Utilities,2026-11-20
+ATR,7958,Industrials,2026-09-23
+ATRC,3062,Health Care,2026-09-23
+ATRO,2973,Industrials,2026-09-23
+ATS,1859,Industrials,2026-09-23
+ATTO,928,Health Care,2026-09-23
+AUB,5509,Finance,2026-09-23
+AUGO,7254,Basic Materials,2026-09-23
+AUNA,385,Health Care,2026-09-23
+AUPH,2226,Health Care,2026-09-23
+AURA,649,Health Care,2026-09-23
+AUXX,564,,2026-09-23
+AVA,2967,Utilities,2026-09-23
+AVAH,2819,Health Care,2026-09-23
+AVAL,6019,Finance,2026-09-23
+AVAV,8163,Industrials,2026-09-23
+AVBC,433,Finance,2026-09-23
+AVBH,348,Finance,2026-09-23
+AVBP,1507,Health Care,2026-09-23
+AVEX,1886,Industrials,2026-09-23
+AVGO,1453141,Information Technology,2026-11-20
+AVIR,444,Health Care,2026-09-23
+AVLN,1406,Health Care,2026-09-23
+AVNT,3764,Industrials,2026-09-23
+AVO,1110,Consumer Staples,2026-09-23
+AVPT,2761,Technology,2026-09-23
+AVR,766,Health Care,2026-09-23
+AVT,8128,Technology,2026-09-23
+AVTX,857,Health Care,2026-09-23
+AVY,13679,Materials,2026-11-20
+AWI,6890,Industrials,2026-09-23
+AWK,29772,Utilities,2026-11-20
+AWR,3294,Utilities,2026-09-23
+AX,5038,Finance,2026-09-23
+AXGN,2584,Health Care,2026-09-23
+AXON,23708,Industrials,2026-11-20
+AXP,202306,Financials,2026-11-20
+AXS,7043,Finance,2026-09-23
+AXTA,7009,Consumer Discretionary,2026-09-23
+AXTI,4938,Technology,2026-09-23
+AYA,4055,Basic Materials,2026-09-23
+AYI,9321,Consumer Discretionary,2026-09-23
+AZO,52394,Consumer Discretionary,2026-11-20
+AZTA,1496,Technology,2026-09-23
+AZUL,1188,Consumer Discretionary,2026-09-23
+AZZ,4104,Industrials,2026-09-23
+BA,123535,Industrials,2026-11-20
+BAC,324586,Financials,2026-11-20
+BAH,9323,Consumer Discretionary,2026-09-23
+BALL,16526,Materials,2026-11-20
+BALY,603,Consumer Discretionary,2026-09-23
+BANC,2851,Finance,2026-09-23
+BAND,1887,Technology,2026-09-23
+BANF,3623,Finance,2026-09-23
+BANFP,902,Finance,2026-09-23
+BANR,2521,Finance,2026-09-23
+BATRA,3699,Consumer Discretionary,2026-09-23
+BATRK,3389,Consumer Discretionary,2026-09-23
+BAX,13135,Health Care,2026-11-20
+BB,4946,Technology,2026-09-23
+BBAR,2882,Finance,2026-09-23
+BBCP,498,Consumer Discretionary,2026-09-23
+BBDC,916,Finance,2026-09-23
+BBNX,1203,Health Care,2026-09-23
+BBOT,362,Health Care,2026-09-23
+BBSI,792,Consumer Discretionary,2026-09-23
+BBT,2359,Finance,2026-09-23
+BBUC,5320,Consumer Discretionary,2026-09-23
+BBW,323,Consumer Discretionary,2026-09-23
+BBWI,3384,Consumer Discretionary,2026-09-23
+BBY,20543,Consumer Discretionary,2026-11-20
+BC,4248,Industrials,2026-09-23
+BCAL,695,Finance,2026-09-23
+BCAT,1526,Finance,2026-09-23
+BCAX,1474,Health Care,2026-09-23
+BCBP,364,Finance,2026-09-23
+BCC,2733,Consumer Discretionary,2026-09-23
+BCML,327,Finance,2026-09-23
+BCO,4396,Industrials,2026-09-23
+BCPC,5385,Industrials,2026-09-23
+BCRX,2222,Health Care,2026-09-23
+BCSF,723,Finance,2026-09-23
+BCX,1044,Finance,2026-09-23
+BDC,4474,Industrials,2026-09-23
+BDJ,1695,Finance,2026-09-23
+BDX,57958,Health Care,2026-11-20
+BE,42099,Industrials,2026-11-20
+BEAM,2633,Health Care,2026-09-23
+BELFA,2912,,2026-09-23
+BELFB,3602,,2026-09-23
+BEN,16420,Financials,2026-11-20
+BEPH,4250,Utilities,2026-09-23
+BEPI,4534,Utilities,2026-09-23
+BEPJ,6450,Utilities,2026-09-23
+BETA,5550,Industrials,2026-09-23
+BF-B,13729,Consumer Staples,2026-11-20
+BFAM,3147,Consumer Discretionary,2026-09-23
+BFC,1677,Finance,2026-09-23
+BFH,3881,Consumer Discretionary,2026-09-23
+BFLY,2448,Health Care,2026-09-23
+BFS,741,Real Estate,2026-09-23
+BFST,997,Finance,2026-09-23
+BG,17466,Consumer Staples,2026-11-20
+BGC,5836,Finance,2026-09-23
+BGR,2332,Finance,2026-09-23
+BGSI,2227,,2026-09-23
+BH,799,Consumer Discretionary,2026-09-23
+BHB,667,Finance,2026-09-23
+BHC,2180,Health Care,2026-09-23
+BHE,2934,Technology,2026-09-23
+BHF,3058,Finance,2026-09-23
+BHFAL,913,Finance,2026-09-23
+BHFAM,595,Finance,2026-09-23
+BHFAN,682,Finance,2026-09-23
+BHFAO,831,Finance,2026-09-23
+BHFAP,818,Finance,2026-09-23
+BHRB,1406,Finance,2026-09-23
+BHVN,2198,Health Care,2026-09-23
+BIIB,36894,Health Care,2026-11-20
+BILI,6254,Technology,2026-09-23
+BILL,3897,Technology,2026-09-23
+BIOA,375,Health Care,2026-09-23
+BIPC,4386,Consumer Discretionary,2026-09-23
+BIPH,7128,Consumer Discretionary,2026-09-23
+BIRK,5135,Consumer Discretionary,2026-09-23
+BJRI,1288,Consumer Discretionary,2026-09-23
+BKD,2697,Health Care,2026-09-23
+BKE,2151,Consumer Discretionary,2026-09-23
+BKH,5422,Utilities,2026-09-23
+BKKT,424,Finance,2026-09-23
+BKNG,107770,Consumer Discretionary,2026-11-20
+BKR,44500,Energy,2026-11-20
+BKSY,937,Technology,2026-09-23
+BKT,1431,Finance,2026-09-23
+BKU,3119,Finance,2026-09-23
+BKV,2526,Energy,2026-09-23
+BL,1607,Technology,2026-09-23
+BLBD,1843,Consumer Discretionary,2026-09-23
+BLCO,6154,Health Care,2026-09-23
+BLDR,6456,Consumer Discretionary,2026-09-23
+BLFS,1850,Health Care,2026-09-23
+BLK,170131,Financials,2026-11-20
+BLKB,1924,Technology,2026-09-23
+BLLN,5468,Health Care,2026-09-23
+BLMN,727,Consumer Discretionary,2026-09-23
+BLSH,6496,Finance,2026-09-23
+BLSM,786,Health Care,2026-09-23
+BLTE,6967,Health Care,2026-09-23
+BLW,421,Consumer Discretionary,2026-09-23
+BLX,2069,Finance,2026-09-23
+BLZE,878,Technology,2026-09-23
+BMA,4779,Finance,2026-09-23
+BME,600,Finance,2026-09-23
+BMI,3874,Industrials,2026-09-23
+BMM,590,,2026-09-23
+BMRC,452,Finance,2026-09-23
+BMY,120192,Health Care,2026-11-20
+BNED,379,Consumer Discretionary,2026-09-23
+BNL,3610,Real Estate,2026-09-23
+BNTC,367,Health Care,2026-09-23
+BNY,95040,Financials,2026-11-20
+BOBS,1807,Consumer Discretionary,2026-09-23
+BOC,401,Finance,2026-09-23
+BOH,2791,Finance,2026-09-23
+BOKF,7939,Finance,2026-09-23
+BOOT,3773,Consumer Discretionary,2026-09-23
+BORR,1354,Energy,2026-09-23
+BOW,1115,Finance,2026-09-23
+BOX,4485,Technology,2026-09-23
+BPOPM,1603,Finance,2026-09-23
+BR,20519,Industrials,2026-11-20
+BRAI,1139,Technology,2026-09-23
+BRBI,564,Finance,2026-09-23
+BRBR,1017,Consumer Staples,2026-09-23
+BRBS,347,Finance,2026-09-23
+BRC,3934,Consumer Discretionary,2026-09-23
+BRCB,349,Consumer Discretionary,2026-09-23
+BRK-B,1210976,Financials,2026-11-20
+BRKR,9363,Industrials,2026-09-23
+BRO,24237,Financials,2026-11-20
+BROS,6594,Consumer Discretionary,2026-09-23
+BRSL,1866,Consumer Discretionary,2026-09-23
+BRSP,529,Real Estate,2026-09-23
+BRUN,1292,Technology,2026-09-23
+BRVE,2138,Health Care,2026-09-23
+BRX,8517,Real Estate,2026-09-23
+BRZE,2910,Technology,2026-09-23
+BSM,3165,Energy,2026-09-23
+BSRR,517,Finance,2026-09-23
+BST,1095,Finance,2026-09-23
+BSTZ,662,Finance,2026-09-23
+BSVN,533,Finance,2026-09-23
+BSX,60849,Health Care,2026-11-20
+BSY,9637,Technology,2026-09-23
+BTDR,3439,Finance,2026-09-23
+BTE,3264,Energy,2026-09-23
+BTG,7061,Basic Materials,2026-09-23
+BTGO,973,Finance,2026-09-23
+BTU,3239,Energy,2026-09-23
+BTX,2127,,2026-09-23
+BTZ,1029,Finance,2026-09-23
+BULL,4248,Finance,2026-09-23
+BUR,873,Finance,2026-09-23
+BUSE,2482,Finance,2026-09-23
+BUSEP,2155,Finance,2026-09-23
+BUUU,856,Consumer Discretionary,2026-09-23
+BV,973,Consumer Staples,2026-09-23
+BVC,2209,Finance,2026-09-23
+BVN,8388,Basic Materials,2026-09-23
+BVS,1125,Health Care,2026-09-23
+BW,1029,Industrials,2026-09-23
+BWAY,550,Health Care,2026-09-23
+BWB,576,Finance,2026-09-23
+BWBBP,548,Finance,2026-09-23
+BWFG,523,Finance,2026-09-23
+BWIN,4455,Finance,2026-09-23
+BWLP,3861,Consumer Discretionary,2026-09-23
+BWMN,738,Consumer Discretionary,2026-09-23
+BWMX,657,Consumer Discretionary,2026-09-23
+BX,87609,Financials,2026-11-20
+BXBL,1002,Consumer Discretionary,2026-09-23
+BXC,630,Consumer Discretionary,2026-09-23
+BXDC,1940,Finance,2026-09-23
+BXMT,2174,Real Estate,2026-09-23
+BXP,9781,Real Estate,2026-11-20
+BY,1671,Finance,2026-09-23
+BYD,5194,Consumer Discretionary,2026-09-23
+BZ,6667,Technology,2026-09-23
+BZH,890,Consumer Discretionary,2026-09-23
+C,183099,Financials,2026-11-20
+CAAP,3939,Consumer Discretionary,2026-09-23
+CAC,961,Finance,2026-09-23
+CACC,5741,Finance,2026-09-23
+CADL,903,Health Care,2026-09-23
+CAE,7935,Miscellaneous,2026-09-23
+CAG,6978,Consumer Staples,2026-09-23
+CAH,63056,Health Care,2026-11-20
+CAI,9153,Health Care,2026-09-23
+CAKE,5145,Consumer Discretionary,2026-09-23
+CAL,422,Consumer Discretionary,2026-09-23
+CALM,3408,Consumer Staples,2026-09-23
+CALX,2204,Consumer Discretionary,2026-09-23
+CALY,2578,Consumer Discretionary,2026-09-23
+CAMT,6711,Technology,2026-09-23
+CAPL,841,Energy,2026-09-23
+CAPR,536,Health Care,2026-09-23
+CAR,3806,Consumer Discretionary,2026-09-23
+CARE,668,Finance,2026-09-23
+CARG,2716,Technology,2026-09-23
+CARL,413,Health Care,2026-09-23
+CARR,40875,Industrials,2026-11-20
+CARS,551,Technology,2026-09-23
+CART,9829,Consumer Discretionary,2026-09-23
+CASH,1540,Finance,2026-09-23
+CASS,694,Consumer Discretionary,2026-09-23
+CASY,25545,Consumer Staples,2026-11-20
+CAT,233579,Industrials,2026-11-20
+CATY,4060,Finance,2026-09-23
+CAVA,6090,Consumer Discretionary,2026-09-23
+CB,141992,Financials,2026-11-20
+CBAN,442,Finance,2026-09-23
+CBC,7632,Finance,2026-09-23
+CBIO,579,Health Care,2026-09-23
+CBK,438,Finance,2026-09-23
+CBL,1640,Real Estate,2026-09-23
+CBLL,926,Health Care,2026-09-23
+CBNA,311,Finance,2026-09-23
+CBNK,579,Finance,2026-09-23
+CBOE,37320,Financials,2026-11-20
+CBRE,36520,Real Estate,2026-11-20
+CBRL,1036,Consumer Discretionary,2026-09-23
+CBSH,8009,Finance,2026-09-23
+CBT,4072,Industrials,2026-09-23
+CBU,3205,Finance,2026-09-23
+CBZ,2967,Consumer Discretionary,2026-09-23
+CC,2230,Industrials,2026-09-23
+CCAP,356,Finance,2026-09-23
+CCB,679,Finance,2026-09-23
+CCBG,849,Finance,2026-09-23
+CCC,3873,Technology,2026-09-23
+CCCC,404,Health Care,2026-09-23
+CCEC,1311,Consumer Discretionary,2026-09-23
+CCI,35060,Real Estate,2026-11-20
+CCL,35753,Consumer Discretionary,2026-11-20
+CCNE,992,Finance,2026-09-23
+CCNEP,739,Finance,2026-09-23
+CCOI,451,Consumer Discretionary,2026-09-23
+CCS,1796,Consumer Discretionary,2026-09-23
+CCSI,658,Technology,2026-09-23
+CCU,2056,Consumer Staples,2026-09-23
+CD,480,Finance,2026-09-23
+CDLR,2397,Consumer Discretionary,2026-09-23
+CDNA,2926,Health Care,2026-09-23
+CDNL,1395,Industrials,2026-09-23
+CDNS,77260,Information Technology,2026-11-20
+CDP,3865,Real Estate,2026-09-23
+CDRE,1130,Health Care,2026-09-23
+CDRO,421,Consumer Discretionary,2026-09-23
+CDW,20192,Information Technology,2026-11-20
+CDZI,307,Utilities,2026-09-23
+CDZIP,1842,Utilities,2026-09-23
+CE,5314,Industrials,2026-09-23
+CECO,4252,Industrials,2026-09-23
+CEG,83475,Utilities,2026-11-20
+CELC,4012,Health Care,2026-09-23
+CELH,7276,Consumer Staples,2026-09-23
+CENT,2492,Consumer Discretionary,2026-09-23
+CENTA,2154,Consumer Discretionary,2026-09-23
+CENX,3842,Industrials,2026-09-23
+CEPU,2050,Utilities,2026-09-23
+CERT,1381,Technology,2026-09-23
+CEVA,939,Technology,2026-09-23
+CF,16900,Materials,2026-11-20
+CFFI,305,Finance,2026-09-23
+CFFN,1107,Finance,2026-09-23
+CFG,24611,Financials,2026-11-20
+CFR,9710,Finance,2026-09-23
+CGABL,5690,Finance,2026-09-23
+CGAU,4509,Basic Materials,2026-09-23
+CGBD,779,Finance,2026-09-23
+CGEM,1328,Health Care,2026-09-23
+CGNT,647,Technology,2026-09-23
+CGNX,9816,Industrials,2026-09-23
+CGON,6834,Health Care,2026-09-23
+CHA,2209,Consumer Discretionary,2026-09-23
+CHCO,1967,Finance,2026-09-23
+CHCT,408,Real Estate,2026-09-23
+CHD,26162,Consumer Staples,2026-11-20
+CHDN,5487,Consumer Discretionary,2026-09-23
+CHE,6527,Health Care,2026-09-23
+CHEF,4431,Consumer Discretionary,2026-09-23
+CHH,4559,Consumer Discretionary,2026-09-23
+CHMG,394,Finance,2026-09-23
+CHRD,7552,Energy,2026-09-23
+CHRN,3131,Industrials,2026-09-23
+CHRW,15536,Industrials,2026-11-20
+CHSCL,308,Industrials,2026-09-23
+CHSCN,305,Industrials,2026-09-23
+CHSCO,314,Industrials,2026-09-23
+CHSCP,319,Industrials,2026-09-23
+CHTR,14734,Communication Services,2026-11-20
+CHTRP,2632,Telecommunications,2026-09-23
+CHWY,7613,Consumer Discretionary,2026-09-23
+CI,71383,Health Care,2026-11-20
+CIEN,33236,Information Technology,2026-11-20
+CIFR,7910,Finance,2026-09-23
+CIGI,4707,Finance,2026-09-23
+CII,3622,Finance,2026-09-23
+CIM,920,Real Estate,2026-09-23
+CIMN,2025,Real Estate,2026-09-23
+CINF,28636,Financials,2026-11-20
+CINT,392,Technology,2026-09-23
+CION,354,Finance,2026-09-23
+CIVB,560,Finance,2026-09-23
+CIX,474,Consumer Discretionary,2026-09-23
+CL,78467,Consumer Staples,2026-11-20
+CLB,497,Energy,2026-09-23
+CLBK,1179,Finance,2026-09-23
+CLBT,2926,Technology,2026-09-23
+CLDT,612,Real Estate,2026-09-23
+CLDX,2543,Health Care,2026-09-23
+CLF,7172,Basic Materials,2026-09-23
+CLFD,424,Utilities,2026-09-23
+CLMB,559,Technology,2026-09-23
+CLMT,4875,Energy,2026-09-23
+CLOV,2380,Health Care,2026-09-23
+CLPT,467,Health Care,2026-09-23
+CLSK,3842,Finance,2026-09-23
+CLW,346,Basic Materials,2026-09-23
+CLX,12688,Consumer Staples,2026-11-20
+CLYM,795,Health Care,2026-09-23
+CMBT,6027,Consumer Discretionary,2026-09-23
+CMC,7097,Industrials,2026-09-23
+CMCL,461,Basic Materials,2026-09-23
+CMCO,463,Industrials,2026-09-23
+CMCSA,88420,Communication Services,2026-11-20
+CMDB,547,Consumer Discretionary,2026-09-23
+CME,110086,Financials,2026-11-20
+CMG,44970,Consumer Discretionary,2026-11-20
+CMI,55295,Industrials,2026-11-20
+CMP,981,Industrials,2026-09-23
+CMPR,1896,Consumer Discretionary,2026-09-23
+CMPS,2013,Health Care,2026-09-23
+CMRE,1769,Consumer Discretionary,2026-09-23
+CMS,21991,Utilities,2026-11-20
+CMSA,5839,Utilities,2026-09-23
+CMSC,6154,Utilities,2026-09-23
+CMSD,6127,Utilities,2026-09-23
+CNC,31575,Health Care,2026-11-20
+CNK,4154,Consumer Discretionary,2026-09-23
+CNL,1212,,2026-09-23
+CNM,8184,Consumer Discretionary,2026-09-23
+CNMD,1356,Health Care,2026-09-23
+CNNE,678,Consumer Discretionary,2026-09-23
+CNO,5028,Finance,2026-09-23
+CNOB,1688,Finance,2026-09-23
+CNOBP,1371,Finance,2026-09-23
+CNP,25925,Utilities,2026-11-20
+CNR,4588,Energy,2026-09-23
+CNS,3866,Finance,2026-09-23
+CNX,4919,Energy,2026-09-23
+CNXC,1796,Technology,2026-09-23
+CNXN,2205,Consumer Discretionary,2026-09-23
+COAG,1756,Health Care,2026-09-23
+COCO,3472,Consumer Staples,2026-09-23
+CODI,847,Consumer Discretionary,2026-09-23
+COF,107470,Financials,2026-11-20
+COFS,492,Finance,2026-09-23
+COGT,5501,Health Care,2026-09-23
+COHR,36875,Information Technology,2026-11-20
+COHU,2985,Industrials,2026-09-23
+COIN,26998,Financials,2026-11-20
+COLB,8298,Finance,2026-09-23
+COLD,4062,Real Estate,2026-09-23
+COLL,755,Health Care,2026-09-23
+COLM,2966,Consumer Discretionary,2026-09-23
+COMP,7098,Finance,2026-09-23
+CON,4455,Health Care,2026-09-23
+COO,11196,Health Care,2026-11-20
+COP,160939,Energy,2026-11-20
+COR,64708,Health Care,2026-11-20
+CORZ,6069,Finance,2026-09-23
+CORZW,3888,Finance,2026-09-23
+CORZZ,6022,Finance,2026-09-23
+COSO,317,Finance,2026-09-23
+COST,488395,Consumer Staples,2026-11-20
+COUR,1344,Technology,2026-09-23
+CPA,5444,Consumer Discretionary,2026-09-23
+CPAC,1046,Industrials,2026-09-23
+CPAY,27498,Financials,2026-11-20
+CPB,5988,Consumer Staples,2026-09-23
+CPF,949,Finance,2026-09-23
+CPK,3165,Utilities,2026-09-23
+CPRI,1747,Consumer Discretionary,2026-09-23
+CPRT,28801,Industrials,2026-11-20
+CPS,410,Consumer Discretionary,2026-09-23
+CPT,9587,Real Estate,2026-11-20
+CRAI,1006,Consumer Discretionary,2026-09-23
+CRC,4660,Energy,2026-09-23
+CRCT,1206,Technology,2026-09-23
+CRESY,896,Finance,2026-09-23
+CRGY,4340,Energy,2026-09-23
+CRH,58574,Materials,2026-11-20
+CRI,1107,Consumer Discretionary,2026-09-23
+CRK,3967,Energy,2026-09-23
+CRL,15061,Health Care,2026-11-20
+CRM,148650,Information Technology,2026-11-20
+CRMD,611,Health Care,2026-09-23
+CRML,1182,Basic Materials,2026-09-23
+CRMLW,441,Basic Materials,2026-09-23
+CRNC,366,Technology,2026-09-23
+CRON,1249,Health Care,2026-09-23
+CROX,5906,Consumer Discretionary,2026-09-23
+CRSP,5609,Health Care,2026-09-23
+CRSR,1467,Technology,2026-09-23
+CRTO,803,Consumer Discretionary,2026-09-23
+CRUS,6019,Technology,2026-09-23
+CRVL,3732,Finance,2026-09-23
+CRVS,1086,Health Care,2026-09-23
+CRWD,234932,Information Technology,2026-11-20
+CSCO,357344,Information Technology,2026-11-20
+CSGP,11913,Real Estate,2026-11-20
+CSHR,763,Finance,2026-09-23
+CSIQ,764,Technology,2026-09-23
+CSQ,3300,Finance,2026-09-23
+CSQR,3134,Technology,2026-09-23
+CSR,930,Real Estate,2026-09-23
+CSTL,1060,Health Care,2026-09-23
+CSTM,3326,Industrials,2026-09-23
+CSV,499,Consumer Discretionary,2026-09-23
+CSW,4906,Industrials,2026-09-23
+CSWC,1442,Consumer Discretionary,2026-09-23
+CSX,90511,Industrials,2026-11-20
+CTAS,87360,Industrials,2026-11-20
+CTBI,1359,Finance,2026-09-23
+CTEV,467,Consumer Discretionary,2026-09-23
+CTGO,623,Basic Materials,2026-09-23
+CTKB,755,Industrials,2026-09-23
+CTNM,493,Health Care,2026-09-23
+CTO,754,Real Estate,2026-09-23
+CTOS,2180,Consumer Discretionary,2026-09-23
+CTRE,8804,Real Estate,2026-09-23
+CTRI,2019,Utilities,2026-09-23
+CTRN,441,Consumer Discretionary,2026-09-23
+CTS,1672,Technology,2026-09-23
+CTSH,25955,Information Technology,2026-11-20
+CTVA,5265,Materials,2026-11-20
+CUB,346,Industrials,2026-09-23
+CUBB,674,Finance,2026-09-23
+CUBE,8612,Real Estate,2026-09-23
+CUBI,2622,Finance,2026-09-23
+CURB,3281,Finance,2026-09-23
+CURR,341,Consumer Discretionary,2026-09-23
+CUZ,4745,Real Estate,2026-09-23
+CV,328,Health Care,2026-09-23
+CVBF,3910,Finance,2026-09-23
+CVCO,4194,Consumer Discretionary,2026-09-23
+CVEO,348,Consumer Discretionary,2026-09-23
+CVI,5207,Energy,2026-09-23
+CVLG,861,Industrials,2026-09-23
+CVLT,6015,Technology,2026-09-23
+CVNA,70443,Consumer Discretionary,2026-11-20
+CVS,103433,Health Care,2026-11-20
+CVSA,4162,Real Estate,2026-09-23
+CVX,406583,Energy,2026-11-20
+CWBC,695,Finance,2026-09-23
+CWCO,453,Utilities,2026-09-23
+CWEN,5012,Utilities,2026-09-23
+CWH,565,Consumer Discretionary,2026-09-23
+CWK,2956,Finance,2026-09-23
+CWST,5393,Utilities,2026-09-23
+CWT,2891,Utilities,2026-09-23
+CXM,1237,Technology,2026-09-23
+CXT,2789,Industrials,2026-09-23
+CXW,3082,Real Estate,2026-09-23
+CYD,1299,Industrials,2026-09-23
+CYH,429,Health Care,2026-09-23
+CYPH,387,Health Care,2026-09-23
+CYRX,878,Health Care,2026-09-23
+CYTK,9189,Health Care,2026-09-23
+CZFS,383,Finance,2026-09-23
+CZNC,457,Finance,2026-09-23
+CZR,6021,Consumer Discretionary,2026-09-23
+D,58298,Utilities,2026-11-20
+DAC,2803,Consumer Discretionary,2026-09-23
+DAKT,858,Consumer Discretionary,2026-09-23
+DAL,52640,Industrials,2026-11-20
+DAN,3168,Consumer Discretionary,2026-09-23
+DAO,1739,Real Estate,2026-09-23
+DAR,9807,Consumer Staples,2026-09-23
+DASH,66530,Consumer Discretionary,2026-11-20
+DAVE,4151,Finance,2026-09-23
+DBD,2170,Miscellaneous,2026-09-23
+DBI,313,Consumer Discretionary,2026-09-23
+DBRG,2998,Real Estate,2026-09-23
+DBVT,736,Health Care,2026-09-23
+DBX,7569,Technology,2026-09-23
+DC,885,Basic Materials,2026-09-23
+DCBG,1040,Finance,2026-09-23
+DCBO,570,Technology,2026-09-23
+DCH,1318,Consumer Discretionary,2026-09-23
+DCO,2535,Industrials,2026-09-23
+DCOM,1783,Finance,2026-09-23
+DCTH,562,Health Care,2026-09-23
+DD,19274,Industrials,2026-11-20
+DDD,592,Technology,2026-09-23
+DDI,647,Technology,2026-09-23
+DDOG,56817,Information Technology,2026-11-20
+DDT,409,Consumer Discretionary,2026-09-23
+DE,164269,Industrials,2026-11-20
+DEA,1089,Real Estate,2026-09-23
+DEC,1072,,2026-09-23
+DECK,10403,Consumer Discretionary,2026-11-20
+DEI,1707,Real Estate,2026-09-23
+DELL,176769,Information Technology,2026-11-20
+DFH,1057,Consumer Discretionary,2026-09-23
+DFIN,1188,Consumer Discretionary,2026-09-23
+DFTX,5262,Health Care,2026-09-23
+DG,28797,Consumer Staples,2026-11-20
+DGICA,686,Finance,2026-09-23
+DGICB,664,Finance,2026-09-23
+DGII,2818,Telecommunications,2026-09-23
+DGX,28416,Health Care,2026-11-20
+DGXX,425,Finance,2026-09-23
+DHC,1944,Real Estate,2026-09-23
+DHCNI,4341,Real Estate,2026-09-23
+DHCNL,4542,Real Estate,2026-09-23
+DHI,38919,Consumer Discretionary,2026-11-20
+DHR,155030,Health Care,2026-11-20
+DHT,3390,Consumer Discretionary,2026-09-23
+DIN,357,Consumer Discretionary,2026-09-23
+DIOD,4287,Technology,2026-09-23
+DIS,201513,Communication Services,2026-11-20
+DJCO,900,Consumer Discretionary,2026-09-23
+DJT,2525,Technology,2026-09-23
+DJTWW,1484,Technology,2026-09-23
+DK,4389,Energy,2026-09-23
+DKL,2919,Energy,2026-09-23
+DLB,5553,Miscellaneous,2026-09-23
+DLO,4189,Consumer Discretionary,2026-09-23
+DLR,61463,Real Estate,2026-11-20
+DLTR,25885,Consumer Staples,2026-11-20
+DLX,1094,Consumer Discretionary,2026-09-23
+DLY,632,Finance,2026-09-23
+DMAC,408,Health Care,2026-09-23
+DMC,1480,Consumer Staples,2026-09-23
+DMLP,1436,Energy,2026-09-23
+DMRA,1319,Health Care,2026-09-23
+DNA,585,Health Care,2026-09-23
+DNLI,3389,Health Care,2026-09-23
+DNOW,2823,Consumer Discretionary,2026-09-23
+DNTH,5419,Health Care,2026-09-23
+DOC,13267,Real Estate,2026-11-20
+DOCS,4750,Technology,2026-09-23
+DOLE,1242,Consumer Staples,2026-09-23
+DOO,4059,Consumer Discretionary,2026-09-23
+DORM,3518,Consumer Discretionary,2026-09-23
+DOV,25842,Industrials,2026-11-20
+DOW,21014,Materials,2026-11-20
+DOX,6340,Technology,2026-09-23
+DPC,5908,Telecommunications,2026-09-23
+DPZ,11468,Consumer Discretionary,2026-11-20
+DQ,804,Technology,2026-09-23
+DRD,2190,Basic Materials,2026-09-23
+DRH,2493,Real Estate,2026-09-23
+DRI,25541,Consumer Discretionary,2026-11-20
+DRS,9992,Industrials,2026-09-23
+DRTS,1385,Health Care,2026-09-23
+DRTSW,390,Health Care,2026-09-23
+DRUG,594,Health Care,2026-09-23
+DRVN,1998,Consumer Discretionary,2026-09-23
+DSC,315,Technology,2026-09-23
+DSGN,818,Health Care,2026-09-23
+DSGR,1615,Consumer Discretionary,2026-09-23
+DSGX,6851,Technology,2026-09-23
+DSL,1026,Finance,2026-09-23
+DSP,819,Technology,2026-09-23
+DTB,3223,Utilities,2026-09-23
+DTE,28294,Utilities,2026-11-20
+DTG,3279,Utilities,2026-09-23
+DTW,3909,Utilities,2026-09-23
+DUK,101191,Utilities,2026-11-20
+DUOL,6825,Technology,2026-09-23
+DV,2073,Technology,2026-09-23
+DVA,10129,Health Care,2026-11-20
+DVN,47344,Energy,2026-11-20
+DX,2971,Real Estate,2026-09-23
+DXC,1746,Technology,2026-09-23
+DXCM,29582,Health Care,2026-11-20
+DXPE,2928,Industrials,2026-09-23
+DY,8435,Industrials,2026-09-23
+DYN,3161,Health Care,2026-09-23
+EAI,8969,Utilities,2026-09-23
+EAT,8497,Consumer Discretionary,2026-09-23
+EBAY,50744,Consumer Discretionary,2026-11-20
+EBC,4875,Finance,2026-09-23
+EBF,550,Consumer Discretionary,2026-09-23
+EBS,350,Health Care,2026-09-23
+ECAT,1567,Finance,2026-09-23
+ECCC,1517,Finance,2026-09-23
+ECCV,1449,Finance,2026-09-23
+ECG,5959,Consumer Discretionary,2026-09-23
+ECHO,24518,Communication Services,2026-11-20
+ECL,82654,Materials,2026-11-20
+ECO,2993,Consumer Discretionary,2026-09-23
+ECPG,1997,Finance,2026-09-23
+ECVT,1147,Industrials,2026-09-23
+ED,44305,Utilities,2026-11-20
+EDIT,470,Health Care,2026-09-23
+EDN,1054,Utilities,2026-09-23
+EDU,8771,Real Estate,2026-09-23
+EE,3891,Utilities,2026-09-23
+EEFT,2435,Finance,2026-09-23
+EFC,1626,Finance,2026-09-23
+EFOR,1329,Consumer Discretionary,2026-09-23
+EFSC,2186,Finance,2026-09-23
+EFSCP,612,Finance,2026-09-23
+EFT,305,Finance,2026-09-23
+EFX,20734,Industrials,2026-11-20
+EFXT,2769,Industrials,2026-09-23
+EG,15631,Financials,2026-11-20
+EGBN,851,Finance,2026-09-23
+EGY,620,Energy,2026-09-23
+EH,347,Industrials,2026-09-23
+EIG,868,Finance,2026-09-23
+EIKN,467,Health Care,2026-09-23
+EIX,23949,Utilities,2026-11-20
+EL,36037,Consumer Staples,2026-11-20
+ELA,327,Consumer Discretionary,2026-09-23
+ELC,4081,Utilities,2026-09-23
+ELE,1639,Basic Materials,2026-09-23
+ELF,5969,Consumer Discretionary,2026-09-23
+ELLO,303,Utilities,2026-09-23
+ELMT,625,Industrials,2026-09-23
+ELPC,9291,Utilities,2026-09-23
+ELV,85230,Health Care,2026-11-20
+ELVA,330,Miscellaneous,2026-09-23
+ELVN,3433,Health Care,2026-09-23
+ELVR,745,Industrials,2026-09-23
+EMAT,2122,Miscellaneous,2026-09-23
+EMBC,317,Health Care,2026-09-23
+EME,26415,Industrials,2026-11-20
+EMN,7624,Industrials,2026-09-23
+EMP,9123,Utilities,2026-09-23
+EMR,82800,Industrials,2026-11-20
+ENIC,6073,Utilities,2026-09-23
+ENJ,9001,Utilities,2026-09-23
+ENO,4443,Utilities,2026-09-23
+ENOV,1044,Health Care,2026-09-23
+ENPH,4411,Technology,2026-09-23
+ENR,1498,Miscellaneous,2026-09-23
+ENRD,541,Technology,2026-09-23
+ENS,6429,Miscellaneous,2026-09-23
+ENTA,351,Health Care,2026-09-23
+ENVA,4196,Finance,2026-09-23
+EOG,77047,Energy,2026-11-20
+EOLS,542,Health Care,2026-09-23
+EOSE,1378,Miscellaneous,2026-09-23
+EOSEW,1446,Miscellaneous,2026-09-23
+EPAC,1815,Technology,2026-09-23
+EPAM,5706,Technology,2026-09-23
+EPC,1272,Consumer Discretionary,2026-09-23
+EPR,4396,Real Estate,2026-09-23
+EPRT,5764,Real Estate,2026-09-23
+EPRX,551,Health Care,2026-09-23
+EQBK,990,Finance,2026-09-23
+EQIX,95842,Real Estate,2026-11-20
+EQPT,4652,Consumer Discretionary,2026-09-23
+EQT,30583,Energy,2026-11-20
+ERAS,5313,Health Care,2026-09-23
+ERIE,14245,Financials,2026-11-20
+ERII,354,Technology,2026-09-23
+ERO,3744,Basic Materials,2026-09-23
+EROC,2808,Energy,2026-09-23
+EROK,2949,Energy,2026-09-23
+ES,26759,Utilities,2026-11-20
+ESAB,4240,Industrials,2026-09-23
+ESE,6790,Telecommunications,2026-09-23
+ESEA,508,Consumer Discretionary,2026-09-23
+ESI,8479,Industrials,2026-09-23
+ESNT,5928,Finance,2026-09-23
+ESQ,1456,Finance,2026-09-23
+ESRT,699,Real Estate,2026-09-23
+ESS,17349,Real Estate,2026-11-20
+ESTA,2051,Health Care,2026-09-23
+ESTC,9405,Technology,2026-09-23
+ETB,458,Finance,2026-09-23
+ETD,531,Consumer Discretionary,2026-09-23
+ETN,120952,Industrials,2026-11-20
+ETO,509,Finance,2026-09-23
+ETON,1615,Health Care,2026-09-23
+ETOR,2257,Finance,2026-09-23
+ETR,49876,Utilities,2026-11-20
+ETRA,869,Health Care,2026-09-23
+ETSY,6583,Consumer Discretionary,2026-09-23
+ETV,1684,Finance,2026-09-23
+ETW,1058,Finance,2026-09-23
+EVC,721,Industrials,2026-09-23
+EVCM,1411,Technology,2026-09-23
+EVER,650,Technology,2026-09-23
+EVH,416,Consumer Discretionary,2026-09-23
+EVLV,873,Technology,2026-09-23
+EVMN,336,Health Care,2026-09-23
+EVN,402,Finance,2026-09-23
+EVRG,20150,Utilities,2026-11-20
+EVTC,1625,Technology,2026-09-23
+EW,58564,Health Care,2026-11-20
+EWTX,4634,Health Care,2026-09-23
+EXC,47295,Utilities,2026-11-20
+EXE,18770,Energy,2026-11-20
+EXK,2750,Basic Materials,2026-09-23
+EXLS,5340,Consumer Discretionary,2026-09-23
+EXP,5517,Industrials,2026-09-23
+EXPD,24862,Industrials,2026-11-20
+EXPE,27860,Consumer Discretionary,2026-11-20
+EXPO,3131,Consumer Discretionary,2026-09-23
+EXR,32333,Real Estate,2026-11-20
+EXTR,2879,Telecommunications,2026-09-23
+EYE,1267,Health Care,2026-09-23
+EYPT,341,Industrials,2026-09-23
+EZPW,1848,Consumer Discretionary,2026-09-23
+F,44604,Consumer Discretionary,2026-11-20
+FA,3411,Technology,2026-09-23
+FAC,675,Miscellaneous,2026-09-23
+FAF,7037,Finance,2026-09-23
+FANG,49064,Energy,2026-11-20
+FAST,58065,Industrials,2026-11-20
+FBIN,4684,Basic Materials,2026-09-23
+FBIOP,570,Health Care,2026-09-23
+FBIZ,584,Finance,2026-09-23
+FBK,2646,Finance,2026-09-23
+FBNC,2619,Finance,2026-09-23
+FBP,4106,Finance,2026-09-23
+FBRT,638,Real Estate,2026-09-23
+FBYD,809,Consumer Discretionary,2026-09-23
+FCBC,887,Finance,2026-09-23
+FCBM,399,Finance,2026-09-23
+FCCO,308,Finance,2026-09-23
+FCEL,1398,Energy,2026-09-23
+FCF,2097,Finance,2026-09-23
+FCFS,9380,Consumer Discretionary,2026-09-23
+FCN,3715,Consumer Discretionary,2026-09-23
+FCPT,2420,Real Estate,2026-09-23
+FCX,65993,Materials,2026-11-20
+FDBC,319,Finance,2026-09-23
+FDMT,852,Health Care,2026-09-23
+FDS,10997,Financials,2026-11-20
+FDUS,729,Finance,2026-09-23
+FDX,71194,Industrials,2026-11-20
+FDXF,17724,Industrials,2026-11-20
+FE,27225,Utilities,2026-11-20
+FEIM,952,Industrials,2026-09-23
+FELE,4262,Consumer Discretionary,2026-09-23
+FENC,378,Health Care,2026-09-23
+FERG,46596,Industrials,2026-11-20
+FET,936,Consumer Discretionary,2026-09-23
+FFBC,3296,Finance,2026-09-23
+FFIN,4627,Finance,2026-09-23
+FFIV,17270,Information Technology,2026-11-20
+FG,2895,Finance,2026-09-23
+FGBIP,302,Finance,2026-09-23
+FGN,3093,Finance,2026-09-23
+FHB,3062,Finance,2026-09-23
+FHI,4334,Finance,2026-09-23
+FIBK,3472,Finance,2026-09-23
+FICO,14845,Information Technology,2026-11-20
+FIGR,7887,Finance,2026-09-23
+FIGS,2014,Consumer Discretionary,2026-09-23
+FINS,305,Finance,2026-09-23
+FINV,763,Finance,2026-09-23
+FIP,369,Industrials,2026-09-23
+FIS,13315,Financials,2026-11-20
+FISI,792,Finance,2026-09-23
+FISN,468,Utilities,2026-09-23
+FISV,29731,Financials,2026-11-20
+FITB,44631,Financials,2026-11-20
+FIVN,2857,Technology,2026-09-23
+FIX,36472,Industrials,2026-11-20
+FIZZ,2896,Consumer Staples,2026-09-23
+FLEX,24473,Information Technology,2026-11-20
+FLG,5197,Finance,2026-09-23
+FLGT,590,Health Care,2026-09-23
+FLNC,1384,Miscellaneous,2026-09-23
+FLNG,1683,Consumer Discretionary,2026-09-23
+FLO,1220,Consumer Staples,2026-09-23
+FLOC,1737,Consumer Discretionary,2026-09-23
+FLR,7270,Industrials,2026-09-23
+FLS,9841,Industrials,2026-09-23
+FLXS,343,Consumer Discretionary,2026-09-23
+FLY,3830,Industrials,2026-09-23
+FLYW,2045,Consumer Discretionary,2026-09-23
+FMAO,486,Finance,2026-09-23
+FMBH,1303,Finance,2026-09-23
+FMC,1294,Industrials,2026-09-23
+FMN,894,Finance,2026-09-23
+FMNB,907,Finance,2026-09-23
+FNB,6220,Finance,2026-09-23
+FND,5206,Consumer Discretionary,2026-09-23
+FNKO,301,Consumer Discretionary,2026-09-23
+FNLC,387,Finance,2026-09-23
+FOF,611,Finance,2026-09-23
+FOIL,1519,Industrials,2026-09-23
+FOR,1369,Finance,2026-09-23
+FORM,9859,Technology,2026-09-23
+FORTY,1746,Technology,2026-09-23
+FOSL,368,Consumer Discretionary,2026-09-23
+FOUR,2971,Consumer Discretionary,2026-09-23
+FOX,23680,Communication Services,2026-11-20
+FOXA,35727,Communication Services,2026-11-20
+FOXF,767,Consumer Discretionary,2026-09-23
+FPH,725,Finance,2026-09-23
+FPI,469,Real Estate,2026-09-23
+FR,8154,Real Estate,2026-09-23
+FRA,1578,Finance,2026-09-23
+FRBA,443,Finance,2026-09-23
+FRBT,921,Finance,2026-09-23
+FRME,2546,Finance,2026-09-23
+FRMEP,1583,Finance,2026-09-23
+FRMI,3164,Real Estate,2026-09-23
+FRNM,1729,Health Care,2026-09-23
+FRPH,407,Finance,2026-09-23
+FRPT,2872,Consumer Staples,2026-09-23
+FRSH,3242,Technology,2026-09-23
+FRST,388,Finance,2026-09-23
+FRT,9486,Real Estate,2026-11-20
+FRVO,4732,Utilities,2026-09-23
+FSBC,1074,Finance,2026-09-23
+FSBW,346,Finance,2026-09-23
+FSCO,1067,Finance,2026-09-23
+FSK,3109,Finance,2026-09-23
+FSLR,14788,Information Technology,2026-11-20
+FSLY,3933,Technology,2026-09-23
+FSM,3545,Basic Materials,2026-09-23
+FSS,7000,Industrials,2026-09-23
+FSTR,393,Industrials,2026-09-23
+FSUN,1818,Finance,2026-09-23
+FSV,5745,Finance,2026-09-23
+FTAIM,2813,Industrials,2026-09-23
+FTDR,5127,Consumer Discretionary,2026-09-23
+FTH,865,Health Care,2026-09-23
+FTHY,478,Finance,2026-09-23
+FTK,1094,Industrials,2026-09-23
+FTNT,91515,Information Technology,2026-11-20
+FTRE,1928,Health Care,2026-09-23
+FTV,19097,Industrials,2026-11-20
+FTW,321,Energy,2026-09-23
+FUBO,1079,Consumer Discretionary,2026-09-23
+FUL,2696,Industrials,2026-09-23
+FULT,4395,Finance,2026-09-23
+FULTP,3421,Finance,2026-09-23
+FUN,1247,Consumer Discretionary,2026-09-23
+FVCB,324,Finance,2026-09-23
+FVR,439,Real Estate,2026-09-23
+FVRR,310,Consumer Discretionary,2026-09-23
+FWDI,602,Finance,2026-09-23
+FWRD,501,Industrials,2026-09-23
+FWRG,620,Consumer Discretionary,2026-09-23
+FXHO,310,Technology,2026-09-23
+G,5683,Consumer Discretionary,2026-09-23
+GAB,1591,Finance,2026-09-23
+GABC,1840,Finance,2026-09-23
+GAIN,627,Finance,2026-09-23
+GAINZ,926,Finance,2026-09-23
+GALT,414,Health Care,2026-09-23
+GAM,1565,Finance,2026-09-23
+GAP,7563,Consumer Discretionary,2026-09-23
+GASS,335,Consumer Discretionary,2026-09-23
+GATX,6436,Consumer Discretionary,2026-09-23
+GBCI,5777,Finance,2026-09-23
+GBDC,3250,Finance,2026-09-23
+GBLI,375,Finance,2026-09-23
+GBTG,4944,Consumer Discretionary,2026-09-23
+GBX,1317,Industrials,2026-09-23
+GCBC,600,Finance,2026-09-23
+GCMG,2663,Finance,2026-09-23
+GCO,369,Consumer Discretionary,2026-09-23
+GCT,1838,Consumer Discretionary,2026-09-23
+GD,92281,Industrials,2026-11-20
+GDDY,12070,Information Technology,2026-11-20
+GDOT,749,Finance,2026-09-23
+GDRX,1158,Technology,2026-09-23
+GDS,6620,Technology,2026-09-23
+GDV,2625,Finance,2026-09-23
+GDYN,630,Technology,2026-09-23
+GE,319946,Industrials,2026-11-20
+GEF,3906,,2026-09-23
+GEGGL,720,Technology,2026-09-23
+GEHC,36460,Health Care,2026-11-20
+GEL,1808,Energy,2026-09-23
+GEMI,746,Finance,2026-09-23
+GEN,17318,Information Technology,2026-11-20
+GENB,2224,Health Care,2026-09-23
+GENI,1610,Consumer Discretionary,2026-09-23
+GEO,3892,Consumer Discretionary,2026-09-23
+GEV,185097,Industrials,2026-11-20
+GFF,4357,Industrials,2026-09-23
+GFR,1527,Energy,2026-09-23
+GFUZ,527,Utilities,2026-09-23
+GGAL,6603,Finance,2026-09-23
+GGB,9860,Industrials,2026-09-23
+GHC,4871,Real Estate,2026-09-23
+GHM,1012,Industrials,2026-09-23
+GHRS,1864,Health Care,2026-09-23
+GIC,1587,Industrials,2026-09-23
+GIII,1195,Consumer Discretionary,2026-09-23
+GIL,8473,Consumer Discretionary,2026-09-23
+GILD,206430,Health Care,2026-11-20
+GILT,768,Technology,2026-09-23
+GIS,19110,Consumer Staples,2026-11-20
+GJS,7281,Finance,2026-09-23
+GKOS,9422,Health Care,2026-09-23
+GL,11440,Financials,2026-11-20
+GLAD,437,Consumer Discretionary,2026-09-23
+GLAS,702,Health Care,2026-09-23
+GLBE,6915,Technology,2026-09-23
+GLIBA,949,Telecommunications,2026-09-23
+GLIBK,952,Telecommunications,2026-09-23
+GLNG,5150,Consumer Discretionary,2026-09-23
+GLOB,1508,Technology,2026-09-23
+GLOO,435,Technology,2026-09-23
+GLP,1689,Energy,2026-09-23
+GLRE,492,Finance,2026-09-23
+GLUE,1056,Health Care,2026-09-23
+GLW,81299,Information Technology,2026-11-20
+GM,66396,Consumer Discretionary,2026-11-20
+GMAB,4551,Health Care,2026-09-23
+GMRS,590,Consumer Discretionary,2026-09-23
+GMTL,442,Basic Materials,2026-09-23
+GNE,416,Utilities,2026-09-23
+GNK,1144,Consumer Discretionary,2026-09-23
+GNL,2009,Real Estate,2026-09-23
+GNRC,11398,Industrials,2026-11-20
+GNTX,4668,Consumer Discretionary,2026-09-23
+GNW,3658,Finance,2026-09-23
+GO,1124,Consumer Staples,2026-09-23
+GOLD,1242,Industrials,2026-09-23
+GOLF,4766,Consumer Discretionary,2026-09-23
+GOOD,613,Real Estate,2026-09-23
+GOODN,1077,Real Estate,2026-09-23
+GOODO,983,Real Estate,2026-09-23
+GOOG,3245616,Communication Services,2026-11-20
+GOOGL,3261475,Communication Services,2026-11-20
+GOOS,731,Consumer Discretionary,2026-09-23
+GORO,475,Basic Materials,2026-09-23
+GPC,16338,Consumer Discretionary,2026-11-20
+GPCR,2611,Health Care,2026-09-23
+GPGI,3540,Finance,2026-09-23
+GPI,2966,Consumer Discretionary,2026-09-23
+GPK,2891,Consumer Discretionary,2026-09-23
+GPN,24302,Financials,2026-11-20
+GPOR,2821,Energy,2026-09-23
+GPRE,1068,Industrials,2026-09-23
+GPRK,725,Energy,2026-09-23
+GRAL,4847,Health Care,2026-09-23
+GRBK,2913,Consumer Discretionary,2026-09-23
+GRC,1957,Industrials,2026-09-23
+GRDN,2802,Consumer Staples,2026-09-23
+GREEL,396,Finance,2026-09-23
+GRFS,5064,Health Care,2026-09-23
+GRMN,51650,Consumer Discretionary,2026-11-20
+GRND,2699,Technology,2026-09-23
+GRNT,600,Energy,2026-09-23
+GROY,740,Basic Materials,2026-09-23
+GRPN,819,Consumer Discretionary,2026-09-23
+GRRR,391,Technology,2026-09-23
+GRVY,477,Technology,2026-09-23
+GS,228062,Financials,2026-11-20
+GSBC,853,Finance,2026-09-23
+GSBD,1091,Finance,2026-09-23
+GSHD,1592,Finance,2026-09-23
+GSL,1597,Consumer Discretionary,2026-09-23
+GSM,786,Basic Materials,2026-09-23
+GT,1527,Consumer Discretionary,2026-09-23
+GTE,355,Energy,2026-09-23
+GTES,6625,Industrials,2026-09-23
+GTLB,8118,Technology,2026-09-23
+GTM,1124,Technology,2026-09-23
+GTN,465,Industrials,2026-09-23
+GTX,4723,Consumer Discretionary,2026-09-23
+GTY,1790,Finance,2026-09-23
+GUT,443,Finance,2026-09-23
+GVA,4920,Industrials,2026-09-23
+GWW,63543,Industrials,2026-11-20
+GXO,5238,Consumer Discretionary,2026-09-23
+GYRE,808,Health Care,2026-09-23
+HAE,4973,Health Care,2026-09-23
+HAFC,943,Finance,2026-09-23
+HAFN,4573,Consumer Discretionary,2026-09-23
+HAL,25252,Energy,2026-11-20
+HAPN,1803,Finance,2026-09-23
+HAS,15722,Consumer Discretionary,2026-11-20
+HASI,4735,Finance,2026-09-23
+HAWK,1556,Technology,2026-09-23
+HAYW,2720,Industrials,2026-09-23
+HBAN,28780,Financials,2026-11-20
+HBB,461,Consumer Discretionary,2026-09-23
+HBCP,534,Finance,2026-09-23
+HBNB,1123,Consumer Discretionary,2026-09-23
+HBNC,984,Finance,2026-09-23
+HBT,1286,Finance,2026-09-23
+HCA,99343,Health Care,2026-11-20
+HCC,4744,Energy,2026-09-23
+HCI,2227,Finance,2026-09-23
+HCM,2484,Health Care,2026-09-23
+HCMA,400,Consumer Discretionary,2026-09-23
+HCSG,1476,Health Care,2026-09-23
+HCXY,4542,Finance,2026-09-23
+HD,338257,Consumer Discretionary,2026-11-20
+HDL,769,Consumer Discretionary,2026-09-23
+HE,1633,Utilities,2026-09-23
+HELE,669,Consumer Discretionary,2026-09-23
+HELP,830,Health Care,2026-09-23
+HESM,5068,Energy,2026-09-23
+HFWA,1156,Finance,2026-09-23
+HG,2812,Finance,2026-09-23
+HGTY,4656,Finance,2026-09-23
+HGV,2744,Consumer Discretionary,2026-09-23
+HHH,3924,Real Estate,2026-09-23
+HIFS,643,Finance,2026-09-23
+HIG,36593,Financials,2026-11-20
+HII,11047,Industrials,2026-11-20
+HIMS,6877,Health Care,2026-09-23
+HIMX,2466,Technology,2026-09-23
+HIPO,807,Finance,2026-09-23
+HIVE,944,Finance,2026-09-23
+HIW,3368,Real Estate,2026-09-23
+HLF,1251,Health Care,2026-09-23
+HLI,9125,Finance,2026-09-23
+HLIO,2276,Industrials,2026-09-23
+HLIT,1203,Technology,2026-09-23
+HLMN,1392,Consumer Discretionary,2026-09-23
+HLNE,4755,Finance,2026-09-23
+HLT,79267,Consumer Discretionary,2026-11-20
+HMH,811,Consumer Discretionary,2026-09-23
+HMN,1917,Finance,2026-09-23
+HNGE,7438,Technology,2026-09-23
+HNI,3351,Consumer Discretionary,2026-09-23
+HNRG,690,Utilities,2026-09-23
+HNST,567,Consumer Discretionary,2026-09-23
+HOG,2647,Consumer Discretionary,2026-09-23
+HOMB,5818,Finance,2026-09-23
+HON,67483,Industrials,2026-11-20
+HONA,47780,Industrials,2026-11-20
+HOOD,55984,Financials,2026-11-20
+HOPE,1756,Finance,2026-09-23
+HOS,1883,Energy,2026-09-23
+HOV,699,Consumer Discretionary,2026-09-23
+HP,3954,Energy,2026-09-23
+HPE,54307,Information Technology,2026-11-20
+HPK,984,Energy,2026-09-23
+HPP,649,Finance,2026-09-23
+HPQ,25214,Information Technology,2026-11-20
+HQ,862,Technology,2026-09-23
+HQH,1037,Finance,2026-09-23
+HQL,512,Finance,2026-09-23
+HQWWW,415,Technology,2026-09-23
+HQY,7568,Consumer Discretionary,2026-09-23
+HR,6164,Real Estate,2026-09-23
+HRB,5162,Consumer Discretionary,2026-09-23
+HRI,4727,Industrials,2026-09-23
+HRL,12955,Consumer Staples,2026-11-20
+HRMY,2424,Health Care,2026-09-23
+HROW,1270,Health Care,2026-09-23
+HRTG,992,Finance,2026-09-23
+HRZN,311,Finance,2026-09-23
+HSAI,2539,Industrials,2026-09-23
+HSHP,842,Consumer Discretionary,2026-09-23
+HSIC,9232,Health Care,2026-11-20
+HSLV,1097,,2026-09-23
+HST,16512,Real Estate,2026-11-20
+HSTM,886,Technology,2026-09-23
+HSY,35268,Consumer Staples,2026-11-20
+HTB,768,Finance,2026-09-23
+HTFC,1061,Finance,2026-09-23
+HTFL,4281,Health Care,2026-09-23
+HTGC,3204,Finance,2026-09-23
+HTH,2197,Finance,2026-09-23
+HTLD,901,Industrials,2026-09-23
+HTO,2609,Utilities,2026-09-23
+HUBB,21327,Industrials,2026-11-20
+HUBG,1925,Industrials,2026-09-23
+HUM,46840,Health Care,2026-11-20
+HUN,1596,Industrials,2026-09-23
+HURN,2522,Consumer Discretionary,2026-09-23
+HVT,433,Consumer Discretionary,2026-09-23
+HWC,5891,Finance,2026-09-23
+HWCPZ,1814,Finance,2026-09-23
+HWKN,2585,Consumer Discretionary,2026-09-23
+HWM,83175,Industrials,2026-11-20
+HXL,6584,Industrials,2026-09-23
+HY,585,Industrials,2026-09-23
+HYLN,779,Consumer Discretionary,2026-09-23
+HYMC,1957,Basic Materials,2026-09-23
+HZO,1158,Consumer Discretionary,2026-09-23
+IA,322,Technology,2026-09-23
+IART,1227,Health Care,2026-09-23
+IBCP,791,Finance,2026-09-23
+IBEX,556,Technology,2026-09-23
+IBKR,32256,Financials,2026-11-20
+IBM,212123,Information Technology,2026-11-20
+IBO,625,Health Care,2026-09-23
+IBOC,4343,Finance,2026-09-23
+IBP,5552,Consumer Discretionary,2026-09-23
+IBRX,9373,Health Care,2026-09-23
+IBTA,968,Consumer Discretionary,2026-09-23
+ICE,95006,Financials,2026-11-20
+ICFI,1498,Consumer Discretionary,2026-09-23
+ICHR,2087,Technology,2026-09-23
+ICL,6905,Industrials,2026-09-23
+ICUI,4118,Health Care,2026-09-23
+IDA,7464,Utilities,2026-09-23
+IDCC,8516,Miscellaneous,2026-09-23
+IDR,471,Basic Materials,2026-09-23
+IDT,1720,Telecommunications,2026-09-23
+IDXX,53276,Health Care,2026-11-20
+IDYA,3795,Health Care,2026-09-23
+IE,1645,Basic Materials,2026-09-23
+IEP,5032,Energy,2026-09-23
+IEX,16133,Industrials,2026-11-20
+IFF,19936,Materials,2026-11-20
+IFS,6182,Finance,2026-09-23
+IGIC,1067,Finance,2026-09-23
+IHS,2830,Telecommunications,2026-09-23
+IIIN,573,Industrials,2026-09-23
+IIIV,392,Technology,2026-09-23
+IIM,556,Finance,2026-09-23
+IIPR,1541,Finance,2026-09-23
+ILMN,29154,Health Care,2026-11-20
+ILPT,503,Real Estate,2026-09-23
+IMAX,2945,Consumer Discretionary,2026-09-23
+IMC,841,Basic Materials,2026-09-23
+IMCR,1640,Health Care,2026-09-23
+IMKTA,1577,Consumer Staples,2026-09-23
+IMMX,892,Health Care,2026-09-23
+IMNM,2860,Health Care,2026-09-23
+IMOS,2349,Technology,2026-09-23
+IMPPP,1180,Consumer Discretionary,2026-09-23
+IMSR,477,Industrials,2026-09-23
+IMTX,1321,Health Care,2026-09-23
+IMVT,7383,Health Care,2026-09-23
+IMXI,351,Consumer Discretionary,2026-09-23
+INBX,1574,Health Care,2026-09-23
+INCY,23364,Health Care,2026-11-20
+INDB,3816,Finance,2026-09-23
+INDI,703,Technology,2026-09-23
+INDP,529,Health Care,2026-09-23
+INDV,4315,Health Care,2026-09-23
+INFQ,3227,Technology,2026-09-23
+INGM,6297,Technology,2026-09-23
+INGR,6124,Consumer Staples,2026-09-23
+INMD,823,Health Care,2026-09-23
+INN,606,Real Estate,2026-09-23
+INNV,1307,Health Care,2026-09-23
+INOD,2325,Technology,2026-09-23
+INR,830,Energy,2026-09-23
+INSP,2051,Health Care,2026-09-23
+INSW,5013,Consumer Discretionary,2026-09-23
+INTA,2752,Technology,2026-09-23
+INTC,272553,Information Technology,2026-11-20
+INTR,2427,Finance,2026-09-23
+INTU,72271,Information Technology,2026-11-20
+INVA,1511,Health Care,2026-09-23
+INVH,15113,Real Estate,2026-11-20
+INVX,1954,Consumer Discretionary,2026-09-23
+IOND,3958,Finance,2026-09-23
+IONS,7422,Health Care,2026-09-23
+IOSP,2366,Industrials,2026-09-23
+IOVA,4811,Health Care,2026-09-23
+IP,16079,Materials,2026-11-20
+IPAR,3811,Consumer Discretionary,2026-09-23
+IPGP,3307,Technology,2026-09-23
+IPI,497,Industrials,2026-09-23
+IPX,675,Basic Materials,2026-09-23
+IQI,508,Finance,2026-09-23
+IQMX,1975,Technology,2026-09-23
+IQV,40511,Health Care,2026-11-20
+IR,30069,Industrials,2026-11-20
+IRD,417,Health Care,2026-09-23
+IRDM,5164,Consumer Discretionary,2026-09-23
+IRM,30445,Real Estate,2026-11-20
+IRMD,1107,Health Care,2026-09-23
+IRON,2608,Health Care,2026-09-23
+IRS,1241,Real Estate,2026-09-23
+IRT,3451,Real Estate,2026-09-23
+IRTC,3806,Health Care,2026-09-23
+IRWD,734,Health Care,2026-09-23
+ISOU,643,,2026-09-23
+ISRG,138328,Health Care,2026-11-20
+ISTR,411,Finance,2026-09-23
+IT,11007,Information Technology,2026-11-20
+ITG,1263,Industrials,2026-09-23
+ITGR,4297,Health Care,2026-09-23
+ITIC,551,Finance,2026-09-23
+ITRI,4062,Industrials,2026-09-23
+ITRN,1041,Technology,2026-09-23
+ITW,77749,Industrials,2026-11-20
+IVA,827,Health Care,2026-09-23
+IVR,703,Real Estate,2026-09-23
+IVT,2373,Real Estate,2026-09-23
+IVZ,11652,Financials,2026-11-20
+J,17628,Industrials,2026-11-20
+JAN,9116,Real Estate,2026-09-23
+JANX,1061,Health Care,2026-09-23
+JBGS,797,Real Estate,2026-09-23
+JBHT,20372,Industrials,2026-11-20
+JBI,589,Industrials,2026-09-23
+JBIO,1028,Health Care,2026-09-23
+JBL,23249,Information Technology,2026-11-20
+JBLU,1661,Consumer Discretionary,2026-09-23
+JBSS,782,Consumer Staples,2026-09-23
+JBTM,5868,Industrials,2026-09-23
+JCAP,1107,Finance,2026-09-23
+JCI,78134,Industrials,2026-11-20
+JEF,9156,Finance,2026-09-23
+JILL,355,Consumer Discretionary,2026-09-23
+JJSF,1457,Consumer Staples,2026-09-23
+JKHY,11927,Financials,2026-11-20
+JKS,532,Technology,2026-09-23
+JMIA,916,Consumer Discretionary,2026-09-23
+JMKE,5629,Consumer Discretionary,2026-09-23
+JMSB,326,Finance,2026-09-23
+JNJ,651105,Health Care,2026-11-20
+JOBY,6242,Industrials,2026-09-23
+JOE,3718,Real Estate,2026-09-23
+JOUT,464,Consumer Discretionary,2026-09-23
+JOYY,4076,Technology,2026-09-23
+JPM,824646,Financials,2026-11-20
+JSM,1743,Finance,2026-09-23
+JXN,8838,Finance,2026-09-23
+KAI,3236,Industrials,2026-09-23
+KALU,2473,Industrials,2026-09-23
+KARD,1506,Health Care,2026-09-23
+KARO,1990,Technology,2026-09-23
+KBDC,865,,2026-09-23
+KBH,2960,Consumer Discretionary,2026-09-23
+KBR,4468,Industrials,2026-09-23
+KC,2904,Technology,2026-09-23
+KD,2619,Technology,2026-09-23
+KDK,621,Technology,2026-09-23
+KDP,49738,Consumer Staples,2026-11-20
+KE,639,Technology,2026-09-23
+KEEL,2495,Finance,2026-09-23
+KELYA,574,Consumer Discretionary,2026-09-23
+KELYB,775,Consumer Discretionary,2026-09-23
+KEN,3432,Utilities,2026-09-23
+KEX,7000,Consumer Discretionary,2026-09-23
+KEY,20539,Financials,2026-11-20
+KEYS,44521,Information Technology,2026-11-20
+KFRC,922,Consumer Discretionary,2026-09-23
+KFY,4093,Consumer Discretionary,2026-09-23
+KGS,5462,Utilities,2026-09-23
+KHC,30057,Consumer Staples,2026-11-20
+KIDS,594,Health Care,2026-09-23
+KIM,16858,Real Estate,2026-11-20
+KKR,78990,Financials,2026-11-20
+KLAC,165307,Information Technology,2026-11-20
+KLAR,9107,Finance,2026-09-23
+KLIC,4561,Technology,2026-09-23
+KLRA,1681,Health Care,2026-09-23
+KMB,65283,Consumer Staples,2026-11-20
+KMDA,508,Health Care,2026-09-23
+KMI,67633,Energy,2026-11-20
+KMPB,1459,Finance,2026-09-23
+KMPR,1528,Finance,2026-09-23
+KMT,2267,Industrials,2026-09-23
+KMTS,1545,Health Care,2026-09-23
+KMX,7819,Consumer Discretionary,2026-09-23
+KN,3117,Consumer Staples,2026-09-23
+KNF,3000,Industrials,2026-09-23
+KNOP,372,Consumer Discretionary,2026-09-23
+KNSA,6067,Health Care,2026-09-23
+KNSL,7952,Finance,2026-09-23
+KNTK,8686,Utilities,2026-09-23
+KO,417242,Consumer Staples,2026-11-20
+KOD,2056,Health Care,2026-09-23
+KODK,929,Consumer Discretionary,2026-09-23
+KOF,5817,Consumer Staples,2026-09-23
+KOP,861,Basic Materials,2026-09-23
+KOPN,889,Technology,2026-09-23
+KPLT,689,Consumer Discretionary,2026-09-23
+KR,40420,Consumer Staples,2026-11-20
+KRC,4023,Real Estate,2026-09-23
+KREF,379,Real Estate,2026-09-23
+KRG,4987,Real Estate,2026-09-23
+KRMN,4482,Industrials,2026-09-23
+KRNT,651,Industrials,2026-09-23
+KRNY,618,Finance,2026-09-23
+KRO,977,Basic Materials,2026-09-23
+KRP,1668,Energy,2026-09-23
+KRT,1037,Industrials,2026-09-23
+KRUS,449,Consumer Discretionary,2026-09-23
+KSS,2053,Consumer Discretionary,2026-09-23
+KT,9328,Telecommunications,2026-09-23
+KTB,3634,Industrials,2026-09-23
+KTF,329,Finance,2026-09-23
+KTOS,8926,Industrials,2026-09-23
+KURA,1015,Health Care,2026-09-23
+KVUE,37109,Consumer Staples,2026-11-20
+KVYO,4601,Technology,2026-09-23
+KWR,2707,Industrials,2026-09-23
+KYIV,3000,Telecommunications,2026-09-23
+KYIVW,1137,Telecommunications,2026-09-23
+KYMR,9987,Health Care,2026-09-23
+KYN,1944,Finance,2026-09-23
+KYTX,450,Health Care,2026-09-23
+L,22123,Financials,2026-11-20
+LAD,6797,Consumer Discretionary,2026-09-23
+LADR,1179,Real Estate,2026-09-23
+LAND,417,Real Estate,2026-09-23
+LANDO,852,Real Estate,2026-09-23
+LANDP,858,Real Estate,2026-09-23
+LAR,961,Basic Materials,2026-09-23
+LASR,2338,Technology,2026-09-23
+LAUR,4945,Real Estate,2026-09-23
+LAZ,3582,Finance,2026-09-23
+LB,6685,Energy,2026-09-23
+LBRT,3002,Energy,2026-09-23
+LBRX,1358,Health Care,2026-09-23
+LBTYA,3331,Telecommunications,2026-09-23
+LBTYB,4212,Telecommunications,2026-09-23
+LBTYK,3266,Telecommunications,2026-09-23
+LCID,1629,Industrials,2026-09-23
+LCII,2065,Consumer Discretionary,2026-09-23
+LCLN,2474,Finance,2026-09-23
+LDOS,14909,Industrials,2026-11-20
+LE,305,Consumer Discretionary,2026-09-23
+LEA,5968,Consumer Discretionary,2026-09-23
+LEGH,687,Consumer Discretionary,2026-09-23
+LEGN,3679,Health Care,2026-09-23
+LEGO,303,Industrials,2026-09-23
+LEN,19208,Consumer Discretionary,2026-11-20
+LEO,358,Finance,2026-09-23
+LEU,3004,Industrials,2026-09-23
+LEVI,7594,Consumer Discretionary,2026-09-23
+LFMDP,1125,Health Care,2026-09-23
+LFST,4710,Health Care,2026-09-23
+LFTO,2728,Technology,2026-09-23
+LGIH,1172,Consumer Discretionary,2026-09-23
+LGN,5751,Consumer Discretionary,2026-09-23
+LGND,5994,Health Care,2026-09-23
+LH,29811,Health Care,2026-11-20
+LHX,46530,Industrials,2026-11-20
+LIF,3274,Technology,2026-09-23
+LIFE,2264,Finance,2026-09-23
+LII,11442,Industrials,2026-11-20
+LILA,1714,Telecommunications,2026-09-23
+LILAK,1697,Telecommunications,2026-09-23
+LILAP,4083,Telecommunications,2026-09-23
+LIME,1810,Technology,2026-09-23
+LIN,230841,Materials,2026-11-20
+LINC,769,Real Estate,2026-09-23
+LIND,1747,Consumer Discretionary,2026-09-23
+LINE,8332,Real Estate,2026-09-23
+LION,3330,Consumer Discretionary,2026-09-23
+LITE,41764,Information Technology,2026-11-20
+LIVN,4319,Health Care,2026-09-23
+LKFN,1467,Finance,2026-09-23
+LKFT,2128,Health Care,2026-09-23
+LKQ,5943,Consumer Discretionary,2026-09-23
+LLY,1199932,Health Care,2026-11-20
+LLYVA,8723,Industrials,2026-09-23
+LLYVK,9050,Industrials,2026-09-23
+LMAT,1854,Health Care,2026-09-23
+LMB,612,Consumer Discretionary,2026-09-23
+LMND,3563,Finance,2026-09-23
+LMRI,980,Health Care,2026-09-23
+LMT,130633,Industrials,2026-11-20
+LNC,7878,Finance,2026-09-23
+LND,368,Consumer Staples,2026-09-23
+LNN,1182,Industrials,2026-09-23
+LNT,18575,Utilities,2026-11-20
+LNTH,6531,Health Care,2026-09-23
+LOAR,5946,Industrials,2026-09-23
+LOB,1737,Finance,2026-09-23
+LOCO,430,Consumer Discretionary,2026-09-23
+LOMA,1117,Industrials,2026-09-23
+LOPE,3843,Real Estate,2026-09-23
+LOW,123827,Consumer Discretionary,2026-11-20
+LPG,2261,Consumer Discretionary,2026-09-23
+LPTH,698,Technology,2026-09-23
+LPX,4700,Basic Materials,2026-09-23
+LQDA,6077,Health Care,2026-09-23
+LQDT,1335,Consumer Discretionary,2026-09-23
+LRCX,228936,Information Technology,2026-11-20
+LRMR,393,Health Care,2026-09-23
+LRN,3233,Real Estate,2026-09-23
+LSAK,363,Finance,2026-09-23
+LSPD,1266,Technology,2026-09-23
+LSTR,5675,Industrials,2026-09-23
+LTC,2280,Real Estate,2026-09-23
+LTGO,1360,Health Care,2026-09-23
+LTH,8250,Consumer Discretionary,2026-09-23
+LUCK,725,Consumer Discretionary,2026-09-23
+LULU,11886,Consumer Discretionary,2026-11-20
+LUMN,6390,Telecommunications,2026-09-23
+LUNR,3599,Industrials,2026-09-23
+LUV,21582,Industrials,2026-11-20
+LUXE,1273,Consumer Discretionary,2026-09-23
+LVS,24359,Consumer Discretionary,2026-11-20
+LW,6264,Consumer Staples,2026-09-23
+LWAY,353,Consumer Staples,2026-09-23
+LWLG,822,Industrials,2026-09-23
+LXEO,326,Health Care,2026-09-23
+LXFR,462,Basic Materials,2026-09-23
+LXP,3588,Real Estate,2026-09-23
+LXU,764,Basic Materials,2026-09-23
+LYB,18050,Materials,2026-11-20
+LYFT,5565,Consumer Discretionary,2026-09-23
+LYNX,1542,Industrials,2026-09-23
+LYTS,753,Consumer Discretionary,2026-09-23
+LYV,41237,Communication Services,2026-11-20
+LZ,985,Technology,2026-09-23
+LZB,1203,Consumer Discretionary,2026-09-23
+LZM,346,Basic Materials,2026-09-23
+M,5948,Consumer Discretionary,2026-09-23
+MA,544999,Financials,2026-11-20
+MAA,13097,Real Estate,2026-11-20
+MAAS,6810,Finance,2026-09-23
+MAC,6420,Real Estate,2026-09-23
+MAGN,425,Basic Materials,2026-09-23
+MAIN,5200,Finance,2026-09-23
+MAKO,869,Basic Materials,2026-09-23
+MAMA,622,Consumer Staples,2026-09-23
+MAN,2638,Consumer Discretionary,2026-09-23
+MANE,4819,Health Care,2026-09-23
+MANU,3411,Consumer Discretionary,2026-09-23
+MAR,104712,Consumer Discretionary,2026-11-20
+MARA,5174,Finance,2026-09-23
+MAS,15923,Industrials,2026-11-20
+MASS,461,Industrials,2026-09-23
+MAT,3748,Consumer Discretionary,2026-09-23
+MATV,684,Basic Materials,2026-09-23
+MATW,622,Telecommunications,2026-09-23
+MATX,6748,Consumer Discretionary,2026-09-23
+MAX,576,Consumer Discretionary,2026-09-23
+MAZE,1590,Health Care,2026-09-23
+MBC,1463,Consumer Discretionary,2026-09-23
+MBGL,5563,Consumer Discretionary,2026-09-23
+MBIN,2370,Finance,2026-09-23
+MBINL,1116,Finance,2026-09-23
+MBINM,1162,Finance,2026-09-23
+MBINN,905,Finance,2026-09-23
+MBLY,6355,Technology,2026-09-23
+MBUU,460,Industrials,2026-09-23
+MBWM,1019,Finance,2026-09-23
+MBX,2940,Health Care,2026-09-23
+MC,4592,Finance,2026-09-23
+MCB,1098,Finance,2026-09-23
+MCBS,1001,Finance,2026-09-23
+MCD,192849,Consumer Discretionary,2026-11-20
+MCFT,483,Industrials,2026-09-23
+MCHB,3332,Finance,2026-09-23
+MCHP,30172,Information Technology,2026-11-20
+MCI,384,Finance,2026-09-23
+MCK,123473,Health Care,2026-11-20
+MCO,80493,Financials,2026-11-20
+MCRI,2100,Consumer Discretionary,2026-09-23
+MCS,855,Consumer Discretionary,2026-09-23
+MCY,5410,Finance,2026-09-23
+MD,2123,Health Care,2026-09-23
+MDA,5120,Consumer Discretionary,2026-09-23
+MDLZ,83900,Consumer Staples,2026-11-20
+MDT,127837,Health Care,2026-11-20
+MDU,3874,Industrials,2026-09-23
+MDXG,720,Health Care,2026-09-23
+MEC,442,Industrials,2026-09-23
+MEI,495,Technology,2026-09-23
+MEOH,4495,Industrials,2026-09-23
+MESO,2019,Health Care,2026-09-23
+MET,60123,Financials,2026-11-20
+META,1433642,Communication Services,2026-11-20
+METC,594,Energy,2026-09-23
+METCB,310,Energy,2026-09-23
+MFA,853,Real Estate,2026-09-23
+MFAN,2586,Real Estate,2026-09-23
+MFAO,2600,Real Estate,2026-09-23
+MFI,469,Technology,2026-09-23
+MFIC,744,Finance,2026-09-23
+MFICL,2348,Finance,2026-09-23
+MFP,2030,Industrials,2026-09-23
+MG,661,Consumer Discretionary,2026-09-23
+MGEE,2703,Energy,2026-09-23
+MGM,8187,Consumer Discretionary,2026-11-20
+MGNI,3457,Technology,2026-09-23
+MGR,557,Finance,2026-09-23
+MGRB,456,Finance,2026-09-23
+MGRC,2745,Consumer Discretionary,2026-09-23
+MGRD,408,Finance,2026-09-23
+MGRE,622,Finance,2026-09-23
+MGRT,1650,Technology,2026-09-23
+MGTX,1172,Health Care,2026-09-23
+MGY,6589,Energy,2026-09-23
+MH,2572,Consumer Discretionary,2026-09-23
+MHD,1605,Finance,2026-09-23
+MHK,8234,Consumer Discretionary,2026-09-23
+MHO,3556,Consumer Discretionary,2026-09-23
+MIAX,3631,Finance,2026-09-23
+MIDD,5119,Industrials,2026-09-23
+MIR,4087,Industrials,2026-09-23
+MIRM,5889,Health Care,2026-09-23
+MITK,798,Technology,2026-09-23
+MITN,750,Real Estate,2026-09-23
+MITP,751,Real Estate,2026-09-23
+MIY,1779,Finance,2026-09-23
+MKC,12754,Consumer Staples,2026-11-20
+MKTX,5765,Finance,2026-09-23
+MLAB,758,Industrials,2026-09-23
+MLCO,1847,Consumer Discretionary,2026-09-23
+MLKN,1353,Consumer Discretionary,2026-09-23
+MLM,35612,Materials,2026-11-20
+MLP,323,Finance,2026-09-23
+MLR,613,Consumer Discretionary,2026-09-23
+MLTX,1145,Health Care,2026-09-23
+MLYS,2574,Health Care,2026-09-23
+MMED,5870,Health Care,2026-09-23
+MMI,1144,Finance,2026-09-23
+MMM,91973,Industrials,2026-11-20
+MMS,2881,Consumer Discretionary,2026-09-23
+MMSI,5241,Health Care,2026-09-23
+MMYT,4473,Consumer Discretionary,2026-09-23
+MNDY,3701,Technology,2026-09-23
+MNKD,1106,Health Care,2026-09-23
+MNPR,639,Health Care,2026-09-23
+MNR,1817,Energy,2026-09-23
+MNRO,420,Consumer Discretionary,2026-09-23
+MNSO,2771,Consumer Discretionary,2026-09-23
+MNST,85524,Consumer Staples,2026-11-20
+MNTN,806,Consumer Discretionary,2026-09-23
+MO,124542,Consumer Staples,2026-11-20
+MOBI,321,Health Care,2026-09-23
+MOH,9846,Health Care,2026-09-23
+MOMO,738,Technology,2026-09-23
+MORN,7448,Finance,2026-09-23
+MOS,5932,Materials,2026-11-20
+MOV,739,Consumer Discretionary,2026-09-23
+MOVE,349,Technology,2026-09-23
+MP,8843,Basic Materials,2026-09-23
+MPB,927,Finance,2026-09-23
+MPC,99979,Energy,2026-11-20
+MPLT,691,Health Care,2026-09-23
+MPT,2117,Real Estate,2026-09-23
+MPTI,321,Technology,2026-09-23
+MPWR,55695,Information Technology,2026-11-20
+MQ,1641,Technology,2026-09-23
+MQY,1534,Finance,2026-09-23
+MRAM,414,Technology,2026-09-23
+MRCY,5051,Technology,2026-09-23
+MRK,329653,Health Care,2026-11-20
+MRNA,78901,Health Care,2026-11-20
+MRP,4683,Finance,2026-09-23
+MRSH,98061,Financials,2026-11-20
+MRTN,1077,Industrials,2026-09-23
+MRVI,1905,Health Care,2026-09-23
+MRVL,110023,Information Technology,2026-11-20
+MRX,5343,Finance,2026-09-23
+MS,258949,Financials,2026-11-20
+MSA,6948,Health Care,2026-09-23
+MSBI,675,Finance,2026-09-23
+MSBIP,526,Finance,2026-09-23
+MSCI,43649,Financials,2026-11-20
+MSEX,1024,Utilities,2026-09-23
+MSFT,3598140,Information Technology,2026-11-20
+MSGE,3754,Consumer Discretionary,2026-09-23
+MSGS,9514,Consumer Discretionary,2026-09-23
+MSI,86008,Information Technology,2026-11-20
+MSIF,565,Finance,2026-09-23
+MSM,6846,Industrials,2026-09-23
+MTA,942,Basic Materials,2026-09-23
+MTAL,838,Basic Materials,2026-09-23
+MTB,29877,Financials,2026-11-20
+MTC,683,Technology,2026-09-23
+MTCH,9301,Technology,2026-09-23
+MTD,33155,Health Care,2026-11-20
+MTDR,6505,Energy,2026-09-23
+MTG,6063,Finance,2026-09-23
+MTH,4272,Consumer Discretionary,2026-09-23
+MTLS,460,Technology,2026-09-23
+MTN,4958,Consumer Discretionary,2026-09-23
+MTRN,5250,Industrials,2026-09-23
+MTUS,788,Industrials,2026-09-23
+MTW,801,Industrials,2026-09-23
+MTX,2081,Basic Materials,2026-09-23
+MU,672642,Information Technology,2026-11-20
+MUA,1430,Finance,2026-09-23
+MUC,1494,Finance,2026-09-23
+MUJ,1705,Finance,2026-09-23
+MUR,5183,Energy,2026-09-23
+MUSA,9325,Consumer Discretionary,2026-09-23
+MUX,1161,Basic Materials,2026-09-23
+MVBF,390,Finance,2026-09-23
+MWA,3435,Industrials,2026-09-23
+MWH,5238,Industrials,2026-09-23
+MXL,7495,Technology,2026-09-23
+MYE,1194,Industrials,2026-09-23
+MYFW,302,Finance,2026-09-23
+MYGN,388,Health Care,2026-09-23
+MYI,1477,Finance,2026-09-23
+MYRG,4530,Industrials,2026-09-23
+MZTI,2786,Consumer Staples,2026-09-23
+NABL,778,Technology,2026-09-23
+NAMS,2765,Health Care,2026-09-23
+NAMSW,1373,Health Care,2026-09-23
+NAN,3065,Finance,2026-09-23
+NAT,1591,Consumer Discretionary,2026-09-23
+NATH,397,Consumer Discretionary,2026-09-23
+NATL,3410,Miscellaneous,2026-09-23
+NAVI,866,Finance,2026-09-23
+NAVN,5156,Technology,2026-09-23
+NB,523,Basic Materials,2026-09-23
+NBBK,996,Finance,2026-09-23
+NBHC,1786,Finance,2026-09-23
+NBN,1064,Finance,2026-09-23
+NBR,1400,Energy,2026-09-23
+NBTB,2643,Finance,2026-09-23
+NBTX,1802,Health Care,2026-09-23
+NCDL,590,,2026-09-23
+NCLH,7344,Consumer Discretionary,2026-11-20
+NCNO,2023,Technology,2026-09-23
+NCV,1421,Finance,2026-09-23
+NCZ,1132,Finance,2026-09-23
+NDAQ,57117,Financials,2026-11-20
+NDMO,535,Finance,2026-09-23
+NDSN,17112,Industrials,2026-11-20
+NE,7205,Energy,2026-09-23
+NECB,368,Finance,2026-09-23
+NEE,175020,Utilities,2026-11-20
+NEM,98391,Materials,2026-11-20
+NEO,2400,Health Care,2026-09-23
+NEOG,3025,Health Care,2026-09-23
+NESR,3303,Energy,2026-09-23
+NEU,8155,Industrials,2026-09-23
+NEWP,1200,Basic Materials,2026-09-23
+NEWT,333,Finance,2026-09-23
+NEWTG,665,Finance,2026-09-23
+NEWTI,659,Finance,2026-09-23
+NEWTP,722,Finance,2026-09-23
+NEXA,1691,Basic Materials,2026-09-23
+NEXN,484,Technology,2026-09-23
+NEXT,1818,Utilities,2026-09-23
+NFEGP,7998,Utilities,2026-09-23
+NFG,7647,Utilities,2026-09-23
+NFLX,232952,Communication Services,2026-11-20
+NG,3181,Basic Materials,2026-09-23
+NGL,2003,Utilities,2026-09-23
+NGNE,661,Health Care,2026-09-23
+NGS,431,Energy,2026-09-23
+NGVC,684,Consumer Staples,2026-09-23
+NGVT,2423,Industrials,2026-09-23
+NHC,3485,Health Care,2026-09-23
+NHI,3288,Real Estate,2026-09-23
+NHP,1198,Real Estate,2026-09-23
+NHPBP,1849,Real Estate,2026-09-23
+NI,21240,Utilities,2026-11-20
+NIC,3464,Finance,2026-09-23
+NICE,7203,Technology,2026-09-23
+NIE,705,Finance,2026-09-23
+NIO,9221,Industrials,2026-09-23
+NIQ,5255,Technology,2026-09-23
+NJR,5315,Utilities,2026-09-23
+NKE,48896,Consumer Discretionary,2026-11-20
+NKLR,434,Industrials,2026-09-23
+NKTR,2029,Health Care,2026-09-23
+NL,342,Basic Materials,2026-09-23
+NMAX,1392,Industrials,2026-09-23
+NMCO,514,Finance,2026-09-23
+NMFC,668,Finance,2026-09-23
+NMFCZ,2702,,2026-09-23
+NMIH,3214,Finance,2026-09-23
+NMM,2577,Consumer Discretionary,2026-09-23
+NMRK,2481,Finance,2026-09-23
+NN,2524,Industrials,2026-09-23
+NNBR,322,Industrials,2026-09-23
+NNE,913,Utilities,2026-09-23
+NNI,4502,Finance,2026-09-23
+NNN,7903,Real Estate,2026-09-23
+NNNN,817,Health Care,2026-09-23
+NOA,348,Energy,2026-09-23
+NOAH,540,Finance,2026-09-23
+NOC,75906,Industrials,2026-11-20
+NODK,306,Finance,2026-09-23
+NOG,2442,Energy,2026-09-23
+NOMD,1524,Consumer Staples,2026-09-23
+NOV,7278,Consumer Discretionary,2026-09-23
+NOVT,5419,Miscellaneous,2026-09-23
+NOVTU,2306,Miscellaneous,2026-09-23
+NOW,90932,Information Technology,2026-11-20
+NP,3766,Finance,2026-09-23
+NPB,545,Finance,2026-09-23
+NPCE,505,Health Care,2026-09-23
+NPK,1066,Industrials,2026-09-23
+NPKI,996,Industrials,2026-09-23
+NPO,6357,Industrials,2026-09-23
+NRC,481,Health Care,2026-09-23
+NRDS,517,Technology,2026-09-23
+NREF,304,Real Estate,2026-09-23
+NRG,18440,Utilities,2026-11-20
+NRGV,828,Miscellaneous,2026-09-23
+NRIM,555,Finance,2026-09-23
+NRIX,2613,Health Care,2026-09-23
+NRP,1454,Energy,2026-09-23
+NSC,69858,Industrials,2026-11-20
+NSIT,4614,Consumer Discretionary,2026-09-23
+NSLRL,662,Finance,2026-09-23
+NSP,1872,Consumer Discretionary,2026-09-23
+NSSC,1270,Telecommunications,2026-09-23
+NTAP,30965,Information Technology,2026-11-20
+NTB,2340,Finance,2026-09-23
+NTCT,2870,Technology,2026-09-23
+NTGR,604,Utilities,2026-09-23
+NTLA,1740,Health Care,2026-09-23
+NTRS,29377,Financials,2026-11-20
+NTRSO,3293,Finance,2026-09-23
+NTSK,7618,Technology,2026-09-23
+NTST,1835,Real Estate,2026-09-23
+NUAI,734,Energy,2026-09-23
+NUAIW,331,Energy,2026-09-23
+NUE,53901,Materials,2026-11-20
+NUTX,1416,Consumer Discretionary,2026-09-23
+NUVB,2116,Health Care,2026-09-23
+NVA,2555,Basic Materials,2026-09-23
+NVAX,1782,Health Care,2026-09-23
+NVCR,1919,Health Care,2026-09-23
+NVCT,725,Health Care,2026-09-23
+NVDA,3031173,Information Technology,2026-11-20
+NVEC,514,Technology,2026-09-23
+NVGS,1425,Consumer Discretionary,2026-09-23
+NVR,14467,Consumer Discretionary,2026-11-20
+NVRI,577,Miscellaneous,2026-09-23
+NVST,3864,Health Care,2026-09-23
+NVTS,3129,Technology,2026-09-23
+NWBI,2224,Finance,2026-09-23
+NWCL,4177,Industrials,2026-09-23
+NWE,4247,Utilities,2026-09-23
+NWFL,371,Finance,2026-09-23
+NWL,2451,Industrials,2026-09-23
+NWN,1978,Utilities,2026-09-23
+NWPX,984,Industrials,2026-09-23
+NWS,14953,Communication Services,2026-11-20
+NWSA,13440,Communication Services,2026-11-20
+NX,919,Industrials,2026-09-23
+NXE,6490,Basic Materials,2026-09-23
+NXH,320,Consumer Discretionary,2026-09-23
+NXP,627,Finance,2026-09-23
+NXPI,59270,Information Technology,2026-11-20
+NXRT,547,Real Estate,2026-09-23
+NXST,5108,Industrials,2026-09-23
+NYAX,1602,Technology,2026-09-23
+O,55186,Real Estate,2026-11-20
+OABI,718,Health Care,2026-09-23
+OBDC,5429,Finance,2026-09-23
+OBE,759,Energy,2026-09-23
+OBIO,367,Health Care,2026-09-23
+OBK,1641,Finance,2026-09-23
+OBT,500,Finance,2026-09-23
+OBX,1026,Health Care,2026-09-23
+OC,9801,Industrials,2026-09-23
+OCFC,1680,Finance,2026-09-23
+OCS,604,Health Care,2026-09-23
+OCSL,1081,Finance,2026-09-23
+OCTV,5214,Technology,2026-09-23
+OCUL,2283,Health Care,2026-09-23
+ODC,1322,Consumer Discretionary,2026-09-23
+ODD,1045,Consumer Discretionary,2026-09-23
+ODFL,34633,Industrials,2026-11-20
+ODTX,1085,Health Care,2026-09-23
+OEC,342,Industrials,2026-09-23
+OFG,2200,Finance,2026-09-23
+OFIX,371,Health Care,2026-09-23
+OFRM,680,Consumer Staples,2026-09-23
+OFSSH,319,Finance,2026-09-23
+OGC,6215,,2026-09-23
+OGE,9199,Utilities,2026-09-23
+OGN,3599,Health Care,2026-09-23
+OGS,4543,Utilities,2026-09-23
+OI,935,Consumer Discretionary,2026-09-23
+OIG,973,Finance,2026-09-23
+OII,4588,Energy,2026-09-23
+OIS,500,Consumer Discretionary,2026-09-23
+OKE,53191,Energy,2026-11-20
+OKLO,7428,Utilities,2026-09-23
+OLED,3550,Technology,2026-09-23
+OLLI,4957,Consumer Discretionary,2026-09-23
+OLMA,805,Health Care,2026-09-23
+OLN,1925,Industrials,2026-09-23
+OLP,498,Real Estate,2026-09-23
+OMAB,4928,Consumer Discretionary,2026-09-23
+OMC,23241,Communication Services,2026-11-20
+OMCL,1503,Technology,2026-09-23
+OMDA,1257,Health Care,2026-09-23
+OMER,1507,Health Care,2026-09-23
+OMF,6623,Finance,2026-09-23
+ON,23684,Information Technology,2026-11-20
+ONB,9593,Finance,2026-09-23
+ONBPO,9541,Finance,2026-09-23
+ONBPP,9514,Finance,2026-09-23
+ONDS,4396,Technology,2026-09-23
+ONT,570,Consumer Discretionary,2026-09-23
+OOMA,610,Technology,2026-09-23
+OPCH,3602,Health Care,2026-09-23
+OPFI,534,Finance,2026-09-23
+OPI,384,Finance,2026-09-23
+OPLN,4167,Consumer Discretionary,2026-09-23
+OPRA,1592,Technology,2026-09-23
+OPRT,376,Finance,2026-09-23
+OPY,1220,Finance,2026-09-23
+OR,6754,Basic Materials,2026-09-23
+ORA,5956,Utilities,2026-09-23
+ORC,1206,Real Estate,2026-09-23
+ORCL,315481,Information Technology,2026-11-20
+ORI,9360,Finance,2026-09-23
+ORIC,1395,Health Care,2026-09-23
+ORKA,6051,Health Care,2026-09-23
+ORLY,74310,Consumer Discretionary,2026-11-20
+ORN,364,Industrials,2026-09-23
+ORRF,815,Finance,2026-09-23
+OSBC,1257,Finance,2026-09-23
+OSCR,9222,Health Care,2026-09-23
+OSIS,3212,Technology,2026-09-23
+OSK,8391,Industrials,2026-09-23
+OSPN,645,Technology,2026-09-23
+OSW,2257,Consumer Discretionary,2026-09-23
+OTEX,5731,Technology,2026-09-23
+OTF,4770,,2026-09-23
+OTIS,28953,Industrials,2026-11-20
+OTLY,382,Consumer Staples,2026-09-23
+OTTR,3754,Utilities,2026-09-23
+OUST,2750,Industrials,2026-09-23
+OUT,4931,Real Estate,2026-09-23
+OXLC,1545,Finance,2026-09-23
+OXLCL,4167,Finance,2026-09-23
+OXLCM,4356,Finance,2026-09-23
+OXLCN,4251,Finance,2026-09-23
+OXLCO,4123,Finance,2026-09-23
+OXLCZ,4326,Finance,2026-09-23
+OXM,402,Industrials,2026-09-23
+OXSQG,1555,Consumer Discretionary,2026-09-23
+OXY,53894,Energy,2026-11-20
+OZK,5304,Finance,2026-09-23
+OZKAP,1712,Finance,2026-09-23
+P,30674,Information Technology,2026-11-20
+PACK,354,Consumer Discretionary,2026-09-23
+PACS,6598,Health Care,2026-09-23
+PAGP,5353,Energy,2026-09-23
+PAGS,2711,Technology,2026-09-23
+PAHC,1413,Health Care,2026-09-23
+PAM,4436,Utilities,2026-09-23
+PANL,536,Consumer Discretionary,2026-09-23
+PANW,281866,Information Technology,2026-11-20
+PAR,599,Miscellaneous,2026-09-23
+PARR,3940,Energy,2026-09-23
+PATH,6599,Technology,2026-09-23
+PATK,2223,Consumer Discretionary,2026-09-23
+PAX,1679,Finance,2026-09-23
+PAY,3878,Consumer Discretionary,2026-09-23
+PAYC,9917,Technology,2026-09-23
+PAYO,2423,Consumer Discretionary,2026-09-23
+PAYS,710,Technology,2026-09-23
+PAYX,40094,Industrials,2026-11-20
+PB,8258,Finance,2026-09-23
+PBAM,510,Finance,2026-09-23
+PBF,8620,Energy,2026-09-23
+PBFS,446,Finance,2026-09-23
+PBH,2197,Health Care,2026-09-23
+PBI,2255,Miscellaneous,2026-09-23
+PBLS,4410,Health Care,2026-09-23
+PBT,1542,Energy,2026-09-23
+PBYI,507,Health Care,2026-09-23
+PCAR,53809,Industrials,2026-11-20
+PCB,388,Finance,2026-09-23
+PCG,30349,Utilities,2026-11-20
+PCOR,7699,Technology,2026-09-23
+PCRX,997,Health Care,2026-09-23
+PCT,1072,Industrials,2026-09-23
+PCTTU,1089,Industrials,2026-09-23
+PCTY,7574,Technology,2026-09-23
+PCVX,8611,Health Care,2026-09-23
+PD,1140,Technology,2026-09-23
+PDFS,1983,Technology,2026-09-23
+PDI,3402,Finance,2026-09-23
+PDLB,492,Finance,2026-09-23
+PDM,1157,Real Estate,2026-09-23
+PDO,1756,Finance,2026-09-23
+PDS,1052,Energy,2026-09-23
+PDX,908,Finance,2026-09-23
+PEB,2050,Real Estate,2026-09-23
+PEBO,1395,Finance,2026-09-23
+PECO,4732,Real Estate,2026-09-23
+PEG,36840,Utilities,2026-11-20
+PEGA,5720,Technology,2026-09-23
+PENG,2813,Technology,2026-09-23
+PENN,2093,Consumer Discretionary,2026-09-23
+PEP,191520,Consumer Staples,2026-11-20
+PERI,340,Technology,2026-09-23
+PESI,336,Industrials,2026-09-23
+PFBC,1526,Finance,2026-09-23
+PFE,156176,Health Care,2026-11-20
+PFG,22210,Financials,2026-11-20
+PFH,5455,Finance,2026-09-23
+PFIS,693,Finance,2026-09-23
+PFLT,698,Finance,2026-09-23
+PFS,2944,Finance,2026-09-23
+PFSI,3429,Finance,2026-09-23
+PG,392563,Consumer Staples,2026-11-20
+PGC,790,Finance,2026-09-23
+PGEN,2778,Health Care,2026-09-23
+PGNY,2001,Health Care,2026-09-23
+PGR,133674,Financials,2026-11-20
+PGY,1543,Finance,2026-09-23
+PH,109939,Industrials,2026-11-20
+PHAR,770,Health Care,2026-09-23
+PHAT,606,Health Care,2026-09-23
+PHI,3781,Telecommunications,2026-09-23
+PHIN,2164,Consumer Discretionary,2026-09-23
+PHM,22950,Consumer Discretionary,2026-11-20
+PHOE,427,Consumer Discretionary,2026-09-23
+PHOS,305,Industrials,2026-09-23
+PHR,615,Consumer Discretionary,2026-09-23
+PHVS,2431,Health Care,2026-09-23
+PI,5378,Technology,2026-09-23
+PICS,1214,Finance,2026-09-23
+PII,2969,Consumer Discretionary,2026-09-23
+PINE,301,Real Estate,2026-09-23
+PIPR,5143,Finance,2026-09-23
+PJT,6186,Finance,2026-09-23
+PK,3031,Consumer Discretionary,2026-09-23
+PKBK,392,Finance,2026-09-23
+PKE,641,Industrials,2026-09-23
+PKG,20864,Materials,2026-11-20
+PKOH,670,Industrials,2026-09-23
+PL,6100,Technology,2026-09-23
+PLAB,1754,Technology,2026-09-23
+PLBC,427,Finance,2026-09-23
+PLBL,2184,Consumer Discretionary,2026-09-23
+PLD,116438,Real Estate,2026-11-20
+PLGO,2075,Finance,2026-09-23
+PLMR,3439,Finance,2026-09-23
+PLNT,3101,Consumer Discretionary,2026-09-23
+PLOW,914,Industrials,2026-09-23
+PLPC,2067,Industrials,2026-09-23
+PLSE,3908,Health Care,2026-09-23
+PLTR,345739,Information Technology,2026-11-20
+PLUS,2389,Technology,2026-09-23
+PLXS,6969,Technology,2026-09-23
+PM,286933,Consumer Staples,2026-11-20
+PMO,320,Finance,2026-09-23
+PMT,770,Real Estate,2026-09-23
+PMTU,2208,Real Estate,2026-09-23
+PNC,84561,Financials,2026-11-20
+PNR,10957,Industrials,2026-11-20
+PNRG,314,Energy,2026-09-23
+PNTG,1371,Health Care,2026-09-23
+PNW,12275,Utilities,2026-11-20
+PODD,9238,Health Care,2026-11-20
+POET,1382,Technology,2026-09-23
+PONY,3171,Technology,2026-09-23
+POOL,6003,Consumer Discretionary,2026-09-23
+POR,5514,Utilities,2026-09-23
+POST,3315,Consumer Staples,2026-09-23
+POWI,2801,Technology,2026-09-23
+POWL,6946,Energy,2026-09-23
+POWWP,2843,Industrials,2026-09-23
+PPC,6836,Consumer Staples,2026-09-23
+PPG,25872,Materials,2026-11-20
+PPHC,346,,2026-09-23
+PPL,26083,Utilities,2026-11-20
+PPLI,2684,Technology,2026-09-23
+PPT,326,Finance,2026-09-23
+PPTA,2908,Basic Materials,2026-09-23
+PRAA,742,Finance,2026-09-23
+PRAX,8245,Health Care,2026-09-23
+PRCH,2208,Technology,2026-09-23
+PRCT,1037,Health Care,2026-09-23
+PRDO,1936,Real Estate,2026-09-23
+PRE,387,Finance,2026-09-23
+PRG,1312,Consumer Discretionary,2026-09-23
+PRGO,1965,Health Care,2026-09-23
+PRGS,1654,Technology,2026-09-23
+PRH,7494,Finance,2026-09-23
+PRI,8495,Finance,2026-09-23
+PRIM,4027,Industrials,2026-09-23
+PRK,3277,Finance,2026-09-23
+PRKS,1467,Consumer Discretionary,2026-09-23
+PRLB,2136,Industrials,2026-09-23
+PRLD,380,Health Care,2026-09-23
+PRM,4735,Industrials,2026-09-23
+PRMB,7001,Consumer Staples,2026-09-23
+PRME,628,Health Care,2026-09-23
+PRS,7160,Finance,2026-09-23
+PRSU,1289,Consumer Discretionary,2026-09-23
+PRTA,456,Health Care,2026-09-23
+PRTH,643,Consumer Discretionary,2026-09-23
+PRU,40381,Financials,2026-11-20
+PRVA,2447,Health Care,2026-09-23
+PSA,60803,Real Estate,2026-11-20
+PSF,917,Finance,2026-09-23
+PSFE,338,Consumer Discretionary,2026-09-23
+PSIX,1057,Industrials,2026-09-23
+PSKY,10992,Communication Services,2026-11-20
+PSMT,5299,Consumer Discretionary,2026-09-23
+PSN,4747,Technology,2026-09-23
+PSNL,1729,Health Care,2026-09-23
+PSNY,1178,Industrials,2026-09-23
+PSNYW,751,Industrials,2026-09-23
+PSO,9489,Consumer Discretionary,2026-09-23
+PSQL,1596,Technology,2026-09-23
+PSTL,713,Real Estate,2026-09-23
+PSUS,1024,,2026-09-23
+PSX,93356,Energy,2026-11-20
+PTA,990,Finance,2026-09-23
+PTC,21194,Information Technology,2026-11-20
+PTCT,5434,Health Care,2026-09-23
+PTEN,4270,Energy,2026-09-23
+PTGX,9243,Health Care,2026-09-23
+PTON,2109,Consumer Discretionary,2026-09-23
+PTRN,3442,Consumer Discretionary,2026-09-23
+PUBM,800,Technology,2026-09-23
+PUMP,1225,Energy,2026-09-23
+PURR,3256,Finance,2026-09-23
+PVH,3479,Industrials,2026-09-23
+PVLA,2236,Health Care,2026-09-23
+PWP,1280,Finance,2026-09-23
+PWR,84233,Industrials,2026-11-20
+PXED,942,Real Estate,2026-09-23
+PYPL,44266,Financials,2026-11-20
+PZZA,655,Consumer Discretionary,2026-09-23
+Q,21630,Information Technology,2026-11-20
+QBTS,6611,Technology,2026-09-23
+QCOM,160436,Information Technology,2026-11-20
+QCRH,1629,Finance,2026-09-23
+QDEL,741,Health Care,2026-09-23
+QFIN,947,Finance,2026-09-23
+QGEN,8980,Health Care,2026-09-23
+QLYS,6268,Technology,2026-09-23
+QMCO,1019,Technology,2026-09-23
+QNST,845,Consumer Discretionary,2026-09-23
+QS,3058,Miscellaneous,2026-09-23
+QTTB,303,Health Care,2026-09-23
+QTWO,3461,Technology,2026-09-23
+QUAD,483,Consumer Discretionary,2026-09-23
+QUBT,2085,Technology,2026-09-23
+QURE,3041,Health Care,2026-09-23
+QVCG,780,Consumer Discretionary,2026-09-23
+R,9059,Consumer Discretionary,2026-09-23
+RAL,7717,Industrials,2026-09-23
+RAMP,2285,Technology,2026-09-23
+RAPP,1849,Health Care,2026-09-23
+RARE,1486,Health Care,2026-09-23
+RBB,450,Finance,2026-09-23
+RBCAA,1848,Finance,2026-09-23
+RCAT,1026,Technology,2026-09-23
+RCBC,732,Finance,2026-09-23
+RCEL,353,Health Care,2026-09-23
+RCKT,359,Health Care,2026-09-23
+RCKY,335,Consumer Discretionary,2026-09-23
+RCL,79300,Consumer Discretionary,2026-11-20
+RCUS,3532,Health Care,2026-09-23
+RDDT,16477,Communication Services,2026-11-20
+RDIB,396,Consumer Discretionary,2026-09-23
+RDN,4595,Finance,2026-09-23
+RDNT,5768,Health Care,2026-09-23
+RDVT,1182,Technology,2026-09-23
+RDW,2905,Industrials,2026-09-23
+RDWR,1252,Consumer Discretionary,2026-09-23
+REAL,1136,Consumer Discretionary,2026-09-23
+REAX,350,Finance,2026-09-23
+REF,787,Consumer Discretionary,2026-09-23
+REG,13485,Real Estate,2026-11-20
+REGCO,3965,Real Estate,2026-09-23
+REGCP,4199,Real Estate,2026-09-23
+REGN,95243,Health Care,2026-11-20
+RELY,4212,Consumer Discretionary,2026-09-23
+REPL,1235,Health Care,2026-09-23
+REPX,908,Energy,2026-09-23
+RERE,877,Consumer Discretionary,2026-09-23
+RES,1280,Energy,2026-09-23
+REX,1456,Industrials,2026-09-23
+REXR,8532,Real Estate,2026-09-23
+REYN,4654,Consumer Discretionary,2026-09-23
+REZI,2830,Industrials,2026-09-23
+RF,22579,Financials,2026-11-20
+RFI,528,Finance,2026-09-23
+RGC,2972,Health Care,2026-09-23
+RGEN,9046,Health Care,2026-09-23
+RGNX,527,Health Care,2026-09-23
+RGR,673,Industrials,2026-09-23
+RGTI,5437,Technology,2026-09-23
+RGTIW,2303,Technology,2026-09-23
+RH,2382,Consumer Discretionary,2026-09-23
+RHI,3791,Consumer Discretionary,2026-09-23
+RHLD,949,Finance,2026-09-23
+RHP,8352,Real Estate,2026-09-23
+RIG,6143,Energy,2026-09-23
+RIGL,894,Health Care,2026-09-23
+RILYG,756,Finance,2026-09-23
+RILYL,507,Finance,2026-09-23
+RILYN,769,Finance,2026-09-23
+RILYP,490,Finance,2026-09-23
+RILYT,635,Finance,2026-09-23
+RILYZ,604,Finance,2026-09-23
+RIOT,9333,Finance,2026-09-23
+RITM,5324,Real Estate,2026-09-23
+RJET,894,Consumer Discretionary,2026-09-23
+RJF,29974,Financials,2026-11-20
+RL,21670,Consumer Discretionary,2026-11-20
+RLAY,4089,Health Care,2026-09-23
+RLGT,401,Industrials,2026-09-23
+RLI,5325,Finance,2026-09-23
+RLJ,1661,Real Estate,2026-09-23
+RLMD,437,Health Care,2026-09-23
+RMD,33143,Health Care,2026-11-20
+RMIX,941,Industrials,2026-09-23
+RMNI,403,Consumer Discretionary,2026-09-23
+RMR,608,Consumer Discretionary,2026-09-23
+RMT,625,Finance,2026-09-23
+RNG,6652,Technology,2026-09-23
+RNGR,367,Energy,2026-09-23
+RNP,949,Finance,2026-09-23
+RNST,3635,Finance,2026-09-23
+RNW,2494,Utilities,2026-09-23
+ROAD,5340,Industrials,2026-09-23
+ROCK,1226,Industrials,2026-09-23
+ROG,2475,Industrials,2026-09-23
+ROK,39725,Industrials,2026-11-20
+ROL,18080,Industrials,2026-11-20
+ROMA,531,Consumer Discretionary,2026-09-23
+ROOT,727,Finance,2026-09-23
+ROP,45540,Information Technology,2026-11-20
+ROST,68190,Consumer Discretionary,2026-11-20
+RPAY,347,Consumer Discretionary,2026-09-23
+RPC,853,Finance,2026-09-23
+RPD,845,Technology,2026-09-23
+RQI,1536,Finance,2026-09-23
+RRBI,662,Finance,2026-09-23
+RRC,9146,Energy,2026-09-23
+RRR,5020,Consumer Discretionary,2026-09-23
+RSG,75121,Industrials,2026-11-20
+RSI,4737,Consumer Discretionary,2026-09-23
+RSKD,930,Consumer Discretionary,2026-09-23
+RSVR,625,Consumer Discretionary,2026-09-23
+RTX,256623,Industrials,2026-11-20
+RUM,4182,Technology,2026-09-23
+RUN,2039,Miscellaneous,2026-09-23
+RUSHA,5594,Consumer Discretionary,2026-09-23
+RUSHB,6306,Consumer Discretionary,2026-09-23
+RVLV,1497,Consumer Discretionary,2026-09-23
+RVMDW,2155,Health Care,2026-09-23
+RVT,1878,Finance,2026-09-23
+RVTY,16212,Health Care,2026-11-20
+RWAYL,910,Finance,2026-09-23
+RWT,477,Real Estate,2026-09-23
+RWTN,3119,Real Estate,2026-09-23
+RWTO,3037,Real Estate,2026-09-23
+RXO,3206,Consumer Discretionary,2026-09-23
+RXRX,2121,Health Care,2026-09-23
+RXT,1034,Technology,2026-09-23
+RYAM,614,Basic Materials,2026-09-23
+RYAN,9744,Finance,2026-09-23
+RYN,5975,Real Estate,2026-09-23
+RYTM,6792,Health Care,2026-09-23
+RYZ,1247,Industrials,2026-09-23
+RZC,1669,Finance,2026-09-23
+RZLT,392,Health Care,2026-09-23
+S,8315,Technology,2026-09-23
+SA,3327,Basic Materials,2026-09-23
+SABS,311,Health Care,2026-09-23
+SAFE,928,Real Estate,2026-09-23
+SAFT,1522,Finance,2026-09-23
+SAH,2016,Consumer Discretionary,2026-09-23
+SAIA,9241,Industrials,2026-09-23
+SAIC,5598,Technology,2026-09-23
+SAJ,394,Finance,2026-09-23
+SAM,1695,Consumer Staples,2026-09-23
+SANA,949,Health Care,2026-09-23
+SARO,7588,Industrials,2026-09-23
+SATA,9698,Finance,2026-09-23
+SATL,859,Technology,2026-09-23
+SAY,394,Finance,2026-09-23
+SAZ,394,Finance,2026-09-23
+SB,957,Consumer Discretionary,2026-09-23
+SBAC,18101,Real Estate,2026-11-20
+SBC,526,Health Care,2026-09-23
+SBCF,3162,Finance,2026-09-23
+SBET,2169,Technology,2026-09-23
+SBGI,937,Industrials,2026-09-23
+SBH,1558,Consumer Discretionary,2026-09-23
+SBLK,3374,Consumer Discretionary,2026-09-23
+SBR,1056,Energy,2026-09-23
+SBRA,5065,Real Estate,2026-09-23
+SBSI,924,Finance,2026-09-23
+SBSW,7451,Basic Materials,2026-09-23
+SBUX,117579,Consumer Discretionary,2026-11-20
+SCCD,1172,Real Estate,2026-09-23
+SCCE,1168,Real Estate,2026-09-23
+SCCF,1167,Real Estate,2026-09-23
+SCCG,1176,Real Estate,2026-09-23
+SCHL,661,Consumer Discretionary,2026-09-23
+SCHW,155617,Financials,2026-11-20
+SCL,1460,Consumer Discretionary,2026-09-23
+SCSC,1165,Technology,2026-09-23
+SCTX,504,Health Care,2026-09-23
+SCZM,824,Basic Materials,2026-09-23
+SD,526,Energy,2026-09-23
+SDGR,2294,Health Care,2026-09-23
+SDHC,514,Consumer Discretionary,2026-09-23
+SDHY,379,Finance,2026-09-23
+SDRL,2924,Energy,2026-09-23
+SEB,3894,Industrials,2026-09-23
+SECZ,2331,Finance,2026-09-23
+SEDG,2145,Technology,2026-09-23
+SEG,308,Consumer Discretionary,2026-09-23
+SEI,5084,Consumer Discretionary,2026-09-23
+SENEA,1223,Consumer Staples,2026-09-23
+SENEB,1269,Consumer Staples,2026-09-23
+SENS,521,Health Care,2026-09-23
+SEPN,1803,Health Care,2026-09-23
+SERV,382,Industrials,2026-09-23
+SEZL,3642,Finance,2026-09-23
+SFB,1965,Finance,2026-09-23
+SFBS,4547,Finance,2026-09-23
+SFD,7590,Consumer Staples,2026-09-23
+SFL,1676,Consumer Discretionary,2026-09-23
+SFM,6263,Consumer Staples,2026-09-23
+SFNC,3318,Finance,2026-09-23
+SFST,569,Finance,2026-09-23
+SG,888,Consumer Discretionary,2026-09-23
+SGHC,6150,Consumer Discretionary,2026-09-23
+SGHT,469,Health Care,2026-09-23
+SGML,1133,Basic Materials,2026-09-23
+SGMT,672,Health Care,2026-09-23
+SGP,965,Health Care,2026-09-23
+SGRY,2037,Health Care,2026-09-23
+SGU,422,Consumer Discretionary,2026-09-23
+SHAK,2428,Consumer Discretionary,2026-09-23
+SHAZ,2114,Technology,2026-09-23
+SHBI,767,Finance,2026-09-23
+SHC,5269,Health Care,2026-09-23
+SHEN,649,Telecommunications,2026-09-23
+SHIP,381,Consumer Discretionary,2026-09-23
+SHLS,1325,Technology,2026-09-23
+SHO,2044,Consumer Discretionary,2026-09-23
+SHOE,360,Consumer Discretionary,2026-09-23
+SHOO,3195,Consumer Discretionary,2026-09-23
+SHW,82077,Materials,2026-11-20
+SI,367,Health Care,2026-09-23
+SIBN,827,Health Care,2026-09-23
+SIFY,986,Technology,2026-09-23
+SIG,3827,Consumer Discretionary,2026-09-23
+SIGI,5211,Finance,2026-09-23
+SIGIP,916,Finance,2026-09-23
+SII,3276,Finance,2026-09-23
+SIM,4554,Industrials,2026-09-23
+SIMO,9171,Technology,2026-09-23
+SIND,2248,Basic Materials,2026-09-23
+SIRI,8711,Consumer Discretionary,2026-09-23
+SITE,4107,Consumer Discretionary,2026-09-23
+SJM,14280,Consumer Staples,2026-11-20
+SKE,3952,Basic Materials,2026-09-23
+SKT,4047,Real Estate,2026-09-23
+SKWD,2472,Finance,2026-09-23
+SKY,4737,Consumer Discretionary,2026-09-23
+SKYH,820,Finance,2026-09-23
+SKYW,3866,Consumer Discretionary,2026-09-23
+SLAB,7403,Technology,2026-09-23
+SLB,67735,Energy,2026-11-20
+SLDB,944,Health Care,2026-09-23
+SLDE,2782,Finance,2026-09-23
+SLG,3681,Real Estate,2026-09-23
+SLGN,3922,Industrials,2026-09-23
+SLM,4498,Finance,2026-09-23
+SLN,559,Health Care,2026-09-23
+SLNHP,3084,Technology,2026-09-23
+SLP,372,Technology,2026-09-23
+SLRC,648,Finance,2026-09-23
+SLS,2395,Health Care,2026-09-23
+SLSR,1224,,2026-09-23
+SLVM,1457,Basic Materials,2026-09-23
+SM,8213,Energy,2026-09-23
+SMA,1775,Real Estate,2026-09-23
+SMBC,784,Finance,2026-09-23
+SMBK,871,Finance,2026-09-23
+SMC,649,Utilities,2026-09-23
+SMCI,14272,Information Technology,2026-11-20
+SMG,3055,Industrials,2026-09-23
+SMP,828,Consumer Discretionary,2026-09-23
+SMPL,861,Consumer Staples,2026-09-23
+SMR,3726,Industrials,2026-09-23
+SMTI,324,Health Care,2026-09-23
+SMWB,732,Technology,2026-09-23
+SNA,17996,Industrials,2026-11-20
+SNAP,9055,Technology,2026-09-23
+SNDA,1811,Health Care,2026-09-23
+SNDK,90200,Information Technology,2026-11-20
+SNDR,5636,Industrials,2026-09-23
+SNDX,1597,Health Care,2026-09-23
+SNEX,8169,Finance,2026-09-23
+SNPS,75921,Information Technology,2026-11-20
+SO,108428,Utilities,2026-11-20
+SOBO,7261,Energy,2026-09-23
+SOC,827,Energy,2026-09-23
+SOHU,340,Technology,2026-09-23
+SOLS,9245,Industrials,2026-09-23
+SOLV,14361,Health Care,2026-11-20
+SON,5054,Consumer Discretionary,2026-09-23
+SONO,2000,Consumer Staples,2026-09-23
+SOPH,683,Technology,2026-09-23
+SOR,379,Finance,2026-09-23
+SOUN,2903,Technology,2026-09-23
+SPB,1996,Miscellaneous,2026-09-23
+SPCE,493,Consumer Discretionary,2026-09-23
+SPFI,828,Finance,2026-09-23
+SPG,72346,Real Estate,2026-11-20
+SPGI,127431,Financials,2026-11-20
+SPH,1118,Consumer Discretionary,2026-09-23
+SPHR,4977,Consumer Discretionary,2026-09-23
+SPIR,516,Consumer Discretionary,2026-09-23
+SPNT,2965,Finance,2026-09-23
+SPRY,433,Health Care,2026-09-23
+SPSC,2909,Technology,2026-09-23
+SPT,591,Technology,2026-09-23
+SPTX,1166,Health Care,2026-09-23
+SPXC,8757,Industrials,2026-09-23
+SR,4601,Utilities,2026-09-23
+SRAD,4221,Technology,2026-09-23
+SRCE,2044,Finance,2026-09-23
+SRE,49818,Utilities,2026-11-20
+SRPT,2155,Health Care,2026-09-23
+SRRK,6276,Health Care,2026-09-23
+SRTA,478,Health Care,2026-09-23
+SSB,9911,Finance,2026-09-23
+SSD,7214,Consumer Discretionary,2026-09-23
+SSII,655,Health Care,2026-09-23
+SSL,9201,Energy,2026-09-23
+SSMR,2246,Basic Materials,2026-09-23
+SSRM,7475,Industrials,2026-09-23
+SSYS,696,Technology,2026-09-23
+ST,6051,Industrials,2026-09-23
+STAA,1022,Health Care,2026-09-23
+STAG,7177,Real Estate,2026-09-23
+STBA,1742,Finance,2026-09-23
+STC,1922,Finance,2026-09-23
+STDN,2027,Basic Materials,2026-09-23
+STE,24836,Health Care,2026-11-20
+STEP,5560,Finance,2026-09-23
+STGW,2069,Consumer Discretionary,2026-09-23
+STLD,29291,Materials,2026-11-20
+STLN,691,Health Care,2026-09-23
+STN,7999,Consumer Discretionary,2026-09-23
+STNE,2424,Technology,2026-09-23
+STNG,4212,Consumer Discretionary,2026-09-23
+STOK,1841,Health Care,2026-09-23
+STRA,1693,Real Estate,2026-09-23
+STRZ,425,Consumer Discretionary,2026-09-23
+STT,42275,Financials,2026-11-20
+STTK,657,Health Care,2026-09-23
+STUB,2069,Consumer Discretionary,2026-09-23
+STVN,5818,Health Care,2026-09-23
+STWD,5547,Real Estate,2026-09-23
+STX,104912,Information Technology,2026-11-20
+STZ,24008,Consumer Staples,2026-11-20
+SUJA,313,Consumer Staples,2026-09-23
+SUNC,3964,Energy,2026-09-23
+SUPN,2565,Health Care,2026-09-23
+SUPV,726,Finance,2026-09-23
+SUPX,315,,2026-09-23
+SVC,853,Real Estate,2026-09-23
+SVM,2555,Basic Materials,2026-09-23
+SVRA,1071,Health Care,2026-09-23
+SVV,1390,Consumer Discretionary,2026-09-23
+SW,19775,Materials,2026-11-20
+SWBI,631,Industrials,2026-09-23
+SWIM,766,Industrials,2026-09-23
+SWK,15854,Industrials,2026-11-20
+SWKHL,305,,2026-09-23
+SWKS,17358,Information Technology,2026-11-20
+SWMR,367,Technology,2026-09-23
+SWX,5984,Utilities,2026-09-23
+SXC,835,Industrials,2026-09-23
+SXI,3331,Industrials,2026-09-23
+SXT,5536,Industrials,2026-09-23
+SYBT,2423,Finance,2026-09-23
+SYF,21101,Financials,2026-11-20
+SYK,118014,Health Care,2026-11-20
+SYNA,3805,Technology,2026-09-23
+SYRE,7939,Health Care,2026-09-23
+SYY,38481,Consumer Staples,2026-11-20
+T,150291,Communication Services,2026-11-20
+TAC,3756,Utilities,2026-09-23
+TACO,381,Finance,2026-09-23
+TAL,6562,Real Estate,2026-09-23
+TALO,2726,Energy,2026-09-23
+TAP,6770,Consumer Staples,2026-09-23
+TARS,3574,Health Care,2026-09-23
+TASK,771,Technology,2026-09-23
+TATT,505,Industrials,2026-09-23
+TBBB,5998,Consumer Staples,2026-09-23
+TBBK,2040,Finance,2026-09-23
+TBLA,869,Technology,2026-09-23
+TBLD,659,Finance,2026-09-23
+TBN,1229,Energy,2026-09-23
+TBPH,885,Health Care,2026-09-23
+TCBI,4131,Finance,2026-09-23
+TCBIO,849,Finance,2026-09-23
+TCBK,1672,Finance,2026-09-23
+TCBX,728,Finance,2026-09-23
+TCI,360,Real Estate,2026-09-23
+TCMD,513,Health Care,2026-09-23
+TCPC,338,Finance,2026-09-23
+TDAY,958,Consumer Discretionary,2026-09-23
+TDC,2697,Technology,2026-09-23
+TDG,61207,Industrials,2026-11-20
+TDOC,1132,Health Care,2026-09-23
+TDS,4190,Telecommunications,2026-09-23
+TDW,4345,Consumer Discretionary,2026-09-23
+TDY,27556,Information Technology,2026-11-20
+TE,1235,Technology,2026-09-23
+TECH,11416,Health Care,2026-11-20
+TECX,504,Health Care,2026-09-23
+TEL,57330,Information Technology,2026-11-20
+TEN,1416,Consumer Discretionary,2026-09-23
+TENB,3908,Technology,2026-09-23
+TEO,6116,Telecommunications,2026-09-23
+TER,31970,Information Technology,2026-11-20
+TEX,6708,Industrials,2026-09-23
+TFC,54903,Financials,2026-11-20
+TFIN,1464,Finance,2026-09-23
+TFPM,6714,Industrials,2026-09-23
+TFSL,4688,Finance,2026-09-23
+TFX,5265,Health Care,2026-09-23
+TGB,3239,Basic Materials,2026-09-23
+TGLS,1604,Consumer Discretionary,2026-09-23
+TGS,4220,Utilities,2026-09-23
+TGT,75077,Consumer Staples,2026-11-20
+TGTX,8831,Health Care,2026-09-23
+TH,2101,Consumer Discretionary,2026-09-23
+THFF,892,Finance,2026-09-23
+THG,7687,Finance,2026-09-23
+THO,3694,Industrials,2026-09-23
+THRM,1088,Consumer Discretionary,2026-09-23
+TIC,1960,Consumer Discretionary,2026-09-23
+TIGR,866,Finance,2026-09-23
+TII,303,,2026-09-23
+TILE,2014,Consumer Discretionary,2026-09-23
+TIMB,8908,Telecommunications,2026-09-23
+TIPT,649,Finance,2026-09-23
+TITN,572,Consumer Discretionary,2026-09-23
+TJX,153578,Consumer Discretionary,2026-11-20
+TK,1179,Consumer Discretionary,2026-09-23
+TKC,4545,Telecommunications,2026-09-23
+TKNO,477,Health Care,2026-09-23
+TKO,12894,Communication Services,2026-11-20
+TKR,8123,Industrials,2026-09-23
+TLRY,612,Health Care,2026-09-23
+TLS,303,Technology,2026-09-23
+TLSI,317,Health Care,2026-09-23
+TLX,3835,Health Care,2026-09-23
+TMC,1857,Basic Materials,2026-09-23
+TMCI,302,Health Care,2026-09-23
+TMCR,305,Basic Materials,2026-09-23
+TMDX,3022,Health Care,2026-09-23
+TMO,248075,Health Care,2026-11-20
+TMP,1402,Finance,2026-09-23
+TMQ,574,Basic Materials,2026-09-23
+TMS,589,,2026-09-23
+TMUS,175416,Communication Services,2026-11-20
+TNC,1132,Industrials,2026-09-23
+TNDM,1187,Health Care,2026-09-23
+TNET,3010,Consumer Discretionary,2026-09-23
+TNGX,4340,Health Care,2026-09-23
+TNK,3269,Consumer Discretionary,2026-09-23
+TNL,3835,Consumer Discretionary,2026-09-23
+TOP,1925,Finance,2026-09-23
+TOWN,2708,Finance,2026-09-23
+TPB,1200,Consumer Discretionary,2026-09-23
+TPC,4454,Consumer Discretionary,2026-09-23
+TPGXL,7833,,2026-09-23
+TPL,18447,Energy,2026-11-20
+TPR,23586,Consumer Discretionary,2026-11-20
+TR,2811,Consumer Staples,2026-09-23
+TRAX,1439,Health Care,2026-09-23
+TRC,439,Finance,2026-09-23
+TREE,340,Finance,2026-09-23
+TREX,4469,Basic Materials,2026-09-23
+TRGP,59710,Energy,2026-11-20
+TRIN,1677,Finance,2026-09-23
+TRIP,953,Technology,2026-09-23
+TRLV,2390,Health Care,2026-09-23
+TRMB,11604,Information Technology,2026-11-20
+TRMD,3481,Consumer Discretionary,2026-09-23
+TRMK,2668,Finance,2026-09-23
+TRN,2192,Industrials,2026-09-23
+TRNI,1759,Finance,2026-09-23
+TRNO,7208,Finance,2026-09-23
+TRNS,846,Industrials,2026-09-23
+TRNZ,1761,Finance,2026-09-23
+TROW,21544,Financials,2026-11-20
+TROX,700,Basic Materials,2026-09-23
+TRS,1397,Industrials,2026-09-23
+TRST,955,Finance,2026-09-23
+TRTX,545,Real Estate,2026-09-23
+TRUP,1023,Health Care,2026-09-23
+TRV,80593,Financials,2026-11-20
+TRVG,410,Technology,2026-09-23
+TRVI,2137,Health Care,2026-09-23
+TSAT,1727,Industrials,2026-09-23
+TSBK,352,Finance,2026-09-23
+TSCO,19934,Consumer Discretionary,2026-11-20
+TSHA,1668,Health Care,2026-09-23
+TSLA,1366943,Consumer Discretionary,2026-11-20
+TSLX,1739,Finance,2026-09-23
+TSN,22436,Consumer Staples,2026-11-20
+TT,84557,Industrials,2026-11-20
+TTAM,2534,Industrials,2026-09-23
+TTAN,5822,Technology,2026-09-23
+TTC,9194,Consumer Discretionary,2026-09-23
+TTD,6045,Technology,2026-09-23
+TTEK,9081,Consumer Discretionary,2026-09-23
+TTI,877,Energy,2026-09-23
+TTRX,457,Health Care,2026-09-23
+TTWO,39315,Communication Services,2026-11-20
+TVTX,5694,Health Care,2026-09-23
+TWFG,1332,Finance,2026-09-23
+TWI,479,Industrials,2026-09-23
+TWIN,380,Industrials,2026-09-23
+TXN,241007,Information Technology,2026-11-20
+TXNM,6459,Utilities,2026-09-23
+TXO,802,Energy,2026-09-23
+TXT,13488,Industrials,2026-11-20
+TY,1881,Finance,2026-09-23
+TYG,492,Finance,2026-09-23
+TYL,16080,Information Technology,2026-11-20
+TYRA,1666,Health Care,2026-09-23
+UA,1950,Consumer Discretionary,2026-09-23
+UAA,1987,Consumer Discretionary,2026-09-23
+UAL,32824,Industrials,2026-11-20
+UAMY,691,Industrials,2026-09-23
+UAN,1359,Industrials,2026-09-23
+UBER,129599,Industrials,2026-11-20
+UBSI,6350,Finance,2026-09-23
+UCB,4101,Finance,2026-09-23
+UCTT,3317,Technology,2026-09-23
+UDR,11234,Real Estate,2026-11-20
+UE,2507,Finance,2026-09-23
+UEC,4939,Basic Materials,2026-09-23
+UFCS,1374,Finance,2026-09-23
+UFPI,4539,Basic Materials,2026-09-23
+UFPT,2214,Health Care,2026-09-23
+UGI,7872,Utilities,2026-09-23
+UGP,8563,Utilities,2026-09-23
+UHS,10345,Health Care,2026-11-20
+UHT,534,Real Estate,2026-09-23
+ULCC,1378,Consumer Discretionary,2026-09-23
+ULH,426,Industrials,2026-09-23
+ULTA,26470,Consumer Discretionary,2026-11-20
+UMAC,1209,Technology,2026-09-23
+UMBFO,1977,Finance,2026-09-23
+UMH,1336,Real Estate,2026-09-23
+UNF,4759,Consumer Discretionary,2026-09-23
+UNFI,2705,Consumer Discretionary,2026-09-23
+UNH,304513,Health Care,2026-11-20
+UNIT,2235,Real Estate,2026-09-23
+UNMA,3692,Finance,2026-09-23
+UNP,170722,Industrials,2026-11-20
+UNTY,578,Finance,2026-09-23
+UPBD,950,Consumer Discretionary,2026-09-23
+UPS,90443,Industrials,2026-11-20
+UPST,2487,Finance,2026-09-23
+UPWK,1026,Technology,2026-09-23
+URBN,6395,Consumer Discretionary,2026-09-23
+URGN,2073,Health Care,2026-09-23
+URI,60271,Industrials,2026-11-20
+UROY,1628,Finance,2026-09-23
+USAC,3738,Utilities,2026-09-23
+USAR,6052,Basic Materials,2026-09-23
+USAS,1635,Basic Materials,2026-09-23
+USB,87338,Financials,2026-11-20
+USCB,422,Finance,2026-09-23
+USDE,358,Finance,2026-09-23
+USLM,3204,Industrials,2026-09-23
+USPH,1246,Health Care,2026-09-23
+UTI,1107,Real Estate,2026-09-23
+UTL,933,Utilities,2026-09-23
+UTZ,2050,Consumer Staples,2026-09-23
+UUUU,2928,Industrials,2026-09-23
+UVE,1192,Finance,2026-09-23
+UVSP,1151,Finance,2026-09-23
+UVV,1081,Industrials,2026-09-23
+UZD,1587,Telecommunications,2026-09-23
+UZE,1429,Telecommunications,2026-09-23
+UZF,1408,Telecommunications,2026-09-23
+V,749809,Financials,2026-11-20
+VAC,3393,Finance,2026-09-23
+VAL,5763,Energy,2026-09-23
+VALN,620,Health Care,2026-09-23
+VALU,359,Finance,2026-09-23
+VBNK,751,Finance,2026-09-23
+VC,2417,Consumer Discretionary,2026-09-23
+VCEL,2025,Health Care,2026-09-23
+VCRE,2866,Health Care,2026-09-23
+VCTR,6569,Finance,2026-09-23
+VCV,452,Finance,2026-09-23
+VCYT,3418,Health Care,2026-09-23
+VECO,2632,Technology,2026-09-23
+VEEV,43103,Health Care,2026-11-20
+VEL,638,Finance,2026-09-23
+VELO,357,Technology,2026-09-23
+VEON,4798,Telecommunications,2026-09-23
+VERA,2532,Health Care,2026-09-23
+VERX,1887,Technology,2026-09-23
+VET,1794,Energy,2026-09-23
+VFC,5305,Industrials,2026-09-23
+VFF,370,Consumer Staples,2026-09-23
+VFS,7568,Industrials,2026-09-23
+VGM,517,Finance,2026-09-23
+VGNT,3257,Consumer Discretionary,2026-09-23
+VHI,470,Basic Materials,2026-09-23
+VIA,2355,Technology,2026-09-23
+VIAV,8927,Technology,2026-09-23
+VICI,26646,Real Estate,2026-11-20
+VINP,620,Finance,2026-09-23
+VIPS,5953,Consumer Discretionary,2026-09-23
+VIR,1911,Health Care,2026-09-23
+VIRT,8413,Finance,2026-09-23
+VISN,1496,Technology,2026-09-23
+VIST,7921,Energy,2026-09-23
+VITL,456,Consumer Staples,2026-09-23
+VKI,373,Finance,2026-09-23
+VKQ,497,Finance,2026-09-23
+VKTX,4509,Health Care,2026-09-23
+VLGEA,658,Consumer Staples,2026-09-23
+VLO,93198,Energy,2026-11-20
+VLRS,783,Consumer Discretionary,2026-09-23
+VLTO,28358,Industrials,2026-11-20
+VLY,7245,Finance,2026-09-23
+VMC,34765,Materials,2026-11-20
+VMD,341,Health Care,2026-09-23
+VMET,1012,Industrials,2026-09-23
+VMI,9126,Industrials,2026-09-23
+VMO,611,Finance,2026-09-23
+VMRK,48843,Real Estate,2026-11-20
+VNDA,312,Health Care,2026-09-23
+VNET,1937,Technology,2026-09-23
+VNO,6533,Real Estate,2026-09-23
+VNT,4251,Industrials,2026-09-23
+VOGX,394,Health Care,2026-09-23
+VOR,1281,Health Care,2026-09-23
+VOXR,380,Basic Materials,2026-09-23
+VOYA,8927,Finance,2026-09-23
+VOYG,2033,Industrials,2026-09-23
+VPG,904,Technology,2026-09-23
+VRDN,2461,Health Care,2026-09-23
+VREX,778,Technology,2026-09-23
+VRNS,5425,Technology,2026-09-23
+VRRM,514,Consumer Discretionary,2026-09-23
+VRSK,25925,Industrials,2026-11-20
+VRSN,27526,Information Technology,2026-11-20
+VRT,64012,Industrials,2026-11-20
+VRTS,849,Finance,2026-09-23
+VRTX,130577,Health Care,2026-11-20
+VSEC,5067,Consumer Discretionary,2026-09-23
+VSECU,1349,,2026-09-23
+VSH,4946,Technology,2026-09-23
+VSNT,4602,Industrials,2026-09-23
+VST,39115,Utilities,2026-11-20
+VSTM,744,Health Care,2026-09-23
+VSTS,1874,Consumer Discretionary,2026-09-23
+VSXY,6538,Consumer Discretionary,2026-09-23
+VTEX,617,Technology,2026-09-23
+VTMX,2896,Finance,2026-09-23
+VTOL,1275,Consumer Discretionary,2026-09-23
+VTR,45769,Real Estate,2026-11-20
+VTRS,22505,Health Care,2026-11-20
+VTS,709,Energy,2026-09-23
+VVV,3651,Industrials,2026-09-23
+VVX,2327,Consumer Discretionary,2026-09-23
+VYX,971,Miscellaneous,2026-09-23
+VZ,192641,Communication Services,2026-11-20
+VZLA,1427,Basic Materials,2026-09-23
+WAB,45191,Industrials,2026-11-20
+WABC,1365,Finance,2026-09-23
+WAFD,2307,Finance,2026-09-23
+WAFDP,1210,Finance,2026-09-23
+WAL,8456,Finance,2026-09-23
+WASH,740,Finance,2026-09-23
+WAT,86563,Health Care,2026-11-20
+WAY,4868,Technology,2026-09-23
+WB,1623,Technology,2026-09-23
+WBD,77596,Communication Services,2026-11-20
+WBI,3655,Energy,2026-09-23
+WBTN,1468,Consumer Discretionary,2026-09-23
+WCCB,647,Finance,2026-09-23
+WD,1278,Finance,2026-09-23
+WDAY,42059,Information Technology,2026-11-20
+WDC,97740,Information Technology,2026-11-20
+WDFC,2644,Industrials,2026-09-23
+WEAV,588,Technology,2026-09-23
+WEC,38515,Utilities,2026-11-20
+WELL,176316,Real Estate,2026-11-20
+WEN,1278,Consumer Discretionary,2026-09-23
+WERN,2070,Industrials,2026-09-23
+WEST,780,Consumer Staples,2026-09-23
+WEX,6200,Consumer Discretionary,2026-09-23
+WEYS,442,Consumer Staples,2026-09-23
+WFC,236005,Financials,2026-11-20
+WFG,5744,Basic Materials,2026-09-23
+WFRD,6034,Consumer Discretionary,2026-09-23
+WGO,774,Industrials,2026-09-23
+WGS,2691,Health Care,2026-09-23
+WH,5046,Consumer Discretionary,2026-09-23
+WHD,5326,Consumer Discretionary,2026-09-23
+WHFCL,583,,2026-09-23
+WHK,728,Energy,2026-09-23
+WHR,2152,Consumer Discretionary,2026-09-23
+WINA,1049,Consumer Discretionary,2026-09-23
+WING,2707,Consumer Discretionary,2026-09-23
+WIX,3209,Technology,2026-09-23
+WK,3770,Technology,2026-09-23
+WKC,1833,Energy,2026-09-23
+WLDN,1257,Consumer Discretionary,2026-09-23
+WLFC,1150,Consumer Discretionary,2026-09-23
+WLK,8844,Industrials,2026-09-23
+WLKP,756,Industrials,2026-09-23
+WLTH,1546,Finance,2026-09-23
+WLY,2344,Consumer Discretionary,2026-09-23
+WLYB,2390,Consumer Discretionary,2026-09-23
+WM,95285,Industrials,2026-11-20
+WMB,80401,Energy,2026-11-20
+WMK,1793,Consumer Staples,2026-09-23
+WMS,9760,Consumer Discretionary,2026-09-23
+WMT,1015123,Consumer Staples,2026-11-20
+WNC,484,Industrials,2026-09-23
+WOLF,1424,Technology,2026-09-23
+WOR,3013,Industrials,2026-09-23
+WPP,5423,Consumer Discretionary,2026-09-23
+WRB,29093,Financials,2026-11-20
+WRBY,2781,Health Care,2026-09-23
+WRD,1951,Technology,2026-09-23
+WRLD,798,Finance,2026-09-23
+WS,1734,Industrials,2026-09-23
+WSBC,3684,Finance,2026-09-23
+WSBCO,2425,Finance,2026-09-23
+WSBF,371,Finance,2026-09-23
+WSC,3266,Industrials,2026-09-23
+WSFS,3954,Finance,2026-09-23
+WSM,24816,Consumer Discretionary,2026-11-20
+WST,27189,Health Care,2026-11-20
+WT,3664,Finance,2026-09-23
+WTBA,493,Finance,2026-09-23
+WTFC,9799,Finance,2026-09-23
+WTFCN,1757,Finance,2026-09-23
+WTI,562,Energy,2026-09-23
+WTM,4922,Finance,2026-09-23
+WTTR,2749,Energy,2026-09-23
+WTW,30524,Financials,2026-11-20
+WU,1916,Consumer Discretionary,2026-09-23
+WULF,8463,Finance,2026-09-23
+WVE,803,Health Care,2026-09-23
+WWW,1580,Consumer Discretionary,2026-09-23
+WY,14112,Real Estate,2026-11-20
+WYFI,762,Finance,2026-09-23
+WYNN,8245,Consumer Discretionary,2026-11-20
+XE,6502,Industrials,2026-09-23
+XEL,50901,Utilities,2026-11-20
+XENE,3673,Health Care,2026-09-23
+XERS,1616,Health Care,2026-09-23
+XFLT,690,Finance,2026-09-23
+XFOR,323,Health Care,2026-09-23
+XHR,1632,Consumer Discretionary,2026-09-23
+XIFR,1011,Utilities,2026-09-23
+XMAX,573,Consumer Discretionary,2026-09-23
+XMTR,5941,Consumer Discretionary,2026-09-23
+XNCR,1893,Health Care,2026-09-23
+XNDU,1675,Technology,2026-09-23
+XNET,1602,Technology,2026-09-23
+XOM,652635,Energy,2026-11-20
+XPEL,1245,Industrials,2026-09-23
+XPEV,9868,Industrials,2026-09-23
+XPRO,1851,Energy,2026-09-23
+XRAY,1963,Health Care,2026-09-23
+XRN,475,Real Estate,2026-09-23
+XRX,450,Technology,2026-09-23
+XXI,3903,Finance,2026-09-23
+XYL,21709,Industrials,2026-11-20
+XYZ,42111,Financials,2026-11-20
+XZO,1447,Technology,2026-09-23
+YALA,836,Technology,2026-09-23
+YB,555,Finance,2026-09-23
+YELP,985,Consumer Discretionary,2026-09-23
+YETI,3150,Consumer Discretionary,2026-09-23
+YEXT,623,Technology,2026-09-23
+YMM,8606,Technology,2026-09-23
+YORW,510,Utilities,2026-09-23
+YOU,5198,Technology,2026-09-23
+YSS,1360,Industrials,2026-09-23
+YSWY,1238,Consumer Staples,2026-09-23
+YUM,43109,Consumer Discretionary,2026-11-20
+Z,6701,Consumer Discretionary,2026-09-23
+ZBH,19134,Health Care,2026-11-20
+ZBIO,2088,Health Care,2026-09-23
+ZBRA,14198,Information Technology,2026-11-20
+ZD,1943,Telecommunications,2026-09-23
+ZETA,7503,Technology,2026-09-23
+ZG,6856,Consumer Discretionary,2026-09-23
+ZGN,3304,Consumer Discretionary,2026-09-23
+ZIM,3678,Consumer Discretionary,2026-09-23
+ZION,9279,Finance,2026-09-23
+ZIONP,2472,Finance,2026-09-23
+ZLAB,2982,Health Care,2026-09-23
+ZTS,32144,Health Care,2026-11-20
+ZURA,421,Health Care,2026-09-23
+ZVRA,676,Health Care,2026-09-23
+ZWS,7752,Industrials,2026-09-23
+ZYME,1924,Health Care,2026-09-23
