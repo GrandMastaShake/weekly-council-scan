@@ -5941,3 +5941,70 @@ second to choose from the first's list gives it less of what it uses.
 The `channel-universe` design stays on the forward page as registered,
 from the week of 2026-11-23, so the comparison continues on weeks nobody
 has seen; on this evidence it is not a candidate for production.
+
+## Pass 50 -- how much and when: sizing and staged buying and selling (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "We have been vague and loose about our buying and
+selling rules too, they are currently all or nothing portion sizing with
+super basic trading rules." Asked whether he meant how much goes into a
+pick or when to get in and out: "I was talking about both." And on the
+screen: it is "more like a Cecil picks and holds til they break type
+thing", and "some of these stocks held the channels for years." Lab only.
+
+Exits inside a one-week hold have been tested and are not repeated:
+managing the week adds no return (Pass 13), his selling rules reshape
+outcomes and not the return (Pass 15), the -5% stop costs like cash and
+trims the tail (Pass 32). What has never been tested is sizing, and
+buying or selling in pieces.
+
+**Part A: the channel-hold book.** Pass 48's "screen in, break out" on the
+top 500 by size: a name is bought when it appears on the screen and sold
+on a weekly close under the line fixed at entry. Eight books, every
+combination of:
+- *How much:* **equal dollars** in every name, or **equal risk** (dollars
+  in proportion to one over the stock's weekly swing, so a calm name
+  gets more and a jumpy one less).
+- *Buying:* **all at once**, or **in two halves**: half at entry, the
+  other half four weeks later only if the name is still held and its
+  close is above the close of its entry week (adding to what is working).
+- *Selling:* **all at once** on the first weekly close under the line, or
+  **in two halves**: half on the first close under the line, the rest on
+  the next weekly close under it, whenever that comes.
+The book is always fully invested across what it holds, so a half
+position is a half weight relative to the others, not cash. Costs are
+charged on every change of weight at the tier's rate.
+
+**Part B: the weekly Council.** The engine replay of Pass 49 (129
+Mondays from 2024-06-03, the whole universe), the five names it books
+each week, total invested left as production has it. Nine books:
+- *How much:* **production's weights**, **equal dollars**, or **equal
+  risk**.
+- *Buying:* **all on Monday's open**; or half on Monday and the other
+  half at Wednesday's open **only if the name is above** its Monday open
+  (add on strength); or the other half only if it is **below** (add on
+  weakness). The half not bought is cash.
+Everything is sold at Friday's close, as now.
+
+**Verdict lines (fixed).** A rule *earns its place* if, against the same
+book without it, it raises the Sharpe ratio by 0.05 or more **and** does
+not lower the compound return by more than half a point a year (Part A),
+or raises mean weekly alpha per unit of its weekly standard deviation by
+a tenth or more without lowering mean alpha by more than 0.05% a week
+(Part B). Sizing and timing are judged separately, and a rule has to
+earn its place in both halves of its window.
+
+**What this can and cannot show.** Both books are ones that did not beat
+the S&P 500 on their own evidence (Pass 48), or whose record is flattered
+by a hand-picked universe (Pass 49). This pass asks whether better rules
+improve them, compared with themselves; it is not another attempt at the
+market. Part B is two and a half years.
+
+**Predictions.** (1) Equal risk lowers the book's swings more than its
+return and earns its place in Part A on Sharpe; in Part B it lowers both
+and does not. (2) Buying in halves on strength does not earn its place in
+either part: the second half is bought higher. (3) Selling in halves in
+Part A lowers return a little and does not earn its place. (4) Adding on
+weakness in Part B is worse than adding on strength.
+
+    python lab/pass50_size_and_time.py          # both parts
+    python lab/pass50_size_and_time.py smoke    # plumbing: 300 names, eight weeks
