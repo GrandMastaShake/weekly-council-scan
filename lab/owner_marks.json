@@ -872,6 +872,33 @@
     "worth_owning": true
    },
    "off_52_week_high": -0.313
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AEF",
+   "call": "withdrawn",
+   "last_close": 6.69,
+   "source": "proposed by the Pass 41 rule, judged by the owner",
+   "note": "'Drop AEF', the same evening, after the lab pointed out it sat 31% under its 52-week high; withdraws the potential mark above"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ANRO",
+   "call": "potential",
+   "last_close": 25.37,
+   "duplicate_of_earlier_row": true,
+   "note": "confirmed on a second look: 'pulled back recently but still look in their channel'; not scored twice"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMLX",
+   "call": "potential",
+   "last_close": 26.02,
+   "duplicate_of_earlier_row": true,
+   "note": "confirmed on a second look: 'pulled back recently but still look in their channel'; not scored twice"
   }
  ]
 }

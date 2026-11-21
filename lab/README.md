@@ -5249,6 +5249,10 @@ sent it, the ticker, the last close, and his call, one of:
 - `broken`: a channel he reads as broken, to be avoided until a new
   pattern shows.
 Rows are never edited or removed. A changed mind is a new row.
+- `withdrawn` (added 2026-11-20, before any mark had traded): a mark he
+  takes back before its entry session opens. The earlier row stays; the
+  name is left out of scoring. A mark taken back after it has traded is
+  not withdrawn: it is scored, and his new view is a new row.
 
 **Scoring (fixed).** Each mark is entered at the open of the first
 session after its date. At 4, 13 and 26 weeks: the name's return, SPY's
