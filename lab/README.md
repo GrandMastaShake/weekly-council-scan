@@ -7308,3 +7308,74 @@ give way once SPY itself is under its 40-week average (the book's own
 cold-market test) is the obvious repair, and it would be fitted to
 2008 unless it is registered against the unseen decade too. Not a
 candidate for production; nothing here changes the forward ledger.
+
+## Pass 58 -- five ideas of mine, one change each to the base book (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "let's throw some of your ideas at the wall too.
+I'm flexible on anything!" Lab only. Throwing ideas at a wall is how a
+lab fools itself, so the list is fixed here, it is short, each idea is
+one change to Pass 57's base book and nothing else, and the count is on
+the record: **five ideas, this is the only run.**
+
+**The base book** (Pass 57): ten slots, equal weights, top 500, a
+channel counting after 8 weeks, no price floor, the highest quality
+score first, sold 20% under its high, no new buys while SPY is under
+its 40-week average. 1996 to 2026.
+
+**The ideas, and where each comes from.**
+1. *Idle slots hold SPY, not cash.* The book is 90% invested and its
+   empty slots are empty mostly after falls, which is when SPY's
+   recoveries start (Pass 51, Pass 54: the books lost the years the
+   market ran without them). The yardstick is SPY; cash is a bet
+   against it.
+2. *Pick the jumpiest, not the tidiest.* The quality score picks no
+   better than chance (Passes 52 to 54). The one trait that marked the
+   best movers in both decades was a large weekly swing (Pass 55). Free
+   slots go to the screen names with the largest weekly swing.
+3. *Pick the strongest.* Free slots go to the screen names with the
+   highest return over the past year, leaving out the latest four
+   weeks: the momentum rank from the published literature, which the
+   lab has never used inside the channel screen.
+4. *Hold through a market fall, but only in a warm market.* Half one of
+   Pass 57 (do not sell when the stock has fallen less than 13.5 points
+   more than SPY) helped two decades and cost the one with 2008 in it.
+   Here the hold gives way, and the name is sold, whenever SPY is under
+   its 40-week average.
+5. *Buy only companies that have been beating their estimates.* A run
+   of beats leaned the right way in both of Pass 56's decades. A new
+   buy needs three or more beats in its last four reports. Earnings
+   history starts in 2002 and covers the 1,151 names that were ever top
+   500 since 2006, so this book runs from 2006-11 only, against a base
+   book started the same day. **It has no unseen decade and cannot
+   pass; it is here to see whether it is worth getting more history
+   for.**
+
+**Periods.** Unseen 1996-07 to 2006-10 (none of these ideas was read
+off those years, though idea 4's threshold was not either), 2006-11 to
+2016-11, 2016-11 to 2026-11.
+
+**Lines (fixed), built on what Pass 57 showed about luck.** For the two
+changes of structure (1 and 4): the median of the idea's 100 random
+books beats the median of the base's by **one point a year or more in
+each of the three periods**, with the scored book's thirty-year
+drawdown no more than five points deeper. For the two changes of
+picking (2 and 3), where the random books are the same as the base's:
+the scored book is **at or above the 75th percentile of the random
+books in each of the three periods**. An idea that clears its line
+earns a place on the forward ledger, not in production.
+
+**Limits.** As Pass 57: names alive today, ten names, and the two later
+decades are the ones every earlier pass has stared at.
+
+**Predictions.** (1) SPY in idle slots adds about a point in 2016-26
+and on the unseen decade, costs in 2006-16, and deepens the drawdown by
+more than five points: it fails. (2) The jumpiest picks make more over
+thirty years with a drawdown ten points deeper, and miss the 75th
+percentile in at least one period. (3) The strongest picks land between
+the 50th and 80th percentile; one period under 75. (4) The warm-market
+hold beats half one in 2006-16 and clears the one-point line in two
+periods of three, not all. (5) The beats rule is worth under a point a
+year. So I expect none of the five to clear its line.
+
+    python lab/pass58_five_ideas.py          # full run
+    python lab/pass58_five_ideas.py smoke    # plumbing: 300 names
