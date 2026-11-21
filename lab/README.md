@@ -4862,3 +4862,78 @@ the largest drawdown by more than a third.
 
     python lab/pass41_owner_channel.py          # every arm
     python lab/pass41_owner_channel.py smoke    # plumbing: 2022 on, 80 names, 20 draws
+
+## Pass 41 results -- the first channel book that is not broken: SPY's return with a shallower fall, and still behind random books
+
+Run 2026-11-20, `lab/results/pass41_owner_channel.json`. 1,041 weeks,
+2006-12-08 to 2026-11-13, 503 names. A name had a channel worth drawing in
+47% of name-weeks; a typical week offered 62 candidates.
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Invested | Place among random books | First half | Second half | Median hold | Closed at a gain | Mean closed gain |
+|---|---|---|---|---|---|---|---|---|---|---|
+| SPY | 10.8% | 0.66 | -54.6% | 100% | | | | | | |
+| list | 13.3% | 0.74 | -52.2% | 100% | | | | | | |
+| **owner's channel** | **10.5%** | **0.69** | **-37.7%** | 97% | **11th** | 10th | 26th | 10 wk | 42% | +9.9% |
+| lower half | 9.3% | 0.59 | -39.5% | 97% | 3rd | 0th | 45th | 4 wk | 41% | +3.1% |
+| 3% buffer | 11.0% | 0.70 | -40.8% | 98% | 20th | 21st | 31st | 18 wk | 43% | +15.9% |
+| straighter | 10.9% | 0.74 | -32.7% | 96% | 9th | 4th | 32nd | 16 wk | 49% | +11.1% |
+| market brake | 6.8% | 0.57 | -25.6% | 67% | 36th | 15th | 66th | 8 wk | 53% | +3.0% |
+
+**Against the lines.**
+- *Better ride:* **yes, narrowly.** Sharpe 0.69 against SPY's 0.66, and
+  the largest drawdown -37.7% against -54.6%. The first line any channel
+  book here has passed.
+- *Beats luck:* **no.** 0.219% a week against 0.261% for random books of
+  ten from the same list: the 11th percentile, 10th and 26th by half.
+
+**How to hold both.** Against SPY, which is what a person can actually
+buy, this book earned the same return (10.5% against 10.8%; the weekly
+difference has a t of -0.2, nothing) with about two thirds of the worst
+fall. Against ten random names from the list it loses, because the list
+is today's survivors and any ten of them compounded 13% and more. The
+truth about the rule sits between those two and this data cannot place
+it: the first is too kind (the book picks from survivors too), the second
+too harsh (it penalises every sale, since everything sold later
+recovered).
+
+**What changed from Passes 38 to 40.** The owner's drawing, not a tweak:
+a channel one to two years long, from the swing low, with support under
+the lows. Compound return went from 5.5%, 3.6% and 6.9% to 10.5% at the
+same full exposure. The shape of the trades is what a trend rule should
+look like: 42% of closed positions made money, the median one lost 1.8%,
+and the mean one made 9.9%. Many small losses, a few long winners (COR
+held 854 weeks, V 735).
+
+**What the arms say.**
+1. *Buying the lower half of the channel is worse*, as in Pass 38. A name
+   near its support line is one bad week from a sale: median hold four
+   weeks, 62 trades a year.
+2. *A little room helps.* The 3% buffer nearly doubles the median hold
+   and adds half a point a year.
+3. *Straighter is a better ride, not a better return*: Sharpe 0.74 and
+   the shallowest unbraked drawdown (-32.7%).
+4. *The market brake costs more than it saves here*: 6.8% a year for a
+   -25.6% drawdown. The channel's own exits already got the book through
+   2008 at -35.8% against -39.4%, and the brake then sat out recoveries.
+
+**Scored against the predictions.** (1) Missed: I predicted the 30th to
+75th percentile and it is the 11th, and Pass 38's 3.0 arm placed higher
+(30th) on a far lower return. (2) Held. (3) Held: median hold ten weeks.
+(4) Held: the buffer is 0.01 Sharpe from the primary. (5) Missed by a
+hair: the brake cut the drawdown by 32%, not more than a third.
+
+**What it means.**
+1. Three wrong drawings and one right one. The owner's picture was worth
+   encoding properly, and the earlier passes say nothing about it.
+2. It is not a way to beat the S&P 500 on this evidence. It is, at best,
+   the index's return with a shallower fall, measured on a list that
+   flatters it. It does not go to the forward page: it failed the line
+   that page requires.
+3. His examples were small caps and this is not a test of them. That run
+   needs twenty years of prices for the small and mid cap list, and a
+   membership history, or the survivor problem is far worse than here.
+4. The cheap honest next step is unchanged: a forward record. The rule
+   is now mechanical and matches his drawing on CAT (straightness 0.98
+   through the spring of 2026, at the lower line by late August), so the
+   weekly list can be logged before each Monday and scored, on any
+   universe, with no survivor problem at all.
