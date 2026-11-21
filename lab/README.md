@@ -7535,3 +7535,100 @@ most erratic. I expect none to clear the line, with 5 the closest.
 
     python lab/pass59_trend_and_sectors.py          # full run
     python lab/pass59_trend_and_sectors.py smoke    # plumbing: 300 names
+
+## Pass 59 results -- stock trend strength is the first picker to top the random books in all three periods; "no lagging sectors" clears the line; the leading-sectors gate and the market switch do not
+
+Run 2026-11-21, `lab/results/pass59_trend_and_sectors.json`. 1,604 weeks
+from 1996-02, ten slots, top 500. The market was cold in 24% of weeks
+and strong in 62%. The four leading sectors changed 32 times a year.
+
+Compound return a year, with the book's percentile among the base
+book's 100 random books in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Line |
+|---|---|---|---|---|---|---|---|
+| base | 16.4% (91) | 14.1% (92) | 9.9% (44) | 13.7% | 0.90 | -31.8% | |
+| 1 leading sectors only | 14.6% (81) | 14.0% (92) | 7.4% (9) | 12.0% | 0.77 | -42.1% | no |
+| **2 no lagging sectors** | 18.2% (98) | 15.6% (99) | 12.2% (80) | **15.4%** | **0.97** | -32.4% | **clears** |
+| 3 sector first | 19.7% (100) | 11.7% (52) | 7.2% (8) | 12.9% | 0.84 | -42.8% | no |
+| **4 stock trend strength** | 21.9% (100) | 13.9% (99) | 16.5% (100) | **17.7%** | 0.82 | -47.1% | percentiles yes, drawdown no |
+| 5 trend strength in a strong market only | 17.1% (96) | 9.5% (20) | 8.6% (29) | 12.1% | 0.72 | -34.0% | no |
+| **6 all three layers** | 16.8% (98) | 15.0% (99) | 14.8% (99) | 15.6% | 0.81 | -44.9% | percentiles yes, drawdown no |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% | |
+
+What each gate does apart from the picking, as the median of its own
+random books against the base's (12.8% / 11.8% / 10.2%; 11.6% over
+everything): leading sectors only 13.6% / 11.4% / 9.0% (11.4%); no
+lagging sectors 14.4% / 11.1% / 9.4% (11.6%).
+
+Five-year windows from 2016 that beat SPY: base 0 of 12; stock trend
+strength 3; all three layers 6; the others 0.
+
+**Against the line** (75th percentile of the base's random books in
+each period, thirty-year drawdown no more than ten points deeper than
+the base's -31.8%).
+- *No lagging sectors* **clears it**: 98th, 99th and 80th percentile,
+  drawdown -32.4%.
+- *Stock trend strength* is at the 100th, 99th and 100th percentile and
+  **fails on the drawdown**, -47.1%, fifteen points deeper.
+- *All three layers* is at the 98th, 99th and 99th and **fails on the
+  drawdown**, -44.9%.
+- *Leading sectors only*, *sector first* and *the market switch* miss a
+  period each, by a wide margin.
+
+**How to read it.**
+1. *The owner is right about trend strength, and I was wrong.* Ranking
+   the screen by a stock's return over 4, 13, 26 and 52 weeks together
+   is the first way of picking the ten, in any pass, to sit at the top
+   of the random books in all three periods, the unseen decade among
+   them: 17.7% a year over thirty years against 13.7% for the quality
+   score and 11.6% for random picks from the same screen. Pass 58's
+   one-year strength alone was ordinary in 2006-16 (50th percentile);
+   the four spans together were not (99th). It is also the only single
+   change that put the last decade over SPY (16.5% against 15.4%).
+2. *Its price is the drawdown.* -47% against -32%, set in the unseen
+   decade (2000-02). It turns over half again as often (14 buys a year
+   against 8). It fails the line as written, and the line was written
+   that way for a reason: a rule that makes four points more and falls
+   fifteen further is a different risk, not a free improvement.
+3. *Sector rotation helps as a filter on the weak, not as a hunt for
+   the strong.* Buying only from the four leading sectors made the book
+   worse (the leaders change 32 times a year: this is chasing).
+   Refusing the four lagging sectors made it better in every period at
+   no cost in drawdown. A caution that belongs with it: the gate's own
+   random books are no better than the base's over the thirty years
+   (11.6% both), so the gain shows up with the quality score's picks
+   and not with random ones. That is the pattern a lucky path would
+   leave, and the base book was already at the 91st and 92nd percentile
+   in two of the three periods before the gate was added.
+4. *Switching by the market's strength was the wrong way to use it.*
+   Trend strength in strong markets and the quality score otherwise did
+   worse than either alone (20th and 29th percentile in the last two
+   decades). Trend-strength picks earned their keep in mixed markets
+   too.
+5. *His three layers together work about as well as the stock layer
+   alone and no better.* 98th to 99th percentile in every period, 15.6%
+   a year, with the leading-sectors gate taking two points off what
+   trend strength makes by itself.
+
+**Scored against the predictions.** I predicted none would clear the
+line and one did. (1) Half: the scored book missed a period, but the
+gate's random books did not beat the base's. (2) Held on the random
+medians overall, and missed on the result: it cleared the line. (3)
+Missed: sector first was erratic, not middling. (4) Half: at the top in
+two periods and deeper in drawdown as predicted, but at the 99th in
+2006-16, where I expected ordinary. (5) Missed badly: I had the market
+switch as the best of the six and it was among the worst. (6) Missed:
+his stack was the steadiest of the six, not the most erratic.
+
+**What it means.** By the registration, "no lagging sectors" earns a
+place on a forward ledger, with the caution in point 3 attached. Stock
+trend strength does not, on drawdown alone, and it is the result to
+take seriously: the open question is no longer what to pick but how to
+hold trend-strength picks through a 2000-02 without giving up fifteen
+points. That is one question, to be registered against the unseen
+decade, and it is not answered by anything in this pass. Six ideas were
+run here and five in Pass 58; two of eleven have now passed or all but
+passed, which is more than chance would give and not so many that the
+counting can be dropped. Not a candidate for production.
