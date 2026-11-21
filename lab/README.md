@@ -6273,3 +6273,83 @@ a faster way back in for a name sold in a market-wide fall, or
 suspending the 20% rule when SPY itself is 20% off its high. Pass 42
 found that SPY low in its own channel doubles the break rate, which is
 the same event seen from the other side.
+
+## Pass 52 -- ten good channels: a quality score, weights by quality, cash by market temperature (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "How do we deem the quality of the channel? I'd
+rather have 10 good channels than 300 wonky ones. Weights should go with
+quality, cash should be allowed depending on the overall market
+temperature and we should be able to hold as many weeks as we want not
+sell every week." Lab only.
+
+Every channel book so far bought everything on the screen, 150 to 220
+names in the top 500, with a median hold of 5 to 7 weeks under the line
+exit. The screen says a channel is good enough; nothing has ranked them.
+
+**The quality score.** For every name on Pass 48's screen, four
+measures of the channel as drawn that week, each turned into its rank
+among that week's screen names (0 worst, 1 best) and averaged:
+- *straight*: R-squared of the weekly log close on time since the
+  starting candle. His "nice linear bottom left corner to top right".
+- *tight*: the channel's height divided by the rise of its lower line
+  since the starting candle; smaller is better. A wide band round a
+  small rise is wonky.
+- *long*: weeks since the starting candle. "Young channels get steep."
+- *tested*: the number of separate times a weekly low came down into
+  the bottom tenth of the channel (at least four weeks apart, the
+  starting candle not counted). A line touched four times is a line; a
+  line touched once is a guess.
+Fixed here from his words, not fitted to anything. As a check and not a
+verdict, the run prints where his 2026-11-20 marks fall on it.
+
+**The book.** Top 500 by size. *N* slots. On a weekly close: sell what
+has hit its exit; fill free slots with the highest-scoring screen names
+not held, bought at Monday's open. **A held name is never sold to make
+room for a better one and never sold for falling off the screen; it
+goes only on its exit**, so a hold can run for years. Empty slots are
+cash.
+
+The grid, each factor judged on its own:
+- *slots*: **10**, or 25.
+- *exit*: the **line** fixed at entry, or **20% off the high** (the
+  smoothest exit in Pass 51).
+- *weights*: **equal** (one slot each), or **by quality**: among the
+  names held, the best-scoring gets one and a half slots and the worst
+  half a slot, evenly spaced between.
+- *market temperature*: **none**, or **no new buys while SPY's weekly
+  close is under its 40-week average**. Holdings run to their own
+  exits, so in a cold market the book drains to cash name by name.
+And one sanity arm: ten slots filled with the *lowest*-scoring names.
+
+**Control.** For each equal-weight book, 200 books run the same way
+that fill free slots with screen names drawn at random. This asks the
+question that matters here: does the score pick better channels than
+the screen alone.
+
+**Verdict lines (fixed).** *The score earns its place* if the ten-slot,
+line-exit, equal-weight, no-market-rule book's mean weekly return is at
+or above the 95th percentile of its random books overall and the 75th
+in each half; the other seven equal-weight books are reported beside
+it. *Weights by quality* and *the market rule* each earn their place if,
+against the same book without them, they raise Sharpe by 0.05 or more
+without lowering the compound return by more than half a point a year,
+in both halves, on the ten-slot line-exit book. *Beats the S&P 500*:
+compound return above SPY's in all, both halves and 2010 on.
+
+**Limits.** Ten names is a noisy book: one stock moves it, and any one
+grid cell can look good or bad by chance, which is why the control is
+200 books run the same way. The list holds only names alive today. The
+channel is the Pass 41 drawing (at most two years old), on ordinary
+weekly bars.
+
+**Predictions.** (1) The top-scoring ten beat the bottom-scoring ten,
+and land above the middle of the random books but under the 95th
+percentile: the score helps a little and does not earn its place. (2)
+Weights by quality change nothing measurable. (3) The market rule cuts
+the largest drawdown and raises Sharpe overall, costs return from 2017,
+and so does not earn its place in both halves. (4) Median hold is two
+to three times the full-screen book's. (5) No book beats the S&P 500 on
+every window.
+
+    python lab/pass52_ten_good_channels.py          # full run
+    python lab/pass52_ten_good_channels.py smoke    # plumbing: 300 names
