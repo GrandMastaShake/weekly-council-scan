@@ -5437,3 +5437,91 @@ earn more. Either his eye adds something the formula still lacks (he is
 far pickier than it is), or the picture does not predict. History with
 this list cannot say which. Pass 44's ledger can: 42 of his own marks go
 in at Monday's open.
+
+## Pass 46 -- the Heikin-Ashi channel: starting candle, first decent pullback, and two ways to treat a break (registered 2026-11-20 before any run)
+
+After Pass 45 the owner described how he actually draws, 2026-11-20: "I
+usually use the first decent pullback as the channel angle from the
+starting candle"; "the first candle's low is the auto sell price probably
+until that is established"; "it needs a solid 4-8 weeks of trending up
+before it is considered"; "I use Heikin-Ashi candles too". Asked whether a
+broken line is a sale or gets flattened through the new low: "I guess it
+should be dynamic as it goes up with some cushion. We should test both
+though, you never know! If there are enough opportunities might work
+better this way." Checked against nine of his pictures first: a line
+from the starting candle through the first red run reproduces his AGX,
+ACMR, AMPH, ABT and Agilent channels; it does not reproduce ADM or CAT,
+whose drawn lines pass through pullbacks that came a year later.
+
+**Candles.** Weekly Heikin-Ashi from adjusted bars. A candle is red when
+its Heikin-Ashi close is under its open. Every line, low and break below
+is read on these candles; trades are at the next week's real open.
+
+**The channel (fixed).**
+- *Starting candle:* the lowest Heikin-Ashi low since the last break (or
+  of the last 104 weeks).
+- *First decent pullback:* the first run of two or more red candles that
+  begins four or more weeks after the starting candle. It is established
+  on the first green candle after it.
+- *The line:* from the starting candle's low through that run's lowest
+  low, on a log scale, extended. It must rise 10% a year or more, or the
+  run is passed over and the next one is used.
+
+**Two entries.**
+- *At the bounce:* bought the week the pullback is established.
+- *Early:* bought six weeks after the starting candle if that candle is
+  green and at least four of the six since the start are; until the line
+  exists it is sold on a Heikin-Ashi close under the starting candle's
+  low. If those conditions are not met it is bought at the bounce.
+
+**Two exits (his "test both").**
+- *Sell and restart:* sold on the first Heikin-Ashi close under the line.
+  The next channel starts from the low after that break.
+- *Dynamic with cushion:* when a later red run ends with its low under
+  the line, the line is flattened to run through that low. The name is
+  sold only on a Heikin-Ashi close more than a cushion under the line as
+  it stood before the run began, or when the flattened line no longer
+  rises 10% a year. The cushion is one of the stock's own weekly swings
+  (and two, as a second arm).
+
+| Arm | Entry | Exit |
+|---|---|---|
+| restart, bounce | at the bounce | sell and restart |
+| restart, early | early | sell and restart |
+| **dynamic 1, bounce** | at the bounce | dynamic, one swing -- the primary |
+| dynamic 1, early | early | dynamic, one swing |
+| dynamic 2, bounce | at the bounce | dynamic, two swings |
+| dynamic 2, early | early | dynamic, two swings |
+
+The primary is the owner's own guess ("I guess it should be dynamic").
+"Sell and restart" is reported beside it on equal terms and is not a
+second chance at the verdict.
+
+**Universe and book.** Pass 43's names and tradeable rule. Two sets, both
+reported: the **top 500** by size that week (the tier the earlier passes
+leaned to, and the one this data judges most fairly), and **every
+tradeable name**. Every signal is bought and the book is split equally
+among what is held (cash when nothing is). Costs by size tier. Scored
+against 200 random baskets a week of the same number of names from the
+same set, and against SPY.
+
+**Cards.** Per entry, the return over the next 13 and 26 weeks minus the
+average of the same set over the same weeks.
+
+**Verdict lines (fixed, for the primary on the top 500).** *Beats luck:*
+at or above the 95th percentile of its random baskets overall and the
+75th in each half. *Better ride:* Sharpe above SPY's and a smaller
+largest drawdown. *The cards:* a positive 13-week excess in both halves.
+
+**This is the eighth draw.** Same list, same survivors, same caution as
+Pass 45: a pass earns a forward page, not a conclusion.
+
+**Predictions.** (1) "Sell and restart" trades several times as often as
+"dynamic" and has the shorter median hold by half or more. (2) "Dynamic"
+has the higher compound return of the two. (3) No arm beats luck on the
+top 500. (4) Early entry is worse than entry at the bounce: it buys
+before there is a channel. (5) The 13-week card excess is within 0.5% of
+zero for every arm on the top 500.
+
+    python lab/pass46_ha_channel.py          # every arm, both sets
+    python lab/pass46_ha_channel.py smoke    # plumbing: 300 names
