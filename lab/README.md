@@ -6193,3 +6193,83 @@ S&P 500 on every window; the best is within two points a year of SPY in
 
     python lab/pass51_cash_and_twenty.py          # full run
     python lab/pass51_cash_and_twenty.py smoke    # plumbing: 300 names
+
+## Pass 51 results -- cash fixes the ride; the 20% rule calms the first half and costs the second; nothing beats the S&P 500
+
+Run 2026-11-21, `lab/results/pass51_cash_and_twenty.json`. 957 weeks from
+2008-07. SPY: 12.3% a year, Sharpe 0.73, largest drawdown -46.3% (to 2016
+9.5%; 2017 on 14.8%; 2010 on 13.9%, Sharpe 0.89, -31.8%).
+
+**Top 500.**
+
+| Exit | Compound a year | Sharpe | Largest drawdown | To 2016 | 2017 on | 2010 on | Percentile among random (all / to 2016 / 2017 on) | Names held | Invested | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| line | 11.2% | 0.75 | -31.7% | 9.7% | 12.5% | 12.5% | 22 / 0 / 94 | 221 | 95% | 7 weeks |
+| 20% off the high | 10.5% | 0.80 | -30.2% | 11.6% | 9.6% | 11.1% | 94 / 28 / 98 | 201 | 92% | 20 weeks |
+| line or 20% | 9.5% | 0.74 | -29.0% | 10.6% | 8.4% | 10.0% | 72 / 17 / 94 | 151 | 88% | 5 weeks |
+| line or 4.7 swings | 7.8% | 0.63 | -28.0% | 8.7% | 7.0% | 8.2% | 10 / 4 / 52 | 133 | 85% | 6 weeks |
+
+Where a sale landed under the name's high (median / worst tenth / worst):
+line -10.9% / -30.9% / -97.8%; 20% off the high -22.7% / -31.7% / -70.6%;
+line or 20% -13.4% / -26.7% / -70.6%; line or 4.7 swings -11.9% / -25.0%
+/ -73.9%.
+
+**Every tradeable name.** All four arms sit at the 0th to 2nd percentile
+of the random books in every window (8.9% to 11.3% a year against 11.7%
+to 13.0% for random). Outside the top 500 the book is worse than luck,
+as in Passes 43 and 48, on a list whose survivor bias is worst there.
+
+**Against the lines.**
+- *Beats luck:* no arm. "20% off the high" is closest, 94th overall and
+  98th since 2017, but 28th to 2016.
+- *Better ride:* "line" (0.75, -31.7%), "20% off the high" (0.80,
+  -30.2%) and "line or 20%" (0.74, -29.0%) all pass against SPY's 0.73
+  and -46.3%. Part of that is cash in 2008: the book was 24% to 60%
+  invested through the crash because it had few names, not because a
+  rule took it out.
+- *Beats the S&P 500:* no arm. Three beat SPY to 2016 (9.7% to 11.6%
+  against 9.5%); none does from 2017 or from 2010 (best 12.5% against
+  14.8% and 13.9%).
+- *The 20% rule earns its place:* no. Against "line", "line or 20%"
+  loses 1.7 points a year and 0.01 of Sharpe overall. By half it is
+  +0.9 points and +0.15 Sharpe to 2016, then -4.1 points and -0.12
+  Sharpe from 2017.
+
+**What happened.**
+1. *The two repairs did most of the work.* The same line exit that made
+   8.6% a year, Sharpe 0.53, drawdown -61.4% in Pass 50 makes 11.2%,
+   0.75, -31.7% once sold money goes to cash and no name is more than 1%
+   of the book. The Pass 50 figures were the construction, as the note
+   said.
+2. *The 20% rule does what the owner wants of it for a single name and
+   costs the book in sharp market falls.* It cut the worst tenth of
+   sales from -31% under the high to -27% and removed the -98% cases
+   (the worst is still -71%: a name that gaps cannot be sold at -20% on
+   a weekly close). The cost is 2020 and 2023: in March 2020 nearly the
+   whole book was 20% off its high at once, the rule sold it, and a name
+   comes back only when it is on the screen again, near a new high in a
+   two-year channel. The book made -1% in 2020 against +25% for the line
+   alone and +16% for SPY, and +7% in 2023 against +18% and +26%.
+3. *The 20% rule alone, with no line, is the smoothest book* (Sharpe
+   0.80, median hold 20 weeks, 43% of sales at a gain averaging +13.9%).
+   Adding the line to it sells sooner and does worse.
+4. *Scaling the distance to the stock's own swing is the worst arm.* It
+   sells calm names on small pullbacks.
+
+**Scored against the predictions.** (1) Half: the drawdown is shallower
+with "line or 20%", but Sharpe is not higher and it does not earn its
+place. (2) Missed: it is 1.7 points lower, not within half a point. (3)
+Missed: "20% off the high" alone is second on return and first on
+Sharpe, not the worst. (4) Missed: the swing-scaled version is clearly
+worse. (5) Held: no arm beats luck in both halves or the S&P 500 on
+every window, and the best is 1.4 points behind SPY from 2010.
+
+**What it means.** The owner's instinct about single names is sound and
+this confirms it: a stock 20% under its high in the channel is usually
+broken. As a book rule the damage is in getting back in, not in getting
+out. A market-wide fall trips the rule on everything at once and the
+screen's re-entry is slow. Two things follow and neither is tested:
+a faster way back in for a name sold in a market-wide fall, or
+suspending the 20% rule when SPY itself is 20% off its high. Pass 42
+found that SPY low in its own channel doubles the break rate, which is
+the same event seen from the other side.
