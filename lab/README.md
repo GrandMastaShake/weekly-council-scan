@@ -5149,6 +5149,14 @@ large: momentum is stronger in smaller stocks in the published record.
 smaller than in mega and large. (4) No tier clears the 75th percentile in
 both halves.
 
-    python lab/pass43_channel_by_size.py fetch    # the listing and the weekly bars -> lab/cache (prices are not committed)
+**Amended 2026-11-20, before any run.** The Nasdaq listing refused the
+request (HTTP 403), so the universe is the lab's two frozen lists instead:
+the small and mid cap list ($300M to $10B, caps of 2026-09-23) and the
+S&P 500 list (caps read from Yahoo on the day). Names above $10B that are
+not in the S&P 500 are therefore absent, which thins the mega and large
+tiers a little. A name's size is scaled from the week its cap is dated.
+Nothing else changes.
+
+    python lab/pass43_channel_by_size.py fetch    # the universe file and the weekly bars -> lab/cache (prices are not committed)
     python lab/pass43_channel_by_size.py          # the four numbers per tier
     python lab/pass43_channel_by_size.py smoke    # plumbing: 400 names
