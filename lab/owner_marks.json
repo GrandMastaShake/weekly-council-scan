@@ -1,0 +1,157 @@
+{
+ "rules": "lab/README.md, Pass 44",
+ "marks": [
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AZN",
+   "call": "potential",
+   "last_close": 174.35,
+   "note": "old channel from April 2025 broke in mid 2026; new one from the autumn low",
+   "shadow": {
+    "anchor_week": "2026-08-03",
+    "anchor_low": 153.41,
+    "lower_line_on_mark_date": 154.3,
+    "slope_year": 0.02,
+    "room_to_the_line": 0.13,
+    "matches_his_drawing": false
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ATO",
+   "call": "potential",
+   "last_close": 168.28,
+   "note": "long channel from mid 2024 broke in autumn 2026; new one from the October low",
+   "shadow": {
+    "anchor_week": "2026-09-28",
+    "anchor_low": 154.72,
+    "lower_line_on_mark_date": 164.57,
+    "slope_year": 0.582,
+    "room_to_the_line": 0.0226,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMPH",
+   "call": "potential",
+   "last_close": 28.25,
+   "note": "2021-2024 channel broke; new one from the May 2026 low",
+   "shadow": {
+    "anchor_week": "2026-05-18",
+    "anchor_low": 16.65,
+    "lower_line_on_mark_date": 22.57,
+    "slope_year": 0.838,
+    "room_to_the_line": 0.2515,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ABT",
+   "call": "potential",
+   "last_close": 103.0,
+   "note": "2023-2025 channel broke in early 2026; new one from the May 2026 low",
+   "shadow": {
+    "anchor_week": "2026-05-11",
+    "anchor_low": 80.89,
+    "lower_line_on_mark_date": 99.75,
+    "slope_year": 0.497,
+    "room_to_the_line": 0.0325,
+    "matches_his_drawing": true
+   }
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "UVE",
+   "call": "ideal",
+   "last_close": 48.49,
+   "note": "weekly, the picture he calls most reliable"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "GRDN",
+   "call": "ideal",
+   "last_close": 46.94,
+   "note": "weekly, same"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "CAT",
+   "call": "broken",
+   "last_close": 510.45,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AGX",
+   "call": "broken",
+   "last_close": 268.94,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ADM",
+   "call": "broken",
+   "last_close": 66.95,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACMR",
+   "call": "broken",
+   "last_close": 39.8,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ACLS",
+   "call": "broken",
+   "last_close": 90.26,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMAT",
+   "call": "broken",
+   "last_close": 302.63,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "AMKR",
+   "call": "broken",
+   "last_close": 30.24,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "APEI",
+   "call": "broken",
+   "last_close": 39.77,
+   "note": "channel broken on the weekly chart"
+  },
+  {
+   "marked": "2026-11-20",
+   "enter_open_of": "2026-11-23",
+   "ticker": "ASML",
+   "call": "broken",
+   "last_close": 1266.22,
+   "note": "channel broken on the weekly chart"
+  }
+ ]
+}

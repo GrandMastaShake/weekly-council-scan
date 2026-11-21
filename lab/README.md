@@ -5230,3 +5230,47 @@ leans only: one tier in four doing well in one half in two is what
 chance looks like too. The owner's own examples are small caps, the tier
 this data is least able to judge. A forward record on small caps is the
 only clean test of them.
+
+## Pass 44 -- the owner's marks, forward: his own channels, logged before they trade (registered 2026-11-20 with the first marks)
+
+Passes 38 to 43 tried to write the owner's chart reading as a formula and
+test it on history. Every one of them carries the survivor problem, and
+none draws exactly what he draws (his channels run up to four years, he
+anchors a new one at the low after the last break, and he accepts
+choppier ones than the 0.80 straightness rule does). This pass skips the
+formula. He marks charts; the marks are written down with the date before
+the next session opens; they are scored later against prices nobody had
+seen. No history, no survivors, no hindsight.
+
+**The ledger.** `lab/owner_marks.json`. One row per mark: the date he
+sent it, the ticker, the last close, and his call, one of:
+- `potential`: a channel he reads as forming or intact and worth owning.
+- `ideal`: shown as an example of the picture, not called a buy.
+- `broken`: a channel he reads as broken, to be avoided until a new
+  pattern shows.
+Rows are never edited or removed. A changed mind is a new row.
+
+**Scoring (fixed).** Each mark is entered at the open of the first
+session after its date. At 4, 13 and 26 weeks: the name's return, SPY's
+over the same days, and the name's place (0 to 100) among the returns of
+every name in its size tier of `lab/universe_all_2026-11-20.csv` (Pass
+43's tiers, by rank that week). Dividends included, no costs.
+- `potential` should place above 50 on average. `broken` should place
+  below 50. `ideal` is reported and not judged.
+- Nothing is concluded from fewer than 40 marks of one call with a
+  13-week score. Until then the page shows the rows and says "too few".
+
+**The mechanical shadow.** Beside each `potential` mark, the lab draws
+the lower line from the anchor low he used (read off his picture to the
+month) as the steepest straight line under every weekly low since, fixed
+on the mark date, and records the first weekly close below it. That is a
+record of where the rule would have sold, not a part of the score.
+
+**Predictions.** (1) `broken` names place below 50 at 13 weeks: his
+breaks came late in Pass 41's overlay but the five that had already
+broken all kept falling. (2) `potential` names place between 45 and 60:
+a real edge here, if there is one, is small. (3) Forty marks of one call
+will take months, so the first honest read is in 2027.
+
+The scorer is written and committed before the first 4-week score is due
+(2026-12-18).
