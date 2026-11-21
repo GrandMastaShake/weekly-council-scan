@@ -7003,3 +7003,31 @@ movers traded alone.
     python lab/pass56_back_in.py fetch    # Yahoo earnings history for the study's names
     python lab/pass56_back_in.py          # full run
     python lab/pass56_back_in.py smoke    # plumbing: 150 names
+
+## Pass 56 amendment -- sales, margin and profit from SEC filings are added (2026-11-21, before any run)
+
+The registration said the pass would not get sales or margin history.
+The owner has since agreed to the contact address the SEC asks automated
+readers to send, so it does. Added to Part A, before any run of either
+part:
+
+- *sales up on a year before*; *sales up 20% or more*; *sales growth
+  faster than the quarter before* (the year-on-year rate rising);
+- *gross margin up on a year before*;
+- *net income positive*.
+
+Source: the SEC's XBRL frames, one calendar quarter at a time for every
+filer. A quarter is taken as known 75 days after it ends (a 10-Q is due
+in 40 to 45 days and a 10-K in 60 to 90), and is ignored once it is 200
+days old. The same lines apply.
+
+**Limits of this source.** It starts in 2009 for the largest filers and
+2011 for the rest, so in the 2006-16 decade these five can only be
+counted from about 2010. Many companies report the fourth quarter only
+inside the annual figure, so fourth quarters are often missing and the
+facts then come from the third. Companies name their sales line in
+different ways; three common names are read and the largest taken.
+Banks, insurers and property trusts mostly do not report a gross profit.
+Foreign filers on other forms are absent.
+
+    python lab/pass56_back_in.py fetchsec    # needs SEC_CONTACT in the environment; the address is not stored

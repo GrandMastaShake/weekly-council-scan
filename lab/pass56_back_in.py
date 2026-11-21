@@ -10,6 +10,7 @@ within a year. Part B compares ways back in.
 Registered in lab/README.md (Pass 56) before any run.
 
     python lab/pass56_back_in.py fetch    # Yahoo earnings history
+    python lab/pass56_back_in.py fetchsec # SEC quarterly sales, gross profit, net income (needs SEC_CONTACT)
     python lab/pass56_back_in.py          # full run
     python lab/pass56_back_in.py smoke    # plumbing: 150 names
 """
@@ -40,6 +41,11 @@ AHEAD = 52
 AFTER = 26
 EPS = lab.CACHE / "yahoo_earnings_history_2026-11-21.pkl"
 OUT = lab.RESULTS / "pass56_back_in.json"
+SEC = lab.CACHE / "sec_frames_2026-11-21.pkl"
+SEC_LAG_DAYS = 75                     # a quarter is taken as known 75 days after it ends
+SEC_STALE_DAYS = 200
+SEC_CONCEPTS = {"revenue": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet"],
+                "gross": ["GrossProfit"], "net": ["NetIncomeLoss"]}
 DECADES = {"2016-26": ("2016-11-11", "9"), "2006-16": ("2006-11-10", "2016-11-11")}
 WAYS = ["the screen", "MACD cross", "above the 10-week average", "half back", "new high"]
 
@@ -105,6 +111,58 @@ def fetch():
     print(f"wrote {EPS.name}: {len(out)} names, {miss} without")
 
 
+def fetch_sec():
+    """Quarterly sales, gross profit and net income from the SEC's XBRL
+    frames (one request per concept per calendar quarter, every filer at
+    once). The SEC asks automated readers for a contact address: it is read
+    from the SEC_CONTACT environment variable and never written anywhere."""
+    import os
+    import requests
+    if SEC.exists():
+        print("SEC frames already cached")
+        return
+    contact = os.environ.get("SEC_CONTACT", "").strip()
+    if not contact:
+        raise SystemExit("set SEC_CONTACT to the contact address the SEC asks for")
+    hdr = {"User-Agent": f"weekly-council-scan lab {contact}", "Accept-Encoding": "gzip, deflate"}
+    r = requests.get("https://www.sec.gov/files/company_tickers.json", headers=hdr, timeout=60)
+    r.raise_for_status()
+    cik_of = {v["ticker"].upper().replace("-", "."): int(v["cik_str"]) for v in r.json().values()}
+    _, _, _, names, _ = load()
+    want = {cik_of[t]: t for t in names if t in cik_of}
+    print(f"{len(want)} of {len(names)} names have an SEC number", flush=True)
+    out = {t: {k: {} for k in SEC_CONCEPTS} for t in want.values()}
+    periods = [(y, q) for y in range(2009, 2027) for q in (1, 2, 3, 4)]
+    for group, concepts in SEC_CONCEPTS.items():
+        for (y, q) in periods:
+            for c in concepts:
+                url = f"https://data.sec.gov/api/xbrl/frames/us-gaap/{c}/USD/CY{y}Q{q}.json"
+                data = None
+                for attempt in range(3):
+                    try:
+                        rr = requests.get(url, headers=hdr, timeout=60)
+                        if rr.status_code == 404:
+                            break
+                        rr.raise_for_status()
+                        data = rr.json().get("data", [])
+                        break
+                    except Exception as e:                          # noqa: BLE001
+                        print("retry", c, y, q, repr(e)[:80], flush=True)
+                        time.sleep(3 + 3 * attempt)
+                time.sleep(0.2)
+                for row in data or ():
+                    t = want.get(int(row["cik"]))
+                    if t is None:
+                        continue
+                    old = out[t][group].get((y, q))
+                    if old is None or abs(row["val"]) > abs(old[1]):
+                        out[t][group][(y, q)] = (row["end"], float(row["val"]))
+        print(f"{group}: {sum(1 for t in out if out[t][group])} names with any quarter", flush=True)
+    with open(SEC, "wb") as fh:
+        pickle.dump(out, fh)
+    print(f"wrote {SEC.name}")
+
+
 def ema(x, span):
     """Exponential average down each column, starting at the first value."""
     a = 2.0 / (span + 1.0)
@@ -124,6 +182,8 @@ def main(argv):
     mode = argv[1] if len(argv) > 1 else ""
     if mode == "fetch":
         return fetch()
+    if mode == "fetchsec":
+        return fetch_sec()
     smoke = mode == "smoke"
     frames, idx, fridays, names, member = load()
     if smoke:
@@ -133,6 +193,42 @@ def main(argv):
     if EPS.exists():
         with open(EPS, "rb") as fh:
             eps = pickle.load(fh)
+
+    sec = {}
+    if SEC.exists():
+        with open(SEC, "rb") as fh:
+            sec = pickle.load(fh)
+
+    def sec_facts(t, friday):
+        """Sales, margin and profit facts from the latest quarter that had
+        been over for SEC_LAG_DAYS on the sale's Friday."""
+        from datetime import timedelta
+        g = sec.get(t)
+        if not g or not g["revenue"]:
+            return {}
+        cut = (date.fromisoformat(friday) - timedelta(days=SEC_LAG_DAYS)).isoformat()
+        stale = (date.fromisoformat(friday) - timedelta(days=SEC_STALE_DAYS)).isoformat()
+        known = sorted(k for k, v in g["revenue"].items() if stale <= v[0] <= cut)
+        if not known:
+            return {}
+        y, q = known[-1]
+        rev, prev = g["revenue"][(y, q)][1], g["revenue"].get((y - 1, q))
+        o = {}
+        if prev and prev[1] > 0 and rev > 0:
+            gr = rev / prev[1] - 1.0
+            o["sales up on a year before"] = gr > 0
+            o["sales up 20% or more on a year before"] = gr >= 0.20
+            pq = (y, q - 1) if q > 1 else (y - 1, 4)
+            a1, a0 = g["revenue"].get(pq), g["revenue"].get((pq[0] - 1, pq[1]))
+            if a1 and a0 and a0[1] > 0 and a1[1] > 0:
+                o["sales growth faster than the quarter before"] = gr > a1[1] / a0[1] - 1.0
+            gp, gp0 = g["gross"].get((y, q)), g["gross"].get((y - 1, q))
+            if gp and gp0:
+                o["gross margin up on a year before"] = gp[1] / rev > gp0[1] / prev[1]
+        ni = g["net"].get((y, q))
+        if ni:
+            o["net income positive"] = ni[1] > 0
+        return o
 
     def mat(col):
         return np.column_stack([frames[t][col].reindex(idx).to_numpy(dtype=float) for t in names])
@@ -261,6 +357,7 @@ def main(argv):
                               "the stock's fall less SPY's": float((c / h - 1.0) - (spy[w] / spy[hw] - 1.0)),
                               "weekly swing": float(swing[w, j]), "prior 52-week return": float(c / Cw[w - 52, j] - 1.0) if w >= 52 else float("nan")}}
                 ev["bin"].update(eps_facts(names[j], fridays[w]))
+                ev["bin"].update(sec_facts(names[j], fridays[w]))
                 events.append(ev)
         good = np.array([e["good"] for e in events])
         fx = np.array([e["fwd52_x"] for e in events])
