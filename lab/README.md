@@ -8156,3 +8156,67 @@ highest return and the deepest drawdown of the four.
 
     python lab/pass64_how_many_names.py          # full run
     python lab/pass64_how_many_names.py smoke    # plumbing: 300 names
+
+## Pass 64 results -- the edge is a tilt: it is still there at thirty names, in every period; more names do not buy the better ride I expected
+
+Run 2026-11-21, `lab/results/pass64_how_many_names.json`. Trend-strength
+picks, positions drifting, 1996 to 2026. Compound return a year;
+percentile among 100 random books of the same size in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Random books: return / drawdown |
+|---|---|---|---|---|---|---|---|
+| 5 slots, cap of 2 | 21.5% (99) | 13.2% (95) | 31.5% (100) | 21.8% | 0.85 | -64.4% | 10.5% / -42.8% |
+| 10 slots, cap of 3 | 20.0% (99) | 14.5% (97) | 20.2% (100) | 18.5% | 0.86 | -45.6% | 11.8% / -36.8% |
+| **20 slots, cap of 6** | 18.5% (99) | 11.7% (85) | 16.7% (99) | 15.8% | 0.85 | -43.0% | 11.8% / -33.5% |
+| **30 slots, cap of 9** | 17.9% (100) | 11.4% (90) | 16.4% (100) | 15.3% | 0.87 | -40.4% | 11.5% / -31.4% |
+| 5 slots, no cap | 28.4% (100) | 11.9% (90) | 24.7% (100) | 21.5% | 0.81 | -49.3% | |
+| 10 slots, no cap | 21.2% (99) | 14.8% (100) | 17.6% (100) | 18.1% | 0.81 | -52.9% | |
+| 20 slots, no cap | 19.9% (100) | 12.4% (95) | 16.5% (99) | 16.4% | 0.84 | -52.0% | |
+| 30 slots, no cap | 17.9% (100) | 11.6% (93) | 14.0% (100) | 14.6% | 0.82 | -46.8% | |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+**Against the lines.**
+- *The edge is a tilt:* **yes.** The capped book is at the 99th, 85th
+  and 99th percentile of its random books at twenty slots and the
+  100th, 90th and 100th at thirty. Every one of the eight books is at
+  or above the 85th percentile in every period.
+- *More names buy a better ride:* **no.** The thirty-year drawdown is
+  shallower than the ten-slot book's by 2.6 points at twenty and 5.2 at
+  thirty, under the six-point noise band, and Sharpe is level (0.85 and
+  0.87 against 0.86).
+
+**How to read it.**
+1. *Trend strength is not a few lucky names.* Its lead over random
+   picks from the same screen shrinks as the book fills (about ten
+   points a year at five slots, seven at ten, four at twenty and
+   thirty) and never goes away. This is the first line in the lab that
+   a result has cleared at its registered setting and at a harder one.
+2. *The lead is thinnest where it has always been thin.* In 2006-16 the
+   thirty-slot book is 0.7 of a point ahead of its random books; in the
+   other two periods four and six and a half.
+3. *The drawdown is the tilt's, not the concentration's.* At every size
+   the trend-strength book falls about nine points further than random
+   books of that size (-64/-46/-43/-40 against -43/-37/-34/-31). Owning
+   three times as many names takes five points off, as it does for the
+   random books. What is left is 2000-02, when the strongest trends in
+   the market were all the same trade.
+4. *The cap goes on helping at every size but five.* It cuts the
+   drawdown by seven to nine points at ten, twenty and thirty slots for
+   under a point of return. At five slots two names a sector is too
+   blunt and the result is noise in both directions.
+5. *Twenty or thirty slots is a fair trade, not a better one.* Three
+   points a year less than ten slots, the same Sharpe, a few points
+   less drawdown, far less dependence on any one name (the largest
+   position ever, 21% to 30% of the book against 44%), and in the last
+   decade still a point ahead of SPY.
+
+**Scored against the predictions.** (1) Held: 18.5%, 15.8%, 15.3%. (2)
+Half: twenty cleared the line, and so did thirty, which I had missing a
+period. (3) Missed: the drawdown gain is under the noise band. (4)
+Held.
+
+**What it means.** The forward ledger's books stay as registered, ten
+slots. If the owner would rather hold more names for the same idea,
+twenty with a cap of six is the version to register beside them; this
+pass says it gives up return, not edge. Count of ideas tried since
+Pass 58: twenty-three, this pass adding a check and not an idea.
