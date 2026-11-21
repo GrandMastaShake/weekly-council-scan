@@ -8115,3 +8115,44 @@ would be a new registration.
 
     python lab/forward_book.py            # settle, mark, decide; writes the ledger and BOOK.md
     python lab/forward_book.py plan       # print what it would do; write nothing
+
+## Pass 64 -- how many names does the edge need? The trend-strength book at 5, 10, 20 and 30 slots (registered 2026-11-21 before any run)
+
+Offered to the owner on 2026-11-21 among things worth trying: "You can
+run two". Lab only. Every trend-strength result so far is a ten-name
+book, and Pass 62 showed how much one ten-name path owes to its start.
+If trend strength is a real tilt it should still show when the book
+holds twenty or thirty names; if it shows only at five or ten it is a
+few names.
+
+**The books.** Pass 61's flat trend-strength book (positions drifting,
+top 500, 20% exit, no new buys in a cold market) with **5, 10, 20 and
+30 slots**, each with and without the sector cap. The cap keeps its
+proportion, three in ten: 2 of 5 (the nearest whole number), 3 of 10,
+6 of 20, 9 of 30. Eight books.
+
+**Control.** For each size, 100 random books of the same size that fill
+slots at random from the screen, no cap.
+
+**Lines (fixed).** *The edge is a tilt* if the capped book at 20 slots
+and at 30 slots are each at or above the 75th percentile of their own
+size's random books in each of the three periods. *More names buy a
+better ride* if the capped book's thirty-year largest drawdown at 20
+and at 30 slots is shallower than the ten-slot book's by six points or
+more (the noise band of Pass 62) with a Sharpe ratio no lower.
+
+**Limits.** As Passes 59 to 62. The screen holds a median of about 80
+names, so a 30-slot book owns more than a third of it and its random
+books cannot differ from it by much: a high percentile is harder to
+reach at 30 for that reason alone, which works against the idea, not
+for it.
+
+**Predictions.** (1) The return falls as slots rise: about 18% at ten,
+15% to 16% at twenty, 14% at thirty. (2) The capped 20-slot book clears
+the percentile line; the 30-slot book misses one period. (3) The
+drawdown is shallower by six points or more at twenty and thirty, with
+Sharpe higher: more names buy a better ride. (4) Five slots has the
+highest return and the deepest drawdown of the four.
+
+    python lab/pass64_how_many_names.py          # full run
+    python lab/pass64_how_many_names.py smoke    # plumbing: 300 names
