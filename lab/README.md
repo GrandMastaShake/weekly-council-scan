@@ -6923,3 +6923,83 @@ third pass to end at the same place (Passes 51 and 53 before it): the
 cost is in getting back in. A sold name that goes on to a new high is
 the plainest sign the sale was wrong, and no rule tested so far buys
 it back on that.
+
+## Pass 56 -- after a 20% sale: what tells the good ones from the bad, and which way back in is best (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "So how do we get back in the good ones quicker
+but avoid the bad ones. Let's look for differentiating variables in
+fundamentals or to the MACD." Lab only. Passes 51, 53 and 55 each ended
+at the same place: the 20% exit is tripped by winners and losers alike,
+about once a year each, and the cost is in getting back in.
+
+**The events.** Every name that was ever in the top 500 by size since
+2006, weekly bars, no price floor (Pass 55's amendment), a channel
+counting after 8 weeks (Pass 54). Each name is traded alone: bought when
+it is in the top 500 and on the screen, sold on a weekly close 20% or
+more under its high. **Every such sale is one event.** A sale is *good
+to undo* if the stock closes back above the high it was sold under
+within 52 weeks; the other outcome reported is its return over the next
+52 weeks less SPY's. Found on sales from 2016-11 on, counted again on
+2006-11 to 2016-11.
+
+**Part A: what was known on the day of the sale.**
+- *MACD* (weekly closes, 12/26/9): line above or below zero; histogram
+  rising or falling; the line as a share of price.
+- *The fall itself:* weeks from the high to the sale; how much the
+  stock had gained from its buy to its high; volume in the falling
+  weeks against the 26 weeks before.
+- *The market:* SPY 10% or more under its own 52-week high; SPY under
+  its 40-week average; the stock's fall less SPY's fall over the same
+  weeks.
+- *The stock:* weekly swing; prior 52-week return; close above or under
+  its 40-week average.
+- *Fundamentals:* the lab has no sales or margin history, and this pass
+  does not get one. What it uses is Yahoo's earnings history (reported
+  and expected earnings per share by announcement date, back to about
+  2002), taken as known at the sale: last reported EPS positive; EPS
+  up on the same quarter a year before; last report beat the estimate;
+  three or more of the last four beat; and whether the sale came within
+  two weeks after a report.
+
+**Part B: ways back in, after the sale.** For each, how often it comes
+within 52 weeks, how long it takes, the return over the following 26
+weeks less SPY's, and how often the stock then falls 20% before it
+rises 20%:
+- *the screen* (what every book has used);
+- *MACD cross*: the weekly histogram turns from negative to positive;
+- *above the 10-week average*;
+- *half back*: a close above the midpoint of the sale price and the old
+  high;
+- *new high*: a close above the old high.
+And each name traded alone over its decade with each way back in added
+to the screen, for the decade's best movers (Pass 55's top 5%) and for
+the rest.
+
+**Lines (fixed).** A variable *differentiates* if the share of sales
+that were good to undo differs by ten points or more between its two
+sides (top and bottom fifth for a measured one), the same way round in
+both decades. A way back in *beats the screen* if, in both decades, the
+26-week return after it is higher, the share that fall 20% first is no
+higher, and the typical name traded alone ends with more.
+
+**Limits.** Names alive today only, so the worst sales to undo (the
+ones that went to nothing) are missing and every "good" share is too
+high. Earnings per share only, and Yahoo's history may restate old
+figures for splits unevenly, so year-on-year growth is the roughest of
+the measures; the signs are safer. One name traded alone is not a book:
+a way back in that works here still has to be tested in ten slots with
+the market rule.
+
+**Predictions.** (1) The market differentiates: sales made while SPY is
+10% or more under its high are good to undo at least ten points more
+often, in both decades. (2) MACD on the day of the sale does not
+differentiate. (3) Positive EPS and rising EPS raise the good share by
+five to ten points, short of the line; the latest beat or miss does
+little. (4) Of the ways back in, the MACD cross comes soonest and fails
+most often; the new high comes last and fails least. (5) No way back in
+clears the line in both decades, but the new high adds most to the best
+movers traded alone.
+
+    python lab/pass56_back_in.py fetch    # Yahoo earnings history for the study's names
+    python lab/pass56_back_in.py          # full run
+    python lab/pass56_back_in.py smoke    # plumbing: 150 names
