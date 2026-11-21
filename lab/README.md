@@ -7632,3 +7632,69 @@ decade, and it is not answered by anything in this pass. Six ideas were
 run here and five in Pass 58; two of eleven have now passed or all but
 passed, which is more than chance would give and not so many that the
 counting can be dropped. Not a candidate for production.
+
+## Pass 60 -- a 20% rule that tightens: with time held, and with the position's weight (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "What if the 20% rule tightened over time?
+Stricter selling for higher weights". Lab only. It is also the question
+Pass 59 left open: stock trend strength picks better than anything else
+tried and falls 47% at worst against 32%; how are such picks to be held.
+
+**A change of bookkeeping first, because his idea needs it.** Every
+ten-slot book so far has counted each name as a tenth of the book every
+week, which is a book rebalanced to equal weights weekly at no cost. In
+such a book no position is ever "higher weight". Here **positions
+drift**: a name is bought with an equal share of the cash on hand
+(cash divided by the empty slots), and then grows or shrinks with its
+price until it is sold. A winner becomes a large part of the book, as
+it would in an account. All books in this pass, the flat-20% ones
+included, are kept this way, so their figures will differ from Passes
+57 to 59.
+
+**The exits, fixed here.**
+- *flat*: sold on a weekly close 20% under its high.
+- *tightens with time*: 20% when bought, two points tighter for every 13
+  weeks held, to a floor of 10% (reached after 65 weeks).
+- *tightens with weight*: 20% while the position is a tenth of the book
+  or less; above that, 0.8 of a point tighter for every point of weight,
+  to a floor of 10% (16% at a 15% weight, 12% at 20%, the floor from
+  22.5%).
+- *both*: whichever is tighter.
+
+**Eight books:** the four exits on the quality score's picks, and on
+stock trend strength's picks (Pass 59's idea 4). Ten slots, top 500, no
+new buys in a cold market, 1996 to 2026.
+
+**Lines (fixed).**
+- *A tightening helps* if, for the same picks against the flat exit, the
+  thirty-year largest drawdown is shallower by five points or more, the
+  thirty-year return is not lower by more than a point a year, and no
+  one of the three periods is lower by more than a point and a half.
+  Judged for each of the two sets of picks, and reported beside the
+  same comparison on the medians of 100 random books for each exit,
+  which is the steadier reading.
+- *Trend strength earns its place* with a given exit if the book is at
+  or above the 75th percentile of the flat exit's random books in each
+  of the three periods **and** its thirty-year drawdown is no more than
+  ten points deeper than the flat quality book's. This is Pass 59's
+  line, moved to the new bookkeeping.
+
+**Limits.** As Passes 57 to 59. Eight more books on the same thirty
+years, six of them new: the count of ideas tried since Pass 58 goes to
+seventeen. The numbers of the two tightenings (two points a quarter,
+0.8 a point, the 10% floor) are first guesses, not fitted; if one works,
+its neighbours have to work as well before it means anything.
+
+**Predictions.** (1) Tightening with time lowers the return by more than
+a point a year: the money in these books is made in the long holds,
+and this cuts them. It does not help. (2) Tightening with weight cuts
+the trend-strength book's drawdown by five points or more, because its
+2000-02 loss sat in a few names that had grown large, at a cost of one
+to two points a year: on the line, more likely just outside it. (3) On
+the quality picks neither does much. (4) Letting positions drift
+raises the flat trend-strength book's return and its drawdown against
+Pass 59's figures. (5) Trend strength does not earn its place with any
+of the four exits; weight-tightening comes closest.
+
+    python lab/pass60_tightening_exit.py          # full run
+    python lab/pass60_tightening_exit.py smoke    # plumbing: 300 names
