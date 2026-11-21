@@ -6662,3 +6662,80 @@ year.
     python lab/pass54_daily_reaction.py fetch    # daily bars from 2014 for the names that were ever top 500
     python lab/pass54_daily_reaction.py          # full run
     python lab/pass54_daily_reaction.py smoke    # plumbing: 150 names
+
+## Pass 54 results -- acting daily changes nothing; counting a channel after 8 weeks adds two to four points; every book is still 5 to 9 points a year behind SPY
+
+Run 2026-11-21, `lab/results/pass54_daily_reaction.json`. 2,516 sessions
+from 2016-11-14, 988 names that were ever in the top 500, ten slots. SPY
+was under its 200-day average on 16% of days. A median of 84 names on
+the screen with the 26-week rule and 93 with the 8-week rule.
+
+| Acts | Channel counts after | Ten years | First half | Second half | Sharpe | Largest drawdown | 2020-21 | 2023-26 | Percentile among random books | Buys a year |
+|---|---|---|---|---|---|---|---|---|---|---|
+| weekly | 26 weeks | 6.9% | 10.7% | 3.3% | 0.52 | -29.1% | 7.2% | 7.5% | 33 | 8.3 |
+| weekly | 8 weeks | 8.7% | 11.9% | 5.6% | 0.62 | -29.5% | 9.7% | 10.6% | 59 | 8.8 |
+| daily | 26 weeks | 6.2% | 10.6% | 1.9% | 0.48 | -28.0% | 11.5% | 7.8% | 4 | 11.4 |
+| daily | 8 weeks | **9.9%** | 14.8% | 5.2% | 0.69 | -23.5% | 19.4% | 11.0% | 58 | 11.4 |
+| switch | 26 weeks | 6.1% | 6.9% | 5.3% | 0.45 | -31.5% | 2.1% | 10.1% | 18 | 12.4 |
+| switch | 8 weeks | 9.3% | 10.6% | 8.1% | 0.63 | -33.0% | 9.4% | 14.5% | 60 | 10.6 |
+| **SPY** | | **15.1%** | 18.8% | 11.6% | 0.87 | -33.7% | 23.4% | 20.8% | | |
+| pool | | 11.8% | 17.6% | 6.4% | 0.70 | -38.4% | 20.5% | 14.4% | | |
+
+**Against the lines.**
+- *Quicker reaction earns its place:* no book, one narrowly. Against
+  the weekly, 26-week book, "daily, 8 weeks" is +3.0 points a year over
+  the ten years with a shallower drawdown, +4.1 in the first half and
+  +1.9 in the second, a tenth of a point under the line. "Switch, 8
+  weeks" is +2.4 overall but -0.1 and +4.8 by half. "Weekly, 8 weeks"
+  is +1.8.
+- *Beats the S&P 500:* no book, in the ten years or in either half. The
+  best is 5.2 points a year behind.
+
+**What happened.**
+1. *Acting daily is not the missing piece.* With the 26-week rule,
+   daily is 0.7 points worse than weekly and the switch 0.8 worse.
+   Selling a day or four sooner at 20% off the high saves little, and
+   it buys 40% more often.
+2. *The 26-week rule was costing two to four points a year, and it was
+   mine.* Letting a channel count after 8 weeks, the owner's own
+   figure, helps under all three timings (+1.8, +3.7 and +3.2). It is
+   most of what "daily, 8 weeks" made in 2020-21 (19.4% against 7.2%):
+   the book could buy again in the summer of 2020 and not in the
+   autumn.
+3. *His switch idea is the best book since 2021* (8.1% a year in the
+   second half against 3.3% to 5.6% for the others and 6.4% for the
+   pool) *and the worst-timed in 2020.* One half each way is not
+   evidence for or against.
+4. *The gap to SPY is not reaction time.* Over these ten years the pool,
+   every top-500 name held equally with no rules at all, made 11.8%
+   against SPY's 15.1%: 3.3 points a year go to SPY simply for being
+   weighted to its largest names. The books then give up two to six
+   more to the pool, in the years the market ran without them: 2021
+   (+6% to +11% against +29%), 2023 and 2025.
+5. *The picks are again no better than chance.* The 8-week books sit at
+   the 58th to 60th percentile of books filled at random from the same
+   screen.
+6. *Ten names is a noisy book, and this run shows how noisy.* Pass 53's
+   weekly book made 19.7% a year in 2017-19; the same rules here,
+   starting empty in November 2016 and measured on daily bars, made
+   11.2%. Nothing about the rule changed, only which ten names it
+   happened to be holding.
+
+**Scored against the predictions.** (1) Held: daily alone is 0.7 points
+worse. (2) Mostly held: the 8-week rule is where the difference is,
+most of it in 2020-21, though it is +1.8 and not two points under
+weekly timing, and it helps in both halves, which I did not expect. (3)
+Half: the switch lands between the others with the 8-week rule and
+below both with the 26-week rule. (4) Half: no book beats the S&P 500,
+but the best is 5.2 points behind, not within four.
+
+**What it means.** The 8-week rule should replace the 26-week rule in
+any further channel book: it is the owner's figure, it helped under
+every timing and in both halves, and the 26 was never his. It was found
+on the ten years it repairs, so it goes forward as a correction of my
+own assumption and not as a finding. Daily decisions are not worth
+building. And the result that matters most is the fourth: in the last
+ten years a book of equally weighted large stocks starts three points a
+year behind SPY before any rule is applied, so a channel book that only
+ever holds equal weights of whatever passes its screen has that much to
+make up first.
