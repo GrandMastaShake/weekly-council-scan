@@ -5525,3 +5525,67 @@ zero for every arm on the top 500.
 
     python lab/pass46_ha_channel.py          # every arm, both sets
     python lab/pass46_ha_channel.py smoke    # plumbing: 300 names
+
+## Pass 46 results -- both exits fail the same way; the Heikin-Ashi rule is in a "channel" on half of all large caps at once
+
+Run 2026-11-20, `lab/results/pass46_ha_channel.json`. 3,004 names, 1,001
+weeks to 2026-11-13. SPY over the same weeks: 10.9% a year, Sharpe 0.66,
+largest drawdown -54.6%.
+
+**Top 500 by size (a median of 472 tradeable names a week; the pool compounds 9.6%).**
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Entries a year | Median hold | Holds ending at a gain | Mean gain | 13-week card excess |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| restart, bounce | 8.4% | 0.56 | -51.0% | 2nd | 10th | 2nd | 190 | 496 | 6 wk | 37% | +2.8% | -0.28% |
+| restart, early | 9.0% | 0.58 | -53.8% | 2nd | 6th | 6th | 272 | 578 | 13 wk | 43% | +4.2% | -0.27% |
+| **dynamic 1, bounce** | **8.6%** | **0.57** | **-55.5%** | **0th** | 3rd | 0th | 240 | 383 | 10 wk | 37% | +5.1% | -0.30% |
+| dynamic 1, early | 9.2% | 0.59 | -55.2% | 2nd | 13th | 2nd | 302 | 443 | 16 wk | 42% | +6.2% | -0.32% |
+| dynamic 2, bounce | 8.8% | 0.58 | -56.2% | 0th | 3rd | 2nd | 272 | 303 | 14 wk | 38% | +7.9% | -0.36% |
+| dynamic 2, early | 9.5% | 0.61 | -54.5% | 9th | 20th | 6th | 321 | 349 | 19 wk | 41% | +8.7% | -0.31% |
+
+On every tradeable name the picture is the same with larger numbers: 8.8%
+to 10.2% a year against a pool at 11.7%, every arm at or near the bottom
+of its random baskets, card excess -0.17% to -0.31%.
+
+**Against the lines (primary: dynamic 1, bounce, top 500).** *Beats
+luck:* **no** (0th percentile, 3rd and 0th by half). *Better ride:*
+**no** (Sharpe 0.57 against SPY's 0.66, drawdown no smaller). *The
+cards:* **no** (-0.30% overall; +0.25% before 2017, -0.89% since).
+
+**The two exits, as he asked.**
+- *Dynamic earns a little more than sell-and-restart*: 8.6% against 8.4%
+  at one swing of cushion, 8.8% at two. Wider cushion, longer holds,
+  bigger average win (7.9% against 2.8%), slightly more money.
+- *Sell-and-restart does find more opportunities*: 496 entries a year
+  against 383, median hold six weeks against ten. They are not better
+  opportunities; each one earns less.
+- *Neither changes the verdict.* The gap between the best and worst arm
+  (9.5% against 8.4%) is about half the gap between any of them and SPY.
+
+**What the pass shows that the others had not made this plain.**
+1. *The rule is in a channel almost everywhere.* The arms hold 190 to
+   320 of 472 large caps at once. The owner marked about one name in
+   eight. Passes 45 and 46 wrote down how he draws a line; neither wrote
+   down how he chooses which lines to care about, and that choosing is
+   most of what he does.
+2. *A card is slightly worse than a random name*: about -0.3% over 13
+   weeks in every arm, and in three arms that is distinguishable from
+   zero (t near -3). The buy fires after a bounce or after six green
+   weeks, which in large caps is on average a little late.
+3. *Buying early beat waiting for the bounce* in every pair, by about
+   0.6 points a year. Waiting for the pullback to establish the angle
+   costs more than the angle is worth.
+
+**Scored against the predictions.** (1) Half: sell-and-restart trades
+1.3 to 1.6 times as often, not several times; its median hold is about
+half. (2) Held, narrowly. (3) Held. (4) Missed: early entry is better
+than the bounce. (5) Held: every card excess is within 0.5% of zero.
+
+**What it means.** Eight draws. The drawing has gone from a 26-week
+best-fit band to his own Heikin-Ashi construction, the exit from a fixed
+break to a cushioned dynamic line, the universe from 500 names to 3,000,
+and the answer has stayed where it was: a little under the market, with
+no sign that a qualifying chart predicts the next quarter. More history
+passes on the line and the exit will not move it. What has not been
+written down or tested is his selection, and the only fair test of that
+is Pass 44.
