@@ -1,0 +1,470 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1001,
+ "sectors": [
+  "Communication Services",
+  "Consumer Discretionary",
+  "Consumer Staples",
+  "Energy",
+  "Financials",
+  "Health Care",
+  "Industrials",
+  "Information Technology",
+  "Materials",
+  "Real Estate",
+  "Utilities"
+ ],
+ "spy": {
+  "all": {
+   "cagr": 0.10911623828423811,
+   "sharpe": 0.6617510282950765,
+   "max_drawdown": -0.546130346632991
+  },
+  "to 2016": {
+   "cagr": 0.06919430148137784,
+   "sharpe": 0.4454355914256423,
+   "max_drawdown": -0.546130346632991
+  },
+  "2017 on": {
+   "cagr": 0.14815627026932,
+   "sharpe": 0.8925383637680802,
+   "max_drawdown": -0.3182896851537068
+  }
+ },
+ "sets": {
+  "top 500": {
+   "arms": {
+    "no sector rule": {
+     "avg_names_held": 284.2587412587413,
+     "weeks_in_cash": 0,
+     "entries_a_year": 411.42857142857144,
+     "median_hold_weeks": 15.0,
+     "share_closed_at_a_gain": 0.4098339217993985,
+     "mean_closed_gain": 0.06060914172668545,
+     "book": {
+      "all": {
+       "cagr": 0.08447476644249341,
+       "sharpe": 0.5544528605524089,
+       "max_drawdown": -0.5567627471884339,
+       "pool_cagr": 0.09569095870082633,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.06282187877426537,
+       "sharpe": 0.4235215134013722,
+       "max_drawdown": -0.5567627471884339,
+       "pool_cagr": 0.07687164470316366,
+       "percentile_among_random": 1.0
+      },
+      "2017 on": {
+       "cagr": 0.10531278455083104,
+       "sharpe": 0.6951589497254889,
+       "max_drawdown": -0.33082672518405043,
+       "pool_cagr": 0.11375207237256646,
+       "percentile_among_random": 0.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 7839,
+       "excess_13w": -0.004233700336144179,
+       "t": -2.4646613544816094
+      },
+      "to 2016": {
+       "cards": 4042,
+       "excess_13w": -0.0010021482648508771,
+       "t": -0.3729454264318346
+      },
+      "2017 on": {
+       "cards": 3797,
+       "excess_13w": -0.007673767092048191,
+       "t": -3.301411912237658
+      }
+     }
+    },
+    "top four by channels": {
+     "avg_names_held": 115.68431568431568,
+     "weeks_in_cash": 2,
+     "entries_a_year": 169.8181818181818,
+     "median_hold_weeks": 16.0,
+     "share_closed_at_a_gain": 0.4184126984126984,
+     "mean_closed_gain": 0.06302414236032149,
+     "book": {
+      "all": {
+       "cagr": 0.07894577374958778,
+       "sharpe": 0.5215062799935779,
+       "max_drawdown": -0.5857054203012242,
+       "pool_cagr": 0.09569095870082633,
+       "percentile_among_random": 2.0
+      },
+      "to 2016": {
+       "cagr": 0.04359177246474055,
+       "sharpe": 0.324717699896204,
+       "max_drawdown": -0.5857054203012242,
+       "pool_cagr": 0.07687164470316366,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.11340670490382054,
+       "sharpe": 0.7259067380560241,
+       "max_drawdown": -0.3212275031808992,
+       "pool_cagr": 0.11375207237256646,
+       "percentile_among_random": 33.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 3224,
+       "excess_13w": -0.007054354798179004,
+       "t": -2.599505014751881
+      },
+      "to 2016": {
+       "cards": 1666,
+       "excess_13w": -0.001608937704188068,
+       "t": -1.1894329961930883
+      },
+      "2017 on": {
+       "cards": 1558,
+       "excess_13w": -0.012877246247850955,
+       "t": -2.530137415057517
+      }
+     }
+    },
+    "top four by fund": {
+     "avg_names_held": 110.50649350649351,
+     "weeks_in_cash": 1,
+     "entries_a_year": 153.19480519480518,
+     "median_hold_weeks": 16.0,
+     "share_closed_at_a_gain": 0.42696233720520943,
+     "mean_closed_gain": 0.07053681836815139,
+     "book": {
+      "all": {
+       "cagr": 0.08650856267787743,
+       "sharpe": 0.5792137093380432,
+       "max_drawdown": -0.523940963662955,
+       "pool_cagr": 0.09569095870082633,
+       "percentile_among_random": 8.5
+      },
+      "to 2016": {
+       "cagr": 0.0630340862030121,
+       "sharpe": 0.44442803074413506,
+       "max_drawdown": -0.523940963662955,
+       "pool_cagr": 0.07687164470316366,
+       "percentile_among_random": 14.499999999999998
+      },
+      "2017 on": {
+       "cagr": 0.10913639194325353,
+       "sharpe": 0.7101503210566928,
+       "max_drawdown": -0.30993563653179657,
+       "pool_cagr": 0.11375207237256646,
+       "percentile_among_random": 23.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 2906,
+       "excess_13w": -0.0012092496020068863,
+       "t": -1.3499332475513608
+      },
+      "to 2016": {
+       "cards": 1449,
+       "excess_13w": 0.002942349038045792,
+       "t": 0.5743758269461828
+      },
+      "2017 on": {
+       "cards": 1457,
+       "excess_13w": -0.005338052916650905,
+       "t": -2.4699306012516087
+      }
+     }
+    },
+    "bottom four by channels": {
+     "avg_names_held": 86.81018981018981,
+     "weeks_in_cash": 1,
+     "entries_a_year": 120.72727272727273,
+     "median_hold_weeks": 16.0,
+     "share_closed_at_a_gain": 0.4098360655737705,
+     "mean_closed_gain": 0.06751008430804951,
+     "book": {
+      "all": {
+       "cagr": 0.06914419045993414,
+       "sharpe": 0.47272878676344404,
+       "max_drawdown": -0.6433215514607115,
+       "pool_cagr": 0.09569095870082633,
+       "percentile_among_random": 7.000000000000001
+      },
+      "to 2016": {
+       "cagr": 0.039944888197705364,
+       "sharpe": 0.3032405212695266,
+       "max_drawdown": -0.6433215514607115,
+       "pool_cagr": 0.07687164470316366,
+       "percentile_among_random": 17.0
+      },
+      "2017 on": {
+       "cagr": 0.0974507675481342,
+       "sharpe": 0.6656424673568133,
+       "max_drawdown": -0.3329834693867064,
+       "pool_cagr": 0.11375207237256646,
+       "percentile_among_random": 3.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 2309,
+       "excess_13w": -0.0028492198387344713,
+       "t": -0.6588449719548506
+      },
+      "to 2016": {
+       "cards": 1212,
+       "excess_13w": -0.0015721223639509926,
+       "t": -0.23558618590118144
+      },
+      "2017 on": {
+       "cards": 1097,
+       "excess_13w": -0.00426019717641686,
+       "t": -0.6702067403887654
+      }
+     }
+    }
+   }
+  },
+  "every tradeable name": {
+   "arms": {
+    "no sector rule": {
+     "avg_names_held": 885.6533466533466,
+     "weeks_in_cash": 0,
+     "entries_a_year": 1478.3896103896104,
+     "median_hold_weeks": 14.0,
+     "share_closed_at_a_gain": 0.3807721979354175,
+     "mean_closed_gain": 0.04331142462992571,
+     "book": {
+      "all": {
+       "cagr": 0.09434443899061695,
+       "sharpe": 0.564890318856343,
+       "max_drawdown": -0.5281451078032695,
+       "pool_cagr": 0.11735364024543982,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08222653430663684,
+       "sharpe": 0.49551757506677985,
+       "max_drawdown": -0.5281451078032695,
+       "pool_cagr": 0.10698623518973571,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.10590439094483783,
+       "sharpe": 0.6355709207141677,
+       "max_drawdown": -0.35542412592936223,
+       "pool_cagr": 0.127226281986766,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 28109,
+       "excess_13w": -0.0034909850820802773,
+       "t": -0.7683842243707304
+      },
+      "to 2016": {
+       "cards": 10067,
+       "excess_13w": -6.49907722068274e-05,
+       "t": -1.4154356007164461
+      },
+      "2017 on": {
+       "cards": 18042,
+       "excess_13w": -0.0054026071149755215,
+       "t": -0.2692766465252512
+      }
+     }
+    },
+    "top four by channels": {
+     "avg_names_held": 347.9040959040959,
+     "weeks_in_cash": 2,
+     "entries_a_year": 584.4155844155844,
+     "median_hold_weeks": 15.0,
+     "share_closed_at_a_gain": 0.39276726628763164,
+     "mean_closed_gain": 0.04402584916228408,
+     "book": {
+      "all": {
+       "cagr": 0.09136617379512879,
+       "sharpe": 0.5496656478608458,
+       "max_drawdown": -0.5625455835963848,
+       "pool_cagr": 0.11735364024543982,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.07193393340307996,
+       "sharpe": 0.4518605142466027,
+       "max_drawdown": -0.5625455835963848,
+       "pool_cagr": 0.10698623518973571,
+       "percentile_among_random": 0.5
+      },
+      "2017 on": {
+       "cagr": 0.11002713731422897,
+       "sharpe": 0.6448964422338636,
+       "max_drawdown": -0.3455590311229102,
+       "pool_cagr": 0.127226281986766,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 11061,
+       "excess_13w": -0.005392526182052258,
+       "t": -0.3740029975688113
+      },
+      "to 2016": {
+       "cards": 3728,
+       "excess_13w": 0.0047554941605213825,
+       "t": -1.3957060168595432
+      },
+      "2017 on": {
+       "cards": 7333,
+       "excess_13w": -0.01055164521070554,
+       "t": 0.05934558248690689
+      }
+     }
+    },
+    "top four by fund": {
+     "avg_names_held": 345.965034965035,
+     "weeks_in_cash": 1,
+     "entries_a_year": 551.1688311688312,
+     "median_hold_weeks": 15.0,
+     "share_closed_at_a_gain": 0.3927972372964973,
+     "mean_closed_gain": 0.05955334655671824,
+     "book": {
+      "all": {
+       "cagr": 0.1044989260120115,
+       "sharpe": 0.6181324273105658,
+       "max_drawdown": -0.46237519750782885,
+       "pool_cagr": 0.11735364024543982,
+       "percentile_among_random": 1.0
+      },
+      "to 2016": {
+       "cagr": 0.09138074772268001,
+       "sharpe": 0.5521115057733778,
+       "max_drawdown": -0.46237519750782885,
+       "pool_cagr": 0.10698623518973571,
+       "percentile_among_random": 6.0
+      },
+      "2017 on": {
+       "cagr": 0.11702298768983477,
+       "sharpe": 0.6808833174435156,
+       "max_drawdown": -0.32857485523531915,
+       "pool_cagr": 0.127226281986766,
+       "percentile_among_random": 0.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 10425,
+       "excess_13w": -0.0018514768827196742,
+       "t": 0.18478219469727822
+      },
+      "to 2016": {
+       "cards": 3649,
+       "excess_13w": 0.0017728765511173862,
+       "t": 0.05840010867533198
+      },
+      "2017 on": {
+       "cards": 6776,
+       "excess_13w": -0.003803257532080867,
+       "t": 0.17537050345035063
+      }
+     }
+    },
+    "bottom four by channels": {
+     "avg_names_held": 261.4985014985015,
+     "weeks_in_cash": 0,
+     "entries_a_year": 432.4155844155844,
+     "median_hold_weeks": 14.0,
+     "share_closed_at_a_gain": 0.377431906614786,
+     "mean_closed_gain": 0.05143244849067267,
+     "book": {
+      "all": {
+       "cagr": 0.09880774057706088,
+       "sharpe": 0.5932109067407618,
+       "max_drawdown": -0.49326671178936243,
+       "pool_cagr": 0.11735364024543982,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08538839639371609,
+       "sharpe": 0.5138220281408612,
+       "max_drawdown": -0.49326671178936243,
+       "pool_cagr": 0.10698623518973571,
+       "percentile_among_random": 0.5
+      },
+      "2017 on": {
+       "cagr": 0.11162355815453529,
+       "sharpe": 0.6755284809434364,
+       "max_drawdown": -0.3608272691859865,
+       "pool_cagr": 0.127226281986766,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 8224,
+       "excess_13w": -0.0010930690699719808,
+       "t": -0.18118024050797374
+      },
+      "to 2016": {
+       "cards": 3127,
+       "excess_13w": -0.0030714045904672582,
+       "t": -0.9611154984180319
+      },
+      "2017 on": {
+       "cards": 5097,
+       "excess_13w": 0.00012063608454807694,
+       "t": 0.2956567256833219
+      }
+     }
+    }
+   }
+  }
+ },
+ "share_of_weeks_each_sector_was_chosen": {
+  "top four by channels": {
+   "Communication Services": 0.3076923076923077,
+   "Consumer Discretionary": 0.3956043956043956,
+   "Consumer Staples": 0.33266733266733267,
+   "Energy": 0.3206793206793207,
+   "Financials": 0.39760239760239763,
+   "Health Care": 0.44155844155844154,
+   "Industrials": 0.2777222777222777,
+   "Information Technology": 0.4075924075924076,
+   "Materials": 0.2967032967032967,
+   "Real Estate": 0.3206793206793207,
+   "Utilities": 0.5014985014985015
+  },
+  "top four by fund": {
+   "Communication Services": 0.1968031968031968,
+   "Consumer Discretionary": 0.4805194805194805,
+   "Consumer Staples": 0.36363636363636365,
+   "Energy": 0.35664335664335667,
+   "Financials": 0.37662337662337664,
+   "Health Care": 0.4175824175824176,
+   "Industrials": 0.4085914085914086,
+   "Information Technology": 0.5754245754245755,
+   "Materials": 0.3076923076923077,
+   "Real Estate": 0.14485514485514486,
+   "Utilities": 0.37162837162837165
+  },
+  "bottom four by channels": {
+   "Communication Services": 0.4385614385614386,
+   "Consumer Discretionary": 0.27972027972027974,
+   "Consumer Staples": 0.45454545454545453,
+   "Energy": 0.5474525474525475,
+   "Financials": 0.33466533466533466,
+   "Health Care": 0.22977022977022976,
+   "Industrials": 0.26073926073926074,
+   "Information Technology": 0.26373626373626374,
+   "Materials": 0.4075924075924076,
+   "Real Estate": 0.46553446553446554,
+   "Utilities": 0.3176823176823177
+  }
+ }
+}

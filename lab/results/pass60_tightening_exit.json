@@ -1,0 +1,433 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1604,
+ "first_week": "1996-02-23",
+ "slots": 10,
+ "share_of_weeks": {
+  "cold": 0.23753117206982544,
+  "strong": 0.6221945137157108
+ },
+ "benchmarks": {
+  "SPY": {
+   "unseen: 1996-07 to 2006-10": {
+    "cagr": 0.08671237885293048,
+    "sharpe": 0.5756374812892525,
+    "max_drawdown": -0.45701432085602445,
+    "weeks": 540
+   },
+   "2006-11 to 2016-11": {
+    "cagr": 0.06491277196895995,
+    "sharpe": 0.4300743219146835,
+    "max_drawdown": -0.5461302839515998,
+    "weeks": 522
+   },
+   "2016-11 to 2026-11": {
+    "cagr": 0.1543360610799378,
+    "sharpe": 0.9207089982910223,
+    "max_drawdown": -0.32227497928407145,
+    "weeks": 523
+   },
+   "everything": {
+    "cagr": 0.10146654588878246,
+    "sharpe": 0.6382151848248089,
+    "max_drawdown": -0.5461302839515998,
+    "weeks": 1604
+   }
+  },
+  "pool": {
+   "unseen: 1996-07 to 2006-10": {
+    "cagr": 0.1469652790764462,
+    "sharpe": 0.8740232457154687,
+    "max_drawdown": -0.294660703357133,
+    "weeks": 540
+   },
+   "2006-11 to 2016-11": {
+    "cagr": 0.07676291859448536,
+    "sharpe": 0.4576018609327502,
+    "max_drawdown": -0.5663585886345299,
+    "weeks": 522
+   },
+   "2016-11 to 2026-11": {
+    "cagr": 0.1203687991608331,
+    "sharpe": 0.7108278742928746,
+    "max_drawdown": -0.3619126982785146,
+    "weeks": 523
+   },
+   "everything": {
+    "cagr": 0.11497570158762183,
+    "sharpe": 0.670719848951334,
+    "max_drawdown": -0.5663585886345299,
+    "weeks": 1604
+   }
+  }
+ },
+ "books": {
+  "quality | flat": {
+   "buys_a_year": 8.396508728179551,
+   "median_hold_weeks": 23.0,
+   "avg_in_stocks": 0.9020455350170195,
+   "largest_position_median": 0.15170321432025186,
+   "largest_position_max": 0.3892195675409454,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.17542354788625647,
+     "sharpe": 0.9716915459399073,
+     "max_drawdown": -0.33641638915031147,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 91.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.13103349014530785,
+     "sharpe": 0.9099599846697852,
+     "max_drawdown": -0.24230005312200653,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 76.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.0865920432328493,
+     "sharpe": 0.6008465851688284,
+     "max_drawdown": -0.32305975765444617,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 38.0
+    },
+    "everything": {
+     "cagr": 0.13408807185213245,
+     "sharpe": 0.8460049650340995,
+     "max_drawdown": -0.3364163891503116,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 89.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    0,
+    12
+   ]
+  },
+  "quality | tightens with time": {
+   "buys_a_year": 13.745635910224438,
+   "median_hold_weeks": 26.0,
+   "avg_in_stocks": 0.8752107023572652,
+   "largest_position_median": 0.14932227416523564,
+   "largest_position_max": 0.3159944429976831,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.19032999603970335,
+     "sharpe": 0.9613239495577521,
+     "max_drawdown": -0.3523287587380717,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 98.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.0950536606525263,
+     "sharpe": 0.7458943552698741,
+     "max_drawdown": -0.23871833781269358,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 9.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.05893701084191383,
+     "sharpe": 0.42688806259477563,
+     "max_drawdown": -0.3617130067264889,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 8.0
+    },
+    "everything": {
+     "cagr": 0.11755644822793587,
+     "sharpe": 0.7359913112056212,
+     "max_drawdown": -0.3617130067264883,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 61.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    0,
+    12
+   ]
+  },
+  "quality | tightens with weight": {
+   "buys_a_year": 8.88279301745636,
+   "median_hold_weeks": 23.0,
+   "avg_in_stocks": 0.8964139742453738,
+   "largest_position_median": 0.15139167316802388,
+   "largest_position_max": 0.24333190205517732,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.14845327839931421,
+     "sharpe": 0.846391399767858,
+     "max_drawdown": -0.36189944025344645,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 68.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.15418246538945724,
+     "sharpe": 1.073490908514747,
+     "max_drawdown": -0.1771457564572415,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.10420954221933254,
+     "sharpe": 0.7104128826710964,
+     "max_drawdown": -0.2580950498186073,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 59.0
+    },
+    "everything": {
+     "cagr": 0.13865969596418037,
+     "sharpe": 0.8796099831678059,
+     "max_drawdown": -0.36189944025344645,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 94.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    3,
+    12
+   ]
+  },
+  "quality | both": {
+   "buys_a_year": 13.745635910224438,
+   "median_hold_weeks": 26.0,
+   "avg_in_stocks": 0.8760395367878879,
+   "largest_position_median": 0.14695358878989417,
+   "largest_position_max": 0.2526912291710305,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.17393649465332195,
+     "sharpe": 0.8999306427444486,
+     "max_drawdown": -0.36363911263605897,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 92.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.09613907671757183,
+     "sharpe": 0.7528933876097871,
+     "max_drawdown": -0.23532796399836398,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 11.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.07001785840466268,
+     "sharpe": 0.4875802664335833,
+     "max_drawdown": -0.35547608504931516,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 20.0
+    },
+    "everything": {
+     "cagr": 0.1164928778262797,
+     "sharpe": 0.7322815747126235,
+     "max_drawdown": -0.36363911263605875,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 59.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    0,
+    12
+   ]
+  },
+  "trend strength | flat": {
+   "buys_a_year": 13.907730673316708,
+   "median_hold_weeks": 18.0,
+   "avg_in_stocks": 0.8773927678673366,
+   "largest_position_median": 0.1571735137503567,
+   "largest_position_max": 0.3184924807747463,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.21190709490815007,
+     "sharpe": 0.8552277320831998,
+     "max_drawdown": -0.5288805945906292,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.1479845303902947,
+     "sharpe": 0.820943014669855,
+     "max_drawdown": -0.30247237877167854,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.1764147857572529,
+     "sharpe": 0.7517882515090254,
+     "max_drawdown": -0.3321863064819829,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "everything": {
+     "cagr": 0.18102261815542908,
+     "sharpe": 0.8094560305785403,
+     "max_drawdown": -0.5288805945906292,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 100.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    4,
+    12
+   ]
+  },
+  "trend strength | tightens with time": {
+   "buys_a_year": 19.77556109725686,
+   "median_hold_weeks": 17.0,
+   "avg_in_stocks": 0.8573555474962936,
+   "largest_position_median": 0.15573884150142575,
+   "largest_position_max": 0.3094559535404629,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.18346782247601778,
+     "sharpe": 0.7522764731711169,
+     "max_drawdown": -0.5350157316782832,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.08214865586946685,
+     "sharpe": 0.48784463628785246,
+     "max_drawdown": -0.4188863919020325,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 11.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.20904053165375003,
+     "sharpe": 0.8223364724437516,
+     "max_drawdown": -0.32554846959352834,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "everything": {
+     "cagr": 0.15961243039347206,
+     "sharpe": 0.7099731419904632,
+     "max_drawdown": -0.5350157316782835,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 100.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    9,
+    12
+   ]
+  },
+  "trend strength | tightens with weight": {
+   "buys_a_year": 15.334164588528678,
+   "median_hold_weeks": 15.0,
+   "avg_in_stocks": 0.8725616019352137,
+   "largest_position_median": 0.14845225350335778,
+   "largest_position_max": 0.34902933550460674,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.2204351393054127,
+     "sharpe": 0.855677862176786,
+     "max_drawdown": -0.5095060780772398,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.1268647928723432,
+     "sharpe": 0.737999274436885,
+     "max_drawdown": -0.3862597762087474,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 85.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.20510116128289835,
+     "sharpe": 0.835053613700013,
+     "max_drawdown": -0.312057848866078,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "everything": {
+     "cagr": 0.18596165576195944,
+     "sharpe": 0.8157513381046444,
+     "max_drawdown": -0.5095060780772399,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 100.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    8,
+    12
+   ]
+  },
+  "trend strength | both": {
+   "buys_a_year": 19.93765586034913,
+   "median_hold_weeks": 16.0,
+   "avg_in_stocks": 0.8588368622434823,
+   "largest_position_median": 0.1575997556751803,
+   "largest_position_max": 0.4910246269100889,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.21867942192148893,
+     "sharpe": 0.845200625645447,
+     "max_drawdown": -0.5286505759009974,
+     "weeks": 540,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.09147061838448534,
+     "sharpe": 0.5343908580841504,
+     "max_drawdown": -0.4132517608986488,
+     "weeks": 522,
+     "percentile_among_flat_random_books": 28.999999999999996
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.20097102000181422,
+     "sharpe": 0.8214416463868675,
+     "max_drawdown": -0.3279746862041767,
+     "weeks": 523,
+     "percentile_among_flat_random_books": 100.0
+    },
+    "everything": {
+     "cagr": 0.171827111554127,
+     "sharpe": 0.7558738206743107,
+     "max_drawdown": -0.5286505759009975,
+     "weeks": 1604,
+     "percentile_among_flat_random_books": 100.0
+    }
+   },
+   "five_year_windows_from_2016_beating_spy": [
+    6,
+    12
+   ]
+  }
+ },
+ "random_books": {
+  "flat": {
+   "median_cagr": {
+    "unseen: 1996-07 to 2006-10": 0.12603593668451063,
+    "2006-11 to 2016-11": 0.11636251768296957,
+    "2016-11 to 2026-11": 0.09760864864147178,
+    "everything": 0.11242463055404428
+   },
+   "median_drawdown_everything": -0.3699810035384572
+  },
+  "tightens with time": {
+   "median_cagr": {
+    "unseen: 1996-07 to 2006-10": 0.1450904099196535,
+    "2006-11 to 2016-11": 0.08915057314881436,
+    "2016-11 to 2026-11": 0.11445051046588117,
+    "everything": 0.11633573438108824
+   },
+   "median_drawdown_everything": -0.3517236742619835
+  },
+  "tightens with weight": {
+   "median_cagr": {
+    "unseen: 1996-07 to 2006-10": 0.12362499530937276,
+    "2006-11 to 2016-11": 0.11570727543765569,
+    "2016-11 to 2026-11": 0.09550209890941042,
+    "everything": 0.10949191250539958
+   },
+   "median_drawdown_everything": -0.3629734179806287
+  },
+  "both": {
+   "median_cagr": {
+    "unseen: 1996-07 to 2006-10": 0.14981053138713762,
+    "2006-11 to 2016-11": 0.08868313672265626,
+    "2016-11 to 2026-11": 0.11365341204518153,
+    "everything": 0.12017546477731256
+   },
+   "median_drawdown_everything": -0.3496547245975017
+  }
+ }
+}

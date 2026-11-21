@@ -5249,6 +5249,10 @@ sent it, the ticker, the last close, and his call, one of:
 - `broken`: a channel he reads as broken, to be avoided until a new
   pattern shows.
 Rows are never edited or removed. A changed mind is a new row.
+- `withdrawn` (added 2026-11-20, before any mark had traded): a mark he
+  takes back before its entry session opens. The earlier row stays; the
+  name is left out of scoring. A mark taken back after it has traded is
+  not withdrawn: it is scored, and his new view is a new row.
 
 **Scoring (fixed).** Each mark is entered at the open of the first
 session after its date. At 4, 13 and 26 weeks: the name's return, SPY's
@@ -5274,3 +5278,2840 @@ will take months, so the first honest read is in 2027.
 
 The scorer is written and committed before the first 4-week score is due
 (2026-12-18).
+
+## Pass 45 -- the channel rule, frozen: what the owner's marks taught, tested on history it has not seen (registered 2026-11-20 before any run)
+
+The owner, 2026-11-20: "It should mostly be mathematical now, although I
+think we should sell when it breaks the bottom of the channel rather than
+limit the top." And on testing it: "pick some random day in history and
+put an AI entity in a windowless box". A formula is that box: it cannot
+know what came next. What it cannot escape is the list of names it is
+shown, which is survivors (Pass 43). This pass freezes the rule as the
+evening's 66 marks shaped it and runs it over twenty years.
+
+**What changed from Pass 41, and where each change came from.**
+1. *The anchor.* Pass 41 anchored at the lowest low of two years. His
+   pictures (Agilent's six channels, AZN, ATO, ABT, AMPH) anchor at the
+   low that started the current move, and after a break at the low that
+   followed it; his AGX and ACLS channels ran three and four years. So:
+   the look-back is tried at 52, 104, 156 and 208 weeks and the first one
+   whose lowest low is a real swing low (not within the window's first
+   four weeks) is used; after a break, no anchor may predate the break.
+2. *Age.* 13 weeks or more since the anchor (Pass 41: 26). He marked
+   channels as young as seven weeks; 13 is my compromise, not his number.
+3. *Straightness.* 0.70 or more (Pass 41: 0.80). He accepts choppier
+   channels than 0.80 allowed (ACLS, ABCB, ANET, AIR).
+4. *Not already broken.* The last close is no more than 4.7 of the
+   stock's own weekly swings below its 52-week high close (a swing is the
+   standard deviation of its weekly log returns over two years). Fitted
+   tonight to his calls on 32 A names, where it matched 30; his own
+   explanation of ANRO and AMLX ("big quick run ups") is why it is in
+   swings and not percent.
+5. *A real stock.* Weekly swing of 1.5% or more, which drops the notes
+   and preferred shares that passed Pass 41's rule.
+6. *The exit, his instruction.* The lower line is fixed at entry and
+   extended; the name is sold at the next open after the first weekly
+   close below it. Nothing sells at the top. No buffer.
+Unchanged: the lower line is the steepest straight line under every
+weekly low since the anchor, it must rise 10% a year or more, weekly
+bars, Friday decision, Monday open.
+
+**Why history is a fair test of it.** Items 1 to 5 were shaped on names
+beginning with A as they stood on 2026-11-20. Nothing before that date
+was looked at in choosing them. Passes 38 to 43 did look at this history
+for the earlier drawings, so this is not the first visit, and it is
+counted as the seventh draw at the idea.
+
+**The basket (primary).** Every tradeable name that qualifies is bought
+(Pass 43's universe and rules: $3 or more, $5M median weekly dollar
+volume, costs by size tier) and held until its line breaks; the book is
+split equally among whatever is held. No slots and no ranking, because
+Pass 43 showed the ten-slot book doing worse than the picture itself.
+Scored against 200 random baskets a week of the same number of names from
+the same tradeable pool.
+
+**The windowless view.** Every entry is a card: a name and a date. Per
+card, the return over the next 13 and 26 weeks minus the average of every
+tradeable name over the same weeks, and the return and length of the
+hold to its break. Reported overall, by size tier and by half.
+
+| Arm | What it is |
+|---|---|
+| **basket** | as above -- the primary |
+| no pullback rule | item 4 removed: what the swing rule adds |
+| older only | 26 weeks or more since the anchor: what the young channels add |
+| ten straightest | ten slots, straightest first, as Passes 41 and 43 |
+
+**Verdict lines (fixed).** *Beats luck:* the basket at or above the 95th
+percentile of its random baskets overall and the 75th in each half (to
+2016, from 2017). *Better ride:* Sharpe above SPY's and a smaller largest
+drawdown. *The cards:* a 13-week excess that is positive in both halves.
+
+**The bias, stated before the result.** Survivors, as in Pass 43, worst
+in the small tiers. It inflates the basket and the random baskets alike;
+it still penalises selling, because every sold name here came back. A
+pass on these lines would earn a forward page, where there are no
+survivors. It would not be proof.
+
+**Predictions.** (1) The cards' 13-week excess is positive overall and
+since 2017, and near zero before 2017 (Pass 43's pattern). (2) The
+basket places between the 40th and 85th percentile overall and fails the
+beats-luck line on the first half. (3) The pullback rule helps: the
+basket places higher with it than without. (4) Median hold between 10
+and 25 weeks; fewer than half of holds end at a gain; the mean hold gains
+more than 5%.
+
+    python lab/pass45_channel_frozen.py          # every arm (slow: tens of minutes)
+    python lab/pass45_channel_frozen.py smoke    # plumbing: 300 names
+
+## Pass 45 results -- the frozen rule owns a third of the market and earns a little less than the market
+
+Run 2026-11-20, `lab/results/pass45_channel_frozen.json`. 3,004 names,
+1,001 weeks, 2007-09-14 to 2026-11-13. "Pool" is every tradeable name,
+equal weight.
+
+| | Compound a year | Sharpe | Largest drawdown | Place among random baskets | Cards | 13-week return over the pool | t | Cards beating the pool |
+|---|---|---|---|---|---|---|---|---|
+| SPY | 10.9% | 0.66 | -54.6% | | | | | |
+| pool | 11.7% | 0.60 | -56.9% | | | | | |
+| **basket** | **9.6%** | **0.58** | **-50.9%** | **0th** | 16,206 | +0.13% | -0.3 | 46% |
+| no pullback rule | 9.8% | 0.59 | -53.3% | 0th | 17,169 | +0.02% | -0.5 | 46% |
+| older only | 9.8% | 0.59 | -53.7% | 0th | 11,738 | +0.49% | 0.6 | 47% |
+| ten straightest | 8.3% | 0.48 | -56.5% | 12th | 165 | +0.61% | -0.4 | 50% |
+
+| Basket by half | Compound a year | Pool | SPY | Sharpe | Pool | SPY | 13-week card excess |
+|---|---|---|---|---|---|---|---|
+| to 2016 | 7.0% | 10.7% | 6.9% | 0.45 | 0.55 | 0.45 | -0.09% |
+| 2017 on | 12.2% | 12.7% | 14.8% | 0.71 | 0.66 | 0.89 | +0.27% |
+
+**Against the lines.**
+- *Beats luck:* **no.** Below every random basket, overall and in both
+  halves. (A basket of 600 names leaves random baskets almost no spread,
+  so any shortfall reads as the 0th percentile; the plain fact is 9.6% a
+  year against the pool's 11.7%.)
+- *Better ride:* **no.** Sharpe 0.58 against SPY's 0.66; the drawdown is
+  a little smaller (-50.9% against -54.6%).
+- *The cards:* **no.** The 13-week excess is +0.13% over 16,206 cards,
+  indistinguishable from zero, negative before 2017, and 46% of cards
+  beat the pool.
+
+**What it shows.**
+1. *The rule is not picky.* The basket holds 614 names on an average
+   week, about a third of everything tradeable. The owner marked roughly
+   one A name in eight. A rule that says yes this often is describing a
+   rising market, not choosing within it, and a book that owns a third of
+   the market and sells the dips earns the market less the dips.
+2. *A card tells you nothing about the next quarter.* A name qualifying
+   on a random day did as well over the next 13 weeks as any other
+   tradeable name, to a tenth of a percent. That is the windowless-box
+   answer for this rule on this list.
+3. *The trade shape is still a trend rule's:* 36% of holds end at a gain,
+   the median loses 3.4%, the mean makes 3.6%, median hold twelve weeks.
+   The winners do not pay for the losers by enough.
+4. *The pullback rule did nothing here.* It matched his eye on tonight's
+   names and moved the result by 0.2 points a year the wrong way. It
+   keeps names out at entry; it says nothing once a name is held.
+5. *Older channels were slightly better cards* (+0.49% against +0.13%),
+   still nothing. That is the opposite direction from the owner's next
+   idea (channels of four to eight weeks) and is noted for that pass.
+
+**A flaw in what I registered.** The cards by size tier were measured
+against the whole pool, and the pool's small names are the survivors
+that inflate it (Pass 43). So the tier rows in the JSON (large caps
+-0.25%, small +0.79%) compare each tier with a biased average and should
+not be read as "small is better". Pass 43's within-tier comparison is
+the fair one and it pointed at large caps.
+
+**Scored against the predictions.** (1) Not shown: the sign is as
+predicted in each half but every number is within noise of zero. (2)
+Missed: I predicted the 40th to 85th percentile; it is the 0th. (3)
+Missed: the pullback rule did not help. (4) Two of three: median hold 12
+weeks and 36% of holds at a gain, but the mean hold gained 3.6%, not over
+5%.
+
+**What it means.** Seven draws at this idea on history, and the answer
+has not changed since Pass 41: about the market's return, a little less
+of its fall, no evidence of picking. Writing the owner's eye down more
+faithfully made the rule match his marks better and did not make it
+earn more. Either his eye adds something the formula still lacks (he is
+far pickier than it is), or the picture does not predict. History with
+this list cannot say which. Pass 44's ledger can: 42 of his own marks go
+in at Monday's open.
+
+## Pass 46 -- the Heikin-Ashi channel: starting candle, first decent pullback, and two ways to treat a break (registered 2026-11-20 before any run)
+
+After Pass 45 the owner described how he actually draws, 2026-11-20: "I
+usually use the first decent pullback as the channel angle from the
+starting candle"; "the first candle's low is the auto sell price probably
+until that is established"; "it needs a solid 4-8 weeks of trending up
+before it is considered"; "I use Heikin-Ashi candles too". Asked whether a
+broken line is a sale or gets flattened through the new low: "I guess it
+should be dynamic as it goes up with some cushion. We should test both
+though, you never know! If there are enough opportunities might work
+better this way." Checked against nine of his pictures first: a line
+from the starting candle through the first red run reproduces his AGX,
+ACMR, AMPH, ABT and Agilent channels; it does not reproduce ADM or CAT,
+whose drawn lines pass through pullbacks that came a year later.
+
+**Candles.** Weekly Heikin-Ashi from adjusted bars. A candle is red when
+its Heikin-Ashi close is under its open. Every line, low and break below
+is read on these candles; trades are at the next week's real open.
+
+**The channel (fixed).**
+- *Starting candle:* the lowest Heikin-Ashi low since the last break (or
+  of the last 104 weeks).
+- *First decent pullback:* the first run of two or more red candles that
+  begins four or more weeks after the starting candle. It is established
+  on the first green candle after it.
+- *The line:* from the starting candle's low through that run's lowest
+  low, on a log scale, extended. It must rise 10% a year or more, or the
+  run is passed over and the next one is used.
+
+**Two entries.**
+- *At the bounce:* bought the week the pullback is established.
+- *Early:* bought six weeks after the starting candle if that candle is
+  green and at least four of the six since the start are; until the line
+  exists it is sold on a Heikin-Ashi close under the starting candle's
+  low. If those conditions are not met it is bought at the bounce.
+
+**Two exits (his "test both").**
+- *Sell and restart:* sold on the first Heikin-Ashi close under the line.
+  The next channel starts from the low after that break.
+- *Dynamic with cushion:* when a later red run ends with its low under
+  the line, the line is flattened to run through that low. The name is
+  sold only on a Heikin-Ashi close more than a cushion under the line as
+  it stood before the run began, or when the flattened line no longer
+  rises 10% a year. The cushion is one of the stock's own weekly swings
+  (and two, as a second arm).
+
+| Arm | Entry | Exit |
+|---|---|---|
+| restart, bounce | at the bounce | sell and restart |
+| restart, early | early | sell and restart |
+| **dynamic 1, bounce** | at the bounce | dynamic, one swing -- the primary |
+| dynamic 1, early | early | dynamic, one swing |
+| dynamic 2, bounce | at the bounce | dynamic, two swings |
+| dynamic 2, early | early | dynamic, two swings |
+
+The primary is the owner's own guess ("I guess it should be dynamic").
+"Sell and restart" is reported beside it on equal terms and is not a
+second chance at the verdict.
+
+**Universe and book.** Pass 43's names and tradeable rule. Two sets, both
+reported: the **top 500** by size that week (the tier the earlier passes
+leaned to, and the one this data judges most fairly), and **every
+tradeable name**. Every signal is bought and the book is split equally
+among what is held (cash when nothing is). Costs by size tier. Scored
+against 200 random baskets a week of the same number of names from the
+same set, and against SPY.
+
+**Cards.** Per entry, the return over the next 13 and 26 weeks minus the
+average of the same set over the same weeks.
+
+**Verdict lines (fixed, for the primary on the top 500).** *Beats luck:*
+at or above the 95th percentile of its random baskets overall and the
+75th in each half. *Better ride:* Sharpe above SPY's and a smaller
+largest drawdown. *The cards:* a positive 13-week excess in both halves.
+
+**This is the eighth draw.** Same list, same survivors, same caution as
+Pass 45: a pass earns a forward page, not a conclusion.
+
+**Predictions.** (1) "Sell and restart" trades several times as often as
+"dynamic" and has the shorter median hold by half or more. (2) "Dynamic"
+has the higher compound return of the two. (3) No arm beats luck on the
+top 500. (4) Early entry is worse than entry at the bounce: it buys
+before there is a channel. (5) The 13-week card excess is within 0.5% of
+zero for every arm on the top 500.
+
+    python lab/pass46_ha_channel.py          # every arm, both sets
+    python lab/pass46_ha_channel.py smoke    # plumbing: 300 names
+
+## Pass 46 results -- both exits fail the same way; the Heikin-Ashi rule is in a "channel" on half of all large caps at once
+
+Run 2026-11-20, `lab/results/pass46_ha_channel.json`. 3,004 names, 1,001
+weeks to 2026-11-13. SPY over the same weeks: 10.9% a year, Sharpe 0.66,
+largest drawdown -54.6%.
+
+**Top 500 by size (a median of 472 tradeable names a week; the pool compounds 9.6%).**
+
+| Arm | Compound a year | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Entries a year | Median hold | Holds ending at a gain | Mean gain | 13-week card excess |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| restart, bounce | 8.4% | 0.56 | -51.0% | 2nd | 10th | 2nd | 190 | 496 | 6 wk | 37% | +2.8% | -0.28% |
+| restart, early | 9.0% | 0.58 | -53.8% | 2nd | 6th | 6th | 272 | 578 | 13 wk | 43% | +4.2% | -0.27% |
+| **dynamic 1, bounce** | **8.6%** | **0.57** | **-55.5%** | **0th** | 3rd | 0th | 240 | 383 | 10 wk | 37% | +5.1% | -0.30% |
+| dynamic 1, early | 9.2% | 0.59 | -55.2% | 2nd | 13th | 2nd | 302 | 443 | 16 wk | 42% | +6.2% | -0.32% |
+| dynamic 2, bounce | 8.8% | 0.58 | -56.2% | 0th | 3rd | 2nd | 272 | 303 | 14 wk | 38% | +7.9% | -0.36% |
+| dynamic 2, early | 9.5% | 0.61 | -54.5% | 9th | 20th | 6th | 321 | 349 | 19 wk | 41% | +8.7% | -0.31% |
+
+On every tradeable name the picture is the same with larger numbers: 8.8%
+to 10.2% a year against a pool at 11.7%, every arm at or near the bottom
+of its random baskets, card excess -0.17% to -0.31%.
+
+**Against the lines (primary: dynamic 1, bounce, top 500).** *Beats
+luck:* **no** (0th percentile, 3rd and 0th by half). *Better ride:*
+**no** (Sharpe 0.57 against SPY's 0.66, drawdown no smaller). *The
+cards:* **no** (-0.30% overall; +0.25% before 2017, -0.89% since).
+
+**The two exits, as he asked.**
+- *Dynamic earns a little more than sell-and-restart*: 8.6% against 8.4%
+  at one swing of cushion, 8.8% at two. Wider cushion, longer holds,
+  bigger average win (7.9% against 2.8%), slightly more money.
+- *Sell-and-restart does find more opportunities*: 496 entries a year
+  against 383, median hold six weeks against ten. They are not better
+  opportunities; each one earns less.
+- *Neither changes the verdict.* The gap between the best and worst arm
+  (9.5% against 8.4%) is about half the gap between any of them and SPY.
+
+**What the pass shows that the others had not made this plain.**
+1. *The rule is in a channel almost everywhere.* The arms hold 190 to
+   320 of 472 large caps at once. The owner marked about one name in
+   eight. Passes 45 and 46 wrote down how he draws a line; neither wrote
+   down how he chooses which lines to care about, and that choosing is
+   most of what he does.
+2. *A card is slightly worse than a random name*: about -0.3% over 13
+   weeks in every arm, and in three arms that is distinguishable from
+   zero (t near -3). The buy fires after a bounce or after six green
+   weeks, which in large caps is on average a little late.
+3. *Buying early beat waiting for the bounce* in every pair, by about
+   0.6 points a year. Waiting for the pullback to establish the angle
+   costs more than the angle is worth.
+
+**Scored against the predictions.** (1) Half: sell-and-restart trades
+1.3 to 1.6 times as often, not several times; its median hold is about
+half. (2) Held, narrowly. (3) Held. (4) Missed: early entry is better
+than the bounce. (5) Held: every card excess is within 0.5% of zero.
+
+**What it means.** Eight draws. The drawing has gone from a 26-week
+best-fit band to his own Heikin-Ashi construction, the exit from a fixed
+break to a cushioned dynamic line, the universe from 500 names to 3,000,
+and the answer has stayed where it was: a little under the market, with
+no sign that a qualifying chart predicts the next quarter. More history
+passes on the line and the exit will not move it. What has not been
+written down or tested is his selection, and the only fair test of that
+is Pass 44.
+
+## Pass 47 -- choosing: only add names in the four strongest sectors (registered 2026-11-20 before any run)
+
+Pass 46 ended on the point that the rule draws the owner's line and does
+none of his choosing: it sat in a channel on half of all large caps. His
+answer, 2026-11-20: "What if they only consider adding stocks in the top
+four trending channel sectors? So they don't go nuts adding everything."
+And on timing: "If you wait 9 weeks or so to buy a stock the second
+weekly low candle is usually lower than the one you mark off of so I
+would go off of the lowest in the watch window." Lab only.
+
+**What does not change.** Pass 46's Heikin-Ashi channel and its dynamic
+exit with one weekly swing of cushion. The starting candle is already the
+lowest Heikin-Ashi low of the watch window and moves down if a later
+candle undercuts it, which is his second point; nothing to change there.
+
+**What changes.**
+- *The wait:* the early entry moves from six weeks after the starting
+  candle to **nine**, with at least six of the nine candles green. (A
+  name that misses it is bought at the bounce, as before.)
+- *The sector rule:* a name is only **added** in a week its sector is one
+  of the four strongest. A name already held is kept whatever its sector
+  does; the exit is the channel's alone.
+
+**"Strongest", two ways.**
+- *By channels (the primary, his words):* the share of the sector's
+  top-500 names that the rule itself has in a channel that week. Sectors
+  with fewer than ten names are not ranked.
+- *By the fund:* the sector fund's return over the last 26 weeks.
+
+| Arm | Adds allowed in |
+|---|---|
+| no sector rule | every sector (the nine-week entry alone) |
+| **top four by channels** | the four sectors with the largest share of names in a channel -- the primary |
+| top four by fund | the four sector funds with the best 26-week return |
+| bottom four by channels | the four with the smallest share: the check that "four sectors" is not doing the work by itself |
+
+**Universe, book, control, verdict lines.** As Pass 46 on the top 500 by
+size (every tradeable name is reported beside it): every allowed signal
+bought, the book split equally, costs by tier, 200 random baskets a week
+of the same number of names from the same set, SPY. Beats luck at the
+95th percentile overall and the 75th in each half; better ride on Sharpe
+and drawdown against SPY; cards positive in both halves.
+
+**Why this is a fairer question than the last two.** Passes 38 and 42
+found that a sector's own channel is no gate and no early warning. This
+is different: it ranks sectors against each other and takes the leaders,
+which is sector momentum, and that has support in the published record.
+It is also the ninth draw, and a rule that is right about sectors and
+wrong about stocks would still show up here as a pass.
+
+**Predictions.** (1) The sector rule cuts the names held by more than
+half. (2) Top four by channels compounds more than no sector rule, by
+less than one point a year. (3) Top beats bottom, by less than one and a
+half points. (4) The primary does not beat luck. (5) Ranking by the fund
+does about as well as ranking by channels (within half a point).
+
+    python lab/pass47_sector_choice.py          # every arm, both sets
+    python lab/pass47_sector_choice.py smoke    # plumbing: 400 names
+
+## Pass 47 results -- the sector rule stops it adding everything, and does not make it earn more
+
+Run 2026-11-20, `lab/results/pass47_sector_choice.json`. Top 500 by size;
+the pool compounds 9.6% and SPY 10.9% (Sharpe 0.66, drawdown -54.6%).
+
+| Arm | Compound a year | To 2016 | 2017 on | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Entries a year | 13-week card excess |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| no sector rule | 8.4% | 6.3% | 10.5% | 0.55 | -55.7% | 0th | 1st | 0th | 284 | 411 | -0.42% |
+| **top four by channels** | **7.9%** | 4.4% | 11.3% | **0.52** | **-58.6%** | **2nd** | 0th | 34th | 116 | 170 | -0.71% |
+| top four by fund | 8.7% | 6.3% | 10.9% | 0.58 | -52.4% | 8th | 14th | 24th | 111 | 153 | -0.12% |
+| bottom four by channels | 6.9% | 4.0% | 9.7% | 0.47 | -64.3% | 7th | 17th | 3rd | 87 | 121 | -0.28% |
+
+On every tradeable name: 9.4%, 9.1%, 10.4% and 9.9% in the same order,
+against a pool at 11.7%.
+
+**Against the lines (primary: top four by channels).** *Beats luck:*
+**no** (2nd percentile; 0th and 34th by half). *Better ride:* **no**
+(Sharpe 0.52 against 0.66, a deeper drawdown than SPY). *The cards:*
+**no** (-0.71%; negative in both halves).
+
+**What the sector rule did.**
+1. *It did what he asked of it.* Names held fall from 284 to 116, entries
+   from 411 a year to 170. The book no longer adds everything.
+2. *It did not help, and by channels it hurt.* 7.9% a year against 8.4%
+   with no sector rule, and a deeper drawdown.
+3. *Strong sectors do beat weak ones, modestly*: top four by channels
+   7.9% against bottom four 6.9%. So the ranking carries some
+   information. Being selective is not the same as selecting well: both
+   are below the book that takes everything.
+4. *Counting channels ranks the quiet sectors first.* The sector chosen
+   most often by channel count is Utilities (half of all weeks), then
+   Health Care. A utility stays inside a channel because it barely
+   moves, not because it is leading. Ranking by the fund's 26-week
+   return chooses Information Technology most (58% of weeks) and is the
+   better of the two by 0.8 points a year with a shallower drawdown. It
+   is the same pull found in Cecil's safety leg (Pass 37) and in Pass
+   42's "weakest survive longest": a channel test rewards stillness.
+
+**Scored against the predictions.** (1) Held: names held more than
+halve. (2) Missed: the channel-count rule compounds less than no rule,
+not more. (3) Held: top beats bottom by 1.0 point. (4) Held. (5) Missed:
+the fund ranking is 0.8 points ahead of the channel ranking, not within
+half a point.
+
+**What it means.** Nine draws. Cutting the list by sector makes the book
+smaller and leaves it where it was. If a sector layer is ever used, rank
+by the fund's return and not by how many of its names are in a channel.
+The standing conclusion from Pass 46 is unchanged: no version of the
+line, the exit or now the sector cut has shown a qualifying chart to be
+worth more than a random one, on a list that cannot be fully trusted,
+and the forward ledger (Pass 44) is where the question goes next.
+
+## Pass 48 -- the screen as the book: hold what the screen flags, and only that (registered 2026-11-20 before any run)
+
+The owner caught a gap, 2026-11-20: "you said every formula picked half
+the market, why didn't it pick the ones you flagged? That wasn't half the
+A names for sure that we chose." He is right, and the gap is in the
+lab's harness.
+
+**What he reviewed and what was tested were different things.**
+- The list he went through on the A names was a *snapshot*: the names
+  that, that week, had a channel worth owning by Pass 41's rule (a
+  two-year look-back, 26 weeks old or more, straightness 0.80). It
+  flagged 46 of 303 A names, about one in seven, and he agreed with
+  about two thirds of them.
+- The *books* in Passes 45 to 47 held a third to a half of the market for
+  two reasons. They buy a name once and keep it until its line breaks,
+  so the holdings are everything that ever qualified and has not broken
+  yet, far more than qualify in any one week. And Passes 46 and 47
+  dropped the straightness test altogether: any name with a starting
+  low, a few green weeks and a red run got a line.
+- So the picky screen, the one thing checked against his eye, has never
+  been tested as a portfolio. The nearest measurement is Pass 43's third
+  number: name-weeks on that screen beat their own size tier over the
+  next 13 weeks by 0.6% to 1.4%, all of it since 2017. That was the one
+  positive finding of the evening and nothing was built on it.
+
+**The screen (fixed).** A name is on it in a week when it is tradeable
+(Pass 43's rule), its weekly swing is 1.5% or more, it has a Pass 41
+channel worth owning (look-back 104 weeks, anchor 26 to 100 weeks back,
+lower line rising 10% a year or more, straightness 0.80 or more), and it
+is no more than 4.7 of its own weekly swings under its 52-week high (the
+rule fitted to his calls on the A names).
+
+**The books.**
+
+| Arm | What it holds |
+|---|---|
+| **the screen, weekly** | exactly the names on the screen each week, equal weight; a name is sold the week it drops off -- the primary |
+| the screen, 13 weeks | a name is bought when it appears and held 13 weeks, then kept only if it is still on the screen |
+| screen in, break out | bought when it appears, sold only on a weekly close under the line fixed at entry (his stated exit) |
+| no pullback rule | the primary without the 4.7-swing rule |
+
+The primary sells a name when it stops looking like the picture, which is
+not the same as waiting for the bottom of the channel to break; the third
+arm is his exit, for the comparison.
+
+**Universe, control, verdict lines.** The top 500 by size (primary) and
+every tradeable name, costs by tier, 200 random baskets a week of the
+same number of names from the same set, SPY. Beats luck at the 95th
+percentile overall and the 75th in each half; better ride on Sharpe and
+drawdown against SPY.
+
+**Counted honestly.** This is the tenth draw at the idea, and the 4.7-
+swing rule was fitted on 32 names tonight. But it is the first draw that
+tests the object the owner actually agreed with, and it is aimed at the
+one place a positive number has already been seen. Pass 43 also says
+where that number will fail: before 2017.
+
+**Predictions.** (1) The primary holds between a tenth and a quarter of
+the top 500 on an average week. (2) It compounds more than the pool since
+2017 and no more than the pool before 2017. (3) Overall it places
+between the 60th and 95th percentile of its random baskets and fails the
+75th in the first half. (4) "Screen in, break out" compounds less than
+the primary: the hold-until-break rule is where the earlier books lost
+what the screen had. (5) Weekly turnover makes the primary's costs the
+largest of the four.
+
+    python lab/pass48_screen_book.py          # every arm, both sets (slow: about ten minutes)
+    python lab/pass48_screen_book.py smoke    # plumbing: 300 names
+
+## Pass 48 results -- the screen itself: better than a random large cap since 2017, far worse before, and under SPY in both halves
+
+Run 2026-11-21, `lab/results/pass48_screen_book.json`. 957 weeks from
+2008-07. Top 500 by size: the pool compounds 10.8% (10.1% to 2016, 11.4%
+since); SPY 12.3% (9.5%, 14.8%), Sharpe 0.73, largest drawdown -46.3%.
+
+| Arm | Compound a year | To 2016 | 2017 on | Sharpe | Largest drawdown | Place among random baskets | To 2016 | 2017 on | Names held | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **the screen, weekly** | **9.2%** | 6.5% | 11.5% | **0.61** | **-33.3%** | **12th** | 9th | 36th | 90 | 6 wk |
+| the screen, 13 weeks | 8.7% | 2.7% | 14.1% | 0.54 | -58.1% | 8th | 2nd | 100th | 117 | 13 wk |
+| screen in, break out | 8.5% | 4.1% | 12.5% | 0.54 | -56.6% | 5th | 0th | 98th | 221 | 7 wk |
+| no pullback rule | 9.7% | 4.8% | 14.1% | 0.62 | -46.2% | 29th | 10th | 98th | 94 | 6 wk |
+
+On every tradeable name all four are worse: 6.2% to 9.4% against a pool
+at 13.2%, at the bottom of their random baskets overall.
+
+**Against the lines (primary, top 500).** *Beats luck:* **no** (12th
+percentile; 9th and 36th by half). *Better ride:* **no** on Sharpe (0.61
+against 0.73); the drawdown is much smaller (-33.3% against -46.3%).
+
+**What the screen does, now that it has been tested as itself.**
+1. *It is the size he expected.* 90 names of about 470, one in five.
+2. *Since 2017 it chooses better than chance, in three forms of four.*
+   Held 13 weeks, held to the break, or held weekly without the pullback
+   rule, it sits at the 98th to 100th percentile of random baskets of
+   large caps and compounds 12.5% to 14.1% against the pool's 11.4%.
+   That is a real result for those ten years and it is the owner's
+   picture doing it.
+3. *Before 2017 it is as bad as it is good after.* 2.7% to 6.5% a year
+   against the pool's 10.1%, at the 0th to 10th percentile. 2009, 2011,
+   2014 to 2016 are years of sharp reversals, and a rule that owns what
+   has been rising straight is on the wrong side of each one.
+4. *It does not beat SPY in either half.* Since 2017 the best arm makes
+   14.1% and SPY 14.8%. SPY is weighted by size and that decade belonged
+   to the largest companies; an equal-weight book of ninety large caps
+   gave up three points a year to that before it chose anything (the
+   pool's 11.4% against SPY's 14.8%).
+5. *The pullback rule earns its keep only on the ride*: with it the
+   drawdown is -33.3% and without it -46.2%, for half a point less
+   return.
+6. *His exit is not what cost the earlier books.* "Screen in, break out"
+   is 0.7 points behind the weekly screen over the whole period and
+   ahead of it since 2017.
+
+**Scored against the predictions.** (1) Held: 19% of the top 500. (2)
+Held: ahead of the pool since 2017 (barely, for the primary), behind it
+before. (3) Half: it fails the first half as predicted, but overall it
+places 12th, not between the 60th and 95th. I underestimated how bad the
+first half was. (4) Held. (5) Held: 763 trades a year, the most.
+
+**What it means.** The owner was right that the lab had not tested what
+he agreed with, and testing it changed the picture in one respect: the
+screen does pick, in the last ten years. It did not change the answer to
+his question. Over twenty years, in either half, in any of four ways of
+holding it, the screen does not beat the S&P 500. What it is, on this
+evidence, is a momentum screen: good while trends persist, costly when
+they reverse, and so far unable to tell which kind of year it is in.
+That last sentence is where the next real idea would have to be, and it
+is not a tweak to the line.
+
+## Pass 49 -- the channel screen as the Council's universe (registered 2026-11-21 before any run)
+
+The owner on the Pass 48 results, 2026-11-21: "our market regime and
+weekly analysis has been solid. I think these picks plus the council
+could produce some solid stuff. Use it as their universe or something
+each week." So: the three engines keep doing what they do, but each
+Monday they may only choose among the names the channel screen flags.
+Lab only; nothing in production changes.
+
+**The filter (fixed).** Each Monday, from weekly bars that end before it:
+a name of the Council's live universe passes when it has a Pass 41
+channel worth owning (look-back 104 weeks, anchor 26 to 100 weeks back,
+lower line rising 10% a year or more, straightness 0.80 or more), its
+weekly swing is 1.5% or more, and it is no more than 4.7 swings under its
+52-week high: Pass 48's screen, unchanged. If fewer than ten names pass,
+the engines scan the whole universe that week and the week is counted as
+a fallback.
+
+**Two things are measured.**
+1. *History, as far as the engine replay reaches.* Production's engine
+   code replayed on every Monday from 2024-06-03 to the last closed week,
+   with and without the filter, on the lab's usual basis (Monday open to
+   Friday close, dividend-adjusted, cash at zero, the earnings blackout
+   fed). This is the engines without the LLM layer, as `production` is on
+   the forward page. Beside them: every screen name held equal weight,
+   and the whole universe equal weight.
+2. *Forward.* A design named `channel-universe` joins the forward page
+   from the week of 2026-11-23, replayed each Monday beside `production`.
+
+**Verdict line for the history (fixed).** The filter *helps the engines*
+if the weekly alpha of filtered-minus-unfiltered is positive with a t of
+2 or more over the whole window, and positive in each half of it.
+
+**Read this before the result.** The window is two and a half years,
+all of it inside the stretch where Pass 48 found the screen works (2017
+on) and none of it inside the stretch where it failed. A pass here says
+the filter helps in the kind of market it was already known to like. It
+cannot say what happens in a 2011 or a 2015. And on the forward record so
+far, `production` trails SPY, so "solid" is the owner's read of the
+Council, not the record's; the filter is being asked to improve engines
+that have not yet shown an edge of their own.
+
+**Predictions.** (1) The filter leaves 30 to 70 names of the universe on
+a typical Monday and falls back in fewer than one week in ten. (2)
+Filtered-minus-unfiltered is positive, between 0 and +0.15% a week, with
+a t under 2: it helps a little and does not clear the line. (3) Every
+screen name held equal weight does about as well as the filtered engines
+(within 0.05% a week): the screen does the work and the engines add
+little on top.
+
+    python lab/pass49_council_channel.py          # the history
+    python lab/pass49_council_channel.py smoke    # plumbing: the last eight weeks
+
+## Pass 49 results -- the channel universe makes the engines worse, in both halves
+
+Run 2026-11-21, `lab/results/pass49_council_channel.json`. 129 Mondays,
+2024-06-03 to 2026-11-16, the Council's 274 names. SPY made +0.21% a week
+on the lab's basis. The screen passed a median of 44 names (15 to 88) and
+never fell back.
+
+| | Weekly alpha, all 129 weeks | t | First 64 weeks | Last 65 weeks | Compounded over the window |
+|---|---|---|---|---|---|
+| engines, whole universe | +0.42% | 1.3 | +0.06% | +0.78% | +106.7% |
+| **engines, channel universe** | **-0.15%** | -0.7 | -0.28% | -0.02% | **+3.5%** |
+| every screen name, equal weight | -0.07% | | -0.18% | +0.05% | |
+| every name, equal weight | +0.08% | | -0.01% | +0.17% | +41.7% |
+| SPY | | | | | +27.3% |
+
+Filtered minus unfiltered: **-0.57% a week (t -1.8)**, -0.34% in the
+first half and -0.80% in the second; the filtered book was the better one
+in 60 weeks of 129.
+
+**Against the line.** The filter does not help the engines. It hurts
+them, in both halves, by an amount just short of the usual bar for
+calling a difference real.
+
+**Why, as far as this shows.**
+1. *On this universe and in these years the screen's names lagged.* Held
+   equal weight they made -0.07% a week against +0.08% for the whole
+   list. The Council's list is already hand-picked growth and theme
+   names; inside it, the smooth steady climbers were the slower ones.
+2. *The engines do not want what the screen offers.* Marky ranks on the
+   last three weeks, Ophelia on sector rotation, Cecil on a low multiple.
+   Their picks are movers and cheap names, and a name within 4.7 swings
+   of its high in a straight two-year channel is rarely either. Taking
+   those away removed the picks that carried the unfiltered replay.
+
+**Do not read the first row as proof the Council works.** +0.42% a week
+would be remarkable, and it is not established: its t is 1.3, the book
+is five names, and above all the universe is the one the owner curated
+in 2026, replayed back to 2024. Names are on that list partly because
+they did well in those years, so every row here is flattered (the plain
+equal-weight list beats SPY by 0.08% a week doing nothing). This is why
+the forward page counts only from 2026-09-21, where `production` has
+made about +0.2% a week over eight weeks. What the table can say is the
+comparison between its rows, which share the flattery: on the same
+names and weeks, the filter subtracted.
+
+**Scored against the predictions.** (1) Held: a median of 44 names, no
+fallback weeks. (2) Missed, wrong sign: I predicted the filter would
+help by up to 0.15% a week and it cost 0.57%. (3) Missed narrowly: the
+screen's names held equally (-0.07%) did somewhat better than the
+filtered engines (-0.15%), not the same.
+
+**What it means.** The channel screen and the Council's engines are
+different ideas that do not stack. One owns smooth, established
+climbers; the others pick movers, rotations and cheap names. Forcing the
+second to choose from the first's list gives it less of what it uses.
+The `channel-universe` design stays on the forward page as registered,
+from the week of 2026-11-23, so the comparison continues on weeks nobody
+has seen; on this evidence it is not a candidate for production.
+
+## Pass 50 -- how much and when: sizing and staged buying and selling (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "We have been vague and loose about our buying and
+selling rules too, they are currently all or nothing portion sizing with
+super basic trading rules." Asked whether he meant how much goes into a
+pick or when to get in and out: "I was talking about both." And on the
+screen: it is "more like a Cecil picks and holds til they break type
+thing", and "some of these stocks held the channels for years." Lab only.
+
+Exits inside a one-week hold have been tested and are not repeated:
+managing the week adds no return (Pass 13), his selling rules reshape
+outcomes and not the return (Pass 15), the -5% stop costs like cash and
+trims the tail (Pass 32). What has never been tested is sizing, and
+buying or selling in pieces.
+
+**Part A: the channel-hold book.** Pass 48's "screen in, break out" on the
+top 500 by size: a name is bought when it appears on the screen and sold
+on a weekly close under the line fixed at entry. Eight books, every
+combination of:
+- *How much:* **equal dollars** in every name, or **equal risk** (dollars
+  in proportion to one over the stock's weekly swing, so a calm name
+  gets more and a jumpy one less).
+- *Buying:* **all at once**, or **in two halves**: half at entry, the
+  other half four weeks later only if the name is still held and its
+  close is above the close of its entry week (adding to what is working).
+- *Selling:* **all at once** on the first weekly close under the line, or
+  **in two halves**: half on the first close under the line, the rest on
+  the next weekly close under it, whenever that comes.
+The book is always fully invested across what it holds, so a half
+position is a half weight relative to the others, not cash. Costs are
+charged on every change of weight at the tier's rate.
+
+**Part B: the weekly Council.** The engine replay of Pass 49 (129
+Mondays from 2024-06-03, the whole universe), the five names it books
+each week, total invested left as production has it. Nine books:
+- *How much:* **production's weights**, **equal dollars**, or **equal
+  risk**.
+- *Buying:* **all on Monday's open**; or half on Monday and the other
+  half at Wednesday's open **only if the name is above** its Monday open
+  (add on strength); or the other half only if it is **below** (add on
+  weakness). The half not bought is cash.
+Everything is sold at Friday's close, as now.
+
+**Verdict lines (fixed).** A rule *earns its place* if, against the same
+book without it, it raises the Sharpe ratio by 0.05 or more **and** does
+not lower the compound return by more than half a point a year (Part A),
+or raises mean weekly alpha per unit of its weekly standard deviation by
+a tenth or more without lowering mean alpha by more than 0.05% a week
+(Part B). Sizing and timing are judged separately, and a rule has to
+earn its place in both halves of its window.
+
+**What this can and cannot show.** Both books are ones that did not beat
+the S&P 500 on their own evidence (Pass 48), or whose record is flattered
+by a hand-picked universe (Pass 49). This pass asks whether better rules
+improve them, compared with themselves; it is not another attempt at the
+market. Part B is two and a half years.
+
+**Predictions.** (1) Equal risk lowers the book's swings more than its
+return and earns its place in Part A on Sharpe; in Part B it lowers both
+and does not. (2) Buying in halves on strength does not earn its place in
+either part: the second half is bought higher. (3) Selling in halves in
+Part A lowers return a little and does not earn its place. (4) Adding on
+weakness in Part B is worse than adding on strength.
+
+    python lab/pass50_size_and_time.py          # both parts
+    python lab/pass50_size_and_time.py smoke    # plumbing: 300 names, eight weeks
+
+## Pass 50 results -- no rule clears the line; equal risk suits the channel book and wrecks the Council's, and buying in pieces helps neither
+
+Run 2026-11-21, `lab/results/pass50_size_and_time.json`.
+
+**Part A, the channel-hold book** (top 500, 957 weeks from 2008-07, about
+225 names held).
+
+| How much | Buying | Selling | Compound a year | Sharpe | To 2016 | 2017 on | Largest drawdown |
+|---|---|---|---|---|---|---|---|
+| equal dollars | at once | at once | 8.6% | 0.53 | 0.26 | 0.79 | -61.4% |
+| equal dollars | at once | in halves | 9.0% | 0.55 | 0.31 | 0.78 | -58.9% |
+| equal dollars | in halves | at once | 8.9% | 0.54 | 0.28 | 0.79 | -60.4% |
+| equal dollars | in halves | in halves | 8.9% | 0.54 | 0.29 | 0.78 | -60.1% |
+| equal risk | at once | at once | 9.0% | 0.58 | 0.34 | 0.82 | -56.8% |
+| equal risk | at once | in halves | 9.5% | 0.61 | 0.40 | 0.80 | -53.7% |
+| equal risk | in halves | at once | 9.2% | 0.59 | 0.36 | 0.82 | -55.9% |
+| equal risk | in halves | in halves | 9.4% | 0.60 | 0.38 | 0.81 | -54.7% |
+
+- *Equal risk:* +0.05 Sharpe and +0.4 points a year overall, with a
+  shallower drawdown. By half it is +0.08 and then +0.03, so it clears
+  the line overall and in the first half and **not in the second**.
+- *Selling in halves:* +0.02 Sharpe, +0.4 points a year. Helps a little
+  everywhere; under the line.
+- *Buying in halves:* +0.01. Nothing.
+- The best book has both of the first two: 9.5% a year, Sharpe 0.61,
+  drawdown -53.7%, against 8.6%, 0.53 and -61.4%. A real improvement in
+  the ride, and still a book that trails SPY.
+
+**Part B, the weekly Council** (129 Mondays from 2024-06-03).
+
+| How much | Buying | Mean weekly alpha | Its weekly SD | Alpha per unit of SD | Worst week | Against production (t) |
+|---|---|---|---|---|---|---|
+| production's weights | all on Monday | +0.42% | 3.72% | 0.114 | -11.5% | |
+| production's weights | half, add on strength | +0.20% | 2.61% | 0.077 | -7.9% | -0.22% (-1.5) |
+| production's weights | half, add on weakness | +0.22% | 3.22% | 0.068 | -8.4% | -0.20% (-1.8) |
+| equal dollars | all on Monday | +0.46% | 3.64% | 0.127 | -9.6% | +0.04% (0.8) |
+| equal dollars | half, add on strength | +0.22% | 2.67% | 0.083 | -7.8% | -0.20% (-1.2) |
+| equal dollars | half, add on weakness | +0.25% | 3.06% | 0.080 | -6.9% | -0.18% (-1.5) |
+| equal risk | all on Monday | +0.02% | 2.29% | 0.010 | -6.6% | -0.40% (-2.0) |
+| equal risk | half, add on strength | -0.06% | 2.02% | -0.029 | -7.9% | -0.48% (-1.9) |
+| equal risk | half, add on weakness | -0.09% | 2.00% | -0.043 | -5.6% | -0.51% (-2.2) |
+
+- *Equal risk removes the Council's alpha altogether* (+0.42% to +0.02%).
+  In this replay the return came from the jumpiest names in the five, and
+  sizing by risk gives those the least.
+- *Buying in halves halves the alpha and cuts the swings by less.* The
+  week is too short to buy in pieces: the half that waits until Wednesday
+  misses the two days where much of the move is.
+- *Equal dollars is as good as production's weights* (+0.46% against
+  +0.42%, a slightly milder worst week). The confidence-and-merit
+  weighting is not adding anything measurable over splitting the book
+  five ways.
+- Adding on strength and adding on weakness are indistinguishable.
+
+**Against the lines.** No sizing rule and no timing rule earns its place
+in both halves of either part.
+
+**Scored against the predictions.** (1) Half: equal risk helps the
+channel book as predicted but misses the line in the second half; on the
+Council it does not earn its place, as predicted, and is far worse than I
+expected. (2) Held. (3) Half: selling in halves does not earn its place,
+but it raised the return a little instead of lowering it. (4) Not shown:
+strength and weakness are the same.
+
+**What it means.**
+1. The two books want opposite sizing. The slow channel book holds
+   hundreds of names for months, and tilting it to the calm ones smooths
+   it at no cost. The weekly book holds five names for five days, and
+   its edge, such as it is, is in the volatile ones. One sizing rule for
+   both would be wrong for one of them.
+2. For the weekly Council the cheap, defensible change is to drop the
+   weighting scheme for equal dollars. It is not better by any margin
+   that matters, but it is simpler and no worse. Not a candidate for
+   production without the owner's say, and the universe caveat of Pass 49
+   applies to every number in Part B.
+3. Buying in pieces is not worth building for either book.
+4. None of this moves either book past the S&P 500. Rules of this kind
+   shape the ride. They were never likely to be where a missing edge
+   was, and this pass does not change that.
+
+## Pass 50 note -- the channel-hold book's drawdown is a start-up artifact of the test (2026-11-21)
+
+The owner asked how a book that sells on a break can fall 54% to 61%.
+A diagnostic of the baseline arm (same rule, same data, more printed; not
+a new test) shows the figure is the whole book in 2008-09, and that three
+choices of mine produced it.
+
+1. *The book starts nearly empty.* Channels need two years of bars and
+   the bars start in 2006, so the book opens in July 2008 with 24 names,
+   not 225. It holds fewer than 50 names in 60 of 957 weeks, all at the
+   start, and first reaches 100 in September 2009.
+2. *There is no cash.* Money from a sold name is spread over what is
+   left. The book went from 32 names in September 2008 to 2 in February
+   2009, still fully invested: the trough (week ending 2009-03-06) is two
+   stocks, and those two then missed 2009's rebound (+10% against +32%
+   for SPY).
+3. *The line is fixed at entry and can be far under the price.* Over all
+   5,391 sales the line sat a median 6.2% under the entry close, but more
+   than 28% under for a tenth of them, and the sale came a median 7.5%
+   under the name's high while held (27% for the worst tenth). A name
+   bought high above an old line can fall most of the way to nothing
+   before it is sold (NVAX 2020-23, -98% from its high). The weekly-close
+   trigger adds a median 2.1% of overshoot under the line.
+
+**What this changes.** The -61.4% and -53.7% drawdowns, and the "to
+2016" half of every hold-until-break book in Passes 48 and 50, are
+dominated by a book of 2 to 32 names in the first year. From the saved
+Pass 48 by-year figures, the top-500 "screen in, break out" book made
+12.4% a year from 2010 on against 11.9% for the random pool and 13.8%
+for SPY; before costs its largest fall from July 2009 on is -32.6%.
+2010 is a cut chosen after seeing the result, so this is a reading, not
+a verdict: without the start-up the book is a little ahead of luck and
+still about a point and a half behind the S&P 500, on a list with
+survivor bias in its favour.
+
+**What a fair test of the owner's rule needs** (not yet registered):
+sold slots go to cash, with a cap on any one name's weight; the line
+moves up with the price ("dynamic as it goes up with some cushion",
+which Pass 46 tested but Passes 48 and 50 did not carry over); and a
+start no earlier than the week the book can hold a full set of names.
+
+## Pass 51 -- the channel-hold book with cash, and the owner's 20% rule (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on seeing that the Pass 50 book held names through
+falls of 50% and more: "I wouldn't hold anything 20% or more from its
+high in the channel." This pass adds that rule and repairs the two faults
+of construction the Pass 50 note found. Lab only.
+
+**The book.** Pass 48's screen for entries (channel worth owning, weekly
+swing of 1.5% or more, close within 4.7 swings of the 52-week high
+close), bought at the next Monday's open. Every held name gets the same
+weight, **one over the number held or one hundredth, whichever is
+smaller; the rest is cash** earning nothing. So a book of 24 names is 24%
+invested, and money from a sold name is not piled onto the survivors. A
+sold name may come back when it is on the screen again. Decisions on the
+weekly close, sold at the next Monday's open, costs at the tier's rate.
+
+**Four exits.**
+- *line*: a weekly close under the line fixed at entry (Passes 48, 50).
+- *20% off the high*: a weekly close 20% or more under the name's high,
+  the high being its 52-week high close at entry or any higher weekly
+  close since. The owner's rule, alone.
+- *line or 20%*: whichever comes first. The owner's rule as he would run
+  it.
+- *line or 4.7 swings*: the same with the distance scaled to the stock's
+  own weekly swing in place of a flat 20% (his point on ANRO and AMLX,
+  that a jumpy name sits further from its high without being broken).
+
+Two universes as in Pass 48: the top 500 by size (the one that counts)
+and every tradeable name.
+
+**Control.** 200 random books a week holding the same number of names
+from the same pool at the same weights, so with the same cash.
+
+**Windows.** All (from 2008-07), to 2016, 2017 on, as before; and, named
+here in advance because the Pass 50 note used it after the fact, **2010
+on**, the years in which the book can hold a full set.
+
+**Verdict lines (fixed).** *Beats luck*: mean weekly return at or above
+the 95th percentile of the random books overall and the 75th in each
+half. *Better ride*: Sharpe above SPY's and a largest drawdown shallower
+than SPY's, overall. *Beats the S&P 500*: compound return above SPY's in
+all, in both halves, and in 2010 on. The 20% rule *earns its place* if
+"line or 20%" against "line" raises Sharpe by 0.05 or more without
+lowering the compound return by more than half a point a year, in both
+halves.
+
+**Limits.** The list holds only names alive today, which hides the worst
+breakdowns and so understates what a selling rule saves. Cash earns
+nothing, and in 2008-09 a part-empty book is flattered against SPY by
+its cash, which is why the random books carry the same cash.
+
+**Predictions.** (1) "Line or 20%" has a shallower largest drawdown than
+"line" and a higher Sharpe; I expect it to earn its place overall and am
+unsure of the second half. (2) Its compound return is within half a
+point of "line" either way. (3) "20% off the high" alone is the worst of
+the four on return: with no line it holds slow decliners too long. (4)
+The swing-scaled version does about as well as the flat 20%, not
+clearly better. (5) No arm beats luck in both halves, and none beats the
+S&P 500 on every window; the best is within two points a year of SPY in
+2010 on.
+
+    python lab/pass51_cash_and_twenty.py          # full run
+    python lab/pass51_cash_and_twenty.py smoke    # plumbing: 300 names
+
+## Pass 51 results -- cash fixes the ride; the 20% rule calms the first half and costs the second; nothing beats the S&P 500
+
+Run 2026-11-21, `lab/results/pass51_cash_and_twenty.json`. 957 weeks from
+2008-07. SPY: 12.3% a year, Sharpe 0.73, largest drawdown -46.3% (to 2016
+9.5%; 2017 on 14.8%; 2010 on 13.9%, Sharpe 0.89, -31.8%).
+
+**Top 500.**
+
+| Exit | Compound a year | Sharpe | Largest drawdown | To 2016 | 2017 on | 2010 on | Percentile among random (all / to 2016 / 2017 on) | Names held | Invested | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| line | 11.2% | 0.75 | -31.7% | 9.7% | 12.5% | 12.5% | 22 / 0 / 94 | 221 | 95% | 7 weeks |
+| 20% off the high | 10.5% | 0.80 | -30.2% | 11.6% | 9.6% | 11.1% | 94 / 28 / 98 | 201 | 92% | 20 weeks |
+| line or 20% | 9.5% | 0.74 | -29.0% | 10.6% | 8.4% | 10.0% | 72 / 17 / 94 | 151 | 88% | 5 weeks |
+| line or 4.7 swings | 7.8% | 0.63 | -28.0% | 8.7% | 7.0% | 8.2% | 10 / 4 / 52 | 133 | 85% | 6 weeks |
+
+Where a sale landed under the name's high (median / worst tenth / worst):
+line -10.9% / -30.9% / -97.8%; 20% off the high -22.7% / -31.7% / -70.6%;
+line or 20% -13.4% / -26.7% / -70.6%; line or 4.7 swings -11.9% / -25.0%
+/ -73.9%.
+
+**Every tradeable name.** All four arms sit at the 0th to 2nd percentile
+of the random books in every window (8.9% to 11.3% a year against 11.7%
+to 13.0% for random). Outside the top 500 the book is worse than luck,
+as in Passes 43 and 48, on a list whose survivor bias is worst there.
+
+**Against the lines.**
+- *Beats luck:* no arm. "20% off the high" is closest, 94th overall and
+  98th since 2017, but 28th to 2016.
+- *Better ride:* "line" (0.75, -31.7%), "20% off the high" (0.80,
+  -30.2%) and "line or 20%" (0.74, -29.0%) all pass against SPY's 0.73
+  and -46.3%. Part of that is cash in 2008: the book was 24% to 60%
+  invested through the crash because it had few names, not because a
+  rule took it out.
+- *Beats the S&P 500:* no arm. Three beat SPY to 2016 (9.7% to 11.6%
+  against 9.5%); none does from 2017 or from 2010 (best 12.5% against
+  14.8% and 13.9%).
+- *The 20% rule earns its place:* no. Against "line", "line or 20%"
+  loses 1.7 points a year and 0.01 of Sharpe overall. By half it is
+  +0.9 points and +0.15 Sharpe to 2016, then -4.1 points and -0.12
+  Sharpe from 2017.
+
+**What happened.**
+1. *The two repairs did most of the work.* The same line exit that made
+   8.6% a year, Sharpe 0.53, drawdown -61.4% in Pass 50 makes 11.2%,
+   0.75, -31.7% once sold money goes to cash and no name is more than 1%
+   of the book. The Pass 50 figures were the construction, as the note
+   said.
+2. *The 20% rule does what the owner wants of it for a single name and
+   costs the book in sharp market falls.* It cut the worst tenth of
+   sales from -31% under the high to -27% and removed the -98% cases
+   (the worst is still -71%: a name that gaps cannot be sold at -20% on
+   a weekly close). The cost is 2020 and 2023: in March 2020 nearly the
+   whole book was 20% off its high at once, the rule sold it, and a name
+   comes back only when it is on the screen again, near a new high in a
+   two-year channel. The book made -1% in 2020 against +25% for the line
+   alone and +16% for SPY, and +7% in 2023 against +18% and +26%.
+3. *The 20% rule alone, with no line, is the smoothest book* (Sharpe
+   0.80, median hold 20 weeks, 43% of sales at a gain averaging +13.9%).
+   Adding the line to it sells sooner and does worse.
+4. *Scaling the distance to the stock's own swing is the worst arm.* It
+   sells calm names on small pullbacks.
+
+**Scored against the predictions.** (1) Half: the drawdown is shallower
+with "line or 20%", but Sharpe is not higher and it does not earn its
+place. (2) Missed: it is 1.7 points lower, not within half a point. (3)
+Missed: "20% off the high" alone is second on return and first on
+Sharpe, not the worst. (4) Missed: the swing-scaled version is clearly
+worse. (5) Held: no arm beats luck in both halves or the S&P 500 on
+every window, and the best is 1.4 points behind SPY from 2010.
+
+**What it means.** The owner's instinct about single names is sound and
+this confirms it: a stock 20% under its high in the channel is usually
+broken. As a book rule the damage is in getting back in, not in getting
+out. A market-wide fall trips the rule on everything at once and the
+screen's re-entry is slow. Two things follow and neither is tested:
+a faster way back in for a name sold in a market-wide fall, or
+suspending the 20% rule when SPY itself is 20% off its high. Pass 42
+found that SPY low in its own channel doubles the break rate, which is
+the same event seen from the other side.
+
+## Pass 52 -- ten good channels: a quality score, weights by quality, cash by market temperature (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "How do we deem the quality of the channel? I'd
+rather have 10 good channels than 300 wonky ones. Weights should go with
+quality, cash should be allowed depending on the overall market
+temperature and we should be able to hold as many weeks as we want not
+sell every week." Lab only.
+
+Every channel book so far bought everything on the screen, 150 to 220
+names in the top 500, with a median hold of 5 to 7 weeks under the line
+exit. The screen says a channel is good enough; nothing has ranked them.
+
+**The quality score.** For every name on Pass 48's screen, four
+measures of the channel as drawn that week, each turned into its rank
+among that week's screen names (0 worst, 1 best) and averaged:
+- *straight*: R-squared of the weekly log close on time since the
+  starting candle. His "nice linear bottom left corner to top right".
+- *tight*: the channel's height divided by the rise of its lower line
+  since the starting candle; smaller is better. A wide band round a
+  small rise is wonky.
+- *long*: weeks since the starting candle. "Young channels get steep."
+- *tested*: the number of separate times a weekly low came down into
+  the bottom tenth of the channel (at least four weeks apart, the
+  starting candle not counted). A line touched four times is a line; a
+  line touched once is a guess.
+Fixed here from his words, not fitted to anything. As a check and not a
+verdict, the run prints where his 2026-11-20 marks fall on it.
+
+**The book.** Top 500 by size. *N* slots. On a weekly close: sell what
+has hit its exit; fill free slots with the highest-scoring screen names
+not held, bought at Monday's open. **A held name is never sold to make
+room for a better one and never sold for falling off the screen; it
+goes only on its exit**, so a hold can run for years. Empty slots are
+cash.
+
+The grid, each factor judged on its own:
+- *slots*: **10**, or 25.
+- *exit*: the **line** fixed at entry, or **20% off the high** (the
+  smoothest exit in Pass 51).
+- *weights*: **equal** (one slot each), or **by quality**: among the
+  names held, the best-scoring gets one and a half slots and the worst
+  half a slot, evenly spaced between.
+- *market temperature*: **none**, or **no new buys while SPY's weekly
+  close is under its 40-week average**. Holdings run to their own
+  exits, so in a cold market the book drains to cash name by name.
+And one sanity arm: ten slots filled with the *lowest*-scoring names.
+
+**Control.** For each equal-weight book, 200 books run the same way
+that fill free slots with screen names drawn at random. This asks the
+question that matters here: does the score pick better channels than
+the screen alone.
+
+**Verdict lines (fixed).** *The score earns its place* if the ten-slot,
+line-exit, equal-weight, no-market-rule book's mean weekly return is at
+or above the 95th percentile of its random books overall and the 75th
+in each half; the other seven equal-weight books are reported beside
+it. *Weights by quality* and *the market rule* each earn their place if,
+against the same book without them, they raise Sharpe by 0.05 or more
+without lowering the compound return by more than half a point a year,
+in both halves, on the ten-slot line-exit book. *Beats the S&P 500*:
+compound return above SPY's in all, both halves and 2010 on.
+
+**Limits.** Ten names is a noisy book: one stock moves it, and any one
+grid cell can look good or bad by chance, which is why the control is
+200 books run the same way. The list holds only names alive today. The
+channel is the Pass 41 drawing (at most two years old), on ordinary
+weekly bars.
+
+**Predictions.** (1) The top-scoring ten beat the bottom-scoring ten,
+and land above the middle of the random books but under the 95th
+percentile: the score helps a little and does not earn its place. (2)
+Weights by quality change nothing measurable. (3) The market rule cuts
+the largest drawdown and raises Sharpe overall, costs return from 2017,
+and so does not earn its place in both halves. (4) Median hold is two
+to three times the full-screen book's. (5) No book beats the S&P 500 on
+every window.
+
+    python lab/pass52_ten_good_channels.py          # full run
+    python lab/pass52_ten_good_channels.py smoke    # plumbing: 300 names
+
+## Pass 52 results -- the score agrees with the owner's eye and does not pick better; the market rule and the 20% exit make the book, in the first half only
+
+Run 2026-11-21, `lab/results/pass52_ten_good_channels.json`. 957 weeks
+from 2008-07, top 500, a median of 80 names on the screen a week, SPY
+under its 40-week average in 20% of weeks. SPY: 12.3% a year, Sharpe
+0.73, largest drawdown -46.3% (to 2016 9.5%; 2017 on 14.8%; 2010 on
+13.9%).
+
+**Ten slots, equal weights** (percentile is among 200 books that fill
+the same slots at random from the screen):
+
+| Exit | Market rule | Compound a year | Sharpe | Largest drawdown | To 2016 | 2017 on | 2010 on | Percentile (all / to 2016 / 2017 on) | Random books' median | Median hold |
+|---|---|---|---|---|---|---|---|---|---|---|
+| line | none | 8.2% | 0.52 | -53.3% | 3.2% | 12.7% | 11.6% | 22 / 8 / 55 | 10.0% | 8 weeks |
+| line | cold | 8.9% | 0.60 | -33.0% | 8.1% | 9.5% | 7.7% | 6 / 2 / 36 | 12.0% | 8 weeks |
+| 20% off the high | none | 10.4% | 0.69 | -40.7% | 10.4% | 10.5% | 12.6% | 32 / 24 / 50 | 11.0% | 15 weeks |
+| 20% off the high | cold | 12.3% | 0.91 | -29.7% | 17.0% | 8.5% | 11.4% | 60 / 76 / 44 | 11.9% | 35 weeks |
+
+**Twenty-five slots, equal weights:** line/none 8.9% (0.58, -44.1%, 7th
+percentile); line/cold 11.7% (0.79, -31.2%, 24th); 20%/none 10.4% (0.75,
+-31.9%, 56th); 20%/cold 11.7% (0.89, -29.5%, 52nd).
+
+**Ten slots filled with the lowest scores:** line 7.8% (0.50, -43.5%);
+20% off the high 10.4% (0.70, -32.0%). The same as the highest scores.
+
+**Weights by quality** against equal, same book: between -0.6 and +0.8
+points a year and -0.05 and +0.02 of Sharpe across the eight books. On
+the ten-slot line book, +0.1 points and 0.00.
+
+**The owner's marks on the score** (week ending 2026-11-13, every
+tradeable channel name scored whatever its size): UVE is at the 95th
+percentile and GRDN the 71st. Of his 45 solid marks 27 are on the screen,
+median 63rd percentile; of 18 broken, 7 are on the screen, median 44th.
+
+**Against the lines.**
+- *The score earns its place:* no. The registered book is at the 22nd
+  percentile of its random books (8th and 55th by half). Across the
+  eight equal-weight books the percentiles run from 6 to 60. The top
+  ten and the bottom ten by score make the same return.
+- *Weights by quality:* no. Nothing measurable.
+- *The market rule:* no, by the two-halves test. On the ten-slot line
+  book it adds 0.08 of Sharpe and 0.7 points overall and takes the
+  drawdown from -53% to -33%; to 2016 it adds 0.35 of Sharpe and 4.9
+  points, from 2017 it costs 0.17 and 3.2 points.
+- *Beats the S&P 500:* no book. The best, ten slots with the 20% exit
+  and the market rule, ties SPY overall (12.3%) with a far better ride
+  (0.91 against 0.73, -29.7% against -46.3%) and 17.0% against 9.5% to
+  2016. From 2017 it makes 8.5% against 14.8%.
+
+**What happened.**
+1. *The score measures what the owner sees and what he sees is not what
+   pays.* It puts his two ideal charts near the top and his solid marks
+   above his broken ones, so it is a fair stand-in for his eye. But on
+   twenty years of the top 500, straighter, tighter, longer, better
+   tested channels did not go on to do better than any other name on
+   the screen. The screen already takes the wonky ones out; ranking what
+   is left added nothing.
+2. *What made the best book is the rules, not the picks.* Ten random
+   screen names run under the 20% exit and the market rule made 11.9% a
+   year at the median, against 12.3% for the ten best by score.
+3. *The line exit is the weak part.* Median hold eight weeks, the same
+   in ten slots as in the full screen: the line fixed at entry is hit
+   fast whichever channels are chosen. The 20% exit lets holds run (a
+   median 35 weeks with the market rule, the longest about ten years,
+   47% of sales at a gain averaging +24.7%).
+4. *Every result splits at 2017.* The market rule and the 20% exit
+   protect in 2008-09, 2011 and 2015-16 and cost in the fast recoveries
+   of 2019, 2020 and 2023, when SPY was carried by a few very large
+   names that an equal-weight book of channel names holds little of.
+
+**Scored against the predictions.** (1) Missed: the top ten do not beat
+the bottom ten and sit below the middle of the random books. (2) Held.
+(3) Held. (4) Missed: with the line exit the hold is the same eight
+weeks; only the 20% exit with the market rule lengthens it. (5) Held.
+
+**What it means.** The owner's structure, a few names held long with a
+wide stop and cash when the market is cold, gives the best ride any
+channel book has shown and matched SPY's return over the whole window.
+It is one cell of sixteen, it does that entirely in the first half, and
+random picks from the screen do as well, so it is not evidence of an
+edge. The quality score as built is not worth adding. Whether his own
+eye picks better than the score is what the forward ledger of his marks
+will show, first scores about 2026-12-18.
+
+## Pass 53 -- other history: the ten-slot books on 1996 to 2008, by named period, and over every five-year window (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "Can we test on different history periods?" Every
+channel pass so far has used bars from 2006-06, so books that start in
+2008-07, and every verdict has leaned on one split at 2017. Lab only.
+
+**New data.** Weekly adjusted bars for the same list
+(`universe_all_2026-11-20.csv`) and SPY from 1994-01-01, which lets the
+books start in early 1996. Twelve years the lab has not looked at: the
+late-1990s run, the 2000-02 bear market and the 2003-07 recovery.
+
+**The books, unchanged from Pass 52.** Ten slots, equal weights, the
+highest quality score first, top 500 by size, each held to its own exit:
+line or 20% off the high, with and without "no new buys while SPY is
+under its 40-week average". Nothing is tuned here. The 20% exit with the
+market rule was the best cell of sixteen in Pass 52, on 2008 to 2026;
+**1996-07 to 2008-06 is the first test of it on data that did not choose
+it.**
+
+**Three benchmarks.** SPY. The *pool*: every top-500 member that week,
+equal weight, the book's own universe held blind. And 100 *random
+books*: the same slots, exits and market rule, filled at random from the
+screen.
+
+**What is reported.** (a) 1996-07 to 2008-06 against 2008-07 to 2026.
+(b) Named periods: 1996-99, 2000-02, 2003-07, 2008-09, 2010-16, 2017-19,
+2020-21, 2022, 2023-26. (c) Every five-year window, starting each 26
+weeks: the share in which the book beats SPY, beats the pool, beats the
+median random book, and has a shallower largest drawdown than SPY.
+
+**Verdict lines (fixed).** For the 20% exit with the market rule:
+*holds up out of sample* if, on 1996-07 to 2008-06, its compound return
+is at or above SPY's **and** the pool's, with Sharpe above SPY's.
+*Reliable* if it beats SPY in at least 60% of five-year windows.
+*The picks matter* if it is at or above the 75th percentile of its
+random books on the new period. The other three books are reported
+beside it.
+
+**Limits, and they are larger here than anywhere before.** The list is
+names alive in 2026. In 1996 that is the companies that went on to
+survive thirty years, with every dot-com failure missing: the book and
+the pool are both flattered against SPY, more the further back, and a
+selling rule's savings are understated. This is why the pool and the
+random books are the fairer yardsticks and SPY the looser one. Size is
+today's value scaled back by adjusted price, which ignores share
+issuance and is rough by the 1990s; fewer than half the names have bars
+in 1996, so "top 500" then reaches further down the list.
+
+**Predictions.** (1) On 1996-2008 the book beats SPY (survivor bias plus
+2000-02 in cash) but not the pool: it does not hold up by the line as
+written. (2) By period it wins 2000-02 and 2008-09 clearly, and loses
+1996-99, 2017-19 and 2023-26. (3) It beats SPY in 45% to 60% of
+five-year windows, has the shallower drawdown in over 80%, and beats the
+pool in under 40%. (4) Against random books on the new period it sits
+between the 30th and 70th percentile: the picks do not matter.
+
+    python lab/pass53_other_history.py fetch    # bars from 1994
+    python lab/pass53_other_history.py          # full run
+    python lab/pass53_other_history.py smoke    # plumbing: 300 names
+
+## Pass 53 results -- the 20% exit book holds up on 1996 to 2008 and wins 39 of 40 five-year windows that start before 2016, then loses all 12 that start after
+
+Run 2026-11-21, `lab/results/pass53_other_history.json`. 1,604 weeks
+from 1996-02, ten slots, top 500. 860 of the 3,004 names have bars at
+the start of 1996.
+
+*A note on the bars.* Yahoo keys a weekly bar on the request's start day
+for names trading in 1994 and on Monday for names listed later; the
+script moves every bar to its Monday (committed before the full run).
+Weekly returns then correlate 0.993 to 0.9996 with the Pass 43 bars, the
+differences falling in dividend weeks, so the 2008-26 figures here
+differ a little from Pass 52's. The book also enters 2008 already
+holding names, where Pass 52's started empty.
+
+**The 20% exit with the market rule** (the best cell of Pass 52):
+
+| Period | Book | SPY | Pool | Median random book | Percentile among random | Book Sharpe / SPY | Book drawdown / SPY |
+|---|---|---|---|---|---|---|---|
+| **new: 1996-07 to 2008-06** | **15.6%** | 7.1% | 11.7% | 11.5% | 97 | 0.93 / 0.49 | -30.8% / -45.7% |
+| seen: 2008-07 to 2026 | 11.7% | 12.1% | 10.5% | 11.4% | 59 | 0.86 / 0.72 | -30.0% / -46.3% |
+| everything | 13.6% | 10.1% | 11.0% | 11.4% | 94 | 0.90 / 0.64 | -30.8% / -54.6% |
+| 1996-99 | 30.4% | 25.3% | 19.3% | 23.6% | 93 | | |
+| 2000-02 | -3.2% | -14.8% | -1.2% | -7.0% | 78 | | |
+| 2003-07 | 21.8% | 13.0% | 18.2% | 18.9% | 81 | | |
+| 2008-09 | 4.7% | -10.6% | -8.3% | 1.8% | 79 | | |
+| 2010-16 | 16.3% | 12.5% | 12.7% | 14.2% | 84 | | |
+| 2017-19 | 19.7% | 15.2% | 13.8% | 14.6% | 92 | | |
+| 2020-21 | 7.9% | 23.0% | 19.9% | 15.1% | 16 | | |
+| 2022 | -16.1% | -18.2% | -17.8% | -20.5% | 85 | | |
+| 2023-26 | 8.7% | 20.6% | 14.1% | 12.1% | 25 | | |
+
+**The other three books, new period / seen period / everything:**
+20% exit, no market rule 14.9% / 11.8% / 13.3% (Sharpe 0.81, drawdown
+-37.9%); line, market rule 15.5% / 6.5% / 10.4% (0.62, -50.8%); line, no
+rule 13.4% / 8.6% / 10.9% (0.61, -66.1%). The line books made 43% to 47%
+a year in 1996-99 and fell 51% to 66% in 2000-02.
+
+**Five-year windows, starting every 26 weeks (52 of them):**
+
+| Book | Beats SPY | Beats the pool | Beats the median random book | Shallower drawdown than SPY |
+|---|---|---|---|---|
+| 20% exit, market rule | 75% | 71% | 83% | 96% |
+| 20% exit, no rule | 73% | 73% | 87% | 92% |
+| line, market rule | 48% | 27% | 40% | 35% |
+| line, no rule | 42% | 25% | 35% | 44% |
+
+For the 20% exit with the market rule, by when the window starts:
+
+| Window starts | Windows | Beat SPY | Beat the pool | Beat the median random book | Median gap to SPY, a year |
+|---|---|---|---|---|---|
+| 1996 to 2007 | 24 | 24 | 22 | 24 | +10.7 points |
+| 2008 to 2015 | 16 | 15 | 15 | 16 | +4.7 points |
+| 2016 to 2021 | 12 | **0** | **0** | 3 | **-8.0 points** |
+
+**Against the lines.**
+- *Holds up out of sample:* **yes.** On twelve years that did not choose
+  it, 15.6% a year against 7.1% for SPY and 11.7% for the pool, Sharpe
+  0.93 against 0.49.
+- *Reliable:* **yes** by the line as written, 75% of five-year windows.
+  The line did not ask when, and the when matters: every window that
+  starts in 2016 or later loses.
+- *The picks matter:* **yes** on the new period, 97th percentile of the
+  random books. On the seen period it is the 59th, as in Pass 52.
+
+**How to read it.**
+1. *This is the first channel book to pass its registered lines on data
+   it was not chosen on,* and it does so against the two yardsticks
+   that share its survivor bias, not only against SPY. The exit and the
+   concentration are the owner's; the result is a point for his
+   structure.
+2. *The edge runs out.* From windows starting 2016 the book is behind
+   SPY by a median eight points a year and behind its own pool every
+   time. 2020-21 (7.9% against 23.0%) and 2023-26 (8.7% against 20.6%)
+   are the cost: fast falls that trip the 20% exit and the market rule
+   together, then fast recoveries led by a few very large names.
+3. *Two explanations fit and this data cannot separate them.* One is
+   that the market changed after about 2016 and the rule no longer
+   suits it. The other is survivor bias: the further back, the more the
+   list is only eventual winners, and a rule that picks the straightest
+   climbers among eventual winners may be flattered by more than the
+   pool and the random books are. Both predict exactly this table.
+   Settling it needs a list with the delisted names in it, which the
+   lab does not have.
+4. *The line exit fails the same test.* It needs the 1990s to look
+   good and gives it all back in 2000-02. The 20% exit is the better
+   rule on every stretch of thirty years except 2023-26.
+
+**Scored against the predictions.** (1) Missed: the book beats the pool
+as well as SPY on the new period. (2) Half: it wins 2000-02 against SPY
+(not the pool) and 2008-09, and loses 2023-26, but it won 1996-99 and
+2017-19, which I had as losses. (3) Missed twice: 75% of windows against
+SPY, not 45% to 60%, and 71% against the pool, not under 40%; the
+drawdown share held. (4) Missed: 97th percentile, not the middle.
+
+**What it means.** Not a candidate for production: lab only, ten names,
+a list with thirty years of survivor bias, and nothing since 2016. But
+it is the strongest result the channel idea has produced, and the open
+question is now a narrow one: why it stopped. The two things worth
+doing next are a list that includes the dead names, and the two
+re-entry repairs from Pass 51's results (suspend the exit, or get back
+in faster, when the whole market has fallen), judged on 2016 on.
+
+## Pass 54 -- quicker reactions: the ten-slot book on daily bars, the last ten years (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on Pass 53's book losing every five-year window
+that starts from 2016: "I think the reaction time is quicker now. Maybe
+we should apply it to daily bars for the last 10 years and see how
+things look. Maybe weekly in a sideways to down market and daily in an
+up market." Lab only.
+
+**The book is Pass 53's:** ten slots, equal weights, the highest quality
+score first, top 500 by size, sold only when its close is 20% or more
+under its high, no new buys while the market is cold. Everything is now
+measured on **daily bars** (the channel under the daily lows over the
+last 520 sessions, the high and the 20% on daily closes, cold meaning
+SPY's close under its 200-day average), so the books below differ only
+in what is being tested.
+
+**Two things that could be "reaction time", crossed.**
+- *When it acts.* **Weekly**: decides on the last close of the week and
+  trades at the next open, as every pass so far. **Daily**: decides on
+  every close. **Switch**, his second idea: daily while SPY is above
+  its 200-day average, weekly while it is under.
+- *How soon a new channel counts.* Since Pass 41 a channel has needed
+  **26 weeks** (130 sessions) from its starting candle. That is my
+  number, not his; he said "a solid 4-8 weeks of trending up before it
+  is considered". After a fall that sets a two-year low in most stocks,
+  as in March 2020, the 26-week rule leaves nothing to buy for half a
+  year whatever else is done. The other arm is **8 weeks** (40
+  sessions).
+
+Six books, 2016-11-14 to 2026-11-13, each starting empty.
+
+**Benchmarks.** SPY; the pool (every top-500 member, equal weight); and
+for each book 100 random books run the same way that fill slots at
+random from the screen.
+
+**Verdict lines (fixed).** *Quicker reaction earns its place* if a book
+beats the weekly, 26-week book by two points a year or more of compound
+return over the ten years **and** in each half (split at 2021-11-14),
+without a deeper largest drawdown by more than five points. *Beats the
+S&P 500*: compound return above SPY's over the ten years and in both
+halves.
+
+**Limits.** These are the ten years Pass 53 already showed to be bad for
+this book, so any arm that repairs them has been chosen on them: a
+candidate for the forward ledger, not a finding. Daily bars for the
+whole list do not go back before 2014 here, so there is no earlier
+period to check a daily rule on. The list is names alive today. Ten
+names is a noisy book, hence the random books. The weekly book here is
+built from daily bars and starts empty, so it will not match Pass 53's
+2016-26 figures exactly.
+
+**Predictions.** (1) Acting daily alone changes little: within a point
+and a half a year of weekly either way, with more trades. (2) The
+8-week rule is where the difference is: two points a year or more
+better over the ten years, most of it in 2020-21, but not in both
+halves. (3) The switch book lands between daily and weekly. (4) No book
+beats the S&P 500 over the ten years; the best is within four points a
+year.
+
+    python lab/pass54_daily_reaction.py fetch    # daily bars from 2014 for the names that were ever top 500
+    python lab/pass54_daily_reaction.py          # full run
+    python lab/pass54_daily_reaction.py smoke    # plumbing: 150 names
+
+## Pass 54 results -- acting daily changes nothing; counting a channel after 8 weeks adds two to four points; every book is still 5 to 9 points a year behind SPY
+
+Run 2026-11-21, `lab/results/pass54_daily_reaction.json`. 2,516 sessions
+from 2016-11-14, 988 names that were ever in the top 500, ten slots. SPY
+was under its 200-day average on 16% of days. A median of 84 names on
+the screen with the 26-week rule and 93 with the 8-week rule.
+
+| Acts | Channel counts after | Ten years | First half | Second half | Sharpe | Largest drawdown | 2020-21 | 2023-26 | Percentile among random books | Buys a year |
+|---|---|---|---|---|---|---|---|---|---|---|
+| weekly | 26 weeks | 6.9% | 10.7% | 3.3% | 0.52 | -29.1% | 7.2% | 7.5% | 33 | 8.3 |
+| weekly | 8 weeks | 8.7% | 11.9% | 5.6% | 0.62 | -29.5% | 9.7% | 10.6% | 59 | 8.8 |
+| daily | 26 weeks | 6.2% | 10.6% | 1.9% | 0.48 | -28.0% | 11.5% | 7.8% | 4 | 11.4 |
+| daily | 8 weeks | **9.9%** | 14.8% | 5.2% | 0.69 | -23.5% | 19.4% | 11.0% | 58 | 11.4 |
+| switch | 26 weeks | 6.1% | 6.9% | 5.3% | 0.45 | -31.5% | 2.1% | 10.1% | 18 | 12.4 |
+| switch | 8 weeks | 9.3% | 10.6% | 8.1% | 0.63 | -33.0% | 9.4% | 14.5% | 60 | 10.6 |
+| **SPY** | | **15.1%** | 18.8% | 11.6% | 0.87 | -33.7% | 23.4% | 20.8% | | |
+| pool | | 11.8% | 17.6% | 6.4% | 0.70 | -38.4% | 20.5% | 14.4% | | |
+
+**Against the lines.**
+- *Quicker reaction earns its place:* no book, one narrowly. Against
+  the weekly, 26-week book, "daily, 8 weeks" is +3.0 points a year over
+  the ten years with a shallower drawdown, +4.1 in the first half and
+  +1.9 in the second, a tenth of a point under the line. "Switch, 8
+  weeks" is +2.4 overall but -0.1 and +4.8 by half. "Weekly, 8 weeks"
+  is +1.8.
+- *Beats the S&P 500:* no book, in the ten years or in either half. The
+  best is 5.2 points a year behind.
+
+**What happened.**
+1. *Acting daily is not the missing piece.* With the 26-week rule,
+   daily is 0.7 points worse than weekly and the switch 0.8 worse.
+   Selling a day or four sooner at 20% off the high saves little, and
+   it buys 40% more often.
+2. *The 26-week rule was costing two to four points a year, and it was
+   mine.* Letting a channel count after 8 weeks, the owner's own
+   figure, helps under all three timings (+1.8, +3.7 and +3.2). It is
+   most of what "daily, 8 weeks" made in 2020-21 (19.4% against 7.2%):
+   the book could buy again in the summer of 2020 and not in the
+   autumn.
+3. *His switch idea is the best book since 2021* (8.1% a year in the
+   second half against 3.3% to 5.6% for the others and 6.4% for the
+   pool) *and the worst-timed in 2020.* One half each way is not
+   evidence for or against.
+4. *The gap to SPY is not reaction time.* Over these ten years the pool,
+   every top-500 name held equally with no rules at all, made 11.8%
+   against SPY's 15.1%: 3.3 points a year go to SPY simply for being
+   weighted to its largest names. The books then give up two to six
+   more to the pool, in the years the market ran without them: 2021
+   (+6% to +11% against +29%), 2023 and 2025.
+5. *The picks are again no better than chance.* The 8-week books sit at
+   the 58th to 60th percentile of books filled at random from the same
+   screen.
+6. *Ten names is a noisy book, and this run shows how noisy.* Pass 53's
+   weekly book made 19.7% a year in 2017-19; the same rules here,
+   starting empty in November 2016 and measured on daily bars, made
+   11.2%. Nothing about the rule changed, only which ten names it
+   happened to be holding.
+
+**Scored against the predictions.** (1) Held: daily alone is 0.7 points
+worse. (2) Mostly held: the 8-week rule is where the difference is,
+most of it in 2020-21, though it is +1.8 and not two points under
+weekly timing, and it helps in both halves, which I did not expect. (3)
+Half: the switch lands between the others with the 8-week rule and
+below both with the 26-week rule. (4) Half: no book beats the S&P 500,
+but the best is 5.2 points behind, not within four.
+
+**What it means.** The 8-week rule should replace the 26-week rule in
+any further channel book: it is the owner's figure, it helped under
+every timing and in both halves, and the 26 was never his. It was found
+on the ten years it repairs, so it goes forward as a correction of my
+own assumption and not as a finding. Daily decisions are not worth
+building. And the result that matters most is the fourth: in the last
+ten years a book of equally weighted large stocks starts three points a
+year behind SPY before any rule is applied, so a channel book that only
+ever holds equal weights of whatever passes its screen has that much to
+make up first.
+
+## Pass 55 -- the best movers of the last ten years, and what marked them beforehand (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "let's analyze some of the best movers over that
+period and what made them special. Time to dive into the trenches of
+time!" Lab only. **A description, not a test: no rule is being judged
+and nothing here is a candidate for anything.**
+
+**Why this needs care.** Picking the winners afterwards and listing what
+they had in common finds traits every time, and most are shared by the
+losers. So every trait is counted on *all* names and reported as how
+much more common the winners are among names that had it (1.0 means no
+more common than anywhere else). And every trait found on 2016-26 is
+counted again on **2006-11 to 2016-11**, the decade before, on the same
+list. A trait that marks the winners of only one decade is a story about
+that decade.
+
+**Data.** The weekly bars from 1994 (Pass 53), the whole list of 3,004
+names, prices only: the lab has no earnings or sales history, so
+"special" here means what could be seen on the chart and in size and
+sector. Channels are the Pass 41 drawing with a channel counting after
+8 weeks (Pass 54). The list holds only names alive today, so there are
+no decade-long losers that went to nothing; the comparison is winners
+against survivors.
+
+**Who counts.** A name is in a decade's population if it was tradeable
+at the start (price $3, $5M a week) and has bars at both ends. *Best
+movers*: the top 5% by total return over the decade; the top 30 are
+listed by name. Names listed after the start cannot be in it, so a
+second list takes **the best two-year runs** begun inside 2016-26 by any
+tradeable name, later listings included.
+
+**What is measured.**
+- *At the start:* size tier, sector, return over the prior one and two
+  years, weekly swing, distance under the 52-week high, whether it had a
+  channel worth owning and was on the screen.
+- *Along the way:* how many times it closed 20% under its high (each
+  one a sale under the owner's rule), largest drawdown, share of weeks
+  on the screen.
+- *What the rules would have caught:* each name traded alone, bought
+  when on the screen and sold 20% under its high, as a share of what
+  holding it throughout made; and how much of the move was over by the
+  first buy.
+- *For the best two-year runs:* where the stock stood when the run
+  began (how far under its high, in a channel or not) and whether the
+  screen saw it in the run's first six months.
+
+**Predictions.** (1) The winners are smaller and jumpier at the start
+than the rest, in both decades. (2) Prior return does little: winners
+are not concentrated among the names that had already run. (3) Sector
+matters in 2016-26 (technology) and the sector is a different one in
+2006-16. (4) The typical best mover closed 20% under its high at least
+five times in its decade, and the rules alone would have kept less than
+half of what holding it made. (5) Most of the best two-year runs began
+more than 20% under the 52-week high, off the screen.
+
+    python lab/pass55_best_movers.py          # full run
+    python lab/pass55_best_movers.py smoke    # plumbing: 300 names
+
+## Pass 55 amendment -- the $3 price floor is wrong on adjusted prices (2026-11-21, after the first run, before the second)
+
+The first run's list of the decade's best movers had no NVDA. The cause
+is a fault that has been in every pass since Pass 43: "tradeable" asks
+for a price of $3 or more, and the bars are adjusted for later splits,
+so a stock that went on to split many times shows an old price under $3
+however large and liquid it was. In November 2016 that removed 9 liquid
+names, among them NVDA (adjusted $2.16, about $1.9 billion traded a
+week, 75 times its price ten years on) and SMCI. In November 2006 it
+removed 22, among them BKNG, NFLX, AMZN, AAPL, MNST, ORLY, CMG and NVDA.
+In July 1996, 51, among them AAPL, QCOM, SBUX, GILD and BBY.
+
+**What it means for earlier passes.** The floor used knowledge of the
+future to remove exactly the names that later did best, from the books,
+the pools and the random books alike, until their adjusted price
+crossed $3. Comparisons between a book and its pool or its random books
+stand, since all three lost the same names. Comparisons with SPY were
+tilted *against* the books by it, the opposite direction to survivor
+bias, by an amount not measured. The dollar-volume floor is unaffected
+by splits and is enough on its own.
+
+**The amendment.** Pass 55 is run a second time with no price floor
+(`nofloor`, written to `pass55_best_movers_nofloor.json`); both runs are
+reported. Any later channel pass should drop the price floor.
+
+## Pass 55 results -- the best movers were jumpy, not tidy; each fell 20% from a high about once a year; and the biggest runs began in wreckage the screen never looks at
+
+Run 2026-11-21. Figures are from the amended run with no price floor
+(`lab/results/pass55_best_movers_nofloor.json`); the first run
+(`pass55_best_movers.json`) differs only in missing the split-heavy
+names and gives the same reading. A description: nothing here is a rule
+or a candidate.
+
+**Who they were.** 2016-11 to 2026-11: 1,454 names, SPY 4.1 times, the
+median name 2.1 times; the 73 best movers made 8 times or more, median
+11.5. The first fifteen: AMD 80x, NVDA 75x, MU 45x, FIX 37x, ANET 37x,
+TSLA 31x, DELL 28x, AVGO 27x, LRCX 26x, KLAC 24x, LLY 22x, STX 21x,
+FTNT 20x, PWR 20x, CROX 19x. 2006-11 to 2016-11: 916 names, SPY and
+the median name both 1.9 times; the 46 best made 5.6 times or more,
+led by BKNG 38x, NFLX 27x, INCY 21x, AMZN 19x, REGN 18x, MKTX 13x, MA
+12x, DPZ 11x, AAPL 10x, MNST 10x. (CHRD appears in both lists of
+2016-26 on a 99% drawdown and a 2,014-fold two-year "run": its bars
+cross a bankruptcy and are not to be believed.)
+
+**What marked them at the start, and whether it held in both decades.**
+1.0 means winners were no more common among names with the trait.
+
+| Trait at the start | 2016-26 | 2006-16 | Holds in both? |
+|---|---|---|---|
+| Jumpiest fifth by weekly swing | 1.6 | 2.4 | **yes** |
+| Calmest fifth by weekly swing | 0.4 | 0.3 | **yes** |
+| Had a channel worth owning | 1.0 | 1.1 | yes: it says nothing |
+| On the screen | 1.0 | 1.1 | yes: it says nothing |
+| More than 20% under the 52-week high | 1.2 | 1.4 | faintly |
+| Best fifth by prior 52-week return | 1.3 | 1.2 | faintly |
+| Worst fifth by prior 52-week return | 1.4 | 0.9 | no |
+| Smallest fifth by size | 1.3 | 1.5 | faintly |
+| Largest fifth by size | 1.0 | 0.3 | no |
+| Mega caps | 1.5 | 0.4 | **no, reversed** |
+| Information technology | 3.1 | 1.4 | in degree only |
+| Health care | 0.6 | 1.8 | no |
+| Consumer staples | 0.3 | 2.0 | no |
+| Financials | 0.5 | 0.3 | **yes, scarce** |
+| Real estate | 0.0 | 0.7 | scarce |
+
+**Along the way** (median of the group):
+
+| | 2016-26 winners | 2016-26 the rest | 2006-16 winners | 2006-16 the rest |
+|---|---|---|---|---|
+| Times it closed 20% under its high | 12 | 12 | 10 | 12 |
+| Largest drawdown | -55% | -63% | -64% | -70% |
+| Weeks on the screen | 27% | 15% | 24% | 15% |
+| Weeks the rule held it | 42% | 27% | 47% | 30% |
+| Holding it throughout | 11.5x | 2.0x | 7.4x | 1.9x |
+| Bought on the screen, sold 20% under the high | 2.0x | 1.0x | 2.4x | 1.1x |
+| Share for which the rule beat holding | 0% | 20% | 0% | 23% |
+
+Of a winner's whole move (in log terms) the rule kept a median 28% in
+2016-26 and 42% in 2006-16. Very little of the move was over by its
+first buy (9% and 3%): the rule found the winners early and then let
+them go. The few it held well are the calm compounders: LLY (4
+shake-outs, rule 8.4x of 22x), AAPL (5), MA (5), TJX (2), AZO (3), and
+NVDA by luck of timing (16x of 75x).
+
+**The best two-year runs begun in 2016-26** (100 names, median 14 times,
+later listings included: NVAX, CVNA, APP, ROOT, ENPH, MRNA, SMCI, PLTR
+among them). When the run began: 89% were more than 20% under their
+52-week high, the median 73% under; 5% had a channel; 5% were on the
+screen; 84% were small caps or smaller. 41% reached the screen within
+six months, the median first appearance was week 35 of 104, and 10%
+never did.
+
+**What made them special, as far as prices show.**
+1. *They were jumpy.* The one trait that marked ten-year winners in
+   both decades is a large weekly swing at the start. The calmest fifth
+   of stocks produced almost none.
+2. *They were not tidy.* A channel at the start, or a place on the
+   screen, told nothing about who would be a winner, in either decade.
+   The winners spent about a quarter of their weeks on the screen.
+3. *Every one of them tested the 20% rule about once a year,* exactly as
+   often as the stocks that went nowhere. Being 20% off the high does
+   not tell a winner from a loser; half the median winner's price was
+   lost at some point on the way to 11 times.
+4. *Sector and size are the decade's story, not the stock's.* Technology
+   and mega caps in 2016-26; staples, health care and mid caps in
+   2006-16. Only the scarcity of winners among financials and real
+   estate repeats.
+5. *The biggest two-year moves start in wreckage.* That is hindsight in
+   its purest form (most wrecked small caps stay wrecked, and this pass
+   did not count them), but it does say where such moves are not: among
+   established channels near their highs.
+
+**Scored against the predictions.** (1) Half: jumpier in both decades;
+smaller only in 2006-16. (2) Held. (3) Held. (4) Held: 12 and 10
+shake-outs, and the rule kept 28% and 42%. (5) Held: 89% and 95%.
+
+**What it means for the channel book.** The screen and the 20% exit are
+built to hold calm, straight climbers, and they do that: LLY and AAPL
+are the names they kept. The decade's largest winners were a different
+animal, and the book's own rules threw them back about once a year and
+were slow to take them again (in a winner 42% of weeks). That is the
+third pass to end at the same place (Passes 51 and 53 before it): the
+cost is in getting back in. A sold name that goes on to a new high is
+the plainest sign the sale was wrong, and no rule tested so far buys
+it back on that.
+
+## Pass 56 -- after a 20% sale: what tells the good ones from the bad, and which way back in is best (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "So how do we get back in the good ones quicker
+but avoid the bad ones. Let's look for differentiating variables in
+fundamentals or to the MACD." Lab only. Passes 51, 53 and 55 each ended
+at the same place: the 20% exit is tripped by winners and losers alike,
+about once a year each, and the cost is in getting back in.
+
+**The events.** Every name that was ever in the top 500 by size since
+2006, weekly bars, no price floor (Pass 55's amendment), a channel
+counting after 8 weeks (Pass 54). Each name is traded alone: bought when
+it is in the top 500 and on the screen, sold on a weekly close 20% or
+more under its high. **Every such sale is one event.** A sale is *good
+to undo* if the stock closes back above the high it was sold under
+within 52 weeks; the other outcome reported is its return over the next
+52 weeks less SPY's. Found on sales from 2016-11 on, counted again on
+2006-11 to 2016-11.
+
+**Part A: what was known on the day of the sale.**
+- *MACD* (weekly closes, 12/26/9): line above or below zero; histogram
+  rising or falling; the line as a share of price.
+- *The fall itself:* weeks from the high to the sale; how much the
+  stock had gained from its buy to its high; volume in the falling
+  weeks against the 26 weeks before.
+- *The market:* SPY 10% or more under its own 52-week high; SPY under
+  its 40-week average; the stock's fall less SPY's fall over the same
+  weeks.
+- *The stock:* weekly swing; prior 52-week return; close above or under
+  its 40-week average.
+- *Fundamentals:* the lab has no sales or margin history, and this pass
+  does not get one. What it uses is Yahoo's earnings history (reported
+  and expected earnings per share by announcement date, back to about
+  2002), taken as known at the sale: last reported EPS positive; EPS
+  up on the same quarter a year before; last report beat the estimate;
+  three or more of the last four beat; and whether the sale came within
+  two weeks after a report.
+
+**Part B: ways back in, after the sale.** For each, how often it comes
+within 52 weeks, how long it takes, the return over the following 26
+weeks less SPY's, and how often the stock then falls 20% before it
+rises 20%:
+- *the screen* (what every book has used);
+- *MACD cross*: the weekly histogram turns from negative to positive;
+- *above the 10-week average*;
+- *half back*: a close above the midpoint of the sale price and the old
+  high;
+- *new high*: a close above the old high.
+And each name traded alone over its decade with each way back in added
+to the screen, for the decade's best movers (Pass 55's top 5%) and for
+the rest.
+
+**Lines (fixed).** A variable *differentiates* if the share of sales
+that were good to undo differs by ten points or more between its two
+sides (top and bottom fifth for a measured one), the same way round in
+both decades. A way back in *beats the screen* if, in both decades, the
+26-week return after it is higher, the share that fall 20% first is no
+higher, and the typical name traded alone ends with more.
+
+**Limits.** Names alive today only, so the worst sales to undo (the
+ones that went to nothing) are missing and every "good" share is too
+high. Earnings per share only, and Yahoo's history may restate old
+figures for splits unevenly, so year-on-year growth is the roughest of
+the measures; the signs are safer. One name traded alone is not a book:
+a way back in that works here still has to be tested in ten slots with
+the market rule.
+
+**Predictions.** (1) The market differentiates: sales made while SPY is
+10% or more under its high are good to undo at least ten points more
+often, in both decades. (2) MACD on the day of the sale does not
+differentiate. (3) Positive EPS and rising EPS raise the good share by
+five to ten points, short of the line; the latest beat or miss does
+little. (4) Of the ways back in, the MACD cross comes soonest and fails
+most often; the new high comes last and fails least. (5) No way back in
+clears the line in both decades, but the new high adds most to the best
+movers traded alone.
+
+    python lab/pass56_back_in.py fetch    # Yahoo earnings history for the study's names
+    python lab/pass56_back_in.py          # full run
+    python lab/pass56_back_in.py smoke    # plumbing: 150 names
+
+## Pass 56 amendment -- sales, margin and profit from SEC filings are added (2026-11-21, before any run)
+
+The registration said the pass would not get sales or margin history.
+The owner has since agreed to the contact address the SEC asks automated
+readers to send, so it does. Added to Part A, before any run of either
+part:
+
+- *sales up on a year before*; *sales up 20% or more*; *sales growth
+  faster than the quarter before* (the year-on-year rate rising);
+- *gross margin up on a year before*;
+- *net income positive*.
+
+Source: the SEC's XBRL frames, one calendar quarter at a time for every
+filer. A quarter is taken as known 75 days after it ends (a 10-Q is due
+in 40 to 45 days and a 10-K in 60 to 90), and is ignored once it is 200
+days old. The same lines apply.
+
+**Limits of this source.** It starts in 2009 for the largest filers and
+2011 for the rest, so in the 2006-16 decade these five can only be
+counted from about 2010. Many companies report the fourth quarter only
+inside the annual figure, so fourth quarters are often missing and the
+facts then come from the third. Companies name their sales line in
+different ways; three common names are read and the largest taken.
+Banks, insurers and property trusts mostly do not report a gross profit.
+Foreign filers on other forms are absent.
+
+    python lab/pass56_back_in.py fetchsec    # needs SEC_CONTACT in the environment; the address is not stored
+
+## Pass 56 results -- two things tell a good sale to undo from a bad one in both decades: whose fall it was, and how deep the MACD line is; no fundamental clears the line; quicker ways back in keep more by being in more, not by choosing better
+
+Run 2026-11-21, `lab/results/pass56_back_in.json`. 1,151 names that were
+ever in the top 500 since 2006; Yahoo earnings history for 1,140; SEC
+quarterly sales for 984, net income for 1,028, gross profit for 530.
+
+**The sales.** 2016-26: 2,289 sales, 47% good to undo (back above the
+old high within a year, a median 18 weeks later). 2006-16: 1,923 sales,
+42% (23 weeks). Over the 52 weeks after a sale the median stock trailed
+SPY by 8.6 points and 3.1 points: the typical sale was right, and
+nearly half were wrong.
+
+**Part A: what was known on the day.** Share of sales that were good to
+undo, one side against the other.
+
+| Known on the day of the sale | 2016-26 | 2006-16 | Differentiates? |
+|---|---|---|---|
+| **The stock's fall less SPY's**, fifth that fell least beyond the market / fifth that fell most | 64% / 35% | 46% / 33% | **yes: 29 and 13 points** |
+| **MACD line as a share of price**, highest fifth / lowest (most negative) fifth | 51% / 37% | 46% / 34% | **yes: 14 and 12 points** |
+| Weeks from the high to the sale, quick / slowest fifth | 49% / 38% | 46% / 35% | about 11 both, on the line |
+| SPY 10% or more under its high, yes / no | 60% / 42% | 45% / 40% | no: 18 and 5 |
+| SPY under its 40-week average, yes / no | 55% / 42% | 43% / 41% | no |
+| MACD line above zero, yes / no | 52% / 41% | 45% / 39% | no: 11 and 6 |
+| MACD histogram rising, yes / no | 48% / 47% | 53% / 41% | no |
+| Close above its 40-week average, yes / no | 53% / 45% | 48% / 40% | no: 8 and 8 |
+| Weekly swing, jumpiest / calmest fifth | 49% / 44% | 49% / 32% | no: 5 and 17 |
+| Three or more of the last four reports beat, yes / no | 49% / 41% | 46% / 36% | no: 8 and 10 |
+| Last report beat the estimate, yes / no | 48% / 44% | 45% / 35% | no: 4 and 10 |
+| EPS up on a year before, yes / no | 49% / 42% | 43% / 40% | no |
+| Last EPS positive, yes / no | 48% / 39% | 42% / 40% | no |
+| Sales growth faster than the quarter before, yes / no | 54% / 46% | 46% / 39% | no: 8 and 7 |
+| Gross margin up on a year before, yes / no | 54% / 49% | 50% / 39% | no: 5 and 11 |
+| Net income positive, yes / no | 50% / 47% | 49% / 39% | no |
+| Sales up on a year before, yes / no | 49% / 52% | 47% / 41% | no |
+| Sales up 20% or more, yes / no | 48% / 50% | 47% / 45% | no |
+| Sold within two weeks after a report, yes / no | 41% / 48% | 40% / 43% | no |
+| Gain from the buy to the high; prior 52-week return; volume in the fall | flat | flat | no |
+
+(SEC-based rows in 2006-16 rest on 300 to 770 sales from about 2010 on.)
+
+**Part B: ways back in.**
+
+| Way back in | Comes within a year | Weeks after the sale | Next 26 weeks less SPY, 2016-26 / 2006-16 | Then fell 20% before rising 20% |
+|---|---|---|---|---|
+| the screen | 53% / 49% | 2 / 1 | +2.8% / +1.6% | 36% / 31% |
+| above the 10-week average | 100% | 6 / 6 | -0.2% / +0.2% | 35% / 37% |
+| half back | 69% / 67% | 10 / 12 | +0.6% / -0.9% | 31% / 34% |
+| MACD cross | 100% | 12 / 13 | -3.1% / -0.2% | 37% / 38% |
+| new high | 47% / 42% | 18 / 23 | +2.0% / -0.9% | 31% / 31% |
+| (never sold) | | 0 | +1.1% / +0.7% | |
+
+Each name traded alone over its decade, the screen plus one way back in:
+
+| | Best movers keep, 2016-26 (holding: 12.9x) | Best movers keep, 2006-16 (holding: 8.0x) | Mean log growth, every name, 2016-26 / 2006-16 | Weeks held, every name |
+|---|---|---|---|---|
+| the screen alone | 1.4x | 1.5x | 0.09 / 0.20 | 16% / 26% |
+| or above the 10-week average | **4.2x** | **3.4x** | **0.21 / 0.42** | 63% / 70% |
+| or MACD cross | 2.7x | 3.4x | 0.12 / 0.36 | 55% / 65% |
+| or half back | 2.5x | 2.6x | 0.16 / 0.28 | 30% / 45% |
+| or new high | 2.5x | 2.1x | 0.12 / 0.26 | 23% / 37% |
+
+**Against the lines.**
+- *Differentiates:* two variables. **Whose fall it was**: a sale made
+  when the stock had fallen little more than the market was wrong far
+  more often than one made when the stock fell on its own. **The depth
+  of the MACD line**: sales with the weekly MACD line deeply negative
+  (a long slide already behind it) were rarely wrong. The slowness of
+  the fall says the same thing and sits on the line.
+- *Fundamentals:* none clears the line. Four lean the right way in both
+  decades by five to eleven points: a run of earnings beats, sales
+  growth speeding up, gross margin rising, and (not a fundamental) the
+  price still above its 40-week average. Whether sales or earnings were
+  merely growing, and how fast sales grew, told nothing.
+- *A way back in beats the screen:* none, by the line as written. No
+  way back in is followed by better returns than the screen's in both
+  decades.
+
+**What happened.**
+1. *The cleanest signal is not about the company at all.* If the market
+   took the stock down, the sale was usually wrong; if the stock went
+   down alone, usually right. This is Pass 51's finding (the 20% exit
+   costs most in market-wide falls) seen one sale at a time, and it
+   holds in both decades in a form that "SPY is 10% off its high" does
+   not.
+2. *MACD is useful as a measure of damage, not as a trigger.* How
+   negative the line is at the sale separates good from bad. The MACD
+   cross as a way back in is the worst of the five: it comes after 12
+   weeks, is followed by the poorest returns, and fails most often.
+3. *Fundamentals help at the margin and in the next year's return more
+   than in the recovery.* In 2016-26 stocks sold after a miss, or with
+   earnings down, went on to trail SPY by 11 to 13 points over the next
+   year against roughly level for the others; in 2006-16 the same split
+   is three to four points or absent.
+4. *Getting back in sooner keeps more, in both decades, without picking
+   better.* Buying back on a close above the 10-week average tripled
+   what the rule kept of the best movers (1.4x to 4.2x; 1.5x to 3.4x)
+   and doubled the average name's growth. It did so by being in the
+   stock 63% to 70% of the time against 16% to 26%: the 26 weeks after
+   it are no better than SPY. Holding throughout still made far more
+   than any of them.
+
+**Scored against the predictions.** (1) Half: the market differentiates
+in both decades as the stock's fall less SPY's, not as SPY 10% under its
+high. (2) Missed: the depth of the MACD line differentiates. (3) Mostly
+held: the EPS measures add up to nine points, short of the line; but
+the run of beats did as much as any of them. (4) Half: the new high
+comes last and fails least, the MACD cross fails most, but it is not the
+soonest. (5) Half: no way clears the line; the 10-week average, not the
+new high, adds most to the best movers.
+
+**What it means.** A rule worth testing in the ten-slot book has now
+been described from his question, and it has two halves. *Do not sell,
+or buy straight back, when the fall was the market's.* *After a sale
+for the stock's own fall, come back on a close above the 10-week
+average unless the MACD line is deeply negative*, with a run of beats
+and quickening sales as tie-breakers. Every part of that was read off
+these two decades, so it goes to a registered test in ten slots with
+the market rule, and then to the forward ledger; it is not a finding
+yet.
+
+## Pass 57 -- the way back in, tested in the ten-slot book over thirty years (registered 2026-11-21 before any run)
+
+Pass 56 read a two-part rule off the sales of 2006 to 2026. The owner,
+2026-11-21: "Let's run it!" Lab only.
+
+**The base book** is Pass 53's with the two corrections found since: a
+channel counts after 8 weeks (Pass 54) and there is no price floor
+(Pass 55). Ten slots, equal weights, top 500 by size, the highest
+quality score first, sold on a weekly close 20% under its high, no new
+buys while SPY is under its 40-week average. Weekly bars from 1994, so
+the books run from early 1996.
+
+**The two halves, with their numbers fixed here from Pass 56's fifths
+(which agreed across its two decades to within a point).**
+- *Half one, whose fall it was.* When a held name closes 20% under its
+  high, measure its fall from that high less SPY's change over the same
+  weeks. **If the stock has fallen less than 13.5 points more than SPY,
+  the fall is the market's and it is not sold.** It is sold on the
+  first later close that is 20% under the high and 13.5 points or more
+  beyond SPY.
+- *Half two, the way back.* A name sold may be bought back within 52
+  weeks on **a weekly close above its 10-week average**, provided that
+  on the day it was sold its **weekly MACD line was not below -2% of
+  its price** (the deeply negative fifth). It takes a free slot ahead
+  of new names from the screen, most recently sold first, under the
+  same market rule, and its high for the 20% exit starts again from the
+  price it is bought back at.
+The fundamentals are left out: none cleared Pass 56's line, and their
+history does not reach before 2002 (earnings) or 2010 (sales).
+
+**Five books:** the base; half one only; half two only; **both**; and
+half two without the MACD proviso, to see whether the proviso does
+anything.
+
+**Periods.** *1996-07 to 2006-10*: no sale in these years was in Pass
+56, so this is the rule on history that did not write it. *2006-11 to
+2016-11* and *2016-11 to 2026-11*: the two decades it was read from.
+And every five-year window, by when it starts.
+
+**Benchmarks.** SPY; the pool (every top-500 member, equal weight); 100
+random books for each book, filling slots at random from the screen
+with the same halves in force.
+
+**Verdict lines (fixed).** *The rule earns its place* if "both" beats
+the base by 1.5 points a year or more of compound return in each of the
+three periods, with a largest drawdown over the thirty years no more
+than five points deeper. *Holds up on unseen history*: the 1996-2006
+part of that alone. *Beats the S&P 500*: "both" above SPY in each of
+the three periods, in 60% or more of all five-year windows, and in more
+than half of the windows that start from 2016.
+
+**Limits.** The two later decades are where the rule was found; only
+1996-2006 is a test. The list is names alive today, thirty years of
+survivor bias in the books and the pool alike. Ten names is noisy: Pass
+54 showed the same rules eight points a year apart over three years
+from a different start. Half one keeps names through market falls by
+design, so a deeper drawdown is expected and is part of what is being
+judged.
+
+**Predictions.** (1) "Both" beats the base in 2016-26, where it was
+fitted, by two points or more. (2) On 1996-2006 it beats the base by
+less than 1.5 points: it does not hold up by the line. (3) Half one
+deepens the thirty-year drawdown by more than five points (it holds
+through 2000-02 and 2008). (4) Half two adds more than half one. (5)
+The MACD proviso changes the result by less than half a point a year.
+(6) "Both" still trails SPY in 2016-26, by less than the base does.
+
+    python lab/pass57_way_back_book.py          # full run
+    python lab/pass57_way_back_book.py smoke    # plumbing: 300 names
+
+## Pass 57 results -- the two-part rule does not earn its place: buying back hurts in every period once slots are scarce, and not selling market falls helps two decades and costs the one with 2008 in it
+
+Run 2026-11-21, `lab/results/pass57_way_back_book.json`. 1,604 weeks
+from 1996-02, ten slots, top 500, 3,004 names.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown |
+|---|---|---|---|---|---|---|
+| base | 16.4% | 14.1% | 9.9% | **13.7%** | 0.90 | -31.8% |
+| half one: market falls not sold | 19.7% | 8.7% | 13.9% | 14.4% | 0.89 | -32.1% |
+| half two: back above the 10-week average | 16.8% | 10.0% | 10.4% | 12.7% | 0.85 | -36.5% |
+| **both** | 16.8% | 7.4% | 12.1% | 12.4% | 0.79 | -34.7% |
+| half two without the MACD proviso | 14.0% | 7.9% | 8.9% | 10.6% | 0.81 | -26.9% |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% |
+
+The same comparison on the median of each book's 100 random books,
+which takes out the luck of which ten names the scored book held:
+
+| Book | Unseen | 2006-16 | 2016-26 | Everything |
+|---|---|---|---|---|
+| base | 13.0% | 11.4% | 10.3% | 11.5% |
+| half one | 13.2% | 10.2% | 13.6% | 12.3% |
+| half two | 12.1% | 8.8% | 10.1% | 10.2% |
+| both | 12.9% | 9.2% | 13.5% | 11.9% |
+| half two without the MACD proviso | 11.8% | 9.6% | 9.4% | 10.4% |
+
+Five-year windows that beat SPY, by when they start (1996-2007 /
+2008-2015 / 2016 on): base 24 of 24, 15 of 16, 0 of 12; half one 24, 7,
+4; half two 24, 14, 0; both 24, 5, 6; without the proviso 24, 6, 0.
+Half one declined about 16 sales a year; half two bought back about
+four names a year.
+
+**Against the lines.**
+- *The rule earns its place:* **no.** "Both" against the base is +0.4
+  points a year on the unseen decade, **-6.7** on 2006-16 and +2.2 on
+  2016-26; -1.3 over the thirty years, with a drawdown three points
+  deeper.
+- *Holds up on unseen history:* no, +0.4 against a line of 1.5.
+- *Beats the S&P 500:* no. 12.1% against 15.4% in 2016-26, and 6 of 12
+  windows from 2016.
+
+**What happened.**
+1. *Buying back does not survive scarce slots.* Traded one name at a
+   time in Pass 56, coming back above the 10-week average kept three
+   times as much of the winners. In a book of ten, a slot given back to
+   a name just sold is a slot not given to a fresh name from the
+   screen, and the fresh names were better: half two is behind the base
+   in all three periods on the random books' medians (-0.9, -2.6, -0.2).
+   Pass 56 said as much (no way back in was followed by better returns
+   than the screen's) and I under-weighted it.
+2. *The MACD proviso matters more than I expected.* Taking it away
+   costs another two points a year. Refusing to buy back names sold
+   with a deeply negative MACD line is the one part of half two that
+   does its job.
+3. *Not selling market falls is a real trade, not a free one.* It adds
+   3.3 points on the unseen decade and 4.0 on the last one, and costs
+   5.4 on 2006-16, where it carried names down through 2008 (-22%
+   against -14% that year, and a decade drawdown of -32% against -21%).
+   On the random books' medians it is +0.2, -1.2 and +3.3. It is the
+   only change here that helps on history that did not write it, and
+   the only one that gives the book any five-year windows over SPY
+   after 2016.
+4. *The base book with its two corrections is the best thing on the
+   page.* 13.7% a year over thirty years against 10.1% for SPY and
+   11.5% for its pool, Sharpe 0.90, largest drawdown -31.8% against
+   -54.6%, 94th percentile of its random books. It still has not won a
+   five-year window that starts after 2015.
+5. *How much of any one line is luck.* The scored base book is at the
+   94th percentile of its random books in 2006-16 and "both" at the
+   14th; their random medians differ by two points where the scored
+   books differ by seven. Differences between ten-name books of less
+   than about three points a year in one decade should not be read.
+
+**Scored against the predictions.** (1) Held: +2.2 in 2016-26. (2)
+Held: +0.4 on the unseen decade. (3) Half: the thirty-year drawdown is
+no deeper, but the 2006-16 one is by eleven points. (4) Missed: half
+one adds, half two subtracts. (5) Missed: the proviso is worth two
+points a year. (6) Held: 3.3 points behind SPY against 5.5.
+
+**What it means.** The way back in is closed as a book rule: no further
+passes on re-entry triggers. What is left open is narrower and is half
+one alone, whose cost is one event. Whether a market-fall hold should
+give way once SPY itself is under its 40-week average (the book's own
+cold-market test) is the obvious repair, and it would be fitted to
+2008 unless it is registered against the unseen decade too. Not a
+candidate for production; nothing here changes the forward ledger.
+
+## Pass 58 -- five ideas of mine, one change each to the base book (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "let's throw some of your ideas at the wall too.
+I'm flexible on anything!" Lab only. Throwing ideas at a wall is how a
+lab fools itself, so the list is fixed here, it is short, each idea is
+one change to Pass 57's base book and nothing else, and the count is on
+the record: **five ideas, this is the only run.**
+
+**The base book** (Pass 57): ten slots, equal weights, top 500, a
+channel counting after 8 weeks, no price floor, the highest quality
+score first, sold 20% under its high, no new buys while SPY is under
+its 40-week average. 1996 to 2026.
+
+**The ideas, and where each comes from.**
+1. *Idle slots hold SPY, not cash.* The book is 90% invested and its
+   empty slots are empty mostly after falls, which is when SPY's
+   recoveries start (Pass 51, Pass 54: the books lost the years the
+   market ran without them). The yardstick is SPY; cash is a bet
+   against it.
+2. *Pick the jumpiest, not the tidiest.* The quality score picks no
+   better than chance (Passes 52 to 54). The one trait that marked the
+   best movers in both decades was a large weekly swing (Pass 55). Free
+   slots go to the screen names with the largest weekly swing.
+3. *Pick the strongest.* Free slots go to the screen names with the
+   highest return over the past year, leaving out the latest four
+   weeks: the momentum rank from the published literature, which the
+   lab has never used inside the channel screen.
+4. *Hold through a market fall, but only in a warm market.* Half one of
+   Pass 57 (do not sell when the stock has fallen less than 13.5 points
+   more than SPY) helped two decades and cost the one with 2008 in it.
+   Here the hold gives way, and the name is sold, whenever SPY is under
+   its 40-week average.
+5. *Buy only companies that have been beating their estimates.* A run
+   of beats leaned the right way in both of Pass 56's decades. A new
+   buy needs three or more beats in its last four reports. Earnings
+   history starts in 2002 and covers the 1,151 names that were ever top
+   500 since 2006, so this book runs from 2006-11 only, against a base
+   book started the same day. **It has no unseen decade and cannot
+   pass; it is here to see whether it is worth getting more history
+   for.**
+
+**Periods.** Unseen 1996-07 to 2006-10 (none of these ideas was read
+off those years, though idea 4's threshold was not either), 2006-11 to
+2016-11, 2016-11 to 2026-11.
+
+**Lines (fixed), built on what Pass 57 showed about luck.** For the two
+changes of structure (1 and 4): the median of the idea's 100 random
+books beats the median of the base's by **one point a year or more in
+each of the three periods**, with the scored book's thirty-year
+drawdown no more than five points deeper. For the two changes of
+picking (2 and 3), where the random books are the same as the base's:
+the scored book is **at or above the 75th percentile of the random
+books in each of the three periods**. An idea that clears its line
+earns a place on the forward ledger, not in production.
+
+**Limits.** As Pass 57: names alive today, ten names, and the two later
+decades are the ones every earlier pass has stared at.
+
+**Predictions.** (1) SPY in idle slots adds about a point in 2016-26
+and on the unseen decade, costs in 2006-16, and deepens the drawdown by
+more than five points: it fails. (2) The jumpiest picks make more over
+thirty years with a drawdown ten points deeper, and miss the 75th
+percentile in at least one period. (3) The strongest picks land between
+the 50th and 80th percentile; one period under 75. (4) The warm-market
+hold beats half one in 2006-16 and clears the one-point line in two
+periods of three, not all. (5) The beats rule is worth under a point a
+year. So I expect none of the five to clear its line.
+
+    python lab/pass58_five_ideas.py          # full run
+    python lab/pass58_five_ideas.py smoke    # plumbing: 300 names
+
+## Pass 58 results -- none of the five clears its line; two of them beat SPY in the last decade and each fails a different decade
+
+Run 2026-11-21, `lab/results/pass58_five_ideas.json`. 1,604 weeks from
+1996-02, ten slots, top 500. Compound return a year, with the scored
+book's percentile among the random books in brackets for the two
+picking ideas.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Five-year windows from 2016 over SPY |
+|---|---|---|---|---|---|---|---|
+| base | 16.4% | 14.1% | 9.9% | 13.7% | 0.90 | -31.8% | 0 of 12 |
+| 1 idle slots hold SPY | 17.6% | 13.8% | 14.1% | 15.4% | 0.87 | -45.1% | 7 of 12 |
+| 2 the jumpiest picks | 15.9% (99) | 9.7% (31) | 24.3% (100) | 17.1% | 0.73 | -72.0% | 10 of 12 |
+| 3 the strongest picks | 13.9% (91) | 11.0% (50) | 19.4% (100) | 15.2% | 0.71 | -52.0% | 5 of 12 |
+| 4 hold a market fall, warm market only | 16.7% | 13.9% | 10.6% | 14.0% | 0.92 | -30.8% | 0 of 12 |
+| (half one of Pass 57) | 19.7% | 8.7% | 13.9% | 14.4% | 0.89 | -32.1% | 4 of 12 |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% | |
+
+Medians of the random books, for the two changes of structure: base
+12.5% / 12.0% / 9.9% (11.3% over everything); idle slots hold SPY 14.0%
+/ 11.0% / 13.5% (12.7%); warm-market hold 12.9% / 10.8% / 9.8% (11.3%).
+
+From 2006-11 only: base 12.9% then 9.9%; buys need three beats in four
+11.8% then 10.1% (random medians 11.1% and 10.0% against 10.9% and
+9.8%).
+
+**Against the lines.**
+1. *Idle slots hold SPY:* **no.** On the random medians +1.5, -1.0 and
+   +3.6 points; the line needs a point in each. The thirty-year drawdown
+   is 13 points deeper.
+2. *The jumpiest picks:* **no.** 99th, 31st and 100th percentile; the
+   line needs the 75th in each.
+3. *The strongest picks:* **no.** 91st, 50th and 100th.
+4. *Warm-market hold:* **no.** +0.4, -1.2 and -0.1 on the medians.
+   Letting the hold give way in a cold market takes away what half one
+   cost in 2008 and what it earned everywhere else: the book is the
+   base book again.
+5. *Three beats in four:* not judged, and not worth more history. It
+   changed nothing in either decade it could be run on.
+
+**What happened.**
+1. *SPY in the idle slots is exposure, not skill, and it is the plainest
+   answer to "why does the book lose to SPY lately".* The book is 10%
+   in cash on average, bunched after falls. Putting that in SPY is
+   worth 1.4 points a year over thirty years on the random medians and
+   takes the last decade from 9.9% to 14.1% against SPY's 15.4%, at the
+   price of 2008: the drawdown goes from -32% to -45%. It fails the
+   line because it was written to demand a gain in every decade, and
+   the gain here is bought with risk.
+2. *How the ten are picked matters after all, enormously and
+   unreliably.* Taking the jumpiest or the strongest names from the
+   same screen made 24.3% and 19.4% a year in the last decade, the best
+   of 100 random books both times and well over SPY, and was near the
+   top on the unseen decade too. In 2006-16 the same rules were
+   ordinary (31st and 50th percentile), and the jumpiest book lost 72%
+   in 2000-02 and turned over every two weeks. The quality score is the
+   reverse case: steady and unremarkable. This is Pass 55 again in a
+   book: the winners are jumpy, and so are the wrecks.
+3. *Thirty-year return and thirty-year ride pull opposite ways.* Every
+   idea that raised the return over the base (1, 2, 3) lowered Sharpe
+   and deepened the drawdown. The base remains the best ride on the
+   page.
+
+**Scored against the predictions.** (1) Held, with a drawdown 13 points
+deeper. (2) Held on return and on missing a period; the drawdown is 40
+points deeper, not ten. (3) Half: one period under the 75th percentile,
+but the other two far above the range I gave. (4) Half: it beats half
+one in 2006-16, and clears the one-point line in none of three periods,
+not two. (5) Held. And the summary held: none clears its line.
+
+**What it means.** Nothing here goes to the forward ledger by the lines
+as written. Two things are worth knowing all the same, and neither is
+a claim of an edge. First, the base book's shortfall against SPY since
+2016 is mostly idle cash and equal weights (Pass 54), not bad picking.
+Second, picking by swing or strength is where the large numbers are and
+where the large losses are; whether there is a version that keeps the
+first without the second is a question about the exit for jumpy names,
+and it would have to be asked of the unseen decade and 2000-02 first,
+not of 2016-26.
+
+## Pass 59 -- trend strength and sector rotation inside the ten-slot book (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "I feel like our weekly synthesis has been really
+good with the type of market. I think we are underutilizing the trend
+strength and sector rotation." His first statement of the chart idea was
+the same three layers: "the general market trend, sector trend and then
+stock trend". Lab only.
+
+**What can and cannot be tested.** The weekly synthesis is written each
+Saturday and has existed for a few months; there is no history of it to
+replay, so its judgement of the market is not what is tested here. What
+is tested is the arithmetic it reads (`data/market_state.json` carries
+each sector fund's 13-week return and SPY's), rebuilt for thirty years
+from the lab's own bars. Earlier passes on these layers: the chart stack
+of Pass 38 (only the market layer helped) and the top four sectors of
+Pass 47 (8.7% against 8.4% with no rule), both on books that bought the
+whole screen from 2008. Neither was the ten-slot book, and neither saw
+1996 to 2006.
+
+**The measures, fixed here.**
+- *Sector strength:* each of the eleven sectors' return over the last 13
+  weeks, as the average of its top-500 members (sector funds do not go
+  back to 1996, and two are younger than 2016). *Leading* is the top
+  four that week, *lagging* the bottom four.
+- *A stock's trend strength:* its rank among that week's screen names on
+  return over 4, 13, 26 and 52 weeks, the four ranks averaged. His
+  "trend strength over ... 1 week, 1 month, 1 year", on the spans weekly
+  bars allow.
+- *A strong market:* SPY above its 40-week average, that average higher
+  than 13 weeks before, and 60% or more of the top 500 above their own
+  40-week averages. *Cold* is SPY under its 40-week average, as in every
+  book since Pass 52. Anything else is *mixed*.
+
+**Six books, one change each to Pass 57's base book** (ten slots, 20%
+exit, no new buys in a cold market, the highest quality score first):
+1. *Leading sectors only:* a new buy must be in one of the four leading
+   sectors.
+2. *No lagging sectors:* a new buy may not be in one of the four lagging
+   sectors.
+3. *Sector first:* free slots go to screen names in order of their
+   sector's strength, quality score second.
+4. *Stock trend strength:* free slots go to the screen names with the
+   highest trend strength.
+5. *Trend strength in a strong market, quality otherwise.*
+6. *All three layers:* leading sectors only, and trend strength picks
+   the names. His stack.
+
+**Line (fixed), one for all six.** The book is **at or above the 75th
+percentile of the base book's 100 random books in each of the three
+periods** (unseen 1996-07 to 2006-10; 2006-11 to 2016-11; 2016-11 to
+2026-11), with a thirty-year largest drawdown no more than ten points
+deeper than the base's. Six ideas, one run; by chance alone about one
+run in ten would see one of them pass. For the three gated books the
+median of their own random books is reported beside the base's, which
+shows what the gate does apart from the picking.
+
+**Limits.** As Passes 57 and 58. Sector labels are today's, from two
+sources merged, applied to the whole thirty years; a company that
+changed its business is in the wrong sector early on. A sector's
+strength here is its large members equally weighted, not the fund the
+synthesis reads.
+
+**Predictions.** (1) Leading sectors only: its own random books beat the
+base's by about a point overall and not in every period; the scored
+book misses the 75th percentile in at least one. (2) No lagging sectors
+changes little: within half a point on the random medians. (3) Sector
+first lands in the middle, like the quality score. (4) Stock trend
+strength behaves like Pass 58's strongest picks: at the top in 2016-26
+and on the unseen decade, ordinary in 2006-16, with a deeper drawdown.
+(5) Switching by market strength is the best of the six on ride and
+still misses a period. (6) His stack is the most concentrated and the
+most erratic. I expect none to clear the line, with 5 the closest.
+
+    python lab/pass59_trend_and_sectors.py          # full run
+    python lab/pass59_trend_and_sectors.py smoke    # plumbing: 300 names
+
+## Pass 59 results -- stock trend strength is the first picker to top the random books in all three periods; "no lagging sectors" clears the line; the leading-sectors gate and the market switch do not
+
+Run 2026-11-21, `lab/results/pass59_trend_and_sectors.json`. 1,604 weeks
+from 1996-02, ten slots, top 500. The market was cold in 24% of weeks
+and strong in 62%. The four leading sectors changed 32 times a year.
+
+Compound return a year, with the book's percentile among the base
+book's 100 random books in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Line |
+|---|---|---|---|---|---|---|---|
+| base | 16.4% (91) | 14.1% (92) | 9.9% (44) | 13.7% | 0.90 | -31.8% | |
+| 1 leading sectors only | 14.6% (81) | 14.0% (92) | 7.4% (9) | 12.0% | 0.77 | -42.1% | no |
+| **2 no lagging sectors** | 18.2% (98) | 15.6% (99) | 12.2% (80) | **15.4%** | **0.97** | -32.4% | **clears** |
+| 3 sector first | 19.7% (100) | 11.7% (52) | 7.2% (8) | 12.9% | 0.84 | -42.8% | no |
+| **4 stock trend strength** | 21.9% (100) | 13.9% (99) | 16.5% (100) | **17.7%** | 0.82 | -47.1% | percentiles yes, drawdown no |
+| 5 trend strength in a strong market only | 17.1% (96) | 9.5% (20) | 8.6% (29) | 12.1% | 0.72 | -34.0% | no |
+| **6 all three layers** | 16.8% (98) | 15.0% (99) | 14.8% (99) | 15.6% | 0.81 | -44.9% | percentiles yes, drawdown no |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% | |
+
+What each gate does apart from the picking, as the median of its own
+random books against the base's (12.8% / 11.8% / 10.2%; 11.6% over
+everything): leading sectors only 13.6% / 11.4% / 9.0% (11.4%); no
+lagging sectors 14.4% / 11.1% / 9.4% (11.6%).
+
+Five-year windows from 2016 that beat SPY: base 0 of 12; stock trend
+strength 3; all three layers 6; the others 0.
+
+**Against the line** (75th percentile of the base's random books in
+each period, thirty-year drawdown no more than ten points deeper than
+the base's -31.8%).
+- *No lagging sectors* **clears it**: 98th, 99th and 80th percentile,
+  drawdown -32.4%.
+- *Stock trend strength* is at the 100th, 99th and 100th percentile and
+  **fails on the drawdown**, -47.1%, fifteen points deeper.
+- *All three layers* is at the 98th, 99th and 99th and **fails on the
+  drawdown**, -44.9%.
+- *Leading sectors only*, *sector first* and *the market switch* miss a
+  period each, by a wide margin.
+
+**How to read it.**
+1. *The owner is right about trend strength, and I was wrong.* Ranking
+   the screen by a stock's return over 4, 13, 26 and 52 weeks together
+   is the first way of picking the ten, in any pass, to sit at the top
+   of the random books in all three periods, the unseen decade among
+   them: 17.7% a year over thirty years against 13.7% for the quality
+   score and 11.6% for random picks from the same screen. Pass 58's
+   one-year strength alone was ordinary in 2006-16 (50th percentile);
+   the four spans together were not (99th). It is also the only single
+   change that put the last decade over SPY (16.5% against 15.4%).
+2. *Its price is the drawdown.* -47% against -32%, set in the unseen
+   decade (2000-02). It turns over half again as often (14 buys a year
+   against 8). It fails the line as written, and the line was written
+   that way for a reason: a rule that makes four points more and falls
+   fifteen further is a different risk, not a free improvement.
+3. *Sector rotation helps as a filter on the weak, not as a hunt for
+   the strong.* Buying only from the four leading sectors made the book
+   worse (the leaders change 32 times a year: this is chasing).
+   Refusing the four lagging sectors made it better in every period at
+   no cost in drawdown. A caution that belongs with it: the gate's own
+   random books are no better than the base's over the thirty years
+   (11.6% both), so the gain shows up with the quality score's picks
+   and not with random ones. That is the pattern a lucky path would
+   leave, and the base book was already at the 91st and 92nd percentile
+   in two of the three periods before the gate was added.
+4. *Switching by the market's strength was the wrong way to use it.*
+   Trend strength in strong markets and the quality score otherwise did
+   worse than either alone (20th and 29th percentile in the last two
+   decades). Trend-strength picks earned their keep in mixed markets
+   too.
+5. *His three layers together work about as well as the stock layer
+   alone and no better.* 98th to 99th percentile in every period, 15.6%
+   a year, with the leading-sectors gate taking two points off what
+   trend strength makes by itself.
+
+**Scored against the predictions.** I predicted none would clear the
+line and one did. (1) Half: the scored book missed a period, but the
+gate's random books did not beat the base's. (2) Held on the random
+medians overall, and missed on the result: it cleared the line. (3)
+Missed: sector first was erratic, not middling. (4) Half: at the top in
+two periods and deeper in drawdown as predicted, but at the 99th in
+2006-16, where I expected ordinary. (5) Missed badly: I had the market
+switch as the best of the six and it was among the worst. (6) Missed:
+his stack was the steadiest of the six, not the most erratic.
+
+**What it means.** By the registration, "no lagging sectors" earns a
+place on a forward ledger, with the caution in point 3 attached. Stock
+trend strength does not, on drawdown alone, and it is the result to
+take seriously: the open question is no longer what to pick but how to
+hold trend-strength picks through a 2000-02 without giving up fifteen
+points. That is one question, to be registered against the unseen
+decade, and it is not answered by anything in this pass. Six ideas were
+run here and five in Pass 58; two of eleven have now passed or all but
+passed, which is more than chance would give and not so many that the
+counting can be dropped. Not a candidate for production.
+
+## Pass 60 -- a 20% rule that tightens: with time held, and with the position's weight (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "What if the 20% rule tightened over time?
+Stricter selling for higher weights". Lab only. It is also the question
+Pass 59 left open: stock trend strength picks better than anything else
+tried and falls 47% at worst against 32%; how are such picks to be held.
+
+**A change of bookkeeping first, because his idea needs it.** Every
+ten-slot book so far has counted each name as a tenth of the book every
+week, which is a book rebalanced to equal weights weekly at no cost. In
+such a book no position is ever "higher weight". Here **positions
+drift**: a name is bought with an equal share of the cash on hand
+(cash divided by the empty slots), and then grows or shrinks with its
+price until it is sold. A winner becomes a large part of the book, as
+it would in an account. All books in this pass, the flat-20% ones
+included, are kept this way, so their figures will differ from Passes
+57 to 59.
+
+**The exits, fixed here.**
+- *flat*: sold on a weekly close 20% under its high.
+- *tightens with time*: 20% when bought, two points tighter for every 13
+  weeks held, to a floor of 10% (reached after 65 weeks).
+- *tightens with weight*: 20% while the position is a tenth of the book
+  or less; above that, 0.8 of a point tighter for every point of weight,
+  to a floor of 10% (16% at a 15% weight, 12% at 20%, the floor from
+  22.5%).
+- *both*: whichever is tighter.
+
+**Eight books:** the four exits on the quality score's picks, and on
+stock trend strength's picks (Pass 59's idea 4). Ten slots, top 500, no
+new buys in a cold market, 1996 to 2026.
+
+**Lines (fixed).**
+- *A tightening helps* if, for the same picks against the flat exit, the
+  thirty-year largest drawdown is shallower by five points or more, the
+  thirty-year return is not lower by more than a point a year, and no
+  one of the three periods is lower by more than a point and a half.
+  Judged for each of the two sets of picks, and reported beside the
+  same comparison on the medians of 100 random books for each exit,
+  which is the steadier reading.
+- *Trend strength earns its place* with a given exit if the book is at
+  or above the 75th percentile of the flat exit's random books in each
+  of the three periods **and** its thirty-year drawdown is no more than
+  ten points deeper than the flat quality book's. This is Pass 59's
+  line, moved to the new bookkeeping.
+
+**Limits.** As Passes 57 to 59. Eight more books on the same thirty
+years, six of them new: the count of ideas tried since Pass 58 goes to
+seventeen. The numbers of the two tightenings (two points a quarter,
+0.8 a point, the 10% floor) are first guesses, not fitted; if one works,
+its neighbours have to work as well before it means anything.
+
+**Predictions.** (1) Tightening with time lowers the return by more than
+a point a year: the money in these books is made in the long holds,
+and this cuts them. It does not help. (2) Tightening with weight cuts
+the trend-strength book's drawdown by five points or more, because its
+2000-02 loss sat in a few names that had grown large, at a cost of one
+to two points a year: on the line, more likely just outside it. (3) On
+the quality picks neither does much. (4) Letting positions drift
+raises the flat trend-strength book's return and its drawdown against
+Pass 59's figures. (5) Trend strength does not earn its place with any
+of the four exits; weight-tightening comes closest.
+
+    python lab/pass60_tightening_exit.py          # full run
+    python lab/pass60_tightening_exit.py smoke    # plumbing: 300 names
+
+## Pass 60 results -- tightening the 20% rule does not help, by time or by weight; the trend-strength book's big fall is made of buying, not of holding
+
+Run 2026-11-21, `lab/results/pass60_tightening_exit.json`. 1,604 weeks
+from 1996-02, ten slots, top 500, positions drifting. Compound return a
+year, percentile among the flat exit's 100 random books in brackets.
+
+| Picks | Exit | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Buys a year |
+|---|---|---|---|---|---|---|---|---|
+| quality | flat | 17.5% (91) | 13.1% (76) | 8.7% (38) | 13.4% | 0.85 | -33.6% | 8 |
+| quality | tightens with time | 19.0% | 9.5% | 5.9% | 11.8% | 0.74 | -36.2% | 14 |
+| quality | tightens with weight | 14.8% | 15.4% | 10.4% | 13.9% | 0.88 | -36.2% | 9 |
+| quality | both | 17.4% | 9.6% | 7.0% | 11.6% | 0.73 | -36.4% | 14 |
+| trend strength | flat | 21.2% (100) | 14.8% (100) | 17.6% (100) | **18.1%** | 0.81 | **-52.9%** | 14 |
+| trend strength | tightens with time | 18.3% (100) | 8.2% (11) | 20.9% (100) | 16.0% | 0.71 | -53.5% | 20 |
+| trend strength | tightens with weight | 22.0% (100) | 12.7% (85) | 20.5% (100) | 18.6% | 0.82 | -51.0% | 15 |
+| trend strength | both | 21.9% (100) | 9.1% (29) | 20.1% (100) | 17.2% | 0.76 | -52.9% | 20 |
+| SPY | | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+Medians of 100 random books for each exit (return over everything /
+largest drawdown): flat 11.2% / -37.0%; tightens with time 11.6% /
+-35.2%; tightens with weight 10.9% / -36.3%; both 12.0% / -35.0%. By
+period the time rule's random books are +1.9, -2.7 and +1.6 points
+against the flat ones.
+
+The largest position in any book peaked at 24% to 49% of the book and
+was typically 15% to 16%.
+
+**Against the lines.**
+- *A tightening helps:* **no**, for either set of picks or on the
+  random books. No tightening makes the thirty-year drawdown five
+  points shallower; the most is two (trend strength, by weight), and
+  the time rule costs two points a year on both sets of picks.
+- *Trend strength earns its place:* **no.** At the 100th percentile in
+  all three periods with the flat exit, and nineteen points deeper in
+  drawdown than the quality book, with every exit.
+
+**Where the 53% went** (diagnostic of the flat trend-strength book, same
+rules and data with the trades printed; not a new test). The fall runs
+148 weeks, from the week ending 2000-03-10 to 2003-01-10, while SPY
+fell 31%. It is not one collapse. In those weeks the book made **59 new
+buys and 67 sales; two thirds of the sales were at a loss, a median 9%
+down after a median six weeks held.** 42 of the buys were in 2000,
+before the market turned cold (it was cold in 78% of the weeks, which
+is why there are none in 2001), and 30 of the 59 were technology
+names; eight of the ten names held at the peak were technology. The
+quality book's worst fall is the same event, over in eleven weeks: 28
+buys, 23 of them technology.
+
+**How to read it.**
+1. *The owner's idea was aimed at the wrong half of the trade, and so
+   was mine.* A tighter stop guards against a position that is held too
+   long or has grown too large. The book's worst years were not that:
+   no position was over a third of the book, and names were being sold
+   after six weeks. The loss is the stop working as designed, twenty
+   percent at a time, on a stream of new buys in a market that had
+   stopped rewarding them.
+2. *Tightening with time is plainly wrong for these books.* It sells
+   the long holds, where the money is, and turns the book over half
+   again as fast.
+3. *Tightening with weight is harmless and nearly useless.* It trims
+   concentration (the largest position ever, 24% against 39% in the
+   quality book) and changes return and drawdown by less than the
+   noise.
+4. *Letting positions drift did not change the picture.* Trend strength
+   makes 18.1% a year against 17.7% under weekly equal weights and is
+   still at the top of the random books in every period.
+5. *One year carries a lot of the thirty-year figure.* The trend book
+   made 206% in 1999. Without that year its thirty-year return is about
+   14.4% against about 12.4% for the quality book: still two points
+   ahead, and still at the 100th percentile in the two later periods,
+   but the 18% is not the number to carry around. It is also lumpy
+   year to year (2024 +78%, 2021 +4% against SPY's +30%, 2023 +4%
+   against +26%).
+
+**Scored against the predictions.** (1) Held: the time rule costs two
+points a year. (2) Missed: the weight rule cut the drawdown by two
+points, not five, because the loss was never in a few large names. (3)
+Held. (4) Held: 18.1% and -52.9% against 17.7% and -47.1%. (5) Held on
+the verdict, and wrong about why weight-tightening would come closest.
+
+**What it means.** The exit is not where the trend-strength book's
+drawdown can be fixed. If it can be fixed it is on the buying side, and
+the diagnostic names two candidates: a limit on how many of the ten may
+come from one sector, and a pause on new buys after a run of losing
+sales. Both are now suggested by 2000-02 itself, which was this lab's
+unseen decade until this pass looked inside it; a test of either has
+to be judged on what it costs in the other two decades, not on what it
+saves in that one. Count of ideas tried since Pass 58: seventeen.
+
+## Pass 61 -- a sector cap, and cash as a position (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "Let's do the sector cap and let cash be a
+position too." Lab only. Pass 60's diagnostic found the trend-strength
+book's 53% fall of 2000-03 was made of 59 new buys, 30 of them
+technology, two thirds sold at a loss within weeks.
+
+**The book.** Pass 60's flat trend-strength book: ten slots, positions
+drifting, top 500, the screen ranked by stock trend strength, sold 20%
+under its high, no new buys in a cold market.
+
+**The changes, fixed here.**
+- *Sector cap:* a new buy is refused if the book already holds **three**
+  names from its sector. The slot goes to the next name down the ranking
+  from another sector.
+- *Cash as a position*, in the two forms the words can mean:
+  - *the best or nothing*: a free slot may only take one of the **ten
+    highest-ranked** names on the screen that week. If those are held
+    already, or refused by the cap, the slot stays in cash. The book
+    does not reach down the list to stay full.
+  - *a pause*: after **three sales in a row at a loss**, no new buys for
+    **eight weeks**. Sales go on as usual, so the book drains to cash.
+
+**Books.** The base; the cap alone; best-or-nothing alone; the pause
+alone; cap with best-or-nothing; cap with the pause; all three. Beside
+them, so that no single number is trusted: the cap at two and at four,
+the pause at four and at thirteen weeks, and the cap of three on the
+quality score's picks.
+
+**Lines (fixed).** 2000-03 suggested these changes, so saving that
+drawdown proves nothing by itself. A change **earns its place** on the
+trend-strength book if all four hold:
+1. the thirty-year largest drawdown is no more than ten points deeper
+   than the flat quality book's (-33.6% in Pass 60), so -43.6% or
+   shallower;
+2. the book is still at or above the 75th percentile of the base's
+   random books in each of the three periods;
+3. in each of the two later decades, which did not suggest it, its
+   compound return is no more than a point and a half a year under the
+   uncapped trend-strength book's;
+4. its neighbours agree: for the cap, two and four both give a
+   drawdown at least five points shallower than the base's; for the
+   pause, four and thirteen weeks likewise.
+
+**Limits.** As Pass 60. Sector labels are today's, applied to thirty
+years. Count of ideas tried since Pass 58 goes to twenty-three.
+
+**Predictions.** (1) The cap alone cuts the drawdown by five to eight
+points, to about -46%: not enough for line 1. (2) The cap costs two
+points a year or more in 2016-26, where three or more technology names
+at once was the winning position: it fails line 3. (3) The pause cuts
+the drawdown more than the cap does, to about -42%, and costs under a
+point and a half in the later decades: the likeliest of the single
+changes to pass. (4) Best-or-nothing leaves the book in cash a third of
+the time and costs three points a year or more. (5) Cap with the pause
+has the shallowest drawdown and fails on line 3 because of the cap. So
+I expect the pause alone to be the one that passes, if any does.
+
+    python lab/pass61_cap_and_cash.py          # full run
+    python lab/pass61_cap_and_cash.py smoke    # plumbing: 300 names
+
+## Pass 61 results -- the sector cap cuts the drawdown at no cost in return, in step with how tight it is; the pause is noise; best-or-nothing does nothing; nothing clears all four lines
+
+Run 2026-11-21, `lab/results/pass61_cap_and_cash.json`. 1,604 weeks from
+1996-02, ten slots, positions drifting, trend-strength picks. Compound
+return a year; percentile among the base's 100 random books in
+brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Five-year windows from 2016 over SPY |
+|---|---|---|---|---|---|---|---|
+| base | 21.2% (100) | 14.8% (99) | 17.6% (100) | 18.1% | 0.81 | -52.9% | 4 of 12 |
+| **cap of three** | 20.0% (100) | 14.5% (99) | 20.2% (100) | 18.5% | 0.86 | -45.6% | 9 |
+| best or nothing | 21.2% (100) | 14.8% (99) | 17.6% (100) | 18.1% | 0.81 | -52.8% | 4 |
+| pause of eight weeks | 20.3% (100) | 10.0% (41) | 18.3% (100) | 16.4% | 0.79 | -47.1% | 8 |
+| cap of three, best or nothing | 19.8% (99) | 14.5% (99) | 19.5% (100) | 18.1% | 0.84 | -44.3% | 10 |
+| cap of three, pause of eight weeks | 17.3% (95) | 14.5% (98) | 26.3% (100) | 19.4% | 0.93 | -40.4% | 12 |
+| all three | 18.6% (99) | 15.3% (100) | 19.0% (100) | 17.9% | 0.89 | -32.6% | 10 |
+| (cap of two) | 14.8% (82) | 14.9% (99) | 20.6% (100) | 16.9% | 0.83 | -37.5% | 9 |
+| (cap of four) | 19.1% (99) | 14.2% (98) | 18.9% (100) | 17.6% | 0.82 | -51.7% | 5 |
+| (pause of four weeks) | 18.4% (99) | 10.5% (47) | 22.0% (100) | 17.1% | 0.81 | -61.5% | 9 |
+| (pause of thirteen weeks) | 23.9% (100) | 11.7% (81) | 20.2% (100) | 18.8% | 0.90 | -39.5% | 6 |
+| (quality picks, no cap) | 17.5% | 13.1% | 8.7% | 13.4% | 0.85 | -33.6% | 0 |
+| (quality picks, cap of three) | 18.1% | 12.6% | 7.5% | 12.8% | 0.82 | -36.3% | 0 |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+On 100 random books run under the same change (return over everything
+/ median largest drawdown): base 11.4% / -36.2%; cap of three 11.2% /
+-36.0%; pause 11.0% / -35.2%; cap with the pause 10.8% / -33.6%. The
+cap refused about ten buys a year; the pause stopped buying for about
+eight weeks a year.
+
+**Against the four lines** (drawdown -43.6% or shallower; 75th
+percentile in each period; no more than 1.5 points a year under the
+base in each later decade; the neighbours agree).
+
+| Book | 1 drawdown | 2 percentiles | 3 later decades | 4 neighbours | Earns its place |
+|---|---|---|---|---|---|
+| cap of three | no, -45.6% | yes | yes | no: four gives -51.7% | no |
+| best or nothing | no | yes | yes | n/a | no |
+| pause of eight weeks | no, -47.1% | no, 41st in 2006-16 | no, -4.8 points | no: four weeks gives -61.5% | no |
+| cap of three, best or nothing | no, -44.3% | yes | yes | no | no |
+| cap of three, pause of eight weeks | yes | yes | yes | no | no |
+| all three | yes | yes | yes | no | no |
+
+**How to read it.**
+1. *The cap is real, and my line was drawn a little the wrong side of
+   it.* Two, three and four names a sector give drawdowns of -37.5%,
+   -45.6% and -51.7% against -52.9% with no cap: the tighter the cap,
+   the shallower the fall, in order. The thirty-year return does not
+   pay for it (16.9%, 18.5%, 17.6% against 18.1%), and in the two later
+   decades, which did not suggest the cap, the capped books are level
+   with the base or ahead of it. That is what a change that works looks
+   like, and a cap of three still misses line 1 by two points and line
+   4 because a cap of four is too loose to matter. By the registration
+   it does not earn its place. A cap of two would have cleared lines 1
+   to 3, and it was a neighbour, not the registered book: it cannot be
+   promoted after the fact, and it gave up six points a year on the
+   unseen decade.
+2. *I predicted the cap would cost the last decade and it helped.*
+   Holding at most three technology names made 20.2% a year in 2016-26
+   against 17.6% uncapped: it took 2021 from +4% to +25% and 2023 from
+   +4% to +25%, by forcing the book into what else was working.
+3. *The pause is noise.* Four, eight and thirteen weeks give drawdowns
+   of -61.5%, -47.1% and -39.5% and three different stories about
+   2006-16. A rule whose result turns over when its one number moves
+   is measuring which names the book happened to miss. Dropped.
+4. *Best-or-nothing does nothing by itself.* One of the ten best-ranked
+   names is nearly always free to buy, so the book never sits out. It
+   only bites together with the cap.
+5. *The two books that pass lines 1 to 3 owe some of it to luck.* Cap
+   with the pause shows 26.3% a year in the last decade and 12 of 12
+   windows over SPY; "all three" shows a drawdown of -32.6%. Random
+   books under the same rules are no better than the base's (10.8%
+   against 11.4%, drawdown -33.6% against -36.2%), and both contain the
+   pause, which point 3 says not to trust.
+6. *On the quality score's picks the cap does nothing* (12.8% against
+   13.4%): those picks were never crowded into one sector for long.
+
+**What none of this can see.** The list is names alive today. A
+trend-strength book in 1999 would have held dot-com names that no
+longer exist, and they are not here to lose money in 2000-02. The 206%
+of 1999 and the 53% of 2000-03 are both survivors' figures; the true
+fall was worse by an amount this data cannot give. Every drawdown line
+in Passes 59 to 61 has been judged on a figure that is too kind, for
+this book more than for any before it.
+
+**Scored against the predictions.** (1) Held: the cap alone gives
+-45.6%. (2) Missed: it added 2.6 points in 2016-26 where I said it
+would cost two. (3) Missed: the pause cut less than the cap and cost
+4.8 points in 2006-16. (4) Missed: best-or-nothing left the book as
+invested as before. (5) Missed: cap with the pause passed line 3, and
+"all three" had the shallowest drawdown. And the pause alone did not
+pass. One of five.
+
+**What it means.** Nothing earns its place by the lines as registered,
+and the sector cap is the first change since the 8-week rule that
+behaves like a real one: ordered by its own setting, free in return,
+and no worse on the decades that did not suggest it. The trend-strength
+book with a cap of three (18.5% a year, Sharpe 0.86, -45.6%) is the
+best book this lab has produced, on survivors. Two things stand
+between it and anything more: the dead names, which need bought data,
+and time, which needs it on a forward ledger. Count of ideas tried
+since Pass 58: twenty-three. Not a candidate for production.
+
+## Pass 62 -- is "cap of three plus the pause" solid? Its neighbours and its start date (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21, on Pass 61's table: "So cap of three plus pause
+looks pretty solid." It is the best row in the table (19.4% a year,
+Sharpe 0.93, -40.4%, 26.3% a year in the last decade). Pass 61 called
+the pause noise on the strength of the pause *alone* at four, eight and
+thirteen weeks. That is not the same as testing the combination he is
+pointing at, so this pass tests it directly. Lab only.
+
+**Two questions, both about luck rather than about a new idea.**
+- *Neighbours.* The same book with the pause at four and at thirteen
+  weeks (cap of three), and with the cap at two and at four (pause of
+  eight weeks). A rule that is solid does not depend on eight being
+  eight.
+- *Start date.* A ten-name book's whole history depends on which ten it
+  happened to hold first. The cap-of-three book and the cap-plus-pause
+  book are each started 0, 13, 26 and 39 weeks late and compared over
+  the weeks all four share. If one rule is really better, it is better
+  from every start.
+
+**Lines (fixed).** The combination is *solid* if both hold:
+1. all four neighbours have a thirty-year drawdown no deeper than the
+   cap of three alone (-45.6%), a thirty-year return no more than a
+   point a year under it (so 17.5% or more), and are at or above the
+   75th percentile of the base's random books in each period;
+2. from each of the four start dates, cap-plus-pause has a shallower
+   largest drawdown than the cap alone from the same start, and a
+   return over the shared weeks no more than a point a year lower.
+If it is solid it replaces the cap alone as the book to carry forward.
+If it is not, the cap alone stands and the pause stays dropped.
+
+**Prediction.** Not solid. I expect at least one neighbour to fail line
+1 (the four-week pause most likely, on drawdown) and at least one start
+date from which the pause is worse on drawdown. I was wrong on four of
+five predictions in Pass 61, so this is worth what it is worth.
+
+    python lab/pass62_is_it_solid.py          # full run
+    python lab/pass62_is_it_solid.py smoke    # plumbing: 300 names
+
+## Pass 62 results -- not solid: three of four neighbours fail, and from three of four start dates the pause makes the drawdown deeper; the cap alone stands
+
+Run 2026-11-21, `lab/results/pass62_is_it_solid.json`. Trend-strength
+picks, ten slots, positions drifting, 1996 to 2026.
+
+**Neighbours.** Compound return a year, percentile among the base's
+random books in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Line 1 |
+|---|---|---|---|---|---|---|---|
+| cap of three (no pause) | 20.0% (100) | 14.5% (99) | 20.2% (100) | 18.5% | 0.86 | -45.6% | the yardstick |
+| **cap of three, pause of eight weeks** | 17.3% (94) | 14.5% (98) | 26.3% (100) | 19.4% | 0.93 | -40.4% | the book in question |
+| cap of three, pause of four weeks | 19.6% (99) | 11.8% (75) | 22.5% (100) | 18.1% | 0.88 | -40.9% | passes |
+| cap of three, pause of thirteen weeks | 14.4% (76) | 10.5% (44) | 21.9% (100) | 15.7% | 0.82 | -38.8% | fails: return, 2006-16 |
+| cap of two, pause of eight weeks | 13.9% (70) | 12.6% (87) | 19.6% (100) | 15.6% | 0.81 | -42.1% | fails: return, unseen |
+| cap of four, pause of eight weeks | 18.8% (98) | 8.8% (10) | 18.4% (100) | 15.5% | 0.77 | -50.2% | fails: all three |
+
+**Start dates.** Each book started 0, 13, 26 and 39 weeks late; return
+and largest drawdown over the weeks all four share.
+
+| Started | Cap of three | Cap of three with the pause | Line 2 |
+|---|---|---|---|
+| on time | 18.0% / -45.6% | 19.0% / -40.4% | passes |
+| 13 weeks late | 16.4% / -41.3% | 18.6% / -43.1% | fails: drawdown deeper |
+| 26 weeks late | 17.1% / -41.2% | 19.6% / -43.0% | fails: drawdown deeper |
+| 39 weeks late | 16.7% / -39.3% | 18.6% / -39.9% | fails: drawdown deeper |
+
+Whatever the start, the books are the same book again within the first
+decade: every start gives the identical 14.5% for 2006-16 and the
+identical figure for 2016-26. The start date changes only the years
+around 2000.
+
+**Against the lines.** *Not solid.* Line 1 fails on three neighbours of
+four; line 2 fails from three starts of four.
+
+**How to read it.**
+1. *The row the owner pointed at is the best of its neighbourhood, which
+   is what a lucky row looks like.* Move the pause to thirteen weeks or
+   the cap to two or four and the thirty-year return falls from 19.4%
+   to between 15.5% and 15.7%, under the cap alone at 18.5%. Only the
+   four-week pause holds up.
+2. *The 26.3% of the last decade is one path.* Every pause setting beat
+   no pause in 2016-26 (21.9% to 26.3% against 20.2%), which is the one
+   steady thing the pause does, and every one of them cost the unseen
+   decade (14.4% to 19.6% against 20.0%). In 2006-16 it is level at
+   eight weeks and three to four points worse at four and thirteen.
+3. *The shallower drawdown belongs to the start date, not to the
+   pause.* Started on time the pause saves five points of drawdown;
+   started a quarter, half or three quarters of a year later it costs
+   up to two. The cap alone runs from -45.6% to -39.3% across the same
+   four starts.
+4. *This run puts a number on the noise.* The same rule, cap of three,
+   makes between 16.4% and 18.0% a year with a largest drawdown between
+   -39% and -46% depending only on the quarter it started in. No
+   difference between two ten-name books smaller than about a point
+   and a half of return, or about six points of drawdown, should be
+   read as a difference between their rules.
+
+**Scored against the prediction.** Held on the verdict. I expected the
+four-week pause to be the neighbour that failed; it was the one that
+passed.
+
+**What it means.** By the registration the cap of three alone stands as
+the book to carry forward and the pause stays dropped. The trend-strength
+book with a cap of three: 18.5% a year, Sharpe 0.86, a largest drawdown
+of -39% to -46% depending on its start, on a list of survivors. Count of
+ideas tried since Pass 58: twenty-three; this pass added none.
+
+## Pass 63 -- the trend-strength book goes on a forward ledger, cap alone against cap with the pause (registered 2026-11-21 before the first week)
+
+The owner, 2026-11-21, on Pass 62: "I'd argue the last decade is the most
+viable data". My answer was that the last decade is the most relevant
+evidence and the least independent, every rule here having been shaped
+on it. Neither of us can settle that from history. Asked whether to
+build a weekly runner so that new weeks can: "For sure". Lab only.
+
+**Two paper books, rules frozen today.** Both: ten slots; top 500 by
+size from the lab's list of 2026-11-20; the screen of Pass 48 with a
+channel counting after 8 weeks and no price floor; names ranked by
+stock trend strength (return over 4, 13, 26 and 52 weeks, ranks
+averaged); no more than three names from one sector; sold on a weekly
+close 20% under its high; no new buys while SPY's weekly close is under
+its 40-week average; positions drift; 0.10% a side.
+- **cap of three.** My book to carry forward (Pass 62).
+- **cap of three, pause of eight weeks.** His: after three sales in a
+  row at a loss, no new buys for eight weeks.
+
+**How a week runs** (`lab/forward_book.py`, `lab/book_ledger.json`,
+`lab/BOOK.md`). Orders are written on Friday's close and filled at the
+next Monday's open; sales first, then the cash on hand shared equally
+among the empty slots. The first orders are written on the close of
+2026-11-20 for the open of 2026-11-23. The ledger is append-only and a
+week is never counted twice. A missed week is caught up in order from
+the same bars.
+
+**Three small differences from the backtests, stated so they are not
+found later.** A sale counts as a loss for the pause if the position is
+under its cost at Friday's close (the backtest knew Monday's open). The
+runner fetches the 800 largest names on the list by its own market
+values and ranks those, where the backtests ranked all 3,004. And a
+name with no bar for two weeks running is sold at its last close.
+
+**What will be read, and when.** Each book against SPY, and the two
+against each other, on compound return and largest drawdown. Pass 62
+measured how far one rule moves with nothing but its start date: about
+a point and a half a year of return and six points of drawdown. So:
+- **nothing is read before 52 weeks** (the week ending 2027-11-19);
+- at 52 and at 104 weeks the two books are compared, and **the pause
+  is taken to have earned its place if it is ahead by more than three
+  points a year of return, or has the shallower drawdown by more than
+  six points, at 104 weeks**; anything less is a tie and the simpler
+  book, the cap alone, stays;
+- either book *beats the S&P 500* only on the 104-week figures, return
+  above SPY's with a drawdown no deeper.
+Two books over two years is one path each. The ledger can end the
+argument about the pause; it cannot by itself show an edge.
+
+**What it does not fix.** Survivor bias is gone going forward, which is
+the point. The list is frozen at 2026-11-20, so a name that becomes
+large after that date is not seen until the list is rebuilt, and that
+would be a new registration.
+
+    python lab/forward_book.py            # settle, mark, decide; writes the ledger and BOOK.md
+    python lab/forward_book.py plan       # print what it would do; write nothing
