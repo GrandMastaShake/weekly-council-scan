@@ -7787,3 +7787,64 @@ sales. Both are now suggested by 2000-02 itself, which was this lab's
 unseen decade until this pass looked inside it; a test of either has
 to be judged on what it costs in the other two decades, not on what it
 saves in that one. Count of ideas tried since Pass 58: seventeen.
+
+## Pass 61 -- a sector cap, and cash as a position (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "Let's do the sector cap and let cash be a
+position too." Lab only. Pass 60's diagnostic found the trend-strength
+book's 53% fall of 2000-03 was made of 59 new buys, 30 of them
+technology, two thirds sold at a loss within weeks.
+
+**The book.** Pass 60's flat trend-strength book: ten slots, positions
+drifting, top 500, the screen ranked by stock trend strength, sold 20%
+under its high, no new buys in a cold market.
+
+**The changes, fixed here.**
+- *Sector cap:* a new buy is refused if the book already holds **three**
+  names from its sector. The slot goes to the next name down the ranking
+  from another sector.
+- *Cash as a position*, in the two forms the words can mean:
+  - *the best or nothing*: a free slot may only take one of the **ten
+    highest-ranked** names on the screen that week. If those are held
+    already, or refused by the cap, the slot stays in cash. The book
+    does not reach down the list to stay full.
+  - *a pause*: after **three sales in a row at a loss**, no new buys for
+    **eight weeks**. Sales go on as usual, so the book drains to cash.
+
+**Books.** The base; the cap alone; best-or-nothing alone; the pause
+alone; cap with best-or-nothing; cap with the pause; all three. Beside
+them, so that no single number is trusted: the cap at two and at four,
+the pause at four and at thirteen weeks, and the cap of three on the
+quality score's picks.
+
+**Lines (fixed).** 2000-03 suggested these changes, so saving that
+drawdown proves nothing by itself. A change **earns its place** on the
+trend-strength book if all four hold:
+1. the thirty-year largest drawdown is no more than ten points deeper
+   than the flat quality book's (-33.6% in Pass 60), so -43.6% or
+   shallower;
+2. the book is still at or above the 75th percentile of the base's
+   random books in each of the three periods;
+3. in each of the two later decades, which did not suggest it, its
+   compound return is no more than a point and a half a year under the
+   uncapped trend-strength book's;
+4. its neighbours agree: for the cap, two and four both give a
+   drawdown at least five points shallower than the base's; for the
+   pause, four and thirteen weeks likewise.
+
+**Limits.** As Pass 60. Sector labels are today's, applied to thirty
+years. Count of ideas tried since Pass 58 goes to twenty-three.
+
+**Predictions.** (1) The cap alone cuts the drawdown by five to eight
+points, to about -46%: not enough for line 1. (2) The cap costs two
+points a year or more in 2016-26, where three or more technology names
+at once was the winning position: it fails line 3. (3) The pause cuts
+the drawdown more than the cap does, to about -42%, and costs under a
+point and a half in the later decades: the likeliest of the single
+changes to pass. (4) Best-or-nothing leaves the book in cash a third of
+the time and costs three points a year or more. (5) Cap with the pause
+has the shallowest drawdown and fails on line 3 because of the cap. So
+I expect the pause alone to be the one that passes, if any does.
+
+    python lab/pass61_cap_and_cash.py          # full run
+    python lab/pass61_cap_and_cash.py smoke    # plumbing: 300 names
