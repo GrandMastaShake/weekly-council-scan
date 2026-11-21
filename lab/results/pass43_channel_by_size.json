@@ -1,0 +1,333 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1068,
+ "universe": "universe_all_2026-11-20.csv",
+ "tiers": {
+  "mega": {
+   "cost_a_side": 0.001,
+   "median_names_a_week": 94.0,
+   "all": {
+    "share_with_channel": 0.21274865440381796,
+    "broken_within_13w": 0.32852575711209686,
+    "return_13w_over_tier": 0.01412266144704257,
+    "return_13w_over_tier_t": 2.8598704630554876,
+    "weeks": 953
+   },
+   "2017 on": {
+    "share_with_channel": 0.22793344467124388,
+    "broken_within_13w": 0.3031617549783007,
+    "return_13w_over_tier": 0.02261483238148754,
+    "return_13w_over_tier_t": 2.8406341928475807,
+    "weeks": 493
+   },
+   "to 2016": {
+    "share_with_channel": 0.19636501156789465,
+    "broken_within_13w": 0.3557093507033175,
+    "return_13w_over_tier": 0.005021269554256979,
+    "return_13w_over_tier_t": 0.9745868004290812,
+    "weeks": 460
+   },
+   "book": {
+    "all": {
+     "cagr": 0.07872318364545228,
+     "sharpe": 0.4939032294482567,
+     "max_drawdown": -0.5550321471702205,
+     "tier_average_cagr": 0.08647776308915422,
+     "tier_average_sharpe": 0.5461713259782057,
+     "tier_average_max_drawdown": -0.5551201694112509,
+     "percentile_among_random": 45.0,
+     "arm_mean_week": 0.001821018499532496,
+     "random_mean_week": 0.0018511326675485057
+    },
+    "2017 on": {
+     "cagr": 0.11472455716660801,
+     "sharpe": 0.6995488624857983,
+     "max_drawdown": -0.32502573224239806,
+     "tier_average_cagr": 0.1278637151522537,
+     "tier_average_sharpe": 0.7915403978183583,
+     "tier_average_max_drawdown": -0.31153683359936035,
+     "percentile_among_random": 38.0,
+     "arm_mean_week": 0.002400850594763999,
+     "random_mean_week": 0.0025718332992181723
+    },
+    "to 2016": {
+     "cagr": 0.04228369695755263,
+     "sharpe": 0.30829634049053234,
+     "max_drawdown": -0.5550321471702205,
+     "tier_average_cagr": 0.04478293203339789,
+     "tier_average_sharpe": 0.3232805202776676,
+     "tier_average_max_drawdown": -0.5551201694112509,
+     "percentile_among_random": 61.0,
+     "arm_mean_week": 0.0012140804323694401,
+     "random_mean_week": 0.0010967407461869643
+    }
+   },
+   "book_avg_names_held": 9.821251241310824,
+   "book_median_hold_weeks": 8.0,
+   "book_closed_positions": 187,
+   "book_share_closed_at_a_gain": 0.40641711229946526,
+   "book_mean_closed_gain": 0.06352795374132084
+  },
+  "large": {
+   "cost_a_side": 0.001,
+   "median_names_a_week": 385.0,
+   "all": {
+    "share_with_channel": 0.19229587536008866,
+    "broken_within_13w": 0.3598204693039858,
+    "return_13w_over_tier": 0.007999494507773802,
+    "return_13w_over_tier_t": 2.4060523572053754,
+    "weeks": 972
+   },
+   "2017 on": {
+    "share_with_channel": 0.2005799633333164,
+    "broken_within_13w": 0.36568921636175,
+    "return_13w_over_tier": 0.014537415628044078,
+    "return_13w_over_tier_t": 2.9326616751647965,
+    "weeks": 502
+   },
+   "to 2016": {
+    "share_with_channel": 0.1834257748776509,
+    "broken_within_13w": 0.353552147978459,
+    "return_13w_over_tier": 0.0010164383325063973,
+    "return_13w_over_tier_t": 0.25110371043472207,
+    "weeks": 470
+   },
+   "book": {
+    "all": {
+     "cagr": 0.11181646666543843,
+     "sharpe": 0.5977540576950978,
+     "max_drawdown": -0.6109537302822322,
+     "tier_average_cagr": 0.09499085424362796,
+     "tier_average_sharpe": 0.546017066153587,
+     "tier_average_max_drawdown": -0.5745939106881145,
+     "percentile_among_random": 85.5,
+     "arm_mean_week": 0.0025027071168334295,
+     "random_mean_week": 0.002058075104805177
+    },
+    "2017 on": {
+     "cagr": 0.1694966396670603,
+     "sharpe": 0.8581802893434941,
+     "max_drawdown": -0.37734395126286124,
+     "tier_average_cagr": 0.10689585703745297,
+     "tier_average_sharpe": 0.6291961735939375,
+     "tier_average_max_drawdown": -0.371979750714137,
+     "percentile_among_random": 97.5,
+     "arm_mean_week": 0.003437951390809729,
+     "random_mean_week": 0.002269809088795569
+    },
+    "to 2016": {
+     "cagr": 0.054484900849750106,
+     "sharpe": 0.3488403499177431,
+     "max_drawdown": -0.6109537302822322,
+     "tier_average_cagr": 0.08266645411860729,
+     "tier_average_sharpe": 0.47255649046902903,
+     "tier_average_max_drawdown": -0.5745939106881145,
+     "percentile_among_random": 30.5,
+     "arm_mean_week": 0.0015237420739517334,
+     "random_mean_week": 0.001836442987416861
+    }
+   },
+   "book_avg_names_held": 9.85501489572989,
+   "book_median_hold_weeks": 11.0,
+   "book_closed_positions": 164,
+   "book_share_closed_at_a_gain": 0.4817073170731707,
+   "book_mean_closed_gain": 0.04585412982479869
+  },
+  "mid": {
+   "cost_a_side": 0.002,
+   "median_names_a_week": 552.0,
+   "all": {
+    "share_with_channel": 0.15465344952851182,
+    "broken_within_13w": 0.36164048731574894,
+    "return_13w_over_tier": 0.006224701311400524,
+    "return_13w_over_tier_t": 1.866453973612382,
+    "weeks": 977
+   },
+   "2017 on": {
+    "share_with_channel": 0.15944018052253145,
+    "broken_within_13w": 0.36622732442327877,
+    "return_13w_over_tier": 0.009920057072892471,
+    "return_13w_over_tier_t": 2.0792160692946053,
+    "weeks": 502
+   },
+   "to 2016": {
+    "share_with_channel": 0.1491786368102812,
+    "broken_within_13w": 0.356792924730528,
+    "return_13w_over_tier": 0.0023192937487290324,
+    "return_13w_over_tier_t": 0.509547390687827,
+    "weeks": 475
+   },
+   "book": {
+    "all": {
+     "cagr": 0.07305223672647121,
+     "sharpe": 0.4204216966379678,
+     "max_drawdown": -0.5429030717733506,
+     "tier_average_cagr": 0.08594240497969796,
+     "tier_average_sharpe": 0.46923419116820203,
+     "tier_average_max_drawdown": -0.5670410156856593,
+     "percentile_among_random": 43.0,
+     "arm_mean_week": 0.0018823598976515194,
+     "random_mean_week": 0.0019329317741757313
+    },
+    "2017 on": {
+     "cagr": 0.0937311174468416,
+     "sharpe": 0.4910178416402121,
+     "max_drawdown": -0.41750912839603227,
+     "tier_average_cagr": 0.06552665160215487,
+     "tier_average_sharpe": 0.4001335385964403,
+     "tier_average_max_drawdown": -0.4020134211354026,
+     "percentile_among_random": 77.5,
+     "arm_mean_week": 0.002299688873383987,
+     "random_mean_week": 0.001706263719007501
+    },
+    "to 2016": {
+     "cagr": 0.051825349251720665,
+     "sharpe": 0.33974648215489567,
+     "max_drawdown": -0.5429030717733506,
+     "tier_average_cagr": 0.10773170583366354,
+     "tier_average_sharpe": 0.5341526758531863,
+     "tier_average_max_drawdown": -0.5670410156856593,
+     "percentile_among_random": 13.5,
+     "arm_mean_week": 0.0014455216405331846,
+     "random_mean_week": 0.002170196100215647
+    }
+   },
+   "book_avg_names_held": 9.8480635551142,
+   "book_median_hold_weeks": 10.5,
+   "book_closed_positions": 196,
+   "book_share_closed_at_a_gain": 0.3877551020408163,
+   "book_mean_closed_gain": 0.09747474343368677
+  },
+  "small": {
+   "cost_a_side": 0.003,
+   "median_names_a_week": 453.5,
+   "all": {
+    "share_with_channel": 0.12156765987286787,
+    "broken_within_13w": 0.3601808147730458,
+    "return_13w_over_tier": 0.013762349146067306,
+    "return_13w_over_tier_t": 2.6573751036235747,
+    "weeks": 903
+   },
+   "2017 on": {
+    "share_with_channel": 0.12574256101638248,
+    "broken_within_13w": 0.37227173134192365,
+    "return_13w_over_tier": 0.020516576231904084,
+    "return_13w_over_tier_t": 2.501918802159555,
+    "weeks": 498
+   },
+   "to 2016": {
+    "share_with_channel": 0.10386325484324668,
+    "broken_within_13w": 0.34531346551057385,
+    "return_13w_over_tier": 0.005457151396075412,
+    "return_13w_over_tier_t": 1.0477398383401113,
+    "weeks": 405
+   },
+   "book": {
+    "all": {
+     "cagr": 0.10332762762945724,
+     "sharpe": 0.532208314208609,
+     "max_drawdown": -0.5170815352173099,
+     "tier_average_cagr": 0.1771317240774719,
+     "tier_average_sharpe": 0.7227467060106593,
+     "tier_average_max_drawdown": -0.5933374200778321,
+     "percentile_among_random": 10.0,
+     "arm_mean_week": 0.0024402241039646446,
+     "random_mean_week": 0.003139989000741722
+    },
+    "2017 on": {
+     "cagr": 0.10461726907554114,
+     "sharpe": 0.5313101306136915,
+     "max_drawdown": -0.5170815352173099,
+     "tier_average_cagr": 0.14015365516926348,
+     "tier_average_sharpe": 0.6589631981809295,
+     "tier_average_max_drawdown": -0.45825521016467297,
+     "percentile_among_random": 23.5,
+     "arm_mean_week": 0.0024825392018880204,
+     "random_mean_week": 0.0030921353353406465
+    },
+    "to 2016": {
+     "cagr": 0.1019793109197833,
+     "sharpe": 0.5328389884287076,
+     "max_drawdown": -0.42466299644817795,
+     "tier_average_cagr": 0.21712378640281416,
+     "tier_average_sharpe": 0.7843826604268185,
+     "tier_average_max_drawdown": -0.5933374200778321,
+     "percentile_among_random": 12.0,
+     "arm_mean_week": 0.002395930861219648,
+     "random_mean_week": 0.0031900797277367486
+    }
+   },
+   "book_avg_names_held": 9.224428997020855,
+   "book_median_hold_weeks": 13.0,
+   "book_closed_positions": 129,
+   "book_share_closed_at_a_gain": 0.3875968992248062,
+   "book_mean_closed_gain": 0.05016895409885283
+  },
+  "smaller": {
+   "cost_a_side": 0.005,
+   "median_names_a_week": 0.0,
+   "all": {
+    "share_with_channel": 0.09638056073930874,
+    "broken_within_13w": 0.3640602179578112,
+    "return_13w_over_tier": 0.020007464327178932,
+    "return_13w_over_tier_t": 1.6691314290545047,
+    "weeks": 293
+   },
+   "2017 on": {
+    "share_with_channel": 0.09638056073930874,
+    "broken_within_13w": 0.3640602179578112,
+    "return_13w_over_tier": 0.020007464327178932,
+    "return_13w_over_tier_t": 1.6691314290545047,
+    "weeks": 293
+   },
+   "to 2016": {
+    "share_with_channel": null,
+    "broken_within_13w": null,
+    "return_13w_over_tier": null,
+    "return_13w_over_tier_t": null,
+    "weeks": 0
+   },
+   "book": {
+    "all": {
+     "cagr": 0.05433673854851606,
+     "sharpe": 0.4416221307828946,
+     "max_drawdown": -0.2696008761228973,
+     "tier_average_cagr": 0.1103682910228232,
+     "tier_average_sharpe": 0.5610516877893895,
+     "tier_average_max_drawdown": -0.607349564109579,
+     "percentile_among_random": 16.5,
+     "arm_mean_week": 0.0012123999167842593,
+     "random_mean_week": 0.00167241209887386
+    },
+    "2017 on": {
+     "cagr": 0.10900222612324173,
+     "sharpe": 0.6183521402492713,
+     "max_drawdown": -0.2696008761228973,
+     "tier_average_cagr": 0.2271666234621692,
+     "tier_average_sharpe": 0.7864450215960189,
+     "tier_average_max_drawdown": -0.607349564109579,
+     "percentile_among_random": 16.5,
+     "arm_mean_week": 0.002370653817867474,
+     "random_mean_week": 0.0032701339486718
+    },
+    "to 2016": {
+     "cagr": 0.0,
+     "sharpe": null,
+     "max_drawdown": 0.0,
+     "tier_average_cagr": 0.0,
+     "tier_average_sharpe": null,
+     "tier_average_max_drawdown": 0.0,
+     "percentile_among_random": 0.0,
+     "arm_mean_week": 0.0,
+     "random_mean_week": 0.0
+    }
+   },
+   "book_avg_names_held": 3.121151936444886,
+   "book_median_hold_weeks": 4.5,
+   "book_closed_positions": 114,
+   "book_share_closed_at_a_gain": 0.42105263157894735,
+   "book_mean_closed_gain": 0.08266675382986312
+  }
+ }
+}

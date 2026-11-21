@@ -5160,3 +5160,73 @@ Nothing else changes.
     python lab/pass43_channel_by_size.py fetch    # the universe file and the weekly bars -> lab/cache (prices are not committed)
     python lab/pass43_channel_by_size.py          # the four numbers per tier
     python lab/pass43_channel_by_size.py smoke    # plumbing: 400 names
+
+## Pass 43 results -- no size tier is reliable by the registered test; large caps come closest and small caps come last
+
+Run 2026-11-20, `lab/results/pass43_channel_by_size.json`. 3,004 names
+with weekly bars, 1,068 weeks to 2026-11-13. The "smaller" tier holds
+almost no tradeable names in this universe (a median of none a week, a
+book averaging three positions) and is left out of the reading below.
+
+**The picture, by tier, whole period.**
+
+| Tier (rank by size that week) | Tradeable names a week | Has a channel worth owning | Line broken within 13 weeks | 13-week return over the tier's average | t |
+|---|---|---|---|---|---|
+| mega (top 100) | 94 | 21.3% | 32.9% | +1.41% | 2.9 |
+| large (next 400) | 385 | 19.2% | 36.0% | +0.80% | 2.4 |
+| mid (next 600) | 552 | 15.5% | 36.2% | +0.62% | 1.9 |
+| small (next 1,000) | 454 | 12.2% | 36.0% | +1.38% | 2.7 |
+
+**The book, by tier.** Place among 200 random books a week from the same
+tier:
+
+| Tier | Book, compound a year | Tier average | Place, whole period | To 2016 | 2017 on | Median hold |
+|---|---|---|---|---|---|---|
+| mega | 7.9% | 8.6% | 45th | 61st | 38th | 8 wk |
+| **large** | **11.2%** | 9.5% | **86th** | 30th | **98th** | 11 wk |
+| mid | 7.3% | 8.6% | 43rd | 14th | 78th | 11 wk |
+| small | 10.3% | 17.7% | 10th | 12th | 24th | 13 wk |
+
+**Against the registered meaning of "most reliable".** No tier is at or
+above the 75th percentile in both halves, so **none is called reliable**.
+Large caps come closest: the only tier whose book beat its own average
+over the whole period, 86th percentile overall and 98th since 2017, but
+30th before 2017. Mid caps show the same shape more weakly (14th, then
+78th). Small caps are last in every column.
+
+**What the tiers say.**
+1. *The picture is more common the bigger the company*: one name-week in
+   five among mega caps, one in eight among small caps. Once drawn, the
+   line is broken at the same rate everywhere, about 36% within a
+   quarter. Size does not make a channel last longer.
+2. *Being in a channel has paid a little in every tier, and only
+   recently.* Channel names beat their own tier's average over the next
+   13 weeks by 0.6% to 1.4%. All of it is from 2017 on (mega +2.26%,
+   large +1.45%, mid +0.99%, small +2.05%); before 2017 it is 0.1% to
+   0.6% and indistinguishable from nothing. That is a decade in which
+   what had been rising kept rising.
+3. *The book does worse than the picture.* Measure 3 holds every channel
+   name for a fixed 13 weeks; the book picks the ten straightest and
+   sells on the first close under a fixed line. In three tiers of four
+   the book places below what the plain picture would suggest, which
+   points at the choosing and the selling, not at the channel.
+4. *Small caps are where the survivor problem bites.* The small tier's
+   average compounds 17.7% a year, an impossible number for small caps
+   as a class: the tier is full of names that were small then and are
+   large now, and a random draw gets them for free. A channel rule,
+   which sells whatever dips, cannot keep up with a pool like that. So
+   the 10th percentile there is the least trustworthy number on this
+   page, in either direction.
+
+**Scored against the predictions.** (1) Half: the picture is most common
+in mega and large; it does not last longer there. (2) Missed: the 13-week
+edge is not confined to the smaller tiers; mega is as strong as small.
+(3) Missed, reversed: the book places highest in large and lowest in
+small. (4) Held: no tier clears the line in both halves.
+
+**What it means.** If the channel book is used anywhere, the evidence
+leans to large caps (roughly the S&P 500 below its top hundred), and
+leans only: one tier in four doing well in one half in two is what
+chance looks like too. The owner's own examples are small caps, the tier
+this data is least able to judge. A forward record on small caps is the
+only clean test of them.
