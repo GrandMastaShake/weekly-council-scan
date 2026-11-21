@@ -7221,3 +7221,90 @@ The MACD proviso changes the result by less than half a point a year.
 
     python lab/pass57_way_back_book.py          # full run
     python lab/pass57_way_back_book.py smoke    # plumbing: 300 names
+
+## Pass 57 results -- the two-part rule does not earn its place: buying back hurts in every period once slots are scarce, and not selling market falls helps two decades and costs the one with 2008 in it
+
+Run 2026-11-21, `lab/results/pass57_way_back_book.json`. 1,604 weeks
+from 1996-02, ten slots, top 500, 3,004 names.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown |
+|---|---|---|---|---|---|---|
+| base | 16.4% | 14.1% | 9.9% | **13.7%** | 0.90 | -31.8% |
+| half one: market falls not sold | 19.7% | 8.7% | 13.9% | 14.4% | 0.89 | -32.1% |
+| half two: back above the 10-week average | 16.8% | 10.0% | 10.4% | 12.7% | 0.85 | -36.5% |
+| **both** | 16.8% | 7.4% | 12.1% | 12.4% | 0.79 | -34.7% |
+| half two without the MACD proviso | 14.0% | 7.9% | 8.9% | 10.6% | 0.81 | -26.9% |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% |
+| pool | 14.7% | 7.7% | 12.0% | 11.5% | 0.67 | -56.6% |
+
+The same comparison on the median of each book's 100 random books,
+which takes out the luck of which ten names the scored book held:
+
+| Book | Unseen | 2006-16 | 2016-26 | Everything |
+|---|---|---|---|---|
+| base | 13.0% | 11.4% | 10.3% | 11.5% |
+| half one | 13.2% | 10.2% | 13.6% | 12.3% |
+| half two | 12.1% | 8.8% | 10.1% | 10.2% |
+| both | 12.9% | 9.2% | 13.5% | 11.9% |
+| half two without the MACD proviso | 11.8% | 9.6% | 9.4% | 10.4% |
+
+Five-year windows that beat SPY, by when they start (1996-2007 /
+2008-2015 / 2016 on): base 24 of 24, 15 of 16, 0 of 12; half one 24, 7,
+4; half two 24, 14, 0; both 24, 5, 6; without the proviso 24, 6, 0.
+Half one declined about 16 sales a year; half two bought back about
+four names a year.
+
+**Against the lines.**
+- *The rule earns its place:* **no.** "Both" against the base is +0.4
+  points a year on the unseen decade, **-6.7** on 2006-16 and +2.2 on
+  2016-26; -1.3 over the thirty years, with a drawdown three points
+  deeper.
+- *Holds up on unseen history:* no, +0.4 against a line of 1.5.
+- *Beats the S&P 500:* no. 12.1% against 15.4% in 2016-26, and 6 of 12
+  windows from 2016.
+
+**What happened.**
+1. *Buying back does not survive scarce slots.* Traded one name at a
+   time in Pass 56, coming back above the 10-week average kept three
+   times as much of the winners. In a book of ten, a slot given back to
+   a name just sold is a slot not given to a fresh name from the
+   screen, and the fresh names were better: half two is behind the base
+   in all three periods on the random books' medians (-0.9, -2.6, -0.2).
+   Pass 56 said as much (no way back in was followed by better returns
+   than the screen's) and I under-weighted it.
+2. *The MACD proviso matters more than I expected.* Taking it away
+   costs another two points a year. Refusing to buy back names sold
+   with a deeply negative MACD line is the one part of half two that
+   does its job.
+3. *Not selling market falls is a real trade, not a free one.* It adds
+   3.3 points on the unseen decade and 4.0 on the last one, and costs
+   5.4 on 2006-16, where it carried names down through 2008 (-22%
+   against -14% that year, and a decade drawdown of -32% against -21%).
+   On the random books' medians it is +0.2, -1.2 and +3.3. It is the
+   only change here that helps on history that did not write it, and
+   the only one that gives the book any five-year windows over SPY
+   after 2016.
+4. *The base book with its two corrections is the best thing on the
+   page.* 13.7% a year over thirty years against 10.1% for SPY and
+   11.5% for its pool, Sharpe 0.90, largest drawdown -31.8% against
+   -54.6%, 94th percentile of its random books. It still has not won a
+   five-year window that starts after 2015.
+5. *How much of any one line is luck.* The scored base book is at the
+   94th percentile of its random books in 2006-16 and "both" at the
+   14th; their random medians differ by two points where the scored
+   books differ by seven. Differences between ten-name books of less
+   than about three points a year in one decade should not be read.
+
+**Scored against the predictions.** (1) Held: +2.2 in 2016-26. (2)
+Held: +0.4 on the unseen decade. (3) Half: the thirty-year drawdown is
+no deeper, but the 2006-16 one is by eleven points. (4) Missed: half
+one adds, half two subtracts. (5) Missed: the proviso is worth two
+points a year. (6) Held: 3.3 points behind SPY against 5.5.
+
+**What it means.** The way back in is closed as a book rule: no further
+passes on re-entry triggers. What is left open is narrower and is half
+one alone, whose cost is one event. Whether a market-fall hold should
+give way once SPY itself is under its 40-week average (the book's own
+cold-market test) is the obvious repair, and it would be fitted to
+2008 unless it is registered against the unseen decade too. Not a
+candidate for production; nothing here changes the forward ledger.
