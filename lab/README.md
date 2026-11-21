@@ -7848,3 +7848,106 @@ I expect the pause alone to be the one that passes, if any does.
 
     python lab/pass61_cap_and_cash.py          # full run
     python lab/pass61_cap_and_cash.py smoke    # plumbing: 300 names
+
+## Pass 61 results -- the sector cap cuts the drawdown at no cost in return, in step with how tight it is; the pause is noise; best-or-nothing does nothing; nothing clears all four lines
+
+Run 2026-11-21, `lab/results/pass61_cap_and_cash.json`. 1,604 weeks from
+1996-02, ten slots, positions drifting, trend-strength picks. Compound
+return a year; percentile among the base's 100 random books in
+brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Five-year windows from 2016 over SPY |
+|---|---|---|---|---|---|---|---|
+| base | 21.2% (100) | 14.8% (99) | 17.6% (100) | 18.1% | 0.81 | -52.9% | 4 of 12 |
+| **cap of three** | 20.0% (100) | 14.5% (99) | 20.2% (100) | 18.5% | 0.86 | -45.6% | 9 |
+| best or nothing | 21.2% (100) | 14.8% (99) | 17.6% (100) | 18.1% | 0.81 | -52.8% | 4 |
+| pause of eight weeks | 20.3% (100) | 10.0% (41) | 18.3% (100) | 16.4% | 0.79 | -47.1% | 8 |
+| cap of three, best or nothing | 19.8% (99) | 14.5% (99) | 19.5% (100) | 18.1% | 0.84 | -44.3% | 10 |
+| cap of three, pause of eight weeks | 17.3% (95) | 14.5% (98) | 26.3% (100) | 19.4% | 0.93 | -40.4% | 12 |
+| all three | 18.6% (99) | 15.3% (100) | 19.0% (100) | 17.9% | 0.89 | -32.6% | 10 |
+| (cap of two) | 14.8% (82) | 14.9% (99) | 20.6% (100) | 16.9% | 0.83 | -37.5% | 9 |
+| (cap of four) | 19.1% (99) | 14.2% (98) | 18.9% (100) | 17.6% | 0.82 | -51.7% | 5 |
+| (pause of four weeks) | 18.4% (99) | 10.5% (47) | 22.0% (100) | 17.1% | 0.81 | -61.5% | 9 |
+| (pause of thirteen weeks) | 23.9% (100) | 11.7% (81) | 20.2% (100) | 18.8% | 0.90 | -39.5% | 6 |
+| (quality picks, no cap) | 17.5% | 13.1% | 8.7% | 13.4% | 0.85 | -33.6% | 0 |
+| (quality picks, cap of three) | 18.1% | 12.6% | 7.5% | 12.8% | 0.82 | -36.3% | 0 |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+On 100 random books run under the same change (return over everything
+/ median largest drawdown): base 11.4% / -36.2%; cap of three 11.2% /
+-36.0%; pause 11.0% / -35.2%; cap with the pause 10.8% / -33.6%. The
+cap refused about ten buys a year; the pause stopped buying for about
+eight weeks a year.
+
+**Against the four lines** (drawdown -43.6% or shallower; 75th
+percentile in each period; no more than 1.5 points a year under the
+base in each later decade; the neighbours agree).
+
+| Book | 1 drawdown | 2 percentiles | 3 later decades | 4 neighbours | Earns its place |
+|---|---|---|---|---|---|
+| cap of three | no, -45.6% | yes | yes | no: four gives -51.7% | no |
+| best or nothing | no | yes | yes | n/a | no |
+| pause of eight weeks | no, -47.1% | no, 41st in 2006-16 | no, -4.8 points | no: four weeks gives -61.5% | no |
+| cap of three, best or nothing | no, -44.3% | yes | yes | no | no |
+| cap of three, pause of eight weeks | yes | yes | yes | no | no |
+| all three | yes | yes | yes | no | no |
+
+**How to read it.**
+1. *The cap is real, and my line was drawn a little the wrong side of
+   it.* Two, three and four names a sector give drawdowns of -37.5%,
+   -45.6% and -51.7% against -52.9% with no cap: the tighter the cap,
+   the shallower the fall, in order. The thirty-year return does not
+   pay for it (16.9%, 18.5%, 17.6% against 18.1%), and in the two later
+   decades, which did not suggest the cap, the capped books are level
+   with the base or ahead of it. That is what a change that works looks
+   like, and a cap of three still misses line 1 by two points and line
+   4 because a cap of four is too loose to matter. By the registration
+   it does not earn its place. A cap of two would have cleared lines 1
+   to 3, and it was a neighbour, not the registered book: it cannot be
+   promoted after the fact, and it gave up six points a year on the
+   unseen decade.
+2. *I predicted the cap would cost the last decade and it helped.*
+   Holding at most three technology names made 20.2% a year in 2016-26
+   against 17.6% uncapped: it took 2021 from +4% to +25% and 2023 from
+   +4% to +25%, by forcing the book into what else was working.
+3. *The pause is noise.* Four, eight and thirteen weeks give drawdowns
+   of -61.5%, -47.1% and -39.5% and three different stories about
+   2006-16. A rule whose result turns over when its one number moves
+   is measuring which names the book happened to miss. Dropped.
+4. *Best-or-nothing does nothing by itself.* One of the ten best-ranked
+   names is nearly always free to buy, so the book never sits out. It
+   only bites together with the cap.
+5. *The two books that pass lines 1 to 3 owe some of it to luck.* Cap
+   with the pause shows 26.3% a year in the last decade and 12 of 12
+   windows over SPY; "all three" shows a drawdown of -32.6%. Random
+   books under the same rules are no better than the base's (10.8%
+   against 11.4%, drawdown -33.6% against -36.2%), and both contain the
+   pause, which point 3 says not to trust.
+6. *On the quality score's picks the cap does nothing* (12.8% against
+   13.4%): those picks were never crowded into one sector for long.
+
+**What none of this can see.** The list is names alive today. A
+trend-strength book in 1999 would have held dot-com names that no
+longer exist, and they are not here to lose money in 2000-02. The 206%
+of 1999 and the 53% of 2000-03 are both survivors' figures; the true
+fall was worse by an amount this data cannot give. Every drawdown line
+in Passes 59 to 61 has been judged on a figure that is too kind, for
+this book more than for any before it.
+
+**Scored against the predictions.** (1) Held: the cap alone gives
+-45.6%. (2) Missed: it added 2.6 points in 2016-26 where I said it
+would cost two. (3) Missed: the pause cut less than the cap and cost
+4.8 points in 2006-16. (4) Missed: best-or-nothing left the book as
+invested as before. (5) Missed: cap with the pause passed line 3, and
+"all three" had the shallowest drawdown. And the pause alone did not
+pass. One of five.
+
+**What it means.** Nothing earns its place by the lines as registered,
+and the sector cap is the first change since the 8-week rule that
+behaves like a real one: ordered by its own setting, free in return,
+and no worse on the decades that did not suggest it. The trend-strength
+book with a cap of three (18.5% a year, Sharpe 0.86, -45.6%) is the
+best book this lab has produced, on survivors. Two things stand
+between it and anything more: the dead names, which need bought data,
+and time, which needs it on a forward ledger. Count of ideas tried
+since Pass 58: twenty-three. Not a candidate for production.
