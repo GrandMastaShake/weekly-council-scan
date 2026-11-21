@@ -6437,3 +6437,63 @@ random picks from the screen do as well, so it is not evidence of an
 edge. The quality score as built is not worth adding. Whether his own
 eye picks better than the score is what the forward ledger of his marks
 will show, first scores about 2026-12-18.
+
+## Pass 53 -- other history: the ten-slot books on 1996 to 2008, by named period, and over every five-year window (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "Can we test on different history periods?" Every
+channel pass so far has used bars from 2006-06, so books that start in
+2008-07, and every verdict has leaned on one split at 2017. Lab only.
+
+**New data.** Weekly adjusted bars for the same list
+(`universe_all_2026-11-20.csv`) and SPY from 1994-01-01, which lets the
+books start in early 1996. Twelve years the lab has not looked at: the
+late-1990s run, the 2000-02 bear market and the 2003-07 recovery.
+
+**The books, unchanged from Pass 52.** Ten slots, equal weights, the
+highest quality score first, top 500 by size, each held to its own exit:
+line or 20% off the high, with and without "no new buys while SPY is
+under its 40-week average". Nothing is tuned here. The 20% exit with the
+market rule was the best cell of sixteen in Pass 52, on 2008 to 2026;
+**1996-07 to 2008-06 is the first test of it on data that did not choose
+it.**
+
+**Three benchmarks.** SPY. The *pool*: every top-500 member that week,
+equal weight, the book's own universe held blind. And 100 *random
+books*: the same slots, exits and market rule, filled at random from the
+screen.
+
+**What is reported.** (a) 1996-07 to 2008-06 against 2008-07 to 2026.
+(b) Named periods: 1996-99, 2000-02, 2003-07, 2008-09, 2010-16, 2017-19,
+2020-21, 2022, 2023-26. (c) Every five-year window, starting each 26
+weeks: the share in which the book beats SPY, beats the pool, beats the
+median random book, and has a shallower largest drawdown than SPY.
+
+**Verdict lines (fixed).** For the 20% exit with the market rule:
+*holds up out of sample* if, on 1996-07 to 2008-06, its compound return
+is at or above SPY's **and** the pool's, with Sharpe above SPY's.
+*Reliable* if it beats SPY in at least 60% of five-year windows.
+*The picks matter* if it is at or above the 75th percentile of its
+random books on the new period. The other three books are reported
+beside it.
+
+**Limits, and they are larger here than anywhere before.** The list is
+names alive in 2026. In 1996 that is the companies that went on to
+survive thirty years, with every dot-com failure missing: the book and
+the pool are both flattered against SPY, more the further back, and a
+selling rule's savings are understated. This is why the pool and the
+random books are the fairer yardsticks and SPY the looser one. Size is
+today's value scaled back by adjusted price, which ignores share
+issuance and is rough by the 1990s; fewer than half the names have bars
+in 1996, so "top 500" then reaches further down the list.
+
+**Predictions.** (1) On 1996-2008 the book beats SPY (survivor bias plus
+2000-02 in cash) but not the pool: it does not hold up by the line as
+written. (2) By period it wins 2000-02 and 2008-09 clearly, and loses
+1996-99, 2017-19 and 2023-26. (3) It beats SPY in 45% to 60% of
+five-year windows, has the shallower drawdown in over 80%, and beats the
+pool in under 40%. (4) Against random books on the new period it sits
+between the 30th and 70th percentile: the picks do not matter.
+
+    python lab/pass53_other_history.py fetch    # bars from 1994
+    python lab/pass53_other_history.py          # full run
+    python lab/pass53_other_history.py smoke    # plumbing: 300 names
