@@ -1,0 +1,806 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1001,
+ "first_week": "2007-09-14",
+ "last_week": "2026-11-13",
+ "spy": {
+  "all": {
+   "cagr": 0.10911623828423811,
+   "sharpe": 0.6617510282950765,
+   "max_drawdown": -0.546130346632991
+  },
+  "to 2016": {
+   "cagr": 0.06919430148137784,
+   "sharpe": 0.4454355914256423,
+   "max_drawdown": -0.546130346632991
+  },
+  "2017 on": {
+   "cagr": 0.14815627026932,
+   "sharpe": 0.8925383637680802,
+   "max_drawdown": -0.3182896851537068
+  }
+ },
+ "sets": {
+  "top 500": {
+   "median_names_a_week": 471.5,
+   "arms": {
+    "restart, bounce": {
+     "avg_names_held": 189.75624375624375,
+     "weeks_in_cash": 0,
+     "entries": 9556,
+     "entries_a_year": 496.4155844155844,
+     "median_hold_weeks": 6.0,
+     "share_closed_at_a_gain": 0.36820710312366284,
+     "mean_closed_gain": 0.028196166991815694,
+     "median_closed_gain": -0.02255478489268109,
+     "how_holds_ended": {
+      "break": 9352,
+      "open": 204
+     },
+     "book": {
+      "all": {
+       "cagr": 0.08363152346794367,
+       "sharpe": 0.5641782089153988,
+       "max_drawdown": -0.509916570827649,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 1.5
+      },
+      "to 2016": {
+       "cagr": 0.06391230627591682,
+       "sharpe": 0.4390929565534689,
+       "max_drawdown": -0.509916570827649,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 9.5
+      },
+      "2017 on": {
+       "cagr": 0.1025754185334693,
+       "sharpe": 0.6975289987553541,
+       "max_drawdown": -0.32218624042988886,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 2.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 9556,
+       "excess_13w": -0.0027516788034052395,
+       "excess_26w": -0.003120591059492612,
+       "share_beating_pool_13w": 0.49002758328028856,
+       "t": -1.1512344586607164
+      },
+      "to 2016": {
+       "cards": 4824,
+       "excess_13w": 0.00019124721801809324,
+       "excess_26w": -0.0018726395188945907,
+       "share_beating_pool_13w": 0.5049751243781094,
+       "t": -0.42374320974185326
+      },
+      "2017 on": {
+       "cards": 4732,
+       "excess_13w": -0.00583657126914756,
+       "excess_26w": -0.00446018123124269,
+       "share_beating_pool_13w": 0.47435897435897434,
+       "t": -1.3116248031684594
+      }
+     }
+    },
+    "restart, early": {
+     "avg_names_held": 272.32267732267735,
+     "weeks_in_cash": 0,
+     "entries": 11124,
+     "entries_a_year": 577.8701298701299,
+     "median_hold_weeks": 13.0,
+     "share_closed_at_a_gain": 0.42723177346694863,
+     "mean_closed_gain": 0.04236670296648667,
+     "median_closed_gain": -0.019581200173638624,
+     "how_holds_ended": {
+      "break": 9231,
+      "under the start": 1650,
+      "open": 243
+     },
+     "book": {
+      "all": {
+       "cagr": 0.0895328632343948,
+       "sharpe": 0.5811422765444108,
+       "max_drawdown": -0.5378732735032286,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 2.5
+      },
+      "to 2016": {
+       "cagr": 0.07000272451177603,
+       "sharpe": 0.4592608114394848,
+       "max_drawdown": -0.5378732735032286,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 6.5
+      },
+      "2017 on": {
+       "cagr": 0.10829006276215658,
+       "sharpe": 0.7132440123972267,
+       "max_drawdown": -0.32490455750770597,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 5.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 11124,
+       "excess_13w": -0.0026660005851677038,
+       "excess_26w": -0.006140416362732836,
+       "share_beating_pool_13w": 0.4810379241516966,
+       "t": -3.1041001666259014
+      },
+      "to 2016": {
+       "cards": 5690,
+       "excess_13w": -0.0008633254404756617,
+       "excess_26w": -0.005354168995681973,
+       "share_beating_pool_13w": 0.4943760984182777,
+       "t": -2.508546590863814
+      },
+      "2017 on": {
+       "cards": 5434,
+       "excess_13w": -0.004589710557654148,
+       "excess_26w": -0.007004908636842866,
+       "share_beating_pool_13w": 0.46680420105026255,
+       "t": -1.950792272164453
+      }
+     }
+    },
+    "dynamic 1, bounce": {
+     "avg_names_held": 239.74725274725276,
+     "weeks_in_cash": 0,
+     "entries": 7370,
+     "entries_a_year": 382.85714285714283,
+     "median_hold_weeks": 10.0,
+     "share_closed_at_a_gain": 0.3709065354884048,
+     "mean_closed_gain": 0.05077343591442041,
+     "median_closed_gain": -0.03240112600526346,
+     "how_holds_ended": {
+      "break": 6603,
+      "open": 248,
+      "flattened out": 519
+     },
+     "book": {
+      "all": {
+       "cagr": 0.08580194035220434,
+       "sharpe": 0.5705372709075156,
+       "max_drawdown": -0.5546734447220039,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.06598284978602909,
+       "sharpe": 0.4478658358862015,
+       "max_drawdown": -0.5546734447220039,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 3.0
+      },
+      "2017 on": {
+       "cagr": 0.10484282983724214,
+       "sharpe": 0.6994726284864069,
+       "max_drawdown": -0.33154738089505575,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 0.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 7370,
+       "excess_13w": -0.0030438404095614966,
+       "excess_26w": -0.005723409231592732,
+       "share_beating_pool_13w": 0.49407550289335905,
+       "t": -1.0350370955574046
+      },
+      "to 2016": {
+       "cards": 3728,
+       "excess_13w": 0.0025482907190619553,
+       "excess_26w": -0.0015350777484654033,
+       "share_beating_pool_13w": 0.5136802575107297,
+       "t": 0.08988359146229521
+      },
+      "2017 on": {
+       "cards": 3642,
+       "excess_13w": -0.008949637816787624,
+       "excess_26w": -0.010257119965941945,
+       "share_beating_pool_13w": 0.47337110481586403,
+       "t": -1.7159005290451321
+      }
+     }
+    },
+    "dynamic 1, early": {
+     "avg_names_held": 302.24975024975026,
+     "weeks_in_cash": 0,
+     "entries": 8526,
+     "entries_a_year": 442.90909090909093,
+     "median_hold_weeks": 16.0,
+     "share_closed_at_a_gain": 0.4171317641349187,
+     "mean_closed_gain": 0.061505739982101404,
+     "median_closed_gain": -0.030268500557710853,
+     "how_holds_ended": {
+      "break": 6495,
+      "under the start": 1228,
+      "open": 277,
+      "flattened out": 526
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09189217229443503,
+       "sharpe": 0.5912900060744847,
+       "max_drawdown": -0.5523213443956831,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 1.5
+      },
+      "to 2016": {
+       "cagr": 0.07352546563080908,
+       "sharpe": 0.4768246942830582,
+       "max_drawdown": -0.5523213443956831,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 13.0
+      },
+      "2017 on": {
+       "cagr": 0.10951273324311428,
+       "sharpe": 0.7139019462283431,
+       "max_drawdown": -0.32967850968324686,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 2.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 8526,
+       "excess_13w": -0.0031888510590435864,
+       "excess_26w": -0.009012931885657898,
+       "share_beating_pool_13w": 0.4857312018946122,
+       "t": -2.987014018199249
+      },
+      "to 2016": {
+       "cards": 4404,
+       "excess_13w": -0.0004667288220231106,
+       "excess_26w": -0.004526201945436092,
+       "share_beating_pool_13w": 0.5018165304268847,
+       "t": -1.8909885447951182
+      },
+      "2017 on": {
+       "cards": 4122,
+       "excess_13w": -0.006155499495529153,
+       "excess_26w": -0.01406394381222662,
+       "share_beating_pool_13w": 0.4682009403612967,
+       "t": -2.320442954268407
+      }
+     }
+    },
+    "dynamic 2, bounce": {
+     "avg_names_held": 271.95304695304696,
+     "weeks_in_cash": 0,
+     "entries": 5825,
+     "entries_a_year": 302.5974025974026,
+     "median_hold_weeks": 14.0,
+     "share_closed_at_a_gain": 0.3780025284450063,
+     "mean_closed_gain": 0.07901583390270589,
+     "median_closed_gain": -0.03943245699065823,
+     "how_holds_ended": {
+      "break": 4732,
+      "flattened out": 811,
+      "open": 282
+     },
+     "book": {
+      "all": {
+       "cagr": 0.08827132823785844,
+       "sharpe": 0.5789554167125089,
+       "max_drawdown": -0.5616274572513038,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 0.5
+      },
+      "to 2016": {
+       "cagr": 0.06578894798477553,
+       "sharpe": 0.44017439543313036,
+       "max_drawdown": -0.5616274572513038,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 3.0
+      },
+      "2017 on": {
+       "cagr": 0.10992248903538537,
+       "sharpe": 0.729857786847493,
+       "max_drawdown": -0.3233197823396823,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 2.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 5825,
+       "excess_13w": -0.003639558427386528,
+       "excess_26w": -0.0060947771808010165,
+       "share_beating_pool_13w": 0.4885749171463457,
+       "t": -2.205482723253609
+      },
+      "to 2016": {
+       "cards": 3039,
+       "excess_13w": 0.0012962299313493588,
+       "excess_26w": -0.00115243313374771,
+       "share_beating_pool_13w": 0.5070746956235603,
+       "t": -0.9535020348733494
+      },
+      "2017 on": {
+       "cards": 2786,
+       "excess_13w": -0.009207435495760086,
+       "excess_26w": -0.011829707902066765,
+       "share_beating_pool_13w": 0.46770601336302897,
+       "t": -2.1478344362480977
+      }
+     }
+    },
+    "dynamic 2, early": {
+     "avg_names_held": 321.1888111888112,
+     "weeks_in_cash": 0,
+     "entries": 6723,
+     "entries_a_year": 349.24675324675326,
+     "median_hold_weeks": 19.0,
+     "share_closed_at_a_gain": 0.40617688348151615,
+     "mean_closed_gain": 0.08698859689796794,
+     "median_closed_gain": -0.037784721208437566,
+     "how_holds_ended": {
+      "break": 4646,
+      "under the start": 952,
+      "flattened out": 819,
+      "open": 306
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09536295925263505,
+       "sharpe": 0.6074039918099252,
+       "max_drawdown": -0.544872715076054,
+       "pool_cagr": 0.09569095870082633,
+       "pool_sharpe": 0.5580640307981407,
+       "percentile_among_random": 9.0
+      },
+      "to 2016": {
+       "cagr": 0.07718503231132012,
+       "sharpe": 0.4919401392396338,
+       "max_drawdown": -0.544872715076054,
+       "pool_cagr": 0.07687164470316366,
+       "pool_sharpe": 0.45330434714154544,
+       "percentile_among_random": 20.5
+      },
+      "2017 on": {
+       "cagr": 0.11279852139426771,
+       "sharpe": 0.733108440686867,
+       "max_drawdown": -0.32692725326800454,
+       "pool_cagr": 0.11375207237256646,
+       "pool_sharpe": 0.6752948544666574,
+       "percentile_among_random": 6.5
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 6723,
+       "excess_13w": -0.0030806294326113865,
+       "excess_26w": -0.009912626632415206,
+       "share_beating_pool_13w": 0.4877609250638234,
+       "t": -3.187743817994966
+      },
+      "to 2016": {
+       "cards": 3582,
+       "excess_13w": -0.00047691530875628346,
+       "excess_26w": -0.004507100057688982,
+       "share_beating_pool_13w": 0.5033500837520938,
+       "t": -1.3283293076715965
+      },
+      "2017 on": {
+       "cards": 3141,
+       "excess_13w": -0.00611166745394677,
+       "excess_26w": -0.01644081145732058,
+       "share_beating_pool_13w": 0.4696132596685083,
+       "t": -3.2705508968247496
+      }
+     }
+    }
+   }
+  },
+  "every tradeable name": {
+   "median_names_a_week": 1449.0,
+   "arms": {
+    "restart, bounce": {
+     "avg_names_held": 584.1878121878121,
+     "weeks_in_cash": 0,
+     "entries": 33703,
+     "entries_a_year": 1750.8051948051948,
+     "median_hold_weeks": 6.0,
+     "share_closed_at_a_gain": 0.3451357121073498,
+     "mean_closed_gain": 0.02018500024927131,
+     "median_closed_gain": -0.029874743652031688,
+     "how_holds_ended": {
+      "break": 32836,
+      "open": 867
+     },
+     "book": {
+      "all": {
+       "cagr": 0.08794934367542262,
+       "sharpe": 0.5491512148131227,
+       "max_drawdown": -0.4952480607282569,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08046395091199732,
+       "sharpe": 0.5033134782151951,
+       "max_drawdown": -0.4952480607282569,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.09506078303499277,
+       "sharpe": 0.5944027209583554,
+       "max_drawdown": -0.33819545954883323,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 33703,
+       "excess_13w": -0.002861825684137777,
+       "excess_26w": -0.0005848402620468564,
+       "share_beating_pool_13w": 0.46288513288785416,
+       "t": -1.4027601592984347
+      },
+      "to 2016": {
+       "cards": 11863,
+       "excess_13w": -0.0005559535643205558,
+       "excess_26w": -0.0013005522916978583,
+       "share_beating_pool_13w": 0.48115990896063393,
+       "t": -1.1566592745490776
+      },
+      "2017 on": {
+       "cards": 21840,
+       "excess_13w": -0.004151526813670626,
+       "excess_26w": -0.00016981964381683224,
+       "share_beating_pool_13w": 0.45266383781235264,
+       "t": -0.7965017545058034
+      }
+     }
+    },
+    "restart, early": {
+     "avg_names_held": 851.5734265734266,
+     "weeks_in_cash": 0,
+     "entries": 39174,
+     "entries_a_year": 2035.012987012987,
+     "median_hold_weeks": 12.0,
+     "share_closed_at_a_gain": 0.4014654130994275,
+     "mean_closed_gain": 0.036181529296006106,
+     "median_closed_gain": -0.029127327355916832,
+     "how_holds_ended": {
+      "break": 32475,
+      "under the start": 5653,
+      "open": 1046
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09440134775242215,
+       "sharpe": 0.568039610380056,
+       "max_drawdown": -0.5429814051005653,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08323028205697836,
+       "sharpe": 0.5030583895347913,
+       "max_drawdown": -0.5429814051005653,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.10504899878582785,
+       "sharpe": 0.6339434209582855,
+       "max_drawdown": -0.3450340394721889,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 39174,
+       "excess_13w": -0.0019510820610624746,
+       "excess_26w": -0.002011706852101012,
+       "share_beating_pool_13w": 0.46392179175503023,
+       "t": -3.133103668064189
+      },
+      "to 2016": {
+       "cards": 14124,
+       "excess_13w": -0.00047747770318738394,
+       "excess_26w": -0.004177719444121575,
+       "share_beating_pool_13w": 0.4835740583404135,
+       "t": -1.7989171882653512
+      },
+      "2017 on": {
+       "cards": 25050,
+       "excess_13w": -0.002799146112510107,
+       "excess_26w": -0.0007198918934953847,
+       "share_beating_pool_13w": 0.45261184907505503,
+       "t": -2.7129880675296514
+      }
+     }
+    },
+    "dynamic 1, bounce": {
+     "avg_names_held": 744.7332667332668,
+     "weeks_in_cash": 0,
+     "entries": 26624,
+     "entries_a_year": 1383.064935064935,
+     "median_hold_weeks": 10.0,
+     "share_closed_at_a_gain": 0.343115301512473,
+     "mean_closed_gain": 0.03304533669375344,
+     "median_closed_gain": -0.04374527925833249,
+     "how_holds_ended": {
+      "break": 23335,
+      "open": 1117,
+      "flattened out": 2172
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09275721636110679,
+       "sharpe": 0.5627387721365672,
+       "max_drawdown": -0.5323646864477242,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.0802107141168702,
+       "sharpe": 0.49268036032445417,
+       "max_drawdown": -0.5323646864477242,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.10473083557696339,
+       "sharpe": 0.6327049188009,
+       "max_drawdown": -0.35295835782495755,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 26624,
+       "excess_13w": -0.0027698677616549714,
+       "excess_26w": -0.0008041475598211269,
+       "share_beating_pool_13w": 0.4617149850837604,
+       "t": -0.3629772431811852
+      },
+      "to 2016": {
+       "cards": 9318,
+       "excess_13w": 0.0012508572740718682,
+       "excess_26w": -0.0005068740466841284,
+       "share_beating_pool_13w": 0.48787293410603133,
+       "t": -0.35682195934437866
+      },
+      "2017 on": {
+       "cards": 17306,
+       "excess_13w": -0.004996223590208732,
+       "excess_26w": -0.0009747452438397606,
+       "share_beating_pool_13w": 0.44723080579985736,
+       "t": -0.16665194409663905
+      }
+     }
+    },
+    "dynamic 1, early": {
+     "avg_names_held": 951.065934065934,
+     "weeks_in_cash": 0,
+     "entries": 30805,
+     "entries_a_year": 1600.2597402597403,
+     "median_hold_weeks": 15.0,
+     "share_closed_at_a_gain": 0.3871361279609611,
+     "mean_closed_gain": 0.047746692778233006,
+     "median_closed_gain": -0.04254497779714839,
+     "how_holds_ended": {
+      "break": 23057,
+      "under the start": 4343,
+      "open": 1243,
+      "flattened out": 2162
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09752608627578119,
+       "sharpe": 0.5766579988160146,
+       "max_drawdown": -0.5510973342624463,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08538767433816541,
+       "sharpe": 0.5076887713850611,
+       "max_drawdown": -0.5510973342624463,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.1091054486116041,
+       "sharpe": 0.6468380099062527,
+       "max_drawdown": -0.3532508964513087,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 30805,
+       "excess_13w": -0.002638195523406484,
+       "excess_26w": -0.002452933716711352,
+       "share_beating_pool_13w": 0.46081556205434887,
+       "t": -2.90636418310096
+      },
+      "to 2016": {
+       "cards": 11062,
+       "excess_13w": 0.0007462841596887877,
+       "excess_26w": -0.0024006091540582997,
+       "share_beating_pool_13w": 0.48924245163623215,
+       "t": -1.5334124427081346
+      },
+      "2017 on": {
+       "cards": 19743,
+       "excess_13w": -0.004570935921651277,
+       "excess_26w": -0.002483899601157536,
+       "share_beating_pool_13w": 0.44458210727375974,
+       "t": -2.612603098328895
+      }
+     }
+    },
+    "dynamic 2, bounce": {
+     "avg_names_held": 851.3916083916084,
+     "weeks_in_cash": 0,
+     "entries": 21413,
+     "entries_a_year": 1112.3636363636363,
+     "median_hold_weeks": 14.0,
+     "share_closed_at_a_gain": 0.3403141361256545,
+     "mean_closed_gain": 0.04810734991332994,
+     "median_closed_gain": -0.05526550120487017,
+     "how_holds_ended": {
+      "break": 16771,
+      "flattened out": 3324,
+      "open": 1318
+     },
+     "book": {
+      "all": {
+       "cagr": 0.09734013010633191,
+       "sharpe": 0.5786702354013759,
+       "max_drawdown": -0.5319110862012584,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.08545397406756239,
+       "sharpe": 0.5103472159051574,
+       "max_drawdown": -0.5319110862012584,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.10867631474399553,
+       "sharpe": 0.6480973432032703,
+       "max_drawdown": -0.3533747988959527,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 21413,
+       "excess_13w": -0.0031318158658493024,
+       "excess_26w": -0.0013079238590636322,
+       "share_beating_pool_13w": 0.45883023708842113,
+       "t": -0.36214682279036803
+      },
+      "to 2016": {
+       "cards": 7545,
+       "excess_13w": 0.00018606344587109548,
+       "excess_26w": 0.00018300072734850074,
+       "share_beating_pool_13w": 0.4842942345924453,
+       "t": -0.5743209986828876
+      },
+      "2017 on": {
+       "cards": 13868,
+       "excess_13w": -0.004985867073591148,
+       "excess_26w": -0.0021728343622528946,
+       "share_beating_pool_13w": 0.44460079988149903,
+       "t": 0.045458717684851914
+      }
+     }
+    },
+    "dynamic 2, early": {
+     "avg_names_held": 1014.5674325674325,
+     "weeks_in_cash": 0,
+     "entries": 24678,
+     "entries_a_year": 1281.974025974026,
+     "median_hold_weeks": 18.0,
+     "share_closed_at_a_gain": 0.37004651964162644,
+     "mean_closed_gain": 0.06170976973776735,
+     "median_closed_gain": -0.054476402791094,
+     "how_holds_ended": {
+      "break": 16552,
+      "under the start": 3388,
+      "flattened out": 3315,
+      "open": 1423
+     },
+     "book": {
+      "all": {
+       "cagr": 0.10178389387742648,
+       "sharpe": 0.5915341475402585,
+       "max_drawdown": -0.5460055495570775,
+       "pool_cagr": 0.11735364024543982,
+       "pool_sharpe": 0.5997928705926129,
+       "percentile_among_random": 0.0
+      },
+      "to 2016": {
+       "cagr": 0.09091388935159328,
+       "sharpe": 0.527732034732462,
+       "max_drawdown": -0.5460055495570775,
+       "pool_cagr": 0.10698623518973571,
+       "pool_sharpe": 0.5452999143272714,
+       "percentile_among_random": 0.0
+      },
+      "2017 on": {
+       "cagr": 0.11214111583335118,
+       "sharpe": 0.6569924165364552,
+       "max_drawdown": -0.35601112319127604,
+       "pool_cagr": 0.127226281986766,
+       "pool_sharpe": 0.656281810141221,
+       "percentile_among_random": 0.0
+      }
+     },
+     "cards": {
+      "all": {
+       "cards": 24678,
+       "excess_13w": -0.0017471875298361776,
+       "excess_26w": -0.002910957647840886,
+       "share_beating_pool_13w": 0.4609045061298126,
+       "t": -1.6960570034308697
+      },
+      "to 2016": {
+       "cards": 8947,
+       "excess_13w": 0.0004980082477267825,
+       "excess_26w": -0.0030624020544231007,
+       "share_beating_pool_13w": 0.4880965686822399,
+       "t": -0.6099584849167429
+      },
+      "2017 on": {
+       "cards": 15731,
+       "excess_13w": -0.0030480401798721702,
+       "excess_26w": -0.002819952670630122,
+       "share_beating_pool_13w": 0.44514959202175886,
+       "t": -1.7795429779888543
+      }
+     }
+    }
+   }
+  }
+ }
+}

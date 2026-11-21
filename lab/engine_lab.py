@@ -345,6 +345,9 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
              (Pass 11); without it his multiple is unknown, value leg neutral;
              {"union": True} books every engine's top five, equal weights
              over the union, no consensus (Pass 13's Union-equal)
+             {"universe_filter": f} with f(W, eligible) -> the names the
+             engines may scan that week, a subset of eligible (Pass 49's
+             channel screen); the benchmarks still use every eligible name
     capture  a dict that receives, per week, every ticker's scoring inputs
              from Ophelia and Marky, the sector signals, and each ticker's
              realized return -- the raw material for diagnostics()
@@ -416,7 +419,8 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
                 if hist:
                     cache[t] = hist
         eligible = [t for t in universe if len(cache.get(t, [])) >= MIN_WEEKS]
-        state["eligible"] = eligible
+        ufilter = knobs.get("universe_filter")
+        state["eligible"] = [t for t in ufilter(W, eligible) if t in set(eligible)] if ufilter else eligible
         state["tnx"] = raw["^TNX"].last_close_before(W) if "^TNX" in raw else None
         vix = raw["^VIX"].last_close_before(W) if "^VIX" in raw else None
         F = cache["SPY"][-1].date
@@ -501,6 +505,7 @@ def run(verbose=True, knobs=None, capture=None, weeks=None, start=DATA_START, ea
 
         rows.append({
             "week": label, "monday": W, "friday_before": F, "eligible": len(eligible),
+            "scanned": len(state["eligible"]),
             "tnx": state["tnx"], "vix": vix,
             "vote": {k: round(v, 4) for k, v in vote.items()},
             "proposals": {"Cecil": [x["ticker"] for x in c.get("stocks", [])],

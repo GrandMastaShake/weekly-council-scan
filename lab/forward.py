@@ -45,6 +45,19 @@ def _pe_builder(names, raw, weeks):
     return p11.pe_builder(names, raw, weeks)
 
 
+_CU = {}
+
+
+def channel_universe(W, eligible):
+    """Pass 49: the engines may scan only the names on the channel screen
+    that Monday (lab/channel_universe.py); under ten names, the whole list."""
+    if "f" not in _CU:
+        import channel_universe as cu
+        from scan_pipeline.config.tickers import STOCK_UNIVERSE
+        _CU["f"] = cu.make_filter(sorted(set(STOCK_UNIVERSE)))
+    return _CU["f"](W, eligible)
+
+
 # (name, knobs, registered Monday, where it came from)
 REGISTRY = [
     ("production",    lab.VARIANTS3["base"],          "2026-09-21", "engines as live"),
@@ -63,6 +76,8 @@ REGISTRY = [
                                                       "2026-09-22", "Pass 10, the owner's map (weekly clusters)"),
     ("Cecil-solo",    {"solo": "Cecil"},              "2026-09-22", "Pass 11, the engine alone with a point-in-time P/E"),
     ("Union-equal",   {"union": True},                "2026-09-22", "Pass 13, every engine's five, equal over the union"),
+    ("channel-universe", {"universe_filter": channel_universe},
+                                                      "2026-11-23", "Pass 49, the engines scan only the channel screen's names"),
 ]
 PAGE = lab.LAB / "FORWARD.md"
 DATA = lab.RESULTS / "forward.json"
