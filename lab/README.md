@@ -7459,3 +7459,79 @@ where the large losses are; whether there is a version that keeps the
 first without the second is a question about the exit for jumpy names,
 and it would have to be asked of the unseen decade and 2000-02 first,
 not of 2016-26.
+
+## Pass 59 -- trend strength and sector rotation inside the ten-slot book (registered 2026-11-21 before any run)
+
+The owner, 2026-11-21: "I feel like our weekly synthesis has been really
+good with the type of market. I think we are underutilizing the trend
+strength and sector rotation." His first statement of the chart idea was
+the same three layers: "the general market trend, sector trend and then
+stock trend". Lab only.
+
+**What can and cannot be tested.** The weekly synthesis is written each
+Saturday and has existed for a few months; there is no history of it to
+replay, so its judgement of the market is not what is tested here. What
+is tested is the arithmetic it reads (`data/market_state.json` carries
+each sector fund's 13-week return and SPY's), rebuilt for thirty years
+from the lab's own bars. Earlier passes on these layers: the chart stack
+of Pass 38 (only the market layer helped) and the top four sectors of
+Pass 47 (8.7% against 8.4% with no rule), both on books that bought the
+whole screen from 2008. Neither was the ten-slot book, and neither saw
+1996 to 2006.
+
+**The measures, fixed here.**
+- *Sector strength:* each of the eleven sectors' return over the last 13
+  weeks, as the average of its top-500 members (sector funds do not go
+  back to 1996, and two are younger than 2016). *Leading* is the top
+  four that week, *lagging* the bottom four.
+- *A stock's trend strength:* its rank among that week's screen names on
+  return over 4, 13, 26 and 52 weeks, the four ranks averaged. His
+  "trend strength over ... 1 week, 1 month, 1 year", on the spans weekly
+  bars allow.
+- *A strong market:* SPY above its 40-week average, that average higher
+  than 13 weeks before, and 60% or more of the top 500 above their own
+  40-week averages. *Cold* is SPY under its 40-week average, as in every
+  book since Pass 52. Anything else is *mixed*.
+
+**Six books, one change each to Pass 57's base book** (ten slots, 20%
+exit, no new buys in a cold market, the highest quality score first):
+1. *Leading sectors only:* a new buy must be in one of the four leading
+   sectors.
+2. *No lagging sectors:* a new buy may not be in one of the four lagging
+   sectors.
+3. *Sector first:* free slots go to screen names in order of their
+   sector's strength, quality score second.
+4. *Stock trend strength:* free slots go to the screen names with the
+   highest trend strength.
+5. *Trend strength in a strong market, quality otherwise.*
+6. *All three layers:* leading sectors only, and trend strength picks
+   the names. His stack.
+
+**Line (fixed), one for all six.** The book is **at or above the 75th
+percentile of the base book's 100 random books in each of the three
+periods** (unseen 1996-07 to 2006-10; 2006-11 to 2016-11; 2016-11 to
+2026-11), with a thirty-year largest drawdown no more than ten points
+deeper than the base's. Six ideas, one run; by chance alone about one
+run in ten would see one of them pass. For the three gated books the
+median of their own random books is reported beside the base's, which
+shows what the gate does apart from the picking.
+
+**Limits.** As Passes 57 and 58. Sector labels are today's, from two
+sources merged, applied to the whole thirty years; a company that
+changed its business is in the wrong sector early on. A sector's
+strength here is its large members equally weighted, not the fund the
+synthesis reads.
+
+**Predictions.** (1) Leading sectors only: its own random books beat the
+base's by about a point overall and not in every period; the scored
+book misses the 75th percentile in at least one. (2) No lagging sectors
+changes little: within half a point on the random medians. (3) Sector
+first lands in the middle, like the quality score. (4) Stock trend
+strength behaves like Pass 58's strongest picks: at the top in 2016-26
+and on the unseen decade, ordinary in 2006-16, with a deeper drawdown.
+(5) Switching by market strength is the best of the six on ride and
+still misses a period. (6) His stack is the most concentrated and the
+most erratic. I expect none to clear the line, with 5 the closest.
+
+    python lab/pass59_trend_and_sectors.py          # full run
+    python lab/pass59_trend_and_sectors.py smoke    # plumbing: 300 names
