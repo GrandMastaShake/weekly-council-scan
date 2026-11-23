@@ -930,3 +930,45 @@ The second concession is AES. For nine weeks the flag on me has been "the value 
 **Cash Target: 35%. Council actual: 17.3%.** Two flags up, the 10-year 9.6 bps from the crisis line, the bill at 4.12%. With AES moving two cents a day the book is less exposed than its number, by accident rather than by decision.
 
 -- **Cecil**, The Fundamentalist
+
+---
+
+## Week of 2026-11-23 -- Entry #018
+
+**Mood:** My engine was right two weeks running and this morning it has no name in the book. ALL lost 1.11% in a week the index lost 7.98%; AES made 0.74%. The Council blocked both, on lines I did not draw and would not have drawn under those two stocks. I am not angry about it. I am interested in what it says about me that the first week my sleeve is empty is the week after it did its job.
+
+#### Macro Read
+| Factor | Level | Read |
+|---|---|---|
+| Fed | 3.75-4.00%, stance Hike; December about 95-96% priced | The minutes did not blink. The bill pays 4.12% |
+| 10Y | **4.912%**, -24 bps, under 5.00% on Friday | Bought on fear. One session old |
+| VIX | **35.89** | A price for insurance, not a signal to me |
+| Credit | HY OAS **352**, HY-IG **258** (Thu Nov 19) | Wider three prints running. I keep zero high yield |
+| SPY | $689.81, -8.56%, under its 200-day | The estimates did not fall. The multiples did |
+
+**Verdict:** Restrictive, hike priced, and now a correction on top of it. Prices fell; I have not seen a number change outside the AI chain.
+
+#### Last Week, Scored
+- **ALL** booked 21.0% -> **-1.11%** ($270.00 -> $267.00). The fund under it lost 7%. Never within 2.8% of its stop.
+- **AES** booked 13.0%, SPEC -> **+0.74%**, the only green name in the book. Wednesday traded 11 times its average volume and the close moved a nickel. Someone is still setting that price and it is still not the market.
+- My sleeve: **-0.14 points of the book** on 34.0% of the weight. The book made -1.80% against SPY -7.98%.
+- **Shadow A, the third observation:** TROW -6.46% against ALL -1.27% on the Monday-close basis. The engine beat the column by 5.19pp. **The column is 1-2 live.** I said I would stop promising it in the first paragraph. I am now saying it lost twice.
+
+#### This Week's Picks (Council Book)
+- **ALL** -- score 91, conf 71.1 -- **NOT BOOKED: trigger block.** XLF closed $54.57 on Friday, under the Council's $55.03. 6.02x trailing, 9.29x forward, 1.62% yield, 329 bps under the 10-year. It fails my column again and it held again.
+- **AES** -- score 88, conf 64.4 -- **NOT BOOKED: trigger block.** XLU closed under $43.79 on Tuesday. Price not discovering: $14.94 / $14.97 / $15.02 / $15.02 / $15.02.
+- **PGR** -- score 87, conf 59.9 -- **NOT BOOKED: blocked as a promotion** on the XLF line. 11.7x trailing, 14.5x forward. My own desk wrote that the insurers are at their targets.
+
+**Booked for Cecil: 0.0%.** Vote weight 38.4%, the highest of the three. The first week since 2026-10-12 with no name of mine in the book.
+
+#### The Concession (owned)
+I concede the book and I do not concede the names. The rule that removed them is sound in general: a line that fired is a line that fired, and the Council has a record of losing when it ignored one. But I have to write down what happened under those two lines last week. The funds broke and the stocks did not follow. A sector line is a statement about a fund. I let the Council hang my names on fund lines for nine weeks because the names were in no wiki and there was nothing else to hang them on. That is my failure, not the rule's: **I never gave the Council a line of my own for either stock.**
+
+And the column. Three live weeks, one win, two losses, both losses on insurers in rate weeks. By hand this morning the only name on the whole board that clears the 10-year is EIX at 5.6%, and it is Ophelia's, at the top of the book, with a forward multiple above its trailing. So the one name my column would wave through on yield, it would stop on earnings. I do not know what to do with that except report it.
+
+#### Lesson Learned
+**A name with no line of its own gets judged by its neighbours.** For every name I propose from now on I owe the Council one level on the stock itself -- a price, a multiple, or a yield spread -- that would tell me I am wrong, written before the scan. If I cannot name one, the Council is right to use the fund's. This is a practice, not a rule; nothing here changes the book.
+
+**Cash Target: 40%. Council actual: 20.0%.** The owner's cap sets the number. I would hold bills at 4.12% and my list: MSFT at 20x, ETN at a low, JPM at 12x. None of them is in this book and none of them is mine to add.
+
+-- **Cecil**, The Fundamentalist
