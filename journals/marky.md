@@ -1038,3 +1038,52 @@ On TDG: every clause I have written passes it, and the tape reader in me does no
 - [ ] Cash rule -- 17.3% cash. The floor set it.
 
 -- **Marky**, The Technician
+
+---
+
+## WEEK OF 2026-11-23
+
+### Tape Read
+| Factor | Level | Signal |
+|--------|-------|--------|
+| SPY | $689.81, **-8.56% W/W**, under its 200D ($732.76) and 50D ($760.18); RSI 24.9 | Second-worst week on two years of bars. Friday 288% of 20-day volume, closed near the low |
+| VIX | **35.89**, VIX/VIX3M 1.160 | Backwardated since Tuesday. I add nothing until the ratio is under 1.00 |
+| Breadth | 3 of 12 funds over the 50D, 4 of 12 over the 200D | From 8 and 8 |
+| XLP | $90.46, -2.05%, RSI 54.7 | The only fund with an RSI over 50. Half size from $81.70 |
+| XLY | $112.46, -6.27%, closed under the 200D Friday | My stop fired on that close. Flat |
+
+Every stop that could fire, fired. I came in long eight funds and left long three, all reduced.
+
+### Last Week, Scored
+- **TDG** booked 19.1% -> **stopped Thursday at $1,157.63, -5.00%.** It closed Friday at $1,121.22. Held, it was -7.99%.
+- **FAST** booked 11.2% -> **stopped Friday at the open, $52.50, -5.01%.** Thursday's low held the stop by six cents; Friday gapped through it. Held, it was -8.43%.
+- My sleeve: -1.52 points of the book on 30.3%. The stops saved about 0.95 of a point. They are the first two live firings of the rule the owner enforced three weeks ago.
+- **XLI closed under $165.44 on Tuesday**, the line I conceded for three weeks. Out on that close, TDG was -2.66% and FAST -1.66%. The line beat the stop by 2.3 and 3.4 points.
+- What I wrote about TDG last Monday -- "a stock that sells off on its guide, recovers to flat, and does it on shrinking volume has not told me anything yet" -- was the right doubt and I booked it anyway because every clause passed.
+- JNJ, kept out by Rule 1's ratio: -4.28% on the Monday-close basis. Second name the ratio kept out, second to fall.
+
+### Picks (Booked)
+1. **TGT** -- 68.1 -- **BOOKED 23.1%.** "Strong momentum breaking above the 12-week MA" -- above it ten of ten, a level, not a crossing. Reported Wednesday; +2.7% on the week. **Rule 1: 156% of the 20-day on the signal day (171% trimmed), and the bar closed under its open ($170.00 -> $165.83). Fail on the sign clause.** And it is a print-week ratio, which I said last Monday I would report in words: Wednesday was 320%. Trigger: an XLP close under $86.34, 4.6% away.
+2. **ORLY** -- 56.5 -- **BOOKED 17.0%.** "Low volatility uptrend with clean price action" -- Rule 1 N/A. $92.65, five closes inside 76 cents, over its 50D and 200D when its fund is under both. In no wiki. Trigger: an XLY close under $111.50, 0.9% away.
+3. **PG** -- 53.9 -- **BOOKED 8.1% by promotion.** "Technical breakout with volume rising." **Rule 1: 125% (129% trimmed), bar closed under its open ($171.00 -> $169.37). Fail on the sign clause.** A 52-week high on Monday, lower every day to Thursday. Shares TGT's line.
+
+**Booked for Marky: 48.2%**, three of five names, the largest sleeve I have had since 2026-10-12. Vote weight 30.0%, the lowest of the three.
+
+### The Concession (owned)
+My vote weight is the lowest on the Council and I hold the most of the book. That is inheritance: Cecil's two names were blocked and the arithmetic handed me the room, plus the cap raise Ophelia's freeze declined. It is the 2026-10-12 shape again, and that week the book lost 5.16%.
+
+My own rule fails two of my three names. I wrote the sign clause on November 9 and it has now been applied to four bars: TDG passed and was stopped; JNJ passed the sign and failed the ratio and fell; TGT and PG fail it today and are booked. I am not asking the Council to treat Rule 1 as a gate. I am writing down that the book holds 31.2% in two names my rule would not buy.
+
+And the fund. My discretionary desk wrote "No new position into a VIX of 36" on Friday night. My engine has ORLY on that fund Monday morning. Fourth straight week my desk and my engine disagree on a fund; last week it cost two stops.
+
+### Lesson Learned
+**The line under two names is worth more than the stop under each.** XLI closed under $165.44 on Tuesday with two of my names on it. The stop got me out two and three days later, 2.3 and 3.4 points lower. On 2026-10-19 the same thing happened on a different line. Two for two. I am not writing a rule -- the owner has that amendment in front of him and it is his. The practice: when two of my names share a line, I say on Monday which close fires both, and on the day it closes under I say so in the log, whether or not anything is sold. This week that line is **XLP $86.34, under TGT and PG.**
+
+### Golden Rules Check
+- [x] DXY > 101 + 10Y > 4.5% -- DXY **103.81**, 10Y 4.912%. Both lit, ninth week. No commodity name in my three.
+- [x] "Good news = sell" -- NVIDIA beat, raised, and fell 22.9%. On.
+- [ ] 3+ canaries/regime flags -- **2 flags raised** (VIX > 22 new, CPI carried); Canary ELEVATED, two of four strict criteria. Not three flags.
+- [ ] VIX < 16 + bad breadth -- no: VIX 35.89.
+- [ ] Cash rule -- 20.0% cash. The cap set it. My desks are flat nine funds of twelve.
+
+-- **Marky**, The Technician
