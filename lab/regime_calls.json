@@ -1,0 +1,22 @@
+{
+ "schema": "regime-calls/v1",
+ "rules": "lab/README.md, Pass 66",
+ "rule": "defensive when the Saturday regime issue counts 2 or more flags up, trending otherwise",
+ "calls": [
+  {
+   "friday": "2026-11-20",
+   "applies_to_week_of": "2026-11-23",
+   "flags_up": 2,
+   "call": "defensive",
+   "issue": 223,
+   "heading": "Regime flags: 2 up",
+   "carried": false,
+   "logged": "2026-11-23T07:40:50",
+   "late": false,
+   "context_not_scored": {
+    "canary": "ELEVATED",
+    "posture": "Defensive and still."
+   }
+  }
+ ]
+}
