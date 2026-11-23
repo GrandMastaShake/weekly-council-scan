@@ -8115,3 +8115,127 @@ would be a new registration.
 
     python lab/forward_book.py            # settle, mark, decide; writes the ledger and BOOK.md
     python lab/forward_book.py plan       # print what it would do; write nothing
+
+## Pass 64 -- how many names does the edge need? The trend-strength book at 5, 10, 20 and 30 slots (registered 2026-11-21 before any run)
+
+Offered to the owner on 2026-11-21 among things worth trying: "You can
+run two". Lab only. Every trend-strength result so far is a ten-name
+book, and Pass 62 showed how much one ten-name path owes to its start.
+If trend strength is a real tilt it should still show when the book
+holds twenty or thirty names; if it shows only at five or ten it is a
+few names.
+
+**The books.** Pass 61's flat trend-strength book (positions drifting,
+top 500, 20% exit, no new buys in a cold market) with **5, 10, 20 and
+30 slots**, each with and without the sector cap. The cap keeps its
+proportion, three in ten: 2 of 5 (the nearest whole number), 3 of 10,
+6 of 20, 9 of 30. Eight books.
+
+**Control.** For each size, 100 random books of the same size that fill
+slots at random from the screen, no cap.
+
+**Lines (fixed).** *The edge is a tilt* if the capped book at 20 slots
+and at 30 slots are each at or above the 75th percentile of their own
+size's random books in each of the three periods. *More names buy a
+better ride* if the capped book's thirty-year largest drawdown at 20
+and at 30 slots is shallower than the ten-slot book's by six points or
+more (the noise band of Pass 62) with a Sharpe ratio no lower.
+
+**Limits.** As Passes 59 to 62. The screen holds a median of about 80
+names, so a 30-slot book owns more than a third of it and its random
+books cannot differ from it by much: a high percentile is harder to
+reach at 30 for that reason alone, which works against the idea, not
+for it.
+
+**Predictions.** (1) The return falls as slots rise: about 18% at ten,
+15% to 16% at twenty, 14% at thirty. (2) The capped 20-slot book clears
+the percentile line; the 30-slot book misses one period. (3) The
+drawdown is shallower by six points or more at twenty and thirty, with
+Sharpe higher: more names buy a better ride. (4) Five slots has the
+highest return and the deepest drawdown of the four.
+
+    python lab/pass64_how_many_names.py          # full run
+    python lab/pass64_how_many_names.py smoke    # plumbing: 300 names
+
+## Pass 64 results -- the edge is a tilt: it is still there at thirty names, in every period; more names do not buy the better ride I expected
+
+Run 2026-11-21, `lab/results/pass64_how_many_names.json`. Trend-strength
+picks, positions drifting, 1996 to 2026. Compound return a year;
+percentile among 100 random books of the same size in brackets.
+
+| Book | Unseen: 1996-07 to 2006-10 | 2006-11 to 2016-11 | 2016-11 to 2026-11 | Everything | Sharpe | Largest drawdown | Random books: return / drawdown |
+|---|---|---|---|---|---|---|---|
+| 5 slots, cap of 2 | 21.5% (99) | 13.2% (95) | 31.5% (100) | 21.8% | 0.85 | -64.4% | 10.5% / -42.8% |
+| 10 slots, cap of 3 | 20.0% (99) | 14.5% (97) | 20.2% (100) | 18.5% | 0.86 | -45.6% | 11.8% / -36.8% |
+| **20 slots, cap of 6** | 18.5% (99) | 11.7% (85) | 16.7% (99) | 15.8% | 0.85 | -43.0% | 11.8% / -33.5% |
+| **30 slots, cap of 9** | 17.9% (100) | 11.4% (90) | 16.4% (100) | 15.3% | 0.87 | -40.4% | 11.5% / -31.4% |
+| 5 slots, no cap | 28.4% (100) | 11.9% (90) | 24.7% (100) | 21.5% | 0.81 | -49.3% | |
+| 10 slots, no cap | 21.2% (99) | 14.8% (100) | 17.6% (100) | 18.1% | 0.81 | -52.9% | |
+| 20 slots, no cap | 19.9% (100) | 12.4% (95) | 16.5% (99) | 16.4% | 0.84 | -52.0% | |
+| 30 slots, no cap | 17.9% (100) | 11.6% (93) | 14.0% (100) | 14.6% | 0.82 | -46.8% | |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% | |
+
+**Against the lines.**
+- *The edge is a tilt:* **yes.** The capped book is at the 99th, 85th
+  and 99th percentile of its random books at twenty slots and the
+  100th, 90th and 100th at thirty. Every one of the eight books is at
+  or above the 85th percentile in every period.
+- *More names buy a better ride:* **no.** The thirty-year drawdown is
+  shallower than the ten-slot book's by 2.6 points at twenty and 5.2 at
+  thirty, under the six-point noise band, and Sharpe is level (0.85 and
+  0.87 against 0.86).
+
+**How to read it.**
+1. *Trend strength is not a few lucky names.* Its lead over random
+   picks from the same screen shrinks as the book fills (about ten
+   points a year at five slots, seven at ten, four at twenty and
+   thirty) and never goes away. This is the first line in the lab that
+   a result has cleared at its registered setting and at a harder one.
+2. *The lead is thinnest where it has always been thin.* In 2006-16 the
+   thirty-slot book is 0.7 of a point ahead of its random books; in the
+   other two periods four and six and a half.
+3. *The drawdown is the tilt's, not the concentration's.* At every size
+   the trend-strength book falls about nine points further than random
+   books of that size (-64/-46/-43/-40 against -43/-37/-34/-31). Owning
+   three times as many names takes five points off, as it does for the
+   random books. What is left is 2000-02, when the strongest trends in
+   the market were all the same trade.
+4. *The cap goes on helping at every size but five.* It cuts the
+   drawdown by seven to nine points at ten, twenty and thirty slots for
+   under a point of return. At five slots two names a sector is too
+   blunt and the result is noise in both directions.
+5. *Twenty or thirty slots is a fair trade, not a better one.* Three
+   points a year less than ten slots, the same Sharpe, a few points
+   less drawdown, far less dependence on any one name (the largest
+   position ever, 21% to 30% of the book against 44%), and in the last
+   decade still a point ahead of SPY.
+
+**Scored against the predictions.** (1) Held: 18.5%, 15.8%, 15.3%. (2)
+Half: twenty cleared the line, and so did thirty, which I had missing a
+period. (3) Missed: the drawdown gain is under the noise band. (4)
+Held.
+
+**What it means.** The forward ledger's books stay as registered, ten
+slots. If the owner would rather hold more names for the same idea,
+twenty with a cap of six is the version to register beside them; this
+pass says it gives up return, not edge. Count of ideas tried since
+Pass 58: twenty-three, this pass adding a check and not an idea.
+
+## Pass 44 note -- ten marks from the trend-strength rank (2026-11-21, before they trade)
+
+The forward book's first week listed the ten screen names with the
+highest trend strength: GKOS, MRNA, VTRS, TGT, CAH, CART, AIZ, GILD,
+VLTO, R. The owner looked at their charts on 2026-11-21: "They all look
+pretty good but the worst three I would say are TGT, CART and VLTO."
+
+Logged in `lab/owner_marks.json` for the open of 2026-11-23: all ten as
+`potential`, each with its `trend_strength_rank`; the three he liked
+least carry `owner_rank: weakest three of the ten`. They are not marked
+`broken`, because he did not call them broken. AIZ was already a
+`potential` mark of 2026-11-20 and is flagged so that it is not scored
+twice. The ledger now holds 76 rows, 71 scored: 51 potential, 18
+broken, 2 ideal.
+
+What this adds, if he keeps doing it each week: a record of whether his
+eye separates names the rank cannot, his seven against his three, from
+lists the rank chose and not he. Nothing is read from one week's ten.
