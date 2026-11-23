@@ -1,0 +1,76 @@
+week: '2026-11-23'
+lock: 2026-11-23 08:50 ET
+entry_date: '2026-11-23'
+exit_date: '2026-11-27'
+status: open
+benchmark:
+  ticker: SPY
+  entry_price: 724.33
+  entry_price_source: open
+players:
+- player: GrandMastaShake
+  valid: true
+  total_weight: 0.5
+  cash_weight: 0.5
+  picks:
+  - ticker: GKOS
+    weight: 0.1
+    entry_price: 246.19
+    entry_price_source: open
+  - ticker: MRNA
+    weight: 0.1
+    entry_price: 205.0
+    entry_price_source: open
+  - ticker: VTRS
+    weight: 0.1
+    entry_price: 19.725
+    entry_price_source: open
+  - ticker: AIZ
+    weight: 0.1
+    entry_price: 317.79
+    entry_price_source: open
+  - ticker: R
+    weight: 0.1
+    entry_price: 280.745
+    entry_price_source: close_open_rejected
+    open_rejected:
+      open: 281.31
+      high: 280.745
+      low: 279.155
+- player: Umassalum
+  valid: true
+  total_weight: 0.65
+  cash_weight: 0.35
+  picks:
+  - ticker: AAPL
+    weight: 0.15
+    entry_price: 347.78
+    entry_price_source: open
+  - ticker: AMZN
+    weight: 0.1
+    entry_price: 260.26
+    entry_price_source: open
+  - ticker: BUG
+    weight: 0.05
+    entry_price: 47.64
+    entry_price_source: open
+  - ticker: LLY
+    weight: 0.1
+    entry_price: 1345.11
+    entry_price_source: open
+  - ticker: NVDA
+    weight: 0.05
+    entry_price: 167.04
+    entry_price_source: open
+  - ticker: SPCX
+    weight: 0.05
+    entry_price: 140.01
+    entry_price_source: open
+  - ticker: TSLA
+    weight: 0.05
+    entry_price: 374.84
+    entry_price_source: open
+  - ticker: VIXY
+    weight: 0.1
+    entry_price: 22.27
+    entry_price_source: open
