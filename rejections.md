@@ -16,7 +16,7 @@ Booked: ALL 21.0% / TDG 19.1% / COST 18.4% / AES 13.0% / FAST 11.2% (17.3% cash 
 
 Also mirrored here (not Ophelia's, logged for the same counterfactual): **TROW** (Cecil #3, score 89, conf 71.9) not booked by consensus -- $108.93, 10.95x / 10.85x forward, 4.79% yield 36 bps under the 10-year; the swap in Shadow A; **JNJ** (Marky #3, score 100, conf 71.7) not booked by consensus -- $285.75, a two-year high and over its mean target (wiki/healthcare.md), RSI 65.6; **Rule 1 by the number on the signal day (Friday): 84% of 20-day volume, 86% trimmed; the bar closed above its open -- a fail on the ratio, a pass on the new sign clause.**
 
-counterfactual: to be computed (Monday 2026-11-23, date-pinned Mon 2026-11-16 close -> Fri 2026-11-20 close; PEP / MDLZ / WMT each and equal-weighted, and TROW / JNJ each, vs the official booked week).
+counterfactual (computed 2026-11-23, date-pinned Mon 2026-11-16 close -> Fri 2026-11-20 close): **PEP -4.02%** ($146.43 -> $140.54), **MDLZ -1.87%** ($67.54 -> $66.28), **WMT -0.36%** ($128.41 -> $127.95; it reported Thursday inside the blackout and closed the week about flat); equal-weighted **-2.08%** vs the official booked week **-2.60%** on the same hold-to-Friday basis (Tracker-measured from validated Monday opens with the enforced stops: -1.80% vs SPY -7.98%, alpha +6.18%) -- **delta +0.52pp: the rejections beat the hold-to-Friday book and lost to the stopped book by 0.28pp.** Mirrored names: **TROW -6.46%** ($107.96 -> $100.99) and **JNJ -4.28%** ($282.55 -> $270.47), equal-weighted -5.37%, delta -2.77pp: both lost to the book; JNJ is the second name Marky's Rule 1 kept out by the ratio and the second to fall (MMM -2.63% the week before). SPY -6.78% on the same basis.
 
 ---
 
