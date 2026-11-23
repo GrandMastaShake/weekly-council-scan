@@ -2,11 +2,13 @@ week: '2026-11-16'
 lock: 2026-11-16 08:50 ET
 entry_date: '2026-11-16'
 exit_date: '2026-11-20'
-status: open
+status: closed
 benchmark:
   ticker: SPY
   entry_price: 749.66
   entry_price_source: open
+  exit_price: 689.81
+  return_pct: -7.98
 players:
 - player: Umassalum
   valid: true
@@ -15,36 +17,54 @@ players:
   picks:
   - ticker: AAPL
     weight: 0.1
-    entry_price: 357.1
+    entry_price: 357.13
     entry_price_source: open
+    exit_price: 342.56
+    return_pct: -4.08
   - ticker: AMZN
     weight: 0.1
-    entry_price: 262.71
+    entry_price: 262.4
     entry_price_source: open
+    exit_price: 246.82
+    return_pct: -5.94
   - ticker: BUG
     weight: 0.05
-    entry_price: 44.37
+    entry_price: 44.39
     entry_price_source: open
+    exit_price: 45.03
+    return_pct: 1.44
   - ticker: GTLB
     weight: 0.05
     entry_price: 47.09
     entry_price_source: open
+    exit_price: 43.17
+    return_pct: -8.32
   - ticker: MSFT
     weight: 0.05
-    entry_price: 525.09
+    entry_price: 524.0776
     entry_price_source: open
+    exit_price: 484.52
+    return_pct: -7.55
   - ticker: NVDA
     weight: 0.4
-    entry_price: 159.0025
+    entry_price: 159.02
     entry_price_source: open
+    exit_price: 125.53
+    return_pct: -21.06
   - ticker: SPCX
     weight: 0.1
-    entry_price: 138.45
+    entry_price: 138.5
     entry_price_source: open
+    exit_price: 127.79
+    return_pct: -7.73
   - ticker: TSLA
     weight: 0.05
-    entry_price: 387.105
+    entry_price: 387.0
     entry_price_source: open
+    exit_price: 345.82
+    return_pct: -10.64
+  weekly_return_pct: -11.45
+  alpha_vs_spy_pct: -3.47
 - player: GrandMastaShake
   valid: true
   total_weight: 0.7
@@ -54,19 +74,31 @@ players:
     weight: 0.2
     entry_price: 93.13
     entry_price_source: open
+    exit_price: 90.46
+    return_pct: -2.87
   - ticker: XLV
     weight: 0.15
     entry_price: 190.51
     entry_price_source: open
+    exit_price: 177.24
+    return_pct: -6.97
   - ticker: XLF
     weight: 0.15
     entry_price: 58.74
     entry_price_source: open
+    exit_price: 54.57
+    return_pct: -7.1
   - ticker: MSFT
     weight: 0.1
-    entry_price: 525.09
+    entry_price: 524.0776
     entry_price_source: open
+    exit_price: 484.52
+    return_pct: -7.55
   - ticker: XLE
     weight: 0.1
     entry_price: 64.52
     entry_price_source: open
+    exit_price: 60.51
+    return_pct: -6.22
+  weekly_return_pct: -4.06
+  alpha_vs_spy_pct: 3.92

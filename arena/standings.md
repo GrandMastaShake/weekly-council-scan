@@ -6,14 +6,16 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 
 | Player | Weeks | Avg Weekly Return | Avg Alpha vs SPY | Head-to-Head vs Council | Best Week |
 |---|---|---|---|---|---|
-| GrandMastaShake | 14 | -0.14% | +0.03% | 6-8 | +3.40% (2026-09-21) |
-| Umassalum | 12 | -1.16% | -1.10% | 7-5 | +2.52% (2026-08-03) |
-| 🏛️ The Council | 15 | -0.57% | -0.62% | -- | +2.12% (2026-10-19) |
+| GrandMastaShake | 15 | -0.40% | +0.29% | 6-9 | +3.40% (2026-09-21) |
+| Umassalum | 13 | -1.95% | -1.29% | 7-6 | +2.52% (2026-08-03) |
+| 🏛️ The Council | 16 | -0.65% | -0.17% | -- | +2.12% (2026-10-19) |
 
 ## Weekly Results
 
 | Week | Player | Weekly Return | Alpha vs SPY | Council Return | Week Winner |
 |---|---|---|---|---|---|
+| 2026-11-16 | GrandMastaShake | -4.06% | +3.92% | -1.80% | 🏆 The Council |
+| 2026-11-16 | Umassalum | -11.45% | -3.47% | -1.80% | 🏆 The Council |
 | 2026-11-09 | Umassalum | +1.41% | -0.26% | +0.91% | 🏆 Umassalum |
 | 2026-11-09 | GrandMastaShake | -1.18% | -2.85% | +0.91% | 🏆 Umassalum |
 | 2026-11-02 | GrandMastaShake | -0.62% | +2.56% | +0.50% | 🏆 The Council |
@@ -40,6 +42,8 @@ All-time leaderboard. Players are scored on weekly weighted return and alpha vs 
 | 2026-08-10 | GrandMastaShake | +1.83% | +1.35% | 0.00% (cash -- ENGINE ABORT) | 🏆 GrandMastaShake |
 | 2026-08-03 | Umassalum | +2.52% | -0.66% | -1.03% | 🏆 Umassalum |
 | 2026-07-27 | GrandMastaShake | +0.61% | +0.33% | -1.52% | 🏆 GrandMastaShake |
+
+**Basis note (2026-11-16, closed 2026-11-23):** every book is on the same basis -- validated Monday 2026-11-16 opens -> Friday 2026-11-20 close (Arena SPY $749.66 -> $689.81, -7.98%; the Tracker's SPY window is identical). **The Council -1.80%, alpha +6.18%, wins the week** (AES +0.74% the one green; ALL -1.11%, COST -0.81%; TDG -5.00% and FAST -5.01% were stopped by the enforced -5% CORE stop on Thursday and Friday and would have been -7.99% and -8.43% held to the close; 82.7% invested) and beats both players head-to-head. **GrandMastaShake -4.06%, alpha +3.92%** (five funds, all red: XLP -2.87%, XLE -6.22%, XLV -6.97%, XLF -7.10%, MSFT -7.55%; 70% invested, 30% cash did the work; his record goes to 6-9). **Umassalum -11.45%, alpha -3.47%** (NVDA at 40% lost 21.06%; TSLA -10.64%, GTLB -8.32%, SPCX -7.73%, MSFT -7.55%, AMZN -5.94%, AAPL -4.08%; BUG +1.44% the one green; 90% invested; his record goes to 7-6). SPY's -7.98% is the worst week of the Arena's record. All-time averages are recomputed from the weekly rows: the Council's 16-week average return is -0.65%; its average alpha is -0.17% over the 15 booked weeks (2026-09-14 on its restated -0.92, the 2026-08-10 abort week excluded).
 
 **Basis note (2026-11-09, closed 2026-11-16):** every book is on the same basis -- validated Monday 2026-11-09 opens -> Friday 2026-11-13 close (Arena SPY $741.95 -> $754.37, +1.67%; the Tracker's SPY window is identical). **Umassalum +1.41%, alpha -0.26%, wins the week** (TSLA +8.32%, LLY +5.85%, AAPL +3.35%, SPCX +1.90%, BUG +1.72% carried; MSFT -3.79%, AMZN -0.99%, GTLB -0.17% cost; 65% invested) and beats the Council head-to-head (7-5). **The Council +0.91%, alpha -0.76%** (ALL +4.29%, PGR +2.94%, UPS +2.40% green; NEE -2.84%, D -2.20% red on the 10-year's move back over 5%; 83.8% invested; no CORE stop fired; the book was opened late, on Wednesday, at the validated Monday opens) -- beats GrandMastaShake (his record goes to 6-8) and loses to Umassalum, ending a run of three Council week wins. **GrandMastaShake -1.18%, alpha -2.85%** (XLP +2.37% the one green; GLD -6.02% as the dollar made a 52-week high, MSFT -3.79%, AMZN -0.99%, MCO -0.50%; 70% invested). No book beat SPY in a week all twelve sector funds rose. The close run re-fetched the settled Monday bars. All-time averages are recomputed from the weekly rows: the Council's 15-week average is -0.57% / alpha -0.62%.
 
