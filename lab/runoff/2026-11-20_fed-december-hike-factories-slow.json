@@ -1,0 +1,69 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-20",
+  "slug": "fed-december-hike-factories-slow",
+  "headline": "The Fed Still Plans to Hike: Fed minutes said higher rates are needed in December and probably after; odds about 95%. Two factory surveys fell by more than half; import prices rose 1.1%.",
+  "source": "README Market Brief 2026-11-21"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "SNEX",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "the Fed says it will raise rates in December and probably after",
+    "brokers that hold client margin cash earn more interest on it"
+   ],
+   "expected": 1,
+   "exposure_source": "StoneX Group 10-K FY2025 (September year), Item 7: interest and fee income earned on client balances"
+  },
+  {
+   "ticker": "KMT",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "two factory surveys fall by more than half as rates head higher",
+    "machine shops cut less metal and buy fewer cutting tools"
+   ],
+   "expected": -1,
+   "exposure_source": "Kennametal 10-K FY2026 (June year), Item 1: Metal Cutting segment sells tooling to general engineering and transportation customers"
+  },
+  {
+   "ticker": "TBI",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "two factory surveys fall by more than half as rates head higher",
+    "manufacturers and warehouses drop temporary workers first"
+   ],
+   "expected": -1,
+   "exposure_source": "TrueBlue 10-K FY2025, Item 1: PeopleReady supplies on-demand industrial staffing to manufacturing and logistics clients"
+  },
+  {
+   "ticker": "ARCB",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "two factory surveys fall by more than half as rates head higher",
+    "factories ship fewer pallets of parts and goods",
+    "less-than-truckload carriers haul less tonnage"
+   ],
+   "expected": -1,
+   "exposure_source": "ArcBest 10-K FY2025, Item 1: Asset-Based segment is less-than-truckload freight through ABF Freight"
+  },
+  {
+   "ticker": "FIVE",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "import prices rise 1.1% in one month",
+    "retailers that import most goods and sell at fixed low price points pay more and cannot pass it all on"
+   ],
+   "expected": -1,
+   "exposure_source": "Five Below 10-K FY2025 (January year), Item 1 and Item 1A: much of its merchandise is imported; most price points are $5 and below"
+  }
+ ]
+}

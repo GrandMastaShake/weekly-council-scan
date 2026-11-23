@@ -1,0 +1,46 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-20",
+  "slug": "medicare-audits-hit-insurers",
+  "headline": "Health Care's Own Storm: Medicare proposed audits of insurers reaching back to 2018, worth about $9B a year. UnitedHealth -16.6%, CVS -9.5%. Health care fund -6.2%.",
+  "source": "README Market Brief 2026-11-21"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "ALHC",
+   "type": "competitor",
+   "degree": 1,
+   "chain": [
+    "Medicare proposes audits of Medicare Advantage insurers back to 2018; a plan that sells only that product is fully exposed"
+   ],
+   "expected": -1,
+   "exposure_source": "Alignment Healthcare 10-K FY2025, Item 1: its business is Medicare Advantage plans"
+  },
+  {
+   "ticker": "AGL",
+   "type": "customer",
+   "degree": 2,
+   "chain": [
+    "Medicare proposes audits of Medicare Advantage insurers back to 2018",
+    "insurers code diagnoses more cautiously, so doctor groups paid a share of plan premium receive less"
+   ],
+   "expected": -1,
+   "exposure_source": "agilon health 10-K FY2025, Item 1: partners with physician groups in risk arrangements paid from Medicare Advantage plan premiums"
+  },
+  {
+   "ticker": "EHTH",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "Medicare proposes audits of Medicare Advantage insurers back to 2018",
+    "insurers trim benefits, marketing budgets and the counties they serve",
+    "brokers that enroll seniors in those plans earn fewer commissions"
+   ],
+   "expected": -1,
+   "exposure_source": "eHealth 10-K FY2025, Item 1: most revenue is commissions from carriers on Medicare Advantage enrollments"
+  }
+ ]
+}

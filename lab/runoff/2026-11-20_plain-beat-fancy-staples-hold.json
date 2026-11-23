@@ -1,0 +1,59 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-20",
+  "slug": "plain-beat-fancy-staples-hold",
+  "headline": "Plain Beat Fancy: household-goods stocks -2.1%, utilities -3.1%. Verizon, AT&T, Duke, Southern, General Mills and Campbell's all rose. Target rose 2.7% after earnings; Walmart was flat.",
+  "source": "README Market Brief 2026-11-21"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "SENEA",
+   "type": "competitor",
+   "degree": 2,
+   "chain": [
+    "soup and cereal makers rise while the market falls 8.6%",
+    "funds wanting the same shelter reach for smaller makers of the same pantry goods"
+   ],
+   "expected": 1,
+   "exposure_source": "Seneca Foods 10-K FY2026 (March year), Item 1: packaged vegetables and fruit, mostly canned, sold to grocers"
+  },
+  {
+   "ticker": "NWN",
+   "type": "competitor",
+   "degree": 2,
+   "chain": [
+    "regulated power companies rise while the market falls 8.6%",
+    "funds wanting the same shelter reach for small regulated gas utilities"
+   ],
+   "expected": 1,
+   "exposure_source": "Northwest Natural Holding 10-K FY2025, Item 1: regulated natural gas distribution in Oregon and southwest Washington"
+  },
+  {
+   "ticker": "SLGN",
+   "type": "supplier",
+   "degree": 3,
+   "chain": [
+    "households and investors retreat to pantry basics",
+    "soup and vegetable canners run more volume",
+    "they buy more steel food cans"
+   ],
+   "expected": 1,
+   "exposure_source": "Silgan Holdings 10-K FY2025, Item 1: the largest maker of metal food containers in North America"
+  },
+  {
+   "ticker": "MBUU",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "the exciting stocks lose 12 to 18 percent in a week",
+    "households that own them feel poorer and keep to necessities",
+    "big optional purchases such as powerboats get postponed"
+   ],
+   "expected": -1,
+   "exposure_source": "Malibu Boats 10-K FY2026 (June year), Item 1: designs and makes recreational powerboats sold through dealers"
+  }
+ ]
+}

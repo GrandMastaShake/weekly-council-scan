@@ -1,0 +1,50 @@
+{
+ "trigger": {
+  "kind": "stock",
+  "ticker": "TSN",
+  "day": "2026-11-16",
+  "direction": "up",
+  "move_vs_spy": 0.1063,
+  "volume_x": 2.22,
+  "sector": "Consumer Staples",
+  "sub_industry": "Packaged Foods & Meats",
+  "also_triggered": []
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "PPC",
+   "type": "competitor",
+   "degree": 1,
+   "chain": [
+    "Tyson's results show chicken earning well while beef loses money; the other large chicken producer shares that"
+   ],
+   "expected": 1,
+   "exposure_source": "Pilgrim's Pride 10-K FY2025, Item 1: one of the largest chicken producers, fresh and prepared"
+  },
+  {
+   "ticker": "TXRH",
+   "type": "cost",
+   "degree": 2,
+   "chain": [
+    "Tyson's beef unit loses money because cattle are scarce and dear",
+    "steakhouses pay more for the beef that is their largest food cost"
+   ],
+   "expected": -1,
+   "exposure_source": "Texas Roadhouse 10-K FY2025, Item 1A and Item 7: beef is the largest component of its commodity basket"
+  },
+  {
+   "ticker": "ELAN",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "Tyson's beef unit loses money because cattle are scarce and dear",
+    "ranchers are paid high prices and keep more heifers to rebuild herds",
+    "they buy more cattle vaccines, implants and feed additives"
+   ],
+   "expected": 1,
+   "exposure_source": "Elanco Animal Health 10-K FY2025, Item 1: Farm Animal products include cattle vaccines, implants and feed additives"
+  }
+ ]
+}

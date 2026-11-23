@@ -1,0 +1,69 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-20",
+  "slug": "fear-came-back-vix-doubles",
+  "headline": "Fear Came Back: VIX 35.89 from 19.30. Gold -9.5%, Bitcoin -13.9%, copper -9.9% and oil -5.2% all fell with stocks. Only Treasury bonds rose.",
+  "source": "README Market Brief 2026-11-21"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "VIRT",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "the VIX nearly doubles and investors sell everything at once",
+    "trading volumes jump and bid-ask spreads widen, which is what market makers earn on"
+   ],
+   "expected": 1,
+   "exposure_source": "Virtu Financial 10-K FY2025, Item 1 and Item 1A: market making revenue depends on trading volumes and volatility"
+  },
+  {
+   "ticker": "TW",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "investors sell stocks, gold and Bitcoin and buy Treasury bonds",
+    "Treasury trading volume on electronic bond platforms jumps"
+   ],
+   "expected": 1,
+   "exposure_source": "Tradeweb Markets 10-K FY2025, Item 1: electronic marketplaces for rates products including U.S. Treasuries, paid by volume"
+  },
+  {
+   "ticker": "FHI",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "investors sell whatever they can to raise cash",
+    "the cash lands in money-market funds, whose managers are paid on the balances"
+   ],
+   "expected": 1,
+   "exposure_source": "Federated Hermes 10-K FY2025, Item 1: money market assets are the majority of its managed assets"
+  },
+  {
+   "ticker": "EVR",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "the VIX closes near 36 and a record stock-market debut sinks",
+    "companies postpone share offerings and mergers, so advisory and underwriting fees slip"
+   ],
+   "expected": -1,
+   "exposure_source": "Evercore 10-K FY2025, Item 1: Investment Banking and Equities segment earns advisory and underwriting fees"
+  },
+  {
+   "ticker": "CG",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "the VIX closes near 36 and a record stock-market debut sinks",
+    "the market for new listings and company sales freezes",
+    "buyout firms cannot sell holdings, so realized performance fees fall"
+   ],
+   "expected": -1,
+   "exposure_source": "Carlyle Group 10-K FY2025, Item 1 and Item 1A: performance allocations are realized when fund investments are sold"
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "trigger": {
+  "kind": "story",
+  "day": "2026-11-20",
+  "slug": "nvidia-beat-then-probe-reports",
+  "headline": "NVIDIA Beat, Then Broke: sales $115.8B and forecast $130B, both above expectations; then press reports of an SEC probe of its disclosures and accounting (not confirmed by the SEC or NVIDIA). NVDA -22.9%, its seventh down week; chip fund -17.8%.",
+  "source": "README Market Brief 2026-11-21"
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "FCN",
+   "type": "demand",
+   "degree": 2,
+   "chain": [
+    "press reports say the SEC is probing NVIDIA's disclosures and accounting",
+    "boards and law firms at NVIDIA and its partners hire forensic accountants for independent reviews"
+   ],
+   "expected": 1,
+   "exposure_source": "FTI Consulting 10-K FY2025, Item 1: Forensic and Litigation Consulting segment does forensic accounting and regulatory investigations"
+  },
+  {
+   "ticker": "SMCI",
+   "type": "customer",
+   "degree": 2,
+   "chain": [
+    "doubt over NVIDIA's numbers puts every AI spending plan built on them in question",
+    "buyers of GPU servers hold orders until the doubt clears"
+   ],
+   "expected": -1,
+   "exposure_source": "Super Micro Computer 10-K FY2026 (June year), Item 1: server and storage systems, including GPU-based AI platforms"
+  },
+  {
+   "ticker": "STRL",
+   "type": "demand",
+   "degree": 3,
+   "chain": [
+    "doubt over NVIDIA's numbers puts every AI spending plan built on them in question",
+    "data-center developers slow the start of new campuses",
+    "site-preparation contractors book fewer large data-center jobs"
+   ],
+   "expected": -1,
+   "exposure_source": "Sterling Infrastructure 10-K FY2025, Item 1: E-Infrastructure Solutions segment does site development for data centers"
+  },
+  {
+   "ticker": "MOD",
+   "type": "supplier",
+   "degree": 3,
+   "chain": [
+    "doubt over NVIDIA's numbers puts every AI spending plan built on them in question",
+    "data-center developers slow the start of new campuses",
+    "orders for data-center cooling equipment get pushed out"
+   ],
+   "expected": -1,
+   "exposure_source": "Modine Manufacturing 10-K FY2026 (March year), Item 1: Climate Solutions segment sells data center cooling products"
+  },
+  {
+   "ticker": "HPQ",
+   "type": "cost",
+   "degree": 3,
+   "chain": [
+    "doubt over the AI build-out spreads from NVIDIA to memory makers",
+    "memory makers lose the pricing power that AI server demand gave them",
+    "PC makers pay less for the memory chips in each machine"
+   ],
+   "expected": 1,
+   "exposure_source": "HP Inc 10-K FY2025 (October year), Item 1 and Item 1A: Personal Systems segment; component costs including memory affect margins"
+  }
+ ]
+}

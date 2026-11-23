@@ -1,0 +1,49 @@
+{
+ "trigger": {
+  "kind": "stock",
+  "ticker": "WSM",
+  "day": "2026-11-19",
+  "direction": "down",
+  "move_vs_spy": -0.132,
+  "volume_x": 4.46,
+  "sector": "Consumer Discretionary",
+  "sub_industry": "Homefurnishing Retail",
+  "also_triggered": []
+ },
+ "model": "claude-fable-5-2",
+ "recorded_at": "2026-11-23T00:55:05-05:00",
+ "links": [
+  {
+   "ticker": "ARHS",
+   "type": "competitor",
+   "degree": 1,
+   "chain": [
+    "Williams-Sonoma shows sales slowing at Pottery Barn; a premium furniture chain sells to the same shopper"
+   ],
+   "expected": -1,
+   "exposure_source": "Arhaus 10-K FY2025, Item 1: premium home furnishings sold through showrooms and online"
+  },
+  {
+   "ticker": "LEG",
+   "type": "supplier",
+   "degree": 2,
+   "chain": [
+    "Williams-Sonoma shows demand for premium home furnishings slowing",
+    "upholstery makers build fewer sofas and chairs and buy fewer frames, mechanisms and fabrics"
+   ],
+   "expected": -1,
+   "exposure_source": "Leggett and Platt 10-K FY2025, Item 1: Furniture, Flooring and Textile Products segment sells components to upholstered furniture makers"
+  },
+  {
+   "ticker": "HOFT",
+   "type": "supplier",
+   "degree": 2,
+   "chain": [
+    "Williams-Sonoma shows demand for premium home furnishings slowing",
+    "furniture retailers order less from the companies that design and import it"
+   ],
+   "expected": -1,
+   "exposure_source": "Hooker Furnishings 10-K FY2026 (January year), Item 1: designs, imports and makes residential furniture sold to retailers"
+  }
+ ]
+}
