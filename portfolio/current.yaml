@@ -1,0 +1,98 @@
+week: '2026-11-23'
+status: open
+positions:
+- ticker: EIX
+  weight: 0.255
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 62.94499969482422
+  entry_date: '2026-11-23'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 59.8
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: TGT
+  weight: 0.231
+  sponsor: Marky
+  thesis: ''
+  entry_price: 165.0
+  entry_date: '2026-11-23'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 156.75
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: ORLY
+  weight: 0.17
+  sponsor: Marky
+  thesis: ''
+  entry_price: 92.57499694824219
+  entry_date: '2026-11-23'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 87.95
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: PG
+  weight: 0.081
+  sponsor: Marky
+  thesis: ''
+  entry_price: 167.52000427246094
+  entry_date: '2026-11-23'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 159.14
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+- ticker: SHW
+  weight: 0.063
+  sponsor: Ophelia
+  thesis: ''
+  entry_price: 345.20001220703125
+  entry_date: '2026-11-23'
+  entry_price_source: open
+  tier: CORE
+  stop_pct: -5.0
+  stop_loss: 327.94
+  target: null
+  direction: long
+  status: open
+  exit_price: null
+  exit_date: null
+  exit_reason: null
+  pnl_pct: null
+spy_entry: 724.3300170898438
+spy_entry_source: open
+vix_at_entry: 35.89
+fed_stance: Tightening. The FOMC held 3.75-4.00% on 2026-10-28 after the +25bp hike
+  of 2026-09-16; the October minutes (released Nov 18) say higher rates are needed
+  in December and probably early next year, and a December hike is about 95-96% priced
+  (macro/facts.json policy.fed_stance = "Hike", policy.next_macro_gate; wiki/synthesis.md
+  Section 3; wiki/economic-calendar.md Regime Risk Flags). Next decision Dec 9.
+total_weight: 0.8
+cash_weight: 0.19999999999999996
