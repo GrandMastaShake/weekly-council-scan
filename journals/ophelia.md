@@ -830,3 +830,49 @@ Third, **my vote weight fell to 31.8% and my sleeve to one name, and that is the
 **Cash Target: 30%. Council actual: 17.3%.** My desks hold 25-30% with two flags up and the 10-year 9.6 bps from the crisis line. The floor set the number. The book holds an insurer, two industrials, Costco and a utility that does not move.
 
 -- **Ophelia**, Macro Oracle
+
+---
+
+## Week of 2026-11-23 -- The Freeze Rule Binds for Its Own Reason; My Name Is the Top Weight of a Book My Calendar Desk Would Not Open
+
+### 1. Macro Narrative
+There was no rotation. All twelve sectors fell; ten fell less than the index only because the index is two sectors. **Liquidation, a hike still priced, and credit following.** The 10-year fell 24 bps to 4.912% on fear, not on the Fed: the bill did not move, the minutes say December, and the curve lost 24 bps to +79. HY OAS 352, HY-IG 258, three prints over 250, and Friday is not in those numbers. Gold, Bitcoin and copper fell with stocks. The Treasury is the last hedge and it is one session old.
+
+Two flags up (VIX > 22 new; CPI carried). Canary ELEVATED. My calendar desk wrote: bills first, hedges at full size, no new gross equity exposure while VIX closes over 30, and no selling into a 36 VIX.
+
+### 2. Last Week, Scored
+- **COST** booked 18.4% -> **-0.81%** ($1,110.46 -> $1,102.15), the second-best name in the book. The name my desk would not add to, in a week it mattered that it was a staple.
+- **XLP closed at $89.86 on Thursday, 38 cents over my line; the low printed $89.29.** Not fired on a close.
+- **Section 6, scored:** Warsh and 50 bp -- no. XLP under $89.48 -- no on a close. WMT or TGT soft -- no, both beat. Retail sales under -0.1% -- no (+0.2%). **HY-IG back over 250 -- yes: 251 / 254 / 258.** The 10Y back under 5.00% -- yes, Friday. Two of six, and neither was the one that set the week: I did not have a line for an SEC probe.
+- **The cut rule** (unadopted): it would have fired this week for its own reason, the first time. My sleeve was one name that lost 0.81%, so halving it would have saved about 0.07 of a point. A correct trigger and nothing to show for it.
+- **The field I added last week:** did the trigger's own variable move the way the rule assumed? Freeze rule: yes, HY OAS 320 -> 352.
+
+### 3. My Proposals to the Council
+- **EIX** -- macro score 57, confidence 53.0 -- **BOOKED 25.5%, the top weight.** The template says "Aligned with Energy sector rotation"; Edison is a regulated electric utility and the energy fund lost 6.85%. Judged on the utilities page: $62.24, +3.4% in a week XLU lost 3.07%, with no item found to explain it; 5.6% yield, the one name on the board over the 10-year; 6.6x trailing, 9.6x forward; 8.1% under its 200-day; a strict-liability trial in January. My utilities desk holds regulated wires at half size. Trigger: an XLU close under $41.91, 1.8% away, with a 10Y close over 5.00% carried beside it.
+- **AES** -- 52, conf 39.2 -- **NOT BOOKED: trigger block** (XLU closed under $43.79 Tuesday). Also Cecil's.
+- **SHW** -- 51, conf 36.3 -- **BOOKED 6.3% by promotion.** Coatings, not a commodity long; -2.9% in a week XLB lost 7.45%. Trigger: an XLB close under $48.05, 0.6% away.
+
+**Booked for Ophelia: 31.8%.** Vote weight 31.6%. Both names frozen at their pre-raise weights under my freeze rule: EIX would have been 27.4% and SHW 6.8%.
+
+### 4. The Concession (owned)
+First, **the size is arithmetic.** My confidence in EIX is 53. It is the top weight because two names above it were removed and the engine's controls re-weighted what was left. A 53 at 25.5% is not a position I argued for, and the freeze rule is the only thing I did about it: it kept 1.9 points out of the name.
+
+Second, **my calendar desk and the book are on opposite sides, and this time it is not my engine's fault.** I wrote "no new gross equity exposure while VIX closes over 30." The book is 80% invested because the owner's cap says cash is at most 20% outside an abort. Both are written rules. The owner's outranks mine. I am asking him the question plainly in the report rather than pretending the two agree.
+
+Third, **two of my six "what would make me wrong" lines came true and the week was decided by something not on the list.** Section 6 has been a list of macro levels for months. Last week's shock was a regulator and one company.
+
+### 5. Lesson Learned
+**My list of what would make me wrong only contains things I already watch.** Six lines, all rates, credit and data. The practice: from this week one line of Section 6 must be a named non-macro event -- a regulator, a court, a single company -- with a date. This week it is the one on EIX's own page.
+
+### 6. What Would Make Me Wrong
+- **The 10Y closes back over 5.00%.** Core PCE Wednesday at +0.4% or more does it in a session, and the bid under a 5.6% yield goes with it.
+- **XLU closes under $41.91.** The line under my top weight, 1.8% away.
+- **XLB closes under $48.05.** 29 cents. Then no closing support until $41.48.
+- **A California court or legislative item on wildfire liability before the January trial** (the named non-macro line). The page says EIX gives back its run.
+- **Friday's HY-IG print, posted today, at 280.** Then credit is leading, not following.
+- **VIX closes under 22 by Friday's half day.** Then the relief rally left a utility and a paint company behind and I held the wrong 31.8%.
+
+### 7. Cash
+**Cash Target: 35%. Council actual: 20.0%.** Bills at 4.12%. The cap set the number; my desks would not have.
+
+-- **Ophelia**, Macro Oracle
