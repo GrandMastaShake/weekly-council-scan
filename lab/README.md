@@ -8239,3 +8239,210 @@ broken, 2 ideal.
 What this adds, if he keeps doing it each week: a record of whether his
 eye separates names the rank cannot, his seven against his three, from
 lists the rank chose and not he. Nothing is read from one week's ten.
+
+## Pass 65 -- defensive names where the trend book holds cash (registered 2026-11-23 before any run)
+
+The owner, 2026-11-23, after the Council's book beat SPY in four of the
+last five weeks (about +3% against about -11%) with insurers, staples
+and utilities: "You get picks like this in a down market and our new
+formula picks for a trending market and it might get pretty good!" and
+then "Yes, let's register both!" Lab only.
+
+The Council cannot be run on past weeks: it is a language model reading
+news, and it has read how those weeks ended. This pass tests a
+mechanical stand-in for the idea over the thirty years: when the market
+is cold, own steady names where the trend book would own cash. Pass 58
+found that idle cash in SPY is only more exposure (+1.4 points a year,
+drawdown -45%). The question here is whether steady names are any
+different from that.
+
+**The base.** Pass 61's trend-strength book: ten slots, sector cap of
+three, sold on a weekly close 20% under its high, no new buys while SPY
+closes under its 40-week average, positions drifting, 0.10% a side.
+
+**The steady ten.** From the 500 largest names with a median weekly
+dollar volume of $5M or more and 40 or more weeks of history (no
+channel and no minimum swing asked): the ten with the smallest weekly
+swing (the standard deviation of weekly log returns over two years), at
+most three from one sector. A name is kept while it stays among the
+thirty smallest; an empty place goes to the smallest not held. Equal
+weight, bought at Monday's open, 0.10% a side on every name bought or
+sold.
+
+**The books.**
+1. *Base*: cash when idle.
+2. *Steady names for idle cash*: in a cold week all idle cash goes into
+   the steady ten; in a week that is not cold the steady ten are sold at
+   the open and the cash goes back to the trend book. Trend holdings are
+   kept in both, under their own 20% exit.
+3. *Steady and rising*: as 2, and a steady name must also close above
+   its own 40-week average to be bought or kept; with fewer than five
+   such names the money stays in cash.
+4. *Full switch*: in a cold week every trend holding is sold at the
+   open and the whole book is the steady ten; when the market is no
+   longer cold the steady ten are sold and the trend book is rebuilt.
+   This is the owner's sentence taken literally.
+
+**Controls.** (a) Idle cash in SPY when cold (Pass 58's cell, on this
+book). (b) Idle cash in ten names drawn at random from the same 500,
+kept while they stay in the 500, 100 draws: what ten large names do in
+a cold market with no thought given to which.
+
+**Lines (fixed, against the base, on the thirty years).** A book
+*earns its place* if (i) its return is higher by more than 1.5 points a
+year with a largest drawdown no more than 6 points deeper, or its
+drawdown is shallower by more than 6 points with a return no more than
+1.5 points lower (the noise band of Pass 62); and (ii) its return is
+above the median of the random-names control in at least two of the
+three periods; and (iii) it does not trail the base by more than 1.5
+points a year in any one of the three periods.
+
+**Limits.** The list holds only names alive in 2026, and that flatters
+a steady basket least and a falling market's losers most; it is the
+same list for every cell. The steady ten are a stand-in, not the
+Council: the Council reads news, earnings and the calendar and these
+ten are picked on one number. A pass here says steady names help in
+cold markets; a failure does not say the Council's picks would fail.
+The 40-week rule called the market cold on 2026-11-20, five weeks after
+the Council's book turned defensive, so this pass tests the names under
+a later switch than the Council's own.
+
+**Predictions.** (1) The steady ten fall less than SPY in cold weeks
+but still fall. (2) Book 2 adds about a point a year over the base and
+deepens the drawdown by 3 to 8 points; it does not earn its place.
+(3) Book 3 has the shallowest drawdown of the three and comes closest.
+(4) The full switch has the lowest return of the three: it sells trend
+names that would have survived. (5) Book 2 beats the random-names
+control in return in all three periods. Chance that any book clears all
+three lines: about one in three.
+
+    python lab/pass65_steady_names_when_cold.py          # full run
+    python lab/pass65_steady_names_when_cold.py smoke    # plumbing: 300 names
+
+## Pass 66 -- a third forward line: the trend book when the Council's flags are down, the Council's book when they are up (registered 2026-11-23 before the open)
+
+The same exchange as Pass 65. The Council's good weeks began on
+2026-10-19, while SPY was still above its 40-week average, so the
+40-week rule would have called all of them a trending market. What the
+Council had and the rule did not was its own read. This line follows
+that read on weeks nobody has seen.
+
+**The call.** The Saturday research crew files a regime issue each week
+with a count in its first heading: "Regime flags: N up". The Council's
+own threshold for a review is two (issue #24). The call for the week
+that follows is **defensive** when N is 2 or more and **trending** when
+N is 0 or 1. It is a count the Council publishes, not a judgement made
+here. It is logged in `lab/regime_calls.json` (append-only) by the
+Sunday run, with the issue number and the heading quoted, before
+Monday's open. With no regime issue for a week the last call is carried
+and marked so. The Canary verdict and the synthesis's posture sentence
+are logged beside it as context and are not scored.
+
+**The lines.** Each is a chain of weekly returns from 100 on
+2026-11-20.
+- *On the Council's call*: in a defensive week, the Council's booked
+  return for that week (`portfolio/history`, Monday's open to Friday's
+  close, its stops and its cash included); in a trending week, the week's
+  change in value of Pass 63's "cap of three" book (Friday close to
+  Friday close).
+- *On the 40-week rule* (the control): the same two sources, switched
+  by the trend book's own cold flag: the Council's book when cold, the
+  trend book when not.
+- Beside them, unswitched: the Council's book alone, the trend book
+  alone, SPY (Friday close to Friday close).
+
+A week in which a line changes source is charged 0.20% (one book sold,
+the other bought, 0.10% a side). The Council's week runs from Monday's
+open, so on its weeks the weekend gap is spent in cash. The trend book
+is kept as its own paper book whichever source a line is on, so in a
+trending week that is cold by the 40-week rule the line holds a book
+that is buying nothing.
+
+**Nothing is read before the week ending 2027-11-19** (52 weeks), and
+the verdict is at 104 weeks, as Pass 63.
+
+**Lines (fixed, at 104 weeks).** *The combination earns its place* if
+the line on the Council's call is ahead of the better of its two parts
+(the Council's book alone, the trend book alone) by more than 3 points
+a year, or has a largest drawdown shallower than both by more than 6
+points with a return within 3 points a year of the better part. *The
+read is the edge* if the line on the Council's call is ahead of the
+line on the 40-week rule by more than 3 points a year or 6 points of
+drawdown.
+
+**Limits.** The threshold of two was chosen after seeing five good
+weeks in which two or three flags were up; it is the Council's own
+review threshold, but it has not been tested on anything. The flags
+have been at two or more since at least 2026-10-18, and if they never
+drop the line is simply the Council's book. Two years is at most a few
+switches. The two sources are measured on different clocks (open to
+close, close to close).
+
+**Predictions.** (1) The call is defensive in more than half of the
+first 52 weeks. (2) The line on the Council's call does not beat the
+better of its parts by the band: switching between two books rarely
+beats the better one. About 60%. (3) It ends ahead of the line on the
+40-week rule, inside the band. About 55%.
+
+    python lab/forward_switch.py            # reads the three records, writes the lines into lab/SWITCH.md
+
+## Pass 65 results -- no steady-names book earns its place; in a market the 40-week rule calls cold, the steadiest ten did no better than SPY
+
+Run 2026-11-23 on the script committed before it (9c4c2b4). 1,604
+weeks, 3,004 names, survivors only. 24% of weeks are cold (29%, 26%,
+16% by period).
+
+| Book | 1996-2006 | 2006-2016 | 2016-2026 | Thirty years | Sharpe | Largest drawdown |
+|---|---|---|---|---|---|---|
+| 1 Base: cash when idle | 20.0% | 14.5% | 20.2% | 18.5% | 0.86 | -45.6% |
+| 2 Steady names for idle cash | 23.1% | 12.3% | 21.5% | 19.1% | 0.85 | -46.9% |
+| 3 Steady and rising | 21.4% | 11.3% | 22.5% | 18.6% | 0.84 | -50.5% |
+| 4 Full switch | 21.8% | 8.0% | 25.3% | 18.4% | 0.87 | -44.0% |
+| Control: SPY for idle cash | 21.6% | 12.6% | 24.8% | 19.8% | 0.85 | -56.7% |
+| Control: ten random names, median of 100 | 23.9% | 13.0% | 25.2% | 20.8% | 0.86 | -58.6% |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% |
+
+**The lines.** None earns its place.
+- (i) Against the base on the thirty years: book 2 is +0.6 points a
+  year with a drawdown 1.3 points deeper; book 3 +0.1 and 4.9 deeper;
+  book 4 -0.1 and 1.6 shallower. All inside the noise band.
+- (ii) Above the random-names control's median: book 2 in none of the
+  three periods, book 3 in none, book 4 in one (2016-2026, by 0.1).
+- (iii) No period more than 1.5 points behind the base: all three fail
+  on 2006-2016 (-2.2, -3.2, -6.5), which is 2008: the base lost 24%
+  that year, book 2 lost 36%, book 3 40%.
+
+**Why.** The 381 cold weeks are not falling weeks. SPY rose 0.27% a
+week on average in them and was down in 45%; the steadiest ten rose
+0.23% a week and were down in 43%. Compounded over all of them the ten
+made 114% and SPY 118%. "Under the 40-week average" covers the second
+half of a fall and most of the recovery, and in the recovery steady
+names lag. What the base's cash bought was 2008 and 2002, and every
+book that filled the cash gave some of that back.
+
+**The control.** Ten random large names for the idle cash beat every
+steady book in return and had the deepest drawdown (-58.6%). Much of
+that return is the list: a random name drawn in a cold market is one
+that is still alive in 2026. It is a bar a real book could not have
+cleared, and it says that on this list the steady ten carry no return
+of their own in cold markets.
+
+**Predictions.** (1) "The steady ten fall less than SPY in cold weeks
+but still fall": wrong on both counts; neither falls on average and the
+ten do no better. (2) Book 2 about +1 point with a drawdown 3 to 8
+deeper, not earning its place: right on the verdict and the return
+(+0.6), wrong on the drawdown (1.3). (3) Book 3 shallowest and closest:
+wrong, it is the deepest. (4) The full switch has the lowest return of
+the three: right, by 0.2. (5) Book 2 beats the random names in all
+three periods: wrong, in none. Two right of five.
+
+**What it does and does not say.** Low swing plus the 40-week rule is
+not the Council's book and this does not test the Council. It says two
+things that bear on the idea. A mechanical "steady names" rule is not a
+substitute for cash in the trend book. And the 40-week rule is a poor
+name for "a down market": it is late into the fall and stays on through
+the rebound. If the owner's idea works it will be because the Council
+calls the turn earlier and picks better than one number does, and only
+unseen weeks can show that: Pass 66.
+
+    lab/results/pass65_steady_names_when_cold.json

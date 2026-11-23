@@ -1,0 +1,293 @@
+{
+ "generated": "2026-11-13",
+ "names": 3004,
+ "weeks": 1604,
+ "first_week": "1996-02-23",
+ "share_of_weeks_cold": 0.23753117206982544,
+ "share_of_weeks_cold_by_period": {
+  "unseen: 1996-07 to 2006-10": 0.29444444444444445,
+  "2006-11 to 2016-11": 0.26053639846743293,
+  "2016-11 to 2026-11": 0.16443594646271512,
+  "everything": 0.23753117206982544
+ },
+ "cold_weeks_only": {
+  "weeks": 381,
+  "steadiest_ten_mean_week": 0.0023332290946962383,
+  "spy_mean_week": 0.0027367340480916142,
+  "steadiest_ten_share_of_weeks_down": 0.4330708661417323,
+  "spy_share_of_weeks_down": 0.45144356955380577,
+  "steadiest_ten_compounded": 1.1442639668306347,
+  "spy_compounded": 1.1754611409349627
+ },
+ "benchmarks": {
+  "SPY": {
+   "unseen: 1996-07 to 2006-10": {
+    "cagr": 0.08671237885293048,
+    "sharpe": 0.5756374812892525,
+    "max_drawdown": -0.45701432085602445,
+    "weeks": 540
+   },
+   "2006-11 to 2016-11": {
+    "cagr": 0.06491277196895995,
+    "sharpe": 0.4300743219146835,
+    "max_drawdown": -0.5461302839515998,
+    "weeks": 522
+   },
+   "2016-11 to 2026-11": {
+    "cagr": 0.1543360610799378,
+    "sharpe": 0.9207089982910223,
+    "max_drawdown": -0.32227497928407145,
+    "weeks": 523
+   },
+   "everything": {
+    "cagr": 0.10146654588878246,
+    "sharpe": 0.6382151848248089,
+    "max_drawdown": -0.5461302839515998,
+    "weeks": 1604
+   }
+  }
+ },
+ "books": {
+  "1 base: cash when idle": {
+   "trend_buys_a_year": 13.778054862842893,
+   "median_hold_weeks": 16.0,
+   "avg_invested": 0.8842229575670162,
+   "basket_names_avg_in_cold_weeks": null,
+   "basket_trades_a_year": 0.0,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.20044478726528125,
+     "sharpe": 0.8661617395037307,
+     "max_drawdown": -0.45570515252920385,
+     "weeks": 540,
+     "percentile_among_random_names_control": 0.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.14522389027522054,
+     "sharpe": 0.8130953609984252,
+     "max_drawdown": -0.2995996525599446,
+     "weeks": 522,
+     "percentile_among_random_names_control": 54.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.20193898140875977,
+     "sharpe": 0.8792124668242908,
+     "max_drawdown": -0.32665340027502177,
+     "weeks": 523,
+     "percentile_among_random_names_control": 0.0
+    },
+    "everything": {
+     "cagr": 0.18458984070234297,
+     "sharpe": 0.8594381790033417,
+     "max_drawdown": -0.4557051525292033,
+     "weeks": 1604,
+     "percentile_among_random_names_control": 0.0
+    }
+   },
+   "by_year_cold_heavy": {
+    "2000": 0.08147405664624596,
+    "2001": -0.06992184355918662,
+    "2002": -0.18452643115474832,
+    "2008": -0.23546621507326781,
+    "2009": 0.2178892537417476,
+    "2020": 0.3867749636894573,
+    "2022": -0.20467614915988652
+   }
+  },
+  "2 steady names for idle cash": {
+   "trend_buys_a_year": 13.778054862842893,
+   "median_hold_weeks": 16.0,
+   "avg_invested": 0.9998184293251655,
+   "basket_names_avg_in_cold_weeks": 8.4251968503937,
+   "basket_trades_a_year": 46.29426433915212,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.23082351499938536,
+     "sharpe": 0.9473635228490854,
+     "max_drawdown": -0.4194502384546025,
+     "weeks": 540,
+     "percentile_among_random_names_control": 17.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.12322810514672389,
+     "sharpe": 0.6685241700632302,
+     "max_drawdown": -0.4689022547523519,
+     "weeks": 522,
+     "percentile_among_random_names_control": 8.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.2148099446779017,
+     "sharpe": 0.8957994505657434,
+     "max_drawdown": -0.3638348393405738,
+     "weeks": 523,
+     "percentile_among_random_names_control": 0.0
+    },
+    "everything": {
+     "cagr": 0.1912127012460494,
+     "sharpe": 0.8543524097487916,
+     "max_drawdown": -0.4689022547523516,
+     "weeks": 1604,
+     "percentile_among_random_names_control": 0.0
+    }
+   },
+   "by_year_cold_heavy": {
+    "2000": 0.14742799362536285,
+    "2001": -0.02607087738787206,
+    "2002": -0.13977354879835502,
+    "2008": -0.3591101471417908,
+    "2009": 0.10166408016423123,
+    "2020": 0.45466612932494055,
+    "2022": -0.18802141048360876
+   }
+  },
+  "3 steady and rising for idle cash": {
+   "trend_buys_a_year": 13.778054862842893,
+   "median_hold_weeks": 16.0,
+   "avg_invested": 0.9998208361998919,
+   "basket_names_avg_in_cold_weeks": 8.451443569553806,
+   "basket_trades_a_year": 76.70324189526184,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.2140915550237421,
+     "sharpe": 0.8936957896120243,
+     "max_drawdown": -0.451814325971037,
+     "weeks": 540,
+     "percentile_among_random_names_control": 0.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.11328866293903106,
+     "sharpe": 0.6267282012120389,
+     "max_drawdown": -0.5048807238074208,
+     "weeks": 522,
+     "percentile_among_random_names_control": 2.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.22537160285585545,
+     "sharpe": 0.9312358047647129,
+     "max_drawdown": -0.3603658609655713,
+     "weeks": 523,
+     "percentile_among_random_names_control": 0.0
+    },
+    "everything": {
+     "cagr": 0.18565318736949177,
+     "sharpe": 0.8357043315089028,
+     "max_drawdown": -0.5048807238074204,
+     "weeks": 1604,
+     "percentile_among_random_names_control": 0.0
+    }
+   },
+   "by_year_cold_heavy": {
+    "2000": 0.15564167616762448,
+    "2001": -0.06077286186858666,
+    "2002": -0.22102842939740885,
+    "2008": -0.40499937278331366,
+    "2009": 0.10624300752671068,
+    "2020": 0.5803066576169675,
+    "2022": -0.16845988881344165
+   }
+  },
+  "4 full switch to the steady ten": {
+   "trend_buys_a_year": 25.74064837905237,
+   "median_hold_weeks": 6.0,
+   "avg_invested": 0.9997503210766888,
+   "basket_names_avg_in_cold_weeks": 10.0,
+   "basket_trades_a_year": 36.633416458852864,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.21836133264405966,
+     "sharpe": 0.9831858757986819,
+     "max_drawdown": -0.3982291402398298,
+     "weeks": 540,
+     "percentile_among_random_names_control": 0.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.08007177031726398,
+     "sharpe": 0.5152293766556517,
+     "max_drawdown": -0.439557594028228,
+     "weeks": 522,
+     "percentile_among_random_names_control": 0.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.2534619649927434,
+     "sharpe": 1.0126958866221227,
+     "max_drawdown": -0.33531740478345107,
+     "weeks": 523,
+     "percentile_among_random_names_control": 47.0
+    },
+    "everything": {
+     "cagr": 0.1841298108573881,
+     "sharpe": 0.8682828614337058,
+     "max_drawdown": -0.4395575940282276,
+     "weeks": 1604,
+     "percentile_among_random_names_control": 0.0
+    }
+   },
+   "by_year_cold_heavy": {
+    "2000": -0.05843236875412905,
+    "2001": -0.003578387016221818,
+    "2002": -0.13234005312903618,
+    "2008": -0.25246024395438593,
+    "2009": 0.10166408016423145,
+    "2020": 0.5718572991979427,
+    "2022": -0.2672254201210871
+   }
+  },
+  "control: SPY for idle cash": {
+   "trend_buys_a_year": 13.778054862842893,
+   "median_hold_weeks": 16.0,
+   "avg_invested": 0.9998187893563486,
+   "basket_names_avg_in_cold_weeks": 0.8398950131233596,
+   "basket_trades_a_year": 4.311720698254364,
+   "periods": {
+    "unseen: 1996-07 to 2006-10": {
+     "cagr": 0.21648403514776304,
+     "sharpe": 0.8789454924009434,
+     "max_drawdown": -0.4939399979106597,
+     "weeks": 540,
+     "percentile_among_random_names_control": 2.0
+    },
+    "2006-11 to 2016-11": {
+     "cagr": 0.12637979856428405,
+     "sharpe": 0.6317135596978004,
+     "max_drawdown": -0.5665882359124675,
+     "weeks": 522,
+     "percentile_among_random_names_control": 22.0
+    },
+    "2016-11 to 2026-11": {
+     "cagr": 0.24773464495021558,
+     "sharpe": 0.9892628211191011,
+     "max_drawdown": -0.3486226401980169,
+     "weeks": 523,
+     "percentile_among_random_names_control": 16.0
+    },
+    "everything": {
+     "cagr": 0.19800541701507135,
+     "sharpe": 0.8479039913959879,
+     "max_drawdown": -0.5665882359124678,
+     "weeks": 1604,
+     "percentile_among_random_names_control": 3.0
+    }
+   },
+   "by_year_cold_heavy": {
+    "2000": 0.12054213258917112,
+    "2001": -0.14596606892514774,
+    "2002": -0.14632902647463086,
+    "2008": -0.4518836861561921,
+    "2009": 0.31690346793817503,
+    "2020": 0.7495415484386809,
+    "2022": -0.1675859562304881
+   }
+  }
+ },
+ "random_names_control": {
+  "draws": 100,
+  "median_cagr": {
+   "unseen: 1996-07 to 2006-10": 0.23939716910643338,
+   "2006-11 to 2016-11": 0.1297881918069519,
+   "2016-11 to 2026-11": 0.2524577273731754,
+   "everything": 0.20777053002199486
+  },
+  "median_drawdown_everything": -0.5859296028930014,
+  "median_sharpe_everything": 0.8571606301774699
+ }
+}
