@@ -4,12 +4,12 @@ The official book's percentile among 2,000 random books at its own weights and c
 (Pass 34 A; the first sixteen rows are Pass 33's). `lab/forward_dartboard.py` regenerates this page each
 Monday from `lab/dartboard_ledger.json`, which is append-only; edits by hand are overwritten.
 
-Weeks: 16 (2026-07-20 .. 2026-11-09).
+Weeks: 17 (2026-07-20 .. 2026-11-16).
 
 | | Mean percentile | z | Weeks |
 |---|---|---|---|
-| Against the frozen universe | 44 | -0.84 | 16 |
-| Sector-matched | 46 | -0.49 | 16 |
+| Against the frozen universe | 47 | -0.40 | 17 |
+| Sector-matched | 49 | -0.09 | 17 |
 
 z at or above +1.64 over at least 40 weeks would be the first evidence of selection skill; at or below
 -1.64, worse than chance; anything between is a dartboard. Under 40 weeks this page shows direction, not proof.
@@ -32,3 +32,4 @@ z at or above +1.64 over at least 40 weeks would be the first evidence of select
 | 2026-10-26 | +1.24% | -0.86% | 82% | +0.42% | 64 | +0.61% | 75 |
 | 2026-11-02 | +0.50% | -3.18% | 80% | -1.17% | 76 | -0.11% | 68 |
 | 2026-11-09 | +0.91% | +1.67% | 84% | +0.85% | 50 | +1.18% | 37 |
+| 2026-11-16 | -1.80% | -7.98% | 83% | -5.43% | 99 | -4.18% | 96 |

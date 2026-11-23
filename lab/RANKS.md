@@ -4,7 +4,7 @@ Each desk's ranked ten with a probability of beating SPY, written before Monday'
 Friday's close (Pass 34 B). `lab/forward_ranks.py` regenerates this page each Monday; edits by hand are
 overwritten. Nothing reads the ranks but this scorer.
 
-Scored weeks: 0. Waiting on their close: 0. Late or edited after the open (not scored): 0.
+Scored weeks: 0. Waiting on their close: 1. Late or edited after the open (not scored): 0.
 
 No week has been scored yet. The first file is due before the open on 2026-11-23.
 

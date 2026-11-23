@@ -192,6 +192,19 @@
    "dart_sector_mean": 0.011788888907802178,
    "source": "Pass 33",
    "unmapped": []
+  },
+  {
+   "week": "2026-11-16",
+   "book": -0.018000000000000002,
+   "spy": -0.07980000000000001,
+   "invested": 0.827,
+   "pct_frozen": 0.991,
+   "pct_sector": 0.958,
+   "dart_frozen_mean": -0.05426144970757867,
+   "dart_sector_mean": -0.0418447571841213,
+   "source": "forward_dartboard.py",
+   "unmapped": [],
+   "logged_at": "2026-11-23T12:19:46-05:00"
   }
  ]
 }
