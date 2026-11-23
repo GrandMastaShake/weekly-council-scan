@@ -1,0 +1,193 @@
+{
+ "week": "2026-11-23",
+ "recorded_at": "2026-11-23T08:50:18-05:00",
+ "model": "claude-fable-5-2",
+ "desks": {
+  "Cecil": [
+   {
+    "rank": 1,
+    "ticker": "ALL",
+    "p": 55,
+    "engine": true
+   },
+   {
+    "rank": 2,
+    "ticker": "PGR",
+    "p": 54,
+    "engine": true
+   },
+   {
+    "rank": 3,
+    "ticker": "TRV",
+    "p": 53,
+    "engine": false
+   },
+   {
+    "rank": 4,
+    "ticker": "HIG",
+    "p": 53,
+    "engine": false
+   },
+   {
+    "rank": 5,
+    "ticker": "MO",
+    "p": 52,
+    "engine": false
+   },
+   {
+    "rank": 6,
+    "ticker": "EIX",
+    "p": 52,
+    "engine": false
+   },
+   {
+    "rank": 7,
+    "ticker": "KMB",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 8,
+    "ticker": "CB",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 9,
+    "ticker": "TROW",
+    "p": 49,
+    "engine": false
+   },
+   {
+    "rank": 10,
+    "ticker": "AES",
+    "p": 48,
+    "engine": true
+   }
+  ],
+  "Marky": [
+   {
+    "rank": 1,
+    "ticker": "ORLY",
+    "p": 54,
+    "engine": true
+   },
+   {
+    "rank": 2,
+    "ticker": "PG",
+    "p": 53,
+    "engine": true
+   },
+   {
+    "rank": 3,
+    "ticker": "TGT",
+    "p": 52,
+    "engine": true
+   },
+   {
+    "rank": 4,
+    "ticker": "DUK",
+    "p": 52,
+    "engine": false
+   },
+   {
+    "rank": 5,
+    "ticker": "ED",
+    "p": 52,
+    "engine": false
+   },
+   {
+    "rank": 6,
+    "ticker": "SO",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 7,
+    "ticker": "WMT",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 8,
+    "ticker": "KO",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 9,
+    "ticker": "COST",
+    "p": 50,
+    "engine": false
+   },
+   {
+    "rank": 10,
+    "ticker": "AZO",
+    "p": 50,
+    "engine": false
+   }
+  ],
+  "Ophelia": [
+   {
+    "rank": 1,
+    "ticker": "PG",
+    "p": 54,
+    "engine": false
+   },
+   {
+    "rank": 2,
+    "ticker": "WMT",
+    "p": 54,
+    "engine": false
+   },
+   {
+    "rank": 3,
+    "ticker": "KO",
+    "p": 53,
+    "engine": false
+   },
+   {
+    "rank": 4,
+    "ticker": "DUK",
+    "p": 53,
+    "engine": false
+   },
+   {
+    "rank": 5,
+    "ticker": "SO",
+    "p": 52,
+    "engine": false
+   },
+   {
+    "rank": 6,
+    "ticker": "EIX",
+    "p": 52,
+    "engine": true
+   },
+   {
+    "rank": 7,
+    "ticker": "PEP",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 8,
+    "ticker": "COST",
+    "p": 51,
+    "engine": false
+   },
+   {
+    "rank": 9,
+    "ticker": "AES",
+    "p": 48,
+    "engine": true
+   },
+   {
+    "rank": 10,
+    "ticker": "SHW",
+    "p": 47,
+    "engine": true
+   }
+  ]
+ }
+}
