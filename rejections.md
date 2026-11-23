@@ -4,6 +4,23 @@
 
 ## Entries
 
+### Week of 2026-11-23
+
+Booked: EIX 25.5% / TGT 23.1% / ORLY 17.0% / PG 8.1% / SHW 6.3% (20.0% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags, VIX > 22 new and CPI carried, and the Canary ELEVATED; then the owner's 20% cash cap: two trigger blocks (ALL, AES), one blocked promotion (PGR), two promotions (PG, SHW), Ophelia's sleeve frozen at its pre-raise weights under her adopted freeze rule, Marky's three names raised in proportion to reach 80.0%; sector lines XLP 31.2% / XLU 25.5% / XLY 17.0% / XLB 6.3%; see shadow-book.md). Ophelia's rejected candidates:
+
+| Ticker | Ophelia Score | Confidence | Reason for Exclusion |
+|---|---|---|---|
+| AES | 52 | 39.2 | Her #2 (and Cecil's #2, score 88, conf 64.4) -- **TRIGGER BLOCK**: last week's line under it, an XLU close under $43.79, fired on Tuesday Nov 17 ($43.42) and the fired leg is a re-entry block (exit-shadow.md header). $15.02, +0.74% on the week while XLU lost 3.07%; closes $14.94 / $14.97 / $15.02 / $15.02 / $15.02, Wednesday's volume 1,146% of its 20-day; 5.99x / 6.32x forward, 4.66% yield. Excluded by rule, not by ranking: the engine had it at 17.2% |
+
+Her other two names (EIX, SHW) are both booked, SHW by promotion, so there is no second or third rejection this week.
+
+Also mirrored here (not Ophelia's, logged for the same counterfactual): **ALL** (Cecil #1, score 91, conf 71.1; the engine's top weight at 19.0%) -- **TRIGGER BLOCK**: XLF closed $54.57 on Friday, under the Council's $55.03 line (wiki/synthesis.md Section 5: "Council sector stop $55.03 already lost"); $267.00, -0.24% on the week, 6.02x / 9.29x forward, 1.62% yield; **PGR** (Cecil #3, score 87, conf 59.9) -- blocked as a promotion on the same XLF line; $231.39, -1.9% on the week, 11.67x / 14.45x forward. No `[sanity] DROP` lines this week: no proposed name inside the earnings blackout.
+
+counterfactual: to be computed (Monday 2026-11-30, date-pinned Mon 2026-11-23 close -> Fri 2026-11-27 close, a holiday week with a 1:00 PM close Friday; AES, ALL and PGR each and equal-weighted, vs the official booked week).
+
+---
+
+
 ### Week of 2026-11-16
 
 Booked: ALL 21.0% / TDG 19.1% / COST 18.4% / AES 13.0% / FAST 11.2% (17.3% cash -- the pipeline's 15% cash floor on a Tightening stance with 2 raised regime flags, 10Y > 5.00% new and CPI carried; over the 80% cap minimum, so no raise, no trigger block, no promotion; four sector lines, XLF 21.0% / XLI 30.3% / XLP 18.4% / XLU 13.0%; the book is the corrected-input run's, see shadow-book.md). Ophelia's rejected candidates:

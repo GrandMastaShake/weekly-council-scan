@@ -28,6 +28,8 @@
 
 **2026-11-16 review:** No active resting limits to re-bless -- the ledger is empty for a fourteenth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: the pages again name conditional levels, not Council bids -- Marky's utilities desk buys a close over $44.14 on XLU (a trigger, not a resting bid), his industrials desk wants the 200D ($172.80) on volume for full size, and Ophelia's staples add zone is the 20-day, $89-$90, under a fund at $92.35 (the nearest thing to a below-market bid on any page; the book holds COST on that fund at the market). None was voted. If the owner rests any of these, it belongs here with its blessing counter.
 
+**2026-11-23 review:** No active resting limits to re-bless -- the ledger is empty for a fifteenth straight week, so no `blessings` counters incremented and no AUTO-CANCEL CANDIDATE flags raised. Recorded rather than skipped. Regime context: after a -8.56% week the pages name re-entry triggers above the market, not bids below it -- Marky's desks come back on closes over the 200-day (XLU $43.90, XLY $115.01, XLB $50.93, XLRE $43.04) or over a gap (XLK $160.69); the nearest things to a below-market bid are Ophelia's staples add at the 20-day ($90.25, 21 cents under XLP's close) with more at the 50-day ($86.34), and Cecil's lists (ETN, JPM, XOM after Nov 29), which carry no price. None was voted. If the owner rests any of these, it belongs here with its blessing counter.
+
 ## Filled / Cancelled
 
 *None.*

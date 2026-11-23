@@ -242,6 +242,7 @@ The Synthesis Agent reads all 15 wikis and produces the Council's weekly cross-s
 
 | Date | Report | VIX | SPY | Top Pick |
 |---|---|---|---|---|
+| 2026-11-23 | [View](reports/2026-11-23-report.md) | 35.89 | -8.56% | EIX (Ophelia) |
 | 2026-11-16 | [View](reports/2026-11-16-report.md) | 19.30 | +2.59% | ALL (Cecil) |
 | 2026-11-09 | [View](reports/2026-11-09-report.md) | 25.64 | -2.70% | ALL (Cecil) |
 | 2026-11-02 | [View](reports/2026-11-02-report.md) | 19.42 | -0.56% | PGR (Cecil) |

@@ -18,6 +18,24 @@
 
 ## Entries
 
+### Week of 2026-11-23 -- TRIGGER BLOCK: ALL (XLF $55.03, fired Friday) and AES (XLU $43.79, fired Tuesday), PGR blocked as a promotion; CASH CAP met by PROMOTION (PG, SHW) with Ophelia's sleeve FROZEN; no Cecil name in the book
+
+**Trigger:** STEP 2 check 7. The engine's book was ALL 19.0 / TGT 18.4 / AES 17.2 / EIX 15.1 / ORLY 10.2 (80.0% invested after the 15% floor and the cap raise; vote weights Cecil 38.4% / Ophelia 31.6% / Marky 30.0%). Last week's thesis lines under ALL and AES both fired: XLF closed $54.57 on Friday under the Council's $55.03 line, and XLU closed $43.42 on Tuesday under $43.79. A pick whose own trigger has already failed is not booked, and a fired leg is a re-entry block (the owner's ruling, exit-shadow.md header). PGR (Cecil #3) was blocked as a promotion on the XLF line (the 2026-10-12 precedent). PG (Marky #3) and SHW (Ophelia #3) were promoted. The weights are the engine's own risk controls re-run on the five surviving names (30% per name; sponsor cap 50% with two sponsors), then the 15% floor (74.3% invested), then the owner's cap raise to 80.0% with Ophelia's sleeve frozen (HY OAS 352 > 300) and the 5.7 points going to Marky's three names in proportion. See reports/2026-11-23-report.md, Data Integrity Notes 3 and 4.
+
+**The evidence going in:** the trigger block's record on XLF is long (ALL was blocked five straight weeks to 2026-10-12, and the books that ignored fired lines lost to the booked ones by 1.41pp and 0.62pp in the two weeks scored like-for-like). Against it this week: neither blocked name traded with its sector last week (ALL -1.11% from the open while XLF lost 7.00%; AES +0.74% while XLU lost 3.07%). The freeze rule: two receipts in its own direction before this week.
+
+**Booked (official):** EIX 25.5% / TGT 23.1% / ORLY 17.0% / PG 8.1% / SHW 6.3% / cash 20.0%.
+
+**Shadow E (the engine's book as proposed, no trigger block):** ALL 19.0% / TGT 18.4% / AES 17.2% / EIX 15.1% / ORLY 10.2% / cash 20.0%. Cecil 36.2%, Marky 28.6%, Ophelia 15.1%. The difference from the official book is what the two blocks cost or save.
+
+**Shadow U (the booked names with Ophelia's sleeve unfrozen -- the cap raise spread over all five in proportion):** EIX 27.4% / TGT 22.0% / ORLY 16.1% / PG 7.7% / SHW 6.8% / cash 20.0%. The difference from the official book is what the freeze rule costs or saves, in the first week its own variable (HY OAS, 320 -> 352) moved the way the rule assumes.
+
+**Overlap:** TGT, EIX, ORLY (all three books, at different weights); PG, SHW (official and Shadow U); ALL, AES (Shadow E only).
+
+**Resolution:** to be computed 2026-11-30 (date-pinned Mon 2026-11-23 close -> Fri 2026-11-27 close, a holiday week, 1:00 PM close Friday; per-pick, both shadows, the official book on the same basis; XLP vs $86.34, XLU vs $41.91, XLY vs $111.50, XLB vs $48.05, XLF vs $55.03 and $54.46; the 10Y vs 5.00%; VIX vs 30; SPY). **Three questions, written before the answers are known:** (1) Did the block cost money a week after the two blocked names were two of the three best in the book? ALL and AES against PG and SHW, 36.2 points against 14.4 plus the re-weighting. (2) Does the freeze rule get a third receipt, and for its own reason: does EIX, the name it held back, lose to Marky's three? (3) Two lines sit under 1% (XLY $111.50, XLB $48.05) in a week with VIX at 36: do they fire, and do ORLY and SHW fall with their funds or ignore them the way ALL and AES ignored theirs?
+
+---
+
 ### Week of 2026-11-16 -- CORRECTED INPUTS: the first scan run used vote weights a week stale (operator ordering error); the corrected run changes one name (PEP -> FAST). Plus Cecil's column, a third observation
 
 **Trigger:** the Monday session synced the local accuracy mirror (`StockApp/portfolio/history/`) before `tracker.py --close` had written `portfolio/history/2026-11-09.yaml`, so the scan's first run (08:28 ET) computed vote weights without last week's result: Cecil 35.6% / Ophelia 34.5% / Marky 29.9%, last Monday's weights to the decimal. The file was then copied and the scan re-run against a scratch copy of the state directory (the pipeline's own state was not scored twice; a control run without the file reproduced the first book exactly; the engines' proposals are identical in all three runs). Corrected weights: Cecil 37.2% / Ophelia 31.8% / Marky 31.0%. STEP 2 of the spec requires a shadow entry when the scan is re-run with corrected inputs; this is it. See reports/2026-11-16-report.md, Data Integrity Note 1.
