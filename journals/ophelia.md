@@ -831,7 +831,6 @@ Third, **my vote weight fell to 31.8% and my sleeve to one name, and that is the
 
 -- **Ophelia**, Macro Oracle
 
----
 
 ## Week of 2026-11-23 -- The Freeze Rule Binds for Its Own Reason; My Name Is the Top Weight of a Book My Calendar Desk Would Not Open
 

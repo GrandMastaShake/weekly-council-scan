@@ -931,7 +931,6 @@ The second concession is AES. For nine weeks the flag on me has been "the value 
 
 -- **Cecil**, The Fundamentalist
 
----
 
 ## Week of 2026-11-23 -- Entry #018
 

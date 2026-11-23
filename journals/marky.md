@@ -1039,7 +1039,6 @@ On TDG: every clause I have written passes it, and the tape reader in me does no
 
 -- **Marky**, The Technician
 
----
 
 ## WEEK OF 2026-11-23
 
