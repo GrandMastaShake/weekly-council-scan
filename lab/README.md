@@ -8385,3 +8385,64 @@ beats the better one. About 60%. (3) It ends ahead of the line on the
 40-week rule, inside the band. About 55%.
 
     python lab/forward_switch.py            # reads the three records, writes the lines into lab/SWITCH.md
+
+## Pass 65 results -- no steady-names book earns its place; in a market the 40-week rule calls cold, the steadiest ten did no better than SPY
+
+Run 2026-11-23 on the script committed before it (9c4c2b4). 1,604
+weeks, 3,004 names, survivors only. 24% of weeks are cold (29%, 26%,
+16% by period).
+
+| Book | 1996-2006 | 2006-2016 | 2016-2026 | Thirty years | Sharpe | Largest drawdown |
+|---|---|---|---|---|---|---|
+| 1 Base: cash when idle | 20.0% | 14.5% | 20.2% | 18.5% | 0.86 | -45.6% |
+| 2 Steady names for idle cash | 23.1% | 12.3% | 21.5% | 19.1% | 0.85 | -46.9% |
+| 3 Steady and rising | 21.4% | 11.3% | 22.5% | 18.6% | 0.84 | -50.5% |
+| 4 Full switch | 21.8% | 8.0% | 25.3% | 18.4% | 0.87 | -44.0% |
+| Control: SPY for idle cash | 21.6% | 12.6% | 24.8% | 19.8% | 0.85 | -56.7% |
+| Control: ten random names, median of 100 | 23.9% | 13.0% | 25.2% | 20.8% | 0.86 | -58.6% |
+| SPY | 8.7% | 6.5% | 15.4% | 10.1% | 0.64 | -54.6% |
+
+**The lines.** None earns its place.
+- (i) Against the base on the thirty years: book 2 is +0.6 points a
+  year with a drawdown 1.3 points deeper; book 3 +0.1 and 4.9 deeper;
+  book 4 -0.1 and 1.6 shallower. All inside the noise band.
+- (ii) Above the random-names control's median: book 2 in none of the
+  three periods, book 3 in none, book 4 in one (2016-2026, by 0.1).
+- (iii) No period more than 1.5 points behind the base: all three fail
+  on 2006-2016 (-2.2, -3.2, -6.5), which is 2008: the base lost 24%
+  that year, book 2 lost 36%, book 3 40%.
+
+**Why.** The 381 cold weeks are not falling weeks. SPY rose 0.27% a
+week on average in them and was down in 45%; the steadiest ten rose
+0.23% a week and were down in 43%. Compounded over all of them the ten
+made 114% and SPY 118%. "Under the 40-week average" covers the second
+half of a fall and most of the recovery, and in the recovery steady
+names lag. What the base's cash bought was 2008 and 2002, and every
+book that filled the cash gave some of that back.
+
+**The control.** Ten random large names for the idle cash beat every
+steady book in return and had the deepest drawdown (-58.6%). Much of
+that return is the list: a random name drawn in a cold market is one
+that is still alive in 2026. It is a bar a real book could not have
+cleared, and it says that on this list the steady ten carry no return
+of their own in cold markets.
+
+**Predictions.** (1) "The steady ten fall less than SPY in cold weeks
+but still fall": wrong on both counts; neither falls on average and the
+ten do no better. (2) Book 2 about +1 point with a drawdown 3 to 8
+deeper, not earning its place: right on the verdict and the return
+(+0.6), wrong on the drawdown (1.3). (3) Book 3 shallowest and closest:
+wrong, it is the deepest. (4) The full switch has the lowest return of
+the three: right, by 0.2. (5) Book 2 beats the random names in all
+three periods: wrong, in none. Two right of five.
+
+**What it does and does not say.** Low swing plus the 40-week rule is
+not the Council's book and this does not test the Council. It says two
+things that bear on the idea. A mechanical "steady names" rule is not a
+substitute for cash in the trend book. And the 40-week rule is a poor
+name for "a down market": it is late into the fall and stays on through
+the rebound. If the owner's idea works it will be because the Council
+calls the turn earlier and picks better than one number does, and only
+unseen weeks can show that: Pass 66.
+
+    lab/results/pass65_steady_names_when_cold.json
