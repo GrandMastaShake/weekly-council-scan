@@ -8446,3 +8446,85 @@ calls the turn earlier and picks better than one number does, and only
 unseen weeks can show that: Pass 66.
 
     lab/results/pass65_steady_names_when_cold.json
+
+## Pass 67 -- the weekend pick: five names chosen with no Monday data, kept beside the Council's five (registered 2026-11-24 before the first pick)
+
+The owner asked on 2026-11-24 what the Council's names do over the
+weekend. Three unregistered looks were run that day and are declared
+here as seen data, not findings.
+- SPY since 1993, dividends in: held only while the market is closed it
+  made 10.2% a year, held only while open 0.3%.
+- The Council's 17 closed weeks, same names and weights: from Friday's
+  close to Monday's open, before the Council's entry, the names summed
+  to +6.1% against SPY's +2.2% (edge 0.22 points a weekend, t 1.5).
+  From Monday's open to Friday's close the same books summed to -11.6%
+  against SPY's -10.7%.
+- Held over the weekend after their week the names did nothing (+0.4%
+  against SPY's +1.7%, leaving out the 5% gap of 2026-11-23).
+
+The reading that matters, if it is real: the Council picks on Monday
+morning with the pre-open scan in front of it, and buys names after
+they have moved. Seventeen weeks cannot say. None of those weeks is
+used below; this pass is forward only.
+
+**The weekend pick.** Each weekend, after the Saturday feed and before
+Monday 04:00 ET, one picker names five long names from the Council's
+universe and the desk each would come from. It reads only the repo as
+the Saturday crew left it: the weekly data, the wiki pages, the crew's
+issues, the three desks' journals. No quotes, futures or news from
+after Friday's close beyond what the crew filed, and no web. The five
+are appended to `lab/weekend_picks.json` with the time written. A pick
+written at or after Monday 04:00 ET is marked late, reported, and left
+out of the lines. The file is append-only; a past row is never changed.
+
+The weekend pick is never booked in `portfolio/`, never enters the
+Arena, and the Monday Council does not read it.
+
+**The measure: names only.** Both fives are measured the same way so
+that only the names differ: equal weight, Monday's open to Friday's
+close, no stops, no cash, dividends in. The Council's weights, cash and
+stops are its official record and are not what is being tested.
+- *W*: the weekend five.
+- *O*: the Council's booked long names for that week (all of them,
+  equal weight).
+- Beside them: SPY on the same clock.
+
+**Part A, which needs no picker.** For the Council's booked names each
+week: their equal-weight gap from Friday's close to Monday's open,
+minus SPY's gap.
+
+**Part B, the names Monday changed.** Each week, *Monday's additions*
+are the names in O and not in W; *Monday's drops* are the names in W
+and not in O. For each group: the weekend gap and the names-only week.
+
+**One read, at 40 scored weeks** (the lab's bar; about the week ending
+2027-09-03 if no week is skipped). Nothing is read before it. A week
+with a late pick, or with no Council book, is not a scored week.
+
+**Lines (fixed).**
+- *Picking earlier is better* if W minus O, weekly, has a mean above
+  zero with t of 2 or more.
+- *The Council buys after the move* if the Part A gap edge has t of 2
+  or more, and Monday's additions gapped more than Monday's drops (t 2
+  or more) and then returned less in the week (t -2 or lower).
+- If the first line holds, the proposal to the owner is to move the
+  Council's pick to the weekend. If only Part A holds, the names gap
+  but an earlier pick does not capture it, and nothing changes.
+
+**Limits.** The weekend picker is one agent reading the desks'
+journals, not the Council's Monday run with its three desks, its
+weights and its debate. A gap between W and O therefore mixes two
+things, when the pick is made and who makes it; Part B is the attempt
+to separate them and it is thin. Five names against five names is
+noisy: with a weekly difference near 2 points of SD, t of 2 at 40
+weeks needs a mean of about 0.6 points a week, which is large. The
+likely outcome is no verdict. The Monday Council also has two days of
+weekend news the picker does not, so "no Monday data" is really "no
+data after Saturday".
+
+**Predictions.** (1) W and O share between 1.5 and 3 names a week on
+average. (2) W minus O does not reach t 2 either way: about 75%. (3)
+The Part A gap edge is positive and under t 2: about 60%. (4) Neither
+line holds at 40 weeks: about 70%.
+
+    lab/weekend_picks.json     # the picks, append-only (the runner and the Sunday step are committed before the first pick)
