@@ -29,7 +29,7 @@ from scan_pipeline.engines.personality import (
     update_agent_personality,
 )
 from scan_pipeline.fetch_market_data import fetch_all_data
-from scan_pipeline.fetch_context import fetch_macro_context
+from scan_pipeline.fetch_context import STANCE_UNAVAILABLE, fetch_macro_context
 from scan_pipeline.utils.data_utils import PriceHistory
 
 
@@ -327,6 +327,115 @@ def _stance_word(text: Any) -> str:
     return text.split(".", 1)[0].split(",", 1)[0].split(":", 1)[0].split(";", 1)[0].strip().lower()
 
 
+
+# -- Market Context inputs (2026-11-25) ------------------------------------
+# The three context lines used to print what the live fetch saw at 9:03 AM
+# on Monday: a pre-market VIX (30.9 on 2026-11-23, where Friday closed at
+# 35.89), SPY's Monday-open-to-Friday-close move (-7.98% for a -8.56% week)
+# and, with no override, "Unknown. Stance source unavailable." The Council
+# session corrected all three by hand every week. They now come from what
+# is committed: Friday's weekly file and facts.json, each line naming its
+# source. A gap stays a gap: with no committed value the line says so and
+# shows the live read under its own name. The engines' own inputs are not
+# changed by this; only what the report says.
+
+def _weekly_dir(root: Optional[str] = None) -> str:
+    return os.path.join(root or os.path.dirname(SCRIPT_DIR), "data", "weekly")
+
+
+def _close_of(doc: Dict[str, Any], block: Optional[str], ticker: str) -> Optional[float]:
+    src = doc.get("series") if block is None else doc.get(block)
+    if not isinstance(src, dict):
+        return None
+    bar = src.get(ticker)
+    close = bar.get("close") if isinstance(bar, dict) else None
+    return float(close) if isinstance(close, (int, float)) else None
+
+
+def committed_week_context(friday: str, weekly_dir: Optional[str] = None) -> Dict[str, Any]:
+    """Friday's VIX close and SPY's Friday-to-Friday return from data/weekly.
+
+    Each week is read once, from its correction where it has one
+    (snapshot._load_weekly_files). The return needs the week before to be on
+    file under the Friday seven days earlier; a hole gives no return."""
+    from scan_pipeline.snapshot import _load_weekly_files
+    out: Dict[str, Any] = {"friday": friday}
+    wdir = weekly_dir or _weekly_dir()
+    if not os.path.isdir(wdir):
+        return out
+    try:
+        docs = dict(_load_weekly_files(wdir))
+    except (OSError, ValueError) as exc:
+        print(f"[context] data/weekly unreadable ({exc}); context lines use the live read")
+        return out
+    doc = docs.get(friday)
+    if not isinstance(doc, dict):
+        return out
+    out["vix"] = _close_of(doc, "vol", "VIX")
+    try:
+        prev = (datetime.strptime(friday, "%Y-%m-%d") - timedelta(days=7)).strftime("%Y-%m-%d")
+    except ValueError:
+        return out
+    prev_doc = docs.get(prev)
+    spy, spy_prev = _close_of(doc, None, "SPY"), _close_of(prev_doc or {}, None, "SPY")
+    if spy is not None and spy_prev:
+        out.update(prev_friday=prev, spy_close=spy, spy_prev_close=spy_prev,
+                   spy_return=spy / spy_prev - 1.0)
+    return out
+
+
+def fed_stance_from_facts(facts: Dict[str, Any]) -> Optional[str]:
+    """A stance line from facts.json policy.fed_stance, led by a stance word.
+
+    facts.json records the Fed's last move ("Hike"); the line leads with the
+    stance it implies (STANCE_OF_MOVE), the same reading the cash floor
+    makes, and quotes the value and its date. None when there is no value."""
+    raw = _fact_value(facts, "policy", "fed_stance")
+    word = _stance_word(raw)
+    if not word:
+        return None
+    stance = STANCE_OF_MOVE.get(word, word)
+    if stance not in ("hawkish", "dovish", "neutral", "hold", "easing", "tightening"):
+        return None
+    node = (facts.get("policy") or {}).get("fed_stance")
+    as_of = node.get("as_of") if isinstance(node, dict) else None
+    when = f" (as of {as_of})" if as_of else ""
+    return f"{stance.capitalize()}. facts.json policy.fed_stance = \"{raw}\"{when}."
+
+
+def report_context(market_data: Dict[str, Any], facts: Dict[str, Any],
+                   fed_override: Optional[str] = None,
+                   weekly_dir: Optional[str] = None) -> Dict[str, str]:
+    """The VIX, SPY and Fed Stance values the report prints, with sources."""
+    friday = (market_data.get("auditDates") or {}).get("friday") or ""
+    week = committed_week_context(friday, weekly_dir) if friday else {}
+    ctx: Dict[str, str] = {}
+
+    live_vix = market_data.get("vix", "N/A")
+    if week.get("vix") is not None:
+        ctx["vix"] = f"{week['vix']:.2f} (Friday {friday} close, data/weekly)"
+    else:
+        ctx["vix"] = (f"{live_vix} (live read at run time, not a Friday close: "
+                      f"data/weekly has no VIX for {friday or 'the Friday'})")
+
+    if week.get("spy_return") is not None:
+        ctx["spy"] = (f"{week['spy_return']:+.2%} (Friday {week['prev_friday']} to Friday {friday} "
+                      f"close, ${week['spy_prev_close']:.2f} -> ${week['spy_close']:.2f}, data/weekly)")
+    else:
+        live = market_data.get("weeklyReturns", {}).get("SPY", 0.0) or 0.0
+        ctx["spy"] = (f"{live:+.2%} (Monday open to Friday close, live bars: data/weekly has "
+                      f"no Friday-to-Friday pair for {friday or 'the week'})")
+
+    from scan_pipeline.fetch_context import _valid_stance
+    if fed_override and _valid_stance(fed_override):
+        ctx["fed"] = fed_override
+    else:
+        ctx["fed"] = (fed_stance_from_facts(facts)
+                      or (market_data.get("market_conditions") or {}).get("fed_stance")
+                      or STANCE_UNAVAILABLE)
+    return ctx
+
+
 def canary_raised(facts: Dict[str, Any]) -> bool:
     """Canary flag probe — defensive over plausible shapes; absent == not raised.
     facts.json (macro-facts/v1) currently carries no canary key; this watches
@@ -465,16 +574,13 @@ def generate_report(
     lines.append("")
 
     # Market Context
-    vix = market_data.get("vix", "N/A")
-    spy_return = market_data.get("weeklyReturns", {}).get("SPY", 0.0)
-    market_conditions = market_data.get("market_conditions", {})
-    fed_stance = market_conditions.get("fed_stance", "Neutral")
+    ctx = market_data.get("report_context") or report_context(market_data, {})
 
     lines.append("## Market Context")
     lines.append(f"- **Date:** {date}")
-    lines.append(f"- **VIX:** {vix}")
-    lines.append(f"- **SPY Weekly Return:** {spy_return:+.2%}")
-    lines.append(f"- **Fed Stance:** {fed_stance}")
+    lines.append(f"- **VIX:** {ctx['vix']}")
+    lines.append(f"- **SPY Weekly Return:** {ctx['spy']}")
+    lines.append(f"- **Fed Stance:** {ctx['fed']}")
     if consensus_result.get("cash_floor"):
         lines.append(f"- **Cash Floor:** {consensus_result['cash_floor']}")
     if consensus_result.get("cash_cap"):
@@ -569,15 +675,12 @@ def generate_abort_report(
     lines = []
     lines.append(f"# Weekly Council Scan — {date}")
     lines.append("")
-    vix = market_data.get("vix", "N/A")
-    spy_return = market_data.get("weeklyReturns", {}).get("SPY", 0.0)
-    market_conditions = market_data.get("market_conditions", {})
-    fed_stance = market_conditions.get("fed_stance", "Neutral")
+    ctx = market_data.get("report_context") or report_context(market_data, {})
     lines.append("## Market Context")
     lines.append(f"- **Date:** {date}")
-    lines.append(f"- **VIX:** {vix}")
-    lines.append(f"- **SPY Weekly Return:** {spy_return:+.2%}")
-    lines.append(f"- **Fed Stance:** {fed_stance}")
+    lines.append(f"- **VIX:** {ctx['vix']}")
+    lines.append(f"- **SPY Weekly Return:** {ctx['spy']}")
+    lines.append(f"- **Fed Stance:** {ctx['fed']}")
     lines.append("")
     lines.append("## Top 5 Portfolio Picks")
     lines.append("| Ticker | Weight | Sponsor |")
@@ -657,6 +760,11 @@ def main() -> None:
     # Fetch macro context
     macro_context = fetch_macro_context(fed_stance_override=args.fed_stance)
     market_data["market_conditions"] = macro_context
+    # facts.json once, for the report's Fed Stance line and the cash floor.
+    macro_facts = load_macro_facts(date)
+    market_data["report_context"] = report_context(market_data, macro_facts, args.fed_stance)
+    for k in ("vix", "spy", "fed"):
+        print(f"[context] {k}: {market_data['report_context'][k]}")
 
     # Run engines
     cecil_proposal = cecil.analyze(market_data, date)
@@ -781,7 +889,6 @@ def main() -> None:
     # fed stance Hawkish/Tightening or a Hike per truth_gate/macro/facts.json),
     # scale all weights by (1 - floor); the residual books as cash
     # automatically -- tracker.py computes cash_weight = 1 - sum(weights).
-    macro_facts = load_macro_facts(date)
     floor_note = apply_cash_floor(
         consensus_result, macro_facts, market_data.get("market_conditions", {})
     )
