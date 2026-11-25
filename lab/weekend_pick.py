@@ -11,8 +11,11 @@ close, no stops, no cash, dividends in.
     python lab/weekend_pick.py read       # the lines; refuses before 40 scored weeks
 
 The picks file is append-only: a Friday that has a pick is never logged
-again and a past row is never changed. A pick written at or after 04:00
-on the Monday it applies to is marked late and left out of the lines.
+again and a past row is never changed (scripts/lab_ledger_guard.py holds
+that in CI). A pick written at or after 04:00 New York time on the Monday
+it applies to is marked late and left out of the lines. The time is
+written with its offset; one without is refused, because a bare clock
+reading means whatever zone the machine was in (2026-11-25).
 Nothing here is booked in portfolio/ and the Monday Council does not read it.
 """
 from __future__ import annotations
@@ -22,6 +25,7 @@ import math
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 LAB = Path(__file__).resolve().parent
 PICKS = LAB / "weekend_picks.json"
@@ -31,13 +35,32 @@ UNIVERSE = LAB.parent / "wiki" / "universe.md"
 DESKS = ("Ophelia", "Cecil", "Marky")
 NAMES = 5
 READ_AT = 40                          # scored weeks before anything is read
+ET = ZoneInfo("America/New_York")     # the cutoff is Monday 04:00 here
+
+
+def now_et() -> str:
+    """The time a pick is logged: New York, to the second, with its offset."""
+    return datetime.now(ET).isoformat(timespec="seconds")
+
+
+def logged_et(logged: str) -> datetime:
+    """`logged` read as a moment, in New York time. A reading with no UTC
+    offset is refused: 03:30 on a machine in UTC is 22:30 the night before
+    in New York, and the file could not say which was meant."""
+    try:
+        t = datetime.fromisoformat(logged)
+    except ValueError:
+        raise ValueError(f"logged {logged!r} is not an ISO time")
+    if t.tzinfo is None or t.utcoffset() is None:
+        raise ValueError(f"logged {logged!r} has no UTC offset; write it with one (now_et())")
+    return t.astimezone(ET)
 
 
 # ---------------------------------------------------------------- pure
 
 def add_pick(picks, friday, names, logged, universe):
     """Append one weekend's five. `names` is a list of (ticker, desk, reason);
-    `logged` is local ISO time."""
+    `logged` is an ISO time with its UTC offset (now_et())."""
     if any(p["friday"] == friday for p in picks):
         raise ValueError(f"a pick for {friday} is already logged; the file is append-only")
     if picks and friday <= picks[-1]["friday"]:
@@ -54,10 +77,12 @@ def add_pick(picks, friday, names, logged, universe):
             raise ValueError(f"{desk} is not one of {DESKS}")
         if not reason.strip():
             raise ValueError(f"{t} has no reason")
-    cutoff = datetime.fromisoformat(friday) + timedelta(days=3, hours=4)
+    when = logged_et(logged)
+    cutoff = datetime.combine(date.fromisoformat(friday) + timedelta(days=3),
+                              datetime.min.time().replace(hour=4), tzinfo=ET)
     row = {"friday": friday, "applies_to_week_of": (date.fromisoformat(friday) + timedelta(days=3)).isoformat(),
            "names": [{"ticker": t.upper(), "desk": d, "reason": r.strip()} for t, d, r in names],
-           "logged": logged, "late": datetime.fromisoformat(logged[:19]) >= cutoff}
+           "logged": logged, "late": when >= cutoff}
     picks.append(row)
     return row
 
@@ -192,7 +217,7 @@ def main(argv):
         if any(len(n) != 3 for n in names):
             raise SystemExit('each name is "TICKER|Desk|one sentence"')
         try:
-            row = add_pick(picks, argv[2], names, datetime.now().isoformat(timespec="seconds"), read_universe())
+            row = add_pick(picks, argv[2], names, now_et(), read_universe())
         except ValueError as e:
             raise SystemExit(str(e))
         PICKS.write_text(json.dumps(picks, indent=1) + "\n", encoding="utf-8", newline="\n")

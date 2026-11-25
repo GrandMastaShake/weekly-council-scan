@@ -46,6 +46,12 @@ it passed: a push is compared once, by its own run, and the next push starts
 from the new tip. On 2026-09-25 the push of that week's file failed at Tests
 and the panel step was skipped with the feed gate; nothing came back for it.
 
+The same step runs `scripts/lab_ledger_guard.py --against <commit>`
+(2026-11-25): a row in one of the lab's forward-test ledgers (the weekend
+picks, the regime calls, the trend book, the owner's marks and the rest it
+lists) stays as it was. New rows pass wherever they land; a changed or
+removed one fails.
+
 Three limits. CI does not run on what a workflow pushes (a push made with the
 workflow token starts none), so the backfill and the daily job each run the
 guard themselves before they commit. A run that is cancelled, or never
