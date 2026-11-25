@@ -290,13 +290,25 @@ def analyze(market_data: Dict[str, Any], date: str, price_cache: Optional[Dict[s
 
 
 def _generate_thesis(s: dict, idx: int, top_sector: str, spy_return: float, regime: str = "") -> str:
-    vol_pct = "N/A" if s["vol"] is None else f"{s['vol'] * 100:.1f}%"
+    """The reason line for one pick, taken from the pick's own scores.
+
+    Until 2026-11-25 this rotated three templates by rank (idx % 3), so the
+    first pick always read "Aligned with <top sector> sector rotation"
+    whatever its own sector: on 2026-11-23 EIX, a utility, was booked at
+    25.5% as "Aligned with Energy sector rotation". The line now names the
+    sector rotation only when the pick is in the week's top sector, and
+    otherwise names whichever of its regime and risk-adjusted terms is
+    larger. `idx` is kept for the call signature and no longer chooses.
+    """
+    vol_pct = "N/A" if s.get("vol") is None else f"{s['vol'] * 100:.1f}%"
     # Fix C-c: explicit flat/rangebound branch; the old bullish/bearish
     # binary mislabeled dead-zone weeks.
     regime_word = regime or ("bullish" if spy_return > 0 else "bearish")
-    templates = [
-        f"Aligned with {top_sector} sector rotation. Macro score: {s['score']:.0f}.",
-        f"Benefiting from the {regime_word} market regime. Score: {s['score']:.0f}.",
-        f"Risk-adjusted outperformer with lower volatility. Vol: {vol_pct}. Score: {s['score']:.0f}.",
-    ]
-    return templates[idx % len(templates)]
+    score = f"{s['score']:.0f}"
+    if s.get("sector") == top_sector:
+        return f"Aligned with {top_sector} sector rotation. Macro score: {score}."
+    if s.get("market_regime_score", 0.0) > s.get("risk_adjusted_score", 0.0):
+        return (f"Benefiting from the {regime_word} market regime "
+                f"({s.get('sector', 'Unknown')}, not the top sector, {top_sector}). Score: {score}.")
+    return (f"Risk-adjusted outperformer with lower volatility. Vol: {vol_pct}. "
+            f"{s.get('sector', 'Unknown')}, not the top sector, {top_sector}. Score: {score}.")
