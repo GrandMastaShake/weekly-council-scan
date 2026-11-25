@@ -24,26 +24,26 @@ FIVE = [(t, "Cecil", "because") for t in "ABCDE"]
 
 def test_a_pick_is_five_different_names_from_the_universe():
     with pytest.raises(ValueError):
-        wp.add_pick([], "2026-11-27", FIVE[:4], "2026-11-29T18:00:00", U)
+        wp.add_pick([], "2026-11-27", FIVE[:4], "2026-11-29T18:00:00-05:00", U)
     with pytest.raises(ValueError):
-        wp.add_pick([], "2026-11-27", FIVE[:4] + [("A", "Cecil", "x")], "2026-11-29T18:00:00", U)
+        wp.add_pick([], "2026-11-27", FIVE[:4] + [("A", "Cecil", "x")], "2026-11-29T18:00:00-05:00", U)
     with pytest.raises(ValueError):
-        wp.add_pick([], "2026-11-27", FIVE[:4] + [("ZZZ", "Cecil", "x")], "2026-11-29T18:00:00", U)
+        wp.add_pick([], "2026-11-27", FIVE[:4] + [("ZZZ", "Cecil", "x")], "2026-11-29T18:00:00-05:00", U)
     with pytest.raises(ValueError):
-        wp.add_pick([], "2026-11-27", FIVE[:4] + [("E", "Nobody", "x")], "2026-11-29T18:00:00", U)
+        wp.add_pick([], "2026-11-27", FIVE[:4] + [("E", "Nobody", "x")], "2026-11-29T18:00:00-05:00", U)
     with pytest.raises(ValueError):
-        wp.add_pick([], "2026-11-26", FIVE, "2026-11-29T18:00:00", U)
+        wp.add_pick([], "2026-11-26", FIVE, "2026-11-29T18:00:00-05:00", U)
 
 
 def test_the_file_is_append_only_and_marks_a_late_pick():
     picks = []
-    row = wp.add_pick(picks, "2026-11-27", FIVE, "2026-11-30T03:59:59", U)
+    row = wp.add_pick(picks, "2026-11-27", FIVE, "2026-11-30T03:59:59-05:00", U)
     assert not row["late"] and row["applies_to_week_of"] == "2026-11-30"
     with pytest.raises(ValueError):
-        wp.add_pick(picks, "2026-11-27", FIVE, "2026-11-29T18:00:00", U)
+        wp.add_pick(picks, "2026-11-27", FIVE, "2026-11-29T18:00:00-05:00", U)
     with pytest.raises(ValueError):
-        wp.add_pick(picks, "2026-11-20", FIVE, "2026-11-29T18:00:00", U)
-    assert wp.add_pick(picks, "2026-12-04", FIVE, "2026-12-07T04:00:00", U)["late"]
+        wp.add_pick(picks, "2026-11-20", FIVE, "2026-11-29T18:00:00-05:00", U)
+    assert wp.add_pick(picks, "2026-12-04", FIVE, "2026-12-07T04:00:00-05:00", U)["late"]
 
 
 def test_both_fives_are_measured_the_same_way():
@@ -69,3 +69,25 @@ def test_nothing_is_read_before_forty_scored_weeks():
 def test_a_holiday_week_booked_on_tuesday_is_still_found():
     assert wp.council_week("2026-11-30", {"2026-12-01": ["A"]}) == "2026-12-01"
     assert wp.council_week("2026-11-30", {"2026-12-07": ["A"]}) is None
+
+
+def test_the_cutoff_is_new_york_time_whatever_the_machine():
+    """2026-11-25: logged was datetime.now() with no zone, read against a
+    naive 04:00. On a runner in UTC a pick made at 23:30 Sunday in New York
+    read as 04:30 Monday, late; one made at 03:30 New York read on time
+    either way, and the file could not say which clock wrote it."""
+    on_time = wp.add_pick([], "2026-11-27", FIVE, "2026-11-30T04:30:00+00:00", U)
+    assert not on_time["late"]                         # 23:30 Sunday in New York
+    assert not wp.add_pick([], "2026-11-27", FIVE, "2026-11-30T08:59:59+00:00", U)["late"]
+    assert wp.add_pick([], "2026-11-27", FIVE, "2026-11-30T09:00:00+00:00", U)["late"]
+    # Summer: 04:00 EDT is 08:00 UTC.
+    assert wp.add_pick([], "2026-06-26", FIVE, "2026-06-29T08:00:00+00:00", U)["late"]
+    assert not wp.add_pick([], "2026-06-26", FIVE, "2026-06-29T07:59:59+00:00", U)["late"]
+
+
+def test_a_time_with_no_offset_is_refused_and_now_et_has_one():
+    with pytest.raises(ValueError):
+        wp.add_pick([], "2026-11-27", FIVE, "2026-11-29T18:00:00", U)
+    stamp = wp.now_et()
+    assert wp.logged_et(stamp).utcoffset() is not None
+    assert stamp[-6:] in ("-05:00", "-04:00")

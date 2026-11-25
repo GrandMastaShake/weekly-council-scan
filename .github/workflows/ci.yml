@@ -187,5 +187,12 @@ jobs:
           sys.exit(1 if failed else 0)
           PY
           history=$?
+
+          # The lab's forward-test ledgers, against the same commit: a row
+          # on file stays as it was (scripts/lab_ledger_guard.py has the
+          # rule and the list). Added 2026-11-25; each lab script called its
+          # ledger append-only and nothing outside the script checked.
+          python scripts/lab_ledger_guard.py --against "$base"
+          lab=$?
           set -e
-          if [ "$panel" -ne 0 ] || [ "$history" -ne 0 ]; then exit 1; fi
+          if [ "$panel" -ne 0 ] || [ "$history" -ne 0 ] || [ "$lab" -ne 0 ]; then exit 1; fi

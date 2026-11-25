@@ -1230,6 +1230,9 @@ def pushed(tmp_path, commits: list, depth: int = 2,
         D24: weekly_doc("2026-08-24", TICKERS),
         HISTORY: {"series": {"2026-08-14": {"close": 4.17}}},
         "scripts/panel_guard.py": GUARD.read_text(encoding="utf-8"),
+        # The step runs the lab ledger guard too (2026-11-25). No ledger is
+        # in this repository, so it compares nothing and passes.
+        "scripts/lab_ledger_guard.py": (SCRIPTS / "lab_ledger_guard.py").read_text(encoding="utf-8"),
     }, first_message)
     for n, files in enumerate(commits):
         origin.commit(files, "commit %d of the push" % (n + 1))

@@ -1,11 +1,17 @@
 # 182-ticker universe (ported from constants.ts / data/ticker_ledger.ts)
 
+# Taken out of the feed 2026-11-25, both acquired for cash and stock and
+# delisted: KVUE by Kimberly-Clark (no bar after 2026-10-30), ROKU by Fox
+# (trading halted before the 2026-11-09 open; that day's bar is a print on
+# volume 0). Neither is a rename, so neither goes in RENAMED: the acquirer is
+# another company, and KMB is in the feed under its own symbol. Every week
+# already committed keeps their bars and `missing` entries as written.
 AVAILABLE_TICKERS = [
     # Tech & Comm Services
     "AAPL", "ACN", "ADBE", "ADSK", "AKAM", "AMAT", "AMD", "ANET", "APH", "AVGO",
     "CDNS", "CRM", "CSCO", "FTNT", "GOOG", "GOOGL", "HPE", "INTC", "INTU",
     "IONQ", "KLAC", "LRCX", "META", "MSFT", "MSI", "MU", "NFLX", "NOW", "NTLA",
-    "NVDA", "NXPI", "ORCL", "PANW", "QBTS", "QCOM", "QUBT", "RBLX", "RGTI", "ROKU",
+    "NVDA", "NXPI", "ORCL", "PANW", "QBTS", "QCOM", "QUBT", "RBLX", "RGTI",
     "SIDU", "SMCI", "SNPS", "SYM", "TEL", "TER", "VSAT", "ZS",
     # Consumer & Retail
     "ABNB", "AMZN", "AZO", "CMG", "COST", "DPZ", "HD", "HLT", "KDP", "KMB", "KO",
@@ -19,7 +25,7 @@ AVAILABLE_TICKERS = [
     # Healthcare
     "ABBV", "AMGN", "BAX", "BDX", "BFLY", "BIIB", "BMY", "BSX", "CI", "CVS",
     "DHR", "DXCM", "ELV", "EW", "GEHC", "GILD", "HCA", "HUM", "IDXX", "ILMN",
-    "IQV", "ISRG", "JNJ", "KVUE", "LLY", "MCK", "MDT", "MRK", "MRNA", "PFE",
+    "IQV", "ISRG", "JNJ", "LLY", "MCK", "MDT", "MRK", "MRNA", "PFE",
     "REGN", "SOLV", "SYK", "TMO", "UNH", "VEEV", "VRTX", "ZTS",
     # Industrials & Aerospace
     "AXON", "BA", "CARR", "CAT", "CPRT", "CSX", "CTAS", "DE", "EMR", "ETN",
