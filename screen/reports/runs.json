@@ -643,5 +643,19 @@
    "C": 9
   },
   "forced": false
+ },
+ {
+  "session": "2026-11-30",
+  "run_utc": "2026-11-27T22:16:04Z",
+  "run_et": "2026-11-27 17:16",
+  "closes_through": "2026-11-27",
+  "universe": 1459,
+  "screened": 1406,
+  "hits": {
+   "A": 2,
+   "B": 44,
+   "C": 7
+  },
+  "forced": false
  }
 ]
