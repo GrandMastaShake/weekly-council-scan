@@ -24,7 +24,7 @@ Week path: Mon $43.32, Tue $43.40, Wed $43.61, (Thu closed, Thanksgiving), Fri *
 
 **Marky Tape Read:** Four up closes in four sessions, and not one of them over my line. The 200-day sat at **$43.91** all week and the best close was Friday's $43.73. Monday did the work (+1.5% on 37.0M, the heaviest day); the rest was 8 to 21 cents a day on falling volume, ending with a 13.9M half session. RSI **57.9** from 46.1. The fund is over the 20-day ($43.53) and the rising 50-day (**$42.09**), and under the 200-day. Support: $43.53 (20-day), $42.82 (week low), $42.09 (50-day). Resistance: $43.91 (200-day), then $44.14–44.40 (the old line and the Nov 16 high). Bias: **neutral to constructive; flat.** The rule is a close over the 200-day, and the rule has not been met.
 
-**Ophelia Macro Read:** Rates did not drive this. The 10-year closed **4.94%** (+3bp; Mon 4.92, Tue 4.90, Wed 4.85, Fri 4.94), the 30-year **5.32%** (+2bp), the 5-year **4.75%** (+5bp), bills **4.15%** (+3bp). That is the second Friday under 5%, and no new break above 5% or below 4%. The equity panic eased: SPY **+5.58%** ($728.32), VIX **23.81** from 35.89. Fed posture is carried from Grid A's sourcing last week (minutes lean toward more increases; December decision **Dec 9**); not re-sourced here. DXY Fri evening 104.01 (provisional). Natural gas: Fri evening, NG=F **$3.49**; the bar series now shows last Friday at $3.41, not the $3.79 evening read this page carried, so the week reads +2.3% on the restated bar. Neither is a settlement.
+**Ophelia Macro Read:** Rates did not drive this. The 10-year closed **4.94%** (+3bp; Mon 4.92, Tue 4.90, Wed 4.85, Fri 4.94), the 30-year **5.32%** (+2bp), the 5-year **4.75%** (+5bp), bills **4.15%** (+3bp). That is the second Friday under 5%, and no new break above 5% or below 4%. The equity panic eased: SPY **+5.58%** ($728.32), VIX **23.81** from 35.89. Fed posture is carried from Grid A's sourcing last week (minutes lean toward more increases; December decision **Dec 9**); not re-sourced here. DXY Fri evening 104.01 (provisional). Natural gas: NG=F reads +2.3% ($3.41 → $3.49), but that crosses contracts: its Nov 20 bar is December, tonight's is January. On the January contract (NGF27) gas fell **$3.75 → $3.49 Fri evening, about -7%**, provisional.
 
 ---
 
@@ -122,7 +122,7 @@ Week path: Mon $43.32, Tue $43.40, Wed $43.61, (Thu closed, Thanksgiving), Fri *
 | AI / data centers | CEG +0.3% with a new 52-week closing low Wednesday; VST +6.4%. No new Texas statement on existing contracts found | Not healed |
 | **Data Center Demand** | No new utility–hyperscaler supply agreement found dated this week (latest found: Black Hills–Google and NiSource–Microsoft, October) | **Trigger not met** |
 | **PJM / FERC** | Original backstop suspended to Feb 28, 2027 (ER26-3380); revised RBP targets Mar 1, 2027 | Not re-sourced this week |
-| Natural Gas | NG=F **$3.49 Fri evening** vs $3.41 restated Nov 20 bar | Provisional, not settled |
+| Natural Gas | January (NGF27) **$3.75 → $3.49 Fri evening** (about -7%); NG=F's +2.3% is a December-to-January roll | Provisional, not settled |
 | DXY | 104.01 Fri evening (provisional) | Strong dollar |
 | **Wildfire Liability** | **EIX: no ruling dated November found**; the Oct 28 inverse condemnation ruling stands; late-January trial. **PCG: no court or legislative item found this week.** Reported Nov 18: PG&E layoffs of several hundred (ABC30); a proposed CPUC decision could cut eligible undergrounding from 5,000 to about 1,100 miles (date of the proposal not confirmed) | No new liability event; #197 stands |
 | M&A | **NEE–D:** the Virginia evidentiary hearing that opened Nov 17 was expected to run into Thanksgiving week (12 On Your Side, Nov 19); no report of its close found. Staff oppose the deal as proposed unless the added conditions are accepted (Utility Dive). Decision **by Jan 11**. HZN: no update found on the Montana court challenge | Being argued; not decided |
@@ -215,7 +215,7 @@ Company dates are Yahoo Finance calendar dates pulled Nov 27; not company-confir
 
 ---
 
-> **Corrections to last week's page, logged here.** (1) Restated prior closes from dividend adjustments in the bars: NEE $82.84 (page $83.45), AVA $39.36 ($39.85). (2) Last week's NG=F $3.79 was a next-contract Friday-evening read; the bar series now shows $3.41 for Nov 20, so last week's "+16% Friday" gas move overstated the change.
+> **Corrections to last week's page, logged here.** (1) Restated prior closes from dividend adjustments in the bars: NEE $82.84 (page $83.45), AVA $39.36 ($39.85). (2) Last week's NG=F $3.79 was a next-contract Friday-evening read; the December contract's Nov 20 bar is $3.41, so last week's "+16% Friday" gas move was a roll, as flagged.
 
 *Last updated by Saturday Research Crew: 2026-11-27 (data as of Fri 2026-11-27 close, half session; natural gas and DXY are Fri-evening reads; Grid C run, Fri night)*
 *Next update: Every Saturday 11:29 AM ET*
